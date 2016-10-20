@@ -133,7 +133,7 @@ void stabilitytest_Nova_StabilityTest_Nova_test(stabilitytest_Nova_StabilityTest
 {
 		TRY
 		{
-				novaEnv.nova_exception_ExceptionData.addCode(exceptionData, exceptionData, 13);
+				novaEnv.nova_exception_ExceptionData.addCode(exceptionData, exceptionData, 14);
 				
 				{
 						stabilitytest_Nova_ExceptionStability_Nova_test(stabilitytest_Nova_ExceptionStability_Nova_construct(0, exceptionData, this), exceptionData);
@@ -146,7 +146,7 @@ void stabilitytest_Nova_StabilityTest_Nova_test(stabilitytest_Nova_StabilityTest
 						nova_io_Nova_Console_1_static_Nova_writeLine(0, exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("All OK")));
 				}
 		}
-		CATCH (13)
+		CATCH (14)
 		{
 				stabilitytest_Nova_UnstableException* l2_Nova_e = (stabilitytest_Nova_UnstableException*)nova_null;
 				
@@ -166,7 +166,7 @@ void stabilitytest_Nova_StabilityTest_0_Nova_fail(stabilitytest_Nova_StabilityTe
 
 void stabilitytest_Nova_StabilityTest_1_Nova_fail(stabilitytest_Nova_StabilityTest* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* stabilitytest_Nova_StabilityTest_Nova_message)
 {
-		THROW(13, stabilitytest_Nova_UnstableException_Nova_construct(0, exceptionData, stabilitytest_Nova_StabilityTest_Nova_message));
+		THROW(14, stabilitytest_Nova_UnstableException_Nova_construct(0, exceptionData, stabilitytest_Nova_StabilityTest_Nova_message));
 }
 
 void stabilitytest_Nova_StabilityTest_Nova_super(stabilitytest_Nova_StabilityTest* this, nova_exception_Nova_ExceptionData* exceptionData)
@@ -284,6 +284,7 @@ int main(int argc, char** argvs)
 		nova_exception_Nova_Exception_Nova_init_static(exceptionData);
 		nova_exception_Nova_ExceptionData_Nova_init_static(exceptionData);
 		nova_exception_Nova_InvalidArgumentException_Nova_init_static(exceptionData);
+		nova_exception_Nova_InvalidOperationException_Nova_init_static(exceptionData);
 		nova_exception_Nova_UnimplementedOperationException_Nova_init_static(exceptionData);
 		nova_gc_Nova_GC_Nova_init_static(exceptionData);
 		nova_io_Nova_Console_Nova_init_static(exceptionData);

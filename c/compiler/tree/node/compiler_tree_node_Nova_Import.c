@@ -134,7 +134,7 @@ void compiler_tree_node_Nova_Import_Nova_this(compiler_tree_node_Nova_Import* th
 	compiler_tree_node_Nova_Node_Nova_this((compiler_tree_node_Nova_Node*)(this), exceptionData, compiler_tree_node_Nova_Import_Nova_parent, compiler_tree_node_Nova_Import_Nova_location);
 	if (compiler_tree_node_Nova_Import_Nova_tryParse(this, exceptionData, compiler_tree_node_Nova_Import_Nova_input, compiler_tree_node_Nova_Import_Nova_parent, compiler_tree_node_Nova_Import_Nova_location, this) == (compiler_tree_node_Nova_Import*)nova_null)
 	{
-		THROW(9, compiler_Nova_SyntaxErrorException_Nova_construct(0, exceptionData, nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)(nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("Could not parse import statement: '"))), exceptionData, nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)((compiler_tree_node_Nova_Import_Nova_input)), exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("'")))), (compiler_tree_node_Nova_Node*)(this)));
+		THROW(10, compiler_Nova_SyntaxErrorException_Nova_construct(0, exceptionData, nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)(nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("Could not parse import statement: '"))), exceptionData, nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)((compiler_tree_node_Nova_Import_Nova_input)), exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("'")))), (compiler_tree_node_Nova_Node*)(this)));
 	}
 }
 
