@@ -169,7 +169,7 @@ void example_Nova_HashMapDemo_static_Nova_testLambda49(example_Nova_HashMapDemo*
 
 char example_Nova_HashMapDemo_static_Nova_testLambda50(example_Nova_HashMapDemo* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_Nova_Pair* _1, int _2, nova_datastruct_Nova_HashMap* _3, Context3* context)
 {
-	return (char)nova_Nova_String_Nova_contains((nova_Nova_String*)(((nova_Nova_String*)_1->nova_datastruct_Nova_Pair_Nova_key)), exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("hey")));
+	return nova_Nova_String_Nova_contains((nova_Nova_String*)(((nova_Nova_String*)_1->nova_datastruct_Nova_Pair_Nova_key)), exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("hey")));
 }
 
 nova_Nova_Object* example_Nova_HashMapDemo_static_Nova_testLambda51(example_Nova_HashMapDemo* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_Nova_Pair* _1, int _2, nova_datastruct_list_Nova_Array* _3, Context4* context)

@@ -391,7 +391,7 @@ nova_Nova_Object* example_Nova_Lab_static_Nova_testLambda54(example_Nova_Lab* th
 
 char example_Nova_Lab_static_Nova_testLambda55(example_Nova_Lab* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* _1, int _2, nova_datastruct_list_Nova_Array* _3, Context3* context)
 {
-	return (char)_1->nova_Nova_String_Nova_count >= 4;
+	return _1->nova_Nova_String_Nova_count >= 4;
 }
 
 nova_Nova_Object* example_Nova_Lab_static_Nova_testLambda56(example_Nova_Lab* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* _1, int _2, nova_datastruct_list_Nova_Array* _3, Context4* context)
@@ -401,7 +401,7 @@ nova_Nova_Object* example_Nova_Lab_static_Nova_testLambda56(example_Nova_Lab* th
 
 char example_Nova_Lab_static_Nova_testLambda57(example_Nova_Lab* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* _1, int _2, nova_datastruct_list_Nova_Array* _3, Context5* context)
 {
-	return (char)_1->nova_Nova_String_Nova_count >= 4;
+	return _1->nova_Nova_String_Nova_count >= 4;
 }
 
 nova_Nova_Object* example_Nova_Lab_static_Nova_testLambda58(example_Nova_Lab* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* _1, int _2, nova_datastruct_list_Nova_Array* _3, Context6* context)

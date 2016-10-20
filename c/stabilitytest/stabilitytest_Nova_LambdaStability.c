@@ -206,7 +206,7 @@ nova_datastruct_list_Nova_IntArray* generated19(stabilitytest_Nova_LambdaStabili
 
 char stabilitytest_Nova_LambdaStability_Nova_testLambda61(stabilitytest_Nova_LambdaStability* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* x, int _2, nova_datastruct_list_Nova_Array* _3, Context1* context)
 {
-	return (char)x->nova_Nova_String_Nova_count >= 4;
+	return x->nova_Nova_String_Nova_count >= 4;
 }
 
 nova_Nova_Object* stabilitytest_Nova_LambdaStability_Nova_testLambda62(stabilitytest_Nova_LambdaStability* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* x, int i, nova_datastruct_list_Nova_Array* _3, Context2* context)

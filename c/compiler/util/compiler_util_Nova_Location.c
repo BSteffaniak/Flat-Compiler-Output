@@ -221,7 +221,7 @@ void compiler_util_Nova_Location_1_Nova_addBounds(compiler_util_Nova_Location* t
 
 char compiler_util_Nova_Location_Nova_isValid(compiler_util_Nova_Location* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
-	return (char)this->compiler_util_Nova_Location_Nova_lineNumber > 0;
+	return this->compiler_util_Nova_Location_Nova_lineNumber > 0;
 }
 
 compiler_util_Nova_Location* compiler_util_Nova_Location_Nova_asNew(compiler_util_Nova_Location* this, nova_exception_Nova_ExceptionData* exceptionData)
