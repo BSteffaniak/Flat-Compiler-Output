@@ -97,7 +97,7 @@ void example_Nova_GenericDemo_Nova_destroy(example_Nova_GenericDemo** this, nova
 	NOVA_FREE(*this);
 }
 
-void example_Nova_GenericDemo_static_Nova_main(example_Nova_GenericDemo* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_list_Nova_Array* example_Nova_GenericDemo_Nova_args)
+void example_Nova_GenericDemo_static_Nova_main(example_Nova_GenericDemo* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_list_Nova_Array* args)
 {
 	nova_datastruct_list_Nova_Stack* l1_Nova_strs = (nova_datastruct_list_Nova_Stack*)nova_null;
 	

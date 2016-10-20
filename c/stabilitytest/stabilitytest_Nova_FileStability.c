@@ -71,10 +71,10 @@ stabilitytest_FileStability_Extension_VTable stabilitytest_FileStability_Extensi
 
 
 
-void stabilitytest_Nova_FileStability_Nova_createFile(stabilitytest_Nova_FileStability* this, nova_exception_Nova_ExceptionData* exceptionData, nova_io_Nova_File* stabilitytest_Nova_FileStability_Nova_f);
-void stabilitytest_Nova_FileStability_Nova_writeToFile(stabilitytest_Nova_FileStability* this, nova_exception_Nova_ExceptionData* exceptionData, nova_io_Nova_File* stabilitytest_Nova_FileStability_Nova_f);
-void stabilitytest_Nova_FileStability_Nova_readFromFile(stabilitytest_Nova_FileStability* this, nova_exception_Nova_ExceptionData* exceptionData, nova_io_Nova_File* stabilitytest_Nova_FileStability_Nova_f);
-void stabilitytest_Nova_FileStability_Nova_deleteFile(stabilitytest_Nova_FileStability* this, nova_exception_Nova_ExceptionData* exceptionData, nova_io_Nova_File* stabilitytest_Nova_FileStability_Nova_f);
+void stabilitytest_Nova_FileStability_Nova_createFile(stabilitytest_Nova_FileStability* this, nova_exception_Nova_ExceptionData* exceptionData, nova_io_Nova_File* f);
+void stabilitytest_Nova_FileStability_Nova_writeToFile(stabilitytest_Nova_FileStability* this, nova_exception_Nova_ExceptionData* exceptionData, nova_io_Nova_File* f);
+void stabilitytest_Nova_FileStability_Nova_readFromFile(stabilitytest_Nova_FileStability* this, nova_exception_Nova_ExceptionData* exceptionData, nova_io_Nova_File* f);
+void stabilitytest_Nova_FileStability_Nova_deleteFile(stabilitytest_Nova_FileStability* this, nova_exception_Nova_ExceptionData* exceptionData, nova_io_Nova_File* f);
 nova_Nova_String* stabilitytest_Nova_FileStability_Nova_inputString;
 int stabilitytest_Nova_FileStability_Nova_lines;
 void stabilitytest_Nova_FileStability_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData)
@@ -83,7 +83,7 @@ void stabilitytest_Nova_FileStability_Nova_init_static(nova_exception_Nova_Excep
 	}
 }
 
-stabilitytest_Nova_FileStability* stabilitytest_Nova_FileStability_Nova_construct(stabilitytest_Nova_FileStability* this, nova_exception_Nova_ExceptionData* exceptionData, stabilitytest_Nova_StabilityTest* stabilitytest_Nova_FileStability_Nova_program)
+stabilitytest_Nova_FileStability* stabilitytest_Nova_FileStability_Nova_construct(stabilitytest_Nova_FileStability* this, nova_exception_Nova_ExceptionData* exceptionData, stabilitytest_Nova_StabilityTest* program)
 {
 	CCLASS_NEW(stabilitytest_Nova_FileStability, this,);
 	this->vtable = &stabilitytest_FileStability_Extension_VTable_val;
@@ -92,7 +92,7 @@ stabilitytest_Nova_FileStability* stabilitytest_Nova_FileStability_Nova_construc
 	stabilitytest_Nova_FileStability_Nova_super(this, exceptionData);
 	
 	{
-		stabilitytest_Nova_FileStability_Nova_this(this, exceptionData, stabilitytest_Nova_FileStability_Nova_program);
+		stabilitytest_Nova_FileStability_Nova_this(this, exceptionData, program);
 	}
 	
 	return this;
@@ -109,9 +109,9 @@ void stabilitytest_Nova_FileStability_Nova_destroy(stabilitytest_Nova_FileStabil
 	NOVA_FREE(*this);
 }
 
-void stabilitytest_Nova_FileStability_Nova_this(stabilitytest_Nova_FileStability* this, nova_exception_Nova_ExceptionData* exceptionData, stabilitytest_Nova_StabilityTest* stabilitytest_Nova_FileStability_Nova_program)
+void stabilitytest_Nova_FileStability_Nova_this(stabilitytest_Nova_FileStability* this, nova_exception_Nova_ExceptionData* exceptionData, stabilitytest_Nova_StabilityTest* program)
 {
-	stabilitytest_Nova_StabilityTestCase_Nova_this((stabilitytest_Nova_StabilityTestCase*)(this), exceptionData, stabilitytest_Nova_FileStability_Nova_program);
+	stabilitytest_Nova_StabilityTestCase_Nova_this((stabilitytest_Nova_StabilityTestCase*)(this), exceptionData, program);
 }
 
 void stabilitytest_Nova_FileStability_Nova_test(stabilitytest_Nova_FileStability* this, nova_exception_Nova_ExceptionData* exceptionData)
@@ -138,7 +138,7 @@ void stabilitytest_Nova_FileStability_Nova_test(stabilitytest_Nova_FileStability
 		nova_exception_Nova_Exception* l2_Nova_e = (nova_exception_Nova_Exception*)nova_null;
 		
 		l2_Nova_e = (nova_exception_Nova_Exception*)exceptionData->nova_exception_Nova_ExceptionData_Nova_thrownException;
-		stabilitytest_Nova_StabilityTest_1_Nova_fail(this->stabilitytest_Nova_StabilityTestCase_Nova_program, exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("Failed; Exception thrown")));
+		stabilitytest_Nova_StabilityTest_Nova_fail(this->stabilitytest_Nova_StabilityTestCase_Nova_program, exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("Failed; Exception thrown")), (intptr_t)nova_null);
 	}
 	FINALLY
 	{
@@ -146,17 +146,17 @@ void stabilitytest_Nova_FileStability_Nova_test(stabilitytest_Nova_FileStability
 	END_TRY;
 }
 
-void stabilitytest_Nova_FileStability_Nova_createFile(stabilitytest_Nova_FileStability* this, nova_exception_Nova_ExceptionData* exceptionData, nova_io_Nova_File* stabilitytest_Nova_FileStability_Nova_f)
+void stabilitytest_Nova_FileStability_Nova_createFile(stabilitytest_Nova_FileStability* this, nova_exception_Nova_ExceptionData* exceptionData, nova_io_Nova_File* f)
 {
 	nova_io_Nova_Console_0_static_Nova_write(0, exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("Creating file... ")));
-	if (!nova_io_Nova_File_Nova_create(stabilitytest_Nova_FileStability_Nova_f, exceptionData))
+	if (!nova_io_Nova_File_Nova_create(f, exceptionData))
 	{
-		stabilitytest_Nova_StabilityTest_0_Nova_fail(this->stabilitytest_Nova_StabilityTestCase_Nova_program, exceptionData);
+		stabilitytest_Nova_StabilityTest_Nova_fail(this->stabilitytest_Nova_StabilityTestCase_Nova_program, exceptionData, 0, (intptr_t)nova_null);
 	}
 	nova_io_Nova_Console_1_static_Nova_writeLine(0, exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("OK")));
 }
 
-void stabilitytest_Nova_FileStability_Nova_writeToFile(stabilitytest_Nova_FileStability* this, nova_exception_Nova_ExceptionData* exceptionData, nova_io_Nova_File* stabilitytest_Nova_FileStability_Nova_f)
+void stabilitytest_Nova_FileStability_Nova_writeToFile(stabilitytest_Nova_FileStability* this, nova_exception_Nova_ExceptionData* exceptionData, nova_io_Nova_File* f)
 {
 	int l2_Nova_i = 0;
 	
@@ -164,42 +164,42 @@ void stabilitytest_Nova_FileStability_Nova_writeToFile(stabilitytest_Nova_FileSt
 	l2_Nova_i = (int)0;
 	for (; l2_Nova_i < (int)stabilitytest_Nova_FileStability_Nova_lines; l2_Nova_i++)
 	{
-		nova_io_Nova_File_Nova_writeLine(stabilitytest_Nova_FileStability_Nova_f, exceptionData, stabilitytest_Nova_FileStability_Nova_inputString);
+		nova_io_Nova_File_Nova_writeLine(f, exceptionData, stabilitytest_Nova_FileStability_Nova_inputString);
 	}
 	nova_io_Nova_Console_1_static_Nova_writeLine(0, exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("OK")));
 }
 
-void stabilitytest_Nova_FileStability_Nova_readFromFile(stabilitytest_Nova_FileStability* this, nova_exception_Nova_ExceptionData* exceptionData, nova_io_Nova_File* stabilitytest_Nova_FileStability_Nova_f)
+void stabilitytest_Nova_FileStability_Nova_readFromFile(stabilitytest_Nova_FileStability* this, nova_exception_Nova_ExceptionData* exceptionData, nova_io_Nova_File* f)
 {
 	int l1_Nova_times = 0;
 	nova_Nova_String* l1_Nova_line = (nova_Nova_String*)nova_null;
 	
 	nova_io_Nova_Console_0_static_Nova_write(0, exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("Reading lines from file... ")));
-	nova_io_Nova_File_Nova_reopen(stabilitytest_Nova_FileStability_Nova_f, exceptionData);
+	nova_io_Nova_File_Nova_reopen(f, exceptionData);
 	l1_Nova_times = (int)(0);
-	l1_Nova_line = nova_io_Nova_File_Nova_readLine(stabilitytest_Nova_FileStability_Nova_f, exceptionData);
+	l1_Nova_line = nova_io_Nova_File_Nova_readLine(f, exceptionData);
 	while (l1_Nova_line != (nova_Nova_String*)nova_null)
 	{
 		if (!nova_Nova_String_Nova_equals(l1_Nova_line, exceptionData, stabilitytest_Nova_FileStability_Nova_inputString))
 		{
-			stabilitytest_Nova_StabilityTest_0_Nova_fail(this->stabilitytest_Nova_StabilityTestCase_Nova_program, exceptionData);
+			stabilitytest_Nova_StabilityTest_Nova_fail(this->stabilitytest_Nova_StabilityTestCase_Nova_program, exceptionData, 0, (intptr_t)nova_null);
 		}
-		l1_Nova_line = nova_io_Nova_File_Nova_readLine(stabilitytest_Nova_FileStability_Nova_f, exceptionData);
+		l1_Nova_line = nova_io_Nova_File_Nova_readLine(f, exceptionData);
 		l1_Nova_times++;
 	}
 	if (l1_Nova_times != stabilitytest_Nova_FileStability_Nova_lines)
 	{
-		stabilitytest_Nova_StabilityTest_1_Nova_fail(this->stabilitytest_Nova_StabilityTestCase_Nova_program, exceptionData, nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)(nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("Failed; only read "))), exceptionData, nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)(nova_primitive_number_Nova_Int_static_Nova_toString(0, exceptionData, l1_Nova_times)), exceptionData, nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)(nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("/"))), exceptionData, nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)(nova_primitive_number_Nova_Byte_static_Nova_toString(0, exceptionData, 100)), exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)(" lines")))))));
+		stabilitytest_Nova_StabilityTest_Nova_fail(this->stabilitytest_Nova_StabilityTestCase_Nova_program, exceptionData, nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)(nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("Failed; only read "))), exceptionData, nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)(nova_primitive_number_Nova_Int_static_Nova_toString(0, exceptionData, l1_Nova_times)), exceptionData, nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)(nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("/"))), exceptionData, nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)(nova_primitive_number_Nova_Byte_static_Nova_toString(0, exceptionData, 100)), exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)(" lines")))))), (intptr_t)nova_null);
 	}
 	nova_io_Nova_Console_1_static_Nova_writeLine(0, exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("OK")));
 }
 
-void stabilitytest_Nova_FileStability_Nova_deleteFile(stabilitytest_Nova_FileStability* this, nova_exception_Nova_ExceptionData* exceptionData, nova_io_Nova_File* stabilitytest_Nova_FileStability_Nova_f)
+void stabilitytest_Nova_FileStability_Nova_deleteFile(stabilitytest_Nova_FileStability* this, nova_exception_Nova_ExceptionData* exceptionData, nova_io_Nova_File* f)
 {
 	nova_io_Nova_Console_0_static_Nova_write(0, exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("Deleting file... ")));
-	if (!nova_io_Nova_File_Nova_delete(stabilitytest_Nova_FileStability_Nova_f, exceptionData))
+	if (!nova_io_Nova_File_Nova_delete(f, exceptionData))
 	{
-		stabilitytest_Nova_StabilityTest_1_Nova_fail(this->stabilitytest_Nova_StabilityTestCase_Nova_program, exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("Failed to delete file")));
+		stabilitytest_Nova_StabilityTest_Nova_fail(this->stabilitytest_Nova_StabilityTestCase_Nova_program, exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("Failed to delete file")), (intptr_t)nova_null);
 	}
 	nova_io_Nova_Console_1_static_Nova_writeLine(0, exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("OK")));
 }

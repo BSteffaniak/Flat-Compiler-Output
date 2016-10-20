@@ -72,8 +72,8 @@ example_ClosureDemo_Extension_VTable example_ClosureDemo_Extension_VTable_val =
 
 
 void example_Nova_ClosureDemo_Nova_callClosure(example_Nova_ClosureDemo* this, nova_exception_Nova_ExceptionData* exceptionData, example_Nova_ClosureDemo_closure3_Nova_closure example_Nova_ClosureDemo_Nova_closure, void* example_Nova_ClosureDemo_ref_Nova_closure, void* closure_context);
-int example_Nova_ClosureDemo_static_Nova_multiply(example_Nova_ClosureDemo* this, nova_exception_Nova_ExceptionData* exceptionData, int example_Nova_ClosureDemo_Nova_value1, int example_Nova_ClosureDemo_Nova_value2);
-int example_Nova_ClosureDemo_static_Nova_pow(example_Nova_ClosureDemo* this, nova_exception_Nova_ExceptionData* exceptionData, int example_Nova_ClosureDemo_Nova_base, int example_Nova_ClosureDemo_Nova_pow);
+int example_Nova_ClosureDemo_static_Nova_multiply(example_Nova_ClosureDemo* this, nova_exception_Nova_ExceptionData* exceptionData, int value1, int value2);
+int example_Nova_ClosureDemo_static_Nova_pow(example_Nova_ClosureDemo* this, nova_exception_Nova_ExceptionData* exceptionData, int base, int pow);
 void example_Nova_ClosureDemo_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData)
 {
 	{
@@ -105,7 +105,7 @@ void example_Nova_ClosureDemo_Nova_destroy(example_Nova_ClosureDemo** this, nova
 	NOVA_FREE(*this);
 }
 
-void example_Nova_ClosureDemo_static_Nova_main(example_Nova_ClosureDemo* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_list_Nova_Array* example_Nova_ClosureDemo_Nova_args)
+void example_Nova_ClosureDemo_static_Nova_main(example_Nova_ClosureDemo* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_list_Nova_Array* args)
 {
 	example_Nova_ClosureDemo* l1_Nova_demo = (example_Nova_ClosureDemo*)nova_null;
 	
@@ -123,23 +123,23 @@ void example_Nova_ClosureDemo_Nova_callClosure(example_Nova_ClosureDemo* this, n
 	nova_io_Nova_Console_1_static_Nova_writeLine(0, exceptionData, nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)(nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("Closure returned "))), exceptionData, nova_primitive_number_Nova_Int_static_Nova_toString(0, exceptionData, l1_Nova_value)));
 }
 
-int example_Nova_ClosureDemo_static_Nova_multiply(example_Nova_ClosureDemo* this, nova_exception_Nova_ExceptionData* exceptionData, int example_Nova_ClosureDemo_Nova_value1, int example_Nova_ClosureDemo_Nova_value2)
+int example_Nova_ClosureDemo_static_Nova_multiply(example_Nova_ClosureDemo* this, nova_exception_Nova_ExceptionData* exceptionData, int value1, int value2)
 {
-	nova_io_Nova_Console_1_static_Nova_writeLine(0, exceptionData, nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)(nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("multiply was called with "))), exceptionData, nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)(nova_primitive_number_Nova_Int_static_Nova_toString(0, exceptionData, example_Nova_ClosureDemo_Nova_value1)), exceptionData, nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)(nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)(" and "))), exceptionData, nova_primitive_number_Nova_Int_static_Nova_toString(0, exceptionData, example_Nova_ClosureDemo_Nova_value2)))));
-	return example_Nova_ClosureDemo_Nova_value1 * example_Nova_ClosureDemo_Nova_value2;
+	nova_io_Nova_Console_1_static_Nova_writeLine(0, exceptionData, nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)(nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("multiply was called with "))), exceptionData, nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)(nova_primitive_number_Nova_Int_static_Nova_toString(0, exceptionData, value1)), exceptionData, nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)(nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)(" and "))), exceptionData, nova_primitive_number_Nova_Int_static_Nova_toString(0, exceptionData, value2)))));
+	return value1 * value2;
 }
 
-int example_Nova_ClosureDemo_static_Nova_pow(example_Nova_ClosureDemo* this, nova_exception_Nova_ExceptionData* exceptionData, int example_Nova_ClosureDemo_Nova_base, int example_Nova_ClosureDemo_Nova_pow)
+int example_Nova_ClosureDemo_static_Nova_pow(example_Nova_ClosureDemo* this, nova_exception_Nova_ExceptionData* exceptionData, int base, int pow)
 {
 	int l1_Nova_value = 0;
 	int l2_Nova_i = 0;
 	
-	nova_io_Nova_Console_1_static_Nova_writeLine(0, exceptionData, nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)(nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("pow was called with "))), exceptionData, nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)(nova_primitive_number_Nova_Int_static_Nova_toString(0, exceptionData, example_Nova_ClosureDemo_Nova_base)), exceptionData, nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)(nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)(" and "))), exceptionData, nova_primitive_number_Nova_Int_static_Nova_toString(0, exceptionData, example_Nova_ClosureDemo_Nova_pow)))));
-	l1_Nova_value = example_Nova_ClosureDemo_Nova_base;
+	nova_io_Nova_Console_1_static_Nova_writeLine(0, exceptionData, nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)(nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("pow was called with "))), exceptionData, nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)(nova_primitive_number_Nova_Int_static_Nova_toString(0, exceptionData, base)), exceptionData, nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)(nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)(" and "))), exceptionData, nova_primitive_number_Nova_Int_static_Nova_toString(0, exceptionData, pow)))));
+	l1_Nova_value = base;
 	l2_Nova_i = (int)0;
-	for (; l2_Nova_i < (int)(example_Nova_ClosureDemo_Nova_pow - 1); l2_Nova_i++)
+	for (; l2_Nova_i < (int)(pow - 1); l2_Nova_i++)
 	{
-		l1_Nova_value = l1_Nova_value * example_Nova_ClosureDemo_Nova_base;
+		l1_Nova_value = l1_Nova_value * base;
 	}
 	return l1_Nova_value;
 }

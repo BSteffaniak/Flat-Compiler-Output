@@ -82,16 +82,16 @@ stabilitytest_LambdaStability_Extension_VTable stabilitytest_LambdaStability_Ext
 
 nova_datastruct_list_Nova_Array* generated18(stabilitytest_Nova_LambdaStability* this, nova_exception_Nova_ExceptionData* exceptionData);
 nova_datastruct_list_Nova_IntArray* generated19(stabilitytest_Nova_LambdaStability* this, nova_exception_Nova_ExceptionData* exceptionData);
-char stabilitytest_Nova_LambdaStability_Nova_testLambda61(stabilitytest_Nova_LambdaStability* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* stabilitytest_Nova_LambdaStability_Nova_x, int stabilitytest_Nova_LambdaStability_Nova__2, nova_datastruct_list_Nova_Array* stabilitytest_Nova_LambdaStability_Nova__3, Context1* context);
-nova_Nova_Object* stabilitytest_Nova_LambdaStability_Nova_testLambda62(stabilitytest_Nova_LambdaStability* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* stabilitytest_Nova_LambdaStability_Nova_x, int stabilitytest_Nova_LambdaStability_Nova_i, nova_datastruct_list_Nova_Array* stabilitytest_Nova_LambdaStability_Nova__3, Context2* context);
-nova_Nova_Object* stabilitytest_Nova_LambdaStability_Nova_testLambda63(stabilitytest_Nova_LambdaStability* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* stabilitytest_Nova_LambdaStability_Nova__1, int stabilitytest_Nova_LambdaStability_Nova__2, nova_datastruct_list_Nova_Array* stabilitytest_Nova_LambdaStability_Nova__3, Context3* context);
+char stabilitytest_Nova_LambdaStability_Nova_testLambda61(stabilitytest_Nova_LambdaStability* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* x, int _2, nova_datastruct_list_Nova_Array* _3, Context1* context);
+nova_Nova_Object* stabilitytest_Nova_LambdaStability_Nova_testLambda62(stabilitytest_Nova_LambdaStability* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* x, int i, nova_datastruct_list_Nova_Array* _3, Context2* context);
+nova_Nova_Object* stabilitytest_Nova_LambdaStability_Nova_testLambda63(stabilitytest_Nova_LambdaStability* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* _1, int _2, nova_datastruct_list_Nova_Array* _3, Context3* context);
 void stabilitytest_Nova_LambdaStability_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData)
 {
 	{
 	}
 }
 
-stabilitytest_Nova_LambdaStability* stabilitytest_Nova_LambdaStability_Nova_construct(stabilitytest_Nova_LambdaStability* this, nova_exception_Nova_ExceptionData* exceptionData, stabilitytest_Nova_StabilityTest* stabilitytest_Nova_LambdaStability_Nova_program)
+stabilitytest_Nova_LambdaStability* stabilitytest_Nova_LambdaStability_Nova_construct(stabilitytest_Nova_LambdaStability* this, nova_exception_Nova_ExceptionData* exceptionData, stabilitytest_Nova_StabilityTest* program)
 {
 	CCLASS_NEW(stabilitytest_Nova_LambdaStability, this,);
 	this->vtable = &stabilitytest_LambdaStability_Extension_VTable_val;
@@ -100,7 +100,7 @@ stabilitytest_Nova_LambdaStability* stabilitytest_Nova_LambdaStability_Nova_cons
 	stabilitytest_Nova_LambdaStability_Nova_super(this, exceptionData);
 	
 	{
-		stabilitytest_Nova_LambdaStability_Nova_this(this, exceptionData, stabilitytest_Nova_LambdaStability_Nova_program);
+		stabilitytest_Nova_LambdaStability_Nova_this(this, exceptionData, program);
 	}
 	
 	return this;
@@ -117,9 +117,9 @@ void stabilitytest_Nova_LambdaStability_Nova_destroy(stabilitytest_Nova_LambdaSt
 	NOVA_FREE(*this);
 }
 
-void stabilitytest_Nova_LambdaStability_Nova_this(stabilitytest_Nova_LambdaStability* this, nova_exception_Nova_ExceptionData* exceptionData, stabilitytest_Nova_StabilityTest* stabilitytest_Nova_LambdaStability_Nova_program)
+void stabilitytest_Nova_LambdaStability_Nova_this(stabilitytest_Nova_LambdaStability* this, nova_exception_Nova_ExceptionData* exceptionData, stabilitytest_Nova_StabilityTest* program)
 {
-	stabilitytest_Nova_StabilityTestCase_Nova_this((stabilitytest_Nova_StabilityTestCase*)(this), exceptionData, stabilitytest_Nova_LambdaStability_Nova_program);
+	stabilitytest_Nova_StabilityTestCase_Nova_this((stabilitytest_Nova_StabilityTestCase*)(this), exceptionData, program);
 }
 
 void stabilitytest_Nova_LambdaStability_Nova_test(stabilitytest_Nova_LambdaStability* this, nova_exception_Nova_ExceptionData* exceptionData)
@@ -149,17 +149,17 @@ void stabilitytest_Nova_LambdaStability_Nova_test(stabilitytest_Nova_LambdaStabi
 	l1_Nova_mappedExpected = nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("0: this?, 1: test?, 2: what shows up?"));
 	if (!nova_Nova_String_Nova_equals(l1_Nova_mappedOutput, exceptionData, l1_Nova_mappedExpected))
 	{
-		stabilitytest_Nova_StabilityTest_1_Nova_fail(this->stabilitytest_Nova_StabilityTestCase_Nova_program, exceptionData, nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)(nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("Failed first list map with 2 args. Expected '"))), exceptionData, nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)(l1_Nova_mappedExpected), exceptionData, nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)(nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("' but received '"))), exceptionData, nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)(l1_Nova_mappedOutput), exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("'")))))));
+		stabilitytest_Nova_StabilityTest_Nova_fail(this->stabilitytest_Nova_StabilityTestCase_Nova_program, exceptionData, nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)(nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("Failed first list map with 2 args. Expected '"))), exceptionData, nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)(l1_Nova_mappedExpected), exceptionData, nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)(nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("' but received '"))), exceptionData, nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)(l1_Nova_mappedOutput), exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("'")))))), (intptr_t)nova_null);
 	}
 	l1_Nova_linked = nova_datastruct_list_Nova_LinkedList_Nova_construct(0, exceptionData);
 	nova_datastruct_list_Nova_LinkedList_Nova_add(nova_datastruct_list_Nova_LinkedList_Nova_add(nova_datastruct_list_Nova_LinkedList_Nova_add((nova_datastruct_list_Nova_LinkedList*)(l1_Nova_linked), exceptionData, (nova_Nova_Object*)(nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("test")))), exceptionData, (nova_Nova_Object*)(nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("test2")))), exceptionData, (nova_Nova_Object*)(nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("test3"))));
 	if (!nova_Nova_String_Nova_equals(nova_datastruct_list_Nova_List_virtual_Nova_join((nova_datastruct_list_Nova_List*)(nova_datastruct_list_Nova_LinkedList_Nova_reverse((nova_datastruct_list_Nova_LinkedList*)(l1_Nova_linked), exceptionData)), exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)(", "))), exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("test3, test2, test"))))
 	{
-		stabilitytest_Nova_StabilityTest_1_Nova_fail(this->stabilitytest_Nova_StabilityTestCase_Nova_program, exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("Failed reverse linked list")));
+		stabilitytest_Nova_StabilityTest_Nova_fail(this->stabilitytest_Nova_StabilityTestCase_Nova_program, exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("Failed reverse linked list")), (intptr_t)nova_null);
 	}
 	if (!nova_Nova_String_Nova_equals(nova_datastruct_list_Nova_List_virtual_Nova_join((nova_datastruct_list_Nova_List*)(l1_Nova_linked), exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)(", "))), exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("test, test2, test3"))))
 	{
-		stabilitytest_Nova_StabilityTest_1_Nova_fail(this->stabilitytest_Nova_StabilityTestCase_Nova_program, exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("Failed forward linked list")));
+		stabilitytest_Nova_StabilityTest_Nova_fail(this->stabilitytest_Nova_StabilityTestCase_Nova_program, exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("Failed forward linked list")), (intptr_t)nova_null);
 	}
 	l1_Nova_repeated = (nova_datastruct_list_Nova_Array*)(nova_datastruct_list_Nova_List_virtual0_Nova_map((nova_datastruct_list_Nova_List*)(l1_Nova_list), exceptionData, (nova_datastruct_list_Nova_List_closure6_Nova_mapFunc)&stabilitytest_Nova_LambdaStability_Nova_testLambda63, this, &contextArg63));
 	nova_local_0 = (nova_datastruct_list_Nova_ArrayIterator*)(nova_datastruct_list_Nova_Array_Accessor_Nova_iterator((nova_datastruct_list_Nova_Array*)((l1_Nova_repeated)), exceptionData));
@@ -168,7 +168,7 @@ void stabilitytest_Nova_LambdaStability_Nova_test(stabilitytest_Nova_LambdaStabi
 		l4_Nova_item = (nova_Nova_String*)(nova_datastruct_list_Nova_ArrayIterator_Accessor_Nova_next((nova_datastruct_list_Nova_ArrayIterator*)(nova_local_0), exceptionData));
 		if (!nova_Nova_String_Nova_equals(l4_Nova_item, exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("test"))))
 		{
-			stabilitytest_Nova_StabilityTest_1_Nova_fail(this->stabilitytest_Nova_StabilityTestCase_Nova_program, exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("Map with no arguments failed")));
+			stabilitytest_Nova_StabilityTest_Nova_fail(this->stabilitytest_Nova_StabilityTestCase_Nova_program, exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("Map with no arguments failed")), (intptr_t)nova_null);
 		}
 	}
 	nova_io_Nova_Console_1_static_Nova_writeLine(0, exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("OK")));
@@ -204,17 +204,17 @@ nova_datastruct_list_Nova_IntArray* generated19(stabilitytest_Nova_LambdaStabili
 	return nova_datastruct_list_Nova_IntArray_2_Nova_construct(0, exceptionData, l1_Nova_temp, 7);
 }
 
-char stabilitytest_Nova_LambdaStability_Nova_testLambda61(stabilitytest_Nova_LambdaStability* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* stabilitytest_Nova_LambdaStability_Nova_x, int stabilitytest_Nova_LambdaStability_Nova__2, nova_datastruct_list_Nova_Array* stabilitytest_Nova_LambdaStability_Nova__3, Context1* context)
+char stabilitytest_Nova_LambdaStability_Nova_testLambda61(stabilitytest_Nova_LambdaStability* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* x, int _2, nova_datastruct_list_Nova_Array* _3, Context1* context)
 {
-	return (char)stabilitytest_Nova_LambdaStability_Nova_x->nova_Nova_String_Nova_count >= 4;
+	return (char)x->nova_Nova_String_Nova_count >= 4;
 }
 
-nova_Nova_Object* stabilitytest_Nova_LambdaStability_Nova_testLambda62(stabilitytest_Nova_LambdaStability* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* stabilitytest_Nova_LambdaStability_Nova_x, int stabilitytest_Nova_LambdaStability_Nova_i, nova_datastruct_list_Nova_Array* stabilitytest_Nova_LambdaStability_Nova__3, Context2* context)
+nova_Nova_Object* stabilitytest_Nova_LambdaStability_Nova_testLambda62(stabilitytest_Nova_LambdaStability* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* x, int i, nova_datastruct_list_Nova_Array* _3, Context2* context)
 {
-	return (nova_Nova_Object*)nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)(nova_primitive_number_Nova_Int_static_Nova_toString(0, exceptionData, stabilitytest_Nova_LambdaStability_Nova_i)), exceptionData, nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)(nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)(": "))), exceptionData, nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)(stabilitytest_Nova_LambdaStability_Nova_x), exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("?")))));
+	return (nova_Nova_Object*)nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)(nova_primitive_number_Nova_Int_static_Nova_toString(0, exceptionData, i)), exceptionData, nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)(nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)(": "))), exceptionData, nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)(x), exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("?")))));
 }
 
-nova_Nova_Object* stabilitytest_Nova_LambdaStability_Nova_testLambda63(stabilitytest_Nova_LambdaStability* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* stabilitytest_Nova_LambdaStability_Nova__1, int stabilitytest_Nova_LambdaStability_Nova__2, nova_datastruct_list_Nova_Array* stabilitytest_Nova_LambdaStability_Nova__3, Context3* context)
+nova_Nova_Object* stabilitytest_Nova_LambdaStability_Nova_testLambda63(stabilitytest_Nova_LambdaStability* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* _1, int _2, nova_datastruct_list_Nova_Array* _3, Context3* context)
 {
 	return (nova_Nova_Object*)nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("test"));
 }

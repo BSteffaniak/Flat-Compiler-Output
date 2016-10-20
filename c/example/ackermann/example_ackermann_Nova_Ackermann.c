@@ -96,47 +96,47 @@ void example_ackermann_Nova_Ackermann_Nova_destroy(example_ackermann_Nova_Ackerm
 	NOVA_FREE(*this);
 }
 
-void example_ackermann_Nova_Ackermann_static_Nova_main(example_ackermann_Nova_Ackermann* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_list_Nova_Array* example_ackermann_Nova_Ackermann_Nova_args)
+void example_ackermann_Nova_Ackermann_static_Nova_main(example_ackermann_Nova_Ackermann* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_list_Nova_Array* args)
 {
 	nova_io_Nova_Console_1_static_Nova_writeLine(0, exceptionData, nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)(nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("Ackermann: "))), exceptionData, nova_primitive_number_Nova_Int_static_Nova_toString(0, exceptionData, example_ackermann_Nova_Ackermann_static_Nova_run(0, exceptionData, 4, 1))));
 	nova_io_Nova_Console_static_Nova_waitForEnter(0, exceptionData);
 }
 
-int example_ackermann_Nova_Ackermann_static_Nova_run(example_ackermann_Nova_Ackermann* this, nova_exception_Nova_ExceptionData* exceptionData, int example_ackermann_Nova_Ackermann_Nova_m, int example_ackermann_Nova_Ackermann_Nova_n)
+int example_ackermann_Nova_Ackermann_static_Nova_run(example_ackermann_Nova_Ackermann* this, nova_exception_Nova_ExceptionData* exceptionData, int m, int n)
 {
-	if (example_ackermann_Nova_Ackermann_Nova_m == 0)
+	if (m == 0)
 	{
-		return example_ackermann_Nova_Ackermann_Nova_n + 1;
+		return n + 1;
 	}
-	else if (example_ackermann_Nova_Ackermann_Nova_m > 0)
+	else if (m > 0)
 	{
-		if (example_ackermann_Nova_Ackermann_Nova_n == 0)
+		if (n == 0)
 		{
-			return example_ackermann_Nova_Ackermann_static_Nova_run(0, exceptionData, example_ackermann_Nova_Ackermann_Nova_m - 1, 1);
+			return example_ackermann_Nova_Ackermann_static_Nova_run(0, exceptionData, m - 1, 1);
 		}
-		else if (example_ackermann_Nova_Ackermann_Nova_n > 0)
+		else if (n > 0)
 		{
-			return example_ackermann_Nova_Ackermann_static_Nova_run(0, exceptionData, example_ackermann_Nova_Ackermann_Nova_m - 1, example_ackermann_Nova_Ackermann_static_Nova_run(0, exceptionData, example_ackermann_Nova_Ackermann_Nova_m, example_ackermann_Nova_Ackermann_Nova_n - 1));
+			return example_ackermann_Nova_Ackermann_static_Nova_run(0, exceptionData, m - 1, example_ackermann_Nova_Ackermann_static_Nova_run(0, exceptionData, m, n - 1));
 		}
 	}
 	return (int)0;
 }
 
-int example_ackermann_Nova_Ackermann_static_Nova_run2(example_ackermann_Nova_Ackermann* this, nova_exception_Nova_ExceptionData* exceptionData, int example_ackermann_Nova_Ackermann_Nova_m, int example_ackermann_Nova_Ackermann_Nova_n)
+int example_ackermann_Nova_Ackermann_static_Nova_run2(example_ackermann_Nova_Ackermann* this, nova_exception_Nova_ExceptionData* exceptionData, int m, int n)
 {
-	if (example_ackermann_Nova_Ackermann_Nova_m == 0)
+	if (m == 0)
 	{
-		return example_ackermann_Nova_Ackermann_Nova_n + 1;
+		return n + 1;
 	}
-	else if (example_ackermann_Nova_Ackermann_Nova_m > 0)
+	else if (m > 0)
 	{
-		if (example_ackermann_Nova_Ackermann_Nova_n == 0)
+		if (n == 0)
 		{
-			return example_ackermann_Nova_Ackermann_static_Nova_run(0, exceptionData, example_ackermann_Nova_Ackermann_Nova_m - 1, 1);
+			return example_ackermann_Nova_Ackermann_static_Nova_run(0, exceptionData, m - 1, 1);
 		}
-		else if (example_ackermann_Nova_Ackermann_Nova_n > 0)
+		else if (n > 0)
 		{
-			return example_ackermann_Nova_Ackermann_static_Nova_run(0, exceptionData, example_ackermann_Nova_Ackermann_Nova_m - 1, example_ackermann_Nova_Ackermann_static_Nova_run(0, exceptionData, example_ackermann_Nova_Ackermann_Nova_m, example_ackermann_Nova_Ackermann_Nova_n - 1));
+			return example_ackermann_Nova_Ackermann_static_Nova_run(0, exceptionData, m - 1, example_ackermann_Nova_Ackermann_static_Nova_run(0, exceptionData, m, n - 1));
 		}
 	}
 	return (int)0;

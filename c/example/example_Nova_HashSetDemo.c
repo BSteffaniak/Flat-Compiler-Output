@@ -98,7 +98,7 @@ void example_Nova_HashSetDemo_Nova_destroy(example_Nova_HashSetDemo** this, nova
 	NOVA_FREE(*this);
 }
 
-void example_Nova_HashSetDemo_static_Nova_main(example_Nova_HashSetDemo* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_list_Nova_Array* example_Nova_HashSetDemo_Nova_args)
+void example_Nova_HashSetDemo_static_Nova_main(example_Nova_HashSetDemo* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_list_Nova_Array* args)
 {
 	nova_datastruct_Nova_HashSet* l1_Nova_set = (nova_datastruct_Nova_HashSet*)nova_null;
 	int l1_Nova_count = 0;

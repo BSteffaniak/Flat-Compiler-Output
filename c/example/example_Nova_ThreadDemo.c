@@ -98,7 +98,7 @@ void example_Nova_ThreadDemo_Nova_destroy(example_Nova_ThreadDemo** this, nova_e
 	NOVA_FREE(*this);
 }
 
-void example_Nova_ThreadDemo_static_Nova_main(example_Nova_ThreadDemo* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_list_Nova_Array* example_Nova_ThreadDemo_Nova_args)
+void example_Nova_ThreadDemo_static_Nova_main(example_Nova_ThreadDemo* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_list_Nova_Array* args)
 {
 	char l1_Nova_c = 0;
 	

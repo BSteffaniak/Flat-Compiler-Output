@@ -74,7 +74,7 @@ void compiler_tree_node_Nova_ValidationResult_Nova_init_static(nova_exception_No
 	}
 }
 
-compiler_tree_node_Nova_ValidationResult* compiler_tree_node_Nova_ValidationResult_Nova_construct(compiler_tree_node_Nova_ValidationResult* this, nova_exception_Nova_ExceptionData* exceptionData, compiler_tree_node_Nova_Node* compiler_tree_node_Nova_ValidationResult_Nova_node)
+compiler_tree_node_Nova_ValidationResult* compiler_tree_node_Nova_ValidationResult_Nova_construct(compiler_tree_node_Nova_ValidationResult* this, nova_exception_Nova_ExceptionData* exceptionData, compiler_tree_node_Nova_Node* node)
 {
 	CCLASS_NEW(compiler_tree_node_Nova_ValidationResult, this,);
 	this->vtable = &compiler_tree_node_ValidationResult_Extension_VTable_val;
@@ -82,7 +82,7 @@ compiler_tree_node_Nova_ValidationResult* compiler_tree_node_Nova_ValidationResu
 	compiler_tree_node_Nova_ValidationResult_Nova_super(this, exceptionData);
 	
 	{
-		compiler_tree_node_Nova_ValidationResult_Nova_this(this, exceptionData, compiler_tree_node_Nova_ValidationResult_Nova_node);
+		compiler_tree_node_Nova_ValidationResult_Nova_this(this, exceptionData, node);
 	}
 	
 	return this;
@@ -100,9 +100,9 @@ void compiler_tree_node_Nova_ValidationResult_Nova_destroy(compiler_tree_node_No
 	NOVA_FREE(*this);
 }
 
-void compiler_tree_node_Nova_ValidationResult_Nova_this(compiler_tree_node_Nova_ValidationResult* this, nova_exception_Nova_ExceptionData* exceptionData, compiler_tree_node_Nova_Node* compiler_tree_node_Nova_ValidationResult_Nova_node)
+void compiler_tree_node_Nova_ValidationResult_Nova_this(compiler_tree_node_Nova_ValidationResult* this, nova_exception_Nova_ExceptionData* exceptionData, compiler_tree_node_Nova_Node* node)
 {
-	this->compiler_tree_node_Nova_ValidationResult_Nova_node = compiler_tree_node_Nova_ValidationResult_Nova_node;
+	this->compiler_tree_node_Nova_ValidationResult_Nova_node = node;
 }
 
 char compiler_tree_node_Nova_ValidationResult_Accessor_Nova_skipValidation(compiler_tree_node_Nova_ValidationResult* this, nova_exception_Nova_ExceptionData* exceptionData)

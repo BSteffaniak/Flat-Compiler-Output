@@ -69,14 +69,14 @@ stabilitytest_ToStringStability_Extension_VTable stabilitytest_ToStringStability
 
 
 
-void stabilitytest_Nova_ToStringStability_Nova_checkToString(stabilitytest_Nova_ToStringStability* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* stabilitytest_Nova_ToStringStability_Nova_type, nova_primitive_number_Nova_Number* stabilitytest_Nova_ToStringStability_Nova_number, nova_Nova_String* stabilitytest_Nova_ToStringStability_Nova_expected);
+void stabilitytest_Nova_ToStringStability_Nova_checkToString(stabilitytest_Nova_ToStringStability* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* type, nova_primitive_number_Nova_Number* number, nova_Nova_String* expected);
 void stabilitytest_Nova_ToStringStability_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData)
 {
 	{
 	}
 }
 
-stabilitytest_Nova_ToStringStability* stabilitytest_Nova_ToStringStability_Nova_construct(stabilitytest_Nova_ToStringStability* this, nova_exception_Nova_ExceptionData* exceptionData, stabilitytest_Nova_StabilityTest* stabilitytest_Nova_ToStringStability_Nova_program)
+stabilitytest_Nova_ToStringStability* stabilitytest_Nova_ToStringStability_Nova_construct(stabilitytest_Nova_ToStringStability* this, nova_exception_Nova_ExceptionData* exceptionData, stabilitytest_Nova_StabilityTest* program)
 {
 	CCLASS_NEW(stabilitytest_Nova_ToStringStability, this,);
 	this->vtable = &stabilitytest_ToStringStability_Extension_VTable_val;
@@ -85,7 +85,7 @@ stabilitytest_Nova_ToStringStability* stabilitytest_Nova_ToStringStability_Nova_
 	stabilitytest_Nova_ToStringStability_Nova_super(this, exceptionData);
 	
 	{
-		stabilitytest_Nova_ToStringStability_Nova_this(this, exceptionData, stabilitytest_Nova_ToStringStability_Nova_program);
+		stabilitytest_Nova_ToStringStability_Nova_this(this, exceptionData, program);
 	}
 	
 	return this;
@@ -102,9 +102,9 @@ void stabilitytest_Nova_ToStringStability_Nova_destroy(stabilitytest_Nova_ToStri
 	NOVA_FREE(*this);
 }
 
-void stabilitytest_Nova_ToStringStability_Nova_this(stabilitytest_Nova_ToStringStability* this, nova_exception_Nova_ExceptionData* exceptionData, stabilitytest_Nova_StabilityTest* stabilitytest_Nova_ToStringStability_Nova_program)
+void stabilitytest_Nova_ToStringStability_Nova_this(stabilitytest_Nova_ToStringStability* this, nova_exception_Nova_ExceptionData* exceptionData, stabilitytest_Nova_StabilityTest* program)
 {
-	stabilitytest_Nova_StabilityTestCase_Nova_this((stabilitytest_Nova_StabilityTestCase*)(this), exceptionData, stabilitytest_Nova_ToStringStability_Nova_program);
+	stabilitytest_Nova_StabilityTestCase_Nova_this((stabilitytest_Nova_StabilityTestCase*)(this), exceptionData, program);
 }
 
 void stabilitytest_Nova_ToStringStability_Nova_test(stabilitytest_Nova_ToStringStability* this, nova_exception_Nova_ExceptionData* exceptionData)
@@ -126,11 +126,11 @@ void stabilitytest_Nova_ToStringStability_Nova_test(stabilitytest_Nova_ToStringS
 	nova_io_Nova_Console_1_static_Nova_writeLine(0, exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("OK")));
 }
 
-void stabilitytest_Nova_ToStringStability_Nova_checkToString(stabilitytest_Nova_ToStringStability* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* stabilitytest_Nova_ToStringStability_Nova_type, nova_primitive_number_Nova_Number* stabilitytest_Nova_ToStringStability_Nova_number, nova_Nova_String* stabilitytest_Nova_ToStringStability_Nova_expected)
+void stabilitytest_Nova_ToStringStability_Nova_checkToString(stabilitytest_Nova_ToStringStability* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* type, nova_primitive_number_Nova_Number* number, nova_Nova_String* expected)
 {
-	if (!nova_Nova_String_Nova_equals(nova_Nova_Object_virtual_Nova_toString((nova_Nova_Object*)(stabilitytest_Nova_ToStringStability_Nova_number), exceptionData), exceptionData, stabilitytest_Nova_ToStringStability_Nova_expected))
+	if (!nova_Nova_String_Nova_equals(nova_Nova_Object_virtual_Nova_toString((nova_Nova_Object*)(number), exceptionData), exceptionData, expected))
 	{
-		stabilitytest_Nova_StabilityTest_1_Nova_fail(this->stabilitytest_Nova_StabilityTestCase_Nova_program, exceptionData, nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)((stabilitytest_Nova_ToStringStability_Nova_type)), exceptionData, nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)(nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)(".toString failed. expected "))), exceptionData, nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)((stabilitytest_Nova_ToStringStability_Nova_expected)), exceptionData, nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)(nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)(" but received "))), exceptionData, nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)(nova_Nova_Object_virtual_Nova_toString((nova_Nova_Object*)((stabilitytest_Nova_ToStringStability_Nova_number)), exceptionData)), exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)(""))))))));
+		stabilitytest_Nova_StabilityTest_Nova_fail(this->stabilitytest_Nova_StabilityTestCase_Nova_program, exceptionData, nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)((type)), exceptionData, nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)(nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)(".toString failed. expected "))), exceptionData, nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)((expected)), exceptionData, nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)(nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)(" but received "))), exceptionData, nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)(nova_Nova_Object_virtual_Nova_toString((nova_Nova_Object*)((number)), exceptionData)), exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)(""))))))), (intptr_t)nova_null);
 	}
 }
 

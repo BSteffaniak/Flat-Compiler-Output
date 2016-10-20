@@ -73,7 +73,7 @@ void stabilitytest_Nova_StabilityTestCase_Nova_init_static(nova_exception_Nova_E
 	}
 }
 
-stabilitytest_Nova_StabilityTestCase* stabilitytest_Nova_StabilityTestCase_Nova_construct(stabilitytest_Nova_StabilityTestCase* this, nova_exception_Nova_ExceptionData* exceptionData, stabilitytest_Nova_StabilityTest* stabilitytest_Nova_StabilityTestCase_Nova_program)
+stabilitytest_Nova_StabilityTestCase* stabilitytest_Nova_StabilityTestCase_Nova_construct(stabilitytest_Nova_StabilityTestCase* this, nova_exception_Nova_ExceptionData* exceptionData, stabilitytest_Nova_StabilityTest* program)
 {
 	CCLASS_NEW(stabilitytest_Nova_StabilityTestCase, this,);
 	this->vtable = &stabilitytest_StabilityTestCase_Extension_VTable_val;
@@ -81,7 +81,7 @@ stabilitytest_Nova_StabilityTestCase* stabilitytest_Nova_StabilityTestCase_Nova_
 	stabilitytest_Nova_StabilityTestCase_Nova_super(this, exceptionData);
 	
 	{
-		stabilitytest_Nova_StabilityTestCase_Nova_this(this, exceptionData, stabilitytest_Nova_StabilityTestCase_Nova_program);
+		stabilitytest_Nova_StabilityTestCase_Nova_this(this, exceptionData, program);
 	}
 	
 	return this;
@@ -99,9 +99,9 @@ void stabilitytest_Nova_StabilityTestCase_Nova_destroy(stabilitytest_Nova_Stabil
 	NOVA_FREE(*this);
 }
 
-void stabilitytest_Nova_StabilityTestCase_Nova_this(stabilitytest_Nova_StabilityTestCase* this, nova_exception_Nova_ExceptionData* exceptionData, stabilitytest_Nova_StabilityTest* stabilitytest_Nova_StabilityTestCase_Nova_program)
+void stabilitytest_Nova_StabilityTestCase_Nova_this(stabilitytest_Nova_StabilityTestCase* this, nova_exception_Nova_ExceptionData* exceptionData, stabilitytest_Nova_StabilityTest* program)
 {
-	this->stabilitytest_Nova_StabilityTestCase_Nova_program = stabilitytest_Nova_StabilityTestCase_Nova_program;
+	this->stabilitytest_Nova_StabilityTestCase_Nova_program = program;
 }
 
 

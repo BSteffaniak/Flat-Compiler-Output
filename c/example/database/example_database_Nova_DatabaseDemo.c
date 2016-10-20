@@ -69,7 +69,7 @@ example_database_DatabaseDemo_Extension_VTable example_database_DatabaseDemo_Ext
 
 
 nova_database_Nova_DBConnector* example_database_Nova_DatabaseDemo_static_Nova_connect(example_database_Nova_DatabaseDemo* this, nova_exception_Nova_ExceptionData* exceptionData);
-void example_database_Nova_DatabaseDemo_static_Nova_close(example_database_Nova_DatabaseDemo* this, nova_exception_Nova_ExceptionData* exceptionData, nova_database_Nova_DBConnector* example_database_Nova_DatabaseDemo_Nova_connection);
+void example_database_Nova_DatabaseDemo_static_Nova_close(example_database_Nova_DatabaseDemo* this, nova_exception_Nova_ExceptionData* exceptionData, nova_database_Nova_DBConnector* connection);
 void example_database_Nova_DatabaseDemo_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData)
 {
 	{
@@ -101,7 +101,7 @@ void example_database_Nova_DatabaseDemo_Nova_destroy(example_database_Nova_Datab
 	NOVA_FREE(*this);
 }
 
-void example_database_Nova_DatabaseDemo_static_Nova_main(example_database_Nova_DatabaseDemo* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_list_Nova_Array* example_database_Nova_DatabaseDemo_Nova_args)
+void example_database_Nova_DatabaseDemo_static_Nova_main(example_database_Nova_DatabaseDemo* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_list_Nova_Array* args)
 {
 	nova_database_Nova_DBConnector* l1_Nova_connection = (nova_database_Nova_DBConnector*)nova_null;
 	nova_database_Nova_ResultSet* l1_Nova_result = (nova_database_Nova_ResultSet*)nova_null;
@@ -149,10 +149,10 @@ nova_database_Nova_DBConnector* example_database_Nova_DatabaseDemo_static_Nova_c
 	return l1_Nova_connection;
 }
 
-void example_database_Nova_DatabaseDemo_static_Nova_close(example_database_Nova_DatabaseDemo* this, nova_exception_Nova_ExceptionData* exceptionData, nova_database_Nova_DBConnector* example_database_Nova_DatabaseDemo_Nova_connection)
+void example_database_Nova_DatabaseDemo_static_Nova_close(example_database_Nova_DatabaseDemo* this, nova_exception_Nova_ExceptionData* exceptionData, nova_database_Nova_DBConnector* connection)
 {
 	nova_io_Nova_Console_1_static_Nova_writeLine(0, exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("Closing...")));
-	nova_database_Nova_DBConnector_Nova_close(example_database_Nova_DatabaseDemo_Nova_connection, exceptionData);
+	nova_database_Nova_DBConnector_Nova_close(connection, exceptionData);
 	nova_io_Nova_Console_1_static_Nova_writeLine(0, exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("Closed")));
 }
 

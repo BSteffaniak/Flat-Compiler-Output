@@ -116,9 +116,9 @@ void compiler_tree_node_annotation_Nova_Annotation_Nova_destroy(compiler_tree_no
 	NOVA_FREE(*this);
 }
 
-compiler_tree_node_annotation_Nova_Annotation* compiler_tree_node_annotation_Nova_Annotation_Nova_clone(compiler_tree_node_annotation_Nova_Annotation* this, nova_exception_Nova_ExceptionData* exceptionData, compiler_tree_node_Nova_Node* compiler_tree_node_annotation_Nova_Annotation_Nova_temporaryParent, compiler_util_Nova_Location* compiler_tree_node_annotation_Nova_Annotation_Nova_locationIn, int compiler_tree_node_annotation_Nova_Annotation_Nova_cloneChildren)
+compiler_tree_node_annotation_Nova_Annotation* compiler_tree_node_annotation_Nova_Annotation_Nova_clone(compiler_tree_node_annotation_Nova_Annotation* this, nova_exception_Nova_ExceptionData* exceptionData, compiler_tree_node_Nova_Node* temporaryParent, compiler_util_Nova_Location* locationIn, int cloneChildren)
 {
-	compiler_tree_node_annotation_Nova_Annotation_Nova_cloneChildren = (int)(compiler_tree_node_annotation_Nova_Annotation_Nova_cloneChildren == (intptr_t)nova_null ? 1 : compiler_tree_node_annotation_Nova_Annotation_Nova_cloneChildren);
+	cloneChildren = (int)(cloneChildren == (intptr_t)nova_null ? 1 : cloneChildren);
 	return (compiler_tree_node_annotation_Nova_Annotation*)(nova_Nova_Object*)nova_null;
 }
 

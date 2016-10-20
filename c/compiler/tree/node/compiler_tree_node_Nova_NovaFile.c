@@ -103,7 +103,7 @@ void compiler_tree_node_Nova_NovaFile_Nova_init_static(nova_exception_Nova_Excep
 	}
 }
 
-compiler_tree_node_Nova_NovaFile* compiler_tree_node_Nova_NovaFile_Nova_construct(compiler_tree_node_Nova_NovaFile* this, nova_exception_Nova_ExceptionData* exceptionData, nova_io_Nova_File* compiler_tree_node_Nova_NovaFile_Nova_file, compiler_tree_node_Nova_Node* compiler_tree_node_Nova_NovaFile_Nova_parent, compiler_util_Nova_Location* compiler_tree_node_Nova_NovaFile_Nova_location)
+compiler_tree_node_Nova_NovaFile* compiler_tree_node_Nova_NovaFile_Nova_construct(compiler_tree_node_Nova_NovaFile* this, nova_exception_Nova_ExceptionData* exceptionData, nova_io_Nova_File* file, compiler_tree_node_Nova_Node* parent, compiler_util_Nova_Location* location)
 {
 	CCLASS_NEW(compiler_tree_node_Nova_NovaFile, this,);
 	this->vtable = &compiler_tree_node_NovaFile_Extension_VTable_val;
@@ -112,7 +112,7 @@ compiler_tree_node_Nova_NovaFile* compiler_tree_node_Nova_NovaFile_Nova_construc
 	compiler_tree_node_Nova_NovaFile_Nova_super(this, exceptionData);
 	
 	{
-		compiler_tree_node_Nova_NovaFile_Nova_this(this, exceptionData, compiler_tree_node_Nova_NovaFile_Nova_file, compiler_tree_node_Nova_NovaFile_Nova_parent, compiler_tree_node_Nova_NovaFile_Nova_location);
+		compiler_tree_node_Nova_NovaFile_Nova_this(this, exceptionData, file, parent, location);
 	}
 	
 	return this;
@@ -135,14 +135,14 @@ void compiler_tree_node_Nova_NovaFile_Nova_destroy(compiler_tree_node_Nova_NovaF
 	NOVA_FREE(*this);
 }
 
-void compiler_tree_node_Nova_NovaFile_Nova_this(compiler_tree_node_Nova_NovaFile* this, nova_exception_Nova_ExceptionData* exceptionData, nova_io_Nova_File* compiler_tree_node_Nova_NovaFile_Nova_file, compiler_tree_node_Nova_Node* compiler_tree_node_Nova_NovaFile_Nova_parent, compiler_util_Nova_Location* compiler_tree_node_Nova_NovaFile_Nova_location)
+void compiler_tree_node_Nova_NovaFile_Nova_this(compiler_tree_node_Nova_NovaFile* this, nova_exception_Nova_ExceptionData* exceptionData, nova_io_Nova_File* file, compiler_tree_node_Nova_Node* parent, compiler_util_Nova_Location* location)
 {
-	compiler_tree_node_Nova_NovaFile_Nova_parent = (compiler_tree_node_Nova_Node*)(compiler_tree_node_Nova_NovaFile_Nova_parent == 0 ? (nova_Nova_Object*)(nova_Nova_Object*)nova_null : (nova_Nova_Object*)compiler_tree_node_Nova_NovaFile_Nova_parent);
-	compiler_tree_node_Nova_NovaFile_Nova_location = (compiler_util_Nova_Location*)(compiler_tree_node_Nova_NovaFile_Nova_location == 0 ? (nova_Nova_Object*)compiler_util_Nova_Location_Nova_INVALID : (nova_Nova_Object*)compiler_tree_node_Nova_NovaFile_Nova_location);
-	compiler_tree_node_Nova_Node_Nova_this((compiler_tree_node_Nova_Node*)(this), exceptionData, compiler_tree_node_Nova_NovaFile_Nova_parent, compiler_tree_node_Nova_NovaFile_Nova_location);
-	this->compiler_tree_node_Nova_NovaFile_Nova_file = compiler_tree_node_Nova_NovaFile_Nova_file;
+	parent = (compiler_tree_node_Nova_Node*)(parent == 0 ? (nova_Nova_Object*)(nova_Nova_Object*)nova_null : (nova_Nova_Object*)parent);
+	location = (compiler_util_Nova_Location*)(location == 0 ? (nova_Nova_Object*)compiler_util_Nova_Location_Nova_INVALID : (nova_Nova_Object*)location);
+	compiler_tree_node_Nova_Node_Nova_this((compiler_tree_node_Nova_Node*)(this), exceptionData, parent, location);
+	this->compiler_tree_node_Nova_NovaFile_Nova_file = file;
 	this->compiler_tree_node_Nova_NovaFile_Nova_packageDeclaration = compiler_tree_node_Nova_Package_static_Nova_generateDefaultPackage(0, exceptionData, (compiler_tree_node_Nova_Node*)(this), 0);
-	this->compiler_tree_node_Nova_NovaFile_Nova_imports = compiler_tree_node_Nova_ImportList_Nova_construct(0, exceptionData, (compiler_tree_node_Nova_Node*)(this), compiler_tree_node_Nova_NovaFile_Nova_location);
+	this->compiler_tree_node_Nova_NovaFile_Nova_imports = compiler_tree_node_Nova_ImportList_Nova_construct(0, exceptionData, (compiler_tree_node_Nova_Node*)(this), location);
 	compiler_tree_node_Nova_NovaFile_Nova_addDefaultImports(this, exceptionData);
 }
 
@@ -162,19 +162,19 @@ void compiler_tree_node_Nova_NovaFile_Nova_addDefaultImports(compiler_tree_node_
 	}
 }
 
-compiler_tree_node_Nova_Import* compiler_tree_node_Nova_NovaFile_Nova_addImport(compiler_tree_node_Nova_NovaFile* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* compiler_tree_node_Nova_NovaFile_Nova_location)
+compiler_tree_node_Nova_Import* compiler_tree_node_Nova_NovaFile_Nova_addImport(compiler_tree_node_Nova_NovaFile* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* location)
 {
-	if (compiler_tree_node_Nova_NovaFile_Nova_containsImport(this, exceptionData, compiler_tree_node_Nova_NovaFile_Nova_location, (intptr_t)nova_null, (intptr_t)nova_null))
+	if (compiler_tree_node_Nova_NovaFile_Nova_containsImport(this, exceptionData, location, (intptr_t)nova_null, (intptr_t)nova_null))
 	{
 		return (compiler_tree_node_Nova_Import*)(nova_Nova_Object*)nova_null;
 	}
 	return (compiler_tree_node_Nova_Import*)compiler_tree_node_Nova_Node_Nova_addChild((compiler_tree_node_Nova_Node*)(this), exceptionData, (compiler_tree_node_Nova_Node*)(compiler_tree_node_Nova_Import_Nova_construct(0, exceptionData, nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)(nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("import \""))), exceptionData, nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)(compiler_util_Nova_Location_Nova_toString((this->compiler_tree_node_Nova_Node_Nova_location), exceptionData)), exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("\"")))), (compiler_tree_node_Nova_Node*)(this), this->compiler_tree_node_Nova_Node_Nova_location)), (intptr_t)nova_null, 0, (intptr_t)nova_null);
 }
 
-char compiler_tree_node_Nova_NovaFile_Nova_containsImport(compiler_tree_node_Nova_NovaFile* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* compiler_tree_node_Nova_NovaFile_Nova_location, int compiler_tree_node_Nova_NovaFile_Nova_absoluteLocation, int compiler_tree_node_Nova_NovaFile_Nova_aliased)
+char compiler_tree_node_Nova_NovaFile_Nova_containsImport(compiler_tree_node_Nova_NovaFile* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* location, int absoluteLocation, int aliased)
 {
-	compiler_tree_node_Nova_NovaFile_Nova_absoluteLocation = (int)(compiler_tree_node_Nova_NovaFile_Nova_absoluteLocation == (intptr_t)nova_null ? 1 : compiler_tree_node_Nova_NovaFile_Nova_absoluteLocation);
-	compiler_tree_node_Nova_NovaFile_Nova_aliased = (int)(compiler_tree_node_Nova_NovaFile_Nova_aliased == (intptr_t)nova_null ? 0 : compiler_tree_node_Nova_NovaFile_Nova_aliased);
+	absoluteLocation = (int)(absoluteLocation == (intptr_t)nova_null ? 1 : absoluteLocation);
+	aliased = (int)(aliased == (intptr_t)nova_null ? 0 : aliased);
 	return 0;
 }
 

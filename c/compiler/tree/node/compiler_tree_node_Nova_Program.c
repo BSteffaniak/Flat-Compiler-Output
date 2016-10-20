@@ -118,7 +118,7 @@ void compiler_tree_node_Nova_Program_Nova_destroy(compiler_tree_node_Nova_Progra
 	NOVA_FREE(*this);
 }
 
-compiler_tree_node_Nova_NovaClass* compiler_tree_node_Nova_Program_Nova_getClassDeclaration(compiler_tree_node_Nova_Program* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* compiler_tree_node_Nova_Program_Nova_location)
+compiler_tree_node_Nova_NovaClass* compiler_tree_node_Nova_Program_Nova_getClassDeclaration(compiler_tree_node_Nova_Program* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* location)
 {
 }
 

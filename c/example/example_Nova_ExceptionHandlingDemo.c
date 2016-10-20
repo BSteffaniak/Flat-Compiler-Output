@@ -67,7 +67,7 @@ example_ExceptionHandlingDemo_Extension_VTable example_ExceptionHandlingDemo_Ext
 
 
 
-int example_Nova_ExceptionHandlingDemo_static_Nova_divide(example_Nova_ExceptionHandlingDemo* this, nova_exception_Nova_ExceptionData* exceptionData, int example_Nova_ExceptionHandlingDemo_Nova_num, int example_Nova_ExceptionHandlingDemo_Nova_den);
+int example_Nova_ExceptionHandlingDemo_static_Nova_divide(example_Nova_ExceptionHandlingDemo* this, nova_exception_Nova_ExceptionData* exceptionData, int num, int den);
 void example_Nova_ExceptionHandlingDemo_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData)
 {
 	{
@@ -99,7 +99,7 @@ void example_Nova_ExceptionHandlingDemo_Nova_destroy(example_Nova_ExceptionHandl
 	NOVA_FREE(*this);
 }
 
-void example_Nova_ExceptionHandlingDemo_static_Nova_main(example_Nova_ExceptionHandlingDemo* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_list_Nova_Array* example_Nova_ExceptionHandlingDemo_Nova_args)
+void example_Nova_ExceptionHandlingDemo_static_Nova_main(example_Nova_ExceptionHandlingDemo* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_list_Nova_Array* args)
 {
 	TRY
 	{
@@ -130,20 +130,20 @@ void example_Nova_ExceptionHandlingDemo_static_Nova_main(example_Nova_ExceptionH
 	nova_io_Nova_Console_static_Nova_waitForEnter(0, exceptionData);
 }
 
-int example_Nova_ExceptionHandlingDemo_static_Nova_divide(example_Nova_ExceptionHandlingDemo* this, nova_exception_Nova_ExceptionData* exceptionData, int example_Nova_ExceptionHandlingDemo_Nova_num, int example_Nova_ExceptionHandlingDemo_Nova_den)
+int example_Nova_ExceptionHandlingDemo_static_Nova_divide(example_Nova_ExceptionHandlingDemo* this, nova_exception_Nova_ExceptionData* exceptionData, int num, int den)
 {
 	int nova_zero_check3 = 0;
 	
-	if (example_Nova_ExceptionHandlingDemo_Nova_num % example_Nova_ExceptionHandlingDemo_Nova_den != 0)
+	if (num % den != 0)
 	{
 		THROW(12, example_Nova_NonWholeDivisionException_Nova_construct(0, exceptionData));
 	}
-	nova_zero_check3 = example_Nova_ExceptionHandlingDemo_Nova_den;
+	nova_zero_check3 = den;
 	if (nova_zero_check3 == 0)
 	{
 		THROW(2, nova_exception_Nova_DivideByZeroException_Nova_construct(0, exceptionData));
 	}
-	return example_Nova_ExceptionHandlingDemo_Nova_num / nova_zero_check3;
+	return num / nova_zero_check3;
 }
 
 void example_Nova_ExceptionHandlingDemo_Nova_this(example_Nova_ExceptionHandlingDemo* this, nova_exception_Nova_ExceptionData* exceptionData)

@@ -71,7 +71,7 @@ void compiler_error_Nova_UnimplementedOperationException_Nova_init_static(nova_e
 	}
 }
 
-compiler_error_Nova_UnimplementedOperationException* compiler_error_Nova_UnimplementedOperationException_Nova_construct(compiler_error_Nova_UnimplementedOperationException* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* compiler_error_Nova_UnimplementedOperationException_Nova_message)
+compiler_error_Nova_UnimplementedOperationException* compiler_error_Nova_UnimplementedOperationException_Nova_construct(compiler_error_Nova_UnimplementedOperationException* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* message)
 {
 	CCLASS_NEW(compiler_error_Nova_UnimplementedOperationException, this,);
 	this->vtable = &compiler_error_UnimplementedOperationException_Extension_VTable_val;
@@ -80,7 +80,7 @@ compiler_error_Nova_UnimplementedOperationException* compiler_error_Nova_Unimple
 	compiler_error_Nova_UnimplementedOperationException_Nova_super(this, exceptionData);
 	
 	{
-		compiler_error_Nova_UnimplementedOperationException_Nova_this(this, exceptionData, compiler_error_Nova_UnimplementedOperationException_Nova_message);
+		compiler_error_Nova_UnimplementedOperationException_Nova_this(this, exceptionData, message);
 	}
 	
 	return this;
@@ -97,9 +97,9 @@ void compiler_error_Nova_UnimplementedOperationException_Nova_destroy(compiler_e
 	NOVA_FREE(*this);
 }
 
-void compiler_error_Nova_UnimplementedOperationException_Nova_this(compiler_error_Nova_UnimplementedOperationException* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* compiler_error_Nova_UnimplementedOperationException_Nova_message)
+void compiler_error_Nova_UnimplementedOperationException_Nova_this(compiler_error_Nova_UnimplementedOperationException* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* message)
 {
-	nova_exception_Nova_Exception_0_Nova_this((nova_exception_Nova_Exception*)(this), exceptionData, compiler_error_Nova_UnimplementedOperationException_Nova_message);
+	nova_exception_Nova_Exception_Nova_this((nova_exception_Nova_Exception*)(this), exceptionData, message);
 }
 
 void compiler_error_Nova_UnimplementedOperationException_Nova_super(compiler_error_Nova_UnimplementedOperationException* this, nova_exception_Nova_ExceptionData* exceptionData)

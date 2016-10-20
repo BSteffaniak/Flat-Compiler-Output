@@ -63,9 +63,9 @@ CCLASS_CLASS
 )
 
 void example_Nova_Square_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData);
-example_Nova_Square* example_Nova_Square_Nova_construct(example_Nova_Square* this, nova_exception_Nova_ExceptionData* exceptionData, int example_Nova_Square_Nova_sideLength);
+example_Nova_Square* example_Nova_Square_Nova_construct(example_Nova_Square* this, nova_exception_Nova_ExceptionData* exceptionData, int sideLength);
 void example_Nova_Square_Nova_destroy(example_Nova_Square** this, nova_exception_Nova_ExceptionData* exceptionData);
-void example_Nova_Square_Nova_this(example_Nova_Square* this, nova_exception_Nova_ExceptionData* exceptionData, int example_Nova_Square_Nova_sideLength);
+void example_Nova_Square_Nova_this(example_Nova_Square* this, nova_exception_Nova_ExceptionData* exceptionData, int sideLength);
 int example_Nova_Square_Nova_numberSides(example_Nova_Square* this, nova_exception_Nova_ExceptionData* exceptionData);
 double example_Nova_Square_Nova_calculateArea(example_Nova_Square* this, nova_exception_Nova_ExceptionData* exceptionData);
 void example_Nova_Square_Nova_super(example_Nova_Square* this, nova_exception_Nova_ExceptionData* exceptionData);

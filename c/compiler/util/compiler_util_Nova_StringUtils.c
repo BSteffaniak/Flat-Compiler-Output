@@ -96,18 +96,18 @@ void compiler_util_Nova_StringUtils_Nova_destroy(compiler_util_Nova_StringUtils*
 	NOVA_FREE(*this);
 }
 
-char compiler_util_Nova_StringUtils_static_Nova_isSurroundedByQuotes(compiler_util_Nova_StringUtils* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* compiler_util_Nova_StringUtils_Nova_input)
+char compiler_util_Nova_StringUtils_static_Nova_isSurroundedByQuotes(compiler_util_Nova_StringUtils* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* input)
 {
-	return (char)compiler_util_Nova_StringUtils_Nova_input->nova_Nova_String_Nova_count >= 2 && (char)(intptr_t)nova_datastruct_list_Nova_CharArray_Accessor_Nova_first((nova_datastruct_list_Nova_CharArray*)(compiler_util_Nova_StringUtils_Nova_input->nova_Nova_String_Nova_chars), exceptionData) == '"' && (char)(intptr_t)nova_datastruct_list_Nova_CharArray_Accessor_Nova_last((nova_datastruct_list_Nova_CharArray*)(compiler_util_Nova_StringUtils_Nova_input->nova_Nova_String_Nova_chars), exceptionData) == '"';
+	return (char)input->nova_Nova_String_Nova_count >= 2 && (char)(intptr_t)nova_datastruct_list_Nova_CharArray_Accessor_Nova_first((nova_datastruct_list_Nova_CharArray*)(input->nova_Nova_String_Nova_chars), exceptionData) == '"' && (char)(intptr_t)nova_datastruct_list_Nova_CharArray_Accessor_Nova_last((nova_datastruct_list_Nova_CharArray*)(input->nova_Nova_String_Nova_chars), exceptionData) == '"';
 }
 
-nova_Nova_String* compiler_util_Nova_StringUtils_static_Nova_removeSurroundingQuotes(compiler_util_Nova_StringUtils* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* compiler_util_Nova_StringUtils_Nova_input)
+nova_Nova_String* compiler_util_Nova_StringUtils_static_Nova_removeSurroundingQuotes(compiler_util_Nova_StringUtils* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* input)
 {
-	while (compiler_util_Nova_StringUtils_static_Nova_isSurroundedByQuotes(0, exceptionData, compiler_util_Nova_StringUtils_Nova_input))
+	while (compiler_util_Nova_StringUtils_static_Nova_isSurroundedByQuotes(0, exceptionData, input))
 	{
-		compiler_util_Nova_StringUtils_Nova_input = nova_Nova_String_Nova_substring(compiler_util_Nova_StringUtils_Nova_input, exceptionData, 1, compiler_util_Nova_StringUtils_Nova_input->nova_Nova_String_Nova_count - 1);
+		input = nova_Nova_String_Nova_substring(input, exceptionData, 1, input->nova_Nova_String_Nova_count - 1);
 	}
-	return compiler_util_Nova_StringUtils_Nova_input;
+	return input;
 }
 
 void compiler_util_Nova_StringUtils_Nova_this(compiler_util_Nova_StringUtils* this, nova_exception_Nova_ExceptionData* exceptionData)

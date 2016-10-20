@@ -71,7 +71,7 @@ void example_copy_Nova_Dog_Nova_init_static(nova_exception_Nova_ExceptionData* e
 	}
 }
 
-example_copy_Nova_Dog* example_copy_Nova_Dog_Nova_construct(example_copy_Nova_Dog* this, nova_exception_Nova_ExceptionData* exceptionData, int example_copy_Nova_Dog_Nova_a, int example_copy_Nova_Dog_Nova_b)
+example_copy_Nova_Dog* example_copy_Nova_Dog_Nova_construct(example_copy_Nova_Dog* this, nova_exception_Nova_ExceptionData* exceptionData, int a, int b)
 {
 	CCLASS_NEW(example_copy_Nova_Dog, this,);
 	this->vtable = &example_copy_Dog_Extension_VTable_val;
@@ -79,7 +79,7 @@ example_copy_Nova_Dog* example_copy_Nova_Dog_Nova_construct(example_copy_Nova_Do
 	example_copy_Nova_Dog_Nova_super(this, exceptionData);
 	
 	{
-		example_copy_Nova_Dog_Nova_this(this, exceptionData, example_copy_Nova_Dog_Nova_a, example_copy_Nova_Dog_Nova_b);
+		example_copy_Nova_Dog_Nova_this(this, exceptionData, a, b);
 	}
 	
 	return this;
@@ -96,9 +96,9 @@ void example_copy_Nova_Dog_Nova_destroy(example_copy_Nova_Dog** this, nova_excep
 	NOVA_FREE(*this);
 }
 
-void example_copy_Nova_Dog_Nova_this(example_copy_Nova_Dog* this, nova_exception_Nova_ExceptionData* exceptionData, int example_copy_Nova_Dog_Nova_a, int example_copy_Nova_Dog_Nova_b)
+void example_copy_Nova_Dog_Nova_this(example_copy_Nova_Dog* this, nova_exception_Nova_ExceptionData* exceptionData, int a, int b)
 {
-	nova_io_Nova_Console_1_static_Nova_writeLine(0, exceptionData, nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)(nova_primitive_number_Nova_Int_static_Nova_toString(0, exceptionData, example_copy_Nova_Dog_Nova_a)), exceptionData, nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)(nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)(", "))), exceptionData, nova_primitive_number_Nova_Int_static_Nova_toString(0, exceptionData, example_copy_Nova_Dog_Nova_b))));
+	nova_io_Nova_Console_1_static_Nova_writeLine(0, exceptionData, nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)(nova_primitive_number_Nova_Int_static_Nova_toString(0, exceptionData, a)), exceptionData, nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)(nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)(", "))), exceptionData, nova_primitive_number_Nova_Int_static_Nova_toString(0, exceptionData, b))));
 }
 
 void example_copy_Nova_Dog_Nova_super(example_copy_Nova_Dog* this, nova_exception_Nova_ExceptionData* exceptionData)

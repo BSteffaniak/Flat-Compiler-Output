@@ -84,7 +84,7 @@ void stabilitytest_Nova_ClientThread_Nova_init_static(nova_exception_Nova_Except
 	}
 }
 
-stabilitytest_Nova_ClientThread* stabilitytest_Nova_ClientThread_Nova_construct(stabilitytest_Nova_ClientThread* this, nova_exception_Nova_ExceptionData* exceptionData, stabilitytest_Nova_StabilityTest* stabilitytest_Nova_ClientThread_Nova_program, int stabilitytest_Nova_ClientThread_Nova_port)
+stabilitytest_Nova_ClientThread* stabilitytest_Nova_ClientThread_Nova_construct(stabilitytest_Nova_ClientThread* this, nova_exception_Nova_ExceptionData* exceptionData, stabilitytest_Nova_StabilityTest* program, int port)
 {
 	CCLASS_NEW(stabilitytest_Nova_ClientThread, this);
 	this->vtable = &stabilitytest_ClientThread_Extension_VTable_val;
@@ -93,7 +93,7 @@ stabilitytest_Nova_ClientThread* stabilitytest_Nova_ClientThread_Nova_construct(
 	stabilitytest_Nova_ClientThread_Nova_super(this, exceptionData);
 	
 	{
-		stabilitytest_Nova_ClientThread_Nova_this(this, exceptionData, stabilitytest_Nova_ClientThread_Nova_program, stabilitytest_Nova_ClientThread_Nova_port);
+		stabilitytest_Nova_ClientThread_Nova_this(this, exceptionData, program, port);
 	}
 	
 	return this;
@@ -113,10 +113,10 @@ void stabilitytest_Nova_ClientThread_Nova_destroy(stabilitytest_Nova_ClientThrea
 	NOVA_FREE(*this);
 }
 
-void stabilitytest_Nova_ClientThread_Nova_this(stabilitytest_Nova_ClientThread* this, nova_exception_Nova_ExceptionData* exceptionData, stabilitytest_Nova_StabilityTest* stabilitytest_Nova_ClientThread_Nova_program, int stabilitytest_Nova_ClientThread_Nova_port)
+void stabilitytest_Nova_ClientThread_Nova_this(stabilitytest_Nova_ClientThread* this, nova_exception_Nova_ExceptionData* exceptionData, stabilitytest_Nova_StabilityTest* program, int port)
 {
-	this->prv->stabilitytest_Nova_ClientThread_Nova_program = stabilitytest_Nova_ClientThread_Nova_program;
-	this->prv->stabilitytest_Nova_ClientThread_Nova_port = stabilitytest_Nova_ClientThread_Nova_port;
+	this->prv->stabilitytest_Nova_ClientThread_Nova_program = program;
+	this->prv->stabilitytest_Nova_ClientThread_Nova_port = port;
 }
 
 void stabilitytest_Nova_ClientThread_Nova_run(stabilitytest_Nova_ClientThread* this, nova_exception_Nova_ExceptionData* exceptionData)
@@ -130,14 +130,14 @@ void stabilitytest_Nova_ClientThread_Nova_run(stabilitytest_Nova_ClientThread* t
 	nova_io_Nova_Console_0_static_Nova_write(0, exceptionData, nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)(nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("ClientSocket attempting to connect to "))), exceptionData, nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)((l1_Nova_ip)), exceptionData, nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)(nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)(":"))), exceptionData, nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)(nova_primitive_number_Nova_Int_static_Nova_toString(0, exceptionData, (this->prv->stabilitytest_Nova_ClientThread_Nova_port))), exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("... ")))))));
 	if (!nova_network_Nova_ClientSocket_Nova_connect(l1_Nova_client, exceptionData, l1_Nova_ip, this->prv->stabilitytest_Nova_ClientThread_Nova_port))
 	{
-		stabilitytest_Nova_StabilityTest_1_Nova_fail(this->prv->stabilitytest_Nova_ClientThread_Nova_program, exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("Failed to connect to localhost server")));
+		stabilitytest_Nova_StabilityTest_Nova_fail(this->prv->stabilitytest_Nova_ClientThread_Nova_program, exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("Failed to connect to localhost server")), (intptr_t)nova_null);
 	}
 	nova_io_Nova_Console_1_static_Nova_writeLine(0, exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("OK")));
 	nova_io_Nova_Console_1_static_Nova_writeLine(0, exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("Waiting for String from ServerSocket... ")));
 	l1_Nova_s = (nova_Nova_String*)(nova_io_Nova_InputStream_virtual_Nova_readString((nova_io_Nova_InputStream*)(l1_Nova_client->nova_network_Nova_ClientSocket_Nova_connection->nova_network_Nova_ConnectionSocket_Nova_in), exceptionData));
 	if (l1_Nova_s->nova_Nova_String_Nova_count != stabilitytest_Nova_NetworkStability_Nova_received->nova_Nova_String_Nova_count || !nova_Nova_String_Nova_equals(l1_Nova_s, exceptionData, stabilitytest_Nova_NetworkStability_Nova_received))
 	{
-		stabilitytest_Nova_StabilityTest_1_Nova_fail(this->prv->stabilitytest_Nova_ClientThread_Nova_program, exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("Client unable to receive the correct message from server")));
+		stabilitytest_Nova_StabilityTest_Nova_fail(this->prv->stabilitytest_Nova_ClientThread_Nova_program, exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("Client unable to receive the correct message from server")), (intptr_t)nova_null);
 	}
 	nova_io_Nova_Console_0_static_Nova_write(0, exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("Attempting to send String to ServerSocket... ")));
 	nova_io_Nova_OutputStream_virtual0_Nova_write((nova_io_Nova_OutputStream*)(l1_Nova_client->nova_network_Nova_ClientSocket_Nova_connection->nova_network_Nova_ConnectionSocket_Nova_out), exceptionData, stabilitytest_Nova_NetworkStability_Nova_received);
@@ -145,7 +145,7 @@ void stabilitytest_Nova_ClientThread_Nova_run(stabilitytest_Nova_ClientThread* t
 	nova_io_Nova_Console_0_static_Nova_write(0, exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("Attempting to close ClientSocket... ")));
 	if (!nova_network_Nova_ClientSocket_Nova_close(l1_Nova_client, exceptionData))
 	{
-		stabilitytest_Nova_StabilityTest_1_Nova_fail(this->prv->stabilitytest_Nova_ClientThread_Nova_program, exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("Unable to close Client connection")));
+		stabilitytest_Nova_StabilityTest_Nova_fail(this->prv->stabilitytest_Nova_ClientThread_Nova_program, exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("Unable to close Client connection")), (intptr_t)nova_null);
 	}
 	nova_io_Nova_Console_1_static_Nova_writeLine(0, exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("OK")));
 }

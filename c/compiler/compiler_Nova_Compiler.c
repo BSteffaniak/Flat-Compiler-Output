@@ -102,7 +102,7 @@ void compiler_Nova_Compiler_Nova_destroy(compiler_Nova_Compiler** this, nova_exc
 	NOVA_FREE(*this);
 }
 
-void compiler_Nova_Compiler_static_Nova_main(compiler_Nova_Compiler* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_list_Nova_Array* compiler_Nova_Compiler_Nova_args)
+void compiler_Nova_Compiler_static_Nova_main(compiler_Nova_Compiler* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_list_Nova_Array* args)
 {
 	compiler_Nova_Compiler* l1_Nova_c = (compiler_Nova_Compiler*)nova_null;
 	
@@ -115,7 +115,7 @@ void compiler_Nova_Compiler_Nova_this(compiler_Nova_Compiler* this, nova_excepti
 {
 }
 
-void compiler_Nova_Compiler_Nova_compile(compiler_Nova_Compiler* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_list_Nova_Array* compiler_Nova_Compiler_Nova_args)
+void compiler_Nova_Compiler_Nova_compile(compiler_Nova_Compiler* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_list_Nova_Array* args)
 {
 	nova_Nova_String* l1_Nova_directory = (nova_Nova_String*)nova_null;
 	
@@ -123,8 +123,8 @@ void compiler_Nova_Compiler_Nova_compile(compiler_Nova_Compiler* this, nova_exce
 	if (compiler_Nova_Compiler_Nova_DEBUG)
 	{
 		compiler_Nova_Compiler_Nova_testClasses(this, exceptionData);
-		compiler_Nova_Compiler_Nova_args = generated11(this, exceptionData);
-		nova_io_Nova_Console_1_static_Nova_writeLine(0, exceptionData, nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)(nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("Args: "))), exceptionData, nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)(nova_datastruct_list_Nova_Array_Nova_toString((nova_datastruct_list_Nova_Array*)((compiler_Nova_Compiler_Nova_args)), exceptionData)), exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("")))));
+		args = generated11(this, exceptionData);
+		nova_io_Nova_Console_1_static_Nova_writeLine(0, exceptionData, nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)(nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("Args: "))), exceptionData, nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)(nova_datastruct_list_Nova_Array_Nova_toString((nova_datastruct_list_Nova_Array*)((args)), exceptionData)), exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("")))));
 	}
 }
 

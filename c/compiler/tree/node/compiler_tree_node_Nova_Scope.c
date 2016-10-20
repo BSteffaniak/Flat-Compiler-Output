@@ -126,11 +126,11 @@ void compiler_tree_node_Nova_Scope_Nova_destroy(compiler_tree_node_Nova_Scope** 
 	NOVA_FREE(*this);
 }
 
-compiler_tree_node_Nova_Scope* compiler_tree_node_Nova_Scope_Nova_clone(compiler_tree_node_Nova_Scope* this, nova_exception_Nova_ExceptionData* exceptionData, compiler_tree_node_Nova_Node* compiler_tree_node_Nova_Scope_Nova_parent, compiler_util_Nova_Location* compiler_tree_node_Nova_Scope_Nova_location, int compiler_tree_node_Nova_Scope_Nova_cloneChildren)
+compiler_tree_node_Nova_Scope* compiler_tree_node_Nova_Scope_Nova_clone(compiler_tree_node_Nova_Scope* this, nova_exception_Nova_ExceptionData* exceptionData, compiler_tree_node_Nova_Node* parent, compiler_util_Nova_Location* location, int cloneChildren)
 {
-	compiler_tree_node_Nova_Scope_Nova_parent = (compiler_tree_node_Nova_Node*)(compiler_tree_node_Nova_Scope_Nova_parent == 0 ? (nova_Nova_Object*)(nova_Nova_Object*)nova_null : (nova_Nova_Object*)compiler_tree_node_Nova_Scope_Nova_parent);
-	compiler_tree_node_Nova_Scope_Nova_location = (compiler_util_Nova_Location*)(compiler_tree_node_Nova_Scope_Nova_location == 0 ? (nova_Nova_Object*)compiler_util_Nova_Location_Nova_INVALID : (nova_Nova_Object*)compiler_tree_node_Nova_Scope_Nova_location);
-	compiler_tree_node_Nova_Scope_Nova_cloneChildren = (int)(compiler_tree_node_Nova_Scope_Nova_cloneChildren == (intptr_t)nova_null ? 1 : compiler_tree_node_Nova_Scope_Nova_cloneChildren);
+	parent = (compiler_tree_node_Nova_Node*)(parent == 0 ? (nova_Nova_Object*)(nova_Nova_Object*)nova_null : (nova_Nova_Object*)parent);
+	location = (compiler_util_Nova_Location*)(location == 0 ? (nova_Nova_Object*)compiler_util_Nova_Location_Nova_INVALID : (nova_Nova_Object*)location);
+	cloneChildren = (int)(cloneChildren == (intptr_t)nova_null ? 1 : cloneChildren);
 	return (compiler_tree_node_Nova_Scope*)(nova_Nova_Object*)nova_null;
 }
 

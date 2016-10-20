@@ -100,7 +100,7 @@ void example_network_Nova_ServerDemo_Nova_destroy(example_network_Nova_ServerDem
 	NOVA_FREE(*this);
 }
 
-void example_network_Nova_ServerDemo_static_Nova_main(example_network_Nova_ServerDemo* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_list_Nova_Array* example_network_Nova_ServerDemo_Nova_args)
+void example_network_Nova_ServerDemo_static_Nova_main(example_network_Nova_ServerDemo* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_list_Nova_Array* args)
 {
 	nova_datastruct_list_Nova_Array* l1_Nova_connections = (nova_datastruct_list_Nova_Array*)nova_null;
 	nova_network_Nova_ServerSocket* l1_Nova_socket = (nova_network_Nova_ServerSocket*)nova_null;

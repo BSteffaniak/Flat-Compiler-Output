@@ -98,7 +98,7 @@ void example_network_Nova_ClientDemo_Nova_destroy(example_network_Nova_ClientDem
 	NOVA_FREE(*this);
 }
 
-void example_network_Nova_ClientDemo_static_Nova_main(example_network_Nova_ClientDemo* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_list_Nova_Array* example_network_Nova_ClientDemo_Nova_args)
+void example_network_Nova_ClientDemo_static_Nova_main(example_network_Nova_ClientDemo* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_list_Nova_Array* args)
 {
 	nova_network_Nova_ClientSocket* l1_Nova_socket = (nova_network_Nova_ClientSocket*)nova_null;
 	nova_Nova_String* l1_Nova_ip = (nova_Nova_String*)nova_null;

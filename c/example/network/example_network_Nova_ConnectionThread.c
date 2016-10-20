@@ -81,7 +81,7 @@ void example_network_Nova_ConnectionThread_Nova_init_static(nova_exception_Nova_
 	}
 }
 
-example_network_Nova_ConnectionThread* example_network_Nova_ConnectionThread_Nova_construct(example_network_Nova_ConnectionThread* this, nova_exception_Nova_ExceptionData* exceptionData, nova_network_Nova_ConnectionSocket* example_network_Nova_ConnectionThread_Nova_socket)
+example_network_Nova_ConnectionThread* example_network_Nova_ConnectionThread_Nova_construct(example_network_Nova_ConnectionThread* this, nova_exception_Nova_ExceptionData* exceptionData, nova_network_Nova_ConnectionSocket* socket)
 {
 	CCLASS_NEW(example_network_Nova_ConnectionThread, this);
 	this->vtable = &example_network_ConnectionThread_Extension_VTable_val;
@@ -90,7 +90,7 @@ example_network_Nova_ConnectionThread* example_network_Nova_ConnectionThread_Nov
 	example_network_Nova_ConnectionThread_Nova_super(this, exceptionData);
 	
 	{
-		example_network_Nova_ConnectionThread_Nova_this(this, exceptionData, example_network_Nova_ConnectionThread_Nova_socket);
+		example_network_Nova_ConnectionThread_Nova_this(this, exceptionData, socket);
 	}
 	
 	return this;
@@ -109,9 +109,9 @@ void example_network_Nova_ConnectionThread_Nova_destroy(example_network_Nova_Con
 	NOVA_FREE(*this);
 }
 
-void example_network_Nova_ConnectionThread_Nova_this(example_network_Nova_ConnectionThread* this, nova_exception_Nova_ExceptionData* exceptionData, nova_network_Nova_ConnectionSocket* example_network_Nova_ConnectionThread_Nova_socket)
+void example_network_Nova_ConnectionThread_Nova_this(example_network_Nova_ConnectionThread* this, nova_exception_Nova_ExceptionData* exceptionData, nova_network_Nova_ConnectionSocket* socket)
 {
-	this->prv->example_network_Nova_ConnectionThread_Nova_socket = example_network_Nova_ConnectionThread_Nova_socket;
+	this->prv->example_network_Nova_ConnectionThread_Nova_socket = socket;
 }
 
 void example_network_Nova_ConnectionThread_Nova_run(example_network_Nova_ConnectionThread* this, nova_exception_Nova_ExceptionData* exceptionData)

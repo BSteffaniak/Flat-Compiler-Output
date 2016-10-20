@@ -81,7 +81,7 @@ void example_Nova_ThreadDemoImplementation_Nova_init_static(nova_exception_Nova_
 	}
 }
 
-example_Nova_ThreadDemoImplementation* example_Nova_ThreadDemoImplementation_Nova_construct(example_Nova_ThreadDemoImplementation* this, nova_exception_Nova_ExceptionData* exceptionData, long_long example_Nova_ThreadDemoImplementation_Nova_millis, nova_Nova_String* example_Nova_ThreadDemoImplementation_Nova_word)
+example_Nova_ThreadDemoImplementation* example_Nova_ThreadDemoImplementation_Nova_construct(example_Nova_ThreadDemoImplementation* this, nova_exception_Nova_ExceptionData* exceptionData, long_long millis, nova_Nova_String* word)
 {
 	CCLASS_NEW(example_Nova_ThreadDemoImplementation, this);
 	this->vtable = &example_ThreadDemoImplementation_Extension_VTable_val;
@@ -90,7 +90,7 @@ example_Nova_ThreadDemoImplementation* example_Nova_ThreadDemoImplementation_Nov
 	example_Nova_ThreadDemoImplementation_Nova_super(this, exceptionData);
 	
 	{
-		example_Nova_ThreadDemoImplementation_Nova_this(this, exceptionData, example_Nova_ThreadDemoImplementation_Nova_millis, example_Nova_ThreadDemoImplementation_Nova_word);
+		example_Nova_ThreadDemoImplementation_Nova_this(this, exceptionData, millis, word);
 	}
 	
 	return this;
@@ -110,10 +110,10 @@ void example_Nova_ThreadDemoImplementation_Nova_destroy(example_Nova_ThreadDemoI
 	NOVA_FREE(*this);
 }
 
-void example_Nova_ThreadDemoImplementation_Nova_this(example_Nova_ThreadDemoImplementation* this, nova_exception_Nova_ExceptionData* exceptionData, long_long example_Nova_ThreadDemoImplementation_Nova_millis, nova_Nova_String* example_Nova_ThreadDemoImplementation_Nova_word)
+void example_Nova_ThreadDemoImplementation_Nova_this(example_Nova_ThreadDemoImplementation* this, nova_exception_Nova_ExceptionData* exceptionData, long_long millis, nova_Nova_String* word)
 {
-	this->prv->example_Nova_ThreadDemoImplementation_Nova_millis = example_Nova_ThreadDemoImplementation_Nova_millis;
-	this->prv->example_Nova_ThreadDemoImplementation_Nova_word = example_Nova_ThreadDemoImplementation_Nova_word;
+	this->prv->example_Nova_ThreadDemoImplementation_Nova_millis = millis;
+	this->prv->example_Nova_ThreadDemoImplementation_Nova_word = word;
 }
 
 void example_Nova_ThreadDemoImplementation_Nova_run(example_Nova_ThreadDemoImplementation* this, nova_exception_Nova_ExceptionData* exceptionData)

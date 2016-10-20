@@ -98,29 +98,29 @@ void compiler_util_Nova_FileUtils_Nova_destroy(compiler_util_Nova_FileUtils** th
 	NOVA_FREE(*this);
 }
 
-nova_Nova_String* compiler_util_Nova_FileUtils_static_Nova_formatPath(compiler_util_Nova_FileUtils* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* compiler_util_Nova_FileUtils_Nova_path)
+nova_Nova_String* compiler_util_Nova_FileUtils_static_Nova_formatPath(compiler_util_Nova_FileUtils* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* path)
 {
-	compiler_util_Nova_FileUtils_Nova_path = nova_Nova_String_Nova_replace(compiler_util_Nova_FileUtils_Nova_path, exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("\\")), nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("/")));
-	compiler_util_Nova_FileUtils_Nova_path = compiler_util_Nova_FileUtils_static_Nova_formAbsolutePath(0, exceptionData, compiler_util_Nova_FileUtils_Nova_path);
+	path = nova_Nova_String_Nova_replace(path, exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("\\")), nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("/")));
+	path = compiler_util_Nova_FileUtils_static_Nova_formAbsolutePath(0, exceptionData, path);
 	if (compiler_util_Nova_OS_Accessor_static_Nova_isWindows(0, exceptionData))
 	{
-		compiler_util_Nova_FileUtils_Nova_path = compiler_util_Nova_StringUtils_static_Nova_removeSurroundingQuotes(0, exceptionData, compiler_util_Nova_FileUtils_Nova_path);
-		return nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)(nova_primitive_number_Nova_Char_static_Nova_toString(0, exceptionData, '"')), exceptionData, nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)(compiler_util_Nova_FileUtils_Nova_path), exceptionData, nova_primitive_number_Nova_Char_static_Nova_toString(0, exceptionData, '"')));
+		path = compiler_util_Nova_StringUtils_static_Nova_removeSurroundingQuotes(0, exceptionData, path);
+		return nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)(nova_primitive_number_Nova_Char_static_Nova_toString(0, exceptionData, '"')), exceptionData, nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)(path), exceptionData, nova_primitive_number_Nova_Char_static_Nova_toString(0, exceptionData, '"')));
 	}
 	else
 	{
-		return compiler_util_Nova_FileUtils_static_Nova_escapeSpaces(0, exceptionData, compiler_util_Nova_FileUtils_Nova_path);
+		return compiler_util_Nova_FileUtils_static_Nova_escapeSpaces(0, exceptionData, path);
 	}
 }
 
-nova_Nova_String* compiler_util_Nova_FileUtils_static_Nova_formAbsolutePath(compiler_util_Nova_FileUtils* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* compiler_util_Nova_FileUtils_Nova_path)
+nova_Nova_String* compiler_util_Nova_FileUtils_static_Nova_formAbsolutePath(compiler_util_Nova_FileUtils* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* path)
 {
-	return compiler_util_Nova_FileUtils_Nova_path;
+	return path;
 }
 
-nova_Nova_String* compiler_util_Nova_FileUtils_static_Nova_escapeSpaces(compiler_util_Nova_FileUtils* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* compiler_util_Nova_FileUtils_Nova_input)
+nova_Nova_String* compiler_util_Nova_FileUtils_static_Nova_escapeSpaces(compiler_util_Nova_FileUtils* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* input)
 {
-	return compiler_util_Nova_FileUtils_Nova_input;
+	return input;
 }
 
 nova_Nova_String* compiler_util_Nova_FileUtils_static_Nova_getWorkingDirectoryPath(compiler_util_Nova_FileUtils* this, nova_exception_Nova_ExceptionData* exceptionData)

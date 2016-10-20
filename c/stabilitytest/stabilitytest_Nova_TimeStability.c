@@ -75,7 +75,7 @@ void stabilitytest_Nova_TimeStability_Nova_init_static(nova_exception_Nova_Excep
 	}
 }
 
-stabilitytest_Nova_TimeStability* stabilitytest_Nova_TimeStability_Nova_construct(stabilitytest_Nova_TimeStability* this, nova_exception_Nova_ExceptionData* exceptionData, stabilitytest_Nova_StabilityTest* stabilitytest_Nova_TimeStability_Nova_program)
+stabilitytest_Nova_TimeStability* stabilitytest_Nova_TimeStability_Nova_construct(stabilitytest_Nova_TimeStability* this, nova_exception_Nova_ExceptionData* exceptionData, stabilitytest_Nova_StabilityTest* program)
 {
 	CCLASS_NEW(stabilitytest_Nova_TimeStability, this,);
 	this->vtable = &stabilitytest_TimeStability_Extension_VTable_val;
@@ -84,7 +84,7 @@ stabilitytest_Nova_TimeStability* stabilitytest_Nova_TimeStability_Nova_construc
 	stabilitytest_Nova_TimeStability_Nova_super(this, exceptionData);
 	
 	{
-		stabilitytest_Nova_TimeStability_Nova_this(this, exceptionData, stabilitytest_Nova_TimeStability_Nova_program);
+		stabilitytest_Nova_TimeStability_Nova_this(this, exceptionData, program);
 	}
 	
 	return this;
@@ -101,9 +101,9 @@ void stabilitytest_Nova_TimeStability_Nova_destroy(stabilitytest_Nova_TimeStabil
 	NOVA_FREE(*this);
 }
 
-void stabilitytest_Nova_TimeStability_Nova_this(stabilitytest_Nova_TimeStability* this, nova_exception_Nova_ExceptionData* exceptionData, stabilitytest_Nova_StabilityTest* stabilitytest_Nova_TimeStability_Nova_program)
+void stabilitytest_Nova_TimeStability_Nova_this(stabilitytest_Nova_TimeStability* this, nova_exception_Nova_ExceptionData* exceptionData, stabilitytest_Nova_StabilityTest* program)
 {
-	stabilitytest_Nova_StabilityTestCase_Nova_this((stabilitytest_Nova_StabilityTestCase*)(this), exceptionData, stabilitytest_Nova_TimeStability_Nova_program);
+	stabilitytest_Nova_StabilityTestCase_Nova_this((stabilitytest_Nova_StabilityTestCase*)(this), exceptionData, program);
 }
 
 void stabilitytest_Nova_TimeStability_Nova_test(stabilitytest_Nova_TimeStability* this, nova_exception_Nova_ExceptionData* exceptionData)
@@ -121,7 +121,7 @@ void stabilitytest_Nova_TimeStability_Nova_test(stabilitytest_Nova_TimeStability
 	}
 	else
 	{
-		stabilitytest_Nova_StabilityTest_1_Nova_fail(this->stabilitytest_Nova_StabilityTestCase_Nova_program, exceptionData, nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)(nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("Failed; expected 100ms, found "))), exceptionData, nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)(nova_primitive_number_Nova_Long_static_Nova_toString(0, exceptionData, nova_time_Nova_Timer_Accessor_Nova_duration(l1_Nova_timer, exceptionData))), exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("ms")))));
+		stabilitytest_Nova_StabilityTest_Nova_fail(this->stabilitytest_Nova_StabilityTestCase_Nova_program, exceptionData, nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)(nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("Failed; expected 100ms, found "))), exceptionData, nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)(nova_primitive_number_Nova_Long_static_Nova_toString(0, exceptionData, nova_time_Nova_Timer_Accessor_Nova_duration(l1_Nova_timer, exceptionData))), exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("ms")))), (intptr_t)nova_null);
 	}
 }
 

@@ -97,7 +97,7 @@ void example_Nova_FileTest_Nova_destroy(example_Nova_FileTest** this, nova_excep
 	NOVA_FREE(*this);
 }
 
-void example_Nova_FileTest_static_Nova_main(example_Nova_FileTest* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_list_Nova_Array* example_Nova_FileTest_Nova_args)
+void example_Nova_FileTest_static_Nova_main(example_Nova_FileTest* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_list_Nova_Array* args)
 {
 	nova_io_Nova_File* l1_Nova_f = (nova_io_Nova_File*)nova_null;
 	

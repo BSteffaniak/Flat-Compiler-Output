@@ -114,10 +114,10 @@ int stabilitytest_Nova_ClassWithProperties_Accessor_Nova_prop1(stabilitytest_Nov
 	return this->prv->stabilitytest_Nova_ClassWithProperties_Nova_privateProp1;
 }
 
-int stabilitytest_Nova_ClassWithProperties_Mutator_Nova_prop1(stabilitytest_Nova_ClassWithProperties* this, nova_exception_Nova_ExceptionData* exceptionData, int stabilitytest_Nova_ClassWithProperties_Nova_value)
+int stabilitytest_Nova_ClassWithProperties_Mutator_Nova_prop1(stabilitytest_Nova_ClassWithProperties* this, nova_exception_Nova_ExceptionData* exceptionData, int value)
 {
-	this->prv->stabilitytest_Nova_ClassWithProperties_Nova_privateProp1 = stabilitytest_Nova_ClassWithProperties_Nova_value;
-	return stabilitytest_Nova_ClassWithProperties_Nova_value;
+	this->prv->stabilitytest_Nova_ClassWithProperties_Nova_privateProp1 = value;
+	return value;
 }
 
 int stabilitytest_Nova_ClassWithProperties_Accessor_Nova_prop2(stabilitytest_Nova_ClassWithProperties* this, nova_exception_Nova_ExceptionData* exceptionData)
@@ -125,10 +125,10 @@ int stabilitytest_Nova_ClassWithProperties_Accessor_Nova_prop2(stabilitytest_Nov
 	return this->prv->stabilitytest_Nova_ClassWithProperties_Nova_privateProp2;
 }
 
-int stabilitytest_Nova_ClassWithProperties_Mutator_Nova_prop2(stabilitytest_Nova_ClassWithProperties* this, nova_exception_Nova_ExceptionData* exceptionData, int stabilitytest_Nova_ClassWithProperties_Nova_value)
+int stabilitytest_Nova_ClassWithProperties_Mutator_Nova_prop2(stabilitytest_Nova_ClassWithProperties* this, nova_exception_Nova_ExceptionData* exceptionData, int value)
 {
-	this->prv->stabilitytest_Nova_ClassWithProperties_Nova_privateProp2 = stabilitytest_Nova_ClassWithProperties_Nova_value;
-	return stabilitytest_Nova_ClassWithProperties_Nova_value;
+	this->prv->stabilitytest_Nova_ClassWithProperties_Nova_privateProp2 = value;
+	return value;
 }
 
 void stabilitytest_Nova_ClassWithProperties_Nova_super(stabilitytest_Nova_ClassWithProperties* this, nova_exception_Nova_ExceptionData* exceptionData)

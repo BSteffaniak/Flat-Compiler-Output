@@ -72,7 +72,7 @@ void example_Nova_Person_Nova_init_static(nova_exception_Nova_ExceptionData* exc
 	}
 }
 
-example_Nova_Person* example_Nova_Person_Nova_construct(example_Nova_Person* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* example_Nova_Person_Nova_name, int example_Nova_Person_Nova_age)
+example_Nova_Person* example_Nova_Person_Nova_construct(example_Nova_Person* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* name, int age)
 {
 	CCLASS_NEW(example_Nova_Person, this,);
 	this->vtable = &example_Person_Extension_VTable_val;
@@ -80,7 +80,7 @@ example_Nova_Person* example_Nova_Person_Nova_construct(example_Nova_Person* thi
 	example_Nova_Person_Nova_super(this, exceptionData);
 	
 	{
-		example_Nova_Person_Nova_this(this, exceptionData, example_Nova_Person_Nova_name, example_Nova_Person_Nova_age);
+		example_Nova_Person_Nova_this(this, exceptionData, name, age);
 	}
 	
 	return this;
@@ -99,10 +99,10 @@ void example_Nova_Person_Nova_destroy(example_Nova_Person** this, nova_exception
 	NOVA_FREE(*this);
 }
 
-void example_Nova_Person_Nova_this(example_Nova_Person* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* example_Nova_Person_Nova_name, int example_Nova_Person_Nova_age)
+void example_Nova_Person_Nova_this(example_Nova_Person* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* name, int age)
 {
-	this->example_Nova_Person_Nova_name = example_Nova_Person_Nova_name;
-	this->example_Nova_Person_Nova_age = example_Nova_Person_Nova_age;
+	this->example_Nova_Person_Nova_name = name;
+	this->example_Nova_Person_Nova_age = age;
 }
 
 void example_Nova_Person_Nova_sayHello(example_Nova_Person* this, nova_exception_Nova_ExceptionData* exceptionData)

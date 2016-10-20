@@ -88,7 +88,7 @@ compiler_util_Nova_Location* compiler_util_Nova_Location_0_Nova_construct(compil
 	return this;
 }
 
-compiler_util_Nova_Location* compiler_util_Nova_Location_1_Nova_construct(compiler_util_Nova_Location* this, nova_exception_Nova_ExceptionData* exceptionData, compiler_util_Nova_Location* compiler_util_Nova_Location_Nova_loc)
+compiler_util_Nova_Location* compiler_util_Nova_Location_1_Nova_construct(compiler_util_Nova_Location* this, nova_exception_Nova_ExceptionData* exceptionData, compiler_util_Nova_Location* loc)
 {
 	CCLASS_NEW(compiler_util_Nova_Location, this,);
 	this->vtable = &compiler_util_Location_Extension_VTable_val;
@@ -96,13 +96,13 @@ compiler_util_Nova_Location* compiler_util_Nova_Location_1_Nova_construct(compil
 	compiler_util_Nova_Location_Nova_super(this, exceptionData);
 	
 	{
-		compiler_util_Nova_Location_0_Nova_this(this, exceptionData, compiler_util_Nova_Location_Nova_loc);
+		compiler_util_Nova_Location_0_Nova_this(this, exceptionData, loc);
 	}
 	
 	return this;
 }
 
-compiler_util_Nova_Location* compiler_util_Nova_Location_2_Nova_construct(compiler_util_Nova_Location* this, nova_exception_Nova_ExceptionData* exceptionData, int compiler_util_Nova_Location_Nova_lineNumber, int compiler_util_Nova_Location_Nova_offset, int compiler_util_Nova_Location_Nova_start, int compiler_util_Nova_Location_Nova_end)
+compiler_util_Nova_Location* compiler_util_Nova_Location_2_Nova_construct(compiler_util_Nova_Location* this, nova_exception_Nova_ExceptionData* exceptionData, int lineNumber, int offset, int start, int end)
 {
 	CCLASS_NEW(compiler_util_Nova_Location, this,);
 	this->vtable = &compiler_util_Location_Extension_VTable_val;
@@ -110,7 +110,7 @@ compiler_util_Nova_Location* compiler_util_Nova_Location_2_Nova_construct(compil
 	compiler_util_Nova_Location_Nova_super(this, exceptionData);
 	
 	{
-		compiler_util_Nova_Location_1_Nova_this(this, exceptionData, compiler_util_Nova_Location_Nova_lineNumber, compiler_util_Nova_Location_Nova_offset, compiler_util_Nova_Location_Nova_start, compiler_util_Nova_Location_Nova_end);
+		compiler_util_Nova_Location_1_Nova_this(this, exceptionData, lineNumber, offset, start, end);
 	}
 	
 	return this;
@@ -135,22 +135,22 @@ void compiler_util_Nova_Location_Nova_this(compiler_util_Nova_Location* this, no
 	this->compiler_util_Nova_Location_Nova_bounds = nova_datastruct_Nova_Bounds_1_Nova_construct(0, exceptionData, 0, 0);
 }
 
-void compiler_util_Nova_Location_0_Nova_this(compiler_util_Nova_Location* this, nova_exception_Nova_ExceptionData* exceptionData, compiler_util_Nova_Location* compiler_util_Nova_Location_Nova_loc)
+void compiler_util_Nova_Location_0_Nova_this(compiler_util_Nova_Location* this, nova_exception_Nova_ExceptionData* exceptionData, compiler_util_Nova_Location* loc)
 {
-	compiler_util_Nova_Location_1_Nova_this(this, exceptionData, 0, compiler_util_Nova_Location_Nova_loc->compiler_util_Nova_Location_Nova_offset, compiler_util_Nova_Location_Nova_loc->compiler_util_Nova_Location_Nova_bounds->nova_datastruct_Nova_Bounds_Nova_start, compiler_util_Nova_Location_Nova_loc->compiler_util_Nova_Location_Nova_bounds->nova_datastruct_Nova_Bounds_Nova_end);
+	compiler_util_Nova_Location_1_Nova_this(this, exceptionData, 0, loc->compiler_util_Nova_Location_Nova_offset, loc->compiler_util_Nova_Location_Nova_bounds->nova_datastruct_Nova_Bounds_Nova_start, loc->compiler_util_Nova_Location_Nova_bounds->nova_datastruct_Nova_Bounds_Nova_end);
 }
 
-void compiler_util_Nova_Location_1_Nova_this(compiler_util_Nova_Location* this, nova_exception_Nova_ExceptionData* exceptionData, int compiler_util_Nova_Location_Nova_lineNumber, int compiler_util_Nova_Location_Nova_offset, int compiler_util_Nova_Location_Nova_start, int compiler_util_Nova_Location_Nova_end)
+void compiler_util_Nova_Location_1_Nova_this(compiler_util_Nova_Location* this, nova_exception_Nova_ExceptionData* exceptionData, int lineNumber, int offset, int start, int end)
 {
 	compiler_util_Nova_Location_Nova_this(this, exceptionData);
-	this->compiler_util_Nova_Location_Nova_offset = compiler_util_Nova_Location_Nova_offset;
-	this->compiler_util_Nova_Location_Nova_lineNumber = compiler_util_Nova_Location_Nova_lineNumber;
-	compiler_util_Nova_Location_1_Nova_setBounds(this, exceptionData, compiler_util_Nova_Location_Nova_start, compiler_util_Nova_Location_Nova_end);
+	this->compiler_util_Nova_Location_Nova_offset = offset;
+	this->compiler_util_Nova_Location_Nova_lineNumber = lineNumber;
+	compiler_util_Nova_Location_1_Nova_setBounds(this, exceptionData, start, end);
 }
 
-void compiler_util_Nova_Location_Nova_setLineNumber(compiler_util_Nova_Location* this, nova_exception_Nova_ExceptionData* exceptionData, int compiler_util_Nova_Location_Nova_lineNumber)
+void compiler_util_Nova_Location_Nova_setLineNumber(compiler_util_Nova_Location* this, nova_exception_Nova_ExceptionData* exceptionData, int lineNumber)
 {
-	this->compiler_util_Nova_Location_Nova_lineNumber = compiler_util_Nova_Location_Nova_lineNumber;
+	this->compiler_util_Nova_Location_Nova_lineNumber = lineNumber;
 }
 
 int compiler_util_Nova_Location_Nova_getStart(compiler_util_Nova_Location* this, nova_exception_Nova_ExceptionData* exceptionData)
@@ -163,60 +163,60 @@ int compiler_util_Nova_Location_Nova_getEnd(compiler_util_Nova_Location* this, n
 	return this->compiler_util_Nova_Location_Nova_bounds->nova_datastruct_Nova_Bounds_Nova_end;
 }
 
-void compiler_util_Nova_Location_Nova_setOffset(compiler_util_Nova_Location* this, nova_exception_Nova_ExceptionData* exceptionData, int compiler_util_Nova_Location_Nova_offset)
+void compiler_util_Nova_Location_Nova_setOffset(compiler_util_Nova_Location* this, nova_exception_Nova_ExceptionData* exceptionData, int offset)
 {
-	this->compiler_util_Nova_Location_Nova_offset = compiler_util_Nova_Location_Nova_offset;
+	this->compiler_util_Nova_Location_Nova_offset = offset;
 }
 
-void compiler_util_Nova_Location_Nova_addOffset(compiler_util_Nova_Location* this, nova_exception_Nova_ExceptionData* exceptionData, int compiler_util_Nova_Location_Nova_amount)
+void compiler_util_Nova_Location_Nova_addOffset(compiler_util_Nova_Location* this, nova_exception_Nova_ExceptionData* exceptionData, int amount)
 {
-	this->compiler_util_Nova_Location_Nova_offset += compiler_util_Nova_Location_Nova_amount;
+	this->compiler_util_Nova_Location_Nova_offset += amount;
 }
 
-void compiler_util_Nova_Location_Nova_subtractOffset(compiler_util_Nova_Location* this, nova_exception_Nova_ExceptionData* exceptionData, int compiler_util_Nova_Location_Nova_amount)
+void compiler_util_Nova_Location_Nova_subtractOffset(compiler_util_Nova_Location* this, nova_exception_Nova_ExceptionData* exceptionData, int amount)
 {
-	this->compiler_util_Nova_Location_Nova_offset -= compiler_util_Nova_Location_Nova_amount;
+	this->compiler_util_Nova_Location_Nova_offset -= amount;
 }
 
-void compiler_util_Nova_Location_0_Nova_setBounds(compiler_util_Nova_Location* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_Nova_Bounds* compiler_util_Nova_Location_Nova_bounds)
+void compiler_util_Nova_Location_0_Nova_setBounds(compiler_util_Nova_Location* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_Nova_Bounds* bounds)
 {
-	this->compiler_util_Nova_Location_Nova_bounds = compiler_util_Nova_Location_Nova_bounds;
+	this->compiler_util_Nova_Location_Nova_bounds = bounds;
 }
 
-void compiler_util_Nova_Location_1_Nova_setBounds(compiler_util_Nova_Location* this, nova_exception_Nova_ExceptionData* exceptionData, int compiler_util_Nova_Location_Nova_start, int compiler_util_Nova_Location_Nova_end)
+void compiler_util_Nova_Location_1_Nova_setBounds(compiler_util_Nova_Location* this, nova_exception_Nova_ExceptionData* exceptionData, int start, int end)
 {
-	this->compiler_util_Nova_Location_Nova_bounds->nova_datastruct_Nova_Bounds_Nova_start = compiler_util_Nova_Location_Nova_start;
-	this->compiler_util_Nova_Location_Nova_bounds->nova_datastruct_Nova_Bounds_Nova_end = compiler_util_Nova_Location_Nova_end;
+	this->compiler_util_Nova_Location_Nova_bounds->nova_datastruct_Nova_Bounds_Nova_start = start;
+	this->compiler_util_Nova_Location_Nova_bounds->nova_datastruct_Nova_Bounds_Nova_end = end;
 }
 
-void compiler_util_Nova_Location_0_Nova_addBounds(compiler_util_Nova_Location* this, nova_exception_Nova_ExceptionData* exceptionData, int compiler_util_Nova_Location_Nova_amount)
+void compiler_util_Nova_Location_0_Nova_addBounds(compiler_util_Nova_Location* this, nova_exception_Nova_ExceptionData* exceptionData, int amount)
 {
-	this->compiler_util_Nova_Location_Nova_bounds->nova_datastruct_Nova_Bounds_Nova_start += compiler_util_Nova_Location_Nova_amount;
-	this->compiler_util_Nova_Location_Nova_bounds->nova_datastruct_Nova_Bounds_Nova_end += compiler_util_Nova_Location_Nova_amount;
+	this->compiler_util_Nova_Location_Nova_bounds->nova_datastruct_Nova_Bounds_Nova_start += amount;
+	this->compiler_util_Nova_Location_Nova_bounds->nova_datastruct_Nova_Bounds_Nova_end += amount;
 }
 
-void compiler_util_Nova_Location_Nova_moveBounds(compiler_util_Nova_Location* this, nova_exception_Nova_ExceptionData* exceptionData, int compiler_util_Nova_Location_Nova_startAmount, int compiler_util_Nova_Location_Nova_endAmount)
+void compiler_util_Nova_Location_Nova_moveBounds(compiler_util_Nova_Location* this, nova_exception_Nova_ExceptionData* exceptionData, int startAmount, int endAmount)
 {
-	this->compiler_util_Nova_Location_Nova_bounds->nova_datastruct_Nova_Bounds_Nova_start += compiler_util_Nova_Location_Nova_startAmount;
-	this->compiler_util_Nova_Location_Nova_bounds->nova_datastruct_Nova_Bounds_Nova_end += compiler_util_Nova_Location_Nova_endAmount;
+	this->compiler_util_Nova_Location_Nova_bounds->nova_datastruct_Nova_Bounds_Nova_start += startAmount;
+	this->compiler_util_Nova_Location_Nova_bounds->nova_datastruct_Nova_Bounds_Nova_end += endAmount;
 }
 
-void compiler_util_Nova_Location_0_Nova_subtractBounds(compiler_util_Nova_Location* this, nova_exception_Nova_ExceptionData* exceptionData, int compiler_util_Nova_Location_Nova_startAmount, int compiler_util_Nova_Location_Nova_endAmount)
+void compiler_util_Nova_Location_0_Nova_subtractBounds(compiler_util_Nova_Location* this, nova_exception_Nova_ExceptionData* exceptionData, int startAmount, int endAmount)
 {
-	this->compiler_util_Nova_Location_Nova_bounds->nova_datastruct_Nova_Bounds_Nova_start -= compiler_util_Nova_Location_Nova_startAmount;
-	this->compiler_util_Nova_Location_Nova_bounds->nova_datastruct_Nova_Bounds_Nova_end -= compiler_util_Nova_Location_Nova_endAmount;
+	this->compiler_util_Nova_Location_Nova_bounds->nova_datastruct_Nova_Bounds_Nova_start -= startAmount;
+	this->compiler_util_Nova_Location_Nova_bounds->nova_datastruct_Nova_Bounds_Nova_end -= endAmount;
 }
 
-void compiler_util_Nova_Location_1_Nova_subtractBounds(compiler_util_Nova_Location* this, nova_exception_Nova_ExceptionData* exceptionData, int compiler_util_Nova_Location_Nova_amount)
+void compiler_util_Nova_Location_1_Nova_subtractBounds(compiler_util_Nova_Location* this, nova_exception_Nova_ExceptionData* exceptionData, int amount)
 {
-	this->compiler_util_Nova_Location_Nova_bounds->nova_datastruct_Nova_Bounds_Nova_start -= compiler_util_Nova_Location_Nova_amount;
-	this->compiler_util_Nova_Location_Nova_bounds->nova_datastruct_Nova_Bounds_Nova_end -= compiler_util_Nova_Location_Nova_amount;
+	this->compiler_util_Nova_Location_Nova_bounds->nova_datastruct_Nova_Bounds_Nova_start -= amount;
+	this->compiler_util_Nova_Location_Nova_bounds->nova_datastruct_Nova_Bounds_Nova_end -= amount;
 }
 
-void compiler_util_Nova_Location_1_Nova_addBounds(compiler_util_Nova_Location* this, nova_exception_Nova_ExceptionData* exceptionData, int compiler_util_Nova_Location_Nova_startAmount, int compiler_util_Nova_Location_Nova_endAmount)
+void compiler_util_Nova_Location_1_Nova_addBounds(compiler_util_Nova_Location* this, nova_exception_Nova_ExceptionData* exceptionData, int startAmount, int endAmount)
 {
-	this->compiler_util_Nova_Location_Nova_bounds->nova_datastruct_Nova_Bounds_Nova_start += compiler_util_Nova_Location_Nova_startAmount;
-	this->compiler_util_Nova_Location_Nova_bounds->nova_datastruct_Nova_Bounds_Nova_end += compiler_util_Nova_Location_Nova_endAmount;
+	this->compiler_util_Nova_Location_Nova_bounds->nova_datastruct_Nova_Bounds_Nova_start += startAmount;
+	this->compiler_util_Nova_Location_Nova_bounds->nova_datastruct_Nova_Bounds_Nova_end += endAmount;
 }
 
 char compiler_util_Nova_Location_Nova_isValid(compiler_util_Nova_Location* this, nova_exception_Nova_ExceptionData* exceptionData)

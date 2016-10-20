@@ -97,7 +97,7 @@ void example_Nova_MathDemo_Nova_destroy(example_Nova_MathDemo** this, nova_excep
 	NOVA_FREE(*this);
 }
 
-void example_Nova_MathDemo_static_Nova_main(example_Nova_MathDemo* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_list_Nova_Array* example_Nova_MathDemo_Nova_args)
+void example_Nova_MathDemo_static_Nova_main(example_Nova_MathDemo* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_list_Nova_Array* args)
 {
 	int l1_Nova_iterations = 0;
 	nova_time_Nova_Timer* l1_Nova_timer = (nova_time_Nova_Timer*)nova_null;

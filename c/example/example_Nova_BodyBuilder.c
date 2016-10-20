@@ -73,7 +73,7 @@ void example_Nova_BodyBuilder_Nova_init_static(nova_exception_Nova_ExceptionData
 	}
 }
 
-example_Nova_BodyBuilder* example_Nova_BodyBuilder_Nova_construct(example_Nova_BodyBuilder* this, nova_exception_Nova_ExceptionData* exceptionData, int example_Nova_BodyBuilder_Nova_weightClass, nova_Nova_String* example_Nova_BodyBuilder_Nova_name)
+example_Nova_BodyBuilder* example_Nova_BodyBuilder_Nova_construct(example_Nova_BodyBuilder* this, nova_exception_Nova_ExceptionData* exceptionData, int weightClass, nova_Nova_String* name)
 {
 	CCLASS_NEW(example_Nova_BodyBuilder, this,);
 	this->vtable = &example_BodyBuilder_Extension_VTable_val;
@@ -82,7 +82,7 @@ example_Nova_BodyBuilder* example_Nova_BodyBuilder_Nova_construct(example_Nova_B
 	example_Nova_BodyBuilder_Nova_super(this, exceptionData);
 	
 	{
-		example_Nova_BodyBuilder_Nova_this(this, exceptionData, example_Nova_BodyBuilder_Nova_weightClass, example_Nova_BodyBuilder_Nova_name);
+		example_Nova_BodyBuilder_Nova_this(this, exceptionData, weightClass, name);
 	}
 	
 	return this;
@@ -100,11 +100,11 @@ void example_Nova_BodyBuilder_Nova_destroy(example_Nova_BodyBuilder** this, nova
 	NOVA_FREE(*this);
 }
 
-void example_Nova_BodyBuilder_Nova_this(example_Nova_BodyBuilder* this, nova_exception_Nova_ExceptionData* exceptionData, int example_Nova_BodyBuilder_Nova_weightClass, nova_Nova_String* example_Nova_BodyBuilder_Nova_name)
+void example_Nova_BodyBuilder_Nova_this(example_Nova_BodyBuilder* this, nova_exception_Nova_ExceptionData* exceptionData, int weightClass, nova_Nova_String* name)
 {
 	this->example_Nova_Person_Nova_age = (int)(5);
-	this->example_Nova_BodyBuilder_Nova_weightClass = example_Nova_BodyBuilder_Nova_weightClass;
-	this->example_Nova_Person_Nova_name = example_Nova_BodyBuilder_Nova_name;
+	this->example_Nova_BodyBuilder_Nova_weightClass = weightClass;
+	this->example_Nova_Person_Nova_name = name;
 }
 
 void example_Nova_BodyBuilder_Nova_sayHello(example_Nova_BodyBuilder* this, nova_exception_Nova_ExceptionData* exceptionData)

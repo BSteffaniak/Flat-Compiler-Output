@@ -72,7 +72,7 @@ void compiler_Nova_SyntaxErrorException_Nova_init_static(nova_exception_Nova_Exc
 	}
 }
 
-compiler_Nova_SyntaxErrorException* compiler_Nova_SyntaxErrorException_Nova_construct(compiler_Nova_SyntaxErrorException* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* compiler_Nova_SyntaxErrorException_Nova_message, compiler_tree_node_Nova_Node* compiler_Nova_SyntaxErrorException_Nova_node)
+compiler_Nova_SyntaxErrorException* compiler_Nova_SyntaxErrorException_Nova_construct(compiler_Nova_SyntaxErrorException* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* message, compiler_tree_node_Nova_Node* node)
 {
 	CCLASS_NEW(compiler_Nova_SyntaxErrorException, this,);
 	this->vtable = &compiler_SyntaxErrorException_Extension_VTable_val;
@@ -81,7 +81,7 @@ compiler_Nova_SyntaxErrorException* compiler_Nova_SyntaxErrorException_Nova_cons
 	compiler_Nova_SyntaxErrorException_Nova_super(this, exceptionData);
 	
 	{
-		compiler_Nova_SyntaxErrorException_Nova_this(this, exceptionData, compiler_Nova_SyntaxErrorException_Nova_message, compiler_Nova_SyntaxErrorException_Nova_node);
+		compiler_Nova_SyntaxErrorException_Nova_this(this, exceptionData, message, node);
 	}
 	
 	return this;
@@ -98,10 +98,10 @@ void compiler_Nova_SyntaxErrorException_Nova_destroy(compiler_Nova_SyntaxErrorEx
 	NOVA_FREE(*this);
 }
 
-void compiler_Nova_SyntaxErrorException_Nova_this(compiler_Nova_SyntaxErrorException* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* compiler_Nova_SyntaxErrorException_Nova_message, compiler_tree_node_Nova_Node* compiler_Nova_SyntaxErrorException_Nova_node)
+void compiler_Nova_SyntaxErrorException_Nova_this(compiler_Nova_SyntaxErrorException* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* message, compiler_tree_node_Nova_Node* node)
 {
-	compiler_Nova_SyntaxErrorException_Nova_node = (compiler_tree_node_Nova_Node*)(compiler_Nova_SyntaxErrorException_Nova_node == 0 ? (nova_Nova_Object*)(nova_Nova_Object*)nova_null : (nova_Nova_Object*)compiler_Nova_SyntaxErrorException_Nova_node);
-	nova_exception_Nova_Exception_0_Nova_this((nova_exception_Nova_Exception*)(this), exceptionData, compiler_Nova_SyntaxErrorException_Nova_message);
+	node = (compiler_tree_node_Nova_Node*)(node == 0 ? (nova_Nova_Object*)(nova_Nova_Object*)nova_null : (nova_Nova_Object*)node);
+	nova_exception_Nova_Exception_Nova_this((nova_exception_Nova_Exception*)(this), exceptionData, message);
 }
 
 void compiler_Nova_SyntaxErrorException_Nova_super(compiler_Nova_SyntaxErrorException* this, nova_exception_Nova_ExceptionData* exceptionData)

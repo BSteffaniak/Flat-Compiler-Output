@@ -97,7 +97,7 @@ void example_Nova_IntegerTest_Nova_destroy(example_Nova_IntegerTest** this, nova
 	NOVA_FREE(*this);
 }
 
-void example_Nova_IntegerTest_static_Nova_main(example_Nova_IntegerTest* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_list_Nova_Array* example_Nova_IntegerTest_Nova_args)
+void example_Nova_IntegerTest_static_Nova_main(example_Nova_IntegerTest* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_list_Nova_Array* args)
 {
 	char l1_Nova_c = 0;
 	
@@ -114,7 +114,7 @@ void example_Nova_IntegerTest_static_Nova_main(example_Nova_IntegerTest* this, n
 			nova_primitive_number_Nova_Long_static_Nova_toString(0, exceptionData, l3_Nova_i);
 		}
 		nova_time_Nova_Timer_Nova_stop(l1_Nova_timer, exceptionData);
-		nova_io_Nova_Console_1_static_Nova_writeLine(0, exceptionData, nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)(nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("Time taken: "))), exceptionData, nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)(nova_primitive_number_Nova_Long_static_Nova_toString(0, exceptionData, nova_time_Nova_Timer_Accessor_Nova_duration(l1_Nova_timer, exceptionData))), exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("ms")))));
+		nova_io_Nova_Console_1_static_Nova_writeLine(0, exceptionData, nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)(nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("Time taken: "))), exceptionData, nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)(nova_primitive_number_Nova_Long_static_Nova_toString(0, exceptionData, (nova_time_Nova_Timer_Accessor_Nova_duration(l1_Nova_timer, exceptionData)))), exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("ms")))));
 		nova_io_Nova_Console_0_static_Nova_write(0, exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("Run again? (Y/N) ")));
 		l1_Nova_c = nova_io_Nova_Console_static_Nova_readChar(0, exceptionData);
 	}

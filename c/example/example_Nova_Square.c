@@ -74,7 +74,7 @@ void example_Nova_Square_Nova_init_static(nova_exception_Nova_ExceptionData* exc
 	}
 }
 
-example_Nova_Square* example_Nova_Square_Nova_construct(example_Nova_Square* this, nova_exception_Nova_ExceptionData* exceptionData, int example_Nova_Square_Nova_sideLength)
+example_Nova_Square* example_Nova_Square_Nova_construct(example_Nova_Square* this, nova_exception_Nova_ExceptionData* exceptionData, int sideLength)
 {
 	CCLASS_NEW(example_Nova_Square, this,);
 	this->vtable = &example_Square_Extension_VTable_val;
@@ -82,7 +82,7 @@ example_Nova_Square* example_Nova_Square_Nova_construct(example_Nova_Square* thi
 	example_Nova_Square_Nova_super(this, exceptionData);
 	
 	{
-		example_Nova_Square_Nova_this(this, exceptionData, example_Nova_Square_Nova_sideLength);
+		example_Nova_Square_Nova_this(this, exceptionData, sideLength);
 	}
 	
 	return this;
@@ -100,9 +100,9 @@ void example_Nova_Square_Nova_destroy(example_Nova_Square** this, nova_exception
 	NOVA_FREE(*this);
 }
 
-void example_Nova_Square_Nova_this(example_Nova_Square* this, nova_exception_Nova_ExceptionData* exceptionData, int example_Nova_Square_Nova_sideLength)
+void example_Nova_Square_Nova_this(example_Nova_Square* this, nova_exception_Nova_ExceptionData* exceptionData, int sideLength)
 {
-	this->example_Nova_Square_Nova_sideLength = example_Nova_Square_Nova_sideLength;
+	this->example_Nova_Square_Nova_sideLength = sideLength;
 }
 
 int example_Nova_Square_Nova_numberSides(example_Nova_Square* this, nova_exception_Nova_ExceptionData* exceptionData)

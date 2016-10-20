@@ -83,7 +83,7 @@ void example_network_Nova_OutputThread_Nova_init_static(nova_exception_Nova_Exce
 	}
 }
 
-example_network_Nova_OutputThread* example_network_Nova_OutputThread_Nova_construct(example_network_Nova_OutputThread* this, nova_exception_Nova_ExceptionData* exceptionData, nova_network_Nova_ServerSocket* example_network_Nova_OutputThread_Nova_serverSocket, nova_network_Nova_ConnectionSocket* example_network_Nova_OutputThread_Nova_socket)
+example_network_Nova_OutputThread* example_network_Nova_OutputThread_Nova_construct(example_network_Nova_OutputThread* this, nova_exception_Nova_ExceptionData* exceptionData, nova_network_Nova_ServerSocket* serverSocket, nova_network_Nova_ConnectionSocket* socket)
 {
 	CCLASS_NEW(example_network_Nova_OutputThread, this);
 	this->vtable = &example_network_OutputThread_Extension_VTable_val;
@@ -92,7 +92,7 @@ example_network_Nova_OutputThread* example_network_Nova_OutputThread_Nova_constr
 	example_network_Nova_OutputThread_Nova_super(this, exceptionData);
 	
 	{
-		example_network_Nova_OutputThread_Nova_this(this, exceptionData, example_network_Nova_OutputThread_Nova_serverSocket, example_network_Nova_OutputThread_Nova_socket);
+		example_network_Nova_OutputThread_Nova_this(this, exceptionData, serverSocket, socket);
 	}
 	
 	return this;
@@ -112,10 +112,10 @@ void example_network_Nova_OutputThread_Nova_destroy(example_network_Nova_OutputT
 	NOVA_FREE(*this);
 }
 
-void example_network_Nova_OutputThread_Nova_this(example_network_Nova_OutputThread* this, nova_exception_Nova_ExceptionData* exceptionData, nova_network_Nova_ServerSocket* example_network_Nova_OutputThread_Nova_serverSocket, nova_network_Nova_ConnectionSocket* example_network_Nova_OutputThread_Nova_socket)
+void example_network_Nova_OutputThread_Nova_this(example_network_Nova_OutputThread* this, nova_exception_Nova_ExceptionData* exceptionData, nova_network_Nova_ServerSocket* serverSocket, nova_network_Nova_ConnectionSocket* socket)
 {
-	this->prv->example_network_Nova_OutputThread_Nova_serverSocket = example_network_Nova_OutputThread_Nova_serverSocket;
-	this->prv->example_network_Nova_OutputThread_Nova_socket = example_network_Nova_OutputThread_Nova_socket;
+	this->prv->example_network_Nova_OutputThread_Nova_serverSocket = serverSocket;
+	this->prv->example_network_Nova_OutputThread_Nova_socket = socket;
 }
 
 void example_network_Nova_OutputThread_Nova_run(example_network_Nova_OutputThread* this, nova_exception_Nova_ExceptionData* exceptionData)

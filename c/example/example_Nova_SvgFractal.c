@@ -100,7 +100,7 @@ void example_Nova_SvgFractal_Nova_destroy(example_Nova_SvgFractal** this, nova_e
 	NOVA_FREE(*this);
 }
 
-void example_Nova_SvgFractal_static_Nova_main(example_Nova_SvgFractal* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_list_Nova_Array* example_Nova_SvgFractal_Nova_args)
+void example_Nova_SvgFractal_static_Nova_main(example_Nova_SvgFractal* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_list_Nova_Array* args)
 {
 	nova_web_svg_Nova_Svg* l1_Nova_s = (nova_web_svg_Nova_Svg*)nova_null;
 	double l1_Nova_pi2 = 0;

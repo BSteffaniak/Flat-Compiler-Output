@@ -96,7 +96,7 @@ void example_Nova_QueueDemo_Nova_destroy(example_Nova_QueueDemo** this, nova_exc
 	NOVA_FREE(*this);
 }
 
-void example_Nova_QueueDemo_static_Nova_main(example_Nova_QueueDemo* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_list_Nova_Array* example_Nova_QueueDemo_Nova_args)
+void example_Nova_QueueDemo_static_Nova_main(example_Nova_QueueDemo* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_list_Nova_Array* args)
 {
 	nova_io_Nova_Console_static_Nova_waitForEnter(0, exceptionData);
 }
