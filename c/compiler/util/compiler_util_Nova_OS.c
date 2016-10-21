@@ -113,7 +113,7 @@ void compiler_util_Nova_OS_Nova_init_static(nova_exception_Nova_ExceptionData* e
 	}
 }
 
-compiler_util_Nova_OS* compiler_util_Nova_OS_Nova_construct(compiler_util_Nova_OS* this, nova_exception_Nova_ExceptionData* exceptionData)
+compiler_util_Nova_OS* compiler_util_Nova_OS__func_Nova_construct(compiler_util_Nova_OS* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
 	CCLASS_NEW(compiler_util_Nova_OS, this,);
 	this->vtable = &compiler_util_OS_Extension_VTable_val;

@@ -59,6 +59,7 @@ CCLASS_CLASS
 	compiler_Compiler_Extension_VTable* vtable;
 )
 extern char compiler_Nova_Compiler_Nova_DEBUG;
+extern char compiler_Nova_Compiler_Nova_testClasses;
 
 void compiler_Nova_Compiler_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData);
 compiler_Nova_Compiler* compiler_Nova_Compiler_Nova_construct(compiler_Nova_Compiler* this, nova_exception_Nova_ExceptionData* exceptionData);

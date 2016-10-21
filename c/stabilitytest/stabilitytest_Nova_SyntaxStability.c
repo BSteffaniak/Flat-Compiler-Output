@@ -107,8 +107,9 @@ void stabilitytest_Nova_SyntaxStability_Nova_checkArrayInitializers(stabilitytes
 nova_datastruct_list_Nova_Array* generated20(stabilitytest_Nova_SyntaxStability* this, nova_exception_Nova_ExceptionData* exceptionData);
 nova_datastruct_list_Nova_Array* generated21(stabilitytest_Nova_SyntaxStability* this, nova_exception_Nova_ExceptionData* exceptionData);
 nova_datastruct_list_Nova_Array* generated22(stabilitytest_Nova_SyntaxStability* this, nova_exception_Nova_ExceptionData* exceptionData);
-nova_Nova_Object* stabilitytest_Nova_SyntaxStability_Nova_testLambda64(stabilitytest_Nova_SyntaxStability* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* x, nova_Nova_Object* y, Context1* context);
+nova_Nova_Object* stabilitytest_Nova_SyntaxStability_Nova_testLambda65(stabilitytest_Nova_SyntaxStability* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* x, nova_Nova_Object* y, Context1* context);
 nova_datastruct_list_Nova_Array* generated23(stabilitytest_Nova_SyntaxStability* this, nova_exception_Nova_ExceptionData* exceptionData);
+nova_datastruct_list_Nova_IntArray* generated24(stabilitytest_Nova_SyntaxStability* this, nova_exception_Nova_ExceptionData* exceptionData, int value2, int value3);
 void stabilitytest_Nova_SyntaxStability_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData)
 {
 	{
@@ -159,6 +160,7 @@ void stabilitytest_Nova_SyntaxStability_Nova_test(stabilitytest_Nova_SyntaxStabi
 	stabilitytest_Nova_SyntaxStability_Nova_checkZipper(this, exceptionData);
 	stabilitytest_Nova_SyntaxStability_Nova_checkSafeNavigation(this, exceptionData);
 	stabilitytest_Nova_SyntaxStability_Nova_checkSnakeCaseNumbers(this, exceptionData);
+	stabilitytest_Nova_SyntaxStability_Nova_checkArrayInitializers(this, exceptionData);
 }
 
 void stabilitytest_Nova_SyntaxStability_Nova_checkMatchStatements(stabilitytest_Nova_SyntaxStability* this, nova_exception_Nova_ExceptionData* exceptionData)
@@ -650,14 +652,14 @@ void stabilitytest_Nova_SyntaxStability_Nova_checkZipper(stabilitytest_Nova_Synt
 	nova_datastruct_list_Nova_Array* l1_Nova_array1 = (nova_datastruct_list_Nova_Array*)nova_null;
 	nova_datastruct_list_Nova_Array* l1_Nova_array2 = (nova_datastruct_list_Nova_Array*)nova_null;
 	nova_datastruct_list_Nova_Array* l1_Nova_zipped = (nova_datastruct_list_Nova_Array*)nova_null;
-	Context1 contextArg64 = 
+	Context1 contextArg65 = 
 	{
 	};
 	
 	nova_io_Nova_Console_0_static_Nova_write(0, exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("Checking zip function... ")));
 	l1_Nova_array1 = generated21(this, exceptionData);
 	l1_Nova_array2 = generated22(this, exceptionData);
-	l1_Nova_zipped = nova_datastruct_list_Nova_List_Nova_zip((nova_datastruct_list_Nova_List*)(l1_Nova_array1), exceptionData, (nova_datastruct_list_Nova_List*)(l1_Nova_array2), (nova_datastruct_list_Nova_List_closure24_Nova_zipper)&stabilitytest_Nova_SyntaxStability_Nova_testLambda64, this, &contextArg64);
+	l1_Nova_zipped = nova_datastruct_list_Nova_List_Nova_zip((nova_datastruct_list_Nova_List*)(l1_Nova_array1), exceptionData, (nova_datastruct_list_Nova_List*)(l1_Nova_array2), (nova_datastruct_list_Nova_List_closure24_Nova_zipper)&stabilitytest_Nova_SyntaxStability_Nova_testLambda65, this, &contextArg65);
 	nova_io_Nova_Console_0_static_Nova_write(0, exceptionData, nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)(nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("Zipped: "))), exceptionData, nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)(nova_datastruct_list_Nova_Array_Nova_toString((nova_datastruct_list_Nova_Array*)((l1_Nova_zipped)), exceptionData)), exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)(" ")))));
 	nova_io_Nova_Console_1_static_Nova_writeLine(0, exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("OK")));
 }
@@ -753,6 +755,16 @@ void stabilitytest_Nova_SyntaxStability_Nova_checkSnakeCaseNumbers(stabilitytest
 
 void stabilitytest_Nova_SyntaxStability_Nova_checkArrayInitializers(stabilitytest_Nova_SyntaxStability* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
+	int l1_Nova_num1 = 0;
+	int l1_Nova_num2 = 0;
+	nova_datastruct_list_Nova_IntArray* l1_Nova_myInts = (nova_datastruct_list_Nova_IntArray*)nova_null;
+	
+	nova_io_Nova_Console_0_static_Nova_write(0, exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("Checking array initializers... ")));
+	l1_Nova_num1 = (int)(1);
+	l1_Nova_num2 = (int)(2);
+	l1_Nova_myInts = generated24(this, exceptionData, l1_Nova_num1, l1_Nova_num2);
+	stabilitytest_Nova_StabilityTest_Nova_fail(this->stabilitytest_Nova_StabilityTestCase_Nova_program, exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("Failed to ")), (int)(intptr_t)nova_datastruct_list_Nova_IntArray_Nova_get(l1_Nova_myInts, exceptionData, 2) != l1_Nova_num1 || (int)(intptr_t)nova_datastruct_list_Nova_IntArray_Nova_get(l1_Nova_myInts, exceptionData, 3) != l1_Nova_num2);
+	nova_io_Nova_Console_1_static_Nova_writeLine(0, exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("OK")));
 }
 
 nova_datastruct_list_Nova_Array* generated20(stabilitytest_Nova_SyntaxStability* this, nova_exception_Nova_ExceptionData* exceptionData)
@@ -794,7 +806,7 @@ nova_datastruct_list_Nova_Array* generated22(stabilitytest_Nova_SyntaxStability*
 	return nova_datastruct_list_Nova_Array_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)(l1_Nova_temp), 4);
 }
 
-nova_Nova_Object* stabilitytest_Nova_SyntaxStability_Nova_testLambda64(stabilitytest_Nova_SyntaxStability* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* x, nova_Nova_Object* y, Context1* context)
+nova_Nova_Object* stabilitytest_Nova_SyntaxStability_Nova_testLambda65(stabilitytest_Nova_SyntaxStability* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* x, nova_Nova_Object* y, Context1* context)
 {
 	return (nova_Nova_Object*)nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)((x)), exceptionData, nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)(nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)(" "))), exceptionData, nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)(nova_Nova_Object_virtual_Nova_toString((nova_Nova_Object*)((y)), exceptionData)), exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("")))));
 }
@@ -810,6 +822,19 @@ nova_datastruct_list_Nova_Array* generated23(stabilitytest_Nova_SyntaxStability*
 	l1_Nova_temp[3] = nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("4"));
 	l1_Nova_temp[4] = nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("5"));
 	return nova_datastruct_list_Nova_Array_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)(l1_Nova_temp), 5);
+}
+
+nova_datastruct_list_Nova_IntArray* generated24(stabilitytest_Nova_SyntaxStability* this, nova_exception_Nova_ExceptionData* exceptionData, int value2, int value3)
+{
+	int* l1_Nova_temp = (int*)nova_null;
+	
+	l1_Nova_temp = (int*)NOVA_MALLOC(sizeof(nova_primitive_number_Nova_Int) * 5);
+	l1_Nova_temp[0] = (int)(0);
+	l1_Nova_temp[1] = (int)(0);
+	l1_Nova_temp[2] = value2;
+	l1_Nova_temp[3] = value3;
+	l1_Nova_temp[4] = (int)(0);
+	return nova_datastruct_list_Nova_IntArray_2_Nova_construct(0, exceptionData, l1_Nova_temp, 5);
 }
 
 void stabilitytest_Nova_SyntaxStability_Nova_super(stabilitytest_Nova_SyntaxStability* this, nova_exception_Nova_ExceptionData* exceptionData)
