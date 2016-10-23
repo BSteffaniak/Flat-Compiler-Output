@@ -56,6 +56,7 @@ CCLASS_CLASS
 	compiler_util_Nova_OS, 
 	
 	compiler_util_OS_Extension_VTable* vtable;
+	nova_Nova_Class* nova_Nova_Object_Nova_class;
 )
 extern char compiler_util_Nova_OS_static_Nova_OS;
 extern char compiler_util_Nova_OS_Nova_WINDOWS;
@@ -65,7 +66,7 @@ extern nova_Nova_String* compiler_util_Nova_OS_Nova_OUTPUT_EXTENSION;
 extern nova_Nova_String* compiler_util_Nova_OS_Nova_DYNAMIC_LIB_EXT;
 
 void compiler_util_Nova_OS_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData);
-compiler_util_Nova_OS* compiler_util_Nova_OS__func_Nova_construct(compiler_util_Nova_OS* this, nova_exception_Nova_ExceptionData* exceptionData);
+compiler_util_Nova_OS* compiler_util_Nova_OS_func_Nova_construct(compiler_util_Nova_OS* this, nova_exception_Nova_ExceptionData* exceptionData);
 void compiler_util_Nova_OS_Nova_destroy(compiler_util_Nova_OS** this, nova_exception_Nova_ExceptionData* exceptionData);
 void compiler_util_Nova_OS_Nova_this(compiler_util_Nova_OS* this, nova_exception_Nova_ExceptionData* exceptionData);
 char compiler_util_Nova_OS_Accessor_static_Nova_isWindows(compiler_util_Nova_OS* this, nova_exception_Nova_ExceptionData* exceptionData);

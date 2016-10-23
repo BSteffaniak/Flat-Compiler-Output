@@ -58,6 +58,7 @@ CCLASS_CLASS
 	example_Nova_HashSetDemo, 
 	
 	example_HashSetDemo_Extension_VTable* vtable;
+	nova_Nova_Class* nova_Nova_Object_Nova_class;
 )
 
 void example_Nova_HashSetDemo_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData);

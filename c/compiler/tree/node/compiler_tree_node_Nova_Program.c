@@ -26,6 +26,7 @@
 #include <nova/nova_Nova_String.h>
 #include <nova/nova_Nova_System.h>
 #include <nova/nova_Nova_Class.h>
+#include <compiler/compiler_Nova_Compiler.h>
 #include <compiler/tree/node/compiler_tree_node_Nova_Node.h>
 #include <compiler/tree/node/compiler_tree_node_Nova_NovaClass.h>
 #include <compiler/error/compiler_error_Nova_UnimplementedOperationException.h>
@@ -67,6 +68,7 @@ compiler_tree_node_Program_Extension_VTable compiler_tree_node_Program_Extension
 		0,
 		(char(*)(nova_operators_Nova_Equals*, nova_exception_Nova_ExceptionData*, nova_Nova_Object*))nova_Nova_Object_Nova_equals,
 		0,
+		0,
 		(void(*)(compiler_tree_node_annotation_Nova_Annotatable*, nova_exception_Nova_ExceptionData*, compiler_tree_node_annotation_Nova_Annotation*))compiler_tree_node_Nova_Node_Nova_addAnnotation,
 		0,
 		0,
@@ -76,11 +78,11 @@ compiler_tree_node_Program_Extension_VTable compiler_tree_node_Program_Extension
 	nova_Nova_Object_Accessor_Nova_hashCodeLong,
 	compiler_tree_node_Nova_Node_Nova_addAnnotation,
 	compiler_tree_node_Nova_Node_Nova_clone,
-	compiler_tree_node_Nova_Program_Accessor_func_Nova_program,
-	compiler_tree_node_Nova_Node_Accessor_func_Nova_parentFile,
-	compiler_tree_node_Nova_Node_Accessor_func_Nova_parentFunction,
-	compiler_tree_node_Nova_Node_Accessor_func_Nova_parentTry,
-	compiler_tree_node_Nova_Node_Accessor_func_Nova_parentClass,
+	compiler_tree_node_Nova_Program_Accessor_Nova_program,
+	compiler_tree_node_Nova_Node_Accessor_Nova_parentFile,
+	compiler_tree_node_Nova_Node_Accessor_Nova_parentFunction,
+	compiler_tree_node_Nova_Node_Accessor_Nova_parentTry,
+	compiler_tree_node_Nova_Node_Accessor_Nova_parentClass,
 };
 
 
@@ -92,7 +94,7 @@ void compiler_tree_node_Nova_Program_Nova_init_static(nova_exception_Nova_Except
 	}
 }
 
-compiler_tree_node_Nova_Program* compiler_tree_node_Nova_Program_Nova_construct(compiler_tree_node_Nova_Program* this, nova_exception_Nova_ExceptionData* exceptionData)
+compiler_tree_node_Nova_Program* compiler_tree_node_Nova_Program_Nova_construct(compiler_tree_node_Nova_Program* this, nova_exception_Nova_ExceptionData* exceptionData, compiler_Nova_Compiler* compiler)
 {
 	CCLASS_NEW(compiler_tree_node_Nova_Program, this,);
 	this->vtable = &compiler_tree_node_Program_Extension_VTable_val;
@@ -101,7 +103,7 @@ compiler_tree_node_Nova_Program* compiler_tree_node_Nova_Program_Nova_construct(
 	compiler_tree_node_Nova_Program_Nova_super(this, exceptionData);
 	
 	{
-		compiler_tree_node_Nova_Program_Nova_this(this, exceptionData);
+		compiler_tree_node_Nova_Program_Nova_this(this, exceptionData, compiler);
 	}
 	
 	return this;
@@ -114,19 +116,21 @@ void compiler_tree_node_Nova_Program_Nova_destroy(compiler_tree_node_Nova_Progra
 		return;
 	}
 	
+	compiler_Nova_Compiler_Nova_destroy(&(*this)->compiler_tree_node_Nova_Program_Nova_compiler, exceptionData);
 	
 	NOVA_FREE(*this);
+}
+
+void compiler_tree_node_Nova_Program_Nova_this(compiler_tree_node_Nova_Program* this, nova_exception_Nova_ExceptionData* exceptionData, compiler_Nova_Compiler* compiler)
+{
+	this->compiler_tree_node_Nova_Program_Nova_compiler = compiler;
 }
 
 compiler_tree_node_Nova_NovaClass* compiler_tree_node_Nova_Program_Nova_getClassDeclaration(compiler_tree_node_Nova_Program* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* location)
 {
 }
 
-void compiler_tree_node_Nova_Program_Nova_this(compiler_tree_node_Nova_Program* this, nova_exception_Nova_ExceptionData* exceptionData)
-{
-}
-
-compiler_tree_node_Nova_Program* compiler_tree_node_Nova_Program_Accessor_func_Nova_program(compiler_tree_node_Nova_Program* this, nova_exception_Nova_ExceptionData* exceptionData)
+compiler_tree_node_Nova_Program* compiler_tree_node_Nova_Program_Accessor_Nova_program(compiler_tree_node_Nova_Program* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
 	return this;
 }
@@ -134,5 +138,6 @@ compiler_tree_node_Nova_Program* compiler_tree_node_Nova_Program_Accessor_func_N
 
 void compiler_tree_node_Nova_Program_Nova_super(compiler_tree_node_Nova_Program* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
+	this->compiler_tree_node_Nova_Program_Nova_compiler = (compiler_Nova_Compiler*)nova_null;
 }
 

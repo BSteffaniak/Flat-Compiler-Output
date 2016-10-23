@@ -60,6 +60,7 @@ CCLASS_CLASS
 	example_Nova_Dog, 
 	
 	example_Dog_Extension_VTable* vtable;
+	nova_Nova_Class* nova_Nova_Object_Nova_class;
 )
 
 void example_Nova_Dog_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData);

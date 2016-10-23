@@ -59,6 +59,7 @@ compiler_tree_node_ValidationResult_Extension_VTable compiler_tree_node_Validati
 		0,
 		0,
 		0,
+		0,
 	},
 	nova_Nova_Object_Nova_equals,
 	nova_Nova_Object_Nova_toString,

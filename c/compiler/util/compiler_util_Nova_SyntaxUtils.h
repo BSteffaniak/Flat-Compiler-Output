@@ -35,6 +35,7 @@ typedef struct compiler_util_Nova_SyntaxUtils compiler_util_Nova_SyntaxUtils;
 #include <nova/nova_Nova_String.h>
 #include <nova/nova_Nova_System.h>
 #include <nova/nova_Nova_Class.h>
+#include <compiler/util/compiler_util_Nova_StringUtils.h>
 #include <nova/NativeObject.h>
 #include <nova/operators/nova_operators_Nova_Equals.h>
 
@@ -56,11 +57,14 @@ CCLASS_CLASS
 	compiler_util_Nova_SyntaxUtils, 
 	
 	compiler_util_SyntaxUtils_Extension_VTable* vtable;
+	nova_Nova_Class* nova_Nova_Object_Nova_class;
 )
 
 void compiler_util_Nova_SyntaxUtils_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData);
 compiler_util_Nova_SyntaxUtils* compiler_util_Nova_SyntaxUtils_Nova_construct(compiler_util_Nova_SyntaxUtils* this, nova_exception_Nova_ExceptionData* exceptionData);
 void compiler_util_Nova_SyntaxUtils_Nova_destroy(compiler_util_Nova_SyntaxUtils** this, nova_exception_Nova_ExceptionData* exceptionData);
+int compiler_util_Nova_SyntaxUtils_static_Nova_findStringInBaseScope(compiler_util_Nova_SyntaxUtils* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* haystack, nova_datastruct_list_Nova_Array* needles, int start, int searchGenerics, int defaultReturnValue);
+char compiler_util_Nova_SyntaxUtils_static_Nova_checkTypes(compiler_util_Nova_SyntaxUtils* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_list_Nova_Array* types, nova_Nova_Class* clazz);
 void compiler_util_Nova_SyntaxUtils_Nova_this(compiler_util_Nova_SyntaxUtils* this, nova_exception_Nova_ExceptionData* exceptionData);
 void compiler_util_Nova_SyntaxUtils_Nova_super(compiler_util_Nova_SyntaxUtils* this, nova_exception_Nova_ExceptionData* exceptionData);
 

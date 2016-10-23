@@ -58,6 +58,7 @@ CCLASS_CLASS
 	example_Nova_BodyBuilder, 
 	
 	example_BodyBuilder_Extension_VTable* vtable;
+	nova_Nova_Class* nova_Nova_Object_Nova_class;
 	int example_Nova_Person_Nova_age;
 	nova_Nova_String* example_Nova_Person_Nova_name;
 	int example_Nova_BodyBuilder_Nova_weightClass;

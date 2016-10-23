@@ -57,6 +57,7 @@ CCLASS_CLASS
 	example_Nova_Person, 
 	
 	example_Person_Extension_VTable* vtable;
+	nova_Nova_Class* nova_Nova_Object_Nova_class;
 	int example_Nova_Person_Nova_age;
 	nova_Nova_String* example_Nova_Person_Nova_name;
 )

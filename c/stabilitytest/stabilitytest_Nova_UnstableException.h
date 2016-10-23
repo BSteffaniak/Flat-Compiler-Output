@@ -56,6 +56,7 @@ CCLASS_CLASS
 	stabilitytest_Nova_UnstableException, 
 	
 	stabilitytest_UnstableException_Extension_VTable* vtable;
+	nova_Nova_Class* nova_Nova_Object_Nova_class;
 	nova_Nova_String* nova_exception_Nova_Exception_Nova_message;
 )
 

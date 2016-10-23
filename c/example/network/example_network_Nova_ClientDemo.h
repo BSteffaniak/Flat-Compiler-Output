@@ -58,6 +58,7 @@ CCLASS_CLASS
 	example_network_Nova_ClientDemo, 
 	
 	example_network_ClientDemo_Extension_VTable* vtable;
+	nova_Nova_Class* nova_Nova_Object_Nova_class;
 )
 
 void example_network_Nova_ClientDemo_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData);

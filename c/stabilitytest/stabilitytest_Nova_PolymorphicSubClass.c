@@ -60,6 +60,7 @@ stabilitytest_PolymorphicSubClass_Extension_VTable stabilitytest_PolymorphicSubC
 		0,
 		0,
 		0,
+		0,
 	},
 	nova_Nova_Object_Nova_equals,
 	stabilitytest_Nova_PolymorphicSubClass_Nova_toString,

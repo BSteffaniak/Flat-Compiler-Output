@@ -58,6 +58,7 @@ CCLASS_CLASS
 	example_Nova_ThreadDemo, 
 	
 	example_ThreadDemo_Extension_VTable* vtable;
+	nova_Nova_Class* nova_Nova_Object_Nova_class;
 )
 
 void example_Nova_ThreadDemo_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData);

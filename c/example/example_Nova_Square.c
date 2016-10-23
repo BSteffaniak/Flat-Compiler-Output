@@ -57,6 +57,7 @@ example_Square_Extension_VTable example_Square_Extension_VTable_val =
 		(char(*)(nova_operators_Nova_Equals*, nova_exception_Nova_ExceptionData*, nova_Nova_Object*))nova_Nova_Object_Nova_equals,
 		0,
 		0,
+		0,
 		(int(*)(example_Nova_Polygon*, nova_exception_Nova_ExceptionData*))example_Nova_Square_Nova_numberSides,
 		(double(*)(example_Nova_Polygon*, nova_exception_Nova_ExceptionData*))example_Nova_Square_Nova_calculateArea,
 	},

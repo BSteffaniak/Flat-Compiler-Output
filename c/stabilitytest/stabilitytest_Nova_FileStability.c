@@ -62,6 +62,7 @@ stabilitytest_FileStability_Extension_VTable stabilitytest_FileStability_Extensi
 		0,
 		0,
 		0,
+		0,
 	},
 	nova_Nova_Object_Nova_equals,
 	nova_Nova_Object_Nova_toString,

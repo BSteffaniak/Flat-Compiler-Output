@@ -58,6 +58,7 @@ CCLASS_CLASS
 	stabilitytest_Nova_ThreadImplementation, 
 	
 	stabilitytest_ThreadImplementation_Extension_VTable* vtable;
+	nova_Nova_Class* nova_Nova_Object_Nova_class;
 	struct Private* prv;
 )
 

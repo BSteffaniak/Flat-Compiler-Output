@@ -60,6 +60,7 @@ compiler_util_FileUtils_Extension_VTable compiler_util_FileUtils_Extension_VTabl
 		0,
 		0,
 		0,
+		0,
 	},
 	nova_Nova_Object_Nova_equals,
 	nova_Nova_Object_Nova_toString,
@@ -100,7 +101,7 @@ void compiler_util_Nova_FileUtils_Nova_destroy(compiler_util_Nova_FileUtils** th
 
 nova_Nova_String* compiler_util_Nova_FileUtils_static_Nova_formatPath(compiler_util_Nova_FileUtils* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* path)
 {
-	path = nova_Nova_String_Nova_replace(path, exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("\\")), nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("/")));
+	path = nova_Nova_String_1_Nova_replace(path, exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("\\")), nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("/")));
 	path = compiler_util_Nova_FileUtils_static_Nova_formAbsolutePath(0, exceptionData, path);
 	if (compiler_util_Nova_OS_Accessor_static_Nova_isWindows(0, exceptionData))
 	{

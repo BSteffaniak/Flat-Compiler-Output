@@ -60,6 +60,7 @@ example_network_ClientDemo_Extension_VTable example_network_ClientDemo_Extension
 		0,
 		0,
 		0,
+		0,
 	},
 	nova_Nova_Object_Nova_equals,
 	nova_Nova_Object_Nova_toString,

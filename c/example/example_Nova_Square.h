@@ -59,6 +59,7 @@ CCLASS_CLASS
 	example_Nova_Square, 
 	
 	example_Square_Extension_VTable* vtable;
+	nova_Nova_Class* nova_Nova_Object_Nova_class;
 	int example_Nova_Square_Nova_sideLength;
 )
 

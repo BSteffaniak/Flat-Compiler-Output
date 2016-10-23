@@ -60,6 +60,7 @@ CCLASS_CLASS
 	example_network_Nova_OutputThread, 
 	
 	example_network_OutputThread_Extension_VTable* vtable;
+	nova_Nova_Class* nova_Nova_Object_Nova_class;
 	struct Private* prv;
 )
 

@@ -59,6 +59,7 @@ example_GenericDemo_Extension_VTable example_GenericDemo_Extension_VTable_val =
 		0,
 		0,
 		0,
+		0,
 	},
 	nova_Nova_Object_Nova_equals,
 	nova_Nova_Object_Nova_toString,

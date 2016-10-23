@@ -63,6 +63,7 @@ stabilitytest_NetworkStability_Extension_VTable stabilitytest_NetworkStability_E
 		0,
 		0,
 		0,
+		0,
 	},
 	nova_Nova_Object_Nova_equals,
 	nova_Nova_Object_Nova_toString,

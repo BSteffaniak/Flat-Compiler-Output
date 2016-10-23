@@ -57,6 +57,7 @@ CCLASS_CLASS
 	compiler_util_Nova_Location, 
 	
 	compiler_util_Location_Extension_VTable* vtable;
+	nova_Nova_Class* nova_Nova_Object_Nova_class;
 	int compiler_util_Nova_Location_Nova_lineNumber;
 	int compiler_util_Nova_Location_Nova_offset;
 	nova_datastruct_Nova_Bounds* compiler_util_Nova_Location_Nova_bounds;

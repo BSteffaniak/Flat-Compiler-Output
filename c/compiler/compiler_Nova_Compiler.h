@@ -36,6 +36,9 @@ typedef struct compiler_Nova_Compiler compiler_Nova_Compiler;
 #include <nova/nova_Nova_System.h>
 #include <nova/nova_Nova_Class.h>
 #include <compiler/util/compiler_util_Nova_FileUtils.h>
+#include <compiler/tree/node/compiler_tree_node_Nova_NovaClass.h>
+#include <compiler/tree/node/compiler_tree_node_Nova_Program.h>
+#include <compiler/compiler_Nova_SyntaxErrorException.h>
 #include <nova/NativeObject.h>
 #include <nova/operators/nova_operators_Nova_Equals.h>
 
@@ -57,6 +60,10 @@ CCLASS_CLASS
 	compiler_Nova_Compiler, 
 	
 	compiler_Compiler_Extension_VTable* vtable;
+	nova_Nova_Class* nova_Nova_Object_Nova_class;
+	nova_datastruct_list_Nova_Array* compiler_Nova_Compiler_Nova_errors;
+	nova_datastruct_list_Nova_Array* compiler_Nova_Compiler_Nova_warnings;
+	nova_datastruct_list_Nova_Array* compiler_Nova_Compiler_Nova_info;
 )
 extern char compiler_Nova_Compiler_Nova_DEBUG;
 extern char compiler_Nova_Compiler_Nova_testClasses;

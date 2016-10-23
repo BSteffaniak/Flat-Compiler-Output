@@ -61,6 +61,7 @@ CCLASS_CLASS
 	stabilitytest_Nova_FileStability, 
 	
 	stabilitytest_FileStability_Extension_VTable* vtable;
+	nova_Nova_Class* nova_Nova_Object_Nova_class;
 	stabilitytest_Nova_StabilityTest* stabilitytest_Nova_StabilityTestCase_Nova_program;
 )
 

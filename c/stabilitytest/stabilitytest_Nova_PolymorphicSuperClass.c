@@ -59,6 +59,7 @@ stabilitytest_PolymorphicSuperClass_Extension_VTable stabilitytest_PolymorphicSu
 		0,
 		0,
 		0,
+		0,
 	},
 	nova_Nova_Object_Nova_equals,
 	stabilitytest_Nova_PolymorphicSuperClass_Nova_toString,

@@ -58,6 +58,7 @@ stabilitytest_UnstableException_Extension_VTable stabilitytest_UnstableException
 		0,
 		0,
 		0,
+		0,
 	},
 	nova_Nova_Object_Nova_equals,
 	nova_Nova_Object_Nova_toString,

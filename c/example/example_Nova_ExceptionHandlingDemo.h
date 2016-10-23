@@ -57,6 +57,7 @@ CCLASS_CLASS
 	example_Nova_ExceptionHandlingDemo, 
 	
 	example_ExceptionHandlingDemo_Extension_VTable* vtable;
+	nova_Nova_Class* nova_Nova_Object_Nova_class;
 )
 
 void example_Nova_ExceptionHandlingDemo_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData);

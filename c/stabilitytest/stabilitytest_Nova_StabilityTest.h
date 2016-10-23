@@ -41,6 +41,7 @@ typedef struct stabilitytest_Nova_StabilityTest stabilitytest_Nova_StabilityTest
 #include <stabilitytest/stabilitytest_Nova_ExceptionStability.h>
 #include <stabilitytest/stabilitytest_Nova_LambdaStability.h>
 #include <stabilitytest/stabilitytest_Nova_PolymorphismStability.h>
+#include <stabilitytest/stabilitytest_Nova_RegexStability.h>
 #include <stabilitytest/stabilitytest_Nova_StabilityTestCase.h>
 #include <stabilitytest/stabilitytest_Nova_SyntaxStability.h>
 #include <stabilitytest/stabilitytest_Nova_ToStringStability.h>
@@ -68,6 +69,7 @@ CCLASS_CLASS
 	stabilitytest_Nova_StabilityTest, 
 	
 	stabilitytest_StabilityTest_Extension_VTable* vtable;
+	nova_Nova_Class* nova_Nova_Object_Nova_class;
 	stabilitytest_Nova_StabilityTest* stabilitytest_Nova_StabilityTestCase_Nova_program;
 )
 

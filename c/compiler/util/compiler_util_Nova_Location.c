@@ -59,6 +59,7 @@ compiler_util_Location_Extension_VTable compiler_util_Location_Extension_VTable_
 		0,
 		0,
 		0,
+		0,
 	},
 	nova_Nova_Object_Nova_equals,
 	compiler_util_Nova_Location_Nova_toString,
@@ -231,7 +232,7 @@ compiler_util_Nova_Location* compiler_util_Nova_Location_Nova_asNew(compiler_uti
 
 nova_Nova_String* compiler_util_Nova_Location_Nova_toString(compiler_util_Nova_Location* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
-	return nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)(nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("Line "))), exceptionData, nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)(nova_primitive_number_Nova_Int_static_Nova_toString(0, exceptionData, (this->compiler_util_Nova_Location_Nova_lineNumber))), exceptionData, nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)(nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)(" "))), exceptionData, nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)(nova_datastruct_Nova_Bounds_Nova_toString((this->compiler_util_Nova_Location_Nova_bounds), exceptionData)), exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)(""))))));
+	return nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)(nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("Line "))), exceptionData, nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)(nova_primitive_number_Nova_Int_static_Nova_toString(0, exceptionData, (this->compiler_util_Nova_Location_Nova_lineNumber))), exceptionData, nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)(nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)(" "))), exceptionData, nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)(nova_Nova_Object_virtual_Nova_toString((nova_Nova_Object*)((this->compiler_util_Nova_Location_Nova_bounds)), exceptionData)), exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)(""))))));
 }
 
 void compiler_util_Nova_Location_Nova_super(compiler_util_Nova_Location* this, nova_exception_Nova_ExceptionData* exceptionData)
