@@ -35,6 +35,7 @@ typedef struct compiler_tree_node_functions_Nova_NovaFunction compiler_tree_node
 #include <nova/nova_Nova_String.h>
 #include <nova/nova_Nova_System.h>
 #include <nova/nova_Nova_Class.h>
+#include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <compiler/tree/node/compiler_tree_node_Nova_Node.h>
 #include <compiler/error/compiler_error_Nova_UnimplementedOperationException.h>
 #include <compiler/tree/node/annotation/compiler_tree_node_annotation_Nova_Annotatable.h>

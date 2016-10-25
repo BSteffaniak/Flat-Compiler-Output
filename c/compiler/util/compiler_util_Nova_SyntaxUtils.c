@@ -26,7 +26,7 @@
 #include <nova/nova_Nova_String.h>
 #include <nova/nova_Nova_System.h>
 #include <nova/nova_Nova_Class.h>
-#include <compiler/util/compiler_util_Nova_StringUtils.h>
+#include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <nova/NativeObject.h>
 #include <nova/operators/nova_operators_Nova_Equals.h>
 
@@ -98,71 +98,16 @@ void compiler_util_Nova_SyntaxUtils_Nova_destroy(compiler_util_Nova_SyntaxUtils*
 	NOVA_FREE(*this);
 }
 
-int compiler_util_Nova_SyntaxUtils_static_Nova_findStringInBaseScope(compiler_util_Nova_SyntaxUtils* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* haystack, nova_datastruct_list_Nova_Array* needles, int start, int searchGenerics, int defaultReturnValue)
+char compiler_util_Nova_SyntaxUtils_static_Nova_checkTypes(compiler_util_Nova_SyntaxUtils* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_list_Nova_Array* types, nova_Nova_Class* clazz)
 {
-	start = (int)(start == (intptr_t)nova_null ? 0 : start);
-	searchGenerics = (int)(searchGenerics == (intptr_t)nova_null ? 0 : searchGenerics);
-	defaultReturnValue = (int)(defaultReturnValue == (intptr_t)nova_null ? -1 : defaultReturnValue);
-	while (start < haystack->nova_Nova_String_Nova_count)
-	{
-		char l1_Nova_c = 0;
-		
-		l1_Nova_c = nova_Nova_String_Nova_get(haystack, exceptionData, start);
-		if (compiler_util_Nova_StringUtils_0_static_Nova_containsString(0, exceptionData, haystack, needles, start))
-		{
-			return start;
-		}
-		else if (l1_Nova_c == '"')
-		{
-			start = compiler_util_Nova_StringUtils_static_Nova_findEndingQuote(0, exceptionData, haystack, start, (intptr_t)nova_null) + 1;
-		}
-		else if (l1_Nova_c == '\'')
-		{
-			start = compiler_util_Nova_StringUtils_static_Nova_findEndingChar(0, exceptionData, haystack, l1_Nova_c, start, 1, 0, 0, 0, (intptr_t)nova_null) + 1;
-		}
-		else if (l1_Nova_c == '(')
-			{
-				start = compiler_util_Nova_StringUtils_0_static_Nova_findEndingMatch(0, exceptionData, haystack, start, '(', ')', (intptr_t)nova_null, (intptr_t)nova_null) + 1;
-				if (start <= 0)
-				{
-					return (int)-1;
-				}
-			}
-			else if (l1_Nova_c == '[')
-			{
-				start = compiler_util_Nova_StringUtils_0_static_Nova_findEndingMatch(0, exceptionData, haystack, start, '[', ']', (intptr_t)nova_null, (intptr_t)nova_null) + 1;
-				if (start <= 0)
-				{
-					return (int)-1;
-				}
-			}
-			else if (searchGenerics && l1_Nova_c == '<')
-			{
-				start = compiler_util_Nova_StringUtils_0_static_Nova_findEndingMatch(0, exceptionData, haystack, start, '<', '>', (intptr_t)nova_null, (intptr_t)nova_null) + 1;
-				if (start <= 0)
-				{
-					return (int)-1;
-				}
-			}
-			else
-			{
-				start++;
-			}
-		}
-		return defaultReturnValue;
-	}
-	
-	char compiler_util_Nova_SyntaxUtils_static_Nova_checkTypes(compiler_util_Nova_SyntaxUtils* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_list_Nova_Array* types, nova_Nova_Class* clazz)
-	{
-		return 0;
-	}
-	
-	void compiler_util_Nova_SyntaxUtils_Nova_this(compiler_util_Nova_SyntaxUtils* this, nova_exception_Nova_ExceptionData* exceptionData)
-	{
-	}
-	
-	void compiler_util_Nova_SyntaxUtils_Nova_super(compiler_util_Nova_SyntaxUtils* this, nova_exception_Nova_ExceptionData* exceptionData)
-	{
-	}
-	
-		
+	return 0;
+}
+
+void compiler_util_Nova_SyntaxUtils_Nova_this(compiler_util_Nova_SyntaxUtils* this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+}
+
+void compiler_util_Nova_SyntaxUtils_Nova_super(compiler_util_Nova_SyntaxUtils* this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+}
+

@@ -35,6 +35,7 @@ typedef struct compiler_tree_node_Nova_NovaFile compiler_tree_node_Nova_NovaFile
 #include <nova/nova_Nova_String.h>
 #include <nova/nova_Nova_System.h>
 #include <nova/nova_Nova_Class.h>
+#include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <compiler/util/compiler_util_Nova_Location.h>
 #include <compiler/tree/node/closures/compiler_tree_node_closures_Nova_ClosureContext.h>
 #include <compiler/tree/node/closures/compiler_tree_node_closures_Nova_ClosureDeclaration.h>

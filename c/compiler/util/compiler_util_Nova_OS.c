@@ -26,6 +26,7 @@
 #include <nova/nova_Nova_String.h>
 #include <nova/nova_Nova_System.h>
 #include <nova/nova_Nova_Class.h>
+#include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <nova/NativeObject.h>
 #include <nova/operators/nova_operators_Nova_Equals.h>
 
@@ -87,19 +88,19 @@ void compiler_util_Nova_OS_Nova_init_static(nova_exception_Nova_ExceptionData* e
 		nova_Nova_String* l1_Nova_osName = (nova_Nova_String*)nova_null;
 		
 		l1_Nova_osName = nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("windows"));
-		if (nova_Nova_String_Nova_startsWith(l1_Nova_osName, exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("win"))))
+		if (nova_Nova_String_0_Nova_startsWith(l1_Nova_osName, exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("win"))))
 		{
 			compiler_util_Nova_OS_static_Nova_OS = compiler_util_Nova_OS_Nova_WINDOWS;
 			compiler_util_Nova_OS_Nova_OUTPUT_EXTENSION = nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)(".exe"));
 			compiler_util_Nova_OS_Nova_DYNAMIC_LIB_EXT = nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)(".dll"));
 		}
-		else if (nova_Nova_String_Nova_startsWith(l1_Nova_osName, exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("mac"))))
+		else if (nova_Nova_String_0_Nova_startsWith(l1_Nova_osName, exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("mac"))))
 		{
 			compiler_util_Nova_OS_static_Nova_OS = compiler_util_Nova_OS_Nova_MACOSX;
 			compiler_util_Nova_OS_Nova_OUTPUT_EXTENSION = nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)(""));
 			compiler_util_Nova_OS_Nova_DYNAMIC_LIB_EXT = nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)(".dylib"));
 		}
-		else if (nova_Nova_String_Nova_startsWith(l1_Nova_osName, exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("lin"))))
+		else if (nova_Nova_String_0_Nova_startsWith(l1_Nova_osName, exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("lin"))))
 		{
 			compiler_util_Nova_OS_static_Nova_OS = compiler_util_Nova_OS_Nova_LINUX;
 			compiler_util_Nova_OS_Nova_OUTPUT_EXTENSION = nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)(""));

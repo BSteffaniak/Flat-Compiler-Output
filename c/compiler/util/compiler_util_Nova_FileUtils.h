@@ -35,8 +35,8 @@ typedef struct compiler_util_Nova_FileUtils compiler_util_Nova_FileUtils;
 #include <nova/nova_Nova_String.h>
 #include <nova/nova_Nova_System.h>
 #include <nova/nova_Nova_Class.h>
+#include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <compiler/util/compiler_util_Nova_OS.h>
-#include <compiler/util/compiler_util_Nova_StringUtils.h>
 #include <nova/NativeObject.h>
 #include <nova/operators/nova_operators_Nova_Equals.h>
 

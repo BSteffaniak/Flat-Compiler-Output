@@ -35,6 +35,7 @@ typedef struct compiler_tree_node_Nova_Abstractable compiler_tree_node_Nova_Abst
 #include <nova/nova_Nova_String.h>
 #include <nova/nova_Nova_System.h>
 #include <nova/nova_Nova_Class.h>
+#include <nova/regex/nova_regex_Nova_Pattern.h>
 
 
 typedef struct compiler_tree_node_Abstractable_Extension_VTable compiler_tree_node_Abstractable_Extension_VTable;

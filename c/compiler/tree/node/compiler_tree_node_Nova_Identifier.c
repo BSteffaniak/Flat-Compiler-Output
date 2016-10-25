@@ -26,6 +26,7 @@
 #include <nova/nova_Nova_String.h>
 #include <nova/nova_Nova_System.h>
 #include <nova/nova_Nova_Class.h>
+#include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <compiler/util/compiler_util_Nova_Location.h>
 #include <compiler/tree/node/compiler_tree_node_Nova_Accessible.h>
 #include <compiler/tree/node/compiler_tree_node_Nova_Node.h>
@@ -85,7 +86,7 @@ compiler_tree_node_Identifier_Extension_VTable compiler_tree_node_Identifier_Ext
 	compiler_tree_node_Nova_Node_Accessor_Nova_parentFunction,
 	compiler_tree_node_Nova_Node_Accessor_Nova_parentTry,
 	compiler_tree_node_Nova_Node_Accessor_Nova_parentClass,
-	compiler_tree_node_Nova_Identifier_Nova_tryParse,
+	compiler_tree_node_Nova_Identifier_static_Nova_tryParse,
 };
 
 
@@ -132,7 +133,7 @@ void compiler_tree_node_Nova_Identifier_Nova_this(compiler_tree_node_Nova_Identi
 	compiler_tree_node_Nova_Node_Nova_this((compiler_tree_node_Nova_Node*)(this), exceptionData, parent, location);
 }
 
-compiler_tree_node_Nova_Identifier* compiler_tree_node_Nova_Identifier_Nova_tryParse(compiler_tree_node_Nova_Identifier* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* input, compiler_tree_node_Nova_Node* parent, compiler_util_Nova_Location* location, int require)
+compiler_tree_node_Nova_Identifier* compiler_tree_node_Nova_Identifier_static_Nova_tryParse(compiler_tree_node_Nova_Identifier* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* input, compiler_tree_node_Nova_Node* parent, compiler_util_Nova_Location* location, int require)
 {
 	parent = (compiler_tree_node_Nova_Node*)(parent == 0 ? (nova_Nova_Object*)(nova_Nova_Object*)nova_null : (nova_Nova_Object*)parent);
 	location = (compiler_util_Nova_Location*)(location == 0 ? (nova_Nova_Object*)compiler_util_Nova_Location_Nova_INVALID : (nova_Nova_Object*)location);
@@ -154,8 +155,8 @@ void compiler_tree_node_Nova_Identifier_Nova_super(compiler_tree_node_Nova_Ident
 	this->compiler_tree_node_Nova_Identifier_Nova_name = (nova_Nova_String*)nova_null;
 }
 
-compiler_tree_node_Nova_Identifier* compiler_tree_node_Nova_Identifier_virtual_Nova_tryParse(compiler_tree_node_Nova_Identifier* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* input, compiler_tree_node_Nova_Node* parent, compiler_util_Nova_Location* location, int require)
+compiler_tree_node_Nova_Identifier* compiler_tree_node_Nova_Identifier_virtual_static_Nova_tryParse(compiler_tree_node_Nova_Identifier* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* input, compiler_tree_node_Nova_Node* parent, compiler_util_Nova_Location* location, int require)
 {
-	return this->vtable->compiler_tree_node_Nova_Identifier_virtual_Nova_tryParse((compiler_tree_node_Nova_Identifier*)(this), exceptionData, input, parent, location, require);
+	return this->vtable->compiler_tree_node_Nova_Identifier_virtual_static_Nova_tryParse(0, exceptionData, input, parent, location, require);
 }
 

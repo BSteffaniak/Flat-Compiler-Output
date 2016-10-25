@@ -26,6 +26,7 @@
 #include <nova/nova_Nova_String.h>
 #include <nova/nova_Nova_System.h>
 #include <nova/nova_Nova_Class.h>
+#include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <compiler/tree/node/compiler_tree_node_Nova_Node.h>
 #include <compiler/util/compiler_util_Nova_Location.h>
 #include <compiler/tree/node/variables/compiler_tree_node_variables_Nova_VariableDeclaration.h>
@@ -87,7 +88,7 @@ compiler_tree_node_variables_InstanceDeclaration_Extension_VTable compiler_tree_
 	compiler_tree_node_Nova_Node_Accessor_Nova_parentFunction,
 	compiler_tree_node_Nova_Node_Accessor_Nova_parentTry,
 	compiler_tree_node_Nova_Node_Accessor_Nova_parentClass,
-	compiler_tree_node_variables_Nova_InstanceDeclaration_Nova_tryParse,
+	compiler_tree_node_variables_Nova_InstanceDeclaration_static_Nova_tryParse,
 	compiler_tree_node_variables_Nova_InstanceDeclaration_Nova_parseModifier,
 	compiler_tree_node_variables_Nova_InstanceDeclaration_Nova_writeModifiers,
 };
@@ -141,7 +142,7 @@ void compiler_tree_node_variables_Nova_InstanceDeclaration_Nova_this(compiler_tr
 	compiler_tree_node_variables_Nova_VariableDeclaration_Nova_this((compiler_tree_node_variables_Nova_VariableDeclaration*)(this), exceptionData, parent, location);
 }
 
-compiler_tree_node_variables_Nova_InstanceDeclaration* compiler_tree_node_variables_Nova_InstanceDeclaration_Nova_tryParse(compiler_tree_node_variables_Nova_InstanceDeclaration* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* input, compiler_tree_node_Nova_Node* parent, compiler_util_Nova_Location* location, int require)
+compiler_tree_node_variables_Nova_InstanceDeclaration* compiler_tree_node_variables_Nova_InstanceDeclaration_static_Nova_tryParse(compiler_tree_node_variables_Nova_InstanceDeclaration* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* input, compiler_tree_node_Nova_Node* parent, compiler_util_Nova_Location* location, int require)
 {
 	parent = (compiler_tree_node_Nova_Node*)(parent == 0 ? (nova_Nova_Object*)(nova_Nova_Object*)nova_null : (nova_Nova_Object*)parent);
 	location = (compiler_util_Nova_Location*)(location == 0 ? (nova_Nova_Object*)compiler_util_Nova_Location_Nova_INVALID : (nova_Nova_Object*)location);

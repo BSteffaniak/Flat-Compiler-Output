@@ -35,6 +35,7 @@ typedef struct stabilitytest_Nova_StabilityExceptionHandler stabilitytest_Nova_S
 #include <nova/nova_Nova_String.h>
 #include <nova/nova_Nova_System.h>
 #include <nova/nova_Nova_Class.h>
+#include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <nova/thread/nova_thread_Nova_UncaughtExceptionHandler.h>
 #include <stabilitytest/stabilitytest_Nova_StabilityTest.h>
 #include <nova/NativeObject.h>

@@ -35,6 +35,7 @@ typedef struct compiler_tree_node_Nova_Accessible compiler_tree_node_Nova_Access
 #include <nova/nova_Nova_String.h>
 #include <nova/nova_Nova_System.h>
 #include <nova/nova_Nova_Class.h>
+#include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <compiler/util/compiler_util_Nova_SyntaxUtils.h>
 #include <compiler/tree/node/compiler_tree_node_Nova_Identifier.h>
 #include <compiler/tree/node/compiler_tree_node_Nova_Value.h>

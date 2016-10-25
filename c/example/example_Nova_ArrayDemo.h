@@ -35,6 +35,7 @@ typedef struct example_Nova_ArrayDemo example_Nova_ArrayDemo;
 #include <nova/nova_Nova_String.h>
 #include <nova/nova_Nova_System.h>
 #include <nova/nova_Nova_Class.h>
+#include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <example/example_Nova_Animal.h>
 #include <example/example_Nova_Dog.h>
 #include <example/example_Nova_Spider.h>

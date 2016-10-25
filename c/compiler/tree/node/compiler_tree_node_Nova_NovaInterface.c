@@ -26,14 +26,14 @@
 #include <nova/nova_Nova_String.h>
 #include <nova/nova_Nova_System.h>
 #include <nova/nova_Nova_Class.h>
+#include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <compiler/tree/node/compiler_tree_node_Nova_NovaClass.h>
-#include <compiler/compiler_Nova_SyntaxErrorException.h>
 #include <compiler/compiler_Nova_SyntaxMessage.h>
 #include <compiler/util/compiler_util_Nova_Location.h>
 #include <compiler/tree/node/variables/compiler_tree_node_variables_Nova_InstanceDeclaration.h>
-#include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <compiler/tree/node/compiler_tree_node_Nova_Abstractable.h>
 #include <compiler/tree/node/compiler_tree_node_Nova_Node.h>
+#include <compiler/tree/node/compiler_tree_node_Nova_Scope.h>
 #include <compiler/tree/node/variables/compiler_tree_node_variables_Nova_VariableDeclaration.h>
 #include <compiler/tree/node/compiler_tree_node_Nova_Identifier.h>
 #include <compiler/tree/node/compiler_tree_node_Nova_Accessible.h>
@@ -46,7 +46,6 @@
 #include <compiler/tree/node/functions/compiler_tree_node_functions_Nova_NovaFunction.h>
 #include <compiler/tree/node/compiler_tree_node_Nova_NovaFile.h>
 #include <compiler/tree/node/compiler_tree_node_Nova_Program.h>
-#include <compiler/tree/node/compiler_tree_node_Nova_Scope.h>
 #include <compiler/tree/node/compiler_tree_node_Nova_ValidationResult.h>
 #include <nova/NativeObject.h>
 #include <nova/operators/nova_operators_Nova_Equals.h>
@@ -92,7 +91,7 @@ compiler_tree_node_NovaInterface_Extension_VTable compiler_tree_node_NovaInterfa
 	compiler_tree_node_Nova_Node_Accessor_Nova_parentFunction,
 	compiler_tree_node_Nova_Node_Accessor_Nova_parentTry,
 	compiler_tree_node_Nova_NovaClass_Accessor_Nova_parentClass,
-	compiler_tree_node_Nova_NovaClass_Nova_tryParse,
+	compiler_tree_node_Nova_NovaClass_static_Nova_tryParse,
 	compiler_tree_node_Nova_NovaClass_Nova_parseModifier,
 	compiler_tree_node_Nova_NovaClass_Nova_writeModifiers,
 	compiler_tree_node_Nova_NovaClass_Nova_writeAbstract,

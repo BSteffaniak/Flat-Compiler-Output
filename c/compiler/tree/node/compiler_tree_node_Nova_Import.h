@@ -35,6 +35,7 @@ typedef struct compiler_tree_node_Nova_Import compiler_tree_node_Nova_Import;
 #include <nova/nova_Nova_String.h>
 #include <nova/nova_Nova_System.h>
 #include <nova/nova_Nova_Class.h>
+#include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <compiler/util/compiler_util_Nova_Location.h>
 #include <compiler/tree/node/compiler_tree_node_Nova_Node.h>
 #include <compiler/tree/node/compiler_tree_node_Nova_NovaClass.h>
@@ -92,7 +93,7 @@ compiler_tree_node_Nova_Import* compiler_tree_node_Nova_Import_Nova_construct(co
 void compiler_tree_node_Nova_Import_Nova_destroy(compiler_tree_node_Nova_Import** this, nova_exception_Nova_ExceptionData* exceptionData);
 void compiler_tree_node_Nova_Import_Nova_this(compiler_tree_node_Nova_Import* this, nova_exception_Nova_ExceptionData* exceptionData, compiler_tree_node_Nova_Node* parent, compiler_util_Nova_Location* location);
 nova_Nova_String* compiler_tree_node_Nova_Import_Nova_getClassLocation(compiler_tree_node_Nova_Import* this, nova_exception_Nova_ExceptionData* exceptionData, int aliased);
-compiler_tree_node_Nova_Import* compiler_tree_node_Nova_Import_Nova_tryParse(compiler_tree_node_Nova_Import* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* input, compiler_tree_node_Nova_Node* parent, compiler_util_Nova_Location* location, int require);
+compiler_tree_node_Nova_Import* compiler_tree_node_Nova_Import_static_Nova_tryParse(compiler_tree_node_Nova_Import* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* input, compiler_tree_node_Nova_Node* parent, compiler_util_Nova_Location* location, int require);
 nova_Nova_String* compiler_tree_node_Nova_Import_Accessor_Nova_parentLocation(compiler_tree_node_Nova_Import* this, nova_exception_Nova_ExceptionData* exceptionData);
 compiler_tree_node_Nova_NovaClass* compiler_tree_node_Nova_Import_Accessor_Nova_classDeclaration(compiler_tree_node_Nova_Import* this, nova_exception_Nova_ExceptionData* exceptionData);
 void compiler_tree_node_Nova_Import_Nova_super(compiler_tree_node_Nova_Import* this, nova_exception_Nova_ExceptionData* exceptionData);

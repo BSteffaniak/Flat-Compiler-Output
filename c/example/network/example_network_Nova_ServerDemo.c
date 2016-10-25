@@ -26,6 +26,7 @@
 #include <nova/nova_Nova_String.h>
 #include <nova/nova_Nova_System.h>
 #include <nova/nova_Nova_Class.h>
+#include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <nova/network/nova_network_Nova_ServerSocket.h>
 #include <nova/network/nova_network_Nova_ConnectionSocket.h>
 #include <example/network/example_network_Nova_ConnectionThread.h>

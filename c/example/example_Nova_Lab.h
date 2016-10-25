@@ -35,6 +35,7 @@ typedef struct example_Nova_Lab example_Nova_Lab;
 #include <nova/nova_Nova_String.h>
 #include <nova/nova_Nova_System.h>
 #include <nova/nova_Nova_Class.h>
+#include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <nova/math/nova_math_Nova_Vector3D.h>
 #include <nova/math/nova_math_Nova_Matrix.h>
 #include <nova/datastruct/nova_datastruct_Nova_BinaryTree.h>

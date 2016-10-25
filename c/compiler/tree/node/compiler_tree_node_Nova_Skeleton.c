@@ -26,6 +26,7 @@
 #include <nova/nova_Nova_String.h>
 #include <nova/nova_Nova_System.h>
 #include <nova/nova_Nova_Class.h>
+#include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <compiler/util/compiler_util_Nova_Location.h>
 #include <compiler/tree/node/compiler_tree_node_Nova_Node.h>
 #include <compiler/error/compiler_error_Nova_UnimplementedOperationException.h>
@@ -124,7 +125,7 @@ void compiler_tree_node_Nova_Skeleton_Nova_this(compiler_tree_node_Nova_Skeleton
 	compiler_tree_node_Nova_Node_Nova_this((compiler_tree_node_Nova_Node*)(this), exceptionData, parent, location);
 }
 
-compiler_tree_node_Nova_Skeleton* compiler_tree_node_Nova_Skeleton_Nova_tryParse(compiler_tree_node_Nova_Skeleton* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* input, compiler_tree_node_Nova_Node* parent, compiler_util_Nova_Location* location, int require)
+compiler_tree_node_Nova_Skeleton* compiler_tree_node_Nova_Skeleton_static_Nova_tryParse(compiler_tree_node_Nova_Skeleton* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* input, compiler_tree_node_Nova_Node* parent, compiler_util_Nova_Location* location, int require)
 {
 	parent = (compiler_tree_node_Nova_Node*)(parent == 0 ? (nova_Nova_Object*)(nova_Nova_Object*)nova_null : (nova_Nova_Object*)parent);
 	location = (compiler_util_Nova_Location*)(location == 0 ? (nova_Nova_Object*)compiler_util_Nova_Location_Nova_INVALID : (nova_Nova_Object*)location);

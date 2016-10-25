@@ -26,8 +26,8 @@
 #include <nova/nova_Nova_String.h>
 #include <nova/nova_Nova_System.h>
 #include <nova/nova_Nova_Class.h>
+#include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <compiler/util/compiler_util_Nova_OS.h>
-#include <compiler/util/compiler_util_Nova_StringUtils.h>
 #include <nova/NativeObject.h>
 #include <nova/operators/nova_operators_Nova_Equals.h>
 
@@ -105,7 +105,7 @@ nova_Nova_String* compiler_util_Nova_FileUtils_static_Nova_formatPath(compiler_u
 	path = compiler_util_Nova_FileUtils_static_Nova_formAbsolutePath(0, exceptionData, path);
 	if (compiler_util_Nova_OS_Accessor_static_Nova_isWindows(0, exceptionData))
 	{
-		path = compiler_util_Nova_StringUtils_static_Nova_removeSurroundingQuotes(0, exceptionData, path);
+		path = compiler_util_Nova_CompilerStringFunctions_Nova_removeSurroundingQuotes(path, exceptionData);
 		return nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)(nova_primitive_number_Nova_Char_static_Nova_toString(0, exceptionData, '"')), exceptionData, nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)(path), exceptionData, nova_primitive_number_Nova_Char_static_Nova_toString(0, exceptionData, '"')));
 	}
 	else

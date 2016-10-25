@@ -26,6 +26,7 @@
 #include <nova/nova_Nova_String.h>
 #include <nova/nova_Nova_System.h>
 #include <nova/nova_Nova_Class.h>
+#include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <compiler/tree/node/compiler_tree_node_Nova_Node.h>
 #include <compiler/compiler_Nova_SyntaxErrorException.h>
 #include <nova/NativeObject.h>
@@ -99,6 +100,15 @@ void compiler_Nova_SyntaxMessage_Nova_destroy(compiler_Nova_SyntaxMessage** this
 	NOVA_FREE(*this);
 }
 
+void compiler_Nova_SyntaxMessage_static_Nova_errorIf(compiler_Nova_SyntaxMessage* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* message, compiler_tree_node_Nova_Node* node, char condition, int throwException)
+{
+	throwException = (int)(throwException == (intptr_t)nova_null ? 1 : throwException);
+	if (condition)
+	{
+		compiler_Nova_SyntaxMessage_static_Nova_error(0, exceptionData, message, node, throwException);
+	}
+}
+
 void compiler_Nova_SyntaxMessage_static_Nova_error(compiler_Nova_SyntaxMessage* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* message, compiler_tree_node_Nova_Node* node, int throwException)
 {
 	throwException = (int)(throwException == (intptr_t)nova_null ? 1 : throwException);
@@ -108,7 +118,7 @@ void compiler_Nova_SyntaxMessage_static_Nova_error(compiler_Nova_SyntaxMessage* 
 	}
 	if (throwException)
 	{
-		THROW(10, compiler_Nova_SyntaxErrorException_1_Nova_construct(0, exceptionData, message, 0));
+		THROW(10, compiler_Nova_SyntaxErrorException_1_Nova_construct(0, exceptionData, message, node, 0));
 	}
 	else
 	{

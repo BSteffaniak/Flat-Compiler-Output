@@ -26,6 +26,7 @@
 #include <nova/nova_Nova_String.h>
 #include <nova/nova_Nova_System.h>
 #include <nova/nova_Nova_Class.h>
+#include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <compiler/util/compiler_util_Nova_Location.h>
 #include <compiler/tree/node/closures/compiler_tree_node_closures_Nova_ClosureContext.h>
 #include <compiler/tree/node/closures/compiler_tree_node_closures_Nova_ClosureDeclaration.h>
@@ -94,13 +95,13 @@ compiler_tree_node_NovaFile_Extension_VTable compiler_tree_node_NovaFile_Extensi
 
 
 void compiler_tree_node_Nova_NovaFile_Nova_addDefaultImports(compiler_tree_node_Nova_NovaFile* this, nova_exception_Nova_ExceptionData* exceptionData);
-nova_datastruct_list_Nova_Array* generated9(compiler_tree_node_Nova_NovaFile* this, nova_exception_Nova_ExceptionData* exceptionData);
+nova_datastruct_list_Nova_Array* generated10(compiler_tree_node_Nova_NovaFile* this, nova_exception_Nova_ExceptionData* exceptionData);
 
 nova_datastruct_list_Nova_Array* compiler_tree_node_Nova_NovaFile_Nova_DEFAULT_IMPORTS;
 void compiler_tree_node_Nova_NovaFile_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData)
 {
 	{
-		compiler_tree_node_Nova_NovaFile_Nova_DEFAULT_IMPORTS = generated9(0, exceptionData);
+		compiler_tree_node_Nova_NovaFile_Nova_DEFAULT_IMPORTS = generated10(0, exceptionData);
 	}
 }
 
@@ -169,7 +170,7 @@ compiler_tree_node_Nova_Import* compiler_tree_node_Nova_NovaFile_Nova_addImport(
 	{
 		return (compiler_tree_node_Nova_Import*)(nova_Nova_Object*)nova_null;
 	}
-	return (compiler_tree_node_Nova_Import*)compiler_tree_node_Nova_Node_Nova_addChild((compiler_tree_node_Nova_Node*)(this), exceptionData, (compiler_tree_node_Nova_Node*)(compiler_tree_node_Nova_Import_Nova_tryParse(0, exceptionData, nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)(nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("import \""))), exceptionData, nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)(nova_Nova_Object_virtual_Nova_toString((nova_Nova_Object*)((this->compiler_tree_node_Nova_Node_Nova_location)), exceptionData)), exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("\"")))), (compiler_tree_node_Nova_Node*)(this), this->compiler_tree_node_Nova_Node_Nova_location, (intptr_t)nova_null)), (intptr_t)nova_null, 0, (intptr_t)nova_null);
+	return (compiler_tree_node_Nova_Import*)compiler_tree_node_Nova_Node_Nova_addChild((compiler_tree_node_Nova_Node*)(this), exceptionData, (compiler_tree_node_Nova_Node*)(compiler_tree_node_Nova_Import_static_Nova_tryParse(0, exceptionData, nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)(nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("import \""))), exceptionData, nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)(nova_Nova_Object_virtual_Nova_toString((nova_Nova_Object*)((this->compiler_tree_node_Nova_Node_Nova_location)), exceptionData)), exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("\"")))), (compiler_tree_node_Nova_Node*)(this), this->compiler_tree_node_Nova_Node_Nova_location, (intptr_t)nova_null)), (intptr_t)nova_null, 0, (intptr_t)nova_null);
 }
 
 char compiler_tree_node_Nova_NovaFile_Nova_containsImport(compiler_tree_node_Nova_NovaFile* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* location, int absoluteLocation, int aliased)
@@ -179,7 +180,7 @@ char compiler_tree_node_Nova_NovaFile_Nova_containsImport(compiler_tree_node_Nov
 	return 0;
 }
 
-nova_datastruct_list_Nova_Array* generated9(compiler_tree_node_Nova_NovaFile* this, nova_exception_Nova_ExceptionData* exceptionData)
+nova_datastruct_list_Nova_Array* generated10(compiler_tree_node_Nova_NovaFile* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
 	nova_Nova_String** l1_Nova_temp = (nova_Nova_String**)nova_null;
 	

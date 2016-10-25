@@ -35,6 +35,7 @@ typedef struct compiler_Nova_SyntaxMessage compiler_Nova_SyntaxMessage;
 #include <nova/nova_Nova_String.h>
 #include <nova/nova_Nova_System.h>
 #include <nova/nova_Nova_Class.h>
+#include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <compiler/tree/node/compiler_tree_node_Nova_Node.h>
 #include <compiler/compiler_Nova_SyntaxErrorException.h>
 #include <nova/NativeObject.h>
@@ -64,6 +65,7 @@ CCLASS_CLASS
 void compiler_Nova_SyntaxMessage_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData);
 compiler_Nova_SyntaxMessage* compiler_Nova_SyntaxMessage_Nova_construct(compiler_Nova_SyntaxMessage* this, nova_exception_Nova_ExceptionData* exceptionData);
 void compiler_Nova_SyntaxMessage_Nova_destroy(compiler_Nova_SyntaxMessage** this, nova_exception_Nova_ExceptionData* exceptionData);
+void compiler_Nova_SyntaxMessage_static_Nova_errorIf(compiler_Nova_SyntaxMessage* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* message, compiler_tree_node_Nova_Node* node, char condition, int throwException);
 void compiler_Nova_SyntaxMessage_static_Nova_error(compiler_Nova_SyntaxMessage* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* message, compiler_tree_node_Nova_Node* node, int throwException);
 void compiler_Nova_SyntaxMessage_Nova_this(compiler_Nova_SyntaxMessage* this, nova_exception_Nova_ExceptionData* exceptionData);
 void compiler_Nova_SyntaxMessage_Nova_super(compiler_Nova_SyntaxMessage* this, nova_exception_Nova_ExceptionData* exceptionData);

@@ -35,6 +35,7 @@ typedef struct example_Nova_SvgFractal example_Nova_SvgFractal;
 #include <nova/nova_Nova_String.h>
 #include <nova/nova_Nova_System.h>
 #include <nova/nova_Nova_Class.h>
+#include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <nova/web/svg/nova_web_svg_Nova_Svg.h>
 #include <nova/web/svg/nova_web_svg_Nova_SvgCircle.h>
 #include <nova/io/nova_io_Nova_File.h>
