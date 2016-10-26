@@ -29,7 +29,6 @@
 #include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <compiler/tree/node/exceptionhandling/compiler_tree_node_exceptionhandling_Nova_ExceptionHandler.h>
 #include <compiler/tree/node/compiler_tree_node_Nova_Node.h>
-#include <compiler/error/compiler_error_Nova_UnimplementedOperationException.h>
 #include <compiler/tree/node/annotation/compiler_tree_node_annotation_Nova_Annotatable.h>
 #include <compiler/tree/node/annotation/compiler_tree_node_annotation_Nova_Annotation.h>
 #include <compiler/tree/node/exceptionhandling/compiler_tree_node_exceptionhandling_Nova_Try.h>
@@ -71,8 +70,6 @@ compiler_tree_node_exceptionhandling_Try_Extension_VTable compiler_tree_node_exc
 		0,
 		0,
 		(void(*)(compiler_tree_node_annotation_Nova_Annotatable*, nova_exception_Nova_ExceptionData*, compiler_tree_node_annotation_Nova_Annotation*))compiler_tree_node_Nova_Node_Nova_addAnnotation,
-		0,
-		0,
 	},
 	nova_Nova_Object_Nova_equals,
 	nova_Nova_Object_Nova_toString,

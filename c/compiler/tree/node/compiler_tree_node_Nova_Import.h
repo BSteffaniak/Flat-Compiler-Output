@@ -40,7 +40,6 @@ typedef struct compiler_tree_node_Nova_Import compiler_tree_node_Nova_Import;
 #include <compiler/tree/node/compiler_tree_node_Nova_Node.h>
 #include <compiler/tree/node/compiler_tree_node_Nova_NovaClass.h>
 #include <compiler/tree/node/compiler_tree_node_Nova_Program.h>
-#include <compiler/error/compiler_error_Nova_UnimplementedOperationException.h>
 #include <compiler/tree/node/annotation/compiler_tree_node_annotation_Nova_Annotatable.h>
 #include <compiler/tree/node/annotation/compiler_tree_node_annotation_Nova_Annotation.h>
 #include <compiler/tree/node/exceptionhandling/compiler_tree_node_exceptionhandling_Nova_Try.h>
@@ -78,7 +77,6 @@ CCLASS_CLASS
 	compiler_tree_node_Import_Extension_VTable* vtable;
 	nova_Nova_Class* nova_Nova_Object_Nova_class;
 	compiler_util_Nova_Location* compiler_tree_node_Nova_Node_Nova_location;
-	nova_datastruct_list_Nova_Array* compiler_tree_node_Nova_Node_Nova_children;
 	nova_datastruct_list_Nova_Array* compiler_tree_node_Nova_Node_Nova_annotations;
 	compiler_tree_node_Nova_Node* compiler_tree_node_Nova_Node_Nova_parent;
 	char compiler_tree_node_Nova_Import_Nova_used;

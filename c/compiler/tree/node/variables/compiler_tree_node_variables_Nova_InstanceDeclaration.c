@@ -34,12 +34,11 @@
 #include <compiler/tree/node/compiler_tree_node_Nova_Accessible.h>
 #include <compiler/tree/node/compiler_tree_node_Nova_Value.h>
 #include <compiler/tree/node/arrays/compiler_tree_node_arrays_Nova_ArrayAccess.h>
-#include <compiler/tree/node/compiler_tree_node_Nova_NovaClass.h>
-#include <compiler/error/compiler_error_Nova_UnimplementedOperationException.h>
 #include <compiler/tree/node/annotation/compiler_tree_node_annotation_Nova_Annotatable.h>
 #include <compiler/tree/node/annotation/compiler_tree_node_annotation_Nova_Annotation.h>
 #include <compiler/tree/node/exceptionhandling/compiler_tree_node_exceptionhandling_Nova_Try.h>
 #include <compiler/tree/node/functions/compiler_tree_node_functions_Nova_NovaFunction.h>
+#include <compiler/tree/node/compiler_tree_node_Nova_NovaClass.h>
 #include <compiler/tree/node/compiler_tree_node_Nova_NovaFile.h>
 #include <compiler/tree/node/compiler_tree_node_Nova_Program.h>
 #include <compiler/tree/node/compiler_tree_node_Nova_Scope.h>
@@ -75,8 +74,6 @@ compiler_tree_node_variables_InstanceDeclaration_Extension_VTable compiler_tree_
 		0,
 		0,
 		(void(*)(compiler_tree_node_annotation_Nova_Annotatable*, nova_exception_Nova_ExceptionData*, compiler_tree_node_annotation_Nova_Annotation*))compiler_tree_node_Nova_Node_Nova_addAnnotation,
-		0,
-		0,
 	},
 	nova_Nova_Object_Nova_equals,
 	nova_Nova_Object_Nova_toString,

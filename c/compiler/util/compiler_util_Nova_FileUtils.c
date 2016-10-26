@@ -59,8 +59,6 @@ compiler_util_FileUtils_Extension_VTable compiler_util_FileUtils_Extension_VTabl
 		0,
 		0,
 		0,
-		0,
-		0,
 	},
 	nova_Nova_Object_Nova_equals,
 	nova_Nova_Object_Nova_toString,

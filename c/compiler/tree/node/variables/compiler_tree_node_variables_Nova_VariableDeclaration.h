@@ -42,12 +42,11 @@ typedef struct compiler_tree_node_variables_Nova_VariableDeclaration compiler_tr
 #include <compiler/tree/node/compiler_tree_node_Nova_Accessible.h>
 #include <compiler/tree/node/compiler_tree_node_Nova_Value.h>
 #include <compiler/tree/node/arrays/compiler_tree_node_arrays_Nova_ArrayAccess.h>
-#include <compiler/tree/node/compiler_tree_node_Nova_NovaClass.h>
-#include <compiler/error/compiler_error_Nova_UnimplementedOperationException.h>
 #include <compiler/tree/node/annotation/compiler_tree_node_annotation_Nova_Annotatable.h>
 #include <compiler/tree/node/annotation/compiler_tree_node_annotation_Nova_Annotation.h>
 #include <compiler/tree/node/exceptionhandling/compiler_tree_node_exceptionhandling_Nova_Try.h>
 #include <compiler/tree/node/functions/compiler_tree_node_functions_Nova_NovaFunction.h>
+#include <compiler/tree/node/compiler_tree_node_Nova_NovaClass.h>
 #include <compiler/tree/node/compiler_tree_node_Nova_NovaFile.h>
 #include <compiler/tree/node/compiler_tree_node_Nova_Program.h>
 #include <compiler/tree/node/compiler_tree_node_Nova_Scope.h>
@@ -84,7 +83,6 @@ CCLASS_CLASS
 	compiler_tree_node_variables_VariableDeclaration_Extension_VTable* vtable;
 	nova_Nova_Class* nova_Nova_Object_Nova_class;
 	compiler_util_Nova_Location* compiler_tree_node_Nova_Node_Nova_location;
-	nova_datastruct_list_Nova_Array* compiler_tree_node_Nova_Node_Nova_children;
 	nova_datastruct_list_Nova_Array* compiler_tree_node_Nova_Node_Nova_annotations;
 	compiler_tree_node_Nova_Node* compiler_tree_node_Nova_Node_Nova_parent;
 	compiler_tree_node_arrays_Nova_ArrayAccess* compiler_tree_node_Nova_Value_Nova_arrayAccess;

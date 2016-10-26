@@ -27,13 +27,12 @@
 #include <nova/nova_Nova_System.h>
 #include <nova/nova_Nova_Class.h>
 #include <nova/regex/nova_regex_Nova_Pattern.h>
-#include <compiler/tree/node/compiler_tree_node_Nova_Node.h>
 #include <nova/NativeObject.h>
 #include <nova/operators/nova_operators_Nova_Equals.h>
 
 
 
-compiler_tree_node_ValidationResult_Extension_VTable compiler_tree_node_ValidationResult_Extension_VTable_val =
+compiler_tree_node_generics_GenericTypeArgument_Extension_VTable compiler_tree_node_generics_GenericTypeArgument_Extension_VTable_val =
 {
 	{
 		0,
@@ -66,53 +65,42 @@ compiler_tree_node_ValidationResult_Extension_VTable compiler_tree_node_Validati
 };
 
 
-
-
-void compiler_tree_node_Nova_ValidationResult_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData)
+void compiler_tree_node_generics_Nova_GenericTypeArgument_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData)
 {
 	{
 	}
 }
 
-compiler_tree_node_Nova_ValidationResult* compiler_tree_node_Nova_ValidationResult_Nova_construct(compiler_tree_node_Nova_ValidationResult* this, nova_exception_Nova_ExceptionData* exceptionData, compiler_tree_node_Nova_Node* node)
+compiler_tree_node_generics_Nova_GenericTypeArgument* compiler_tree_node_generics_Nova_GenericTypeArgument_Nova_construct(compiler_tree_node_generics_Nova_GenericTypeArgument* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
-	CCLASS_NEW(compiler_tree_node_Nova_ValidationResult, this,);
-	this->vtable = &compiler_tree_node_ValidationResult_Extension_VTable_val;
+	CCLASS_NEW(compiler_tree_node_generics_Nova_GenericTypeArgument, this,);
+	this->vtable = &compiler_tree_node_generics_GenericTypeArgument_Extension_VTable_val;
 	nova_Nova_Object_Nova_super((nova_Nova_Object*)this, exceptionData);
-	compiler_tree_node_Nova_ValidationResult_Nova_super(this, exceptionData);
+	compiler_tree_node_generics_Nova_GenericTypeArgument_Nova_super(this, exceptionData);
 	
 	{
-		compiler_tree_node_Nova_ValidationResult_Nova_this(this, exceptionData, node);
+		compiler_tree_node_generics_Nova_GenericTypeArgument_Nova_this(this, exceptionData);
 	}
 	
 	return this;
 }
 
-void compiler_tree_node_Nova_ValidationResult_Nova_destroy(compiler_tree_node_Nova_ValidationResult** this, nova_exception_Nova_ExceptionData* exceptionData)
+void compiler_tree_node_generics_Nova_GenericTypeArgument_Nova_destroy(compiler_tree_node_generics_Nova_GenericTypeArgument** this, nova_exception_Nova_ExceptionData* exceptionData)
 {
 	if (!*this)
 	{
 		return;
 	}
 	
-	compiler_tree_node_Nova_Node_Nova_destroy(&(*this)->compiler_tree_node_Nova_ValidationResult_Nova_node, exceptionData);
 	
 	NOVA_FREE(*this);
 }
 
-void compiler_tree_node_Nova_ValidationResult_Nova_this(compiler_tree_node_Nova_ValidationResult* this, nova_exception_Nova_ExceptionData* exceptionData, compiler_tree_node_Nova_Node* node)
+void compiler_tree_node_generics_Nova_GenericTypeArgument_Nova_this(compiler_tree_node_generics_Nova_GenericTypeArgument* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
-	this->compiler_tree_node_Nova_ValidationResult_Nova_node = node;
 }
 
-char compiler_tree_node_Nova_ValidationResult_Accessor_Nova_skipValidation(compiler_tree_node_Nova_ValidationResult* this, nova_exception_Nova_ExceptionData* exceptionData)
+void compiler_tree_node_generics_Nova_GenericTypeArgument_Nova_super(compiler_tree_node_generics_Nova_GenericTypeArgument* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
-	return 0;
-}
-
-
-void compiler_tree_node_Nova_ValidationResult_Nova_super(compiler_tree_node_Nova_ValidationResult* this, nova_exception_Nova_ExceptionData* exceptionData)
-{
-	this->compiler_tree_node_Nova_ValidationResult_Nova_node = (compiler_tree_node_Nova_Node*)nova_null;
 }
 

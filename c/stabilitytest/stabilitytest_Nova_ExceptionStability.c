@@ -148,7 +148,7 @@ void stabilitytest_Nova_ExceptionStability_Nova_testException(stabilitytest_Nova
 	l1_Nova_worked = 0;
 	TRY
 	{
-		novaEnv.nova_exception_ExceptionData.addCode(exceptionData, exceptionData, 13);
+		novaEnv.nova_exception_ExceptionData.addCode(exceptionData, exceptionData, 12);
 		
 		{
 			nova_io_Nova_Console_0_static_Nova_write(0, exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("Checking DivideByZeroException... ")));
@@ -178,7 +178,7 @@ void stabilitytest_Nova_ExceptionStability_Nova_testException(stabilitytest_Nova
 				l1_Nova_worked = 1;
 				nova_io_Nova_Console_1_static_Nova_writeLine(0, exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("OK")));
 				nova_io_Nova_Console_0_static_Nova_write(0, exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("Checking StabilityTestException... ")));
-				THROW(13, stabilitytest_Nova_StabilityTestException_Nova_construct(0, exceptionData));
+				THROW(12, stabilitytest_Nova_StabilityTestException_Nova_construct(0, exceptionData));
 			}
 			FINALLY
 			{
@@ -187,7 +187,7 @@ void stabilitytest_Nova_ExceptionStability_Nova_testException(stabilitytest_Nova
 			stabilitytest_Nova_StabilityTest_Nova_fail(this->stabilitytest_Nova_StabilityTestCase_Nova_program, exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("Failed to catch DivideByZeroException")), (intptr_t)nova_null);
 		}
 	}
-	CATCH (13)
+	CATCH (12)
 	{
 		stabilitytest_Nova_StabilityTestException* l7_Nova_e = (stabilitytest_Nova_StabilityTestException*)nova_null;
 		

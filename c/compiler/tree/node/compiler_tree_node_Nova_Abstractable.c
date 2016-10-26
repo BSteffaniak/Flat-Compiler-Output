@@ -56,8 +56,6 @@ compiler_tree_node_Abstractable_Extension_VTable compiler_tree_node_Abstractable
 		0,
 		(nova_Nova_String*(*)(compiler_tree_node_Nova_Abstractable*, nova_exception_Nova_ExceptionData*))compiler_tree_node_Nova_Abstractable_Nova_writeAbstract,
 		0,
-		0,
-		0,
 	},
 	compiler_tree_node_Nova_Abstractable_Nova_writeAbstract,
 };

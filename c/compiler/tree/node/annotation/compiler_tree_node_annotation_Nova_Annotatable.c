@@ -57,8 +57,6 @@ compiler_tree_node_annotation_Annotatable_Extension_VTable compiler_tree_node_an
 		0,
 		0,
 		0,
-		0,
-		0,
 	},
 	compiler_tree_node_annotation_Nova_Annotatable_virtual_Nova_addAnnotation,
 };

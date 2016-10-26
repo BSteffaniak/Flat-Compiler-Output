@@ -36,12 +36,11 @@ typedef struct compiler_tree_node_Nova_NodeList compiler_tree_node_Nova_NodeList
 #include <nova/nova_Nova_System.h>
 #include <nova/nova_Nova_Class.h>
 #include <nova/regex/nova_regex_Nova_Pattern.h>
+#include <compiler/util/compiler_util_Nova_Location.h>
 #include <compiler/tree/node/compiler_tree_node_Nova_Node.h>
-#include <compiler/error/compiler_error_Nova_UnimplementedOperationException.h>
 #include <compiler/tree/node/annotation/compiler_tree_node_annotation_Nova_Annotatable.h>
 #include <compiler/tree/node/annotation/compiler_tree_node_annotation_Nova_Annotation.h>
 #include <compiler/tree/node/exceptionhandling/compiler_tree_node_exceptionhandling_Nova_Try.h>
-#include <compiler/util/compiler_util_Nova_Location.h>
 #include <compiler/tree/node/functions/compiler_tree_node_functions_Nova_NovaFunction.h>
 #include <compiler/tree/node/compiler_tree_node_Nova_NovaClass.h>
 #include <compiler/tree/node/compiler_tree_node_Nova_NovaFile.h>
@@ -78,15 +77,23 @@ CCLASS_CLASS
 	compiler_tree_node_NodeList_Extension_VTable* vtable;
 	nova_Nova_Class* nova_Nova_Object_Nova_class;
 	compiler_util_Nova_Location* compiler_tree_node_Nova_Node_Nova_location;
-	nova_datastruct_list_Nova_Array* compiler_tree_node_Nova_Node_Nova_children;
 	nova_datastruct_list_Nova_Array* compiler_tree_node_Nova_Node_Nova_annotations;
 	compiler_tree_node_Nova_Node* compiler_tree_node_Nova_Node_Nova_parent;
+	nova_datastruct_list_Nova_Array* compiler_tree_node_Nova_NodeList_Nova_children;
 )
 
 void compiler_tree_node_Nova_NodeList_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData);
-compiler_tree_node_Nova_NodeList* compiler_tree_node_Nova_NodeList_Nova_construct(compiler_tree_node_Nova_NodeList* this, nova_exception_Nova_ExceptionData* exceptionData);
+compiler_tree_node_Nova_NodeList* compiler_tree_node_Nova_NodeList_Nova_construct(compiler_tree_node_Nova_NodeList* this, nova_exception_Nova_ExceptionData* exceptionData, compiler_tree_node_Nova_Node* parent, compiler_util_Nova_Location* location);
 void compiler_tree_node_Nova_NodeList_Nova_destroy(compiler_tree_node_Nova_NodeList** this, nova_exception_Nova_ExceptionData* exceptionData);
-void compiler_tree_node_Nova_NodeList_Nova_this(compiler_tree_node_Nova_NodeList* this, nova_exception_Nova_ExceptionData* exceptionData);
+void compiler_tree_node_Nova_NodeList_Nova_this(compiler_tree_node_Nova_NodeList* this, nova_exception_Nova_ExceptionData* exceptionData, compiler_tree_node_Nova_Node* parent, compiler_util_Nova_Location* location);
+void compiler_tree_node_Nova_NodeList_Nova_replace(compiler_tree_node_Nova_NodeList* this, nova_exception_Nova_ExceptionData* exceptionData, compiler_tree_node_Nova_Node* old, compiler_tree_node_Nova_Node* replacement, int detach);
+compiler_tree_node_Nova_Node* compiler_tree_node_Nova_NodeList_Nova_addChild(compiler_tree_node_Nova_NodeList* this, nova_exception_Nova_ExceptionData* exceptionData, compiler_tree_node_Nova_Node* node, int index, int detach);
+char compiler_tree_node_Nova_NodeList_Nova_containsChild(compiler_tree_node_Nova_NodeList* this, nova_exception_Nova_ExceptionData* exceptionData, compiler_tree_node_Nova_Node* child, int recursive);
+nova_datastruct_list_Nova_Array* compiler_tree_node_Nova_NodeList_Nova_inheritChildren(compiler_tree_node_Nova_NodeList* this, nova_exception_Nova_ExceptionData* exceptionData, compiler_tree_node_Nova_NodeList* oldParent, int clone);
+compiler_tree_node_Nova_Node* compiler_tree_node_Nova_NodeList_0_Nova_removeChild(compiler_tree_node_Nova_NodeList* this, nova_exception_Nova_ExceptionData* exceptionData, compiler_tree_node_Nova_Node* node);
+compiler_tree_node_Nova_Node* compiler_tree_node_Nova_NodeList_1_Nova_removeChild(compiler_tree_node_Nova_NodeList* this, nova_exception_Nova_ExceptionData* exceptionData, int index);
+nova_datastruct_list_Nova_Array* compiler_tree_node_Nova_NodeList_Nova_slaughterChildren(compiler_tree_node_Nova_NodeList* this, nova_exception_Nova_ExceptionData* exceptionData);
+char compiler_tree_node_Nova_NodeList_Accessor_Nova_isEmpty(compiler_tree_node_Nova_NodeList* this, nova_exception_Nova_ExceptionData* exceptionData);
 void compiler_tree_node_Nova_NodeList_Nova_super(compiler_tree_node_Nova_NodeList* this, nova_exception_Nova_ExceptionData* exceptionData);
 
 #endif

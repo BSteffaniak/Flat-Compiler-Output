@@ -28,9 +28,8 @@
 #include <nova/nova_Nova_Class.h>
 #include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <compiler/util/compiler_util_Nova_Location.h>
-#include <compiler/tree/node/compiler_tree_node_Nova_Listener.h>
 #include <compiler/tree/node/compiler_tree_node_Nova_Node.h>
-#include <compiler/error/compiler_error_Nova_UnimplementedOperationException.h>
+#include <compiler/tree/node/compiler_tree_node_Nova_NodeList.h>
 #include <compiler/tree/node/annotation/compiler_tree_node_annotation_Nova_Annotatable.h>
 #include <compiler/tree/node/annotation/compiler_tree_node_annotation_Nova_Annotation.h>
 #include <compiler/tree/node/exceptionhandling/compiler_tree_node_exceptionhandling_Nova_Try.h>
@@ -71,14 +70,12 @@ compiler_tree_node_Scope_Extension_VTable compiler_tree_node_Scope_Extension_VTa
 		0,
 		0,
 		(void(*)(compiler_tree_node_annotation_Nova_Annotatable*, nova_exception_Nova_ExceptionData*, compiler_tree_node_annotation_Nova_Annotation*))compiler_tree_node_Nova_Node_Nova_addAnnotation,
-		0,
-		0,
 	},
 	nova_Nova_Object_Nova_equals,
 	nova_Nova_Object_Nova_toString,
 	nova_Nova_Object_Accessor_Nova_hashCodeLong,
 	compiler_tree_node_Nova_Node_Nova_addAnnotation,
-	compiler_tree_node_Nova_Scope_Nova_clone,
+	compiler_tree_node_Nova_Node_Nova_clone,
 	compiler_tree_node_Nova_Node_Accessor_Nova_program,
 	compiler_tree_node_Nova_Node_Accessor_Nova_parentFile,
 	compiler_tree_node_Nova_Node_Accessor_Nova_parentFunction,
@@ -90,7 +87,6 @@ compiler_tree_node_Scope_Extension_VTable compiler_tree_node_Scope_Extension_VTa
 CCLASS_PRIVATE
 (
 	int compiler_tree_node_Nova_Scope_Nova_id;
-	nova_datastruct_list_Nova_Array* compiler_tree_node_Nova_Scope_Nova_listeners;
 	
 )
 void compiler_tree_node_Nova_Scope_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData)
@@ -99,16 +95,17 @@ void compiler_tree_node_Nova_Scope_Nova_init_static(nova_exception_Nova_Exceptio
 	}
 }
 
-compiler_tree_node_Nova_Scope* compiler_tree_node_Nova_Scope_Nova_construct(compiler_tree_node_Nova_Scope* this, nova_exception_Nova_ExceptionData* exceptionData)
+compiler_tree_node_Nova_Scope* compiler_tree_node_Nova_Scope_Nova_construct(compiler_tree_node_Nova_Scope* this, nova_exception_Nova_ExceptionData* exceptionData, compiler_tree_node_Nova_Node* parent, compiler_util_Nova_Location* location)
 {
 	CCLASS_NEW(compiler_tree_node_Nova_Scope, this);
 	this->vtable = &compiler_tree_node_Scope_Extension_VTable_val;
 	nova_Nova_Object_Nova_super((nova_Nova_Object*)this, exceptionData);
 	compiler_tree_node_Nova_Node_Nova_super((compiler_tree_node_Nova_Node*)this, exceptionData);
+	compiler_tree_node_Nova_NodeList_Nova_super((compiler_tree_node_Nova_NodeList*)this, exceptionData);
 	compiler_tree_node_Nova_Scope_Nova_super(this, exceptionData);
 	
 	{
-		compiler_tree_node_Nova_Scope_Nova_this(this, exceptionData);
+		compiler_tree_node_Nova_Scope_Nova_this(this, exceptionData, parent, location);
 	}
 	
 	return this;
@@ -122,27 +119,20 @@ void compiler_tree_node_Nova_Scope_Nova_destroy(compiler_tree_node_Nova_Scope** 
 	}
 	
 	
-	nova_datastruct_list_Nova_Array_Nova_destroy(&(*this)->prv->compiler_tree_node_Nova_Scope_Nova_listeners, exceptionData);
 	NOVA_FREE((*this)->prv);
 	
 	NOVA_FREE(*this);
 }
 
-compiler_tree_node_Nova_Scope* compiler_tree_node_Nova_Scope_Nova_clone(compiler_tree_node_Nova_Scope* this, nova_exception_Nova_ExceptionData* exceptionData, compiler_tree_node_Nova_Node* parent, compiler_util_Nova_Location* location, int cloneChildren)
+void compiler_tree_node_Nova_Scope_Nova_this(compiler_tree_node_Nova_Scope* this, nova_exception_Nova_ExceptionData* exceptionData, compiler_tree_node_Nova_Node* parent, compiler_util_Nova_Location* location)
 {
 	parent = (compiler_tree_node_Nova_Node*)(parent == 0 ? (nova_Nova_Object*)(nova_Nova_Object*)nova_null : (nova_Nova_Object*)parent);
 	location = (compiler_util_Nova_Location*)(location == 0 ? (nova_Nova_Object*)compiler_util_Nova_Location_Nova_INVALID : (nova_Nova_Object*)location);
-	cloneChildren = (int)(cloneChildren == (intptr_t)nova_null ? 1 : cloneChildren);
-	return (compiler_tree_node_Nova_Scope*)(nova_Nova_Object*)nova_null;
-}
-
-void compiler_tree_node_Nova_Scope_Nova_this(compiler_tree_node_Nova_Scope* this, nova_exception_Nova_ExceptionData* exceptionData)
-{
+	compiler_tree_node_Nova_NodeList_Nova_this((compiler_tree_node_Nova_NodeList*)(this), exceptionData, parent, location);
 }
 
 void compiler_tree_node_Nova_Scope_Nova_super(compiler_tree_node_Nova_Scope* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
 	this->prv->compiler_tree_node_Nova_Scope_Nova_id = 0;
-	this->prv->compiler_tree_node_Nova_Scope_Nova_listeners = (nova_datastruct_list_Nova_Array*)nova_null;
 }
 

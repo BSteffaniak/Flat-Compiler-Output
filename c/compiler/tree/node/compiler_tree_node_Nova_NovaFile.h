@@ -45,7 +45,6 @@ typedef struct compiler_tree_node_Nova_NovaFile compiler_tree_node_Nova_NovaFile
 #include <compiler/tree/node/compiler_tree_node_Nova_Node.h>
 #include <compiler/tree/node/compiler_tree_node_Nova_Package.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_ArrayIterator.h>
-#include <compiler/error/compiler_error_Nova_UnimplementedOperationException.h>
 #include <compiler/tree/node/annotation/compiler_tree_node_annotation_Nova_Annotatable.h>
 #include <compiler/tree/node/annotation/compiler_tree_node_annotation_Nova_Annotation.h>
 #include <compiler/tree/node/exceptionhandling/compiler_tree_node_exceptionhandling_Nova_Try.h>
@@ -85,13 +84,12 @@ CCLASS_CLASS
 	compiler_tree_node_NovaFile_Extension_VTable* vtable;
 	nova_Nova_Class* nova_Nova_Object_Nova_class;
 	compiler_util_Nova_Location* compiler_tree_node_Nova_Node_Nova_location;
-	nova_datastruct_list_Nova_Array* compiler_tree_node_Nova_Node_Nova_children;
 	nova_datastruct_list_Nova_Array* compiler_tree_node_Nova_Node_Nova_annotations;
 	compiler_tree_node_Nova_Node* compiler_tree_node_Nova_Node_Nova_parent;
 	nova_Nova_String* compiler_tree_node_Nova_NovaFile_Nova_name;
 	nova_io_Nova_File* compiler_tree_node_Nova_NovaFile_Nova_file;
+	compiler_tree_node_Nova_ImportList* compiler_tree_node_Nova_NovaFile_Nova_importList;
 	compiler_tree_node_Nova_Package* compiler_tree_node_Nova_NovaFile_Nova_packageDeclaration;
-	compiler_tree_node_Nova_ImportList* compiler_tree_node_Nova_NovaFile_Nova_imports;
 	nova_datastruct_list_Nova_Array* compiler_tree_node_Nova_NovaFile_Nova_closures;
 	nova_datastruct_list_Nova_Array* compiler_tree_node_Nova_NovaFile_Nova_contexts;
 )
@@ -104,6 +102,7 @@ void compiler_tree_node_Nova_NovaFile_Nova_this(compiler_tree_node_Nova_NovaFile
 compiler_tree_node_Nova_Import* compiler_tree_node_Nova_NovaFile_Nova_addImport(compiler_tree_node_Nova_NovaFile* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* location);
 char compiler_tree_node_Nova_NovaFile_Nova_containsImport(compiler_tree_node_Nova_NovaFile* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* location, int absoluteLocation, int aliased);
 compiler_tree_node_Nova_NovaFile* compiler_tree_node_Nova_NovaFile_Accessor_Nova_parentFile(compiler_tree_node_Nova_NovaFile* this, nova_exception_Nova_ExceptionData* exceptionData);
+nova_datastruct_list_Nova_Array* compiler_tree_node_Nova_NovaFile_Accessor_Nova_imports(compiler_tree_node_Nova_NovaFile* this, nova_exception_Nova_ExceptionData* exceptionData);
 void compiler_tree_node_Nova_NovaFile_Nova_super(compiler_tree_node_Nova_NovaFile* this, nova_exception_Nova_ExceptionData* exceptionData);
 
 #endif
