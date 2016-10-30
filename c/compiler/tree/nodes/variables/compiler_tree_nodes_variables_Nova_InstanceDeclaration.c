@@ -81,7 +81,7 @@ compiler_tree_nodes_variables_InstanceDeclaration_Extension_VTable compiler_tree
 	compiler_tree_nodes_Nova_Node_Nova_parseChild,
 	compiler_tree_nodes_Nova_Node_Nova_addAnnotation,
 	compiler_tree_nodes_Nova_Node_Nova_clone,
-	compiler_tree_nodes_variables_Nova_VariableDeclaration_Nova_cloneTo,
+	compiler_tree_nodes_variables_Nova_InstanceDeclaration_Nova_cloneTo,
 	compiler_tree_nodes_Nova_Node_Accessor_Nova_program,
 	compiler_tree_nodes_Nova_Node_Accessor_Nova_parentFile,
 	compiler_tree_nodes_Nova_Node_Accessor_Nova_parentFunction,
@@ -91,6 +91,7 @@ compiler_tree_nodes_variables_InstanceDeclaration_Extension_VTable compiler_tree
 	compiler_tree_nodes_variables_Nova_InstanceDeclaration_Nova_parseModifier,
 	compiler_tree_nodes_variables_Nova_InstanceDeclaration_Nova_writeModifiers,
 };
+
 
 
 
@@ -154,7 +155,7 @@ compiler_tree_nodes_variables_Nova_InstanceDeclaration* compiler_tree_nodes_vari
 		compiler_tree_nodes_variables_Nova_InstanceDeclaration* l1_Nova_node = (compiler_tree_nodes_variables_Nova_InstanceDeclaration*)nova_null;
 		
 		l1_Nova_node = compiler_tree_nodes_variables_Nova_InstanceDeclaration_Nova_construct(0, exceptionData, parent, location);
-		return (compiler_tree_nodes_variables_Nova_InstanceDeclaration*)compiler_tree_nodes_variables_Nova_VariableDeclaration_Nova_cloneTo(l1_Nova_declaration, exceptionData, (compiler_tree_nodes_variables_Nova_VariableDeclaration*)(l1_Nova_node));
+		return (compiler_tree_nodes_variables_Nova_InstanceDeclaration*)compiler_tree_nodes_Nova_Node_virtual_Nova_cloneTo((compiler_tree_nodes_Nova_Node*)(l1_Nova_declaration), exceptionData, (compiler_tree_nodes_Nova_Node*)(l1_Nova_node));
 	}
 	return (compiler_tree_nodes_variables_Nova_InstanceDeclaration*)(nova_Nova_Object*)nova_null;
 }
@@ -210,6 +211,20 @@ nova_Nova_String* compiler_tree_nodes_variables_Nova_InstanceDeclaration_Nova_wr
 {
 	return nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)((compiler_tree_nodes_variables_Nova_InstanceDeclaration_Nova_writeVisibility(this, exceptionData))), exceptionData, nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)(nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)(" "))), exceptionData, nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)((compiler_tree_nodes_variables_Nova_InstanceDeclaration_Nova_writeStatic(this, exceptionData))), exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)(" ")))));
 }
+
+compiler_tree_nodes_variables_Nova_InstanceDeclaration* compiler_tree_nodes_variables_Nova_InstanceDeclaration_Nova_cloneTo(compiler_tree_nodes_variables_Nova_InstanceDeclaration* this, nova_exception_Nova_ExceptionData* exceptionData, compiler_tree_nodes_variables_Nova_InstanceDeclaration* other)
+{
+	compiler_tree_nodes_variables_Nova_VariableDeclaration_Nova_cloneTo(((compiler_tree_nodes_variables_Nova_VariableDeclaration*)this), exceptionData, (compiler_tree_nodes_variables_Nova_VariableDeclaration*)(other));
+	other->compiler_tree_nodes_variables_Nova_InstanceDeclaration_Nova_isStatic = this->compiler_tree_nodes_variables_Nova_InstanceDeclaration_Nova_isStatic;
+	other->compiler_tree_nodes_variables_Nova_InstanceDeclaration_Nova_visibility = this->compiler_tree_nodes_variables_Nova_InstanceDeclaration_Nova_visibility;
+	return other;
+}
+
+char compiler_tree_nodes_variables_Nova_InstanceDeclaration_Accessor_Nova_isInstance(compiler_tree_nodes_variables_Nova_InstanceDeclaration* this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+	return !this->compiler_tree_nodes_variables_Nova_InstanceDeclaration_Nova_isStatic;
+}
+
 
 char compiler_tree_nodes_variables_Nova_InstanceDeclaration_Accessor_Nova_isPublic(compiler_tree_nodes_variables_Nova_InstanceDeclaration* this, nova_exception_Nova_ExceptionData* exceptionData)
 {

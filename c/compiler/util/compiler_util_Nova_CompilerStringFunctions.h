@@ -55,6 +55,7 @@ extern compiler_util_CompilerStringFunctions_Extension_VTable compiler_util_Comp
 
 
 void compiler_util_Nova_CompilerStringFunctions_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData);
+char compiler_util_Nova_CompilerStringFunctions_Nova_containsAllWhitespaceAfter(nova_Nova_String* this, nova_exception_Nova_ExceptionData* exceptionData, int index, int direction);
 char compiler_util_Nova_CompilerStringFunctions_Nova_containsWord(nova_Nova_String* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* search, int start);
 int compiler_util_Nova_CompilerStringFunctions_Nova_nextWordIndex(nova_Nova_String* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* search, int start, int defaultReturnValue);
 nova_Nova_String* compiler_util_Nova_CompilerStringFunctions_Nova_nextWord(nova_Nova_String* this, nova_exception_Nova_ExceptionData* exceptionData, int start, int direction, nova_Nova_String* defaultReturnValue);

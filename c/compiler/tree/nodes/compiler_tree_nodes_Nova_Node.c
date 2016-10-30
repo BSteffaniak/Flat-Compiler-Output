@@ -322,7 +322,7 @@ char compiler_tree_nodes_Nova_Node_Accessor_Nova_isUserMade(compiler_tree_nodes_
 
 char compiler_tree_nodes_Nova_Node_Accessor_Nova_isWithinStaticContext(compiler_tree_nodes_Nova_Node* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
-	return (nova_Nova_Object*)compiler_tree_nodes_Nova_Node_virtual_Accessor_Nova_parentFunction((compiler_tree_nodes_Nova_Node*)(this), exceptionData) == (nova_Nova_Object*)(compiler_tree_nodes_functions_Nova_NovaFunction*)nova_null || !compiler_tree_nodes_functions_Nova_NovaFunction_Accessor_Nova_isInstance(compiler_tree_nodes_Nova_Node_virtual_Accessor_Nova_parentFunction((compiler_tree_nodes_Nova_Node*)(this), exceptionData), exceptionData);
+	return (nova_Nova_Object*)compiler_tree_nodes_Nova_Node_virtual_Accessor_Nova_parentFunction((compiler_tree_nodes_Nova_Node*)(this), exceptionData) == (nova_Nova_Object*)(compiler_tree_nodes_functions_Nova_NovaFunction*)nova_null || !compiler_tree_nodes_variables_Nova_InstanceDeclaration_Accessor_Nova_isInstance((compiler_tree_nodes_variables_Nova_InstanceDeclaration*)(compiler_tree_nodes_Nova_Node_virtual_Accessor_Nova_parentFunction((compiler_tree_nodes_Nova_Node*)(this), exceptionData)), exceptionData);
 }
 
 

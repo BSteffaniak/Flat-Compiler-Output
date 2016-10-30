@@ -148,7 +148,7 @@ compiler_tree_nodes_variables_Nova_LocalDeclaration* compiler_tree_nodes_variabl
 		compiler_tree_nodes_variables_Nova_LocalDeclaration* l1_Nova_node = (compiler_tree_nodes_variables_Nova_LocalDeclaration*)nova_null;
 		
 		l1_Nova_node = compiler_tree_nodes_variables_Nova_LocalDeclaration_Nova_construct(0, exceptionData, parent, location);
-		return (compiler_tree_nodes_variables_Nova_LocalDeclaration*)compiler_tree_nodes_variables_Nova_VariableDeclaration_Nova_cloneTo(l1_Nova_declaration, exceptionData, (compiler_tree_nodes_variables_Nova_VariableDeclaration*)(l1_Nova_node));
+		return (compiler_tree_nodes_variables_Nova_LocalDeclaration*)compiler_tree_nodes_Nova_Node_virtual_Nova_cloneTo((compiler_tree_nodes_Nova_Node*)(l1_Nova_declaration), exceptionData, (compiler_tree_nodes_Nova_Node*)(l1_Nova_node));
 	}
 	return (compiler_tree_nodes_variables_Nova_LocalDeclaration*)(nova_Nova_Object*)nova_null;
 }

@@ -82,7 +82,7 @@ compiler_tree_nodes_variables_FieldDeclaration_Extension_VTable compiler_tree_no
 	compiler_tree_nodes_Nova_Node_Nova_parseChild,
 	compiler_tree_nodes_Nova_Node_Nova_addAnnotation,
 	compiler_tree_nodes_Nova_Node_Nova_clone,
-	compiler_tree_nodes_variables_Nova_VariableDeclaration_Nova_cloneTo,
+	compiler_tree_nodes_variables_Nova_InstanceDeclaration_Nova_cloneTo,
 	compiler_tree_nodes_Nova_Node_Accessor_Nova_program,
 	compiler_tree_nodes_Nova_Node_Accessor_Nova_parentFile,
 	compiler_tree_nodes_Nova_Node_Accessor_Nova_parentFunction,
@@ -167,7 +167,7 @@ compiler_tree_nodes_variables_Nova_FieldDeclaration* compiler_tree_nodes_variabl
 		
 		l2_Nova_node = compiler_tree_nodes_variables_Nova_FieldDeclaration_Nova_construct(0, exceptionData, parent, location);
 		l2_Nova_node->prv->compiler_tree_nodes_variables_Nova_FieldDeclaration_Nova_initializationValue = l1_Nova_initializationValue;
-		return (compiler_tree_nodes_variables_Nova_FieldDeclaration*)compiler_tree_nodes_variables_Nova_VariableDeclaration_Nova_cloneTo((compiler_tree_nodes_variables_Nova_VariableDeclaration*)(l1_Nova_declaration), exceptionData, (compiler_tree_nodes_variables_Nova_VariableDeclaration*)(l2_Nova_node));
+		return (compiler_tree_nodes_variables_Nova_FieldDeclaration*)compiler_tree_nodes_Nova_Node_virtual_Nova_cloneTo((compiler_tree_nodes_Nova_Node*)(l1_Nova_declaration), exceptionData, (compiler_tree_nodes_Nova_Node*)(l2_Nova_node));
 	}
 	return (compiler_tree_nodes_variables_Nova_FieldDeclaration*)(nova_Nova_Object*)nova_null;
 }
