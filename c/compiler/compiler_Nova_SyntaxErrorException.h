@@ -36,8 +36,8 @@ typedef struct compiler_Nova_SyntaxErrorException compiler_Nova_SyntaxErrorExcep
 #include <nova/nova_Nova_System.h>
 #include <nova/nova_Nova_Class.h>
 #include <nova/regex/nova_regex_Nova_Pattern.h>
-#include <compiler/tree/node/compiler_tree_node_Nova_Node.h>
-#include <compiler/tree/node/compiler_tree_node_Nova_Program.h>
+#include <compiler/tree/nodes/compiler_tree_nodes_Nova_Node.h>
+#include <compiler/tree/nodes/compiler_tree_nodes_Nova_Program.h>
 #include <nova/NativeObject.h>
 #include <nova/operators/nova_operators_Nova_Equals.h>
 
@@ -65,10 +65,10 @@ CCLASS_CLASS
 
 void compiler_Nova_SyntaxErrorException_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData);
 compiler_Nova_SyntaxErrorException* compiler_Nova_SyntaxErrorException_0_Nova_construct(compiler_Nova_SyntaxErrorException* this, nova_exception_Nova_ExceptionData* exceptionData);
-compiler_Nova_SyntaxErrorException* compiler_Nova_SyntaxErrorException_1_Nova_construct(compiler_Nova_SyntaxErrorException* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* message, compiler_tree_node_Nova_Node* node, compiler_tree_node_Nova_Program* program);
+compiler_Nova_SyntaxErrorException* compiler_Nova_SyntaxErrorException_1_Nova_construct(compiler_Nova_SyntaxErrorException* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* message, compiler_tree_nodes_Nova_Node* node, compiler_tree_nodes_Nova_Program* program);
 void compiler_Nova_SyntaxErrorException_Nova_destroy(compiler_Nova_SyntaxErrorException** this, nova_exception_Nova_ExceptionData* exceptionData);
 void compiler_Nova_SyntaxErrorException_Nova_this(compiler_Nova_SyntaxErrorException* this, nova_exception_Nova_ExceptionData* exceptionData);
-void compiler_Nova_SyntaxErrorException_0_Nova_this(compiler_Nova_SyntaxErrorException* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* message, compiler_tree_node_Nova_Node* node, compiler_tree_node_Nova_Program* program);
+void compiler_Nova_SyntaxErrorException_0_Nova_this(compiler_Nova_SyntaxErrorException* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* message, compiler_tree_nodes_Nova_Node* node, compiler_tree_nodes_Nova_Program* program);
 void compiler_Nova_SyntaxErrorException_Nova_super(compiler_Nova_SyntaxErrorException* this, nova_exception_Nova_ExceptionData* exceptionData);
 
 #endif

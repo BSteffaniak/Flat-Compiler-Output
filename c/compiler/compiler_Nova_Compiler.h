@@ -36,11 +36,16 @@ typedef struct compiler_Nova_Compiler compiler_Nova_Compiler;
 #include <nova/nova_Nova_System.h>
 #include <nova/nova_Nova_Class.h>
 #include <nova/regex/nova_regex_Nova_Pattern.h>
+#include <nova/io/nova_io_Nova_File.h>
+#include <nova/datastruct/list/nova_datastruct_list_Nova_Stack.h>
 #include <compiler/util/compiler_util_Nova_FileUtils.h>
-#include <compiler/tree/node/compiler_tree_node_Nova_NovaClass.h>
-#include <compiler/tree/node/compiler_tree_node_Nova_Program.h>
+#include <compiler/tree/nodes/compiler_tree_nodes_Nova_NovaClass.h>
+#include <compiler/tree/nodes/compiler_tree_nodes_Nova_NovaFile.h>
+#include <compiler/tree/nodes/compiler_tree_nodes_Nova_Node.h>
+#include <compiler/tree/nodes/compiler_tree_nodes_Nova_Program.h>
 #include <compiler/tree/compiler_tree_Nova_StatementIterator.h>
 #include <compiler/compiler_Nova_SyntaxErrorException.h>
+#include <compiler/compiler_Nova_SyntaxMessage.h>
 #include <nova/NativeObject.h>
 #include <nova/operators/nova_operators_Nova_Equals.h>
 

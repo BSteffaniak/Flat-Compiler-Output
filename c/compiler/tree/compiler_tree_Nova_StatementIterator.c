@@ -65,17 +65,21 @@ compiler_tree_StatementIterator_Extension_VTable compiler_tree_StatementIterator
 	nova_Nova_Object_Nova_toString,
 	nova_Nova_Object_Accessor_Nova_hashCodeLong,
 	compiler_tree_Nova_StatementIterator_Nova_reset,
-	compiler_tree_Nova_StatementIterator_Accessor_Nova_next,
 	compiler_tree_Nova_StatementIterator_Accessor_Nova_hasNext,
+	compiler_tree_Nova_StatementIterator_Accessor_Nova_next,
 };
 
 
 
+void compiler_tree_Nova_StatementIterator_Nova_updateScopeProperties(compiler_tree_Nova_StatementIterator* this, nova_exception_Nova_ExceptionData* exceptionData);
+nova_datastruct_list_Nova_CharArray* generated10(compiler_tree_Nova_StatementIterator* this, nova_exception_Nova_ExceptionData* exceptionData);
 
 
+nova_datastruct_list_Nova_CharArray* compiler_tree_Nova_StatementIterator_Nova_NON_STATEMENT_CHARS;
 void compiler_tree_Nova_StatementIterator_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData)
 {
 	{
+		compiler_tree_Nova_StatementIterator_Nova_NON_STATEMENT_CHARS = generated10(0, exceptionData);
 	}
 }
 
@@ -103,8 +107,36 @@ void compiler_tree_Nova_StatementIterator_Nova_destroy(compiler_tree_Nova_Statem
 	nova_Nova_String_Nova_destroy(&(*this)->compiler_tree_Nova_StatementIterator_Nova_source, exceptionData);
 	
 	
+	
+	
+	
 	NOVA_FREE(*this);
 }
+
+void compiler_tree_Nova_StatementIterator_Nova_updateScopeProperties(compiler_tree_Nova_StatementIterator* this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+	char l1_Nova_nextChar = 0;
+	
+	l1_Nova_nextChar = compiler_util_Nova_CompilerStringFunctions_Nova_nextNonWhitespaceChar(this->compiler_tree_Nova_StatementIterator_Nova_source, exceptionData, this->compiler_tree_Nova_StatementIterator_Nova_position, (intptr_t)nova_null);
+	this->compiler_tree_Nova_StatementIterator_Nova_beginsScope = this->compiler_tree_Nova_StatementIterator_Nova_position < this->compiler_tree_Nova_StatementIterator_Nova_source->nova_Nova_String_Nova_count && l1_Nova_nextChar == '{';
+	this->compiler_tree_Nova_StatementIterator_Nova_endsScope = this->compiler_tree_Nova_StatementIterator_Nova_position < this->compiler_tree_Nova_StatementIterator_Nova_source->nova_Nova_String_Nova_count && l1_Nova_nextChar == '}';
+	this->compiler_tree_Nova_StatementIterator_Nova_scopesEnded = (int)(0);
+	if (this->compiler_tree_Nova_StatementIterator_Nova_endsScope)
+	{
+		int l1_Nova_current = 0;
+		
+		l1_Nova_current = compiler_util_Nova_CompilerStringFunctions_Nova_nextNonWhitespaceIndex(this->compiler_tree_Nova_StatementIterator_Nova_source, exceptionData, this->compiler_tree_Nova_StatementIterator_Nova_position, (intptr_t)nova_null, (intptr_t)nova_null);
+		while (l1_Nova_current > 0 && nova_Nova_String_Nova_get(this->compiler_tree_Nova_StatementIterator_Nova_source, exceptionData, l1_Nova_current) == '}')
+	{
+		this->compiler_tree_Nova_StatementIterator_Nova_scopesEnded++;
+		l1_Nova_current = compiler_util_Nova_CompilerStringFunctions_Nova_nextNonWhitespaceIndex(this->compiler_tree_Nova_StatementIterator_Nova_source, exceptionData, l1_Nova_current + 1, (intptr_t)nova_null, (intptr_t)nova_null);
+	}
+	this->compiler_tree_Nova_StatementIterator_Nova_position = (int)(l1_Nova_current < 0 ? this->compiler_tree_Nova_StatementIterator_Nova_source->nova_Nova_String_Nova_count : l1_Nova_current);
+}
+else
+{
+	this->compiler_tree_Nova_StatementIterator_Nova_position++;
+}}
 
 void compiler_tree_Nova_StatementIterator_Nova_this(compiler_tree_Nova_StatementIterator* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* source)
 {
@@ -118,31 +150,63 @@ compiler_tree_Nova_StatementIterator* compiler_tree_Nova_StatementIterator_Nova_
 	return this;
 }
 
+nova_datastruct_list_Nova_CharArray* generated10(compiler_tree_Nova_StatementIterator* this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+	char* l1_Nova_temp = (char*)nova_null;
+	
+	l1_Nova_temp = (char*)NOVA_MALLOC(sizeof(nova_primitive_number_Nova_Char) * 5);
+	l1_Nova_temp[0] = ' ';
+	l1_Nova_temp[1] = '\n';
+	l1_Nova_temp[2] = '\t';
+	l1_Nova_temp[3] = '\r';
+l1_Nova_temp[4] = '}';
+return nova_datastruct_list_Nova_CharArray_2_Nova_construct(0, exceptionData, l1_Nova_temp, 5);}
+
+char compiler_tree_Nova_StatementIterator_Accessor_Nova_hasNext(compiler_tree_Nova_StatementIterator* this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+	if (this->compiler_tree_Nova_StatementIterator_Nova_source->nova_Nova_String_Nova_count > this->compiler_tree_Nova_StatementIterator_Nova_position)
+	{
+		int l4_Nova_i = 0;
+		
+		l4_Nova_i = (int)this->compiler_tree_Nova_StatementIterator_Nova_position;
+		for (; l4_Nova_i < (int)this->compiler_tree_Nova_StatementIterator_Nova_source->nova_Nova_String_Nova_count; l4_Nova_i++)
+		{
+			if (!nova_datastruct_list_Nova_CharArray_Nova_contains(compiler_tree_Nova_StatementIterator_Nova_NON_STATEMENT_CHARS, exceptionData, nova_Nova_String_Nova_get(this->compiler_tree_Nova_StatementIterator_Nova_source, exceptionData, l4_Nova_i)))
+			{
+				return 1;
+			}
+		}
+	}
+	return 0;
+}
+
+
 nova_Nova_String* compiler_tree_Nova_StatementIterator_Accessor_Nova_next(compiler_tree_Nova_StatementIterator* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
 	if (compiler_tree_Nova_StatementIterator_Accessor_Nova_hasNext(this, exceptionData))
 	{
 		int l2_Nova_prev = 0;
+		int l2_Nova_end = 0;
 		
 		l2_Nova_prev = this->compiler_tree_Nova_StatementIterator_Nova_position;
-		this->compiler_tree_Nova_StatementIterator_Nova_position = compiler_util_Nova_CompilerStringFunctions_Nova_calculateStatementEnd(this->compiler_tree_Nova_StatementIterator_Nova_source, exceptionData, this->compiler_tree_Nova_StatementIterator_Nova_position + 1, this->compiler_tree_Nova_StatementIterator_Nova_position + 1);
+		this->compiler_tree_Nova_StatementIterator_Nova_position = compiler_util_Nova_CompilerStringFunctions_Nova_nextNonWhitespaceIndex(this->compiler_tree_Nova_StatementIterator_Nova_source, exceptionData, this->compiler_tree_Nova_StatementIterator_Nova_position, (intptr_t)nova_null, (intptr_t)nova_null);
+		this->compiler_tree_Nova_StatementIterator_Nova_position = compiler_util_Nova_CompilerStringFunctions_Nova_calculateStatementEnd(this->compiler_tree_Nova_StatementIterator_Nova_source, exceptionData, this->compiler_tree_Nova_StatementIterator_Nova_position, (intptr_t)nova_null);
 		this->compiler_tree_Nova_StatementIterator_Nova_position = (int)(this->compiler_tree_Nova_StatementIterator_Nova_position < 0 ? this->compiler_tree_Nova_StatementIterator_Nova_source->nova_Nova_String_Nova_count : this->compiler_tree_Nova_StatementIterator_Nova_position);
-		return nova_Nova_String_Nova_trim(nova_Nova_String_Nova_substring(this->compiler_tree_Nova_StatementIterator_Nova_source, exceptionData, l2_Nova_prev, this->compiler_tree_Nova_StatementIterator_Nova_position), exceptionData, (intptr_t)nova_null, (intptr_t)nova_null);
+		l2_Nova_end = this->compiler_tree_Nova_StatementIterator_Nova_position;
+		compiler_tree_Nova_StatementIterator_Nova_updateScopeProperties(this, exceptionData);
+		return nova_Nova_String_Nova_trim(nova_Nova_String_Nova_substring(this->compiler_tree_Nova_StatementIterator_Nova_source, exceptionData, l2_Nova_prev, l2_Nova_end), exceptionData, (intptr_t)nova_null, (intptr_t)nova_null);
 	}
 	THROW(3, nova_datastruct_list_Nova_NoSuchElementException_Nova_construct(0, exceptionData, 0));
 	return (nova_Nova_String*)(nova_Nova_Object*)nova_null;
 }
 
 
-char compiler_tree_Nova_StatementIterator_Accessor_Nova_hasNext(compiler_tree_Nova_StatementIterator* this, nova_exception_Nova_ExceptionData* exceptionData)
-{
-	return this->compiler_tree_Nova_StatementIterator_Nova_source->nova_Nova_String_Nova_count > this->compiler_tree_Nova_StatementIterator_Nova_position;
-}
-
-
 void compiler_tree_Nova_StatementIterator_Nova_super(compiler_tree_Nova_StatementIterator* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
 	this->compiler_tree_Nova_StatementIterator_Nova_source = (nova_Nova_String*)nova_null;
+	this->compiler_tree_Nova_StatementIterator_Nova_beginsScope = 0;
+	this->compiler_tree_Nova_StatementIterator_Nova_endsScope = 0;
+	this->compiler_tree_Nova_StatementIterator_Nova_scopesEnded = 0;
 	this->compiler_tree_Nova_StatementIterator_Nova_position = 0;
 }
 

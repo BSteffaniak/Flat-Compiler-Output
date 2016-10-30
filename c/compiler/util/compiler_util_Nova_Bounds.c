@@ -141,7 +141,7 @@ compiler_util_Nova_Bounds* compiler_util_Nova_Bounds_Nova_invalidate(compiler_ut
 
 char compiler_util_Nova_Bounds_Nova_equals(compiler_util_Nova_Bounds* this, nova_exception_Nova_ExceptionData* exceptionData, compiler_util_Nova_Bounds* bounds)
 {
-	return bounds != (compiler_util_Nova_Bounds*)nova_null && bounds->compiler_util_Nova_Bounds_Nova_start == this->compiler_util_Nova_Bounds_Nova_start && bounds->compiler_util_Nova_Bounds_Nova_end == this->compiler_util_Nova_Bounds_Nova_end;
+	return (nova_Nova_Object*)bounds != (nova_Nova_Object*)(compiler_util_Nova_Bounds*)nova_null && bounds->compiler_util_Nova_Bounds_Nova_start == this->compiler_util_Nova_Bounds_Nova_start && bounds->compiler_util_Nova_Bounds_Nova_end == this->compiler_util_Nova_Bounds_Nova_end;
 }
 
 nova_Nova_String* compiler_util_Nova_Bounds_Nova_toString(compiler_util_Nova_Bounds* this, nova_exception_Nova_ExceptionData* exceptionData)

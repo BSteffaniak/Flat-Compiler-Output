@@ -72,10 +72,12 @@ compiler_tree_node_Program_Extension_VTable compiler_tree_node_Program_Extension
 		(void(*)(compiler_tree_node_annotation_Nova_Annotatable*, nova_exception_Nova_ExceptionData*, compiler_tree_node_annotation_Nova_Annotation*))compiler_tree_node_Nova_Node_Nova_addAnnotation,
 	},
 	nova_Nova_Object_Nova_equals,
-	nova_Nova_Object_Nova_toString,
+	compiler_tree_node_Nova_Program_Nova_toString,
 	nova_Nova_Object_Accessor_Nova_hashCodeLong,
+	compiler_tree_node_Nova_Node_Nova_parseChild,
 	compiler_tree_node_Nova_Node_Nova_addAnnotation,
 	compiler_tree_node_Nova_Node_Nova_clone,
+	compiler_tree_node_Nova_Node_Nova_cloneTo,
 	compiler_tree_node_Nova_Program_Accessor_Nova_program,
 	compiler_tree_node_Nova_Node_Accessor_Nova_parentFile,
 	compiler_tree_node_Nova_Node_Accessor_Nova_parentFunction,
@@ -126,6 +128,11 @@ void compiler_tree_node_Nova_Program_Nova_this(compiler_tree_node_Nova_Program* 
 
 compiler_tree_node_Nova_NovaClass* compiler_tree_node_Nova_Program_Nova_getClassDeclaration(compiler_tree_node_Nova_Program* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* location)
 {
+}
+
+nova_Nova_String* compiler_tree_node_Nova_Program_Nova_toString(compiler_tree_node_Nova_Program* this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+	return nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("Program"));
 }
 
 compiler_tree_node_Nova_Program* compiler_tree_node_Nova_Program_Accessor_Nova_program(compiler_tree_node_Nova_Program* this, nova_exception_Nova_ExceptionData* exceptionData)

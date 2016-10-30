@@ -76,16 +76,18 @@ compiler_tree_node_variables_InstanceDeclaration_Extension_VTable compiler_tree_
 		(void(*)(compiler_tree_node_annotation_Nova_Annotatable*, nova_exception_Nova_ExceptionData*, compiler_tree_node_annotation_Nova_Annotation*))compiler_tree_node_Nova_Node_Nova_addAnnotation,
 	},
 	nova_Nova_Object_Nova_equals,
-	nova_Nova_Object_Nova_toString,
+	compiler_tree_node_variables_Nova_VariableDeclaration_Nova_toString,
 	nova_Nova_Object_Accessor_Nova_hashCodeLong,
+	compiler_tree_node_Nova_Node_Nova_parseChild,
 	compiler_tree_node_Nova_Node_Nova_addAnnotation,
 	compiler_tree_node_Nova_Node_Nova_clone,
+	compiler_tree_node_variables_Nova_VariableDeclaration_Nova_cloneTo,
 	compiler_tree_node_Nova_Node_Accessor_Nova_program,
 	compiler_tree_node_Nova_Node_Accessor_Nova_parentFile,
 	compiler_tree_node_Nova_Node_Accessor_Nova_parentFunction,
 	compiler_tree_node_Nova_Node_Accessor_Nova_parentTry,
 	compiler_tree_node_Nova_Node_Accessor_Nova_parentClass,
-	compiler_tree_node_variables_Nova_InstanceDeclaration_static_Nova_tryParse,
+	compiler_tree_node_variables_Nova_InstanceDeclaration_static_Nova_parse,
 	compiler_tree_node_variables_Nova_InstanceDeclaration_Nova_parseModifier,
 	compiler_tree_node_variables_Nova_InstanceDeclaration_Nova_writeModifiers,
 };
@@ -139,17 +141,20 @@ void compiler_tree_node_variables_Nova_InstanceDeclaration_Nova_this(compiler_tr
 	compiler_tree_node_variables_Nova_VariableDeclaration_Nova_this((compiler_tree_node_variables_Nova_VariableDeclaration*)(this), exceptionData, parent, location);
 }
 
-compiler_tree_node_variables_Nova_InstanceDeclaration* compiler_tree_node_variables_Nova_InstanceDeclaration_static_Nova_tryParse(compiler_tree_node_variables_Nova_InstanceDeclaration* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* input, compiler_tree_node_Nova_Node* parent, compiler_util_Nova_Location* location, int require)
+compiler_tree_node_variables_Nova_InstanceDeclaration* compiler_tree_node_variables_Nova_InstanceDeclaration_static_Nova_parse(compiler_tree_node_variables_Nova_InstanceDeclaration* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* input, compiler_tree_node_Nova_Node* parent, compiler_util_Nova_Location* location, int require)
 {
+	compiler_tree_node_variables_Nova_VariableDeclaration* l1_Nova_declaration = (compiler_tree_node_variables_Nova_VariableDeclaration*)nova_null;
+	
 	parent = (compiler_tree_node_Nova_Node*)(parent == 0 ? (nova_Nova_Object*)(nova_Nova_Object*)nova_null : (nova_Nova_Object*)parent);
 	location = (compiler_util_Nova_Location*)(location == 0 ? (nova_Nova_Object*)compiler_util_Nova_Location_Nova_INVALID : (nova_Nova_Object*)location);
 	require = (int)(require == (intptr_t)nova_null ? 1 : require);
-	if (1)
+	l1_Nova_declaration = (compiler_tree_node_variables_Nova_VariableDeclaration*)(compiler_tree_node_variables_Nova_VariableDeclaration_static_Nova_parse(0, exceptionData, input, parent, location, require));
+	if (l1_Nova_declaration != (compiler_tree_node_variables_Nova_VariableDeclaration*)nova_null)
 	{
 		compiler_tree_node_variables_Nova_InstanceDeclaration* l1_Nova_node = (compiler_tree_node_variables_Nova_InstanceDeclaration*)nova_null;
 		
 		l1_Nova_node = compiler_tree_node_variables_Nova_InstanceDeclaration_Nova_construct(0, exceptionData, parent, location);
-		return l1_Nova_node;
+		return (compiler_tree_node_variables_Nova_InstanceDeclaration*)compiler_tree_node_variables_Nova_VariableDeclaration_Nova_cloneTo(l1_Nova_declaration, exceptionData, (compiler_tree_node_variables_Nova_VariableDeclaration*)(l1_Nova_node));
 	}
 	return (compiler_tree_node_variables_Nova_InstanceDeclaration*)(nova_Nova_Object*)nova_null;
 }
@@ -230,10 +235,5 @@ void compiler_tree_node_variables_Nova_InstanceDeclaration_Nova_super(compiler_t
 	this->compiler_tree_node_variables_Nova_InstanceDeclaration_Nova_visibility = (nova_Nova_String*)nova_null;
 	this->compiler_tree_node_variables_Nova_InstanceDeclaration_Nova_isStatic = 0;
 	this->compiler_tree_node_variables_Nova_InstanceDeclaration_Nova_visibility = nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("private"));
-}
-
-nova_Nova_String* compiler_tree_node_variables_Nova_InstanceDeclaration_virtual_Nova_writeModifiers(compiler_tree_node_variables_Nova_InstanceDeclaration* this, nova_exception_Nova_ExceptionData* exceptionData)
-{
-	return this->vtable->compiler_tree_node_variables_Nova_InstanceDeclaration_virtual_Nova_writeModifiers((compiler_tree_node_variables_Nova_InstanceDeclaration*)(this), exceptionData);
 }
 

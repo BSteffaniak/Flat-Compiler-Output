@@ -104,7 +104,7 @@ nova_Nova_String* compiler_util_Nova_FileUtils_static_Nova_formatPath(compiler_u
 	if (compiler_util_Nova_OS_Accessor_static_Nova_isWindows(0, exceptionData))
 	{
 		path = compiler_util_Nova_CompilerStringFunctions_Nova_removeSurroundingQuotes(path, exceptionData);
-		return nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)(nova_primitive_number_Nova_Char_static_Nova_toString(0, exceptionData, '"')), exceptionData, nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)(path), exceptionData, nova_primitive_number_Nova_Char_static_Nova_toString(0, exceptionData, '"')));
+		return nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)(nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("\""))), exceptionData, nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)((path)), exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("\""))));
 	}
 	else
 	{

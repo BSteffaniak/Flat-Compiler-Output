@@ -28,8 +28,8 @@
 #include <nova/nova_Nova_Class.h>
 #include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <compiler/error/compiler_error_Nova_UnimplementedOperationException.h>
-#include <compiler/tree/node/operations/compiler_tree_node_operations_Nova_UnaryOperation.h>
-#include <compiler/tree/node/operations/compiler_tree_node_operations_Nova_Operator.h>
+#include <compiler/tree/nodes/operations/compiler_tree_nodes_operations_Nova_UnaryOperation.h>
+#include <compiler/tree/nodes/operations/compiler_tree_nodes_operations_Nova_Operator.h>
 #include <compiler/tree/compiler_tree_Nova_StatementIterator.h>
 #include <compiler/util/compiler_util_Nova_Bounds.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_CharArrayIterator.h>
@@ -48,8 +48,8 @@ typedef struct
 
 
 char compiler_util_Nova_CompilerStringFunctions_static_Nova_validBounds(compiler_util_Nova_CompilerStringFunctions* this, nova_exception_Nova_ExceptionData* exceptionData, compiler_util_Nova_Bounds* bounds, int stopIndex, int direction);
-char compiler_util_Nova_CompilerStringFunctions_Nova_testLambda18(nova_Nova_String* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* _1, Context1* context);
-int compiler_util_Nova_CompilerStringFunctions_Nova_testLambda19(nova_Nova_String* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* str, char c, int i, int dir, Context2* context);
+char compiler_util_Nova_CompilerStringFunctions_Nova_testLambda20(nova_Nova_String* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* _1, Context1* context);
+int compiler_util_Nova_CompilerStringFunctions_Nova_testLambda21(nova_Nova_String* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* str, char c, int i, int dir, Context2* context);
 
 
 nova_datastruct_list_Nova_CharArray* compiler_util_Nova_CompilerStringFunctions_Nova_WHITESPACE;
@@ -82,42 +82,85 @@ int compiler_util_Nova_CompilerStringFunctions_Nova_nextWordIndex(nova_Nova_Stri
 	
 	start = (int)(start == (intptr_t)nova_null ? 0 : start);
 	defaultReturnValue = (int)(defaultReturnValue == (intptr_t)nova_null ? -1 : defaultReturnValue);
-	l1_Nova_index = nova_Nova_String_1_Nova_indexOf(this, exceptionData, search, start, (intptr_t)nova_null, (intptr_t)nova_null);
+	l1_Nova_index = nova_Nova_String_2_Nova_indexOf(this, exceptionData, search, start, (intptr_t)nova_null, (intptr_t)nova_null);
 	while (l1_Nova_index >= 0)
 	{
 		if ((l1_Nova_index == 0 || nova_datastruct_list_Nova_CharArray_Nova_contains(compiler_util_Nova_CompilerStringFunctions_Nova_WHITESPACE, exceptionData, (char)(intptr_t)(nova_datastruct_list_Nova_CharArray_Nova_get((nova_datastruct_list_Nova_CharArray*)(this->nova_Nova_String_Nova_chars), exceptionData, l1_Nova_index - 1)))) && (l1_Nova_index + search->nova_Nova_String_Nova_count >= this->nova_Nova_String_Nova_count || nova_datastruct_list_Nova_CharArray_Nova_contains(compiler_util_Nova_CompilerStringFunctions_Nova_WHITESPACE, exceptionData, (char)(intptr_t)(nova_datastruct_list_Nova_CharArray_Nova_get((nova_datastruct_list_Nova_CharArray*)(this->nova_Nova_String_Nova_chars), exceptionData, l1_Nova_index + search->nova_Nova_String_Nova_count)))))
 		{
 			return l1_Nova_index;
 		}
-		l1_Nova_index = nova_Nova_String_1_Nova_indexOf(this, exceptionData, search, l1_Nova_index + search->nova_Nova_String_Nova_count + 1, (intptr_t)nova_null, (intptr_t)nova_null);
+		l1_Nova_index = nova_Nova_String_2_Nova_indexOf(this, exceptionData, search, l1_Nova_index + search->nova_Nova_String_Nova_count + 1, (intptr_t)nova_null, (intptr_t)nova_null);
 	}
 	return defaultReturnValue;
 }
 
-int compiler_util_Nova_CompilerStringFunctions_Nova_nextNonWhitespaceIndex(nova_Nova_String* this, nova_exception_Nova_ExceptionData* exceptionData, int start, int defaultReturnValue)
+nova_Nova_String* compiler_util_Nova_CompilerStringFunctions_Nova_nextWord(nova_Nova_String* this, nova_exception_Nova_ExceptionData* exceptionData, int start, int direction, nova_Nova_String* defaultReturnValue)
 {
+	int l1_Nova_wordStartIndex = 0;
+	
 	start = (int)(start == (intptr_t)nova_null ? 0 : start);
-	defaultReturnValue = (int)(defaultReturnValue == (intptr_t)nova_null ? -1 : defaultReturnValue);
-	return compiler_util_Nova_CompilerStringFunctions_Nova_nextIndexThatContains(this, exceptionData, compiler_util_Nova_CompilerStringFunctions_Nova_WHITESPACE, start, 1, defaultReturnValue);
+	direction = (int)(direction == (intptr_t)nova_null ? 1 : direction);
+	defaultReturnValue = (nova_Nova_String*)(defaultReturnValue == 0 ? (nova_Nova_Object*)(nova_Nova_Object*)nova_null : (nova_Nova_Object*)defaultReturnValue);
+	l1_Nova_wordStartIndex = compiler_util_Nova_CompilerStringFunctions_Nova_nextNonWhitespaceIndex(this, exceptionData, start, direction, (intptr_t)nova_null);
+	if (l1_Nova_wordStartIndex >= 0)
+	{
+		int l1_Nova_wordEndIndex = 0;
+		
+		l1_Nova_wordEndIndex = compiler_util_Nova_CompilerStringFunctions_Nova_nextWhitespaceIndex(this, exceptionData, l1_Nova_wordStartIndex, direction, (intptr_t)nova_null);
+		if (direction < 0)
+		{
+			int l2_Nova_temp = 0;
+			
+			l2_Nova_temp = l1_Nova_wordStartIndex + 1;
+			l1_Nova_wordStartIndex = l1_Nova_wordEndIndex + 1;
+			l1_Nova_wordEndIndex = l2_Nova_temp;
+		}
+		return nova_Nova_String_Nova_substring(this, exceptionData, l1_Nova_wordStartIndex, l1_Nova_wordEndIndex);
+	}
+	return defaultReturnValue;
 }
 
-int compiler_util_Nova_CompilerStringFunctions_Nova_nextWhitespaceIndex(nova_Nova_String* this, nova_exception_Nova_ExceptionData* exceptionData, int start, int defaultReturnValue)
+char compiler_util_Nova_CompilerStringFunctions_Nova_nextNonWhitespaceChar(nova_Nova_String* this, nova_exception_Nova_ExceptionData* exceptionData, int start, int defaultReturnValue)
 {
+	int l1_Nova_index = 0;
+	
 	start = (int)(start == (intptr_t)nova_null ? 0 : start);
-	defaultReturnValue = (int)(defaultReturnValue == (intptr_t)nova_null ? -1 : defaultReturnValue);
-	return compiler_util_Nova_CompilerStringFunctions_Nova_nextIndexThatContains(this, exceptionData, compiler_util_Nova_CompilerStringFunctions_Nova_WHITESPACE, start, 0, defaultReturnValue);
+	defaultReturnValue = (int)(defaultReturnValue == (intptr_t)nova_null ? 0 : defaultReturnValue);
+	l1_Nova_index = compiler_util_Nova_CompilerStringFunctions_Nova_nextNonWhitespaceIndex(this, exceptionData, start, (intptr_t)nova_null, (intptr_t)nova_null);
+	if (l1_Nova_index >= 0)
+	{
+		return (char)(intptr_t)nova_datastruct_list_Nova_CharArray_Nova_get((nova_datastruct_list_Nova_CharArray*)(this->nova_Nova_String_Nova_chars), exceptionData, l1_Nova_index);
+	}
+	return defaultReturnValue;
 }
 
-int compiler_util_Nova_CompilerStringFunctions_Nova_nextIndexThatContains(nova_Nova_String* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_list_Nova_CharArray* searchChars, int start, int opposite, int defaultReturnValue)
+int compiler_util_Nova_CompilerStringFunctions_Nova_nextNonWhitespaceIndex(nova_Nova_String* this, nova_exception_Nova_ExceptionData* exceptionData, int start, int direction, int defaultReturnValue)
+{
+	start = (int)(start == (intptr_t)nova_null ? 0 : start);
+	direction = (int)(direction == (intptr_t)nova_null ? 1 : direction);
+	defaultReturnValue = (int)(defaultReturnValue == (intptr_t)nova_null ? -1 : defaultReturnValue);
+	return compiler_util_Nova_CompilerStringFunctions_Nova_nextIndexThatContains(this, exceptionData, compiler_util_Nova_CompilerStringFunctions_Nova_WHITESPACE, start, 1, direction, defaultReturnValue);
+}
+
+int compiler_util_Nova_CompilerStringFunctions_Nova_nextWhitespaceIndex(nova_Nova_String* this, nova_exception_Nova_ExceptionData* exceptionData, int start, int direction, int defaultReturnValue)
+{
+	start = (int)(start == (intptr_t)nova_null ? 0 : start);
+	direction = (int)(direction == (intptr_t)nova_null ? 1 : direction);
+	defaultReturnValue = (int)(defaultReturnValue == (intptr_t)nova_null ? -1 : defaultReturnValue);
+	return compiler_util_Nova_CompilerStringFunctions_Nova_nextIndexThatContains(this, exceptionData, compiler_util_Nova_CompilerStringFunctions_Nova_WHITESPACE, start, 0, direction, defaultReturnValue);
+}
+
+int compiler_util_Nova_CompilerStringFunctions_Nova_nextIndexThatContains(nova_Nova_String* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_list_Nova_CharArray* searchChars, int start, int opposite, int direction, int defaultReturnValue)
 {
 	start = (int)(start == (intptr_t)nova_null ? 0 : start);
 	opposite = (int)(opposite == (intptr_t)nova_null ? 0 : opposite);
+	direction = (int)(direction == (intptr_t)nova_null ? 1 : direction);
 	defaultReturnValue = (int)(defaultReturnValue == (intptr_t)nova_null ? -1 : defaultReturnValue);
-	while (start < this->nova_Nova_String_Nova_count && nova_datastruct_list_Nova_CharArray_Nova_contains(searchChars, exceptionData, (char)(intptr_t)(nova_datastruct_list_Nova_CharArray_Nova_get((nova_datastruct_list_Nova_CharArray*)(this->nova_Nova_String_Nova_chars), exceptionData, start))) == opposite)
+	while (start < this->nova_Nova_String_Nova_count && start >= 0 && nova_datastruct_list_Nova_CharArray_Nova_contains(searchChars, exceptionData, (char)(intptr_t)(nova_datastruct_list_Nova_CharArray_Nova_get((nova_datastruct_list_Nova_CharArray*)(this->nova_Nova_String_Nova_chars), exceptionData, start))) == opposite)
 	{
-		start++;
+		start += direction;
 	}
-	if (start <= this->nova_Nova_String_Nova_count)
+	if (start <= this->nova_Nova_String_Nova_count && start >= 0)
 	{
 		return start;
 	}
@@ -171,13 +214,13 @@ nova_Nova_String* compiler_util_Nova_CompilerStringFunctions_Nova_removeSurround
 
 char compiler_util_Nova_CompilerStringFunctions_0_Nova_containsString(nova_Nova_String* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_list_Nova_Array* needles, int index)
 {
-	Context1 contextArg18 = 
+	Context1 contextArg20 = 
 	{
 		&index,
 	};
 	
 	index = (int)(index == (intptr_t)nova_null ? 0 : index);
-	return nova_datastruct_list_Nova_List_virtual0_Nova_any((nova_datastruct_list_Nova_List*)(needles), exceptionData, (nova_datastruct_list_Nova_List_closure9_Nova_anyFunc)&compiler_util_Nova_CompilerStringFunctions_Nova_testLambda18, this, &contextArg18);
+	return nova_datastruct_list_Nova_List_virtual0_Nova_any((nova_datastruct_list_Nova_List*)(needles), exceptionData, (nova_datastruct_list_Nova_List_closure9_Nova_anyFunc)&compiler_util_Nova_CompilerStringFunctions_Nova_testLambda20, this, &contextArg20);
 }
 
 char compiler_util_Nova_CompilerStringFunctions_1_Nova_containsString(nova_Nova_String* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* needle, int index)
@@ -232,12 +275,12 @@ int compiler_util_Nova_CompilerStringFunctions_Nova_findEndingChar(nova_Nova_Str
 
 int compiler_util_Nova_CompilerStringFunctions_Nova_findEndingQuote(nova_Nova_String* this, nova_exception_Nova_ExceptionData* exceptionData, int start, int direction)
 {
-	Context2 contextArg19 = 
+	Context2 contextArg21 = 
 	{
 	};
 	
 	direction = (int)(direction == (intptr_t)nova_null ? 1 : direction);
-	return compiler_util_Nova_CompilerStringFunctions_Nova_findEndingChar(this, exceptionData, '"', start, direction, (compiler_util_Nova_CompilerStringFunctions_closure1_Nova_advance)&compiler_util_Nova_CompilerStringFunctions_Nova_testLambda19, this, &contextArg19, (intptr_t)nova_null);
+	return compiler_util_Nova_CompilerStringFunctions_Nova_findEndingChar(this, exceptionData, '"', start, direction, (compiler_util_Nova_CompilerStringFunctions_closure1_Nova_advance)&compiler_util_Nova_CompilerStringFunctions_Nova_testLambda21, this, &contextArg21, (intptr_t)nova_null);
 }
 
 int compiler_util_Nova_CompilerStringFunctions_0_Nova_findEndingMatch(nova_Nova_String* this, nova_exception_Nova_ExceptionData* exceptionData, int index, char start, char end, int direction, int escapeChar)
@@ -311,7 +354,7 @@ int compiler_util_Nova_CompilerStringFunctions_1_Nova_findEndingMatch(nova_Nova_
 	return defaultReturnValue;
 }
 
-nova_datastruct_list_Nova_Array* compiler_util_Nova_CompilerStringFunctions_Nova_splitCommas(nova_Nova_String* this, nova_exception_Nova_ExceptionData* exceptionData, int searchGenerics, int allowTrailing)
+nova_datastruct_list_Nova_Array* compiler_util_Nova_CompilerStringFunctions_Nova_splitAtCommas(nova_Nova_String* this, nova_exception_Nova_ExceptionData* exceptionData, int searchGenerics, int allowTrailing)
 {
 	nova_datastruct_list_Nova_Array* l1_Nova_strs = (nova_datastruct_list_Nova_Array*)nova_null;
 	int l1_Nova_oldIndex = 0;
@@ -342,7 +385,7 @@ int compiler_util_Nova_CompilerStringFunctions_0_Nova_findCharInBaseScope(nova_N
 	
 	start = (int)(start == (intptr_t)nova_null ? 0 : start);
 	searchGenerics = (int)(searchGenerics == (intptr_t)nova_null ? 0 : searchGenerics);
-	l1_Nova_array = nova_datastruct_list_Nova_Array_1_Nova_construct(0, exceptionData, 1);
+	l1_Nova_array = nova_datastruct_list_Nova_Array_1_Nova_construct(0, exceptionData, 1, (intptr_t)nova_null);
 	nova_datastruct_list_Nova_Array_0_Nova_add((nova_datastruct_list_Nova_Array*)(l1_Nova_array), exceptionData, (nova_Nova_Object*)(nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)(nova_primitive_number_Nova_Char_static_Nova_toString(0, exceptionData, (needle))), exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("")))));
 	return compiler_util_Nova_CompilerStringFunctions_Nova_findStringInBaseScope(this, exceptionData, l1_Nova_array, start, searchGenerics, (intptr_t)nova_null);
 }
@@ -355,7 +398,7 @@ int compiler_util_Nova_CompilerStringFunctions_1_Nova_findCharInBaseScope(nova_N
 	
 	start = (int)(start == (intptr_t)nova_null ? 0 : start);
 	searchGenerics = (int)(searchGenerics == (intptr_t)nova_null ? 0 : searchGenerics);
-	l1_Nova_array = nova_datastruct_list_Nova_Array_1_Nova_construct(0, exceptionData, needles->nova_datastruct_list_Nova_Array_Nova_count);
+	l1_Nova_array = nova_datastruct_list_Nova_Array_1_Nova_construct(0, exceptionData, needles->nova_datastruct_list_Nova_Array_Nova_count, (intptr_t)nova_null);
 	nova_local_0 = nova_datastruct_list_Nova_CharArray_Accessor_Nova_iterator((needles), exceptionData);
 	while (nova_datastruct_list_Nova_CharArrayIterator_Accessor_Nova_hasNext(nova_local_0, exceptionData))
 	{
@@ -419,15 +462,16 @@ int compiler_util_Nova_CompilerStringFunctions_Nova_findStringInBaseScope(nova_N
 		return defaultReturnValue;
 	}
 	
-	int compiler_util_Nova_CompilerStringFunctions_Nova_calculateStatementEnd(nova_Nova_String* this, nova_exception_Nova_ExceptionData* exceptionData, int statementEndIndex, int currentEnd)
+	int compiler_util_Nova_CompilerStringFunctions_Nova_calculateStatementEnd(nova_Nova_String* this, nova_exception_Nova_ExceptionData* exceptionData, int currentEnd, int statementEndIndex)
 	{
 		int l1_Nova_prevCharIndex = 0;
 		int l1_Nova_nextCharIndex = 0;
 		
+		statementEndIndex = (int)(statementEndIndex == (intptr_t)nova_null ? currentEnd : statementEndIndex);
 		currentEnd = compiler_util_Nova_CompilerStringFunctions_1_Nova_findCharInBaseScope(this, exceptionData, compiler_util_Nova_CompilerStringFunctions_Nova_EITHER_STATEMENT_END_CHARS, currentEnd, (intptr_t)nova_null);
 		if (currentEnd < 0)
 		{
-			if (compiler_util_Nova_CompilerStringFunctions_Nova_nextNonWhitespaceIndex(this, exceptionData, statementEndIndex + 1, (intptr_t)nova_null) < 0)
+			if (compiler_util_Nova_CompilerStringFunctions_Nova_nextNonWhitespaceIndex(this, exceptionData, statementEndIndex + 1, (intptr_t)nova_null, (intptr_t)nova_null) < 0)
 			{
 				return (int)-1;
 			}
@@ -437,8 +481,8 @@ int compiler_util_Nova_CompilerStringFunctions_Nova_findStringInBaseScope(nova_N
 		{
 			return currentEnd;
 		}
-		l1_Nova_prevCharIndex = compiler_util_Nova_CompilerStringFunctions_Nova_nextNonWhitespaceIndex(this, exceptionData, currentEnd - 1, -1);
-		l1_Nova_nextCharIndex = compiler_util_Nova_CompilerStringFunctions_Nova_nextNonWhitespaceIndex(this, exceptionData, currentEnd + 1, (intptr_t)nova_null);
+		l1_Nova_prevCharIndex = compiler_util_Nova_CompilerStringFunctions_Nova_nextNonWhitespaceIndex(this, exceptionData, currentEnd - 1, -1, (intptr_t)nova_null);
+		l1_Nova_nextCharIndex = compiler_util_Nova_CompilerStringFunctions_Nova_nextNonWhitespaceIndex(this, exceptionData, currentEnd + 1, (intptr_t)nova_null, (intptr_t)nova_null);
 		return compiler_util_Nova_CompilerStringFunctions_Nova_calculateReturnValue(this, exceptionData, statementEndIndex, currentEnd, l1_Nova_nextCharIndex, l1_Nova_prevCharIndex);
 	}
 	
@@ -454,7 +498,7 @@ int compiler_util_Nova_CompilerStringFunctions_Nova_findStringInBaseScope(nova_N
 			}
 			else if (compiler_util_Nova_CompilerStringFunctions_Nova_checkStatementContinuation(this, exceptionData, prevCharIndex, nextCharIndex))
 			{
-				return compiler_util_Nova_CompilerStringFunctions_Nova_calculateStatementEnd(this, exceptionData, statementEndIndex, currentEnd + 1);
+				return compiler_util_Nova_CompilerStringFunctions_Nova_calculateStatementEnd(this, exceptionData, currentEnd + 1, statementEndIndex);
 			}
 			return currentEnd;
 		}
@@ -514,9 +558,9 @@ int compiler_util_Nova_CompilerStringFunctions_Nova_findStringInBaseScope(nova_N
 			nova_Nova_String* l1_Nova_prevWord = (nova_Nova_String*)nova_null;
 			
 			l1_Nova_prevWordBounds = compiler_util_Nova_CompilerStringFunctions_Nova_nextWordBounds(this, exceptionData, prevCharIndex, -1);
-			l1_Nova_nextNextCharIndex = compiler_util_Nova_CompilerStringFunctions_Nova_nextNonWhitespaceIndex(this, exceptionData, compiler_util_Nova_CompilerStringFunctions_Nova_nextWhitespaceIndex(this, exceptionData, nextCharIndex + 1, (intptr_t)nova_null), (intptr_t)nova_null);
+			l1_Nova_nextNextCharIndex = compiler_util_Nova_CompilerStringFunctions_Nova_nextNonWhitespaceIndex(this, exceptionData, compiler_util_Nova_CompilerStringFunctions_Nova_nextWhitespaceIndex(this, exceptionData, nextCharIndex + 1, (intptr_t)nova_null, (intptr_t)nova_null), (intptr_t)nova_null, (intptr_t)nova_null);
 			l1_Nova_pendingCompletion = nova_datastruct_list_Nova_CharArray_Nova_contains(compiler_util_Nova_CompilerStringFunctions_Nova_STMT_PRE_CONT_CHARS, exceptionData, (char)(intptr_t)(nova_datastruct_list_Nova_CharArray_Nova_get((nova_datastruct_list_Nova_CharArray*)(this->nova_Nova_String_Nova_chars), exceptionData, prevCharIndex))) && !compiler_util_Nova_CompilerStringFunctions_Nova_containsUnaryOperator(this, exceptionData, prevCharIndex, l1_Nova_prevWordBounds->compiler_util_Nova_Bounds_Nova_end, -1);
-			if (l1_Nova_pendingCompletion && nova_Nova_String_Nova_equals(nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)(nova_primitive_number_Nova_Char_static_Nova_toString(0, exceptionData, (nova_datastruct_list_Nova_CharArray_Nova_get((nova_datastruct_list_Nova_CharArray*)(this->nova_Nova_String_Nova_chars), exceptionData, prevCharIndex)))), exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)(""))), exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)(">"))))
+			if (l1_Nova_pendingCompletion && (char)(intptr_t)nova_datastruct_list_Nova_CharArray_Nova_get((nova_datastruct_list_Nova_CharArray*)(this->nova_Nova_String_Nova_chars), exceptionData, prevCharIndex) == '>')
 			{
 				if (nova_Nova_String_Nova_equals(nova_Nova_String_Nova_substring(this, exceptionData, prevCharIndex - 1, prevCharIndex + 1), exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("=>"))))
 				{
@@ -541,10 +585,10 @@ int compiler_util_Nova_CompilerStringFunctions_Nova_findStringInBaseScope(nova_N
 			compiler_util_Nova_Bounds* l1_Nova_bounds = (compiler_util_Nova_Bounds*)nova_null;
 			
 			direction = (int)(direction == (intptr_t)nova_null ? 1 : direction);
-			l1_Nova_bounds = compiler_util_Nova_CompilerStringFunctions_Nova_findStrings(this, exceptionData, compiler_tree_node_operations_Nova_Operator_Nova_UNARY_OPERATORS_NO_MINUS, index, direction, 0);
+			l1_Nova_bounds = compiler_util_Nova_CompilerStringFunctions_Nova_findStrings(this, exceptionData, compiler_tree_nodes_operations_Nova_Operator_Nova_UNARY_OPERATORS_NO_MINUS, index, direction, 0);
 			if (!compiler_util_Nova_CompilerStringFunctions_static_Nova_validBounds(0, exceptionData, l1_Nova_bounds, stopIndex, direction))
 			{
-				l1_Nova_bounds = compiler_util_Nova_CompilerStringFunctions_Nova_findStrings(this, exceptionData, compiler_tree_node_operations_Nova_Operator_Nova_MINUS, index, direction, 0);
+				l1_Nova_bounds = compiler_util_Nova_CompilerStringFunctions_Nova_findStrings(this, exceptionData, compiler_tree_nodes_operations_Nova_Operator_Nova_MINUS, index, direction, 0);
 			}
 			if (compiler_util_Nova_CompilerStringFunctions_static_Nova_validBounds(0, exceptionData, l1_Nova_bounds, stopIndex, direction))
 			{
@@ -555,7 +599,7 @@ int compiler_util_Nova_CompilerStringFunctions_Nova_findStringInBaseScope(nova_N
 				l2_Nova_unary = nova_Nova_String_Nova_substring(this, exceptionData, l1_Nova_bounds->compiler_util_Nova_Bounds_Nova_start, l1_Nova_bounds->compiler_util_Nova_Bounds_Nova_end);
 				l2_Nova_foundSide = -direction;
 				l2_Nova_correctSide = (int)(-1);
-				return l2_Nova_correctSide == l2_Nova_foundSide || l2_Nova_correctSide == compiler_tree_node_operations_Nova_UnaryOperation_Nova_EITHER;
+				return l2_Nova_correctSide == l2_Nova_foundSide || l2_Nova_correctSide == compiler_tree_nodes_operations_Nova_UnaryOperation_Nova_EITHER;
 			}
 			return 0;
 		}
@@ -690,12 +734,18 @@ int compiler_util_Nova_CompilerStringFunctions_Nova_findStringInBaseScope(nova_N
 				return (nova_Nova_String*)(nova_Nova_Object*)nova_null;
 			}
 			
-			char compiler_util_Nova_CompilerStringFunctions_Nova_testLambda18(nova_Nova_String* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* _1, Context1* context)
+			int compiler_util_Nova_CompilerStringFunctions_Nova_findDotOperatorIndex(nova_Nova_String* this, nova_exception_Nova_ExceptionData* exceptionData, int start)
+			{
+				start = (int)(start == (intptr_t)nova_null ? 0 : start);
+				return compiler_util_Nova_CompilerStringFunctions_0_Nova_findCharInBaseScope(this, exceptionData, '.', start, (intptr_t)nova_null);
+			}
+			
+			char compiler_util_Nova_CompilerStringFunctions_Nova_testLambda20(nova_Nova_String* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* _1, Context1* context)
 			{
 				return compiler_util_Nova_CompilerStringFunctions_1_Nova_containsString(this, exceptionData, _1, (*context->compiler_util_Nova_CompilerStringFunctions_Nova_index));
 			}
 			
-			int compiler_util_Nova_CompilerStringFunctions_Nova_testLambda19(nova_Nova_String* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* str, char c, int i, int dir, Context2* context)
+			int compiler_util_Nova_CompilerStringFunctions_Nova_testLambda21(nova_Nova_String* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* str, char c, int i, int dir, Context2* context)
 			{
 				i += dir;
 				if (dir > 0 && i < str->nova_Nova_String_Nova_count - 3 && nova_Nova_String_Nova_get(str, exceptionData, i) == '#' && nova_Nova_String_Nova_get(str, exceptionData, i + 1) == '{')
@@ -707,7 +757,7 @@ int compiler_util_Nova_CompilerStringFunctions_Nova_findStringInBaseScope(nova_N
 			
 			char compiler_util_Nova_CompilerStringFunctions_Accessor_Nova_isIdentifier(nova_Nova_String* this, nova_exception_Nova_ExceptionData* exceptionData)
 			{
-				return nova_Nova_String_Nova_matches(this, exceptionData, nova_regex_Nova_Pattern_Nova_construct(0, exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("[A-Za-z_][A-Za-z0-9_]*"))));
+				return this->nova_Nova_String_Nova_count > 0 && nova_Nova_String_Nova_matches(this, exceptionData, nova_regex_Nova_Pattern_Nova_construct(0, exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("[A-Za-z_][A-Za-z0-9_]*"))));
 			}
 			
 			

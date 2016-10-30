@@ -73,8 +73,10 @@ compiler_tree_node_Import_Extension_VTable compiler_tree_node_Import_Extension_V
 	nova_Nova_Object_Nova_equals,
 	nova_Nova_Object_Nova_toString,
 	nova_Nova_Object_Accessor_Nova_hashCodeLong,
+	compiler_tree_node_Nova_Node_Nova_parseChild,
 	compiler_tree_node_Nova_Node_Nova_addAnnotation,
 	compiler_tree_node_Nova_Node_Nova_clone,
+	compiler_tree_node_Nova_Node_Nova_cloneTo,
 	compiler_tree_node_Nova_Node_Accessor_Nova_program,
 	compiler_tree_node_Nova_Node_Accessor_Nova_parentFile,
 	compiler_tree_node_Nova_Node_Accessor_Nova_parentFunction,
@@ -138,7 +140,7 @@ nova_Nova_String* compiler_tree_node_Nova_Import_Nova_getClassLocation(compiler_
 	return (nova_Nova_String*)(aliased && this->compiler_tree_node_Nova_Import_Nova_alias != (nova_Nova_String*)nova_null ? nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)((compiler_tree_node_Nova_Import_Accessor_Nova_parentLocation(this, exceptionData))), exceptionData, nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)(nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("/"))), exceptionData, nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)((this->compiler_tree_node_Nova_Import_Nova_alias)), exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)(""))))) : this->compiler_tree_node_Nova_Import_Nova_importLocation);
 }
 
-compiler_tree_node_Nova_Import* compiler_tree_node_Nova_Import_static_Nova_tryParse(compiler_tree_node_Nova_Import* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* input, compiler_tree_node_Nova_Node* parent, compiler_util_Nova_Location* location, int require)
+compiler_tree_node_Nova_Import* compiler_tree_node_Nova_Import_static_Nova_parse(compiler_tree_node_Nova_Import* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* input, compiler_tree_node_Nova_Node* parent, compiler_util_Nova_Location* location, int require)
 {
 	parent = (compiler_tree_node_Nova_Node*)(parent == 0 ? (nova_Nova_Object*)(nova_Nova_Object*)nova_null : (nova_Nova_Object*)parent);
 	location = (compiler_util_Nova_Location*)(location == 0 ? (nova_Nova_Object*)compiler_util_Nova_Location_Nova_INVALID : (nova_Nova_Object*)location);

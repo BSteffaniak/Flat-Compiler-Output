@@ -74,8 +74,10 @@ compiler_tree_node_Value_Extension_VTable compiler_tree_node_Value_Extension_VTa
 	nova_Nova_Object_Nova_equals,
 	nova_Nova_Object_Nova_toString,
 	nova_Nova_Object_Accessor_Nova_hashCodeLong,
+	compiler_tree_node_Nova_Node_Nova_parseChild,
 	compiler_tree_node_Nova_Node_Nova_addAnnotation,
 	compiler_tree_node_Nova_Node_Nova_clone,
+	compiler_tree_node_Nova_Value_Nova_cloneTo,
 	compiler_tree_node_Nova_Node_Accessor_Nova_program,
 	compiler_tree_node_Nova_Node_Accessor_Nova_parentFile,
 	compiler_tree_node_Nova_Node_Accessor_Nova_parentFunction,
@@ -121,8 +123,22 @@ void compiler_tree_node_Nova_Value_Nova_destroy(compiler_tree_node_Nova_Value** 
 	}
 	
 	compiler_tree_node_arrays_Nova_ArrayAccess_Nova_destroy(&(*this)->compiler_tree_node_Nova_Value_Nova_arrayAccess, exceptionData);
+	nova_Nova_String_Nova_destroy(&(*this)->compiler_tree_node_Nova_Value_Nova_type, exceptionData);
 	
 	NOVA_FREE(*this);
+}
+
+nova_Nova_String* compiler_tree_node_Nova_Value_Nova_writeType(compiler_tree_node_Nova_Value* this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+	return nova_Nova_String_Nova_trim(nova_Nova_String_0_Nova_replace(nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)((this->compiler_tree_node_Nova_Value_Nova_type)), exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)(""))), exceptionData, nova_regex_Nova_Pattern_Nova_construct(0, exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("\\s+"))), nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)(" "))), exceptionData, (intptr_t)nova_null, (intptr_t)nova_null);
+}
+
+compiler_tree_node_Nova_Value* compiler_tree_node_Nova_Value_Nova_cloneTo(compiler_tree_node_Nova_Value* this, nova_exception_Nova_ExceptionData* exceptionData, compiler_tree_node_Nova_Value* other)
+{
+	compiler_tree_node_Nova_Node_Nova_cloneTo(((compiler_tree_node_Nova_Node*)this), exceptionData, (compiler_tree_node_Nova_Node*)(other));
+	other->compiler_tree_node_Nova_Value_Nova_arrayAccess = this->compiler_tree_node_Nova_Value_Nova_arrayAccess;
+	other->compiler_tree_node_Nova_Value_Nova_type = this->compiler_tree_node_Nova_Value_Nova_type;
+	return other;
 }
 
 void compiler_tree_node_Nova_Value_Nova_this(compiler_tree_node_Nova_Value* this, nova_exception_Nova_ExceptionData* exceptionData)
@@ -132,5 +148,6 @@ void compiler_tree_node_Nova_Value_Nova_this(compiler_tree_node_Nova_Value* this
 void compiler_tree_node_Nova_Value_Nova_super(compiler_tree_node_Nova_Value* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
 	this->compiler_tree_node_Nova_Value_Nova_arrayAccess = (compiler_tree_node_arrays_Nova_ArrayAccess*)nova_null;
+	this->compiler_tree_node_Nova_Value_Nova_type = (nova_Nova_String*)nova_null;
 }
 

@@ -105,7 +105,7 @@ void example_Nova_ExceptionHandlingDemo_static_Nova_main(example_Nova_ExceptionH
 {
 	TRY
 	{
-		novaEnv.nova_exception_ExceptionData.addCode(exceptionData, exceptionData, 11);
+		novaEnv.nova_exception_ExceptionData.addCode(exceptionData, exceptionData, 12);
 		
 		{
 			int l1_Nova_result = 0;
@@ -116,7 +116,7 @@ void example_Nova_ExceptionHandlingDemo_static_Nova_main(example_Nova_ExceptionH
 			nova_io_Nova_Console_1_static_Nova_writeLine(0, exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("this output will not show.")));
 		}
 	}
-	CATCH (11)
+	CATCH (12)
 	{
 		example_Nova_NonWholeDivisionException* l2_Nova_e = (example_Nova_NonWholeDivisionException*)nova_null;
 		
@@ -134,18 +134,18 @@ void example_Nova_ExceptionHandlingDemo_static_Nova_main(example_Nova_ExceptionH
 
 int example_Nova_ExceptionHandlingDemo_static_Nova_divide(example_Nova_ExceptionHandlingDemo* this, nova_exception_Nova_ExceptionData* exceptionData, int num, int den)
 {
-	int nova_zero_check3 = 0;
+	int nova_zero_check5 = 0;
 	
 	if (num % den != 0)
 	{
-		THROW(11, example_Nova_NonWholeDivisionException_Nova_construct(0, exceptionData));
+		THROW(12, example_Nova_NonWholeDivisionException_Nova_construct(0, exceptionData));
 	}
-	nova_zero_check3 = den;
-	if (nova_zero_check3 == 0)
+	nova_zero_check5 = den;
+	if (nova_zero_check5 == 0)
 	{
 		THROW(2, nova_exception_Nova_DivideByZeroException_Nova_construct(0, exceptionData));
 	}
-	return num / nova_zero_check3;
+	return num / nova_zero_check5;
 }
 
 void example_Nova_ExceptionHandlingDemo_Nova_this(example_Nova_ExceptionHandlingDemo* this, nova_exception_Nova_ExceptionData* exceptionData)

@@ -76,14 +76,16 @@ compiler_tree_node_Identifier_Extension_VTable compiler_tree_node_Identifier_Ext
 	nova_Nova_Object_Nova_equals,
 	nova_Nova_Object_Nova_toString,
 	nova_Nova_Object_Accessor_Nova_hashCodeLong,
+	compiler_tree_node_Nova_Node_Nova_parseChild,
 	compiler_tree_node_Nova_Node_Nova_addAnnotation,
 	compiler_tree_node_Nova_Node_Nova_clone,
+	compiler_tree_node_Nova_Identifier_Nova_cloneTo,
 	compiler_tree_node_Nova_Node_Accessor_Nova_program,
 	compiler_tree_node_Nova_Node_Accessor_Nova_parentFile,
 	compiler_tree_node_Nova_Node_Accessor_Nova_parentFunction,
 	compiler_tree_node_Nova_Node_Accessor_Nova_parentTry,
 	compiler_tree_node_Nova_Node_Accessor_Nova_parentClass,
-	compiler_tree_node_Nova_Identifier_static_Nova_tryParse,
+	compiler_tree_node_Nova_Identifier_static_Nova_parse,
 };
 
 
@@ -130,7 +132,7 @@ void compiler_tree_node_Nova_Identifier_Nova_this(compiler_tree_node_Nova_Identi
 	compiler_tree_node_Nova_Node_Nova_this((compiler_tree_node_Nova_Node*)(this), exceptionData, parent, location);
 }
 
-compiler_tree_node_Nova_Identifier* compiler_tree_node_Nova_Identifier_static_Nova_tryParse(compiler_tree_node_Nova_Identifier* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* input, compiler_tree_node_Nova_Node* parent, compiler_util_Nova_Location* location, int require)
+compiler_tree_node_Nova_Identifier* compiler_tree_node_Nova_Identifier_static_Nova_parse(compiler_tree_node_Nova_Identifier* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* input, compiler_tree_node_Nova_Node* parent, compiler_util_Nova_Location* location, int require)
 {
 	parent = (compiler_tree_node_Nova_Node*)(parent == 0 ? (nova_Nova_Object*)(nova_Nova_Object*)nova_null : (nova_Nova_Object*)parent);
 	location = (compiler_util_Nova_Location*)(location == 0 ? (nova_Nova_Object*)compiler_util_Nova_Location_Nova_INVALID : (nova_Nova_Object*)location);
@@ -145,6 +147,15 @@ compiler_tree_node_Nova_Identifier* compiler_tree_node_Nova_Identifier_static_No
 	return (compiler_tree_node_Nova_Identifier*)(nova_Nova_Object*)nova_null;
 }
 
+compiler_tree_node_Nova_Identifier* compiler_tree_node_Nova_Identifier_Nova_cloneTo(compiler_tree_node_Nova_Identifier* this, nova_exception_Nova_ExceptionData* exceptionData, compiler_tree_node_Nova_Identifier* other)
+{
+	compiler_tree_node_Nova_Value_Nova_cloneTo(((compiler_tree_node_Nova_Value*)this), exceptionData, (compiler_tree_node_Nova_Node*)(other));
+	other->compiler_tree_node_Nova_Identifier_Nova_name = this->compiler_tree_node_Nova_Identifier_Nova_name;
+	other->compiler_tree_node_Nova_Identifier_Nova_safeNavigation = this->compiler_tree_node_Nova_Identifier_Nova_safeNavigation;
+	other->compiler_tree_node_Nova_Identifier_Nova_accessedNode = this->compiler_tree_node_Nova_Identifier_Nova_accessedNode;
+	return other;
+}
+
 void compiler_tree_node_Nova_Identifier_Nova_super(compiler_tree_node_Nova_Identifier* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
 	this->compiler_tree_node_Nova_Identifier_Nova_safeNavigation = 0;
@@ -152,8 +163,8 @@ void compiler_tree_node_Nova_Identifier_Nova_super(compiler_tree_node_Nova_Ident
 	this->compiler_tree_node_Nova_Identifier_Nova_name = (nova_Nova_String*)nova_null;
 }
 
-compiler_tree_node_Nova_Identifier* compiler_tree_node_Nova_Identifier_virtual_static_Nova_tryParse(compiler_tree_node_Nova_Identifier* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* input, compiler_tree_node_Nova_Node* parent, compiler_util_Nova_Location* location, int require)
+compiler_tree_node_Nova_Identifier* compiler_tree_node_Nova_Identifier_virtual_static_Nova_parse(compiler_tree_node_Nova_Identifier* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* input, compiler_tree_node_Nova_Node* parent, compiler_util_Nova_Location* location, int require)
 {
-	return this->vtable->compiler_tree_node_Nova_Identifier_virtual_static_Nova_tryParse(0, exceptionData, input, parent, location, require);
+	return this->vtable->compiler_tree_node_Nova_Identifier_virtual_static_Nova_parse(0, exceptionData, input, parent, location, require);
 }
 

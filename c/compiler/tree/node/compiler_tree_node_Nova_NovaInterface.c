@@ -31,6 +31,8 @@
 #include <compiler/compiler_Nova_SyntaxMessage.h>
 #include <compiler/util/compiler_util_Nova_Location.h>
 #include <compiler/tree/node/variables/compiler_tree_node_variables_Nova_InstanceDeclaration.h>
+#include <compiler/tree/node/variables/compiler_tree_node_variables_Nova_FieldDeclaration.h>
+#include <compiler/tree/node/functions/compiler_tree_node_functions_Nova_BodyFunction.h>
 #include <compiler/tree/node/compiler_tree_node_Nova_Abstractable.h>
 #include <compiler/tree/node/compiler_tree_node_Nova_Node.h>
 #include <compiler/tree/node/compiler_tree_node_Nova_Scope.h>
@@ -81,14 +83,16 @@ compiler_tree_node_NovaInterface_Extension_VTable compiler_tree_node_NovaInterfa
 	nova_Nova_Object_Nova_equals,
 	compiler_tree_node_Nova_NovaClass_Nova_toString,
 	nova_Nova_Object_Accessor_Nova_hashCodeLong,
+	compiler_tree_node_Nova_NovaClass_Nova_parseChild,
 	compiler_tree_node_Nova_Node_Nova_addAnnotation,
 	compiler_tree_node_Nova_Node_Nova_clone,
+	compiler_tree_node_variables_Nova_VariableDeclaration_Nova_cloneTo,
 	compiler_tree_node_Nova_Node_Accessor_Nova_program,
 	compiler_tree_node_Nova_Node_Accessor_Nova_parentFile,
 	compiler_tree_node_Nova_Node_Accessor_Nova_parentFunction,
 	compiler_tree_node_Nova_Node_Accessor_Nova_parentTry,
 	compiler_tree_node_Nova_NovaClass_Accessor_Nova_parentClass,
-	compiler_tree_node_Nova_NovaClass_static_Nova_tryParse,
+	compiler_tree_node_Nova_NovaClass_static_Nova_parse,
 	compiler_tree_node_Nova_NovaClass_Nova_parseModifier,
 	compiler_tree_node_Nova_NovaClass_Nova_writeModifiers,
 	compiler_tree_node_Nova_NovaClass_Nova_writeAbstract,

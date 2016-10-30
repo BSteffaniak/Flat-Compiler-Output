@@ -50,8 +50,8 @@ struct compiler_tree_StatementIterator_Extension_VTable
 	nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 	long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 	compiler_tree_Nova_StatementIterator* (*nova_datastruct_list_Nova_Iterator_virtual_Nova_reset)(compiler_tree_Nova_StatementIterator*, nova_exception_Nova_ExceptionData*);
-	nova_Nova_String* (*nova_datastruct_list_Nova_Iterator_virtual_Accessor_Nova_next)(compiler_tree_Nova_StatementIterator*, nova_exception_Nova_ExceptionData*);
 	char (*nova_datastruct_list_Nova_Iterator_virtual_Accessor_Nova_hasNext)(compiler_tree_Nova_StatementIterator*, nova_exception_Nova_ExceptionData*);
+	nova_Nova_String* (*nova_datastruct_list_Nova_Iterator_virtual_Accessor_Nova_next)(compiler_tree_Nova_StatementIterator*, nova_exception_Nova_ExceptionData*);
 };
 
 extern compiler_tree_StatementIterator_Extension_VTable compiler_tree_StatementIterator_Extension_VTable_val;
@@ -64,6 +64,9 @@ CCLASS_CLASS
 	compiler_tree_StatementIterator_Extension_VTable* vtable;
 	nova_Nova_Class* nova_Nova_Object_Nova_class;
 	nova_Nova_String* compiler_tree_Nova_StatementIterator_Nova_source;
+	char compiler_tree_Nova_StatementIterator_Nova_beginsScope;
+	char compiler_tree_Nova_StatementIterator_Nova_endsScope;
+	int compiler_tree_Nova_StatementIterator_Nova_scopesEnded;
 	int compiler_tree_Nova_StatementIterator_Nova_position;
 )
 
@@ -72,8 +75,8 @@ compiler_tree_Nova_StatementIterator* compiler_tree_Nova_StatementIterator_Nova_
 void compiler_tree_Nova_StatementIterator_Nova_destroy(compiler_tree_Nova_StatementIterator** this, nova_exception_Nova_ExceptionData* exceptionData);
 void compiler_tree_Nova_StatementIterator_Nova_this(compiler_tree_Nova_StatementIterator* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* source);
 compiler_tree_Nova_StatementIterator* compiler_tree_Nova_StatementIterator_Nova_reset(compiler_tree_Nova_StatementIterator* this, nova_exception_Nova_ExceptionData* exceptionData);
-nova_Nova_String* compiler_tree_Nova_StatementIterator_Accessor_Nova_next(compiler_tree_Nova_StatementIterator* this, nova_exception_Nova_ExceptionData* exceptionData);
 char compiler_tree_Nova_StatementIterator_Accessor_Nova_hasNext(compiler_tree_Nova_StatementIterator* this, nova_exception_Nova_ExceptionData* exceptionData);
+nova_Nova_String* compiler_tree_Nova_StatementIterator_Accessor_Nova_next(compiler_tree_Nova_StatementIterator* this, nova_exception_Nova_ExceptionData* exceptionData);
 void compiler_tree_Nova_StatementIterator_Nova_super(compiler_tree_Nova_StatementIterator* this, nova_exception_Nova_ExceptionData* exceptionData);
 
 #endif

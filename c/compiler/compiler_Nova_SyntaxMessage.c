@@ -27,7 +27,7 @@
 #include <nova/nova_Nova_System.h>
 #include <nova/nova_Nova_Class.h>
 #include <nova/regex/nova_regex_Nova_Pattern.h>
-#include <compiler/tree/node/compiler_tree_node_Nova_Node.h>
+#include <compiler/tree/nodes/compiler_tree_nodes_Nova_Node.h>
 #include <compiler/compiler_Nova_SyntaxErrorException.h>
 #include <nova/NativeObject.h>
 #include <nova/operators/nova_operators_Nova_Equals.h>
@@ -98,7 +98,7 @@ void compiler_Nova_SyntaxMessage_Nova_destroy(compiler_Nova_SyntaxMessage** this
 	NOVA_FREE(*this);
 }
 
-void compiler_Nova_SyntaxMessage_static_Nova_errorIf(compiler_Nova_SyntaxMessage* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* message, compiler_tree_node_Nova_Node* node, char condition, int throwException)
+void compiler_Nova_SyntaxMessage_static_Nova_errorIf(compiler_Nova_SyntaxMessage* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* message, compiler_tree_nodes_Nova_Node* node, char condition, int throwException)
 {
 	throwException = (int)(throwException == (intptr_t)nova_null ? 1 : throwException);
 	if (condition)
@@ -107,12 +107,12 @@ void compiler_Nova_SyntaxMessage_static_Nova_errorIf(compiler_Nova_SyntaxMessage
 	}
 }
 
-void compiler_Nova_SyntaxMessage_static_Nova_error(compiler_Nova_SyntaxMessage* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* message, compiler_tree_node_Nova_Node* node, int throwException)
+void compiler_Nova_SyntaxMessage_static_Nova_error(compiler_Nova_SyntaxMessage* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* message, compiler_tree_nodes_Nova_Node* node, int throwException)
 {
 	throwException = (int)(throwException == (intptr_t)nova_null ? 1 : throwException);
-	if (node != (compiler_tree_node_Nova_Node*)nova_null)
+	if (node != (compiler_tree_nodes_Nova_Node*)nova_null)
 	{
-		message = (nova_Nova_String*)(nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)(message), exceptionData, nova_Nova_String_Nova_concat(nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)(" - ")), exceptionData, nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)((compiler_tree_node_Nova_Node_Accessor_Nova_locationInfo(node, exceptionData))), exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)(""))))));
+		message = (nova_Nova_String*)(nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)(message), exceptionData, nova_Nova_String_Nova_concat(nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)(" - ")), exceptionData, nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)((compiler_tree_nodes_Nova_Node_Accessor_Nova_locationInfo(node, exceptionData))), exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)(""))))));
 	}
 	if (throwException)
 	{
@@ -120,7 +120,7 @@ void compiler_Nova_SyntaxMessage_static_Nova_error(compiler_Nova_SyntaxMessage* 
 	}
 	else
 	{
-		nova_datastruct_list_Nova_Array_0_Nova_add((nova_datastruct_list_Nova_Array*)(compiler_tree_node_Nova_Node_virtual_Accessor_Nova_program((compiler_tree_node_Nova_Node*)(node), exceptionData)->compiler_tree_node_Nova_Program_Nova_compiler->compiler_Nova_Compiler_Nova_errors), exceptionData, (nova_Nova_Object*)(message));
+		nova_datastruct_list_Nova_Array_0_Nova_add((nova_datastruct_list_Nova_Array*)(compiler_tree_nodes_Nova_Node_virtual_Accessor_Nova_program((compiler_tree_nodes_Nova_Node*)(node), exceptionData)->compiler_tree_nodes_Nova_Program_Nova_compiler->compiler_Nova_Compiler_Nova_errors), exceptionData, (nova_Nova_Object*)(message));
 	}
 }
 

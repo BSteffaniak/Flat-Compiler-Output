@@ -136,14 +136,14 @@ void example_Nova_SvgFractal_static_Nova_main(example_Nova_SvgFractal* this, nov
 	for (; l2_Nova_i < (int)l1_Nova_numVerts; l2_Nova_i++)
 	{
 		double l2_Nova_rad = 0;
-		float nova_zero_check10 = 0;
+		float nova_zero_check12 = 0;
 		
-		nova_zero_check10 = (l1_Nova_numVerts * 1.0);
-		if (nova_zero_check10 == 0)
+		nova_zero_check12 = (l1_Nova_numVerts * 1.0);
+		if (nova_zero_check12 == 0)
 		{
 			THROW(2, nova_exception_Nova_DivideByZeroException_Nova_construct(0, exceptionData));
 		}
-		l2_Nova_rad = l1_Nova_pi2 * (l2_Nova_i / nova_zero_check10) + l1_Nova_offset;
+		l2_Nova_rad = l1_Nova_pi2 * (l2_Nova_i / nova_zero_check12) + l1_Nova_offset;
 		nova_datastruct_list_Nova_DoubleArray_Nova_set(l1_Nova_points, exceptionData, l2_Nova_i * 2 + 0, l1_Nova_radius * nova_math_Nova_Math_static_Nova_cos(0, exceptionData, l2_Nova_rad) + l1_Nova_radius + 10);
 		nova_datastruct_list_Nova_DoubleArray_Nova_set(l1_Nova_points, exceptionData, l2_Nova_i * 2 + 1, l1_Nova_radius * nova_math_Nova_Math_static_Nova_sin(0, exceptionData, l2_Nova_rad) + l1_Nova_radius + 10);
 	}
