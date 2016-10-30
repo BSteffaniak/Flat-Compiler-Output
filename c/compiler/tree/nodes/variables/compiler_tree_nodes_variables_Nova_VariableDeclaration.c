@@ -209,7 +209,7 @@ nova_Nova_String* compiler_tree_nodes_variables_Nova_VariableDeclaration_Nova_to
 
 compiler_tree_nodes_variables_Nova_VariableDeclaration* compiler_tree_nodes_variables_Nova_VariableDeclaration_Nova_cloneTo(compiler_tree_nodes_variables_Nova_VariableDeclaration* this, nova_exception_Nova_ExceptionData* exceptionData, compiler_tree_nodes_variables_Nova_VariableDeclaration* other)
 {
-	compiler_tree_nodes_Nova_Identifier_Nova_cloneTo(((compiler_tree_nodes_Nova_Identifier*)this), exceptionData, (compiler_tree_nodes_Nova_Node*)(other));
+	compiler_tree_nodes_Nova_Identifier_Nova_cloneTo(((compiler_tree_nodes_Nova_Identifier*)this), exceptionData, (compiler_tree_nodes_Nova_Identifier*)(other));
 	return other;
 }
 

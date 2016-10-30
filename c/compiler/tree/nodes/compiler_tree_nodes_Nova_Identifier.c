@@ -149,7 +149,7 @@ compiler_tree_nodes_Nova_Identifier* compiler_tree_nodes_Nova_Identifier_static_
 
 compiler_tree_nodes_Nova_Identifier* compiler_tree_nodes_Nova_Identifier_Nova_cloneTo(compiler_tree_nodes_Nova_Identifier* this, nova_exception_Nova_ExceptionData* exceptionData, compiler_tree_nodes_Nova_Identifier* other)
 {
-	compiler_tree_nodes_Nova_Value_Nova_cloneTo(((compiler_tree_nodes_Nova_Value*)this), exceptionData, (compiler_tree_nodes_Nova_Node*)(other));
+	compiler_tree_nodes_Nova_Value_Nova_cloneTo(((compiler_tree_nodes_Nova_Value*)this), exceptionData, (compiler_tree_nodes_Nova_Value*)(other));
 	other->compiler_tree_nodes_Nova_Identifier_Nova_name = this->compiler_tree_nodes_Nova_Identifier_Nova_name;
 	other->compiler_tree_nodes_Nova_Identifier_Nova_safeNavigation = this->compiler_tree_nodes_Nova_Identifier_Nova_safeNavigation;
 	other->compiler_tree_nodes_Nova_Identifier_Nova_accessedNode = this->compiler_tree_nodes_Nova_Identifier_Nova_accessedNode;
