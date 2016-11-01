@@ -58,6 +58,8 @@ compiler_util_Bounds_Extension_VTable compiler_util_Bounds_Extension_VTable_val 
 		0,
 		0,
 		0,
+		0,
+		0,
 	},
 	compiler_util_Nova_Bounds_Nova_equals,
 	compiler_util_Nova_Bounds_Nova_toString,

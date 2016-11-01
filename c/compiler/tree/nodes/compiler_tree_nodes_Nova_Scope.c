@@ -29,10 +29,13 @@
 #include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_List.h>
 #include <compiler/util/compiler_util_Nova_Location.h>
+#include <compiler/tree/nodes/functions/compiler_tree_nodes_functions_Nova_FunctionCall.h>
 #include <compiler/tree/nodes/variables/compiler_tree_nodes_variables_Nova_VariableDeclaration.h>
 #include <compiler/tree/nodes/compiler_tree_nodes_Nova_Accessible.h>
+#include <compiler/tree/nodes/compiler_tree_nodes_Nova_Identifier.h>
 #include <compiler/tree/nodes/compiler_tree_nodes_Nova_Node.h>
 #include <compiler/tree/nodes/compiler_tree_nodes_Nova_NodeList.h>
+#include <compiler/tree/nodes/compiler_tree_nodes_Nova_StaticClassReference.h>
 #include <compiler/tree/nodes/compiler_tree_nodes_Nova_Value.h>
 #include <compiler/tree/nodes/annotations/compiler_tree_nodes_annotations_Nova_Annotatable.h>
 #include <compiler/tree/nodes/annotations/compiler_tree_nodes_annotations_Nova_Annotation.h>
@@ -48,6 +51,7 @@
 
 typedef struct
 {
+	/* Accessible current */ compiler_tree_nodes_Nova_Accessible** compiler_tree_nodes_Nova_Scope_Nova_current;
 	/* Bool require = true */ int* compiler_tree_nodes_Nova_Scope_Nova_require;
 } Context1;
 
@@ -77,13 +81,15 @@ compiler_tree_nodes_Scope_Extension_VTable compiler_tree_nodes_Scope_Extension_V
 		(char(*)(nova_operators_Nova_Equals*, nova_exception_Nova_ExceptionData*, nova_Nova_Object*))nova_Nova_Object_Nova_equals,
 		0,
 		0,
+		0,
+		0,
 		(void(*)(compiler_tree_nodes_annotations_Nova_Annotatable*, nova_exception_Nova_ExceptionData*, compiler_tree_nodes_annotations_Nova_Annotation*))compiler_tree_nodes_Nova_Node_Nova_addAnnotation,
 	},
 	nova_Nova_Object_Nova_equals,
-	nova_Nova_Object_Nova_toString,
+	compiler_tree_nodes_Nova_Node_Nova_toString,
 	nova_Nova_Object_Accessor_Nova_hashCodeLong,
-	compiler_tree_nodes_Nova_Scope_Nova_parseChild,
 	compiler_tree_nodes_Nova_Node_Nova_addAnnotation,
+	compiler_tree_nodes_Nova_Scope_Nova_parseStatement,
 	compiler_tree_nodes_Nova_Node_Nova_clone,
 	compiler_tree_nodes_Nova_Node_Nova_cloneTo,
 	compiler_tree_nodes_Nova_Node_Accessor_Nova_program,
@@ -102,7 +108,7 @@ CCLASS_PRIVATE
 )
 
 compiler_tree_nodes_Nova_Node* compiler_tree_nodes_Nova_Scope_Nova_parseIdentifierAccess(compiler_tree_nodes_Nova_Scope* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* input, compiler_tree_nodes_Nova_Scope* parent, int require);
-char compiler_tree_nodes_Nova_Scope_Nova_testLambda60(compiler_tree_nodes_Nova_Scope* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* _1, int _2, nova_datastruct_list_Nova_List* _3, Context1* context);
+char compiler_tree_nodes_Nova_Scope_Nova_testLambda62(compiler_tree_nodes_Nova_Scope* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* _1, int _2, nova_datastruct_list_Nova_List* _3, Context1* context);
 void compiler_tree_nodes_Nova_Scope_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData)
 {
 	{
@@ -147,10 +153,12 @@ void compiler_tree_nodes_Nova_Scope_Nova_this(compiler_tree_nodes_Nova_Scope* th
 	this->compiler_tree_nodes_Nova_Scope_Nova_declarations = nova_datastruct_list_Nova_Array_0_Nova_construct(0, exceptionData);
 }
 
-compiler_tree_nodes_Nova_Node* compiler_tree_nodes_Nova_Scope_Nova_parseChild(compiler_tree_nodes_Nova_Scope* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* input, int require)
+compiler_tree_nodes_Nova_Node* compiler_tree_nodes_Nova_Scope_Nova_parseStatement(compiler_tree_nodes_Nova_Scope* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* input, compiler_tree_nodes_Nova_Node* parent, compiler_util_Nova_Location* location, int require)
 {
 	compiler_tree_nodes_Nova_Node* l1_Nova_node = (compiler_tree_nodes_Nova_Node*)nova_null;
 	
+	parent = (compiler_tree_nodes_Nova_Node*)(parent == 0 ? (nova_Nova_Object*)(nova_Nova_Object*)nova_null : (nova_Nova_Object*)parent);
+	location = (compiler_util_Nova_Location*)(location == 0 ? (nova_Nova_Object*)compiler_util_Nova_Location_Nova_INVALID : (nova_Nova_Object*)location);
 	require = (int)(require == (intptr_t)nova_null ? 1 : require);
 	l1_Nova_node = (compiler_tree_nodes_Nova_Node*)((nova_Nova_Object*)nova_null);
 	if (!(l1_Nova_node != (compiler_tree_nodes_Nova_Node*)nova_null))
@@ -158,7 +166,7 @@ compiler_tree_nodes_Nova_Node* compiler_tree_nodes_Nova_Scope_Nova_parseChild(co
 		l1_Nova_node = compiler_tree_nodes_Nova_Scope_Nova_parseIdentifierAccess(this, exceptionData, input, this, require);
 		if (!(l1_Nova_node != (compiler_tree_nodes_Nova_Node*)nova_null))
 		{
-			l1_Nova_node = (compiler_tree_nodes_Nova_Node*)(compiler_tree_nodes_Nova_Value_static_Nova_parse(0, exceptionData, input, (compiler_tree_nodes_Nova_Node*)(this), this->compiler_tree_nodes_Nova_Node_Nova_location, require));
+			l1_Nova_node = (compiler_tree_nodes_Nova_Node*)(compiler_tree_nodes_Nova_Value_static_Nova_parse(0, exceptionData, input, (compiler_tree_nodes_Nova_Node*)(this), location, require));
 		}
 	}
 	return l1_Nova_node;
@@ -166,9 +174,20 @@ compiler_tree_nodes_Nova_Node* compiler_tree_nodes_Nova_Scope_Nova_parseChild(co
 
 compiler_tree_nodes_Nova_Accessible* compiler_tree_nodes_Nova_Scope_Nova_parseAccessible(compiler_tree_nodes_Nova_Scope* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* input, compiler_tree_nodes_Nova_Node* parent, int require)
 {
+	nova_Nova_Object* l1_Nova_node = (nova_Nova_Object*)nova_null;
+	
 	parent = (compiler_tree_nodes_Nova_Node*)(parent == 0 ? (nova_Nova_Object*)this : (nova_Nova_Object*)parent);
 	require = (int)(require == (intptr_t)nova_null ? 1 : require);
-	return (compiler_tree_nodes_Nova_Accessible*)(nova_Nova_Object*)nova_null;
+	l1_Nova_node = (nova_Nova_Object*)nova_null;
+	if (!(l1_Nova_node != (nova_Nova_Object*)nova_null))
+	{
+		l1_Nova_node = (nova_Nova_Object*)(compiler_tree_nodes_Nova_StaticClassReference_static_Nova_parse(0, exceptionData, input, parent, this->compiler_tree_nodes_Nova_Node_Nova_location, require));
+		if (!(l1_Nova_node != (nova_Nova_Object*)nova_null))
+		{
+			l1_Nova_node = (nova_Nova_Object*)(compiler_tree_nodes_functions_Nova_FunctionCall_static_Nova_parse(0, exceptionData, input, parent, this->compiler_tree_nodes_Nova_Node_Nova_location, require));
+		}
+	}
+	return (compiler_tree_nodes_Nova_Accessible*)l1_Nova_node;
 }
 
 compiler_tree_nodes_Nova_Node* compiler_tree_nodes_Nova_Scope_Nova_parseIdentifierAccess(compiler_tree_nodes_Nova_Scope* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* input, compiler_tree_nodes_Nova_Scope* parent, int require)
@@ -193,16 +212,19 @@ compiler_tree_nodes_Nova_Node* compiler_tree_nodes_Nova_Scope_Nova_parseIdentifi
 		compiler_tree_nodes_Nova_Accessible* l2_Nova_current = (compiler_tree_nodes_Nova_Accessible*)nova_null;
 		
 		nova_datastruct_list_Nova_Array_0_Nova_add((nova_datastruct_list_Nova_Array*)(l1_Nova_fragments), exceptionData, (nova_Nova_Object*)(nova_Nova_String_Nova_substring(input, exceptionData, l1_Nova_prev, (intptr_t)nova_null)));
+		nova_io_Nova_Console_1_static_Nova_writeLine(0, exceptionData, nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)(nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("Parsing "))), exceptionData, nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)(nova_Nova_Object_virtual_Nova_toString((nova_Nova_Object*)((nova_datastruct_list_Nova_Array_virtual_Nova_get((nova_datastruct_list_Nova_Array*)(l1_Nova_fragments), exceptionData, 0))), exceptionData)), exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("")))));
 		l2_Nova_root = compiler_tree_nodes_Nova_Scope_Nova_parseAccessible(this, exceptionData, (nova_Nova_String*)(nova_datastruct_list_Nova_Array_virtual_Nova_get((nova_datastruct_list_Nova_Array*)(l1_Nova_fragments), exceptionData, 0)), 0, require);
 		l2_Nova_current = l2_Nova_root;
+		nova_io_Nova_Console_1_static_Nova_writeLine(0, exceptionData, nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)(nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("Parsed root: "))), exceptionData, nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)(nova_Nova_Object_virtual_Nova_toString((nova_Nova_Object*)(((nova_Nova_Object*)l2_Nova_root)), exceptionData)), exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("")))));
 		if (l2_Nova_current != (compiler_tree_nodes_Nova_Accessible*)nova_null)
 		{
-			Context1 contextArg60 = 
+			Context1 contextArg62 = 
 			{
+				&l2_Nova_current,
 				&require,
 			};
 			
-			if (nova_datastruct_list_Nova_List_virtual0_Nova_all((nova_datastruct_list_Nova_List*)(nova_datastruct_list_Nova_List_virtual_Nova_skip((nova_datastruct_list_Nova_List*)(l1_Nova_fragments), exceptionData, 1)), exceptionData, (nova_datastruct_list_Nova_List_closure12_Nova_allFunc)&compiler_tree_nodes_Nova_Scope_Nova_testLambda60, this, &contextArg60))
+			if (nova_datastruct_list_Nova_List_virtual0_Nova_all((nova_datastruct_list_Nova_List*)(nova_datastruct_list_Nova_List_virtual_Nova_skip((nova_datastruct_list_Nova_List*)(l1_Nova_fragments), exceptionData, 1)), exceptionData, (nova_datastruct_list_Nova_List_closure12_Nova_allFunc)&compiler_tree_nodes_Nova_Scope_Nova_testLambda62, this, &contextArg62))
 			{
 				return (compiler_tree_nodes_Nova_Node*)l2_Nova_root;
 			}
@@ -211,13 +233,15 @@ compiler_tree_nodes_Nova_Node* compiler_tree_nodes_Nova_Scope_Nova_parseIdentifi
 	return (compiler_tree_nodes_Nova_Node*)(nova_Nova_Object*)nova_null;
 }
 
-char compiler_tree_nodes_Nova_Scope_Nova_testLambda60(compiler_tree_nodes_Nova_Scope* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* _1, int _2, nova_datastruct_list_Nova_List* _3, Context1* context)
+char compiler_tree_nodes_Nova_Scope_Nova_testLambda62(compiler_tree_nodes_Nova_Scope* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* _1, int _2, nova_datastruct_list_Nova_List* _3, Context1* context)
 {
-	compiler_tree_nodes_Nova_Accessible* l1_Nova_accessed = (compiler_tree_nodes_Nova_Accessible*)nova_null;
+	compiler_tree_nodes_Nova_Accessible* l4_Nova_accessed = (compiler_tree_nodes_Nova_Accessible*)nova_null;
 	
-	l1_Nova_accessed = compiler_tree_nodes_Nova_Scope_Nova_parseAccessible(this, exceptionData, _1, (compiler_tree_nodes_Nova_Node*)((nova_Nova_Object*)nova_null), (*context->compiler_tree_nodes_Nova_Scope_Nova_require));
-	if (l1_Nova_accessed != (compiler_tree_nodes_Nova_Accessible*)nova_null)
+	l4_Nova_accessed = compiler_tree_nodes_Nova_Scope_Nova_parseAccessible(this, exceptionData, _1, (compiler_tree_nodes_Nova_Node*)(*context->compiler_tree_nodes_Nova_Scope_Nova_current), (*context->compiler_tree_nodes_Nova_Scope_Nova_require));
+	if (l4_Nova_accessed != (compiler_tree_nodes_Nova_Accessible*)nova_null)
 	{
+		nova_io_Nova_Console_1_static_Nova_writeLine(0, exceptionData, nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)(nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("Parsed: "))), exceptionData, nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)(nova_Nova_Object_virtual_Nova_toString((nova_Nova_Object*)(((nova_Nova_Object*)l4_Nova_accessed)), exceptionData)), exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("")))));
+		compiler_tree_nodes_Nova_Accessible_virtual_Mutator0_Nova_accessedNode((compiler_tree_nodes_Nova_Accessible*)((*context->compiler_tree_nodes_Nova_Scope_Nova_current)), exceptionData, (compiler_tree_nodes_Nova_Identifier*)l4_Nova_accessed);
 		return 1;
 	}
 	return 0;

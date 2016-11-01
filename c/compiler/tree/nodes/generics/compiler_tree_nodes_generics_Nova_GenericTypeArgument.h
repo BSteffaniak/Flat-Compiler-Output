@@ -8,6 +8,7 @@ typedef struct compiler_tree_nodes_generics_Nova_GenericTypeArgument compiler_tr
 #include <Nova.h>
 #include <InterfaceVTAble.h>
 #include <ExceptionHandler.h>
+#include <NovaClassData.h>
 #include <nova/exception/nova_exception_Nova_ExceptionData.h>
 #include <nova/exception/nova_exception_Nova_Exception.h>
 #include <nova/exception/nova_exception_Nova_DivideByZeroException.h>

@@ -58,6 +58,8 @@ compiler_tree_SyntaxTree_Extension_VTable compiler_tree_SyntaxTree_Extension_VTa
 		0,
 		0,
 		0,
+		0,
+		0,
 	},
 	nova_Nova_Object_Nova_equals,
 	nova_Nova_Object_Nova_toString,

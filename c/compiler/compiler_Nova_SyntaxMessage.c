@@ -60,6 +60,8 @@ compiler_SyntaxMessage_Extension_VTable compiler_SyntaxMessage_Extension_VTable_
 		0,
 		0,
 		0,
+		0,
+		0,
 	},
 	nova_Nova_Object_Nova_equals,
 	nova_Nova_Object_Nova_toString,

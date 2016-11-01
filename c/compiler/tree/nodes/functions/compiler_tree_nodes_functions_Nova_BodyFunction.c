@@ -40,7 +40,9 @@
 #include <compiler/tree/nodes/compiler_tree_nodes_Nova_Accessible.h>
 #include <compiler/tree/nodes/compiler_tree_nodes_Nova_Value.h>
 #include <compiler/tree/nodes/arrays/compiler_tree_nodes_arrays_Nova_ArrayAccess.h>
+#include <compiler/tree/nodes/operations/compiler_tree_nodes_operations_Nova_Operation.h>
 #include <compiler/tree/nodes/variables/compiler_tree_nodes_variables_Nova_Variable.h>
+#include <compiler/tree/nodes/compiler_tree_nodes_Nova_Literal.h>
 #include <compiler/tree/nodes/annotations/compiler_tree_nodes_annotations_Nova_Annotatable.h>
 #include <compiler/tree/nodes/annotations/compiler_tree_nodes_annotations_Nova_Annotation.h>
 #include <compiler/tree/nodes/exceptionhandling/compiler_tree_nodes_exceptionhandling_Nova_Try.h>
@@ -78,13 +80,15 @@ compiler_tree_nodes_functions_BodyFunction_Extension_VTable compiler_tree_nodes_
 		(char(*)(nova_operators_Nova_Equals*, nova_exception_Nova_ExceptionData*, nova_Nova_Object*))nova_Nova_Object_Nova_equals,
 		0,
 		0,
+		(compiler_tree_nodes_Nova_Identifier*(*)(compiler_tree_nodes_Nova_Accessible*, nova_exception_Nova_ExceptionData*, compiler_tree_nodes_Nova_Identifier*))compiler_tree_nodes_Nova_Identifier_Mutatorfunc0_Nova_accessedNode,
+		(compiler_tree_nodes_Nova_Identifier*(*)(compiler_tree_nodes_Nova_Accessible*, nova_exception_Nova_ExceptionData*))compiler_tree_nodes_Nova_Identifier_Accessorfunc_Nova_accessedNode,
 		(void(*)(compiler_tree_nodes_annotations_Nova_Annotatable*, nova_exception_Nova_ExceptionData*, compiler_tree_nodes_annotations_Nova_Annotation*))compiler_tree_nodes_Nova_Node_Nova_addAnnotation,
 	},
 	nova_Nova_Object_Nova_equals,
 	compiler_tree_nodes_functions_Nova_NovaFunction_Nova_toString,
 	nova_Nova_Object_Accessor_Nova_hashCodeLong,
-	compiler_tree_nodes_functions_Nova_BodyFunction_Nova_parseChild,
 	compiler_tree_nodes_Nova_Node_Nova_addAnnotation,
+	compiler_tree_nodes_functions_Nova_BodyFunction_Nova_parseStatement,
 	compiler_tree_nodes_Nova_Node_Nova_clone,
 	compiler_tree_nodes_functions_Nova_NovaFunction_Nova_cloneTo,
 	compiler_tree_nodes_Nova_Node_Accessor_Nova_program,
@@ -94,6 +98,8 @@ compiler_tree_nodes_functions_BodyFunction_Extension_VTable compiler_tree_nodes_
 	compiler_tree_nodes_Nova_Node_Accessor_Nova_parentClass,
 	compiler_tree_nodes_functions_Nova_BodyFunction_Accessorfunc_Nova_scope,
 	compiler_tree_nodes_functions_Nova_BodyFunction_static_Nova_parse,
+	compiler_tree_nodes_Nova_Identifier_Accessorfunc_Nova_accessedNode,
+	compiler_tree_nodes_Nova_Identifier_Mutatorfunc0_Nova_accessedNode,
 	compiler_tree_nodes_variables_Nova_InstanceDeclaration_Nova_parseModifier,
 	compiler_tree_nodes_variables_Nova_InstanceDeclaration_Nova_writeModifiers,
 };
@@ -145,10 +151,12 @@ void compiler_tree_nodes_functions_Nova_BodyFunction_Nova_this(compiler_tree_nod
 	compiler_tree_nodes_functions_Nova_BodyFunction_Mutatorfunc_Nova_scope(this, exceptionData, compiler_tree_nodes_Nova_Scope_Nova_construct(0, exceptionData, (compiler_tree_nodes_Nova_Node*)(this), location));
 }
 
-compiler_tree_nodes_Nova_Node* compiler_tree_nodes_functions_Nova_BodyFunction_Nova_parseChild(compiler_tree_nodes_functions_Nova_BodyFunction* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* statement, int require)
+compiler_tree_nodes_Nova_Node* compiler_tree_nodes_functions_Nova_BodyFunction_Nova_parseStatement(compiler_tree_nodes_functions_Nova_BodyFunction* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* input, compiler_tree_nodes_Nova_Node* parent, compiler_util_Nova_Location* location, int require)
 {
+	parent = (compiler_tree_nodes_Nova_Node*)(parent == 0 ? (nova_Nova_Object*)(nova_Nova_Object*)nova_null : (nova_Nova_Object*)parent);
+	location = (compiler_util_Nova_Location*)(location == 0 ? (nova_Nova_Object*)compiler_util_Nova_Location_Nova_INVALID : (nova_Nova_Object*)location);
 	require = (int)(require == (intptr_t)nova_null ? 1 : require);
-	return compiler_tree_nodes_Nova_Scope_Nova_parseChild(compiler_tree_nodes_functions_Nova_BodyFunction_Accessorfunc_Nova_scope(this, exceptionData), exceptionData, statement, require);
+	return compiler_tree_nodes_Nova_Scope_Nova_parseStatement(compiler_tree_nodes_functions_Nova_BodyFunction_Accessorfunc_Nova_scope(this, exceptionData), exceptionData, input, (compiler_tree_nodes_Nova_Node*)(this), location, require);
 }
 
 compiler_tree_nodes_functions_Nova_BodyFunction* compiler_tree_nodes_functions_Nova_BodyFunction_static_Nova_parse(compiler_tree_nodes_functions_Nova_BodyFunction* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* input, compiler_tree_nodes_Nova_Node* parent, compiler_util_Nova_Location* location, int require)

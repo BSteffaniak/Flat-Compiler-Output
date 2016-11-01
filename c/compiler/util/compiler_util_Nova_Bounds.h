@@ -8,6 +8,7 @@ typedef struct compiler_util_Nova_Bounds compiler_util_Nova_Bounds;
 #include <Nova.h>
 #include <InterfaceVTAble.h>
 #include <ExceptionHandler.h>
+#include <NovaClassData.h>
 #include <nova/exception/nova_exception_Nova_ExceptionData.h>
 #include <nova/exception/nova_exception_Nova_Exception.h>
 #include <nova/exception/nova_exception_Nova_DivideByZeroException.h>

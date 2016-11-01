@@ -8,6 +8,7 @@ typedef struct compiler_tree_nodes_Nova_Import compiler_tree_nodes_Nova_Import;
 #include <Nova.h>
 #include <InterfaceVTAble.h>
 #include <ExceptionHandler.h>
+#include <NovaClassData.h>
 #include <nova/exception/nova_exception_Nova_ExceptionData.h>
 #include <nova/exception/nova_exception_Nova_Exception.h>
 #include <nova/exception/nova_exception_Nova_DivideByZeroException.h>
@@ -36,6 +37,7 @@ typedef struct compiler_tree_nodes_Nova_Import compiler_tree_nodes_Nova_Import;
 #include <nova/nova_Nova_System.h>
 #include <nova/nova_Nova_Class.h>
 #include <nova/regex/nova_regex_Nova_Pattern.h>
+#include <compiler/compiler_Nova_SyntaxMessage.h>
 #include <compiler/util/compiler_util_Nova_Location.h>
 #include <compiler/tree/nodes/compiler_tree_nodes_Nova_Node.h>
 #include <compiler/tree/nodes/compiler_tree_nodes_Nova_NovaClass.h>
@@ -57,10 +59,10 @@ struct compiler_tree_nodes_Import_Extension_VTable
 {
 	nova_Interface_VTable itable;
 	char (*nova_operators_Nova_Equals_virtual_Nova_equals)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*, nova_Nova_Object*);
-	nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
+	nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(compiler_tree_nodes_Nova_Import*, nova_exception_Nova_ExceptionData*);
 	long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
-	compiler_tree_nodes_Nova_Node* (*compiler_tree_nodes_Nova_Node_virtual_Nova_parseChild)(compiler_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, int);
 	void (*compiler_tree_nodes_annotations_Nova_Annotatable_virtual_Nova_addAnnotation)(compiler_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, compiler_tree_nodes_annotations_Nova_Annotation*);
+	compiler_tree_nodes_Nova_Node* (*compiler_tree_nodes_Nova_Node_virtual_Nova_parseStatement)(compiler_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, compiler_tree_nodes_Nova_Node*, compiler_util_Nova_Location*, int);
 	compiler_tree_nodes_Nova_Node* (*compiler_tree_nodes_Nova_Node_virtual_Nova_clone)(compiler_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, compiler_tree_nodes_Nova_Node*, compiler_util_Nova_Location*, int);
 	compiler_tree_nodes_Nova_Node* (*compiler_tree_nodes_Nova_Node_virtual_Nova_cloneTo)(compiler_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, compiler_tree_nodes_Nova_Node*);
 	compiler_tree_nodes_Nova_Program* (*compiler_tree_nodes_Nova_Node_virtual_Accessor_Nova_program)(compiler_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*);
@@ -96,7 +98,9 @@ void compiler_tree_nodes_Nova_Import_Nova_destroy(compiler_tree_nodes_Nova_Impor
 void compiler_tree_nodes_Nova_Import_Nova_this(compiler_tree_nodes_Nova_Import* this, nova_exception_Nova_ExceptionData* exceptionData, compiler_tree_nodes_Nova_Node* parent, compiler_util_Nova_Location* location);
 nova_Nova_String* compiler_tree_nodes_Nova_Import_Nova_getClassLocation(compiler_tree_nodes_Nova_Import* this, nova_exception_Nova_ExceptionData* exceptionData, int aliased);
 compiler_tree_nodes_Nova_Import* compiler_tree_nodes_Nova_Import_static_Nova_parse(compiler_tree_nodes_Nova_Import* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* input, compiler_tree_nodes_Nova_Node* parent, compiler_util_Nova_Location* location, int require);
+nova_Nova_String* compiler_tree_nodes_Nova_Import_Nova_toString(compiler_tree_nodes_Nova_Import* this, nova_exception_Nova_ExceptionData* exceptionData);
 nova_Nova_String* compiler_tree_nodes_Nova_Import_Accessor_Nova_parentLocation(compiler_tree_nodes_Nova_Import* this, nova_exception_Nova_ExceptionData* exceptionData);
+nova_Nova_String* compiler_tree_nodes_Nova_Import_Accessor_Nova_className(compiler_tree_nodes_Nova_Import* this, nova_exception_Nova_ExceptionData* exceptionData);
 compiler_tree_nodes_Nova_NovaClass* compiler_tree_nodes_Nova_Import_Accessor_Nova_classDeclaration(compiler_tree_nodes_Nova_Import* this, nova_exception_Nova_ExceptionData* exceptionData);
 void compiler_tree_nodes_Nova_Import_Nova_super(compiler_tree_nodes_Nova_Import* this, nova_exception_Nova_ExceptionData* exceptionData);
 

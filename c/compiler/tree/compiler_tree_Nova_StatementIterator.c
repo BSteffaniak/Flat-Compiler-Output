@@ -60,6 +60,8 @@ compiler_tree_StatementIterator_Extension_VTable compiler_tree_StatementIterator
 		0,
 		0,
 		0,
+		0,
+		0,
 	},
 	nova_Nova_Object_Nova_equals,
 	nova_Nova_Object_Nova_toString,

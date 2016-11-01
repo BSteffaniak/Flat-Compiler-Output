@@ -58,6 +58,8 @@ compiler_tree_nodes_operations_UnaryOperation_Extension_VTable compiler_tree_nod
 		0,
 		0,
 		0,
+		0,
+		0,
 	},
 	nova_Nova_Object_Nova_equals,
 	nova_Nova_Object_Nova_toString,
