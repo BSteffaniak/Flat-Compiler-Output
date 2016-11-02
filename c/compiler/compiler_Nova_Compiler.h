@@ -39,8 +39,9 @@ typedef struct compiler_Nova_Compiler compiler_Nova_Compiler;
 #include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <nova/io/nova_io_Nova_File.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_Stack.h>
+#include <nova/datastruct/list/nova_datastruct_list_Nova_List.h>
 #include <compiler/util/compiler_util_Nova_FileUtils.h>
-#include <compiler/tree/nodes/compiler_tree_nodes_Nova_NovaClass.h>
+#include <compiler/tree/nodes/compiler_tree_nodes_Nova_ClassDeclaration.h>
 #include <compiler/tree/nodes/compiler_tree_nodes_Nova_NovaFile.h>
 #include <compiler/tree/nodes/compiler_tree_nodes_Nova_Node.h>
 #include <compiler/tree/nodes/compiler_tree_nodes_Nova_Program.h>
@@ -54,6 +55,7 @@ typedef struct compiler_Nova_Compiler compiler_Nova_Compiler;
 typedef struct compiler_Compiler_Extension_VTable compiler_Compiler_Extension_VTable;
 struct compiler_Compiler_Extension_VTable
 {
+	nova_Nova_Class* classInstance;
 	nova_Interface_VTable itable;
 	char (*nova_operators_Nova_Equals_virtual_Nova_equals)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*, nova_Nova_Object*);
 	nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
@@ -68,10 +70,11 @@ CCLASS_CLASS
 	compiler_Nova_Compiler, 
 	
 	compiler_Compiler_Extension_VTable* vtable;
-	nova_Nova_Class* nova_Nova_Object_Nova_class;
 	nova_datastruct_list_Nova_Array* compiler_Nova_Compiler_Nova_errors;
 	nova_datastruct_list_Nova_Array* compiler_Nova_Compiler_Nova_warnings;
 	nova_datastruct_list_Nova_Array* compiler_Nova_Compiler_Nova_info;
+	char compiler_Nova_Compiler_Nova_phase;
+	struct Private* prv;
 )
 extern char compiler_Nova_Compiler_Nova_DEBUG;
 extern char compiler_Nova_Compiler_Nova_testClasses;

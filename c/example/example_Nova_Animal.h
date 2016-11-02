@@ -8,6 +8,7 @@ typedef struct example_Nova_Animal example_Nova_Animal;
 #include <Nova.h>
 #include <InterfaceVTAble.h>
 #include <ExceptionHandler.h>
+#include <NovaClassData.h>
 #include <nova/exception/nova_exception_Nova_ExceptionData.h>
 #include <nova/exception/nova_exception_Nova_Exception.h>
 #include <nova/exception/nova_exception_Nova_DivideByZeroException.h>
@@ -43,6 +44,7 @@ typedef struct example_Nova_Animal example_Nova_Animal;
 typedef struct example_Animal_Extension_VTable example_Animal_Extension_VTable;
 struct example_Animal_Extension_VTable
 {
+	nova_Nova_Class* classInstance;
 	nova_Interface_VTable itable;
 	char (*nova_operators_Nova_Equals_virtual_Nova_equals)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*, nova_Nova_Object*);
 	nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(example_Nova_Animal*, nova_exception_Nova_ExceptionData*);
@@ -60,7 +62,6 @@ CCLASS_CLASS
 	example_Nova_Animal, 
 	
 	example_Animal_Extension_VTable* vtable;
-	nova_Nova_Class* nova_Nova_Object_Nova_class;
 )
 
 void example_Nova_Animal_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData);

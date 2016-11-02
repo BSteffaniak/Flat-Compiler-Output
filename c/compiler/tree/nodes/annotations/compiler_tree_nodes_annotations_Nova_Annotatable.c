@@ -33,7 +33,9 @@
 
 compiler_tree_nodes_annotations_Annotatable_Extension_VTable compiler_tree_nodes_annotations_Annotatable_Extension_VTable_val =
 {
+	0,
 	{
+		0,
 		0,
 		0,
 		0,

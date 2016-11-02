@@ -30,6 +30,38 @@
 
 
 
+compiler_tree_nodes_Listener_Extension_VTable compiler_tree_nodes_Listener_Extension_VTable_val =
+{
+	0,
+	{
+		0,
+		0,
+		0,
+		0,
+		0,
+		0,
+		0,
+		0,
+		0,
+		0,
+		0,
+		0,
+		0,
+		0,
+		0,
+		0,
+		0,
+		0,
+		0,
+		0,
+		0,
+		0,
+		0,
+		0,
+		0,
+		0,
+	},
+};
 
 
 void compiler_tree_nodes_Nova_Listener_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData)

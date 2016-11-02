@@ -45,6 +45,7 @@ typedef struct compiler_tree_nodes_Nova_ValidationResult compiler_tree_nodes_Nov
 typedef struct compiler_tree_nodes_ValidationResult_Extension_VTable compiler_tree_nodes_ValidationResult_Extension_VTable;
 struct compiler_tree_nodes_ValidationResult_Extension_VTable
 {
+	nova_Nova_Class* classInstance;
 	nova_Interface_VTable itable;
 	char (*nova_operators_Nova_Equals_virtual_Nova_equals)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*, nova_Nova_Object*);
 	nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
@@ -59,7 +60,6 @@ CCLASS_CLASS
 	compiler_tree_nodes_Nova_ValidationResult, 
 	
 	compiler_tree_nodes_ValidationResult_Extension_VTable* vtable;
-	nova_Nova_Class* nova_Nova_Object_Nova_class;
 	compiler_tree_nodes_Nova_Node* compiler_tree_nodes_Nova_ValidationResult_Nova_node;
 )
 

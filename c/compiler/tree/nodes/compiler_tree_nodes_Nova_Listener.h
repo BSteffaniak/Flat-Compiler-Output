@@ -40,6 +40,12 @@ typedef struct compiler_tree_nodes_Nova_Listener compiler_tree_nodes_Nova_Listen
 
 
 typedef struct compiler_tree_nodes_Listener_Extension_VTable compiler_tree_nodes_Listener_Extension_VTable;
+struct compiler_tree_nodes_Listener_Extension_VTable
+{
+	nova_Nova_Class* classInstance;
+	nova_Interface_VTable itable;
+};
+
 extern compiler_tree_nodes_Listener_Extension_VTable compiler_tree_nodes_Listener_Extension_VTable_val;
 
 

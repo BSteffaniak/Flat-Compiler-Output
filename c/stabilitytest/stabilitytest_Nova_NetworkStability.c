@@ -39,6 +39,7 @@
 
 stabilitytest_NetworkStability_Extension_VTable stabilitytest_NetworkStability_Extension_VTable_val =
 {
+	0,
 	{
 		0,
 		0,
@@ -60,6 +61,9 @@ stabilitytest_NetworkStability_Extension_VTable stabilitytest_NetworkStability_E
 		0,
 		0,
 		(char(*)(nova_operators_Nova_Equals*, nova_exception_Nova_ExceptionData*, nova_Nova_Object*))nova_Nova_Object_Nova_equals,
+		0,
+		0,
+		0,
 		0,
 		0,
 		0,
@@ -129,15 +133,9 @@ void stabilitytest_Nova_NetworkStability_Nova_test(stabilitytest_Nova_NetworkSta
 	nova_thread_Nova_Thread_Nova_start((nova_thread_Nova_Thread*)(l1_Nova_thread), exceptionData);
 	nova_io_Nova_Console_1_static_Nova_writeLine(0, exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("Accepting ClientSocket connection... ")));
 	l1_Nova_connection = nova_network_Nova_ServerSocket_Nova_acceptClient(l1_Nova_server, exceptionData);
-	if (l1_Nova_connection == (nova_network_Nova_ConnectionSocket*)nova_null)
-	{
-		stabilitytest_Nova_StabilityTest_Nova_fail(this->stabilitytest_Nova_StabilityTestCase_Nova_program, exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("Failed to accept the client")), (intptr_t)nova_null);
-	}
+	stabilitytest_Nova_StabilityTest_Nova_fail(this->stabilitytest_Nova_StabilityTestCase_Nova_program, exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("Failed to accept the client")), l1_Nova_connection == (nova_network_Nova_ConnectionSocket*)nova_null);
 	nova_io_Nova_Console_1_static_Nova_writeLine(0, exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("Sending String to ClientSocket... ")));
-	if (!nova_io_Nova_OutputStream_virtual0_Nova_write((nova_io_Nova_OutputStream*)(l1_Nova_connection->nova_network_Nova_ConnectionSocket_Nova_out), exceptionData, stabilitytest_Nova_NetworkStability_Nova_received))
-	{
-		stabilitytest_Nova_StabilityTest_Nova_fail(this->stabilitytest_Nova_StabilityTestCase_Nova_program, exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("Server unable to send data to client")), (intptr_t)nova_null);
-	}
+	stabilitytest_Nova_StabilityTest_Nova_fail(this->stabilitytest_Nova_StabilityTestCase_Nova_program, exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("Server unable to send data to client")), !nova_io_Nova_OutputStream_virtual0_Nova_write((nova_io_Nova_OutputStream*)(l1_Nova_connection->nova_network_Nova_ConnectionSocket_Nova_out), exceptionData, stabilitytest_Nova_NetworkStability_Nova_received));
 	nova_io_Nova_Console_1_static_Nova_writeLine(0, exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("Waiting for String from ClientSocket... ")));
 	l1_Nova_s = (nova_Nova_String*)(nova_io_Nova_InputStream_virtual_Nova_readString((nova_io_Nova_InputStream*)(l1_Nova_connection->nova_network_Nova_ConnectionSocket_Nova_in), exceptionData));
 	stabilitytest_Nova_StabilityTest_Nova_fail(this->stabilitytest_Nova_StabilityTestCase_Nova_program, exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("Server unable to receive correct message from client")), l1_Nova_s->nova_Nova_String_Nova_count != stabilitytest_Nova_NetworkStability_Nova_received->nova_Nova_String_Nova_count || !nova_Nova_String_Nova_equals(l1_Nova_s, exceptionData, stabilitytest_Nova_NetworkStability_Nova_received));

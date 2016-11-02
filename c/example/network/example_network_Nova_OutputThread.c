@@ -37,6 +37,7 @@
 
 example_network_OutputThread_Extension_VTable example_network_OutputThread_Extension_VTable_val =
 {
+	0,
 	{
 		0,
 		0,
@@ -58,6 +59,9 @@ example_network_OutputThread_Extension_VTable example_network_OutputThread_Exten
 		0,
 		0,
 		(char(*)(nova_operators_Nova_Equals*, nova_exception_Nova_ExceptionData*, nova_Nova_Object*))nova_Nova_Object_Nova_equals,
+		0,
+		0,
+		0,
 		0,
 		0,
 		0,

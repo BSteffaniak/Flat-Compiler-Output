@@ -32,6 +32,7 @@
 
 compiler_tree_nodes_Abstractable_Extension_VTable compiler_tree_nodes_Abstractable_Extension_VTable_val =
 {
+	0,
 	{
 		0,
 		0,
@@ -54,12 +55,14 @@ compiler_tree_nodes_Abstractable_Extension_VTable compiler_tree_nodes_Abstractab
 		0,
 		0,
 		0,
-		(nova_Nova_String*(*)(compiler_tree_nodes_Nova_Abstractable*, nova_exception_Nova_ExceptionData*))compiler_tree_nodes_Nova_Abstractable_Nova_writeAbstract,
+		(char(*)(compiler_tree_nodes_Nova_Abstractable*, nova_exception_Nova_ExceptionData*, char))compiler_tree_nodes_Nova_Abstractable_Mutator_Nova_isAbstract,
+		(char(*)(compiler_tree_nodes_Nova_Abstractable*, nova_exception_Nova_ExceptionData*))compiler_tree_nodes_Nova_Abstractable_Accessor_Nova_isAbstract,
 		0,
 		0,
 		0,
 	},
-	compiler_tree_nodes_Nova_Abstractable_Nova_writeAbstract,
+	compiler_tree_nodes_Nova_Abstractable_Mutator_Nova_isAbstract,
+	compiler_tree_nodes_Nova_Abstractable_Accessor_Nova_isAbstract,
 };
 
 
@@ -71,11 +74,26 @@ void compiler_tree_nodes_Nova_Abstractable_Nova_init_static(nova_exception_Nova_
 
 nova_Nova_String* compiler_tree_nodes_Nova_Abstractable_Nova_writeAbstract(compiler_tree_nodes_Nova_Abstractable* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
-	return (nova_Nova_String*)(this->compiler_tree_nodes_Nova_Abstractable_Nova_isAbstract ? nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("abstract ")) : nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("")));
+	return (nova_Nova_String*)(compiler_tree_nodes_Nova_Abstractable_virtual_Accessor1_Nova_isAbstract((compiler_tree_nodes_Nova_Abstractable*)(this), exceptionData) ? nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("abstract ")) : nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("")));
 }
 
-nova_Nova_String* compiler_tree_nodes_Nova_Abstractable_virtual_Nova_writeAbstract(compiler_tree_nodes_Nova_Abstractable* this, nova_exception_Nova_ExceptionData* exceptionData)
+char compiler_tree_nodes_Nova_Abstractable_Mutator_Nova_isAbstract(compiler_tree_nodes_Nova_Abstractable* this, nova_exception_Nova_ExceptionData* exceptionData, char value)
 {
-	return this->vtable->itable.compiler_tree_nodes_Nova_Abstractable_virtual_Nova_writeAbstract((compiler_tree_nodes_Nova_Abstractable*)(this), exceptionData);
+	return value;
+}
+
+char compiler_tree_nodes_Nova_Abstractable_Accessor_Nova_isAbstract(compiler_tree_nodes_Nova_Abstractable* this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+	return 0;
+}
+
+char compiler_tree_nodes_Nova_Abstractable_virtual_Mutator0_Nova_isAbstract(compiler_tree_nodes_Nova_Abstractable* this, nova_exception_Nova_ExceptionData* exceptionData, char value)
+{
+	return this->vtable->itable.compiler_tree_nodes_Nova_Abstractable_virtual_Mutator0_Nova_isAbstract((compiler_tree_nodes_Nova_Abstractable*)(this), exceptionData, value);
+}
+
+char compiler_tree_nodes_Nova_Abstractable_virtual_Accessor1_Nova_isAbstract(compiler_tree_nodes_Nova_Abstractable* this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+	return this->vtable->itable.compiler_tree_nodes_Nova_Abstractable_virtual_Accessor1_Nova_isAbstract((compiler_tree_nodes_Nova_Abstractable*)(this), exceptionData);
 }
 

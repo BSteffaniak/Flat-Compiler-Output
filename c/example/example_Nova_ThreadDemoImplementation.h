@@ -8,6 +8,7 @@ typedef struct example_Nova_ThreadDemoImplementation example_Nova_ThreadDemoImpl
 #include <Nova.h>
 #include <InterfaceVTAble.h>
 #include <ExceptionHandler.h>
+#include <NovaClassData.h>
 #include <nova/exception/nova_exception_Nova_ExceptionData.h>
 #include <nova/exception/nova_exception_Nova_Exception.h>
 #include <nova/exception/nova_exception_Nova_DivideByZeroException.h>
@@ -44,6 +45,7 @@ typedef struct example_Nova_ThreadDemoImplementation example_Nova_ThreadDemoImpl
 typedef struct example_ThreadDemoImplementation_Extension_VTable example_ThreadDemoImplementation_Extension_VTable;
 struct example_ThreadDemoImplementation_Extension_VTable
 {
+	nova_Nova_Class* classInstance;
 	nova_Interface_VTable itable;
 	char (*nova_operators_Nova_Equals_virtual_Nova_equals)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*, nova_Nova_Object*);
 	nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
@@ -59,7 +61,6 @@ CCLASS_CLASS
 	example_Nova_ThreadDemoImplementation, 
 	
 	example_ThreadDemoImplementation_Extension_VTable* vtable;
-	nova_Nova_Class* nova_Nova_Object_Nova_class;
 	struct Private* prv;
 )
 

@@ -37,6 +37,7 @@
 
 example_PolymorphismDemo_Extension_VTable example_PolymorphismDemo_Extension_VTable_val =
 {
+	0,
 	{
 		0,
 		0,
@@ -58,6 +59,9 @@ example_PolymorphismDemo_Extension_VTable example_PolymorphismDemo_Extension_VTa
 		0,
 		0,
 		(char(*)(nova_operators_Nova_Equals*, nova_exception_Nova_ExceptionData*, nova_Nova_Object*))nova_Nova_Object_Nova_equals,
+		0,
+		0,
+		0,
 		0,
 		0,
 		0,
@@ -110,7 +114,7 @@ void example_Nova_PolymorphismDemo_static_Nova_main(example_Nova_PolymorphismDem
 	example_Nova_Spider* l1_Nova_spider = (example_Nova_Spider*)nova_null;
 	nova_Nova_String* l1_Nova_description = (nova_Nova_String*)nova_null;
 	
-	l1_Nova_animals = nova_datastruct_list_Nova_Array_1_Nova_construct(0, exceptionData, 2);
+	l1_Nova_animals = nova_datastruct_list_Nova_Array_1_Nova_construct(0, exceptionData, 2, (intptr_t)nova_null);
 	l1_Nova_dog = example_Nova_Dog_Nova_construct(0, exceptionData);
 	l1_Nova_spider = example_Nova_Spider_Nova_construct(0, exceptionData);
 	nova_datastruct_list_Nova_Array_virtual_Nova_set((nova_datastruct_list_Nova_Array*)(l1_Nova_animals), exceptionData, 0, (nova_Nova_Object*)(l1_Nova_dog));

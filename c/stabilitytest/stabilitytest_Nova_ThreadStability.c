@@ -38,6 +38,7 @@
 
 stabilitytest_ThreadStability_Extension_VTable stabilitytest_ThreadStability_Extension_VTable_val =
 {
+	0,
 	{
 		0,
 		0,
@@ -59,6 +60,9 @@ stabilitytest_ThreadStability_Extension_VTable stabilitytest_ThreadStability_Ext
 		0,
 		0,
 		(char(*)(nova_operators_Nova_Equals*, nova_exception_Nova_ExceptionData*, nova_Nova_Object*))nova_Nova_Object_Nova_equals,
+		0,
+		0,
+		0,
 		0,
 		0,
 		0,
@@ -118,7 +122,7 @@ void stabilitytest_Nova_ThreadStability_Nova_test(stabilitytest_Nova_ThreadStabi
 	nova_datastruct_list_Nova_Array* l1_Nova_threads = (nova_datastruct_list_Nova_Array*)nova_null;
 	
 	nova_io_Nova_Console_1_static_Nova_writeLine(0, exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("Checking Thread.nova with 20 Threads... ")));
-	l1_Nova_threads = nova_datastruct_list_Nova_Array_1_Nova_construct(0, exceptionData, 20);
+	l1_Nova_threads = nova_datastruct_list_Nova_Array_1_Nova_construct(0, exceptionData, 20, (intptr_t)nova_null);
 	stabilitytest_Nova_ThreadStability_Nova_createThreads(this, exceptionData, l1_Nova_threads, 20);
 	stabilitytest_Nova_ThreadStability_static_Nova_checkMemoryAccess(0, exceptionData);
 	stabilitytest_Nova_ThreadStability_static_Nova_joinThreads(0, exceptionData, l1_Nova_threads, 20);

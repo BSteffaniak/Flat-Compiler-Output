@@ -51,6 +51,12 @@ typedef int (*compiler_util_Nova_CompilerStringFunctions_closure1_Nova_advance)(
 
 
 typedef struct compiler_util_CompilerStringFunctions_Extension_VTable compiler_util_CompilerStringFunctions_Extension_VTable;
+struct compiler_util_CompilerStringFunctions_Extension_VTable
+{
+	nova_Nova_Class* classInstance;
+	nova_Interface_VTable itable;
+};
+
 extern compiler_util_CompilerStringFunctions_Extension_VTable compiler_util_CompilerStringFunctions_Extension_VTable_val;
 
 
@@ -91,6 +97,7 @@ compiler_util_Nova_Bounds* compiler_util_Nova_CompilerStringFunctions_Nova_findS
 nova_Nova_String* compiler_util_Nova_CompilerStringFunctions_Nova_searchGenericType(nova_Nova_String* this, nova_exception_Nova_ExceptionData* exceptionData, int start, int backwards);
 int compiler_util_Nova_CompilerStringFunctions_Nova_findDotOperatorIndex(nova_Nova_String* this, nova_exception_Nova_ExceptionData* exceptionData, int start);
 char compiler_util_Nova_CompilerStringFunctions_Accessor_Nova_isIdentifier(nova_Nova_String* this, nova_exception_Nova_ExceptionData* exceptionData);
+char compiler_util_Nova_CompilerStringFunctions_Accessor_Nova_isNumber(nova_Nova_String* this, nova_exception_Nova_ExceptionData* exceptionData);
 compiler_tree_Nova_StatementIterator* compiler_util_Nova_CompilerStringFunctions_Accessor_Nova_statements(nova_Nova_String* this, nova_exception_Nova_ExceptionData* exceptionData);
 void compiler_util_Nova_CompilerStringFunctions_Nova_super(compiler_util_Nova_CompilerStringFunctions* this, nova_exception_Nova_ExceptionData* exceptionData);
 

@@ -8,6 +8,7 @@ typedef struct example_Nova_Polygon example_Nova_Polygon;
 #include <Nova.h>
 #include <InterfaceVTAble.h>
 #include <ExceptionHandler.h>
+#include <NovaClassData.h>
 #include <nova/exception/nova_exception_Nova_ExceptionData.h>
 #include <nova/exception/nova_exception_Nova_Exception.h>
 #include <nova/exception/nova_exception_Nova_DivideByZeroException.h>
@@ -41,6 +42,7 @@ typedef struct example_Nova_Polygon example_Nova_Polygon;
 typedef struct example_Polygon_Extension_VTable example_Polygon_Extension_VTable;
 struct example_Polygon_Extension_VTable
 {
+	nova_Nova_Class* classInstance;
 	nova_Interface_VTable itable;
 	int (*example_Nova_Polygon_virtual_Nova_numberSides)(example_Nova_Polygon*, nova_exception_Nova_ExceptionData*);
 	double (*example_Nova_Polygon_virtual_Nova_calculateArea)(example_Nova_Polygon*, nova_exception_Nova_ExceptionData*);
