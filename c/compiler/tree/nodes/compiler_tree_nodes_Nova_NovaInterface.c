@@ -31,24 +31,24 @@
 #include <compiler/compiler_Nova_SyntaxMessage.h>
 #include <compiler/util/compiler_util_Nova_Location.h>
 #include <compiler/tree/nodes/variables/compiler_tree_nodes_variables_Nova_InstanceDeclaration.h>
+#include <compiler/tree/nodes/variables/compiler_tree_nodes_variables_Nova_VariableDeclaration.h>
 #include <compiler/tree/nodes/variables/compiler_tree_nodes_variables_Nova_FieldDeclaration.h>
 #include <compiler/tree/nodes/functions/compiler_tree_nodes_functions_Nova_FunctionDeclaration.h>
 #include <compiler/tree/nodes/functions/compiler_tree_nodes_functions_Nova_BodyFunction.h>
 #include <compiler/tree/nodes/compiler_tree_nodes_Nova_Abstractable.h>
 #include <compiler/tree/nodes/compiler_tree_nodes_Nova_Node.h>
-#include <compiler/tree/nodes/variables/compiler_tree_nodes_variables_Nova_VariableDeclaration.h>
-#include <compiler/tree/nodes/compiler_tree_nodes_Nova_Identifier.h>
-#include <compiler/tree/nodes/compiler_tree_nodes_Nova_Accessible.h>
 #include <compiler/tree/nodes/compiler_tree_nodes_Nova_Value.h>
+#include <compiler/tree/nodes/compiler_tree_nodes_Nova_Identifier.h>
 #include <compiler/tree/nodes/arrays/compiler_tree_nodes_arrays_Nova_ArrayAccess.h>
 #include <compiler/tree/nodes/operations/compiler_tree_nodes_operations_Nova_Operation.h>
 #include <compiler/tree/nodes/variables/compiler_tree_nodes_variables_Nova_Variable.h>
+#include <compiler/tree/nodes/compiler_tree_nodes_Nova_Import.h>
 #include <compiler/tree/nodes/compiler_tree_nodes_Nova_Literal.h>
+#include <compiler/tree/nodes/compiler_tree_nodes_Nova_NovaFile.h>
 #include <compiler/tree/nodes/compiler_tree_nodes_Nova_PlaceholderValue.h>
 #include <compiler/tree/nodes/annotations/compiler_tree_nodes_annotations_Nova_Annotatable.h>
 #include <compiler/tree/nodes/annotations/compiler_tree_nodes_annotations_Nova_Annotation.h>
 #include <compiler/tree/nodes/exceptionhandling/compiler_tree_nodes_exceptionhandling_Nova_Try.h>
-#include <compiler/tree/nodes/compiler_tree_nodes_Nova_NovaFile.h>
 #include <compiler/tree/nodes/compiler_tree_nodes_Nova_Program.h>
 #include <compiler/tree/nodes/compiler_tree_nodes_Nova_Scope.h>
 #include <compiler/tree/nodes/compiler_tree_nodes_Nova_ValidationResult.h>
@@ -80,19 +80,16 @@ compiler_tree_nodes_NovaInterface_Extension_VTable compiler_tree_nodes_NovaInter
 		0,
 		0,
 		0,
-		(char(*)(nova_operators_Nova_Equals*, nova_exception_Nova_ExceptionData*, nova_Nova_Object*))nova_Nova_Object_Nova_equals,
+		(char(*)(nova_operators_Nova_Equals*, nova_exception_Nova_ExceptionData*, nova_Nova_Object*))nova_Nova_Object_0_Nova_equals,
 		0,
 		(char(*)(compiler_tree_nodes_Nova_Abstractable*, nova_exception_Nova_ExceptionData*, char))compiler_tree_nodes_Nova_ClassDeclaration_Mutatorfunc0_Nova_isAbstract,
 		(char(*)(compiler_tree_nodes_Nova_Abstractable*, nova_exception_Nova_ExceptionData*))compiler_tree_nodes_Nova_ClassDeclaration_Accessorfunc_Nova_isAbstract,
-		(compiler_tree_nodes_Nova_Identifier*(*)(compiler_tree_nodes_Nova_Accessible*, nova_exception_Nova_ExceptionData*, compiler_tree_nodes_Nova_Identifier*))compiler_tree_nodes_Nova_Identifier_Mutatorfunc0_Nova_accessedNode,
-		(compiler_tree_nodes_Nova_Identifier*(*)(compiler_tree_nodes_Nova_Accessible*, nova_exception_Nova_ExceptionData*))compiler_tree_nodes_Nova_Identifier_Accessorfunc_Nova_accessedNode,
 		(void(*)(compiler_tree_nodes_annotations_Nova_Annotatable*, nova_exception_Nova_ExceptionData*, compiler_tree_nodes_annotations_Nova_Annotation*))compiler_tree_nodes_Nova_Node_Nova_addAnnotation,
 	},
-	nova_Nova_Object_Nova_equals,
 	compiler_tree_nodes_Nova_ClassDeclaration_Nova_toString,
 	nova_Nova_Object_Accessor_Nova_hashCodeLong,
-	compiler_tree_nodes_Nova_Node_Nova_addAnnotation,
 	compiler_tree_nodes_Nova_ClassDeclaration_Nova_addChild,
+	compiler_tree_nodes_Nova_ClassDeclaration_Nova_findVariableDeclaration,
 	compiler_tree_nodes_Nova_ClassDeclaration_Nova_parseStatement,
 	compiler_tree_nodes_Nova_Node_Nova_clone,
 	compiler_tree_nodes_Nova_ClassDeclaration_Nova_replace,
@@ -107,12 +104,8 @@ compiler_tree_nodes_NovaInterface_Extension_VTable compiler_tree_nodes_NovaInter
 	compiler_tree_nodes_Nova_ClassDeclaration_Accessor_Nova_parentClass,
 	compiler_tree_nodes_Nova_Node_Accessor_Nova_scope,
 	compiler_tree_nodes_Nova_ClassDeclaration_static_Nova_parse,
-	compiler_tree_nodes_Nova_Identifier_Accessorfunc_Nova_accessedNode,
-	compiler_tree_nodes_Nova_Identifier_Mutatorfunc0_Nova_accessedNode,
 	compiler_tree_nodes_Nova_ClassDeclaration_Nova_parseModifier,
 	compiler_tree_nodes_Nova_ClassDeclaration_Nova_writeModifiers,
-	compiler_tree_nodes_Nova_ClassDeclaration_Accessorfunc_Nova_isAbstract,
-	compiler_tree_nodes_Nova_ClassDeclaration_Mutatorfunc0_Nova_isAbstract,
 };
 
 

@@ -28,7 +28,6 @@
 #include <nova/nova_Nova_Class.h>
 #include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <compiler/util/compiler_util_Nova_SyntaxUtils.h>
-#include <compiler/tree/nodes/compiler_tree_nodes_Nova_Identifier.h>
 #include <compiler/tree/nodes/compiler_tree_nodes_Nova_Value.h>
 
 
@@ -60,20 +59,16 @@ compiler_tree_nodes_Accessible_Extension_VTable compiler_tree_nodes_Accessible_E
 		0,
 		0,
 		0,
-		(compiler_tree_nodes_Nova_Identifier*(*)(compiler_tree_nodes_Nova_Accessible*, nova_exception_Nova_ExceptionData*, compiler_tree_nodes_Nova_Identifier*))compiler_tree_nodes_Nova_Accessible_Mutator_Nova_accessedNode,
-		(compiler_tree_nodes_Nova_Identifier*(*)(compiler_tree_nodes_Nova_Accessible*, nova_exception_Nova_ExceptionData*))compiler_tree_nodes_Nova_Accessible_Accessor_Nova_accessedNode,
 		0,
 	},
-	compiler_tree_nodes_Nova_Accessible_Mutator_Nova_accessedNode,
-	compiler_tree_nodes_Nova_Accessible_Accessor_Nova_accessedNode,
 };
 
 
 
-nova_datastruct_list_Nova_Array* generated19(compiler_tree_nodes_Nova_Accessible* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_Class* value0);
 nova_datastruct_list_Nova_Array* generated20(compiler_tree_nodes_Nova_Accessible* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_Class* value0);
 nova_datastruct_list_Nova_Array* generated21(compiler_tree_nodes_Nova_Accessible* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_Class* value0);
 nova_datastruct_list_Nova_Array* generated22(compiler_tree_nodes_Nova_Accessible* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_Class* value0);
+nova_datastruct_list_Nova_Array* generated23(compiler_tree_nodes_Nova_Accessible* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_Class* value0);
 
 
 
@@ -86,7 +81,7 @@ void compiler_tree_nodes_Nova_Accessible_Nova_init_static(nova_exception_Nova_Ex
 
 compiler_tree_nodes_Nova_Accessible* compiler_tree_nodes_Nova_Accessible_0_Nova_getNextAccessingOfType(compiler_tree_nodes_Nova_Accessible* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_Class* type)
 {
-	return compiler_tree_nodes_Nova_Accessible_1_Nova_getNextAccessingOfType(this, exceptionData, generated19(this, exceptionData, type));
+	return compiler_tree_nodes_Nova_Accessible_1_Nova_getNextAccessingOfType(this, exceptionData, generated20(this, exceptionData, type));
 }
 
 compiler_tree_nodes_Nova_Accessible* compiler_tree_nodes_Nova_Accessible_1_Nova_getNextAccessingOfType(compiler_tree_nodes_Nova_Accessible* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_list_Nova_Array* types)
@@ -109,7 +104,7 @@ compiler_tree_nodes_Nova_Accessible* compiler_tree_nodes_Nova_Accessible_2_Nova_
 compiler_tree_nodes_Nova_Accessible* compiler_tree_nodes_Nova_Accessible_0_Nova_getLastAccessingOfType(compiler_tree_nodes_Nova_Accessible* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_Class* type, char opposite, int inclusive)
 {
 	inclusive = (int)(inclusive == (intptr_t)nova_null ? 0 : inclusive);
-	return compiler_tree_nodes_Nova_Accessible_1_Nova_getLastAccessingOfType(this, exceptionData, generated20(this, exceptionData, type), opposite, inclusive);
+	return compiler_tree_nodes_Nova_Accessible_1_Nova_getLastAccessingOfType(this, exceptionData, generated21(this, exceptionData, type), opposite, inclusive);
 }
 
 compiler_tree_nodes_Nova_Accessible* compiler_tree_nodes_Nova_Accessible_1_Nova_getLastAccessingOfType(compiler_tree_nodes_Nova_Accessible* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_list_Nova_Array* types, char opposite, int inclusive)
@@ -134,7 +129,7 @@ compiler_tree_nodes_Nova_Accessible* compiler_tree_nodes_Nova_Accessible_1_Nova_
 
 compiler_tree_nodes_Nova_Accessible* compiler_tree_nodes_Nova_Accessible_0_Nova_getLastAccessedOfType(compiler_tree_nodes_Nova_Accessible* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_Class* type, char opposite)
 {
-	return compiler_tree_nodes_Nova_Accessible_1_Nova_getLastAccessedOfType(this, exceptionData, generated21(this, exceptionData, type), opposite);
+	return compiler_tree_nodes_Nova_Accessible_1_Nova_getLastAccessedOfType(this, exceptionData, generated22(this, exceptionData, type), opposite);
 }
 
 compiler_tree_nodes_Nova_Accessible* compiler_tree_nodes_Nova_Accessible_1_Nova_getLastAccessedOfType(compiler_tree_nodes_Nova_Accessible* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_list_Nova_Array* types, char opposite)
@@ -150,7 +145,7 @@ compiler_tree_nodes_Nova_Accessible* compiler_tree_nodes_Nova_Accessible_1_Nova_
 		{
 			l1_Nova_previous = l1_Nova_current;
 		}
-		l1_Nova_current = (compiler_tree_nodes_Nova_Accessible*)(compiler_tree_nodes_Nova_Accessible_virtual_Accessor1_Nova_accessedNode((compiler_tree_nodes_Nova_Accessible*)(l1_Nova_current), exceptionData));
+		l1_Nova_current = compiler_tree_nodes_Nova_Accessible_Accessor_Nova_accessedNode(l1_Nova_current, exceptionData);
 	}
 	return l1_Nova_previous;
 }
@@ -165,24 +160,24 @@ compiler_tree_nodes_Nova_Accessible* compiler_tree_nodes_Nova_Accessible_Nova_ge
 	while (l1_Nova_current != (compiler_tree_nodes_Nova_Accessible*)nova_null)
 	{
 		l1_Nova_previous = l1_Nova_current;
-		l1_Nova_current = (compiler_tree_nodes_Nova_Accessible*)(compiler_tree_nodes_Nova_Accessible_virtual_Accessor1_Nova_accessedNode((compiler_tree_nodes_Nova_Accessible*)(l1_Nova_current), exceptionData));
+		l1_Nova_current = compiler_tree_nodes_Nova_Accessible_Accessor_Nova_accessedNode(l1_Nova_current, exceptionData);
 	}
 	return l1_Nova_previous;
 }
 
-compiler_tree_nodes_Nova_Identifier* compiler_tree_nodes_Nova_Accessible_0_Nova_getNextAccessedOfType(compiler_tree_nodes_Nova_Accessible* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_Class* type)
+compiler_tree_nodes_Nova_Accessible* compiler_tree_nodes_Nova_Accessible_0_Nova_getNextAccessedOfType(compiler_tree_nodes_Nova_Accessible* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_Class* type)
 {
-	return compiler_tree_nodes_Nova_Accessible_1_Nova_getNextAccessedOfType(this, exceptionData, generated22(this, exceptionData, type));
+	return compiler_tree_nodes_Nova_Accessible_1_Nova_getNextAccessedOfType(this, exceptionData, generated23(this, exceptionData, type));
 }
 
-compiler_tree_nodes_Nova_Identifier* compiler_tree_nodes_Nova_Accessible_1_Nova_getNextAccessedOfType(compiler_tree_nodes_Nova_Accessible* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_list_Nova_Array* types)
+compiler_tree_nodes_Nova_Accessible* compiler_tree_nodes_Nova_Accessible_1_Nova_getNextAccessedOfType(compiler_tree_nodes_Nova_Accessible* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_list_Nova_Array* types)
 {
-	compiler_tree_nodes_Nova_Identifier* l1_Nova_current = (compiler_tree_nodes_Nova_Identifier*)nova_null;
+	compiler_tree_nodes_Nova_Accessible* l1_Nova_current = (compiler_tree_nodes_Nova_Accessible*)nova_null;
 	
-	l1_Nova_current = (compiler_tree_nodes_Nova_Identifier*)(compiler_tree_nodes_Nova_Accessible_virtual_Accessor1_Nova_accessedNode((compiler_tree_nodes_Nova_Accessible*)(this), exceptionData));
-	while ((nova_Nova_Object*)l1_Nova_current != (nova_Nova_Object*)(compiler_tree_nodes_Nova_Identifier*)nova_null && !compiler_util_Nova_SyntaxUtils_static_Nova_checkTypes(0, exceptionData, types, ((nova_Nova_Object*)l1_Nova_current)->vtable->classInstance))
+	l1_Nova_current = compiler_tree_nodes_Nova_Accessible_Accessor_Nova_accessedNode(this, exceptionData);
+	while ((nova_Nova_Object*)l1_Nova_current != (nova_Nova_Object*)(compiler_tree_nodes_Nova_Accessible*)nova_null && !compiler_util_Nova_SyntaxUtils_static_Nova_checkTypes(0, exceptionData, types, ((nova_Nova_Object*)l1_Nova_current)->vtable->classInstance))
 	{
-		l1_Nova_current = (compiler_tree_nodes_Nova_Identifier*)(compiler_tree_nodes_Nova_Identifier_Accessorfunc_Nova_accessedNode(l1_Nova_current, exceptionData));
+		l1_Nova_current = compiler_tree_nodes_Nova_Accessible_Accessor_Nova_accessedNode(l1_Nova_current, exceptionData);
 	}
 	return l1_Nova_current;
 }
@@ -228,16 +223,7 @@ compiler_tree_nodes_Nova_Accessible* compiler_tree_nodes_Nova_Accessible_Nova_ge
 
 nova_Nova_String* compiler_tree_nodes_Nova_Accessible_Nova_writeAccessedNodes(compiler_tree_nodes_Nova_Accessible* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
-	return (nova_Nova_String*)(compiler_tree_nodes_Nova_Accessible_Accessor_Nova_doesAccess(this, exceptionData) ? nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)(nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("."))), exceptionData, nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)(nova_Nova_Object_virtual_Nova_toString((nova_Nova_Object*)((compiler_tree_nodes_Nova_Accessible_virtual_Accessor1_Nova_accessedNode((compiler_tree_nodes_Nova_Accessible*)(this), exceptionData))), exceptionData)), exceptionData, nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)(nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)(""))), exceptionData, nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)((compiler_tree_nodes_Nova_Accessible_Nova_writeAccessedNodes((compiler_tree_nodes_Nova_Accessible*)(compiler_tree_nodes_Nova_Accessible_virtual_Accessor1_Nova_accessedNode((compiler_tree_nodes_Nova_Accessible*)(this), exceptionData)), exceptionData))), exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("")))))) : nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("")));
-}
-
-nova_datastruct_list_Nova_Array* generated19(compiler_tree_nodes_Nova_Accessible* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_Class* value0)
-{
-	nova_Nova_Class** l1_Nova_temp = (nova_Nova_Class**)nova_null;
-	
-	l1_Nova_temp = (nova_Nova_Class**)NOVA_MALLOC(sizeof(nova_Nova_Class) * 1);
-	l1_Nova_temp[0] = value0;
-	return nova_datastruct_list_Nova_Array_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)(l1_Nova_temp), 1);
+	return (nova_Nova_String*)(compiler_tree_nodes_Nova_Accessible_Accessor_Nova_doesAccess(this, exceptionData) ? nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)(nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("."))), exceptionData, nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)(nova_Nova_Object_virtual_Nova_toString((nova_Nova_Object*)((compiler_tree_nodes_Nova_Accessible_Accessor_Nova_accessedNode(this, exceptionData))), exceptionData)), exceptionData, nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)(nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)(""))), exceptionData, nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)((compiler_tree_nodes_Nova_Accessible_Nova_writeAccessedNodes(compiler_tree_nodes_Nova_Accessible_Accessor_Nova_accessedNode(this, exceptionData), exceptionData))), exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("")))))) : nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("")));
 }
 
 nova_datastruct_list_Nova_Array* generated20(compiler_tree_nodes_Nova_Accessible* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_Class* value0)
@@ -267,7 +253,16 @@ nova_datastruct_list_Nova_Array* generated22(compiler_tree_nodes_Nova_Accessible
 	return nova_datastruct_list_Nova_Array_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)(l1_Nova_temp), 1);
 }
 
-compiler_tree_nodes_Nova_Identifier* compiler_tree_nodes_Nova_Accessible_Mutator_Nova_accessedNode(compiler_tree_nodes_Nova_Accessible* this, nova_exception_Nova_ExceptionData* exceptionData, compiler_tree_nodes_Nova_Identifier* value)
+nova_datastruct_list_Nova_Array* generated23(compiler_tree_nodes_Nova_Accessible* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_Class* value0)
+{
+	nova_Nova_Class** l1_Nova_temp = (nova_Nova_Class**)nova_null;
+	
+	l1_Nova_temp = (nova_Nova_Class**)NOVA_MALLOC(sizeof(nova_Nova_Class) * 1);
+	l1_Nova_temp[0] = value0;
+	return nova_datastruct_list_Nova_Array_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)(l1_Nova_temp), 1);
+}
+
+compiler_tree_nodes_Nova_Accessible* compiler_tree_nodes_Nova_Accessible_Mutator_Nova_accessedNode(compiler_tree_nodes_Nova_Accessible* this, nova_exception_Nova_ExceptionData* exceptionData, compiler_tree_nodes_Nova_Accessible* value)
 {
 	return value;
 }
@@ -278,9 +273,9 @@ compiler_tree_nodes_Nova_Accessible* compiler_tree_nodes_Nova_Accessible_Accesso
 }
 
 
-compiler_tree_nodes_Nova_Identifier* compiler_tree_nodes_Nova_Accessible_Accessor_Nova_accessedNode(compiler_tree_nodes_Nova_Accessible* this, nova_exception_Nova_ExceptionData* exceptionData)
+compiler_tree_nodes_Nova_Accessible* compiler_tree_nodes_Nova_Accessible_Accessor_Nova_accessedNode(compiler_tree_nodes_Nova_Accessible* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
-	return (compiler_tree_nodes_Nova_Identifier*)(nova_Nova_Object*)nova_null;
+	return (compiler_tree_nodes_Nova_Accessible*)(nova_Nova_Object*)nova_null;
 }
 
 char compiler_tree_nodes_Nova_Accessible_Accessor_Nova_isAccessed(compiler_tree_nodes_Nova_Accessible* this, nova_exception_Nova_ExceptionData* exceptionData)
@@ -291,7 +286,7 @@ char compiler_tree_nodes_Nova_Accessible_Accessor_Nova_isAccessed(compiler_tree_
 
 char compiler_tree_nodes_Nova_Accessible_Accessor_Nova_doesAccess(compiler_tree_nodes_Nova_Accessible* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
-	return compiler_tree_nodes_Nova_Accessible_virtual_Accessor1_Nova_accessedNode((compiler_tree_nodes_Nova_Accessible*)(this), exceptionData) != (compiler_tree_nodes_Nova_Identifier*)nova_null;
+	return compiler_tree_nodes_Nova_Accessible_Accessor_Nova_accessedNode(this, exceptionData) != (compiler_tree_nodes_Nova_Accessible*)nova_null;
 }
 
 
@@ -300,14 +295,4 @@ char compiler_tree_nodes_Nova_Accessible_Accessor_Nova_canAccess(compiler_tree_n
 	return 0;
 }
 
-
-compiler_tree_nodes_Nova_Identifier* compiler_tree_nodes_Nova_Accessible_virtual_Mutator0_Nova_accessedNode(compiler_tree_nodes_Nova_Accessible* this, nova_exception_Nova_ExceptionData* exceptionData, compiler_tree_nodes_Nova_Identifier* value)
-{
-	return this->vtable->itable.compiler_tree_nodes_Nova_Accessible_virtual_Mutator0_Nova_accessedNode((compiler_tree_nodes_Nova_Accessible*)(this), exceptionData, value);
-}
-
-compiler_tree_nodes_Nova_Identifier* compiler_tree_nodes_Nova_Accessible_virtual_Accessor1_Nova_accessedNode(compiler_tree_nodes_Nova_Accessible* this, nova_exception_Nova_ExceptionData* exceptionData)
-{
-	return this->vtable->itable.compiler_tree_nodes_Nova_Accessible_virtual_Accessor1_Nova_accessedNode((compiler_tree_nodes_Nova_Accessible*)(this), exceptionData);
-}
 

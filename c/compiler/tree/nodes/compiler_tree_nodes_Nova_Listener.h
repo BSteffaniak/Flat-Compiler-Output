@@ -49,6 +49,12 @@ struct compiler_tree_nodes_Listener_Extension_VTable
 extern compiler_tree_nodes_Listener_Extension_VTable compiler_tree_nodes_Listener_Extension_VTable_val;
 
 
+CCLASS_CLASS
+(
+	compiler_tree_nodes_Nova_Listener, 
+	
+	compiler_tree_nodes_Listener_Extension_VTable* vtable;
+)
 
 void compiler_tree_nodes_Nova_Listener_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData);
 

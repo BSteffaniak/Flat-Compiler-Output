@@ -48,12 +48,8 @@ struct compiler_tree_StatementIterator_Extension_VTable
 {
 	nova_Nova_Class* classInstance;
 	nova_Interface_VTable itable;
-	char (*nova_operators_Nova_Equals_virtual_Nova_equals)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*, nova_Nova_Object*);
 	nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 	long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
-	compiler_tree_Nova_StatementIterator* (*nova_datastruct_list_Nova_Iterator_virtual_Nova_reset)(compiler_tree_Nova_StatementIterator*, nova_exception_Nova_ExceptionData*);
-	char (*nova_datastruct_list_Nova_Iterator_virtual_Accessor_Nova_hasNext)(compiler_tree_Nova_StatementIterator*, nova_exception_Nova_ExceptionData*);
-	nova_Nova_String* (*nova_datastruct_list_Nova_Iterator_virtual_Accessor_Nova_next)(compiler_tree_Nova_StatementIterator*, nova_exception_Nova_ExceptionData*);
 };
 
 extern compiler_tree_StatementIterator_Extension_VTable compiler_tree_StatementIterator_Extension_VTable_val;

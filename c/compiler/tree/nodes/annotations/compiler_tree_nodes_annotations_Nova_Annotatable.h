@@ -45,7 +45,6 @@ struct compiler_tree_nodes_annotations_Annotatable_Extension_VTable
 {
 	nova_Nova_Class* classInstance;
 	nova_Interface_VTable itable;
-	void (*compiler_tree_nodes_annotations_Nova_Annotatable_virtual_Nova_addAnnotation)(compiler_tree_nodes_annotations_Nova_Annotatable*, nova_exception_Nova_ExceptionData*, compiler_tree_nodes_annotations_Nova_Annotation*);
 };
 
 extern compiler_tree_nodes_annotations_Annotatable_Extension_VTable compiler_tree_nodes_annotations_Annotatable_Extension_VTable_val;

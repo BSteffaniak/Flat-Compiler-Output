@@ -60,6 +60,12 @@ struct compiler_util_CompilerStringFunctions_Extension_VTable
 extern compiler_util_CompilerStringFunctions_Extension_VTable compiler_util_CompilerStringFunctions_Extension_VTable_val;
 
 
+CCLASS_CLASS
+(
+	compiler_util_Nova_CompilerStringFunctions, 
+	
+	compiler_util_CompilerStringFunctions_Extension_VTable* vtable;
+)
 
 void compiler_util_Nova_CompilerStringFunctions_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData);
 char compiler_util_Nova_CompilerStringFunctions_Nova_containsAllWhitespaceAfter(nova_Nova_String* this, nova_exception_Nova_ExceptionData* exceptionData, int index, int direction);

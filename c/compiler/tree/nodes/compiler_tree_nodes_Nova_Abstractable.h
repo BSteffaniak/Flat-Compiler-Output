@@ -44,8 +44,6 @@ struct compiler_tree_nodes_Abstractable_Extension_VTable
 {
 	nova_Nova_Class* classInstance;
 	nova_Interface_VTable itable;
-	char (*compiler_tree_nodes_Nova_Abstractable_virtual_Mutator0_Nova_isAbstract)(compiler_tree_nodes_Nova_Abstractable*, nova_exception_Nova_ExceptionData*, char);
-	char (*compiler_tree_nodes_Nova_Abstractable_virtual_Accessor1_Nova_isAbstract)(compiler_tree_nodes_Nova_Abstractable*, nova_exception_Nova_ExceptionData*);
 };
 
 extern compiler_tree_nodes_Abstractable_Extension_VTable compiler_tree_nodes_Abstractable_Extension_VTable_val;

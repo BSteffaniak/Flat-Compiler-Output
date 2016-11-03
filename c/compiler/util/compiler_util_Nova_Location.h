@@ -47,7 +47,6 @@ struct compiler_util_Location_Extension_VTable
 {
 	nova_Nova_Class* classInstance;
 	nova_Interface_VTable itable;
-	char (*nova_operators_Nova_Equals_virtual_Nova_equals)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*, nova_Nova_Object*);
 	nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(compiler_util_Nova_Location*, nova_exception_Nova_ExceptionData*);
 	long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 };
@@ -71,9 +70,9 @@ compiler_util_Nova_Location* compiler_util_Nova_Location_0_Nova_construct(compil
 compiler_util_Nova_Location* compiler_util_Nova_Location_1_Nova_construct(compiler_util_Nova_Location* this, nova_exception_Nova_ExceptionData* exceptionData, compiler_util_Nova_Location* loc);
 compiler_util_Nova_Location* compiler_util_Nova_Location_2_Nova_construct(compiler_util_Nova_Location* this, nova_exception_Nova_ExceptionData* exceptionData, int lineNumber, int offset, int start, int end);
 void compiler_util_Nova_Location_Nova_destroy(compiler_util_Nova_Location** this, nova_exception_Nova_ExceptionData* exceptionData);
-void compiler_util_Nova_Location_Nova_this(compiler_util_Nova_Location* this, nova_exception_Nova_ExceptionData* exceptionData);
-void compiler_util_Nova_Location_0_Nova_this(compiler_util_Nova_Location* this, nova_exception_Nova_ExceptionData* exceptionData, compiler_util_Nova_Location* loc);
-void compiler_util_Nova_Location_1_Nova_this(compiler_util_Nova_Location* this, nova_exception_Nova_ExceptionData* exceptionData, int lineNumber, int offset, int start, int end);
+void compiler_util_Nova_Location_3_Nova_this(compiler_util_Nova_Location* this, nova_exception_Nova_ExceptionData* exceptionData);
+void compiler_util_Nova_Location_4_Nova_this(compiler_util_Nova_Location* this, nova_exception_Nova_ExceptionData* exceptionData, compiler_util_Nova_Location* loc);
+void compiler_util_Nova_Location_5_Nova_this(compiler_util_Nova_Location* this, nova_exception_Nova_ExceptionData* exceptionData, int lineNumber, int offset, int start, int end);
 void compiler_util_Nova_Location_Nova_setLineNumber(compiler_util_Nova_Location* this, nova_exception_Nova_ExceptionData* exceptionData, int lineNumber);
 int compiler_util_Nova_Location_Nova_getStart(compiler_util_Nova_Location* this, nova_exception_Nova_ExceptionData* exceptionData);
 int compiler_util_Nova_Location_Nova_getEnd(compiler_util_Nova_Location* this, nova_exception_Nova_ExceptionData* exceptionData);
