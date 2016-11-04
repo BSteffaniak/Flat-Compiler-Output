@@ -71,6 +71,8 @@ compiler_tree_nodes_arrays_ArrayAccess_Extension_VTable compiler_tree_nodes_arra
 		0,
 		0,
 		0,
+		0,
+		0,
 		(void(*)(compiler_tree_nodes_annotations_Nova_Annotatable*, nova_exception_Nova_ExceptionData*, compiler_tree_nodes_annotations_Nova_Annotation*))compiler_tree_nodes_Nova_Node_Nova_addAnnotation,
 	},
 	compiler_tree_nodes_Nova_Node_Nova_toString,
@@ -137,7 +139,7 @@ compiler_tree_nodes_arrays_Nova_ArrayAccess* compiler_tree_nodes_arrays_Nova_Arr
 	parent = (compiler_tree_nodes_Nova_Node*)(parent == 0 ? (nova_Nova_Object*)(nova_Nova_Object*)nova_null : (nova_Nova_Object*)parent);
 	location = (compiler_util_Nova_Location*)(location == 0 ? (nova_Nova_Object*)compiler_util_Nova_Location_Nova_INVALID : (nova_Nova_Object*)location);
 	require = (int)(require == (intptr_t)nova_null ? 1 : require);
-	if (input->nova_Nova_String_Nova_count >= 3 && (char)(intptr_t)nova_datastruct_list_Nova_CharArray_Accessor_Nova_first((nova_datastruct_list_Nova_CharArray*)(input->nova_Nova_String_Nova_chars), exceptionData) == '[' && (char)(intptr_t)nova_datastruct_list_Nova_CharArray_Accessor_Nova_last((nova_datastruct_list_Nova_CharArray*)(input->nova_Nova_String_Nova_chars), exceptionData) == ']')
+	if (input->nova_Nova_String_Nova_count >= 3 && (char)(intptr_t)nova_datastruct_list_Nova_CharArray_Accessorfunc_Nova_first((nova_datastruct_list_Nova_CharArray*)(input->nova_Nova_String_Nova_chars), exceptionData) == '[' && (char)(intptr_t)nova_datastruct_list_Nova_CharArray_Accessorfunc_Nova_last((nova_datastruct_list_Nova_CharArray*)(input->nova_Nova_String_Nova_chars), exceptionData) == ']')
 	{
 		compiler_tree_nodes_arrays_Nova_ArrayAccess* l1_Nova_node = (compiler_tree_nodes_arrays_Nova_ArrayAccess*)nova_null;
 		

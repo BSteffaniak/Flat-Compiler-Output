@@ -904,6 +904,7 @@ nova_env novaEnv = {
 },
 
 {
+&compiler_tree_nodes_Nova_Program_Nova_addChild,
 &compiler_tree_nodes_Nova_Program_Nova_getClassDeclaration,
 &compiler_tree_nodes_Nova_Program_Nova_construct,
 },

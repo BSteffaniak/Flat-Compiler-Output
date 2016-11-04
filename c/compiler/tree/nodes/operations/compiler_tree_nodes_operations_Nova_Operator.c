@@ -73,6 +73,8 @@ compiler_tree_nodes_operations_Operator_Extension_VTable compiler_tree_nodes_ope
 		0,
 		0,
 		0,
+		0,
+		0,
 		(void(*)(compiler_tree_nodes_annotations_Nova_Annotatable*, nova_exception_Nova_ExceptionData*, compiler_tree_nodes_annotations_Nova_Annotation*))compiler_tree_nodes_Nova_Node_Nova_addAnnotation,
 	},
 	compiler_tree_nodes_operations_Nova_Operator_Nova_toString,

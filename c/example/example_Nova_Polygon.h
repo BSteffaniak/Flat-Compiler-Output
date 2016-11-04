@@ -44,8 +44,6 @@ struct example_Polygon_Extension_VTable
 {
 	nova_Nova_Class* classInstance;
 	nova_Interface_VTable itable;
-	int (*example_Nova_Polygon_virtual_Nova_numberSides)(example_Nova_Polygon*, nova_exception_Nova_ExceptionData*);
-	double (*example_Nova_Polygon_virtual_Nova_calculateArea)(example_Nova_Polygon*, nova_exception_Nova_ExceptionData*);
 };
 
 extern example_Polygon_Extension_VTable example_Polygon_Extension_VTable_val;

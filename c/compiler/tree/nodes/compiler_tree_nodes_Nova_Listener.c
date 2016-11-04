@@ -58,6 +58,8 @@ compiler_tree_nodes_Listener_Extension_VTable compiler_tree_nodes_Listener_Exten
 		0,
 		0,
 		0,
+		0,
+		0,
 	},
 };
 

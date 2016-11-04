@@ -60,6 +60,8 @@ compiler_util_Bounds_Extension_VTable compiler_util_Bounds_Extension_VTable_val 
 		0,
 		0,
 		0,
+		0,
+		0,
 	},
 	compiler_util_Nova_Bounds_Nova_toString,
 	nova_Nova_Object_Accessor_Nova_hashCodeLong,

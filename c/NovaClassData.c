@@ -10,6 +10,6 @@ nova_operators_vtable_Multiply nova_operators_vtable_Multiply_value_default = {0
 nova_primitive_number_vtable_Integer nova_primitive_number_vtable_Integer_value_default = {0};
 nova_primitive_number_vtable_RealNumber nova_primitive_number_vtable_RealNumber_value_default = {0};
 compiler_tree_nodes_vtable_Abstractable compiler_tree_nodes_vtable_Abstractable_value_default = {0,0};
-compiler_tree_nodes_vtable_Accessible compiler_tree_nodes_vtable_Accessible_value_default = {0};
+compiler_tree_nodes_vtable_Accessible compiler_tree_nodes_vtable_Accessible_value_default = {0,0};
 compiler_tree_nodes_vtable_Listener compiler_tree_nodes_vtable_Listener_value_default = {0};
 compiler_tree_nodes_annotations_vtable_Annotatable compiler_tree_nodes_annotations_vtable_Annotatable_value_default = {0};

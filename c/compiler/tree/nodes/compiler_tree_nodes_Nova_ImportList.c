@@ -73,6 +73,8 @@ compiler_tree_nodes_ImportList_Extension_VTable compiler_tree_nodes_ImportList_E
 		0,
 		0,
 		0,
+		0,
+		0,
 		(void(*)(compiler_tree_nodes_annotations_Nova_Annotatable*, nova_exception_Nova_ExceptionData*, compiler_tree_nodes_annotations_Nova_Annotation*))compiler_tree_nodes_Nova_Node_Nova_addAnnotation,
 	},
 	compiler_tree_nodes_Nova_Node_Nova_toString,

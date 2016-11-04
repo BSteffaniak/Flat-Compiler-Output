@@ -40,11 +40,13 @@ typedef struct compiler_tree_nodes_functions_Nova_FunctionCall compiler_tree_nod
 #include <compiler/tree/nodes/compiler_tree_nodes_Nova_Node.h>
 #include <compiler/tree/nodes/compiler_tree_nodes_Nova_Value.h>
 #include <compiler/tree/nodes/variables/compiler_tree_nodes_variables_Nova_Variable.h>
-#include <compiler/util/compiler_util_Nova_Location.h>
-#include <compiler/tree/nodes/compiler_tree_nodes_Nova_Accessible.h>
-#include <compiler/tree/nodes/functions/compiler_tree_nodes_functions_Nova_FunctionArgumentList.h>
-#include <compiler/tree/nodes/compiler_tree_nodes_Nova_Identifier.h>
 #include <compiler/tree/nodes/variables/compiler_tree_nodes_variables_Nova_VariableDeclaration.h>
+#include <compiler/tree/nodes/compiler_tree_nodes_Nova_ClassDeclaration.h>
+#include <compiler/util/compiler_util_Nova_Location.h>
+#include <compiler/tree/nodes/functions/compiler_tree_nodes_functions_Nova_FunctionArgumentList.h>
+#include <compiler/tree/nodes/functions/compiler_tree_nodes_functions_Nova_FunctionDeclaration.h>
+#include <compiler/tree/nodes/compiler_tree_nodes_Nova_Identifier.h>
+#include <compiler/tree/nodes/compiler_tree_nodes_Nova_Accessible.h>
 #include <compiler/compiler_Nova_SyntaxMessage.h>
 #include <compiler/tree/nodes/arrays/compiler_tree_nodes_arrays_Nova_ArrayAccess.h>
 #include <compiler/tree/nodes/operations/compiler_tree_nodes_operations_Nova_Operation.h>
@@ -55,8 +57,6 @@ typedef struct compiler_tree_nodes_functions_Nova_FunctionCall compiler_tree_nod
 #include <compiler/tree/nodes/annotations/compiler_tree_nodes_annotations_Nova_Annotatable.h>
 #include <compiler/tree/nodes/annotations/compiler_tree_nodes_annotations_Nova_Annotation.h>
 #include <compiler/tree/nodes/exceptionhandling/compiler_tree_nodes_exceptionhandling_Nova_Try.h>
-#include <compiler/tree/nodes/functions/compiler_tree_nodes_functions_Nova_FunctionDeclaration.h>
-#include <compiler/tree/nodes/compiler_tree_nodes_Nova_ClassDeclaration.h>
 #include <compiler/tree/nodes/compiler_tree_nodes_Nova_Program.h>
 #include <compiler/tree/nodes/compiler_tree_nodes_Nova_Scope.h>
 #include <compiler/tree/nodes/compiler_tree_nodes_Nova_ValidationResult.h>
@@ -103,6 +103,8 @@ CCLASS_CLASS
 	compiler_tree_nodes_arrays_Nova_ArrayAccess* compiler_tree_nodes_Nova_Value_Nova_arrayAccess;
 	nova_Nova_String* compiler_tree_nodes_Nova_Value_Nova_type;
 	nova_Nova_String* compiler_tree_nodes_Nova_Identifier_Nova_name;
+	char compiler_tree_nodes_variables_Nova_Variable_Nova_safeNavigation;
+	compiler_tree_nodes_Nova_Accessible* compiler_tree_nodes_variables_Nova_Variable_Nova_accessedNode;
 	compiler_tree_nodes_variables_Nova_VariableDeclaration* compiler_tree_nodes_variables_Nova_Variable_Nova_declaration;
 	compiler_tree_nodes_functions_Nova_FunctionArgumentList* compiler_tree_nodes_functions_Nova_FunctionCall_Nova_argumentList;
 )

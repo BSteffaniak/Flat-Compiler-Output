@@ -58,6 +58,8 @@ compiler_tree_nodes_Abstractable_Extension_VTable compiler_tree_nodes_Abstractab
 		(char(*)(compiler_tree_nodes_Nova_Abstractable*, nova_exception_Nova_ExceptionData*, char))compiler_tree_nodes_Nova_Abstractable_Mutator_Nova_isAbstract,
 		(char(*)(compiler_tree_nodes_Nova_Abstractable*, nova_exception_Nova_ExceptionData*))compiler_tree_nodes_Nova_Abstractable_Accessor_Nova_isAbstract,
 		0,
+		0,
+		0,
 	},
 };
 

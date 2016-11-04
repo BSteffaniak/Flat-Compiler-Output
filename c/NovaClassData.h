@@ -283,7 +283,8 @@ char (*compiler_tree_nodes_Nova_Abstractable_virtual_Accessor1_Nova_isAbstract)(
 };
 
 struct compiler_tree_nodes_vtable_Accessible {
-char x;
+compiler_tree_nodes_Nova_Accessible* (*compiler_tree_nodes_Nova_Accessible_virtual_Mutator0_Nova_accessedNode)(compiler_tree_nodes_Nova_Accessible*, nova_exception_Nova_ExceptionData*, compiler_tree_nodes_Nova_Accessible*);
+compiler_tree_nodes_Nova_Accessible* (*compiler_tree_nodes_Nova_Accessible_virtual_Accessor1_Nova_accessedNode)(compiler_tree_nodes_Nova_Accessible*, nova_exception_Nova_ExceptionData*);
 };
 
 struct compiler_tree_nodes_vtable_Listener {
@@ -317,8 +318,8 @@ nova_Nova_String* (*nova_Nova_String_virtual_Nova_concat)(nova_Nova_String*, nov
 nova_datastruct_list_Nova_Array* (*nova_datastruct_list_Nova_Array_virtual_Nova_addUnique)(nova_datastruct_list_Nova_Array*, nova_exception_Nova_ExceptionData*, nova_Nova_Object*);
 nova_Nova_Object* (*nova_datastruct_list_Nova_Array_virtual_Nova_get)(nova_datastruct_list_Nova_Array*, nova_exception_Nova_ExceptionData*, int);
 nova_Nova_Object* (*nova_datastruct_list_Nova_Array_virtual_Nova_set)(nova_datastruct_list_Nova_Array*, nova_exception_Nova_ExceptionData*, int, nova_Nova_Object*);
-nova_Nova_Object* (*nova_datastruct_list_Nova_Array_virtual_Accessor_Nova_first)(nova_datastruct_list_Nova_Array*, nova_exception_Nova_ExceptionData*);
-nova_Nova_Object* (*nova_datastruct_list_Nova_Array_virtual_Accessor_Nova_last)(nova_datastruct_list_Nova_Array*, nova_exception_Nova_ExceptionData*);
+nova_Nova_Object* (*nova_datastruct_list_Nova_Array_virtual_Accessorfunc_Nova_first)(nova_datastruct_list_Nova_Array*, nova_exception_Nova_ExceptionData*);
+nova_Nova_Object* (*nova_datastruct_list_Nova_Array_virtual_Accessorfunc_Nova_last)(nova_datastruct_list_Nova_Array*, nova_exception_Nova_ExceptionData*);
 char (*nova_io_Nova_OutputStream_virtual0_Nova_write)(nova_io_Nova_OutputStream*, nova_exception_Nova_ExceptionData*, nova_Nova_String*);
 char (*nova_io_Nova_OutputStream_virtual1_Nova_write)(nova_io_Nova_OutputStream*, nova_exception_Nova_ExceptionData*, nova_Nova_Object*);
 double (*nova_math_Nova_Vector_virtual_Nova_dotProduct)(nova_math_Nova_Vector*, nova_exception_Nova_ExceptionData*, nova_math_Nova_Vector*);

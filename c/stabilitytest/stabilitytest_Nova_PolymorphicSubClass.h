@@ -48,7 +48,6 @@ struct stabilitytest_PolymorphicSubClass_Extension_VTable
 {
 	nova_Nova_Class* classInstance;
 	nova_Interface_VTable itable;
-	char (*nova_operators_Nova_Equals_virtual_Nova_equals)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*, nova_Nova_Object*);
 	nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(stabilitytest_Nova_PolymorphicSubClass*, nova_exception_Nova_ExceptionData*);
 	long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 	int (*stabilitytest_Nova_PolymorphicSuperClass_virtual_Accessor_Nova_myProperty)(stabilitytest_Nova_PolymorphicSubClass*, nova_exception_Nova_ExceptionData*);
