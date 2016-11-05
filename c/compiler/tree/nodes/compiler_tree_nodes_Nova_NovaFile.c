@@ -156,6 +156,7 @@ void compiler_tree_nodes_Nova_NovaFile_Nova_destroy(compiler_tree_nodes_Nova_Nov
 	}
 	
 	nova_Nova_String_Nova_destroy(&(*this)->compiler_tree_nodes_Nova_NovaFile_Nova_name, exceptionData);
+	nova_Nova_String_Nova_destroy(&(*this)->compiler_tree_nodes_Nova_NovaFile_Nova_source, exceptionData);
 	nova_io_Nova_File_Nova_destroy(&(*this)->compiler_tree_nodes_Nova_NovaFile_Nova_file, exceptionData);
 	compiler_tree_nodes_Nova_ImportList_Nova_destroy(&(*this)->compiler_tree_nodes_Nova_NovaFile_Nova_importList, exceptionData);
 	compiler_tree_nodes_Nova_Package_Nova_destroy(&(*this)->compiler_tree_nodes_Nova_NovaFile_Nova_packageDeclaration, exceptionData);
@@ -172,6 +173,7 @@ void compiler_tree_nodes_Nova_NovaFile_Nova_this(compiler_tree_nodes_Nova_NovaFi
 	location = (compiler_util_Nova_Location*)(location == 0 ? (nova_Nova_Object*)compiler_util_Nova_Location_Nova_INVALID : (nova_Nova_Object*)location);
 	compiler_tree_nodes_Nova_Node_Nova_this((compiler_tree_nodes_Nova_Node*)(this), exceptionData, parent, location);
 	this->compiler_tree_nodes_Nova_NovaFile_Nova_file = file;
+	this->compiler_tree_nodes_Nova_NovaFile_Nova_source = nova_io_Nova_File_Nova_readAllContents(file, exceptionData);
 	this->compiler_tree_nodes_Nova_NovaFile_Nova_packageDeclaration = compiler_tree_nodes_Nova_Package_static_Nova_generateDefaultPackage(0, exceptionData, (compiler_tree_nodes_Nova_Node*)(this), 0);
 	this->compiler_tree_nodes_Nova_NovaFile_Nova_importList = compiler_tree_nodes_Nova_ImportList_Nova_construct(0, exceptionData, (compiler_tree_nodes_Nova_Node*)(this), location);
 	this->compiler_tree_nodes_Nova_NovaFile_Nova_classes = nova_datastruct_list_Nova_Array_0_Nova_construct(0, exceptionData);
@@ -183,10 +185,18 @@ void compiler_tree_nodes_Nova_NovaFile_Nova_addChild(compiler_tree_nodes_Nova_No
 	if (nova_Nova_Class_Nova_isOfType(child->vtable->classInstance, exceptionData, (nova_Nova_Class*)(compiler_tree_nodes_ClassDeclaration_Extension_VTable_val.classInstance)))
 	{
 		nova_datastruct_list_Nova_Array_0_Nova_add((nova_datastruct_list_Nova_Array*)(this->compiler_tree_nodes_Nova_NovaFile_Nova_classes), exceptionData, (nova_Nova_Object*)((compiler_tree_nodes_Nova_ClassDeclaration*)child));
+		if (this->compiler_tree_nodes_Nova_NovaFile_Nova_name == (nova_Nova_String*)nova_null)
+		{
+			this->compiler_tree_nodes_Nova_NovaFile_Nova_name = (nova_Nova_String*)((nova_Nova_String*)(((compiler_tree_nodes_Nova_ClassDeclaration*)nova_datastruct_list_Nova_Array_virtual_Nova_get((nova_datastruct_list_Nova_Array*)(this->compiler_tree_nodes_Nova_NovaFile_Nova_classes), exceptionData, 0))->compiler_tree_nodes_Nova_Identifier_Nova_name));
+		}
 	}
 	else if (nova_Nova_Class_Nova_isOfType(child->vtable->classInstance, exceptionData, (nova_Nova_Class*)(compiler_tree_nodes_Import_Extension_VTable_val.classInstance)))
 	{
 		nova_datastruct_list_Nova_Array_0_Nova_add((nova_datastruct_list_Nova_Array*)(compiler_tree_nodes_Nova_NovaFile_Accessor_Nova_imports(this, exceptionData)), exceptionData, (nova_Nova_Object*)((compiler_tree_nodes_Nova_Import*)child));
+	}
+	else if (nova_Nova_Class_Nova_isOfType(child->vtable->classInstance, exceptionData, (nova_Nova_Class*)(compiler_tree_nodes_Package_Extension_VTable_val.classInstance)))
+	{
+		this->compiler_tree_nodes_Nova_NovaFile_Nova_packageDeclaration = (compiler_tree_nodes_Nova_Package*)child;
 	}
 	else
 	{
@@ -208,6 +218,10 @@ compiler_tree_nodes_Nova_Node* compiler_tree_nodes_Nova_NovaFile_Nova_parseState
 		if (!(l1_Nova_node != (nova_Nova_Object*)nova_null))
 		{
 			l1_Nova_node = (nova_Nova_Object*)(compiler_tree_nodes_Nova_Import_static_Nova_parse(0, exceptionData, input, (compiler_tree_nodes_Nova_Node*)(this), location, require));
+			if (!(l1_Nova_node != (nova_Nova_Object*)nova_null))
+			{
+				l1_Nova_node = (nova_Nova_Object*)(compiler_tree_nodes_Nova_Package_static_Nova_parse(0, exceptionData, input, (compiler_tree_nodes_Nova_Node*)(this), location, require));
+			}
 		}
 	}
 	return (compiler_tree_nodes_Nova_Node*)l1_Nova_node;
@@ -355,6 +369,7 @@ compiler_tree_nodes_Nova_ClassDeclaration* compiler_tree_nodes_Nova_NovaFile_Acc
 void compiler_tree_nodes_Nova_NovaFile_Nova_super(compiler_tree_nodes_Nova_NovaFile* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
 	this->compiler_tree_nodes_Nova_NovaFile_Nova_name = (nova_Nova_String*)nova_null;
+	this->compiler_tree_nodes_Nova_NovaFile_Nova_source = (nova_Nova_String*)nova_null;
 	this->compiler_tree_nodes_Nova_NovaFile_Nova_file = (nova_io_Nova_File*)nova_null;
 	this->compiler_tree_nodes_Nova_NovaFile_Nova_importList = (compiler_tree_nodes_Nova_ImportList*)nova_null;
 	this->compiler_tree_nodes_Nova_NovaFile_Nova_packageDeclaration = (compiler_tree_nodes_Nova_Package*)nova_null;

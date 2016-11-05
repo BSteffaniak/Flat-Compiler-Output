@@ -109,6 +109,7 @@ compiler_tree_nodes_Value_Extension_VTable compiler_tree_nodes_Value_Extension_V
 	compiler_tree_nodes_Nova_Node_Accessor_Nova_parentClass,
 	compiler_tree_nodes_Nova_Node_Accessor_Nova_scope,
 	compiler_tree_nodes_Nova_Value_0_static_Nova_parse,
+	compiler_tree_nodes_Nova_Value_Accessor_Nova_isAssignable,
 };
 
 
@@ -117,6 +118,7 @@ nova_datastruct_list_Nova_Array* generated12(compiler_tree_nodes_Nova_Value* thi
 char compiler_tree_nodes_Nova_Value_Nova_testLambda33(compiler_tree_nodes_Nova_Value* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* _1, Context1* context);
 char compiler_tree_nodes_Nova_Value_Nova_testLambda90(compiler_tree_nodes_Nova_Value* this, nova_exception_Nova_ExceptionData* exceptionData, compiler_tree_nodes_Nova_Import* _1, Context2* context);
 char compiler_tree_nodes_Nova_Value_Nova_testLambda91(compiler_tree_nodes_Nova_Value* this, nova_exception_Nova_ExceptionData* exceptionData, compiler_tree_nodes_Nova_Import* _1, Context3* context);
+
 
 
 char compiler_tree_nodes_Nova_Value_Nova_VALUE;
@@ -302,6 +304,12 @@ compiler_tree_nodes_Nova_ClassDeclaration* compiler_tree_nodes_Nova_Value_Access
 }
 
 
+char compiler_tree_nodes_Nova_Value_Accessor_Nova_isAssignable(compiler_tree_nodes_Nova_Value* this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+	return 1;
+}
+
+
 char compiler_tree_nodes_Nova_Value_Accessor_Nova_isPrimitiveType(compiler_tree_nodes_Nova_Value* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
 	Context1 contextArg33 = 
@@ -321,5 +329,10 @@ void compiler_tree_nodes_Nova_Value_Nova_super(compiler_tree_nodes_Nova_Value* t
 compiler_tree_nodes_Nova_Value* compiler_tree_nodes_Nova_Value_virtual0_static_Nova_parse(compiler_tree_nodes_Nova_Value* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* input, compiler_tree_nodes_Nova_Node* parent, compiler_util_Nova_Location* location, int require)
 {
 	return this->vtable->compiler_tree_nodes_Nova_Value_virtual0_static_Nova_parse(0, exceptionData, input, parent, location, require);
+}
+
+char compiler_tree_nodes_Nova_Value_virtual_Accessor_Nova_isAssignable(compiler_tree_nodes_Nova_Value* this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+	return this->vtable->compiler_tree_nodes_Nova_Value_virtual_Accessor_Nova_isAssignable((compiler_tree_nodes_Nova_Value*)(this), exceptionData);
 }
 

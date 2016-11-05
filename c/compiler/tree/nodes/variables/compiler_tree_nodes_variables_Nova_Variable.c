@@ -85,7 +85,7 @@ compiler_tree_nodes_variables_Variable_Extension_VTable compiler_tree_nodes_vari
 		(compiler_tree_nodes_Nova_Accessible*(*)(compiler_tree_nodes_Nova_Accessible*, nova_exception_Nova_ExceptionData*))compiler_tree_nodes_variables_Nova_Variable_Accessorfunc1_Nova_accessedNode,
 		(void(*)(compiler_tree_nodes_annotations_Nova_Annotatable*, nova_exception_Nova_ExceptionData*, compiler_tree_nodes_annotations_Nova_Annotation*))compiler_tree_nodes_Nova_Node_Nova_addAnnotation,
 	},
-	compiler_tree_nodes_Nova_Identifier_Nova_toString,
+	compiler_tree_nodes_variables_Nova_Variable_Nova_toString,
 	nova_Nova_Object_Accessor_Nova_hashCodeLong,
 	compiler_tree_nodes_Nova_Node_Nova_addChild,
 	compiler_tree_nodes_Nova_Node_Nova_findVariableDeclaration,
@@ -103,6 +103,7 @@ compiler_tree_nodes_variables_Variable_Extension_VTable compiler_tree_nodes_vari
 	compiler_tree_nodes_Nova_Node_Accessor_Nova_parentClass,
 	compiler_tree_nodes_Nova_Node_Accessor_Nova_scope,
 	compiler_tree_nodes_Nova_Identifier_static_Nova_parse,
+	compiler_tree_nodes_Nova_Value_Accessor_Nova_isAssignable,
 };
 
 
@@ -156,7 +157,12 @@ void compiler_tree_nodes_variables_Nova_Variable_Nova_this(compiler_tree_nodes_v
 
 nova_Nova_String* compiler_tree_nodes_variables_Nova_Variable_Nova_toNova(compiler_tree_nodes_variables_Nova_Variable* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
-	return nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)(compiler_tree_nodes_Nova_Node_Nova_toNova((compiler_tree_nodes_Nova_Node*)(((compiler_tree_nodes_Nova_Identifier*)this)), exceptionData)), exceptionData, compiler_tree_nodes_Nova_Accessible_Nova_writeAccessedNodes((compiler_tree_nodes_Nova_Accessible*)(this), exceptionData));
+	return nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)(this->compiler_tree_nodes_variables_Nova_Variable_Nova_declaration->compiler_tree_nodes_Nova_Identifier_Nova_name), exceptionData, compiler_tree_nodes_Nova_Accessible_Nova_writeAccessedNodes((compiler_tree_nodes_Nova_Accessible*)(this), exceptionData));
+}
+
+nova_Nova_String* compiler_tree_nodes_variables_Nova_Variable_Nova_toString(compiler_tree_nodes_variables_Nova_Variable* this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+	return compiler_tree_nodes_Nova_Node_virtual_Nova_toNova((compiler_tree_nodes_Nova_Node*)(this), exceptionData);
 }
 
 char compiler_tree_nodes_variables_Nova_Variable_Accessorfunc_Nova_safeNavigation(compiler_tree_nodes_variables_Nova_Variable* this, nova_exception_Nova_ExceptionData* exceptionData)

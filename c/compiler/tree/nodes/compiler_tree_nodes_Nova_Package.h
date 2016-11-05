@@ -38,6 +38,7 @@ typedef struct compiler_tree_nodes_Nova_Package compiler_tree_nodes_Nova_Package
 #include <nova/nova_Nova_Class.h>
 #include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <compiler/util/compiler_util_Nova_Location.h>
+#include <compiler/compiler_Nova_SyntaxMessage.h>
 #include <compiler/tree/nodes/compiler_tree_nodes_Nova_Node.h>
 #include <compiler/tree/nodes/annotations/compiler_tree_nodes_annotations_Nova_Annotatable.h>
 #include <compiler/tree/nodes/annotations/compiler_tree_nodes_annotations_Nova_Annotation.h>
@@ -58,7 +59,7 @@ struct compiler_tree_nodes_Package_Extension_VTable
 {
 	nova_Nova_Class* classInstance;
 	nova_Interface_VTable itable;
-	nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(compiler_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*);
+	nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(compiler_tree_nodes_Nova_Package*, nova_exception_Nova_ExceptionData*);
 	long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 	void (*compiler_tree_nodes_Nova_Node_virtual_Nova_addChild)(compiler_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, compiler_tree_nodes_Nova_Node*);
 	compiler_tree_nodes_variables_Nova_VariableDeclaration* (*compiler_tree_nodes_Nova_Node_virtual_Nova_findVariableDeclaration)(compiler_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, int);
@@ -96,7 +97,9 @@ compiler_tree_nodes_Nova_Package* compiler_tree_nodes_Nova_Package_Nova_construc
 void compiler_tree_nodes_Nova_Package_Nova_destroy(compiler_tree_nodes_Nova_Package** this, nova_exception_Nova_ExceptionData* exceptionData);
 void compiler_tree_nodes_Nova_Package_Nova_this(compiler_tree_nodes_Nova_Package* this, nova_exception_Nova_ExceptionData* exceptionData, compiler_tree_nodes_Nova_Node* parent, compiler_util_Nova_Location* location);
 compiler_tree_nodes_Nova_Package* compiler_tree_nodes_Nova_Package_static_Nova_generateDefaultPackage(compiler_tree_nodes_Nova_Package* this, nova_exception_Nova_ExceptionData* exceptionData, compiler_tree_nodes_Nova_Node* parent, compiler_util_Nova_Location* location);
+compiler_tree_nodes_Nova_Package* compiler_tree_nodes_Nova_Package_static_Nova_parse(compiler_tree_nodes_Nova_Package* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* input, compiler_tree_nodes_Nova_Node* parent, compiler_util_Nova_Location* location, int require);
 nova_Nova_String* compiler_tree_nodes_Nova_Package_Nova_toNova(compiler_tree_nodes_Nova_Package* this, nova_exception_Nova_ExceptionData* exceptionData);
+nova_Nova_String* compiler_tree_nodes_Nova_Package_Nova_toString(compiler_tree_nodes_Nova_Package* this, nova_exception_Nova_ExceptionData* exceptionData);
 void compiler_tree_nodes_Nova_Package_Nova_super(compiler_tree_nodes_Nova_Package* this, nova_exception_Nova_ExceptionData* exceptionData);
 
 #endif

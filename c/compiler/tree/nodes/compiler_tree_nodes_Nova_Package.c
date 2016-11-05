@@ -28,6 +28,7 @@
 #include <nova/nova_Nova_Class.h>
 #include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <compiler/util/compiler_util_Nova_Location.h>
+#include <compiler/compiler_Nova_SyntaxMessage.h>
 #include <compiler/tree/nodes/compiler_tree_nodes_Nova_Node.h>
 #include <compiler/tree/nodes/annotations/compiler_tree_nodes_annotations_Nova_Annotatable.h>
 #include <compiler/tree/nodes/annotations/compiler_tree_nodes_annotations_Nova_Annotation.h>
@@ -75,7 +76,7 @@ compiler_tree_nodes_Package_Extension_VTable compiler_tree_nodes_Package_Extensi
 		0,
 		(void(*)(compiler_tree_nodes_annotations_Nova_Annotatable*, nova_exception_Nova_ExceptionData*, compiler_tree_nodes_annotations_Nova_Annotation*))compiler_tree_nodes_Nova_Node_Nova_addAnnotation,
 	},
-	compiler_tree_nodes_Nova_Node_Nova_toString,
+	compiler_tree_nodes_Nova_Package_Nova_toString,
 	nova_Nova_Object_Accessor_Nova_hashCodeLong,
 	compiler_tree_nodes_Nova_Node_Nova_addChild,
 	compiler_tree_nodes_Nova_Node_Nova_findVariableDeclaration,
@@ -142,9 +143,47 @@ compiler_tree_nodes_Nova_Package* compiler_tree_nodes_Nova_Package_static_Nova_g
 	return compiler_tree_nodes_Nova_Package_Nova_construct(0, exceptionData, parent, location);
 }
 
+compiler_tree_nodes_Nova_Package* compiler_tree_nodes_Nova_Package_static_Nova_parse(compiler_tree_nodes_Nova_Package* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* input, compiler_tree_nodes_Nova_Node* parent, compiler_util_Nova_Location* location, int require)
+{
+	parent = (compiler_tree_nodes_Nova_Node*)(parent == 0 ? (nova_Nova_Object*)(nova_Nova_Object*)nova_null : (nova_Nova_Object*)parent);
+	location = (compiler_util_Nova_Location*)(location == 0 ? (nova_Nova_Object*)compiler_util_Nova_Location_Nova_INVALID : (nova_Nova_Object*)location);
+	require = (int)(require == (intptr_t)nova_null ? 1 : require);
+	if (compiler_util_Nova_CompilerStringFunctions_Nova_nextWordIndex(input, exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("package")), (intptr_t)nova_null, (intptr_t)nova_null) == 0)
+	{
+		compiler_tree_nodes_Nova_Package* l1_Nova_node = (compiler_tree_nodes_Nova_Package*)nova_null;
+		int l1_Nova_quoteStart = 0;
+		int l1_Nova_quoteEnd = 0;
+		nova_Nova_String* l1_Nova_packageLocation = (nova_Nova_String*)nova_null;
+		
+		l1_Nova_node = compiler_tree_nodes_Nova_Package_Nova_construct(0, exceptionData, parent, location);
+		l1_Nova_quoteStart = compiler_util_Nova_CompilerStringFunctions_Nova_nextNonWhitespaceIndex(input, exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("package"))->nova_Nova_String_Nova_count, (intptr_t)nova_null, (intptr_t)nova_null);
+		if (l1_Nova_quoteStart < 0 || nova_Nova_String_Nova_get(input, exceptionData, l1_Nova_quoteStart) != '"')
+		{
+			return (compiler_tree_nodes_Nova_Package*)(nova_Nova_Object*)nova_null;
+		}
+		l1_Nova_quoteEnd = compiler_util_Nova_CompilerStringFunctions_Nova_findEndingChar(input, exceptionData, '"', l1_Nova_quoteStart, (intptr_t)nova_null, 0, 0, 0, (intptr_t)nova_null);
+		if (l1_Nova_quoteEnd < 0)
+		{
+			compiler_Nova_SyntaxMessage_static_Nova_error(0, exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("Missing ending quotation for Package statement")), (compiler_tree_nodes_Nova_Node*)(l1_Nova_node), (intptr_t)nova_null);
+		}
+		l1_Nova_packageLocation = nova_Nova_String_Nova_substring(input, exceptionData, l1_Nova_quoteStart + 1, l1_Nova_quoteEnd);
+		l1_Nova_node->compiler_tree_nodes_Nova_Package_Nova_location = l1_Nova_packageLocation;
+		if (1)
+		{
+			return l1_Nova_node;
+		}
+	}
+	return (compiler_tree_nodes_Nova_Package*)(nova_Nova_Object*)nova_null;
+}
+
 nova_Nova_String* compiler_tree_nodes_Nova_Package_Nova_toNova(compiler_tree_nodes_Nova_Package* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
 	return (nova_Nova_String*)(this->compiler_tree_nodes_Nova_Package_Nova_location != (nova_Nova_String*)nova_null ? nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)(nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("package \""))), exceptionData, nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)((this->compiler_tree_nodes_Nova_Package_Nova_location)), exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("\"")))) : nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("")));
+}
+
+nova_Nova_String* compiler_tree_nodes_Nova_Package_Nova_toString(compiler_tree_nodes_Nova_Package* this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+	return compiler_tree_nodes_Nova_Package_Nova_toNova(this, exceptionData);
 }
 
 void compiler_tree_nodes_Nova_Package_Nova_super(compiler_tree_nodes_Nova_Package* this, nova_exception_Nova_ExceptionData* exceptionData)

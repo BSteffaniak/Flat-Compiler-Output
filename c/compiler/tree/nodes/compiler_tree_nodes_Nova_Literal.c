@@ -102,6 +102,7 @@ compiler_tree_nodes_Literal_Extension_VTable compiler_tree_nodes_Literal_Extensi
 	compiler_tree_nodes_Nova_Node_Accessor_Nova_parentClass,
 	compiler_tree_nodes_Nova_Node_Accessor_Nova_scope,
 	compiler_tree_nodes_Nova_Literal_static_Nova_parse,
+	compiler_tree_nodes_Nova_Value_Accessor_Nova_isAssignable,
 };
 
 

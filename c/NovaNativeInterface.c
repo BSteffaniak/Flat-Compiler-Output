@@ -323,6 +323,8 @@ nova_env novaEnv = {
 },
 
 {
+&nova_io_Nova_File_Nova_directoryContents,
+&nova_io_Nova_File_Nova_listFiles,
 &nova_io_Nova_File_Nova_delete,
 &nova_io_Nova_File_Nova_reopen,
 &nova_io_Nova_File_Nova_rewind,
@@ -997,6 +999,10 @@ nova_env novaEnv = {
 },
 
 {
+&compiler_tree_nodes_operations_Nova_Assignment_Nova_construct,
+},
+
+{
 &compiler_tree_nodes_operations_Nova_Operation_Nova_construct,
 },
 
@@ -1065,6 +1071,8 @@ nova_env novaEnv = {
 &compiler_util_Nova_CompilerStringFunctions_0_Nova_findEndingMatch,
 &compiler_util_Nova_CompilerStringFunctions_1_Nova_findEndingMatch,
 &compiler_util_Nova_CompilerStringFunctions_Nova_splitAtCommas,
+&compiler_util_Nova_CompilerStringFunctions_0_Nova_isStrictlyOperator,
+&compiler_util_Nova_CompilerStringFunctions_1_Nova_isStrictlyOperator,
 &compiler_util_Nova_CompilerStringFunctions_0_Nova_findCharInBaseScope,
 &compiler_util_Nova_CompilerStringFunctions_1_Nova_findCharInBaseScope,
 &compiler_util_Nova_CompilerStringFunctions_0_Nova_findStringInBaseScope,

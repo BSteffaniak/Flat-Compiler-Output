@@ -107,6 +107,7 @@ compiler_tree_nodes_StaticClassReference_Extension_VTable compiler_tree_nodes_St
 	compiler_tree_nodes_Nova_Node_Accessor_Nova_parentClass,
 	compiler_tree_nodes_Nova_Node_Accessor_Nova_scope,
 	compiler_tree_nodes_Nova_StaticClassReference_static_Nova_parse,
+	compiler_tree_nodes_Nova_Value_Accessor_Nova_isAssignable,
 };
 
 
