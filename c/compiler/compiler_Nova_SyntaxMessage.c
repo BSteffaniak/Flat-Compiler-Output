@@ -64,8 +64,6 @@ compiler_SyntaxMessage_Extension_VTable compiler_SyntaxMessage_Extension_VTable_
 		0,
 		0,
 		0,
-		0,
-		0,
 	},
 	nova_Nova_Object_Nova_toString,
 	nova_Nova_Object_Accessor_Nova_hashCodeLong,
@@ -125,7 +123,7 @@ void compiler_Nova_SyntaxMessage_static_Nova_error(compiler_Nova_SyntaxMessage* 
 	}
 	else
 	{
-		nova_datastruct_list_Nova_Array_0_Nova_add((nova_datastruct_list_Nova_Array*)(compiler_tree_nodes_Nova_Node_virtual_Accessor_Nova_program((compiler_tree_nodes_Nova_Node*)(node), exceptionData)->compiler_tree_nodes_Nova_Program_Nova_compiler->compiler_Nova_Compiler_Nova_errors), exceptionData, (nova_Nova_Object*)(message));
+		nova_datastruct_list_Nova_Array_0_Nova_add((nova_datastruct_list_Nova_Array*)(compiler_tree_nodes_Nova_Program_Accessor_Nova_compiler(compiler_tree_nodes_Nova_Node_virtual_Accessor_Nova_program((compiler_tree_nodes_Nova_Node*)(node), exceptionData), exceptionData)->compiler_Nova_Compiler_Nova_errors), exceptionData, (nova_Nova_Object*)(message));
 	}
 }
 

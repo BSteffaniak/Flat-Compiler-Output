@@ -64,8 +64,6 @@ compiler_SyntaxErrorException_Extension_VTable compiler_SyntaxErrorException_Ext
 		0,
 		0,
 		0,
-		0,
-		0,
 	},
 	nova_Nova_Object_Nova_toString,
 	nova_Nova_Object_Accessor_Nova_hashCodeLong,
@@ -131,7 +129,7 @@ void compiler_Nova_SyntaxErrorException_0_Nova_this(compiler_Nova_SyntaxErrorExc
 	program = (compiler_tree_nodes_Nova_Program*)(program == 0 ? (nova_Nova_Object*)(nova_Nova_Object*)nova_null : (nova_Nova_Object*)program);
 	nova_exception_Nova_Exception_Nova_this((nova_exception_Nova_Exception*)(this), exceptionData, message);
 	node = (compiler_tree_nodes_Nova_Node*)((l1_Nova_nova_local_0 = node) != (compiler_tree_nodes_Nova_Node*)nova_null ? l1_Nova_nova_local_0 : (compiler_tree_nodes_Nova_Node*)program);
-	nova_datastruct_list_Nova_Array_0_Nova_add((nova_datastruct_list_Nova_Array*)(compiler_tree_nodes_Nova_Node_virtual_Accessor_Nova_program((compiler_tree_nodes_Nova_Node*)(node), exceptionData)->compiler_tree_nodes_Nova_Program_Nova_compiler->compiler_Nova_Compiler_Nova_errors), exceptionData, (nova_Nova_Object*)(message));
+	nova_datastruct_list_Nova_Array_0_Nova_add((nova_datastruct_list_Nova_Array*)(compiler_tree_nodes_Nova_Program_Accessor_Nova_compiler(compiler_tree_nodes_Nova_Node_virtual_Accessor_Nova_program((compiler_tree_nodes_Nova_Node*)(node), exceptionData), exceptionData)->compiler_Nova_Compiler_Nova_errors), exceptionData, (nova_Nova_Object*)(message));
 }
 
 void compiler_Nova_SyntaxErrorException_Nova_super(compiler_Nova_SyntaxErrorException* this, nova_exception_Nova_ExceptionData* exceptionData)

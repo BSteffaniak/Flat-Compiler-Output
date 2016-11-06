@@ -62,8 +62,6 @@ compiler_tree_nodes_generics_GenericTypeArgument_Extension_VTable compiler_tree_
 		0,
 		0,
 		0,
-		0,
-		0,
 	},
 	nova_Nova_Object_Nova_toString,
 	nova_Nova_Object_Accessor_Nova_hashCodeLong,

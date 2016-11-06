@@ -63,8 +63,6 @@ compiler_tree_nodes_ValidationResult_Extension_VTable compiler_tree_nodes_Valida
 		0,
 		0,
 		0,
-		0,
-		0,
 	},
 	nova_Nova_Object_Nova_toString,
 	nova_Nova_Object_Accessor_Nova_hashCodeLong,

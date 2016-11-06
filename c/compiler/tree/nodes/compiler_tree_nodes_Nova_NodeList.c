@@ -81,8 +81,6 @@ compiler_tree_nodes_NodeList_Extension_VTable compiler_tree_nodes_NodeList_Exten
 		0,
 		0,
 		(void(*)(compiler_tree_nodes_annotations_Nova_Annotatable*, nova_exception_Nova_ExceptionData*, compiler_tree_nodes_annotations_Nova_Annotation*))compiler_tree_nodes_Nova_Node_Nova_addAnnotation,
-		0,
-		0,
 	},
 	compiler_tree_nodes_Nova_Node_Nova_toString,
 	nova_Nova_Object_Accessor_Nova_hashCodeLong,
@@ -182,6 +180,7 @@ compiler_tree_nodes_Nova_Node* compiler_tree_nodes_Nova_NodeList_Nova_addChild(c
 		nova_datastruct_list_Nova_Array_virtual_Nova_set((nova_datastruct_list_Nova_Array*)(this->compiler_tree_nodes_Nova_NodeList_Nova_children), exceptionData, index, (nova_Nova_Object*)(node));
 	}
 	compiler_tree_nodes_Nova_Node_Nova_onAdded(node, exceptionData, (compiler_tree_nodes_Nova_Node*)(this));
+	compiler_tree_nodes_Nova_Node_Nova_addChild((compiler_tree_nodes_Nova_Node*)(((compiler_tree_nodes_Nova_Node*)this)), exceptionData, node);
 	return node;
 }
 
