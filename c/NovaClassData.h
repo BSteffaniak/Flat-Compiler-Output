@@ -16,6 +16,7 @@ typedef struct compiler_tree_nodes_vtable_Abstractable compiler_tree_nodes_vtabl
 typedef struct compiler_tree_nodes_vtable_Accessible compiler_tree_nodes_vtable_Accessible;
 typedef struct compiler_tree_nodes_vtable_Listener compiler_tree_nodes_vtable_Listener;
 typedef struct compiler_tree_nodes_annotations_vtable_Annotatable compiler_tree_nodes_annotations_vtable_Annotatable;
+typedef struct example_vtable_Polygon example_vtable_Polygon;
 extern nova_datastruct_vtable_Comparable nova_datastruct_vtable_Comparable_value_default;
 extern nova_datastruct_list_vtable_Iterable nova_datastruct_list_vtable_Iterable_value_default;
 extern nova_datastruct_list_vtable_Iterator nova_datastruct_list_vtable_Iterator_value_default;
@@ -29,6 +30,7 @@ extern compiler_tree_nodes_vtable_Abstractable compiler_tree_nodes_vtable_Abstra
 extern compiler_tree_nodes_vtable_Accessible compiler_tree_nodes_vtable_Accessible_value_default;
 extern compiler_tree_nodes_vtable_Listener compiler_tree_nodes_vtable_Listener_value_default;
 extern compiler_tree_nodes_annotations_vtable_Annotatable compiler_tree_nodes_annotations_vtable_Annotatable_value_default;
+extern example_vtable_Polygon example_vtable_Polygon_value_default;
 
 #include <nova/nova_Nova_Class.h>
 #include <nova/nova_Nova_Object.h>
@@ -82,6 +84,8 @@ extern compiler_tree_nodes_annotations_vtable_Annotatable compiler_tree_nodes_an
 #include <nova/io/nova_io_Nova_Console.h>
 #include <nova/io/nova_io_Nova_File.h>
 #include <nova/io/nova_io_Nova_FileNotFoundException.h>
+#include <nova/io/nova_io_Nova_FileReader.h>
+#include <nova/io/nova_io_Nova_FileWriter.h>
 #include <nova/io/nova_io_Nova_InputStream.h>
 #include <nova/io/nova_io_Nova_OutputStream.h>
 #include <nova/io/nova_io_Nova_StreamReader.h>
@@ -146,15 +150,6 @@ extern compiler_tree_nodes_annotations_vtable_Annotatable compiler_tree_nodes_an
 #include <nova/star/nova_star_Nova_Frame.h>
 #include <nova/star/nova_star_Nova_Window.h>
 #include <nova/star/nova_star_Nova_WindowThread.h>
-#include <nova/svg/nova_svg_Nova_Svg.h>
-#include <nova/svg/nova_svg_Nova_SvgCircle.h>
-#include <nova/svg/nova_svg_Nova_SvgComponent.h>
-#include <nova/svg/nova_svg_Nova_SvgComponentList.h>
-#include <nova/svg/nova_svg_Nova_SvgComponentNode.h>
-#include <nova/svg/nova_svg_Nova_SvgMainComponent.h>
-#include <nova/svg/no3/nova_svg_no3_Nova_No3.h>
-#include <nova/svg/no3/nova_svg_no3_Nova_No3Node.h>
-#include <nova/svg/no3/nova_svg_no3_Nova_No3Selection.h>
 #include <nova/thread/nova_thread_Nova_Thread.h>
 #include <nova/thread/nova_thread_Nova_UncaughtExceptionHandler.h>
 #include <nova/thread/async/nova_thread_async_Nova_Async.h>
@@ -229,6 +224,63 @@ extern compiler_tree_nodes_annotations_vtable_Annotatable compiler_tree_nodes_an
 #include <compiler/util/compiler_util_Nova_Location.h>
 #include <compiler/util/compiler_util_Nova_OS.h>
 #include <compiler/util/compiler_util_Nova_SyntaxUtils.h>
+#include <example/example_Nova_Animal.h>
+#include <example/example_Nova_ArrayDemo.h>
+#include <example/example_Nova_BodyBuilder.h>
+#include <example/example_Nova_ClosureDemo.h>
+#include <example/example_Nova_Dog.h>
+#include <example/example_Nova_ExceptionHandlingDemo.h>
+#include <example/example_Nova_FileTest.h>
+#include <example/example_Nova_GenericDemo.h>
+#include <example/example_Nova_HashMapDemo.h>
+#include <example/example_Nova_HashSetDemo.h>
+#include <example/example_Nova_IntegerTest.h>
+#include <example/example_Nova_Lab.h>
+#include <example/example_Nova_MathDemo.h>
+#include <example/example_Nova_NonWholeDivisionException.h>
+#include <example/example_Nova_Person.h>
+#include <example/example_Nova_Polygon.h>
+#include <example/example_Nova_PolymorphismDemo.h>
+#include <example/example_Nova_QueueDemo.h>
+#include <example/example_Nova_Spider.h>
+#include <example/example_Nova_Square.h>
+#include <example/example_Nova_SvgChart.h>
+#include <example/example_Nova_SvgFractal.h>
+#include <example/example_Nova_T1.h>
+#include <example/example_Nova_T2.h>
+#include <example/example_Nova_Test.h>
+#include <example/example_Nova_ThreadDemo.h>
+#include <example/example_Nova_ThreadDemoImplementation.h>
+#include <example/ackermann/example_ackermann_Nova_Ackermann.h>
+#include <example/copy/example_copy_Nova_Dog.h>
+#include <example/database/example_database_Nova_DatabaseDemo.h>
+#include <example/network/example_network_Nova_ClientDemo.h>
+#include <example/network/example_network_Nova_ConnectionThread.h>
+#include <example/network/example_network_Nova_OutputThread.h>
+#include <example/network/example_network_Nova_ServerDemo.h>
+#include <stabilitytest/stabilitytest_Nova_AssignmentStability.h>
+#include <stabilitytest/stabilitytest_Nova_ClassWithProperties.h>
+#include <stabilitytest/stabilitytest_Nova_ClientThread.h>
+#include <stabilitytest/stabilitytest_Nova_ClosureStability.h>
+#include <stabilitytest/stabilitytest_Nova_ExceptionStability.h>
+#include <stabilitytest/stabilitytest_Nova_FileStability.h>
+#include <stabilitytest/stabilitytest_Nova_LambdaStability.h>
+#include <stabilitytest/stabilitytest_Nova_NetworkStability.h>
+#include <stabilitytest/stabilitytest_Nova_Node.h>
+#include <stabilitytest/stabilitytest_Nova_PolymorphicSubClass.h>
+#include <stabilitytest/stabilitytest_Nova_PolymorphicSuperClass.h>
+#include <stabilitytest/stabilitytest_Nova_PolymorphismStability.h>
+#include <stabilitytest/stabilitytest_Nova_RegexStability.h>
+#include <stabilitytest/stabilitytest_Nova_StabilityExceptionHandler.h>
+#include <stabilitytest/stabilitytest_Nova_StabilityTest.h>
+#include <stabilitytest/stabilitytest_Nova_StabilityTestCase.h>
+#include <stabilitytest/stabilitytest_Nova_StabilityTestException.h>
+#include <stabilitytest/stabilitytest_Nova_SyntaxStability.h>
+#include <stabilitytest/stabilitytest_Nova_ThreadImplementation.h>
+#include <stabilitytest/stabilitytest_Nova_ThreadStability.h>
+#include <stabilitytest/stabilitytest_Nova_TimeStability.h>
+#include <stabilitytest/stabilitytest_Nova_ToStringStability.h>
+#include <stabilitytest/stabilitytest_Nova_UnstableException.h>
 
 struct nova_datastruct_vtable_Comparable {
 char x;
@@ -296,6 +348,10 @@ struct compiler_tree_nodes_annotations_vtable_Annotatable {
 char x;
 };
 
+struct example_vtable_Polygon {
+char x;
+};
+
 
 
 struct NovaClassData {
@@ -312,6 +368,7 @@ compiler_tree_nodes_vtable_Abstractable* compiler_tree_nodes_vtable_Abstractable
 compiler_tree_nodes_vtable_Accessible* compiler_tree_nodes_vtable_Accessible_value;
 compiler_tree_nodes_vtable_Listener* compiler_tree_nodes_vtable_Listener_value;
 compiler_tree_nodes_annotations_vtable_Annotatable* compiler_tree_nodes_annotations_vtable_Annotatable_value;
+example_vtable_Polygon* example_vtable_Polygon_value;
 
 nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
@@ -321,14 +378,12 @@ nova_Nova_Object* (*nova_datastruct_list_Nova_Array_virtual_Nova_get)(nova_datas
 nova_Nova_Object* (*nova_datastruct_list_Nova_Array_virtual_Nova_set)(nova_datastruct_list_Nova_Array*, nova_exception_Nova_ExceptionData*, int, nova_Nova_Object*);
 nova_Nova_Object* (*nova_datastruct_list_Nova_Array_virtual_Accessorfunc_Nova_first)(nova_datastruct_list_Nova_Array*, nova_exception_Nova_ExceptionData*);
 nova_Nova_Object* (*nova_datastruct_list_Nova_Array_virtual_Accessorfunc_Nova_last)(nova_datastruct_list_Nova_Array*, nova_exception_Nova_ExceptionData*);
-char (*nova_io_Nova_OutputStream_virtual0_Nova_write)(nova_io_Nova_OutputStream*, nova_exception_Nova_ExceptionData*, nova_Nova_String*);
-char (*nova_io_Nova_OutputStream_virtual1_Nova_write)(nova_io_Nova_OutputStream*, nova_exception_Nova_ExceptionData*, nova_Nova_Object*);
+char (*nova_io_Nova_OutputStream_virtual_Nova_write)(nova_io_Nova_OutputStream*, nova_exception_Nova_ExceptionData*, nova_Nova_String*);
 double (*nova_math_Nova_Vector_virtual_Nova_dotProduct)(nova_math_Nova_Vector*, nova_exception_Nova_ExceptionData*, nova_math_Nova_Vector*);
 char (*nova_primitive_number_Nova_Number_virtual_static_Nova_numDigits)(nova_primitive_number_Nova_Number*, nova_exception_Nova_ExceptionData*, nova_primitive_number_Nova_Number*);
 void (*nova_thread_Nova_Thread_virtual_Nova_run)(nova_thread_Nova_Thread*, nova_exception_Nova_ExceptionData*);
-void (*nova_svg_Nova_SvgComponent_virtual_Nova_generateOutput)(nova_svg_Nova_SvgComponent*, nova_exception_Nova_ExceptionData*, nova_io_Nova_File*);
-nova_Nova_String* (*nova_svg_no3_Nova_No3Node_virtual_Nova_toJs)(nova_svg_no3_Nova_No3Node*, nova_exception_Nova_ExceptionData*);
-void (*nova_web_svg_Nova_SvgComponent_virtual_Nova_generateOutput)(nova_web_svg_Nova_SvgComponent*, nova_exception_Nova_ExceptionData*, nova_io_Nova_File*);
+void (*nova_thread_Nova_UncaughtExceptionHandler_virtual_Nova_uncaughtException)(nova_thread_Nova_UncaughtExceptionHandler*, nova_exception_Nova_ExceptionData*, nova_thread_Nova_Thread*, nova_exception_Nova_Exception*);
+void (*nova_web_svg_Nova_SvgComponent_virtual_Nova_generateOutput)(nova_web_svg_Nova_SvgComponent*, nova_exception_Nova_ExceptionData*, nova_io_Nova_FileWriter*);
 nova_Nova_String* (*nova_web_svg_no3_Nova_No3Node_virtual_Nova_toJs)(nova_web_svg_no3_Nova_No3Node*, nova_exception_Nova_ExceptionData*);
 void (*compiler_tree_nodes_Nova_Node_virtual_Nova_addChild)(compiler_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, compiler_tree_nodes_Nova_Node*);
 char (*compiler_tree_nodes_Nova_Node_virtual_Nova_replace)(compiler_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, compiler_tree_nodes_Nova_Node*, compiler_tree_nodes_Nova_Node*);
@@ -349,6 +404,13 @@ compiler_tree_nodes_functions_Nova_FunctionDeclaration* (*compiler_tree_nodes_No
 compiler_tree_nodes_exceptionhandling_Nova_Try* (*compiler_tree_nodes_Nova_Node_virtual_Accessor_Nova_parentTry)(compiler_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*);
 compiler_tree_nodes_Nova_Scope* (*compiler_tree_nodes_Nova_Node_virtual_Accessor_Nova_scope)(compiler_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*);
 char (*compiler_tree_nodes_Nova_Value_virtual_Accessor_Nova_isAssignable)(compiler_tree_nodes_Nova_Value*, nova_exception_Nova_ExceptionData*);
+int (*example_Nova_Animal_virtual_Nova_getNumLegs)(example_Nova_Animal*, nova_exception_Nova_ExceptionData*);
+int (*example_Nova_Animal_virtual_Nova_getNumEyes)(example_Nova_Animal*, nova_exception_Nova_ExceptionData*);
+nova_Nova_String* (*example_Nova_Animal_virtual_Nova_getDescription)(example_Nova_Animal*, nova_exception_Nova_ExceptionData*);
+void (*example_Nova_Person_virtual_Nova_sayHello)(example_Nova_Person*, nova_exception_Nova_ExceptionData*);
+int (*example_Nova_T1_virtual_Accessor_static_Nova_ind)(example_Nova_T1*, nova_exception_Nova_ExceptionData*);
+void (*stabilitytest_Nova_StabilityTestCase_virtual_Nova_test)(stabilitytest_Nova_StabilityTestCase*, nova_exception_Nova_ExceptionData*);
+int (*stabilitytest_Nova_PolymorphicSuperClass_virtual_Accessor_Nova_myProperty)(stabilitytest_Nova_PolymorphicSuperClass*, nova_exception_Nova_ExceptionData*);
 };
 
 #endif

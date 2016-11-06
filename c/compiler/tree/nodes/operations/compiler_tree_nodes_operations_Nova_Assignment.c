@@ -84,6 +84,8 @@ compiler_tree_nodes_operations_Assignment_Extension_VTable compiler_tree_nodes_o
 		0,
 		0,
 		(void(*)(compiler_tree_nodes_annotations_Nova_Annotatable*, nova_exception_Nova_ExceptionData*, compiler_tree_nodes_annotations_Nova_Annotation*))compiler_tree_nodes_Nova_Node_Nova_addAnnotation,
+		0,
+		0,
 	},
 	compiler_tree_nodes_operations_Nova_Operation_Nova_toString,
 	nova_Nova_Object_Accessor_Nova_hashCodeLong,

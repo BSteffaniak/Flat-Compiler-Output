@@ -32,6 +32,7 @@
 #include <compiler/tree/nodes/closures/compiler_tree_nodes_closures_Nova_ClosureContext.h>
 #include <compiler/tree/nodes/closures/compiler_tree_nodes_closures_Nova_ClosureDeclaration.h>
 #include <nova/io/nova_io_Nova_File.h>
+#include <nova/io/nova_io_Nova_FileReader.h>
 #include <compiler/tree/nodes/compiler_tree_nodes_Nova_ClassDeclaration.h>
 #include <compiler/tree/nodes/compiler_tree_nodes_Nova_Import.h>
 #include <compiler/tree/nodes/compiler_tree_nodes_Nova_ImportList.h>
@@ -94,6 +95,8 @@ compiler_tree_nodes_NovaFile_Extension_VTable compiler_tree_nodes_NovaFile_Exten
 		0,
 		0,
 		(void(*)(compiler_tree_nodes_annotations_Nova_Annotatable*, nova_exception_Nova_ExceptionData*, compiler_tree_nodes_annotations_Nova_Annotation*))compiler_tree_nodes_Nova_Node_Nova_addAnnotation,
+		0,
+		0,
 	},
 	compiler_tree_nodes_Nova_NovaFile_Nova_toString,
 	nova_Nova_Object_Accessor_Nova_hashCodeLong,
@@ -173,7 +176,7 @@ void compiler_tree_nodes_Nova_NovaFile_Nova_this(compiler_tree_nodes_Nova_NovaFi
 	location = (compiler_util_Nova_Location*)(location == 0 ? (nova_Nova_Object*)compiler_util_Nova_Location_Nova_INVALID : (nova_Nova_Object*)location);
 	compiler_tree_nodes_Nova_Node_Nova_this((compiler_tree_nodes_Nova_Node*)(this), exceptionData, parent, location);
 	this->compiler_tree_nodes_Nova_NovaFile_Nova_file = file;
-	this->compiler_tree_nodes_Nova_NovaFile_Nova_source = nova_io_Nova_File_Nova_readAllContents(file, exceptionData);
+	this->compiler_tree_nodes_Nova_NovaFile_Nova_source = nova_io_Nova_FileReader_Nova_readAllContents(nova_io_Nova_FileReader_0_Nova_construct(0, exceptionData, file), exceptionData);
 	this->compiler_tree_nodes_Nova_NovaFile_Nova_packageDeclaration = compiler_tree_nodes_Nova_Package_static_Nova_generateDefaultPackage(0, exceptionData, (compiler_tree_nodes_Nova_Node*)(this), 0);
 	this->compiler_tree_nodes_Nova_NovaFile_Nova_importList = compiler_tree_nodes_Nova_ImportList_Nova_construct(0, exceptionData, (compiler_tree_nodes_Nova_Node*)(this), location);
 	this->compiler_tree_nodes_Nova_NovaFile_Nova_classes = nova_datastruct_list_Nova_Array_0_Nova_construct(0, exceptionData);

@@ -60,6 +60,8 @@ compiler_tree_nodes_Abstractable_Extension_VTable compiler_tree_nodes_Abstractab
 		0,
 		0,
 		0,
+		0,
+		0,
 	},
 };
 

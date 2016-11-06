@@ -42,6 +42,7 @@ typedef struct compiler_tree_nodes_Nova_NovaFile compiler_tree_nodes_Nova_NovaFi
 #include <compiler/tree/nodes/closures/compiler_tree_nodes_closures_Nova_ClosureContext.h>
 #include <compiler/tree/nodes/closures/compiler_tree_nodes_closures_Nova_ClosureDeclaration.h>
 #include <nova/io/nova_io_Nova_File.h>
+#include <nova/io/nova_io_Nova_FileReader.h>
 #include <compiler/tree/nodes/compiler_tree_nodes_Nova_ClassDeclaration.h>
 #include <compiler/tree/nodes/compiler_tree_nodes_Nova_Import.h>
 #include <compiler/tree/nodes/compiler_tree_nodes_Nova_ImportList.h>

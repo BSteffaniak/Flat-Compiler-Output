@@ -38,6 +38,8 @@ typedef struct stabilitytest_Nova_FileStability stabilitytest_Nova_FileStability
 #include <nova/nova_Nova_Class.h>
 #include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <nova/io/nova_io_Nova_File.h>
+#include <nova/io/nova_io_Nova_FileReader.h>
+#include <nova/io/nova_io_Nova_FileWriter.h>
 #include <nova/time/nova_time_Nova_Time.h>
 #include <stabilitytest/stabilitytest_Nova_StabilityTest.h>
 #include <stabilitytest/stabilitytest_Nova_StabilityTestCase.h>

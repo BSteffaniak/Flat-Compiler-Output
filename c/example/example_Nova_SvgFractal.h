@@ -40,6 +40,7 @@ typedef struct example_Nova_SvgFractal example_Nova_SvgFractal;
 #include <nova/web/svg/nova_web_svg_Nova_Svg.h>
 #include <nova/web/svg/nova_web_svg_Nova_SvgCircle.h>
 #include <nova/io/nova_io_Nova_File.h>
+#include <nova/io/nova_io_Nova_FileWriter.h>
 #include <nova/time/nova_time_Nova_Timer.h>
 #include <nova/NativeObject.h>
 #include <nova/operators/nova_operators_Nova_Equals.h>

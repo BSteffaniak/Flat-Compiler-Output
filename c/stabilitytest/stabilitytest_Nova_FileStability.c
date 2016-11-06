@@ -28,6 +28,8 @@
 #include <nova/nova_Nova_Class.h>
 #include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <nova/io/nova_io_Nova_File.h>
+#include <nova/io/nova_io_Nova_FileReader.h>
+#include <nova/io/nova_io_Nova_FileWriter.h>
 #include <nova/time/nova_time_Nova_Time.h>
 #include <stabilitytest/stabilitytest_Nova_StabilityTest.h>
 #include <stabilitytest/stabilitytest_Nova_StabilityTestCase.h>
@@ -66,6 +68,8 @@ stabilitytest_FileStability_Extension_VTable stabilitytest_FileStability_Extensi
 		0,
 		0,
 		0,
+		0,
+		0,
 	},
 	nova_Nova_Object_Nova_toString,
 	nova_Nova_Object_Accessor_Nova_hashCodeLong,
@@ -74,10 +78,10 @@ stabilitytest_FileStability_Extension_VTable stabilitytest_FileStability_Extensi
 
 
 
-void stabilitytest_Nova_FileStability_Nova_createFile(stabilitytest_Nova_FileStability* this, nova_exception_Nova_ExceptionData* exceptionData, nova_io_Nova_File* f);
-void stabilitytest_Nova_FileStability_Nova_writeToFile(stabilitytest_Nova_FileStability* this, nova_exception_Nova_ExceptionData* exceptionData, nova_io_Nova_File* f);
-void stabilitytest_Nova_FileStability_Nova_readFromFile(stabilitytest_Nova_FileStability* this, nova_exception_Nova_ExceptionData* exceptionData, nova_io_Nova_File* f);
-void stabilitytest_Nova_FileStability_Nova_deleteFile(stabilitytest_Nova_FileStability* this, nova_exception_Nova_ExceptionData* exceptionData, nova_io_Nova_File* f);
+void stabilitytest_Nova_FileStability_Nova_createFile(stabilitytest_Nova_FileStability* this, nova_exception_Nova_ExceptionData* exceptionData, nova_io_Nova_FileWriter* writer);
+void stabilitytest_Nova_FileStability_Nova_writeToFile(stabilitytest_Nova_FileStability* this, nova_exception_Nova_ExceptionData* exceptionData, nova_io_Nova_FileWriter* writer);
+void stabilitytest_Nova_FileStability_Nova_readFromFile(stabilitytest_Nova_FileStability* this, nova_exception_Nova_ExceptionData* exceptionData, nova_io_Nova_FileReader* reader);
+void stabilitytest_Nova_FileStability_Nova_deleteFile(stabilitytest_Nova_FileStability* this, nova_exception_Nova_ExceptionData* exceptionData, nova_io_Nova_FileWriter* writer);
 nova_Nova_String* stabilitytest_Nova_FileStability_Nova_inputString;
 int stabilitytest_Nova_FileStability_Nova_lines;
 void stabilitytest_Nova_FileStability_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData)
@@ -128,12 +132,16 @@ void stabilitytest_Nova_FileStability_Nova_test(stabilitytest_Nova_FileStability
 		
 		{
 			nova_io_Nova_File* l1_Nova_f = (nova_io_Nova_File*)nova_null;
+			nova_io_Nova_FileWriter* l1_Nova_writer = (nova_io_Nova_FileWriter*)nova_null;
+			nova_io_Nova_FileReader* l1_Nova_reader = (nova_io_Nova_FileReader*)nova_null;
 			
-			l1_Nova_f = nova_io_Nova_File_0_Nova_construct(0, exceptionData, nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)(nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("temp"))), exceptionData, nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)(nova_primitive_number_Nova_Long_static_Nova_toString(0, exceptionData, (nova_time_Nova_Time_Accessor_static_Nova_currentTimeMillis(0, exceptionData)))), exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("")))));
-			stabilitytest_Nova_FileStability_Nova_createFile(this, exceptionData, l1_Nova_f);
-			stabilitytest_Nova_FileStability_Nova_writeToFile(this, exceptionData, l1_Nova_f);
-			stabilitytest_Nova_FileStability_Nova_readFromFile(this, exceptionData, l1_Nova_f);
-			stabilitytest_Nova_FileStability_Nova_deleteFile(this, exceptionData, l1_Nova_f);
+			l1_Nova_f = nova_io_Nova_File_Nova_construct(0, exceptionData, nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)(nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("temp"))), exceptionData, nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)(nova_primitive_number_Nova_Long_static_Nova_toString(0, exceptionData, (nova_time_Nova_Time_Accessor_static_Nova_currentTimeMillis(0, exceptionData)))), exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("")))));
+			l1_Nova_writer = nova_io_Nova_FileWriter_0_Nova_construct(0, exceptionData, l1_Nova_f);
+			l1_Nova_reader = nova_io_Nova_FileReader_0_Nova_construct(0, exceptionData, l1_Nova_f);
+			stabilitytest_Nova_FileStability_Nova_createFile(this, exceptionData, l1_Nova_writer);
+			stabilitytest_Nova_FileStability_Nova_writeToFile(this, exceptionData, l1_Nova_writer);
+			stabilitytest_Nova_FileStability_Nova_readFromFile(this, exceptionData, l1_Nova_reader);
+			stabilitytest_Nova_FileStability_Nova_deleteFile(this, exceptionData, l1_Nova_writer);
 		}
 	}
 	CATCH (1)
@@ -149,14 +157,14 @@ void stabilitytest_Nova_FileStability_Nova_test(stabilitytest_Nova_FileStability
 	END_TRY;
 }
 
-void stabilitytest_Nova_FileStability_Nova_createFile(stabilitytest_Nova_FileStability* this, nova_exception_Nova_ExceptionData* exceptionData, nova_io_Nova_File* f)
+void stabilitytest_Nova_FileStability_Nova_createFile(stabilitytest_Nova_FileStability* this, nova_exception_Nova_ExceptionData* exceptionData, nova_io_Nova_FileWriter* writer)
 {
 	nova_io_Nova_Console_0_static_Nova_write(0, exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("Creating file... ")));
-	stabilitytest_Nova_StabilityTest_Nova_fail(this->stabilitytest_Nova_StabilityTestCase_Nova_program, exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("Failed to create file")), !nova_io_Nova_File_Nova_create(f, exceptionData));
+	stabilitytest_Nova_StabilityTest_Nova_fail(this->stabilitytest_Nova_StabilityTestCase_Nova_program, exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("Failed to create file")), !nova_io_Nova_FileWriter_Nova_create(writer, exceptionData));
 	nova_io_Nova_Console_1_static_Nova_writeLine(0, exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("OK")));
 }
 
-void stabilitytest_Nova_FileStability_Nova_writeToFile(stabilitytest_Nova_FileStability* this, nova_exception_Nova_ExceptionData* exceptionData, nova_io_Nova_File* f)
+void stabilitytest_Nova_FileStability_Nova_writeToFile(stabilitytest_Nova_FileStability* this, nova_exception_Nova_ExceptionData* exceptionData, nova_io_Nova_FileWriter* writer)
 {
 	int l2_Nova_i = 0;
 	
@@ -164,34 +172,39 @@ void stabilitytest_Nova_FileStability_Nova_writeToFile(stabilitytest_Nova_FileSt
 	l2_Nova_i = (int)0;
 	for (; l2_Nova_i < (int)stabilitytest_Nova_FileStability_Nova_lines; l2_Nova_i++)
 	{
-		nova_io_Nova_File_Nova_writeLine(f, exceptionData, stabilitytest_Nova_FileStability_Nova_inputString);
+		nova_io_Nova_FileWriter_Nova_writeLine(writer, exceptionData, stabilitytest_Nova_FileStability_Nova_inputString);
 	}
 	nova_io_Nova_Console_1_static_Nova_writeLine(0, exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("OK")));
 }
 
-void stabilitytest_Nova_FileStability_Nova_readFromFile(stabilitytest_Nova_FileStability* this, nova_exception_Nova_ExceptionData* exceptionData, nova_io_Nova_File* f)
+void stabilitytest_Nova_FileStability_Nova_readFromFile(stabilitytest_Nova_FileStability* this, nova_exception_Nova_ExceptionData* exceptionData, nova_io_Nova_FileReader* reader)
 {
 	int l1_Nova_times = 0;
 	nova_Nova_String* l1_Nova_line = (nova_Nova_String*)nova_null;
 	
 	nova_io_Nova_Console_0_static_Nova_write(0, exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("Reading lines from file... ")));
-	nova_io_Nova_File_Nova_reopen(f, exceptionData);
+	if (!nova_io_Nova_FileReader_Accessor_Nova_open(reader, exceptionData))
+	{
+		nova_io_Nova_FileReader_Nova_open(reader, exceptionData);
+	}
+	stabilitytest_Nova_StabilityTest_Nova_fail(this->stabilitytest_Nova_StabilityTestCase_Nova_program, exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("File reader failed to open")), !nova_io_Nova_FileReader_Accessor_Nova_open(reader, exceptionData));
 	l1_Nova_times = (int)(0);
-	l1_Nova_line = nova_io_Nova_File_Nova_readLine(f, exceptionData);
+	l1_Nova_line = nova_io_Nova_FileReader_Nova_readLine(reader, exceptionData);
 	while (l1_Nova_line != (nova_Nova_String*)nova_null)
 	{
 		stabilitytest_Nova_StabilityTest_Nova_fail(this->stabilitytest_Nova_StabilityTestCase_Nova_program, exceptionData, nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)(nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("Reading from file failed: '"))), exceptionData, nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)((l1_Nova_line)), exceptionData, nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)(nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("' != '"))), exceptionData, nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)((stabilitytest_Nova_FileStability_Nova_inputString)), exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("'")))))), !nova_Nova_String_Nova_equals(l1_Nova_line, exceptionData, stabilitytest_Nova_FileStability_Nova_inputString));
-		l1_Nova_line = nova_io_Nova_File_Nova_readLine(f, exceptionData);
+		l1_Nova_line = nova_io_Nova_FileReader_Nova_readLine(reader, exceptionData);
 		l1_Nova_times++;
 	}
+	nova_io_Nova_FileReader_Nova_close(reader, exceptionData);
 	stabilitytest_Nova_StabilityTest_Nova_fail(this->stabilitytest_Nova_StabilityTestCase_Nova_program, exceptionData, nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)(nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("Failed; only read "))), exceptionData, nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)(nova_primitive_number_Nova_Int_static_Nova_toString(0, exceptionData, (l1_Nova_times))), exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("/100 lines")))), l1_Nova_times != stabilitytest_Nova_FileStability_Nova_lines);
 	nova_io_Nova_Console_1_static_Nova_writeLine(0, exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("OK")));
 }
 
-void stabilitytest_Nova_FileStability_Nova_deleteFile(stabilitytest_Nova_FileStability* this, nova_exception_Nova_ExceptionData* exceptionData, nova_io_Nova_File* f)
+void stabilitytest_Nova_FileStability_Nova_deleteFile(stabilitytest_Nova_FileStability* this, nova_exception_Nova_ExceptionData* exceptionData, nova_io_Nova_FileWriter* writer)
 {
 	nova_io_Nova_Console_0_static_Nova_write(0, exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("Deleting file... ")));
-	stabilitytest_Nova_StabilityTest_Nova_fail(this->stabilitytest_Nova_StabilityTestCase_Nova_program, exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("Failed to delete file")), !nova_io_Nova_File_Nova_delete(f, exceptionData));
+	stabilitytest_Nova_StabilityTest_Nova_fail(this->stabilitytest_Nova_StabilityTestCase_Nova_program, exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("Failed to delete file")), !nova_io_Nova_FileWriter_Nova_delete(writer, exceptionData));
 	nova_io_Nova_Console_1_static_Nova_writeLine(0, exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("OK")));
 }
 

@@ -65,6 +65,8 @@ example_network_OutputThread_Extension_VTable example_network_OutputThread_Exten
 		0,
 		0,
 		0,
+		0,
+		0,
 	},
 	nova_Nova_Object_Nova_toString,
 	nova_Nova_Object_Accessor_Nova_hashCodeLong,
@@ -137,7 +139,7 @@ void example_network_Nova_OutputThread_Nova_run(example_network_Nova_OutputThrea
 		{
 			break;
 		}
-		nova_io_Nova_OutputStream_virtual0_Nova_write((nova_io_Nova_OutputStream*)(this->prv->example_network_Nova_OutputThread_Nova_socket->nova_network_Nova_ConnectionSocket_Nova_out), exceptionData, l1_Nova_message);
+		nova_io_Nova_OutputStream_virtual_Nova_write((nova_io_Nova_OutputStream*)(this->prv->example_network_Nova_OutputThread_Nova_socket->nova_network_Nova_ConnectionSocket_Nova_out), exceptionData, l1_Nova_message);
 	}
 }
 

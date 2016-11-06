@@ -31,11 +31,15 @@
 #include <stabilitytest/stabilitytest_Nova_AssignmentStability.h>
 #include <stabilitytest/stabilitytest_Nova_ClosureStability.h>
 #include <stabilitytest/stabilitytest_Nova_ExceptionStability.h>
+#include <stabilitytest/stabilitytest_Nova_FileStability.h>
 #include <stabilitytest/stabilitytest_Nova_LambdaStability.h>
+#include <stabilitytest/stabilitytest_Nova_NetworkStability.h>
 #include <stabilitytest/stabilitytest_Nova_PolymorphismStability.h>
 #include <stabilitytest/stabilitytest_Nova_RegexStability.h>
 #include <stabilitytest/stabilitytest_Nova_StabilityTestCase.h>
 #include <stabilitytest/stabilitytest_Nova_SyntaxStability.h>
+#include <stabilitytest/stabilitytest_Nova_ThreadStability.h>
+#include <stabilitytest/stabilitytest_Nova_TimeStability.h>
 #include <stabilitytest/stabilitytest_Nova_ToStringStability.h>
 #include <stabilitytest/stabilitytest_Nova_UnstableException.h>
 #include <stabilitytest/stabilitytest_Nova_StabilityTest.h>
@@ -68,6 +72,8 @@ stabilitytest_StabilityTest_Extension_VTable stabilitytest_StabilityTest_Extensi
 		0,
 		0,
 		(char(*)(nova_operators_Nova_Equals*, nova_exception_Nova_ExceptionData*, nova_Nova_Object*))nova_Nova_Object_0_Nova_equals,
+		0,
+		0,
 		0,
 		0,
 		0,
@@ -148,6 +154,14 @@ void stabilitytest_Nova_StabilityTest_Nova_test(stabilitytest_Nova_StabilityTest
 			stabilitytest_Nova_ToStringStability_Nova_test(stabilitytest_Nova_ToStringStability_Nova_construct(0, exceptionData, this), exceptionData);
 			stabilitytest_Nova_AssignmentStability_Nova_test(stabilitytest_Nova_AssignmentStability_Nova_construct(0, exceptionData, this), exceptionData);
 			stabilitytest_Nova_RegexStability_Nova_test(stabilitytest_Nova_RegexStability_Nova_construct(0, exceptionData, this), exceptionData);
+			
+			stabilitytest_Nova_TimeStability_Nova_test(stabilitytest_Nova_TimeStability_Nova_construct(0, exceptionData, this), exceptionData);
+			
+			stabilitytest_Nova_ThreadStability_Nova_test(stabilitytest_Nova_ThreadStability_Nova_construct(0, exceptionData, this), exceptionData);
+			
+			stabilitytest_Nova_FileStability_Nova_test(stabilitytest_Nova_FileStability_Nova_construct(0, exceptionData, this), exceptionData);
+			
+			stabilitytest_Nova_NetworkStability_Nova_test(stabilitytest_Nova_NetworkStability_Nova_construct(0, exceptionData, this), exceptionData);
 			nova_io_Nova_Console_1_static_Nova_writeLine(0, exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("All OK")));
 		}
 	}

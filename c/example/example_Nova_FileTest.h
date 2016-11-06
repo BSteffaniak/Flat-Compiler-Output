@@ -38,6 +38,8 @@ typedef struct example_Nova_FileTest example_Nova_FileTest;
 #include <nova/nova_Nova_Class.h>
 #include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <nova/io/nova_io_Nova_File.h>
+#include <nova/io/nova_io_Nova_FileReader.h>
+#include <nova/io/nova_io_Nova_FileWriter.h>
 #include <nova/NativeObject.h>
 #include <nova/operators/nova_operators_Nova_Equals.h>
 

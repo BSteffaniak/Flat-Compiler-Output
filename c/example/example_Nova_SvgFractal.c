@@ -30,6 +30,7 @@
 #include <nova/web/svg/nova_web_svg_Nova_Svg.h>
 #include <nova/web/svg/nova_web_svg_Nova_SvgCircle.h>
 #include <nova/io/nova_io_Nova_File.h>
+#include <nova/io/nova_io_Nova_FileWriter.h>
 #include <nova/time/nova_time_Nova_Timer.h>
 #include <nova/NativeObject.h>
 #include <nova/operators/nova_operators_Nova_Equals.h>
@@ -60,6 +61,8 @@ example_SvgFractal_Extension_VTable example_SvgFractal_Extension_VTable_val =
 		0,
 		0,
 		(char(*)(nova_operators_Nova_Equals*, nova_exception_Nova_ExceptionData*, nova_Nova_Object*))nova_Nova_Object_0_Nova_equals,
+		0,
+		0,
 		0,
 		0,
 		0,
@@ -117,6 +120,7 @@ void example_Nova_SvgFractal_static_Nova_main(example_Nova_SvgFractal* this, nov
 	double l1_Nova_cx = 0;
 	double l1_Nova_cy = 0;
 	nova_io_Nova_File* l1_Nova_f = (nova_io_Nova_File*)nova_null;
+	nova_io_Nova_FileWriter* l1_Nova_writer = (nova_io_Nova_FileWriter*)nova_null;
 	int l2_Nova_i = 0;
 	int l6_Nova_n = 0;
 	int l8_Nova_p = 0;
@@ -186,12 +190,14 @@ void example_Nova_SvgFractal_static_Nova_main(example_Nova_SvgFractal* this, nov
 			nova_web_svg_Nova_SvgComponentList_Nova_addChild(l1_Nova_s->nova_web_svg_Nova_Svg_Nova_root->nova_web_svg_Nova_SvgComponent_Nova_children, exceptionData, (nova_web_svg_Nova_SvgComponent*)(l9_Nova_circle));
 		}
 	}
-	l1_Nova_f = nova_io_Nova_File_0_Nova_construct(0, exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("C:/Users/Braden Steffaniak/svgoutput.html")));
-	nova_io_Nova_File_Nova_create(l1_Nova_f, exceptionData);
-	nova_io_Nova_File_Nova_clearContents(l1_Nova_f, exceptionData);
-	nova_web_svg_Nova_Svg_Nova_generateHTMLOutput(l1_Nova_s, exceptionData, l1_Nova_f);
+	l1_Nova_f = nova_io_Nova_File_Nova_construct(0, exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("C:/Users/Braden/svgoutput.html")));
+	l1_Nova_writer = nova_io_Nova_FileWriter_0_Nova_construct(0, exceptionData, l1_Nova_f);
+	nova_io_Nova_FileWriter_Nova_create(l1_Nova_writer, exceptionData);
+	nova_io_Nova_FileWriter_Nova_clearContents(l1_Nova_writer, exceptionData);
+	nova_web_svg_Nova_Svg_Nova_generateHTMLOutput(l1_Nova_s, exceptionData, l1_Nova_writer);
+	nova_io_Nova_FileWriter_Nova_close(l1_Nova_writer, exceptionData);
 	nova_time_Nova_Timer_Nova_stop(l1_Nova_timer, exceptionData);
-	nova_io_Nova_Console_0_static_Nova_write(0, exceptionData, nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)(nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("Done generating "))), exceptionData, nova_primitive_number_Nova_Long_static_Nova_toString(0, exceptionData, nova_time_Nova_Timer_Accessor_Nova_duration(l1_Nova_timer, exceptionData))));
+	nova_io_Nova_Console_0_static_Nova_write(0, exceptionData, nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)(nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("Done generating "))), exceptionData, nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)(nova_primitive_number_Nova_Long_static_Nova_toString(0, exceptionData, (nova_time_Nova_Timer_Accessor_Nova_duration(l1_Nova_timer, exceptionData)))), exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("")))));
 	nova_io_Nova_Console_static_Nova_waitForEnter(0, exceptionData);
 }
 

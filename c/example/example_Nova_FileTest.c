@@ -28,6 +28,8 @@
 #include <nova/nova_Nova_Class.h>
 #include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <nova/io/nova_io_Nova_File.h>
+#include <nova/io/nova_io_Nova_FileReader.h>
+#include <nova/io/nova_io_Nova_FileWriter.h>
 #include <nova/NativeObject.h>
 #include <nova/operators/nova_operators_Nova_Equals.h>
 
@@ -57,6 +59,8 @@ example_FileTest_Extension_VTable example_FileTest_Extension_VTable_val =
 		0,
 		0,
 		(char(*)(nova_operators_Nova_Equals*, nova_exception_Nova_ExceptionData*, nova_Nova_Object*))nova_Nova_Object_0_Nova_equals,
+		0,
+		0,
 		0,
 		0,
 		0,
@@ -104,23 +108,27 @@ void example_Nova_FileTest_static_Nova_main(example_Nova_FileTest* this, nova_ex
 {
 	nova_io_Nova_File* l1_Nova_f = (nova_io_Nova_File*)nova_null;
 	
-	l1_Nova_f = nova_io_Nova_File_0_Nova_construct(0, exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("C:/Users/Braden Steffaniak/test3.txt")));
-	if (nova_io_Nova_File_Accessor_Nova_exists(l1_Nova_f, exceptionData))
+	l1_Nova_f = nova_io_Nova_File_Nova_construct(0, exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("C:/Users/Braden Steffaniak/test3.txt")));
+	if (nova_io_Nova_File_Accessorfunc_Nova_exists(l1_Nova_f, exceptionData))
 	{
+		nova_io_Nova_FileWriter* l1_Nova_writer = (nova_io_Nova_FileWriter*)nova_null;
+		nova_io_Nova_FileReader* l1_Nova_reader = (nova_io_Nova_FileReader*)nova_null;
 		nova_Nova_String* l1_Nova_data = (nova_Nova_String*)nova_null;
 		
 		nova_io_Nova_Console_1_static_Nova_writeLine(0, exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("Your file exists!")));
-		nova_io_Nova_File_Nova_writeLine(l1_Nova_f, exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("Entering data..")));
-		nova_io_Nova_File_Nova_writeLine(l1_Nova_f, exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("asdfasdf thing.")));
-		nova_io_Nova_File_Nova_reopen(l1_Nova_f, exceptionData);
-		l1_Nova_data = nova_io_Nova_File_Nova_readAllContents(l1_Nova_f, exceptionData);
+		l1_Nova_writer = nova_io_Nova_FileWriter_0_Nova_construct(0, exceptionData, l1_Nova_f);
+		nova_io_Nova_FileWriter_Nova_writeLine(l1_Nova_writer, exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("Entering data..")));
+		nova_io_Nova_FileWriter_Nova_writeLine(l1_Nova_writer, exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("asdfasdf thing.")));
+		nova_io_Nova_FileWriter_Nova_close(l1_Nova_writer, exceptionData);
+		l1_Nova_reader = nova_io_Nova_FileReader_0_Nova_construct(0, exceptionData, l1_Nova_f);
+		l1_Nova_data = nova_io_Nova_FileReader_Nova_readAllContents(l1_Nova_reader, exceptionData);
+		nova_io_Nova_FileReader_Nova_close(l1_Nova_reader, exceptionData);
 		nova_io_Nova_Console_1_static_Nova_writeLine(0, exceptionData, l1_Nova_data);
 	}
 	else
 	{
 		nova_io_Nova_Console_1_static_Nova_writeLine(0, exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("Your file does not exist..")));
 	}
-	nova_io_Nova_File_Nova_close(l1_Nova_f, exceptionData);
 	nova_io_Nova_Console_1_static_Nova_writeLine(0, exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("Press enter to exit...")));
 	nova_io_Nova_Console_static_Nova_waitForEnter(0, exceptionData);
 }
