@@ -194,7 +194,6 @@
 #include <compiler/util/compiler_util_Nova_Location.h>
 #include <compiler/util/compiler_util_Nova_OS.h>
 #include <compiler/util/compiler_util_Nova_SyntaxUtils.h>
-#include <nova/c/engines/nova_c_engines_Nova_CCodeGeneratorEngine.h>
 
 typedef char (*nova_Nova_Class_native_Nova_isOfType)(nova_Nova_Class*, nova_exception_Nova_ExceptionData*, nova_Nova_Class*);
 typedef nova_Nova_Class* (*nova_Nova_Class_native_Nova_construct)(nova_Nova_Class*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, char);
@@ -1665,8 +1664,6 @@ typedef compiler_engines_Nova_CodeGeneratorEngine* (*compiler_engines_Nova_CodeG
 
 typedef struct compiler_engines_native_CodeGeneratorEngine
 {
-compiler_engines_Nova_CodeGeneratorEngine_native_Nova_writeFiles writeFiles;
-compiler_engines_Nova_CodeGeneratorEngine_native_Nova_insertMainMethod insertMainMethod;
 compiler_engines_Nova_CodeGeneratorEngine_native_Nova_construct CodeGeneratorEngine;
 } compiler_engines_native_CodeGeneratorEngine;
 
@@ -2305,13 +2302,6 @@ typedef struct compiler_util_native_SyntaxUtils
 compiler_util_Nova_SyntaxUtils_native_Nova_construct SyntaxUtils;
 } compiler_util_native_SyntaxUtils;
 
-typedef nova_c_engines_Nova_CCodeGeneratorEngine* (*nova_c_engines_Nova_CCodeGeneratorEngine_native_Nova_construct)(nova_c_engines_Nova_CCodeGeneratorEngine*, nova_exception_Nova_ExceptionData*);
-
-typedef struct nova_c_engines_native_CCodeGeneratorEngine
-{
-nova_c_engines_Nova_CCodeGeneratorEngine_native_Nova_construct CCodeGeneratorEngine;
-} nova_c_engines_native_CCodeGeneratorEngine;
-
 
 typedef struct nova_env
 {
@@ -2508,7 +2498,6 @@ compiler_util_native_FileUtils compiler_util_FileUtils;
 compiler_util_native_Location compiler_util_Location;
 compiler_util_native_OS compiler_util_OS;
 compiler_util_native_SyntaxUtils compiler_util_SyntaxUtils;
-nova_c_engines_native_CCodeGeneratorEngine nova_c_engines_CCodeGeneratorEngine;
 } nova_env;
 
 extern nova_env novaEnv;

@@ -116,11 +116,11 @@ void compiler_engines_Nova_CodeGeneratorEngine_Nova_super(compiler_engines_Nova_
 
 void compiler_engines_Nova_CodeGeneratorEngine_virtual_Nova_writeFiles(compiler_engines_Nova_CodeGeneratorEngine* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
-	this->vtable->compiler_engines_Nova_CodeGeneratorEngine_virtual_Nova_writeFiles((compiler_engines_Nova_CodeGeneratorEngine*)(this), exceptionData);
+	this->vtable->compiler_engines_Nova_CodeGeneratorEngine_virtual_Nova_writeFiles(this, exceptionData);
 }
 
 void compiler_engines_Nova_CodeGeneratorEngine_virtual_Nova_insertMainMethod(compiler_engines_Nova_CodeGeneratorEngine* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
-	this->vtable->compiler_engines_Nova_CodeGeneratorEngine_virtual_Nova_insertMainMethod((compiler_engines_Nova_CodeGeneratorEngine*)(this), exceptionData);
+	this->vtable->compiler_engines_Nova_CodeGeneratorEngine_virtual_Nova_insertMainMethod(this, exceptionData);
 }
 

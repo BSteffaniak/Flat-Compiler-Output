@@ -223,7 +223,6 @@ extern compiler_tree_nodes_annotations_vtable_Annotatable compiler_tree_nodes_an
 #include <compiler/util/compiler_util_Nova_Location.h>
 #include <compiler/util/compiler_util_Nova_OS.h>
 #include <compiler/util/compiler_util_Nova_SyntaxUtils.h>
-#include <nova/c/engines/nova_c_engines_Nova_CCodeGeneratorEngine.h>
 
 struct nova_datastruct_vtable_Comparable {
 char x;

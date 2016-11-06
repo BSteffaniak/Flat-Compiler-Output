@@ -349,8 +349,6 @@ int main(int argc, char** argvs)
 		novaEnv.nova_thread_Thread.run = nova_thread_Thread_Extension_VTable_val.nova_thread_Nova_Thread_virtual_Nova_run;
 		novaEnv.nova_web_svg_SvgComponent.generateOutput = nova_web_svg_SvgComponent_Extension_VTable_val.nova_web_svg_Nova_SvgComponent_virtual_Nova_generateOutput;
 		novaEnv.nova_web_svg_no3_No3Node.toJs = nova_web_svg_no3_No3Node_Extension_VTable_val.nova_web_svg_no3_Nova_No3Node_virtual_Nova_toJs;
-		novaEnv.compiler_engines_CodeGeneratorEngine.writeFiles = compiler_engines_CodeGeneratorEngine_Extension_VTable_val.compiler_engines_Nova_CodeGeneratorEngine_virtual_Nova_writeFiles;
-		novaEnv.compiler_engines_CodeGeneratorEngine.insertMainMethod = compiler_engines_CodeGeneratorEngine_Extension_VTable_val.compiler_engines_Nova_CodeGeneratorEngine_virtual_Nova_insertMainMethod;
 		novaEnv.compiler_tree_nodes_Node.addChild = compiler_tree_nodes_Node_Extension_VTable_val.compiler_tree_nodes_Nova_Node_virtual_Nova_addChild;
 		novaEnv.compiler_tree_nodes_Node.findVariableDeclaration = compiler_tree_nodes_Node_Extension_VTable_val.compiler_tree_nodes_Nova_Node_virtual_Nova_findVariableDeclaration;
 		novaEnv.compiler_tree_nodes_Node.parseStatement = compiler_tree_nodes_Node_Extension_VTable_val.compiler_tree_nodes_Nova_Node_virtual_Nova_parseStatement;
@@ -556,7 +554,6 @@ int main(int argc, char** argvs)
 		compiler_util_Location_Extension_VTable_val.classInstance = nova_Nova_Class_Nova_construct(0, exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("compiler/util/Location")), 0);
 		compiler_util_OS_Extension_VTable_val.classInstance = nova_Nova_Class_Nova_construct(0, exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("compiler/util/OS")), 0);
 		compiler_util_SyntaxUtils_Extension_VTable_val.classInstance = nova_Nova_Class_Nova_construct(0, exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("compiler/util/SyntaxUtils")), 0);
-		nova_c_engines_CCodeGeneratorEngine_Extension_VTable_val.classInstance = nova_Nova_Class_Nova_construct(0, exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("nova/c/engines/CCodeGeneratorEngine")), 0);
 		
 		
 		nova_Class_Extension_VTable_val.classInstance->nova_Nova_Class_Nova_extension = nova_Object_Extension_VTable_val.classInstance;
@@ -776,7 +773,6 @@ int main(int argc, char** argvs)
 		compiler_util_Location_Extension_VTable_val.classInstance->nova_Nova_Class_Nova_extension = nova_Object_Extension_VTable_val.classInstance;
 		compiler_util_OS_Extension_VTable_val.classInstance->nova_Nova_Class_Nova_extension = nova_Object_Extension_VTable_val.classInstance;
 		compiler_util_SyntaxUtils_Extension_VTable_val.classInstance->nova_Nova_Class_Nova_extension = nova_Object_Extension_VTable_val.classInstance;
-		nova_c_engines_CCodeGeneratorEngine_Extension_VTable_val.classInstance->nova_Nova_Class_Nova_extension = compiler_engines_CodeGeneratorEngine_Extension_VTable_val.classInstance;
 		
 		
 		nova_Nova_Class_Nova_init_static(exceptionData);
@@ -975,7 +971,6 @@ int main(int argc, char** argvs)
 		compiler_util_Nova_OS_Nova_init_static(exceptionData);
 		compiler_util_Nova_OS_Nova_init_static(exceptionData);
 		compiler_util_Nova_SyntaxUtils_Nova_init_static(exceptionData);
-		nova_c_engines_Nova_CCodeGeneratorEngine_Nova_init_static(exceptionData);
 		
 		args = (nova_Nova_String**)NOVA_MALLOC(argc * sizeof(nova_Nova_String));
 		

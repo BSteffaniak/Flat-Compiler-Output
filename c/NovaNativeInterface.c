@@ -758,8 +758,6 @@ nova_env novaEnv = {
 },
 
 {
-0,
-0,
 &compiler_engines_Nova_CodeGeneratorEngine_Nova_construct,
 },
 
@@ -1099,10 +1097,6 @@ nova_env novaEnv = {
 
 {
 &compiler_util_Nova_SyntaxUtils_Nova_construct,
-},
-
-{
-&nova_c_engines_Nova_CCodeGeneratorEngine_Nova_construct,
 },
 
 };
