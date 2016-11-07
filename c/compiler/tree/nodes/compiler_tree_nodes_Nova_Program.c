@@ -197,7 +197,7 @@ nova_datastruct_list_Nova_Array* compiler_tree_nodes_Nova_Program_Accessor_Nova_
 
 compiler_Nova_Compiler* compiler_tree_nodes_Nova_Program_Accessor_Nova_compiler(compiler_tree_nodes_Nova_Program* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
-	return compiler_tree_nodes_Nova_Program_Accessor_Nova_compiler((compiler_tree_nodes_Nova_Program*)(this->compiler_tree_nodes_Nova_Program_Nova_tree), exceptionData);
+	return this->compiler_tree_nodes_Nova_Program_Nova_tree->compiler_tree_Nova_SyntaxTree_Nova_compiler;
 }
 
 

@@ -1690,7 +1690,7 @@ compiler_tree_Nova_StatementIterator_native_Nova_construct StatementIterator;
 typedef void (*compiler_tree_Nova_SyntaxTree_native_Nova_formTree)(compiler_tree_Nova_SyntaxTree*, nova_exception_Nova_ExceptionData*);
 typedef void (*compiler_tree_Nova_SyntaxTree_native_Nova_validateTypes)(compiler_tree_Nova_SyntaxTree*, nova_exception_Nova_ExceptionData*);
 typedef void (*compiler_tree_Nova_SyntaxTree_native_Nova_parseStatements)(compiler_tree_Nova_SyntaxTree*, nova_exception_Nova_ExceptionData*);
-typedef compiler_tree_Nova_SyntaxTree* (*compiler_tree_Nova_SyntaxTree_native_Nova_construct)(compiler_tree_Nova_SyntaxTree*, nova_exception_Nova_ExceptionData*, compiler_tree_nodes_Nova_Program*);
+typedef compiler_tree_Nova_SyntaxTree* (*compiler_tree_Nova_SyntaxTree_native_Nova_construct)(compiler_tree_Nova_SyntaxTree*, nova_exception_Nova_ExceptionData*, compiler_Nova_Compiler*, compiler_tree_nodes_Nova_Program*);
 
 typedef struct compiler_tree_native_SyntaxTree
 {

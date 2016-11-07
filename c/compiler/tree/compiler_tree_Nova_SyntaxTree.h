@@ -40,6 +40,7 @@ typedef struct compiler_tree_Nova_SyntaxTree compiler_tree_Nova_SyntaxTree;
 #include <nova/datastruct/list/nova_datastruct_list_Nova_Stack.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_List.h>
 #include <compiler/compiler_Nova_SyntaxMessage.h>
+#include <compiler/compiler_Nova_Compiler.h>
 #include <compiler/tree/nodes/compiler_tree_nodes_Nova_Program.h>
 #include <compiler/tree/nodes/compiler_tree_nodes_Nova_Node.h>
 #include <compiler/tree/nodes/compiler_tree_nodes_Nova_NovaFile.h>
@@ -68,13 +69,14 @@ CCLASS_CLASS
 	compiler_tree_SyntaxTree_Extension_VTable* vtable;
 	compiler_tree_nodes_Nova_Program* compiler_tree_Nova_SyntaxTree_Nova_root;
 	char compiler_tree_Nova_SyntaxTree_Nova_phase;
+	compiler_Nova_Compiler* compiler_tree_Nova_SyntaxTree_Nova_compiler;
 	struct Private* prv;
 )
 
 void compiler_tree_Nova_SyntaxTree_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData);
-compiler_tree_Nova_SyntaxTree* compiler_tree_Nova_SyntaxTree_Nova_construct(compiler_tree_Nova_SyntaxTree* this, nova_exception_Nova_ExceptionData* exceptionData, compiler_tree_nodes_Nova_Program* root);
+compiler_tree_Nova_SyntaxTree* compiler_tree_Nova_SyntaxTree_Nova_construct(compiler_tree_Nova_SyntaxTree* this, nova_exception_Nova_ExceptionData* exceptionData, compiler_Nova_Compiler* compiler, compiler_tree_nodes_Nova_Program* root);
 void compiler_tree_Nova_SyntaxTree_Nova_destroy(compiler_tree_Nova_SyntaxTree** this, nova_exception_Nova_ExceptionData* exceptionData);
-void compiler_tree_Nova_SyntaxTree_Nova_this(compiler_tree_Nova_SyntaxTree* this, nova_exception_Nova_ExceptionData* exceptionData, compiler_tree_nodes_Nova_Program* root);
+void compiler_tree_Nova_SyntaxTree_Nova_this(compiler_tree_Nova_SyntaxTree* this, nova_exception_Nova_ExceptionData* exceptionData, compiler_Nova_Compiler* compiler, compiler_tree_nodes_Nova_Program* root);
 void compiler_tree_Nova_SyntaxTree_Nova_formTree(compiler_tree_Nova_SyntaxTree* this, nova_exception_Nova_ExceptionData* exceptionData);
 void compiler_tree_Nova_SyntaxTree_Nova_validateTypes(compiler_tree_Nova_SyntaxTree* this, nova_exception_Nova_ExceptionData* exceptionData);
 void compiler_tree_Nova_SyntaxTree_Nova_parseStatements(compiler_tree_Nova_SyntaxTree* this, nova_exception_Nova_ExceptionData* exceptionData);
