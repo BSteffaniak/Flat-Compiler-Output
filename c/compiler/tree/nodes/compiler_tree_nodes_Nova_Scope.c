@@ -128,6 +128,7 @@ compiler_tree_nodes_Nova_Node* compiler_tree_nodes_Nova_Scope_Nova_parseIdentifi
 char compiler_tree_nodes_Nova_Scope_Nova_testLambda30(compiler_tree_nodes_Nova_Scope* this, nova_exception_Nova_ExceptionData* exceptionData, compiler_tree_nodes_Nova_Node* child, int _2, nova_datastruct_list_Nova_List* _3, Context1* context);
 nova_Nova_String* compiler_tree_nodes_Nova_Scope_Nova_testLambda31(compiler_tree_nodes_Nova_Scope* this, nova_exception_Nova_ExceptionData* exceptionData, compiler_tree_nodes_Nova_Node* _1, int _2, nova_datastruct_list_Nova_Array* _3, Context2* context);
 char compiler_tree_nodes_Nova_Scope_Nova_testLambda93(compiler_tree_nodes_Nova_Scope* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* _1, int _2, nova_datastruct_list_Nova_List* _3, Context3* context);
+
 void compiler_tree_nodes_Nova_Scope_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData)
 {
 	{
@@ -321,6 +322,22 @@ char compiler_tree_nodes_Nova_Scope_Nova_testLambda93(compiler_tree_nodes_Nova_S
 	}
 	return 0;
 }
+
+int compiler_tree_nodes_Nova_Scope_Accessor_Nova_depth(compiler_tree_nodes_Nova_Scope* this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+	compiler_tree_nodes_Nova_Node* l1_Nova_current = (compiler_tree_nodes_Nova_Node*)nova_null;
+	char l1_Nova_depth = 0;
+	
+	l1_Nova_current = (compiler_tree_nodes_Nova_Node*)(this);
+	l1_Nova_depth = 0;
+	while (l1_Nova_current != (compiler_tree_nodes_Nova_Node*)nova_null)
+	{
+		l1_Nova_depth++;
+		l1_Nova_current = compiler_tree_nodes_Nova_Node_Accessor_Nova_parentWithScope(l1_Nova_current, exceptionData);
+	}
+	return (int)l1_Nova_depth;
+}
+
 
 void compiler_tree_nodes_Nova_Scope_Nova_super(compiler_tree_nodes_Nova_Scope* this, nova_exception_Nova_ExceptionData* exceptionData)
 {

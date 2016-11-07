@@ -1069,6 +1069,7 @@ nova_env novaEnv = {
 &compiler_util_Nova_CompilerStringFunctions_Nova_findStrings,
 &compiler_util_Nova_CompilerStringFunctions_Nova_searchGenericType,
 &compiler_util_Nova_CompilerStringFunctions_Nova_findDotOperatorIndex,
+&compiler_util_Nova_CompilerStringFunctions_Nova_formatIndentation,
 },
 
 {
