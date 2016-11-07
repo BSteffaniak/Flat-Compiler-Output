@@ -300,6 +300,7 @@ nova_env novaEnv = {
 
 {
 &nova_exception_Nova_ExceptionData_Nova_addCode,
+&nova_exception_Nova_ExceptionData_Nova_getDataByCode,
 &nova_exception_Nova_ExceptionData_Nova_jumpToBuffer,
 &nova_exception_Nova_ExceptionData_Nova_construct,
 },
@@ -905,6 +906,11 @@ nova_env novaEnv = {
 },
 
 {
+&compiler_tree_nodes_Nova_Type_Nova_toNova,
+&compiler_tree_nodes_Nova_Type_Nova_construct,
+},
+
+{
 &compiler_tree_nodes_Nova_ValidationResult_Nova_construct,
 },
 
@@ -975,7 +981,7 @@ nova_env novaEnv = {
 },
 
 {
-&compiler_tree_nodes_generics_Nova_GenericTypeArgument_Nova_construct,
+&compiler_tree_nodes_generics_Nova_GenericArgument_Nova_construct,
 },
 
 {

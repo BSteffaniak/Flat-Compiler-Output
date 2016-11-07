@@ -62,6 +62,8 @@ example_Polygon_Extension_VTable example_Polygon_Extension_VTable_val =
 		0,
 		0,
 		0,
+		0,
+		0,
 	},
 };
 

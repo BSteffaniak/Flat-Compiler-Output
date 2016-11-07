@@ -60,6 +60,8 @@ example_SvgFractal_Extension_VTable example_SvgFractal_Extension_VTable_val =
 		0,
 		0,
 		0,
+		0,
+		0,
 		(char(*)(nova_operators_Nova_Equals*, nova_exception_Nova_ExceptionData*, nova_Nova_Object*))nova_Nova_Object_0_Nova_equals,
 		0,
 		0,
@@ -190,7 +192,7 @@ void example_Nova_SvgFractal_static_Nova_main(example_Nova_SvgFractal* this, nov
 			nova_web_svg_Nova_SvgComponentList_Nova_addChild(l1_Nova_s->nova_web_svg_Nova_Svg_Nova_root->nova_web_svg_Nova_SvgComponent_Nova_children, exceptionData, (nova_web_svg_Nova_SvgComponent*)(l9_Nova_circle));
 		}
 	}
-	l1_Nova_f = nova_io_Nova_File_Nova_construct(0, exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("C:/Users/Braden/svgoutput.html")));
+	l1_Nova_f = nova_io_Nova_File_1_Nova_construct(0, exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("C:/Users/Braden/svgoutput.html")));
 	l1_Nova_writer = nova_io_Nova_FileWriter_0_Nova_construct(0, exceptionData, l1_Nova_f);
 	nova_io_Nova_FileWriter_Nova_create(l1_Nova_writer, exceptionData);
 	nova_io_Nova_FileWriter_Nova_clearContents(l1_Nova_writer, exceptionData);

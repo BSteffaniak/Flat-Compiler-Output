@@ -184,7 +184,7 @@ compiler_tree_nodes_Nova_Import* compiler_tree_nodes_Nova_Import_static_Nova_par
 			compiler_Nova_SyntaxMessage_static_Nova_error(0, exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("Missing ending quotation for import statement")), (compiler_tree_nodes_Nova_Node*)(l1_Nova_node), (intptr_t)nova_null);
 		}
 		l1_Nova_importLocation = nova_Nova_String_Nova_substring(input, exceptionData, l1_Nova_quoteStart + 1, l1_Nova_quoteEnd);
-		l1_Nova_alias = nova_Nova_String_Nova_trim(nova_Nova_String_Nova_substring(input, exceptionData, l1_Nova_quoteEnd + 1, (intptr_t)nova_null), exceptionData, (intptr_t)nova_null, (intptr_t)nova_null);
+		l1_Nova_alias = nova_Nova_String_Nova_trim(nova_Nova_String_Nova_substring(input, exceptionData, l1_Nova_quoteEnd + 1, (intptr_t)nova_null), exceptionData, (intptr_t)nova_null, (intptr_t)nova_null, 0);
 		l1_Nova_node->compiler_tree_nodes_Nova_Import_Nova_importLocation = l1_Nova_importLocation;
 		l1_Nova_node->compiler_tree_nodes_Nova_Import_Nova_alias = (nova_Nova_String*)(l1_Nova_alias->nova_Nova_String_Nova_count > 0 ? (nova_Nova_Object*)l1_Nova_alias : (nova_Nova_Object*)nova_null);
 		if (1)

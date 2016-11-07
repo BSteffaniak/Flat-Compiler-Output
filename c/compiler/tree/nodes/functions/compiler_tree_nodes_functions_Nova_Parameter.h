@@ -52,6 +52,7 @@ typedef struct compiler_tree_nodes_functions_Nova_Parameter compiler_tree_nodes_
 #include <compiler/tree/nodes/compiler_tree_nodes_Nova_Import.h>
 #include <compiler/tree/nodes/compiler_tree_nodes_Nova_Literal.h>
 #include <compiler/tree/nodes/compiler_tree_nodes_Nova_NovaFile.h>
+#include <compiler/tree/nodes/compiler_tree_nodes_Nova_Type.h>
 #include <compiler/tree/nodes/annotations/compiler_tree_nodes_annotations_Nova_Annotatable.h>
 #include <compiler/tree/nodes/annotations/compiler_tree_nodes_annotations_Nova_Annotation.h>
 #include <compiler/tree/nodes/exceptionhandling/compiler_tree_nodes_exceptionhandling_Nova_Try.h>
@@ -103,7 +104,7 @@ CCLASS_CLASS
 	nova_datastruct_list_Nova_Array* compiler_tree_nodes_Nova_Node_Nova_annotations;
 	compiler_tree_nodes_Nova_Node* compiler_tree_nodes_Nova_Node_Nova_parent;
 	compiler_tree_nodes_arrays_Nova_ArrayAccess* compiler_tree_nodes_Nova_Value_Nova_arrayAccess;
-	nova_Nova_String* compiler_tree_nodes_Nova_Value_Nova_type;
+	compiler_tree_nodes_Nova_Type* compiler_tree_nodes_Nova_Value_Nova_type;
 	nova_Nova_String* compiler_tree_nodes_Nova_Identifier_Nova_name;
 	compiler_tree_nodes_Nova_Value* compiler_tree_nodes_functions_Nova_Parameter_Nova_defaultValue;
 )

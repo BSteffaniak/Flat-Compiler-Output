@@ -48,6 +48,7 @@ typedef struct compiler_tree_nodes_Nova_NovaInterface compiler_tree_nodes_Nova_N
 #include <compiler/tree/nodes/compiler_tree_nodes_Nova_Abstractable.h>
 #include <compiler/tree/nodes/compiler_tree_nodes_Nova_Node.h>
 #include <compiler/tree/nodes/compiler_tree_nodes_Nova_NovaFile.h>
+#include <compiler/tree/nodes/compiler_tree_nodes_Nova_Type.h>
 #include <compiler/tree/nodes/compiler_tree_nodes_Nova_Value.h>
 #include <compiler/tree/nodes/compiler_tree_nodes_Nova_Identifier.h>
 #include <compiler/tree/nodes/arrays/compiler_tree_nodes_arrays_Nova_ArrayAccess.h>
@@ -106,12 +107,12 @@ CCLASS_CLASS
 	nova_datastruct_list_Nova_Array* compiler_tree_nodes_Nova_Node_Nova_annotations;
 	compiler_tree_nodes_Nova_Node* compiler_tree_nodes_Nova_Node_Nova_parent;
 	compiler_tree_nodes_arrays_Nova_ArrayAccess* compiler_tree_nodes_Nova_Value_Nova_arrayAccess;
-	nova_Nova_String* compiler_tree_nodes_Nova_Value_Nova_type;
+	compiler_tree_nodes_Nova_Type* compiler_tree_nodes_Nova_Value_Nova_type;
 	nova_Nova_String* compiler_tree_nodes_Nova_Identifier_Nova_name;
 	char compiler_tree_nodes_variables_Nova_InstanceDeclaration_Nova_isStatic;
 	nova_Nova_String* compiler_tree_nodes_variables_Nova_InstanceDeclaration_Nova_visibility;
 	char compiler_tree_nodes_Nova_ClassDeclaration_Nova_isAbstract;
-	nova_Nova_String* compiler_tree_nodes_Nova_ClassDeclaration_Nova_extendedClass;
+	compiler_tree_nodes_Nova_Type* compiler_tree_nodes_Nova_ClassDeclaration_Nova_extendedClass;
 	nova_datastruct_list_Nova_Array* compiler_tree_nodes_Nova_ClassDeclaration_Nova_implementedInterfaces;
 	nova_datastruct_list_Nova_Array* compiler_tree_nodes_Nova_ClassDeclaration_Nova_fields;
 	nova_datastruct_list_Nova_Array* compiler_tree_nodes_Nova_ClassDeclaration_Nova_functions;

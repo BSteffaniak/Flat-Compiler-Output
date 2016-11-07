@@ -49,6 +49,7 @@ typedef struct compiler_tree_nodes_Nova_PlaceholderValue compiler_tree_nodes_Nov
 #include <compiler/tree/nodes/compiler_tree_nodes_Nova_Literal.h>
 #include <compiler/tree/nodes/compiler_tree_nodes_Nova_NovaFile.h>
 #include <compiler/tree/nodes/compiler_tree_nodes_Nova_PlaceholderValue.h>
+#include <compiler/tree/nodes/compiler_tree_nodes_Nova_Type.h>
 #include <compiler/tree/nodes/annotations/compiler_tree_nodes_annotations_Nova_Annotatable.h>
 #include <compiler/tree/nodes/annotations/compiler_tree_nodes_annotations_Nova_Annotation.h>
 #include <compiler/tree/nodes/exceptionhandling/compiler_tree_nodes_exceptionhandling_Nova_Try.h>
@@ -99,7 +100,8 @@ CCLASS_CLASS
 	nova_datastruct_list_Nova_Array* compiler_tree_nodes_Nova_Node_Nova_annotations;
 	compiler_tree_nodes_Nova_Node* compiler_tree_nodes_Nova_Node_Nova_parent;
 	compiler_tree_nodes_arrays_Nova_ArrayAccess* compiler_tree_nodes_Nova_Value_Nova_arrayAccess;
-	nova_Nova_String* compiler_tree_nodes_Nova_Value_Nova_type;
+	compiler_tree_nodes_Nova_Type* compiler_tree_nodes_Nova_Value_Nova_type;
+	nova_Nova_String* compiler_tree_nodes_Nova_PlaceholderValue_Nova_value;
 )
 
 void compiler_tree_nodes_Nova_PlaceholderValue_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData);
@@ -108,8 +110,6 @@ void compiler_tree_nodes_Nova_PlaceholderValue_Nova_destroy(compiler_tree_nodes_
 void compiler_tree_nodes_Nova_PlaceholderValue_Nova_this(compiler_tree_nodes_Nova_PlaceholderValue* this, nova_exception_Nova_ExceptionData* exceptionData, compiler_tree_nodes_Nova_Node* parent, compiler_util_Nova_Location* location, nova_Nova_String* value);
 compiler_tree_nodes_Nova_PlaceholderValue* compiler_tree_nodes_Nova_PlaceholderValue_static_Nova_parse(compiler_tree_nodes_Nova_PlaceholderValue* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* input, compiler_tree_nodes_Nova_Node* parent, compiler_util_Nova_Location* location, int require);
 nova_Nova_String* compiler_tree_nodes_Nova_PlaceholderValue_Nova_toString(compiler_tree_nodes_Nova_PlaceholderValue* this, nova_exception_Nova_ExceptionData* exceptionData);
-nova_Nova_String* compiler_tree_nodes_Nova_PlaceholderValue_Accessor_Nova_value(compiler_tree_nodes_Nova_PlaceholderValue* this, nova_exception_Nova_ExceptionData* exceptionData);
-nova_Nova_String* compiler_tree_nodes_Nova_PlaceholderValue_Mutator_Nova_value(compiler_tree_nodes_Nova_PlaceholderValue* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* value);
 void compiler_tree_nodes_Nova_PlaceholderValue_Nova_super(compiler_tree_nodes_Nova_PlaceholderValue* this, nova_exception_Nova_ExceptionData* exceptionData);
 
 #endif

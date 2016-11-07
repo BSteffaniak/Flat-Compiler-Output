@@ -42,6 +42,7 @@ typedef struct compiler_tree_nodes_Nova_StaticClassReference compiler_tree_nodes
 #include <compiler/tree/nodes/compiler_tree_nodes_Nova_Identifier.h>
 #include <compiler/tree/nodes/compiler_tree_nodes_Nova_Import.h>
 #include <compiler/tree/nodes/compiler_tree_nodes_Nova_Node.h>
+#include <compiler/tree/nodes/compiler_tree_nodes_Nova_Type.h>
 #include <compiler/tree/nodes/compiler_tree_nodes_Nova_Value.h>
 #include <compiler/compiler_Nova_SyntaxMessage.h>
 #include <compiler/tree/nodes/arrays/compiler_tree_nodes_arrays_Nova_ArrayAccess.h>
@@ -101,7 +102,7 @@ CCLASS_CLASS
 	nova_datastruct_list_Nova_Array* compiler_tree_nodes_Nova_Node_Nova_annotations;
 	compiler_tree_nodes_Nova_Node* compiler_tree_nodes_Nova_Node_Nova_parent;
 	compiler_tree_nodes_arrays_Nova_ArrayAccess* compiler_tree_nodes_Nova_Value_Nova_arrayAccess;
-	nova_Nova_String* compiler_tree_nodes_Nova_Value_Nova_type;
+	compiler_tree_nodes_Nova_Type* compiler_tree_nodes_Nova_Value_Nova_type;
 	nova_Nova_String* compiler_tree_nodes_Nova_Identifier_Nova_name;
 	char compiler_tree_nodes_Nova_StaticClassReference_Nova_safeNavigation;
 	compiler_tree_nodes_Nova_Accessible* compiler_tree_nodes_Nova_StaticClassReference_Nova_accessedNode;

@@ -42,6 +42,7 @@
 #include <compiler/tree/nodes/compiler_tree_nodes_Nova_Literal.h>
 #include <compiler/tree/nodes/compiler_tree_nodes_Nova_NovaFile.h>
 #include <compiler/tree/nodes/compiler_tree_nodes_Nova_PlaceholderValue.h>
+#include <compiler/tree/nodes/compiler_tree_nodes_Nova_Type.h>
 #include <compiler/tree/nodes/annotations/compiler_tree_nodes_annotations_Nova_Annotatable.h>
 #include <compiler/tree/nodes/annotations/compiler_tree_nodes_annotations_Nova_Annotation.h>
 #include <compiler/tree/nodes/exceptionhandling/compiler_tree_nodes_exceptionhandling_Nova_Try.h>
@@ -184,7 +185,7 @@ compiler_tree_nodes_operations_Nova_Assignment* compiler_tree_nodes_operations_N
 
 nova_Nova_String* compiler_tree_nodes_operations_Nova_Assignment_static_Nova_findAssigned(compiler_tree_nodes_operations_Nova_Assignment* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* input, int assignmentIndex)
 {
-	return nova_Nova_String_Nova_trim(nova_Nova_String_Nova_substring(input, exceptionData, (intptr_t)nova_null, assignmentIndex), exceptionData, (intptr_t)nova_null, (intptr_t)nova_null);
+	return nova_Nova_String_Nova_trim(nova_Nova_String_Nova_substring(input, exceptionData, (intptr_t)nova_null, assignmentIndex), exceptionData, (intptr_t)nova_null, (intptr_t)nova_null, 0);
 }
 
 char compiler_tree_nodes_operations_Nova_Assignment_Nova_parseAssignedNode(compiler_tree_nodes_operations_Nova_Assignment* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* input)
@@ -220,7 +221,7 @@ char compiler_tree_nodes_operations_Nova_Assignment_Nova_parseAssignedNode(compi
 
 nova_Nova_String* compiler_tree_nodes_operations_Nova_Assignment_static_Nova_findAssignment(compiler_tree_nodes_operations_Nova_Assignment* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* input, int assignmentIndex)
 {
-	return nova_Nova_String_Nova_trim(nova_Nova_String_Nova_substring(input, exceptionData, assignmentIndex + 1, (intptr_t)nova_null), exceptionData, (intptr_t)nova_null, (intptr_t)nova_null);
+	return nova_Nova_String_Nova_trim(nova_Nova_String_Nova_substring(input, exceptionData, assignmentIndex + 1, (intptr_t)nova_null), exceptionData, (intptr_t)nova_null, (intptr_t)nova_null, 0);
 }
 
 char compiler_tree_nodes_operations_Nova_Assignment_Nova_parseAssignment(compiler_tree_nodes_operations_Nova_Assignment* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* input)

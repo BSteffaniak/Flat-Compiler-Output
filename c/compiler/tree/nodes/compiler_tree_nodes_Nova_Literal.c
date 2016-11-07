@@ -30,6 +30,7 @@
 #include <compiler/util/compiler_util_Nova_Location.h>
 #include <compiler/tree/nodes/compiler_tree_nodes_Nova_Accessible.h>
 #include <compiler/tree/nodes/compiler_tree_nodes_Nova_Node.h>
+#include <compiler/tree/nodes/compiler_tree_nodes_Nova_Type.h>
 #include <compiler/tree/nodes/compiler_tree_nodes_Nova_Value.h>
 #include <compiler/compiler_Nova_SyntaxMessage.h>
 #include <compiler/tree/nodes/arrays/compiler_tree_nodes_arrays_Nova_ArrayAccess.h>
@@ -165,7 +166,7 @@ compiler_tree_nodes_Nova_Literal* compiler_tree_nodes_Nova_Literal_static_Nova_p
 		compiler_tree_nodes_Nova_Literal* l1_Nova_node = (compiler_tree_nodes_Nova_Literal*)nova_null;
 		
 		l1_Nova_node = compiler_tree_nodes_Nova_Literal_Nova_construct(0, exceptionData, parent, location);
-		l1_Nova_node->compiler_tree_nodes_Nova_Value_Nova_type = l1_Nova_type;
+		l1_Nova_node->compiler_tree_nodes_Nova_Value_Nova_type = compiler_tree_nodes_Nova_Type_Nova_construct(0, exceptionData, l1_Nova_type, 0, 0);
 		l1_Nova_node->compiler_tree_nodes_Nova_Literal_Nova_value = input;
 		if (compiler_tree_nodes_Nova_Literal_Nova_formatValue(l1_Nova_node, exceptionData))
 		{
@@ -190,7 +191,7 @@ nova_Nova_String* compiler_tree_nodes_Nova_Literal_static_Nova_getLiteralType(co
 
 char compiler_tree_nodes_Nova_Literal_Nova_formatValue(compiler_tree_nodes_Nova_Literal* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
-	if (nova_Nova_String_Nova_equals(this->compiler_tree_nodes_Nova_Value_Nova_type, exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("String"))))
+	if (nova_Nova_String_Nova_equals(this->compiler_tree_nodes_Nova_Value_Nova_type->compiler_tree_nodes_Nova_Type_Nova_name, exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("String"))))
 	{
 	}
 	return 1;
