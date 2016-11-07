@@ -81,6 +81,8 @@ compiler_tree_nodes_StaticClassReference_Extension_VTable compiler_tree_nodes_St
 		0,
 		0,
 		0,
+		0,
+		0,
 		(char(*)(nova_operators_Nova_Equals*, nova_exception_Nova_ExceptionData*, nova_Nova_Object*))nova_Nova_Object_0_Nova_equals,
 		0,
 		0,

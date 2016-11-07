@@ -26,7 +26,8 @@ nova_env novaEnv = {
 &nova_Nova_String_0_Nova_indexOf,
 &nova_Nova_String_1_Nova_indexOf,
 &nova_Nova_String_2_Nova_indexOf,
-&nova_Nova_String_Nova_lastIndexOf,
+&nova_Nova_String_0_Nova_lastIndexOf,
+&nova_Nova_String_1_Nova_lastIndexOf,
 &nova_Nova_String_Nova_substring,
 &nova_Nova_String_Nova_trim,
 &nova_Nova_String_Nova_lastChar,
@@ -247,6 +248,7 @@ nova_env novaEnv = {
 0,
 &nova_datastruct_list_Nova_List_Nova_filterEmpty,
 0,
+&nova_datastruct_list_Nova_List_Nova_takeLast,
 0,
 0,
 &nova_datastruct_list_Nova_List_Nova_firstNonNull,
@@ -323,9 +325,10 @@ nova_env novaEnv = {
 },
 
 {
+&nova_io_Nova_File_Nova_getChildFiles,
 &nova_io_Nova_File_Nova_directoryContents,
 &nova_io_Nova_File_Nova_listFiles,
-&nova_io_Nova_File_Nova_construct,
+&nova_io_Nova_File_1_Nova_construct,
 },
 
 {
@@ -1011,7 +1014,8 @@ nova_env novaEnv = {
 
 {
 0,
-&compiler_tree_nodes_variables_Nova_VariableDeclaration_Nova_parseModifiers,
+&compiler_tree_nodes_variables_Nova_VariableDeclaration_0_Nova_parseModifiers,
+&compiler_tree_nodes_variables_Nova_VariableDeclaration_1_Nova_parseModifiers,
 &compiler_tree_nodes_variables_Nova_VariableDeclaration_Nova_getInvalidModifiers,
 0,
 &compiler_tree_nodes_variables_Nova_VariableDeclaration_Nova_construct,
@@ -1047,6 +1051,7 @@ nova_env novaEnv = {
 &compiler_util_Nova_CompilerStringFunctions_Nova_findEndingQuote,
 &compiler_util_Nova_CompilerStringFunctions_0_Nova_findEndingMatch,
 &compiler_util_Nova_CompilerStringFunctions_1_Nova_findEndingMatch,
+&compiler_util_Nova_CompilerStringFunctions_Nova_splitValues,
 &compiler_util_Nova_CompilerStringFunctions_Nova_splitAtCommas,
 &compiler_util_Nova_CompilerStringFunctions_0_Nova_isStrictlyOperator,
 &compiler_util_Nova_CompilerStringFunctions_1_Nova_isStrictlyOperator,

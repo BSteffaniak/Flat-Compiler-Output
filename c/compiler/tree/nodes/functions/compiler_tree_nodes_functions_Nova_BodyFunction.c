@@ -33,9 +33,9 @@
 #include <compiler/compiler_Nova_SyntaxMessage.h>
 #include <compiler/tree/nodes/functions/compiler_tree_nodes_functions_Nova_FunctionDeclaration.h>
 #include <compiler/tree/nodes/variables/compiler_tree_nodes_variables_Nova_InstanceDeclaration.h>
+#include <compiler/tree/nodes/variables/compiler_tree_nodes_variables_Nova_VariableDeclaration.h>
 #include <compiler/tree/nodes/functions/compiler_tree_nodes_functions_Nova_Parameter.h>
 #include <compiler/tree/nodes/functions/compiler_tree_nodes_functions_Nova_ParameterList.h>
-#include <compiler/tree/nodes/variables/compiler_tree_nodes_variables_Nova_VariableDeclaration.h>
 #include <compiler/tree/nodes/compiler_tree_nodes_Nova_Identifier.h>
 #include <compiler/tree/nodes/compiler_tree_nodes_Nova_Value.h>
 #include <compiler/tree/nodes/arrays/compiler_tree_nodes_arrays_Nova_ArrayAccess.h>
@@ -79,6 +79,8 @@ compiler_tree_nodes_functions_BodyFunction_Extension_VTable compiler_tree_nodes_
 		0,
 		0,
 		0,
+		0,
+		0,
 		(char(*)(nova_operators_Nova_Equals*, nova_exception_Nova_ExceptionData*, nova_Nova_Object*))nova_Nova_Object_0_Nova_equals,
 		0,
 		0,
@@ -90,7 +92,7 @@ compiler_tree_nodes_functions_BodyFunction_Extension_VTable compiler_tree_nodes_
 	compiler_tree_nodes_functions_Nova_FunctionDeclaration_Nova_toString,
 	nova_Nova_Object_Accessor_Nova_hashCodeLong,
 	compiler_tree_nodes_functions_Nova_BodyFunction_Nova_addChild,
-	compiler_tree_nodes_Nova_Node_Nova_findVariableDeclaration,
+	compiler_tree_nodes_functions_Nova_FunctionDeclaration_Nova_findVariableDeclaration,
 	compiler_tree_nodes_functions_Nova_BodyFunction_Nova_parseStatement,
 	compiler_tree_nodes_Nova_Node_Nova_clone,
 	compiler_tree_nodes_Nova_Node_Nova_replace,

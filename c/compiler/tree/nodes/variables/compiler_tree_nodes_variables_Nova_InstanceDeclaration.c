@@ -76,6 +76,8 @@ compiler_tree_nodes_variables_InstanceDeclaration_Extension_VTable compiler_tree
 		0,
 		0,
 		0,
+		0,
+		0,
 		(char(*)(nova_operators_Nova_Equals*, nova_exception_Nova_ExceptionData*, nova_Nova_Object*))nova_Nova_Object_0_Nova_equals,
 		0,
 		0,
@@ -159,18 +161,23 @@ void compiler_tree_nodes_variables_Nova_InstanceDeclaration_Nova_this(compiler_t
 
 compiler_tree_nodes_variables_Nova_InstanceDeclaration* compiler_tree_nodes_variables_Nova_InstanceDeclaration_static_Nova_parse(compiler_tree_nodes_variables_Nova_InstanceDeclaration* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* input, compiler_tree_nodes_Nova_Node* parent, compiler_util_Nova_Location* location, int require)
 {
+	nova_datastruct_list_Nova_Array* l1_Nova_words = (nova_datastruct_list_Nova_Array*)nova_null;
 	compiler_tree_nodes_variables_Nova_VariableDeclaration* l1_Nova_declaration = (compiler_tree_nodes_variables_Nova_VariableDeclaration*)nova_null;
 	
 	parent = (compiler_tree_nodes_Nova_Node*)(parent == 0 ? (nova_Nova_Object*)(nova_Nova_Object*)nova_null : (nova_Nova_Object*)parent);
 	location = (compiler_util_Nova_Location*)(location == 0 ? (nova_Nova_Object*)compiler_util_Nova_Location_Nova_INVALID : (nova_Nova_Object*)location);
 	require = (int)(require == (intptr_t)nova_null ? 1 : require);
-	l1_Nova_declaration = (compiler_tree_nodes_variables_Nova_VariableDeclaration*)(compiler_tree_nodes_variables_Nova_VariableDeclaration_static_Nova_parse(0, exceptionData, input, parent, location, require));
+	l1_Nova_words = compiler_util_Nova_CompilerStringFunctions_Nova_splitValues(input, exceptionData);
+	l1_Nova_declaration = (compiler_tree_nodes_variables_Nova_VariableDeclaration*)(compiler_tree_nodes_variables_Nova_VariableDeclaration_static_Nova_parse(0, exceptionData, nova_datastruct_list_Nova_List_virtual_Nova_join((nova_datastruct_list_Nova_List*)(nova_datastruct_list_Nova_List_Nova_takeLast((nova_datastruct_list_Nova_List*)(l1_Nova_words), exceptionData, 2)), exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)(" "))), parent, location, require));
 	if (l1_Nova_declaration != (compiler_tree_nodes_variables_Nova_VariableDeclaration*)nova_null)
 	{
 		compiler_tree_nodes_variables_Nova_InstanceDeclaration* l1_Nova_node = (compiler_tree_nodes_variables_Nova_InstanceDeclaration*)nova_null;
 		
 		l1_Nova_node = compiler_tree_nodes_variables_Nova_InstanceDeclaration_Nova_construct(0, exceptionData, parent, location);
-		return (compiler_tree_nodes_variables_Nova_InstanceDeclaration*)compiler_tree_nodes_Nova_Node_virtual_Nova_cloneTo((compiler_tree_nodes_Nova_Node*)(l1_Nova_declaration), exceptionData, (compiler_tree_nodes_Nova_Node*)(l1_Nova_node));
+		if (compiler_tree_nodes_variables_Nova_VariableDeclaration_1_Nova_parseModifiers((compiler_tree_nodes_variables_Nova_VariableDeclaration*)(l1_Nova_node), exceptionData, (nova_datastruct_list_Nova_Array*)(nova_datastruct_list_Nova_List_virtual_Nova_take((nova_datastruct_list_Nova_List*)(l1_Nova_words), exceptionData, nova_datastruct_list_Nova_Array_Accessorfunc_Nova_count((nova_datastruct_list_Nova_Array*)(l1_Nova_words), exceptionData) - 2))))
+		{
+			return (compiler_tree_nodes_variables_Nova_InstanceDeclaration*)compiler_tree_nodes_Nova_Node_virtual_Nova_cloneTo((compiler_tree_nodes_Nova_Node*)(l1_Nova_declaration), exceptionData, (compiler_tree_nodes_Nova_Node*)(l1_Nova_node));
+		}
 	}
 	return (compiler_tree_nodes_variables_Nova_InstanceDeclaration*)(nova_Nova_Object*)nova_null;
 }
@@ -190,6 +197,10 @@ char compiler_tree_nodes_variables_Nova_InstanceDeclaration_Nova_parseModifier(c
 			nova_local_0 = 1;
 		}
 		if (nova_local_0 || nova_Nova_String_Nova_equals((modifier), exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("private"))))
+		{
+			nova_local_0 = 1;
+		}
+		if (nova_local_0 || nova_Nova_String_Nova_equals((modifier), exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("visible"))))
 		{
 			nova_local_0 = 1;
 		}

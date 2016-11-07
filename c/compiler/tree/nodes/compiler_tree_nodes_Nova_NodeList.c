@@ -74,6 +74,8 @@ compiler_tree_nodes_NodeList_Extension_VTable compiler_tree_nodes_NodeList_Exten
 		0,
 		0,
 		0,
+		0,
+		0,
 		(char(*)(nova_operators_Nova_Equals*, nova_exception_Nova_ExceptionData*, nova_Nova_Object*))nova_Nova_Object_0_Nova_equals,
 		0,
 		0,
@@ -240,7 +242,7 @@ void compiler_tree_nodes_Nova_NodeList_Nova_testLambda24(compiler_tree_nodes_Nov
 
 char compiler_tree_nodes_Nova_NodeList_Accessor_Nova_isEmpty(compiler_tree_nodes_Nova_NodeList* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
-	return this->compiler_tree_nodes_Nova_NodeList_Nova_children->nova_datastruct_list_Nova_Array_Nova_count == 0;
+	return nova_datastruct_list_Nova_Array_Accessorfunc_Nova_count((nova_datastruct_list_Nova_Array*)(this->compiler_tree_nodes_Nova_NodeList_Nova_children), exceptionData) == 0;
 }
 
 

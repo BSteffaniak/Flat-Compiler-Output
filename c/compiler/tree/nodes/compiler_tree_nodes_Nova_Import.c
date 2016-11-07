@@ -71,6 +71,8 @@ compiler_tree_nodes_Import_Extension_VTable compiler_tree_nodes_Import_Extension
 		0,
 		0,
 		0,
+		0,
+		0,
 		(char(*)(nova_operators_Nova_Equals*, nova_exception_Nova_ExceptionData*, nova_Nova_Object*))nova_Nova_Object_0_Nova_equals,
 		0,
 		0,
@@ -205,13 +207,13 @@ char compiler_tree_nodes_Nova_Import_Nova_testLambda22(compiler_tree_nodes_Nova_
 
 nova_Nova_String* compiler_tree_nodes_Nova_Import_Accessor_Nova_parentLocation(compiler_tree_nodes_Nova_Import* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
-	return nova_Nova_String_Nova_substring(this->compiler_tree_nodes_Nova_Import_Nova_importLocation, exceptionData, 0, nova_Nova_String_Nova_lastIndexOf(this->compiler_tree_nodes_Nova_Import_Nova_importLocation, exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("/")), (intptr_t)nova_null, 0));
+	return nova_Nova_String_Nova_substring(this->compiler_tree_nodes_Nova_Import_Nova_importLocation, exceptionData, 0, nova_Nova_String_1_Nova_lastIndexOf(this->compiler_tree_nodes_Nova_Import_Nova_importLocation, exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("/")), (intptr_t)nova_null, 0));
 }
 
 
 nova_Nova_String* compiler_tree_nodes_Nova_Import_Accessor_Nova_className(compiler_tree_nodes_Nova_Import* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
-	return nova_Nova_String_Nova_substring(this->compiler_tree_nodes_Nova_Import_Nova_importLocation, exceptionData, nova_Nova_String_Nova_lastIndexOf(this->compiler_tree_nodes_Nova_Import_Nova_importLocation, exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("/")), (intptr_t)nova_null, (intptr_t)nova_null) + 1, (intptr_t)nova_null);
+	return nova_Nova_String_Nova_substring(this->compiler_tree_nodes_Nova_Import_Nova_importLocation, exceptionData, nova_Nova_String_1_Nova_lastIndexOf(this->compiler_tree_nodes_Nova_Import_Nova_importLocation, exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("/")), (intptr_t)nova_null, (intptr_t)nova_null) + 1, (intptr_t)nova_null);
 }
 
 
