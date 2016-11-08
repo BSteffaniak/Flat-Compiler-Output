@@ -166,7 +166,7 @@ compiler_tree_nodes_Nova_Literal* compiler_tree_nodes_Nova_Literal_static_Nova_p
 		compiler_tree_nodes_Nova_Literal* l1_Nova_node = (compiler_tree_nodes_Nova_Literal*)nova_null;
 		
 		l1_Nova_node = compiler_tree_nodes_Nova_Literal_Nova_construct(0, exceptionData, parent, location);
-		l1_Nova_node->compiler_tree_nodes_Nova_Value_Nova_type = compiler_tree_nodes_Nova_Type_Nova_construct(0, exceptionData, l1_Nova_type, 0, 0);
+		l1_Nova_node->compiler_tree_nodes_Nova_Value_Nova_type = compiler_tree_nodes_Nova_Type_static_Nova_parse(0, exceptionData, l1_Nova_type, 0, 0, (intptr_t)nova_null);
 		l1_Nova_node->compiler_tree_nodes_Nova_Literal_Nova_value = input;
 		if (compiler_tree_nodes_Nova_Literal_Nova_formatValue(l1_Nova_node, exceptionData))
 		{

@@ -159,7 +159,7 @@ void compiler_tree_nodes_Nova_StaticClassReference_Nova_this(compiler_tree_nodes
 	name = (nova_Nova_String*)(name == 0 ? (nova_Nova_Object*)(nova_Nova_Object*)nova_null : (nova_Nova_Object*)name);
 	compiler_tree_nodes_Nova_Identifier_Nova_this((compiler_tree_nodes_Nova_Identifier*)(this), exceptionData, parent, location);
 	this->compiler_tree_nodes_Nova_Identifier_Nova_name = name;
-	this->compiler_tree_nodes_Nova_Value_Nova_type = compiler_tree_nodes_Nova_Type_Nova_construct(0, exceptionData, name, 0, 0);
+	this->compiler_tree_nodes_Nova_Value_Nova_type = compiler_tree_nodes_Nova_Type_static_Nova_parse(0, exceptionData, name, 0, 0, (intptr_t)nova_null);
 }
 
 compiler_tree_nodes_Nova_StaticClassReference* compiler_tree_nodes_Nova_StaticClassReference_static_Nova_parse(compiler_tree_nodes_Nova_StaticClassReference* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* input, compiler_tree_nodes_Nova_Node* parent, compiler_util_Nova_Location* location, int require)

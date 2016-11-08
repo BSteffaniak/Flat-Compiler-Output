@@ -951,6 +951,10 @@ nova_env novaEnv = {
 },
 
 {
+&compiler_tree_nodes_functions_Nova_AccessorFunction_Nova_construct,
+},
+
+{
 &compiler_tree_nodes_functions_Nova_BodyFunction_Nova_construct,
 },
 
@@ -973,11 +977,19 @@ nova_env novaEnv = {
 },
 
 {
+&compiler_tree_nodes_functions_Nova_MutatorFunction_Nova_construct,
+},
+
+{
 &compiler_tree_nodes_functions_Nova_Parameter_Nova_construct,
 },
 
 {
 &compiler_tree_nodes_functions_Nova_ParameterList_Nova_construct,
+},
+
+{
+&compiler_tree_nodes_functions_Nova_PropertyFunction_Nova_construct,
 },
 
 {
@@ -998,6 +1010,10 @@ nova_env novaEnv = {
 
 {
 &compiler_tree_nodes_operations_Nova_UnaryOperation_Nova_construct,
+},
+
+{
+&compiler_tree_nodes_variables_Nova_ArrayBracketOverload_Nova_construct,
 },
 
 {
