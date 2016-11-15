@@ -86,17 +86,16 @@ compiler_tree_nodes_Identifier_Extension_VTable compiler_tree_nodes_Identifier_E
 		0,
 		(void(*)(compiler_tree_nodes_annotations_Nova_Annotatable*, nova_exception_Nova_ExceptionData*, compiler_tree_nodes_annotations_Nova_Annotation*))compiler_tree_nodes_Nova_Node_Nova_addAnnotation,
 	},
-	compiler_tree_nodes_Nova_Identifier_Nova_toString,
+	compiler_tree_nodes_Nova_Node_Nova_toString,
 	nova_Nova_Object_Accessor_Nova_hashCodeLong,
 	compiler_tree_nodes_Nova_Node_Nova_addChild,
 	compiler_tree_nodes_Nova_Node_Nova_findVariableDeclaration,
 	compiler_tree_nodes_Nova_Node_Nova_parseStatement,
-	compiler_tree_nodes_Nova_Node_Nova_clone,
 	compiler_tree_nodes_Nova_Node_Nova_replace,
 	compiler_tree_nodes_Nova_Value_Nova_validateTypes,
 	compiler_tree_nodes_Nova_Node_Nova_parsePlaceholders,
 	compiler_tree_nodes_Nova_Identifier_Nova_cloneTo,
-	compiler_tree_nodes_Nova_Node_Nova_toNova,
+	compiler_tree_nodes_Nova_Identifier_Nova_toNova,
 	compiler_tree_nodes_Nova_Node_Accessor_Nova_program,
 	compiler_tree_nodes_Nova_Node_Accessor_Nova_parentFile,
 	compiler_tree_nodes_Nova_Node_Accessor_Nova_parentFunction,
@@ -164,7 +163,7 @@ compiler_tree_nodes_Nova_Identifier* compiler_tree_nodes_Nova_Identifier_static_
 	return (compiler_tree_nodes_Nova_Identifier*)(nova_Nova_Object*)nova_null;
 }
 
-nova_Nova_String* compiler_tree_nodes_Nova_Identifier_Nova_toString(compiler_tree_nodes_Nova_Identifier* this, nova_exception_Nova_ExceptionData* exceptionData)
+nova_Nova_String* compiler_tree_nodes_Nova_Identifier_Nova_toNova(compiler_tree_nodes_Nova_Identifier* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
 	return this->compiler_tree_nodes_Nova_Identifier_Nova_name;
 }

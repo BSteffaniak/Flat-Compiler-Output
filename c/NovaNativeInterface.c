@@ -18,6 +18,7 @@ nova_env novaEnv = {
 &nova_Nova_String_1_Nova_replace,
 &nova_Nova_String_0_Nova_startsWith,
 &nova_Nova_String_1_Nova_startsWith,
+&nova_Nova_String_2_Nova_startsWith,
 &nova_Nova_String_0_Nova_contains,
 &nova_Nova_String_1_Nova_contains,
 &nova_Nova_String_0_Nova_endsWith,
@@ -770,6 +771,12 @@ nova_env novaEnv = {
 },
 
 {
+&compiler_tree_Nova_AnnotationSearchResult_0_Nova_addTo,
+&compiler_tree_Nova_AnnotationSearchResult_1_Nova_addTo,
+&compiler_tree_Nova_AnnotationSearchResult_Nova_construct,
+},
+
+{
 &compiler_tree_Nova_StatementIterator_Nova_construct,
 },
 
@@ -848,7 +855,7 @@ nova_env novaEnv = {
 &compiler_tree_nodes_Nova_Node_Nova_validate,
 0,
 0,
-0,
+&compiler_tree_nodes_Nova_Node_Nova_clone,
 0,
 0,
 0,
@@ -926,7 +933,16 @@ nova_env novaEnv = {
 },
 
 {
+&compiler_tree_nodes_annotations_Nova_Annotation_Nova_getRemainingStatement,
 &compiler_tree_nodes_annotations_Nova_Annotation_Nova_construct,
+},
+
+{
+&compiler_tree_nodes_annotations_Nova_PrimitiveArrayAnnotation_Nova_construct,
+},
+
+{
+&compiler_tree_nodes_annotations_Nova_TargetAnnotation_Nova_construct,
 },
 
 {
@@ -1017,6 +1033,8 @@ nova_env novaEnv = {
 },
 
 {
+&compiler_tree_nodes_variables_Nova_FieldDeclaration_Nova_writeInitializationValue,
+&compiler_tree_nodes_variables_Nova_FieldDeclaration_Nova_writeAccessorValue,
 &compiler_tree_nodes_variables_Nova_FieldDeclaration_Nova_construct,
 },
 
@@ -1056,6 +1074,8 @@ nova_env novaEnv = {
 
 {
 &compiler_util_Nova_CompilerStringFunctions_Nova_containsAllWhitespaceAfter,
+&compiler_util_Nova_CompilerStringFunctions_Nova_substring,
+&compiler_util_Nova_CompilerStringFunctions_0_Nova_nextWordBounds,
 &compiler_util_Nova_CompilerStringFunctions_Nova_containsWord,
 &compiler_util_Nova_CompilerStringFunctions_Nova_nextWordIndex,
 &compiler_util_Nova_CompilerStringFunctions_Nova_nextWord,
@@ -1083,7 +1103,7 @@ nova_env novaEnv = {
 &compiler_util_Nova_CompilerStringFunctions_1_Nova_findStringInBaseScope,
 &compiler_util_Nova_CompilerStringFunctions_Nova_calculateStatementEnd,
 &compiler_util_Nova_CompilerStringFunctions_Nova_calculateReturnValue,
-&compiler_util_Nova_CompilerStringFunctions_Nova_nextWordBounds,
+&compiler_util_Nova_CompilerStringFunctions_1_Nova_nextWordBounds,
 &compiler_util_Nova_CompilerStringFunctions_Nova_findGroupedSymbols,
 &compiler_util_Nova_CompilerStringFunctions_Nova_findGroupedChars,
 &compiler_util_Nova_CompilerStringFunctions_Nova_checkStatementContinuation,

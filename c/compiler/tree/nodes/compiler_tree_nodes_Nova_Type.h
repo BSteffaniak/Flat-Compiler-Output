@@ -37,6 +37,7 @@ typedef struct compiler_tree_nodes_Nova_Type compiler_tree_nodes_Nova_Type;
 #include <nova/nova_Nova_System.h>
 #include <nova/nova_Nova_Class.h>
 #include <nova/regex/nova_regex_Nova_Pattern.h>
+#include <compiler/compiler_Nova_SyntaxMessage.h>
 #include <compiler/tree/nodes/compiler_tree_nodes_Nova_Node.h>
 #include <compiler/util/compiler_util_Nova_Location.h>
 #include <compiler/tree/nodes/generics/compiler_tree_nodes_generics_Nova_GenericArgument.h>
@@ -62,6 +63,7 @@ CCLASS_CLASS
 	
 	compiler_tree_nodes_Type_Extension_VTable* vtable;
 	nova_Nova_String* compiler_tree_nodes_Nova_Type_Nova_name;
+	int compiler_tree_nodes_Nova_Type_Nova_arrayDimensions;
 	nova_datastruct_list_Nova_Array* compiler_tree_nodes_Nova_Type_Nova_genericArguments;
 )
 
