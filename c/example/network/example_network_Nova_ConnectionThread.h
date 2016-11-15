@@ -6,7 +6,7 @@ typedef struct example_network_Nova_ConnectionThread example_network_Nova_Connec
 
 
 #include <Nova.h>
-#include <InterfaceVTAble.h>
+#include <InterfaceVTable.h>
 #include <ExceptionHandler.h>
 #include <NovaClassData.h>
 #include <nova/exception/nova_exception_Nova_ExceptionData.h>

@@ -13,3 +13,4 @@ compiler_tree_nodes_vtable_Abstractable compiler_tree_nodes_vtable_Abstractable_
 compiler_tree_nodes_vtable_Accessible compiler_tree_nodes_vtable_Accessible_value_default = {0,0};
 compiler_tree_nodes_vtable_Listener compiler_tree_nodes_vtable_Listener_value_default = {0};
 compiler_tree_nodes_annotations_vtable_Annotatable compiler_tree_nodes_annotations_vtable_Annotatable_value_default = {0};
+example_vtable_Polygon example_vtable_Polygon_value_default = {0};

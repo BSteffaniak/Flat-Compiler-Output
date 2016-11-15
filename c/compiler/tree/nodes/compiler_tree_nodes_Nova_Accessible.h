@@ -6,7 +6,7 @@ typedef struct compiler_tree_nodes_Nova_Accessible compiler_tree_nodes_Nova_Acce
 
 
 #include <Nova.h>
-#include <InterfaceVTAble.h>
+#include <InterfaceVTable.h>
 #include <ExceptionHandler.h>
 #include <NovaClassData.h>
 #include <nova/exception/nova_exception_Nova_ExceptionData.h>

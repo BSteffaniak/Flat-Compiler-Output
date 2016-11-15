@@ -6,7 +6,7 @@ typedef struct compiler_tree_nodes_exceptionhandling_Nova_Try compiler_tree_node
 
 
 #include <Nova.h>
-#include <InterfaceVTAble.h>
+#include <InterfaceVTable.h>
 #include <ExceptionHandler.h>
 #include <NovaClassData.h>
 #include <nova/exception/nova_exception_Nova_ExceptionData.h>
