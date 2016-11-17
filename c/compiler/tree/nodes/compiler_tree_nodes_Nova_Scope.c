@@ -97,8 +97,6 @@ compiler_tree_nodes_Scope_Extension_VTable compiler_tree_nodes_Scope_Extension_V
 		0,
 		0,
 		(void(*)(compiler_tree_nodes_annotations_Nova_Annotatable*, nova_exception_Nova_ExceptionData*, compiler_tree_nodes_annotations_Nova_Annotation*))compiler_tree_nodes_Nova_Node_Nova_addAnnotation,
-		0,
-		0,
 	},
 	compiler_tree_nodes_Nova_Node_Nova_toString,
 	nova_Nova_Object_Accessor_Nova_hashCodeLong,
@@ -290,6 +288,7 @@ char compiler_tree_nodes_Nova_Scope_Nova_testLambda32(compiler_tree_nodes_Nova_S
 		compiler_tree_nodes_Nova_Node* l2_Nova_parsed = (compiler_tree_nodes_Nova_Node*)nova_null;
 		
 		l2_Nova_placeholder = (compiler_tree_nodes_Nova_PlaceholderValue*)child;
+		nova_io_Nova_Console_1_static_Nova_writeLine(0, exceptionData, nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)(nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("Parsing "))), exceptionData, nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)((l2_Nova_placeholder->compiler_tree_nodes_Nova_PlaceholderValue_Nova_value)), exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("")))));
 		l2_Nova_parsed = (compiler_tree_nodes_Nova_Node*)(compiler_tree_nodes_Nova_Scope_Nova_parseStatement(this, exceptionData, l2_Nova_placeholder->compiler_tree_nodes_Nova_PlaceholderValue_Nova_value, child->compiler_tree_nodes_Nova_Node_Nova_parent, child->compiler_tree_nodes_Nova_Node_Nova_location, 1));
 		if (l2_Nova_parsed != (compiler_tree_nodes_Nova_Node*)nova_null)
 		{

@@ -16,7 +16,6 @@ typedef struct compiler_tree_nodes_vtable_Abstractable compiler_tree_nodes_vtabl
 typedef struct compiler_tree_nodes_vtable_Accessible compiler_tree_nodes_vtable_Accessible;
 typedef struct compiler_tree_nodes_vtable_Listener compiler_tree_nodes_vtable_Listener;
 typedef struct compiler_tree_nodes_annotations_vtable_Annotatable compiler_tree_nodes_annotations_vtable_Annotatable;
-typedef struct example_vtable_Polygon example_vtable_Polygon;
 extern nova_datastruct_vtable_Comparable nova_datastruct_vtable_Comparable_value_default;
 extern nova_datastruct_list_vtable_Iterable nova_datastruct_list_vtable_Iterable_value_default;
 extern nova_datastruct_list_vtable_Iterator nova_datastruct_list_vtable_Iterator_value_default;
@@ -30,7 +29,6 @@ extern compiler_tree_nodes_vtable_Abstractable compiler_tree_nodes_vtable_Abstra
 extern compiler_tree_nodes_vtable_Accessible compiler_tree_nodes_vtable_Accessible_value_default;
 extern compiler_tree_nodes_vtable_Listener compiler_tree_nodes_vtable_Listener_value_default;
 extern compiler_tree_nodes_annotations_vtable_Annotatable compiler_tree_nodes_annotations_vtable_Annotatable_value_default;
-extern example_vtable_Polygon example_vtable_Polygon_value_default;
 
 #include <nova/nova_Nova_Class.h>
 #include <nova/nova_Nova_Object.h>
@@ -233,40 +231,6 @@ extern example_vtable_Polygon example_vtable_Polygon_value_default;
 #include <compiler/util/compiler_util_Nova_Location.h>
 #include <compiler/util/compiler_util_Nova_OS.h>
 #include <compiler/util/compiler_util_Nova_SyntaxUtils.h>
-#include <example/example_Nova_Animal.h>
-#include <example/example_Nova_ArrayDemo.h>
-#include <example/example_Nova_BodyBuilder.h>
-#include <example/example_Nova_ClosureDemo.h>
-#include <example/example_Nova_Dog.h>
-#include <example/example_Nova_ExceptionHandlingDemo.h>
-#include <example/example_Nova_FileTest.h>
-#include <example/example_Nova_GenericDemo.h>
-#include <example/example_Nova_HashMapDemo.h>
-#include <example/example_Nova_HashSetDemo.h>
-#include <example/example_Nova_IntegerTest.h>
-#include <example/example_Nova_Lab.h>
-#include <example/example_Nova_MathDemo.h>
-#include <example/example_Nova_NonWholeDivisionException.h>
-#include <example/example_Nova_Person.h>
-#include <example/example_Nova_Polygon.h>
-#include <example/example_Nova_PolymorphismDemo.h>
-#include <example/example_Nova_QueueDemo.h>
-#include <example/example_Nova_Spider.h>
-#include <example/example_Nova_Square.h>
-#include <example/example_Nova_SvgChart.h>
-#include <example/example_Nova_SvgFractal.h>
-#include <example/example_Nova_T1.h>
-#include <example/example_Nova_T2.h>
-#include <example/example_Nova_Test.h>
-#include <example/example_Nova_ThreadDemo.h>
-#include <example/example_Nova_ThreadDemoImplementation.h>
-#include <example/ackermann/example_ackermann_Nova_Ackermann.h>
-#include <example/copy/example_copy_Nova_Dog.h>
-#include <example/database/example_database_Nova_DatabaseDemo.h>
-#include <example/network/example_network_Nova_ClientDemo.h>
-#include <example/network/example_network_Nova_ConnectionThread.h>
-#include <example/network/example_network_Nova_OutputThread.h>
-#include <example/network/example_network_Nova_ServerDemo.h>
 
 struct nova_datastruct_vtable_Comparable {
 char x;
@@ -336,10 +300,6 @@ struct compiler_tree_nodes_annotations_vtable_Annotatable {
 char x;
 };
 
-struct example_vtable_Polygon {
-char x;
-};
-
 
 
 struct NovaClassData {
@@ -356,7 +316,6 @@ compiler_tree_nodes_vtable_Abstractable* compiler_tree_nodes_vtable_Abstractable
 compiler_tree_nodes_vtable_Accessible* compiler_tree_nodes_vtable_Accessible_value;
 compiler_tree_nodes_vtable_Listener* compiler_tree_nodes_vtable_Listener_value;
 compiler_tree_nodes_annotations_vtable_Annotatable* compiler_tree_nodes_annotations_vtable_Annotatable_value;
-example_vtable_Polygon* example_vtable_Polygon_value;
 
 nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
@@ -394,11 +353,6 @@ compiler_tree_nodes_functions_Nova_FunctionDeclaration* (*compiler_tree_nodes_No
 compiler_tree_nodes_exceptionhandling_Nova_Try* (*compiler_tree_nodes_Nova_Node_virtual_Accessor_Nova_parentTry)(compiler_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*);
 compiler_tree_nodes_Nova_Scope* (*compiler_tree_nodes_Nova_Node_virtual_Accessor_Nova_scope)(compiler_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*);
 char (*compiler_tree_nodes_Nova_Value_virtual_Accessor_Nova_isAssignable)(compiler_tree_nodes_Nova_Value*, nova_exception_Nova_ExceptionData*);
-int (*example_Nova_Animal_virtual_Nova_getNumLegs)(example_Nova_Animal*, nova_exception_Nova_ExceptionData*);
-int (*example_Nova_Animal_virtual_Nova_getNumEyes)(example_Nova_Animal*, nova_exception_Nova_ExceptionData*);
-nova_Nova_String* (*example_Nova_Animal_virtual_Nova_getDescription)(example_Nova_Animal*, nova_exception_Nova_ExceptionData*);
-void (*example_Nova_Person_virtual_Nova_sayHello)(example_Nova_Person*, nova_exception_Nova_ExceptionData*);
-int (*example_Nova_T1_virtual_Accessor_static_Nova_ind)(example_Nova_T1*, nova_exception_Nova_ExceptionData*);
 };
 
 #endif

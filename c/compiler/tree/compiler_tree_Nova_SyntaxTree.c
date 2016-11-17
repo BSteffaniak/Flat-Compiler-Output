@@ -90,8 +90,6 @@ compiler_tree_SyntaxTree_Extension_VTable compiler_tree_SyntaxTree_Extension_VTa
 		0,
 		0,
 		0,
-		0,
-		0,
 	},
 	nova_Nova_Object_Nova_toString,
 	nova_Nova_Object_Accessor_Nova_hashCodeLong,
@@ -219,6 +217,7 @@ void compiler_tree_Nova_SyntaxTree_Nova_testLambda87(compiler_tree_Nova_SyntaxTr
 	nova_local_0 = l1_Nova_statements;
 	while (compiler_tree_Nova_StatementIterator_Accessor_Nova_hasNext(nova_local_0, exceptionData))
 	{
+		nova_Nova_String* l2_Nova_full = (nova_Nova_String*)nova_null;
 		compiler_tree_nodes_Nova_Node* l2_Nova_node = (compiler_tree_nodes_Nova_Node*)nova_null;
 		compiler_tree_Nova_AnnotationSearchResult* l2_Nova_annotations = (compiler_tree_Nova_AnnotationSearchResult*)nova_null;
 		
@@ -227,7 +226,7 @@ void compiler_tree_Nova_SyntaxTree_Nova_testLambda87(compiler_tree_Nova_SyntaxTr
 		{
 			break;
 		}
-		nova_io_Nova_Console_1_static_Nova_writeLine(0, exceptionData, nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)(nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("'"))), exceptionData, nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)((l2_Nova_statement)), exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("'")))));
+		l2_Nova_full = l2_Nova_statement;
 		l2_Nova_node = (compiler_tree_nodes_Nova_Node*)((nova_Nova_Object*)nova_null);
 		l2_Nova_annotations = compiler_tree_Nova_SyntaxTree_static_Nova_searchAnnotations(0, exceptionData, l2_Nova_statement);
 		compiler_tree_Nova_AnnotationSearchResult_1_Nova_addTo(l2_Nova_annotations, exceptionData, this->prv->compiler_tree_Nova_SyntaxTree_Nova_pendingAnnotations);
@@ -235,7 +234,11 @@ void compiler_tree_Nova_SyntaxTree_Nova_testLambda87(compiler_tree_Nova_SyntaxTr
 		if (l2_Nova_statement->nova_Nova_String_Nova_count > 0)
 		{
 			l2_Nova_node = (compiler_tree_nodes_Nova_Node*)(compiler_tree_nodes_Nova_Node_virtual_Nova_parseStatement((compiler_tree_nodes_Nova_Node*)(nova_datastruct_list_Nova_Stack_Nova_peek((nova_datastruct_list_Nova_Stack*)(this->prv->compiler_tree_Nova_SyntaxTree_Nova_parents), exceptionData)), exceptionData, l2_Nova_statement, 0, 0, 0));
-			nova_io_Nova_Console_1_static_Nova_writeLine(0, exceptionData, nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)(nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("\tbeginsScope: '"))), exceptionData, nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)(nova_primitive_Nova_Bool_static_Nova_toString(0, exceptionData, (l1_Nova_statements->compiler_tree_Nova_StatementIterator_Nova_beginsScope))), exceptionData, nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)(nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("'\n\tendsScope: '"))), exceptionData, nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)(nova_primitive_Nova_Bool_static_Nova_toString(0, exceptionData, (l1_Nova_statements->compiler_tree_Nova_StatementIterator_Nova_endsScope))), exceptionData, nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)(nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("'\n\tparse: '"))), exceptionData, nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)(nova_Nova_Object_virtual_Nova_toString((nova_Nova_Object*)((l2_Nova_node)), exceptionData)), exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("'\n")))))))));
+			if (l2_Nova_node == (compiler_tree_nodes_Nova_Node*)nova_null)
+			{
+				nova_io_Nova_Console_1_static_Nova_writeLine(0, exceptionData, nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)(nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("'"))), exceptionData, nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)((l2_Nova_full)), exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("'")))));
+				nova_io_Nova_Console_1_static_Nova_writeLine(0, exceptionData, nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)(nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("\tbeginsScope: '"))), exceptionData, nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)(nova_primitive_Nova_Bool_static_Nova_toString(0, exceptionData, (l1_Nova_statements->compiler_tree_Nova_StatementIterator_Nova_beginsScope))), exceptionData, nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)(nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("'\n\tendsScope: '"))), exceptionData, nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)(nova_primitive_Nova_Bool_static_Nova_toString(0, exceptionData, (l1_Nova_statements->compiler_tree_Nova_StatementIterator_Nova_endsScope))), exceptionData, nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)(nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("'\n\tparse: '"))), exceptionData, nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)(nova_Nova_Object_virtual_Nova_toString((nova_Nova_Object*)((l2_Nova_node)), exceptionData)), exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("'\n")))))))));
+			}
 			if (l2_Nova_node != (compiler_tree_nodes_Nova_Node*)nova_null)
 			{
 				while (!nova_datastruct_list_Nova_Stack_Accessor_Nova_isEmpty((nova_datastruct_list_Nova_Stack*)(this->prv->compiler_tree_Nova_SyntaxTree_Nova_pendingAnnotations), exceptionData))
@@ -258,9 +261,9 @@ void compiler_tree_Nova_SyntaxTree_Nova_testLambda87(compiler_tree_Nova_SyntaxTr
 		{
 			if (l2_Nova_node == (compiler_tree_nodes_Nova_Node*)nova_null)
 			{
-				compiler_tree_nodes_Nova_Node* l10_Nova_nova_local_1 = (compiler_tree_nodes_Nova_Node*)nova_null;
+				compiler_tree_nodes_Nova_Node* l11_Nova_nova_local_1 = (compiler_tree_nodes_Nova_Node*)nova_null;
 				
-				compiler_Nova_SyntaxMessage_static_Nova_error(0, exceptionData, nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)(nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("Unable to parse scope declaration '"))), exceptionData, nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)((l2_Nova_statement)), exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("'")))), (compiler_tree_nodes_Nova_Node*)((l10_Nova_nova_local_1 = (compiler_tree_nodes_Nova_Node*)(nova_datastruct_list_Nova_Stack_Nova_peek((nova_datastruct_list_Nova_Stack*)(this->prv->compiler_tree_Nova_SyntaxTree_Nova_parents), exceptionData))) != (compiler_tree_nodes_Nova_Node*)nova_null ? l10_Nova_nova_local_1 : (compiler_tree_nodes_Nova_Node*)this->compiler_tree_Nova_SyntaxTree_Nova_root), 0);
+				compiler_Nova_SyntaxMessage_static_Nova_error(0, exceptionData, nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)(nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("Unable to parse scope declaration '"))), exceptionData, nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)((l2_Nova_statement)), exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("'")))), (compiler_tree_nodes_Nova_Node*)((l11_Nova_nova_local_1 = (compiler_tree_nodes_Nova_Node*)(nova_datastruct_list_Nova_Stack_Nova_peek((nova_datastruct_list_Nova_Stack*)(this->prv->compiler_tree_Nova_SyntaxTree_Nova_parents), exceptionData))) != (compiler_tree_nodes_Nova_Node*)nova_null ? l11_Nova_nova_local_1 : (compiler_tree_nodes_Nova_Node*)this->compiler_tree_Nova_SyntaxTree_Nova_root), 0);
 			}
 			else
 			{

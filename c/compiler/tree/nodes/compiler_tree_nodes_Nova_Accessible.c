@@ -66,8 +66,6 @@ compiler_tree_nodes_Accessible_Extension_VTable compiler_tree_nodes_Accessible_E
 		(compiler_tree_nodes_Nova_Accessible*(*)(compiler_tree_nodes_Nova_Accessible*, nova_exception_Nova_ExceptionData*, compiler_tree_nodes_Nova_Accessible*))compiler_tree_nodes_Nova_Accessible_Mutator_Nova_accessedNode,
 		(compiler_tree_nodes_Nova_Accessible*(*)(compiler_tree_nodes_Nova_Accessible*, nova_exception_Nova_ExceptionData*))compiler_tree_nodes_Nova_Accessible_Accessor_Nova_accessedNode,
 		0,
-		0,
-		0,
 	},
 };
 

@@ -87,8 +87,6 @@ compiler_tree_nodes_operations_Assignment_Extension_VTable compiler_tree_nodes_o
 		0,
 		0,
 		(void(*)(compiler_tree_nodes_annotations_Nova_Annotatable*, nova_exception_Nova_ExceptionData*, compiler_tree_nodes_annotations_Nova_Annotation*))compiler_tree_nodes_Nova_Node_Nova_addAnnotation,
-		0,
-		0,
 	},
 	compiler_tree_nodes_Nova_Node_Nova_toString,
 	nova_Nova_Object_Accessor_Nova_hashCodeLong,
@@ -174,6 +172,7 @@ compiler_tree_nodes_operations_Nova_Assignment* compiler_tree_nodes_operations_N
 		if (compiler_tree_nodes_operations_Nova_Assignment_Nova_parseAssignedNode(l1_Nova_node, exceptionData, compiler_tree_nodes_operations_Nova_Assignment_static_Nova_findAssigned(0, exceptionData, input, l1_Nova_assignmentIndex)) && compiler_tree_nodes_operations_Nova_Assignment_Nova_parseAssignment(l1_Nova_node, exceptionData, compiler_tree_nodes_operations_Nova_Assignment_static_Nova_findAssignment(0, exceptionData, input, l1_Nova_assignmentIndex)))
 		{
 			nova_datastruct_list_Nova_Array_0_Nova_add((nova_datastruct_list_Nova_Array*)(l1_Nova_node->compiler_tree_nodes_operations_Nova_Operation_Nova_operators), exceptionData, (nova_Nova_Object*)(compiler_tree_nodes_operations_Nova_Operator_Nova_construct(0, exceptionData, (compiler_tree_nodes_Nova_Node*)(l1_Nova_node), location, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("=")))));
+			nova_io_Nova_Console_static_Nova_log(0, exceptionData, (nova_Nova_Object*)(nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("finalizing"))));
 			if (nova_Nova_Class_Nova_isOfType(compiler_tree_nodes_operations_Nova_Assignment_Accessor_Nova_assigned(l1_Nova_node, exceptionData)->vtable->classInstance, exceptionData, (nova_Nova_Class*)(compiler_tree_nodes_variables_VariableDeclaration_Extension_VTable_val.classInstance)))
 			{
 				nova_datastruct_list_Nova_Array_0_Nova_add((nova_datastruct_list_Nova_Array*)(compiler_tree_nodes_Nova_Node_Accessor_Nova_parentScope((compiler_tree_nodes_Nova_Node*)(l1_Nova_node), exceptionData)->compiler_tree_nodes_Nova_Scope_Nova_declarations), exceptionData, (nova_Nova_Object*)((compiler_tree_nodes_variables_Nova_VariableDeclaration*)compiler_tree_nodes_operations_Nova_Assignment_Accessor_Nova_assigned(l1_Nova_node, exceptionData)));
@@ -193,7 +192,9 @@ char compiler_tree_nodes_operations_Nova_Assignment_Nova_parseAssignedNode(compi
 {
 	compiler_tree_nodes_variables_Nova_LocalDeclaration* l1_Nova_declaration = (compiler_tree_nodes_variables_Nova_LocalDeclaration*)nova_null;
 	
+	nova_io_Nova_Console_1_static_Nova_writeLine(0, exceptionData, nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)(nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("Parsing assigned "))), exceptionData, nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)((input)), exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("")))));
 	l1_Nova_declaration = (compiler_tree_nodes_variables_Nova_LocalDeclaration*)(compiler_tree_nodes_variables_Nova_LocalDeclaration_static_Nova_parse(0, exceptionData, input, (compiler_tree_nodes_Nova_Node*)(this), this->compiler_tree_nodes_Nova_Node_Nova_location, 0));
+	nova_io_Nova_Console_static_Nova_log(0, exceptionData, (nova_Nova_Object*)(nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)(nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("Done assigned "))), exceptionData, nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)(nova_Nova_Object_virtual_Nova_toString((nova_Nova_Object*)((l1_Nova_declaration)), exceptionData)), exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)(""))))));
 	if (l1_Nova_declaration != (compiler_tree_nodes_variables_Nova_LocalDeclaration*)nova_null)
 	{
 		compiler_tree_nodes_operations_Nova_Assignment_Mutator_Nova_assigned(this, exceptionData, (compiler_tree_nodes_Nova_Value*)(l1_Nova_declaration));
@@ -229,7 +230,9 @@ char compiler_tree_nodes_operations_Nova_Assignment_Nova_parseAssignment(compile
 {
 	compiler_tree_nodes_Nova_Value* l1_Nova_value = (compiler_tree_nodes_Nova_Value*)nova_null;
 	
+	nova_io_Nova_Console_1_static_Nova_writeLine(0, exceptionData, nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)(nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("Parsing assignment "))), exceptionData, nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)((input)), exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("")))));
 	l1_Nova_value = (compiler_tree_nodes_Nova_Value*)(compiler_tree_nodes_Nova_Value_0_static_Nova_parse(0, exceptionData, input, (compiler_tree_nodes_Nova_Node*)(this), this->compiler_tree_nodes_Nova_Node_Nova_location, (intptr_t)nova_null));
+	nova_io_Nova_Console_static_Nova_log(0, exceptionData, (nova_Nova_Object*)(nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)(nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("Done assignment "))), exceptionData, nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)(nova_Nova_Object_virtual_Nova_toString((nova_Nova_Object*)((l1_Nova_value)), exceptionData)), exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)(""))))));
 	if (l1_Nova_value != (compiler_tree_nodes_Nova_Value*)nova_null)
 	{
 		compiler_tree_nodes_operations_Nova_Assignment_Mutator_Nova_assignment(this, exceptionData, l1_Nova_value);

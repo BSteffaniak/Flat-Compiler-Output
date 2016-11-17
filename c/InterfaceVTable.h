@@ -16,7 +16,6 @@ typedef struct compiler_tree_nodes_Nova_Abstractable compiler_tree_nodes_Nova_Ab
 typedef struct compiler_tree_nodes_Nova_Accessible compiler_tree_nodes_Nova_Accessible;
 typedef struct compiler_tree_nodes_annotations_Nova_Annotatable compiler_tree_nodes_annotations_Nova_Annotatable;
 typedef struct compiler_tree_nodes_annotations_Nova_Annotation compiler_tree_nodes_annotations_Nova_Annotation;
-typedef struct example_Nova_Polygon example_Nova_Polygon;
 typedef char (*nova_Nova_String_closure1_Nova_transform)(void*, nova_exception_Nova_ExceptionData*, char, int, void*);
 typedef char (*nova_Nova_String_closure2_Nova_transform)(void*, nova_exception_Nova_ExceptionData*, char, int, void*);
 typedef char (*nova_Nova_String_closure3_Nova_transform)(void*, nova_exception_Nova_ExceptionData*, char, int, void*);
@@ -143,9 +142,9 @@ typedef void (*nova_datastruct_list_Nova_IntArray_closure6_Nova_func)(void*, nov
 typedef char (*nova_datastruct_list_Nova_IntArray_closure7_Nova_anyFunc)(void*, nova_exception_Nova_ExceptionData*, int, void*);
 typedef char (*nova_datastruct_list_Nova_IntArray_closure8_Nova_anyFunc)(void*, nova_exception_Nova_ExceptionData*, int, void*);
 typedef char (*nova_datastruct_list_Nova_IntArray_closure9_Nova_anyFunc)(void*, nova_exception_Nova_ExceptionData*, int, void*);
-typedef char (*nova_datastruct_list_Nova_IntArray_closure10_Nova_allFunc)(void*, nova_exception_Nova_ExceptionData*, int, int, nova_datastruct_list_Nova_List*, void*);
-typedef char (*nova_datastruct_list_Nova_IntArray_closure11_Nova_allFunc)(void*, nova_exception_Nova_ExceptionData*, int, int, nova_datastruct_list_Nova_List*, void*);
-typedef char (*nova_datastruct_list_Nova_IntArray_closure12_Nova_allFunc)(void*, nova_exception_Nova_ExceptionData*, int, int, nova_datastruct_list_Nova_List*, void*);
+typedef char (*nova_datastruct_list_Nova_IntArray_closure10_Nova_allFunc)(void*, nova_exception_Nova_ExceptionData*, int, int, nova_datastruct_list_Nova_IntArray*, void*);
+typedef char (*nova_datastruct_list_Nova_IntArray_closure11_Nova_allFunc)(void*, nova_exception_Nova_ExceptionData*, int, int, nova_datastruct_list_Nova_IntArray*, void*);
+typedef char (*nova_datastruct_list_Nova_IntArray_closure12_Nova_allFunc)(void*, nova_exception_Nova_ExceptionData*, int, int, nova_datastruct_list_Nova_IntArray*, void*);
 typedef char (*nova_datastruct_list_Nova_IntArray_closure13_Nova_filterFunc)(void*, nova_exception_Nova_ExceptionData*, int, int, nova_datastruct_list_Nova_IntArray*, void*);
 typedef char (*nova_datastruct_list_Nova_IntArray_closure14_Nova_filterFunc)(void*, nova_exception_Nova_ExceptionData*, int, int, nova_datastruct_list_Nova_IntArray*, void*);
 typedef char (*nova_datastruct_list_Nova_IntArray_closure15_Nova_filterFunc)(void*, nova_exception_Nova_ExceptionData*, int, int, nova_datastruct_list_Nova_IntArray*, void*);
@@ -254,8 +253,6 @@ char (*compiler_tree_nodes_Nova_Abstractable_virtual_Accessor1_Nova_isAbstract)(
 compiler_tree_nodes_Nova_Accessible* (*compiler_tree_nodes_Nova_Accessible_virtual_Mutator0_Nova_accessedNode)(compiler_tree_nodes_Nova_Accessible*, nova_exception_Nova_ExceptionData*, compiler_tree_nodes_Nova_Accessible*);
 compiler_tree_nodes_Nova_Accessible* (*compiler_tree_nodes_Nova_Accessible_virtual_Accessor1_Nova_accessedNode)(compiler_tree_nodes_Nova_Accessible*, nova_exception_Nova_ExceptionData*);
 void (*compiler_tree_nodes_annotations_Nova_Annotatable_virtual_Nova_addAnnotation)(compiler_tree_nodes_annotations_Nova_Annotatable*, nova_exception_Nova_ExceptionData*, compiler_tree_nodes_annotations_Nova_Annotation*);
-int (*example_Nova_Polygon_virtual_Nova_numberSides)(example_Nova_Polygon*, nova_exception_Nova_ExceptionData*);
-double (*example_Nova_Polygon_virtual_Nova_calculateArea)(example_Nova_Polygon*, nova_exception_Nova_ExceptionData*);
 } nova_Interface_VTable;
 
 #endif
