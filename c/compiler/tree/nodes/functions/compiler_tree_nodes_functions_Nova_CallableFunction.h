@@ -1,8 +1,8 @@
 #pragma once
-#ifndef FILE_example_Nova_ClosureDemo_NOVA
-#define FILE_example_Nova_ClosureDemo_NOVA
+#ifndef FILE_compiler_tree_nodes_functions_Nova_CallableFunction_NOVA
+#define FILE_compiler_tree_nodes_functions_Nova_CallableFunction_NOVA
 
-typedef struct example_Nova_ClosureDemo example_Nova_ClosureDemo;
+typedef struct compiler_tree_nodes_functions_Nova_CallableFunction compiler_tree_nodes_functions_Nova_CallableFunction;
 
 
 #include <Nova.h>
@@ -37,34 +37,25 @@ typedef struct example_Nova_ClosureDemo example_Nova_ClosureDemo;
 #include <nova/nova_Nova_System.h>
 #include <nova/nova_Nova_Class.h>
 #include <nova/regex/nova_regex_Nova_Pattern.h>
-#include <nova/NativeObject.h>
-#include <nova/operators/nova_operators_Nova_Equals.h>
 
 
-typedef struct example_ClosureDemo_Extension_VTable example_ClosureDemo_Extension_VTable;
-struct example_ClosureDemo_Extension_VTable
+typedef struct compiler_tree_nodes_functions_CallableFunction_Extension_VTable compiler_tree_nodes_functions_CallableFunction_Extension_VTable;
+struct compiler_tree_nodes_functions_CallableFunction_Extension_VTable
 {
 	nova_Nova_Class* classInstance;
 	nova_Interface_VTable itable;
-	nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
-	long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 };
 
-extern example_ClosureDemo_Extension_VTable example_ClosureDemo_Extension_VTable_val;
+extern compiler_tree_nodes_functions_CallableFunction_Extension_VTable compiler_tree_nodes_functions_CallableFunction_Extension_VTable_val;
 
 
 CCLASS_CLASS
 (
-	example_Nova_ClosureDemo, 
+	compiler_tree_nodes_functions_Nova_CallableFunction, 
 	
-	example_ClosureDemo_Extension_VTable* vtable;
+	compiler_tree_nodes_functions_CallableFunction_Extension_VTable* vtable;
 )
 
-void example_Nova_ClosureDemo_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData);
-example_Nova_ClosureDemo* example_Nova_ClosureDemo_Nova_construct(example_Nova_ClosureDemo* this, nova_exception_Nova_ExceptionData* exceptionData);
-void example_Nova_ClosureDemo_Nova_destroy(example_Nova_ClosureDemo** this, nova_exception_Nova_ExceptionData* exceptionData);
-void example_Nova_ClosureDemo_static_Nova_main(example_Nova_ClosureDemo* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_list_Nova_Array* args);
-void example_Nova_ClosureDemo_Nova_this(example_Nova_ClosureDemo* this, nova_exception_Nova_ExceptionData* exceptionData);
-void example_Nova_ClosureDemo_Nova_super(example_Nova_ClosureDemo* this, nova_exception_Nova_ExceptionData* exceptionData);
+void compiler_tree_nodes_functions_Nova_CallableFunction_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData);
 
 #endif

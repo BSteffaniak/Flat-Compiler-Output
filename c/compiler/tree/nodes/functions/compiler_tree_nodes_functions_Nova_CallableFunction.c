@@ -1,14 +1,4 @@
-#pragma once
-#ifndef FILE_example_Nova_Polygon_NOVA
-#define FILE_example_Nova_Polygon_NOVA
-
-typedef struct example_Nova_Polygon example_Nova_Polygon;
-
-
-#include <Nova.h>
-#include <InterfaceVTable.h>
-#include <ExceptionHandler.h>
-#include <NovaClassData.h>
+#include <precompiled.h>
 #include <nova/exception/nova_exception_Nova_ExceptionData.h>
 #include <nova/exception/nova_exception_Nova_Exception.h>
 #include <nova/exception/nova_exception_Nova_DivideByZeroException.h>
@@ -39,25 +29,46 @@ typedef struct example_Nova_Polygon example_Nova_Polygon;
 #include <nova/regex/nova_regex_Nova_Pattern.h>
 
 
-typedef struct example_Polygon_Extension_VTable example_Polygon_Extension_VTable;
-struct example_Polygon_Extension_VTable
+
+compiler_tree_nodes_functions_CallableFunction_Extension_VTable compiler_tree_nodes_functions_CallableFunction_Extension_VTable_val =
 {
-	nova_Nova_Class* classInstance;
-	nova_Interface_VTable itable;
+	0,
+	{
+		0,
+		0,
+		0,
+		0,
+		0,
+		0,
+		0,
+		0,
+		0,
+		0,
+		0,
+		0,
+		0,
+		0,
+		0,
+		0,
+		0,
+		0,
+		0,
+		0,
+		0,
+		0,
+		0,
+		0,
+		0,
+		0,
+		0,
+		0,
+	},
 };
 
-extern example_Polygon_Extension_VTable example_Polygon_Extension_VTable_val;
 
+void compiler_tree_nodes_functions_Nova_CallableFunction_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData)
+{
+	{
+	}
+}
 
-CCLASS_CLASS
-(
-	example_Nova_Polygon, 
-	
-	example_Polygon_Extension_VTable* vtable;
-)
-
-void example_Nova_Polygon_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData);
-int example_Nova_Polygon_Nova_numberSides(example_Nova_Polygon* this, nova_exception_Nova_ExceptionData* exceptionData);double example_Nova_Polygon_Nova_calculateArea(example_Nova_Polygon* this, nova_exception_Nova_ExceptionData* exceptionData);int example_Nova_Polygon_virtual_Nova_numberSides(example_Nova_Polygon* this, nova_exception_Nova_ExceptionData* exceptionData);
-double example_Nova_Polygon_virtual_Nova_calculateArea(example_Nova_Polygon* this, nova_exception_Nova_ExceptionData* exceptionData);
-
-#endif

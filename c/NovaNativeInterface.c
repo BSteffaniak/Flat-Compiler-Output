@@ -953,14 +953,6 @@ nova_env novaEnv = {
 },
 
 {
-&compiler_tree_nodes_closures_Nova_ClosureContext_Nova_construct,
-},
-
-{
-&compiler_tree_nodes_closures_Nova_ClosureDeclaration_Nova_construct,
-},
-
-{
 &compiler_tree_nodes_exceptionhandling_Nova_ExceptionHandler_Nova_construct,
 },
 
@@ -975,6 +967,9 @@ nova_env novaEnv = {
 {
 &compiler_tree_nodes_functions_Nova_BodyFunction_Nova_writeBody,
 &compiler_tree_nodes_functions_Nova_BodyFunction_Nova_construct,
+},
+
+{
 },
 
 {
@@ -1009,6 +1004,14 @@ nova_env novaEnv = {
 
 {
 &compiler_tree_nodes_functions_Nova_PropertyFunction_Nova_construct,
+},
+
+{
+&compiler_tree_nodes_functions_closures_Nova_ClosureContext_Nova_construct,
+},
+
+{
+&compiler_tree_nodes_functions_closures_Nova_ClosureDeclaration_Nova_construct,
 },
 
 {

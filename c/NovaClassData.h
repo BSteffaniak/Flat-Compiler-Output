@@ -16,6 +16,7 @@ typedef struct compiler_tree_nodes_vtable_Abstractable compiler_tree_nodes_vtabl
 typedef struct compiler_tree_nodes_vtable_Accessible compiler_tree_nodes_vtable_Accessible;
 typedef struct compiler_tree_nodes_vtable_Listener compiler_tree_nodes_vtable_Listener;
 typedef struct compiler_tree_nodes_annotations_vtable_Annotatable compiler_tree_nodes_annotations_vtable_Annotatable;
+typedef struct compiler_tree_nodes_functions_vtable_CallableFunction compiler_tree_nodes_functions_vtable_CallableFunction;
 extern nova_datastruct_vtable_Comparable nova_datastruct_vtable_Comparable_value_default;
 extern nova_datastruct_list_vtable_Iterable nova_datastruct_list_vtable_Iterable_value_default;
 extern nova_datastruct_list_vtable_Iterator nova_datastruct_list_vtable_Iterator_value_default;
@@ -29,6 +30,7 @@ extern compiler_tree_nodes_vtable_Abstractable compiler_tree_nodes_vtable_Abstra
 extern compiler_tree_nodes_vtable_Accessible compiler_tree_nodes_vtable_Accessible_value_default;
 extern compiler_tree_nodes_vtable_Listener compiler_tree_nodes_vtable_Listener_value_default;
 extern compiler_tree_nodes_annotations_vtable_Annotatable compiler_tree_nodes_annotations_vtable_Annotatable_value_default;
+extern compiler_tree_nodes_functions_vtable_CallableFunction compiler_tree_nodes_functions_vtable_CallableFunction_value_default;
 
 #include <nova/nova_Nova_Class.h>
 #include <nova/nova_Nova_Object.h>
@@ -201,12 +203,11 @@ extern compiler_tree_nodes_annotations_vtable_Annotatable compiler_tree_nodes_an
 #include <compiler/tree/nodes/annotations/compiler_tree_nodes_annotations_Nova_PrimitiveArrayAnnotation.h>
 #include <compiler/tree/nodes/annotations/compiler_tree_nodes_annotations_Nova_TargetAnnotation.h>
 #include <compiler/tree/nodes/arrays/compiler_tree_nodes_arrays_Nova_ArrayAccess.h>
-#include <compiler/tree/nodes/closures/compiler_tree_nodes_closures_Nova_ClosureContext.h>
-#include <compiler/tree/nodes/closures/compiler_tree_nodes_closures_Nova_ClosureDeclaration.h>
 #include <compiler/tree/nodes/exceptionhandling/compiler_tree_nodes_exceptionhandling_Nova_ExceptionHandler.h>
 #include <compiler/tree/nodes/exceptionhandling/compiler_tree_nodes_exceptionhandling_Nova_Try.h>
 #include <compiler/tree/nodes/functions/compiler_tree_nodes_functions_Nova_AccessorFunction.h>
 #include <compiler/tree/nodes/functions/compiler_tree_nodes_functions_Nova_BodyFunction.h>
+#include <compiler/tree/nodes/functions/compiler_tree_nodes_functions_Nova_CallableFunction.h>
 #include <compiler/tree/nodes/functions/compiler_tree_nodes_functions_Nova_FunctionArgumentList.h>
 #include <compiler/tree/nodes/functions/compiler_tree_nodes_functions_Nova_FunctionCall.h>
 #include <compiler/tree/nodes/functions/compiler_tree_nodes_functions_Nova_FunctionDeclaration.h>
@@ -214,6 +215,8 @@ extern compiler_tree_nodes_annotations_vtable_Annotatable compiler_tree_nodes_an
 #include <compiler/tree/nodes/functions/compiler_tree_nodes_functions_Nova_Parameter.h>
 #include <compiler/tree/nodes/functions/compiler_tree_nodes_functions_Nova_ParameterList.h>
 #include <compiler/tree/nodes/functions/compiler_tree_nodes_functions_Nova_PropertyFunction.h>
+#include <compiler/tree/nodes/functions/closures/compiler_tree_nodes_functions_closures_Nova_ClosureContext.h>
+#include <compiler/tree/nodes/functions/closures/compiler_tree_nodes_functions_closures_Nova_ClosureDeclaration.h>
 #include <compiler/tree/nodes/generics/compiler_tree_nodes_generics_Nova_GenericArgument.h>
 #include <compiler/tree/nodes/operations/compiler_tree_nodes_operations_Nova_Assignment.h>
 #include <compiler/tree/nodes/operations/compiler_tree_nodes_operations_Nova_Operation.h>
@@ -300,6 +303,10 @@ struct compiler_tree_nodes_annotations_vtable_Annotatable {
 char x;
 };
 
+struct compiler_tree_nodes_functions_vtable_CallableFunction {
+char x;
+};
+
 
 
 struct NovaClassData {
@@ -316,6 +323,7 @@ compiler_tree_nodes_vtable_Abstractable* compiler_tree_nodes_vtable_Abstractable
 compiler_tree_nodes_vtable_Accessible* compiler_tree_nodes_vtable_Accessible_value;
 compiler_tree_nodes_vtable_Listener* compiler_tree_nodes_vtable_Listener_value;
 compiler_tree_nodes_annotations_vtable_Annotatable* compiler_tree_nodes_annotations_vtable_Annotatable_value;
+compiler_tree_nodes_functions_vtable_CallableFunction* compiler_tree_nodes_functions_vtable_CallableFunction_value;
 
 nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
