@@ -891,6 +891,7 @@ nova_env novaEnv = {
 },
 
 {
+&compiler_tree_nodes_Nova_PlaceholderValue_Nova_writeScope,
 &compiler_tree_nodes_Nova_PlaceholderValue_Nova_construct,
 },
 

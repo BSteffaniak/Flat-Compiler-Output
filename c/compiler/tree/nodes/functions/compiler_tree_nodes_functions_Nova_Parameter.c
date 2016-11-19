@@ -170,7 +170,7 @@ compiler_tree_nodes_functions_Nova_Parameter* compiler_tree_nodes_functions_Nova
 	if (l1_Nova_assignmentIndex > 0 && compiler_util_Nova_CompilerStringFunctions_0_Nova_isStrictlyOperator(input, exceptionData, '=', l1_Nova_assignmentIndex))
 	{
 		l1_Nova_defaultValue = nova_Nova_String_Nova_trim(nova_Nova_String_Nova_substring(input, exceptionData, l1_Nova_assignmentIndex + 1, (intptr_t)nova_null), exceptionData, (intptr_t)nova_null, (intptr_t)nova_null, 0);
-		input = nova_Nova_String_Nova_trim(nova_Nova_String_Nova_substring(input, exceptionData, l1_Nova_assignmentIndex, (intptr_t)nova_null), exceptionData, (intptr_t)nova_null, (intptr_t)nova_null, 0);
+		input = nova_Nova_String_Nova_trim(nova_Nova_String_Nova_substring(input, exceptionData, (intptr_t)nova_null, l1_Nova_assignmentIndex), exceptionData, (intptr_t)nova_null, (intptr_t)nova_null, 0);
 	}
 	l1_Nova_declaration = (compiler_tree_nodes_variables_Nova_LocalDeclaration*)(compiler_tree_nodes_variables_Nova_LocalDeclaration_static_Nova_parse(0, exceptionData, input, parent, location, require));
 	if (l1_Nova_declaration != (compiler_tree_nodes_variables_Nova_LocalDeclaration*)nova_null)
@@ -180,7 +180,6 @@ compiler_tree_nodes_functions_Nova_Parameter* compiler_tree_nodes_functions_Nova
 		l2_Nova_node = compiler_tree_nodes_functions_Nova_Parameter_Nova_construct(0, exceptionData, parent, location);
 		if (l1_Nova_defaultValue != (nova_Nova_String*)nova_null)
 		{
-			nova_io_Nova_Console_static_Nova_log(0, exceptionData, (nova_Nova_Object*)(nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)(nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("def valu: "))), exceptionData, nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)((l1_Nova_defaultValue)), exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)(""))))));
 			l2_Nova_node->compiler_tree_nodes_functions_Nova_Parameter_Nova_defaultValue = (compiler_tree_nodes_Nova_Value*)(compiler_tree_nodes_Nova_PlaceholderValue_static_Nova_parse(0, exceptionData, l1_Nova_defaultValue, (compiler_tree_nodes_Nova_Node*)(l2_Nova_node), location, require));
 		}
 		return (compiler_tree_nodes_functions_Nova_Parameter*)compiler_tree_nodes_Nova_Node_virtual_Nova_cloneTo((compiler_tree_nodes_Nova_Node*)(l1_Nova_declaration), exceptionData, (compiler_tree_nodes_Nova_Node*)(l2_Nova_node));
@@ -190,15 +189,7 @@ compiler_tree_nodes_functions_Nova_Parameter* compiler_tree_nodes_functions_Nova
 
 char compiler_tree_nodes_functions_Nova_Parameter_Nova_parsePlaceholders(compiler_tree_nodes_functions_Nova_Parameter* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
-	if ((nova_Nova_Object*)this->compiler_tree_nodes_functions_Nova_Parameter_Nova_defaultValue != (nova_Nova_Object*)(compiler_tree_nodes_Nova_Value*)nova_null && nova_Nova_Class_Nova_isOfType(this->compiler_tree_nodes_functions_Nova_Parameter_Nova_defaultValue->vtable->classInstance, exceptionData, (nova_Nova_Class*)(compiler_tree_nodes_PlaceholderValue_Extension_VTable_val.classInstance)))
-	{
-		this->compiler_tree_nodes_functions_Nova_Parameter_Nova_defaultValue = compiler_tree_nodes_Nova_Value_1_static_Nova_parse(0, exceptionData, (compiler_tree_nodes_Nova_PlaceholderValue*)this->compiler_tree_nodes_functions_Nova_Parameter_Nova_defaultValue, (intptr_t)nova_null);
-		return this->compiler_tree_nodes_functions_Nova_Parameter_Nova_defaultValue != (compiler_tree_nodes_Nova_Value*)nova_null;
-	}
-	else
-	{
-		return 1;
-	}
+	return (char)(nova_Nova_Class_Nova_isOfType(this->compiler_tree_nodes_functions_Nova_Parameter_Nova_defaultValue->vtable->classInstance, exceptionData, (nova_Nova_Class*)(compiler_tree_nodes_PlaceholderValue_Extension_VTable_val.classInstance)) ? (this->compiler_tree_nodes_functions_Nova_Parameter_Nova_defaultValue = compiler_tree_nodes_Nova_Value_1_static_Nova_parse(0, exceptionData, (compiler_tree_nodes_Nova_PlaceholderValue*)this->compiler_tree_nodes_functions_Nova_Parameter_Nova_defaultValue, (intptr_t)nova_null)) != (compiler_tree_nodes_Nova_Value*)nova_null : 1);
 }
 
 void compiler_tree_nodes_functions_Nova_Parameter_Nova_super(compiler_tree_nodes_functions_Nova_Parameter* this, nova_exception_Nova_ExceptionData* exceptionData)

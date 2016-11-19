@@ -106,7 +106,7 @@ compiler_tree_nodes_Program_Extension_VTable compiler_tree_nodes_Program_Extensi
 
 
 
-char compiler_tree_nodes_Nova_Program_Nova_testLambda31(compiler_tree_nodes_Nova_Program* this, nova_exception_Nova_ExceptionData* exceptionData, compiler_tree_nodes_Nova_NovaFile* _1, Context1* context);
+char compiler_tree_nodes_Nova_Program_Nova_testLambda32(compiler_tree_nodes_Nova_Program* this, nova_exception_Nova_ExceptionData* exceptionData, compiler_tree_nodes_Nova_NovaFile* _1, Context1* context);
 
 
 
@@ -165,12 +165,12 @@ void compiler_tree_nodes_Nova_Program_Nova_addChild(compiler_tree_nodes_Nova_Pro
 
 compiler_tree_nodes_Nova_ClassDeclaration* compiler_tree_nodes_Nova_Program_Nova_getClassDeclaration(compiler_tree_nodes_Nova_Program* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* location)
 {
-	Context1 contextArg31 = 
+	Context1 contextArg32 = 
 	{
 		&location,
 	};
 	
-	return compiler_tree_nodes_Nova_NovaFile_Accessor_Nova_classDeclaration((compiler_tree_nodes_Nova_NovaFile*)(nova_datastruct_list_Nova_List_virtual0_Nova_firstWhere((nova_datastruct_list_Nova_List*)(compiler_tree_nodes_Nova_Program_Accessor_Nova_files(this, exceptionData)), exceptionData, (nova_datastruct_list_Nova_List_closure18_Nova_func)&compiler_tree_nodes_Nova_Program_Nova_testLambda31, this, &contextArg31)), exceptionData);
+	return compiler_tree_nodes_Nova_NovaFile_Accessor_Nova_classDeclaration((compiler_tree_nodes_Nova_NovaFile*)(nova_datastruct_list_Nova_List_virtual0_Nova_firstWhere((nova_datastruct_list_Nova_List*)(compiler_tree_nodes_Nova_Program_Accessor_Nova_files(this, exceptionData)), exceptionData, (nova_datastruct_list_Nova_List_closure18_Nova_func)&compiler_tree_nodes_Nova_Program_Nova_testLambda32, this, &contextArg32)), exceptionData);
 }
 
 nova_Nova_String* compiler_tree_nodes_Nova_Program_Nova_toString(compiler_tree_nodes_Nova_Program* this, nova_exception_Nova_ExceptionData* exceptionData)
@@ -178,7 +178,7 @@ nova_Nova_String* compiler_tree_nodes_Nova_Program_Nova_toString(compiler_tree_n
 	return nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("Program"));
 }
 
-char compiler_tree_nodes_Nova_Program_Nova_testLambda31(compiler_tree_nodes_Nova_Program* this, nova_exception_Nova_ExceptionData* exceptionData, compiler_tree_nodes_Nova_NovaFile* _1, Context1* context)
+char compiler_tree_nodes_Nova_Program_Nova_testLambda32(compiler_tree_nodes_Nova_Program* this, nova_exception_Nova_ExceptionData* exceptionData, compiler_tree_nodes_Nova_NovaFile* _1, Context1* context)
 {
 	return nova_Nova_String_Nova_equals(compiler_tree_nodes_Nova_ClassDeclaration_Accessorfunc_Nova_location(compiler_tree_nodes_Nova_NovaFile_Accessor_Nova_classDeclaration(_1, exceptionData), exceptionData), exceptionData, (*context->compiler_tree_nodes_Nova_Program_Nova_location));
 }

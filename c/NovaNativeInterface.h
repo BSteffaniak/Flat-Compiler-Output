@@ -1920,10 +1920,12 @@ typedef struct compiler_tree_nodes_native_Package
 compiler_tree_nodes_Nova_Package_native_Nova_construct Package;
 } compiler_tree_nodes_native_Package;
 
+typedef nova_Nova_String* (*compiler_tree_nodes_Nova_PlaceholderValue_native_Nova_writeScope)(compiler_tree_nodes_Nova_PlaceholderValue*, nova_exception_Nova_ExceptionData*);
 typedef compiler_tree_nodes_Nova_PlaceholderValue* (*compiler_tree_nodes_Nova_PlaceholderValue_native_Nova_construct)(compiler_tree_nodes_Nova_PlaceholderValue*, nova_exception_Nova_ExceptionData*, compiler_tree_nodes_Nova_Node*, compiler_util_Nova_Location*, nova_Nova_String*);
 
 typedef struct compiler_tree_nodes_native_PlaceholderValue
 {
+compiler_tree_nodes_Nova_PlaceholderValue_native_Nova_writeScope writeScope;
 compiler_tree_nodes_Nova_PlaceholderValue_native_Nova_construct PlaceholderValue;
 } compiler_tree_nodes_native_PlaceholderValue;
 
@@ -2287,14 +2289,14 @@ typedef int (*compiler_util_Nova_CompilerStringFunctions_native0_Nova_findCharIn
 typedef int (*compiler_util_Nova_CompilerStringFunctions_native1_Nova_findCharInBaseScope)(nova_Nova_String*, nova_exception_Nova_ExceptionData*, nova_datastruct_list_Nova_CharArray*, int, int);
 typedef int (*compiler_util_Nova_CompilerStringFunctions_native0_Nova_findStringInBaseScope)(nova_Nova_String*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, int, int, int);
 typedef int (*compiler_util_Nova_CompilerStringFunctions_native1_Nova_findStringInBaseScope)(nova_Nova_String*, nova_exception_Nova_ExceptionData*, nova_datastruct_list_Nova_Array*, int, int, int);
-typedef int (*compiler_util_Nova_CompilerStringFunctions_native_Nova_calculateStatementEnd)(nova_Nova_String*, nova_exception_Nova_ExceptionData*, int, int, int);
-typedef int (*compiler_util_Nova_CompilerStringFunctions_native_Nova_calculateReturnValue)(nova_Nova_String*, nova_exception_Nova_ExceptionData*, int, int, int, int, int);
+typedef int (*compiler_util_Nova_CompilerStringFunctions_native_Nova_calculateStatementEnd)(nova_Nova_String*, nova_exception_Nova_ExceptionData*, int, int);
+typedef int (*compiler_util_Nova_CompilerStringFunctions_native_Nova_calculateReturnValue)(nova_Nova_String*, nova_exception_Nova_ExceptionData*, int, int, int, int);
 typedef compiler_util_Nova_Bounds* (*compiler_util_Nova_CompilerStringFunctions_native1_Nova_nextWordBounds)(nova_Nova_String*, nova_exception_Nova_ExceptionData*, int, int);
 typedef nova_Nova_String* (*compiler_util_Nova_CompilerStringFunctions_native_Nova_findGroupedSymbols)(nova_Nova_String*, nova_exception_Nova_ExceptionData*, int, int);
 typedef nova_Nova_String* (*compiler_util_Nova_CompilerStringFunctions_native_Nova_findGroupedChars)(nova_Nova_String*, nova_exception_Nova_ExceptionData*, nova_datastruct_list_Nova_CharArray*, int, int);
-typedef char (*compiler_util_Nova_CompilerStringFunctions_native_Nova_checkStatementContinuation)(nova_Nova_String*, nova_exception_Nova_ExceptionData*, int, int, int);
-typedef char (*compiler_util_Nova_CompilerStringFunctions_native_Nova_containsUnaryOperator)(nova_Nova_String*, nova_exception_Nova_ExceptionData*, int, int, int, int);
-typedef compiler_util_Nova_Bounds* (*compiler_util_Nova_CompilerStringFunctions_native_Nova_findStrings)(nova_Nova_String*, nova_exception_Nova_ExceptionData*, nova_datastruct_list_Nova_Array*, int, int, nova_datastruct_list_Nova_CharArray*, int);
+typedef char (*compiler_util_Nova_CompilerStringFunctions_native_Nova_checkStatementContinuation)(nova_Nova_String*, nova_exception_Nova_ExceptionData*, int, int);
+typedef char (*compiler_util_Nova_CompilerStringFunctions_native_Nova_containsUnaryOperator)(nova_Nova_String*, nova_exception_Nova_ExceptionData*, int, int, int);
+typedef compiler_util_Nova_Bounds* (*compiler_util_Nova_CompilerStringFunctions_native_Nova_findStrings)(nova_Nova_String*, nova_exception_Nova_ExceptionData*, nova_datastruct_list_Nova_Array*, int, int, nova_datastruct_list_Nova_CharArray*);
 typedef nova_Nova_String* (*compiler_util_Nova_CompilerStringFunctions_native_Nova_searchGenericType)(nova_Nova_String*, nova_exception_Nova_ExceptionData*, int, int);
 typedef int (*compiler_util_Nova_CompilerStringFunctions_native_Nova_findDotOperatorIndex)(nova_Nova_String*, nova_exception_Nova_ExceptionData*, int);
 typedef nova_Nova_String* (*compiler_util_Nova_CompilerStringFunctions_native_Nova_formatIndentation)(nova_Nova_String*, nova_exception_Nova_ExceptionData*);
