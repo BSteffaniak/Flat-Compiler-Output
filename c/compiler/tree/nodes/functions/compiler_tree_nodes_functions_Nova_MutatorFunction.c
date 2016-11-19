@@ -32,6 +32,7 @@
 #include <compiler/tree/nodes/functions/compiler_tree_nodes_functions_Nova_PropertyFunction.h>
 #include <compiler/tree/nodes/functions/compiler_tree_nodes_functions_Nova_BodyFunction.h>
 #include <compiler/tree/nodes/compiler_tree_nodes_Nova_Scope.h>
+#include <compiler/tree/nodes/compiler_tree_nodes_Nova_PlaceholderValue.h>
 #include <compiler/compiler_Nova_SyntaxMessage.h>
 #include <compiler/tree/nodes/functions/compiler_tree_nodes_functions_Nova_FunctionDeclaration.h>
 #include <compiler/tree/compiler_tree_Nova_SyntaxTree.h>
@@ -49,7 +50,6 @@
 #include <compiler/tree/nodes/compiler_tree_nodes_Nova_Import.h>
 #include <compiler/tree/nodes/compiler_tree_nodes_Nova_Literal.h>
 #include <compiler/tree/nodes/compiler_tree_nodes_Nova_NovaFile.h>
-#include <compiler/tree/nodes/compiler_tree_nodes_Nova_PlaceholderValue.h>
 #include <compiler/tree/nodes/annotations/compiler_tree_nodes_annotations_Nova_Annotatable.h>
 #include <compiler/tree/nodes/annotations/compiler_tree_nodes_annotations_Nova_Annotation.h>
 #include <compiler/tree/nodes/exceptionhandling/compiler_tree_nodes_exceptionhandling_Nova_Try.h>
@@ -98,6 +98,7 @@ compiler_tree_nodes_functions_MutatorFunction_Extension_VTable compiler_tree_nod
 	compiler_tree_nodes_functions_Nova_BodyFunction_Nova_addChild,
 	compiler_tree_nodes_functions_Nova_FunctionDeclaration_Nova_findVariableDeclaration,
 	compiler_tree_nodes_functions_Nova_BodyFunction_Nova_parseStatement,
+	compiler_tree_nodes_Nova_Node_Nova_generateTemporaryScopeNode,
 	compiler_tree_nodes_Nova_Node_Nova_replace,
 	compiler_tree_nodes_Nova_Value_Nova_validateTypes,
 	compiler_tree_nodes_functions_Nova_BodyFunction_Nova_parsePlaceholders,

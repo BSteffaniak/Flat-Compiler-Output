@@ -41,6 +41,7 @@ typedef struct compiler_tree_Nova_SyntaxTree compiler_tree_Nova_SyntaxTree;
 #include <nova/datastruct/list/nova_datastruct_list_Nova_List.h>
 #include <compiler/compiler_Nova_SyntaxMessage.h>
 #include <compiler/compiler_Nova_Compiler.h>
+#include <compiler/compiler_Nova_SyntaxErrorException.h>
 #include <compiler/tree/nodes/compiler_tree_nodes_Nova_Program.h>
 #include <compiler/tree/nodes/compiler_tree_nodes_Nova_Node.h>
 #include <compiler/tree/nodes/compiler_tree_nodes_Nova_NovaFile.h>

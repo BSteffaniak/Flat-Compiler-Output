@@ -198,11 +198,13 @@ nova_Nova_String* compiler_tree_Nova_StatementIterator_Accessor_Nova_next(compil
 	if (compiler_tree_Nova_StatementIterator_Accessor_Nova_hasNext(this, exceptionData))
 	{
 		int l2_Nova_prev = 0;
+		char l2_Nova_thing = 0;
 		int l2_Nova_end = 0;
 		
 		l2_Nova_prev = this->compiler_tree_Nova_StatementIterator_Nova_position;
+		l2_Nova_thing = this->compiler_tree_Nova_StatementIterator_Nova_source->nova_Nova_String_Nova_count > l2_Nova_prev + 3 && nova_Nova_String_Nova_equals(nova_Nova_String_Nova_substring(this->compiler_tree_Nova_StatementIterator_Nova_source, exceptionData, l2_Nova_prev, l2_Nova_prev + 3), exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("j++")));
 		this->compiler_tree_Nova_StatementIterator_Nova_position = compiler_util_Nova_CompilerStringFunctions_Nova_nextNonWhitespaceIndex(this->compiler_tree_Nova_StatementIterator_Nova_source, exceptionData, this->compiler_tree_Nova_StatementIterator_Nova_position, (intptr_t)nova_null, (intptr_t)nova_null);
-		this->compiler_tree_Nova_StatementIterator_Nova_position = compiler_util_Nova_CompilerStringFunctions_Nova_calculateStatementEnd(this->compiler_tree_Nova_StatementIterator_Nova_source, exceptionData, this->compiler_tree_Nova_StatementIterator_Nova_position, (intptr_t)nova_null);
+		this->compiler_tree_Nova_StatementIterator_Nova_position = compiler_util_Nova_CompilerStringFunctions_Nova_calculateStatementEnd(this->compiler_tree_Nova_StatementIterator_Nova_source, exceptionData, this->compiler_tree_Nova_StatementIterator_Nova_position, (intptr_t)nova_null, l2_Nova_thing);
 		this->compiler_tree_Nova_StatementIterator_Nova_position = (int)(this->compiler_tree_Nova_StatementIterator_Nova_position < 0 ? this->compiler_tree_Nova_StatementIterator_Nova_source->nova_Nova_String_Nova_count : this->compiler_tree_Nova_StatementIterator_Nova_position);
 		l2_Nova_end = this->compiler_tree_Nova_StatementIterator_Nova_position;
 		compiler_tree_Nova_StatementIterator_Nova_updateScopeProperties(this, exceptionData);

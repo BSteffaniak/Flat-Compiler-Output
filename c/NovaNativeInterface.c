@@ -855,6 +855,7 @@ nova_env novaEnv = {
 &compiler_tree_nodes_Nova_Node_Nova_validate,
 0,
 0,
+0,
 &compiler_tree_nodes_Nova_Node_Nova_clone,
 0,
 0,
@@ -971,6 +972,7 @@ nova_env novaEnv = {
 },
 
 {
+&compiler_tree_nodes_functions_Nova_BodyFunction_Nova_writeBody,
 &compiler_tree_nodes_functions_Nova_BodyFunction_Nova_construct,
 },
 

@@ -132,6 +132,7 @@ compiler_tree_nodes_ClassDeclaration_Extension_VTable compiler_tree_nodes_ClassD
 	compiler_tree_nodes_Nova_ClassDeclaration_Nova_addChild,
 	compiler_tree_nodes_Nova_ClassDeclaration_Nova_findVariableDeclaration,
 	compiler_tree_nodes_Nova_ClassDeclaration_Nova_parseStatement,
+	compiler_tree_nodes_Nova_ClassDeclaration_Nova_generateTemporaryScopeNode,
 	compiler_tree_nodes_Nova_ClassDeclaration_Nova_replace,
 	compiler_tree_nodes_Nova_ClassDeclaration_Nova_validateTypes,
 	compiler_tree_nodes_Nova_ClassDeclaration_Nova_parsePlaceholders,
@@ -301,6 +302,11 @@ compiler_tree_nodes_Nova_Node* compiler_tree_nodes_Nova_ClassDeclaration_Nova_pa
 		}
 	}
 	return l1_Nova_node;
+}
+
+compiler_tree_nodes_Nova_Node* compiler_tree_nodes_Nova_ClassDeclaration_Nova_generateTemporaryScopeNode(compiler_tree_nodes_Nova_ClassDeclaration* this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+	return (compiler_tree_nodes_Nova_Node*)compiler_tree_nodes_functions_Nova_BodyFunction_Nova_construct(0, exceptionData, (compiler_tree_nodes_Nova_Node*)(this), 0);
 }
 
 compiler_tree_nodes_Nova_ClassDeclaration* compiler_tree_nodes_Nova_ClassDeclaration_static_Nova_parse(compiler_tree_nodes_Nova_ClassDeclaration* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* input, compiler_tree_nodes_Nova_Node* parent, compiler_util_Nova_Location* location, int require)
