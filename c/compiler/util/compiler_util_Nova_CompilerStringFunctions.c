@@ -100,6 +100,7 @@ void compiler_util_Nova_CompilerStringFunctions_Nova_testLambda107(nova_Nova_Str
 
 
 
+
 nova_datastruct_list_Nova_CharArray* compiler_util_Nova_CompilerStringFunctions_Nova_WHITESPACE;
 nova_datastruct_list_Nova_CharArray* compiler_util_Nova_CompilerStringFunctions_Nova_EITHER_STATEMENT_END_CHARS;
 nova_datastruct_list_Nova_CharArray* compiler_util_Nova_CompilerStringFunctions_Nova_SYMBOLS_CHARS;
@@ -948,6 +949,12 @@ int compiler_util_Nova_CompilerStringFunctions_1_Nova_findStringInBaseScope(nova
 				char compiler_util_Nova_CompilerStringFunctions_Accessor_Nova_isNumber(nova_Nova_String* this, nova_exception_Nova_ExceptionData* exceptionData)
 				{
 					return this->nova_Nova_String_Nova_count > 0 && nova_Nova_String_Nova_matches(this, exceptionData, nova_regex_Nova_Pattern_Nova_construct(0, exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("-?[0-9]+"))));
+				}
+				
+				
+				char compiler_util_Nova_CompilerStringFunctions_Accessor_Nova_isBool(nova_Nova_String* this, nova_exception_Nova_ExceptionData* exceptionData)
+				{
+					return nova_Nova_String_Nova_equals(this, exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("true"))) || nova_Nova_String_Nova_equals(this, exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("false")));
 				}
 				
 				

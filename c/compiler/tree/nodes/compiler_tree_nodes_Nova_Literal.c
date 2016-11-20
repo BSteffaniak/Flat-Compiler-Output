@@ -186,6 +186,14 @@ nova_Nova_String* compiler_tree_nodes_Nova_Literal_static_Nova_getLiteralType(co
 	{
 		return nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("String"));
 	}
+	else if (input->nova_Nova_String_Nova_count == 3 && nova_Nova_String_Nova_get(input, exceptionData, 0) == '\'' && nova_Nova_String_Nova_get(input, exceptionData, 2) == '\'')
+	{
+		return nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("Char"));
+	}
+	else if (compiler_util_Nova_CompilerStringFunctions_Accessor_Nova_isBool(input, exceptionData))
+	{
+		return nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("Bool"));
+	}
 	else if (compiler_util_Nova_CompilerStringFunctions_Accessor_Nova_isNumber(input, exceptionData))
 	{
 		return nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("Int"));

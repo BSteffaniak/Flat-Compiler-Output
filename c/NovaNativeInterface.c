@@ -816,6 +816,7 @@ nova_env novaEnv = {
 &compiler_tree_nodes_Nova_ClassDeclaration_Nova_writeHeader,
 &compiler_tree_nodes_Nova_ClassDeclaration_Nova_writeExtension,
 &compiler_tree_nodes_Nova_ClassDeclaration_Nova_writeImplementedInterfaces,
+&compiler_tree_nodes_Nova_ClassDeclaration_Nova_writeArrayBracketOverload,
 &compiler_tree_nodes_Nova_ClassDeclaration_Nova_construct,
 },
 
