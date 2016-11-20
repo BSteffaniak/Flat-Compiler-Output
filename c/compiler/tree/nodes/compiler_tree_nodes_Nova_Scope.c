@@ -38,6 +38,7 @@
 #include <compiler/tree/nodes/compiler_tree_nodes_Nova_Node.h>
 #include <compiler/tree/nodes/compiler_tree_nodes_Nova_NodeList.h>
 #include <compiler/tree/nodes/compiler_tree_nodes_Nova_PlaceholderValue.h>
+#include <compiler/tree/nodes/compiler_tree_nodes_Nova_Return.h>
 #include <compiler/tree/nodes/compiler_tree_nodes_Nova_StaticClassReference.h>
 #include <compiler/tree/nodes/compiler_tree_nodes_Nova_Value.h>
 #include <compiler/tree/nodes/annotations/compiler_tree_nodes_annotations_Nova_Annotatable.h>
@@ -192,13 +193,17 @@ compiler_tree_nodes_Nova_Node* compiler_tree_nodes_Nova_Scope_Nova_parseStatemen
 		l1_Nova_node = compiler_tree_nodes_Nova_Scope_Nova_parseIdentifierAccess(this, exceptionData, input, parent, require);
 		if (!(l1_Nova_node != (compiler_tree_nodes_Nova_Node*)nova_null))
 		{
-			l1_Nova_node = (compiler_tree_nodes_Nova_Node*)(compiler_tree_nodes_operations_Nova_Assignment_static_Nova_parse(0, exceptionData, input, parent, location, require));
+			l1_Nova_node = (compiler_tree_nodes_Nova_Node*)(compiler_tree_nodes_Nova_Return_static_Nova_parse(0, exceptionData, input, parent, location, require));
 			if (!(l1_Nova_node != (compiler_tree_nodes_Nova_Node*)nova_null))
 			{
-				l1_Nova_node = (compiler_tree_nodes_Nova_Node*)(compiler_tree_nodes_operations_Nova_Operation_static_Nova_parse(0, exceptionData, input, parent, location, require));
+				l1_Nova_node = (compiler_tree_nodes_Nova_Node*)(compiler_tree_nodes_operations_Nova_Assignment_static_Nova_parse(0, exceptionData, input, parent, location, require));
 				if (!(l1_Nova_node != (compiler_tree_nodes_Nova_Node*)nova_null))
 				{
-					l1_Nova_node = (compiler_tree_nodes_Nova_Node*)(compiler_tree_nodes_Nova_Value_0_static_Nova_parse(0, exceptionData, input, parent, location, require));
+					l1_Nova_node = (compiler_tree_nodes_Nova_Node*)(compiler_tree_nodes_operations_Nova_Operation_static_Nova_parse(0, exceptionData, input, parent, location, require));
+					if (!(l1_Nova_node != (compiler_tree_nodes_Nova_Node*)nova_null))
+					{
+						l1_Nova_node = (compiler_tree_nodes_Nova_Node*)(compiler_tree_nodes_Nova_Value_0_static_Nova_parse(0, exceptionData, input, parent, location, require));
+					}
 				}
 			}
 		}

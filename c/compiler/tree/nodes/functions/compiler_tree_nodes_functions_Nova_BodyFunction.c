@@ -29,6 +29,7 @@
 #include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <compiler/tree/nodes/compiler_tree_nodes_Nova_Node.h>
 #include <compiler/tree/nodes/compiler_tree_nodes_Nova_Scope.h>
+#include <compiler/tree/nodes/compiler_tree_nodes_Nova_Value.h>
 #include <compiler/tree/nodes/compiler_tree_nodes_Nova_PlaceholderValue.h>
 #include <compiler/util/compiler_util_Nova_Location.h>
 #include <compiler/compiler_Nova_SyntaxMessage.h>
@@ -40,7 +41,6 @@
 #include <compiler/tree/nodes/functions/compiler_tree_nodes_functions_Nova_Parameter.h>
 #include <compiler/tree/nodes/functions/compiler_tree_nodes_functions_Nova_ParameterList.h>
 #include <compiler/tree/nodes/compiler_tree_nodes_Nova_Identifier.h>
-#include <compiler/tree/nodes/compiler_tree_nodes_Nova_Value.h>
 #include <compiler/tree/nodes/arrays/compiler_tree_nodes_arrays_Nova_ArrayAccess.h>
 #include <compiler/tree/nodes/operations/compiler_tree_nodes_operations_Nova_Operation.h>
 #include <compiler/tree/nodes/variables/compiler_tree_nodes_variables_Nova_Variable.h>
@@ -118,6 +118,7 @@ compiler_tree_nodes_functions_BodyFunction_Extension_VTable compiler_tree_nodes_
 	compiler_tree_nodes_variables_Nova_InstanceDeclaration_Nova_writeModifiers,
 	compiler_tree_nodes_variables_Nova_InstanceDeclaration_Accessor_Nova_isPublic,
 	compiler_tree_nodes_variables_Nova_InstanceDeclaration_Accessor_Nova_isPrivate,
+	compiler_tree_nodes_functions_Nova_BodyFunction_Nova_writeReturnType,
 };
 
 
@@ -159,6 +160,7 @@ void compiler_tree_nodes_functions_Nova_BodyFunction_Nova_destroy(compiler_tree_
 	
 	compiler_tree_nodes_Nova_Scope_Nova_destroy(&(*this)->compiler_tree_nodes_functions_Nova_BodyFunction_Nova_scope, exceptionData);
 	compiler_tree_nodes_Nova_Node_Nova_destroy(&(*this)->compiler_tree_nodes_functions_Nova_BodyFunction_Nova_inlineBody, exceptionData);
+	
 	
 	NOVA_FREE(*this);
 }
@@ -248,12 +250,36 @@ int compiler_tree_nodes_functions_Nova_BodyFunction_static_Nova_findInlineBodyIn
 	
 	char compiler_tree_nodes_functions_Nova_BodyFunction_Nova_parseInlineBody(compiler_tree_nodes_functions_Nova_BodyFunction* this, nova_exception_Nova_ExceptionData* exceptionData)
 	{
-		return (char)(nova_Nova_Class_Nova_isOfType(this->compiler_tree_nodes_functions_Nova_BodyFunction_Nova_inlineBody->vtable->classInstance, exceptionData, (nova_Nova_Class*)(compiler_tree_nodes_PlaceholderValue_Extension_VTable_val.classInstance)) ? (this->compiler_tree_nodes_functions_Nova_BodyFunction_Nova_inlineBody = (compiler_tree_nodes_Nova_Node*)(compiler_tree_nodes_Nova_Scope_Nova_parseStatement(compiler_tree_nodes_functions_Nova_BodyFunction_Accessorfunc_Nova_scope(this, exceptionData), exceptionData, ((compiler_tree_nodes_Nova_PlaceholderValue*)this->compiler_tree_nodes_functions_Nova_BodyFunction_Nova_inlineBody)->compiler_tree_nodes_Nova_PlaceholderValue_Nova_value, (compiler_tree_nodes_Nova_Node*)(this), this->compiler_tree_nodes_Nova_Node_Nova_location, 1))) != (compiler_tree_nodes_Nova_Node*)nova_null : 1);
+		if (nova_Nova_Class_Nova_isOfType(this->compiler_tree_nodes_functions_Nova_BodyFunction_Nova_inlineBody->vtable->classInstance, exceptionData, (nova_Nova_Class*)(compiler_tree_nodes_PlaceholderValue_Extension_VTable_val.classInstance)))
+		{
+			this->compiler_tree_nodes_functions_Nova_BodyFunction_Nova_inlineBody = (compiler_tree_nodes_Nova_Node*)(compiler_tree_nodes_Nova_Scope_Nova_parseStatement(compiler_tree_nodes_functions_Nova_BodyFunction_Accessorfunc_Nova_scope(this, exceptionData), exceptionData, ((compiler_tree_nodes_Nova_PlaceholderValue*)this->compiler_tree_nodes_functions_Nova_BodyFunction_Nova_inlineBody)->compiler_tree_nodes_Nova_PlaceholderValue_Nova_value, this->compiler_tree_nodes_functions_Nova_BodyFunction_Nova_inlineBody->compiler_tree_nodes_Nova_Node_Nova_parent, 0, (intptr_t)nova_null));
+			if (this->compiler_tree_nodes_functions_Nova_BodyFunction_Nova_inlineBody == (compiler_tree_nodes_Nova_Node*)nova_null)
+			{
+				return 0;
+			}
+			else if (nova_Nova_Class_Nova_isOfType(this->compiler_tree_nodes_functions_Nova_BodyFunction_Nova_inlineBody->vtable->classInstance, exceptionData, (nova_Nova_Class*)(compiler_tree_nodes_Value_Extension_VTable_val.classInstance)))
+			{
+				compiler_tree_nodes_Nova_Type* l3_Nova_type = (compiler_tree_nodes_Nova_Type*)nova_null;
+				
+				l3_Nova_type = ((compiler_tree_nodes_Nova_Value*)this->compiler_tree_nodes_functions_Nova_BodyFunction_Nova_inlineBody)->compiler_tree_nodes_Nova_Value_Nova_type;
+				if (this->compiler_tree_nodes_Nova_Value_Nova_type == (compiler_tree_nodes_Nova_Type*)nova_null)
+				{
+					this->compiler_tree_nodes_Nova_Value_Nova_type = l3_Nova_type;
+					this->compiler_tree_nodes_functions_Nova_BodyFunction_Nova_implicitType = 1;
+				}
+			}
+		}
+		return 1;
 	}
 	
 	char compiler_tree_nodes_functions_Nova_BodyFunction_Nova_parsePlaceholders(compiler_tree_nodes_functions_Nova_BodyFunction* this, nova_exception_Nova_ExceptionData* exceptionData)
 	{
 		return compiler_tree_nodes_functions_Nova_BodyFunction_Nova_parseInlineBody(this, exceptionData) & compiler_tree_nodes_Nova_Scope_Nova_parsePlaceholders(compiler_tree_nodes_functions_Nova_BodyFunction_Accessorfunc_Nova_scope(this, exceptionData), exceptionData) & compiler_tree_nodes_functions_Nova_FunctionDeclaration_Nova_parsePlaceholders(((compiler_tree_nodes_functions_Nova_FunctionDeclaration*)this), exceptionData);
+	}
+	
+	nova_Nova_String* compiler_tree_nodes_functions_Nova_BodyFunction_Nova_writeReturnType(compiler_tree_nodes_functions_Nova_BodyFunction* this, nova_exception_Nova_ExceptionData* exceptionData)
+	{
+		return (nova_Nova_String*)(this->compiler_tree_nodes_functions_Nova_BodyFunction_Nova_implicitType ? nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("")) : compiler_tree_nodes_functions_Nova_FunctionDeclaration_Nova_writeReturnType(((compiler_tree_nodes_functions_Nova_FunctionDeclaration*)this), exceptionData));
 	}
 	
 	nova_Nova_String* compiler_tree_nodes_functions_Nova_BodyFunction_Nova_writeBody(compiler_tree_nodes_functions_Nova_BodyFunction* this, nova_exception_Nova_ExceptionData* exceptionData)
@@ -281,6 +307,8 @@ int compiler_tree_nodes_functions_Nova_BodyFunction_static_Nova_findInlineBodyIn
 	{
 		this->compiler_tree_nodes_functions_Nova_BodyFunction_Nova_scope = (compiler_tree_nodes_Nova_Scope*)nova_null;
 		this->compiler_tree_nodes_functions_Nova_BodyFunction_Nova_inlineBody = (compiler_tree_nodes_Nova_Node*)nova_null;
+		this->compiler_tree_nodes_functions_Nova_BodyFunction_Nova_implicitType = 0;
+		this->compiler_tree_nodes_functions_Nova_BodyFunction_Nova_implicitType = 0;
 	}
 	
 		

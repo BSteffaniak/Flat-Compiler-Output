@@ -391,6 +391,7 @@ int main(int argc, char** argvs)
 		novaEnv.compiler_tree_nodes_Value.writeType = compiler_tree_nodes_Value_Extension_VTable_val.compiler_tree_nodes_Nova_Value_virtual_Nova_writeType;
 		novaEnv.compiler_tree_nodes_annotations_Annotatable.addAnnotation = compiler_tree_nodes_annotations_Annotatable_Extension_VTable_val.itable.compiler_tree_nodes_annotations_Nova_Annotatable_virtual_Nova_addAnnotation;
 		novaEnv.compiler_tree_nodes_functions_CallableFunction.parseParameter = compiler_tree_nodes_functions_CallableFunction_Extension_VTable_val.itable.compiler_tree_nodes_functions_Nova_CallableFunction_virtual_Nova_parseParameter;
+		novaEnv.compiler_tree_nodes_functions_FunctionDeclaration.writeReturnType = compiler_tree_nodes_functions_FunctionDeclaration_Extension_VTable_val.compiler_tree_nodes_functions_Nova_FunctionDeclaration_virtual_Nova_writeReturnType;
 		novaEnv.compiler_tree_nodes_variables_VariableDeclaration.parseModifier = compiler_tree_nodes_variables_VariableDeclaration_Extension_VTable_val.compiler_tree_nodes_variables_Nova_VariableDeclaration_virtual_Nova_parseModifier;
 		novaEnv.compiler_tree_nodes_variables_VariableDeclaration.writeModifiers = compiler_tree_nodes_variables_VariableDeclaration_Extension_VTable_val.compiler_tree_nodes_variables_Nova_VariableDeclaration_virtual_Nova_writeModifiers;
 		
@@ -554,6 +555,7 @@ int main(int argc, char** argvs)
 		compiler_tree_nodes_Package_Extension_VTable_val.classInstance = nova_Nova_Class_Nova_construct(0, exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("compiler/tree/nodes/Package")), 0);
 		compiler_tree_nodes_PlaceholderValue_Extension_VTable_val.classInstance = nova_Nova_Class_Nova_construct(0, exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("compiler/tree/nodes/PlaceholderValue")), 0);
 		compiler_tree_nodes_Program_Extension_VTable_val.classInstance = nova_Nova_Class_Nova_construct(0, exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("compiler/tree/nodes/Program")), 0);
+		compiler_tree_nodes_Return_Extension_VTable_val.classInstance = nova_Nova_Class_Nova_construct(0, exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("compiler/tree/nodes/Return")), 0);
 		compiler_tree_nodes_Scope_Extension_VTable_val.classInstance = nova_Nova_Class_Nova_construct(0, exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("compiler/tree/nodes/Scope")), 0);
 		compiler_tree_nodes_Skeleton_Extension_VTable_val.classInstance = nova_Nova_Class_Nova_construct(0, exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("compiler/tree/nodes/Skeleton")), 0);
 		compiler_tree_nodes_StaticClassReference_Extension_VTable_val.classInstance = nova_Nova_Class_Nova_construct(0, exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("compiler/tree/nodes/StaticClassReference")), 0);
@@ -782,6 +784,7 @@ int main(int argc, char** argvs)
 		compiler_tree_nodes_Package_Extension_VTable_val.classInstance->nova_Nova_Class_Nova_extension = compiler_tree_nodes_Node_Extension_VTable_val.classInstance;
 		compiler_tree_nodes_PlaceholderValue_Extension_VTable_val.classInstance->nova_Nova_Class_Nova_extension = compiler_tree_nodes_Value_Extension_VTable_val.classInstance;
 		compiler_tree_nodes_Program_Extension_VTable_val.classInstance->nova_Nova_Class_Nova_extension = compiler_tree_nodes_NodeList_Extension_VTable_val.classInstance;
+		compiler_tree_nodes_Return_Extension_VTable_val.classInstance->nova_Nova_Class_Nova_extension = compiler_tree_nodes_Node_Extension_VTable_val.classInstance;
 		compiler_tree_nodes_Scope_Extension_VTable_val.classInstance->nova_Nova_Class_Nova_extension = compiler_tree_nodes_NodeList_Extension_VTable_val.classInstance;
 		compiler_tree_nodes_Skeleton_Extension_VTable_val.classInstance->nova_Nova_Class_Nova_extension = compiler_tree_nodes_Node_Extension_VTable_val.classInstance;
 		compiler_tree_nodes_StaticClassReference_Extension_VTable_val.classInstance->nova_Nova_Class_Nova_extension = compiler_tree_nodes_Identifier_Extension_VTable_val.classInstance;
@@ -989,6 +992,7 @@ int main(int argc, char** argvs)
 		compiler_tree_nodes_Nova_Package_Nova_init_static(exceptionData);
 		compiler_tree_nodes_Nova_PlaceholderValue_Nova_init_static(exceptionData);
 		compiler_tree_nodes_Nova_Program_Nova_init_static(exceptionData);
+		compiler_tree_nodes_Nova_Return_Nova_init_static(exceptionData);
 		compiler_tree_nodes_Nova_Scope_Nova_init_static(exceptionData);
 		compiler_tree_nodes_Nova_Skeleton_Nova_init_static(exceptionData);
 		compiler_tree_nodes_Nova_StaticClassReference_Nova_init_static(exceptionData);

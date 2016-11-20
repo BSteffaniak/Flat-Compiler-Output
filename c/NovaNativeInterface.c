@@ -903,6 +903,11 @@ nova_env novaEnv = {
 },
 
 {
+&compiler_tree_nodes_Nova_Return_Nova_writeValue,
+&compiler_tree_nodes_Nova_Return_Nova_construct,
+},
+
+{
 &compiler_tree_nodes_Nova_Scope_Nova_parseAccessible,
 &compiler_tree_nodes_Nova_Scope_Nova_construct,
 },
@@ -988,7 +993,7 @@ nova_env novaEnv = {
 {
 &compiler_tree_nodes_functions_Nova_FunctionDeclaration_Nova_parseSignature,
 &compiler_tree_nodes_functions_Nova_FunctionDeclaration_Nova_writeHeader,
-&compiler_tree_nodes_functions_Nova_FunctionDeclaration_Nova_writeReturnType,
+0,
 &compiler_tree_nodes_functions_Nova_FunctionDeclaration_Nova_construct,
 },
 

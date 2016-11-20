@@ -161,6 +161,7 @@
 #include <compiler/tree/nodes/compiler_tree_nodes_Nova_Package.h>
 #include <compiler/tree/nodes/compiler_tree_nodes_Nova_PlaceholderValue.h>
 #include <compiler/tree/nodes/compiler_tree_nodes_Nova_Program.h>
+#include <compiler/tree/nodes/compiler_tree_nodes_Nova_Return.h>
 #include <compiler/tree/nodes/compiler_tree_nodes_Nova_Scope.h>
 #include <compiler/tree/nodes/compiler_tree_nodes_Nova_Skeleton.h>
 #include <compiler/tree/nodes/compiler_tree_nodes_Nova_StaticClassReference.h>
@@ -1944,6 +1945,16 @@ compiler_tree_nodes_Nova_Program_native_Nova_getClassDeclaration getClassDeclara
 compiler_tree_nodes_Nova_Program_native_Nova_construct Program;
 } compiler_tree_nodes_native_Program;
 
+typedef compiler_tree_nodes_Nova_Return* (*compiler_tree_nodes_Nova_Return_native_static_Nova_parse)(compiler_tree_nodes_Nova_Return*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, compiler_tree_nodes_Nova_Node*, compiler_util_Nova_Location*, int);
+typedef nova_Nova_String* (*compiler_tree_nodes_Nova_Return_native_Nova_writeValue)(compiler_tree_nodes_Nova_Return*, nova_exception_Nova_ExceptionData*);
+typedef compiler_tree_nodes_Nova_Return* (*compiler_tree_nodes_Nova_Return_native_Nova_construct)(compiler_tree_nodes_Nova_Return*, nova_exception_Nova_ExceptionData*, compiler_tree_nodes_Nova_Node*, compiler_util_Nova_Location*, compiler_tree_nodes_Nova_Value*);
+
+typedef struct compiler_tree_nodes_native_Return
+{
+compiler_tree_nodes_Nova_Return_native_Nova_writeValue writeValue;
+compiler_tree_nodes_Nova_Return_native_Nova_construct Return;
+} compiler_tree_nodes_native_Return;
+
 typedef compiler_tree_nodes_Nova_Accessible* (*compiler_tree_nodes_Nova_Scope_native_Nova_parseAccessible)(compiler_tree_nodes_Nova_Scope*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, compiler_tree_nodes_Nova_Node*, int);
 typedef compiler_tree_nodes_Nova_Scope* (*compiler_tree_nodes_Nova_Scope_native_Nova_construct)(compiler_tree_nodes_Nova_Scope*, nova_exception_Nova_ExceptionData*, compiler_tree_nodes_Nova_Node*, compiler_util_Nova_Location*);
 
@@ -2592,6 +2603,7 @@ compiler_tree_nodes_native_NovaInterface compiler_tree_nodes_NovaInterface;
 compiler_tree_nodes_native_Package compiler_tree_nodes_Package;
 compiler_tree_nodes_native_PlaceholderValue compiler_tree_nodes_PlaceholderValue;
 compiler_tree_nodes_native_Program compiler_tree_nodes_Program;
+compiler_tree_nodes_native_Return compiler_tree_nodes_Return;
 compiler_tree_nodes_native_Scope compiler_tree_nodes_Scope;
 compiler_tree_nodes_native_Skeleton compiler_tree_nodes_Skeleton;
 compiler_tree_nodes_native_StaticClassReference compiler_tree_nodes_StaticClassReference;

@@ -42,6 +42,7 @@ typedef struct compiler_tree_nodes_functions_Nova_MutatorFunction compiler_tree_
 #include <compiler/tree/nodes/functions/compiler_tree_nodes_functions_Nova_PropertyFunction.h>
 #include <compiler/tree/nodes/functions/compiler_tree_nodes_functions_Nova_BodyFunction.h>
 #include <compiler/tree/nodes/compiler_tree_nodes_Nova_Scope.h>
+#include <compiler/tree/nodes/compiler_tree_nodes_Nova_Value.h>
 #include <compiler/tree/nodes/compiler_tree_nodes_Nova_PlaceholderValue.h>
 #include <compiler/compiler_Nova_SyntaxMessage.h>
 #include <compiler/tree/nodes/functions/compiler_tree_nodes_functions_Nova_FunctionDeclaration.h>
@@ -52,7 +53,6 @@ typedef struct compiler_tree_nodes_functions_Nova_MutatorFunction compiler_tree_
 #include <compiler/tree/nodes/functions/compiler_tree_nodes_functions_Nova_Parameter.h>
 #include <compiler/tree/nodes/functions/compiler_tree_nodes_functions_Nova_ParameterList.h>
 #include <compiler/tree/nodes/compiler_tree_nodes_Nova_Identifier.h>
-#include <compiler/tree/nodes/compiler_tree_nodes_Nova_Value.h>
 #include <compiler/tree/nodes/arrays/compiler_tree_nodes_arrays_Nova_ArrayAccess.h>
 #include <compiler/tree/nodes/operations/compiler_tree_nodes_operations_Nova_Operation.h>
 #include <compiler/tree/nodes/variables/compiler_tree_nodes_variables_Nova_Variable.h>
@@ -99,6 +99,7 @@ struct compiler_tree_nodes_functions_MutatorFunction_Extension_VTable
 	nova_Nova_String* (*compiler_tree_nodes_variables_Nova_VariableDeclaration_virtual_Nova_writeModifiers)(compiler_tree_nodes_variables_Nova_InstanceDeclaration*, nova_exception_Nova_ExceptionData*);
 	char (*compiler_tree_nodes_variables_Nova_InstanceDeclaration_virtual_Accessor_Nova_isPublic)(compiler_tree_nodes_variables_Nova_InstanceDeclaration*, nova_exception_Nova_ExceptionData*);
 	char (*compiler_tree_nodes_variables_Nova_InstanceDeclaration_virtual_Accessor_Nova_isPrivate)(compiler_tree_nodes_variables_Nova_InstanceDeclaration*, nova_exception_Nova_ExceptionData*);
+	nova_Nova_String* (*compiler_tree_nodes_functions_Nova_FunctionDeclaration_virtual_Nova_writeReturnType)(compiler_tree_nodes_functions_Nova_BodyFunction*, nova_exception_Nova_ExceptionData*);
 };
 
 extern compiler_tree_nodes_functions_MutatorFunction_Extension_VTable compiler_tree_nodes_functions_MutatorFunction_Extension_VTable_val;
@@ -118,8 +119,10 @@ CCLASS_CLASS
 	char compiler_tree_nodes_variables_Nova_InstanceDeclaration_Nova_isStatic;
 	nova_Nova_String* compiler_tree_nodes_variables_Nova_InstanceDeclaration_Nova_visibility;
 	compiler_tree_nodes_functions_Nova_ParameterList* compiler_tree_nodes_functions_Nova_FunctionDeclaration_Nova_parameterList;
+	compiler_tree_nodes_functions_Nova_Parameter* compiler_tree_nodes_functions_Nova_FunctionDeclaration_Nova_objectReference;
 	compiler_tree_nodes_Nova_Scope* compiler_tree_nodes_functions_Nova_BodyFunction_Nova_scope;
 	compiler_tree_nodes_Nova_Node* compiler_tree_nodes_functions_Nova_BodyFunction_Nova_inlineBody;
+	char compiler_tree_nodes_functions_Nova_BodyFunction_Nova_implicitType;
 )
 
 void compiler_tree_nodes_functions_Nova_MutatorFunction_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData);
