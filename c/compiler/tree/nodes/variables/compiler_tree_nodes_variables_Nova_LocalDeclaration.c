@@ -86,6 +86,8 @@ compiler_tree_nodes_variables_LocalDeclaration_Extension_VTable compiler_tree_no
 		0,
 		0,
 		(void(*)(compiler_tree_nodes_annotations_Nova_Annotatable*, nova_exception_Nova_ExceptionData*, compiler_tree_nodes_annotations_Nova_Annotation*))compiler_tree_nodes_Nova_Node_Nova_addAnnotation,
+		0,
+		0,
 	},
 	compiler_tree_nodes_Nova_Node_Nova_toString,
 	nova_Nova_Object_Accessor_Nova_hashCodeLong,
@@ -96,7 +98,7 @@ compiler_tree_nodes_variables_LocalDeclaration_Extension_VTable compiler_tree_no
 	compiler_tree_nodes_Nova_Node_Nova_replace,
 	compiler_tree_nodes_Nova_Value_Nova_validateTypes,
 	compiler_tree_nodes_Nova_Node_Nova_parsePlaceholders,
-	compiler_tree_nodes_variables_Nova_VariableDeclaration_Nova_cloneTo,
+	compiler_tree_nodes_variables_Nova_LocalDeclaration_Nova_cloneTo,
 	compiler_tree_nodes_variables_Nova_VariableDeclaration_Nova_toNova,
 	compiler_tree_nodes_Nova_Node_Accessor_Nova_program,
 	compiler_tree_nodes_Nova_Node_Accessor_Nova_parentFile,
@@ -105,6 +107,8 @@ compiler_tree_nodes_variables_LocalDeclaration_Extension_VTable compiler_tree_no
 	compiler_tree_nodes_Nova_Node_Accessor_Nova_parentClass,
 	compiler_tree_nodes_Nova_Node_Accessor_Nova_scope,
 	compiler_tree_nodes_variables_Nova_LocalDeclaration_static_Nova_parse,
+	compiler_tree_nodes_Nova_Value_Nova_parseType,
+	compiler_tree_nodes_Nova_Value_Nova_writeType,
 	compiler_tree_nodes_Nova_Value_Accessor_Nova_isAssignable,
 	compiler_tree_nodes_variables_Nova_VariableDeclaration_Nova_parseModifier,
 	compiler_tree_nodes_variables_Nova_VariableDeclaration_Nova_writeModifiers,
@@ -169,6 +173,12 @@ compiler_tree_nodes_variables_Nova_LocalDeclaration* compiler_tree_nodes_variabl
 		return (compiler_tree_nodes_variables_Nova_LocalDeclaration*)compiler_tree_nodes_Nova_Node_virtual_Nova_cloneTo((compiler_tree_nodes_Nova_Node*)(l1_Nova_declaration), exceptionData, (compiler_tree_nodes_Nova_Node*)(l1_Nova_node));
 	}
 	return (compiler_tree_nodes_variables_Nova_LocalDeclaration*)(nova_Nova_Object*)nova_null;
+}
+
+compiler_tree_nodes_variables_Nova_LocalDeclaration* compiler_tree_nodes_variables_Nova_LocalDeclaration_Nova_cloneTo(compiler_tree_nodes_variables_Nova_LocalDeclaration* this, nova_exception_Nova_ExceptionData* exceptionData, compiler_tree_nodes_variables_Nova_LocalDeclaration* other)
+{
+	compiler_tree_nodes_variables_Nova_VariableDeclaration_Nova_cloneTo(((compiler_tree_nodes_variables_Nova_VariableDeclaration*)this), exceptionData, (compiler_tree_nodes_variables_Nova_VariableDeclaration*)(other));
+	return other;
 }
 
 void compiler_tree_nodes_variables_Nova_LocalDeclaration_Nova_super(compiler_tree_nodes_variables_Nova_LocalDeclaration* this, nova_exception_Nova_ExceptionData* exceptionData)

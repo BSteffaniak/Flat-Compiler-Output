@@ -85,6 +85,8 @@ compiler_util_CompilerStringFunctions_Extension_VTable compiler_util_CompilerStr
 		0,
 		0,
 		0,
+		0,
+		0,
 	},
 };
 

@@ -65,6 +65,8 @@ compiler_util_Location_Extension_VTable compiler_util_Location_Extension_VTable_
 		0,
 		0,
 		0,
+		0,
+		0,
 	},
 	compiler_util_Nova_Location_Nova_toString,
 	nova_Nova_Object_Accessor_Nova_hashCodeLong,

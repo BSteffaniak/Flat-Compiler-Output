@@ -126,6 +126,8 @@ compiler_tree_nodes_ClassDeclaration_Extension_VTable compiler_tree_nodes_ClassD
 		0,
 		0,
 		(void(*)(compiler_tree_nodes_annotations_Nova_Annotatable*, nova_exception_Nova_ExceptionData*, compiler_tree_nodes_annotations_Nova_Annotation*))compiler_tree_nodes_Nova_Node_Nova_addAnnotation,
+		0,
+		0,
 	},
 	compiler_tree_nodes_Nova_ClassDeclaration_Nova_toString,
 	nova_Nova_Object_Accessor_Nova_hashCodeLong,
@@ -145,6 +147,8 @@ compiler_tree_nodes_ClassDeclaration_Extension_VTable compiler_tree_nodes_ClassD
 	compiler_tree_nodes_Nova_ClassDeclaration_Accessor_Nova_parentClass,
 	compiler_tree_nodes_Nova_Node_Accessor_Nova_scope,
 	compiler_tree_nodes_Nova_ClassDeclaration_static_Nova_parse,
+	compiler_tree_nodes_Nova_Value_Nova_parseType,
+	compiler_tree_nodes_Nova_Value_Nova_writeType,
 	compiler_tree_nodes_Nova_Value_Accessor_Nova_isAssignable,
 	compiler_tree_nodes_Nova_ClassDeclaration_Nova_parseModifier,
 	compiler_tree_nodes_Nova_ClassDeclaration_Nova_writeModifiers,
@@ -520,7 +524,7 @@ nova_Nova_String* compiler_tree_nodes_Nova_ClassDeclaration_Nova_toString(compil
 
 char compiler_tree_nodes_Nova_ClassDeclaration_Nova_testLambda16(compiler_tree_nodes_Nova_ClassDeclaration* this, nova_exception_Nova_ExceptionData* exceptionData, compiler_tree_nodes_functions_Nova_FunctionDeclaration* func, int _2, nova_datastruct_list_Nova_Array* _3, Context1* context)
 {
-	return nova_Nova_String_Nova_equals(func->compiler_tree_nodes_Nova_Identifier_Nova_name, exceptionData, (*context->compiler_tree_nodes_Nova_ClassDeclaration_Nova_name)) && ((nova_Nova_Object*)(*context->compiler_tree_nodes_Nova_ClassDeclaration_Nova_argumentTypes) == (nova_Nova_Object*)(nova_datastruct_list_Nova_Array*)nova_null || compiler_tree_nodes_functions_Nova_FunctionDeclaration_Nova_compatibleArguments(func, exceptionData, (*context->compiler_tree_nodes_Nova_ClassDeclaration_Nova_argumentTypes)));
+	return nova_Nova_String_Nova_equals(func->compiler_tree_nodes_Nova_Identifier_Nova_name, exceptionData, (*context->compiler_tree_nodes_Nova_ClassDeclaration_Nova_name)) && ((nova_Nova_Object*)(*context->compiler_tree_nodes_Nova_ClassDeclaration_Nova_argumentTypes) == (nova_Nova_Object*)(nova_datastruct_list_Nova_Array*)nova_null || compiler_tree_nodes_functions_Nova_CallableFunction_Nova_compatibleArguments((compiler_tree_nodes_functions_Nova_CallableFunction*)(func), exceptionData, (*context->compiler_tree_nodes_Nova_ClassDeclaration_Nova_argumentTypes)));
 }
 
 char compiler_tree_nodes_Nova_ClassDeclaration_Nova_testLambda17(compiler_tree_nodes_Nova_ClassDeclaration* this, nova_exception_Nova_ExceptionData* exceptionData, compiler_tree_nodes_variables_Nova_FieldDeclaration* _1, int _2, nova_datastruct_list_Nova_List* _3, Context2* context)

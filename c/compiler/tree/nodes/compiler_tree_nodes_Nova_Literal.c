@@ -86,8 +86,10 @@ compiler_tree_nodes_Literal_Extension_VTable compiler_tree_nodes_Literal_Extensi
 		(compiler_tree_nodes_Nova_Accessible*(*)(compiler_tree_nodes_Nova_Accessible*, nova_exception_Nova_ExceptionData*, compiler_tree_nodes_Nova_Accessible*))compiler_tree_nodes_Nova_Accessible_Mutator_Nova_accessedNode,
 		(compiler_tree_nodes_Nova_Accessible*(*)(compiler_tree_nodes_Nova_Accessible*, nova_exception_Nova_ExceptionData*))compiler_tree_nodes_Nova_Accessible_Accessor_Nova_accessedNode,
 		(void(*)(compiler_tree_nodes_annotations_Nova_Annotatable*, nova_exception_Nova_ExceptionData*, compiler_tree_nodes_annotations_Nova_Annotation*))compiler_tree_nodes_Nova_Node_Nova_addAnnotation,
+		0,
+		0,
 	},
-	compiler_tree_nodes_Nova_Literal_Nova_toString,
+	compiler_tree_nodes_Nova_Node_Nova_toString,
 	nova_Nova_Object_Accessor_Nova_hashCodeLong,
 	compiler_tree_nodes_Nova_Node_Nova_addChild,
 	compiler_tree_nodes_Nova_Node_Nova_findVariableDeclaration,
@@ -97,7 +99,7 @@ compiler_tree_nodes_Literal_Extension_VTable compiler_tree_nodes_Literal_Extensi
 	compiler_tree_nodes_Nova_Value_Nova_validateTypes,
 	compiler_tree_nodes_Nova_Node_Nova_parsePlaceholders,
 	compiler_tree_nodes_Nova_Value_Nova_cloneTo,
-	compiler_tree_nodes_Nova_Node_Nova_toNova,
+	compiler_tree_nodes_Nova_Literal_Nova_toNova,
 	compiler_tree_nodes_Nova_Node_Accessor_Nova_program,
 	compiler_tree_nodes_Nova_Node_Accessor_Nova_parentFile,
 	compiler_tree_nodes_Nova_Node_Accessor_Nova_parentFunction,
@@ -105,6 +107,8 @@ compiler_tree_nodes_Literal_Extension_VTable compiler_tree_nodes_Literal_Extensi
 	compiler_tree_nodes_Nova_Node_Accessor_Nova_parentClass,
 	compiler_tree_nodes_Nova_Node_Accessor_Nova_scope,
 	compiler_tree_nodes_Nova_Literal_static_Nova_parse,
+	compiler_tree_nodes_Nova_Value_Nova_parseType,
+	compiler_tree_nodes_Nova_Value_Nova_writeType,
 	compiler_tree_nodes_Nova_Value_Accessor_Nova_isAssignable,
 };
 
@@ -197,7 +201,7 @@ char compiler_tree_nodes_Nova_Literal_Nova_formatValue(compiler_tree_nodes_Nova_
 	return 1;
 }
 
-nova_Nova_String* compiler_tree_nodes_Nova_Literal_Nova_toString(compiler_tree_nodes_Nova_Literal* this, nova_exception_Nova_ExceptionData* exceptionData)
+nova_Nova_String* compiler_tree_nodes_Nova_Literal_Nova_toNova(compiler_tree_nodes_Nova_Literal* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
 	return this->compiler_tree_nodes_Nova_Literal_Nova_value;
 }

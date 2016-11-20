@@ -924,9 +924,9 @@ nova_env novaEnv = {
 },
 
 {
-&compiler_tree_nodes_Nova_Value_Nova_parseType,
+0,
 &compiler_tree_nodes_Nova_Value_Nova_invalidTypeError,
-&compiler_tree_nodes_Nova_Value_Nova_writeType,
+0,
 &compiler_tree_nodes_Nova_Value_Nova_construct,
 },
 
@@ -970,6 +970,10 @@ nova_env novaEnv = {
 },
 
 {
+0,
+&compiler_tree_nodes_functions_Nova_CallableFunction_Nova_parseParameterAndAnnotations,
+&compiler_tree_nodes_functions_Nova_CallableFunction_Nova_parseParameters,
+&compiler_tree_nodes_functions_Nova_CallableFunction_Nova_compatibleArguments,
 },
 
 {
@@ -981,10 +985,7 @@ nova_env novaEnv = {
 },
 
 {
-&compiler_tree_nodes_functions_Nova_FunctionDeclaration_Nova_compatibleArguments,
 &compiler_tree_nodes_functions_Nova_FunctionDeclaration_Nova_parseSignature,
-&compiler_tree_nodes_functions_Nova_FunctionDeclaration_Nova_parseParameter,
-&compiler_tree_nodes_functions_Nova_FunctionDeclaration_Nova_parseParameters,
 &compiler_tree_nodes_functions_Nova_FunctionDeclaration_Nova_writeHeader,
 &compiler_tree_nodes_functions_Nova_FunctionDeclaration_Nova_writeReturnType,
 &compiler_tree_nodes_functions_Nova_FunctionDeclaration_Nova_construct,
@@ -1012,6 +1013,10 @@ nova_env novaEnv = {
 
 {
 &compiler_tree_nodes_functions_closures_Nova_ClosureDeclaration_Nova_construct,
+},
+
+{
+&compiler_tree_nodes_functions_closures_Nova_ClosureParameter_Nova_construct,
 },
 
 {
