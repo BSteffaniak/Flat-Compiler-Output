@@ -27,11 +27,12 @@
 #include <nova/nova_Nova_System.h>
 #include <nova/nova_Nova_Class.h>
 #include <nova/regex/nova_regex_Nova_Pattern.h>
-#include <compiler/tree/nodes/annotations/compiler_tree_nodes_annotations_Nova_Annotation.h>
+#include <compiler/tree/nodes/compiler_tree_nodes_Nova_Value.h>
+#include <compiler/tree/nodes/variables/compiler_tree_nodes_variables_Nova_VariableDeclaration.h>
 
 
 
-compiler_tree_nodes_annotations_Annotatable_Extension_VTable compiler_tree_nodes_annotations_Annotatable_Extension_VTable_val =
+compiler_tree_nodes_operations_Assignable_Extension_VTable compiler_tree_nodes_operations_Assignable_Extension_VTable_val =
 {
 	0,
 	{
@@ -65,20 +66,27 @@ compiler_tree_nodes_annotations_Annotatable_Extension_VTable compiler_tree_nodes
 		0,
 		0,
 		0,
-		0,
+		(void(*)(compiler_tree_nodes_operations_Nova_Assignable*, nova_exception_Nova_ExceptionData*, compiler_tree_nodes_Nova_Value*))compiler_tree_nodes_operations_Nova_Assignable_Nova_onAssigned,
 	},
 };
 
 
-void compiler_tree_nodes_annotations_Nova_Annotatable_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData)
+void compiler_tree_nodes_operations_Nova_Assignable_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData)
 {
 	{
 	}
 }
 
-
-void compiler_tree_nodes_annotations_Nova_Annotatable_virtual_Nova_addAnnotation(compiler_tree_nodes_annotations_Nova_Annotatable* this, nova_exception_Nova_ExceptionData* exceptionData, compiler_tree_nodes_annotations_Nova_Annotation* annotation)
+void compiler_tree_nodes_operations_Nova_Assignable_Nova_onAssigned(compiler_tree_nodes_operations_Nova_Assignable* this, nova_exception_Nova_ExceptionData* exceptionData, compiler_tree_nodes_Nova_Value* value)
 {
-	this->vtable->itable.compiler_tree_nodes_annotations_Nova_Annotatable_virtual_Nova_addAnnotation((compiler_tree_nodes_annotations_Nova_Annotatable*)(this), exceptionData, annotation);
+}
+
+void compiler_tree_nodes_operations_Nova_Assignable_Nova_onAssignedTo(compiler_tree_nodes_operations_Nova_Assignable* this, nova_exception_Nova_ExceptionData* exceptionData, compiler_tree_nodes_variables_Nova_VariableDeclaration* declaration)
+{
+}
+
+void compiler_tree_nodes_operations_Nova_Assignable_virtual_Nova_onAssigned(compiler_tree_nodes_operations_Nova_Assignable* this, nova_exception_Nova_ExceptionData* exceptionData, compiler_tree_nodes_Nova_Value* value)
+{
+	this->vtable->itable.compiler_tree_nodes_operations_Nova_Assignable_virtual_Nova_onAssigned((compiler_tree_nodes_operations_Nova_Assignable*)(this), exceptionData, value);
 }
 

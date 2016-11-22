@@ -28,6 +28,7 @@
 #include <nova/nova_Nova_Class.h>
 #include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <compiler/tree/nodes/compiler_tree_nodes_Nova_Node.h>
+#include <compiler/tree/nodes/operations/compiler_tree_nodes_operations_Nova_Assignable.h>
 #include <compiler/util/compiler_util_Nova_Location.h>
 #include <compiler/tree/nodes/variables/compiler_tree_nodes_variables_Nova_VariableDeclaration.h>
 #include <compiler/tree/nodes/compiler_tree_nodes_Nova_Identifier.h>
@@ -88,6 +89,7 @@ compiler_tree_nodes_variables_LocalDeclaration_Extension_VTable compiler_tree_no
 		(void(*)(compiler_tree_nodes_annotations_Nova_Annotatable*, nova_exception_Nova_ExceptionData*, compiler_tree_nodes_annotations_Nova_Annotation*))compiler_tree_nodes_Nova_Node_Nova_addAnnotation,
 		0,
 		0,
+		(void(*)(compiler_tree_nodes_operations_Nova_Assignable*, nova_exception_Nova_ExceptionData*, compiler_tree_nodes_Nova_Value*))compiler_tree_nodes_operations_Nova_Assignable_Nova_onAssigned,
 	},
 	compiler_tree_nodes_Nova_Node_Nova_toString,
 	nova_Nova_Object_Accessor_Nova_hashCodeLong,
@@ -109,10 +111,14 @@ compiler_tree_nodes_variables_LocalDeclaration_Extension_VTable compiler_tree_no
 	compiler_tree_nodes_variables_Nova_LocalDeclaration_static_Nova_parse,
 	compiler_tree_nodes_Nova_Value_Nova_parseType,
 	compiler_tree_nodes_Nova_Value_Nova_writeType,
+	compiler_tree_nodes_Nova_Value_Accessorfunc_Nova_type,
 	compiler_tree_nodes_Nova_Value_Accessor_Nova_isAssignable,
 	compiler_tree_nodes_variables_Nova_VariableDeclaration_Nova_parseModifier,
 	compiler_tree_nodes_variables_Nova_VariableDeclaration_Nova_writeModifiers,
+	compiler_tree_nodes_variables_Nova_LocalDeclaration_Accessor_Nova_isImplicit,
 };
+
+
 
 
 void compiler_tree_nodes_variables_Nova_LocalDeclaration_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData)
@@ -181,7 +187,18 @@ compiler_tree_nodes_variables_Nova_LocalDeclaration* compiler_tree_nodes_variabl
 	return other;
 }
 
+char compiler_tree_nodes_variables_Nova_LocalDeclaration_Accessor_Nova_isImplicit(compiler_tree_nodes_variables_Nova_LocalDeclaration* this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+	return 0;
+}
+
+
 void compiler_tree_nodes_variables_Nova_LocalDeclaration_Nova_super(compiler_tree_nodes_variables_Nova_LocalDeclaration* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
+}
+
+char compiler_tree_nodes_variables_Nova_LocalDeclaration_virtual_Accessor_Nova_isImplicit(compiler_tree_nodes_variables_Nova_LocalDeclaration* this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+	return this->vtable->compiler_tree_nodes_variables_Nova_LocalDeclaration_virtual_Accessor_Nova_isImplicit((compiler_tree_nodes_variables_Nova_LocalDeclaration*)(this), exceptionData);
 }
 

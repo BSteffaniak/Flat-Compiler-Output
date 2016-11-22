@@ -34,6 +34,7 @@
 #include <compiler/tree/nodes/functions/closures/compiler_tree_nodes_functions_closures_Nova_ClosureDeclaration.h>
 #include <compiler/util/compiler_util_Nova_Location.h>
 #include <compiler/tree/nodes/functions/compiler_tree_nodes_functions_Nova_ParameterList.h>
+#include <compiler/tree/nodes/operations/compiler_tree_nodes_operations_Nova_Assignable.h>
 #include <compiler/tree/nodes/variables/compiler_tree_nodes_variables_Nova_VariableDeclaration.h>
 #include <compiler/tree/nodes/compiler_tree_nodes_Nova_Identifier.h>
 #include <compiler/compiler_Nova_SyntaxMessage.h>
@@ -91,6 +92,7 @@ compiler_tree_nodes_functions_Parameter_Extension_VTable compiler_tree_nodes_fun
 		(void(*)(compiler_tree_nodes_annotations_Nova_Annotatable*, nova_exception_Nova_ExceptionData*, compiler_tree_nodes_annotations_Nova_Annotation*))compiler_tree_nodes_Nova_Node_Nova_addAnnotation,
 		0,
 		0,
+		(void(*)(compiler_tree_nodes_operations_Nova_Assignable*, nova_exception_Nova_ExceptionData*, compiler_tree_nodes_Nova_Value*))compiler_tree_nodes_operations_Nova_Assignable_Nova_onAssigned,
 	},
 	compiler_tree_nodes_Nova_Node_Nova_toString,
 	nova_Nova_Object_Accessor_Nova_hashCodeLong,
@@ -112,9 +114,11 @@ compiler_tree_nodes_functions_Parameter_Extension_VTable compiler_tree_nodes_fun
 	compiler_tree_nodes_functions_Nova_Parameter_static_Nova_parse,
 	compiler_tree_nodes_Nova_Value_Nova_parseType,
 	compiler_tree_nodes_Nova_Value_Nova_writeType,
+	compiler_tree_nodes_Nova_Value_Accessorfunc_Nova_type,
 	compiler_tree_nodes_Nova_Value_Accessor_Nova_isAssignable,
 	compiler_tree_nodes_variables_Nova_VariableDeclaration_Nova_parseModifier,
 	compiler_tree_nodes_variables_Nova_VariableDeclaration_Nova_writeModifiers,
+	compiler_tree_nodes_variables_Nova_LocalDeclaration_Accessor_Nova_isImplicit,
 };
 
 

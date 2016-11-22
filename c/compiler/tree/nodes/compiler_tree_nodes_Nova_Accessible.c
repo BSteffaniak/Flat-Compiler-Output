@@ -68,6 +68,7 @@ compiler_tree_nodes_Accessible_Extension_VTable compiler_tree_nodes_Accessible_E
 		0,
 		0,
 		0,
+		0,
 	},
 };
 

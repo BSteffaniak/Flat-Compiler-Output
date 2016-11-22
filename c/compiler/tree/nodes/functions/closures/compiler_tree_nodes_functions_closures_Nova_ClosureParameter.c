@@ -36,6 +36,7 @@
 #include <compiler/tree/nodes/variables/compiler_tree_nodes_variables_Nova_LocalDeclaration.h>
 #include <compiler/tree/nodes/functions/closures/compiler_tree_nodes_functions_closures_Nova_ClosureDeclaration.h>
 #include <compiler/tree/nodes/functions/compiler_tree_nodes_functions_Nova_ParameterList.h>
+#include <compiler/tree/nodes/operations/compiler_tree_nodes_operations_Nova_Assignable.h>
 #include <compiler/tree/nodes/variables/compiler_tree_nodes_variables_Nova_VariableDeclaration.h>
 #include <compiler/tree/nodes/compiler_tree_nodes_Nova_Identifier.h>
 #include <compiler/compiler_Nova_SyntaxMessage.h>
@@ -92,6 +93,7 @@ compiler_tree_nodes_functions_closures_ClosureParameter_Extension_VTable compile
 		(void(*)(compiler_tree_nodes_annotations_Nova_Annotatable*, nova_exception_Nova_ExceptionData*, compiler_tree_nodes_annotations_Nova_Annotation*))compiler_tree_nodes_Nova_Node_Nova_addAnnotation,
 		0,
 		0,
+		(void(*)(compiler_tree_nodes_operations_Nova_Assignable*, nova_exception_Nova_ExceptionData*, compiler_tree_nodes_Nova_Value*))compiler_tree_nodes_operations_Nova_Assignable_Nova_onAssigned,
 	},
 	compiler_tree_nodes_Nova_Node_Nova_toString,
 	nova_Nova_Object_Accessor_Nova_hashCodeLong,
@@ -113,9 +115,11 @@ compiler_tree_nodes_functions_closures_ClosureParameter_Extension_VTable compile
 	compiler_tree_nodes_functions_closures_Nova_ClosureParameter_static_Nova_parse,
 	compiler_tree_nodes_Nova_Value_Nova_parseType,
 	compiler_tree_nodes_Nova_Value_Nova_writeType,
+	compiler_tree_nodes_Nova_Value_Accessorfunc_Nova_type,
 	compiler_tree_nodes_Nova_Value_Accessor_Nova_isAssignable,
 	compiler_tree_nodes_variables_Nova_VariableDeclaration_Nova_parseModifier,
 	compiler_tree_nodes_variables_Nova_VariableDeclaration_Nova_writeModifiers,
+	compiler_tree_nodes_variables_Nova_LocalDeclaration_Accessor_Nova_isImplicit,
 };
 
 
@@ -176,7 +180,7 @@ compiler_tree_nodes_functions_closures_Nova_ClosureParameter* compiler_tree_node
 		compiler_tree_nodes_functions_closures_Nova_ClosureParameter* l1_Nova_node = (compiler_tree_nodes_functions_closures_Nova_ClosureParameter*)nova_null;
 		
 		l1_Nova_node = compiler_tree_nodes_functions_closures_Nova_ClosureParameter_Nova_construct(0, exceptionData, parent, 0);
-		l1_Nova_node->compiler_tree_nodes_Nova_Value_Nova_type = l1_Nova_type;
+		compiler_tree_nodes_Nova_Value_Mutatorfunc_Nova_type((compiler_tree_nodes_Nova_Value*)(l1_Nova_node), exceptionData, l1_Nova_type);
 		l1_Nova_node->compiler_tree_nodes_Nova_Identifier_Nova_name = (nova_Nova_String*)(nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)(nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("_"))), exceptionData, nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)(nova_primitive_number_Nova_Int_static_Nova_toString(0, exceptionData, (nova_datastruct_list_Nova_Array_Accessorfunc_Nova_count((nova_datastruct_list_Nova_Array*)(compiler_tree_nodes_functions_Nova_ParameterList_Accessor_Nova_parameters(compiler_tree_nodes_functions_Nova_Parameter_Accessor_Nova_parentParameterList((compiler_tree_nodes_functions_Nova_Parameter*)(l1_Nova_node), exceptionData), exceptionData)), exceptionData) + 1))), exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("")))));
 		return l1_Nova_node;
 	}

@@ -1030,6 +1030,11 @@ nova_env novaEnv = {
 },
 
 {
+0,
+&compiler_tree_nodes_operations_Nova_Assignable_Nova_onAssignedTo,
+},
+
+{
 &compiler_tree_nodes_operations_Nova_Assignment_Nova_construct,
 },
 
@@ -1053,6 +1058,10 @@ nova_env novaEnv = {
 &compiler_tree_nodes_variables_Nova_FieldDeclaration_Nova_writeInitializationValue,
 &compiler_tree_nodes_variables_Nova_FieldDeclaration_Nova_writeAccessorValue,
 &compiler_tree_nodes_variables_Nova_FieldDeclaration_Nova_construct,
+},
+
+{
+&compiler_tree_nodes_variables_Nova_ImplicitDeclaration_Nova_construct,
 },
 
 {

@@ -74,6 +74,7 @@ compiler_tree_nodes_functions_CallableFunction_Extension_VTable compiler_tree_no
 		0,
 		(compiler_tree_nodes_functions_Nova_Parameter*(*)(compiler_tree_nodes_functions_Nova_CallableFunction*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, int))compiler_tree_nodes_functions_Nova_CallableFunction_Nova_parseParameter,
 		(compiler_tree_nodes_functions_Nova_ParameterList*(*)(compiler_tree_nodes_functions_Nova_CallableFunction*, nova_exception_Nova_ExceptionData*))compiler_tree_nodes_functions_Nova_CallableFunction_Accessor_Nova_parameterList,
+		0,
 	},
 };
 
