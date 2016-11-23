@@ -908,7 +908,6 @@ nova_env novaEnv = {
 },
 
 {
-&compiler_tree_nodes_Nova_Scope_Nova_parseAccessible,
 &compiler_tree_nodes_Nova_Scope_Nova_construct,
 },
 

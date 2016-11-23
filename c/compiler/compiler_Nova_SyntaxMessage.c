@@ -75,6 +75,7 @@ compiler_SyntaxMessage_Extension_VTable compiler_SyntaxMessage_Extension_VTable_
 };
 
 
+nova_Nova_String* compiler_Nova_SyntaxMessage_Nova_latestErrorMessage;
 void compiler_Nova_SyntaxMessage_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData)
 {
 	{
@@ -130,6 +131,13 @@ void compiler_Nova_SyntaxMessage_static_Nova_error(compiler_Nova_SyntaxMessage* 
 	{
 		nova_datastruct_list_Nova_Array_0_Nova_add((nova_datastruct_list_Nova_Array*)(compiler_tree_nodes_Nova_Program_Accessor_Nova_compiler(compiler_tree_nodes_Nova_Node_virtual_Accessor_Nova_program((compiler_tree_nodes_Nova_Node*)(node), exceptionData), exceptionData)->compiler_Nova_Compiler_Nova_errors), exceptionData, (nova_Nova_Object*)(message));
 	}
+}
+
+nova_Nova_Object* compiler_Nova_SyntaxMessage_static_Nova_invalidParse(compiler_Nova_SyntaxMessage* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* message, compiler_tree_nodes_Nova_Node* node)
+{
+	node = (compiler_tree_nodes_Nova_Node*)(node == 0 ? (nova_Nova_Object*)(nova_Nova_Object*)nova_null : (nova_Nova_Object*)node);
+	compiler_Nova_SyntaxMessage_Nova_latestErrorMessage = message;
+	return (nova_Nova_Object*)nova_null;
 }
 
 void compiler_Nova_SyntaxMessage_Nova_this(compiler_Nova_SyntaxMessage* this, nova_exception_Nova_ExceptionData* exceptionData)

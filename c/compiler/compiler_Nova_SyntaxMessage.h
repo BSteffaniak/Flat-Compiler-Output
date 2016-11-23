@@ -61,12 +61,14 @@ CCLASS_CLASS
 	
 	compiler_SyntaxMessage_Extension_VTable* vtable;
 )
+extern nova_Nova_String* compiler_Nova_SyntaxMessage_Nova_latestErrorMessage;
 
 void compiler_Nova_SyntaxMessage_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData);
 compiler_Nova_SyntaxMessage* compiler_Nova_SyntaxMessage_Nova_construct(compiler_Nova_SyntaxMessage* this, nova_exception_Nova_ExceptionData* exceptionData);
 void compiler_Nova_SyntaxMessage_Nova_destroy(compiler_Nova_SyntaxMessage** this, nova_exception_Nova_ExceptionData* exceptionData);
 void compiler_Nova_SyntaxMessage_static_Nova_errorIf(compiler_Nova_SyntaxMessage* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* message, compiler_tree_nodes_Nova_Node* node, char condition, int throwException);
 void compiler_Nova_SyntaxMessage_static_Nova_error(compiler_Nova_SyntaxMessage* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* message, compiler_tree_nodes_Nova_Node* node, int throwException);
+nova_Nova_Object* compiler_Nova_SyntaxMessage_static_Nova_invalidParse(compiler_Nova_SyntaxMessage* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* message, compiler_tree_nodes_Nova_Node* node);
 void compiler_Nova_SyntaxMessage_Nova_this(compiler_Nova_SyntaxMessage* this, nova_exception_Nova_ExceptionData* exceptionData);
 void compiler_Nova_SyntaxMessage_Nova_super(compiler_Nova_SyntaxMessage* this, nova_exception_Nova_ExceptionData* exceptionData);
 

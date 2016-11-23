@@ -1675,6 +1675,7 @@ compiler_Nova_SyntaxErrorException_native1_Nova_construct SyntaxErrorException__
 
 typedef void (*compiler_Nova_SyntaxMessage_native_static_Nova_errorIf)(compiler_Nova_SyntaxMessage*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, compiler_tree_nodes_Nova_Node*, char, int);
 typedef void (*compiler_Nova_SyntaxMessage_native_static_Nova_error)(compiler_Nova_SyntaxMessage*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, compiler_tree_nodes_Nova_Node*, int);
+typedef nova_Nova_Object* (*compiler_Nova_SyntaxMessage_native_static_Nova_invalidParse)(compiler_Nova_SyntaxMessage*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, compiler_tree_nodes_Nova_Node*);
 typedef compiler_Nova_SyntaxMessage* (*compiler_Nova_SyntaxMessage_native_Nova_construct)(compiler_Nova_SyntaxMessage*, nova_exception_Nova_ExceptionData*);
 
 typedef struct compiler_native_SyntaxMessage
@@ -1749,6 +1750,8 @@ typedef compiler_tree_nodes_Nova_Accessible* (*compiler_tree_nodes_Nova_Accessib
 typedef compiler_tree_nodes_Nova_Accessible* (*compiler_tree_nodes_Nova_Accessible_native1_Nova_getNextAccessedOfType)(compiler_tree_nodes_Nova_Accessible*, nova_exception_Nova_ExceptionData*, nova_datastruct_list_Nova_Array*);
 typedef compiler_tree_nodes_Nova_Accessible* (*compiler_tree_nodes_Nova_Accessible_native_Nova_getRootReferenceNode)(compiler_tree_nodes_Nova_Accessible*, nova_exception_Nova_ExceptionData*, int);
 typedef compiler_tree_nodes_Nova_Accessible* (*compiler_tree_nodes_Nova_Accessible_native_Nova_getReferenceNode)(compiler_tree_nodes_Nova_Accessible*, nova_exception_Nova_ExceptionData*, int, int);
+typedef compiler_tree_nodes_Nova_Accessible* (*compiler_tree_nodes_Nova_Accessible_native0_static_Nova_parse)(compiler_tree_nodes_Nova_Accessible*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, compiler_tree_nodes_Nova_Node*, int);
+typedef compiler_tree_nodes_Nova_Node* (*compiler_tree_nodes_Nova_Accessible_native_static_Nova_parseNodeAccess)(compiler_tree_nodes_Nova_Accessible*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, compiler_tree_nodes_Nova_Node*, int);
 typedef nova_Nova_String* (*compiler_tree_nodes_Nova_Accessible_native_Nova_writeAccessedNodes)(compiler_tree_nodes_Nova_Accessible*, nova_exception_Nova_ExceptionData*);
 
 typedef struct compiler_tree_nodes_native_Accessible
@@ -1957,12 +1960,10 @@ compiler_tree_nodes_Nova_Return_native_Nova_writeValue writeValue;
 compiler_tree_nodes_Nova_Return_native_Nova_construct Return;
 } compiler_tree_nodes_native_Return;
 
-typedef compiler_tree_nodes_Nova_Accessible* (*compiler_tree_nodes_Nova_Scope_native_Nova_parseAccessible)(compiler_tree_nodes_Nova_Scope*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, compiler_tree_nodes_Nova_Node*, int);
 typedef compiler_tree_nodes_Nova_Scope* (*compiler_tree_nodes_Nova_Scope_native_Nova_construct)(compiler_tree_nodes_Nova_Scope*, nova_exception_Nova_ExceptionData*, compiler_tree_nodes_Nova_Node*, compiler_util_Nova_Location*);
 
 typedef struct compiler_tree_nodes_native_Scope
 {
-compiler_tree_nodes_Nova_Scope_native_Nova_parseAccessible parseAccessible;
 compiler_tree_nodes_Nova_Scope_native_Nova_construct Scope;
 } compiler_tree_nodes_native_Scope;
 

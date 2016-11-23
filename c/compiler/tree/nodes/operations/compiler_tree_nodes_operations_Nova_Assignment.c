@@ -39,6 +39,8 @@
 #include <compiler/tree/nodes/operations/compiler_tree_nodes_operations_Nova_Operation.h>
 #include <compiler/tree/nodes/operations/compiler_tree_nodes_operations_Nova_Operator.h>
 #include <compiler/tree/nodes/arrays/compiler_tree_nodes_arrays_Nova_ArrayAccess.h>
+#include <compiler/tree/nodes/functions/compiler_tree_nodes_functions_Nova_FunctionCall.h>
+#include <compiler/tree/nodes/compiler_tree_nodes_Nova_Accessible.h>
 #include <compiler/tree/nodes/compiler_tree_nodes_Nova_ClassDeclaration.h>
 #include <compiler/tree/nodes/compiler_tree_nodes_Nova_Import.h>
 #include <compiler/tree/nodes/compiler_tree_nodes_Nova_Literal.h>
@@ -255,19 +257,10 @@ char compiler_tree_nodes_operations_Nova_Assignment_Nova_parseAssignment(compile
 	}
 	else
 	{
+		nova_io_Nova_Console_static_Nova_log(0, exceptionData, (nova_Nova_Object*)(nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)(nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("Reason: "))), exceptionData, nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)((compiler_Nova_SyntaxMessage_Nova_latestErrorMessage)), exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)(""))))));
 		return 0;
 	}
 }
-
-compiler_tree_nodes_variables_Nova_VariableDeclaration* compiler_tree_nodes_operations_Nova_Assignment_Accessor_Nova_assignedDeclaration(compiler_tree_nodes_operations_Nova_Assignment* this, nova_exception_Nova_ExceptionData* exceptionData)
-{
-	if (nova_Nova_Class_Nova_isOfType(compiler_tree_nodes_operations_Nova_Assignment_Accessor_Nova_assigned(this, exceptionData)->vtable->classInstance, exceptionData, (nova_Nova_Class*)(compiler_tree_nodes_variables_VariableDeclaration_Extension_VTable_val.classInstance)))
-	{
-		return (compiler_tree_nodes_variables_Nova_VariableDeclaration*)compiler_tree_nodes_operations_Nova_Assignment_Accessor_Nova_assigned(this, exceptionData);
-	}
-	return ((compiler_tree_nodes_variables_Nova_Variable*)compiler_tree_nodes_operations_Nova_Assignment_Accessor_Nova_assigned(this, exceptionData))->compiler_tree_nodes_variables_Nova_Variable_Nova_declaration;
-}
-
 
 compiler_tree_nodes_Nova_Value* compiler_tree_nodes_operations_Nova_Assignment_Accessor_Nova_assigned(compiler_tree_nodes_operations_Nova_Assignment* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
@@ -290,6 +283,12 @@ compiler_tree_nodes_Nova_Value* compiler_tree_nodes_operations_Nova_Assignment_M
 	nova_datastruct_list_Nova_Array_virtual_Nova_set((nova_datastruct_list_Nova_Array*)(this->compiler_tree_nodes_operations_Nova_Operation_Nova_operands), exceptionData, 1, (nova_Nova_Object*)(value));
 	return value;
 }
+
+compiler_tree_nodes_variables_Nova_VariableDeclaration* compiler_tree_nodes_operations_Nova_Assignment_Accessor_Nova_assignedDeclaration(compiler_tree_nodes_operations_Nova_Assignment* this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+	return (compiler_tree_nodes_variables_Nova_VariableDeclaration*)(nova_Nova_Class_Nova_isOfType(compiler_tree_nodes_operations_Nova_Assignment_Accessor_Nova_assigned(this, exceptionData)->vtable->classInstance, exceptionData, (nova_Nova_Class*)(compiler_tree_nodes_variables_VariableDeclaration_Extension_VTable_val.classInstance)) ? (compiler_tree_nodes_variables_Nova_VariableDeclaration*)compiler_tree_nodes_operations_Nova_Assignment_Accessor_Nova_assigned(this, exceptionData) : ((compiler_tree_nodes_variables_Nova_Variable*)compiler_tree_nodes_operations_Nova_Assignment_Accessor_Nova_assigned(this, exceptionData))->compiler_tree_nodes_variables_Nova_Variable_Nova_declaration);
+}
+
 
 void compiler_tree_nodes_operations_Nova_Assignment_Nova_super(compiler_tree_nodes_operations_Nova_Assignment* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
