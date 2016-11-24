@@ -11,6 +11,7 @@ typedef struct compiler_tree_nodes_annotations_Nova_TargetAnnotation compiler_tr
 #include <NovaClassData.h>
 #include <nova/exception/nova_exception_Nova_ExceptionData.h>
 #include <nova/exception/nova_exception_Nova_Exception.h>
+#include <nova/exception/nova_exception_Nova_SoftException.h>
 #include <nova/exception/nova_exception_Nova_DivideByZeroException.h>
 #include <nova/io/nova_io_Nova_Console.h>
 #include <nova/primitive/number/nova_primitive_number_Nova_Number.h>
@@ -42,6 +43,7 @@ typedef struct compiler_tree_nodes_annotations_Nova_TargetAnnotation compiler_tr
 #include <compiler/tree/nodes/annotations/compiler_tree_nodes_annotations_Nova_Annotation.h>
 #include <compiler/tree/nodes/annotations/compiler_tree_nodes_annotations_Nova_PrimitiveArrayAnnotation.h>
 #include <compiler/tree/nodes/annotations/compiler_tree_nodes_annotations_Nova_TargetAnnotation.h>
+#include <compiler/compiler_Nova_SyntaxMessage.h>
 #include <compiler/tree/nodes/annotations/compiler_tree_nodes_annotations_Nova_Annotatable.h>
 #include <compiler/tree/nodes/exceptionhandling/compiler_tree_nodes_exceptionhandling_Nova_Try.h>
 #include <compiler/tree/nodes/functions/compiler_tree_nodes_functions_Nova_FunctionDeclaration.h>

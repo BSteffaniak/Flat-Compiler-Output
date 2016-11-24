@@ -11,6 +11,7 @@ typedef struct compiler_tree_nodes_Nova_ImportList compiler_tree_nodes_Nova_Impo
 #include <NovaClassData.h>
 #include <nova/exception/nova_exception_Nova_ExceptionData.h>
 #include <nova/exception/nova_exception_Nova_Exception.h>
+#include <nova/exception/nova_exception_Nova_SoftException.h>
 #include <nova/exception/nova_exception_Nova_DivideByZeroException.h>
 #include <nova/io/nova_io_Nova_Console.h>
 #include <nova/primitive/number/nova_primitive_number_Nova_Number.h>
@@ -41,6 +42,7 @@ typedef struct compiler_tree_nodes_Nova_ImportList compiler_tree_nodes_Nova_Impo
 #include <compiler/tree/nodes/compiler_tree_nodes_Nova_Import.h>
 #include <compiler/tree/nodes/compiler_tree_nodes_Nova_Node.h>
 #include <compiler/tree/nodes/compiler_tree_nodes_Nova_NodeList.h>
+#include <compiler/compiler_Nova_SyntaxMessage.h>
 #include <compiler/tree/nodes/annotations/compiler_tree_nodes_annotations_Nova_Annotatable.h>
 #include <compiler/tree/nodes/annotations/compiler_tree_nodes_annotations_Nova_Annotation.h>
 #include <compiler/tree/nodes/exceptionhandling/compiler_tree_nodes_exceptionhandling_Nova_Try.h>

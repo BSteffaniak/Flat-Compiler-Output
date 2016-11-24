@@ -1,6 +1,7 @@
 #include <precompiled.h>
 #include <nova/exception/nova_exception_Nova_ExceptionData.h>
 #include <nova/exception/nova_exception_Nova_Exception.h>
+#include <nova/exception/nova_exception_Nova_SoftException.h>
 #include <nova/exception/nova_exception_Nova_DivideByZeroException.h>
 #include <nova/io/nova_io_Nova_Console.h>
 #include <nova/primitive/number/nova_primitive_number_Nova_Number.h>
@@ -31,6 +32,7 @@
 #include <compiler/util/compiler_util_Nova_Location.h>
 #include <compiler/tree/nodes/annotations/compiler_tree_nodes_annotations_Nova_PrimitiveArrayAnnotation.h>
 #include <compiler/tree/nodes/annotations/compiler_tree_nodes_annotations_Nova_TargetAnnotation.h>
+#include <compiler/compiler_Nova_SyntaxMessage.h>
 #include <compiler/tree/nodes/annotations/compiler_tree_nodes_annotations_Nova_Annotatable.h>
 #include <compiler/tree/nodes/annotations/compiler_tree_nodes_annotations_Nova_Annotation.h>
 #include <compiler/tree/nodes/exceptionhandling/compiler_tree_nodes_exceptionhandling_Nova_Try.h>

@@ -1,6 +1,7 @@
 #include <precompiled.h>
 #include <nova/exception/nova_exception_Nova_ExceptionData.h>
 #include <nova/exception/nova_exception_Nova_Exception.h>
+#include <nova/exception/nova_exception_Nova_SoftException.h>
 #include <nova/exception/nova_exception_Nova_DivideByZeroException.h>
 #include <nova/io/nova_io_Nova_Console.h>
 #include <nova/primitive/number/nova_primitive_number_Nova_Number.h>
@@ -220,6 +221,7 @@ compiler_tree_nodes_Nova_Value* compiler_tree_nodes_Nova_Value_0_static_Nova_par
 			}
 		}
 	}
+	compiler_Nova_SyntaxMessage_1_static_Nova_invalidParse(0, exceptionData, nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)(nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("Could not parse value '"))), exceptionData, nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)((input)), exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("'")))), 0, l1_Nova_node == (nova_Nova_Object*)nova_null);
 	return (compiler_tree_nodes_Nova_Value*)l1_Nova_node;
 }
 

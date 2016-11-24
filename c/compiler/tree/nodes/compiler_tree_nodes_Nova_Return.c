@@ -1,6 +1,7 @@
 #include <precompiled.h>
 #include <nova/exception/nova_exception_Nova_ExceptionData.h>
 #include <nova/exception/nova_exception_Nova_Exception.h>
+#include <nova/exception/nova_exception_Nova_SoftException.h>
 #include <nova/exception/nova_exception_Nova_DivideByZeroException.h>
 #include <nova/io/nova_io_Nova_Console.h>
 #include <nova/primitive/number/nova_primitive_number_Nova_Number.h>
@@ -30,6 +31,7 @@
 #include <compiler/util/compiler_util_Nova_Location.h>
 #include <compiler/tree/nodes/compiler_tree_nodes_Nova_Node.h>
 #include <compiler/tree/nodes/compiler_tree_nodes_Nova_Value.h>
+#include <compiler/compiler_Nova_SyntaxMessage.h>
 #include <compiler/tree/nodes/annotations/compiler_tree_nodes_annotations_Nova_Annotatable.h>
 #include <compiler/tree/nodes/annotations/compiler_tree_nodes_annotations_Nova_Annotation.h>
 #include <compiler/tree/nodes/exceptionhandling/compiler_tree_nodes_exceptionhandling_Nova_Try.h>
@@ -160,6 +162,7 @@ compiler_tree_nodes_Nova_Return* compiler_tree_nodes_Nova_Return_static_Nova_par
 			l1_Nova_node->compiler_tree_nodes_Nova_Return_Nova_value = (compiler_tree_nodes_Nova_Value*)(compiler_tree_nodes_Nova_Value_0_static_Nova_parse(0, exceptionData, l1_Nova_contents, (compiler_tree_nodes_Nova_Node*)(l1_Nova_node), 0, (intptr_t)nova_null));
 			if (l1_Nova_node->compiler_tree_nodes_Nova_Return_Nova_value == (compiler_tree_nodes_Nova_Value*)nova_null)
 			{
+				compiler_tree_nodes_Nova_Node_0_static_Nova_invalidParse(0, exceptionData, nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)(nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("Invalid return value '"))), exceptionData, nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)((l1_Nova_contents)), exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("'")))), 0);
 				return (compiler_tree_nodes_Nova_Return*)(nova_Nova_Object*)nova_null;
 			}
 		}

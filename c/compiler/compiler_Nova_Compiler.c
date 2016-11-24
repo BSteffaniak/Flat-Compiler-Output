@@ -1,6 +1,7 @@
 #include <precompiled.h>
 #include <nova/exception/nova_exception_Nova_ExceptionData.h>
 #include <nova/exception/nova_exception_Nova_Exception.h>
+#include <nova/exception/nova_exception_Nova_SoftException.h>
 #include <nova/exception/nova_exception_Nova_DivideByZeroException.h>
 #include <nova/io/nova_io_Nova_Console.h>
 #include <nova/primitive/number/nova_primitive_number_Nova_Number.h>
@@ -208,7 +209,7 @@ void compiler_Nova_Compiler_Nova_compile(compiler_Nova_Compiler* this, nova_exce
 				this->prv->compiler_Nova_Compiler_Nova_files = (nova_datastruct_list_Nova_Array*)(nova_datastruct_list_Nova_List_virtual0_Nova_map((nova_datastruct_list_Nova_List*)(nova_datastruct_list_Nova_List_virtual0_Nova_filter((nova_datastruct_list_Nova_List*)(nova_io_Nova_File_Nova_getChildFiles(l1_Nova_parentDir, exceptionData, 1, (intptr_t)nova_null)), exceptionData, (nova_datastruct_list_Nova_List_closure15_Nova_filterFunc)&compiler_Nova_Compiler_Nova_testLambda79, this, &contextArg79)), exceptionData, (nova_datastruct_list_Nova_List_closure6_Nova_mapFunc)&compiler_Nova_Compiler_Nova_testLambda80, this, &contextArg80));
 				TRY
 				{
-						novaEnv.nova_exception_ExceptionData.addCode(exceptionData, exceptionData, 10);
+						novaEnv.nova_exception_ExceptionData.addCaught(exceptionData, exceptionData, compiler_SyntaxErrorException_Extension_VTable_val.classInstance);
 						
 						{
 								Context3 contextArg81 = 
@@ -234,7 +235,7 @@ void compiler_Nova_Compiler_Nova_compile(compiler_Nova_Compiler* this, nova_exce
 								nova_io_Nova_Console_1_static_Nova_writeLine(0, exceptionData, nova_datastruct_list_Nova_List_virtual_Nova_join((nova_datastruct_list_Nova_List*)(nova_datastruct_list_Nova_List_virtual0_Nova_map((nova_datastruct_list_Nova_List*)(nova_datastruct_list_Nova_List_virtual0_Nova_filter((nova_datastruct_list_Nova_List*)(compiler_tree_nodes_Nova_Program_Accessor_Nova_files(l2_Nova_tree->compiler_tree_Nova_SyntaxTree_Nova_root, exceptionData)), exceptionData, (nova_datastruct_list_Nova_List_closure15_Nova_filterFunc)&compiler_Nova_Compiler_Nova_testLambda82, this, &contextArg82)), exceptionData, (nova_datastruct_list_Nova_List_closure6_Nova_mapFunc)&compiler_Nova_Compiler_Nova_testLambda83, this, &contextArg83)), exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("\n"))));
 						}
 				}
-				CATCH (10)
+				CATCH (exceptionData->nova_exception_Nova_ExceptionData_Nova_thrownException->vtable->classInstance)
 				{
 						compiler_Nova_SyntaxErrorException* l3_Nova_e = (compiler_Nova_SyntaxErrorException*)nova_null;
 						
@@ -444,6 +445,7 @@ int main(int argc, char** argvs)
 		nova_exception_ExceptionData_Extension_VTable_val.classInstance = nova_Nova_Class_Nova_construct(0, exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("nova/exception/ExceptionData")), 0);
 		nova_exception_InvalidArgumentException_Extension_VTable_val.classInstance = nova_Nova_Class_Nova_construct(0, exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("nova/exception/InvalidArgumentException")), 0);
 		nova_exception_InvalidOperationException_Extension_VTable_val.classInstance = nova_Nova_Class_Nova_construct(0, exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("nova/exception/InvalidOperationException")), 0);
+		nova_exception_SoftException_Extension_VTable_val.classInstance = nova_Nova_Class_Nova_construct(0, exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("nova/exception/SoftException")), 0);
 		nova_exception_UnimplementedOperationException_Extension_VTable_val.classInstance = nova_Nova_Class_Nova_construct(0, exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("nova/exception/UnimplementedOperationException")), 0);
 		nova_gc_GC_Extension_VTable_val.classInstance = nova_Nova_Class_Nova_construct(0, exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("nova/gc/GC")), 0);
 		nova_io_Console_Extension_VTable_val.classInstance = nova_Nova_Class_Nova_construct(0, exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("nova/io/Console")), 0);
@@ -534,6 +536,7 @@ int main(int argc, char** argvs)
 		nova_web_svg_no3_No3Select_Extension_VTable_val.classInstance = nova_Nova_Class_Nova_construct(0, exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("nova/web/svg/no3/No3Select")), 0);
 		nova_web_svg_no3_No3SelectAll_Extension_VTable_val.classInstance = nova_Nova_Class_Nova_construct(0, exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("nova/web/svg/no3/No3SelectAll")), 0);
 		compiler_Compiler_Extension_VTable_val.classInstance = nova_Nova_Class_Nova_construct(0, exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("compiler/Compiler")), 0);
+		compiler_InvalidParseException_Extension_VTable_val.classInstance = nova_Nova_Class_Nova_construct(0, exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("compiler/InvalidParseException")), 0);
 		compiler_SyntaxErrorException_Extension_VTable_val.classInstance = nova_Nova_Class_Nova_construct(0, exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("compiler/SyntaxErrorException")), 0);
 		compiler_SyntaxMessage_Extension_VTable_val.classInstance = nova_Nova_Class_Nova_construct(0, exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("compiler/SyntaxMessage")), 0);
 		compiler_engines_CodeGeneratorEngine_Extension_VTable_val.classInstance = nova_Nova_Class_Nova_construct(0, exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("compiler/engines/CodeGeneratorEngine")), 0);
@@ -555,6 +558,7 @@ int main(int argc, char** argvs)
 		compiler_tree_nodes_NovaFile_Extension_VTable_val.classInstance = nova_Nova_Class_Nova_construct(0, exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("compiler/tree/nodes/NovaFile")), 0);
 		compiler_tree_nodes_NovaInterface_Extension_VTable_val.classInstance = nova_Nova_Class_Nova_construct(0, exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("compiler/tree/nodes/NovaInterface")), 0);
 		compiler_tree_nodes_Package_Extension_VTable_val.classInstance = nova_Nova_Class_Nova_construct(0, exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("compiler/tree/nodes/Package")), 0);
+		compiler_tree_nodes_ParseResult_Extension_VTable_val.classInstance = nova_Nova_Class_Nova_construct(0, exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("compiler/tree/nodes/ParseResult")), 0);
 		compiler_tree_nodes_PlaceholderValue_Extension_VTable_val.classInstance = nova_Nova_Class_Nova_construct(0, exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("compiler/tree/nodes/PlaceholderValue")), 0);
 		compiler_tree_nodes_Program_Extension_VTable_val.classInstance = nova_Nova_Class_Nova_construct(0, exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("compiler/tree/nodes/Program")), 0);
 		compiler_tree_nodes_Return_Extension_VTable_val.classInstance = nova_Nova_Class_Nova_construct(0, exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("compiler/tree/nodes/Return")), 0);
@@ -662,6 +666,7 @@ int main(int argc, char** argvs)
 		nova_exception_ExceptionData_Extension_VTable_val.classInstance->nova_Nova_Class_Nova_extension = nova_Object_Extension_VTable_val.classInstance;
 		nova_exception_InvalidArgumentException_Extension_VTable_val.classInstance->nova_Nova_Class_Nova_extension = nova_exception_Exception_Extension_VTable_val.classInstance;
 		nova_exception_InvalidOperationException_Extension_VTable_val.classInstance->nova_Nova_Class_Nova_extension = nova_exception_Exception_Extension_VTable_val.classInstance;
+		nova_exception_SoftException_Extension_VTable_val.classInstance->nova_Nova_Class_Nova_extension = nova_exception_Exception_Extension_VTable_val.classInstance;
 		nova_exception_UnimplementedOperationException_Extension_VTable_val.classInstance->nova_Nova_Class_Nova_extension = nova_exception_Exception_Extension_VTable_val.classInstance;
 		nova_gc_GC_Extension_VTable_val.classInstance->nova_Nova_Class_Nova_extension = nova_Object_Extension_VTable_val.classInstance;
 		nova_io_Console_Extension_VTable_val.classInstance->nova_Nova_Class_Nova_extension = nova_Object_Extension_VTable_val.classInstance;
@@ -764,6 +769,7 @@ int main(int argc, char** argvs)
 		nova_web_svg_no3_No3Select_Extension_VTable_val.classInstance->nova_Nova_Class_Nova_extension = nova_web_svg_no3_No3Node_Extension_VTable_val.classInstance;
 		nova_web_svg_no3_No3SelectAll_Extension_VTable_val.classInstance->nova_Nova_Class_Nova_extension = nova_web_svg_no3_No3Node_Extension_VTable_val.classInstance;
 		compiler_Compiler_Extension_VTable_val.classInstance->nova_Nova_Class_Nova_extension = nova_Object_Extension_VTable_val.classInstance;
+		compiler_InvalidParseException_Extension_VTable_val.classInstance->nova_Nova_Class_Nova_extension = nova_exception_SoftException_Extension_VTable_val.classInstance;
 		compiler_SyntaxErrorException_Extension_VTable_val.classInstance->nova_Nova_Class_Nova_extension = nova_exception_Exception_Extension_VTable_val.classInstance;
 		compiler_SyntaxMessage_Extension_VTable_val.classInstance->nova_Nova_Class_Nova_extension = nova_Object_Extension_VTable_val.classInstance;
 		compiler_engines_CodeGeneratorEngine_Extension_VTable_val.classInstance->nova_Nova_Class_Nova_extension = nova_Object_Extension_VTable_val.classInstance;
@@ -786,6 +792,7 @@ int main(int argc, char** argvs)
 		compiler_tree_nodes_NovaFile_Extension_VTable_val.classInstance->nova_Nova_Class_Nova_extension = compiler_tree_nodes_Node_Extension_VTable_val.classInstance;
 		compiler_tree_nodes_NovaInterface_Extension_VTable_val.classInstance->nova_Nova_Class_Nova_extension = compiler_tree_nodes_ClassDeclaration_Extension_VTable_val.classInstance;
 		compiler_tree_nodes_Package_Extension_VTable_val.classInstance->nova_Nova_Class_Nova_extension = compiler_tree_nodes_Node_Extension_VTable_val.classInstance;
+		compiler_tree_nodes_ParseResult_Extension_VTable_val.classInstance->nova_Nova_Class_Nova_extension = nova_Object_Extension_VTable_val.classInstance;
 		compiler_tree_nodes_PlaceholderValue_Extension_VTable_val.classInstance->nova_Nova_Class_Nova_extension = compiler_tree_nodes_Value_Extension_VTable_val.classInstance;
 		compiler_tree_nodes_Program_Extension_VTable_val.classInstance->nova_Nova_Class_Nova_extension = compiler_tree_nodes_NodeList_Extension_VTable_val.classInstance;
 		compiler_tree_nodes_Return_Extension_VTable_val.classInstance->nova_Nova_Class_Nova_extension = compiler_tree_nodes_Node_Extension_VTable_val.classInstance;
@@ -886,6 +893,7 @@ int main(int argc, char** argvs)
 		nova_exception_Nova_ExceptionData_Nova_init_static(exceptionData);
 		nova_exception_Nova_InvalidArgumentException_Nova_init_static(exceptionData);
 		nova_exception_Nova_InvalidOperationException_Nova_init_static(exceptionData);
+		nova_exception_Nova_SoftException_Nova_init_static(exceptionData);
 		nova_exception_Nova_UnimplementedOperationException_Nova_init_static(exceptionData);
 		nova_gc_Nova_GC_Nova_init_static(exceptionData);
 		nova_io_Nova_Console_Nova_init_static(exceptionData);
@@ -977,6 +985,7 @@ int main(int argc, char** argvs)
 		nova_web_svg_no3_Nova_No3Select_Nova_init_static(exceptionData);
 		nova_web_svg_no3_Nova_No3SelectAll_Nova_init_static(exceptionData);
 		compiler_Nova_Compiler_Nova_init_static(exceptionData);
+		compiler_Nova_InvalidParseException_Nova_init_static(exceptionData);
 		compiler_Nova_SyntaxErrorException_Nova_init_static(exceptionData);
 		compiler_Nova_SyntaxMessage_Nova_init_static(exceptionData);
 		compiler_engines_Nova_CodeGeneratorEngine_Nova_init_static(exceptionData);
@@ -998,6 +1007,7 @@ int main(int argc, char** argvs)
 		compiler_tree_nodes_Nova_NovaFile_Nova_init_static(exceptionData);
 		compiler_tree_nodes_Nova_NovaInterface_Nova_init_static(exceptionData);
 		compiler_tree_nodes_Nova_Package_Nova_init_static(exceptionData);
+		compiler_tree_nodes_Nova_ParseResult_Nova_init_static(exceptionData);
 		compiler_tree_nodes_Nova_PlaceholderValue_Nova_init_static(exceptionData);
 		compiler_tree_nodes_Nova_Program_Nova_init_static(exceptionData);
 		compiler_tree_nodes_Nova_Return_Nova_init_static(exceptionData);
@@ -1062,7 +1072,7 @@ int main(int argc, char** argvs)
 		{
 				compiler_Nova_Compiler_static_Nova_main(0, exceptionData, argsArray);
 		}
-		CATCH (1)
+		CATCH (nova_exception_Exception_Extension_VTable_val.classInstance)
 		{
 				char* message = "Exception in Thread 'main'";
 				nova_exception_Nova_Exception* base = (nova_exception_Nova_Exception*)exceptionData->nova_exception_Nova_ExceptionData_Nova_thrownException;

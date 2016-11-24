@@ -1,6 +1,7 @@
 #include <precompiled.h>
 #include <nova/exception/nova_exception_Nova_ExceptionData.h>
 #include <nova/exception/nova_exception_Nova_Exception.h>
+#include <nova/exception/nova_exception_Nova_SoftException.h>
 #include <nova/exception/nova_exception_Nova_DivideByZeroException.h>
 #include <nova/io/nova_io_Nova_Console.h>
 #include <nova/primitive/number/nova_primitive_number_Nova_Number.h>
@@ -238,13 +239,13 @@ void compiler_tree_Nova_SyntaxTree_Nova_testLambda87(compiler_tree_Nova_SyntaxTr
 		{
 			TRY
 			{
-				novaEnv.nova_exception_ExceptionData.addCode(exceptionData, exceptionData, 10);
+				novaEnv.nova_exception_ExceptionData.addCaught(exceptionData, exceptionData, compiler_SyntaxErrorException_Extension_VTable_val.classInstance);
 				
 				{
 					l2_Nova_node = (compiler_tree_nodes_Nova_Node*)(compiler_tree_nodes_Nova_Node_virtual_Nova_parseStatement((compiler_tree_nodes_Nova_Node*)(nova_datastruct_list_Nova_Stack_Nova_peek((nova_datastruct_list_Nova_Stack*)(this->prv->compiler_tree_Nova_SyntaxTree_Nova_parents), exceptionData)), exceptionData, l2_Nova_statement, 0, 0, 0));
 				}
 			}
-			CATCH (10)
+			CATCH (exceptionData->nova_exception_Nova_ExceptionData_Nova_thrownException->vtable->classInstance)
 			{
 				compiler_Nova_SyntaxErrorException* l6_Nova_e = (compiler_Nova_SyntaxErrorException*)nova_null;
 				
