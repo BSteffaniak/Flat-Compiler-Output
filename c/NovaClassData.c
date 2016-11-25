@@ -9,4 +9,3 @@ nova_operators_vtable_Equals nova_operators_vtable_Equals_value_default = {0};
 nova_operators_vtable_Multiply nova_operators_vtable_Multiply_value_default = {0};
 nova_primitive_number_vtable_Integer nova_primitive_number_vtable_Integer_value_default = {0};
 nova_primitive_number_vtable_RealNumber nova_primitive_number_vtable_RealNumber_value_default = {0};
-example_vtable_Polygon example_vtable_Polygon_value_default = {0};

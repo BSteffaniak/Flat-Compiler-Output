@@ -1,7 +1,6 @@
 #include <precompiled.h>
 #include <nova/exception/nova_exception_Nova_ExceptionData.h>
 #include <nova/exception/nova_exception_Nova_Exception.h>
-#include <nova/exception/nova_exception_Nova_SoftException.h>
 #include <nova/exception/nova_exception_Nova_DivideByZeroException.h>
 #include <nova/io/nova_io_Nova_Console.h>
 #include <nova/primitive/number/nova_primitive_number_Nova_Number.h>
@@ -124,7 +123,7 @@ void stabilitytest_Nova_FileStability_Nova_test(stabilitytest_Nova_FileStability
 	stabilitytest_Nova_FileStability_Nova_lines = (int)(100);
 	TRY
 	{
-		novaEnv.nova_exception_ExceptionData.addCaught(exceptionData, exceptionData, nova_exception_Exception_Extension_VTable_val.classInstance);
+		novaEnv.nova_exception_ExceptionData.addCaught(exceptionData, exceptionData, nova_exception_Exception_Extension_VTable_val.classInstance, 0);
 		
 		{
 			nova_io_Nova_File* l1_Nova_f = (nova_io_Nova_File*)nova_null;

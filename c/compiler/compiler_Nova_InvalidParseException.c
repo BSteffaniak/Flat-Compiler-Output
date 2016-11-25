@@ -1,7 +1,6 @@
 #include <precompiled.h>
 #include <nova/exception/nova_exception_Nova_ExceptionData.h>
 #include <nova/exception/nova_exception_Nova_Exception.h>
-#include <nova/exception/nova_exception_Nova_SoftException.h>
 #include <nova/exception/nova_exception_Nova_DivideByZeroException.h>
 #include <nova/io/nova_io_Nova_Console.h>
 #include <nova/primitive/number/nova_primitive_number_Nova_Number.h>
@@ -87,7 +86,6 @@ compiler_Nova_InvalidParseException* compiler_Nova_InvalidParseException_Nova_co
 	this->vtable = &compiler_InvalidParseException_Extension_VTable_val;
 	nova_Nova_Object_Nova_super((nova_Nova_Object*)this, exceptionData);
 	nova_exception_Nova_Exception_Nova_super((nova_exception_Nova_Exception*)this, exceptionData);
-	nova_exception_Nova_SoftException_Nova_super((nova_exception_Nova_SoftException*)this, exceptionData);
 	compiler_Nova_InvalidParseException_Nova_super(this, exceptionData);
 	
 	{
@@ -113,7 +111,7 @@ void compiler_Nova_InvalidParseException_Nova_this(compiler_Nova_InvalidParseExc
 {
 	message = (nova_Nova_String*)(message == 0 ? (nova_Nova_Object*)nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("")) : (nova_Nova_Object*)message);
 	node = (compiler_tree_nodes_Nova_Node*)(node == 0 ? (nova_Nova_Object*)(nova_Nova_Object*)nova_null : (nova_Nova_Object*)node);
-	nova_exception_Nova_SoftException_Nova_this((nova_exception_Nova_SoftException*)(this), exceptionData, message);
+	nova_exception_Nova_Exception_Nova_this((nova_exception_Nova_Exception*)(this), exceptionData, message);
 	this->compiler_Nova_InvalidParseException_Nova_node = node;
 }
 

@@ -292,6 +292,10 @@ nova_env novaEnv = {
 },
 
 {
+&nova_exception_Nova_CaughtException_Nova_construct,
+},
+
+{
 &nova_exception_Nova_DivideByZeroException_Nova_construct,
 },
 
@@ -312,10 +316,6 @@ nova_env novaEnv = {
 
 {
 &nova_exception_Nova_InvalidOperationException_Nova_construct,
-},
-
-{
-&nova_exception_Nova_SoftException_Nova_construct,
 },
 
 {
@@ -671,7 +671,7 @@ nova_env novaEnv = {
 },
 
 {
-&nova_thread_Nova_UncaughtExceptionHandler_Nova_uncaughtException,
+0,
 &nova_thread_Nova_UncaughtExceptionHandler_Nova_construct,
 },
 
@@ -753,144 +753,98 @@ nova_env novaEnv = {
 },
 
 {
-0,
-0,
-0,
-&example_Nova_Animal_Nova_construct,
+&stabilitytest_Nova_AssignmentStability_Nova_construct,
 },
 
 {
-&example_Nova_ArrayDemo_Nova_construct,
+&stabilitytest_Nova_ClassWithProperties_Nova_construct,
 },
 
 {
-&example_Nova_BodyBuilder_Nova_construct,
+&stabilitytest_Nova_ClientThread_Nova_construct,
 },
 
 {
-&example_Nova_ClosureDemo_Nova_construct,
+&stabilitytest_Nova_ClosureStability_Nova_construct,
 },
 
 {
-&example_Nova_Dog_Nova_construct,
+&stabilitytest_Nova_ExceptionStability_Nova_construct,
 },
 
 {
-&example_Nova_ExceptionHandlingDemo_Nova_construct,
+&stabilitytest_Nova_FileStability_Nova_construct,
 },
 
 {
-&example_Nova_FileTest_Nova_construct,
+&stabilitytest_Nova_LambdaStability_Nova_construct,
 },
 
 {
-&example_Nova_GenericDemo_Nova_construct,
+&stabilitytest_Nova_NetworkStability_Nova_construct,
 },
 
 {
-&example_Nova_HashMapDemo_Nova_construct,
+&stabilitytest_Nova_Node_Nova_construct,
 },
 
 {
-&example_Nova_HashSetDemo_Nova_construct,
+&stabilitytest_Nova_PolymorphicSubClass_Nova_construct,
 },
 
 {
-&example_Nova_IntegerTest_Nova_construct,
+&stabilitytest_Nova_PolymorphicSuperClass_Nova_giveBirth,
+&stabilitytest_Nova_PolymorphicSuperClass_Nova_construct,
 },
 
 {
-&example_Nova_Lab_Nova_construct,
+&stabilitytest_Nova_PolymorphismStability_Nova_construct,
 },
 
 {
-&example_Nova_MathDemo_Nova_construct,
+&stabilitytest_Nova_RegexStability_Nova_construct,
 },
 
 {
-&example_Nova_NonWholeDivisionException_Nova_construct,
+&stabilitytest_Nova_StabilityExceptionHandler_Nova_construct,
 },
 
 {
-0,
-&example_Nova_Person_Nova_construct,
+&stabilitytest_Nova_StabilityTest_Nova_fail,
+&stabilitytest_Nova_StabilityTest_Nova_construct,
 },
 
 {
 0,
-0,
+&stabilitytest_Nova_StabilityTestCase_Nova_construct,
 },
 
 {
-&example_Nova_PolymorphismDemo_Nova_construct,
+&stabilitytest_Nova_StabilityTestException_Nova_construct,
 },
 
 {
-&example_Nova_QueueDemo_Nova_construct,
+&stabilitytest_Nova_SyntaxStability_Nova_construct,
 },
 
 {
-&example_Nova_Spider_Nova_construct,
+&stabilitytest_Nova_ThreadImplementation_Nova_construct,
 },
 
 {
-&example_Nova_Square_Nova_construct,
+&stabilitytest_Nova_ThreadStability_Nova_construct,
 },
 
 {
-&example_Nova_SvgChart_Nova_construct,
+&stabilitytest_Nova_TimeStability_Nova_construct,
 },
 
 {
-&example_Nova_SvgFractal_Nova_construct,
+&stabilitytest_Nova_ToStringStability_Nova_construct,
 },
 
 {
-&example_Nova_T1_Nova_construct,
-},
-
-{
-&example_Nova_T2_Nova_construct,
-},
-
-{
-&example_Nova_Test_Nova_construct,
-},
-
-{
-&example_Nova_ThreadDemo_Nova_construct,
-},
-
-{
-&example_Nova_ThreadDemoImplementation_Nova_construct,
-},
-
-{
-&example_ackermann_Nova_Ackermann_Nova_construct,
-},
-
-{
-&example_copy_Nova_Dog_Nova_construct,
-},
-
-{
-&example_database_Nova_DatabaseDemo_Nova_construct,
-},
-
-{
-&example_network_Nova_ClientDemo_Nova_construct,
-},
-
-{
-&example_network_Nova_ConnectionThread_Nova_construct,
-},
-
-{
-&example_network_Nova_OutputThread_Nova_construct,
-},
-
-{
-&example_network_Nova_ServerDemo_Nova_construct,
+&stabilitytest_Nova_UnstableException_Nova_construct,
 },
 
 };

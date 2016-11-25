@@ -1,7 +1,6 @@
 #include <precompiled.h>
 #include <nova/exception/nova_exception_Nova_ExceptionData.h>
 #include <nova/exception/nova_exception_Nova_Exception.h>
-#include <nova/exception/nova_exception_Nova_SoftException.h>
 #include <nova/exception/nova_exception_Nova_DivideByZeroException.h>
 #include <nova/io/nova_io_Nova_Console.h>
 #include <nova/primitive/number/nova_primitive_number_Nova_Number.h>
@@ -126,7 +125,7 @@ void compiler_Nova_SyntaxMessage_static_Nova_error(compiler_Nova_SyntaxMessage* 
 	}
 	if (throwException)
 	{
-		THROW(10, compiler_Nova_SyntaxErrorException_1_Nova_construct(0, exceptionData, message, node, 0));
+		THROW(compiler_Nova_SyntaxErrorException_1_Nova_construct(0, exceptionData, message, node, 0), 0);
 	}
 	else
 	{

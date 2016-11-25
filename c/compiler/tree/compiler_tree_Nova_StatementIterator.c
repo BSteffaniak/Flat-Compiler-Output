@@ -1,7 +1,6 @@
 #include <precompiled.h>
 #include <nova/exception/nova_exception_Nova_ExceptionData.h>
 #include <nova/exception/nova_exception_Nova_Exception.h>
-#include <nova/exception/nova_exception_Nova_SoftException.h>
 #include <nova/exception/nova_exception_Nova_DivideByZeroException.h>
 #include <nova/io/nova_io_Nova_Console.h>
 #include <nova/primitive/number/nova_primitive_number_Nova_Number.h>
@@ -212,7 +211,7 @@ nova_Nova_String* compiler_tree_Nova_StatementIterator_Accessor_Nova_next(compil
 		compiler_tree_Nova_StatementIterator_Nova_updateScopeProperties(this, exceptionData);
 		return nova_Nova_String_Nova_trim(nova_Nova_String_Nova_substring(this->compiler_tree_Nova_StatementIterator_Nova_source, exceptionData, l2_Nova_prev, l2_Nova_end), exceptionData, (intptr_t)nova_null, (intptr_t)nova_null, 0);
 	}
-	THROW(3, nova_datastruct_list_Nova_NoSuchElementException_Nova_construct(0, exceptionData, 0));
+	THROW(nova_datastruct_list_Nova_NoSuchElementException_Nova_construct(0, exceptionData, 0), 0);
 	return (nova_Nova_String*)(nova_Nova_Object*)nova_null;
 }
 
