@@ -27,8 +27,8 @@
 #include <nova/nova_Nova_System.h>
 #include <nova/nova_Nova_Class.h>
 #include <nova/regex/nova_regex_Nova_Pattern.h>
-#include <compiler/util/compiler_util_Nova_Location.h>
 #include <compiler/tree/nodes/compiler_tree_nodes_Nova_Node.h>
+#include <compiler/util/compiler_util_Nova_Location.h>
 #include <compiler/tree/nodes/annotations/compiler_tree_nodes_annotations_Nova_Annotatable.h>
 #include <compiler/tree/nodes/annotations/compiler_tree_nodes_annotations_Nova_Annotation.h>
 #include <compiler/tree/nodes/exceptionhandling/compiler_tree_nodes_exceptionhandling_Nova_Try.h>
@@ -44,7 +44,7 @@
 
 
 
-compiler_tree_nodes_functions_closures_ClosureContext_Extension_VTable compiler_tree_nodes_functions_closures_ClosureContext_Extension_VTable_val =
+compiler_tree_nodes_exceptionhandling_Catch_Extension_VTable compiler_tree_nodes_exceptionhandling_Catch_Extension_VTable_val =
 {
 	0,
 	{
@@ -101,28 +101,28 @@ compiler_tree_nodes_functions_closures_ClosureContext_Extension_VTable compiler_
 };
 
 
-void compiler_tree_nodes_functions_closures_Nova_ClosureContext_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData)
+void compiler_tree_nodes_exceptionhandling_Nova_Catch_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData)
 {
 	{
 	}
 }
 
-compiler_tree_nodes_functions_closures_Nova_ClosureContext* compiler_tree_nodes_functions_closures_Nova_ClosureContext_Nova_construct(compiler_tree_nodes_functions_closures_Nova_ClosureContext* this, nova_exception_Nova_ExceptionData* exceptionData, compiler_tree_nodes_Nova_Node* parent, compiler_util_Nova_Location* location)
+compiler_tree_nodes_exceptionhandling_Nova_Catch* compiler_tree_nodes_exceptionhandling_Nova_Catch_Nova_construct(compiler_tree_nodes_exceptionhandling_Nova_Catch* this, nova_exception_Nova_ExceptionData* exceptionData, compiler_tree_nodes_Nova_Node* parent, compiler_util_Nova_Location* location)
 {
-	CCLASS_NEW(compiler_tree_nodes_functions_closures_Nova_ClosureContext, this,);
-	this->vtable = &compiler_tree_nodes_functions_closures_ClosureContext_Extension_VTable_val;
+	CCLASS_NEW(compiler_tree_nodes_exceptionhandling_Nova_Catch, this,);
+	this->vtable = &compiler_tree_nodes_exceptionhandling_Catch_Extension_VTable_val;
 	nova_Nova_Object_Nova_super((nova_Nova_Object*)this, exceptionData);
 	compiler_tree_nodes_Nova_Node_Nova_super((compiler_tree_nodes_Nova_Node*)this, exceptionData);
-	compiler_tree_nodes_functions_closures_Nova_ClosureContext_Nova_super(this, exceptionData);
+	compiler_tree_nodes_exceptionhandling_Nova_Catch_Nova_super(this, exceptionData);
 	
 	{
-		compiler_tree_nodes_functions_closures_Nova_ClosureContext_Nova_this(this, exceptionData, parent, location);
+		compiler_tree_nodes_exceptionhandling_Nova_Catch_Nova_this(this, exceptionData, parent, location);
 	}
 	
 	return this;
 }
 
-void compiler_tree_nodes_functions_closures_Nova_ClosureContext_Nova_destroy(compiler_tree_nodes_functions_closures_Nova_ClosureContext** this, nova_exception_Nova_ExceptionData* exceptionData)
+void compiler_tree_nodes_exceptionhandling_Nova_Catch_Nova_destroy(compiler_tree_nodes_exceptionhandling_Nova_Catch** this, nova_exception_Nova_ExceptionData* exceptionData)
 {
 	if (!*this)
 	{
@@ -133,14 +133,29 @@ void compiler_tree_nodes_functions_closures_Nova_ClosureContext_Nova_destroy(com
 	NOVA_FREE(*this);
 }
 
-void compiler_tree_nodes_functions_closures_Nova_ClosureContext_Nova_this(compiler_tree_nodes_functions_closures_Nova_ClosureContext* this, nova_exception_Nova_ExceptionData* exceptionData, compiler_tree_nodes_Nova_Node* parent, compiler_util_Nova_Location* location)
+void compiler_tree_nodes_exceptionhandling_Nova_Catch_Nova_this(compiler_tree_nodes_exceptionhandling_Nova_Catch* this, nova_exception_Nova_ExceptionData* exceptionData, compiler_tree_nodes_Nova_Node* parent, compiler_util_Nova_Location* location)
 {
 	parent = (compiler_tree_nodes_Nova_Node*)(parent == 0 ? (nova_Nova_Object*)(nova_Nova_Object*)nova_null : (nova_Nova_Object*)parent);
 	location = (compiler_util_Nova_Location*)(location == 0 ? (nova_Nova_Object*)compiler_util_Nova_Location_Nova_INVALID : (nova_Nova_Object*)location);
 	compiler_tree_nodes_Nova_Node_Nova_this((compiler_tree_nodes_Nova_Node*)(this), exceptionData, parent, location);
 }
 
-void compiler_tree_nodes_functions_closures_Nova_ClosureContext_Nova_super(compiler_tree_nodes_functions_closures_Nova_ClosureContext* this, nova_exception_Nova_ExceptionData* exceptionData)
+compiler_tree_nodes_exceptionhandling_Nova_Catch* compiler_tree_nodes_exceptionhandling_Nova_Catch_static_Nova_parse(compiler_tree_nodes_exceptionhandling_Nova_Catch* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* input, compiler_tree_nodes_Nova_Node* parent, compiler_util_Nova_Location* location, int require)
+{
+	parent = (compiler_tree_nodes_Nova_Node*)(parent == 0 ? (nova_Nova_Object*)(nova_Nova_Object*)nova_null : (nova_Nova_Object*)parent);
+	location = (compiler_util_Nova_Location*)(location == 0 ? (nova_Nova_Object*)compiler_util_Nova_Location_Nova_INVALID : (nova_Nova_Object*)location);
+	require = (int)(require == (intptr_t)nova_null ? 1 : require);
+	if (1)
+	{
+		compiler_tree_nodes_exceptionhandling_Nova_Catch* l1_Nova_node = (compiler_tree_nodes_exceptionhandling_Nova_Catch*)nova_null;
+		
+		l1_Nova_node = compiler_tree_nodes_exceptionhandling_Nova_Catch_Nova_construct(0, exceptionData, parent, location);
+		return l1_Nova_node;
+	}
+	return (compiler_tree_nodes_exceptionhandling_Nova_Catch*)(nova_Nova_Object*)nova_null;
+}
+
+void compiler_tree_nodes_exceptionhandling_Nova_Catch_Nova_super(compiler_tree_nodes_exceptionhandling_Nova_Catch* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
 }
 

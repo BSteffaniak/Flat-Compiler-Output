@@ -158,6 +158,7 @@ nova_env novaEnv = {
 &nova_datastruct_list_Nova_Array_Nova_indexOf,
 &nova_datastruct_list_Nova_Array_Nova_replace,
 &nova_datastruct_list_Nova_Array_Nova_swap,
+&nova_datastruct_list_Nova_Array_0_Nova_increaseSize,
 &nova_datastruct_list_Nova_Array_Nova_sumSize,
 0,
 0,
@@ -963,6 +964,22 @@ nova_env novaEnv = {
 {
 &compiler_tree_nodes_arrays_Nova_ArrayAccess_Nova_parse,
 &compiler_tree_nodes_arrays_Nova_ArrayAccess_Nova_construct,
+},
+
+{
+&compiler_tree_nodes_controlstructures_Nova_ControlStructure_Nova_construct,
+},
+
+{
+&compiler_tree_nodes_controlstructures_Nova_ElseStatement_Nova_construct,
+},
+
+{
+&compiler_tree_nodes_controlstructures_Nova_IfStatement_Nova_construct,
+},
+
+{
+&compiler_tree_nodes_exceptionhandling_Nova_Catch_Nova_construct,
 },
 
 {
