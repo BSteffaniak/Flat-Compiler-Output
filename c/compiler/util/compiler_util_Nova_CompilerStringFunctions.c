@@ -97,7 +97,7 @@ char compiler_util_Nova_CompilerStringFunctions_static_Nova_validBounds(compiler
 char compiler_util_Nova_CompilerStringFunctions_Nova_testLambda43(nova_Nova_String* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* _1, Context1* context);
 int compiler_util_Nova_CompilerStringFunctions_Nova_testLambda44(nova_Nova_String* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* str, char c, int i, int dir, Context2* context);
 nova_datastruct_list_Nova_Array* generated24(compiler_util_Nova_CompilerStringFunctions* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* value0);
-void compiler_util_Nova_CompilerStringFunctions_Nova_testLambda106(nova_Nova_String* this, nova_exception_Nova_ExceptionData* exceptionData, nova_regex_Nova_Match* match, int _2, nova_datastruct_list_Nova_Array* _3, Context3* context);
+void compiler_util_Nova_CompilerStringFunctions_Nova_testLambda107(nova_Nova_String* this, nova_exception_Nova_ExceptionData* exceptionData, nova_regex_Nova_Match* match, int _2, nova_datastruct_list_Nova_Array* _3, Context3* context);
 
 
 
@@ -897,7 +897,7 @@ int compiler_util_Nova_CompilerStringFunctions_1_Nova_findStringInBaseScope(nova
 					nova_datastruct_list_Nova_Array* l1_Nova_matches = (nova_datastruct_list_Nova_Array*)nova_null;
 					int l1_Nova_lastIndex = 0;
 					char l1_Nova_sameLine = 0;
-					Context3 contextArg106 = 
+					Context3 contextArg107 = 
 					{
 						&l1_Nova_tabs,
 						&l1_Nova_sameLine,
@@ -910,7 +910,7 @@ int compiler_util_Nova_CompilerStringFunctions_1_Nova_findStringInBaseScope(nova
 					l1_Nova_matches = nova_regex_Nova_Regex_static_Nova_getMatches(0, exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("[\\}\\{\\)\\(\n]")), this);
 					l1_Nova_lastIndex = (int)(0);
 					l1_Nova_sameLine = 0;
-					nova_datastruct_list_Nova_List_virtual0_Nova_forEach((nova_datastruct_list_Nova_List*)(l1_Nova_matches), exceptionData, (nova_datastruct_list_Nova_List_closure3_Nova_func)&compiler_util_Nova_CompilerStringFunctions_Nova_testLambda106, this, &contextArg106);
+					nova_datastruct_list_Nova_List_virtual0_Nova_forEach((nova_datastruct_list_Nova_List*)(l1_Nova_matches), exceptionData, (nova_datastruct_list_Nova_List_closure3_Nova_func)&compiler_util_Nova_CompilerStringFunctions_Nova_testLambda107, this, &contextArg107);
 					l1_Nova_output = (nova_Nova_String*)(nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)(l1_Nova_output), exceptionData, nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)(l1_Nova_tabs), exceptionData, nova_Nova_String_Nova_substring(this, exceptionData, l1_Nova_lastIndex, (intptr_t)nova_null))));
 					return l1_Nova_output;
 				}
@@ -939,7 +939,7 @@ int compiler_util_Nova_CompilerStringFunctions_1_Nova_findStringInBaseScope(nova
 					return nova_datastruct_list_Nova_Array_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)(l1_Nova_temp), 1);
 				}
 				
-				void compiler_util_Nova_CompilerStringFunctions_Nova_testLambda106(nova_Nova_String* this, nova_exception_Nova_ExceptionData* exceptionData, nova_regex_Nova_Match* match, int _2, nova_datastruct_list_Nova_Array* _3, Context3* context)
+				void compiler_util_Nova_CompilerStringFunctions_Nova_testLambda107(nova_Nova_String* this, nova_exception_Nova_ExceptionData* exceptionData, nova_regex_Nova_Match* match, int _2, nova_datastruct_list_Nova_Array* _3, Context3* context)
 				{
 					char l1_Nova_c = 0;
 					

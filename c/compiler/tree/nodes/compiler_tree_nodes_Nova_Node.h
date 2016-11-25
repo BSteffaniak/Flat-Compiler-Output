@@ -37,7 +37,6 @@ typedef struct compiler_tree_nodes_Nova_Node compiler_tree_nodes_Nova_Node;
 #include <nova/nova_Nova_System.h>
 #include <nova/nova_Nova_Class.h>
 #include <nova/regex/nova_regex_Nova_Pattern.h>
-#include <compiler/compiler_Nova_SyntaxMessage.h>
 #include <compiler/tree/nodes/annotations/compiler_tree_nodes_annotations_Nova_Annotatable.h>
 #include <compiler/tree/nodes/annotations/compiler_tree_nodes_annotations_Nova_Annotation.h>
 #include <compiler/tree/nodes/exceptionhandling/compiler_tree_nodes_exceptionhandling_Nova_Try.h>
@@ -115,8 +114,6 @@ compiler_tree_nodes_Nova_Node* compiler_tree_nodes_Nova_Node_Nova_clone(compiler
 char compiler_tree_nodes_Nova_Node_Nova_replace(compiler_tree_nodes_Nova_Node* this, nova_exception_Nova_ExceptionData* exceptionData, compiler_tree_nodes_Nova_Node* toReplace, compiler_tree_nodes_Nova_Node* replacement);
 char compiler_tree_nodes_Nova_Node_Nova_validateTypes(compiler_tree_nodes_Nova_Node* this, nova_exception_Nova_ExceptionData* exceptionData);
 char compiler_tree_nodes_Nova_Node_Nova_parsePlaceholders(compiler_tree_nodes_Nova_Node* this, nova_exception_Nova_ExceptionData* exceptionData);
-nova_Nova_Object* compiler_tree_nodes_Nova_Node_0_static_Nova_invalidParse(compiler_tree_nodes_Nova_Node* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* message, compiler_tree_nodes_Nova_Node* node);
-nova_Nova_Object* compiler_tree_nodes_Nova_Node_1_static_Nova_invalidParse(compiler_tree_nodes_Nova_Node* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* message, compiler_tree_nodes_Nova_Node* node, int condition);
 compiler_tree_nodes_Nova_Node* compiler_tree_nodes_Nova_Node_Nova_cloneTo(compiler_tree_nodes_Nova_Node* this, nova_exception_Nova_ExceptionData* exceptionData, compiler_tree_nodes_Nova_Node* other);
 nova_Nova_String* compiler_tree_nodes_Nova_Node_Nova_toNova(compiler_tree_nodes_Nova_Node* this, nova_exception_Nova_ExceptionData* exceptionData);
 nova_Nova_String* compiler_tree_nodes_Nova_Node_Nova_toString(compiler_tree_nodes_Nova_Node* this, nova_exception_Nova_ExceptionData* exceptionData);

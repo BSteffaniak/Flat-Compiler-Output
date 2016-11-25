@@ -109,7 +109,6 @@ void compiler_Nova_InvalidParseException_Nova_destroy(compiler_Nova_InvalidParse
 
 void compiler_Nova_InvalidParseException_Nova_this(compiler_Nova_InvalidParseException* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* message, compiler_tree_nodes_Nova_Node* node)
 {
-	message = (nova_Nova_String*)(message == 0 ? (nova_Nova_Object*)nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("")) : (nova_Nova_Object*)message);
 	node = (compiler_tree_nodes_Nova_Node*)(node == 0 ? (nova_Nova_Object*)(nova_Nova_Object*)nova_null : (nova_Nova_Object*)node);
 	nova_exception_Nova_Exception_Nova_this((nova_exception_Nova_Exception*)(this), exceptionData, message);
 	this->compiler_Nova_InvalidParseException_Nova_node = node;
