@@ -41,6 +41,7 @@ typedef struct compiler_tree_nodes_variables_Nova_VariableDeclaration compiler_t
 #include <compiler/util/compiler_util_Nova_Location.h>
 #include <compiler/tree/nodes/compiler_tree_nodes_Nova_Identifier.h>
 #include <compiler/tree/nodes/compiler_tree_nodes_Nova_Value.h>
+#include <nova/datastruct/nova_datastruct_Nova_Tuple2.h>
 #include <compiler/compiler_Nova_SyntaxMessage.h>
 #include <compiler/compiler_Nova_InvalidParseException.h>
 #include <compiler/tree/nodes/arrays/compiler_tree_nodes_arrays_Nova_ArrayAccess.h>

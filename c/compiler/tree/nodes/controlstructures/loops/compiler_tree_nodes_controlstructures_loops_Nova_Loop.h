@@ -43,6 +43,7 @@ typedef struct compiler_tree_nodes_controlstructures_loops_Nova_Loop compiler_tr
 #include <compiler/tree/nodes/controlstructures/loops/compiler_tree_nodes_controlstructures_loops_Nova_ForEachLoop.h>
 #include <compiler/tree/nodes/controlstructures/loops/compiler_tree_nodes_controlstructures_loops_Nova_WhileLoop.h>
 #include <compiler/tree/nodes/compiler_tree_nodes_Nova_Scope.h>
+#include <compiler/compiler_Nova_InvalidParseException.h>
 #include <compiler/tree/nodes/annotations/compiler_tree_nodes_annotations_Nova_Annotatable.h>
 #include <compiler/tree/nodes/annotations/compiler_tree_nodes_annotations_Nova_Annotation.h>
 #include <compiler/tree/nodes/exceptionhandling/compiler_tree_nodes_exceptionhandling_Nova_Try.h>

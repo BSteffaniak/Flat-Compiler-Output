@@ -52,6 +52,7 @@ typedef struct compiler_tree_nodes_Nova_ClassDeclaration compiler_tree_nodes_Nov
 #include <compiler/tree/nodes/compiler_tree_nodes_Nova_Type.h>
 #include <compiler/tree/nodes/compiler_tree_nodes_Nova_Value.h>
 #include <compiler/tree/nodes/compiler_tree_nodes_Nova_Identifier.h>
+#include <nova/datastruct/nova_datastruct_Nova_Tuple2.h>
 #include <compiler/compiler_Nova_InvalidParseException.h>
 #include <compiler/tree/nodes/arrays/compiler_tree_nodes_arrays_Nova_ArrayAccess.h>
 #include <compiler/tree/nodes/operations/compiler_tree_nodes_operations_Nova_Operation.h>

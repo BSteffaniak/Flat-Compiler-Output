@@ -53,6 +53,7 @@ extern compiler_tree_nodes_operations_vtable_Assignable compiler_tree_nodes_oper
 #include <nova/datastruct/nova_datastruct_Nova_ReversibleHashMap.h>
 #include <nova/datastruct/nova_datastruct_Nova_Tree.h>
 #include <nova/datastruct/nova_datastruct_Nova_Tuple.h>
+#include <nova/datastruct/nova_datastruct_Nova_Tuple2.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_Array.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_ArrayIterator.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_CharArray.h>
@@ -206,6 +207,7 @@ extern compiler_tree_nodes_operations_vtable_Assignable compiler_tree_nodes_oper
 #include <compiler/tree/nodes/compiler_tree_nodes_Nova_Value.h>
 #include <compiler/tree/nodes/annotations/compiler_tree_nodes_annotations_Nova_Annotatable.h>
 #include <compiler/tree/nodes/annotations/compiler_tree_nodes_annotations_Nova_Annotation.h>
+#include <compiler/tree/nodes/annotations/compiler_tree_nodes_annotations_Nova_OverrideAnnotation.h>
 #include <compiler/tree/nodes/annotations/compiler_tree_nodes_annotations_Nova_PrimitiveArrayAnnotation.h>
 #include <compiler/tree/nodes/annotations/compiler_tree_nodes_annotations_Nova_TargetAnnotation.h>
 #include <compiler/tree/nodes/arrays/compiler_tree_nodes_arrays_Nova_ArrayAccess.h>

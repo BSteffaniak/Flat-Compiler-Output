@@ -50,6 +50,7 @@ typedef struct compiler_tree_nodes_functions_Nova_FunctionCall compiler_tree_nod
 #include <compiler/tree/nodes/compiler_tree_nodes_Nova_Identifier.h>
 #include <compiler/tree/nodes/compiler_tree_nodes_Nova_Accessible.h>
 #include <compiler/tree/nodes/operations/compiler_tree_nodes_operations_Nova_Assignable.h>
+#include <nova/datastruct/nova_datastruct_Nova_Tuple2.h>
 #include <compiler/compiler_Nova_SyntaxMessage.h>
 #include <compiler/tree/nodes/arrays/compiler_tree_nodes_arrays_Nova_ArrayAccess.h>
 #include <compiler/tree/nodes/operations/compiler_tree_nodes_operations_Nova_Operation.h>

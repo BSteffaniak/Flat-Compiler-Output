@@ -148,6 +148,10 @@ nova_env novaEnv = {
 },
 
 {
+&nova_datastruct_Nova_Tuple2_Nova_construct,
+},
+
+{
 &nova_datastruct_list_Nova_Array_Nova_fillRemaining,
 &nova_datastruct_list_Nova_Array_Nova_addAll,
 0,
@@ -945,6 +949,7 @@ nova_env novaEnv = {
 0,
 &compiler_tree_nodes_Nova_Value_Nova_invalidTypeError,
 0,
+&compiler_tree_nodes_Nova_Value_Nova_writeArrayAccess,
 &compiler_tree_nodes_Nova_Value_Nova_construct,
 },
 
@@ -958,6 +963,10 @@ nova_env novaEnv = {
 },
 
 {
+&compiler_tree_nodes_annotations_Nova_OverrideAnnotation_Nova_construct,
+},
+
+{
 &compiler_tree_nodes_annotations_Nova_PrimitiveArrayAnnotation_Nova_construct,
 },
 
@@ -967,6 +976,7 @@ nova_env novaEnv = {
 
 {
 &compiler_tree_nodes_arrays_Nova_ArrayAccess_Nova_parse,
+&compiler_tree_nodes_arrays_Nova_ArrayAccess_Nova_parseDimension,
 &compiler_tree_nodes_arrays_Nova_ArrayAccess_Nova_construct,
 },
 

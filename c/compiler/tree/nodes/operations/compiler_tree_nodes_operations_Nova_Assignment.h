@@ -49,6 +49,7 @@ typedef struct compiler_tree_nodes_operations_Nova_Assignment compiler_tree_node
 #include <compiler/tree/nodes/operations/compiler_tree_nodes_operations_Nova_Operation.h>
 #include <compiler/tree/nodes/operations/compiler_tree_nodes_operations_Nova_Operator.h>
 #include <compiler/compiler_Nova_InvalidParseException.h>
+#include <nova/datastruct/nova_datastruct_Nova_Tuple2.h>
 #include <compiler/tree/nodes/arrays/compiler_tree_nodes_arrays_Nova_ArrayAccess.h>
 #include <compiler/tree/nodes/functions/compiler_tree_nodes_functions_Nova_FunctionCall.h>
 #include <compiler/tree/nodes/functions/compiler_tree_nodes_functions_Nova_Instantiation.h>

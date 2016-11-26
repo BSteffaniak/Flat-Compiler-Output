@@ -41,6 +41,7 @@ typedef struct compiler_tree_nodes_generics_Nova_GenericArgument compiler_tree_n
 #include <compiler/tree/nodes/compiler_tree_nodes_Nova_Node.h>
 #include <compiler/tree/nodes/compiler_tree_nodes_Nova_Value.h>
 #include <compiler/tree/nodes/compiler_tree_nodes_Nova_Type.h>
+#include <nova/datastruct/nova_datastruct_Nova_Tuple2.h>
 #include <compiler/compiler_Nova_SyntaxMessage.h>
 #include <compiler/compiler_Nova_InvalidParseException.h>
 #include <compiler/tree/nodes/arrays/compiler_tree_nodes_arrays_Nova_ArrayAccess.h>

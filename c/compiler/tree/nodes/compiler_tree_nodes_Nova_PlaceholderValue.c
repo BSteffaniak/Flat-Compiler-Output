@@ -31,6 +31,7 @@
 #include <compiler/tree/nodes/compiler_tree_nodes_Nova_Node.h>
 #include <compiler/tree/nodes/compiler_tree_nodes_Nova_Scope.h>
 #include <compiler/tree/nodes/compiler_tree_nodes_Nova_Value.h>
+#include <nova/datastruct/nova_datastruct_Nova_Tuple2.h>
 #include <compiler/compiler_Nova_SyntaxMessage.h>
 #include <compiler/compiler_Nova_InvalidParseException.h>
 #include <compiler/tree/nodes/arrays/compiler_tree_nodes_arrays_Nova_ArrayAccess.h>

@@ -33,6 +33,7 @@
 #include <compiler/compiler_Nova_SyntaxMessage.h>
 #include <compiler/util/compiler_util_Nova_Location.h>
 #include <compiler/tree/nodes/controlstructures/compiler_tree_nodes_controlstructures_Nova_ControlStructure.h>
+#include <compiler/compiler_Nova_InvalidParseException.h>
 #include <compiler/tree/nodes/annotations/compiler_tree_nodes_annotations_Nova_Annotatable.h>
 #include <compiler/tree/nodes/annotations/compiler_tree_nodes_annotations_Nova_Annotation.h>
 #include <compiler/tree/nodes/exceptionhandling/compiler_tree_nodes_exceptionhandling_Nova_Try.h>

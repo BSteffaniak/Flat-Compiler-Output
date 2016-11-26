@@ -37,6 +37,7 @@ typedef struct compiler_tree_nodes_Nova_Value compiler_tree_nodes_Nova_Value;
 #include <nova/nova_Nova_System.h>
 #include <nova/nova_Nova_Class.h>
 #include <nova/regex/nova_regex_Nova_Pattern.h>
+#include <nova/datastruct/nova_datastruct_Nova_Tuple2.h>
 #include <compiler/compiler_Nova_SyntaxMessage.h>
 #include <compiler/compiler_Nova_InvalidParseException.h>
 #include <compiler/util/compiler_util_Nova_Location.h>
@@ -129,6 +130,7 @@ char compiler_tree_nodes_Nova_Value_Nova_parseType(compiler_tree_nodes_Nova_Valu
 char compiler_tree_nodes_Nova_Value_Nova_validateTypes(compiler_tree_nodes_Nova_Value* this, nova_exception_Nova_ExceptionData* exceptionData);
 void compiler_tree_nodes_Nova_Value_Nova_invalidTypeError(compiler_tree_nodes_Nova_Value* this, nova_exception_Nova_ExceptionData* exceptionData, compiler_tree_nodes_Nova_Type* type, int throwException);
 nova_Nova_String* compiler_tree_nodes_Nova_Value_Nova_writeType(compiler_tree_nodes_Nova_Value* this, nova_exception_Nova_ExceptionData* exceptionData);
+nova_Nova_String* compiler_tree_nodes_Nova_Value_Nova_writeArrayAccess(compiler_tree_nodes_Nova_Value* this, nova_exception_Nova_ExceptionData* exceptionData);
 compiler_tree_nodes_Nova_Value* compiler_tree_nodes_Nova_Value_Nova_cloneTo(compiler_tree_nodes_Nova_Value* this, nova_exception_Nova_ExceptionData* exceptionData, compiler_tree_nodes_Nova_Value* other);
 compiler_tree_nodes_Nova_Type* compiler_tree_nodes_Nova_Value_Accessorfunc_Nova_type(compiler_tree_nodes_Nova_Value* this, nova_exception_Nova_ExceptionData* exceptionData);
 compiler_tree_nodes_Nova_Type* compiler_tree_nodes_Nova_Value_Mutatorfunc_Nova_type(compiler_tree_nodes_Nova_Value* this, nova_exception_Nova_ExceptionData* exceptionData, compiler_tree_nodes_Nova_Type* value);

@@ -28,7 +28,9 @@
 #include <nova/nova_Nova_Class.h>
 #include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <compiler/tree/nodes/compiler_tree_nodes_Nova_Node.h>
+#include <compiler/tree/nodes/compiler_tree_nodes_Nova_Value.h>
 #include <compiler/util/compiler_util_Nova_Location.h>
+#include <compiler/compiler_Nova_InvalidParseException.h>
 #include <compiler/tree/nodes/annotations/compiler_tree_nodes_annotations_Nova_Annotatable.h>
 #include <compiler/tree/nodes/annotations/compiler_tree_nodes_annotations_Nova_Annotation.h>
 #include <compiler/tree/nodes/exceptionhandling/compiler_tree_nodes_exceptionhandling_Nova_Try.h>
@@ -42,6 +44,9 @@
 #include <nova/NativeObject.h>
 #include <nova/operators/nova_operators_Nova_Equals.h>
 
+typedef struct
+{
+} Context1;
 
 
 compiler_tree_nodes_arrays_ArrayAccess_Extension_VTable compiler_tree_nodes_arrays_ArrayAccess_Extension_VTable_val =
@@ -90,7 +95,7 @@ compiler_tree_nodes_arrays_ArrayAccess_Extension_VTable compiler_tree_nodes_arra
 	compiler_tree_nodes_Nova_Node_Nova_validateTypes,
 	compiler_tree_nodes_Nova_Node_Nova_parsePlaceholders,
 	compiler_tree_nodes_Nova_Node_Nova_cloneTo,
-	compiler_tree_nodes_Nova_Node_Nova_toNova,
+	compiler_tree_nodes_arrays_Nova_ArrayAccess_Nova_toNova,
 	compiler_tree_nodes_Nova_Node_Mutator_Nova_scope,
 	compiler_tree_nodes_Nova_Node_Accessor_Nova_program,
 	compiler_tree_nodes_Nova_Node_Accessor_Nova_parentFile,
@@ -101,6 +106,9 @@ compiler_tree_nodes_arrays_ArrayAccess_Extension_VTable compiler_tree_nodes_arra
 };
 
 
+
+char compiler_tree_nodes_arrays_Nova_ArrayAccess_Nova_parseDimensions(compiler_tree_nodes_arrays_Nova_ArrayAccess* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_list_Nova_Array* input);
+nova_Nova_String* compiler_tree_nodes_arrays_Nova_ArrayAccess_Nova_testLambda25(compiler_tree_nodes_arrays_Nova_ArrayAccess* this, nova_exception_Nova_ExceptionData* exceptionData, compiler_tree_nodes_Nova_Value* _1, int _2, nova_datastruct_list_Nova_Array* _3, Context1* context);
 void compiler_tree_nodes_arrays_Nova_ArrayAccess_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData)
 {
 	{
@@ -129,6 +137,7 @@ void compiler_tree_nodes_arrays_Nova_ArrayAccess_Nova_destroy(compiler_tree_node
 		return;
 	}
 	
+	nova_datastruct_list_Nova_Array_Nova_destroy(&(*this)->compiler_tree_nodes_arrays_Nova_ArrayAccess_Nova_dimensions, exceptionData);
 	
 	NOVA_FREE(*this);
 }
@@ -140,25 +149,48 @@ void compiler_tree_nodes_arrays_Nova_ArrayAccess_Nova_this(compiler_tree_nodes_a
 	compiler_tree_nodes_Nova_Node_Nova_this((compiler_tree_nodes_Nova_Node*)(this), exceptionData, parent, location);
 }
 
-compiler_tree_nodes_arrays_Nova_ArrayAccess* compiler_tree_nodes_arrays_Nova_ArrayAccess_Nova_parse(compiler_tree_nodes_arrays_Nova_ArrayAccess* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* input, compiler_tree_nodes_Nova_Node* parent, compiler_util_Nova_Location* location, int require)
+compiler_tree_nodes_arrays_Nova_ArrayAccess* compiler_tree_nodes_arrays_Nova_ArrayAccess_Nova_parse(compiler_tree_nodes_arrays_Nova_ArrayAccess* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_list_Nova_Array* input, compiler_tree_nodes_Nova_Node* parent, compiler_util_Nova_Location* location, int require)
 {
+	compiler_tree_nodes_arrays_Nova_ArrayAccess* l1_Nova_node = (compiler_tree_nodes_arrays_Nova_ArrayAccess*)nova_null;
+	
 	parent = (compiler_tree_nodes_Nova_Node*)(parent == 0 ? (nova_Nova_Object*)(nova_Nova_Object*)nova_null : (nova_Nova_Object*)parent);
 	location = (compiler_util_Nova_Location*)(location == 0 ? (nova_Nova_Object*)compiler_util_Nova_Location_Nova_INVALID : (nova_Nova_Object*)location);
 	require = (int)(require == (intptr_t)nova_null ? 1 : require);
-	if (input->nova_Nova_String_Nova_count >= 3 && (char)(intptr_t)nova_datastruct_list_Nova_CharArray_Accessorfunc_Nova_first((nova_datastruct_list_Nova_CharArray*)(input->nova_Nova_String_Nova_chars), exceptionData) == '[' && (char)(intptr_t)nova_datastruct_list_Nova_CharArray_Accessorfunc_Nova_last((nova_datastruct_list_Nova_CharArray*)(input->nova_Nova_String_Nova_chars), exceptionData) == ']')
+	l1_Nova_node = compiler_tree_nodes_arrays_Nova_ArrayAccess_Nova_construct(0, exceptionData, parent, location);
+	if (compiler_tree_nodes_arrays_Nova_ArrayAccess_Nova_parseDimensions(l1_Nova_node, exceptionData, input))
 	{
-		compiler_tree_nodes_arrays_Nova_ArrayAccess* l1_Nova_node = (compiler_tree_nodes_arrays_Nova_ArrayAccess*)nova_null;
-		
-		l1_Nova_node = compiler_tree_nodes_arrays_Nova_ArrayAccess_Nova_construct(0, exceptionData, parent, location);
-		if (1)
-		{
-			return l1_Nova_node;
-		}
+		return l1_Nova_node;
 	}
 	return (compiler_tree_nodes_arrays_Nova_ArrayAccess*)(nova_Nova_Object*)nova_null;
 }
 
+char compiler_tree_nodes_arrays_Nova_ArrayAccess_Nova_parseDimension(compiler_tree_nodes_arrays_Nova_ArrayAccess* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* dimension)
+{
+	return (nova_Nova_Object*)nova_datastruct_list_Nova_Array_virtual_Accessorfunc_Nova_last((nova_datastruct_list_Nova_Array*)(nova_datastruct_list_Nova_Array_0_Nova_add((nova_datastruct_list_Nova_Array*)(this->compiler_tree_nodes_arrays_Nova_ArrayAccess_Nova_dimensions), exceptionData, (nova_Nova_Object*)(compiler_tree_nodes_Nova_Value_0_static_Nova_parse(0, exceptionData, dimension, (compiler_tree_nodes_Nova_Node*)(this), 0, (intptr_t)nova_null)))), exceptionData) != (nova_Nova_Object*)(nova_Nova_Object*)nova_null;
+}
+
+char compiler_tree_nodes_arrays_Nova_ArrayAccess_Nova_parseDimensions(compiler_tree_nodes_arrays_Nova_ArrayAccess* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_list_Nova_Array* input)
+{
+	return nova_datastruct_list_Nova_List_virtual0_Nova_all((nova_datastruct_list_Nova_List*)(input), exceptionData, (nova_datastruct_list_Nova_List_closure12_Nova_allFunc)&compiler_tree_nodes_arrays_Nova_ArrayAccess_Nova_parseDimension, this, nova_null, 0);
+}
+
+nova_Nova_String* compiler_tree_nodes_arrays_Nova_ArrayAccess_Nova_toNova(compiler_tree_nodes_arrays_Nova_ArrayAccess* this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+	Context1 contextArg25 = 
+	{
+	};
+	
+	return nova_datastruct_list_Nova_List_virtual_Nova_join((nova_datastruct_list_Nova_List*)(nova_datastruct_list_Nova_List_virtual0_Nova_map((nova_datastruct_list_Nova_List*)(this->compiler_tree_nodes_arrays_Nova_ArrayAccess_Nova_dimensions), exceptionData, (nova_datastruct_list_Nova_List_closure6_Nova_mapFunc)&compiler_tree_nodes_arrays_Nova_ArrayAccess_Nova_testLambda25, this, &contextArg25)), exceptionData, 0);
+}
+
+nova_Nova_String* compiler_tree_nodes_arrays_Nova_ArrayAccess_Nova_testLambda25(compiler_tree_nodes_arrays_Nova_ArrayAccess* this, nova_exception_Nova_ExceptionData* exceptionData, compiler_tree_nodes_Nova_Value* _1, int _2, nova_datastruct_list_Nova_Array* _3, Context1* context)
+{
+	return nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)(nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("["))), exceptionData, nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)((compiler_tree_nodes_Nova_Node_virtual_Nova_toNova((compiler_tree_nodes_Nova_Node*)(_1), exceptionData))), exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("]"))));
+}
+
 void compiler_tree_nodes_arrays_Nova_ArrayAccess_Nova_super(compiler_tree_nodes_arrays_Nova_ArrayAccess* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
+	this->compiler_tree_nodes_arrays_Nova_ArrayAccess_Nova_dimensions = (nova_datastruct_list_Nova_Array*)nova_null;
+	this->compiler_tree_nodes_arrays_Nova_ArrayAccess_Nova_dimensions = nova_datastruct_list_Nova_Array_0_Nova_construct(0, exceptionData);
 }
 
