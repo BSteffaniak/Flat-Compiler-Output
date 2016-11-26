@@ -158,7 +158,6 @@ nova_env novaEnv = {
 &nova_datastruct_list_Nova_Array_Nova_indexOf,
 &nova_datastruct_list_Nova_Array_Nova_replace,
 &nova_datastruct_list_Nova_Array_Nova_swap,
-&nova_datastruct_list_Nova_Array_0_Nova_increaseSize,
 &nova_datastruct_list_Nova_Array_Nova_sumSize,
 0,
 0,
@@ -813,6 +812,7 @@ nova_env novaEnv = {
 &compiler_tree_nodes_Nova_Accessible_1_Nova_getNextAccessedOfType,
 &compiler_tree_nodes_Nova_Accessible_Nova_getRootReferenceNode,
 &compiler_tree_nodes_Nova_Accessible_Nova_getReferenceNode,
+&compiler_tree_nodes_Nova_Accessible_0_Nova_cloneTo,
 &compiler_tree_nodes_Nova_Accessible_Nova_writeAccessedNodes,
 },
 
@@ -894,6 +894,10 @@ nova_env novaEnv = {
 
 {
 &compiler_tree_nodes_Nova_NovaInterface_Nova_construct,
+},
+
+{
+&compiler_tree_nodes_Nova_NumericRange_Nova_construct,
 },
 
 {
@@ -979,6 +983,18 @@ nova_env novaEnv = {
 },
 
 {
+&compiler_tree_nodes_controlstructures_loops_Nova_ForEachLoop_Nova_construct,
+},
+
+{
+&compiler_tree_nodes_controlstructures_loops_Nova_Loop_Nova_construct,
+},
+
+{
+&compiler_tree_nodes_controlstructures_loops_Nova_WhileLoop_Nova_construct,
+},
+
+{
 &compiler_tree_nodes_exceptionhandling_Nova_Catch_Nova_construct,
 },
 
@@ -1019,6 +1035,10 @@ nova_env novaEnv = {
 &compiler_tree_nodes_functions_Nova_FunctionDeclaration_Nova_writeHeader,
 0,
 &compiler_tree_nodes_functions_Nova_FunctionDeclaration_Nova_construct,
+},
+
+{
+&compiler_tree_nodes_functions_Nova_Instantiation_Nova_construct,
 },
 
 {
@@ -1150,6 +1170,7 @@ nova_env novaEnv = {
 &compiler_util_Nova_CompilerStringFunctions_1_Nova_isStrictlyOperator,
 &compiler_util_Nova_CompilerStringFunctions_0_Nova_findCharInBaseScope,
 &compiler_util_Nova_CompilerStringFunctions_1_Nova_findCharInBaseScope,
+&compiler_util_Nova_CompilerStringFunctions_Nova_findWordInBaseScope,
 &compiler_util_Nova_CompilerStringFunctions_0_Nova_findStringInBaseScope,
 &compiler_util_Nova_CompilerStringFunctions_1_Nova_findStringInBaseScope,
 &compiler_util_Nova_CompilerStringFunctions_Nova_calculateStatementEnd,

@@ -34,6 +34,7 @@
 #include <compiler/tree/nodes/exceptionhandling/compiler_tree_nodes_exceptionhandling_Nova_Catch.h>
 #include <compiler/tree/nodes/controlstructures/compiler_tree_nodes_controlstructures_Nova_IfStatement.h>
 #include <compiler/tree/nodes/controlstructures/compiler_tree_nodes_controlstructures_Nova_ElseStatement.h>
+#include <compiler/tree/nodes/controlstructures/loops/compiler_tree_nodes_controlstructures_loops_Nova_Loop.h>
 #include <compiler/tree/nodes/variables/compiler_tree_nodes_variables_Nova_VariableDeclaration.h>
 #include <compiler/tree/nodes/compiler_tree_nodes_Nova_Node.h>
 #include <compiler/tree/nodes/compiler_tree_nodes_Nova_NodeList.h>
@@ -185,7 +186,7 @@ compiler_tree_nodes_Nova_Node* compiler_tree_nodes_Nova_Scope_Nova_parseStatemen
 	l1_Nova_node = (compiler_tree_nodes_Nova_Node*)((nova_Nova_Object*)nova_null);
 	if (!(l1_Nova_node != (compiler_tree_nodes_Nova_Node*)nova_null))
 	{
-		l1_Nova_node = compiler_tree_nodes_Nova_Accessible_static_Nova_parseNodeAccess(0, exceptionData, input, parent, require);
+		l1_Nova_node = compiler_tree_nodes_Nova_Accessible_static_Nova_parseDotAccess(0, exceptionData, input, parent, require);
 		if (!(l1_Nova_node != (compiler_tree_nodes_Nova_Node*)nova_null))
 		{
 			l1_Nova_node = (compiler_tree_nodes_Nova_Node*)(compiler_tree_nodes_controlstructures_Nova_IfStatement_static_Nova_parse(0, exceptionData, input, parent, location, require));
@@ -194,16 +195,20 @@ compiler_tree_nodes_Nova_Node* compiler_tree_nodes_Nova_Scope_Nova_parseStatemen
 				l1_Nova_node = (compiler_tree_nodes_Nova_Node*)(compiler_tree_nodes_controlstructures_Nova_ElseStatement_static_Nova_parse(0, exceptionData, input, parent, location, require));
 				if (!(l1_Nova_node != (compiler_tree_nodes_Nova_Node*)nova_null))
 				{
-					l1_Nova_node = (compiler_tree_nodes_Nova_Node*)(compiler_tree_nodes_Nova_Return_static_Nova_parse(0, exceptionData, input, parent, location, require));
+					l1_Nova_node = (compiler_tree_nodes_Nova_Node*)(compiler_tree_nodes_controlstructures_loops_Nova_Loop_static_Nova_parse(0, exceptionData, input, parent, location, require));
 					if (!(l1_Nova_node != (compiler_tree_nodes_Nova_Node*)nova_null))
 					{
-						l1_Nova_node = (compiler_tree_nodes_Nova_Node*)(compiler_tree_nodes_operations_Nova_Assignment_static_Nova_parse(0, exceptionData, input, parent, location, require));
+						l1_Nova_node = (compiler_tree_nodes_Nova_Node*)(compiler_tree_nodes_Nova_Return_static_Nova_parse(0, exceptionData, input, parent, location, require));
 						if (!(l1_Nova_node != (compiler_tree_nodes_Nova_Node*)nova_null))
 						{
-							l1_Nova_node = (compiler_tree_nodes_Nova_Node*)(compiler_tree_nodes_operations_Nova_Operation_static_Nova_parse(0, exceptionData, input, parent, location, require));
+							l1_Nova_node = (compiler_tree_nodes_Nova_Node*)(compiler_tree_nodes_operations_Nova_Assignment_static_Nova_parse(0, exceptionData, input, parent, location, require));
 							if (!(l1_Nova_node != (compiler_tree_nodes_Nova_Node*)nova_null))
 							{
-								l1_Nova_node = (compiler_tree_nodes_Nova_Node*)(compiler_tree_nodes_Nova_Value_0_static_Nova_parse(0, exceptionData, input, parent, location, require));
+								l1_Nova_node = (compiler_tree_nodes_Nova_Node*)(compiler_tree_nodes_operations_Nova_Operation_static_Nova_parse(0, exceptionData, input, parent, location, require));
+								if (!(l1_Nova_node != (compiler_tree_nodes_Nova_Node*)nova_null))
+								{
+									l1_Nova_node = (compiler_tree_nodes_Nova_Node*)(compiler_tree_nodes_Nova_Value_0_static_Nova_parse(0, exceptionData, input, parent, location, require));
+								}
 							}
 						}
 					}

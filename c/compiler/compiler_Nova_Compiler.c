@@ -556,6 +556,7 @@ int main(int argc, char** argvs)
 		compiler_tree_nodes_NodeList_Extension_VTable_val.classInstance = nova_Nova_Class_Nova_construct(0, exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("compiler/tree/nodes/NodeList")), 0);
 		compiler_tree_nodes_NovaFile_Extension_VTable_val.classInstance = nova_Nova_Class_Nova_construct(0, exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("compiler/tree/nodes/NovaFile")), 0);
 		compiler_tree_nodes_NovaInterface_Extension_VTable_val.classInstance = nova_Nova_Class_Nova_construct(0, exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("compiler/tree/nodes/NovaInterface")), 0);
+		compiler_tree_nodes_NumericRange_Extension_VTable_val.classInstance = nova_Nova_Class_Nova_construct(0, exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("compiler/tree/nodes/NumericRange")), 0);
 		compiler_tree_nodes_Package_Extension_VTable_val.classInstance = nova_Nova_Class_Nova_construct(0, exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("compiler/tree/nodes/Package")), 0);
 		compiler_tree_nodes_PlaceholderValue_Extension_VTable_val.classInstance = nova_Nova_Class_Nova_construct(0, exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("compiler/tree/nodes/PlaceholderValue")), 0);
 		compiler_tree_nodes_Program_Extension_VTable_val.classInstance = nova_Nova_Class_Nova_construct(0, exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("compiler/tree/nodes/Program")), 0);
@@ -574,6 +575,9 @@ int main(int argc, char** argvs)
 		compiler_tree_nodes_controlstructures_ControlStructure_Extension_VTable_val.classInstance = nova_Nova_Class_Nova_construct(0, exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("compiler/tree/nodes/controlstructures/ControlStructure")), 0);
 		compiler_tree_nodes_controlstructures_ElseStatement_Extension_VTable_val.classInstance = nova_Nova_Class_Nova_construct(0, exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("compiler/tree/nodes/controlstructures/ElseStatement")), 0);
 		compiler_tree_nodes_controlstructures_IfStatement_Extension_VTable_val.classInstance = nova_Nova_Class_Nova_construct(0, exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("compiler/tree/nodes/controlstructures/IfStatement")), 0);
+		compiler_tree_nodes_controlstructures_loops_ForEachLoop_Extension_VTable_val.classInstance = nova_Nova_Class_Nova_construct(0, exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("compiler/tree/nodes/controlstructures/loops/ForEachLoop")), 0);
+		compiler_tree_nodes_controlstructures_loops_Loop_Extension_VTable_val.classInstance = nova_Nova_Class_Nova_construct(0, exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("compiler/tree/nodes/controlstructures/loops/Loop")), 0);
+		compiler_tree_nodes_controlstructures_loops_WhileLoop_Extension_VTable_val.classInstance = nova_Nova_Class_Nova_construct(0, exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("compiler/tree/nodes/controlstructures/loops/WhileLoop")), 0);
 		compiler_tree_nodes_exceptionhandling_Catch_Extension_VTable_val.classInstance = nova_Nova_Class_Nova_construct(0, exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("compiler/tree/nodes/exceptionhandling/Catch")), 0);
 		compiler_tree_nodes_exceptionhandling_ExceptionHandler_Extension_VTable_val.classInstance = nova_Nova_Class_Nova_construct(0, exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("compiler/tree/nodes/exceptionhandling/ExceptionHandler")), 0);
 		compiler_tree_nodes_exceptionhandling_Try_Extension_VTable_val.classInstance = nova_Nova_Class_Nova_construct(0, exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("compiler/tree/nodes/exceptionhandling/Try")), 0);
@@ -583,6 +587,7 @@ int main(int argc, char** argvs)
 		compiler_tree_nodes_functions_FunctionArgumentList_Extension_VTable_val.classInstance = nova_Nova_Class_Nova_construct(0, exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("compiler/tree/nodes/functions/FunctionArgumentList")), 0);
 		compiler_tree_nodes_functions_FunctionCall_Extension_VTable_val.classInstance = nova_Nova_Class_Nova_construct(0, exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("compiler/tree/nodes/functions/FunctionCall")), 0);
 		compiler_tree_nodes_functions_FunctionDeclaration_Extension_VTable_val.classInstance = nova_Nova_Class_Nova_construct(0, exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("compiler/tree/nodes/functions/FunctionDeclaration")), 0);
+		compiler_tree_nodes_functions_Instantiation_Extension_VTable_val.classInstance = nova_Nova_Class_Nova_construct(0, exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("compiler/tree/nodes/functions/Instantiation")), 0);
 		compiler_tree_nodes_functions_MutatorFunction_Extension_VTable_val.classInstance = nova_Nova_Class_Nova_construct(0, exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("compiler/tree/nodes/functions/MutatorFunction")), 0);
 		compiler_tree_nodes_functions_Parameter_Extension_VTable_val.classInstance = nova_Nova_Class_Nova_construct(0, exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("compiler/tree/nodes/functions/Parameter")), 0);
 		compiler_tree_nodes_functions_ParameterList_Extension_VTable_val.classInstance = nova_Nova_Class_Nova_construct(0, exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("compiler/tree/nodes/functions/ParameterList")), 0);
@@ -793,6 +798,7 @@ int main(int argc, char** argvs)
 		compiler_tree_nodes_NodeList_Extension_VTable_val.classInstance->nova_Nova_Class_Nova_extension = compiler_tree_nodes_Node_Extension_VTable_val.classInstance;
 		compiler_tree_nodes_NovaFile_Extension_VTable_val.classInstance->nova_Nova_Class_Nova_extension = compiler_tree_nodes_Node_Extension_VTable_val.classInstance;
 		compiler_tree_nodes_NovaInterface_Extension_VTable_val.classInstance->nova_Nova_Class_Nova_extension = compiler_tree_nodes_ClassDeclaration_Extension_VTable_val.classInstance;
+		compiler_tree_nodes_NumericRange_Extension_VTable_val.classInstance->nova_Nova_Class_Nova_extension = compiler_tree_nodes_functions_Instantiation_Extension_VTable_val.classInstance;
 		compiler_tree_nodes_Package_Extension_VTable_val.classInstance->nova_Nova_Class_Nova_extension = compiler_tree_nodes_Node_Extension_VTable_val.classInstance;
 		compiler_tree_nodes_PlaceholderValue_Extension_VTable_val.classInstance->nova_Nova_Class_Nova_extension = compiler_tree_nodes_Value_Extension_VTable_val.classInstance;
 		compiler_tree_nodes_Program_Extension_VTable_val.classInstance->nova_Nova_Class_Nova_extension = compiler_tree_nodes_NodeList_Extension_VTable_val.classInstance;
@@ -811,6 +817,9 @@ int main(int argc, char** argvs)
 		compiler_tree_nodes_controlstructures_ControlStructure_Extension_VTable_val.classInstance->nova_Nova_Class_Nova_extension = compiler_tree_nodes_Node_Extension_VTable_val.classInstance;
 		compiler_tree_nodes_controlstructures_ElseStatement_Extension_VTable_val.classInstance->nova_Nova_Class_Nova_extension = compiler_tree_nodes_controlstructures_ControlStructure_Extension_VTable_val.classInstance;
 		compiler_tree_nodes_controlstructures_IfStatement_Extension_VTable_val.classInstance->nova_Nova_Class_Nova_extension = compiler_tree_nodes_controlstructures_ControlStructure_Extension_VTable_val.classInstance;
+		compiler_tree_nodes_controlstructures_loops_ForEachLoop_Extension_VTable_val.classInstance->nova_Nova_Class_Nova_extension = compiler_tree_nodes_controlstructures_loops_Loop_Extension_VTable_val.classInstance;
+		compiler_tree_nodes_controlstructures_loops_Loop_Extension_VTable_val.classInstance->nova_Nova_Class_Nova_extension = compiler_tree_nodes_controlstructures_ControlStructure_Extension_VTable_val.classInstance;
+		compiler_tree_nodes_controlstructures_loops_WhileLoop_Extension_VTable_val.classInstance->nova_Nova_Class_Nova_extension = compiler_tree_nodes_controlstructures_loops_Loop_Extension_VTable_val.classInstance;
 		compiler_tree_nodes_exceptionhandling_Catch_Extension_VTable_val.classInstance->nova_Nova_Class_Nova_extension = compiler_tree_nodes_Node_Extension_VTable_val.classInstance;
 		compiler_tree_nodes_exceptionhandling_ExceptionHandler_Extension_VTable_val.classInstance->nova_Nova_Class_Nova_extension = compiler_tree_nodes_Node_Extension_VTable_val.classInstance;
 		compiler_tree_nodes_exceptionhandling_Try_Extension_VTable_val.classInstance->nova_Nova_Class_Nova_extension = compiler_tree_nodes_exceptionhandling_ExceptionHandler_Extension_VTable_val.classInstance;
@@ -820,6 +829,7 @@ int main(int argc, char** argvs)
 		compiler_tree_nodes_functions_FunctionCall_Extension_VTable_val.classInstance->nova_Nova_Class_Nova_extension = compiler_tree_nodes_variables_Variable_Extension_VTable_val.classInstance;
 		compiler_tree_nodes_functions_FunctionDeclaration_Extension_VTable_val.classInstance->nova_Nova_Class_Nova_extension = compiler_tree_nodes_variables_InstanceDeclaration_Extension_VTable_val.classInstance;
 		nova_datastruct_list_Nova_Array_0_Nova_add(compiler_tree_nodes_functions_FunctionDeclaration_Extension_VTable_val.classInstance->nova_Nova_Class_Nova_interfaces, exceptionData, (nova_Nova_Object*)compiler_tree_nodes_functions_CallableFunction_Extension_VTable_val.classInstance);
+		compiler_tree_nodes_functions_Instantiation_Extension_VTable_val.classInstance->nova_Nova_Class_Nova_extension = compiler_tree_nodes_functions_FunctionCall_Extension_VTable_val.classInstance;
 		compiler_tree_nodes_functions_MutatorFunction_Extension_VTable_val.classInstance->nova_Nova_Class_Nova_extension = compiler_tree_nodes_functions_PropertyFunction_Extension_VTable_val.classInstance;
 		compiler_tree_nodes_functions_Parameter_Extension_VTable_val.classInstance->nova_Nova_Class_Nova_extension = compiler_tree_nodes_variables_LocalDeclaration_Extension_VTable_val.classInstance;
 		compiler_tree_nodes_functions_ParameterList_Extension_VTable_val.classInstance->nova_Nova_Class_Nova_extension = compiler_tree_nodes_NodeList_Extension_VTable_val.classInstance;
@@ -1011,6 +1021,7 @@ int main(int argc, char** argvs)
 		compiler_tree_nodes_Nova_NodeList_Nova_init_static(exceptionData);
 		compiler_tree_nodes_Nova_NovaFile_Nova_init_static(exceptionData);
 		compiler_tree_nodes_Nova_NovaInterface_Nova_init_static(exceptionData);
+		compiler_tree_nodes_Nova_NumericRange_Nova_init_static(exceptionData);
 		compiler_tree_nodes_Nova_Package_Nova_init_static(exceptionData);
 		compiler_tree_nodes_Nova_PlaceholderValue_Nova_init_static(exceptionData);
 		compiler_tree_nodes_Nova_Program_Nova_init_static(exceptionData);
@@ -1029,6 +1040,9 @@ int main(int argc, char** argvs)
 		compiler_tree_nodes_controlstructures_Nova_ControlStructure_Nova_init_static(exceptionData);
 		compiler_tree_nodes_controlstructures_Nova_ElseStatement_Nova_init_static(exceptionData);
 		compiler_tree_nodes_controlstructures_Nova_IfStatement_Nova_init_static(exceptionData);
+		compiler_tree_nodes_controlstructures_loops_Nova_ForEachLoop_Nova_init_static(exceptionData);
+		compiler_tree_nodes_controlstructures_loops_Nova_Loop_Nova_init_static(exceptionData);
+		compiler_tree_nodes_controlstructures_loops_Nova_WhileLoop_Nova_init_static(exceptionData);
 		compiler_tree_nodes_exceptionhandling_Nova_Catch_Nova_init_static(exceptionData);
 		compiler_tree_nodes_exceptionhandling_Nova_ExceptionHandler_Nova_init_static(exceptionData);
 		compiler_tree_nodes_exceptionhandling_Nova_Try_Nova_init_static(exceptionData);
@@ -1038,6 +1052,7 @@ int main(int argc, char** argvs)
 		compiler_tree_nodes_functions_Nova_FunctionArgumentList_Nova_init_static(exceptionData);
 		compiler_tree_nodes_functions_Nova_FunctionCall_Nova_init_static(exceptionData);
 		compiler_tree_nodes_functions_Nova_FunctionDeclaration_Nova_init_static(exceptionData);
+		compiler_tree_nodes_functions_Nova_Instantiation_Nova_init_static(exceptionData);
 		compiler_tree_nodes_functions_Nova_MutatorFunction_Nova_init_static(exceptionData);
 		compiler_tree_nodes_functions_Nova_Parameter_Nova_init_static(exceptionData);
 		compiler_tree_nodes_functions_Nova_ParameterList_Nova_init_static(exceptionData);

@@ -130,9 +130,9 @@ void compiler_tree_Nova_StatementIterator_Nova_updateScopeProperties(compiler_tr
 	l1_Nova_afterIndex = compiler_util_Nova_CompilerStringFunctions_Nova_nextNonWhitespaceIndex(this->compiler_tree_Nova_StatementIterator_Nova_source, exceptionData, l1_Nova_nextIndex + 1, (intptr_t)nova_null, (intptr_t)nova_null);
 	l1_Nova_charAfter = nova_Nova_String_Nova_get(this->compiler_tree_Nova_StatementIterator_Nova_source, exceptionData, l1_Nova_afterIndex);
 	this->compiler_tree_Nova_StatementIterator_Nova_beginsScope = this->compiler_tree_Nova_StatementIterator_Nova_position < this->compiler_tree_Nova_StatementIterator_Nova_source->nova_Nova_String_Nova_count && l1_Nova_nextChar == '{';
-	this->compiler_tree_Nova_StatementIterator_Nova_endsScope = this->compiler_tree_Nova_StatementIterator_Nova_position < this->compiler_tree_Nova_StatementIterator_Nova_source->nova_Nova_String_Nova_count && l1_Nova_nextChar == '}';
-	this->compiler_tree_Nova_StatementIterator_Nova_scopesEnded = (int)(0);
-	if (!this->compiler_tree_Nova_StatementIterator_Nova_endsScope && l1_Nova_charAfter == '}')
+this->compiler_tree_Nova_StatementIterator_Nova_endsScope = this->compiler_tree_Nova_StatementIterator_Nova_position < this->compiler_tree_Nova_StatementIterator_Nova_source->nova_Nova_String_Nova_count && l1_Nova_nextChar == '}';
+this->compiler_tree_Nova_StatementIterator_Nova_scopesEnded = (int)(0);
+if (!this->compiler_tree_Nova_StatementIterator_Nova_endsScope && l1_Nova_charAfter == '}')
 {
 	this->compiler_tree_Nova_StatementIterator_Nova_endsScope = 1;
 	this->compiler_tree_Nova_StatementIterator_Nova_position = l1_Nova_afterIndex;

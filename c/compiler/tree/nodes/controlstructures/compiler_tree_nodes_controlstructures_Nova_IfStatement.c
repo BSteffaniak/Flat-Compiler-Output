@@ -159,35 +159,33 @@ compiler_tree_nodes_controlstructures_Nova_IfStatement* compiler_tree_nodes_cont
 		input = nova_Nova_String_Nova_trim(nova_Nova_String_Nova_substring(input, exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("if"))->nova_Nova_String_Nova_count, (intptr_t)nova_null), exceptionData, (intptr_t)nova_null, (intptr_t)nova_null, 0);
 		l1_Nova_node = compiler_tree_nodes_controlstructures_Nova_IfStatement_Nova_construct(0, exceptionData, parent, location);
 		if (nova_Nova_String_Nova_get(input, exceptionData, 0) == '(')
-			{
-				int l2_Nova_end = 0;
-				
-				l2_Nova_end = compiler_util_Nova_CompilerStringFunctions_0_Nova_findEndingMatch(input, exceptionData, 0, '(', ')', (intptr_t)nova_null, (intptr_t)nova_null);
-				input = nova_Nova_String_Nova_trim(nova_Nova_String_Nova_substring(input, exceptionData, 1, l2_Nova_end), exceptionData, (intptr_t)nova_null, (intptr_t)nova_null, 0);
-			}
-			if (!compiler_tree_nodes_controlstructures_Nova_IfStatement_Nova_parseCondition(l1_Nova_node, exceptionData, input))
-			{
-				compiler_Nova_SyntaxMessage_static_Nova_error(0, exceptionData, nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)(nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("Unable to parse if statement condition '"))), exceptionData, nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)((input)), exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("'")))), (compiler_tree_nodes_Nova_Node*)(l1_Nova_node), 0);
-				return (compiler_tree_nodes_controlstructures_Nova_IfStatement*)(nova_Nova_Object*)nova_null;
-			}
-			return l1_Nova_node;
-		}
+		{
+			int l2_Nova_end = 0;
+			
+			l2_Nova_end = compiler_util_Nova_CompilerStringFunctions_0_Nova_findEndingMatch(input, exceptionData, 0, '(', ')', (intptr_t)nova_null, (intptr_t)nova_null);
+		input = nova_Nova_String_Nova_trim(nova_Nova_String_Nova_substring(input, exceptionData, 1, l2_Nova_end), exceptionData, (intptr_t)nova_null, (intptr_t)nova_null, 0);
+	}
+	if (!compiler_tree_nodes_controlstructures_Nova_IfStatement_Nova_parseCondition(l1_Nova_node, exceptionData, input))
+	{
+		compiler_Nova_SyntaxMessage_static_Nova_error(0, exceptionData, nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)(nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("Unable to parse if statement condition '"))), exceptionData, nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)((input)), exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("'")))), (compiler_tree_nodes_Nova_Node*)(l1_Nova_node), 0);
 		return (compiler_tree_nodes_controlstructures_Nova_IfStatement*)(nova_Nova_Object*)nova_null;
 	}
-	
-	char compiler_tree_nodes_controlstructures_Nova_IfStatement_Nova_parseCondition(compiler_tree_nodes_controlstructures_Nova_IfStatement* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* input)
-	{
-		return (this->compiler_tree_nodes_controlstructures_Nova_IfStatement_Nova_condition = (compiler_tree_nodes_Nova_Value*)(compiler_tree_nodes_Nova_Value_0_static_Nova_parse(0, exceptionData, input, (compiler_tree_nodes_Nova_Node*)(this), 0, (intptr_t)nova_null))) != (compiler_tree_nodes_Nova_Value*)nova_null;
-	}
-	
-	nova_Nova_String* compiler_tree_nodes_controlstructures_Nova_IfStatement_Nova_toNova(compiler_tree_nodes_controlstructures_Nova_IfStatement* this, nova_exception_Nova_ExceptionData* exceptionData)
-	{
-		return nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)(nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("if ("))), exceptionData, nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)((compiler_tree_nodes_Nova_Node_virtual_Nova_toNova((compiler_tree_nodes_Nova_Node*)(this->compiler_tree_nodes_controlstructures_Nova_IfStatement_Nova_condition), exceptionData))), exceptionData, nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)(nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)(") "))), exceptionData, nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)((compiler_tree_nodes_Nova_Scope_Nova_toNova(compiler_tree_nodes_Nova_Node_virtual_Accessor_Nova_scope((compiler_tree_nodes_Nova_Node*)(this), exceptionData), exceptionData))), exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)(""))))));
-	}
-	
-	void compiler_tree_nodes_controlstructures_Nova_IfStatement_Nova_super(compiler_tree_nodes_controlstructures_Nova_IfStatement* this, nova_exception_Nova_ExceptionData* exceptionData)
-	{
-		this->compiler_tree_nodes_controlstructures_Nova_IfStatement_Nova_condition = (compiler_tree_nodes_Nova_Value*)nova_null;
-	}
-	
-		
+	return l1_Nova_node;
+}
+return (compiler_tree_nodes_controlstructures_Nova_IfStatement*)(nova_Nova_Object*)nova_null;}
+
+char compiler_tree_nodes_controlstructures_Nova_IfStatement_Nova_parseCondition(compiler_tree_nodes_controlstructures_Nova_IfStatement* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* input)
+{
+	return (this->compiler_tree_nodes_controlstructures_Nova_IfStatement_Nova_condition = (compiler_tree_nodes_Nova_Value*)(compiler_tree_nodes_Nova_Value_0_static_Nova_parse(0, exceptionData, input, (compiler_tree_nodes_Nova_Node*)(this), 0, (intptr_t)nova_null))) != (compiler_tree_nodes_Nova_Value*)nova_null;
+}
+
+nova_Nova_String* compiler_tree_nodes_controlstructures_Nova_IfStatement_Nova_toNova(compiler_tree_nodes_controlstructures_Nova_IfStatement* this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+	return nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)(nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("if ("))), exceptionData, nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)((compiler_tree_nodes_Nova_Node_virtual_Nova_toNova((compiler_tree_nodes_Nova_Node*)(this->compiler_tree_nodes_controlstructures_Nova_IfStatement_Nova_condition), exceptionData))), exceptionData, nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)(nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)(") "))), exceptionData, nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)((compiler_tree_nodes_Nova_Scope_Nova_toNova(compiler_tree_nodes_Nova_Node_virtual_Accessor_Nova_scope((compiler_tree_nodes_Nova_Node*)(this), exceptionData), exceptionData))), exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)(""))))));
+}
+
+void compiler_tree_nodes_controlstructures_Nova_IfStatement_Nova_super(compiler_tree_nodes_controlstructures_Nova_IfStatement* this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+	this->compiler_tree_nodes_controlstructures_Nova_IfStatement_Nova_condition = (compiler_tree_nodes_Nova_Value*)nova_null;
+}
+
