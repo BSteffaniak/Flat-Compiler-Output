@@ -46,10 +46,6 @@
 #include <nova/NativeObject.h>
 #include <nova/operators/nova_operators_Nova_Equals.h>
 
-typedef struct
-{
-	/* String contents */ nova_Nova_String** compiler_tree_nodes_controlstructures_Nova_ElseStatement_Nova_contents;
-} Context1;
 
 
 compiler_tree_nodes_controlstructures_ElseStatement_Extension_VTable compiler_tree_nodes_controlstructures_ElseStatement_Extension_VTable_val =
@@ -111,7 +107,6 @@ compiler_tree_nodes_controlstructures_ElseStatement_Extension_VTable compiler_tr
 
 
 char compiler_tree_nodes_controlstructures_Nova_ElseStatement_Nova_parseContents(compiler_tree_nodes_controlstructures_Nova_ElseStatement* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* input, nova_Nova_String* contents);
-void compiler_tree_nodes_controlstructures_Nova_ElseStatement_Nova_testLambda102(compiler_tree_nodes_controlstructures_Nova_ElseStatement* this, nova_exception_Nova_ExceptionData* exceptionData, Context1* context);
 void compiler_tree_nodes_controlstructures_Nova_ElseStatement_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData)
 {
 	{
@@ -178,12 +173,7 @@ char compiler_tree_nodes_controlstructures_Nova_ElseStatement_Nova_parseContents
 {
 	if (nova_Nova_String_Nova_equals(compiler_util_Nova_CompilerStringFunctions_Nova_nextWord(contents, exceptionData, (intptr_t)nova_null, (intptr_t)nova_null, 0), exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("if"))))
 	{
-		Context1 contextArg102 = 
-		{
-			&contents,
-		};
-		
-		compiler_tree_nodes_Nova_Node_static_Nova_strictParse(0, exceptionData, (compiler_tree_nodes_Nova_Node_closure3_Nova_action)&compiler_tree_nodes_controlstructures_Nova_ElseStatement_Nova_testLambda102, this, &contextArg102);
+		this->compiler_tree_nodes_controlstructures_Nova_ElseStatement_Nova_inlineIf = compiler_tree_nodes_controlstructures_Nova_IfStatement_static_Nova_parse(0, exceptionData, contents, (compiler_tree_nodes_Nova_Node*)(this), 0, (intptr_t)nova_null);
 		if (this->compiler_tree_nodes_controlstructures_Nova_ElseStatement_Nova_inlineIf == (compiler_tree_nodes_controlstructures_Nova_IfStatement*)nova_null)
 		{
 			compiler_Nova_SyntaxMessage_static_Nova_error(0, exceptionData, nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)(nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("Unable parse else if statement '"))), exceptionData, nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)((input)), exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("'")))), (compiler_tree_nodes_Nova_Node*)(this), 0);
@@ -201,11 +191,6 @@ char compiler_tree_nodes_controlstructures_Nova_ElseStatement_Nova_parseContents
 nova_Nova_String* compiler_tree_nodes_controlstructures_Nova_ElseStatement_Nova_toNova(compiler_tree_nodes_controlstructures_Nova_ElseStatement* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
 	return nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)(nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("else "))), exceptionData, ((nova_Nova_String*)(this->compiler_tree_nodes_controlstructures_Nova_ElseStatement_Nova_inlineIf != (compiler_tree_nodes_controlstructures_Nova_IfStatement*)nova_null ? compiler_tree_nodes_controlstructures_Nova_IfStatement_Nova_toNova(this->compiler_tree_nodes_controlstructures_Nova_ElseStatement_Nova_inlineIf, exceptionData) : compiler_tree_nodes_Nova_Scope_Nova_toNova(compiler_tree_nodes_controlstructures_Nova_ElseStatement_Accessorfunc_Nova_scope(this, exceptionData), exceptionData))));
-}
-
-void compiler_tree_nodes_controlstructures_Nova_ElseStatement_Nova_testLambda102(compiler_tree_nodes_controlstructures_Nova_ElseStatement* this, nova_exception_Nova_ExceptionData* exceptionData, Context1* context)
-{
-	this->compiler_tree_nodes_controlstructures_Nova_ElseStatement_Nova_inlineIf = compiler_tree_nodes_controlstructures_Nova_IfStatement_static_Nova_parse(0, exceptionData, (*context->compiler_tree_nodes_controlstructures_Nova_ElseStatement_Nova_contents), (compiler_tree_nodes_Nova_Node*)(this), 0, (intptr_t)nova_null);
 }
 
 compiler_tree_nodes_Nova_Scope* compiler_tree_nodes_controlstructures_Nova_ElseStatement_Mutatorfunc_Nova_scope(compiler_tree_nodes_controlstructures_Nova_ElseStatement* this, nova_exception_Nova_ExceptionData* exceptionData, compiler_tree_nodes_Nova_Scope* value)

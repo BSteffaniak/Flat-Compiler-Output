@@ -101,6 +101,7 @@ nova_env novaEnv = {
 },
 
 {
+0,
 &nova_datastruct_Nova_HashMap_Nova_remove,
 &nova_datastruct_Nova_HashMap_Nova_containsKey,
 &nova_datastruct_Nova_HashMap_Nova_get,
@@ -847,6 +848,10 @@ nova_env novaEnv = {
 },
 
 {
+&compiler_tree_nodes_Nova_InterfaceDeclaration_Nova_construct,
+},
+
+{
 },
 
 {
@@ -891,13 +896,10 @@ nova_env novaEnv = {
 },
 
 {
+&compiler_tree_nodes_Nova_NovaFile_Nova_addAutoImports,
 &compiler_tree_nodes_Nova_NovaFile_Nova_addImport,
 &compiler_tree_nodes_Nova_NovaFile_Nova_containsImport,
 &compiler_tree_nodes_Nova_NovaFile_Nova_construct,
-},
-
-{
-&compiler_tree_nodes_Nova_NovaInterface_Nova_construct,
 },
 
 {

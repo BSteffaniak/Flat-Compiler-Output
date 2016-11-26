@@ -155,12 +155,12 @@
 #include <compiler/tree/nodes/compiler_tree_nodes_Nova_Identifier.h>
 #include <compiler/tree/nodes/compiler_tree_nodes_Nova_Import.h>
 #include <compiler/tree/nodes/compiler_tree_nodes_Nova_ImportList.h>
+#include <compiler/tree/nodes/compiler_tree_nodes_Nova_InterfaceDeclaration.h>
 #include <compiler/tree/nodes/compiler_tree_nodes_Nova_Listener.h>
 #include <compiler/tree/nodes/compiler_tree_nodes_Nova_Literal.h>
 #include <compiler/tree/nodes/compiler_tree_nodes_Nova_Node.h>
 #include <compiler/tree/nodes/compiler_tree_nodes_Nova_NodeList.h>
 #include <compiler/tree/nodes/compiler_tree_nodes_Nova_NovaFile.h>
-#include <compiler/tree/nodes/compiler_tree_nodes_Nova_NovaInterface.h>
 #include <compiler/tree/nodes/compiler_tree_nodes_Nova_NumericRange.h>
 #include <compiler/tree/nodes/compiler_tree_nodes_Nova_Package.h>
 #include <compiler/tree/nodes/compiler_tree_nodes_Nova_PlaceholderValue.h>
@@ -409,6 +409,7 @@ typedef struct nova_datastruct_native_Comparable
 nova_datastruct_Nova_Comparable_native0_Nova_compareTo compareTo__nova_Object;
 } nova_datastruct_native_Comparable;
 
+typedef nova_Nova_Object* (*nova_datastruct_Nova_HashMap_native_Nova_put)(nova_datastruct_Nova_HashMap*, nova_exception_Nova_ExceptionData*, nova_Nova_Object*, nova_Nova_Object*);
 typedef nova_Nova_Object* (*nova_datastruct_Nova_HashMap_native_Nova_remove)(nova_datastruct_Nova_HashMap*, nova_exception_Nova_ExceptionData*, nova_Nova_Object*);
 typedef char (*nova_datastruct_Nova_HashMap_native_Nova_containsKey)(nova_datastruct_Nova_HashMap*, nova_exception_Nova_ExceptionData*, nova_Nova_Object*);
 typedef nova_Nova_Object* (*nova_datastruct_Nova_HashMap_native_Nova_get)(nova_datastruct_Nova_HashMap*, nova_exception_Nova_ExceptionData*, nova_Nova_Object*);
@@ -417,6 +418,7 @@ typedef nova_datastruct_Nova_HashMap* (*nova_datastruct_Nova_HashMap_native_Nova
 
 typedef struct nova_datastruct_native_HashMap
 {
+nova_datastruct_Nova_HashMap_native_Nova_put put;
 nova_datastruct_Nova_HashMap_native_Nova_remove remove;
 nova_datastruct_Nova_HashMap_native_Nova_containsKey containsKey;
 nova_datastruct_Nova_HashMap_native_Nova_get get;
@@ -1854,6 +1856,13 @@ typedef struct compiler_tree_nodes_native_ImportList
 compiler_tree_nodes_Nova_ImportList_native_Nova_construct ImportList;
 } compiler_tree_nodes_native_ImportList;
 
+typedef compiler_tree_nodes_Nova_InterfaceDeclaration* (*compiler_tree_nodes_Nova_InterfaceDeclaration_native_Nova_construct)(compiler_tree_nodes_Nova_InterfaceDeclaration*, nova_exception_Nova_ExceptionData*);
+
+typedef struct compiler_tree_nodes_native_InterfaceDeclaration
+{
+compiler_tree_nodes_Nova_InterfaceDeclaration_native_Nova_construct InterfaceDeclaration;
+} compiler_tree_nodes_native_InterfaceDeclaration;
+
 
 typedef struct compiler_tree_nodes_native_Listener
 {
@@ -1939,23 +1948,18 @@ compiler_tree_nodes_Nova_NodeList_native_Nova_slaughterChildren slaughterChildre
 compiler_tree_nodes_Nova_NodeList_native_Nova_construct NodeList;
 } compiler_tree_nodes_native_NodeList;
 
+typedef nova_datastruct_list_Nova_Array* (*compiler_tree_nodes_Nova_NovaFile_native_Nova_addAutoImports)(compiler_tree_nodes_Nova_NovaFile*, nova_exception_Nova_ExceptionData*);
 typedef compiler_tree_nodes_Nova_Import* (*compiler_tree_nodes_Nova_NovaFile_native_Nova_addImport)(compiler_tree_nodes_Nova_NovaFile*, nova_exception_Nova_ExceptionData*, nova_Nova_String*);
 typedef char (*compiler_tree_nodes_Nova_NovaFile_native_Nova_containsImport)(compiler_tree_nodes_Nova_NovaFile*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, int, int);
 typedef compiler_tree_nodes_Nova_NovaFile* (*compiler_tree_nodes_Nova_NovaFile_native_Nova_construct)(compiler_tree_nodes_Nova_NovaFile*, nova_exception_Nova_ExceptionData*, nova_io_Nova_File*, compiler_tree_nodes_Nova_Node*, compiler_util_Nova_Location*);
 
 typedef struct compiler_tree_nodes_native_NovaFile
 {
+compiler_tree_nodes_Nova_NovaFile_native_Nova_addAutoImports addAutoImports;
 compiler_tree_nodes_Nova_NovaFile_native_Nova_addImport addImport;
 compiler_tree_nodes_Nova_NovaFile_native_Nova_containsImport containsImport;
 compiler_tree_nodes_Nova_NovaFile_native_Nova_construct NovaFile;
 } compiler_tree_nodes_native_NovaFile;
-
-typedef compiler_tree_nodes_Nova_NovaInterface* (*compiler_tree_nodes_Nova_NovaInterface_native_Nova_construct)(compiler_tree_nodes_Nova_NovaInterface*, nova_exception_Nova_ExceptionData*);
-
-typedef struct compiler_tree_nodes_native_NovaInterface
-{
-compiler_tree_nodes_Nova_NovaInterface_native_Nova_construct NovaInterface;
-} compiler_tree_nodes_native_NovaInterface;
 
 typedef compiler_tree_nodes_Nova_NumericRange* (*compiler_tree_nodes_Nova_NumericRange_native_Nova_construct)(compiler_tree_nodes_Nova_NumericRange*, nova_exception_Nova_ExceptionData*, compiler_tree_nodes_Nova_Node*, compiler_util_Nova_Location*);
 
@@ -2736,12 +2740,12 @@ compiler_tree_nodes_native_ClassDeclaration compiler_tree_nodes_ClassDeclaration
 compiler_tree_nodes_native_Identifier compiler_tree_nodes_Identifier;
 compiler_tree_nodes_native_Import compiler_tree_nodes_Import;
 compiler_tree_nodes_native_ImportList compiler_tree_nodes_ImportList;
+compiler_tree_nodes_native_InterfaceDeclaration compiler_tree_nodes_InterfaceDeclaration;
 compiler_tree_nodes_native_Listener compiler_tree_nodes_Listener;
 compiler_tree_nodes_native_Literal compiler_tree_nodes_Literal;
 compiler_tree_nodes_native_Node compiler_tree_nodes_Node;
 compiler_tree_nodes_native_NodeList compiler_tree_nodes_NodeList;
 compiler_tree_nodes_native_NovaFile compiler_tree_nodes_NovaFile;
-compiler_tree_nodes_native_NovaInterface compiler_tree_nodes_NovaInterface;
 compiler_tree_nodes_native_NumericRange compiler_tree_nodes_NumericRange;
 compiler_tree_nodes_native_Package compiler_tree_nodes_Package;
 compiler_tree_nodes_native_PlaceholderValue compiler_tree_nodes_PlaceholderValue;

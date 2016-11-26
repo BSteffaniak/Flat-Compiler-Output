@@ -27,9 +27,11 @@
 #include <nova/nova_Nova_System.h>
 #include <nova/nova_Nova_Class.h>
 #include <nova/regex/nova_regex_Nova_Pattern.h>
+#include <nova/datastruct/nova_datastruct_Nova_HashMap.h>
 #include <compiler/util/compiler_util_Nova_Location.h>
 #include <compiler/compiler_Nova_SyntaxMessage.h>
 #include <compiler/tree/nodes/compiler_tree_nodes_Nova_Node.h>
+#include <compiler/tree/nodes/compiler_tree_nodes_Nova_NovaFile.h>
 #include <compiler/compiler_Nova_InvalidParseException.h>
 #include <compiler/tree/nodes/annotations/compiler_tree_nodes_annotations_Nova_Annotatable.h>
 #include <compiler/tree/nodes/annotations/compiler_tree_nodes_annotations_Nova_Annotation.h>
@@ -37,7 +39,6 @@
 #include <compiler/tree/nodes/functions/compiler_tree_nodes_functions_Nova_FunctionDeclaration.h>
 #include <compiler/tree/nodes/variables/compiler_tree_nodes_variables_Nova_VariableDeclaration.h>
 #include <compiler/tree/nodes/compiler_tree_nodes_Nova_ClassDeclaration.h>
-#include <compiler/tree/nodes/compiler_tree_nodes_Nova_NovaFile.h>
 #include <compiler/tree/nodes/compiler_tree_nodes_Nova_Program.h>
 #include <compiler/tree/nodes/compiler_tree_nodes_Nova_Scope.h>
 #include <compiler/tree/nodes/compiler_tree_nodes_Nova_ValidationResult.h>
@@ -82,7 +83,7 @@ compiler_tree_nodes_Package_Extension_VTable compiler_tree_nodes_Package_Extensi
 		0,
 		0,
 	},
-	compiler_tree_nodes_Nova_Package_Nova_toString,
+	compiler_tree_nodes_Nova_Node_Nova_toString,
 	nova_Nova_Object_Accessor_Nova_hashCodeLong,
 	compiler_tree_nodes_Nova_Node_Nova_addChild,
 	compiler_tree_nodes_Nova_Node_Nova_findVariableDeclaration,
@@ -103,9 +104,15 @@ compiler_tree_nodes_Package_Extension_VTable compiler_tree_nodes_Package_Extensi
 };
 
 
+
+char compiler_tree_nodes_Nova_Package_Nova_validateLocation(compiler_tree_nodes_Nova_Package* this, nova_exception_Nova_ExceptionData* exceptionData);
+char compiler_tree_nodes_Nova_Package_Nova_validateAlias(compiler_tree_nodes_Nova_Package* this, nova_exception_Nova_ExceptionData* exceptionData);
+
+nova_datastruct_Nova_HashMap* compiler_tree_nodes_Nova_Package_Nova_filesMap;
 void compiler_tree_nodes_Nova_Package_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData)
 {
 	{
+		compiler_tree_nodes_Nova_Package_Nova_filesMap = nova_datastruct_Nova_HashMap_Nova_construct(0, exceptionData, (intptr_t)nova_null, (intptr_t)nova_null);
 	}
 }
 
@@ -175,12 +182,26 @@ compiler_tree_nodes_Nova_Package* compiler_tree_nodes_Nova_Package_static_Nova_p
 		}
 		l1_Nova_packageLocation = nova_Nova_String_Nova_substring(input, exceptionData, l1_Nova_quoteStart + 1, l1_Nova_quoteEnd);
 		l1_Nova_node->compiler_tree_nodes_Nova_Package_Nova_location = l1_Nova_packageLocation;
-		if (1)
+		if (compiler_tree_nodes_Nova_Package_Nova_validateLocation(l1_Nova_node, exceptionData) && compiler_tree_nodes_Nova_Package_Nova_validateAlias(l1_Nova_node, exceptionData))
 		{
+			nova_datastruct_list_Nova_Array* l4_Nova_nova_local_0 = (nova_datastruct_list_Nova_Array*)nova_null;
+			
+			nova_datastruct_Nova_HashMap_virtual_Nova_put((nova_datastruct_Nova_HashMap*)(compiler_tree_nodes_Nova_Package_Nova_filesMap), exceptionData, (nova_Nova_Object*)(l1_Nova_node->compiler_tree_nodes_Nova_Package_Nova_location), (nova_Nova_Object*)((nova_datastruct_list_Nova_Array*)((l4_Nova_nova_local_0 = (nova_datastruct_list_Nova_Array*)(nova_datastruct_Nova_HashMap_Nova_get((nova_datastruct_Nova_HashMap*)(compiler_tree_nodes_Nova_Package_Nova_filesMap), exceptionData, (nova_Nova_Object*)(l1_Nova_node->compiler_tree_nodes_Nova_Package_Nova_location)))) != (nova_datastruct_list_Nova_Array*)nova_null ? l4_Nova_nova_local_0 : nova_datastruct_list_Nova_Array_0_Nova_construct(0, exceptionData))));
+			nova_datastruct_list_Nova_Array_0_Nova_add((nova_datastruct_list_Nova_Array*)(nova_datastruct_Nova_HashMap_Nova_get((nova_datastruct_Nova_HashMap*)(compiler_tree_nodes_Nova_Package_Nova_filesMap), exceptionData, (nova_Nova_Object*)(l1_Nova_node->compiler_tree_nodes_Nova_Package_Nova_location))), exceptionData, (nova_Nova_Object*)(compiler_tree_nodes_Nova_Node_virtual_Accessor_Nova_parentFile((compiler_tree_nodes_Nova_Node*)(parent), exceptionData)));
 			return l1_Nova_node;
 		}
 	}
 	return (compiler_tree_nodes_Nova_Package*)(nova_Nova_Object*)nova_null;
+}
+
+char compiler_tree_nodes_Nova_Package_Nova_validateLocation(compiler_tree_nodes_Nova_Package* this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+	return 1;
+}
+
+char compiler_tree_nodes_Nova_Package_Nova_validateAlias(compiler_tree_nodes_Nova_Package* this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+	return 1;
 }
 
 nova_Nova_String* compiler_tree_nodes_Nova_Package_Nova_toNova(compiler_tree_nodes_Nova_Package* this, nova_exception_Nova_ExceptionData* exceptionData)
@@ -188,10 +209,11 @@ nova_Nova_String* compiler_tree_nodes_Nova_Package_Nova_toNova(compiler_tree_nod
 	return (nova_Nova_String*)(this->compiler_tree_nodes_Nova_Package_Nova_location != (nova_Nova_String*)nova_null ? nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)(nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("package \""))), exceptionData, nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)((this->compiler_tree_nodes_Nova_Package_Nova_location)), exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("\"")))) : nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("")));
 }
 
-nova_Nova_String* compiler_tree_nodes_Nova_Package_Nova_toString(compiler_tree_nodes_Nova_Package* this, nova_exception_Nova_ExceptionData* exceptionData)
+nova_datastruct_list_Nova_Array* compiler_tree_nodes_Nova_Package_Accessor_Nova_files(compiler_tree_nodes_Nova_Package* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
-	return compiler_tree_nodes_Nova_Package_Nova_toNova(this, exceptionData);
+	return (nova_datastruct_list_Nova_Array*)nova_datastruct_Nova_HashMap_Nova_get((nova_datastruct_Nova_HashMap*)(compiler_tree_nodes_Nova_Package_Nova_filesMap), exceptionData, (nova_Nova_Object*)(this->compiler_tree_nodes_Nova_Package_Nova_location));
 }
+
 
 void compiler_tree_nodes_Nova_Package_Nova_super(compiler_tree_nodes_Nova_Package* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
