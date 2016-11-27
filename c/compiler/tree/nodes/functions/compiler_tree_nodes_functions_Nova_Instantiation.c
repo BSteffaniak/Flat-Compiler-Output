@@ -34,6 +34,7 @@
 #include <compiler/tree/nodes/functions/compiler_tree_nodes_functions_Nova_FunctionCall.h>
 #include <compiler/tree/nodes/compiler_tree_nodes_Nova_Value.h>
 #include <compiler/tree/nodes/variables/compiler_tree_nodes_variables_Nova_Variable.h>
+#include <compiler/tree/nodes/functions/closures/compiler_tree_nodes_functions_closures_Nova_ClosureDeclaration.h>
 #include <compiler/tree/nodes/compiler_tree_nodes_Nova_ClassDeclaration.h>
 #include <compiler/compiler_Nova_InvalidParseException.h>
 #include <compiler/tree/nodes/functions/compiler_tree_nodes_functions_Nova_FunctionArgumentList.h>
@@ -134,7 +135,7 @@ compiler_tree_nodes_functions_Instantiation_Extension_VTable compiler_tree_nodes
 
 
 
-char compiler_tree_nodes_functions_Nova_Instantiation_static_Nova_testLambda109(compiler_tree_nodes_functions_Nova_Instantiation* this, nova_exception_Nova_ExceptionData* exceptionData, compiler_tree_nodes_functions_Nova_FunctionDeclaration* _1, Context1* context);
+char compiler_tree_nodes_functions_Nova_Instantiation_static_Nova_testLambda111(compiler_tree_nodes_functions_Nova_Instantiation* this, nova_exception_Nova_ExceptionData* exceptionData, compiler_tree_nodes_functions_Nova_FunctionDeclaration* _1, Context1* context);
 void compiler_tree_nodes_functions_Nova_Instantiation_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData)
 {
 	{
@@ -202,11 +203,11 @@ compiler_tree_nodes_functions_Nova_Instantiation* compiler_tree_nodes_functions_
 			if (l2_Nova_clazz != (compiler_tree_nodes_Nova_ClassDeclaration*)nova_null)
 			{
 				compiler_tree_nodes_functions_Nova_FunctionDeclaration* l3_Nova_constructor = (compiler_tree_nodes_functions_Nova_FunctionDeclaration*)nova_null;
-				Context1 contextArg109 = 
+				Context1 contextArg111 = 
 				{
 				};
 				
-				l3_Nova_constructor = (compiler_tree_nodes_functions_Nova_FunctionDeclaration*)(nova_datastruct_list_Nova_List_virtual0_Nova_firstWhere((nova_datastruct_list_Nova_List*)(l2_Nova_clazz->compiler_tree_nodes_Nova_ClassDeclaration_Nova_functions), exceptionData, (nova_datastruct_list_Nova_List_closure18_Nova_func)&compiler_tree_nodes_functions_Nova_Instantiation_static_Nova_testLambda109, nova_null, &contextArg109));
+				l3_Nova_constructor = (compiler_tree_nodes_functions_Nova_FunctionDeclaration*)(nova_datastruct_list_Nova_List_virtual0_Nova_firstWhere((nova_datastruct_list_Nova_List*)(l2_Nova_clazz->compiler_tree_nodes_Nova_ClassDeclaration_Nova_functions), exceptionData, (nova_datastruct_list_Nova_List_closure18_Nova_func)&compiler_tree_nodes_functions_Nova_Instantiation_static_Nova_testLambda111, nova_null, &contextArg111));
 				if (l3_Nova_constructor != (compiler_tree_nodes_functions_Nova_FunctionDeclaration*)nova_null)
 				{
 					nova_Nova_String* l4_Nova_parameters = (nova_Nova_String*)nova_null;
@@ -235,7 +236,7 @@ nova_Nova_String* compiler_tree_nodes_functions_Nova_Instantiation_Nova_toNova(c
 	return nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)(nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("new "))), exceptionData, nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)((compiler_tree_nodes_functions_Nova_FunctionCall_Nova_toNova(((compiler_tree_nodes_functions_Nova_FunctionCall*)this), exceptionData))), exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)(""))));
 }
 
-char compiler_tree_nodes_functions_Nova_Instantiation_static_Nova_testLambda109(compiler_tree_nodes_functions_Nova_Instantiation* this, nova_exception_Nova_ExceptionData* exceptionData, compiler_tree_nodes_functions_Nova_FunctionDeclaration* _1, Context1* context)
+char compiler_tree_nodes_functions_Nova_Instantiation_static_Nova_testLambda111(compiler_tree_nodes_functions_Nova_Instantiation* this, nova_exception_Nova_ExceptionData* exceptionData, compiler_tree_nodes_functions_Nova_FunctionDeclaration* _1, Context1* context)
 {
 	return nova_Nova_String_Nova_equals(_1->compiler_tree_nodes_Nova_Identifier_Nova_name, exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("construct")));
 }

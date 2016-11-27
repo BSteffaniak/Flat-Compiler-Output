@@ -48,6 +48,8 @@ typedef struct compiler_tree_nodes_functions_Nova_PropertyFunction compiler_tree
 #include <compiler/tree/nodes/compiler_tree_nodes_Nova_Type.h>
 #include <compiler/tree/nodes/variables/compiler_tree_nodes_variables_Nova_InstanceDeclaration.h>
 #include <compiler/tree/nodes/variables/compiler_tree_nodes_variables_Nova_VariableDeclaration.h>
+#include <compiler/tree/nodes/generics/compiler_tree_nodes_generics_Nova_GenericParameter.h>
+#include <compiler/tree/nodes/generics/compiler_tree_nodes_generics_Nova_GenericCompatible.h>
 #include <compiler/tree/nodes/functions/compiler_tree_nodes_functions_Nova_CallableFunction.h>
 #include <compiler/tree/nodes/functions/compiler_tree_nodes_functions_Nova_Parameter.h>
 #include <compiler/tree/nodes/functions/compiler_tree_nodes_functions_Nova_ParameterList.h>
@@ -129,6 +131,7 @@ CCLASS_CLASS
 	nova_Nova_String* compiler_tree_nodes_Nova_Identifier_Nova_name;
 	char compiler_tree_nodes_variables_Nova_InstanceDeclaration_Nova_isStatic;
 	nova_Nova_String* compiler_tree_nodes_variables_Nova_InstanceDeclaration_Nova_visibility;
+	nova_datastruct_list_Nova_Array* compiler_tree_nodes_functions_Nova_FunctionDeclaration_Nova_genericParameters;
 	compiler_tree_nodes_functions_Nova_ParameterList* compiler_tree_nodes_functions_Nova_FunctionDeclaration_Nova_parameterList;
 	compiler_tree_nodes_functions_Nova_Parameter* compiler_tree_nodes_functions_Nova_FunctionDeclaration_Nova_objectReference;
 	compiler_tree_nodes_Nova_Scope* compiler_tree_nodes_functions_Nova_BodyFunction_Nova_scope;

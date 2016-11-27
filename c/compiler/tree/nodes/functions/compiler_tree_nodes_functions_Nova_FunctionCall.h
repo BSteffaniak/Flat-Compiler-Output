@@ -41,6 +41,7 @@ typedef struct compiler_tree_nodes_functions_Nova_FunctionCall compiler_tree_nod
 #include <compiler/tree/nodes/compiler_tree_nodes_Nova_Value.h>
 #include <compiler/tree/nodes/variables/compiler_tree_nodes_variables_Nova_Variable.h>
 #include <compiler/tree/nodes/variables/compiler_tree_nodes_variables_Nova_VariableDeclaration.h>
+#include <compiler/tree/nodes/functions/closures/compiler_tree_nodes_functions_closures_Nova_ClosureDeclaration.h>
 #include <compiler/tree/nodes/compiler_tree_nodes_Nova_ClassDeclaration.h>
 #include <compiler/compiler_Nova_InvalidParseException.h>
 #include <compiler/util/compiler_util_Nova_Location.h>

@@ -104,8 +104,8 @@ compiler_tree_nodes_functions_closures_ClosureDeclaration_Extension_VTable compi
 		(void(*)(compiler_tree_nodes_annotations_Nova_Annotatable*, nova_exception_Nova_ExceptionData*, compiler_tree_nodes_annotations_Nova_Annotation*))compiler_tree_nodes_Nova_Node_Nova_addAnnotation,
 		(compiler_tree_nodes_functions_Nova_Parameter*(*)(compiler_tree_nodes_functions_Nova_CallableFunction*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, int))compiler_tree_nodes_functions_closures_Nova_ClosureDeclaration_Nova_parseParameter,
 		(compiler_tree_nodes_functions_Nova_ParameterList*(*)(compiler_tree_nodes_functions_Nova_CallableFunction*, nova_exception_Nova_ExceptionData*))compiler_tree_nodes_functions_closures_Nova_ClosureDeclaration_Accessorfunc_Nova_parameterList,
-		0,
-		0,
+		(nova_datastruct_list_Nova_Array*(*)(compiler_tree_nodes_generics_Nova_GenericCompatible*, nova_exception_Nova_ExceptionData*, nova_datastruct_list_Nova_Array*))compiler_tree_nodes_generics_Nova_GenericCompatible_Mutator_Nova_genericParameters,
+		(nova_datastruct_list_Nova_Array*(*)(compiler_tree_nodes_generics_Nova_GenericCompatible*, nova_exception_Nova_ExceptionData*))compiler_tree_nodes_generics_Nova_GenericCompatible_Accessor_Nova_genericParameters,
 		(void(*)(compiler_tree_nodes_operations_Nova_Assignable*, nova_exception_Nova_ExceptionData*, compiler_tree_nodes_Nova_Value*))compiler_tree_nodes_operations_Nova_Assignable_Nova_onAssigned,
 	},
 	compiler_tree_nodes_Nova_Node_Nova_toString,
@@ -200,20 +200,20 @@ compiler_tree_nodes_functions_closures_Nova_ClosureDeclaration* compiler_tree_no
 		l1_Nova_endIndex = compiler_util_Nova_CompilerStringFunctions_0_Nova_findEndingMatch(input, exceptionData, l1_Nova_parenIndex, '(', ')', (intptr_t)nova_null, (intptr_t)nova_null);
 	if (l1_Nova_endIndex > l1_Nova_parenIndex)
 	{
+		compiler_tree_nodes_functions_closures_Nova_ClosureDeclaration* l2_Nova_node = (compiler_tree_nodes_functions_closures_Nova_ClosureDeclaration*)nova_null;
 		nova_Nova_String* l2_Nova_name = (nova_Nova_String*)nova_null;
 		
+		l2_Nova_node = compiler_tree_nodes_functions_closures_Nova_ClosureDeclaration_Nova_construct(0, exceptionData, parent, location);
 		l2_Nova_name = nova_Nova_String_Nova_trim(nova_Nova_String_Nova_substring(input, exceptionData, (intptr_t)nova_null, l1_Nova_parenIndex), exceptionData, (intptr_t)nova_null, (intptr_t)nova_null, 0);
-		if (compiler_util_Nova_CompilerStringFunctions_Accessor_Nova_isIdentifier(l2_Nova_name, exceptionData))
+		if (compiler_tree_nodes_functions_Nova_CallableFunction_Nova_parseName((compiler_tree_nodes_functions_Nova_CallableFunction*)(l2_Nova_node), exceptionData, l2_Nova_name))
 		{
-			compiler_tree_nodes_functions_closures_Nova_ClosureDeclaration* l3_Nova_node = (compiler_tree_nodes_functions_closures_Nova_ClosureDeclaration*)nova_null;
 			nova_Nova_String* l3_Nova_type = (nova_Nova_String*)nova_null;
 			
-			l3_Nova_node = compiler_tree_nodes_functions_closures_Nova_ClosureDeclaration_Nova_construct(0, exceptionData, parent, location);
 			l3_Nova_type = compiler_tree_nodes_functions_closures_Nova_ClosureDeclaration_static_Nova_findType(0, exceptionData, input, l1_Nova_endIndex);
-			if (compiler_tree_nodes_functions_closures_Nova_ClosureDeclaration_Nova_parseType(l3_Nova_node, exceptionData, l3_Nova_type) && compiler_tree_nodes_functions_Nova_CallableFunction_Nova_parseParameters((compiler_tree_nodes_functions_Nova_CallableFunction*)(l3_Nova_node), exceptionData, nova_Nova_String_Nova_trim(nova_Nova_String_Nova_substring(input, exceptionData, l1_Nova_parenIndex + 1, l1_Nova_endIndex), exceptionData, (intptr_t)nova_null, (intptr_t)nova_null, 0), 1))
+			if (compiler_tree_nodes_functions_closures_Nova_ClosureDeclaration_Nova_parseType(l2_Nova_node, exceptionData, l3_Nova_type) && compiler_tree_nodes_functions_Nova_CallableFunction_Nova_parseParameters((compiler_tree_nodes_functions_Nova_CallableFunction*)(l2_Nova_node), exceptionData, nova_Nova_String_Nova_trim(nova_Nova_String_Nova_substring(input, exceptionData, l1_Nova_parenIndex + 1, l1_Nova_endIndex), exceptionData, (intptr_t)nova_null, (intptr_t)nova_null, 0), 1))
 			{
-				l3_Nova_node->compiler_tree_nodes_Nova_Identifier_Nova_name = l2_Nova_name;
-				return l3_Nova_node;
+				l2_Nova_node->compiler_tree_nodes_Nova_Identifier_Nova_name = l2_Nova_name;
+				return l2_Nova_node;
 			}
 		}
 	}

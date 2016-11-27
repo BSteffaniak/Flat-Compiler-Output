@@ -28,6 +28,9 @@
 #include <nova/nova_Nova_Class.h>
 #include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <compiler/tree/nodes/compiler_tree_nodes_Nova_Node.h>
+#include <compiler/tree/nodes/compiler_tree_nodes_Nova_Identifier.h>
+#include <compiler/compiler_Nova_InvalidParseException.h>
+#include <compiler/tree/nodes/generics/compiler_tree_nodes_generics_Nova_GenericCompatible.h>
 #include <compiler/tree/nodes/compiler_tree_nodes_Nova_Value.h>
 #include <compiler/tree/compiler_tree_Nova_SyntaxTree.h>
 #include <compiler/compiler_Nova_SyntaxMessage.h>
@@ -74,8 +77,8 @@ compiler_tree_nodes_functions_CallableFunction_Extension_VTable compiler_tree_no
 		0,
 		(compiler_tree_nodes_functions_Nova_Parameter*(*)(compiler_tree_nodes_functions_Nova_CallableFunction*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, int))compiler_tree_nodes_functions_Nova_CallableFunction_Nova_parseParameter,
 		(compiler_tree_nodes_functions_Nova_ParameterList*(*)(compiler_tree_nodes_functions_Nova_CallableFunction*, nova_exception_Nova_ExceptionData*))compiler_tree_nodes_functions_Nova_CallableFunction_Accessor_Nova_parameterList,
-		0,
-		0,
+		(nova_datastruct_list_Nova_Array*(*)(compiler_tree_nodes_generics_Nova_GenericCompatible*, nova_exception_Nova_ExceptionData*, nova_datastruct_list_Nova_Array*))compiler_tree_nodes_generics_Nova_GenericCompatible_Mutator_Nova_genericParameters,
+		(nova_datastruct_list_Nova_Array*(*)(compiler_tree_nodes_generics_Nova_GenericCompatible*, nova_exception_Nova_ExceptionData*))compiler_tree_nodes_generics_Nova_GenericCompatible_Accessor_Nova_genericParameters,
 		0,
 	},
 };
@@ -130,6 +133,24 @@ char compiler_tree_nodes_functions_Nova_CallableFunction_Nova_parseParameters(co
 char compiler_tree_nodes_functions_Nova_CallableFunction_Nova_compatibleArguments(compiler_tree_nodes_functions_Nova_CallableFunction* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_list_Nova_Array* arguments)
 {
 	return 1;
+}
+
+char compiler_tree_nodes_functions_Nova_CallableFunction_Nova_parseName(compiler_tree_nodes_functions_Nova_CallableFunction* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* name)
+{
+	if (!compiler_tree_nodes_generics_Nova_GenericCompatible_Nova_parseGenericParameters((compiler_tree_nodes_generics_Nova_GenericCompatible*)(this), exceptionData, name, (intptr_t)nova_null))
+	{
+		THROW(compiler_Nova_InvalidParseException_Nova_construct(0, exceptionData, nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)(nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("Unable to parse generic parameters for class '"))), exceptionData, nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)((name)), exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("'")))), (compiler_tree_nodes_Nova_Node*)this), 1);
+	}
+	else
+	{
+		if (nova_datastruct_list_Nova_Array_Accessorfunc_Nova_count((nova_datastruct_list_Nova_Array*)(compiler_tree_nodes_generics_Nova_GenericCompatible_virtual_Accessor_Nova_genericParameters((compiler_tree_nodes_generics_Nova_GenericCompatible*)(this), exceptionData)), exceptionData) > 0)
+		{
+			name = nova_Nova_String_Nova_trim(nova_Nova_String_Nova_substring(name, exceptionData, (intptr_t)nova_null, nova_Nova_String_1_Nova_indexOf(name, exceptionData, '<', (intptr_t)nova_null, (intptr_t)nova_null, (intptr_t)nova_null)), exceptionData, (intptr_t)nova_null, (intptr_t)nova_null, 0);
+		}
+		((compiler_tree_nodes_Nova_Identifier*)this)->compiler_tree_nodes_Nova_Identifier_Nova_name = name;
+		return compiler_util_Nova_CompilerStringFunctions_Accessor_Nova_isIdentifier(name, exceptionData);
+	}
+	return 0;
 }
 
 char compiler_tree_nodes_functions_Nova_CallableFunction_Nova_testLambda43(compiler_tree_nodes_functions_Nova_CallableFunction* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* _1, int _2, nova_datastruct_list_Nova_List* _3, Context1* context)

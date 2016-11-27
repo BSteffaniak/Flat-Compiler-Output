@@ -82,6 +82,12 @@ nova_Nova_String* compiler_tree_nodes_Nova_Abstractable_Nova_writeAbstract(compi
 	return (nova_Nova_String*)(compiler_tree_nodes_Nova_Abstractable_virtual_Accessor1_Nova_isAbstract((compiler_tree_nodes_Nova_Abstractable*)(this), exceptionData) ? nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("abstract ")) : nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("")));
 }
 
+compiler_tree_nodes_Nova_Abstractable* compiler_tree_nodes_Nova_Abstractable_0_Nova_cloneTo(compiler_tree_nodes_Nova_Abstractable* this, nova_exception_Nova_ExceptionData* exceptionData, compiler_tree_nodes_Nova_Abstractable* other)
+{
+	compiler_tree_nodes_Nova_Abstractable_virtual_Mutator0_Nova_isAbstract((compiler_tree_nodes_Nova_Abstractable*)(other), exceptionData, compiler_tree_nodes_Nova_Abstractable_virtual_Accessor1_Nova_isAbstract((compiler_tree_nodes_Nova_Abstractable*)(this), exceptionData));
+	return other;
+}
+
 char compiler_tree_nodes_Nova_Abstractable_Mutator_Nova_isAbstract(compiler_tree_nodes_Nova_Abstractable* this, nova_exception_Nova_ExceptionData* exceptionData, char value)
 {
 	return value;

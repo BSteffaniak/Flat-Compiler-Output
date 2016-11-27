@@ -1,8 +1,8 @@
 #pragma once
-#ifndef FILE_compiler_tree_nodes_Nova_Type_NOVA
-#define FILE_compiler_tree_nodes_Nova_Type_NOVA
+#ifndef FILE_compiler_tree_nodes_generics_Nova_GenericType_NOVA
+#define FILE_compiler_tree_nodes_generics_Nova_GenericType_NOVA
 
-typedef struct compiler_tree_nodes_Nova_Type compiler_tree_nodes_Nova_Type;
+typedef struct compiler_tree_nodes_generics_Nova_GenericType compiler_tree_nodes_generics_Nova_GenericType;
 
 
 #include <Nova.h>
@@ -37,6 +37,7 @@ typedef struct compiler_tree_nodes_Nova_Type compiler_tree_nodes_Nova_Type;
 #include <nova/nova_Nova_System.h>
 #include <nova/nova_Nova_Class.h>
 #include <nova/regex/nova_regex_Nova_Pattern.h>
+#include <compiler/tree/nodes/compiler_tree_nodes_Nova_Type.h>
 #include <compiler/compiler_Nova_SyntaxMessage.h>
 #include <compiler/compiler_Nova_InvalidParseException.h>
 #include <compiler/tree/nodes/compiler_tree_nodes_Nova_Node.h>
@@ -48,41 +49,34 @@ typedef struct compiler_tree_nodes_Nova_Type compiler_tree_nodes_Nova_Type;
 #include <nova/operators/nova_operators_Nova_Equals.h>
 
 
-typedef struct compiler_tree_nodes_Type_Extension_VTable compiler_tree_nodes_Type_Extension_VTable;
-struct compiler_tree_nodes_Type_Extension_VTable
+typedef struct compiler_tree_nodes_generics_GenericType_Extension_VTable compiler_tree_nodes_generics_GenericType_Extension_VTable;
+struct compiler_tree_nodes_generics_GenericType_Extension_VTable
 {
 	nova_Nova_Class* classInstance;
 	nova_Interface_VTable itable;
 	nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(compiler_tree_nodes_Nova_Type*, nova_exception_Nova_ExceptionData*);
 	long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
-	char (*compiler_tree_nodes_Nova_Type_virtual_Accessor_Nova_isGeneric)(compiler_tree_nodes_Nova_Type*, nova_exception_Nova_ExceptionData*);
+	char (*compiler_tree_nodes_Nova_Type_virtual_Accessor_Nova_isGeneric)(compiler_tree_nodes_generics_Nova_GenericType*, nova_exception_Nova_ExceptionData*);
 };
 
-extern compiler_tree_nodes_Type_Extension_VTable compiler_tree_nodes_Type_Extension_VTable_val;
+extern compiler_tree_nodes_generics_GenericType_Extension_VTable compiler_tree_nodes_generics_GenericType_Extension_VTable_val;
 
 
 CCLASS_CLASS
 (
-	compiler_tree_nodes_Nova_Type, 
+	compiler_tree_nodes_generics_Nova_GenericType, 
 	
-	compiler_tree_nodes_Type_Extension_VTable* vtable;
+	compiler_tree_nodes_generics_GenericType_Extension_VTable* vtable;
 	nova_Nova_String* compiler_tree_nodes_Nova_Type_Nova_name;
 	int compiler_tree_nodes_Nova_Type_Nova_arrayDimensions;
 	nova_datastruct_list_Nova_Array* compiler_tree_nodes_Nova_Type_Nova_genericArguments;
 )
 
-void compiler_tree_nodes_Nova_Type_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData);
-compiler_tree_nodes_Nova_Type* compiler_tree_nodes_Nova_Type_Nova_construct(compiler_tree_nodes_Nova_Type* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* name);
-void compiler_tree_nodes_Nova_Type_Nova_destroy(compiler_tree_nodes_Nova_Type** this, nova_exception_Nova_ExceptionData* exceptionData);
-void compiler_tree_nodes_Nova_Type_Nova_this(compiler_tree_nodes_Nova_Type* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* name);
-compiler_tree_nodes_Nova_Type* compiler_tree_nodes_Nova_Type_static_Nova_parse(compiler_tree_nodes_Nova_Type* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* input, compiler_tree_nodes_Nova_Node* parent, compiler_util_Nova_Location* location, int require);
-nova_Nova_String* compiler_tree_nodes_Nova_Type_Nova_writeArray(compiler_tree_nodes_Nova_Type* this, nova_exception_Nova_ExceptionData* exceptionData);
-nova_Nova_String* compiler_tree_nodes_Nova_Type_Nova_writeGenericParameters(compiler_tree_nodes_Nova_Type* this, nova_exception_Nova_ExceptionData* exceptionData);
-nova_Nova_String* compiler_tree_nodes_Nova_Type_Nova_toString(compiler_tree_nodes_Nova_Type* this, nova_exception_Nova_ExceptionData* exceptionData);
-nova_Nova_String* compiler_tree_nodes_Nova_Type_Nova_toNova(compiler_tree_nodes_Nova_Type* this, nova_exception_Nova_ExceptionData* exceptionData);
-compiler_tree_nodes_Nova_Type* compiler_tree_nodes_Nova_Type_Nova_cloneTo(compiler_tree_nodes_Nova_Type* this, nova_exception_Nova_ExceptionData* exceptionData, compiler_tree_nodes_Nova_Type* other);
-char compiler_tree_nodes_Nova_Type_Accessor_Nova_isGeneric(compiler_tree_nodes_Nova_Type* this, nova_exception_Nova_ExceptionData* exceptionData);
-void compiler_tree_nodes_Nova_Type_Nova_super(compiler_tree_nodes_Nova_Type* this, nova_exception_Nova_ExceptionData* exceptionData);
-char compiler_tree_nodes_Nova_Type_virtual_Accessor_Nova_isGeneric(compiler_tree_nodes_Nova_Type* this, nova_exception_Nova_ExceptionData* exceptionData);
+void compiler_tree_nodes_generics_Nova_GenericType_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData);
+compiler_tree_nodes_generics_Nova_GenericType* compiler_tree_nodes_generics_Nova_GenericType_Nova_construct(compiler_tree_nodes_generics_Nova_GenericType* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* name);
+void compiler_tree_nodes_generics_Nova_GenericType_Nova_destroy(compiler_tree_nodes_generics_Nova_GenericType** this, nova_exception_Nova_ExceptionData* exceptionData);
+void compiler_tree_nodes_generics_Nova_GenericType_Nova_this(compiler_tree_nodes_generics_Nova_GenericType* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* name);
+char compiler_tree_nodes_generics_Nova_GenericType_Accessor_Nova_isGeneric(compiler_tree_nodes_generics_Nova_GenericType* this, nova_exception_Nova_ExceptionData* exceptionData);
+void compiler_tree_nodes_generics_Nova_GenericType_Nova_super(compiler_tree_nodes_generics_Nova_GenericType* this, nova_exception_Nova_ExceptionData* exceptionData);
 
 #endif

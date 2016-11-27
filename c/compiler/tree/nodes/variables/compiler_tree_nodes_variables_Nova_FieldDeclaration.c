@@ -200,41 +200,40 @@ compiler_tree_nodes_variables_Nova_FieldDeclaration* compiler_tree_nodes_variabl
 	l1_Nova_accessorIndex = compiler_tree_nodes_variables_Nova_FieldDeclaration_static_Nova_findAccessorIndex(0, exceptionData, input, (intptr_t)nova_null);
 	if (l1_Nova_accessorIndex > 0)
 	{
-		l1_Nova_accessorValue = nova_Nova_String_Nova_trim(nova_Nova_String_Nova_substring(input, exceptionData, l1_Nova_accessorIndex + 2, (intptr_t)nova_null), exceptionData, (intptr_t)nova_null, (intptr_t)nova_null, 0);
-		if (nova_Nova_String_Nova_get(input, exceptionData, l1_Nova_accessorIndex - 1) == '<')
-		{
-			l1_Nova_accessorIndex--;
-			l1_Nova_twoWay = 1;
-		}
+		nova_Nova_String* l1_Nova_accessorOperator = (nova_Nova_String*)nova_null;
+		
+		l1_Nova_accessorOperator = (nova_Nova_String*)(nova_Nova_String_Nova_get(input, exceptionData, l1_Nova_accessorIndex) == '<' ? nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("<=>")) : nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("=>")));
+		l1_Nova_accessorValue = nova_Nova_String_Nova_trim(nova_Nova_String_Nova_substring(input, exceptionData, l1_Nova_accessorIndex + l1_Nova_accessorOperator->nova_Nova_String_Nova_count, (intptr_t)nova_null), exceptionData, (intptr_t)nova_null, (intptr_t)nova_null, 0);
+		l1_Nova_twoWay = (char)(nova_Nova_String_Nova_equals(l1_Nova_accessorOperator, exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("<=>"))));
 		input = nova_Nova_String_Nova_trim(nova_Nova_String_Nova_substring(input, exceptionData, (intptr_t)nova_null, l1_Nova_accessorIndex), exceptionData, (intptr_t)nova_null, (intptr_t)nova_null, 0);
 	}
 	else
 	{
-		int l3_Nova_initializationValueIndex = 0;
+		int l2_Nova_initializationValueIndex = 0;
 		
-		l3_Nova_initializationValueIndex = nova_Nova_String_1_Nova_indexOf(input, exceptionData, '=', (intptr_t)nova_null, (intptr_t)nova_null, (intptr_t)nova_null);
-		if (l3_Nova_initializationValueIndex > 0)
+		l2_Nova_initializationValueIndex = nova_Nova_String_1_Nova_indexOf(input, exceptionData, '=', (intptr_t)nova_null, (intptr_t)nova_null, (intptr_t)nova_null);
+		if (l2_Nova_initializationValueIndex > 0)
 		{
-			l1_Nova_initializationValue = nova_Nova_String_Nova_trim(nova_Nova_String_Nova_substring(input, exceptionData, l3_Nova_initializationValueIndex + 1, (intptr_t)nova_null), exceptionData, (intptr_t)nova_null, (intptr_t)nova_null, 0);
-			input = nova_Nova_String_Nova_trim(nova_Nova_String_Nova_substring(input, exceptionData, (intptr_t)nova_null, l3_Nova_initializationValueIndex), exceptionData, (intptr_t)nova_null, (intptr_t)nova_null, 0);
+			l1_Nova_initializationValue = nova_Nova_String_Nova_trim(nova_Nova_String_Nova_substring(input, exceptionData, l2_Nova_initializationValueIndex + 1, (intptr_t)nova_null), exceptionData, (intptr_t)nova_null, (intptr_t)nova_null, 0);
+			input = nova_Nova_String_Nova_trim(nova_Nova_String_Nova_substring(input, exceptionData, (intptr_t)nova_null, l2_Nova_initializationValueIndex), exceptionData, (intptr_t)nova_null, (intptr_t)nova_null, 0);
 		}
 	}
 	l1_Nova_declaration = (compiler_tree_nodes_variables_Nova_InstanceDeclaration*)(compiler_tree_nodes_variables_Nova_InstanceDeclaration_static_Nova_parse(0, exceptionData, input, parent, location, require));
 	if (l1_Nova_declaration != (compiler_tree_nodes_variables_Nova_InstanceDeclaration*)nova_null)
 	{
-		compiler_tree_nodes_variables_Nova_FieldDeclaration* l5_Nova_node = (compiler_tree_nodes_variables_Nova_FieldDeclaration*)nova_null;
+		compiler_tree_nodes_variables_Nova_FieldDeclaration* l4_Nova_node = (compiler_tree_nodes_variables_Nova_FieldDeclaration*)nova_null;
 		
-		l5_Nova_node = compiler_tree_nodes_variables_Nova_FieldDeclaration_Nova_construct(0, exceptionData, parent, location);
+		l4_Nova_node = compiler_tree_nodes_variables_Nova_FieldDeclaration_Nova_construct(0, exceptionData, parent, location);
 		if (l1_Nova_accessorValue != (nova_Nova_String*)nova_null)
 		{
-			l5_Nova_node->compiler_tree_nodes_variables_Nova_FieldDeclaration_Nova_accessorValue = (compiler_tree_nodes_Nova_Value*)(compiler_tree_nodes_Nova_PlaceholderValue_static_Nova_parse(0, exceptionData, l1_Nova_accessorValue, (compiler_tree_nodes_Nova_Node*)(l5_Nova_node), location, (intptr_t)nova_null));
-			l5_Nova_node->compiler_tree_nodes_variables_Nova_FieldDeclaration_Nova_isTwoWayAccessor = l1_Nova_twoWay;
+			l4_Nova_node->compiler_tree_nodes_variables_Nova_FieldDeclaration_Nova_accessorValue = (compiler_tree_nodes_Nova_Value*)(compiler_tree_nodes_Nova_PlaceholderValue_static_Nova_parse(0, exceptionData, l1_Nova_accessorValue, (compiler_tree_nodes_Nova_Node*)(l4_Nova_node), location, (intptr_t)nova_null));
+			l4_Nova_node->compiler_tree_nodes_variables_Nova_FieldDeclaration_Nova_isTwoWayAccessor = l1_Nova_twoWay;
 		}
 		else if (l1_Nova_initializationValue != (nova_Nova_String*)nova_null)
 		{
-			l5_Nova_node->compiler_tree_nodes_variables_Nova_FieldDeclaration_Nova_initializationValue = (compiler_tree_nodes_Nova_Value*)(compiler_tree_nodes_Nova_PlaceholderValue_static_Nova_parse(0, exceptionData, l1_Nova_initializationValue, (compiler_tree_nodes_Nova_Node*)(l5_Nova_node), location, (intptr_t)nova_null));
+			l4_Nova_node->compiler_tree_nodes_variables_Nova_FieldDeclaration_Nova_initializationValue = (compiler_tree_nodes_Nova_Value*)(compiler_tree_nodes_Nova_PlaceholderValue_static_Nova_parse(0, exceptionData, l1_Nova_initializationValue, (compiler_tree_nodes_Nova_Node*)(l4_Nova_node), location, (intptr_t)nova_null));
 		}
-		return (compiler_tree_nodes_variables_Nova_FieldDeclaration*)compiler_tree_nodes_Nova_Node_virtual_Nova_cloneTo((compiler_tree_nodes_Nova_Node*)(l1_Nova_declaration), exceptionData, (compiler_tree_nodes_Nova_Node*)(l5_Nova_node));
+		return (compiler_tree_nodes_variables_Nova_FieldDeclaration*)compiler_tree_nodes_Nova_Node_virtual_Nova_cloneTo((compiler_tree_nodes_Nova_Node*)(l1_Nova_declaration), exceptionData, (compiler_tree_nodes_Nova_Node*)(l4_Nova_node));
 	}
 	return (compiler_tree_nodes_variables_Nova_FieldDeclaration*)(nova_Nova_Object*)nova_null;
 }
@@ -244,10 +243,18 @@ int compiler_tree_nodes_variables_Nova_FieldDeclaration_static_Nova_findAccessor
 	int l1_Nova_index = 0;
 	
 	defaultReturnValue = (int)(defaultReturnValue == (intptr_t)nova_null ? -1 : defaultReturnValue);
-	l1_Nova_index = compiler_util_Nova_CompilerStringFunctions_Nova_nextWordIndex(input, exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("=>")), (intptr_t)nova_null, (intptr_t)nova_null);
+	l1_Nova_index = compiler_util_Nova_CompilerStringFunctions_1_Nova_findOperatorInBaseScope(input, exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("=>")), (intptr_t)nova_null, (intptr_t)nova_null);
 	if (l1_Nova_index < 0)
 	{
-		return defaultReturnValue;
+		l1_Nova_index = compiler_util_Nova_CompilerStringFunctions_1_Nova_findOperatorInBaseScope(input, exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("<=>")), (intptr_t)nova_null, (intptr_t)nova_null);
+		if (l1_Nova_index < 0)
+		{
+			return defaultReturnValue;
+		}
+		else
+		{
+			return l1_Nova_index;
+		}
 	}
 	else
 	{

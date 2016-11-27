@@ -803,6 +803,7 @@ nova_env novaEnv = {
 
 {
 &compiler_tree_nodes_Nova_Abstractable_Nova_writeAbstract,
+&compiler_tree_nodes_Nova_Abstractable_0_Nova_cloneTo,
 },
 
 {
@@ -944,6 +945,7 @@ nova_env novaEnv = {
 &compiler_tree_nodes_Nova_Type_Nova_writeArray,
 &compiler_tree_nodes_Nova_Type_Nova_writeGenericParameters,
 &compiler_tree_nodes_Nova_Type_Nova_toNova,
+&compiler_tree_nodes_Nova_Type_Nova_cloneTo,
 &compiler_tree_nodes_Nova_Type_Nova_construct,
 },
 
@@ -1046,6 +1048,7 @@ nova_env novaEnv = {
 &compiler_tree_nodes_functions_Nova_CallableFunction_Nova_parseParameterAndAnnotations,
 &compiler_tree_nodes_functions_Nova_CallableFunction_Nova_parseParameters,
 &compiler_tree_nodes_functions_Nova_CallableFunction_Nova_compatibleArguments,
+&compiler_tree_nodes_functions_Nova_CallableFunction_Nova_parseName,
 },
 
 {
@@ -1059,8 +1062,8 @@ nova_env novaEnv = {
 
 {
 &compiler_tree_nodes_functions_Nova_FunctionDeclaration_Nova_parseSignature,
-&compiler_tree_nodes_functions_Nova_FunctionDeclaration_Nova_writeHeader,
 0,
+&compiler_tree_nodes_functions_Nova_FunctionDeclaration_Nova_writeHeader,
 &compiler_tree_nodes_functions_Nova_FunctionDeclaration_Nova_construct,
 },
 
@@ -1103,10 +1106,15 @@ nova_env novaEnv = {
 {
 &compiler_tree_nodes_generics_Nova_GenericCompatible_Nova_parseGenericParameters,
 &compiler_tree_nodes_generics_Nova_GenericCompatible_Nova_writeGenericParameters,
+&compiler_tree_nodes_generics_Nova_GenericCompatible_1_Nova_cloneTo,
 },
 
 {
 &compiler_tree_nodes_generics_Nova_GenericParameter_Nova_construct,
+},
+
+{
+&compiler_tree_nodes_generics_Nova_GenericType_Nova_construct,
 },
 
 {
