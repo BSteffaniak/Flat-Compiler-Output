@@ -28,6 +28,7 @@
 #include <nova/nova_Nova_Class.h>
 #include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <compiler/compiler_Nova_SyntaxMessage.h>
+#include <compiler/compiler_Nova_InvalidParseException.h>
 #include <compiler/tree/nodes/compiler_tree_nodes_Nova_Node.h>
 #include <compiler/util/compiler_util_Nova_Location.h>
 #include <compiler/tree/nodes/generics/compiler_tree_nodes_generics_Nova_GenericArgument.h>
@@ -36,8 +37,8 @@
 
 typedef struct
 {
-	/* Node parent = null */ compiler_tree_nodes_Nova_Node** compiler_tree_nodes_Nova_Type_Nova_parent;
-	/* Location location = Location.INVALID */ compiler_util_Nova_Location** compiler_tree_nodes_Nova_Type_Nova_location;
+	/* Node parent */ compiler_tree_nodes_Nova_Node** compiler_tree_nodes_Nova_Type_Nova_parent;
+	/* Location location */ compiler_util_Nova_Location** compiler_tree_nodes_Nova_Type_Nova_location;
 } Context1;
 typedef struct
 {
@@ -79,6 +80,8 @@ compiler_tree_nodes_Type_Extension_VTable compiler_tree_nodes_Type_Extension_VTa
 		0,
 		0,
 		0,
+		0,
+		0,
 	},
 	compiler_tree_nodes_Nova_Type_Nova_toString,
 	nova_Nova_Object_Accessor_Nova_hashCodeLong,
@@ -86,9 +89,10 @@ compiler_tree_nodes_Type_Extension_VTable compiler_tree_nodes_Type_Extension_VTa
 
 
 
+char compiler_tree_nodes_Nova_Type_Nova_parseGenericArguments(compiler_tree_nodes_Nova_Type* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* input, compiler_tree_nodes_Nova_Node* parent, compiler_util_Nova_Location* location);
 char compiler_tree_nodes_Nova_Type_Nova_parseArray(compiler_tree_nodes_Nova_Type* this, nova_exception_Nova_ExceptionData* exceptionData, compiler_tree_nodes_Nova_Node* parent, char require);
-compiler_tree_nodes_generics_Nova_GenericArgument* compiler_tree_nodes_Nova_Type_static_Nova_testLambda101(compiler_tree_nodes_Nova_Type* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* _1, int _2, nova_datastruct_list_Nova_Array* _3, Context1* context);
-char compiler_tree_nodes_Nova_Type_static_Nova_testLambda102(compiler_tree_nodes_Nova_Type* this, nova_exception_Nova_ExceptionData* exceptionData, compiler_tree_nodes_generics_Nova_GenericArgument* _1, Context2* context);
+compiler_tree_nodes_generics_Nova_GenericArgument* compiler_tree_nodes_Nova_Type_Nova_testLambda104(compiler_tree_nodes_Nova_Type* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* _1, int _2, nova_datastruct_list_Nova_Array* _3, Context1* context);
+char compiler_tree_nodes_Nova_Type_Nova_testLambda105(compiler_tree_nodes_Nova_Type* this, nova_exception_Nova_ExceptionData* exceptionData, compiler_tree_nodes_generics_Nova_GenericArgument* _1, Context2* context);
 void compiler_tree_nodes_Nova_Type_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData)
 {
 	{
@@ -132,46 +136,60 @@ void compiler_tree_nodes_Nova_Type_Nova_this(compiler_tree_nodes_Nova_Type* this
 compiler_tree_nodes_Nova_Type* compiler_tree_nodes_Nova_Type_static_Nova_parse(compiler_tree_nodes_Nova_Type* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* input, compiler_tree_nodes_Nova_Node* parent, compiler_util_Nova_Location* location, int require)
 {
 	compiler_tree_nodes_Nova_Type* l1_Nova_node = (compiler_tree_nodes_Nova_Type*)nova_null;
-	int l1_Nova_genericIndex = 0;
 	
 	parent = (compiler_tree_nodes_Nova_Node*)(parent == 0 ? (nova_Nova_Object*)(nova_Nova_Object*)nova_null : (nova_Nova_Object*)parent);
 	location = (compiler_util_Nova_Location*)(location == 0 ? (nova_Nova_Object*)compiler_util_Nova_Location_Nova_INVALID : (nova_Nova_Object*)location);
 	require = (int)(require == (intptr_t)nova_null ? 1 : require);
-	l1_Nova_node = compiler_tree_nodes_Nova_Type_Nova_construct(0, exceptionData, 0);
-	l1_Nova_node->compiler_tree_nodes_Nova_Type_Nova_name = input;
+	l1_Nova_node = compiler_tree_nodes_Nova_Type_Nova_construct(0, exceptionData, input);
+	if (!compiler_tree_nodes_Nova_Type_Nova_parseGenericArguments(l1_Nova_node, exceptionData, input, parent, location))
+	{
+		THROW(compiler_Nova_InvalidParseException_Nova_construct(0, exceptionData, nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)(nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("Unable to parse generic arguments for type '"))), exceptionData, nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)((input)), exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("'")))), parent), 1);
+	}
+	else if (!compiler_tree_nodes_Nova_Type_Nova_parseArray(l1_Nova_node, exceptionData, parent, require))
+	{
+		THROW(compiler_Nova_InvalidParseException_Nova_construct(0, exceptionData, nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)(nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("Unable to parse array dimensions for type '"))), exceptionData, nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)((input)), exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("'")))), parent), 1);
+	}
+	else if (!compiler_util_Nova_CompilerStringFunctions_Accessor_Nova_isIdentifier(l1_Nova_node->compiler_tree_nodes_Nova_Type_Nova_name, exceptionData))
+	{
+		THROW(compiler_Nova_InvalidParseException_Nova_construct(0, exceptionData, nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)(nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("Invalid type '"))), exceptionData, nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)((input)), exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("'")))), parent), 1);
+	}
+	else
+	{
+		return l1_Nova_node;
+	}
+	return (compiler_tree_nodes_Nova_Type*)(nova_Nova_Object*)nova_null;
+}
+
+char compiler_tree_nodes_Nova_Type_Nova_parseGenericArguments(compiler_tree_nodes_Nova_Type* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* input, compiler_tree_nodes_Nova_Node* parent, compiler_util_Nova_Location* location)
+{
+	int l1_Nova_genericIndex = 0;
+	
 	l1_Nova_genericIndex = nova_Nova_String_1_Nova_indexOf(input, exceptionData, '<', (intptr_t)nova_null, (intptr_t)nova_null, (intptr_t)nova_null);
 	if (l1_Nova_genericIndex > 0)
 	{
 		int l1_Nova_end = 0;
 		
-		l1_Nova_node->compiler_tree_nodes_Nova_Type_Nova_name = nova_Nova_String_Nova_substring(input, exceptionData, (intptr_t)nova_null, l1_Nova_genericIndex);
+		this->compiler_tree_nodes_Nova_Type_Nova_name = nova_Nova_String_Nova_substring(input, exceptionData, (intptr_t)nova_null, l1_Nova_genericIndex);
 		l1_Nova_end = compiler_util_Nova_CompilerStringFunctions_0_Nova_findEndingMatch(input, exceptionData, l1_Nova_genericIndex, '<', '>', (intptr_t)nova_null, (intptr_t)nova_null);
 		if (l1_Nova_end > 0)
 		{
-			Context1 contextArg101 = 
+			Context1 contextArg104 = 
 			{
 				&parent,
 				&location,
 			};
-			Context2 contextArg102 = 
+			Context2 contextArg105 = 
 			{
 			};
 			
-			l1_Nova_node->compiler_tree_nodes_Nova_Type_Nova_genericArguments = (nova_datastruct_list_Nova_Array*)(nova_datastruct_list_Nova_List_virtual0_Nova_map((nova_datastruct_list_Nova_List*)(compiler_util_Nova_CompilerStringFunctions_Nova_splitAtCommas(nova_Nova_String_Nova_substring(input, exceptionData, l1_Nova_genericIndex + 1, l1_Nova_end), exceptionData, (intptr_t)nova_null, (intptr_t)nova_null)), exceptionData, (nova_datastruct_list_Nova_List_closure6_Nova_mapFunc)&compiler_tree_nodes_Nova_Type_static_Nova_testLambda101, nova_null, &contextArg101));
-			if (nova_datastruct_list_Nova_List_virtual0_Nova_any((nova_datastruct_list_Nova_List*)(l1_Nova_node->compiler_tree_nodes_Nova_Type_Nova_genericArguments), exceptionData, (nova_datastruct_list_Nova_List_closure9_Nova_anyFunc)&compiler_tree_nodes_Nova_Type_static_Nova_testLambda102, nova_null, &contextArg102))
+			this->compiler_tree_nodes_Nova_Type_Nova_genericArguments = (nova_datastruct_list_Nova_Array*)(nova_datastruct_list_Nova_List_virtual0_Nova_map((nova_datastruct_list_Nova_List*)(compiler_util_Nova_CompilerStringFunctions_Nova_splitAtCommas(nova_Nova_String_Nova_substring(input, exceptionData, l1_Nova_genericIndex + 1, l1_Nova_end), exceptionData, (intptr_t)nova_null, (intptr_t)nova_null)), exceptionData, (nova_datastruct_list_Nova_List_closure6_Nova_mapFunc)&compiler_tree_nodes_Nova_Type_Nova_testLambda104, this, &contextArg104));
+			if (nova_datastruct_list_Nova_List_virtual0_Nova_any((nova_datastruct_list_Nova_List*)(this->compiler_tree_nodes_Nova_Type_Nova_genericArguments), exceptionData, (nova_datastruct_list_Nova_List_closure9_Nova_anyFunc)&compiler_tree_nodes_Nova_Type_Nova_testLambda105, this, &contextArg105))
 			{
-				return (compiler_tree_nodes_Nova_Type*)(nova_Nova_Object*)nova_null;
+				return 0;
 			}
 		}
 	}
-	if (compiler_tree_nodes_Nova_Type_Nova_parseArray(l1_Nova_node, exceptionData, parent, require) && compiler_util_Nova_CompilerStringFunctions_Accessor_Nova_isIdentifier(l1_Nova_node->compiler_tree_nodes_Nova_Type_Nova_name, exceptionData))
-	{
-		return l1_Nova_node;
-	}
-	else
-	{
-		return (compiler_tree_nodes_Nova_Type*)(nova_Nova_Object*)nova_null;
-	}
+	return 1;
 }
 
 char compiler_tree_nodes_Nova_Type_Nova_parseArray(compiler_tree_nodes_Nova_Type* this, nova_exception_Nova_ExceptionData* exceptionData, compiler_tree_nodes_Nova_Node* parent, char require)
@@ -232,12 +250,12 @@ nova_Nova_String* compiler_tree_nodes_Nova_Type_Nova_toNova(compiler_tree_nodes_
 	return nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)(nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)((this->compiler_tree_nodes_Nova_Type_Nova_name)), exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("")))), exceptionData, nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)(compiler_tree_nodes_Nova_Type_Nova_writeArray(this, exceptionData)), exceptionData, compiler_tree_nodes_Nova_Type_Nova_writeGenericParameters(this, exceptionData)));
 }
 
-compiler_tree_nodes_generics_Nova_GenericArgument* compiler_tree_nodes_Nova_Type_static_Nova_testLambda101(compiler_tree_nodes_Nova_Type* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* _1, int _2, nova_datastruct_list_Nova_Array* _3, Context1* context)
+compiler_tree_nodes_generics_Nova_GenericArgument* compiler_tree_nodes_Nova_Type_Nova_testLambda104(compiler_tree_nodes_Nova_Type* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* _1, int _2, nova_datastruct_list_Nova_Array* _3, Context1* context)
 {
 	return compiler_tree_nodes_generics_Nova_GenericArgument_Nova_construct(0, exceptionData, (*context->compiler_tree_nodes_Nova_Type_Nova_parent), (*context->compiler_tree_nodes_Nova_Type_Nova_location), _1);
 }
 
-char compiler_tree_nodes_Nova_Type_static_Nova_testLambda102(compiler_tree_nodes_Nova_Type* this, nova_exception_Nova_ExceptionData* exceptionData, compiler_tree_nodes_generics_Nova_GenericArgument* _1, Context2* context)
+char compiler_tree_nodes_Nova_Type_Nova_testLambda105(compiler_tree_nodes_Nova_Type* this, nova_exception_Nova_ExceptionData* exceptionData, compiler_tree_nodes_generics_Nova_GenericArgument* _1, Context2* context)
 {
 	return _1 == (compiler_tree_nodes_generics_Nova_GenericArgument*)nova_null;
 }

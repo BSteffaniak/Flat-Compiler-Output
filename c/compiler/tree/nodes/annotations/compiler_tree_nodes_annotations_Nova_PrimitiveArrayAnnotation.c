@@ -83,6 +83,8 @@ compiler_tree_nodes_annotations_PrimitiveArrayAnnotation_Extension_VTable compil
 		0,
 		0,
 		0,
+		0,
+		0,
 	},
 	compiler_tree_nodes_Nova_Node_Nova_toString,
 	nova_Nova_Object_Accessor_Nova_hashCodeLong,

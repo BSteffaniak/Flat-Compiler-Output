@@ -82,6 +82,8 @@ compiler_tree_nodes_ArgumentList_Extension_VTable compiler_tree_nodes_ArgumentLi
 		0,
 		0,
 		0,
+		0,
+		0,
 	},
 	compiler_tree_nodes_Nova_ArgumentList_Nova_toString,
 	nova_Nova_Object_Accessor_Nova_hashCodeLong,

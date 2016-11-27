@@ -80,6 +80,8 @@ compiler_tree_nodes_Skeleton_Extension_VTable compiler_tree_nodes_Skeleton_Exten
 		0,
 		0,
 		0,
+		0,
+		0,
 	},
 	compiler_tree_nodes_Nova_Node_Nova_toString,
 	nova_Nova_Object_Accessor_Nova_hashCodeLong,

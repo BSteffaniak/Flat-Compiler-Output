@@ -37,9 +37,11 @@ typedef struct compiler_tree_nodes_exceptionhandling_Nova_Catch compiler_tree_no
 #include <nova/nova_Nova_System.h>
 #include <nova/nova_Nova_Class.h>
 #include <nova/regex/nova_regex_Nova_Pattern.h>
-#include <compiler/tree/nodes/compiler_tree_nodes_Nova_Node.h>
-#include <compiler/util/compiler_util_Nova_Location.h>
 #include <compiler/compiler_Nova_InvalidParseException.h>
+#include <compiler/tree/nodes/compiler_tree_nodes_Nova_Node.h>
+#include <compiler/tree/nodes/compiler_tree_nodes_Nova_Type.h>
+#include <compiler/tree/nodes/compiler_tree_nodes_Nova_Scope.h>
+#include <compiler/util/compiler_util_Nova_Location.h>
 #include <compiler/tree/nodes/annotations/compiler_tree_nodes_annotations_Nova_Annotatable.h>
 #include <compiler/tree/nodes/annotations/compiler_tree_nodes_annotations_Nova_Annotation.h>
 #include <compiler/tree/nodes/exceptionhandling/compiler_tree_nodes_exceptionhandling_Nova_Try.h>
@@ -48,7 +50,6 @@ typedef struct compiler_tree_nodes_exceptionhandling_Nova_Catch compiler_tree_no
 #include <compiler/tree/nodes/compiler_tree_nodes_Nova_ClassDeclaration.h>
 #include <compiler/tree/nodes/compiler_tree_nodes_Nova_NovaFile.h>
 #include <compiler/tree/nodes/compiler_tree_nodes_Nova_Program.h>
-#include <compiler/tree/nodes/compiler_tree_nodes_Nova_Scope.h>
 #include <compiler/tree/nodes/compiler_tree_nodes_Nova_ValidationResult.h>
 #include <nova/NativeObject.h>
 #include <nova/operators/nova_operators_Nova_Equals.h>
@@ -69,14 +70,14 @@ struct compiler_tree_nodes_exceptionhandling_Catch_Extension_VTable
 	char (*compiler_tree_nodes_Nova_Node_virtual_Nova_validateTypes)(compiler_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*);
 	char (*compiler_tree_nodes_Nova_Node_virtual_Nova_parsePlaceholders)(compiler_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*);
 	compiler_tree_nodes_Nova_Node* (*compiler_tree_nodes_Nova_Node_virtual_Nova_cloneTo)(compiler_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, compiler_tree_nodes_Nova_Node*);
-	nova_Nova_String* (*compiler_tree_nodes_Nova_Node_virtual_Nova_toNova)(compiler_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*);
-	compiler_tree_nodes_Nova_Scope* (*compiler_tree_nodes_Nova_Node_virtual_Mutator_Nova_scope)(compiler_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, compiler_tree_nodes_Nova_Scope*);
+	nova_Nova_String* (*compiler_tree_nodes_Nova_Node_virtual_Nova_toNova)(compiler_tree_nodes_exceptionhandling_Nova_Catch*, nova_exception_Nova_ExceptionData*);
+	compiler_tree_nodes_Nova_Scope* (*compiler_tree_nodes_Nova_Node_virtual_Mutator_Nova_scope)(compiler_tree_nodes_exceptionhandling_Nova_Catch*, nova_exception_Nova_ExceptionData*, compiler_tree_nodes_Nova_Scope*);
 	compiler_tree_nodes_Nova_Program* (*compiler_tree_nodes_Nova_Node_virtual_Accessor_Nova_program)(compiler_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*);
 	compiler_tree_nodes_Nova_NovaFile* (*compiler_tree_nodes_Nova_Node_virtual_Accessor_Nova_parentFile)(compiler_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*);
 	compiler_tree_nodes_functions_Nova_FunctionDeclaration* (*compiler_tree_nodes_Nova_Node_virtual_Accessor_Nova_parentFunction)(compiler_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*);
 	compiler_tree_nodes_exceptionhandling_Nova_Try* (*compiler_tree_nodes_Nova_Node_virtual_Accessor_Nova_parentTry)(compiler_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*);
 	compiler_tree_nodes_Nova_ClassDeclaration* (*compiler_tree_nodes_Nova_Node_virtual_Accessor_Nova_parentClass)(compiler_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*);
-	compiler_tree_nodes_Nova_Scope* (*compiler_tree_nodes_Nova_Node_virtual_Accessor_Nova_scope)(compiler_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*);
+	compiler_tree_nodes_Nova_Scope* (*compiler_tree_nodes_Nova_Node_virtual_Accessor_Nova_scope)(compiler_tree_nodes_exceptionhandling_Nova_Catch*, nova_exception_Nova_ExceptionData*);
 };
 
 extern compiler_tree_nodes_exceptionhandling_Catch_Extension_VTable compiler_tree_nodes_exceptionhandling_Catch_Extension_VTable_val;
@@ -90,6 +91,10 @@ CCLASS_CLASS
 	compiler_util_Nova_Location* compiler_tree_nodes_Nova_Node_Nova_location;
 	nova_datastruct_list_Nova_Array* compiler_tree_nodes_Nova_Node_Nova_annotations;
 	compiler_tree_nodes_Nova_Node* compiler_tree_nodes_Nova_Node_Nova_parent;
+	char compiler_tree_nodes_exceptionhandling_Nova_Catch_Nova_soft;
+	compiler_tree_nodes_Nova_Type* compiler_tree_nodes_exceptionhandling_Nova_Catch_Nova_exception;
+	nova_Nova_String* compiler_tree_nodes_exceptionhandling_Nova_Catch_Nova_variable;
+	compiler_tree_nodes_Nova_Scope* compiler_tree_nodes_exceptionhandling_Nova_Catch_Nova_scope;
 )
 
 void compiler_tree_nodes_exceptionhandling_Nova_Catch_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData);
@@ -97,6 +102,10 @@ compiler_tree_nodes_exceptionhandling_Nova_Catch* compiler_tree_nodes_exceptionh
 void compiler_tree_nodes_exceptionhandling_Nova_Catch_Nova_destroy(compiler_tree_nodes_exceptionhandling_Nova_Catch** this, nova_exception_Nova_ExceptionData* exceptionData);
 void compiler_tree_nodes_exceptionhandling_Nova_Catch_Nova_this(compiler_tree_nodes_exceptionhandling_Nova_Catch* this, nova_exception_Nova_ExceptionData* exceptionData, compiler_tree_nodes_Nova_Node* parent, compiler_util_Nova_Location* location);
 compiler_tree_nodes_exceptionhandling_Nova_Catch* compiler_tree_nodes_exceptionhandling_Nova_Catch_static_Nova_parse(compiler_tree_nodes_exceptionhandling_Nova_Catch* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* input, compiler_tree_nodes_Nova_Node* parent, compiler_util_Nova_Location* location, int require);
+nova_Nova_String* compiler_tree_nodes_exceptionhandling_Nova_Catch_Nova_writeException(compiler_tree_nodes_exceptionhandling_Nova_Catch* this, nova_exception_Nova_ExceptionData* exceptionData);
+nova_Nova_String* compiler_tree_nodes_exceptionhandling_Nova_Catch_Nova_toNova(compiler_tree_nodes_exceptionhandling_Nova_Catch* this, nova_exception_Nova_ExceptionData* exceptionData);
+compiler_tree_nodes_Nova_Scope* compiler_tree_nodes_exceptionhandling_Nova_Catch_Accessorfunc_Nova_scope(compiler_tree_nodes_exceptionhandling_Nova_Catch* this, nova_exception_Nova_ExceptionData* exceptionData);
+compiler_tree_nodes_Nova_Scope* compiler_tree_nodes_exceptionhandling_Nova_Catch_Mutatorfunc_Nova_scope(compiler_tree_nodes_exceptionhandling_Nova_Catch* this, nova_exception_Nova_ExceptionData* exceptionData, compiler_tree_nodes_Nova_Scope* value);
 void compiler_tree_nodes_exceptionhandling_Nova_Catch_Nova_super(compiler_tree_nodes_exceptionhandling_Nova_Catch* this, nova_exception_Nova_ExceptionData* exceptionData);
 
 #endif

@@ -897,6 +897,7 @@ nova_env novaEnv = {
 },
 
 {
+&compiler_tree_nodes_Nova_NovaFile_Nova_getImportedClass,
 &compiler_tree_nodes_Nova_NovaFile_Nova_addAutoImports,
 &compiler_tree_nodes_Nova_NovaFile_Nova_addImport,
 &compiler_tree_nodes_Nova_NovaFile_Nova_containsImport,
@@ -1010,6 +1011,7 @@ nova_env novaEnv = {
 },
 
 {
+&compiler_tree_nodes_exceptionhandling_Nova_Catch_Nova_writeException,
 &compiler_tree_nodes_exceptionhandling_Nova_Catch_Nova_construct,
 },
 
@@ -1030,6 +1032,11 @@ nova_env novaEnv = {
 },
 
 {
+&compiler_tree_nodes_functions_Nova_ArrayInstantiation_Nova_writeDimensions,
+&compiler_tree_nodes_functions_Nova_ArrayInstantiation_Nova_construct,
+},
+
+{
 &compiler_tree_nodes_functions_Nova_BodyFunction_Nova_writeBody,
 &compiler_tree_nodes_functions_Nova_BodyFunction_Nova_construct,
 },
@@ -1046,6 +1053,7 @@ nova_env novaEnv = {
 },
 
 {
+0,
 &compiler_tree_nodes_functions_Nova_FunctionCall_Nova_construct,
 },
 
@@ -1090,6 +1098,15 @@ nova_env novaEnv = {
 
 {
 &compiler_tree_nodes_generics_Nova_GenericArgument_Nova_construct,
+},
+
+{
+&compiler_tree_nodes_generics_Nova_GenericCompatible_Nova_parseGenericParameters,
+&compiler_tree_nodes_generics_Nova_GenericCompatible_Nova_writeGenericParameters,
+},
+
+{
+&compiler_tree_nodes_generics_Nova_GenericParameter_Nova_construct,
 },
 
 {
@@ -1171,6 +1188,7 @@ nova_env novaEnv = {
 
 {
 &compiler_util_Nova_CompilerStringFunctions_Nova_containsAllWhitespaceAfter,
+&compiler_util_Nova_CompilerStringFunctions_Nova_getArrayAccesses,
 &compiler_util_Nova_CompilerStringFunctions_Nova_substring,
 &compiler_util_Nova_CompilerStringFunctions_0_Nova_nextWordBounds,
 &compiler_util_Nova_CompilerStringFunctions_Nova_containsWord,

@@ -38,8 +38,11 @@ typedef struct compiler_tree_nodes_Nova_ClassDeclaration compiler_tree_nodes_Nov
 #include <nova/nova_Nova_Class.h>
 #include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <compiler/compiler_Nova_SyntaxErrorException.h>
+#include <compiler/compiler_Nova_InvalidParseException.h>
 #include <compiler/compiler_Nova_SyntaxMessage.h>
 #include <compiler/util/compiler_util_Nova_Location.h>
+#include <compiler/tree/nodes/generics/compiler_tree_nodes_generics_Nova_GenericParameter.h>
+#include <compiler/tree/nodes/generics/compiler_tree_nodes_generics_Nova_GenericCompatible.h>
 #include <compiler/tree/nodes/variables/compiler_tree_nodes_variables_Nova_InstanceDeclaration.h>
 #include <compiler/tree/nodes/variables/compiler_tree_nodes_variables_Nova_VariableDeclaration.h>
 #include <compiler/tree/nodes/variables/compiler_tree_nodes_variables_Nova_FieldDeclaration.h>
@@ -52,8 +55,6 @@ typedef struct compiler_tree_nodes_Nova_ClassDeclaration compiler_tree_nodes_Nov
 #include <compiler/tree/nodes/compiler_tree_nodes_Nova_Type.h>
 #include <compiler/tree/nodes/compiler_tree_nodes_Nova_Value.h>
 #include <compiler/tree/nodes/compiler_tree_nodes_Nova_Identifier.h>
-#include <nova/datastruct/nova_datastruct_Nova_Tuple2.h>
-#include <compiler/compiler_Nova_InvalidParseException.h>
 #include <compiler/tree/nodes/arrays/compiler_tree_nodes_arrays_Nova_ArrayAccess.h>
 #include <compiler/tree/nodes/operations/compiler_tree_nodes_operations_Nova_Operation.h>
 #include <compiler/tree/nodes/operations/compiler_tree_nodes_operations_Nova_TernaryOperation.h>
@@ -61,6 +62,7 @@ typedef struct compiler_tree_nodes_Nova_ClassDeclaration compiler_tree_nodes_Nov
 #include <compiler/tree/nodes/operations/compiler_tree_nodes_operations_Nova_Assignable.h>
 #include <compiler/tree/nodes/variables/compiler_tree_nodes_variables_Nova_Variable.h>
 #include <compiler/tree/nodes/functions/compiler_tree_nodes_functions_Nova_FunctionCall.h>
+#include <compiler/tree/nodes/functions/compiler_tree_nodes_functions_Nova_ArrayInstantiation.h>
 #include <compiler/tree/nodes/functions/compiler_tree_nodes_functions_Nova_Instantiation.h>
 #include <compiler/tree/nodes/compiler_tree_nodes_Nova_Accessible.h>
 #include <compiler/tree/nodes/compiler_tree_nodes_Nova_ClassDeclaration.h>
@@ -132,6 +134,7 @@ CCLASS_CLASS
 	char compiler_tree_nodes_Nova_ClassDeclaration_Nova_isAbstract;
 	compiler_tree_nodes_Nova_Type* compiler_tree_nodes_Nova_ClassDeclaration_Nova_extendedClass;
 	nova_datastruct_list_Nova_Array* compiler_tree_nodes_Nova_ClassDeclaration_Nova_implementedInterfaces;
+	nova_datastruct_list_Nova_Array* compiler_tree_nodes_Nova_ClassDeclaration_Nova_genericParameters;
 	nova_datastruct_list_Nova_Array* compiler_tree_nodes_Nova_ClassDeclaration_Nova_fields;
 	nova_datastruct_list_Nova_Array* compiler_tree_nodes_Nova_ClassDeclaration_Nova_functions;
 	compiler_tree_nodes_variables_Nova_ArrayBracketOverload* compiler_tree_nodes_Nova_ClassDeclaration_Nova_arrayBracketOverload;
@@ -162,6 +165,8 @@ compiler_tree_nodes_Nova_ClassDeclaration* compiler_tree_nodes_Nova_ClassDeclara
 nova_Nova_String* compiler_tree_nodes_Nova_ClassDeclaration_Accessorfunc_Nova_location(compiler_tree_nodes_Nova_ClassDeclaration* this, nova_exception_Nova_ExceptionData* exceptionData);
 char compiler_tree_nodes_Nova_ClassDeclaration_Accessorfunc_Nova_isAbstract(compiler_tree_nodes_Nova_ClassDeclaration* this, nova_exception_Nova_ExceptionData* exceptionData);
 char compiler_tree_nodes_Nova_ClassDeclaration_Mutatorfunc0_Nova_isAbstract(compiler_tree_nodes_Nova_ClassDeclaration* this, nova_exception_Nova_ExceptionData* exceptionData, char value);
+nova_datastruct_list_Nova_Array* compiler_tree_nodes_Nova_ClassDeclaration_Accessorfunc_Nova_genericParameters(compiler_tree_nodes_Nova_ClassDeclaration* this, nova_exception_Nova_ExceptionData* exceptionData);
+nova_datastruct_list_Nova_Array* compiler_tree_nodes_Nova_ClassDeclaration_Mutatorfunc_Nova_genericParameters(compiler_tree_nodes_Nova_ClassDeclaration* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_list_Nova_Array* value);
 char compiler_tree_nodes_Nova_ClassDeclaration_Accessor_Nova_isPrivate(compiler_tree_nodes_Nova_ClassDeclaration* this, nova_exception_Nova_ExceptionData* exceptionData);
 char compiler_tree_nodes_Nova_ClassDeclaration_Accessor_Nova_isPublic(compiler_tree_nodes_Nova_ClassDeclaration* this, nova_exception_Nova_ExceptionData* exceptionData);
 void compiler_tree_nodes_Nova_ClassDeclaration_Nova_super(compiler_tree_nodes_Nova_ClassDeclaration* this, nova_exception_Nova_ExceptionData* exceptionData);

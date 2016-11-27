@@ -85,6 +85,8 @@ compiler_tree_nodes_controlstructures_loops_WhileLoop_Extension_VTable compiler_
 		0,
 		0,
 		0,
+		0,
+		0,
 	},
 	compiler_tree_nodes_Nova_Node_Nova_toString,
 	nova_Nova_Object_Accessor_Nova_hashCodeLong,
