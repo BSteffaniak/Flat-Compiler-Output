@@ -1,7 +1,6 @@
 #include <precompiled.h>
 #include <nova/exception/nova_exception_Nova_ExceptionData.h>
 #include <nova/exception/nova_exception_Nova_Exception.h>
-#include <nova/exception/nova_exception_Nova_SoftException.h>
 #include <nova/exception/nova_exception_Nova_DivideByZeroException.h>
 #include <nova/io/nova_io_Nova_Console.h>
 #include <nova/primitive/number/nova_primitive_number_Nova_Number.h>
@@ -106,7 +105,7 @@ void example_Nova_ExceptionHandlingDemo_static_Nova_main(example_Nova_ExceptionH
 {
 	TRY
 	{
-		novaEnv.nova_exception_ExceptionData.addCaught(exceptionData, exceptionData, example_NonWholeDivisionException_Extension_VTable_val.classInstance);
+		novaEnv.nova_exception_ExceptionData.addCaught(exceptionData, exceptionData, example_NonWholeDivisionException_Extension_VTable_val.classInstance, 0);
 		
 		{
 			int l1_Nova_result = 0;
@@ -139,12 +138,12 @@ int example_Nova_ExceptionHandlingDemo_static_Nova_divide(example_Nova_Exception
 	
 	if (num % den != 0)
 	{
-		THROW(example_Nova_NonWholeDivisionException_Nova_construct(0, exceptionData));
+		THROW(example_Nova_NonWholeDivisionException_Nova_construct(0, exceptionData), 0);
 	}
 	nova_zero_check5 = den;
 	if (nova_zero_check5 == 0)
 	{
-		THROW(nova_exception_Nova_DivideByZeroException_Nova_construct(0, exceptionData));
+		THROW(nova_exception_Nova_DivideByZeroException_Nova_construct(0, exceptionData), 0);
 	}
 	return num / nova_zero_check5;
 }

@@ -240,6 +240,7 @@ nova_Nova_Object_native_Nova_construct Object;
 } nova_native_Object;
 
 typedef nova_Nova_String* (*nova_Nova_String_native_Nova_concat)(nova_Nova_String*, nova_exception_Nova_ExceptionData*, nova_Nova_String*);
+typedef nova_Nova_String* (*nova_Nova_String_native_Nova_repeat)(nova_Nova_String*, nova_exception_Nova_ExceptionData*, int);
 typedef nova_Nova_String* (*nova_Nova_String_native0_Nova_replace)(nova_Nova_String*, nova_exception_Nova_ExceptionData*, nova_regex_Nova_Pattern*, nova_Nova_String*);
 typedef nova_Nova_String* (*nova_Nova_String_native1_Nova_replace)(nova_Nova_String*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, nova_Nova_String*);
 typedef char (*nova_Nova_String_native0_Nova_startsWith)(nova_Nova_String*, nova_exception_Nova_ExceptionData*, char);
@@ -274,6 +275,7 @@ typedef nova_Nova_String* (*nova_Nova_String_native2_Nova_construct)(nova_Nova_S
 typedef struct nova_native_String
 {
 nova_Nova_String_native_Nova_concat concat;
+nova_Nova_String_native_Nova_repeat repeat;
 nova_Nova_String_native0_Nova_replace replace__nova_regex_Pattern__nova_String;
 nova_Nova_String_native1_Nova_replace replace__nova_String__nova_String;
 nova_Nova_String_native0_Nova_startsWith startsWith__nova_primitive_number_Char;
@@ -2030,11 +2032,15 @@ compiler_tree_nodes_Nova_StaticClassReference_native_Nova_construct StaticClassR
 } compiler_tree_nodes_native_StaticClassReference;
 
 typedef compiler_tree_nodes_Nova_Type* (*compiler_tree_nodes_Nova_Type_native_static_Nova_parse)(compiler_tree_nodes_Nova_Type*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, compiler_tree_nodes_Nova_Node*, compiler_util_Nova_Location*, int);
+typedef nova_Nova_String* (*compiler_tree_nodes_Nova_Type_native_Nova_writeArray)(compiler_tree_nodes_Nova_Type*, nova_exception_Nova_ExceptionData*);
+typedef nova_Nova_String* (*compiler_tree_nodes_Nova_Type_native_Nova_writeGenericParameters)(compiler_tree_nodes_Nova_Type*, nova_exception_Nova_ExceptionData*);
 typedef nova_Nova_String* (*compiler_tree_nodes_Nova_Type_native_Nova_toNova)(compiler_tree_nodes_Nova_Type*, nova_exception_Nova_ExceptionData*);
 typedef compiler_tree_nodes_Nova_Type* (*compiler_tree_nodes_Nova_Type_native_Nova_construct)(compiler_tree_nodes_Nova_Type*, nova_exception_Nova_ExceptionData*, nova_Nova_String*);
 
 typedef struct compiler_tree_nodes_native_Type
 {
+compiler_tree_nodes_Nova_Type_native_Nova_writeArray writeArray;
+compiler_tree_nodes_Nova_Type_native_Nova_writeGenericParameters writeGenericParameters;
 compiler_tree_nodes_Nova_Type_native_Nova_toNova toNova;
 compiler_tree_nodes_Nova_Type_native_Nova_construct Type;
 } compiler_tree_nodes_native_Type;

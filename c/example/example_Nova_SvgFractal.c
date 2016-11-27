@@ -1,7 +1,6 @@
 #include <precompiled.h>
 #include <nova/exception/nova_exception_Nova_ExceptionData.h>
 #include <nova/exception/nova_exception_Nova_Exception.h>
-#include <nova/exception/nova_exception_Nova_SoftException.h>
 #include <nova/exception/nova_exception_Nova_DivideByZeroException.h>
 #include <nova/io/nova_io_Nova_Console.h>
 #include <nova/primitive/number/nova_primitive_number_Nova_Number.h>
@@ -144,7 +143,7 @@ void example_Nova_SvgFractal_static_Nova_main(example_Nova_SvgFractal* this, nov
 		nova_zero_check12 = (l1_Nova_numVerts * 1.0);
 		if (nova_zero_check12 == 0)
 		{
-			THROW(nova_exception_Nova_DivideByZeroException_Nova_construct(0, exceptionData));
+			THROW(nova_exception_Nova_DivideByZeroException_Nova_construct(0, exceptionData), 0);
 		}
 		l2_Nova_rad = l1_Nova_pi2 * (l2_Nova_i / nova_zero_check12) + l1_Nova_offset;
 		nova_datastruct_list_Nova_DoubleArray_Nova_set(l1_Nova_points, exceptionData, l2_Nova_i * 2 + 0, l1_Nova_radius * nova_math_Nova_Math_static_Nova_cos(0, exceptionData, l2_Nova_rad) + l1_Nova_radius + 10);

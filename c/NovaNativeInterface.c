@@ -14,6 +14,7 @@ nova_env novaEnv = {
 
 {
 0,
+&nova_Nova_String_Nova_repeat,
 &nova_Nova_String_0_Nova_replace,
 &nova_Nova_String_1_Nova_replace,
 &nova_Nova_String_0_Nova_startsWith,
@@ -939,6 +940,8 @@ nova_env novaEnv = {
 },
 
 {
+&compiler_tree_nodes_Nova_Type_Nova_writeArray,
+&compiler_tree_nodes_Nova_Type_Nova_writeGenericParameters,
 &compiler_tree_nodes_Nova_Type_Nova_toNova,
 &compiler_tree_nodes_Nova_Type_Nova_construct,
 },

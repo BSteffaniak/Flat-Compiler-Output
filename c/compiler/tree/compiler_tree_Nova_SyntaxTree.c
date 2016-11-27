@@ -286,9 +286,10 @@ void compiler_tree_Nova_SyntaxTree_Nova_testLambda89(compiler_tree_Nova_SyntaxTr
 		}
 		if (l1_Nova_statements->compiler_tree_Nova_StatementIterator_Nova_endsScope)
 		{
-			int repeatCounter2 = 0;
+			int l15_Nova_e = 0;
 			
-			for (repeatCounter2 = 0; repeatCounter2 < l1_Nova_statements->compiler_tree_Nova_StatementIterator_Nova_scopesEnded; repeatCounter2++)
+			l15_Nova_e = (int)0;
+			for (; l15_Nova_e < (int)l1_Nova_statements->compiler_tree_Nova_StatementIterator_Nova_scopesEnded; l15_Nova_e++)
 			{
 				if (!nova_datastruct_list_Nova_Stack_Accessor_Nova_isEmpty((nova_datastruct_list_Nova_Stack*)(this->prv->compiler_tree_Nova_SyntaxTree_Nova_parents), exceptionData))
 				{

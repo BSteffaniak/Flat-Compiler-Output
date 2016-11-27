@@ -1,7 +1,6 @@
 #include <precompiled.h>
 #include <nova/exception/nova_exception_Nova_ExceptionData.h>
 #include <nova/exception/nova_exception_Nova_Exception.h>
-#include <nova/exception/nova_exception_Nova_SoftException.h>
 #include <nova/exception/nova_exception_Nova_DivideByZeroException.h>
 #include <nova/io/nova_io_Nova_Console.h>
 #include <nova/primitive/number/nova_primitive_number_Nova_Number.h>
@@ -146,12 +145,12 @@ void example_Nova_HashSetDemo_static_Nova_main(example_Nova_HashSetDemo* this, n
 	nova_zero_check6 = l1_Nova_stringTime;
 	if (nova_zero_check6 == 0)
 	{
-		THROW(nova_exception_Nova_DivideByZeroException_Nova_construct(0, exceptionData));
+		THROW(nova_exception_Nova_DivideByZeroException_Nova_construct(0, exceptionData), 0);
 	}
 	nova_zero_check7 = nova_zero_check6;
 	if (nova_zero_check7 == 0)
 	{
-		THROW(nova_exception_Nova_DivideByZeroException_Nova_construct(0, exceptionData));
+		THROW(nova_exception_Nova_DivideByZeroException_Nova_construct(0, exceptionData), 0);
 	}
 	nova_io_Nova_Console_1_static_Nova_writeLine(0, exceptionData, nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)(nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("Took "))), exceptionData, nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)(nova_primitive_number_Nova_Long_static_Nova_toString(0, exceptionData, (l1_Nova_addTime))), exceptionData, nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)(nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("ms to call add "))), exceptionData, nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)(nova_primitive_number_Nova_Int_static_Nova_toString(0, exceptionData, (l1_Nova_count))), exceptionData, nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)(nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)(" times "))), exceptionData, nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)(nova_primitive_number_Nova_Long_static_Nova_toString(0, exceptionData, ((l1_Nova_addTime - l1_Nova_stringTime) * 100 / nova_zero_check6))), exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("% overhead")))))))));
 	nova_time_Nova_Timer_Nova_start(l1_Nova_timer, exceptionData);
@@ -164,12 +163,12 @@ void example_Nova_HashSetDemo_static_Nova_main(example_Nova_HashSetDemo* this, n
 	nova_zero_check8 = l1_Nova_stringTime;
 	if (nova_zero_check8 == 0)
 	{
-		THROW(nova_exception_Nova_DivideByZeroException_Nova_construct(0, exceptionData));
+		THROW(nova_exception_Nova_DivideByZeroException_Nova_construct(0, exceptionData), 0);
 	}
 	nova_zero_check9 = nova_zero_check8;
 	if (nova_zero_check9 == 0)
 	{
-		THROW(nova_exception_Nova_DivideByZeroException_Nova_construct(0, exceptionData));
+		THROW(nova_exception_Nova_DivideByZeroException_Nova_construct(0, exceptionData), 0);
 	}
 	nova_io_Nova_Console_1_static_Nova_writeLine(0, exceptionData, nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)(nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("Took "))), exceptionData, nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)(nova_primitive_number_Nova_Long_static_Nova_toString(0, exceptionData, (l1_Nova_getTime))), exceptionData, nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)(nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("ms to call get "))), exceptionData, nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)(nova_primitive_number_Nova_Int_static_Nova_toString(0, exceptionData, (l1_Nova_count))), exceptionData, nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)(nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)(" times "))), exceptionData, nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)(nova_primitive_number_Nova_Long_static_Nova_toString(0, exceptionData, ((l1_Nova_getTime - l1_Nova_stringTime) * 100 / nova_zero_check8))), exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("% overhead")))))))));
 	nova_time_Nova_Timer_Nova_start(l1_Nova_timer, exceptionData);
@@ -182,12 +181,12 @@ void example_Nova_HashSetDemo_static_Nova_main(example_Nova_HashSetDemo* this, n
 	nova_zero_check10 = l1_Nova_stringTime;
 	if (nova_zero_check10 == 0)
 	{
-		THROW(nova_exception_Nova_DivideByZeroException_Nova_construct(0, exceptionData));
+		THROW(nova_exception_Nova_DivideByZeroException_Nova_construct(0, exceptionData), 0);
 	}
 	nova_zero_check11 = nova_zero_check10;
 	if (nova_zero_check11 == 0)
 	{
-		THROW(nova_exception_Nova_DivideByZeroException_Nova_construct(0, exceptionData));
+		THROW(nova_exception_Nova_DivideByZeroException_Nova_construct(0, exceptionData), 0);
 	}
 	nova_io_Nova_Console_1_static_Nova_writeLine(0, exceptionData, nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)(nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("Took "))), exceptionData, nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)(nova_primitive_number_Nova_Long_static_Nova_toString(0, exceptionData, (l1_Nova_newStringTime))), exceptionData, nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)(nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("ms to create "))), exceptionData, nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)(nova_primitive_number_Nova_Int_static_Nova_toString(0, exceptionData, (l1_Nova_count))), exceptionData, nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)(nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)(" strings "))), exceptionData, nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)(nova_primitive_number_Nova_Long_static_Nova_toString(0, exceptionData, ((l1_Nova_newStringTime - l1_Nova_stringTime) * 100 / nova_zero_check10))), exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("% overhead")))))))));
 	nova_io_Nova_Console_static_Nova_waitForEnter(0, exceptionData);
