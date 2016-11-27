@@ -96,6 +96,8 @@ nova_datastruct_list_Nova_Array* compiler_util_Nova_CompilerStringFunctions_Nova
 nova_datastruct_list_Nova_Array* compiler_util_Nova_CompilerStringFunctions_Nova_splitAtCommas(nova_Nova_String* this, nova_exception_Nova_ExceptionData* exceptionData, int searchGenerics, int allowTrailing);
 char compiler_util_Nova_CompilerStringFunctions_0_Nova_isStrictlyOperator(nova_Nova_String* this, nova_exception_Nova_ExceptionData* exceptionData, char operator, int index);
 char compiler_util_Nova_CompilerStringFunctions_1_Nova_isStrictlyOperator(nova_Nova_String* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* operator, int index);
+int compiler_util_Nova_CompilerStringFunctions_0_Nova_findOperatorInBaseScope(nova_Nova_String* this, nova_exception_Nova_ExceptionData* exceptionData, char operator, int start, int searchGenerics);
+int compiler_util_Nova_CompilerStringFunctions_1_Nova_findOperatorInBaseScope(nova_Nova_String* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* operator, int start, int searchGenerics);
 int compiler_util_Nova_CompilerStringFunctions_0_Nova_findCharInBaseScope(nova_Nova_String* this, nova_exception_Nova_ExceptionData* exceptionData, char needle, int start, int searchGenerics);
 int compiler_util_Nova_CompilerStringFunctions_1_Nova_findCharInBaseScope(nova_Nova_String* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_list_Nova_CharArray* needles, int start, int searchGenerics);
 int compiler_util_Nova_CompilerStringFunctions_Nova_findWordInBaseScope(nova_Nova_String* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* word, int start, int searchGenerics, int defaultReturnValue);

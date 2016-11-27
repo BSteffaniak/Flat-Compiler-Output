@@ -1018,6 +1018,10 @@ nova_env novaEnv = {
 },
 
 {
+&compiler_tree_nodes_exceptionhandling_Nova_Throw_Nova_construct,
+},
+
+{
 &compiler_tree_nodes_exceptionhandling_Nova_Try_Nova_construct,
 },
 
@@ -1098,11 +1102,19 @@ nova_env novaEnv = {
 },
 
 {
+&compiler_tree_nodes_operations_Nova_ElvisOperation_Nova_construct,
+},
+
+{
 &compiler_tree_nodes_operations_Nova_Operation_Nova_construct,
 },
 
 {
 &compiler_tree_nodes_operations_Nova_Operator_Nova_construct,
+},
+
+{
+&compiler_tree_nodes_operations_Nova_TernaryOperation_Nova_construct,
 },
 
 {
@@ -1183,6 +1195,8 @@ nova_env novaEnv = {
 &compiler_util_Nova_CompilerStringFunctions_Nova_splitAtCommas,
 &compiler_util_Nova_CompilerStringFunctions_0_Nova_isStrictlyOperator,
 &compiler_util_Nova_CompilerStringFunctions_1_Nova_isStrictlyOperator,
+&compiler_util_Nova_CompilerStringFunctions_0_Nova_findOperatorInBaseScope,
+&compiler_util_Nova_CompilerStringFunctions_1_Nova_findOperatorInBaseScope,
 &compiler_util_Nova_CompilerStringFunctions_0_Nova_findCharInBaseScope,
 &compiler_util_Nova_CompilerStringFunctions_1_Nova_findCharInBaseScope,
 &compiler_util_Nova_CompilerStringFunctions_Nova_findWordInBaseScope,

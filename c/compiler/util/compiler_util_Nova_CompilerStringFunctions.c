@@ -518,6 +518,33 @@ char compiler_util_Nova_CompilerStringFunctions_1_Nova_isStrictlyOperator(nova_N
 	return index >= 0 && index < this->nova_Nova_String_Nova_count - operator->nova_Nova_String_Nova_count && !nova_datastruct_list_Nova_CharArray_Nova_contains(compiler_tree_nodes_operations_Nova_Operator_Nova_OPERATOR_SYMBOLS, exceptionData, (char)(intptr_t)(nova_datastruct_list_Nova_CharArray_Nova_get((nova_datastruct_list_Nova_CharArray*)(this->nova_Nova_String_Nova_chars), exceptionData, index - 1))) && !nova_datastruct_list_Nova_CharArray_Nova_contains(compiler_tree_nodes_operations_Nova_Operator_Nova_OPERATOR_SYMBOLS, exceptionData, (char)(intptr_t)(nova_datastruct_list_Nova_CharArray_Nova_get((nova_datastruct_list_Nova_CharArray*)(this->nova_Nova_String_Nova_chars), exceptionData, index + operator->nova_Nova_String_Nova_count)));
 }
 
+int compiler_util_Nova_CompilerStringFunctions_0_Nova_findOperatorInBaseScope(nova_Nova_String* this, nova_exception_Nova_ExceptionData* exceptionData, char operator, int start, int searchGenerics)
+{
+	start = (int)(start == (intptr_t)nova_null ? 0 : start);
+	searchGenerics = (int)(searchGenerics == (intptr_t)nova_null ? 0 : searchGenerics);
+	return compiler_util_Nova_CompilerStringFunctions_1_Nova_findOperatorInBaseScope(this, exceptionData, nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)(nova_primitive_number_Nova_Char_static_Nova_toString(0, exceptionData, (operator))), exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)(""))), start, searchGenerics);
+}
+
+int compiler_util_Nova_CompilerStringFunctions_1_Nova_findOperatorInBaseScope(nova_Nova_String* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* operator, int start, int searchGenerics)
+{
+	start = (int)(start == (intptr_t)nova_null ? 0 : start);
+	searchGenerics = (int)(searchGenerics == (intptr_t)nova_null ? 0 : searchGenerics);
+	while (1)
+	{
+		int l1_Nova_index = 0;
+		
+		l1_Nova_index = compiler_util_Nova_CompilerStringFunctions_0_Nova_findStringInBaseScope(this, exceptionData, operator, start, searchGenerics, (intptr_t)nova_null);
+		if (l1_Nova_index > 0 && !compiler_util_Nova_CompilerStringFunctions_1_Nova_isStrictlyOperator(this, exceptionData, operator, l1_Nova_index))
+		{
+			start = l1_Nova_index + 1;
+		}
+		else
+		{
+			return l1_Nova_index;
+		}
+	}
+}
+
 int compiler_util_Nova_CompilerStringFunctions_0_Nova_findCharInBaseScope(nova_Nova_String* this, nova_exception_Nova_ExceptionData* exceptionData, char needle, int start, int searchGenerics)
 {
 	nova_datastruct_list_Nova_Array* l1_Nova_array = (nova_datastruct_list_Nova_Array*)nova_null;
