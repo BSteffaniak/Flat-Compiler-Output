@@ -97,7 +97,9 @@ compiler_tree_nodes_Import_Extension_VTable compiler_tree_nodes_Import_Extension
 	compiler_tree_nodes_Nova_Node_Nova_validateTypes,
 	compiler_tree_nodes_Nova_Node_Nova_parsePlaceholders,
 	compiler_tree_nodes_Nova_Node_Nova_cloneTo,
-	compiler_tree_nodes_Nova_Import_Nova_toNova,
+	compiler_tree_nodes_Nova_Node_Nova_writeAnnotationSeparator,
+	compiler_tree_nodes_Nova_Node_Nova_toNova,
+	compiler_tree_nodes_Nova_Import_Nova_writeNova,
 	compiler_tree_nodes_Nova_Node_Mutator_Nova_scope,
 	compiler_tree_nodes_Nova_Node_Accessor_Nova_program,
 	compiler_tree_nodes_Nova_Node_Accessor_Nova_parentFile,
@@ -202,7 +204,7 @@ compiler_tree_nodes_Nova_Import* compiler_tree_nodes_Nova_Import_static_Nova_par
 	return (compiler_tree_nodes_Nova_Import*)(nova_Nova_Object*)nova_null;
 }
 
-nova_Nova_String* compiler_tree_nodes_Nova_Import_Nova_toNova(compiler_tree_nodes_Nova_Import* this, nova_exception_Nova_ExceptionData* exceptionData)
+nova_Nova_String* compiler_tree_nodes_Nova_Import_Nova_writeNova(compiler_tree_nodes_Nova_Import* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
 	return nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)(nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("import \""))), exceptionData, nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)((this->compiler_tree_nodes_Nova_Import_Nova_importLocation)), exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("\""))));
 }

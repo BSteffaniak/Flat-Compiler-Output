@@ -94,7 +94,9 @@ compiler_tree_nodes_exceptionhandling_Try_Extension_VTable compiler_tree_nodes_e
 	compiler_tree_nodes_Nova_Node_Nova_validateTypes,
 	compiler_tree_nodes_Nova_Node_Nova_parsePlaceholders,
 	compiler_tree_nodes_Nova_Node_Nova_cloneTo,
-	compiler_tree_nodes_exceptionhandling_Nova_Try_Nova_toNova,
+	compiler_tree_nodes_Nova_Node_Nova_writeAnnotationSeparator,
+	compiler_tree_nodes_Nova_Node_Nova_toNova,
+	compiler_tree_nodes_exceptionhandling_Nova_Try_Nova_writeNova,
 	compiler_tree_nodes_exceptionhandling_Nova_Try_Mutatorfunc_Nova_scope,
 	compiler_tree_nodes_Nova_Node_Accessor_Nova_program,
 	compiler_tree_nodes_Nova_Node_Accessor_Nova_parentFile,
@@ -171,9 +173,9 @@ compiler_tree_nodes_exceptionhandling_Nova_Try* compiler_tree_nodes_exceptionhan
 	return (compiler_tree_nodes_exceptionhandling_Nova_Try*)(nova_Nova_Object*)nova_null;
 }
 
-nova_Nova_String* compiler_tree_nodes_exceptionhandling_Nova_Try_Nova_toNova(compiler_tree_nodes_exceptionhandling_Nova_Try* this, nova_exception_Nova_ExceptionData* exceptionData)
+nova_Nova_String* compiler_tree_nodes_exceptionhandling_Nova_Try_Nova_writeNova(compiler_tree_nodes_exceptionhandling_Nova_Try* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
-	return nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)(nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("try "))), exceptionData, nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)((compiler_tree_nodes_Nova_Scope_Nova_toNova(compiler_tree_nodes_exceptionhandling_Nova_Try_Accessorfunc_Nova_scope(this, exceptionData), exceptionData))), exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)(""))));
+	return nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)(nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("try "))), exceptionData, nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)((compiler_tree_nodes_Nova_Node_virtual_Nova_toNova((compiler_tree_nodes_Nova_Node*)(compiler_tree_nodes_exceptionhandling_Nova_Try_Accessorfunc_Nova_scope(this, exceptionData)), exceptionData))), exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)(""))));
 }
 
 compiler_tree_nodes_exceptionhandling_Nova_Try* compiler_tree_nodes_exceptionhandling_Nova_Try_Accessor_Nova_parentTry(compiler_tree_nodes_exceptionhandling_Nova_Try* this, nova_exception_Nova_ExceptionData* exceptionData)

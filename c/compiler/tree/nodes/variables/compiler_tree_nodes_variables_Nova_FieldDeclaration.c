@@ -113,7 +113,9 @@ compiler_tree_nodes_variables_FieldDeclaration_Extension_VTable compiler_tree_no
 	compiler_tree_nodes_Nova_Value_Nova_validateTypes,
 	compiler_tree_nodes_variables_Nova_FieldDeclaration_Nova_parsePlaceholders,
 	compiler_tree_nodes_variables_Nova_InstanceDeclaration_Nova_cloneTo,
-	compiler_tree_nodes_variables_Nova_FieldDeclaration_Nova_toNova,
+	compiler_tree_nodes_Nova_Node_Nova_writeAnnotationSeparator,
+	compiler_tree_nodes_Nova_Node_Nova_toNova,
+	compiler_tree_nodes_variables_Nova_FieldDeclaration_Nova_writeNova,
 	compiler_tree_nodes_Nova_Node_Mutator_Nova_scope,
 	compiler_tree_nodes_Nova_Node_Accessor_Nova_program,
 	compiler_tree_nodes_Nova_Node_Accessor_Nova_parentFile,
@@ -287,9 +289,9 @@ nova_Nova_String* compiler_tree_nodes_variables_Nova_FieldDeclaration_Nova_write
 	return (nova_Nova_String*)(this->compiler_tree_nodes_variables_Nova_FieldDeclaration_Nova_accessorValue != (compiler_tree_nodes_Nova_Value*)nova_null ? nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)(((nova_Nova_String*)(this->compiler_tree_nodes_variables_Nova_FieldDeclaration_Nova_isTwoWayAccessor ? nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)(" <=> ")) : nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)(" => "))))), exceptionData, compiler_tree_nodes_Nova_Node_virtual_Nova_toNova((compiler_tree_nodes_Nova_Node*)(this->compiler_tree_nodes_variables_Nova_FieldDeclaration_Nova_accessorValue), exceptionData)) : nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("")));
 }
 
-nova_Nova_String* compiler_tree_nodes_variables_Nova_FieldDeclaration_Nova_toNova(compiler_tree_nodes_variables_Nova_FieldDeclaration* this, nova_exception_Nova_ExceptionData* exceptionData)
+nova_Nova_String* compiler_tree_nodes_variables_Nova_FieldDeclaration_Nova_writeNova(compiler_tree_nodes_variables_Nova_FieldDeclaration* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
-	return nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)(compiler_tree_nodes_variables_Nova_VariableDeclaration_Nova_toNova((compiler_tree_nodes_variables_Nova_VariableDeclaration*)(((compiler_tree_nodes_variables_Nova_InstanceDeclaration*)this)), exceptionData)), exceptionData, nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)(compiler_tree_nodes_variables_Nova_FieldDeclaration_Nova_writeInitializationValue(this, exceptionData)), exceptionData, compiler_tree_nodes_variables_Nova_FieldDeclaration_Nova_writeAccessorValue(this, exceptionData)));
+	return nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)(compiler_tree_nodes_variables_Nova_VariableDeclaration_Nova_writeNova((compiler_tree_nodes_variables_Nova_VariableDeclaration*)(((compiler_tree_nodes_variables_Nova_InstanceDeclaration*)this)), exceptionData)), exceptionData, nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)(compiler_tree_nodes_variables_Nova_FieldDeclaration_Nova_writeInitializationValue(this, exceptionData)), exceptionData, compiler_tree_nodes_variables_Nova_FieldDeclaration_Nova_writeAccessorValue(this, exceptionData)));
 }
 
 void compiler_tree_nodes_variables_Nova_FieldDeclaration_Nova_super(compiler_tree_nodes_variables_Nova_FieldDeclaration* this, nova_exception_Nova_ExceptionData* exceptionData)

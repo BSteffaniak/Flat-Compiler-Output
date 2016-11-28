@@ -29,8 +29,8 @@
 #include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <compiler/tree/nodes/compiler_tree_nodes_Nova_Node.h>
 #include <compiler/util/compiler_util_Nova_Location.h>
+#include <compiler/tree/nodes/annotations/compiler_tree_nodes_annotations_Nova_NativeAnnotation.h>
 #include <compiler/tree/nodes/annotations/compiler_tree_nodes_annotations_Nova_OverrideAnnotation.h>
-#include <compiler/tree/nodes/annotations/compiler_tree_nodes_annotations_Nova_PrimitiveArrayAnnotation.h>
 #include <compiler/tree/nodes/annotations/compiler_tree_nodes_annotations_Nova_TargetAnnotation.h>
 #include <compiler/compiler_Nova_InvalidParseException.h>
 #include <compiler/tree/nodes/annotations/compiler_tree_nodes_annotations_Nova_Annotatable.h>
@@ -96,7 +96,9 @@ compiler_tree_nodes_annotations_Annotation_Extension_VTable compiler_tree_nodes_
 	compiler_tree_nodes_Nova_Node_Nova_validateTypes,
 	compiler_tree_nodes_Nova_Node_Nova_parsePlaceholders,
 	compiler_tree_nodes_Nova_Node_Nova_cloneTo,
+	compiler_tree_nodes_Nova_Node_Nova_writeAnnotationSeparator,
 	compiler_tree_nodes_Nova_Node_Nova_toNova,
+	compiler_tree_nodes_Nova_Node_Nova_writeNova,
 	compiler_tree_nodes_Nova_Node_Mutator_Nova_scope,
 	compiler_tree_nodes_Nova_Node_Accessor_Nova_program,
 	compiler_tree_nodes_Nova_Node_Accessor_Nova_parentFile,
@@ -174,7 +176,7 @@ compiler_tree_nodes_annotations_Nova_Annotation* compiler_tree_nodes_annotations
 				l2_Nova_node = (nova_Nova_Object*)(compiler_tree_nodes_annotations_Nova_OverrideAnnotation_static_Nova_parse(0, exceptionData, l2_Nova_type, l2_Nova_parameters, parent, location, require));
 				if (!(l2_Nova_node != (nova_Nova_Object*)nova_null))
 				{
-					l2_Nova_node = (nova_Nova_Object*)(compiler_tree_nodes_annotations_Nova_PrimitiveArrayAnnotation_static_Nova_parse(0, exceptionData, l2_Nova_type, l2_Nova_parameters, parent, location, require));
+					l2_Nova_node = (nova_Nova_Object*)(compiler_tree_nodes_annotations_Nova_NativeAnnotation_static_Nova_parse(0, exceptionData, l2_Nova_type, l2_Nova_parameters, parent, location, require));
 					if (!(l2_Nova_node != (nova_Nova_Object*)nova_null))
 					{
 						l2_Nova_node = (nova_Nova_Object*)(compiler_tree_nodes_annotations_Nova_TargetAnnotation_static_Nova_parse(0, exceptionData, l2_Nova_type, l2_Nova_parameters, parent, location, require));

@@ -95,7 +95,9 @@ compiler_tree_nodes_exceptionhandling_Throw_Extension_VTable compiler_tree_nodes
 	compiler_tree_nodes_Nova_Node_Nova_validateTypes,
 	compiler_tree_nodes_Nova_Node_Nova_parsePlaceholders,
 	compiler_tree_nodes_Nova_Node_Nova_cloneTo,
-	compiler_tree_nodes_exceptionhandling_Nova_Throw_Nova_toNova,
+	compiler_tree_nodes_Nova_Node_Nova_writeAnnotationSeparator,
+	compiler_tree_nodes_Nova_Node_Nova_toNova,
+	compiler_tree_nodes_exceptionhandling_Nova_Throw_Nova_writeNova,
 	compiler_tree_nodes_Nova_Node_Mutator_Nova_scope,
 	compiler_tree_nodes_Nova_Node_Accessor_Nova_program,
 	compiler_tree_nodes_Nova_Node_Accessor_Nova_parentFile,
@@ -188,7 +190,7 @@ char compiler_tree_nodes_exceptionhandling_Nova_Throw_Nova_parseException(compil
 	return (this->compiler_tree_nodes_exceptionhandling_Nova_Throw_Nova_exception = (compiler_tree_nodes_Nova_Value*)(compiler_tree_nodes_Nova_Value_0_static_Nova_parse(0, exceptionData, input, (compiler_tree_nodes_Nova_Node*)(this), 0, (intptr_t)nova_null))) != (compiler_tree_nodes_Nova_Value*)nova_null;
 }
 
-nova_Nova_String* compiler_tree_nodes_exceptionhandling_Nova_Throw_Nova_toNova(compiler_tree_nodes_exceptionhandling_Nova_Throw* this, nova_exception_Nova_ExceptionData* exceptionData)
+nova_Nova_String* compiler_tree_nodes_exceptionhandling_Nova_Throw_Nova_writeNova(compiler_tree_nodes_exceptionhandling_Nova_Throw* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
 	return nova_Nova_String_Nova_trim(nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)(((nova_Nova_String*)(this->compiler_tree_nodes_exceptionhandling_Nova_Throw_Nova_soft ? nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("softly")) : nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)(""))))), exceptionData, nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)(nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)(" throw "))), exceptionData, (compiler_tree_nodes_Nova_Node_virtual_Nova_toNova((compiler_tree_nodes_Nova_Node*)(this->compiler_tree_nodes_exceptionhandling_Nova_Throw_Nova_exception), exceptionData)))), exceptionData, (intptr_t)nova_null, (intptr_t)nova_null, 0);
 }

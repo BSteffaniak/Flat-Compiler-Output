@@ -118,7 +118,9 @@ compiler_tree_nodes_functions_closures_ClosureDeclaration_Extension_VTable compi
 	compiler_tree_nodes_Nova_Value_Nova_validateTypes,
 	compiler_tree_nodes_functions_Nova_Parameter_Nova_parsePlaceholders,
 	compiler_tree_nodes_functions_Nova_Parameter_Nova_cloneTo,
-	compiler_tree_nodes_functions_closures_Nova_ClosureDeclaration_Nova_toNova,
+	compiler_tree_nodes_Nova_Node_Nova_writeAnnotationSeparator,
+	compiler_tree_nodes_Nova_Node_Nova_toNova,
+	compiler_tree_nodes_functions_closures_Nova_ClosureDeclaration_Nova_writeNova,
 	compiler_tree_nodes_Nova_Node_Mutator_Nova_scope,
 	compiler_tree_nodes_Nova_Node_Accessor_Nova_program,
 	compiler_tree_nodes_Nova_Node_Accessor_Nova_parentFile,
@@ -248,9 +250,9 @@ nova_Nova_String* compiler_tree_nodes_functions_closures_Nova_ClosureDeclaration
 	return (nova_Nova_String*)(compiler_tree_nodes_Nova_Value_virtual_Accessorfunc_Nova_type((compiler_tree_nodes_Nova_Value*)(this), exceptionData) != (compiler_tree_nodes_Nova_Type*)nova_null ? nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)(nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("-> "))), exceptionData, nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)((compiler_tree_nodes_Nova_Type_Nova_toNova(compiler_tree_nodes_Nova_Value_virtual_Accessorfunc_Nova_type((compiler_tree_nodes_Nova_Value*)(this), exceptionData), exceptionData))), exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("")))) : nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("")));
 }
 
-nova_Nova_String* compiler_tree_nodes_functions_closures_Nova_ClosureDeclaration_Nova_toNova(compiler_tree_nodes_functions_closures_Nova_ClosureDeclaration* this, nova_exception_Nova_ExceptionData* exceptionData)
+nova_Nova_String* compiler_tree_nodes_functions_closures_Nova_ClosureDeclaration_Nova_writeNova(compiler_tree_nodes_functions_closures_Nova_ClosureDeclaration* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
-	return nova_Nova_String_Nova_trim((nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)(nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)((this->compiler_tree_nodes_Nova_Identifier_Nova_name)), exceptionData, nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)(nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)(""))), exceptionData, nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)((compiler_tree_nodes_functions_Nova_ParameterList_Nova_toNova(compiler_tree_nodes_functions_closures_Nova_ClosureDeclaration_Accessorfunc_Nova_parameterList(this, exceptionData), exceptionData))), exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)(" ")))))), exceptionData, compiler_tree_nodes_functions_closures_Nova_ClosureDeclaration_Nova_writeType(this, exceptionData))), exceptionData, (intptr_t)nova_null, (intptr_t)nova_null, 0);
+	return nova_Nova_String_Nova_trim((nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)(nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)((this->compiler_tree_nodes_Nova_Identifier_Nova_name)), exceptionData, nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)(nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)(""))), exceptionData, nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)((compiler_tree_nodes_Nova_Node_virtual_Nova_toNova((compiler_tree_nodes_Nova_Node*)(compiler_tree_nodes_functions_closures_Nova_ClosureDeclaration_Accessorfunc_Nova_parameterList(this, exceptionData)), exceptionData))), exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)(" ")))))), exceptionData, compiler_tree_nodes_functions_closures_Nova_ClosureDeclaration_Nova_writeType(this, exceptionData))), exceptionData, (intptr_t)nova_null, (intptr_t)nova_null, 0);
 }
 
 compiler_tree_nodes_functions_Nova_ParameterList* compiler_tree_nodes_functions_closures_Nova_ClosureDeclaration_Accessorfunc_Nova_parameterList(compiler_tree_nodes_functions_closures_Nova_ClosureDeclaration* this, nova_exception_Nova_ExceptionData* exceptionData)

@@ -893,6 +893,9 @@ nova_env novaEnv = {
 0,
 0,
 0,
+&compiler_tree_nodes_Nova_Node_Nova_writeAnnotations,
+0,
+0,
 &compiler_tree_nodes_Nova_Node_Nova_construct,
 },
 
@@ -955,6 +958,7 @@ nova_env novaEnv = {
 &compiler_tree_nodes_Nova_Type_Nova_writeArray,
 &compiler_tree_nodes_Nova_Type_Nova_writeGenericParameters,
 &compiler_tree_nodes_Nova_Type_Nova_toNova,
+&compiler_tree_nodes_Nova_Type_Nova_writeNova,
 &compiler_tree_nodes_Nova_Type_Nova_cloneTo,
 &compiler_tree_nodes_Nova_Type_Nova_construct,
 },
@@ -981,11 +985,11 @@ nova_env novaEnv = {
 },
 
 {
-&compiler_tree_nodes_annotations_Nova_OverrideAnnotation_Nova_construct,
+&compiler_tree_nodes_annotations_Nova_NativeAnnotation_Nova_construct,
 },
 
 {
-&compiler_tree_nodes_annotations_Nova_PrimitiveArrayAnnotation_Nova_construct,
+&compiler_tree_nodes_annotations_Nova_OverrideAnnotation_Nova_construct,
 },
 
 {

@@ -87,7 +87,7 @@ nova_datastruct_list_Nova_Array* generated21(compiler_tree_nodes_Nova_Accessible
 nova_datastruct_list_Nova_Array* generated22(compiler_tree_nodes_Nova_Accessible* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_Class* value0);
 nova_datastruct_list_Nova_Array* generated23(compiler_tree_nodes_Nova_Accessible* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_Class* value0);
 nova_datastruct_list_Nova_Array* generated24(compiler_tree_nodes_Nova_Accessible* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_Class* value0);
-char compiler_tree_nodes_Nova_Accessible_static_Nova_testLambda97(compiler_tree_nodes_Nova_Accessible* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* _1, int _2, nova_datastruct_list_Nova_List* _3, Context1* context);
+char compiler_tree_nodes_Nova_Accessible_static_Nova_testLambda98(compiler_tree_nodes_Nova_Accessible* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* _1, int _2, nova_datastruct_list_Nova_List* _3, Context1* context);
 
 
 
@@ -275,13 +275,13 @@ compiler_tree_nodes_Nova_Node* compiler_tree_nodes_Nova_Accessible_static_Nova_p
 		l2_Nova_current = l2_Nova_root;
 		if (l2_Nova_current != (compiler_tree_nodes_Nova_Accessible*)nova_null)
 		{
-			Context1 contextArg97 = 
+			Context1 contextArg98 = 
 			{
 				&l2_Nova_current,
 				&require,
 			};
 			
-			if (nova_datastruct_list_Nova_List_virtual0_Nova_all((nova_datastruct_list_Nova_List*)(nova_datastruct_list_Nova_List_virtual_Nova_skip((nova_datastruct_list_Nova_List*)(l1_Nova_fragments), exceptionData, 1)), exceptionData, (nova_datastruct_list_Nova_List_closure12_Nova_allFunc)&compiler_tree_nodes_Nova_Accessible_static_Nova_testLambda97, nova_null, &contextArg97, (intptr_t)nova_null))
+			if (nova_datastruct_list_Nova_List_virtual0_Nova_all((nova_datastruct_list_Nova_List*)(nova_datastruct_list_Nova_List_virtual_Nova_skip((nova_datastruct_list_Nova_List*)(l1_Nova_fragments), exceptionData, 1)), exceptionData, (nova_datastruct_list_Nova_List_closure12_Nova_allFunc)&compiler_tree_nodes_Nova_Accessible_static_Nova_testLambda98, nova_null, &contextArg98, (intptr_t)nova_null))
 			{
 				return (compiler_tree_nodes_Nova_Node*)l2_Nova_root;
 			}
@@ -338,7 +338,7 @@ nova_datastruct_list_Nova_Array* generated24(compiler_tree_nodes_Nova_Accessible
 	return nova_datastruct_list_Nova_Array_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)(l1_Nova_temp), 1);
 }
 
-char compiler_tree_nodes_Nova_Accessible_static_Nova_testLambda97(compiler_tree_nodes_Nova_Accessible* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* _1, int _2, nova_datastruct_list_Nova_List* _3, Context1* context)
+char compiler_tree_nodes_Nova_Accessible_static_Nova_testLambda98(compiler_tree_nodes_Nova_Accessible* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* _1, int _2, nova_datastruct_list_Nova_List* _3, Context1* context)
 {
 	compiler_tree_nodes_Nova_Accessible* l4_Nova_accessed = (compiler_tree_nodes_Nova_Accessible*)nova_null;
 	

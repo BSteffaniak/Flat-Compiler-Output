@@ -30,8 +30,8 @@
 #include <compiler/tree/nodes/compiler_tree_nodes_Nova_Node.h>
 #include <compiler/util/compiler_util_Nova_Location.h>
 #include <compiler/tree/nodes/annotations/compiler_tree_nodes_annotations_Nova_Annotation.h>
+#include <compiler/tree/nodes/annotations/compiler_tree_nodes_annotations_Nova_NativeAnnotation.h>
 #include <compiler/tree/nodes/annotations/compiler_tree_nodes_annotations_Nova_OverrideAnnotation.h>
-#include <compiler/tree/nodes/annotations/compiler_tree_nodes_annotations_Nova_PrimitiveArrayAnnotation.h>
 #include <compiler/tree/nodes/annotations/compiler_tree_nodes_annotations_Nova_TargetAnnotation.h>
 #include <compiler/compiler_Nova_InvalidParseException.h>
 #include <compiler/tree/nodes/annotations/compiler_tree_nodes_annotations_Nova_Annotatable.h>
@@ -96,7 +96,9 @@ compiler_tree_nodes_annotations_OverrideAnnotation_Extension_VTable compiler_tre
 	compiler_tree_nodes_Nova_Node_Nova_validateTypes,
 	compiler_tree_nodes_Nova_Node_Nova_parsePlaceholders,
 	compiler_tree_nodes_Nova_Node_Nova_cloneTo,
-	compiler_tree_nodes_annotations_Nova_OverrideAnnotation_Nova_toNova,
+	compiler_tree_nodes_Nova_Node_Nova_writeAnnotationSeparator,
+	compiler_tree_nodes_Nova_Node_Nova_toNova,
+	compiler_tree_nodes_annotations_Nova_OverrideAnnotation_Nova_writeNova,
 	compiler_tree_nodes_Nova_Node_Mutator_Nova_scope,
 	compiler_tree_nodes_Nova_Node_Accessor_Nova_program,
 	compiler_tree_nodes_Nova_Node_Accessor_Nova_parentFile,
@@ -162,7 +164,7 @@ compiler_tree_nodes_annotations_Nova_OverrideAnnotation* compiler_tree_nodes_ann
 	return (compiler_tree_nodes_annotations_Nova_OverrideAnnotation*)(nova_Nova_Object*)nova_null;
 }
 
-nova_Nova_String* compiler_tree_nodes_annotations_Nova_OverrideAnnotation_Nova_toNova(compiler_tree_nodes_annotations_Nova_OverrideAnnotation* this, nova_exception_Nova_ExceptionData* exceptionData)
+nova_Nova_String* compiler_tree_nodes_annotations_Nova_OverrideAnnotation_Nova_writeNova(compiler_tree_nodes_annotations_Nova_OverrideAnnotation* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
 	return nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("[Override]"));
 }

@@ -112,7 +112,9 @@ compiler_tree_nodes_generics_GenericParameter_Extension_VTable compiler_tree_nod
 	compiler_tree_nodes_Nova_Value_Nova_validateTypes,
 	compiler_tree_nodes_Nova_Node_Nova_parsePlaceholders,
 	compiler_tree_nodes_Nova_Value_Nova_cloneTo,
-	compiler_tree_nodes_generics_Nova_GenericParameter_Nova_toNova,
+	compiler_tree_nodes_Nova_Node_Nova_writeAnnotationSeparator,
+	compiler_tree_nodes_Nova_Node_Nova_toNova,
+	compiler_tree_nodes_generics_Nova_GenericParameter_Nova_writeNova,
 	compiler_tree_nodes_Nova_Node_Mutator_Nova_scope,
 	compiler_tree_nodes_Nova_Node_Accessor_Nova_program,
 	compiler_tree_nodes_Nova_Node_Accessor_Nova_parentFile,
@@ -169,7 +171,7 @@ void compiler_tree_nodes_generics_Nova_GenericParameter_Nova_this(compiler_tree_
 	compiler_tree_nodes_Nova_Value_Mutatorfunc_Nova_type((compiler_tree_nodes_Nova_Value*)(this), exceptionData, compiler_tree_nodes_Nova_Type_Nova_construct(0, exceptionData, type));
 }
 
-nova_Nova_String* compiler_tree_nodes_generics_Nova_GenericParameter_Nova_toNova(compiler_tree_nodes_generics_Nova_GenericParameter* this, nova_exception_Nova_ExceptionData* exceptionData)
+nova_Nova_String* compiler_tree_nodes_generics_Nova_GenericParameter_Nova_writeNova(compiler_tree_nodes_generics_Nova_GenericParameter* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
 	return nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)((compiler_tree_nodes_Nova_Value_virtual_Accessorfunc_Nova_type((compiler_tree_nodes_Nova_Value*)(this), exceptionData)->compiler_tree_nodes_Nova_Type_Nova_name)), exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("")));
 }
