@@ -4,6 +4,7 @@
 #include <nova/nova_Nova_Class.h>
 #include <nova/nova_Nova_Object.h>
 #include <nova/nova_Nova_String.h>
+#include <nova/nova_Nova_Substring.h>
 #include <nova/nova_Nova_System.h>
 #include <nova/ar/nova_ar_Nova_ImageTracker.h>
 #include <nova/ar/nova_ar_Nova_TrackPoint.h>
@@ -43,6 +44,7 @@
 #include <nova/datastruct/list/nova_datastruct_list_Nova_Queue.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_Stack.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_StringCharArray.h>
+#include <nova/datastruct/list/nova_datastruct_list_Nova_SubstringCharArray.h>
 #include <nova/exception/nova_exception_Nova_Backtraces.h>
 #include <nova/exception/nova_exception_Nova_CaughtException.h>
 #include <nova/exception/nova_exception_Nova_DivideByZeroException.h>
@@ -192,6 +194,7 @@
 #include <compiler/tree/nodes/functions/compiler_tree_nodes_functions_Nova_ArrayInstantiation.h>
 #include <compiler/tree/nodes/functions/compiler_tree_nodes_functions_Nova_BodyFunction.h>
 #include <compiler/tree/nodes/functions/compiler_tree_nodes_functions_Nova_CallableFunction.h>
+#include <compiler/tree/nodes/functions/compiler_tree_nodes_functions_Nova_Constructor.h>
 #include <compiler/tree/nodes/functions/compiler_tree_nodes_functions_Nova_FunctionArgumentList.h>
 #include <compiler/tree/nodes/functions/compiler_tree_nodes_functions_Nova_FunctionCall.h>
 #include <compiler/tree/nodes/functions/compiler_tree_nodes_functions_Nova_FunctionDeclaration.h>
@@ -263,6 +266,7 @@ typedef int (*nova_Nova_String_native1_Nova_indexOf)(nova_Nova_String*, nova_exc
 typedef int (*nova_Nova_String_native2_Nova_indexOf)(nova_Nova_String*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, int, int, int);
 typedef int (*nova_Nova_String_native0_Nova_lastIndexOf)(nova_Nova_String*, nova_exception_Nova_ExceptionData*, char, int, int);
 typedef int (*nova_Nova_String_native1_Nova_lastIndexOf)(nova_Nova_String*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, int, int);
+typedef char (*nova_Nova_String_native_Nova_validateSubstringBounds)(nova_Nova_String*, nova_exception_Nova_ExceptionData*, int, int, int);
 typedef nova_Nova_String* (*nova_Nova_String_native_Nova_substring)(nova_Nova_String*, nova_exception_Nova_ExceptionData*, int, int);
 typedef nova_Nova_String* (*nova_Nova_String_native_Nova_trim)(nova_Nova_String*, nova_exception_Nova_ExceptionData*, int, int, nova_datastruct_list_Nova_CharArray*);
 typedef char (*nova_Nova_String_native_Nova_lastChar)(nova_Nova_String*, nova_exception_Nova_ExceptionData*);
@@ -277,7 +281,7 @@ typedef char (*nova_Nova_String_native_Nova_get)(nova_Nova_String*, nova_excepti
 typedef char (*nova_Nova_String_native_Nova_set)(nova_Nova_String*, nova_exception_Nova_ExceptionData*, int, char);
 typedef nova_Nova_String* (*nova_Nova_String_native0_Nova_construct)(nova_Nova_String*, nova_exception_Nova_ExceptionData*, char);
 typedef nova_Nova_String* (*nova_Nova_String_native1_Nova_construct)(nova_Nova_String*, nova_exception_Nova_ExceptionData*, char*);
-typedef nova_Nova_String* (*nova_Nova_String_native2_Nova_construct)(nova_Nova_String*, nova_exception_Nova_ExceptionData*, nova_datastruct_list_Nova_CharArray*);
+typedef nova_Nova_String* (*nova_Nova_String_native3_Nova_construct)(nova_Nova_String*, nova_exception_Nova_ExceptionData*, nova_datastruct_list_Nova_CharArray*);
 
 typedef struct nova_native_String
 {
@@ -298,6 +302,7 @@ nova_Nova_String_native1_Nova_indexOf indexOf__nova_primitive_number_Char__nova_
 nova_Nova_String_native2_Nova_indexOf indexOf__nova_String__nova_primitive_number_Int__nova_primitive_number_Int__nova_primitive_number_Int;
 nova_Nova_String_native0_Nova_lastIndexOf lastIndexOf__nova_primitive_number_Char__nova_primitive_number_Int__nova_primitive_number_Int;
 nova_Nova_String_native1_Nova_lastIndexOf lastIndexOf__nova_String__nova_primitive_number_Int__nova_primitive_number_Int;
+nova_Nova_String_native_Nova_validateSubstringBounds validateSubstringBounds;
 nova_Nova_String_native_Nova_substring substring;
 nova_Nova_String_native_Nova_trim trim;
 nova_Nova_String_native_Nova_lastChar lastChar;
@@ -312,8 +317,15 @@ nova_Nova_String_native_Nova_get get;
 nova_Nova_String_native_Nova_set set;
 nova_Nova_String_native0_Nova_construct String__nova_primitive_number_Char;
 nova_Nova_String_native1_Nova_construct String__Array1d_nova_primitive_number_Char;
-nova_Nova_String_native2_Nova_construct String__nova_datastruct_list_CharArray;
+nova_Nova_String_native3_Nova_construct String__nova_datastruct_list_CharArray;
 } nova_native_String;
+
+typedef nova_Nova_Substring* (*nova_Nova_Substring_native_Nova_construct)(nova_Nova_Substring*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, int, int);
+
+typedef struct nova_native_Substring
+{
+nova_Nova_Substring_native_Nova_construct Substring;
+} nova_native_Substring;
 
 typedef void (*nova_Nova_System_native0_static_Nova_exit)(nova_Nova_System*, nova_exception_Nova_ExceptionData*, int);
 typedef void (*nova_Nova_System_native1_static_Nova_exit)(nova_Nova_System*, nova_exception_Nova_ExceptionData*, int, nova_Nova_String*);
@@ -771,6 +783,13 @@ typedef struct nova_datastruct_list_native_StringCharArray
 nova_datastruct_list_Nova_StringCharArray_native0_Nova_construct StringCharArray__nova_datastruct_list_CharArray;
 nova_datastruct_list_Nova_StringCharArray_native1_Nova_construct StringCharArray__Array1d_nova_primitive_number_Char__nova_primitive_number_Int;
 } nova_datastruct_list_native_StringCharArray;
+
+typedef nova_datastruct_list_Nova_SubstringCharArray* (*nova_datastruct_list_Nova_SubstringCharArray_native_Nova_construct)(nova_datastruct_list_Nova_SubstringCharArray*, nova_exception_Nova_ExceptionData*);
+
+typedef struct nova_datastruct_list_native_SubstringCharArray
+{
+nova_datastruct_list_Nova_SubstringCharArray_native_Nova_construct SubstringCharArray;
+} nova_datastruct_list_native_SubstringCharArray;
 
 typedef nova_exception_Nova_Backtraces* (*nova_exception_Nova_Backtraces_native_Nova_construct)(nova_exception_Nova_Backtraces*, nova_exception_Nova_ExceptionData*);
 
@@ -1826,6 +1845,7 @@ typedef struct compiler_tree_nodes_native_ArgumentList
 compiler_tree_nodes_Nova_ArgumentList_native_Nova_construct ArgumentList;
 } compiler_tree_nodes_native_ArgumentList;
 
+typedef void (*compiler_tree_nodes_Nova_ClassDeclaration_native_Nova_addFunction)(compiler_tree_nodes_Nova_ClassDeclaration*, nova_exception_Nova_ExceptionData*, compiler_tree_nodes_functions_Nova_FunctionDeclaration*);
 typedef nova_datastruct_list_Nova_Array* (*compiler_tree_nodes_Nova_ClassDeclaration_native_Nova_findCompatibleFunctions)(compiler_tree_nodes_Nova_ClassDeclaration*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, nova_datastruct_list_Nova_Array*);
 typedef nova_Nova_String* (*compiler_tree_nodes_Nova_ClassDeclaration_native_Nova_writeHeader)(compiler_tree_nodes_Nova_ClassDeclaration*, nova_exception_Nova_ExceptionData*);
 typedef nova_Nova_String* (*compiler_tree_nodes_Nova_ClassDeclaration_native_Nova_writeExtension)(compiler_tree_nodes_Nova_ClassDeclaration*, nova_exception_Nova_ExceptionData*);
@@ -1835,6 +1855,7 @@ typedef compiler_tree_nodes_Nova_ClassDeclaration* (*compiler_tree_nodes_Nova_Cl
 
 typedef struct compiler_tree_nodes_native_ClassDeclaration
 {
+compiler_tree_nodes_Nova_ClassDeclaration_native_Nova_addFunction addFunction;
 compiler_tree_nodes_Nova_ClassDeclaration_native_Nova_findCompatibleFunctions findCompatibleFunctions;
 compiler_tree_nodes_Nova_ClassDeclaration_native_Nova_writeHeader writeHeader;
 compiler_tree_nodes_Nova_ClassDeclaration_native_Nova_writeExtension writeExtension;
@@ -2251,6 +2272,13 @@ compiler_tree_nodes_functions_Nova_CallableFunction_native_Nova_parseParameters 
 compiler_tree_nodes_functions_Nova_CallableFunction_native_Nova_compatibleArguments compatibleArguments;
 compiler_tree_nodes_functions_Nova_CallableFunction_native_Nova_parseName parseName;
 } compiler_tree_nodes_functions_native_CallableFunction;
+
+typedef compiler_tree_nodes_functions_Nova_Constructor* (*compiler_tree_nodes_functions_Nova_Constructor_native_Nova_construct)(compiler_tree_nodes_functions_Nova_Constructor*, nova_exception_Nova_ExceptionData*, compiler_tree_nodes_Nova_Node*, compiler_util_Nova_Location*);
+
+typedef struct compiler_tree_nodes_functions_native_Constructor
+{
+compiler_tree_nodes_functions_Nova_Constructor_native_Nova_construct Constructor;
+} compiler_tree_nodes_functions_native_Constructor;
 
 typedef compiler_tree_nodes_functions_Nova_FunctionArgumentList* (*compiler_tree_nodes_functions_Nova_FunctionArgumentList_native_Nova_construct)(compiler_tree_nodes_functions_Nova_FunctionArgumentList*, nova_exception_Nova_ExceptionData*, compiler_tree_nodes_Nova_Node*, compiler_util_Nova_Location*);
 
@@ -2677,6 +2705,7 @@ typedef struct nova_env
 nova_native_Class nova_Class;
 nova_native_Object nova_Object;
 nova_native_String nova_String;
+nova_native_Substring nova_Substring;
 nova_native_System nova_System;
 nova_ar_native_ImageTracker nova_ar_ImageTracker;
 nova_ar_native_TrackPoint nova_ar_TrackPoint;
@@ -2716,6 +2745,7 @@ nova_datastruct_list_native_NoSuchElementException nova_datastruct_list_NoSuchEl
 nova_datastruct_list_native_Queue nova_datastruct_list_Queue;
 nova_datastruct_list_native_Stack nova_datastruct_list_Stack;
 nova_datastruct_list_native_StringCharArray nova_datastruct_list_StringCharArray;
+nova_datastruct_list_native_SubstringCharArray nova_datastruct_list_SubstringCharArray;
 nova_exception_native_Backtraces nova_exception_Backtraces;
 nova_exception_native_CaughtException nova_exception_CaughtException;
 nova_exception_native_DivideByZeroException nova_exception_DivideByZeroException;
@@ -2865,6 +2895,7 @@ compiler_tree_nodes_functions_native_AccessorFunction compiler_tree_nodes_functi
 compiler_tree_nodes_functions_native_ArrayInstantiation compiler_tree_nodes_functions_ArrayInstantiation;
 compiler_tree_nodes_functions_native_BodyFunction compiler_tree_nodes_functions_BodyFunction;
 compiler_tree_nodes_functions_native_CallableFunction compiler_tree_nodes_functions_CallableFunction;
+compiler_tree_nodes_functions_native_Constructor compiler_tree_nodes_functions_Constructor;
 compiler_tree_nodes_functions_native_FunctionArgumentList compiler_tree_nodes_functions_FunctionArgumentList;
 compiler_tree_nodes_functions_native_FunctionCall compiler_tree_nodes_functions_FunctionCall;
 compiler_tree_nodes_functions_native_FunctionDeclaration compiler_tree_nodes_functions_FunctionDeclaration;

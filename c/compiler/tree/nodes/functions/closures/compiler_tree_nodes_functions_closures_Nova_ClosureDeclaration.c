@@ -204,13 +204,13 @@ compiler_tree_nodes_functions_closures_Nova_ClosureDeclaration* compiler_tree_no
 		nova_Nova_String* l2_Nova_name = (nova_Nova_String*)nova_null;
 		
 		l2_Nova_node = compiler_tree_nodes_functions_closures_Nova_ClosureDeclaration_Nova_construct(0, exceptionData, parent, location);
-		l2_Nova_name = nova_Nova_String_Nova_trim(nova_Nova_String_Nova_substring(input, exceptionData, (intptr_t)nova_null, l1_Nova_parenIndex), exceptionData, (intptr_t)nova_null, (intptr_t)nova_null, 0);
+		l2_Nova_name = nova_Nova_String_Nova_trim(nova_Nova_String_virtual_Nova_substring((nova_Nova_String*)(input), exceptionData, (intptr_t)nova_null, l1_Nova_parenIndex), exceptionData, (intptr_t)nova_null, (intptr_t)nova_null, 0);
 		if (compiler_tree_nodes_functions_Nova_CallableFunction_Nova_parseName((compiler_tree_nodes_functions_Nova_CallableFunction*)(l2_Nova_node), exceptionData, l2_Nova_name))
 		{
 			nova_Nova_String* l3_Nova_type = (nova_Nova_String*)nova_null;
 			
 			l3_Nova_type = compiler_tree_nodes_functions_closures_Nova_ClosureDeclaration_static_Nova_findType(0, exceptionData, input, l1_Nova_endIndex);
-			if (compiler_tree_nodes_functions_closures_Nova_ClosureDeclaration_Nova_parseType(l2_Nova_node, exceptionData, l3_Nova_type) && compiler_tree_nodes_functions_Nova_CallableFunction_Nova_parseParameters((compiler_tree_nodes_functions_Nova_CallableFunction*)(l2_Nova_node), exceptionData, nova_Nova_String_Nova_trim(nova_Nova_String_Nova_substring(input, exceptionData, l1_Nova_parenIndex + 1, l1_Nova_endIndex), exceptionData, (intptr_t)nova_null, (intptr_t)nova_null, 0), 1))
+			if (compiler_tree_nodes_functions_closures_Nova_ClosureDeclaration_Nova_parseType(l2_Nova_node, exceptionData, l3_Nova_type) && compiler_tree_nodes_functions_Nova_CallableFunction_Nova_parseParameters((compiler_tree_nodes_functions_Nova_CallableFunction*)(l2_Nova_node), exceptionData, nova_Nova_String_Nova_trim(nova_Nova_String_virtual_Nova_substring((nova_Nova_String*)(input), exceptionData, l1_Nova_parenIndex + 1, l1_Nova_endIndex), exceptionData, (intptr_t)nova_null, (intptr_t)nova_null, 0), 1))
 			{
 				l2_Nova_node->compiler_tree_nodes_Nova_Identifier_Nova_name = l2_Nova_name;
 				return l2_Nova_node;
@@ -232,7 +232,7 @@ nova_Nova_String* compiler_tree_nodes_functions_closures_Nova_ClosureDeclaration
 	l1_Nova_typeIndex = nova_Nova_String_2_Nova_indexOf(input, exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("->")), endIndex + 1, (intptr_t)nova_null, (intptr_t)nova_null);
 	if (l1_Nova_typeIndex > endIndex)
 	{
-		return nova_Nova_String_Nova_trim(nova_Nova_String_Nova_substring(input, exceptionData, l1_Nova_typeIndex + 2, (intptr_t)nova_null), exceptionData, (intptr_t)nova_null, (intptr_t)nova_null, 0);
+		return nova_Nova_String_Nova_trim(nova_Nova_String_virtual_Nova_substring((nova_Nova_String*)(input), exceptionData, l1_Nova_typeIndex + 2, (intptr_t)nova_null), exceptionData, (intptr_t)nova_null, (intptr_t)nova_null, 0);
 	}
 	return (nova_Nova_String*)(nova_Nova_Object*)nova_null;
 }

@@ -197,9 +197,9 @@ compiler_tree_nodes_operations_Nova_TernaryOperation* compiler_tree_nodes_operat
 			nova_Nova_String* l2_Nova_falseValue = (nova_Nova_String*)nova_null;
 			
 			l2_Nova_node = compiler_tree_nodes_operations_Nova_TernaryOperation_Nova_construct(0, exceptionData, parent, location);
-			l2_Nova_condition = nova_Nova_String_Nova_trim(nova_Nova_String_Nova_substring(input, exceptionData, (intptr_t)nova_null, l1_Nova_questionIndex), exceptionData, (intptr_t)nova_null, (intptr_t)nova_null, 0);
-			l2_Nova_trueValue = nova_Nova_String_Nova_trim(nova_Nova_String_Nova_substring(input, exceptionData, l1_Nova_questionIndex + 1, l1_Nova_colonIndex), exceptionData, (intptr_t)nova_null, (intptr_t)nova_null, 0);
-			l2_Nova_falseValue = nova_Nova_String_Nova_trim(nova_Nova_String_Nova_substring(input, exceptionData, l1_Nova_colonIndex + 1, (intptr_t)nova_null), exceptionData, (intptr_t)nova_null, (intptr_t)nova_null, 0);
+			l2_Nova_condition = nova_Nova_String_Nova_trim(nova_Nova_String_virtual_Nova_substring((nova_Nova_String*)(input), exceptionData, (intptr_t)nova_null, l1_Nova_questionIndex), exceptionData, (intptr_t)nova_null, (intptr_t)nova_null, 0);
+			l2_Nova_trueValue = nova_Nova_String_Nova_trim(nova_Nova_String_virtual_Nova_substring((nova_Nova_String*)(input), exceptionData, l1_Nova_questionIndex + 1, l1_Nova_colonIndex), exceptionData, (intptr_t)nova_null, (intptr_t)nova_null, 0);
+			l2_Nova_falseValue = nova_Nova_String_Nova_trim(nova_Nova_String_virtual_Nova_substring((nova_Nova_String*)(input), exceptionData, l1_Nova_colonIndex + 1, (intptr_t)nova_null), exceptionData, (intptr_t)nova_null, (intptr_t)nova_null, 0);
 			if (!compiler_tree_nodes_operations_Nova_TernaryOperation_Nova_parseCondition(l2_Nova_node, exceptionData, l2_Nova_condition))
 			{
 				THROW(compiler_Nova_InvalidParseException_Nova_construct(0, exceptionData, nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)(nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("Could not parse ternary condition '"))), exceptionData, nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)((l2_Nova_condition)), exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("'")))), (compiler_tree_nodes_Nova_Node*)(l2_Nova_node)), 1);

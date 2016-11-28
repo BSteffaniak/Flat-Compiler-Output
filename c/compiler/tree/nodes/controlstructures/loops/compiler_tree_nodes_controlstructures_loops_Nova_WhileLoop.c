@@ -165,7 +165,7 @@ compiler_tree_nodes_controlstructures_loops_Nova_WhileLoop* compiler_tree_nodes_
 		nova_Nova_String* l1_Nova_contents = (nova_Nova_String*)nova_null;
 		
 		l1_Nova_node = compiler_tree_nodes_controlstructures_loops_Nova_WhileLoop_Nova_construct(0, exceptionData, parent, location);
-		l1_Nova_contents = nova_Nova_String_Nova_trim(nova_Nova_String_Nova_substring(input, exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("while"))->nova_Nova_String_Nova_count, (intptr_t)nova_null), exceptionData, (intptr_t)nova_null, (intptr_t)nova_null, 0);
+		l1_Nova_contents = nova_Nova_String_Nova_trim(nova_Nova_String_virtual_Nova_substring((nova_Nova_String*)(input), exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("while"))->nova_Nova_String_Nova_count, (intptr_t)nova_null), exceptionData, (intptr_t)nova_null, (intptr_t)nova_null, 0);
 		if (nova_Nova_String_Nova_get(l1_Nova_contents, exceptionData, 0) == '(')
 		{
 			int l2_Nova_end = 0;
@@ -173,7 +173,7 @@ compiler_tree_nodes_controlstructures_loops_Nova_WhileLoop* compiler_tree_nodes_
 			l2_Nova_end = compiler_util_Nova_CompilerStringFunctions_0_Nova_findEndingMatch(l1_Nova_contents, exceptionData, 0, '(', ')', (intptr_t)nova_null, (intptr_t)nova_null);
 		if (l2_Nova_end > 0)
 		{
-			l1_Nova_contents = nova_Nova_String_Nova_trim(nova_Nova_String_Nova_substring(l1_Nova_contents, exceptionData, 1, l2_Nova_end), exceptionData, (intptr_t)nova_null, (intptr_t)nova_null, 0);
+			l1_Nova_contents = nova_Nova_String_Nova_trim(nova_Nova_String_virtual_Nova_substring((nova_Nova_String*)(l1_Nova_contents), exceptionData, 1, l2_Nova_end), exceptionData, (intptr_t)nova_null, (intptr_t)nova_null, 0);
 			if (!compiler_tree_nodes_controlstructures_loops_Nova_WhileLoop_Nova_parseCondition(l1_Nova_node, exceptionData, l1_Nova_contents))
 			{
 				THROW(compiler_Nova_InvalidParseException_Nova_construct(0, exceptionData, nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)(nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("Unable to parse while loop condition '"))), exceptionData, nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)((l1_Nova_contents)), exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("'")))), (compiler_tree_nodes_Nova_Node*)(l1_Nova_node)), 1);

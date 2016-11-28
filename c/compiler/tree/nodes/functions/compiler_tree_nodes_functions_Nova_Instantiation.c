@@ -192,9 +192,9 @@ compiler_tree_nodes_functions_Nova_Instantiation* compiler_tree_nodes_functions_
 		nova_Nova_String* l1_Nova_className = (nova_Nova_String*)nova_null;
 		
 		l1_Nova_node = compiler_tree_nodes_functions_Nova_Instantiation_Nova_construct(0, exceptionData, parent, location);
-		l1_Nova_callString = nova_Nova_String_Nova_trim(nova_Nova_String_Nova_substring(input, exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("new"))->nova_Nova_String_Nova_count + 1, (intptr_t)nova_null), exceptionData, (intptr_t)nova_null, (intptr_t)nova_null, 0);
+		l1_Nova_callString = nova_Nova_String_Nova_trim(nova_Nova_String_virtual_Nova_substring((nova_Nova_String*)(input), exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("new"))->nova_Nova_String_Nova_count + 1, (intptr_t)nova_null), exceptionData, (intptr_t)nova_null, (intptr_t)nova_null, 0);
 		l1_Nova_parenthesisIndex = nova_Nova_String_1_Nova_indexOf(l1_Nova_callString, exceptionData, '(', (intptr_t)nova_null, (intptr_t)nova_null, 0);
-		l1_Nova_className = nova_Nova_String_Nova_trim(nova_Nova_String_Nova_substring(l1_Nova_callString, exceptionData, 0, l1_Nova_parenthesisIndex), exceptionData, (intptr_t)nova_null, (intptr_t)nova_null, 0);
+		l1_Nova_className = nova_Nova_String_Nova_trim(nova_Nova_String_virtual_Nova_substring((nova_Nova_String*)(l1_Nova_callString), exceptionData, 0, l1_Nova_parenthesisIndex), exceptionData, (intptr_t)nova_null, (intptr_t)nova_null, 0);
 		if (compiler_util_Nova_CompilerStringFunctions_Accessor_Nova_isIdentifier(l1_Nova_className, exceptionData))
 		{
 			compiler_tree_nodes_Nova_ClassDeclaration* l2_Nova_clazz = (compiler_tree_nodes_Nova_ClassDeclaration*)nova_null;
@@ -213,7 +213,7 @@ compiler_tree_nodes_functions_Nova_Instantiation* compiler_tree_nodes_functions_
 					nova_Nova_String* l4_Nova_parameters = (nova_Nova_String*)nova_null;
 					compiler_tree_nodes_functions_Nova_FunctionCall* l4_Nova_call = (compiler_tree_nodes_functions_Nova_FunctionCall*)nova_null;
 					
-					l4_Nova_parameters = nova_Nova_String_Nova_substring(l1_Nova_callString, exceptionData, l1_Nova_parenthesisIndex, (intptr_t)nova_null);
+					l4_Nova_parameters = (nova_Nova_String*)(nova_Nova_String_virtual_Nova_substring((nova_Nova_String*)(l1_Nova_callString), exceptionData, l1_Nova_parenthesisIndex, (intptr_t)nova_null));
 					l4_Nova_call = compiler_tree_nodes_functions_Nova_FunctionCall_0_static_Nova_parse(0, exceptionData, nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)(l1_Nova_className), exceptionData, l4_Nova_parameters), parent, 0, (intptr_t)nova_null, l3_Nova_constructor);
 					if (l4_Nova_call != (compiler_tree_nodes_functions_Nova_FunctionCall*)nova_null)
 					{

@@ -165,10 +165,10 @@ compiler_tree_nodes_annotations_Nova_Annotation* compiler_tree_nodes_annotations
 			nova_Nova_String* l2_Nova_parameters = (nova_Nova_String*)nova_null;
 			
 			l2_Nova_node = (nova_Nova_Object*)nova_null;
-			l2_Nova_contents = nova_Nova_String_Nova_trim(nova_Nova_String_Nova_substring(input, exceptionData, 1, l1_Nova_end), exceptionData, (intptr_t)nova_null, (intptr_t)nova_null, 0);
+			l2_Nova_contents = nova_Nova_String_Nova_trim(nova_Nova_String_virtual_Nova_substring((nova_Nova_String*)(input), exceptionData, 1, l1_Nova_end), exceptionData, (intptr_t)nova_null, (intptr_t)nova_null, 0);
 			l2_Nova_bounds = compiler_util_Nova_CompilerStringFunctions_0_Nova_nextWordBounds(l2_Nova_contents, exceptionData, (intptr_t)nova_null);
 			l2_Nova_type = compiler_util_Nova_CompilerStringFunctions_Nova_substring(l2_Nova_contents, exceptionData, l2_Nova_bounds);
-			l2_Nova_parameters = nova_Nova_String_Nova_trim(nova_Nova_String_Nova_substring(l2_Nova_contents, exceptionData, l2_Nova_bounds->compiler_util_Nova_Bounds_Nova_end, (intptr_t)nova_null), exceptionData, (intptr_t)nova_null, (intptr_t)nova_null, 0);
+			l2_Nova_parameters = nova_Nova_String_Nova_trim(nova_Nova_String_virtual_Nova_substring((nova_Nova_String*)(l2_Nova_contents), exceptionData, l2_Nova_bounds->compiler_util_Nova_Bounds_Nova_end, (intptr_t)nova_null), exceptionData, (intptr_t)nova_null, (intptr_t)nova_null, 0);
 			if (!(l2_Nova_node != (nova_Nova_Object*)nova_null))
 			{
 				l2_Nova_node = (nova_Nova_Object*)(compiler_tree_nodes_annotations_Nova_OverrideAnnotation_static_Nova_parse(0, exceptionData, l2_Nova_type, l2_Nova_parameters, parent, location, require));
@@ -189,7 +189,7 @@ compiler_tree_nodes_annotations_Nova_Annotation* compiler_tree_nodes_annotations
 
 nova_Nova_String* compiler_tree_nodes_annotations_Nova_Annotation_Nova_getRemainingStatement(compiler_tree_nodes_annotations_Nova_Annotation* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* input)
 {
-	return nova_Nova_String_Nova_trim(nova_Nova_String_Nova_substring(input, exceptionData, compiler_util_Nova_CompilerStringFunctions_0_Nova_findEndingMatch(input, exceptionData, 0, '[', ']', (intptr_t)nova_null, (intptr_t)nova_null) + 1, (intptr_t)nova_null), exceptionData, (intptr_t)nova_null, (intptr_t)nova_null, 0);
+	return nova_Nova_String_Nova_trim(nova_Nova_String_virtual_Nova_substring((nova_Nova_String*)(input), exceptionData, compiler_util_Nova_CompilerStringFunctions_0_Nova_findEndingMatch(input, exceptionData, 0, '[', ']', (intptr_t)nova_null, (intptr_t)nova_null) + 1, (intptr_t)nova_null), exceptionData, (intptr_t)nova_null, (intptr_t)nova_null, 0);
 }
 
 void compiler_tree_nodes_annotations_Nova_Annotation_Nova_super(compiler_tree_nodes_annotations_Nova_Annotation* this, nova_exception_Nova_ExceptionData* exceptionData)

@@ -158,7 +158,7 @@ compiler_tree_nodes_Nova_Return* compiler_tree_nodes_Nova_Return_static_Nova_par
 		nova_Nova_String* l1_Nova_contents = (nova_Nova_String*)nova_null;
 		
 		l1_Nova_node = compiler_tree_nodes_Nova_Return_Nova_construct(0, exceptionData, parent, location, 0);
-		l1_Nova_contents = nova_Nova_String_Nova_trim(nova_Nova_String_Nova_substring(input, exceptionData, 7, (intptr_t)nova_null), exceptionData, (intptr_t)nova_null, (intptr_t)nova_null, 0);
+		l1_Nova_contents = nova_Nova_String_Nova_trim(nova_Nova_String_virtual_Nova_substring((nova_Nova_String*)(input), exceptionData, 7, (intptr_t)nova_null), exceptionData, (intptr_t)nova_null, (intptr_t)nova_null, 0);
 		if (l1_Nova_contents->nova_Nova_String_Nova_count > 0)
 		{
 			l1_Nova_node->compiler_tree_nodes_Nova_Return_Nova_value = (compiler_tree_nodes_Nova_Value*)(compiler_tree_nodes_Nova_Value_0_static_Nova_parse(0, exceptionData, l1_Nova_contents, (compiler_tree_nodes_Nova_Node*)(l1_Nova_node), 0, (intptr_t)nova_null));

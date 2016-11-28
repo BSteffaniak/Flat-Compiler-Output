@@ -125,17 +125,17 @@ void compiler_util_Nova_Bounds_Nova_this(compiler_util_Nova_Bounds* this, nova_e
 
 nova_Nova_String* compiler_util_Nova_Bounds_Nova_extractString(compiler_util_Nova_Bounds* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* source)
 {
-	return (nova_Nova_String*)(compiler_util_Nova_Bounds_Accessor_Nova_isValid(this, exceptionData) ? (nova_Nova_Object*)nova_Nova_String_Nova_substring(source, exceptionData, this->compiler_util_Nova_Bounds_Nova_start, this->compiler_util_Nova_Bounds_Nova_end) : (nova_Nova_Object*)nova_null);
+	return (nova_Nova_String*)(compiler_util_Nova_Bounds_Accessor_Nova_isValid(this, exceptionData) ? (nova_Nova_Object*)nova_Nova_String_virtual_Nova_substring((nova_Nova_String*)(source), exceptionData, this->compiler_util_Nova_Bounds_Nova_start, this->compiler_util_Nova_Bounds_Nova_end) : (nova_Nova_Object*)nova_null);
 }
 
 nova_Nova_String* compiler_util_Nova_Bounds_Nova_extractPreString(compiler_util_Nova_Bounds* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* source)
 {
-	return (nova_Nova_String*)(compiler_util_Nova_Bounds_Accessor_Nova_isValid(this, exceptionData) ? (nova_Nova_Object*)nova_Nova_String_Nova_substring(source, exceptionData, 0, this->compiler_util_Nova_Bounds_Nova_start) : (nova_Nova_Object*)nova_null);
+	return (nova_Nova_String*)(compiler_util_Nova_Bounds_Accessor_Nova_isValid(this, exceptionData) ? (nova_Nova_Object*)nova_Nova_String_virtual_Nova_substring((nova_Nova_String*)(source), exceptionData, 0, this->compiler_util_Nova_Bounds_Nova_start) : (nova_Nova_Object*)nova_null);
 }
 
 nova_Nova_String* compiler_util_Nova_Bounds_Nova_extractPostString(compiler_util_Nova_Bounds* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* source)
 {
-	return (nova_Nova_String*)(compiler_util_Nova_Bounds_Accessor_Nova_isValid(this, exceptionData) ? nova_Nova_String_Nova_substring(source, exceptionData, this->compiler_util_Nova_Bounds_Nova_end, (intptr_t)nova_null) : source);
+	return (nova_Nova_String*)(compiler_util_Nova_Bounds_Accessor_Nova_isValid(this, exceptionData) ? nova_Nova_String_virtual_Nova_substring((nova_Nova_String*)(source), exceptionData, this->compiler_util_Nova_Bounds_Nova_end, (intptr_t)nova_null) : source);
 }
 
 nova_Nova_String* compiler_util_Nova_Bounds_Nova_trimString(compiler_util_Nova_Bounds* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* source)

@@ -209,7 +209,7 @@ compiler_tree_nodes_Nova_Value* compiler_tree_nodes_Nova_Value_0_static_Nova_par
 	l1_Nova_arrayData = compiler_util_Nova_CompilerStringFunctions_Nova_getArrayAccesses(input, exceptionData);
 	if ((nova_datastruct_list_Nova_Array*)nova_datastruct_Nova_Tuple2_Accessor_Nova_item1((nova_datastruct_Nova_Tuple2*)(l1_Nova_arrayData), exceptionData) != (nova_datastruct_list_Nova_Array*)(nova_datastruct_list_Nova_Array*)nova_null)
 	{
-		input = nova_Nova_String_Nova_trim(nova_Nova_String_Nova_substring(input, exceptionData, (intptr_t)nova_null, (int)(intptr_t)(nova_datastruct_list_Nova_IntArray_Nova_get((nova_datastruct_list_Nova_IntArray*)(nova_datastruct_Nova_Tuple2_Accessor_Nova_item2((nova_datastruct_Nova_Tuple2*)(l1_Nova_arrayData), exceptionData)), exceptionData, 0))), exceptionData, (intptr_t)nova_null, (intptr_t)nova_null, 0);
+		input = nova_Nova_String_Nova_trim(nova_Nova_String_virtual_Nova_substring((nova_Nova_String*)(input), exceptionData, (intptr_t)nova_null, (int)(intptr_t)(nova_datastruct_list_Nova_IntArray_Nova_get((nova_datastruct_list_Nova_IntArray*)(nova_datastruct_Nova_Tuple2_Accessor_Nova_item2((nova_datastruct_Nova_Tuple2*)(l1_Nova_arrayData), exceptionData)), exceptionData, 0))), exceptionData, (intptr_t)nova_null, (intptr_t)nova_null, 0);
 	}
 	l1_Nova_value = compiler_tree_nodes_Nova_Value_static_Nova_parseValue(0, exceptionData, input, parent, location, require);
 	if (l1_Nova_value != (compiler_tree_nodes_Nova_Value*)nova_null)

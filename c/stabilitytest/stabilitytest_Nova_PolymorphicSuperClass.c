@@ -60,6 +60,8 @@ stabilitytest_PolymorphicSuperClass_Extension_VTable stabilitytest_PolymorphicSu
 		0,
 		(char(*)(nova_operators_Nova_Equals*, nova_exception_Nova_ExceptionData*, nova_Nova_Object*))nova_Nova_Object_0_Nova_equals,
 		0,
+		0,
+		0,
 	},
 	stabilitytest_Nova_PolymorphicSuperClass_Nova_toString,
 	nova_Nova_Object_Accessor_Nova_hashCodeLong,

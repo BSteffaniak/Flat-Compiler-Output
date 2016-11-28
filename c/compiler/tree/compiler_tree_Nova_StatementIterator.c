@@ -211,7 +211,7 @@ nova_Nova_String* compiler_tree_Nova_StatementIterator_Accessor_Nova_next(compil
 		this->compiler_tree_Nova_StatementIterator_Nova_position = (int)(this->compiler_tree_Nova_StatementIterator_Nova_position < 0 ? this->compiler_tree_Nova_StatementIterator_Nova_source->nova_Nova_String_Nova_count : this->compiler_tree_Nova_StatementIterator_Nova_position);
 		l2_Nova_end = this->compiler_tree_Nova_StatementIterator_Nova_position;
 		compiler_tree_Nova_StatementIterator_Nova_updateScopeProperties(this, exceptionData);
-		return nova_Nova_String_Nova_trim(nova_Nova_String_Nova_substring(this->compiler_tree_Nova_StatementIterator_Nova_source, exceptionData, l2_Nova_prev, l2_Nova_end), exceptionData, (intptr_t)nova_null, (intptr_t)nova_null, 0);
+		return nova_Nova_String_Nova_trim(nova_Nova_String_virtual_Nova_substring((nova_Nova_String*)(this->compiler_tree_Nova_StatementIterator_Nova_source), exceptionData, l2_Nova_prev, l2_Nova_end), exceptionData, (intptr_t)nova_null, (intptr_t)nova_null, 0);
 	}
 	THROW(nova_datastruct_list_Nova_NoSuchElementException_Nova_construct(0, exceptionData, 0), 0);
 	return (nova_Nova_String*)(nova_Nova_Object*)nova_null;

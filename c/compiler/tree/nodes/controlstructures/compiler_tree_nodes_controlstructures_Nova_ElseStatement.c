@@ -161,7 +161,7 @@ compiler_tree_nodes_controlstructures_Nova_ElseStatement* compiler_tree_nodes_co
 		nova_Nova_String* l1_Nova_contents = (nova_Nova_String*)nova_null;
 		compiler_tree_nodes_controlstructures_Nova_ElseStatement* l1_Nova_node = (compiler_tree_nodes_controlstructures_Nova_ElseStatement*)nova_null;
 		
-		l1_Nova_contents = nova_Nova_String_Nova_trim(nova_Nova_String_Nova_substring(input, exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("else"))->nova_Nova_String_Nova_count, (intptr_t)nova_null), exceptionData, (intptr_t)nova_null, (intptr_t)nova_null, 0);
+		l1_Nova_contents = nova_Nova_String_Nova_trim(nova_Nova_String_virtual_Nova_substring((nova_Nova_String*)(input), exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("else"))->nova_Nova_String_Nova_count, (intptr_t)nova_null), exceptionData, (intptr_t)nova_null, (intptr_t)nova_null, 0);
 		l1_Nova_node = compiler_tree_nodes_controlstructures_Nova_ElseStatement_Nova_construct(0, exceptionData, parent, location);
 		if (compiler_tree_nodes_controlstructures_Nova_ElseStatement_Nova_parseContents(l1_Nova_node, exceptionData, input, l1_Nova_contents))
 		{

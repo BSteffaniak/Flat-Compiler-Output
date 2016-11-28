@@ -153,7 +153,7 @@ compiler_tree_nodes_variables_Nova_ArrayBracketOverload* compiler_tree_nodes_var
 	location = (compiler_util_Nova_Location*)(location == 0 ? (nova_Nova_Object*)compiler_util_Nova_Location_Nova_INVALID : (nova_Nova_Object*)location);
 	require = (int)(require == (intptr_t)nova_null ? 1 : require);
 	l1_Nova_bracketIndex = nova_Nova_String_1_Nova_indexOf(input, exceptionData, '[', (intptr_t)nova_null, (intptr_t)nova_null, (intptr_t)nova_null);
-	if (l1_Nova_bracketIndex > 0 && nova_Nova_String_Nova_equals(nova_Nova_String_Nova_trim(nova_Nova_String_Nova_substring(input, exceptionData, (intptr_t)nova_null, l1_Nova_bracketIndex), exceptionData, (intptr_t)nova_null, (intptr_t)nova_null, 0), exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("this"))))
+	if (l1_Nova_bracketIndex > 0 && nova_Nova_String_Nova_equals(nova_Nova_String_Nova_trim(nova_Nova_String_virtual_Nova_substring((nova_Nova_String*)(input), exceptionData, (intptr_t)nova_null, l1_Nova_bracketIndex), exceptionData, (intptr_t)nova_null, (intptr_t)nova_null, 0), exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("this"))))
 	{
 		int l1_Nova_end = 0;
 		

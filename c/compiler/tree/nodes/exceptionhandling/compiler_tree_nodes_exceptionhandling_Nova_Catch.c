@@ -162,11 +162,11 @@ compiler_tree_nodes_exceptionhandling_Nova_Catch* compiler_tree_nodes_exceptionh
 		nova_Nova_String* l1_Nova_contents = (nova_Nova_String*)nova_null;
 		
 		l1_Nova_node = compiler_tree_nodes_exceptionhandling_Nova_Catch_Nova_construct(0, exceptionData, parent, location);
-		l1_Nova_contents = nova_Nova_String_Nova_trim(nova_Nova_String_Nova_substring(input, exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("catch"))->nova_Nova_String_Nova_count, (intptr_t)nova_null), exceptionData, (intptr_t)nova_null, (intptr_t)nova_null, 0);
+		l1_Nova_contents = nova_Nova_String_Nova_trim(nova_Nova_String_virtual_Nova_substring((nova_Nova_String*)(input), exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("catch"))->nova_Nova_String_Nova_count, (intptr_t)nova_null), exceptionData, (intptr_t)nova_null, (intptr_t)nova_null, 0);
 		if (nova_Nova_String_Nova_equals(compiler_util_Nova_CompilerStringFunctions_Nova_nextWord(l1_Nova_contents, exceptionData, (intptr_t)nova_null, (intptr_t)nova_null, 0), exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("all"))))
 		{
 			l1_Nova_node->compiler_tree_nodes_exceptionhandling_Nova_Catch_Nova_soft = 1;
-			l1_Nova_contents = nova_Nova_String_Nova_trim(nova_Nova_String_Nova_substring(l1_Nova_contents, exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("all"))->nova_Nova_String_Nova_count, (intptr_t)nova_null), exceptionData, (intptr_t)nova_null, (intptr_t)nova_null, 0);
+			l1_Nova_contents = nova_Nova_String_Nova_trim(nova_Nova_String_virtual_Nova_substring((nova_Nova_String*)(l1_Nova_contents), exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("all"))->nova_Nova_String_Nova_count, (intptr_t)nova_null), exceptionData, (intptr_t)nova_null, (intptr_t)nova_null, 0);
 		}
 		if (l1_Nova_contents->nova_Nova_String_Nova_count > 0)
 		{
@@ -174,7 +174,7 @@ compiler_tree_nodes_exceptionhandling_Nova_Catch* compiler_tree_nodes_exceptionh
 			{
 				if (nova_Nova_String_Accessor_Nova_last(l1_Nova_contents, exceptionData) == ')')
 			{
-				l1_Nova_contents = nova_Nova_String_Nova_trim(nova_Nova_String_Nova_substring(l1_Nova_contents, exceptionData, 1, l1_Nova_contents->nova_Nova_String_Nova_count - 1), exceptionData, (intptr_t)nova_null, (intptr_t)nova_null, 0);
+				l1_Nova_contents = nova_Nova_String_Nova_trim(nova_Nova_String_virtual_Nova_substring((nova_Nova_String*)(l1_Nova_contents), exceptionData, 1, l1_Nova_contents->nova_Nova_String_Nova_count - 1), exceptionData, (intptr_t)nova_null, (intptr_t)nova_null, 0);
 			}
 			else
 			{

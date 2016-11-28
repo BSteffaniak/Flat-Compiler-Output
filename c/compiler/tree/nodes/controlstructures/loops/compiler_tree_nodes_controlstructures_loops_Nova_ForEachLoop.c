@@ -167,7 +167,7 @@ compiler_tree_nodes_controlstructures_loops_Nova_ForEachLoop* compiler_tree_node
 		nova_Nova_String* l1_Nova_contents = (nova_Nova_String*)nova_null;
 		
 		l1_Nova_node = compiler_tree_nodes_controlstructures_loops_Nova_ForEachLoop_Nova_construct(0, exceptionData, parent, location);
-		l1_Nova_contents = nova_Nova_String_Nova_trim(nova_Nova_String_Nova_substring(input, exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("for"))->nova_Nova_String_Nova_count, (intptr_t)nova_null), exceptionData, (intptr_t)nova_null, (intptr_t)nova_null, 0);
+		l1_Nova_contents = nova_Nova_String_Nova_trim(nova_Nova_String_virtual_Nova_substring((nova_Nova_String*)(input), exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("for"))->nova_Nova_String_Nova_count, (intptr_t)nova_null), exceptionData, (intptr_t)nova_null, (intptr_t)nova_null, 0);
 		if (nova_Nova_String_Nova_get(l1_Nova_contents, exceptionData, 0) == '(')
 		{
 			int l2_Nova_end = 0;
@@ -177,15 +177,15 @@ compiler_tree_nodes_controlstructures_loops_Nova_ForEachLoop* compiler_tree_node
 		{
 			int l3_Nova_inIndex = 0;
 			
-			l1_Nova_contents = nova_Nova_String_Nova_trim(nova_Nova_String_Nova_substring(l1_Nova_contents, exceptionData, 1, l2_Nova_end), exceptionData, (intptr_t)nova_null, (intptr_t)nova_null, 0);
+			l1_Nova_contents = nova_Nova_String_Nova_trim(nova_Nova_String_virtual_Nova_substring((nova_Nova_String*)(l1_Nova_contents), exceptionData, 1, l2_Nova_end), exceptionData, (intptr_t)nova_null, (intptr_t)nova_null, 0);
 			l3_Nova_inIndex = compiler_util_Nova_CompilerStringFunctions_Nova_findWordInBaseScope(l1_Nova_contents, exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("in")), (intptr_t)nova_null, (intptr_t)nova_null, (intptr_t)nova_null);
 			if (l3_Nova_inIndex > 0)
 			{
 				nova_Nova_String* l4_Nova_variable = (nova_Nova_String*)nova_null;
 				nova_Nova_String* l4_Nova_iterator = (nova_Nova_String*)nova_null;
 				
-				l4_Nova_variable = nova_Nova_String_Nova_trim(nova_Nova_String_Nova_substring(l1_Nova_contents, exceptionData, (intptr_t)nova_null, l3_Nova_inIndex), exceptionData, (intptr_t)nova_null, (intptr_t)nova_null, 0);
-				l4_Nova_iterator = nova_Nova_String_Nova_trim(nova_Nova_String_Nova_substring(l1_Nova_contents, exceptionData, l3_Nova_inIndex + nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("in"))->nova_Nova_String_Nova_count + 1, (intptr_t)nova_null), exceptionData, (intptr_t)nova_null, (intptr_t)nova_null, 0);
+				l4_Nova_variable = nova_Nova_String_Nova_trim(nova_Nova_String_virtual_Nova_substring((nova_Nova_String*)(l1_Nova_contents), exceptionData, (intptr_t)nova_null, l3_Nova_inIndex), exceptionData, (intptr_t)nova_null, (intptr_t)nova_null, 0);
+				l4_Nova_iterator = nova_Nova_String_Nova_trim(nova_Nova_String_virtual_Nova_substring((nova_Nova_String*)(l1_Nova_contents), exceptionData, l3_Nova_inIndex + nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("in"))->nova_Nova_String_Nova_count + 1, (intptr_t)nova_null), exceptionData, (intptr_t)nova_null, (intptr_t)nova_null, 0);
 				if (!compiler_tree_nodes_controlstructures_loops_Nova_ForEachLoop_Nova_parseIterator(l1_Nova_node, exceptionData, l4_Nova_iterator))
 				{
 					THROW(compiler_Nova_InvalidParseException_Nova_construct(0, exceptionData, nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)(nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("Unable to parse for each loop iterator '"))), exceptionData, nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)((l4_Nova_iterator)), exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("'")))), (compiler_tree_nodes_Nova_Node*)(l1_Nova_node)), 1);

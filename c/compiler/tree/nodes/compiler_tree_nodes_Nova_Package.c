@@ -182,7 +182,7 @@ compiler_tree_nodes_Nova_Package* compiler_tree_nodes_Nova_Package_static_Nova_p
 		{
 			compiler_Nova_SyntaxMessage_static_Nova_error(0, exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("Missing ending quotation for Package statement")), (compiler_tree_nodes_Nova_Node*)(l1_Nova_node), (intptr_t)nova_null);
 		}
-		l1_Nova_packageLocation = nova_Nova_String_Nova_substring(input, exceptionData, l1_Nova_quoteStart + 1, l1_Nova_quoteEnd);
+		l1_Nova_packageLocation = (nova_Nova_String*)(nova_Nova_String_virtual_Nova_substring((nova_Nova_String*)(input), exceptionData, l1_Nova_quoteStart + 1, l1_Nova_quoteEnd));
 		l1_Nova_node->compiler_tree_nodes_Nova_Package_Nova_location = l1_Nova_packageLocation;
 		if (compiler_tree_nodes_Nova_Package_Nova_validateLocation(l1_Nova_node, exceptionData) && compiler_tree_nodes_Nova_Package_Nova_validateAlias(l1_Nova_node, exceptionData))
 		{

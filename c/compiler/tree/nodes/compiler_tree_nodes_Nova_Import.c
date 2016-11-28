@@ -190,8 +190,8 @@ compiler_tree_nodes_Nova_Import* compiler_tree_nodes_Nova_Import_static_Nova_par
 		{
 			compiler_Nova_SyntaxMessage_static_Nova_error(0, exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("Missing ending quotation for import statement")), (compiler_tree_nodes_Nova_Node*)(l1_Nova_node), (intptr_t)nova_null);
 		}
-		l1_Nova_importLocation = nova_Nova_String_Nova_substring(input, exceptionData, l1_Nova_quoteStart + 1, l1_Nova_quoteEnd);
-		l1_Nova_alias = nova_Nova_String_Nova_trim(nova_Nova_String_Nova_substring(input, exceptionData, l1_Nova_quoteEnd + 1, (intptr_t)nova_null), exceptionData, (intptr_t)nova_null, (intptr_t)nova_null, 0);
+		l1_Nova_importLocation = (nova_Nova_String*)(nova_Nova_String_virtual_Nova_substring((nova_Nova_String*)(input), exceptionData, l1_Nova_quoteStart + 1, l1_Nova_quoteEnd));
+		l1_Nova_alias = nova_Nova_String_Nova_trim(nova_Nova_String_virtual_Nova_substring((nova_Nova_String*)(input), exceptionData, l1_Nova_quoteEnd + 1, (intptr_t)nova_null), exceptionData, (intptr_t)nova_null, (intptr_t)nova_null, 0);
 		l1_Nova_node->compiler_tree_nodes_Nova_Import_Nova_importLocation = l1_Nova_importLocation;
 		l1_Nova_node->compiler_tree_nodes_Nova_Import_Nova_alias = (nova_Nova_String*)(l1_Nova_alias->nova_Nova_String_Nova_count > 0 ? (nova_Nova_Object*)l1_Nova_alias : (nova_Nova_Object*)nova_null);
 		if (1)
@@ -214,13 +214,13 @@ char compiler_tree_nodes_Nova_Import_Nova_testLambda26(compiler_tree_nodes_Nova_
 
 nova_Nova_String* compiler_tree_nodes_Nova_Import_Accessor_Nova_parentLocation(compiler_tree_nodes_Nova_Import* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
-	return nova_Nova_String_Nova_substring(this->compiler_tree_nodes_Nova_Import_Nova_importLocation, exceptionData, 0, nova_Nova_String_1_Nova_lastIndexOf(this->compiler_tree_nodes_Nova_Import_Nova_importLocation, exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("/")), (intptr_t)nova_null, 0));
+	return nova_Nova_String_virtual_Nova_substring((nova_Nova_String*)(this->compiler_tree_nodes_Nova_Import_Nova_importLocation), exceptionData, 0, nova_Nova_String_1_Nova_lastIndexOf(this->compiler_tree_nodes_Nova_Import_Nova_importLocation, exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("/")), (intptr_t)nova_null, 0));
 }
 
 
 nova_Nova_String* compiler_tree_nodes_Nova_Import_Accessor_Nova_className(compiler_tree_nodes_Nova_Import* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
-	return nova_Nova_String_Nova_substring(this->compiler_tree_nodes_Nova_Import_Nova_importLocation, exceptionData, nova_Nova_String_1_Nova_lastIndexOf(this->compiler_tree_nodes_Nova_Import_Nova_importLocation, exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("/")), (intptr_t)nova_null, (intptr_t)nova_null) + 1, (intptr_t)nova_null);
+	return nova_Nova_String_virtual_Nova_substring((nova_Nova_String*)(this->compiler_tree_nodes_Nova_Import_Nova_importLocation), exceptionData, nova_Nova_String_1_Nova_lastIndexOf(this->compiler_tree_nodes_Nova_Import_Nova_importLocation, exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("/")), (intptr_t)nova_null, (intptr_t)nova_null) + 1, (intptr_t)nova_null);
 }
 
 

@@ -159,14 +159,14 @@ compiler_tree_nodes_controlstructures_Nova_IfStatement* compiler_tree_nodes_cont
 	{
 		compiler_tree_nodes_controlstructures_Nova_IfStatement* l1_Nova_node = (compiler_tree_nodes_controlstructures_Nova_IfStatement*)nova_null;
 		
-		input = nova_Nova_String_Nova_trim(nova_Nova_String_Nova_substring(input, exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("if"))->nova_Nova_String_Nova_count, (intptr_t)nova_null), exceptionData, (intptr_t)nova_null, (intptr_t)nova_null, 0);
+		input = nova_Nova_String_Nova_trim(nova_Nova_String_virtual_Nova_substring((nova_Nova_String*)(input), exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("if"))->nova_Nova_String_Nova_count, (intptr_t)nova_null), exceptionData, (intptr_t)nova_null, (intptr_t)nova_null, 0);
 		l1_Nova_node = compiler_tree_nodes_controlstructures_Nova_IfStatement_Nova_construct(0, exceptionData, parent, location);
 		if (nova_Nova_String_Nova_get(input, exceptionData, 0) == '(')
 		{
 			int l2_Nova_end = 0;
 			
 			l2_Nova_end = compiler_util_Nova_CompilerStringFunctions_0_Nova_findEndingMatch(input, exceptionData, 0, '(', ')', (intptr_t)nova_null, (intptr_t)nova_null);
-		input = nova_Nova_String_Nova_trim(nova_Nova_String_Nova_substring(input, exceptionData, 1, l2_Nova_end), exceptionData, (intptr_t)nova_null, (intptr_t)nova_null, 0);
+		input = nova_Nova_String_Nova_trim(nova_Nova_String_virtual_Nova_substring((nova_Nova_String*)(input), exceptionData, 1, l2_Nova_end), exceptionData, (intptr_t)nova_null, (intptr_t)nova_null, 0);
 	}
 	if (!compiler_tree_nodes_controlstructures_Nova_IfStatement_Nova_parseCondition(l1_Nova_node, exceptionData, input))
 	{

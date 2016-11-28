@@ -115,7 +115,7 @@ char compiler_tree_nodes_generics_Nova_GenericCompatible_Nova_parseGenericParame
 			{
 			};
 			
-			l3_Nova_contents = nova_Nova_String_Nova_substring(input, exceptionData, l1_Nova_genericIndex + 1, l2_Nova_end);
+			l3_Nova_contents = (nova_Nova_String*)(nova_Nova_String_virtual_Nova_substring((nova_Nova_String*)(input), exceptionData, l1_Nova_genericIndex + 1, l2_Nova_end));
 			l3_Nova_params = (nova_datastruct_list_Nova_Array*)(nova_datastruct_list_Nova_List_virtual0_Nova_map((nova_datastruct_list_Nova_List*)(compiler_util_Nova_CompilerStringFunctions_Nova_splitAtCommas(l3_Nova_contents, exceptionData, (intptr_t)nova_null, (intptr_t)nova_null)), exceptionData, (nova_datastruct_list_Nova_List_closure6_Nova_mapFunc)&compiler_tree_nodes_generics_Nova_GenericCompatible_Nova_testLambda112, this, &contextArg112));
 			compiler_tree_nodes_generics_Nova_GenericCompatible_virtual_Mutator_Nova_genericParameters((compiler_tree_nodes_generics_Nova_GenericCompatible*)(this), exceptionData, (nova_datastruct_list_Nova_Array*)(l3_Nova_params));
 			if (nova_datastruct_list_Nova_List_virtual0_Nova_any((nova_datastruct_list_Nova_List*)(compiler_tree_nodes_generics_Nova_GenericCompatible_virtual_Accessor_Nova_genericParameters((compiler_tree_nodes_generics_Nova_GenericCompatible*)(this), exceptionData)), exceptionData, (nova_datastruct_list_Nova_List_closure9_Nova_anyFunc)&compiler_tree_nodes_generics_Nova_GenericCompatible_Nova_testLambda113, this, &contextArg113))

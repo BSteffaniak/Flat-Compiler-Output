@@ -39,6 +39,7 @@ extern compiler_tree_nodes_operations_vtable_Assignable compiler_tree_nodes_oper
 #include <nova/nova_Nova_Class.h>
 #include <nova/nova_Nova_Object.h>
 #include <nova/nova_Nova_String.h>
+#include <nova/nova_Nova_Substring.h>
 #include <nova/nova_Nova_System.h>
 #include <nova/ar/nova_ar_Nova_ImageTracker.h>
 #include <nova/ar/nova_ar_Nova_TrackPoint.h>
@@ -78,6 +79,7 @@ extern compiler_tree_nodes_operations_vtable_Assignable compiler_tree_nodes_oper
 #include <nova/datastruct/list/nova_datastruct_list_Nova_Queue.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_Stack.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_StringCharArray.h>
+#include <nova/datastruct/list/nova_datastruct_list_Nova_SubstringCharArray.h>
 #include <nova/exception/nova_exception_Nova_Backtraces.h>
 #include <nova/exception/nova_exception_Nova_CaughtException.h>
 #include <nova/exception/nova_exception_Nova_DivideByZeroException.h>
@@ -227,6 +229,7 @@ extern compiler_tree_nodes_operations_vtable_Assignable compiler_tree_nodes_oper
 #include <compiler/tree/nodes/functions/compiler_tree_nodes_functions_Nova_ArrayInstantiation.h>
 #include <compiler/tree/nodes/functions/compiler_tree_nodes_functions_Nova_BodyFunction.h>
 #include <compiler/tree/nodes/functions/compiler_tree_nodes_functions_Nova_CallableFunction.h>
+#include <compiler/tree/nodes/functions/compiler_tree_nodes_functions_Nova_Constructor.h>
 #include <compiler/tree/nodes/functions/compiler_tree_nodes_functions_Nova_FunctionArgumentList.h>
 #include <compiler/tree/nodes/functions/compiler_tree_nodes_functions_Nova_FunctionCall.h>
 #include <compiler/tree/nodes/functions/compiler_tree_nodes_functions_Nova_FunctionDeclaration.h>
@@ -368,6 +371,7 @@ compiler_tree_nodes_operations_vtable_Assignable* compiler_tree_nodes_operations
 nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 nova_Nova_String* (*nova_Nova_String_virtual_Nova_concat)(nova_Nova_String*, nova_exception_Nova_ExceptionData*, nova_Nova_String*);
+nova_Nova_String* (*nova_Nova_String_virtual_Nova_substring)(nova_Nova_String*, nova_exception_Nova_ExceptionData*, int, int);
 nova_Nova_Object* (*nova_datastruct_Nova_HashMap_virtual_Nova_put)(nova_datastruct_Nova_HashMap*, nova_exception_Nova_ExceptionData*, nova_Nova_Object*, nova_Nova_Object*);
 nova_datastruct_list_Nova_Array* (*nova_datastruct_list_Nova_Array_virtual_Nova_addUnique)(nova_datastruct_list_Nova_Array*, nova_exception_Nova_ExceptionData*, nova_Nova_Object*);
 nova_Nova_Object* (*nova_datastruct_list_Nova_Array_virtual_Nova_get)(nova_datastruct_list_Nova_Array*, nova_exception_Nova_ExceptionData*, int);

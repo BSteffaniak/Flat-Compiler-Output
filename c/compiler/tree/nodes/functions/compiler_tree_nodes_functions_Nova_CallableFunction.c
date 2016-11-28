@@ -145,7 +145,7 @@ char compiler_tree_nodes_functions_Nova_CallableFunction_Nova_parseName(compiler
 	{
 		if (nova_datastruct_list_Nova_Array_Accessorfunc_Nova_count((nova_datastruct_list_Nova_Array*)(compiler_tree_nodes_generics_Nova_GenericCompatible_virtual_Accessor_Nova_genericParameters((compiler_tree_nodes_generics_Nova_GenericCompatible*)(this), exceptionData)), exceptionData) > 0)
 		{
-			name = nova_Nova_String_Nova_trim(nova_Nova_String_Nova_substring(name, exceptionData, (intptr_t)nova_null, nova_Nova_String_1_Nova_indexOf(name, exceptionData, '<', (intptr_t)nova_null, (intptr_t)nova_null, (intptr_t)nova_null)), exceptionData, (intptr_t)nova_null, (intptr_t)nova_null, 0);
+			name = nova_Nova_String_Nova_trim(nova_Nova_String_virtual_Nova_substring((nova_Nova_String*)(name), exceptionData, (intptr_t)nova_null, nova_Nova_String_1_Nova_indexOf(name, exceptionData, '<', (intptr_t)nova_null, (intptr_t)nova_null, (intptr_t)nova_null)), exceptionData, (intptr_t)nova_null, (intptr_t)nova_null, 0);
 		}
 		((compiler_tree_nodes_Nova_Identifier*)this)->compiler_tree_nodes_Nova_Identifier_Nova_name = name;
 		return compiler_util_Nova_CompilerStringFunctions_Accessor_Nova_isIdentifier(name, exceptionData);

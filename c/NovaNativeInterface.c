@@ -30,7 +30,8 @@ nova_env novaEnv = {
 &nova_Nova_String_2_Nova_indexOf,
 &nova_Nova_String_0_Nova_lastIndexOf,
 &nova_Nova_String_1_Nova_lastIndexOf,
-&nova_Nova_String_Nova_substring,
+&nova_Nova_String_Nova_validateSubstringBounds,
+0,
 &nova_Nova_String_Nova_trim,
 &nova_Nova_String_Nova_lastChar,
 &nova_Nova_String_Nova_toLowerCase,
@@ -44,7 +45,11 @@ nova_env novaEnv = {
 &nova_Nova_String_Nova_set,
 &nova_Nova_String_0_Nova_construct,
 &nova_Nova_String_1_Nova_construct,
-&nova_Nova_String_2_Nova_construct,
+&nova_Nova_String_3_Nova_construct,
+},
+
+{
+&nova_Nova_Substring_Nova_construct,
 },
 
 {
@@ -291,6 +296,10 @@ nova_env novaEnv = {
 {
 &nova_datastruct_list_Nova_StringCharArray_0_Nova_construct,
 &nova_datastruct_list_Nova_StringCharArray_1_Nova_construct,
+},
+
+{
+&nova_datastruct_list_Nova_SubstringCharArray_Nova_construct,
 },
 
 {
@@ -828,6 +837,7 @@ nova_env novaEnv = {
 },
 
 {
+&compiler_tree_nodes_Nova_ClassDeclaration_Nova_addFunction,
 &compiler_tree_nodes_Nova_ClassDeclaration_Nova_findCompatibleFunctions,
 &compiler_tree_nodes_Nova_ClassDeclaration_Nova_writeHeader,
 &compiler_tree_nodes_Nova_ClassDeclaration_Nova_writeExtension,
@@ -1049,6 +1059,10 @@ nova_env novaEnv = {
 &compiler_tree_nodes_functions_Nova_CallableFunction_Nova_parseParameters,
 &compiler_tree_nodes_functions_Nova_CallableFunction_Nova_compatibleArguments,
 &compiler_tree_nodes_functions_Nova_CallableFunction_Nova_parseName,
+},
+
+{
+&compiler_tree_nodes_functions_Nova_Constructor_Nova_construct,
 },
 
 {
