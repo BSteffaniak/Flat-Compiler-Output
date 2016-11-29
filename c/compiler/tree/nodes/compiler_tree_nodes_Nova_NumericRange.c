@@ -55,6 +55,7 @@
 #include <compiler/tree/nodes/compiler_tree_nodes_Nova_NumericRange.h>
 #include <compiler/tree/nodes/compiler_tree_nodes_Nova_PlaceholderValue.h>
 #include <compiler/tree/nodes/compiler_tree_nodes_Nova_StaticClassReference.h>
+#include <compiler/error/compiler_error_Nova_UnimplementedOperationException.h>
 #include <compiler/tree/nodes/annotations/compiler_tree_nodes_annotations_Nova_Annotatable.h>
 #include <compiler/tree/nodes/annotations/compiler_tree_nodes_annotations_Nova_Annotation.h>
 #include <compiler/tree/nodes/exceptionhandling/compiler_tree_nodes_exceptionhandling_Nova_Try.h>
@@ -110,10 +111,10 @@ compiler_tree_nodes_NumericRange_Extension_VTable compiler_tree_nodes_NumericRan
 	compiler_tree_nodes_Nova_Node_Nova_findVariableDeclaration,
 	compiler_tree_nodes_Nova_Node_Nova_parseStatement,
 	compiler_tree_nodes_Nova_Node_Nova_generateTemporaryScopeNode,
+	compiler_tree_nodes_functions_Nova_FunctionCall_Nova_cloneTo,
 	compiler_tree_nodes_Nova_Node_Nova_replace,
 	compiler_tree_nodes_Nova_Value_Nova_validateTypes,
 	compiler_tree_nodes_Nova_Node_Nova_parsePlaceholders,
-	compiler_tree_nodes_functions_Nova_FunctionCall_Nova_cloneTo,
 	compiler_tree_nodes_Nova_Node_Nova_writeAnnotationSeparator,
 	compiler_tree_nodes_Nova_Node_Nova_toNova,
 	compiler_tree_nodes_Nova_NumericRange_Nova_writeNova,

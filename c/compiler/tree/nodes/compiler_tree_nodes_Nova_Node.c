@@ -28,6 +28,7 @@
 #include <nova/nova_Nova_Class.h>
 #include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <compiler/compiler_Nova_InvalidParseException.h>
+#include <compiler/error/compiler_error_Nova_UnimplementedOperationException.h>
 #include <compiler/tree/nodes/annotations/compiler_tree_nodes_annotations_Nova_Annotatable.h>
 #include <compiler/tree/nodes/annotations/compiler_tree_nodes_annotations_Nova_Annotation.h>
 #include <compiler/tree/nodes/exceptionhandling/compiler_tree_nodes_exceptionhandling_Nova_Try.h>
@@ -99,10 +100,10 @@ compiler_tree_nodes_Node_Extension_VTable compiler_tree_nodes_Node_Extension_VTa
 	compiler_tree_nodes_Nova_Node_Nova_findVariableDeclaration,
 	compiler_tree_nodes_Nova_Node_Nova_parseStatement,
 	compiler_tree_nodes_Nova_Node_Nova_generateTemporaryScopeNode,
+	compiler_tree_nodes_Nova_Node_Nova_cloneTo,
 	compiler_tree_nodes_Nova_Node_Nova_replace,
 	compiler_tree_nodes_Nova_Node_Nova_validateTypes,
 	compiler_tree_nodes_Nova_Node_Nova_parsePlaceholders,
-	compiler_tree_nodes_Nova_Node_Nova_cloneTo,
 	compiler_tree_nodes_Nova_Node_Nova_writeAnnotationSeparator,
 	compiler_tree_nodes_Nova_Node_Nova_toNova,
 	compiler_tree_nodes_Nova_Node_Nova_writeNova,
@@ -320,7 +321,7 @@ compiler_tree_nodes_Nova_Node* compiler_tree_nodes_Nova_Node_Nova_parseStatement
 
 compiler_tree_nodes_Nova_Node* compiler_tree_nodes_Nova_Node_Nova_generateTemporaryScopeNode(compiler_tree_nodes_Nova_Node* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
-	return (compiler_tree_nodes_Nova_Node*)(nova_Nova_Object*)nova_null;
+	THROW(compiler_error_Nova_UnimplementedOperationException_Nova_construct(0, exceptionData, nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)(nova_Nova_Object_virtual_Nova_toString((nova_Nova_Object*)((this->vtable->classInstance)), exceptionData)), exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)(" does not implement generateTemporaryScopeNode")))), 0);
 }
 
 void compiler_tree_nodes_Nova_Node_static_Nova_strictParse(compiler_tree_nodes_Nova_Node* this, nova_exception_Nova_ExceptionData* exceptionData, compiler_tree_nodes_Nova_Node_closure3_Nova_action compiler_tree_nodes_Nova_Node_Nova_action, void* compiler_tree_nodes_Nova_Node_ref_Nova_action, void* action_context)
@@ -351,6 +352,15 @@ compiler_tree_nodes_Nova_Node* compiler_tree_nodes_Nova_Node_Nova_clone(compiler
 	parent = (compiler_tree_nodes_Nova_Node*)(parent == 0 ? (nova_Nova_Object*)(nova_Nova_Object*)nova_null : (nova_Nova_Object*)parent);
 	location = (compiler_util_Nova_Location*)(location == 0 ? (nova_Nova_Object*)compiler_util_Nova_Location_Nova_INVALID : (nova_Nova_Object*)location);
 	cloneChildren = (int)(cloneChildren == (intptr_t)nova_null ? 1 : cloneChildren);
+	return compiler_tree_nodes_Nova_Node_virtual_Nova_cloneTo((compiler_tree_nodes_Nova_Node*)(this), exceptionData, compiler_tree_nodes_Nova_Node_Nova_construct(0, exceptionData, parent, location));
+}
+
+compiler_tree_nodes_Nova_Node* compiler_tree_nodes_Nova_Node_Nova_cloneTo(compiler_tree_nodes_Nova_Node* this, nova_exception_Nova_ExceptionData* exceptionData, compiler_tree_nodes_Nova_Node* other)
+{
+	other->compiler_tree_nodes_Nova_Node_Nova_parent = this->compiler_tree_nodes_Nova_Node_Nova_parent;
+	other->compiler_tree_nodes_Nova_Node_Nova_location = this->compiler_tree_nodes_Nova_Node_Nova_location;
+	other->compiler_tree_nodes_Nova_Node_Nova_annotations = this->compiler_tree_nodes_Nova_Node_Nova_annotations;
+	return other;
 }
 
 char compiler_tree_nodes_Nova_Node_Nova_replace(compiler_tree_nodes_Nova_Node* this, nova_exception_Nova_ExceptionData* exceptionData, compiler_tree_nodes_Nova_Node* toReplace, compiler_tree_nodes_Nova_Node* replacement)
@@ -366,14 +376,6 @@ char compiler_tree_nodes_Nova_Node_Nova_validateTypes(compiler_tree_nodes_Nova_N
 char compiler_tree_nodes_Nova_Node_Nova_parsePlaceholders(compiler_tree_nodes_Nova_Node* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
 	return 1;
-}
-
-compiler_tree_nodes_Nova_Node* compiler_tree_nodes_Nova_Node_Nova_cloneTo(compiler_tree_nodes_Nova_Node* this, nova_exception_Nova_ExceptionData* exceptionData, compiler_tree_nodes_Nova_Node* other)
-{
-	other->compiler_tree_nodes_Nova_Node_Nova_parent = this->compiler_tree_nodes_Nova_Node_Nova_parent;
-	other->compiler_tree_nodes_Nova_Node_Nova_location = this->compiler_tree_nodes_Nova_Node_Nova_location;
-	other->compiler_tree_nodes_Nova_Node_Nova_annotations = this->compiler_tree_nodes_Nova_Node_Nova_annotations;
-	return other;
 }
 
 nova_Nova_String* compiler_tree_nodes_Nova_Node_Nova_writeAnnotationSeparator(compiler_tree_nodes_Nova_Node* this, nova_exception_Nova_ExceptionData* exceptionData)
@@ -639,6 +641,11 @@ compiler_tree_nodes_Nova_Node* compiler_tree_nodes_Nova_Node_virtual_Nova_genera
 	return this->vtable->compiler_tree_nodes_Nova_Node_virtual_Nova_generateTemporaryScopeNode((compiler_tree_nodes_Nova_Node*)(this), exceptionData);
 }
 
+compiler_tree_nodes_Nova_Node* compiler_tree_nodes_Nova_Node_virtual_Nova_cloneTo(compiler_tree_nodes_Nova_Node* this, nova_exception_Nova_ExceptionData* exceptionData, compiler_tree_nodes_Nova_Node* other)
+{
+	return this->vtable->compiler_tree_nodes_Nova_Node_virtual_Nova_cloneTo((compiler_tree_nodes_Nova_Node*)(this), exceptionData, other);
+}
+
 char compiler_tree_nodes_Nova_Node_virtual_Nova_replace(compiler_tree_nodes_Nova_Node* this, nova_exception_Nova_ExceptionData* exceptionData, compiler_tree_nodes_Nova_Node* toReplace, compiler_tree_nodes_Nova_Node* replacement)
 {
 	return this->vtable->compiler_tree_nodes_Nova_Node_virtual_Nova_replace((compiler_tree_nodes_Nova_Node*)(this), exceptionData, toReplace, replacement);
@@ -652,11 +659,6 @@ char compiler_tree_nodes_Nova_Node_virtual_Nova_validateTypes(compiler_tree_node
 char compiler_tree_nodes_Nova_Node_virtual_Nova_parsePlaceholders(compiler_tree_nodes_Nova_Node* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
 	return this->vtable->compiler_tree_nodes_Nova_Node_virtual_Nova_parsePlaceholders((compiler_tree_nodes_Nova_Node*)(this), exceptionData);
-}
-
-compiler_tree_nodes_Nova_Node* compiler_tree_nodes_Nova_Node_virtual_Nova_cloneTo(compiler_tree_nodes_Nova_Node* this, nova_exception_Nova_ExceptionData* exceptionData, compiler_tree_nodes_Nova_Node* other)
-{
-	return this->vtable->compiler_tree_nodes_Nova_Node_virtual_Nova_cloneTo((compiler_tree_nodes_Nova_Node*)(this), exceptionData, other);
 }
 
 nova_Nova_String* compiler_tree_nodes_Nova_Node_virtual_Nova_writeAnnotationSeparator(compiler_tree_nodes_Nova_Node* this, nova_exception_Nova_ExceptionData* exceptionData)

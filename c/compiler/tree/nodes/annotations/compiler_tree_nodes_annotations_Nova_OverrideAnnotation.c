@@ -34,6 +34,7 @@
 #include <compiler/tree/nodes/annotations/compiler_tree_nodes_annotations_Nova_OverrideAnnotation.h>
 #include <compiler/tree/nodes/annotations/compiler_tree_nodes_annotations_Nova_TargetAnnotation.h>
 #include <compiler/compiler_Nova_InvalidParseException.h>
+#include <compiler/error/compiler_error_Nova_UnimplementedOperationException.h>
 #include <compiler/tree/nodes/annotations/compiler_tree_nodes_annotations_Nova_Annotatable.h>
 #include <compiler/tree/nodes/exceptionhandling/compiler_tree_nodes_exceptionhandling_Nova_Try.h>
 #include <compiler/tree/nodes/functions/compiler_tree_nodes_functions_Nova_FunctionDeclaration.h>
@@ -92,10 +93,10 @@ compiler_tree_nodes_annotations_OverrideAnnotation_Extension_VTable compiler_tre
 	compiler_tree_nodes_Nova_Node_Nova_findVariableDeclaration,
 	compiler_tree_nodes_Nova_Node_Nova_parseStatement,
 	compiler_tree_nodes_Nova_Node_Nova_generateTemporaryScopeNode,
+	compiler_tree_nodes_Nova_Node_Nova_cloneTo,
 	compiler_tree_nodes_Nova_Node_Nova_replace,
 	compiler_tree_nodes_Nova_Node_Nova_validateTypes,
 	compiler_tree_nodes_Nova_Node_Nova_parsePlaceholders,
-	compiler_tree_nodes_Nova_Node_Nova_cloneTo,
 	compiler_tree_nodes_Nova_Node_Nova_writeAnnotationSeparator,
 	compiler_tree_nodes_Nova_Node_Nova_toNova,
 	compiler_tree_nodes_annotations_Nova_OverrideAnnotation_Nova_writeNova,

@@ -29,6 +29,7 @@
 #include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <compiler/tree/nodes/compiler_tree_nodes_Nova_Node.h>
 #include <compiler/compiler_Nova_InvalidParseException.h>
+#include <compiler/error/compiler_error_Nova_UnimplementedOperationException.h>
 #include <compiler/tree/nodes/annotations/compiler_tree_nodes_annotations_Nova_Annotatable.h>
 #include <compiler/tree/nodes/annotations/compiler_tree_nodes_annotations_Nova_Annotation.h>
 #include <compiler/tree/nodes/exceptionhandling/compiler_tree_nodes_exceptionhandling_Nova_Try.h>
@@ -89,10 +90,10 @@ compiler_tree_nodes_exceptionhandling_ExceptionHandler_Extension_VTable compiler
 	compiler_tree_nodes_Nova_Node_Nova_findVariableDeclaration,
 	compiler_tree_nodes_Nova_Node_Nova_parseStatement,
 	compiler_tree_nodes_Nova_Node_Nova_generateTemporaryScopeNode,
+	compiler_tree_nodes_Nova_Node_Nova_cloneTo,
 	compiler_tree_nodes_Nova_Node_Nova_replace,
 	compiler_tree_nodes_Nova_Node_Nova_validateTypes,
 	compiler_tree_nodes_Nova_Node_Nova_parsePlaceholders,
-	compiler_tree_nodes_Nova_Node_Nova_cloneTo,
 	compiler_tree_nodes_Nova_Node_Nova_writeAnnotationSeparator,
 	compiler_tree_nodes_Nova_Node_Nova_toNova,
 	compiler_tree_nodes_Nova_Node_Nova_writeNova,
