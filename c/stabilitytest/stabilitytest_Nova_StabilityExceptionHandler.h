@@ -2,6 +2,8 @@
 #ifndef FILE_stabilitytest_Nova_StabilityExceptionHandler_NOVA
 #define FILE_stabilitytest_Nova_StabilityExceptionHandler_NOVA
 
+#define _GNU_SOURCE
+
 typedef struct stabilitytest_Nova_StabilityExceptionHandler stabilitytest_Nova_StabilityExceptionHandler;
 
 

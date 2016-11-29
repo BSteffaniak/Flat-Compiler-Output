@@ -2,6 +2,8 @@
 #ifndef FILE_example_Nova_ArrayDemo_NOVA
 #define FILE_example_Nova_ArrayDemo_NOVA
 
+#define _GNU_SOURCE
+
 typedef struct example_Nova_ArrayDemo example_Nova_ArrayDemo;
 
 

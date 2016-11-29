@@ -2,6 +2,8 @@
 #ifndef FILE_example_database_Nova_DatabaseDemo_NOVA
 #define FILE_example_database_Nova_DatabaseDemo_NOVA
 
+#define _GNU_SOURCE
+
 typedef struct example_database_Nova_DatabaseDemo example_database_Nova_DatabaseDemo;
 
 

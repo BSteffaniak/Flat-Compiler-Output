@@ -2,6 +2,8 @@
 #ifndef FILE_example_Nova_ExceptionHandlingDemo_NOVA
 #define FILE_example_Nova_ExceptionHandlingDemo_NOVA
 
+#define _GNU_SOURCE
+
 typedef struct example_Nova_ExceptionHandlingDemo example_Nova_ExceptionHandlingDemo;
 
 

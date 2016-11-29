@@ -2,6 +2,8 @@
 #ifndef FILE_example_ackermann_Nova_Ackermann_NOVA
 #define FILE_example_ackermann_Nova_Ackermann_NOVA
 
+#define _GNU_SOURCE
+
 typedef struct example_ackermann_Nova_Ackermann example_ackermann_Nova_Ackermann;
 
 

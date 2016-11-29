@@ -2,6 +2,8 @@
 #ifndef FILE_example_network_Nova_OutputThread_NOVA
 #define FILE_example_network_Nova_OutputThread_NOVA
 
+#define _GNU_SOURCE
+
 typedef struct example_network_Nova_OutputThread example_network_Nova_OutputThread;
 
 

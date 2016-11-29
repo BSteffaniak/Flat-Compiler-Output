@@ -2,6 +2,8 @@
 #ifndef FILE_stabilitytest_Nova_StabilityTestCase_NOVA
 #define FILE_stabilitytest_Nova_StabilityTestCase_NOVA
 
+#define _GNU_SOURCE
+
 typedef struct stabilitytest_Nova_StabilityTestCase stabilitytest_Nova_StabilityTestCase;
 
 

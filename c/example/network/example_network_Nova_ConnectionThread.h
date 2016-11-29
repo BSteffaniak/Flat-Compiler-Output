@@ -2,6 +2,8 @@
 #ifndef FILE_example_network_Nova_ConnectionThread_NOVA
 #define FILE_example_network_Nova_ConnectionThread_NOVA
 
+#define _GNU_SOURCE
+
 typedef struct example_network_Nova_ConnectionThread example_network_Nova_ConnectionThread;
 
 

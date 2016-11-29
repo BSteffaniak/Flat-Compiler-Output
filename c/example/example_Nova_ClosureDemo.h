@@ -2,6 +2,8 @@
 #ifndef FILE_example_Nova_ClosureDemo_NOVA
 #define FILE_example_Nova_ClosureDemo_NOVA
 
+#define _GNU_SOURCE
+
 typedef struct example_Nova_ClosureDemo example_Nova_ClosureDemo;
 
 

@@ -2,6 +2,8 @@
 #ifndef FILE_example_copy_Nova_Dog_NOVA
 #define FILE_example_copy_Nova_Dog_NOVA
 
+#define _GNU_SOURCE
+
 typedef struct example_copy_Nova_Dog example_copy_Nova_Dog;
 
 

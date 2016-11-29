@@ -180,11 +180,11 @@ void stabilitytest_Nova_FileStability_Nova_readFromFile(stabilitytest_Nova_FileS
 	nova_Nova_String* l1_Nova_line = (nova_Nova_String*)nova_null;
 	
 	nova_io_Nova_Console_0_static_Nova_write(0, exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("Reading lines from file... ")));
-	if (!nova_io_Nova_FileReader_Accessor_Nova_open(reader, exceptionData))
+	if (!nova_io_Nova_FileReader_Accessor_Nova_isOpen(reader, exceptionData))
 	{
 		nova_io_Nova_FileReader_Nova_open(reader, exceptionData);
 	}
-	stabilitytest_Nova_StabilityTest_Nova_fail(this->stabilitytest_Nova_StabilityTestCase_Nova_program, exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("File reader failed to open")), !nova_io_Nova_FileReader_Accessor_Nova_open(reader, exceptionData));
+	stabilitytest_Nova_StabilityTest_Nova_fail(this->stabilitytest_Nova_StabilityTestCase_Nova_program, exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("File reader failed to open")), !nova_io_Nova_FileReader_Accessor_Nova_isOpen(reader, exceptionData));
 	l1_Nova_times = (int)(0);
 	l1_Nova_line = nova_io_Nova_FileReader_Nova_readLine(reader, exceptionData);
 	while (l1_Nova_line != (nova_Nova_String*)nova_null)

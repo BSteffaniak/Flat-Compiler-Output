@@ -2,6 +2,8 @@
 #ifndef FILE_example_network_Nova_ServerDemo_NOVA
 #define FILE_example_network_Nova_ServerDemo_NOVA
 
+#define _GNU_SOURCE
+
 typedef struct example_network_Nova_ServerDemo example_network_Nova_ServerDemo;
 
 

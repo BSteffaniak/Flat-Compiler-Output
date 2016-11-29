@@ -2,6 +2,8 @@
 #ifndef FILE_stabilitytest_Nova_ClientThread_NOVA
 #define FILE_stabilitytest_Nova_ClientThread_NOVA
 
+#define _GNU_SOURCE
+
 typedef struct stabilitytest_Nova_ClientThread stabilitytest_Nova_ClientThread;
 
 

@@ -2,6 +2,8 @@
 #ifndef FILE_example_Nova_T2_NOVA
 #define FILE_example_Nova_T2_NOVA
 
+#define _GNU_SOURCE
+
 typedef struct example_Nova_T2 example_Nova_T2;
 
 
