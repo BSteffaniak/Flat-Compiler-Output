@@ -263,6 +263,7 @@ nova_env novaEnv = {
 0,
 &nova_datastruct_list_Nova_List_Nova_takeLast,
 0,
+&nova_datastruct_list_Nova_List_Nova_firstOr,
 0,
 &nova_datastruct_list_Nova_List_Nova_firstNonNull,
 &nova_datastruct_list_Nova_List_Nova_zip,

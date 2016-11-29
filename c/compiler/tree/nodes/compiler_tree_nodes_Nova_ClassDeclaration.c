@@ -323,7 +323,7 @@ compiler_tree_nodes_variables_Nova_VariableDeclaration* compiler_tree_nodes_Nova
 	};
 	
 	searchAncestors = (int)(searchAncestors == (intptr_t)nova_null ? 1 : searchAncestors);
-	l1_Nova_field = (compiler_tree_nodes_variables_Nova_FieldDeclaration*)(nova_datastruct_list_Nova_List_virtual0_Nova_firstWhere((nova_datastruct_list_Nova_List*)(this->compiler_tree_nodes_Nova_ClassDeclaration_Nova_fields), exceptionData, (nova_datastruct_list_Nova_List_closure18_Nova_func)&compiler_tree_nodes_Nova_ClassDeclaration_Nova_testLambda99, this, &contextArg99));
+	l1_Nova_field = (compiler_tree_nodes_variables_Nova_FieldDeclaration*)(nova_datastruct_list_Nova_List_virtual0_Nova_firstWhere((nova_datastruct_list_Nova_List*)(this->compiler_tree_nodes_Nova_ClassDeclaration_Nova_fields), exceptionData, (nova_datastruct_list_Nova_List_closure21_Nova_func)&compiler_tree_nodes_Nova_ClassDeclaration_Nova_testLambda99, this, &contextArg99));
 	if (l1_Nova_field != (compiler_tree_nodes_variables_Nova_FieldDeclaration*)nova_null)
 	{
 		return (compiler_tree_nodes_variables_Nova_VariableDeclaration*)l1_Nova_field;

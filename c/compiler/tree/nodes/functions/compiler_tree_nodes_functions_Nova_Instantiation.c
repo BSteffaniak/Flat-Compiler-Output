@@ -210,7 +210,7 @@ compiler_tree_nodes_functions_Nova_Instantiation* compiler_tree_nodes_functions_
 				{
 				};
 				
-				l3_Nova_constructor = (compiler_tree_nodes_functions_Nova_FunctionDeclaration*)(nova_datastruct_list_Nova_List_virtual0_Nova_firstWhere((nova_datastruct_list_Nova_List*)(l2_Nova_clazz->compiler_tree_nodes_Nova_ClassDeclaration_Nova_functions), exceptionData, (nova_datastruct_list_Nova_List_closure18_Nova_func)&compiler_tree_nodes_functions_Nova_Instantiation_static_Nova_testLambda112, nova_null, &contextArg112));
+				l3_Nova_constructor = (compiler_tree_nodes_functions_Nova_FunctionDeclaration*)(nova_datastruct_list_Nova_List_virtual0_Nova_firstWhere((nova_datastruct_list_Nova_List*)(l2_Nova_clazz->compiler_tree_nodes_Nova_ClassDeclaration_Nova_functions), exceptionData, (nova_datastruct_list_Nova_List_closure21_Nova_func)&compiler_tree_nodes_functions_Nova_Instantiation_static_Nova_testLambda112, nova_null, &contextArg112));
 				if (l3_Nova_constructor != (compiler_tree_nodes_functions_Nova_FunctionDeclaration*)nova_null)
 				{
 					nova_Nova_String* l4_Nova_parameters = (nova_Nova_String*)nova_null;

@@ -327,7 +327,7 @@ char compiler_tree_nodes_functions_Nova_FunctionCall_Nova_searchFunctionDeclarat
 		{
 		};
 		
-		l1_Nova_func = (compiler_tree_nodes_functions_Nova_FunctionDeclaration*)(nova_datastruct_list_Nova_List_virtual0_Nova_firstWhere((nova_datastruct_list_Nova_List*)(l1_Nova_ref->compiler_tree_nodes_Nova_ClassDeclaration_Nova_functions), exceptionData, (nova_datastruct_list_Nova_List_closure18_Nova_func)&compiler_tree_nodes_functions_Nova_FunctionCall_Nova_testLambda110, this, &contextArg110));
+		l1_Nova_func = (compiler_tree_nodes_functions_Nova_FunctionDeclaration*)(nova_datastruct_list_Nova_List_virtual0_Nova_firstWhere((nova_datastruct_list_Nova_List*)(l1_Nova_ref->compiler_tree_nodes_Nova_ClassDeclaration_Nova_functions), exceptionData, (nova_datastruct_list_Nova_List_closure21_Nova_func)&compiler_tree_nodes_functions_Nova_FunctionCall_Nova_testLambda110, this, &contextArg110));
 		if (l1_Nova_func != (compiler_tree_nodes_functions_Nova_FunctionDeclaration*)nova_null)
 		{
 			this->compiler_tree_nodes_variables_Nova_Variable_Nova_declaration = (compiler_tree_nodes_variables_Nova_VariableDeclaration*)(l1_Nova_func);
