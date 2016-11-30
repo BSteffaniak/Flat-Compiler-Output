@@ -67,7 +67,6 @@ compiler_tree_AnnotationSearchResult_Extension_VTable compiler_tree_AnnotationSe
 		0,
 		0,
 		0,
-		0,
 		(char(*)(nova_operators_Nova_Equals*, nova_exception_Nova_ExceptionData*, nova_Nova_Object*))nova_Nova_Object_0_Nova_equals,
 		0,
 		0,
@@ -87,8 +86,8 @@ compiler_tree_AnnotationSearchResult_Extension_VTable compiler_tree_AnnotationSe
 
 
 
-void compiler_tree_Nova_AnnotationSearchResult_Nova_testLambda15(compiler_tree_Nova_AnnotationSearchResult* this, nova_exception_Nova_ExceptionData* exceptionData, compiler_tree_nodes_annotations_Nova_Annotation* _1, int _2, nova_datastruct_list_Nova_Array* _3, Context1* context);
-void compiler_tree_Nova_AnnotationSearchResult_Nova_testLambda16(compiler_tree_Nova_AnnotationSearchResult* this, nova_exception_Nova_ExceptionData* exceptionData, compiler_tree_nodes_annotations_Nova_Annotation* _1, int _2, nova_datastruct_list_Nova_Array* _3, Context2* context);
+void compiler_tree_Nova_AnnotationSearchResult_Nova_testLambda16(compiler_tree_Nova_AnnotationSearchResult* this, nova_exception_Nova_ExceptionData* exceptionData, compiler_tree_nodes_annotations_Nova_Annotation* _1, int _2, nova_datastruct_list_Nova_Array* _3, Context1* context);
+void compiler_tree_Nova_AnnotationSearchResult_Nova_testLambda17(compiler_tree_Nova_AnnotationSearchResult* this, nova_exception_Nova_ExceptionData* exceptionData, compiler_tree_nodes_annotations_Nova_Annotation* _1, int _2, nova_datastruct_list_Nova_Array* _3, Context2* context);
 void compiler_tree_Nova_AnnotationSearchResult_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData)
 {
 	{
@@ -129,30 +128,30 @@ void compiler_tree_Nova_AnnotationSearchResult_Nova_this(compiler_tree_Nova_Anno
 
 nova_datastruct_list_Nova_Array* compiler_tree_Nova_AnnotationSearchResult_0_Nova_addTo(compiler_tree_Nova_AnnotationSearchResult* this, nova_exception_Nova_ExceptionData* exceptionData, compiler_tree_nodes_Nova_Node* node)
 {
-	Context1 contextArg15 = 
+	Context1 contextArg16 = 
 	{
 		&node,
-	};
-	
-	return (nova_datastruct_list_Nova_Array*)nova_datastruct_list_Nova_List_virtual0_Nova_forEach((nova_datastruct_list_Nova_List*)(this->compiler_tree_Nova_AnnotationSearchResult_Nova_annotations), exceptionData, (nova_datastruct_list_Nova_List_closure3_Nova_func)&compiler_tree_Nova_AnnotationSearchResult_Nova_testLambda15, this, &contextArg15);
-}
-
-nova_datastruct_list_Nova_Array* compiler_tree_Nova_AnnotationSearchResult_1_Nova_addTo(compiler_tree_Nova_AnnotationSearchResult* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_list_Nova_Stack* stack)
-{
-	Context2 contextArg16 = 
-	{
-		&stack,
 	};
 	
 	return (nova_datastruct_list_Nova_Array*)nova_datastruct_list_Nova_List_virtual0_Nova_forEach((nova_datastruct_list_Nova_List*)(this->compiler_tree_Nova_AnnotationSearchResult_Nova_annotations), exceptionData, (nova_datastruct_list_Nova_List_closure3_Nova_func)&compiler_tree_Nova_AnnotationSearchResult_Nova_testLambda16, this, &contextArg16);
 }
 
-void compiler_tree_Nova_AnnotationSearchResult_Nova_testLambda15(compiler_tree_Nova_AnnotationSearchResult* this, nova_exception_Nova_ExceptionData* exceptionData, compiler_tree_nodes_annotations_Nova_Annotation* _1, int _2, nova_datastruct_list_Nova_Array* _3, Context1* context)
+nova_datastruct_list_Nova_Array* compiler_tree_Nova_AnnotationSearchResult_1_Nova_addTo(compiler_tree_Nova_AnnotationSearchResult* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_list_Nova_Stack* stack)
+{
+	Context2 contextArg17 = 
+	{
+		&stack,
+	};
+	
+	return (nova_datastruct_list_Nova_Array*)nova_datastruct_list_Nova_List_virtual0_Nova_forEach((nova_datastruct_list_Nova_List*)(this->compiler_tree_Nova_AnnotationSearchResult_Nova_annotations), exceptionData, (nova_datastruct_list_Nova_List_closure3_Nova_func)&compiler_tree_Nova_AnnotationSearchResult_Nova_testLambda17, this, &contextArg17);
+}
+
+void compiler_tree_Nova_AnnotationSearchResult_Nova_testLambda16(compiler_tree_Nova_AnnotationSearchResult* this, nova_exception_Nova_ExceptionData* exceptionData, compiler_tree_nodes_annotations_Nova_Annotation* _1, int _2, nova_datastruct_list_Nova_Array* _3, Context1* context)
 {
 	compiler_tree_nodes_Nova_Node_Nova_addAnnotation((*context->compiler_tree_Nova_AnnotationSearchResult_Nova_node), exceptionData, _1);
 }
 
-void compiler_tree_Nova_AnnotationSearchResult_Nova_testLambda16(compiler_tree_Nova_AnnotationSearchResult* this, nova_exception_Nova_ExceptionData* exceptionData, compiler_tree_nodes_annotations_Nova_Annotation* _1, int _2, nova_datastruct_list_Nova_Array* _3, Context2* context)
+void compiler_tree_Nova_AnnotationSearchResult_Nova_testLambda17(compiler_tree_Nova_AnnotationSearchResult* this, nova_exception_Nova_ExceptionData* exceptionData, compiler_tree_nodes_annotations_Nova_Annotation* _1, int _2, nova_datastruct_list_Nova_Array* _3, Context2* context)
 {
 	nova_datastruct_list_Nova_Stack_Nova_push((nova_datastruct_list_Nova_Stack*)((*context->compiler_tree_Nova_AnnotationSearchResult_Nova_stack)), exceptionData, (nova_Nova_Object*)(_1));
 }

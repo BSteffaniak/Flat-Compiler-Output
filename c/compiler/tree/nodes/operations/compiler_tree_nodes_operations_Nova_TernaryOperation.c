@@ -91,7 +91,6 @@ compiler_tree_nodes_operations_TernaryOperation_Extension_VTable compiler_tree_n
 		0,
 		0,
 		0,
-		0,
 		(char(*)(nova_operators_Nova_Equals*, nova_exception_Nova_ExceptionData*, nova_Nova_Object*))nova_Nova_Object_0_Nova_equals,
 		0,
 		0,
@@ -188,12 +187,12 @@ compiler_tree_nodes_operations_Nova_TernaryOperation* compiler_tree_nodes_operat
 	parent = (compiler_tree_nodes_Nova_Node*)(parent == 0 ? (nova_Nova_Object*)(nova_Nova_Object*)nova_null : (nova_Nova_Object*)parent);
 	location = (compiler_util_Nova_Location*)(location == 0 ? (nova_Nova_Object*)compiler_util_Nova_Location_Nova_INVALID : (nova_Nova_Object*)location);
 	require = (int)(require == (intptr_t)nova_null ? 1 : require);
-	l1_Nova_questionIndex = compiler_util_Nova_CompilerStringFunctions_0_Nova_findOperatorInBaseScope(input, exceptionData, '?', (intptr_t)nova_null, (intptr_t)nova_null);
+	l1_Nova_questionIndex = compiler_util_Nova_CompilerStringFunctions_0_Nova_findOperatorOnTopLevel(input, exceptionData, '?', (intptr_t)nova_null, (intptr_t)nova_null);
 	if (l1_Nova_questionIndex > 0)
 	{
 		int l1_Nova_colonIndex = 0;
 		
-		l1_Nova_colonIndex = compiler_util_Nova_CompilerStringFunctions_0_Nova_findOperatorInBaseScope(input, exceptionData, ':', l1_Nova_questionIndex + 2, (intptr_t)nova_null);
+		l1_Nova_colonIndex = compiler_util_Nova_CompilerStringFunctions_0_Nova_findOperatorOnTopLevel(input, exceptionData, ':', l1_Nova_questionIndex + 2, (intptr_t)nova_null);
 		if (l1_Nova_colonIndex > 0)
 		{
 			compiler_tree_nodes_operations_Nova_TernaryOperation* l2_Nova_node = (compiler_tree_nodes_operations_Nova_TernaryOperation*)nova_null;

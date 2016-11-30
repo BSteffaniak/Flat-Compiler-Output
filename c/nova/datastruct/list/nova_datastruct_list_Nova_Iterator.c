@@ -36,7 +36,6 @@ nova_datastruct_list_Iterator_Extension_VTable nova_datastruct_list_Iterator_Ext
 	{
 		0,
 		0,
-		0,
 		(char(*)(nova_datastruct_list_Nova_Iterator*, nova_exception_Nova_ExceptionData*))nova_datastruct_list_Nova_Iterator_Accessor_Nova_hasNext,
 		(nova_Nova_Object*(*)(nova_datastruct_list_Nova_Iterator*, nova_exception_Nova_ExceptionData*))nova_datastruct_list_Nova_Iterator_Accessor_Nova_next,
 		0,
@@ -80,7 +79,6 @@ void nova_datastruct_list_Nova_Iterator_Nova_init_static(nova_exception_Nova_Exc
 	}
 }
 
-
 char nova_datastruct_list_Nova_Iterator_Accessor_Nova_hasNext(nova_datastruct_list_Nova_Iterator* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
 	return 0;
@@ -92,11 +90,6 @@ nova_Nova_Object* nova_datastruct_list_Nova_Iterator_Accessor_Nova_next(nova_dat
 	return (nova_Nova_Object*)(nova_Nova_Object*)nova_null;
 }
 
-
-nova_datastruct_list_Nova_Iterator* nova_datastruct_list_Nova_Iterator_virtual_Nova_reset(nova_datastruct_list_Nova_Iterator* this, nova_exception_Nova_ExceptionData* exceptionData)
-{
-	return this->vtable->itable.nova_datastruct_list_Nova_Iterator_virtual_Nova_reset((nova_datastruct_list_Nova_Iterator*)(this), exceptionData);
-}
 
 char nova_datastruct_list_Nova_Iterator_virtual_Accessor_Nova_hasNext(nova_datastruct_list_Nova_Iterator* this, nova_exception_Nova_ExceptionData* exceptionData)
 {

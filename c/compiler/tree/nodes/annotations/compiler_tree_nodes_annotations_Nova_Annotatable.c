@@ -67,7 +67,6 @@ compiler_tree_nodes_annotations_Annotatable_Extension_VTable compiler_tree_nodes
 		0,
 		0,
 		0,
-		0,
 	},
 };
 

@@ -56,7 +56,6 @@ compiler_util_Bounds_Extension_VTable compiler_util_Bounds_Extension_VTable_val 
 		0,
 		0,
 		0,
-		0,
 		(char(*)(nova_operators_Nova_Equals*, nova_exception_Nova_ExceptionData*, nova_Nova_Object*))compiler_util_Nova_Bounds_Nova_equals,
 		0,
 		0,

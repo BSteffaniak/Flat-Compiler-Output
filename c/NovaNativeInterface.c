@@ -181,6 +181,7 @@ nova_env novaEnv = {
 },
 
 {
+&nova_datastruct_list_Nova_ArrayIterator_Nova_reset,
 &nova_datastruct_list_Nova_ArrayIterator_Nova_construct,
 },
 
@@ -193,6 +194,7 @@ nova_env novaEnv = {
 },
 
 {
+&nova_datastruct_list_Nova_CharArrayIterator_Nova_reset,
 &nova_datastruct_list_Nova_CharArrayIterator_Nova_construct,
 },
 
@@ -208,6 +210,7 @@ nova_env novaEnv = {
 },
 
 {
+&nova_datastruct_list_Nova_DoubleArrayIterator_Nova_reset,
 &nova_datastruct_list_Nova_DoubleArrayIterator_Nova_construct,
 },
 
@@ -217,6 +220,7 @@ nova_env novaEnv = {
 
 {
 &nova_datastruct_list_Nova_ImmutableArray_Nova_indexOf,
+&nova_datastruct_list_Nova_ImmutableArray_Nova_toArray,
 &nova_datastruct_list_Nova_ImmutableArray_Nova_sumSize,
 &nova_datastruct_list_Nova_ImmutableArray_Nova_toMutable,
 &nova_datastruct_list_Nova_ImmutableArray_Nova_get,
@@ -228,6 +232,7 @@ nova_env novaEnv = {
 },
 
 {
+&nova_datastruct_list_Nova_ImmutableArrayIterator_Nova_reset,
 &nova_datastruct_list_Nova_ImmutableArrayIterator_Nova_construct,
 },
 
@@ -238,6 +243,7 @@ nova_env novaEnv = {
 },
 
 {
+&nova_datastruct_list_Nova_IntArrayIterator_Nova_reset,
 &nova_datastruct_list_Nova_IntArrayIterator_Nova_construct,
 },
 
@@ -248,6 +254,7 @@ nova_env novaEnv = {
 },
 
 {
+&nova_datastruct_list_Nova_IntRangeIterator_Nova_reset,
 &nova_datastruct_list_Nova_IntRangeIterator_Nova_construct,
 },
 
@@ -255,7 +262,6 @@ nova_env novaEnv = {
 },
 
 {
-0,
 },
 
 {
@@ -266,6 +272,7 @@ nova_env novaEnv = {
 },
 
 {
+&nova_datastruct_list_Nova_LinkedListIterator_Nova_reset,
 &nova_datastruct_list_Nova_LinkedListIterator_Nova_construct,
 },
 
@@ -821,6 +828,7 @@ nova_env novaEnv = {
 },
 
 {
+&compiler_tree_Nova_StatementIterator_Nova_reset,
 &compiler_tree_Nova_StatementIterator_Nova_construct,
 },
 
@@ -893,6 +901,7 @@ nova_env novaEnv = {
 {
 &compiler_tree_nodes_Nova_Node_Nova_getAdjacentNode,
 &compiler_tree_nodes_Nova_Node_0_Nova_detach,
+&compiler_tree_nodes_Nova_Node_1_Nova_detach,
 0,
 &compiler_tree_nodes_Nova_Node_Nova_onAdded,
 &compiler_tree_nodes_Nova_Node_Nova_onRemoved,
@@ -1268,13 +1277,13 @@ nova_env novaEnv = {
 &compiler_util_Nova_CompilerStringFunctions_Nova_findOperatorIndices,
 &compiler_util_Nova_CompilerStringFunctions_0_Nova_isStrictlyOperator,
 &compiler_util_Nova_CompilerStringFunctions_1_Nova_isStrictlyOperator,
-&compiler_util_Nova_CompilerStringFunctions_0_Nova_findOperatorInBaseScope,
-&compiler_util_Nova_CompilerStringFunctions_1_Nova_findOperatorInBaseScope,
-&compiler_util_Nova_CompilerStringFunctions_0_Nova_findCharInBaseScope,
-&compiler_util_Nova_CompilerStringFunctions_1_Nova_findCharInBaseScope,
-&compiler_util_Nova_CompilerStringFunctions_Nova_findWordInBaseScope,
-&compiler_util_Nova_CompilerStringFunctions_0_Nova_findStringInBaseScope,
-&compiler_util_Nova_CompilerStringFunctions_1_Nova_findStringInBaseScope,
+&compiler_util_Nova_CompilerStringFunctions_0_Nova_findOperatorOnTopLevel,
+&compiler_util_Nova_CompilerStringFunctions_1_Nova_findOperatorOnTopLevel,
+&compiler_util_Nova_CompilerStringFunctions_0_Nova_findCharOnTopLevel,
+&compiler_util_Nova_CompilerStringFunctions_1_Nova_findCharOnTopLevel,
+&compiler_util_Nova_CompilerStringFunctions_Nova_findWordOnTopLevel,
+&compiler_util_Nova_CompilerStringFunctions_0_Nova_findStringOnTopLevel,
+&compiler_util_Nova_CompilerStringFunctions_1_Nova_findStringOnTopLevel,
 &compiler_util_Nova_CompilerStringFunctions_Nova_calculateStatementEnd,
 &compiler_util_Nova_CompilerStringFunctions_Nova_calculateReturnValue,
 &compiler_util_Nova_CompilerStringFunctions_1_Nova_nextWordBounds,

@@ -107,8 +107,8 @@ CCLASS_CLASS
 	nova_datastruct_list_Nova_Array* compiler_tree_nodes_Nova_Node_Nova_annotations;
 	compiler_tree_nodes_Nova_Node* compiler_tree_nodes_Nova_Node_Nova_parent;
 	nova_datastruct_list_Nova_Array* compiler_tree_nodes_Nova_NodeList_Nova_children;
+	int compiler_tree_nodes_Nova_Scope_Nova_id;
 	nova_datastruct_list_Nova_Array* compiler_tree_nodes_Nova_Scope_Nova_declarations;
-	struct Private* prv;
 )
 
 void compiler_tree_nodes_Nova_Scope_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData);

@@ -94,7 +94,6 @@ compiler_tree_nodes_NumericRange_Extension_VTable compiler_tree_nodes_NumericRan
 		0,
 		0,
 		0,
-		0,
 		(char(*)(nova_operators_Nova_Equals*, nova_exception_Nova_ExceptionData*, nova_Nova_Object*))nova_Nova_Object_0_Nova_equals,
 		0,
 		0,
@@ -188,7 +187,7 @@ compiler_tree_nodes_Nova_NumericRange* compiler_tree_nodes_Nova_NumericRange_sta
 	parent = (compiler_tree_nodes_Nova_Node*)(parent == 0 ? (nova_Nova_Object*)(nova_Nova_Object*)nova_null : (nova_Nova_Object*)parent);
 	location = (compiler_util_Nova_Location*)(location == 0 ? (nova_Nova_Object*)compiler_util_Nova_Location_Nova_INVALID : (nova_Nova_Object*)location);
 	require = (int)(require == (intptr_t)nova_null ? 1 : require);
-	l1_Nova_startIndex = compiler_util_Nova_CompilerStringFunctions_0_Nova_findStringInBaseScope(input, exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("..")), (intptr_t)nova_null, (intptr_t)nova_null, (intptr_t)nova_null);
+	l1_Nova_startIndex = compiler_util_Nova_CompilerStringFunctions_0_Nova_findStringOnTopLevel(input, exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("..")), (intptr_t)nova_null, (intptr_t)nova_null, (intptr_t)nova_null);
 	if (l1_Nova_startIndex > 0 && compiler_util_Nova_CompilerStringFunctions_1_Nova_isStrictlyOperator(input, exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("..")), l1_Nova_startIndex))
 	{
 		nova_Nova_String* l1_Nova_start = (nova_Nova_String*)nova_null;

@@ -92,7 +92,6 @@ compiler_tree_nodes_variables_FieldDeclaration_Extension_VTable compiler_tree_no
 		0,
 		0,
 		0,
-		0,
 		(char(*)(nova_operators_Nova_Equals*, nova_exception_Nova_ExceptionData*, nova_Nova_Object*))nova_Nova_Object_0_Nova_equals,
 		0,
 		0,
@@ -248,10 +247,10 @@ int compiler_tree_nodes_variables_Nova_FieldDeclaration_static_Nova_findAccessor
 	int l1_Nova_index = 0;
 	
 	defaultReturnValue = (int)(defaultReturnValue == (intptr_t)nova_null ? -1 : defaultReturnValue);
-	l1_Nova_index = compiler_util_Nova_CompilerStringFunctions_1_Nova_findOperatorInBaseScope(input, exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("=>")), (intptr_t)nova_null, (intptr_t)nova_null);
+	l1_Nova_index = compiler_util_Nova_CompilerStringFunctions_1_Nova_findOperatorOnTopLevel(input, exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("=>")), (intptr_t)nova_null, (intptr_t)nova_null);
 	if (l1_Nova_index < 0)
 	{
-		l1_Nova_index = compiler_util_Nova_CompilerStringFunctions_1_Nova_findOperatorInBaseScope(input, exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("<=>")), (intptr_t)nova_null, (intptr_t)nova_null);
+		l1_Nova_index = compiler_util_Nova_CompilerStringFunctions_1_Nova_findOperatorOnTopLevel(input, exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("<=>")), (intptr_t)nova_null, (intptr_t)nova_null);
 		if (l1_Nova_index < 0)
 		{
 			return defaultReturnValue;

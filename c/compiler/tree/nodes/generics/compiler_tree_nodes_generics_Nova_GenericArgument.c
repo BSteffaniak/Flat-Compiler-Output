@@ -91,7 +91,6 @@ compiler_tree_nodes_generics_GenericArgument_Extension_VTable compiler_tree_node
 		0,
 		0,
 		0,
-		0,
 		(char(*)(nova_operators_Nova_Equals*, nova_exception_Nova_ExceptionData*, nova_Nova_Object*))nova_Nova_Object_0_Nova_equals,
 		0,
 		0,

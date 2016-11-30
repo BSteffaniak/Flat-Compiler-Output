@@ -67,7 +67,6 @@ compiler_tree_nodes_operations_Assignable_Extension_VTable compiler_tree_nodes_o
 		0,
 		0,
 		0,
-		0,
 		(void(*)(compiler_tree_nodes_operations_Nova_Assignable*, nova_exception_Nova_ExceptionData*, compiler_tree_nodes_Nova_Value*))compiler_tree_nodes_operations_Nova_Assignable_Nova_onAssigned,
 	},
 };

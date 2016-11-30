@@ -40,7 +40,6 @@ compiler_tree_StatementIterator_Extension_VTable compiler_tree_StatementIterator
 	{
 		0,
 		0,
-		(nova_datastruct_list_Nova_Iterator*(*)(nova_datastruct_list_Nova_Iterator*, nova_exception_Nova_ExceptionData*))compiler_tree_Nova_StatementIterator_Nova_reset,
 		(char(*)(nova_datastruct_list_Nova_Iterator*, nova_exception_Nova_ExceptionData*))compiler_tree_Nova_StatementIterator_Accessor_Nova_hasNext,
 		(nova_Nova_Object*(*)(nova_datastruct_list_Nova_Iterator*, nova_exception_Nova_ExceptionData*))compiler_tree_Nova_StatementIterator_Accessor_Nova_next,
 		0,

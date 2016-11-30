@@ -75,7 +75,6 @@ compiler_tree_nodes_controlstructures_loops_ForEachLoop_Extension_VTable compile
 		0,
 		0,
 		0,
-		0,
 		(char(*)(nova_operators_Nova_Equals*, nova_exception_Nova_ExceptionData*, nova_Nova_Object*))nova_Nova_Object_0_Nova_equals,
 		0,
 		0,
@@ -181,7 +180,7 @@ compiler_tree_nodes_controlstructures_loops_Nova_ForEachLoop* compiler_tree_node
 			int l3_Nova_inIndex = 0;
 			
 			l1_Nova_contents = nova_Nova_String_Nova_trim(nova_Nova_String_virtual_Nova_substring((nova_Nova_String*)(l1_Nova_contents), exceptionData, 1, l2_Nova_end), exceptionData, (intptr_t)nova_null, (intptr_t)nova_null, 0);
-			l3_Nova_inIndex = compiler_util_Nova_CompilerStringFunctions_Nova_findWordInBaseScope(l1_Nova_contents, exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("in")), (intptr_t)nova_null, (intptr_t)nova_null, (intptr_t)nova_null);
+			l3_Nova_inIndex = compiler_util_Nova_CompilerStringFunctions_Nova_findWordOnTopLevel(l1_Nova_contents, exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("in")), (intptr_t)nova_null, (intptr_t)nova_null, (intptr_t)nova_null);
 			if (l3_Nova_inIndex > 0)
 			{
 				nova_Nova_String* l4_Nova_variable = (nova_Nova_String*)nova_null;
