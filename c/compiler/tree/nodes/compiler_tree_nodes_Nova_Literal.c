@@ -36,6 +36,7 @@
 #include <compiler/compiler_Nova_InvalidParseException.h>
 #include <compiler/tree/nodes/arrays/compiler_tree_nodes_arrays_Nova_ArrayAccess.h>
 #include <compiler/tree/nodes/operations/compiler_tree_nodes_operations_Nova_Operation.h>
+#include <compiler/tree/nodes/operations/compiler_tree_nodes_operations_Nova_UnaryOperation.h>
 #include <compiler/tree/nodes/operations/compiler_tree_nodes_operations_Nova_TernaryOperation.h>
 #include <compiler/tree/nodes/operations/compiler_tree_nodes_operations_Nova_ElvisOperation.h>
 #include <compiler/tree/nodes/operations/compiler_tree_nodes_operations_Nova_Assignable.h>
@@ -50,6 +51,7 @@
 #include <compiler/tree/nodes/compiler_tree_nodes_Nova_NovaFile.h>
 #include <compiler/tree/nodes/compiler_tree_nodes_Nova_NumericRange.h>
 #include <compiler/tree/nodes/compiler_tree_nodes_Nova_PlaceholderValue.h>
+#include <compiler/tree/nodes/compiler_tree_nodes_Nova_Priority.h>
 #include <compiler/tree/nodes/compiler_tree_nodes_Nova_StaticClassReference.h>
 #include <compiler/error/compiler_error_Nova_UnimplementedOperationException.h>
 #include <compiler/tree/nodes/annotations/compiler_tree_nodes_annotations_Nova_Annotatable.h>
@@ -94,8 +96,8 @@ compiler_tree_nodes_Literal_Extension_VTable compiler_tree_nodes_Literal_Extensi
 		0,
 		0,
 		0,
-		(compiler_tree_nodes_Nova_Accessible*(*)(compiler_tree_nodes_Nova_Accessible*, nova_exception_Nova_ExceptionData*, compiler_tree_nodes_Nova_Accessible*))compiler_tree_nodes_Nova_Accessible_Mutator_Nova_accessedNode,
-		(compiler_tree_nodes_Nova_Accessible*(*)(compiler_tree_nodes_Nova_Accessible*, nova_exception_Nova_ExceptionData*))compiler_tree_nodes_Nova_Accessible_Accessor_Nova_accessedNode,
+		(compiler_tree_nodes_Nova_Accessible*(*)(compiler_tree_nodes_Nova_Accessible*, nova_exception_Nova_ExceptionData*, compiler_tree_nodes_Nova_Accessible*))compiler_tree_nodes_Nova_Literal_Mutatorfunc0_Nova_accessedNode,
+		(compiler_tree_nodes_Nova_Accessible*(*)(compiler_tree_nodes_Nova_Accessible*, nova_exception_Nova_ExceptionData*))compiler_tree_nodes_Nova_Literal_Accessorfunc_Nova_accessedNode,
 		(void(*)(compiler_tree_nodes_annotations_Nova_Annotatable*, nova_exception_Nova_ExceptionData*, compiler_tree_nodes_annotations_Nova_Annotation*))compiler_tree_nodes_Nova_Node_Nova_addAnnotation,
 		0,
 		0,
@@ -162,6 +164,8 @@ void compiler_tree_nodes_Nova_Literal_Nova_destroy(compiler_tree_nodes_Nova_Lite
 	{
 		return;
 	}
+	
+	
 	
 	nova_Nova_String_Nova_destroy(&(*this)->compiler_tree_nodes_Nova_Literal_Nova_value, exceptionData);
 	
@@ -236,8 +240,32 @@ nova_Nova_String* compiler_tree_nodes_Nova_Literal_Nova_writeNova(compiler_tree_
 	return nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)(this->compiler_tree_nodes_Nova_Literal_Nova_value), exceptionData, nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)(compiler_tree_nodes_Nova_Value_Nova_writeArrayAccess((compiler_tree_nodes_Nova_Value*)(this), exceptionData)), exceptionData, compiler_tree_nodes_Nova_Accessible_Nova_writeAccessedNodes((compiler_tree_nodes_Nova_Accessible*)(this), exceptionData)));
 }
 
+char compiler_tree_nodes_Nova_Literal_Accessorfunc_Nova_safeNavigation(compiler_tree_nodes_Nova_Literal* this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+	return this->compiler_tree_nodes_Nova_Literal_Nova_safeNavigation;
+}
+
+char compiler_tree_nodes_Nova_Literal_Mutatorfunc_Nova_safeNavigation(compiler_tree_nodes_Nova_Literal* this, nova_exception_Nova_ExceptionData* exceptionData, char value)
+{
+	this->compiler_tree_nodes_Nova_Literal_Nova_safeNavigation = value;
+	return value;
+}
+
+compiler_tree_nodes_Nova_Accessible* compiler_tree_nodes_Nova_Literal_Accessorfunc_Nova_accessedNode(compiler_tree_nodes_Nova_Literal* this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+	return this->compiler_tree_nodes_Nova_Literal_Nova_accessedNode;
+}
+
+compiler_tree_nodes_Nova_Accessible* compiler_tree_nodes_Nova_Literal_Mutatorfunc0_Nova_accessedNode(compiler_tree_nodes_Nova_Literal* this, nova_exception_Nova_ExceptionData* exceptionData, compiler_tree_nodes_Nova_Accessible* value)
+{
+	this->compiler_tree_nodes_Nova_Literal_Nova_accessedNode = value;
+	return value;
+}
+
 void compiler_tree_nodes_Nova_Literal_Nova_super(compiler_tree_nodes_Nova_Literal* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
+	this->compiler_tree_nodes_Nova_Literal_Nova_safeNavigation = 0;
+	this->compiler_tree_nodes_Nova_Literal_Nova_accessedNode = (compiler_tree_nodes_Nova_Accessible*)nova_null;
 	this->compiler_tree_nodes_Nova_Literal_Nova_value = (nova_Nova_String*)nova_null;
 }
 

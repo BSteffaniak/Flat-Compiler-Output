@@ -557,6 +557,21 @@ nova_datastruct_list_Nova_Array* nova_Nova_String_Nova_split(nova_Nova_String* t
 	return l1_Nova_strs;
 }
 
+nova_Nova_String* nova_Nova_String_Nova_getGroupedChars(nova_Nova_String* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_list_Nova_CharArray* chars, int start, int end, int opposite)
+{
+	int l1_Nova_i = 0;
+	
+	start = (int)(start == (intptr_t)nova_null ? 0 : start);
+	end = (int)(end == (intptr_t)nova_null ? this->nova_Nova_String_Nova_count : end);
+	opposite = (int)(opposite == (intptr_t)nova_null ? 0 : opposite);
+	l1_Nova_i = start;
+	while (start < end && nova_datastruct_list_Nova_CharArray_Nova_contains(chars, exceptionData, (char)(intptr_t)(nova_datastruct_list_Nova_CharArray_Nova_get((nova_datastruct_list_Nova_CharArray*)(this->nova_Nova_String_Nova_chars), exceptionData, l1_Nova_i))) != opposite)
+	{
+		l1_Nova_i++;
+	}
+	return nova_Nova_String_virtual_Nova_substring((nova_Nova_String*)(this), exceptionData, start, l1_Nova_i);
+}
+
 nova_Nova_String* nova_Nova_String_Nova_toString(nova_Nova_String* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
 	return this;

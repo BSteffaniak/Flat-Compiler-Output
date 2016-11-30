@@ -41,6 +41,7 @@ nova_env novaEnv = {
 &nova_Nova_String_Nova_getStringBetween,
 &nova_Nova_String_Nova_surroundWith,
 &nova_Nova_String_Nova_split,
+&nova_Nova_String_Nova_getGroupedChars,
 &nova_Nova_String_Nova_get,
 &nova_Nova_String_Nova_set,
 &nova_Nova_String_0_Nova_construct,
@@ -171,6 +172,7 @@ nova_env novaEnv = {
 &nova_datastruct_list_Nova_Array_Nova_replace,
 &nova_datastruct_list_Nova_Array_Nova_swap,
 &nova_datastruct_list_Nova_Array_Nova_sumSize,
+&nova_datastruct_list_Nova_Array_Nova_toImmutable,
 0,
 0,
 &nova_datastruct_list_Nova_Array_0_Nova_construct,
@@ -211,6 +213,22 @@ nova_env novaEnv = {
 
 {
 &nova_datastruct_list_Nova_EmptyStackException_Nova_construct,
+},
+
+{
+&nova_datastruct_list_Nova_ImmutableArray_Nova_indexOf,
+&nova_datastruct_list_Nova_ImmutableArray_Nova_sumSize,
+&nova_datastruct_list_Nova_ImmutableArray_Nova_toMutable,
+&nova_datastruct_list_Nova_ImmutableArray_Nova_get,
+&nova_datastruct_list_Nova_ImmutableArray_Nova_set,
+&nova_datastruct_list_Nova_ImmutableArray_0_Nova_construct,
+&nova_datastruct_list_Nova_ImmutableArray_1_Nova_construct,
+&nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct,
+&nova_datastruct_list_Nova_ImmutableArray_3_Nova_construct,
+},
+
+{
+&nova_datastruct_list_Nova_ImmutableArrayIterator_Nova_construct,
 },
 
 {
@@ -264,6 +282,7 @@ nova_env novaEnv = {
 &nova_datastruct_list_Nova_List_Nova_takeLast,
 0,
 &nova_datastruct_list_Nova_List_Nova_firstOr,
+&nova_datastruct_list_Nova_List_Nova_firstOrThrow,
 0,
 &nova_datastruct_list_Nova_List_Nova_firstNonNull,
 &nova_datastruct_list_Nova_List_Nova_zip,
@@ -839,7 +858,6 @@ nova_env novaEnv = {
 },
 
 {
-&compiler_tree_nodes_Nova_ClassDeclaration_Nova_addFunction,
 &compiler_tree_nodes_Nova_ClassDeclaration_Nova_findCompatibleFunctions,
 &compiler_tree_nodes_Nova_ClassDeclaration_Nova_writeHeader,
 &compiler_tree_nodes_Nova_ClassDeclaration_Nova_writeExtension,
@@ -875,6 +893,7 @@ nova_env novaEnv = {
 {
 &compiler_tree_nodes_Nova_Node_Nova_getAdjacentNode,
 &compiler_tree_nodes_Nova_Node_0_Nova_detach,
+0,
 &compiler_tree_nodes_Nova_Node_Nova_onAdded,
 &compiler_tree_nodes_Nova_Node_Nova_onRemoved,
 &compiler_tree_nodes_Nova_Node_Nova_onAfterDecoded,
@@ -884,7 +903,6 @@ nova_env novaEnv = {
 &compiler_tree_nodes_Nova_Node_Nova_onChildReplaced,
 &compiler_tree_nodes_Nova_Node_Nova_onReplaced,
 &compiler_tree_nodes_Nova_Node_Nova_onChildDetached,
-0,
 &compiler_tree_nodes_Nova_Node_Nova_validate,
 0,
 0,
@@ -931,6 +949,10 @@ nova_env novaEnv = {
 {
 &compiler_tree_nodes_Nova_PlaceholderValue_Nova_writeScope,
 &compiler_tree_nodes_Nova_PlaceholderValue_Nova_construct,
+},
+
+{
+&compiler_tree_nodes_Nova_Priority_Nova_construct,
 },
 
 {
@@ -1088,6 +1110,10 @@ nova_env novaEnv = {
 },
 
 {
+&compiler_tree_nodes_functions_Nova_InitializationFunction_Nova_construct,
+},
+
+{
 &compiler_tree_nodes_functions_Nova_Instantiation_Nova_construct,
 },
 
@@ -1239,6 +1265,7 @@ nova_env novaEnv = {
 &compiler_util_Nova_CompilerStringFunctions_Nova_splitAtDotOperator,
 &compiler_util_Nova_CompilerStringFunctions_Nova_splitValues,
 &compiler_util_Nova_CompilerStringFunctions_Nova_splitAtCommas,
+&compiler_util_Nova_CompilerStringFunctions_Nova_findOperatorIndices,
 &compiler_util_Nova_CompilerStringFunctions_0_Nova_isStrictlyOperator,
 &compiler_util_Nova_CompilerStringFunctions_1_Nova_isStrictlyOperator,
 &compiler_util_Nova_CompilerStringFunctions_0_Nova_findOperatorInBaseScope,

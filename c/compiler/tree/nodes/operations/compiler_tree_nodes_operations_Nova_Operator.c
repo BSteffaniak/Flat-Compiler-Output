@@ -86,7 +86,7 @@ compiler_tree_nodes_operations_Operator_Extension_VTable compiler_tree_nodes_ope
 		0,
 		0,
 	},
-	compiler_tree_nodes_operations_Nova_Operator_Nova_toString,
+	compiler_tree_nodes_Nova_Node_Nova_toString,
 	nova_Nova_Object_Accessor_Nova_hashCodeLong,
 	compiler_tree_nodes_Nova_Node_Nova_addChild,
 	compiler_tree_nodes_Nova_Node_Nova_findVariableDeclaration,
@@ -98,7 +98,7 @@ compiler_tree_nodes_operations_Operator_Extension_VTable compiler_tree_nodes_ope
 	compiler_tree_nodes_Nova_Node_Nova_parsePlaceholders,
 	compiler_tree_nodes_Nova_Node_Nova_writeAnnotationSeparator,
 	compiler_tree_nodes_Nova_Node_Nova_toNova,
-	compiler_tree_nodes_Nova_Node_Nova_writeNova,
+	compiler_tree_nodes_operations_Nova_Operator_Nova_writeNova,
 	compiler_tree_nodes_Nova_Node_Mutator_Nova_scope,
 	compiler_tree_nodes_Nova_Node_Accessor_Nova_program,
 	compiler_tree_nodes_Nova_Node_Accessor_Nova_parentFile,
@@ -161,6 +161,7 @@ nova_datastruct_list_Nova_Array* compiler_tree_nodes_operations_Nova_Operator_No
 nova_datastruct_list_Nova_Array* compiler_tree_nodes_operations_Nova_Operator_Nova_LOGICAL_OPERATORS;
 nova_datastruct_list_Nova_Array* compiler_tree_nodes_operations_Nova_Operator_Nova_SHORTHAND_OPERATORS;
 nova_datastruct_list_Nova_CharArray* compiler_tree_nodes_operations_Nova_Operator_Nova_OPERATOR_SYMBOLS;
+nova_datastruct_list_Nova_CharArray* compiler_tree_nodes_operations_Nova_Operator_Nova_UNARY_OPERATOR_CHARS;
 void compiler_tree_nodes_operations_Nova_Operator_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData)
 {
 	{
@@ -208,10 +209,13 @@ void compiler_tree_nodes_operations_Nova_Operator_Nova_init_static(nova_exceptio
 		compiler_tree_nodes_operations_Nova_Operator_Nova_LOGICAL_OPERATORS = generated19(0, exceptionData, compiler_tree_nodes_operations_Nova_Operator_Nova_SHORTHAND_ADD, compiler_tree_nodes_operations_Nova_Operator_Nova_SHORTHAND_SUBTRACT, compiler_tree_nodes_operations_Nova_Operator_Nova_SHORTHAND_MULTIPLY, compiler_tree_nodes_operations_Nova_Operator_Nova_SHORTHAND_DIVIDE, compiler_tree_nodes_operations_Nova_Operator_Nova_SHORTHAND_MODULO, compiler_tree_nodes_operations_Nova_Operator_Nova_SHORTHAND_L_SHIFT, compiler_tree_nodes_operations_Nova_Operator_Nova_SHORTHAND_R_SHIFT, compiler_tree_nodes_operations_Nova_Operator_Nova_SHORTHAND_BITWISE_AND, compiler_tree_nodes_operations_Nova_Operator_Nova_SHORTHAND_BITWISE_OR, compiler_tree_nodes_operations_Nova_Operator_Nova_AND, compiler_tree_nodes_operations_Nova_Operator_Nova_OR, compiler_tree_nodes_operations_Nova_Operator_Nova_DIVIDE, compiler_tree_nodes_operations_Nova_Operator_Nova_MULTIPLY, compiler_tree_nodes_operations_Nova_Operator_Nova_MODULO, compiler_tree_nodes_operations_Nova_Operator_Nova_ADD, compiler_tree_nodes_operations_Nova_Operator_Nova_SUBTRACT, compiler_tree_nodes_operations_Nova_Operator_Nova_EQUALS, compiler_tree_nodes_operations_Nova_Operator_Nova_NOT_EQUAL, compiler_tree_nodes_operations_Nova_Operator_Nova_GREATER_EQ, compiler_tree_nodes_operations_Nova_Operator_Nova_LESS_EQ, compiler_tree_nodes_operations_Nova_Operator_Nova_L_SHIFT, compiler_tree_nodes_operations_Nova_Operator_Nova_UR_SHIFT, compiler_tree_nodes_operations_Nova_Operator_Nova_R_SHIFT, compiler_tree_nodes_operations_Nova_Operator_Nova_GREATER, compiler_tree_nodes_operations_Nova_Operator_Nova_LESS, compiler_tree_nodes_operations_Nova_Operator_Nova_BITWISE_AND, compiler_tree_nodes_operations_Nova_Operator_Nova_BITWISE_OR, compiler_tree_nodes_operations_Nova_Operator_Nova_BITWISE_XOR, compiler_tree_nodes_operations_Nova_Operator_Nova_BITWISE_COMPLEMENT);
 		compiler_tree_nodes_operations_Nova_Operator_Nova_SHORTHAND_OPERATORS = generated20(0, exceptionData, compiler_tree_nodes_operations_Nova_Operator_Nova_SHORTHAND_ADD, compiler_tree_nodes_operations_Nova_Operator_Nova_SHORTHAND_SUBTRACT, compiler_tree_nodes_operations_Nova_Operator_Nova_SHORTHAND_MULTIPLY, compiler_tree_nodes_operations_Nova_Operator_Nova_SHORTHAND_DIVIDE, compiler_tree_nodes_operations_Nova_Operator_Nova_SHORTHAND_MODULO, compiler_tree_nodes_operations_Nova_Operator_Nova_SHORTHAND_L_SHIFT, compiler_tree_nodes_operations_Nova_Operator_Nova_SHORTHAND_R_SHIFT, compiler_tree_nodes_operations_Nova_Operator_Nova_SHORTHAND_BITWISE_AND, compiler_tree_nodes_operations_Nova_Operator_Nova_SHORTHAND_BITWISE_OR, compiler_tree_nodes_operations_Nova_Operator_Nova_SHORTHAND_UR_SHIFT, compiler_tree_nodes_operations_Nova_Operator_Nova_SHORTHAND_BITWISE_XOR);
 		compiler_tree_nodes_operations_Nova_Operator_Nova_OPERATOR_SYMBOLS = nova_datastruct_list_Nova_CharArray_0_Nova_construct(0, exceptionData);
+		compiler_tree_nodes_operations_Nova_Operator_Nova_UNARY_OPERATOR_CHARS = nova_datastruct_list_Nova_CharArray_0_Nova_construct(0, exceptionData);
 	}
 	{
 		nova_datastruct_list_Nova_ArrayIterator* nova_local_0 = (nova_datastruct_list_Nova_ArrayIterator*)nova_null;
 		nova_Nova_String* l2_Nova_operator = (nova_Nova_String*)nova_null;
+		nova_datastruct_list_Nova_ArrayIterator* nova_local_2 = (nova_datastruct_list_Nova_ArrayIterator*)nova_null;
+		nova_Nova_String* l4_Nova_unary = (nova_Nova_String*)nova_null;
 		
 		nova_local_0 = (nova_datastruct_list_Nova_ArrayIterator*)(nova_datastruct_list_Nova_Array_Accessor_Nova_iterator((nova_datastruct_list_Nova_Array*)((compiler_tree_nodes_operations_Nova_Operator_Nova_OPERATORS)), exceptionData));
 		while (nova_datastruct_list_Nova_ArrayIterator_Accessor_Nova_hasNext((nova_datastruct_list_Nova_ArrayIterator*)(nova_local_0), exceptionData))
@@ -227,10 +231,24 @@ void compiler_tree_nodes_operations_Nova_Operator_Nova_init_static(nova_exceptio
 				nova_datastruct_list_Nova_CharArray_Nova_addUnique(compiler_tree_nodes_operations_Nova_Operator_Nova_OPERATOR_SYMBOLS, exceptionData, l3_Nova_c);
 			}
 		}
+		nova_local_2 = (nova_datastruct_list_Nova_ArrayIterator*)(nova_datastruct_list_Nova_Array_Accessor_Nova_iterator((nova_datastruct_list_Nova_Array*)((compiler_tree_nodes_operations_Nova_Operator_Nova_UNARY_OPERATORS)), exceptionData));
+		while (nova_datastruct_list_Nova_ArrayIterator_Accessor_Nova_hasNext((nova_datastruct_list_Nova_ArrayIterator*)(nova_local_2), exceptionData))
+		{
+			nova_datastruct_list_Nova_CharArrayIterator* nova_local_3 = (nova_datastruct_list_Nova_CharArrayIterator*)nova_null;
+			char l5_Nova_c = 0;
+			
+			l4_Nova_unary = (nova_Nova_String*)(nova_datastruct_list_Nova_ArrayIterator_Accessor_Nova_next((nova_datastruct_list_Nova_ArrayIterator*)(nova_local_2), exceptionData));
+			nova_local_3 = nova_datastruct_list_Nova_CharArray_Accessor_Nova_iterator((nova_datastruct_list_Nova_CharArray*)((l4_Nova_unary->nova_Nova_String_Nova_chars)), exceptionData);
+			while (nova_datastruct_list_Nova_CharArrayIterator_Accessor_Nova_hasNext(nova_local_3, exceptionData))
+			{
+				l5_Nova_c = (char)(intptr_t)(nova_datastruct_list_Nova_CharArrayIterator_Accessor_Nova_next(nova_local_3, exceptionData));
+				nova_datastruct_list_Nova_CharArray_Nova_addUnique(compiler_tree_nodes_operations_Nova_Operator_Nova_UNARY_OPERATOR_CHARS, exceptionData, l5_Nova_c);
+			}
+		}
 	}
 }
 
-compiler_tree_nodes_operations_Nova_Operator* compiler_tree_nodes_operations_Nova_Operator_Nova_construct(compiler_tree_nodes_operations_Nova_Operator* this, nova_exception_Nova_ExceptionData* exceptionData, compiler_tree_nodes_Nova_Node* parent, compiler_util_Nova_Location* location, nova_Nova_String* operator)
+compiler_tree_nodes_operations_Nova_Operator* compiler_tree_nodes_operations_Nova_Operator_Nova_construct(compiler_tree_nodes_operations_Nova_Operator* this, nova_exception_Nova_ExceptionData* exceptionData, compiler_tree_nodes_Nova_Node* parent, compiler_util_Nova_Location* location, nova_Nova_String* value)
 {
 	CCLASS_NEW(compiler_tree_nodes_operations_Nova_Operator, this,);
 	this->vtable = &compiler_tree_nodes_operations_Operator_Extension_VTable_val;
@@ -239,7 +257,7 @@ compiler_tree_nodes_operations_Nova_Operator* compiler_tree_nodes_operations_Nov
 	compiler_tree_nodes_operations_Nova_Operator_Nova_super(this, exceptionData);
 	
 	{
-		compiler_tree_nodes_operations_Nova_Operator_Nova_this(this, exceptionData, parent, location, operator);
+		compiler_tree_nodes_operations_Nova_Operator_Nova_this(this, exceptionData, parent, location, value);
 	}
 	
 	return this;
@@ -252,23 +270,23 @@ void compiler_tree_nodes_operations_Nova_Operator_Nova_destroy(compiler_tree_nod
 		return;
 	}
 	
-	nova_Nova_String_Nova_destroy(&(*this)->compiler_tree_nodes_operations_Nova_Operator_Nova_operator, exceptionData);
+	nova_Nova_String_Nova_destroy(&(*this)->compiler_tree_nodes_operations_Nova_Operator_Nova_value, exceptionData);
 	
 	NOVA_FREE(*this);
 }
 
-void compiler_tree_nodes_operations_Nova_Operator_Nova_this(compiler_tree_nodes_operations_Nova_Operator* this, nova_exception_Nova_ExceptionData* exceptionData, compiler_tree_nodes_Nova_Node* parent, compiler_util_Nova_Location* location, nova_Nova_String* operator)
+void compiler_tree_nodes_operations_Nova_Operator_Nova_this(compiler_tree_nodes_operations_Nova_Operator* this, nova_exception_Nova_ExceptionData* exceptionData, compiler_tree_nodes_Nova_Node* parent, compiler_util_Nova_Location* location, nova_Nova_String* value)
 {
 	parent = (compiler_tree_nodes_Nova_Node*)(parent == 0 ? (nova_Nova_Object*)(nova_Nova_Object*)nova_null : (nova_Nova_Object*)parent);
 	location = (compiler_util_Nova_Location*)(location == 0 ? (nova_Nova_Object*)compiler_util_Nova_Location_Nova_INVALID : (nova_Nova_Object*)location);
-	operator = (nova_Nova_String*)(operator == 0 ? (nova_Nova_Object*)(nova_Nova_Object*)nova_null : (nova_Nova_Object*)operator);
+	value = (nova_Nova_String*)(value == 0 ? (nova_Nova_Object*)(nova_Nova_Object*)nova_null : (nova_Nova_Object*)value);
 	compiler_tree_nodes_Nova_Node_Nova_this((compiler_tree_nodes_Nova_Node*)(this), exceptionData, parent, location);
-	this->compiler_tree_nodes_operations_Nova_Operator_Nova_operator = operator;
+	this->compiler_tree_nodes_operations_Nova_Operator_Nova_value = value;
 }
 
-nova_Nova_String* compiler_tree_nodes_operations_Nova_Operator_Nova_toString(compiler_tree_nodes_operations_Nova_Operator* this, nova_exception_Nova_ExceptionData* exceptionData)
+nova_Nova_String* compiler_tree_nodes_operations_Nova_Operator_Nova_writeNova(compiler_tree_nodes_operations_Nova_Operator* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
-	return this->compiler_tree_nodes_operations_Nova_Operator_Nova_operator;
+	return this->compiler_tree_nodes_operations_Nova_Operator_Nova_value;
 }
 
 nova_datastruct_list_Nova_Array* generated14(compiler_tree_nodes_operations_Nova_Operator* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* value0, nova_Nova_String* value1, nova_Nova_String* value2, nova_Nova_String* value3, nova_Nova_String* value4, nova_Nova_String* value5, nova_Nova_String* value6, nova_Nova_String* value7, nova_Nova_String* value8, nova_Nova_String* value9, nova_Nova_String* value10, nova_Nova_String* value11, nova_Nova_String* value12, nova_Nova_String* value13, nova_Nova_String* value14, nova_Nova_String* value15, nova_Nova_String* value16, nova_Nova_String* value17, nova_Nova_String* value18, nova_Nova_String* value19, nova_Nova_String* value20, nova_Nova_String* value21, nova_Nova_String* value22, nova_Nova_String* value23, nova_Nova_String* value24, nova_Nova_String* value25, nova_Nova_String* value26, nova_Nova_String* value27, nova_Nova_String* value28, nova_Nova_String* value29, nova_Nova_String* value30, nova_Nova_String* value31, nova_Nova_String* value32, nova_Nova_String* value33)
@@ -442,6 +460,6 @@ nova_datastruct_list_Nova_Array* generated20(compiler_tree_nodes_operations_Nova
 
 void compiler_tree_nodes_operations_Nova_Operator_Nova_super(compiler_tree_nodes_operations_Nova_Operator* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
-	this->compiler_tree_nodes_operations_Nova_Operator_Nova_operator = (nova_Nova_String*)nova_null;
+	this->compiler_tree_nodes_operations_Nova_Operator_Nova_value = (nova_Nova_String*)nova_null;
 }
 

@@ -151,7 +151,7 @@ compiler_tree_nodes_Nova_Skeleton* compiler_tree_nodes_Nova_Skeleton_static_Nova
 	parent = (compiler_tree_nodes_Nova_Node*)(parent == 0 ? (nova_Nova_Object*)(nova_Nova_Object*)nova_null : (nova_Nova_Object*)parent);
 	location = (compiler_util_Nova_Location*)(location == 0 ? (nova_Nova_Object*)compiler_util_Nova_Location_Nova_INVALID : (nova_Nova_Object*)location);
 	require = (int)(require == (intptr_t)nova_null ? 1 : require);
-	if (1)
+	if (0)
 	{
 		compiler_tree_nodes_Nova_Skeleton* l1_Nova_node = (compiler_tree_nodes_Nova_Skeleton*)nova_null;
 		
