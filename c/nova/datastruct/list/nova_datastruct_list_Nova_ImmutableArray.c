@@ -133,7 +133,7 @@ nova_datastruct_list_Nova_ImmutableArray* nova_datastruct_list_Nova_ImmutableArr
 	return this;
 }
 
-nova_datastruct_list_Nova_ImmutableArray* nova_datastruct_list_Nova_ImmutableArray_3_Nova_construct(nova_datastruct_list_Nova_ImmutableArray* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_Object** data, int count)
+nova_datastruct_list_Nova_ImmutableArray* nova_datastruct_list_Nova_ImmutableArray_3_Nova_construct(nova_datastruct_list_Nova_ImmutableArray* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_list_Nova_Array* data, char clone)
 {
 	CCLASS_NEW(nova_datastruct_list_Nova_ImmutableArray, this,);
 	this->vtable = &nova_datastruct_list_ImmutableArray_Extension_VTable_val;
@@ -141,7 +141,21 @@ nova_datastruct_list_Nova_ImmutableArray* nova_datastruct_list_Nova_ImmutableArr
 	nova_datastruct_list_Nova_ImmutableArray_Nova_super(this, exceptionData);
 	
 	{
-		nova_datastruct_list_Nova_ImmutableArray_7_Nova_this(this, exceptionData, data, count);
+		nova_datastruct_list_Nova_ImmutableArray_7_Nova_this(this, exceptionData, (nova_datastruct_list_Nova_Array*)(data), clone);
+	}
+	
+	return this;
+}
+
+nova_datastruct_list_Nova_ImmutableArray* nova_datastruct_list_Nova_ImmutableArray_4_Nova_construct(nova_datastruct_list_Nova_ImmutableArray* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_Object** data, int count)
+{
+	CCLASS_NEW(nova_datastruct_list_Nova_ImmutableArray, this,);
+	this->vtable = &nova_datastruct_list_ImmutableArray_Extension_VTable_val;
+	nova_Nova_Object_Nova_super((nova_Nova_Object*)this, exceptionData);
+	nova_datastruct_list_Nova_ImmutableArray_Nova_super(this, exceptionData);
+	
+	{
+		nova_datastruct_list_Nova_ImmutableArray_8_Nova_this(this, exceptionData, data, count);
 	}
 	
 	return this;
@@ -172,14 +186,17 @@ void nova_datastruct_list_Nova_ImmutableArray_5_Nova_this(nova_datastruct_list_N
 
 void nova_datastruct_list_Nova_ImmutableArray_6_Nova_this(nova_datastruct_list_Nova_ImmutableArray* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_list_Nova_Array* data)
 {
-	nova_datastruct_list_Nova_Array* l1_Nova_clone = (nova_datastruct_list_Nova_Array*)nova_null;
-	
-	l1_Nova_clone = (nova_datastruct_list_Nova_Array*)(nova_datastruct_list_Nova_Array_virtual_Nova_clone((nova_datastruct_list_Nova_Array*)(data), exceptionData));
-	this->nova_datastruct_list_Nova_ImmutableArray_Nova_data = l1_Nova_clone->nova_datastruct_list_Nova_Array_Nova_data;
-	nova_datastruct_list_Nova_ImmutableArray_Mutatorfunc_Nova_count(this, exceptionData, nova_datastruct_list_Nova_Array_Accessorfunc_Nova_count((nova_datastruct_list_Nova_Array*)(l1_Nova_clone), exceptionData));
+	nova_datastruct_list_Nova_ImmutableArray_7_Nova_this(this, exceptionData, data, 1);
 }
 
-void nova_datastruct_list_Nova_ImmutableArray_7_Nova_this(nova_datastruct_list_Nova_ImmutableArray* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_Object** data, int count)
+void nova_datastruct_list_Nova_ImmutableArray_7_Nova_this(nova_datastruct_list_Nova_ImmutableArray* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_list_Nova_Array* data, char clone)
+{
+	data = (nova_datastruct_list_Nova_Array*)(clone ? nova_datastruct_list_Nova_Array_virtual_Nova_clone((nova_datastruct_list_Nova_Array*)(data), exceptionData) : data);
+	this->nova_datastruct_list_Nova_ImmutableArray_Nova_data = data->nova_datastruct_list_Nova_Array_Nova_data;
+	nova_datastruct_list_Nova_ImmutableArray_Mutatorfunc_Nova_count(this, exceptionData, nova_datastruct_list_Nova_Array_Accessorfunc_Nova_count((nova_datastruct_list_Nova_Array*)(data), exceptionData));
+}
+
+void nova_datastruct_list_Nova_ImmutableArray_8_Nova_this(nova_datastruct_list_Nova_ImmutableArray* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_Object** data, int count)
 {
 	this->nova_datastruct_list_Nova_ImmutableArray_Nova_data = data;
 	nova_datastruct_list_Nova_ImmutableArray_Mutatorfunc_Nova_count(this, exceptionData, count);
@@ -229,7 +246,7 @@ nova_datastruct_list_Nova_ImmutableArray* nova_datastruct_list_Nova_ImmutableArr
 		l1_Nova_element = (nova_Nova_Object*)(nova_datastruct_list_Nova_ImmutableArrayIterator_Accessor_Nova_next(nova_local_0, exceptionData));
 		nova_datastruct_list_Nova_Array_0_Nova_add(l1_Nova_array, exceptionData, (nova_Nova_Object*)(nova_Nova_Object*)(nova_datastruct_list_Nova_ImmutableArray_Nova_mapFunc(nova_datastruct_list_Nova_ImmutableArray_ref_Nova_mapFunc, exceptionData, (nova_Nova_Object*)(l1_Nova_element), l1_Nova_i++, this, mapFunc_context)));
 	}
-	return (nova_datastruct_list_Nova_ImmutableArray*)nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, l1_Nova_array);
+	return (nova_datastruct_list_Nova_ImmutableArray*)nova_datastruct_list_Nova_ImmutableArray_3_Nova_construct(0, exceptionData, (nova_datastruct_list_Nova_Array*)(l1_Nova_array), 0);
 }
 
 nova_datastruct_list_Nova_ImmutableArray* nova_datastruct_list_Nova_ImmutableArray_0_Nova_forEach(nova_datastruct_list_Nova_ImmutableArray* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_list_Nova_ImmutableArray_closure6_Nova_func nova_datastruct_list_Nova_ImmutableArray_Nova_func, void* nova_datastruct_list_Nova_ImmutableArray_ref_Nova_func, void* func_context)
@@ -262,7 +279,7 @@ nova_datastruct_list_Nova_ImmutableArray* nova_datastruct_list_Nova_ImmutableArr
 			nova_datastruct_list_Nova_Array_0_Nova_add(l1_Nova_filtered, exceptionData, (nova_Nova_Object*)(l1_Nova_element));
 		}
 	}
-	return nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, l1_Nova_filtered);
+	return nova_datastruct_list_Nova_ImmutableArray_3_Nova_construct(0, exceptionData, (nova_datastruct_list_Nova_Array*)(l1_Nova_filtered), 0);
 }
 
 nova_datastruct_list_Nova_ImmutableArray* nova_datastruct_list_Nova_ImmutableArray_Nova_take(nova_datastruct_list_Nova_ImmutableArray* this, nova_exception_Nova_ExceptionData* exceptionData, int howMany)
@@ -277,7 +294,7 @@ nova_datastruct_list_Nova_ImmutableArray* nova_datastruct_list_Nova_ImmutableArr
 	{
 		nova_datastruct_list_Nova_Array_0_Nova_add(l1_Nova_list, exceptionData, this->nova_datastruct_list_Nova_ImmutableArray_Nova_data[l2_Nova_i]);
 	}
-	return (nova_datastruct_list_Nova_ImmutableArray*)nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, l1_Nova_list);
+	return (nova_datastruct_list_Nova_ImmutableArray*)nova_datastruct_list_Nova_ImmutableArray_3_Nova_construct(0, exceptionData, (nova_datastruct_list_Nova_Array*)(l1_Nova_list), 0);
 }
 
 nova_datastruct_list_Nova_ImmutableArray* nova_datastruct_list_Nova_ImmutableArray_Nova_skip(nova_datastruct_list_Nova_ImmutableArray* this, nova_exception_Nova_ExceptionData* exceptionData, int howMany)
@@ -291,7 +308,7 @@ nova_datastruct_list_Nova_ImmutableArray* nova_datastruct_list_Nova_ImmutableArr
 	{
 		nova_datastruct_list_Nova_Array_0_Nova_add(l1_Nova_list, exceptionData, this->nova_datastruct_list_Nova_ImmutableArray_Nova_data[l2_Nova_i]);
 	}
-	return (nova_datastruct_list_Nova_ImmutableArray*)nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, l1_Nova_list);
+	return (nova_datastruct_list_Nova_ImmutableArray*)nova_datastruct_list_Nova_ImmutableArray_3_Nova_construct(0, exceptionData, (nova_datastruct_list_Nova_Array*)(l1_Nova_list), 0);
 }
 
 long_long nova_datastruct_list_Nova_ImmutableArray_Nova_sumSize(nova_datastruct_list_Nova_ImmutableArray* this, nova_exception_Nova_ExceptionData* exceptionData)
@@ -325,7 +342,7 @@ nova_datastruct_list_Nova_ImmutableArray* nova_datastruct_list_Nova_ImmutableArr
 		l1_Nova_element = (nova_Nova_Object*)(nova_datastruct_list_Nova_ImmutableArrayIterator_Accessor_Nova_next(nova_local_0, exceptionData));
 		l1_Nova_array->nova_datastruct_list_Nova_Array_Nova_data[this->nova_datastruct_list_Nova_ImmutableArray_Nova_count - ++l1_Nova_i] = (nova_Nova_Object*)(l1_Nova_element);
 	}
-	return (nova_datastruct_list_Nova_ImmutableArray*)nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, l1_Nova_array);
+	return (nova_datastruct_list_Nova_ImmutableArray*)nova_datastruct_list_Nova_ImmutableArray_3_Nova_construct(0, exceptionData, (nova_datastruct_list_Nova_Array*)(l1_Nova_array), 0);
 }
 
 nova_datastruct_list_Nova_ImmutableArray* nova_datastruct_list_Nova_ImmutableArray_Nova_toMutable(nova_datastruct_list_Nova_ImmutableArray* this, nova_exception_Nova_ExceptionData* exceptionData)

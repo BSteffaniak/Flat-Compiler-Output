@@ -366,7 +366,7 @@ nova_Nova_Object** nova_datastruct_list_Nova_Array_Nova_cloneData(nova_datastruc
 	nova_Nova_Object** l1_Nova_d = (nova_Nova_Object**)nova_null;
 	
 	l1_Nova_d = (nova_Nova_Object**)((nova_Nova_Object**)NOVA_MALLOC(sizeof(nova_Nova_Object) * nova_datastruct_list_Nova_Array_Accessorfunc_Nova_count(this, exceptionData)));
-	memcpy(l1_Nova_d, this->nova_datastruct_list_Nova_Array_Nova_data, sizeof(l1_Nova_d));
+	memcpy(l1_Nova_d, this->nova_datastruct_list_Nova_Array_Nova_data, sizeof(l1_Nova_d) * nova_datastruct_list_Nova_Array_Accessorfunc_Nova_count(this, exceptionData));
 	return (nova_Nova_Object**)l1_Nova_d;
 }
 
@@ -377,7 +377,7 @@ nova_datastruct_list_Nova_Array* nova_datastruct_list_Nova_Array_Nova_clone(nova
 
 nova_datastruct_list_Nova_Array* nova_datastruct_list_Nova_Array_Nova_toArray(nova_datastruct_list_Nova_Array* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
-	return (nova_datastruct_list_Nova_Array*)nova_datastruct_list_Nova_Array_virtual_Nova_clone((nova_datastruct_list_Nova_Array*)(this), exceptionData);
+	return nova_datastruct_list_Nova_Array_virtual_Nova_clone((nova_datastruct_list_Nova_Array*)(this), exceptionData);
 }
 
 nova_datastruct_list_Nova_Array* nova_datastruct_list_Nova_Array_0_Nova_map(nova_datastruct_list_Nova_Array* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_list_Nova_Array_closure3_Nova_mapFunc nova_datastruct_list_Nova_Array_Nova_mapFunc, void* nova_datastruct_list_Nova_Array_ref_Nova_mapFunc, void* mapFunc_context)

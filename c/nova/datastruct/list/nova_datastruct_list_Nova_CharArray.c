@@ -193,7 +193,7 @@ char* nova_datastruct_list_Nova_CharArray_Nova_cloneData(nova_datastruct_list_No
 		char* l1_Nova_d = (char*)nova_null;
 		
 		l1_Nova_d = NOVA_MALLOC(sizeof(char) * nova_datastruct_list_Nova_Array_Accessorfunc_Nova_count((nova_datastruct_list_Nova_Array*)(this), exceptionData));
-		memcpy(l1_Nova_d, this->nova_datastruct_list_Nova_Array_Nova_data, sizeof(l1_Nova_d));
+		memcpy(l1_Nova_d, this->nova_datastruct_list_Nova_Array_Nova_data, sizeof(l1_Nova_d) * nova_datastruct_list_Nova_Array_Accessorfunc_Nova_count((nova_datastruct_list_Nova_Array*)(this), exceptionData));
 		return l1_Nova_d;
 	}
 	else

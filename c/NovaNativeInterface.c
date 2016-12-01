@@ -230,7 +230,7 @@ nova_env novaEnv = {
 &nova_datastruct_list_Nova_ImmutableArray_0_Nova_construct,
 &nova_datastruct_list_Nova_ImmutableArray_1_Nova_construct,
 &nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct,
-&nova_datastruct_list_Nova_ImmutableArray_3_Nova_construct,
+&nova_datastruct_list_Nova_ImmutableArray_4_Nova_construct,
 },
 
 {

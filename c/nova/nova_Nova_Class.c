@@ -27,6 +27,7 @@
 #include <nova/nova_Nova_System.h>
 #include <nova/nova_Nova_Class.h>
 #include <nova/regex/nova_regex_Nova_Pattern.h>
+#include <nova/datastruct/list/nova_datastruct_list_Nova_ImmutableArray.h>
 #include <nova/NativeObject.h>
 #include <nova/operators/nova_operators_Nova_Equals.h>
 
@@ -84,6 +85,7 @@ char nova_Nova_Class_Nova_isOfTypeInterface(nova_Nova_Class* this, nova_exceptio
 char nova_Nova_Class_Nova_lambda56(nova_Nova_Class* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_Class* _1, Context1* context);
 
 
+nova_datastruct_list_Nova_ImmutableArray* nova_Nova_Class_Nova_ALL;
 void nova_Nova_Class_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData)
 {
 	{
