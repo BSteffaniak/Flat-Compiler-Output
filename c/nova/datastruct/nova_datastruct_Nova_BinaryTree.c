@@ -82,7 +82,7 @@ nova_datastruct_BinaryTree_Extension_VTable nova_datastruct_BinaryTree_Extension
 
 
 
-void nova_datastruct_Nova_BinaryTree_Nova_testLambda56(nova_datastruct_Nova_BinaryTree* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_Nova_Comparable* _1, int _2, nova_datastruct_list_Nova_Array* _3, Context1* context);
+void nova_datastruct_Nova_BinaryTree_Nova_lambda59(nova_datastruct_Nova_BinaryTree* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_Nova_Comparable* _1, int _2, nova_datastruct_list_Nova_Array* _3, Context1* context);
 void nova_datastruct_Nova_BinaryTree_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData)
 {
 	{
@@ -135,15 +135,15 @@ nova_datastruct_Nova_BinaryTree* nova_datastruct_Nova_BinaryTree_Nova_addNode(no
 
 nova_datastruct_Nova_BinaryTree* nova_datastruct_Nova_BinaryTree_Nova_addNodes(nova_datastruct_Nova_BinaryTree* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_list_Nova_Array* data)
 {
-	Context1 contextArg56 = 
+	Context1 contextArg59 = 
 	{
 	};
 	
-	nova_datastruct_list_Nova_List_virtual0_Nova_forEach((nova_datastruct_list_Nova_List*)(data), exceptionData, (nova_datastruct_list_Nova_List_closure3_Nova_func)&nova_datastruct_Nova_BinaryTree_Nova_testLambda56, this, &contextArg56);
+	nova_datastruct_list_Nova_List_virtual0_Nova_forEach((nova_datastruct_list_Nova_List*)(data), exceptionData, (nova_datastruct_list_Nova_List_closure3_Nova_func)&nova_datastruct_Nova_BinaryTree_Nova_lambda59, this, &contextArg59);
 	return this;
 }
 
-void nova_datastruct_Nova_BinaryTree_Nova_testLambda56(nova_datastruct_Nova_BinaryTree* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_Nova_Comparable* _1, int _2, nova_datastruct_list_Nova_Array* _3, Context1* context)
+void nova_datastruct_Nova_BinaryTree_Nova_lambda59(nova_datastruct_Nova_BinaryTree* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_Nova_Comparable* _1, int _2, nova_datastruct_list_Nova_Array* _3, Context1* context)
 {
 	nova_datastruct_Nova_BinaryTree_Nova_addNode(this, exceptionData, _1);
 }

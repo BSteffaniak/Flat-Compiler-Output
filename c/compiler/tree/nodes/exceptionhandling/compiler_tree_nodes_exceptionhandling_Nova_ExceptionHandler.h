@@ -45,9 +45,12 @@ typedef struct compiler_tree_nodes_exceptionhandling_Nova_ExceptionHandler compi
 #include <compiler/tree/nodes/exceptionhandling/compiler_tree_nodes_exceptionhandling_Nova_Try.h>
 #include <compiler/util/compiler_util_Nova_Location.h>
 #include <compiler/tree/nodes/functions/compiler_tree_nodes_functions_Nova_FunctionDeclaration.h>
+#include <compiler/tree/nodes/functions/compiler_tree_nodes_functions_Nova_Instantiation.h>
 #include <compiler/tree/nodes/variables/compiler_tree_nodes_variables_Nova_VariableDeclaration.h>
 #include <compiler/tree/nodes/compiler_tree_nodes_Nova_ClassDeclaration.h>
+#include <compiler/tree/nodes/compiler_tree_nodes_Nova_NodeList.h>
 #include <compiler/tree/nodes/compiler_tree_nodes_Nova_NovaFile.h>
+#include <compiler/tree/nodes/compiler_tree_nodes_Nova_PlaceholderValue.h>
 #include <compiler/tree/nodes/compiler_tree_nodes_Nova_Program.h>
 #include <compiler/tree/nodes/compiler_tree_nodes_Nova_Scope.h>
 #include <compiler/tree/nodes/compiler_tree_nodes_Nova_ValidationResult.h>
@@ -70,16 +73,19 @@ struct compiler_tree_nodes_exceptionhandling_ExceptionHandler_Extension_VTable
 	char (*compiler_tree_nodes_Nova_Node_virtual_Nova_replace)(compiler_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, compiler_tree_nodes_Nova_Node*, compiler_tree_nodes_Nova_Node*);
 	char (*compiler_tree_nodes_Nova_Node_virtual_Nova_validateTypes)(compiler_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*);
 	char (*compiler_tree_nodes_Nova_Node_virtual_Nova_parsePlaceholders)(compiler_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*);
+	char (*compiler_tree_nodes_Nova_Node_virtual_Nova_parsePlaceholderChildren)(compiler_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, compiler_tree_nodes_Nova_NodeList*);
 	nova_Nova_String* (*compiler_tree_nodes_Nova_Node_virtual_Nova_writeAnnotationSeparator)(compiler_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*);
 	nova_Nova_String* (*compiler_tree_nodes_Nova_Node_virtual_Nova_toNova)(compiler_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*);
 	nova_Nova_String* (*compiler_tree_nodes_Nova_Node_virtual_Nova_writeNova)(compiler_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*);
+	compiler_tree_nodes_Nova_Scope* (*compiler_tree_nodes_Nova_Node_virtual_Accessor_Nova_scope)(compiler_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*);
 	compiler_tree_nodes_Nova_Scope* (*compiler_tree_nodes_Nova_Node_virtual_Mutator_Nova_scope)(compiler_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, compiler_tree_nodes_Nova_Scope*);
 	compiler_tree_nodes_Nova_Program* (*compiler_tree_nodes_Nova_Node_virtual_Accessor_Nova_program)(compiler_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*);
+	compiler_tree_nodes_functions_Nova_Instantiation* (*compiler_tree_nodes_Nova_Node_virtual_Accessor_Nova_parentInstantiation)(compiler_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*);
 	compiler_tree_nodes_Nova_NovaFile* (*compiler_tree_nodes_Nova_Node_virtual_Accessor_Nova_parentFile)(compiler_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*);
 	compiler_tree_nodes_functions_Nova_FunctionDeclaration* (*compiler_tree_nodes_Nova_Node_virtual_Accessor_Nova_parentFunction)(compiler_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*);
 	compiler_tree_nodes_exceptionhandling_Nova_Try* (*compiler_tree_nodes_Nova_Node_virtual_Accessor_Nova_parentTry)(compiler_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*);
 	compiler_tree_nodes_Nova_ClassDeclaration* (*compiler_tree_nodes_Nova_Node_virtual_Accessor_Nova_parentClass)(compiler_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*);
-	compiler_tree_nodes_Nova_Scope* (*compiler_tree_nodes_Nova_Node_virtual_Accessor_Nova_scope)(compiler_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*);
+	compiler_tree_nodes_Nova_Node* (*compiler_tree_nodes_Nova_Node_virtual_Accessor_Nova_scopeConsumer)(compiler_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*);
 };
 
 extern compiler_tree_nodes_exceptionhandling_ExceptionHandler_Extension_VTable compiler_tree_nodes_exceptionhandling_ExceptionHandler_Extension_VTable_val;

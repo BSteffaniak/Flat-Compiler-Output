@@ -171,6 +171,8 @@ nova_env novaEnv = {
 &nova_datastruct_list_Nova_Array_Nova_indexOf,
 &nova_datastruct_list_Nova_Array_Nova_replace,
 &nova_datastruct_list_Nova_Array_Nova_swap,
+0,
+0,
 &nova_datastruct_list_Nova_Array_Nova_sumSize,
 &nova_datastruct_list_Nova_Array_Nova_toImmutable,
 0,
@@ -867,6 +869,7 @@ nova_env novaEnv = {
 
 {
 &compiler_tree_nodes_Nova_ClassDeclaration_Nova_findCompatibleFunctions,
+&compiler_tree_nodes_Nova_ClassDeclaration_0_Nova_findVariableDeclaration,
 &compiler_tree_nodes_Nova_ClassDeclaration_Nova_writeHeader,
 &compiler_tree_nodes_Nova_ClassDeclaration_Nova_writeExtension,
 &compiler_tree_nodes_Nova_ClassDeclaration_Nova_writeImplementedInterfaces,
@@ -922,6 +925,7 @@ nova_env novaEnv = {
 0,
 0,
 0,
+0,
 &compiler_tree_nodes_Nova_Node_Nova_writeAnnotations,
 0,
 0,
@@ -956,7 +960,7 @@ nova_env novaEnv = {
 },
 
 {
-&compiler_tree_nodes_Nova_PlaceholderValue_Nova_writeScope,
+&compiler_tree_nodes_Nova_PlaceholderValue_Nova_writeChildren,
 &compiler_tree_nodes_Nova_PlaceholderValue_Nova_construct,
 },
 
@@ -1123,11 +1127,21 @@ nova_env novaEnv = {
 },
 
 {
+&compiler_tree_nodes_functions_Nova_Instantiation_Nova_writeObjectNotation,
 &compiler_tree_nodes_functions_Nova_Instantiation_Nova_construct,
 },
 
 {
 &compiler_tree_nodes_functions_Nova_MutatorFunction_Nova_construct,
+},
+
+{
+&compiler_tree_nodes_functions_Nova_ObjectNotation_Nova_writeChildren,
+&compiler_tree_nodes_functions_Nova_ObjectNotation_Nova_construct,
+},
+
+{
+&compiler_tree_nodes_functions_Nova_ObjectNotationProperty_Nova_construct,
 },
 
 {
@@ -1250,6 +1264,7 @@ nova_env novaEnv = {
 },
 
 {
+&compiler_util_Nova_CompilerStringFunctions_Nova_getStatements,
 &compiler_util_Nova_CompilerStringFunctions_Nova_containsAllWhitespaceAfter,
 &compiler_util_Nova_CompilerStringFunctions_Nova_getArrayAccesses,
 &compiler_util_Nova_CompilerStringFunctions_Nova_substring,

@@ -67,6 +67,7 @@
 #include <compiler/tree/nodes/annotations/compiler_tree_nodes_annotations_Nova_Annotatable.h>
 #include <compiler/tree/nodes/annotations/compiler_tree_nodes_annotations_Nova_Annotation.h>
 #include <compiler/tree/nodes/exceptionhandling/compiler_tree_nodes_exceptionhandling_Nova_Try.h>
+#include <compiler/tree/nodes/compiler_tree_nodes_Nova_NodeList.h>
 #include <compiler/tree/nodes/compiler_tree_nodes_Nova_Program.h>
 #include <compiler/tree/nodes/compiler_tree_nodes_Nova_ValidationResult.h>
 #include <nova/NativeObject.h>
@@ -121,16 +122,19 @@ compiler_tree_nodes_functions_Constructor_Extension_VTable compiler_tree_nodes_f
 	compiler_tree_nodes_Nova_Node_Nova_replace,
 	compiler_tree_nodes_Nova_Value_Nova_validateTypes,
 	compiler_tree_nodes_functions_Nova_BodyFunction_Nova_parsePlaceholders,
+	compiler_tree_nodes_Nova_Node_Nova_parsePlaceholderChildren,
 	compiler_tree_nodes_functions_Nova_FunctionDeclaration_Nova_writeAnnotationSeparator,
 	compiler_tree_nodes_Nova_Node_Nova_toNova,
 	compiler_tree_nodes_functions_Nova_BodyFunction_Nova_writeNova,
+	compiler_tree_nodes_functions_Nova_BodyFunction_Accessorfunc_Nova_scope,
 	compiler_tree_nodes_functions_Nova_BodyFunction_Mutatorfunc_Nova_scope,
 	compiler_tree_nodes_Nova_Node_Accessor_Nova_program,
+	compiler_tree_nodes_Nova_Node_Accessor_Nova_parentInstantiation,
 	compiler_tree_nodes_Nova_Node_Accessor_Nova_parentFile,
 	compiler_tree_nodes_functions_Nova_FunctionDeclaration_Accessor_Nova_parentFunction,
 	compiler_tree_nodes_Nova_Node_Accessor_Nova_parentTry,
 	compiler_tree_nodes_Nova_Node_Accessor_Nova_parentClass,
-	compiler_tree_nodes_functions_Nova_BodyFunction_Accessorfunc_Nova_scope,
+	compiler_tree_nodes_Nova_Node_Accessor_Nova_scopeConsumer,
 	compiler_tree_nodes_functions_Nova_Constructor_static_Nova_parse,
 	compiler_tree_nodes_Nova_Value_Nova_parseType,
 	compiler_tree_nodes_Nova_Value_Nova_writeType,
@@ -204,7 +208,9 @@ compiler_tree_nodes_functions_Nova_Constructor* compiler_tree_nodes_functions_No
 			compiler_tree_nodes_functions_Nova_Constructor* l2_Nova_node = (compiler_tree_nodes_functions_Nova_Constructor*)nova_null;
 			
 			l2_Nova_node = compiler_tree_nodes_functions_Nova_Constructor_Nova_construct(0, exceptionData, parent, location);
-			return (compiler_tree_nodes_functions_Nova_Constructor*)compiler_tree_nodes_functions_Nova_BodyFunction_Nova_cloneTo(l1_Nova_function, exceptionData, (compiler_tree_nodes_functions_Nova_BodyFunction*)(l2_Nova_node));
+			l2_Nova_node = (compiler_tree_nodes_functions_Nova_Constructor*)compiler_tree_nodes_functions_Nova_BodyFunction_Nova_cloneTo(l1_Nova_function, exceptionData, (compiler_tree_nodes_functions_Nova_BodyFunction*)(l2_Nova_node));
+			compiler_tree_nodes_Nova_Value_Mutatorfunc_Nova_type((compiler_tree_nodes_Nova_Value*)(l2_Nova_node), exceptionData, compiler_tree_nodes_Nova_Value_virtual_Accessorfunc_Nova_type((compiler_tree_nodes_Nova_Value*)(compiler_tree_nodes_Nova_Node_virtual_Accessor_Nova_parentClass((compiler_tree_nodes_Nova_Node*)(parent), exceptionData)), exceptionData));
+			return l2_Nova_node;
 		}
 	}
 	return (compiler_tree_nodes_functions_Nova_Constructor*)(nova_Nova_Object*)nova_null;

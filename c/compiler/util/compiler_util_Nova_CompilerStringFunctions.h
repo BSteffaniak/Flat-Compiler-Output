@@ -44,7 +44,9 @@ typedef int (*compiler_util_Nova_CompilerStringFunctions_closure1_Nova_advance)(
 #include <nova/regex/nova_regex_Nova_Regex.h>
 #include <nova/regex/nova_regex_Nova_Match.h>
 #include <nova/datastruct/nova_datastruct_Nova_Tuple2.h>
+#include <nova/datastruct/list/nova_datastruct_list_Nova_Stack.h>
 #include <compiler/error/compiler_error_Nova_UnimplementedOperationException.h>
+#include <compiler/tree/nodes/compiler_tree_nodes_Nova_Node.h>
 #include <compiler/tree/nodes/operations/compiler_tree_nodes_operations_Nova_UnaryOperation.h>
 #include <compiler/tree/nodes/operations/compiler_tree_nodes_operations_Nova_Operator.h>
 #include <compiler/tree/compiler_tree_Nova_StatementIterator.h>
@@ -71,6 +73,7 @@ CCLASS_CLASS
 )
 
 void compiler_util_Nova_CompilerStringFunctions_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData);
+compiler_tree_Nova_StatementIterator* compiler_util_Nova_CompilerStringFunctions_Nova_getStatements(nova_Nova_String* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_list_Nova_Stack* parents);
 char compiler_util_Nova_CompilerStringFunctions_Nova_containsAllWhitespaceAfter(nova_Nova_String* this, nova_exception_Nova_ExceptionData* exceptionData, int index, int direction);
 nova_datastruct_Nova_Tuple2* compiler_util_Nova_CompilerStringFunctions_Nova_getArrayAccesses(nova_Nova_String* this, nova_exception_Nova_ExceptionData* exceptionData);
 nova_Nova_String* compiler_util_Nova_CompilerStringFunctions_Nova_substring(nova_Nova_String* this, nova_exception_Nova_ExceptionData* exceptionData, compiler_util_Nova_Bounds* bounds);
@@ -121,7 +124,6 @@ nova_Nova_String* compiler_util_Nova_CompilerStringFunctions_Nova_formatIndentat
 char compiler_util_Nova_CompilerStringFunctions_Accessor_Nova_isIdentifier(nova_Nova_String* this, nova_exception_Nova_ExceptionData* exceptionData);
 char compiler_util_Nova_CompilerStringFunctions_Accessor_Nova_isNumber(nova_Nova_String* this, nova_exception_Nova_ExceptionData* exceptionData);
 char compiler_util_Nova_CompilerStringFunctions_Accessor_Nova_isBool(nova_Nova_String* this, nova_exception_Nova_ExceptionData* exceptionData);
-compiler_tree_Nova_StatementIterator* compiler_util_Nova_CompilerStringFunctions_Accessor_Nova_statements(nova_Nova_String* this, nova_exception_Nova_ExceptionData* exceptionData);
 void compiler_util_Nova_CompilerStringFunctions_Nova_super(compiler_util_Nova_CompilerStringFunctions* this, nova_exception_Nova_ExceptionData* exceptionData);
 
 #endif

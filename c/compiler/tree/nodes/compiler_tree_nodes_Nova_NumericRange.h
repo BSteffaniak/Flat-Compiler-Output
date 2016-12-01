@@ -41,9 +41,13 @@ typedef struct compiler_tree_nodes_Nova_NumericRange compiler_tree_nodes_Nova_Nu
 #include <compiler/tree/nodes/functions/compiler_tree_nodes_functions_Nova_Instantiation.h>
 #include <compiler/tree/nodes/compiler_tree_nodes_Nova_Node.h>
 #include <compiler/tree/nodes/compiler_tree_nodes_Nova_Value.h>
+#include <compiler/tree/nodes/compiler_tree_nodes_Nova_PlaceholderValue.h>
+#include <compiler/tree/nodes/compiler_tree_nodes_Nova_NodeList.h>
 #include <compiler/tree/nodes/functions/compiler_tree_nodes_functions_Nova_FunctionDeclaration.h>
 #include <compiler/tree/nodes/variables/compiler_tree_nodes_variables_Nova_VariableDeclaration.h>
 #include <compiler/tree/nodes/functions/compiler_tree_nodes_functions_Nova_FunctionCall.h>
+#include <compiler/tree/nodes/functions/compiler_tree_nodes_functions_Nova_ObjectNotation.h>
+#include <compiler/tree/nodes/functions/compiler_tree_nodes_functions_Nova_ObjectNotationProperty.h>
 #include <compiler/tree/nodes/variables/compiler_tree_nodes_variables_Nova_Variable.h>
 #include <compiler/tree/nodes/functions/closures/compiler_tree_nodes_functions_closures_Nova_ClosureDeclaration.h>
 #include <compiler/tree/nodes/compiler_tree_nodes_Nova_ClassDeclaration.h>
@@ -65,7 +69,6 @@ typedef struct compiler_tree_nodes_Nova_NumericRange compiler_tree_nodes_Nova_Nu
 #include <compiler/tree/nodes/compiler_tree_nodes_Nova_Literal.h>
 #include <compiler/tree/nodes/compiler_tree_nodes_Nova_NovaFile.h>
 #include <compiler/tree/nodes/compiler_tree_nodes_Nova_NumericRange.h>
-#include <compiler/tree/nodes/compiler_tree_nodes_Nova_PlaceholderValue.h>
 #include <compiler/tree/nodes/compiler_tree_nodes_Nova_Priority.h>
 #include <compiler/tree/nodes/compiler_tree_nodes_Nova_StaticClassReference.h>
 #include <compiler/error/compiler_error_Nova_UnimplementedOperationException.h>
@@ -86,24 +89,27 @@ struct compiler_tree_nodes_NumericRange_Extension_VTable
 	nova_Interface_VTable itable;
 	nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(compiler_tree_nodes_functions_Nova_FunctionCall*, nova_exception_Nova_ExceptionData*);
 	long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
-	void (*compiler_tree_nodes_Nova_Node_virtual_Nova_addChild)(compiler_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, compiler_tree_nodes_Nova_Node*);
+	void (*compiler_tree_nodes_Nova_Node_virtual_Nova_addChild)(compiler_tree_nodes_functions_Nova_Instantiation*, nova_exception_Nova_ExceptionData*, compiler_tree_nodes_Nova_Node*);
 	compiler_tree_nodes_variables_Nova_VariableDeclaration* (*compiler_tree_nodes_Nova_Node_virtual_Nova_findVariableDeclaration)(compiler_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, int);
-	compiler_tree_nodes_Nova_Node* (*compiler_tree_nodes_Nova_Node_virtual_Nova_parseStatement)(compiler_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, compiler_tree_nodes_Nova_Node*, compiler_util_Nova_Location*, int);
+	compiler_tree_nodes_Nova_Node* (*compiler_tree_nodes_Nova_Node_virtual_Nova_parseStatement)(compiler_tree_nodes_functions_Nova_Instantiation*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, compiler_tree_nodes_Nova_Node*, compiler_util_Nova_Location*, int);
 	compiler_tree_nodes_Nova_Node* (*compiler_tree_nodes_Nova_Node_virtual_Nova_generateTemporaryScopeNode)(compiler_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*);
 	compiler_tree_nodes_functions_Nova_FunctionCall* (*compiler_tree_nodes_Nova_Node_virtual_Nova_cloneTo)(compiler_tree_nodes_functions_Nova_FunctionCall*, nova_exception_Nova_ExceptionData*, compiler_tree_nodes_functions_Nova_FunctionCall*);
 	char (*compiler_tree_nodes_Nova_Node_virtual_Nova_replace)(compiler_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, compiler_tree_nodes_Nova_Node*, compiler_tree_nodes_Nova_Node*);
 	char (*compiler_tree_nodes_Nova_Node_virtual_Nova_validateTypes)(compiler_tree_nodes_Nova_Value*, nova_exception_Nova_ExceptionData*);
 	char (*compiler_tree_nodes_Nova_Node_virtual_Nova_parsePlaceholders)(compiler_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*);
+	char (*compiler_tree_nodes_Nova_Node_virtual_Nova_parsePlaceholderChildren)(compiler_tree_nodes_functions_Nova_Instantiation*, nova_exception_Nova_ExceptionData*, compiler_tree_nodes_Nova_NodeList*);
 	nova_Nova_String* (*compiler_tree_nodes_Nova_Node_virtual_Nova_writeAnnotationSeparator)(compiler_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*);
 	nova_Nova_String* (*compiler_tree_nodes_Nova_Node_virtual_Nova_toNova)(compiler_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*);
 	nova_Nova_String* (*compiler_tree_nodes_Nova_Node_virtual_Nova_writeNova)(compiler_tree_nodes_Nova_NumericRange*, nova_exception_Nova_ExceptionData*);
+	compiler_tree_nodes_Nova_Scope* (*compiler_tree_nodes_Nova_Node_virtual_Accessor_Nova_scope)(compiler_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*);
 	compiler_tree_nodes_Nova_Scope* (*compiler_tree_nodes_Nova_Node_virtual_Mutator_Nova_scope)(compiler_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, compiler_tree_nodes_Nova_Scope*);
 	compiler_tree_nodes_Nova_Program* (*compiler_tree_nodes_Nova_Node_virtual_Accessor_Nova_program)(compiler_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*);
+	compiler_tree_nodes_functions_Nova_Instantiation* (*compiler_tree_nodes_Nova_Node_virtual_Accessor_Nova_parentInstantiation)(compiler_tree_nodes_functions_Nova_Instantiation*, nova_exception_Nova_ExceptionData*);
 	compiler_tree_nodes_Nova_NovaFile* (*compiler_tree_nodes_Nova_Node_virtual_Accessor_Nova_parentFile)(compiler_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*);
 	compiler_tree_nodes_functions_Nova_FunctionDeclaration* (*compiler_tree_nodes_Nova_Node_virtual_Accessor_Nova_parentFunction)(compiler_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*);
 	compiler_tree_nodes_exceptionhandling_Nova_Try* (*compiler_tree_nodes_Nova_Node_virtual_Accessor_Nova_parentTry)(compiler_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*);
 	compiler_tree_nodes_Nova_ClassDeclaration* (*compiler_tree_nodes_Nova_Node_virtual_Accessor_Nova_parentClass)(compiler_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*);
-	compiler_tree_nodes_Nova_Scope* (*compiler_tree_nodes_Nova_Node_virtual_Accessor_Nova_scope)(compiler_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*);
+	compiler_tree_nodes_Nova_Node* (*compiler_tree_nodes_Nova_Node_virtual_Accessor_Nova_scopeConsumer)(compiler_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*);
 	compiler_tree_nodes_Nova_NumericRange* (*compiler_tree_nodes_Nova_Value_virtual0_static_Nova_parse)(compiler_tree_nodes_Nova_NumericRange*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, compiler_tree_nodes_Nova_Node*, compiler_util_Nova_Location*, int);
 	char (*compiler_tree_nodes_Nova_Value_virtual_Nova_parseType)(compiler_tree_nodes_Nova_Value*, nova_exception_Nova_ExceptionData*, nova_Nova_String*);
 	nova_Nova_String* (*compiler_tree_nodes_Nova_Value_virtual_Nova_writeType)(compiler_tree_nodes_Nova_Value*, nova_exception_Nova_ExceptionData*);
@@ -130,6 +136,7 @@ CCLASS_CLASS
 	compiler_tree_nodes_Nova_Accessible* compiler_tree_nodes_variables_Nova_Variable_Nova_accessedNode;
 	compiler_tree_nodes_variables_Nova_VariableDeclaration* compiler_tree_nodes_variables_Nova_Variable_Nova_declaration;
 	compiler_tree_nodes_functions_Nova_FunctionArgumentList* compiler_tree_nodes_functions_Nova_FunctionCall_Nova_argumentList;
+	compiler_tree_nodes_functions_Nova_ObjectNotation* compiler_tree_nodes_functions_Nova_Instantiation_Nova_objectNotation;
 )
 
 void compiler_tree_nodes_Nova_NumericRange_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData);

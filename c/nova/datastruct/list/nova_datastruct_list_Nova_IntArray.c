@@ -76,6 +76,8 @@ nova_datastruct_list_IntArray_Extension_VTable nova_datastruct_list_IntArray_Ext
 	nova_datastruct_list_Nova_Array_Nova_toString,
 	nova_Nova_Object_Accessor_Nova_hashCodeLong,
 	nova_datastruct_list_Nova_Array_Nova_addUnique,
+	nova_datastruct_list_Nova_Array_Nova_cloneData,
+	nova_datastruct_list_Nova_IntArray_Nova_clone,
 	nova_datastruct_list_Nova_IntArray_Nova_get,
 	nova_datastruct_list_Nova_IntArray_Nova_set,
 	nova_datastruct_list_Nova_IntArray_Accessorfunc_Nova_first,
@@ -162,6 +164,11 @@ void nova_datastruct_list_Nova_IntArray_5_Nova_this(nova_datastruct_list_Nova_In
 void nova_datastruct_list_Nova_IntArray_6_Nova_this(nova_datastruct_list_Nova_IntArray* this, nova_exception_Nova_ExceptionData* exceptionData, int* data, int count)
 {
 	nova_datastruct_list_Nova_Array_6_Nova_this((nova_datastruct_list_Nova_Array*)(this), exceptionData, (nova_Nova_Object**)(data), count);
+}
+
+nova_datastruct_list_Nova_IntArray* nova_datastruct_list_Nova_IntArray_Nova_clone(nova_datastruct_list_Nova_IntArray* this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+	return nova_datastruct_list_Nova_IntArray_2_Nova_construct(0, exceptionData, (int*)(nova_datastruct_list_Nova_Array_virtual_Nova_cloneData((nova_datastruct_list_Nova_Array*)(this), exceptionData)), nova_datastruct_list_Nova_Array_Accessorfunc_Nova_count((nova_datastruct_list_Nova_Array*)(this), exceptionData));
 }
 
 nova_datastruct_list_Nova_Array* nova_datastruct_list_Nova_IntArray_Nova_map(nova_datastruct_list_Nova_IntArray* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_list_Nova_IntArray_closure3_Nova_mapFunc nova_datastruct_list_Nova_IntArray_Nova_mapFunc, void* nova_datastruct_list_Nova_IntArray_ref_Nova_mapFunc, void* mapFunc_context)

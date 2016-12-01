@@ -29,6 +29,8 @@
 #include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_NoSuchElementException.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_Iterator.h>
+#include <nova/datastruct/list/nova_datastruct_list_Nova_Stack.h>
+#include <compiler/tree/nodes/compiler_tree_nodes_Nova_Node.h>
 #include <nova/NativeObject.h>
 #include <nova/operators/nova_operators_Nova_Equals.h>
 
@@ -76,6 +78,11 @@ compiler_tree_StatementIterator_Extension_VTable compiler_tree_StatementIterator
 };
 
 
+CCLASS_PRIVATE
+(
+	nova_datastruct_list_Nova_Stack* compiler_tree_Nova_StatementIterator_Nova_parents;
+	
+)
 
 void compiler_tree_Nova_StatementIterator_Nova_updateScopeProperties(compiler_tree_Nova_StatementIterator* this, nova_exception_Nova_ExceptionData* exceptionData);
 nova_datastruct_list_Nova_CharArray* generated10(compiler_tree_Nova_StatementIterator* this, nova_exception_Nova_ExceptionData* exceptionData);
@@ -89,15 +96,15 @@ void compiler_tree_Nova_StatementIterator_Nova_init_static(nova_exception_Nova_E
 	}
 }
 
-compiler_tree_Nova_StatementIterator* compiler_tree_Nova_StatementIterator_Nova_construct(compiler_tree_Nova_StatementIterator* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* source)
+compiler_tree_Nova_StatementIterator* compiler_tree_Nova_StatementIterator_Nova_construct(compiler_tree_Nova_StatementIterator* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* source, nova_datastruct_list_Nova_Stack* parents)
 {
-	CCLASS_NEW(compiler_tree_Nova_StatementIterator, this,);
+	CCLASS_NEW(compiler_tree_Nova_StatementIterator, this);
 	this->vtable = &compiler_tree_StatementIterator_Extension_VTable_val;
 	nova_Nova_Object_Nova_super((nova_Nova_Object*)this, exceptionData);
 	compiler_tree_Nova_StatementIterator_Nova_super(this, exceptionData);
 	
 	{
-		compiler_tree_Nova_StatementIterator_Nova_this(this, exceptionData, source);
+		compiler_tree_Nova_StatementIterator_Nova_this(this, exceptionData, source, parents);
 	}
 	
 	return this;
@@ -110,6 +117,8 @@ void compiler_tree_Nova_StatementIterator_Nova_destroy(compiler_tree_Nova_Statem
 		return;
 	}
 	
+	nova_datastruct_list_Nova_Stack_Nova_destroy(&(*this)->prv->compiler_tree_Nova_StatementIterator_Nova_parents, exceptionData);
+	NOVA_FREE((*this)->prv);
 	nova_Nova_String_Nova_destroy(&(*this)->compiler_tree_Nova_StatementIterator_Nova_source, exceptionData);
 	
 	
@@ -154,9 +163,10 @@ else
 	this->compiler_tree_Nova_StatementIterator_Nova_position++;
 }}
 
-void compiler_tree_Nova_StatementIterator_Nova_this(compiler_tree_Nova_StatementIterator* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* source)
+void compiler_tree_Nova_StatementIterator_Nova_this(compiler_tree_Nova_StatementIterator* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* source, nova_datastruct_list_Nova_Stack* parents)
 {
 	this->compiler_tree_Nova_StatementIterator_Nova_source = nova_Nova_String_Nova_trim(source, exceptionData, (intptr_t)nova_null, (intptr_t)nova_null, 0);
+	this->prv->compiler_tree_Nova_StatementIterator_Nova_parents = parents;
 	compiler_tree_Nova_StatementIterator_Nova_reset(this, exceptionData);
 }
 
@@ -224,5 +234,6 @@ void compiler_tree_Nova_StatementIterator_Nova_super(compiler_tree_Nova_Statemen
 	this->compiler_tree_Nova_StatementIterator_Nova_endsScope = 0;
 	this->compiler_tree_Nova_StatementIterator_Nova_scopesEnded = 0;
 	this->compiler_tree_Nova_StatementIterator_Nova_position = 0;
+	this->prv->compiler_tree_Nova_StatementIterator_Nova_parents = (nova_datastruct_list_Nova_Stack*)nova_null;
 }
 

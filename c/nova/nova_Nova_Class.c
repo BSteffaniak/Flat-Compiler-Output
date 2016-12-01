@@ -81,7 +81,7 @@ nova_Class_Extension_VTable nova_Class_Extension_VTable_val =
 
 char nova_Nova_Class_Nova_isOfTypeClass(nova_Nova_Class* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_Class* other);
 char nova_Nova_Class_Nova_isOfTypeInterface(nova_Nova_Class* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_Class* other);
-char nova_Nova_Class_Nova_testLambda53(nova_Nova_Class* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_Class* _1, Context1* context);
+char nova_Nova_Class_Nova_lambda56(nova_Nova_Class* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_Class* _1, Context1* context);
 
 
 void nova_Nova_Class_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData)
@@ -153,12 +153,12 @@ char nova_Nova_Class_Nova_isOfTypeInterface(nova_Nova_Class* this, nova_exceptio
 	l1_Nova_current = this;
 	while (l1_Nova_current != (nova_Nova_Class*)nova_null)
 	{
-		Context1 contextArg53 = 
+		Context1 contextArg56 = 
 		{
 			&other,
 		};
 		
-		if (nova_datastruct_list_Nova_List_virtual0_Nova_any((nova_datastruct_list_Nova_List*)(l1_Nova_current->nova_Nova_Class_Nova_interfaces), exceptionData, (nova_datastruct_list_Nova_List_closure9_Nova_anyFunc)&nova_Nova_Class_Nova_testLambda53, this, &contextArg53))
+		if (nova_datastruct_list_Nova_List_virtual0_Nova_any((nova_datastruct_list_Nova_List*)(l1_Nova_current->nova_Nova_Class_Nova_interfaces), exceptionData, (nova_datastruct_list_Nova_List_closure9_Nova_anyFunc)&nova_Nova_Class_Nova_lambda56, this, &contextArg56))
 		{
 			return 1;
 		}
@@ -172,7 +172,7 @@ nova_Nova_String* nova_Nova_Class_Nova_toString(nova_Nova_Class* this, nova_exce
 	return nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)(nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("Class \""))), exceptionData, nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)((this->nova_Nova_Class_Nova_location)), exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("\""))));
 }
 
-char nova_Nova_Class_Nova_testLambda53(nova_Nova_Class* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_Class* _1, Context1* context)
+char nova_Nova_Class_Nova_lambda56(nova_Nova_Class* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_Class* _1, Context1* context)
 {
 	return _1 == (*context->nova_Nova_Class_Nova_other);
 }

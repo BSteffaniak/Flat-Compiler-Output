@@ -79,7 +79,7 @@ nova_time_Timer_Extension_VTable nova_time_Timer_Extension_VTable_val =
 
 
 
-void nova_time_Nova_Timer_static_Nova_testLambda124(nova_time_Nova_Timer* this, nova_exception_Nova_ExceptionData* exceptionData, nova_time_Nova_Timer* _1, Context1* context);
+void nova_time_Nova_Timer_static_Nova_lambda126(nova_time_Nova_Timer* this, nova_exception_Nova_ExceptionData* exceptionData, nova_time_Nova_Timer* _1, Context1* context);
 
 void nova_time_Nova_Timer_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData)
 {
@@ -150,7 +150,7 @@ nova_time_Nova_Timer* nova_time_Nova_Timer_static_Nova_time(nova_time_Nova_Timer
 	{
 	};
 	
-	nova_time_Nova_Timer_Nova_callback = (nova_time_Nova_Timer_closure6_Nova_callback)(nova_time_Nova_Timer_Nova_callback == 0 ? (nova_time_Nova_Timer_closure6_Nova_callback)&nova_time_Nova_Timer_static_Nova_testLambda124 : nova_time_Nova_Timer_Nova_callback);
+	nova_time_Nova_Timer_Nova_callback = (nova_time_Nova_Timer_closure6_Nova_callback)(nova_time_Nova_Timer_Nova_callback == 0 ? (nova_time_Nova_Timer_closure6_Nova_callback)&nova_time_Nova_Timer_static_Nova_lambda126 : nova_time_Nova_Timer_Nova_callback);
 	nova_time_Nova_Timer_ref_Nova_callback = (void*)(nova_time_Nova_Timer_ref_Nova_callback == 0 ? (void*)nova_null : nova_time_Nova_Timer_ref_Nova_callback);
 	callback_context = (void*)(callback_context == 0 ? (void*)&contextArg150 : callback_context);
 	l1_Nova_t = nova_time_Nova_Timer_Nova_start(nova_time_Nova_Timer_Nova_construct(0, exceptionData), exceptionData);
@@ -159,7 +159,7 @@ nova_time_Nova_Timer* nova_time_Nova_Timer_static_Nova_time(nova_time_Nova_Timer
 	return l1_Nova_t;
 }
 
-void nova_time_Nova_Timer_static_Nova_testLambda124(nova_time_Nova_Timer* this, nova_exception_Nova_ExceptionData* exceptionData, nova_time_Nova_Timer* _1, Context1* context)
+void nova_time_Nova_Timer_static_Nova_lambda126(nova_time_Nova_Timer* this, nova_exception_Nova_ExceptionData* exceptionData, nova_time_Nova_Timer* _1, Context1* context)
 {
 }
 

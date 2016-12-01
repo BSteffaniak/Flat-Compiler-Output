@@ -27,6 +27,7 @@
 #include <nova/nova_Nova_System.h>
 #include <nova/nova_Nova_Class.h>
 #include <nova/regex/nova_regex_Nova_Pattern.h>
+#include <compiler/compiler_Nova_InvalidParseException.h>
 #include <compiler/util/compiler_util_Nova_Location.h>
 #include <compiler/tree/nodes/compiler_tree_nodes_Nova_Node.h>
 #include <compiler/tree/nodes/compiler_tree_nodes_Nova_Type.h>
@@ -36,7 +37,6 @@
 #include <compiler/tree/nodes/operations/compiler_tree_nodes_operations_Nova_Assignable.h>
 #include <compiler/tree/nodes/variables/compiler_tree_nodes_variables_Nova_VariableDeclaration.h>
 #include <compiler/compiler_Nova_SyntaxMessage.h>
-#include <compiler/compiler_Nova_InvalidParseException.h>
 #include <compiler/tree/nodes/arrays/compiler_tree_nodes_arrays_Nova_ArrayAccess.h>
 #include <compiler/tree/nodes/operations/compiler_tree_nodes_operations_Nova_Operation.h>
 #include <compiler/tree/nodes/operations/compiler_tree_nodes_operations_Nova_UnaryOperation.h>
@@ -59,6 +59,7 @@
 #include <compiler/tree/nodes/annotations/compiler_tree_nodes_annotations_Nova_Annotation.h>
 #include <compiler/tree/nodes/exceptionhandling/compiler_tree_nodes_exceptionhandling_Nova_Try.h>
 #include <compiler/tree/nodes/functions/compiler_tree_nodes_functions_Nova_FunctionDeclaration.h>
+#include <compiler/tree/nodes/compiler_tree_nodes_Nova_NodeList.h>
 #include <compiler/tree/nodes/compiler_tree_nodes_Nova_Program.h>
 #include <compiler/tree/nodes/compiler_tree_nodes_Nova_Scope.h>
 #include <compiler/tree/nodes/compiler_tree_nodes_Nova_ValidationResult.h>
@@ -114,16 +115,19 @@ compiler_tree_nodes_variables_Variable_Extension_VTable compiler_tree_nodes_vari
 	compiler_tree_nodes_Nova_Node_Nova_replace,
 	compiler_tree_nodes_Nova_Value_Nova_validateTypes,
 	compiler_tree_nodes_Nova_Node_Nova_parsePlaceholders,
+	compiler_tree_nodes_Nova_Node_Nova_parsePlaceholderChildren,
 	compiler_tree_nodes_Nova_Node_Nova_writeAnnotationSeparator,
 	compiler_tree_nodes_Nova_Node_Nova_toNova,
 	compiler_tree_nodes_variables_Nova_Variable_Nova_writeNova,
+	compiler_tree_nodes_Nova_Node_Accessor_Nova_scope,
 	compiler_tree_nodes_Nova_Node_Mutator_Nova_scope,
 	compiler_tree_nodes_Nova_Node_Accessor_Nova_program,
+	compiler_tree_nodes_Nova_Node_Accessor_Nova_parentInstantiation,
 	compiler_tree_nodes_Nova_Node_Accessor_Nova_parentFile,
 	compiler_tree_nodes_Nova_Node_Accessor_Nova_parentFunction,
 	compiler_tree_nodes_Nova_Node_Accessor_Nova_parentTry,
 	compiler_tree_nodes_Nova_Node_Accessor_Nova_parentClass,
-	compiler_tree_nodes_Nova_Node_Accessor_Nova_scope,
+	compiler_tree_nodes_Nova_Node_Accessor_Nova_scopeConsumer,
 	compiler_tree_nodes_Nova_Identifier_static_Nova_parse,
 	compiler_tree_nodes_Nova_Value_Nova_parseType,
 	compiler_tree_nodes_Nova_Value_Nova_writeType,
@@ -178,6 +182,26 @@ void compiler_tree_nodes_variables_Nova_Variable_Nova_this(compiler_tree_nodes_v
 	declaration = (compiler_tree_nodes_variables_Nova_VariableDeclaration*)(declaration == 0 ? (nova_Nova_Object*)(nova_Nova_Object*)nova_null : (nova_Nova_Object*)declaration);
 	compiler_tree_nodes_Nova_Identifier_Nova_this((compiler_tree_nodes_Nova_Identifier*)(this), exceptionData, parent, location);
 	this->compiler_tree_nodes_variables_Nova_Variable_Nova_declaration = declaration;
+}
+
+compiler_tree_nodes_variables_Nova_Variable* compiler_tree_nodes_variables_Nova_Variable_static_Nova_findVariable(compiler_tree_nodes_variables_Nova_Variable* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* name, compiler_tree_nodes_Nova_Node* parent, compiler_util_Nova_Location* location)
+{
+	location = (compiler_util_Nova_Location*)(location == 0 ? (nova_Nova_Object*)parent->compiler_tree_nodes_Nova_Node_Nova_location : (nova_Nova_Object*)location);
+	if (compiler_util_Nova_CompilerStringFunctions_Accessor_Nova_isIdentifier(name, exceptionData))
+	{
+		compiler_tree_nodes_variables_Nova_VariableDeclaration* l1_Nova_declaration = (compiler_tree_nodes_variables_Nova_VariableDeclaration*)nova_null;
+		
+		l1_Nova_declaration = (compiler_tree_nodes_variables_Nova_VariableDeclaration*)(compiler_tree_nodes_Nova_Node_virtual_Nova_findVariableDeclaration((compiler_tree_nodes_Nova_Node*)(parent), exceptionData, name, (intptr_t)nova_null));
+		if (l1_Nova_declaration != (compiler_tree_nodes_variables_Nova_VariableDeclaration*)nova_null)
+		{
+			return compiler_tree_nodes_variables_Nova_Variable_Nova_construct(0, exceptionData, parent, location, l1_Nova_declaration);
+		}
+		else
+		{
+			THROW(compiler_Nova_InvalidParseException_Nova_construct(0, exceptionData, nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)(nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("Could not find declaration for identifier '"))), exceptionData, nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)((name)), exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("'")))), 0), 1);
+		}
+	}
+	return (compiler_tree_nodes_variables_Nova_Variable*)(nova_Nova_Object*)nova_null;
 }
 
 void compiler_tree_nodes_variables_Nova_Variable_Nova_onAssigned(compiler_tree_nodes_variables_Nova_Variable* this, nova_exception_Nova_ExceptionData* exceptionData, compiler_tree_nodes_Nova_Value* value)
