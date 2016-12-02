@@ -31,6 +31,7 @@
 #include <nova/io/nova_io_Nova_FileWriter.h>
 #include <nova/io/nova_io_Nova_FileReader.h>
 #include <nova/time/nova_time_Nova_Time.h>
+#include <nova/time/nova_time_Nova_CumulativeTimer.h>
 #include <nova/process/nova_process_Nova_Process.h>
 #include <nova/NativeSystem.h>
 #include <nova/NativeObject.h>
@@ -78,15 +79,18 @@ nova_System_Extension_VTable nova_System_Extension_VTable_val =
 		0,
 		0,
 		0,
+		0,
 	},
 	nova_Nova_Object_Nova_toString,
 	nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
+nova_time_Nova_CumulativeTimer* nova_Nova_System_Nova_overheadTimer;
 void nova_Nova_System_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData)
 {
 	{
+		nova_Nova_System_Nova_overheadTimer = nova_time_Nova_CumulativeTimer_Nova_construct(0, exceptionData);
 	}
 }
 

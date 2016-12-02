@@ -54,11 +54,13 @@
 #include <compiler/tree/nodes/compiler_tree_nodes_Nova_PlaceholderValue.h>
 #include <compiler/tree/nodes/compiler_tree_nodes_Nova_Priority.h>
 #include <compiler/tree/nodes/compiler_tree_nodes_Nova_StaticClassReference.h>
+#include <compiler/compiler_Nova_SyntaxErrorException.h>
 #include <compiler/error/compiler_error_Nova_UnimplementedOperationException.h>
 #include <compiler/tree/nodes/annotations/compiler_tree_nodes_annotations_Nova_Annotatable.h>
 #include <compiler/tree/nodes/annotations/compiler_tree_nodes_annotations_Nova_Annotation.h>
 #include <compiler/tree/nodes/exceptionhandling/compiler_tree_nodes_exceptionhandling_Nova_Try.h>
 #include <compiler/tree/nodes/functions/compiler_tree_nodes_functions_Nova_FunctionDeclaration.h>
+#include <compiler/tree/nodes/functions/closures/compiler_tree_nodes_functions_closures_Nova_LambdaExpression.h>
 #include <compiler/tree/nodes/variables/compiler_tree_nodes_variables_Nova_VariableDeclaration.h>
 #include <compiler/tree/nodes/compiler_tree_nodes_Nova_NodeList.h>
 #include <compiler/tree/nodes/compiler_tree_nodes_Nova_Program.h>
@@ -109,6 +111,7 @@ compiler_tree_nodes_StaticClassReference_Extension_VTable compiler_tree_nodes_St
 		0,
 		0,
 		0,
+		0,
 	},
 	compiler_tree_nodes_Nova_Node_Nova_toString,
 	nova_Nova_Object_Accessor_Nova_hashCodeLong,
@@ -126,9 +129,12 @@ compiler_tree_nodes_StaticClassReference_Extension_VTable compiler_tree_nodes_St
 	compiler_tree_nodes_Nova_StaticClassReference_Nova_writeNova,
 	compiler_tree_nodes_Nova_Node_Accessor_Nova_scope,
 	compiler_tree_nodes_Nova_Node_Mutator_Nova_scope,
+	compiler_tree_nodes_Nova_Node_Accessor_Nova_index,
 	compiler_tree_nodes_Nova_Node_Accessor_Nova_program,
 	compiler_tree_nodes_Nova_Node_Accessor_Nova_parentInstantiation,
+	compiler_tree_nodes_Nova_Node_Accessor_Nova_parentLambda,
 	compiler_tree_nodes_Nova_Node_Accessor_Nova_parentFile,
+	compiler_tree_nodes_Nova_Node_Accessor_Nova_parentFunctionCall,
 	compiler_tree_nodes_Nova_Node_Accessor_Nova_parentFunction,
 	compiler_tree_nodes_Nova_Node_Accessor_Nova_parentTry,
 	compiler_tree_nodes_Nova_Node_Accessor_Nova_parentClass,
@@ -142,7 +148,7 @@ compiler_tree_nodes_StaticClassReference_Extension_VTable compiler_tree_nodes_St
 
 
 
-char compiler_tree_nodes_Nova_StaticClassReference_static_Nova_lambda41(compiler_tree_nodes_Nova_StaticClassReference* this, nova_exception_Nova_ExceptionData* exceptionData, compiler_tree_nodes_Nova_Import* _1, Context1* context);
+char compiler_tree_nodes_Nova_StaticClassReference_static_Nova_lambda42(compiler_tree_nodes_Nova_StaticClassReference* this, nova_exception_Nova_ExceptionData* exceptionData, compiler_tree_nodes_Nova_Import* _1, Context1* context);
 void compiler_tree_nodes_Nova_StaticClassReference_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData)
 {
 	{
@@ -191,7 +197,7 @@ void compiler_tree_nodes_Nova_StaticClassReference_Nova_this(compiler_tree_nodes
 
 compiler_tree_nodes_Nova_StaticClassReference* compiler_tree_nodes_Nova_StaticClassReference_static_Nova_parse(compiler_tree_nodes_Nova_StaticClassReference* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* input, compiler_tree_nodes_Nova_Node* parent, compiler_util_Nova_Location* location, int require)
 {
-	Context1 contextArg41 = 
+	Context1 contextArg42 = 
 	{
 		&input,
 	};
@@ -199,7 +205,7 @@ compiler_tree_nodes_Nova_StaticClassReference* compiler_tree_nodes_Nova_StaticCl
 	parent = (compiler_tree_nodes_Nova_Node*)(parent == 0 ? (nova_Nova_Object*)(nova_Nova_Object*)nova_null : (nova_Nova_Object*)parent);
 	location = (compiler_util_Nova_Location*)(location == 0 ? (nova_Nova_Object*)compiler_util_Nova_Location_Nova_INVALID : (nova_Nova_Object*)location);
 	require = (int)(require == (intptr_t)nova_null ? 1 : require);
-	return (compiler_tree_nodes_Nova_StaticClassReference*)(nova_datastruct_list_Nova_List_virtual0_Nova_any((nova_datastruct_list_Nova_List*)(compiler_tree_nodes_Nova_NovaFile_Accessor_Nova_imports(compiler_tree_nodes_Nova_Node_virtual_Accessor_Nova_parentFile((compiler_tree_nodes_Nova_Node*)(parent), exceptionData), exceptionData)), exceptionData, (nova_datastruct_list_Nova_List_closure9_Nova_anyFunc)&compiler_tree_nodes_Nova_StaticClassReference_static_Nova_lambda41, nova_null, &contextArg41) ? (nova_Nova_Object*)compiler_tree_nodes_Nova_StaticClassReference_Nova_construct(0, exceptionData, parent, location, input) : (nova_Nova_Object*)nova_null);
+	return (compiler_tree_nodes_Nova_StaticClassReference*)(nova_datastruct_list_Nova_List_virtual0_Nova_any((nova_datastruct_list_Nova_List*)(compiler_tree_nodes_Nova_NovaFile_Accessor_Nova_imports(compiler_tree_nodes_Nova_Node_virtual_Accessor_Nova_parentFile((compiler_tree_nodes_Nova_Node*)(parent), exceptionData), exceptionData)), exceptionData, (nova_datastruct_list_Nova_List_closure9_Nova_anyFunc)&compiler_tree_nodes_Nova_StaticClassReference_static_Nova_lambda42, nova_null, &contextArg42) ? (nova_Nova_Object*)compiler_tree_nodes_Nova_StaticClassReference_Nova_construct(0, exceptionData, parent, location, input) : (nova_Nova_Object*)nova_null);
 }
 
 nova_Nova_String* compiler_tree_nodes_Nova_StaticClassReference_Nova_writeNova(compiler_tree_nodes_Nova_StaticClassReference* this, nova_exception_Nova_ExceptionData* exceptionData)
@@ -207,7 +213,7 @@ nova_Nova_String* compiler_tree_nodes_Nova_StaticClassReference_Nova_writeNova(c
 	return nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)(compiler_tree_nodes_Nova_Identifier_Nova_writeNova(((compiler_tree_nodes_Nova_Identifier*)this), exceptionData)), exceptionData, nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)(compiler_tree_nodes_Nova_Value_Nova_writeArrayAccess((compiler_tree_nodes_Nova_Value*)(this), exceptionData)), exceptionData, compiler_tree_nodes_Nova_Accessible_Nova_writeAccessedNodes((compiler_tree_nodes_Nova_Accessible*)(this), exceptionData)));
 }
 
-char compiler_tree_nodes_Nova_StaticClassReference_static_Nova_lambda41(compiler_tree_nodes_Nova_StaticClassReference* this, nova_exception_Nova_ExceptionData* exceptionData, compiler_tree_nodes_Nova_Import* _1, Context1* context)
+char compiler_tree_nodes_Nova_StaticClassReference_static_Nova_lambda42(compiler_tree_nodes_Nova_StaticClassReference* this, nova_exception_Nova_ExceptionData* exceptionData, compiler_tree_nodes_Nova_Import* _1, Context1* context)
 {
 	return nova_Nova_String_Nova_equals(compiler_tree_nodes_Nova_Import_Accessor_Nova_className(_1, exceptionData), exceptionData, (*context->compiler_tree_nodes_Nova_StaticClassReference_Nova_input));
 }

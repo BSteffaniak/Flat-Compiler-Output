@@ -55,11 +55,13 @@
 #include <compiler/tree/nodes/compiler_tree_nodes_Nova_Priority.h>
 #include <compiler/tree/nodes/compiler_tree_nodes_Nova_StaticClassReference.h>
 #include <compiler/tree/nodes/compiler_tree_nodes_Nova_Type.h>
+#include <compiler/compiler_Nova_SyntaxErrorException.h>
 #include <compiler/error/compiler_error_Nova_UnimplementedOperationException.h>
 #include <compiler/tree/nodes/annotations/compiler_tree_nodes_annotations_Nova_Annotatable.h>
 #include <compiler/tree/nodes/annotations/compiler_tree_nodes_annotations_Nova_Annotation.h>
 #include <compiler/tree/nodes/exceptionhandling/compiler_tree_nodes_exceptionhandling_Nova_Try.h>
 #include <compiler/tree/nodes/functions/compiler_tree_nodes_functions_Nova_FunctionDeclaration.h>
+#include <compiler/tree/nodes/functions/closures/compiler_tree_nodes_functions_closures_Nova_LambdaExpression.h>
 #include <compiler/tree/nodes/variables/compiler_tree_nodes_variables_Nova_VariableDeclaration.h>
 #include <compiler/tree/nodes/compiler_tree_nodes_Nova_NodeList.h>
 #include <compiler/tree/nodes/compiler_tree_nodes_Nova_Program.h>
@@ -119,6 +121,7 @@ compiler_tree_nodes_operations_Operation_Extension_VTable compiler_tree_nodes_op
 		0,
 		0,
 		0,
+		0,
 	},
 	compiler_tree_nodes_Nova_Node_Nova_toString,
 	nova_Nova_Object_Accessor_Nova_hashCodeLong,
@@ -136,9 +139,12 @@ compiler_tree_nodes_operations_Operation_Extension_VTable compiler_tree_nodes_op
 	compiler_tree_nodes_operations_Nova_Operation_Nova_writeNova,
 	compiler_tree_nodes_Nova_Node_Accessor_Nova_scope,
 	compiler_tree_nodes_Nova_Node_Mutator_Nova_scope,
+	compiler_tree_nodes_Nova_Node_Accessor_Nova_index,
 	compiler_tree_nodes_Nova_Node_Accessor_Nova_program,
 	compiler_tree_nodes_Nova_Node_Accessor_Nova_parentInstantiation,
+	compiler_tree_nodes_Nova_Node_Accessor_Nova_parentLambda,
 	compiler_tree_nodes_Nova_Node_Accessor_Nova_parentFile,
+	compiler_tree_nodes_Nova_Node_Accessor_Nova_parentFunctionCall,
 	compiler_tree_nodes_Nova_Node_Accessor_Nova_parentFunction,
 	compiler_tree_nodes_Nova_Node_Accessor_Nova_parentTry,
 	compiler_tree_nodes_Nova_Node_Accessor_Nova_parentClass,
@@ -155,9 +161,9 @@ compiler_tree_nodes_operations_Operation_Extension_VTable compiler_tree_nodes_op
 nova_datastruct_list_Nova_IntArray* compiler_tree_nodes_operations_Nova_Operation_Nova_parseOperators(compiler_tree_nodes_operations_Nova_Operation* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* input, nova_datastruct_list_Nova_IntArray* matches);
 char compiler_tree_nodes_operations_Nova_Operation_0_Nova_parseOperands(compiler_tree_nodes_operations_Nova_Operation* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_list_Nova_Array* operands);
 char compiler_tree_nodes_operations_Nova_Operation_1_Nova_parseOperands(compiler_tree_nodes_operations_Nova_Operation* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* input, nova_datastruct_list_Nova_IntArray* matches);
-void compiler_tree_nodes_operations_Nova_Operation_Nova_lambda50(compiler_tree_nodes_operations_Nova_Operation* this, nova_exception_Nova_ExceptionData* exceptionData, int start, int _2, nova_datastruct_list_Nova_IntArray* _3, Context1* context);
-char compiler_tree_nodes_operations_Nova_Operation_Nova_lambda51(compiler_tree_nodes_operations_Nova_Operation* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* _1, int _2, nova_datastruct_list_Nova_List* _3, Context2* context);
-char compiler_tree_nodes_operations_Nova_Operation_Nova_lambda122(compiler_tree_nodes_operations_Nova_Operation* this, nova_exception_Nova_ExceptionData* exceptionData, int start, int _2, nova_datastruct_list_Nova_IntArray* _3, Context3* context);
+void compiler_tree_nodes_operations_Nova_Operation_Nova_lambda51(compiler_tree_nodes_operations_Nova_Operation* this, nova_exception_Nova_ExceptionData* exceptionData, int start, int _2, nova_datastruct_list_Nova_IntArray* _3, Context1* context);
+char compiler_tree_nodes_operations_Nova_Operation_Nova_lambda52(compiler_tree_nodes_operations_Nova_Operation* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* _1, int _2, nova_datastruct_list_Nova_List* _3, Context2* context);
+char compiler_tree_nodes_operations_Nova_Operation_Nova_lambda126(compiler_tree_nodes_operations_Nova_Operation* this, nova_exception_Nova_ExceptionData* exceptionData, int start, int _2, nova_datastruct_list_Nova_IntArray* _3, Context3* context);
 void compiler_tree_nodes_operations_Nova_Operation_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData)
 {
 	{
@@ -234,28 +240,28 @@ compiler_tree_nodes_operations_Nova_Operation* compiler_tree_nodes_operations_No
 
 nova_datastruct_list_Nova_IntArray* compiler_tree_nodes_operations_Nova_Operation_Nova_parseOperators(compiler_tree_nodes_operations_Nova_Operation* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* input, nova_datastruct_list_Nova_IntArray* matches)
 {
-	Context1 contextArg50 = 
+	Context1 contextArg51 = 
 	{
 		&input,
 	};
 	
-	return (nova_datastruct_list_Nova_IntArray*)(intptr_t)nova_datastruct_list_Nova_IntArray_Nova_forEach(matches, exceptionData, (nova_datastruct_list_Nova_IntArray_closure6_Nova_func)&compiler_tree_nodes_operations_Nova_Operation_Nova_lambda50, this, &contextArg50);
+	return (nova_datastruct_list_Nova_IntArray*)(intptr_t)nova_datastruct_list_Nova_IntArray_Nova_forEach(matches, exceptionData, (nova_datastruct_list_Nova_IntArray_closure6_Nova_func)&compiler_tree_nodes_operations_Nova_Operation_Nova_lambda51, this, &contextArg51);
 }
 
 char compiler_tree_nodes_operations_Nova_Operation_0_Nova_parseOperands(compiler_tree_nodes_operations_Nova_Operation* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_list_Nova_Array* operands)
 {
-	Context2 contextArg51 = 
+	Context2 contextArg52 = 
 	{
 	};
 	
-	return nova_datastruct_list_Nova_List_virtual0_Nova_all((nova_datastruct_list_Nova_List*)(operands), exceptionData, (nova_datastruct_list_Nova_List_closure12_Nova_allFunc)&compiler_tree_nodes_operations_Nova_Operation_Nova_lambda51, this, &contextArg51, (intptr_t)nova_null);
+	return nova_datastruct_list_Nova_List_virtual0_Nova_all((nova_datastruct_list_Nova_List*)(operands), exceptionData, (nova_datastruct_list_Nova_List_closure12_Nova_allFunc)&compiler_tree_nodes_operations_Nova_Operation_Nova_lambda52, this, &contextArg52, (intptr_t)nova_null);
 }
 
 char compiler_tree_nodes_operations_Nova_Operation_1_Nova_parseOperands(compiler_tree_nodes_operations_Nova_Operation* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* input, nova_datastruct_list_Nova_IntArray* matches)
 {
 	nova_datastruct_list_Nova_Array* l1_Nova_operands = (nova_datastruct_list_Nova_Array*)nova_null;
 	char l1_Nova_prev = 0;
-	Context3 contextArg122 = 
+	Context3 contextArg126 = 
 	{
 		&l1_Nova_prev,
 		&input,
@@ -264,7 +270,7 @@ char compiler_tree_nodes_operations_Nova_Operation_1_Nova_parseOperands(compiler
 	
 	l1_Nova_operands = nova_datastruct_list_Nova_Array_0_Nova_construct(0, exceptionData);
 	l1_Nova_prev = 0;
-	if (!nova_datastruct_list_Nova_IntArray_Nova_all(matches, exceptionData, (nova_datastruct_list_Nova_IntArray_closure12_Nova_allFunc)&compiler_tree_nodes_operations_Nova_Operation_Nova_lambda122, this, &contextArg122, (intptr_t)nova_null))
+	if (!nova_datastruct_list_Nova_IntArray_Nova_all(matches, exceptionData, (nova_datastruct_list_Nova_IntArray_closure12_Nova_allFunc)&compiler_tree_nodes_operations_Nova_Operation_Nova_lambda126, this, &contextArg126, (intptr_t)nova_null))
 	{
 		return 0;
 	}
@@ -287,7 +293,7 @@ nova_Nova_String* compiler_tree_nodes_operations_Nova_Operation_Nova_writeNova(c
 	return l1_Nova_output;
 }
 
-void compiler_tree_nodes_operations_Nova_Operation_Nova_lambda50(compiler_tree_nodes_operations_Nova_Operation* this, nova_exception_Nova_ExceptionData* exceptionData, int start, int _2, nova_datastruct_list_Nova_IntArray* _3, Context1* context)
+void compiler_tree_nodes_operations_Nova_Operation_Nova_lambda51(compiler_tree_nodes_operations_Nova_Operation* this, nova_exception_Nova_ExceptionData* exceptionData, int start, int _2, nova_datastruct_list_Nova_IntArray* _3, Context1* context)
 {
 	int l1_Nova_end = 0;
 	compiler_tree_nodes_operations_Nova_Operator* l1_Nova_operator = (compiler_tree_nodes_operations_Nova_Operator*)nova_null;
@@ -297,7 +303,7 @@ void compiler_tree_nodes_operations_Nova_Operation_Nova_lambda50(compiler_tree_n
 	nova_datastruct_list_Nova_Array_0_Nova_add((nova_datastruct_list_Nova_Array*)(this->compiler_tree_nodes_operations_Nova_Operation_Nova_operators), exceptionData, (nova_Nova_Object*)(l1_Nova_operator));
 }
 
-char compiler_tree_nodes_operations_Nova_Operation_Nova_lambda51(compiler_tree_nodes_operations_Nova_Operation* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* _1, int _2, nova_datastruct_list_Nova_List* _3, Context2* context)
+char compiler_tree_nodes_operations_Nova_Operation_Nova_lambda52(compiler_tree_nodes_operations_Nova_Operation* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* _1, int _2, nova_datastruct_list_Nova_List* _3, Context2* context)
 {
 	compiler_tree_nodes_Nova_Value* l1_Nova_operand = (compiler_tree_nodes_Nova_Value*)nova_null;
 	
@@ -309,7 +315,7 @@ char compiler_tree_nodes_operations_Nova_Operation_Nova_lambda51(compiler_tree_n
 	return l1_Nova_operand != (compiler_tree_nodes_Nova_Value*)nova_null;
 }
 
-char compiler_tree_nodes_operations_Nova_Operation_Nova_lambda122(compiler_tree_nodes_operations_Nova_Operation* this, nova_exception_Nova_ExceptionData* exceptionData, int start, int _2, nova_datastruct_list_Nova_IntArray* _3, Context3* context)
+char compiler_tree_nodes_operations_Nova_Operation_Nova_lambda126(compiler_tree_nodes_operations_Nova_Operation* this, nova_exception_Nova_ExceptionData* exceptionData, int start, int _2, nova_datastruct_list_Nova_IntArray* _3, Context3* context)
 {
 	if ((*context->compiler_tree_nodes_operations_Nova_Operation_Nova_prev) > start)
 	{

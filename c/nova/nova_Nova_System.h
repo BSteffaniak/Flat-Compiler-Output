@@ -41,6 +41,7 @@ typedef struct nova_Nova_System nova_Nova_System;
 #include <nova/io/nova_io_Nova_FileWriter.h>
 #include <nova/io/nova_io_Nova_FileReader.h>
 #include <nova/time/nova_time_Nova_Time.h>
+#include <nova/time/nova_time_Nova_CumulativeTimer.h>
 #include <nova/process/nova_process_Nova_Process.h>
 #include <nova/NativeSystem.h>
 #include <nova/NativeObject.h>
@@ -65,6 +66,7 @@ CCLASS_CLASS
 	
 	nova_System_Extension_VTable* vtable;
 )
+extern nova_time_Nova_CumulativeTimer* nova_Nova_System_Nova_overheadTimer;
 
 void nova_Nova_System_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData);
 nova_Nova_System* nova_Nova_System_Nova_construct(nova_Nova_System* this, nova_exception_Nova_ExceptionData* exceptionData);

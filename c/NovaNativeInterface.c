@@ -32,6 +32,7 @@ nova_env novaEnv = {
 &nova_Nova_String_1_Nova_lastIndexOf,
 &nova_Nova_String_Nova_validateSubstringBounds,
 0,
+&nova_Nova_String_Nova_trimEnds,
 &nova_Nova_String_Nova_trim,
 &nova_Nova_String_Nova_lastChar,
 &nova_Nova_String_Nova_toLowerCase,
@@ -320,7 +321,8 @@ nova_env novaEnv = {
 &nova_datastruct_list_Nova_Stack_Nova_push,
 &nova_datastruct_list_Nova_Stack_Nova_pop,
 &nova_datastruct_list_Nova_Stack_Nova_peek,
-&nova_datastruct_list_Nova_Stack_Nova_construct,
+&nova_datastruct_list_Nova_Stack_0_Nova_construct,
+&nova_datastruct_list_Nova_Stack_1_Nova_construct,
 },
 
 {
@@ -745,6 +747,10 @@ nova_env novaEnv = {
 },
 
 {
+&nova_time_Nova_CumulativeTimer_Nova_construct,
+},
+
+{
 &nova_time_Nova_Date_Nova_decodeDate,
 &nova_time_Nova_Date_Nova_updateTime,
 &nova_time_Nova_Date_Nova_formatDate,
@@ -757,7 +763,7 @@ nova_env novaEnv = {
 
 {
 &nova_time_Nova_Timer_Nova_start,
-&nova_time_Nova_Timer_Nova_stop,
+0,
 &nova_time_Nova_Timer_Nova_reset,
 &nova_time_Nova_Timer_Nova_construct,
 },
@@ -1113,7 +1119,7 @@ nova_env novaEnv = {
 {
 0,
 &compiler_tree_nodes_functions_Nova_CallableFunction_Nova_parseParameterAndAnnotations,
-&compiler_tree_nodes_functions_Nova_CallableFunction_Nova_parseParameters,
+0,
 &compiler_tree_nodes_functions_Nova_CallableFunction_Nova_compatibleArguments,
 &compiler_tree_nodes_functions_Nova_CallableFunction_Nova_parseName,
 },
@@ -1165,6 +1171,8 @@ nova_env novaEnv = {
 },
 
 {
+&compiler_tree_nodes_functions_Nova_ParameterList_Nova_get,
+&compiler_tree_nodes_functions_Nova_ParameterList_Nova_set,
 &compiler_tree_nodes_functions_Nova_ParameterList_Nova_construct,
 },
 
@@ -1182,6 +1190,15 @@ nova_env novaEnv = {
 
 {
 &compiler_tree_nodes_functions_closures_Nova_ClosureParameter_Nova_construct,
+},
+
+{
+&compiler_tree_nodes_functions_closures_Nova_LambdaExpression_Nova_writeParameters,
+&compiler_tree_nodes_functions_closures_Nova_LambdaExpression_Nova_construct,
+},
+
+{
+&compiler_tree_nodes_functions_closures_Nova_LambdaParameter_Nova_construct,
 },
 
 {

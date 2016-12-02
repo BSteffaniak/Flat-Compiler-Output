@@ -253,6 +253,9 @@ typedef void (*nova_time_Nova_Timer_closure6_Nova_callback)(void*, nova_exceptio
 typedef void (*compiler_tree_nodes_Nova_Node_closure1_Nova_action)(void*, nova_exception_Nova_ExceptionData*, void*);
 typedef void (*compiler_tree_nodes_Nova_Node_closure2_Nova_action)(void*, nova_exception_Nova_ExceptionData*, void*);
 typedef void (*compiler_tree_nodes_Nova_Node_closure3_Nova_action)(void*, nova_exception_Nova_ExceptionData*, void*);
+typedef void (*compiler_tree_nodes_Nova_Node_closure4_Nova_action)(void*, nova_exception_Nova_ExceptionData*, void*);
+typedef void (*compiler_tree_nodes_Nova_Node_closure5_Nova_action)(void*, nova_exception_Nova_ExceptionData*, void*);
+typedef void (*compiler_tree_nodes_Nova_Node_closure6_Nova_action)(void*, nova_exception_Nova_ExceptionData*, void*);
 typedef int (*compiler_util_Nova_CompilerStringFunctions_closure1_Nova_advance)(void*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, char, int, int, void*);
 
 typedef struct nova_Interface_VTable
@@ -285,6 +288,7 @@ compiler_tree_nodes_Nova_Accessible* (*compiler_tree_nodes_Nova_Accessible_virtu
 compiler_tree_nodes_Nova_Accessible* (*compiler_tree_nodes_Nova_Accessible_virtual_Accessor1_Nova_accessedNode)(compiler_tree_nodes_Nova_Accessible*, nova_exception_Nova_ExceptionData*);
 void (*compiler_tree_nodes_annotations_Nova_Annotatable_virtual_Nova_addAnnotation)(compiler_tree_nodes_annotations_Nova_Annotatable*, nova_exception_Nova_ExceptionData*, compiler_tree_nodes_annotations_Nova_Annotation*);
 compiler_tree_nodes_functions_Nova_Parameter* (*compiler_tree_nodes_functions_Nova_CallableFunction_virtual_Nova_parseParameter)(compiler_tree_nodes_functions_Nova_CallableFunction*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, int);
+char (*compiler_tree_nodes_functions_Nova_CallableFunction_virtual_Nova_parseParameters)(compiler_tree_nodes_functions_Nova_CallableFunction*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, int);
 compiler_tree_nodes_functions_Nova_ParameterList* (*compiler_tree_nodes_functions_Nova_CallableFunction_virtual_Accessor_Nova_parameterList)(compiler_tree_nodes_functions_Nova_CallableFunction*, nova_exception_Nova_ExceptionData*);
 nova_datastruct_list_Nova_Array* (*compiler_tree_nodes_generics_Nova_GenericCompatible_virtual_Mutator_Nova_genericParameters)(compiler_tree_nodes_generics_Nova_GenericCompatible*, nova_exception_Nova_ExceptionData*, nova_datastruct_list_Nova_Array*);
 nova_datastruct_list_Nova_Array* (*compiler_tree_nodes_generics_Nova_GenericCompatible_virtual_Accessor_Nova_genericParameters)(compiler_tree_nodes_generics_Nova_GenericCompatible*, nova_exception_Nova_ExceptionData*);

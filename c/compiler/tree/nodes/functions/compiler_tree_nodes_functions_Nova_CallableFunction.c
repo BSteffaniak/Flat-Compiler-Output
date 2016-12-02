@@ -40,7 +40,7 @@
 
 typedef struct
 {
-	/* Bool require */ char* compiler_tree_nodes_functions_Nova_CallableFunction_Nova_require;
+	/* Bool require = true */ int* compiler_tree_nodes_functions_Nova_CallableFunction_Nova_require;
 } Context1;
 
 
@@ -76,6 +76,7 @@ compiler_tree_nodes_functions_CallableFunction_Extension_VTable compiler_tree_no
 		0,
 		0,
 		(compiler_tree_nodes_functions_Nova_Parameter*(*)(compiler_tree_nodes_functions_Nova_CallableFunction*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, int))compiler_tree_nodes_functions_Nova_CallableFunction_Nova_parseParameter,
+		(char(*)(compiler_tree_nodes_functions_Nova_CallableFunction*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, int))compiler_tree_nodes_functions_Nova_CallableFunction_Nova_parseParameters,
 		(compiler_tree_nodes_functions_Nova_ParameterList*(*)(compiler_tree_nodes_functions_Nova_CallableFunction*, nova_exception_Nova_ExceptionData*))compiler_tree_nodes_functions_Nova_CallableFunction_Accessor_Nova_parameterList,
 		(nova_datastruct_list_Nova_Array*(*)(compiler_tree_nodes_generics_Nova_GenericCompatible*, nova_exception_Nova_ExceptionData*, nova_datastruct_list_Nova_Array*))compiler_tree_nodes_generics_Nova_GenericCompatible_Mutator_Nova_genericParameters,
 		(nova_datastruct_list_Nova_Array*(*)(compiler_tree_nodes_generics_Nova_GenericCompatible*, nova_exception_Nova_ExceptionData*))compiler_tree_nodes_generics_Nova_GenericCompatible_Accessor_Nova_genericParameters,
@@ -85,7 +86,7 @@ compiler_tree_nodes_functions_CallableFunction_Extension_VTable compiler_tree_no
 
 
 
-char compiler_tree_nodes_functions_Nova_CallableFunction_Nova_lambda46(compiler_tree_nodes_functions_Nova_CallableFunction* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* _1, int _2, nova_datastruct_list_Nova_List* _3, Context1* context);
+char compiler_tree_nodes_functions_Nova_CallableFunction_Nova_lambda47(compiler_tree_nodes_functions_Nova_CallableFunction* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* _1, int _2, nova_datastruct_list_Nova_List* _3, Context1* context);
 
 
 void compiler_tree_nodes_functions_Nova_CallableFunction_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData)
@@ -112,22 +113,21 @@ char compiler_tree_nodes_functions_Nova_CallableFunction_Nova_parseParameterAndA
 	{
 		nova_datastruct_list_Nova_Array_0_Nova_add((nova_datastruct_list_Nova_Array*)(compiler_tree_nodes_functions_Nova_CallableFunction_Accessor_Nova_parameters(this, exceptionData)), exceptionData, (nova_Nova_Object*)(l1_Nova_param));
 		compiler_tree_Nova_AnnotationSearchResult_0_Nova_addTo(l1_Nova_annotations, exceptionData, (compiler_tree_nodes_Nova_Node*)(l1_Nova_param));
+		return 1;
 	}
-	else
-	{
-		compiler_Nova_SyntaxMessage_static_Nova_errorIf(0, exceptionData, nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)(nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("Invalid parameter '"))), exceptionData, nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)((parameter)), exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("'")))), (compiler_tree_nodes_Nova_Node*)this, require, (intptr_t)nova_null);
-	}
-	return l1_Nova_param != (compiler_tree_nodes_functions_Nova_Parameter*)nova_null;
+	compiler_Nova_SyntaxMessage_static_Nova_errorIf(0, exceptionData, nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)(nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("Invalid parameter '"))), exceptionData, nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)((parameter)), exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("'")))), (compiler_tree_nodes_Nova_Node*)this, require, (intptr_t)nova_null);
+	return 0;
 }
 
-char compiler_tree_nodes_functions_Nova_CallableFunction_Nova_parseParameters(compiler_tree_nodes_functions_Nova_CallableFunction* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* parameters, char require)
+char compiler_tree_nodes_functions_Nova_CallableFunction_Nova_parseParameters(compiler_tree_nodes_functions_Nova_CallableFunction* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* parameters, int require)
 {
-	Context1 contextArg46 = 
+	Context1 contextArg47 = 
 	{
 		&require,
 	};
 	
-	return nova_datastruct_list_Nova_List_virtual0_Nova_all((nova_datastruct_list_Nova_List*)(compiler_util_Nova_CompilerStringFunctions_Nova_splitAtCommas(parameters, exceptionData, (intptr_t)nova_null, (intptr_t)nova_null)), exceptionData, (nova_datastruct_list_Nova_List_closure12_Nova_allFunc)&compiler_tree_nodes_functions_Nova_CallableFunction_Nova_lambda46, this, &contextArg46, 0);
+	require = (int)(require == (intptr_t)nova_null ? 1 : require);
+	return nova_datastruct_list_Nova_List_virtual0_Nova_all((nova_datastruct_list_Nova_List*)(compiler_util_Nova_CompilerStringFunctions_Nova_splitAtCommas(parameters, exceptionData, (intptr_t)nova_null, (intptr_t)nova_null)), exceptionData, (nova_datastruct_list_Nova_List_closure12_Nova_allFunc)&compiler_tree_nodes_functions_Nova_CallableFunction_Nova_lambda47, this, &contextArg47, 0);
 }
 
 char compiler_tree_nodes_functions_Nova_CallableFunction_Nova_compatibleArguments(compiler_tree_nodes_functions_Nova_CallableFunction* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_list_Nova_Array* arguments)
@@ -153,7 +153,7 @@ char compiler_tree_nodes_functions_Nova_CallableFunction_Nova_parseName(compiler
 	return 0;
 }
 
-char compiler_tree_nodes_functions_Nova_CallableFunction_Nova_lambda46(compiler_tree_nodes_functions_Nova_CallableFunction* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* _1, int _2, nova_datastruct_list_Nova_List* _3, Context1* context)
+char compiler_tree_nodes_functions_Nova_CallableFunction_Nova_lambda47(compiler_tree_nodes_functions_Nova_CallableFunction* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* _1, int _2, nova_datastruct_list_Nova_List* _3, Context1* context)
 {
 	return compiler_tree_nodes_functions_Nova_CallableFunction_Nova_parseParameterAndAnnotations(this, exceptionData, _1, (*context->compiler_tree_nodes_functions_Nova_CallableFunction_Nova_require));
 }
@@ -173,6 +173,11 @@ nova_datastruct_list_Nova_Array* compiler_tree_nodes_functions_Nova_CallableFunc
 compiler_tree_nodes_functions_Nova_Parameter* compiler_tree_nodes_functions_Nova_CallableFunction_virtual_Nova_parseParameter(compiler_tree_nodes_functions_Nova_CallableFunction* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* parameter, int require)
 {
 	return this->vtable->itable.compiler_tree_nodes_functions_Nova_CallableFunction_virtual_Nova_parseParameter((compiler_tree_nodes_functions_Nova_CallableFunction*)(this), exceptionData, parameter, require);
+}
+
+char compiler_tree_nodes_functions_Nova_CallableFunction_virtual_Nova_parseParameters(compiler_tree_nodes_functions_Nova_CallableFunction* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* parameters, int require)
+{
+	return this->vtable->itable.compiler_tree_nodes_functions_Nova_CallableFunction_virtual_Nova_parseParameters((compiler_tree_nodes_functions_Nova_CallableFunction*)(this), exceptionData, parameters, require);
 }
 
 compiler_tree_nodes_functions_Nova_ParameterList* compiler_tree_nodes_functions_Nova_CallableFunction_virtual_Accessor_Nova_parameterList(compiler_tree_nodes_functions_Nova_CallableFunction* this, nova_exception_Nova_ExceptionData* exceptionData)

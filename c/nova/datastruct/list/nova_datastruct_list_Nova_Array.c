@@ -71,6 +71,7 @@ nova_datastruct_list_Array_Extension_VTable nova_datastruct_list_Array_Extension
 		0,
 		0,
 		0,
+		0,
 	},
 	nova_datastruct_list_Nova_Array_Nova_toString,
 	nova_Nova_Object_Accessor_Nova_hashCodeLong,
@@ -252,7 +253,7 @@ nova_Nova_Object* nova_datastruct_list_Nova_Array_1_Nova_remove(nova_datastruct_
 {
 	int l1_Nova_index = 0;
 	
-	l1_Nova_index = nova_datastruct_list_Nova_Array_Nova_indexOf(this, exceptionData, element);
+	l1_Nova_index = nova_datastruct_list_Nova_Array_Nova_indexOf(this, exceptionData, element, (intptr_t)nova_null);
 	if (l1_Nova_index >= 0)
 	{
 		nova_datastruct_list_Nova_Array_Nova_shiftLeft(this, exceptionData, l1_Nova_index + 1, this->nova_datastruct_list_Nova_Array_Nova_position--);
@@ -261,12 +262,13 @@ nova_Nova_Object* nova_datastruct_list_Nova_Array_1_Nova_remove(nova_datastruct_
 	return (nova_Nova_Object*)(nova_Nova_Object*)nova_null;
 }
 
-int nova_datastruct_list_Nova_Array_Nova_indexOf(nova_datastruct_list_Nova_Array* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_Object* element)
+int nova_datastruct_list_Nova_Array_Nova_indexOf(nova_datastruct_list_Nova_Array* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_Object* element, int defaultReturnValue)
 {
 	int l1_Nova_i = 0;
 	nova_datastruct_list_Nova_ArrayIterator* nova_local_0 = (nova_datastruct_list_Nova_ArrayIterator*)nova_null;
 	nova_Nova_Object* l1_Nova_e = (nova_Nova_Object*)nova_null;
 	
+	defaultReturnValue = (int)(defaultReturnValue == (intptr_t)nova_null ? -1 : defaultReturnValue);
 	l1_Nova_i = (int)(0);
 	nova_local_0 = (nova_datastruct_list_Nova_ArrayIterator*)(nova_datastruct_list_Nova_Array_Accessor_Nova_iterator((this), exceptionData));
 	while (nova_datastruct_list_Nova_ArrayIterator_Accessor_Nova_hasNext(nova_local_0, exceptionData))
@@ -278,14 +280,14 @@ int nova_datastruct_list_Nova_Array_Nova_indexOf(nova_datastruct_list_Nova_Array
 		}
 		l1_Nova_i++;
 	}
-	return (int)-1;
+	return defaultReturnValue;
 }
 
 char nova_datastruct_list_Nova_Array_Nova_replace(nova_datastruct_list_Nova_Array* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_Object* element, nova_Nova_Object* other)
 {
 	int l1_Nova_index = 0;
 	
-	l1_Nova_index = nova_datastruct_list_Nova_Array_Nova_indexOf(this, exceptionData, element);
+	l1_Nova_index = nova_datastruct_list_Nova_Array_Nova_indexOf(this, exceptionData, element, (intptr_t)nova_null);
 	if (l1_Nova_index >= 0)
 	{
 		nova_datastruct_list_Nova_Array_virtual_Nova_set((nova_datastruct_list_Nova_Array*)(this), exceptionData, l1_Nova_index, other);

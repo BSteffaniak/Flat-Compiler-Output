@@ -168,6 +168,7 @@ extern compiler_tree_nodes_operations_vtable_Assignable compiler_tree_nodes_oper
 #include <nova/thread/nova_thread_Nova_UncaughtExceptionHandler.h>
 #include <nova/thread/async/nova_thread_async_Nova_Async.h>
 #include <nova/thread/async/nova_thread_async_Nova_AsyncResult.h>
+#include <nova/time/nova_time_Nova_CumulativeTimer.h>
 #include <nova/time/nova_time_Nova_Date.h>
 #include <nova/time/nova_time_Nova_Time.h>
 #include <nova/time/nova_time_Nova_Timer.h>
@@ -251,6 +252,8 @@ extern compiler_tree_nodes_operations_vtable_Assignable compiler_tree_nodes_oper
 #include <compiler/tree/nodes/functions/closures/compiler_tree_nodes_functions_closures_Nova_ClosureContext.h>
 #include <compiler/tree/nodes/functions/closures/compiler_tree_nodes_functions_closures_Nova_ClosureDeclaration.h>
 #include <compiler/tree/nodes/functions/closures/compiler_tree_nodes_functions_closures_Nova_ClosureParameter.h>
+#include <compiler/tree/nodes/functions/closures/compiler_tree_nodes_functions_closures_Nova_LambdaExpression.h>
+#include <compiler/tree/nodes/functions/closures/compiler_tree_nodes_functions_closures_Nova_LambdaParameter.h>
 #include <compiler/tree/nodes/generics/compiler_tree_nodes_generics_Nova_GenericArgument.h>
 #include <compiler/tree/nodes/generics/compiler_tree_nodes_generics_Nova_GenericCompatible.h>
 #include <compiler/tree/nodes/generics/compiler_tree_nodes_generics_Nova_GenericParameter.h>
@@ -346,6 +349,7 @@ char x;
 
 struct compiler_tree_nodes_functions_vtable_CallableFunction {
 compiler_tree_nodes_functions_Nova_Parameter* (*compiler_tree_nodes_functions_Nova_CallableFunction_virtual_Nova_parseParameter)(compiler_tree_nodes_functions_Nova_CallableFunction*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, int);
+char (*compiler_tree_nodes_functions_Nova_CallableFunction_virtual_Nova_parseParameters)(compiler_tree_nodes_functions_Nova_CallableFunction*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, int);
 compiler_tree_nodes_functions_Nova_ParameterList* (*compiler_tree_nodes_functions_Nova_CallableFunction_virtual_Accessor_Nova_parameterList)(compiler_tree_nodes_functions_Nova_CallableFunction*, nova_exception_Nova_ExceptionData*);
 };
 
@@ -394,6 +398,8 @@ char (*nova_io_Nova_OutputStream_virtual_Nova_write)(nova_io_Nova_OutputStream*,
 double (*nova_math_Nova_Vector_virtual_Nova_dotProduct)(nova_math_Nova_Vector*, nova_exception_Nova_ExceptionData*, nova_math_Nova_Vector*);
 char (*nova_primitive_number_Nova_Number_virtual_static_Nova_numDigits)(nova_primitive_number_Nova_Number*, nova_exception_Nova_ExceptionData*, nova_primitive_number_Nova_Number*);
 void (*nova_thread_Nova_Thread_virtual_Nova_run)(nova_thread_Nova_Thread*, nova_exception_Nova_ExceptionData*);
+nova_time_Nova_Timer* (*nova_time_Nova_Timer_virtual_Nova_stop)(nova_time_Nova_Timer*, nova_exception_Nova_ExceptionData*);
+long_long (*nova_time_Nova_Timer_virtual_Accessor_Nova_duration)(nova_time_Nova_Timer*, nova_exception_Nova_ExceptionData*);
 void (*nova_web_svg_Nova_SvgComponent_virtual_Nova_generateOutput)(nova_web_svg_Nova_SvgComponent*, nova_exception_Nova_ExceptionData*, nova_io_Nova_FileWriter*);
 nova_Nova_String* (*nova_web_svg_no3_Nova_No3Node_virtual_Nova_toJs)(nova_web_svg_no3_Nova_No3Node*, nova_exception_Nova_ExceptionData*);
 void (*compiler_engines_Nova_CodeGeneratorEngine_virtual_Nova_writeFiles)(compiler_engines_Nova_CodeGeneratorEngine*, nova_exception_Nova_ExceptionData*);
@@ -418,9 +424,12 @@ char (*compiler_tree_nodes_Nova_Node_virtual_Nova_parsePlaceholderChildren)(comp
 nova_Nova_String* (*compiler_tree_nodes_Nova_Node_virtual_Nova_writeAnnotationSeparator)(compiler_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*);
 compiler_tree_nodes_Nova_Scope* (*compiler_tree_nodes_Nova_Node_virtual_Accessor_Nova_scope)(compiler_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*);
 compiler_tree_nodes_Nova_Scope* (*compiler_tree_nodes_Nova_Node_virtual_Mutator_Nova_scope)(compiler_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, compiler_tree_nodes_Nova_Scope*);
+int (*compiler_tree_nodes_Nova_Node_virtual_Accessor_Nova_index)(compiler_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*);
 compiler_tree_nodes_Nova_Program* (*compiler_tree_nodes_Nova_Node_virtual_Accessor_Nova_program)(compiler_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*);
 compiler_tree_nodes_functions_Nova_Instantiation* (*compiler_tree_nodes_Nova_Node_virtual_Accessor_Nova_parentInstantiation)(compiler_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*);
+compiler_tree_nodes_functions_closures_Nova_LambdaExpression* (*compiler_tree_nodes_Nova_Node_virtual_Accessor_Nova_parentLambda)(compiler_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*);
 compiler_tree_nodes_Nova_NovaFile* (*compiler_tree_nodes_Nova_Node_virtual_Accessor_Nova_parentFile)(compiler_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*);
+compiler_tree_nodes_functions_Nova_FunctionCall* (*compiler_tree_nodes_Nova_Node_virtual_Accessor_Nova_parentFunctionCall)(compiler_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*);
 compiler_tree_nodes_functions_Nova_FunctionDeclaration* (*compiler_tree_nodes_Nova_Node_virtual_Accessor_Nova_parentFunction)(compiler_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*);
 compiler_tree_nodes_exceptionhandling_Nova_Try* (*compiler_tree_nodes_Nova_Node_virtual_Accessor_Nova_parentTry)(compiler_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*);
 compiler_tree_nodes_Nova_Node* (*compiler_tree_nodes_Nova_Node_virtual_Accessor_Nova_scopeConsumer)(compiler_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*);
