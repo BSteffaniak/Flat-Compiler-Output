@@ -14,6 +14,7 @@
 #include <nova/primitive/number/nova_primitive_number_Nova_Char.h>
 #include <nova/primitive/nova_primitive_Nova_Bool.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_Array.h>
+#include <nova/datastruct/list/nova_datastruct_list_Nova_ImmutableArray.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_IntArray.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_CharArray.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_DoubleArray.h>
@@ -1109,7 +1110,7 @@ void compiler_util_Nova_CompilerStringFunctions_Nova_lambda124(nova_Nova_String*
 }
 else if (l1_Nova_c == '\n')
 {
-	(*context->compiler_util_Nova_CompilerStringFunctions_Nova_output) = (nova_Nova_String*)(nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)((*context->compiler_util_Nova_CompilerStringFunctions_Nova_output)), exceptionData, nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)(nova_Nova_String_virtual_Nova_substring((nova_Nova_String*)(this), exceptionData, (*context->compiler_util_Nova_CompilerStringFunctions_Nova_lastIndex), match->nova_regex_Nova_Match_Nova_start)), exceptionData, nova_Nova_String_Nova_concat(nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("\n")), exceptionData, (*context->compiler_util_Nova_CompilerStringFunctions_Nova_tabs)))));
+	(*context->compiler_util_Nova_CompilerStringFunctions_Nova_output) = (nova_Nova_String*)(nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)((*context->compiler_util_Nova_CompilerStringFunctions_Nova_output)), exceptionData, nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)(nova_Nova_String_virtual_Nova_substring((nova_Nova_String*)(this), exceptionData, (*context->compiler_util_Nova_CompilerStringFunctions_Nova_lastIndex), match->nova_regex_Nova_Match_Nova_start)), exceptionData, nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)(nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("\n"))), exceptionData, (*context->compiler_util_Nova_CompilerStringFunctions_Nova_tabs)))));
 	(*context->compiler_util_Nova_CompilerStringFunctions_Nova_lastIndex) = match->nova_regex_Nova_Match_Nova_start + 1;
 	(*context->compiler_util_Nova_CompilerStringFunctions_Nova_sameLine) = 0;
 }}

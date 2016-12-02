@@ -130,6 +130,10 @@ extern compiler_tree_nodes_operations_vtable_Assignable compiler_tree_nodes_oper
 #include <nova/math/logic/nova_math_logic_Nova_StatementGroup.h>
 #include <nova/math/logic/nova_math_logic_Nova_StatementLetter.h>
 #include <nova/math/logic/nova_math_logic_Nova_WFF.h>
+#include <nova/meta/nova_meta_Nova_Field.h>
+#include <nova/meta/nova_meta_Nova_GenericArgument.h>
+#include <nova/meta/nova_meta_Nova_GenericParameter.h>
+#include <nova/meta/nova_meta_Nova_Type.h>
 #include <nova/network/nova_network_Nova_ClientSocket.h>
 #include <nova/network/nova_network_Nova_ConnectionSocket.h>
 #include <nova/network/nova_network_Nova_NetworkInputStream.h>

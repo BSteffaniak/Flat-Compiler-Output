@@ -14,6 +14,7 @@
 #include <nova/primitive/number/nova_primitive_number_Nova_Char.h>
 #include <nova/primitive/nova_primitive_Nova_Bool.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_Array.h>
+#include <nova/datastruct/list/nova_datastruct_list_Nova_ImmutableArray.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_IntArray.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_CharArray.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_DoubleArray.h>
@@ -27,7 +28,7 @@
 #include <nova/nova_Nova_System.h>
 #include <nova/nova_Nova_Class.h>
 #include <nova/regex/nova_regex_Nova_Pattern.h>
-#include <nova/datastruct/list/nova_datastruct_list_Nova_ImmutableArray.h>
+#include <nova/meta/nova_meta_Nova_Field.h>
 #include <nova/NativeObject.h>
 #include <nova/operators/nova_operators_Nova_Equals.h>
 
@@ -114,7 +115,8 @@ void nova_Nova_Class_Nova_destroy(nova_Nova_Class** this, nova_exception_Nova_Ex
 	}
 	
 	nova_Nova_Class_Nova_destroy(&(*this)->nova_Nova_Class_Nova_extension, exceptionData);
-	nova_datastruct_list_Nova_Array_Nova_destroy(&(*this)->nova_Nova_Class_Nova_interfaces, exceptionData);
+	nova_datastruct_list_Nova_ImmutableArray_Nova_destroy(&(*this)->nova_Nova_Class_Nova_interfaces, exceptionData);
+	nova_datastruct_list_Nova_ImmutableArray_Nova_destroy(&(*this)->nova_Nova_Class_Nova_fields, exceptionData);
 	
 	nova_Nova_String_Nova_destroy(&(*this)->nova_Nova_Class_Nova_location, exceptionData);
 	
@@ -194,9 +196,10 @@ nova_Nova_String* nova_Nova_Class_Accessor_Nova_name(nova_Nova_Class* this, nova
 void nova_Nova_Class_Nova_super(nova_Nova_Class* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
 	this->nova_Nova_Class_Nova_extension = (nova_Nova_Class*)nova_null;
-	this->nova_Nova_Class_Nova_interfaces = (nova_datastruct_list_Nova_Array*)nova_null;
+	this->nova_Nova_Class_Nova_interfaces = (nova_datastruct_list_Nova_ImmutableArray*)nova_null;
+	this->nova_Nova_Class_Nova_fields = (nova_datastruct_list_Nova_ImmutableArray*)nova_null;
 	this->nova_Nova_Class_Nova_isInterface = 0;
 	this->nova_Nova_Class_Nova_location = (nova_Nova_String*)nova_null;
-	this->nova_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_Array_0_Nova_construct(0, exceptionData);
+	this->nova_Nova_Class_Nova_fields = nova_datastruct_list_Nova_Array_Nova_toImmutable((nova_datastruct_list_Nova_Array*)(nova_datastruct_list_Nova_Array_1_Nova_construct(0, exceptionData, 0, (intptr_t)nova_null)), exceptionData);
 }
 

@@ -572,6 +572,22 @@ nova_env novaEnv = {
 },
 
 {
+&nova_meta_Nova_Field_Nova_construct,
+},
+
+{
+&nova_meta_Nova_GenericArgument_Nova_construct,
+},
+
+{
+&nova_meta_Nova_GenericParameter_Nova_construct,
+},
+
+{
+&nova_meta_Nova_Type_Nova_construct,
+},
+
+{
 &nova_network_Nova_ClientSocket_Nova_connect,
 &nova_network_Nova_ClientSocket_Nova_close,
 &nova_network_Nova_ClientSocket_Nova_construct,

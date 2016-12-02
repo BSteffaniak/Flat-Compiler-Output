@@ -95,6 +95,10 @@
 #include <nova/math/logic/nova_math_logic_Nova_StatementGroup.h>
 #include <nova/math/logic/nova_math_logic_Nova_StatementLetter.h>
 #include <nova/math/logic/nova_math_logic_Nova_WFF.h>
+#include <nova/meta/nova_meta_Nova_Field.h>
+#include <nova/meta/nova_meta_Nova_GenericArgument.h>
+#include <nova/meta/nova_meta_Nova_GenericParameter.h>
+#include <nova/meta/nova_meta_Nova_Type.h>
 #include <nova/network/nova_network_Nova_ClientSocket.h>
 #include <nova/network/nova_network_Nova_ConnectionSocket.h>
 #include <nova/network/nova_network_Nova_NetworkInputStream.h>
@@ -1337,6 +1341,34 @@ typedef struct nova_math_logic_native_WFF
 {
 nova_math_logic_Nova_WFF_native_Nova_construct WFF;
 } nova_math_logic_native_WFF;
+
+typedef nova_meta_Nova_Field* (*nova_meta_Nova_Field_native_Nova_construct)(nova_meta_Nova_Field*, nova_exception_Nova_ExceptionData*);
+
+typedef struct nova_meta_native_Field
+{
+nova_meta_Nova_Field_native_Nova_construct Field;
+} nova_meta_native_Field;
+
+typedef nova_meta_Nova_GenericArgument* (*nova_meta_Nova_GenericArgument_native_Nova_construct)(nova_meta_Nova_GenericArgument*, nova_exception_Nova_ExceptionData*);
+
+typedef struct nova_meta_native_GenericArgument
+{
+nova_meta_Nova_GenericArgument_native_Nova_construct GenericArgument;
+} nova_meta_native_GenericArgument;
+
+typedef nova_meta_Nova_GenericParameter* (*nova_meta_Nova_GenericParameter_native_Nova_construct)(nova_meta_Nova_GenericParameter*, nova_exception_Nova_ExceptionData*);
+
+typedef struct nova_meta_native_GenericParameter
+{
+nova_meta_Nova_GenericParameter_native_Nova_construct GenericParameter;
+} nova_meta_native_GenericParameter;
+
+typedef nova_meta_Nova_Type* (*nova_meta_Nova_Type_native_Nova_construct)(nova_meta_Nova_Type*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, nova_datastruct_list_Nova_ImmutableArray*);
+
+typedef struct nova_meta_native_Type
+{
+nova_meta_Nova_Type_native_Nova_construct Type;
+} nova_meta_native_Type;
 
 typedef char (*nova_network_Nova_ClientSocket_native_Nova_connect)(nova_network_Nova_ClientSocket*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, int);
 typedef char (*nova_network_Nova_ClientSocket_native_Nova_close)(nova_network_Nova_ClientSocket*, nova_exception_Nova_ExceptionData*);
@@ -2915,6 +2947,10 @@ nova_math_logic_native_StatementComponent nova_math_logic_StatementComponent;
 nova_math_logic_native_StatementGroup nova_math_logic_StatementGroup;
 nova_math_logic_native_StatementLetter nova_math_logic_StatementLetter;
 nova_math_logic_native_WFF nova_math_logic_WFF;
+nova_meta_native_Field nova_meta_Field;
+nova_meta_native_GenericArgument nova_meta_GenericArgument;
+nova_meta_native_GenericParameter nova_meta_GenericParameter;
+nova_meta_native_Type nova_meta_Type;
 nova_network_native_ClientSocket nova_network_ClientSocket;
 nova_network_native_ConnectionSocket nova_network_ConnectionSocket;
 nova_network_native_NetworkInputStream nova_network_NetworkInputStream;

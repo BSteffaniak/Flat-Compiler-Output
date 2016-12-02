@@ -24,6 +24,7 @@ typedef struct nova_Nova_Class nova_Nova_Class;
 #include <nova/primitive/number/nova_primitive_number_Nova_Char.h>
 #include <nova/primitive/nova_primitive_Nova_Bool.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_Array.h>
+#include <nova/datastruct/list/nova_datastruct_list_Nova_ImmutableArray.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_IntArray.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_CharArray.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_DoubleArray.h>
@@ -37,7 +38,7 @@ typedef struct nova_Nova_Class nova_Nova_Class;
 #include <nova/nova_Nova_System.h>
 #include <nova/nova_Nova_Class.h>
 #include <nova/regex/nova_regex_Nova_Pattern.h>
-#include <nova/datastruct/list/nova_datastruct_list_Nova_ImmutableArray.h>
+#include <nova/meta/nova_meta_Nova_Field.h>
 #include <nova/NativeObject.h>
 #include <nova/operators/nova_operators_Nova_Equals.h>
 
@@ -60,7 +61,8 @@ CCLASS_CLASS
 	
 	nova_Class_Extension_VTable* vtable;
 	nova_Nova_Class* nova_Nova_Class_Nova_extension;
-	nova_datastruct_list_Nova_Array* nova_Nova_Class_Nova_interfaces;
+	nova_datastruct_list_Nova_ImmutableArray* nova_Nova_Class_Nova_interfaces;
+	nova_datastruct_list_Nova_ImmutableArray* nova_Nova_Class_Nova_fields;
 	char nova_Nova_Class_Nova_isInterface;
 	nova_Nova_String* nova_Nova_Class_Nova_location;
 )

@@ -29,6 +29,7 @@ typedef char (*nova_Nova_String_closure3_Nova_transform)(void*, nova_exception_N
 #include <nova/primitive/number/nova_primitive_number_Nova_Char.h>
 #include <nova/primitive/nova_primitive_Nova_Bool.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_Array.h>
+#include <nova/datastruct/list/nova_datastruct_list_Nova_ImmutableArray.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_IntArray.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_CharArray.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_DoubleArray.h>

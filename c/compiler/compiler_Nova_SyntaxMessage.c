@@ -14,6 +14,7 @@
 #include <nova/primitive/number/nova_primitive_number_Nova_Char.h>
 #include <nova/primitive/nova_primitive_Nova_Bool.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_Array.h>
+#include <nova/datastruct/list/nova_datastruct_list_Nova_ImmutableArray.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_IntArray.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_CharArray.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_DoubleArray.h>
@@ -122,7 +123,7 @@ void compiler_Nova_SyntaxMessage_static_Nova_error(compiler_Nova_SyntaxMessage* 
 	throwException = (int)(throwException == (intptr_t)nova_null ? 1 : throwException);
 	if (node != (compiler_tree_nodes_Nova_Node*)nova_null)
 	{
-		message = (nova_Nova_String*)(nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)(message), exceptionData, nova_Nova_String_Nova_concat(nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)(" - ")), exceptionData, nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)((compiler_tree_nodes_Nova_Node_Accessor_Nova_locationInfo(node, exceptionData))), exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)(""))))));
+		message = (nova_Nova_String*)(nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)(message), exceptionData, nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)(nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)(" - "))), exceptionData, nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)((compiler_tree_nodes_Nova_Node_Accessor_Nova_locationInfo(node, exceptionData))), exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)(""))))));
 	}
 	if (throwException)
 	{
