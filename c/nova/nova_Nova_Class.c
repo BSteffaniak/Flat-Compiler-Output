@@ -201,6 +201,6 @@ void nova_Nova_Class_Nova_super(nova_Nova_Class* this, nova_exception_Nova_Excep
 	this->nova_Nova_Class_Nova_fields = (nova_datastruct_list_Nova_ImmutableArray*)nova_null;
 	this->nova_Nova_Class_Nova_isInterface = 0;
 	this->nova_Nova_Class_Nova_location = (nova_Nova_String*)nova_null;
-	this->nova_Nova_Class_Nova_fields = nova_datastruct_list_Nova_Array_Nova_toImmutable((nova_datastruct_list_Nova_Array*)(nova_datastruct_list_Nova_Array_1_Nova_construct(0, exceptionData, 0, (intptr_t)nova_null)), exceptionData);
+	this->nova_Nova_Class_Nova_fields = (nova_datastruct_list_Nova_ImmutableArray*)(nova_datastruct_list_Nova_Array_1_Nova_construct(0, exceptionData, 0, (intptr_t)nova_null));
 }
 
