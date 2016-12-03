@@ -48,6 +48,7 @@ typedef struct stabilitytest_Nova_StabilityTest stabilitytest_Nova_StabilityTest
 #include <stabilitytest/stabilitytest_Nova_PolymorphismStability.h>
 #include <stabilitytest/stabilitytest_Nova_RegexStability.h>
 #include <stabilitytest/stabilitytest_Nova_StabilityTestCase.h>
+#include <stabilitytest/stabilitytest_Nova_StaticImportStability.h>
 #include <stabilitytest/stabilitytest_Nova_SyntaxStability.h>
 #include <stabilitytest/stabilitytest_Nova_ThreadStability.h>
 #include <stabilitytest/stabilitytest_Nova_TimeStability.h>

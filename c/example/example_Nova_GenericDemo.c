@@ -103,7 +103,7 @@ void example_Nova_GenericDemo_static_Nova_main(example_Nova_GenericDemo* this, n
 {
 	nova_datastruct_list_Nova_Stack* l1_Nova_strs = (nova_datastruct_list_Nova_Stack*)nova_null;
 	
-	l1_Nova_strs = nova_datastruct_list_Nova_Stack_Nova_construct(0, exceptionData);
+	l1_Nova_strs = nova_datastruct_list_Nova_Stack_0_Nova_construct(0, exceptionData);
 	nova_io_Nova_Console_1_static_Nova_writeLine(0, exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("Pushing \"test\"")));
 	nova_datastruct_list_Nova_Stack_Nova_push((nova_datastruct_list_Nova_Stack*)(l1_Nova_strs), exceptionData, (nova_Nova_Object*)(nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("test"))));
 	nova_io_Nova_Console_1_static_Nova_writeLine(0, exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("Pushing \"ASDFASDF\"")));

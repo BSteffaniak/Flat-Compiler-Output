@@ -134,14 +134,14 @@ void example_Nova_HashSetDemo_static_Nova_main(example_Nova_HashSetDemo* this, n
 	{
 		nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)(nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("my string"))), exceptionData, nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)(nova_primitive_number_Nova_Int_static_Nova_toString(0, exceptionData, (l2_Nova_i))), exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)(""))));
 	}
-	l1_Nova_stringTime = nova_time_Nova_Timer_Accessor_Nova_duration(nova_time_Nova_Timer_Nova_stop(l1_Nova_timer, exceptionData), exceptionData);
+	l1_Nova_stringTime = (long_long)(nova_time_Nova_Timer_virtual_Accessor_Nova_duration((nova_time_Nova_Timer*)(nova_time_Nova_Timer_virtual_Nova_stop((nova_time_Nova_Timer*)(l1_Nova_timer), exceptionData)), exceptionData));
 	nova_io_Nova_Console_1_static_Nova_writeLine(0, exceptionData, nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)(nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("Took "))), exceptionData, nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)(nova_primitive_number_Nova_Long_static_Nova_toString(0, exceptionData, (l1_Nova_stringTime))), exceptionData, nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)(nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("ms to create "))), exceptionData, nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)(nova_primitive_number_Nova_Int_static_Nova_toString(0, exceptionData, (l1_Nova_count))), exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)(" strings")))))));
 	l4_Nova_i = (int)0;
 	for (; l4_Nova_i < (int)50000; l4_Nova_i++)
 	{
 		nova_datastruct_Nova_HashSet_Nova_add((nova_datastruct_Nova_HashSet*)(l1_Nova_set), exceptionData, (nova_Nova_Object*)(nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)(nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("my string"))), exceptionData, nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)(nova_primitive_number_Nova_Int_static_Nova_toString(0, exceptionData, (l4_Nova_i))), exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)(""))))));
 	}
-	l1_Nova_addTime = nova_time_Nova_Timer_Accessor_Nova_duration(nova_time_Nova_Timer_Nova_stop(l1_Nova_timer, exceptionData), exceptionData);
+	l1_Nova_addTime = (long_long)(nova_time_Nova_Timer_virtual_Accessor_Nova_duration((nova_time_Nova_Timer*)(nova_time_Nova_Timer_virtual_Nova_stop((nova_time_Nova_Timer*)(l1_Nova_timer), exceptionData)), exceptionData));
 	nova_zero_check6 = l1_Nova_stringTime;
 	if (nova_zero_check6 == 0)
 	{
@@ -159,7 +159,7 @@ void example_Nova_HashSetDemo_static_Nova_main(example_Nova_HashSetDemo* this, n
 	{
 		nova_datastruct_Nova_HashSet_Nova_get((nova_datastruct_Nova_HashSet*)(l1_Nova_set), exceptionData, (nova_Nova_Object*)(nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)(nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("my string"))), exceptionData, nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)(nova_primitive_number_Nova_Int_static_Nova_toString(0, exceptionData, (l10_Nova_i))), exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)(""))))));
 	}
-	l1_Nova_getTime = nova_time_Nova_Timer_Accessor_Nova_duration(nova_time_Nova_Timer_Nova_stop(l1_Nova_timer, exceptionData), exceptionData);
+	l1_Nova_getTime = (long_long)(nova_time_Nova_Timer_virtual_Accessor_Nova_duration((nova_time_Nova_Timer*)(nova_time_Nova_Timer_virtual_Nova_stop((nova_time_Nova_Timer*)(l1_Nova_timer), exceptionData)), exceptionData));
 	nova_zero_check8 = l1_Nova_stringTime;
 	if (nova_zero_check8 == 0)
 	{
@@ -177,7 +177,7 @@ void example_Nova_HashSetDemo_static_Nova_main(example_Nova_HashSetDemo* this, n
 	{
 		nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)(nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("my string"))), exceptionData, nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)(nova_primitive_number_Nova_Int_static_Nova_toString(0, exceptionData, (l16_Nova_i))), exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)(""))));
 	}
-	l1_Nova_newStringTime = nova_time_Nova_Timer_Accessor_Nova_duration(nova_time_Nova_Timer_Nova_stop(l1_Nova_timer, exceptionData), exceptionData);
+	l1_Nova_newStringTime = (long_long)(nova_time_Nova_Timer_virtual_Accessor_Nova_duration((nova_time_Nova_Timer*)(nova_time_Nova_Timer_virtual_Nova_stop((nova_time_Nova_Timer*)(l1_Nova_timer), exceptionData)), exceptionData));
 	nova_zero_check10 = l1_Nova_stringTime;
 	if (nova_zero_check10 == 0)
 	{

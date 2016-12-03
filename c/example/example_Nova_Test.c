@@ -104,7 +104,7 @@ void example_Nova_Test_static_Nova_main(example_Nova_Test* this, nova_exception_
 	nova_datastruct_list_Nova_Stack* l1_Nova_s = (nova_datastruct_list_Nova_Stack*)nova_null;
 	int l1_Nova_d = 0;
 	
-	l1_Nova_s = nova_datastruct_list_Nova_Stack_Nova_construct(0, exceptionData);
+	l1_Nova_s = nova_datastruct_list_Nova_Stack_0_Nova_construct(0, exceptionData);
 	nova_datastruct_list_Nova_Stack_Nova_push((nova_datastruct_list_Nova_Stack*)(l1_Nova_s), exceptionData, (nova_Nova_Object*)(nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("How are you?"))));
 	nova_datastruct_list_Nova_Stack_Nova_push((nova_datastruct_list_Nova_Stack*)(l1_Nova_s), exceptionData, (nova_Nova_Object*)(nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("Larry"))));
 	nova_datastruct_list_Nova_Stack_Nova_push((nova_datastruct_list_Nova_Stack*)(l1_Nova_s), exceptionData, (nova_Nova_Object*)(nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("Hello"))));
