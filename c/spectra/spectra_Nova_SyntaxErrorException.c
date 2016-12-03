@@ -131,12 +131,12 @@ void spectra_Nova_SyntaxErrorException_Nova_this(spectra_Nova_SyntaxErrorExcepti
 
 void spectra_Nova_SyntaxErrorException_0_Nova_this(spectra_Nova_SyntaxErrorException* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* message, spectra_tree_nodes_Nova_Node* node, spectra_tree_nodes_Nova_Program* program)
 {
-	spectra_tree_nodes_Nova_Node* l1_Nova_nova_local_0 = (spectra_tree_nodes_Nova_Node*)nova_null;
+	spectra_tree_nodes_Nova_Node* nova_local_0 = (spectra_tree_nodes_Nova_Node*)nova_null;
 	
 	node = (spectra_tree_nodes_Nova_Node*)(node == 0 ? (nova_Nova_Object*)(nova_Nova_Object*)nova_null : (nova_Nova_Object*)node);
 	program = (spectra_tree_nodes_Nova_Program*)(program == 0 ? (nova_Nova_Object*)(nova_Nova_Object*)nova_null : (nova_Nova_Object*)program);
 	nova_exception_Nova_Exception_Nova_this((nova_exception_Nova_Exception*)(this), exceptionData, message);
-	node = (spectra_tree_nodes_Nova_Node*)((l1_Nova_nova_local_0 = node) != (spectra_tree_nodes_Nova_Node*)nova_null ? l1_Nova_nova_local_0 : (spectra_tree_nodes_Nova_Node*)program);
+	node = (spectra_tree_nodes_Nova_Node*)((nova_local_0 = node) != (spectra_tree_nodes_Nova_Node*)nova_null ? nova_local_0 : (spectra_tree_nodes_Nova_Node*)program);
 	nova_datastruct_list_Nova_Array_0_Nova_add((nova_datastruct_list_Nova_Array*)(spectra_tree_nodes_Nova_Program_Accessor_Nova_compiler(spectra_tree_nodes_Nova_Node_virtual_Accessor_Nova_program((spectra_tree_nodes_Nova_Node*)(node), exceptionData), exceptionData)->spectra_Nova_Spectra_Nova_errors), exceptionData, (nova_Nova_Object*)(message));
 }
 

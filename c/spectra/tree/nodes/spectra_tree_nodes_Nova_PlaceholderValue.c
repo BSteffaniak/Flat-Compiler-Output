@@ -196,9 +196,9 @@ void spectra_tree_nodes_Nova_PlaceholderValue_Nova_addChild(spectra_tree_nodes_N
 {
 	if (nova_Nova_Class_Nova_isOfType(child->vtable->classInstance, exceptionData, (nova_Nova_Class*)(spectra_tree_nodes_PlaceholderValue_Extension_VTable_val.classInstance)))
 	{
-		spectra_tree_nodes_Nova_NodeList* l1_Nova_nova_local_0 = (spectra_tree_nodes_Nova_NodeList*)nova_null;
+		spectra_tree_nodes_Nova_NodeList* nova_local_0 = (spectra_tree_nodes_Nova_NodeList*)nova_null;
 		
-		this->spectra_tree_nodes_Nova_PlaceholderValue_Nova_nodes = (spectra_tree_nodes_Nova_NodeList*)((l1_Nova_nova_local_0 = this->spectra_tree_nodes_Nova_PlaceholderValue_Nova_nodes) != (spectra_tree_nodes_Nova_NodeList*)nova_null ? l1_Nova_nova_local_0 : spectra_tree_nodes_Nova_NodeList_Nova_construct(0, exceptionData, (spectra_tree_nodes_Nova_Node*)(this), this->spectra_tree_nodes_Nova_Node_Nova_location));
+		this->spectra_tree_nodes_Nova_PlaceholderValue_Nova_nodes = (spectra_tree_nodes_Nova_NodeList*)((nova_local_0 = this->spectra_tree_nodes_Nova_PlaceholderValue_Nova_nodes) != (spectra_tree_nodes_Nova_NodeList*)nova_null ? nova_local_0 : spectra_tree_nodes_Nova_NodeList_Nova_construct(0, exceptionData, (spectra_tree_nodes_Nova_Node*)(this), this->spectra_tree_nodes_Nova_Node_Nova_location));
 		nova_datastruct_list_Nova_Array_0_Nova_add((nova_datastruct_list_Nova_Array*)(this->spectra_tree_nodes_Nova_PlaceholderValue_Nova_nodes->spectra_tree_nodes_Nova_NodeList_Nova_children), exceptionData, (nova_Nova_Object*)((spectra_tree_nodes_Nova_PlaceholderValue*)child));
 		spectra_tree_nodes_Nova_Node_Nova_addChild((spectra_tree_nodes_Nova_Node*)(((spectra_tree_nodes_Nova_Value*)this)), exceptionData, child);
 	}

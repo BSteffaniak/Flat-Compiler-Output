@@ -174,9 +174,9 @@ nova_datastruct_Nova_Tuple2* spectra_util_Nova_CompilerStringFunctions_Nova_getA
 		{
 			if ((char)(intptr_t)nova_datastruct_list_Nova_CharArray_Nova_get((nova_datastruct_list_Nova_CharArray*)(this->nova_Nova_String_Nova_chars), exceptionData, l1_Nova_bracketIndex) == ')' || (char)(intptr_t)nova_datastruct_list_Nova_CharArray_Nova_get((nova_datastruct_list_Nova_CharArray*)(this->nova_Nova_String_Nova_chars), exceptionData, l1_Nova_bracketIndex) == ']' || spectra_util_Nova_CompilerStringFunctions_Accessor_Nova_isIdentifier(nova_Nova_String_virtual_Nova_substring((nova_Nova_String*)(this), exceptionData, (intptr_t)nova_null, l1_Nova_start), exceptionData))
 		{
-			nova_datastruct_list_Nova_Array* l3_Nova_nova_local_0 = (nova_datastruct_list_Nova_Array*)nova_null;
+			nova_datastruct_list_Nova_Array* nova_local_0 = (nova_datastruct_list_Nova_Array*)nova_null;
 			
-			l1_Nova_array = (nova_datastruct_list_Nova_Array*)((l3_Nova_nova_local_0 = l1_Nova_array) != (nova_datastruct_list_Nova_Array*)nova_null ? l3_Nova_nova_local_0 : nova_datastruct_list_Nova_Array_0_Nova_construct(0, exceptionData));
+			l1_Nova_array = (nova_datastruct_list_Nova_Array*)((nova_local_0 = l1_Nova_array) != (nova_datastruct_list_Nova_Array*)nova_null ? nova_local_0 : nova_datastruct_list_Nova_Array_0_Nova_construct(0, exceptionData));
 			nova_datastruct_list_Nova_Array_1_Nova_add((nova_datastruct_list_Nova_Array*)(l1_Nova_array), exceptionData, 0, (nova_Nova_Object*)(nova_Nova_String_Nova_trim(nova_Nova_String_virtual_Nova_substring((nova_Nova_String*)(this), exceptionData, l1_Nova_start + 1, l1_Nova_old), exceptionData, (intptr_t)nova_null, (intptr_t)nova_null, 0)));
 		}
 		else if (l1_Nova_array != (nova_datastruct_list_Nova_Array*)nova_null)
