@@ -37,7 +37,8 @@
 
 typedef struct
 {
-	/* Accessible current */ spectra_tree_nodes_Nova_Accessible** spectra_tree_nodes_Nova_Accessible_Nova_current;
+	/* var
+	Accessible current */ spectra_tree_nodes_Nova_Accessible** spectra_tree_nodes_Nova_Accessible_Nova_current;
 	/* Bool require = true */ int* spectra_tree_nodes_Nova_Accessible_Nova_require;
 } Context1;
 

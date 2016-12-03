@@ -50,11 +50,13 @@ typedef struct
 } Context3;
 typedef struct
 {
-		/* Program program */ spectra_tree_nodes_Nova_Program** spectra_Nova_Spectra_Nova_program;
+		/* let
+		Program program */ spectra_tree_nodes_Nova_Program** spectra_Nova_Spectra_Nova_program;
 } Context4;
 typedef struct
 {
-		/* String separator */ nova_Nova_String** spectra_Nova_Spectra_Nova_separator;
+		/* let
+		String separator */ nova_Nova_String** spectra_Nova_Spectra_Nova_separator;
 } Context5;
 typedef struct
 {

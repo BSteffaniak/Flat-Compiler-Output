@@ -79,9 +79,11 @@ typedef struct
 } Context2;
 typedef struct
 {
-	/* Byte prev */ char* spectra_tree_nodes_operations_Nova_Operation_Nova_prev;
+	/* var
+	Byte prev */ char* spectra_tree_nodes_operations_Nova_Operation_Nova_prev;
 	/* String input */ nova_Nova_String** spectra_tree_nodes_operations_Nova_Operation_Nova_input;
-	/* Array<String, String, String> operands */ nova_datastruct_list_Nova_Array** spectra_tree_nodes_operations_Nova_Operation_Nova_operands;
+	/* var
+	Array<String, String, String> operands */ nova_datastruct_list_Nova_Array** spectra_tree_nodes_operations_Nova_Operation_Nova_operands;
 } Context3;
 
 

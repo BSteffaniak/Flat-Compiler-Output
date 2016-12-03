@@ -43,22 +43,26 @@ typedef struct
 } Context2;
 typedef struct
 {
-	/* Matrix result */ nova_math_Nova_Matrix** nova_math_Nova_Matrix_Nova_result;
+	/* var
+	Matrix result */ nova_math_Nova_Matrix** nova_math_Nova_Matrix_Nova_result;
 	/* Matrix other */ nova_math_Nova_Matrix** nova_math_Nova_Matrix_Nova_other;
 } Context3;
 typedef struct
 {
-	/* Matrix result */ nova_math_Nova_Matrix** nova_math_Nova_Matrix_Nova_result;
+	/* var
+	Matrix result */ nova_math_Nova_Matrix** nova_math_Nova_Matrix_Nova_result;
 	/* Int outR */ int* nova_math_Nova_Matrix_Nova_outR;
 	/* Matrix other */ nova_math_Nova_Matrix** nova_math_Nova_Matrix_Nova_other;
 } Context4;
 typedef struct
 {
-	/* Matrix result */ nova_math_Nova_Matrix** nova_math_Nova_Matrix_Nova_result;
+	/* var
+	Matrix result */ nova_math_Nova_Matrix** nova_math_Nova_Matrix_Nova_result;
 } Context5;
 typedef struct
 {
-	/* Int order */ int* nova_math_Nova_Matrix_Nova_order;
+	/* var
+	Int order */ int* nova_math_Nova_Matrix_Nova_order;
 } Context6;
 typedef struct
 {

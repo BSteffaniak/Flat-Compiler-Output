@@ -40,7 +40,8 @@ typedef struct
 } Context1;
 typedef struct
 {
-	/* Array<File, File, File> list */ nova_datastruct_list_Nova_Array** nova_io_Nova_File_Nova_list;
+	/* var
+	Array<File, File, File> list */ nova_datastruct_list_Nova_Array** nova_io_Nova_File_Nova_list;
 } Context2;
 typedef struct
 {

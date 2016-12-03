@@ -58,11 +58,11 @@ typedef struct
 } Context2;
 typedef struct
 {
-	/* Int phase */ int* spectra_tree_nodes_Nova_Node_Nova_phase;
+	/* let Int phase */ int* spectra_tree_nodes_Nova_Node_Nova_phase;
 } Context3;
 typedef struct
 {
-	/* String name */ nova_Nova_String** spectra_tree_nodes_Nova_Node_Nova_name;
+	/* let String name */ nova_Nova_String** spectra_tree_nodes_Nova_Node_Nova_name;
 } Context4;
 
 

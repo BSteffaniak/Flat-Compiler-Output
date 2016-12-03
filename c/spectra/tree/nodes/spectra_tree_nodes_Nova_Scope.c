@@ -67,7 +67,8 @@ typedef struct
 } Context1;
 typedef struct
 {
-	/* PlaceholderValue placeholder */ spectra_tree_nodes_Nova_PlaceholderValue** spectra_tree_nodes_Nova_Scope_Nova_placeholder;
+	/* var
+	PlaceholderValue placeholder */ spectra_tree_nodes_Nova_PlaceholderValue** spectra_tree_nodes_Nova_Scope_Nova_placeholder;
 	/* Node child */ spectra_tree_nodes_Nova_Node** spectra_tree_nodes_Nova_Scope_Nova_child;
 } Context2;
 

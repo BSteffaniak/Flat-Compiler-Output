@@ -43,24 +43,31 @@
 
 typedef struct
 {
-	/* Int index = 0 */ int* spectra_util_Nova_CompilerStringFunctions_Nova_index;
+	/* let Int index = 0 */ int* spectra_util_Nova_CompilerStringFunctions_Nova_index;
 } Context1;
 typedef struct
 {
 } Context2;
 typedef struct
 {
-	/* Bool includeEdges = true */ int* spectra_util_Nova_CompilerStringFunctions_Nova_includeEdges;
-	/* IntArray matches */ nova_datastruct_list_Nova_IntArray** spectra_util_Nova_CompilerStringFunctions_Nova_matches;
+	/* let Bool includeEdges = true */ int* spectra_util_Nova_CompilerStringFunctions_Nova_includeEdges;
+	/* let
+	IntArray matches */ nova_datastruct_list_Nova_IntArray** spectra_util_Nova_CompilerStringFunctions_Nova_matches;
 } Context3;
 typedef struct
 {
-	/* Bool inParen */ char* spectra_util_Nova_CompilerStringFunctions_Nova_inParen;
-	/* Int lambda */ int* spectra_util_Nova_CompilerStringFunctions_Nova_lambda;
-	/* String tabs */ nova_Nova_String** spectra_util_Nova_CompilerStringFunctions_Nova_tabs;
-	/* Bool sameLine */ char* spectra_util_Nova_CompilerStringFunctions_Nova_sameLine;
-	/* String output */ nova_Nova_String** spectra_util_Nova_CompilerStringFunctions_Nova_output;
-	/* Int lastIndex */ int* spectra_util_Nova_CompilerStringFunctions_Nova_lastIndex;
+	/* var
+	Bool inParen */ char* spectra_util_Nova_CompilerStringFunctions_Nova_inParen;
+	/* var
+	Int lambda */ int* spectra_util_Nova_CompilerStringFunctions_Nova_lambda;
+	/* var
+	String tabs */ nova_Nova_String** spectra_util_Nova_CompilerStringFunctions_Nova_tabs;
+	/* var
+	Bool sameLine */ char* spectra_util_Nova_CompilerStringFunctions_Nova_sameLine;
+	/* var
+	String output */ nova_Nova_String** spectra_util_Nova_CompilerStringFunctions_Nova_output;
+	/* var
+	Int lastIndex */ int* spectra_util_Nova_CompilerStringFunctions_Nova_lastIndex;
 } Context4;
 
 
@@ -1024,9 +1031,9 @@ nova_Nova_String* spectra_util_Nova_CompilerStringFunctions_Nova_formatIndentati
 	nova_Nova_String* l1_Nova_tabs = (nova_Nova_String*)nova_null;
 	nova_datastruct_list_Nova_Array* l1_Nova_matches = (nova_datastruct_list_Nova_Array*)nova_null;
 	int l1_Nova_lastIndex = 0;
+	int l1_Nova_lambda = 0;
 	char l1_Nova_sameLine = 0;
 	char l1_Nova_inParen = 0;
-	int l1_Nova_lambda = 0;
 	Context4 contextArg133 = 
 	{
 		&l1_Nova_inParen,
@@ -1041,9 +1048,9 @@ nova_Nova_String* spectra_util_Nova_CompilerStringFunctions_Nova_formatIndentati
 	l1_Nova_tabs = nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)(""));
 	l1_Nova_matches = nova_regex_Nova_Regex_static_Nova_getMatches(0, exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("[\\}\\{\\)\\(\n]")), this);
 	l1_Nova_lastIndex = (int)(0);
+	l1_Nova_lambda = (int)(0);
 	l1_Nova_sameLine = 0;
 	l1_Nova_inParen = 0;
-	l1_Nova_lambda = (int)(0);
 	nova_datastruct_list_Nova_List_virtual0_Nova_forEach((nova_datastruct_list_Nova_List*)(l1_Nova_matches), exceptionData, (nova_datastruct_list_Nova_List_closure3_Nova_func)&spectra_util_Nova_CompilerStringFunctions_Nova_lambda133, this, &contextArg133);
 	l1_Nova_output = (nova_Nova_String*)(nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)(l1_Nova_output), exceptionData, nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)(l1_Nova_tabs), exceptionData, nova_Nova_String_virtual_Nova_substring((nova_Nova_String*)(this), exceptionData, l1_Nova_lastIndex, (intptr_t)nova_null))));
 	return l1_Nova_output;

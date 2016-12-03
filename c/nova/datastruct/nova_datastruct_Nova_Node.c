@@ -65,7 +65,8 @@ typedef struct
 } Context9;
 typedef struct
 {
-	/* Queue<Node<Object>, Node<Object>, Node<Object>> queue */ nova_datastruct_list_Nova_Queue** nova_datastruct_Nova_Node_Nova_queue;
+	/* var
+	Queue<Node<Object>, Node<Object>, Node<Object>> queue */ nova_datastruct_list_Nova_Queue** nova_datastruct_Nova_Node_Nova_queue;
 } Context10;
 
 
