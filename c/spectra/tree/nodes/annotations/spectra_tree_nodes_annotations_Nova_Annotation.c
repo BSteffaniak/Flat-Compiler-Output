@@ -203,7 +203,7 @@ spectra_tree_nodes_annotations_Nova_Annotation* spectra_tree_nodes_annotations_N
 	return (spectra_tree_nodes_annotations_Nova_Annotation*)(nova_Nova_Object*)nova_null;
 }
 
-nova_Nova_String* spectra_tree_nodes_annotations_Nova_Annotation_Nova_getRemainingStatement(spectra_tree_nodes_annotations_Nova_Annotation* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* input)
+nova_Nova_String* spectra_tree_nodes_annotations_Nova_Annotation_static_Nova_getRemainingStatement(spectra_tree_nodes_annotations_Nova_Annotation* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* input)
 {
 	return nova_Nova_String_Nova_trim(nova_Nova_String_virtual_Nova_substring((nova_Nova_String*)(input), exceptionData, spectra_util_Nova_CompilerStringFunctions_0_Nova_findEndingMatch(input, exceptionData, 0, '[', ']', (intptr_t)nova_null, (intptr_t)nova_null) + 1, (intptr_t)nova_null), exceptionData, (intptr_t)nova_null, (intptr_t)nova_null, 0);
 }

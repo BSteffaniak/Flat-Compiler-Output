@@ -66,6 +66,7 @@ CCLASS_CLASS
 	long_long nova_time_Nova_Timer_Nova_startTime;
 	long_long nova_time_Nova_Timer_Nova_endTime;
 	long_long nova_time_Nova_CumulativeTimer_Nova_duration;
+	int nova_time_Nova_CumulativeTimer_Nova_iterations;
 )
 
 void nova_time_Nova_CumulativeTimer_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData);

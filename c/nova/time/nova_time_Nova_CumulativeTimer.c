@@ -110,6 +110,7 @@ void nova_time_Nova_CumulativeTimer_Nova_destroy(nova_time_Nova_CumulativeTimer*
 	
 	
 	
+	
 	NOVA_FREE(*this);
 }
 
@@ -121,6 +122,7 @@ void nova_time_Nova_CumulativeTimer_Nova_this(nova_time_Nova_CumulativeTimer* th
 nova_time_Nova_CumulativeTimer* nova_time_Nova_CumulativeTimer_Nova_stop(nova_time_Nova_CumulativeTimer* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
 	nova_time_Nova_Timer_Nova_stop(((nova_time_Nova_Timer*)this), exceptionData);
+	this->nova_time_Nova_CumulativeTimer_Nova_iterations++;
 	nova_time_Nova_CumulativeTimer_Mutatorfunc_Nova_duration(this, exceptionData, nova_time_Nova_CumulativeTimer_Accessorfunc_Nova_duration(this, exceptionData) + nova_time_Nova_Timer_Accessor_Nova_duration(((nova_time_Nova_Timer*)this), exceptionData));
 	return this;
 }
@@ -139,5 +141,7 @@ long_long nova_time_Nova_CumulativeTimer_Mutatorfunc_Nova_duration(nova_time_Nov
 void nova_time_Nova_CumulativeTimer_Nova_super(nova_time_Nova_CumulativeTimer* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
 	this->nova_time_Nova_CumulativeTimer_Nova_duration = 0;
+	this->nova_time_Nova_CumulativeTimer_Nova_iterations = 0;
+	this->nova_time_Nova_CumulativeTimer_Nova_iterations = (int)(0);
 }
 

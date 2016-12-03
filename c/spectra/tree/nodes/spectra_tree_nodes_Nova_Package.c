@@ -130,7 +130,7 @@ nova_datastruct_Nova_HashMap* spectra_tree_nodes_Nova_Package_Nova_filesMap;
 void spectra_tree_nodes_Nova_Package_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData)
 {
 	{
-		spectra_tree_nodes_Nova_Package_Nova_filesMap = nova_datastruct_Nova_HashMap_Nova_construct(0, exceptionData, (intptr_t)nova_null, (intptr_t)nova_null);
+		spectra_tree_nodes_Nova_Package_Nova_filesMap = nova_datastruct_Nova_HashMap_0_Nova_construct(0, exceptionData, (intptr_t)nova_null, (intptr_t)nova_null);
 	}
 }
 

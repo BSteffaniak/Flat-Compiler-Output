@@ -113,9 +113,12 @@ nova_env novaEnv = {
 0,
 &nova_datastruct_Nova_HashMap_Nova_remove,
 &nova_datastruct_Nova_HashMap_Nova_containsKey,
+&nova_datastruct_Nova_HashMap_Nova_clone,
+&nova_datastruct_Nova_HashMap_Nova_toImmutable,
 &nova_datastruct_Nova_HashMap_Nova_get,
 &nova_datastruct_Nova_HashMap_Nova_set,
-&nova_datastruct_Nova_HashMap_Nova_construct,
+&nova_datastruct_Nova_HashMap_0_Nova_construct,
+&nova_datastruct_Nova_HashMap_1_Nova_construct,
 },
 
 {
@@ -124,6 +127,13 @@ nova_env novaEnv = {
 &nova_datastruct_Nova_HashSet_Nova_remove,
 &nova_datastruct_Nova_HashSet_0_Nova_construct,
 &nova_datastruct_Nova_HashSet_1_Nova_construct,
+},
+
+{
+&nova_datastruct_Nova_ImmutableHashMap_Nova_containsKey,
+&nova_datastruct_Nova_ImmutableHashMap_Nova_get,
+&nova_datastruct_Nova_ImmutableHashMap_Nova_set,
+&nova_datastruct_Nova_ImmutableHashMap_0_Nova_construct,
 },
 
 {
@@ -1039,8 +1049,10 @@ nova_env novaEnv = {
 },
 
 {
-&spectra_tree_nodes_annotations_Nova_Annotation_Nova_getRemainingStatement,
 &spectra_tree_nodes_annotations_Nova_Annotation_Nova_construct,
+},
+
+{
 },
 
 {
