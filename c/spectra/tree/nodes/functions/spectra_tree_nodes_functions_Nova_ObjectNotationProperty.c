@@ -207,7 +207,7 @@ spectra_tree_nodes_functions_Nova_ObjectNotationProperty* spectra_tree_nodes_fun
 		l1_Nova_node = spectra_tree_nodes_functions_Nova_ObjectNotationProperty_Nova_construct(0, exceptionData, parent, location);
 		if (spectra_tree_nodes_functions_Nova_ObjectNotationProperty_Nova_parseAssignedNode(l1_Nova_node, exceptionData, spectra_tree_nodes_operations_Nova_Assignment_static_Nova_findAssigned(0, exceptionData, input, l1_Nova_assignmentIndex)) && spectra_tree_nodes_functions_Nova_ObjectNotationProperty_Nova_parseAssignment(l1_Nova_node, exceptionData, spectra_tree_nodes_operations_Nova_Assignment_static_Nova_findAssignment(0, exceptionData, input, l1_Nova_assignmentIndex)))
 		{
-			nova_datastruct_list_Nova_Array_0_Nova_add((nova_datastruct_list_Nova_Array*)(l1_Nova_node->spectra_tree_nodes_operations_Nova_Operation_Nova_operators), exceptionData, (nova_Nova_Object*)(spectra_tree_nodes_operations_Nova_Operator_Nova_construct(0, exceptionData, (spectra_tree_nodes_Nova_Node*)(l1_Nova_node), location, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)(":")))));
+			nova_datastruct_list_Nova_Array_virtual0_Nova_add((nova_datastruct_list_Nova_Array*)(l1_Nova_node->spectra_tree_nodes_operations_Nova_Operation_Nova_operators), exceptionData, (nova_Nova_Object*)(spectra_tree_nodes_operations_Nova_Operator_Nova_construct(0, exceptionData, (spectra_tree_nodes_Nova_Node*)(l1_Nova_node), location, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)(":")))));
 			return l1_Nova_node;
 		}
 	}

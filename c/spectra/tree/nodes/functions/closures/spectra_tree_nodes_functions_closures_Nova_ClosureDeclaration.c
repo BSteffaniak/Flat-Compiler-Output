@@ -33,6 +33,7 @@
 #include <spectra/tree/nodes/functions/spectra_tree_nodes_functions_Nova_Parameter.h>
 #include <spectra/tree/nodes/functions/spectra_tree_nodes_functions_Nova_ParameterList.h>
 #include <spectra/tree/nodes/functions/spectra_tree_nodes_functions_Nova_CallableFunction.h>
+#include <spectra/tree/nodes/generics/spectra_tree_nodes_generics_Nova_GenericParameter.h>
 #include <spectra/util/spectra_util_Nova_Location.h>
 #include <spectra/tree/nodes/functions/closures/spectra_tree_nodes_functions_closures_Nova_ClosureParameter.h>
 #include <spectra/tree/nodes/spectra_tree_nodes_Nova_Value.h>
@@ -111,8 +112,8 @@ spectra_tree_nodes_functions_closures_ClosureDeclaration_Extension_VTable spectr
 		(spectra_tree_nodes_functions_Nova_Parameter*(*)(spectra_tree_nodes_functions_Nova_CallableFunction*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, int))spectra_tree_nodes_functions_closures_Nova_ClosureDeclaration_Nova_parseParameter,
 		(char(*)(spectra_tree_nodes_functions_Nova_CallableFunction*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, int))spectra_tree_nodes_functions_Nova_CallableFunction_Nova_parseParameters,
 		(spectra_tree_nodes_functions_Nova_ParameterList*(*)(spectra_tree_nodes_functions_Nova_CallableFunction*, nova_exception_Nova_ExceptionData*))spectra_tree_nodes_functions_closures_Nova_ClosureDeclaration_Accessorfunc_Nova_parameterList,
-		(nova_datastruct_list_Nova_Array*(*)(spectra_tree_nodes_generics_Nova_GenericCompatible*, nova_exception_Nova_ExceptionData*, nova_datastruct_list_Nova_Array*))spectra_tree_nodes_generics_Nova_GenericCompatible_Mutator_Nova_genericParameters,
-		(nova_datastruct_list_Nova_Array*(*)(spectra_tree_nodes_generics_Nova_GenericCompatible*, nova_exception_Nova_ExceptionData*))spectra_tree_nodes_generics_Nova_GenericCompatible_Accessor_Nova_genericParameters,
+		(nova_datastruct_list_Nova_Array*(*)(spectra_tree_nodes_generics_Nova_GenericCompatible*, nova_exception_Nova_ExceptionData*, nova_datastruct_list_Nova_Array*))spectra_tree_nodes_functions_closures_Nova_ClosureDeclaration_Mutatorfunc_Nova_genericParameters,
+		(nova_datastruct_list_Nova_Array*(*)(spectra_tree_nodes_generics_Nova_GenericCompatible*, nova_exception_Nova_ExceptionData*))spectra_tree_nodes_functions_closures_Nova_ClosureDeclaration_Accessorfunc_Nova_genericParameters,
 		(void(*)(spectra_tree_nodes_operations_Nova_Assignable*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Value*))spectra_tree_nodes_operations_Nova_Assignable_Nova_onAssigned,
 	},
 	spectra_tree_nodes_Nova_Node_Nova_toString,
@@ -188,6 +189,7 @@ void spectra_tree_nodes_functions_closures_Nova_ClosureDeclaration_Nova_destroy(
 	}
 	
 	spectra_tree_nodes_functions_Nova_ParameterList_Nova_destroy(&(*this)->spectra_tree_nodes_functions_closures_Nova_ClosureDeclaration_Nova_parameterList, exceptionData);
+	nova_datastruct_list_Nova_Array_Nova_destroy(&(*this)->spectra_tree_nodes_functions_closures_Nova_ClosureDeclaration_Nova_genericParameters, exceptionData);
 	
 	NOVA_FREE(*this);
 }
@@ -279,8 +281,20 @@ spectra_tree_nodes_functions_Nova_ParameterList* spectra_tree_nodes_functions_cl
 	return value;
 }
 
+nova_datastruct_list_Nova_Array* spectra_tree_nodes_functions_closures_Nova_ClosureDeclaration_Accessorfunc_Nova_genericParameters(spectra_tree_nodes_functions_closures_Nova_ClosureDeclaration* this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+	return this->spectra_tree_nodes_functions_closures_Nova_ClosureDeclaration_Nova_genericParameters;
+}
+
+nova_datastruct_list_Nova_Array* spectra_tree_nodes_functions_closures_Nova_ClosureDeclaration_Mutatorfunc_Nova_genericParameters(spectra_tree_nodes_functions_closures_Nova_ClosureDeclaration* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_list_Nova_Array* value)
+{
+	this->spectra_tree_nodes_functions_closures_Nova_ClosureDeclaration_Nova_genericParameters = value;
+	return (nova_datastruct_list_Nova_Array*)value;
+}
+
 void spectra_tree_nodes_functions_closures_Nova_ClosureDeclaration_Nova_super(spectra_tree_nodes_functions_closures_Nova_ClosureDeclaration* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
 	this->spectra_tree_nodes_functions_closures_Nova_ClosureDeclaration_Nova_parameterList = (spectra_tree_nodes_functions_Nova_ParameterList*)nova_null;
+	this->spectra_tree_nodes_functions_closures_Nova_ClosureDeclaration_Nova_genericParameters = (nova_datastruct_list_Nova_Array*)nova_null;
 }
 

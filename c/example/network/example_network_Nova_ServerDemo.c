@@ -131,7 +131,7 @@ void example_network_Nova_ServerDemo_static_Nova_main(example_network_Nova_Serve
 			example_network_Nova_ConnectionThread* l4_Nova_thread = (example_network_Nova_ConnectionThread*)nova_null;
 			example_network_Nova_OutputThread* l4_Nova_othread = (example_network_Nova_OutputThread*)nova_null;
 			
-			nova_datastruct_list_Nova_Array_0_Nova_add((nova_datastruct_list_Nova_Array*)(l1_Nova_connections), exceptionData, (nova_Nova_Object*)(l2_Nova_request));
+			nova_datastruct_list_Nova_Array_virtual0_Nova_add((nova_datastruct_list_Nova_Array*)(l1_Nova_connections), exceptionData, (nova_Nova_Object*)(l2_Nova_request));
 			l4_Nova_thread = example_network_Nova_ConnectionThread_Nova_construct(0, exceptionData, l2_Nova_request);
 			nova_thread_Nova_Thread_Nova_start((nova_thread_Nova_Thread*)(l4_Nova_thread), exceptionData);
 			l4_Nova_othread = example_network_Nova_OutputThread_Nova_construct(0, exceptionData, l1_Nova_socket, l2_Nova_request);

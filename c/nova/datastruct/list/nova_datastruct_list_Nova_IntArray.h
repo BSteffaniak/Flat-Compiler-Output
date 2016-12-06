@@ -75,10 +75,14 @@ struct nova_datastruct_list_IntArray_Extension_VTable
 	nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_datastruct_list_Nova_Array*, nova_exception_Nova_ExceptionData*);
 	long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 	nova_datastruct_list_Nova_Array* (*nova_datastruct_list_Nova_Array_virtual_Nova_addUnique)(nova_datastruct_list_Nova_Array*, nova_exception_Nova_ExceptionData*, nova_Nova_Object*);
+	nova_datastruct_list_Nova_Array* (*nova_datastruct_list_Nova_Array_virtual0_Nova_add)(nova_datastruct_list_Nova_Array*, nova_exception_Nova_ExceptionData*, nova_Nova_Object*);
+	nova_datastruct_list_Nova_Array* (*nova_datastruct_list_Nova_Array_virtual1_Nova_add)(nova_datastruct_list_Nova_Array*, nova_exception_Nova_ExceptionData*, int, nova_Nova_Object*);
+	int (*nova_datastruct_list_Nova_Array_virtual_Nova_indexOf)(nova_datastruct_list_Nova_Array*, nova_exception_Nova_ExceptionData*, nova_Nova_Object*, int);
 	nova_Nova_Object** (*nova_datastruct_list_Nova_Array_virtual_Nova_cloneData)(nova_datastruct_list_Nova_Array*, nova_exception_Nova_ExceptionData*);
 	nova_datastruct_list_Nova_IntArray* (*nova_datastruct_list_Nova_Array_virtual_Nova_clone)(nova_datastruct_list_Nova_IntArray*, nova_exception_Nova_ExceptionData*);
 	int (*nova_datastruct_list_Nova_Array_virtual_Nova_get)(nova_datastruct_list_Nova_IntArray*, nova_exception_Nova_ExceptionData*, int);
 	int (*nova_datastruct_list_Nova_Array_virtual_Nova_set)(nova_datastruct_list_Nova_IntArray*, nova_exception_Nova_ExceptionData*, int, int);
+	char (*nova_datastruct_list_Nova_Array_virtual_Accessor_Nova_empty)(nova_datastruct_list_Nova_Array*, nova_exception_Nova_ExceptionData*);
 	int (*nova_datastruct_list_Nova_Array_virtual_Accessorfunc_Nova_first)(nova_datastruct_list_Nova_IntArray*, nova_exception_Nova_ExceptionData*);
 	int (*nova_datastruct_list_Nova_Array_virtual_Accessorfunc_Nova_last)(nova_datastruct_list_Nova_IntArray*, nova_exception_Nova_ExceptionData*);
 };

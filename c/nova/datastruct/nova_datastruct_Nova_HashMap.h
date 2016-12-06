@@ -87,7 +87,7 @@ CCLASS_CLASS
 	nova_datastruct_Nova_HashMap, 
 	
 	nova_datastruct_HashMap_Extension_VTable* vtable;
-	int nova_datastruct_Nova_HashMap_Nova_size;
+	int nova_datastruct_Nova_HashMap_Nova_count;
 	struct Private* prv;
 )
 

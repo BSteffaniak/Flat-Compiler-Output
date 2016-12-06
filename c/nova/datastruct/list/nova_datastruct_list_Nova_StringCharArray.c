@@ -64,33 +64,23 @@ nova_datastruct_list_StringCharArray_Extension_VTable nova_datastruct_list_Strin
 		0,
 		0,
 		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
 	},
 	nova_datastruct_list_Nova_Array_Nova_toString,
 	nova_datastruct_list_Nova_CharArray_Accessor_Nova_hashCodeLong,
 	nova_datastruct_list_Nova_CharArray_Nova_addUnique,
+	nova_datastruct_list_Nova_Array_0_Nova_add,
+	nova_datastruct_list_Nova_Array_1_Nova_add,
+	nova_datastruct_list_Nova_Array_Nova_indexOf,
 	nova_datastruct_list_Nova_CharArray_Nova_cloneData,
 	nova_datastruct_list_Nova_CharArray_Nova_clone,
 	nova_datastruct_list_Nova_CharArray_Nova_get,
 	nova_datastruct_list_Nova_CharArray_Nova_set,
+	nova_datastruct_list_Nova_Array_Accessor_Nova_empty,
 	nova_datastruct_list_Nova_CharArray_Accessorfunc_Nova_first,
 	nova_datastruct_list_Nova_CharArray_Accessorfunc_Nova_last,
 };
 
 
-CCLASS_PRIVATE
-(
-	int nova_datastruct_list_Nova_CharArray_Nova_indexSize;
-	
-)
 void nova_datastruct_list_Nova_StringCharArray_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData)
 {
 	{
@@ -99,7 +89,7 @@ void nova_datastruct_list_Nova_StringCharArray_Nova_init_static(nova_exception_N
 
 nova_datastruct_list_Nova_StringCharArray* nova_datastruct_list_Nova_StringCharArray_0_Nova_construct(nova_datastruct_list_Nova_StringCharArray* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_list_Nova_CharArray* data)
 {
-	CCLASS_NEW(nova_datastruct_list_Nova_StringCharArray, this);
+	CCLASS_NEW(nova_datastruct_list_Nova_StringCharArray, this,);
 	this->vtable = &nova_datastruct_list_StringCharArray_Extension_VTable_val;
 	nova_Nova_Object_Nova_super((nova_Nova_Object*)this, exceptionData);
 	nova_datastruct_list_Nova_Array_Nova_super((nova_datastruct_list_Nova_Array*)this, exceptionData);
@@ -115,7 +105,7 @@ nova_datastruct_list_Nova_StringCharArray* nova_datastruct_list_Nova_StringCharA
 
 nova_datastruct_list_Nova_StringCharArray* nova_datastruct_list_Nova_StringCharArray_1_Nova_construct(nova_datastruct_list_Nova_StringCharArray* this, nova_exception_Nova_ExceptionData* exceptionData, char* data, int count)
 {
-	CCLASS_NEW(nova_datastruct_list_Nova_StringCharArray, this);
+	CCLASS_NEW(nova_datastruct_list_Nova_StringCharArray, this,);
 	this->vtable = &nova_datastruct_list_StringCharArray_Extension_VTable_val;
 	nova_Nova_Object_Nova_super((nova_Nova_Object*)this, exceptionData);
 	nova_datastruct_list_Nova_Array_Nova_super((nova_datastruct_list_Nova_Array*)this, exceptionData);
@@ -136,14 +126,13 @@ void nova_datastruct_list_Nova_StringCharArray_Nova_destroy(nova_datastruct_list
 		return;
 	}
 	
-	NOVA_FREE((*this)->prv);
 	
 	NOVA_FREE(*this);
 }
 
 void nova_datastruct_list_Nova_StringCharArray_0_Nova_this(nova_datastruct_list_Nova_StringCharArray* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_list_Nova_CharArray* data)
 {
-	nova_datastruct_list_Nova_CharArray_6_Nova_this((nova_datastruct_list_Nova_CharArray*)(this), exceptionData, (char*)(data->nova_datastruct_list_Nova_Array_Nova_data), nova_datastruct_list_Nova_Array_Accessorfunc_Nova_count((nova_datastruct_list_Nova_Array*)(data), exceptionData));
+	nova_datastruct_list_Nova_CharArray_6_Nova_this((nova_datastruct_list_Nova_CharArray*)(this), exceptionData, (char*)(data->nova_datastruct_list_Nova_Array_Nova_data), nova_datastruct_list_Nova_List_virtual_Accessor_Nova_count((nova_datastruct_list_Nova_List*)(data), exceptionData));
 }
 
 void nova_datastruct_list_Nova_StringCharArray_1_Nova_this(nova_datastruct_list_Nova_StringCharArray* this, nova_exception_Nova_ExceptionData* exceptionData, char* data, int count)

@@ -62,8 +62,6 @@ stabilitytest_ExceptionStability_Extension_VTable stabilitytest_ExceptionStabili
 		0,
 		(char(*)(nova_operators_Nova_Equals*, nova_exception_Nova_ExceptionData*, nova_Nova_Object*))nova_Nova_Object_0_Nova_equals,
 		0,
-		0,
-		0,
 	},
 	nova_Nova_Object_Nova_toString,
 	nova_Nova_Object_Accessor_Nova_hashCodeLong,
@@ -176,15 +174,15 @@ void stabilitytest_Nova_ExceptionStability_Nova_testException(stabilitytest_Nova
 				{
 					int l2_Nova_den = 0;
 					int l2_Nova_i = 0;
-					int nova_zero_check13 = 0;
+					int nova_zero_check5 = 0;
 					
 					l2_Nova_den = (int)(0);
-					nova_zero_check13 = l2_Nova_den;
-					if (nova_zero_check13 == 0)
+					nova_zero_check5 = l2_Nova_den;
+					if (nova_zero_check5 == 0)
 					{
 						THROW(nova_exception_Nova_DivideByZeroException_Nova_construct(0, exceptionData), 0);
 					}
-					l2_Nova_i = 43 / nova_zero_check13;
+					l2_Nova_i = 43 / nova_zero_check5;
 				}
 			}
 			CATCH (nova_exception_DivideByZeroException_Extension_VTable_val.classInstance)

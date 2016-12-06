@@ -65,7 +65,7 @@ CCLASS_CLASS
 	nova_web_js_json_Nova_Json, 
 	
 	nova_web_js_json_Json_Extension_VTable* vtable;
-	int nova_datastruct_Nova_HashMap_Nova_size;
+	int nova_datastruct_Nova_HashMap_Nova_count;
 	struct Private* prv;
 )
 

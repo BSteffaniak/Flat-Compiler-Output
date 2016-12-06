@@ -69,15 +69,6 @@ nova_datastruct_list_LinkedList_Extension_VTable nova_datastruct_list_LinkedList
 		0,
 		0,
 		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
 	},
 	nova_Nova_Object_Nova_toString,
 	nova_Nova_Object_Accessor_Nova_hashCodeLong,
@@ -91,7 +82,7 @@ CCLASS_PRIVATE
 	
 )
 
-char nova_datastruct_list_Nova_LinkedList_Nova_lambda83(nova_datastruct_list_Nova_LinkedList* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_Object* _1, Context1* context);
+char nova_datastruct_list_Nova_LinkedList_Nova_lambda40(nova_datastruct_list_Nova_LinkedList* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_Object* _1, Context1* context);
 
 
 
@@ -191,12 +182,12 @@ nova_datastruct_list_Nova_LinkedList* nova_datastruct_list_Nova_LinkedList_Nova_
 
 char nova_datastruct_list_Nova_LinkedList_0_Nova_contains(nova_datastruct_list_Nova_LinkedList* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_Object* value)
 {
-	Context1 contextArg83 = 
+	Context1 contextArg40 = 
 	{
 		&value,
 	};
 	
-	return nova_datastruct_list_Nova_LinkedList_0_Nova_any(this, exceptionData, (nova_datastruct_list_Nova_LinkedList_closure9_Nova_anyFunc)&nova_datastruct_list_Nova_LinkedList_Nova_lambda83, this, &contextArg83);
+	return nova_datastruct_list_Nova_LinkedList_0_Nova_any(this, exceptionData, (nova_datastruct_list_Nova_LinkedList_closure9_Nova_anyFunc)&nova_datastruct_list_Nova_LinkedList_Nova_lambda40, this, &contextArg40);
 }
 
 nova_datastruct_list_Nova_Array* nova_datastruct_list_Nova_LinkedList_Nova_toArray(nova_datastruct_list_Nova_LinkedList* this, nova_exception_Nova_ExceptionData* exceptionData)
@@ -345,7 +336,7 @@ nova_datastruct_list_Nova_LinkedList* nova_datastruct_list_Nova_LinkedList_Nova_
 		l1_Nova_element = (nova_Nova_Object*)(nova_datastruct_list_Nova_LinkedListIterator_Accessor_Nova_next(nova_local_0, exceptionData));
 		if (l1_Nova_i++ > howMany)
 		{
-			nova_datastruct_list_Nova_Array_0_Nova_add(l1_Nova_list, exceptionData, (nova_Nova_Object*)(l1_Nova_element));
+			nova_datastruct_list_Nova_Array_virtual0_Nova_add((nova_datastruct_list_Nova_Array*)(l1_Nova_list), exceptionData, (nova_Nova_Object*)(l1_Nova_element));
 		}
 	}
 	return (nova_datastruct_list_Nova_LinkedList*)l1_Nova_list;
@@ -406,7 +397,7 @@ void nova_datastruct_list_Nova_LinkedList_4_Nova_this(nova_datastruct_list_Nova_
 {
 }
 
-char nova_datastruct_list_Nova_LinkedList_Nova_lambda83(nova_datastruct_list_Nova_LinkedList* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_Object* _1, Context1* context)
+char nova_datastruct_list_Nova_LinkedList_Nova_lambda40(nova_datastruct_list_Nova_LinkedList* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_Object* _1, Context1* context)
 {
 	return (nova_Nova_Object*)_1 == (nova_Nova_Object*)(*context->nova_datastruct_list_Nova_LinkedList_Nova_value);
 }

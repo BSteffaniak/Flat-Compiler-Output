@@ -76,15 +76,6 @@ nova_datastruct_ImmutableHashMap_Extension_VTable nova_datastruct_ImmutableHashM
 		0,
 		0,
 		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
 	},
 	nova_Nova_Object_Nova_toString,
 	nova_Nova_Object_Accessor_Nova_hashCodeLong,
@@ -267,7 +258,7 @@ nova_Nova_Object* nova_datastruct_Nova_ImmutableHashMap_Nova_lambda11(nova_datas
 
 int nova_datastruct_Nova_ImmutableHashMap_Accessor_Nova_count(nova_datastruct_Nova_ImmutableHashMap* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
-	return nova_datastruct_list_Nova_List_virtual_Accessor_Nova_count((nova_datastruct_list_Nova_List*)(this->prv->nova_datastruct_Nova_ImmutableHashMap_Nova_map), exceptionData);
+	return this->prv->nova_datastruct_Nova_ImmutableHashMap_Nova_map->nova_datastruct_Nova_HashMap_Nova_count;
 }
 
 
