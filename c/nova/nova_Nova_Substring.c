@@ -36,6 +36,9 @@
 #include <nova/NativeObject.h>
 #include <nova/operators/nova_operators_Nova_Equals.h>
 
+typedef struct
+{
+} Context1;
 
 
 nova_Substring_Extension_VTable nova_Substring_Extension_VTable_val =
@@ -77,12 +80,14 @@ nova_Substring_Extension_VTable nova_Substring_Extension_VTable_val =
 		0,
 	},
 	nova_Nova_String_Nova_toString,
-	nova_Nova_String_Accessor_Nova_hashCodeLong,
+	nova_Nova_Substring_Accessor_Nova_hashCodeLong,
 	nova_Nova_String_Nova_concat,
 	nova_Nova_Substring_Nova_substring,
 };
 
 
+
+long_long nova_Nova_Substring_Nova_lambda3(nova_Nova_Substring* this, nova_exception_Nova_ExceptionData* exceptionData, long_long v, char c, int _3, nova_datastruct_list_Nova_CharArray* _4, Context1* context);
 
 
 void nova_Nova_Substring_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData)
@@ -149,9 +154,24 @@ nova_Nova_String* nova_Nova_Substring_Nova_substring(nova_Nova_Substring* this, 
 	return (nova_Nova_String*)nova_Nova_Substring_Nova_construct(0, exceptionData, this->nova_Nova_Substring_Nova_source, this->nova_Nova_Substring_Nova_start + start, this->nova_Nova_Substring_Nova_start + end);
 }
 
+long_long nova_Nova_Substring_Nova_lambda3(nova_Nova_Substring* this, nova_exception_Nova_ExceptionData* exceptionData, long_long v, char c, int _3, nova_datastruct_list_Nova_CharArray* _4, Context1* context)
+{
+	return 31 * v + (int)c;
+}
+
 int nova_Nova_Substring_Accessor_Nova_end(nova_Nova_Substring* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
 	return this->nova_Nova_Substring_Nova_start + this->nova_Nova_String_Nova_count;
+}
+
+
+long_long nova_Nova_Substring_Accessor_Nova_hashCodeLong(nova_Nova_Substring* this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+	Context1 contextArg3 = 
+	{
+	};
+	
+	return nova_datastruct_list_Nova_CharArray_Nova_reduce((nova_datastruct_list_Nova_CharArray*)(nova_datastruct_list_Nova_CharArray_Nova_take((nova_datastruct_list_Nova_CharArray*)(nova_datastruct_list_Nova_CharArray_Nova_skip((nova_datastruct_list_Nova_CharArray*)(this->nova_Nova_String_Nova_chars), exceptionData, this->nova_Nova_Substring_Nova_start)), exceptionData, this->nova_Nova_String_Nova_count)), exceptionData, (nova_datastruct_list_Nova_CharArray_closure6_Nova_func)&nova_Nova_Substring_Nova_lambda3, this, &contextArg3, 0);
 }
 
 
