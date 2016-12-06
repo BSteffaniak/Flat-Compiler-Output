@@ -237,10 +237,10 @@ char spectra_tree_nodes_operations_Nova_Assignment_Nova_parseAssignedNode(spectr
 	spectra_tree_nodes_variables_Nova_LocalDeclaration* l1_Nova_declaration = (spectra_tree_nodes_variables_Nova_LocalDeclaration*)nova_null;
 	
 	l1_Nova_declaration = (spectra_tree_nodes_variables_Nova_LocalDeclaration*)((nova_Nova_Object*)nova_null);
-	if (!(l1_Nova_declaration != (spectra_tree_nodes_variables_Nova_LocalDeclaration*)nova_null))
+	if ((l1_Nova_declaration) == (spectra_tree_nodes_variables_Nova_LocalDeclaration*)nova_null)
 	{
 		l1_Nova_declaration = (spectra_tree_nodes_variables_Nova_LocalDeclaration*)(spectra_tree_nodes_variables_Nova_ImplicitDeclaration_static_Nova_parse(0, exceptionData, input, (spectra_tree_nodes_Nova_Node*)(this), this->spectra_tree_nodes_Nova_Node_Nova_location, 0));
-		if (!(l1_Nova_declaration != (spectra_tree_nodes_variables_Nova_LocalDeclaration*)nova_null))
+		if ((l1_Nova_declaration) == (spectra_tree_nodes_variables_Nova_LocalDeclaration*)nova_null)
 		{
 			l1_Nova_declaration = (spectra_tree_nodes_variables_Nova_LocalDeclaration*)(spectra_tree_nodes_variables_Nova_LocalDeclaration_static_Nova_parse(0, exceptionData, input, (spectra_tree_nodes_Nova_Node*)(this), this->spectra_tree_nodes_Nova_Node_Nova_location, 0));
 		}

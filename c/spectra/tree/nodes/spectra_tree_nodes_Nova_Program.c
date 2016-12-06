@@ -203,7 +203,7 @@ nova_Nova_String* spectra_tree_nodes_Nova_Program_Nova_toString(spectra_tree_nod
 
 char spectra_tree_nodes_Nova_Program_Nova_lambda45(spectra_tree_nodes_Nova_Program* this, nova_exception_Nova_ExceptionData* exceptionData, spectra_tree_nodes_Nova_NovaFile* f, Context1* context)
 {
-	return (nova_Nova_Object*)spectra_tree_nodes_Nova_NovaFile_Accessor_Nova_classDeclaration(f, exceptionData) != (nova_Nova_Object*)(spectra_tree_nodes_Nova_ClassDeclaration*)nova_null && nova_Nova_String_Nova_equals(spectra_tree_nodes_Nova_ClassDeclaration_Accessorfunc_Nova_location(spectra_tree_nodes_Nova_NovaFile_Accessor_Nova_classDeclaration(f, exceptionData), exceptionData), exceptionData, (*context->spectra_tree_nodes_Nova_Program_Nova_location));
+	return spectra_tree_nodes_Nova_NovaFile_Accessor_Nova_classDeclaration(f, exceptionData) != (spectra_tree_nodes_Nova_ClassDeclaration*)nova_null && nova_Nova_String_Nova_equals(spectra_tree_nodes_Nova_ClassDeclaration_Accessorfunc_Nova_location(spectra_tree_nodes_Nova_NovaFile_Accessor_Nova_classDeclaration(f, exceptionData), exceptionData), exceptionData, (*context->spectra_tree_nodes_Nova_Program_Nova_location));
 }
 
 spectra_tree_nodes_Nova_Program* spectra_tree_nodes_Nova_Program_Accessor_Nova_program(spectra_tree_nodes_Nova_Program* this, nova_exception_Nova_ExceptionData* exceptionData)

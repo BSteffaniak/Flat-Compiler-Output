@@ -219,7 +219,7 @@ void nova_math_Nova_Matrix_6_Nova_this(nova_math_Nova_Matrix* this, nova_excepti
 
 void nova_math_Nova_Matrix_7_Nova_this(nova_math_Nova_Matrix* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_list_Nova_Array* data)
 {
-	if ((nova_Nova_Object*)data == (nova_Nova_Object*)(nova_datastruct_list_Nova_Array*)nova_null || nova_datastruct_list_Nova_List_virtual_Accessor_Nova_count((nova_datastruct_list_Nova_List*)(data), exceptionData) == 0)
+	if (data == (nova_datastruct_list_Nova_Array*)nova_null || nova_datastruct_list_Nova_List_virtual_Accessor_Nova_count((nova_datastruct_list_Nova_List*)(data), exceptionData) == 0)
 	{
 		THROW(nova_exception_Nova_InvalidArgumentException_Nova_construct(0, exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("Matrix size must be greater than 0 rows and columns"))), 0);
 	}

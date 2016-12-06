@@ -262,13 +262,13 @@ spectra_tree_nodes_Nova_Node* spectra_tree_nodes_Nova_NovaFile_Nova_parseStateme
 	location = (spectra_util_Nova_Location*)(location == 0 ? (nova_Nova_Object*)spectra_util_Nova_Location_Nova_INVALID : (nova_Nova_Object*)location);
 	require = (int)(require == (intptr_t)nova_null ? 1 : require);
 	l1_Nova_node = (nova_Nova_Object*)nova_null;
-	if (!(l1_Nova_node != (nova_Nova_Object*)nova_null))
+	if ((l1_Nova_node) == (nova_Nova_Object*)nova_null)
 	{
 		l1_Nova_node = (nova_Nova_Object*)(spectra_tree_nodes_Nova_ClassDeclaration_static_Nova_parse(0, exceptionData, input, (spectra_tree_nodes_Nova_Node*)(this), location, require));
-		if (!(l1_Nova_node != (nova_Nova_Object*)nova_null))
+		if ((l1_Nova_node) == (nova_Nova_Object*)nova_null)
 		{
 			l1_Nova_node = (nova_Nova_Object*)(spectra_tree_nodes_Nova_Import_static_Nova_parse(0, exceptionData, input, (spectra_tree_nodes_Nova_Node*)(this), location, require));
-			if (!(l1_Nova_node != (nova_Nova_Object*)nova_null))
+			if ((l1_Nova_node) == (nova_Nova_Object*)nova_null)
 			{
 				l1_Nova_node = (nova_Nova_Object*)(spectra_tree_nodes_Nova_Package_static_Nova_parse(0, exceptionData, input, (spectra_tree_nodes_Nova_Node*)(this), location, require));
 			}

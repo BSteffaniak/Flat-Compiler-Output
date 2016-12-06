@@ -239,7 +239,7 @@ return (spectra_tree_nodes_functions_closures_Nova_ClosureDeclaration*)(nova_Nov
 
 char spectra_tree_nodes_functions_closures_Nova_ClosureDeclaration_Nova_parseType(spectra_tree_nodes_functions_closures_Nova_ClosureDeclaration* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* type)
 {
-	return (nova_Nova_Object*)type == (nova_Nova_Object*)(nova_Nova_String*)nova_null || spectra_tree_nodes_Nova_Value_Nova_parseType((spectra_tree_nodes_Nova_Value*)(((spectra_tree_nodes_functions_Nova_Parameter*)this)), exceptionData, type);
+	return type == (nova_Nova_String*)nova_null || spectra_tree_nodes_Nova_Value_Nova_parseType((spectra_tree_nodes_Nova_Value*)(((spectra_tree_nodes_functions_Nova_Parameter*)this)), exceptionData, type);
 }
 
 nova_Nova_String* spectra_tree_nodes_functions_closures_Nova_ClosureDeclaration_static_Nova_findType(spectra_tree_nodes_functions_closures_Nova_ClosureDeclaration* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* input, int endIndex)

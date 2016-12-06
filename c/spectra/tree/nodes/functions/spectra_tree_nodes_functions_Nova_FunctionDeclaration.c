@@ -228,7 +228,7 @@ spectra_tree_nodes_variables_Nova_VariableDeclaration* spectra_tree_nodes_functi
 	};
 	
 	searchAncestors = (int)(searchAncestors == (intptr_t)nova_null ? 1 : searchAncestors);
-	if ((nova_Nova_Object*)this->spectra_tree_nodes_functions_Nova_FunctionDeclaration_Nova_objectReference != (nova_Nova_Object*)(spectra_tree_nodes_functions_Nova_Parameter*)nova_null && nova_Nova_String_Nova_equals(this->spectra_tree_nodes_functions_Nova_FunctionDeclaration_Nova_objectReference->spectra_tree_nodes_Nova_Identifier_Nova_name, exceptionData, name))
+	if (this->spectra_tree_nodes_functions_Nova_FunctionDeclaration_Nova_objectReference != (spectra_tree_nodes_functions_Nova_Parameter*)nova_null && nova_Nova_String_Nova_equals(this->spectra_tree_nodes_functions_Nova_FunctionDeclaration_Nova_objectReference->spectra_tree_nodes_Nova_Identifier_Nova_name, exceptionData, name))
 	{
 		return (spectra_tree_nodes_variables_Nova_VariableDeclaration*)this->spectra_tree_nodes_functions_Nova_FunctionDeclaration_Nova_objectReference;
 	}
@@ -252,7 +252,7 @@ spectra_tree_nodes_functions_Nova_FunctionDeclaration* spectra_tree_nodes_functi
 	l1_Nova_signature = spectra_tree_nodes_functions_Nova_FunctionDeclaration_static_Nova_findSignature(0, exceptionData, input);
 	l1_Nova_parameters = spectra_tree_nodes_functions_Nova_FunctionDeclaration_static_Nova_findParameters(0, exceptionData, input);
 	l1_Nova_returnType = spectra_tree_nodes_functions_Nova_FunctionDeclaration_static_Nova_findReturnType(0, exceptionData, input);
-	if ((nova_Nova_Object*)l1_Nova_signature != (nova_Nova_Object*)(nova_Nova_String*)nova_null && (nova_Nova_Object*)l1_Nova_parameters != (nova_Nova_Object*)(nova_Nova_String*)nova_null && l1_Nova_returnType != (nova_Nova_String*)nova_null)
+	if (l1_Nova_signature != (nova_Nova_String*)nova_null && l1_Nova_parameters != (nova_Nova_String*)nova_null && l1_Nova_returnType != (nova_Nova_String*)nova_null)
 	{
 		spectra_tree_nodes_functions_Nova_FunctionDeclaration* l1_Nova_node = (spectra_tree_nodes_functions_Nova_FunctionDeclaration*)nova_null;
 		

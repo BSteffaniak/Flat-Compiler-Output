@@ -271,7 +271,7 @@ nova_Nova_String* nova_Nova_String_Nova_repeat(nova_Nova_String* this, nova_exce
 
 char nova_Nova_String_Nova_equals(nova_Nova_String* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* other)
 {
-	return (nova_Nova_Object*)other != (nova_Nova_Object*)(nova_Nova_String*)nova_null && this->nova_Nova_String_Nova_count == other->nova_Nova_String_Nova_count && nova_Nova_String_Nova_compareTo(this, exceptionData, other) == 0;
+	return other != (nova_Nova_String*)nova_null && this->nova_Nova_String_Nova_count == other->nova_Nova_String_Nova_count && nova_Nova_String_Nova_compareTo(this, exceptionData, other) == 0;
 }
 
 nova_Nova_String* nova_Nova_String_0_Nova_replace(nova_Nova_String* this, nova_exception_Nova_ExceptionData* exceptionData, nova_regex_Nova_Pattern* pattern, nova_Nova_String* replace)

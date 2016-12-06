@@ -183,7 +183,7 @@ void nova_datastruct_Nova_Bounds_Nova_invalidate(nova_datastruct_Nova_Bounds* th
 
 char nova_datastruct_Nova_Bounds_Nova_equals(nova_datastruct_Nova_Bounds* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_Nova_Bounds* bounds)
 {
-	return (nova_Nova_Object*)bounds != (nova_Nova_Object*)(nova_datastruct_Nova_Bounds*)nova_null && bounds->nova_datastruct_Nova_Bounds_Nova_start == this->nova_datastruct_Nova_Bounds_Nova_start && bounds->nova_datastruct_Nova_Bounds_Nova_end == this->nova_datastruct_Nova_Bounds_Nova_end;
+	return bounds != (nova_datastruct_Nova_Bounds*)nova_null && bounds->nova_datastruct_Nova_Bounds_Nova_start == this->nova_datastruct_Nova_Bounds_Nova_start && bounds->nova_datastruct_Nova_Bounds_Nova_end == this->nova_datastruct_Nova_Bounds_Nova_end;
 }
 
 nova_Nova_String* nova_datastruct_Nova_Bounds_Nova_toString(nova_datastruct_Nova_Bounds* this, nova_exception_Nova_ExceptionData* exceptionData)

@@ -117,7 +117,7 @@ spectra_tree_nodes_Nova_Accessible* spectra_tree_nodes_Nova_Accessible_2_Nova_ge
 	spectra_tree_nodes_Nova_Accessible* l1_Nova_current = (spectra_tree_nodes_Nova_Accessible*)nova_null;
 	
 	l1_Nova_current = spectra_tree_nodes_Nova_Accessible_Accessor_Nova_accessingNode(this, exceptionData);
-	while ((nova_Nova_Object*)l1_Nova_current != (nova_Nova_Object*)(spectra_tree_nodes_Nova_Accessible*)nova_null && spectra_util_Nova_SyntaxUtils_static_Nova_checkTypes(0, exceptionData, types, ((nova_Nova_Object*)l1_Nova_current)->vtable->classInstance) == opposite)
+	while (l1_Nova_current != (spectra_tree_nodes_Nova_Accessible*)nova_null && spectra_util_Nova_SyntaxUtils_static_Nova_checkTypes(0, exceptionData, types, ((nova_Nova_Object*)l1_Nova_current)->vtable->classInstance) == opposite)
 	{
 		l1_Nova_current = spectra_tree_nodes_Nova_Accessible_Accessor_Nova_accessingNode(l1_Nova_current, exceptionData);
 	}
@@ -142,7 +142,7 @@ spectra_tree_nodes_Nova_Accessible* spectra_tree_nodes_Nova_Accessible_1_Nova_ge
 	{
 		return l1_Nova_current;
 	}
-	while ((nova_Nova_Object*)l1_Nova_current != (nova_Nova_Object*)(spectra_tree_nodes_Nova_Accessible*)nova_null && spectra_util_Nova_SyntaxUtils_static_Nova_checkTypes(0, exceptionData, types, ((nova_Nova_Object*)l1_Nova_current)->vtable->classInstance) != opposite)
+	while (l1_Nova_current != (spectra_tree_nodes_Nova_Accessible*)nova_null && spectra_util_Nova_SyntaxUtils_static_Nova_checkTypes(0, exceptionData, types, ((nova_Nova_Object*)l1_Nova_current)->vtable->classInstance) != opposite)
 	{
 		l1_Nova_previous = l1_Nova_current;
 		l1_Nova_current = spectra_tree_nodes_Nova_Accessible_Accessor_Nova_accessingNode(l1_Nova_current, exceptionData);
@@ -198,7 +198,7 @@ spectra_tree_nodes_Nova_Accessible* spectra_tree_nodes_Nova_Accessible_1_Nova_ge
 	spectra_tree_nodes_Nova_Accessible* l1_Nova_current = (spectra_tree_nodes_Nova_Accessible*)nova_null;
 	
 	l1_Nova_current = (spectra_tree_nodes_Nova_Accessible*)(spectra_tree_nodes_Nova_Accessible_virtual_Accessor1_Nova_accessedNode((spectra_tree_nodes_Nova_Accessible*)(this), exceptionData));
-	while ((nova_Nova_Object*)l1_Nova_current != (nova_Nova_Object*)(spectra_tree_nodes_Nova_Accessible*)nova_null && !spectra_util_Nova_SyntaxUtils_static_Nova_checkTypes(0, exceptionData, types, ((nova_Nova_Object*)l1_Nova_current)->vtable->classInstance))
+	while (l1_Nova_current != (spectra_tree_nodes_Nova_Accessible*)nova_null && !spectra_util_Nova_SyntaxUtils_static_Nova_checkTypes(0, exceptionData, types, ((nova_Nova_Object*)l1_Nova_current)->vtable->classInstance))
 	{
 		l1_Nova_current = (spectra_tree_nodes_Nova_Accessible*)(spectra_tree_nodes_Nova_Accessible_virtual_Accessor1_Nova_accessedNode((spectra_tree_nodes_Nova_Accessible*)(l1_Nova_current), exceptionData));
 	}
@@ -234,7 +234,7 @@ spectra_tree_nodes_Nova_Accessible* spectra_tree_nodes_Nova_Accessible_Nova_getR
 	skipPriority = (int)(skipPriority == (intptr_t)nova_null ? 0 : skipPriority);
 	l1_Nova_n = (spectra_tree_nodes_Nova_Value*)((nova_Nova_Object*)nova_null);
 	l1_Nova_accessing = spectra_tree_nodes_Nova_Accessible_Accessor_Nova_accessingNode(this, exceptionData);
-	if ((nova_Nova_Object*)l1_Nova_accessing != (nova_Nova_Object*)(spectra_tree_nodes_Nova_Accessible*)nova_null || requireAccessingNode)
+	if (l1_Nova_accessing != (spectra_tree_nodes_Nova_Accessible*)nova_null || requireAccessingNode)
 	{
 		return l1_Nova_accessing;
 	}

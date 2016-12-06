@@ -315,7 +315,7 @@ spectra_tree_nodes_Nova_Value* spectra_tree_nodes_Nova_Value_1_static_Nova_parse
 
 char spectra_tree_nodes_Nova_Value_Nova_parseType(spectra_tree_nodes_Nova_Value* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* input)
 {
-	return (nova_Nova_Object*)input != (nova_Nova_Object*)(nova_Nova_String*)nova_null && (spectra_tree_nodes_Nova_Value_Mutatorfunc_Nova_type(this, exceptionData, spectra_tree_nodes_Nova_Type_static_Nova_parse(0, exceptionData, input, 0, 0, (intptr_t)nova_null))) != (spectra_tree_nodes_Nova_Type*)nova_null;
+	return input != (nova_Nova_String*)nova_null && (spectra_tree_nodes_Nova_Value_Mutatorfunc_Nova_type(this, exceptionData, spectra_tree_nodes_Nova_Type_static_Nova_parse(0, exceptionData, input, 0, 0, (intptr_t)nova_null))) != (spectra_tree_nodes_Nova_Type*)nova_null;
 }
 
 char spectra_tree_nodes_Nova_Value_Nova_validateTypes(spectra_tree_nodes_Nova_Value* this, nova_exception_Nova_ExceptionData* exceptionData)
@@ -324,7 +324,7 @@ char spectra_tree_nodes_Nova_Value_Nova_validateTypes(spectra_tree_nodes_Nova_Va
 	{
 	};
 	
-	if ((nova_Nova_Object*)spectra_tree_nodes_Nova_Value_virtual_Accessorfunc_Nova_type((spectra_tree_nodes_Nova_Value*)(this), exceptionData) != (nova_Nova_Object*)(spectra_tree_nodes_Nova_Type*)nova_null && !spectra_tree_nodes_Nova_Value_Accessor_Nova_isPrimitiveType(this, exceptionData) && !nova_datastruct_list_Nova_List_virtual0_Nova_any((nova_datastruct_list_Nova_List*)(spectra_tree_nodes_Nova_NovaFile_Accessor_Nova_imports(spectra_tree_nodes_Nova_Node_virtual_Accessor_Nova_parentFile((spectra_tree_nodes_Nova_Node*)(this), exceptionData), exceptionData)), exceptionData, (nova_datastruct_list_Nova_List_closure9_Nova_anyFunc)&spectra_tree_nodes_Nova_Value_Nova_lambda121, this, &contextArg121))
+	if (spectra_tree_nodes_Nova_Value_virtual_Accessorfunc_Nova_type((spectra_tree_nodes_Nova_Value*)(this), exceptionData) != (spectra_tree_nodes_Nova_Type*)nova_null && !spectra_tree_nodes_Nova_Value_Accessor_Nova_isPrimitiveType(this, exceptionData) && !nova_datastruct_list_Nova_List_virtual0_Nova_any((nova_datastruct_list_Nova_List*)(spectra_tree_nodes_Nova_NovaFile_Accessor_Nova_imports(spectra_tree_nodes_Nova_Node_virtual_Accessor_Nova_parentFile((spectra_tree_nodes_Nova_Node*)(this), exceptionData), exceptionData)), exceptionData, (nova_datastruct_list_Nova_List_closure9_Nova_anyFunc)&spectra_tree_nodes_Nova_Value_Nova_lambda121, this, &contextArg121))
 	{
 		spectra_tree_nodes_Nova_Value_Nova_invalidTypeError(this, exceptionData, 0, 0);
 		return 0;

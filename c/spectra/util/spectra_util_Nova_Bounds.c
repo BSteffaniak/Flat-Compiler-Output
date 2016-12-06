@@ -152,7 +152,7 @@ spectra_util_Nova_Bounds* spectra_util_Nova_Bounds_Nova_invalidate(spectra_util_
 
 char spectra_util_Nova_Bounds_Nova_equals(spectra_util_Nova_Bounds* this, nova_exception_Nova_ExceptionData* exceptionData, spectra_util_Nova_Bounds* bounds)
 {
-	return (nova_Nova_Object*)bounds != (nova_Nova_Object*)(spectra_util_Nova_Bounds*)nova_null && bounds->spectra_util_Nova_Bounds_Nova_start == this->spectra_util_Nova_Bounds_Nova_start && bounds->spectra_util_Nova_Bounds_Nova_end == this->spectra_util_Nova_Bounds_Nova_end;
+	return bounds != (spectra_util_Nova_Bounds*)nova_null && bounds->spectra_util_Nova_Bounds_Nova_start == this->spectra_util_Nova_Bounds_Nova_start && bounds->spectra_util_Nova_Bounds_Nova_end == this->spectra_util_Nova_Bounds_Nova_end;
 }
 
 nova_Nova_String* spectra_util_Nova_Bounds_Nova_toString(spectra_util_Nova_Bounds* this, nova_exception_Nova_ExceptionData* exceptionData)

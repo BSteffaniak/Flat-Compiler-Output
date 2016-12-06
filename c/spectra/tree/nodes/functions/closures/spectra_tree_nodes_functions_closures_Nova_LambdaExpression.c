@@ -252,7 +252,7 @@ spectra_tree_nodes_functions_closures_Nova_LambdaExpression* spectra_tree_nodes_
 		l1_Nova_parameters = nova_Nova_String_Nova_trimEnds(l1_Nova_parameters, exceptionData, 1, 1);
 	}
 }
-if ((nova_Nova_Object*)l1_Nova_parameters != (nova_Nova_Object*)(nova_Nova_String*)nova_null || nova_Nova_String_Accessor_Nova_first(input, exceptionData) == '{')
+if (l1_Nova_parameters != (nova_Nova_String*)nova_null || nova_Nova_String_Accessor_Nova_first(input, exceptionData) == '{')
 {
 	spectra_tree_nodes_functions_closures_Nova_LambdaExpression* l3_Nova_node = (spectra_tree_nodes_functions_closures_Nova_LambdaExpression*)nova_null;
 	nova_Nova_String* l3_Nova_operation = (nova_Nova_String*)nova_null;

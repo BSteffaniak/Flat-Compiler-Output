@@ -149,14 +149,14 @@ nova_datastruct_list_Nova_LinkedList* nova_datastruct_list_Nova_LinkedList_Nova_
 	nova_datastruct_list_Nova_ListNode* l1_Nova_node = (nova_datastruct_list_Nova_ListNode*)nova_null;
 	
 	l1_Nova_node = nova_datastruct_list_Nova_ListNode_Nova_construct(0, exceptionData, data);
-	if (this->prv->nova_datastruct_list_Nova_LinkedList_Nova_start == (nova_datastruct_list_Nova_ListNode*)nova_null)
+	if (this->prv->nova_datastruct_list_Nova_LinkedList_Nova_start != (nova_datastruct_list_Nova_ListNode*)nova_null)
 	{
-		this->prv->nova_datastruct_list_Nova_LinkedList_Nova_start = l1_Nova_node;
-		this->prv->nova_datastruct_list_Nova_LinkedList_Nova_current = l1_Nova_node;
+		this->prv->nova_datastruct_list_Nova_LinkedList_Nova_current->nova_datastruct_list_Nova_ListNode_Nova_next = l1_Nova_node;
 	}
 	else
 	{
-		this->prv->nova_datastruct_list_Nova_LinkedList_Nova_current->nova_datastruct_list_Nova_ListNode_Nova_next = l1_Nova_node;
+		this->prv->nova_datastruct_list_Nova_LinkedList_Nova_start = l1_Nova_node;
+		this->prv->nova_datastruct_list_Nova_LinkedList_Nova_current = l1_Nova_node;
 	}
 	this->prv->nova_datastruct_list_Nova_LinkedList_Nova_current = l1_Nova_node;
 	this->nova_datastruct_list_Nova_LinkedList_Nova_size++;

@@ -540,7 +540,7 @@ spectra_tree_nodes_Nova_Scope* spectra_tree_nodes_Nova_Node_Accessor_Nova_scope(
 	spectra_tree_nodes_Nova_Node* l1_Nova_consumer = (spectra_tree_nodes_Nova_Node*)nova_null;
 	
 	l1_Nova_consumer = (spectra_tree_nodes_Nova_Node*)(spectra_tree_nodes_Nova_Node_virtual_Accessor_Nova_scopeConsumer((spectra_tree_nodes_Nova_Node*)(this), exceptionData));
-	return (spectra_tree_nodes_Nova_Scope*)((nova_Nova_Object*)l1_Nova_consumer != (nova_Nova_Object*)(spectra_tree_nodes_Nova_Node*)nova_null && l1_Nova_consumer != this ? (nova_Nova_Object*)spectra_tree_nodes_Nova_Node_virtual_Accessor_Nova_scope((spectra_tree_nodes_Nova_Node*)(l1_Nova_consumer), exceptionData) : (nova_Nova_Object*)nova_null);
+	return (spectra_tree_nodes_Nova_Scope*)(l1_Nova_consumer != (spectra_tree_nodes_Nova_Node*)nova_null && l1_Nova_consumer != this ? (nova_Nova_Object*)spectra_tree_nodes_Nova_Node_virtual_Accessor_Nova_scope((spectra_tree_nodes_Nova_Node*)(l1_Nova_consumer), exceptionData) : (nova_Nova_Object*)nova_null);
 }
 
 spectra_tree_nodes_Nova_Scope* spectra_tree_nodes_Nova_Node_Mutator_Nova_scope(spectra_tree_nodes_Nova_Node* this, nova_exception_Nova_ExceptionData* exceptionData, spectra_tree_nodes_Nova_Scope* value)
@@ -548,7 +548,7 @@ spectra_tree_nodes_Nova_Scope* spectra_tree_nodes_Nova_Node_Mutator_Nova_scope(s
 	spectra_tree_nodes_Nova_Node* l1_Nova_consumer = (spectra_tree_nodes_Nova_Node*)nova_null;
 	
 	l1_Nova_consumer = (spectra_tree_nodes_Nova_Node*)(spectra_tree_nodes_Nova_Node_virtual_Accessor_Nova_scopeConsumer((spectra_tree_nodes_Nova_Node*)(this), exceptionData));
-	if ((nova_Nova_Object*)l1_Nova_consumer != (nova_Nova_Object*)(spectra_tree_nodes_Nova_Node*)nova_null && l1_Nova_consumer != this)
+	if (l1_Nova_consumer != (spectra_tree_nodes_Nova_Node*)nova_null && l1_Nova_consumer != this)
 	{
 		spectra_tree_nodes_Nova_Node_Nova_setScope(l1_Nova_consumer, exceptionData, value);
 	}

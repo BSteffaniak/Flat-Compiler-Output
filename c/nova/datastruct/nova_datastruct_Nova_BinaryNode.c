@@ -165,24 +165,24 @@ void nova_datastruct_Nova_BinaryNode_Nova_addChild(nova_datastruct_Nova_BinaryNo
 {
 	if (nova_datastruct_Nova_Comparable_virtual0_Nova_compareTo((nova_datastruct_Nova_Comparable*)(this->nova_datastruct_Nova_Node_Nova_data), exceptionData, (nova_Nova_Object*)(data)) >= 0)
 	{
-		if (nova_datastruct_Nova_BinaryNode_Accessor_Nova_left(this, exceptionData) == (nova_datastruct_Nova_BinaryNode*)nova_null)
+		if (nova_datastruct_Nova_BinaryNode_Accessor_Nova_left(this, exceptionData) != (nova_datastruct_Nova_BinaryNode*)nova_null)
 		{
-			nova_datastruct_Nova_BinaryNode_Mutator_Nova_left(this, exceptionData, (nova_datastruct_Nova_BinaryNode*)(nova_datastruct_Nova_BinaryNode_0_Nova_construct(0, exceptionData, data)));
+			nova_datastruct_Nova_BinaryNode_Nova_addChild(nova_datastruct_Nova_BinaryNode_Accessor_Nova_left(this, exceptionData), exceptionData, data);
 		}
 		else
 		{
-			nova_datastruct_Nova_BinaryNode_Nova_addChild(nova_datastruct_Nova_BinaryNode_Accessor_Nova_left(this, exceptionData), exceptionData, data);
+			nova_datastruct_Nova_BinaryNode_Mutator_Nova_left(this, exceptionData, (nova_datastruct_Nova_BinaryNode*)(nova_datastruct_Nova_BinaryNode_0_Nova_construct(0, exceptionData, data)));
 		}
 	}
 	else
 	{
-		if (nova_datastruct_Nova_BinaryNode_Accessor_Nova_right(this, exceptionData) == (nova_datastruct_Nova_BinaryNode*)nova_null)
+		if (nova_datastruct_Nova_BinaryNode_Accessor_Nova_right(this, exceptionData) != (nova_datastruct_Nova_BinaryNode*)nova_null)
 		{
-			nova_datastruct_Nova_BinaryNode_Mutator_Nova_right(this, exceptionData, (nova_datastruct_Nova_BinaryNode*)(nova_datastruct_Nova_BinaryNode_0_Nova_construct(0, exceptionData, data)));
+			nova_datastruct_Nova_BinaryNode_Nova_addChild(nova_datastruct_Nova_BinaryNode_Accessor_Nova_right(this, exceptionData), exceptionData, data);
 		}
 		else
 		{
-			nova_datastruct_Nova_BinaryNode_Nova_addChild(nova_datastruct_Nova_BinaryNode_Accessor_Nova_right(this, exceptionData), exceptionData, data);
+			nova_datastruct_Nova_BinaryNode_Mutator_Nova_right(this, exceptionData, (nova_datastruct_Nova_BinaryNode*)(nova_datastruct_Nova_BinaryNode_0_Nova_construct(0, exceptionData, data)));
 		}
 	}
 }
