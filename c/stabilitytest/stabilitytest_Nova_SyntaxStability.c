@@ -395,17 +395,16 @@ void stabilitytest_Nova_SyntaxStability_Nova_checkUntil(stabilitytest_Nova_Synta
 	nova_Nova_Object* l1_Nova_obj = (nova_Nova_Object*)nova_null;
 	
 	nova_io_Nova_Console_0_static_Nova_write(0, exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("Checking until statement... ")));
-	l1_Nova_obj = (nova_Nova_Object*)nova_null;
-	if (!(l1_Nova_obj != (nova_Nova_Object*)nova_null))
+	if ((l1_Nova_obj) == (nova_Nova_Object*)nova_null)
 	{
 		l1_Nova_obj = stabilitytest_Nova_SyntaxStability_static_Nova_test1(0, exceptionData);
-		if (!(l1_Nova_obj != (nova_Nova_Object*)nova_null))
+		if ((l1_Nova_obj) == (nova_Nova_Object*)nova_null)
 		{
 			l1_Nova_obj = stabilitytest_Nova_SyntaxStability_static_Nova_test2(0, exceptionData);
-			if (!(l1_Nova_obj != (nova_Nova_Object*)nova_null))
+			if ((l1_Nova_obj) == (nova_Nova_Object*)nova_null)
 			{
 				l1_Nova_obj = stabilitytest_Nova_SyntaxStability_static_Nova_test3(0, exceptionData);
-				if (!(l1_Nova_obj != (nova_Nova_Object*)nova_null))
+				if ((l1_Nova_obj) == (nova_Nova_Object*)nova_null)
 				{
 					stabilitytest_Nova_StabilityTest_Nova_fail(this->stabilitytest_Nova_StabilityTestCase_Nova_program, exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("Failed to stop after correct condition")), (intptr_t)nova_null);
 				}

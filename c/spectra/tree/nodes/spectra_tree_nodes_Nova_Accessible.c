@@ -209,6 +209,7 @@ spectra_tree_nodes_Nova_Accessible* spectra_tree_nodes_Nova_Accessible_Nova_getR
 {
 	spectra_tree_nodes_Nova_Accessible* l1_Nova_reference = (spectra_tree_nodes_Nova_Accessible*)nova_null;
 	spectra_tree_nodes_Nova_Accessible* l1_Nova_node = (spectra_tree_nodes_Nova_Accessible*)nova_null;
+	spectra_tree_nodes_Nova_Accessible* nova_local_0 = (spectra_tree_nodes_Nova_Accessible*)nova_null;
 	
 	inclusive = (int)(inclusive == (intptr_t)nova_null ? 0 : inclusive);
 	if (!spectra_tree_nodes_Nova_Accessible_Accessor_Nova_isAccessed(this, exceptionData))
@@ -221,11 +222,7 @@ spectra_tree_nodes_Nova_Accessible* spectra_tree_nodes_Nova_Accessible_Nova_getR
 	}
 	l1_Nova_reference = spectra_tree_nodes_Nova_Accessible_Nova_getReferenceNode(this, exceptionData, 0, 1);
 	l1_Nova_node = (spectra_tree_nodes_Nova_Accessible*)((nova_Nova_Object*)nova_null);
-	if (l1_Nova_node == (spectra_tree_nodes_Nova_Accessible*)nova_null)
-	{
-		return l1_Nova_reference;
-	}
-	return l1_Nova_node;
+	return (spectra_tree_nodes_Nova_Accessible*)((nova_local_0 = l1_Nova_node) != (spectra_tree_nodes_Nova_Accessible*)nova_null ? nova_local_0 : l1_Nova_reference);
 }
 
 spectra_tree_nodes_Nova_Accessible* spectra_tree_nodes_Nova_Accessible_Nova_getReferenceNode(spectra_tree_nodes_Nova_Accessible* this, nova_exception_Nova_ExceptionData* exceptionData, int requireAccessingNode, int skipPriority)

@@ -199,7 +199,7 @@ spectra_tree_Nova_AnnotationSearchResult* spectra_tree_Nova_SyntaxTree_static_No
 	
 	l1_Nova_result = spectra_tree_Nova_AnnotationSearchResult_Nova_construct(0, exceptionData, statement);
 	l1_Nova_annotation = spectra_tree_nodes_annotations_Nova_Annotation_static_Nova_parse(0, exceptionData, statement, 0, 0, 0);
-	while ((nova_Nova_Object*)l1_Nova_annotation != (nova_Nova_Object*)(spectra_tree_nodes_annotations_Nova_Annotation*)nova_null && statement->nova_Nova_String_Nova_count > 0)
+	while (l1_Nova_annotation != (spectra_tree_nodes_annotations_Nova_Annotation*)nova_null && statement->nova_Nova_String_Nova_count > 0)
 	{
 		statement = spectra_tree_nodes_annotations_Nova_Annotation_static_Nova_getRemainingStatement(0, exceptionData, statement);
 		nova_datastruct_list_Nova_Array_virtual0_Nova_add((nova_datastruct_list_Nova_Array*)(l1_Nova_result->spectra_tree_Nova_AnnotationSearchResult_Nova_annotations), exceptionData, (nova_Nova_Object*)(l1_Nova_annotation));
@@ -264,7 +264,7 @@ void spectra_tree_Nova_SyntaxTree_Nova_lambda103(spectra_tree_Nova_SyntaxTree* t
 				nova_io_Nova_Console_1_static_Nova_writeLine(0, exceptionData, nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)(nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("'"))), exceptionData, nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)((l2_Nova_full)), exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("'")))));
 				nova_io_Nova_Console_1_static_Nova_writeLine(0, exceptionData, nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)(nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("\tbeginsScope: '"))), exceptionData, nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)(nova_primitive_Nova_Bool_static_Nova_toString(0, exceptionData, (l1_Nova_statements->spectra_tree_Nova_StatementIterator_Nova_beginsScope))), exceptionData, nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)(nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("'\n\tendsScope: '"))), exceptionData, nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)(nova_primitive_Nova_Bool_static_Nova_toString(0, exceptionData, (l1_Nova_statements->spectra_tree_Nova_StatementIterator_Nova_endsScope))), exceptionData, nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)(nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("'\n\tparse: '"))), exceptionData, nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)(nova_Nova_Object_virtual_Nova_toString((nova_Nova_Object*)((l2_Nova_node)), exceptionData)), exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("'\n")))))))));
 			}
-			if (l2_Nova_node != (spectra_tree_nodes_Nova_Node*)nova_null)
+			if (l2_Nova_node == (spectra_tree_nodes_Nova_Node*)nova_null)
 			{
 				while (!nova_datastruct_list_Nova_Stack_Accessor_Nova_isEmpty((nova_datastruct_list_Nova_Stack*)(this->prv->spectra_tree_Nova_SyntaxTree_Nova_pendingAnnotations), exceptionData))
 				{
