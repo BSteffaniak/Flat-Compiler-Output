@@ -69,14 +69,6 @@ nova_primitive_number_Long_Extension_VTable nova_primitive_number_Long_Extension
 		(nova_Nova_Object*(*)(nova_operators_Nova_Multiply*, nova_exception_Nova_ExceptionData*, nova_Nova_Object*))nova_primitive_number_Nova_Long_Nova_multiply,
 		0,
 		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
 	},
 	nova_primitive_number_Nova_Long_Nova_toString,
 	nova_Nova_Object_Accessor_Nova_hashCodeLong,
@@ -164,7 +156,7 @@ nova_Nova_String* nova_primitive_number_Nova_Long_static_Nova_toString(nova_prim
 	l3_Nova_index = (int)0;
 	for (; l3_Nova_index < (int)l1_Nova_nums; l3_Nova_index++)
 	{
-		l1_Nova_data[l1_Nova_digits - l3_Nova_index] = (char)((char)(l1_Nova_charOffset + nova_math_Nova_Math_0_Nova_abs(0, exceptionData, value % 10)));
+		l1_Nova_data[l1_Nova_digits - l3_Nova_index] = (char)((char)(l1_Nova_charOffset + nova_math_Nova_Math_0_static_Nova_abs(0, exceptionData, value % 10)));
 		value = value / 10;
 	}
 	return nova_Nova_String_1_Nova_construct(0, exceptionData, l1_Nova_data);

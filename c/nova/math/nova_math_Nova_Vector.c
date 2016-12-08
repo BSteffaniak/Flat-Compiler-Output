@@ -79,14 +79,6 @@ nova_math_Vector_Extension_VTable nova_math_Vector_Extension_VTable_val =
 		0,
 		0,
 		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
 	},
 	nova_math_Nova_Vector_Nova_toString,
 	nova_Nova_Object_Accessor_Nova_hashCodeLong,
@@ -234,7 +226,7 @@ double nova_math_Nova_Vector_Accessor_Nova_magnitude(nova_math_Nova_Vector* this
 	{
 	};
 	
-	return nova_math_Nova_Math_Nova_sqrt(0, exceptionData, nova_datastruct_list_Nova_DoubleArray_Nova_sum(this->nova_math_Nova_Vector_Nova_data, exceptionData, (nova_datastruct_list_Nova_DoubleArray_closure3_Nova_func)&nova_math_Nova_Vector_Nova_lambda18, this, &contextArg18));
+	return nova_math_Nova_Math_static_Nova_sqrt(0, exceptionData, nova_datastruct_list_Nova_DoubleArray_Nova_sum(this->nova_math_Nova_Vector_Nova_data, exceptionData, (nova_datastruct_list_Nova_DoubleArray_closure3_Nova_func)&nova_math_Nova_Vector_Nova_lambda18, this, &contextArg18));
 }
 
 

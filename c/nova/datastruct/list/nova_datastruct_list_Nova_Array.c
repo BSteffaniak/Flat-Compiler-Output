@@ -67,14 +67,6 @@ nova_datastruct_list_Array_Extension_VTable nova_datastruct_list_Array_Extension
 		0,
 		0,
 		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
 	},
 	nova_datastruct_list_Nova_Array_Nova_toString,
 	nova_Nova_Object_Accessor_Nova_hashCodeLong,
@@ -222,7 +214,7 @@ nova_datastruct_list_Nova_Array* nova_datastruct_list_Nova_Array_0_Nova_add(nova
 		nova_datastruct_list_Nova_Array_0_Nova_increaseSize(this, exceptionData);
 	}
 	this->nova_datastruct_list_Nova_Array_Nova_data[this->nova_datastruct_list_Nova_Array_Nova_position++] = element;
-	nova_datastruct_list_Nova_List_virtual_Mutator_Nova_count((nova_datastruct_list_Nova_List*)(this), exceptionData, (int)(nova_math_Nova_Math_Nova_max(0, exceptionData, this->nova_datastruct_list_Nova_Array_Nova_position, nova_datastruct_list_Nova_List_virtual_Accessor_Nova_count((nova_datastruct_list_Nova_List*)(this), exceptionData))));
+	nova_datastruct_list_Nova_List_virtual_Mutator_Nova_count((nova_datastruct_list_Nova_List*)(this), exceptionData, (int)(nova_math_Nova_Math_static_Nova_max(0, exceptionData, this->nova_datastruct_list_Nova_Array_Nova_position, nova_datastruct_list_Nova_List_virtual_Accessor_Nova_count((nova_datastruct_list_Nova_List*)(this), exceptionData))));
 	return this;
 }
 
@@ -239,7 +231,7 @@ nova_datastruct_list_Nova_Array* nova_datastruct_list_Nova_Array_1_Nova_add(nova
 	{
 		this->nova_datastruct_list_Nova_Array_Nova_position = index + 1;
 	}
-	nova_datastruct_list_Nova_List_virtual_Mutator_Nova_count((nova_datastruct_list_Nova_List*)(this), exceptionData, (int)(nova_math_Nova_Math_Nova_max(0, exceptionData, this->nova_datastruct_list_Nova_Array_Nova_position, nova_datastruct_list_Nova_List_virtual_Accessor_Nova_count((nova_datastruct_list_Nova_List*)(this), exceptionData))));
+	nova_datastruct_list_Nova_List_virtual_Mutator_Nova_count((nova_datastruct_list_Nova_List*)(this), exceptionData, (int)(nova_math_Nova_Math_static_Nova_max(0, exceptionData, this->nova_datastruct_list_Nova_Array_Nova_position, nova_datastruct_list_Nova_List_virtual_Accessor_Nova_count((nova_datastruct_list_Nova_List*)(this), exceptionData))));
 	return this;
 }
 

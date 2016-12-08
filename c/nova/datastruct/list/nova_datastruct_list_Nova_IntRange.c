@@ -67,14 +67,6 @@ nova_datastruct_list_IntRange_Extension_VTable nova_datastruct_list_IntRange_Ext
 		0,
 		0,
 		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
 	},
 	nova_datastruct_list_Nova_IntRange_Nova_toString,
 	nova_Nova_Object_Accessor_Nova_hashCodeLong,
@@ -251,12 +243,12 @@ nova_datastruct_list_Nova_IntArray* nova_datastruct_list_Nova_IntRange_0_Nova_fi
 
 nova_datastruct_list_Nova_IntRange* nova_datastruct_list_Nova_IntRange_Nova_take(nova_datastruct_list_Nova_IntRange* this, nova_exception_Nova_ExceptionData* exceptionData, int howMany)
 {
-	return nova_datastruct_list_Nova_IntRange_1_Nova_construct(0, exceptionData, this->nova_datastruct_list_Nova_IntRange_Nova_start, (int)nova_math_Nova_Math_Nova_min(0, exceptionData, this->nova_datastruct_list_Nova_IntRange_Nova_start + howMany, this->nova_datastruct_list_Nova_IntRange_Nova_end));
+	return nova_datastruct_list_Nova_IntRange_1_Nova_construct(0, exceptionData, this->nova_datastruct_list_Nova_IntRange_Nova_start, (int)nova_math_Nova_Math_static_Nova_min(0, exceptionData, this->nova_datastruct_list_Nova_IntRange_Nova_start + howMany, this->nova_datastruct_list_Nova_IntRange_Nova_end));
 }
 
 nova_datastruct_list_Nova_IntRange* nova_datastruct_list_Nova_IntRange_Nova_skip(nova_datastruct_list_Nova_IntRange* this, nova_exception_Nova_ExceptionData* exceptionData, int howMany)
 {
-	return nova_datastruct_list_Nova_IntRange_1_Nova_construct(0, exceptionData, (int)nova_math_Nova_Math_Nova_min(0, exceptionData, this->nova_datastruct_list_Nova_IntRange_Nova_start + howMany, this->nova_datastruct_list_Nova_IntRange_Nova_end), this->nova_datastruct_list_Nova_IntRange_Nova_end);
+	return nova_datastruct_list_Nova_IntRange_1_Nova_construct(0, exceptionData, (int)nova_math_Nova_Math_static_Nova_min(0, exceptionData, this->nova_datastruct_list_Nova_IntRange_Nova_start + howMany, this->nova_datastruct_list_Nova_IntRange_Nova_end), this->nova_datastruct_list_Nova_IntRange_Nova_end);
 }
 
 int nova_datastruct_list_Nova_IntRange_0_Nova_firstWhere(nova_datastruct_list_Nova_IntRange* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_list_Nova_IntRange_closure18_Nova_func nova_datastruct_list_Nova_IntRange_Nova_func, void* nova_datastruct_list_Nova_IntRange_ref_Nova_func, void* func_context)
