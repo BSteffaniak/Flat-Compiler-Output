@@ -65,13 +65,15 @@ CCLASS_CLASS
 	nova_math_logic_Nova_WFF, 
 	
 	nova_math_logic_WFF_Extension_VTable* vtable;
+	nova_Nova_String* nova_math_logic_Nova_WFF_Nova_wff;
+	nova_datastruct_list_Nova_Array* nova_math_logic_Nova_WFF_Nova_letters;
 	struct Private* prv;
 )
 
 void nova_math_logic_Nova_WFF_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData);
-nova_math_logic_Nova_WFF* nova_math_logic_Nova_WFF_Nova_construct(nova_math_logic_Nova_WFF* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* wellFormedFormula, nova_datastruct_list_Nova_Array* letters);
+nova_math_logic_Nova_WFF* nova_math_logic_Nova_WFF_Nova_construct(nova_math_logic_Nova_WFF* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* wff, nova_datastruct_list_Nova_Array* letters);
 void nova_math_logic_Nova_WFF_Nova_destroy(nova_math_logic_Nova_WFF** this, nova_exception_Nova_ExceptionData* exceptionData);
-void nova_math_logic_Nova_WFF_Nova_this(nova_math_logic_Nova_WFF* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* wellFormedFormula, nova_datastruct_list_Nova_Array* letters);
+void nova_math_logic_Nova_WFF_Nova_this(nova_math_logic_Nova_WFF* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* wff, nova_datastruct_list_Nova_Array* letters);
 void nova_math_logic_Nova_WFF_Nova_super(nova_math_logic_Nova_WFF* this, nova_exception_Nova_ExceptionData* exceptionData);
 
 #endif

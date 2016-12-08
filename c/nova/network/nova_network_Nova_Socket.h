@@ -64,9 +64,9 @@ CCLASS_CLASS
 )
 
 void nova_network_Nova_Socket_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData);
-nova_network_Nova_Socket* nova_network_Nova_Socket_Nova_construct(nova_network_Nova_Socket* this, nova_exception_Nova_ExceptionData* exceptionData);
+nova_network_Nova_Socket* nova_network_Nova_Socket_Nova_construct(nova_network_Nova_Socket* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* ip, int port);
 void nova_network_Nova_Socket_Nova_destroy(nova_network_Nova_Socket** this, nova_exception_Nova_ExceptionData* exceptionData);
-void nova_network_Nova_Socket_Nova_this(nova_network_Nova_Socket* this, nova_exception_Nova_ExceptionData* exceptionData);
+void nova_network_Nova_Socket_Nova_this(nova_network_Nova_Socket* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* ip, int port);
 void nova_network_Nova_Socket_Nova_super(nova_network_Nova_Socket* this, nova_exception_Nova_ExceptionData* exceptionData);
 
 #endif

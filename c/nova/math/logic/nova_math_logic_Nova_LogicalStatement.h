@@ -61,6 +61,7 @@ CCLASS_CLASS
 	nova_math_logic_Nova_LogicalStatement, 
 	
 	nova_math_logic_LogicalStatement_Extension_VTable* vtable;
+	nova_Nova_String* nova_math_logic_Nova_LogicalStatement_Nova_statement;
 	struct Private* prv;
 )
 

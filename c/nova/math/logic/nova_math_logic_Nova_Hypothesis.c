@@ -76,7 +76,6 @@ nova_math_logic_Hypothesis_Extension_VTable nova_math_logic_Hypothesis_Extension
 
 CCLASS_PRIVATE
 (
-	nova_Nova_String* nova_math_logic_Nova_LogicalStatement_Nova_statement;
 	nova_datastruct_list_Nova_Array* nova_math_logic_Nova_LogicalStatement_Nova_components;
 	
 )

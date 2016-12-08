@@ -63,7 +63,7 @@ CCLASS_CLASS
 	nova_network_Nova_NetworkOutputStream, 
 	
 	nova_network_NetworkOutputStream_Extension_VTable* vtable;
-	struct Private* prv;
+	nova_network_Nova_ConnectionSocket* nova_network_Nova_NetworkOutputStream_Nova_socket;
 )
 
 void nova_network_Nova_NetworkOutputStream_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData);

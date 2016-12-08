@@ -75,7 +75,6 @@ nova_math_logic_LogicalStatement_Extension_VTable nova_math_logic_LogicalStateme
 
 CCLASS_PRIVATE
 (
-	nova_Nova_String* nova_math_logic_Nova_LogicalStatement_Nova_statement;
 	nova_datastruct_list_Nova_Array* nova_math_logic_Nova_LogicalStatement_Nova_components;
 	
 )
@@ -107,27 +106,27 @@ void nova_math_logic_Nova_LogicalStatement_Nova_destroy(nova_math_logic_Nova_Log
 		return;
 	}
 	
-	nova_Nova_String_Nova_destroy(&(*this)->prv->nova_math_logic_Nova_LogicalStatement_Nova_statement, exceptionData);
 	nova_datastruct_list_Nova_Array_Nova_destroy(&(*this)->prv->nova_math_logic_Nova_LogicalStatement_Nova_components, exceptionData);
 	NOVA_FREE((*this)->prv);
+	nova_Nova_String_Nova_destroy(&(*this)->nova_math_logic_Nova_LogicalStatement_Nova_statement, exceptionData);
 	
 	NOVA_FREE(*this);
 }
 
 void nova_math_logic_Nova_LogicalStatement_Nova_this(nova_math_logic_Nova_LogicalStatement* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* statement)
 {
-	this->prv->nova_math_logic_Nova_LogicalStatement_Nova_statement = statement;
+	this->nova_math_logic_Nova_LogicalStatement_Nova_statement = statement;
 	this->prv->nova_math_logic_Nova_LogicalStatement_Nova_components = nova_datastruct_list_Nova_Array_0_Nova_construct(0, exceptionData);
 }
 
 nova_Nova_String* nova_math_logic_Nova_LogicalStatement_Nova_toString(nova_math_logic_Nova_LogicalStatement* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
-	return this->prv->nova_math_logic_Nova_LogicalStatement_Nova_statement;
+	return this->nova_math_logic_Nova_LogicalStatement_Nova_statement;
 }
 
 void nova_math_logic_Nova_LogicalStatement_Nova_super(nova_math_logic_Nova_LogicalStatement* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
-	this->prv->nova_math_logic_Nova_LogicalStatement_Nova_statement = (nova_Nova_String*)nova_null;
+	this->nova_math_logic_Nova_LogicalStatement_Nova_statement = (nova_Nova_String*)nova_null;
 	this->prv->nova_math_logic_Nova_LogicalStatement_Nova_components = (nova_datastruct_list_Nova_Array*)nova_null;
 }
 

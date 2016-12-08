@@ -77,7 +77,7 @@ void nova_network_Nova_Socket_Nova_init_static(nova_exception_Nova_ExceptionData
 	}
 }
 
-nova_network_Nova_Socket* nova_network_Nova_Socket_Nova_construct(nova_network_Nova_Socket* this, nova_exception_Nova_ExceptionData* exceptionData)
+nova_network_Nova_Socket* nova_network_Nova_Socket_Nova_construct(nova_network_Nova_Socket* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* ip, int port)
 {
 	CCLASS_NEW(nova_network_Nova_Socket, this,);
 	this->vtable = &nova_network_Socket_Extension_VTable_val;
@@ -85,7 +85,7 @@ nova_network_Nova_Socket* nova_network_Nova_Socket_Nova_construct(nova_network_N
 	nova_network_Nova_Socket_Nova_super(this, exceptionData);
 	
 	{
-		nova_network_Nova_Socket_Nova_this(this, exceptionData);
+		nova_network_Nova_Socket_Nova_this(this, exceptionData, ip, port);
 	}
 	
 	return this;
@@ -104,8 +104,10 @@ void nova_network_Nova_Socket_Nova_destroy(nova_network_Nova_Socket** this, nova
 	NOVA_FREE(*this);
 }
 
-void nova_network_Nova_Socket_Nova_this(nova_network_Nova_Socket* this, nova_exception_Nova_ExceptionData* exceptionData)
+void nova_network_Nova_Socket_Nova_this(nova_network_Nova_Socket* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* ip, int port)
 {
+	this->nova_network_Nova_Socket_Nova_ip = ip;
+	this->nova_network_Nova_Socket_Nova_port = port;
 }
 
 void nova_network_Nova_Socket_Nova_super(nova_network_Nova_Socket* this, nova_exception_Nova_ExceptionData* exceptionData)

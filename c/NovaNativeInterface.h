@@ -1427,7 +1427,7 @@ nova_network_Nova_ServerSocket_native_Nova_acceptClient acceptClient;
 nova_network_Nova_ServerSocket_native_Nova_construct ServerSocket;
 } nova_network_native_ServerSocket;
 
-typedef nova_network_Nova_Socket* (*nova_network_Nova_Socket_native_Nova_construct)(nova_network_Nova_Socket*, nova_exception_Nova_ExceptionData*);
+typedef nova_network_Nova_Socket* (*nova_network_Nova_Socket_native_Nova_construct)(nova_network_Nova_Socket*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, int);
 
 typedef struct nova_network_native_Socket
 {
