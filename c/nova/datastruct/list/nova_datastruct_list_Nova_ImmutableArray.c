@@ -84,12 +84,12 @@ nova_datastruct_list_ImmutableArray_Extension_VTable nova_datastruct_list_Immuta
 	nova_datastruct_list_Nova_Array_Nova_clone,
 	nova_datastruct_list_Nova_ImmutableArray_Nova_get,
 	nova_datastruct_list_Nova_Array_Nova_set,
+	nova_datastruct_list_Nova_ImmutableArray_Mutatorfunc_Nova_first,
+	nova_datastruct_list_Nova_ImmutableArray_Mutatorfunc_Nova_last,
 	nova_datastruct_list_Nova_ImmutableArray_Accessor_Nova_empty,
 	nova_datastruct_list_Nova_ImmutableArray_Accessorfunc_Nova_first,
 	nova_datastruct_list_Nova_ImmutableArray_Accessorfunc_Nova_last,
 };
-
-
 
 
 
@@ -271,12 +271,22 @@ nova_Nova_Object* nova_datastruct_list_Nova_ImmutableArray_Accessorfunc_Nova_fir
 	return (nova_Nova_Object*)nova_datastruct_list_Nova_Array_Accessorfunc_Nova_first(((nova_datastruct_list_Nova_Array*)this), exceptionData);
 }
 
+nova_Nova_Object* nova_datastruct_list_Nova_ImmutableArray_Mutatorfunc_Nova_first(nova_datastruct_list_Nova_ImmutableArray* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_Object* value)
+{
+	nova_datastruct_list_Nova_Array_virtual_Mutatorfunc_Nova_first((nova_datastruct_list_Nova_Array*)(((nova_datastruct_list_Nova_Array*)this)), exceptionData, value);
+	return (nova_Nova_Object*)value;
+}
 
 nova_Nova_Object* nova_datastruct_list_Nova_ImmutableArray_Accessorfunc_Nova_last(nova_datastruct_list_Nova_ImmutableArray* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
 	return (nova_Nova_Object*)nova_datastruct_list_Nova_Array_Accessorfunc_Nova_last(((nova_datastruct_list_Nova_Array*)this), exceptionData);
 }
 
+nova_Nova_Object* nova_datastruct_list_Nova_ImmutableArray_Mutatorfunc_Nova_last(nova_datastruct_list_Nova_ImmutableArray* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_Object* value)
+{
+	nova_datastruct_list_Nova_Array_virtual_Mutatorfunc_Nova_last((nova_datastruct_list_Nova_Array*)(((nova_datastruct_list_Nova_Array*)this)), exceptionData, value);
+	return (nova_Nova_Object*)value;
+}
 
 void nova_datastruct_list_Nova_ImmutableArray_Nova_super(nova_datastruct_list_Nova_ImmutableArray* this, nova_exception_Nova_ExceptionData* exceptionData)
 {

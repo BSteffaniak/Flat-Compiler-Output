@@ -80,8 +80,6 @@ nova_datastruct_Tuple_Extension_VTable nova_datastruct_Tuple_Extension_VTable_va
 
 
 
-
-
 void nova_datastruct_Nova_Tuple_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData)
 {
 	{
@@ -185,12 +183,22 @@ nova_Nova_Object* nova_datastruct_Nova_Tuple_Accessorfunc_Nova_first(nova_datast
 	return (nova_Nova_Object*)nova_datastruct_list_Nova_Array_virtual_Accessorfunc_Nova_first((nova_datastruct_list_Nova_Array*)(this->nova_datastruct_Nova_Tuple_Nova_items), exceptionData);
 }
 
+nova_Nova_Object* nova_datastruct_Nova_Tuple_Mutatorfunc_Nova_first(nova_datastruct_Nova_Tuple* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_Object* value)
+{
+	nova_datastruct_list_Nova_Array_virtual_Mutatorfunc_Nova_first((nova_datastruct_list_Nova_Array*)(this->nova_datastruct_Nova_Tuple_Nova_items), exceptionData, (nova_Nova_Object*)(value));
+	return value;
+}
 
 nova_Nova_Object* nova_datastruct_Nova_Tuple_Accessorfunc_Nova_last(nova_datastruct_Nova_Tuple* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
 	return (nova_Nova_Object*)nova_datastruct_list_Nova_Array_virtual_Accessorfunc_Nova_last((nova_datastruct_list_Nova_Array*)(this->nova_datastruct_Nova_Tuple_Nova_items), exceptionData);
 }
 
+nova_Nova_Object* nova_datastruct_Nova_Tuple_Mutatorfunc_Nova_last(nova_datastruct_Nova_Tuple* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_Object* value)
+{
+	nova_datastruct_list_Nova_Array_virtual_Mutatorfunc_Nova_last((nova_datastruct_list_Nova_Array*)(this->nova_datastruct_Nova_Tuple_Nova_items), exceptionData, (nova_Nova_Object*)(value));
+	return value;
+}
 
 void nova_datastruct_Nova_Tuple_Nova_super(nova_datastruct_Nova_Tuple* this, nova_exception_Nova_ExceptionData* exceptionData)
 {

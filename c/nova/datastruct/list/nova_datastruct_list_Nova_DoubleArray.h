@@ -85,6 +85,8 @@ struct nova_datastruct_list_DoubleArray_Extension_VTable
 	nova_datastruct_list_Nova_Array* (*nova_datastruct_list_Nova_Array_virtual_Nova_clone)(nova_datastruct_list_Nova_Array*, nova_exception_Nova_ExceptionData*);
 	double (*nova_datastruct_list_Nova_Array_virtual_Nova_get)(nova_datastruct_list_Nova_DoubleArray*, nova_exception_Nova_ExceptionData*, int);
 	double (*nova_datastruct_list_Nova_Array_virtual_Nova_set)(nova_datastruct_list_Nova_DoubleArray*, nova_exception_Nova_ExceptionData*, int, double);
+	nova_Nova_Object* (*nova_datastruct_list_Nova_Array_virtual_Mutatorfunc_Nova_first)(nova_datastruct_list_Nova_Array*, nova_exception_Nova_ExceptionData*, nova_Nova_Object*);
+	nova_Nova_Object* (*nova_datastruct_list_Nova_Array_virtual_Mutatorfunc_Nova_last)(nova_datastruct_list_Nova_Array*, nova_exception_Nova_ExceptionData*, nova_Nova_Object*);
 	char (*nova_datastruct_list_Nova_Array_virtual_Accessor_Nova_empty)(nova_datastruct_list_Nova_Array*, nova_exception_Nova_ExceptionData*);
 	double (*nova_datastruct_list_Nova_Array_virtual_Accessorfunc_Nova_first)(nova_datastruct_list_Nova_DoubleArray*, nova_exception_Nova_ExceptionData*);
 	double (*nova_datastruct_list_Nova_Array_virtual_Accessorfunc_Nova_last)(nova_datastruct_list_Nova_DoubleArray*, nova_exception_Nova_ExceptionData*);

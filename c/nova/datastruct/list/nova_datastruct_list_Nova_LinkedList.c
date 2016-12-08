@@ -93,8 +93,6 @@ CCLASS_PRIVATE
 
 char nova_datastruct_list_Nova_LinkedList_Nova_lambda83(nova_datastruct_list_Nova_LinkedList* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_Object* _1, Context1* context);
 
-
-
 void nova_datastruct_list_Nova_LinkedList_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData)
 {
 	{
@@ -411,6 +409,20 @@ char nova_datastruct_list_Nova_LinkedList_Nova_lambda83(nova_datastruct_list_Nov
 	return (nova_Nova_Object*)_1 == (nova_Nova_Object*)(*context->nova_datastruct_list_Nova_LinkedList_Nova_value);
 }
 
+nova_datastruct_list_Nova_ListNode* nova_datastruct_list_Nova_LinkedList_Mutatorfunc_Nova_first(nova_datastruct_list_Nova_LinkedList* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_list_Nova_ListNode* value)
+{
+	value->nova_datastruct_list_Nova_ListNode_Nova_next = this->prv->nova_datastruct_list_Nova_LinkedList_Nova_start;
+	this->prv->nova_datastruct_list_Nova_LinkedList_Nova_start = value;
+	return value;
+}
+
+nova_datastruct_list_Nova_ListNode* nova_datastruct_list_Nova_LinkedList_Mutatorfunc_Nova_last(nova_datastruct_list_Nova_LinkedList* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_list_Nova_ListNode* value)
+{
+	this->prv->nova_datastruct_list_Nova_LinkedList_Nova_current->nova_datastruct_list_Nova_ListNode_Nova_next = value;
+	this->prv->nova_datastruct_list_Nova_LinkedList_Nova_current = value;
+	return value;
+}
+
 nova_datastruct_list_Nova_LinkedListIterator* nova_datastruct_list_Nova_LinkedList_Accessor_Nova_iterator(nova_datastruct_list_Nova_LinkedList* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
 	return (nova_datastruct_list_Nova_LinkedListIterator*)nova_datastruct_list_Nova_LinkedListIterator_Nova_construct(0, exceptionData, this);
@@ -422,12 +434,10 @@ nova_datastruct_list_Nova_ListNode* nova_datastruct_list_Nova_LinkedList_Accesso
 	return this->prv->nova_datastruct_list_Nova_LinkedList_Nova_start;
 }
 
-
 nova_datastruct_list_Nova_ListNode* nova_datastruct_list_Nova_LinkedList_Accessorfunc_Nova_last(nova_datastruct_list_Nova_LinkedList* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
 	return this->prv->nova_datastruct_list_Nova_LinkedList_Nova_current;
 }
-
 
 void nova_datastruct_list_Nova_LinkedList_Nova_super(nova_datastruct_list_Nova_LinkedList* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
