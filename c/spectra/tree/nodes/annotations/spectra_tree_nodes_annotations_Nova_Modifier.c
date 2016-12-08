@@ -70,6 +70,9 @@ spectra_tree_nodes_annotations_Modifier_Extension_VTable spectra_tree_nodes_anno
 		0,
 		0,
 		0,
+		0,
+		0,
+		0,
 	},
 };
 

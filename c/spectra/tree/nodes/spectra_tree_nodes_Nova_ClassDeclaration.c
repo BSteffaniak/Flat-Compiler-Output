@@ -142,18 +142,21 @@ spectra_tree_nodes_ClassDeclaration_Extension_VTable spectra_tree_nodes_ClassDec
 		0,
 		0,
 		0,
+		0,
+		0,
+		0,
+		0,
 		(char(*)(nova_operators_Nova_Equals*, nova_exception_Nova_ExceptionData*, nova_Nova_Object*))nova_Nova_Object_0_Nova_equals,
 		0,
 		(char(*)(spectra_tree_nodes_Nova_Abstractable*, nova_exception_Nova_ExceptionData*, char))spectra_tree_nodes_Nova_ClassDeclaration_Mutatorfunc0_Nova_isAbstract,
 		(char(*)(spectra_tree_nodes_Nova_Abstractable*, nova_exception_Nova_ExceptionData*))spectra_tree_nodes_Nova_ClassDeclaration_Accessorfunc_Nova_isAbstract,
-		0,
-		0,
 		(void(*)(spectra_tree_nodes_annotations_Nova_Annotatable*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_annotations_Nova_Annotation*))spectra_tree_nodes_Nova_Node_Nova_addAnnotation,
 		0,
 		0,
 		0,
-		(nova_datastruct_list_Nova_Array*(*)(spectra_tree_nodes_generics_Nova_GenericCompatible*, nova_exception_Nova_ExceptionData*, nova_datastruct_list_Nova_Array*))spectra_tree_nodes_Nova_ClassDeclaration_Mutatorfunc_Nova_genericParameters,
+		0,
 		(nova_datastruct_list_Nova_Array*(*)(spectra_tree_nodes_generics_Nova_GenericCompatible*, nova_exception_Nova_ExceptionData*))spectra_tree_nodes_Nova_ClassDeclaration_Accessorfunc_Nova_genericParameters,
+		(nova_datastruct_list_Nova_Array*(*)(spectra_tree_nodes_generics_Nova_GenericCompatible*, nova_exception_Nova_ExceptionData*, nova_datastruct_list_Nova_Array*))spectra_tree_nodes_Nova_ClassDeclaration_Mutatorfunc_Nova_genericParameters,
 		0,
 	},
 	spectra_tree_nodes_Nova_ClassDeclaration_Nova_toString,
@@ -726,7 +729,7 @@ nova_datastruct_list_Nova_Array* spectra_tree_nodes_Nova_ClassDeclaration_Access
 nova_datastruct_list_Nova_Array* spectra_tree_nodes_Nova_ClassDeclaration_Mutatorfunc_Nova_genericParameters(spectra_tree_nodes_Nova_ClassDeclaration* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_list_Nova_Array* value)
 {
 	this->spectra_tree_nodes_Nova_ClassDeclaration_Nova_genericParameters = value;
-	return (nova_datastruct_list_Nova_Array*)value;
+	return value;
 }
 
 char spectra_tree_nodes_Nova_ClassDeclaration_Accessor_Nova_isPrivate(spectra_tree_nodes_Nova_ClassDeclaration* this, nova_exception_Nova_ExceptionData* exceptionData)

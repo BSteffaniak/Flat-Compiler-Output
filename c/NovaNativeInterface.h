@@ -1131,27 +1131,44 @@ typedef struct nova_math_native_InvalidNumericStatementException
 nova_math_Nova_InvalidNumericStatementException_native_Nova_construct InvalidNumericStatementException;
 } nova_math_native_InvalidNumericStatementException;
 
-typedef long_long (*nova_math_Nova_Math_native_static_Nova_max)(nova_math_Nova_Math*, nova_exception_Nova_ExceptionData*, long_long, long_long);
-typedef long_long (*nova_math_Nova_Math_native_static_Nova_min)(nova_math_Nova_Math*, nova_exception_Nova_ExceptionData*, long_long, long_long);
-typedef char (*nova_math_Nova_Math_native_static_Nova_sign)(nova_math_Nova_Math*, nova_exception_Nova_ExceptionData*, long_long);
-typedef long_long (*nova_math_Nova_Math_native_static_Nova_random)(nova_math_Nova_Math*, nova_exception_Nova_ExceptionData*, long_long);
-typedef long_long (*nova_math_Nova_Math_native0_static_Nova_abs)(nova_math_Nova_Math*, nova_exception_Nova_ExceptionData*, long_long);
-typedef double (*nova_math_Nova_Math_native1_static_Nova_abs)(nova_math_Nova_Math*, nova_exception_Nova_ExceptionData*, double);
-typedef double (*nova_math_Nova_Math_native_static_Nova_sqrt)(nova_math_Nova_Math*, nova_exception_Nova_ExceptionData*, double);
-typedef double (*nova_math_Nova_Math_native_static_Nova_pow)(nova_math_Nova_Math*, nova_exception_Nova_ExceptionData*, double, double);
-typedef double (*nova_math_Nova_Math_native_static_Nova_sin)(nova_math_Nova_Math*, nova_exception_Nova_ExceptionData*, double);
-typedef double (*nova_math_Nova_Math_native_static_Nova_cos)(nova_math_Nova_Math*, nova_exception_Nova_ExceptionData*, double);
-typedef double (*nova_math_Nova_Math_native_static_Nova_tan)(nova_math_Nova_Math*, nova_exception_Nova_ExceptionData*, double);
-typedef double (*nova_math_Nova_Math_native_static_Nova_asin)(nova_math_Nova_Math*, nova_exception_Nova_ExceptionData*, double);
-typedef double (*nova_math_Nova_Math_native_static_Nova_acos)(nova_math_Nova_Math*, nova_exception_Nova_ExceptionData*, double);
-typedef double (*nova_math_Nova_Math_native_static_Nova_atan)(nova_math_Nova_Math*, nova_exception_Nova_ExceptionData*, double);
-typedef double (*nova_math_Nova_Math_native_static_Nova_round)(nova_math_Nova_Math*, nova_exception_Nova_ExceptionData*, double);
-typedef double (*nova_math_Nova_Math_native_static_Nova_floor)(nova_math_Nova_Math*, nova_exception_Nova_ExceptionData*, double);
-typedef double (*nova_math_Nova_Math_native_static_Nova_ceil)(nova_math_Nova_Math*, nova_exception_Nova_ExceptionData*, double);
+typedef long_long (*nova_math_Nova_Math_native_Nova_max)(nova_math_Nova_Math*, nova_exception_Nova_ExceptionData*, long_long, long_long);
+typedef long_long (*nova_math_Nova_Math_native_Nova_min)(nova_math_Nova_Math*, nova_exception_Nova_ExceptionData*, long_long, long_long);
+typedef char (*nova_math_Nova_Math_native_Nova_sign)(nova_math_Nova_Math*, nova_exception_Nova_ExceptionData*, long_long);
+typedef long_long (*nova_math_Nova_Math_native_Nova_random)(nova_math_Nova_Math*, nova_exception_Nova_ExceptionData*, long_long);
+typedef long_long (*nova_math_Nova_Math_native0_Nova_abs)(nova_math_Nova_Math*, nova_exception_Nova_ExceptionData*, long_long);
+typedef double (*nova_math_Nova_Math_native1_Nova_abs)(nova_math_Nova_Math*, nova_exception_Nova_ExceptionData*, double);
+typedef double (*nova_math_Nova_Math_native_Nova_sqrt)(nova_math_Nova_Math*, nova_exception_Nova_ExceptionData*, double);
+typedef double (*nova_math_Nova_Math_native_Nova_pow)(nova_math_Nova_Math*, nova_exception_Nova_ExceptionData*, double, double);
+typedef double (*nova_math_Nova_Math_native_Nova_sin)(nova_math_Nova_Math*, nova_exception_Nova_ExceptionData*, double);
+typedef double (*nova_math_Nova_Math_native_Nova_cos)(nova_math_Nova_Math*, nova_exception_Nova_ExceptionData*, double);
+typedef double (*nova_math_Nova_Math_native_Nova_tan)(nova_math_Nova_Math*, nova_exception_Nova_ExceptionData*, double);
+typedef double (*nova_math_Nova_Math_native_Nova_asin)(nova_math_Nova_Math*, nova_exception_Nova_ExceptionData*, double);
+typedef double (*nova_math_Nova_Math_native_Nova_acos)(nova_math_Nova_Math*, nova_exception_Nova_ExceptionData*, double);
+typedef double (*nova_math_Nova_Math_native_Nova_atan)(nova_math_Nova_Math*, nova_exception_Nova_ExceptionData*, double);
+typedef double (*nova_math_Nova_Math_native_Nova_round)(nova_math_Nova_Math*, nova_exception_Nova_ExceptionData*, double);
+typedef double (*nova_math_Nova_Math_native_Nova_floor)(nova_math_Nova_Math*, nova_exception_Nova_ExceptionData*, double);
+typedef double (*nova_math_Nova_Math_native_Nova_ceil)(nova_math_Nova_Math*, nova_exception_Nova_ExceptionData*, double);
 typedef nova_math_Nova_Math* (*nova_math_Nova_Math_native_Nova_construct)(nova_math_Nova_Math*, nova_exception_Nova_ExceptionData*);
 
 typedef struct nova_math_native_Math
 {
+nova_math_Nova_Math_native_Nova_max max;
+nova_math_Nova_Math_native_Nova_min min;
+nova_math_Nova_Math_native_Nova_sign sign;
+nova_math_Nova_Math_native_Nova_random random;
+nova_math_Nova_Math_native0_Nova_abs abs__nova_primitive_number_Long;
+nova_math_Nova_Math_native1_Nova_abs abs__nova_primitive_number_Double;
+nova_math_Nova_Math_native_Nova_sqrt sqrt;
+nova_math_Nova_Math_native_Nova_pow pow;
+nova_math_Nova_Math_native_Nova_sin sin;
+nova_math_Nova_Math_native_Nova_cos cos;
+nova_math_Nova_Math_native_Nova_tan tan;
+nova_math_Nova_Math_native_Nova_asin asin;
+nova_math_Nova_Math_native_Nova_acos acos;
+nova_math_Nova_Math_native_Nova_atan atan;
+nova_math_Nova_Math_native_Nova_round round;
+nova_math_Nova_Math_native_Nova_floor floor;
+nova_math_Nova_Math_native_Nova_ceil ceil;
 nova_math_Nova_Math_native_Nova_construct Math;
 } nova_math_native_Math;
 

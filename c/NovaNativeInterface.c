@@ -462,6 +462,23 @@ nova_env novaEnv = {
 },
 
 {
+&nova_math_Nova_Math_Nova_max,
+&nova_math_Nova_Math_Nova_min,
+&nova_math_Nova_Math_Nova_sign,
+&nova_math_Nova_Math_Nova_random,
+&nova_math_Nova_Math_0_Nova_abs,
+&nova_math_Nova_Math_1_Nova_abs,
+&nova_math_Nova_Math_Nova_sqrt,
+&nova_math_Nova_Math_Nova_pow,
+&nova_math_Nova_Math_Nova_sin,
+&nova_math_Nova_Math_Nova_cos,
+&nova_math_Nova_Math_Nova_tan,
+&nova_math_Nova_Math_Nova_asin,
+&nova_math_Nova_Math_Nova_acos,
+&nova_math_Nova_Math_Nova_atan,
+&nova_math_Nova_Math_Nova_round,
+&nova_math_Nova_Math_Nova_floor,
+&nova_math_Nova_Math_Nova_ceil,
 &nova_math_Nova_Math_Nova_construct,
 },
 

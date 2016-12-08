@@ -61,8 +61,11 @@ nova_datastruct_list_LinkedListIterator_Extension_VTable nova_datastruct_list_Li
 		0,
 		0,
 		0,
-		(char(*)(nova_operators_Nova_Equals*, nova_exception_Nova_ExceptionData*, nova_Nova_Object*))nova_Nova_Object_0_Nova_equals,
 		0,
+		0,
+		0,
+		0,
+		(char(*)(nova_operators_Nova_Equals*, nova_exception_Nova_ExceptionData*, nova_Nova_Object*))nova_Nova_Object_0_Nova_equals,
 		0,
 		0,
 		0,
@@ -130,7 +133,7 @@ void nova_datastruct_list_Nova_LinkedListIterator_Nova_this(nova_datastruct_list
 
 nova_datastruct_list_Nova_Iterator* nova_datastruct_list_Nova_LinkedListIterator_Nova_reset(nova_datastruct_list_Nova_LinkedListIterator* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
-	this->nova_datastruct_list_Nova_LinkedListIterator_Nova_position = nova_datastruct_list_Nova_LinkedList_Accessorfunc_Nova_first(this->prv->nova_datastruct_list_Nova_LinkedListIterator_Nova_list, exceptionData);
+	this->nova_datastruct_list_Nova_LinkedListIterator_Nova_position = (nova_datastruct_list_Nova_ListNode*)(nova_datastruct_list_Nova_LinkedList_Accessor_Nova_first(this->prv->nova_datastruct_list_Nova_LinkedListIterator_Nova_list, exceptionData));
 	return (nova_datastruct_list_Nova_Iterator*)this;
 }
 

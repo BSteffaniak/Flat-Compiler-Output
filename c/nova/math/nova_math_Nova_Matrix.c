@@ -94,9 +94,12 @@ nova_math_Matrix_Extension_VTable nova_math_Matrix_Extension_VTable_val =
 		0,
 		0,
 		0,
+		0,
+		0,
+		0,
+		0,
 		(char(*)(nova_operators_Nova_Equals*, nova_exception_Nova_ExceptionData*, nova_Nova_Object*))nova_Nova_Object_0_Nova_equals,
 		(nova_Nova_Object*(*)(nova_operators_Nova_Multiply*, nova_exception_Nova_ExceptionData*, nova_Nova_Object*))nova_math_Nova_Matrix_Nova_multiply,
-		0,
 		0,
 		0,
 		0,
@@ -354,12 +357,12 @@ nova_math_Nova_Matrix* nova_math_Nova_Matrix_Nova_add(nova_math_Nova_Matrix* thi
 	}
 	l1_Nova_result = nova_math_Nova_Matrix_1_Nova_construct(0, exceptionData, nova_math_Nova_Matrix_Accessor_Nova_rows(this, exceptionData), nova_math_Nova_Matrix_Accessor_Nova_cols(this, exceptionData));
 	l3_Nova_row = (int)0;
-	for (; l3_Nova_row < (int)nova_math_Nova_Math_static_Nova_min(0, exceptionData, nova_math_Nova_Matrix_Accessor_Nova_rows(this, exceptionData), (long_long)(nova_math_Nova_Matrix_Accessor_Nova_rows(other, exceptionData))); l3_Nova_row++)
+	for (; l3_Nova_row < (int)nova_math_Nova_Math_Nova_min(0, exceptionData, nova_math_Nova_Matrix_Accessor_Nova_rows(this, exceptionData), (long_long)(nova_math_Nova_Matrix_Accessor_Nova_rows(other, exceptionData))); l3_Nova_row++)
 	{
 		int l5_Nova_col = 0;
 		
 		l5_Nova_col = (int)0;
-		for (; l5_Nova_col < (int)nova_math_Nova_Math_static_Nova_min(0, exceptionData, nova_math_Nova_Matrix_Accessor_Nova_cols(this, exceptionData), (long_long)(nova_math_Nova_Matrix_Accessor_Nova_cols(other, exceptionData))); l5_Nova_col++)
+		for (; l5_Nova_col < (int)nova_math_Nova_Math_Nova_min(0, exceptionData, nova_math_Nova_Matrix_Accessor_Nova_cols(this, exceptionData), (long_long)(nova_math_Nova_Matrix_Accessor_Nova_cols(other, exceptionData))); l5_Nova_col++)
 		{
 			nova_datastruct_list_Nova_DoubleArray_Nova_set(nova_math_Nova_Matrix_Nova_get(l1_Nova_result, exceptionData, l3_Nova_row), exceptionData, l5_Nova_col, (double)(intptr_t)nova_datastruct_list_Nova_DoubleArray_Nova_get((nova_datastruct_list_Nova_DoubleArray*)(nova_datastruct_list_Nova_Array_virtual_Nova_get((nova_datastruct_list_Nova_Array*)(this->prv->nova_math_Nova_Matrix_Nova_data), exceptionData, l3_Nova_row)), exceptionData, l5_Nova_col) + (double)(intptr_t)nova_datastruct_list_Nova_DoubleArray_Nova_get(nova_math_Nova_Matrix_Nova_get(other, exceptionData, l3_Nova_row), exceptionData, l5_Nova_col));
 		}
@@ -379,12 +382,12 @@ nova_math_Nova_Matrix* nova_math_Nova_Matrix_Nova_subtract(nova_math_Nova_Matrix
 	}
 	l1_Nova_result = nova_math_Nova_Matrix_1_Nova_construct(0, exceptionData, nova_math_Nova_Matrix_Accessor_Nova_rows(this, exceptionData), nova_math_Nova_Matrix_Accessor_Nova_cols(this, exceptionData));
 	l3_Nova_row = (int)0;
-	for (; l3_Nova_row < (int)nova_math_Nova_Math_static_Nova_min(0, exceptionData, nova_math_Nova_Matrix_Accessor_Nova_rows(this, exceptionData), (long_long)(nova_math_Nova_Matrix_Accessor_Nova_rows(other, exceptionData))); l3_Nova_row++)
+	for (; l3_Nova_row < (int)nova_math_Nova_Math_Nova_min(0, exceptionData, nova_math_Nova_Matrix_Accessor_Nova_rows(this, exceptionData), (long_long)(nova_math_Nova_Matrix_Accessor_Nova_rows(other, exceptionData))); l3_Nova_row++)
 	{
 		int l5_Nova_col = 0;
 		
 		l5_Nova_col = (int)0;
-		for (; l5_Nova_col < (int)nova_math_Nova_Math_static_Nova_min(0, exceptionData, nova_math_Nova_Matrix_Accessor_Nova_cols(this, exceptionData), (long_long)(nova_math_Nova_Matrix_Accessor_Nova_cols(other, exceptionData))); l5_Nova_col++)
+		for (; l5_Nova_col < (int)nova_math_Nova_Math_Nova_min(0, exceptionData, nova_math_Nova_Matrix_Accessor_Nova_cols(this, exceptionData), (long_long)(nova_math_Nova_Matrix_Accessor_Nova_cols(other, exceptionData))); l5_Nova_col++)
 		{
 			nova_datastruct_list_Nova_DoubleArray_Nova_set(nova_math_Nova_Matrix_Nova_get(l1_Nova_result, exceptionData, l3_Nova_row), exceptionData, l5_Nova_col, (double)(intptr_t)nova_datastruct_list_Nova_DoubleArray_Nova_get((nova_datastruct_list_Nova_DoubleArray*)(nova_datastruct_list_Nova_Array_virtual_Nova_get((nova_datastruct_list_Nova_Array*)(this->prv->nova_math_Nova_Matrix_Nova_data), exceptionData, l3_Nova_row)), exceptionData, l5_Nova_col) - (double)(intptr_t)nova_datastruct_list_Nova_DoubleArray_Nova_get(nova_math_Nova_Matrix_Nova_get(other, exceptionData, l3_Nova_row), exceptionData, l5_Nova_col));
 		}
@@ -486,7 +489,7 @@ double nova_math_Nova_Matrix_static_Nova_determinant(nova_math_Nova_Matrix* this
 					}
 				}
 			}
-			l1_Nova_det += nova_math_Nova_Math_static_Nova_pow(0, exceptionData, -1.0, 1.0 + l6_Nova_j1 + 1.0) * (double)(intptr_t)nova_datastruct_list_Nova_DoubleArray_Nova_get((nova_datastruct_list_Nova_DoubleArray*)(nova_datastruct_list_Nova_Array_virtual_Nova_get((nova_datastruct_list_Nova_Array*)(data), exceptionData, 0)), exceptionData, l6_Nova_j1) * nova_math_Nova_Matrix_static_Nova_determinant(0, exceptionData, l6_Nova_m);
+			l1_Nova_det += nova_math_Nova_Math_Nova_pow(0, exceptionData, -1.0, 1.0 + l6_Nova_j1 + 1.0) * (double)(intptr_t)nova_datastruct_list_Nova_DoubleArray_Nova_get((nova_datastruct_list_Nova_DoubleArray*)(nova_datastruct_list_Nova_Array_virtual_Nova_get((nova_datastruct_list_Nova_Array*)(data), exceptionData, 0)), exceptionData, l6_Nova_j1) * nova_math_Nova_Matrix_static_Nova_determinant(0, exceptionData, l6_Nova_m);
 		}
 	}
 	return l1_Nova_det;

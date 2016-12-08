@@ -69,6 +69,9 @@ spectra_tree_nodes_annotations_Annotatable_Extension_VTable spectra_tree_nodes_a
 		0,
 		0,
 		0,
+		0,
+		0,
+		0,
 	},
 };
 
@@ -79,6 +82,16 @@ void spectra_tree_nodes_annotations_Nova_Annotatable_Nova_init_static(nova_excep
 	}
 }
 
+
+nova_datastruct_list_Nova_Array* spectra_tree_nodes_annotations_Nova_Annotatable_Accessor_Nova_annotations(spectra_tree_nodes_annotations_Nova_Annotatable* this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+	return (nova_datastruct_list_Nova_Array*)(nova_Nova_Object*)nova_null;
+}
+
+nova_datastruct_list_Nova_Array* spectra_tree_nodes_annotations_Nova_Annotatable_Mutator_Nova_annotations(spectra_tree_nodes_annotations_Nova_Annotatable* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_list_Nova_Array* value)
+{
+	return value;
+}
 
 void spectra_tree_nodes_annotations_Nova_Annotatable_virtual_Nova_addAnnotation(spectra_tree_nodes_annotations_Nova_Annotatable* this, nova_exception_Nova_ExceptionData* exceptionData, spectra_tree_nodes_annotations_Nova_Annotation* annotation)
 {

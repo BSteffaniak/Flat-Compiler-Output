@@ -101,13 +101,16 @@ spectra_tree_nodes_variables_VariableDeclaration_Extension_VTable spectra_tree_n
 		0,
 		0,
 		0,
+		0,
+		0,
+		0,
+		0,
 		(char(*)(nova_operators_Nova_Equals*, nova_exception_Nova_ExceptionData*, nova_Nova_Object*))nova_Nova_Object_0_Nova_equals,
 		0,
 		0,
 		0,
-		0,
-		0,
 		(void(*)(spectra_tree_nodes_annotations_Nova_Annotatable*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_annotations_Nova_Annotation*))spectra_tree_nodes_Nova_Node_Nova_addAnnotation,
+		0,
 		0,
 		0,
 		0,
@@ -208,8 +211,8 @@ spectra_tree_nodes_variables_Nova_VariableDeclaration* spectra_tree_nodes_variab
 		spectra_tree_nodes_variables_Nova_VariableDeclaration* l1_Nova_node = (spectra_tree_nodes_variables_Nova_VariableDeclaration*)nova_null;
 		
 		l1_Nova_node = spectra_tree_nodes_variables_Nova_VariableDeclaration_Nova_construct(0, exceptionData, parent, location);
-		l1_Nova_node->spectra_tree_nodes_Nova_Identifier_Nova_name = (nova_Nova_String*)(nova_datastruct_list_Nova_Array_virtual_Accessorfunc_Nova_last((nova_datastruct_list_Nova_Array*)(l1_Nova_words), exceptionData));
-		if (spectra_util_Nova_CompilerStringFunctions_Accessor_Nova_isIdentifier(l1_Nova_node->spectra_tree_nodes_Nova_Identifier_Nova_name, exceptionData) && spectra_tree_nodes_Nova_Value_virtual_Nova_parseType((spectra_tree_nodes_Nova_Value*)(l1_Nova_node), exceptionData, (nova_Nova_String*)(nova_datastruct_list_Nova_Array_virtual_Accessorfunc_Nova_first((nova_datastruct_list_Nova_Array*)(l1_Nova_words), exceptionData))))
+		l1_Nova_node->spectra_tree_nodes_Nova_Identifier_Nova_name = (nova_Nova_String*)(nova_datastruct_list_Nova_List_virtual_Accessor1_Nova_last((nova_datastruct_list_Nova_List*)(l1_Nova_words), exceptionData));
+		if (spectra_util_Nova_CompilerStringFunctions_Accessor_Nova_isIdentifier(l1_Nova_node->spectra_tree_nodes_Nova_Identifier_Nova_name, exceptionData) && spectra_tree_nodes_Nova_Value_virtual_Nova_parseType((spectra_tree_nodes_Nova_Value*)(l1_Nova_node), exceptionData, (nova_Nova_String*)(nova_datastruct_list_Nova_List_virtual_Accessor1_Nova_first((nova_datastruct_list_Nova_List*)(l1_Nova_words), exceptionData))))
 		{
 			return l1_Nova_node;
 		}

@@ -76,8 +76,11 @@ nova_String_Extension_VTable nova_String_Extension_VTable_val =
 		0,
 		0,
 		0,
-		(char(*)(nova_operators_Nova_Equals*, nova_exception_Nova_ExceptionData*, nova_Nova_Object*))nova_Nova_String_Nova_equals,
 		0,
+		0,
+		0,
+		0,
+		(char(*)(nova_operators_Nova_Equals*, nova_exception_Nova_ExceptionData*, nova_Nova_Object*))nova_Nova_String_Nova_equals,
 		0,
 		0,
 		0,
@@ -355,7 +358,7 @@ int nova_Nova_String_0_Nova_indexOf(nova_Nova_String* this, nova_exception_Nova_
 	start = (int)(start == (intptr_t)nova_null ? 0 : start);
 	direction = (int)(direction == (intptr_t)nova_null ? 1 : direction);
 	defaultReturnValue = (int)(defaultReturnValue == (intptr_t)nova_null ? -1 : defaultReturnValue);
-	l1_Nova_first = (nova_regex_Nova_Match*)(nova_datastruct_list_Nova_Array_virtual_Accessorfunc_Nova_first((nova_datastruct_list_Nova_Array*)(nova_regex_Nova_Regex_0_static_Nova_getMatches(0, exceptionData, search, this)), exceptionData));
+	l1_Nova_first = (nova_regex_Nova_Match*)(nova_datastruct_list_Nova_List_virtual_Accessor1_Nova_first((nova_datastruct_list_Nova_List*)(nova_regex_Nova_Regex_0_static_Nova_getMatches(0, exceptionData, search, this)), exceptionData));
 	if (l1_Nova_first != (nova_regex_Nova_Match*)nova_null)
 	{
 		return l1_Nova_first->nova_regex_Nova_Match_Nova_start;
@@ -535,7 +538,7 @@ int nova_Nova_String_Nova_compareTo(nova_Nova_String* this, nova_exception_Nova_
 	long_long l1_Nova_min = 0;
 	int l2_Nova_i = 0;
 	
-	l1_Nova_min = nova_math_Nova_Math_static_Nova_min(0, exceptionData, this->nova_Nova_String_Nova_count, (long_long)(other->nova_Nova_String_Nova_count));
+	l1_Nova_min = nova_math_Nova_Math_Nova_min(0, exceptionData, this->nova_Nova_String_Nova_count, (long_long)(other->nova_Nova_String_Nova_count));
 	l2_Nova_i = (int)0;
 	for (; l2_Nova_i < (int)l1_Nova_min; l2_Nova_i++)
 	{
@@ -624,13 +627,13 @@ void nova_Nova_String_Nova_lambda63(nova_Nova_String* this, nova_exception_Nova_
 
 char nova_Nova_String_Accessor_Nova_first(nova_Nova_String* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
-	return (char)(intptr_t)nova_datastruct_list_Nova_CharArray_Accessorfunc_Nova_first((nova_datastruct_list_Nova_CharArray*)(this->nova_Nova_String_Nova_chars), exceptionData);
+	return (char)(intptr_t)nova_datastruct_list_Nova_CharArray_Accessor_Nova_first((nova_datastruct_list_Nova_CharArray*)(this->nova_Nova_String_Nova_chars), exceptionData);
 }
 
 
 char nova_Nova_String_Accessor_Nova_last(nova_Nova_String* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
-	return (char)(intptr_t)nova_datastruct_list_Nova_CharArray_Accessorfunc_Nova_last((nova_datastruct_list_Nova_CharArray*)(this->nova_Nova_String_Nova_chars), exceptionData);
+	return (char)(intptr_t)nova_datastruct_list_Nova_CharArray_Accessor_Nova_last((nova_datastruct_list_Nova_CharArray*)(this->nova_Nova_String_Nova_chars), exceptionData);
 }
 
 

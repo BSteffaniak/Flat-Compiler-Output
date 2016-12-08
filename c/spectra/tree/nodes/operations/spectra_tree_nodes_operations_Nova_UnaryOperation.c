@@ -96,13 +96,16 @@ spectra_tree_nodes_operations_UnaryOperation_Extension_VTable spectra_tree_nodes
 		0,
 		0,
 		0,
+		0,
+		0,
+		0,
+		0,
 		(char(*)(nova_operators_Nova_Equals*, nova_exception_Nova_ExceptionData*, nova_Nova_Object*))nova_Nova_Object_0_Nova_equals,
 		0,
 		0,
 		0,
-		0,
-		0,
 		(void(*)(spectra_tree_nodes_annotations_Nova_Annotatable*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_annotations_Nova_Annotation*))spectra_tree_nodes_Nova_Node_Nova_addAnnotation,
+		0,
 		0,
 		0,
 		0,
@@ -210,7 +213,7 @@ spectra_tree_nodes_operations_Nova_UnaryOperation* spectra_tree_nodes_operations
 		int l1_Nova_match = 0;
 		
 		l1_Nova_node = spectra_tree_nodes_operations_Nova_UnaryOperation_Nova_construct(0, exceptionData, parent, location);
-		l1_Nova_match = (int)(intptr_t)(nova_datastruct_list_Nova_IntArray_Accessorfunc_Nova_first(l1_Nova_matches, exceptionData));
+		l1_Nova_match = (int)(intptr_t)(nova_datastruct_list_Nova_IntArray_Accessor_Nova_first(l1_Nova_matches, exceptionData));
 		if (!spectra_tree_nodes_operations_Nova_UnaryOperation_Nova_parseOperator(l1_Nova_node, exceptionData, input, l1_Nova_match))
 		{
 			THROW(spectra_Nova_InvalidParseException_Nova_construct(0, exceptionData, nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)(nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("Could not parse unary operator for '"))), exceptionData, nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)((input)), exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("'")))), (spectra_tree_nodes_Nova_Node*)(l1_Nova_node)), 1);

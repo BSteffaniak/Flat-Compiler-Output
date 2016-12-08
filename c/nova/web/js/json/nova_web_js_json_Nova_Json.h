@@ -42,6 +42,7 @@ typedef struct nova_web_js_json_Nova_Json nova_web_js_json_Nova_Json;
 #include <nova/datastruct/list/nova_datastruct_list_Nova_List.h>
 #include <nova/datastruct/nova_datastruct_Nova_ImmutableHashMap.h>
 #include <nova/datastruct/nova_datastruct_Nova_Pair.h>
+#include <nova/datastruct/list/nova_datastruct_list_Nova_Iterator.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_ArrayIterator.h>
 #include <nova/NativeObject.h>
 #include <nova/operators/nova_operators_Nova_Equals.h>
@@ -66,6 +67,9 @@ CCLASS_CLASS
 	
 	nova_web_js_json_Json_Extension_VTable* vtable;
 	int nova_datastruct_Nova_HashMap_Nova_count;
+	nova_datastruct_list_Nova_Iterator* nova_datastruct_Nova_HashMap_Nova_iterator;
+	nova_datastruct_Nova_Pair* nova_datastruct_Nova_HashMap_Nova_first;
+	nova_datastruct_Nova_Pair* nova_datastruct_Nova_HashMap_Nova_last;
 	struct Private* prv;
 )
 

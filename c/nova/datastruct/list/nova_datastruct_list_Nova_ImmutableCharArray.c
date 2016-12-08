@@ -56,11 +56,14 @@ nova_datastruct_list_ImmutableCharArray_Extension_VTable nova_datastruct_list_Im
 		(nova_datastruct_list_Nova_List*(*)(nova_datastruct_list_Nova_List*, nova_exception_Nova_ExceptionData*))nova_datastruct_list_Nova_ImmutableCharArray_Nova_reverse,
 		(nova_Nova_String*(*)(nova_datastruct_list_Nova_List*, nova_exception_Nova_ExceptionData*, nova_Nova_String*))nova_datastruct_list_Nova_List_Nova_join,
 		(int(*)(nova_datastruct_list_Nova_List*, nova_exception_Nova_ExceptionData*, int))nova_datastruct_list_Nova_List_Mutator_Nova_count,
+		(nova_Nova_Object*(*)(nova_datastruct_list_Nova_List*, nova_exception_Nova_ExceptionData*))nova_datastruct_list_Nova_ImmutableCharArray_Accessor_Nova_first,
+		(nova_Nova_Object*(*)(nova_datastruct_list_Nova_List*, nova_exception_Nova_ExceptionData*, nova_Nova_Object*))nova_datastruct_list_Nova_ImmutableCharArray_Mutator_Nova_first,
+		(nova_Nova_Object*(*)(nova_datastruct_list_Nova_List*, nova_exception_Nova_ExceptionData*))nova_datastruct_list_Nova_ImmutableCharArray_Accessor_Nova_last,
+		(nova_Nova_Object*(*)(nova_datastruct_list_Nova_List*, nova_exception_Nova_ExceptionData*, nova_Nova_Object*))nova_datastruct_list_Nova_ImmutableCharArray_Mutator_Nova_last,
 		(int(*)(nova_datastruct_list_Nova_List*, nova_exception_Nova_ExceptionData*))nova_datastruct_list_Nova_ImmutableCharArray_Accessor_Nova_count,
 		0,
 		0,
 		(char(*)(nova_operators_Nova_Equals*, nova_exception_Nova_ExceptionData*, nova_Nova_Object*))nova_Nova_Object_0_Nova_equals,
-		0,
 		0,
 		0,
 		0,
@@ -242,25 +245,25 @@ nova_datastruct_list_Nova_ImmutableCharArrayIterator* nova_datastruct_list_Nova_
 }
 
 
-char nova_datastruct_list_Nova_ImmutableCharArray_Accessorfunc_Nova_first(nova_datastruct_list_Nova_ImmutableCharArray* this, nova_exception_Nova_ExceptionData* exceptionData)
+char nova_datastruct_list_Nova_ImmutableCharArray_Accessor_Nova_first(nova_datastruct_list_Nova_ImmutableCharArray* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
-	return (char)(intptr_t)nova_datastruct_list_Nova_CharArray_Accessorfunc_Nova_first(this->prv->nova_datastruct_list_Nova_ImmutableCharArray_Nova_array, exceptionData);
+	return (char)(intptr_t)nova_datastruct_list_Nova_CharArray_Accessor_Nova_first(this->prv->nova_datastruct_list_Nova_ImmutableCharArray_Nova_array, exceptionData);
 }
 
-char nova_datastruct_list_Nova_ImmutableCharArray_Mutatorfunc_Nova_first(nova_datastruct_list_Nova_ImmutableCharArray* this, nova_exception_Nova_ExceptionData* exceptionData, char value)
+char nova_datastruct_list_Nova_ImmutableCharArray_Mutator_Nova_first(nova_datastruct_list_Nova_ImmutableCharArray* this, nova_exception_Nova_ExceptionData* exceptionData, char value)
 {
-	nova_datastruct_list_Nova_CharArray_Mutatorfunc_Nova_first(this->prv->nova_datastruct_list_Nova_ImmutableCharArray_Nova_array, exceptionData, value);
+	nova_datastruct_list_Nova_CharArray_Mutator_Nova_first(this->prv->nova_datastruct_list_Nova_ImmutableCharArray_Nova_array, exceptionData, value);
 	return value;
 }
 
-char nova_datastruct_list_Nova_ImmutableCharArray_Accessorfunc_Nova_last(nova_datastruct_list_Nova_ImmutableCharArray* this, nova_exception_Nova_ExceptionData* exceptionData)
+char nova_datastruct_list_Nova_ImmutableCharArray_Accessor_Nova_last(nova_datastruct_list_Nova_ImmutableCharArray* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
-	return (char)(intptr_t)nova_datastruct_list_Nova_CharArray_Accessorfunc_Nova_last(this->prv->nova_datastruct_list_Nova_ImmutableCharArray_Nova_array, exceptionData);
+	return (char)(intptr_t)nova_datastruct_list_Nova_CharArray_Accessor_Nova_last(this->prv->nova_datastruct_list_Nova_ImmutableCharArray_Nova_array, exceptionData);
 }
 
-char nova_datastruct_list_Nova_ImmutableCharArray_Mutatorfunc_Nova_last(nova_datastruct_list_Nova_ImmutableCharArray* this, nova_exception_Nova_ExceptionData* exceptionData, char value)
+char nova_datastruct_list_Nova_ImmutableCharArray_Mutator_Nova_last(nova_datastruct_list_Nova_ImmutableCharArray* this, nova_exception_Nova_ExceptionData* exceptionData, char value)
 {
-	nova_datastruct_list_Nova_CharArray_Mutatorfunc_Nova_last(this->prv->nova_datastruct_list_Nova_ImmutableCharArray_Nova_array, exceptionData, value);
+	nova_datastruct_list_Nova_CharArray_Mutator_Nova_last(this->prv->nova_datastruct_list_Nova_ImmutableCharArray_Nova_array, exceptionData, value);
 	return value;
 }
 

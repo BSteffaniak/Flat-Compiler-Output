@@ -78,13 +78,16 @@ spectra_tree_nodes_functions_ParameterList_Extension_VTable spectra_tree_nodes_f
 		0,
 		0,
 		0,
+		0,
+		0,
+		0,
+		0,
 		(char(*)(nova_operators_Nova_Equals*, nova_exception_Nova_ExceptionData*, nova_Nova_Object*))nova_Nova_Object_0_Nova_equals,
 		0,
 		0,
 		0,
-		0,
-		0,
 		(void(*)(spectra_tree_nodes_annotations_Nova_Annotatable*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_annotations_Nova_Annotation*))spectra_tree_nodes_Nova_Node_Nova_addAnnotation,
+		0,
 		0,
 		0,
 		0,
@@ -185,7 +188,7 @@ nova_datastruct_list_Nova_Array* spectra_tree_nodes_functions_Nova_ParameterList
 nova_datastruct_list_Nova_Array* spectra_tree_nodes_functions_Nova_ParameterList_Mutator_Nova_parameters(spectra_tree_nodes_functions_Nova_ParameterList* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_list_Nova_Array* value)
 {
 	this->spectra_tree_nodes_Nova_NodeList_Nova_children = value;
-	return (nova_datastruct_list_Nova_Array*)value;
+	return value;
 }
 
 void spectra_tree_nodes_functions_Nova_ParameterList_Nova_super(spectra_tree_nodes_functions_Nova_ParameterList* this, nova_exception_Nova_ExceptionData* exceptionData)

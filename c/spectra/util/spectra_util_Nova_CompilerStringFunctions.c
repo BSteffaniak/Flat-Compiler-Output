@@ -108,6 +108,9 @@ spectra_util_CompilerStringFunctions_Extension_VTable spectra_util_CompilerStrin
 		0,
 		0,
 		0,
+		0,
+		0,
+		0,
 	},
 };
 
@@ -353,7 +356,7 @@ int spectra_util_Nova_CompilerStringFunctions_Nova_nextLetterIndex(nova_Nova_Str
 
 char spectra_util_Nova_CompilerStringFunctions_Nova_isSurroundedByQuotes(nova_Nova_String* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
-	return this->nova_Nova_String_Nova_count >= 2 && (char)(intptr_t)nova_datastruct_list_Nova_CharArray_Accessorfunc_Nova_first((nova_datastruct_list_Nova_CharArray*)(this->nova_Nova_String_Nova_chars), exceptionData) == '"' && (char)(intptr_t)nova_datastruct_list_Nova_CharArray_Accessorfunc_Nova_last((nova_datastruct_list_Nova_CharArray*)(this->nova_Nova_String_Nova_chars), exceptionData) == '"';
+	return this->nova_Nova_String_Nova_count >= 2 && (char)(intptr_t)nova_datastruct_list_Nova_CharArray_Accessor_Nova_first((nova_datastruct_list_Nova_CharArray*)(this->nova_Nova_String_Nova_chars), exceptionData) == '"' && (char)(intptr_t)nova_datastruct_list_Nova_CharArray_Accessor_Nova_last((nova_datastruct_list_Nova_CharArray*)(this->nova_Nova_String_Nova_chars), exceptionData) == '"';
 }
 
 nova_Nova_String* spectra_util_Nova_CompilerStringFunctions_Nova_removeSurroundingQuotes(nova_Nova_String* this, nova_exception_Nova_ExceptionData* exceptionData)

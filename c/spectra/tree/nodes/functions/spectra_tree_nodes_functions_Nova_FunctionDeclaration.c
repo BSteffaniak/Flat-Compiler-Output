@@ -111,9 +111,11 @@ spectra_tree_nodes_functions_FunctionDeclaration_Extension_VTable spectra_tree_n
 		0,
 		0,
 		0,
+		0,
+		0,
+		0,
+		0,
 		(char(*)(nova_operators_Nova_Equals*, nova_exception_Nova_ExceptionData*, nova_Nova_Object*))nova_Nova_Object_0_Nova_equals,
-		0,
-		0,
 		0,
 		0,
 		0,
@@ -121,8 +123,9 @@ spectra_tree_nodes_functions_FunctionDeclaration_Extension_VTable spectra_tree_n
 		(spectra_tree_nodes_functions_Nova_Parameter*(*)(spectra_tree_nodes_functions_Nova_CallableFunction*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, int))spectra_tree_nodes_functions_Nova_CallableFunction_Nova_parseParameter,
 		(char(*)(spectra_tree_nodes_functions_Nova_CallableFunction*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, int))spectra_tree_nodes_functions_Nova_CallableFunction_Nova_parseParameters,
 		(spectra_tree_nodes_functions_Nova_ParameterList*(*)(spectra_tree_nodes_functions_Nova_CallableFunction*, nova_exception_Nova_ExceptionData*))spectra_tree_nodes_functions_Nova_FunctionDeclaration_Accessorfunc_Nova_parameterList,
-		(nova_datastruct_list_Nova_Array*(*)(spectra_tree_nodes_generics_Nova_GenericCompatible*, nova_exception_Nova_ExceptionData*, nova_datastruct_list_Nova_Array*))spectra_tree_nodes_functions_Nova_FunctionDeclaration_Mutatorfunc_Nova_genericParameters,
+		(spectra_tree_nodes_functions_Nova_ParameterList*(*)(spectra_tree_nodes_functions_Nova_CallableFunction*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_functions_Nova_ParameterList*))spectra_tree_nodes_functions_Nova_FunctionDeclaration_Mutatorfunc0_Nova_parameterList,
 		(nova_datastruct_list_Nova_Array*(*)(spectra_tree_nodes_generics_Nova_GenericCompatible*, nova_exception_Nova_ExceptionData*))spectra_tree_nodes_functions_Nova_FunctionDeclaration_Accessorfunc_Nova_genericParameters,
+		(nova_datastruct_list_Nova_Array*(*)(spectra_tree_nodes_generics_Nova_GenericCompatible*, nova_exception_Nova_ExceptionData*, nova_datastruct_list_Nova_Array*))spectra_tree_nodes_functions_Nova_FunctionDeclaration_Mutatorfunc_Nova_genericParameters,
 		0,
 	},
 	spectra_tree_nodes_Nova_Node_Nova_toString,
@@ -216,7 +219,7 @@ void spectra_tree_nodes_functions_Nova_FunctionDeclaration_Nova_this(spectra_tre
 	parent = (spectra_tree_nodes_Nova_Node*)(parent == 0 ? (nova_Nova_Object*)(nova_Nova_Object*)nova_null : (nova_Nova_Object*)parent);
 	location = (spectra_util_Nova_Location*)(location == 0 ? (nova_Nova_Object*)spectra_util_Nova_Location_Nova_INVALID : (nova_Nova_Object*)location);
 	spectra_tree_nodes_variables_Nova_InstanceDeclaration_Nova_this((spectra_tree_nodes_variables_Nova_InstanceDeclaration*)(this), exceptionData, parent, location);
-	spectra_tree_nodes_functions_Nova_FunctionDeclaration_Mutatorfunc_Nova_parameterList(this, exceptionData, spectra_tree_nodes_functions_Nova_ParameterList_Nova_construct(0, exceptionData, (spectra_tree_nodes_Nova_Node*)(this), 0));
+	spectra_tree_nodes_functions_Nova_FunctionDeclaration_Mutatorfunc0_Nova_parameterList(this, exceptionData, spectra_tree_nodes_functions_Nova_ParameterList_Nova_construct(0, exceptionData, (spectra_tree_nodes_Nova_Node*)(this), 0));
 }
 
 spectra_tree_nodes_variables_Nova_VariableDeclaration* spectra_tree_nodes_functions_Nova_FunctionDeclaration_Nova_findVariableDeclaration(spectra_tree_nodes_functions_Nova_FunctionDeclaration* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* name, int searchAncestors)
@@ -372,7 +375,7 @@ spectra_tree_nodes_functions_Nova_FunctionDeclaration* spectra_tree_nodes_functi
 {
 	spectra_tree_nodes_variables_Nova_InstanceDeclaration_Nova_cloneTo(((spectra_tree_nodes_variables_Nova_InstanceDeclaration*)this), exceptionData, (spectra_tree_nodes_variables_Nova_InstanceDeclaration*)(other));
 	spectra_tree_nodes_generics_Nova_GenericCompatible_1_Nova_cloneTo(((spectra_tree_nodes_generics_Nova_GenericCompatible*)this), exceptionData, (spectra_tree_nodes_generics_Nova_GenericCompatible*)(other));
-	spectra_tree_nodes_functions_Nova_FunctionDeclaration_Mutatorfunc_Nova_parameterList(other, exceptionData, spectra_tree_nodes_functions_Nova_FunctionDeclaration_Accessorfunc_Nova_parameterList(this, exceptionData));
+	spectra_tree_nodes_functions_Nova_FunctionDeclaration_Mutatorfunc0_Nova_parameterList(other, exceptionData, spectra_tree_nodes_functions_Nova_FunctionDeclaration_Accessorfunc_Nova_parameterList(this, exceptionData));
 	other->spectra_tree_nodes_functions_Nova_FunctionDeclaration_Nova_objectReference = this->spectra_tree_nodes_functions_Nova_FunctionDeclaration_Nova_objectReference;
 	return other;
 }
@@ -413,7 +416,7 @@ nova_datastruct_list_Nova_Array* spectra_tree_nodes_functions_Nova_FunctionDecla
 nova_datastruct_list_Nova_Array* spectra_tree_nodes_functions_Nova_FunctionDeclaration_Mutatorfunc_Nova_genericParameters(spectra_tree_nodes_functions_Nova_FunctionDeclaration* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_list_Nova_Array* value)
 {
 	this->spectra_tree_nodes_functions_Nova_FunctionDeclaration_Nova_genericParameters = value;
-	return (nova_datastruct_list_Nova_Array*)value;
+	return value;
 }
 
 spectra_tree_nodes_functions_Nova_ParameterList* spectra_tree_nodes_functions_Nova_FunctionDeclaration_Accessorfunc_Nova_parameterList(spectra_tree_nodes_functions_Nova_FunctionDeclaration* this, nova_exception_Nova_ExceptionData* exceptionData)
@@ -421,7 +424,7 @@ spectra_tree_nodes_functions_Nova_ParameterList* spectra_tree_nodes_functions_No
 	return this->spectra_tree_nodes_functions_Nova_FunctionDeclaration_Nova_parameterList;
 }
 
-spectra_tree_nodes_functions_Nova_ParameterList* spectra_tree_nodes_functions_Nova_FunctionDeclaration_Mutatorfunc_Nova_parameterList(spectra_tree_nodes_functions_Nova_FunctionDeclaration* this, nova_exception_Nova_ExceptionData* exceptionData, spectra_tree_nodes_functions_Nova_ParameterList* value)
+spectra_tree_nodes_functions_Nova_ParameterList* spectra_tree_nodes_functions_Nova_FunctionDeclaration_Mutatorfunc0_Nova_parameterList(spectra_tree_nodes_functions_Nova_FunctionDeclaration* this, nova_exception_Nova_ExceptionData* exceptionData, spectra_tree_nodes_functions_Nova_ParameterList* value)
 {
 	this->spectra_tree_nodes_functions_Nova_FunctionDeclaration_Nova_parameterList = value;
 	return value;

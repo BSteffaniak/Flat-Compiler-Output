@@ -81,13 +81,16 @@ spectra_tree_nodes_arrays_ArrayAccess_Extension_VTable spectra_tree_nodes_arrays
 		0,
 		0,
 		0,
+		0,
+		0,
+		0,
+		0,
 		(char(*)(nova_operators_Nova_Equals*, nova_exception_Nova_ExceptionData*, nova_Nova_Object*))nova_Nova_Object_0_Nova_equals,
 		0,
 		0,
 		0,
-		0,
-		0,
 		(void(*)(spectra_tree_nodes_annotations_Nova_Annotatable*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_annotations_Nova_Annotation*))spectra_tree_nodes_Nova_Node_Nova_addAnnotation,
+		0,
 		0,
 		0,
 		0,
@@ -184,7 +187,7 @@ spectra_tree_nodes_arrays_Nova_ArrayAccess* spectra_tree_nodes_arrays_Nova_Array
 
 char spectra_tree_nodes_arrays_Nova_ArrayAccess_Nova_parseDimension(spectra_tree_nodes_arrays_Nova_ArrayAccess* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* dimension)
 {
-	return (nova_Nova_Object*)nova_datastruct_list_Nova_Array_virtual_Accessorfunc_Nova_last((nova_datastruct_list_Nova_Array*)(nova_datastruct_list_Nova_Array_virtual0_Nova_add((nova_datastruct_list_Nova_Array*)(this->spectra_tree_nodes_arrays_Nova_ArrayAccess_Nova_dimensions), exceptionData, (nova_Nova_Object*)(spectra_tree_nodes_Nova_Value_0_static_Nova_parse(0, exceptionData, dimension, (spectra_tree_nodes_Nova_Node*)(this), 0, (intptr_t)nova_null)))), exceptionData) != (nova_Nova_Object*)(nova_Nova_Object*)nova_null;
+	return (nova_Nova_Object*)nova_datastruct_list_Nova_List_virtual_Accessor1_Nova_last((nova_datastruct_list_Nova_List*)(nova_datastruct_list_Nova_Array_virtual0_Nova_add((nova_datastruct_list_Nova_Array*)(this->spectra_tree_nodes_arrays_Nova_ArrayAccess_Nova_dimensions), exceptionData, (nova_Nova_Object*)(spectra_tree_nodes_Nova_Value_0_static_Nova_parse(0, exceptionData, dimension, (spectra_tree_nodes_Nova_Node*)(this), 0, (intptr_t)nova_null)))), exceptionData) != (nova_Nova_Object*)(nova_Nova_Object*)nova_null;
 }
 
 char spectra_tree_nodes_arrays_Nova_ArrayAccess_Nova_parseDimensions(spectra_tree_nodes_arrays_Nova_ArrayAccess* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_list_Nova_Array* input)

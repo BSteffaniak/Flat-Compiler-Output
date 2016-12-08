@@ -29,6 +29,7 @@
 #include <nova/nova_Nova_Class.h>
 #include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_List.h>
+#include <nova/datastruct/list/nova_datastruct_list_Nova_Iterator.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_ArrayIterator.h>
 #include <nova/NativeObject.h>
 #include <nova/operators/nova_operators_Nova_Equals.h>
@@ -56,7 +57,7 @@ nova_datastruct_HashSet_Extension_VTable nova_datastruct_HashSet_Extension_VTabl
 	0,
 	{
 		0,
-		(nova_datastruct_list_Nova_Iterator*(*)(nova_datastruct_list_Nova_Iterable*, nova_exception_Nova_ExceptionData*))nova_datastruct_list_Nova_List_Accessor_Nova_iterator,
+		(nova_datastruct_list_Nova_Iterator*(*)(nova_datastruct_list_Nova_Iterable*, nova_exception_Nova_ExceptionData*))nova_datastruct_Nova_HashSet_Accessorfunc_Nova_iterator,
 		0,
 		0,
 		(nova_datastruct_list_Nova_Array*(*)(nova_datastruct_list_Nova_List*, nova_exception_Nova_ExceptionData*))nova_datastruct_Nova_HashSet_Nova_toArray,
@@ -72,11 +73,14 @@ nova_datastruct_HashSet_Extension_VTable nova_datastruct_HashSet_Extension_VTabl
 		(nova_datastruct_list_Nova_List*(*)(nova_datastruct_list_Nova_List*, nova_exception_Nova_ExceptionData*))nova_datastruct_Nova_HashSet_Nova_reverse,
 		(nova_Nova_String*(*)(nova_datastruct_list_Nova_List*, nova_exception_Nova_ExceptionData*, nova_Nova_String*))nova_datastruct_Nova_HashSet_Nova_join,
 		(int(*)(nova_datastruct_list_Nova_List*, nova_exception_Nova_ExceptionData*, int))nova_datastruct_list_Nova_List_Mutator_Nova_count,
+		(nova_Nova_Object*(*)(nova_datastruct_list_Nova_List*, nova_exception_Nova_ExceptionData*))nova_datastruct_Nova_HashSet_Accessorfunc_Nova_first,
+		(nova_Nova_Object*(*)(nova_datastruct_list_Nova_List*, nova_exception_Nova_ExceptionData*, nova_Nova_Object*))nova_datastruct_Nova_HashSet_Mutatorfunc_Nova_first,
+		(nova_Nova_Object*(*)(nova_datastruct_list_Nova_List*, nova_exception_Nova_ExceptionData*))nova_datastruct_Nova_HashSet_Accessorfunc_Nova_last,
+		(nova_Nova_Object*(*)(nova_datastruct_list_Nova_List*, nova_exception_Nova_ExceptionData*, nova_Nova_Object*))nova_datastruct_Nova_HashSet_Mutatorfunc_Nova_last,
 		(int(*)(nova_datastruct_list_Nova_List*, nova_exception_Nova_ExceptionData*))nova_datastruct_list_Nova_List_Accessor_Nova_count,
 		0,
 		0,
 		(char(*)(nova_operators_Nova_Equals*, nova_exception_Nova_ExceptionData*, nova_Nova_Object*))nova_Nova_Object_0_Nova_equals,
-		0,
 		0,
 		0,
 		0,
@@ -151,6 +155,9 @@ void nova_datastruct_Nova_HashSet_Nova_destroy(nova_datastruct_Nova_HashSet** th
 	nova_datastruct_list_Nova_Array_Nova_destroy(&(*this)->prv->nova_datastruct_Nova_HashSet_Nova_buckets, exceptionData);
 	
 	NOVA_FREE((*this)->prv);
+	
+	
+	
 	
 	
 	NOVA_FREE(*this);
@@ -495,9 +502,45 @@ nova_datastruct_list_Nova_Array* nova_datastruct_Nova_HashSet_Nova_lambda71(nova
 	return (nova_datastruct_list_Nova_Array*)nova_datastruct_list_Nova_Array_1_Nova_construct(0, exceptionData, (*context->nova_datastruct_Nova_HashSet_Nova_bucketSize), (intptr_t)nova_null);
 }
 
+nova_datastruct_list_Nova_Iterator* nova_datastruct_Nova_HashSet_Accessorfunc_Nova_iterator(nova_datastruct_Nova_HashSet* this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+	return this->nova_datastruct_Nova_HashSet_Nova_iterator;
+}
+
+nova_datastruct_list_Nova_Iterator* nova_datastruct_Nova_HashSet_Mutatorfunc_Nova_iterator(nova_datastruct_Nova_HashSet* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_list_Nova_Iterator* value)
+{
+	this->nova_datastruct_Nova_HashSet_Nova_iterator = value;
+	return (nova_datastruct_list_Nova_Iterator*)value;
+}
+
+nova_Nova_Object* nova_datastruct_Nova_HashSet_Accessorfunc_Nova_first(nova_datastruct_Nova_HashSet* this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+	return (nova_Nova_Object*)this->nova_datastruct_Nova_HashSet_Nova_first;
+}
+
+nova_Nova_Object* nova_datastruct_Nova_HashSet_Mutatorfunc_Nova_first(nova_datastruct_Nova_HashSet* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_Object* value)
+{
+	this->nova_datastruct_Nova_HashSet_Nova_first = value;
+	return (nova_Nova_Object*)value;
+}
+
+nova_Nova_Object* nova_datastruct_Nova_HashSet_Accessorfunc_Nova_last(nova_datastruct_Nova_HashSet* this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+	return (nova_Nova_Object*)this->nova_datastruct_Nova_HashSet_Nova_last;
+}
+
+nova_Nova_Object* nova_datastruct_Nova_HashSet_Mutatorfunc_Nova_last(nova_datastruct_Nova_HashSet* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_Object* value)
+{
+	this->nova_datastruct_Nova_HashSet_Nova_last = value;
+	return (nova_Nova_Object*)value;
+}
+
 void nova_datastruct_Nova_HashSet_Nova_super(nova_datastruct_Nova_HashSet* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
 	this->nova_datastruct_Nova_HashSet_Nova_size = 0;
+	this->nova_datastruct_Nova_HashSet_Nova_iterator = (nova_datastruct_list_Nova_Iterator*)nova_null;
+	this->nova_datastruct_Nova_HashSet_Nova_first = (nova_Nova_Object*)nova_null;
+	this->nova_datastruct_Nova_HashSet_Nova_last = (nova_Nova_Object*)nova_null;
 	this->prv->nova_datastruct_Nova_HashSet_Nova_buckets = (nova_datastruct_list_Nova_Array*)nova_null;
 	this->prv->nova_datastruct_Nova_HashSet_Nova_bucketSize = 0;
 }

@@ -61,6 +61,8 @@ CCLASS_CLASS
 	nova_datastruct_list_Nova_Queue, 
 	
 	nova_datastruct_list_Queue_Extension_VTable* vtable;
+	nova_Nova_Object* nova_datastruct_list_Nova_Queue_Nova_first;
+	nova_Nova_Object* nova_datastruct_list_Nova_Queue_Nova_last;
 	struct Private* prv;
 )
 
@@ -77,6 +79,10 @@ nova_Nova_String* nova_datastruct_list_Nova_Queue_Nova_toString(nova_datastruct_
 int nova_datastruct_list_Nova_Queue_Accessor_Nova_size(nova_datastruct_list_Nova_Queue* this, nova_exception_Nova_ExceptionData* exceptionData);
 char nova_datastruct_list_Nova_Queue_Accessor_Nova_empty(nova_datastruct_list_Nova_Queue* this, nova_exception_Nova_ExceptionData* exceptionData);
 nova_datastruct_list_Nova_ArrayIterator* nova_datastruct_list_Nova_Queue_Accessor_Nova_iterator(nova_datastruct_list_Nova_Queue* this, nova_exception_Nova_ExceptionData* exceptionData);
+nova_Nova_Object* nova_datastruct_list_Nova_Queue_Accessorfunc_Nova_first(nova_datastruct_list_Nova_Queue* this, nova_exception_Nova_ExceptionData* exceptionData);
+nova_Nova_Object* nova_datastruct_list_Nova_Queue_Mutatorfunc0_Nova_first(nova_datastruct_list_Nova_Queue* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_Object* value);
+nova_Nova_Object* nova_datastruct_list_Nova_Queue_Accessorfunc_Nova_last(nova_datastruct_list_Nova_Queue* this, nova_exception_Nova_ExceptionData* exceptionData);
+nova_Nova_Object* nova_datastruct_list_Nova_Queue_Mutatorfunc0_Nova_last(nova_datastruct_list_Nova_Queue* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_Object* value);
 void nova_datastruct_list_Nova_Queue_Nova_super(nova_datastruct_list_Nova_Queue* this, nova_exception_Nova_ExceptionData* exceptionData);
 
 #endif

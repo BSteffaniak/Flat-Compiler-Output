@@ -68,6 +68,9 @@ nova_operators_Multiply_Extension_VTable nova_operators_Multiply_Extension_VTabl
 		0,
 		0,
 		0,
+		0,
+		0,
+		0,
 	},
 };
 

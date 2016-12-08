@@ -95,13 +95,16 @@ spectra_tree_nodes_variables_Variable_Extension_VTable spectra_tree_nodes_variab
 		0,
 		0,
 		0,
+		0,
+		0,
+		0,
+		0,
 		(char(*)(nova_operators_Nova_Equals*, nova_exception_Nova_ExceptionData*, nova_Nova_Object*))nova_Nova_Object_0_Nova_equals,
 		0,
 		0,
 		0,
-		(spectra_tree_nodes_Nova_Accessible*(*)(spectra_tree_nodes_Nova_Accessible*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Accessible*))spectra_tree_nodes_variables_Nova_Variable_Mutatorfunc0_Nova_accessedNode,
-		(spectra_tree_nodes_Nova_Accessible*(*)(spectra_tree_nodes_Nova_Accessible*, nova_exception_Nova_ExceptionData*))spectra_tree_nodes_variables_Nova_Variable_Accessorfunc1_Nova_accessedNode,
 		(void(*)(spectra_tree_nodes_annotations_Nova_Annotatable*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_annotations_Nova_Annotation*))spectra_tree_nodes_Nova_Node_Nova_addAnnotation,
+		0,
 		0,
 		0,
 		0,
@@ -175,9 +178,8 @@ void spectra_tree_nodes_variables_Nova_Variable_Nova_destroy(spectra_tree_nodes_
 		return;
 	}
 	
-	
-	
 	spectra_tree_nodes_variables_Nova_VariableDeclaration_Nova_destroy(&(*this)->spectra_tree_nodes_variables_Nova_Variable_Nova_declaration, exceptionData);
+	
 	
 	NOVA_FREE(*this);
 }
@@ -229,6 +231,12 @@ nova_Nova_String* spectra_tree_nodes_variables_Nova_Variable_Nova_writeNova(spec
 	return nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)(this->spectra_tree_nodes_variables_Nova_Variable_Nova_declaration->spectra_tree_nodes_Nova_Identifier_Nova_name), exceptionData, nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)(spectra_tree_nodes_Nova_Value_Nova_writeArrayAccess((spectra_tree_nodes_Nova_Value*)(this), exceptionData)), exceptionData, spectra_tree_nodes_Nova_Accessible_Nova_writeAccessedNodes((spectra_tree_nodes_Nova_Accessible*)(this), exceptionData)));
 }
 
+spectra_tree_nodes_Nova_Type* spectra_tree_nodes_variables_Nova_Variable_Accessorfunc_Nova_type(spectra_tree_nodes_variables_Nova_Variable* this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+	return spectra_tree_nodes_Nova_Value_virtual_Accessorfunc_Nova_type((spectra_tree_nodes_Nova_Value*)(this->spectra_tree_nodes_variables_Nova_Variable_Nova_declaration), exceptionData);
+}
+
+
 char spectra_tree_nodes_variables_Nova_Variable_Accessorfunc_Nova_safeNavigation(spectra_tree_nodes_variables_Nova_Variable* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
 	return this->spectra_tree_nodes_variables_Nova_Variable_Nova_safeNavigation;
@@ -240,27 +248,9 @@ char spectra_tree_nodes_variables_Nova_Variable_Mutatorfunc_Nova_safeNavigation(
 	return value;
 }
 
-spectra_tree_nodes_Nova_Accessible* spectra_tree_nodes_variables_Nova_Variable_Accessorfunc1_Nova_accessedNode(spectra_tree_nodes_variables_Nova_Variable* this, nova_exception_Nova_ExceptionData* exceptionData)
-{
-	return this->spectra_tree_nodes_variables_Nova_Variable_Nova_accessedNode;
-}
-
-spectra_tree_nodes_Nova_Accessible* spectra_tree_nodes_variables_Nova_Variable_Mutatorfunc0_Nova_accessedNode(spectra_tree_nodes_variables_Nova_Variable* this, nova_exception_Nova_ExceptionData* exceptionData, spectra_tree_nodes_Nova_Accessible* value)
-{
-	this->spectra_tree_nodes_variables_Nova_Variable_Nova_accessedNode = value;
-	return value;
-}
-
-spectra_tree_nodes_Nova_Type* spectra_tree_nodes_variables_Nova_Variable_Accessorfunc_Nova_type(spectra_tree_nodes_variables_Nova_Variable* this, nova_exception_Nova_ExceptionData* exceptionData)
-{
-	return spectra_tree_nodes_Nova_Value_virtual_Accessorfunc_Nova_type((spectra_tree_nodes_Nova_Value*)(this->spectra_tree_nodes_variables_Nova_Variable_Nova_declaration), exceptionData);
-}
-
-
 void spectra_tree_nodes_variables_Nova_Variable_Nova_super(spectra_tree_nodes_variables_Nova_Variable* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
-	this->spectra_tree_nodes_variables_Nova_Variable_Nova_safeNavigation = 0;
-	this->spectra_tree_nodes_variables_Nova_Variable_Nova_accessedNode = (spectra_tree_nodes_Nova_Accessible*)nova_null;
 	this->spectra_tree_nodes_variables_Nova_Variable_Nova_declaration = (spectra_tree_nodes_variables_Nova_VariableDeclaration*)nova_null;
+	this->spectra_tree_nodes_variables_Nova_Variable_Nova_safeNavigation = 0;
 }
 
