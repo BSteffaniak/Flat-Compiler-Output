@@ -151,64 +151,102 @@
 #include <nova/web/svg/no3/nova_web_svg_no3_Nova_No3Node.h>
 #include <nova/web/svg/no3/nova_web_svg_no3_Nova_No3Select.h>
 #include <nova/web/svg/no3/nova_web_svg_no3_Nova_No3SelectAll.h>
-#include <example/example_Nova_Animal.h>
-#include <example/example_Nova_ArrayDemo.h>
-#include <example/example_Nova_BodyBuilder.h>
-#include <example/example_Nova_ClosureDemo.h>
-#include <example/example_Nova_Dog.h>
-#include <example/example_Nova_ExceptionHandlingDemo.h>
-#include <example/example_Nova_FileTest.h>
-#include <example/example_Nova_GenericDemo.h>
-#include <example/example_Nova_HashMapDemo.h>
-#include <example/example_Nova_HashSetDemo.h>
-#include <example/example_Nova_IntegerTest.h>
-#include <example/example_Nova_Lab.h>
-#include <example/example_Nova_MathDemo.h>
-#include <example/example_Nova_NonWholeDivisionException.h>
-#include <example/example_Nova_Person.h>
-#include <example/example_Nova_Polygon.h>
-#include <example/example_Nova_PolymorphismDemo.h>
-#include <example/example_Nova_QueueDemo.h>
-#include <example/example_Nova_Spider.h>
-#include <example/example_Nova_Square.h>
-#include <example/example_Nova_SvgChart.h>
-#include <example/example_Nova_SvgFractal.h>
-#include <example/example_Nova_T1.h>
-#include <example/example_Nova_T2.h>
-#include <example/example_Nova_Test.h>
-#include <example/example_Nova_ThreadDemo.h>
-#include <example/example_Nova_ThreadDemoImplementation.h>
-#include <example/ackermann/example_ackermann_Nova_Ackermann.h>
-#include <example/copy/example_copy_Nova_Dog.h>
-#include <example/database/example_database_Nova_DatabaseDemo.h>
-#include <example/network/example_network_Nova_ClientDemo.h>
-#include <example/network/example_network_Nova_ConnectionThread.h>
-#include <example/network/example_network_Nova_OutputThread.h>
-#include <example/network/example_network_Nova_ServerDemo.h>
-#include <stabilitytest/stabilitytest_Nova_AssignmentStability.h>
-#include <stabilitytest/stabilitytest_Nova_ClassWithProperties.h>
-#include <stabilitytest/stabilitytest_Nova_ClientThread.h>
-#include <stabilitytest/stabilitytest_Nova_ClosureStability.h>
-#include <stabilitytest/stabilitytest_Nova_ExceptionStability.h>
-#include <stabilitytest/stabilitytest_Nova_FileStability.h>
-#include <stabilitytest/stabilitytest_Nova_LambdaStability.h>
-#include <stabilitytest/stabilitytest_Nova_NetworkStability.h>
-#include <stabilitytest/stabilitytest_Nova_Node.h>
-#include <stabilitytest/stabilitytest_Nova_PolymorphicSubClass.h>
-#include <stabilitytest/stabilitytest_Nova_PolymorphicSuperClass.h>
-#include <stabilitytest/stabilitytest_Nova_PolymorphismStability.h>
-#include <stabilitytest/stabilitytest_Nova_RegexStability.h>
-#include <stabilitytest/stabilitytest_Nova_StabilityExceptionHandler.h>
-#include <stabilitytest/stabilitytest_Nova_StabilityTest.h>
-#include <stabilitytest/stabilitytest_Nova_StabilityTestCase.h>
-#include <stabilitytest/stabilitytest_Nova_StabilityTestException.h>
-#include <stabilitytest/stabilitytest_Nova_StaticImportStability.h>
-#include <stabilitytest/stabilitytest_Nova_SyntaxStability.h>
-#include <stabilitytest/stabilitytest_Nova_ThreadImplementation.h>
-#include <stabilitytest/stabilitytest_Nova_ThreadStability.h>
-#include <stabilitytest/stabilitytest_Nova_TimeStability.h>
-#include <stabilitytest/stabilitytest_Nova_ToStringStability.h>
-#include <stabilitytest/stabilitytest_Nova_UnstableException.h>
+#include <spectra/spectra_Nova_InvalidParseException.h>
+#include <spectra/spectra_Nova_Spectra.h>
+#include <spectra/spectra_Nova_SyntaxErrorException.h>
+#include <spectra/spectra_Nova_SyntaxMessage.h>
+#include <spectra/engines/spectra_engines_Nova_CodeGeneratorEngine.h>
+#include <spectra/error/spectra_error_Nova_UnimplementedOperationException.h>
+#include <spectra/tree/spectra_tree_Nova_AnnotationSearchResult.h>
+#include <spectra/tree/spectra_tree_Nova_StatementIterator.h>
+#include <spectra/tree/spectra_tree_Nova_SyntaxTree.h>
+#include <spectra/tree/nodes/spectra_tree_nodes_Nova_Abstractable.h>
+#include <spectra/tree/nodes/spectra_tree_nodes_Nova_Accessible.h>
+#include <spectra/tree/nodes/spectra_tree_nodes_Nova_ArgumentList.h>
+#include <spectra/tree/nodes/spectra_tree_nodes_Nova_ClassDeclaration.h>
+#include <spectra/tree/nodes/spectra_tree_nodes_Nova_Identifier.h>
+#include <spectra/tree/nodes/spectra_tree_nodes_Nova_Import.h>
+#include <spectra/tree/nodes/spectra_tree_nodes_Nova_ImportList.h>
+#include <spectra/tree/nodes/spectra_tree_nodes_Nova_InterfaceDeclaration.h>
+#include <spectra/tree/nodes/spectra_tree_nodes_Nova_Listener.h>
+#include <spectra/tree/nodes/spectra_tree_nodes_Nova_Literal.h>
+#include <spectra/tree/nodes/spectra_tree_nodes_Nova_Node.h>
+#include <spectra/tree/nodes/spectra_tree_nodes_Nova_NodeList.h>
+#include <spectra/tree/nodes/spectra_tree_nodes_Nova_NovaFile.h>
+#include <spectra/tree/nodes/spectra_tree_nodes_Nova_NumericRange.h>
+#include <spectra/tree/nodes/spectra_tree_nodes_Nova_Package.h>
+#include <spectra/tree/nodes/spectra_tree_nodes_Nova_PlaceholderValue.h>
+#include <spectra/tree/nodes/spectra_tree_nodes_Nova_Priority.h>
+#include <spectra/tree/nodes/spectra_tree_nodes_Nova_Program.h>
+#include <spectra/tree/nodes/spectra_tree_nodes_Nova_Return.h>
+#include <spectra/tree/nodes/spectra_tree_nodes_Nova_Scope.h>
+#include <spectra/tree/nodes/spectra_tree_nodes_Nova_Skeleton.h>
+#include <spectra/tree/nodes/spectra_tree_nodes_Nova_StaticClassReference.h>
+#include <spectra/tree/nodes/spectra_tree_nodes_Nova_Type.h>
+#include <spectra/tree/nodes/spectra_tree_nodes_Nova_ValidationResult.h>
+#include <spectra/tree/nodes/spectra_tree_nodes_Nova_Value.h>
+#include <spectra/tree/nodes/annotations/spectra_tree_nodes_annotations_Nova_Annotatable.h>
+#include <spectra/tree/nodes/annotations/spectra_tree_nodes_annotations_Nova_Annotation.h>
+#include <spectra/tree/nodes/annotations/spectra_tree_nodes_annotations_Nova_Modifier.h>
+#include <spectra/tree/nodes/annotations/spectra_tree_nodes_annotations_Nova_NativeAnnotation.h>
+#include <spectra/tree/nodes/annotations/spectra_tree_nodes_annotations_Nova_OverrideAnnotation.h>
+#include <spectra/tree/nodes/annotations/spectra_tree_nodes_annotations_Nova_TargetAnnotation.h>
+#include <spectra/tree/nodes/arrays/spectra_tree_nodes_arrays_Nova_ArrayAccess.h>
+#include <spectra/tree/nodes/controlstructures/spectra_tree_nodes_controlstructures_Nova_ControlStructure.h>
+#include <spectra/tree/nodes/controlstructures/spectra_tree_nodes_controlstructures_Nova_ElseStatement.h>
+#include <spectra/tree/nodes/controlstructures/spectra_tree_nodes_controlstructures_Nova_IfStatement.h>
+#include <spectra/tree/nodes/controlstructures/loops/spectra_tree_nodes_controlstructures_loops_Nova_ForEachLoop.h>
+#include <spectra/tree/nodes/controlstructures/loops/spectra_tree_nodes_controlstructures_loops_Nova_Loop.h>
+#include <spectra/tree/nodes/controlstructures/loops/spectra_tree_nodes_controlstructures_loops_Nova_WhileLoop.h>
+#include <spectra/tree/nodes/exceptionhandling/spectra_tree_nodes_exceptionhandling_Nova_Catch.h>
+#include <spectra/tree/nodes/exceptionhandling/spectra_tree_nodes_exceptionhandling_Nova_ExceptionHandler.h>
+#include <spectra/tree/nodes/exceptionhandling/spectra_tree_nodes_exceptionhandling_Nova_Throw.h>
+#include <spectra/tree/nodes/exceptionhandling/spectra_tree_nodes_exceptionhandling_Nova_Try.h>
+#include <spectra/tree/nodes/functions/spectra_tree_nodes_functions_Nova_AccessorFunction.h>
+#include <spectra/tree/nodes/functions/spectra_tree_nodes_functions_Nova_ArrayInstantiation.h>
+#include <spectra/tree/nodes/functions/spectra_tree_nodes_functions_Nova_BodyFunction.h>
+#include <spectra/tree/nodes/functions/spectra_tree_nodes_functions_Nova_CallableFunction.h>
+#include <spectra/tree/nodes/functions/spectra_tree_nodes_functions_Nova_Constructor.h>
+#include <spectra/tree/nodes/functions/spectra_tree_nodes_functions_Nova_FunctionArgumentList.h>
+#include <spectra/tree/nodes/functions/spectra_tree_nodes_functions_Nova_FunctionCall.h>
+#include <spectra/tree/nodes/functions/spectra_tree_nodes_functions_Nova_FunctionDeclaration.h>
+#include <spectra/tree/nodes/functions/spectra_tree_nodes_functions_Nova_InitializationFunction.h>
+#include <spectra/tree/nodes/functions/spectra_tree_nodes_functions_Nova_Instantiation.h>
+#include <spectra/tree/nodes/functions/spectra_tree_nodes_functions_Nova_MutatorFunction.h>
+#include <spectra/tree/nodes/functions/spectra_tree_nodes_functions_Nova_ObjectNotation.h>
+#include <spectra/tree/nodes/functions/spectra_tree_nodes_functions_Nova_ObjectNotationProperty.h>
+#include <spectra/tree/nodes/functions/spectra_tree_nodes_functions_Nova_Parameter.h>
+#include <spectra/tree/nodes/functions/spectra_tree_nodes_functions_Nova_ParameterList.h>
+#include <spectra/tree/nodes/functions/spectra_tree_nodes_functions_Nova_PropertyFunction.h>
+#include <spectra/tree/nodes/functions/closures/spectra_tree_nodes_functions_closures_Nova_ClosureContext.h>
+#include <spectra/tree/nodes/functions/closures/spectra_tree_nodes_functions_closures_Nova_ClosureDeclaration.h>
+#include <spectra/tree/nodes/functions/closures/spectra_tree_nodes_functions_closures_Nova_ClosureParameter.h>
+#include <spectra/tree/nodes/functions/closures/spectra_tree_nodes_functions_closures_Nova_LambdaExpression.h>
+#include <spectra/tree/nodes/functions/closures/spectra_tree_nodes_functions_closures_Nova_LambdaParameter.h>
+#include <spectra/tree/nodes/generics/spectra_tree_nodes_generics_Nova_GenericArgument.h>
+#include <spectra/tree/nodes/generics/spectra_tree_nodes_generics_Nova_GenericCompatible.h>
+#include <spectra/tree/nodes/generics/spectra_tree_nodes_generics_Nova_GenericParameter.h>
+#include <spectra/tree/nodes/generics/spectra_tree_nodes_generics_Nova_GenericType.h>
+#include <spectra/tree/nodes/operations/spectra_tree_nodes_operations_Nova_Assignable.h>
+#include <spectra/tree/nodes/operations/spectra_tree_nodes_operations_Nova_Assignment.h>
+#include <spectra/tree/nodes/operations/spectra_tree_nodes_operations_Nova_ElvisOperation.h>
+#include <spectra/tree/nodes/operations/spectra_tree_nodes_operations_Nova_Operation.h>
+#include <spectra/tree/nodes/operations/spectra_tree_nodes_operations_Nova_Operator.h>
+#include <spectra/tree/nodes/operations/spectra_tree_nodes_operations_Nova_TernaryOperation.h>
+#include <spectra/tree/nodes/operations/spectra_tree_nodes_operations_Nova_UnaryOperation.h>
+#include <spectra/tree/nodes/variables/spectra_tree_nodes_variables_Nova_ArrayBracketOverload.h>
+#include <spectra/tree/nodes/variables/spectra_tree_nodes_variables_Nova_FieldDeclaration.h>
+#include <spectra/tree/nodes/variables/spectra_tree_nodes_variables_Nova_ImplicitDeclaration.h>
+#include <spectra/tree/nodes/variables/spectra_tree_nodes_variables_Nova_InstanceDeclaration.h>
+#include <spectra/tree/nodes/variables/spectra_tree_nodes_variables_Nova_LocalDeclaration.h>
+#include <spectra/tree/nodes/variables/spectra_tree_nodes_variables_Nova_Variable.h>
+#include <spectra/tree/nodes/variables/spectra_tree_nodes_variables_Nova_VariableDeclaration.h>
+#include <spectra/util/spectra_util_Nova_Bounds.h>
+#include <spectra/util/spectra_util_Nova_CompilerStringFunctions.h>
+#include <spectra/util/spectra_util_Nova_FileUtils.h>
+#include <spectra/util/spectra_util_Nova_Location.h>
+#include <spectra/util/spectra_util_Nova_OS.h>
+#include <spectra/util/spectra_util_Nova_SyntaxUtils.h>
 
 typedef char (*nova_Nova_Class_native_Nova_isOfType)(nova_Nova_Class*, nova_exception_Nova_ExceptionData*, nova_Nova_Class*);
 typedef nova_Nova_Class* (*nova_Nova_Class_native_Nova_construct)(nova_Nova_Class*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, char);
@@ -470,6 +508,8 @@ typedef nova_datastruct_list_Nova_Array* (*nova_datastruct_Nova_Node_native0_Nov
 typedef nova_datastruct_list_Nova_Array* (*nova_datastruct_Nova_Node_native0_Nova_inorder)(nova_datastruct_Nova_Node*, nova_exception_Nova_ExceptionData*);
 typedef nova_datastruct_list_Nova_Array* (*nova_datastruct_Nova_Node_native0_Nova_postorder)(nova_datastruct_Nova_Node*, nova_exception_Nova_ExceptionData*);
 typedef nova_datastruct_list_Nova_Array* (*nova_datastruct_Nova_Node_native0_Nova_levelorder)(nova_datastruct_Nova_Node*, nova_exception_Nova_ExceptionData*);
+typedef nova_datastruct_Nova_Node* (*nova_datastruct_Nova_Node_native_Nova_get)(nova_datastruct_Nova_Node*, nova_exception_Nova_ExceptionData*, int);
+typedef nova_datastruct_Nova_Node* (*nova_datastruct_Nova_Node_native_Nova_set)(nova_datastruct_Nova_Node*, nova_exception_Nova_ExceptionData*, int, nova_datastruct_Nova_Node*);
 typedef nova_datastruct_Nova_Node* (*nova_datastruct_Nova_Node_native_Nova_construct)(nova_datastruct_Nova_Node*, nova_exception_Nova_ExceptionData*, nova_Nova_Object*, int);
 
 typedef struct nova_datastruct_native_Node
@@ -478,6 +518,8 @@ nova_datastruct_Nova_Node_native0_Nova_preorder preorder;
 nova_datastruct_Nova_Node_native0_Nova_inorder inorder;
 nova_datastruct_Nova_Node_native0_Nova_postorder postorder;
 nova_datastruct_Nova_Node_native0_Nova_levelorder levelorder;
+nova_datastruct_Nova_Node_native_Nova_get get;
+nova_datastruct_Nova_Node_native_Nova_set set;
 nova_datastruct_Nova_Node_native_Nova_construct Node;
 } nova_datastruct_native_Node;
 
@@ -573,7 +615,7 @@ nova_datastruct_list_Nova_Array_native1_Nova_construct Array__nova_primitive_num
 nova_datastruct_list_Nova_Array_native2_Nova_construct Array__Array1d_nova_Object__nova_primitive_number_Int;
 } nova_datastruct_list_native_Array;
 
-typedef nova_datastruct_list_Nova_Iterator* (*nova_datastruct_list_Nova_ArrayIterator_native_Nova_reset)(nova_datastruct_list_Nova_ArrayIterator*, nova_exception_Nova_ExceptionData*);
+typedef nova_datastruct_list_Nova_ArrayIterator* (*nova_datastruct_list_Nova_ArrayIterator_native_Nova_reset)(nova_datastruct_list_Nova_ArrayIterator*, nova_exception_Nova_ExceptionData*);
 typedef nova_datastruct_list_Nova_ArrayIterator* (*nova_datastruct_list_Nova_ArrayIterator_native_Nova_construct)(nova_datastruct_list_Nova_ArrayIterator*, nova_exception_Nova_ExceptionData*, nova_datastruct_list_Nova_Array*);
 
 typedef struct nova_datastruct_list_native_ArrayIterator
@@ -597,7 +639,7 @@ nova_datastruct_list_Nova_CharArray_native1_Nova_construct CharArray__nova_primi
 nova_datastruct_list_Nova_CharArray_native2_Nova_construct CharArray__Array1d_nova_primitive_number_Char__nova_primitive_number_Int;
 } nova_datastruct_list_native_CharArray;
 
-typedef nova_datastruct_list_Nova_Iterator* (*nova_datastruct_list_Nova_CharArrayIterator_native_Nova_reset)(nova_datastruct_list_Nova_CharArrayIterator*, nova_exception_Nova_ExceptionData*);
+typedef nova_datastruct_list_Nova_CharArrayIterator* (*nova_datastruct_list_Nova_CharArrayIterator_native_Nova_reset)(nova_datastruct_list_Nova_CharArrayIterator*, nova_exception_Nova_ExceptionData*);
 typedef nova_datastruct_list_Nova_CharArrayIterator* (*nova_datastruct_list_Nova_CharArrayIterator_native_Nova_construct)(nova_datastruct_list_Nova_CharArrayIterator*, nova_exception_Nova_ExceptionData*, nova_datastruct_list_Nova_CharArray*, int);
 
 typedef struct nova_datastruct_list_native_CharArrayIterator
@@ -626,7 +668,7 @@ nova_datastruct_list_Nova_DoubleArray_native1_Nova_construct DoubleArray__Array1
 nova_datastruct_list_Nova_DoubleArray_native2_Nova_construct DoubleArray__nova_primitive_number_Int;
 } nova_datastruct_list_native_DoubleArray;
 
-typedef nova_datastruct_list_Nova_Iterator* (*nova_datastruct_list_Nova_DoubleArrayIterator_native_Nova_reset)(nova_datastruct_list_Nova_DoubleArrayIterator*, nova_exception_Nova_ExceptionData*);
+typedef nova_datastruct_list_Nova_DoubleArrayIterator* (*nova_datastruct_list_Nova_DoubleArrayIterator_native_Nova_reset)(nova_datastruct_list_Nova_DoubleArrayIterator*, nova_exception_Nova_ExceptionData*);
 typedef nova_datastruct_list_Nova_DoubleArrayIterator* (*nova_datastruct_list_Nova_DoubleArrayIterator_native_Nova_construct)(nova_datastruct_list_Nova_DoubleArrayIterator*, nova_exception_Nova_ExceptionData*, nova_datastruct_list_Nova_DoubleArray*);
 
 typedef struct nova_datastruct_list_native_DoubleArrayIterator
@@ -655,7 +697,7 @@ nova_datastruct_list_Nova_ImmutableArray_native0_Nova_construct ImmutableArray__
 nova_datastruct_list_Nova_ImmutableArray_native1_Nova_construct ImmutableArray__Array1d_nova_Object__nova_primitive_number_Int;
 } nova_datastruct_list_native_ImmutableArray;
 
-typedef nova_datastruct_list_Nova_Iterator* (*nova_datastruct_list_Nova_ImmutableArrayIterator_native_Nova_reset)(nova_datastruct_list_Nova_ImmutableArrayIterator*, nova_exception_Nova_ExceptionData*);
+typedef nova_datastruct_list_Nova_ImmutableArrayIterator* (*nova_datastruct_list_Nova_ImmutableArrayIterator_native_Nova_reset)(nova_datastruct_list_Nova_ImmutableArrayIterator*, nova_exception_Nova_ExceptionData*);
 typedef nova_datastruct_list_Nova_ImmutableArrayIterator* (*nova_datastruct_list_Nova_ImmutableArrayIterator_native_Nova_construct)(nova_datastruct_list_Nova_ImmutableArrayIterator*, nova_exception_Nova_ExceptionData*, nova_datastruct_list_Nova_ImmutableArray*);
 
 typedef struct nova_datastruct_list_native_ImmutableArrayIterator
@@ -679,7 +721,7 @@ nova_datastruct_list_Nova_ImmutableCharArray_native0_Nova_construct ImmutableCha
 nova_datastruct_list_Nova_ImmutableCharArray_native1_Nova_construct ImmutableCharArray__Array1d_nova_primitive_number_Char__nova_primitive_number_Int;
 } nova_datastruct_list_native_ImmutableCharArray;
 
-typedef nova_datastruct_list_Nova_Iterator* (*nova_datastruct_list_Nova_ImmutableCharArrayIterator_native_Nova_reset)(nova_datastruct_list_Nova_ImmutableCharArrayIterator*, nova_exception_Nova_ExceptionData*);
+typedef nova_datastruct_list_Nova_ImmutableCharArrayIterator* (*nova_datastruct_list_Nova_ImmutableCharArrayIterator_native_Nova_reset)(nova_datastruct_list_Nova_ImmutableCharArrayIterator*, nova_exception_Nova_ExceptionData*);
 typedef nova_datastruct_list_Nova_ImmutableCharArrayIterator* (*nova_datastruct_list_Nova_ImmutableCharArrayIterator_native_Nova_construct)(nova_datastruct_list_Nova_ImmutableCharArrayIterator*, nova_exception_Nova_ExceptionData*, nova_datastruct_list_Nova_ImmutableCharArray*, int);
 
 typedef struct nova_datastruct_list_native_ImmutableCharArrayIterator
@@ -699,7 +741,7 @@ nova_datastruct_list_Nova_IntArray_native1_Nova_construct IntArray__nova_primiti
 nova_datastruct_list_Nova_IntArray_native2_Nova_construct IntArray__Array1d_nova_primitive_number_Int__nova_primitive_number_Int;
 } nova_datastruct_list_native_IntArray;
 
-typedef nova_datastruct_list_Nova_Iterator* (*nova_datastruct_list_Nova_IntArrayIterator_native_Nova_reset)(nova_datastruct_list_Nova_IntArrayIterator*, nova_exception_Nova_ExceptionData*);
+typedef nova_datastruct_list_Nova_IntArrayIterator* (*nova_datastruct_list_Nova_IntArrayIterator_native_Nova_reset)(nova_datastruct_list_Nova_IntArrayIterator*, nova_exception_Nova_ExceptionData*);
 typedef nova_datastruct_list_Nova_IntArrayIterator* (*nova_datastruct_list_Nova_IntArrayIterator_native_Nova_construct)(nova_datastruct_list_Nova_IntArrayIterator*, nova_exception_Nova_ExceptionData*, nova_datastruct_list_Nova_IntArray*);
 
 typedef struct nova_datastruct_list_native_IntArrayIterator
@@ -719,7 +761,7 @@ nova_datastruct_list_Nova_IntRange_native0_Nova_construct IntRange;
 nova_datastruct_list_Nova_IntRange_native1_Nova_construct IntRange__nova_primitive_number_Int__nova_primitive_number_Int;
 } nova_datastruct_list_native_IntRange;
 
-typedef nova_datastruct_list_Nova_Iterator* (*nova_datastruct_list_Nova_IntRangeIterator_native_Nova_reset)(nova_datastruct_list_Nova_IntRangeIterator*, nova_exception_Nova_ExceptionData*);
+typedef nova_datastruct_list_Nova_IntRangeIterator* (*nova_datastruct_list_Nova_IntRangeIterator_native_Nova_reset)(nova_datastruct_list_Nova_IntRangeIterator*, nova_exception_Nova_ExceptionData*);
 typedef nova_datastruct_list_Nova_IntRangeIterator* (*nova_datastruct_list_Nova_IntRangeIterator_native_Nova_construct)(nova_datastruct_list_Nova_IntRangeIterator*, nova_exception_Nova_ExceptionData*, nova_datastruct_list_Nova_IntRange*);
 
 typedef struct nova_datastruct_list_native_IntRangeIterator
@@ -751,7 +793,7 @@ nova_datastruct_list_Nova_LinkedList_native_Nova_remove remove;
 nova_datastruct_list_Nova_LinkedList_native_Nova_construct LinkedList;
 } nova_datastruct_list_native_LinkedList;
 
-typedef nova_datastruct_list_Nova_Iterator* (*nova_datastruct_list_Nova_LinkedListIterator_native_Nova_reset)(nova_datastruct_list_Nova_LinkedListIterator*, nova_exception_Nova_ExceptionData*);
+typedef nova_datastruct_list_Nova_LinkedListIterator* (*nova_datastruct_list_Nova_LinkedListIterator_native_Nova_reset)(nova_datastruct_list_Nova_LinkedListIterator*, nova_exception_Nova_ExceptionData*);
 typedef nova_datastruct_list_Nova_LinkedListIterator* (*nova_datastruct_list_Nova_LinkedListIterator_native_Nova_construct)(nova_datastruct_list_Nova_LinkedListIterator*, nova_exception_Nova_ExceptionData*, nova_datastruct_list_Nova_LinkedList*);
 
 typedef struct nova_datastruct_list_native_LinkedListIterator
@@ -804,7 +846,7 @@ nova_datastruct_list_Nova_List_native_Nova_join join;
 } nova_datastruct_list_native_List;
 
 typedef nova_datastruct_list_Nova_ListNode* (*nova_datastruct_list_Nova_ListNode_native_Nova_clone)(nova_datastruct_list_Nova_ListNode*, nova_exception_Nova_ExceptionData*);
-typedef nova_datastruct_list_Nova_ListNode* (*nova_datastruct_list_Nova_ListNode_native_Nova_construct)(nova_datastruct_list_Nova_ListNode*, nova_exception_Nova_ExceptionData*, nova_Nova_Object*);
+typedef nova_datastruct_list_Nova_ListNode* (*nova_datastruct_list_Nova_ListNode_native_Nova_construct)(nova_datastruct_list_Nova_ListNode*, nova_exception_Nova_ExceptionData*, nova_Nova_Object*, nova_datastruct_list_Nova_ListNode*);
 
 typedef struct nova_datastruct_list_native_ListNode
 {
@@ -1817,450 +1859,1072 @@ typedef struct nova_web_svg_no3_native_No3SelectAll
 nova_web_svg_no3_Nova_No3SelectAll_native_Nova_construct No3SelectAll;
 } nova_web_svg_no3_native_No3SelectAll;
 
-typedef int (*example_Nova_Animal_native_Nova_getNumLegs)(example_Nova_Animal*, nova_exception_Nova_ExceptionData*);
-typedef int (*example_Nova_Animal_native_Nova_getNumEyes)(example_Nova_Animal*, nova_exception_Nova_ExceptionData*);
-typedef nova_Nova_String* (*example_Nova_Animal_native_Nova_getDescription)(example_Nova_Animal*, nova_exception_Nova_ExceptionData*);
-typedef example_Nova_Animal* (*example_Nova_Animal_native_Nova_construct)(example_Nova_Animal*, nova_exception_Nova_ExceptionData*);
+typedef spectra_Nova_InvalidParseException* (*spectra_Nova_InvalidParseException_native_Nova_construct)(spectra_Nova_InvalidParseException*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, spectra_tree_nodes_Nova_Node*);
 
-typedef struct example_native_Animal
+typedef struct spectra_native_InvalidParseException
 {
-example_Nova_Animal_native_Nova_getNumLegs getNumLegs;
-example_Nova_Animal_native_Nova_getNumEyes getNumEyes;
-example_Nova_Animal_native_Nova_getDescription getDescription;
-example_Nova_Animal_native_Nova_construct Animal;
-} example_native_Animal;
+spectra_Nova_InvalidParseException_native_Nova_construct InvalidParseException;
+} spectra_native_InvalidParseException;
 
-typedef void (*example_Nova_ArrayDemo_native_static_Nova_main)(example_Nova_ArrayDemo*, nova_exception_Nova_ExceptionData*, nova_datastruct_list_Nova_Array*);
-typedef example_Nova_ArrayDemo* (*example_Nova_ArrayDemo_native_Nova_construct)(example_Nova_ArrayDemo*, nova_exception_Nova_ExceptionData*);
+typedef void (*spectra_Nova_Spectra_native_static_Nova_main)(spectra_Nova_Spectra*, nova_exception_Nova_ExceptionData*, nova_datastruct_list_Nova_Array*);
+typedef void (*spectra_Nova_Spectra_native_Nova_compile)(spectra_Nova_Spectra*, nova_exception_Nova_ExceptionData*, nova_datastruct_list_Nova_Array*);
+typedef spectra_Nova_Spectra* (*spectra_Nova_Spectra_native_Nova_construct)(spectra_Nova_Spectra*, nova_exception_Nova_ExceptionData*);
 
-typedef struct example_native_ArrayDemo
+typedef struct spectra_native_Spectra
 {
-example_Nova_ArrayDemo_native_Nova_construct ArrayDemo;
-} example_native_ArrayDemo;
+spectra_Nova_Spectra_native_Nova_compile compile;
+spectra_Nova_Spectra_native_Nova_construct Spectra;
+} spectra_native_Spectra;
 
-typedef example_Nova_BodyBuilder* (*example_Nova_BodyBuilder_native_Nova_construct)(example_Nova_BodyBuilder*, nova_exception_Nova_ExceptionData*, int, nova_Nova_String*);
+typedef spectra_Nova_SyntaxErrorException* (*spectra_Nova_SyntaxErrorException_native0_Nova_construct)(spectra_Nova_SyntaxErrorException*, nova_exception_Nova_ExceptionData*);
+typedef spectra_Nova_SyntaxErrorException* (*spectra_Nova_SyntaxErrorException_native1_Nova_construct)(spectra_Nova_SyntaxErrorException*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Program*);
 
-typedef struct example_native_BodyBuilder
+typedef struct spectra_native_SyntaxErrorException
 {
-example_Nova_BodyBuilder_native_Nova_construct BodyBuilder;
-} example_native_BodyBuilder;
+spectra_Nova_SyntaxErrorException_native0_Nova_construct SyntaxErrorException;
+spectra_Nova_SyntaxErrorException_native1_Nova_construct SyntaxErrorException__nova_String__spectra_tree_nodes_Node__spectra_tree_nodes_Program;
+} spectra_native_SyntaxErrorException;
 
-typedef void (*example_Nova_ClosureDemo_native_static_Nova_main)(example_Nova_ClosureDemo*, nova_exception_Nova_ExceptionData*, nova_datastruct_list_Nova_Array*);
-typedef example_Nova_ClosureDemo* (*example_Nova_ClosureDemo_native_Nova_construct)(example_Nova_ClosureDemo*, nova_exception_Nova_ExceptionData*);
+typedef void (*spectra_Nova_SyntaxMessage_native_static_Nova_errorIf)(spectra_Nova_SyntaxMessage*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, spectra_tree_nodes_Nova_Node*, char, int);
+typedef void (*spectra_Nova_SyntaxMessage_native_static_Nova_error)(spectra_Nova_SyntaxMessage*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, spectra_tree_nodes_Nova_Node*, int);
+typedef spectra_Nova_SyntaxMessage* (*spectra_Nova_SyntaxMessage_native_Nova_construct)(spectra_Nova_SyntaxMessage*, nova_exception_Nova_ExceptionData*);
 
-typedef struct example_native_ClosureDemo
+typedef struct spectra_native_SyntaxMessage
 {
-example_Nova_ClosureDemo_native_Nova_construct ClosureDemo;
-} example_native_ClosureDemo;
+spectra_Nova_SyntaxMessage_native_Nova_construct SyntaxMessage;
+} spectra_native_SyntaxMessage;
 
-typedef example_Nova_Dog* (*example_Nova_Dog_native_Nova_construct)(example_Nova_Dog*, nova_exception_Nova_ExceptionData*);
+typedef void (*spectra_engines_Nova_CodeGeneratorEngine_native_Nova_writeFiles)(spectra_engines_Nova_CodeGeneratorEngine*, nova_exception_Nova_ExceptionData*);
+typedef void (*spectra_engines_Nova_CodeGeneratorEngine_native_Nova_insertMainMethod)(spectra_engines_Nova_CodeGeneratorEngine*, nova_exception_Nova_ExceptionData*);
+typedef spectra_engines_Nova_CodeGeneratorEngine* (*spectra_engines_Nova_CodeGeneratorEngine_native_Nova_construct)(spectra_engines_Nova_CodeGeneratorEngine*, nova_exception_Nova_ExceptionData*);
 
-typedef struct example_native_Dog
+typedef struct spectra_engines_native_CodeGeneratorEngine
 {
-example_Nova_Dog_native_Nova_construct Dog;
-} example_native_Dog;
+spectra_engines_Nova_CodeGeneratorEngine_native_Nova_construct CodeGeneratorEngine;
+} spectra_engines_native_CodeGeneratorEngine;
 
-typedef void (*example_Nova_ExceptionHandlingDemo_native_static_Nova_main)(example_Nova_ExceptionHandlingDemo*, nova_exception_Nova_ExceptionData*, nova_datastruct_list_Nova_Array*);
-typedef example_Nova_ExceptionHandlingDemo* (*example_Nova_ExceptionHandlingDemo_native_Nova_construct)(example_Nova_ExceptionHandlingDemo*, nova_exception_Nova_ExceptionData*);
+typedef spectra_error_Nova_UnimplementedOperationException* (*spectra_error_Nova_UnimplementedOperationException_native_Nova_construct)(spectra_error_Nova_UnimplementedOperationException*, nova_exception_Nova_ExceptionData*, nova_Nova_String*);
 
-typedef struct example_native_ExceptionHandlingDemo
+typedef struct spectra_error_native_UnimplementedOperationException
 {
-example_Nova_ExceptionHandlingDemo_native_Nova_construct ExceptionHandlingDemo;
-} example_native_ExceptionHandlingDemo;
+spectra_error_Nova_UnimplementedOperationException_native_Nova_construct UnimplementedOperationException;
+} spectra_error_native_UnimplementedOperationException;
 
-typedef void (*example_Nova_FileTest_native_static_Nova_main)(example_Nova_FileTest*, nova_exception_Nova_ExceptionData*, nova_datastruct_list_Nova_Array*);
-typedef example_Nova_FileTest* (*example_Nova_FileTest_native_Nova_construct)(example_Nova_FileTest*, nova_exception_Nova_ExceptionData*);
+typedef nova_datastruct_list_Nova_Array* (*spectra_tree_Nova_AnnotationSearchResult_native0_Nova_addTo)(spectra_tree_Nova_AnnotationSearchResult*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
+typedef nova_datastruct_list_Nova_Array* (*spectra_tree_Nova_AnnotationSearchResult_native1_Nova_addTo)(spectra_tree_Nova_AnnotationSearchResult*, nova_exception_Nova_ExceptionData*, nova_datastruct_list_Nova_Stack*);
+typedef spectra_tree_Nova_AnnotationSearchResult* (*spectra_tree_Nova_AnnotationSearchResult_native_Nova_construct)(spectra_tree_Nova_AnnotationSearchResult*, nova_exception_Nova_ExceptionData*, nova_Nova_String*);
 
-typedef struct example_native_FileTest
+typedef struct spectra_tree_native_AnnotationSearchResult
 {
-example_Nova_FileTest_native_Nova_construct FileTest;
-} example_native_FileTest;
+spectra_tree_Nova_AnnotationSearchResult_native0_Nova_addTo addTo__spectra_tree_nodes_Node;
+spectra_tree_Nova_AnnotationSearchResult_native1_Nova_addTo addTo__nova_datastruct_list_Stack;
+spectra_tree_Nova_AnnotationSearchResult_native_Nova_construct AnnotationSearchResult;
+} spectra_tree_native_AnnotationSearchResult;
 
-typedef void (*example_Nova_GenericDemo_native_static_Nova_main)(example_Nova_GenericDemo*, nova_exception_Nova_ExceptionData*, nova_datastruct_list_Nova_Array*);
-typedef example_Nova_GenericDemo* (*example_Nova_GenericDemo_native_Nova_construct)(example_Nova_GenericDemo*, nova_exception_Nova_ExceptionData*);
+typedef spectra_tree_Nova_StatementIterator* (*spectra_tree_Nova_StatementIterator_native_Nova_reset)(spectra_tree_Nova_StatementIterator*, nova_exception_Nova_ExceptionData*);
+typedef spectra_tree_Nova_StatementIterator* (*spectra_tree_Nova_StatementIterator_native_Nova_construct)(spectra_tree_Nova_StatementIterator*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, nova_datastruct_list_Nova_Stack*);
 
-typedef struct example_native_GenericDemo
+typedef struct spectra_tree_native_StatementIterator
 {
-example_Nova_GenericDemo_native_Nova_construct GenericDemo;
-} example_native_GenericDemo;
+spectra_tree_Nova_StatementIterator_native_Nova_reset reset;
+spectra_tree_Nova_StatementIterator_native_Nova_construct StatementIterator;
+} spectra_tree_native_StatementIterator;
 
-typedef void (*example_Nova_HashMapDemo_native_static_Nova_main)(example_Nova_HashMapDemo*, nova_exception_Nova_ExceptionData*, nova_datastruct_list_Nova_Array*);
-typedef example_Nova_HashMapDemo* (*example_Nova_HashMapDemo_native_Nova_construct)(example_Nova_HashMapDemo*, nova_exception_Nova_ExceptionData*);
+typedef void (*spectra_tree_Nova_SyntaxTree_native_Nova_formTree)(spectra_tree_Nova_SyntaxTree*, nova_exception_Nova_ExceptionData*);
+typedef void (*spectra_tree_Nova_SyntaxTree_native_Nova_validateTypes)(spectra_tree_Nova_SyntaxTree*, nova_exception_Nova_ExceptionData*);
+typedef void (*spectra_tree_Nova_SyntaxTree_native_Nova_parseStatements)(spectra_tree_Nova_SyntaxTree*, nova_exception_Nova_ExceptionData*);
+typedef spectra_tree_Nova_AnnotationSearchResult* (*spectra_tree_Nova_SyntaxTree_native_static_Nova_searchAnnotations)(spectra_tree_Nova_SyntaxTree*, nova_exception_Nova_ExceptionData*, nova_Nova_String*);
+typedef spectra_tree_Nova_SyntaxTree* (*spectra_tree_Nova_SyntaxTree_native_Nova_construct)(spectra_tree_Nova_SyntaxTree*, nova_exception_Nova_ExceptionData*, spectra_Nova_Spectra*, spectra_tree_nodes_Nova_Program*);
 
-typedef struct example_native_HashMapDemo
+typedef struct spectra_tree_native_SyntaxTree
 {
-example_Nova_HashMapDemo_native_Nova_construct HashMapDemo;
-} example_native_HashMapDemo;
+spectra_tree_Nova_SyntaxTree_native_Nova_formTree formTree;
+spectra_tree_Nova_SyntaxTree_native_Nova_validateTypes validateTypes;
+spectra_tree_Nova_SyntaxTree_native_Nova_parseStatements parseStatements;
+spectra_tree_Nova_SyntaxTree_native_Nova_construct SyntaxTree;
+} spectra_tree_native_SyntaxTree;
 
-typedef void (*example_Nova_HashSetDemo_native_static_Nova_main)(example_Nova_HashSetDemo*, nova_exception_Nova_ExceptionData*, nova_datastruct_list_Nova_Array*);
-typedef example_Nova_HashSetDemo* (*example_Nova_HashSetDemo_native_Nova_construct)(example_Nova_HashSetDemo*, nova_exception_Nova_ExceptionData*);
+typedef nova_Nova_String* (*spectra_tree_nodes_Nova_Abstractable_native_Nova_writeAbstract)(spectra_tree_nodes_Nova_Abstractable*, nova_exception_Nova_ExceptionData*);
+typedef spectra_tree_nodes_Nova_Abstractable* (*spectra_tree_nodes_Nova_Abstractable_native0_Nova_cloneTo)(spectra_tree_nodes_Nova_Abstractable*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Abstractable*);
 
-typedef struct example_native_HashSetDemo
+typedef struct spectra_tree_nodes_native_Abstractable
 {
-example_Nova_HashSetDemo_native_Nova_construct HashSetDemo;
-} example_native_HashSetDemo;
+spectra_tree_nodes_Nova_Abstractable_native_Nova_writeAbstract writeAbstract;
+spectra_tree_nodes_Nova_Abstractable_native0_Nova_cloneTo cloneTo__spectra_tree_nodes_Abstractable;
+} spectra_tree_nodes_native_Abstractable;
 
-typedef void (*example_Nova_IntegerTest_native_static_Nova_main)(example_Nova_IntegerTest*, nova_exception_Nova_ExceptionData*, nova_datastruct_list_Nova_Array*);
-typedef example_Nova_IntegerTest* (*example_Nova_IntegerTest_native_Nova_construct)(example_Nova_IntegerTest*, nova_exception_Nova_ExceptionData*);
+typedef spectra_tree_nodes_Nova_Accessible* (*spectra_tree_nodes_Nova_Accessible_native0_Nova_getNextAccessingOfType)(spectra_tree_nodes_Nova_Accessible*, nova_exception_Nova_ExceptionData*, nova_Nova_Class*);
+typedef spectra_tree_nodes_Nova_Accessible* (*spectra_tree_nodes_Nova_Accessible_native1_Nova_getNextAccessingOfType)(spectra_tree_nodes_Nova_Accessible*, nova_exception_Nova_ExceptionData*, nova_datastruct_list_Nova_Array*);
+typedef spectra_tree_nodes_Nova_Accessible* (*spectra_tree_nodes_Nova_Accessible_native2_Nova_getNextAccessingOfType)(spectra_tree_nodes_Nova_Accessible*, nova_exception_Nova_ExceptionData*, nova_datastruct_list_Nova_Array*, char);
+typedef spectra_tree_nodes_Nova_Accessible* (*spectra_tree_nodes_Nova_Accessible_native0_Nova_getLastAccessingOfType)(spectra_tree_nodes_Nova_Accessible*, nova_exception_Nova_ExceptionData*, nova_Nova_Class*, char, int);
+typedef spectra_tree_nodes_Nova_Accessible* (*spectra_tree_nodes_Nova_Accessible_native1_Nova_getLastAccessingOfType)(spectra_tree_nodes_Nova_Accessible*, nova_exception_Nova_ExceptionData*, nova_datastruct_list_Nova_Array*, char, int);
+typedef spectra_tree_nodes_Nova_Accessible* (*spectra_tree_nodes_Nova_Accessible_native0_Nova_getLastAccessedOfType)(spectra_tree_nodes_Nova_Accessible*, nova_exception_Nova_ExceptionData*, nova_Nova_Class*, char);
+typedef spectra_tree_nodes_Nova_Accessible* (*spectra_tree_nodes_Nova_Accessible_native1_Nova_getLastAccessedOfType)(spectra_tree_nodes_Nova_Accessible*, nova_exception_Nova_ExceptionData*, nova_datastruct_list_Nova_Array*, char);
+typedef spectra_tree_nodes_Nova_Accessible* (*spectra_tree_nodes_Nova_Accessible_native_Nova_getLastAccessed)(spectra_tree_nodes_Nova_Accessible*, nova_exception_Nova_ExceptionData*);
+typedef spectra_tree_nodes_Nova_Accessible* (*spectra_tree_nodes_Nova_Accessible_native0_Nova_getNextAccessedOfType)(spectra_tree_nodes_Nova_Accessible*, nova_exception_Nova_ExceptionData*, nova_Nova_Class*);
+typedef spectra_tree_nodes_Nova_Accessible* (*spectra_tree_nodes_Nova_Accessible_native1_Nova_getNextAccessedOfType)(spectra_tree_nodes_Nova_Accessible*, nova_exception_Nova_ExceptionData*, nova_datastruct_list_Nova_Array*);
+typedef spectra_tree_nodes_Nova_Accessible* (*spectra_tree_nodes_Nova_Accessible_native_Nova_getRootReferenceNode)(spectra_tree_nodes_Nova_Accessible*, nova_exception_Nova_ExceptionData*, int);
+typedef spectra_tree_nodes_Nova_Accessible* (*spectra_tree_nodes_Nova_Accessible_native_Nova_getReferenceNode)(spectra_tree_nodes_Nova_Accessible*, nova_exception_Nova_ExceptionData*, int, int);
+typedef spectra_tree_nodes_Nova_Accessible* (*spectra_tree_nodes_Nova_Accessible_native0_static_Nova_parse)(spectra_tree_nodes_Nova_Accessible*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, spectra_tree_nodes_Nova_Node*, int);
+typedef spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_Accessible_native_static_Nova_parseDotAccess)(spectra_tree_nodes_Nova_Accessible*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, spectra_tree_nodes_Nova_Node*, int);
+typedef spectra_tree_nodes_Nova_Accessible* (*spectra_tree_nodes_Nova_Accessible_native0_Nova_cloneTo)(spectra_tree_nodes_Nova_Accessible*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Accessible*);
+typedef nova_Nova_String* (*spectra_tree_nodes_Nova_Accessible_native_Nova_writeAccessedNodes)(spectra_tree_nodes_Nova_Accessible*, nova_exception_Nova_ExceptionData*);
 
-typedef struct example_native_IntegerTest
+typedef struct spectra_tree_nodes_native_Accessible
 {
-example_Nova_IntegerTest_native_Nova_construct IntegerTest;
-} example_native_IntegerTest;
+spectra_tree_nodes_Nova_Accessible_native0_Nova_getNextAccessingOfType getNextAccessingOfType__nova_Class;
+spectra_tree_nodes_Nova_Accessible_native1_Nova_getNextAccessingOfType getNextAccessingOfType__nova_datastruct_list_Array;
+spectra_tree_nodes_Nova_Accessible_native2_Nova_getNextAccessingOfType getNextAccessingOfType__nova_datastruct_list_Array__nova_primitive_Bool;
+spectra_tree_nodes_Nova_Accessible_native0_Nova_getLastAccessingOfType getLastAccessingOfType__nova_Class__nova_primitive_Bool__nova_primitive_Bool;
+spectra_tree_nodes_Nova_Accessible_native1_Nova_getLastAccessingOfType getLastAccessingOfType__nova_datastruct_list_Array__nova_primitive_Bool__nova_primitive_Bool;
+spectra_tree_nodes_Nova_Accessible_native0_Nova_getLastAccessedOfType getLastAccessedOfType__nova_Class__nova_primitive_Bool;
+spectra_tree_nodes_Nova_Accessible_native1_Nova_getLastAccessedOfType getLastAccessedOfType__nova_datastruct_list_Array__nova_primitive_Bool;
+spectra_tree_nodes_Nova_Accessible_native_Nova_getLastAccessed getLastAccessed;
+spectra_tree_nodes_Nova_Accessible_native0_Nova_getNextAccessedOfType getNextAccessedOfType__nova_Class;
+spectra_tree_nodes_Nova_Accessible_native1_Nova_getNextAccessedOfType getNextAccessedOfType__nova_datastruct_list_Array;
+spectra_tree_nodes_Nova_Accessible_native_Nova_getRootReferenceNode getRootReferenceNode;
+spectra_tree_nodes_Nova_Accessible_native_Nova_getReferenceNode getReferenceNode;
+spectra_tree_nodes_Nova_Accessible_native0_Nova_cloneTo cloneTo__spectra_tree_nodes_Accessible;
+spectra_tree_nodes_Nova_Accessible_native_Nova_writeAccessedNodes writeAccessedNodes;
+} spectra_tree_nodes_native_Accessible;
 
-typedef void (*example_Nova_Lab_native_static_Nova_main)(example_Nova_Lab*, nova_exception_Nova_ExceptionData*, nova_datastruct_list_Nova_Array*);
-typedef example_Nova_Lab* (*example_Nova_Lab_native_Nova_construct)(example_Nova_Lab*, nova_exception_Nova_ExceptionData*);
+typedef spectra_tree_nodes_Nova_ArgumentList* (*spectra_tree_nodes_Nova_ArgumentList_native_Nova_construct)(spectra_tree_nodes_Nova_ArgumentList*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*);
 
-typedef struct example_native_Lab
+typedef struct spectra_tree_nodes_native_ArgumentList
 {
-example_Nova_Lab_native_Nova_construct Lab;
-} example_native_Lab;
+spectra_tree_nodes_Nova_ArgumentList_native_Nova_construct ArgumentList;
+} spectra_tree_nodes_native_ArgumentList;
 
-typedef void (*example_Nova_MathDemo_native_static_Nova_main)(example_Nova_MathDemo*, nova_exception_Nova_ExceptionData*, nova_datastruct_list_Nova_Array*);
-typedef example_Nova_MathDemo* (*example_Nova_MathDemo_native_Nova_construct)(example_Nova_MathDemo*, nova_exception_Nova_ExceptionData*);
+typedef nova_datastruct_list_Nova_Array* (*spectra_tree_nodes_Nova_ClassDeclaration_native_Nova_findCompatibleFunctions)(spectra_tree_nodes_Nova_ClassDeclaration*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, nova_datastruct_list_Nova_Array*);
+typedef spectra_tree_nodes_variables_Nova_VariableDeclaration* (*spectra_tree_nodes_Nova_ClassDeclaration_native0_Nova_findVariableDeclaration)(spectra_tree_nodes_Nova_ClassDeclaration*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, int, int);
+typedef nova_Nova_String* (*spectra_tree_nodes_Nova_ClassDeclaration_native_Nova_writeHeader)(spectra_tree_nodes_Nova_ClassDeclaration*, nova_exception_Nova_ExceptionData*);
+typedef nova_Nova_String* (*spectra_tree_nodes_Nova_ClassDeclaration_native_Nova_writeExtension)(spectra_tree_nodes_Nova_ClassDeclaration*, nova_exception_Nova_ExceptionData*);
+typedef nova_Nova_String* (*spectra_tree_nodes_Nova_ClassDeclaration_native_Nova_writeImplementedInterfaces)(spectra_tree_nodes_Nova_ClassDeclaration*, nova_exception_Nova_ExceptionData*);
+typedef nova_Nova_String* (*spectra_tree_nodes_Nova_ClassDeclaration_native_Nova_writeArrayBracketOverload)(spectra_tree_nodes_Nova_ClassDeclaration*, nova_exception_Nova_ExceptionData*);
+typedef spectra_tree_nodes_Nova_ClassDeclaration* (*spectra_tree_nodes_Nova_ClassDeclaration_native_Nova_construct)(spectra_tree_nodes_Nova_ClassDeclaration*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*);
 
-typedef struct example_native_MathDemo
+typedef struct spectra_tree_nodes_native_ClassDeclaration
 {
-example_Nova_MathDemo_native_Nova_construct MathDemo;
-} example_native_MathDemo;
+spectra_tree_nodes_Nova_ClassDeclaration_native_Nova_findCompatibleFunctions findCompatibleFunctions;
+spectra_tree_nodes_Nova_ClassDeclaration_native0_Nova_findVariableDeclaration findVariableDeclaration__nova_String__nova_primitive_Bool__nova_primitive_Bool;
+spectra_tree_nodes_Nova_ClassDeclaration_native_Nova_writeHeader writeHeader;
+spectra_tree_nodes_Nova_ClassDeclaration_native_Nova_writeExtension writeExtension;
+spectra_tree_nodes_Nova_ClassDeclaration_native_Nova_writeImplementedInterfaces writeImplementedInterfaces;
+spectra_tree_nodes_Nova_ClassDeclaration_native_Nova_writeArrayBracketOverload writeArrayBracketOverload;
+spectra_tree_nodes_Nova_ClassDeclaration_native_Nova_construct ClassDeclaration;
+} spectra_tree_nodes_native_ClassDeclaration;
 
-typedef example_Nova_NonWholeDivisionException* (*example_Nova_NonWholeDivisionException_native_Nova_construct)(example_Nova_NonWholeDivisionException*, nova_exception_Nova_ExceptionData*);
+typedef spectra_tree_nodes_Nova_Identifier* (*spectra_tree_nodes_Nova_Identifier_native_Nova_construct)(spectra_tree_nodes_Nova_Identifier*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*);
 
-typedef struct example_native_NonWholeDivisionException
+typedef struct spectra_tree_nodes_native_Identifier
 {
-example_Nova_NonWholeDivisionException_native_Nova_construct NonWholeDivisionException;
-} example_native_NonWholeDivisionException;
+spectra_tree_nodes_Nova_Identifier_native_Nova_construct Identifier;
+} spectra_tree_nodes_native_Identifier;
 
-typedef void (*example_Nova_Person_native_Nova_sayHello)(example_Nova_Person*, nova_exception_Nova_ExceptionData*);
-typedef example_Nova_Person* (*example_Nova_Person_native_Nova_construct)(example_Nova_Person*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, int);
+typedef nova_Nova_String* (*spectra_tree_nodes_Nova_Import_native_Nova_getClassLocation)(spectra_tree_nodes_Nova_Import*, nova_exception_Nova_ExceptionData*, int);
+typedef spectra_tree_nodes_Nova_Import* (*spectra_tree_nodes_Nova_Import_native_static_Nova_parse)(spectra_tree_nodes_Nova_Import*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*, int);
+typedef spectra_tree_nodes_Nova_Import* (*spectra_tree_nodes_Nova_Import_native_Nova_construct)(spectra_tree_nodes_Nova_Import*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*);
 
-typedef struct example_native_Person
+typedef struct spectra_tree_nodes_native_Import
 {
-example_Nova_Person_native_Nova_sayHello sayHello;
-example_Nova_Person_native_Nova_construct Person;
-} example_native_Person;
+spectra_tree_nodes_Nova_Import_native_Nova_getClassLocation getClassLocation;
+spectra_tree_nodes_Nova_Import_native_Nova_construct Import;
+} spectra_tree_nodes_native_Import;
 
-typedef int (*example_Nova_Polygon_native_Nova_numberSides)(example_Nova_Polygon*, nova_exception_Nova_ExceptionData*);
-typedef double (*example_Nova_Polygon_native_Nova_calculateArea)(example_Nova_Polygon*, nova_exception_Nova_ExceptionData*);
+typedef spectra_tree_nodes_Nova_ImportList* (*spectra_tree_nodes_Nova_ImportList_native_Nova_construct)(spectra_tree_nodes_Nova_ImportList*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*);
 
-typedef struct example_native_Polygon
+typedef struct spectra_tree_nodes_native_ImportList
 {
-example_Nova_Polygon_native_Nova_numberSides numberSides;
-example_Nova_Polygon_native_Nova_calculateArea calculateArea;
-} example_native_Polygon;
+spectra_tree_nodes_Nova_ImportList_native_Nova_construct ImportList;
+} spectra_tree_nodes_native_ImportList;
 
-typedef void (*example_Nova_PolymorphismDemo_native_static_Nova_main)(example_Nova_PolymorphismDemo*, nova_exception_Nova_ExceptionData*, nova_datastruct_list_Nova_Array*);
-typedef example_Nova_PolymorphismDemo* (*example_Nova_PolymorphismDemo_native_Nova_construct)(example_Nova_PolymorphismDemo*, nova_exception_Nova_ExceptionData*);
+typedef spectra_tree_nodes_Nova_InterfaceDeclaration* (*spectra_tree_nodes_Nova_InterfaceDeclaration_native_Nova_construct)(spectra_tree_nodes_Nova_InterfaceDeclaration*, nova_exception_Nova_ExceptionData*);
 
-typedef struct example_native_PolymorphismDemo
+typedef struct spectra_tree_nodes_native_InterfaceDeclaration
 {
-example_Nova_PolymorphismDemo_native_Nova_construct PolymorphismDemo;
-} example_native_PolymorphismDemo;
+spectra_tree_nodes_Nova_InterfaceDeclaration_native_Nova_construct InterfaceDeclaration;
+} spectra_tree_nodes_native_InterfaceDeclaration;
 
-typedef void (*example_Nova_QueueDemo_native_static_Nova_main)(example_Nova_QueueDemo*, nova_exception_Nova_ExceptionData*, nova_datastruct_list_Nova_Array*);
-typedef example_Nova_QueueDemo* (*example_Nova_QueueDemo_native_Nova_construct)(example_Nova_QueueDemo*, nova_exception_Nova_ExceptionData*);
 
-typedef struct example_native_QueueDemo
+typedef struct spectra_tree_nodes_native_Listener
 {
-example_Nova_QueueDemo_native_Nova_construct QueueDemo;
-} example_native_QueueDemo;
+} spectra_tree_nodes_native_Listener;
 
-typedef example_Nova_Spider* (*example_Nova_Spider_native_Nova_construct)(example_Nova_Spider*, nova_exception_Nova_ExceptionData*);
+typedef spectra_tree_nodes_Nova_Literal* (*spectra_tree_nodes_Nova_Literal_native_Nova_construct)(spectra_tree_nodes_Nova_Literal*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*);
 
-typedef struct example_native_Spider
+typedef struct spectra_tree_nodes_native_Literal
 {
-example_Nova_Spider_native_Nova_construct Spider;
-} example_native_Spider;
+spectra_tree_nodes_Nova_Literal_native_Nova_construct Literal;
+} spectra_tree_nodes_native_Literal;
 
-typedef example_Nova_Square* (*example_Nova_Square_native_Nova_construct)(example_Nova_Square*, nova_exception_Nova_ExceptionData*, int);
+typedef spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_Node_native_Nova_getAdjacentNode)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, int);
+typedef void (*spectra_tree_nodes_Nova_Node_native0_Nova_detach)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*);
+typedef void (*spectra_tree_nodes_Nova_Node_native1_Nova_detach)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
+typedef void (*spectra_tree_nodes_Nova_Node_native_Nova_addChild)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
+typedef void (*spectra_tree_nodes_Nova_Node_native_Nova_onAdded)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
+typedef void (*spectra_tree_nodes_Nova_Node_native_Nova_onRemoved)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
+typedef char (*spectra_tree_nodes_Nova_Node_native_Nova_onAfterDecoded)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*);
+typedef char (*spectra_tree_nodes_Nova_Node_native_Nova_onNextStatementDecoded)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
+typedef void (*spectra_tree_nodes_Nova_Node_native_Nova_onStackPopped)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*);
+typedef void (*spectra_tree_nodes_Nova_Node_native_Nova_followedByScope)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, char);
+typedef void (*spectra_tree_nodes_Nova_Node_native_Nova_onChildReplaced)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
+typedef void (*spectra_tree_nodes_Nova_Node_native_Nova_onReplaced)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
+typedef void (*spectra_tree_nodes_Nova_Node_native_Nova_onChildDetached)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
+typedef spectra_tree_nodes_Nova_ValidationResult* (*spectra_tree_nodes_Nova_Node_native_Nova_validate)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, int);
+typedef spectra_tree_nodes_variables_Nova_VariableDeclaration* (*spectra_tree_nodes_Nova_Node_native_Nova_findVariableDeclaration)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, int);
+typedef spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_Node_native_Nova_parseStatement)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*, int);
+typedef spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_Node_native_Nova_generateTemporaryScopeNode)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*);
+typedef void (*spectra_tree_nodes_Nova_Node_native_static_Nova_strictParse)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node_closure3_Nova_action spectra_tree_nodes_Nova_Node_Nova_action, void* spectra_tree_nodes_Nova_Node_ref_Nova_action, void* action_context);
+typedef void (*spectra_tree_nodes_Nova_Node_native_static_Nova_catchSyntaxErrors)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node_closure6_Nova_action spectra_tree_nodes_Nova_Node_Nova_action, void* spectra_tree_nodes_Nova_Node_ref_Nova_action, void* action_context);
+typedef spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_Node_native_Nova_clone)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*, int);
+typedef spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_Node_native_Nova_cloneTo)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
+typedef char (*spectra_tree_nodes_Nova_Node_native_Nova_replace)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
+typedef char (*spectra_tree_nodes_Nova_Node_native_Nova_validateTypes)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*);
+typedef char (*spectra_tree_nodes_Nova_Node_native_Nova_parsePlaceholders)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*);
+typedef char (*spectra_tree_nodes_Nova_Node_native_Nova_parsePlaceholderChildren)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_NodeList*);
+typedef nova_Nova_String* (*spectra_tree_nodes_Nova_Node_native_Nova_writeAnnotationSeparator)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*);
+typedef nova_Nova_String* (*spectra_tree_nodes_Nova_Node_native_Nova_writeAnnotations)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*);
+typedef nova_Nova_String* (*spectra_tree_nodes_Nova_Node_native_Nova_toNova)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*);
+typedef nova_Nova_String* (*spectra_tree_nodes_Nova_Node_native_Nova_writeNova)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*);
+typedef spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_Node_native_Nova_construct)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*);
 
-typedef struct example_native_Square
+typedef struct spectra_tree_nodes_native_Node
 {
-example_Nova_Square_native_Nova_construct Square;
-} example_native_Square;
+spectra_tree_nodes_Nova_Node_native_Nova_getAdjacentNode getAdjacentNode;
+spectra_tree_nodes_Nova_Node_native0_Nova_detach detach;
+spectra_tree_nodes_Nova_Node_native1_Nova_detach detach__spectra_tree_nodes_Node;
+spectra_tree_nodes_Nova_Node_native_Nova_addChild addChild;
+spectra_tree_nodes_Nova_Node_native_Nova_onAdded onAdded;
+spectra_tree_nodes_Nova_Node_native_Nova_onRemoved onRemoved;
+spectra_tree_nodes_Nova_Node_native_Nova_onAfterDecoded onAfterDecoded;
+spectra_tree_nodes_Nova_Node_native_Nova_onNextStatementDecoded onNextStatementDecoded;
+spectra_tree_nodes_Nova_Node_native_Nova_onStackPopped onStackPopped;
+spectra_tree_nodes_Nova_Node_native_Nova_followedByScope followedByScope;
+spectra_tree_nodes_Nova_Node_native_Nova_onChildReplaced onChildReplaced;
+spectra_tree_nodes_Nova_Node_native_Nova_onReplaced onReplaced;
+spectra_tree_nodes_Nova_Node_native_Nova_onChildDetached onChildDetached;
+spectra_tree_nodes_Nova_Node_native_Nova_validate validate;
+spectra_tree_nodes_Nova_Node_native_Nova_findVariableDeclaration findVariableDeclaration;
+spectra_tree_nodes_Nova_Node_native_Nova_parseStatement parseStatement;
+spectra_tree_nodes_Nova_Node_native_Nova_generateTemporaryScopeNode generateTemporaryScopeNode;
+spectra_tree_nodes_Nova_Node_native_Nova_clone clone;
+spectra_tree_nodes_Nova_Node_native_Nova_cloneTo cloneTo;
+spectra_tree_nodes_Nova_Node_native_Nova_replace replace;
+spectra_tree_nodes_Nova_Node_native_Nova_validateTypes validateTypes;
+spectra_tree_nodes_Nova_Node_native_Nova_parsePlaceholders parsePlaceholders;
+spectra_tree_nodes_Nova_Node_native_Nova_parsePlaceholderChildren parsePlaceholderChildren;
+spectra_tree_nodes_Nova_Node_native_Nova_writeAnnotationSeparator writeAnnotationSeparator;
+spectra_tree_nodes_Nova_Node_native_Nova_writeAnnotations writeAnnotations;
+spectra_tree_nodes_Nova_Node_native_Nova_toNova toNova;
+spectra_tree_nodes_Nova_Node_native_Nova_writeNova writeNova;
+spectra_tree_nodes_Nova_Node_native_Nova_construct Node;
+} spectra_tree_nodes_native_Node;
 
-typedef void (*example_Nova_SvgChart_native_static_Nova_main)(example_Nova_SvgChart*, nova_exception_Nova_ExceptionData*, nova_datastruct_list_Nova_Array*);
-typedef example_Nova_SvgChart* (*example_Nova_SvgChart_native_Nova_construct)(example_Nova_SvgChart*, nova_exception_Nova_ExceptionData*);
+typedef void (*spectra_tree_nodes_Nova_NodeList_native_Nova_replace)(spectra_tree_nodes_Nova_NodeList*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*, int);
+typedef spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_NodeList_native_Nova_addChild)(spectra_tree_nodes_Nova_NodeList*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, int, int);
+typedef char (*spectra_tree_nodes_Nova_NodeList_native_Nova_containsChild)(spectra_tree_nodes_Nova_NodeList*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, int);
+typedef nova_datastruct_list_Nova_Array* (*spectra_tree_nodes_Nova_NodeList_native_Nova_inheritChildren)(spectra_tree_nodes_Nova_NodeList*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_NodeList*, int);
+typedef spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_NodeList_native0_Nova_removeChild)(spectra_tree_nodes_Nova_NodeList*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
+typedef spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_NodeList_native1_Nova_removeChild)(spectra_tree_nodes_Nova_NodeList*, nova_exception_Nova_ExceptionData*, int);
+typedef nova_datastruct_list_Nova_Array* (*spectra_tree_nodes_Nova_NodeList_native_Nova_slaughterChildren)(spectra_tree_nodes_Nova_NodeList*, nova_exception_Nova_ExceptionData*);
+typedef spectra_tree_nodes_Nova_NodeList* (*spectra_tree_nodes_Nova_NodeList_native_Nova_construct)(spectra_tree_nodes_Nova_NodeList*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*);
 
-typedef struct example_native_SvgChart
+typedef struct spectra_tree_nodes_native_NodeList
 {
-example_Nova_SvgChart_native_Nova_construct SvgChart;
-} example_native_SvgChart;
+spectra_tree_nodes_Nova_NodeList_native_Nova_replace replace;
+spectra_tree_nodes_Nova_NodeList_native_Nova_addChild addChild;
+spectra_tree_nodes_Nova_NodeList_native_Nova_containsChild containsChild;
+spectra_tree_nodes_Nova_NodeList_native_Nova_inheritChildren inheritChildren;
+spectra_tree_nodes_Nova_NodeList_native0_Nova_removeChild removeChild__spectra_tree_nodes_Node;
+spectra_tree_nodes_Nova_NodeList_native1_Nova_removeChild removeChild__nova_primitive_number_Int;
+spectra_tree_nodes_Nova_NodeList_native_Nova_slaughterChildren slaughterChildren;
+spectra_tree_nodes_Nova_NodeList_native_Nova_construct NodeList;
+} spectra_tree_nodes_native_NodeList;
 
-typedef void (*example_Nova_SvgFractal_native_static_Nova_main)(example_Nova_SvgFractal*, nova_exception_Nova_ExceptionData*, nova_datastruct_list_Nova_Array*);
-typedef example_Nova_SvgFractal* (*example_Nova_SvgFractal_native_Nova_construct)(example_Nova_SvgFractal*, nova_exception_Nova_ExceptionData*);
+typedef spectra_tree_nodes_Nova_ClassDeclaration* (*spectra_tree_nodes_Nova_NovaFile_native_Nova_getImportedClass)(spectra_tree_nodes_Nova_NovaFile*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, int);
+typedef nova_datastruct_list_Nova_Array* (*spectra_tree_nodes_Nova_NovaFile_native_Nova_addAutoImports)(spectra_tree_nodes_Nova_NovaFile*, nova_exception_Nova_ExceptionData*);
+typedef spectra_tree_nodes_Nova_Import* (*spectra_tree_nodes_Nova_NovaFile_native_Nova_addImport)(spectra_tree_nodes_Nova_NovaFile*, nova_exception_Nova_ExceptionData*, nova_Nova_String*);
+typedef char (*spectra_tree_nodes_Nova_NovaFile_native_Nova_containsImport)(spectra_tree_nodes_Nova_NovaFile*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, int, int);
+typedef spectra_tree_nodes_Nova_NovaFile* (*spectra_tree_nodes_Nova_NovaFile_native_Nova_construct)(spectra_tree_nodes_Nova_NovaFile*, nova_exception_Nova_ExceptionData*, nova_io_Nova_File*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*);
 
-typedef struct example_native_SvgFractal
+typedef struct spectra_tree_nodes_native_NovaFile
 {
-example_Nova_SvgFractal_native_Nova_construct SvgFractal;
-} example_native_SvgFractal;
+spectra_tree_nodes_Nova_NovaFile_native_Nova_getImportedClass getImportedClass;
+spectra_tree_nodes_Nova_NovaFile_native_Nova_addAutoImports addAutoImports;
+spectra_tree_nodes_Nova_NovaFile_native_Nova_addImport addImport;
+spectra_tree_nodes_Nova_NovaFile_native_Nova_containsImport containsImport;
+spectra_tree_nodes_Nova_NovaFile_native_Nova_construct NovaFile;
+} spectra_tree_nodes_native_NovaFile;
 
-typedef example_Nova_T1* (*example_Nova_T1_native_Nova_construct)(example_Nova_T1*, nova_exception_Nova_ExceptionData*);
+typedef spectra_tree_nodes_Nova_NumericRange* (*spectra_tree_nodes_Nova_NumericRange_native_Nova_construct)(spectra_tree_nodes_Nova_NumericRange*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*);
 
-typedef struct example_native_T1
+typedef struct spectra_tree_nodes_native_NumericRange
 {
-example_Nova_T1_native_Nova_construct T1;
-} example_native_T1;
+spectra_tree_nodes_Nova_NumericRange_native_Nova_construct NumericRange;
+} spectra_tree_nodes_native_NumericRange;
 
-typedef example_Nova_T2* (*example_Nova_T2_native_Nova_construct)(example_Nova_T2*, nova_exception_Nova_ExceptionData*);
+typedef spectra_tree_nodes_Nova_Package* (*spectra_tree_nodes_Nova_Package_native_static_Nova_generateDefaultPackage)(spectra_tree_nodes_Nova_Package*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*);
+typedef spectra_tree_nodes_Nova_Package* (*spectra_tree_nodes_Nova_Package_native_static_Nova_parse)(spectra_tree_nodes_Nova_Package*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*, int);
+typedef spectra_tree_nodes_Nova_Package* (*spectra_tree_nodes_Nova_Package_native_Nova_construct)(spectra_tree_nodes_Nova_Package*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*);
 
-typedef struct example_native_T2
+typedef struct spectra_tree_nodes_native_Package
 {
-example_Nova_T2_native_Nova_construct T2;
-} example_native_T2;
+spectra_tree_nodes_Nova_Package_native_Nova_construct Package;
+} spectra_tree_nodes_native_Package;
 
-typedef void (*example_Nova_Test_native_static_Nova_main)(example_Nova_Test*, nova_exception_Nova_ExceptionData*, nova_datastruct_list_Nova_Array*);
-typedef example_Nova_Test* (*example_Nova_Test_native_Nova_construct)(example_Nova_Test*, nova_exception_Nova_ExceptionData*);
+typedef nova_Nova_String* (*spectra_tree_nodes_Nova_PlaceholderValue_native_Nova_writeChildren)(spectra_tree_nodes_Nova_PlaceholderValue*, nova_exception_Nova_ExceptionData*);
+typedef spectra_tree_nodes_Nova_PlaceholderValue* (*spectra_tree_nodes_Nova_PlaceholderValue_native_Nova_construct)(spectra_tree_nodes_Nova_PlaceholderValue*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*, nova_Nova_String*);
 
-typedef struct example_native_Test
+typedef struct spectra_tree_nodes_native_PlaceholderValue
 {
-example_Nova_Test_native_Nova_construct Test;
-} example_native_Test;
+spectra_tree_nodes_Nova_PlaceholderValue_native_Nova_writeChildren writeChildren;
+spectra_tree_nodes_Nova_PlaceholderValue_native_Nova_construct PlaceholderValue;
+} spectra_tree_nodes_native_PlaceholderValue;
 
-typedef void (*example_Nova_ThreadDemo_native_static_Nova_main)(example_Nova_ThreadDemo*, nova_exception_Nova_ExceptionData*, nova_datastruct_list_Nova_Array*);
-typedef example_Nova_ThreadDemo* (*example_Nova_ThreadDemo_native_Nova_construct)(example_Nova_ThreadDemo*, nova_exception_Nova_ExceptionData*);
+typedef spectra_tree_nodes_Nova_Priority* (*spectra_tree_nodes_Nova_Priority_native_Nova_construct)(spectra_tree_nodes_Nova_Priority*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*);
 
-typedef struct example_native_ThreadDemo
+typedef struct spectra_tree_nodes_native_Priority
 {
-example_Nova_ThreadDemo_native_Nova_construct ThreadDemo;
-} example_native_ThreadDemo;
+spectra_tree_nodes_Nova_Priority_native_Nova_construct Priority;
+} spectra_tree_nodes_native_Priority;
 
-typedef example_Nova_ThreadDemoImplementation* (*example_Nova_ThreadDemoImplementation_native_Nova_construct)(example_Nova_ThreadDemoImplementation*, nova_exception_Nova_ExceptionData*, long_long, nova_Nova_String*);
+typedef void (*spectra_tree_nodes_Nova_Program_native_Nova_addChild)(spectra_tree_nodes_Nova_Program*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
+typedef spectra_tree_nodes_Nova_ClassDeclaration* (*spectra_tree_nodes_Nova_Program_native_Nova_getClassDeclaration)(spectra_tree_nodes_Nova_Program*, nova_exception_Nova_ExceptionData*, nova_Nova_String*);
+typedef spectra_tree_nodes_Nova_Program* (*spectra_tree_nodes_Nova_Program_native_Nova_construct)(spectra_tree_nodes_Nova_Program*, nova_exception_Nova_ExceptionData*, spectra_tree_Nova_SyntaxTree*);
 
-typedef struct example_native_ThreadDemoImplementation
+typedef struct spectra_tree_nodes_native_Program
 {
-example_Nova_ThreadDemoImplementation_native_Nova_construct ThreadDemoImplementation;
-} example_native_ThreadDemoImplementation;
+spectra_tree_nodes_Nova_Program_native_Nova_addChild addChild;
+spectra_tree_nodes_Nova_Program_native_Nova_getClassDeclaration getClassDeclaration;
+spectra_tree_nodes_Nova_Program_native_Nova_construct Program;
+} spectra_tree_nodes_native_Program;
 
-typedef void (*example_ackermann_Nova_Ackermann_native_static_Nova_main)(example_ackermann_Nova_Ackermann*, nova_exception_Nova_ExceptionData*, nova_datastruct_list_Nova_Array*);
-typedef int (*example_ackermann_Nova_Ackermann_native_static_Nova_run)(example_ackermann_Nova_Ackermann*, nova_exception_Nova_ExceptionData*, int, int);
-typedef int (*example_ackermann_Nova_Ackermann_native_static_Nova_run2)(example_ackermann_Nova_Ackermann*, nova_exception_Nova_ExceptionData*, int, int);
-typedef example_ackermann_Nova_Ackermann* (*example_ackermann_Nova_Ackermann_native_Nova_construct)(example_ackermann_Nova_Ackermann*, nova_exception_Nova_ExceptionData*);
+typedef spectra_tree_nodes_Nova_Return* (*spectra_tree_nodes_Nova_Return_native_static_Nova_parse)(spectra_tree_nodes_Nova_Return*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*, int);
+typedef nova_Nova_String* (*spectra_tree_nodes_Nova_Return_native_Nova_writeValue)(spectra_tree_nodes_Nova_Return*, nova_exception_Nova_ExceptionData*);
+typedef spectra_tree_nodes_Nova_Return* (*spectra_tree_nodes_Nova_Return_native_Nova_construct)(spectra_tree_nodes_Nova_Return*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*, spectra_tree_nodes_Nova_Value*);
 
-typedef struct example_ackermann_native_Ackermann
+typedef struct spectra_tree_nodes_native_Return
 {
-example_ackermann_Nova_Ackermann_native_Nova_construct Ackermann;
-} example_ackermann_native_Ackermann;
+spectra_tree_nodes_Nova_Return_native_Nova_writeValue writeValue;
+spectra_tree_nodes_Nova_Return_native_Nova_construct Return;
+} spectra_tree_nodes_native_Return;
 
-typedef example_copy_Nova_Dog* (*example_copy_Nova_Dog_native_Nova_construct)(example_copy_Nova_Dog*, nova_exception_Nova_ExceptionData*, int, int);
+typedef spectra_tree_nodes_Nova_Scope* (*spectra_tree_nodes_Nova_Scope_native_Nova_construct)(spectra_tree_nodes_Nova_Scope*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*);
 
-typedef struct example_copy_native_Dog
+typedef struct spectra_tree_nodes_native_Scope
 {
-example_copy_Nova_Dog_native_Nova_construct Dog;
-} example_copy_native_Dog;
+spectra_tree_nodes_Nova_Scope_native_Nova_construct Scope;
+} spectra_tree_nodes_native_Scope;
 
-typedef void (*example_database_Nova_DatabaseDemo_native_static_Nova_main)(example_database_Nova_DatabaseDemo*, nova_exception_Nova_ExceptionData*, nova_datastruct_list_Nova_Array*);
-typedef example_database_Nova_DatabaseDemo* (*example_database_Nova_DatabaseDemo_native_Nova_construct)(example_database_Nova_DatabaseDemo*, nova_exception_Nova_ExceptionData*);
+typedef spectra_tree_nodes_Nova_Skeleton* (*spectra_tree_nodes_Nova_Skeleton_native_static_Nova_parse)(spectra_tree_nodes_Nova_Skeleton*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*, int);
+typedef spectra_tree_nodes_Nova_Skeleton* (*spectra_tree_nodes_Nova_Skeleton_native_Nova_construct)(spectra_tree_nodes_Nova_Skeleton*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*);
 
-typedef struct example_database_native_DatabaseDemo
+typedef struct spectra_tree_nodes_native_Skeleton
 {
-example_database_Nova_DatabaseDemo_native_Nova_construct DatabaseDemo;
-} example_database_native_DatabaseDemo;
+spectra_tree_nodes_Nova_Skeleton_native_Nova_construct Skeleton;
+} spectra_tree_nodes_native_Skeleton;
 
-typedef void (*example_network_Nova_ClientDemo_native_static_Nova_main)(example_network_Nova_ClientDemo*, nova_exception_Nova_ExceptionData*, nova_datastruct_list_Nova_Array*);
-typedef example_network_Nova_ClientDemo* (*example_network_Nova_ClientDemo_native_Nova_construct)(example_network_Nova_ClientDemo*, nova_exception_Nova_ExceptionData*);
+typedef spectra_tree_nodes_Nova_StaticClassReference* (*spectra_tree_nodes_Nova_StaticClassReference_native_Nova_construct)(spectra_tree_nodes_Nova_StaticClassReference*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*, nova_Nova_String*);
 
-typedef struct example_network_native_ClientDemo
+typedef struct spectra_tree_nodes_native_StaticClassReference
 {
-example_network_Nova_ClientDemo_native_Nova_construct ClientDemo;
-} example_network_native_ClientDemo;
+spectra_tree_nodes_Nova_StaticClassReference_native_Nova_construct StaticClassReference;
+} spectra_tree_nodes_native_StaticClassReference;
 
-typedef example_network_Nova_ConnectionThread* (*example_network_Nova_ConnectionThread_native_Nova_construct)(example_network_Nova_ConnectionThread*, nova_exception_Nova_ExceptionData*, nova_network_Nova_ConnectionSocket*);
+typedef spectra_tree_nodes_Nova_Type* (*spectra_tree_nodes_Nova_Type_native_static_Nova_parse)(spectra_tree_nodes_Nova_Type*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*, int);
+typedef nova_Nova_String* (*spectra_tree_nodes_Nova_Type_native_Nova_writeArray)(spectra_tree_nodes_Nova_Type*, nova_exception_Nova_ExceptionData*);
+typedef nova_Nova_String* (*spectra_tree_nodes_Nova_Type_native_Nova_writeGenericParameters)(spectra_tree_nodes_Nova_Type*, nova_exception_Nova_ExceptionData*);
+typedef nova_Nova_String* (*spectra_tree_nodes_Nova_Type_native_Nova_toNova)(spectra_tree_nodes_Nova_Type*, nova_exception_Nova_ExceptionData*);
+typedef nova_Nova_String* (*spectra_tree_nodes_Nova_Type_native_Nova_writeNova)(spectra_tree_nodes_Nova_Type*, nova_exception_Nova_ExceptionData*);
+typedef spectra_tree_nodes_Nova_Type* (*spectra_tree_nodes_Nova_Type_native_Nova_cloneTo)(spectra_tree_nodes_Nova_Type*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Type*);
+typedef spectra_tree_nodes_Nova_Type* (*spectra_tree_nodes_Nova_Type_native_Nova_construct)(spectra_tree_nodes_Nova_Type*, nova_exception_Nova_ExceptionData*, nova_Nova_String*);
 
-typedef struct example_network_native_ConnectionThread
+typedef struct spectra_tree_nodes_native_Type
 {
-example_network_Nova_ConnectionThread_native_Nova_construct ConnectionThread;
-} example_network_native_ConnectionThread;
+spectra_tree_nodes_Nova_Type_native_Nova_writeArray writeArray;
+spectra_tree_nodes_Nova_Type_native_Nova_writeGenericParameters writeGenericParameters;
+spectra_tree_nodes_Nova_Type_native_Nova_toNova toNova;
+spectra_tree_nodes_Nova_Type_native_Nova_writeNova writeNova;
+spectra_tree_nodes_Nova_Type_native_Nova_cloneTo cloneTo;
+spectra_tree_nodes_Nova_Type_native_Nova_construct Type;
+} spectra_tree_nodes_native_Type;
 
-typedef example_network_Nova_OutputThread* (*example_network_Nova_OutputThread_native_Nova_construct)(example_network_Nova_OutputThread*, nova_exception_Nova_ExceptionData*, nova_network_Nova_ServerSocket*, nova_network_Nova_ConnectionSocket*);
+typedef spectra_tree_nodes_Nova_ValidationResult* (*spectra_tree_nodes_Nova_ValidationResult_native_Nova_construct)(spectra_tree_nodes_Nova_ValidationResult*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
 
-typedef struct example_network_native_OutputThread
+typedef struct spectra_tree_nodes_native_ValidationResult
 {
-example_network_Nova_OutputThread_native_Nova_construct OutputThread;
-} example_network_native_OutputThread;
+spectra_tree_nodes_Nova_ValidationResult_native_Nova_construct ValidationResult;
+} spectra_tree_nodes_native_ValidationResult;
 
-typedef void (*example_network_Nova_ServerDemo_native_static_Nova_main)(example_network_Nova_ServerDemo*, nova_exception_Nova_ExceptionData*, nova_datastruct_list_Nova_Array*);
-typedef example_network_Nova_ServerDemo* (*example_network_Nova_ServerDemo_native_Nova_construct)(example_network_Nova_ServerDemo*, nova_exception_Nova_ExceptionData*);
+typedef spectra_tree_nodes_Nova_Value* (*spectra_tree_nodes_Nova_Value_native0_static_Nova_parse)(spectra_tree_nodes_Nova_Value*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*, int);
+typedef spectra_tree_nodes_Nova_Value* (*spectra_tree_nodes_Nova_Value_native1_static_Nova_parse)(spectra_tree_nodes_Nova_Value*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_PlaceholderValue*, int);
+typedef char (*spectra_tree_nodes_Nova_Value_native_Nova_parseType)(spectra_tree_nodes_Nova_Value*, nova_exception_Nova_ExceptionData*, nova_Nova_String*);
+typedef void (*spectra_tree_nodes_Nova_Value_native_Nova_invalidTypeError)(spectra_tree_nodes_Nova_Value*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Type*, int);
+typedef nova_Nova_String* (*spectra_tree_nodes_Nova_Value_native_Nova_writeType)(spectra_tree_nodes_Nova_Value*, nova_exception_Nova_ExceptionData*);
+typedef nova_Nova_String* (*spectra_tree_nodes_Nova_Value_native_Nova_writeArrayAccess)(spectra_tree_nodes_Nova_Value*, nova_exception_Nova_ExceptionData*);
+typedef spectra_tree_nodes_Nova_Value* (*spectra_tree_nodes_Nova_Value_native_Nova_construct)(spectra_tree_nodes_Nova_Value*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*, spectra_tree_nodes_Nova_Type*);
 
-typedef struct example_network_native_ServerDemo
+typedef struct spectra_tree_nodes_native_Value
 {
-example_network_Nova_ServerDemo_native_Nova_construct ServerDemo;
-} example_network_native_ServerDemo;
+spectra_tree_nodes_Nova_Value_native_Nova_parseType parseType;
+spectra_tree_nodes_Nova_Value_native_Nova_invalidTypeError invalidTypeError;
+spectra_tree_nodes_Nova_Value_native_Nova_writeType writeType;
+spectra_tree_nodes_Nova_Value_native_Nova_writeArrayAccess writeArrayAccess;
+spectra_tree_nodes_Nova_Value_native_Nova_construct Value;
+} spectra_tree_nodes_native_Value;
 
-typedef stabilitytest_Nova_AssignmentStability* (*stabilitytest_Nova_AssignmentStability_native_Nova_construct)(stabilitytest_Nova_AssignmentStability*, nova_exception_Nova_ExceptionData*, stabilitytest_Nova_StabilityTest*);
+typedef void (*spectra_tree_nodes_annotations_Nova_Annotatable_native_Nova_addAnnotation)(spectra_tree_nodes_annotations_Nova_Annotatable*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_annotations_Nova_Annotation*);
 
-typedef struct stabilitytest_native_AssignmentStability
+typedef struct spectra_tree_nodes_annotations_native_Annotatable
 {
-stabilitytest_Nova_AssignmentStability_native_Nova_construct AssignmentStability;
-} stabilitytest_native_AssignmentStability;
+spectra_tree_nodes_annotations_Nova_Annotatable_native_Nova_addAnnotation addAnnotation;
+} spectra_tree_nodes_annotations_native_Annotatable;
 
-typedef stabilitytest_Nova_ClassWithProperties* (*stabilitytest_Nova_ClassWithProperties_native_Nova_construct)(stabilitytest_Nova_ClassWithProperties*, nova_exception_Nova_ExceptionData*);
+typedef spectra_tree_nodes_annotations_Nova_Annotation* (*spectra_tree_nodes_annotations_Nova_Annotation_native_static_Nova_parse)(spectra_tree_nodes_annotations_Nova_Annotation*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*, int);
+typedef nova_Nova_String* (*spectra_tree_nodes_annotations_Nova_Annotation_native_static_Nova_getRemainingStatement)(spectra_tree_nodes_annotations_Nova_Annotation*, nova_exception_Nova_ExceptionData*, nova_Nova_String*);
+typedef spectra_tree_nodes_annotations_Nova_Annotation* (*spectra_tree_nodes_annotations_Nova_Annotation_native_Nova_construct)(spectra_tree_nodes_annotations_Nova_Annotation*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*);
 
-typedef struct stabilitytest_native_ClassWithProperties
+typedef struct spectra_tree_nodes_annotations_native_Annotation
 {
-stabilitytest_Nova_ClassWithProperties_native_Nova_construct ClassWithProperties;
-} stabilitytest_native_ClassWithProperties;
+spectra_tree_nodes_annotations_Nova_Annotation_native_Nova_construct Annotation;
+} spectra_tree_nodes_annotations_native_Annotation;
 
-typedef stabilitytest_Nova_ClientThread* (*stabilitytest_Nova_ClientThread_native_Nova_construct)(stabilitytest_Nova_ClientThread*, nova_exception_Nova_ExceptionData*, stabilitytest_Nova_StabilityTest*, int);
 
-typedef struct stabilitytest_native_ClientThread
+typedef struct spectra_tree_nodes_annotations_native_Modifier
 {
-stabilitytest_Nova_ClientThread_native_Nova_construct ClientThread;
-} stabilitytest_native_ClientThread;
+} spectra_tree_nodes_annotations_native_Modifier;
 
-typedef stabilitytest_Nova_ClosureStability* (*stabilitytest_Nova_ClosureStability_native_Nova_construct)(stabilitytest_Nova_ClosureStability*, nova_exception_Nova_ExceptionData*, stabilitytest_Nova_StabilityTest*);
+typedef spectra_tree_nodes_annotations_Nova_NativeAnnotation* (*spectra_tree_nodes_annotations_Nova_NativeAnnotation_native_static_Nova_parse)(spectra_tree_nodes_annotations_Nova_NativeAnnotation*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, nova_Nova_String*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*, int);
+typedef spectra_tree_nodes_annotations_Nova_NativeAnnotation* (*spectra_tree_nodes_annotations_Nova_NativeAnnotation_native_Nova_construct)(spectra_tree_nodes_annotations_Nova_NativeAnnotation*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*);
 
-typedef struct stabilitytest_native_ClosureStability
+typedef struct spectra_tree_nodes_annotations_native_NativeAnnotation
 {
-stabilitytest_Nova_ClosureStability_native_Nova_construct ClosureStability;
-} stabilitytest_native_ClosureStability;
+spectra_tree_nodes_annotations_Nova_NativeAnnotation_native_Nova_construct NativeAnnotation;
+} spectra_tree_nodes_annotations_native_NativeAnnotation;
 
-typedef stabilitytest_Nova_ExceptionStability* (*stabilitytest_Nova_ExceptionStability_native_Nova_construct)(stabilitytest_Nova_ExceptionStability*, nova_exception_Nova_ExceptionData*, stabilitytest_Nova_StabilityTest*);
+typedef spectra_tree_nodes_annotations_Nova_OverrideAnnotation* (*spectra_tree_nodes_annotations_Nova_OverrideAnnotation_native_static_Nova_parse)(spectra_tree_nodes_annotations_Nova_OverrideAnnotation*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, nova_Nova_String*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*, int);
+typedef spectra_tree_nodes_annotations_Nova_OverrideAnnotation* (*spectra_tree_nodes_annotations_Nova_OverrideAnnotation_native_Nova_construct)(spectra_tree_nodes_annotations_Nova_OverrideAnnotation*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*);
 
-typedef struct stabilitytest_native_ExceptionStability
+typedef struct spectra_tree_nodes_annotations_native_OverrideAnnotation
 {
-stabilitytest_Nova_ExceptionStability_native_Nova_construct ExceptionStability;
-} stabilitytest_native_ExceptionStability;
+spectra_tree_nodes_annotations_Nova_OverrideAnnotation_native_Nova_construct OverrideAnnotation;
+} spectra_tree_nodes_annotations_native_OverrideAnnotation;
 
-typedef stabilitytest_Nova_FileStability* (*stabilitytest_Nova_FileStability_native_Nova_construct)(stabilitytest_Nova_FileStability*, nova_exception_Nova_ExceptionData*, stabilitytest_Nova_StabilityTest*);
+typedef spectra_tree_nodes_annotations_Nova_TargetAnnotation* (*spectra_tree_nodes_annotations_Nova_TargetAnnotation_native_static_Nova_parse)(spectra_tree_nodes_annotations_Nova_TargetAnnotation*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, nova_Nova_String*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*, int);
+typedef spectra_tree_nodes_annotations_Nova_TargetAnnotation* (*spectra_tree_nodes_annotations_Nova_TargetAnnotation_native_Nova_construct)(spectra_tree_nodes_annotations_Nova_TargetAnnotation*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*);
 
-typedef struct stabilitytest_native_FileStability
+typedef struct spectra_tree_nodes_annotations_native_TargetAnnotation
 {
-stabilitytest_Nova_FileStability_native_Nova_construct FileStability;
-} stabilitytest_native_FileStability;
+spectra_tree_nodes_annotations_Nova_TargetAnnotation_native_Nova_construct TargetAnnotation;
+} spectra_tree_nodes_annotations_native_TargetAnnotation;
 
-typedef stabilitytest_Nova_LambdaStability* (*stabilitytest_Nova_LambdaStability_native_Nova_construct)(stabilitytest_Nova_LambdaStability*, nova_exception_Nova_ExceptionData*, stabilitytest_Nova_StabilityTest*);
+typedef spectra_tree_nodes_arrays_Nova_ArrayAccess* (*spectra_tree_nodes_arrays_Nova_ArrayAccess_native_Nova_parse)(spectra_tree_nodes_arrays_Nova_ArrayAccess*, nova_exception_Nova_ExceptionData*, nova_datastruct_list_Nova_Array*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*, int);
+typedef char (*spectra_tree_nodes_arrays_Nova_ArrayAccess_native_Nova_parseDimension)(spectra_tree_nodes_arrays_Nova_ArrayAccess*, nova_exception_Nova_ExceptionData*, nova_Nova_String*);
+typedef spectra_tree_nodes_arrays_Nova_ArrayAccess* (*spectra_tree_nodes_arrays_Nova_ArrayAccess_native_Nova_construct)(spectra_tree_nodes_arrays_Nova_ArrayAccess*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*);
 
-typedef struct stabilitytest_native_LambdaStability
+typedef struct spectra_tree_nodes_arrays_native_ArrayAccess
 {
-stabilitytest_Nova_LambdaStability_native_Nova_construct LambdaStability;
-} stabilitytest_native_LambdaStability;
+spectra_tree_nodes_arrays_Nova_ArrayAccess_native_Nova_parse parse;
+spectra_tree_nodes_arrays_Nova_ArrayAccess_native_Nova_parseDimension parseDimension;
+spectra_tree_nodes_arrays_Nova_ArrayAccess_native_Nova_construct ArrayAccess;
+} spectra_tree_nodes_arrays_native_ArrayAccess;
 
-typedef stabilitytest_Nova_NetworkStability* (*stabilitytest_Nova_NetworkStability_native_Nova_construct)(stabilitytest_Nova_NetworkStability*, nova_exception_Nova_ExceptionData*, stabilitytest_Nova_StabilityTest*);
+typedef spectra_tree_nodes_controlstructures_Nova_ControlStructure* (*spectra_tree_nodes_controlstructures_Nova_ControlStructure_native_Nova_construct)(spectra_tree_nodes_controlstructures_Nova_ControlStructure*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*);
 
-typedef struct stabilitytest_native_NetworkStability
+typedef struct spectra_tree_nodes_controlstructures_native_ControlStructure
 {
-stabilitytest_Nova_NetworkStability_native_Nova_construct NetworkStability;
-} stabilitytest_native_NetworkStability;
+spectra_tree_nodes_controlstructures_Nova_ControlStructure_native_Nova_construct ControlStructure;
+} spectra_tree_nodes_controlstructures_native_ControlStructure;
 
-typedef stabilitytest_Nova_Node* (*stabilitytest_Nova_Node_native_Nova_construct)(stabilitytest_Nova_Node*, nova_exception_Nova_ExceptionData*);
+typedef spectra_tree_nodes_controlstructures_Nova_ElseStatement* (*spectra_tree_nodes_controlstructures_Nova_ElseStatement_native_static_Nova_parse)(spectra_tree_nodes_controlstructures_Nova_ElseStatement*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*, int);
+typedef spectra_tree_nodes_controlstructures_Nova_ElseStatement* (*spectra_tree_nodes_controlstructures_Nova_ElseStatement_native_Nova_construct)(spectra_tree_nodes_controlstructures_Nova_ElseStatement*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*);
 
-typedef struct stabilitytest_native_Node
+typedef struct spectra_tree_nodes_controlstructures_native_ElseStatement
 {
-stabilitytest_Nova_Node_native_Nova_construct Node;
-} stabilitytest_native_Node;
+spectra_tree_nodes_controlstructures_Nova_ElseStatement_native_Nova_construct ElseStatement;
+} spectra_tree_nodes_controlstructures_native_ElseStatement;
 
-typedef stabilitytest_Nova_PolymorphicSubClass* (*stabilitytest_Nova_PolymorphicSubClass_native_Nova_construct)(stabilitytest_Nova_PolymorphicSubClass*, nova_exception_Nova_ExceptionData*);
+typedef spectra_tree_nodes_controlstructures_Nova_IfStatement* (*spectra_tree_nodes_controlstructures_Nova_IfStatement_native_static_Nova_parse)(spectra_tree_nodes_controlstructures_Nova_IfStatement*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*, int);
+typedef spectra_tree_nodes_controlstructures_Nova_IfStatement* (*spectra_tree_nodes_controlstructures_Nova_IfStatement_native_Nova_construct)(spectra_tree_nodes_controlstructures_Nova_IfStatement*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*);
 
-typedef struct stabilitytest_native_PolymorphicSubClass
+typedef struct spectra_tree_nodes_controlstructures_native_IfStatement
 {
-stabilitytest_Nova_PolymorphicSubClass_native_Nova_construct PolymorphicSubClass;
-} stabilitytest_native_PolymorphicSubClass;
+spectra_tree_nodes_controlstructures_Nova_IfStatement_native_Nova_construct IfStatement;
+} spectra_tree_nodes_controlstructures_native_IfStatement;
 
-typedef stabilitytest_Nova_PolymorphicSubClass* (*stabilitytest_Nova_PolymorphicSuperClass_native_Nova_giveBirth)(stabilitytest_Nova_PolymorphicSuperClass*, nova_exception_Nova_ExceptionData*);
-typedef stabilitytest_Nova_PolymorphicSuperClass* (*stabilitytest_Nova_PolymorphicSuperClass_native_Nova_construct)(stabilitytest_Nova_PolymorphicSuperClass*, nova_exception_Nova_ExceptionData*);
+typedef spectra_tree_nodes_controlstructures_loops_Nova_ForEachLoop* (*spectra_tree_nodes_controlstructures_loops_Nova_ForEachLoop_native_Nova_construct)(spectra_tree_nodes_controlstructures_loops_Nova_ForEachLoop*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*);
 
-typedef struct stabilitytest_native_PolymorphicSuperClass
+typedef struct spectra_tree_nodes_controlstructures_loops_native_ForEachLoop
 {
-stabilitytest_Nova_PolymorphicSuperClass_native_Nova_giveBirth giveBirth;
-stabilitytest_Nova_PolymorphicSuperClass_native_Nova_construct PolymorphicSuperClass;
-} stabilitytest_native_PolymorphicSuperClass;
+spectra_tree_nodes_controlstructures_loops_Nova_ForEachLoop_native_Nova_construct ForEachLoop;
+} spectra_tree_nodes_controlstructures_loops_native_ForEachLoop;
 
-typedef stabilitytest_Nova_PolymorphismStability* (*stabilitytest_Nova_PolymorphismStability_native_Nova_construct)(stabilitytest_Nova_PolymorphismStability*, nova_exception_Nova_ExceptionData*, stabilitytest_Nova_StabilityTest*);
+typedef spectra_tree_nodes_controlstructures_loops_Nova_Loop* (*spectra_tree_nodes_controlstructures_loops_Nova_Loop_native_static_Nova_parse)(spectra_tree_nodes_controlstructures_loops_Nova_Loop*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*, int);
+typedef spectra_tree_nodes_controlstructures_loops_Nova_Loop* (*spectra_tree_nodes_controlstructures_loops_Nova_Loop_native_Nova_construct)(spectra_tree_nodes_controlstructures_loops_Nova_Loop*, nova_exception_Nova_ExceptionData*);
 
-typedef struct stabilitytest_native_PolymorphismStability
+typedef struct spectra_tree_nodes_controlstructures_loops_native_Loop
 {
-stabilitytest_Nova_PolymorphismStability_native_Nova_construct PolymorphismStability;
-} stabilitytest_native_PolymorphismStability;
+spectra_tree_nodes_controlstructures_loops_Nova_Loop_native_Nova_construct Loop;
+} spectra_tree_nodes_controlstructures_loops_native_Loop;
 
-typedef stabilitytest_Nova_RegexStability* (*stabilitytest_Nova_RegexStability_native_Nova_construct)(stabilitytest_Nova_RegexStability*, nova_exception_Nova_ExceptionData*, stabilitytest_Nova_StabilityTest*);
+typedef spectra_tree_nodes_controlstructures_loops_Nova_WhileLoop* (*spectra_tree_nodes_controlstructures_loops_Nova_WhileLoop_native_Nova_construct)(spectra_tree_nodes_controlstructures_loops_Nova_WhileLoop*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*);
 
-typedef struct stabilitytest_native_RegexStability
+typedef struct spectra_tree_nodes_controlstructures_loops_native_WhileLoop
 {
-stabilitytest_Nova_RegexStability_native_Nova_construct RegexStability;
-} stabilitytest_native_RegexStability;
+spectra_tree_nodes_controlstructures_loops_Nova_WhileLoop_native_Nova_construct WhileLoop;
+} spectra_tree_nodes_controlstructures_loops_native_WhileLoop;
 
-typedef stabilitytest_Nova_StabilityExceptionHandler* (*stabilitytest_Nova_StabilityExceptionHandler_native_Nova_construct)(stabilitytest_Nova_StabilityExceptionHandler*, nova_exception_Nova_ExceptionData*, stabilitytest_Nova_StabilityTest*);
+typedef spectra_tree_nodes_exceptionhandling_Nova_Catch* (*spectra_tree_nodes_exceptionhandling_Nova_Catch_native_static_Nova_parse)(spectra_tree_nodes_exceptionhandling_Nova_Catch*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*, int);
+typedef nova_Nova_String* (*spectra_tree_nodes_exceptionhandling_Nova_Catch_native_Nova_writeException)(spectra_tree_nodes_exceptionhandling_Nova_Catch*, nova_exception_Nova_ExceptionData*);
+typedef spectra_tree_nodes_exceptionhandling_Nova_Catch* (*spectra_tree_nodes_exceptionhandling_Nova_Catch_native_Nova_construct)(spectra_tree_nodes_exceptionhandling_Nova_Catch*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*);
 
-typedef struct stabilitytest_native_StabilityExceptionHandler
+typedef struct spectra_tree_nodes_exceptionhandling_native_Catch
 {
-stabilitytest_Nova_StabilityExceptionHandler_native_Nova_construct StabilityExceptionHandler;
-} stabilitytest_native_StabilityExceptionHandler;
+spectra_tree_nodes_exceptionhandling_Nova_Catch_native_Nova_writeException writeException;
+spectra_tree_nodes_exceptionhandling_Nova_Catch_native_Nova_construct Catch;
+} spectra_tree_nodes_exceptionhandling_native_Catch;
 
-typedef void (*stabilitytest_Nova_StabilityTest_native_static_Nova_main)(stabilitytest_Nova_StabilityTest*, nova_exception_Nova_ExceptionData*, nova_datastruct_list_Nova_Array*);
-typedef void (*stabilitytest_Nova_StabilityTest_native_Nova_fail)(stabilitytest_Nova_StabilityTest*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, int);
-typedef stabilitytest_Nova_StabilityTest* (*stabilitytest_Nova_StabilityTest_native_Nova_construct)(stabilitytest_Nova_StabilityTest*, nova_exception_Nova_ExceptionData*, stabilitytest_Nova_StabilityTest*);
+typedef spectra_tree_nodes_exceptionhandling_Nova_ExceptionHandler* (*spectra_tree_nodes_exceptionhandling_Nova_ExceptionHandler_native_Nova_construct)(spectra_tree_nodes_exceptionhandling_Nova_ExceptionHandler*, nova_exception_Nova_ExceptionData*);
 
-typedef struct stabilitytest_native_StabilityTest
+typedef struct spectra_tree_nodes_exceptionhandling_native_ExceptionHandler
 {
-stabilitytest_Nova_StabilityTest_native_Nova_fail fail;
-stabilitytest_Nova_StabilityTest_native_Nova_construct StabilityTest;
-} stabilitytest_native_StabilityTest;
+spectra_tree_nodes_exceptionhandling_Nova_ExceptionHandler_native_Nova_construct ExceptionHandler;
+} spectra_tree_nodes_exceptionhandling_native_ExceptionHandler;
 
-typedef void (*stabilitytest_Nova_StabilityTestCase_native_Nova_test)(stabilitytest_Nova_StabilityTestCase*, nova_exception_Nova_ExceptionData*);
-typedef stabilitytest_Nova_StabilityTestCase* (*stabilitytest_Nova_StabilityTestCase_native_Nova_construct)(stabilitytest_Nova_StabilityTestCase*, nova_exception_Nova_ExceptionData*, stabilitytest_Nova_StabilityTest*);
+typedef spectra_tree_nodes_exceptionhandling_Nova_Throw* (*spectra_tree_nodes_exceptionhandling_Nova_Throw_native_static_Nova_parse)(spectra_tree_nodes_exceptionhandling_Nova_Throw*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*, int);
+typedef spectra_tree_nodes_exceptionhandling_Nova_Throw* (*spectra_tree_nodes_exceptionhandling_Nova_Throw_native_Nova_construct)(spectra_tree_nodes_exceptionhandling_Nova_Throw*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*);
 
-typedef struct stabilitytest_native_StabilityTestCase
+typedef struct spectra_tree_nodes_exceptionhandling_native_Throw
 {
-stabilitytest_Nova_StabilityTestCase_native_Nova_test test;
-stabilitytest_Nova_StabilityTestCase_native_Nova_construct StabilityTestCase;
-} stabilitytest_native_StabilityTestCase;
+spectra_tree_nodes_exceptionhandling_Nova_Throw_native_Nova_construct Throw;
+} spectra_tree_nodes_exceptionhandling_native_Throw;
 
-typedef stabilitytest_Nova_StabilityTestException* (*stabilitytest_Nova_StabilityTestException_native_Nova_construct)(stabilitytest_Nova_StabilityTestException*, nova_exception_Nova_ExceptionData*);
+typedef spectra_tree_nodes_exceptionhandling_Nova_Try* (*spectra_tree_nodes_exceptionhandling_Nova_Try_native_static_Nova_parse)(spectra_tree_nodes_exceptionhandling_Nova_Try*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*, int);
+typedef spectra_tree_nodes_exceptionhandling_Nova_Try* (*spectra_tree_nodes_exceptionhandling_Nova_Try_native_Nova_construct)(spectra_tree_nodes_exceptionhandling_Nova_Try*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*);
 
-typedef struct stabilitytest_native_StabilityTestException
+typedef struct spectra_tree_nodes_exceptionhandling_native_Try
 {
-stabilitytest_Nova_StabilityTestException_native_Nova_construct StabilityTestException;
-} stabilitytest_native_StabilityTestException;
+spectra_tree_nodes_exceptionhandling_Nova_Try_native_Nova_construct Try;
+} spectra_tree_nodes_exceptionhandling_native_Try;
 
-typedef stabilitytest_Nova_StaticImportStability* (*stabilitytest_Nova_StaticImportStability_native_Nova_construct)(stabilitytest_Nova_StaticImportStability*, nova_exception_Nova_ExceptionData*, stabilitytest_Nova_StabilityTest*);
+typedef spectra_tree_nodes_functions_Nova_AccessorFunction* (*spectra_tree_nodes_functions_Nova_AccessorFunction_native_Nova_construct)(spectra_tree_nodes_functions_Nova_AccessorFunction*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*);
 
-typedef struct stabilitytest_native_StaticImportStability
+typedef struct spectra_tree_nodes_functions_native_AccessorFunction
 {
-stabilitytest_Nova_StaticImportStability_native_Nova_construct StaticImportStability;
-} stabilitytest_native_StaticImportStability;
+spectra_tree_nodes_functions_Nova_AccessorFunction_native_Nova_construct AccessorFunction;
+} spectra_tree_nodes_functions_native_AccessorFunction;
 
-typedef stabilitytest_Nova_SyntaxStability* (*stabilitytest_Nova_SyntaxStability_native_Nova_construct)(stabilitytest_Nova_SyntaxStability*, nova_exception_Nova_ExceptionData*, stabilitytest_Nova_StabilityTest*);
+typedef nova_Nova_String* (*spectra_tree_nodes_functions_Nova_ArrayInstantiation_native_Nova_writeDimensions)(spectra_tree_nodes_functions_Nova_ArrayInstantiation*, nova_exception_Nova_ExceptionData*);
+typedef spectra_tree_nodes_functions_Nova_ArrayInstantiation* (*spectra_tree_nodes_functions_Nova_ArrayInstantiation_native_Nova_construct)(spectra_tree_nodes_functions_Nova_ArrayInstantiation*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*);
 
-typedef struct stabilitytest_native_SyntaxStability
+typedef struct spectra_tree_nodes_functions_native_ArrayInstantiation
 {
-stabilitytest_Nova_SyntaxStability_native_Nova_construct SyntaxStability;
-} stabilitytest_native_SyntaxStability;
+spectra_tree_nodes_functions_Nova_ArrayInstantiation_native_Nova_writeDimensions writeDimensions;
+spectra_tree_nodes_functions_Nova_ArrayInstantiation_native_Nova_construct ArrayInstantiation;
+} spectra_tree_nodes_functions_native_ArrayInstantiation;
 
-typedef stabilitytest_Nova_ThreadImplementation* (*stabilitytest_Nova_ThreadImplementation_native_Nova_construct)(stabilitytest_Nova_ThreadImplementation*, nova_exception_Nova_ExceptionData*, int, int);
+typedef nova_Nova_String* (*spectra_tree_nodes_functions_Nova_BodyFunction_native_Nova_writeBody)(spectra_tree_nodes_functions_Nova_BodyFunction*, nova_exception_Nova_ExceptionData*);
+typedef spectra_tree_nodes_functions_Nova_BodyFunction* (*spectra_tree_nodes_functions_Nova_BodyFunction_native_Nova_construct)(spectra_tree_nodes_functions_Nova_BodyFunction*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*);
 
-typedef struct stabilitytest_native_ThreadImplementation
+typedef struct spectra_tree_nodes_functions_native_BodyFunction
 {
-stabilitytest_Nova_ThreadImplementation_native_Nova_construct ThreadImplementation;
-} stabilitytest_native_ThreadImplementation;
+spectra_tree_nodes_functions_Nova_BodyFunction_native_Nova_writeBody writeBody;
+spectra_tree_nodes_functions_Nova_BodyFunction_native_Nova_construct BodyFunction;
+} spectra_tree_nodes_functions_native_BodyFunction;
 
-typedef stabilitytest_Nova_ThreadStability* (*stabilitytest_Nova_ThreadStability_native_Nova_construct)(stabilitytest_Nova_ThreadStability*, nova_exception_Nova_ExceptionData*, stabilitytest_Nova_StabilityTest*);
+typedef spectra_tree_nodes_functions_Nova_Parameter* (*spectra_tree_nodes_functions_Nova_CallableFunction_native_Nova_parseParameter)(spectra_tree_nodes_functions_Nova_CallableFunction*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, int);
+typedef char (*spectra_tree_nodes_functions_Nova_CallableFunction_native_Nova_parseParameterAndAnnotations)(spectra_tree_nodes_functions_Nova_CallableFunction*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, int);
+typedef char (*spectra_tree_nodes_functions_Nova_CallableFunction_native_Nova_parseParameters)(spectra_tree_nodes_functions_Nova_CallableFunction*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, int);
+typedef char (*spectra_tree_nodes_functions_Nova_CallableFunction_native_Nova_compatibleArguments)(spectra_tree_nodes_functions_Nova_CallableFunction*, nova_exception_Nova_ExceptionData*, nova_datastruct_list_Nova_Array*);
+typedef char (*spectra_tree_nodes_functions_Nova_CallableFunction_native_Nova_parseName)(spectra_tree_nodes_functions_Nova_CallableFunction*, nova_exception_Nova_ExceptionData*, nova_Nova_String*);
 
-typedef struct stabilitytest_native_ThreadStability
+typedef struct spectra_tree_nodes_functions_native_CallableFunction
 {
-stabilitytest_Nova_ThreadStability_native_Nova_construct ThreadStability;
-} stabilitytest_native_ThreadStability;
+spectra_tree_nodes_functions_Nova_CallableFunction_native_Nova_parseParameter parseParameter;
+spectra_tree_nodes_functions_Nova_CallableFunction_native_Nova_parseParameterAndAnnotations parseParameterAndAnnotations;
+spectra_tree_nodes_functions_Nova_CallableFunction_native_Nova_parseParameters parseParameters;
+spectra_tree_nodes_functions_Nova_CallableFunction_native_Nova_compatibleArguments compatibleArguments;
+spectra_tree_nodes_functions_Nova_CallableFunction_native_Nova_parseName parseName;
+} spectra_tree_nodes_functions_native_CallableFunction;
 
-typedef stabilitytest_Nova_TimeStability* (*stabilitytest_Nova_TimeStability_native_Nova_construct)(stabilitytest_Nova_TimeStability*, nova_exception_Nova_ExceptionData*, stabilitytest_Nova_StabilityTest*);
+typedef spectra_tree_nodes_functions_Nova_Constructor* (*spectra_tree_nodes_functions_Nova_Constructor_native_Nova_construct)(spectra_tree_nodes_functions_Nova_Constructor*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*);
 
-typedef struct stabilitytest_native_TimeStability
+typedef struct spectra_tree_nodes_functions_native_Constructor
 {
-stabilitytest_Nova_TimeStability_native_Nova_construct TimeStability;
-} stabilitytest_native_TimeStability;
+spectra_tree_nodes_functions_Nova_Constructor_native_Nova_construct Constructor;
+} spectra_tree_nodes_functions_native_Constructor;
 
-typedef stabilitytest_Nova_ToStringStability* (*stabilitytest_Nova_ToStringStability_native_Nova_construct)(stabilitytest_Nova_ToStringStability*, nova_exception_Nova_ExceptionData*, stabilitytest_Nova_StabilityTest*);
+typedef spectra_tree_nodes_functions_Nova_FunctionArgumentList* (*spectra_tree_nodes_functions_Nova_FunctionArgumentList_native_Nova_construct)(spectra_tree_nodes_functions_Nova_FunctionArgumentList*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*);
 
-typedef struct stabilitytest_native_ToStringStability
+typedef struct spectra_tree_nodes_functions_native_FunctionArgumentList
 {
-stabilitytest_Nova_ToStringStability_native_Nova_construct ToStringStability;
-} stabilitytest_native_ToStringStability;
+spectra_tree_nodes_functions_Nova_FunctionArgumentList_native_Nova_construct FunctionArgumentList;
+} spectra_tree_nodes_functions_native_FunctionArgumentList;
 
-typedef stabilitytest_Nova_UnstableException* (*stabilitytest_Nova_UnstableException_native_Nova_construct)(stabilitytest_Nova_UnstableException*, nova_exception_Nova_ExceptionData*, nova_Nova_String*);
+typedef spectra_tree_nodes_functions_Nova_FunctionCall* (*spectra_tree_nodes_functions_Nova_FunctionCall_native0_static_Nova_parse)(spectra_tree_nodes_functions_Nova_FunctionCall*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*, int, spectra_tree_nodes_functions_Nova_FunctionDeclaration*);
+typedef nova_Nova_String* (*spectra_tree_nodes_functions_Nova_FunctionCall_native_Nova_writeName)(spectra_tree_nodes_functions_Nova_FunctionCall*, nova_exception_Nova_ExceptionData*);
+typedef spectra_tree_nodes_functions_Nova_FunctionCall* (*spectra_tree_nodes_functions_Nova_FunctionCall_native_Nova_construct)(spectra_tree_nodes_functions_Nova_FunctionCall*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*);
 
-typedef struct stabilitytest_native_UnstableException
+typedef struct spectra_tree_nodes_functions_native_FunctionCall
 {
-stabilitytest_Nova_UnstableException_native_Nova_construct UnstableException;
-} stabilitytest_native_UnstableException;
+spectra_tree_nodes_functions_Nova_FunctionCall_native_Nova_writeName writeName;
+spectra_tree_nodes_functions_Nova_FunctionCall_native_Nova_construct FunctionCall;
+} spectra_tree_nodes_functions_native_FunctionCall;
+
+typedef char (*spectra_tree_nodes_functions_Nova_FunctionDeclaration_native_Nova_parseSignature)(spectra_tree_nodes_functions_Nova_FunctionDeclaration*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, char);
+typedef nova_Nova_String* (*spectra_tree_nodes_functions_Nova_FunctionDeclaration_native_Nova_writeReturnType)(spectra_tree_nodes_functions_Nova_FunctionDeclaration*, nova_exception_Nova_ExceptionData*);
+typedef nova_Nova_String* (*spectra_tree_nodes_functions_Nova_FunctionDeclaration_native_Nova_writeHeader)(spectra_tree_nodes_functions_Nova_FunctionDeclaration*, nova_exception_Nova_ExceptionData*);
+typedef spectra_tree_nodes_functions_Nova_FunctionDeclaration* (*spectra_tree_nodes_functions_Nova_FunctionDeclaration_native_Nova_construct)(spectra_tree_nodes_functions_Nova_FunctionDeclaration*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*);
+
+typedef struct spectra_tree_nodes_functions_native_FunctionDeclaration
+{
+spectra_tree_nodes_functions_Nova_FunctionDeclaration_native_Nova_parseSignature parseSignature;
+spectra_tree_nodes_functions_Nova_FunctionDeclaration_native_Nova_writeReturnType writeReturnType;
+spectra_tree_nodes_functions_Nova_FunctionDeclaration_native_Nova_writeHeader writeHeader;
+spectra_tree_nodes_functions_Nova_FunctionDeclaration_native_Nova_construct FunctionDeclaration;
+} spectra_tree_nodes_functions_native_FunctionDeclaration;
+
+typedef spectra_tree_nodes_functions_Nova_InitializationFunction* (*spectra_tree_nodes_functions_Nova_InitializationFunction_native_Nova_construct)(spectra_tree_nodes_functions_Nova_InitializationFunction*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_functions_Nova_Constructor*);
+
+typedef struct spectra_tree_nodes_functions_native_InitializationFunction
+{
+spectra_tree_nodes_functions_Nova_InitializationFunction_native_Nova_construct InitializationFunction;
+} spectra_tree_nodes_functions_native_InitializationFunction;
+
+typedef nova_Nova_String* (*spectra_tree_nodes_functions_Nova_Instantiation_native_Nova_writeObjectNotation)(spectra_tree_nodes_functions_Nova_Instantiation*, nova_exception_Nova_ExceptionData*);
+typedef spectra_tree_nodes_functions_Nova_Instantiation* (*spectra_tree_nodes_functions_Nova_Instantiation_native_Nova_construct)(spectra_tree_nodes_functions_Nova_Instantiation*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*);
+
+typedef struct spectra_tree_nodes_functions_native_Instantiation
+{
+spectra_tree_nodes_functions_Nova_Instantiation_native_Nova_writeObjectNotation writeObjectNotation;
+spectra_tree_nodes_functions_Nova_Instantiation_native_Nova_construct Instantiation;
+} spectra_tree_nodes_functions_native_Instantiation;
+
+typedef spectra_tree_nodes_functions_Nova_MutatorFunction* (*spectra_tree_nodes_functions_Nova_MutatorFunction_native_Nova_construct)(spectra_tree_nodes_functions_Nova_MutatorFunction*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*);
+
+typedef struct spectra_tree_nodes_functions_native_MutatorFunction
+{
+spectra_tree_nodes_functions_Nova_MutatorFunction_native_Nova_construct MutatorFunction;
+} spectra_tree_nodes_functions_native_MutatorFunction;
+
+typedef nova_Nova_String* (*spectra_tree_nodes_functions_Nova_ObjectNotation_native_Nova_writeChildren)(spectra_tree_nodes_functions_Nova_ObjectNotation*, nova_exception_Nova_ExceptionData*);
+typedef spectra_tree_nodes_functions_Nova_ObjectNotation* (*spectra_tree_nodes_functions_Nova_ObjectNotation_native_Nova_construct)(spectra_tree_nodes_functions_Nova_ObjectNotation*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*);
+
+typedef struct spectra_tree_nodes_functions_native_ObjectNotation
+{
+spectra_tree_nodes_functions_Nova_ObjectNotation_native_Nova_writeChildren writeChildren;
+spectra_tree_nodes_functions_Nova_ObjectNotation_native_Nova_construct ObjectNotation;
+} spectra_tree_nodes_functions_native_ObjectNotation;
+
+typedef spectra_tree_nodes_functions_Nova_ObjectNotationProperty* (*spectra_tree_nodes_functions_Nova_ObjectNotationProperty_native_Nova_construct)(spectra_tree_nodes_functions_Nova_ObjectNotationProperty*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*);
+
+typedef struct spectra_tree_nodes_functions_native_ObjectNotationProperty
+{
+spectra_tree_nodes_functions_Nova_ObjectNotationProperty_native_Nova_construct ObjectNotationProperty;
+} spectra_tree_nodes_functions_native_ObjectNotationProperty;
+
+typedef spectra_tree_nodes_functions_Nova_Parameter* (*spectra_tree_nodes_functions_Nova_Parameter_native_Nova_construct)(spectra_tree_nodes_functions_Nova_Parameter*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*);
+
+typedef struct spectra_tree_nodes_functions_native_Parameter
+{
+spectra_tree_nodes_functions_Nova_Parameter_native_Nova_construct Parameter;
+} spectra_tree_nodes_functions_native_Parameter;
+
+typedef spectra_tree_nodes_functions_Nova_Parameter* (*spectra_tree_nodes_functions_Nova_ParameterList_native_Nova_get)(spectra_tree_nodes_functions_Nova_ParameterList*, nova_exception_Nova_ExceptionData*, int);
+typedef spectra_tree_nodes_functions_Nova_Parameter* (*spectra_tree_nodes_functions_Nova_ParameterList_native_Nova_set)(spectra_tree_nodes_functions_Nova_ParameterList*, nova_exception_Nova_ExceptionData*, int, spectra_tree_nodes_functions_Nova_Parameter*);
+typedef spectra_tree_nodes_functions_Nova_ParameterList* (*spectra_tree_nodes_functions_Nova_ParameterList_native_Nova_construct)(spectra_tree_nodes_functions_Nova_ParameterList*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*);
+
+typedef struct spectra_tree_nodes_functions_native_ParameterList
+{
+spectra_tree_nodes_functions_Nova_ParameterList_native_Nova_get get;
+spectra_tree_nodes_functions_Nova_ParameterList_native_Nova_set set;
+spectra_tree_nodes_functions_Nova_ParameterList_native_Nova_construct ParameterList;
+} spectra_tree_nodes_functions_native_ParameterList;
+
+typedef spectra_tree_nodes_functions_Nova_PropertyFunction* (*spectra_tree_nodes_functions_Nova_PropertyFunction_native_Nova_construct)(spectra_tree_nodes_functions_Nova_PropertyFunction*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*);
+
+typedef struct spectra_tree_nodes_functions_native_PropertyFunction
+{
+spectra_tree_nodes_functions_Nova_PropertyFunction_native_Nova_construct PropertyFunction;
+} spectra_tree_nodes_functions_native_PropertyFunction;
+
+typedef spectra_tree_nodes_functions_closures_Nova_ClosureContext* (*spectra_tree_nodes_functions_closures_Nova_ClosureContext_native_Nova_construct)(spectra_tree_nodes_functions_closures_Nova_ClosureContext*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*);
+
+typedef struct spectra_tree_nodes_functions_closures_native_ClosureContext
+{
+spectra_tree_nodes_functions_closures_Nova_ClosureContext_native_Nova_construct ClosureContext;
+} spectra_tree_nodes_functions_closures_native_ClosureContext;
+
+typedef spectra_tree_nodes_functions_closures_Nova_ClosureDeclaration* (*spectra_tree_nodes_functions_closures_Nova_ClosureDeclaration_native_Nova_construct)(spectra_tree_nodes_functions_closures_Nova_ClosureDeclaration*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*);
+
+typedef struct spectra_tree_nodes_functions_closures_native_ClosureDeclaration
+{
+spectra_tree_nodes_functions_closures_Nova_ClosureDeclaration_native_Nova_construct ClosureDeclaration;
+} spectra_tree_nodes_functions_closures_native_ClosureDeclaration;
+
+typedef spectra_tree_nodes_functions_closures_Nova_ClosureParameter* (*spectra_tree_nodes_functions_closures_Nova_ClosureParameter_native_Nova_construct)(spectra_tree_nodes_functions_closures_Nova_ClosureParameter*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*);
+
+typedef struct spectra_tree_nodes_functions_closures_native_ClosureParameter
+{
+spectra_tree_nodes_functions_closures_Nova_ClosureParameter_native_Nova_construct ClosureParameter;
+} spectra_tree_nodes_functions_closures_native_ClosureParameter;
+
+typedef nova_Nova_String* (*spectra_tree_nodes_functions_closures_Nova_LambdaExpression_native_Nova_writeParameters)(spectra_tree_nodes_functions_closures_Nova_LambdaExpression*, nova_exception_Nova_ExceptionData*);
+typedef spectra_tree_nodes_functions_closures_Nova_LambdaExpression* (*spectra_tree_nodes_functions_closures_Nova_LambdaExpression_native_Nova_construct)(spectra_tree_nodes_functions_closures_Nova_LambdaExpression*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*);
+
+typedef struct spectra_tree_nodes_functions_closures_native_LambdaExpression
+{
+spectra_tree_nodes_functions_closures_Nova_LambdaExpression_native_Nova_writeParameters writeParameters;
+spectra_tree_nodes_functions_closures_Nova_LambdaExpression_native_Nova_construct LambdaExpression;
+} spectra_tree_nodes_functions_closures_native_LambdaExpression;
+
+typedef spectra_tree_nodes_functions_closures_Nova_LambdaParameter* (*spectra_tree_nodes_functions_closures_Nova_LambdaParameter_native_Nova_construct)(spectra_tree_nodes_functions_closures_Nova_LambdaParameter*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*);
+
+typedef struct spectra_tree_nodes_functions_closures_native_LambdaParameter
+{
+spectra_tree_nodes_functions_closures_Nova_LambdaParameter_native_Nova_construct LambdaParameter;
+} spectra_tree_nodes_functions_closures_native_LambdaParameter;
+
+typedef spectra_tree_nodes_generics_Nova_GenericArgument* (*spectra_tree_nodes_generics_Nova_GenericArgument_native_Nova_construct)(spectra_tree_nodes_generics_Nova_GenericArgument*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*, nova_Nova_String*);
+
+typedef struct spectra_tree_nodes_generics_native_GenericArgument
+{
+spectra_tree_nodes_generics_Nova_GenericArgument_native_Nova_construct GenericArgument;
+} spectra_tree_nodes_generics_native_GenericArgument;
+
+typedef char (*spectra_tree_nodes_generics_Nova_GenericCompatible_native_Nova_parseGenericParameters)(spectra_tree_nodes_generics_Nova_GenericCompatible*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, int);
+typedef nova_Nova_String* (*spectra_tree_nodes_generics_Nova_GenericCompatible_native_Nova_writeGenericParameters)(spectra_tree_nodes_generics_Nova_GenericCompatible*, nova_exception_Nova_ExceptionData*);
+typedef spectra_tree_nodes_generics_Nova_GenericCompatible* (*spectra_tree_nodes_generics_Nova_GenericCompatible_native1_Nova_cloneTo)(spectra_tree_nodes_generics_Nova_GenericCompatible*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_generics_Nova_GenericCompatible*);
+
+typedef struct spectra_tree_nodes_generics_native_GenericCompatible
+{
+spectra_tree_nodes_generics_Nova_GenericCompatible_native_Nova_parseGenericParameters parseGenericParameters;
+spectra_tree_nodes_generics_Nova_GenericCompatible_native_Nova_writeGenericParameters writeGenericParameters;
+spectra_tree_nodes_generics_Nova_GenericCompatible_native1_Nova_cloneTo cloneTo__spectra_tree_nodes_generics_GenericCompatible;
+} spectra_tree_nodes_generics_native_GenericCompatible;
+
+typedef spectra_tree_nodes_generics_Nova_GenericParameter* (*spectra_tree_nodes_generics_Nova_GenericParameter_native_Nova_construct)(spectra_tree_nodes_generics_Nova_GenericParameter*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*, nova_Nova_String*);
+
+typedef struct spectra_tree_nodes_generics_native_GenericParameter
+{
+spectra_tree_nodes_generics_Nova_GenericParameter_native_Nova_construct GenericParameter;
+} spectra_tree_nodes_generics_native_GenericParameter;
+
+typedef spectra_tree_nodes_generics_Nova_GenericType* (*spectra_tree_nodes_generics_Nova_GenericType_native_Nova_construct)(spectra_tree_nodes_generics_Nova_GenericType*, nova_exception_Nova_ExceptionData*, nova_Nova_String*);
+
+typedef struct spectra_tree_nodes_generics_native_GenericType
+{
+spectra_tree_nodes_generics_Nova_GenericType_native_Nova_construct GenericType;
+} spectra_tree_nodes_generics_native_GenericType;
+
+typedef void (*spectra_tree_nodes_operations_Nova_Assignable_native_Nova_onAssigned)(spectra_tree_nodes_operations_Nova_Assignable*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Value*);
+typedef void (*spectra_tree_nodes_operations_Nova_Assignable_native_Nova_onAssignedTo)(spectra_tree_nodes_operations_Nova_Assignable*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_variables_Nova_VariableDeclaration*);
+
+typedef struct spectra_tree_nodes_operations_native_Assignable
+{
+spectra_tree_nodes_operations_Nova_Assignable_native_Nova_onAssigned onAssigned;
+spectra_tree_nodes_operations_Nova_Assignable_native_Nova_onAssignedTo onAssignedTo;
+} spectra_tree_nodes_operations_native_Assignable;
+
+typedef nova_Nova_String* (*spectra_tree_nodes_operations_Nova_Assignment_native_static_Nova_findAssigned)(spectra_tree_nodes_operations_Nova_Assignment*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, int);
+typedef nova_Nova_String* (*spectra_tree_nodes_operations_Nova_Assignment_native_static_Nova_findAssignment)(spectra_tree_nodes_operations_Nova_Assignment*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, int);
+typedef spectra_tree_nodes_operations_Nova_Assignment* (*spectra_tree_nodes_operations_Nova_Assignment_native_Nova_construct)(spectra_tree_nodes_operations_Nova_Assignment*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*);
+
+typedef struct spectra_tree_nodes_operations_native_Assignment
+{
+spectra_tree_nodes_operations_Nova_Assignment_native_Nova_construct Assignment;
+} spectra_tree_nodes_operations_native_Assignment;
+
+typedef spectra_tree_nodes_operations_Nova_ElvisOperation* (*spectra_tree_nodes_operations_Nova_ElvisOperation_native_Nova_construct)(spectra_tree_nodes_operations_Nova_ElvisOperation*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*);
+
+typedef struct spectra_tree_nodes_operations_native_ElvisOperation
+{
+spectra_tree_nodes_operations_Nova_ElvisOperation_native_Nova_construct ElvisOperation;
+} spectra_tree_nodes_operations_native_ElvisOperation;
+
+typedef spectra_tree_nodes_operations_Nova_Operation* (*spectra_tree_nodes_operations_Nova_Operation_native_Nova_construct)(spectra_tree_nodes_operations_Nova_Operation*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*);
+
+typedef struct spectra_tree_nodes_operations_native_Operation
+{
+spectra_tree_nodes_operations_Nova_Operation_native_Nova_construct Operation;
+} spectra_tree_nodes_operations_native_Operation;
+
+typedef spectra_tree_nodes_operations_Nova_Operator* (*spectra_tree_nodes_operations_Nova_Operator_native_Nova_construct)(spectra_tree_nodes_operations_Nova_Operator*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*, nova_Nova_String*);
+
+typedef struct spectra_tree_nodes_operations_native_Operator
+{
+spectra_tree_nodes_operations_Nova_Operator_native_Nova_construct Operator;
+} spectra_tree_nodes_operations_native_Operator;
+
+typedef spectra_tree_nodes_operations_Nova_TernaryOperation* (*spectra_tree_nodes_operations_Nova_TernaryOperation_native_Nova_construct)(spectra_tree_nodes_operations_Nova_TernaryOperation*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*);
+
+typedef struct spectra_tree_nodes_operations_native_TernaryOperation
+{
+spectra_tree_nodes_operations_Nova_TernaryOperation_native_Nova_construct TernaryOperation;
+} spectra_tree_nodes_operations_native_TernaryOperation;
+
+typedef spectra_tree_nodes_operations_Nova_UnaryOperation* (*spectra_tree_nodes_operations_Nova_UnaryOperation_native_Nova_construct)(spectra_tree_nodes_operations_Nova_UnaryOperation*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*);
+
+typedef struct spectra_tree_nodes_operations_native_UnaryOperation
+{
+spectra_tree_nodes_operations_Nova_UnaryOperation_native_Nova_construct UnaryOperation;
+} spectra_tree_nodes_operations_native_UnaryOperation;
+
+typedef spectra_tree_nodes_variables_Nova_ArrayBracketOverload* (*spectra_tree_nodes_variables_Nova_ArrayBracketOverload_native_static_Nova_parse)(spectra_tree_nodes_variables_Nova_ArrayBracketOverload*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*, int);
+typedef spectra_tree_nodes_variables_Nova_ArrayBracketOverload* (*spectra_tree_nodes_variables_Nova_ArrayBracketOverload_native_Nova_construct)(spectra_tree_nodes_variables_Nova_ArrayBracketOverload*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*);
+
+typedef struct spectra_tree_nodes_variables_native_ArrayBracketOverload
+{
+spectra_tree_nodes_variables_Nova_ArrayBracketOverload_native_Nova_construct ArrayBracketOverload;
+} spectra_tree_nodes_variables_native_ArrayBracketOverload;
+
+typedef nova_Nova_String* (*spectra_tree_nodes_variables_Nova_FieldDeclaration_native_Nova_writeInitializationValue)(spectra_tree_nodes_variables_Nova_FieldDeclaration*, nova_exception_Nova_ExceptionData*);
+typedef nova_Nova_String* (*spectra_tree_nodes_variables_Nova_FieldDeclaration_native_Nova_writeAccessorValue)(spectra_tree_nodes_variables_Nova_FieldDeclaration*, nova_exception_Nova_ExceptionData*);
+typedef spectra_tree_nodes_variables_Nova_FieldDeclaration* (*spectra_tree_nodes_variables_Nova_FieldDeclaration_native_Nova_construct)(spectra_tree_nodes_variables_Nova_FieldDeclaration*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*);
+
+typedef struct spectra_tree_nodes_variables_native_FieldDeclaration
+{
+spectra_tree_nodes_variables_Nova_FieldDeclaration_native_Nova_writeInitializationValue writeInitializationValue;
+spectra_tree_nodes_variables_Nova_FieldDeclaration_native_Nova_writeAccessorValue writeAccessorValue;
+spectra_tree_nodes_variables_Nova_FieldDeclaration_native_Nova_construct FieldDeclaration;
+} spectra_tree_nodes_variables_native_FieldDeclaration;
+
+typedef spectra_tree_nodes_variables_Nova_ImplicitDeclaration* (*spectra_tree_nodes_variables_Nova_ImplicitDeclaration_native_Nova_construct)(spectra_tree_nodes_variables_Nova_ImplicitDeclaration*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*);
+
+typedef struct spectra_tree_nodes_variables_native_ImplicitDeclaration
+{
+spectra_tree_nodes_variables_Nova_ImplicitDeclaration_native_Nova_construct ImplicitDeclaration;
+} spectra_tree_nodes_variables_native_ImplicitDeclaration;
+
+typedef nova_Nova_String* (*spectra_tree_nodes_variables_Nova_InstanceDeclaration_native_Nova_writeVisibility)(spectra_tree_nodes_variables_Nova_InstanceDeclaration*, nova_exception_Nova_ExceptionData*);
+typedef nova_Nova_String* (*spectra_tree_nodes_variables_Nova_InstanceDeclaration_native_Nova_writeStatic)(spectra_tree_nodes_variables_Nova_InstanceDeclaration*, nova_exception_Nova_ExceptionData*);
+typedef spectra_tree_nodes_variables_Nova_InstanceDeclaration* (*spectra_tree_nodes_variables_Nova_InstanceDeclaration_native_Nova_construct)(spectra_tree_nodes_variables_Nova_InstanceDeclaration*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*);
+
+typedef struct spectra_tree_nodes_variables_native_InstanceDeclaration
+{
+spectra_tree_nodes_variables_Nova_InstanceDeclaration_native_Nova_writeVisibility writeVisibility;
+spectra_tree_nodes_variables_Nova_InstanceDeclaration_native_Nova_writeStatic writeStatic;
+spectra_tree_nodes_variables_Nova_InstanceDeclaration_native_Nova_construct InstanceDeclaration;
+} spectra_tree_nodes_variables_native_InstanceDeclaration;
+
+typedef spectra_tree_nodes_variables_Nova_LocalDeclaration* (*spectra_tree_nodes_variables_Nova_LocalDeclaration_native_Nova_construct)(spectra_tree_nodes_variables_Nova_LocalDeclaration*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*);
+
+typedef struct spectra_tree_nodes_variables_native_LocalDeclaration
+{
+spectra_tree_nodes_variables_Nova_LocalDeclaration_native_Nova_construct LocalDeclaration;
+} spectra_tree_nodes_variables_native_LocalDeclaration;
+
+typedef spectra_tree_nodes_variables_Nova_Variable* (*spectra_tree_nodes_variables_Nova_Variable_native_static_Nova_findVariable)(spectra_tree_nodes_variables_Nova_Variable*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*);
+typedef spectra_tree_nodes_variables_Nova_Variable* (*spectra_tree_nodes_variables_Nova_Variable_native_Nova_construct)(spectra_tree_nodes_variables_Nova_Variable*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*, spectra_tree_nodes_variables_Nova_VariableDeclaration*);
+
+typedef struct spectra_tree_nodes_variables_native_Variable
+{
+spectra_tree_nodes_variables_Nova_Variable_native_Nova_construct Variable;
+} spectra_tree_nodes_variables_native_Variable;
+
+typedef char (*spectra_tree_nodes_variables_Nova_VariableDeclaration_native_Nova_parseModifier)(spectra_tree_nodes_variables_Nova_VariableDeclaration*, nova_exception_Nova_ExceptionData*, nova_Nova_String*);
+typedef char (*spectra_tree_nodes_variables_Nova_VariableDeclaration_native0_Nova_parseModifiers)(spectra_tree_nodes_variables_Nova_VariableDeclaration*, nova_exception_Nova_ExceptionData*, nova_Nova_String*);
+typedef char (*spectra_tree_nodes_variables_Nova_VariableDeclaration_native1_Nova_parseModifiers)(spectra_tree_nodes_variables_Nova_VariableDeclaration*, nova_exception_Nova_ExceptionData*, nova_datastruct_list_Nova_Array*);
+typedef nova_datastruct_list_Nova_Array* (*spectra_tree_nodes_variables_Nova_VariableDeclaration_native_Nova_getInvalidModifiers)(spectra_tree_nodes_variables_Nova_VariableDeclaration*, nova_exception_Nova_ExceptionData*, nova_Nova_String*);
+typedef nova_Nova_String* (*spectra_tree_nodes_variables_Nova_VariableDeclaration_native_Nova_writeModifiers)(spectra_tree_nodes_variables_Nova_VariableDeclaration*, nova_exception_Nova_ExceptionData*);
+typedef spectra_tree_nodes_variables_Nova_VariableDeclaration* (*spectra_tree_nodes_variables_Nova_VariableDeclaration_native_Nova_construct)(spectra_tree_nodes_variables_Nova_VariableDeclaration*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*);
+
+typedef struct spectra_tree_nodes_variables_native_VariableDeclaration
+{
+spectra_tree_nodes_variables_Nova_VariableDeclaration_native_Nova_parseModifier parseModifier;
+spectra_tree_nodes_variables_Nova_VariableDeclaration_native0_Nova_parseModifiers parseModifiers__nova_String;
+spectra_tree_nodes_variables_Nova_VariableDeclaration_native1_Nova_parseModifiers parseModifiers__nova_datastruct_list_Array;
+spectra_tree_nodes_variables_Nova_VariableDeclaration_native_Nova_getInvalidModifiers getInvalidModifiers;
+spectra_tree_nodes_variables_Nova_VariableDeclaration_native_Nova_writeModifiers writeModifiers;
+spectra_tree_nodes_variables_Nova_VariableDeclaration_native_Nova_construct VariableDeclaration;
+} spectra_tree_nodes_variables_native_VariableDeclaration;
+
+typedef nova_Nova_String* (*spectra_util_Nova_Bounds_native_Nova_extractString)(spectra_util_Nova_Bounds*, nova_exception_Nova_ExceptionData*, nova_Nova_String*);
+typedef nova_Nova_String* (*spectra_util_Nova_Bounds_native_Nova_extractPreString)(spectra_util_Nova_Bounds*, nova_exception_Nova_ExceptionData*, nova_Nova_String*);
+typedef nova_Nova_String* (*spectra_util_Nova_Bounds_native_Nova_extractPostString)(spectra_util_Nova_Bounds*, nova_exception_Nova_ExceptionData*, nova_Nova_String*);
+typedef nova_Nova_String* (*spectra_util_Nova_Bounds_native_Nova_trimString)(spectra_util_Nova_Bounds*, nova_exception_Nova_ExceptionData*, nova_Nova_String*);
+typedef spectra_util_Nova_Bounds* (*spectra_util_Nova_Bounds_native_Nova_invalidate)(spectra_util_Nova_Bounds*, nova_exception_Nova_ExceptionData*);
+typedef void (*spectra_util_Nova_Bounds_native_Nova_cloneTo)(spectra_util_Nova_Bounds*, nova_exception_Nova_ExceptionData*, spectra_util_Nova_Bounds*);
+typedef spectra_util_Nova_Bounds* (*spectra_util_Nova_Bounds_native_Nova_clone)(spectra_util_Nova_Bounds*, nova_exception_Nova_ExceptionData*);
+typedef spectra_util_Nova_Bounds* (*spectra_util_Nova_Bounds_native_Nova_construct)(spectra_util_Nova_Bounds*, nova_exception_Nova_ExceptionData*, int, int);
+
+typedef struct spectra_util_native_Bounds
+{
+spectra_util_Nova_Bounds_native_Nova_extractString extractString;
+spectra_util_Nova_Bounds_native_Nova_extractPreString extractPreString;
+spectra_util_Nova_Bounds_native_Nova_extractPostString extractPostString;
+spectra_util_Nova_Bounds_native_Nova_trimString trimString;
+spectra_util_Nova_Bounds_native_Nova_invalidate invalidate;
+spectra_util_Nova_Bounds_native_Nova_cloneTo cloneTo;
+spectra_util_Nova_Bounds_native_Nova_clone clone;
+spectra_util_Nova_Bounds_native_Nova_construct Bounds;
+} spectra_util_native_Bounds;
+
+typedef spectra_tree_Nova_StatementIterator* (*spectra_util_Nova_CompilerStringFunctions_native_Nova_getStatements)(nova_Nova_String*, nova_exception_Nova_ExceptionData*, nova_datastruct_list_Nova_Stack*);
+typedef char (*spectra_util_Nova_CompilerStringFunctions_native_Nova_containsAllWhitespaceAfter)(nova_Nova_String*, nova_exception_Nova_ExceptionData*, int, int);
+typedef nova_datastruct_Nova_Tuple2* (*spectra_util_Nova_CompilerStringFunctions_native_Nova_getArrayAccesses)(nova_Nova_String*, nova_exception_Nova_ExceptionData*);
+typedef nova_Nova_String* (*spectra_util_Nova_CompilerStringFunctions_native_Nova_substring)(nova_Nova_String*, nova_exception_Nova_ExceptionData*, spectra_util_Nova_Bounds*);
+typedef spectra_util_Nova_Bounds* (*spectra_util_Nova_CompilerStringFunctions_native0_Nova_nextWordBounds)(nova_Nova_String*, nova_exception_Nova_ExceptionData*, int);
+typedef char (*spectra_util_Nova_CompilerStringFunctions_native_Nova_containsWord)(nova_Nova_String*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, int);
+typedef int (*spectra_util_Nova_CompilerStringFunctions_native_Nova_nextWordIndex)(nova_Nova_String*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, int, int);
+typedef nova_Nova_String* (*spectra_util_Nova_CompilerStringFunctions_native_Nova_nextWord)(nova_Nova_String*, nova_exception_Nova_ExceptionData*, int, int, nova_Nova_String*);
+typedef char (*spectra_util_Nova_CompilerStringFunctions_native_Nova_nextNonWhitespaceChar)(nova_Nova_String*, nova_exception_Nova_ExceptionData*, int, int);
+typedef int (*spectra_util_Nova_CompilerStringFunctions_native_Nova_nextNonWhitespaceIndex)(nova_Nova_String*, nova_exception_Nova_ExceptionData*, int, int, int);
+typedef int (*spectra_util_Nova_CompilerStringFunctions_native_Nova_nextWhitespaceIndex)(nova_Nova_String*, nova_exception_Nova_ExceptionData*, int, int, int);
+typedef int (*spectra_util_Nova_CompilerStringFunctions_native_Nova_nextIndexThatDoesntContain)(nova_Nova_String*, nova_exception_Nova_ExceptionData*, nova_datastruct_list_Nova_CharArray*, int, int, int);
+typedef int (*spectra_util_Nova_CompilerStringFunctions_native_Nova_nextIndexThatContains)(nova_Nova_String*, nova_exception_Nova_ExceptionData*, nova_datastruct_list_Nova_CharArray*, int, int, int, int);
+typedef int (*spectra_util_Nova_CompilerStringFunctions_native_Nova_nextLetterIndex)(nova_Nova_String*, nova_exception_Nova_ExceptionData*, int, int, int, int);
+typedef char (*spectra_util_Nova_CompilerStringFunctions_native_Nova_isSurroundedByQuotes)(nova_Nova_String*, nova_exception_Nova_ExceptionData*);
+typedef nova_Nova_String* (*spectra_util_Nova_CompilerStringFunctions_native_Nova_removeSurroundingQuotes)(nova_Nova_String*, nova_exception_Nova_ExceptionData*);
+typedef char (*spectra_util_Nova_CompilerStringFunctions_native0_Nova_containsString)(nova_Nova_String*, nova_exception_Nova_ExceptionData*, nova_datastruct_list_Nova_Array*, int);
+typedef char (*spectra_util_Nova_CompilerStringFunctions_native1_Nova_containsString)(nova_Nova_String*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, int);
+typedef int (*spectra_util_Nova_CompilerStringFunctions_native_static_Nova_defaultCharacterCheck)(spectra_util_Nova_CompilerStringFunctions*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, char, int, int);
+typedef int (*spectra_util_Nova_CompilerStringFunctions_native_Nova_findEndingChar)(nova_Nova_String*, nova_exception_Nova_ExceptionData*, char, int, int, spectra_util_Nova_CompilerStringFunctions_closure1_Nova_advance spectra_util_Nova_CompilerStringFunctions_Nova_advance, void* spectra_util_Nova_CompilerStringFunctions_ref_Nova_advance, void* advance_context, int);
+typedef int (*spectra_util_Nova_CompilerStringFunctions_native_Nova_findEndingQuote)(nova_Nova_String*, nova_exception_Nova_ExceptionData*, int, int);
+typedef int (*spectra_util_Nova_CompilerStringFunctions_native0_Nova_findEndingMatch)(nova_Nova_String*, nova_exception_Nova_ExceptionData*, int, char, char, int, int);
+typedef int (*spectra_util_Nova_CompilerStringFunctions_native1_Nova_findEndingMatch)(nova_Nova_String*, nova_exception_Nova_ExceptionData*, int, nova_Nova_String*, nova_Nova_String*, int, int, int);
+typedef nova_datastruct_list_Nova_Array* (*spectra_util_Nova_CompilerStringFunctions_native_Nova_splitAtDotOperator)(nova_Nova_String*, nova_exception_Nova_ExceptionData*, nova_datastruct_list_Nova_Array*);
+typedef nova_datastruct_list_Nova_Array* (*spectra_util_Nova_CompilerStringFunctions_native_Nova_splitValues)(nova_Nova_String*, nova_exception_Nova_ExceptionData*);
+typedef nova_datastruct_list_Nova_Array* (*spectra_util_Nova_CompilerStringFunctions_native_Nova_splitAtCommas)(nova_Nova_String*, nova_exception_Nova_ExceptionData*, int, int);
+typedef nova_datastruct_list_Nova_IntArray* (*spectra_util_Nova_CompilerStringFunctions_native_Nova_findOperatorIndices)(nova_Nova_String*, nova_exception_Nova_ExceptionData*, nova_datastruct_list_Nova_Array*, int);
+typedef char (*spectra_util_Nova_CompilerStringFunctions_native0_Nova_isStrictlyOperator)(nova_Nova_String*, nova_exception_Nova_ExceptionData*, char, int);
+typedef char (*spectra_util_Nova_CompilerStringFunctions_native1_Nova_isStrictlyOperator)(nova_Nova_String*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, int);
+typedef int (*spectra_util_Nova_CompilerStringFunctions_native0_Nova_findOperatorOnTopLevel)(nova_Nova_String*, nova_exception_Nova_ExceptionData*, char, int, int);
+typedef int (*spectra_util_Nova_CompilerStringFunctions_native1_Nova_findOperatorOnTopLevel)(nova_Nova_String*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, int, int);
+typedef int (*spectra_util_Nova_CompilerStringFunctions_native0_Nova_findCharOnTopLevel)(nova_Nova_String*, nova_exception_Nova_ExceptionData*, char, int, int);
+typedef int (*spectra_util_Nova_CompilerStringFunctions_native1_Nova_findCharOnTopLevel)(nova_Nova_String*, nova_exception_Nova_ExceptionData*, nova_datastruct_list_Nova_CharArray*, int, int);
+typedef int (*spectra_util_Nova_CompilerStringFunctions_native_Nova_findWordOnTopLevel)(nova_Nova_String*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, int, int, int);
+typedef int (*spectra_util_Nova_CompilerStringFunctions_native0_Nova_findStringOnTopLevel)(nova_Nova_String*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, int, int, int);
+typedef int (*spectra_util_Nova_CompilerStringFunctions_native1_Nova_findStringOnTopLevel)(nova_Nova_String*, nova_exception_Nova_ExceptionData*, nova_datastruct_list_Nova_Array*, int, int, int);
+typedef int (*spectra_util_Nova_CompilerStringFunctions_native_Nova_calculateStatementEnd)(nova_Nova_String*, nova_exception_Nova_ExceptionData*, int, int);
+typedef int (*spectra_util_Nova_CompilerStringFunctions_native_Nova_calculateReturnValue)(nova_Nova_String*, nova_exception_Nova_ExceptionData*, int, int, int, int);
+typedef spectra_util_Nova_Bounds* (*spectra_util_Nova_CompilerStringFunctions_native1_Nova_nextWordBounds)(nova_Nova_String*, nova_exception_Nova_ExceptionData*, int, int);
+typedef nova_Nova_String* (*spectra_util_Nova_CompilerStringFunctions_native_Nova_findGroupedSymbols)(nova_Nova_String*, nova_exception_Nova_ExceptionData*, int, int);
+typedef nova_Nova_String* (*spectra_util_Nova_CompilerStringFunctions_native_Nova_findGroupedChars)(nova_Nova_String*, nova_exception_Nova_ExceptionData*, nova_datastruct_list_Nova_CharArray*, int, int);
+typedef char (*spectra_util_Nova_CompilerStringFunctions_native_Nova_checkStatementContinuation)(nova_Nova_String*, nova_exception_Nova_ExceptionData*, int, int);
+typedef char (*spectra_util_Nova_CompilerStringFunctions_native_static_Nova_validBounds)(spectra_util_Nova_CompilerStringFunctions*, nova_exception_Nova_ExceptionData*, spectra_util_Nova_Bounds*, int, int);
+typedef char (*spectra_util_Nova_CompilerStringFunctions_native_Nova_containsUnaryOperator)(nova_Nova_String*, nova_exception_Nova_ExceptionData*, int, int, int);
+typedef spectra_util_Nova_Bounds* (*spectra_util_Nova_CompilerStringFunctions_native_Nova_findStrings)(nova_Nova_String*, nova_exception_Nova_ExceptionData*, nova_datastruct_list_Nova_Array*, int, int, nova_datastruct_list_Nova_CharArray*);
+typedef nova_Nova_String* (*spectra_util_Nova_CompilerStringFunctions_native_Nova_searchGenericType)(nova_Nova_String*, nova_exception_Nova_ExceptionData*, int, int);
+typedef int (*spectra_util_Nova_CompilerStringFunctions_native_Nova_findDotOperatorIndex)(nova_Nova_String*, nova_exception_Nova_ExceptionData*, int);
+typedef nova_Nova_String* (*spectra_util_Nova_CompilerStringFunctions_native_Nova_formatIndentation)(nova_Nova_String*, nova_exception_Nova_ExceptionData*);
+
+typedef struct spectra_util_native_CompilerStringFunctions
+{
+spectra_util_Nova_CompilerStringFunctions_native_Nova_getStatements getStatements;
+spectra_util_Nova_CompilerStringFunctions_native_Nova_containsAllWhitespaceAfter containsAllWhitespaceAfter;
+spectra_util_Nova_CompilerStringFunctions_native_Nova_getArrayAccesses getArrayAccesses;
+spectra_util_Nova_CompilerStringFunctions_native_Nova_substring substring;
+spectra_util_Nova_CompilerStringFunctions_native0_Nova_nextWordBounds nextWordBounds__nova_primitive_number_Int;
+spectra_util_Nova_CompilerStringFunctions_native_Nova_containsWord containsWord;
+spectra_util_Nova_CompilerStringFunctions_native_Nova_nextWordIndex nextWordIndex;
+spectra_util_Nova_CompilerStringFunctions_native_Nova_nextWord nextWord;
+spectra_util_Nova_CompilerStringFunctions_native_Nova_nextNonWhitespaceChar nextNonWhitespaceChar;
+spectra_util_Nova_CompilerStringFunctions_native_Nova_nextNonWhitespaceIndex nextNonWhitespaceIndex;
+spectra_util_Nova_CompilerStringFunctions_native_Nova_nextWhitespaceIndex nextWhitespaceIndex;
+spectra_util_Nova_CompilerStringFunctions_native_Nova_nextIndexThatDoesntContain nextIndexThatDoesntContain;
+spectra_util_Nova_CompilerStringFunctions_native_Nova_nextIndexThatContains nextIndexThatContains;
+spectra_util_Nova_CompilerStringFunctions_native_Nova_nextLetterIndex nextLetterIndex;
+spectra_util_Nova_CompilerStringFunctions_native_Nova_isSurroundedByQuotes isSurroundedByQuotes;
+spectra_util_Nova_CompilerStringFunctions_native_Nova_removeSurroundingQuotes removeSurroundingQuotes;
+spectra_util_Nova_CompilerStringFunctions_native0_Nova_containsString containsString__nova_datastruct_list_Array__nova_primitive_number_Int;
+spectra_util_Nova_CompilerStringFunctions_native1_Nova_containsString containsString__nova_String__nova_primitive_number_Int;
+spectra_util_Nova_CompilerStringFunctions_native_Nova_findEndingChar findEndingChar;
+spectra_util_Nova_CompilerStringFunctions_native_Nova_findEndingQuote findEndingQuote;
+spectra_util_Nova_CompilerStringFunctions_native0_Nova_findEndingMatch findEndingMatch__nova_primitive_number_Int__nova_primitive_number_Char__nova_primitive_number_Char__nova_primitive_number_Int__nova_primitive_number_Char;
+spectra_util_Nova_CompilerStringFunctions_native1_Nova_findEndingMatch findEndingMatch__nova_primitive_number_Int__nova_String__nova_String__nova_primitive_number_Int__nova_primitive_number_Char__nova_primitive_number_Int;
+spectra_util_Nova_CompilerStringFunctions_native_Nova_splitAtDotOperator splitAtDotOperator;
+spectra_util_Nova_CompilerStringFunctions_native_Nova_splitValues splitValues;
+spectra_util_Nova_CompilerStringFunctions_native_Nova_splitAtCommas splitAtCommas;
+spectra_util_Nova_CompilerStringFunctions_native_Nova_findOperatorIndices findOperatorIndices;
+spectra_util_Nova_CompilerStringFunctions_native0_Nova_isStrictlyOperator isStrictlyOperator__nova_primitive_number_Char__nova_primitive_number_Int;
+spectra_util_Nova_CompilerStringFunctions_native1_Nova_isStrictlyOperator isStrictlyOperator__nova_String__nova_primitive_number_Int;
+spectra_util_Nova_CompilerStringFunctions_native0_Nova_findOperatorOnTopLevel findOperatorOnTopLevel__nova_primitive_number_Char__nova_primitive_number_Int__nova_primitive_Bool;
+spectra_util_Nova_CompilerStringFunctions_native1_Nova_findOperatorOnTopLevel findOperatorOnTopLevel__nova_String__nova_primitive_number_Int__nova_primitive_Bool;
+spectra_util_Nova_CompilerStringFunctions_native0_Nova_findCharOnTopLevel findCharOnTopLevel__nova_primitive_number_Char__nova_primitive_number_Int__nova_primitive_Bool;
+spectra_util_Nova_CompilerStringFunctions_native1_Nova_findCharOnTopLevel findCharOnTopLevel__nova_datastruct_list_CharArray__nova_primitive_number_Int__nova_primitive_Bool;
+spectra_util_Nova_CompilerStringFunctions_native_Nova_findWordOnTopLevel findWordOnTopLevel;
+spectra_util_Nova_CompilerStringFunctions_native0_Nova_findStringOnTopLevel findStringOnTopLevel__nova_String__nova_primitive_number_Int__nova_primitive_Bool__nova_primitive_number_Int;
+spectra_util_Nova_CompilerStringFunctions_native1_Nova_findStringOnTopLevel findStringOnTopLevel__nova_datastruct_list_Array__nova_primitive_number_Int__nova_primitive_Bool__nova_primitive_number_Int;
+spectra_util_Nova_CompilerStringFunctions_native_Nova_calculateStatementEnd calculateStatementEnd;
+spectra_util_Nova_CompilerStringFunctions_native_Nova_calculateReturnValue calculateReturnValue;
+spectra_util_Nova_CompilerStringFunctions_native1_Nova_nextWordBounds nextWordBounds__nova_primitive_number_Int__nova_primitive_number_Int;
+spectra_util_Nova_CompilerStringFunctions_native_Nova_findGroupedSymbols findGroupedSymbols;
+spectra_util_Nova_CompilerStringFunctions_native_Nova_findGroupedChars findGroupedChars;
+spectra_util_Nova_CompilerStringFunctions_native_Nova_checkStatementContinuation checkStatementContinuation;
+spectra_util_Nova_CompilerStringFunctions_native_Nova_containsUnaryOperator containsUnaryOperator;
+spectra_util_Nova_CompilerStringFunctions_native_Nova_findStrings findStrings;
+spectra_util_Nova_CompilerStringFunctions_native_Nova_searchGenericType searchGenericType;
+spectra_util_Nova_CompilerStringFunctions_native_Nova_findDotOperatorIndex findDotOperatorIndex;
+spectra_util_Nova_CompilerStringFunctions_native_Nova_formatIndentation formatIndentation;
+} spectra_util_native_CompilerStringFunctions;
+
+typedef nova_Nova_String* (*spectra_util_Nova_FileUtils_native_static_Nova_formatPath)(spectra_util_Nova_FileUtils*, nova_exception_Nova_ExceptionData*, nova_Nova_String*);
+typedef nova_Nova_String* (*spectra_util_Nova_FileUtils_native_static_Nova_formAbsolutePath)(spectra_util_Nova_FileUtils*, nova_exception_Nova_ExceptionData*, nova_Nova_String*);
+typedef nova_Nova_String* (*spectra_util_Nova_FileUtils_native_static_Nova_escapeSpaces)(spectra_util_Nova_FileUtils*, nova_exception_Nova_ExceptionData*, nova_Nova_String*);
+typedef nova_Nova_String* (*spectra_util_Nova_FileUtils_native_static_Nova_getWorkingDirectoryPath)(spectra_util_Nova_FileUtils*, nova_exception_Nova_ExceptionData*);
+typedef spectra_util_Nova_FileUtils* (*spectra_util_Nova_FileUtils_native_Nova_construct)(spectra_util_Nova_FileUtils*, nova_exception_Nova_ExceptionData*);
+
+typedef struct spectra_util_native_FileUtils
+{
+spectra_util_Nova_FileUtils_native_Nova_construct FileUtils;
+} spectra_util_native_FileUtils;
+
+typedef void (*spectra_util_Nova_Location_native_Nova_setLineNumber)(spectra_util_Nova_Location*, nova_exception_Nova_ExceptionData*, int);
+typedef int (*spectra_util_Nova_Location_native_Nova_getStart)(spectra_util_Nova_Location*, nova_exception_Nova_ExceptionData*);
+typedef int (*spectra_util_Nova_Location_native_Nova_getEnd)(spectra_util_Nova_Location*, nova_exception_Nova_ExceptionData*);
+typedef void (*spectra_util_Nova_Location_native_Nova_setOffset)(spectra_util_Nova_Location*, nova_exception_Nova_ExceptionData*, int);
+typedef void (*spectra_util_Nova_Location_native_Nova_addOffset)(spectra_util_Nova_Location*, nova_exception_Nova_ExceptionData*, int);
+typedef void (*spectra_util_Nova_Location_native_Nova_subtractOffset)(spectra_util_Nova_Location*, nova_exception_Nova_ExceptionData*, int);
+typedef void (*spectra_util_Nova_Location_native0_Nova_setBounds)(spectra_util_Nova_Location*, nova_exception_Nova_ExceptionData*, nova_datastruct_Nova_Bounds*);
+typedef void (*spectra_util_Nova_Location_native1_Nova_setBounds)(spectra_util_Nova_Location*, nova_exception_Nova_ExceptionData*, int, int);
+typedef void (*spectra_util_Nova_Location_native0_Nova_addBounds)(spectra_util_Nova_Location*, nova_exception_Nova_ExceptionData*, int);
+typedef void (*spectra_util_Nova_Location_native_Nova_moveBounds)(spectra_util_Nova_Location*, nova_exception_Nova_ExceptionData*, int, int);
+typedef void (*spectra_util_Nova_Location_native0_Nova_subtractBounds)(spectra_util_Nova_Location*, nova_exception_Nova_ExceptionData*, int, int);
+typedef void (*spectra_util_Nova_Location_native1_Nova_subtractBounds)(spectra_util_Nova_Location*, nova_exception_Nova_ExceptionData*, int);
+typedef void (*spectra_util_Nova_Location_native1_Nova_addBounds)(spectra_util_Nova_Location*, nova_exception_Nova_ExceptionData*, int, int);
+typedef char (*spectra_util_Nova_Location_native_Nova_isValid)(spectra_util_Nova_Location*, nova_exception_Nova_ExceptionData*);
+typedef spectra_util_Nova_Location* (*spectra_util_Nova_Location_native_Nova_asNew)(spectra_util_Nova_Location*, nova_exception_Nova_ExceptionData*);
+typedef spectra_util_Nova_Location* (*spectra_util_Nova_Location_native0_Nova_construct)(spectra_util_Nova_Location*, nova_exception_Nova_ExceptionData*);
+typedef spectra_util_Nova_Location* (*spectra_util_Nova_Location_native1_Nova_construct)(spectra_util_Nova_Location*, nova_exception_Nova_ExceptionData*, spectra_util_Nova_Location*);
+typedef spectra_util_Nova_Location* (*spectra_util_Nova_Location_native2_Nova_construct)(spectra_util_Nova_Location*, nova_exception_Nova_ExceptionData*, int, int, int, int);
+
+typedef struct spectra_util_native_Location
+{
+spectra_util_Nova_Location_native_Nova_setLineNumber setLineNumber;
+spectra_util_Nova_Location_native_Nova_getStart getStart;
+spectra_util_Nova_Location_native_Nova_getEnd getEnd;
+spectra_util_Nova_Location_native_Nova_setOffset setOffset;
+spectra_util_Nova_Location_native_Nova_addOffset addOffset;
+spectra_util_Nova_Location_native_Nova_subtractOffset subtractOffset;
+spectra_util_Nova_Location_native0_Nova_setBounds setBounds__nova_datastruct_Bounds;
+spectra_util_Nova_Location_native1_Nova_setBounds setBounds__nova_primitive_number_Int__nova_primitive_number_Int;
+spectra_util_Nova_Location_native0_Nova_addBounds addBounds__nova_primitive_number_Int;
+spectra_util_Nova_Location_native_Nova_moveBounds moveBounds;
+spectra_util_Nova_Location_native0_Nova_subtractBounds subtractBounds__nova_primitive_number_Int__nova_primitive_number_Int;
+spectra_util_Nova_Location_native1_Nova_subtractBounds subtractBounds__nova_primitive_number_Int;
+spectra_util_Nova_Location_native1_Nova_addBounds addBounds__nova_primitive_number_Int__nova_primitive_number_Int;
+spectra_util_Nova_Location_native_Nova_isValid isValid;
+spectra_util_Nova_Location_native_Nova_asNew asNew;
+spectra_util_Nova_Location_native0_Nova_construct Location;
+spectra_util_Nova_Location_native1_Nova_construct Location__spectra_util_Location;
+spectra_util_Nova_Location_native2_Nova_construct Location__nova_primitive_number_Int__nova_primitive_number_Int__nova_primitive_number_Int__nova_primitive_number_Int;
+} spectra_util_native_Location;
+
+typedef spectra_util_Nova_OS* (*spectra_util_Nova_OS_nativefunc_Nova_construct)(spectra_util_Nova_OS*, nova_exception_Nova_ExceptionData*);
+
+typedef struct spectra_util_native_OS
+{
+spectra_util_Nova_OS_nativefunc_Nova_construct OS;
+} spectra_util_native_OS;
+
+typedef char (*spectra_util_Nova_SyntaxUtils_native_static_Nova_checkTypes)(spectra_util_Nova_SyntaxUtils*, nova_exception_Nova_ExceptionData*, nova_datastruct_list_Nova_Array*, nova_Nova_Class*);
+typedef spectra_util_Nova_SyntaxUtils* (*spectra_util_Nova_SyntaxUtils_native_Nova_construct)(spectra_util_Nova_SyntaxUtils*, nova_exception_Nova_ExceptionData*);
+
+typedef struct spectra_util_native_SyntaxUtils
+{
+spectra_util_Nova_SyntaxUtils_native_Nova_construct SyntaxUtils;
+} spectra_util_native_SyntaxUtils;
 
 
 typedef struct nova_env
@@ -2415,64 +3079,102 @@ nova_web_svg_no3_native_No3 nova_web_svg_no3_No3;
 nova_web_svg_no3_native_No3Node nova_web_svg_no3_No3Node;
 nova_web_svg_no3_native_No3Select nova_web_svg_no3_No3Select;
 nova_web_svg_no3_native_No3SelectAll nova_web_svg_no3_No3SelectAll;
-example_native_Animal example_Animal;
-example_native_ArrayDemo example_ArrayDemo;
-example_native_BodyBuilder example_BodyBuilder;
-example_native_ClosureDemo example_ClosureDemo;
-example_native_Dog example_Dog;
-example_native_ExceptionHandlingDemo example_ExceptionHandlingDemo;
-example_native_FileTest example_FileTest;
-example_native_GenericDemo example_GenericDemo;
-example_native_HashMapDemo example_HashMapDemo;
-example_native_HashSetDemo example_HashSetDemo;
-example_native_IntegerTest example_IntegerTest;
-example_native_Lab example_Lab;
-example_native_MathDemo example_MathDemo;
-example_native_NonWholeDivisionException example_NonWholeDivisionException;
-example_native_Person example_Person;
-example_native_Polygon example_Polygon;
-example_native_PolymorphismDemo example_PolymorphismDemo;
-example_native_QueueDemo example_QueueDemo;
-example_native_Spider example_Spider;
-example_native_Square example_Square;
-example_native_SvgChart example_SvgChart;
-example_native_SvgFractal example_SvgFractal;
-example_native_T1 example_T1;
-example_native_T2 example_T2;
-example_native_Test example_Test;
-example_native_ThreadDemo example_ThreadDemo;
-example_native_ThreadDemoImplementation example_ThreadDemoImplementation;
-example_ackermann_native_Ackermann example_ackermann_Ackermann;
-example_copy_native_Dog example_copy_Dog;
-example_database_native_DatabaseDemo example_database_DatabaseDemo;
-example_network_native_ClientDemo example_network_ClientDemo;
-example_network_native_ConnectionThread example_network_ConnectionThread;
-example_network_native_OutputThread example_network_OutputThread;
-example_network_native_ServerDemo example_network_ServerDemo;
-stabilitytest_native_AssignmentStability stabilitytest_AssignmentStability;
-stabilitytest_native_ClassWithProperties stabilitytest_ClassWithProperties;
-stabilitytest_native_ClientThread stabilitytest_ClientThread;
-stabilitytest_native_ClosureStability stabilitytest_ClosureStability;
-stabilitytest_native_ExceptionStability stabilitytest_ExceptionStability;
-stabilitytest_native_FileStability stabilitytest_FileStability;
-stabilitytest_native_LambdaStability stabilitytest_LambdaStability;
-stabilitytest_native_NetworkStability stabilitytest_NetworkStability;
-stabilitytest_native_Node stabilitytest_Node;
-stabilitytest_native_PolymorphicSubClass stabilitytest_PolymorphicSubClass;
-stabilitytest_native_PolymorphicSuperClass stabilitytest_PolymorphicSuperClass;
-stabilitytest_native_PolymorphismStability stabilitytest_PolymorphismStability;
-stabilitytest_native_RegexStability stabilitytest_RegexStability;
-stabilitytest_native_StabilityExceptionHandler stabilitytest_StabilityExceptionHandler;
-stabilitytest_native_StabilityTest stabilitytest_StabilityTest;
-stabilitytest_native_StabilityTestCase stabilitytest_StabilityTestCase;
-stabilitytest_native_StabilityTestException stabilitytest_StabilityTestException;
-stabilitytest_native_StaticImportStability stabilitytest_StaticImportStability;
-stabilitytest_native_SyntaxStability stabilitytest_SyntaxStability;
-stabilitytest_native_ThreadImplementation stabilitytest_ThreadImplementation;
-stabilitytest_native_ThreadStability stabilitytest_ThreadStability;
-stabilitytest_native_TimeStability stabilitytest_TimeStability;
-stabilitytest_native_ToStringStability stabilitytest_ToStringStability;
-stabilitytest_native_UnstableException stabilitytest_UnstableException;
+spectra_native_InvalidParseException spectra_InvalidParseException;
+spectra_native_Spectra spectra_Spectra;
+spectra_native_SyntaxErrorException spectra_SyntaxErrorException;
+spectra_native_SyntaxMessage spectra_SyntaxMessage;
+spectra_engines_native_CodeGeneratorEngine spectra_engines_CodeGeneratorEngine;
+spectra_error_native_UnimplementedOperationException spectra_error_UnimplementedOperationException;
+spectra_tree_native_AnnotationSearchResult spectra_tree_AnnotationSearchResult;
+spectra_tree_native_StatementIterator spectra_tree_StatementIterator;
+spectra_tree_native_SyntaxTree spectra_tree_SyntaxTree;
+spectra_tree_nodes_native_Abstractable spectra_tree_nodes_Abstractable;
+spectra_tree_nodes_native_Accessible spectra_tree_nodes_Accessible;
+spectra_tree_nodes_native_ArgumentList spectra_tree_nodes_ArgumentList;
+spectra_tree_nodes_native_ClassDeclaration spectra_tree_nodes_ClassDeclaration;
+spectra_tree_nodes_native_Identifier spectra_tree_nodes_Identifier;
+spectra_tree_nodes_native_Import spectra_tree_nodes_Import;
+spectra_tree_nodes_native_ImportList spectra_tree_nodes_ImportList;
+spectra_tree_nodes_native_InterfaceDeclaration spectra_tree_nodes_InterfaceDeclaration;
+spectra_tree_nodes_native_Listener spectra_tree_nodes_Listener;
+spectra_tree_nodes_native_Literal spectra_tree_nodes_Literal;
+spectra_tree_nodes_native_Node spectra_tree_nodes_Node;
+spectra_tree_nodes_native_NodeList spectra_tree_nodes_NodeList;
+spectra_tree_nodes_native_NovaFile spectra_tree_nodes_NovaFile;
+spectra_tree_nodes_native_NumericRange spectra_tree_nodes_NumericRange;
+spectra_tree_nodes_native_Package spectra_tree_nodes_Package;
+spectra_tree_nodes_native_PlaceholderValue spectra_tree_nodes_PlaceholderValue;
+spectra_tree_nodes_native_Priority spectra_tree_nodes_Priority;
+spectra_tree_nodes_native_Program spectra_tree_nodes_Program;
+spectra_tree_nodes_native_Return spectra_tree_nodes_Return;
+spectra_tree_nodes_native_Scope spectra_tree_nodes_Scope;
+spectra_tree_nodes_native_Skeleton spectra_tree_nodes_Skeleton;
+spectra_tree_nodes_native_StaticClassReference spectra_tree_nodes_StaticClassReference;
+spectra_tree_nodes_native_Type spectra_tree_nodes_Type;
+spectra_tree_nodes_native_ValidationResult spectra_tree_nodes_ValidationResult;
+spectra_tree_nodes_native_Value spectra_tree_nodes_Value;
+spectra_tree_nodes_annotations_native_Annotatable spectra_tree_nodes_annotations_Annotatable;
+spectra_tree_nodes_annotations_native_Annotation spectra_tree_nodes_annotations_Annotation;
+spectra_tree_nodes_annotations_native_Modifier spectra_tree_nodes_annotations_Modifier;
+spectra_tree_nodes_annotations_native_NativeAnnotation spectra_tree_nodes_annotations_NativeAnnotation;
+spectra_tree_nodes_annotations_native_OverrideAnnotation spectra_tree_nodes_annotations_OverrideAnnotation;
+spectra_tree_nodes_annotations_native_TargetAnnotation spectra_tree_nodes_annotations_TargetAnnotation;
+spectra_tree_nodes_arrays_native_ArrayAccess spectra_tree_nodes_arrays_ArrayAccess;
+spectra_tree_nodes_controlstructures_native_ControlStructure spectra_tree_nodes_controlstructures_ControlStructure;
+spectra_tree_nodes_controlstructures_native_ElseStatement spectra_tree_nodes_controlstructures_ElseStatement;
+spectra_tree_nodes_controlstructures_native_IfStatement spectra_tree_nodes_controlstructures_IfStatement;
+spectra_tree_nodes_controlstructures_loops_native_ForEachLoop spectra_tree_nodes_controlstructures_loops_ForEachLoop;
+spectra_tree_nodes_controlstructures_loops_native_Loop spectra_tree_nodes_controlstructures_loops_Loop;
+spectra_tree_nodes_controlstructures_loops_native_WhileLoop spectra_tree_nodes_controlstructures_loops_WhileLoop;
+spectra_tree_nodes_exceptionhandling_native_Catch spectra_tree_nodes_exceptionhandling_Catch;
+spectra_tree_nodes_exceptionhandling_native_ExceptionHandler spectra_tree_nodes_exceptionhandling_ExceptionHandler;
+spectra_tree_nodes_exceptionhandling_native_Throw spectra_tree_nodes_exceptionhandling_Throw;
+spectra_tree_nodes_exceptionhandling_native_Try spectra_tree_nodes_exceptionhandling_Try;
+spectra_tree_nodes_functions_native_AccessorFunction spectra_tree_nodes_functions_AccessorFunction;
+spectra_tree_nodes_functions_native_ArrayInstantiation spectra_tree_nodes_functions_ArrayInstantiation;
+spectra_tree_nodes_functions_native_BodyFunction spectra_tree_nodes_functions_BodyFunction;
+spectra_tree_nodes_functions_native_CallableFunction spectra_tree_nodes_functions_CallableFunction;
+spectra_tree_nodes_functions_native_Constructor spectra_tree_nodes_functions_Constructor;
+spectra_tree_nodes_functions_native_FunctionArgumentList spectra_tree_nodes_functions_FunctionArgumentList;
+spectra_tree_nodes_functions_native_FunctionCall spectra_tree_nodes_functions_FunctionCall;
+spectra_tree_nodes_functions_native_FunctionDeclaration spectra_tree_nodes_functions_FunctionDeclaration;
+spectra_tree_nodes_functions_native_InitializationFunction spectra_tree_nodes_functions_InitializationFunction;
+spectra_tree_nodes_functions_native_Instantiation spectra_tree_nodes_functions_Instantiation;
+spectra_tree_nodes_functions_native_MutatorFunction spectra_tree_nodes_functions_MutatorFunction;
+spectra_tree_nodes_functions_native_ObjectNotation spectra_tree_nodes_functions_ObjectNotation;
+spectra_tree_nodes_functions_native_ObjectNotationProperty spectra_tree_nodes_functions_ObjectNotationProperty;
+spectra_tree_nodes_functions_native_Parameter spectra_tree_nodes_functions_Parameter;
+spectra_tree_nodes_functions_native_ParameterList spectra_tree_nodes_functions_ParameterList;
+spectra_tree_nodes_functions_native_PropertyFunction spectra_tree_nodes_functions_PropertyFunction;
+spectra_tree_nodes_functions_closures_native_ClosureContext spectra_tree_nodes_functions_closures_ClosureContext;
+spectra_tree_nodes_functions_closures_native_ClosureDeclaration spectra_tree_nodes_functions_closures_ClosureDeclaration;
+spectra_tree_nodes_functions_closures_native_ClosureParameter spectra_tree_nodes_functions_closures_ClosureParameter;
+spectra_tree_nodes_functions_closures_native_LambdaExpression spectra_tree_nodes_functions_closures_LambdaExpression;
+spectra_tree_nodes_functions_closures_native_LambdaParameter spectra_tree_nodes_functions_closures_LambdaParameter;
+spectra_tree_nodes_generics_native_GenericArgument spectra_tree_nodes_generics_GenericArgument;
+spectra_tree_nodes_generics_native_GenericCompatible spectra_tree_nodes_generics_GenericCompatible;
+spectra_tree_nodes_generics_native_GenericParameter spectra_tree_nodes_generics_GenericParameter;
+spectra_tree_nodes_generics_native_GenericType spectra_tree_nodes_generics_GenericType;
+spectra_tree_nodes_operations_native_Assignable spectra_tree_nodes_operations_Assignable;
+spectra_tree_nodes_operations_native_Assignment spectra_tree_nodes_operations_Assignment;
+spectra_tree_nodes_operations_native_ElvisOperation spectra_tree_nodes_operations_ElvisOperation;
+spectra_tree_nodes_operations_native_Operation spectra_tree_nodes_operations_Operation;
+spectra_tree_nodes_operations_native_Operator spectra_tree_nodes_operations_Operator;
+spectra_tree_nodes_operations_native_TernaryOperation spectra_tree_nodes_operations_TernaryOperation;
+spectra_tree_nodes_operations_native_UnaryOperation spectra_tree_nodes_operations_UnaryOperation;
+spectra_tree_nodes_variables_native_ArrayBracketOverload spectra_tree_nodes_variables_ArrayBracketOverload;
+spectra_tree_nodes_variables_native_FieldDeclaration spectra_tree_nodes_variables_FieldDeclaration;
+spectra_tree_nodes_variables_native_ImplicitDeclaration spectra_tree_nodes_variables_ImplicitDeclaration;
+spectra_tree_nodes_variables_native_InstanceDeclaration spectra_tree_nodes_variables_InstanceDeclaration;
+spectra_tree_nodes_variables_native_LocalDeclaration spectra_tree_nodes_variables_LocalDeclaration;
+spectra_tree_nodes_variables_native_Variable spectra_tree_nodes_variables_Variable;
+spectra_tree_nodes_variables_native_VariableDeclaration spectra_tree_nodes_variables_VariableDeclaration;
+spectra_util_native_Bounds spectra_util_Bounds;
+spectra_util_native_CompilerStringFunctions spectra_util_CompilerStringFunctions;
+spectra_util_native_FileUtils spectra_util_FileUtils;
+spectra_util_native_Location spectra_util_Location;
+spectra_util_native_OS spectra_util_OS;
+spectra_util_native_SyntaxUtils spectra_util_SyntaxUtils;
 } nova_env;
 
 extern nova_env novaEnv;

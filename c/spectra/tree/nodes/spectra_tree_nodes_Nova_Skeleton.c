@@ -81,6 +81,7 @@ spectra_tree_nodes_Skeleton_Extension_VTable spectra_tree_nodes_Skeleton_Extensi
 		0,
 		0,
 		0,
+		0,
 		(char(*)(nova_operators_Nova_Equals*, nova_exception_Nova_ExceptionData*, nova_Nova_Object*))nova_Nova_Object_0_Nova_equals,
 		0,
 		0,

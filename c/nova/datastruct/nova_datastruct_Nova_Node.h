@@ -60,8 +60,8 @@ CCLASS_CLASS
 	nova_datastruct_Nova_Node, 
 	
 	nova_datastruct_Node_Extension_VTable* vtable;
-	nova_Nova_Object* nova_datastruct_Nova_Node_Nova_data;
 	nova_datastruct_list_Nova_Array* nova_datastruct_Nova_Node_Nova_children;
+	nova_Nova_Object* nova_datastruct_Nova_Node_Nova_data;
 )
 
 void nova_datastruct_Nova_Node_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData);
@@ -73,6 +73,8 @@ nova_datastruct_list_Nova_Array* nova_datastruct_Nova_Node_0_Nova_inorder(nova_d
 nova_datastruct_list_Nova_Array* nova_datastruct_Nova_Node_0_Nova_postorder(nova_datastruct_Nova_Node* this, nova_exception_Nova_ExceptionData* exceptionData);
 nova_datastruct_list_Nova_Array* nova_datastruct_Nova_Node_0_Nova_levelorder(nova_datastruct_Nova_Node* this, nova_exception_Nova_ExceptionData* exceptionData);
 nova_Nova_String* nova_datastruct_Nova_Node_Nova_toString(nova_datastruct_Nova_Node* this, nova_exception_Nova_ExceptionData* exceptionData);
+nova_datastruct_Nova_Node* nova_datastruct_Nova_Node_Nova_get(nova_datastruct_Nova_Node* this, nova_exception_Nova_ExceptionData* exceptionData, int index);
+nova_datastruct_Nova_Node* nova_datastruct_Nova_Node_Nova_set(nova_datastruct_Nova_Node* this, nova_exception_Nova_ExceptionData* exceptionData, int index, nova_datastruct_Nova_Node* value);
 void nova_datastruct_Nova_Node_Nova_super(nova_datastruct_Nova_Node* this, nova_exception_Nova_ExceptionData* exceptionData);
 
 #endif

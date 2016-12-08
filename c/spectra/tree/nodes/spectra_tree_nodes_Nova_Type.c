@@ -46,8 +46,8 @@ typedef struct
 } Context2;
 typedef struct
 {
-	/* Node parent */ spectra_tree_nodes_Nova_Node** spectra_tree_nodes_Nova_Type_Nova_parent;
-	/* Location location */ spectra_util_Nova_Location** spectra_tree_nodes_Nova_Type_Nova_location;
+	/* let Node parent */ spectra_tree_nodes_Nova_Node** spectra_tree_nodes_Nova_Type_Nova_parent;
+	/* let Location location */ spectra_util_Nova_Location** spectra_tree_nodes_Nova_Type_Nova_location;
 } Context3;
 typedef struct
 {
@@ -58,6 +58,7 @@ spectra_tree_nodes_Type_Extension_VTable spectra_tree_nodes_Type_Extension_VTabl
 {
 	0,
 	{
+		0,
 		0,
 		0,
 		0,
@@ -137,9 +138,9 @@ void spectra_tree_nodes_Nova_Type_Nova_destroy(spectra_tree_nodes_Nova_Type** th
 		return;
 	}
 	
-	nova_Nova_String_Nova_destroy(&(*this)->spectra_tree_nodes_Nova_Type_Nova_name, exceptionData);
 	
 	nova_datastruct_list_Nova_Array_Nova_destroy(&(*this)->spectra_tree_nodes_Nova_Type_Nova_genericArguments, exceptionData);
+	nova_Nova_String_Nova_destroy(&(*this)->spectra_tree_nodes_Nova_Type_Nova_name, exceptionData);
 	
 	NOVA_FREE(*this);
 }
@@ -295,7 +296,7 @@ nova_Nova_String* spectra_tree_nodes_Nova_Type_Nova_writeArray(spectra_tree_node
 
 nova_Nova_String* spectra_tree_nodes_Nova_Type_Nova_writeGenericParameters(spectra_tree_nodes_Nova_Type* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
-	return (nova_Nova_String*)(nova_datastruct_list_Nova_List_virtual_Accessor_Nova_count((nova_datastruct_list_Nova_List*)(this->spectra_tree_nodes_Nova_Type_Nova_genericArguments), exceptionData) > 0 ? nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)(nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("<"))), exceptionData, nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)((nova_datastruct_list_Nova_List_virtual_Nova_join((nova_datastruct_list_Nova_List*)(this->spectra_tree_nodes_Nova_Type_Nova_genericArguments), exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)(", "))))), exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)(">")))) : nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("")));
+	return (nova_Nova_String*)(nova_datastruct_list_Nova_List_virtual_Accessor1_Nova_count((nova_datastruct_list_Nova_List*)(this->spectra_tree_nodes_Nova_Type_Nova_genericArguments), exceptionData) > 0 ? nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)(nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("<"))), exceptionData, nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)((nova_datastruct_list_Nova_List_virtual_Nova_join((nova_datastruct_list_Nova_List*)(this->spectra_tree_nodes_Nova_Type_Nova_genericArguments), exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)(", "))))), exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)(">")))) : nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("")));
 }
 
 nova_Nova_String* spectra_tree_nodes_Nova_Type_Nova_toString(spectra_tree_nodes_Nova_Type* this, nova_exception_Nova_ExceptionData* exceptionData)
@@ -349,9 +350,9 @@ char spectra_tree_nodes_Nova_Type_Accessor_Nova_isGeneric(spectra_tree_nodes_Nov
 
 void spectra_tree_nodes_Nova_Type_Nova_super(spectra_tree_nodes_Nova_Type* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
-	this->spectra_tree_nodes_Nova_Type_Nova_name = (nova_Nova_String*)nova_null;
 	this->spectra_tree_nodes_Nova_Type_Nova_arrayDimensions = 0;
 	this->spectra_tree_nodes_Nova_Type_Nova_genericArguments = (nova_datastruct_list_Nova_Array*)nova_null;
+	this->spectra_tree_nodes_Nova_Type_Nova_name = (nova_Nova_String*)nova_null;
 	this->spectra_tree_nodes_Nova_Type_Nova_arrayDimensions = (int)(0);
 	this->spectra_tree_nodes_Nova_Type_Nova_genericArguments = nova_datastruct_list_Nova_Array_1_Nova_construct(0, exceptionData, 0, (intptr_t)nova_null);
 }

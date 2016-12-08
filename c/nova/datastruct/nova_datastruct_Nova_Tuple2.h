@@ -63,6 +63,7 @@ CCLASS_CLASS
 	
 	nova_datastruct_Tuple2_Extension_VTable* vtable;
 	nova_datastruct_list_Nova_Array* nova_datastruct_Nova_Tuple_Nova_items;
+	int nova_datastruct_Nova_Tuple_Nova_count;
 )
 
 void nova_datastruct_Nova_Tuple2_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData);

@@ -42,6 +42,7 @@ nova_datastruct_Tuple2_Extension_VTable nova_datastruct_Tuple2_Extension_VTable_
 	{
 		0,
 		(nova_datastruct_list_Nova_Iterator*(*)(nova_datastruct_list_Nova_Iterable*, nova_exception_Nova_ExceptionData*))nova_datastruct_Nova_Tuple_Accessor_Nova_iterator,
+		(nova_datastruct_list_Nova_Iterator*(*)(nova_datastruct_list_Nova_Iterable*, nova_exception_Nova_ExceptionData*, nova_datastruct_list_Nova_Iterator*))nova_datastruct_list_Nova_List_Mutator1_Nova_iterator,
 		0,
 		0,
 		(nova_datastruct_list_Nova_Array*(*)(nova_datastruct_list_Nova_List*, nova_exception_Nova_ExceptionData*))nova_datastruct_Nova_Tuple_Nova_toArray,
@@ -56,15 +57,23 @@ nova_datastruct_Tuple2_Extension_VTable nova_datastruct_Tuple2_Extension_VTable_
 		(nova_Nova_Object*(*)(nova_datastruct_list_Nova_List*, nova_exception_Nova_ExceptionData*, nova_datastruct_list_Nova_List_closure24_Nova_func nova_datastruct_list_Nova_List_Nova_func, void* nova_datastruct_list_Nova_List_ref_Nova_func, void* func_context))nova_datastruct_Nova_Tuple_0_Nova_firstWhere,
 		(nova_datastruct_list_Nova_List*(*)(nova_datastruct_list_Nova_List*, nova_exception_Nova_ExceptionData*))nova_datastruct_Nova_Tuple_Nova_reverse,
 		(nova_Nova_String*(*)(nova_datastruct_list_Nova_List*, nova_exception_Nova_ExceptionData*, nova_Nova_String*))nova_datastruct_list_Nova_List_Nova_join,
-		(int(*)(nova_datastruct_list_Nova_List*, nova_exception_Nova_ExceptionData*, int))nova_datastruct_list_Nova_List_Mutator_Nova_count,
+		(int(*)(nova_datastruct_list_Nova_List*, nova_exception_Nova_ExceptionData*))nova_datastruct_Nova_Tuple_Accessorfunc_Nova_count,
+		(int(*)(nova_datastruct_list_Nova_List*, nova_exception_Nova_ExceptionData*, int))nova_datastruct_Nova_Tuple_Mutatorfunc_Nova_count,
 		(nova_Nova_Object*(*)(nova_datastruct_list_Nova_List*, nova_exception_Nova_ExceptionData*))nova_datastruct_Nova_Tuple_Accessor_Nova_first,
 		(nova_Nova_Object*(*)(nova_datastruct_list_Nova_List*, nova_exception_Nova_ExceptionData*, nova_Nova_Object*))nova_datastruct_Nova_Tuple_Mutator_Nova_first,
 		(nova_Nova_Object*(*)(nova_datastruct_list_Nova_List*, nova_exception_Nova_ExceptionData*))nova_datastruct_Nova_Tuple_Accessor_Nova_last,
 		(nova_Nova_Object*(*)(nova_datastruct_list_Nova_List*, nova_exception_Nova_ExceptionData*, nova_Nova_Object*))nova_datastruct_Nova_Tuple_Mutator_Nova_last,
-		(int(*)(nova_datastruct_list_Nova_List*, nova_exception_Nova_ExceptionData*))nova_datastruct_list_Nova_List_Accessor_Nova_count,
 		0,
 		0,
 		(char(*)(nova_operators_Nova_Equals*, nova_exception_Nova_ExceptionData*, nova_Nova_Object*))nova_Nova_Object_0_Nova_equals,
+		0,
+		0,
+		0,
+		0,
+		0,
+		0,
+		0,
+		0,
 		0,
 		0,
 		0,
@@ -75,7 +84,7 @@ nova_datastruct_Tuple2_Extension_VTable nova_datastruct_Tuple2_Extension_VTable_
 
 
 
-nova_datastruct_list_Nova_Array* generated11(nova_datastruct_Nova_Tuple2* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_Object* value0, nova_Nova_Object* value1);
+nova_datastruct_list_Nova_Array* generated27(nova_datastruct_Nova_Tuple2* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_Object* value0, nova_Nova_Object* value1);
 void nova_datastruct_Nova_Tuple2_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData)
 {
 	{
@@ -110,10 +119,10 @@ void nova_datastruct_Nova_Tuple2_Nova_destroy(nova_datastruct_Nova_Tuple2** this
 
 void nova_datastruct_Nova_Tuple2_Nova_this(nova_datastruct_Nova_Tuple2* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_Object* item1, nova_Nova_Object* item2)
 {
-	nova_datastruct_Nova_Tuple_Nova_this((nova_datastruct_Nova_Tuple*)(this), exceptionData, generated11(0, exceptionData, (nova_Nova_Object*)(item1), (nova_Nova_Object*)(item2)));
+	nova_datastruct_Nova_Tuple_Nova_this((nova_datastruct_Nova_Tuple*)(this), exceptionData, generated27(0, exceptionData, (nova_Nova_Object*)(item1), (nova_Nova_Object*)(item2)));
 }
 
-nova_datastruct_list_Nova_Array* generated11(nova_datastruct_Nova_Tuple2* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_Object* value0, nova_Nova_Object* value1)
+nova_datastruct_list_Nova_Array* generated27(nova_datastruct_Nova_Tuple2* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_Object* value0, nova_Nova_Object* value1)
 {
 	nova_Nova_Object** l1_Nova_temp = (nova_Nova_Object**)nova_null;
 	

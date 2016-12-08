@@ -103,6 +103,7 @@ spectra_tree_nodes_functions_closures_ClosureParameter_Extension_VTable spectra_
 		0,
 		0,
 		0,
+		0,
 		(char(*)(nova_operators_Nova_Equals*, nova_exception_Nova_ExceptionData*, nova_Nova_Object*))nova_Nova_Object_0_Nova_equals,
 		0,
 		0,
@@ -211,7 +212,7 @@ spectra_tree_nodes_functions_closures_Nova_ClosureParameter* spectra_tree_nodes_
 		
 		l1_Nova_node = spectra_tree_nodes_functions_closures_Nova_ClosureParameter_Nova_construct(0, exceptionData, parent, 0);
 		spectra_tree_nodes_Nova_Value_Mutatorfunc_Nova_type((spectra_tree_nodes_Nova_Value*)(l1_Nova_node), exceptionData, l1_Nova_type);
-		l1_Nova_node->spectra_tree_nodes_Nova_Identifier_Nova_name = (nova_Nova_String*)(nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)(nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("_"))), exceptionData, nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)(nova_primitive_number_Nova_Int_static_Nova_toString(0, exceptionData, (nova_datastruct_list_Nova_List_virtual_Accessor_Nova_count((nova_datastruct_list_Nova_List*)(spectra_tree_nodes_functions_Nova_ParameterList_Accessor_Nova_parameters(spectra_tree_nodes_functions_Nova_Parameter_Accessor_Nova_parentParameterList((spectra_tree_nodes_functions_Nova_Parameter*)(l1_Nova_node), exceptionData), exceptionData)), exceptionData) + 1))), exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("")))));
+		l1_Nova_node->spectra_tree_nodes_Nova_Identifier_Nova_name = (nova_Nova_String*)(nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)(nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("_"))), exceptionData, nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)(nova_primitive_number_Nova_Int_static_Nova_toString(0, exceptionData, (nova_datastruct_list_Nova_List_virtual_Accessor1_Nova_count((nova_datastruct_list_Nova_List*)(spectra_tree_nodes_functions_Nova_ParameterList_Accessor_Nova_parameters(spectra_tree_nodes_functions_Nova_Parameter_Accessor_Nova_parentParameterList((spectra_tree_nodes_functions_Nova_Parameter*)(l1_Nova_node), exceptionData), exceptionData)), exceptionData) + 1))), exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("")))));
 		return l1_Nova_node;
 	}
 	else

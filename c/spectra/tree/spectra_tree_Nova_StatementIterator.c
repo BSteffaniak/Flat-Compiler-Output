@@ -43,6 +43,7 @@ spectra_tree_StatementIterator_Extension_VTable spectra_tree_StatementIterator_E
 	{
 		0,
 		0,
+		0,
 		(char(*)(nova_datastruct_list_Nova_Iterator*, nova_exception_Nova_ExceptionData*))spectra_tree_Nova_StatementIterator_Accessor_Nova_hasNext,
 		(nova_Nova_Object*(*)(nova_datastruct_list_Nova_Iterator*, nova_exception_Nova_ExceptionData*))spectra_tree_Nova_StatementIterator_Accessor_Nova_next,
 		0,

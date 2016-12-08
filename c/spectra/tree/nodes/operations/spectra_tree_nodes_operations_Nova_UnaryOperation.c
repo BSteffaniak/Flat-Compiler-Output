@@ -100,6 +100,7 @@ spectra_tree_nodes_operations_UnaryOperation_Extension_VTable spectra_tree_nodes
 		0,
 		0,
 		0,
+		0,
 		(char(*)(nova_operators_Nova_Equals*, nova_exception_Nova_ExceptionData*, nova_Nova_Object*))nova_Nova_Object_0_Nova_equals,
 		0,
 		0,
@@ -207,7 +208,7 @@ spectra_tree_nodes_operations_Nova_UnaryOperation* spectra_tree_nodes_operations
 	location = (spectra_util_Nova_Location*)(location == 0 ? (nova_Nova_Object*)spectra_util_Nova_Location_Nova_INVALID : (nova_Nova_Object*)location);
 	require = (int)(require == (intptr_t)nova_null ? 1 : require);
 	l1_Nova_matches = spectra_util_Nova_CompilerStringFunctions_Nova_findOperatorIndices(input, exceptionData, spectra_tree_nodes_operations_Nova_Operator_Nova_UNARY_OPERATORS, (intptr_t)nova_null);
-	if (nova_datastruct_list_Nova_List_virtual_Accessor_Nova_count((nova_datastruct_list_Nova_List*)(l1_Nova_matches), exceptionData) == 1)
+	if (nova_datastruct_list_Nova_List_virtual_Accessor1_Nova_count((nova_datastruct_list_Nova_List*)(l1_Nova_matches), exceptionData) == 1)
 	{
 		spectra_tree_nodes_operations_Nova_UnaryOperation* l1_Nova_node = (spectra_tree_nodes_operations_Nova_UnaryOperation*)nova_null;
 		int l1_Nova_match = 0;

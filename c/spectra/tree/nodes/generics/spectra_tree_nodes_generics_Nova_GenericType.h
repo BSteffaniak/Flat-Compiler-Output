@@ -68,9 +68,9 @@ CCLASS_CLASS
 	spectra_tree_nodes_generics_Nova_GenericType, 
 	
 	spectra_tree_nodes_generics_GenericType_Extension_VTable* vtable;
-	nova_Nova_String* spectra_tree_nodes_Nova_Type_Nova_name;
 	int spectra_tree_nodes_Nova_Type_Nova_arrayDimensions;
 	nova_datastruct_list_Nova_Array* spectra_tree_nodes_Nova_Type_Nova_genericArguments;
+	nova_Nova_String* spectra_tree_nodes_Nova_Type_Nova_name;
 )
 
 void spectra_tree_nodes_generics_Nova_GenericType_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData);

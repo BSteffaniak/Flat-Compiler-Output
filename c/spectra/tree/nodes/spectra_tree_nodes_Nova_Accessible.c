@@ -83,6 +83,7 @@ spectra_tree_nodes_Accessible_Extension_VTable spectra_tree_nodes_Accessible_Ext
 		0,
 		0,
 		0,
+		0,
 	},
 };
 

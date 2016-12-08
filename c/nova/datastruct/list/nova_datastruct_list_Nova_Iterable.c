@@ -38,6 +38,15 @@ nova_datastruct_list_Iterable_Extension_VTable nova_datastruct_list_Iterable_Ext
 	{
 		0,
 		(nova_datastruct_list_Nova_Iterator*(*)(nova_datastruct_list_Nova_Iterable*, nova_exception_Nova_ExceptionData*))nova_datastruct_list_Nova_Iterable_Accessor_Nova_iterator,
+		(nova_datastruct_list_Nova_Iterator*(*)(nova_datastruct_list_Nova_Iterable*, nova_exception_Nova_ExceptionData*, nova_datastruct_list_Nova_Iterator*))nova_datastruct_list_Nova_Iterable_Mutator_Nova_iterator,
+		0,
+		0,
+		0,
+		0,
+		0,
+		0,
+		0,
+		0,
 		0,
 		0,
 		0,
@@ -68,8 +77,6 @@ nova_datastruct_list_Iterable_Extension_VTable nova_datastruct_list_Iterable_Ext
 };
 
 
-
-
 void nova_datastruct_list_Nova_Iterable_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData)
 {
 	{
@@ -81,9 +88,18 @@ nova_datastruct_list_Nova_Iterator* nova_datastruct_list_Nova_Iterable_Accessor_
 	return (nova_datastruct_list_Nova_Iterator*)(nova_Nova_Object*)nova_null;
 }
 
-
-nova_datastruct_list_Nova_Iterator* nova_datastruct_list_Nova_Iterable_virtual_Accessor_Nova_iterator(nova_datastruct_list_Nova_Iterable* this, nova_exception_Nova_ExceptionData* exceptionData)
+nova_datastruct_list_Nova_Iterator* nova_datastruct_list_Nova_Iterable_Mutator_Nova_iterator(nova_datastruct_list_Nova_Iterable* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_list_Nova_Iterator* value)
 {
-	return this->vtable->itable.nova_datastruct_list_Nova_Iterable_virtual_Accessor_Nova_iterator((nova_datastruct_list_Nova_Iterable*)(this), exceptionData);
+	return value;
+}
+
+nova_datastruct_list_Nova_Iterator* nova_datastruct_list_Nova_Iterable_virtual_Accessor2_Nova_iterator(nova_datastruct_list_Nova_Iterable* this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+	return this->vtable->itable.nova_datastruct_list_Nova_Iterable_virtual_Accessor2_Nova_iterator((nova_datastruct_list_Nova_Iterable*)(this), exceptionData);
+}
+
+nova_datastruct_list_Nova_Iterator* nova_datastruct_list_Nova_Iterable_virtual_Mutator1_Nova_iterator(nova_datastruct_list_Nova_Iterable* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_list_Nova_Iterator* value)
+{
+	return this->vtable->itable.nova_datastruct_list_Nova_Iterable_virtual_Mutator1_Nova_iterator((nova_datastruct_list_Nova_Iterable*)(this), exceptionData, value);
 }
 

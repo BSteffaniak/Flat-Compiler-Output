@@ -86,6 +86,7 @@ CCLASS_CLASS
 	
 	nova_datastruct_list_LinkedList_Extension_VTable* vtable;
 	int nova_datastruct_list_Nova_LinkedList_Nova_size;
+	int nova_datastruct_list_Nova_LinkedList_Nova_count;
 	struct Private* prv;
 )
 
@@ -112,6 +113,8 @@ nova_datastruct_list_Nova_ListNode* nova_datastruct_list_Nova_LinkedList_Mutator
 nova_datastruct_list_Nova_LinkedListIterator* nova_datastruct_list_Nova_LinkedList_Accessor_Nova_iterator(nova_datastruct_list_Nova_LinkedList* this, nova_exception_Nova_ExceptionData* exceptionData);
 nova_datastruct_list_Nova_ListNode* nova_datastruct_list_Nova_LinkedList_Accessor_Nova_first(nova_datastruct_list_Nova_LinkedList* this, nova_exception_Nova_ExceptionData* exceptionData);
 nova_datastruct_list_Nova_ListNode* nova_datastruct_list_Nova_LinkedList_Accessor_Nova_last(nova_datastruct_list_Nova_LinkedList* this, nova_exception_Nova_ExceptionData* exceptionData);
+int nova_datastruct_list_Nova_LinkedList_Accessorfunc_Nova_count(nova_datastruct_list_Nova_LinkedList* this, nova_exception_Nova_ExceptionData* exceptionData);
+int nova_datastruct_list_Nova_LinkedList_Mutatorfunc_Nova_count(nova_datastruct_list_Nova_LinkedList* this, nova_exception_Nova_ExceptionData* exceptionData, int value);
 void nova_datastruct_list_Nova_LinkedList_Nova_super(nova_datastruct_list_Nova_LinkedList* this, nova_exception_Nova_ExceptionData* exceptionData);
 
 #endif

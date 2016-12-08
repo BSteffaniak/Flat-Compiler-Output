@@ -107,6 +107,7 @@ spectra_tree_nodes_InterfaceDeclaration_Extension_VTable spectra_tree_nodes_Inte
 		0,
 		0,
 		0,
+		0,
 		(char(*)(nova_operators_Nova_Equals*, nova_exception_Nova_ExceptionData*, nova_Nova_Object*))nova_Nova_Object_0_Nova_equals,
 		0,
 		(char(*)(spectra_tree_nodes_Nova_Abstractable*, nova_exception_Nova_ExceptionData*, char))spectra_tree_nodes_Nova_ClassDeclaration_Mutatorfunc0_Nova_isAbstract,

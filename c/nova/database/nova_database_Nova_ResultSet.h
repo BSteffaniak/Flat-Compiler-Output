@@ -59,8 +59,8 @@ CCLASS_CLASS
 	nova_database_Nova_ResultSet, 
 	
 	nova_database_ResultSet_Extension_VTable* vtable;
-	int nova_database_Nova_ResultSet_Nova_numCols;
 	nova_datastruct_list_Nova_Array* nova_database_Nova_ResultSet_Nova_rows;
+	int nova_database_Nova_ResultSet_Nova_numCols;
 )
 
 void nova_database_Nova_ResultSet_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData);

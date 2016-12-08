@@ -64,7 +64,16 @@ nova_datastruct_list_Stack_Extension_VTable nova_datastruct_list_Stack_Extension
 		0,
 		0,
 		0,
+		0,
 		(char(*)(nova_operators_Nova_Equals*, nova_exception_Nova_ExceptionData*, nova_Nova_Object*))nova_Nova_Object_0_Nova_equals,
+		0,
+		0,
+		0,
+		0,
+		0,
+		0,
+		0,
+		0,
 		0,
 		0,
 		0,
@@ -150,8 +159,7 @@ void nova_datastruct_list_Nova_Stack_Nova_push(nova_datastruct_list_Nova_Stack* 
 {
 	nova_datastruct_list_Nova_ListNode* l1_Nova_node = (nova_datastruct_list_Nova_ListNode*)nova_null;
 	
-	l1_Nova_node = nova_datastruct_list_Nova_ListNode_Nova_construct(0, exceptionData, data);
-	l1_Nova_node->nova_datastruct_list_Nova_ListNode_Nova_next = this->prv->nova_datastruct_list_Nova_Stack_Nova_top;
+	l1_Nova_node = nova_datastruct_list_Nova_ListNode_Nova_construct(0, exceptionData, data, this->prv->nova_datastruct_list_Nova_Stack_Nova_top);
 	this->prv->nova_datastruct_list_Nova_Stack_Nova_top = l1_Nova_node;
 	this->nova_datastruct_list_Nova_Stack_Nova_count++;
 }

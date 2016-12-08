@@ -62,8 +62,8 @@ CCLASS_CLASS
 	nova_datastruct_Nova_BinaryNode, 
 	
 	nova_datastruct_BinaryNode_Extension_VTable* vtable;
-	nova_Nova_Object* nova_datastruct_Nova_Node_Nova_data;
 	nova_datastruct_list_Nova_Array* nova_datastruct_Nova_Node_Nova_children;
+	nova_Nova_Object* nova_datastruct_Nova_Node_Nova_data;
 )
 
 void nova_datastruct_Nova_BinaryNode_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData);

@@ -47,6 +47,7 @@ nova_datastruct_list_LinkedList_Extension_VTable nova_datastruct_list_LinkedList
 	{
 		0,
 		(nova_datastruct_list_Nova_Iterator*(*)(nova_datastruct_list_Nova_Iterable*, nova_exception_Nova_ExceptionData*))nova_datastruct_list_Nova_LinkedList_Accessor_Nova_iterator,
+		(nova_datastruct_list_Nova_Iterator*(*)(nova_datastruct_list_Nova_Iterable*, nova_exception_Nova_ExceptionData*, nova_datastruct_list_Nova_Iterator*))nova_datastruct_list_Nova_List_Mutator1_Nova_iterator,
 		0,
 		0,
 		(nova_datastruct_list_Nova_Array*(*)(nova_datastruct_list_Nova_List*, nova_exception_Nova_ExceptionData*))nova_datastruct_list_Nova_LinkedList_Nova_toArray,
@@ -61,15 +62,23 @@ nova_datastruct_list_LinkedList_Extension_VTable nova_datastruct_list_LinkedList
 		(nova_Nova_Object*(*)(nova_datastruct_list_Nova_List*, nova_exception_Nova_ExceptionData*, nova_datastruct_list_Nova_List_closure24_Nova_func nova_datastruct_list_Nova_List_Nova_func, void* nova_datastruct_list_Nova_List_ref_Nova_func, void* func_context))nova_datastruct_list_Nova_LinkedList_0_Nova_firstWhere,
 		(nova_datastruct_list_Nova_List*(*)(nova_datastruct_list_Nova_List*, nova_exception_Nova_ExceptionData*))nova_datastruct_list_Nova_LinkedList_Nova_reverse,
 		(nova_Nova_String*(*)(nova_datastruct_list_Nova_List*, nova_exception_Nova_ExceptionData*, nova_Nova_String*))nova_datastruct_list_Nova_List_Nova_join,
-		(int(*)(nova_datastruct_list_Nova_List*, nova_exception_Nova_ExceptionData*, int))nova_datastruct_list_Nova_List_Mutator_Nova_count,
+		(int(*)(nova_datastruct_list_Nova_List*, nova_exception_Nova_ExceptionData*))nova_datastruct_list_Nova_LinkedList_Accessorfunc_Nova_count,
+		(int(*)(nova_datastruct_list_Nova_List*, nova_exception_Nova_ExceptionData*, int))nova_datastruct_list_Nova_LinkedList_Mutatorfunc_Nova_count,
 		(nova_Nova_Object*(*)(nova_datastruct_list_Nova_List*, nova_exception_Nova_ExceptionData*))nova_datastruct_list_Nova_LinkedList_Accessor_Nova_first,
 		(nova_Nova_Object*(*)(nova_datastruct_list_Nova_List*, nova_exception_Nova_ExceptionData*, nova_Nova_Object*))nova_datastruct_list_Nova_LinkedList_Mutator_Nova_first,
 		(nova_Nova_Object*(*)(nova_datastruct_list_Nova_List*, nova_exception_Nova_ExceptionData*))nova_datastruct_list_Nova_LinkedList_Accessor_Nova_last,
 		(nova_Nova_Object*(*)(nova_datastruct_list_Nova_List*, nova_exception_Nova_ExceptionData*, nova_Nova_Object*))nova_datastruct_list_Nova_LinkedList_Mutator_Nova_last,
-		(int(*)(nova_datastruct_list_Nova_List*, nova_exception_Nova_ExceptionData*))nova_datastruct_list_Nova_List_Accessor_Nova_count,
 		0,
 		0,
 		(char(*)(nova_operators_Nova_Equals*, nova_exception_Nova_ExceptionData*, nova_Nova_Object*))nova_Nova_Object_0_Nova_equals,
+		0,
+		0,
+		0,
+		0,
+		0,
+		0,
+		0,
+		0,
 		0,
 		0,
 		0,
@@ -86,7 +95,7 @@ CCLASS_PRIVATE
 	
 )
 
-char nova_datastruct_list_Nova_LinkedList_Nova_lambda41(nova_datastruct_list_Nova_LinkedList* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_Object* _1, Context1* context);
+char nova_datastruct_list_Nova_LinkedList_Nova_lambda84(nova_datastruct_list_Nova_LinkedList* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_Object* _1, Context1* context);
 
 void nova_datastruct_list_Nova_LinkedList_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData)
 {
@@ -120,6 +129,7 @@ void nova_datastruct_list_Nova_LinkedList_Nova_destroy(nova_datastruct_list_Nova
 	NOVA_FREE((*this)->prv);
 	
 	
+	
 	NOVA_FREE(*this);
 }
 
@@ -141,7 +151,7 @@ nova_datastruct_list_Nova_LinkedList* nova_datastruct_list_Nova_LinkedList_Nova_
 {
 	nova_datastruct_list_Nova_ListNode* l1_Nova_node = (nova_datastruct_list_Nova_ListNode*)nova_null;
 	
-	l1_Nova_node = nova_datastruct_list_Nova_ListNode_Nova_construct(0, exceptionData, data);
+	l1_Nova_node = nova_datastruct_list_Nova_ListNode_Nova_construct(0, exceptionData, data, 0);
 	if (this->prv->nova_datastruct_list_Nova_LinkedList_Nova_start != (nova_datastruct_list_Nova_ListNode*)nova_null)
 	{
 		this->prv->nova_datastruct_list_Nova_LinkedList_Nova_current->nova_datastruct_list_Nova_ListNode_Nova_next = l1_Nova_node;
@@ -184,12 +194,12 @@ nova_datastruct_list_Nova_LinkedList* nova_datastruct_list_Nova_LinkedList_Nova_
 
 char nova_datastruct_list_Nova_LinkedList_0_Nova_contains(nova_datastruct_list_Nova_LinkedList* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_Object* value)
 {
-	Context1 contextArg41 = 
+	Context1 contextArg84 = 
 	{
 		&value,
 	};
 	
-	return nova_datastruct_list_Nova_LinkedList_0_Nova_any(this, exceptionData, (nova_datastruct_list_Nova_LinkedList_closure9_Nova_anyFunc)&nova_datastruct_list_Nova_LinkedList_Nova_lambda41, this, &contextArg41);
+	return nova_datastruct_list_Nova_LinkedList_0_Nova_any(this, exceptionData, (nova_datastruct_list_Nova_LinkedList_closure9_Nova_anyFunc)&nova_datastruct_list_Nova_LinkedList_Nova_lambda84, this, &contextArg84);
 }
 
 nova_datastruct_list_Nova_Array* nova_datastruct_list_Nova_LinkedList_Nova_toArray(nova_datastruct_list_Nova_LinkedList* this, nova_exception_Nova_ExceptionData* exceptionData)
@@ -399,7 +409,7 @@ void nova_datastruct_list_Nova_LinkedList_4_Nova_this(nova_datastruct_list_Nova_
 {
 }
 
-char nova_datastruct_list_Nova_LinkedList_Nova_lambda41(nova_datastruct_list_Nova_LinkedList* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_Object* _1, Context1* context)
+char nova_datastruct_list_Nova_LinkedList_Nova_lambda84(nova_datastruct_list_Nova_LinkedList* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_Object* _1, Context1* context)
 {
 	return (nova_Nova_Object*)_1 == (nova_Nova_Object*)(*context->nova_datastruct_list_Nova_LinkedList_Nova_value);
 }
@@ -434,9 +444,21 @@ nova_datastruct_list_Nova_ListNode* nova_datastruct_list_Nova_LinkedList_Accesso
 	return this->prv->nova_datastruct_list_Nova_LinkedList_Nova_current;
 }
 
+int nova_datastruct_list_Nova_LinkedList_Accessorfunc_Nova_count(nova_datastruct_list_Nova_LinkedList* this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+	return this->nova_datastruct_list_Nova_LinkedList_Nova_count;
+}
+
+int nova_datastruct_list_Nova_LinkedList_Mutatorfunc_Nova_count(nova_datastruct_list_Nova_LinkedList* this, nova_exception_Nova_ExceptionData* exceptionData, int value)
+{
+	this->nova_datastruct_list_Nova_LinkedList_Nova_count = value;
+	return value;
+}
+
 void nova_datastruct_list_Nova_LinkedList_Nova_super(nova_datastruct_list_Nova_LinkedList* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
 	this->nova_datastruct_list_Nova_LinkedList_Nova_size = 0;
+	this->nova_datastruct_list_Nova_LinkedList_Nova_count = 0;
 	this->prv->nova_datastruct_list_Nova_LinkedList_Nova_start = (nova_datastruct_list_Nova_ListNode*)nova_null;
 	this->prv->nova_datastruct_list_Nova_LinkedList_Nova_current = (nova_datastruct_list_Nova_ListNode*)nova_null;
 }

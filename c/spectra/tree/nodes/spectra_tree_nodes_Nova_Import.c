@@ -85,6 +85,7 @@ spectra_tree_nodes_Import_Extension_VTable spectra_tree_nodes_Import_Extension_V
 		0,
 		0,
 		0,
+		0,
 		(char(*)(nova_operators_Nova_Equals*, nova_exception_Nova_ExceptionData*, nova_Nova_Object*))nova_Nova_Object_0_Nova_equals,
 		0,
 		0,
@@ -128,7 +129,7 @@ spectra_tree_nodes_Import_Extension_VTable spectra_tree_nodes_Import_Extension_V
 
 
 
-char spectra_tree_nodes_Nova_Import_Nova_lambda32(spectra_tree_nodes_Nova_Import* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* _1, Context1* context);
+char spectra_tree_nodes_Nova_Import_Nova_lambda33(spectra_tree_nodes_Nova_Import* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* _1, Context1* context);
 
 
 
@@ -226,7 +227,7 @@ nova_Nova_String* spectra_tree_nodes_Nova_Import_Nova_writeNova(spectra_tree_nod
 	return nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)(nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("import \""))), exceptionData, nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)((this->spectra_tree_nodes_Nova_Import_Nova_importLocation)), exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("\""))));
 }
 
-char spectra_tree_nodes_Nova_Import_Nova_lambda32(spectra_tree_nodes_Nova_Import* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* _1, Context1* context)
+char spectra_tree_nodes_Nova_Import_Nova_lambda33(spectra_tree_nodes_Nova_Import* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* _1, Context1* context)
 {
 	return nova_Nova_String_Nova_equals(_1, exceptionData, this->spectra_tree_nodes_Nova_Import_Nova_importLocation);
 }
@@ -245,11 +246,11 @@ nova_Nova_String* spectra_tree_nodes_Nova_Import_Accessor_Nova_className(spectra
 
 char spectra_tree_nodes_Nova_Import_Accessor_Nova_isDefault(spectra_tree_nodes_Nova_Import* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
-	Context1 contextArg32 = 
+	Context1 contextArg33 = 
 	{
 	};
 	
-	return nova_datastruct_list_Nova_List_virtual0_Nova_any((nova_datastruct_list_Nova_List*)(spectra_tree_nodes_Nova_NovaFile_Nova_DEFAULT_IMPORTS), exceptionData, (nova_datastruct_list_Nova_List_closure9_Nova_anyFunc)&spectra_tree_nodes_Nova_Import_Nova_lambda32, this, &contextArg32);
+	return nova_datastruct_list_Nova_List_virtual0_Nova_any((nova_datastruct_list_Nova_List*)(spectra_tree_nodes_Nova_NovaFile_Nova_DEFAULT_IMPORTS), exceptionData, (nova_datastruct_list_Nova_List_closure9_Nova_anyFunc)&spectra_tree_nodes_Nova_Import_Nova_lambda33, this, &contextArg33);
 }
 
 

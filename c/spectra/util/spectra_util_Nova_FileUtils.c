@@ -62,6 +62,7 @@ spectra_util_FileUtils_Extension_VTable spectra_util_FileUtils_Extension_VTable_
 		0,
 		0,
 		0,
+		0,
 		(char(*)(nova_operators_Nova_Equals*, nova_exception_Nova_ExceptionData*, nova_Nova_Object*))nova_Nova_Object_0_Nova_equals,
 		0,
 		0,

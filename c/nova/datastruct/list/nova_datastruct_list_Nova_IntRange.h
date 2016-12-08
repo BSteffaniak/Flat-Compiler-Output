@@ -85,6 +85,7 @@ CCLASS_CLASS
 	nova_datastruct_list_IntRange_Extension_VTable* vtable;
 	int nova_datastruct_list_Nova_IntRange_Nova_start;
 	int nova_datastruct_list_Nova_IntRange_Nova_end;
+	int nova_datastruct_list_Nova_IntRange_Nova_count;
 )
 
 void nova_datastruct_list_Nova_IntRange_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData);
@@ -112,6 +113,8 @@ nova_datastruct_list_Nova_IntRangeIterator* nova_datastruct_list_Nova_IntRange_A
 int nova_datastruct_list_Nova_IntRange_Accessor_Nova_first(nova_datastruct_list_Nova_IntRange* this, nova_exception_Nova_ExceptionData* exceptionData);
 int nova_datastruct_list_Nova_IntRange_Mutator_Nova_first(nova_datastruct_list_Nova_IntRange* this, nova_exception_Nova_ExceptionData* exceptionData, int value);
 int nova_datastruct_list_Nova_IntRange_Accessor_Nova_last(nova_datastruct_list_Nova_IntRange* this, nova_exception_Nova_ExceptionData* exceptionData);
+int nova_datastruct_list_Nova_IntRange_Accessorfunc_Nova_count(nova_datastruct_list_Nova_IntRange* this, nova_exception_Nova_ExceptionData* exceptionData);
+int nova_datastruct_list_Nova_IntRange_Mutatorfunc_Nova_count(nova_datastruct_list_Nova_IntRange* this, nova_exception_Nova_ExceptionData* exceptionData, int value);
 void nova_datastruct_list_Nova_IntRange_Nova_super(nova_datastruct_list_Nova_IntRange* this, nova_exception_Nova_ExceptionData* exceptionData);
 
 #endif
