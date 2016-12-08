@@ -74,13 +74,13 @@ void nova_io_Nova_FileWriter_Nova_destroy(nova_io_Nova_FileWriter** this, nova_e
 void nova_io_Nova_FileWriter_0_Nova_this(nova_io_Nova_FileWriter* this, nova_exception_Nova_ExceptionData* exceptionData, nova_io_Nova_File* file);
 void nova_io_Nova_FileWriter_1_Nova_this(nova_io_Nova_FileWriter* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* location);
 char nova_io_Nova_FileWriter_Nova_delete(nova_io_Nova_FileWriter* this, nova_exception_Nova_ExceptionData* exceptionData);
-void nova_io_Nova_FileWriter_Nova_reopen(nova_io_Nova_FileWriter* this, nova_exception_Nova_ExceptionData* exceptionData);
+char nova_io_Nova_FileWriter_Nova_reopen(nova_io_Nova_FileWriter* this, nova_exception_Nova_ExceptionData* exceptionData);
 void nova_io_Nova_FileWriter_Nova_rewind(nova_io_Nova_FileWriter* this, nova_exception_Nova_ExceptionData* exceptionData);
 char nova_io_Nova_FileWriter_Nova_clearContents(nova_io_Nova_FileWriter* this, nova_exception_Nova_ExceptionData* exceptionData);
 char nova_io_Nova_FileWriter_Nova_create(nova_io_Nova_FileWriter* this, nova_exception_Nova_ExceptionData* exceptionData);
 char nova_io_Nova_FileWriter_Nova_writeLine(nova_io_Nova_FileWriter* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* line);
 char nova_io_Nova_FileWriter_Nova_write(nova_io_Nova_FileWriter* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* data);
-void nova_io_Nova_FileWriter_Nova_flush(nova_io_Nova_FileWriter* this, nova_exception_Nova_ExceptionData* exceptionData);
+char nova_io_Nova_FileWriter_Nova_flush(nova_io_Nova_FileWriter* this, nova_exception_Nova_ExceptionData* exceptionData);
 char nova_io_Nova_FileWriter_Nova_close(nova_io_Nova_FileWriter* this, nova_exception_Nova_ExceptionData* exceptionData);
 char nova_io_Nova_FileWriter_Accessor_Nova_isOpen(nova_io_Nova_FileWriter* this, nova_exception_Nova_ExceptionData* exceptionData);
 void nova_io_Nova_FileWriter_Nova_super(nova_io_Nova_FileWriter* this, nova_exception_Nova_ExceptionData* exceptionData);

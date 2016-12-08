@@ -65,8 +65,6 @@ CCLASS_CLASS
 	nova_math_logic_Nova_WFF, 
 	
 	nova_math_logic_WFF_Extension_VTable* vtable;
-	nova_Nova_String* nova_math_logic_Nova_WFF_Nova_wff;
-	nova_datastruct_list_Nova_Array* nova_math_logic_Nova_WFF_Nova_letters;
 	struct Private* prv;
 )
 

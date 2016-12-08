@@ -62,7 +62,7 @@ CCLASS_CLASS
 	
 	nova_datastruct_list_ImmutableArrayIterator_Extension_VTable* vtable;
 	int nova_datastruct_list_Nova_ImmutableArrayIterator_Nova_position;
-	nova_datastruct_list_Nova_ImmutableArray* nova_datastruct_list_Nova_ImmutableArrayIterator_Nova_array;
+	struct Private* prv;
 )
 
 void nova_datastruct_list_Nova_ImmutableArrayIterator_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData);

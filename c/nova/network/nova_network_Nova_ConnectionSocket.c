@@ -72,14 +72,6 @@ nova_network_ConnectionSocket_Extension_VTable nova_network_ConnectionSocket_Ext
 		0,
 		0,
 		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
 	},
 	nova_Nova_Object_Nova_toString,
 	nova_Nova_Object_Accessor_Nova_hashCodeLong,
@@ -148,18 +140,18 @@ void nova_network_Nova_ConnectionSocket_Nova_close(nova_network_Nova_ConnectionS
 
 char nova_network_Nova_ConnectionSocket_Nova_validateConnection(nova_network_Nova_ConnectionSocket* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
-	nova_Nova_String* l1_Nova_message = (nova_Nova_String*)nova_null;
-	
-	if (!this->nova_network_Nova_ConnectionSocket_Nova_connected)
-	{
-		return this->nova_network_Nova_ConnectionSocket_Nova_connected;
-	}
-	l1_Nova_message = nova_network_Nova_ConnectionSocket_1_Nova_readString(this, exceptionData, 0);
 	if (this->nova_network_Nova_ConnectionSocket_Nova_connected)
 	{
-		nova_datastruct_list_Nova_Queue_Nova_enqueue((nova_datastruct_list_Nova_Queue*)(this->prv->nova_network_Nova_ConnectionSocket_Nova_inputBuffer), exceptionData, (nova_Nova_Object*)(l1_Nova_message));
+		nova_Nova_String* l1_Nova_message = (nova_Nova_String*)nova_null;
+		
+		l1_Nova_message = nova_network_Nova_ConnectionSocket_1_Nova_readString(this, exceptionData, 0);
+		if (this->nova_network_Nova_ConnectionSocket_Nova_connected)
+		{
+			nova_datastruct_list_Nova_Queue_Nova_enqueue((nova_datastruct_list_Nova_Queue*)(this->prv->nova_network_Nova_ConnectionSocket_Nova_inputBuffer), exceptionData, (nova_Nova_Object*)(l1_Nova_message));
+			return 1;
+		}
 	}
-	return this->nova_network_Nova_ConnectionSocket_Nova_connected;
+	return 0;
 }
 
 nova_Nova_String* nova_network_Nova_ConnectionSocket_0_Nova_readString(nova_network_Nova_ConnectionSocket* this, nova_exception_Nova_ExceptionData* exceptionData)
@@ -186,10 +178,7 @@ nova_Nova_String* nova_network_Nova_ConnectionSocket_1_Nova_readString(nova_netw
 
 char nova_network_Nova_ConnectionSocket_Nova_write(nova_network_Nova_ConnectionSocket* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* data)
 {
-	char l1_Nova_success = 0;
-	
-	l1_Nova_success = nova_socket_send(this->prv->nova_network_Nova_ConnectionSocket_Nova_socket, (char*)(data->nova_Nova_String_Nova_chars->nova_datastruct_list_Nova_Array_Nova_data)) == 1;
-	return l1_Nova_success;
+	return nova_socket_send(this->prv->nova_network_Nova_ConnectionSocket_Nova_socket, (char*)(data->nova_Nova_String_Nova_chars->nova_datastruct_list_Nova_Array_Nova_data)) == 1;
 }
 
 void nova_network_Nova_ConnectionSocket_Nova_super(nova_network_Nova_ConnectionSocket* this, nova_exception_Nova_ExceptionData* exceptionData)

@@ -70,14 +70,6 @@ nova_network_ServerSocket_Extension_VTable nova_network_ServerSocket_Extension_V
 		0,
 		0,
 		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
 	},
 	nova_Nova_Object_Nova_toString,
 	nova_Nova_Object_Accessor_Nova_hashCodeLong,
@@ -157,15 +149,13 @@ char nova_network_Nova_ServerSocket_Nova_close(nova_network_Nova_ServerSocket* t
 nova_network_Nova_ConnectionSocket* nova_network_Nova_ServerSocket_Nova_acceptClient(nova_network_Nova_ServerSocket* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
 	SOCKET_ID_TYPE l1_Nova_clientSocket = (SOCKET_ID_TYPE)nova_null;
-	nova_network_Nova_ConnectionSocket* l1_Nova_socket = (nova_network_Nova_ConnectionSocket*)nova_null;
 	
 	l1_Nova_clientSocket = nova_serversocket_accept(this->prv->nova_network_Nova_ServerSocket_Nova_serverSocket);
-	if (l1_Nova_clientSocket == 0)
+	if (l1_Nova_clientSocket != 0)
 	{
-		return (nova_network_Nova_ConnectionSocket*)(nova_Nova_Object*)nova_null;
+		return nova_network_Nova_ConnectionSocket_Nova_construct(0, exceptionData, l1_Nova_clientSocket);
 	}
-	l1_Nova_socket = nova_network_Nova_ConnectionSocket_Nova_construct(0, exceptionData, l1_Nova_clientSocket);
-	return l1_Nova_socket;
+	return (nova_network_Nova_ConnectionSocket*)(nova_Nova_Object*)nova_null;
 }
 
 void nova_network_Nova_ServerSocket_Nova_super(nova_network_Nova_ServerSocket* this, nova_exception_Nova_ExceptionData* exceptionData)

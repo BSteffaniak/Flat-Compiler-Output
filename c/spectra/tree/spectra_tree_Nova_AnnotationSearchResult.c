@@ -92,8 +92,8 @@ spectra_tree_AnnotationSearchResult_Extension_VTable spectra_tree_AnnotationSear
 
 
 
-void spectra_tree_Nova_AnnotationSearchResult_Nova_lambda20(spectra_tree_Nova_AnnotationSearchResult* this, nova_exception_Nova_ExceptionData* exceptionData, spectra_tree_nodes_annotations_Nova_Annotation* _1, int _2, nova_datastruct_list_Nova_Array* _3, Context1* context);
-void spectra_tree_Nova_AnnotationSearchResult_Nova_lambda21(spectra_tree_Nova_AnnotationSearchResult* this, nova_exception_Nova_ExceptionData* exceptionData, spectra_tree_nodes_annotations_Nova_Annotation* _1, int _2, nova_datastruct_list_Nova_Array* _3, Context2* context);
+void spectra_tree_Nova_AnnotationSearchResult_Nova_lambda25(spectra_tree_Nova_AnnotationSearchResult* this, nova_exception_Nova_ExceptionData* exceptionData, spectra_tree_nodes_annotations_Nova_Annotation* _1, int _2, nova_datastruct_list_Nova_Array* _3, Context1* context);
+void spectra_tree_Nova_AnnotationSearchResult_Nova_lambda26(spectra_tree_Nova_AnnotationSearchResult* this, nova_exception_Nova_ExceptionData* exceptionData, spectra_tree_nodes_annotations_Nova_Annotation* _1, int _2, nova_datastruct_list_Nova_Array* _3, Context2* context);
 void spectra_tree_Nova_AnnotationSearchResult_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData)
 {
 	{
@@ -134,30 +134,30 @@ void spectra_tree_Nova_AnnotationSearchResult_Nova_this(spectra_tree_Nova_Annota
 
 nova_datastruct_list_Nova_Array* spectra_tree_Nova_AnnotationSearchResult_0_Nova_addTo(spectra_tree_Nova_AnnotationSearchResult* this, nova_exception_Nova_ExceptionData* exceptionData, spectra_tree_nodes_Nova_Node* node)
 {
-	Context1 contextArg20 = 
+	Context1 contextArg25 = 
 	{
 		&node,
 	};
 	
-	return (nova_datastruct_list_Nova_Array*)nova_datastruct_list_Nova_List_virtual0_Nova_forEach((nova_datastruct_list_Nova_List*)(this->spectra_tree_Nova_AnnotationSearchResult_Nova_annotations), exceptionData, (nova_datastruct_list_Nova_List_closure3_Nova_func)&spectra_tree_Nova_AnnotationSearchResult_Nova_lambda20, this, &contextArg20);
+	return (nova_datastruct_list_Nova_Array*)nova_datastruct_list_Nova_List_virtual0_Nova_forEach((nova_datastruct_list_Nova_List*)(this->spectra_tree_Nova_AnnotationSearchResult_Nova_annotations), exceptionData, (nova_datastruct_list_Nova_List_closure3_Nova_func)&spectra_tree_Nova_AnnotationSearchResult_Nova_lambda25, this, &contextArg25);
 }
 
 nova_datastruct_list_Nova_Array* spectra_tree_Nova_AnnotationSearchResult_1_Nova_addTo(spectra_tree_Nova_AnnotationSearchResult* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_list_Nova_Stack* stack)
 {
-	Context2 contextArg21 = 
+	Context2 contextArg26 = 
 	{
 		&stack,
 	};
 	
-	return (nova_datastruct_list_Nova_Array*)nova_datastruct_list_Nova_List_virtual0_Nova_forEach((nova_datastruct_list_Nova_List*)(this->spectra_tree_Nova_AnnotationSearchResult_Nova_annotations), exceptionData, (nova_datastruct_list_Nova_List_closure3_Nova_func)&spectra_tree_Nova_AnnotationSearchResult_Nova_lambda21, this, &contextArg21);
+	return (nova_datastruct_list_Nova_Array*)nova_datastruct_list_Nova_List_virtual0_Nova_forEach((nova_datastruct_list_Nova_List*)(this->spectra_tree_Nova_AnnotationSearchResult_Nova_annotations), exceptionData, (nova_datastruct_list_Nova_List_closure3_Nova_func)&spectra_tree_Nova_AnnotationSearchResult_Nova_lambda26, this, &contextArg26);
 }
 
-void spectra_tree_Nova_AnnotationSearchResult_Nova_lambda20(spectra_tree_Nova_AnnotationSearchResult* this, nova_exception_Nova_ExceptionData* exceptionData, spectra_tree_nodes_annotations_Nova_Annotation* _1, int _2, nova_datastruct_list_Nova_Array* _3, Context1* context)
+void spectra_tree_Nova_AnnotationSearchResult_Nova_lambda25(spectra_tree_Nova_AnnotationSearchResult* this, nova_exception_Nova_ExceptionData* exceptionData, spectra_tree_nodes_annotations_Nova_Annotation* _1, int _2, nova_datastruct_list_Nova_Array* _3, Context1* context)
 {
 	spectra_tree_nodes_Nova_Node_Nova_addAnnotation((*context->spectra_tree_Nova_AnnotationSearchResult_Nova_node), exceptionData, _1);
 }
 
-void spectra_tree_Nova_AnnotationSearchResult_Nova_lambda21(spectra_tree_Nova_AnnotationSearchResult* this, nova_exception_Nova_ExceptionData* exceptionData, spectra_tree_nodes_annotations_Nova_Annotation* _1, int _2, nova_datastruct_list_Nova_Array* _3, Context2* context)
+void spectra_tree_Nova_AnnotationSearchResult_Nova_lambda26(spectra_tree_Nova_AnnotationSearchResult* this, nova_exception_Nova_ExceptionData* exceptionData, spectra_tree_nodes_annotations_Nova_Annotation* _1, int _2, nova_datastruct_list_Nova_Array* _3, Context2* context)
 {
 	nova_datastruct_list_Nova_Stack_Nova_push((nova_datastruct_list_Nova_Stack*)((*context->spectra_tree_Nova_AnnotationSearchResult_Nova_stack)), exceptionData, (nova_Nova_Object*)(_1));
 }

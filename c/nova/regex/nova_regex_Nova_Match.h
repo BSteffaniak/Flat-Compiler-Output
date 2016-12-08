@@ -59,9 +59,9 @@ CCLASS_CLASS
 	nova_regex_Nova_Match, 
 	
 	nova_regex_Match_Extension_VTable* vtable;
+	nova_Nova_String* nova_regex_Nova_Match_Nova_source;
 	int nova_regex_Nova_Match_Nova_start;
 	int nova_regex_Nova_Match_Nova_end;
-	nova_Nova_String* nova_regex_Nova_Match_Nova_source;
 )
 
 void nova_regex_Nova_Match_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData);

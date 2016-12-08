@@ -69,14 +69,6 @@ nova_math_NumericOperation_Extension_VTable nova_math_NumericOperation_Extension
 		0,
 		0,
 		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
 	},
 	nova_math_Nova_NumericOperation_Nova_toString,
 	nova_Nova_Object_Accessor_Nova_hashCodeLong,
@@ -334,7 +326,7 @@ nova_datastruct_Nova_Bounds* nova_math_Nova_NumericOperation_static_Nova_searchN
 		return (nova_datastruct_Nova_Bounds*)(nova_Nova_Object*)nova_null;
 	}
 	l1_Nova_minIndex = nova_math_Nova_NumericOperation_static_Nova_nextNonWhitespaceIndex(0, exceptionData, str, l1_Nova_minIndex - 1, -1) + 1;
-	nova_local_0 = nova_datastruct_Nova_Bounds_1_Nova_construct(0, exceptionData, start, l1_Nova_minIndex);
+	nova_local_0 = nova_datastruct_Nova_Bounds_Nova_construct(0, exceptionData, start, l1_Nova_minIndex);
 	(*ret1) = l1_Nova_index;
 	return nova_local_0;
 }

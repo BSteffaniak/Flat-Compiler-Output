@@ -66,14 +66,6 @@ nova_io_FileReader_Extension_VTable nova_io_FileReader_Extension_VTable_val =
 		0,
 		0,
 		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
 	},
 };
 
@@ -176,12 +168,6 @@ nova_Nova_String* nova_io_Nova_FileReader_Nova_readAllContents(nova_io_Nova_File
 		if (l1_Nova_size < string_size) {
 			l1_Nova_buffer = realloc(l1_Nova_buffer, l1_Nova_size + 1);
 		}
-		/*if (string_size != l1_Nova_size)
-		{
-			free(l1_Nova_buffer);
-			l1_Nova_buffer = NULL;
-			l1_Nova_buffer = 0;
-		}*/
 	}
 	if (l1_Nova_buffer == 0)
 	{
@@ -207,12 +193,13 @@ nova_Nova_String* nova_io_Nova_FileReader_Nova_readLine(nova_io_Nova_FileReader*
 	return nova_Nova_String_2_Nova_construct(0, exceptionData, l1_Nova_line, l1_Nova_bufferSize - 1);
 }
 
-void nova_io_Nova_FileReader_Nova_close(nova_io_Nova_FileReader* this, nova_exception_Nova_ExceptionData* exceptionData)
+char nova_io_Nova_FileReader_Nova_close(nova_io_Nova_FileReader* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
 	if (nova_io_Nova_FileReader_Accessor_Nova_isOpen(this, exceptionData))
 	{
 		fclose(this->prv->nova_io_Nova_FileReader_Nova_fp);
 	}
+	return 1;
 }
 
 char nova_io_Nova_FileReader_Accessor_Nova_isOpen(nova_io_Nova_FileReader* this, nova_exception_Nova_ExceptionData* exceptionData)

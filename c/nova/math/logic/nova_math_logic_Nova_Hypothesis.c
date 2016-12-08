@@ -69,14 +69,6 @@ nova_math_logic_Hypothesis_Extension_VTable nova_math_logic_Hypothesis_Extension
 		0,
 		0,
 		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
 	},
 	nova_math_logic_Nova_LogicalStatement_Nova_toString,
 	nova_Nova_Object_Accessor_Nova_hashCodeLong,
@@ -86,6 +78,7 @@ nova_math_logic_Hypothesis_Extension_VTable nova_math_logic_Hypothesis_Extension
 CCLASS_PRIVATE
 (
 	nova_datastruct_list_Nova_Array* nova_math_logic_Nova_LogicalStatement_Nova_components;
+	nova_Nova_String* nova_math_logic_Nova_LogicalStatement_Nova_statement;
 	
 )
 void nova_math_logic_Nova_Hypothesis_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData)

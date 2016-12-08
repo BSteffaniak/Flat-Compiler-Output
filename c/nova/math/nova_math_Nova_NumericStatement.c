@@ -68,14 +68,6 @@ nova_math_NumericStatement_Extension_VTable nova_math_NumericStatement_Extension
 		0,
 		0,
 		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
 	},
 	nova_math_Nova_NumericStatement_Nova_toString,
 	nova_Nova_Object_Accessor_Nova_hashCodeLong,
@@ -128,7 +120,7 @@ void nova_math_Nova_NumericStatement_Nova_this(nova_math_Nova_NumericStatement* 
 
 nova_Nova_String* nova_math_Nova_NumericStatement_Nova_toString(nova_math_Nova_NumericStatement* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
-	return nova_Nova_Object_virtual_Nova_toString((nova_Nova_Object*)(this->prv->nova_math_Nova_NumericStatement_Nova_tree), exceptionData);
+	return nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)(nova_Nova_Object_virtual_Nova_toString((nova_Nova_Object*)((this->prv->nova_math_Nova_NumericStatement_Nova_tree)), exceptionData)), exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("")));
 }
 
 void nova_math_Nova_NumericStatement_Nova_super(nova_math_Nova_NumericStatement* this, nova_exception_Nova_ExceptionData* exceptionData)

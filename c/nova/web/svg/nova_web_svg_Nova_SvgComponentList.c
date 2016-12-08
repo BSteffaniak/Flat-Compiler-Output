@@ -69,14 +69,6 @@ nova_web_svg_SvgComponentList_Extension_VTable nova_web_svg_SvgComponentList_Ext
 		0,
 		0,
 		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
 	},
 	nova_Nova_Object_Nova_toString,
 	nova_Nova_Object_Accessor_Nova_hashCodeLong,
@@ -131,8 +123,7 @@ void nova_web_svg_Nova_SvgComponentList_Nova_addChild(nova_web_svg_Nova_SvgCompo
 {
 	nova_web_svg_Nova_SvgComponentNode* l1_Nova_node = (nova_web_svg_Nova_SvgComponentNode*)nova_null;
 	
-	l1_Nova_node = nova_web_svg_Nova_SvgComponentNode_Nova_construct(0, exceptionData);
-	l1_Nova_node->nova_web_svg_Nova_SvgComponentNode_Nova_component = component;
+	l1_Nova_node = nova_web_svg_Nova_SvgComponentNode_Nova_construct(0, exceptionData, component, 0);
 	if (this->nova_web_svg_Nova_SvgComponentList_Nova_start == (nova_web_svg_Nova_SvgComponentNode*)nova_null)
 	{
 		this->nova_web_svg_Nova_SvgComponentList_Nova_start = l1_Nova_node;

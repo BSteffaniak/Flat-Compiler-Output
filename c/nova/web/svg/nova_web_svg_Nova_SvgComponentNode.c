@@ -67,14 +67,6 @@ nova_web_svg_SvgComponentNode_Extension_VTable nova_web_svg_SvgComponentNode_Ext
 		0,
 		0,
 		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
 	},
 	nova_Nova_Object_Nova_toString,
 	nova_Nova_Object_Accessor_Nova_hashCodeLong,
@@ -87,7 +79,7 @@ void nova_web_svg_Nova_SvgComponentNode_Nova_init_static(nova_exception_Nova_Exc
 	}
 }
 
-nova_web_svg_Nova_SvgComponentNode* nova_web_svg_Nova_SvgComponentNode_Nova_construct(nova_web_svg_Nova_SvgComponentNode* this, nova_exception_Nova_ExceptionData* exceptionData)
+nova_web_svg_Nova_SvgComponentNode* nova_web_svg_Nova_SvgComponentNode_Nova_construct(nova_web_svg_Nova_SvgComponentNode* this, nova_exception_Nova_ExceptionData* exceptionData, nova_web_svg_Nova_SvgComponent* component, nova_web_svg_Nova_SvgComponentNode* next)
 {
 	CCLASS_NEW(nova_web_svg_Nova_SvgComponentNode, this,);
 	this->vtable = &nova_web_svg_SvgComponentNode_Extension_VTable_val;
@@ -95,7 +87,7 @@ nova_web_svg_Nova_SvgComponentNode* nova_web_svg_Nova_SvgComponentNode_Nova_cons
 	nova_web_svg_Nova_SvgComponentNode_Nova_super(this, exceptionData);
 	
 	{
-		nova_web_svg_Nova_SvgComponentNode_Nova_this(this, exceptionData);
+		nova_web_svg_Nova_SvgComponentNode_Nova_this(this, exceptionData, component, next);
 	}
 	
 	return this;
@@ -108,19 +100,22 @@ void nova_web_svg_Nova_SvgComponentNode_Nova_destroy(nova_web_svg_Nova_SvgCompon
 		return;
 	}
 	
-	nova_web_svg_Nova_SvgComponentNode_Nova_destroy(&(*this)->nova_web_svg_Nova_SvgComponentNode_Nova_next, exceptionData);
 	nova_web_svg_Nova_SvgComponent_Nova_destroy(&(*this)->nova_web_svg_Nova_SvgComponentNode_Nova_component, exceptionData);
+	nova_web_svg_Nova_SvgComponentNode_Nova_destroy(&(*this)->nova_web_svg_Nova_SvgComponentNode_Nova_next, exceptionData);
 	
 	NOVA_FREE(*this);
 }
 
-void nova_web_svg_Nova_SvgComponentNode_Nova_this(nova_web_svg_Nova_SvgComponentNode* this, nova_exception_Nova_ExceptionData* exceptionData)
+void nova_web_svg_Nova_SvgComponentNode_Nova_this(nova_web_svg_Nova_SvgComponentNode* this, nova_exception_Nova_ExceptionData* exceptionData, nova_web_svg_Nova_SvgComponent* component, nova_web_svg_Nova_SvgComponentNode* next)
 {
+	next = (nova_web_svg_Nova_SvgComponentNode*)(next == 0 ? (nova_Nova_Object*)(nova_Nova_Object*)nova_null : (nova_Nova_Object*)next);
+	this->nova_web_svg_Nova_SvgComponentNode_Nova_component = component;
+	this->nova_web_svg_Nova_SvgComponentNode_Nova_next = next;
 }
 
 void nova_web_svg_Nova_SvgComponentNode_Nova_super(nova_web_svg_Nova_SvgComponentNode* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
-	this->nova_web_svg_Nova_SvgComponentNode_Nova_next = (nova_web_svg_Nova_SvgComponentNode*)nova_null;
 	this->nova_web_svg_Nova_SvgComponentNode_Nova_component = (nova_web_svg_Nova_SvgComponent*)nova_null;
+	this->nova_web_svg_Nova_SvgComponentNode_Nova_next = (nova_web_svg_Nova_SvgComponentNode*)nova_null;
 }
 

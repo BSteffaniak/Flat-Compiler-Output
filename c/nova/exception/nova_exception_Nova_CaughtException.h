@@ -59,8 +59,8 @@ CCLASS_CLASS
 	nova_exception_Nova_CaughtException, 
 	
 	nova_exception_CaughtException_Extension_VTable* vtable;
-	char nova_exception_Nova_CaughtException_Nova_soft;
 	nova_Nova_Class* nova_exception_Nova_CaughtException_Nova_type;
+	char nova_exception_Nova_CaughtException_Nova_soft;
 )
 
 void nova_exception_Nova_CaughtException_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData);

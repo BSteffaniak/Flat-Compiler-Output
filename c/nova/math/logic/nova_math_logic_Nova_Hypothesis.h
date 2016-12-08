@@ -62,7 +62,6 @@ CCLASS_CLASS
 	nova_math_logic_Nova_Hypothesis, 
 	
 	nova_math_logic_Hypothesis_Extension_VTable* vtable;
-	nova_Nova_String* nova_math_logic_Nova_LogicalStatement_Nova_statement;
 	struct Private* prv;
 )
 

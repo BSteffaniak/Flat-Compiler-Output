@@ -147,7 +147,7 @@ void spectra_util_Nova_Location_Nova_destroy(spectra_util_Nova_Location** this, 
 
 void spectra_util_Nova_Location_4_Nova_this(spectra_util_Nova_Location* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
-	this->spectra_util_Nova_Location_Nova_bounds = nova_datastruct_Nova_Bounds_1_Nova_construct(0, exceptionData, 0, 0);
+	this->spectra_util_Nova_Location_Nova_bounds = nova_datastruct_Nova_Bounds_Nova_construct(0, exceptionData, 0, 0);
 }
 
 void spectra_util_Nova_Location_5_Nova_this(spectra_util_Nova_Location* this, nova_exception_Nova_ExceptionData* exceptionData, spectra_util_Nova_Location* loc)

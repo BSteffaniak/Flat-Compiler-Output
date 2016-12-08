@@ -62,8 +62,7 @@ CCLASS_CLASS
 	
 	nova_datastruct_list_CharArrayIterator_Extension_VTable* vtable;
 	int nova_datastruct_list_Nova_CharArrayIterator_Nova_position;
-	nova_datastruct_list_Nova_CharArray* nova_datastruct_list_Nova_CharArrayIterator_Nova_array;
-	int nova_datastruct_list_Nova_CharArrayIterator_Nova_indexSize;
+	struct Private* prv;
 )
 
 void nova_datastruct_list_Nova_CharArrayIterator_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData);

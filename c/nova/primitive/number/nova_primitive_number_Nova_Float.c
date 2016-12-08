@@ -70,14 +70,6 @@ nova_primitive_number_Float_Extension_VTable nova_primitive_number_Float_Extensi
 		(nova_Nova_Object*(*)(nova_operators_Nova_Multiply*, nova_exception_Nova_ExceptionData*, nova_Nova_Object*))nova_primitive_number_Nova_Float_Nova_multiply,
 		0,
 		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
 	},
 	nova_primitive_number_Nova_Float_Nova_toString,
 	nova_Nova_Object_Accessor_Nova_hashCodeLong,
@@ -91,7 +83,7 @@ void nova_primitive_number_Nova_Float_Nova_init_static(nova_exception_Nova_Excep
 	}
 }
 
-nova_primitive_number_Nova_Float* nova_primitive_number_Nova_Float_Nova_construct(nova_primitive_number_Nova_Float* this, nova_exception_Nova_ExceptionData* exceptionData, int value)
+nova_primitive_number_Nova_Float* nova_primitive_number_Nova_Float_Nova_construct(nova_primitive_number_Nova_Float* this, nova_exception_Nova_ExceptionData* exceptionData, float value)
 {
 	CCLASS_NEW(nova_primitive_number_Nova_Float, this,);
 	this->vtable = &nova_primitive_number_Float_Extension_VTable_val;
@@ -119,9 +111,9 @@ void nova_primitive_number_Nova_Float_Nova_destroy(nova_primitive_number_Nova_Fl
 	NOVA_FREE(*this);
 }
 
-void nova_primitive_number_Nova_Float_Nova_this(nova_primitive_number_Nova_Float* this, nova_exception_Nova_ExceptionData* exceptionData, int value)
+void nova_primitive_number_Nova_Float_Nova_this(nova_primitive_number_Nova_Float* this, nova_exception_Nova_ExceptionData* exceptionData, float value)
 {
-	this->nova_primitive_number_Nova_Float_Nova_value = (float)(value);
+	this->nova_primitive_number_Nova_Float_Nova_value = value;
 }
 
 float nova_primitive_number_Nova_Float_Nova_compareTo(nova_primitive_number_Nova_Float* this, nova_exception_Nova_ExceptionData* exceptionData, float other)

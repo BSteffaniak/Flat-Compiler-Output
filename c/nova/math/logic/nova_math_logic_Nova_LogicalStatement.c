@@ -68,14 +68,6 @@ nova_math_logic_LogicalStatement_Extension_VTable nova_math_logic_LogicalStateme
 		0,
 		0,
 		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
 	},
 	nova_math_logic_Nova_LogicalStatement_Nova_toString,
 	nova_Nova_Object_Accessor_Nova_hashCodeLong,
@@ -85,6 +77,7 @@ nova_math_logic_LogicalStatement_Extension_VTable nova_math_logic_LogicalStateme
 CCLASS_PRIVATE
 (
 	nova_datastruct_list_Nova_Array* nova_math_logic_Nova_LogicalStatement_Nova_components;
+	nova_Nova_String* nova_math_logic_Nova_LogicalStatement_Nova_statement;
 	
 )
 void nova_math_logic_Nova_LogicalStatement_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData)
@@ -116,26 +109,26 @@ void nova_math_logic_Nova_LogicalStatement_Nova_destroy(nova_math_logic_Nova_Log
 	}
 	
 	nova_datastruct_list_Nova_Array_Nova_destroy(&(*this)->prv->nova_math_logic_Nova_LogicalStatement_Nova_components, exceptionData);
+	nova_Nova_String_Nova_destroy(&(*this)->prv->nova_math_logic_Nova_LogicalStatement_Nova_statement, exceptionData);
 	NOVA_FREE((*this)->prv);
-	nova_Nova_String_Nova_destroy(&(*this)->nova_math_logic_Nova_LogicalStatement_Nova_statement, exceptionData);
 	
 	NOVA_FREE(*this);
 }
 
 void nova_math_logic_Nova_LogicalStatement_Nova_this(nova_math_logic_Nova_LogicalStatement* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* statement)
 {
-	this->nova_math_logic_Nova_LogicalStatement_Nova_statement = statement;
+	this->prv->nova_math_logic_Nova_LogicalStatement_Nova_statement = statement;
 	this->prv->nova_math_logic_Nova_LogicalStatement_Nova_components = nova_datastruct_list_Nova_Array_0_Nova_construct(0, exceptionData);
 }
 
 nova_Nova_String* nova_math_logic_Nova_LogicalStatement_Nova_toString(nova_math_logic_Nova_LogicalStatement* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
-	return this->nova_math_logic_Nova_LogicalStatement_Nova_statement;
+	return this->prv->nova_math_logic_Nova_LogicalStatement_Nova_statement;
 }
 
 void nova_math_logic_Nova_LogicalStatement_Nova_super(nova_math_logic_Nova_LogicalStatement* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
-	this->nova_math_logic_Nova_LogicalStatement_Nova_statement = (nova_Nova_String*)nova_null;
 	this->prv->nova_math_logic_Nova_LogicalStatement_Nova_components = (nova_datastruct_list_Nova_Array*)nova_null;
+	this->prv->nova_math_logic_Nova_LogicalStatement_Nova_statement = (nova_Nova_String*)nova_null;
 }
 

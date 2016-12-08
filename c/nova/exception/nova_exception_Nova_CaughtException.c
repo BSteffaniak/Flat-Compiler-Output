@@ -66,14 +66,6 @@ nova_exception_CaughtException_Extension_VTable nova_exception_CaughtException_E
 		0,
 		0,
 		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
 	},
 	nova_Nova_Object_Nova_toString,
 	nova_Nova_Object_Accessor_Nova_hashCodeLong,
@@ -107,8 +99,8 @@ void nova_exception_Nova_CaughtException_Nova_destroy(nova_exception_Nova_Caught
 		return;
 	}
 	
-	
 	nova_Nova_Class_Nova_destroy(&(*this)->nova_exception_Nova_CaughtException_Nova_type, exceptionData);
+	
 	
 	NOVA_FREE(*this);
 }
@@ -122,7 +114,7 @@ void nova_exception_Nova_CaughtException_Nova_this(nova_exception_Nova_CaughtExc
 
 void nova_exception_Nova_CaughtException_Nova_super(nova_exception_Nova_CaughtException* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
-	this->nova_exception_Nova_CaughtException_Nova_soft = 0;
 	this->nova_exception_Nova_CaughtException_Nova_type = (nova_Nova_Class*)nova_null;
+	this->nova_exception_Nova_CaughtException_Nova_soft = 0;
 }
 

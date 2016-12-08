@@ -69,10 +69,10 @@ CCLASS_CLASS
 )
 
 void nova_star_Nova_Window_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData);
-nova_star_Nova_Window* nova_star_Nova_Window_Nova_construct(nova_star_Nova_Window* this, nova_exception_Nova_ExceptionData* exceptionData);
+nova_star_Nova_Window* nova_star_Nova_Window_Nova_construct(nova_star_Nova_Window* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* title, int x, int y, int width, int height);
 void nova_star_Nova_Window_Nova_destroy(nova_star_Nova_Window** this, nova_exception_Nova_ExceptionData* exceptionData);
+void nova_star_Nova_Window_Nova_this(nova_star_Nova_Window* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* title, int x, int y, int width, int height);
 void nova_star_Nova_Window_Nova_create(nova_star_Nova_Window* this, nova_exception_Nova_ExceptionData* exceptionData);
-void nova_star_Nova_Window_Nova_this(nova_star_Nova_Window* this, nova_exception_Nova_ExceptionData* exceptionData);
 void nova_star_Nova_Window_Nova_super(nova_star_Nova_Window* this, nova_exception_Nova_ExceptionData* exceptionData);
 
 #endif

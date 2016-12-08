@@ -69,14 +69,6 @@ nova_io_Console_Extension_VTable nova_io_Console_Extension_VTable_val =
 		0,
 		0,
 		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
 	},
 	nova_Nova_Object_Nova_toString,
 	nova_Nova_Object_Accessor_Nova_hashCodeLong,
@@ -224,18 +216,12 @@ void nova_io_Nova_Console_8_static_Nova_write(nova_io_Nova_Console* this, nova_e
 
 int nova_io_Nova_Console_static_Nova_readInt(nova_io_Nova_Console* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
-	nova_Nova_String* l1_Nova_s = (nova_Nova_String*)nova_null;
-	
-	l1_Nova_s = nova_io_Nova_Console_static_Nova_readLine(0, exceptionData);
-	return nova_primitive_number_Nova_Int_static_Nova_parseInt(0, exceptionData, l1_Nova_s);
+	return nova_primitive_number_Nova_Int_static_Nova_parseInt(0, exceptionData, nova_io_Nova_Console_static_Nova_readLine(0, exceptionData));
 }
 
 double nova_io_Nova_Console_static_Nova_readDouble(nova_io_Nova_Console* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
-	nova_Nova_String* l1_Nova_s = (nova_Nova_String*)nova_null;
-	
-	l1_Nova_s = nova_io_Nova_Console_static_Nova_readLine(0, exceptionData);
-	return nova_primitive_number_Nova_Double_static_Nova_parseDouble(0, exceptionData, l1_Nova_s);
+	return nova_primitive_number_Nova_Double_static_Nova_parseDouble(0, exceptionData, nova_io_Nova_Console_static_Nova_readLine(0, exceptionData));
 }
 
 char nova_io_Nova_Console_static_Nova_readChar(nova_io_Nova_Console* this, nova_exception_Nova_ExceptionData* exceptionData)
@@ -260,11 +246,9 @@ void nova_io_Nova_Console_static_Nova_flushOutput(nova_io_Nova_Console* this, no
 nova_Nova_String* nova_io_Nova_Console_static_Nova_readLine(nova_io_Nova_Console* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
 	char* l1_Nova_line = (char*)nova_null;
-	nova_Nova_String* l1_Nova_s = (nova_Nova_String*)nova_null;
 	
 	l1_Nova_line = (char*)(ufgets(stdin));
-	l1_Nova_s = nova_Nova_String_1_Nova_construct(0, exceptionData, l1_Nova_line);
-	return l1_Nova_s;
+	return nova_Nova_String_1_Nova_construct(0, exceptionData, l1_Nova_line);
 }
 
 nova_Nova_String* nova_io_Nova_Console_static_Nova_readPassword(nova_io_Nova_Console* this, nova_exception_Nova_ExceptionData* exceptionData)

@@ -63,6 +63,7 @@ example_HashSetDemo_Extension_VTable example_HashSetDemo_Extension_VTable_val =
 		0,
 		0,
 		0,
+		0,
 		(char(*)(nova_operators_Nova_Equals*, nova_exception_Nova_ExceptionData*, nova_Nova_Object*))nova_Nova_Object_0_Nova_equals,
 		0,
 		0,
@@ -124,7 +125,7 @@ void example_Nova_HashSetDemo_static_Nova_main(example_Nova_HashSetDemo* this, n
 	int l10_Nova_i = 0;
 	int l16_Nova_i = 0;
 	
-	l1_Nova_set = nova_datastruct_Nova_HashSet_0_Nova_construct(0, exceptionData);
+	l1_Nova_set = nova_datastruct_Nova_HashSet_Nova_construct(0, exceptionData, (intptr_t)nova_null, (intptr_t)nova_null);
 	nova_datastruct_Nova_HashSet_Nova_add((nova_datastruct_Nova_HashSet*)(l1_Nova_set), exceptionData, (nova_Nova_Object*)(nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("TEseting"))));
 	nova_io_Nova_Console_2_static_Nova_writeLine(0, exceptionData, (nova_Nova_Object*)(l1_Nova_set));
 	nova_io_Nova_Console_1_static_Nova_writeLine(0, exceptionData, nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)(nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("Contains TEset? "))), exceptionData, nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)(nova_primitive_Nova_Bool_static_Nova_toString(0, exceptionData, (nova_datastruct_Nova_HashSet_0_Nova_contains((nova_datastruct_Nova_HashSet*)(l1_Nova_set), exceptionData, (nova_Nova_Object*)(nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("TEset"))))))), exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("")))));

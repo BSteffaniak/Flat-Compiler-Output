@@ -62,10 +62,10 @@ CCLASS_CLASS
 	nova_exception_Nova_ExceptionData, 
 	
 	nova_exception_ExceptionData_Extension_VTable* vtable;
-	buffer* nova_exception_Nova_ExceptionData_Nova_buf;
 	nova_exception_Nova_ExceptionData* nova_exception_Nova_ExceptionData_Nova_parent;
 	nova_datastruct_list_Nova_Array* nova_exception_Nova_ExceptionData_Nova_caught;
 	nova_exception_Nova_Exception* nova_exception_Nova_ExceptionData_Nova_thrownException;
+	buffer* nova_exception_Nova_ExceptionData_Nova_buf;
 )
 
 void nova_exception_Nova_ExceptionData_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData);

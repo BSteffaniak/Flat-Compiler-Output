@@ -69,14 +69,6 @@ nova_io_FileWriter_Extension_VTable nova_io_FileWriter_Extension_VTable_val =
 		0,
 		0,
 		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
 	},
 	nova_Nova_Object_Nova_toString,
 	nova_Nova_Object_Accessor_Nova_hashCodeLong,
@@ -143,8 +135,8 @@ void nova_io_Nova_FileWriter_Nova_destroy(nova_io_Nova_FileWriter** this, nova_e
 
 void nova_io_Nova_FileWriter_0_Nova_this(nova_io_Nova_FileWriter* this, nova_exception_Nova_ExceptionData* exceptionData, nova_io_Nova_File* file)
 {
-	this->prv->nova_io_Nova_FileWriter_Nova_fp = fopen((char*)file->nova_io_Nova_File_Nova_location->nova_Nova_String_Nova_chars->nova_datastruct_list_Nova_Array_Nova_data, "r+");
 	this->nova_io_Nova_FileWriter_Nova_file = file;
+	this->prv->nova_io_Nova_FileWriter_Nova_fp = fopen((char*)file->nova_io_Nova_File_Nova_location->nova_Nova_String_Nova_chars->nova_datastruct_list_Nova_Array_Nova_data, "r+");
 }
 
 void nova_io_Nova_FileWriter_1_Nova_this(nova_io_Nova_FileWriter* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* location)
@@ -154,14 +146,14 @@ void nova_io_Nova_FileWriter_1_Nova_this(nova_io_Nova_FileWriter* this, nova_exc
 
 char nova_io_Nova_FileWriter_Nova_delete(nova_io_Nova_FileWriter* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
-	nova_io_Nova_FileWriter_Nova_close(this, exceptionData);
-	return remove((char*)(this->nova_io_Nova_FileWriter_Nova_file->nova_io_Nova_File_Nova_location->nova_Nova_String_Nova_chars->nova_datastruct_list_Nova_Array_Nova_data)) == 0;
+	return nova_io_Nova_FileWriter_Nova_close(this, exceptionData) && remove((char*)(this->nova_io_Nova_FileWriter_Nova_file->nova_io_Nova_File_Nova_location->nova_Nova_String_Nova_chars->nova_datastruct_list_Nova_Array_Nova_data)) == 0;
 }
 
-void nova_io_Nova_FileWriter_Nova_reopen(nova_io_Nova_FileWriter* this, nova_exception_Nova_ExceptionData* exceptionData)
+char nova_io_Nova_FileWriter_Nova_reopen(nova_io_Nova_FileWriter* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
 	nova_io_Nova_FileWriter_Nova_close(this, exceptionData);
 	this->prv->nova_io_Nova_FileWriter_Nova_fp = fopen((char*)(this->nova_io_Nova_FileWriter_Nova_file->nova_io_Nova_File_Nova_location->nova_Nova_String_Nova_chars->nova_datastruct_list_Nova_Array_Nova_data), (char*)("r+"));
+	return this->prv->nova_io_Nova_FileWriter_Nova_fp != 0;
 }
 
 void nova_io_Nova_FileWriter_Nova_rewind(nova_io_Nova_FileWriter* this, nova_exception_Nova_ExceptionData* exceptionData)
@@ -171,15 +163,7 @@ void nova_io_Nova_FileWriter_Nova_rewind(nova_io_Nova_FileWriter* this, nova_exc
 
 char nova_io_Nova_FileWriter_Nova_clearContents(nova_io_Nova_FileWriter* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
-	if (nova_io_Nova_File_Accessorfunc_Nova_exists(this->nova_io_Nova_FileWriter_Nova_file, exceptionData))
-	{
-		this->prv->nova_io_Nova_FileWriter_Nova_fp = fopen((char*)(this->nova_io_Nova_FileWriter_Nova_file->nova_io_Nova_File_Nova_location->nova_Nova_String_Nova_chars->nova_datastruct_list_Nova_Array_Nova_data), (char*)("w"));
-		return 1;
-	}
-	else
-	{
-		return 0;
-	}
+	return nova_io_Nova_File_Accessorfunc_Nova_exists(this->nova_io_Nova_FileWriter_Nova_file, exceptionData) && (this->prv->nova_io_Nova_FileWriter_Nova_fp = fopen((char*)(this->nova_io_Nova_FileWriter_Nova_file->nova_io_Nova_File_Nova_location->nova_Nova_String_Nova_chars->nova_datastruct_list_Nova_Array_Nova_data), (char*)("w"))) != 0;
 }
 
 char nova_io_Nova_FileWriter_Nova_create(nova_io_Nova_FileWriter* this, nova_exception_Nova_ExceptionData* exceptionData)
@@ -190,13 +174,11 @@ char nova_io_Nova_FileWriter_Nova_create(nova_io_Nova_FileWriter* this, nova_exc
 		if (!nova_io_Nova_File_Accessorfunc_Nova_exists(this->nova_io_Nova_FileWriter_Nova_file, exceptionData))
 		{
 			THROW(nova_io_Nova_FileNotFoundException_Nova_construct(0, exceptionData, this->nova_io_Nova_FileWriter_Nova_file), 0);
-			return 0;
 		}
 		nova_io_Nova_FileWriter_Nova_reopen(this, exceptionData);
 		if (!nova_io_Nova_File_Accessorfunc_Nova_exists(this->nova_io_Nova_FileWriter_Nova_file, exceptionData))
 		{
 			THROW(nova_io_Nova_FileNotFoundException_Nova_construct(0, exceptionData, this->nova_io_Nova_FileWriter_Nova_file), 0);
-			return 0;
 		}
 		return 1;
 	}
@@ -210,27 +192,17 @@ char nova_io_Nova_FileWriter_Nova_writeLine(nova_io_Nova_FileWriter* this, nova_
 
 char nova_io_Nova_FileWriter_Nova_write(nova_io_Nova_FileWriter* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* data)
 {
-	fputs((char*)(data->nova_Nova_String_Nova_chars->nova_datastruct_list_Nova_Array_Nova_data), this->prv->nova_io_Nova_FileWriter_Nova_fp);
-	nova_io_Nova_FileWriter_Nova_flush(this, exceptionData);
-	return 1;
+	return fputs((char*)(data->nova_Nova_String_Nova_chars->nova_datastruct_list_Nova_Array_Nova_data), this->prv->nova_io_Nova_FileWriter_Nova_fp) != EOF && nova_io_Nova_FileWriter_Nova_flush(this, exceptionData);
 }
 
-void nova_io_Nova_FileWriter_Nova_flush(nova_io_Nova_FileWriter* this, nova_exception_Nova_ExceptionData* exceptionData)
+char nova_io_Nova_FileWriter_Nova_flush(nova_io_Nova_FileWriter* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
-	fflush(this->prv->nova_io_Nova_FileWriter_Nova_fp);
+	return fflush(this->prv->nova_io_Nova_FileWriter_Nova_fp) == 0;
 }
 
 char nova_io_Nova_FileWriter_Nova_close(nova_io_Nova_FileWriter* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
-	if (nova_io_Nova_FileWriter_Accessor_Nova_isOpen(this, exceptionData))
-	{
-		fclose(this->prv->nova_io_Nova_FileWriter_Nova_fp);
-		return 1;
-	}
-	else
-	{
-		return 0;
-	}
+	return nova_io_Nova_FileWriter_Accessor_Nova_isOpen(this, exceptionData) && fclose(this->prv->nova_io_Nova_FileWriter_Nova_fp) == 0;
 }
 
 char nova_io_Nova_FileWriter_Accessor_Nova_isOpen(nova_io_Nova_FileWriter* this, nova_exception_Nova_ExceptionData* exceptionData)
