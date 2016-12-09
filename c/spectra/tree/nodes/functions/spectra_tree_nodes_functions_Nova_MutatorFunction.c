@@ -211,6 +211,7 @@ spectra_tree_nodes_functions_Nova_MutatorFunction* spectra_tree_nodes_functions_
 	parent = (spectra_tree_nodes_Nova_Node*)(parent == 0 ? (nova_Nova_Object*)(nova_Nova_Object*)nova_null : (nova_Nova_Object*)parent);
 	location = (spectra_util_Nova_Location*)(location == 0 ? (nova_Nova_Object*)spectra_util_Nova_Location_Nova_INVALID : (nova_Nova_Object*)location);
 	require = (int)(require == (intptr_t)nova_null ? 1 : require);
+	return (spectra_tree_nodes_functions_Nova_MutatorFunction*)(nova_Nova_Object*)nova_null;
 }
 
 void spectra_tree_nodes_functions_Nova_MutatorFunction_Nova_super(spectra_tree_nodes_functions_Nova_MutatorFunction* this, nova_exception_Nova_ExceptionData* exceptionData)

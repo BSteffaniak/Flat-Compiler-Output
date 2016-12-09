@@ -144,6 +144,11 @@ spectra_tree_nodes_Scope_Extension_VTable spectra_tree_nodes_Scope_Extension_VTa
 };
 
 
+CCLASS_PRIVATE
+(
+	int spectra_tree_nodes_Nova_Scope_Nova_id;
+	
+)
 
 nova_Nova_String* spectra_tree_nodes_Nova_Scope_Nova_printPrecedingWhitespace(spectra_tree_nodes_Nova_Scope* this, nova_exception_Nova_ExceptionData* exceptionData, spectra_tree_nodes_Nova_Node* child);
 nova_Nova_String* spectra_tree_nodes_Nova_Scope_Nova_childToNova(spectra_tree_nodes_Nova_Scope* this, nova_exception_Nova_ExceptionData* exceptionData, spectra_tree_nodes_Nova_Node* child);
@@ -161,7 +166,7 @@ void spectra_tree_nodes_Nova_Scope_Nova_init_static(nova_exception_Nova_Exceptio
 
 spectra_tree_nodes_Nova_Scope* spectra_tree_nodes_Nova_Scope_Nova_construct(spectra_tree_nodes_Nova_Scope* this, nova_exception_Nova_ExceptionData* exceptionData, spectra_tree_nodes_Nova_Node* parent, spectra_util_Nova_Location* location)
 {
-	CCLASS_NEW(spectra_tree_nodes_Nova_Scope, this,);
+	CCLASS_NEW(spectra_tree_nodes_Nova_Scope, this);
 	this->vtable = &spectra_tree_nodes_Scope_Extension_VTable_val;
 	nova_Nova_Object_Nova_super((nova_Nova_Object*)this, exceptionData);
 	spectra_tree_nodes_Nova_Node_Nova_super((spectra_tree_nodes_Nova_Node*)this, exceptionData);
@@ -183,6 +188,7 @@ void spectra_tree_nodes_Nova_Scope_Nova_destroy(spectra_tree_nodes_Nova_Scope** 
 	}
 	
 	
+	NOVA_FREE((*this)->prv);
 	nova_datastruct_list_Nova_Array_Nova_destroy(&(*this)->spectra_tree_nodes_Nova_Scope_Nova_declarations, exceptionData);
 	
 	NOVA_FREE(*this);
@@ -344,7 +350,7 @@ int spectra_tree_nodes_Nova_Scope_Accessor_Nova_depth(spectra_tree_nodes_Nova_Sc
 
 void spectra_tree_nodes_Nova_Scope_Nova_super(spectra_tree_nodes_Nova_Scope* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
-	this->spectra_tree_nodes_Nova_Scope_Nova_id = 0;
 	this->spectra_tree_nodes_Nova_Scope_Nova_declarations = (nova_datastruct_list_Nova_Array*)nova_null;
+	this->prv->spectra_tree_nodes_Nova_Scope_Nova_id = 0;
 }
 

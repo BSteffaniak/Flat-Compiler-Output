@@ -191,9 +191,11 @@ spectra_tree_nodes_controlstructures_Nova_IfStatement* spectra_tree_nodes_contro
 	if (!spectra_tree_nodes_controlstructures_Nova_IfStatement_Nova_parseCondition(l1_Nova_node, exceptionData, input))
 	{
 		spectra_Nova_SyntaxMessage_static_Nova_error(0, exceptionData, nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)(nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("Unable to parse if statement condition '"))), exceptionData, nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)((input)), exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("'")))), (spectra_tree_nodes_Nova_Node*)(l1_Nova_node), 0);
-		return (spectra_tree_nodes_controlstructures_Nova_IfStatement*)(nova_Nova_Object*)nova_null;
 	}
-	return l1_Nova_node;
+	else
+	{
+		return l1_Nova_node;
+	}
 }
 return (spectra_tree_nodes_controlstructures_Nova_IfStatement*)(nova_Nova_Object*)nova_null;}
 
