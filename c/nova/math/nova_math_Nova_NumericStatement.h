@@ -42,7 +42,7 @@ typedef struct nova_math_Nova_NumericStatement nova_math_Nova_NumericStatement;
 #include <nova/math/nova_math_Nova_NumericTree.h>
 #include <nova/math/nova_math_Nova_Statement.h>
 #include <nova/NativeObject.h>
-#include <nova/operators/nova_operators_Nova_Equals.h>
+#include <nova/operators/nova_operators_Nova_EqualsOperator.h>
 
 
 typedef struct nova_math_NumericStatement_Extension_VTable nova_math_NumericStatement_Extension_VTable;

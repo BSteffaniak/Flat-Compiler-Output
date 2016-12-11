@@ -40,7 +40,7 @@ typedef struct spectra_util_Nova_Bounds spectra_util_Nova_Bounds;
 #include <nova/nova_Nova_Class.h>
 #include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <nova/NativeObject.h>
-#include <nova/operators/nova_operators_Nova_Equals.h>
+#include <nova/operators/nova_operators_Nova_EqualsOperator.h>
 
 
 typedef struct spectra_util_Bounds_Extension_VTable spectra_util_Bounds_Extension_VTable;

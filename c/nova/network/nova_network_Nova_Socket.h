@@ -40,7 +40,7 @@ typedef struct nova_network_Nova_Socket nova_network_Nova_Socket;
 #include <nova/nova_Nova_Class.h>
 #include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <nova/NativeObject.h>
-#include <nova/operators/nova_operators_Nova_Equals.h>
+#include <nova/operators/nova_operators_Nova_EqualsOperator.h>
 
 
 typedef struct nova_network_Socket_Extension_VTable nova_network_Socket_Extension_VTable;

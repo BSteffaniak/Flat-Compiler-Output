@@ -41,7 +41,7 @@ typedef struct nova_datastruct_Nova_Node nova_datastruct_Nova_Node;
 #include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_Queue.h>
 #include <nova/NativeObject.h>
-#include <nova/operators/nova_operators_Nova_Equals.h>
+#include <nova/operators/nova_operators_Nova_EqualsOperator.h>
 
 
 typedef struct nova_datastruct_Node_Extension_VTable nova_datastruct_Node_Extension_VTable;

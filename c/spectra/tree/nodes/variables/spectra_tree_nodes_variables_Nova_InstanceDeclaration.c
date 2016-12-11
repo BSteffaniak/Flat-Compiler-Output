@@ -68,7 +68,7 @@
 #include <spectra/tree/nodes/spectra_tree_nodes_Nova_Scope.h>
 #include <spectra/tree/nodes/spectra_tree_nodes_Nova_ValidationResult.h>
 #include <nova/NativeObject.h>
-#include <nova/operators/nova_operators_Nova_Equals.h>
+#include <nova/operators/nova_operators_Nova_EqualsOperator.h>
 
 
 
@@ -101,7 +101,10 @@ spectra_tree_nodes_variables_InstanceDeclaration_Extension_VTable spectra_tree_n
 		0,
 		0,
 		0,
-		(char(*)(nova_operators_Nova_Equals*, nova_exception_Nova_ExceptionData*, nova_Nova_Object*))nova_Nova_Object_0_Nova_equals,
+		(char(*)(nova_operators_Nova_EqualsOperator*, nova_exception_Nova_ExceptionData*, nova_Nova_Object*))nova_Nova_Object_Nova_equals,
+		0,
+		0,
+		0,
 		0,
 		0,
 		0,
@@ -267,7 +270,7 @@ char spectra_tree_nodes_variables_Nova_InstanceDeclaration_Nova_parseModifier(sp
 
 nova_Nova_String* spectra_tree_nodes_variables_Nova_InstanceDeclaration_Nova_writeVisibility(spectra_tree_nodes_variables_Nova_InstanceDeclaration* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
-	return (nova_Nova_String*)(this->spectra_tree_nodes_variables_Nova_InstanceDeclaration_Nova_visibility != (nova_Nova_String*)nova_null ? nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)((this->spectra_tree_nodes_variables_Nova_InstanceDeclaration_Nova_visibility)), exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)(""))) : nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("")));
+	return (nova_Nova_String*)(this->spectra_tree_nodes_variables_Nova_InstanceDeclaration_Nova_visibility != (nova_Nova_String*)nova_null ? nova_Nova_String_Nova_plus((this->spectra_tree_nodes_variables_Nova_InstanceDeclaration_Nova_visibility), exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)(""))) : nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("")));
 }
 
 nova_Nova_String* spectra_tree_nodes_variables_Nova_InstanceDeclaration_Nova_writeStatic(spectra_tree_nodes_variables_Nova_InstanceDeclaration* this, nova_exception_Nova_ExceptionData* exceptionData)
@@ -277,7 +280,7 @@ nova_Nova_String* spectra_tree_nodes_variables_Nova_InstanceDeclaration_Nova_wri
 
 nova_Nova_String* spectra_tree_nodes_variables_Nova_InstanceDeclaration_Nova_writeModifiers(spectra_tree_nodes_variables_Nova_InstanceDeclaration* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
-	return nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)((spectra_tree_nodes_variables_Nova_InstanceDeclaration_Nova_writeVisibility(this, exceptionData))), exceptionData, nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)(nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)(" "))), exceptionData, nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)((spectra_tree_nodes_variables_Nova_InstanceDeclaration_Nova_writeStatic(this, exceptionData))), exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)(" ")))));
+	return (nova_Nova_String*)nova_Nova_String_Nova_plus((spectra_tree_nodes_variables_Nova_InstanceDeclaration_Nova_writeVisibility(this, exceptionData)), exceptionData, (nova_Nova_String*)(nova_Nova_String_Nova_plus(nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)(" ")), exceptionData, (nova_Nova_String*)(nova_Nova_String_Nova_plus((spectra_tree_nodes_variables_Nova_InstanceDeclaration_Nova_writeStatic(this, exceptionData)), exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)(" ")))))));
 }
 
 spectra_tree_nodes_variables_Nova_InstanceDeclaration* spectra_tree_nodes_variables_Nova_InstanceDeclaration_Nova_cloneTo(spectra_tree_nodes_variables_Nova_InstanceDeclaration* this, nova_exception_Nova_ExceptionData* exceptionData, spectra_tree_nodes_variables_Nova_InstanceDeclaration* other)

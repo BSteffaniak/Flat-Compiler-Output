@@ -41,7 +41,7 @@ typedef struct spectra_engines_Nova_CodeGeneratorEngine spectra_engines_Nova_Cod
 #include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <spectra/spectra_Nova_Spectra.h>
 #include <nova/NativeObject.h>
-#include <nova/operators/nova_operators_Nova_Equals.h>
+#include <nova/operators/nova_operators_Nova_EqualsOperator.h>
 
 
 typedef struct spectra_engines_CodeGeneratorEngine_Extension_VTable spectra_engines_CodeGeneratorEngine_Extension_VTable;

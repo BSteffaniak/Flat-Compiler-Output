@@ -41,7 +41,7 @@ typedef struct spectra_util_Nova_Location spectra_util_Nova_Location;
 #include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <nova/datastruct/nova_datastruct_Nova_Bounds.h>
 #include <nova/NativeObject.h>
-#include <nova/operators/nova_operators_Nova_Equals.h>
+#include <nova/operators/nova_operators_Nova_EqualsOperator.h>
 
 
 typedef struct spectra_util_Location_Extension_VTable spectra_util_Location_Extension_VTable;
@@ -72,9 +72,9 @@ spectra_util_Nova_Location* spectra_util_Nova_Location_0_Nova_construct(spectra_
 spectra_util_Nova_Location* spectra_util_Nova_Location_1_Nova_construct(spectra_util_Nova_Location* this, nova_exception_Nova_ExceptionData* exceptionData, spectra_util_Nova_Location* loc);
 spectra_util_Nova_Location* spectra_util_Nova_Location_2_Nova_construct(spectra_util_Nova_Location* this, nova_exception_Nova_ExceptionData* exceptionData, int lineNumber, int offset, int start, int end);
 void spectra_util_Nova_Location_Nova_destroy(spectra_util_Nova_Location** this, nova_exception_Nova_ExceptionData* exceptionData);
-void spectra_util_Nova_Location_4_Nova_this(spectra_util_Nova_Location* this, nova_exception_Nova_ExceptionData* exceptionData);
-void spectra_util_Nova_Location_5_Nova_this(spectra_util_Nova_Location* this, nova_exception_Nova_ExceptionData* exceptionData, spectra_util_Nova_Location* loc);
-void spectra_util_Nova_Location_6_Nova_this(spectra_util_Nova_Location* this, nova_exception_Nova_ExceptionData* exceptionData, int lineNumber, int offset, int start, int end);
+void spectra_util_Nova_Location_Nova_this(spectra_util_Nova_Location* this, nova_exception_Nova_ExceptionData* exceptionData);
+void spectra_util_Nova_Location_0_Nova_this(spectra_util_Nova_Location* this, nova_exception_Nova_ExceptionData* exceptionData, spectra_util_Nova_Location* loc);
+void spectra_util_Nova_Location_1_Nova_this(spectra_util_Nova_Location* this, nova_exception_Nova_ExceptionData* exceptionData, int lineNumber, int offset, int start, int end);
 void spectra_util_Nova_Location_Nova_setLineNumber(spectra_util_Nova_Location* this, nova_exception_Nova_ExceptionData* exceptionData, int lineNumber);
 int spectra_util_Nova_Location_Nova_getStart(spectra_util_Nova_Location* this, nova_exception_Nova_ExceptionData* exceptionData);
 int spectra_util_Nova_Location_Nova_getEnd(spectra_util_Nova_Location* this, nova_exception_Nova_ExceptionData* exceptionData);

@@ -42,7 +42,7 @@ typedef struct nova_regex_Nova_Regex nova_regex_Nova_Regex;
 #include <nova/regex/nova_regex_Nova_Match.h>
 #include <pcre/pcre2.h>
 #include <nova/NativeObject.h>
-#include <nova/operators/nova_operators_Nova_Equals.h>
+#include <nova/operators/nova_operators_Nova_EqualsOperator.h>
 
 
 typedef struct nova_regex_Regex_Extension_VTable nova_regex_Regex_Extension_VTable;

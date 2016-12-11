@@ -48,7 +48,7 @@ typedef struct spectra_Nova_Spectra spectra_Nova_Spectra;
 #include <spectra/tree/spectra_tree_Nova_SyntaxTree.h>
 #include <spectra/spectra_Nova_SyntaxErrorException.h>
 #include <nova/NativeObject.h>
-#include <nova/operators/nova_operators_Nova_Equals.h>
+#include <nova/operators/nova_operators_Nova_EqualsOperator.h>
 
 
 typedef struct spectra_Spectra_Extension_VTable spectra_Spectra_Extension_VTable;

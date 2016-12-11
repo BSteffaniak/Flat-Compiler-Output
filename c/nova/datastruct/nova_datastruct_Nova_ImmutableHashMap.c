@@ -34,7 +34,7 @@
 #include <nova/datastruct/nova_datastruct_Nova_Pair.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_Iterator.h>
 #include <nova/NativeObject.h>
-#include <nova/operators/nova_operators_Nova_Equals.h>
+#include <nova/operators/nova_operators_Nova_EqualsOperator.h>
 
 typedef struct
 {
@@ -79,12 +79,7 @@ nova_datastruct_ImmutableHashMap_Extension_VTable nova_datastruct_ImmutableHashM
 		(nova_Nova_Object*(*)(nova_datastruct_list_Nova_List*, nova_exception_Nova_ExceptionData*, nova_Nova_Object*))nova_datastruct_Nova_ImmutableHashMap_Mutatorfunc_Nova_last,
 		0,
 		0,
-		(char(*)(nova_operators_Nova_Equals*, nova_exception_Nova_ExceptionData*, nova_Nova_Object*))nova_Nova_Object_0_Nova_equals,
-		0,
-		0,
-		0,
-		0,
-		0,
+		(char(*)(nova_operators_Nova_EqualsOperator*, nova_exception_Nova_ExceptionData*, nova_Nova_Object*))nova_Nova_Object_Nova_equals,
 		0,
 		0,
 		0,
@@ -122,7 +117,7 @@ nova_datastruct_Nova_ImmutableHashMap* nova_datastruct_Nova_ImmutableHashMap_0_N
 	nova_datastruct_Nova_ImmutableHashMap_Nova_super(this, exceptionData);
 	
 	{
-		nova_datastruct_Nova_ImmutableHashMap_5_Nova_this(this, exceptionData, map);
+		nova_datastruct_Nova_ImmutableHashMap_0_Nova_this(this, exceptionData, map);
 	}
 	
 	return this;
@@ -136,7 +131,7 @@ nova_datastruct_Nova_ImmutableHashMap* nova_datastruct_Nova_ImmutableHashMap_1_N
 	nova_datastruct_Nova_ImmutableHashMap_Nova_super(this, exceptionData);
 	
 	{
-		nova_datastruct_Nova_ImmutableHashMap_6_Nova_this(this, exceptionData, (nova_datastruct_Nova_HashMap*)(map), clone);
+		nova_datastruct_Nova_ImmutableHashMap_1_Nova_this(this, exceptionData, (nova_datastruct_Nova_HashMap*)(map), clone);
 	}
 	
 	return this;
@@ -158,12 +153,12 @@ void nova_datastruct_Nova_ImmutableHashMap_Nova_destroy(nova_datastruct_Nova_Imm
 	NOVA_FREE(*this);
 }
 
-void nova_datastruct_Nova_ImmutableHashMap_5_Nova_this(nova_datastruct_Nova_ImmutableHashMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_Nova_HashMap* map)
+void nova_datastruct_Nova_ImmutableHashMap_0_Nova_this(nova_datastruct_Nova_ImmutableHashMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_Nova_HashMap* map)
 {
-	nova_datastruct_Nova_ImmutableHashMap_6_Nova_this(this, exceptionData, map, 1);
+	nova_datastruct_Nova_ImmutableHashMap_1_Nova_this(this, exceptionData, map, 1);
 }
 
-void nova_datastruct_Nova_ImmutableHashMap_6_Nova_this(nova_datastruct_Nova_ImmutableHashMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_Nova_HashMap* map, char clone)
+void nova_datastruct_Nova_ImmutableHashMap_1_Nova_this(nova_datastruct_Nova_ImmutableHashMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_Nova_HashMap* map, char clone)
 {
 	this->prv->nova_datastruct_Nova_ImmutableHashMap_Nova_map = (nova_datastruct_Nova_HashMap*)(clone ? nova_datastruct_Nova_HashMap_Nova_clone((nova_datastruct_Nova_HashMap*)(map), exceptionData) : map);
 }

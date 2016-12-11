@@ -41,7 +41,7 @@ typedef struct nova_meta_Nova_Type nova_meta_Nova_Type;
 #include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <nova/meta/nova_meta_Nova_GenericArgument.h>
 #include <nova/NativeObject.h>
-#include <nova/operators/nova_operators_Nova_Equals.h>
+#include <nova/operators/nova_operators_Nova_EqualsOperator.h>
 
 
 typedef struct nova_meta_Type_Extension_VTable nova_meta_Type_Extension_VTable;

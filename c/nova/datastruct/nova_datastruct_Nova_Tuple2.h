@@ -43,7 +43,7 @@ typedef struct nova_datastruct_Nova_Tuple2 nova_datastruct_Nova_Tuple2;
 #include <nova/datastruct/list/nova_datastruct_list_Nova_List.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_ArrayIterator.h>
 #include <nova/NativeObject.h>
-#include <nova/operators/nova_operators_Nova_Equals.h>
+#include <nova/operators/nova_operators_Nova_EqualsOperator.h>
 
 
 typedef struct nova_datastruct_Tuple2_Extension_VTable nova_datastruct_Tuple2_Extension_VTable;

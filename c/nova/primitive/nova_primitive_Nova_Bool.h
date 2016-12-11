@@ -42,7 +42,7 @@ typedef struct nova_primitive_Nova_Bool nova_primitive_Nova_Bool;
 #include <nova/datastruct/nova_datastruct_Nova_Comparable.h>
 #include <nova/primitive/nova_primitive_Nova_Primitive.h>
 #include <nova/NativeObject.h>
-#include <nova/operators/nova_operators_Nova_Equals.h>
+#include <nova/operators/nova_operators_Nova_EqualsOperator.h>
 
 
 typedef struct nova_primitive_Bool_Extension_VTable nova_primitive_Bool_Extension_VTable;

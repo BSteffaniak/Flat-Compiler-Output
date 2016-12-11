@@ -43,7 +43,7 @@ typedef struct nova_math_Nova_NumericOperation nova_math_Nova_NumericOperation;
 #include <nova/math/nova_math_Nova_InvalidNumericStatementException.h>
 #include <nova/math/nova_math_Nova_NumericOperand.h>
 #include <nova/NativeObject.h>
-#include <nova/operators/nova_operators_Nova_Equals.h>
+#include <nova/operators/nova_operators_Nova_EqualsOperator.h>
 
 
 typedef struct nova_math_NumericOperation_Extension_VTable nova_math_NumericOperation_Extension_VTable;

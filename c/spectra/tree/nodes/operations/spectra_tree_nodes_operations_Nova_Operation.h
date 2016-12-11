@@ -79,7 +79,7 @@ typedef struct spectra_tree_nodes_operations_Nova_Operation spectra_tree_nodes_o
 #include <spectra/tree/nodes/spectra_tree_nodes_Nova_Scope.h>
 #include <spectra/tree/nodes/spectra_tree_nodes_Nova_ValidationResult.h>
 #include <nova/NativeObject.h>
-#include <nova/operators/nova_operators_Nova_Equals.h>
+#include <nova/operators/nova_operators_Nova_EqualsOperator.h>
 
 
 typedef struct spectra_tree_nodes_operations_Operation_Extension_VTable spectra_tree_nodes_operations_Operation_Extension_VTable;

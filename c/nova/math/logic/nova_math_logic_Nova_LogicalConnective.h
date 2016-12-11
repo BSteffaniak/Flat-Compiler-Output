@@ -41,7 +41,7 @@ typedef struct nova_math_logic_Nova_LogicalConnective nova_math_logic_Nova_Logic
 #include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <nova/math/logic/nova_math_logic_Nova_StatementComponent.h>
 #include <nova/NativeObject.h>
-#include <nova/operators/nova_operators_Nova_Equals.h>
+#include <nova/operators/nova_operators_Nova_EqualsOperator.h>
 
 
 typedef struct nova_math_logic_LogicalConnective_Extension_VTable nova_math_logic_LogicalConnective_Extension_VTable;

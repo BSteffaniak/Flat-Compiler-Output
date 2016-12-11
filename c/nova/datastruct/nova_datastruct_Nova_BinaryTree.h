@@ -44,7 +44,7 @@ typedef struct nova_datastruct_Nova_BinaryTree nova_datastruct_Nova_BinaryTree;
 #include <nova/datastruct/nova_datastruct_Nova_Tree.h>
 #include <nova/datastruct/nova_datastruct_Nova_Node.h>
 #include <nova/NativeObject.h>
-#include <nova/operators/nova_operators_Nova_Equals.h>
+#include <nova/operators/nova_operators_Nova_EqualsOperator.h>
 
 
 typedef struct nova_datastruct_BinaryTree_Extension_VTable nova_datastruct_BinaryTree_Extension_VTable;

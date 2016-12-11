@@ -31,7 +31,7 @@
 #include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <spectra/util/spectra_util_Nova_OS.h>
 #include <nova/NativeObject.h>
-#include <nova/operators/nova_operators_Nova_Equals.h>
+#include <nova/operators/nova_operators_Nova_EqualsOperator.h>
 
 
 
@@ -64,7 +64,10 @@ spectra_util_FileUtils_Extension_VTable spectra_util_FileUtils_Extension_VTable_
 		0,
 		0,
 		0,
-		(char(*)(nova_operators_Nova_Equals*, nova_exception_Nova_ExceptionData*, nova_Nova_Object*))nova_Nova_Object_0_Nova_equals,
+		(char(*)(nova_operators_Nova_EqualsOperator*, nova_exception_Nova_ExceptionData*, nova_Nova_Object*))nova_Nova_Object_Nova_equals,
+		0,
+		0,
+		0,
 		0,
 		0,
 		0,
@@ -120,7 +123,7 @@ nova_Nova_String* spectra_util_Nova_FileUtils_static_Nova_formatPath(spectra_uti
 	if (spectra_util_Nova_OS_Accessor_static_Nova_isWindows(0, exceptionData))
 	{
 		path = spectra_util_Nova_CompilerStringFunctions_Nova_removeSurroundingQuotes(path, exceptionData);
-		return nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)(nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("\""))), exceptionData, nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)((path)), exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("\""))));
+		return (nova_Nova_String*)nova_Nova_String_Nova_plus(nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("\"")), exceptionData, (nova_Nova_String*)(nova_Nova_String_Nova_plus((path), exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("\"")))));
 	}
 	else
 	{

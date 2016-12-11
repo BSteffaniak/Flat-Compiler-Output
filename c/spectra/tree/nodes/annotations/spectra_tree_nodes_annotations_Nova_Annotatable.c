@@ -74,6 +74,9 @@ spectra_tree_nodes_annotations_Annotatable_Extension_VTable spectra_tree_nodes_a
 		0,
 		0,
 		0,
+		0,
+		0,
+		0,
 	},
 };
 

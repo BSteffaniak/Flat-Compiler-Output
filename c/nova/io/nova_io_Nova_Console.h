@@ -43,7 +43,7 @@ typedef struct nova_io_Nova_Console nova_io_Nova_Console;
 #include <stdlib.h>
 #include <nova/io/NativeConsole.h>
 #include <nova/NativeObject.h>
-#include <nova/operators/nova_operators_Nova_Equals.h>
+#include <nova/operators/nova_operators_Nova_EqualsOperator.h>
 
 
 typedef struct nova_io_Console_Extension_VTable nova_io_Console_Extension_VTable;

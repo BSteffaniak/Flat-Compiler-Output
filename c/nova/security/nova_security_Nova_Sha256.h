@@ -40,7 +40,7 @@ typedef struct nova_security_Nova_Sha256 nova_security_Nova_Sha256;
 #include <nova/nova_Nova_Class.h>
 #include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <nova/NativeObject.h>
-#include <nova/operators/nova_operators_Nova_Equals.h>
+#include <nova/operators/nova_operators_Nova_EqualsOperator.h>
 
 
 typedef struct nova_security_Sha256_Extension_VTable nova_security_Sha256_Extension_VTable;

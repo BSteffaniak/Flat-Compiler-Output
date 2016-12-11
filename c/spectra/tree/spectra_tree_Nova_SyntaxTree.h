@@ -59,7 +59,7 @@ typedef void (*spectra_tree_Nova_SyntaxTree_closure4_Nova_func)(void*, nova_exce
 #include <spectra/tree/spectra_tree_Nova_AnnotationSearchResult.h>
 #include <spectra/tree/spectra_tree_Nova_StatementIterator.h>
 #include <nova/NativeObject.h>
-#include <nova/operators/nova_operators_Nova_Equals.h>
+#include <nova/operators/nova_operators_Nova_EqualsOperator.h>
 
 
 typedef struct spectra_tree_SyntaxTree_Extension_VTable spectra_tree_SyntaxTree_Extension_VTable;

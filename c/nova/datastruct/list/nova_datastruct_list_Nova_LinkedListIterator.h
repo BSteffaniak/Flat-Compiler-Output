@@ -44,7 +44,7 @@ typedef struct nova_datastruct_list_Nova_LinkedListIterator nova_datastruct_list
 #include <nova/datastruct/list/nova_datastruct_list_Nova_ListNode.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_NoSuchElementException.h>
 #include <nova/NativeObject.h>
-#include <nova/operators/nova_operators_Nova_Equals.h>
+#include <nova/operators/nova_operators_Nova_EqualsOperator.h>
 
 
 typedef struct nova_datastruct_list_LinkedListIterator_Extension_VTable nova_datastruct_list_LinkedListIterator_Extension_VTable;

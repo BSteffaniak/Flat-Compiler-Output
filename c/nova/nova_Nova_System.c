@@ -36,7 +36,7 @@
 #include <nova/process/nova_process_Nova_Process.h>
 #include <nova/NativeSystem.h>
 #include <nova/NativeObject.h>
-#include <nova/operators/nova_operators_Nova_Equals.h>
+#include <nova/operators/nova_operators_Nova_EqualsOperator.h>
 
 
 typedef struct nova_exception_Nova_ExceptionData nova_exception_Nova_ExceptionData;
@@ -73,12 +73,7 @@ nova_System_Extension_VTable nova_System_Extension_VTable_val =
 		0,
 		0,
 		0,
-		(char(*)(nova_operators_Nova_Equals*, nova_exception_Nova_ExceptionData*, nova_Nova_Object*))nova_Nova_Object_0_Nova_equals,
-		0,
-		0,
-		0,
-		0,
-		0,
+		(char(*)(nova_operators_Nova_EqualsOperator*, nova_exception_Nova_ExceptionData*, nova_Nova_Object*))nova_Nova_Object_Nova_equals,
 		0,
 		0,
 		0,
@@ -140,7 +135,7 @@ void nova_Nova_System_2_static_Nova_exit(nova_Nova_System* this, nova_exception_
 	{
 		nova_io_Nova_FileWriter* l1_Nova_f = (nova_io_Nova_FileWriter*)nova_null;
 		
-		l1_Nova_f = nova_io_Nova_FileWriter_1_Nova_construct(0, exceptionData, nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)(nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("Log"))), exceptionData, nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)(nova_primitive_number_Nova_Long_static_Nova_toString(0, exceptionData, nova_time_Nova_Time_Accessor_static_Nova_currentTimeMillis(0, exceptionData))), exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)(".txt")))));
+		l1_Nova_f = nova_io_Nova_FileWriter_1_Nova_construct(0, exceptionData, (nova_Nova_String*)(nova_Nova_String_Nova_plus(nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("Log")), exceptionData, (nova_Nova_String*)(nova_Nova_String_Nova_plus(nova_primitive_number_Nova_Long_static_Nova_toString(0, exceptionData, nova_time_Nova_Time_Accessor_static_Nova_currentTimeMillis(0, exceptionData)), exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)(".txt")))))));
 		if (nova_io_Nova_FileWriter_Nova_create(l1_Nova_f, exceptionData))
 		{
 			nova_io_Nova_FileWriter_Nova_writeLine(l1_Nova_f, exceptionData, message);

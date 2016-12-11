@@ -42,7 +42,7 @@ typedef struct spectra_Nova_SyntaxMessage spectra_Nova_SyntaxMessage;
 #include <spectra/tree/nodes/spectra_tree_nodes_Nova_Node.h>
 #include <spectra/spectra_Nova_SyntaxErrorException.h>
 #include <nova/NativeObject.h>
-#include <nova/operators/nova_operators_Nova_Equals.h>
+#include <nova/operators/nova_operators_Nova_EqualsOperator.h>
 
 
 typedef struct spectra_SyntaxMessage_Extension_VTable spectra_SyntaxMessage_Extension_VTable;

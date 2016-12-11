@@ -33,7 +33,7 @@
 #include <nova/star/nova_star_Nova_Window.h>
 #include <nova/thread/NativeThread.h>
 #include <nova/NativeObject.h>
-#include <nova/operators/nova_operators_Nova_Equals.h>
+#include <nova/operators/nova_operators_Nova_EqualsOperator.h>
 
 
 
@@ -66,12 +66,7 @@ nova_star_WindowThread_Extension_VTable nova_star_WindowThread_Extension_VTable_
 		0,
 		0,
 		0,
-		(char(*)(nova_operators_Nova_Equals*, nova_exception_Nova_ExceptionData*, nova_Nova_Object*))nova_Nova_Object_0_Nova_equals,
-		0,
-		0,
-		0,
-		0,
-		0,
+		(char(*)(nova_operators_Nova_EqualsOperator*, nova_exception_Nova_ExceptionData*, nova_Nova_Object*))nova_Nova_Object_Nova_equals,
 		0,
 		0,
 		0,
@@ -91,6 +86,7 @@ CCLASS_PRIVATE
 	void* nova_thread_Nova_Thread_context_Nova_action;
 	void* nova_thread_Nova_Thread_reference_Nova_action;
 	NOVA_THREAD_HANDLE* nova_thread_Nova_Thread_Nova_handle;
+	char nova_thread_Nova_Thread_Nova_useAction;
 	
 	nova_star_Nova_Window* nova_star_Nova_WindowThread_Nova_window;
 	

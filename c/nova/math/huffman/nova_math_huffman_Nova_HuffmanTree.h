@@ -42,7 +42,7 @@ typedef struct nova_math_huffman_Nova_HuffmanTree nova_math_huffman_Nova_Huffman
 #include <nova/datastruct/nova_datastruct_Nova_Tree.h>
 #include <nova/datastruct/nova_datastruct_Nova_Node.h>
 #include <nova/NativeObject.h>
-#include <nova/operators/nova_operators_Nova_Equals.h>
+#include <nova/operators/nova_operators_Nova_EqualsOperator.h>
 
 
 typedef struct nova_math_huffman_HuffmanTree_Extension_VTable nova_math_huffman_HuffmanTree_Extension_VTable;

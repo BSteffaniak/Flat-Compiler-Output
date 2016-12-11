@@ -41,7 +41,7 @@ typedef struct spectra_util_Nova_FileUtils spectra_util_Nova_FileUtils;
 #include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <spectra/util/spectra_util_Nova_OS.h>
 #include <nova/NativeObject.h>
-#include <nova/operators/nova_operators_Nova_Equals.h>
+#include <nova/operators/nova_operators_Nova_EqualsOperator.h>
 
 
 typedef struct spectra_util_FileUtils_Extension_VTable spectra_util_FileUtils_Extension_VTable;

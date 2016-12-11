@@ -43,7 +43,7 @@ typedef struct nova_network_Nova_NetworkOutputStream nova_network_Nova_NetworkOu
 #include <nova/io/nova_io_Nova_OutputStream.h>
 #include <nova/network/nova_network_Nova_ConnectionSocket.h>
 #include <nova/NativeObject.h>
-#include <nova/operators/nova_operators_Nova_Equals.h>
+#include <nova/operators/nova_operators_Nova_EqualsOperator.h>
 
 
 typedef struct nova_network_NetworkOutputStream_Extension_VTable nova_network_NetworkOutputStream_Extension_VTable;

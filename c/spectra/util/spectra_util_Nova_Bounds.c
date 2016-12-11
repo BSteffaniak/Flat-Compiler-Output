@@ -30,7 +30,7 @@
 #include <nova/nova_Nova_Class.h>
 #include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <nova/NativeObject.h>
-#include <nova/operators/nova_operators_Nova_Equals.h>
+#include <nova/operators/nova_operators_Nova_EqualsOperator.h>
 
 
 
@@ -63,7 +63,10 @@ spectra_util_Bounds_Extension_VTable spectra_util_Bounds_Extension_VTable_val =
 		0,
 		0,
 		0,
-		(char(*)(nova_operators_Nova_Equals*, nova_exception_Nova_ExceptionData*, nova_Nova_Object*))spectra_util_Nova_Bounds_Nova_equals,
+		(char(*)(nova_operators_Nova_EqualsOperator*, nova_exception_Nova_ExceptionData*, nova_Nova_Object*))spectra_util_Nova_Bounds_Nova_equals,
+		0,
+		0,
+		0,
 		0,
 		0,
 		0,
@@ -146,7 +149,7 @@ nova_Nova_String* spectra_util_Nova_Bounds_Nova_extractPostString(spectra_util_N
 
 nova_Nova_String* spectra_util_Nova_Bounds_Nova_trimString(spectra_util_Nova_Bounds* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* source)
 {
-	return (nova_Nova_String*)(spectra_util_Nova_Bounds_Accessor_Nova_isValid(this, exceptionData) ? nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)(spectra_util_Nova_Bounds_Nova_extractPreString(this, exceptionData, source)), exceptionData, spectra_util_Nova_Bounds_Nova_extractPostString(this, exceptionData, source)) : source);
+	return (nova_Nova_String*)(spectra_util_Nova_Bounds_Accessor_Nova_isValid(this, exceptionData) ? nova_Nova_String_Nova_plus(spectra_util_Nova_Bounds_Nova_extractPreString(this, exceptionData, source), exceptionData, spectra_util_Nova_Bounds_Nova_extractPostString(this, exceptionData, source)) : source);
 }
 
 spectra_util_Nova_Bounds* spectra_util_Nova_Bounds_Nova_invalidate(spectra_util_Nova_Bounds* this, nova_exception_Nova_ExceptionData* exceptionData)
@@ -162,7 +165,7 @@ char spectra_util_Nova_Bounds_Nova_equals(spectra_util_Nova_Bounds* this, nova_e
 
 nova_Nova_String* spectra_util_Nova_Bounds_Nova_toString(spectra_util_Nova_Bounds* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
-	return nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)(nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("["))), exceptionData, nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)(nova_primitive_number_Nova_Int_static_Nova_toString(0, exceptionData, this->spectra_util_Nova_Bounds_Nova_start)), exceptionData, nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)(nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)(", "))), exceptionData, nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)(nova_primitive_number_Nova_Int_static_Nova_toString(0, exceptionData, this->spectra_util_Nova_Bounds_Nova_end)), exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("]"))))));
+	return (nova_Nova_String*)nova_Nova_String_Nova_plus(nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("[")), exceptionData, (nova_Nova_String*)(nova_Nova_String_Nova_plus(nova_primitive_number_Nova_Int_static_Nova_toString(0, exceptionData, this->spectra_util_Nova_Bounds_Nova_start), exceptionData, (nova_Nova_String*)(nova_Nova_String_Nova_plus(nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)(", ")), exceptionData, (nova_Nova_String*)(nova_Nova_String_Nova_plus(nova_primitive_number_Nova_Int_static_Nova_toString(0, exceptionData, this->spectra_util_Nova_Bounds_Nova_end), exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("]")))))))));
 }
 
 void spectra_util_Nova_Bounds_Nova_cloneTo(spectra_util_Nova_Bounds* this, nova_exception_Nova_ExceptionData* exceptionData, spectra_util_Nova_Bounds* bounds)

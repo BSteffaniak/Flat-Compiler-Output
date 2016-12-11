@@ -40,7 +40,7 @@ typedef struct nova_database_Nova_ResultSet nova_database_Nova_ResultSet;
 #include <nova/nova_Nova_Class.h>
 #include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <nova/NativeObject.h>
-#include <nova/operators/nova_operators_Nova_Equals.h>
+#include <nova/operators/nova_operators_Nova_EqualsOperator.h>
 
 
 typedef struct nova_database_ResultSet_Extension_VTable nova_database_ResultSet_Extension_VTable;

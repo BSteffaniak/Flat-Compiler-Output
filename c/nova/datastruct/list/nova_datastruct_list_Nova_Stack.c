@@ -33,7 +33,7 @@
 #include <nova/datastruct/list/nova_datastruct_list_Nova_EmptyStackException.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_ListNode.h>
 #include <nova/NativeObject.h>
-#include <nova/operators/nova_operators_Nova_Equals.h>
+#include <nova/operators/nova_operators_Nova_EqualsOperator.h>
 
 
 
@@ -66,12 +66,7 @@ nova_datastruct_list_Stack_Extension_VTable nova_datastruct_list_Stack_Extension
 		0,
 		0,
 		0,
-		(char(*)(nova_operators_Nova_Equals*, nova_exception_Nova_ExceptionData*, nova_Nova_Object*))nova_Nova_Object_0_Nova_equals,
-		0,
-		0,
-		0,
-		0,
-		0,
+		(char(*)(nova_operators_Nova_EqualsOperator*, nova_exception_Nova_ExceptionData*, nova_Nova_Object*))nova_Nova_Object_Nova_equals,
 		0,
 		0,
 		0,
@@ -105,7 +100,7 @@ nova_datastruct_list_Nova_Stack* nova_datastruct_list_Nova_Stack_0_Nova_construc
 	nova_datastruct_list_Nova_Stack_Nova_super(this, exceptionData);
 	
 	{
-		nova_datastruct_list_Nova_Stack_4_Nova_this(this, exceptionData);
+		nova_datastruct_list_Nova_Stack_Nova_this(this, exceptionData);
 	}
 	
 	return this;
@@ -119,7 +114,7 @@ nova_datastruct_list_Nova_Stack* nova_datastruct_list_Nova_Stack_1_Nova_construc
 	nova_datastruct_list_Nova_Stack_Nova_super(this, exceptionData);
 	
 	{
-		nova_datastruct_list_Nova_Stack_5_Nova_this(this, exceptionData, data);
+		nova_datastruct_list_Nova_Stack_0_Nova_this(this, exceptionData, data);
 	}
 	
 	return this;
@@ -139,11 +134,11 @@ void nova_datastruct_list_Nova_Stack_Nova_destroy(nova_datastruct_list_Nova_Stac
 	NOVA_FREE(*this);
 }
 
-void nova_datastruct_list_Nova_Stack_4_Nova_this(nova_datastruct_list_Nova_Stack* this, nova_exception_Nova_ExceptionData* exceptionData)
+void nova_datastruct_list_Nova_Stack_Nova_this(nova_datastruct_list_Nova_Stack* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
 }
 
-void nova_datastruct_list_Nova_Stack_5_Nova_this(nova_datastruct_list_Nova_Stack* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_list_Nova_Array* data)
+void nova_datastruct_list_Nova_Stack_0_Nova_this(nova_datastruct_list_Nova_Stack* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_list_Nova_Array* data)
 {
 	nova_datastruct_list_Nova_ArrayIterator* nova_local_0 = (nova_datastruct_list_Nova_ArrayIterator*)nova_null;
 	nova_Nova_Object* l1_Nova_e = (nova_Nova_Object*)nova_null;

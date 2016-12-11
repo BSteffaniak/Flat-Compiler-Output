@@ -43,7 +43,7 @@ typedef struct nova_star_Nova_WindowThread nova_star_Nova_WindowThread;
 #include <nova/star/nova_star_Nova_Window.h>
 #include <nova/thread/NativeThread.h>
 #include <nova/NativeObject.h>
-#include <nova/operators/nova_operators_Nova_Equals.h>
+#include <nova/operators/nova_operators_Nova_EqualsOperator.h>
 
 
 typedef struct nova_star_WindowThread_Extension_VTable nova_star_WindowThread_Extension_VTable;

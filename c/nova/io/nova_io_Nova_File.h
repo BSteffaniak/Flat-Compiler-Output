@@ -43,7 +43,7 @@ typedef struct nova_io_Nova_File nova_io_Nova_File;
 #include <nova/time/nova_time_Nova_Time.h>
 #include <tinydir.h>
 #include <nova/NativeObject.h>
-#include <nova/operators/nova_operators_Nova_Equals.h>
+#include <nova/operators/nova_operators_Nova_EqualsOperator.h>
 
 
 typedef struct nova_io_File_Extension_VTable nova_io_File_Extension_VTable;

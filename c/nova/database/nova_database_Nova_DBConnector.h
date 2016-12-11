@@ -42,7 +42,7 @@ typedef struct nova_database_Nova_DBConnector nova_database_Nova_DBConnector;
 #include <nova/database/NativeDBConnector.h>
 #include <nova/database/nova_database_Nova_ResultSet.h>
 #include <nova/NativeObject.h>
-#include <nova/operators/nova_operators_Nova_Equals.h>
+#include <nova/operators/nova_operators_Nova_EqualsOperator.h>
 
 
 typedef struct nova_database_DBConnector_Extension_VTable nova_database_DBConnector_Extension_VTable;

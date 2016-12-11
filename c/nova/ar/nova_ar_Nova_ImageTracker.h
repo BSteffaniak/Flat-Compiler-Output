@@ -40,7 +40,7 @@ typedef struct nova_ar_Nova_ImageTracker nova_ar_Nova_ImageTracker;
 #include <nova/nova_Nova_Class.h>
 #include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <nova/NativeObject.h>
-#include <nova/operators/nova_operators_Nova_Equals.h>
+#include <nova/operators/nova_operators_Nova_EqualsOperator.h>
 
 
 typedef struct nova_ar_ImageTracker_Extension_VTable nova_ar_ImageTracker_Extension_VTable;

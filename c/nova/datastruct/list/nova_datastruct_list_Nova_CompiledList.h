@@ -40,7 +40,7 @@ typedef struct nova_datastruct_list_Nova_CompiledList nova_datastruct_list_Nova_
 #include <nova/nova_Nova_Class.h>
 #include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <nova/NativeObject.h>
-#include <nova/operators/nova_operators_Nova_Equals.h>
+#include <nova/operators/nova_operators_Nova_EqualsOperator.h>
 
 
 typedef struct nova_datastruct_list_CompiledList_Extension_VTable nova_datastruct_list_CompiledList_Extension_VTable;

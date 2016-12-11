@@ -31,7 +31,7 @@
 #include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <nova/datastruct/nova_datastruct_Nova_Bounds.h>
 #include <nova/NativeObject.h>
-#include <nova/operators/nova_operators_Nova_Equals.h>
+#include <nova/operators/nova_operators_Nova_EqualsOperator.h>
 
 
 
@@ -64,7 +64,10 @@ spectra_util_Location_Extension_VTable spectra_util_Location_Extension_VTable_va
 		0,
 		0,
 		0,
-		(char(*)(nova_operators_Nova_Equals*, nova_exception_Nova_ExceptionData*, nova_Nova_Object*))nova_Nova_Object_0_Nova_equals,
+		(char(*)(nova_operators_Nova_EqualsOperator*, nova_exception_Nova_ExceptionData*, nova_Nova_Object*))nova_Nova_Object_Nova_equals,
+		0,
+		0,
+		0,
 		0,
 		0,
 		0,
@@ -98,7 +101,7 @@ spectra_util_Nova_Location* spectra_util_Nova_Location_0_Nova_construct(spectra_
 	spectra_util_Nova_Location_Nova_super(this, exceptionData);
 	
 	{
-		spectra_util_Nova_Location_4_Nova_this(this, exceptionData);
+		spectra_util_Nova_Location_Nova_this(this, exceptionData);
 	}
 	
 	return this;
@@ -112,7 +115,7 @@ spectra_util_Nova_Location* spectra_util_Nova_Location_1_Nova_construct(spectra_
 	spectra_util_Nova_Location_Nova_super(this, exceptionData);
 	
 	{
-		spectra_util_Nova_Location_5_Nova_this(this, exceptionData, loc);
+		spectra_util_Nova_Location_0_Nova_this(this, exceptionData, loc);
 	}
 	
 	return this;
@@ -126,7 +129,7 @@ spectra_util_Nova_Location* spectra_util_Nova_Location_2_Nova_construct(spectra_
 	spectra_util_Nova_Location_Nova_super(this, exceptionData);
 	
 	{
-		spectra_util_Nova_Location_6_Nova_this(this, exceptionData, lineNumber, offset, start, end);
+		spectra_util_Nova_Location_1_Nova_this(this, exceptionData, lineNumber, offset, start, end);
 	}
 	
 	return this;
@@ -146,19 +149,19 @@ void spectra_util_Nova_Location_Nova_destroy(spectra_util_Nova_Location** this, 
 	NOVA_FREE(*this);
 }
 
-void spectra_util_Nova_Location_4_Nova_this(spectra_util_Nova_Location* this, nova_exception_Nova_ExceptionData* exceptionData)
+void spectra_util_Nova_Location_Nova_this(spectra_util_Nova_Location* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
 	this->spectra_util_Nova_Location_Nova_bounds = nova_datastruct_Nova_Bounds_Nova_construct(0, exceptionData, 0, 0);
 }
 
-void spectra_util_Nova_Location_5_Nova_this(spectra_util_Nova_Location* this, nova_exception_Nova_ExceptionData* exceptionData, spectra_util_Nova_Location* loc)
+void spectra_util_Nova_Location_0_Nova_this(spectra_util_Nova_Location* this, nova_exception_Nova_ExceptionData* exceptionData, spectra_util_Nova_Location* loc)
 {
-	spectra_util_Nova_Location_6_Nova_this(this, exceptionData, 0, loc->spectra_util_Nova_Location_Nova_offset, loc->spectra_util_Nova_Location_Nova_bounds->nova_datastruct_Nova_Bounds_Nova_start, loc->spectra_util_Nova_Location_Nova_bounds->nova_datastruct_Nova_Bounds_Nova_end);
+	spectra_util_Nova_Location_1_Nova_this(this, exceptionData, 0, loc->spectra_util_Nova_Location_Nova_offset, loc->spectra_util_Nova_Location_Nova_bounds->nova_datastruct_Nova_Bounds_Nova_start, loc->spectra_util_Nova_Location_Nova_bounds->nova_datastruct_Nova_Bounds_Nova_end);
 }
 
-void spectra_util_Nova_Location_6_Nova_this(spectra_util_Nova_Location* this, nova_exception_Nova_ExceptionData* exceptionData, int lineNumber, int offset, int start, int end)
+void spectra_util_Nova_Location_1_Nova_this(spectra_util_Nova_Location* this, nova_exception_Nova_ExceptionData* exceptionData, int lineNumber, int offset, int start, int end)
 {
-	spectra_util_Nova_Location_4_Nova_this(this, exceptionData);
+	spectra_util_Nova_Location_Nova_this(this, exceptionData);
 	this->spectra_util_Nova_Location_Nova_offset = offset;
 	this->spectra_util_Nova_Location_Nova_lineNumber = lineNumber;
 	spectra_util_Nova_Location_1_Nova_setBounds(this, exceptionData, start, end);
@@ -247,7 +250,7 @@ spectra_util_Nova_Location* spectra_util_Nova_Location_Nova_asNew(spectra_util_N
 
 nova_Nova_String* spectra_util_Nova_Location_Nova_toString(spectra_util_Nova_Location* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
-	return nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)(nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("Line "))), exceptionData, nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)(nova_primitive_number_Nova_Int_static_Nova_toString(0, exceptionData, (this->spectra_util_Nova_Location_Nova_lineNumber))), exceptionData, nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)(nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)(" "))), exceptionData, nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)(nova_Nova_Object_virtual_Nova_toString((nova_Nova_Object*)((this->spectra_util_Nova_Location_Nova_bounds)), exceptionData)), exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)(""))))));
+	return (nova_Nova_String*)nova_Nova_String_Nova_plus(nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("Line ")), exceptionData, (nova_Nova_String*)(nova_Nova_String_Nova_plus(nova_primitive_number_Nova_Int_static_Nova_toString(0, exceptionData, (this->spectra_util_Nova_Location_Nova_lineNumber)), exceptionData, (nova_Nova_String*)(nova_Nova_String_Nova_plus(nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)(" ")), exceptionData, (nova_Nova_String*)(nova_Nova_String_Nova_plus(nova_Nova_Object_virtual_Nova_toString((nova_Nova_Object*)((this->spectra_util_Nova_Location_Nova_bounds)), exceptionData), exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("")))))))));
 }
 
 void spectra_util_Nova_Location_Nova_super(spectra_util_Nova_Location* this, nova_exception_Nova_ExceptionData* exceptionData)

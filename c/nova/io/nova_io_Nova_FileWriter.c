@@ -33,7 +33,7 @@
 #include <nova/io/nova_io_Nova_FileNotFoundException.h>
 #include <nova/io/nova_io_Nova_OutputStream.h>
 #include <nova/NativeObject.h>
-#include <nova/operators/nova_operators_Nova_Equals.h>
+#include <nova/operators/nova_operators_Nova_EqualsOperator.h>
 
 
 
@@ -66,12 +66,7 @@ nova_io_FileWriter_Extension_VTable nova_io_FileWriter_Extension_VTable_val =
 		0,
 		0,
 		0,
-		(char(*)(nova_operators_Nova_Equals*, nova_exception_Nova_ExceptionData*, nova_Nova_Object*))nova_Nova_Object_0_Nova_equals,
-		0,
-		0,
-		0,
-		0,
-		0,
+		(char(*)(nova_operators_Nova_EqualsOperator*, nova_exception_Nova_ExceptionData*, nova_Nova_Object*))nova_Nova_Object_Nova_equals,
 		0,
 		0,
 		0,
@@ -196,7 +191,7 @@ char nova_io_Nova_FileWriter_Nova_create(nova_io_Nova_FileWriter* this, nova_exc
 
 char nova_io_Nova_FileWriter_Nova_writeLine(nova_io_Nova_FileWriter* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* line)
 {
-	return nova_io_Nova_FileWriter_Nova_write(this, exceptionData, nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)((line)), exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("\n"))));
+	return nova_io_Nova_FileWriter_Nova_write(this, exceptionData, (nova_Nova_String*)(nova_Nova_String_Nova_plus((line), exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("\n")))));
 }
 
 char nova_io_Nova_FileWriter_Nova_write(nova_io_Nova_FileWriter* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* data)

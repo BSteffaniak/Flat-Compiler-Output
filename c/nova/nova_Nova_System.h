@@ -46,7 +46,7 @@ typedef struct nova_Nova_System nova_Nova_System;
 #include <nova/process/nova_process_Nova_Process.h>
 #include <nova/NativeSystem.h>
 #include <nova/NativeObject.h>
-#include <nova/operators/nova_operators_Nova_Equals.h>
+#include <nova/operators/nova_operators_Nova_EqualsOperator.h>
 
 
 typedef struct nova_System_Extension_VTable nova_System_Extension_VTable;

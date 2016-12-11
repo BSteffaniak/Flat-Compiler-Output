@@ -41,7 +41,7 @@ typedef struct nova_time_Nova_Time nova_time_Nova_Time;
 #include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <nova/time/NativeTime.h>
 #include <nova/NativeObject.h>
-#include <nova/operators/nova_operators_Nova_Equals.h>
+#include <nova/operators/nova_operators_Nova_EqualsOperator.h>
 
 
 typedef struct nova_time_Time_Extension_VTable nova_time_Time_Extension_VTable;

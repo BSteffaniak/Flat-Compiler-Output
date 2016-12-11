@@ -44,7 +44,7 @@ typedef struct nova_network_Nova_ClientSocket nova_network_Nova_ClientSocket;
 #include <nova/network/nova_network_Nova_ConnectionSocket.h>
 #include <nova/network/nova_network_Nova_Socket.h>
 #include <nova/NativeObject.h>
-#include <nova/operators/nova_operators_Nova_Equals.h>
+#include <nova/operators/nova_operators_Nova_EqualsOperator.h>
 
 
 typedef struct nova_network_ClientSocket_Extension_VTable nova_network_ClientSocket_Extension_VTable;

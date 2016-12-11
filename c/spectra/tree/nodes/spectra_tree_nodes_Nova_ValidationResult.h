@@ -41,7 +41,7 @@ typedef struct spectra_tree_nodes_Nova_ValidationResult spectra_tree_nodes_Nova_
 #include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <spectra/tree/nodes/spectra_tree_nodes_Nova_Node.h>
 #include <nova/NativeObject.h>
-#include <nova/operators/nova_operators_Nova_Equals.h>
+#include <nova/operators/nova_operators_Nova_EqualsOperator.h>
 
 
 typedef struct spectra_tree_nodes_ValidationResult_Extension_VTable spectra_tree_nodes_ValidationResult_Extension_VTable;

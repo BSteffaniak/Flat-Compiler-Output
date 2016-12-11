@@ -40,7 +40,7 @@ typedef struct spectra_error_Nova_UnimplementedOperationException spectra_error_
 #include <nova/nova_Nova_Class.h>
 #include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <nova/NativeObject.h>
-#include <nova/operators/nova_operators_Nova_Equals.h>
+#include <nova/operators/nova_operators_Nova_EqualsOperator.h>
 
 
 typedef struct spectra_error_UnimplementedOperationException_Extension_VTable spectra_error_UnimplementedOperationException_Extension_VTable;

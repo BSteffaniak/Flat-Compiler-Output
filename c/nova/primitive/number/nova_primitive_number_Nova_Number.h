@@ -40,9 +40,9 @@ typedef struct nova_primitive_number_Nova_Number nova_primitive_number_Nova_Numb
 #include <nova/nova_Nova_Class.h>
 #include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <nova/primitive/nova_primitive_Nova_Primitive.h>
-#include <nova/operators/nova_operators_Nova_Multiply.h>
+#include <nova/operators/nova_operators_Nova_MultiplyOperator.h>
 #include <nova/NativeObject.h>
-#include <nova/operators/nova_operators_Nova_Equals.h>
+#include <nova/operators/nova_operators_Nova_EqualsOperator.h>
 
 
 typedef struct nova_primitive_number_Number_Extension_VTable nova_primitive_number_Number_Extension_VTable;

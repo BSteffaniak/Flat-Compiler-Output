@@ -41,7 +41,7 @@ typedef struct nova_security_Nova_MD5 nova_security_Nova_MD5;
 #include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <nova/security/NativeMD5.h>
 #include <nova/NativeObject.h>
-#include <nova/operators/nova_operators_Nova_Equals.h>
+#include <nova/operators/nova_operators_Nova_EqualsOperator.h>
 
 
 typedef struct nova_security_MD5_Extension_VTable nova_security_MD5_Extension_VTable;

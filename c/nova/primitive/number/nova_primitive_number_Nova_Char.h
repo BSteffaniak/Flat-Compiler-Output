@@ -42,9 +42,9 @@ typedef struct nova_primitive_number_Nova_Char nova_primitive_number_Nova_Char;
 #include <nova/datastruct/nova_datastruct_Nova_Comparable.h>
 #include <nova/primitive/number/nova_primitive_number_Nova_Integer.h>
 #include <nova/primitive/nova_primitive_Nova_Primitive.h>
-#include <nova/operators/nova_operators_Nova_Multiply.h>
+#include <nova/operators/nova_operators_Nova_MultiplyOperator.h>
 #include <nova/NativeObject.h>
-#include <nova/operators/nova_operators_Nova_Equals.h>
+#include <nova/operators/nova_operators_Nova_EqualsOperator.h>
 
 
 typedef struct nova_primitive_number_Char_Extension_VTable nova_primitive_number_Char_Extension_VTable;

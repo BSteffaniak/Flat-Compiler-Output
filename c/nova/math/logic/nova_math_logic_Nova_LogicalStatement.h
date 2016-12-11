@@ -42,7 +42,7 @@ typedef struct nova_math_logic_Nova_LogicalStatement nova_math_logic_Nova_Logica
 #include <nova/math/nova_math_Nova_Statement.h>
 #include <nova/math/logic/nova_math_logic_Nova_StatementComponent.h>
 #include <nova/NativeObject.h>
-#include <nova/operators/nova_operators_Nova_Equals.h>
+#include <nova/operators/nova_operators_Nova_EqualsOperator.h>
 
 
 typedef struct nova_math_logic_LogicalStatement_Extension_VTable nova_math_logic_LogicalStatement_Extension_VTable;

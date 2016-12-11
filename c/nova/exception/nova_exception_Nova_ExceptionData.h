@@ -43,7 +43,7 @@ typedef struct nova_exception_Nova_ExceptionData nova_exception_Nova_ExceptionDa
 #include <NovaExceptionHandling.h>
 #include <nova/exception/nova_exception_Nova_CaughtException.h>
 #include <nova/NativeObject.h>
-#include <nova/operators/nova_operators_Nova_Equals.h>
+#include <nova/operators/nova_operators_Nova_EqualsOperator.h>
 
 
 typedef struct nova_exception_ExceptionData_Extension_VTable nova_exception_ExceptionData_Extension_VTable;

@@ -42,7 +42,7 @@ typedef struct nova_web_svg_Nova_SvgComponent nova_web_svg_Nova_SvgComponent;
 #include <nova/io/nova_io_Nova_FileWriter.h>
 #include <nova/web/svg/nova_web_svg_Nova_SvgComponentList.h>
 #include <nova/NativeObject.h>
-#include <nova/operators/nova_operators_Nova_Equals.h>
+#include <nova/operators/nova_operators_Nova_EqualsOperator.h>
 
 
 typedef struct nova_web_svg_SvgComponent_Extension_VTable nova_web_svg_SvgComponent_Extension_VTable;

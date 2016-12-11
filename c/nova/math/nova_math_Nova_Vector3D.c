@@ -31,7 +31,7 @@
 #include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <nova/math/nova_math_Nova_Vector.h>
 #include <nova/NativeObject.h>
-#include <nova/operators/nova_operators_Nova_Equals.h>
+#include <nova/operators/nova_operators_Nova_EqualsOperator.h>
 
 
 
@@ -64,12 +64,7 @@ nova_math_Vector3D_Extension_VTable nova_math_Vector3D_Extension_VTable_val =
 		0,
 		0,
 		0,
-		(char(*)(nova_operators_Nova_Equals*, nova_exception_Nova_ExceptionData*, nova_Nova_Object*))nova_Nova_Object_0_Nova_equals,
-		0,
-		0,
-		0,
-		0,
-		0,
+		(char(*)(nova_operators_Nova_EqualsOperator*, nova_exception_Nova_ExceptionData*, nova_Nova_Object*))nova_Nova_Object_Nova_equals,
 		0,
 		0,
 		0,
@@ -98,7 +93,7 @@ nova_math_Nova_Vector3D* nova_math_Nova_Vector3D_0_Nova_construct(nova_math_Nova
 	nova_math_Nova_Vector3D_Nova_super(this, exceptionData);
 	
 	{
-		nova_math_Nova_Vector3D_4_Nova_this(this, exceptionData);
+		nova_math_Nova_Vector3D_Nova_this(this, exceptionData);
 	}
 	
 	return this;
@@ -113,7 +108,7 @@ nova_math_Nova_Vector3D* nova_math_Nova_Vector3D_1_Nova_construct(nova_math_Nova
 	nova_math_Nova_Vector3D_Nova_super(this, exceptionData);
 	
 	{
-		nova_math_Nova_Vector3D_5_Nova_this(this, exceptionData, x, y, z);
+		nova_math_Nova_Vector3D_0_Nova_this(this, exceptionData, x, y, z);
 	}
 	
 	return this;
@@ -130,14 +125,14 @@ void nova_math_Nova_Vector3D_Nova_destroy(nova_math_Nova_Vector3D** this, nova_e
 	NOVA_FREE(*this);
 }
 
-void nova_math_Nova_Vector3D_4_Nova_this(nova_math_Nova_Vector3D* this, nova_exception_Nova_ExceptionData* exceptionData)
+void nova_math_Nova_Vector3D_Nova_this(nova_math_Nova_Vector3D* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
 	nova_math_Nova_Vector_0_Nova_this((nova_math_Nova_Vector*)(this), exceptionData, 3);
 }
 
-void nova_math_Nova_Vector3D_5_Nova_this(nova_math_Nova_Vector3D* this, nova_exception_Nova_ExceptionData* exceptionData, double x, double y, double z)
+void nova_math_Nova_Vector3D_0_Nova_this(nova_math_Nova_Vector3D* this, nova_exception_Nova_ExceptionData* exceptionData, double x, double y, double z)
 {
-	nova_math_Nova_Vector3D_4_Nova_this(this, exceptionData);
+	nova_math_Nova_Vector3D_Nova_this(this, exceptionData);
 	nova_math_Nova_Vector3D_Mutator_Nova_x(this, exceptionData, x);
 	nova_math_Nova_Vector3D_Mutator_Nova_y(this, exceptionData, y);
 	nova_math_Nova_Vector3D_Mutator_Nova_z(this, exceptionData, z);

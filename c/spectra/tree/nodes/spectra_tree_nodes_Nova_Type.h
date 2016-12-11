@@ -48,7 +48,7 @@ typedef struct spectra_tree_nodes_Nova_Type spectra_tree_nodes_Nova_Type;
 #include <spectra/tree/nodes/generics/spectra_tree_nodes_generics_Nova_GenericParameter.h>
 #include <spectra/tree/nodes/spectra_tree_nodes_Nova_Import.h>
 #include <nova/NativeObject.h>
-#include <nova/operators/nova_operators_Nova_Equals.h>
+#include <nova/operators/nova_operators_Nova_EqualsOperator.h>
 
 
 typedef struct spectra_tree_nodes_Type_Extension_VTable spectra_tree_nodes_Type_Extension_VTable;

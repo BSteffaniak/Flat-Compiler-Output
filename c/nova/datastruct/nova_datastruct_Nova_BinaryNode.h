@@ -43,7 +43,7 @@ typedef struct nova_datastruct_Nova_BinaryNode nova_datastruct_Nova_BinaryNode;
 #include <nova/datastruct/nova_datastruct_Nova_Node.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_Queue.h>
 #include <nova/NativeObject.h>
-#include <nova/operators/nova_operators_Nova_Equals.h>
+#include <nova/operators/nova_operators_Nova_EqualsOperator.h>
 
 
 typedef struct nova_datastruct_BinaryNode_Extension_VTable nova_datastruct_BinaryNode_Extension_VTable;

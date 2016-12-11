@@ -52,7 +52,7 @@ typedef void (*nova_time_Nova_Timer_closure8_Nova_callback)(void*, nova_exceptio
 #include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <nova/time/nova_time_Nova_Time.h>
 #include <nova/NativeObject.h>
-#include <nova/operators/nova_operators_Nova_Equals.h>
+#include <nova/operators/nova_operators_Nova_EqualsOperator.h>
 
 
 typedef struct nova_time_Timer_Extension_VTable nova_time_Timer_Extension_VTable;

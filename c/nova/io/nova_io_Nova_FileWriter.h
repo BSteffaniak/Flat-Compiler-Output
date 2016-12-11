@@ -43,7 +43,7 @@ typedef struct nova_io_Nova_FileWriter nova_io_Nova_FileWriter;
 #include <nova/io/nova_io_Nova_FileNotFoundException.h>
 #include <nova/io/nova_io_Nova_OutputStream.h>
 #include <nova/NativeObject.h>
-#include <nova/operators/nova_operators_Nova_Equals.h>
+#include <nova/operators/nova_operators_Nova_EqualsOperator.h>
 
 
 typedef struct nova_io_FileWriter_Extension_VTable nova_io_FileWriter_Extension_VTable;

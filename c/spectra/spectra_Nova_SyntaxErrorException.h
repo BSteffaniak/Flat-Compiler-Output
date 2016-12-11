@@ -42,7 +42,7 @@ typedef struct spectra_Nova_SyntaxErrorException spectra_Nova_SyntaxErrorExcepti
 #include <spectra/tree/nodes/spectra_tree_nodes_Nova_Node.h>
 #include <spectra/tree/nodes/spectra_tree_nodes_Nova_Program.h>
 #include <nova/NativeObject.h>
-#include <nova/operators/nova_operators_Nova_Equals.h>
+#include <nova/operators/nova_operators_Nova_EqualsOperator.h>
 
 
 typedef struct spectra_SyntaxErrorException_Extension_VTable spectra_SyntaxErrorException_Extension_VTable;

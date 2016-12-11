@@ -40,7 +40,7 @@ typedef struct nova_exception_Nova_CaughtException nova_exception_Nova_CaughtExc
 #include <nova/nova_Nova_Class.h>
 #include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <nova/NativeObject.h>
-#include <nova/operators/nova_operators_Nova_Equals.h>
+#include <nova/operators/nova_operators_Nova_EqualsOperator.h>
 
 
 typedef struct nova_exception_CaughtException_Extension_VTable nova_exception_CaughtException_Extension_VTable;

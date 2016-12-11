@@ -71,7 +71,7 @@ typedef struct spectra_tree_nodes_Nova_Scope spectra_tree_nodes_Nova_Scope;
 #include <spectra/tree/nodes/spectra_tree_nodes_Nova_Scope.h>
 #include <spectra/tree/nodes/spectra_tree_nodes_Nova_ValidationResult.h>
 #include <nova/NativeObject.h>
-#include <nova/operators/nova_operators_Nova_Equals.h>
+#include <nova/operators/nova_operators_Nova_EqualsOperator.h>
 
 
 typedef struct spectra_tree_nodes_Scope_Extension_VTable spectra_tree_nodes_Scope_Extension_VTable;
