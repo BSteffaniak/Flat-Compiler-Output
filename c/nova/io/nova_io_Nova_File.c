@@ -21,6 +21,7 @@
 #include <nova/datastruct/list/nova_datastruct_list_Nova_IntRange.h>
 #include <nova/thread/nova_thread_Nova_Thread.h>
 #include <nova/thread/async/nova_thread_async_Nova_Async.h>
+#include <nova/thread/async/nova_thread_async_Nova_Task.h>
 #include <nova/gc/nova_gc_Nova_GC.h>
 #include <nova/math/nova_math_Nova_Math.h>
 #include <nova/nova_Nova_Object.h>
@@ -191,29 +192,23 @@ nova_datastruct_list_Nova_Array* nova_io_Nova_File_Nova_getChildFiles(nova_io_No
 {
 	nova_datastruct_list_Nova_Array* l1_Nova_list = (nova_datastruct_list_Nova_Array*)nova_null;
 	nova_datastruct_list_Nova_Array* l1_Nova_directories = (nova_datastruct_list_Nova_Array*)nova_null;
-	Context1 contextArg86 = 
-	{
-		&includeHidden,
-	};
-	Context3 contextArg88 = 
-	{
-		&includeHidden,
-	};
+	Context1* contextArg86 = NOVA_MALLOC(sizeof(Context1));
+	contextArg86->nova_io_Nova_File_Nova_includeHidden = &includeHidden;
+	Context3* contextArg88 = NOVA_MALLOC(sizeof(Context3));
+	contextArg88->nova_io_Nova_File_Nova_includeHidden = &includeHidden;
 	
 	recursive = (int)(recursive == (intptr_t)nova_null ? 0 : recursive);
 	includeHidden = (int)(includeHidden == (intptr_t)nova_null ? 0 : includeHidden);
 	l1_Nova_list = nova_io_Nova_File_Accessorfunc_Nova_files(this, exceptionData);
-	l1_Nova_directories = (nova_datastruct_list_Nova_Array*)(nova_datastruct_list_Nova_List_virtual0_Nova_filter((nova_datastruct_list_Nova_List*)(l1_Nova_list), exceptionData, (nova_datastruct_list_Nova_List_closure15_Nova_filterFunc)&nova_io_Nova_File_Nova_lambda86, this, &contextArg86));
+	l1_Nova_directories = (nova_datastruct_list_Nova_Array*)(nova_datastruct_list_Nova_List_virtual0_Nova_filter((nova_datastruct_list_Nova_List*)(l1_Nova_list), exceptionData, (nova_datastruct_list_Nova_List_closure20_Nova_filterFunc)&nova_io_Nova_File_Nova_lambda86, this, contextArg86));
 	if (recursive)
 	{
-		Context2 contextArg87 = 
-		{
-			&l1_Nova_list,
-		};
+		Context2* contextArg87 = NOVA_MALLOC(sizeof(Context2));
+		contextArg87->nova_io_Nova_File_Nova_list = &l1_Nova_list;
 		
-		nova_datastruct_list_Nova_List_virtual0_Nova_forEach((nova_datastruct_list_Nova_List*)(l1_Nova_directories), exceptionData, (nova_datastruct_list_Nova_List_closure3_Nova_func)&nova_io_Nova_File_Nova_lambda87, this, &contextArg87);
+		nova_datastruct_list_Nova_List_virtual0_Nova_forEach((nova_datastruct_list_Nova_List*)(l1_Nova_directories), exceptionData, (nova_datastruct_list_Nova_List_closure4_Nova_func)&nova_io_Nova_File_Nova_lambda87, this, contextArg87);
 	}
-	return (nova_datastruct_list_Nova_Array*)nova_datastruct_list_Nova_List_virtual0_Nova_filter((nova_datastruct_list_Nova_List*)(l1_Nova_list), exceptionData, (nova_datastruct_list_Nova_List_closure15_Nova_filterFunc)&nova_io_Nova_File_Nova_lambda88, this, &contextArg88);
+	return (nova_datastruct_list_Nova_Array*)nova_datastruct_list_Nova_List_virtual0_Nova_filter((nova_datastruct_list_Nova_List*)(l1_Nova_list), exceptionData, (nova_datastruct_list_Nova_List_closure20_Nova_filterFunc)&nova_io_Nova_File_Nova_lambda88, this, contextArg88);
 }
 
 nova_Nova_String* nova_io_Nova_File_Nova_toString(nova_io_Nova_File* this, nova_exception_Nova_ExceptionData* exceptionData)

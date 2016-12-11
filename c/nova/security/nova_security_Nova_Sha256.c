@@ -21,6 +21,7 @@
 #include <nova/datastruct/list/nova_datastruct_list_Nova_IntRange.h>
 #include <nova/thread/nova_thread_Nova_Thread.h>
 #include <nova/thread/async/nova_thread_async_Nova_Async.h>
+#include <nova/thread/async/nova_thread_async_Nova_Task.h>
 #include <nova/gc/nova_gc_Nova_GC.h>
 #include <nova/math/nova_math_Nova_Math.h>
 #include <nova/nova_Nova_Object.h>
@@ -133,9 +134,7 @@ nova_Nova_String* nova_security_Nova_Sha256_Nova_digest(nova_security_Nova_Sha25
 	int l1_Nova_l = 0;
 	int l1_Nova_n = 0;
 	nova_datastruct_list_Nova_Array* l1_Nova_M = (nova_datastruct_list_Nova_Array*)nova_null;
-	Context1 contextArg95 = 
-	{
-	};
+	Context1* contextArg95 = NOVA_MALLOC(sizeof(Context1));
 	long_long nova_zero_check3 = 0;
 	long_long nova_zero_check4 = 0;
 	int l2_Nova_i = 0;
@@ -144,7 +143,7 @@ nova_Nova_String* nova_security_Nova_Sha256_Nova_digest(nova_security_Nova_Sha25
 	l1_Nova_hash = generated28(this, exceptionData);
 	l1_Nova_l = msg->nova_Nova_String_Nova_count / 4 + 2;
 	l1_Nova_n = (int)(nova_math_Nova_Math_static_Nova_ceil(0, exceptionData, l1_Nova_l / 16));
-	l1_Nova_M = (nova_datastruct_list_Nova_Array*)(nova_datastruct_list_Nova_Array_0_Nova_map((nova_datastruct_list_Nova_Array*)(nova_datastruct_list_Nova_Array_1_Nova_construct(0, exceptionData, l1_Nova_n, (intptr_t)nova_null)), exceptionData, (nova_datastruct_list_Nova_Array_closure3_Nova_mapFunc)&nova_security_Nova_Sha256_Nova_lambda95, this, &contextArg95));
+	l1_Nova_M = (nova_datastruct_list_Nova_Array*)(nova_datastruct_list_Nova_Array_0_Nova_map((nova_datastruct_list_Nova_Array*)(nova_datastruct_list_Nova_Array_1_Nova_construct(0, exceptionData, l1_Nova_n, (intptr_t)nova_null)), exceptionData, (nova_datastruct_list_Nova_Array_closure4_Nova_mapFunc)&nova_security_Nova_Sha256_Nova_lambda95, this, contextArg95));
 	l2_Nova_i = (int)0;
 	for (; l2_Nova_i < (int)l1_Nova_n; l2_Nova_i++)
 	{

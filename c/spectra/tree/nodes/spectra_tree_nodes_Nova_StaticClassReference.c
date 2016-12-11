@@ -21,6 +21,7 @@
 #include <nova/datastruct/list/nova_datastruct_list_Nova_IntRange.h>
 #include <nova/thread/nova_thread_Nova_Thread.h>
 #include <nova/thread/async/nova_thread_async_Nova_Async.h>
+#include <nova/thread/async/nova_thread_async_Nova_Task.h>
 #include <nova/gc/nova_gc_Nova_GC.h>
 #include <nova/math/nova_math_Nova_Math.h>
 #include <nova/nova_Nova_Object.h>
@@ -200,15 +201,13 @@ void spectra_tree_nodes_Nova_StaticClassReference_Nova_this(spectra_tree_nodes_N
 
 spectra_tree_nodes_Nova_StaticClassReference* spectra_tree_nodes_Nova_StaticClassReference_static_Nova_parse(spectra_tree_nodes_Nova_StaticClassReference* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* input, spectra_tree_nodes_Nova_Node* parent, spectra_util_Nova_Location* location, int require)
 {
-	Context1 contextArg52 = 
-	{
-		&input,
-	};
+	Context1* contextArg52 = NOVA_MALLOC(sizeof(Context1));
+	contextArg52->spectra_tree_nodes_Nova_StaticClassReference_Nova_input = &input;
 	
 	parent = (spectra_tree_nodes_Nova_Node*)(parent == 0 ? (nova_Nova_Object*)(nova_Nova_Object*)nova_null : (nova_Nova_Object*)parent);
 	location = (spectra_util_Nova_Location*)(location == 0 ? (nova_Nova_Object*)spectra_util_Nova_Location_Nova_INVALID : (nova_Nova_Object*)location);
 	require = (int)(require == (intptr_t)nova_null ? 1 : require);
-	return (spectra_tree_nodes_Nova_StaticClassReference*)(nova_datastruct_list_Nova_List_virtual0_Nova_any((nova_datastruct_list_Nova_List*)(spectra_tree_nodes_Nova_NovaFile_Accessor_Nova_imports(spectra_tree_nodes_Nova_Node_virtual_Accessor_Nova_parentFile((spectra_tree_nodes_Nova_Node*)(parent), exceptionData), exceptionData)), exceptionData, (nova_datastruct_list_Nova_List_closure9_Nova_anyFunc)&spectra_tree_nodes_Nova_StaticClassReference_static_Nova_lambda52, nova_null, &contextArg52) ? (nova_Nova_Object*)spectra_tree_nodes_Nova_StaticClassReference_Nova_construct(0, exceptionData, parent, location, input) : (nova_Nova_Object*)nova_null);
+	return (spectra_tree_nodes_Nova_StaticClassReference*)(nova_datastruct_list_Nova_List_virtual0_Nova_any((nova_datastruct_list_Nova_List*)(spectra_tree_nodes_Nova_NovaFile_Accessor_Nova_imports(spectra_tree_nodes_Nova_Node_virtual_Accessor_Nova_parentFile((spectra_tree_nodes_Nova_Node*)(parent), exceptionData), exceptionData)), exceptionData, (nova_datastruct_list_Nova_List_closure12_Nova_anyFunc)&spectra_tree_nodes_Nova_StaticClassReference_static_Nova_lambda52, nova_null, contextArg52) ? (nova_Nova_Object*)spectra_tree_nodes_Nova_StaticClassReference_Nova_construct(0, exceptionData, parent, location, input) : (nova_Nova_Object*)nova_null);
 }
 
 nova_Nova_String* spectra_tree_nodes_Nova_StaticClassReference_Nova_writeNova(spectra_tree_nodes_Nova_StaticClassReference* this, nova_exception_Nova_ExceptionData* exceptionData)

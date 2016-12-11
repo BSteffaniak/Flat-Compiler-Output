@@ -21,6 +21,7 @@
 #include <nova/datastruct/list/nova_datastruct_list_Nova_IntRange.h>
 #include <nova/thread/nova_thread_Nova_Thread.h>
 #include <nova/thread/async/nova_thread_async_Nova_Async.h>
+#include <nova/thread/async/nova_thread_async_Nova_Task.h>
 #include <nova/gc/nova_gc_Nova_GC.h>
 #include <nova/math/nova_math_Nova_Math.h>
 #include <nova/nova_Nova_Object.h>
@@ -86,6 +87,9 @@ nova_star_WindowThread_Extension_VTable nova_star_WindowThread_Extension_VTable_
 
 CCLASS_PRIVATE
 (
+	void (*nova_thread_Nova_Thread_Nova_action)(void*, nova_exception_Nova_ExceptionData*, void*);
+	void* nova_thread_Nova_Thread_context_Nova_action;
+	void* nova_thread_Nova_Thread_reference_Nova_action;
 	NOVA_THREAD_HANDLE* nova_thread_Nova_Thread_Nova_handle;
 	
 	nova_star_Nova_Window* nova_star_Nova_WindowThread_Nova_window;

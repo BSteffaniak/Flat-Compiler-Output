@@ -11,12 +11,15 @@ typedef struct nova_datastruct_list_Nova_Array nova_datastruct_list_Nova_Array;
 typedef nova_Nova_Object* (*nova_datastruct_list_Nova_Array_closure1_Nova_mapFunc)(void*, nova_exception_Nova_ExceptionData*, nova_Nova_Object*, int, nova_datastruct_list_Nova_Array*, void*);
 typedef nova_Nova_Object* (*nova_datastruct_list_Nova_Array_closure2_Nova_mapFunc)(void*, nova_exception_Nova_ExceptionData*, nova_Nova_Object*, int, nova_datastruct_list_Nova_Array*, void*);
 typedef nova_Nova_Object* (*nova_datastruct_list_Nova_Array_closure3_Nova_mapFunc)(void*, nova_exception_Nova_ExceptionData*, nova_Nova_Object*, int, nova_datastruct_list_Nova_Array*, void*);
-typedef void (*nova_datastruct_list_Nova_Array_closure4_Nova_func)(void*, nova_exception_Nova_ExceptionData*, nova_Nova_Object*, int, nova_datastruct_list_Nova_Array*, void*);
+typedef nova_Nova_Object* (*nova_datastruct_list_Nova_Array_closure4_Nova_mapFunc)(void*, nova_exception_Nova_ExceptionData*, nova_Nova_Object*, int, nova_datastruct_list_Nova_Array*, void*);
 typedef void (*nova_datastruct_list_Nova_Array_closure5_Nova_func)(void*, nova_exception_Nova_ExceptionData*, nova_Nova_Object*, int, nova_datastruct_list_Nova_Array*, void*);
 typedef void (*nova_datastruct_list_Nova_Array_closure6_Nova_func)(void*, nova_exception_Nova_ExceptionData*, nova_Nova_Object*, int, nova_datastruct_list_Nova_Array*, void*);
-typedef char (*nova_datastruct_list_Nova_Array_closure7_Nova_filterFunc)(void*, nova_exception_Nova_ExceptionData*, nova_Nova_Object*, int, nova_datastruct_list_Nova_Array*, void*);
-typedef char (*nova_datastruct_list_Nova_Array_closure8_Nova_filterFunc)(void*, nova_exception_Nova_ExceptionData*, nova_Nova_Object*, int, nova_datastruct_list_Nova_Array*, void*);
+typedef void (*nova_datastruct_list_Nova_Array_closure7_Nova_func)(void*, nova_exception_Nova_ExceptionData*, nova_Nova_Object*, int, nova_datastruct_list_Nova_Array*, void*);
+typedef void (*nova_datastruct_list_Nova_Array_closure8_Nova_func)(void*, nova_exception_Nova_ExceptionData*, nova_Nova_Object*, int, nova_datastruct_list_Nova_Array*, void*);
 typedef char (*nova_datastruct_list_Nova_Array_closure9_Nova_filterFunc)(void*, nova_exception_Nova_ExceptionData*, nova_Nova_Object*, int, nova_datastruct_list_Nova_Array*, void*);
+typedef char (*nova_datastruct_list_Nova_Array_closure10_Nova_filterFunc)(void*, nova_exception_Nova_ExceptionData*, nova_Nova_Object*, int, nova_datastruct_list_Nova_Array*, void*);
+typedef char (*nova_datastruct_list_Nova_Array_closure11_Nova_filterFunc)(void*, nova_exception_Nova_ExceptionData*, nova_Nova_Object*, int, nova_datastruct_list_Nova_Array*, void*);
+typedef char (*nova_datastruct_list_Nova_Array_closure12_Nova_filterFunc)(void*, nova_exception_Nova_ExceptionData*, nova_Nova_Object*, int, nova_datastruct_list_Nova_Array*, void*);
 
 #include <Nova.h>
 #include <InterfaceVTable.h>
@@ -44,6 +47,7 @@ typedef char (*nova_datastruct_list_Nova_Array_closure9_Nova_filterFunc)(void*, 
 #include <nova/datastruct/list/nova_datastruct_list_Nova_IntRange.h>
 #include <nova/thread/nova_thread_Nova_Thread.h>
 #include <nova/thread/async/nova_thread_async_Nova_Async.h>
+#include <nova/thread/async/nova_thread_async_Nova_Task.h>
 #include <nova/gc/nova_gc_Nova_GC.h>
 #include <nova/math/nova_math_Nova_Math.h>
 #include <nova/nova_Nova_Object.h>
@@ -67,6 +71,8 @@ struct nova_datastruct_list_Array_Extension_VTable
 	nova_datastruct_list_Nova_Array* (*nova_datastruct_list_Nova_Array_virtual_Nova_addUnique)(nova_datastruct_list_Nova_Array*, nova_exception_Nova_ExceptionData*, nova_Nova_Object*);
 	nova_datastruct_list_Nova_Array* (*nova_datastruct_list_Nova_Array_virtual0_Nova_add)(nova_datastruct_list_Nova_Array*, nova_exception_Nova_ExceptionData*, nova_Nova_Object*);
 	nova_datastruct_list_Nova_Array* (*nova_datastruct_list_Nova_Array_virtual1_Nova_add)(nova_datastruct_list_Nova_Array*, nova_exception_Nova_ExceptionData*, int, nova_Nova_Object*);
+	nova_datastruct_list_Nova_Array* (*nova_datastruct_list_Nova_Array_virtual0_Nova_remove)(nova_datastruct_list_Nova_Array*, nova_exception_Nova_ExceptionData*, int);
+	nova_datastruct_list_Nova_Array* (*nova_datastruct_list_Nova_Array_virtual1_Nova_remove)(nova_datastruct_list_Nova_Array*, nova_exception_Nova_ExceptionData*, nova_Nova_Object*);
 	int (*nova_datastruct_list_Nova_Array_virtual_Nova_indexOf)(nova_datastruct_list_Nova_Array*, nova_exception_Nova_ExceptionData*, nova_Nova_Object*, int);
 	nova_Nova_Object** (*nova_datastruct_list_Nova_Array_virtual_Nova_cloneData)(nova_datastruct_list_Nova_Array*, nova_exception_Nova_ExceptionData*);
 	nova_datastruct_list_Nova_Array* (*nova_datastruct_list_Nova_Array_virtual_Nova_clone)(nova_datastruct_list_Nova_Array*, nova_exception_Nova_ExceptionData*);
@@ -102,17 +108,17 @@ nova_datastruct_list_Nova_Array* nova_datastruct_list_Nova_Array_Nova_addAll(nov
 nova_datastruct_list_Nova_Array* nova_datastruct_list_Nova_Array_Nova_addUnique(nova_datastruct_list_Nova_Array* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_Object* element);
 nova_datastruct_list_Nova_Array* nova_datastruct_list_Nova_Array_0_Nova_add(nova_datastruct_list_Nova_Array* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_Object* element);
 nova_datastruct_list_Nova_Array* nova_datastruct_list_Nova_Array_1_Nova_add(nova_datastruct_list_Nova_Array* this, nova_exception_Nova_ExceptionData* exceptionData, int index, nova_Nova_Object* element);
-nova_Nova_Object* nova_datastruct_list_Nova_Array_0_Nova_remove(nova_datastruct_list_Nova_Array* this, nova_exception_Nova_ExceptionData* exceptionData, int index);
-nova_Nova_Object* nova_datastruct_list_Nova_Array_1_Nova_remove(nova_datastruct_list_Nova_Array* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_Object* element);
+nova_datastruct_list_Nova_Array* nova_datastruct_list_Nova_Array_0_Nova_remove(nova_datastruct_list_Nova_Array* this, nova_exception_Nova_ExceptionData* exceptionData, int index);
+nova_datastruct_list_Nova_Array* nova_datastruct_list_Nova_Array_1_Nova_remove(nova_datastruct_list_Nova_Array* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_Object* element);
 int nova_datastruct_list_Nova_Array_Nova_indexOf(nova_datastruct_list_Nova_Array* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_Object* element, int defaultReturnValue);
 char nova_datastruct_list_Nova_Array_Nova_replace(nova_datastruct_list_Nova_Array* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_Object* element, nova_Nova_Object* other);
 nova_datastruct_list_Nova_Array* nova_datastruct_list_Nova_Array_Nova_swap(nova_datastruct_list_Nova_Array* this, nova_exception_Nova_ExceptionData* exceptionData, int index1, int index2);
 nova_Nova_Object** nova_datastruct_list_Nova_Array_Nova_cloneData(nova_datastruct_list_Nova_Array* this, nova_exception_Nova_ExceptionData* exceptionData);
 nova_datastruct_list_Nova_Array* nova_datastruct_list_Nova_Array_Nova_clone(nova_datastruct_list_Nova_Array* this, nova_exception_Nova_ExceptionData* exceptionData);
 nova_datastruct_list_Nova_Array* nova_datastruct_list_Nova_Array_Nova_toArray(nova_datastruct_list_Nova_Array* this, nova_exception_Nova_ExceptionData* exceptionData);
-nova_datastruct_list_Nova_Array* nova_datastruct_list_Nova_Array_0_Nova_map(nova_datastruct_list_Nova_Array* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_list_Nova_Array_closure3_Nova_mapFunc nova_datastruct_list_Nova_Array_Nova_mapFunc, void* nova_datastruct_list_Nova_Array_ref_Nova_mapFunc, void* mapFunc_context);
-nova_datastruct_list_Nova_Array* nova_datastruct_list_Nova_Array_0_Nova_forEach(nova_datastruct_list_Nova_Array* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_list_Nova_Array_closure6_Nova_func nova_datastruct_list_Nova_Array_Nova_func, void* nova_datastruct_list_Nova_Array_ref_Nova_func, void* func_context);
-nova_datastruct_list_Nova_Array* nova_datastruct_list_Nova_Array_0_Nova_filter(nova_datastruct_list_Nova_Array* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_list_Nova_Array_closure9_Nova_filterFunc nova_datastruct_list_Nova_Array_Nova_filterFunc, void* nova_datastruct_list_Nova_Array_ref_Nova_filterFunc, void* filterFunc_context);
+nova_datastruct_list_Nova_Array* nova_datastruct_list_Nova_Array_0_Nova_map(nova_datastruct_list_Nova_Array* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_list_Nova_Array_closure4_Nova_mapFunc nova_datastruct_list_Nova_Array_Nova_mapFunc, void* nova_datastruct_list_Nova_Array_ref_Nova_mapFunc, void* mapFunc_context);
+nova_datastruct_list_Nova_Array* nova_datastruct_list_Nova_Array_0_Nova_forEach(nova_datastruct_list_Nova_Array* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_list_Nova_Array_closure8_Nova_func nova_datastruct_list_Nova_Array_Nova_func, void* nova_datastruct_list_Nova_Array_ref_Nova_func, void* func_context);
+nova_datastruct_list_Nova_Array* nova_datastruct_list_Nova_Array_0_Nova_filter(nova_datastruct_list_Nova_Array* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_list_Nova_Array_closure12_Nova_filterFunc nova_datastruct_list_Nova_Array_Nova_filterFunc, void* nova_datastruct_list_Nova_Array_ref_Nova_filterFunc, void* filterFunc_context);
 nova_datastruct_list_Nova_Array* nova_datastruct_list_Nova_Array_Nova_take(nova_datastruct_list_Nova_Array* this, nova_exception_Nova_ExceptionData* exceptionData, int howMany);
 nova_datastruct_list_Nova_Array* nova_datastruct_list_Nova_Array_Nova_skip(nova_datastruct_list_Nova_Array* this, nova_exception_Nova_ExceptionData* exceptionData, int howMany);
 long_long nova_datastruct_list_Nova_Array_Nova_sumSize(nova_datastruct_list_Nova_Array* this, nova_exception_Nova_ExceptionData* exceptionData);
@@ -133,6 +139,8 @@ void nova_datastruct_list_Nova_Array_Nova_super(nova_datastruct_list_Nova_Array*
 nova_datastruct_list_Nova_Array* nova_datastruct_list_Nova_Array_virtual_Nova_addUnique(nova_datastruct_list_Nova_Array* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_Object* element);
 nova_datastruct_list_Nova_Array* nova_datastruct_list_Nova_Array_virtual0_Nova_add(nova_datastruct_list_Nova_Array* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_Object* element);
 nova_datastruct_list_Nova_Array* nova_datastruct_list_Nova_Array_virtual1_Nova_add(nova_datastruct_list_Nova_Array* this, nova_exception_Nova_ExceptionData* exceptionData, int index, nova_Nova_Object* element);
+nova_datastruct_list_Nova_Array* nova_datastruct_list_Nova_Array_virtual0_Nova_remove(nova_datastruct_list_Nova_Array* this, nova_exception_Nova_ExceptionData* exceptionData, int index);
+nova_datastruct_list_Nova_Array* nova_datastruct_list_Nova_Array_virtual1_Nova_remove(nova_datastruct_list_Nova_Array* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_Object* element);
 int nova_datastruct_list_Nova_Array_virtual_Nova_indexOf(nova_datastruct_list_Nova_Array* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_Object* element, int defaultReturnValue);
 nova_Nova_Object** nova_datastruct_list_Nova_Array_virtual_Nova_cloneData(nova_datastruct_list_Nova_Array* this, nova_exception_Nova_ExceptionData* exceptionData);
 nova_datastruct_list_Nova_Array* nova_datastruct_list_Nova_Array_virtual_Nova_clone(nova_datastruct_list_Nova_Array* this, nova_exception_Nova_ExceptionData* exceptionData);

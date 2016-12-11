@@ -21,6 +21,7 @@
 #include <nova/datastruct/list/nova_datastruct_list_Nova_IntRange.h>
 #include <nova/thread/nova_thread_Nova_Thread.h>
 #include <nova/thread/async/nova_thread_async_Nova_Async.h>
+#include <nova/thread/async/nova_thread_async_Nova_Task.h>
 #include <nova/gc/nova_gc_Nova_GC.h>
 #include <nova/math/nova_math_Nova_Math.h>
 #include <nova/nova_Nova_Object.h>
@@ -278,13 +279,11 @@ spectra_tree_nodes_Nova_Node* spectra_tree_nodes_Nova_Accessible_static_Nova_par
 		l2_Nova_current = l2_Nova_root;
 		if (l2_Nova_current != (spectra_tree_nodes_Nova_Accessible*)nova_null)
 		{
-			Context1 contextArg109 = 
-			{
-				&l2_Nova_current,
-				&require,
-			};
+			Context1* contextArg109 = NOVA_MALLOC(sizeof(Context1));
+			contextArg109->spectra_tree_nodes_Nova_Accessible_Nova_current = &l2_Nova_current;
+			contextArg109->spectra_tree_nodes_Nova_Accessible_Nova_require = &require;
 			
-			if (nova_datastruct_list_Nova_List_virtual0_Nova_all((nova_datastruct_list_Nova_List*)(nova_datastruct_list_Nova_List_virtual_Nova_skip((nova_datastruct_list_Nova_List*)(l1_Nova_fragments), exceptionData, 1)), exceptionData, (nova_datastruct_list_Nova_List_closure12_Nova_allFunc)&spectra_tree_nodes_Nova_Accessible_static_Nova_lambda109, nova_null, &contextArg109, (intptr_t)nova_null))
+			if (nova_datastruct_list_Nova_List_virtual0_Nova_all((nova_datastruct_list_Nova_List*)(nova_datastruct_list_Nova_List_virtual_Nova_skip((nova_datastruct_list_Nova_List*)(l1_Nova_fragments), exceptionData, 1)), exceptionData, (nova_datastruct_list_Nova_List_closure16_Nova_allFunc)&spectra_tree_nodes_Nova_Accessible_static_Nova_lambda109, nova_null, contextArg109, (intptr_t)nova_null))
 			{
 				return (spectra_tree_nodes_Nova_Node*)l2_Nova_root;
 			}

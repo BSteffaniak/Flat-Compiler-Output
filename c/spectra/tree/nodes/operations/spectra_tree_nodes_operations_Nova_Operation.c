@@ -21,6 +21,7 @@
 #include <nova/datastruct/list/nova_datastruct_list_Nova_IntRange.h>
 #include <nova/thread/nova_thread_Nova_Thread.h>
 #include <nova/thread/async/nova_thread_async_Nova_Async.h>
+#include <nova/thread/async/nova_thread_async_Nova_Task.h>
 #include <nova/gc/nova_gc_Nova_GC.h>
 #include <nova/math/nova_math_Nova_Math.h>
 #include <nova/nova_Nova_Object.h>
@@ -246,37 +247,31 @@ spectra_tree_nodes_operations_Nova_Operation* spectra_tree_nodes_operations_Nova
 
 nova_datastruct_list_Nova_IntArray* spectra_tree_nodes_operations_Nova_Operation_Nova_parseOperators(spectra_tree_nodes_operations_Nova_Operation* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* input, nova_datastruct_list_Nova_IntArray* matches)
 {
-	Context1 contextArg61 = 
-	{
-		&input,
-	};
+	Context1* contextArg61 = NOVA_MALLOC(sizeof(Context1));
+	contextArg61->spectra_tree_nodes_operations_Nova_Operation_Nova_input = &input;
 	
-	return (nova_datastruct_list_Nova_IntArray*)(intptr_t)nova_datastruct_list_Nova_IntArray_Nova_forEach(matches, exceptionData, (nova_datastruct_list_Nova_IntArray_closure6_Nova_func)&spectra_tree_nodes_operations_Nova_Operation_Nova_lambda61, this, &contextArg61);
+	return (nova_datastruct_list_Nova_IntArray*)(intptr_t)nova_datastruct_list_Nova_IntArray_Nova_forEach(matches, exceptionData, (nova_datastruct_list_Nova_IntArray_closure8_Nova_func)&spectra_tree_nodes_operations_Nova_Operation_Nova_lambda61, this, contextArg61);
 }
 
 char spectra_tree_nodes_operations_Nova_Operation_0_Nova_parseOperands(spectra_tree_nodes_operations_Nova_Operation* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_list_Nova_Array* operands)
 {
-	Context2 contextArg62 = 
-	{
-	};
+	Context2* contextArg62 = NOVA_MALLOC(sizeof(Context2));
 	
-	return nova_datastruct_list_Nova_List_virtual0_Nova_all((nova_datastruct_list_Nova_List*)(operands), exceptionData, (nova_datastruct_list_Nova_List_closure12_Nova_allFunc)&spectra_tree_nodes_operations_Nova_Operation_Nova_lambda62, this, &contextArg62, (intptr_t)nova_null);
+	return nova_datastruct_list_Nova_List_virtual0_Nova_all((nova_datastruct_list_Nova_List*)(operands), exceptionData, (nova_datastruct_list_Nova_List_closure16_Nova_allFunc)&spectra_tree_nodes_operations_Nova_Operation_Nova_lambda62, this, contextArg62, (intptr_t)nova_null);
 }
 
 char spectra_tree_nodes_operations_Nova_Operation_1_Nova_parseOperands(spectra_tree_nodes_operations_Nova_Operation* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* input, nova_datastruct_list_Nova_IntArray* matches)
 {
 	nova_datastruct_list_Nova_Array* l1_Nova_operands = (nova_datastruct_list_Nova_Array*)nova_null;
 	char l1_Nova_prev = 0;
-	Context3 contextArg131 = 
-	{
-		&l1_Nova_prev,
-		&input,
-		&l1_Nova_operands,
-	};
+	Context3* contextArg131 = NOVA_MALLOC(sizeof(Context3));
+	contextArg131->spectra_tree_nodes_operations_Nova_Operation_Nova_prev = &l1_Nova_prev;
+	contextArg131->spectra_tree_nodes_operations_Nova_Operation_Nova_input = &input;
+	contextArg131->spectra_tree_nodes_operations_Nova_Operation_Nova_operands = &l1_Nova_operands;
 	
 	l1_Nova_operands = nova_datastruct_list_Nova_Array_0_Nova_construct(0, exceptionData);
 	l1_Nova_prev = 0;
-	if (!nova_datastruct_list_Nova_IntArray_Nova_all(matches, exceptionData, (nova_datastruct_list_Nova_IntArray_closure12_Nova_allFunc)&spectra_tree_nodes_operations_Nova_Operation_Nova_lambda131, this, &contextArg131, (intptr_t)nova_null))
+	if (!nova_datastruct_list_Nova_IntArray_Nova_all(matches, exceptionData, (nova_datastruct_list_Nova_IntArray_closure16_Nova_allFunc)&spectra_tree_nodes_operations_Nova_Operation_Nova_lambda131, this, contextArg131, (intptr_t)nova_null))
 	{
 		return 0;
 	}

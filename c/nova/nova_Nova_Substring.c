@@ -21,6 +21,7 @@
 #include <nova/datastruct/list/nova_datastruct_list_Nova_IntRange.h>
 #include <nova/thread/nova_thread_Nova_Thread.h>
 #include <nova/thread/async/nova_thread_async_Nova_Async.h>
+#include <nova/thread/async/nova_thread_async_Nova_Task.h>
 #include <nova/gc/nova_gc_Nova_GC.h>
 #include <nova/math/nova_math_Nova_Math.h>
 #include <nova/nova_Nova_Object.h>
@@ -171,11 +172,9 @@ int nova_Nova_Substring_Accessor_Nova_end(nova_Nova_Substring* this, nova_except
 
 long_long nova_Nova_Substring_Accessor_Nova_hashCodeLong(nova_Nova_Substring* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
-	Context1 contextArg3 = 
-	{
-	};
+	Context1* contextArg3 = NOVA_MALLOC(sizeof(Context1));
 	
-	return nova_datastruct_list_Nova_CharArray_Nova_reduce((nova_datastruct_list_Nova_CharArray*)(nova_datastruct_list_Nova_CharArray_Nova_take((nova_datastruct_list_Nova_CharArray*)(nova_datastruct_list_Nova_CharArray_Nova_skip((nova_datastruct_list_Nova_CharArray*)(this->nova_Nova_String_Nova_chars), exceptionData, this->nova_Nova_Substring_Nova_start)), exceptionData, this->nova_Nova_String_Nova_count)), exceptionData, (nova_datastruct_list_Nova_CharArray_closure6_Nova_func)&nova_Nova_Substring_Nova_lambda3, this, &contextArg3, 0);
+	return nova_datastruct_list_Nova_CharArray_Nova_reduce((nova_datastruct_list_Nova_CharArray*)(nova_datastruct_list_Nova_CharArray_Nova_take((nova_datastruct_list_Nova_CharArray*)(nova_datastruct_list_Nova_CharArray_Nova_skip((nova_datastruct_list_Nova_CharArray*)(this->nova_Nova_String_Nova_chars), exceptionData, this->nova_Nova_Substring_Nova_start)), exceptionData, this->nova_Nova_String_Nova_count)), exceptionData, (nova_datastruct_list_Nova_CharArray_closure8_Nova_func)&nova_Nova_Substring_Nova_lambda3, this, contextArg3, 0);
 }
 
 

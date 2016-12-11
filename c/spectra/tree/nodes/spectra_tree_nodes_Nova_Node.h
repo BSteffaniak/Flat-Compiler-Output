@@ -12,6 +12,8 @@ typedef void (*spectra_tree_nodes_Nova_Node_closure3_Nova_action)(void*, nova_ex
 typedef void (*spectra_tree_nodes_Nova_Node_closure4_Nova_action)(void*, nova_exception_Nova_ExceptionData*, void*);
 typedef void (*spectra_tree_nodes_Nova_Node_closure5_Nova_action)(void*, nova_exception_Nova_ExceptionData*, void*);
 typedef void (*spectra_tree_nodes_Nova_Node_closure6_Nova_action)(void*, nova_exception_Nova_ExceptionData*, void*);
+typedef void (*spectra_tree_nodes_Nova_Node_closure7_Nova_action)(void*, nova_exception_Nova_ExceptionData*, void*);
+typedef void (*spectra_tree_nodes_Nova_Node_closure8_Nova_action)(void*, nova_exception_Nova_ExceptionData*, void*);
 
 #include <Nova.h>
 #include <InterfaceVTable.h>
@@ -39,6 +41,7 @@ typedef void (*spectra_tree_nodes_Nova_Node_closure6_Nova_action)(void*, nova_ex
 #include <nova/datastruct/list/nova_datastruct_list_Nova_IntRange.h>
 #include <nova/thread/nova_thread_Nova_Thread.h>
 #include <nova/thread/async/nova_thread_async_Nova_Async.h>
+#include <nova/thread/async/nova_thread_async_Nova_Task.h>
 #include <nova/gc/nova_gc_Nova_GC.h>
 #include <nova/math/nova_math_Nova_Math.h>
 #include <nova/nova_Nova_Object.h>
@@ -136,8 +139,8 @@ spectra_tree_nodes_Nova_ValidationResult* spectra_tree_nodes_Nova_Node_Nova_vali
 spectra_tree_nodes_variables_Nova_VariableDeclaration* spectra_tree_nodes_Nova_Node_Nova_findVariableDeclaration(spectra_tree_nodes_Nova_Node* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* name, int searchAncestors);
 spectra_tree_nodes_Nova_Node* spectra_tree_nodes_Nova_Node_Nova_parseStatement(spectra_tree_nodes_Nova_Node* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* input, spectra_tree_nodes_Nova_Node* parent, spectra_util_Nova_Location* location, int require);
 spectra_tree_nodes_Nova_Node* spectra_tree_nodes_Nova_Node_Nova_generateTemporaryScopeNode(spectra_tree_nodes_Nova_Node* this, nova_exception_Nova_ExceptionData* exceptionData);
-void spectra_tree_nodes_Nova_Node_static_Nova_strictParse(spectra_tree_nodes_Nova_Node* this, nova_exception_Nova_ExceptionData* exceptionData, spectra_tree_nodes_Nova_Node_closure3_Nova_action spectra_tree_nodes_Nova_Node_Nova_action, void* spectra_tree_nodes_Nova_Node_ref_Nova_action, void* action_context);
-void spectra_tree_nodes_Nova_Node_static_Nova_catchSyntaxErrors(spectra_tree_nodes_Nova_Node* this, nova_exception_Nova_ExceptionData* exceptionData, spectra_tree_nodes_Nova_Node_closure6_Nova_action spectra_tree_nodes_Nova_Node_Nova_action, void* spectra_tree_nodes_Nova_Node_ref_Nova_action, void* action_context);
+void spectra_tree_nodes_Nova_Node_static_Nova_strictParse(spectra_tree_nodes_Nova_Node* this, nova_exception_Nova_ExceptionData* exceptionData, spectra_tree_nodes_Nova_Node_closure4_Nova_action spectra_tree_nodes_Nova_Node_Nova_action, void* spectra_tree_nodes_Nova_Node_ref_Nova_action, void* action_context);
+void spectra_tree_nodes_Nova_Node_static_Nova_catchSyntaxErrors(spectra_tree_nodes_Nova_Node* this, nova_exception_Nova_ExceptionData* exceptionData, spectra_tree_nodes_Nova_Node_closure8_Nova_action spectra_tree_nodes_Nova_Node_Nova_action, void* spectra_tree_nodes_Nova_Node_ref_Nova_action, void* action_context);
 spectra_tree_nodes_Nova_Node* spectra_tree_nodes_Nova_Node_Nova_clone(spectra_tree_nodes_Nova_Node* this, nova_exception_Nova_ExceptionData* exceptionData, spectra_tree_nodes_Nova_Node* parent, spectra_util_Nova_Location* location, int cloneChildren);
 spectra_tree_nodes_Nova_Node* spectra_tree_nodes_Nova_Node_Nova_cloneTo(spectra_tree_nodes_Nova_Node* this, nova_exception_Nova_ExceptionData* exceptionData, spectra_tree_nodes_Nova_Node* other);
 char spectra_tree_nodes_Nova_Node_Nova_replace(spectra_tree_nodes_Nova_Node* this, nova_exception_Nova_ExceptionData* exceptionData, spectra_tree_nodes_Nova_Node* toReplace, spectra_tree_nodes_Nova_Node* replacement);

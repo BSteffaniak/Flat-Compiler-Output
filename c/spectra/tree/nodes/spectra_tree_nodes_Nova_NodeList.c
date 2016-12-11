@@ -21,6 +21,7 @@
 #include <nova/datastruct/list/nova_datastruct_list_Nova_IntRange.h>
 #include <nova/thread/nova_thread_Nova_Thread.h>
 #include <nova/thread/async/nova_thread_async_Nova_Async.h>
+#include <nova/thread/async/nova_thread_async_Nova_Task.h>
 #include <nova/gc/nova_gc_Nova_GC.h>
 #include <nova/math/nova_math_Nova_Math.h>
 #include <nova/nova_Nova_Object.h>
@@ -225,13 +226,11 @@ char spectra_tree_nodes_Nova_NodeList_Nova_containsChild(spectra_tree_nodes_Nova
 
 nova_datastruct_list_Nova_Array* spectra_tree_nodes_Nova_NodeList_Nova_inheritChildren(spectra_tree_nodes_Nova_NodeList* this, nova_exception_Nova_ExceptionData* exceptionData, spectra_tree_nodes_Nova_NodeList* oldParent, int clone)
 {
-	Context1 contextArg41 = 
-	{
-		&clone,
-	};
+	Context1* contextArg41 = NOVA_MALLOC(sizeof(Context1));
+	contextArg41->spectra_tree_nodes_Nova_NodeList_Nova_clone = &clone;
 	
 	clone = (int)(clone == (intptr_t)nova_null ? 0 : clone);
-	return (nova_datastruct_list_Nova_Array*)nova_datastruct_list_Nova_List_virtual0_Nova_forEach((nova_datastruct_list_Nova_List*)(oldParent->spectra_tree_nodes_Nova_NodeList_Nova_children), exceptionData, (nova_datastruct_list_Nova_List_closure3_Nova_func)&spectra_tree_nodes_Nova_NodeList_Nova_lambda41, this, &contextArg41);
+	return (nova_datastruct_list_Nova_Array*)nova_datastruct_list_Nova_List_virtual0_Nova_forEach((nova_datastruct_list_Nova_List*)(oldParent->spectra_tree_nodes_Nova_NodeList_Nova_children), exceptionData, (nova_datastruct_list_Nova_List_closure4_Nova_func)&spectra_tree_nodes_Nova_NodeList_Nova_lambda41, this, contextArg41);
 }
 
 spectra_tree_nodes_Nova_Node* spectra_tree_nodes_Nova_NodeList_0_Nova_removeChild(spectra_tree_nodes_Nova_NodeList* this, nova_exception_Nova_ExceptionData* exceptionData, spectra_tree_nodes_Nova_Node* node)
@@ -254,11 +253,9 @@ spectra_tree_nodes_Nova_Node* spectra_tree_nodes_Nova_NodeList_1_Nova_removeChil
 
 nova_datastruct_list_Nova_Array* spectra_tree_nodes_Nova_NodeList_Nova_slaughterChildren(spectra_tree_nodes_Nova_NodeList* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
-	Context2 contextArg42 = 
-	{
-	};
+	Context2* contextArg42 = NOVA_MALLOC(sizeof(Context2));
 	
-	return (nova_datastruct_list_Nova_Array*)nova_datastruct_list_Nova_List_virtual0_Nova_forEach((nova_datastruct_list_Nova_List*)(this->spectra_tree_nodes_Nova_NodeList_Nova_children), exceptionData, (nova_datastruct_list_Nova_List_closure3_Nova_func)&spectra_tree_nodes_Nova_NodeList_Nova_lambda42, this, &contextArg42);
+	return (nova_datastruct_list_Nova_Array*)nova_datastruct_list_Nova_List_virtual0_Nova_forEach((nova_datastruct_list_Nova_List*)(this->spectra_tree_nodes_Nova_NodeList_Nova_children), exceptionData, (nova_datastruct_list_Nova_List_closure4_Nova_func)&spectra_tree_nodes_Nova_NodeList_Nova_lambda42, this, contextArg42);
 }
 
 void spectra_tree_nodes_Nova_NodeList_Nova_lambda41(spectra_tree_nodes_Nova_NodeList* this, nova_exception_Nova_ExceptionData* exceptionData, spectra_tree_nodes_Nova_Node* child, int _2, nova_datastruct_list_Nova_Array* _3, Context1* context)

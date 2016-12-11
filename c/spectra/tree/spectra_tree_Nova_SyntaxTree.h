@@ -4,6 +4,13 @@
 
 typedef struct spectra_tree_Nova_SyntaxTree spectra_tree_Nova_SyntaxTree;
 
+typedef struct nova_exception_Nova_ExceptionData nova_exception_Nova_ExceptionData;
+typedef struct spectra_tree_nodes_Nova_NovaFile spectra_tree_nodes_Nova_NovaFile;
+
+typedef void (*spectra_tree_Nova_SyntaxTree_closure1_Nova_func)(void*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_NovaFile*, void*);
+typedef void (*spectra_tree_Nova_SyntaxTree_closure2_Nova_func)(void*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_NovaFile*, void*);
+typedef void (*spectra_tree_Nova_SyntaxTree_closure3_Nova_func)(void*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_NovaFile*, void*);
+typedef void (*spectra_tree_Nova_SyntaxTree_closure4_Nova_func)(void*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_NovaFile*, void*);
 
 #include <Nova.h>
 #include <InterfaceVTable.h>
@@ -31,6 +38,7 @@ typedef struct spectra_tree_Nova_SyntaxTree spectra_tree_Nova_SyntaxTree;
 #include <nova/datastruct/list/nova_datastruct_list_Nova_IntRange.h>
 #include <nova/thread/nova_thread_Nova_Thread.h>
 #include <nova/thread/async/nova_thread_async_Nova_Async.h>
+#include <nova/thread/async/nova_thread_async_Nova_Task.h>
 #include <nova/gc/nova_gc_Nova_GC.h>
 #include <nova/math/nova_math_Nova_Math.h>
 #include <nova/nova_Nova_Object.h>
@@ -81,6 +89,7 @@ void spectra_tree_Nova_SyntaxTree_Nova_init_static(nova_exception_Nova_Exception
 spectra_tree_Nova_SyntaxTree* spectra_tree_Nova_SyntaxTree_Nova_construct(spectra_tree_Nova_SyntaxTree* this, nova_exception_Nova_ExceptionData* exceptionData, spectra_Nova_Spectra* compiler, spectra_tree_nodes_Nova_Program* root);
 void spectra_tree_Nova_SyntaxTree_Nova_destroy(spectra_tree_Nova_SyntaxTree** this, nova_exception_Nova_ExceptionData* exceptionData);
 void spectra_tree_Nova_SyntaxTree_Nova_this(spectra_tree_Nova_SyntaxTree* this, nova_exception_Nova_ExceptionData* exceptionData, spectra_Nova_Spectra* compiler, spectra_tree_nodes_Nova_Program* root);
+void spectra_tree_Nova_SyntaxTree_Nova_processFiles(spectra_tree_Nova_SyntaxTree* this, nova_exception_Nova_ExceptionData* exceptionData, spectra_tree_Nova_SyntaxTree_closure4_Nova_func spectra_tree_Nova_SyntaxTree_Nova_func, void* spectra_tree_Nova_SyntaxTree_ref_Nova_func, void* func_context);
 void spectra_tree_Nova_SyntaxTree_Nova_formTree(spectra_tree_Nova_SyntaxTree* this, nova_exception_Nova_ExceptionData* exceptionData);
 void spectra_tree_Nova_SyntaxTree_Nova_validateTypes(spectra_tree_Nova_SyntaxTree* this, nova_exception_Nova_ExceptionData* exceptionData);
 void spectra_tree_Nova_SyntaxTree_Nova_parseStatements(spectra_tree_Nova_SyntaxTree* this, nova_exception_Nova_ExceptionData* exceptionData);

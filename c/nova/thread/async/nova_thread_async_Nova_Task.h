@@ -1,8 +1,8 @@
 #pragma once
-#ifndef FILE_spectra_tree_nodes_Nova_Listener_NOVA
-#define FILE_spectra_tree_nodes_Nova_Listener_NOVA
+#ifndef FILE_nova_thread_async_Nova_Task_NOVA
+#define FILE_nova_thread_async_Nova_Task_NOVA
 
-typedef struct spectra_tree_nodes_Nova_Listener spectra_tree_nodes_Nova_Listener;
+typedef struct nova_thread_async_Nova_Task nova_thread_async_Nova_Task;
 
 
 #include <Nova.h>
@@ -39,25 +39,37 @@ typedef struct spectra_tree_nodes_Nova_Listener spectra_tree_nodes_Nova_Listener
 #include <nova/nova_Nova_System.h>
 #include <nova/nova_Nova_Class.h>
 #include <nova/regex/nova_regex_Nova_Pattern.h>
+#include <nova/NativeObject.h>
+#include <nova/operators/nova_operators_Nova_Equals.h>
 
 
-typedef struct spectra_tree_nodes_Listener_Extension_VTable spectra_tree_nodes_Listener_Extension_VTable;
-struct spectra_tree_nodes_Listener_Extension_VTable
+typedef struct nova_thread_async_Task_Extension_VTable nova_thread_async_Task_Extension_VTable;
+struct nova_thread_async_Task_Extension_VTable
 {
 	nova_Nova_Class* classInstance;
 	nova_Interface_VTable itable;
+	nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
+	long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 };
 
-extern spectra_tree_nodes_Listener_Extension_VTable spectra_tree_nodes_Listener_Extension_VTable_val;
+extern nova_thread_async_Task_Extension_VTable nova_thread_async_Task_Extension_VTable_val;
 
 
 CCLASS_CLASS
 (
-	spectra_tree_nodes_Nova_Listener, 
+	nova_thread_async_Nova_Task, 
 	
-	spectra_tree_nodes_Listener_Extension_VTable* vtable;
+	nova_thread_async_Task_Extension_VTable* vtable;
+	nova_Nova_Object* nova_thread_async_Nova_Task_Nova_result;
+	nova_thread_Nova_Thread* nova_thread_async_Nova_Task_Nova_thread;
 )
 
-void spectra_tree_nodes_Nova_Listener_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData);
+void nova_thread_async_Nova_Task_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData);
+nova_thread_async_Nova_Task* nova_thread_async_Nova_Task_Nova_construct(nova_thread_async_Nova_Task* this, nova_exception_Nova_ExceptionData* exceptionData, nova_thread_Nova_Thread* thread);
+void nova_thread_async_Nova_Task_Nova_destroy(nova_thread_async_Nova_Task** this, nova_exception_Nova_ExceptionData* exceptionData);
+void nova_thread_async_Nova_Task_Nova_this(nova_thread_async_Nova_Task* this, nova_exception_Nova_ExceptionData* exceptionData, nova_thread_Nova_Thread* thread);
+void nova_thread_async_Nova_Task_Nova_waitForCompletion(nova_thread_async_Nova_Task* this, nova_exception_Nova_ExceptionData* exceptionData);
+nova_Nova_Object* nova_thread_async_Nova_Task_Nova_waitForResult(nova_thread_async_Nova_Task* this, nova_exception_Nova_ExceptionData* exceptionData);
+void nova_thread_async_Nova_Task_Nova_super(nova_thread_async_Nova_Task* this, nova_exception_Nova_ExceptionData* exceptionData);
 
 #endif

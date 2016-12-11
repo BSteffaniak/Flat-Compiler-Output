@@ -8,6 +8,7 @@ typedef struct nova_exception_Nova_ExceptionData nova_exception_Nova_ExceptionDa
 typedef struct nova_Nova_String nova_Nova_String;
 
 typedef int (*spectra_util_Nova_CompilerStringFunctions_closure1_Nova_advance)(void*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, char, int, int, void*);
+typedef int (*spectra_util_Nova_CompilerStringFunctions_closure2_Nova_advance)(void*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, char, int, int, void*);
 
 #include <Nova.h>
 #include <InterfaceVTable.h>
@@ -35,6 +36,7 @@ typedef int (*spectra_util_Nova_CompilerStringFunctions_closure1_Nova_advance)(v
 #include <nova/datastruct/list/nova_datastruct_list_Nova_IntRange.h>
 #include <nova/thread/nova_thread_Nova_Thread.h>
 #include <nova/thread/async/nova_thread_async_Nova_Async.h>
+#include <nova/thread/async/nova_thread_async_Nova_Task.h>
 #include <nova/gc/nova_gc_Nova_GC.h>
 #include <nova/math/nova_math_Nova_Math.h>
 #include <nova/nova_Nova_Object.h>
@@ -93,7 +95,7 @@ nova_Nova_String* spectra_util_Nova_CompilerStringFunctions_Nova_removeSurroundi
 char spectra_util_Nova_CompilerStringFunctions_0_Nova_containsString(nova_Nova_String* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_list_Nova_Array* needles, int index);
 char spectra_util_Nova_CompilerStringFunctions_1_Nova_containsString(nova_Nova_String* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* needle, int index);
 int spectra_util_Nova_CompilerStringFunctions_static_Nova_defaultCharacterCheck(spectra_util_Nova_CompilerStringFunctions* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* value, char c, int start, int direction);
-int spectra_util_Nova_CompilerStringFunctions_Nova_findEndingChar(nova_Nova_String* this, nova_exception_Nova_ExceptionData* exceptionData, char c, int start, int direction, spectra_util_Nova_CompilerStringFunctions_closure1_Nova_advance spectra_util_Nova_CompilerStringFunctions_Nova_advance, void* spectra_util_Nova_CompilerStringFunctions_ref_Nova_advance, void* advance_context, int defaultReturnValue);
+int spectra_util_Nova_CompilerStringFunctions_Nova_findEndingChar(nova_Nova_String* this, nova_exception_Nova_ExceptionData* exceptionData, char c, int start, int direction, spectra_util_Nova_CompilerStringFunctions_closure2_Nova_advance spectra_util_Nova_CompilerStringFunctions_Nova_advance, void* spectra_util_Nova_CompilerStringFunctions_ref_Nova_advance, void* advance_context, int defaultReturnValue);
 int spectra_util_Nova_CompilerStringFunctions_Nova_findEndingQuote(nova_Nova_String* this, nova_exception_Nova_ExceptionData* exceptionData, int start, int direction);
 int spectra_util_Nova_CompilerStringFunctions_0_Nova_findEndingMatch(nova_Nova_String* this, nova_exception_Nova_ExceptionData* exceptionData, int index, char start, char end, int direction, int escapeChar);
 int spectra_util_Nova_CompilerStringFunctions_1_Nova_findEndingMatch(nova_Nova_String* this, nova_exception_Nova_ExceptionData* exceptionData, int index, nova_Nova_String* start, nova_Nova_String* end, int direction, int escapeChar, int defaultReturnValue);

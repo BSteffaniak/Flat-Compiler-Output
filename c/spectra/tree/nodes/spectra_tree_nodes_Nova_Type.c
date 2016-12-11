@@ -21,6 +21,7 @@
 #include <nova/datastruct/list/nova_datastruct_list_Nova_IntRange.h>
 #include <nova/thread/nova_thread_Nova_Thread.h>
 #include <nova/thread/async/nova_thread_async_Nova_Async.h>
+#include <nova/thread/async/nova_thread_async_Nova_Task.h>
 #include <nova/gc/nova_gc_Nova_GC.h>
 #include <nova/math/nova_math_Nova_Math.h>
 #include <nova/nova_Nova_Object.h>
@@ -193,11 +194,9 @@ spectra_tree_nodes_generics_Nova_GenericParameter* spectra_tree_nodes_Nova_Type_
 	if (spectra_tree_nodes_Nova_Node_virtual_Accessor_Nova_parentFunction((spectra_tree_nodes_Nova_Node*)(parent), exceptionData) != (spectra_tree_nodes_functions_Nova_FunctionDeclaration*)nova_null)
 	{
 		spectra_tree_nodes_generics_Nova_GenericParameter* l1_Nova_param = (spectra_tree_nodes_generics_Nova_GenericParameter*)nova_null;
-		Context1 contextArg117 = 
-		{
-		};
+		Context1* contextArg117 = NOVA_MALLOC(sizeof(Context1));
 		
-		l1_Nova_param = (spectra_tree_nodes_generics_Nova_GenericParameter*)(nova_datastruct_list_Nova_List_virtual0_Nova_firstWhere((nova_datastruct_list_Nova_List*)(spectra_tree_nodes_functions_Nova_FunctionDeclaration_Accessorfunc_Nova_genericParameters(spectra_tree_nodes_Nova_Node_virtual_Accessor_Nova_parentFunction((spectra_tree_nodes_Nova_Node*)(parent), exceptionData), exceptionData)), exceptionData, (nova_datastruct_list_Nova_List_closure24_Nova_func)&spectra_tree_nodes_Nova_Type_Nova_lambda117, this, &contextArg117));
+		l1_Nova_param = (spectra_tree_nodes_generics_Nova_GenericParameter*)(nova_datastruct_list_Nova_List_virtual0_Nova_firstWhere((nova_datastruct_list_Nova_List*)(spectra_tree_nodes_functions_Nova_FunctionDeclaration_Accessorfunc_Nova_genericParameters(spectra_tree_nodes_Nova_Node_virtual_Accessor_Nova_parentFunction((spectra_tree_nodes_Nova_Node*)(parent), exceptionData), exceptionData)), exceptionData, (nova_datastruct_list_Nova_List_closure32_Nova_func)&spectra_tree_nodes_Nova_Type_Nova_lambda117, this, contextArg117));
 		if (l1_Nova_param != (spectra_tree_nodes_generics_Nova_GenericParameter*)nova_null)
 		{
 			return l1_Nova_param;
@@ -206,11 +205,9 @@ spectra_tree_nodes_generics_Nova_GenericParameter* spectra_tree_nodes_Nova_Type_
 	if (spectra_tree_nodes_Nova_Node_virtual_Accessor_Nova_parentClass((spectra_tree_nodes_Nova_Node*)(parent), exceptionData) != (spectra_tree_nodes_Nova_ClassDeclaration*)nova_null)
 	{
 		spectra_tree_nodes_generics_Nova_GenericParameter* l3_Nova_param = (spectra_tree_nodes_generics_Nova_GenericParameter*)nova_null;
-		Context2 contextArg118 = 
-		{
-		};
+		Context2* contextArg118 = NOVA_MALLOC(sizeof(Context2));
 		
-		l3_Nova_param = (spectra_tree_nodes_generics_Nova_GenericParameter*)(nova_datastruct_list_Nova_List_virtual0_Nova_firstWhere((nova_datastruct_list_Nova_List*)(spectra_tree_nodes_Nova_ClassDeclaration_Accessorfunc_Nova_genericParameters(spectra_tree_nodes_Nova_Node_virtual_Accessor_Nova_parentClass((spectra_tree_nodes_Nova_Node*)(parent), exceptionData), exceptionData)), exceptionData, (nova_datastruct_list_Nova_List_closure24_Nova_func)&spectra_tree_nodes_Nova_Type_Nova_lambda118, this, &contextArg118));
+		l3_Nova_param = (spectra_tree_nodes_generics_Nova_GenericParameter*)(nova_datastruct_list_Nova_List_virtual0_Nova_firstWhere((nova_datastruct_list_Nova_List*)(spectra_tree_nodes_Nova_ClassDeclaration_Accessorfunc_Nova_genericParameters(spectra_tree_nodes_Nova_Node_virtual_Accessor_Nova_parentClass((spectra_tree_nodes_Nova_Node*)(parent), exceptionData), exceptionData)), exceptionData, (nova_datastruct_list_Nova_List_closure32_Nova_func)&spectra_tree_nodes_Nova_Type_Nova_lambda118, this, contextArg118));
 		if (l3_Nova_param != (spectra_tree_nodes_generics_Nova_GenericParameter*)nova_null)
 		{
 			return l3_Nova_param;
@@ -232,17 +229,13 @@ char spectra_tree_nodes_Nova_Type_Nova_parseGenericArguments(spectra_tree_nodes_
 		l1_Nova_end = spectra_util_Nova_CompilerStringFunctions_0_Nova_findEndingMatch(input, exceptionData, l1_Nova_genericIndex, '<', '>', (intptr_t)nova_null, (intptr_t)nova_null);
 		if (l1_Nova_end > 0)
 		{
-			Context3 contextArg119 = 
-			{
-				&parent,
-				&location,
-			};
-			Context4 contextArg120 = 
-			{
-			};
+			Context3* contextArg119 = NOVA_MALLOC(sizeof(Context3));
+			contextArg119->spectra_tree_nodes_Nova_Type_Nova_parent = &parent;
+			contextArg119->spectra_tree_nodes_Nova_Type_Nova_location = &location;
+			Context4* contextArg120 = NOVA_MALLOC(sizeof(Context4));
 			
-			this->spectra_tree_nodes_Nova_Type_Nova_genericArguments = (nova_datastruct_list_Nova_Array*)(nova_datastruct_list_Nova_List_virtual0_Nova_map((nova_datastruct_list_Nova_List*)(spectra_util_Nova_CompilerStringFunctions_Nova_splitAtCommas(nova_Nova_String_virtual_Nova_substring((nova_Nova_String*)(input), exceptionData, l1_Nova_genericIndex + 1, l1_Nova_end), exceptionData, (intptr_t)nova_null, (intptr_t)nova_null)), exceptionData, (nova_datastruct_list_Nova_List_closure6_Nova_mapFunc)&spectra_tree_nodes_Nova_Type_Nova_lambda119, this, &contextArg119));
-			if (nova_datastruct_list_Nova_List_virtual0_Nova_any((nova_datastruct_list_Nova_List*)(this->spectra_tree_nodes_Nova_Type_Nova_genericArguments), exceptionData, (nova_datastruct_list_Nova_List_closure9_Nova_anyFunc)&spectra_tree_nodes_Nova_Type_Nova_lambda120, this, &contextArg120))
+			this->spectra_tree_nodes_Nova_Type_Nova_genericArguments = (nova_datastruct_list_Nova_Array*)(nova_datastruct_list_Nova_List_virtual0_Nova_map((nova_datastruct_list_Nova_List*)(spectra_util_Nova_CompilerStringFunctions_Nova_splitAtCommas(nova_Nova_String_virtual_Nova_substring((nova_Nova_String*)(input), exceptionData, l1_Nova_genericIndex + 1, l1_Nova_end), exceptionData, (intptr_t)nova_null, (intptr_t)nova_null)), exceptionData, (nova_datastruct_list_Nova_List_closure8_Nova_mapFunc)&spectra_tree_nodes_Nova_Type_Nova_lambda119, this, contextArg119));
+			if (nova_datastruct_list_Nova_List_virtual0_Nova_any((nova_datastruct_list_Nova_List*)(this->spectra_tree_nodes_Nova_Type_Nova_genericArguments), exceptionData, (nova_datastruct_list_Nova_List_closure12_Nova_anyFunc)&spectra_tree_nodes_Nova_Type_Nova_lambda120, this, contextArg120))
 			{
 				return 0;
 			}

@@ -21,6 +21,7 @@
 #include <nova/datastruct/list/nova_datastruct_list_Nova_IntRange.h>
 #include <nova/thread/nova_thread_Nova_Thread.h>
 #include <nova/thread/async/nova_thread_async_Nova_Async.h>
+#include <nova/thread/async/nova_thread_async_Nova_Task.h>
 #include <nova/gc/nova_gc_Nova_GC.h>
 #include <nova/math/nova_math_Nova_Math.h>
 #include <nova/nova_Nova_Object.h>
@@ -162,12 +163,10 @@ char nova_Nova_Class_Nova_isOfTypeInterface(nova_Nova_Class* this, nova_exceptio
 	l1_Nova_current = this;
 	while (l1_Nova_current != (nova_Nova_Class*)nova_null)
 	{
-		Context1 contextArg67 = 
-		{
-			&other,
-		};
+		Context1* contextArg67 = NOVA_MALLOC(sizeof(Context1));
+		contextArg67->nova_Nova_Class_Nova_other = &other;
 		
-		if (nova_datastruct_list_Nova_List_virtual0_Nova_any((nova_datastruct_list_Nova_List*)(l1_Nova_current->nova_Nova_Class_Nova_interfaces), exceptionData, (nova_datastruct_list_Nova_List_closure9_Nova_anyFunc)&nova_Nova_Class_Nova_lambda67, this, &contextArg67))
+		if (nova_datastruct_list_Nova_List_virtual0_Nova_any((nova_datastruct_list_Nova_List*)(l1_Nova_current->nova_Nova_Class_Nova_interfaces), exceptionData, (nova_datastruct_list_Nova_List_closure12_Nova_anyFunc)&nova_Nova_Class_Nova_lambda67, this, contextArg67))
 		{
 			return 1;
 		}

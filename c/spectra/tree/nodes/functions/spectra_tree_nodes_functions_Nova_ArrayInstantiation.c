@@ -21,6 +21,7 @@
 #include <nova/datastruct/list/nova_datastruct_list_Nova_IntRange.h>
 #include <nova/thread/nova_thread_Nova_Thread.h>
 #include <nova/thread/async/nova_thread_async_Nova_Async.h>
+#include <nova/thread/async/nova_thread_async_Nova_Task.h>
 #include <nova/gc/nova_gc_Nova_GC.h>
 #include <nova/math/nova_math_Nova_Math.h>
 #include <nova/nova_Nova_Object.h>
@@ -262,16 +263,14 @@ char spectra_tree_nodes_functions_Nova_ArrayInstantiation_Nova_parseDimension(sp
 
 char spectra_tree_nodes_functions_Nova_ArrayInstantiation_Nova_parseDimensions(spectra_tree_nodes_functions_Nova_ArrayInstantiation* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_list_Nova_Array* dimensions)
 {
-	return nova_datastruct_list_Nova_List_virtual0_Nova_all((nova_datastruct_list_Nova_List*)(dimensions), exceptionData, (nova_datastruct_list_Nova_List_closure12_Nova_allFunc)&spectra_tree_nodes_functions_Nova_ArrayInstantiation_Nova_parseDimension, this, nova_null, 0);
+	return nova_datastruct_list_Nova_List_virtual0_Nova_all((nova_datastruct_list_Nova_List*)(dimensions), exceptionData, (nova_datastruct_list_Nova_List_closure16_Nova_allFunc)&spectra_tree_nodes_functions_Nova_ArrayInstantiation_Nova_parseDimension, this, nova_null, 0);
 }
 
 nova_Nova_String* spectra_tree_nodes_functions_Nova_ArrayInstantiation_Nova_writeDimensions(spectra_tree_nodes_functions_Nova_ArrayInstantiation* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
-	Context1 contextArg56 = 
-	{
-	};
+	Context1* contextArg56 = NOVA_MALLOC(sizeof(Context1));
 	
-	return nova_datastruct_list_Nova_List_virtual_Nova_join((nova_datastruct_list_Nova_List*)(nova_datastruct_list_Nova_List_virtual0_Nova_map((nova_datastruct_list_Nova_List*)(this->spectra_tree_nodes_functions_Nova_ArrayInstantiation_Nova_dimensions), exceptionData, (nova_datastruct_list_Nova_List_closure6_Nova_mapFunc)&spectra_tree_nodes_functions_Nova_ArrayInstantiation_Nova_lambda56, this, &contextArg56)), exceptionData, 0);
+	return nova_datastruct_list_Nova_List_virtual_Nova_join((nova_datastruct_list_Nova_List*)(nova_datastruct_list_Nova_List_virtual0_Nova_map((nova_datastruct_list_Nova_List*)(this->spectra_tree_nodes_functions_Nova_ArrayInstantiation_Nova_dimensions), exceptionData, (nova_datastruct_list_Nova_List_closure8_Nova_mapFunc)&spectra_tree_nodes_functions_Nova_ArrayInstantiation_Nova_lambda56, this, contextArg56)), exceptionData, 0);
 }
 
 nova_Nova_String* spectra_tree_nodes_functions_Nova_ArrayInstantiation_Nova_writeNova(spectra_tree_nodes_functions_Nova_ArrayInstantiation* this, nova_exception_Nova_ExceptionData* exceptionData)

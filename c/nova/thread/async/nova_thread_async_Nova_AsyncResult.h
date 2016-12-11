@@ -31,6 +31,7 @@ typedef struct nova_thread_async_Nova_AsyncResult nova_thread_async_Nova_AsyncRe
 #include <nova/datastruct/list/nova_datastruct_list_Nova_IntRange.h>
 #include <nova/thread/nova_thread_Nova_Thread.h>
 #include <nova/thread/async/nova_thread_async_Nova_Async.h>
+#include <nova/thread/async/nova_thread_async_Nova_AsyncResult.h>
 #include <nova/gc/nova_gc_Nova_GC.h>
 #include <nova/math/nova_math_Nova_Math.h>
 #include <nova/nova_Nova_Object.h>
@@ -59,12 +60,16 @@ CCLASS_CLASS
 	nova_thread_async_Nova_AsyncResult, 
 	
 	nova_thread_async_AsyncResult_Extension_VTable* vtable;
+	nova_Nova_Object* nova_thread_async_Nova_AsyncResult_Nova_result;
+	nova_thread_Nova_Thread* nova_thread_async_Nova_AsyncResult_Nova_thread;
 )
 
 void nova_thread_async_Nova_AsyncResult_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData);
-nova_thread_async_Nova_AsyncResult* nova_thread_async_Nova_AsyncResult_Nova_construct(nova_thread_async_Nova_AsyncResult* this, nova_exception_Nova_ExceptionData* exceptionData);
+nova_thread_async_Nova_AsyncResult* nova_thread_async_Nova_AsyncResult_Nova_construct(nova_thread_async_Nova_AsyncResult* this, nova_exception_Nova_ExceptionData* exceptionData, nova_thread_Nova_Thread* thread);
 void nova_thread_async_Nova_AsyncResult_Nova_destroy(nova_thread_async_Nova_AsyncResult** this, nova_exception_Nova_ExceptionData* exceptionData);
-void nova_thread_async_Nova_AsyncResult_Nova_this(nova_thread_async_Nova_AsyncResult* this, nova_exception_Nova_ExceptionData* exceptionData);
+void nova_thread_async_Nova_AsyncResult_Nova_this(nova_thread_async_Nova_AsyncResult* this, nova_exception_Nova_ExceptionData* exceptionData, nova_thread_Nova_Thread* thread);
+void nova_thread_async_Nova_AsyncResult_Nova_waitForCompletion(nova_thread_async_Nova_AsyncResult* this, nova_exception_Nova_ExceptionData* exceptionData);
+nova_Nova_Object* nova_thread_async_Nova_AsyncResult_Nova_waitForResult(nova_thread_async_Nova_AsyncResult* this, nova_exception_Nova_ExceptionData* exceptionData);
 void nova_thread_async_Nova_AsyncResult_Nova_super(nova_thread_async_Nova_AsyncResult* this, nova_exception_Nova_ExceptionData* exceptionData);
 
 #endif

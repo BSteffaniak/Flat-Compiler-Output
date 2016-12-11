@@ -177,8 +177,8 @@ nova_env novaEnv = {
 0,
 0,
 0,
-&nova_datastruct_list_Nova_Array_0_Nova_remove,
-&nova_datastruct_list_Nova_Array_1_Nova_remove,
+0,
+0,
 0,
 &nova_datastruct_list_Nova_Array_Nova_replace,
 &nova_datastruct_list_Nova_Array_Nova_swap,
@@ -759,7 +759,9 @@ nova_env novaEnv = {
 },
 
 {
-&nova_thread_async_Nova_AsyncResult_Nova_construct,
+&nova_thread_async_Nova_Task_Nova_waitForCompletion,
+&nova_thread_async_Nova_Task_Nova_waitForResult,
+&nova_thread_async_Nova_Task_Nova_construct,
 },
 
 {
@@ -873,6 +875,7 @@ nova_env novaEnv = {
 },
 
 {
+&spectra_tree_Nova_SyntaxTree_Nova_processFiles,
 &spectra_tree_Nova_SyntaxTree_Nova_formTree,
 &spectra_tree_Nova_SyntaxTree_Nova_validateTypes,
 &spectra_tree_Nova_SyntaxTree_Nova_parseStatements,

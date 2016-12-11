@@ -21,6 +21,7 @@
 #include <nova/datastruct/list/nova_datastruct_list_Nova_IntRange.h>
 #include <nova/thread/nova_thread_Nova_Thread.h>
 #include <nova/thread/async/nova_thread_async_Nova_Async.h>
+#include <nova/thread/async/nova_thread_async_Nova_Task.h>
 #include <nova/gc/nova_gc_Nova_GC.h>
 #include <nova/math/nova_math_Nova_Math.h>
 #include <nova/nova_Nova_Object.h>
@@ -191,13 +192,11 @@ void spectra_tree_nodes_Nova_Program_Nova_addChild(spectra_tree_nodes_Nova_Progr
 
 spectra_tree_nodes_Nova_ClassDeclaration* spectra_tree_nodes_Nova_Program_Nova_getClassDeclaration(spectra_tree_nodes_Nova_Program* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* location)
 {
-	Context1 contextArg51 = 
-	{
-		&location,
-	};
+	Context1* contextArg51 = NOVA_MALLOC(sizeof(Context1));
+	contextArg51->spectra_tree_nodes_Nova_Program_Nova_location = &location;
 	spectra_tree_nodes_Nova_NovaFile* nova_local_0 = (spectra_tree_nodes_Nova_NovaFile*)nova_null;
 	
-	return (spectra_tree_nodes_Nova_ClassDeclaration*)((nova_local_0 = (spectra_tree_nodes_Nova_NovaFile*)(nova_datastruct_list_Nova_List_virtual0_Nova_firstWhere((nova_datastruct_list_Nova_List*)(spectra_tree_nodes_Nova_Program_Accessor_Nova_files(this, exceptionData)), exceptionData, (nova_datastruct_list_Nova_List_closure24_Nova_func)&spectra_tree_nodes_Nova_Program_Nova_lambda51, this, &contextArg51))) != (spectra_tree_nodes_Nova_NovaFile*)nova_null ? (nova_Nova_Object*)(spectra_tree_nodes_Nova_NovaFile_Accessor_Nova_classDeclaration(nova_local_0, exceptionData)) : (nova_Nova_Object*)nova_null);
+	return (spectra_tree_nodes_Nova_ClassDeclaration*)((nova_local_0 = (spectra_tree_nodes_Nova_NovaFile*)(nova_datastruct_list_Nova_List_virtual0_Nova_firstWhere((nova_datastruct_list_Nova_List*)(spectra_tree_nodes_Nova_Program_Accessor_Nova_files(this, exceptionData)), exceptionData, (nova_datastruct_list_Nova_List_closure32_Nova_func)&spectra_tree_nodes_Nova_Program_Nova_lambda51, this, contextArg51))) != (spectra_tree_nodes_Nova_NovaFile*)nova_null ? (nova_Nova_Object*)(spectra_tree_nodes_Nova_NovaFile_Accessor_Nova_classDeclaration(nova_local_0, exceptionData)) : (nova_Nova_Object*)nova_null);
 }
 
 nova_Nova_String* spectra_tree_nodes_Nova_Program_Nova_toString(spectra_tree_nodes_Nova_Program* this, nova_exception_Nova_ExceptionData* exceptionData)

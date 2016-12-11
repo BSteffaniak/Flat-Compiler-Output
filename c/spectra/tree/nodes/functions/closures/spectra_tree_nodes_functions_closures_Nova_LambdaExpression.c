@@ -21,6 +21,7 @@
 #include <nova/datastruct/list/nova_datastruct_list_Nova_IntRange.h>
 #include <nova/thread/nova_thread_Nova_Thread.h>
 #include <nova/thread/async/nova_thread_async_Nova_Async.h>
+#include <nova/thread/async/nova_thread_async_Nova_Task.h>
 #include <nova/gc/nova_gc_Nova_GC.h>
 #include <nova/math/nova_math_Nova_Math.h>
 #include <nova/nova_Nova_Object.h>
@@ -226,13 +227,11 @@ void spectra_tree_nodes_functions_closures_Nova_LambdaExpression_Nova_this(spect
 spectra_tree_nodes_variables_Nova_VariableDeclaration* spectra_tree_nodes_functions_closures_Nova_LambdaExpression_Nova_findVariableDeclaration(spectra_tree_nodes_functions_closures_Nova_LambdaExpression* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* name, int searchAncestors)
 {
 	nova_datastruct_list_Nova_Array* l1_Nova_parameter = (nova_datastruct_list_Nova_Array*)nova_null;
-	Context2 contextArg127 = 
-	{
-		&name,
-	};
+	Context2* contextArg127 = NOVA_MALLOC(sizeof(Context2));
+	contextArg127->spectra_tree_nodes_functions_closures_Nova_LambdaExpression_Nova_name = &name;
 	
 	searchAncestors = (int)(searchAncestors == (intptr_t)nova_null ? 1 : searchAncestors);
-	l1_Nova_parameter = (nova_datastruct_list_Nova_Array*)(nova_datastruct_list_Nova_List_virtual0_Nova_firstWhere((nova_datastruct_list_Nova_List*)(spectra_tree_nodes_functions_Nova_CallableFunction_Accessor_Nova_parameters((spectra_tree_nodes_functions_Nova_CallableFunction*)(this), exceptionData)), exceptionData, (nova_datastruct_list_Nova_List_closure24_Nova_func)&spectra_tree_nodes_functions_closures_Nova_LambdaExpression_Nova_lambda127, this, &contextArg127));
+	l1_Nova_parameter = (nova_datastruct_list_Nova_Array*)(nova_datastruct_list_Nova_List_virtual0_Nova_firstWhere((nova_datastruct_list_Nova_List*)(spectra_tree_nodes_functions_Nova_CallableFunction_Accessor_Nova_parameters((spectra_tree_nodes_functions_Nova_CallableFunction*)(this), exceptionData)), exceptionData, (nova_datastruct_list_Nova_List_closure32_Nova_func)&spectra_tree_nodes_functions_closures_Nova_LambdaExpression_Nova_lambda127, this, contextArg127));
 	if (l1_Nova_parameter != (nova_datastruct_list_Nova_Array*)nova_null)
 	{
 		return (spectra_tree_nodes_variables_Nova_VariableDeclaration*)l1_Nova_parameter;
@@ -342,11 +341,9 @@ nova_Nova_String* spectra_tree_nodes_functions_closures_Nova_LambdaExpression_No
 	}
 	else if (nova_datastruct_list_Nova_List_virtual_Accessor1_Nova_count((nova_datastruct_list_Nova_List*)(spectra_tree_nodes_functions_Nova_CallableFunction_Accessor_Nova_parameters((spectra_tree_nodes_functions_Nova_CallableFunction*)(this), exceptionData)), exceptionData) > 1)
 	{
-		Context3 contextArg128 = 
-		{
-		};
+		Context3* contextArg128 = NOVA_MALLOC(sizeof(Context3));
 		
-		return nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)(nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("("))), exceptionData, nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)(nova_datastruct_list_Nova_List_virtual_Nova_join((nova_datastruct_list_Nova_List*)(nova_datastruct_list_Nova_List_virtual0_Nova_map((nova_datastruct_list_Nova_List*)(spectra_tree_nodes_functions_Nova_CallableFunction_Accessor_Nova_parameters((spectra_tree_nodes_functions_Nova_CallableFunction*)(this), exceptionData)), exceptionData, (nova_datastruct_list_Nova_List_closure6_Nova_mapFunc)&spectra_tree_nodes_functions_closures_Nova_LambdaExpression_Nova_lambda128, this, &contextArg128)), exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)(", ")))), exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)(")"))));
+		return nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)(nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("("))), exceptionData, nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)(nova_datastruct_list_Nova_List_virtual_Nova_join((nova_datastruct_list_Nova_List*)(nova_datastruct_list_Nova_List_virtual0_Nova_map((nova_datastruct_list_Nova_List*)(spectra_tree_nodes_functions_Nova_CallableFunction_Accessor_Nova_parameters((spectra_tree_nodes_functions_Nova_CallableFunction*)(this), exceptionData)), exceptionData, (nova_datastruct_list_Nova_List_closure8_Nova_mapFunc)&spectra_tree_nodes_functions_closures_Nova_LambdaExpression_Nova_lambda128, this, contextArg128)), exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)(", ")))), exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)(")"))));
 	}
 	return nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)(""));
 }
@@ -389,12 +386,10 @@ spectra_tree_nodes_functions_Nova_FunctionDeclaration* spectra_tree_nodes_functi
 {
 	spectra_tree_nodes_Nova_ClassDeclaration* l1_Nova_reference = (spectra_tree_nodes_Nova_ClassDeclaration*)nova_null;
 	nova_datastruct_list_Nova_Array* l1_Nova_similar = (nova_datastruct_list_Nova_Array*)nova_null;
-	Context1 contextArg126 = 
-	{
-	};
+	Context1* contextArg126 = NOVA_MALLOC(sizeof(Context1));
 	
 	l1_Nova_reference = spectra_tree_nodes_Nova_Accessible_Accessor_Nova_referenceClass((spectra_tree_nodes_Nova_Accessible*)(spectra_tree_nodes_Nova_Node_virtual_Accessor_Nova_parentFunctionCall((spectra_tree_nodes_Nova_Node*)(this), exceptionData)), exceptionData);
-	l1_Nova_similar = (nova_datastruct_list_Nova_Array*)(nova_datastruct_list_Nova_List_virtual0_Nova_filter((nova_datastruct_list_Nova_List*)(l1_Nova_reference->spectra_tree_nodes_Nova_ClassDeclaration_Nova_functions), exceptionData, (nova_datastruct_list_Nova_List_closure15_Nova_filterFunc)&spectra_tree_nodes_functions_closures_Nova_LambdaExpression_Nova_lambda126, this, &contextArg126));
+	l1_Nova_similar = (nova_datastruct_list_Nova_Array*)(nova_datastruct_list_Nova_List_virtual0_Nova_filter((nova_datastruct_list_Nova_List*)(l1_Nova_reference->spectra_tree_nodes_Nova_ClassDeclaration_Nova_functions), exceptionData, (nova_datastruct_list_Nova_List_closure20_Nova_filterFunc)&spectra_tree_nodes_functions_closures_Nova_LambdaExpression_Nova_lambda126, this, contextArg126));
 	return (spectra_tree_nodes_functions_Nova_FunctionDeclaration*)(nova_Nova_Object*)nova_null;
 }
 

@@ -21,6 +21,7 @@
 #include <nova/datastruct/list/nova_datastruct_list_Nova_IntRange.h>
 #include <nova/thread/nova_thread_Nova_Thread.h>
 #include <nova/thread/async/nova_thread_async_Nova_Async.h>
+#include <nova/thread/async/nova_thread_async_Nova_Task.h>
 #include <nova/gc/nova_gc_Nova_GC.h>
 #include <nova/math/nova_math_Nova_Math.h>
 #include <nova/nova_Nova_Object.h>
@@ -246,11 +247,9 @@ nova_Nova_String* spectra_tree_nodes_Nova_Import_Accessor_Nova_className(spectra
 
 char spectra_tree_nodes_Nova_Import_Accessor_Nova_isDefault(spectra_tree_nodes_Nova_Import* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
-	Context1 contextArg38 = 
-	{
-	};
+	Context1* contextArg38 = NOVA_MALLOC(sizeof(Context1));
 	
-	return nova_datastruct_list_Nova_List_virtual0_Nova_any((nova_datastruct_list_Nova_List*)(spectra_tree_nodes_Nova_NovaFile_Nova_DEFAULT_IMPORTS), exceptionData, (nova_datastruct_list_Nova_List_closure9_Nova_anyFunc)&spectra_tree_nodes_Nova_Import_Nova_lambda38, this, &contextArg38);
+	return nova_datastruct_list_Nova_List_virtual0_Nova_any((nova_datastruct_list_Nova_List*)(spectra_tree_nodes_Nova_NovaFile_Nova_DEFAULT_IMPORTS), exceptionData, (nova_datastruct_list_Nova_List_closure12_Nova_anyFunc)&spectra_tree_nodes_Nova_Import_Nova_lambda38, this, contextArg38);
 }
 
 

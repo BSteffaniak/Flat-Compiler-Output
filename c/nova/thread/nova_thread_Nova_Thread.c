@@ -21,6 +21,7 @@
 #include <nova/datastruct/list/nova_datastruct_list_Nova_IntRange.h>
 #include <nova/thread/nova_thread_Nova_Thread.h>
 #include <nova/thread/async/nova_thread_async_Nova_Async.h>
+#include <nova/thread/async/nova_thread_async_Nova_Task.h>
 #include <nova/gc/nova_gc_Nova_GC.h>
 #include <nova/math/nova_math_Nova_Math.h>
 #include <nova/nova_Nova_Object.h>
@@ -87,18 +88,24 @@ nova_thread_Thread_Extension_VTable nova_thread_Thread_Extension_VTable_val =
 
 CCLASS_PRIVATE
 (
+	void (*nova_thread_Nova_Thread_Nova_action)(void*, nova_exception_Nova_ExceptionData*, void*);
+	void* nova_thread_Nova_Thread_context_Nova_action;
+	void* nova_thread_Nova_Thread_reference_Nova_action;
 	NOVA_THREAD_HANDLE* nova_thread_Nova_Thread_Nova_handle;
 	
 )
 
+void nova_thread_Nova_Thread_Nova_action(void* this, nova_exception_Nova_ExceptionData* exceptionData, void*);
 void nova_thread_Nova_Thread_Nova_startRun(nova_thread_Nova_Thread* this, nova_exception_Nova_ExceptionData* exceptionData);
+nova_datastruct_list_Nova_ImmutableArray* nova_thread_Nova_Thread_Nova_ACTIVE_THREADS;
 void nova_thread_Nova_Thread_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData)
 {
 	{
+		nova_thread_Nova_Thread_Nova_ACTIVE_THREADS = (nova_datastruct_list_Nova_ImmutableArray*)(nova_datastruct_list_Nova_Array_0_Nova_construct(0, exceptionData));
 	}
 }
 
-nova_thread_Nova_Thread* nova_thread_Nova_Thread_Nova_construct(nova_thread_Nova_Thread* this, nova_exception_Nova_ExceptionData* exceptionData)
+nova_thread_Nova_Thread* nova_thread_Nova_Thread_Nova_construct(nova_thread_Nova_Thread* this, nova_exception_Nova_ExceptionData* exceptionData, nova_thread_Nova_Thread_closure4_Nova_action nova_thread_Nova_Thread_Nova_action, void* nova_thread_Nova_Thread_ref_Nova_action, void* action_context)
 {
 	CCLASS_NEW(nova_thread_Nova_Thread, this);
 	this->vtable = &nova_thread_Thread_Extension_VTable_val;
@@ -106,7 +113,7 @@ nova_thread_Nova_Thread* nova_thread_Nova_Thread_Nova_construct(nova_thread_Nova
 	nova_thread_Nova_Thread_Nova_super(this, exceptionData);
 	
 	{
-		nova_thread_Nova_Thread_Nova_this(this, exceptionData);
+		nova_thread_Nova_Thread_Nova_this(this, exceptionData, (nova_thread_Nova_Thread_closure5_Nova_action)nova_thread_Nova_Thread_Nova_action, nova_thread_Nova_Thread_ref_Nova_action, action_context);
 	}
 	
 	return this;
@@ -122,7 +129,20 @@ void nova_thread_Nova_Thread_Nova_destroy(nova_thread_Nova_Thread** this, nova_e
 	
 	NOVA_FREE((*this)->prv);
 	
+	
 	NOVA_FREE(*this);
+}
+
+
+void nova_thread_Nova_Thread_Nova_this(nova_thread_Nova_Thread* this, nova_exception_Nova_ExceptionData* exceptionData, nova_thread_Nova_Thread_closure5_Nova_action nova_thread_Nova_Thread_Nova_action, void* nova_thread_Nova_Thread_ref_Nova_action, void* action_context)
+{
+	nova_thread_Nova_Thread_Nova_action = (nova_thread_Nova_Thread_closure5_Nova_action)(nova_thread_Nova_Thread_Nova_action == 0 ? (nova_thread_Nova_Thread_closure5_Nova_action)this->vtable->nova_thread_Nova_Thread_virtual_Nova_run : nova_thread_Nova_Thread_Nova_action);
+	nova_thread_Nova_Thread_ref_Nova_action = (void*)(nova_thread_Nova_Thread_ref_Nova_action == 0 ? (void*)this : nova_thread_Nova_Thread_ref_Nova_action);
+	action_context = (void*)(action_context == 0 ? (void*)nova_null : action_context);
+	printf("Context cosntruct: %p\n", action_context);
+	this->prv->nova_thread_Nova_Thread_Nova_action = nova_thread_Nova_Thread_Nova_action;
+	this->prv->nova_thread_Nova_Thread_reference_Nova_action = nova_thread_Nova_Thread_ref_Nova_action;
+	this->prv->nova_thread_Nova_Thread_context_Nova_action = action_context;
 }
 
 NOVA_THREAD_HANDLE* nova_thread_Nova_Thread_Nova_start(nova_thread_Nova_Thread* this, nova_exception_Nova_ExceptionData* exceptionData)
@@ -151,12 +171,15 @@ void nova_thread_Nova_Thread_Nova_run(nova_thread_Nova_Thread* this, nova_except
 
 void nova_thread_Nova_Thread_Nova_startRun(nova_thread_Nova_Thread* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
+	this->nova_thread_Nova_Thread_Nova_active = 1;
+	nova_thread_Nova_Thread_Nova_ACTIVE_THREADS = (nova_datastruct_list_Nova_ImmutableArray*)(nova_datastruct_list_Nova_ImmutableArray_0_Nova_add((nova_datastruct_list_Nova_ImmutableArray*)(nova_thread_Nova_Thread_Nova_ACTIVE_THREADS), exceptionData, (nova_Nova_Object*)(this)));
 	TRY
 	{
 		novaEnv.nova_exception_ExceptionData.addCaught(exceptionData, exceptionData, nova_exception_Exception_Extension_VTable_val.classInstance, 0);
 		
 		{
-			nova_thread_Nova_Thread_virtual_Nova_run((nova_thread_Nova_Thread*)(this), exceptionData);
+			printf("Context before: %p\n", this->prv->nova_thread_Nova_Thread_context_Nova_action);
+			this->prv->nova_thread_Nova_Thread_Nova_action(this->prv->nova_thread_Nova_Thread_reference_Nova_action, exceptionData, this->prv->nova_thread_Nova_Thread_context_Nova_action);
 		}
 	}
 	CATCH (nova_exception_Exception_Extension_VTable_val.classInstance)
@@ -170,14 +193,14 @@ void nova_thread_Nova_Thread_Nova_startRun(nova_thread_Nova_Thread* this, nova_e
 	{
 	}
 	END_TRY;
-}
-
-void nova_thread_Nova_Thread_Nova_this(nova_thread_Nova_Thread* this, nova_exception_Nova_ExceptionData* exceptionData)
-{
+	printf("Context after: %p\n", this->prv->nova_thread_Nova_Thread_context_Nova_action);
+	this->nova_thread_Nova_Thread_Nova_active = 0;
+	nova_thread_Nova_Thread_Nova_ACTIVE_THREADS = nova_datastruct_list_Nova_Array_Nova_toImmutable((nova_datastruct_list_Nova_Array*)(nova_datastruct_list_Nova_ImmutableArray_1_Nova_remove((nova_datastruct_list_Nova_ImmutableArray*)(nova_thread_Nova_Thread_Nova_ACTIVE_THREADS), exceptionData, (nova_Nova_Object*)(this))), exceptionData);
 }
 
 void nova_thread_Nova_Thread_Nova_super(nova_thread_Nova_Thread* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
+	this->nova_thread_Nova_Thread_Nova_active = 0;
 }
 
 void nova_thread_Nova_Thread_virtual_Nova_run(nova_thread_Nova_Thread* this, nova_exception_Nova_ExceptionData* exceptionData)

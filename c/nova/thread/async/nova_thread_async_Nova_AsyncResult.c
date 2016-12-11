@@ -21,6 +21,7 @@
 #include <nova/datastruct/list/nova_datastruct_list_Nova_IntRange.h>
 #include <nova/thread/nova_thread_Nova_Thread.h>
 #include <nova/thread/async/nova_thread_async_Nova_Async.h>
+#include <nova/thread/async/nova_thread_async_Nova_AsyncResult.h>
 #include <nova/gc/nova_gc_Nova_GC.h>
 #include <nova/math/nova_math_Nova_Math.h>
 #include <nova/nova_Nova_Object.h>
@@ -86,7 +87,7 @@ void nova_thread_async_Nova_AsyncResult_Nova_init_static(nova_exception_Nova_Exc
 	}
 }
 
-nova_thread_async_Nova_AsyncResult* nova_thread_async_Nova_AsyncResult_Nova_construct(nova_thread_async_Nova_AsyncResult* this, nova_exception_Nova_ExceptionData* exceptionData)
+nova_thread_async_Nova_AsyncResult* nova_thread_async_Nova_AsyncResult_Nova_construct(nova_thread_async_Nova_AsyncResult* this, nova_exception_Nova_ExceptionData* exceptionData, nova_thread_Nova_Thread* thread)
 {
 	CCLASS_NEW(nova_thread_async_Nova_AsyncResult, this,);
 	this->vtable = &nova_thread_async_AsyncResult_Extension_VTable_val;
@@ -94,7 +95,7 @@ nova_thread_async_Nova_AsyncResult* nova_thread_async_Nova_AsyncResult_Nova_cons
 	nova_thread_async_Nova_AsyncResult_Nova_super(this, exceptionData);
 	
 	{
-		nova_thread_async_Nova_AsyncResult_Nova_this(this, exceptionData);
+		nova_thread_async_Nova_AsyncResult_Nova_this(this, exceptionData, thread);
 	}
 	
 	return this;
@@ -108,14 +109,30 @@ void nova_thread_async_Nova_AsyncResult_Nova_destroy(nova_thread_async_Nova_Asyn
 	}
 	
 	
+	nova_thread_Nova_Thread_Nova_destroy(&(*this)->nova_thread_async_Nova_AsyncResult_Nova_thread, exceptionData);
+	
 	NOVA_FREE(*this);
 }
 
-void nova_thread_async_Nova_AsyncResult_Nova_this(nova_thread_async_Nova_AsyncResult* this, nova_exception_Nova_ExceptionData* exceptionData)
+void nova_thread_async_Nova_AsyncResult_Nova_this(nova_thread_async_Nova_AsyncResult* this, nova_exception_Nova_ExceptionData* exceptionData, nova_thread_Nova_Thread* thread)
 {
+	this->nova_thread_async_Nova_AsyncResult_Nova_thread = thread;
+}
+
+void nova_thread_async_Nova_AsyncResult_Nova_waitForCompletion(nova_thread_async_Nova_AsyncResult* this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+	nova_thread_Nova_Thread_Nova_join(this->nova_thread_async_Nova_AsyncResult_Nova_thread, exceptionData);
+}
+
+nova_Nova_Object* nova_thread_async_Nova_AsyncResult_Nova_waitForResult(nova_thread_async_Nova_AsyncResult* this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+	nova_thread_async_Nova_AsyncResult_Nova_waitForCompletion(this, exceptionData);
+	return (nova_Nova_Object*)this->nova_thread_async_Nova_AsyncResult_Nova_result;
 }
 
 void nova_thread_async_Nova_AsyncResult_Nova_super(nova_thread_async_Nova_AsyncResult* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
+	this->nova_thread_async_Nova_AsyncResult_Nova_result = (nova_Nova_Object*)nova_null;
+	this->nova_thread_async_Nova_AsyncResult_Nova_thread = (nova_thread_Nova_Thread*)nova_null;
 }
 

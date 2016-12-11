@@ -31,6 +31,7 @@ typedef struct nova_datastruct_list_Nova_StringCharArray nova_datastruct_list_No
 #include <nova/datastruct/list/nova_datastruct_list_Nova_IntRange.h>
 #include <nova/thread/nova_thread_Nova_Thread.h>
 #include <nova/thread/async/nova_thread_async_Nova_Async.h>
+#include <nova/thread/async/nova_thread_async_Nova_Task.h>
 #include <nova/gc/nova_gc_Nova_GC.h>
 #include <nova/math/nova_math_Nova_Math.h>
 #include <nova/nova_Nova_Object.h>
@@ -55,6 +56,8 @@ struct nova_datastruct_list_StringCharArray_Extension_VTable
 	nova_datastruct_list_Nova_CharArray* (*nova_datastruct_list_Nova_Array_virtual_Nova_addUnique)(nova_datastruct_list_Nova_CharArray*, nova_exception_Nova_ExceptionData*, char);
 	nova_datastruct_list_Nova_Array* (*nova_datastruct_list_Nova_Array_virtual0_Nova_add)(nova_datastruct_list_Nova_Array*, nova_exception_Nova_ExceptionData*, nova_Nova_Object*);
 	nova_datastruct_list_Nova_Array* (*nova_datastruct_list_Nova_Array_virtual1_Nova_add)(nova_datastruct_list_Nova_Array*, nova_exception_Nova_ExceptionData*, int, nova_Nova_Object*);
+	nova_datastruct_list_Nova_Array* (*nova_datastruct_list_Nova_Array_virtual0_Nova_remove)(nova_datastruct_list_Nova_Array*, nova_exception_Nova_ExceptionData*, int);
+	nova_datastruct_list_Nova_Array* (*nova_datastruct_list_Nova_Array_virtual1_Nova_remove)(nova_datastruct_list_Nova_Array*, nova_exception_Nova_ExceptionData*, nova_Nova_Object*);
 	int (*nova_datastruct_list_Nova_Array_virtual_Nova_indexOf)(nova_datastruct_list_Nova_Array*, nova_exception_Nova_ExceptionData*, nova_Nova_Object*, int);
 	char* (*nova_datastruct_list_Nova_Array_virtual_Nova_cloneData)(nova_datastruct_list_Nova_CharArray*, nova_exception_Nova_ExceptionData*);
 	nova_datastruct_list_Nova_CharArray* (*nova_datastruct_list_Nova_Array_virtual_Nova_clone)(nova_datastruct_list_Nova_CharArray*, nova_exception_Nova_ExceptionData*);

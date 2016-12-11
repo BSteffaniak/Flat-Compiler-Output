@@ -21,6 +21,7 @@
 #include <nova/datastruct/list/nova_datastruct_list_Nova_IntRange.h>
 #include <nova/thread/nova_thread_Nova_Thread.h>
 #include <nova/thread/async/nova_thread_async_Nova_Async.h>
+#include <nova/thread/async/nova_thread_async_Nova_Task.h>
 #include <nova/gc/nova_gc_Nova_GC.h>
 #include <nova/math/nova_math_Nova_Math.h>
 #include <nova/nova_Nova_Object.h>
@@ -28,7 +29,6 @@
 #include <nova/nova_Nova_System.h>
 #include <nova/nova_Nova_Class.h>
 #include <nova/regex/nova_regex_Nova_Pattern.h>
-#include <nova/thread/async/nova_thread_async_Nova_AsyncResult.h>
 #include <nova/NativeObject.h>
 #include <nova/operators/nova_operators_Nova_Equals.h>
 
@@ -112,13 +112,26 @@ void nova_thread_async_Nova_Async_Nova_destroy(nova_thread_async_Nova_Async** th
 	NOVA_FREE(*this);
 }
 
-nova_thread_async_Nova_AsyncResult* nova_thread_async_Nova_Async_static_Nova_execute(nova_thread_async_Nova_Async* this, nova_exception_Nova_ExceptionData* exceptionData, nova_thread_async_Nova_Async_closure3_Nova_func nova_thread_async_Nova_Async_Nova_func, void* nova_thread_async_Nova_Async_ref_Nova_func, void* func_context)
+nova_thread_async_Nova_Task* nova_thread_async_Nova_Async_static_Nova_execute(nova_thread_async_Nova_Async* this, nova_exception_Nova_ExceptionData* exceptionData, nova_thread_async_Nova_Async_closure4_Nova_func nova_thread_async_Nova_Async_Nova_func, void* nova_thread_async_Nova_Async_ref_Nova_func, void* func_context)
 {
-	nova_thread_async_Nova_AsyncResult* l1_Nova_result = (nova_thread_async_Nova_AsyncResult*)nova_null;
+	nova_thread_Nova_Thread* l1_Nova_thread = (nova_thread_Nova_Thread*)nova_null;
+	nova_thread_async_Nova_Task* l1_Nova_task = (nova_thread_async_Nova_Task*)nova_null;
 	
-	l1_Nova_result = nova_thread_async_Nova_AsyncResult_Nova_construct(0, exceptionData);
-	nova_thread_async_Nova_Async_Nova_func(nova_thread_async_Nova_Async_ref_Nova_func, exceptionData, func_context);
-	return l1_Nova_result;
+	l1_Nova_thread = nova_thread_Nova_Thread_Nova_construct(0, exceptionData, (nova_thread_Nova_Thread_closure4_Nova_action)nova_thread_async_Nova_Async_Nova_func, nova_thread_async_Nova_Async_ref_Nova_func, func_context);
+	l1_Nova_task = nova_thread_async_Nova_Task_Nova_construct(0, exceptionData, l1_Nova_thread);
+	nova_thread_Nova_Thread_Nova_start(l1_Nova_thread, exceptionData);
+	return l1_Nova_task;
+}
+
+nova_thread_async_Nova_Task* nova_thread_async_Nova_Async_static_Nova_request(nova_thread_async_Nova_Async* this, nova_exception_Nova_ExceptionData* exceptionData, nova_thread_async_Nova_Async_closure8_Nova_func nova_thread_async_Nova_Async_Nova_func, void* nova_thread_async_Nova_Async_ref_Nova_func, void* func_context)
+{
+	nova_thread_Nova_Thread* l1_Nova_thread = (nova_thread_Nova_Thread*)nova_null;
+	nova_thread_async_Nova_Task* l1_Nova_task = (nova_thread_async_Nova_Task*)nova_null;
+	
+	l1_Nova_thread = nova_thread_Nova_Thread_Nova_construct(0, exceptionData, (nova_thread_Nova_Thread_closure4_Nova_action)nova_thread_async_Nova_Async_Nova_func, nova_thread_async_Nova_Async_ref_Nova_func, func_context);
+	l1_Nova_task = nova_thread_async_Nova_Task_Nova_construct(0, exceptionData, l1_Nova_thread);
+	nova_thread_Nova_Thread_Nova_start(l1_Nova_thread, exceptionData);
+	return l1_Nova_task;
 }
 
 void nova_thread_async_Nova_Async_Nova_this(nova_thread_async_Nova_Async* this, nova_exception_Nova_ExceptionData* exceptionData)

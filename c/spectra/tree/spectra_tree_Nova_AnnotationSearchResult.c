@@ -21,6 +21,7 @@
 #include <nova/datastruct/list/nova_datastruct_list_Nova_IntRange.h>
 #include <nova/thread/nova_thread_Nova_Thread.h>
 #include <nova/thread/async/nova_thread_async_Nova_Async.h>
+#include <nova/thread/async/nova_thread_async_Nova_Task.h>
 #include <nova/gc/nova_gc_Nova_GC.h>
 #include <nova/math/nova_math_Nova_Math.h>
 #include <nova/nova_Nova_Object.h>
@@ -134,22 +135,18 @@ void spectra_tree_Nova_AnnotationSearchResult_Nova_this(spectra_tree_Nova_Annota
 
 nova_datastruct_list_Nova_Array* spectra_tree_Nova_AnnotationSearchResult_0_Nova_addTo(spectra_tree_Nova_AnnotationSearchResult* this, nova_exception_Nova_ExceptionData* exceptionData, spectra_tree_nodes_Nova_Node* node)
 {
-	Context1 contextArg25 = 
-	{
-		&node,
-	};
+	Context1* contextArg25 = NOVA_MALLOC(sizeof(Context1));
+	contextArg25->spectra_tree_Nova_AnnotationSearchResult_Nova_node = &node;
 	
-	return (nova_datastruct_list_Nova_Array*)nova_datastruct_list_Nova_List_virtual0_Nova_forEach((nova_datastruct_list_Nova_List*)(this->spectra_tree_Nova_AnnotationSearchResult_Nova_annotations), exceptionData, (nova_datastruct_list_Nova_List_closure3_Nova_func)&spectra_tree_Nova_AnnotationSearchResult_Nova_lambda25, this, &contextArg25);
+	return (nova_datastruct_list_Nova_Array*)nova_datastruct_list_Nova_List_virtual0_Nova_forEach((nova_datastruct_list_Nova_List*)(this->spectra_tree_Nova_AnnotationSearchResult_Nova_annotations), exceptionData, (nova_datastruct_list_Nova_List_closure4_Nova_func)&spectra_tree_Nova_AnnotationSearchResult_Nova_lambda25, this, contextArg25);
 }
 
 nova_datastruct_list_Nova_Array* spectra_tree_Nova_AnnotationSearchResult_1_Nova_addTo(spectra_tree_Nova_AnnotationSearchResult* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_list_Nova_Stack* stack)
 {
-	Context2 contextArg26 = 
-	{
-		&stack,
-	};
+	Context2* contextArg26 = NOVA_MALLOC(sizeof(Context2));
+	contextArg26->spectra_tree_Nova_AnnotationSearchResult_Nova_stack = &stack;
 	
-	return (nova_datastruct_list_Nova_Array*)nova_datastruct_list_Nova_List_virtual0_Nova_forEach((nova_datastruct_list_Nova_List*)(this->spectra_tree_Nova_AnnotationSearchResult_Nova_annotations), exceptionData, (nova_datastruct_list_Nova_List_closure3_Nova_func)&spectra_tree_Nova_AnnotationSearchResult_Nova_lambda26, this, &contextArg26);
+	return (nova_datastruct_list_Nova_Array*)nova_datastruct_list_Nova_List_virtual0_Nova_forEach((nova_datastruct_list_Nova_List*)(this->spectra_tree_Nova_AnnotationSearchResult_Nova_annotations), exceptionData, (nova_datastruct_list_Nova_List_closure4_Nova_func)&spectra_tree_Nova_AnnotationSearchResult_Nova_lambda26, this, contextArg26);
 }
 
 void spectra_tree_Nova_AnnotationSearchResult_Nova_lambda25(spectra_tree_Nova_AnnotationSearchResult* this, nova_exception_Nova_ExceptionData* exceptionData, spectra_tree_nodes_annotations_Nova_Annotation* _1, int _2, nova_datastruct_list_Nova_Array* _3, Context1* context)

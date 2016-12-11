@@ -21,6 +21,7 @@
 #include <nova/datastruct/list/nova_datastruct_list_Nova_IntRange.h>
 #include <nova/thread/nova_thread_Nova_Thread.h>
 #include <nova/thread/async/nova_thread_async_Nova_Async.h>
+#include <nova/thread/async/nova_thread_async_Nova_Task.h>
 #include <nova/gc/nova_gc_Nova_GC.h>
 #include <nova/math/nova_math_Nova_Math.h>
 #include <nova/nova_Nova_Object.h>
@@ -146,13 +147,11 @@ nova_exception_Nova_ExceptionData* nova_exception_Nova_ExceptionData_Nova_getDat
 	l1_Nova_data = this;
 	while (1)
 	{
-		Context1 contextArg85 = 
-		{
-			&soft,
-			&exception,
-		};
+		Context1* contextArg85 = NOVA_MALLOC(sizeof(Context1));
+		contextArg85->nova_exception_Nova_ExceptionData_Nova_soft = &soft;
+		contextArg85->nova_exception_Nova_ExceptionData_Nova_exception = &exception;
 		
-		if (nova_datastruct_list_Nova_List_virtual0_Nova_any((nova_datastruct_list_Nova_List*)(l1_Nova_data->nova_exception_Nova_ExceptionData_Nova_caught), exceptionData, (nova_datastruct_list_Nova_List_closure9_Nova_anyFunc)&nova_exception_Nova_ExceptionData_Nova_lambda85, this, &contextArg85))
+		if (nova_datastruct_list_Nova_List_virtual0_Nova_any((nova_datastruct_list_Nova_List*)(l1_Nova_data->nova_exception_Nova_ExceptionData_Nova_caught), exceptionData, (nova_datastruct_list_Nova_List_closure12_Nova_anyFunc)&nova_exception_Nova_ExceptionData_Nova_lambda85, this, contextArg85))
 		{
 			return l1_Nova_data;
 		}
