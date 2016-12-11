@@ -91,7 +91,7 @@ spectra_tree_nodes_functions_CallableFunction_Extension_VTable spectra_tree_node
 
 
 
-char spectra_tree_nodes_functions_Nova_CallableFunction_Nova_lambda57(spectra_tree_nodes_functions_Nova_CallableFunction* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* _1, int _2, nova_datastruct_list_Nova_List* _3, Context1* context);
+char spectra_tree_nodes_functions_Nova_CallableFunction_Nova_lambda58(spectra_tree_nodes_functions_Nova_CallableFunction* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* _1, int _2, nova_datastruct_list_Nova_List* _3, Context1* context);
 
 void spectra_tree_nodes_functions_Nova_CallableFunction_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData)
 {
@@ -125,11 +125,11 @@ char spectra_tree_nodes_functions_Nova_CallableFunction_Nova_parseParameterAndAn
 
 char spectra_tree_nodes_functions_Nova_CallableFunction_Nova_parseParameters(spectra_tree_nodes_functions_Nova_CallableFunction* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* parameters, int require)
 {
-	Context1* contextArg57 = NOVA_MALLOC(sizeof(Context1));
-	contextArg57->spectra_tree_nodes_functions_Nova_CallableFunction_Nova_require = &require;
+	Context1* contextArg58 = NOVA_MALLOC(sizeof(Context1));
+	contextArg58->spectra_tree_nodes_functions_Nova_CallableFunction_Nova_require = &require;
 	
 	require = (int)(require == (intptr_t)nova_null ? 1 : require);
-	return nova_datastruct_list_Nova_List_virtual0_Nova_all((nova_datastruct_list_Nova_List*)(spectra_util_Nova_CompilerStringFunctions_Nova_splitAtCommas(parameters, exceptionData, (intptr_t)nova_null, (intptr_t)nova_null)), exceptionData, (nova_datastruct_list_Nova_List_closure16_Nova_allFunc)&spectra_tree_nodes_functions_Nova_CallableFunction_Nova_lambda57, this, contextArg57, 0);
+	return nova_datastruct_list_Nova_List_virtual0_Nova_all((nova_datastruct_list_Nova_List*)(spectra_util_Nova_CompilerStringFunctions_Nova_splitAtCommas(parameters, exceptionData, (intptr_t)nova_null, (intptr_t)nova_null)), exceptionData, (nova_datastruct_list_Nova_List_closure16_Nova_allFunc)&spectra_tree_nodes_functions_Nova_CallableFunction_Nova_lambda58, this, contextArg58, 0);
 }
 
 char spectra_tree_nodes_functions_Nova_CallableFunction_Nova_compatibleArguments(spectra_tree_nodes_functions_Nova_CallableFunction* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_list_Nova_Array* arguments)
@@ -155,7 +155,7 @@ char spectra_tree_nodes_functions_Nova_CallableFunction_Nova_parseName(spectra_t
 	return 0;
 }
 
-char spectra_tree_nodes_functions_Nova_CallableFunction_Nova_lambda57(spectra_tree_nodes_functions_Nova_CallableFunction* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* _1, int _2, nova_datastruct_list_Nova_List* _3, Context1* context)
+char spectra_tree_nodes_functions_Nova_CallableFunction_Nova_lambda58(spectra_tree_nodes_functions_Nova_CallableFunction* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* _1, int _2, nova_datastruct_list_Nova_List* _3, Context1* context)
 {
 	return spectra_tree_nodes_functions_Nova_CallableFunction_Nova_parseParameterAndAnnotations(this, exceptionData, _1, (*context->spectra_tree_nodes_functions_Nova_CallableFunction_Nova_require));
 }

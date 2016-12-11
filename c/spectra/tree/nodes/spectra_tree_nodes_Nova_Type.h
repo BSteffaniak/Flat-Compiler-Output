@@ -46,6 +46,7 @@ typedef struct spectra_tree_nodes_Nova_Type spectra_tree_nodes_Nova_Type;
 #include <spectra/tree/nodes/generics/spectra_tree_nodes_generics_Nova_GenericType.h>
 #include <spectra/tree/nodes/generics/spectra_tree_nodes_generics_Nova_GenericArgument.h>
 #include <spectra/tree/nodes/generics/spectra_tree_nodes_generics_Nova_GenericParameter.h>
+#include <spectra/tree/nodes/spectra_tree_nodes_Nova_Import.h>
 #include <nova/NativeObject.h>
 #include <nova/operators/nova_operators_Nova_Equals.h>
 
@@ -57,7 +58,10 @@ struct spectra_tree_nodes_Type_Extension_VTable
 	nova_Interface_VTable itable;
 	nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(spectra_tree_nodes_Nova_Type*, nova_exception_Nova_ExceptionData*);
 	long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
+	char (*spectra_tree_nodes_Nova_Type_virtual_Nova_isValid)(spectra_tree_nodes_Nova_Type*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
+	spectra_tree_nodes_Nova_Type* (*spectra_tree_nodes_Nova_Type_virtual_Nova_cloneTo)(spectra_tree_nodes_Nova_Type*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Type*);
 	char (*spectra_tree_nodes_Nova_Type_virtual_Accessor_Nova_isGeneric)(spectra_tree_nodes_Nova_Type*, nova_exception_Nova_ExceptionData*);
+	char (*spectra_tree_nodes_Nova_Type_virtual_Accessor_Nova_isPrimitiveType)(spectra_tree_nodes_Nova_Type*, nova_exception_Nova_ExceptionData*);
 };
 
 extern spectra_tree_nodes_Type_Extension_VTable spectra_tree_nodes_Type_Extension_VTable_val;
@@ -72,12 +76,14 @@ CCLASS_CLASS
 	nova_datastruct_list_Nova_Array* spectra_tree_nodes_Nova_Type_Nova_genericArguments;
 	nova_Nova_String* spectra_tree_nodes_Nova_Type_Nova_name;
 )
+extern nova_datastruct_list_Nova_Array* spectra_tree_nodes_Nova_Type_Nova_PRIMITIVE_TYPES;
 
 void spectra_tree_nodes_Nova_Type_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData);
 spectra_tree_nodes_Nova_Type* spectra_tree_nodes_Nova_Type_Nova_construct(spectra_tree_nodes_Nova_Type* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* name);
 void spectra_tree_nodes_Nova_Type_Nova_destroy(spectra_tree_nodes_Nova_Type** this, nova_exception_Nova_ExceptionData* exceptionData);
 void spectra_tree_nodes_Nova_Type_Nova_this(spectra_tree_nodes_Nova_Type* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* name);
 spectra_tree_nodes_Nova_Type* spectra_tree_nodes_Nova_Type_static_Nova_parse(spectra_tree_nodes_Nova_Type* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* input, spectra_tree_nodes_Nova_Node* parent, spectra_util_Nova_Location* location, int require);
+char spectra_tree_nodes_Nova_Type_Nova_isValid(spectra_tree_nodes_Nova_Type* this, nova_exception_Nova_ExceptionData* exceptionData, spectra_tree_nodes_Nova_Node* parent);
 nova_Nova_String* spectra_tree_nodes_Nova_Type_Nova_writeArray(spectra_tree_nodes_Nova_Type* this, nova_exception_Nova_ExceptionData* exceptionData);
 nova_Nova_String* spectra_tree_nodes_Nova_Type_Nova_writeGenericParameters(spectra_tree_nodes_Nova_Type* this, nova_exception_Nova_ExceptionData* exceptionData);
 nova_Nova_String* spectra_tree_nodes_Nova_Type_Nova_toString(spectra_tree_nodes_Nova_Type* this, nova_exception_Nova_ExceptionData* exceptionData);
@@ -85,7 +91,11 @@ nova_Nova_String* spectra_tree_nodes_Nova_Type_Nova_toNova(spectra_tree_nodes_No
 nova_Nova_String* spectra_tree_nodes_Nova_Type_Nova_writeNova(spectra_tree_nodes_Nova_Type* this, nova_exception_Nova_ExceptionData* exceptionData);
 spectra_tree_nodes_Nova_Type* spectra_tree_nodes_Nova_Type_Nova_cloneTo(spectra_tree_nodes_Nova_Type* this, nova_exception_Nova_ExceptionData* exceptionData, spectra_tree_nodes_Nova_Type* other);
 char spectra_tree_nodes_Nova_Type_Accessor_Nova_isGeneric(spectra_tree_nodes_Nova_Type* this, nova_exception_Nova_ExceptionData* exceptionData);
+char spectra_tree_nodes_Nova_Type_Accessor_Nova_isPrimitiveType(spectra_tree_nodes_Nova_Type* this, nova_exception_Nova_ExceptionData* exceptionData);
 void spectra_tree_nodes_Nova_Type_Nova_super(spectra_tree_nodes_Nova_Type* this, nova_exception_Nova_ExceptionData* exceptionData);
+char spectra_tree_nodes_Nova_Type_virtual_Nova_isValid(spectra_tree_nodes_Nova_Type* this, nova_exception_Nova_ExceptionData* exceptionData, spectra_tree_nodes_Nova_Node* parent);
+spectra_tree_nodes_Nova_Type* spectra_tree_nodes_Nova_Type_virtual_Nova_cloneTo(spectra_tree_nodes_Nova_Type* this, nova_exception_Nova_ExceptionData* exceptionData, spectra_tree_nodes_Nova_Type* other);
 char spectra_tree_nodes_Nova_Type_virtual_Accessor_Nova_isGeneric(spectra_tree_nodes_Nova_Type* this, nova_exception_Nova_ExceptionData* exceptionData);
+char spectra_tree_nodes_Nova_Type_virtual_Accessor_Nova_isPrimitiveType(spectra_tree_nodes_Nova_Type* this, nova_exception_Nova_ExceptionData* exceptionData);
 
 #endif

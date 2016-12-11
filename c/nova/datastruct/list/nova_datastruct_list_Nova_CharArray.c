@@ -104,7 +104,7 @@ nova_datastruct_list_CharArray_Extension_VTable nova_datastruct_list_CharArray_E
 
 
 long_long nova_datastruct_list_Nova_CharArray_Nova_lambda19(nova_datastruct_list_Nova_CharArray* this, nova_exception_Nova_ExceptionData* exceptionData, long_long v, char c, int _3, nova_datastruct_list_Nova_CharArray* _4, Context1* context);
-char nova_datastruct_list_Nova_CharArray_Nova_lambda83(nova_datastruct_list_Nova_CharArray* this, nova_exception_Nova_ExceptionData* exceptionData, char _1, Context2* context);
+char nova_datastruct_list_Nova_CharArray_Nova_lambda84(nova_datastruct_list_Nova_CharArray* this, nova_exception_Nova_ExceptionData* exceptionData, char _1, Context2* context);
 
 
 void nova_datastruct_list_Nova_CharArray_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData)
@@ -256,10 +256,10 @@ nova_datastruct_list_Nova_CharArray* nova_datastruct_list_Nova_CharArray_Nova_ad
 
 char nova_datastruct_list_Nova_CharArray_Nova_contains(nova_datastruct_list_Nova_CharArray* this, nova_exception_Nova_ExceptionData* exceptionData, char value)
 {
-	Context2* contextArg83 = NOVA_MALLOC(sizeof(Context2));
-	contextArg83->nova_datastruct_list_Nova_CharArray_Nova_value = &value;
+	Context2* contextArg84 = NOVA_MALLOC(sizeof(Context2));
+	contextArg84->nova_datastruct_list_Nova_CharArray_Nova_value = &value;
 	
-	return nova_datastruct_list_Nova_CharArray_Nova_any(this, exceptionData, (nova_datastruct_list_Nova_CharArray_closure20_Nova_anyFunc)&nova_datastruct_list_Nova_CharArray_Nova_lambda83, this, contextArg83);
+	return nova_datastruct_list_Nova_CharArray_Nova_any(this, exceptionData, (nova_datastruct_list_Nova_CharArray_closure20_Nova_anyFunc)&nova_datastruct_list_Nova_CharArray_Nova_lambda84, this, contextArg84);
 }
 
 nova_datastruct_list_Nova_Array* nova_datastruct_list_Nova_CharArray_Nova_map(nova_datastruct_list_Nova_CharArray* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_list_Nova_CharArray_closure12_Nova_mapFunc nova_datastruct_list_Nova_CharArray_Nova_mapFunc, void* nova_datastruct_list_Nova_CharArray_ref_Nova_mapFunc, void* mapFunc_context)
@@ -456,7 +456,7 @@ long_long nova_datastruct_list_Nova_CharArray_Nova_lambda19(nova_datastruct_list
 	return 31 * v + (int)c;
 }
 
-char nova_datastruct_list_Nova_CharArray_Nova_lambda83(nova_datastruct_list_Nova_CharArray* this, nova_exception_Nova_ExceptionData* exceptionData, char _1, Context2* context)
+char nova_datastruct_list_Nova_CharArray_Nova_lambda84(nova_datastruct_list_Nova_CharArray* this, nova_exception_Nova_ExceptionData* exceptionData, char _1, Context2* context)
 {
 	return _1 == (*context->nova_datastruct_list_Nova_CharArray_Nova_value);
 }

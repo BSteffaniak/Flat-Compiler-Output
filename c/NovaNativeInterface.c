@@ -1032,11 +1032,12 @@ nova_env novaEnv = {
 },
 
 {
+0,
 &spectra_tree_nodes_Nova_Type_Nova_writeArray,
 &spectra_tree_nodes_Nova_Type_Nova_writeGenericParameters,
 &spectra_tree_nodes_Nova_Type_Nova_toNova,
 &spectra_tree_nodes_Nova_Type_Nova_writeNova,
-&spectra_tree_nodes_Nova_Type_Nova_cloneTo,
+0,
 &spectra_tree_nodes_Nova_Type_Nova_construct,
 },
 
@@ -1236,7 +1237,8 @@ nova_env novaEnv = {
 },
 
 {
-&spectra_tree_nodes_generics_Nova_GenericType_Nova_construct,
+&spectra_tree_nodes_generics_Nova_GenericType_0_Nova_construct,
+&spectra_tree_nodes_generics_Nova_GenericType_1_Nova_construct,
 },
 
 {
