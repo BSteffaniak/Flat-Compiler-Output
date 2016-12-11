@@ -230,6 +230,7 @@ char spectra_tree_nodes_controlstructures_loops_Nova_ForEachLoop_Nova_parseItera
 	this->spectra_tree_nodes_controlstructures_loops_Nova_ForEachLoop_Nova_iterator = (spectra_tree_nodes_Nova_Value*)(spectra_tree_nodes_Nova_Value_0_static_Nova_parse(0, exceptionData, input, (spectra_tree_nodes_Nova_Node*)(this), 0, (intptr_t)nova_null));
 	if (this->spectra_tree_nodes_controlstructures_loops_Nova_ForEachLoop_Nova_iterator == (spectra_tree_nodes_Nova_Value*)nova_null)
 	{
+		return 0;
 	}
 	return 1;
 }

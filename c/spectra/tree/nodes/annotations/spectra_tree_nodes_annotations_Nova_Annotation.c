@@ -31,9 +31,21 @@
 #include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <spectra/tree/nodes/spectra_tree_nodes_Nova_Node.h>
 #include <spectra/util/spectra_util_Nova_Location.h>
+#include <spectra/tree/nodes/annotations/spectra_tree_nodes_annotations_Nova_AbstractAnnotation.h>
+#include <spectra/tree/nodes/annotations/spectra_tree_nodes_annotations_Nova_AutoFinalAnnotation.h>
+#include <spectra/tree/nodes/annotations/spectra_tree_nodes_annotations_Nova_AutoPureAnnotation.h>
+#include <spectra/tree/nodes/annotations/spectra_tree_nodes_annotations_Nova_FinalAnnotation.h>
+#include <spectra/tree/nodes/annotations/spectra_tree_nodes_annotations_Nova_ImmutableAnnotation.h>
+#include <spectra/tree/nodes/annotations/spectra_tree_nodes_annotations_Nova_ImpureAnnotation.h>
 #include <spectra/tree/nodes/annotations/spectra_tree_nodes_annotations_Nova_NativeAnnotation.h>
 #include <spectra/tree/nodes/annotations/spectra_tree_nodes_annotations_Nova_OverrideAnnotation.h>
+#include <spectra/tree/nodes/annotations/spectra_tree_nodes_annotations_Nova_PrivateAnnotation.h>
+#include <spectra/tree/nodes/annotations/spectra_tree_nodes_annotations_Nova_PublicAnnotation.h>
+#include <spectra/tree/nodes/annotations/spectra_tree_nodes_annotations_Nova_PureAnnotation.h>
+#include <spectra/tree/nodes/annotations/spectra_tree_nodes_annotations_Nova_StaticAnnotation.h>
 #include <spectra/tree/nodes/annotations/spectra_tree_nodes_annotations_Nova_TargetAnnotation.h>
+#include <spectra/tree/nodes/annotations/spectra_tree_nodes_annotations_Nova_VarAnnotation.h>
+#include <spectra/tree/nodes/annotations/spectra_tree_nodes_annotations_Nova_VisibleAnnotation.h>
 #include <spectra/spectra_Nova_InvalidParseException.h>
 #include <spectra/spectra_Nova_SyntaxErrorException.h>
 #include <spectra/error/spectra_error_Nova_UnimplementedOperationException.h>
@@ -198,7 +210,55 @@ spectra_tree_nodes_annotations_Nova_Annotation* spectra_tree_nodes_annotations_N
 					l2_Nova_node = (nova_Nova_Object*)(spectra_tree_nodes_annotations_Nova_NativeAnnotation_static_Nova_parse(0, exceptionData, l2_Nova_type, l2_Nova_parameters, parent, location, require));
 					if ((l2_Nova_node) == (nova_Nova_Object*)nova_null)
 					{
-						l2_Nova_node = (nova_Nova_Object*)(spectra_tree_nodes_annotations_Nova_TargetAnnotation_static_Nova_parse(0, exceptionData, l2_Nova_type, l2_Nova_parameters, parent, location, require));
+						l2_Nova_node = (nova_Nova_Object*)(spectra_tree_nodes_annotations_Nova_AbstractAnnotation_static_Nova_parse(0, exceptionData, l2_Nova_type, l2_Nova_parameters, parent, location, require));
+						if ((l2_Nova_node) == (nova_Nova_Object*)nova_null)
+						{
+							l2_Nova_node = (nova_Nova_Object*)(spectra_tree_nodes_annotations_Nova_FinalAnnotation_static_Nova_parse(0, exceptionData, l2_Nova_type, l2_Nova_parameters, parent, location, require));
+							if ((l2_Nova_node) == (nova_Nova_Object*)nova_null)
+							{
+								l2_Nova_node = (nova_Nova_Object*)(spectra_tree_nodes_annotations_Nova_PublicAnnotation_static_Nova_parse(0, exceptionData, l2_Nova_type, l2_Nova_parameters, parent, location, require));
+								if ((l2_Nova_node) == (nova_Nova_Object*)nova_null)
+								{
+									l2_Nova_node = (nova_Nova_Object*)(spectra_tree_nodes_annotations_Nova_VisibleAnnotation_static_Nova_parse(0, exceptionData, l2_Nova_type, l2_Nova_parameters, parent, location, require));
+									if ((l2_Nova_node) == (nova_Nova_Object*)nova_null)
+									{
+										l2_Nova_node = (nova_Nova_Object*)(spectra_tree_nodes_annotations_Nova_PrivateAnnotation_static_Nova_parse(0, exceptionData, l2_Nova_type, l2_Nova_parameters, parent, location, require));
+										if ((l2_Nova_node) == (nova_Nova_Object*)nova_null)
+										{
+											l2_Nova_node = (nova_Nova_Object*)(spectra_tree_nodes_annotations_Nova_StaticAnnotation_static_Nova_parse(0, exceptionData, l2_Nova_type, l2_Nova_parameters, parent, location, require));
+											if ((l2_Nova_node) == (nova_Nova_Object*)nova_null)
+											{
+												l2_Nova_node = (nova_Nova_Object*)(spectra_tree_nodes_annotations_Nova_ImmutableAnnotation_static_Nova_parse(0, exceptionData, l2_Nova_type, l2_Nova_parameters, parent, location, require));
+												if ((l2_Nova_node) == (nova_Nova_Object*)nova_null)
+												{
+													l2_Nova_node = (nova_Nova_Object*)(spectra_tree_nodes_annotations_Nova_PureAnnotation_static_Nova_parse(0, exceptionData, l2_Nova_type, l2_Nova_parameters, parent, location, require));
+													if ((l2_Nova_node) == (nova_Nova_Object*)nova_null)
+													{
+														l2_Nova_node = (nova_Nova_Object*)(spectra_tree_nodes_annotations_Nova_ImpureAnnotation_static_Nova_parse(0, exceptionData, l2_Nova_type, l2_Nova_parameters, parent, location, require));
+														if ((l2_Nova_node) == (nova_Nova_Object*)nova_null)
+														{
+															l2_Nova_node = (nova_Nova_Object*)(spectra_tree_nodes_annotations_Nova_VarAnnotation_static_Nova_parse(0, exceptionData, l2_Nova_type, l2_Nova_parameters, parent, location, require));
+															if ((l2_Nova_node) == (nova_Nova_Object*)nova_null)
+															{
+																l2_Nova_node = (nova_Nova_Object*)(spectra_tree_nodes_annotations_Nova_TargetAnnotation_static_Nova_parse(0, exceptionData, l2_Nova_type, l2_Nova_parameters, parent, location, require));
+																if ((l2_Nova_node) == (nova_Nova_Object*)nova_null)
+																{
+																	l2_Nova_node = (nova_Nova_Object*)(spectra_tree_nodes_annotations_Nova_AutoFinalAnnotation_static_Nova_parse(0, exceptionData, l2_Nova_type, l2_Nova_parameters, parent, location, require));
+																	if ((l2_Nova_node) == (nova_Nova_Object*)nova_null)
+																	{
+																		l2_Nova_node = (nova_Nova_Object*)(spectra_tree_nodes_annotations_Nova_AutoPureAnnotation_static_Nova_parse(0, exceptionData, l2_Nova_type, l2_Nova_parameters, parent, location, require));
+																	}
+																}
+															}
+														}
+													}
+												}
+											}
+										}
+									}
+								}
+							}
+						}
 					}
 				}
 			}

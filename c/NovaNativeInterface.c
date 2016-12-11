@@ -149,7 +149,7 @@ nova_env novaEnv = {
 },
 
 {
-&nova_datastruct_Nova_ReversibleHashMap_Nova_put,
+&nova_datastruct_Nova_ReversibleHashMap_Nova_add,
 &nova_datastruct_Nova_ReversibleHashMap_Nova_getKey,
 &nova_datastruct_Nova_ReversibleHashMap_Nova_getValue,
 &nova_datastruct_Nova_ReversibleHashMap_Nova_construct,
@@ -1054,11 +1054,35 @@ nova_env novaEnv = {
 },
 
 {
+&spectra_tree_nodes_annotations_Nova_AbstractAnnotation_Nova_construct,
+},
+
+{
 0,
 },
 
 {
 &spectra_tree_nodes_annotations_Nova_Annotation_Nova_construct,
+},
+
+{
+&spectra_tree_nodes_annotations_Nova_AutoFinalAnnotation_Nova_construct,
+},
+
+{
+&spectra_tree_nodes_annotations_Nova_AutoPureAnnotation_Nova_construct,
+},
+
+{
+&spectra_tree_nodes_annotations_Nova_FinalAnnotation_Nova_construct,
+},
+
+{
+&spectra_tree_nodes_annotations_Nova_ImmutableAnnotation_Nova_construct,
+},
+
+{
+&spectra_tree_nodes_annotations_Nova_ImpureAnnotation_Nova_construct,
 },
 
 {
@@ -1073,7 +1097,31 @@ nova_env novaEnv = {
 },
 
 {
+&spectra_tree_nodes_annotations_Nova_PrivateAnnotation_Nova_construct,
+},
+
+{
+&spectra_tree_nodes_annotations_Nova_PublicAnnotation_Nova_construct,
+},
+
+{
+&spectra_tree_nodes_annotations_Nova_PureAnnotation_Nova_construct,
+},
+
+{
+&spectra_tree_nodes_annotations_Nova_StaticAnnotation_Nova_construct,
+},
+
+{
 &spectra_tree_nodes_annotations_Nova_TargetAnnotation_Nova_construct,
+},
+
+{
+&spectra_tree_nodes_annotations_Nova_VarAnnotation_Nova_construct,
+},
+
+{
+&spectra_tree_nodes_annotations_Nova_VisibleAnnotation_Nova_construct,
 },
 
 {

@@ -69,7 +69,7 @@
 
 
 
-spectra_tree_nodes_annotations_OverrideAnnotation_Extension_VTable spectra_tree_nodes_annotations_OverrideAnnotation_Extension_VTable_val =
+spectra_tree_nodes_annotations_ImmutableAnnotation_Extension_VTable spectra_tree_nodes_annotations_ImmutableAnnotation_Extension_VTable_val =
 {
 	0,
 	{
@@ -124,7 +124,7 @@ spectra_tree_nodes_annotations_OverrideAnnotation_Extension_VTable spectra_tree_
 	spectra_tree_nodes_Nova_Node_Nova_parsePlaceholderChildren,
 	spectra_tree_nodes_Nova_Node_Nova_writeAnnotationSeparator,
 	spectra_tree_nodes_Nova_Node_Nova_toNova,
-	spectra_tree_nodes_annotations_Nova_OverrideAnnotation_Nova_writeNova,
+	spectra_tree_nodes_annotations_Nova_ImmutableAnnotation_Nova_writeNova,
 	spectra_tree_nodes_Nova_Node_Accessor_Nova_scope,
 	spectra_tree_nodes_Nova_Node_Mutator_Nova_scope,
 	spectra_tree_nodes_Nova_Node_Accessor_Nova_index,
@@ -140,29 +140,29 @@ spectra_tree_nodes_annotations_OverrideAnnotation_Extension_VTable spectra_tree_
 };
 
 
-void spectra_tree_nodes_annotations_Nova_OverrideAnnotation_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData)
+void spectra_tree_nodes_annotations_Nova_ImmutableAnnotation_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData)
 {
 	{
 	}
 }
 
-spectra_tree_nodes_annotations_Nova_OverrideAnnotation* spectra_tree_nodes_annotations_Nova_OverrideAnnotation_Nova_construct(spectra_tree_nodes_annotations_Nova_OverrideAnnotation* this, nova_exception_Nova_ExceptionData* exceptionData, spectra_tree_nodes_Nova_Node* parent, spectra_util_Nova_Location* location)
+spectra_tree_nodes_annotations_Nova_ImmutableAnnotation* spectra_tree_nodes_annotations_Nova_ImmutableAnnotation_Nova_construct(spectra_tree_nodes_annotations_Nova_ImmutableAnnotation* this, nova_exception_Nova_ExceptionData* exceptionData, spectra_tree_nodes_Nova_Node* parent, spectra_util_Nova_Location* location)
 {
-	CCLASS_NEW(spectra_tree_nodes_annotations_Nova_OverrideAnnotation, this,);
-	this->vtable = &spectra_tree_nodes_annotations_OverrideAnnotation_Extension_VTable_val;
+	CCLASS_NEW(spectra_tree_nodes_annotations_Nova_ImmutableAnnotation, this,);
+	this->vtable = &spectra_tree_nodes_annotations_ImmutableAnnotation_Extension_VTable_val;
 	nova_Nova_Object_Nova_super((nova_Nova_Object*)this, exceptionData);
 	spectra_tree_nodes_Nova_Node_Nova_super((spectra_tree_nodes_Nova_Node*)this, exceptionData);
 	spectra_tree_nodes_annotations_Nova_Annotation_Nova_super((spectra_tree_nodes_annotations_Nova_Annotation*)this, exceptionData);
-	spectra_tree_nodes_annotations_Nova_OverrideAnnotation_Nova_super(this, exceptionData);
+	spectra_tree_nodes_annotations_Nova_ImmutableAnnotation_Nova_super(this, exceptionData);
 	
 	{
-		spectra_tree_nodes_annotations_Nova_OverrideAnnotation_Nova_this(this, exceptionData, parent, location);
+		spectra_tree_nodes_annotations_Nova_ImmutableAnnotation_Nova_this(this, exceptionData, parent, location);
 	}
 	
 	return this;
 }
 
-void spectra_tree_nodes_annotations_Nova_OverrideAnnotation_Nova_destroy(spectra_tree_nodes_annotations_Nova_OverrideAnnotation** this, nova_exception_Nova_ExceptionData* exceptionData)
+void spectra_tree_nodes_annotations_Nova_ImmutableAnnotation_Nova_destroy(spectra_tree_nodes_annotations_Nova_ImmutableAnnotation** this, nova_exception_Nova_ExceptionData* exceptionData)
 {
 	if (!*this)
 	{
@@ -173,34 +173,34 @@ void spectra_tree_nodes_annotations_Nova_OverrideAnnotation_Nova_destroy(spectra
 	NOVA_FREE(*this);
 }
 
-void spectra_tree_nodes_annotations_Nova_OverrideAnnotation_Nova_this(spectra_tree_nodes_annotations_Nova_OverrideAnnotation* this, nova_exception_Nova_ExceptionData* exceptionData, spectra_tree_nodes_Nova_Node* parent, spectra_util_Nova_Location* location)
+void spectra_tree_nodes_annotations_Nova_ImmutableAnnotation_Nova_this(spectra_tree_nodes_annotations_Nova_ImmutableAnnotation* this, nova_exception_Nova_ExceptionData* exceptionData, spectra_tree_nodes_Nova_Node* parent, spectra_util_Nova_Location* location)
 {
 	parent = (spectra_tree_nodes_Nova_Node*)(parent == 0 ? (nova_Nova_Object*)(nova_Nova_Object*)nova_null : (nova_Nova_Object*)parent);
 	location = (spectra_util_Nova_Location*)(location == 0 ? (nova_Nova_Object*)spectra_util_Nova_Location_Nova_INVALID : (nova_Nova_Object*)location);
 	spectra_tree_nodes_annotations_Nova_Annotation_Nova_this((spectra_tree_nodes_annotations_Nova_Annotation*)(this), exceptionData, parent, location);
 }
 
-spectra_tree_nodes_annotations_Nova_OverrideAnnotation* spectra_tree_nodes_annotations_Nova_OverrideAnnotation_static_Nova_parse(spectra_tree_nodes_annotations_Nova_OverrideAnnotation* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* type, nova_Nova_String* parameters, spectra_tree_nodes_Nova_Node* parent, spectra_util_Nova_Location* location, int require)
+spectra_tree_nodes_annotations_Nova_ImmutableAnnotation* spectra_tree_nodes_annotations_Nova_ImmutableAnnotation_static_Nova_parse(spectra_tree_nodes_annotations_Nova_ImmutableAnnotation* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* type, nova_Nova_String* parameters, spectra_tree_nodes_Nova_Node* parent, spectra_util_Nova_Location* location, int require)
 {
 	parent = (spectra_tree_nodes_Nova_Node*)(parent == 0 ? (nova_Nova_Object*)(nova_Nova_Object*)nova_null : (nova_Nova_Object*)parent);
 	location = (spectra_util_Nova_Location*)(location == 0 ? (nova_Nova_Object*)spectra_util_Nova_Location_Nova_INVALID : (nova_Nova_Object*)location);
 	require = (int)(require == (intptr_t)nova_null ? 1 : require);
-	if (nova_Nova_String_Nova_equals(type, exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("Override"))) && parameters->nova_Nova_String_Nova_count == 0)
+	if (nova_Nova_String_Nova_equals(type, exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("Immutable"))) && parameters->nova_Nova_String_Nova_count == 0)
 	{
-		spectra_tree_nodes_annotations_Nova_OverrideAnnotation* l1_Nova_node = (spectra_tree_nodes_annotations_Nova_OverrideAnnotation*)nova_null;
+		spectra_tree_nodes_annotations_Nova_ImmutableAnnotation* l1_Nova_node = (spectra_tree_nodes_annotations_Nova_ImmutableAnnotation*)nova_null;
 		
-		l1_Nova_node = spectra_tree_nodes_annotations_Nova_OverrideAnnotation_Nova_construct(0, exceptionData, parent, location);
+		l1_Nova_node = spectra_tree_nodes_annotations_Nova_ImmutableAnnotation_Nova_construct(0, exceptionData, parent, location);
 		return l1_Nova_node;
 	}
-	return (spectra_tree_nodes_annotations_Nova_OverrideAnnotation*)(nova_Nova_Object*)nova_null;
+	return (spectra_tree_nodes_annotations_Nova_ImmutableAnnotation*)(nova_Nova_Object*)nova_null;
 }
 
-nova_Nova_String* spectra_tree_nodes_annotations_Nova_OverrideAnnotation_Nova_writeNova(spectra_tree_nodes_annotations_Nova_OverrideAnnotation* this, nova_exception_Nova_ExceptionData* exceptionData)
+nova_Nova_String* spectra_tree_nodes_annotations_Nova_ImmutableAnnotation_Nova_writeNova(spectra_tree_nodes_annotations_Nova_ImmutableAnnotation* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
-	return nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("[Override]"));
+	return nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("[Immutable]"));
 }
 
-void spectra_tree_nodes_annotations_Nova_OverrideAnnotation_Nova_super(spectra_tree_nodes_annotations_Nova_OverrideAnnotation* this, nova_exception_Nova_ExceptionData* exceptionData)
+void spectra_tree_nodes_annotations_Nova_ImmutableAnnotation_Nova_super(spectra_tree_nodes_annotations_Nova_ImmutableAnnotation* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
 }
 
