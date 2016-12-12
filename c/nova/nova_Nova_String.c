@@ -100,8 +100,8 @@ nova_String_Extension_VTable nova_String_Extension_VTable_val =
 
 
 int nova_Nova_String_Nova_calculateSize(nova_Nova_String* this, nova_exception_Nova_ExceptionData* exceptionData, char* chars);
-nova_datastruct_list_Nova_CharArray* generated1(nova_Nova_String* this, nova_exception_Nova_ExceptionData* exceptionData);
 nova_Nova_String* nova_Nova_String_Nova_lambda1(nova_Nova_String* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* _1, int _2, nova_datastruct_list_Nova_Array* _3, Context1* context);
+nova_datastruct_list_Nova_CharArray* generated2(nova_Nova_String* this, nova_exception_Nova_ExceptionData* exceptionData);
 void nova_Nova_String_Nova_lambda26(nova_Nova_String* this, nova_exception_Nova_ExceptionData* exceptionData, nova_regex_Nova_Match* match, int _2, nova_datastruct_list_Nova_Array* _3, Context2* context);
 void nova_Nova_String_Nova_lambda27(nova_Nova_String* this, nova_exception_Nova_ExceptionData* exceptionData, nova_regex_Nova_Match* match, int _2, nova_datastruct_list_Nova_Array* _3, Context3* context);
 
@@ -111,7 +111,7 @@ nova_datastruct_list_Nova_CharArray* nova_Nova_String_Nova_WHITESPACE;
 void nova_Nova_String_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData)
 {
 	{
-		nova_Nova_String_Nova_WHITESPACE = generated1(0, exceptionData);
+		nova_Nova_String_Nova_WHITESPACE = generated2(0, exceptionData);
 	}
 }
 
@@ -593,7 +593,12 @@ char nova_Nova_String_Nova_set(nova_Nova_String* this, nova_exception_Nova_Excep
 {
 }
 
-nova_datastruct_list_Nova_CharArray* generated1(nova_Nova_String* this, nova_exception_Nova_ExceptionData* exceptionData)
+nova_Nova_String* nova_Nova_String_Nova_lambda1(nova_Nova_String* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* _1, int _2, nova_datastruct_list_Nova_Array* _3, Context1* context)
+{
+	return this;
+}
+
+nova_datastruct_list_Nova_CharArray* generated2(nova_Nova_String* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
 	char* l1_Nova_temp = (char*)nova_null;
 	
@@ -603,11 +608,6 @@ nova_datastruct_list_Nova_CharArray* generated1(nova_Nova_String* this, nova_exc
 	l1_Nova_temp[2] = '\n';
 	l1_Nova_temp[3] = '\r';
 	return nova_datastruct_list_Nova_CharArray_2_Nova_construct(0, exceptionData, l1_Nova_temp, 4);
-}
-
-nova_Nova_String* nova_Nova_String_Nova_lambda1(nova_Nova_String* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* _1, int _2, nova_datastruct_list_Nova_Array* _3, Context1* context)
-{
-	return this;
 }
 
 void nova_Nova_String_Nova_lambda26(nova_Nova_String* this, nova_exception_Nova_ExceptionData* exceptionData, nova_regex_Nova_Match* match, int _2, nova_datastruct_list_Nova_Array* _3, Context2* context)

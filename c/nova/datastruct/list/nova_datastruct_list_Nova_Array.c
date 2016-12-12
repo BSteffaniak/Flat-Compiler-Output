@@ -242,6 +242,7 @@ nova_Nova_Object* nova_datastruct_list_Nova_Array_0_Nova_remove(nova_datastruct_
 	
 	l1_Nova_element = this->nova_datastruct_list_Nova_Array_Nova_data[index];
 	nova_datastruct_list_Nova_Array_Nova_shiftLeft(this, exceptionData, index + 1, this->nova_datastruct_list_Nova_Array_Nova_position--);
+	nova_datastruct_list_Nova_Array_Mutatorfunc_Nova_count(this, exceptionData, nova_datastruct_list_Nova_Array_Accessorfunc_Nova_count(this, exceptionData) - 1);
 	return (nova_Nova_Object*)l1_Nova_element;
 }
 
@@ -253,6 +254,7 @@ nova_Nova_Object* nova_datastruct_list_Nova_Array_1_Nova_remove(nova_datastruct_
 	if (l1_Nova_index >= 0)
 	{
 		nova_datastruct_list_Nova_Array_Nova_shiftLeft(this, exceptionData, l1_Nova_index + 1, this->nova_datastruct_list_Nova_Array_Nova_position--);
+		nova_datastruct_list_Nova_Array_Mutatorfunc_Nova_count(this, exceptionData, nova_datastruct_list_Nova_Array_Accessorfunc_Nova_count(this, exceptionData) - 1);
 		return (nova_Nova_Object*)element;
 	}
 	return (nova_Nova_Object*)(nova_Nova_Object*)nova_null;

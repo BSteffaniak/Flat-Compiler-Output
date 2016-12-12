@@ -97,7 +97,7 @@ nova_datastruct_list_Nova_ImmutableArray* nova_thread_Nova_Thread_Nova_ACTIVE_TH
 void nova_thread_Nova_Thread_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData)
 {
 	{
-		nova_thread_Nova_Thread_Nova_ACTIVE_THREADS = (nova_datastruct_list_Nova_ImmutableArray*)(nova_datastruct_list_Nova_Array_0_Nova_construct(0, exceptionData));
+		nova_thread_Nova_Thread_Nova_ACTIVE_THREADS = nova_datastruct_list_Nova_Array_Nova_toImmutable((nova_datastruct_list_Nova_Array*)(nova_datastruct_list_Nova_Array_0_Nova_construct(0, exceptionData)), exceptionData);
 	}
 }
 
@@ -212,7 +212,7 @@ void nova_thread_Nova_Thread_Nova_startRun(nova_thread_Nova_Thread* this, nova_e
 	}
 	END_TRY;
 	this->nova_thread_Nova_Thread_Nova_active = 0;
-	nova_thread_Nova_Thread_Nova_ACTIVE_THREADS = nova_datastruct_list_Nova_Array_Nova_toImmutable((nova_datastruct_list_Nova_Array*)(nova_datastruct_list_Nova_ImmutableArray_0_Nova_remove((nova_datastruct_list_Nova_ImmutableArray*)(nova_thread_Nova_Thread_Nova_ACTIVE_THREADS), exceptionData, (nova_Nova_Object*)(this))), exceptionData);
+	nova_thread_Nova_Thread_Nova_ACTIVE_THREADS = nova_datastruct_list_Nova_ImmutableArray_0_Nova_remove((nova_datastruct_list_Nova_ImmutableArray*)(nova_thread_Nova_Thread_Nova_ACTIVE_THREADS), exceptionData, (nova_Nova_Object*)(this));
 }
 
 void nova_thread_Nova_Thread_Nova_super(nova_thread_Nova_Thread* this, nova_exception_Nova_ExceptionData* exceptionData)
