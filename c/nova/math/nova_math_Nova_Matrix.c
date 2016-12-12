@@ -30,6 +30,7 @@
 #include <nova/nova_Nova_Class.h>
 #include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <nova/operators/nova_operators_Nova_MultiplyOperator.h>
+#include <nova/operators/nova_operators_Nova_PlusOperator.h>
 #include <nova/exception/nova_exception_Nova_InvalidArgumentException.h>
 #include <nova/exception/nova_exception_Nova_InvalidOperationException.h>
 #include <nova/NativeObject.h>
@@ -105,7 +106,7 @@ nova_math_Matrix_Extension_VTable nova_math_Matrix_Extension_VTable_val =
 		(nova_Nova_Object*(*)(nova_operators_Nova_MultiplyOperator*, nova_exception_Nova_ExceptionData*, nova_Nova_Object*))nova_math_Nova_Matrix_Nova_multiply,
 		0,
 		0,
-		0,
+		(nova_Nova_Object*(*)(nova_operators_Nova_PlusOperator*, nova_exception_Nova_ExceptionData*, nova_Nova_Object*))nova_math_Nova_Matrix_0_Nova_plus,
 		0,
 		0,
 	},
@@ -219,7 +220,7 @@ void nova_math_Nova_Matrix_1_Nova_this(nova_math_Nova_Matrix* this, nova_excepti
 void nova_math_Nova_Matrix_2_Nova_this(nova_math_Nova_Matrix* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_list_Nova_Array* data)
 {
 	this->prv->nova_math_Nova_Matrix_Nova_data = data;
-	if (data == (nova_datastruct_list_Nova_Array*)nova_null || nova_datastruct_list_Nova_List_virtual_Accessor1_Nova_count((nova_datastruct_list_Nova_List*)(data), exceptionData) == 0)
+	if (data == (nova_datastruct_list_Nova_Array*)nova_null || nova_datastruct_list_Nova_Array_Accessorfunc_Nova_count((nova_datastruct_list_Nova_Array*)(data), exceptionData) == 0)
 	{
 		THROW(nova_exception_Nova_InvalidArgumentException_Nova_construct(0, exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("Matrix size must be greater than 0 rows and columns"))), 0);
 	}
@@ -364,6 +365,16 @@ nova_math_Nova_Matrix* nova_math_Nova_Matrix_Nova_add(nova_math_Nova_Matrix* thi
 	return l1_Nova_result;
 }
 
+nova_math_Nova_Matrix* nova_math_Nova_Matrix_0_Nova_plus(nova_math_Nova_Matrix* this, nova_exception_Nova_ExceptionData* exceptionData, nova_math_Nova_Matrix* other)
+{
+	return nova_math_Nova_Matrix_Nova_add(this, exceptionData, other, 0);
+}
+
+nova_math_Nova_Matrix* nova_math_Nova_Matrix_1_Nova_plus(nova_math_Nova_Matrix* this, nova_exception_Nova_ExceptionData* exceptionData, nova_math_Nova_Matrix* other, char allowUnequalDimensions)
+{
+	return nova_math_Nova_Matrix_Nova_add(this, exceptionData, other, allowUnequalDimensions);
+}
+
 nova_math_Nova_Matrix* nova_math_Nova_Matrix_Nova_subtract(nova_math_Nova_Matrix* this, nova_exception_Nova_ExceptionData* exceptionData, nova_math_Nova_Matrix* other, int allowUnequalDimensions)
 {
 	nova_math_Nova_Matrix* l1_Nova_result = (nova_math_Nova_Matrix*)nova_null;
@@ -387,6 +398,16 @@ nova_math_Nova_Matrix* nova_math_Nova_Matrix_Nova_subtract(nova_math_Nova_Matrix
 		}
 	}
 	return l1_Nova_result;
+}
+
+nova_math_Nova_Matrix* nova_math_Nova_Matrix_0_Nova_minus(nova_math_Nova_Matrix* this, nova_exception_Nova_ExceptionData* exceptionData, nova_math_Nova_Matrix* other)
+{
+	return nova_math_Nova_Matrix_1_Nova_minus(this, exceptionData, other, 0);
+}
+
+nova_math_Nova_Matrix* nova_math_Nova_Matrix_1_Nova_minus(nova_math_Nova_Matrix* this, nova_exception_Nova_ExceptionData* exceptionData, nova_math_Nova_Matrix* other, char allowUnequalDimensions)
+{
+	return nova_math_Nova_Matrix_Nova_subtract(this, exceptionData, other, allowUnequalDimensions);
 }
 
 void nova_math_Nova_Matrix_Nova_checkUnequalDimensions(nova_math_Nova_Matrix* this, nova_exception_Nova_ExceptionData* exceptionData, nova_math_Nova_Matrix* other)
@@ -438,7 +459,7 @@ double nova_math_Nova_Matrix_static_Nova_determinant(nova_math_Nova_Matrix* this
 	int l1_Nova_order = 0;
 	double l1_Nova_det = 0;
 	
-	l1_Nova_order = (int)(nova_datastruct_list_Nova_List_virtual_Accessor1_Nova_count((nova_datastruct_list_Nova_List*)(data), exceptionData));
+	l1_Nova_order = (int)(nova_datastruct_list_Nova_Array_Accessorfunc_Nova_count((nova_datastruct_list_Nova_Array*)(data), exceptionData));
 	l1_Nova_det = (double)(0);
 	if (l1_Nova_order == 1)
 	{
@@ -590,13 +611,13 @@ char nova_math_Nova_Matrix_Accessor_Nova_isSquare(nova_math_Nova_Matrix* this, n
 
 int nova_math_Nova_Matrix_Accessor_Nova_rows(nova_math_Nova_Matrix* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
-	return nova_datastruct_list_Nova_List_virtual_Accessor1_Nova_count((nova_datastruct_list_Nova_List*)(this->prv->nova_math_Nova_Matrix_Nova_data), exceptionData);
+	return nova_datastruct_list_Nova_Array_Accessorfunc_Nova_count((nova_datastruct_list_Nova_Array*)(this->prv->nova_math_Nova_Matrix_Nova_data), exceptionData);
 }
 
 
 int nova_math_Nova_Matrix_Accessor_Nova_cols(nova_math_Nova_Matrix* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
-	return nova_datastruct_list_Nova_List_virtual_Accessor1_Nova_count((nova_datastruct_list_Nova_List*)(nova_datastruct_list_Nova_Array_virtual_Nova_get((nova_datastruct_list_Nova_Array*)(this->prv->nova_math_Nova_Matrix_Nova_data), exceptionData, 0)), exceptionData);
+	return nova_datastruct_list_Nova_Array_Accessorfunc_Nova_count((nova_datastruct_list_Nova_Array*)(nova_datastruct_list_Nova_Array_virtual_Nova_get((nova_datastruct_list_Nova_Array*)(this->prv->nova_math_Nova_Matrix_Nova_data), exceptionData, 0)), exceptionData);
 }
 
 

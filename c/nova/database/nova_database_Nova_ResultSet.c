@@ -119,7 +119,7 @@ void nova_database_Nova_ResultSet_Nova_this(nova_database_Nova_ResultSet* this, 
 
 int nova_database_Nova_ResultSet_Accessor_Nova_numRows(nova_database_Nova_ResultSet* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
-	return nova_datastruct_list_Nova_List_virtual_Accessor1_Nova_count((nova_datastruct_list_Nova_List*)(this->nova_database_Nova_ResultSet_Nova_rows), exceptionData);
+	return nova_datastruct_list_Nova_Array_Accessorfunc_Nova_count((nova_datastruct_list_Nova_Array*)(this->nova_database_Nova_ResultSet_Nova_rows), exceptionData);
 }
 
 

@@ -533,7 +533,7 @@ void stabilitytest_Nova_SyntaxStability_Nova_checkIterators(stabilitytest_Nova_S
 	}
 	END_TRY;
 	l4_Nova_n = (int)0;
-	for (; l4_Nova_n < (int)nova_datastruct_list_Nova_List_virtual_Accessor1_Nova_count((nova_datastruct_list_Nova_List*)(l1_Nova_list2), exceptionData); l4_Nova_n++)
+	for (; l4_Nova_n < (int)nova_datastruct_list_Nova_Array_Accessorfunc_Nova_count((nova_datastruct_list_Nova_Array*)(l1_Nova_list2), exceptionData); l4_Nova_n++)
 	{
 		stabilitytest_Nova_StabilityTest_Nova_fail(this->stabilitytest_Nova_StabilityTestCase_Nova_program, exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("Failed to filter data correctly")), (int)(((nova_Nova_String*)nova_datastruct_list_Nova_Array_virtual_Nova_get((nova_datastruct_list_Nova_Array*)(l1_Nova_list2), exceptionData, l4_Nova_n))->nova_Nova_String_Nova_count) < 4);
 	}

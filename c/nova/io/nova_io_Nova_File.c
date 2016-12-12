@@ -257,7 +257,7 @@ nova_datastruct_list_Nova_Array* nova_io_Nova_File_Nova_listFiles(nova_io_Nova_F
 		tinydir_readfile(&dir, &file);
 		if (!file.is_dir) {
 			l1_Nova_current = file.name;
-			nova_datastruct_list_Nova_Array_virtual0_Nova_add((nova_datastruct_list_Nova_Array*)(l1_Nova_names), exceptionData, (nova_Nova_Object*)(nova_Nova_String_1_Nova_construct(0, exceptionData, l1_Nova_current)));
+			nova_datastruct_list_Nova_Array_0_Nova_add((nova_datastruct_list_Nova_Array*)(l1_Nova_names), exceptionData, (nova_Nova_Object*)(nova_Nova_String_1_Nova_construct(0, exceptionData, l1_Nova_current)));
 			
 		}
 		tinydir_next(&dir);
@@ -289,7 +289,7 @@ nova_datastruct_list_Nova_Array* nova_io_Nova_File_Accessorfunc_Nova_files(nova_
 		l1_Nova_f = NOVA_MALLOC(sizeof(tinydir_file));
 		tinydir_readfile(&dir, l1_Nova_f);
 		l1_Nova_current = l1_Nova_f->name;
-		nova_datastruct_list_Nova_Array_virtual0_Nova_add((nova_datastruct_list_Nova_Array*)(l1_Nova_list), exceptionData, (nova_Nova_Object*)(nova_io_Nova_File_0_Nova_construct(0, exceptionData, (nova_Nova_String*)(nova_Nova_String_Nova_plus(this->nova_io_Nova_File_Nova_location, exceptionData, (nova_Nova_String*)(nova_Nova_String_Nova_plus(nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("/")), exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, l1_Nova_current))))), l1_Nova_f)));
+		nova_datastruct_list_Nova_Array_0_Nova_add((nova_datastruct_list_Nova_Array*)(l1_Nova_list), exceptionData, (nova_Nova_Object*)(nova_io_Nova_File_0_Nova_construct(0, exceptionData, (nova_Nova_String*)(nova_Nova_String_Nova_plus(this->nova_io_Nova_File_Nova_location, exceptionData, (nova_Nova_String*)(nova_Nova_String_Nova_plus(nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("/")), exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, l1_Nova_current))))), l1_Nova_f)));
 		
 		tinydir_next(&dir);
 	}

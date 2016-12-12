@@ -342,7 +342,7 @@ nova_datastruct_list_Nova_LinkedList* nova_datastruct_list_Nova_LinkedList_Nova_
 		l1_Nova_element = (nova_Nova_Object*)(nova_datastruct_list_Nova_LinkedListIterator_Accessor_Nova_next(nova_local_0, exceptionData));
 		if (l1_Nova_i++ > howMany)
 		{
-			nova_datastruct_list_Nova_Array_virtual0_Nova_add((nova_datastruct_list_Nova_Array*)(l1_Nova_list), exceptionData, (nova_Nova_Object*)(l1_Nova_element));
+			nova_datastruct_list_Nova_Array_0_Nova_add(l1_Nova_list, exceptionData, (nova_Nova_Object*)(l1_Nova_element));
 		}
 	}
 	return (nova_datastruct_list_Nova_LinkedList*)l1_Nova_list;

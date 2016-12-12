@@ -40,6 +40,7 @@ typedef struct nova_math_Nova_Matrix nova_math_Nova_Matrix;
 #include <nova/nova_Nova_Class.h>
 #include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <nova/operators/nova_operators_Nova_MultiplyOperator.h>
+#include <nova/operators/nova_operators_Nova_PlusOperator.h>
 #include <nova/exception/nova_exception_Nova_InvalidArgumentException.h>
 #include <nova/exception/nova_exception_Nova_InvalidOperationException.h>
 #include <nova/NativeObject.h>
@@ -82,7 +83,11 @@ void nova_math_Nova_Matrix_Nova_multiplyRow(nova_math_Nova_Matrix* this, nova_ex
 void nova_math_Nova_Matrix_Nova_addRow(nova_math_Nova_Matrix* this, nova_exception_Nova_ExceptionData* exceptionData, int sourceRow, int destinationRow);
 void nova_math_Nova_Matrix_Nova_subtractRow(nova_math_Nova_Matrix* this, nova_exception_Nova_ExceptionData* exceptionData, int sourceRow, int destinationRow);
 nova_math_Nova_Matrix* nova_math_Nova_Matrix_Nova_add(nova_math_Nova_Matrix* this, nova_exception_Nova_ExceptionData* exceptionData, nova_math_Nova_Matrix* other, int allowUnequalDimensions);
+nova_math_Nova_Matrix* nova_math_Nova_Matrix_0_Nova_plus(nova_math_Nova_Matrix* this, nova_exception_Nova_ExceptionData* exceptionData, nova_math_Nova_Matrix* other);
+nova_math_Nova_Matrix* nova_math_Nova_Matrix_1_Nova_plus(nova_math_Nova_Matrix* this, nova_exception_Nova_ExceptionData* exceptionData, nova_math_Nova_Matrix* other, char allowUnequalDimensions);
 nova_math_Nova_Matrix* nova_math_Nova_Matrix_Nova_subtract(nova_math_Nova_Matrix* this, nova_exception_Nova_ExceptionData* exceptionData, nova_math_Nova_Matrix* other, int allowUnequalDimensions);
+nova_math_Nova_Matrix* nova_math_Nova_Matrix_0_Nova_minus(nova_math_Nova_Matrix* this, nova_exception_Nova_ExceptionData* exceptionData, nova_math_Nova_Matrix* other);
+nova_math_Nova_Matrix* nova_math_Nova_Matrix_1_Nova_minus(nova_math_Nova_Matrix* this, nova_exception_Nova_ExceptionData* exceptionData, nova_math_Nova_Matrix* other, char allowUnequalDimensions);
 nova_math_Nova_Matrix* nova_math_Nova_Matrix_Nova_multiply(nova_math_Nova_Matrix* this, nova_exception_Nova_ExceptionData* exceptionData, nova_math_Nova_Matrix* other);
 nova_math_Nova_Matrix* nova_math_Nova_Matrix_Nova_transpose(nova_math_Nova_Matrix* this, nova_exception_Nova_ExceptionData* exceptionData);
 double nova_math_Nova_Matrix_Nova_determinant(nova_math_Nova_Matrix* this, nova_exception_Nova_ExceptionData* exceptionData);

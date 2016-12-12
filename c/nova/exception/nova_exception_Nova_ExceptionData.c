@@ -131,7 +131,7 @@ void nova_exception_Nova_ExceptionData_Nova_this(nova_exception_Nova_ExceptionDa
 void nova_exception_Nova_ExceptionData_Nova_addCaught(nova_exception_Nova_ExceptionData* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_Class* type, int soft)
 {
 	soft = (int)(soft == (intptr_t)nova_null ? 0 : soft);
-	nova_datastruct_list_Nova_Array_virtual0_Nova_add((nova_datastruct_list_Nova_Array*)(this->nova_exception_Nova_ExceptionData_Nova_caught), exceptionData, (nova_Nova_Object*)(nova_exception_Nova_CaughtException_Nova_construct(0, exceptionData, type, soft)));
+	nova_datastruct_list_Nova_Array_0_Nova_add((nova_datastruct_list_Nova_Array*)(this->nova_exception_Nova_ExceptionData_Nova_caught), exceptionData, (nova_Nova_Object*)(nova_exception_Nova_CaughtException_Nova_construct(0, exceptionData, type, soft)));
 }
 
 nova_exception_Nova_ExceptionData* nova_exception_Nova_ExceptionData_Nova_getDataByException(nova_exception_Nova_ExceptionData* this, nova_exception_Nova_ExceptionData* exceptionData, nova_exception_Nova_Exception* exception, int soft)
