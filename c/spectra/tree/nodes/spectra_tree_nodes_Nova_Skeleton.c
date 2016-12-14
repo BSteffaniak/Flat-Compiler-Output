@@ -90,6 +90,8 @@ spectra_tree_nodes_Skeleton_Extension_VTable spectra_tree_nodes_Skeleton_Extensi
 		0,
 		0,
 		0,
+		0,
+		0,
 		(void(*)(spectra_tree_nodes_annotations_Nova_Annotatable*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_annotations_Nova_Annotation*))spectra_tree_nodes_Nova_Node_Nova_addAnnotation,
 		0,
 		0,
@@ -174,10 +176,10 @@ spectra_tree_nodes_Nova_Skeleton* spectra_tree_nodes_Nova_Skeleton_static_Nova_p
 	require = (int)(require == (intptr_t)nova_null ? 1 : require);
 	if (0)
 	{
-		spectra_tree_nodes_Nova_Skeleton* l1_Nova_node = (spectra_tree_nodes_Nova_Skeleton*)nova_null;
+		spectra_tree_nodes_Nova_Skeleton* l2_Nova_node = (spectra_tree_nodes_Nova_Skeleton*)nova_null;
 		
-		l1_Nova_node = spectra_tree_nodes_Nova_Skeleton_Nova_construct(0, exceptionData, parent, location);
-		return l1_Nova_node;
+		l2_Nova_node = spectra_tree_nodes_Nova_Skeleton_Nova_construct(0, exceptionData, parent, location);
+		return l2_Nova_node;
 	}
 	return (spectra_tree_nodes_Nova_Skeleton*)(nova_Nova_Object*)nova_null;
 }

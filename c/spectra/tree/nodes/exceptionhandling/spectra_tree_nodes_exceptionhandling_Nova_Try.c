@@ -91,6 +91,8 @@ spectra_tree_nodes_exceptionhandling_Try_Extension_VTable spectra_tree_nodes_exc
 		0,
 		0,
 		0,
+		0,
+		0,
 		(void(*)(spectra_tree_nodes_annotations_Nova_Annotatable*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_annotations_Nova_Annotation*))spectra_tree_nodes_Nova_Node_Nova_addAnnotation,
 		0,
 		0,
@@ -182,14 +184,14 @@ spectra_tree_nodes_exceptionhandling_Nova_Try* spectra_tree_nodes_exceptionhandl
 	require = (int)(require == (intptr_t)nova_null ? 1 : require);
 	if (nova_Nova_String_Nova_equals(spectra_util_Nova_CompilerStringFunctions_Nova_nextWord(input, exceptionData, (intptr_t)nova_null, (intptr_t)nova_null, 0), exceptionData, spectra_tree_nodes_exceptionhandling_Nova_Try_Nova_IDENTIFIER))
 	{
-		spectra_tree_nodes_exceptionhandling_Nova_Try* l1_Nova_node = (spectra_tree_nodes_exceptionhandling_Nova_Try*)nova_null;
-		nova_Nova_String* l1_Nova_contents = (nova_Nova_String*)nova_null;
+		spectra_tree_nodes_exceptionhandling_Nova_Try* l2_Nova_node = (spectra_tree_nodes_exceptionhandling_Nova_Try*)nova_null;
+		nova_Nova_String* l2_Nova_contents = (nova_Nova_String*)nova_null;
 		
-		l1_Nova_node = spectra_tree_nodes_exceptionhandling_Nova_Try_Nova_construct(0, exceptionData, parent, location);
-		l1_Nova_contents = nova_Nova_String_Nova_trim(nova_Nova_String_virtual_Nova_substring((nova_Nova_String*)(input), exceptionData, spectra_tree_nodes_exceptionhandling_Nova_Try_Nova_IDENTIFIER->nova_Nova_String_Nova_count, (intptr_t)nova_null), exceptionData, (intptr_t)nova_null, (intptr_t)nova_null, 0);
-		if (l1_Nova_contents->nova_Nova_String_Nova_count == 0)
+		l2_Nova_node = spectra_tree_nodes_exceptionhandling_Nova_Try_Nova_construct(0, exceptionData, parent, location);
+		l2_Nova_contents = nova_Nova_String_Nova_trim(nova_Nova_String_virtual_Nova_substring((nova_Nova_String*)(input), exceptionData, spectra_tree_nodes_exceptionhandling_Nova_Try_Nova_IDENTIFIER->nova_Nova_String_Nova_count, (intptr_t)nova_null), exceptionData, (intptr_t)nova_null, (intptr_t)nova_null, 0);
+		if (l2_Nova_contents->nova_Nova_String_Nova_count == 0)
 		{
-			return l1_Nova_node;
+			return l2_Nova_node;
 		}
 	}
 	return (spectra_tree_nodes_exceptionhandling_Nova_Try*)(nova_Nova_Object*)nova_null;

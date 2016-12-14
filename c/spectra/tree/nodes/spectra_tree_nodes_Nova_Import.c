@@ -94,6 +94,8 @@ spectra_tree_nodes_Import_Extension_VTable spectra_tree_nodes_Import_Extension_V
 		0,
 		0,
 		0,
+		0,
+		0,
 		(void(*)(spectra_tree_nodes_annotations_Nova_Annotatable*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_annotations_Nova_Annotation*))spectra_tree_nodes_Nova_Node_Nova_addAnnotation,
 		0,
 		0,
@@ -187,7 +189,7 @@ void spectra_tree_nodes_Nova_Import_Nova_this(spectra_tree_nodes_Nova_Import* th
 nova_Nova_String* spectra_tree_nodes_Nova_Import_Nova_getClassLocation(spectra_tree_nodes_Nova_Import* this, nova_exception_Nova_ExceptionData* exceptionData, int aliased)
 {
 	aliased = (int)(aliased == (intptr_t)nova_null ? 0 : aliased);
-	return (nova_Nova_String*)(aliased && this->spectra_tree_nodes_Nova_Import_Nova_alias != (nova_Nova_String*)nova_null ? nova_Nova_String_Nova_plus((spectra_tree_nodes_Nova_Import_Accessor_Nova_parentLocation(this, exceptionData)), exceptionData, (nova_Nova_String*)(nova_Nova_String_Nova_plus(nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("/")), exceptionData, (nova_Nova_String*)(nova_Nova_String_Nova_plus((this->spectra_tree_nodes_Nova_Import_Nova_alias), exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)(""))))))) : this->spectra_tree_nodes_Nova_Import_Nova_importLocation);
+	return (nova_Nova_String*)(aliased && (this->spectra_tree_nodes_Nova_Import_Nova_alias) != (nova_Nova_String*)nova_null ? nova_Nova_String_Nova_plus((spectra_tree_nodes_Nova_Import_Accessor_Nova_parentLocation(this, exceptionData)), exceptionData, (nova_Nova_String*)(nova_Nova_String_Nova_plus(nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("/")), exceptionData, (nova_Nova_String*)(nova_Nova_String_Nova_plus((this->spectra_tree_nodes_Nova_Import_Nova_alias), exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)(""))))))) : this->spectra_tree_nodes_Nova_Import_Nova_importLocation);
 }
 
 spectra_tree_nodes_Nova_Import* spectra_tree_nodes_Nova_Import_static_Nova_parse(spectra_tree_nodes_Nova_Import* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* input, spectra_tree_nodes_Nova_Node* parent, spectra_util_Nova_Location* location, int require)
@@ -197,30 +199,30 @@ spectra_tree_nodes_Nova_Import* spectra_tree_nodes_Nova_Import_static_Nova_parse
 	require = (int)(require == (intptr_t)nova_null ? 1 : require);
 	if (spectra_util_Nova_CompilerStringFunctions_Nova_nextWordIndex(input, exceptionData, spectra_tree_nodes_Nova_Import_Nova_IDENTIFIER, (intptr_t)nova_null, (intptr_t)nova_null) == 0)
 	{
-		spectra_tree_nodes_Nova_Import* l1_Nova_node = (spectra_tree_nodes_Nova_Import*)nova_null;
-		int l1_Nova_quoteStart = 0;
-		int l1_Nova_quoteEnd = 0;
-		nova_Nova_String* l1_Nova_importLocation = (nova_Nova_String*)nova_null;
-		nova_Nova_String* l1_Nova_alias = (nova_Nova_String*)nova_null;
+		spectra_tree_nodes_Nova_Import* l2_Nova_node = (spectra_tree_nodes_Nova_Import*)nova_null;
+		int l2_Nova_quoteStart = 0;
+		int l2_Nova_quoteEnd = 0;
+		nova_Nova_String* l2_Nova_importLocation = (nova_Nova_String*)nova_null;
+		nova_Nova_String* l2_Nova_alias = (nova_Nova_String*)nova_null;
 		
-		l1_Nova_node = spectra_tree_nodes_Nova_Import_Nova_construct(0, exceptionData, parent, location);
-		l1_Nova_quoteStart = spectra_util_Nova_CompilerStringFunctions_Nova_nextNonWhitespaceIndex(input, exceptionData, spectra_tree_nodes_Nova_Import_Nova_IDENTIFIER->nova_Nova_String_Nova_count, (intptr_t)nova_null, (intptr_t)nova_null);
-		if (l1_Nova_quoteStart < 0 || nova_Nova_String_Nova_get(input, exceptionData, l1_Nova_quoteStart) != '"')
+		l2_Nova_node = spectra_tree_nodes_Nova_Import_Nova_construct(0, exceptionData, parent, location);
+		l2_Nova_quoteStart = spectra_util_Nova_CompilerStringFunctions_Nova_nextNonWhitespaceIndex(input, exceptionData, spectra_tree_nodes_Nova_Import_Nova_IDENTIFIER->nova_Nova_String_Nova_count, (intptr_t)nova_null, (intptr_t)nova_null);
+		if (l2_Nova_quoteStart < 0 || nova_Nova_String_Nova_get(input, exceptionData, l2_Nova_quoteStart) != '"')
 		{
 			return (spectra_tree_nodes_Nova_Import*)(nova_Nova_Object*)nova_null;
 		}
-		l1_Nova_quoteEnd = spectra_util_Nova_CompilerStringFunctions_Nova_findEndingChar(input, exceptionData, '"', l1_Nova_quoteStart, (intptr_t)nova_null, 0, 0, 0, (intptr_t)nova_null);
-		if (l1_Nova_quoteEnd < 0)
+		l2_Nova_quoteEnd = spectra_util_Nova_CompilerStringFunctions_Nova_findEndingChar(input, exceptionData, '"', l2_Nova_quoteStart, (intptr_t)nova_null, 0, 0, 0, (intptr_t)nova_null);
+		if (l2_Nova_quoteEnd < 0)
 		{
-			spectra_Nova_SyntaxMessage_static_Nova_error(0, exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("Missing ending quotation for import statement")), (spectra_tree_nodes_Nova_Node*)(l1_Nova_node), (intptr_t)nova_null);
+			spectra_Nova_SyntaxMessage_static_Nova_error(0, exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("Missing ending quotation for import statement")), (spectra_tree_nodes_Nova_Node*)(l2_Nova_node), (intptr_t)nova_null);
 		}
-		l1_Nova_importLocation = (nova_Nova_String*)(nova_Nova_String_virtual_Nova_substring((nova_Nova_String*)(input), exceptionData, l1_Nova_quoteStart + 1, l1_Nova_quoteEnd));
-		l1_Nova_alias = nova_Nova_String_Nova_trim(nova_Nova_String_virtual_Nova_substring((nova_Nova_String*)(input), exceptionData, l1_Nova_quoteEnd + 1, (intptr_t)nova_null), exceptionData, (intptr_t)nova_null, (intptr_t)nova_null, 0);
-		l1_Nova_node->spectra_tree_nodes_Nova_Import_Nova_importLocation = l1_Nova_importLocation;
-		l1_Nova_node->spectra_tree_nodes_Nova_Import_Nova_alias = (nova_Nova_String*)(l1_Nova_alias->nova_Nova_String_Nova_count > 0 ? (nova_Nova_Object*)l1_Nova_alias : (nova_Nova_Object*)nova_null);
+		l2_Nova_importLocation = (nova_Nova_String*)(nova_Nova_String_virtual_Nova_substring((nova_Nova_String*)(input), exceptionData, l2_Nova_quoteStart + 1, l2_Nova_quoteEnd));
+		l2_Nova_alias = nova_Nova_String_Nova_trim(nova_Nova_String_virtual_Nova_substring((nova_Nova_String*)(input), exceptionData, l2_Nova_quoteEnd + 1, (intptr_t)nova_null), exceptionData, (intptr_t)nova_null, (intptr_t)nova_null, 0);
+		l2_Nova_node->spectra_tree_nodes_Nova_Import_Nova_importLocation = l2_Nova_importLocation;
+		l2_Nova_node->spectra_tree_nodes_Nova_Import_Nova_alias = (nova_Nova_String*)(l2_Nova_alias->nova_Nova_String_Nova_count > 0 ? (nova_Nova_Object*)l2_Nova_alias : (nova_Nova_Object*)nova_null);
 		if (1)
 		{
-			return l1_Nova_node;
+			return l2_Nova_node;
 		}
 	}
 	return (spectra_tree_nodes_Nova_Import*)(nova_Nova_Object*)nova_null;

@@ -86,6 +86,8 @@ nova_exception_ExceptionData_Extension_VTable nova_exception_ExceptionData_Exten
 		0,
 		0,
 		0,
+		0,
+		0,
 	},
 	nova_Nova_Object_Nova_toString,
 	nova_Nova_Object_Accessor_Nova_hashCodeLong,
@@ -158,7 +160,7 @@ nova_exception_Nova_ExceptionData* nova_exception_Nova_ExceptionData_Nova_getDat
 		{
 			return l1_Nova_data;
 		}
-		else if (l1_Nova_data->nova_exception_Nova_ExceptionData_Nova_parent == (nova_exception_Nova_ExceptionData*)nova_null)
+		else if ((l1_Nova_data->nova_exception_Nova_ExceptionData_Nova_parent) == (nova_exception_Nova_ExceptionData*)nova_null)
 		{
 			return (nova_exception_Nova_ExceptionData*)(soft ? (nova_Nova_Object*)nova_null : (nova_Nova_Object*)l1_Nova_data);
 		}
@@ -171,7 +173,7 @@ char nova_exception_Nova_ExceptionData_Nova_throwException(nova_exception_Nova_E
 	nova_exception_Nova_ExceptionData* l1_Nova_catchExceptionData = (nova_exception_Nova_ExceptionData*)nova_null;
 	
 	l1_Nova_catchExceptionData = nova_exception_Nova_ExceptionData_Nova_getDataByException(this, exceptionData, exception, soft);
-	if (l1_Nova_catchExceptionData != (nova_exception_Nova_ExceptionData*)nova_null)
+	if ((l1_Nova_catchExceptionData) != (nova_exception_Nova_ExceptionData*)nova_null)
 	{
 		*context = l1_Nova_catchExceptionData;
 		l1_Nova_catchExceptionData->nova_exception_Nova_ExceptionData_Nova_thrownException = exception;

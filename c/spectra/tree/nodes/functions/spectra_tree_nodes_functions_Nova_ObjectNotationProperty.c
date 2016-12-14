@@ -112,6 +112,8 @@ spectra_tree_nodes_functions_ObjectNotationProperty_Extension_VTable spectra_tre
 		0,
 		0,
 		0,
+		0,
+		0,
 		(void(*)(spectra_tree_nodes_annotations_Nova_Annotatable*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_annotations_Nova_Annotation*))spectra_tree_nodes_Nova_Node_Nova_addAnnotation,
 		0,
 		0,
@@ -210,13 +212,13 @@ spectra_tree_nodes_functions_Nova_ObjectNotationProperty* spectra_tree_nodes_fun
 	l1_Nova_assignmentIndex = spectra_util_Nova_CompilerStringFunctions_0_Nova_findOperatorOnTopLevel(input, exceptionData, ':', (intptr_t)nova_null, (intptr_t)nova_null);
 	if (l1_Nova_assignmentIndex > 0)
 	{
-		spectra_tree_nodes_functions_Nova_ObjectNotationProperty* l1_Nova_node = (spectra_tree_nodes_functions_Nova_ObjectNotationProperty*)nova_null;
+		spectra_tree_nodes_functions_Nova_ObjectNotationProperty* l2_Nova_node = (spectra_tree_nodes_functions_Nova_ObjectNotationProperty*)nova_null;
 		
-		l1_Nova_node = spectra_tree_nodes_functions_Nova_ObjectNotationProperty_Nova_construct(0, exceptionData, parent, location);
-		if (spectra_tree_nodes_functions_Nova_ObjectNotationProperty_Nova_parseAssignedNode(l1_Nova_node, exceptionData, spectra_tree_nodes_operations_Nova_Assignment_static_Nova_findAssigned(0, exceptionData, input, l1_Nova_assignmentIndex)) && spectra_tree_nodes_functions_Nova_ObjectNotationProperty_Nova_parseAssignment(l1_Nova_node, exceptionData, spectra_tree_nodes_operations_Nova_Assignment_static_Nova_findAssignment(0, exceptionData, input, l1_Nova_assignmentIndex)))
+		l2_Nova_node = spectra_tree_nodes_functions_Nova_ObjectNotationProperty_Nova_construct(0, exceptionData, parent, location);
+		if (spectra_tree_nodes_functions_Nova_ObjectNotationProperty_Nova_parseAssignedNode(l2_Nova_node, exceptionData, spectra_tree_nodes_operations_Nova_Assignment_static_Nova_findAssigned(0, exceptionData, input, l1_Nova_assignmentIndex)) && spectra_tree_nodes_functions_Nova_ObjectNotationProperty_Nova_parseAssignment(l2_Nova_node, exceptionData, spectra_tree_nodes_operations_Nova_Assignment_static_Nova_findAssignment(0, exceptionData, input, l1_Nova_assignmentIndex)))
 		{
-			nova_datastruct_list_Nova_Array_0_Nova_add((nova_datastruct_list_Nova_Array*)(l1_Nova_node->spectra_tree_nodes_operations_Nova_Operation_Nova_operators), exceptionData, (nova_Nova_Object*)(spectra_tree_nodes_operations_Nova_Operator_Nova_construct(0, exceptionData, (spectra_tree_nodes_Nova_Node*)(l1_Nova_node), location, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)(":")))));
-			return l1_Nova_node;
+			nova_datastruct_list_Nova_Array_0_Nova_add((nova_datastruct_list_Nova_Array*)(l2_Nova_node->spectra_tree_nodes_operations_Nova_Operation_Nova_operators), exceptionData, (nova_Nova_Object*)(spectra_tree_nodes_operations_Nova_Operator_Nova_construct(0, exceptionData, (spectra_tree_nodes_Nova_Node*)(l2_Nova_node), location, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)(":")))));
+			return l2_Nova_node;
 		}
 	}
 	return (spectra_tree_nodes_functions_Nova_ObjectNotationProperty*)(nova_Nova_Object*)nova_null;
@@ -227,7 +229,7 @@ char spectra_tree_nodes_functions_Nova_ObjectNotationProperty_Nova_parseAssigned
 	spectra_tree_nodes_variables_Nova_Variable* l1_Nova_variable = (spectra_tree_nodes_variables_Nova_Variable*)nova_null;
 	
 	l1_Nova_variable = spectra_tree_nodes_variables_Nova_Variable_static_Nova_findVariable(0, exceptionData, input, this->spectra_tree_nodes_Nova_Node_Nova_parent, 0);
-	if (l1_Nova_variable != (spectra_tree_nodes_variables_Nova_Variable*)nova_null)
+	if ((l1_Nova_variable) != (spectra_tree_nodes_variables_Nova_Variable*)nova_null)
 	{
 		spectra_tree_nodes_operations_Nova_Assignment_Mutator_Nova_assigned((spectra_tree_nodes_operations_Nova_Assignment*)(this), exceptionData, (spectra_tree_nodes_Nova_Value*)(l1_Nova_variable));
 		return 1;
@@ -240,7 +242,7 @@ char spectra_tree_nodes_functions_Nova_ObjectNotationProperty_Nova_parseAssignme
 	spectra_tree_nodes_Nova_Value* l1_Nova_value = (spectra_tree_nodes_Nova_Value*)nova_null;
 	
 	l1_Nova_value = (spectra_tree_nodes_Nova_Value*)(spectra_tree_nodes_Nova_Value_0_static_Nova_parse(0, exceptionData, input, (spectra_tree_nodes_Nova_Node*)(this), 0, (intptr_t)nova_null));
-	if (l1_Nova_value != (spectra_tree_nodes_Nova_Value*)nova_null)
+	if ((l1_Nova_value) != (spectra_tree_nodes_Nova_Value*)nova_null)
 	{
 		spectra_tree_nodes_operations_Nova_Assignment_Mutator_Nova_assignment((spectra_tree_nodes_operations_Nova_Assignment*)(this), exceptionData, l1_Nova_value);
 		return 1;

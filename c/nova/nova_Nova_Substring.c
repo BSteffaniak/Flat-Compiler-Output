@@ -87,6 +87,8 @@ nova_Substring_Extension_VTable nova_Substring_Extension_VTable_val =
 		0,
 		0,
 		0,
+		0,
+		0,
 	},
 	nova_Nova_String_Nova_toString,
 	nova_Nova_Substring_Accessor_Nova_hashCodeLong,

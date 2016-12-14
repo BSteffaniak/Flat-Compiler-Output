@@ -82,6 +82,8 @@ nova_primitive_number_Double_Extension_VTable nova_primitive_number_Double_Exten
 		0,
 		0,
 		0,
+		0,
+		0,
 	},
 	nova_primitive_number_Nova_Double_Nova_toString,
 	nova_Nova_Object_Accessor_Nova_hashCodeLong,
@@ -215,10 +217,10 @@ nova_Nova_String* nova_primitive_number_Nova_Double_static_Nova_toString(nova_pr
 	}
 	else
 	{
-		int l8_Nova_rep = 0;
+		int l9_Nova_rep = 0;
 		
-		l8_Nova_rep = nova_primitive_number_Nova_Double_static_Nova_repetition(0, exceptionData, l1_Nova_buffer, l1_Nova_lastIndex);
-		if (l8_Nova_rep > 5)
+		l9_Nova_rep = nova_primitive_number_Nova_Double_static_Nova_repetition(0, exceptionData, l1_Nova_buffer, l1_Nova_lastIndex);
+		if (l9_Nova_rep > 5)
 		{
 			l1_Nova_buffer[l1_Nova_lastIndex] = l1_Nova_c;
 			if (l1_Nova_c >= '5')

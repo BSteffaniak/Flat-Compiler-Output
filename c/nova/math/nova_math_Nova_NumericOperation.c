@@ -81,6 +81,8 @@ nova_math_NumericOperation_Extension_VTable nova_math_NumericOperation_Extension
 		0,
 		0,
 		0,
+		0,
+		0,
 	},
 	nova_math_Nova_NumericOperation_Nova_toString,
 	nova_Nova_Object_Accessor_Nova_hashCodeLong,
@@ -258,11 +260,11 @@ void nova_math_Nova_NumericOperation_0_Nova_this(nova_math_Nova_NumericOperation
 	
 	l1_Nova_leftOperator = nova_math_Nova_NumericOperation_Nova_decodeOperand(this, exceptionData, left);
 	l1_Nova_rightOperator = nova_math_Nova_NumericOperation_Nova_decodeOperand(this, exceptionData, right);
-	if (left == (nova_Nova_String*)nova_null)
+	if ((left) == (nova_Nova_String*)nova_null)
 	{
 		THROW(nova_exception_Nova_Exception_Nova_construct(0, exceptionData, (nova_Nova_String*)(nova_Nova_String_Nova_plus(nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("Left operand '")), exceptionData, (nova_Nova_String*)(nova_Nova_String_Nova_plus((left), exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("' is invalid"))))))), 0);
 	}
-	else if (right == (nova_Nova_String*)nova_null)
+	else if ((right) == (nova_Nova_String*)nova_null)
 	{
 		THROW(nova_exception_Nova_Exception_Nova_construct(0, exceptionData, (nova_Nova_String*)(nova_Nova_String_Nova_plus(nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("Right operand '")), exceptionData, (nova_Nova_String*)(nova_Nova_String_Nova_plus((right), exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("' is invalid"))))))), 0);
 	}
@@ -321,15 +323,15 @@ nova_datastruct_Nova_Bounds* nova_math_Nova_NumericOperation_static_Nova_searchN
 	l1_Nova_index = nova_math_Nova_NumericOperation_static_Nova_nextOperator(0, exceptionData, str, start);
 	while (l1_Nova_index >= 0)
 	{
-		char l1_Nova_operator = 0;
-		int l1_Nova_rank = 0;
+		char l2_Nova_operator = 0;
+		int l2_Nova_rank = 0;
 		
-		l1_Nova_operator = (char)(intptr_t)(nova_datastruct_list_Nova_CharArray_Nova_get((nova_datastruct_list_Nova_CharArray*)(str->nova_Nova_String_Nova_chars), exceptionData, l1_Nova_index));
-		l1_Nova_rank = nova_math_Nova_NumericOperation_static_Nova_getOperatorRank(0, exceptionData, l1_Nova_operator);
-		if (l1_Nova_rank > l1_Nova_minRank)
+		l2_Nova_operator = (char)(intptr_t)(nova_datastruct_list_Nova_CharArray_Nova_get((nova_datastruct_list_Nova_CharArray*)(str->nova_Nova_String_Nova_chars), exceptionData, l1_Nova_index));
+		l2_Nova_rank = nova_math_Nova_NumericOperation_static_Nova_getOperatorRank(0, exceptionData, l2_Nova_operator);
+		if (l2_Nova_rank > l1_Nova_minRank)
 		{
 			l1_Nova_minIndex = l1_Nova_index;
-			l1_Nova_minRank = l1_Nova_rank;
+			l1_Nova_minRank = l2_Nova_rank;
 		}
 		l1_Nova_index = nova_math_Nova_NumericOperation_static_Nova_nextOperator(0, exceptionData, str, l1_Nova_index + 1);
 	}
@@ -345,14 +347,14 @@ nova_datastruct_Nova_Bounds* nova_math_Nova_NumericOperation_static_Nova_searchN
 
 int nova_math_Nova_NumericOperation_static_Nova_nextOperator(nova_math_Nova_NumericOperation* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* str, int start)
 {
-	int l2_Nova_i = 0;
+	int l3_Nova_i = 0;
 	
-	l2_Nova_i = (int)start;
-	for (; l2_Nova_i < (int)str->nova_Nova_String_Nova_count; l2_Nova_i++)
+	l3_Nova_i = (int)start;
+	for (; l3_Nova_i < (int)str->nova_Nova_String_Nova_count; l3_Nova_i++)
 	{
-		if (nova_math_Nova_NumericOperation_static_Nova_isOperator(0, exceptionData, (char)(intptr_t)(nova_datastruct_list_Nova_CharArray_Nova_get((nova_datastruct_list_Nova_CharArray*)(str->nova_Nova_String_Nova_chars), exceptionData, l2_Nova_i))))
+		if (nova_math_Nova_NumericOperation_static_Nova_isOperator(0, exceptionData, (char)(intptr_t)(nova_datastruct_list_Nova_CharArray_Nova_get((nova_datastruct_list_Nova_CharArray*)(str->nova_Nova_String_Nova_chars), exceptionData, l3_Nova_i))))
 		{
-			return l2_Nova_i;
+			return l3_Nova_i;
 		}
 	}
 	return (int)-1;

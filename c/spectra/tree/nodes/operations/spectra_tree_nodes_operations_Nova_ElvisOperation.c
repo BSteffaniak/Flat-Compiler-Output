@@ -108,6 +108,8 @@ spectra_tree_nodes_operations_ElvisOperation_Extension_VTable spectra_tree_nodes
 		0,
 		0,
 		0,
+		0,
+		0,
 		(void(*)(spectra_tree_nodes_annotations_Nova_Annotatable*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_annotations_Nova_Annotation*))spectra_tree_nodes_Nova_Node_Nova_addAnnotation,
 		0,
 		0,
@@ -207,28 +209,28 @@ spectra_tree_nodes_operations_Nova_ElvisOperation* spectra_tree_nodes_operations
 	l1_Nova_index = spectra_util_Nova_CompilerStringFunctions_1_Nova_findOperatorOnTopLevel(input, exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("?:")), (intptr_t)nova_null, (intptr_t)nova_null);
 	if (l1_Nova_index > 0)
 	{
-		spectra_tree_nodes_operations_Nova_ElvisOperation* l1_Nova_node = (spectra_tree_nodes_operations_Nova_ElvisOperation*)nova_null;
-		nova_Nova_String* l1_Nova_condition = (nova_Nova_String*)nova_null;
-		nova_Nova_String* l1_Nova_otherwise = (nova_Nova_String*)nova_null;
+		spectra_tree_nodes_operations_Nova_ElvisOperation* l2_Nova_node = (spectra_tree_nodes_operations_Nova_ElvisOperation*)nova_null;
+		nova_Nova_String* l2_Nova_condition = (nova_Nova_String*)nova_null;
+		nova_Nova_String* l2_Nova_otherwise = (nova_Nova_String*)nova_null;
 		
-		l1_Nova_node = spectra_tree_nodes_operations_Nova_ElvisOperation_Nova_construct(0, exceptionData, parent, location);
-		l1_Nova_condition = nova_Nova_String_Nova_trim(nova_Nova_String_virtual_Nova_substring((nova_Nova_String*)(input), exceptionData, (intptr_t)nova_null, l1_Nova_index), exceptionData, (intptr_t)nova_null, (intptr_t)nova_null, 0);
-		l1_Nova_otherwise = nova_Nova_String_Nova_trim(nova_Nova_String_virtual_Nova_substring((nova_Nova_String*)(input), exceptionData, l1_Nova_index + 2, (intptr_t)nova_null), exceptionData, (intptr_t)nova_null, (intptr_t)nova_null, 0);
-		if (!spectra_tree_nodes_operations_Nova_ElvisOperation_Nova_parseCondition(l1_Nova_node, exceptionData, l1_Nova_condition))
+		l2_Nova_node = spectra_tree_nodes_operations_Nova_ElvisOperation_Nova_construct(0, exceptionData, parent, location);
+		l2_Nova_condition = nova_Nova_String_Nova_trim(nova_Nova_String_virtual_Nova_substring((nova_Nova_String*)(input), exceptionData, (intptr_t)nova_null, l1_Nova_index), exceptionData, (intptr_t)nova_null, (intptr_t)nova_null, 0);
+		l2_Nova_otherwise = nova_Nova_String_Nova_trim(nova_Nova_String_virtual_Nova_substring((nova_Nova_String*)(input), exceptionData, l1_Nova_index + 2, (intptr_t)nova_null), exceptionData, (intptr_t)nova_null, (intptr_t)nova_null, 0);
+		if (!spectra_tree_nodes_operations_Nova_ElvisOperation_Nova_parseCondition(l2_Nova_node, exceptionData, l2_Nova_condition))
 		{
-			THROW(spectra_Nova_InvalidParseException_Nova_construct(0, exceptionData, (nova_Nova_String*)(nova_Nova_String_Nova_plus(nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("Unable to parse elvis operation condition '")), exceptionData, (nova_Nova_String*)(nova_Nova_String_Nova_plus((l1_Nova_condition), exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("'")))))), (spectra_tree_nodes_Nova_Node*)(l1_Nova_node)), 1);
+			THROW(spectra_Nova_InvalidParseException_Nova_construct(0, exceptionData, (nova_Nova_String*)(nova_Nova_String_Nova_plus(nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("Unable to parse elvis operation condition '")), exceptionData, (nova_Nova_String*)(nova_Nova_String_Nova_plus((l2_Nova_condition), exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("'")))))), (spectra_tree_nodes_Nova_Node*)(l2_Nova_node)), 1);
 		}
-		else if (!spectra_tree_nodes_operations_Nova_ElvisOperation_Nova_parseOtherwise(l1_Nova_node, exceptionData, l1_Nova_otherwise))
+		else if (!spectra_tree_nodes_operations_Nova_ElvisOperation_Nova_parseOtherwise(l2_Nova_node, exceptionData, l2_Nova_otherwise))
 		{
-			THROW(spectra_Nova_InvalidParseException_Nova_construct(0, exceptionData, (nova_Nova_String*)(nova_Nova_String_Nova_plus(nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("Unable to parse elvis operation otherwise value '")), exceptionData, (nova_Nova_String*)(nova_Nova_String_Nova_plus((l1_Nova_otherwise), exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("'")))))), (spectra_tree_nodes_Nova_Node*)(l1_Nova_node)), 1);
+			THROW(spectra_Nova_InvalidParseException_Nova_construct(0, exceptionData, (nova_Nova_String*)(nova_Nova_String_Nova_plus(nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("Unable to parse elvis operation otherwise value '")), exceptionData, (nova_Nova_String*)(nova_Nova_String_Nova_plus((l2_Nova_otherwise), exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("'")))))), (spectra_tree_nodes_Nova_Node*)(l2_Nova_node)), 1);
 		}
-		else if (!spectra_tree_nodes_operations_Nova_ElvisOperation_Nova_parseType(l1_Nova_node, exceptionData))
+		else if (!spectra_tree_nodes_operations_Nova_ElvisOperation_Nova_parseType(l2_Nova_node, exceptionData))
 		{
-			THROW(spectra_Nova_InvalidParseException_Nova_construct(0, exceptionData, (nova_Nova_String*)(nova_Nova_String_Nova_plus(nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("Unable to parse elvis operation type for '")), exceptionData, (nova_Nova_String*)(nova_Nova_String_Nova_plus((input), exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("'")))))), (spectra_tree_nodes_Nova_Node*)(l1_Nova_node)), 1);
+			THROW(spectra_Nova_InvalidParseException_Nova_construct(0, exceptionData, (nova_Nova_String*)(nova_Nova_String_Nova_plus(nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("Unable to parse elvis operation type for '")), exceptionData, (nova_Nova_String*)(nova_Nova_String_Nova_plus((input), exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("'")))))), (spectra_tree_nodes_Nova_Node*)(l2_Nova_node)), 1);
 		}
 		else
 		{
-			return l1_Nova_node;
+			return l2_Nova_node;
 		}
 	}
 	return (spectra_tree_nodes_operations_Nova_ElvisOperation*)(nova_Nova_Object*)nova_null;

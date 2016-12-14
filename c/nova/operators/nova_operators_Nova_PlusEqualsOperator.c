@@ -76,6 +76,8 @@ nova_operators_PlusEqualsOperator_Extension_VTable nova_operators_PlusEqualsOper
 		0,
 		0,
 		0,
+		0,
+		0,
 	},
 };
 

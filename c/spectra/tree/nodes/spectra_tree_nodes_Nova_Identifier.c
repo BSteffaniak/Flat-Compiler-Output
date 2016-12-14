@@ -108,6 +108,8 @@ spectra_tree_nodes_Identifier_Extension_VTable spectra_tree_nodes_Identifier_Ext
 		0,
 		0,
 		0,
+		0,
+		0,
 		(void(*)(spectra_tree_nodes_annotations_Nova_Annotatable*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_annotations_Nova_Annotation*))spectra_tree_nodes_Nova_Node_Nova_addAnnotation,
 		0,
 		0,
@@ -199,10 +201,10 @@ spectra_tree_nodes_Nova_Identifier* spectra_tree_nodes_Nova_Identifier_static_No
 	require = (int)(require == (intptr_t)nova_null ? 1 : require);
 	if (1)
 	{
-		spectra_tree_nodes_Nova_Identifier* l1_Nova_node = (spectra_tree_nodes_Nova_Identifier*)nova_null;
+		spectra_tree_nodes_Nova_Identifier* l2_Nova_node = (spectra_tree_nodes_Nova_Identifier*)nova_null;
 		
-		l1_Nova_node = spectra_tree_nodes_Nova_Identifier_Nova_construct(0, exceptionData, parent, location);
-		return l1_Nova_node;
+		l2_Nova_node = spectra_tree_nodes_Nova_Identifier_Nova_construct(0, exceptionData, parent, location);
+		return l2_Nova_node;
 	}
 	return (spectra_tree_nodes_Nova_Identifier*)(nova_Nova_Object*)nova_null;
 }

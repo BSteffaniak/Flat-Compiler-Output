@@ -77,6 +77,8 @@ nova_datastruct_list_Iterable_Extension_VTable nova_datastruct_list_Iterable_Ext
 		0,
 		0,
 		0,
+		0,
+		0,
 	},
 };
 

@@ -97,6 +97,8 @@ spectra_tree_nodes_NodeList_Extension_VTable spectra_tree_nodes_NodeList_Extensi
 		0,
 		0,
 		0,
+		0,
+		0,
 		(void(*)(spectra_tree_nodes_annotations_Nova_Annotatable*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_annotations_Nova_Annotation*))spectra_tree_nodes_Nova_Node_Nova_addAnnotation,
 		0,
 		0,
@@ -191,7 +193,7 @@ void spectra_tree_nodes_Nova_NodeList_Nova_replace(spectra_tree_nodes_Nova_NodeL
 	{
 		spectra_tree_nodes_Nova_Node_0_Nova_detach(old, exceptionData);
 	}
-	if (replacement != (spectra_tree_nodes_Nova_Node*)nova_null)
+	if ((replacement) != (spectra_tree_nodes_Nova_Node*)nova_null)
 	{
 		spectra_tree_nodes_Nova_NodeList_Nova_addChild(this, exceptionData, replacement, l1_Nova_index, detach);
 	}

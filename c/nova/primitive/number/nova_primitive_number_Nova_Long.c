@@ -82,6 +82,8 @@ nova_primitive_number_Long_Extension_VTable nova_primitive_number_Long_Extension
 		0,
 		0,
 		0,
+		0,
+		0,
 	},
 	nova_primitive_number_Nova_Long_Nova_toString,
 	nova_Nova_Object_Accessor_Nova_hashCodeLong,
@@ -153,7 +155,7 @@ nova_Nova_String* nova_primitive_number_Nova_Long_static_Nova_toString(nova_prim
 	char* l1_Nova_data = (char*)nova_null;
 	int l1_Nova_offset = 0;
 	int l1_Nova_nums = 0;
-	int l3_Nova_index = 0;
+	int l4_Nova_index = 0;
 	
 	l1_Nova_charOffset = (int)('0');
 	l1_Nova_digits = nova_primitive_number_Nova_Long_static_Nova_numDigits(0, exceptionData, value);
@@ -166,10 +168,10 @@ nova_Nova_String* nova_primitive_number_Nova_Long_static_Nova_toString(nova_prim
 		l1_Nova_offset = (int)(1);
 	}
 	l1_Nova_nums = l1_Nova_digits-- - l1_Nova_offset;
-	l3_Nova_index = (int)0;
-	for (; l3_Nova_index < (int)l1_Nova_nums; l3_Nova_index++)
+	l4_Nova_index = (int)0;
+	for (; l4_Nova_index < (int)l1_Nova_nums; l4_Nova_index++)
 	{
-		l1_Nova_data[l1_Nova_digits - l3_Nova_index] = (char)((char)(l1_Nova_charOffset + nova_math_Nova_Math_0_static_Nova_abs(0, exceptionData, value % 10)));
+		l1_Nova_data[l1_Nova_digits - l4_Nova_index] = (char)((char)(l1_Nova_charOffset + nova_math_Nova_Math_0_static_Nova_abs(0, exceptionData, value % 10)));
 		value = value / 10;
 	}
 	return nova_Nova_String_1_Nova_construct(0, exceptionData, l1_Nova_data);

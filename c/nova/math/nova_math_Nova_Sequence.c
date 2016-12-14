@@ -78,6 +78,8 @@ nova_math_Sequence_Extension_VTable nova_math_Sequence_Extension_VTable_val =
 		0,
 		0,
 		0,
+		0,
+		0,
 	},
 	nova_Nova_Object_Nova_toString,
 	nova_Nova_Object_Accessor_Nova_hashCodeLong,
@@ -126,13 +128,13 @@ void nova_math_Nova_Sequence_Nova_this(nova_math_Nova_Sequence* this, nova_excep
 double nova_math_Nova_Sequence_static_Nova_sum(nova_math_Nova_Sequence* this, nova_exception_Nova_ExceptionData* exceptionData, int num)
 {
 	double l1_Nova_value = 0;
-	int l2_Nova_i = 0;
+	int l3_Nova_i = 0;
 	
 	l1_Nova_value = (double)(0);
-	l2_Nova_i = (int)0;
-	for (; l2_Nova_i < (int)num; l2_Nova_i++)
+	l3_Nova_i = (int)0;
+	for (; l3_Nova_i < (int)num; l3_Nova_i++)
 	{
-		l1_Nova_value = l1_Nova_value + (double)(intptr_t)nova_datastruct_list_Nova_DoubleArray_Nova_get(this->nova_math_Nova_Sequence_Nova_values, exceptionData, l2_Nova_i);
+		l1_Nova_value = l1_Nova_value + (double)(intptr_t)nova_datastruct_list_Nova_DoubleArray_Nova_get(this->nova_math_Nova_Sequence_Nova_values, exceptionData, l3_Nova_i);
 	}
 	return l1_Nova_value;
 }

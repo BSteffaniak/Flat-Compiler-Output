@@ -82,6 +82,8 @@ nova_thread_Thread_Extension_VTable nova_thread_Thread_Extension_VTable_val =
 		0,
 		0,
 		0,
+		0,
+		0,
 	},
 	nova_Nova_Object_Nova_toString,
 	nova_Nova_Object_Accessor_Nova_hashCodeLong,
@@ -210,9 +212,9 @@ void nova_thread_Nova_Thread_Nova_startRun(nova_thread_Nova_Thread* this, nova_e
 	}
 	CATCH (nova_exception_Exception_Extension_VTable_val.classInstance)
 	{
-		nova_exception_Nova_Exception* l4_Nova_e = (nova_exception_Nova_Exception*)nova_null;
+		nova_exception_Nova_Exception* l5_Nova_e = (nova_exception_Nova_Exception*)nova_null;
 		
-		l4_Nova_e = (nova_exception_Nova_Exception*)exceptionData->nova_exception_Nova_ExceptionData_Nova_thrownException;
+		l5_Nova_e = (nova_exception_Nova_Exception*)exceptionData->nova_exception_Nova_ExceptionData_Nova_thrownException;
 		nova_io_Nova_Console_1_static_Nova_writeLine(0, exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("An error has occurred...")));
 	}
 	FINALLY

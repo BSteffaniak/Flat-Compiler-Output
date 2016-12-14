@@ -85,6 +85,8 @@ spectra_tree_nodes_generics_GenericCompatible_Extension_VTable spectra_tree_node
 		0,
 		0,
 		0,
+		0,
+		0,
 		(nova_datastruct_list_Nova_Array*(*)(spectra_tree_nodes_generics_Nova_GenericCompatible*, nova_exception_Nova_ExceptionData*))spectra_tree_nodes_generics_Nova_GenericCompatible_Accessor_Nova_genericParameters,
 		(nova_datastruct_list_Nova_Array*(*)(spectra_tree_nodes_generics_Nova_GenericCompatible*, nova_exception_Nova_ExceptionData*, nova_datastruct_list_Nova_Array*))spectra_tree_nodes_generics_Nova_GenericCompatible_Mutator_Nova_genericParameters,
 		0,
@@ -163,7 +165,7 @@ spectra_tree_nodes_generics_Nova_GenericParameter* spectra_tree_nodes_generics_N
 
 char spectra_tree_nodes_generics_Nova_GenericCompatible_Nova_lambda130(spectra_tree_nodes_generics_Nova_GenericCompatible* this, nova_exception_Nova_ExceptionData* exceptionData, spectra_tree_nodes_generics_Nova_GenericParameter* _1, Context3* context)
 {
-	return _1 == (spectra_tree_nodes_generics_Nova_GenericParameter*)nova_null;
+	return (_1) == (spectra_tree_nodes_generics_Nova_GenericParameter*)nova_null;
 }
 
 nova_datastruct_list_Nova_Array* spectra_tree_nodes_generics_Nova_GenericCompatible_Accessor_Nova_genericParameters(spectra_tree_nodes_generics_Nova_GenericCompatible* this, nova_exception_Nova_ExceptionData* exceptionData)

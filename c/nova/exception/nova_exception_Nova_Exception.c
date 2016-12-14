@@ -78,6 +78,8 @@ nova_exception_Exception_Extension_VTable nova_exception_Exception_Extension_VTa
 		0,
 		0,
 		0,
+		0,
+		0,
 	},
 	nova_exception_Nova_Exception_Nova_toString,
 	nova_Nova_Object_Accessor_Nova_hashCodeLong,
@@ -124,7 +126,7 @@ void nova_exception_Nova_Exception_Nova_this(nova_exception_Nova_Exception* this
 
 nova_Nova_String* nova_exception_Nova_Exception_Nova_toString(nova_exception_Nova_Exception* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
-	return (nova_Nova_String*)nova_Nova_String_Nova_plus(nova_Nova_Class_Accessor_Nova_name(this->vtable->classInstance, exceptionData), exceptionData, ((nova_Nova_String*)(this->nova_exception_Nova_Exception_Nova_message != (nova_Nova_String*)nova_null ? nova_Nova_String_Nova_plus(nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)(": ")), exceptionData, (nova_Nova_String*)(nova_Nova_String_Nova_plus((this->nova_exception_Nova_Exception_Nova_message), exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)(""))))) : nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("")))));
+	return (nova_Nova_String*)nova_Nova_String_Nova_plus(nova_Nova_Class_Accessor_Nova_name(this->vtable->classInstance, exceptionData), exceptionData, ((nova_Nova_String*)((this->nova_exception_Nova_Exception_Nova_message) != (nova_Nova_String*)nova_null ? nova_Nova_String_Nova_plus(nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)(": ")), exceptionData, (nova_Nova_String*)(nova_Nova_String_Nova_plus((this->nova_exception_Nova_Exception_Nova_message), exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)(""))))) : nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("")))));
 }
 
 void nova_exception_Nova_Exception_Nova_super(nova_exception_Nova_Exception* this, nova_exception_Nova_ExceptionData* exceptionData)

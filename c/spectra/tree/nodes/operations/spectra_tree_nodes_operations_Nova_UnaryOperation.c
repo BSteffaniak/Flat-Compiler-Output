@@ -109,6 +109,8 @@ spectra_tree_nodes_operations_UnaryOperation_Extension_VTable spectra_tree_nodes
 		0,
 		0,
 		0,
+		0,
+		0,
 		(void(*)(spectra_tree_nodes_annotations_Nova_Annotatable*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_annotations_Nova_Annotation*))spectra_tree_nodes_Nova_Node_Nova_addAnnotation,
 		0,
 		0,
@@ -214,22 +216,22 @@ spectra_tree_nodes_operations_Nova_UnaryOperation* spectra_tree_nodes_operations
 	l1_Nova_matches = spectra_util_Nova_CompilerStringFunctions_Nova_findOperatorIndices(input, exceptionData, spectra_tree_nodes_operations_Nova_Operator_Nova_UNARY_OPERATORS, (intptr_t)nova_null);
 	if (nova_datastruct_list_Nova_Array_Accessorfunc_Nova_count((nova_datastruct_list_Nova_Array*)(l1_Nova_matches), exceptionData) == 1)
 	{
-		spectra_tree_nodes_operations_Nova_UnaryOperation* l1_Nova_node = (spectra_tree_nodes_operations_Nova_UnaryOperation*)nova_null;
-		int l1_Nova_match = 0;
+		spectra_tree_nodes_operations_Nova_UnaryOperation* l2_Nova_node = (spectra_tree_nodes_operations_Nova_UnaryOperation*)nova_null;
+		int l2_Nova_match = 0;
 		
-		l1_Nova_node = spectra_tree_nodes_operations_Nova_UnaryOperation_Nova_construct(0, exceptionData, parent, location);
-		l1_Nova_match = (int)(intptr_t)(nova_datastruct_list_Nova_IntArray_Accessor_Nova_first(l1_Nova_matches, exceptionData));
-		if (!spectra_tree_nodes_operations_Nova_UnaryOperation_Nova_parseOperator(l1_Nova_node, exceptionData, input, l1_Nova_match))
+		l2_Nova_node = spectra_tree_nodes_operations_Nova_UnaryOperation_Nova_construct(0, exceptionData, parent, location);
+		l2_Nova_match = (int)(intptr_t)(nova_datastruct_list_Nova_IntArray_Accessor_Nova_first(l1_Nova_matches, exceptionData));
+		if (!spectra_tree_nodes_operations_Nova_UnaryOperation_Nova_parseOperator(l2_Nova_node, exceptionData, input, l2_Nova_match))
 		{
-			THROW(spectra_Nova_InvalidParseException_Nova_construct(0, exceptionData, (nova_Nova_String*)(nova_Nova_String_Nova_plus(nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("Could not parse unary operator for '")), exceptionData, (nova_Nova_String*)(nova_Nova_String_Nova_plus((input), exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("'")))))), (spectra_tree_nodes_Nova_Node*)(l1_Nova_node)), 1);
+			THROW(spectra_Nova_InvalidParseException_Nova_construct(0, exceptionData, (nova_Nova_String*)(nova_Nova_String_Nova_plus(nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("Could not parse unary operator for '")), exceptionData, (nova_Nova_String*)(nova_Nova_String_Nova_plus((input), exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("'")))))), (spectra_tree_nodes_Nova_Node*)(l2_Nova_node)), 1);
 		}
-		else if (!spectra_tree_nodes_operations_Nova_UnaryOperation_Nova_parseOperand(l1_Nova_node, exceptionData, input, l1_Nova_match))
+		else if (!spectra_tree_nodes_operations_Nova_UnaryOperation_Nova_parseOperand(l2_Nova_node, exceptionData, input, l2_Nova_match))
 		{
-			THROW(spectra_Nova_InvalidParseException_Nova_construct(0, exceptionData, (nova_Nova_String*)(nova_Nova_String_Nova_plus(nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("Could not parse unary operand for '")), exceptionData, (nova_Nova_String*)(nova_Nova_String_Nova_plus((input), exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("'")))))), (spectra_tree_nodes_Nova_Node*)(l1_Nova_node)), 1);
+			THROW(spectra_Nova_InvalidParseException_Nova_construct(0, exceptionData, (nova_Nova_String*)(nova_Nova_String_Nova_plus(nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("Could not parse unary operand for '")), exceptionData, (nova_Nova_String*)(nova_Nova_String_Nova_plus((input), exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("'")))))), (spectra_tree_nodes_Nova_Node*)(l2_Nova_node)), 1);
 		}
 		else
 		{
-			return l1_Nova_node;
+			return l2_Nova_node;
 		}
 	}
 	return (spectra_tree_nodes_operations_Nova_UnaryOperation*)(nova_Nova_Object*)nova_null;

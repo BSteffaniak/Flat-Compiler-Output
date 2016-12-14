@@ -82,6 +82,8 @@ nova_datastruct_BinaryTree_Extension_VTable nova_datastruct_BinaryTree_Extension
 		0,
 		0,
 		0,
+		0,
+		0,
 	},
 	nova_Nova_Object_Nova_toString,
 	nova_Nova_Object_Accessor_Nova_hashCodeLong,
@@ -127,7 +129,7 @@ void nova_datastruct_Nova_BinaryTree_Nova_this(nova_datastruct_Nova_BinaryTree* 
 
 nova_datastruct_Nova_BinaryTree* nova_datastruct_Nova_BinaryTree_Nova_addNode(nova_datastruct_Nova_BinaryTree* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_Nova_Comparable* data)
 {
-	if (nova_datastruct_Nova_BinaryTree_Accessorfunc_Nova_root(this, exceptionData) != (nova_datastruct_Nova_BinaryNode*)nova_null)
+	if ((nova_datastruct_Nova_BinaryTree_Accessorfunc_Nova_root(this, exceptionData)) != (nova_datastruct_Nova_BinaryNode*)nova_null)
 	{
 		nova_datastruct_Nova_BinaryNode_Nova_addChild(nova_datastruct_Nova_BinaryTree_Accessorfunc_Nova_root(this, exceptionData), exceptionData, (nova_datastruct_Nova_Comparable*)(data));
 	}

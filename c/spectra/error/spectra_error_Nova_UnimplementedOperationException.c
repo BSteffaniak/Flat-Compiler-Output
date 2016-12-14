@@ -78,6 +78,8 @@ spectra_error_UnimplementedOperationException_Extension_VTable spectra_error_Uni
 		0,
 		0,
 		0,
+		0,
+		0,
 	},
 	nova_exception_Nova_Exception_Nova_toString,
 	nova_Nova_Object_Accessor_Nova_hashCodeLong,

@@ -80,6 +80,8 @@ nova_regex_Regex_Extension_VTable nova_regex_Regex_Extension_VTable_val =
 		0,
 		0,
 		0,
+		0,
+		0,
 	},
 	nova_Nova_Object_Nova_toString,
 	nova_Nova_Object_Accessor_Nova_hashCodeLong,
@@ -138,7 +140,7 @@ nova_datastruct_list_Nova_Array* nova_regex_Nova_Regex_static_Nova_getMatches(no
 	int* l1_Nova_values = (int*)nova_null;
 	int l1_Nova_matchCount = 0;
 	nova_datastruct_list_Nova_Array* l1_Nova_matches = (nova_datastruct_list_Nova_Array*)nova_null;
-	int l5_Nova_m = 0;
+	int l6_Nova_m = 0;
 	
 	int crlf_is_newline;
 	int errornumber;
@@ -235,10 +237,10 @@ nova_datastruct_list_Nova_Array* nova_regex_Nova_Regex_static_Nova_getMatches(no
 	l1_Nova_matches = nova_datastruct_list_Nova_Array_1_Nova_construct(0, exceptionData, l1_Nova_matchCount, (intptr_t)nova_null);
 	
 	l1_Nova_values = matchBoundaries;
-	l5_Nova_m = (int)0;
-	for (; l5_Nova_m < (int)l1_Nova_matchCount; l5_Nova_m++)
+	l6_Nova_m = (int)0;
+	for (; l6_Nova_m < (int)l1_Nova_matchCount; l6_Nova_m++)
 	{
-		nova_datastruct_list_Nova_Array_virtual_Nova_set((nova_datastruct_list_Nova_Array*)(l1_Nova_matches), exceptionData, l5_Nova_m, (nova_Nova_Object*)(nova_regex_Nova_Match_Nova_construct(0, exceptionData, search, l1_Nova_values[l5_Nova_m * 2], l1_Nova_values[l5_Nova_m * 2 + 1])));
+		nova_datastruct_list_Nova_Array_virtual_Nova_set((nova_datastruct_list_Nova_Array*)(l1_Nova_matches), exceptionData, l6_Nova_m, (nova_Nova_Object*)(nova_regex_Nova_Match_Nova_construct(0, exceptionData, search, l1_Nova_values[l6_Nova_m * 2], l1_Nova_values[l6_Nova_m * 2 + 1])));
 	}
 	return (nova_datastruct_list_Nova_Array*)l1_Nova_matches;
 }

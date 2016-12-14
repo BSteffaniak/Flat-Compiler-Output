@@ -108,6 +108,8 @@ spectra_tree_nodes_operations_TernaryOperation_Extension_VTable spectra_tree_nod
 		0,
 		0,
 		0,
+		0,
+		0,
 		(void(*)(spectra_tree_nodes_annotations_Nova_Annotatable*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_annotations_Nova_Annotation*))spectra_tree_nodes_Nova_Node_Nova_addAnnotation,
 		0,
 		0,
@@ -209,39 +211,39 @@ spectra_tree_nodes_operations_Nova_TernaryOperation* spectra_tree_nodes_operatio
 	l1_Nova_questionIndex = spectra_util_Nova_CompilerStringFunctions_0_Nova_findOperatorOnTopLevel(input, exceptionData, '?', (intptr_t)nova_null, (intptr_t)nova_null);
 	if (l1_Nova_questionIndex > 0)
 	{
-		int l1_Nova_colonIndex = 0;
+		int l2_Nova_colonIndex = 0;
 		
-		l1_Nova_colonIndex = spectra_util_Nova_CompilerStringFunctions_0_Nova_findOperatorOnTopLevel(input, exceptionData, ':', l1_Nova_questionIndex + 2, (intptr_t)nova_null);
-		if (l1_Nova_colonIndex > 0)
+		l2_Nova_colonIndex = spectra_util_Nova_CompilerStringFunctions_0_Nova_findOperatorOnTopLevel(input, exceptionData, ':', l1_Nova_questionIndex + 2, (intptr_t)nova_null);
+		if (l2_Nova_colonIndex > 0)
 		{
-			spectra_tree_nodes_operations_Nova_TernaryOperation* l2_Nova_node = (spectra_tree_nodes_operations_Nova_TernaryOperation*)nova_null;
-			nova_Nova_String* l2_Nova_condition = (nova_Nova_String*)nova_null;
-			nova_Nova_String* l2_Nova_trueValue = (nova_Nova_String*)nova_null;
-			nova_Nova_String* l2_Nova_falseValue = (nova_Nova_String*)nova_null;
+			spectra_tree_nodes_operations_Nova_TernaryOperation* l3_Nova_node = (spectra_tree_nodes_operations_Nova_TernaryOperation*)nova_null;
+			nova_Nova_String* l3_Nova_condition = (nova_Nova_String*)nova_null;
+			nova_Nova_String* l3_Nova_trueValue = (nova_Nova_String*)nova_null;
+			nova_Nova_String* l3_Nova_falseValue = (nova_Nova_String*)nova_null;
 			
-			l2_Nova_node = spectra_tree_nodes_operations_Nova_TernaryOperation_Nova_construct(0, exceptionData, parent, location);
-			l2_Nova_condition = nova_Nova_String_Nova_trim(nova_Nova_String_virtual_Nova_substring((nova_Nova_String*)(input), exceptionData, (intptr_t)nova_null, l1_Nova_questionIndex), exceptionData, (intptr_t)nova_null, (intptr_t)nova_null, 0);
-			l2_Nova_trueValue = nova_Nova_String_Nova_trim(nova_Nova_String_virtual_Nova_substring((nova_Nova_String*)(input), exceptionData, l1_Nova_questionIndex + 1, l1_Nova_colonIndex), exceptionData, (intptr_t)nova_null, (intptr_t)nova_null, 0);
-			l2_Nova_falseValue = nova_Nova_String_Nova_trim(nova_Nova_String_virtual_Nova_substring((nova_Nova_String*)(input), exceptionData, l1_Nova_colonIndex + 1, (intptr_t)nova_null), exceptionData, (intptr_t)nova_null, (intptr_t)nova_null, 0);
-			if (!spectra_tree_nodes_operations_Nova_TernaryOperation_Nova_parseCondition(l2_Nova_node, exceptionData, l2_Nova_condition))
+			l3_Nova_node = spectra_tree_nodes_operations_Nova_TernaryOperation_Nova_construct(0, exceptionData, parent, location);
+			l3_Nova_condition = nova_Nova_String_Nova_trim(nova_Nova_String_virtual_Nova_substring((nova_Nova_String*)(input), exceptionData, (intptr_t)nova_null, l1_Nova_questionIndex), exceptionData, (intptr_t)nova_null, (intptr_t)nova_null, 0);
+			l3_Nova_trueValue = nova_Nova_String_Nova_trim(nova_Nova_String_virtual_Nova_substring((nova_Nova_String*)(input), exceptionData, l1_Nova_questionIndex + 1, l2_Nova_colonIndex), exceptionData, (intptr_t)nova_null, (intptr_t)nova_null, 0);
+			l3_Nova_falseValue = nova_Nova_String_Nova_trim(nova_Nova_String_virtual_Nova_substring((nova_Nova_String*)(input), exceptionData, l2_Nova_colonIndex + 1, (intptr_t)nova_null), exceptionData, (intptr_t)nova_null, (intptr_t)nova_null, 0);
+			if (!spectra_tree_nodes_operations_Nova_TernaryOperation_Nova_parseCondition(l3_Nova_node, exceptionData, l3_Nova_condition))
 			{
-				THROW(spectra_Nova_InvalidParseException_Nova_construct(0, exceptionData, (nova_Nova_String*)(nova_Nova_String_Nova_plus(nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("Could not parse ternary condition '")), exceptionData, (nova_Nova_String*)(nova_Nova_String_Nova_plus((l2_Nova_condition), exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("'")))))), (spectra_tree_nodes_Nova_Node*)(l2_Nova_node)), 1);
+				THROW(spectra_Nova_InvalidParseException_Nova_construct(0, exceptionData, (nova_Nova_String*)(nova_Nova_String_Nova_plus(nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("Could not parse ternary condition '")), exceptionData, (nova_Nova_String*)(nova_Nova_String_Nova_plus((l3_Nova_condition), exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("'")))))), (spectra_tree_nodes_Nova_Node*)(l3_Nova_node)), 1);
 			}
-			else if (!spectra_tree_nodes_operations_Nova_TernaryOperation_Nova_parseTrueValue(l2_Nova_node, exceptionData, l2_Nova_trueValue))
+			else if (!spectra_tree_nodes_operations_Nova_TernaryOperation_Nova_parseTrueValue(l3_Nova_node, exceptionData, l3_Nova_trueValue))
 			{
-				THROW(spectra_Nova_InvalidParseException_Nova_construct(0, exceptionData, (nova_Nova_String*)(nova_Nova_String_Nova_plus(nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("Could not parse ternary true value '")), exceptionData, (nova_Nova_String*)(nova_Nova_String_Nova_plus((l2_Nova_trueValue), exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("'")))))), (spectra_tree_nodes_Nova_Node*)(l2_Nova_node)), 1);
+				THROW(spectra_Nova_InvalidParseException_Nova_construct(0, exceptionData, (nova_Nova_String*)(nova_Nova_String_Nova_plus(nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("Could not parse ternary true value '")), exceptionData, (nova_Nova_String*)(nova_Nova_String_Nova_plus((l3_Nova_trueValue), exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("'")))))), (spectra_tree_nodes_Nova_Node*)(l3_Nova_node)), 1);
 			}
-			else if (!spectra_tree_nodes_operations_Nova_TernaryOperation_Nova_parseFalseValue(l2_Nova_node, exceptionData, l2_Nova_falseValue))
+			else if (!spectra_tree_nodes_operations_Nova_TernaryOperation_Nova_parseFalseValue(l3_Nova_node, exceptionData, l3_Nova_falseValue))
 			{
-				THROW(spectra_Nova_InvalidParseException_Nova_construct(0, exceptionData, (nova_Nova_String*)(nova_Nova_String_Nova_plus(nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("Could not parse ternary false value '")), exceptionData, (nova_Nova_String*)(nova_Nova_String_Nova_plus((l2_Nova_falseValue), exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("'")))))), (spectra_tree_nodes_Nova_Node*)(l2_Nova_node)), 1);
+				THROW(spectra_Nova_InvalidParseException_Nova_construct(0, exceptionData, (nova_Nova_String*)(nova_Nova_String_Nova_plus(nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("Could not parse ternary false value '")), exceptionData, (nova_Nova_String*)(nova_Nova_String_Nova_plus((l3_Nova_falseValue), exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("'")))))), (spectra_tree_nodes_Nova_Node*)(l3_Nova_node)), 1);
 			}
-			else if (!spectra_tree_nodes_operations_Nova_TernaryOperation_Nova_parseType(l2_Nova_node, exceptionData))
+			else if (!spectra_tree_nodes_operations_Nova_TernaryOperation_Nova_parseType(l3_Nova_node, exceptionData))
 			{
-				THROW(spectra_Nova_InvalidParseException_Nova_construct(0, exceptionData, (nova_Nova_String*)(nova_Nova_String_Nova_plus(nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("Could not parse type for ternary operation '")), exceptionData, (nova_Nova_String*)(nova_Nova_String_Nova_plus((input), exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("'")))))), (spectra_tree_nodes_Nova_Node*)(l2_Nova_node)), 1);
+				THROW(spectra_Nova_InvalidParseException_Nova_construct(0, exceptionData, (nova_Nova_String*)(nova_Nova_String_Nova_plus(nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("Could not parse type for ternary operation '")), exceptionData, (nova_Nova_String*)(nova_Nova_String_Nova_plus((input), exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("'")))))), (spectra_tree_nodes_Nova_Node*)(l3_Nova_node)), 1);
 			}
 			else
 			{
-				return l2_Nova_node;
+				return l3_Nova_node;
 			}
 		}
 	}

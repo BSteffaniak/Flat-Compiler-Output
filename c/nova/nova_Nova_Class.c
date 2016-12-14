@@ -83,6 +83,8 @@ nova_Class_Extension_VTable nova_Class_Extension_VTable_val =
 		0,
 		0,
 		0,
+		0,
+		0,
 	},
 	nova_Nova_Class_Nova_toString,
 	nova_Nova_Object_Accessor_Nova_hashCodeLong,
@@ -148,7 +150,7 @@ char nova_Nova_Class_Nova_isOfTypeClass(nova_Nova_Class* this, nova_exception_No
 	nova_Nova_Class* l1_Nova_current = (nova_Nova_Class*)nova_null;
 	
 	l1_Nova_current = this;
-	while (l1_Nova_current != (nova_Nova_Class*)nova_null)
+	while ((l1_Nova_current) != (nova_Nova_Class*)nova_null)
 	{
 		if (l1_Nova_current == other)
 		{
@@ -164,7 +166,7 @@ char nova_Nova_Class_Nova_isOfTypeInterface(nova_Nova_Class* this, nova_exceptio
 	nova_Nova_Class* l1_Nova_current = (nova_Nova_Class*)nova_null;
 	
 	l1_Nova_current = this;
-	while (l1_Nova_current != (nova_Nova_Class*)nova_null)
+	while ((l1_Nova_current) != (nova_Nova_Class*)nova_null)
 	{
 		Context1* contextArg69 = NOVA_MALLOC(sizeof(Context1));
 		contextArg69->nova_Nova_Class_Nova_other = &other;

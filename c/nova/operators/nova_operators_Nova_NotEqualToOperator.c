@@ -76,6 +76,8 @@ nova_operators_NotEqualToOperator_Extension_VTable nova_operators_NotEqualToOper
 		0,
 		0,
 		0,
+		0,
+		0,
 	},
 };
 

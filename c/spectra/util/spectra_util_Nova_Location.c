@@ -79,6 +79,8 @@ spectra_util_Location_Extension_VTable spectra_util_Location_Extension_VTable_va
 		0,
 		0,
 		0,
+		0,
+		0,
 	},
 	spectra_util_Nova_Location_Nova_toString,
 	nova_Nova_Object_Accessor_Nova_hashCodeLong,

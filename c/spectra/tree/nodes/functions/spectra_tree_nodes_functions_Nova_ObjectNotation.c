@@ -93,6 +93,8 @@ spectra_tree_nodes_functions_ObjectNotation_Extension_VTable spectra_tree_nodes_
 		0,
 		0,
 		0,
+		0,
+		0,
 		(void(*)(spectra_tree_nodes_annotations_Nova_Annotatable*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_annotations_Nova_Annotation*))spectra_tree_nodes_Nova_Node_Nova_addAnnotation,
 		0,
 		0,
@@ -179,7 +181,7 @@ spectra_tree_nodes_variables_Nova_VariableDeclaration* spectra_tree_nodes_functi
 	
 	searchAncestors = (int)(searchAncestors == (intptr_t)nova_null ? 1 : searchAncestors);
 	l1_Nova_decl = (spectra_tree_nodes_functions_Nova_Instantiation*)(spectra_tree_nodes_Nova_ClassDeclaration_Nova_findVariableDeclaration(spectra_tree_nodes_Nova_Value_Accessor_Nova_typeClass((spectra_tree_nodes_Nova_Value*)(spectra_tree_nodes_Nova_Node_virtual_Accessor_Nova_parentInstantiation((spectra_tree_nodes_Nova_Node*)(this), exceptionData)), exceptionData), exceptionData, name, searchAncestors));
-	if (l1_Nova_decl != (spectra_tree_nodes_functions_Nova_Instantiation*)nova_null)
+	if ((l1_Nova_decl) != (spectra_tree_nodes_functions_Nova_Instantiation*)nova_null)
 	{
 		return (spectra_tree_nodes_variables_Nova_VariableDeclaration*)l1_Nova_decl;
 	}

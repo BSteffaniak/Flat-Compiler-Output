@@ -105,6 +105,8 @@ spectra_tree_nodes_annotations_ImpureAnnotation_Extension_VTable spectra_tree_no
 		0,
 		0,
 		0,
+		0,
+		0,
 		(void(*)(spectra_tree_nodes_annotations_Nova_Annotatable*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_annotations_Nova_Annotation*))spectra_tree_nodes_Nova_Node_Nova_addAnnotation,
 		0,
 		0,
@@ -190,10 +192,10 @@ spectra_tree_nodes_annotations_Nova_ImpureAnnotation* spectra_tree_nodes_annotat
 	require = (int)(require == (intptr_t)nova_null ? 1 : require);
 	if (nova_Nova_String_Nova_equals(type, exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("Impure"))) && parameters->nova_Nova_String_Nova_count == 0)
 	{
-		spectra_tree_nodes_annotations_Nova_ImpureAnnotation* l1_Nova_node = (spectra_tree_nodes_annotations_Nova_ImpureAnnotation*)nova_null;
+		spectra_tree_nodes_annotations_Nova_ImpureAnnotation* l2_Nova_node = (spectra_tree_nodes_annotations_Nova_ImpureAnnotation*)nova_null;
 		
-		l1_Nova_node = spectra_tree_nodes_annotations_Nova_ImpureAnnotation_Nova_construct(0, exceptionData, parent, location);
-		return l1_Nova_node;
+		l2_Nova_node = spectra_tree_nodes_annotations_Nova_ImpureAnnotation_Nova_construct(0, exceptionData, parent, location);
+		return l2_Nova_node;
 	}
 	return (spectra_tree_nodes_annotations_Nova_ImpureAnnotation*)(nova_Nova_Object*)nova_null;
 }

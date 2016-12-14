@@ -108,6 +108,8 @@ spectra_tree_nodes_variables_InstanceDeclaration_Extension_VTable spectra_tree_n
 		0,
 		0,
 		0,
+		0,
+		0,
 		(void(*)(spectra_tree_nodes_annotations_Nova_Annotatable*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_annotations_Nova_Annotation*))spectra_tree_nodes_Nova_Node_Nova_addAnnotation,
 		0,
 		0,
@@ -214,14 +216,14 @@ spectra_tree_nodes_variables_Nova_InstanceDeclaration* spectra_tree_nodes_variab
 	require = (int)(require == (intptr_t)nova_null ? 1 : require);
 	l1_Nova_words = spectra_util_Nova_CompilerStringFunctions_Nova_splitValues(input, exceptionData);
 	l1_Nova_declaration = (spectra_tree_nodes_variables_Nova_VariableDeclaration*)(spectra_tree_nodes_variables_Nova_VariableDeclaration_static_Nova_parse(0, exceptionData, nova_datastruct_list_Nova_List_virtual_Nova_join((nova_datastruct_list_Nova_List*)(nova_datastruct_list_Nova_List_Nova_takeLast((nova_datastruct_list_Nova_List*)(l1_Nova_words), exceptionData, 2)), exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)(" "))), parent, location, require));
-	if (l1_Nova_declaration != (spectra_tree_nodes_variables_Nova_VariableDeclaration*)nova_null)
+	if ((l1_Nova_declaration) != (spectra_tree_nodes_variables_Nova_VariableDeclaration*)nova_null)
 	{
-		spectra_tree_nodes_variables_Nova_InstanceDeclaration* l1_Nova_node = (spectra_tree_nodes_variables_Nova_InstanceDeclaration*)nova_null;
+		spectra_tree_nodes_variables_Nova_InstanceDeclaration* l2_Nova_node = (spectra_tree_nodes_variables_Nova_InstanceDeclaration*)nova_null;
 		
-		l1_Nova_node = spectra_tree_nodes_variables_Nova_InstanceDeclaration_Nova_construct(0, exceptionData, parent, location);
-		if (spectra_tree_nodes_variables_Nova_VariableDeclaration_1_Nova_parseModifiers((spectra_tree_nodes_variables_Nova_VariableDeclaration*)(l1_Nova_node), exceptionData, (nova_datastruct_list_Nova_Array*)(nova_datastruct_list_Nova_List_virtual_Nova_take((nova_datastruct_list_Nova_List*)(l1_Nova_words), exceptionData, nova_datastruct_list_Nova_Array_Accessorfunc_Nova_count((nova_datastruct_list_Nova_Array*)(l1_Nova_words), exceptionData) - 2))))
+		l2_Nova_node = spectra_tree_nodes_variables_Nova_InstanceDeclaration_Nova_construct(0, exceptionData, parent, location);
+		if (spectra_tree_nodes_variables_Nova_VariableDeclaration_1_Nova_parseModifiers((spectra_tree_nodes_variables_Nova_VariableDeclaration*)(l2_Nova_node), exceptionData, (nova_datastruct_list_Nova_Array*)(nova_datastruct_list_Nova_List_virtual_Nova_take((nova_datastruct_list_Nova_List*)(l1_Nova_words), exceptionData, nova_datastruct_list_Nova_Array_Accessorfunc_Nova_count((nova_datastruct_list_Nova_Array*)(l1_Nova_words), exceptionData) - 2))))
 		{
-			return (spectra_tree_nodes_variables_Nova_InstanceDeclaration*)spectra_tree_nodes_Nova_Node_virtual_Nova_cloneTo((spectra_tree_nodes_Nova_Node*)(l1_Nova_declaration), exceptionData, (spectra_tree_nodes_Nova_Node*)(l1_Nova_node));
+			return (spectra_tree_nodes_variables_Nova_InstanceDeclaration*)spectra_tree_nodes_Nova_Node_virtual_Nova_cloneTo((spectra_tree_nodes_Nova_Node*)(l1_Nova_declaration), exceptionData, (spectra_tree_nodes_Nova_Node*)(l2_Nova_node));
 		}
 	}
 	return (spectra_tree_nodes_variables_Nova_InstanceDeclaration*)(nova_Nova_Object*)nova_null;
@@ -270,7 +272,7 @@ char spectra_tree_nodes_variables_Nova_InstanceDeclaration_Nova_parseModifier(sp
 
 nova_Nova_String* spectra_tree_nodes_variables_Nova_InstanceDeclaration_Nova_writeVisibility(spectra_tree_nodes_variables_Nova_InstanceDeclaration* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
-	return (nova_Nova_String*)(this->spectra_tree_nodes_variables_Nova_InstanceDeclaration_Nova_visibility != (nova_Nova_String*)nova_null ? nova_Nova_String_Nova_plus((this->spectra_tree_nodes_variables_Nova_InstanceDeclaration_Nova_visibility), exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)(""))) : nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("")));
+	return (nova_Nova_String*)((this->spectra_tree_nodes_variables_Nova_InstanceDeclaration_Nova_visibility) != (nova_Nova_String*)nova_null ? nova_Nova_String_Nova_plus((this->spectra_tree_nodes_variables_Nova_InstanceDeclaration_Nova_visibility), exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)(""))) : nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("")));
 }
 
 nova_Nova_String* spectra_tree_nodes_variables_Nova_InstanceDeclaration_Nova_writeStatic(spectra_tree_nodes_variables_Nova_InstanceDeclaration* this, nova_exception_Nova_ExceptionData* exceptionData)

@@ -87,6 +87,8 @@ spectra_tree_nodes_generics_GenericType_Extension_VTable spectra_tree_nodes_gene
 		0,
 		0,
 		0,
+		0,
+		0,
 	},
 	spectra_tree_nodes_Nova_Type_Nova_toString,
 	nova_Nova_Object_Accessor_Nova_hashCodeLong,

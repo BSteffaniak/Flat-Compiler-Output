@@ -76,6 +76,8 @@ spectra_tree_nodes_Listener_Extension_VTable spectra_tree_nodes_Listener_Extensi
 		0,
 		0,
 		0,
+		0,
+		0,
 	},
 };
 

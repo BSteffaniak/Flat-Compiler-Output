@@ -92,6 +92,8 @@ spectra_tree_nodes_Package_Extension_VTable spectra_tree_nodes_Package_Extension
 		0,
 		0,
 		0,
+		0,
+		0,
 		(void(*)(spectra_tree_nodes_annotations_Nova_Annotatable*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_annotations_Nova_Annotation*))spectra_tree_nodes_Nova_Node_Nova_addAnnotation,
 		0,
 		0,
@@ -190,31 +192,31 @@ spectra_tree_nodes_Nova_Package* spectra_tree_nodes_Nova_Package_static_Nova_par
 	require = (int)(require == (intptr_t)nova_null ? 1 : require);
 	if (spectra_util_Nova_CompilerStringFunctions_Nova_nextWordIndex(input, exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("package")), (intptr_t)nova_null, (intptr_t)nova_null) == 0)
 	{
-		spectra_tree_nodes_Nova_Package* l1_Nova_node = (spectra_tree_nodes_Nova_Package*)nova_null;
-		int l1_Nova_quoteStart = 0;
-		int l1_Nova_quoteEnd = 0;
-		nova_Nova_String* l1_Nova_packageLocation = (nova_Nova_String*)nova_null;
+		spectra_tree_nodes_Nova_Package* l2_Nova_node = (spectra_tree_nodes_Nova_Package*)nova_null;
+		int l2_Nova_quoteStart = 0;
+		int l2_Nova_quoteEnd = 0;
+		nova_Nova_String* l2_Nova_packageLocation = (nova_Nova_String*)nova_null;
 		
-		l1_Nova_node = spectra_tree_nodes_Nova_Package_Nova_construct(0, exceptionData, parent, location);
-		l1_Nova_quoteStart = spectra_util_Nova_CompilerStringFunctions_Nova_nextNonWhitespaceIndex(input, exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("package"))->nova_Nova_String_Nova_count, (intptr_t)nova_null, (intptr_t)nova_null);
-		if (l1_Nova_quoteStart < 0 || nova_Nova_String_Nova_get(input, exceptionData, l1_Nova_quoteStart) != '"')
+		l2_Nova_node = spectra_tree_nodes_Nova_Package_Nova_construct(0, exceptionData, parent, location);
+		l2_Nova_quoteStart = spectra_util_Nova_CompilerStringFunctions_Nova_nextNonWhitespaceIndex(input, exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("package"))->nova_Nova_String_Nova_count, (intptr_t)nova_null, (intptr_t)nova_null);
+		if (l2_Nova_quoteStart < 0 || nova_Nova_String_Nova_get(input, exceptionData, l2_Nova_quoteStart) != '"')
 		{
 			return (spectra_tree_nodes_Nova_Package*)(nova_Nova_Object*)nova_null;
 		}
-		l1_Nova_quoteEnd = spectra_util_Nova_CompilerStringFunctions_Nova_findEndingChar(input, exceptionData, '"', l1_Nova_quoteStart, (intptr_t)nova_null, 0, 0, 0, (intptr_t)nova_null);
-		if (l1_Nova_quoteEnd < 0)
+		l2_Nova_quoteEnd = spectra_util_Nova_CompilerStringFunctions_Nova_findEndingChar(input, exceptionData, '"', l2_Nova_quoteStart, (intptr_t)nova_null, 0, 0, 0, (intptr_t)nova_null);
+		if (l2_Nova_quoteEnd < 0)
 		{
-			spectra_Nova_SyntaxMessage_static_Nova_error(0, exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("Missing ending quotation for Package statement")), (spectra_tree_nodes_Nova_Node*)(l1_Nova_node), (intptr_t)nova_null);
+			spectra_Nova_SyntaxMessage_static_Nova_error(0, exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("Missing ending quotation for Package statement")), (spectra_tree_nodes_Nova_Node*)(l2_Nova_node), (intptr_t)nova_null);
 		}
-		l1_Nova_packageLocation = (nova_Nova_String*)(nova_Nova_String_virtual_Nova_substring((nova_Nova_String*)(input), exceptionData, l1_Nova_quoteStart + 1, l1_Nova_quoteEnd));
-		l1_Nova_node->spectra_tree_nodes_Nova_Package_Nova_location = l1_Nova_packageLocation;
-		if (spectra_tree_nodes_Nova_Package_Nova_validateLocation(l1_Nova_node, exceptionData) && spectra_tree_nodes_Nova_Package_Nova_validateAlias(l1_Nova_node, exceptionData))
+		l2_Nova_packageLocation = (nova_Nova_String*)(nova_Nova_String_virtual_Nova_substring((nova_Nova_String*)(input), exceptionData, l2_Nova_quoteStart + 1, l2_Nova_quoteEnd));
+		l2_Nova_node->spectra_tree_nodes_Nova_Package_Nova_location = l2_Nova_packageLocation;
+		if (spectra_tree_nodes_Nova_Package_Nova_validateLocation(l2_Nova_node, exceptionData) && spectra_tree_nodes_Nova_Package_Nova_validateAlias(l2_Nova_node, exceptionData))
 		{
 			nova_datastruct_list_Nova_Array* nova_local_0 = (nova_datastruct_list_Nova_Array*)nova_null;
 			
-			nova_datastruct_Nova_HashMap_virtual_Nova_add((nova_datastruct_Nova_HashMap*)(spectra_tree_nodes_Nova_Package_Nova_filesMap), exceptionData, (nova_Nova_Object*)(l1_Nova_node->spectra_tree_nodes_Nova_Package_Nova_location), (nova_Nova_Object*)((nova_datastruct_list_Nova_Array*)((nova_local_0 = (nova_datastruct_list_Nova_Array*)(nova_datastruct_Nova_HashMap_Nova_get((nova_datastruct_Nova_HashMap*)(spectra_tree_nodes_Nova_Package_Nova_filesMap), exceptionData, (nova_Nova_Object*)(l1_Nova_node->spectra_tree_nodes_Nova_Package_Nova_location)))) != (nova_datastruct_list_Nova_Array*)nova_null ? nova_local_0 : nova_datastruct_list_Nova_Array_0_Nova_construct(0, exceptionData))));
-			nova_datastruct_list_Nova_Array_0_Nova_add((nova_datastruct_list_Nova_Array*)(nova_datastruct_Nova_HashMap_Nova_get((nova_datastruct_Nova_HashMap*)(spectra_tree_nodes_Nova_Package_Nova_filesMap), exceptionData, (nova_Nova_Object*)(l1_Nova_node->spectra_tree_nodes_Nova_Package_Nova_location))), exceptionData, (nova_Nova_Object*)(spectra_tree_nodes_Nova_Node_virtual_Accessor_Nova_parentFile((spectra_tree_nodes_Nova_Node*)(parent), exceptionData)));
-			return l1_Nova_node;
+			nova_datastruct_Nova_HashMap_virtual_Nova_add((nova_datastruct_Nova_HashMap*)(spectra_tree_nodes_Nova_Package_Nova_filesMap), exceptionData, (nova_Nova_Object*)(l2_Nova_node->spectra_tree_nodes_Nova_Package_Nova_location), (nova_Nova_Object*)((nova_datastruct_list_Nova_Array*)((nova_local_0 = (nova_datastruct_list_Nova_Array*)(nova_datastruct_Nova_HashMap_Nova_get((nova_datastruct_Nova_HashMap*)(spectra_tree_nodes_Nova_Package_Nova_filesMap), exceptionData, (nova_Nova_Object*)(l2_Nova_node->spectra_tree_nodes_Nova_Package_Nova_location)))) != (nova_datastruct_list_Nova_Array*)nova_null ? nova_local_0 : nova_datastruct_list_Nova_Array_0_Nova_construct(0, exceptionData))));
+			nova_datastruct_list_Nova_Array_0_Nova_add((nova_datastruct_list_Nova_Array*)(nova_datastruct_Nova_HashMap_Nova_get((nova_datastruct_Nova_HashMap*)(spectra_tree_nodes_Nova_Package_Nova_filesMap), exceptionData, (nova_Nova_Object*)(l2_Nova_node->spectra_tree_nodes_Nova_Package_Nova_location))), exceptionData, (nova_Nova_Object*)(spectra_tree_nodes_Nova_Node_virtual_Accessor_Nova_parentFile((spectra_tree_nodes_Nova_Node*)(parent), exceptionData)));
+			return l2_Nova_node;
 		}
 	}
 	return (spectra_tree_nodes_Nova_Package*)(nova_Nova_Object*)nova_null;
@@ -232,7 +234,7 @@ char spectra_tree_nodes_Nova_Package_Nova_validateAlias(spectra_tree_nodes_Nova_
 
 nova_Nova_String* spectra_tree_nodes_Nova_Package_Nova_writeNova(spectra_tree_nodes_Nova_Package* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
-	return (nova_Nova_String*)(this->spectra_tree_nodes_Nova_Package_Nova_location != (nova_Nova_String*)nova_null ? nova_Nova_String_Nova_plus(nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("package \"")), exceptionData, (nova_Nova_String*)(nova_Nova_String_Nova_plus((this->spectra_tree_nodes_Nova_Package_Nova_location), exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("\""))))) : nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("")));
+	return (nova_Nova_String*)((this->spectra_tree_nodes_Nova_Package_Nova_location) != (nova_Nova_String*)nova_null ? nova_Nova_String_Nova_plus(nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("package \"")), exceptionData, (nova_Nova_String*)(nova_Nova_String_Nova_plus((this->spectra_tree_nodes_Nova_Package_Nova_location), exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("\""))))) : nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("")));
 }
 
 nova_datastruct_list_Nova_Array* spectra_tree_nodes_Nova_Package_Accessor_Nova_files(spectra_tree_nodes_Nova_Package* this, nova_exception_Nova_ExceptionData* exceptionData)

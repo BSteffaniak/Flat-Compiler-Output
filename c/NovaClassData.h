@@ -380,7 +380,8 @@ char (*spectra_tree_nodes_Nova_Abstractable_virtual_Accessor1_Nova_isAbstract)(s
 };
 
 struct spectra_tree_nodes_vtable_Accessible {
-char x;
+char (*spectra_tree_nodes_Nova_Accessible_virtual_Accessor1_Nova_safeNavigation)(spectra_tree_nodes_Nova_Accessible*, nova_exception_Nova_ExceptionData*);
+char (*spectra_tree_nodes_Nova_Accessible_virtual_Mutator0_Nova_safeNavigation)(spectra_tree_nodes_Nova_Accessible*, nova_exception_Nova_ExceptionData*, char);
 };
 
 struct spectra_tree_nodes_vtable_Listener {

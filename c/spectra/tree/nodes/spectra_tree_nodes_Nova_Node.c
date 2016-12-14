@@ -103,6 +103,8 @@ spectra_tree_nodes_Node_Extension_VTable spectra_tree_nodes_Node_Extension_VTabl
 		0,
 		0,
 		0,
+		0,
+		0,
 		(void(*)(spectra_tree_nodes_annotations_Nova_Annotatable*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_annotations_Nova_Annotation*))spectra_tree_nodes_Nova_Node_Nova_addAnnotation,
 		0,
 		0,
@@ -216,14 +218,14 @@ spectra_tree_nodes_Nova_Scope* spectra_tree_nodes_Nova_Node_Nova_setScope(spectr
 
 spectra_tree_nodes_Nova_Node* spectra_tree_nodes_Nova_Node_Nova_getAdjacentNode(spectra_tree_nodes_Nova_Node* this, nova_exception_Nova_ExceptionData* exceptionData, int offset)
 {
-	if (this->spectra_tree_nodes_Nova_Node_Nova_parent != (spectra_tree_nodes_Nova_Node*)nova_null)
+	if ((this->spectra_tree_nodes_Nova_Node_Nova_parent) != (spectra_tree_nodes_Nova_Node*)nova_null)
 	{
-		int l1_Nova_index = 0;
+		int l2_Nova_index = 0;
 		
-		l1_Nova_index = spectra_tree_nodes_Nova_Node_virtual_Accessor_Nova_index((spectra_tree_nodes_Nova_Node*)(this), exceptionData) + offset;
-		if (l1_Nova_index >= 0 && l1_Nova_index < nova_datastruct_list_Nova_Array_Accessorfunc_Nova_count((nova_datastruct_list_Nova_Array*)(spectra_tree_nodes_Nova_Node_Accessor_Nova_parentScope(this, exceptionData)->spectra_tree_nodes_Nova_NodeList_Nova_children), exceptionData))
+		l2_Nova_index = spectra_tree_nodes_Nova_Node_virtual_Accessor_Nova_index((spectra_tree_nodes_Nova_Node*)(this), exceptionData) + offset;
+		if (l2_Nova_index >= 0 && l2_Nova_index < nova_datastruct_list_Nova_Array_Accessorfunc_Nova_count((nova_datastruct_list_Nova_Array*)(spectra_tree_nodes_Nova_Node_Accessor_Nova_parentScope(this, exceptionData)->spectra_tree_nodes_Nova_NodeList_Nova_children), exceptionData))
 		{
-			return (spectra_tree_nodes_Nova_Node*)(spectra_tree_nodes_Nova_Node*)nova_datastruct_list_Nova_Array_virtual_Nova_get((nova_datastruct_list_Nova_Array*)(spectra_tree_nodes_Nova_Node_Accessor_Nova_parentScope(this, exceptionData)->spectra_tree_nodes_Nova_NodeList_Nova_children), exceptionData, l1_Nova_index);
+			return (spectra_tree_nodes_Nova_Node*)(spectra_tree_nodes_Nova_Node*)nova_datastruct_list_Nova_Array_virtual_Nova_get((nova_datastruct_list_Nova_Array*)(spectra_tree_nodes_Nova_Node_Accessor_Nova_parentScope(this, exceptionData)->spectra_tree_nodes_Nova_NodeList_Nova_children), exceptionData, l2_Nova_index);
 		}
 	}
 	return (spectra_tree_nodes_Nova_Node*)(nova_Nova_Object*)nova_null;
@@ -329,17 +331,17 @@ spectra_tree_nodes_variables_Nova_VariableDeclaration* spectra_tree_nodes_Nova_N
 	searchAncestors = (int)(searchAncestors == (intptr_t)nova_null ? 1 : searchAncestors);
 	if (spectra_tree_nodes_Nova_Node_Accessor_Nova_containsScope(this, exceptionData))
 	{
-		spectra_tree_nodes_Nova_Scope* l1_Nova_declaration = (spectra_tree_nodes_Nova_Scope*)nova_null;
+		spectra_tree_nodes_Nova_Scope* l2_Nova_declaration = (spectra_tree_nodes_Nova_Scope*)nova_null;
 		Context4* contextArg117 = NOVA_MALLOC(sizeof(Context4));
 		contextArg117->spectra_tree_nodes_Nova_Node_Nova_name = &name;
 		
-		l1_Nova_declaration = (spectra_tree_nodes_Nova_Scope*)(nova_datastruct_list_Nova_List_virtual0_Nova_firstWhere((nova_datastruct_list_Nova_List*)(spectra_tree_nodes_Nova_Node_virtual_Accessor_Nova_scope((spectra_tree_nodes_Nova_Node*)(this), exceptionData)->spectra_tree_nodes_Nova_Scope_Nova_declarations), exceptionData, (nova_datastruct_list_Nova_List_closure32_Nova_func)&spectra_tree_nodes_Nova_Node_Nova_lambda117, this, contextArg117));
-		if (l1_Nova_declaration != (spectra_tree_nodes_Nova_Scope*)nova_null)
+		l2_Nova_declaration = (spectra_tree_nodes_Nova_Scope*)(nova_datastruct_list_Nova_List_virtual0_Nova_firstWhere((nova_datastruct_list_Nova_List*)(spectra_tree_nodes_Nova_Node_virtual_Accessor_Nova_scope((spectra_tree_nodes_Nova_Node*)(this), exceptionData)->spectra_tree_nodes_Nova_Scope_Nova_declarations), exceptionData, (nova_datastruct_list_Nova_List_closure32_Nova_func)&spectra_tree_nodes_Nova_Node_Nova_lambda117, this, contextArg117));
+		if ((l2_Nova_declaration) != (spectra_tree_nodes_Nova_Scope*)nova_null)
 		{
-			return (spectra_tree_nodes_variables_Nova_VariableDeclaration*)l1_Nova_declaration;
+			return (spectra_tree_nodes_variables_Nova_VariableDeclaration*)l2_Nova_declaration;
 		}
 	}
-	if (searchAncestors && this->spectra_tree_nodes_Nova_Node_Nova_parent != (spectra_tree_nodes_Nova_Node*)nova_null)
+	if (searchAncestors && (this->spectra_tree_nodes_Nova_Node_Nova_parent) != (spectra_tree_nodes_Nova_Node*)nova_null)
 	{
 		return spectra_tree_nodes_Nova_Node_virtual_Nova_findVariableDeclaration((spectra_tree_nodes_Nova_Node*)(this->spectra_tree_nodes_Nova_Node_Nova_parent), exceptionData, name, searchAncestors);
 	}
@@ -373,10 +375,10 @@ void spectra_tree_nodes_Nova_Node_static_Nova_strictParse(spectra_tree_nodes_Nov
 	}
 	CATCH (spectra_InvalidParseException_Extension_VTable_val.classInstance)
 	{
-		spectra_Nova_InvalidParseException* l2_Nova_e = (spectra_Nova_InvalidParseException*)nova_null;
+		spectra_Nova_InvalidParseException* l3_Nova_e = (spectra_Nova_InvalidParseException*)nova_null;
 		
-		l2_Nova_e = (spectra_Nova_InvalidParseException*)exceptionData->nova_exception_Nova_ExceptionData_Nova_thrownException;
-		nova_io_Nova_Console_static_Nova_log(0, exceptionData, (nova_Nova_Object*)(l2_Nova_e));
+		l3_Nova_e = (spectra_Nova_InvalidParseException*)exceptionData->nova_exception_Nova_ExceptionData_Nova_thrownException;
+		nova_io_Nova_Console_static_Nova_log(0, exceptionData, (nova_Nova_Object*)(l3_Nova_e));
 	}
 	FINALLY
 	{
@@ -396,10 +398,10 @@ void spectra_tree_nodes_Nova_Node_static_Nova_catchSyntaxErrors(spectra_tree_nod
 	}
 	CATCH (spectra_SyntaxErrorException_Extension_VTable_val.classInstance)
 	{
-		spectra_Nova_SyntaxErrorException* l2_Nova_e = (spectra_Nova_SyntaxErrorException*)nova_null;
+		spectra_Nova_SyntaxErrorException* l3_Nova_e = (spectra_Nova_SyntaxErrorException*)nova_null;
 		
-		l2_Nova_e = (spectra_Nova_SyntaxErrorException*)exceptionData->nova_exception_Nova_ExceptionData_Nova_thrownException;
-		nova_io_Nova_Console_static_Nova_log(0, exceptionData, (nova_Nova_Object*)(l2_Nova_e));
+		l3_Nova_e = (spectra_Nova_SyntaxErrorException*)exceptionData->nova_exception_Nova_ExceptionData_Nova_thrownException;
+		nova_io_Nova_Console_static_Nova_log(0, exceptionData, (nova_Nova_Object*)(l3_Nova_e));
 	}
 	FINALLY
 	{
@@ -435,14 +437,14 @@ char spectra_tree_nodes_Nova_Node_Nova_validateTypes(spectra_tree_nodes_Nova_Nod
 
 char spectra_tree_nodes_Nova_Node_Nova_parsePlaceholders(spectra_tree_nodes_Nova_Node* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
-	return (char)(spectra_tree_nodes_Nova_Node_virtual_Accessor_Nova_scope((spectra_tree_nodes_Nova_Node*)(this), exceptionData) != (spectra_tree_nodes_Nova_Scope*)nova_null ? spectra_tree_nodes_Nova_Scope_Nova_parsePlaceholders(spectra_tree_nodes_Nova_Node_virtual_Accessor_Nova_scope((spectra_tree_nodes_Nova_Node*)(this), exceptionData), exceptionData) : 1);
+	return (char)((spectra_tree_nodes_Nova_Node_virtual_Accessor_Nova_scope((spectra_tree_nodes_Nova_Node*)(this), exceptionData)) != (spectra_tree_nodes_Nova_Scope*)nova_null ? spectra_tree_nodes_Nova_Scope_Nova_parsePlaceholders(spectra_tree_nodes_Nova_Node_virtual_Accessor_Nova_scope((spectra_tree_nodes_Nova_Node*)(this), exceptionData), exceptionData) : 1);
 }
 
 char spectra_tree_nodes_Nova_Node_Nova_parsePlaceholderChildren(spectra_tree_nodes_Nova_Node* this, nova_exception_Nova_ExceptionData* exceptionData, spectra_tree_nodes_Nova_NodeList* nodes)
 {
 	Context1* contextArg40 = NOVA_MALLOC(sizeof(Context1));
 	
-	return (char)(char)(spectra_tree_nodes_Nova_Node_virtual_Accessor_Nova_scopeConsumer((spectra_tree_nodes_Nova_Node*)(this), exceptionData) != (spectra_tree_nodes_Nova_Node*)nova_null && spectra_tree_nodes_Nova_Node_virtual_Accessor_Nova_scopeConsumer((spectra_tree_nodes_Nova_Node*)(this), exceptionData) != this ? spectra_tree_nodes_Nova_Node_virtual_Nova_parsePlaceholderChildren((spectra_tree_nodes_Nova_Node*)(spectra_tree_nodes_Nova_Node_virtual_Accessor_Nova_scopeConsumer((spectra_tree_nodes_Nova_Node*)(this), exceptionData)), exceptionData, nodes) : nova_datastruct_list_Nova_List_virtual0_Nova_all((nova_datastruct_list_Nova_List*)(nodes->spectra_tree_nodes_Nova_NodeList_Nova_children), exceptionData, (nova_datastruct_list_Nova_List_closure16_Nova_allFunc)&spectra_tree_nodes_Nova_Node_Nova_lambda40, this, contextArg40, 0));
+	return (char)(char)((spectra_tree_nodes_Nova_Node_virtual_Accessor_Nova_scopeConsumer((spectra_tree_nodes_Nova_Node*)(this), exceptionData)) != (spectra_tree_nodes_Nova_Node*)nova_null && spectra_tree_nodes_Nova_Node_virtual_Accessor_Nova_scopeConsumer((spectra_tree_nodes_Nova_Node*)(this), exceptionData) != this ? spectra_tree_nodes_Nova_Node_virtual_Nova_parsePlaceholderChildren((spectra_tree_nodes_Nova_Node*)(spectra_tree_nodes_Nova_Node_virtual_Accessor_Nova_scopeConsumer((spectra_tree_nodes_Nova_Node*)(this), exceptionData)), exceptionData, nodes) : nova_datastruct_list_Nova_List_virtual0_Nova_all((nova_datastruct_list_Nova_List*)(nodes->spectra_tree_nodes_Nova_NodeList_Nova_children), exceptionData, (nova_datastruct_list_Nova_List_closure16_Nova_allFunc)&spectra_tree_nodes_Nova_Node_Nova_lambda40, this, contextArg40, 0));
 }
 
 nova_Nova_String* spectra_tree_nodes_Nova_Node_Nova_writeAnnotationSeparator(spectra_tree_nodes_Nova_Node* this, nova_exception_Nova_ExceptionData* exceptionData)
@@ -454,7 +456,7 @@ nova_Nova_String* spectra_tree_nodes_Nova_Node_Nova_writeAnnotations(spectra_tre
 {
 	Context2* contextArg41 = NOVA_MALLOC(sizeof(Context2));
 	
-	return (nova_Nova_String*)(this->spectra_tree_nodes_Nova_Node_Nova_annotations != (nova_datastruct_list_Nova_Array*)nova_null && nova_datastruct_list_Nova_Array_Accessorfunc_Nova_count((nova_datastruct_list_Nova_Array*)(this->spectra_tree_nodes_Nova_Node_Nova_annotations), exceptionData) > 0 ? nova_Nova_String_Nova_plus(nova_datastruct_list_Nova_List_virtual_Nova_join((nova_datastruct_list_Nova_List*)(nova_datastruct_list_Nova_List_virtual0_Nova_map((nova_datastruct_list_Nova_List*)(this->spectra_tree_nodes_Nova_Node_Nova_annotations), exceptionData, (nova_datastruct_list_Nova_List_closure8_Nova_mapFunc)&spectra_tree_nodes_Nova_Node_Nova_lambda41, this, contextArg41)), exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)(" "))), exceptionData, spectra_tree_nodes_Nova_Node_virtual_Nova_writeAnnotationSeparator((spectra_tree_nodes_Nova_Node*)(this), exceptionData)) : nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("")));
+	return (nova_Nova_String*)((this->spectra_tree_nodes_Nova_Node_Nova_annotations) != (nova_datastruct_list_Nova_Array*)nova_null && nova_datastruct_list_Nova_Array_Accessorfunc_Nova_count((nova_datastruct_list_Nova_Array*)(this->spectra_tree_nodes_Nova_Node_Nova_annotations), exceptionData) > 0 ? nova_Nova_String_Nova_plus(nova_datastruct_list_Nova_List_virtual_Nova_join((nova_datastruct_list_Nova_List*)(nova_datastruct_list_Nova_List_virtual0_Nova_map((nova_datastruct_list_Nova_List*)(this->spectra_tree_nodes_Nova_Node_Nova_annotations), exceptionData, (nova_datastruct_list_Nova_List_closure8_Nova_mapFunc)&spectra_tree_nodes_Nova_Node_Nova_lambda41, this, contextArg41)), exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)(" "))), exceptionData, spectra_tree_nodes_Nova_Node_virtual_Nova_writeAnnotationSeparator((spectra_tree_nodes_Nova_Node*)(this), exceptionData)) : nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("")));
 }
 
 nova_Nova_String* spectra_tree_nodes_Nova_Node_Nova_toNova(spectra_tree_nodes_Nova_Node* this, nova_exception_Nova_ExceptionData* exceptionData)
@@ -474,7 +476,7 @@ nova_Nova_String* spectra_tree_nodes_Nova_Node_Nova_toString(spectra_tree_nodes_
 
 char spectra_tree_nodes_Nova_Node_Nova_lambda40(spectra_tree_nodes_Nova_Node* this, nova_exception_Nova_ExceptionData* exceptionData, spectra_tree_nodes_Nova_PlaceholderValue* child, int _2, nova_datastruct_list_Nova_List* _3, Context1* context)
 {
-	if (spectra_tree_nodes_Nova_Node_virtual_Accessor_Nova_scope((spectra_tree_nodes_Nova_Node*)(this), exceptionData) != (spectra_tree_nodes_Nova_Scope*)nova_null)
+	if ((spectra_tree_nodes_Nova_Node_virtual_Accessor_Nova_scope((spectra_tree_nodes_Nova_Node*)(this), exceptionData)) != (spectra_tree_nodes_Nova_Scope*)nova_null)
 	{
 		spectra_tree_nodes_Nova_NodeList_Nova_addChild((spectra_tree_nodes_Nova_NodeList*)(spectra_tree_nodes_Nova_Node_virtual_Accessor_Nova_scope((spectra_tree_nodes_Nova_Node*)(this), exceptionData)), exceptionData, (spectra_tree_nodes_Nova_Node*)(child), (intptr_t)nova_null, (intptr_t)nova_null);
 		return spectra_tree_nodes_Nova_Node_virtual_Nova_parsePlaceholders((spectra_tree_nodes_Nova_Node*)(child), exceptionData);
@@ -505,11 +507,11 @@ nova_Nova_String* spectra_tree_nodes_Nova_Node_Accessor_Nova_locationInfo(spectr
 	nova_Nova_String* l1_Nova_info = (nova_Nova_String*)nova_null;
 	
 	l1_Nova_info = nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)(""));
-	if (spectra_tree_nodes_Nova_Node_virtual_Accessor_Nova_parentFile((spectra_tree_nodes_Nova_Node*)(this), exceptionData) != (spectra_tree_nodes_Nova_NovaFile*)nova_null)
+	if ((spectra_tree_nodes_Nova_Node_virtual_Accessor_Nova_parentFile((spectra_tree_nodes_Nova_Node*)(this), exceptionData)) != (spectra_tree_nodes_Nova_NovaFile*)nova_null)
 	{
 		l1_Nova_info = (nova_Nova_String*)(nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)(l1_Nova_info), exceptionData, (nova_Nova_String*)(nova_Nova_String_Nova_plus(nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("in file ")), exceptionData, (nova_Nova_String*)(nova_Nova_String_Nova_plus((spectra_tree_nodes_Nova_Node_virtual_Accessor_Nova_parentFile((spectra_tree_nodes_Nova_Node*)(this), exceptionData)->spectra_tree_nodes_Nova_NovaFile_Nova_name), exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)(""))))))));
 	}
-	if (this->spectra_tree_nodes_Nova_Node_Nova_location != (spectra_util_Nova_Location*)nova_null)
+	if ((this->spectra_tree_nodes_Nova_Node_Nova_location) != (spectra_util_Nova_Location*)nova_null)
 	{
 		l1_Nova_info = (nova_Nova_String*)(nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)(l1_Nova_info), exceptionData, (nova_Nova_String*)(nova_Nova_String_Nova_plus(((nova_Nova_String*)(l1_Nova_info->nova_Nova_String_Nova_count > 0 ? nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)(" ")) : nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("")))), exceptionData, (nova_Nova_String*)(nova_Nova_String_Nova_plus(nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("on line number ")), exceptionData, (nova_Nova_String*)(nova_Nova_String_Nova_plus(nova_primitive_number_Nova_Int_static_Nova_toString(0, exceptionData, (this->spectra_tree_nodes_Nova_Node_Nova_location->spectra_util_Nova_Location_Nova_lineNumber)), exceptionData, (nova_Nova_String*)(nova_Nova_String_Nova_plus(nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)(" at offset ")), exceptionData, (nova_Nova_String*)(nova_Nova_String_Nova_plus(nova_primitive_number_Nova_Int_static_Nova_toString(0, exceptionData, (this->spectra_tree_nodes_Nova_Node_Nova_location->spectra_util_Nova_Location_Nova_offset)), exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)(""))))))))))))));
 	}
@@ -528,7 +530,7 @@ nova_Nova_String* spectra_tree_nodes_Nova_Node_Accessor_Nova_nodeType(spectra_tr
 
 spectra_tree_nodes_Nova_Node* spectra_tree_nodes_Nova_Node_Accessor_Nova_parentWithScope(spectra_tree_nodes_Nova_Node* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
-	if (this->spectra_tree_nodes_Nova_Node_Nova_parent == (spectra_tree_nodes_Nova_Node*)nova_null)
+	if ((this->spectra_tree_nodes_Nova_Node_Nova_parent) == (spectra_tree_nodes_Nova_Node*)nova_null)
 	{
 		return (spectra_tree_nodes_Nova_Node*)(nova_Nova_Object*)nova_null;
 	}
@@ -541,7 +543,7 @@ spectra_tree_nodes_Nova_Scope* spectra_tree_nodes_Nova_Node_Accessor_Nova_scope(
 	spectra_tree_nodes_Nova_Node* l1_Nova_consumer = (spectra_tree_nodes_Nova_Node*)nova_null;
 	
 	l1_Nova_consumer = (spectra_tree_nodes_Nova_Node*)(spectra_tree_nodes_Nova_Node_virtual_Accessor_Nova_scopeConsumer((spectra_tree_nodes_Nova_Node*)(this), exceptionData));
-	return (spectra_tree_nodes_Nova_Scope*)(l1_Nova_consumer != (spectra_tree_nodes_Nova_Node*)nova_null && l1_Nova_consumer != this ? (nova_Nova_Object*)spectra_tree_nodes_Nova_Node_virtual_Accessor_Nova_scope((spectra_tree_nodes_Nova_Node*)(l1_Nova_consumer), exceptionData) : (nova_Nova_Object*)nova_null);
+	return (spectra_tree_nodes_Nova_Scope*)((l1_Nova_consumer) != (spectra_tree_nodes_Nova_Node*)nova_null && l1_Nova_consumer != this ? (nova_Nova_Object*)spectra_tree_nodes_Nova_Node_virtual_Accessor_Nova_scope((spectra_tree_nodes_Nova_Node*)(l1_Nova_consumer), exceptionData) : (nova_Nova_Object*)nova_null);
 }
 
 spectra_tree_nodes_Nova_Scope* spectra_tree_nodes_Nova_Node_Mutator_Nova_scope(spectra_tree_nodes_Nova_Node* this, nova_exception_Nova_ExceptionData* exceptionData, spectra_tree_nodes_Nova_Scope* value)
@@ -549,7 +551,7 @@ spectra_tree_nodes_Nova_Scope* spectra_tree_nodes_Nova_Node_Mutator_Nova_scope(s
 	spectra_tree_nodes_Nova_Node* l1_Nova_consumer = (spectra_tree_nodes_Nova_Node*)nova_null;
 	
 	l1_Nova_consumer = (spectra_tree_nodes_Nova_Node*)(spectra_tree_nodes_Nova_Node_virtual_Accessor_Nova_scopeConsumer((spectra_tree_nodes_Nova_Node*)(this), exceptionData));
-	if (l1_Nova_consumer != (spectra_tree_nodes_Nova_Node*)nova_null && l1_Nova_consumer != this)
+	if ((l1_Nova_consumer) != (spectra_tree_nodes_Nova_Node*)nova_null && l1_Nova_consumer != this)
 	{
 		spectra_tree_nodes_Nova_Node_Nova_setScope(l1_Nova_consumer, exceptionData, value);
 	}
@@ -587,7 +589,7 @@ char spectra_tree_nodes_Nova_Node_Accessor_Nova_isUserMade(spectra_tree_nodes_No
 
 char spectra_tree_nodes_Nova_Node_Accessor_Nova_isWithinStaticContext(spectra_tree_nodes_Nova_Node* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
-	return spectra_tree_nodes_Nova_Node_virtual_Accessor_Nova_parentFunction((spectra_tree_nodes_Nova_Node*)(this), exceptionData) == (spectra_tree_nodes_functions_Nova_FunctionDeclaration*)nova_null || !spectra_tree_nodes_variables_Nova_InstanceDeclaration_Accessor_Nova_isInstance((spectra_tree_nodes_variables_Nova_InstanceDeclaration*)(spectra_tree_nodes_Nova_Node_virtual_Accessor_Nova_parentFunction((spectra_tree_nodes_Nova_Node*)(this), exceptionData)), exceptionData);
+	return (spectra_tree_nodes_Nova_Node_virtual_Accessor_Nova_parentFunction((spectra_tree_nodes_Nova_Node*)(this), exceptionData)) == (spectra_tree_nodes_functions_Nova_FunctionDeclaration*)nova_null || !spectra_tree_nodes_variables_Nova_InstanceDeclaration_Accessor_Nova_isInstance((spectra_tree_nodes_variables_Nova_InstanceDeclaration*)(spectra_tree_nodes_Nova_Node_virtual_Accessor_Nova_parentFunction((spectra_tree_nodes_Nova_Node*)(this), exceptionData)), exceptionData);
 }
 
 

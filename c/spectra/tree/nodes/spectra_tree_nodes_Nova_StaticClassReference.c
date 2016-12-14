@@ -112,6 +112,8 @@ spectra_tree_nodes_StaticClassReference_Extension_VTable spectra_tree_nodes_Stat
 		0,
 		0,
 		0,
+		(char(*)(spectra_tree_nodes_Nova_Accessible*, nova_exception_Nova_ExceptionData*))spectra_tree_nodes_Nova_StaticClassReference_Accessorfunc1_Nova_safeNavigation,
+		(char(*)(spectra_tree_nodes_Nova_Accessible*, nova_exception_Nova_ExceptionData*, char))spectra_tree_nodes_Nova_StaticClassReference_Mutatorfunc0_Nova_safeNavigation,
 		(void(*)(spectra_tree_nodes_annotations_Nova_Annotatable*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_annotations_Nova_Annotation*))spectra_tree_nodes_Nova_Node_Nova_addAnnotation,
 		0,
 		0,
@@ -223,12 +225,12 @@ char spectra_tree_nodes_Nova_StaticClassReference_static_Nova_lambda53(spectra_t
 	return nova_Nova_String_Nova_equals(spectra_tree_nodes_Nova_Import_Accessor_Nova_className(_1, exceptionData), exceptionData, (*context->spectra_tree_nodes_Nova_StaticClassReference_Nova_input));
 }
 
-char spectra_tree_nodes_Nova_StaticClassReference_Accessorfunc_Nova_safeNavigation(spectra_tree_nodes_Nova_StaticClassReference* this, nova_exception_Nova_ExceptionData* exceptionData)
+char spectra_tree_nodes_Nova_StaticClassReference_Accessorfunc1_Nova_safeNavigation(spectra_tree_nodes_Nova_StaticClassReference* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
 	return this->spectra_tree_nodes_Nova_StaticClassReference_Nova_safeNavigation;
 }
 
-char spectra_tree_nodes_Nova_StaticClassReference_Mutatorfunc_Nova_safeNavigation(spectra_tree_nodes_Nova_StaticClassReference* this, nova_exception_Nova_ExceptionData* exceptionData, char value)
+char spectra_tree_nodes_Nova_StaticClassReference_Mutatorfunc0_Nova_safeNavigation(spectra_tree_nodes_Nova_StaticClassReference* this, nova_exception_Nova_ExceptionData* exceptionData, char value)
 {
 	this->spectra_tree_nodes_Nova_StaticClassReference_Nova_safeNavigation = value;
 	return value;

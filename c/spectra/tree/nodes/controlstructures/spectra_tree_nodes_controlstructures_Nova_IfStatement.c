@@ -93,6 +93,8 @@ spectra_tree_nodes_controlstructures_IfStatement_Extension_VTable spectra_tree_n
 		0,
 		0,
 		0,
+		0,
+		0,
 		(void(*)(spectra_tree_nodes_annotations_Nova_Annotatable*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_annotations_Nova_Annotation*))spectra_tree_nodes_Nova_Node_Nova_addAnnotation,
 		0,
 		0,
@@ -181,24 +183,24 @@ spectra_tree_nodes_controlstructures_Nova_IfStatement* spectra_tree_nodes_contro
 	require = (int)(require == (intptr_t)nova_null ? 1 : require);
 	if (nova_Nova_String_Nova_equals(spectra_util_Nova_CompilerStringFunctions_Nova_nextWord(input, exceptionData, (intptr_t)nova_null, (intptr_t)nova_null, 0), exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("if"))))
 	{
-		spectra_tree_nodes_controlstructures_Nova_IfStatement* l1_Nova_node = (spectra_tree_nodes_controlstructures_Nova_IfStatement*)nova_null;
+		spectra_tree_nodes_controlstructures_Nova_IfStatement* l2_Nova_node = (spectra_tree_nodes_controlstructures_Nova_IfStatement*)nova_null;
 		
 		input = nova_Nova_String_Nova_trim(nova_Nova_String_virtual_Nova_substring((nova_Nova_String*)(input), exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("if"))->nova_Nova_String_Nova_count, (intptr_t)nova_null), exceptionData, (intptr_t)nova_null, (intptr_t)nova_null, 0);
-		l1_Nova_node = spectra_tree_nodes_controlstructures_Nova_IfStatement_Nova_construct(0, exceptionData, parent, location);
+		l2_Nova_node = spectra_tree_nodes_controlstructures_Nova_IfStatement_Nova_construct(0, exceptionData, parent, location);
 		if (nova_Nova_String_Nova_get(input, exceptionData, 0) == '(')
 		{
-			int l2_Nova_end = 0;
+			int l3_Nova_end = 0;
 			
-			l2_Nova_end = spectra_util_Nova_CompilerStringFunctions_0_Nova_findEndingMatch(input, exceptionData, 0, '(', ')', (intptr_t)nova_null, (intptr_t)nova_null);
-		input = nova_Nova_String_Nova_trim(nova_Nova_String_virtual_Nova_substring((nova_Nova_String*)(input), exceptionData, 1, l2_Nova_end), exceptionData, (intptr_t)nova_null, (intptr_t)nova_null, 0);
+			l3_Nova_end = spectra_util_Nova_CompilerStringFunctions_0_Nova_findEndingMatch(input, exceptionData, 0, '(', ')', (intptr_t)nova_null, (intptr_t)nova_null);
+		input = nova_Nova_String_Nova_trim(nova_Nova_String_virtual_Nova_substring((nova_Nova_String*)(input), exceptionData, 1, l3_Nova_end), exceptionData, (intptr_t)nova_null, (intptr_t)nova_null, 0);
 	}
-	if (!spectra_tree_nodes_controlstructures_Nova_IfStatement_Nova_parseCondition(l1_Nova_node, exceptionData, input))
+	if (!spectra_tree_nodes_controlstructures_Nova_IfStatement_Nova_parseCondition(l2_Nova_node, exceptionData, input))
 	{
-		spectra_Nova_SyntaxMessage_static_Nova_error(0, exceptionData, (nova_Nova_String*)(nova_Nova_String_Nova_plus(nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("Unable to parse if statement condition '")), exceptionData, (nova_Nova_String*)(nova_Nova_String_Nova_plus((input), exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("'")))))), (spectra_tree_nodes_Nova_Node*)(l1_Nova_node), 0);
+		spectra_Nova_SyntaxMessage_static_Nova_error(0, exceptionData, (nova_Nova_String*)(nova_Nova_String_Nova_plus(nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("Unable to parse if statement condition '")), exceptionData, (nova_Nova_String*)(nova_Nova_String_Nova_plus((input), exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("'")))))), (spectra_tree_nodes_Nova_Node*)(l2_Nova_node), 0);
 	}
 	else
 	{
-		return l1_Nova_node;
+		return l2_Nova_node;
 	}
 }
 return (spectra_tree_nodes_controlstructures_Nova_IfStatement*)(nova_Nova_Object*)nova_null;}

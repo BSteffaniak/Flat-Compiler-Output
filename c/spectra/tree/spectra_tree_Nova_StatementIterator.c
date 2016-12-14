@@ -82,6 +82,8 @@ spectra_tree_StatementIterator_Extension_VTable spectra_tree_StatementIterator_E
 		0,
 		0,
 		0,
+		0,
+		0,
 	},
 	nova_Nova_Object_Nova_toString,
 	nova_Nova_Object_Accessor_Nova_hashCodeLong,
@@ -159,15 +161,15 @@ if (!this->spectra_tree_Nova_StatementIterator_Nova_endsScope && l1_Nova_charAft
 }
 if (this->spectra_tree_Nova_StatementIterator_Nova_endsScope)
 {
-	int l2_Nova_current = 0;
+	int l3_Nova_current = 0;
 	
-	l2_Nova_current = spectra_util_Nova_CompilerStringFunctions_Nova_nextNonWhitespaceIndex(this->spectra_tree_Nova_StatementIterator_Nova_source, exceptionData, this->spectra_tree_Nova_StatementIterator_Nova_position, (intptr_t)nova_null, (intptr_t)nova_null);
-	while (l2_Nova_current > 0 && nova_Nova_String_Nova_get(this->spectra_tree_Nova_StatementIterator_Nova_source, exceptionData, l2_Nova_current) == '}')
+	l3_Nova_current = spectra_util_Nova_CompilerStringFunctions_Nova_nextNonWhitespaceIndex(this->spectra_tree_Nova_StatementIterator_Nova_source, exceptionData, this->spectra_tree_Nova_StatementIterator_Nova_position, (intptr_t)nova_null, (intptr_t)nova_null);
+	while (l3_Nova_current > 0 && nova_Nova_String_Nova_get(this->spectra_tree_Nova_StatementIterator_Nova_source, exceptionData, l3_Nova_current) == '}')
 {
 	this->spectra_tree_Nova_StatementIterator_Nova_scopesEnded++;
-	l2_Nova_current = spectra_util_Nova_CompilerStringFunctions_Nova_nextNonWhitespaceIndex(this->spectra_tree_Nova_StatementIterator_Nova_source, exceptionData, l2_Nova_current + 1, (intptr_t)nova_null, (intptr_t)nova_null);
+	l3_Nova_current = spectra_util_Nova_CompilerStringFunctions_Nova_nextNonWhitespaceIndex(this->spectra_tree_Nova_StatementIterator_Nova_source, exceptionData, l3_Nova_current + 1, (intptr_t)nova_null, (intptr_t)nova_null);
 }
-this->spectra_tree_Nova_StatementIterator_Nova_position = (int)(l2_Nova_current < 0 ? this->spectra_tree_Nova_StatementIterator_Nova_source->nova_Nova_String_Nova_count : l2_Nova_current);}
+this->spectra_tree_Nova_StatementIterator_Nova_position = (int)(l3_Nova_current < 0 ? this->spectra_tree_Nova_StatementIterator_Nova_source->nova_Nova_String_Nova_count : l3_Nova_current);}
 else
 {
 	this->spectra_tree_Nova_StatementIterator_Nova_position++;

@@ -78,6 +78,8 @@ nova_math_Polynomial_Extension_VTable nova_math_Polynomial_Extension_VTable_val 
 		0,
 		0,
 		0,
+		0,
+		0,
 	},
 	nova_Nova_Object_Nova_toString,
 	nova_Nova_Object_Accessor_Nova_hashCodeLong,
@@ -132,23 +134,23 @@ void nova_math_Nova_Polynomial_Nova_this(nova_math_Nova_Polynomial* this, nova_e
 {
 	int l1_Nova_start = 0;
 	char l1_Nova_reading = 0;
-	int l2_Nova_i = 0;
+	int l3_Nova_i = 0;
 	
 	l1_Nova_start = (int)(0);
 	l1_Nova_reading = 0;
 	this->nova_math_Nova_Polynomial_Nova_coefficients = nova_datastruct_list_Nova_DoubleArray_0_Nova_construct(0, exceptionData);
 	this->nova_math_Nova_Polynomial_Nova_degrees = nova_datastruct_list_Nova_DoubleArray_0_Nova_construct(0, exceptionData);
 	this->nova_math_Nova_Polynomial_Nova_signs = nova_datastruct_list_Nova_Array_0_Nova_construct(0, exceptionData);
-	l2_Nova_i = (int)0;
-	for (; l2_Nova_i < (int)polynomial->nova_Nova_String_Nova_count; l2_Nova_i++)
+	l3_Nova_i = (int)0;
+	for (; l3_Nova_i < (int)polynomial->nova_Nova_String_Nova_count; l3_Nova_i++)
 	{
-		if (!nova_math_Nova_Polynomial_static_Nova_isLetter(0, exceptionData, (char)(intptr_t)(nova_datastruct_list_Nova_CharArray_Nova_get((nova_datastruct_list_Nova_CharArray*)(polynomial->nova_Nova_String_Nova_chars), exceptionData, l2_Nova_i))))
+		if (!nova_math_Nova_Polynomial_static_Nova_isLetter(0, exceptionData, (char)(intptr_t)(nova_datastruct_list_Nova_CharArray_Nova_get((nova_datastruct_list_Nova_CharArray*)(polynomial->nova_Nova_String_Nova_chars), exceptionData, l3_Nova_i))))
 		{
 			l1_Nova_reading = 0;
 		}
 		else if (!l1_Nova_reading)
 		{
-			l1_Nova_start = l2_Nova_i;
+			l1_Nova_start = l3_Nova_i;
 			l1_Nova_reading = 1;
 		}
 		else

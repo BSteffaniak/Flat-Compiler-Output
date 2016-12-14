@@ -76,6 +76,8 @@ nova_operators_MultiplyOperator_Extension_VTable nova_operators_MultiplyOperator
 		0,
 		0,
 		0,
+		0,
+		0,
 	},
 };
 

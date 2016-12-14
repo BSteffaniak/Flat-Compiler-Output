@@ -121,6 +121,8 @@ spectra_tree_nodes_NovaFile_Extension_VTable spectra_tree_nodes_NovaFile_Extensi
 		0,
 		0,
 		0,
+		0,
+		0,
 		(void(*)(spectra_tree_nodes_annotations_Nova_Annotatable*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_annotations_Nova_Annotation*))spectra_tree_nodes_Nova_Node_Nova_addAnnotation,
 		0,
 		0,
@@ -270,13 +272,13 @@ spectra_tree_nodes_Nova_Node* spectra_tree_nodes_Nova_NovaFile_Nova_parseStateme
 	location = (spectra_util_Nova_Location*)(location == 0 ? (nova_Nova_Object*)spectra_util_Nova_Location_Nova_INVALID : (nova_Nova_Object*)location);
 	require = (int)(require == (intptr_t)nova_null ? 1 : require);
 	l1_Nova_node = (nova_Nova_Object*)nova_null;
-	if ((l1_Nova_node) == (nova_Nova_Object*)nova_null)
+	if (((l1_Nova_node)) == (nova_Nova_Object*)nova_null)
 	{
 		l1_Nova_node = (nova_Nova_Object*)(spectra_tree_nodes_Nova_ClassDeclaration_static_Nova_parse(0, exceptionData, input, (spectra_tree_nodes_Nova_Node*)(this), location, require));
-		if ((l1_Nova_node) == (nova_Nova_Object*)nova_null)
+		if (((l1_Nova_node)) == (nova_Nova_Object*)nova_null)
 		{
 			l1_Nova_node = (nova_Nova_Object*)(spectra_tree_nodes_Nova_Import_static_Nova_parse(0, exceptionData, input, (spectra_tree_nodes_Nova_Node*)(this), location, require));
-			if ((l1_Nova_node) == (nova_Nova_Object*)nova_null)
+			if (((l1_Nova_node)) == (nova_Nova_Object*)nova_null)
 			{
 				l1_Nova_node = (nova_Nova_Object*)(spectra_tree_nodes_Nova_Package_static_Nova_parse(0, exceptionData, input, (spectra_tree_nodes_Nova_Node*)(this), location, require));
 			}
@@ -303,15 +305,15 @@ spectra_tree_nodes_Nova_ClassDeclaration* spectra_tree_nodes_Nova_NovaFile_Nova_
 void spectra_tree_nodes_Nova_NovaFile_Nova_addDefaultImports(spectra_tree_nodes_Nova_NovaFile* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
 	nova_datastruct_list_Nova_ArrayIterator* nova_local_0 = (nova_datastruct_list_Nova_ArrayIterator*)nova_null;
-	nova_Nova_String* l1_Nova_i = (nova_Nova_String*)nova_null;
+	nova_Nova_String* l2_Nova_i = (nova_Nova_String*)nova_null;
 	
 	nova_local_0 = (nova_datastruct_list_Nova_ArrayIterator*)(nova_datastruct_list_Nova_Array_Accessor_Nova_iterator((nova_datastruct_list_Nova_Array*)((spectra_tree_nodes_Nova_NovaFile_Nova_DEFAULT_IMPORTS)), exceptionData));
 	while (nova_datastruct_list_Nova_ArrayIterator_Accessor_Nova_hasNext((nova_datastruct_list_Nova_ArrayIterator*)(nova_local_0), exceptionData))
 	{
-		l1_Nova_i = (nova_Nova_String*)(nova_datastruct_list_Nova_ArrayIterator_Accessor_Nova_next((nova_datastruct_list_Nova_ArrayIterator*)(nova_local_0), exceptionData));
-		if (l1_Nova_i->nova_Nova_String_Nova_count > 0)
+		l2_Nova_i = (nova_Nova_String*)(nova_datastruct_list_Nova_ArrayIterator_Accessor_Nova_next((nova_datastruct_list_Nova_ArrayIterator*)(nova_local_0), exceptionData));
+		if (l2_Nova_i->nova_Nova_String_Nova_count > 0)
 		{
-			spectra_tree_nodes_Nova_NovaFile_Nova_addImport(this, exceptionData, l1_Nova_i)->spectra_tree_nodes_Nova_Import_Nova_used = 1;
+			spectra_tree_nodes_Nova_NovaFile_Nova_addImport(this, exceptionData, l2_Nova_i)->spectra_tree_nodes_Nova_Import_Nova_used = 1;
 		}
 	}
 }
@@ -334,7 +336,7 @@ spectra_tree_nodes_Nova_Import* spectra_tree_nodes_Nova_NovaFile_Nova_addImport(
 		return (spectra_tree_nodes_Nova_Import*)(nova_Nova_Object*)nova_null;
 	}
 	l1_Nova_node = spectra_tree_nodes_Nova_Import_static_Nova_parse(0, exceptionData, (nova_Nova_String*)(nova_Nova_String_Nova_plus(nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("import \"")), exceptionData, (nova_Nova_String*)(nova_Nova_String_Nova_plus((location), exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("\"")))))), (spectra_tree_nodes_Nova_Node*)(this), this->spectra_tree_nodes_Nova_Node_Nova_location, (intptr_t)nova_null);
-	if (l1_Nova_node != (spectra_tree_nodes_Nova_Import*)nova_null)
+	if ((l1_Nova_node) != (spectra_tree_nodes_Nova_Import*)nova_null)
 	{
 		nova_datastruct_list_Nova_Array_0_Nova_add((nova_datastruct_list_Nova_Array*)(spectra_tree_nodes_Nova_NovaFile_Accessor_Nova_imports(this, exceptionData)), exceptionData, (nova_Nova_Object*)(l1_Nova_node));
 	}

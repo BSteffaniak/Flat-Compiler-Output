@@ -92,6 +92,8 @@ spectra_tree_nodes_exceptionhandling_Throw_Extension_VTable spectra_tree_nodes_e
 		0,
 		0,
 		0,
+		0,
+		0,
 		(void(*)(spectra_tree_nodes_annotations_Nova_Annotatable*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_annotations_Nova_Annotation*))spectra_tree_nodes_Nova_Node_Nova_addAnnotation,
 		0,
 		0,
@@ -189,19 +191,19 @@ spectra_tree_nodes_exceptionhandling_Nova_Throw* spectra_tree_nodes_exceptionhan
 	}
 	if (nova_Nova_String_Nova_equals(spectra_util_Nova_CompilerStringFunctions_Nova_nextWord(input, exceptionData, (intptr_t)nova_null, (intptr_t)nova_null, 0), exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("throw"))))
 	{
-		spectra_tree_nodes_exceptionhandling_Nova_Throw* l2_Nova_node = (spectra_tree_nodes_exceptionhandling_Nova_Throw*)nova_null;
-		nova_Nova_String* l2_Nova_exception = (nova_Nova_String*)nova_null;
+		spectra_tree_nodes_exceptionhandling_Nova_Throw* l3_Nova_node = (spectra_tree_nodes_exceptionhandling_Nova_Throw*)nova_null;
+		nova_Nova_String* l3_Nova_exception = (nova_Nova_String*)nova_null;
 		
-		l2_Nova_node = spectra_tree_nodes_exceptionhandling_Nova_Throw_Nova_construct(0, exceptionData, parent, location);
-		l2_Nova_node->spectra_tree_nodes_exceptionhandling_Nova_Throw_Nova_soft = l1_Nova_soft;
-		l2_Nova_exception = nova_Nova_String_Nova_trim(nova_Nova_String_virtual_Nova_substring((nova_Nova_String*)(input), exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("throw "))->nova_Nova_String_Nova_count, (intptr_t)nova_null), exceptionData, (intptr_t)nova_null, (intptr_t)nova_null, 0);
-		if (!spectra_tree_nodes_exceptionhandling_Nova_Throw_Nova_parseException(l2_Nova_node, exceptionData, l2_Nova_exception))
+		l3_Nova_node = spectra_tree_nodes_exceptionhandling_Nova_Throw_Nova_construct(0, exceptionData, parent, location);
+		l3_Nova_node->spectra_tree_nodes_exceptionhandling_Nova_Throw_Nova_soft = l1_Nova_soft;
+		l3_Nova_exception = nova_Nova_String_Nova_trim(nova_Nova_String_virtual_Nova_substring((nova_Nova_String*)(input), exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("throw "))->nova_Nova_String_Nova_count, (intptr_t)nova_null), exceptionData, (intptr_t)nova_null, (intptr_t)nova_null, 0);
+		if (!spectra_tree_nodes_exceptionhandling_Nova_Throw_Nova_parseException(l3_Nova_node, exceptionData, l3_Nova_exception))
 		{
-			THROW(spectra_Nova_InvalidParseException_Nova_construct(0, exceptionData, (nova_Nova_String*)(nova_Nova_String_Nova_plus(nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("Unable to parse thrown exception '")), exceptionData, (nova_Nova_String*)(nova_Nova_String_Nova_plus((l2_Nova_exception), exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("'")))))), 0), 1);
+			THROW(spectra_Nova_InvalidParseException_Nova_construct(0, exceptionData, (nova_Nova_String*)(nova_Nova_String_Nova_plus(nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("Unable to parse thrown exception '")), exceptionData, (nova_Nova_String*)(nova_Nova_String_Nova_plus((l3_Nova_exception), exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("'")))))), 0), 1);
 		}
 		else
 		{
-			return l2_Nova_node;
+			return l3_Nova_node;
 		}
 	}
 	return (spectra_tree_nodes_exceptionhandling_Nova_Throw*)(nova_Nova_Object*)nova_null;

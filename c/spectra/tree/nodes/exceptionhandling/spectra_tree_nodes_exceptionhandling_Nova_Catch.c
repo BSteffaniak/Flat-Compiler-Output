@@ -91,6 +91,8 @@ spectra_tree_nodes_exceptionhandling_Catch_Extension_VTable spectra_tree_nodes_e
 		0,
 		0,
 		0,
+		0,
+		0,
 		(void(*)(spectra_tree_nodes_annotations_Nova_Annotatable*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_annotations_Nova_Annotation*))spectra_tree_nodes_Nova_Node_Nova_addAnnotation,
 		0,
 		0,
@@ -182,36 +184,36 @@ spectra_tree_nodes_exceptionhandling_Nova_Catch* spectra_tree_nodes_exceptionhan
 	require = (int)(require == (intptr_t)nova_null ? 1 : require);
 	if (nova_Nova_String_Nova_equals(spectra_util_Nova_CompilerStringFunctions_Nova_nextWord(input, exceptionData, (intptr_t)nova_null, (intptr_t)nova_null, 0), exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("catch"))))
 	{
-		spectra_tree_nodes_exceptionhandling_Nova_Catch* l1_Nova_node = (spectra_tree_nodes_exceptionhandling_Nova_Catch*)nova_null;
-		nova_Nova_String* l1_Nova_contents = (nova_Nova_String*)nova_null;
+		spectra_tree_nodes_exceptionhandling_Nova_Catch* l2_Nova_node = (spectra_tree_nodes_exceptionhandling_Nova_Catch*)nova_null;
+		nova_Nova_String* l2_Nova_contents = (nova_Nova_String*)nova_null;
 		
-		l1_Nova_node = spectra_tree_nodes_exceptionhandling_Nova_Catch_Nova_construct(0, exceptionData, parent, location);
-		l1_Nova_contents = nova_Nova_String_Nova_trim(nova_Nova_String_virtual_Nova_substring((nova_Nova_String*)(input), exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("catch"))->nova_Nova_String_Nova_count, (intptr_t)nova_null), exceptionData, (intptr_t)nova_null, (intptr_t)nova_null, 0);
-		if (nova_Nova_String_Nova_equals(spectra_util_Nova_CompilerStringFunctions_Nova_nextWord(l1_Nova_contents, exceptionData, (intptr_t)nova_null, (intptr_t)nova_null, 0), exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("all"))))
+		l2_Nova_node = spectra_tree_nodes_exceptionhandling_Nova_Catch_Nova_construct(0, exceptionData, parent, location);
+		l2_Nova_contents = nova_Nova_String_Nova_trim(nova_Nova_String_virtual_Nova_substring((nova_Nova_String*)(input), exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("catch"))->nova_Nova_String_Nova_count, (intptr_t)nova_null), exceptionData, (intptr_t)nova_null, (intptr_t)nova_null, 0);
+		if (nova_Nova_String_Nova_equals(spectra_util_Nova_CompilerStringFunctions_Nova_nextWord(l2_Nova_contents, exceptionData, (intptr_t)nova_null, (intptr_t)nova_null, 0), exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("all"))))
 		{
-			l1_Nova_node->spectra_tree_nodes_exceptionhandling_Nova_Catch_Nova_soft = 1;
-			l1_Nova_contents = nova_Nova_String_Nova_trim(nova_Nova_String_virtual_Nova_substring((nova_Nova_String*)(l1_Nova_contents), exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("all"))->nova_Nova_String_Nova_count, (intptr_t)nova_null), exceptionData, (intptr_t)nova_null, (intptr_t)nova_null, 0);
+			l2_Nova_node->spectra_tree_nodes_exceptionhandling_Nova_Catch_Nova_soft = 1;
+			l2_Nova_contents = nova_Nova_String_Nova_trim(nova_Nova_String_virtual_Nova_substring((nova_Nova_String*)(l2_Nova_contents), exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("all"))->nova_Nova_String_Nova_count, (intptr_t)nova_null), exceptionData, (intptr_t)nova_null, (intptr_t)nova_null, 0);
 		}
-		if (l1_Nova_contents->nova_Nova_String_Nova_count > 0)
+		if (l2_Nova_contents->nova_Nova_String_Nova_count > 0)
 		{
-			if (nova_Nova_String_Accessor_Nova_first(l1_Nova_contents, exceptionData) == '(')
+			if (nova_Nova_String_Accessor_Nova_first(l2_Nova_contents, exceptionData) == '(')
 			{
-				if (nova_Nova_String_Accessor_Nova_last(l1_Nova_contents, exceptionData) == ')')
+				if (nova_Nova_String_Accessor_Nova_last(l2_Nova_contents, exceptionData) == ')')
 			{
-				l1_Nova_contents = nova_Nova_String_Nova_trim(nova_Nova_String_virtual_Nova_substring((nova_Nova_String*)(l1_Nova_contents), exceptionData, 1, l1_Nova_contents->nova_Nova_String_Nova_count - 1), exceptionData, (intptr_t)nova_null, (intptr_t)nova_null, 0);
+				l2_Nova_contents = nova_Nova_String_Nova_trim(nova_Nova_String_virtual_Nova_substring((nova_Nova_String*)(l2_Nova_contents), exceptionData, 1, l2_Nova_contents->nova_Nova_String_Nova_count - 1), exceptionData, (intptr_t)nova_null, (intptr_t)nova_null, 0);
 			}
 			else
 			{
 				return (spectra_tree_nodes_exceptionhandling_Nova_Catch*)(nova_Nova_Object*)nova_null;
 			}
 		}
-		if (!spectra_tree_nodes_exceptionhandling_Nova_Catch_Nova_parseException(l1_Nova_node, exceptionData, l1_Nova_contents))
+		if (!spectra_tree_nodes_exceptionhandling_Nova_Catch_Nova_parseException(l2_Nova_node, exceptionData, l2_Nova_contents))
 		{
-			THROW(spectra_Nova_InvalidParseException_Nova_construct(0, exceptionData, (nova_Nova_String*)(nova_Nova_String_Nova_plus(nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("Unable to parse exception '")), exceptionData, (nova_Nova_String*)(nova_Nova_String_Nova_plus((l1_Nova_contents), exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("'")))))), (spectra_tree_nodes_Nova_Node*)(l1_Nova_node)), 1);
+			THROW(spectra_Nova_InvalidParseException_Nova_construct(0, exceptionData, (nova_Nova_String*)(nova_Nova_String_Nova_plus(nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("Unable to parse exception '")), exceptionData, (nova_Nova_String*)(nova_Nova_String_Nova_plus((l2_Nova_contents), exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("'")))))), (spectra_tree_nodes_Nova_Node*)(l2_Nova_node)), 1);
 		}
 		else
 		{
-			return l1_Nova_node;
+			return l2_Nova_node;
 		}
 	}
 }
@@ -236,7 +238,7 @@ char spectra_tree_nodes_exceptionhandling_Nova_Catch_Nova_parseException(spectra
 
 nova_Nova_String* spectra_tree_nodes_exceptionhandling_Nova_Catch_Nova_writeException(spectra_tree_nodes_exceptionhandling_Nova_Catch* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
-	return (nova_Nova_String*)nova_Nova_String_Nova_plus(spectra_tree_nodes_Nova_Type_Nova_toNova(this->spectra_tree_nodes_exceptionhandling_Nova_Catch_Nova_exception, exceptionData), exceptionData, ((nova_Nova_String*)(this->spectra_tree_nodes_exceptionhandling_Nova_Catch_Nova_variable != (nova_Nova_String*)nova_null ? nova_Nova_String_Nova_plus(nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)(" ")), exceptionData, (nova_Nova_String*)(nova_Nova_String_Nova_plus((this->spectra_tree_nodes_exceptionhandling_Nova_Catch_Nova_variable), exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)(""))))) : nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("")))));
+	return (nova_Nova_String*)nova_Nova_String_Nova_plus(spectra_tree_nodes_Nova_Type_Nova_toNova(this->spectra_tree_nodes_exceptionhandling_Nova_Catch_Nova_exception, exceptionData), exceptionData, ((nova_Nova_String*)((this->spectra_tree_nodes_exceptionhandling_Nova_Catch_Nova_variable) != (nova_Nova_String*)nova_null ? nova_Nova_String_Nova_plus(nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)(" ")), exceptionData, (nova_Nova_String*)(nova_Nova_String_Nova_plus((this->spectra_tree_nodes_exceptionhandling_Nova_Catch_Nova_variable), exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)(""))))) : nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("")))));
 }
 
 nova_Nova_String* spectra_tree_nodes_exceptionhandling_Nova_Catch_Nova_writeNova(spectra_tree_nodes_exceptionhandling_Nova_Catch* this, nova_exception_Nova_ExceptionData* exceptionData)

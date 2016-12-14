@@ -96,6 +96,8 @@ spectra_tree_nodes_controlstructures_loops_ForEachLoop_Extension_VTable spectra_
 		0,
 		0,
 		0,
+		0,
+		0,
 		(void(*)(spectra_tree_nodes_annotations_Nova_Annotatable*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_annotations_Nova_Annotation*))spectra_tree_nodes_Nova_Node_Nova_addAnnotation,
 		0,
 		0,
@@ -198,40 +200,40 @@ spectra_tree_nodes_controlstructures_loops_Nova_ForEachLoop* spectra_tree_nodes_
 	require = (int)(require == (intptr_t)nova_null ? 1 : require);
 	if (nova_Nova_String_Nova_equals(spectra_util_Nova_CompilerStringFunctions_Nova_nextWord(input, exceptionData, (intptr_t)nova_null, (intptr_t)nova_null, 0), exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("for"))))
 	{
-		spectra_tree_nodes_controlstructures_loops_Nova_ForEachLoop* l1_Nova_node = (spectra_tree_nodes_controlstructures_loops_Nova_ForEachLoop*)nova_null;
-		nova_Nova_String* l1_Nova_contents = (nova_Nova_String*)nova_null;
+		spectra_tree_nodes_controlstructures_loops_Nova_ForEachLoop* l2_Nova_node = (spectra_tree_nodes_controlstructures_loops_Nova_ForEachLoop*)nova_null;
+		nova_Nova_String* l2_Nova_contents = (nova_Nova_String*)nova_null;
 		
-		l1_Nova_node = spectra_tree_nodes_controlstructures_loops_Nova_ForEachLoop_Nova_construct(0, exceptionData, parent, location);
-		l1_Nova_contents = nova_Nova_String_Nova_trim(nova_Nova_String_virtual_Nova_substring((nova_Nova_String*)(input), exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("for"))->nova_Nova_String_Nova_count, (intptr_t)nova_null), exceptionData, (intptr_t)nova_null, (intptr_t)nova_null, 0);
-		if (nova_Nova_String_Nova_get(l1_Nova_contents, exceptionData, 0) == '(')
+		l2_Nova_node = spectra_tree_nodes_controlstructures_loops_Nova_ForEachLoop_Nova_construct(0, exceptionData, parent, location);
+		l2_Nova_contents = nova_Nova_String_Nova_trim(nova_Nova_String_virtual_Nova_substring((nova_Nova_String*)(input), exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("for"))->nova_Nova_String_Nova_count, (intptr_t)nova_null), exceptionData, (intptr_t)nova_null, (intptr_t)nova_null, 0);
+		if (nova_Nova_String_Nova_get(l2_Nova_contents, exceptionData, 0) == '(')
 		{
-			int l2_Nova_end = 0;
+			int l3_Nova_end = 0;
 			
-			l2_Nova_end = spectra_util_Nova_CompilerStringFunctions_0_Nova_findEndingMatch(l1_Nova_contents, exceptionData, 0, '(', ')', (intptr_t)nova_null, (intptr_t)nova_null);
-		if (l2_Nova_end > 0)
+			l3_Nova_end = spectra_util_Nova_CompilerStringFunctions_0_Nova_findEndingMatch(l2_Nova_contents, exceptionData, 0, '(', ')', (intptr_t)nova_null, (intptr_t)nova_null);
+		if (l3_Nova_end > 0)
 		{
-			int l3_Nova_inIndex = 0;
+			int l4_Nova_inIndex = 0;
 			
-			l1_Nova_contents = nova_Nova_String_Nova_trim(nova_Nova_String_virtual_Nova_substring((nova_Nova_String*)(l1_Nova_contents), exceptionData, 1, l2_Nova_end), exceptionData, (intptr_t)nova_null, (intptr_t)nova_null, 0);
-			l3_Nova_inIndex = spectra_util_Nova_CompilerStringFunctions_Nova_findWordOnTopLevel(l1_Nova_contents, exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("in")), (intptr_t)nova_null, (intptr_t)nova_null, (intptr_t)nova_null);
-			if (l3_Nova_inIndex > 0)
+			l2_Nova_contents = nova_Nova_String_Nova_trim(nova_Nova_String_virtual_Nova_substring((nova_Nova_String*)(l2_Nova_contents), exceptionData, 1, l3_Nova_end), exceptionData, (intptr_t)nova_null, (intptr_t)nova_null, 0);
+			l4_Nova_inIndex = spectra_util_Nova_CompilerStringFunctions_Nova_findWordOnTopLevel(l2_Nova_contents, exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("in")), (intptr_t)nova_null, (intptr_t)nova_null, (intptr_t)nova_null);
+			if (l4_Nova_inIndex > 0)
 			{
-				nova_Nova_String* l4_Nova_variable = (nova_Nova_String*)nova_null;
-				nova_Nova_String* l4_Nova_iterator = (nova_Nova_String*)nova_null;
+				nova_Nova_String* l5_Nova_variable = (nova_Nova_String*)nova_null;
+				nova_Nova_String* l5_Nova_iterator = (nova_Nova_String*)nova_null;
 				
-				l4_Nova_variable = nova_Nova_String_Nova_trim(nova_Nova_String_virtual_Nova_substring((nova_Nova_String*)(l1_Nova_contents), exceptionData, (intptr_t)nova_null, l3_Nova_inIndex), exceptionData, (intptr_t)nova_null, (intptr_t)nova_null, 0);
-				l4_Nova_iterator = nova_Nova_String_Nova_trim(nova_Nova_String_virtual_Nova_substring((nova_Nova_String*)(l1_Nova_contents), exceptionData, l3_Nova_inIndex + nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("in"))->nova_Nova_String_Nova_count + 1, (intptr_t)nova_null), exceptionData, (intptr_t)nova_null, (intptr_t)nova_null, 0);
-				if (!spectra_tree_nodes_controlstructures_loops_Nova_ForEachLoop_Nova_parseIterator(l1_Nova_node, exceptionData, l4_Nova_iterator))
+				l5_Nova_variable = nova_Nova_String_Nova_trim(nova_Nova_String_virtual_Nova_substring((nova_Nova_String*)(l2_Nova_contents), exceptionData, (intptr_t)nova_null, l4_Nova_inIndex), exceptionData, (intptr_t)nova_null, (intptr_t)nova_null, 0);
+				l5_Nova_iterator = nova_Nova_String_Nova_trim(nova_Nova_String_virtual_Nova_substring((nova_Nova_String*)(l2_Nova_contents), exceptionData, l4_Nova_inIndex + nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("in"))->nova_Nova_String_Nova_count + 1, (intptr_t)nova_null), exceptionData, (intptr_t)nova_null, (intptr_t)nova_null, 0);
+				if (!spectra_tree_nodes_controlstructures_loops_Nova_ForEachLoop_Nova_parseIterator(l2_Nova_node, exceptionData, l5_Nova_iterator))
 				{
-					THROW(spectra_Nova_InvalidParseException_Nova_construct(0, exceptionData, (nova_Nova_String*)(nova_Nova_String_Nova_plus(nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("Unable to parse for each loop iterator '")), exceptionData, (nova_Nova_String*)(nova_Nova_String_Nova_plus((l4_Nova_iterator), exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("'")))))), (spectra_tree_nodes_Nova_Node*)(l1_Nova_node)), 1);
+					THROW(spectra_Nova_InvalidParseException_Nova_construct(0, exceptionData, (nova_Nova_String*)(nova_Nova_String_Nova_plus(nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("Unable to parse for each loop iterator '")), exceptionData, (nova_Nova_String*)(nova_Nova_String_Nova_plus((l5_Nova_iterator), exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("'")))))), (spectra_tree_nodes_Nova_Node*)(l2_Nova_node)), 1);
 				}
-				else if (!spectra_tree_nodes_controlstructures_loops_Nova_ForEachLoop_Nova_parseVariable(l1_Nova_node, exceptionData, l4_Nova_variable))
+				else if (!spectra_tree_nodes_controlstructures_loops_Nova_ForEachLoop_Nova_parseVariable(l2_Nova_node, exceptionData, l5_Nova_variable))
 				{
-					THROW(spectra_Nova_InvalidParseException_Nova_construct(0, exceptionData, (nova_Nova_String*)(nova_Nova_String_Nova_plus(nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("Unable to parse for each loop variable '")), exceptionData, (nova_Nova_String*)(nova_Nova_String_Nova_plus((l4_Nova_variable), exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("'")))))), (spectra_tree_nodes_Nova_Node*)(l1_Nova_node)), 1);
+					THROW(spectra_Nova_InvalidParseException_Nova_construct(0, exceptionData, (nova_Nova_String*)(nova_Nova_String_Nova_plus(nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("Unable to parse for each loop variable '")), exceptionData, (nova_Nova_String*)(nova_Nova_String_Nova_plus((l5_Nova_variable), exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("'")))))), (spectra_tree_nodes_Nova_Node*)(l2_Nova_node)), 1);
 				}
 				else
 				{
-					return l1_Nova_node;
+					return l2_Nova_node;
 				}
 			}
 		}
@@ -242,7 +244,7 @@ return (spectra_tree_nodes_controlstructures_loops_Nova_ForEachLoop*)(nova_Nova_
 char spectra_tree_nodes_controlstructures_loops_Nova_ForEachLoop_Nova_parseIterator(spectra_tree_nodes_controlstructures_loops_Nova_ForEachLoop* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* input)
 {
 	this->spectra_tree_nodes_controlstructures_loops_Nova_ForEachLoop_Nova_iterator = (spectra_tree_nodes_Nova_Value*)(spectra_tree_nodes_Nova_Value_0_static_Nova_parse(0, exceptionData, input, (spectra_tree_nodes_Nova_Node*)(this), 0, (intptr_t)nova_null));
-	if (this->spectra_tree_nodes_controlstructures_loops_Nova_ForEachLoop_Nova_iterator == (spectra_tree_nodes_Nova_Value*)nova_null)
+	if ((this->spectra_tree_nodes_controlstructures_loops_Nova_ForEachLoop_Nova_iterator) == (spectra_tree_nodes_Nova_Value*)nova_null)
 	{
 		return 0;
 	}

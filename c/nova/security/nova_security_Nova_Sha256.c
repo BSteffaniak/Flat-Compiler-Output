@@ -81,6 +81,8 @@ nova_security_Sha256_Extension_VTable nova_security_Sha256_Extension_VTable_val 
 		0,
 		0,
 		0,
+		0,
+		0,
 	},
 	nova_Nova_Object_Nova_toString,
 	nova_Nova_Object_Accessor_Nova_hashCodeLong,
@@ -140,22 +142,22 @@ nova_Nova_String* nova_security_Nova_Sha256_Nova_digest(nova_security_Nova_Sha25
 	Context1* contextArg97 = NOVA_MALLOC(sizeof(Context1));
 	long_long nova_zero_check3 = 0;
 	long_long nova_zero_check4 = 0;
-	int l2_Nova_i = 0;
-	int l10_Nova_i = 0;
+	int l3_Nova_i = 0;
+	int l11_Nova_i = 0;
 	
 	l1_Nova_hash = generated28(this, exceptionData);
 	l1_Nova_l = msg->nova_Nova_String_Nova_count / 4 + 2;
 	l1_Nova_n = (int)(nova_math_Nova_Math_static_Nova_ceil(0, exceptionData, l1_Nova_l / 16));
 	l1_Nova_M = (nova_datastruct_list_Nova_Array*)(nova_datastruct_list_Nova_Array_0_Nova_map((nova_datastruct_list_Nova_Array*)(nova_datastruct_list_Nova_Array_1_Nova_construct(0, exceptionData, l1_Nova_n, (intptr_t)nova_null)), exceptionData, (nova_datastruct_list_Nova_Array_closure4_Nova_mapFunc)&nova_security_Nova_Sha256_Nova_lambda97, this, contextArg97));
-	l2_Nova_i = (int)0;
-	for (; l2_Nova_i < (int)l1_Nova_n; l2_Nova_i++)
+	l3_Nova_i = (int)0;
+	for (; l3_Nova_i < (int)l1_Nova_n; l3_Nova_i++)
 	{
-		int l4_Nova_j = 0;
+		int l5_Nova_j = 0;
 		
-		l4_Nova_j = (int)0;
-		for (; l4_Nova_j < (int)16; l4_Nova_j++)
+		l5_Nova_j = (int)0;
+		for (; l5_Nova_j < (int)16; l5_Nova_j++)
 		{
-			nova_datastruct_list_Nova_IntArray_Nova_set((nova_datastruct_list_Nova_IntArray*)(nova_datastruct_list_Nova_Array_virtual_Nova_get((nova_datastruct_list_Nova_Array*)(l1_Nova_M), exceptionData, l2_Nova_i)), exceptionData, l4_Nova_j, (nova_Nova_String_Nova_get(msg, exceptionData, l2_Nova_i * 64 + l4_Nova_j * 4) << 24) | (nova_Nova_String_Nova_get(msg, exceptionData, l2_Nova_i * 64 + l4_Nova_j * 4 + 1) << 16) | (nova_Nova_String_Nova_get(msg, exceptionData, l2_Nova_i * 64 + l4_Nova_j * 4 + 2) << 8) | (nova_Nova_String_Nova_get(msg, exceptionData, l2_Nova_i * 64 + l4_Nova_j * 4 + 3)));
+			nova_datastruct_list_Nova_IntArray_Nova_set((nova_datastruct_list_Nova_IntArray*)(nova_datastruct_list_Nova_Array_virtual_Nova_get((nova_datastruct_list_Nova_Array*)(l1_Nova_M), exceptionData, l3_Nova_i)), exceptionData, l5_Nova_j, (nova_Nova_String_Nova_get(msg, exceptionData, l3_Nova_i * 64 + l5_Nova_j * 4) << 24) | (nova_Nova_String_Nova_get(msg, exceptionData, l3_Nova_i * 64 + l5_Nova_j * 4 + 1) << 16) | (nova_Nova_String_Nova_get(msg, exceptionData, l3_Nova_i * 64 + l5_Nova_j * 4 + 2) << 8) | (nova_Nova_String_Nova_get(msg, exceptionData, l3_Nova_i * 64 + l5_Nova_j * 4 + 3)));
 		}
 	}
 	nova_zero_check3 = (long_long)nova_math_Nova_Math_static_Nova_pow(0, exceptionData, 2, 32);
@@ -170,23 +172,23 @@ nova_Nova_String* nova_security_Nova_Sha256_Nova_digest(nova_security_Nova_Sha25
 		THROW(nova_exception_Nova_DivideByZeroException_Nova_construct(0, exceptionData), 0);
 	}
 	nova_datastruct_list_Nova_Array_virtual_Nova_get((nova_datastruct_list_Nova_Array*)(l1_Nova_M), exceptionData, l1_Nova_n - 1);
-	l10_Nova_i = (int)0;
-	for (; l10_Nova_i < (int)l1_Nova_n; l10_Nova_i++)
+	l11_Nova_i = (int)0;
+	for (; l11_Nova_i < (int)l1_Nova_n; l11_Nova_i++)
 	{
-		nova_datastruct_list_Nova_IntArray* l10_Nova_W = (nova_datastruct_list_Nova_IntArray*)nova_null;
-		int l12_Nova_t = 0;
-		int l14_Nova_t = 0;
+		nova_datastruct_list_Nova_IntArray* l11_Nova_W = (nova_datastruct_list_Nova_IntArray*)nova_null;
+		int l13_Nova_t = 0;
+		int l15_Nova_t = 0;
 		
-		l10_Nova_W = nova_datastruct_list_Nova_IntArray_1_Nova_construct(0, exceptionData, 64);
-		l12_Nova_t = (int)0;
-		for (; l12_Nova_t < (int)16; l12_Nova_t++)
+		l11_Nova_W = nova_datastruct_list_Nova_IntArray_1_Nova_construct(0, exceptionData, 64);
+		l13_Nova_t = (int)0;
+		for (; l13_Nova_t < (int)16; l13_Nova_t++)
 		{
-			nova_datastruct_list_Nova_IntArray_Nova_set(l10_Nova_W, exceptionData, l12_Nova_t, (int)(intptr_t)(nova_datastruct_list_Nova_IntArray_Nova_get((nova_datastruct_list_Nova_IntArray*)(nova_datastruct_list_Nova_Array_virtual_Nova_get((nova_datastruct_list_Nova_Array*)(l1_Nova_M), exceptionData, l10_Nova_i)), exceptionData, l12_Nova_t)));
+			nova_datastruct_list_Nova_IntArray_Nova_set(l11_Nova_W, exceptionData, l13_Nova_t, (int)(intptr_t)(nova_datastruct_list_Nova_IntArray_Nova_get((nova_datastruct_list_Nova_IntArray*)(nova_datastruct_list_Nova_Array_virtual_Nova_get((nova_datastruct_list_Nova_Array*)(l1_Nova_M), exceptionData, l11_Nova_i)), exceptionData, l13_Nova_t)));
 		}
-		l14_Nova_t = (int)16;
-		for (; l14_Nova_t < (int)64; l14_Nova_t++)
+		l15_Nova_t = (int)16;
+		for (; l15_Nova_t < (int)64; l15_Nova_t++)
 		{
-			l10_Nova_W;
+			l11_Nova_W;
 		}
 	}
 	return nova_datastruct_list_Nova_List_virtual_Nova_join((nova_datastruct_list_Nova_List*)(l1_Nova_hash), exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("")));

@@ -78,6 +78,8 @@ spectra_util_Bounds_Extension_VTable spectra_util_Bounds_Extension_VTable_val =
 		0,
 		0,
 		0,
+		0,
+		0,
 	},
 	spectra_util_Nova_Bounds_Nova_toString,
 	nova_Nova_Object_Accessor_Nova_hashCodeLong,
@@ -160,7 +162,7 @@ spectra_util_Nova_Bounds* spectra_util_Nova_Bounds_Nova_invalidate(spectra_util_
 
 char spectra_util_Nova_Bounds_Nova_equals(spectra_util_Nova_Bounds* this, nova_exception_Nova_ExceptionData* exceptionData, spectra_util_Nova_Bounds* bounds)
 {
-	return bounds != (spectra_util_Nova_Bounds*)nova_null && bounds->spectra_util_Nova_Bounds_Nova_start == this->spectra_util_Nova_Bounds_Nova_start && bounds->spectra_util_Nova_Bounds_Nova_end == this->spectra_util_Nova_Bounds_Nova_end;
+	return (bounds) != (spectra_util_Nova_Bounds*)nova_null && bounds->spectra_util_Nova_Bounds_Nova_start == this->spectra_util_Nova_Bounds_Nova_start && bounds->spectra_util_Nova_Bounds_Nova_end == this->spectra_util_Nova_Bounds_Nova_end;
 }
 
 nova_Nova_String* spectra_util_Nova_Bounds_Nova_toString(spectra_util_Nova_Bounds* this, nova_exception_Nova_ExceptionData* exceptionData)

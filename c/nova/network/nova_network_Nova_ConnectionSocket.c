@@ -84,6 +84,8 @@ nova_network_ConnectionSocket_Extension_VTable nova_network_ConnectionSocket_Ext
 		0,
 		0,
 		0,
+		0,
+		0,
 	},
 	nova_Nova_Object_Nova_toString,
 	nova_Nova_Object_Accessor_Nova_hashCodeLong,
@@ -154,12 +156,12 @@ char nova_network_Nova_ConnectionSocket_Nova_validateConnection(nova_network_Nov
 {
 	if (this->nova_network_Nova_ConnectionSocket_Nova_connected)
 	{
-		nova_Nova_String* l1_Nova_message = (nova_Nova_String*)nova_null;
+		nova_Nova_String* l2_Nova_message = (nova_Nova_String*)nova_null;
 		
-		l1_Nova_message = nova_network_Nova_ConnectionSocket_1_Nova_readString(this, exceptionData, 0);
+		l2_Nova_message = nova_network_Nova_ConnectionSocket_1_Nova_readString(this, exceptionData, 0);
 		if (this->nova_network_Nova_ConnectionSocket_Nova_connected)
 		{
-			nova_datastruct_list_Nova_Queue_Nova_enqueue((nova_datastruct_list_Nova_Queue*)(this->prv->nova_network_Nova_ConnectionSocket_Nova_inputBuffer), exceptionData, (nova_Nova_Object*)(l1_Nova_message));
+			nova_datastruct_list_Nova_Queue_Nova_enqueue((nova_datastruct_list_Nova_Queue*)(this->prv->nova_network_Nova_ConnectionSocket_Nova_inputBuffer), exceptionData, (nova_Nova_Object*)(l2_Nova_message));
 			return 1;
 		}
 	}
@@ -175,15 +177,15 @@ nova_Nova_String* nova_network_Nova_ConnectionSocket_1_Nova_readString(nova_netw
 {
 	if (!checkBuffer || nova_datastruct_list_Nova_Queue_Accessor_Nova_empty((nova_datastruct_list_Nova_Queue*)(this->prv->nova_network_Nova_ConnectionSocket_Nova_inputBuffer), exceptionData))
 	{
-		char* l1_Nova_data = (char*)nova_null;
+		char* l2_Nova_data = (char*)nova_null;
 		
-		l1_Nova_data = (char*)(nova_socket_receive(this->prv->nova_network_Nova_ConnectionSocket_Nova_socket));
-		if ((nova_primitive_number_Nova_Byte*)l1_Nova_data == (nova_primitive_number_Nova_Byte*)0)
+		l2_Nova_data = (char*)(nova_socket_receive(this->prv->nova_network_Nova_ConnectionSocket_Nova_socket));
+		if ((nova_primitive_number_Nova_Byte*)l2_Nova_data == (nova_primitive_number_Nova_Byte*)0)
 		{
 			this->nova_network_Nova_ConnectionSocket_Nova_connected = 0;
 			return (nova_Nova_String*)(nova_Nova_Object*)nova_null;
 		}
-		return nova_Nova_String_1_Nova_construct(0, exceptionData, l1_Nova_data);
+		return nova_Nova_String_1_Nova_construct(0, exceptionData, l2_Nova_data);
 	}
 	return (nova_Nova_String*)nova_datastruct_list_Nova_Queue_Nova_dequeue((nova_datastruct_list_Nova_Queue*)(this->prv->nova_network_Nova_ConnectionSocket_Nova_inputBuffer), exceptionData);
 }

@@ -81,6 +81,8 @@ nova_datastruct_BinaryNode_Extension_VTable nova_datastruct_BinaryNode_Extension
 		0,
 		0,
 		0,
+		0,
+		0,
 	},
 	nova_datastruct_Nova_Node_Nova_toString,
 	nova_Nova_Object_Accessor_Nova_hashCodeLong,
@@ -173,7 +175,7 @@ void nova_datastruct_Nova_BinaryNode_Nova_addChild(nova_datastruct_Nova_BinaryNo
 {
 	if (nova_datastruct_Nova_Comparable_virtual0_Nova_compareTo((nova_datastruct_Nova_Comparable*)(this->nova_datastruct_Nova_Node_Nova_data), exceptionData, (nova_Nova_Object*)(data)) >= 0)
 	{
-		if (nova_datastruct_Nova_BinaryNode_Accessor_Nova_left(this, exceptionData) != (nova_datastruct_Nova_BinaryNode*)nova_null)
+		if ((nova_datastruct_Nova_BinaryNode_Accessor_Nova_left(this, exceptionData)) != (nova_datastruct_Nova_BinaryNode*)nova_null)
 		{
 			nova_datastruct_Nova_BinaryNode_Nova_addChild(nova_datastruct_Nova_BinaryNode_Accessor_Nova_left(this, exceptionData), exceptionData, data);
 		}
@@ -184,7 +186,7 @@ void nova_datastruct_Nova_BinaryNode_Nova_addChild(nova_datastruct_Nova_BinaryNo
 	}
 	else
 	{
-		if (nova_datastruct_Nova_BinaryNode_Accessor_Nova_right(this, exceptionData) != (nova_datastruct_Nova_BinaryNode*)nova_null)
+		if ((nova_datastruct_Nova_BinaryNode_Accessor_Nova_right(this, exceptionData)) != (nova_datastruct_Nova_BinaryNode*)nova_null)
 		{
 			nova_datastruct_Nova_BinaryNode_Nova_addChild(nova_datastruct_Nova_BinaryNode_Accessor_Nova_right(this, exceptionData), exceptionData, data);
 		}
