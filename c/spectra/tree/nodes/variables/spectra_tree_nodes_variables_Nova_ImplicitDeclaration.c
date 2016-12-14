@@ -214,7 +214,7 @@ spectra_tree_nodes_variables_Nova_ImplicitDeclaration* spectra_tree_nodes_variab
 		nova_datastruct_list_Nova_Array* l1_Nova_values = (nova_datastruct_list_Nova_Array*)nova_null;
 		
 		l1_Nova_values = spectra_util_Nova_CompilerStringFunctions_Nova_splitValues(input, exceptionData);
-		if (nova_datastruct_list_Nova_List_virtual_Accessor1_Nova_count((nova_datastruct_list_Nova_List*)(l1_Nova_values), exceptionData) == 2)
+		if (nova_datastruct_list_Nova_Array_Accessorfunc_Nova_count((nova_datastruct_list_Nova_Array*)(l1_Nova_values), exceptionData) == 2)
 		{
 			spectra_tree_nodes_variables_Nova_ImplicitDeclaration* l2_Nova_node = (spectra_tree_nodes_variables_Nova_ImplicitDeclaration*)nova_null;
 			

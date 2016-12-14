@@ -386,7 +386,7 @@ char spectra_tree_nodes_functions_Nova_FunctionDeclaration_Nova_lambda32(spectra
 
 char spectra_tree_nodes_functions_Nova_FunctionDeclaration_Nova_lambda60(spectra_tree_nodes_functions_Nova_FunctionDeclaration* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* word, int index, nova_datastruct_list_Nova_List* words, Context2* context)
 {
-	if (index == nova_datastruct_list_Nova_List_virtual_Accessor1_Nova_count((nova_datastruct_list_Nova_List*)(((nova_datastruct_list_Nova_Array*)words)), exceptionData) - 1)
+	if (index == nova_datastruct_list_Nova_Array_Accessorfunc_Nova_count((nova_datastruct_list_Nova_Array*)(((nova_datastruct_list_Nova_Array*)words)), exceptionData) - 1)
 	{
 		return spectra_tree_nodes_functions_Nova_CallableFunction_Nova_parseName((spectra_tree_nodes_functions_Nova_CallableFunction*)(this), exceptionData, word);
 	}

@@ -222,7 +222,7 @@ char spectra_tree_nodes_exceptionhandling_Nova_Catch_Nova_parseException(spectra
 	nova_datastruct_list_Nova_Array* l1_Nova_values = (nova_datastruct_list_Nova_Array*)nova_null;
 	
 	l1_Nova_values = spectra_util_Nova_CompilerStringFunctions_Nova_splitValues(input, exceptionData);
-	switch ((nova_datastruct_list_Nova_List_virtual_Accessor1_Nova_count((nova_datastruct_list_Nova_List*)(l1_Nova_values), exceptionData)))
+	switch ((nova_datastruct_list_Nova_Array_Accessorfunc_Nova_count((nova_datastruct_list_Nova_Array*)(l1_Nova_values), exceptionData)))
 	{
 		case 2:
 		this->spectra_tree_nodes_exceptionhandling_Nova_Catch_Nova_variable = (nova_Nova_String*)(nova_datastruct_list_Nova_Array_virtual_Nova_get((nova_datastruct_list_Nova_Array*)(l1_Nova_values), exceptionData, 1));

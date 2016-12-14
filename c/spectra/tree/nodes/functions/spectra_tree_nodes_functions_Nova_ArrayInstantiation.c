@@ -255,7 +255,7 @@ char spectra_tree_nodes_functions_Nova_ArrayInstantiation_Nova_parseDimension(sp
 	l1_Nova_value = (spectra_tree_nodes_Nova_Value*)(spectra_tree_nodes_Nova_Value_0_static_Nova_parse(0, exceptionData, dimension, (spectra_tree_nodes_Nova_Node*)(this), 0, (intptr_t)nova_null));
 	if (l1_Nova_value != (spectra_tree_nodes_Nova_Value*)nova_null)
 	{
-		nova_datastruct_list_Nova_Array_virtual0_Nova_add((nova_datastruct_list_Nova_Array*)(this->spectra_tree_nodes_functions_Nova_ArrayInstantiation_Nova_dimensions), exceptionData, (nova_Nova_Object*)(l1_Nova_value));
+		nova_datastruct_list_Nova_Array_0_Nova_add((nova_datastruct_list_Nova_Array*)(this->spectra_tree_nodes_functions_Nova_ArrayInstantiation_Nova_dimensions), exceptionData, (nova_Nova_Object*)(l1_Nova_value));
 	}
 	else
 	{

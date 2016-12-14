@@ -211,7 +211,7 @@ spectra_tree_nodes_variables_Nova_VariableDeclaration* spectra_tree_nodes_variab
 	location = (spectra_util_Nova_Location*)(location == 0 ? (nova_Nova_Object*)spectra_util_Nova_Location_Nova_INVALID : (nova_Nova_Object*)location);
 	require = (int)(require == (intptr_t)nova_null ? 1 : require);
 	l1_Nova_words = spectra_util_Nova_CompilerStringFunctions_Nova_splitValues(input, exceptionData);
-	if (nova_datastruct_list_Nova_List_virtual_Accessor1_Nova_count((nova_datastruct_list_Nova_List*)(l1_Nova_words), exceptionData) == 2)
+	if (nova_datastruct_list_Nova_Array_Accessorfunc_Nova_count((nova_datastruct_list_Nova_Array*)(l1_Nova_words), exceptionData) == 2)
 	{
 		spectra_tree_nodes_variables_Nova_VariableDeclaration* l1_Nova_node = (spectra_tree_nodes_variables_Nova_VariableDeclaration*)nova_null;
 		

@@ -68,6 +68,14 @@ nova_operators_EqualsOperator_Extension_VTable nova_operators_EqualsOperator_Ext
 		0,
 		0,
 		0,
+		0,
+		0,
+		0,
+		0,
+		0,
+		0,
+		0,
+		0,
 	},
 };
 

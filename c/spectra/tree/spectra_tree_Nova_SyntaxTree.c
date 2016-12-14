@@ -170,7 +170,7 @@ void spectra_tree_Nova_SyntaxTree_Nova_this(spectra_tree_Nova_SyntaxTree* this, 
 	this->spectra_tree_Nova_SyntaxTree_Nova_compiler = compiler;
 	this->spectra_tree_Nova_SyntaxTree_Nova_root = root;
 	this->prv->spectra_tree_Nova_SyntaxTree_Nova_fileGroups = nova_datastruct_list_Nova_Array_0_Nova_construct(0, exceptionData);
-	nova_datastruct_list_Nova_Array_virtual0_Nova_add((nova_datastruct_list_Nova_Array*)(this->prv->spectra_tree_Nova_SyntaxTree_Nova_fileGroups), exceptionData, (nova_Nova_Object*)(spectra_tree_nodes_Nova_Program_Accessor_Nova_files(root, exceptionData)));
+	nova_datastruct_list_Nova_Array_0_Nova_add((nova_datastruct_list_Nova_Array*)(this->prv->spectra_tree_Nova_SyntaxTree_Nova_fileGroups), exceptionData, (nova_Nova_Object*)(spectra_tree_nodes_Nova_Program_Accessor_Nova_files(root, exceptionData)));
 	root->spectra_tree_nodes_Nova_Program_Nova_tree = this;
 }
 
@@ -213,7 +213,7 @@ spectra_tree_Nova_AnnotationSearchResult* spectra_tree_Nova_SyntaxTree_static_No
 	while (l1_Nova_annotation != (spectra_tree_nodes_annotations_Nova_Annotation*)nova_null && statement->nova_Nova_String_Nova_count > 0)
 	{
 		statement = spectra_tree_nodes_annotations_Nova_Annotation_static_Nova_getRemainingStatement(0, exceptionData, statement);
-		nova_datastruct_list_Nova_Array_virtual0_Nova_add((nova_datastruct_list_Nova_Array*)(l1_Nova_result->spectra_tree_Nova_AnnotationSearchResult_Nova_annotations), exceptionData, (nova_Nova_Object*)(l1_Nova_annotation));
+		nova_datastruct_list_Nova_Array_0_Nova_add((nova_datastruct_list_Nova_Array*)(l1_Nova_result->spectra_tree_Nova_AnnotationSearchResult_Nova_annotations), exceptionData, (nova_Nova_Object*)(l1_Nova_annotation));
 		l1_Nova_result->spectra_tree_Nova_AnnotationSearchResult_Nova_remainingStatement = statement;
 		if (statement->nova_Nova_String_Nova_count > 0)
 		{

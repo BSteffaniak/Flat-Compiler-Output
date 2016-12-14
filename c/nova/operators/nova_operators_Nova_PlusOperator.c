@@ -68,6 +68,14 @@ nova_operators_PlusOperator_Extension_VTable nova_operators_PlusOperator_Extensi
 		0,
 		0,
 		0,
+		0,
+		0,
+		0,
+		0,
+		0,
+		0,
+		0,
+		0,
 	},
 };
 

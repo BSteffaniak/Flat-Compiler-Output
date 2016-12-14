@@ -118,7 +118,7 @@ char spectra_tree_nodes_functions_Nova_CallableFunction_Nova_parseParameterAndAn
 	l1_Nova_param = (spectra_tree_nodes_functions_Nova_Parameter*)(spectra_tree_nodes_functions_Nova_CallableFunction_virtual_Nova_parseParameter((spectra_tree_nodes_functions_Nova_CallableFunction*)(this), exceptionData, l1_Nova_annotations->spectra_tree_Nova_AnnotationSearchResult_Nova_remainingStatement, require));
 	if (l1_Nova_param != (spectra_tree_nodes_functions_Nova_Parameter*)nova_null)
 	{
-		nova_datastruct_list_Nova_Array_virtual0_Nova_add((nova_datastruct_list_Nova_Array*)(spectra_tree_nodes_functions_Nova_CallableFunction_Accessor_Nova_parameters(this, exceptionData)), exceptionData, (nova_Nova_Object*)(l1_Nova_param));
+		nova_datastruct_list_Nova_Array_0_Nova_add((nova_datastruct_list_Nova_Array*)(spectra_tree_nodes_functions_Nova_CallableFunction_Accessor_Nova_parameters(this, exceptionData)), exceptionData, (nova_Nova_Object*)(l1_Nova_param));
 		spectra_tree_Nova_AnnotationSearchResult_0_Nova_addTo(l1_Nova_annotations, exceptionData, (spectra_tree_nodes_Nova_Node*)(l1_Nova_param));
 		return 1;
 	}
@@ -148,7 +148,7 @@ char spectra_tree_nodes_functions_Nova_CallableFunction_Nova_parseName(spectra_t
 	}
 	else
 	{
-		if (nova_datastruct_list_Nova_List_virtual_Accessor1_Nova_count((nova_datastruct_list_Nova_List*)(spectra_tree_nodes_generics_Nova_GenericCompatible_virtual_Accessor_Nova_genericParameters((spectra_tree_nodes_generics_Nova_GenericCompatible*)(this), exceptionData)), exceptionData) > 0)
+		if (nova_datastruct_list_Nova_Array_Accessorfunc_Nova_count((nova_datastruct_list_Nova_Array*)(spectra_tree_nodes_generics_Nova_GenericCompatible_virtual_Accessor_Nova_genericParameters((spectra_tree_nodes_generics_Nova_GenericCompatible*)(this), exceptionData)), exceptionData) > 0)
 		{
 			name = nova_Nova_String_Nova_trim(nova_Nova_String_virtual_Nova_substring((nova_Nova_String*)(name), exceptionData, (intptr_t)nova_null, nova_Nova_String_1_Nova_indexOf(name, exceptionData, '<', (intptr_t)nova_null, (intptr_t)nova_null, (intptr_t)nova_null)), exceptionData, (intptr_t)nova_null, (intptr_t)nova_null, 0);
 		}

@@ -76,6 +76,14 @@ nova_math_logic_WFF_Extension_VTable nova_math_logic_WFF_Extension_VTable_val =
 		0,
 		0,
 		0,
+		0,
+		0,
+		0,
+		0,
+		0,
+		0,
+		0,
+		0,
 	},
 	nova_Nova_Object_Nova_toString,
 	nova_Nova_Object_Accessor_Nova_hashCodeLong,
@@ -101,12 +109,12 @@ int nova_math_logic_Nova_WFF_0_static_Nova_nextWhitespaceIndex(nova_math_logic_N
 int nova_math_logic_Nova_WFF_1_static_Nova_nextWhitespaceIndex(nova_math_logic_Nova_WFF* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* wff, int index, int direction, char opposite, int defaultReturnValue);
 char nova_math_logic_Nova_WFF_static_Nova_containsChar(nova_math_logic_Nova_WFF* this, nova_exception_Nova_ExceptionData* exceptionData, char needle, nova_datastruct_list_Nova_CharArray* chars);
 int nova_math_logic_Nova_WFF_static_Nova_findEndingMatch(nova_math_logic_Nova_WFF* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* wff, char start, char end, int index, int direction, int defaultReturnValue);
-nova_datastruct_list_Nova_CharArray* generated9(nova_math_logic_Nova_WFF* this, nova_exception_Nova_ExceptionData* exceptionData);
+nova_datastruct_list_Nova_CharArray* generated14(nova_math_logic_Nova_WFF* this, nova_exception_Nova_ExceptionData* exceptionData);
 nova_datastruct_list_Nova_CharArray* nova_math_logic_Nova_WFF_Nova_whitespace;
 void nova_math_logic_Nova_WFF_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData)
 {
 	{
-		nova_math_logic_Nova_WFF_Nova_whitespace = generated9(0, exceptionData);
+		nova_math_logic_Nova_WFF_Nova_whitespace = generated14(0, exceptionData);
 	}
 }
 
@@ -324,7 +332,7 @@ int nova_math_logic_Nova_WFF_static_Nova_findEndingMatch(nova_math_logic_Nova_WF
 	return defaultReturnValue;
 }
 
-nova_datastruct_list_Nova_CharArray* generated9(nova_math_logic_Nova_WFF* this, nova_exception_Nova_ExceptionData* exceptionData)
+nova_datastruct_list_Nova_CharArray* generated14(nova_math_logic_Nova_WFF* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
 	char* l1_Nova_temp = (char*)nova_null;
 	
