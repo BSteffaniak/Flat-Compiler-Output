@@ -930,6 +930,10 @@ nova_env novaEnv = {
 },
 
 {
+&spectra_tree_nodes_Nova_Cast_Nova_construct,
+},
+
+{
 &spectra_tree_nodes_Nova_ClassDeclaration_Nova_findCompatibleFunctions,
 &spectra_tree_nodes_Nova_ClassDeclaration_0_Nova_findVariableDeclaration,
 &spectra_tree_nodes_Nova_ClassDeclaration_Nova_writeHeader,

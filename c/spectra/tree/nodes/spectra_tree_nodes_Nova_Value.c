@@ -43,6 +43,7 @@
 #include <spectra/tree/nodes/functions/spectra_tree_nodes_functions_Nova_ArrayInstantiation.h>
 #include <spectra/tree/nodes/functions/spectra_tree_nodes_functions_Nova_Instantiation.h>
 #include <spectra/tree/nodes/spectra_tree_nodes_Nova_Accessible.h>
+#include <spectra/tree/nodes/spectra_tree_nodes_Nova_Cast.h>
 #include <spectra/tree/nodes/spectra_tree_nodes_Nova_ClassDeclaration.h>
 #include <spectra/tree/nodes/spectra_tree_nodes_Nova_Identifier.h>
 #include <spectra/tree/nodes/spectra_tree_nodes_Nova_Import.h>
@@ -248,46 +249,50 @@ spectra_tree_nodes_Nova_Value* spectra_tree_nodes_Nova_Value_static_Nova_parseVa
 		l1_Nova_node = (nova_Nova_Object*)(spectra_tree_nodes_variables_Nova_Variable_static_Nova_findVariable(0, exceptionData, input, parent, location));
 		if (!(nova_Nova_Class_Nova_isOfType(l1_Nova_node->vtable->classInstance, exceptionData, (nova_Nova_Class*)(spectra_tree_nodes_Value_Extension_VTable_val.classInstance))))
 		{
-			l1_Nova_node = (nova_Nova_Object*)(spectra_tree_nodes_Nova_Priority_static_Nova_parse(0, exceptionData, input, parent, location, require));
+			l1_Nova_node = (nova_Nova_Object*)(spectra_tree_nodes_Nova_Cast_static_Nova_parse(0, exceptionData, input, parent, location, require));
 			if (!(nova_Nova_Class_Nova_isOfType(l1_Nova_node->vtable->classInstance, exceptionData, (nova_Nova_Class*)(spectra_tree_nodes_Value_Extension_VTable_val.classInstance))))
 			{
-				l1_Nova_node = (nova_Nova_Object*)(spectra_tree_nodes_Nova_Accessible_static_Nova_parseDotAccess(0, exceptionData, input, parent, require));
+				l1_Nova_node = (nova_Nova_Object*)(spectra_tree_nodes_Nova_Priority_static_Nova_parse(0, exceptionData, input, parent, location, require));
 				if (!(nova_Nova_Class_Nova_isOfType(l1_Nova_node->vtable->classInstance, exceptionData, (nova_Nova_Class*)(spectra_tree_nodes_Value_Extension_VTable_val.classInstance))))
 				{
-					l1_Nova_node = (nova_Nova_Object*)(spectra_tree_nodes_Nova_Literal_static_Nova_parse(0, exceptionData, input, parent, location, require));
+					l1_Nova_node = (nova_Nova_Object*)(spectra_tree_nodes_Nova_Accessible_static_Nova_parseDotAccess(0, exceptionData, input, parent, require));
 					if (!(nova_Nova_Class_Nova_isOfType(l1_Nova_node->vtable->classInstance, exceptionData, (nova_Nova_Class*)(spectra_tree_nodes_Value_Extension_VTable_val.classInstance))))
 					{
-						l1_Nova_node = (nova_Nova_Object*)(spectra_tree_nodes_Nova_StaticClassReference_static_Nova_parse(0, exceptionData, input, parent, location, require));
+						l1_Nova_node = (nova_Nova_Object*)(spectra_tree_nodes_Nova_Literal_static_Nova_parse(0, exceptionData, input, parent, location, require));
 						if (!(nova_Nova_Class_Nova_isOfType(l1_Nova_node->vtable->classInstance, exceptionData, (nova_Nova_Class*)(spectra_tree_nodes_Value_Extension_VTable_val.classInstance))))
 						{
-							l1_Nova_node = (nova_Nova_Object*)(spectra_tree_nodes_Nova_NumericRange_static_Nova_parse(0, exceptionData, input, parent, location, require));
+							l1_Nova_node = (nova_Nova_Object*)(spectra_tree_nodes_Nova_StaticClassReference_static_Nova_parse(0, exceptionData, input, parent, location, require));
 							if (!(nova_Nova_Class_Nova_isOfType(l1_Nova_node->vtable->classInstance, exceptionData, (nova_Nova_Class*)(spectra_tree_nodes_Value_Extension_VTable_val.classInstance))))
 							{
-								l1_Nova_node = (nova_Nova_Object*)(spectra_tree_nodes_functions_Nova_ArrayInstantiation_static_Nova_parse(0, exceptionData, input, parent, location, require));
+								l1_Nova_node = (nova_Nova_Object*)(spectra_tree_nodes_Nova_NumericRange_static_Nova_parse(0, exceptionData, input, parent, location, require));
 								if (!(nova_Nova_Class_Nova_isOfType(l1_Nova_node->vtable->classInstance, exceptionData, (nova_Nova_Class*)(spectra_tree_nodes_Value_Extension_VTable_val.classInstance))))
 								{
-									l1_Nova_node = (nova_Nova_Object*)(spectra_tree_nodes_functions_Nova_Instantiation_static_Nova_parse(0, exceptionData, input, parent, location, require));
+									l1_Nova_node = (nova_Nova_Object*)(spectra_tree_nodes_functions_Nova_ArrayInstantiation_static_Nova_parse(0, exceptionData, input, parent, location, require));
 									if (!(nova_Nova_Class_Nova_isOfType(l1_Nova_node->vtable->classInstance, exceptionData, (nova_Nova_Class*)(spectra_tree_nodes_Value_Extension_VTable_val.classInstance))))
 									{
-										l1_Nova_node = (nova_Nova_Object*)(spectra_tree_nodes_functions_Nova_FunctionCall_static_Nova_parse(0, exceptionData, input, parent, location, require));
+										l1_Nova_node = (nova_Nova_Object*)(spectra_tree_nodes_functions_Nova_Instantiation_static_Nova_parse(0, exceptionData, input, parent, location, require));
 										if (!(nova_Nova_Class_Nova_isOfType(l1_Nova_node->vtable->classInstance, exceptionData, (nova_Nova_Class*)(spectra_tree_nodes_Value_Extension_VTable_val.classInstance))))
 										{
-											l1_Nova_node = (nova_Nova_Object*)(spectra_tree_nodes_operations_Nova_ElvisOperation_static_Nova_parse(0, exceptionData, input, parent, location, require));
+											l1_Nova_node = (nova_Nova_Object*)(spectra_tree_nodes_functions_Nova_FunctionCall_static_Nova_parse(0, exceptionData, input, parent, location, require));
 											if (!(nova_Nova_Class_Nova_isOfType(l1_Nova_node->vtable->classInstance, exceptionData, (nova_Nova_Class*)(spectra_tree_nodes_Value_Extension_VTable_val.classInstance))))
 											{
-												l1_Nova_node = (nova_Nova_Object*)(spectra_tree_nodes_operations_Nova_TernaryOperation_static_Nova_parse(0, exceptionData, input, parent, location, require));
+												l1_Nova_node = (nova_Nova_Object*)(spectra_tree_nodes_operations_Nova_ElvisOperation_static_Nova_parse(0, exceptionData, input, parent, location, require));
 												if (!(nova_Nova_Class_Nova_isOfType(l1_Nova_node->vtable->classInstance, exceptionData, (nova_Nova_Class*)(spectra_tree_nodes_Value_Extension_VTable_val.classInstance))))
 												{
-													l1_Nova_node = (nova_Nova_Object*)(spectra_tree_nodes_operations_Nova_UnaryOperation_static_Nova_parse(0, exceptionData, input, parent, location, require));
+													l1_Nova_node = (nova_Nova_Object*)(spectra_tree_nodes_operations_Nova_TernaryOperation_static_Nova_parse(0, exceptionData, input, parent, location, require));
 													if (!(nova_Nova_Class_Nova_isOfType(l1_Nova_node->vtable->classInstance, exceptionData, (nova_Nova_Class*)(spectra_tree_nodes_Value_Extension_VTable_val.classInstance))))
 													{
-														l1_Nova_node = (nova_Nova_Object*)(spectra_tree_nodes_operations_Nova_Operation_static_Nova_parse(0, exceptionData, input, parent, location, require));
+														l1_Nova_node = (nova_Nova_Object*)(spectra_tree_nodes_operations_Nova_UnaryOperation_static_Nova_parse(0, exceptionData, input, parent, location, require));
 														if (!(nova_Nova_Class_Nova_isOfType(l1_Nova_node->vtable->classInstance, exceptionData, (nova_Nova_Class*)(spectra_tree_nodes_Value_Extension_VTable_val.classInstance))))
 														{
-															THROW(spectra_Nova_InvalidParseException_Nova_construct(0, exceptionData, (nova_Nova_String*)(nova_Nova_String_Nova_plus(nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("Could not parse value '")), exceptionData, (nova_Nova_String*)(nova_Nova_String_Nova_plus((input), exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("'")))))), 0), 1);
+															l1_Nova_node = (nova_Nova_Object*)(spectra_tree_nodes_operations_Nova_Operation_static_Nova_parse(0, exceptionData, input, parent, location, require));
 															if (!(nova_Nova_Class_Nova_isOfType(l1_Nova_node->vtable->classInstance, exceptionData, (nova_Nova_Class*)(spectra_tree_nodes_Value_Extension_VTable_val.classInstance))))
 															{
-																return (spectra_tree_nodes_Nova_Value*)(nova_Nova_Object*)nova_null;
+																THROW(spectra_Nova_InvalidParseException_Nova_construct(0, exceptionData, (nova_Nova_String*)(nova_Nova_String_Nova_plus(nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("Could not parse value '")), exceptionData, (nova_Nova_String*)(nova_Nova_String_Nova_plus((input), exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("'")))))), 0), 1);
+																if (!(nova_Nova_Class_Nova_isOfType(l1_Nova_node->vtable->classInstance, exceptionData, (nova_Nova_Class*)(spectra_tree_nodes_Value_Extension_VTable_val.classInstance))))
+																{
+																	return (spectra_tree_nodes_Nova_Value*)(nova_Nova_Object*)nova_null;
+																}
 															}
 														}
 													}

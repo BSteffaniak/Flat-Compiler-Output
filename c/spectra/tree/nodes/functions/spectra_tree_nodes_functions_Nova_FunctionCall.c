@@ -54,6 +54,7 @@
 #include <spectra/tree/nodes/functions/spectra_tree_nodes_functions_Nova_FunctionCall.h>
 #include <spectra/tree/nodes/functions/spectra_tree_nodes_functions_Nova_ArrayInstantiation.h>
 #include <spectra/tree/nodes/functions/spectra_tree_nodes_functions_Nova_Instantiation.h>
+#include <spectra/tree/nodes/spectra_tree_nodes_Nova_Cast.h>
 #include <spectra/tree/nodes/spectra_tree_nodes_Nova_Import.h>
 #include <spectra/tree/nodes/spectra_tree_nodes_Nova_Literal.h>
 #include <spectra/tree/nodes/spectra_tree_nodes_Nova_NovaFile.h>

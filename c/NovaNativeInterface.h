@@ -166,6 +166,7 @@
 #include <spectra/tree/nodes/spectra_tree_nodes_Nova_Abstractable.h>
 #include <spectra/tree/nodes/spectra_tree_nodes_Nova_Accessible.h>
 #include <spectra/tree/nodes/spectra_tree_nodes_Nova_ArgumentList.h>
+#include <spectra/tree/nodes/spectra_tree_nodes_Nova_Cast.h>
 #include <spectra/tree/nodes/spectra_tree_nodes_Nova_ClassDeclaration.h>
 #include <spectra/tree/nodes/spectra_tree_nodes_Nova_Identifier.h>
 #include <spectra/tree/nodes/spectra_tree_nodes_Nova_Import.h>
@@ -2054,6 +2055,13 @@ typedef struct spectra_tree_nodes_native_ArgumentList
 spectra_tree_nodes_Nova_ArgumentList_native_Nova_construct ArgumentList;
 } spectra_tree_nodes_native_ArgumentList;
 
+typedef spectra_tree_nodes_Nova_Cast* (*spectra_tree_nodes_Nova_Cast_native_Nova_construct)(spectra_tree_nodes_Nova_Cast*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*);
+
+typedef struct spectra_tree_nodes_native_Cast
+{
+spectra_tree_nodes_Nova_Cast_native_Nova_construct Cast;
+} spectra_tree_nodes_native_Cast;
+
 typedef nova_datastruct_list_Nova_Array* (*spectra_tree_nodes_Nova_ClassDeclaration_native_Nova_findCompatibleFunctions)(spectra_tree_nodes_Nova_ClassDeclaration*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, nova_datastruct_list_Nova_Array*);
 typedef spectra_tree_nodes_variables_Nova_VariableDeclaration* (*spectra_tree_nodes_Nova_ClassDeclaration_native0_Nova_findVariableDeclaration)(spectra_tree_nodes_Nova_ClassDeclaration*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, int, int);
 typedef nova_Nova_String* (*spectra_tree_nodes_Nova_ClassDeclaration_native_Nova_writeHeader)(spectra_tree_nodes_Nova_ClassDeclaration*, nova_exception_Nova_ExceptionData*);
@@ -3250,6 +3258,7 @@ spectra_tree_native_SyntaxTree spectra_tree_SyntaxTree;
 spectra_tree_nodes_native_Abstractable spectra_tree_nodes_Abstractable;
 spectra_tree_nodes_native_Accessible spectra_tree_nodes_Accessible;
 spectra_tree_nodes_native_ArgumentList spectra_tree_nodes_ArgumentList;
+spectra_tree_nodes_native_Cast spectra_tree_nodes_Cast;
 spectra_tree_nodes_native_ClassDeclaration spectra_tree_nodes_ClassDeclaration;
 spectra_tree_nodes_native_Identifier spectra_tree_nodes_Identifier;
 spectra_tree_nodes_native_Import spectra_tree_nodes_Import;

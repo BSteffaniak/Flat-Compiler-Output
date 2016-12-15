@@ -209,6 +209,7 @@ extern spectra_tree_nodes_operations_vtable_Assignable spectra_tree_nodes_operat
 #include <spectra/tree/nodes/spectra_tree_nodes_Nova_Abstractable.h>
 #include <spectra/tree/nodes/spectra_tree_nodes_Nova_Accessible.h>
 #include <spectra/tree/nodes/spectra_tree_nodes_Nova_ArgumentList.h>
+#include <spectra/tree/nodes/spectra_tree_nodes_Nova_Cast.h>
 #include <spectra/tree/nodes/spectra_tree_nodes_Nova_ClassDeclaration.h>
 #include <spectra/tree/nodes/spectra_tree_nodes_Nova_Identifier.h>
 #include <spectra/tree/nodes/spectra_tree_nodes_Nova_Import.h>
@@ -456,12 +457,13 @@ void (*nova_web_svg_Nova_SvgComponent_virtual_Nova_generateOutput)(nova_web_svg_
 nova_Nova_String* (*nova_web_svg_no3_Nova_No3Node_virtual_Nova_toJs)(nova_web_svg_no3_Nova_No3Node*, nova_exception_Nova_ExceptionData*);
 void (*spectra_engines_Nova_CodeGeneratorEngine_virtual_Nova_writeFiles)(spectra_engines_Nova_CodeGeneratorEngine*, nova_exception_Nova_ExceptionData*);
 void (*spectra_engines_Nova_CodeGeneratorEngine_virtual_Nova_insertMainMethod)(spectra_engines_Nova_CodeGeneratorEngine*, nova_exception_Nova_ExceptionData*);
+spectra_tree_nodes_Nova_Value* (*spectra_tree_nodes_Nova_Value_virtual0_static_Nova_parse)(spectra_tree_nodes_Nova_Value*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*, int);
+nova_Nova_String* (*spectra_tree_nodes_Nova_Node_virtual_Nova_writeNova)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*);
 void (*spectra_tree_nodes_Nova_Node_virtual_Nova_addChild)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
 char (*spectra_tree_nodes_Nova_Node_virtual_Nova_replace)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
 spectra_tree_nodes_variables_Nova_VariableDeclaration* (*spectra_tree_nodes_Nova_Node_virtual_Nova_findVariableDeclaration)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, int);
 spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_Node_virtual_Nova_parseStatement)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*, int);
 spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_Node_virtual_Nova_generateTemporaryScopeNode)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*);
-spectra_tree_nodes_Nova_Value* (*spectra_tree_nodes_Nova_Value_virtual0_static_Nova_parse)(spectra_tree_nodes_Nova_Value*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*, int);
 char (*spectra_tree_nodes_variables_Nova_VariableDeclaration_virtual_Nova_parseModifier)(spectra_tree_nodes_variables_Nova_VariableDeclaration*, nova_exception_Nova_ExceptionData*, nova_Nova_String*);
 char (*spectra_tree_nodes_Nova_Node_virtual_Nova_validateTypes)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*);
 char (*spectra_tree_nodes_Nova_Node_virtual_Nova_parsePlaceholders)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*);
@@ -471,7 +473,6 @@ spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_Node_virtual_Nova_cloneT
 spectra_tree_nodes_Nova_ClassDeclaration* (*spectra_tree_nodes_Nova_Node_virtual_Accessor_Nova_parentClass)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*);
 char (*spectra_tree_nodes_variables_Nova_InstanceDeclaration_virtual_Accessor_Nova_isPrivate)(spectra_tree_nodes_variables_Nova_InstanceDeclaration*, nova_exception_Nova_ExceptionData*);
 char (*spectra_tree_nodes_variables_Nova_InstanceDeclaration_virtual_Accessor_Nova_isPublic)(spectra_tree_nodes_variables_Nova_InstanceDeclaration*, nova_exception_Nova_ExceptionData*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_Node_virtual_Nova_writeNova)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*);
 char (*spectra_tree_nodes_Nova_Node_virtual_Nova_parsePlaceholderChildren)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_NodeList*);
 nova_Nova_String* (*spectra_tree_nodes_Nova_Node_virtual_Nova_writeAnnotationSeparator)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*);
 spectra_tree_nodes_Nova_Scope* (*spectra_tree_nodes_Nova_Node_virtual_Accessor_Nova_scope)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*);
