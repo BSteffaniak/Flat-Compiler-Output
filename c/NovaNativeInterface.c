@@ -658,6 +658,9 @@ nova_env novaEnv = {
 },
 
 {
+},
+
+{
 0,
 },
 
@@ -665,6 +668,7 @@ nova_env novaEnv = {
 },
 
 {
+0,
 },
 
 {

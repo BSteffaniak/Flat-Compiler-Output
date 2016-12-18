@@ -30,6 +30,8 @@
 #include <nova/nova_Nova_Class.h>
 #include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <nova/datastruct/nova_datastruct_Nova_Comparable.h>
+#include <nova/operators/nova_operators_Nova_PlusOperator.h>
+#include <nova/operators/nova_operators_Nova_PlusEqualsOperator.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_ArrayIterator.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_List.h>
 #include <nova/NativeObject.h>
@@ -87,7 +89,8 @@ nova_datastruct_list_Array_Extension_VTable nova_datastruct_list_Array_Extension
 		0,
 		0,
 		0,
-		0,
+		(nova_Nova_Object*(*)(nova_operators_Nova_PlusEqualsOperator*, nova_exception_Nova_ExceptionData*, nova_Nova_Object*))nova_datastruct_list_Nova_Array_Nova_plusEquals,
+		(nova_Nova_Object*(*)(nova_operators_Nova_PlusOperator*, nova_exception_Nova_ExceptionData*, nova_Nova_Object*))nova_datastruct_list_Nova_Array_0_Nova_plus,
 		0,
 		0,
 	},
@@ -205,6 +208,16 @@ nova_datastruct_list_Nova_Array* nova_datastruct_list_Nova_Array_Nova_fillRemain
 		nova_datastruct_list_Nova_Array_0_Nova_add(this, exceptionData, value);
 	}
 	return (nova_datastruct_list_Nova_Array*)this;
+}
+
+nova_datastruct_list_Nova_Array* nova_datastruct_list_Nova_Array_0_Nova_plus(nova_datastruct_list_Nova_Array* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_list_Nova_Array* other)
+{
+	return (nova_datastruct_list_Nova_Array*)nova_datastruct_list_Nova_Array_Nova_plusEquals(nova_datastruct_list_Nova_Array_virtual_Nova_clone((nova_datastruct_list_Nova_Array*)(this), exceptionData), exceptionData, other);
+}
+
+nova_datastruct_list_Nova_Array* nova_datastruct_list_Nova_Array_Nova_plusEquals(nova_datastruct_list_Nova_Array* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_list_Nova_Array* other)
+{
+	return (nova_datastruct_list_Nova_Array*)nova_datastruct_list_Nova_Array_Nova_addAll(this, exceptionData, other);
 }
 
 nova_datastruct_list_Nova_Array* nova_datastruct_list_Nova_Array_Nova_addAll(nova_datastruct_list_Nova_Array* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_list_Nova_Array* data)

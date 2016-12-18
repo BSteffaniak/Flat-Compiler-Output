@@ -70,6 +70,7 @@ example_NonWholeDivisionException_Extension_VTable example_NonWholeDivisionExcep
 		0,
 		0,
 		0,
+		0,
 	},
 	nova_exception_Nova_Exception_Nova_toString,
 	nova_Nova_Object_Accessor_Nova_hashCodeLong,

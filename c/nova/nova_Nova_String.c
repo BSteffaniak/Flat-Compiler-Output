@@ -33,6 +33,7 @@
 #include <nova/datastruct/list/nova_datastruct_list_Nova_StringCharArray.h>
 #include <nova/operators/nova_operators_Nova_PlusOperator.h>
 #include <nova/operators/nova_operators_Nova_EqualsOperator.h>
+#include <nova/operators/nova_operators_Nova_MultiplyOperator.h>
 #include <nova/regex/nova_regex_Nova_Regex.h>
 #include <nova/regex/nova_regex_Nova_Match.h>
 #include <nova/nova_Nova_Substring.h>
@@ -85,6 +86,7 @@ nova_String_Extension_VTable nova_String_Extension_VTable_val =
 		0,
 		(char(*)(nova_operators_Nova_EqualsOperator*, nova_exception_Nova_ExceptionData*, nova_Nova_Object*))nova_Nova_String_Nova_equals,
 		0,
+		(nova_Nova_Object*(*)(nova_operators_Nova_MultiplyOperator*, nova_exception_Nova_ExceptionData*, nova_Nova_Object*))nova_Nova_String_Nova_multiply,
 		0,
 		0,
 		(nova_Nova_Object*(*)(nova_operators_Nova_PlusOperator*, nova_exception_Nova_ExceptionData*, nova_Nova_Object*))nova_Nova_String_Nova_plus,
@@ -258,6 +260,11 @@ nova_Nova_String* nova_Nova_String_Nova_concat(nova_Nova_String* this, nova_exce
 nova_Nova_String* nova_Nova_String_Nova_plus(nova_Nova_String* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* another)
 {
 	return nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)(this), exceptionData, another);
+}
+
+nova_Nova_String* nova_Nova_String_Nova_multiply(nova_Nova_String* this, nova_exception_Nova_ExceptionData* exceptionData, int times)
+{
+	return nova_Nova_String_Nova_repeat(this, exceptionData, times);
 }
 
 nova_Nova_String* nova_Nova_String_Nova_repeat(nova_Nova_String* this, nova_exception_Nova_ExceptionData* exceptionData, int times)

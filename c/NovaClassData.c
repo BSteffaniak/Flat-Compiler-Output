@@ -6,6 +6,7 @@ nova_datastruct_list_vtable_Iterator nova_datastruct_list_vtable_Iterator_value_
 nova_datastruct_list_vtable_List nova_datastruct_list_vtable_List_value_default = {0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0};
 nova_io_vtable_InputStream nova_io_vtable_InputStream_value_default = {0};
 nova_operators_vtable_EqualsOperator nova_operators_vtable_EqualsOperator_value_default = {0};
+nova_operators_vtable_MultiplyEqualsOperator nova_operators_vtable_MultiplyEqualsOperator_value_default = {0};
 nova_operators_vtable_MultiplyOperator nova_operators_vtable_MultiplyOperator_value_default = {0};
 nova_operators_vtable_NotEqualToOperator nova_operators_vtable_NotEqualToOperator_value_default = {0};
 nova_operators_vtable_PlusEqualsOperator nova_operators_vtable_PlusEqualsOperator_value_default = {0};

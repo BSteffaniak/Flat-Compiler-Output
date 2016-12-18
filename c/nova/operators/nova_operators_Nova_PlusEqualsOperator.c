@@ -68,6 +68,7 @@ nova_operators_PlusEqualsOperator_Extension_VTable nova_operators_PlusEqualsOper
 		0,
 		0,
 		0,
+		0,
 	},
 };
 
@@ -79,8 +80,8 @@ void nova_operators_Nova_PlusEqualsOperator_Nova_init_static(nova_exception_Nova
 }
 
 
-nova_Nova_Object* nova_operators_Nova_PlusEqualsOperator_virtual_Nova_plusEquals(nova_operators_Nova_PlusEqualsOperator* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_Object* another)
+nova_Nova_Object* nova_operators_Nova_PlusEqualsOperator_virtual0_Nova_plusEquals(nova_operators_Nova_PlusEqualsOperator* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_Object* another)
 {
-	return this->vtable->itable.nova_operators_Nova_PlusEqualsOperator_virtual_Nova_plusEquals(this, exceptionData, another);
+	return this->vtable->itable.nova_operators_Nova_PlusEqualsOperator_virtual0_Nova_plusEquals((nova_operators_Nova_PlusEqualsOperator*)(this), exceptionData, another);
 }
 

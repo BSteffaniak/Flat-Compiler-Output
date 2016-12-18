@@ -68,6 +68,7 @@ nova_primitive_number_Char_Extension_VTable nova_primitive_number_Char_Extension
 		0,
 		0,
 		(char(*)(nova_operators_Nova_EqualsOperator*, nova_exception_Nova_ExceptionData*, nova_Nova_Object*))nova_Nova_Object_Nova_equals,
+		0,
 		(nova_Nova_Object*(*)(nova_operators_Nova_MultiplyOperator*, nova_exception_Nova_ExceptionData*, nova_Nova_Object*))nova_primitive_number_Nova_Char_Nova_multiply,
 		0,
 		0,

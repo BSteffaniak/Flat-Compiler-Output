@@ -72,6 +72,7 @@ nova_datastruct_list_ImmutableArray_Extension_VTable nova_datastruct_list_Immuta
 		0,
 		0,
 		0,
+		0,
 	},
 	nova_datastruct_list_Nova_ImmutableArray_Nova_toString,
 };

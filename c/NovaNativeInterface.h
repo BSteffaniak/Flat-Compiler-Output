@@ -109,6 +109,7 @@
 #include <nova/network/nova_network_Nova_ServerSocket.h>
 #include <nova/network/nova_network_Nova_Socket.h>
 #include <nova/operators/nova_operators_Nova_EqualsOperator.h>
+#include <nova/operators/nova_operators_Nova_MultiplyEqualsOperator.h>
 #include <nova/operators/nova_operators_Nova_MultiplyOperator.h>
 #include <nova/operators/nova_operators_Nova_NotEqualToOperator.h>
 #include <nova/operators/nova_operators_Nova_PlusEqualsOperator.h>
@@ -1448,6 +1449,12 @@ typedef struct nova_operators_native_EqualsOperator
 nova_operators_Nova_EqualsOperator_native0_Nova_equals equals__nova_Object;
 } nova_operators_native_EqualsOperator;
 
+typedef nova_Nova_Object* (*nova_operators_Nova_MultiplyEqualsOperator_native_Nova_multiplyEquals)(nova_operators_Nova_MultiplyEqualsOperator*, nova_exception_Nova_ExceptionData*, nova_Nova_Object*);
+
+typedef struct nova_operators_native_MultiplyEqualsOperator
+{
+} nova_operators_native_MultiplyEqualsOperator;
+
 typedef nova_Nova_Object* (*nova_operators_Nova_MultiplyOperator_native0_Nova_multiply)(nova_operators_Nova_MultiplyOperator*, nova_exception_Nova_ExceptionData*, nova_Nova_Object*);
 
 typedef struct nova_operators_native_MultiplyOperator
@@ -1461,10 +1468,11 @@ typedef struct nova_operators_native_NotEqualToOperator
 {
 } nova_operators_native_NotEqualToOperator;
 
-typedef nova_Nova_Object* (*nova_operators_Nova_PlusEqualsOperator_native_Nova_plusEquals)(nova_operators_Nova_PlusEqualsOperator*, nova_exception_Nova_ExceptionData*, nova_Nova_Object*);
+typedef nova_Nova_Object* (*nova_operators_Nova_PlusEqualsOperator_native0_Nova_plusEquals)(nova_operators_Nova_PlusEqualsOperator*, nova_exception_Nova_ExceptionData*, nova_Nova_Object*);
 
 typedef struct nova_operators_native_PlusEqualsOperator
 {
+nova_operators_Nova_PlusEqualsOperator_native0_Nova_plusEquals plusEquals__nova_Object;
 } nova_operators_native_PlusEqualsOperator;
 
 typedef nova_Nova_Object* (*nova_operators_Nova_PlusOperator_native0_Nova_plus)(nova_operators_Nova_PlusOperator*, nova_exception_Nova_ExceptionData*, nova_Nova_Object*);
@@ -2231,6 +2239,7 @@ nova_network_native_NetworkOutputStream nova_network_NetworkOutputStream;
 nova_network_native_ServerSocket nova_network_ServerSocket;
 nova_network_native_Socket nova_network_Socket;
 nova_operators_native_EqualsOperator nova_operators_EqualsOperator;
+nova_operators_native_MultiplyEqualsOperator nova_operators_MultiplyEqualsOperator;
 nova_operators_native_MultiplyOperator nova_operators_MultiplyOperator;
 nova_operators_native_NotEqualToOperator nova_operators_NotEqualToOperator;
 nova_operators_native_PlusEqualsOperator nova_operators_PlusEqualsOperator;

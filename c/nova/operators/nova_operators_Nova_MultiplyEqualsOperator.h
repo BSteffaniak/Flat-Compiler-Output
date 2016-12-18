@@ -1,4 +1,14 @@
-#include <precompiled.h>
+#pragma once
+#ifndef FILE_nova_operators_Nova_MultiplyEqualsOperator_NOVA
+#define FILE_nova_operators_Nova_MultiplyEqualsOperator_NOVA
+
+typedef struct nova_operators_Nova_MultiplyEqualsOperator nova_operators_Nova_MultiplyEqualsOperator;
+
+
+#include <Nova.h>
+#include <InterfaceVTable.h>
+#include <ExceptionHandler.h>
+#include <NovaClassData.h>
 #include <nova/exception/nova_exception_Nova_ExceptionData.h>
 #include <nova/exception/nova_exception_Nova_Exception.h>
 #include <nova/exception/nova_exception_Nova_DivideByZeroException.h>
@@ -29,90 +39,26 @@
 #include <nova/nova_Nova_System.h>
 #include <nova/nova_Nova_Class.h>
 #include <nova/regex/nova_regex_Nova_Pattern.h>
-#include <nova/NativeObject.h>
-#include <nova/operators/nova_operators_Nova_EqualsOperator.h>
 
 
-
-nova_math_VariableOperand_Extension_VTable nova_math_VariableOperand_Extension_VTable_val =
+typedef struct nova_operators_MultiplyEqualsOperator_Extension_VTable nova_operators_MultiplyEqualsOperator_Extension_VTable;
+struct nova_operators_MultiplyEqualsOperator_Extension_VTable
 {
-	0,
-	{
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		(char(*)(nova_operators_Nova_EqualsOperator*, nova_exception_Nova_ExceptionData*, nova_Nova_Object*))nova_Nova_Object_Nova_equals,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-	},
-	nova_Nova_Object_Nova_toString,
-	nova_Nova_Object_Accessor_Nova_hashCodeLong,
+	nova_Nova_Class* classInstance;
+	nova_Interface_VTable itable;
 };
 
+extern nova_operators_MultiplyEqualsOperator_Extension_VTable nova_operators_MultiplyEqualsOperator_Extension_VTable_val;
 
-void nova_math_Nova_VariableOperand_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData)
-{
-	{
-	}
-}
 
-nova_math_Nova_VariableOperand* nova_math_Nova_VariableOperand_Nova_construct(nova_math_Nova_VariableOperand* this, nova_exception_Nova_ExceptionData* exceptionData)
-{
-	CCLASS_NEW(nova_math_Nova_VariableOperand, this,);
-	this->vtable = &nova_math_VariableOperand_Extension_VTable_val;
-	nova_Nova_Object_Nova_super((nova_Nova_Object*)this, exceptionData);
-	nova_math_Nova_VariableOperand_Nova_super(this, exceptionData);
+CCLASS_CLASS
+(
+	nova_operators_Nova_MultiplyEqualsOperator, 
 	
-	{
-		nova_math_Nova_VariableOperand_Nova_this(this, exceptionData);
-	}
-	
-	return this;
-}
+	nova_operators_MultiplyEqualsOperator_Extension_VTable* vtable;
+)
 
-void nova_math_Nova_VariableOperand_Nova_destroy(nova_math_Nova_VariableOperand** this, nova_exception_Nova_ExceptionData* exceptionData)
-{
-	if (!*this)
-	{
-		return;
-	}
-	
-	
-	NOVA_FREE(*this);
-}
+void nova_operators_Nova_MultiplyEqualsOperator_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData);
+nova_Nova_Object* nova_operators_Nova_MultiplyEqualsOperator_Nova_multiplyEquals(nova_operators_Nova_MultiplyEqualsOperator* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_Object* value);nova_Nova_Object* nova_operators_Nova_MultiplyEqualsOperator_virtual_Nova_multiplyEquals(nova_operators_Nova_MultiplyEqualsOperator* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_Object* value);
 
-void nova_math_Nova_VariableOperand_Nova_this(nova_math_Nova_VariableOperand* this, nova_exception_Nova_ExceptionData* exceptionData)
-{
-}
-
-void nova_math_Nova_VariableOperand_Nova_super(nova_math_Nova_VariableOperand* this, nova_exception_Nova_ExceptionData* exceptionData)
-{
-}
-
+#endif

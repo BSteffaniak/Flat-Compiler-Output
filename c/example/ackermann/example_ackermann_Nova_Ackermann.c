@@ -70,6 +70,7 @@ example_ackermann_Ackermann_Extension_VTable example_ackermann_Ackermann_Extensi
 		0,
 		0,
 		0,
+		0,
 	},
 	nova_Nova_Object_Nova_toString,
 	nova_Nova_Object_Accessor_Nova_hashCodeLong,
