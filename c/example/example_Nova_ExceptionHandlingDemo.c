@@ -117,19 +117,19 @@ void example_Nova_ExceptionHandlingDemo_static_Nova_main(example_Nova_ExceptionH
 		novaEnv.nova_exception_ExceptionData.addCaught(exceptionData, exceptionData, example_NonWholeDivisionException_Extension_VTable_val.classInstance, 0);
 		
 		{
-			int l1_Nova_result = 0;
+			int l2_Nova_result = 0;
 			
-			l1_Nova_result = example_Nova_ExceptionHandlingDemo_static_Nova_divide(0, exceptionData, 100, 5);
-			nova_io_Nova_Console_1_static_Nova_writeLine(0, exceptionData, (nova_Nova_String*)(nova_Nova_String_Nova_plus(nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("After working example: ")), exceptionData, nova_primitive_number_Nova_Int_static_Nova_toString(0, exceptionData, l1_Nova_result))));
-			l1_Nova_result = example_Nova_ExceptionHandlingDemo_static_Nova_divide(0, exceptionData, 100, 3);
+			l2_Nova_result = example_Nova_ExceptionHandlingDemo_static_Nova_divide(0, exceptionData, 100, 5);
+			nova_io_Nova_Console_1_static_Nova_writeLine(0, exceptionData, (nova_Nova_String*)(nova_Nova_String_Nova_plus(nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("After working example: ")), exceptionData, nova_primitive_number_Nova_Int_static_Nova_toString(0, exceptionData, l2_Nova_result))));
+			l2_Nova_result = example_Nova_ExceptionHandlingDemo_static_Nova_divide(0, exceptionData, 100, 3);
 			nova_io_Nova_Console_1_static_Nova_writeLine(0, exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("this output will not show.")));
 		}
 	}
 	CATCH (example_NonWholeDivisionException_Extension_VTable_val.classInstance)
 	{
-		example_Nova_NonWholeDivisionException* l2_Nova_e = (example_Nova_NonWholeDivisionException*)nova_null;
+		example_Nova_NonWholeDivisionException* l3_Nova_e = (example_Nova_NonWholeDivisionException*)nova_null;
 		
-		l2_Nova_e = (example_Nova_NonWholeDivisionException*)exceptionData->nova_exception_Nova_ExceptionData_Nova_thrownException;
+		l3_Nova_e = (example_Nova_NonWholeDivisionException*)exceptionData->nova_exception_Nova_ExceptionData_Nova_thrownException;
 		nova_io_Nova_Console_1_static_Nova_writeLine(0, exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("You used the divide() method incorrectly.")));
 	}
 	FINALLY

@@ -131,14 +131,14 @@ void example_Nova_PolymorphismDemo_static_Nova_main(example_Nova_PolymorphismDem
 
 nova_Nova_String* example_Nova_PolymorphismDemo_static_Nova_getDescriptionOfAnimalWithNumberOfLegs(example_Nova_PolymorphismDemo* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_list_Nova_Array* animals, int numLegs)
 {
-	int l2_Nova_i = 0;
+	int l3_Nova_i = 0;
 	
-	l2_Nova_i = (int)0;
-	for (; l2_Nova_i < (int)2; l2_Nova_i++)
+	l3_Nova_i = (int)0;
+	for (; l3_Nova_i < (int)2; l3_Nova_i++)
 	{
-		if (example_Nova_Animal_virtual_Nova_getNumLegs((example_Nova_Animal*)(animals->nova_datastruct_list_Nova_Array_Nova_data[l2_Nova_i]), exceptionData) == numLegs)
+		if (example_Nova_Animal_virtual_Nova_getNumLegs((example_Nova_Animal*)(animals->nova_datastruct_list_Nova_Array_Nova_data[l3_Nova_i]), exceptionData) == numLegs)
 		{
-			return example_Nova_Animal_virtual_Nova_getDescription((example_Nova_Animal*)(animals->nova_datastruct_list_Nova_Array_Nova_data[l2_Nova_i]), exceptionData);
+			return example_Nova_Animal_virtual_Nova_getDescription((example_Nova_Animal*)(animals->nova_datastruct_list_Nova_Array_Nova_data[l3_Nova_i]), exceptionData);
 		}
 	}
 	return (nova_Nova_String*)nova_Nova_String_Nova_plus(nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("Could not find animal with ")), exceptionData, (nova_Nova_String*)(nova_Nova_String_Nova_plus(nova_primitive_number_Nova_Int_static_Nova_toString(0, exceptionData, (numLegs)), exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)(" legs")))));

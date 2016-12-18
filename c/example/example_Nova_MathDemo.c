@@ -112,27 +112,27 @@ void example_Nova_MathDemo_static_Nova_main(example_Nova_MathDemo* this, nova_ex
 {
 	int l1_Nova_iterations = 0;
 	nova_time_Nova_Timer* l1_Nova_timer = (nova_time_Nova_Timer*)nova_null;
-	int l2_Nova_i = 0;
+	int l3_Nova_i = 0;
 	
 	nova_io_Nova_Console_1_static_Nova_writeLine(0, exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("Beginning benchmark...")));
 	l1_Nova_iterations = 999999;
 	l1_Nova_timer = nova_time_Nova_Timer_Nova_start(nova_time_Nova_Timer_Nova_construct(0, exceptionData), exceptionData);
-	l2_Nova_i = (int)0;
-	for (; l2_Nova_i < (int)l1_Nova_iterations; l2_Nova_i++)
+	l3_Nova_i = (int)0;
+	for (; l3_Nova_i < (int)l1_Nova_iterations; l3_Nova_i++)
 	{
 		TRY
 		{
 			novaEnv.nova_exception_ExceptionData.addCaught(exceptionData, exceptionData, nova_exception_Exception_Extension_VTable_val.classInstance, 0);
 			
 			{
-				nova_math_Nova_Math_static_Nova_sin(0, exceptionData, l2_Nova_i);
+				nova_math_Nova_Math_static_Nova_sin(0, exceptionData, l3_Nova_i);
 			}
 		}
 		CATCH (nova_exception_Exception_Extension_VTable_val.classInstance)
 		{
-			nova_exception_Nova_Exception* l4_Nova_e = (nova_exception_Nova_Exception*)nova_null;
+			nova_exception_Nova_Exception* l5_Nova_e = (nova_exception_Nova_Exception*)nova_null;
 			
-			l4_Nova_e = (nova_exception_Nova_Exception*)exceptionData->nova_exception_Nova_ExceptionData_Nova_thrownException;
+			l5_Nova_e = (nova_exception_Nova_Exception*)exceptionData->nova_exception_Nova_ExceptionData_Nova_thrownException;
 		}
 		FINALLY
 		{

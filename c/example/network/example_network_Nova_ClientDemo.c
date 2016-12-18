@@ -123,22 +123,22 @@ void example_network_Nova_ClientDemo_static_Nova_main(example_network_Nova_Clien
 	l1_Nova_connected = nova_network_Nova_ClientSocket_Nova_connect(l1_Nova_socket, exceptionData, l1_Nova_ip, l1_Nova_port);
 	if (l1_Nova_connected)
 	{
-		example_network_Nova_ConnectionThread* l1_Nova_thread = (example_network_Nova_ConnectionThread*)nova_null;
+		example_network_Nova_ConnectionThread* l2_Nova_thread = (example_network_Nova_ConnectionThread*)nova_null;
 		
-		l1_Nova_thread = example_network_Nova_ConnectionThread_Nova_construct(0, exceptionData, l1_Nova_socket->nova_network_Nova_ClientSocket_Nova_connection);
-		nova_thread_Nova_Thread_Nova_start((nova_thread_Nova_Thread*)(l1_Nova_thread), exceptionData);
+		l2_Nova_thread = example_network_Nova_ConnectionThread_Nova_construct(0, exceptionData, l1_Nova_socket->nova_network_Nova_ClientSocket_Nova_connection);
+		nova_thread_Nova_Thread_Nova_start((nova_thread_Nova_Thread*)(l2_Nova_thread), exceptionData);
 		nova_io_Nova_Console_1_static_Nova_writeLine(0, exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("Connected!")));
 		while (l1_Nova_socket->nova_network_Nova_ClientSocket_Nova_connection->nova_network_Nova_ConnectionSocket_Nova_connected)
 		{
-			nova_Nova_String* l2_Nova_message = (nova_Nova_String*)nova_null;
+			nova_Nova_String* l3_Nova_message = (nova_Nova_String*)nova_null;
 			
-			l2_Nova_message = nova_io_Nova_Console_static_Nova_readLine(0, exceptionData);
-			if (nova_Nova_String_Nova_equals(l2_Nova_message, exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("q"))))
+			l3_Nova_message = nova_io_Nova_Console_static_Nova_readLine(0, exceptionData);
+			if (nova_Nova_String_Nova_equals(l3_Nova_message, exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("q"))))
 			{
 				nova_network_Nova_ClientSocket_Nova_close(l1_Nova_socket, exceptionData);
 				break;
 			}
-			nova_io_Nova_OutputStream_virtual_Nova_write((nova_io_Nova_OutputStream*)(l1_Nova_socket->nova_network_Nova_ClientSocket_Nova_connection->nova_network_Nova_ConnectionSocket_Nova_out), exceptionData, l2_Nova_message);
+			nova_io_Nova_OutputStream_virtual_Nova_write((nova_io_Nova_OutputStream*)(l1_Nova_socket->nova_network_Nova_ClientSocket_Nova_connection->nova_network_Nova_ConnectionSocket_Nova_out), exceptionData, l3_Nova_message);
 		}
 		nova_network_Nova_ClientSocket_Nova_close(l1_Nova_socket, exceptionData);
 	}

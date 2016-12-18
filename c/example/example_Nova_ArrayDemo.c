@@ -117,38 +117,38 @@ void example_Nova_ArrayDemo_static_Nova_main(example_Nova_ArrayDemo* this, nova_
 	l1_Nova_c = 'y';
 	while (l1_Nova_c == 'y' || l1_Nova_c == 'Y')
 	{
-		nova_datastruct_list_Nova_Array* l1_Nova_list = (nova_datastruct_list_Nova_Array*)nova_null;
-		example_Nova_Animal* l1_Nova_animal = (example_Nova_Animal*)nova_null;
-		int l3_Nova_i = 0;
-		int l5_Nova_i2 = 0;
-		int l7_Nova_i3 = 0;
+		nova_datastruct_list_Nova_Array* l2_Nova_list = (nova_datastruct_list_Nova_Array*)nova_null;
+		example_Nova_Animal* l2_Nova_animal = (example_Nova_Animal*)nova_null;
+		int l4_Nova_i = 0;
+		int l6_Nova_i2 = 0;
+		int l8_Nova_i3 = 0;
 		
-		l1_Nova_list = nova_datastruct_list_Nova_Array_0_Nova_construct(0, exceptionData);
-		nova_datastruct_list_Nova_Array_0_Nova_add((nova_datastruct_list_Nova_Array*)(l1_Nova_list), exceptionData, (nova_Nova_Object*)(example_Nova_Dog_Nova_construct(0, exceptionData)));
-		nova_datastruct_list_Nova_Array_0_Nova_add((nova_datastruct_list_Nova_Array*)(l1_Nova_list), exceptionData, (nova_Nova_Object*)(example_Nova_Dog_Nova_construct(0, exceptionData)));
-		nova_datastruct_list_Nova_Array_0_Nova_add((nova_datastruct_list_Nova_Array*)(l1_Nova_list), exceptionData, (nova_Nova_Object*)(example_Nova_Spider_Nova_construct(0, exceptionData)));
-		nova_datastruct_list_Nova_Array_0_Nova_add((nova_datastruct_list_Nova_Array*)(l1_Nova_list), exceptionData, (nova_Nova_Object*)(example_Nova_Dog_Nova_construct(0, exceptionData)));
-		nova_datastruct_list_Nova_Array_0_Nova_add((nova_datastruct_list_Nova_Array*)(l1_Nova_list), exceptionData, (nova_Nova_Object*)(example_Nova_Animal_Nova_construct(0, exceptionData)));
-		nova_datastruct_list_Nova_Array_0_Nova_add((nova_datastruct_list_Nova_Array*)(l1_Nova_list), exceptionData, (nova_Nova_Object*)(example_Nova_Spider_Nova_construct(0, exceptionData)));
-		l3_Nova_i = (int)0;
-		for (; l3_Nova_i < (int)nova_datastruct_list_Nova_Array_Accessorfunc_Nova_count((nova_datastruct_list_Nova_Array*)(l1_Nova_list), exceptionData); l3_Nova_i++)
+		l2_Nova_list = nova_datastruct_list_Nova_Array_0_Nova_construct(0, exceptionData);
+		nova_datastruct_list_Nova_Array_0_Nova_add((nova_datastruct_list_Nova_Array*)(l2_Nova_list), exceptionData, (nova_Nova_Object*)(example_Nova_Dog_Nova_construct(0, exceptionData)));
+		nova_datastruct_list_Nova_Array_0_Nova_add((nova_datastruct_list_Nova_Array*)(l2_Nova_list), exceptionData, (nova_Nova_Object*)(example_Nova_Dog_Nova_construct(0, exceptionData)));
+		nova_datastruct_list_Nova_Array_0_Nova_add((nova_datastruct_list_Nova_Array*)(l2_Nova_list), exceptionData, (nova_Nova_Object*)(example_Nova_Spider_Nova_construct(0, exceptionData)));
+		nova_datastruct_list_Nova_Array_0_Nova_add((nova_datastruct_list_Nova_Array*)(l2_Nova_list), exceptionData, (nova_Nova_Object*)(example_Nova_Dog_Nova_construct(0, exceptionData)));
+		nova_datastruct_list_Nova_Array_0_Nova_add((nova_datastruct_list_Nova_Array*)(l2_Nova_list), exceptionData, (nova_Nova_Object*)(example_Nova_Animal_Nova_construct(0, exceptionData)));
+		nova_datastruct_list_Nova_Array_0_Nova_add((nova_datastruct_list_Nova_Array*)(l2_Nova_list), exceptionData, (nova_Nova_Object*)(example_Nova_Spider_Nova_construct(0, exceptionData)));
+		l4_Nova_i = (int)0;
+		for (; l4_Nova_i < (int)nova_datastruct_list_Nova_Array_Accessorfunc_Nova_count((nova_datastruct_list_Nova_Array*)(l2_Nova_list), exceptionData); l4_Nova_i++)
 		{
-			nova_io_Nova_Console_1_static_Nova_writeLine(0, exceptionData, (nova_Nova_String*)(nova_Nova_String_Nova_plus(nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("Contains: ")), exceptionData, nova_Nova_Object_virtual_Nova_toString((nova_Nova_Object*)(l1_Nova_list), exceptionData))));
+			nova_io_Nova_Console_1_static_Nova_writeLine(0, exceptionData, (nova_Nova_String*)(nova_Nova_String_Nova_plus(nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("Contains: ")), exceptionData, nova_Nova_Object_virtual_Nova_toString((nova_Nova_Object*)(l2_Nova_list), exceptionData))));
 		}
-		l1_Nova_animal = (example_Nova_Animal*)(nova_datastruct_list_Nova_Array_virtual_Nova_get((nova_datastruct_list_Nova_Array*)(l1_Nova_list), exceptionData, 2));
-		nova_datastruct_list_Nova_Array_0_Nova_remove((nova_datastruct_list_Nova_Array*)(l1_Nova_list), exceptionData, 2);
-		nova_io_Nova_Console_1_static_Nova_writeLine(0, exceptionData, (nova_Nova_String*)(nova_Nova_String_Nova_plus(nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("--------- Removed: ")), exceptionData, (nova_Nova_String*)(nova_Nova_String_Nova_plus(nova_Nova_Object_virtual_Nova_toString((nova_Nova_Object*)(l1_Nova_animal), exceptionData), exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)(" ----------")))))));
-		l5_Nova_i2 = (int)0;
-		for (; l5_Nova_i2 < (int)nova_datastruct_list_Nova_Array_Accessorfunc_Nova_count((nova_datastruct_list_Nova_Array*)(l1_Nova_list), exceptionData); l5_Nova_i2++)
+		l2_Nova_animal = (example_Nova_Animal*)(nova_datastruct_list_Nova_Array_virtual_Nova_get((nova_datastruct_list_Nova_Array*)(l2_Nova_list), exceptionData, 2));
+		nova_datastruct_list_Nova_Array_0_Nova_remove((nova_datastruct_list_Nova_Array*)(l2_Nova_list), exceptionData, 2);
+		nova_io_Nova_Console_1_static_Nova_writeLine(0, exceptionData, (nova_Nova_String*)(nova_Nova_String_Nova_plus(nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("--------- Removed: ")), exceptionData, (nova_Nova_String*)(nova_Nova_String_Nova_plus(nova_Nova_Object_virtual_Nova_toString((nova_Nova_Object*)(l2_Nova_animal), exceptionData), exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)(" ----------")))))));
+		l6_Nova_i2 = (int)0;
+		for (; l6_Nova_i2 < (int)nova_datastruct_list_Nova_Array_Accessorfunc_Nova_count((nova_datastruct_list_Nova_Array*)(l2_Nova_list), exceptionData); l6_Nova_i2++)
 		{
-			nova_io_Nova_Console_1_static_Nova_writeLine(0, exceptionData, (nova_Nova_String*)(nova_Nova_String_Nova_plus(nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("Contains: ")), exceptionData, nova_Nova_Object_virtual_Nova_toString((nova_Nova_Object*)(l1_Nova_list), exceptionData))));
+			nova_io_Nova_Console_1_static_Nova_writeLine(0, exceptionData, (nova_Nova_String*)(nova_Nova_String_Nova_plus(nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("Contains: ")), exceptionData, nova_Nova_Object_virtual_Nova_toString((nova_Nova_Object*)(l2_Nova_list), exceptionData))));
 		}
-		nova_datastruct_list_Nova_Array_1_Nova_add((nova_datastruct_list_Nova_Array*)(l1_Nova_list), exceptionData, 1, (nova_Nova_Object*)(example_Nova_Spider_Nova_construct(0, exceptionData)));
+		nova_datastruct_list_Nova_Array_1_Nova_add((nova_datastruct_list_Nova_Array*)(l2_Nova_list), exceptionData, 1, (nova_Nova_Object*)(example_Nova_Spider_Nova_construct(0, exceptionData)));
 		nova_io_Nova_Console_1_static_Nova_writeLine(0, exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("--------- Added a new spider at index 1 ----------")));
-		l7_Nova_i3 = (int)0;
-		for (; l7_Nova_i3 < (int)nova_datastruct_list_Nova_Array_Accessorfunc_Nova_count((nova_datastruct_list_Nova_Array*)(l1_Nova_list), exceptionData); l7_Nova_i3++)
+		l8_Nova_i3 = (int)0;
+		for (; l8_Nova_i3 < (int)nova_datastruct_list_Nova_Array_Accessorfunc_Nova_count((nova_datastruct_list_Nova_Array*)(l2_Nova_list), exceptionData); l8_Nova_i3++)
 		{
-			nova_io_Nova_Console_1_static_Nova_writeLine(0, exceptionData, (nova_Nova_String*)(nova_Nova_String_Nova_plus(nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("Contains: ")), exceptionData, nova_Nova_Object_virtual_Nova_toString((nova_Nova_Object*)(l1_Nova_list), exceptionData))));
+			nova_io_Nova_Console_1_static_Nova_writeLine(0, exceptionData, (nova_Nova_String*)(nova_Nova_String_Nova_plus(nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("Contains: ")), exceptionData, nova_Nova_Object_virtual_Nova_toString((nova_Nova_Object*)(l2_Nova_list), exceptionData))));
 		}
 		nova_io_Nova_Console_0_static_Nova_write(0, exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("Run again? (Y/N)")));
 		l1_Nova_c = nova_io_Nova_Console_static_Nova_readChar(0, exceptionData);

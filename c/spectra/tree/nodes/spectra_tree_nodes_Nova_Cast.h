@@ -133,7 +133,7 @@ CCLASS_CLASS
 	spectra_tree_nodes_Nova_Node* spectra_tree_nodes_Nova_Node_Nova_parent;
 	spectra_tree_nodes_arrays_Nova_ArrayAccess* spectra_tree_nodes_Nova_Value_Nova_arrayAccess;
 	spectra_tree_nodes_Nova_Type* spectra_tree_nodes_Nova_Value_Nova_type;
-	spectra_tree_nodes_Nova_Value* spectra_tree_nodes_Nova_Cast_Nova_cvalue12;
+	spectra_tree_nodes_Nova_Value* spectra_tree_nodes_Nova_Cast_Nova_value;
 )
 
 void spectra_tree_nodes_Nova_Cast_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData);

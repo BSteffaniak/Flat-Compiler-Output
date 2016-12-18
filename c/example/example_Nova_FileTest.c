@@ -117,19 +117,19 @@ void example_Nova_FileTest_static_Nova_main(example_Nova_FileTest* this, nova_ex
 	l1_Nova_f = nova_io_Nova_File_1_Nova_construct(0, exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("C:/Users/Braden Steffaniak/test3.txt")));
 	if (nova_io_Nova_File_Accessorfunc_Nova_exists(l1_Nova_f, exceptionData))
 	{
-		nova_io_Nova_FileWriter* l1_Nova_writer = (nova_io_Nova_FileWriter*)nova_null;
-		nova_io_Nova_FileReader* l1_Nova_reader = (nova_io_Nova_FileReader*)nova_null;
-		nova_Nova_String* l1_Nova_data = (nova_Nova_String*)nova_null;
+		nova_io_Nova_FileWriter* l2_Nova_writer = (nova_io_Nova_FileWriter*)nova_null;
+		nova_io_Nova_FileReader* l2_Nova_reader = (nova_io_Nova_FileReader*)nova_null;
+		nova_Nova_String* l2_Nova_data = (nova_Nova_String*)nova_null;
 		
 		nova_io_Nova_Console_1_static_Nova_writeLine(0, exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("Your file exists!")));
-		l1_Nova_writer = nova_io_Nova_FileWriter_0_Nova_construct(0, exceptionData, l1_Nova_f);
-		nova_io_Nova_FileWriter_Nova_writeLine(l1_Nova_writer, exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("Entering data..")));
-		nova_io_Nova_FileWriter_Nova_writeLine(l1_Nova_writer, exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("asdfasdf thing.")));
-		nova_io_Nova_FileWriter_Nova_close(l1_Nova_writer, exceptionData);
-		l1_Nova_reader = nova_io_Nova_FileReader_0_Nova_construct(0, exceptionData, l1_Nova_f);
-		l1_Nova_data = nova_io_Nova_FileReader_Nova_readAllContents(l1_Nova_reader, exceptionData);
-		nova_io_Nova_FileReader_Nova_close(l1_Nova_reader, exceptionData);
-		nova_io_Nova_Console_1_static_Nova_writeLine(0, exceptionData, l1_Nova_data);
+		l2_Nova_writer = nova_io_Nova_FileWriter_0_Nova_construct(0, exceptionData, l1_Nova_f);
+		nova_io_Nova_FileWriter_Nova_writeLine(l2_Nova_writer, exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("Entering data..")));
+		nova_io_Nova_FileWriter_Nova_writeLine(l2_Nova_writer, exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("asdfasdf thing.")));
+		nova_io_Nova_FileWriter_Nova_close(l2_Nova_writer, exceptionData);
+		l2_Nova_reader = nova_io_Nova_FileReader_0_Nova_construct(0, exceptionData, l1_Nova_f);
+		l2_Nova_data = nova_io_Nova_FileReader_Nova_readAllContents(l2_Nova_reader, exceptionData);
+		nova_io_Nova_FileReader_Nova_close(l2_Nova_reader, exceptionData);
+		nova_io_Nova_Console_1_static_Nova_writeLine(0, exceptionData, l2_Nova_data);
 	}
 	else
 	{

@@ -185,7 +185,7 @@ void spectra_tree_nodes_Nova_Cast_Nova_destroy(spectra_tree_nodes_Nova_Cast** th
 		return;
 	}
 	
-	spectra_tree_nodes_Nova_Value_Nova_destroy(&(*this)->spectra_tree_nodes_Nova_Cast_Nova_cvalue12, exceptionData);
+	spectra_tree_nodes_Nova_Value_Nova_destroy(&(*this)->spectra_tree_nodes_Nova_Cast_Nova_value, exceptionData);
 	
 	NOVA_FREE(*this);
 }
@@ -216,15 +216,15 @@ spectra_tree_nodes_Nova_Cast* spectra_tree_nodes_Nova_Cast_static_Nova_parse(spe
 	else
 	{
 		nova_Nova_String* l6_Nova_contents = (nova_Nova_String*)nova_null;
-		nova_Nova_String* l9_Nova_cvalue12 = (nova_Nova_String*)nova_null;
+		nova_Nova_String* l9_Nova_value = (nova_Nova_String*)nova_null;
 		
 		if (!spectra_tree_nodes_Nova_Value_virtual_Nova_parseType((spectra_tree_nodes_Nova_Value*)(l2_Nova_node), exceptionData, l6_Nova_contents = nova_Nova_String_Nova_trim(nova_Nova_String_virtual_Nova_substring((nova_Nova_String*)(input), exceptionData, 1, l2_Nova_end), exceptionData, (intptr_t)nova_null, (intptr_t)nova_null, 0)))
 		{
 			THROW(spectra_Nova_InvalidParseException_Nova_construct(0, exceptionData, (nova_Nova_String*)(nova_Nova_String_Nova_plus(nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("Failed to parse cast type '")), exceptionData, (nova_Nova_String*)(nova_Nova_String_Nova_plus((l6_Nova_contents), exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("'")))))), 0), 1);
 		}
-		else if ((spectra_tree_nodes_Nova_Cast_Nova_parseValue(l2_Nova_node, exceptionData, l9_Nova_cvalue12 = nova_Nova_String_Nova_trim(nova_Nova_String_virtual_Nova_substring((nova_Nova_String*)(input), exceptionData, l2_Nova_end + 1, (intptr_t)nova_null), exceptionData, (intptr_t)nova_null, (intptr_t)nova_null, 0))) == (spectra_tree_nodes_Nova_Value*)nova_null)
+		else if ((spectra_tree_nodes_Nova_Cast_Nova_parseValue(l2_Nova_node, exceptionData, l9_Nova_value = nova_Nova_String_Nova_trim(nova_Nova_String_virtual_Nova_substring((nova_Nova_String*)(input), exceptionData, l2_Nova_end + 1, (intptr_t)nova_null), exceptionData, (intptr_t)nova_null, (intptr_t)nova_null, 0))) == (spectra_tree_nodes_Nova_Value*)nova_null)
 		{
-			THROW(spectra_Nova_InvalidParseException_Nova_construct(0, exceptionData, (nova_Nova_String*)(nova_Nova_String_Nova_plus(nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("Failed to parse casted value '")), exceptionData, (nova_Nova_String*)(nova_Nova_String_Nova_plus((l9_Nova_cvalue12), exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("'")))))), 0), 1);
+			THROW(spectra_Nova_InvalidParseException_Nova_construct(0, exceptionData, (nova_Nova_String*)(nova_Nova_String_Nova_plus(nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("Failed to parse casted value '")), exceptionData, (nova_Nova_String*)(nova_Nova_String_Nova_plus((l9_Nova_value), exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("'")))))), 0), 1);
 		}
 		else
 		{
@@ -236,16 +236,16 @@ return (spectra_tree_nodes_Nova_Cast*)(nova_Nova_Object*)nova_null;}
 
 spectra_tree_nodes_Nova_Value* spectra_tree_nodes_Nova_Cast_Nova_parseValue(spectra_tree_nodes_Nova_Cast* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* input)
 {
-	return this->spectra_tree_nodes_Nova_Cast_Nova_cvalue12 = (spectra_tree_nodes_Nova_Value*)(spectra_tree_nodes_Nova_Value_0_static_Nova_parse(0, exceptionData, input, (spectra_tree_nodes_Nova_Node*)(this), 0, (intptr_t)nova_null));
+	return this->spectra_tree_nodes_Nova_Cast_Nova_value = (spectra_tree_nodes_Nova_Value*)(spectra_tree_nodes_Nova_Value_0_static_Nova_parse(0, exceptionData, input, (spectra_tree_nodes_Nova_Node*)(this), 0, (intptr_t)nova_null));
 }
 
 nova_Nova_String* spectra_tree_nodes_Nova_Cast_Nova_writeNova(spectra_tree_nodes_Nova_Cast* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
-	return (nova_Nova_String*)nova_Nova_String_Nova_plus(nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("(")), exceptionData, (nova_Nova_String*)(nova_Nova_String_Nova_plus((spectra_tree_nodes_Nova_Value_virtual_Nova_writeType((spectra_tree_nodes_Nova_Value*)(this), exceptionData)), exceptionData, (nova_Nova_String*)(nova_Nova_String_Nova_plus(nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)(")")), exceptionData, (spectra_tree_nodes_Nova_Node_virtual_Nova_toNova((spectra_tree_nodes_Nova_Node*)(this->spectra_tree_nodes_Nova_Cast_Nova_cvalue12), exceptionData)))))));
+	return (nova_Nova_String*)nova_Nova_String_Nova_plus(nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("(")), exceptionData, (nova_Nova_String*)(nova_Nova_String_Nova_plus((spectra_tree_nodes_Nova_Value_virtual_Nova_writeType((spectra_tree_nodes_Nova_Value*)(this), exceptionData)), exceptionData, (nova_Nova_String*)(nova_Nova_String_Nova_plus(nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)(")")), exceptionData, (spectra_tree_nodes_Nova_Node_virtual_Nova_toNova((spectra_tree_nodes_Nova_Node*)(this->spectra_tree_nodes_Nova_Cast_Nova_value), exceptionData)))))));
 }
 
 void spectra_tree_nodes_Nova_Cast_Nova_super(spectra_tree_nodes_Nova_Cast* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
-	this->spectra_tree_nodes_Nova_Cast_Nova_cvalue12 = (spectra_tree_nodes_Nova_Value*)nova_null;
+	this->spectra_tree_nodes_Nova_Cast_Nova_value = (spectra_tree_nodes_Nova_Value*)nova_null;
 }
 

@@ -144,12 +144,12 @@ int example_Nova_ClosureDemo_static_Nova_multiply(example_Nova_ClosureDemo* this
 int example_Nova_ClosureDemo_static_Nova_pow(example_Nova_ClosureDemo* this, nova_exception_Nova_ExceptionData* exceptionData, int base, int pow)
 {
 	int l1_Nova_value = 0;
-	int l2_Nova_i = 0;
+	int l3_Nova_i = 0;
 	
 	nova_io_Nova_Console_1_static_Nova_writeLine(0, exceptionData, (nova_Nova_String*)(nova_Nova_String_Nova_plus(nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("pow was called with ")), exceptionData, (nova_Nova_String*)(nova_Nova_String_Nova_plus(nova_primitive_number_Nova_Int_static_Nova_toString(0, exceptionData, base), exceptionData, (nova_Nova_String*)(nova_Nova_String_Nova_plus(nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)(" and ")), exceptionData, nova_primitive_number_Nova_Int_static_Nova_toString(0, exceptionData, pow))))))));
 	l1_Nova_value = base;
-	l2_Nova_i = (int)0;
-	for (; l2_Nova_i < (int)(pow - 1); l2_Nova_i++)
+	l3_Nova_i = (int)0;
+	for (; l3_Nova_i < (int)(pow - 1); l3_Nova_i++)
 	{
 		l1_Nova_value = l1_Nova_value * base;
 	}

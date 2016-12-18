@@ -125,14 +125,14 @@ void example_Nova_GenericDemo_static_Nova_main(example_Nova_GenericDemo* this, n
 	nova_datastruct_list_Nova_Stack_Nova_push((nova_datastruct_list_Nova_Stack*)(l1_Nova_strs), exceptionData, (nova_Nova_Object*)((nova_Nova_Object*)nova_null));
 	while (!nova_datastruct_list_Nova_Stack_Accessor_Nova_isEmpty((nova_datastruct_list_Nova_Stack*)(l1_Nova_strs), exceptionData))
 	{
-		nova_Nova_String* l1_Nova_popped = (nova_Nova_String*)nova_null;
+		nova_Nova_String* l2_Nova_popped = (nova_Nova_String*)nova_null;
 		
-		l1_Nova_popped = (nova_Nova_String*)(nova_datastruct_list_Nova_Stack_Nova_pop((nova_datastruct_list_Nova_Stack*)(l1_Nova_strs), exceptionData));
-		if (l1_Nova_popped != (nova_Nova_String*)nova_null)
+		l2_Nova_popped = (nova_Nova_String*)(nova_datastruct_list_Nova_Stack_Nova_pop((nova_datastruct_list_Nova_Stack*)(l1_Nova_strs), exceptionData));
+		if ((l2_Nova_popped) != (nova_Nova_String*)nova_null)
 		{
-			l1_Nova_popped = (nova_Nova_String*)(nova_Nova_String_Nova_plus(nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("\"")), exceptionData, (nova_Nova_String*)(nova_Nova_String_Nova_plus(l1_Nova_popped, exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("\""))))));
+			l2_Nova_popped = (nova_Nova_String*)(nova_Nova_String_Nova_plus(nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("\"")), exceptionData, (nova_Nova_String*)(nova_Nova_String_Nova_plus(l2_Nova_popped, exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("\""))))));
 		}
-		nova_io_Nova_Console_1_static_Nova_writeLine(0, exceptionData, (nova_Nova_String*)(nova_Nova_String_Nova_plus(nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("Popping: ")), exceptionData, l1_Nova_popped)));
+		nova_io_Nova_Console_1_static_Nova_writeLine(0, exceptionData, (nova_Nova_String*)(nova_Nova_String_Nova_plus(nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("Popping: ")), exceptionData, l2_Nova_popped)));
 	}
 	nova_io_Nova_Console_static_Nova_waitForEnter(0, exceptionData);
 }

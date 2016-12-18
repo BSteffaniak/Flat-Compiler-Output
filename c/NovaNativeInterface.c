@@ -149,7 +149,6 @@ nova_env novaEnv = {
 },
 
 {
-&nova_datastruct_Nova_ReversibleHashMap_Nova_add,
 &nova_datastruct_Nova_ReversibleHashMap_Nova_getKey,
 &nova_datastruct_Nova_ReversibleHashMap_Nova_getValue,
 &nova_datastruct_Nova_ReversibleHashMap_Nova_construct,
@@ -185,6 +184,8 @@ nova_env novaEnv = {
 0,
 0,
 &nova_datastruct_list_Nova_Array_Nova_sumSize,
+&nova_datastruct_list_Nova_Array_Nova_mergeSort,
+&nova_datastruct_list_Nova_Array_Nova_sort,
 &nova_datastruct_list_Nova_Array_Nova_toImmutable,
 0,
 0,

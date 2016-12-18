@@ -89,7 +89,7 @@ nova_datastruct_ReversibleHashMap_Extension_VTable nova_datastruct_ReversibleHas
 	},
 	nova_Nova_Object_Nova_toString,
 	nova_Nova_Object_Accessor_Nova_hashCodeLong,
-	nova_datastruct_Nova_HashMap_Nova_add,
+	nova_datastruct_Nova_ReversibleHashMap_Nova_add,
 };
 
 
@@ -140,8 +140,9 @@ void nova_datastruct_Nova_ReversibleHashMap_Nova_this(nova_datastruct_Nova_Rever
 	this->prv->nova_datastruct_Nova_ReversibleHashMap_Nova_rev = nova_datastruct_Nova_HashMap_0_Nova_construct(0, exceptionData, (intptr_t)nova_null, (intptr_t)nova_null);
 }
 
-void nova_datastruct_Nova_ReversibleHashMap_Nova_add(nova_datastruct_Nova_ReversibleHashMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_Object* key, nova_Nova_Object* value)
+nova_Nova_Object* nova_datastruct_Nova_ReversibleHashMap_Nova_add(nova_datastruct_Nova_ReversibleHashMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_Object* key, nova_Nova_Object* value)
 {
+	return (nova_Nova_Object*)value;
 }
 
 nova_Nova_Object* nova_datastruct_Nova_ReversibleHashMap_Nova_getKey(nova_datastruct_Nova_ReversibleHashMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_Object* value)

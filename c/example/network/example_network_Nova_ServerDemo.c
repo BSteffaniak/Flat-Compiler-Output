@@ -126,27 +126,27 @@ void example_network_Nova_ServerDemo_static_Nova_main(example_network_Nova_Serve
 	}
 	else
 	{
-		nova_network_Nova_ConnectionSocket* l2_Nova_request = (nova_network_Nova_ConnectionSocket*)nova_null;
+		nova_network_Nova_ConnectionSocket* l3_Nova_request = (nova_network_Nova_ConnectionSocket*)nova_null;
 		
 		nova_io_Nova_Console_1_static_Nova_writeLine(0, exceptionData, (nova_Nova_String*)(nova_Nova_String_Nova_plus(nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("Started server on port ")), exceptionData, nova_primitive_number_Nova_Int_static_Nova_toString(0, exceptionData, l1_Nova_port))));
 		nova_io_Nova_Console_1_static_Nova_writeLine(0, exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("Waiting on client...")));
-		l2_Nova_request = nova_network_Nova_ServerSocket_Nova_acceptClient(l1_Nova_socket, exceptionData);
-		if (l2_Nova_request == (nova_network_Nova_ConnectionSocket*)nova_null)
+		l3_Nova_request = nova_network_Nova_ServerSocket_Nova_acceptClient(l1_Nova_socket, exceptionData);
+		if ((l3_Nova_request) == (nova_network_Nova_ConnectionSocket*)nova_null)
 		{
 			nova_io_Nova_Console_1_static_Nova_writeLine(0, exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("Failed to accept client")));
 		}
-		while (l2_Nova_request != (nova_network_Nova_ConnectionSocket*)nova_null)
+		while ((l3_Nova_request) != (nova_network_Nova_ConnectionSocket*)nova_null)
 		{
-			example_network_Nova_ConnectionThread* l4_Nova_thread = (example_network_Nova_ConnectionThread*)nova_null;
-			example_network_Nova_OutputThread* l4_Nova_othread = (example_network_Nova_OutputThread*)nova_null;
+			example_network_Nova_ConnectionThread* l5_Nova_thread = (example_network_Nova_ConnectionThread*)nova_null;
+			example_network_Nova_OutputThread* l5_Nova_othread = (example_network_Nova_OutputThread*)nova_null;
 			
-			nova_datastruct_list_Nova_Array_0_Nova_add((nova_datastruct_list_Nova_Array*)(l1_Nova_connections), exceptionData, (nova_Nova_Object*)(l2_Nova_request));
-			l4_Nova_thread = example_network_Nova_ConnectionThread_Nova_construct(0, exceptionData, l2_Nova_request);
-			nova_thread_Nova_Thread_Nova_start((nova_thread_Nova_Thread*)(l4_Nova_thread), exceptionData);
-			l4_Nova_othread = example_network_Nova_OutputThread_Nova_construct(0, exceptionData, l1_Nova_socket, l2_Nova_request);
-			nova_thread_Nova_Thread_Nova_start((nova_thread_Nova_Thread*)(l4_Nova_othread), exceptionData);
+			nova_datastruct_list_Nova_Array_0_Nova_add((nova_datastruct_list_Nova_Array*)(l1_Nova_connections), exceptionData, (nova_Nova_Object*)(l3_Nova_request));
+			l5_Nova_thread = example_network_Nova_ConnectionThread_Nova_construct(0, exceptionData, l3_Nova_request);
+			nova_thread_Nova_Thread_Nova_start((nova_thread_Nova_Thread*)(l5_Nova_thread), exceptionData);
+			l5_Nova_othread = example_network_Nova_OutputThread_Nova_construct(0, exceptionData, l1_Nova_socket, l3_Nova_request);
+			nova_thread_Nova_Thread_Nova_start((nova_thread_Nova_Thread*)(l5_Nova_othread), exceptionData);
 			nova_io_Nova_Console_1_static_Nova_writeLine(0, exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("Waiting on another")));
-			l2_Nova_request = nova_network_Nova_ServerSocket_Nova_acceptClient(l1_Nova_socket, exceptionData);
+			l3_Nova_request = nova_network_Nova_ServerSocket_Nova_acceptClient(l1_Nova_socket, exceptionData);
 		}
 		nova_io_Nova_Console_1_static_Nova_writeLine(0, exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("Exiting")));
 	}
