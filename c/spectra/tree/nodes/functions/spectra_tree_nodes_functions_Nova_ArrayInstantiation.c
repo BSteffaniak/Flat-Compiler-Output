@@ -119,6 +119,8 @@ spectra_tree_nodes_functions_ArrayInstantiation_Extension_VTable spectra_tree_no
 		0,
 		(char(*)(spectra_tree_nodes_Nova_Accessible*, nova_exception_Nova_ExceptionData*))spectra_tree_nodes_variables_Nova_Variable_Accessorfunc1_Nova_safeNavigation,
 		(char(*)(spectra_tree_nodes_Nova_Accessible*, nova_exception_Nova_ExceptionData*, char))spectra_tree_nodes_variables_Nova_Variable_Mutatorfunc0_Nova_safeNavigation,
+		(spectra_tree_nodes_Nova_Accessible*(*)(spectra_tree_nodes_Nova_Accessible*, nova_exception_Nova_ExceptionData*))spectra_tree_nodes_variables_Nova_Variable_Accessorfunc1_Nova_accessedNode,
+		(spectra_tree_nodes_Nova_Accessible*(*)(spectra_tree_nodes_Nova_Accessible*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Accessible*))spectra_tree_nodes_variables_Nova_Variable_Mutatorfunc0_Nova_accessedNode,
 		(void(*)(spectra_tree_nodes_annotations_Nova_Annotatable*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_annotations_Nova_Annotation*))spectra_tree_nodes_Nova_Node_Nova_addAnnotation,
 		0,
 		0,

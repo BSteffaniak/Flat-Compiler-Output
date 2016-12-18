@@ -118,6 +118,8 @@ spectra_util_CompilerStringFunctions_Extension_VTable spectra_util_CompilerStrin
 		0,
 		0,
 		0,
+		0,
+		0,
 	},
 };
 

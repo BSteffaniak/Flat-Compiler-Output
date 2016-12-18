@@ -78,6 +78,8 @@ spectra_tree_nodes_Abstractable_Extension_VTable spectra_tree_nodes_Abstractable
 		0,
 		0,
 		0,
+		0,
+		0,
 	},
 };
 

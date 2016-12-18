@@ -73,16 +73,6 @@ nova_datastruct_Tuple2_Extension_VTable nova_datastruct_Tuple2_Extension_VTable_
 		0,
 		0,
 		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
 	},
 	nova_Nova_Object_Nova_toString,
 	nova_Nova_Object_Accessor_Nova_hashCodeLong,
@@ -125,7 +115,7 @@ void nova_datastruct_Nova_Tuple2_Nova_destroy(nova_datastruct_Nova_Tuple2** this
 
 void nova_datastruct_Nova_Tuple2_Nova_this(nova_datastruct_Nova_Tuple2* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_Object* item1, nova_Nova_Object* item2)
 {
-	nova_datastruct_Nova_Tuple_Nova_this((nova_datastruct_Nova_Tuple*)(this), exceptionData, generated1(0, exceptionData, (nova_Nova_Object*)(item1), (nova_Nova_Object*)(item2)));
+	nova_datastruct_Nova_Tuple_Nova_this((nova_datastruct_Nova_Tuple*)(this), exceptionData, generated1(0, exceptionData, item1, item2));
 }
 
 nova_datastruct_list_Nova_Array* generated1(nova_datastruct_Nova_Tuple2* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_Object* value0, nova_Nova_Object* value1)
@@ -133,8 +123,8 @@ nova_datastruct_list_Nova_Array* generated1(nova_datastruct_Nova_Tuple2* this, n
 	nova_Nova_Object** l1_Nova_temp = (nova_Nova_Object**)nova_null;
 	
 	l1_Nova_temp = (nova_Nova_Object**)NOVA_MALLOC(sizeof(nova_Nova_Object) * 2);
-	l1_Nova_temp[0] = value0;
-	l1_Nova_temp[1] = value1;
+	l1_Nova_temp[0] = (nova_Nova_Object*)(value0);
+	l1_Nova_temp[1] = (nova_Nova_Object*)(value1);
 	return nova_datastruct_list_Nova_Array_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)(l1_Nova_temp), 2);
 }
 

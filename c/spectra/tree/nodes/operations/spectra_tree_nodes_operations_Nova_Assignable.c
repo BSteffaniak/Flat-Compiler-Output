@@ -79,6 +79,8 @@ spectra_tree_nodes_operations_Assignable_Extension_VTable spectra_tree_nodes_ope
 		0,
 		0,
 		0,
+		0,
+		0,
 		(void(*)(spectra_tree_nodes_operations_Nova_Assignable*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Value*))spectra_tree_nodes_operations_Nova_Assignable_Nova_onAssigned,
 	},
 };

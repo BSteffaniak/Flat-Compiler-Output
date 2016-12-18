@@ -99,6 +99,8 @@ spectra_tree_nodes_NodeList_Extension_VTable spectra_tree_nodes_NodeList_Extensi
 		0,
 		0,
 		0,
+		0,
+		0,
 		(void(*)(spectra_tree_nodes_annotations_Nova_Annotatable*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_annotations_Nova_Annotation*))spectra_tree_nodes_Nova_Node_Nova_addAnnotation,
 		0,
 		0,

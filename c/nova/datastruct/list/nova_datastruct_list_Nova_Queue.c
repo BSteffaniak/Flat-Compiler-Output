@@ -72,16 +72,6 @@ nova_datastruct_list_Queue_Extension_VTable nova_datastruct_list_Queue_Extension
 		0,
 		0,
 		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
 	},
 	nova_datastruct_list_Nova_Queue_Nova_toString,
 	nova_Nova_Object_Accessor_Nova_hashCodeLong,
@@ -164,7 +154,7 @@ nova_Nova_Object* nova_datastruct_list_Nova_Queue_Nova_dequeue(nova_datastruct_l
 
 nova_datastruct_list_Nova_Array* nova_datastruct_list_Nova_Queue_Nova_enqueue(nova_datastruct_list_Nova_Queue* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_Object* element)
 {
-	return nova_datastruct_list_Nova_Array_0_Nova_add(this->prv->nova_datastruct_list_Nova_Queue_Nova_data, exceptionData, element);
+	return (nova_datastruct_list_Nova_Array*)nova_datastruct_list_Nova_Array_0_Nova_add(this->prv->nova_datastruct_list_Nova_Queue_Nova_data, exceptionData, element);
 }
 
 nova_datastruct_list_Nova_Queue* nova_datastruct_list_Nova_Queue_Nova_reverse(nova_datastruct_list_Nova_Queue* this, nova_exception_Nova_ExceptionData* exceptionData)

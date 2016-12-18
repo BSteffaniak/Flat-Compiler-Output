@@ -73,16 +73,6 @@ nova_datastruct_list_Stack_Extension_VTable nova_datastruct_list_Stack_Extension
 		0,
 		0,
 		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
 	},
 	nova_Nova_Object_Nova_toString,
 	nova_Nova_Object_Accessor_Nova_hashCodeLong,
@@ -157,7 +147,7 @@ void nova_datastruct_list_Nova_Stack_0_Nova_this(nova_datastruct_list_Nova_Stack
 	while (nova_datastruct_list_Nova_ArrayIterator_Accessor_Nova_hasNext(nova_local_0, exceptionData))
 	{
 		l2_Nova_e = (nova_Nova_Object*)(nova_datastruct_list_Nova_ArrayIterator_Accessor_Nova_next(nova_local_0, exceptionData));
-		nova_datastruct_list_Nova_Stack_Nova_push(this, exceptionData, (nova_Nova_Object*)(l2_Nova_e));
+		nova_datastruct_list_Nova_Stack_Nova_push(this, exceptionData, l2_Nova_e);
 	}
 }
 

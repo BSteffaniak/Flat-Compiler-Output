@@ -158,6 +158,8 @@ spectra_tree_nodes_ClassDeclaration_Extension_VTable spectra_tree_nodes_ClassDec
 		(char(*)(spectra_tree_nodes_Nova_Abstractable*, nova_exception_Nova_ExceptionData*))spectra_tree_nodes_Nova_ClassDeclaration_Accessorfunc_Nova_isAbstract,
 		0,
 		0,
+		0,
+		0,
 		(void(*)(spectra_tree_nodes_annotations_Nova_Annotatable*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_annotations_Nova_Annotation*))spectra_tree_nodes_Nova_Node_Nova_addAnnotation,
 		0,
 		0,

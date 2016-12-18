@@ -129,6 +129,8 @@ spectra_tree_nodes_functions_closures_LambdaExpression_Extension_VTable spectra_
 		0,
 		0,
 		0,
+		0,
+		0,
 		(void(*)(spectra_tree_nodes_annotations_Nova_Annotatable*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_annotations_Nova_Annotation*))spectra_tree_nodes_Nova_Node_Nova_addAnnotation,
 		(spectra_tree_nodes_functions_Nova_Parameter*(*)(spectra_tree_nodes_functions_Nova_CallableFunction*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, int))spectra_tree_nodes_functions_closures_Nova_LambdaExpression_Nova_parseParameter,
 		(char(*)(spectra_tree_nodes_functions_Nova_CallableFunction*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, int))spectra_tree_nodes_functions_closures_Nova_LambdaExpression_Nova_parseParameters,
@@ -393,9 +395,10 @@ spectra_tree_nodes_functions_Nova_FunctionDeclaration* spectra_tree_nodes_functi
 	spectra_tree_nodes_Nova_ClassDeclaration* l1_Nova_reference = (spectra_tree_nodes_Nova_ClassDeclaration*)nova_null;
 	nova_datastruct_list_Nova_Array* l1_Nova_similar = (nova_datastruct_list_Nova_Array*)nova_null;
 	Context1* contextArg127 = NOVA_MALLOC(sizeof(Context1));
+	spectra_tree_nodes_Nova_ClassDeclaration* nova_local_0 = (spectra_tree_nodes_Nova_ClassDeclaration*)nova_null;
 	
 	l1_Nova_reference = spectra_tree_nodes_Nova_Accessible_Accessor_Nova_referenceClass((spectra_tree_nodes_Nova_Accessible*)(spectra_tree_nodes_Nova_Node_virtual_Accessor_Nova_parentFunctionCall((spectra_tree_nodes_Nova_Node*)(this), exceptionData)), exceptionData);
-	l1_Nova_similar = (nova_datastruct_list_Nova_Array*)(nova_datastruct_list_Nova_List_virtual0_Nova_filter((nova_datastruct_list_Nova_List*)(l1_Nova_reference->spectra_tree_nodes_Nova_ClassDeclaration_Nova_functions), exceptionData, (nova_datastruct_list_Nova_List_closure20_Nova_filterFunc)&spectra_tree_nodes_functions_closures_Nova_LambdaExpression_Nova_lambda127, this, contextArg127));
+	l1_Nova_similar = (nova_datastruct_list_Nova_Array*)((nova_local_0 = l1_Nova_reference) != (spectra_tree_nodes_Nova_ClassDeclaration*)nova_null ? (nova_Nova_Object*)(nova_datastruct_list_Nova_List_virtual0_Nova_filter((nova_datastruct_list_Nova_List*)(nova_local_0->spectra_tree_nodes_Nova_ClassDeclaration_Nova_functions), exceptionData, (nova_datastruct_list_Nova_List_closure20_Nova_filterFunc)&spectra_tree_nodes_functions_closures_Nova_LambdaExpression_Nova_lambda127, this, contextArg127)) : (nova_Nova_Object*)nova_null);
 	return (spectra_tree_nodes_functions_Nova_FunctionDeclaration*)(nova_Nova_Object*)nova_null;
 }
 
