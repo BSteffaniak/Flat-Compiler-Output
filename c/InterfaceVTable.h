@@ -348,6 +348,11 @@ typedef nova_Nova_Object* (*nova_datastruct_list_Nova_List_closure41_Nova_func)(
 typedef nova_Nova_Object* (*nova_datastruct_list_Nova_List_closure42_Nova_func)(void*, nova_exception_Nova_ExceptionData*, Out*, nova_Nova_Object*, int, nova_datastruct_list_Nova_List*, void*);
 typedef nova_Nova_Object* (*nova_datastruct_list_Nova_List_closure43_Nova_func)(void*, nova_exception_Nova_ExceptionData*, Out*, nova_Nova_Object*, int, nova_datastruct_list_Nova_List*, void*);
 typedef nova_Nova_Object* (*nova_datastruct_list_Nova_List_closure44_Nova_func)(void*, nova_exception_Nova_ExceptionData*, Out*, nova_Nova_Object*, int, nova_datastruct_list_Nova_List*, void*);
+typedef struct nova_datastruct_list_Nova_OrderedList nova_datastruct_list_Nova_OrderedList;
+typedef char (*nova_datastruct_list_Nova_OrderedList_closure1_Nova_condition)(void*, nova_exception_Nova_ExceptionData*, nova_Nova_Object*, int, nova_datastruct_list_Nova_OrderedList*, void*);
+typedef char (*nova_datastruct_list_Nova_OrderedList_closure2_Nova_condition)(void*, nova_exception_Nova_ExceptionData*, nova_Nova_Object*, int, nova_datastruct_list_Nova_OrderedList*, void*);
+typedef char (*nova_datastruct_list_Nova_OrderedList_closure3_Nova_condition)(void*, nova_exception_Nova_ExceptionData*, nova_Nova_Object*, int, nova_datastruct_list_Nova_OrderedList*, void*);
+typedef char (*nova_datastruct_list_Nova_OrderedList_closure4_Nova_condition)(void*, nova_exception_Nova_ExceptionData*, nova_Nova_Object*, int, nova_datastruct_list_Nova_OrderedList*, void*);
 typedef void (*nova_thread_Nova_Thread_closure2_Nova_action)(void*, nova_exception_Nova_ExceptionData*, void*);
 typedef void (*nova_thread_Nova_Thread_closure3_Nova_action)(void*, nova_exception_Nova_ExceptionData*, void*);
 typedef void (*nova_thread_Nova_Thread_closure4_Nova_action)(void*, nova_exception_Nova_ExceptionData*, void*);

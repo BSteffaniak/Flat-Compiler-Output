@@ -478,11 +478,6 @@ nova_Nova_String* nova_Nova_String_Nova_trim(nova_Nova_String* this, nova_except
 	return (nova_Nova_String*)(start > end ? nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("")) : nova_Nova_String_virtual_Nova_substring((nova_Nova_String*)(this), exceptionData, start, end + 1));
 }
 
-char nova_Nova_String_Nova_lastChar(nova_Nova_String* this, nova_exception_Nova_ExceptionData* exceptionData)
-{
-	return (char)(this->nova_Nova_String_Nova_count > 0 ? nova_datastruct_list_Nova_CharArray_Nova_get((nova_datastruct_list_Nova_CharArray*)(this->nova_Nova_String_Nova_chars), exceptionData, this->nova_Nova_String_Nova_count - 1) : (char)0);
-}
-
 nova_Nova_String* nova_Nova_String_Nova_toLowerCase(nova_Nova_String* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
 	return nova_Nova_String_Nova_transform(this, exceptionData, (nova_Nova_String_closure4_Nova_transform)&nova_primitive_number_Nova_Char_static_Nova_toLowerCase, nova_primitive_number_Nova_Char_static_Nova_toLowerCase, nova_null);
@@ -518,13 +513,7 @@ nova_Nova_String* nova_Nova_String_Nova_getStringBetween(nova_Nova_String* this,
 	int l1_Nova_e = 0;
 	
 	start = (int)(start == (intptr_t)nova_null ? 0 : start);
-	l1_Nova_s = nova_Nova_String_2_Nova_indexOf(this, exceptionData, before, start, (intptr_t)nova_null, (intptr_t)nova_null);
-	l1_Nova_e = nova_Nova_String_2_Nova_indexOf(this, exceptionData, after, l1_Nova_s + 1, (intptr_t)nova_null, (intptr_t)nova_null);
-	if (l1_Nova_s >= 0 && l1_Nova_e > 0)
-	{
-		return nova_Nova_String_virtual_Nova_substring((nova_Nova_String*)(this), exceptionData, l1_Nova_s + before->nova_Nova_String_Nova_count, l1_Nova_e);
-	}
-	return nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)(""));
+	return (nova_Nova_String*)((l1_Nova_s = nova_Nova_String_2_Nova_indexOf(this, exceptionData, before, start, (intptr_t)nova_null, (intptr_t)nova_null)) >= 0 && (l1_Nova_e = nova_Nova_String_2_Nova_indexOf(this, exceptionData, after, l1_Nova_s + 1, (intptr_t)nova_null, (intptr_t)nova_null)) > 0 ? (nova_Nova_Object*)nova_Nova_String_virtual_Nova_substring((nova_Nova_String*)(this), exceptionData, l1_Nova_s + before->nova_Nova_String_Nova_count, l1_Nova_e) : (nova_Nova_Object*)nova_null);
 }
 
 nova_Nova_String* nova_Nova_String_Nova_surroundWith(nova_Nova_String* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* str, int symmetrical)

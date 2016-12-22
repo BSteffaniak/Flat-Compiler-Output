@@ -194,7 +194,7 @@ nova_math_logic_Nova_StatementGroup* nova_math_logic_Nova_WFF_Nova_searchForConc
 	{
 		return (nova_math_logic_Nova_StatementGroup*)(nova_Nova_Object*)nova_null;
 	}
-	if (nova_Nova_String_Nova_lastChar(wff, exceptionData) == ')')
+	if ((char)(intptr_t)nova_datastruct_list_Nova_CharArray_Accessor_Nova_last((nova_datastruct_list_Nova_CharArray*)(wff->nova_Nova_String_Nova_chars), exceptionData) == ')')
 {
 	int l3_Nova_first = 0;
 	

@@ -34,7 +34,6 @@ nova_env novaEnv = {
 0,
 &nova_Nova_String_Nova_trimEnds,
 &nova_Nova_String_Nova_trim,
-&nova_Nova_String_Nova_lastChar,
 &nova_Nova_String_Nova_toLowerCase,
 &nova_Nova_String_Nova_toUpperCase,
 &nova_Nova_String_Nova_capitalize,
@@ -336,6 +335,10 @@ nova_env novaEnv = {
 
 {
 &nova_datastruct_list_Nova_NoSuchElementException_Nova_construct,
+},
+
+{
+&nova_datastruct_list_Nova_OrderedList_Nova_findIndex,
 },
 
 {

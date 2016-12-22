@@ -4,6 +4,7 @@ nova_datastruct_vtable_Comparable nova_datastruct_vtable_Comparable_value_defaul
 nova_datastruct_list_vtable_Iterable nova_datastruct_list_vtable_Iterable_value_default = {0,0};
 nova_datastruct_list_vtable_Iterator nova_datastruct_list_vtable_Iterator_value_default = {0,0};
 nova_datastruct_list_vtable_List nova_datastruct_list_vtable_List_value_default = {0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0};
+nova_datastruct_list_vtable_OrderedList nova_datastruct_list_vtable_OrderedList_value_default = {0};
 nova_io_vtable_InputStream nova_io_vtable_InputStream_value_default = {0};
 nova_operators_vtable_EqualsOperator nova_operators_vtable_EqualsOperator_value_default = {0};
 nova_operators_vtable_MultiplyEqualsOperator nova_operators_vtable_MultiplyEqualsOperator_value_default = {0};

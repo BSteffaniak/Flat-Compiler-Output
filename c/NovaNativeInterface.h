@@ -46,6 +46,7 @@
 #include <nova/datastruct/list/nova_datastruct_list_Nova_List.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_ListNode.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_NoSuchElementException.h>
+#include <nova/datastruct/list/nova_datastruct_list_Nova_OrderedList.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_Queue.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_Stack.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_StringCharArray.h>
@@ -229,7 +230,6 @@ typedef char (*nova_Nova_String_native_Nova_validateSubstringBounds)(nova_Nova_S
 typedef nova_Nova_String* (*nova_Nova_String_native_Nova_substring)(nova_Nova_String*, nova_exception_Nova_ExceptionData*, int, int);
 typedef nova_Nova_String* (*nova_Nova_String_native_Nova_trimEnds)(nova_Nova_String*, nova_exception_Nova_ExceptionData*, int, int);
 typedef nova_Nova_String* (*nova_Nova_String_native_Nova_trim)(nova_Nova_String*, nova_exception_Nova_ExceptionData*, int, int, nova_datastruct_list_Nova_CharArray*);
-typedef char (*nova_Nova_String_native_Nova_lastChar)(nova_Nova_String*, nova_exception_Nova_ExceptionData*);
 typedef nova_Nova_String* (*nova_Nova_String_native_Nova_toLowerCase)(nova_Nova_String*, nova_exception_Nova_ExceptionData*);
 typedef nova_Nova_String* (*nova_Nova_String_native_Nova_toUpperCase)(nova_Nova_String*, nova_exception_Nova_ExceptionData*);
 typedef nova_Nova_String* (*nova_Nova_String_native_Nova_capitalize)(nova_Nova_String*, nova_exception_Nova_ExceptionData*);
@@ -268,7 +268,6 @@ nova_Nova_String_native_Nova_validateSubstringBounds validateSubstringBounds;
 nova_Nova_String_native_Nova_substring substring;
 nova_Nova_String_native_Nova_trimEnds trimEnds;
 nova_Nova_String_native_Nova_trim trim;
-nova_Nova_String_native_Nova_lastChar lastChar;
 nova_Nova_String_native_Nova_toLowerCase toLowerCase;
 nova_Nova_String_native_Nova_toUpperCase toUpperCase;
 nova_Nova_String_native_Nova_capitalize capitalize;
@@ -820,6 +819,13 @@ typedef struct nova_datastruct_list_native_NoSuchElementException
 {
 nova_datastruct_list_Nova_NoSuchElementException_native_Nova_construct NoSuchElementException;
 } nova_datastruct_list_native_NoSuchElementException;
+
+typedef char (*nova_datastruct_list_Nova_OrderedList_native_Nova_findIndex)(nova_datastruct_list_Nova_OrderedList*, nova_exception_Nova_ExceptionData*, nova_datastruct_list_Nova_OrderedList_closure4_Nova_condition nova_datastruct_list_Nova_OrderedList_Nova_condition, void* nova_datastruct_list_Nova_OrderedList_ref_Nova_condition, void* condition_context, int);
+
+typedef struct nova_datastruct_list_native_OrderedList
+{
+nova_datastruct_list_Nova_OrderedList_native_Nova_findIndex findIndex;
+} nova_datastruct_list_native_OrderedList;
 
 typedef nova_Nova_Object* (*nova_datastruct_list_Nova_Queue_native_Nova_dequeue)(nova_datastruct_list_Nova_Queue*, nova_exception_Nova_ExceptionData*);
 typedef nova_datastruct_list_Nova_Array* (*nova_datastruct_list_Nova_Queue_native_Nova_enqueue)(nova_datastruct_list_Nova_Queue*, nova_exception_Nova_ExceptionData*, nova_Nova_Object*);
@@ -2176,6 +2182,7 @@ nova_datastruct_list_native_LinkedListIterator nova_datastruct_list_LinkedListIt
 nova_datastruct_list_native_List nova_datastruct_list_List;
 nova_datastruct_list_native_ListNode nova_datastruct_list_ListNode;
 nova_datastruct_list_native_NoSuchElementException nova_datastruct_list_NoSuchElementException;
+nova_datastruct_list_native_OrderedList nova_datastruct_list_OrderedList;
 nova_datastruct_list_native_Queue nova_datastruct_list_Queue;
 nova_datastruct_list_native_Stack nova_datastruct_list_Stack;
 nova_datastruct_list_native_StringCharArray nova_datastruct_list_StringCharArray;
