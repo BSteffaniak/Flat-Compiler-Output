@@ -70,7 +70,6 @@ stabilitytest_PolymorphicSuperClass_Extension_VTable stabilitytest_PolymorphicSu
 		0,
 		0,
 		0,
-		0,
 	},
 	stabilitytest_Nova_PolymorphicSuperClass_Nova_toString,
 	nova_Nova_Object_Accessor_Nova_hashCodeLong,

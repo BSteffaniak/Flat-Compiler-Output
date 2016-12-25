@@ -84,7 +84,7 @@ void nova_meta_Nova_GenericArgument_Nova_init_static(nova_exception_Nova_Excepti
 	}
 }
 
-nova_meta_Nova_GenericArgument* nova_meta_Nova_GenericArgument_Nova_construct(nova_meta_Nova_GenericArgument* this, nova_exception_Nova_ExceptionData* exceptionData)
+nova_meta_Nova_GenericArgument* nova_meta_Nova_GenericArgument_Nova_construct(nova_meta_Nova_GenericArgument* this, nova_exception_Nova_ExceptionData* exceptionData, nova_meta_Nova_Type* value)
 {
 	CCLASS_NEW(nova_meta_Nova_GenericArgument, this,);
 	this->vtable = &nova_meta_GenericArgument_Extension_VTable_val;
@@ -92,7 +92,7 @@ nova_meta_Nova_GenericArgument* nova_meta_Nova_GenericArgument_Nova_construct(no
 	nova_meta_Nova_GenericArgument_Nova_super(this, exceptionData);
 	
 	{
-		nova_meta_Nova_GenericArgument_Nova_this(this, exceptionData);
+		nova_meta_Nova_GenericArgument_Nova_this(this, exceptionData, value);
 	}
 	
 	return this;
@@ -110,8 +110,9 @@ void nova_meta_Nova_GenericArgument_Nova_destroy(nova_meta_Nova_GenericArgument*
 	NOVA_FREE(*this);
 }
 
-void nova_meta_Nova_GenericArgument_Nova_this(nova_meta_Nova_GenericArgument* this, nova_exception_Nova_ExceptionData* exceptionData)
+void nova_meta_Nova_GenericArgument_Nova_this(nova_meta_Nova_GenericArgument* this, nova_exception_Nova_ExceptionData* exceptionData, nova_meta_Nova_Type* value)
 {
+	this->nova_meta_Nova_GenericArgument_Nova_value = value;
 }
 
 void nova_meta_Nova_GenericArgument_Nova_super(nova_meta_Nova_GenericArgument* this, nova_exception_Nova_ExceptionData* exceptionData)

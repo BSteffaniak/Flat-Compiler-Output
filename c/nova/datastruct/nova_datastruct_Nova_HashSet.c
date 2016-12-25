@@ -243,7 +243,7 @@ nova_datastruct_list_Nova_Array* nova_datastruct_Nova_HashSet_0_Nova_map(nova_da
 			l3_Nova_v = (nova_Nova_Object*)(nova_datastruct_list_Nova_ArrayIterator_Accessor_Nova_next(nova_local_1, exceptionData));
 			if ((nova_Nova_Object*)(l3_Nova_v) != (nova_Nova_Object*)(nova_Nova_Object*)nova_null)
 			{
-				nova_datastruct_list_Nova_Array_0_Nova_add(l1_Nova_array, exceptionData, (nova_Nova_Object*)(nova_Nova_Object*)(nova_datastruct_Nova_HashSet_Nova_func(nova_datastruct_Nova_HashSet_ref_Nova_func, exceptionData, l3_Nova_v, l1_Nova_i++, this, func_context)));
+				nova_datastruct_list_Nova_Array_0_Nova_add((nova_datastruct_list_Nova_Array*)(l1_Nova_array), exceptionData, (nova_Nova_Object*)(nova_Nova_Object*)(nova_datastruct_Nova_HashSet_Nova_func(nova_datastruct_Nova_HashSet_ref_Nova_func, exceptionData, l3_Nova_v, l1_Nova_i++, this, func_context)));
 			}
 		}
 	}
@@ -272,7 +272,7 @@ nova_datastruct_list_Nova_Array* nova_datastruct_Nova_HashSet_0_Nova_filter(nova
 			l3_Nova_v = (nova_Nova_Object*)(nova_datastruct_list_Nova_ArrayIterator_Accessor_Nova_next(nova_local_1, exceptionData));
 			if ((nova_Nova_Object*)(l3_Nova_v) != (nova_Nova_Object*)(nova_Nova_Object*)nova_null && nova_datastruct_Nova_HashSet_Nova_func(nova_datastruct_Nova_HashSet_ref_Nova_func, exceptionData, l3_Nova_v, l1_Nova_i++, this, func_context))
 			{
-				nova_datastruct_list_Nova_Array_0_Nova_add(l1_Nova_array, exceptionData, (nova_Nova_Object*)(l3_Nova_v));
+				nova_datastruct_list_Nova_Array_0_Nova_add((nova_datastruct_list_Nova_Array*)(l1_Nova_array), exceptionData, (nova_Nova_Object*)(l3_Nova_v));
 			}
 		}
 	}
@@ -349,12 +349,9 @@ nova_Nova_Object* nova_datastruct_Nova_HashSet_0_Nova_firstWhere(nova_datastruct
 		while (nova_datastruct_list_Nova_ArrayIterator_Accessor_Nova_hasNext(nova_local_1, exceptionData))
 		{
 			l3_Nova_v = (nova_Nova_Object*)(nova_datastruct_list_Nova_ArrayIterator_Accessor_Nova_next(nova_local_1, exceptionData));
-			if ((nova_Nova_Object*)(l3_Nova_v) != (nova_Nova_Object*)(nova_Nova_Object*)nova_null)
+			if ((nova_Nova_Object*)(l3_Nova_v) != (nova_Nova_Object*)(nova_Nova_Object*)nova_null && nova_datastruct_Nova_HashSet_Nova_func(nova_datastruct_Nova_HashSet_ref_Nova_func, exceptionData, l3_Nova_v, func_context))
 			{
-				if (nova_datastruct_Nova_HashSet_Nova_func(nova_datastruct_Nova_HashSet_ref_Nova_func, exceptionData, l3_Nova_v, func_context))
-				{
-					return (nova_Nova_Object*)l3_Nova_v;
-				}
+				return (nova_Nova_Object*)l3_Nova_v;
 			}
 		}
 	}

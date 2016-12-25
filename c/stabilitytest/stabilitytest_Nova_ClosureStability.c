@@ -85,7 +85,6 @@ stabilitytest_ClosureStability_Extension_VTable stabilitytest_ClosureStability_E
 		0,
 		0,
 		0,
-		0,
 	},
 	nova_Nova_Object_Nova_toString,
 	nova_Nova_Object_Accessor_Nova_hashCodeLong,
@@ -219,11 +218,11 @@ int stabilitytest_Nova_ClosureStability_static_Nova_multiply(stabilitytest_Nova_
 int stabilitytest_Nova_ClosureStability_static_Nova_pow(stabilitytest_Nova_ClosureStability* this, nova_exception_Nova_ExceptionData* exceptionData, int base, int pow)
 {
 	int l1_Nova_value = 0;
-	int l2_Nova_i = 0;
+	int l3_Nova_i = 0;
 	
 	l1_Nova_value = base;
-	l2_Nova_i = (int)0;
-	for (; l2_Nova_i < (int)(pow - 1); l2_Nova_i++)
+	l3_Nova_i = (int)0;
+	for (; l3_Nova_i < (int)(pow - 1); l3_Nova_i++)
 	{
 		l1_Nova_value *= base;
 	}

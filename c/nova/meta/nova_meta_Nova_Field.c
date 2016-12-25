@@ -84,7 +84,7 @@ void nova_meta_Nova_Field_Nova_init_static(nova_exception_Nova_ExceptionData* ex
 	}
 }
 
-nova_meta_Nova_Field* nova_meta_Nova_Field_Nova_construct(nova_meta_Nova_Field* this, nova_exception_Nova_ExceptionData* exceptionData)
+nova_meta_Nova_Field* nova_meta_Nova_Field_Nova_construct(nova_meta_Nova_Field* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* name, nova_meta_Nova_Type* type)
 {
 	CCLASS_NEW(nova_meta_Nova_Field, this,);
 	this->vtable = &nova_meta_Field_Extension_VTable_val;
@@ -92,7 +92,7 @@ nova_meta_Nova_Field* nova_meta_Nova_Field_Nova_construct(nova_meta_Nova_Field* 
 	nova_meta_Nova_Field_Nova_super(this, exceptionData);
 	
 	{
-		nova_meta_Nova_Field_Nova_this(this, exceptionData);
+		nova_meta_Nova_Field_Nova_this(this, exceptionData, name, type);
 	}
 	
 	return this;
@@ -111,8 +111,10 @@ void nova_meta_Nova_Field_Nova_destroy(nova_meta_Nova_Field** this, nova_excepti
 	NOVA_FREE(*this);
 }
 
-void nova_meta_Nova_Field_Nova_this(nova_meta_Nova_Field* this, nova_exception_Nova_ExceptionData* exceptionData)
+void nova_meta_Nova_Field_Nova_this(nova_meta_Nova_Field* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* name, nova_meta_Nova_Type* type)
 {
+	this->nova_meta_Nova_Field_Nova_name = name;
+	this->nova_meta_Nova_Field_Nova_type = type;
 }
 
 void nova_meta_Nova_Field_Nova_super(nova_meta_Nova_Field* this, nova_exception_Nova_ExceptionData* exceptionData)

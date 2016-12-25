@@ -72,7 +72,6 @@ stabilitytest_TimeStability_Extension_VTable stabilitytest_TimeStability_Extensi
 		0,
 		0,
 		0,
-		0,
 	},
 	nova_Nova_Object_Nova_toString,
 	nova_Nova_Object_Accessor_Nova_hashCodeLong,

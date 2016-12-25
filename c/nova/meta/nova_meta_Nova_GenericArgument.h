@@ -65,9 +65,9 @@ CCLASS_CLASS
 )
 
 void nova_meta_Nova_GenericArgument_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData);
-nova_meta_Nova_GenericArgument* nova_meta_Nova_GenericArgument_Nova_construct(nova_meta_Nova_GenericArgument* this, nova_exception_Nova_ExceptionData* exceptionData);
+nova_meta_Nova_GenericArgument* nova_meta_Nova_GenericArgument_Nova_construct(nova_meta_Nova_GenericArgument* this, nova_exception_Nova_ExceptionData* exceptionData, nova_meta_Nova_Type* value);
 void nova_meta_Nova_GenericArgument_Nova_destroy(nova_meta_Nova_GenericArgument** this, nova_exception_Nova_ExceptionData* exceptionData);
-void nova_meta_Nova_GenericArgument_Nova_this(nova_meta_Nova_GenericArgument* this, nova_exception_Nova_ExceptionData* exceptionData);
+void nova_meta_Nova_GenericArgument_Nova_this(nova_meta_Nova_GenericArgument* this, nova_exception_Nova_ExceptionData* exceptionData, nova_meta_Nova_Type* value);
 void nova_meta_Nova_GenericArgument_Nova_super(nova_meta_Nova_GenericArgument* this, nova_exception_Nova_ExceptionData* exceptionData);
 
 #endif

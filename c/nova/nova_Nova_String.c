@@ -44,14 +44,18 @@ typedef struct
 } Context1;
 typedef struct
 {
-	/* String output */ nova_Nova_String** nova_Nova_String_Nova_output;
-	/* Int offset */ int* nova_Nova_String_Nova_offset;
-	/* String replace */ nova_Nova_String** nova_Nova_String_Nova_replace;
+	/* var
+	String output */ nova_Nova_String** nova_Nova_String_Nova_output;
+	/* var
+	Int offset */ int* nova_Nova_String_Nova_offset;
+	/* let String replace */ nova_Nova_String** nova_Nova_String_Nova_replace;
 } Context2;
 typedef struct
 {
-	/* Array<String> strs */ nova_datastruct_list_Nova_Array** nova_Nova_String_Nova_strs;
-	/* Int start */ int* nova_Nova_String_Nova_start;
+	/* let
+	Array<String> strs */ nova_datastruct_list_Nova_Array** nova_Nova_String_Nova_strs;
+	/* let
+	Int start */ int* nova_Nova_String_Nova_start;
 } Context3;
 
 

@@ -70,7 +70,6 @@ stabilitytest_ThreadImplementation_Extension_VTable stabilitytest_ThreadImplemen
 		0,
 		0,
 		0,
-		0,
 	},
 	nova_Nova_Object_Nova_toString,
 	nova_Nova_Object_Accessor_Nova_hashCodeLong,
@@ -133,10 +132,10 @@ void stabilitytest_Nova_ThreadImplementation_Nova_this(stabilitytest_Nova_Thread
 
 void stabilitytest_Nova_ThreadImplementation_Nova_run(stabilitytest_Nova_ThreadImplementation* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
-	int l2_Nova_i = 0;
+	int l3_Nova_i = 0;
 	
-	l2_Nova_i = (int)0;
-	for (; l2_Nova_i < (int)this->prv->stabilitytest_Nova_ThreadImplementation_Nova_times; l2_Nova_i++)
+	l3_Nova_i = (int)0;
+	for (; l3_Nova_i < (int)this->prv->stabilitytest_Nova_ThreadImplementation_Nova_times; l3_Nova_i++)
 	{
 		nova_thread_Nova_Thread_static_Nova_sleep(0, exceptionData, this->prv->stabilitytest_Nova_ThreadImplementation_Nova_millis);
 	}

@@ -69,7 +69,6 @@ stabilitytest_UnstableException_Extension_VTable stabilitytest_UnstableException
 		0,
 		0,
 		0,
-		0,
 	},
 	nova_exception_Nova_Exception_Nova_toString,
 	nova_Nova_Object_Accessor_Nova_hashCodeLong,

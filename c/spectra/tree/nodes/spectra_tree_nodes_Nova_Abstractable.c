@@ -66,6 +66,7 @@ spectra_tree_nodes_Abstractable_Extension_VTable spectra_tree_nodes_Abstractable
 		0,
 		0,
 		0,
+		0,
 		(char(*)(spectra_tree_nodes_Nova_Abstractable*, nova_exception_Nova_ExceptionData*, char))spectra_tree_nodes_Nova_Abstractable_Mutator_Nova_isAbstract,
 		(char(*)(spectra_tree_nodes_Nova_Abstractable*, nova_exception_Nova_ExceptionData*))spectra_tree_nodes_Nova_Abstractable_Accessor_Nova_isAbstract,
 		0,

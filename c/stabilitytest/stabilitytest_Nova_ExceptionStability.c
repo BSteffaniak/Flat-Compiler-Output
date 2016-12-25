@@ -72,7 +72,6 @@ stabilitytest_ExceptionStability_Extension_VTable stabilitytest_ExceptionStabili
 		0,
 		0,
 		0,
-		0,
 	},
 	nova_Nova_Object_Nova_toString,
 	nova_Nova_Object_Accessor_Nova_hashCodeLong,
@@ -136,10 +135,10 @@ void stabilitytest_Nova_ExceptionStability_Nova_test(stabilitytest_Nova_Exceptio
 	}
 	CATCH (nova_exception_Exception_Extension_VTable_val.classInstance)
 	{
-		nova_exception_Nova_Exception* l2_Nova_e = (nova_exception_Nova_Exception*)nova_null;
+		nova_exception_Nova_Exception* l3_Nova_e = (nova_exception_Nova_Exception*)nova_null;
 		
-		l2_Nova_e = (nova_exception_Nova_Exception*)exceptionData->nova_exception_Nova_ExceptionData_Nova_thrownException;
-		l1_Nova_worked = (nova_Nova_Class*)l2_Nova_e->vtable->classInstance == (nova_Nova_Class*)nova_exception_Exception_Extension_VTable_val.classInstance;
+		l3_Nova_e = (nova_exception_Nova_Exception*)exceptionData->nova_exception_Nova_ExceptionData_Nova_thrownException;
+		l1_Nova_worked = (nova_Nova_Class*)l3_Nova_e->vtable->classInstance == (nova_Nova_Class*)nova_exception_Exception_Extension_VTable_val.classInstance;
 	}
 	FINALLY
 	{
@@ -157,9 +156,9 @@ void stabilitytest_Nova_ExceptionStability_Nova_test(stabilitytest_Nova_Exceptio
 	}
 	CATCH (nova_exception_DivideByZeroException_Extension_VTable_val.classInstance)
 	{
-		nova_exception_Nova_DivideByZeroException* l4_Nova_e = (nova_exception_Nova_DivideByZeroException*)nova_null;
+		nova_exception_Nova_DivideByZeroException* l5_Nova_e = (nova_exception_Nova_DivideByZeroException*)nova_null;
 		
-		l4_Nova_e = (nova_exception_Nova_DivideByZeroException*)exceptionData->nova_exception_Nova_ExceptionData_Nova_thrownException;
+		l5_Nova_e = (nova_exception_Nova_DivideByZeroException*)exceptionData->nova_exception_Nova_ExceptionData_Nova_thrownException;
 		l1_Nova_worked = 1;
 		nova_io_Nova_Console_1_static_Nova_writeLine(0, exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("OK")));
 	}
@@ -183,24 +182,24 @@ void stabilitytest_Nova_ExceptionStability_Nova_testException(stabilitytest_Nova
 				novaEnv.nova_exception_ExceptionData.addCaught(exceptionData, exceptionData, nova_exception_DivideByZeroException_Extension_VTable_val.classInstance, 0);
 				
 				{
-					int l2_Nova_den = 0;
-					int l2_Nova_i = 0;
-					int nova_zero_check13 = 0;
+					int l3_Nova_den = 0;
+					int l3_Nova_i = 0;
+					int nova_zero_check5 = 0;
 					
-					l2_Nova_den = (int)(0);
-					nova_zero_check13 = l2_Nova_den;
-					if (nova_zero_check13 == 0)
+					l3_Nova_den = (int)(0);
+					nova_zero_check5 = l3_Nova_den;
+					if (nova_zero_check5 == 0)
 					{
 						THROW(nova_exception_Nova_DivideByZeroException_Nova_construct(0, exceptionData), 0);
 					}
-					l2_Nova_i = 43 / nova_zero_check13;
+					l3_Nova_i = 43 / nova_zero_check5;
 				}
 			}
 			CATCH (nova_exception_DivideByZeroException_Extension_VTable_val.classInstance)
 			{
-				nova_exception_Nova_DivideByZeroException* l5_Nova_e = (nova_exception_Nova_DivideByZeroException*)nova_null;
+				nova_exception_Nova_DivideByZeroException* l6_Nova_e = (nova_exception_Nova_DivideByZeroException*)nova_null;
 				
-				l5_Nova_e = (nova_exception_Nova_DivideByZeroException*)exceptionData->nova_exception_Nova_ExceptionData_Nova_thrownException;
+				l6_Nova_e = (nova_exception_Nova_DivideByZeroException*)exceptionData->nova_exception_Nova_ExceptionData_Nova_thrownException;
 				nova_io_Nova_Console_1_static_Nova_writeLine(0, exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("OK")));
 				nova_io_Nova_Console_0_static_Nova_write(0, exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("Checking StabilityTestException... ")));
 				THROW(stabilitytest_Nova_StabilityTestException_Nova_construct(0, exceptionData), 0);
@@ -214,9 +213,9 @@ void stabilitytest_Nova_ExceptionStability_Nova_testException(stabilitytest_Nova
 	}
 	CATCH (stabilitytest_StabilityTestException_Extension_VTable_val.classInstance)
 	{
-		stabilitytest_Nova_StabilityTestException* l7_Nova_e = (stabilitytest_Nova_StabilityTestException*)nova_null;
+		stabilitytest_Nova_StabilityTestException* l8_Nova_e = (stabilitytest_Nova_StabilityTestException*)nova_null;
 		
-		l7_Nova_e = (stabilitytest_Nova_StabilityTestException*)exceptionData->nova_exception_Nova_ExceptionData_Nova_thrownException;
+		l8_Nova_e = (stabilitytest_Nova_StabilityTestException*)exceptionData->nova_exception_Nova_ExceptionData_Nova_thrownException;
 		nova_io_Nova_Console_1_static_Nova_writeLine(0, exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("OK")));
 		THROW(nova_exception_Nova_Exception_Nova_construct(0, exceptionData, 0), 0);
 	}
@@ -245,9 +244,9 @@ void stabilitytest_Nova_ExceptionStability_Nova_testSoftExceptions(stabilitytest
 	}
 	CATCH (stabilitytest_StabilityTestException_Extension_VTable_val.classInstance)
 	{
-		stabilitytest_Nova_StabilityTestException* l3_Nova_e = (stabilitytest_Nova_StabilityTestException*)nova_null;
+		stabilitytest_Nova_StabilityTestException* l4_Nova_e = (stabilitytest_Nova_StabilityTestException*)nova_null;
 		
-		l3_Nova_e = (stabilitytest_Nova_StabilityTestException*)exceptionData->nova_exception_Nova_ExceptionData_Nova_thrownException;
+		l4_Nova_e = (stabilitytest_Nova_StabilityTestException*)exceptionData->nova_exception_Nova_ExceptionData_Nova_thrownException;
 		stabilitytest_Nova_StabilityTest_Nova_fail(this->stabilitytest_Nova_StabilityTestCase_Nova_program, exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("Caught soft exception without soft keyword")), (intptr_t)nova_null);
 	}
 	FINALLY

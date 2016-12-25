@@ -1358,21 +1358,21 @@ typedef struct nova_math_logic_native_WFF
 nova_math_logic_Nova_WFF_native_Nova_construct WFF;
 } nova_math_logic_native_WFF;
 
-typedef nova_meta_Nova_Field* (*nova_meta_Nova_Field_native_Nova_construct)(nova_meta_Nova_Field*, nova_exception_Nova_ExceptionData*);
+typedef nova_meta_Nova_Field* (*nova_meta_Nova_Field_native_Nova_construct)(nova_meta_Nova_Field*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, nova_meta_Nova_Type*);
 
 typedef struct nova_meta_native_Field
 {
 nova_meta_Nova_Field_native_Nova_construct Field;
 } nova_meta_native_Field;
 
-typedef nova_meta_Nova_GenericArgument* (*nova_meta_Nova_GenericArgument_native_Nova_construct)(nova_meta_Nova_GenericArgument*, nova_exception_Nova_ExceptionData*);
+typedef nova_meta_Nova_GenericArgument* (*nova_meta_Nova_GenericArgument_native_Nova_construct)(nova_meta_Nova_GenericArgument*, nova_exception_Nova_ExceptionData*, nova_meta_Nova_Type*);
 
 typedef struct nova_meta_native_GenericArgument
 {
 nova_meta_Nova_GenericArgument_native_Nova_construct GenericArgument;
 } nova_meta_native_GenericArgument;
 
-typedef nova_meta_Nova_GenericParameter* (*nova_meta_Nova_GenericParameter_native_Nova_construct)(nova_meta_Nova_GenericParameter*, nova_exception_Nova_ExceptionData*);
+typedef nova_meta_Nova_GenericParameter* (*nova_meta_Nova_GenericParameter_native_Nova_construct)(nova_meta_Nova_GenericParameter*, nova_exception_Nova_ExceptionData*, nova_meta_Nova_Type*, nova_meta_Nova_Type*);
 
 typedef struct nova_meta_native_GenericParameter
 {

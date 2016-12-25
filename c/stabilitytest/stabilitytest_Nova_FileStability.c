@@ -75,7 +75,6 @@ stabilitytest_FileStability_Extension_VTable stabilitytest_FileStability_Extensi
 		0,
 		0,
 		0,
-		0,
 	},
 	nova_Nova_Object_Nova_toString,
 	nova_Nova_Object_Accessor_Nova_hashCodeLong,
@@ -137,24 +136,24 @@ void stabilitytest_Nova_FileStability_Nova_test(stabilitytest_Nova_FileStability
 		novaEnv.nova_exception_ExceptionData.addCaught(exceptionData, exceptionData, nova_exception_Exception_Extension_VTable_val.classInstance, 0);
 		
 		{
-			nova_io_Nova_File* l1_Nova_f = (nova_io_Nova_File*)nova_null;
-			nova_io_Nova_FileWriter* l1_Nova_writer = (nova_io_Nova_FileWriter*)nova_null;
-			nova_io_Nova_FileReader* l1_Nova_reader = (nova_io_Nova_FileReader*)nova_null;
+			nova_io_Nova_File* l2_Nova_f = (nova_io_Nova_File*)nova_null;
+			nova_io_Nova_FileWriter* l2_Nova_writer = (nova_io_Nova_FileWriter*)nova_null;
+			nova_io_Nova_FileReader* l2_Nova_reader = (nova_io_Nova_FileReader*)nova_null;
 			
-			l1_Nova_f = nova_io_Nova_File_1_Nova_construct(0, exceptionData, (nova_Nova_String*)(nova_Nova_String_Nova_plus(nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("temp")), exceptionData, (nova_Nova_String*)(nova_Nova_String_Nova_plus(nova_primitive_number_Nova_Long_static_Nova_toString(0, exceptionData, (nova_time_Nova_Time_Accessor_static_Nova_currentTimeMillis(0, exceptionData))), exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("")))))));
-			l1_Nova_writer = nova_io_Nova_FileWriter_0_Nova_construct(0, exceptionData, l1_Nova_f);
-			l1_Nova_reader = nova_io_Nova_FileReader_0_Nova_construct(0, exceptionData, l1_Nova_f);
-			stabilitytest_Nova_FileStability_Nova_createFile(this, exceptionData, l1_Nova_writer);
-			stabilitytest_Nova_FileStability_Nova_writeToFile(this, exceptionData, l1_Nova_writer);
-			stabilitytest_Nova_FileStability_Nova_readFromFile(this, exceptionData, l1_Nova_reader);
-			stabilitytest_Nova_FileStability_Nova_deleteFile(this, exceptionData, l1_Nova_writer);
+			l2_Nova_f = nova_io_Nova_File_1_Nova_construct(0, exceptionData, (nova_Nova_String*)(nova_Nova_String_Nova_plus(nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("temp")), exceptionData, (nova_Nova_String*)(nova_Nova_String_Nova_plus(nova_primitive_number_Nova_Long_static_Nova_toString(0, exceptionData, (nova_time_Nova_Time_Accessor_static_Nova_currentTimeMillis(0, exceptionData))), exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("")))))));
+			l2_Nova_writer = nova_io_Nova_FileWriter_0_Nova_construct(0, exceptionData, l2_Nova_f);
+			l2_Nova_reader = nova_io_Nova_FileReader_0_Nova_construct(0, exceptionData, l2_Nova_f);
+			stabilitytest_Nova_FileStability_Nova_createFile(this, exceptionData, l2_Nova_writer);
+			stabilitytest_Nova_FileStability_Nova_writeToFile(this, exceptionData, l2_Nova_writer);
+			stabilitytest_Nova_FileStability_Nova_readFromFile(this, exceptionData, l2_Nova_reader);
+			stabilitytest_Nova_FileStability_Nova_deleteFile(this, exceptionData, l2_Nova_writer);
 		}
 	}
 	CATCH (nova_exception_Exception_Extension_VTable_val.classInstance)
 	{
-		nova_exception_Nova_Exception* l2_Nova_e = (nova_exception_Nova_Exception*)nova_null;
+		nova_exception_Nova_Exception* l3_Nova_e = (nova_exception_Nova_Exception*)nova_null;
 		
-		l2_Nova_e = (nova_exception_Nova_Exception*)exceptionData->nova_exception_Nova_ExceptionData_Nova_thrownException;
+		l3_Nova_e = (nova_exception_Nova_Exception*)exceptionData->nova_exception_Nova_ExceptionData_Nova_thrownException;
 		stabilitytest_Nova_StabilityTest_Nova_fail(this->stabilitytest_Nova_StabilityTestCase_Nova_program, exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("Failed; Exception thrown")), (intptr_t)nova_null);
 	}
 	FINALLY
@@ -172,11 +171,11 @@ void stabilitytest_Nova_FileStability_Nova_createFile(stabilitytest_Nova_FileSta
 
 void stabilitytest_Nova_FileStability_Nova_writeToFile(stabilitytest_Nova_FileStability* this, nova_exception_Nova_ExceptionData* exceptionData, nova_io_Nova_FileWriter* writer)
 {
-	int l2_Nova_i = 0;
+	int l3_Nova_i = 0;
 	
 	nova_io_Nova_Console_0_static_Nova_write(0, exceptionData, (nova_Nova_String*)(nova_Nova_String_Nova_plus(nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("Writing ")), exceptionData, (nova_Nova_String*)(nova_Nova_String_Nova_plus(nova_primitive_number_Nova_Int_static_Nova_toString(0, exceptionData, (stabilitytest_Nova_FileStability_Nova_lines)), exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)(" lines of data to file... ")))))));
-	l2_Nova_i = (int)0;
-	for (; l2_Nova_i < (int)stabilitytest_Nova_FileStability_Nova_lines; l2_Nova_i++)
+	l3_Nova_i = (int)0;
+	for (; l3_Nova_i < (int)stabilitytest_Nova_FileStability_Nova_lines; l3_Nova_i++)
 	{
 		nova_io_Nova_FileWriter_Nova_writeLine(writer, exceptionData, stabilitytest_Nova_FileStability_Nova_inputString);
 	}
@@ -196,7 +195,7 @@ void stabilitytest_Nova_FileStability_Nova_readFromFile(stabilitytest_Nova_FileS
 	stabilitytest_Nova_StabilityTest_Nova_fail(this->stabilitytest_Nova_StabilityTestCase_Nova_program, exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("File reader failed to open")), !nova_io_Nova_FileReader_Accessor_Nova_isOpen(reader, exceptionData));
 	l1_Nova_times = (int)(0);
 	l1_Nova_line = nova_io_Nova_FileReader_Nova_readLine(reader, exceptionData);
-	while (l1_Nova_line != (nova_Nova_String*)nova_null)
+	while ((l1_Nova_line) != (nova_Nova_String*)nova_null)
 	{
 		stabilitytest_Nova_StabilityTest_Nova_fail(this->stabilitytest_Nova_StabilityTestCase_Nova_program, exceptionData, (nova_Nova_String*)(nova_Nova_String_Nova_plus(nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("Reading from file failed: '")), exceptionData, (nova_Nova_String*)(nova_Nova_String_Nova_plus((l1_Nova_line), exceptionData, (nova_Nova_String*)(nova_Nova_String_Nova_plus(nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("' != '")), exceptionData, (nova_Nova_String*)(nova_Nova_String_Nova_plus((stabilitytest_Nova_FileStability_Nova_inputString), exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("'")))))))))), !nova_Nova_String_Nova_equals(l1_Nova_line, exceptionData, stabilitytest_Nova_FileStability_Nova_inputString));
 		l1_Nova_line = nova_io_Nova_FileReader_Nova_readLine(reader, exceptionData);
