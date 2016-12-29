@@ -37,49 +37,6 @@
 
 
 
-nova_datastruct_list_ImmutableCharArrayIterator_Extension_VTable nova_datastruct_list_ImmutableCharArrayIterator_Extension_VTable_val =
-{
-	0,
-	{
-		0,
-		0,
-		0,
-		(char(*)(nova_datastruct_list_Nova_Iterator*, nova_exception_Nova_ExceptionData*))nova_datastruct_list_Nova_ImmutableCharArrayIterator_Accessor_Nova_hasNext,
-		(nova_Nova_Object*(*)(nova_datastruct_list_Nova_Iterator*, nova_exception_Nova_ExceptionData*))nova_datastruct_list_Nova_ImmutableCharArrayIterator_Accessor_Nova_next,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		(char(*)(nova_operators_Nova_EqualsOperator*, nova_exception_Nova_ExceptionData*, nova_Nova_Object*))nova_Nova_Object_Nova_equals,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-	},
-	nova_Nova_Object_Nova_toString,
-	nova_Nova_Object_Accessor_Nova_hashCodeLong,
-};
-
-
 CCLASS_PRIVATE
 (
 	nova_datastruct_list_Nova_ImmutableCharArray* nova_datastruct_list_Nova_ImmutableCharArrayIterator_Nova_array;

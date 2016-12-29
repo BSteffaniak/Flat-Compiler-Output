@@ -32,47 +32,6 @@
 
 
 
-nova_operators_MultiplyEqualsOperator_Extension_VTable nova_operators_MultiplyEqualsOperator_Extension_VTable_val =
-{
-	0,
-	{
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-	},
-};
-
-
 void nova_operators_Nova_MultiplyEqualsOperator_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData)
 {
 	{

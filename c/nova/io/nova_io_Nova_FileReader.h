@@ -6,6 +6,7 @@ typedef struct nova_io_Nova_FileReader nova_io_Nova_FileReader;
 
 
 #include <Nova.h>
+#include <VTableDeclarations.h>
 #include <InterfaceVTable.h>
 #include <ExceptionHandler.h>
 #include <NovaClassData.h>
@@ -41,17 +42,6 @@ typedef struct nova_io_Nova_FileReader nova_io_Nova_FileReader;
 #include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <nova/io/nova_io_Nova_File.h>
 #include <nova/io/nova_io_Nova_InputStream.h>
-
-
-typedef struct nova_io_FileReader_Extension_VTable nova_io_FileReader_Extension_VTable;
-struct nova_io_FileReader_Extension_VTable
-{
-	nova_Nova_Class* classInstance;
-	nova_Interface_VTable itable;
-};
-
-extern nova_io_FileReader_Extension_VTable nova_io_FileReader_Extension_VTable_val;
-
 
 CCLASS_CLASS
 (

@@ -12,6 +12,7 @@ typedef char (*nova_Nova_String_closure3_Nova_transform)(void*, nova_exception_N
 typedef char (*nova_Nova_String_closure4_Nova_transform)(void*, nova_exception_Nova_ExceptionData*, char, int, void*);
 
 #include <Nova.h>
+#include <VTableDeclarations.h>
 #include <InterfaceVTable.h>
 #include <ExceptionHandler.h>
 #include <NovaClassData.h>
@@ -54,21 +55,6 @@ typedef char (*nova_Nova_String_closure4_Nova_transform)(void*, nova_exception_N
 #include <nova/regex/nova_regex_Nova_Match.h>
 #include <nova/nova_Nova_Substring.h>
 #include <nova/NativeObject.h>
-
-
-typedef struct nova_String_Extension_VTable nova_String_Extension_VTable;
-struct nova_String_Extension_VTable
-{
-	nova_Nova_Class* classInstance;
-	nova_Interface_VTable itable;
-	nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_String*, nova_exception_Nova_ExceptionData*);
-	long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_String*, nova_exception_Nova_ExceptionData*);
-	nova_Nova_String* (*nova_Nova_String_virtual_Nova_concat)(nova_Nova_String*, nova_exception_Nova_ExceptionData*, nova_Nova_String*);
-	nova_Nova_String* (*nova_Nova_String_virtual_Nova_substring)(nova_Nova_String*, nova_exception_Nova_ExceptionData*, int, int);
-};
-
-extern nova_String_Extension_VTable nova_String_Extension_VTable_val;
-
 
 CCLASS_CLASS
 (

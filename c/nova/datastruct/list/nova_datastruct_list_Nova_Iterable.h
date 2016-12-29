@@ -6,6 +6,7 @@ typedef struct nova_datastruct_list_Nova_Iterable nova_datastruct_list_Nova_Iter
 
 
 #include <Nova.h>
+#include <VTableDeclarations.h>
 #include <InterfaceVTable.h>
 #include <ExceptionHandler.h>
 #include <NovaClassData.h>
@@ -40,17 +41,6 @@ typedef struct nova_datastruct_list_Nova_Iterable nova_datastruct_list_Nova_Iter
 #include <nova/nova_Nova_Class.h>
 #include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_Iterator.h>
-
-
-typedef struct nova_datastruct_list_Iterable_Extension_VTable nova_datastruct_list_Iterable_Extension_VTable;
-struct nova_datastruct_list_Iterable_Extension_VTable
-{
-	nova_Nova_Class* classInstance;
-	nova_Interface_VTable itable;
-};
-
-extern nova_datastruct_list_Iterable_Extension_VTable nova_datastruct_list_Iterable_Extension_VTable_val;
-
 
 CCLASS_CLASS
 (

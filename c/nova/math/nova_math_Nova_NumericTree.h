@@ -6,6 +6,7 @@ typedef struct nova_math_Nova_NumericTree nova_math_Nova_NumericTree;
 
 
 #include <Nova.h>
+#include <VTableDeclarations.h>
 #include <InterfaceVTable.h>
 #include <ExceptionHandler.h>
 #include <NovaClassData.h>
@@ -42,19 +43,6 @@ typedef struct nova_math_Nova_NumericTree nova_math_Nova_NumericTree;
 #include <nova/math/nova_math_Nova_NumericOperation.h>
 #include <nova/NativeObject.h>
 #include <nova/operators/nova_operators_Nova_EqualsOperator.h>
-
-
-typedef struct nova_math_NumericTree_Extension_VTable nova_math_NumericTree_Extension_VTable;
-struct nova_math_NumericTree_Extension_VTable
-{
-	nova_Nova_Class* classInstance;
-	nova_Interface_VTable itable;
-	nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_math_Nova_NumericTree*, nova_exception_Nova_ExceptionData*);
-	long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
-};
-
-extern nova_math_NumericTree_Extension_VTable nova_math_NumericTree_Extension_VTable_val;
-
 
 CCLASS_CLASS
 (

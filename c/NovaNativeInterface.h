@@ -201,11 +201,13 @@ nova_Nova_Class_native_Nova_construct Class;
 } nova_native_Class;
 
 typedef nova_Nova_String* (*nova_Nova_Object_native_Nova_toString)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
+typedef void (*nova_Nova_Object_native_Nova_hey)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 typedef nova_Nova_Object* (*nova_Nova_Object_native_Nova_construct)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 
 typedef struct nova_native_Object
 {
 nova_Nova_Object_native_Nova_toString toString;
+nova_Nova_Object_native_Nova_hey hey;
 nova_Nova_Object_native_Nova_construct Object;
 } nova_native_Object;
 

@@ -59,51 +59,6 @@ typedef struct
 } Context3;
 
 
-nova_String_Extension_VTable nova_String_Extension_VTable_val =
-{
-	0,
-	{
-		(int(*)(nova_datastruct_Nova_Comparable*, nova_exception_Nova_ExceptionData*, nova_Nova_Object*))nova_Nova_String_Nova_compareTo,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		(char(*)(nova_operators_Nova_EqualsOperator*, nova_exception_Nova_ExceptionData*, nova_Nova_Object*))nova_Nova_String_Nova_equals,
-		0,
-		(nova_Nova_Object*(*)(nova_operators_Nova_MultiplyOperator*, nova_exception_Nova_ExceptionData*, nova_Nova_Object*))nova_Nova_String_Nova_multiply,
-		0,
-		0,
-		(nova_Nova_Object*(*)(nova_operators_Nova_PlusOperator*, nova_exception_Nova_ExceptionData*, nova_Nova_Object*))nova_Nova_String_Nova_plus,
-		0,
-		0,
-	},
-	nova_Nova_String_Nova_toString,
-	nova_Nova_String_Accessor_Nova_hashCodeLong,
-	nova_Nova_String_Nova_concat,
-	nova_Nova_String_Nova_substring,
-};
-
-
 
 int nova_Nova_String_Nova_calculateSize(nova_Nova_String* this, nova_exception_Nova_ExceptionData* exceptionData, char* chars);
 nova_Nova_String* nova_Nova_String_Nova_lambda1(nova_Nova_String* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* _1, int _2, nova_datastruct_list_Nova_Array* _3, Context1* context);

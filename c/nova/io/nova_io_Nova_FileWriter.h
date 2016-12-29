@@ -6,6 +6,7 @@ typedef struct nova_io_Nova_FileWriter nova_io_Nova_FileWriter;
 
 
 #include <Nova.h>
+#include <VTableDeclarations.h>
 #include <InterfaceVTable.h>
 #include <ExceptionHandler.h>
 #include <NovaClassData.h>
@@ -44,20 +45,6 @@ typedef struct nova_io_Nova_FileWriter nova_io_Nova_FileWriter;
 #include <nova/io/nova_io_Nova_OutputStream.h>
 #include <nova/NativeObject.h>
 #include <nova/operators/nova_operators_Nova_EqualsOperator.h>
-
-
-typedef struct nova_io_FileWriter_Extension_VTable nova_io_FileWriter_Extension_VTable;
-struct nova_io_FileWriter_Extension_VTable
-{
-	nova_Nova_Class* classInstance;
-	nova_Interface_VTable itable;
-	nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
-	long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
-	char (*nova_io_Nova_OutputStream_virtual_Nova_write)(nova_io_Nova_FileWriter*, nova_exception_Nova_ExceptionData*, nova_Nova_String*);
-};
-
-extern nova_io_FileWriter_Extension_VTable nova_io_FileWriter_Extension_VTable_val;
-
 
 CCLASS_CLASS
 (

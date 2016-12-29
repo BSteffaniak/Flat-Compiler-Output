@@ -42,6 +42,7 @@ typedef char (*nova_datastruct_list_Nova_CharArray_closure31_Nova_func)(void*, n
 typedef char (*nova_datastruct_list_Nova_CharArray_closure32_Nova_func)(void*, nova_exception_Nova_ExceptionData*, char, void*);
 
 #include <Nova.h>
+#include <VTableDeclarations.h>
 #include <InterfaceVTable.h>
 #include <ExceptionHandler.h>
 #include <NovaClassData.h>
@@ -84,24 +85,6 @@ typedef char (*nova_datastruct_list_Nova_CharArray_closure32_Nova_func)(void*, n
 #include <nova/datastruct/list/nova_datastruct_list_Nova_OrderedList.h>
 #include <nova/NativeObject.h>
 #include <nova/operators/nova_operators_Nova_EqualsOperator.h>
-
-
-typedef struct nova_datastruct_list_CharArray_Extension_VTable nova_datastruct_list_CharArray_Extension_VTable;
-struct nova_datastruct_list_CharArray_Extension_VTable
-{
-	nova_Nova_Class* classInstance;
-	nova_Interface_VTable itable;
-	nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_datastruct_list_Nova_Array*, nova_exception_Nova_ExceptionData*);
-	long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_datastruct_list_Nova_CharArray*, nova_exception_Nova_ExceptionData*);
-	nova_datastruct_list_Nova_CharArray* (*nova_datastruct_list_Nova_Array_virtual_Nova_addUnique)(nova_datastruct_list_Nova_CharArray*, nova_exception_Nova_ExceptionData*, char);
-	char* (*nova_datastruct_list_Nova_Array_virtual_Nova_cloneData)(nova_datastruct_list_Nova_CharArray*, nova_exception_Nova_ExceptionData*);
-	nova_datastruct_list_Nova_CharArray* (*nova_datastruct_list_Nova_Array_virtual_Nova_clone)(nova_datastruct_list_Nova_CharArray*, nova_exception_Nova_ExceptionData*);
-	char (*nova_datastruct_list_Nova_Array_virtual_Nova_get)(nova_datastruct_list_Nova_CharArray*, nova_exception_Nova_ExceptionData*, int);
-	char (*nova_datastruct_list_Nova_Array_virtual_Nova_set)(nova_datastruct_list_Nova_CharArray*, nova_exception_Nova_ExceptionData*, int, char);
-};
-
-extern nova_datastruct_list_CharArray_Extension_VTable nova_datastruct_list_CharArray_Extension_VTable_val;
-
 
 CCLASS_CLASS
 (

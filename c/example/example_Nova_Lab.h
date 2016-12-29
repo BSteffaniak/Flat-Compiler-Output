@@ -6,6 +6,7 @@ typedef struct example_Nova_Lab example_Nova_Lab;
 
 
 #include <Nova.h>
+#include <VTableDeclarations.h>
 #include <InterfaceVTable.h>
 #include <ExceptionHandler.h>
 #include <NovaClassData.h>
@@ -49,19 +50,6 @@ typedef struct example_Nova_Lab example_Nova_Lab;
 #include <nova/NativeObject.h>
 #include <nova/operators/nova_operators_Nova_EqualsOperator.h>
 
-
-typedef struct example_Lab_Extension_VTable example_Lab_Extension_VTable;
-struct example_Lab_Extension_VTable
-{
-	nova_Nova_Class* classInstance;
-	nova_Interface_VTable itable;
-	nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
-	long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
-};
-
-extern example_Lab_Extension_VTable example_Lab_Extension_VTable_val;
-
-
 CCLASS_CLASS
 (
 	example_Nova_Lab, 
@@ -73,6 +61,7 @@ void example_Nova_Lab_Nova_init_static(nova_exception_Nova_ExceptionData* except
 example_Nova_Lab* example_Nova_Lab_Nova_construct(example_Nova_Lab* this, nova_exception_Nova_ExceptionData* exceptionData);
 void example_Nova_Lab_Nova_destroy(example_Nova_Lab** this, nova_exception_Nova_ExceptionData* exceptionData);
 void example_Nova_Lab_static_Nova_main(example_Nova_Lab* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_list_Nova_Array* args);
+void example_Nova_Lab_Nova_hey(example_Nova_Lab* this, nova_exception_Nova_ExceptionData* exceptionData);
 void example_Nova_Lab_Nova_this(example_Nova_Lab* this, nova_exception_Nova_ExceptionData* exceptionData);
 void example_Nova_Lab_Nova_super(example_Nova_Lab* this, nova_exception_Nova_ExceptionData* exceptionData);
 

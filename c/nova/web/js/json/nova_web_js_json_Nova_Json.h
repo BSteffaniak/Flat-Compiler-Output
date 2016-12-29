@@ -6,6 +6,7 @@ typedef struct nova_web_js_json_Nova_Json nova_web_js_json_Nova_Json;
 
 
 #include <Nova.h>
+#include <VTableDeclarations.h>
 #include <InterfaceVTable.h>
 #include <ExceptionHandler.h>
 #include <NovaClassData.h>
@@ -47,20 +48,6 @@ typedef struct nova_web_js_json_Nova_Json nova_web_js_json_Nova_Json;
 #include <nova/datastruct/list/nova_datastruct_list_Nova_ArrayIterator.h>
 #include <nova/NativeObject.h>
 #include <nova/operators/nova_operators_Nova_EqualsOperator.h>
-
-
-typedef struct nova_web_js_json_Json_Extension_VTable nova_web_js_json_Json_Extension_VTable;
-struct nova_web_js_json_Json_Extension_VTable
-{
-	nova_Nova_Class* classInstance;
-	nova_Interface_VTable itable;
-	nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_web_js_json_Nova_Json*, nova_exception_Nova_ExceptionData*);
-	long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
-	nova_Nova_Object* (*nova_datastruct_Nova_HashMap_virtual_Nova_add)(nova_datastruct_Nova_HashMap*, nova_exception_Nova_ExceptionData*, nova_Nova_Object*, nova_Nova_Object*);
-};
-
-extern nova_web_js_json_Json_Extension_VTable nova_web_js_json_Json_Extension_VTable_val;
-
 
 CCLASS_CLASS
 (

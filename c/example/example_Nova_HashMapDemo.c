@@ -51,49 +51,6 @@ typedef struct
 } Context5;
 
 
-example_HashMapDemo_Extension_VTable example_HashMapDemo_Extension_VTable_val =
-{
-	0,
-	{
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		(char(*)(nova_operators_Nova_EqualsOperator*, nova_exception_Nova_ExceptionData*, nova_Nova_Object*))nova_Nova_Object_Nova_equals,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-	},
-	nova_Nova_Object_Nova_toString,
-	nova_Nova_Object_Accessor_Nova_hashCodeLong,
-};
-
-
 
 void example_Nova_HashMapDemo_static_Nova_lambda56(example_Nova_HashMapDemo* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_Nova_Pair* _1, int _2, nova_datastruct_Nova_HashMap* _3, Context1* context);
 void example_Nova_HashMapDemo_static_Nova_lambda57(example_Nova_HashMapDemo* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_Nova_Pair* _1, int _2, nova_datastruct_Nova_HashMap* _3, Context2* context);

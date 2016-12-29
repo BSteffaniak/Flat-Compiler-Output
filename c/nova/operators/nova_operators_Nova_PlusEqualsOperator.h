@@ -6,6 +6,7 @@ typedef struct nova_operators_Nova_PlusEqualsOperator nova_operators_Nova_PlusEq
 
 
 #include <Nova.h>
+#include <VTableDeclarations.h>
 #include <InterfaceVTable.h>
 #include <ExceptionHandler.h>
 #include <NovaClassData.h>
@@ -39,17 +40,6 @@ typedef struct nova_operators_Nova_PlusEqualsOperator nova_operators_Nova_PlusEq
 #include <nova/nova_Nova_System.h>
 #include <nova/nova_Nova_Class.h>
 #include <nova/regex/nova_regex_Nova_Pattern.h>
-
-
-typedef struct nova_operators_PlusEqualsOperator_Extension_VTable nova_operators_PlusEqualsOperator_Extension_VTable;
-struct nova_operators_PlusEqualsOperator_Extension_VTable
-{
-	nova_Nova_Class* classInstance;
-	nova_Interface_VTable itable;
-};
-
-extern nova_operators_PlusEqualsOperator_Extension_VTable nova_operators_PlusEqualsOperator_Extension_VTable_val;
-
 
 CCLASS_CLASS
 (

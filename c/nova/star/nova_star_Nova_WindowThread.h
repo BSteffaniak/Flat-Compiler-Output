@@ -6,6 +6,7 @@ typedef struct nova_star_Nova_WindowThread nova_star_Nova_WindowThread;
 
 
 #include <Nova.h>
+#include <VTableDeclarations.h>
 #include <InterfaceVTable.h>
 #include <ExceptionHandler.h>
 #include <NovaClassData.h>
@@ -44,20 +45,6 @@ typedef struct nova_star_Nova_WindowThread nova_star_Nova_WindowThread;
 #include <nova/thread/NativeThread.h>
 #include <nova/NativeObject.h>
 #include <nova/operators/nova_operators_Nova_EqualsOperator.h>
-
-
-typedef struct nova_star_WindowThread_Extension_VTable nova_star_WindowThread_Extension_VTable;
-struct nova_star_WindowThread_Extension_VTable
-{
-	nova_Nova_Class* classInstance;
-	nova_Interface_VTable itable;
-	nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
-	long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
-	void (*nova_thread_Nova_Thread_virtual_Nova_run)(nova_star_Nova_WindowThread*, nova_exception_Nova_ExceptionData*);
-};
-
-extern nova_star_WindowThread_Extension_VTable nova_star_WindowThread_Extension_VTable_val;
-
 
 CCLASS_CLASS
 (

@@ -44,49 +44,6 @@ typedef struct nova_Nova_String nova_Nova_String;
 
 typedef void (*nova_Nova_System_closure1_Nova_exit)(void*, nova_exception_Nova_ExceptionData*, int, nova_Nova_String*, char, void*);
 
-nova_System_Extension_VTable nova_System_Extension_VTable_val =
-{
-	0,
-	{
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		(char(*)(nova_operators_Nova_EqualsOperator*, nova_exception_Nova_ExceptionData*, nova_Nova_Object*))nova_Nova_Object_Nova_equals,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-	},
-	nova_Nova_Object_Nova_toString,
-	nova_Nova_Object_Accessor_Nova_hashCodeLong,
-};
-
-
 nova_time_Nova_CumulativeTimer* nova_Nova_System_Nova_overheadTimer;
 void nova_Nova_System_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData)
 {

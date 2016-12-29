@@ -34,49 +34,6 @@
 
 
 
-nova_ar_TrackPoint_Extension_VTable nova_ar_TrackPoint_Extension_VTable_val =
-{
-	0,
-	{
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		(char(*)(nova_operators_Nova_EqualsOperator*, nova_exception_Nova_ExceptionData*, nova_Nova_Object*))nova_Nova_Object_Nova_equals,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-	},
-	nova_Nova_Object_Nova_toString,
-	nova_Nova_Object_Accessor_Nova_hashCodeLong,
-};
-
-
 void nova_ar_Nova_TrackPoint_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData)
 {
 	{

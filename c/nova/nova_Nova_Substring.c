@@ -44,51 +44,6 @@ typedef struct
 } Context1;
 
 
-nova_Substring_Extension_VTable nova_Substring_Extension_VTable_val =
-{
-	0,
-	{
-		(int(*)(nova_datastruct_Nova_Comparable*, nova_exception_Nova_ExceptionData*, nova_Nova_Object*))nova_Nova_String_Nova_compareTo,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		(char(*)(nova_operators_Nova_EqualsOperator*, nova_exception_Nova_ExceptionData*, nova_Nova_Object*))nova_Nova_String_Nova_equals,
-		0,
-		(nova_Nova_Object*(*)(nova_operators_Nova_MultiplyOperator*, nova_exception_Nova_ExceptionData*, nova_Nova_Object*))nova_Nova_String_Nova_multiply,
-		0,
-		0,
-		(nova_Nova_Object*(*)(nova_operators_Nova_PlusOperator*, nova_exception_Nova_ExceptionData*, nova_Nova_Object*))nova_Nova_String_Nova_plus,
-		0,
-		0,
-	},
-	nova_Nova_String_Nova_toString,
-	nova_Nova_Substring_Accessor_Nova_hashCodeLong,
-	nova_Nova_String_Nova_concat,
-	nova_Nova_Substring_Nova_substring,
-};
-
-
 
 long_long nova_Nova_Substring_Nova_lambda3(nova_Nova_Substring* this, nova_exception_Nova_ExceptionData* exceptionData, long_long v, char c, int _3, nova_datastruct_list_Nova_CharArray* _4, Context1* context);
 

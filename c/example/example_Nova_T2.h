@@ -6,6 +6,7 @@ typedef struct example_Nova_T2 example_Nova_T2;
 
 
 #include <Nova.h>
+#include <VTableDeclarations.h>
 #include <InterfaceVTable.h>
 #include <ExceptionHandler.h>
 #include <NovaClassData.h>
@@ -42,20 +43,6 @@ typedef struct example_Nova_T2 example_Nova_T2;
 #include <example/example_Nova_T1.h>
 #include <nova/NativeObject.h>
 #include <nova/operators/nova_operators_Nova_EqualsOperator.h>
-
-
-typedef struct example_T2_Extension_VTable example_T2_Extension_VTable;
-struct example_T2_Extension_VTable
-{
-	nova_Nova_Class* classInstance;
-	nova_Interface_VTable itable;
-	nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
-	long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
-	int (*example_Nova_T1_virtual_Accessor_static_Nova_ind)(example_Nova_T2*, nova_exception_Nova_ExceptionData*);
-};
-
-extern example_T2_Extension_VTable example_T2_Extension_VTable_val;
-
 
 CCLASS_CLASS
 (

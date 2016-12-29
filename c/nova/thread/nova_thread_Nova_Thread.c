@@ -38,50 +38,6 @@ typedef struct nova_exception_Nova_ExceptionData nova_exception_Nova_ExceptionDa
 
 typedef void (*nova_thread_Nova_Thread_closure1_Nova_run)(void*, nova_exception_Nova_ExceptionData*, void*);
 
-nova_thread_Thread_Extension_VTable nova_thread_Thread_Extension_VTable_val =
-{
-	0,
-	{
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		(char(*)(nova_operators_Nova_EqualsOperator*, nova_exception_Nova_ExceptionData*, nova_Nova_Object*))nova_Nova_Object_Nova_equals,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-	},
-	nova_Nova_Object_Nova_toString,
-	nova_Nova_Object_Accessor_Nova_hashCodeLong,
-	nova_thread_Nova_Thread_Nova_run,
-};
-
-
 CCLASS_PRIVATE
 (
 	void (*nova_thread_Nova_Thread_Nova_action)(void*, nova_exception_Nova_ExceptionData*, void*);

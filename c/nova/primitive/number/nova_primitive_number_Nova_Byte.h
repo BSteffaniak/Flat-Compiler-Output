@@ -6,6 +6,7 @@ typedef struct nova_primitive_number_Nova_Byte nova_primitive_number_Nova_Byte;
 
 
 #include <Nova.h>
+#include <VTableDeclarations.h>
 #include <InterfaceVTable.h>
 #include <ExceptionHandler.h>
 #include <NovaClassData.h>
@@ -45,20 +46,6 @@ typedef struct nova_primitive_number_Nova_Byte nova_primitive_number_Nova_Byte;
 #include <nova/operators/nova_operators_Nova_MultiplyOperator.h>
 #include <nova/NativeObject.h>
 #include <nova/operators/nova_operators_Nova_EqualsOperator.h>
-
-
-typedef struct nova_primitive_number_Byte_Extension_VTable nova_primitive_number_Byte_Extension_VTable;
-struct nova_primitive_number_Byte_Extension_VTable
-{
-	nova_Nova_Class* classInstance;
-	nova_Interface_VTable itable;
-	nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_primitive_number_Nova_Byte*, nova_exception_Nova_ExceptionData*);
-	long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
-	char (*nova_primitive_number_Nova_Number_virtual_static_Nova_numDigits)(nova_primitive_number_Nova_Number*, nova_exception_Nova_ExceptionData*, nova_primitive_number_Nova_Number*);
-};
-
-extern nova_primitive_number_Byte_Extension_VTable nova_primitive_number_Byte_Extension_VTable_val;
-
 
 CCLASS_CLASS
 (

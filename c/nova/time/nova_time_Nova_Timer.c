@@ -38,51 +38,6 @@ typedef struct
 } Context1;
 
 
-nova_time_Timer_Extension_VTable nova_time_Timer_Extension_VTable_val =
-{
-	0,
-	{
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		(char(*)(nova_operators_Nova_EqualsOperator*, nova_exception_Nova_ExceptionData*, nova_Nova_Object*))nova_Nova_Object_Nova_equals,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-	},
-	nova_time_Nova_Timer_Nova_toString,
-	nova_Nova_Object_Accessor_Nova_hashCodeLong,
-	nova_time_Nova_Timer_Nova_stop,
-	nova_time_Nova_Timer_Accessor_Nova_duration,
-};
-
-
 
 void nova_time_Nova_Timer_static_Nova_lambda73(nova_time_Nova_Timer* this, nova_exception_Nova_ExceptionData* exceptionData, nova_time_Nova_Timer* _1, Context1* context);
 

@@ -32,47 +32,6 @@
 
 
 
-nova_datastruct_Comparable_Extension_VTable nova_datastruct_Comparable_Extension_VTable_val =
-{
-	0,
-	{
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-	},
-};
-
-
 void nova_datastruct_Nova_Comparable_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData)
 {
 	{

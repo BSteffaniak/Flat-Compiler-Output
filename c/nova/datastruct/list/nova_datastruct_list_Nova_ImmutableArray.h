@@ -22,6 +22,7 @@ typedef char (*nova_datastruct_list_Nova_ImmutableArray_closure11_Nova_filterFun
 typedef char (*nova_datastruct_list_Nova_ImmutableArray_closure12_Nova_filterFunc)(void*, nova_exception_Nova_ExceptionData*, nova_Nova_Object*, int, nova_datastruct_list_Nova_Array*, void*);
 
 #include <Nova.h>
+#include <VTableDeclarations.h>
 #include <InterfaceVTable.h>
 #include <ExceptionHandler.h>
 #include <NovaClassData.h>
@@ -59,18 +60,6 @@ typedef char (*nova_datastruct_list_Nova_ImmutableArray_closure12_Nova_filterFun
 #include <nova/datastruct/list/nova_datastruct_list_Nova_List.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_Iterable.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_Iterator.h>
-
-
-typedef struct nova_datastruct_list_ImmutableArray_Extension_VTable nova_datastruct_list_ImmutableArray_Extension_VTable;
-struct nova_datastruct_list_ImmutableArray_Extension_VTable
-{
-	nova_Nova_Class* classInstance;
-	nova_Interface_VTable itable;
-	nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_datastruct_list_Nova_ImmutableArray*, nova_exception_Nova_ExceptionData*);
-};
-
-extern nova_datastruct_list_ImmutableArray_Extension_VTable nova_datastruct_list_ImmutableArray_Extension_VTable_val;
-
 
 CCLASS_CLASS
 (

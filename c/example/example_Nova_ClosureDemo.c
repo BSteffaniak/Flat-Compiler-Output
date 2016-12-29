@@ -40,49 +40,6 @@ typedef int (*example_Nova_ClosureDemo_closure2_Nova_closure)(void*, nova_except
 typedef int (*example_Nova_ClosureDemo_closure3_Nova_closure)(void*, nova_exception_Nova_ExceptionData*, int, int, void*);
 typedef int (*example_Nova_ClosureDemo_closure4_Nova_closure)(void*, nova_exception_Nova_ExceptionData*, int, int, void*);
 
-example_ClosureDemo_Extension_VTable example_ClosureDemo_Extension_VTable_val =
-{
-	0,
-	{
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		(char(*)(nova_operators_Nova_EqualsOperator*, nova_exception_Nova_ExceptionData*, nova_Nova_Object*))nova_Nova_Object_Nova_equals,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-	},
-	nova_Nova_Object_Nova_toString,
-	nova_Nova_Object_Accessor_Nova_hashCodeLong,
-};
-
-
 
 void example_Nova_ClosureDemo_Nova_callClosure(example_Nova_ClosureDemo* this, nova_exception_Nova_ExceptionData* exceptionData, example_Nova_ClosureDemo_closure4_Nova_closure example_Nova_ClosureDemo_Nova_closure, void* example_Nova_ClosureDemo_ref_Nova_closure, void* closure_context);
 int example_Nova_ClosureDemo_static_Nova_multiply(example_Nova_ClosureDemo* this, nova_exception_Nova_ExceptionData* exceptionData, int value1, int value2);

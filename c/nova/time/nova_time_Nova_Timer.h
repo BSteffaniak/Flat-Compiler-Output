@@ -17,6 +17,7 @@ typedef void (*nova_time_Nova_Timer_closure7_Nova_action)(void*, nova_exception_
 typedef void (*nova_time_Nova_Timer_closure8_Nova_callback)(void*, nova_exception_Nova_ExceptionData*, nova_time_Nova_Timer*, void*);
 
 #include <Nova.h>
+#include <VTableDeclarations.h>
 #include <InterfaceVTable.h>
 #include <ExceptionHandler.h>
 #include <NovaClassData.h>
@@ -53,21 +54,6 @@ typedef void (*nova_time_Nova_Timer_closure8_Nova_callback)(void*, nova_exceptio
 #include <nova/time/nova_time_Nova_Time.h>
 #include <nova/NativeObject.h>
 #include <nova/operators/nova_operators_Nova_EqualsOperator.h>
-
-
-typedef struct nova_time_Timer_Extension_VTable nova_time_Timer_Extension_VTable;
-struct nova_time_Timer_Extension_VTable
-{
-	nova_Nova_Class* classInstance;
-	nova_Interface_VTable itable;
-	nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_time_Nova_Timer*, nova_exception_Nova_ExceptionData*);
-	long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
-	nova_time_Nova_Timer* (*nova_time_Nova_Timer_virtual_Nova_stop)(nova_time_Nova_Timer*, nova_exception_Nova_ExceptionData*);
-	long_long (*nova_time_Nova_Timer_virtual_Accessor_Nova_duration)(nova_time_Nova_Timer*, nova_exception_Nova_ExceptionData*);
-};
-
-extern nova_time_Timer_Extension_VTable nova_time_Timer_Extension_VTable_val;
-
 
 CCLASS_CLASS
 (

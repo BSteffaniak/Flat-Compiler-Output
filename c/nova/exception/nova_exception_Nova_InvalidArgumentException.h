@@ -6,6 +6,7 @@ typedef struct nova_exception_Nova_InvalidArgumentException nova_exception_Nova_
 
 
 #include <Nova.h>
+#include <VTableDeclarations.h>
 #include <InterfaceVTable.h>
 #include <ExceptionHandler.h>
 #include <NovaClassData.h>
@@ -41,19 +42,6 @@ typedef struct nova_exception_Nova_InvalidArgumentException nova_exception_Nova_
 #include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <nova/NativeObject.h>
 #include <nova/operators/nova_operators_Nova_EqualsOperator.h>
-
-
-typedef struct nova_exception_InvalidArgumentException_Extension_VTable nova_exception_InvalidArgumentException_Extension_VTable;
-struct nova_exception_InvalidArgumentException_Extension_VTable
-{
-	nova_Nova_Class* classInstance;
-	nova_Interface_VTable itable;
-	nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_exception_Nova_Exception*, nova_exception_Nova_ExceptionData*);
-	long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
-};
-
-extern nova_exception_InvalidArgumentException_Extension_VTable nova_exception_InvalidArgumentException_Extension_VTable_val;
-
 
 CCLASS_CLASS
 (

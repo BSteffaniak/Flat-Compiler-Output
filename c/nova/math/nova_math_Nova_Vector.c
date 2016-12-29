@@ -48,50 +48,6 @@ typedef struct
 } Context4;
 
 
-nova_math_Vector_Extension_VTable nova_math_Vector_Extension_VTable_val =
-{
-	0,
-	{
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		(char(*)(nova_operators_Nova_EqualsOperator*, nova_exception_Nova_ExceptionData*, nova_Nova_Object*))nova_Nova_Object_Nova_equals,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-	},
-	nova_math_Nova_Vector_Nova_toString,
-	nova_Nova_Object_Accessor_Nova_hashCodeLong,
-	nova_math_Nova_Vector_Nova_dotProduct,
-};
-
-
 
 double nova_math_Nova_Vector_Nova_lambda23(nova_math_Nova_Vector* this, nova_exception_Nova_ExceptionData* exceptionData, double x, int i, nova_datastruct_list_Nova_DoubleArray* _3, Context1* context);
 void nova_math_Nova_Vector_Nova_lambda24(nova_math_Nova_Vector* this, nova_exception_Nova_ExceptionData* exceptionData, double n, int i, nova_datastruct_list_Nova_DoubleArray* d, Context2* context);

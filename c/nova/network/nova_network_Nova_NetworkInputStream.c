@@ -35,47 +35,6 @@
 
 
 
-nova_network_NetworkInputStream_Extension_VTable nova_network_NetworkInputStream_Extension_VTable_val =
-{
-	0,
-	{
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		(nova_Nova_String*(*)(nova_io_Nova_InputStream*, nova_exception_Nova_ExceptionData*))nova_network_Nova_NetworkInputStream_Nova_readString,
-		(nova_datastruct_list_Nova_Array*(*)(nova_io_Nova_InputStream*, nova_exception_Nova_ExceptionData*))nova_network_Nova_NetworkInputStream_Nova_readBytes,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-	},
-};
-
-
 CCLASS_PRIVATE
 (
 	nova_network_Nova_ConnectionSocket* nova_network_Nova_NetworkInputStream_Nova_socket;

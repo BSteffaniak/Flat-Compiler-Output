@@ -14,6 +14,7 @@ typedef char (*nova_datastruct_list_Nova_OrderedList_closure3_Nova_condition)(vo
 typedef char (*nova_datastruct_list_Nova_OrderedList_closure4_Nova_condition)(void*, nova_exception_Nova_ExceptionData*, nova_Nova_Object*, int, nova_datastruct_list_Nova_OrderedList*, void*);
 
 #include <Nova.h>
+#include <VTableDeclarations.h>
 #include <InterfaceVTable.h>
 #include <ExceptionHandler.h>
 #include <NovaClassData.h>
@@ -49,17 +50,6 @@ typedef char (*nova_datastruct_list_Nova_OrderedList_closure4_Nova_condition)(vo
 #include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_Iterator.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_List.h>
-
-
-typedef struct nova_datastruct_list_OrderedList_Extension_VTable nova_datastruct_list_OrderedList_Extension_VTable;
-struct nova_datastruct_list_OrderedList_Extension_VTable
-{
-	nova_Nova_Class* classInstance;
-	nova_Interface_VTable itable;
-};
-
-extern nova_datastruct_list_OrderedList_Extension_VTable nova_datastruct_list_OrderedList_Extension_VTable_val;
-
 
 CCLASS_CLASS
 (

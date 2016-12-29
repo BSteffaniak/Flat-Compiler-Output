@@ -6,6 +6,7 @@ typedef struct example_Nova_Square example_Nova_Square;
 
 
 #include <Nova.h>
+#include <VTableDeclarations.h>
 #include <InterfaceVTable.h>
 #include <ExceptionHandler.h>
 #include <NovaClassData.h>
@@ -42,19 +43,6 @@ typedef struct example_Nova_Square example_Nova_Square;
 #include <example/example_Nova_Polygon.h>
 #include <nova/NativeObject.h>
 #include <nova/operators/nova_operators_Nova_EqualsOperator.h>
-
-
-typedef struct example_Square_Extension_VTable example_Square_Extension_VTable;
-struct example_Square_Extension_VTable
-{
-	nova_Nova_Class* classInstance;
-	nova_Interface_VTable itable;
-	nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
-	long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
-};
-
-extern example_Square_Extension_VTable example_Square_Extension_VTable_val;
-
 
 CCLASS_CLASS
 (

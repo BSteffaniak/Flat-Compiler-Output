@@ -6,6 +6,7 @@ typedef struct example_network_Nova_ConnectionThread example_network_Nova_Connec
 
 
 #include <Nova.h>
+#include <VTableDeclarations.h>
 #include <InterfaceVTable.h>
 #include <ExceptionHandler.h>
 #include <NovaClassData.h>
@@ -43,20 +44,6 @@ typedef struct example_network_Nova_ConnectionThread example_network_Nova_Connec
 #include <nova/thread/NativeThread.h>
 #include <nova/NativeObject.h>
 #include <nova/operators/nova_operators_Nova_EqualsOperator.h>
-
-
-typedef struct example_network_ConnectionThread_Extension_VTable example_network_ConnectionThread_Extension_VTable;
-struct example_network_ConnectionThread_Extension_VTable
-{
-	nova_Nova_Class* classInstance;
-	nova_Interface_VTable itable;
-	nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
-	long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
-	void (*nova_thread_Nova_Thread_virtual_Nova_run)(example_network_Nova_ConnectionThread*, nova_exception_Nova_ExceptionData*);
-};
-
-extern example_network_ConnectionThread_Extension_VTable example_network_ConnectionThread_Extension_VTable_val;
-
 
 CCLASS_CLASS
 (

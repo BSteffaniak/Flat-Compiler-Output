@@ -37,49 +37,6 @@ typedef struct
 } Context1;
 
 
-nova_security_Sha256_Extension_VTable nova_security_Sha256_Extension_VTable_val =
-{
-	0,
-	{
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		(char(*)(nova_operators_Nova_EqualsOperator*, nova_exception_Nova_ExceptionData*, nova_Nova_Object*))nova_Nova_Object_Nova_equals,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-	},
-	nova_Nova_Object_Nova_toString,
-	nova_Nova_Object_Accessor_Nova_hashCodeLong,
-};
-
-
 
 long_long nova_security_Nova_Sha256_Nova_rotr(nova_security_Nova_Sha256* this, nova_exception_Nova_ExceptionData* exceptionData, long_long n, long_long x);
 long_long nova_security_Nova_Sha256_Nova_l1(nova_security_Nova_Sha256* this, nova_exception_Nova_ExceptionData* exceptionData, long_long x);

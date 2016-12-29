@@ -6,6 +6,7 @@ typedef struct nova_network_Nova_NetworkInputStream nova_network_Nova_NetworkInp
 
 
 #include <Nova.h>
+#include <VTableDeclarations.h>
 #include <InterfaceVTable.h>
 #include <ExceptionHandler.h>
 #include <NovaClassData.h>
@@ -42,17 +43,6 @@ typedef struct nova_network_Nova_NetworkInputStream nova_network_Nova_NetworkInp
 #include <nova/network/NativeSocket.h>
 #include <nova/io/nova_io_Nova_InputStream.h>
 #include <nova/network/nova_network_Nova_ConnectionSocket.h>
-
-
-typedef struct nova_network_NetworkInputStream_Extension_VTable nova_network_NetworkInputStream_Extension_VTable;
-struct nova_network_NetworkInputStream_Extension_VTable
-{
-	nova_Nova_Class* classInstance;
-	nova_Interface_VTable itable;
-};
-
-extern nova_network_NetworkInputStream_Extension_VTable nova_network_NetworkInputStream_Extension_VTable_val;
-
 
 CCLASS_CLASS
 (

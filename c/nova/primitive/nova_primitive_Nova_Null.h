@@ -6,6 +6,7 @@ typedef struct nova_primitive_Nova_Null nova_primitive_Nova_Null;
 
 
 #include <Nova.h>
+#include <VTableDeclarations.h>
 #include <InterfaceVTable.h>
 #include <ExceptionHandler.h>
 #include <NovaClassData.h>
@@ -48,21 +49,6 @@ typedef struct nova_primitive_Nova_Null nova_primitive_Nova_Null;
 #include <nova/regex/nova_regex_Nova_Match.h>
 #include <nova/nova_Nova_Substring.h>
 #include <nova/NativeObject.h>
-
-
-typedef struct nova_primitive_Null_Extension_VTable nova_primitive_Null_Extension_VTable;
-struct nova_primitive_Null_Extension_VTable
-{
-	nova_Nova_Class* classInstance;
-	nova_Interface_VTable itable;
-	nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_primitive_Nova_Null*, nova_exception_Nova_ExceptionData*);
-	long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_String*, nova_exception_Nova_ExceptionData*);
-	nova_Nova_String* (*nova_Nova_String_virtual_Nova_concat)(nova_primitive_Nova_Null*, nova_exception_Nova_ExceptionData*, nova_Nova_String*);
-	nova_Nova_String* (*nova_Nova_String_virtual_Nova_substring)(nova_Nova_String*, nova_exception_Nova_ExceptionData*, int, int);
-};
-
-extern nova_primitive_Null_Extension_VTable nova_primitive_Null_Extension_VTable_val;
-
 
 CCLASS_CLASS
 (
