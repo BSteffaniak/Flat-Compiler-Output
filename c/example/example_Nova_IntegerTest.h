@@ -1,4 +1,3 @@
-#pragma once
 #ifndef FILE_example_Nova_IntegerTest_NOVA
 #define FILE_example_Nova_IntegerTest_NOVA
 
@@ -6,10 +5,8 @@ typedef struct example_Nova_IntegerTest example_Nova_IntegerTest;
 
 
 #include <Nova.h>
-#include <VTableDeclarations.h>
 #include <InterfaceVTable.h>
 #include <ExceptionHandler.h>
-#include <NovaClassData.h>
 #include <nova/exception/nova_exception_Nova_ExceptionData.h>
 #include <nova/exception/nova_exception_Nova_Exception.h>
 #include <nova/exception/nova_exception_Nova_DivideByZeroException.h>

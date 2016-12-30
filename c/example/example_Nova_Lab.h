@@ -1,4 +1,3 @@
-#pragma once
 #ifndef FILE_example_Nova_Lab_NOVA
 #define FILE_example_Nova_Lab_NOVA
 
@@ -6,10 +5,8 @@ typedef struct example_Nova_Lab example_Nova_Lab;
 
 
 #include <Nova.h>
-#include <VTableDeclarations.h>
 #include <InterfaceVTable.h>
 #include <ExceptionHandler.h>
-#include <NovaClassData.h>
 #include <nova/exception/nova_exception_Nova_ExceptionData.h>
 #include <nova/exception/nova_exception_Nova_Exception.h>
 #include <nova/exception/nova_exception_Nova_DivideByZeroException.h>
@@ -61,7 +58,6 @@ void example_Nova_Lab_Nova_init_static(nova_exception_Nova_ExceptionData* except
 example_Nova_Lab* example_Nova_Lab_Nova_construct(example_Nova_Lab* this, nova_exception_Nova_ExceptionData* exceptionData);
 void example_Nova_Lab_Nova_destroy(example_Nova_Lab** this, nova_exception_Nova_ExceptionData* exceptionData);
 void example_Nova_Lab_static_Nova_main(example_Nova_Lab* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_list_Nova_Array* args);
-void example_Nova_Lab_Nova_hey(example_Nova_Lab* this, nova_exception_Nova_ExceptionData* exceptionData);
 void example_Nova_Lab_Nova_this(example_Nova_Lab* this, nova_exception_Nova_ExceptionData* exceptionData);
 void example_Nova_Lab_Nova_super(example_Nova_Lab* this, nova_exception_Nova_ExceptionData* exceptionData);
 

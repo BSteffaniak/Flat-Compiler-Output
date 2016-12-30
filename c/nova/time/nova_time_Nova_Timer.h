@@ -1,4 +1,3 @@
-#pragma once
 #ifndef FILE_nova_time_Nova_Timer_NOVA
 #define FILE_nova_time_Nova_Timer_NOVA
 
@@ -17,10 +16,8 @@ typedef void (*nova_time_Nova_Timer_closure7_Nova_action)(void*, nova_exception_
 typedef void (*nova_time_Nova_Timer_closure8_Nova_callback)(void*, nova_exception_Nova_ExceptionData*, nova_time_Nova_Timer*, void*);
 
 #include <Nova.h>
-#include <VTableDeclarations.h>
 #include <InterfaceVTable.h>
 #include <ExceptionHandler.h>
-#include <NovaClassData.h>
 #include <nova/exception/nova_exception_Nova_ExceptionData.h>
 #include <nova/exception/nova_exception_Nova_Exception.h>
 #include <nova/exception/nova_exception_Nova_DivideByZeroException.h>

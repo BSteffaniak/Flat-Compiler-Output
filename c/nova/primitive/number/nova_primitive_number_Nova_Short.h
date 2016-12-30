@@ -1,4 +1,3 @@
-#pragma once
 #ifndef FILE_nova_primitive_number_Nova_Short_NOVA
 #define FILE_nova_primitive_number_Nova_Short_NOVA
 
@@ -6,10 +5,8 @@ typedef struct nova_primitive_number_Nova_Short nova_primitive_number_Nova_Short
 
 
 #include <Nova.h>
-#include <VTableDeclarations.h>
 #include <InterfaceVTable.h>
 #include <ExceptionHandler.h>
-#include <NovaClassData.h>
 #include <nova/exception/nova_exception_Nova_ExceptionData.h>
 #include <nova/exception/nova_exception_Nova_Exception.h>
 #include <nova/exception/nova_exception_Nova_DivideByZeroException.h>

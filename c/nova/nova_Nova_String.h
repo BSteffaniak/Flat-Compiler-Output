@@ -1,4 +1,3 @@
-#pragma once
 #ifndef FILE_nova_Nova_String_NOVA
 #define FILE_nova_Nova_String_NOVA
 
@@ -12,10 +11,8 @@ typedef char (*nova_Nova_String_closure3_Nova_transform)(void*, nova_exception_N
 typedef char (*nova_Nova_String_closure4_Nova_transform)(void*, nova_exception_Nova_ExceptionData*, char, int, void*);
 
 #include <Nova.h>
-#include <VTableDeclarations.h>
 #include <InterfaceVTable.h>
 #include <ExceptionHandler.h>
-#include <NovaClassData.h>
 #include <nova/exception/nova_exception_Nova_ExceptionData.h>
 #include <nova/exception/nova_exception_Nova_Exception.h>
 #include <nova/exception/nova_exception_Nova_DivideByZeroException.h>

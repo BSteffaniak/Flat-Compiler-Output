@@ -1,4 +1,3 @@
-#pragma once
 #ifndef FILE_nova_web_svg_Nova_SvgCircle_NOVA
 #define FILE_nova_web_svg_Nova_SvgCircle_NOVA
 
@@ -6,10 +5,8 @@ typedef struct nova_web_svg_Nova_SvgCircle nova_web_svg_Nova_SvgCircle;
 
 
 #include <Nova.h>
-#include <VTableDeclarations.h>
 #include <InterfaceVTable.h>
 #include <ExceptionHandler.h>
-#include <NovaClassData.h>
 #include <nova/exception/nova_exception_Nova_ExceptionData.h>
 #include <nova/exception/nova_exception_Nova_Exception.h>
 #include <nova/exception/nova_exception_Nova_DivideByZeroException.h>

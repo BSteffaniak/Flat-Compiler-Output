@@ -1,4 +1,3 @@
-#pragma once
 #ifndef FILE_nova_datastruct_list_Nova_LinkedList_NOVA
 #define FILE_nova_datastruct_list_Nova_LinkedList_NOVA
 
@@ -34,10 +33,8 @@ typedef char (*nova_datastruct_list_Nova_LinkedList_closure23_Nova_func)(void*, 
 typedef char (*nova_datastruct_list_Nova_LinkedList_closure24_Nova_func)(void*, nova_exception_Nova_ExceptionData*, nova_Nova_Object*, void*);
 
 #include <Nova.h>
-#include <VTableDeclarations.h>
 #include <InterfaceVTable.h>
 #include <ExceptionHandler.h>
-#include <NovaClassData.h>
 #include <nova/exception/nova_exception_Nova_ExceptionData.h>
 #include <nova/exception/nova_exception_Nova_Exception.h>
 #include <nova/exception/nova_exception_Nova_DivideByZeroException.h>

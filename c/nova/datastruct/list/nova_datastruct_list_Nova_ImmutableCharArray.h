@@ -1,4 +1,3 @@
-#pragma once
 #ifndef FILE_nova_datastruct_list_Nova_ImmutableCharArray_NOVA
 #define FILE_nova_datastruct_list_Nova_ImmutableCharArray_NOVA
 
@@ -23,10 +22,8 @@ typedef char (*nova_datastruct_list_Nova_ImmutableCharArray_closure11_Nova_filte
 typedef char (*nova_datastruct_list_Nova_ImmutableCharArray_closure12_Nova_filterFunc)(void*, nova_exception_Nova_ExceptionData*, E*, int, nova_datastruct_list_Nova_CharArray*, void*);
 
 #include <Nova.h>
-#include <VTableDeclarations.h>
 #include <InterfaceVTable.h>
 #include <ExceptionHandler.h>
-#include <NovaClassData.h>
 #include <nova/exception/nova_exception_Nova_ExceptionData.h>
 #include <nova/exception/nova_exception_Nova_Exception.h>
 #include <nova/exception/nova_exception_Nova_DivideByZeroException.h>

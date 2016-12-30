@@ -1,4 +1,3 @@
-#pragma once
 #ifndef FILE_nova_datastruct_list_Nova_Array_NOVA
 #define FILE_nova_datastruct_list_Nova_Array_NOVA
 
@@ -30,10 +29,8 @@ typedef int (*nova_datastruct_list_Nova_Array_closure19_Nova_comparator)(void*, 
 typedef int (*nova_datastruct_list_Nova_Array_closure20_Nova_comparator)(void*, nova_exception_Nova_ExceptionData*, nova_Nova_Object*, nova_Nova_Object*, void*);
 
 #include <Nova.h>
-#include <VTableDeclarations.h>
 #include <InterfaceVTable.h>
 #include <ExceptionHandler.h>
-#include <NovaClassData.h>
 #include <nova/exception/nova_exception_Nova_ExceptionData.h>
 #include <nova/exception/nova_exception_Nova_Exception.h>
 #include <nova/exception/nova_exception_Nova_DivideByZeroException.h>
