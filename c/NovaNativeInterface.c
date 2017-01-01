@@ -1,4 +1,3 @@
-#include <precompiled.h>
 #include "NovaNativeInterface.h"
 
 nova_env novaEnv = {

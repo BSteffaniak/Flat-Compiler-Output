@@ -1,4 +1,3 @@
-#include <precompiled.h>
 #include <NovaClassData.h>
 
 nova_datastruct_vtable_Comparable nova_datastruct_vtable_Comparable_value_default = {0};

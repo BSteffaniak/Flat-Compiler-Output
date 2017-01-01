@@ -1,4 +1,3 @@
-#include <precompiled.h>
 #include <nova/exception/nova_exception_Nova_ExceptionData.h>
 #include <nova/exception/nova_exception_Nova_Exception.h>
 #include <nova/exception/nova_exception_Nova_DivideByZeroException.h>

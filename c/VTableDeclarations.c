@@ -1,4 +1,3 @@
-#include <precompiled.h>
 #include "VTableDeclarations.h"
 nova_Class_Extension_VTable nova_Class_Extension_VTable_val =
 {
