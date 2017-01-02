@@ -11,7 +11,7 @@ export NOVA_OBJ
 export NOVA_STDLIB_LOCATION
 export NOVA_COMPILE_HOME
 
-.PHONY: install link headers clean
+.PHONY: clean
 
 install:; $(MAKE) -f $(MAKEFILE_LOCATION) install
 link:; $(MAKE) -f $(MAKEFILE_LOCATION) link

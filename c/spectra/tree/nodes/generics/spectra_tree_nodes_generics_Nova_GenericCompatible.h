@@ -1,4 +1,3 @@
-#pragma once
 #ifndef FILE_spectra_tree_nodes_generics_Nova_GenericCompatible_NOVA
 #define FILE_spectra_tree_nodes_generics_Nova_GenericCompatible_NOVA
 
@@ -8,7 +7,6 @@ typedef struct spectra_tree_nodes_generics_Nova_GenericCompatible spectra_tree_n
 #include <Nova.h>
 #include <InterfaceVTable.h>
 #include <ExceptionHandler.h>
-#include <NovaClassData.h>
 #include <nova/exception/nova_exception_Nova_ExceptionData.h>
 #include <nova/exception/nova_exception_Nova_Exception.h>
 #include <nova/exception/nova_exception_Nova_DivideByZeroException.h>
@@ -42,17 +40,6 @@ typedef struct spectra_tree_nodes_generics_Nova_GenericCompatible spectra_tree_n
 #include <spectra/spectra_Nova_InvalidParseException.h>
 #include <spectra/tree/nodes/spectra_tree_nodes_Nova_Node.h>
 #include <spectra/tree/nodes/generics/spectra_tree_nodes_generics_Nova_GenericParameter.h>
-
-
-typedef struct spectra_tree_nodes_generics_GenericCompatible_Extension_VTable spectra_tree_nodes_generics_GenericCompatible_Extension_VTable;
-struct spectra_tree_nodes_generics_GenericCompatible_Extension_VTable
-{
-	nova_Nova_Class* classInstance;
-	nova_Interface_VTable itable;
-};
-
-extern spectra_tree_nodes_generics_GenericCompatible_Extension_VTable spectra_tree_nodes_generics_GenericCompatible_Extension_VTable_val;
-
 
 CCLASS_CLASS
 (

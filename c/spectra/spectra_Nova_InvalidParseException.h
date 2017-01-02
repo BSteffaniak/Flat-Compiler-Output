@@ -1,4 +1,3 @@
-#pragma once
 #ifndef FILE_spectra_Nova_InvalidParseException_NOVA
 #define FILE_spectra_Nova_InvalidParseException_NOVA
 
@@ -8,7 +7,6 @@ typedef struct spectra_Nova_InvalidParseException spectra_Nova_InvalidParseExcep
 #include <Nova.h>
 #include <InterfaceVTable.h>
 #include <ExceptionHandler.h>
-#include <NovaClassData.h>
 #include <nova/exception/nova_exception_Nova_ExceptionData.h>
 #include <nova/exception/nova_exception_Nova_Exception.h>
 #include <nova/exception/nova_exception_Nova_DivideByZeroException.h>
@@ -42,19 +40,6 @@ typedef struct spectra_Nova_InvalidParseException spectra_Nova_InvalidParseExcep
 #include <spectra/tree/nodes/spectra_tree_nodes_Nova_Node.h>
 #include <nova/NativeObject.h>
 #include <nova/operators/nova_operators_Nova_EqualsOperator.h>
-
-
-typedef struct spectra_InvalidParseException_Extension_VTable spectra_InvalidParseException_Extension_VTable;
-struct spectra_InvalidParseException_Extension_VTable
-{
-	nova_Nova_Class* classInstance;
-	nova_Interface_VTable itable;
-	nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_exception_Nova_Exception*, nova_exception_Nova_ExceptionData*);
-	long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
-};
-
-extern spectra_InvalidParseException_Extension_VTable spectra_InvalidParseException_Extension_VTable_val;
-
 
 CCLASS_CLASS
 (

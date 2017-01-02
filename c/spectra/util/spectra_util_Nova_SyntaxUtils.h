@@ -1,4 +1,3 @@
-#pragma once
 #ifndef FILE_spectra_util_Nova_SyntaxUtils_NOVA
 #define FILE_spectra_util_Nova_SyntaxUtils_NOVA
 
@@ -8,7 +7,6 @@ typedef struct spectra_util_Nova_SyntaxUtils spectra_util_Nova_SyntaxUtils;
 #include <Nova.h>
 #include <InterfaceVTable.h>
 #include <ExceptionHandler.h>
-#include <NovaClassData.h>
 #include <nova/exception/nova_exception_Nova_ExceptionData.h>
 #include <nova/exception/nova_exception_Nova_Exception.h>
 #include <nova/exception/nova_exception_Nova_DivideByZeroException.h>
@@ -41,19 +39,6 @@ typedef struct spectra_util_Nova_SyntaxUtils spectra_util_Nova_SyntaxUtils;
 #include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <nova/NativeObject.h>
 #include <nova/operators/nova_operators_Nova_EqualsOperator.h>
-
-
-typedef struct spectra_util_SyntaxUtils_Extension_VTable spectra_util_SyntaxUtils_Extension_VTable;
-struct spectra_util_SyntaxUtils_Extension_VTable
-{
-	nova_Nova_Class* classInstance;
-	nova_Interface_VTable itable;
-	nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
-	long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
-};
-
-extern spectra_util_SyntaxUtils_Extension_VTable spectra_util_SyntaxUtils_Extension_VTable_val;
-
 
 CCLASS_CLASS
 (

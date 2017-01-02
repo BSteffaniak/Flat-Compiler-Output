@@ -1,4 +1,3 @@
-#include <precompiled.h>
 #include <nova/exception/nova_exception_Nova_ExceptionData.h>
 #include <nova/exception/nova_exception_Nova_Exception.h>
 #include <nova/exception/nova_exception_Nova_DivideByZeroException.h>
@@ -49,48 +48,6 @@ typedef void (*stabilitytest_Nova_ClosureStability_closure9_Nova_closure)(void*,
 typedef void (*stabilitytest_Nova_ClosureStability_closure10_Nova_closure)(void*, nova_exception_Nova_ExceptionData*, void*);
 typedef void (*stabilitytest_Nova_ClosureStability_closure11_Nova_closure)(void*, nova_exception_Nova_ExceptionData*, void*);
 typedef void (*stabilitytest_Nova_ClosureStability_closure12_Nova_closure)(void*, nova_exception_Nova_ExceptionData*, void*);
-
-stabilitytest_ClosureStability_Extension_VTable stabilitytest_ClosureStability_Extension_VTable_val =
-{
-	0,
-	{
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		(char(*)(nova_operators_Nova_EqualsOperator*, nova_exception_Nova_ExceptionData*, nova_Nova_Object*))nova_Nova_Object_Nova_equals,
-		0,
-		0,
-		0,
-		0,
-		0,
-	},
-	nova_Nova_Object_Nova_toString,
-	nova_Nova_Object_Accessor_Nova_hashCodeLong,
-	stabilitytest_Nova_ClosureStability_Nova_test,
-};
-
 
 CCLASS_PRIVATE
 (

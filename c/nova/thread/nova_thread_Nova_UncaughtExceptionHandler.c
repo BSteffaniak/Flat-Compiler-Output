@@ -76,3 +76,8 @@ void nova_thread_Nova_UncaughtExceptionHandler_Nova_super(nova_thread_Nova_Uncau
 {
 }
 
+void nova_thread_Nova_UncaughtExceptionHandler_virtual_Nova_uncaughtException(nova_thread_Nova_UncaughtExceptionHandler* this, nova_exception_Nova_ExceptionData* exceptionData, nova_thread_Nova_Thread* thread, nova_exception_Nova_Exception* exception)
+{
+	this->vtable->nova_thread_Nova_UncaughtExceptionHandler_virtual_Nova_uncaughtException((nova_thread_Nova_UncaughtExceptionHandler*)(this), exceptionData, thread, exception);
+}
+

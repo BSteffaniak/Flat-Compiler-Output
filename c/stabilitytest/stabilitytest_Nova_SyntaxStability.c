@@ -1,4 +1,3 @@
-#include <precompiled.h>
 #include <nova/exception/nova_exception_Nova_ExceptionData.h>
 #include <nova/exception/nova_exception_Nova_Exception.h>
 #include <nova/exception/nova_exception_Nova_DivideByZeroException.h>
@@ -48,48 +47,6 @@ typedef int (*stabilitytest_Nova_SyntaxStability_closure1_Nova_something)(void*,
 typedef int (*stabilitytest_Nova_SyntaxStability_closure2_Nova_something)(void*, nova_exception_Nova_ExceptionData*, int, void*);
 typedef int (*stabilitytest_Nova_SyntaxStability_closure3_Nova_something)(void*, nova_exception_Nova_ExceptionData*, int, void*);
 typedef int (*stabilitytest_Nova_SyntaxStability_closure4_Nova_something)(void*, nova_exception_Nova_ExceptionData*, int, void*);
-
-stabilitytest_SyntaxStability_Extension_VTable stabilitytest_SyntaxStability_Extension_VTable_val =
-{
-	0,
-	{
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		(char(*)(nova_operators_Nova_EqualsOperator*, nova_exception_Nova_ExceptionData*, nova_Nova_Object*))nova_Nova_Object_Nova_equals,
-		0,
-		0,
-		0,
-		0,
-		0,
-	},
-	nova_Nova_Object_Nova_toString,
-	nova_Nova_Object_Accessor_Nova_hashCodeLong,
-	stabilitytest_Nova_SyntaxStability_Nova_test,
-};
-
 
 
 void stabilitytest_Nova_SyntaxStability_Nova_checkMatchStatements(stabilitytest_Nova_SyntaxStability* this, nova_exception_Nova_ExceptionData* exceptionData);

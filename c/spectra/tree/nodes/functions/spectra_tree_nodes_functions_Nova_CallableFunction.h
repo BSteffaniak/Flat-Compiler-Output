@@ -1,4 +1,3 @@
-#pragma once
 #ifndef FILE_spectra_tree_nodes_functions_Nova_CallableFunction_NOVA
 #define FILE_spectra_tree_nodes_functions_Nova_CallableFunction_NOVA
 
@@ -8,7 +7,6 @@ typedef struct spectra_tree_nodes_functions_Nova_CallableFunction spectra_tree_n
 #include <Nova.h>
 #include <InterfaceVTable.h>
 #include <ExceptionHandler.h>
-#include <NovaClassData.h>
 #include <nova/exception/nova_exception_Nova_ExceptionData.h>
 #include <nova/exception/nova_exception_Nova_Exception.h>
 #include <nova/exception/nova_exception_Nova_DivideByZeroException.h>
@@ -48,17 +46,6 @@ typedef struct spectra_tree_nodes_functions_Nova_CallableFunction spectra_tree_n
 #include <spectra/spectra_Nova_SyntaxMessage.h>
 #include <spectra/tree/nodes/functions/spectra_tree_nodes_functions_Nova_Parameter.h>
 #include <spectra/tree/nodes/functions/spectra_tree_nodes_functions_Nova_ParameterList.h>
-
-
-typedef struct spectra_tree_nodes_functions_CallableFunction_Extension_VTable spectra_tree_nodes_functions_CallableFunction_Extension_VTable;
-struct spectra_tree_nodes_functions_CallableFunction_Extension_VTable
-{
-	nova_Nova_Class* classInstance;
-	nova_Interface_VTable itable;
-};
-
-extern spectra_tree_nodes_functions_CallableFunction_Extension_VTable spectra_tree_nodes_functions_CallableFunction_Extension_VTable_val;
-
 
 CCLASS_CLASS
 (

@@ -1,4 +1,3 @@
-#pragma once
 #ifndef FILE_spectra_util_Nova_CompilerStringFunctions_NOVA
 #define FILE_spectra_util_Nova_CompilerStringFunctions_NOVA
 
@@ -13,7 +12,6 @@ typedef int (*spectra_util_Nova_CompilerStringFunctions_closure2_Nova_advance)(v
 #include <Nova.h>
 #include <InterfaceVTable.h>
 #include <ExceptionHandler.h>
-#include <NovaClassData.h>
 #include <nova/exception/nova_exception_Nova_ExceptionData.h>
 #include <nova/exception/nova_exception_Nova_Exception.h>
 #include <nova/exception/nova_exception_Nova_DivideByZeroException.h>
@@ -56,17 +54,6 @@ typedef int (*spectra_util_Nova_CompilerStringFunctions_closure2_Nova_advance)(v
 #include <spectra/util/spectra_util_Nova_Bounds.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_CharArrayIterator.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_ArrayIterator.h>
-
-
-typedef struct spectra_util_CompilerStringFunctions_Extension_VTable spectra_util_CompilerStringFunctions_Extension_VTable;
-struct spectra_util_CompilerStringFunctions_Extension_VTable
-{
-	nova_Nova_Class* classInstance;
-	nova_Interface_VTable itable;
-};
-
-extern spectra_util_CompilerStringFunctions_Extension_VTable spectra_util_CompilerStringFunctions_Extension_VTable_val;
-
 
 CCLASS_CLASS
 (

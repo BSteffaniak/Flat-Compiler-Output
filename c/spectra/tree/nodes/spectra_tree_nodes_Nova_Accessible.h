@@ -1,4 +1,3 @@
-#pragma once
 #ifndef FILE_spectra_tree_nodes_Nova_Accessible_NOVA
 #define FILE_spectra_tree_nodes_Nova_Accessible_NOVA
 
@@ -8,7 +7,6 @@ typedef struct spectra_tree_nodes_Nova_Accessible spectra_tree_nodes_Nova_Access
 #include <Nova.h>
 #include <InterfaceVTable.h>
 #include <ExceptionHandler.h>
-#include <NovaClassData.h>
 #include <nova/exception/nova_exception_Nova_ExceptionData.h>
 #include <nova/exception/nova_exception_Nova_Exception.h>
 #include <nova/exception/nova_exception_Nova_DivideByZeroException.h>
@@ -45,17 +43,6 @@ typedef struct spectra_tree_nodes_Nova_Accessible spectra_tree_nodes_Nova_Access
 #include <spectra/tree/nodes/spectra_tree_nodes_Nova_ClassDeclaration.h>
 #include <spectra/tree/nodes/spectra_tree_nodes_Nova_Node.h>
 #include <spectra/tree/nodes/spectra_tree_nodes_Nova_Value.h>
-
-
-typedef struct spectra_tree_nodes_Accessible_Extension_VTable spectra_tree_nodes_Accessible_Extension_VTable;
-struct spectra_tree_nodes_Accessible_Extension_VTable
-{
-	nova_Nova_Class* classInstance;
-	nova_Interface_VTable itable;
-};
-
-extern spectra_tree_nodes_Accessible_Extension_VTable spectra_tree_nodes_Accessible_Extension_VTable_val;
-
 
 CCLASS_CLASS
 (

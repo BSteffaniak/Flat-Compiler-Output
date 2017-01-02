@@ -1,4 +1,3 @@
-#include <precompiled.h>
 #include <nova/exception/nova_exception_Nova_ExceptionData.h>
 #include <nova/exception/nova_exception_Nova_Exception.h>
 #include <nova/exception/nova_exception_Nova_DivideByZeroException.h>
@@ -41,65 +40,6 @@
 #include <nova/NativeObject.h>
 #include <nova/operators/nova_operators_Nova_EqualsOperator.h>
 
-
-
-spectra_tree_nodes_generics_GenericType_Extension_VTable spectra_tree_nodes_generics_GenericType_Extension_VTable_val =
-{
-	0,
-	{
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		(char(*)(nova_operators_Nova_EqualsOperator*, nova_exception_Nova_ExceptionData*, nova_Nova_Object*))nova_Nova_Object_Nova_equals,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-	},
-	spectra_tree_nodes_Nova_Type_Nova_toString,
-	nova_Nova_Object_Accessor_Nova_hashCodeLong,
-	spectra_tree_nodes_generics_Nova_GenericType_Nova_isValid,
-	spectra_tree_nodes_generics_Nova_GenericType_Nova_cloneTo,
-	spectra_tree_nodes_generics_Nova_GenericType_Accessor_Nova_isGeneric,
-	spectra_tree_nodes_generics_Nova_GenericType_Accessor_Nova_isPrimitiveType,
-};
 
 
 

@@ -1,4 +1,3 @@
-#pragma once
 #ifndef FILE_spectra_tree_nodes_generics_Nova_GenericType_NOVA
 #define FILE_spectra_tree_nodes_generics_Nova_GenericType_NOVA
 
@@ -8,7 +7,6 @@ typedef struct spectra_tree_nodes_generics_Nova_GenericType spectra_tree_nodes_g
 #include <Nova.h>
 #include <InterfaceVTable.h>
 #include <ExceptionHandler.h>
-#include <NovaClassData.h>
 #include <nova/exception/nova_exception_Nova_ExceptionData.h>
 #include <nova/exception/nova_exception_Nova_Exception.h>
 #include <nova/exception/nova_exception_Nova_DivideByZeroException.h>
@@ -50,23 +48,6 @@ typedef struct spectra_tree_nodes_generics_Nova_GenericType spectra_tree_nodes_g
 #include <spectra/tree/nodes/spectra_tree_nodes_Nova_Import.h>
 #include <nova/NativeObject.h>
 #include <nova/operators/nova_operators_Nova_EqualsOperator.h>
-
-
-typedef struct spectra_tree_nodes_generics_GenericType_Extension_VTable spectra_tree_nodes_generics_GenericType_Extension_VTable;
-struct spectra_tree_nodes_generics_GenericType_Extension_VTable
-{
-	nova_Nova_Class* classInstance;
-	nova_Interface_VTable itable;
-	nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(spectra_tree_nodes_Nova_Type*, nova_exception_Nova_ExceptionData*);
-	long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
-	char (*spectra_tree_nodes_Nova_Type_virtual_Nova_isValid)(spectra_tree_nodes_generics_Nova_GenericType*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-	spectra_tree_nodes_generics_Nova_GenericType* (*spectra_tree_nodes_Nova_Type_virtual_Nova_cloneTo)(spectra_tree_nodes_generics_Nova_GenericType*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_generics_Nova_GenericType*);
-	char (*spectra_tree_nodes_Nova_Type_virtual_Accessor_Nova_isGeneric)(spectra_tree_nodes_generics_Nova_GenericType*, nova_exception_Nova_ExceptionData*);
-	char (*spectra_tree_nodes_Nova_Type_virtual_Accessor_Nova_isPrimitiveType)(spectra_tree_nodes_generics_Nova_GenericType*, nova_exception_Nova_ExceptionData*);
-};
-
-extern spectra_tree_nodes_generics_GenericType_Extension_VTable spectra_tree_nodes_generics_GenericType_Extension_VTable_val;
-
 
 CCLASS_CLASS
 (

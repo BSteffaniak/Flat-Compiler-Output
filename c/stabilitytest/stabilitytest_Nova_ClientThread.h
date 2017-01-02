@@ -1,4 +1,3 @@
-#pragma once
 #ifndef FILE_stabilitytest_Nova_ClientThread_NOVA
 #define FILE_stabilitytest_Nova_ClientThread_NOVA
 
@@ -8,7 +7,6 @@ typedef struct stabilitytest_Nova_ClientThread stabilitytest_Nova_ClientThread;
 #include <Nova.h>
 #include <InterfaceVTable.h>
 #include <ExceptionHandler.h>
-#include <NovaClassData.h>
 #include <nova/exception/nova_exception_Nova_ExceptionData.h>
 #include <nova/exception/nova_exception_Nova_Exception.h>
 #include <nova/exception/nova_exception_Nova_DivideByZeroException.h>
@@ -45,20 +43,6 @@ typedef struct stabilitytest_Nova_ClientThread stabilitytest_Nova_ClientThread;
 #include <nova/thread/NativeThread.h>
 #include <nova/NativeObject.h>
 #include <nova/operators/nova_operators_Nova_EqualsOperator.h>
-
-
-typedef struct stabilitytest_ClientThread_Extension_VTable stabilitytest_ClientThread_Extension_VTable;
-struct stabilitytest_ClientThread_Extension_VTable
-{
-	nova_Nova_Class* classInstance;
-	nova_Interface_VTable itable;
-	nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
-	long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
-	void (*nova_thread_Nova_Thread_virtual_Nova_run)(stabilitytest_Nova_ClientThread*, nova_exception_Nova_ExceptionData*);
-};
-
-extern stabilitytest_ClientThread_Extension_VTable stabilitytest_ClientThread_Extension_VTable_val;
-
 
 CCLASS_CLASS
 (

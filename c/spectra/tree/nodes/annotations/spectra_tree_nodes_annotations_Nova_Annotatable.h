@@ -1,4 +1,3 @@
-#pragma once
 #ifndef FILE_spectra_tree_nodes_annotations_Nova_Annotatable_NOVA
 #define FILE_spectra_tree_nodes_annotations_Nova_Annotatable_NOVA
 
@@ -8,7 +7,6 @@ typedef struct spectra_tree_nodes_annotations_Nova_Annotatable spectra_tree_node
 #include <Nova.h>
 #include <InterfaceVTable.h>
 #include <ExceptionHandler.h>
-#include <NovaClassData.h>
 #include <nova/exception/nova_exception_Nova_ExceptionData.h>
 #include <nova/exception/nova_exception_Nova_Exception.h>
 #include <nova/exception/nova_exception_Nova_DivideByZeroException.h>
@@ -40,17 +38,6 @@ typedef struct spectra_tree_nodes_annotations_Nova_Annotatable spectra_tree_node
 #include <nova/nova_Nova_Class.h>
 #include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <spectra/tree/nodes/annotations/spectra_tree_nodes_annotations_Nova_Annotation.h>
-
-
-typedef struct spectra_tree_nodes_annotations_Annotatable_Extension_VTable spectra_tree_nodes_annotations_Annotatable_Extension_VTable;
-struct spectra_tree_nodes_annotations_Annotatable_Extension_VTable
-{
-	nova_Nova_Class* classInstance;
-	nova_Interface_VTable itable;
-};
-
-extern spectra_tree_nodes_annotations_Annotatable_Extension_VTable spectra_tree_nodes_annotations_Annotatable_Extension_VTable_val;
-
 
 CCLASS_CLASS
 (

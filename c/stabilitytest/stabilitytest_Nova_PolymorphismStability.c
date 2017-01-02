@@ -1,4 +1,3 @@
-#include <precompiled.h>
 #include <nova/exception/nova_exception_Nova_ExceptionData.h>
 #include <nova/exception/nova_exception_Nova_Exception.h>
 #include <nova/exception/nova_exception_Nova_DivideByZeroException.h>
@@ -44,48 +43,6 @@ typedef nova_Nova_String* (*stabilitytest_Nova_PolymorphismStability_closure1_No
 typedef nova_Nova_String* (*stabilitytest_Nova_PolymorphismStability_closure2_Nova_closure)(void*, nova_exception_Nova_ExceptionData*, void*);
 typedef nova_Nova_String* (*stabilitytest_Nova_PolymorphismStability_closure3_Nova_closure)(void*, nova_exception_Nova_ExceptionData*, void*);
 typedef nova_Nova_String* (*stabilitytest_Nova_PolymorphismStability_closure4_Nova_closure)(void*, nova_exception_Nova_ExceptionData*, void*);
-
-stabilitytest_PolymorphismStability_Extension_VTable stabilitytest_PolymorphismStability_Extension_VTable_val =
-{
-	0,
-	{
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		0,
-		(char(*)(nova_operators_Nova_EqualsOperator*, nova_exception_Nova_ExceptionData*, nova_Nova_Object*))nova_Nova_Object_Nova_equals,
-		0,
-		0,
-		0,
-		0,
-		0,
-	},
-	nova_Nova_Object_Nova_toString,
-	nova_Nova_Object_Accessor_Nova_hashCodeLong,
-	stabilitytest_Nova_PolymorphismStability_Nova_test,
-};
-
 
 
 void stabilitytest_Nova_PolymorphismStability_Nova_testCalls(stabilitytest_Nova_PolymorphismStability* this, nova_exception_Nova_ExceptionData* exceptionData);
