@@ -106,6 +106,11 @@ nova_Nova_String* nova_Nova_Object_virtual_Nova_toString(nova_Nova_Object* this,
 	return this->vtable->nova_Nova_Object_virtual_Nova_toString((nova_Nova_Object*)(this), exceptionData);
 }
 
+void nova_Nova_Object_virtual_Nova_hey(nova_Nova_Object* this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+	this->vtable->nova_Nova_Object_virtual_Nova_hey((nova_Nova_Object*)(this), exceptionData);
+}
+
 long_long nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong(nova_Nova_Object* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
 	return this->vtable->nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong((nova_Nova_Object*)(this), exceptionData);
