@@ -58,6 +58,7 @@ void example_Nova_Lab_Nova_init_static(nova_exception_Nova_ExceptionData* except
 example_Nova_Lab* example_Nova_Lab_Nova_construct(example_Nova_Lab* this, nova_exception_Nova_ExceptionData* exceptionData);
 void example_Nova_Lab_Nova_destroy(example_Nova_Lab** this, nova_exception_Nova_ExceptionData* exceptionData);
 void example_Nova_Lab_static_Nova_main(example_Nova_Lab* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_list_Nova_Array* args);
+void example_Nova_Lab_Nova_hey(example_Nova_Lab* this, nova_exception_Nova_ExceptionData* exceptionData);
 void example_Nova_Lab_Nova_this(example_Nova_Lab* this, nova_exception_Nova_ExceptionData* exceptionData);
 void example_Nova_Lab_Nova_super(example_Nova_Lab* this, nova_exception_Nova_ExceptionData* exceptionData);
 

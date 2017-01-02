@@ -38,6 +38,7 @@ nova_Class_Extension_VTable nova_Class_Extension_VTable_val =
 		0,
 	},
 	nova_Nova_Class_Nova_toString,
+	nova_Nova_Object_Nova_hey,
 	nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
@@ -81,6 +82,7 @@ nova_Object_Extension_VTable nova_Object_Extension_VTable_val =
 		0,
 	},
 	nova_Nova_Object_Nova_toString,
+	nova_Nova_Object_Nova_hey,
 	nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
@@ -124,6 +126,7 @@ nova_String_Extension_VTable nova_String_Extension_VTable_val =
 		0,
 	},
 	nova_Nova_String_Nova_toString,
+	nova_Nova_Object_Nova_hey,
 	nova_Nova_String_Accessor_Nova_hashCodeLong,
 	nova_Nova_String_Nova_concat,
 	nova_Nova_String_Nova_substring,
@@ -169,6 +172,7 @@ nova_Substring_Extension_VTable nova_Substring_Extension_VTable_val =
 		0,
 	},
 	nova_Nova_String_Nova_toString,
+	nova_Nova_Object_Nova_hey,
 	nova_Nova_Substring_Accessor_Nova_hashCodeLong,
 	nova_Nova_String_Nova_concat,
 	nova_Nova_Substring_Nova_substring,
@@ -214,6 +218,7 @@ nova_System_Extension_VTable nova_System_Extension_VTable_val =
 		0,
 	},
 	nova_Nova_Object_Nova_toString,
+	nova_Nova_Object_Nova_hey,
 	nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
@@ -257,6 +262,7 @@ nova_ar_ImageTracker_Extension_VTable nova_ar_ImageTracker_Extension_VTable_val 
 		0,
 	},
 	nova_Nova_Object_Nova_toString,
+	nova_Nova_Object_Nova_hey,
 	nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
@@ -300,6 +306,7 @@ nova_ar_TrackPoint_Extension_VTable nova_ar_TrackPoint_Extension_VTable_val =
 		0,
 	},
 	nova_Nova_Object_Nova_toString,
+	nova_Nova_Object_Nova_hey,
 	nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
@@ -343,6 +350,7 @@ nova_database_DBConnector_Extension_VTable nova_database_DBConnector_Extension_V
 		0,
 	},
 	nova_Nova_Object_Nova_toString,
+	nova_Nova_Object_Nova_hey,
 	nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
@@ -386,6 +394,7 @@ nova_database_ResultSet_Extension_VTable nova_database_ResultSet_Extension_VTabl
 		0,
 	},
 	nova_Nova_Object_Nova_toString,
+	nova_Nova_Object_Nova_hey,
 	nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
@@ -429,6 +438,7 @@ nova_datastruct_BinaryNode_Extension_VTable nova_datastruct_BinaryNode_Extension
 		0,
 	},
 	nova_datastruct_Nova_Node_Nova_toString,
+	nova_Nova_Object_Nova_hey,
 	nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
@@ -472,6 +482,7 @@ nova_datastruct_BinaryTree_Extension_VTable nova_datastruct_BinaryTree_Extension
 		0,
 	},
 	nova_Nova_Object_Nova_toString,
+	nova_Nova_Object_Nova_hey,
 	nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
@@ -515,6 +526,7 @@ nova_datastruct_Bounds_Extension_VTable nova_datastruct_Bounds_Extension_VTable_
 		0,
 	},
 	nova_datastruct_Nova_Bounds_Nova_toString,
+	nova_Nova_Object_Nova_hey,
 	nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
@@ -599,6 +611,7 @@ nova_datastruct_HashMap_Extension_VTable nova_datastruct_HashMap_Extension_VTabl
 		0,
 	},
 	nova_Nova_Object_Nova_toString,
+	nova_Nova_Object_Nova_hey,
 	nova_Nova_Object_Accessor_Nova_hashCodeLong,
 	nova_datastruct_Nova_HashMap_Nova_add,
 };
@@ -643,6 +656,7 @@ nova_datastruct_HashSet_Extension_VTable nova_datastruct_HashSet_Extension_VTabl
 		0,
 	},
 	nova_datastruct_Nova_HashSet_Nova_toString,
+	nova_Nova_Object_Nova_hey,
 	nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
@@ -686,6 +700,7 @@ nova_datastruct_ImmutableHashMap_Extension_VTable nova_datastruct_ImmutableHashM
 		0,
 	},
 	nova_Nova_Object_Nova_toString,
+	nova_Nova_Object_Nova_hey,
 	nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
@@ -729,6 +744,7 @@ nova_datastruct_Node_Extension_VTable nova_datastruct_Node_Extension_VTable_val 
 		0,
 	},
 	nova_datastruct_Nova_Node_Nova_toString,
+	nova_Nova_Object_Nova_hey,
 	nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
@@ -772,6 +788,7 @@ nova_datastruct_Pair_Extension_VTable nova_datastruct_Pair_Extension_VTable_val 
 		0,
 	},
 	nova_datastruct_Nova_Pair_Nova_toString,
+	nova_Nova_Object_Nova_hey,
 	nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
@@ -815,6 +832,7 @@ nova_datastruct_ReversibleHashMap_Extension_VTable nova_datastruct_ReversibleHas
 		0,
 	},
 	nova_Nova_Object_Nova_toString,
+	nova_Nova_Object_Nova_hey,
 	nova_Nova_Object_Accessor_Nova_hashCodeLong,
 	nova_datastruct_Nova_ReversibleHashMap_Nova_add,
 };
@@ -859,6 +877,7 @@ nova_datastruct_Tree_Extension_VTable nova_datastruct_Tree_Extension_VTable_val 
 		0,
 	},
 	nova_Nova_Object_Nova_toString,
+	nova_Nova_Object_Nova_hey,
 	nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
@@ -902,6 +921,7 @@ nova_datastruct_Tuple_Extension_VTable nova_datastruct_Tuple_Extension_VTable_va
 		0,
 	},
 	nova_Nova_Object_Nova_toString,
+	nova_Nova_Object_Nova_hey,
 	nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
@@ -945,6 +965,7 @@ nova_datastruct_Tuple2_Extension_VTable nova_datastruct_Tuple2_Extension_VTable_
 		0,
 	},
 	nova_Nova_Object_Nova_toString,
+	nova_Nova_Object_Nova_hey,
 	nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
@@ -988,6 +1009,7 @@ nova_datastruct_list_Array_Extension_VTable nova_datastruct_list_Array_Extension
 		0,
 	},
 	nova_datastruct_list_Nova_Array_Nova_toString,
+	nova_Nova_Object_Nova_hey,
 	nova_Nova_Object_Accessor_Nova_hashCodeLong,
 	nova_datastruct_list_Nova_Array_Nova_addUnique,
 	nova_datastruct_list_Nova_Array_Nova_cloneData,
@@ -1036,6 +1058,7 @@ nova_datastruct_list_ArrayIterator_Extension_VTable nova_datastruct_list_ArrayIt
 		0,
 	},
 	nova_Nova_Object_Nova_toString,
+	nova_Nova_Object_Nova_hey,
 	nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
@@ -1079,6 +1102,7 @@ nova_datastruct_list_CharArray_Extension_VTable nova_datastruct_list_CharArray_E
 		0,
 	},
 	nova_datastruct_list_Nova_Array_Nova_toString,
+	nova_Nova_Object_Nova_hey,
 	nova_datastruct_list_Nova_CharArray_Accessor_Nova_hashCodeLong,
 	nova_datastruct_list_Nova_CharArray_Nova_addUnique,
 	nova_datastruct_list_Nova_CharArray_Nova_cloneData,
@@ -1127,6 +1151,7 @@ nova_datastruct_list_CharArrayIterator_Extension_VTable nova_datastruct_list_Cha
 		0,
 	},
 	nova_Nova_Object_Nova_toString,
+	nova_Nova_Object_Nova_hey,
 	nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
@@ -1170,6 +1195,7 @@ nova_datastruct_list_CompiledList_Extension_VTable nova_datastruct_list_Compiled
 		0,
 	},
 	nova_Nova_Object_Nova_toString,
+	nova_Nova_Object_Nova_hey,
 	nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
@@ -1213,6 +1239,7 @@ nova_datastruct_list_DoubleArray_Extension_VTable nova_datastruct_list_DoubleArr
 		0,
 	},
 	nova_datastruct_list_Nova_Array_Nova_toString,
+	nova_Nova_Object_Nova_hey,
 	nova_Nova_Object_Accessor_Nova_hashCodeLong,
 	nova_datastruct_list_Nova_Array_Nova_addUnique,
 	nova_datastruct_list_Nova_Array_Nova_cloneData,
@@ -1261,6 +1288,7 @@ nova_datastruct_list_DoubleArrayIterator_Extension_VTable nova_datastruct_list_D
 		0,
 	},
 	nova_Nova_Object_Nova_toString,
+	nova_Nova_Object_Nova_hey,
 	nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
@@ -1304,6 +1332,7 @@ nova_datastruct_list_EmptyStackException_Extension_VTable nova_datastruct_list_E
 		0,
 	},
 	nova_exception_Nova_Exception_Nova_toString,
+	nova_Nova_Object_Nova_hey,
 	nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
@@ -1389,6 +1418,7 @@ nova_datastruct_list_ImmutableArrayIterator_Extension_VTable nova_datastruct_lis
 		0,
 	},
 	nova_Nova_Object_Nova_toString,
+	nova_Nova_Object_Nova_hey,
 	nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
@@ -1432,6 +1462,7 @@ nova_datastruct_list_ImmutableCharArray_Extension_VTable nova_datastruct_list_Im
 		0,
 	},
 	nova_datastruct_list_Nova_ImmutableCharArray_Nova_toString,
+	nova_Nova_Object_Nova_hey,
 	nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
@@ -1475,6 +1506,7 @@ nova_datastruct_list_ImmutableCharArrayIterator_Extension_VTable nova_datastruct
 		0,
 	},
 	nova_Nova_Object_Nova_toString,
+	nova_Nova_Object_Nova_hey,
 	nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
@@ -1518,6 +1550,7 @@ nova_datastruct_list_IntArray_Extension_VTable nova_datastruct_list_IntArray_Ext
 		0,
 	},
 	nova_datastruct_list_Nova_Array_Nova_toString,
+	nova_Nova_Object_Nova_hey,
 	nova_Nova_Object_Accessor_Nova_hashCodeLong,
 	nova_datastruct_list_Nova_Array_Nova_addUnique,
 	nova_datastruct_list_Nova_Array_Nova_cloneData,
@@ -1566,6 +1599,7 @@ nova_datastruct_list_IntArrayIterator_Extension_VTable nova_datastruct_list_IntA
 		0,
 	},
 	nova_Nova_Object_Nova_toString,
+	nova_Nova_Object_Nova_hey,
 	nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
@@ -1609,6 +1643,7 @@ nova_datastruct_list_IntRange_Extension_VTable nova_datastruct_list_IntRange_Ext
 		0,
 	},
 	nova_datastruct_list_Nova_IntRange_Nova_toString,
+	nova_Nova_Object_Nova_hey,
 	nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
@@ -1652,6 +1687,7 @@ nova_datastruct_list_IntRangeIterator_Extension_VTable nova_datastruct_list_IntR
 		0,
 	},
 	nova_Nova_Object_Nova_toString,
+	nova_Nova_Object_Nova_hey,
 	nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
@@ -1777,6 +1813,7 @@ nova_datastruct_list_LinkedList_Extension_VTable nova_datastruct_list_LinkedList
 		0,
 	},
 	nova_Nova_Object_Nova_toString,
+	nova_Nova_Object_Nova_hey,
 	nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
@@ -1820,6 +1857,7 @@ nova_datastruct_list_LinkedListIterator_Extension_VTable nova_datastruct_list_Li
 		0,
 	},
 	nova_Nova_Object_Nova_toString,
+	nova_Nova_Object_Nova_hey,
 	nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
@@ -1904,6 +1942,7 @@ nova_datastruct_list_ListNode_Extension_VTable nova_datastruct_list_ListNode_Ext
 		0,
 	},
 	nova_Nova_Object_Nova_toString,
+	nova_Nova_Object_Nova_hey,
 	nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
@@ -1947,6 +1986,7 @@ nova_datastruct_list_NoSuchElementException_Extension_VTable nova_datastruct_lis
 		0,
 	},
 	nova_exception_Nova_Exception_Nova_toString,
+	nova_Nova_Object_Nova_hey,
 	nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
@@ -2031,6 +2071,7 @@ nova_datastruct_list_Queue_Extension_VTable nova_datastruct_list_Queue_Extension
 		0,
 	},
 	nova_datastruct_list_Nova_Queue_Nova_toString,
+	nova_Nova_Object_Nova_hey,
 	nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
@@ -2074,6 +2115,7 @@ nova_datastruct_list_Stack_Extension_VTable nova_datastruct_list_Stack_Extension
 		0,
 	},
 	nova_Nova_Object_Nova_toString,
+	nova_Nova_Object_Nova_hey,
 	nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
@@ -2117,6 +2159,7 @@ nova_datastruct_list_StringCharArray_Extension_VTable nova_datastruct_list_Strin
 		0,
 	},
 	nova_datastruct_list_Nova_Array_Nova_toString,
+	nova_Nova_Object_Nova_hey,
 	nova_datastruct_list_Nova_CharArray_Accessor_Nova_hashCodeLong,
 	nova_datastruct_list_Nova_CharArray_Nova_addUnique,
 	nova_datastruct_list_Nova_CharArray_Nova_cloneData,
@@ -2165,6 +2208,7 @@ nova_datastruct_list_SubstringCharArray_Extension_VTable nova_datastruct_list_Su
 		0,
 	},
 	nova_Nova_Object_Nova_toString,
+	nova_Nova_Object_Nova_hey,
 	nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
@@ -2208,6 +2252,7 @@ nova_exception_Backtraces_Extension_VTable nova_exception_Backtraces_Extension_V
 		0,
 	},
 	nova_Nova_Object_Nova_toString,
+	nova_Nova_Object_Nova_hey,
 	nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
@@ -2251,6 +2296,7 @@ nova_exception_CaughtException_Extension_VTable nova_exception_CaughtException_E
 		0,
 	},
 	nova_Nova_Object_Nova_toString,
+	nova_Nova_Object_Nova_hey,
 	nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
@@ -2294,6 +2340,7 @@ nova_exception_DivideByZeroException_Extension_VTable nova_exception_DivideByZer
 		0,
 	},
 	nova_exception_Nova_Exception_Nova_toString,
+	nova_Nova_Object_Nova_hey,
 	nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
@@ -2337,6 +2384,7 @@ nova_exception_Exception_Extension_VTable nova_exception_Exception_Extension_VTa
 		0,
 	},
 	nova_exception_Nova_Exception_Nova_toString,
+	nova_Nova_Object_Nova_hey,
 	nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
@@ -2380,6 +2428,7 @@ nova_exception_ExceptionData_Extension_VTable nova_exception_ExceptionData_Exten
 		0,
 	},
 	nova_Nova_Object_Nova_toString,
+	nova_Nova_Object_Nova_hey,
 	nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
@@ -2423,6 +2472,7 @@ nova_exception_InvalidArgumentException_Extension_VTable nova_exception_InvalidA
 		0,
 	},
 	nova_exception_Nova_Exception_Nova_toString,
+	nova_Nova_Object_Nova_hey,
 	nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
@@ -2466,6 +2516,7 @@ nova_exception_InvalidOperationException_Extension_VTable nova_exception_Invalid
 		0,
 	},
 	nova_exception_Nova_Exception_Nova_toString,
+	nova_Nova_Object_Nova_hey,
 	nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
@@ -2509,6 +2560,7 @@ nova_exception_UnimplementedOperationException_Extension_VTable nova_exception_U
 		0,
 	},
 	nova_exception_Nova_Exception_Nova_toString,
+	nova_Nova_Object_Nova_hey,
 	nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
@@ -2552,6 +2604,7 @@ nova_gc_GC_Extension_VTable nova_gc_GC_Extension_VTable_val =
 		0,
 	},
 	nova_Nova_Object_Nova_toString,
+	nova_Nova_Object_Nova_hey,
 	nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
@@ -2595,6 +2648,7 @@ nova_io_Console_Extension_VTable nova_io_Console_Extension_VTable_val =
 		0,
 	},
 	nova_Nova_Object_Nova_toString,
+	nova_Nova_Object_Nova_hey,
 	nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
@@ -2638,6 +2692,7 @@ nova_io_File_Extension_VTable nova_io_File_Extension_VTable_val =
 		0,
 	},
 	nova_io_Nova_File_Nova_toString,
+	nova_Nova_Object_Nova_hey,
 	nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
@@ -2681,6 +2736,7 @@ nova_io_FileNotFoundException_Extension_VTable nova_io_FileNotFoundException_Ext
 		0,
 	},
 	nova_exception_Nova_Exception_Nova_toString,
+	nova_Nova_Object_Nova_hey,
 	nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
@@ -2765,6 +2821,7 @@ nova_io_FileWriter_Extension_VTable nova_io_FileWriter_Extension_VTable_val =
 		0,
 	},
 	nova_Nova_Object_Nova_toString,
+	nova_Nova_Object_Nova_hey,
 	nova_Nova_Object_Accessor_Nova_hashCodeLong,
 	nova_io_Nova_FileWriter_Nova_write,
 };
@@ -2850,6 +2907,7 @@ nova_io_OutputStream_Extension_VTable nova_io_OutputStream_Extension_VTable_val 
 		0,
 	},
 	nova_Nova_Object_Nova_toString,
+	nova_Nova_Object_Nova_hey,
 	nova_Nova_Object_Accessor_Nova_hashCodeLong,
 	nova_io_Nova_OutputStream_virtual_Nova_write,
 };
@@ -2894,6 +2952,7 @@ nova_io_StreamReader_Extension_VTable nova_io_StreamReader_Extension_VTable_val 
 		0,
 	},
 	nova_Nova_Object_Nova_toString,
+	nova_Nova_Object_Nova_hey,
 	nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
@@ -2937,6 +2996,7 @@ nova_math_ArithmeticSequence_Extension_VTable nova_math_ArithmeticSequence_Exten
 		0,
 	},
 	nova_Nova_Object_Nova_toString,
+	nova_Nova_Object_Nova_hey,
 	nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
@@ -2980,6 +3040,7 @@ nova_math_Diekstra_Extension_VTable nova_math_Diekstra_Extension_VTable_val =
 		0,
 	},
 	nova_Nova_Object_Nova_toString,
+	nova_Nova_Object_Nova_hey,
 	nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
@@ -3023,6 +3084,7 @@ nova_math_GeometricSequence_Extension_VTable nova_math_GeometricSequence_Extensi
 		0,
 	},
 	nova_Nova_Object_Nova_toString,
+	nova_Nova_Object_Nova_hey,
 	nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
@@ -3066,6 +3128,7 @@ nova_math_Graph_Extension_VTable nova_math_Graph_Extension_VTable_val =
 		0,
 	},
 	nova_Nova_Object_Nova_toString,
+	nova_Nova_Object_Nova_hey,
 	nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
@@ -3109,6 +3172,7 @@ nova_math_InvalidNumericStatementException_Extension_VTable nova_math_InvalidNum
 		0,
 	},
 	nova_exception_Nova_Exception_Nova_toString,
+	nova_Nova_Object_Nova_hey,
 	nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
@@ -3152,6 +3216,7 @@ nova_math_Math_Extension_VTable nova_math_Math_Extension_VTable_val =
 		0,
 	},
 	nova_Nova_Object_Nova_toString,
+	nova_Nova_Object_Nova_hey,
 	nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
@@ -3195,6 +3260,7 @@ nova_math_Matrix_Extension_VTable nova_math_Matrix_Extension_VTable_val =
 		0,
 	},
 	nova_math_Nova_Matrix_Nova_toString,
+	nova_Nova_Object_Nova_hey,
 	nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
@@ -3238,6 +3304,7 @@ nova_math_NumericOperand_Extension_VTable nova_math_NumericOperand_Extension_VTa
 		0,
 	},
 	nova_math_Nova_NumericOperand_Nova_toString,
+	nova_Nova_Object_Nova_hey,
 	nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
@@ -3281,6 +3348,7 @@ nova_math_NumericOperation_Extension_VTable nova_math_NumericOperation_Extension
 		0,
 	},
 	nova_math_Nova_NumericOperation_Nova_toString,
+	nova_Nova_Object_Nova_hey,
 	nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
@@ -3324,6 +3392,7 @@ nova_math_NumericStatement_Extension_VTable nova_math_NumericStatement_Extension
 		0,
 	},
 	nova_math_Nova_NumericStatement_Nova_toString,
+	nova_Nova_Object_Nova_hey,
 	nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
@@ -3367,6 +3436,7 @@ nova_math_NumericTree_Extension_VTable nova_math_NumericTree_Extension_VTable_va
 		0,
 	},
 	nova_math_Nova_NumericTree_Nova_toString,
+	nova_Nova_Object_Nova_hey,
 	nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
@@ -3410,6 +3480,7 @@ nova_math_Polynomial_Extension_VTable nova_math_Polynomial_Extension_VTable_val 
 		0,
 	},
 	nova_Nova_Object_Nova_toString,
+	nova_Nova_Object_Nova_hey,
 	nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
@@ -3453,6 +3524,7 @@ nova_math_Sequence_Extension_VTable nova_math_Sequence_Extension_VTable_val =
 		0,
 	},
 	nova_Nova_Object_Nova_toString,
+	nova_Nova_Object_Nova_hey,
 	nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
@@ -3496,6 +3568,7 @@ nova_math_Statement_Extension_VTable nova_math_Statement_Extension_VTable_val =
 		0,
 	},
 	nova_Nova_Object_Nova_toString,
+	nova_Nova_Object_Nova_hey,
 	nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
@@ -3539,6 +3612,7 @@ nova_math_StatementComponent_Extension_VTable nova_math_StatementComponent_Exten
 		0,
 	},
 	nova_math_Nova_StatementComponent_Nova_toString,
+	nova_Nova_Object_Nova_hey,
 	nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
@@ -3582,6 +3656,7 @@ nova_math_VariableOperand_Extension_VTable nova_math_VariableOperand_Extension_V
 		0,
 	},
 	nova_Nova_Object_Nova_toString,
+	nova_Nova_Object_Nova_hey,
 	nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
@@ -3625,6 +3700,7 @@ nova_math_Vector_Extension_VTable nova_math_Vector_Extension_VTable_val =
 		0,
 	},
 	nova_math_Nova_Vector_Nova_toString,
+	nova_Nova_Object_Nova_hey,
 	nova_Nova_Object_Accessor_Nova_hashCodeLong,
 	nova_math_Nova_Vector_Nova_dotProduct,
 };
@@ -3669,6 +3745,7 @@ nova_math_Vector2D_Extension_VTable nova_math_Vector2D_Extension_VTable_val =
 		0,
 	},
 	nova_math_Nova_Vector_Nova_toString,
+	nova_Nova_Object_Nova_hey,
 	nova_Nova_Object_Accessor_Nova_hashCodeLong,
 	nova_math_Nova_Vector2D_Nova_dotProduct,
 };
@@ -3713,6 +3790,7 @@ nova_math_Vector3D_Extension_VTable nova_math_Vector3D_Extension_VTable_val =
 		0,
 	},
 	nova_math_Nova_Vector_Nova_toString,
+	nova_Nova_Object_Nova_hey,
 	nova_Nova_Object_Accessor_Nova_hashCodeLong,
 	nova_math_Nova_Vector_Nova_dotProduct,
 };
@@ -3757,6 +3835,7 @@ nova_math_Vector4D_Extension_VTable nova_math_Vector4D_Extension_VTable_val =
 		0,
 	},
 	nova_math_Nova_Vector_Nova_toString,
+	nova_Nova_Object_Nova_hey,
 	nova_Nova_Object_Accessor_Nova_hashCodeLong,
 	nova_math_Nova_Vector_Nova_dotProduct,
 };
@@ -3801,6 +3880,7 @@ nova_math_calculus_Calculus_Extension_VTable nova_math_calculus_Calculus_Extensi
 		0,
 	},
 	nova_Nova_Object_Nova_toString,
+	nova_Nova_Object_Nova_hey,
 	nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
@@ -3844,6 +3924,7 @@ nova_math_huffman_HuffmanTree_Extension_VTable nova_math_huffman_HuffmanTree_Ext
 		0,
 	},
 	nova_Nova_Object_Nova_toString,
+	nova_Nova_Object_Nova_hey,
 	nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
@@ -3887,6 +3968,7 @@ nova_math_logic_Conclusion_Extension_VTable nova_math_logic_Conclusion_Extension
 		0,
 	},
 	nova_math_logic_Nova_LogicalStatement_Nova_toString,
+	nova_Nova_Object_Nova_hey,
 	nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
@@ -3930,6 +4012,7 @@ nova_math_logic_Hypothesis_Extension_VTable nova_math_logic_Hypothesis_Extension
 		0,
 	},
 	nova_math_logic_Nova_LogicalStatement_Nova_toString,
+	nova_Nova_Object_Nova_hey,
 	nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
@@ -3973,6 +4056,7 @@ nova_math_logic_InvalidFormulaException_Extension_VTable nova_math_logic_Invalid
 		0,
 	},
 	nova_exception_Nova_Exception_Nova_toString,
+	nova_Nova_Object_Nova_hey,
 	nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
@@ -4016,6 +4100,7 @@ nova_math_logic_LogicalConnective_Extension_VTable nova_math_logic_LogicalConnec
 		0,
 	},
 	nova_Nova_Object_Nova_toString,
+	nova_Nova_Object_Nova_hey,
 	nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
@@ -4059,6 +4144,7 @@ nova_math_logic_LogicalStatement_Extension_VTable nova_math_logic_LogicalStateme
 		0,
 	},
 	nova_math_logic_Nova_LogicalStatement_Nova_toString,
+	nova_Nova_Object_Nova_hey,
 	nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
@@ -4102,6 +4188,7 @@ nova_math_logic_StatementComponent_Extension_VTable nova_math_logic_StatementCom
 		0,
 	},
 	nova_Nova_Object_Nova_toString,
+	nova_Nova_Object_Nova_hey,
 	nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
@@ -4145,6 +4232,7 @@ nova_math_logic_StatementGroup_Extension_VTable nova_math_logic_StatementGroup_E
 		0,
 	},
 	nova_Nova_Object_Nova_toString,
+	nova_Nova_Object_Nova_hey,
 	nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
@@ -4188,6 +4276,7 @@ nova_math_logic_StatementLetter_Extension_VTable nova_math_logic_StatementLetter
 		0,
 	},
 	nova_Nova_Object_Nova_toString,
+	nova_Nova_Object_Nova_hey,
 	nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
@@ -4231,6 +4320,7 @@ nova_math_logic_WFF_Extension_VTable nova_math_logic_WFF_Extension_VTable_val =
 		0,
 	},
 	nova_Nova_Object_Nova_toString,
+	nova_Nova_Object_Nova_hey,
 	nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
@@ -4274,6 +4364,7 @@ nova_meta_Field_Extension_VTable nova_meta_Field_Extension_VTable_val =
 		0,
 	},
 	nova_Nova_Object_Nova_toString,
+	nova_Nova_Object_Nova_hey,
 	nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
@@ -4317,6 +4408,7 @@ nova_meta_GenericArgument_Extension_VTable nova_meta_GenericArgument_Extension_V
 		0,
 	},
 	nova_Nova_Object_Nova_toString,
+	nova_Nova_Object_Nova_hey,
 	nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
@@ -4360,6 +4452,7 @@ nova_meta_GenericParameter_Extension_VTable nova_meta_GenericParameter_Extension
 		0,
 	},
 	nova_Nova_Object_Nova_toString,
+	nova_Nova_Object_Nova_hey,
 	nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
@@ -4403,6 +4496,7 @@ nova_meta_Type_Extension_VTable nova_meta_Type_Extension_VTable_val =
 		0,
 	},
 	nova_Nova_Object_Nova_toString,
+	nova_Nova_Object_Nova_hey,
 	nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
@@ -4446,6 +4540,7 @@ nova_network_ClientSocket_Extension_VTable nova_network_ClientSocket_Extension_V
 		0,
 	},
 	nova_Nova_Object_Nova_toString,
+	nova_Nova_Object_Nova_hey,
 	nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
@@ -4489,6 +4584,7 @@ nova_network_ConnectionSocket_Extension_VTable nova_network_ConnectionSocket_Ext
 		0,
 	},
 	nova_Nova_Object_Nova_toString,
+	nova_Nova_Object_Nova_hey,
 	nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
@@ -4573,6 +4669,7 @@ nova_network_NetworkOutputStream_Extension_VTable nova_network_NetworkOutputStre
 		0,
 	},
 	nova_Nova_Object_Nova_toString,
+	nova_Nova_Object_Nova_hey,
 	nova_Nova_Object_Accessor_Nova_hashCodeLong,
 	nova_network_Nova_NetworkOutputStream_Nova_write,
 };
@@ -4617,6 +4714,7 @@ nova_network_ServerSocket_Extension_VTable nova_network_ServerSocket_Extension_V
 		0,
 	},
 	nova_Nova_Object_Nova_toString,
+	nova_Nova_Object_Nova_hey,
 	nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
@@ -4660,6 +4758,7 @@ nova_network_Socket_Extension_VTable nova_network_Socket_Extension_VTable_val =
 		0,
 	},
 	nova_Nova_Object_Nova_toString,
+	nova_Nova_Object_Nova_hey,
 	nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
@@ -4949,6 +5048,7 @@ nova_primitive_Bool_Extension_VTable nova_primitive_Bool_Extension_VTable_val =
 		0,
 	},
 	nova_primitive_Nova_Bool_Nova_toString,
+	nova_Nova_Object_Nova_hey,
 	nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
@@ -4992,6 +5092,7 @@ nova_primitive_Null_Extension_VTable nova_primitive_Null_Extension_VTable_val =
 		0,
 	},
 	nova_primitive_Nova_Null_Nova_toString,
+	nova_Nova_Object_Nova_hey,
 	nova_Nova_String_Accessor_Nova_hashCodeLong,
 	nova_primitive_Nova_Null_Nova_concat,
 	nova_Nova_String_Nova_substring,
@@ -5037,6 +5138,7 @@ nova_primitive_Primitive_Extension_VTable nova_primitive_Primitive_Extension_VTa
 		0,
 	},
 	nova_Nova_Object_Nova_toString,
+	nova_Nova_Object_Nova_hey,
 	nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
@@ -5080,6 +5182,7 @@ nova_primitive_number_Byte_Extension_VTable nova_primitive_number_Byte_Extension
 		0,
 	},
 	nova_primitive_number_Nova_Byte_Nova_toString,
+	nova_Nova_Object_Nova_hey,
 	nova_Nova_Object_Accessor_Nova_hashCodeLong,
 	nova_primitive_number_Nova_Number_static_Nova_numDigits,
 };
@@ -5124,6 +5227,7 @@ nova_primitive_number_Char_Extension_VTable nova_primitive_number_Char_Extension
 		0,
 	},
 	nova_primitive_number_Nova_Char_Nova_toString,
+	nova_Nova_Object_Nova_hey,
 	nova_Nova_Object_Accessor_Nova_hashCodeLong,
 	nova_primitive_number_Nova_Number_static_Nova_numDigits,
 };
@@ -5168,6 +5272,7 @@ nova_primitive_number_Double_Extension_VTable nova_primitive_number_Double_Exten
 		0,
 	},
 	nova_primitive_number_Nova_Double_Nova_toString,
+	nova_Nova_Object_Nova_hey,
 	nova_Nova_Object_Accessor_Nova_hashCodeLong,
 	nova_primitive_number_Nova_Number_static_Nova_numDigits,
 };
@@ -5212,6 +5317,7 @@ nova_primitive_number_Float_Extension_VTable nova_primitive_number_Float_Extensi
 		0,
 	},
 	nova_primitive_number_Nova_Float_Nova_toString,
+	nova_Nova_Object_Nova_hey,
 	nova_Nova_Object_Accessor_Nova_hashCodeLong,
 	nova_primitive_number_Nova_Number_static_Nova_numDigits,
 };
@@ -5256,6 +5362,7 @@ nova_primitive_number_Int_Extension_VTable nova_primitive_number_Int_Extension_V
 		0,
 	},
 	nova_primitive_number_Nova_Int_Nova_toString,
+	nova_Nova_Object_Nova_hey,
 	nova_primitive_number_Nova_Int_Accessor_Nova_hashCodeLong,
 	nova_primitive_number_Nova_Number_static_Nova_numDigits,
 };
@@ -5341,6 +5448,7 @@ nova_primitive_number_Long_Extension_VTable nova_primitive_number_Long_Extension
 		0,
 	},
 	nova_primitive_number_Nova_Long_Nova_toString,
+	nova_Nova_Object_Nova_hey,
 	nova_Nova_Object_Accessor_Nova_hashCodeLong,
 	nova_primitive_number_Nova_Number_static_Nova_numDigits,
 };
@@ -5385,6 +5493,7 @@ nova_primitive_number_Number_Extension_VTable nova_primitive_number_Number_Exten
 		0,
 	},
 	nova_Nova_Object_Nova_toString,
+	nova_Nova_Object_Nova_hey,
 	nova_Nova_Object_Accessor_Nova_hashCodeLong,
 	nova_primitive_number_Nova_Number_static_Nova_numDigits,
 };
@@ -5470,6 +5579,7 @@ nova_primitive_number_Short_Extension_VTable nova_primitive_number_Short_Extensi
 		0,
 	},
 	nova_primitive_number_Nova_Short_Nova_toString,
+	nova_Nova_Object_Nova_hey,
 	nova_Nova_Object_Accessor_Nova_hashCodeLong,
 	nova_primitive_number_Nova_Number_static_Nova_numDigits,
 };
@@ -5514,6 +5624,7 @@ nova_process_Process_Extension_VTable nova_process_Process_Extension_VTable_val 
 		0,
 	},
 	nova_Nova_Object_Nova_toString,
+	nova_Nova_Object_Nova_hey,
 	nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
@@ -5557,6 +5668,7 @@ nova_regex_Match_Extension_VTable nova_regex_Match_Extension_VTable_val =
 		0,
 	},
 	nova_regex_Nova_Match_Nova_toString,
+	nova_Nova_Object_Nova_hey,
 	nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
@@ -5600,6 +5712,7 @@ nova_regex_Pattern_Extension_VTable nova_regex_Pattern_Extension_VTable_val =
 		0,
 	},
 	nova_Nova_Object_Nova_toString,
+	nova_Nova_Object_Nova_hey,
 	nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
@@ -5643,6 +5756,7 @@ nova_regex_Regex_Extension_VTable nova_regex_Regex_Extension_VTable_val =
 		0,
 	},
 	nova_Nova_Object_Nova_toString,
+	nova_Nova_Object_Nova_hey,
 	nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
@@ -5686,6 +5800,7 @@ nova_security_MD5_Extension_VTable nova_security_MD5_Extension_VTable_val =
 		0,
 	},
 	nova_Nova_Object_Nova_toString,
+	nova_Nova_Object_Nova_hey,
 	nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
@@ -5729,6 +5844,7 @@ nova_security_Sha256_Extension_VTable nova_security_Sha256_Extension_VTable_val 
 		0,
 	},
 	nova_Nova_Object_Nova_toString,
+	nova_Nova_Object_Nova_hey,
 	nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
@@ -5772,6 +5888,7 @@ nova_star_Frame_Extension_VTable nova_star_Frame_Extension_VTable_val =
 		0,
 	},
 	nova_Nova_Object_Nova_toString,
+	nova_Nova_Object_Nova_hey,
 	nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
@@ -5815,6 +5932,7 @@ nova_star_Window_Extension_VTable nova_star_Window_Extension_VTable_val =
 		0,
 	},
 	nova_Nova_Object_Nova_toString,
+	nova_Nova_Object_Nova_hey,
 	nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
@@ -5858,6 +5976,7 @@ nova_star_WindowThread_Extension_VTable nova_star_WindowThread_Extension_VTable_
 		0,
 	},
 	nova_Nova_Object_Nova_toString,
+	nova_Nova_Object_Nova_hey,
 	nova_Nova_Object_Accessor_Nova_hashCodeLong,
 	nova_star_Nova_WindowThread_Nova_run,
 };
@@ -5902,6 +6021,7 @@ nova_thread_Thread_Extension_VTable nova_thread_Thread_Extension_VTable_val =
 		0,
 	},
 	nova_Nova_Object_Nova_toString,
+	nova_Nova_Object_Nova_hey,
 	nova_Nova_Object_Accessor_Nova_hashCodeLong,
 	nova_thread_Nova_Thread_Nova_run,
 };
@@ -5946,6 +6066,7 @@ nova_thread_UncaughtExceptionHandler_Extension_VTable nova_thread_UncaughtExcept
 		0,
 	},
 	nova_Nova_Object_Nova_toString,
+	nova_Nova_Object_Nova_hey,
 	nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
@@ -5989,6 +6110,7 @@ nova_thread_async_Async_Extension_VTable nova_thread_async_Async_Extension_VTabl
 		0,
 	},
 	nova_Nova_Object_Nova_toString,
+	nova_Nova_Object_Nova_hey,
 	nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
@@ -6032,6 +6154,7 @@ nova_thread_async_Task_Extension_VTable nova_thread_async_Task_Extension_VTable_
 		0,
 	},
 	nova_Nova_Object_Nova_toString,
+	nova_Nova_Object_Nova_hey,
 	nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
@@ -6075,6 +6198,7 @@ nova_time_CumulativeTimer_Extension_VTable nova_time_CumulativeTimer_Extension_V
 		0,
 	},
 	nova_time_Nova_Timer_Nova_toString,
+	nova_Nova_Object_Nova_hey,
 	nova_Nova_Object_Accessor_Nova_hashCodeLong,
 	nova_time_Nova_CumulativeTimer_Nova_stop,
 	nova_time_Nova_CumulativeTimer_Accessorfunc_Nova_duration,
@@ -6120,6 +6244,7 @@ nova_time_Date_Extension_VTable nova_time_Date_Extension_VTable_val =
 		0,
 	},
 	nova_Nova_Object_Nova_toString,
+	nova_Nova_Object_Nova_hey,
 	nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
@@ -6163,6 +6288,7 @@ nova_time_Time_Extension_VTable nova_time_Time_Extension_VTable_val =
 		0,
 	},
 	nova_Nova_Object_Nova_toString,
+	nova_Nova_Object_Nova_hey,
 	nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
@@ -6206,6 +6332,7 @@ nova_time_Timer_Extension_VTable nova_time_Timer_Extension_VTable_val =
 		0,
 	},
 	nova_time_Nova_Timer_Nova_toString,
+	nova_Nova_Object_Nova_hey,
 	nova_Nova_Object_Accessor_Nova_hashCodeLong,
 	nova_time_Nova_Timer_Nova_stop,
 	nova_time_Nova_Timer_Accessor_Nova_duration,
@@ -6251,6 +6378,7 @@ nova_web_js_json_Json_Extension_VTable nova_web_js_json_Json_Extension_VTable_va
 		0,
 	},
 	nova_web_js_json_Nova_Json_Nova_toString,
+	nova_Nova_Object_Nova_hey,
 	nova_Nova_Object_Accessor_Nova_hashCodeLong,
 	nova_datastruct_Nova_HashMap_Nova_add,
 };
@@ -6295,6 +6423,7 @@ nova_web_svg_Svg_Extension_VTable nova_web_svg_Svg_Extension_VTable_val =
 		0,
 	},
 	nova_Nova_Object_Nova_toString,
+	nova_Nova_Object_Nova_hey,
 	nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
@@ -6338,6 +6467,7 @@ nova_web_svg_SvgCircle_Extension_VTable nova_web_svg_SvgCircle_Extension_VTable_
 		0,
 	},
 	nova_web_svg_Nova_SvgCircle_Nova_toString,
+	nova_Nova_Object_Nova_hey,
 	nova_Nova_Object_Accessor_Nova_hashCodeLong,
 	nova_web_svg_Nova_SvgComponent_Nova_generateOutput,
 };
@@ -6382,6 +6512,7 @@ nova_web_svg_SvgComponent_Extension_VTable nova_web_svg_SvgComponent_Extension_V
 		0,
 	},
 	nova_Nova_Object_Nova_toString,
+	nova_Nova_Object_Nova_hey,
 	nova_Nova_Object_Accessor_Nova_hashCodeLong,
 	nova_web_svg_Nova_SvgComponent_Nova_generateOutput,
 };
@@ -6426,6 +6557,7 @@ nova_web_svg_SvgComponentList_Extension_VTable nova_web_svg_SvgComponentList_Ext
 		0,
 	},
 	nova_Nova_Object_Nova_toString,
+	nova_Nova_Object_Nova_hey,
 	nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
@@ -6469,6 +6601,7 @@ nova_web_svg_SvgComponentNode_Extension_VTable nova_web_svg_SvgComponentNode_Ext
 		0,
 	},
 	nova_Nova_Object_Nova_toString,
+	nova_Nova_Object_Nova_hey,
 	nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
@@ -6512,6 +6645,7 @@ nova_web_svg_SvgMainComponent_Extension_VTable nova_web_svg_SvgMainComponent_Ext
 		0,
 	},
 	nova_Nova_Object_Nova_toString,
+	nova_Nova_Object_Nova_hey,
 	nova_Nova_Object_Accessor_Nova_hashCodeLong,
 	nova_web_svg_Nova_SvgMainComponent_Nova_generateOutput,
 };
@@ -6556,6 +6690,7 @@ nova_web_svg_no3_No3_Extension_VTable nova_web_svg_no3_No3_Extension_VTable_val 
 		0,
 	},
 	nova_Nova_Object_Nova_toString,
+	nova_Nova_Object_Nova_hey,
 	nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
@@ -6599,6 +6734,7 @@ nova_web_svg_no3_No3Node_Extension_VTable nova_web_svg_no3_No3Node_Extension_VTa
 		0,
 	},
 	nova_Nova_Object_Nova_toString,
+	nova_Nova_Object_Nova_hey,
 	nova_Nova_Object_Accessor_Nova_hashCodeLong,
 	nova_web_svg_no3_Nova_No3Node_virtual_Nova_toJs,
 };
@@ -6643,6 +6779,7 @@ nova_web_svg_no3_No3Select_Extension_VTable nova_web_svg_no3_No3Select_Extension
 		0,
 	},
 	nova_Nova_Object_Nova_toString,
+	nova_Nova_Object_Nova_hey,
 	nova_Nova_Object_Accessor_Nova_hashCodeLong,
 	nova_web_svg_no3_Nova_No3Select_Nova_toJs,
 };
@@ -6687,6 +6824,7 @@ nova_web_svg_no3_No3SelectAll_Extension_VTable nova_web_svg_no3_No3SelectAll_Ext
 		0,
 	},
 	nova_Nova_Object_Nova_toString,
+	nova_Nova_Object_Nova_hey,
 	nova_Nova_Object_Accessor_Nova_hashCodeLong,
 	nova_web_svg_no3_Nova_No3SelectAll_Nova_toJs,
 };
@@ -6731,6 +6869,7 @@ example_Animal_Extension_VTable example_Animal_Extension_VTable_val =
 		0,
 	},
 	example_Nova_Animal_Nova_toString,
+	nova_Nova_Object_Nova_hey,
 	nova_Nova_Object_Accessor_Nova_hashCodeLong,
 	example_Nova_Animal_Nova_getNumLegs,
 	example_Nova_Animal_Nova_getNumEyes,
@@ -6777,6 +6916,7 @@ example_ArrayDemo_Extension_VTable example_ArrayDemo_Extension_VTable_val =
 		0,
 	},
 	nova_Nova_Object_Nova_toString,
+	nova_Nova_Object_Nova_hey,
 	nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
@@ -6820,6 +6960,7 @@ example_BodyBuilder_Extension_VTable example_BodyBuilder_Extension_VTable_val =
 		0,
 	},
 	nova_Nova_Object_Nova_toString,
+	nova_Nova_Object_Nova_hey,
 	nova_Nova_Object_Accessor_Nova_hashCodeLong,
 	example_Nova_BodyBuilder_Nova_sayHello,
 };
@@ -6864,6 +7005,7 @@ example_ClosureDemo_Extension_VTable example_ClosureDemo_Extension_VTable_val =
 		0,
 	},
 	nova_Nova_Object_Nova_toString,
+	nova_Nova_Object_Nova_hey,
 	nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
@@ -6907,6 +7049,7 @@ example_Dog_Extension_VTable example_Dog_Extension_VTable_val =
 		0,
 	},
 	example_Nova_Animal_Nova_toString,
+	nova_Nova_Object_Nova_hey,
 	nova_Nova_Object_Accessor_Nova_hashCodeLong,
 	example_Nova_Dog_Nova_getNumLegs,
 	example_Nova_Dog_Nova_getNumEyes,
@@ -6953,6 +7096,7 @@ example_ExceptionHandlingDemo_Extension_VTable example_ExceptionHandlingDemo_Ext
 		0,
 	},
 	nova_Nova_Object_Nova_toString,
+	nova_Nova_Object_Nova_hey,
 	nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
@@ -6996,6 +7140,7 @@ example_FileTest_Extension_VTable example_FileTest_Extension_VTable_val =
 		0,
 	},
 	nova_Nova_Object_Nova_toString,
+	nova_Nova_Object_Nova_hey,
 	nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
@@ -7039,6 +7184,7 @@ example_GenericDemo_Extension_VTable example_GenericDemo_Extension_VTable_val =
 		0,
 	},
 	nova_Nova_Object_Nova_toString,
+	nova_Nova_Object_Nova_hey,
 	nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
@@ -7082,6 +7228,7 @@ example_HashMapDemo_Extension_VTable example_HashMapDemo_Extension_VTable_val =
 		0,
 	},
 	nova_Nova_Object_Nova_toString,
+	nova_Nova_Object_Nova_hey,
 	nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
@@ -7125,6 +7272,7 @@ example_HashSetDemo_Extension_VTable example_HashSetDemo_Extension_VTable_val =
 		0,
 	},
 	nova_Nova_Object_Nova_toString,
+	nova_Nova_Object_Nova_hey,
 	nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
@@ -7168,6 +7316,7 @@ example_IntegerTest_Extension_VTable example_IntegerTest_Extension_VTable_val =
 		0,
 	},
 	nova_Nova_Object_Nova_toString,
+	nova_Nova_Object_Nova_hey,
 	nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
@@ -7211,6 +7360,7 @@ example_Lab_Extension_VTable example_Lab_Extension_VTable_val =
 		0,
 	},
 	nova_Nova_Object_Nova_toString,
+	example_Nova_Lab_Nova_hey,
 	nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
@@ -7254,6 +7404,7 @@ example_MathDemo_Extension_VTable example_MathDemo_Extension_VTable_val =
 		0,
 	},
 	nova_Nova_Object_Nova_toString,
+	nova_Nova_Object_Nova_hey,
 	nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
@@ -7297,6 +7448,7 @@ example_NonWholeDivisionException_Extension_VTable example_NonWholeDivisionExcep
 		0,
 	},
 	nova_exception_Nova_Exception_Nova_toString,
+	nova_Nova_Object_Nova_hey,
 	nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
@@ -7340,6 +7492,7 @@ example_Person_Extension_VTable example_Person_Extension_VTable_val =
 		0,
 	},
 	nova_Nova_Object_Nova_toString,
+	nova_Nova_Object_Nova_hey,
 	nova_Nova_Object_Accessor_Nova_hashCodeLong,
 	example_Nova_Person_Nova_sayHello,
 };
@@ -7425,6 +7578,7 @@ example_PolymorphismDemo_Extension_VTable example_PolymorphismDemo_Extension_VTa
 		0,
 	},
 	nova_Nova_Object_Nova_toString,
+	nova_Nova_Object_Nova_hey,
 	nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
@@ -7468,6 +7622,7 @@ example_QueueDemo_Extension_VTable example_QueueDemo_Extension_VTable_val =
 		0,
 	},
 	nova_Nova_Object_Nova_toString,
+	nova_Nova_Object_Nova_hey,
 	nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
@@ -7511,6 +7666,7 @@ example_Spider_Extension_VTable example_Spider_Extension_VTable_val =
 		0,
 	},
 	example_Nova_Animal_Nova_toString,
+	nova_Nova_Object_Nova_hey,
 	nova_Nova_Object_Accessor_Nova_hashCodeLong,
 	example_Nova_Spider_Nova_getNumLegs,
 	example_Nova_Spider_Nova_getNumEyes,
@@ -7557,6 +7713,7 @@ example_Square_Extension_VTable example_Square_Extension_VTable_val =
 		(double(*)(example_Nova_Polygon*, nova_exception_Nova_ExceptionData*))example_Nova_Square_Nova_calculateArea,
 	},
 	nova_Nova_Object_Nova_toString,
+	nova_Nova_Object_Nova_hey,
 	nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
@@ -7600,6 +7757,7 @@ example_SvgChart_Extension_VTable example_SvgChart_Extension_VTable_val =
 		0,
 	},
 	nova_Nova_Object_Nova_toString,
+	nova_Nova_Object_Nova_hey,
 	nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
@@ -7643,6 +7801,7 @@ example_SvgFractal_Extension_VTable example_SvgFractal_Extension_VTable_val =
 		0,
 	},
 	nova_Nova_Object_Nova_toString,
+	nova_Nova_Object_Nova_hey,
 	nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
@@ -7686,6 +7845,7 @@ example_T1_Extension_VTable example_T1_Extension_VTable_val =
 		0,
 	},
 	nova_Nova_Object_Nova_toString,
+	nova_Nova_Object_Nova_hey,
 	nova_Nova_Object_Accessor_Nova_hashCodeLong,
 	example_Nova_T1_Accessor_static_Nova_ind,
 };
@@ -7730,6 +7890,7 @@ example_T2_Extension_VTable example_T2_Extension_VTable_val =
 		0,
 	},
 	nova_Nova_Object_Nova_toString,
+	nova_Nova_Object_Nova_hey,
 	nova_Nova_Object_Accessor_Nova_hashCodeLong,
 	example_Nova_T2_Accessor_static_Nova_ind,
 };
@@ -7774,6 +7935,7 @@ example_Test_Extension_VTable example_Test_Extension_VTable_val =
 		0,
 	},
 	nova_Nova_Object_Nova_toString,
+	nova_Nova_Object_Nova_hey,
 	nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
@@ -7817,6 +7979,7 @@ example_ThreadDemo_Extension_VTable example_ThreadDemo_Extension_VTable_val =
 		0,
 	},
 	nova_Nova_Object_Nova_toString,
+	nova_Nova_Object_Nova_hey,
 	nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
@@ -7860,6 +8023,7 @@ example_ThreadDemoImplementation_Extension_VTable example_ThreadDemoImplementati
 		0,
 	},
 	nova_Nova_Object_Nova_toString,
+	nova_Nova_Object_Nova_hey,
 	nova_Nova_Object_Accessor_Nova_hashCodeLong,
 	example_Nova_ThreadDemoImplementation_Nova_run,
 };
@@ -7904,6 +8068,7 @@ example_ackermann_Ackermann_Extension_VTable example_ackermann_Ackermann_Extensi
 		0,
 	},
 	nova_Nova_Object_Nova_toString,
+	nova_Nova_Object_Nova_hey,
 	nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
@@ -7947,6 +8112,7 @@ example_copy_Dog_Extension_VTable example_copy_Dog_Extension_VTable_val =
 		0,
 	},
 	nova_Nova_Object_Nova_toString,
+	nova_Nova_Object_Nova_hey,
 	nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
@@ -7990,6 +8156,7 @@ example_database_DatabaseDemo_Extension_VTable example_database_DatabaseDemo_Ext
 		0,
 	},
 	nova_Nova_Object_Nova_toString,
+	nova_Nova_Object_Nova_hey,
 	nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
@@ -8033,6 +8200,7 @@ example_network_ClientDemo_Extension_VTable example_network_ClientDemo_Extension
 		0,
 	},
 	nova_Nova_Object_Nova_toString,
+	nova_Nova_Object_Nova_hey,
 	nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
@@ -8076,6 +8244,7 @@ example_network_ConnectionThread_Extension_VTable example_network_ConnectionThre
 		0,
 	},
 	nova_Nova_Object_Nova_toString,
+	nova_Nova_Object_Nova_hey,
 	nova_Nova_Object_Accessor_Nova_hashCodeLong,
 	example_network_Nova_ConnectionThread_Nova_run,
 };
@@ -8120,6 +8289,7 @@ example_network_OutputThread_Extension_VTable example_network_OutputThread_Exten
 		0,
 	},
 	nova_Nova_Object_Nova_toString,
+	nova_Nova_Object_Nova_hey,
 	nova_Nova_Object_Accessor_Nova_hashCodeLong,
 	example_network_Nova_OutputThread_Nova_run,
 };
@@ -8164,6 +8334,7 @@ example_network_ServerDemo_Extension_VTable example_network_ServerDemo_Extension
 		0,
 	},
 	nova_Nova_Object_Nova_toString,
+	nova_Nova_Object_Nova_hey,
 	nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 

@@ -76,6 +76,11 @@ nova_Nova_String* nova_Nova_Object_Nova_toString(nova_Nova_Object* this, nova_ex
 	return (nova_Nova_String*)nova_Nova_String_Nova_plus(nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("{")), exceptionData, (nova_Nova_String*)(nova_Nova_String_Nova_plus((nova_Nova_Class_Accessor_Nova_name(this->vtable->classInstance, exceptionData)), exceptionData, (nova_Nova_String*)(nova_Nova_String_Nova_plus(nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)(" @")), exceptionData, (nova_Nova_String*)(nova_Nova_String_Nova_plus((nova_Nova_Object_Accessor_Nova_hashCode(this, exceptionData)), exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("}")))))))));
 }
 
+void nova_Nova_Object_Nova_hey(nova_Nova_Object* this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+	nova_io_Nova_Console_1_static_Nova_writeLine(0, exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("HEY  from obj")));
+}
+
 void nova_Nova_Object_Nova_this(nova_Nova_Object* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
 }
@@ -99,6 +104,11 @@ void nova_Nova_Object_Nova_super(nova_Nova_Object* this, nova_exception_Nova_Exc
 nova_Nova_String* nova_Nova_Object_virtual_Nova_toString(nova_Nova_Object* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
 	return this->vtable->nova_Nova_Object_virtual_Nova_toString((nova_Nova_Object*)(this), exceptionData);
+}
+
+void nova_Nova_Object_virtual_Nova_hey(nova_Nova_Object* this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+	this->vtable->nova_Nova_Object_virtual_Nova_hey((nova_Nova_Object*)(this), exceptionData);
 }
 
 long_long nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong(nova_Nova_Object* this, nova_exception_Nova_ExceptionData* exceptionData)
