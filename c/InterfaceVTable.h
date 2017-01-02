@@ -16,7 +16,16 @@ typedef struct nova_operators_Nova_MultiplyOperator nova_operators_Nova_Multiply
 typedef struct nova_operators_Nova_NotEqualToOperator nova_operators_Nova_NotEqualToOperator;
 typedef struct nova_operators_Nova_PlusEqualsOperator nova_operators_Nova_PlusEqualsOperator;
 typedef struct nova_operators_Nova_PlusOperator nova_operators_Nova_PlusOperator;
-typedef struct example_Nova_Polygon example_Nova_Polygon;
+typedef struct spectra_tree_nodes_Nova_Abstractable spectra_tree_nodes_Nova_Abstractable;
+typedef struct spectra_tree_nodes_Nova_Accessible spectra_tree_nodes_Nova_Accessible;
+typedef struct spectra_tree_nodes_annotations_Nova_Annotatable spectra_tree_nodes_annotations_Nova_Annotatable;
+typedef struct spectra_tree_nodes_annotations_Nova_Annotation spectra_tree_nodes_annotations_Nova_Annotation;
+typedef struct spectra_tree_nodes_functions_Nova_CallableFunction spectra_tree_nodes_functions_Nova_CallableFunction;
+typedef struct spectra_tree_nodes_functions_Nova_Parameter spectra_tree_nodes_functions_Nova_Parameter;
+typedef struct spectra_tree_nodes_functions_Nova_ParameterList spectra_tree_nodes_functions_Nova_ParameterList;
+typedef struct spectra_tree_nodes_generics_Nova_GenericCompatible spectra_tree_nodes_generics_Nova_GenericCompatible;
+typedef struct spectra_tree_nodes_operations_Nova_Assignable spectra_tree_nodes_operations_Nova_Assignable;
+typedef struct spectra_tree_nodes_Nova_Value spectra_tree_nodes_Nova_Value;
 typedef char (*nova_Nova_String_closure1_Nova_transform)(void*, nova_exception_Nova_ExceptionData*, char, int, void*);
 typedef char (*nova_Nova_String_closure2_Nova_transform)(void*, nova_exception_Nova_ExceptionData*, char, int, void*);
 typedef char (*nova_Nova_String_closure3_Nova_transform)(void*, nova_exception_Nova_ExceptionData*, char, int, void*);
@@ -374,6 +383,21 @@ typedef void (*nova_time_Nova_Timer_closure5_Nova_action)(void*, nova_exception_
 typedef void (*nova_time_Nova_Timer_closure6_Nova_callback)(void*, nova_exception_Nova_ExceptionData*, nova_time_Nova_Timer*, void*);
 typedef void (*nova_time_Nova_Timer_closure7_Nova_action)(void*, nova_exception_Nova_ExceptionData*, void*);
 typedef void (*nova_time_Nova_Timer_closure8_Nova_callback)(void*, nova_exception_Nova_ExceptionData*, nova_time_Nova_Timer*, void*);
+typedef struct spectra_tree_nodes_Nova_NovaFile spectra_tree_nodes_Nova_NovaFile;
+typedef void (*spectra_tree_Nova_SyntaxTree_closure1_Nova_func)(void*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_NovaFile*, void*);
+typedef void (*spectra_tree_Nova_SyntaxTree_closure2_Nova_func)(void*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_NovaFile*, void*);
+typedef void (*spectra_tree_Nova_SyntaxTree_closure3_Nova_func)(void*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_NovaFile*, void*);
+typedef void (*spectra_tree_Nova_SyntaxTree_closure4_Nova_func)(void*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_NovaFile*, void*);
+typedef void (*spectra_tree_nodes_Nova_Node_closure1_Nova_action)(void*, nova_exception_Nova_ExceptionData*, void*);
+typedef void (*spectra_tree_nodes_Nova_Node_closure2_Nova_action)(void*, nova_exception_Nova_ExceptionData*, void*);
+typedef void (*spectra_tree_nodes_Nova_Node_closure3_Nova_action)(void*, nova_exception_Nova_ExceptionData*, void*);
+typedef void (*spectra_tree_nodes_Nova_Node_closure4_Nova_action)(void*, nova_exception_Nova_ExceptionData*, void*);
+typedef void (*spectra_tree_nodes_Nova_Node_closure5_Nova_action)(void*, nova_exception_Nova_ExceptionData*, void*);
+typedef void (*spectra_tree_nodes_Nova_Node_closure6_Nova_action)(void*, nova_exception_Nova_ExceptionData*, void*);
+typedef void (*spectra_tree_nodes_Nova_Node_closure7_Nova_action)(void*, nova_exception_Nova_ExceptionData*, void*);
+typedef void (*spectra_tree_nodes_Nova_Node_closure8_Nova_action)(void*, nova_exception_Nova_ExceptionData*, void*);
+typedef int (*spectra_util_Nova_CompilerStringFunctions_closure1_Nova_advance)(void*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, char, int, int, void*);
+typedef int (*spectra_util_Nova_CompilerStringFunctions_closure2_Nova_advance)(void*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, char, int, int, void*);
 
 typedef struct nova_Interface_VTable
 {
@@ -408,8 +432,20 @@ nova_Nova_Object* (*nova_operators_Nova_MultiplyOperator_virtual0_Nova_multiply)
 char (*nova_operators_Nova_NotEqualToOperator_virtual_Nova_notEqualTo)(nova_operators_Nova_NotEqualToOperator*, nova_exception_Nova_ExceptionData*, nova_Nova_Object*);
 nova_Nova_Object* (*nova_operators_Nova_PlusEqualsOperator_virtual0_Nova_plusEquals)(nova_operators_Nova_PlusEqualsOperator*, nova_exception_Nova_ExceptionData*, nova_Nova_Object*);
 nova_Nova_Object* (*nova_operators_Nova_PlusOperator_virtual0_Nova_plus)(nova_operators_Nova_PlusOperator*, nova_exception_Nova_ExceptionData*, nova_Nova_Object*);
-int (*example_Nova_Polygon_virtual_Nova_numberSides)(example_Nova_Polygon*, nova_exception_Nova_ExceptionData*);
-double (*example_Nova_Polygon_virtual_Nova_calculateArea)(example_Nova_Polygon*, nova_exception_Nova_ExceptionData*);
+char (*spectra_tree_nodes_Nova_Abstractable_virtual_Mutator0_Nova_isAbstract)(spectra_tree_nodes_Nova_Abstractable*, nova_exception_Nova_ExceptionData*, char);
+char (*spectra_tree_nodes_Nova_Abstractable_virtual_Accessor1_Nova_isAbstract)(spectra_tree_nodes_Nova_Abstractable*, nova_exception_Nova_ExceptionData*);
+char (*spectra_tree_nodes_Nova_Accessible_virtual_Accessor1_Nova_safeNavigation)(spectra_tree_nodes_Nova_Accessible*, nova_exception_Nova_ExceptionData*);
+char (*spectra_tree_nodes_Nova_Accessible_virtual_Mutator0_Nova_safeNavigation)(spectra_tree_nodes_Nova_Accessible*, nova_exception_Nova_ExceptionData*, char);
+spectra_tree_nodes_Nova_Accessible* (*spectra_tree_nodes_Nova_Accessible_virtual_Accessor1_Nova_accessedNode)(spectra_tree_nodes_Nova_Accessible*, nova_exception_Nova_ExceptionData*);
+spectra_tree_nodes_Nova_Accessible* (*spectra_tree_nodes_Nova_Accessible_virtual_Mutator0_Nova_accessedNode)(spectra_tree_nodes_Nova_Accessible*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Accessible*);
+void (*spectra_tree_nodes_annotations_Nova_Annotatable_virtual_Nova_addAnnotation)(spectra_tree_nodes_annotations_Nova_Annotatable*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_annotations_Nova_Annotation*);
+spectra_tree_nodes_functions_Nova_Parameter* (*spectra_tree_nodes_functions_Nova_CallableFunction_virtual_Nova_parseParameter)(spectra_tree_nodes_functions_Nova_CallableFunction*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, int);
+char (*spectra_tree_nodes_functions_Nova_CallableFunction_virtual_Nova_parseParameters)(spectra_tree_nodes_functions_Nova_CallableFunction*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, int);
+spectra_tree_nodes_functions_Nova_ParameterList* (*spectra_tree_nodes_functions_Nova_CallableFunction_virtual_Accessor1_Nova_parameterList)(spectra_tree_nodes_functions_Nova_CallableFunction*, nova_exception_Nova_ExceptionData*);
+spectra_tree_nodes_functions_Nova_ParameterList* (*spectra_tree_nodes_functions_Nova_CallableFunction_virtual_Mutator0_Nova_parameterList)(spectra_tree_nodes_functions_Nova_CallableFunction*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_functions_Nova_ParameterList*);
+nova_datastruct_list_Nova_Array* (*spectra_tree_nodes_generics_Nova_GenericCompatible_virtual_Accessor_Nova_genericParameters)(spectra_tree_nodes_generics_Nova_GenericCompatible*, nova_exception_Nova_ExceptionData*);
+nova_datastruct_list_Nova_Array* (*spectra_tree_nodes_generics_Nova_GenericCompatible_virtual_Mutator_Nova_genericParameters)(spectra_tree_nodes_generics_Nova_GenericCompatible*, nova_exception_Nova_ExceptionData*, nova_datastruct_list_Nova_Array*);
+void (*spectra_tree_nodes_operations_Nova_Assignable_virtual_Nova_onAssigned)(spectra_tree_nodes_operations_Nova_Assignable*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Value*);
 } nova_Interface_VTable;
 
 #endif
