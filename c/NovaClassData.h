@@ -456,6 +456,7 @@ spectra_tree_nodes_generics_vtable_GenericCompatible* spectra_tree_nodes_generic
 spectra_tree_nodes_operations_vtable_Assignable* spectra_tree_nodes_operations_vtable_Assignable_value;
 
 nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
+void (*nova_Nova_Object_virtual_Nova_hey)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 nova_Nova_String* (*nova_Nova_String_virtual_Nova_concat)(nova_Nova_String*, nova_exception_Nova_ExceptionData*, nova_Nova_String*);
 nova_Nova_String* (*nova_Nova_String_virtual_Nova_substring)(nova_Nova_String*, nova_exception_Nova_ExceptionData*, int, int);

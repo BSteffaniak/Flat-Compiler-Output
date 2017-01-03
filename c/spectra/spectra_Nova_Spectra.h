@@ -67,6 +67,7 @@ void spectra_Nova_Spectra_Nova_destroy(spectra_Nova_Spectra** this, nova_excepti
 void spectra_Nova_Spectra_static_Nova_main(spectra_Nova_Spectra* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_list_Nova_Array* args);
 void spectra_Nova_Spectra_Nova_this(spectra_Nova_Spectra* this, nova_exception_Nova_ExceptionData* exceptionData);
 void spectra_Nova_Spectra_Nova_compile(spectra_Nova_Spectra* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_list_Nova_Array* args);
+void spectra_Nova_Spectra_Nova_hey(spectra_Nova_Spectra* this, nova_exception_Nova_ExceptionData* exceptionData);
 void spectra_Nova_Spectra_Nova_super(spectra_Nova_Spectra* this, nova_exception_Nova_ExceptionData* exceptionData);
 
 #endif

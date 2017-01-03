@@ -141,15 +141,15 @@ void stabilitytest_Nova_ExceptionStability_Nova_testException(stabilitytest_Nova
 				{
 					int l3_Nova_den = 0;
 					int l3_Nova_i = 0;
-					int nova_zero_check5 = 0;
+					int nova_zero_check13 = 0;
 					
 					l3_Nova_den = (int)(0);
-					nova_zero_check5 = l3_Nova_den;
-					if (nova_zero_check5 == 0)
+					nova_zero_check13 = l3_Nova_den;
+					if (nova_zero_check13 == 0)
 					{
 						THROW(nova_exception_Nova_DivideByZeroException_Nova_construct(0, exceptionData), 0);
 					}
-					l3_Nova_i = 43 / nova_zero_check5;
+					l3_Nova_i = 43 / nova_zero_check13;
 				}
 			}
 			CATCH (nova_exception_DivideByZeroException_Extension_VTable_val.classInstance)
