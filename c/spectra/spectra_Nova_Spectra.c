@@ -217,15 +217,9 @@ void spectra_Nova_Spectra_Nova_compile(spectra_Nova_Spectra* this, nova_exceptio
 		nova_io_Nova_Console_1_static_Nova_writeLine(0, exceptionData, (nova_Nova_String*)(nova_Nova_String_Nova_plus(nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("Nova compile time: ")), exceptionData, (nova_Nova_String*)(nova_Nova_String_Nova_plus(nova_primitive_number_Nova_Long_static_Nova_toString(0, exceptionData, (nova_time_Nova_Timer_virtual_Accessor_Nova_duration((nova_time_Nova_Timer*)(l2_Nova_compileTimer), exceptionData))), exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("ms")))))));
 		if (nova_Nova_System_Nova_overheadTimer->nova_time_Nova_CumulativeTimer_Nova_iterations > 0)
 		{
-			nova_io_Nova_Console_1_static_Nova_writeLine(0, exceptionData, (nova_Nova_String*)(nova_Nova_String_Nova_plus(nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("Nova joverhead timer: ")), exceptionData, (nova_Nova_String*)(nova_Nova_String_Nova_plus(nova_primitive_number_Nova_Long_static_Nova_toString(0, exceptionData, (nova_time_Nova_CumulativeTimer_Accessorfunc_Nova_duration(nova_Nova_System_Nova_overheadTimer, exceptionData))), exceptionData, (nova_Nova_String*)(nova_Nova_String_Nova_plus(nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("ms over ")), exceptionData, (nova_Nova_String*)(nova_Nova_String_Nova_plus(nova_primitive_number_Nova_Int_static_Nova_toString(0, exceptionData, (nova_Nova_System_Nova_overheadTimer->nova_time_Nova_CumulativeTimer_Nova_iterations)), exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)(" iterations")))))))))));
+			nova_io_Nova_Console_1_static_Nova_writeLine(0, exceptionData, (nova_Nova_String*)(nova_Nova_String_Nova_plus(nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("Nova overhead timer: ")), exceptionData, (nova_Nova_String*)(nova_Nova_String_Nova_plus(nova_primitive_number_Nova_Long_static_Nova_toString(0, exceptionData, (nova_time_Nova_CumulativeTimer_Accessorfunc_Nova_duration(nova_Nova_System_Nova_overheadTimer, exceptionData))), exceptionData, (nova_Nova_String*)(nova_Nova_String_Nova_plus(nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("ms over ")), exceptionData, (nova_Nova_String*)(nova_Nova_String_Nova_plus(nova_primitive_number_Nova_Int_static_Nova_toString(0, exceptionData, (nova_Nova_System_Nova_overheadTimer->nova_time_Nova_CumulativeTimer_Nova_iterations)), exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)(" iterations")))))))))));
 		}
-		spectra_Nova_Spectra_Nova_hey(this, exceptionData);
 	}
-}
-
-void spectra_Nova_Spectra_Nova_hey(spectra_Nova_Spectra* this, nova_exception_Nova_ExceptionData* exceptionData)
-{
-	nova_io_Nova_Console_1_static_Nova_writeLine(0, exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("HEY  from spectra")));
 }
 
 void spectra_Nova_Spectra_func_Nova_testClasses(spectra_Nova_Spectra* this, nova_exception_Nova_ExceptionData* exceptionData)

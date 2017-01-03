@@ -25,7 +25,6 @@ nova_gc_Nova_GC_static_Nova_init(0, exceptionData);
 
 nova_null = nova_primitive_Nova_Null_Nova_construct(0, exceptionData);
 novaEnv.nova_Object.toString = nova_Object_Extension_VTable_val.nova_Nova_Object_virtual_Nova_toString;
-novaEnv.nova_Object.hey = nova_Object_Extension_VTable_val.nova_Nova_Object_virtual_Nova_hey;
 novaEnv.nova_String.concat = nova_String_Extension_VTable_val.nova_Nova_String_virtual_Nova_concat;
 novaEnv.nova_String.substring = nova_String_Extension_VTable_val.nova_Nova_String_virtual_Nova_substring;
 novaEnv.nova_datastruct_Comparable.compareTo__nova_Object = nova_datastruct_Comparable_Extension_VTable_val.itable.nova_datastruct_Nova_Comparable_virtual0_Nova_compareTo;

@@ -8,7 +8,6 @@ nova_env novaEnv = {
 
 {
 0,
-0,
 &nova_Nova_Object_Nova_construct,
 },
 
