@@ -799,6 +799,180 @@ extern spectra_util_OS_Extension_VTable spectra_util_OS_Extension_VTable_val;
 typedef struct spectra_util_SyntaxUtils_Extension_VTable spectra_util_SyntaxUtils_Extension_VTable;
 extern spectra_util_SyntaxUtils_Extension_VTable spectra_util_SyntaxUtils_Extension_VTable_val;
 
+typedef struct example_Animal_Extension_VTable example_Animal_Extension_VTable;
+extern example_Animal_Extension_VTable example_Animal_Extension_VTable_val;
+
+typedef struct example_ArrayDemo_Extension_VTable example_ArrayDemo_Extension_VTable;
+extern example_ArrayDemo_Extension_VTable example_ArrayDemo_Extension_VTable_val;
+
+typedef struct example_BodyBuilder_Extension_VTable example_BodyBuilder_Extension_VTable;
+extern example_BodyBuilder_Extension_VTable example_BodyBuilder_Extension_VTable_val;
+
+typedef struct example_ClosureDemo_Extension_VTable example_ClosureDemo_Extension_VTable;
+extern example_ClosureDemo_Extension_VTable example_ClosureDemo_Extension_VTable_val;
+
+typedef struct example_Dog_Extension_VTable example_Dog_Extension_VTable;
+extern example_Dog_Extension_VTable example_Dog_Extension_VTable_val;
+
+typedef struct example_ExceptionHandlingDemo_Extension_VTable example_ExceptionHandlingDemo_Extension_VTable;
+extern example_ExceptionHandlingDemo_Extension_VTable example_ExceptionHandlingDemo_Extension_VTable_val;
+
+typedef struct example_FileTest_Extension_VTable example_FileTest_Extension_VTable;
+extern example_FileTest_Extension_VTable example_FileTest_Extension_VTable_val;
+
+typedef struct example_GenericDemo_Extension_VTable example_GenericDemo_Extension_VTable;
+extern example_GenericDemo_Extension_VTable example_GenericDemo_Extension_VTable_val;
+
+typedef struct example_HashMapDemo_Extension_VTable example_HashMapDemo_Extension_VTable;
+extern example_HashMapDemo_Extension_VTable example_HashMapDemo_Extension_VTable_val;
+
+typedef struct example_HashSetDemo_Extension_VTable example_HashSetDemo_Extension_VTable;
+extern example_HashSetDemo_Extension_VTable example_HashSetDemo_Extension_VTable_val;
+
+typedef struct example_IntegerTest_Extension_VTable example_IntegerTest_Extension_VTable;
+extern example_IntegerTest_Extension_VTable example_IntegerTest_Extension_VTable_val;
+
+typedef struct example_Lab_Extension_VTable example_Lab_Extension_VTable;
+extern example_Lab_Extension_VTable example_Lab_Extension_VTable_val;
+
+typedef struct example_MathDemo_Extension_VTable example_MathDemo_Extension_VTable;
+extern example_MathDemo_Extension_VTable example_MathDemo_Extension_VTable_val;
+
+typedef struct example_NonWholeDivisionException_Extension_VTable example_NonWholeDivisionException_Extension_VTable;
+extern example_NonWholeDivisionException_Extension_VTable example_NonWholeDivisionException_Extension_VTable_val;
+
+typedef struct example_Person_Extension_VTable example_Person_Extension_VTable;
+extern example_Person_Extension_VTable example_Person_Extension_VTable_val;
+
+typedef struct example_Polygon_Extension_VTable example_Polygon_Extension_VTable;
+extern example_Polygon_Extension_VTable example_Polygon_Extension_VTable_val;
+
+typedef struct example_PolymorphismDemo_Extension_VTable example_PolymorphismDemo_Extension_VTable;
+extern example_PolymorphismDemo_Extension_VTable example_PolymorphismDemo_Extension_VTable_val;
+
+typedef struct example_QueueDemo_Extension_VTable example_QueueDemo_Extension_VTable;
+extern example_QueueDemo_Extension_VTable example_QueueDemo_Extension_VTable_val;
+
+typedef struct example_Spider_Extension_VTable example_Spider_Extension_VTable;
+extern example_Spider_Extension_VTable example_Spider_Extension_VTable_val;
+
+typedef struct example_Square_Extension_VTable example_Square_Extension_VTable;
+extern example_Square_Extension_VTable example_Square_Extension_VTable_val;
+
+typedef struct example_SvgChart_Extension_VTable example_SvgChart_Extension_VTable;
+extern example_SvgChart_Extension_VTable example_SvgChart_Extension_VTable_val;
+
+typedef struct example_SvgFractal_Extension_VTable example_SvgFractal_Extension_VTable;
+extern example_SvgFractal_Extension_VTable example_SvgFractal_Extension_VTable_val;
+
+typedef struct example_T1_Extension_VTable example_T1_Extension_VTable;
+extern example_T1_Extension_VTable example_T1_Extension_VTable_val;
+
+typedef struct example_T2_Extension_VTable example_T2_Extension_VTable;
+extern example_T2_Extension_VTable example_T2_Extension_VTable_val;
+
+typedef struct example_Test_Extension_VTable example_Test_Extension_VTable;
+extern example_Test_Extension_VTable example_Test_Extension_VTable_val;
+
+typedef struct example_ThreadDemo_Extension_VTable example_ThreadDemo_Extension_VTable;
+extern example_ThreadDemo_Extension_VTable example_ThreadDemo_Extension_VTable_val;
+
+typedef struct example_ThreadDemoImplementation_Extension_VTable example_ThreadDemoImplementation_Extension_VTable;
+extern example_ThreadDemoImplementation_Extension_VTable example_ThreadDemoImplementation_Extension_VTable_val;
+
+typedef struct example_ackermann_Ackermann_Extension_VTable example_ackermann_Ackermann_Extension_VTable;
+extern example_ackermann_Ackermann_Extension_VTable example_ackermann_Ackermann_Extension_VTable_val;
+
+typedef struct example_copy_Dog_Extension_VTable example_copy_Dog_Extension_VTable;
+extern example_copy_Dog_Extension_VTable example_copy_Dog_Extension_VTable_val;
+
+typedef struct example_database_DatabaseDemo_Extension_VTable example_database_DatabaseDemo_Extension_VTable;
+extern example_database_DatabaseDemo_Extension_VTable example_database_DatabaseDemo_Extension_VTable_val;
+
+typedef struct example_network_ClientDemo_Extension_VTable example_network_ClientDemo_Extension_VTable;
+extern example_network_ClientDemo_Extension_VTable example_network_ClientDemo_Extension_VTable_val;
+
+typedef struct example_network_ConnectionThread_Extension_VTable example_network_ConnectionThread_Extension_VTable;
+extern example_network_ConnectionThread_Extension_VTable example_network_ConnectionThread_Extension_VTable_val;
+
+typedef struct example_network_OutputThread_Extension_VTable example_network_OutputThread_Extension_VTable;
+extern example_network_OutputThread_Extension_VTable example_network_OutputThread_Extension_VTable_val;
+
+typedef struct example_network_ServerDemo_Extension_VTable example_network_ServerDemo_Extension_VTable;
+extern example_network_ServerDemo_Extension_VTable example_network_ServerDemo_Extension_VTable_val;
+
+typedef struct stabilitytest_AssignmentStability_Extension_VTable stabilitytest_AssignmentStability_Extension_VTable;
+extern stabilitytest_AssignmentStability_Extension_VTable stabilitytest_AssignmentStability_Extension_VTable_val;
+
+typedef struct stabilitytest_ClassWithProperties_Extension_VTable stabilitytest_ClassWithProperties_Extension_VTable;
+extern stabilitytest_ClassWithProperties_Extension_VTable stabilitytest_ClassWithProperties_Extension_VTable_val;
+
+typedef struct stabilitytest_ClientThread_Extension_VTable stabilitytest_ClientThread_Extension_VTable;
+extern stabilitytest_ClientThread_Extension_VTable stabilitytest_ClientThread_Extension_VTable_val;
+
+typedef struct stabilitytest_ClosureStability_Extension_VTable stabilitytest_ClosureStability_Extension_VTable;
+extern stabilitytest_ClosureStability_Extension_VTable stabilitytest_ClosureStability_Extension_VTable_val;
+
+typedef struct stabilitytest_ExceptionStability_Extension_VTable stabilitytest_ExceptionStability_Extension_VTable;
+extern stabilitytest_ExceptionStability_Extension_VTable stabilitytest_ExceptionStability_Extension_VTable_val;
+
+typedef struct stabilitytest_FileStability_Extension_VTable stabilitytest_FileStability_Extension_VTable;
+extern stabilitytest_FileStability_Extension_VTable stabilitytest_FileStability_Extension_VTable_val;
+
+typedef struct stabilitytest_LambdaStability_Extension_VTable stabilitytest_LambdaStability_Extension_VTable;
+extern stabilitytest_LambdaStability_Extension_VTable stabilitytest_LambdaStability_Extension_VTable_val;
+
+typedef struct stabilitytest_NetworkStability_Extension_VTable stabilitytest_NetworkStability_Extension_VTable;
+extern stabilitytest_NetworkStability_Extension_VTable stabilitytest_NetworkStability_Extension_VTable_val;
+
+typedef struct stabilitytest_Node_Extension_VTable stabilitytest_Node_Extension_VTable;
+extern stabilitytest_Node_Extension_VTable stabilitytest_Node_Extension_VTable_val;
+
+typedef struct stabilitytest_PolymorphicSubClass_Extension_VTable stabilitytest_PolymorphicSubClass_Extension_VTable;
+extern stabilitytest_PolymorphicSubClass_Extension_VTable stabilitytest_PolymorphicSubClass_Extension_VTable_val;
+
+typedef struct stabilitytest_PolymorphicSuperClass_Extension_VTable stabilitytest_PolymorphicSuperClass_Extension_VTable;
+extern stabilitytest_PolymorphicSuperClass_Extension_VTable stabilitytest_PolymorphicSuperClass_Extension_VTable_val;
+
+typedef struct stabilitytest_PolymorphismStability_Extension_VTable stabilitytest_PolymorphismStability_Extension_VTable;
+extern stabilitytest_PolymorphismStability_Extension_VTable stabilitytest_PolymorphismStability_Extension_VTable_val;
+
+typedef struct stabilitytest_RegexStability_Extension_VTable stabilitytest_RegexStability_Extension_VTable;
+extern stabilitytest_RegexStability_Extension_VTable stabilitytest_RegexStability_Extension_VTable_val;
+
+typedef struct stabilitytest_StabilityExceptionHandler_Extension_VTable stabilitytest_StabilityExceptionHandler_Extension_VTable;
+extern stabilitytest_StabilityExceptionHandler_Extension_VTable stabilitytest_StabilityExceptionHandler_Extension_VTable_val;
+
+typedef struct stabilitytest_StabilityTest_Extension_VTable stabilitytest_StabilityTest_Extension_VTable;
+extern stabilitytest_StabilityTest_Extension_VTable stabilitytest_StabilityTest_Extension_VTable_val;
+
+typedef struct stabilitytest_StabilityTestCase_Extension_VTable stabilitytest_StabilityTestCase_Extension_VTable;
+extern stabilitytest_StabilityTestCase_Extension_VTable stabilitytest_StabilityTestCase_Extension_VTable_val;
+
+typedef struct stabilitytest_StabilityTestException_Extension_VTable stabilitytest_StabilityTestException_Extension_VTable;
+extern stabilitytest_StabilityTestException_Extension_VTable stabilitytest_StabilityTestException_Extension_VTable_val;
+
+typedef struct stabilitytest_StaticImportStability_Extension_VTable stabilitytest_StaticImportStability_Extension_VTable;
+extern stabilitytest_StaticImportStability_Extension_VTable stabilitytest_StaticImportStability_Extension_VTable_val;
+
+typedef struct stabilitytest_SyntaxStability_Extension_VTable stabilitytest_SyntaxStability_Extension_VTable;
+extern stabilitytest_SyntaxStability_Extension_VTable stabilitytest_SyntaxStability_Extension_VTable_val;
+
+typedef struct stabilitytest_ThreadImplementation_Extension_VTable stabilitytest_ThreadImplementation_Extension_VTable;
+extern stabilitytest_ThreadImplementation_Extension_VTable stabilitytest_ThreadImplementation_Extension_VTable_val;
+
+typedef struct stabilitytest_ThreadStability_Extension_VTable stabilitytest_ThreadStability_Extension_VTable;
+extern stabilitytest_ThreadStability_Extension_VTable stabilitytest_ThreadStability_Extension_VTable_val;
+
+typedef struct stabilitytest_TimeStability_Extension_VTable stabilitytest_TimeStability_Extension_VTable;
+extern stabilitytest_TimeStability_Extension_VTable stabilitytest_TimeStability_Extension_VTable_val;
+
+typedef struct stabilitytest_ToStringStability_Extension_VTable stabilitytest_ToStringStability_Extension_VTable;
+extern stabilitytest_ToStringStability_Extension_VTable stabilitytest_ToStringStability_Extension_VTable_val;
+
+typedef struct stabilitytest_UnstableException_Extension_VTable stabilitytest_UnstableException_Extension_VTable;
+extern stabilitytest_UnstableException_Extension_VTable stabilitytest_UnstableException_Extension_VTable_val;
+
 
 #include <Nova.h>
 #include <nova/nova_Nova_Object.h>
@@ -1067,6 +1241,64 @@ extern spectra_util_SyntaxUtils_Extension_VTable spectra_util_SyntaxUtils_Extens
 #include <spectra/util/spectra_util_Nova_Location.h>
 #include <spectra/util/spectra_util_Nova_OS.h>
 #include <spectra/util/spectra_util_Nova_SyntaxUtils.h>
+#include <example/example_Nova_Animal.h>
+#include <example/example_Nova_ArrayDemo.h>
+#include <example/example_Nova_BodyBuilder.h>
+#include <example/example_Nova_ClosureDemo.h>
+#include <example/example_Nova_Dog.h>
+#include <example/example_Nova_ExceptionHandlingDemo.h>
+#include <example/example_Nova_FileTest.h>
+#include <example/example_Nova_GenericDemo.h>
+#include <example/example_Nova_HashMapDemo.h>
+#include <example/example_Nova_HashSetDemo.h>
+#include <example/example_Nova_IntegerTest.h>
+#include <example/example_Nova_Lab.h>
+#include <example/example_Nova_MathDemo.h>
+#include <example/example_Nova_NonWholeDivisionException.h>
+#include <example/example_Nova_Person.h>
+#include <example/example_Nova_Polygon.h>
+#include <example/example_Nova_PolymorphismDemo.h>
+#include <example/example_Nova_QueueDemo.h>
+#include <example/example_Nova_Spider.h>
+#include <example/example_Nova_Square.h>
+#include <example/example_Nova_SvgChart.h>
+#include <example/example_Nova_SvgFractal.h>
+#include <example/example_Nova_T1.h>
+#include <example/example_Nova_T2.h>
+#include <example/example_Nova_Test.h>
+#include <example/example_Nova_ThreadDemo.h>
+#include <example/example_Nova_ThreadDemoImplementation.h>
+#include <example/ackermann/example_ackermann_Nova_Ackermann.h>
+#include <example/copy/example_copy_Nova_Dog.h>
+#include <example/database/example_database_Nova_DatabaseDemo.h>
+#include <example/network/example_network_Nova_ClientDemo.h>
+#include <example/network/example_network_Nova_ConnectionThread.h>
+#include <example/network/example_network_Nova_OutputThread.h>
+#include <example/network/example_network_Nova_ServerDemo.h>
+#include <stabilitytest/stabilitytest_Nova_AssignmentStability.h>
+#include <stabilitytest/stabilitytest_Nova_ClassWithProperties.h>
+#include <stabilitytest/stabilitytest_Nova_ClientThread.h>
+#include <stabilitytest/stabilitytest_Nova_ClosureStability.h>
+#include <stabilitytest/stabilitytest_Nova_ExceptionStability.h>
+#include <stabilitytest/stabilitytest_Nova_FileStability.h>
+#include <stabilitytest/stabilitytest_Nova_LambdaStability.h>
+#include <stabilitytest/stabilitytest_Nova_NetworkStability.h>
+#include <stabilitytest/stabilitytest_Nova_Node.h>
+#include <stabilitytest/stabilitytest_Nova_PolymorphicSubClass.h>
+#include <stabilitytest/stabilitytest_Nova_PolymorphicSuperClass.h>
+#include <stabilitytest/stabilitytest_Nova_PolymorphismStability.h>
+#include <stabilitytest/stabilitytest_Nova_RegexStability.h>
+#include <stabilitytest/stabilitytest_Nova_StabilityExceptionHandler.h>
+#include <stabilitytest/stabilitytest_Nova_StabilityTest.h>
+#include <stabilitytest/stabilitytest_Nova_StabilityTestCase.h>
+#include <stabilitytest/stabilitytest_Nova_StabilityTestException.h>
+#include <stabilitytest/stabilitytest_Nova_StaticImportStability.h>
+#include <stabilitytest/stabilitytest_Nova_SyntaxStability.h>
+#include <stabilitytest/stabilitytest_Nova_ThreadImplementation.h>
+#include <stabilitytest/stabilitytest_Nova_ThreadStability.h>
+#include <stabilitytest/stabilitytest_Nova_TimeStability.h>
+#include <stabilitytest/stabilitytest_Nova_ToStringStability.h>
+#include <stabilitytest/stabilitytest_Nova_UnstableException.h>
 
 
 struct nova_Object_Extension_VTable
@@ -2610,6 +2842,7 @@ nova_meta_Nova_Class* classInstance;
 nova_Interface_VTable itable;
 nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
+void (*nova_thread_Nova_UncaughtExceptionHandler_virtual_Nova_uncaughtException)(nova_thread_Nova_UncaughtExceptionHandler*, nova_exception_Nova_ExceptionData*, nova_thread_Nova_Thread*, nova_exception_Nova_Exception*);
 };
 
 
@@ -4393,7 +4626,7 @@ void (*spectra_tree_nodes_Nova_Node_virtual_Nova_addChild)(spectra_tree_nodes_No
 spectra_tree_nodes_variables_Nova_VariableDeclaration* (*spectra_tree_nodes_Nova_Node_virtual_Nova_findVariableDeclaration)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, int);
 spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_Node_virtual_Nova_parseStatement)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*, int);
 spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_Node_virtual_Nova_generateTemporaryScopeNode)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_Node_virtual_Nova_cloneTo)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
+spectra_tree_nodes_controlstructures_Nova_ControlStructure* (*spectra_tree_nodes_Nova_Node_virtual_Nova_cloneTo)(spectra_tree_nodes_controlstructures_Nova_ControlStructure*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_controlstructures_Nova_ControlStructure*);
 char (*spectra_tree_nodes_Nova_Node_virtual_Nova_replace)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
 char (*spectra_tree_nodes_Nova_Node_virtual_Nova_validateTypes)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*);
 char (*spectra_tree_nodes_Nova_Node_virtual_Nova_parsePlaceholders)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*);
@@ -4428,7 +4661,7 @@ void (*spectra_tree_nodes_Nova_Node_virtual_Nova_addChild)(spectra_tree_nodes_No
 spectra_tree_nodes_variables_Nova_VariableDeclaration* (*spectra_tree_nodes_Nova_Node_virtual_Nova_findVariableDeclaration)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, int);
 spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_Node_virtual_Nova_parseStatement)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*, int);
 spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_Node_virtual_Nova_generateTemporaryScopeNode)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_Node_virtual_Nova_cloneTo)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
+spectra_tree_nodes_controlstructures_Nova_ControlStructure* (*spectra_tree_nodes_Nova_Node_virtual_Nova_cloneTo)(spectra_tree_nodes_controlstructures_Nova_ControlStructure*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_controlstructures_Nova_ControlStructure*);
 char (*spectra_tree_nodes_Nova_Node_virtual_Nova_replace)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
 char (*spectra_tree_nodes_Nova_Node_virtual_Nova_validateTypes)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*);
 char (*spectra_tree_nodes_Nova_Node_virtual_Nova_parsePlaceholders)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*);
@@ -4463,7 +4696,7 @@ void (*spectra_tree_nodes_Nova_Node_virtual_Nova_addChild)(spectra_tree_nodes_No
 spectra_tree_nodes_variables_Nova_VariableDeclaration* (*spectra_tree_nodes_Nova_Node_virtual_Nova_findVariableDeclaration)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, int);
 spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_Node_virtual_Nova_parseStatement)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*, int);
 spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_Node_virtual_Nova_generateTemporaryScopeNode)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_Node_virtual_Nova_cloneTo)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
+spectra_tree_nodes_controlstructures_Nova_ControlStructure* (*spectra_tree_nodes_Nova_Node_virtual_Nova_cloneTo)(spectra_tree_nodes_controlstructures_Nova_ControlStructure*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_controlstructures_Nova_ControlStructure*);
 char (*spectra_tree_nodes_Nova_Node_virtual_Nova_replace)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
 char (*spectra_tree_nodes_Nova_Node_virtual_Nova_validateTypes)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*);
 char (*spectra_tree_nodes_Nova_Node_virtual_Nova_parsePlaceholders)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*);
@@ -4498,7 +4731,7 @@ void (*spectra_tree_nodes_Nova_Node_virtual_Nova_addChild)(spectra_tree_nodes_No
 spectra_tree_nodes_variables_Nova_VariableDeclaration* (*spectra_tree_nodes_Nova_Node_virtual_Nova_findVariableDeclaration)(spectra_tree_nodes_controlstructures_loops_Nova_ForEachLoop*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, int);
 spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_Node_virtual_Nova_parseStatement)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*, int);
 spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_Node_virtual_Nova_generateTemporaryScopeNode)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_Node_virtual_Nova_cloneTo)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
+spectra_tree_nodes_controlstructures_loops_Nova_ForEachLoop* (*spectra_tree_nodes_Nova_Node_virtual_Nova_cloneTo)(spectra_tree_nodes_controlstructures_loops_Nova_ForEachLoop*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_controlstructures_loops_Nova_ForEachLoop*);
 char (*spectra_tree_nodes_Nova_Node_virtual_Nova_replace)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
 char (*spectra_tree_nodes_Nova_Node_virtual_Nova_validateTypes)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*);
 char (*spectra_tree_nodes_Nova_Node_virtual_Nova_parsePlaceholders)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*);
@@ -4534,7 +4767,7 @@ void (*spectra_tree_nodes_Nova_Node_virtual_Nova_addChild)(spectra_tree_nodes_No
 spectra_tree_nodes_variables_Nova_VariableDeclaration* (*spectra_tree_nodes_Nova_Node_virtual_Nova_findVariableDeclaration)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, int);
 spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_Node_virtual_Nova_parseStatement)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*, int);
 spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_Node_virtual_Nova_generateTemporaryScopeNode)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_Node_virtual_Nova_cloneTo)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
+spectra_tree_nodes_controlstructures_Nova_ControlStructure* (*spectra_tree_nodes_Nova_Node_virtual_Nova_cloneTo)(spectra_tree_nodes_controlstructures_Nova_ControlStructure*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_controlstructures_Nova_ControlStructure*);
 char (*spectra_tree_nodes_Nova_Node_virtual_Nova_replace)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
 char (*spectra_tree_nodes_Nova_Node_virtual_Nova_validateTypes)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*);
 char (*spectra_tree_nodes_Nova_Node_virtual_Nova_parsePlaceholders)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*);
@@ -4570,7 +4803,7 @@ void (*spectra_tree_nodes_Nova_Node_virtual_Nova_addChild)(spectra_tree_nodes_No
 spectra_tree_nodes_variables_Nova_VariableDeclaration* (*spectra_tree_nodes_Nova_Node_virtual_Nova_findVariableDeclaration)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, int);
 spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_Node_virtual_Nova_parseStatement)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*, int);
 spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_Node_virtual_Nova_generateTemporaryScopeNode)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_Node_virtual_Nova_cloneTo)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
+spectra_tree_nodes_controlstructures_Nova_ControlStructure* (*spectra_tree_nodes_Nova_Node_virtual_Nova_cloneTo)(spectra_tree_nodes_controlstructures_Nova_ControlStructure*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_controlstructures_Nova_ControlStructure*);
 char (*spectra_tree_nodes_Nova_Node_virtual_Nova_replace)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
 char (*spectra_tree_nodes_Nova_Node_virtual_Nova_validateTypes)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*);
 char (*spectra_tree_nodes_Nova_Node_virtual_Nova_parsePlaceholders)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*);
@@ -6272,6 +6505,678 @@ struct spectra_util_SyntaxUtils_Extension_VTable
 nova_meta_Nova_Class* classInstance;
 nova_Interface_VTable itable;
 nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
+long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
+};
+
+
+
+
+struct example_Animal_Extension_VTable
+{
+nova_meta_Nova_Class* classInstance;
+nova_Interface_VTable itable;
+nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(example_Nova_Animal*, nova_exception_Nova_ExceptionData*);
+long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
+int (*example_Nova_Animal_virtual_Nova_getNumLegs)(example_Nova_Animal*, nova_exception_Nova_ExceptionData*);
+int (*example_Nova_Animal_virtual_Nova_getNumEyes)(example_Nova_Animal*, nova_exception_Nova_ExceptionData*);
+nova_Nova_String* (*example_Nova_Animal_virtual_Nova_getDescription)(example_Nova_Animal*, nova_exception_Nova_ExceptionData*);
+};
+
+
+
+
+struct example_ArrayDemo_Extension_VTable
+{
+nova_meta_Nova_Class* classInstance;
+nova_Interface_VTable itable;
+nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
+long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
+};
+
+
+
+
+struct example_BodyBuilder_Extension_VTable
+{
+nova_meta_Nova_Class* classInstance;
+nova_Interface_VTable itable;
+nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
+long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
+void (*example_Nova_Person_virtual_Nova_sayHello)(example_Nova_BodyBuilder*, nova_exception_Nova_ExceptionData*);
+};
+
+
+
+
+struct example_ClosureDemo_Extension_VTable
+{
+nova_meta_Nova_Class* classInstance;
+nova_Interface_VTable itable;
+nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
+long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
+};
+
+
+
+
+struct example_Dog_Extension_VTable
+{
+nova_meta_Nova_Class* classInstance;
+nova_Interface_VTable itable;
+nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(example_Nova_Animal*, nova_exception_Nova_ExceptionData*);
+long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
+int (*example_Nova_Animal_virtual_Nova_getNumLegs)(example_Nova_Dog*, nova_exception_Nova_ExceptionData*);
+int (*example_Nova_Animal_virtual_Nova_getNumEyes)(example_Nova_Dog*, nova_exception_Nova_ExceptionData*);
+nova_Nova_String* (*example_Nova_Animal_virtual_Nova_getDescription)(example_Nova_Dog*, nova_exception_Nova_ExceptionData*);
+};
+
+
+
+
+struct example_ExceptionHandlingDemo_Extension_VTable
+{
+nova_meta_Nova_Class* classInstance;
+nova_Interface_VTable itable;
+nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
+long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
+};
+
+
+
+
+struct example_FileTest_Extension_VTable
+{
+nova_meta_Nova_Class* classInstance;
+nova_Interface_VTable itable;
+nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
+long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
+};
+
+
+
+
+struct example_GenericDemo_Extension_VTable
+{
+nova_meta_Nova_Class* classInstance;
+nova_Interface_VTable itable;
+nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
+long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
+};
+
+
+
+
+struct example_HashMapDemo_Extension_VTable
+{
+nova_meta_Nova_Class* classInstance;
+nova_Interface_VTable itable;
+nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
+long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
+};
+
+
+
+
+struct example_HashSetDemo_Extension_VTable
+{
+nova_meta_Nova_Class* classInstance;
+nova_Interface_VTable itable;
+nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
+long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
+};
+
+
+
+
+struct example_IntegerTest_Extension_VTable
+{
+nova_meta_Nova_Class* classInstance;
+nova_Interface_VTable itable;
+nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
+long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
+};
+
+
+
+
+struct example_Lab_Extension_VTable
+{
+nova_meta_Nova_Class* classInstance;
+nova_Interface_VTable itable;
+nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
+long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
+};
+
+
+
+
+struct example_MathDemo_Extension_VTable
+{
+nova_meta_Nova_Class* classInstance;
+nova_Interface_VTable itable;
+nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
+long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
+};
+
+
+
+
+struct example_NonWholeDivisionException_Extension_VTable
+{
+nova_meta_Nova_Class* classInstance;
+nova_Interface_VTable itable;
+nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_exception_Nova_Exception*, nova_exception_Nova_ExceptionData*);
+long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
+};
+
+
+
+
+struct example_Person_Extension_VTable
+{
+nova_meta_Nova_Class* classInstance;
+nova_Interface_VTable itable;
+nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
+long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
+void (*example_Nova_Person_virtual_Nova_sayHello)(example_Nova_Person*, nova_exception_Nova_ExceptionData*);
+};
+
+
+
+
+struct example_Polygon_Extension_VTable
+{
+nova_meta_Nova_Class* classInstance;
+nova_Interface_VTable itable;
+};
+
+
+
+
+struct example_PolymorphismDemo_Extension_VTable
+{
+nova_meta_Nova_Class* classInstance;
+nova_Interface_VTable itable;
+nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
+long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
+};
+
+
+
+
+struct example_QueueDemo_Extension_VTable
+{
+nova_meta_Nova_Class* classInstance;
+nova_Interface_VTable itable;
+nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
+long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
+};
+
+
+
+
+struct example_Spider_Extension_VTable
+{
+nova_meta_Nova_Class* classInstance;
+nova_Interface_VTable itable;
+nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(example_Nova_Animal*, nova_exception_Nova_ExceptionData*);
+long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
+int (*example_Nova_Animal_virtual_Nova_getNumLegs)(example_Nova_Spider*, nova_exception_Nova_ExceptionData*);
+int (*example_Nova_Animal_virtual_Nova_getNumEyes)(example_Nova_Spider*, nova_exception_Nova_ExceptionData*);
+nova_Nova_String* (*example_Nova_Animal_virtual_Nova_getDescription)(example_Nova_Spider*, nova_exception_Nova_ExceptionData*);
+};
+
+
+
+
+struct example_Square_Extension_VTable
+{
+nova_meta_Nova_Class* classInstance;
+nova_Interface_VTable itable;
+nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
+long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
+};
+
+
+
+
+struct example_SvgChart_Extension_VTable
+{
+nova_meta_Nova_Class* classInstance;
+nova_Interface_VTable itable;
+nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
+long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
+};
+
+
+
+
+struct example_SvgFractal_Extension_VTable
+{
+nova_meta_Nova_Class* classInstance;
+nova_Interface_VTable itable;
+nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
+long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
+};
+
+
+
+
+struct example_T1_Extension_VTable
+{
+nova_meta_Nova_Class* classInstance;
+nova_Interface_VTable itable;
+nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
+long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
+int (*example_Nova_T1_virtual_Accessor_static_Nova_ind)(example_Nova_T1*, nova_exception_Nova_ExceptionData*);
+};
+
+
+
+
+struct example_T2_Extension_VTable
+{
+nova_meta_Nova_Class* classInstance;
+nova_Interface_VTable itable;
+nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
+long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
+int (*example_Nova_T1_virtual_Accessor_static_Nova_ind)(example_Nova_T2*, nova_exception_Nova_ExceptionData*);
+};
+
+
+
+
+struct example_Test_Extension_VTable
+{
+nova_meta_Nova_Class* classInstance;
+nova_Interface_VTable itable;
+nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
+long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
+};
+
+
+
+
+struct example_ThreadDemo_Extension_VTable
+{
+nova_meta_Nova_Class* classInstance;
+nova_Interface_VTable itable;
+nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
+long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
+};
+
+
+
+
+struct example_ThreadDemoImplementation_Extension_VTable
+{
+nova_meta_Nova_Class* classInstance;
+nova_Interface_VTable itable;
+nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
+long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
+void (*nova_thread_Nova_Thread_virtual_Nova_run)(example_Nova_ThreadDemoImplementation*, nova_exception_Nova_ExceptionData*);
+};
+
+
+
+
+struct example_ackermann_Ackermann_Extension_VTable
+{
+nova_meta_Nova_Class* classInstance;
+nova_Interface_VTable itable;
+nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
+long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
+};
+
+
+
+
+struct example_copy_Dog_Extension_VTable
+{
+nova_meta_Nova_Class* classInstance;
+nova_Interface_VTable itable;
+nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
+long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
+};
+
+
+
+
+struct example_database_DatabaseDemo_Extension_VTable
+{
+nova_meta_Nova_Class* classInstance;
+nova_Interface_VTable itable;
+nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
+long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
+};
+
+
+
+
+struct example_network_ClientDemo_Extension_VTable
+{
+nova_meta_Nova_Class* classInstance;
+nova_Interface_VTable itable;
+nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
+long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
+};
+
+
+
+
+struct example_network_ConnectionThread_Extension_VTable
+{
+nova_meta_Nova_Class* classInstance;
+nova_Interface_VTable itable;
+nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
+long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
+void (*nova_thread_Nova_Thread_virtual_Nova_run)(example_network_Nova_ConnectionThread*, nova_exception_Nova_ExceptionData*);
+};
+
+
+
+
+struct example_network_OutputThread_Extension_VTable
+{
+nova_meta_Nova_Class* classInstance;
+nova_Interface_VTable itable;
+nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
+long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
+void (*nova_thread_Nova_Thread_virtual_Nova_run)(example_network_Nova_OutputThread*, nova_exception_Nova_ExceptionData*);
+};
+
+
+
+
+struct example_network_ServerDemo_Extension_VTable
+{
+nova_meta_Nova_Class* classInstance;
+nova_Interface_VTable itable;
+nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
+long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
+};
+
+
+
+
+struct stabilitytest_AssignmentStability_Extension_VTable
+{
+nova_meta_Nova_Class* classInstance;
+nova_Interface_VTable itable;
+nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
+long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
+void (*stabilitytest_Nova_StabilityTestCase_virtual_Nova_test)(stabilitytest_Nova_AssignmentStability*, nova_exception_Nova_ExceptionData*);
+};
+
+
+
+
+struct stabilitytest_ClassWithProperties_Extension_VTable
+{
+nova_meta_Nova_Class* classInstance;
+nova_Interface_VTable itable;
+nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
+long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
+};
+
+
+
+
+struct stabilitytest_ClientThread_Extension_VTable
+{
+nova_meta_Nova_Class* classInstance;
+nova_Interface_VTable itable;
+nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
+long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
+void (*nova_thread_Nova_Thread_virtual_Nova_run)(stabilitytest_Nova_ClientThread*, nova_exception_Nova_ExceptionData*);
+};
+
+
+
+
+struct stabilitytest_ClosureStability_Extension_VTable
+{
+nova_meta_Nova_Class* classInstance;
+nova_Interface_VTable itable;
+nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
+long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
+void (*stabilitytest_Nova_StabilityTestCase_virtual_Nova_test)(stabilitytest_Nova_ClosureStability*, nova_exception_Nova_ExceptionData*);
+};
+
+
+
+
+struct stabilitytest_ExceptionStability_Extension_VTable
+{
+nova_meta_Nova_Class* classInstance;
+nova_Interface_VTable itable;
+nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
+long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
+void (*stabilitytest_Nova_StabilityTestCase_virtual_Nova_test)(stabilitytest_Nova_ExceptionStability*, nova_exception_Nova_ExceptionData*);
+};
+
+
+
+
+struct stabilitytest_FileStability_Extension_VTable
+{
+nova_meta_Nova_Class* classInstance;
+nova_Interface_VTable itable;
+nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
+long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
+void (*stabilitytest_Nova_StabilityTestCase_virtual_Nova_test)(stabilitytest_Nova_FileStability*, nova_exception_Nova_ExceptionData*);
+};
+
+
+
+
+struct stabilitytest_LambdaStability_Extension_VTable
+{
+nova_meta_Nova_Class* classInstance;
+nova_Interface_VTable itable;
+nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
+long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
+void (*stabilitytest_Nova_StabilityTestCase_virtual_Nova_test)(stabilitytest_Nova_LambdaStability*, nova_exception_Nova_ExceptionData*);
+};
+
+
+
+
+struct stabilitytest_NetworkStability_Extension_VTable
+{
+nova_meta_Nova_Class* classInstance;
+nova_Interface_VTable itable;
+nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
+long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
+void (*stabilitytest_Nova_StabilityTestCase_virtual_Nova_test)(stabilitytest_Nova_NetworkStability*, nova_exception_Nova_ExceptionData*);
+};
+
+
+
+
+struct stabilitytest_Node_Extension_VTable
+{
+nova_meta_Nova_Class* classInstance;
+nova_Interface_VTable itable;
+nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
+long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
+};
+
+
+
+
+struct stabilitytest_PolymorphicSubClass_Extension_VTable
+{
+nova_meta_Nova_Class* classInstance;
+nova_Interface_VTable itable;
+nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(stabilitytest_Nova_PolymorphicSubClass*, nova_exception_Nova_ExceptionData*);
+long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
+int (*stabilitytest_Nova_PolymorphicSuperClass_virtual_Accessor_Nova_myProperty)(stabilitytest_Nova_PolymorphicSubClass*, nova_exception_Nova_ExceptionData*);
+};
+
+
+
+
+struct stabilitytest_PolymorphicSuperClass_Extension_VTable
+{
+nova_meta_Nova_Class* classInstance;
+nova_Interface_VTable itable;
+nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(stabilitytest_Nova_PolymorphicSuperClass*, nova_exception_Nova_ExceptionData*);
+long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
+int (*stabilitytest_Nova_PolymorphicSuperClass_virtual_Accessor_Nova_myProperty)(stabilitytest_Nova_PolymorphicSuperClass*, nova_exception_Nova_ExceptionData*);
+};
+
+
+
+
+struct stabilitytest_PolymorphismStability_Extension_VTable
+{
+nova_meta_Nova_Class* classInstance;
+nova_Interface_VTable itable;
+nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
+long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
+void (*stabilitytest_Nova_StabilityTestCase_virtual_Nova_test)(stabilitytest_Nova_PolymorphismStability*, nova_exception_Nova_ExceptionData*);
+};
+
+
+
+
+struct stabilitytest_RegexStability_Extension_VTable
+{
+nova_meta_Nova_Class* classInstance;
+nova_Interface_VTable itable;
+nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
+long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
+void (*stabilitytest_Nova_StabilityTestCase_virtual_Nova_test)(stabilitytest_Nova_RegexStability*, nova_exception_Nova_ExceptionData*);
+};
+
+
+
+
+struct stabilitytest_StabilityExceptionHandler_Extension_VTable
+{
+nova_meta_Nova_Class* classInstance;
+nova_Interface_VTable itable;
+nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
+long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
+void (*nova_thread_Nova_UncaughtExceptionHandler_virtual_Nova_uncaughtException)(stabilitytest_Nova_StabilityExceptionHandler*, nova_exception_Nova_ExceptionData*, nova_thread_Nova_Thread*, nova_exception_Nova_Exception*);
+};
+
+
+
+
+struct stabilitytest_StabilityTest_Extension_VTable
+{
+nova_meta_Nova_Class* classInstance;
+nova_Interface_VTable itable;
+nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
+long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
+void (*stabilitytest_Nova_StabilityTestCase_virtual_Nova_test)(stabilitytest_Nova_StabilityTest*, nova_exception_Nova_ExceptionData*);
+};
+
+
+
+
+struct stabilitytest_StabilityTestCase_Extension_VTable
+{
+nova_meta_Nova_Class* classInstance;
+nova_Interface_VTable itable;
+nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
+long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
+void (*stabilitytest_Nova_StabilityTestCase_virtual_Nova_test)(stabilitytest_Nova_StabilityTestCase*, nova_exception_Nova_ExceptionData*);
+};
+
+
+
+
+struct stabilitytest_StabilityTestException_Extension_VTable
+{
+nova_meta_Nova_Class* classInstance;
+nova_Interface_VTable itable;
+nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_exception_Nova_Exception*, nova_exception_Nova_ExceptionData*);
+long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
+};
+
+
+
+
+struct stabilitytest_StaticImportStability_Extension_VTable
+{
+nova_meta_Nova_Class* classInstance;
+nova_Interface_VTable itable;
+nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
+long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
+void (*stabilitytest_Nova_StabilityTestCase_virtual_Nova_test)(stabilitytest_Nova_StaticImportStability*, nova_exception_Nova_ExceptionData*);
+};
+
+
+
+
+struct stabilitytest_SyntaxStability_Extension_VTable
+{
+nova_meta_Nova_Class* classInstance;
+nova_Interface_VTable itable;
+nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
+long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
+void (*stabilitytest_Nova_StabilityTestCase_virtual_Nova_test)(stabilitytest_Nova_SyntaxStability*, nova_exception_Nova_ExceptionData*);
+};
+
+
+
+
+struct stabilitytest_ThreadImplementation_Extension_VTable
+{
+nova_meta_Nova_Class* classInstance;
+nova_Interface_VTable itable;
+nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
+long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
+void (*nova_thread_Nova_Thread_virtual_Nova_run)(stabilitytest_Nova_ThreadImplementation*, nova_exception_Nova_ExceptionData*);
+};
+
+
+
+
+struct stabilitytest_ThreadStability_Extension_VTable
+{
+nova_meta_Nova_Class* classInstance;
+nova_Interface_VTable itable;
+nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
+long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
+void (*stabilitytest_Nova_StabilityTestCase_virtual_Nova_test)(stabilitytest_Nova_ThreadStability*, nova_exception_Nova_ExceptionData*);
+};
+
+
+
+
+struct stabilitytest_TimeStability_Extension_VTable
+{
+nova_meta_Nova_Class* classInstance;
+nova_Interface_VTable itable;
+nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
+long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
+void (*stabilitytest_Nova_StabilityTestCase_virtual_Nova_test)(stabilitytest_Nova_TimeStability*, nova_exception_Nova_ExceptionData*);
+};
+
+
+
+
+struct stabilitytest_ToStringStability_Extension_VTable
+{
+nova_meta_Nova_Class* classInstance;
+nova_Interface_VTable itable;
+nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
+long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
+void (*stabilitytest_Nova_StabilityTestCase_virtual_Nova_test)(stabilitytest_Nova_ToStringStability*, nova_exception_Nova_ExceptionData*);
+};
+
+
+
+
+struct stabilitytest_UnstableException_Extension_VTable
+{
+nova_meta_Nova_Class* classInstance;
+nova_Interface_VTable itable;
+nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_exception_Nova_Exception*, nova_exception_Nova_ExceptionData*);
 long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 };
 

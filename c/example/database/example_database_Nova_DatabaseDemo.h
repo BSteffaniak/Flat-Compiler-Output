@@ -35,7 +35,7 @@ typedef struct example_database_Nova_DatabaseDemo example_database_Nova_Database
 #include <nova/nova_Nova_Object.h>
 #include <nova/nova_Nova_String.h>
 #include <nova/nova_Nova_System.h>
-#include <nova/nova_Nova_Class.h>
+#include <nova/meta/nova_meta_Nova_Class.h>
 #include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <nova/database/nova_database_Nova_DBConnector.h>
 #include <nova/database/nova_database_Nova_ResultSet.h>

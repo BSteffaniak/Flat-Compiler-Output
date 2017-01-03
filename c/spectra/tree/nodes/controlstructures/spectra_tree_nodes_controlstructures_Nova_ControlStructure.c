@@ -94,6 +94,13 @@ void spectra_tree_nodes_controlstructures_Nova_ControlStructure_Nova_this(spectr
 	spectra_tree_nodes_Nova_Node_virtual_Mutator_Nova_scope((spectra_tree_nodes_Nova_Node*)(this), exceptionData, spectra_tree_nodes_Nova_Scope_Nova_construct(0, exceptionData, (spectra_tree_nodes_Nova_Node*)(this), location));
 }
 
+spectra_tree_nodes_controlstructures_Nova_ControlStructure* spectra_tree_nodes_controlstructures_Nova_ControlStructure_Nova_cloneTo(spectra_tree_nodes_controlstructures_Nova_ControlStructure* this, nova_exception_Nova_ExceptionData* exceptionData, spectra_tree_nodes_controlstructures_Nova_ControlStructure* other)
+{
+	spectra_tree_nodes_Nova_Node_Nova_cloneTo(((spectra_tree_nodes_Nova_Node*)this), exceptionData, (spectra_tree_nodes_Nova_Node*)(other));
+	spectra_tree_nodes_Nova_Node_virtual_Mutator_Nova_scope((spectra_tree_nodes_Nova_Node*)(other), exceptionData, spectra_tree_nodes_Nova_Node_virtual_Accessor_Nova_scope((spectra_tree_nodes_Nova_Node*)(this), exceptionData));
+	return other;
+}
+
 spectra_tree_nodes_Nova_Scope* spectra_tree_nodes_controlstructures_Nova_ControlStructure_Accessorfunc_Nova_scope(spectra_tree_nodes_controlstructures_Nova_ControlStructure* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
 	return this->spectra_tree_nodes_controlstructures_Nova_ControlStructure_Nova_scope;

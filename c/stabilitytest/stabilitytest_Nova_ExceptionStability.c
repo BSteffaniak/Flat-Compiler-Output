@@ -26,7 +26,7 @@
 #include <nova/nova_Nova_Object.h>
 #include <nova/nova_Nova_String.h>
 #include <nova/nova_Nova_System.h>
-#include <nova/nova_Nova_Class.h>
+#include <nova/meta/nova_meta_Nova_Class.h>
 #include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <stabilitytest/stabilitytest_Nova_StabilityTest.h>
 #include <stabilitytest/stabilitytest_Nova_StabilityTestCase.h>
@@ -95,7 +95,7 @@ void stabilitytest_Nova_ExceptionStability_Nova_test(stabilitytest_Nova_Exceptio
 		nova_exception_Nova_Exception* l3_Nova_e = (nova_exception_Nova_Exception*)nova_null;
 		
 		l3_Nova_e = (nova_exception_Nova_Exception*)exceptionData->nova_exception_Nova_ExceptionData_Nova_thrownException;
-		l1_Nova_worked = (nova_Nova_Class*)l3_Nova_e->vtable->classInstance == (nova_Nova_Class*)nova_exception_Exception_Extension_VTable_val.classInstance;
+		l1_Nova_worked = (nova_meta_Nova_Class*)l3_Nova_e->vtable->classInstance == (nova_meta_Nova_Class*)nova_exception_Exception_Extension_VTable_val.classInstance;
 	}
 	FINALLY
 	{

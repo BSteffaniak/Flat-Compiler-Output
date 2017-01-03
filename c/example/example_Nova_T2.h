@@ -35,7 +35,7 @@ typedef struct example_Nova_T2 example_Nova_T2;
 #include <nova/nova_Nova_Object.h>
 #include <nova/nova_Nova_String.h>
 #include <nova/nova_Nova_System.h>
-#include <nova/nova_Nova_Class.h>
+#include <nova/meta/nova_meta_Nova_Class.h>
 #include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <example/example_Nova_T1.h>
 #include <nova/NativeObject.h>

@@ -35,7 +35,7 @@ typedef struct example_Nova_ThreadDemo example_Nova_ThreadDemo;
 #include <nova/nova_Nova_Object.h>
 #include <nova/nova_Nova_String.h>
 #include <nova/nova_Nova_System.h>
-#include <nova/nova_Nova_Class.h>
+#include <nova/meta/nova_meta_Nova_Class.h>
 #include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <nova/time/nova_time_Nova_Timer.h>
 #include <example/example_Nova_ThreadDemoImplementation.h>

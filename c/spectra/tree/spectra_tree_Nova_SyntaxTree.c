@@ -178,6 +178,7 @@ void spectra_tree_Nova_SyntaxTree_Nova_lambda108(spectra_tree_Nova_SyntaxTree* t
 	spectra_tree_Nova_StatementIterator* nova_local_0 = (spectra_tree_Nova_StatementIterator*)nova_null;
 	nova_Nova_String* l2_Nova_statement = (nova_Nova_String*)nova_null;
 	
+	nova_io_Nova_Console_static_Nova_log(0, exceptionData, (nova_Nova_Object*)(nova_Nova_String_Nova_plus(nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("Forming tree for file '")), exceptionData, (nova_Nova_String*)(nova_Nova_String_Nova_plus(nova_Nova_Object_virtual_Nova_toString((nova_Nova_Object*)((file)), exceptionData), exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("'")))))));
 	l1_Nova_statements = spectra_util_Nova_CompilerStringFunctions_Nova_getStatements(file->spectra_tree_nodes_Nova_NovaFile_Nova_source, exceptionData, this->prv->spectra_tree_Nova_SyntaxTree_Nova_parents);
 	nova_datastruct_list_Nova_Stack_Nova_push((nova_datastruct_list_Nova_Stack*)(this->prv->spectra_tree_Nova_SyntaxTree_Nova_parents), exceptionData, (nova_Nova_Object*)(file));
 	nova_local_0 = l1_Nova_statements;
@@ -272,6 +273,7 @@ void spectra_tree_Nova_SyntaxTree_Nova_lambda109(spectra_tree_Nova_SyntaxTree* t
 {
 	Context3* contextArg109 = NOVA_MALLOC(sizeof(Context3));
 	
+	nova_io_Nova_Console_static_Nova_log(0, exceptionData, (nova_Nova_Object*)(nova_Nova_String_Nova_plus(nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("Validating types for file '")), exceptionData, (nova_Nova_String*)(nova_Nova_String_Nova_plus(nova_Nova_Object_virtual_Nova_toString((nova_Nova_Object*)((file)), exceptionData), exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("'")))))));
 	if (!nova_datastruct_list_Nova_List_virtual0_Nova_all((nova_datastruct_list_Nova_List*)(file->spectra_tree_nodes_Nova_NovaFile_Nova_classes), exceptionData, (nova_datastruct_list_Nova_List_closure16_Nova_allFunc)&spectra_tree_Nova_SyntaxTree_Nova_lambda110, this, contextArg109, 0))
 	{
 		nova_io_Nova_Console_1_static_Nova_writeLine(0, exceptionData, (nova_Nova_String*)(nova_Nova_String_Nova_plus(nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("Invalid types in file '")), exceptionData, (nova_Nova_String*)(nova_Nova_String_Nova_plus(nova_Nova_Object_virtual_Nova_toString((nova_Nova_Object*)((file)), exceptionData), exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("'")))))));
@@ -287,6 +289,7 @@ void spectra_tree_Nova_SyntaxTree_Nova_lambda111(spectra_tree_Nova_SyntaxTree* t
 {
 	Context5* contextArg111 = NOVA_MALLOC(sizeof(Context5));
 	
+	nova_io_Nova_Console_static_Nova_log(0, exceptionData, (nova_Nova_Object*)(nova_Nova_String_Nova_plus(nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("Parsing placeholders for file '")), exceptionData, (nova_Nova_String*)(nova_Nova_String_Nova_plus(nova_Nova_Object_virtual_Nova_toString((nova_Nova_Object*)((file)), exceptionData), exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("'")))))));
 	if (!nova_datastruct_list_Nova_List_virtual0_Nova_all((nova_datastruct_list_Nova_List*)(file->spectra_tree_nodes_Nova_NovaFile_Nova_classes), exceptionData, (nova_datastruct_list_Nova_List_closure16_Nova_allFunc)&spectra_tree_Nova_SyntaxTree_Nova_lambda112, this, contextArg111, 0))
 	{
 		nova_io_Nova_Console_1_static_Nova_writeLine(0, exceptionData, (nova_Nova_String*)(nova_Nova_String_Nova_plus(nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("failed to parse placeholders for file '")), exceptionData, (nova_Nova_String*)(nova_Nova_String_Nova_plus(nova_Nova_Object_virtual_Nova_toString((nova_Nova_Object*)((file)), exceptionData), exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("'")))))));
