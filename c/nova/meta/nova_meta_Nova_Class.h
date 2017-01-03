@@ -38,6 +38,7 @@ typedef struct nova_meta_Nova_Class nova_meta_Nova_Class;
 #include <nova/meta/nova_meta_Nova_Class.h>
 #include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <nova/meta/nova_meta_Nova_Field.h>
+#include <nova/meta/nova_meta_Nova_FunctionMap.h>
 #include <nova/NativeObject.h>
 #include <nova/operators/nova_operators_Nova_EqualsOperator.h>
 
@@ -49,6 +50,7 @@ CCLASS_CLASS
 	nova_meta_Nova_Class* nova_meta_Nova_Class_Nova_extension;
 	nova_datastruct_list_Nova_ImmutableArray* nova_meta_Nova_Class_Nova_interfaces;
 	nova_datastruct_list_Nova_ImmutableArray* nova_meta_Nova_Class_Nova_fieldList;
+	nova_meta_Nova_FunctionMap* nova_meta_Nova_Class_Nova_functions;
 	char nova_meta_Nova_Class_Nova_isInterface;
 	nova_Nova_String* nova_meta_Nova_Class_Nova_location;
 )

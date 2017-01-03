@@ -100,6 +100,7 @@
 #include <nova/math/logic/nova_math_logic_Nova_WFF.h>
 #include <nova/meta/nova_meta_Nova_Class.h>
 #include <nova/meta/nova_meta_Nova_Field.h>
+#include <nova/meta/nova_meta_Nova_FunctionMap.h>
 #include <nova/meta/nova_meta_Nova_GenericArgument.h>
 #include <nova/meta/nova_meta_Nova_GenericParameter.h>
 #include <nova/meta/nova_meta_Nova_Type.h>
@@ -208,6 +209,7 @@
 #include <spectra/tree/nodes/annotations/spectra_tree_nodes_annotations_Nova_StaticAnnotation.h>
 #include <spectra/tree/nodes/annotations/spectra_tree_nodes_annotations_Nova_TargetAnnotation.h>
 #include <spectra/tree/nodes/annotations/spectra_tree_nodes_annotations_Nova_VarAnnotation.h>
+#include <spectra/tree/nodes/annotations/spectra_tree_nodes_annotations_Nova_VisibilityModifier.h>
 #include <spectra/tree/nodes/annotations/spectra_tree_nodes_annotations_Nova_VisibleAnnotation.h>
 #include <spectra/tree/nodes/arrays/spectra_tree_nodes_arrays_Nova_ArrayAccess.h>
 #include <spectra/tree/nodes/controlstructures/spectra_tree_nodes_controlstructures_Nova_ControlStructure.h>
@@ -1440,6 +1442,13 @@ typedef struct nova_meta_native_Field
 nova_meta_Nova_Field_native_Nova_construct Field;
 } nova_meta_native_Field;
 
+typedef nova_meta_Nova_FunctionMap* (*nova_meta_Nova_FunctionMap_native_Nova_construct)(nova_meta_Nova_FunctionMap*, nova_exception_Nova_ExceptionData*);
+
+typedef struct nova_meta_native_FunctionMap
+{
+nova_meta_Nova_FunctionMap_native_Nova_construct FunctionMap;
+} nova_meta_native_FunctionMap;
+
 typedef nova_meta_Nova_GenericArgument* (*nova_meta_Nova_GenericArgument_native_Nova_construct)(nova_meta_Nova_GenericArgument*, nova_exception_Nova_ExceptionData*, nova_meta_Nova_Type*);
 
 typedef struct nova_meta_native_GenericArgument
@@ -2495,6 +2504,11 @@ typedef struct spectra_tree_nodes_annotations_native_VarAnnotation
 spectra_tree_nodes_annotations_Nova_VarAnnotation_native_Nova_construct VarAnnotation;
 } spectra_tree_nodes_annotations_native_VarAnnotation;
 
+
+typedef struct spectra_tree_nodes_annotations_native_VisibilityModifier
+{
+} spectra_tree_nodes_annotations_native_VisibilityModifier;
+
 typedef spectra_tree_nodes_annotations_Nova_VisibleAnnotation* (*spectra_tree_nodes_annotations_Nova_VisibleAnnotation_native_static_Nova_parse)(spectra_tree_nodes_annotations_Nova_VisibleAnnotation*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, nova_Nova_String*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*, int);
 typedef spectra_tree_nodes_annotations_Nova_VisibleAnnotation* (*spectra_tree_nodes_annotations_Nova_VisibleAnnotation_native_Nova_construct)(spectra_tree_nodes_annotations_Nova_VisibleAnnotation*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*);
 
@@ -3214,6 +3228,7 @@ nova_math_logic_native_StatementLetter nova_math_logic_StatementLetter;
 nova_math_logic_native_WFF nova_math_logic_WFF;
 nova_meta_native_Class nova_meta_Class;
 nova_meta_native_Field nova_meta_Field;
+nova_meta_native_FunctionMap nova_meta_FunctionMap;
 nova_meta_native_GenericArgument nova_meta_GenericArgument;
 nova_meta_native_GenericParameter nova_meta_GenericParameter;
 nova_meta_native_Type nova_meta_Type;
@@ -3322,6 +3337,7 @@ spectra_tree_nodes_annotations_native_PureAnnotation spectra_tree_nodes_annotati
 spectra_tree_nodes_annotations_native_StaticAnnotation spectra_tree_nodes_annotations_StaticAnnotation;
 spectra_tree_nodes_annotations_native_TargetAnnotation spectra_tree_nodes_annotations_TargetAnnotation;
 spectra_tree_nodes_annotations_native_VarAnnotation spectra_tree_nodes_annotations_VarAnnotation;
+spectra_tree_nodes_annotations_native_VisibilityModifier spectra_tree_nodes_annotations_VisibilityModifier;
 spectra_tree_nodes_annotations_native_VisibleAnnotation spectra_tree_nodes_annotations_VisibleAnnotation;
 spectra_tree_nodes_arrays_native_ArrayAccess spectra_tree_nodes_arrays_ArrayAccess;
 spectra_tree_nodes_controlstructures_native_ControlStructure spectra_tree_nodes_controlstructures_ControlStructure;

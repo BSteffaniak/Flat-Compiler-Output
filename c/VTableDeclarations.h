@@ -298,6 +298,9 @@ extern nova_meta_Class_Extension_VTable nova_meta_Class_Extension_VTable_val;
 typedef struct nova_meta_Field_Extension_VTable nova_meta_Field_Extension_VTable;
 extern nova_meta_Field_Extension_VTable nova_meta_Field_Extension_VTable_val;
 
+typedef struct nova_meta_FunctionMap_Extension_VTable nova_meta_FunctionMap_Extension_VTable;
+extern nova_meta_FunctionMap_Extension_VTable nova_meta_FunctionMap_Extension_VTable_val;
+
 typedef struct nova_meta_GenericArgument_Extension_VTable nova_meta_GenericArgument_Extension_VTable;
 extern nova_meta_GenericArgument_Extension_VTable nova_meta_GenericArgument_Extension_VTable_val;
 
@@ -622,6 +625,9 @@ extern spectra_tree_nodes_annotations_TargetAnnotation_Extension_VTable spectra_
 typedef struct spectra_tree_nodes_annotations_VarAnnotation_Extension_VTable spectra_tree_nodes_annotations_VarAnnotation_Extension_VTable;
 extern spectra_tree_nodes_annotations_VarAnnotation_Extension_VTable spectra_tree_nodes_annotations_VarAnnotation_Extension_VTable_val;
 
+typedef struct spectra_tree_nodes_annotations_VisibilityModifier_Extension_VTable spectra_tree_nodes_annotations_VisibilityModifier_Extension_VTable;
+extern spectra_tree_nodes_annotations_VisibilityModifier_Extension_VTable spectra_tree_nodes_annotations_VisibilityModifier_Extension_VTable_val;
+
 typedef struct spectra_tree_nodes_annotations_VisibleAnnotation_Extension_VTable spectra_tree_nodes_annotations_VisibleAnnotation_Extension_VTable;
 extern spectra_tree_nodes_annotations_VisibleAnnotation_Extension_VTable spectra_tree_nodes_annotations_VisibleAnnotation_Extension_VTable_val;
 
@@ -894,6 +900,7 @@ extern spectra_util_SyntaxUtils_Extension_VTable spectra_util_SyntaxUtils_Extens
 #include <nova/math/logic/nova_math_logic_Nova_WFF.h>
 #include <nova/meta/nova_meta_Nova_Class.h>
 #include <nova/meta/nova_meta_Nova_Field.h>
+#include <nova/meta/nova_meta_Nova_FunctionMap.h>
 #include <nova/meta/nova_meta_Nova_GenericArgument.h>
 #include <nova/meta/nova_meta_Nova_GenericParameter.h>
 #include <nova/meta/nova_meta_Nova_Type.h>
@@ -1002,6 +1009,7 @@ extern spectra_util_SyntaxUtils_Extension_VTable spectra_util_SyntaxUtils_Extens
 #include <spectra/tree/nodes/annotations/spectra_tree_nodes_annotations_Nova_StaticAnnotation.h>
 #include <spectra/tree/nodes/annotations/spectra_tree_nodes_annotations_Nova_TargetAnnotation.h>
 #include <spectra/tree/nodes/annotations/spectra_tree_nodes_annotations_Nova_VarAnnotation.h>
+#include <spectra/tree/nodes/annotations/spectra_tree_nodes_annotations_Nova_VisibilityModifier.h>
 #include <spectra/tree/nodes/annotations/spectra_tree_nodes_annotations_Nova_VisibleAnnotation.h>
 #include <spectra/tree/nodes/arrays/spectra_tree_nodes_arrays_Nova_ArrayAccess.h>
 #include <spectra/tree/nodes/controlstructures/spectra_tree_nodes_controlstructures_Nova_ControlStructure.h>
@@ -2162,6 +2170,17 @@ long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Objec
 
 
 struct nova_meta_Field_Extension_VTable
+{
+nova_meta_Nova_Class* classInstance;
+nova_Interface_VTable itable;
+nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
+long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
+};
+
+
+
+
+struct nova_meta_FunctionMap_Extension_VTable
 {
 nova_meta_Nova_Class* classInstance;
 nova_Interface_VTable itable;
@@ -4280,6 +4299,15 @@ spectra_tree_nodes_functions_Nova_FunctionDeclaration* (*spectra_tree_nodes_Nova
 spectra_tree_nodes_exceptionhandling_Nova_Try* (*spectra_tree_nodes_Nova_Node_virtual_Accessor_Nova_parentTry)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*);
 spectra_tree_nodes_Nova_ClassDeclaration* (*spectra_tree_nodes_Nova_Node_virtual_Accessor_Nova_parentClass)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*);
 spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_Node_virtual_Accessor_Nova_scopeConsumer)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*);
+};
+
+
+
+
+struct spectra_tree_nodes_annotations_VisibilityModifier_Extension_VTable
+{
+nova_meta_Nova_Class* classInstance;
+nova_Interface_VTable itable;
 };
 
 

@@ -29,6 +29,7 @@
 #include <nova/meta/nova_meta_Nova_Class.h>
 #include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <nova/meta/nova_meta_Nova_Field.h>
+#include <nova/meta/nova_meta_Nova_FunctionMap.h>
 #include <nova/NativeObject.h>
 #include <nova/operators/nova_operators_Nova_EqualsOperator.h>
 
@@ -75,6 +76,7 @@ void nova_meta_Nova_Class_Nova_destroy(nova_meta_Nova_Class** this, nova_excepti
 	nova_meta_Nova_Class_Nova_destroy(&(*this)->nova_meta_Nova_Class_Nova_extension, exceptionData);
 	nova_datastruct_list_Nova_ImmutableArray_Nova_destroy(&(*this)->nova_meta_Nova_Class_Nova_interfaces, exceptionData);
 	nova_datastruct_list_Nova_ImmutableArray_Nova_destroy(&(*this)->nova_meta_Nova_Class_Nova_fieldList, exceptionData);
+	nova_meta_Nova_FunctionMap_Nova_destroy(&(*this)->nova_meta_Nova_Class_Nova_functions, exceptionData);
 	
 	nova_Nova_String_Nova_destroy(&(*this)->nova_meta_Nova_Class_Nova_location, exceptionData);
 	
@@ -154,6 +156,7 @@ void nova_meta_Nova_Class_Nova_super(nova_meta_Nova_Class* this, nova_exception_
 	this->nova_meta_Nova_Class_Nova_extension = (nova_meta_Nova_Class*)nova_null;
 	this->nova_meta_Nova_Class_Nova_interfaces = (nova_datastruct_list_Nova_ImmutableArray*)nova_null;
 	this->nova_meta_Nova_Class_Nova_fieldList = (nova_datastruct_list_Nova_ImmutableArray*)nova_null;
+	this->nova_meta_Nova_Class_Nova_functions = (nova_meta_Nova_FunctionMap*)nova_null;
 	this->nova_meta_Nova_Class_Nova_isInterface = 0;
 	this->nova_meta_Nova_Class_Nova_location = (nova_Nova_String*)nova_null;
 	this->nova_meta_Nova_Class_Nova_fieldList = nova_datastruct_list_Nova_Array_Nova_toImmutable((nova_datastruct_list_Nova_Array*)(nova_datastruct_list_Nova_Array_1_Nova_construct(0, exceptionData, 0, (intptr_t)nova_null)), exceptionData);
