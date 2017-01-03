@@ -27,6 +27,7 @@
 #include <nova/nova_Nova_String.h>
 #include <nova/nova_Nova_System.h>
 #include <nova/meta/nova_meta_Nova_Class.h>
+#include <nova/meta/nova_meta_Nova_FunctionMap.h>
 #include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <spectra/tree/nodes/spectra_tree_nodes_Nova_Node.h>
 #include <spectra/tree/nodes/spectra_tree_nodes_Nova_Program.h>
@@ -98,6 +99,46 @@ void spectra_Nova_SyntaxErrorException_0_Nova_this(spectra_Nova_SyntaxErrorExcep
 }
 
 void spectra_Nova_SyntaxErrorException_Nova_super(spectra_Nova_SyntaxErrorException* this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+}
+
+void spectra_Nova_spectra_SyntaxErrorExceptionFunctionMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData)
+{
+	{
+	}
+}
+
+spectra_Nova_spectra_SyntaxErrorExceptionFunctionMap* spectra_Nova_spectra_SyntaxErrorExceptionFunctionMap_Nova_construct(spectra_Nova_spectra_SyntaxErrorExceptionFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+	CCLASS_NEW(spectra_Nova_spectra_SyntaxErrorExceptionFunctionMap, this,);
+	this->vtable = &spectra_SyntaxErrorException_spectra_SyntaxErrorExceptionFunctionMap_Extension_VTable_val;
+	nova_Nova_Object_Nova_super((nova_Nova_Object*)this, exceptionData);
+	nova_meta_Nova_FunctionMap_Nova_super((nova_meta_Nova_FunctionMap*)this, exceptionData);
+	spectra_Nova_spectra_SyntaxErrorExceptionFunctionMap_Nova_super(this, exceptionData);
+	
+	{
+		spectra_Nova_spectra_SyntaxErrorExceptionFunctionMap_Nova_this(this, exceptionData);
+	}
+	
+	return this;
+}
+
+void spectra_Nova_spectra_SyntaxErrorExceptionFunctionMap_Nova_destroy(spectra_Nova_spectra_SyntaxErrorExceptionFunctionMap** this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+	if (!*this)
+	{
+		return;
+	}
+	
+	
+	NOVA_FREE(*this);
+}
+
+void spectra_Nova_spectra_SyntaxErrorExceptionFunctionMap_Nova_this(spectra_Nova_spectra_SyntaxErrorExceptionFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+}
+
+void spectra_Nova_spectra_SyntaxErrorExceptionFunctionMap_Nova_super(spectra_Nova_spectra_SyntaxErrorExceptionFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
 }
 

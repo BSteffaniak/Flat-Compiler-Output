@@ -27,6 +27,7 @@
 #include <nova/nova_Nova_String.h>
 #include <nova/nova_Nova_System.h>
 #include <nova/meta/nova_meta_Nova_Class.h>
+#include <nova/meta/nova_meta_Nova_FunctionMap.h>
 #include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_Iterator.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_NoSuchElementException.h>
@@ -109,5 +110,45 @@ void nova_datastruct_list_Nova_ArrayIterator_Nova_super(nova_datastruct_list_Nov
 {
 	this->nova_datastruct_list_Nova_ArrayIterator_Nova_position = 0;
 	this->prv->nova_datastruct_list_Nova_ArrayIterator_Nova_array = (nova_datastruct_list_Nova_Array*)nova_null;
+}
+
+void nova_datastruct_list_Nova_nova_datastruct_list_ArrayIteratorFunctionMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData)
+{
+	{
+	}
+}
+
+nova_datastruct_list_Nova_nova_datastruct_list_ArrayIteratorFunctionMap* nova_datastruct_list_Nova_nova_datastruct_list_ArrayIteratorFunctionMap_Nova_construct(nova_datastruct_list_Nova_nova_datastruct_list_ArrayIteratorFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+	CCLASS_NEW(nova_datastruct_list_Nova_nova_datastruct_list_ArrayIteratorFunctionMap, this,);
+	this->vtable = &nova_datastruct_list_ArrayIterator_nova_datastruct_list_ArrayIteratorFunctionMap_Extension_VTable_val;
+	nova_Nova_Object_Nova_super((nova_Nova_Object*)this, exceptionData);
+	nova_meta_Nova_FunctionMap_Nova_super((nova_meta_Nova_FunctionMap*)this, exceptionData);
+	nova_datastruct_list_Nova_nova_datastruct_list_ArrayIteratorFunctionMap_Nova_super(this, exceptionData);
+	
+	{
+		nova_datastruct_list_Nova_nova_datastruct_list_ArrayIteratorFunctionMap_Nova_this(this, exceptionData);
+	}
+	
+	return this;
+}
+
+void nova_datastruct_list_Nova_nova_datastruct_list_ArrayIteratorFunctionMap_Nova_destroy(nova_datastruct_list_Nova_nova_datastruct_list_ArrayIteratorFunctionMap** this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+	if (!*this)
+	{
+		return;
+	}
+	
+	
+	NOVA_FREE(*this);
+}
+
+void nova_datastruct_list_Nova_nova_datastruct_list_ArrayIteratorFunctionMap_Nova_this(nova_datastruct_list_Nova_nova_datastruct_list_ArrayIteratorFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+}
+
+void nova_datastruct_list_Nova_nova_datastruct_list_ArrayIteratorFunctionMap_Nova_super(nova_datastruct_list_Nova_nova_datastruct_list_ArrayIteratorFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+{
 }
 

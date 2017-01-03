@@ -2,6 +2,7 @@
 #define FILE_example_Nova_MathDemo_NOVA
 
 typedef struct example_Nova_MathDemo example_Nova_MathDemo;
+typedef struct example_Nova_example_MathDemoFunctionMap example_Nova_example_MathDemoFunctionMap;
 
 
 #include <Nova.h>
@@ -36,6 +37,7 @@ typedef struct example_Nova_MathDemo example_Nova_MathDemo;
 #include <nova/nova_Nova_String.h>
 #include <nova/nova_Nova_System.h>
 #include <nova/meta/nova_meta_Nova_Class.h>
+#include <nova/meta/nova_meta_Nova_FunctionMap.h>
 #include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <nova/time/nova_time_Nova_Timer.h>
 #include <nova/NativeObject.h>
@@ -54,5 +56,18 @@ void example_Nova_MathDemo_Nova_destroy(example_Nova_MathDemo** this, nova_excep
 void example_Nova_MathDemo_static_Nova_main(example_Nova_MathDemo* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_list_Nova_Array* args);
 void example_Nova_MathDemo_Nova_this(example_Nova_MathDemo* this, nova_exception_Nova_ExceptionData* exceptionData);
 void example_Nova_MathDemo_Nova_super(example_Nova_MathDemo* this, nova_exception_Nova_ExceptionData* exceptionData);
+
+CCLASS_CLASS
+(
+	example_Nova_example_MathDemoFunctionMap, 
+	
+	example_MathDemo_example_MathDemoFunctionMap_Extension_VTable* vtable;
+)
+
+void example_Nova_example_MathDemoFunctionMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData);
+example_Nova_example_MathDemoFunctionMap* example_Nova_example_MathDemoFunctionMap_Nova_construct(example_Nova_example_MathDemoFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+void example_Nova_example_MathDemoFunctionMap_Nova_destroy(example_Nova_example_MathDemoFunctionMap** this, nova_exception_Nova_ExceptionData* exceptionData);
+void example_Nova_example_MathDemoFunctionMap_Nova_this(example_Nova_example_MathDemoFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+void example_Nova_example_MathDemoFunctionMap_Nova_super(example_Nova_example_MathDemoFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
 
 #endif

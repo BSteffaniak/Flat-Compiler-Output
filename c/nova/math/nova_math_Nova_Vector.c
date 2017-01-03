@@ -27,6 +27,7 @@
 #include <nova/nova_Nova_String.h>
 #include <nova/nova_Nova_System.h>
 #include <nova/meta/nova_meta_Nova_Class.h>
+#include <nova/meta/nova_meta_Nova_FunctionMap.h>
 #include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <nova/NativeObject.h>
 #include <nova/operators/nova_operators_Nova_EqualsOperator.h>
@@ -191,5 +192,45 @@ void nova_math_Nova_Vector_Nova_super(nova_math_Nova_Vector* this, nova_exceptio
 double nova_math_Nova_Vector_virtual_Nova_dotProduct(nova_math_Nova_Vector* this, nova_exception_Nova_ExceptionData* exceptionData, nova_math_Nova_Vector* other)
 {
 	return this->vtable->nova_math_Nova_Vector_virtual_Nova_dotProduct((nova_math_Nova_Vector*)(this), exceptionData, other);
+}
+
+void nova_math_Nova_nova_math_VectorFunctionMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData)
+{
+	{
+	}
+}
+
+nova_math_Nova_nova_math_VectorFunctionMap* nova_math_Nova_nova_math_VectorFunctionMap_Nova_construct(nova_math_Nova_nova_math_VectorFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+	CCLASS_NEW(nova_math_Nova_nova_math_VectorFunctionMap, this,);
+	this->vtable = &nova_math_Vector_nova_math_VectorFunctionMap_Extension_VTable_val;
+	nova_Nova_Object_Nova_super((nova_Nova_Object*)this, exceptionData);
+	nova_meta_Nova_FunctionMap_Nova_super((nova_meta_Nova_FunctionMap*)this, exceptionData);
+	nova_math_Nova_nova_math_VectorFunctionMap_Nova_super(this, exceptionData);
+	
+	{
+		nova_math_Nova_nova_math_VectorFunctionMap_Nova_this(this, exceptionData);
+	}
+	
+	return this;
+}
+
+void nova_math_Nova_nova_math_VectorFunctionMap_Nova_destroy(nova_math_Nova_nova_math_VectorFunctionMap** this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+	if (!*this)
+	{
+		return;
+	}
+	
+	
+	NOVA_FREE(*this);
+}
+
+void nova_math_Nova_nova_math_VectorFunctionMap_Nova_this(nova_math_Nova_nova_math_VectorFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+}
+
+void nova_math_Nova_nova_math_VectorFunctionMap_Nova_super(nova_math_Nova_nova_math_VectorFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+{
 }
 

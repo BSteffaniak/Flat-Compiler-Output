@@ -2,6 +2,7 @@
 #define FILE_example_Nova_Lab_NOVA
 
 typedef struct example_Nova_Lab example_Nova_Lab;
+typedef struct example_Nova_example_LabFunctionMap example_Nova_example_LabFunctionMap;
 
 
 #include <Nova.h>
@@ -36,6 +37,7 @@ typedef struct example_Nova_Lab example_Nova_Lab;
 #include <nova/nova_Nova_String.h>
 #include <nova/nova_Nova_System.h>
 #include <nova/meta/nova_meta_Nova_Class.h>
+#include <nova/meta/nova_meta_Nova_FunctionMap.h>
 #include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <nova/math/nova_math_Nova_Vector3D.h>
 #include <nova/math/nova_math_Nova_Matrix.h>
@@ -60,5 +62,18 @@ void example_Nova_Lab_Nova_destroy(example_Nova_Lab** this, nova_exception_Nova_
 void example_Nova_Lab_static_Nova_main(example_Nova_Lab* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_list_Nova_Array* args);
 void example_Nova_Lab_Nova_this(example_Nova_Lab* this, nova_exception_Nova_ExceptionData* exceptionData);
 void example_Nova_Lab_Nova_super(example_Nova_Lab* this, nova_exception_Nova_ExceptionData* exceptionData);
+
+CCLASS_CLASS
+(
+	example_Nova_example_LabFunctionMap, 
+	
+	example_Lab_example_LabFunctionMap_Extension_VTable* vtable;
+)
+
+void example_Nova_example_LabFunctionMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData);
+example_Nova_example_LabFunctionMap* example_Nova_example_LabFunctionMap_Nova_construct(example_Nova_example_LabFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+void example_Nova_example_LabFunctionMap_Nova_destroy(example_Nova_example_LabFunctionMap** this, nova_exception_Nova_ExceptionData* exceptionData);
+void example_Nova_example_LabFunctionMap_Nova_this(example_Nova_example_LabFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+void example_Nova_example_LabFunctionMap_Nova_super(example_Nova_example_LabFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
 
 #endif

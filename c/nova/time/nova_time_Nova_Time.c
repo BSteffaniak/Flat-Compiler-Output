@@ -27,6 +27,7 @@
 #include <nova/nova_Nova_String.h>
 #include <nova/nova_Nova_System.h>
 #include <nova/meta/nova_meta_Nova_Class.h>
+#include <nova/meta/nova_meta_Nova_FunctionMap.h>
 #include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <nova/time/NativeTime.h>
 #include <nova/NativeObject.h>
@@ -78,6 +79,46 @@ long_long nova_time_Nova_Time_Accessor_static_Nova_currentTimeMillis(nova_time_N
 
 
 void nova_time_Nova_Time_Nova_super(nova_time_Nova_Time* this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+}
+
+void nova_time_Nova_nova_time_TimeFunctionMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData)
+{
+	{
+	}
+}
+
+nova_time_Nova_nova_time_TimeFunctionMap* nova_time_Nova_nova_time_TimeFunctionMap_Nova_construct(nova_time_Nova_nova_time_TimeFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+	CCLASS_NEW(nova_time_Nova_nova_time_TimeFunctionMap, this,);
+	this->vtable = &nova_time_Time_nova_time_TimeFunctionMap_Extension_VTable_val;
+	nova_Nova_Object_Nova_super((nova_Nova_Object*)this, exceptionData);
+	nova_meta_Nova_FunctionMap_Nova_super((nova_meta_Nova_FunctionMap*)this, exceptionData);
+	nova_time_Nova_nova_time_TimeFunctionMap_Nova_super(this, exceptionData);
+	
+	{
+		nova_time_Nova_nova_time_TimeFunctionMap_Nova_this(this, exceptionData);
+	}
+	
+	return this;
+}
+
+void nova_time_Nova_nova_time_TimeFunctionMap_Nova_destroy(nova_time_Nova_nova_time_TimeFunctionMap** this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+	if (!*this)
+	{
+		return;
+	}
+	
+	
+	NOVA_FREE(*this);
+}
+
+void nova_time_Nova_nova_time_TimeFunctionMap_Nova_this(nova_time_Nova_nova_time_TimeFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+}
+
+void nova_time_Nova_nova_time_TimeFunctionMap_Nova_super(nova_time_Nova_nova_time_TimeFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
 }
 

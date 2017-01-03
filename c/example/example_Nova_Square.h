@@ -2,6 +2,7 @@
 #define FILE_example_Nova_Square_NOVA
 
 typedef struct example_Nova_Square example_Nova_Square;
+typedef struct example_Nova_example_SquareFunctionMap example_Nova_example_SquareFunctionMap;
 
 
 #include <Nova.h>
@@ -36,6 +37,7 @@ typedef struct example_Nova_Square example_Nova_Square;
 #include <nova/nova_Nova_String.h>
 #include <nova/nova_Nova_System.h>
 #include <nova/meta/nova_meta_Nova_Class.h>
+#include <nova/meta/nova_meta_Nova_FunctionMap.h>
 #include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <example/example_Nova_Polygon.h>
 #include <nova/NativeObject.h>
@@ -56,5 +58,18 @@ void example_Nova_Square_Nova_this(example_Nova_Square* this, nova_exception_Nov
 int example_Nova_Square_Nova_numberSides(example_Nova_Square* this, nova_exception_Nova_ExceptionData* exceptionData);
 double example_Nova_Square_Nova_calculateArea(example_Nova_Square* this, nova_exception_Nova_ExceptionData* exceptionData);
 void example_Nova_Square_Nova_super(example_Nova_Square* this, nova_exception_Nova_ExceptionData* exceptionData);
+
+CCLASS_CLASS
+(
+	example_Nova_example_SquareFunctionMap, 
+	
+	example_Square_example_SquareFunctionMap_Extension_VTable* vtable;
+)
+
+void example_Nova_example_SquareFunctionMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData);
+example_Nova_example_SquareFunctionMap* example_Nova_example_SquareFunctionMap_Nova_construct(example_Nova_example_SquareFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+void example_Nova_example_SquareFunctionMap_Nova_destroy(example_Nova_example_SquareFunctionMap** this, nova_exception_Nova_ExceptionData* exceptionData);
+void example_Nova_example_SquareFunctionMap_Nova_this(example_Nova_example_SquareFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+void example_Nova_example_SquareFunctionMap_Nova_super(example_Nova_example_SquareFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
 
 #endif

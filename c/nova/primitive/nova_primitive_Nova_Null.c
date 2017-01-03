@@ -27,6 +27,7 @@
 #include <nova/nova_Nova_String.h>
 #include <nova/nova_Nova_System.h>
 #include <nova/meta/nova_meta_Nova_Class.h>
+#include <nova/meta/nova_meta_Nova_FunctionMap.h>
 #include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <nova/datastruct/nova_datastruct_Nova_Comparable.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_StringCharArray.h>
@@ -87,6 +88,46 @@ nova_Nova_String* nova_primitive_Nova_Null_Nova_toString(nova_primitive_Nova_Nul
 }
 
 void nova_primitive_Nova_Null_Nova_super(nova_primitive_Nova_Null* this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+}
+
+void nova_primitive_Nova_nova_primitive_NullFunctionMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData)
+{
+	{
+	}
+}
+
+nova_primitive_Nova_nova_primitive_NullFunctionMap* nova_primitive_Nova_nova_primitive_NullFunctionMap_Nova_construct(nova_primitive_Nova_nova_primitive_NullFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+	CCLASS_NEW(nova_primitive_Nova_nova_primitive_NullFunctionMap, this,);
+	this->vtable = &nova_primitive_Null_nova_primitive_NullFunctionMap_Extension_VTable_val;
+	nova_Nova_Object_Nova_super((nova_Nova_Object*)this, exceptionData);
+	nova_meta_Nova_FunctionMap_Nova_super((nova_meta_Nova_FunctionMap*)this, exceptionData);
+	nova_primitive_Nova_nova_primitive_NullFunctionMap_Nova_super(this, exceptionData);
+	
+	{
+		nova_primitive_Nova_nova_primitive_NullFunctionMap_Nova_this(this, exceptionData);
+	}
+	
+	return this;
+}
+
+void nova_primitive_Nova_nova_primitive_NullFunctionMap_Nova_destroy(nova_primitive_Nova_nova_primitive_NullFunctionMap** this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+	if (!*this)
+	{
+		return;
+	}
+	
+	
+	NOVA_FREE(*this);
+}
+
+void nova_primitive_Nova_nova_primitive_NullFunctionMap_Nova_this(nova_primitive_Nova_nova_primitive_NullFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+}
+
+void nova_primitive_Nova_nova_primitive_NullFunctionMap_Nova_super(nova_primitive_Nova_nova_primitive_NullFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
 }
 

@@ -2,6 +2,7 @@
 #define FILE_nova_datastruct_Nova_BinaryNode_NOVA
 
 typedef struct nova_datastruct_Nova_BinaryNode nova_datastruct_Nova_BinaryNode;
+typedef struct nova_datastruct_Nova_nova_datastruct_BinaryNodeFunctionMap nova_datastruct_Nova_nova_datastruct_BinaryNodeFunctionMap;
 
 
 #include <Nova.h>
@@ -36,6 +37,7 @@ typedef struct nova_datastruct_Nova_BinaryNode nova_datastruct_Nova_BinaryNode;
 #include <nova/nova_Nova_String.h>
 #include <nova/nova_Nova_System.h>
 #include <nova/meta/nova_meta_Nova_Class.h>
+#include <nova/meta/nova_meta_Nova_FunctionMap.h>
 #include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <nova/datastruct/nova_datastruct_Nova_Comparable.h>
 #include <nova/datastruct/nova_datastruct_Nova_Node.h>
@@ -63,5 +65,18 @@ nova_datastruct_Nova_BinaryNode* nova_datastruct_Nova_BinaryNode_Mutator_Nova_le
 nova_datastruct_Nova_BinaryNode* nova_datastruct_Nova_BinaryNode_Accessor_Nova_right(nova_datastruct_Nova_BinaryNode* this, nova_exception_Nova_ExceptionData* exceptionData);
 nova_datastruct_Nova_BinaryNode* nova_datastruct_Nova_BinaryNode_Mutator_Nova_right(nova_datastruct_Nova_BinaryNode* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_Nova_BinaryNode* value);
 void nova_datastruct_Nova_BinaryNode_Nova_super(nova_datastruct_Nova_BinaryNode* this, nova_exception_Nova_ExceptionData* exceptionData);
+
+CCLASS_CLASS
+(
+	nova_datastruct_Nova_nova_datastruct_BinaryNodeFunctionMap, 
+	
+	nova_datastruct_BinaryNode_nova_datastruct_BinaryNodeFunctionMap_Extension_VTable* vtable;
+)
+
+void nova_datastruct_Nova_nova_datastruct_BinaryNodeFunctionMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData);
+nova_datastruct_Nova_nova_datastruct_BinaryNodeFunctionMap* nova_datastruct_Nova_nova_datastruct_BinaryNodeFunctionMap_Nova_construct(nova_datastruct_Nova_nova_datastruct_BinaryNodeFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+void nova_datastruct_Nova_nova_datastruct_BinaryNodeFunctionMap_Nova_destroy(nova_datastruct_Nova_nova_datastruct_BinaryNodeFunctionMap** this, nova_exception_Nova_ExceptionData* exceptionData);
+void nova_datastruct_Nova_nova_datastruct_BinaryNodeFunctionMap_Nova_this(nova_datastruct_Nova_nova_datastruct_BinaryNodeFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+void nova_datastruct_Nova_nova_datastruct_BinaryNodeFunctionMap_Nova_super(nova_datastruct_Nova_nova_datastruct_BinaryNodeFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
 
 #endif

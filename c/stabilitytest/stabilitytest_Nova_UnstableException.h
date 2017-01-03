@@ -2,6 +2,7 @@
 #define FILE_stabilitytest_Nova_UnstableException_NOVA
 
 typedef struct stabilitytest_Nova_UnstableException stabilitytest_Nova_UnstableException;
+typedef struct stabilitytest_Nova_stabilitytest_UnstableExceptionFunctionMap stabilitytest_Nova_stabilitytest_UnstableExceptionFunctionMap;
 
 
 #include <Nova.h>
@@ -36,6 +37,7 @@ typedef struct stabilitytest_Nova_UnstableException stabilitytest_Nova_UnstableE
 #include <nova/nova_Nova_String.h>
 #include <nova/nova_Nova_System.h>
 #include <nova/meta/nova_meta_Nova_Class.h>
+#include <nova/meta/nova_meta_Nova_FunctionMap.h>
 #include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <nova/NativeObject.h>
 #include <nova/operators/nova_operators_Nova_EqualsOperator.h>
@@ -53,5 +55,18 @@ stabilitytest_Nova_UnstableException* stabilitytest_Nova_UnstableException_Nova_
 void stabilitytest_Nova_UnstableException_Nova_destroy(stabilitytest_Nova_UnstableException** this, nova_exception_Nova_ExceptionData* exceptionData);
 void stabilitytest_Nova_UnstableException_Nova_this(stabilitytest_Nova_UnstableException* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* message);
 void stabilitytest_Nova_UnstableException_Nova_super(stabilitytest_Nova_UnstableException* this, nova_exception_Nova_ExceptionData* exceptionData);
+
+CCLASS_CLASS
+(
+	stabilitytest_Nova_stabilitytest_UnstableExceptionFunctionMap, 
+	
+	stabilitytest_UnstableException_stabilitytest_UnstableExceptionFunctionMap_Extension_VTable* vtable;
+)
+
+void stabilitytest_Nova_stabilitytest_UnstableExceptionFunctionMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData);
+stabilitytest_Nova_stabilitytest_UnstableExceptionFunctionMap* stabilitytest_Nova_stabilitytest_UnstableExceptionFunctionMap_Nova_construct(stabilitytest_Nova_stabilitytest_UnstableExceptionFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+void stabilitytest_Nova_stabilitytest_UnstableExceptionFunctionMap_Nova_destroy(stabilitytest_Nova_stabilitytest_UnstableExceptionFunctionMap** this, nova_exception_Nova_ExceptionData* exceptionData);
+void stabilitytest_Nova_stabilitytest_UnstableExceptionFunctionMap_Nova_this(stabilitytest_Nova_stabilitytest_UnstableExceptionFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+void stabilitytest_Nova_stabilitytest_UnstableExceptionFunctionMap_Nova_super(stabilitytest_Nova_stabilitytest_UnstableExceptionFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
 
 #endif

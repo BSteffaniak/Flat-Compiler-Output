@@ -2,6 +2,7 @@
 #define FILE_example_Nova_ThreadDemoImplementation_NOVA
 
 typedef struct example_Nova_ThreadDemoImplementation example_Nova_ThreadDemoImplementation;
+typedef struct example_Nova_example_ThreadDemoImplementationFunctionMap example_Nova_example_ThreadDemoImplementationFunctionMap;
 
 
 #include <Nova.h>
@@ -36,6 +37,7 @@ typedef struct example_Nova_ThreadDemoImplementation example_Nova_ThreadDemoImpl
 #include <nova/nova_Nova_String.h>
 #include <nova/nova_Nova_System.h>
 #include <nova/meta/nova_meta_Nova_Class.h>
+#include <nova/meta/nova_meta_Nova_FunctionMap.h>
 #include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <nova/thread/NativeThread.h>
 #include <nova/NativeObject.h>
@@ -56,5 +58,18 @@ void example_Nova_ThreadDemoImplementation_Nova_destroy(example_Nova_ThreadDemoI
 void example_Nova_ThreadDemoImplementation_Nova_this(example_Nova_ThreadDemoImplementation* this, nova_exception_Nova_ExceptionData* exceptionData, long_long millis, nova_Nova_String* word);
 void example_Nova_ThreadDemoImplementation_Nova_run(example_Nova_ThreadDemoImplementation* this, nova_exception_Nova_ExceptionData* exceptionData);
 void example_Nova_ThreadDemoImplementation_Nova_super(example_Nova_ThreadDemoImplementation* this, nova_exception_Nova_ExceptionData* exceptionData);
+
+CCLASS_CLASS
+(
+	example_Nova_example_ThreadDemoImplementationFunctionMap, 
+	
+	example_ThreadDemoImplementation_example_ThreadDemoImplementationFunctionMap_Extension_VTable* vtable;
+)
+
+void example_Nova_example_ThreadDemoImplementationFunctionMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData);
+example_Nova_example_ThreadDemoImplementationFunctionMap* example_Nova_example_ThreadDemoImplementationFunctionMap_Nova_construct(example_Nova_example_ThreadDemoImplementationFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+void example_Nova_example_ThreadDemoImplementationFunctionMap_Nova_destroy(example_Nova_example_ThreadDemoImplementationFunctionMap** this, nova_exception_Nova_ExceptionData* exceptionData);
+void example_Nova_example_ThreadDemoImplementationFunctionMap_Nova_this(example_Nova_example_ThreadDemoImplementationFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+void example_Nova_example_ThreadDemoImplementationFunctionMap_Nova_super(example_Nova_example_ThreadDemoImplementationFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
 
 #endif

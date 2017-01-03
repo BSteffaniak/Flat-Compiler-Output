@@ -27,6 +27,7 @@
 #include <nova/nova_Nova_String.h>
 #include <nova/nova_Nova_System.h>
 #include <nova/meta/nova_meta_Nova_Class.h>
+#include <nova/meta/nova_meta_Nova_FunctionMap.h>
 #include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <nova/NativeObject.h>
 #include <nova/operators/nova_operators_Nova_EqualsOperator.h>
@@ -99,5 +100,45 @@ void nova_regex_Nova_Match_Nova_super(nova_regex_Nova_Match* this, nova_exceptio
 	this->nova_regex_Nova_Match_Nova_source = (nova_Nova_String*)nova_null;
 	this->nova_regex_Nova_Match_Nova_start = 0;
 	this->nova_regex_Nova_Match_Nova_end = 0;
+}
+
+void nova_regex_Nova_nova_regex_MatchFunctionMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData)
+{
+	{
+	}
+}
+
+nova_regex_Nova_nova_regex_MatchFunctionMap* nova_regex_Nova_nova_regex_MatchFunctionMap_Nova_construct(nova_regex_Nova_nova_regex_MatchFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+	CCLASS_NEW(nova_regex_Nova_nova_regex_MatchFunctionMap, this,);
+	this->vtable = &nova_regex_Match_nova_regex_MatchFunctionMap_Extension_VTable_val;
+	nova_Nova_Object_Nova_super((nova_Nova_Object*)this, exceptionData);
+	nova_meta_Nova_FunctionMap_Nova_super((nova_meta_Nova_FunctionMap*)this, exceptionData);
+	nova_regex_Nova_nova_regex_MatchFunctionMap_Nova_super(this, exceptionData);
+	
+	{
+		nova_regex_Nova_nova_regex_MatchFunctionMap_Nova_this(this, exceptionData);
+	}
+	
+	return this;
+}
+
+void nova_regex_Nova_nova_regex_MatchFunctionMap_Nova_destroy(nova_regex_Nova_nova_regex_MatchFunctionMap** this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+	if (!*this)
+	{
+		return;
+	}
+	
+	
+	NOVA_FREE(*this);
+}
+
+void nova_regex_Nova_nova_regex_MatchFunctionMap_Nova_this(nova_regex_Nova_nova_regex_MatchFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+}
+
+void nova_regex_Nova_nova_regex_MatchFunctionMap_Nova_super(nova_regex_Nova_nova_regex_MatchFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+{
 }
 

@@ -27,6 +27,7 @@
 #include <nova/nova_Nova_String.h>
 #include <nova/nova_Nova_System.h>
 #include <nova/meta/nova_meta_Nova_Class.h>
+#include <nova/meta/nova_meta_Nova_FunctionMap.h>
 #include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <spectra/tree/nodes/controlstructures/spectra_tree_nodes_controlstructures_Nova_ControlStructure.h>
 #include <spectra/tree/nodes/spectra_tree_nodes_Nova_Node.h>
@@ -119,5 +120,45 @@ void spectra_tree_nodes_controlstructures_loops_Nova_Loop_Nova_super(spectra_tre
 spectra_tree_nodes_controlstructures_loops_Nova_Loop* spectra_tree_nodes_controlstructures_loops_Nova_Loop_virtual_static_Nova_parse(spectra_tree_nodes_controlstructures_loops_Nova_Loop* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* input, spectra_tree_nodes_Nova_Node* parent, spectra_util_Nova_Location* location, int require)
 {
 	return this->vtable->spectra_tree_nodes_controlstructures_loops_Nova_Loop_virtual_static_Nova_parse(0, exceptionData, input, parent, location, require);
+}
+
+void spectra_tree_nodes_controlstructures_loops_Nova_spectra_tree_nodes_controlstructures_loops_LoopFunctionMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData)
+{
+	{
+	}
+}
+
+spectra_tree_nodes_controlstructures_loops_Nova_spectra_tree_nodes_controlstructures_loops_LoopFunctionMap* spectra_tree_nodes_controlstructures_loops_Nova_spectra_tree_nodes_controlstructures_loops_LoopFunctionMap_Nova_construct(spectra_tree_nodes_controlstructures_loops_Nova_spectra_tree_nodes_controlstructures_loops_LoopFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+	CCLASS_NEW(spectra_tree_nodes_controlstructures_loops_Nova_spectra_tree_nodes_controlstructures_loops_LoopFunctionMap, this,);
+	this->vtable = &spectra_tree_nodes_controlstructures_loops_Loop_spectra_tree_nodes_controlstructures_loops_LoopFunctionMap_Extension_VTable_val;
+	nova_Nova_Object_Nova_super((nova_Nova_Object*)this, exceptionData);
+	nova_meta_Nova_FunctionMap_Nova_super((nova_meta_Nova_FunctionMap*)this, exceptionData);
+	spectra_tree_nodes_controlstructures_loops_Nova_spectra_tree_nodes_controlstructures_loops_LoopFunctionMap_Nova_super(this, exceptionData);
+	
+	{
+		spectra_tree_nodes_controlstructures_loops_Nova_spectra_tree_nodes_controlstructures_loops_LoopFunctionMap_Nova_this(this, exceptionData);
+	}
+	
+	return this;
+}
+
+void spectra_tree_nodes_controlstructures_loops_Nova_spectra_tree_nodes_controlstructures_loops_LoopFunctionMap_Nova_destroy(spectra_tree_nodes_controlstructures_loops_Nova_spectra_tree_nodes_controlstructures_loops_LoopFunctionMap** this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+	if (!*this)
+	{
+		return;
+	}
+	
+	
+	NOVA_FREE(*this);
+}
+
+void spectra_tree_nodes_controlstructures_loops_Nova_spectra_tree_nodes_controlstructures_loops_LoopFunctionMap_Nova_this(spectra_tree_nodes_controlstructures_loops_Nova_spectra_tree_nodes_controlstructures_loops_LoopFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+}
+
+void spectra_tree_nodes_controlstructures_loops_Nova_spectra_tree_nodes_controlstructures_loops_LoopFunctionMap_Nova_super(spectra_tree_nodes_controlstructures_loops_Nova_spectra_tree_nodes_controlstructures_loops_LoopFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+{
 }
 

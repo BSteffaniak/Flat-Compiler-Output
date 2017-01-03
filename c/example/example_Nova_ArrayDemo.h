@@ -2,6 +2,7 @@
 #define FILE_example_Nova_ArrayDemo_NOVA
 
 typedef struct example_Nova_ArrayDemo example_Nova_ArrayDemo;
+typedef struct example_Nova_example_ArrayDemoFunctionMap example_Nova_example_ArrayDemoFunctionMap;
 
 
 #include <Nova.h>
@@ -36,6 +37,7 @@ typedef struct example_Nova_ArrayDemo example_Nova_ArrayDemo;
 #include <nova/nova_Nova_String.h>
 #include <nova/nova_Nova_System.h>
 #include <nova/meta/nova_meta_Nova_Class.h>
+#include <nova/meta/nova_meta_Nova_FunctionMap.h>
 #include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <example/example_Nova_Animal.h>
 #include <example/example_Nova_Dog.h>
@@ -56,5 +58,18 @@ void example_Nova_ArrayDemo_Nova_destroy(example_Nova_ArrayDemo** this, nova_exc
 void example_Nova_ArrayDemo_static_Nova_main(example_Nova_ArrayDemo* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_list_Nova_Array* args);
 void example_Nova_ArrayDemo_Nova_this(example_Nova_ArrayDemo* this, nova_exception_Nova_ExceptionData* exceptionData);
 void example_Nova_ArrayDemo_Nova_super(example_Nova_ArrayDemo* this, nova_exception_Nova_ExceptionData* exceptionData);
+
+CCLASS_CLASS
+(
+	example_Nova_example_ArrayDemoFunctionMap, 
+	
+	example_ArrayDemo_example_ArrayDemoFunctionMap_Extension_VTable* vtable;
+)
+
+void example_Nova_example_ArrayDemoFunctionMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData);
+example_Nova_example_ArrayDemoFunctionMap* example_Nova_example_ArrayDemoFunctionMap_Nova_construct(example_Nova_example_ArrayDemoFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+void example_Nova_example_ArrayDemoFunctionMap_Nova_destroy(example_Nova_example_ArrayDemoFunctionMap** this, nova_exception_Nova_ExceptionData* exceptionData);
+void example_Nova_example_ArrayDemoFunctionMap_Nova_this(example_Nova_example_ArrayDemoFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+void example_Nova_example_ArrayDemoFunctionMap_Nova_super(example_Nova_example_ArrayDemoFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
 
 #endif

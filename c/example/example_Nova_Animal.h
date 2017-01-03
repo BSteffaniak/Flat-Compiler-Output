@@ -2,6 +2,7 @@
 #define FILE_example_Nova_Animal_NOVA
 
 typedef struct example_Nova_Animal example_Nova_Animal;
+typedef struct example_Nova_example_AnimalFunctionMap example_Nova_example_AnimalFunctionMap;
 
 
 #include <Nova.h>
@@ -36,6 +37,7 @@ typedef struct example_Nova_Animal example_Nova_Animal;
 #include <nova/nova_Nova_String.h>
 #include <nova/nova_Nova_System.h>
 #include <nova/meta/nova_meta_Nova_Class.h>
+#include <nova/meta/nova_meta_Nova_FunctionMap.h>
 #include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <nova/NativeObject.h>
 #include <nova/operators/nova_operators_Nova_EqualsOperator.h>
@@ -59,5 +61,18 @@ void example_Nova_Animal_Nova_super(example_Nova_Animal* this, nova_exception_No
 int example_Nova_Animal_virtual_Nova_getNumLegs(example_Nova_Animal* this, nova_exception_Nova_ExceptionData* exceptionData);
 int example_Nova_Animal_virtual_Nova_getNumEyes(example_Nova_Animal* this, nova_exception_Nova_ExceptionData* exceptionData);
 nova_Nova_String* example_Nova_Animal_virtual_Nova_getDescription(example_Nova_Animal* this, nova_exception_Nova_ExceptionData* exceptionData);
+
+CCLASS_CLASS
+(
+	example_Nova_example_AnimalFunctionMap, 
+	
+	example_Animal_example_AnimalFunctionMap_Extension_VTable* vtable;
+)
+
+void example_Nova_example_AnimalFunctionMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData);
+example_Nova_example_AnimalFunctionMap* example_Nova_example_AnimalFunctionMap_Nova_construct(example_Nova_example_AnimalFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+void example_Nova_example_AnimalFunctionMap_Nova_destroy(example_Nova_example_AnimalFunctionMap** this, nova_exception_Nova_ExceptionData* exceptionData);
+void example_Nova_example_AnimalFunctionMap_Nova_this(example_Nova_example_AnimalFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+void example_Nova_example_AnimalFunctionMap_Nova_super(example_Nova_example_AnimalFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
 
 #endif

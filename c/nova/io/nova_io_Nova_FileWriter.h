@@ -2,6 +2,7 @@
 #define FILE_nova_io_Nova_FileWriter_NOVA
 
 typedef struct nova_io_Nova_FileWriter nova_io_Nova_FileWriter;
+typedef struct nova_io_Nova_nova_io_FileWriterFunctionMap nova_io_Nova_nova_io_FileWriterFunctionMap;
 
 
 #include <Nova.h>
@@ -36,6 +37,7 @@ typedef struct nova_io_Nova_FileWriter nova_io_Nova_FileWriter;
 #include <nova/nova_Nova_String.h>
 #include <nova/nova_Nova_System.h>
 #include <nova/meta/nova_meta_Nova_Class.h>
+#include <nova/meta/nova_meta_Nova_FunctionMap.h>
 #include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <nova/io/nova_io_Nova_File.h>
 #include <nova/io/nova_io_Nova_FileNotFoundException.h>
@@ -69,5 +71,18 @@ char nova_io_Nova_FileWriter_Nova_flush(nova_io_Nova_FileWriter* this, nova_exce
 char nova_io_Nova_FileWriter_Nova_close(nova_io_Nova_FileWriter* this, nova_exception_Nova_ExceptionData* exceptionData);
 char nova_io_Nova_FileWriter_Accessor_Nova_isOpen(nova_io_Nova_FileWriter* this, nova_exception_Nova_ExceptionData* exceptionData);
 void nova_io_Nova_FileWriter_Nova_super(nova_io_Nova_FileWriter* this, nova_exception_Nova_ExceptionData* exceptionData);
+
+CCLASS_CLASS
+(
+	nova_io_Nova_nova_io_FileWriterFunctionMap, 
+	
+	nova_io_FileWriter_nova_io_FileWriterFunctionMap_Extension_VTable* vtable;
+)
+
+void nova_io_Nova_nova_io_FileWriterFunctionMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData);
+nova_io_Nova_nova_io_FileWriterFunctionMap* nova_io_Nova_nova_io_FileWriterFunctionMap_Nova_construct(nova_io_Nova_nova_io_FileWriterFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+void nova_io_Nova_nova_io_FileWriterFunctionMap_Nova_destroy(nova_io_Nova_nova_io_FileWriterFunctionMap** this, nova_exception_Nova_ExceptionData* exceptionData);
+void nova_io_Nova_nova_io_FileWriterFunctionMap_Nova_this(nova_io_Nova_nova_io_FileWriterFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+void nova_io_Nova_nova_io_FileWriterFunctionMap_Nova_super(nova_io_Nova_nova_io_FileWriterFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
 
 #endif

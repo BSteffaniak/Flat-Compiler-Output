@@ -27,6 +27,7 @@
 #include <nova/nova_Nova_String.h>
 #include <nova/nova_Nova_System.h>
 #include <nova/meta/nova_meta_Nova_Class.h>
+#include <nova/meta/nova_meta_Nova_FunctionMap.h>
 #include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <nova/io/nova_io_Nova_File.h>
 #include <nova/io/nova_io_Nova_FileNotFoundException.h>
@@ -174,5 +175,45 @@ char nova_io_Nova_FileWriter_Accessor_Nova_isOpen(nova_io_Nova_FileWriter* this,
 void nova_io_Nova_FileWriter_Nova_super(nova_io_Nova_FileWriter* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
 	this->nova_io_Nova_FileWriter_Nova_file = (nova_io_Nova_File*)nova_null;
+}
+
+void nova_io_Nova_nova_io_FileWriterFunctionMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData)
+{
+	{
+	}
+}
+
+nova_io_Nova_nova_io_FileWriterFunctionMap* nova_io_Nova_nova_io_FileWriterFunctionMap_Nova_construct(nova_io_Nova_nova_io_FileWriterFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+	CCLASS_NEW(nova_io_Nova_nova_io_FileWriterFunctionMap, this,);
+	this->vtable = &nova_io_FileWriter_nova_io_FileWriterFunctionMap_Extension_VTable_val;
+	nova_Nova_Object_Nova_super((nova_Nova_Object*)this, exceptionData);
+	nova_meta_Nova_FunctionMap_Nova_super((nova_meta_Nova_FunctionMap*)this, exceptionData);
+	nova_io_Nova_nova_io_FileWriterFunctionMap_Nova_super(this, exceptionData);
+	
+	{
+		nova_io_Nova_nova_io_FileWriterFunctionMap_Nova_this(this, exceptionData);
+	}
+	
+	return this;
+}
+
+void nova_io_Nova_nova_io_FileWriterFunctionMap_Nova_destroy(nova_io_Nova_nova_io_FileWriterFunctionMap** this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+	if (!*this)
+	{
+		return;
+	}
+	
+	
+	NOVA_FREE(*this);
+}
+
+void nova_io_Nova_nova_io_FileWriterFunctionMap_Nova_this(nova_io_Nova_nova_io_FileWriterFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+}
+
+void nova_io_Nova_nova_io_FileWriterFunctionMap_Nova_super(nova_io_Nova_nova_io_FileWriterFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+{
 }
 

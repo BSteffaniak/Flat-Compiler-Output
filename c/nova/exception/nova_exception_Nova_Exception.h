@@ -2,6 +2,7 @@
 #define FILE_nova_exception_Nova_Exception_NOVA
 
 typedef struct nova_exception_Nova_Exception nova_exception_Nova_Exception;
+typedef struct nova_exception_Nova_nova_exception_ExceptionFunctionMap nova_exception_Nova_nova_exception_ExceptionFunctionMap;
 
 
 #include <Nova.h>
@@ -36,6 +37,7 @@ typedef struct nova_exception_Nova_Exception nova_exception_Nova_Exception;
 #include <nova/nova_Nova_String.h>
 #include <nova/nova_Nova_System.h>
 #include <nova/meta/nova_meta_Nova_Class.h>
+#include <nova/meta/nova_meta_Nova_FunctionMap.h>
 #include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <nova/NativeObject.h>
 #include <nova/operators/nova_operators_Nova_EqualsOperator.h>
@@ -54,5 +56,18 @@ void nova_exception_Nova_Exception_Nova_destroy(nova_exception_Nova_Exception** 
 void nova_exception_Nova_Exception_Nova_this(nova_exception_Nova_Exception* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* message);
 nova_Nova_String* nova_exception_Nova_Exception_Nova_toString(nova_exception_Nova_Exception* this, nova_exception_Nova_ExceptionData* exceptionData);
 void nova_exception_Nova_Exception_Nova_super(nova_exception_Nova_Exception* this, nova_exception_Nova_ExceptionData* exceptionData);
+
+CCLASS_CLASS
+(
+	nova_exception_Nova_nova_exception_ExceptionFunctionMap, 
+	
+	nova_exception_Exception_nova_exception_ExceptionFunctionMap_Extension_VTable* vtable;
+)
+
+void nova_exception_Nova_nova_exception_ExceptionFunctionMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData);
+nova_exception_Nova_nova_exception_ExceptionFunctionMap* nova_exception_Nova_nova_exception_ExceptionFunctionMap_Nova_construct(nova_exception_Nova_nova_exception_ExceptionFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+void nova_exception_Nova_nova_exception_ExceptionFunctionMap_Nova_destroy(nova_exception_Nova_nova_exception_ExceptionFunctionMap** this, nova_exception_Nova_ExceptionData* exceptionData);
+void nova_exception_Nova_nova_exception_ExceptionFunctionMap_Nova_this(nova_exception_Nova_nova_exception_ExceptionFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+void nova_exception_Nova_nova_exception_ExceptionFunctionMap_Nova_super(nova_exception_Nova_nova_exception_ExceptionFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
 
 #endif

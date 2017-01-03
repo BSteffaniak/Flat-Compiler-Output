@@ -2,6 +2,7 @@
 #define FILE_nova_math_Nova_NumericStatement_NOVA
 
 typedef struct nova_math_Nova_NumericStatement nova_math_Nova_NumericStatement;
+typedef struct nova_math_Nova_nova_math_NumericStatementFunctionMap nova_math_Nova_nova_math_NumericStatementFunctionMap;
 
 
 #include <Nova.h>
@@ -36,6 +37,7 @@ typedef struct nova_math_Nova_NumericStatement nova_math_Nova_NumericStatement;
 #include <nova/nova_Nova_String.h>
 #include <nova/nova_Nova_System.h>
 #include <nova/meta/nova_meta_Nova_Class.h>
+#include <nova/meta/nova_meta_Nova_FunctionMap.h>
 #include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <nova/math/nova_math_Nova_NumericTree.h>
 #include <nova/math/nova_math_Nova_Statement.h>
@@ -56,5 +58,18 @@ void nova_math_Nova_NumericStatement_Nova_destroy(nova_math_Nova_NumericStatemen
 void nova_math_Nova_NumericStatement_Nova_this(nova_math_Nova_NumericStatement* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* statement);
 nova_Nova_String* nova_math_Nova_NumericStatement_Nova_toString(nova_math_Nova_NumericStatement* this, nova_exception_Nova_ExceptionData* exceptionData);
 void nova_math_Nova_NumericStatement_Nova_super(nova_math_Nova_NumericStatement* this, nova_exception_Nova_ExceptionData* exceptionData);
+
+CCLASS_CLASS
+(
+	nova_math_Nova_nova_math_NumericStatementFunctionMap, 
+	
+	nova_math_NumericStatement_nova_math_NumericStatementFunctionMap_Extension_VTable* vtable;
+)
+
+void nova_math_Nova_nova_math_NumericStatementFunctionMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData);
+nova_math_Nova_nova_math_NumericStatementFunctionMap* nova_math_Nova_nova_math_NumericStatementFunctionMap_Nova_construct(nova_math_Nova_nova_math_NumericStatementFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+void nova_math_Nova_nova_math_NumericStatementFunctionMap_Nova_destroy(nova_math_Nova_nova_math_NumericStatementFunctionMap** this, nova_exception_Nova_ExceptionData* exceptionData);
+void nova_math_Nova_nova_math_NumericStatementFunctionMap_Nova_this(nova_math_Nova_nova_math_NumericStatementFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+void nova_math_Nova_nova_math_NumericStatementFunctionMap_Nova_super(nova_math_Nova_nova_math_NumericStatementFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
 
 #endif

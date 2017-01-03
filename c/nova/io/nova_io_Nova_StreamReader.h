@@ -2,6 +2,7 @@
 #define FILE_nova_io_Nova_StreamReader_NOVA
 
 typedef struct nova_io_Nova_StreamReader nova_io_Nova_StreamReader;
+typedef struct nova_io_Nova_nova_io_StreamReaderFunctionMap nova_io_Nova_nova_io_StreamReaderFunctionMap;
 
 
 #include <Nova.h>
@@ -36,6 +37,7 @@ typedef struct nova_io_Nova_StreamReader nova_io_Nova_StreamReader;
 #include <nova/nova_Nova_String.h>
 #include <nova/nova_Nova_System.h>
 #include <nova/meta/nova_meta_Nova_Class.h>
+#include <nova/meta/nova_meta_Nova_FunctionMap.h>
 #include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <nova/NativeObject.h>
 #include <nova/operators/nova_operators_Nova_EqualsOperator.h>
@@ -52,5 +54,18 @@ nova_io_Nova_StreamReader* nova_io_Nova_StreamReader_Nova_construct(nova_io_Nova
 void nova_io_Nova_StreamReader_Nova_destroy(nova_io_Nova_StreamReader** this, nova_exception_Nova_ExceptionData* exceptionData);
 void nova_io_Nova_StreamReader_Nova_this(nova_io_Nova_StreamReader* this, nova_exception_Nova_ExceptionData* exceptionData);
 void nova_io_Nova_StreamReader_Nova_super(nova_io_Nova_StreamReader* this, nova_exception_Nova_ExceptionData* exceptionData);
+
+CCLASS_CLASS
+(
+	nova_io_Nova_nova_io_StreamReaderFunctionMap, 
+	
+	nova_io_StreamReader_nova_io_StreamReaderFunctionMap_Extension_VTable* vtable;
+)
+
+void nova_io_Nova_nova_io_StreamReaderFunctionMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData);
+nova_io_Nova_nova_io_StreamReaderFunctionMap* nova_io_Nova_nova_io_StreamReaderFunctionMap_Nova_construct(nova_io_Nova_nova_io_StreamReaderFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+void nova_io_Nova_nova_io_StreamReaderFunctionMap_Nova_destroy(nova_io_Nova_nova_io_StreamReaderFunctionMap** this, nova_exception_Nova_ExceptionData* exceptionData);
+void nova_io_Nova_nova_io_StreamReaderFunctionMap_Nova_this(nova_io_Nova_nova_io_StreamReaderFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+void nova_io_Nova_nova_io_StreamReaderFunctionMap_Nova_super(nova_io_Nova_nova_io_StreamReaderFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
 
 #endif

@@ -2,6 +2,7 @@
 #define FILE_spectra_Nova_Spectra_NOVA
 
 typedef struct spectra_Nova_Spectra spectra_Nova_Spectra;
+typedef struct spectra_Nova_spectra_SpectraFunctionMap spectra_Nova_spectra_SpectraFunctionMap;
 
 
 #include <Nova.h>
@@ -36,6 +37,7 @@ typedef struct spectra_Nova_Spectra spectra_Nova_Spectra;
 #include <nova/nova_Nova_String.h>
 #include <nova/nova_Nova_System.h>
 #include <nova/meta/nova_meta_Nova_Class.h>
+#include <nova/meta/nova_meta_Nova_FunctionMap.h>
 #include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <nova/io/nova_io_Nova_File.h>
 #include <nova/time/nova_time_Nova_Timer.h>
@@ -68,5 +70,18 @@ void spectra_Nova_Spectra_static_Nova_main(spectra_Nova_Spectra* this, nova_exce
 void spectra_Nova_Spectra_Nova_this(spectra_Nova_Spectra* this, nova_exception_Nova_ExceptionData* exceptionData);
 void spectra_Nova_Spectra_Nova_compile(spectra_Nova_Spectra* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_list_Nova_Array* args);
 void spectra_Nova_Spectra_Nova_super(spectra_Nova_Spectra* this, nova_exception_Nova_ExceptionData* exceptionData);
+
+CCLASS_CLASS
+(
+	spectra_Nova_spectra_SpectraFunctionMap, 
+	
+	spectra_Spectra_spectra_SpectraFunctionMap_Extension_VTable* vtable;
+)
+
+void spectra_Nova_spectra_SpectraFunctionMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData);
+spectra_Nova_spectra_SpectraFunctionMap* spectra_Nova_spectra_SpectraFunctionMap_Nova_construct(spectra_Nova_spectra_SpectraFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+void spectra_Nova_spectra_SpectraFunctionMap_Nova_destroy(spectra_Nova_spectra_SpectraFunctionMap** this, nova_exception_Nova_ExceptionData* exceptionData);
+void spectra_Nova_spectra_SpectraFunctionMap_Nova_this(spectra_Nova_spectra_SpectraFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+void spectra_Nova_spectra_SpectraFunctionMap_Nova_super(spectra_Nova_spectra_SpectraFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
 
 #endif

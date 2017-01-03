@@ -27,6 +27,7 @@
 #include <nova/nova_Nova_String.h>
 #include <nova/nova_Nova_System.h>
 #include <nova/meta/nova_meta_Nova_Class.h>
+#include <nova/meta/nova_meta_Nova_FunctionMap.h>
 #include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <nova/regex/nova_regex_Nova_Match.h>
 #include <pcre/pcre2.h>
@@ -199,5 +200,47 @@ void nova_regex_Nova_Regex_Nova_this(nova_regex_Nova_Regex* this, nova_exception
 void nova_regex_Nova_Regex_Nova_super(nova_regex_Nova_Regex* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
 	this->nova_regex_Nova_Regex_Nova_class = (nova_meta_Nova_Class*)nova_null;
+}
+
+void nova_regex_Nova_nova_regex_RegexFunctionMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData)
+{
+	{
+	}
+}
+
+nova_regex_Nova_nova_regex_RegexFunctionMap* nova_regex_Nova_nova_regex_RegexFunctionMap_Nova_construct(nova_regex_Nova_nova_regex_RegexFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+	CCLASS_NEW(nova_regex_Nova_nova_regex_RegexFunctionMap, this,);
+	this->vtable = &nova_regex_Regex_nova_regex_RegexFunctionMap_Extension_VTable_val;
+	nova_Nova_Object_Nova_super((nova_Nova_Object*)this, exceptionData);
+	nova_meta_Nova_FunctionMap_Nova_super((nova_meta_Nova_FunctionMap*)this, exceptionData);
+	nova_regex_Nova_nova_regex_RegexFunctionMap_Nova_super(this, exceptionData);
+	
+	{
+		nova_regex_Nova_nova_regex_RegexFunctionMap_Nova_this(this, exceptionData);
+	}
+	
+	return this;
+}
+
+void nova_regex_Nova_nova_regex_RegexFunctionMap_Nova_destroy(nova_regex_Nova_nova_regex_RegexFunctionMap** this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+	if (!*this)
+	{
+		return;
+	}
+	
+	nova_meta_Nova_Class_Nova_destroy(&(*this)->nova_regex_Nova_nova_regex_RegexFunctionMap_Nova_class, exceptionData);
+	
+	NOVA_FREE(*this);
+}
+
+void nova_regex_Nova_nova_regex_RegexFunctionMap_Nova_this(nova_regex_Nova_nova_regex_RegexFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+}
+
+void nova_regex_Nova_nova_regex_RegexFunctionMap_Nova_super(nova_regex_Nova_nova_regex_RegexFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+	this->nova_regex_Nova_nova_regex_RegexFunctionMap_Nova_class = (nova_meta_Nova_Class*)nova_null;
 }
 

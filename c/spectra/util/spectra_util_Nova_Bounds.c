@@ -27,6 +27,7 @@
 #include <nova/nova_Nova_String.h>
 #include <nova/nova_Nova_System.h>
 #include <nova/meta/nova_meta_Nova_Class.h>
+#include <nova/meta/nova_meta_Nova_FunctionMap.h>
 #include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <nova/NativeObject.h>
 #include <nova/operators/nova_operators_Nova_EqualsOperator.h>
@@ -156,5 +157,45 @@ void spectra_util_Nova_Bounds_Nova_super(spectra_util_Nova_Bounds* this, nova_ex
 {
 	this->spectra_util_Nova_Bounds_Nova_start = 0;
 	this->spectra_util_Nova_Bounds_Nova_end = 0;
+}
+
+void spectra_util_Nova_spectra_util_BoundsFunctionMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData)
+{
+	{
+	}
+}
+
+spectra_util_Nova_spectra_util_BoundsFunctionMap* spectra_util_Nova_spectra_util_BoundsFunctionMap_Nova_construct(spectra_util_Nova_spectra_util_BoundsFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+	CCLASS_NEW(spectra_util_Nova_spectra_util_BoundsFunctionMap, this,);
+	this->vtable = &spectra_util_Bounds_spectra_util_BoundsFunctionMap_Extension_VTable_val;
+	nova_Nova_Object_Nova_super((nova_Nova_Object*)this, exceptionData);
+	nova_meta_Nova_FunctionMap_Nova_super((nova_meta_Nova_FunctionMap*)this, exceptionData);
+	spectra_util_Nova_spectra_util_BoundsFunctionMap_Nova_super(this, exceptionData);
+	
+	{
+		spectra_util_Nova_spectra_util_BoundsFunctionMap_Nova_this(this, exceptionData);
+	}
+	
+	return this;
+}
+
+void spectra_util_Nova_spectra_util_BoundsFunctionMap_Nova_destroy(spectra_util_Nova_spectra_util_BoundsFunctionMap** this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+	if (!*this)
+	{
+		return;
+	}
+	
+	
+	NOVA_FREE(*this);
+}
+
+void spectra_util_Nova_spectra_util_BoundsFunctionMap_Nova_this(spectra_util_Nova_spectra_util_BoundsFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+}
+
+void spectra_util_Nova_spectra_util_BoundsFunctionMap_Nova_super(spectra_util_Nova_spectra_util_BoundsFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+{
 }
 

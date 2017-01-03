@@ -2,6 +2,7 @@
 #define FILE_stabilitytest_Nova_FileStability_NOVA
 
 typedef struct stabilitytest_Nova_FileStability stabilitytest_Nova_FileStability;
+typedef struct stabilitytest_Nova_stabilitytest_FileStabilityFunctionMap stabilitytest_Nova_stabilitytest_FileStabilityFunctionMap;
 
 
 #include <Nova.h>
@@ -36,6 +37,7 @@ typedef struct stabilitytest_Nova_FileStability stabilitytest_Nova_FileStability
 #include <nova/nova_Nova_String.h>
 #include <nova/nova_Nova_System.h>
 #include <nova/meta/nova_meta_Nova_Class.h>
+#include <nova/meta/nova_meta_Nova_FunctionMap.h>
 #include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <nova/io/nova_io_Nova_File.h>
 #include <nova/io/nova_io_Nova_FileReader.h>
@@ -60,5 +62,18 @@ void stabilitytest_Nova_FileStability_Nova_destroy(stabilitytest_Nova_FileStabil
 void stabilitytest_Nova_FileStability_Nova_this(stabilitytest_Nova_FileStability* this, nova_exception_Nova_ExceptionData* exceptionData, stabilitytest_Nova_StabilityTest* program);
 void stabilitytest_Nova_FileStability_Nova_test(stabilitytest_Nova_FileStability* this, nova_exception_Nova_ExceptionData* exceptionData);
 void stabilitytest_Nova_FileStability_Nova_super(stabilitytest_Nova_FileStability* this, nova_exception_Nova_ExceptionData* exceptionData);
+
+CCLASS_CLASS
+(
+	stabilitytest_Nova_stabilitytest_FileStabilityFunctionMap, 
+	
+	stabilitytest_FileStability_stabilitytest_FileStabilityFunctionMap_Extension_VTable* vtable;
+)
+
+void stabilitytest_Nova_stabilitytest_FileStabilityFunctionMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData);
+stabilitytest_Nova_stabilitytest_FileStabilityFunctionMap* stabilitytest_Nova_stabilitytest_FileStabilityFunctionMap_Nova_construct(stabilitytest_Nova_stabilitytest_FileStabilityFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+void stabilitytest_Nova_stabilitytest_FileStabilityFunctionMap_Nova_destroy(stabilitytest_Nova_stabilitytest_FileStabilityFunctionMap** this, nova_exception_Nova_ExceptionData* exceptionData);
+void stabilitytest_Nova_stabilitytest_FileStabilityFunctionMap_Nova_this(stabilitytest_Nova_stabilitytest_FileStabilityFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+void stabilitytest_Nova_stabilitytest_FileStabilityFunctionMap_Nova_super(stabilitytest_Nova_stabilitytest_FileStabilityFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
 
 #endif

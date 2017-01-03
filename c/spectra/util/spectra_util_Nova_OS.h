@@ -2,6 +2,7 @@
 #define FILE_spectra_util_Nova_OS_NOVA
 
 typedef struct spectra_util_Nova_OS spectra_util_Nova_OS;
+typedef struct spectra_util_Nova_spectra_util_OSFunctionMap spectra_util_Nova_spectra_util_OSFunctionMap;
 
 
 #include <Nova.h>
@@ -36,6 +37,7 @@ typedef struct spectra_util_Nova_OS spectra_util_Nova_OS;
 #include <nova/nova_Nova_String.h>
 #include <nova/nova_Nova_System.h>
 #include <nova/meta/nova_meta_Nova_Class.h>
+#include <nova/meta/nova_meta_Nova_FunctionMap.h>
 #include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <nova/NativeObject.h>
 #include <nova/operators/nova_operators_Nova_EqualsOperator.h>
@@ -61,5 +63,18 @@ char spectra_util_Nova_OS_Accessor_static_Nova_isWindows(spectra_util_Nova_OS* t
 char spectra_util_Nova_OS_Accessor_static_Nova_isMacOsx(spectra_util_Nova_OS* this, nova_exception_Nova_ExceptionData* exceptionData);
 char spectra_util_Nova_OS_Accessor_static_Nova_isLinux(spectra_util_Nova_OS* this, nova_exception_Nova_ExceptionData* exceptionData);
 void spectra_util_Nova_OS_Nova_super(spectra_util_Nova_OS* this, nova_exception_Nova_ExceptionData* exceptionData);
+
+CCLASS_CLASS
+(
+	spectra_util_Nova_spectra_util_OSFunctionMap, 
+	
+	spectra_util_OS_spectra_util_OSFunctionMap_Extension_VTable* vtable;
+)
+
+void spectra_util_Nova_spectra_util_OSFunctionMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData);
+spectra_util_Nova_spectra_util_OSFunctionMap* spectra_util_Nova_spectra_util_OSFunctionMap_Nova_construct(spectra_util_Nova_spectra_util_OSFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+void spectra_util_Nova_spectra_util_OSFunctionMap_Nova_destroy(spectra_util_Nova_spectra_util_OSFunctionMap** this, nova_exception_Nova_ExceptionData* exceptionData);
+void spectra_util_Nova_spectra_util_OSFunctionMap_Nova_this(spectra_util_Nova_spectra_util_OSFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+void spectra_util_Nova_spectra_util_OSFunctionMap_Nova_super(spectra_util_Nova_spectra_util_OSFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
 
 #endif

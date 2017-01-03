@@ -2,6 +2,7 @@
 #define FILE_nova_math_Nova_Statement_NOVA
 
 typedef struct nova_math_Nova_Statement nova_math_Nova_Statement;
+typedef struct nova_math_Nova_nova_math_StatementFunctionMap nova_math_Nova_nova_math_StatementFunctionMap;
 
 
 #include <Nova.h>
@@ -36,6 +37,7 @@ typedef struct nova_math_Nova_Statement nova_math_Nova_Statement;
 #include <nova/nova_Nova_String.h>
 #include <nova/nova_Nova_System.h>
 #include <nova/meta/nova_meta_Nova_Class.h>
+#include <nova/meta/nova_meta_Nova_FunctionMap.h>
 #include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <nova/NativeObject.h>
 #include <nova/operators/nova_operators_Nova_EqualsOperator.h>
@@ -52,5 +54,18 @@ nova_math_Nova_Statement* nova_math_Nova_Statement_Nova_construct(nova_math_Nova
 void nova_math_Nova_Statement_Nova_destroy(nova_math_Nova_Statement** this, nova_exception_Nova_ExceptionData* exceptionData);
 void nova_math_Nova_Statement_Nova_this(nova_math_Nova_Statement* this, nova_exception_Nova_ExceptionData* exceptionData);
 void nova_math_Nova_Statement_Nova_super(nova_math_Nova_Statement* this, nova_exception_Nova_ExceptionData* exceptionData);
+
+CCLASS_CLASS
+(
+	nova_math_Nova_nova_math_StatementFunctionMap, 
+	
+	nova_math_Statement_nova_math_StatementFunctionMap_Extension_VTable* vtable;
+)
+
+void nova_math_Nova_nova_math_StatementFunctionMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData);
+nova_math_Nova_nova_math_StatementFunctionMap* nova_math_Nova_nova_math_StatementFunctionMap_Nova_construct(nova_math_Nova_nova_math_StatementFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+void nova_math_Nova_nova_math_StatementFunctionMap_Nova_destroy(nova_math_Nova_nova_math_StatementFunctionMap** this, nova_exception_Nova_ExceptionData* exceptionData);
+void nova_math_Nova_nova_math_StatementFunctionMap_Nova_this(nova_math_Nova_nova_math_StatementFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+void nova_math_Nova_nova_math_StatementFunctionMap_Nova_super(nova_math_Nova_nova_math_StatementFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
 
 #endif

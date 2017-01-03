@@ -27,6 +27,7 @@
 #include <nova/nova_Nova_String.h>
 #include <nova/nova_Nova_System.h>
 #include <nova/meta/nova_meta_Nova_Class.h>
+#include <nova/meta/nova_meta_Nova_FunctionMap.h>
 #include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <nova/thread/NativeThread.h>
 #include <nova/NativeObject.h>
@@ -181,5 +182,45 @@ void nova_thread_Nova_Thread_Nova_super(nova_thread_Nova_Thread* this, nova_exce
 void nova_thread_Nova_Thread_virtual_Nova_run(nova_thread_Nova_Thread* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
 	this->vtable->nova_thread_Nova_Thread_virtual_Nova_run((nova_thread_Nova_Thread*)(this), exceptionData);
+}
+
+void nova_thread_Nova_nova_thread_ThreadFunctionMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData)
+{
+	{
+	}
+}
+
+nova_thread_Nova_nova_thread_ThreadFunctionMap* nova_thread_Nova_nova_thread_ThreadFunctionMap_Nova_construct(nova_thread_Nova_nova_thread_ThreadFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+	CCLASS_NEW(nova_thread_Nova_nova_thread_ThreadFunctionMap, this,);
+	this->vtable = &nova_thread_Thread_nova_thread_ThreadFunctionMap_Extension_VTable_val;
+	nova_Nova_Object_Nova_super((nova_Nova_Object*)this, exceptionData);
+	nova_meta_Nova_FunctionMap_Nova_super((nova_meta_Nova_FunctionMap*)this, exceptionData);
+	nova_thread_Nova_nova_thread_ThreadFunctionMap_Nova_super(this, exceptionData);
+	
+	{
+		nova_thread_Nova_nova_thread_ThreadFunctionMap_Nova_this(this, exceptionData);
+	}
+	
+	return this;
+}
+
+void nova_thread_Nova_nova_thread_ThreadFunctionMap_Nova_destroy(nova_thread_Nova_nova_thread_ThreadFunctionMap** this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+	if (!*this)
+	{
+		return;
+	}
+	
+	
+	NOVA_FREE(*this);
+}
+
+void nova_thread_Nova_nova_thread_ThreadFunctionMap_Nova_this(nova_thread_Nova_nova_thread_ThreadFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+}
+
+void nova_thread_Nova_nova_thread_ThreadFunctionMap_Nova_super(nova_thread_Nova_nova_thread_ThreadFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+{
 }
 

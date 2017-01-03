@@ -2,6 +2,7 @@
 #define FILE_spectra_util_Nova_SyntaxUtils_NOVA
 
 typedef struct spectra_util_Nova_SyntaxUtils spectra_util_Nova_SyntaxUtils;
+typedef struct spectra_util_Nova_spectra_util_SyntaxUtilsFunctionMap spectra_util_Nova_spectra_util_SyntaxUtilsFunctionMap;
 
 
 #include <Nova.h>
@@ -36,6 +37,7 @@ typedef struct spectra_util_Nova_SyntaxUtils spectra_util_Nova_SyntaxUtils;
 #include <nova/nova_Nova_String.h>
 #include <nova/nova_Nova_System.h>
 #include <nova/meta/nova_meta_Nova_Class.h>
+#include <nova/meta/nova_meta_Nova_FunctionMap.h>
 #include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <nova/NativeObject.h>
 #include <nova/operators/nova_operators_Nova_EqualsOperator.h>
@@ -53,5 +55,18 @@ void spectra_util_Nova_SyntaxUtils_Nova_destroy(spectra_util_Nova_SyntaxUtils** 
 char spectra_util_Nova_SyntaxUtils_static_Nova_checkTypes(spectra_util_Nova_SyntaxUtils* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_list_Nova_Array* types, nova_meta_Nova_Class* clazz);
 void spectra_util_Nova_SyntaxUtils_Nova_this(spectra_util_Nova_SyntaxUtils* this, nova_exception_Nova_ExceptionData* exceptionData);
 void spectra_util_Nova_SyntaxUtils_Nova_super(spectra_util_Nova_SyntaxUtils* this, nova_exception_Nova_ExceptionData* exceptionData);
+
+CCLASS_CLASS
+(
+	spectra_util_Nova_spectra_util_SyntaxUtilsFunctionMap, 
+	
+	spectra_util_SyntaxUtils_spectra_util_SyntaxUtilsFunctionMap_Extension_VTable* vtable;
+)
+
+void spectra_util_Nova_spectra_util_SyntaxUtilsFunctionMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData);
+spectra_util_Nova_spectra_util_SyntaxUtilsFunctionMap* spectra_util_Nova_spectra_util_SyntaxUtilsFunctionMap_Nova_construct(spectra_util_Nova_spectra_util_SyntaxUtilsFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+void spectra_util_Nova_spectra_util_SyntaxUtilsFunctionMap_Nova_destroy(spectra_util_Nova_spectra_util_SyntaxUtilsFunctionMap** this, nova_exception_Nova_ExceptionData* exceptionData);
+void spectra_util_Nova_spectra_util_SyntaxUtilsFunctionMap_Nova_this(spectra_util_Nova_spectra_util_SyntaxUtilsFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+void spectra_util_Nova_spectra_util_SyntaxUtilsFunctionMap_Nova_super(spectra_util_Nova_spectra_util_SyntaxUtilsFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
 
 #endif

@@ -2,6 +2,7 @@
 #define FILE_nova_database_Nova_ResultSet_NOVA
 
 typedef struct nova_database_Nova_ResultSet nova_database_Nova_ResultSet;
+typedef struct nova_database_Nova_nova_database_ResultSetFunctionMap nova_database_Nova_nova_database_ResultSetFunctionMap;
 
 
 #include <Nova.h>
@@ -36,6 +37,7 @@ typedef struct nova_database_Nova_ResultSet nova_database_Nova_ResultSet;
 #include <nova/nova_Nova_String.h>
 #include <nova/nova_Nova_System.h>
 #include <nova/meta/nova_meta_Nova_Class.h>
+#include <nova/meta/nova_meta_Nova_FunctionMap.h>
 #include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <nova/NativeObject.h>
 #include <nova/operators/nova_operators_Nova_EqualsOperator.h>
@@ -55,5 +57,18 @@ void nova_database_Nova_ResultSet_Nova_destroy(nova_database_Nova_ResultSet** th
 void nova_database_Nova_ResultSet_Nova_this(nova_database_Nova_ResultSet* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_list_Nova_Array* rows, int numCols);
 int nova_database_Nova_ResultSet_Accessor_Nova_numRows(nova_database_Nova_ResultSet* this, nova_exception_Nova_ExceptionData* exceptionData);
 void nova_database_Nova_ResultSet_Nova_super(nova_database_Nova_ResultSet* this, nova_exception_Nova_ExceptionData* exceptionData);
+
+CCLASS_CLASS
+(
+	nova_database_Nova_nova_database_ResultSetFunctionMap, 
+	
+	nova_database_ResultSet_nova_database_ResultSetFunctionMap_Extension_VTable* vtable;
+)
+
+void nova_database_Nova_nova_database_ResultSetFunctionMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData);
+nova_database_Nova_nova_database_ResultSetFunctionMap* nova_database_Nova_nova_database_ResultSetFunctionMap_Nova_construct(nova_database_Nova_nova_database_ResultSetFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+void nova_database_Nova_nova_database_ResultSetFunctionMap_Nova_destroy(nova_database_Nova_nova_database_ResultSetFunctionMap** this, nova_exception_Nova_ExceptionData* exceptionData);
+void nova_database_Nova_nova_database_ResultSetFunctionMap_Nova_this(nova_database_Nova_nova_database_ResultSetFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+void nova_database_Nova_nova_database_ResultSetFunctionMap_Nova_super(nova_database_Nova_nova_database_ResultSetFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
 
 #endif

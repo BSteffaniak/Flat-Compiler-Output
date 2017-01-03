@@ -27,6 +27,7 @@
 #include <nova/nova_Nova_String.h>
 #include <nova/nova_Nova_System.h>
 #include <nova/meta/nova_meta_Nova_Class.h>
+#include <nova/meta/nova_meta_Nova_FunctionMap.h>
 #include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <nova/datastruct/nova_datastruct_Nova_HashMap.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_List.h>
@@ -104,5 +105,45 @@ nova_Nova_Object* nova_datastruct_Nova_ReversibleHashMap_Nova_getValue(nova_data
 void nova_datastruct_Nova_ReversibleHashMap_Nova_super(nova_datastruct_Nova_ReversibleHashMap* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
 	this->prv->nova_datastruct_Nova_ReversibleHashMap_Nova_rev = (nova_datastruct_Nova_HashMap*)nova_null;
+}
+
+void nova_datastruct_Nova_nova_datastruct_ReversibleHashMapFunctionMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData)
+{
+	{
+	}
+}
+
+nova_datastruct_Nova_nova_datastruct_ReversibleHashMapFunctionMap* nova_datastruct_Nova_nova_datastruct_ReversibleHashMapFunctionMap_Nova_construct(nova_datastruct_Nova_nova_datastruct_ReversibleHashMapFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+	CCLASS_NEW(nova_datastruct_Nova_nova_datastruct_ReversibleHashMapFunctionMap, this,);
+	this->vtable = &nova_datastruct_ReversibleHashMap_nova_datastruct_ReversibleHashMapFunctionMap_Extension_VTable_val;
+	nova_Nova_Object_Nova_super((nova_Nova_Object*)this, exceptionData);
+	nova_meta_Nova_FunctionMap_Nova_super((nova_meta_Nova_FunctionMap*)this, exceptionData);
+	nova_datastruct_Nova_nova_datastruct_ReversibleHashMapFunctionMap_Nova_super(this, exceptionData);
+	
+	{
+		nova_datastruct_Nova_nova_datastruct_ReversibleHashMapFunctionMap_Nova_this(this, exceptionData);
+	}
+	
+	return this;
+}
+
+void nova_datastruct_Nova_nova_datastruct_ReversibleHashMapFunctionMap_Nova_destroy(nova_datastruct_Nova_nova_datastruct_ReversibleHashMapFunctionMap** this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+	if (!*this)
+	{
+		return;
+	}
+	
+	
+	NOVA_FREE(*this);
+}
+
+void nova_datastruct_Nova_nova_datastruct_ReversibleHashMapFunctionMap_Nova_this(nova_datastruct_Nova_nova_datastruct_ReversibleHashMapFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+}
+
+void nova_datastruct_Nova_nova_datastruct_ReversibleHashMapFunctionMap_Nova_super(nova_datastruct_Nova_nova_datastruct_ReversibleHashMapFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+{
 }
 

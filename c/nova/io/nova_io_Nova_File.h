@@ -2,6 +2,7 @@
 #define FILE_nova_io_Nova_File_NOVA
 
 typedef struct nova_io_Nova_File nova_io_Nova_File;
+typedef struct nova_io_Nova_nova_io_FileFunctionMap nova_io_Nova_nova_io_FileFunctionMap;
 
 
 #include <Nova.h>
@@ -36,6 +37,7 @@ typedef struct nova_io_Nova_File nova_io_Nova_File;
 #include <nova/nova_Nova_String.h>
 #include <nova/nova_Nova_System.h>
 #include <nova/meta/nova_meta_Nova_Class.h>
+#include <nova/meta/nova_meta_Nova_FunctionMap.h>
 #include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <nova/io/NativeFile.h>
 #include <nova/time/nova_time_Nova_Time.h>
@@ -80,5 +82,19 @@ char nova_io_Nova_File_Accessorfunc_Nova_isHidden(nova_io_Nova_File* this, nova_
 char nova_io_Nova_File_Accessorfunc_Nova_exists(nova_io_Nova_File* this, nova_exception_Nova_ExceptionData* exceptionData);
 int nova_io_Nova_File_Accessorfunc_Nova_maxOpenFiles(nova_io_Nova_File* this, nova_exception_Nova_ExceptionData* exceptionData);
 void nova_io_Nova_File_Nova_super(nova_io_Nova_File* this, nova_exception_Nova_ExceptionData* exceptionData);
+
+CCLASS_CLASS
+(
+	nova_io_Nova_nova_io_FileFunctionMap, 
+	
+	nova_io_File_nova_io_FileFunctionMap_Extension_VTable* vtable;
+	nova_meta_Nova_Class* nova_io_Nova_nova_io_FileFunctionMap_Nova_class;
+)
+
+void nova_io_Nova_nova_io_FileFunctionMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData);
+nova_io_Nova_nova_io_FileFunctionMap* nova_io_Nova_nova_io_FileFunctionMap_Nova_construct(nova_io_Nova_nova_io_FileFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+void nova_io_Nova_nova_io_FileFunctionMap_Nova_destroy(nova_io_Nova_nova_io_FileFunctionMap** this, nova_exception_Nova_ExceptionData* exceptionData);
+void nova_io_Nova_nova_io_FileFunctionMap_Nova_this(nova_io_Nova_nova_io_FileFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+void nova_io_Nova_nova_io_FileFunctionMap_Nova_super(nova_io_Nova_nova_io_FileFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
 
 #endif

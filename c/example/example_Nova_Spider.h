@@ -2,6 +2,7 @@
 #define FILE_example_Nova_Spider_NOVA
 
 typedef struct example_Nova_Spider example_Nova_Spider;
+typedef struct example_Nova_example_SpiderFunctionMap example_Nova_example_SpiderFunctionMap;
 
 
 #include <Nova.h>
@@ -36,6 +37,7 @@ typedef struct example_Nova_Spider example_Nova_Spider;
 #include <nova/nova_Nova_String.h>
 #include <nova/nova_Nova_System.h>
 #include <nova/meta/nova_meta_Nova_Class.h>
+#include <nova/meta/nova_meta_Nova_FunctionMap.h>
 #include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <example/example_Nova_Animal.h>
 #include <nova/NativeObject.h>
@@ -56,5 +58,18 @@ int example_Nova_Spider_Nova_getNumEyes(example_Nova_Spider* this, nova_exceptio
 nova_Nova_String* example_Nova_Spider_Nova_getDescription(example_Nova_Spider* this, nova_exception_Nova_ExceptionData* exceptionData);
 void example_Nova_Spider_Nova_this(example_Nova_Spider* this, nova_exception_Nova_ExceptionData* exceptionData);
 void example_Nova_Spider_Nova_super(example_Nova_Spider* this, nova_exception_Nova_ExceptionData* exceptionData);
+
+CCLASS_CLASS
+(
+	example_Nova_example_SpiderFunctionMap, 
+	
+	example_Spider_example_SpiderFunctionMap_Extension_VTable* vtable;
+)
+
+void example_Nova_example_SpiderFunctionMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData);
+example_Nova_example_SpiderFunctionMap* example_Nova_example_SpiderFunctionMap_Nova_construct(example_Nova_example_SpiderFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+void example_Nova_example_SpiderFunctionMap_Nova_destroy(example_Nova_example_SpiderFunctionMap** this, nova_exception_Nova_ExceptionData* exceptionData);
+void example_Nova_example_SpiderFunctionMap_Nova_this(example_Nova_example_SpiderFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+void example_Nova_example_SpiderFunctionMap_Nova_super(example_Nova_example_SpiderFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
 
 #endif

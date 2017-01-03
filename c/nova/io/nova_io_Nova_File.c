@@ -27,6 +27,7 @@
 #include <nova/nova_Nova_String.h>
 #include <nova/nova_Nova_System.h>
 #include <nova/meta/nova_meta_Nova_Class.h>
+#include <nova/meta/nova_meta_Nova_FunctionMap.h>
 #include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <nova/io/NativeFile.h>
 #include <nova/time/nova_time_Nova_Time.h>
@@ -319,5 +320,47 @@ void nova_io_Nova_File_Nova_super(nova_io_Nova_File* this, nova_exception_Nova_E
 	this->nova_io_Nova_File_Nova_exists = 0;
 	this->nova_io_Nova_File_Nova_files = (nova_datastruct_list_Nova_Array*)nova_null;
 	this->nova_io_Nova_File_Nova_maxOpenFiles = 0;
+}
+
+void nova_io_Nova_nova_io_FileFunctionMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData)
+{
+	{
+	}
+}
+
+nova_io_Nova_nova_io_FileFunctionMap* nova_io_Nova_nova_io_FileFunctionMap_Nova_construct(nova_io_Nova_nova_io_FileFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+	CCLASS_NEW(nova_io_Nova_nova_io_FileFunctionMap, this,);
+	this->vtable = &nova_io_File_nova_io_FileFunctionMap_Extension_VTable_val;
+	nova_Nova_Object_Nova_super((nova_Nova_Object*)this, exceptionData);
+	nova_meta_Nova_FunctionMap_Nova_super((nova_meta_Nova_FunctionMap*)this, exceptionData);
+	nova_io_Nova_nova_io_FileFunctionMap_Nova_super(this, exceptionData);
+	
+	{
+		nova_io_Nova_nova_io_FileFunctionMap_Nova_this(this, exceptionData);
+	}
+	
+	return this;
+}
+
+void nova_io_Nova_nova_io_FileFunctionMap_Nova_destroy(nova_io_Nova_nova_io_FileFunctionMap** this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+	if (!*this)
+	{
+		return;
+	}
+	
+	nova_meta_Nova_Class_Nova_destroy(&(*this)->nova_io_Nova_nova_io_FileFunctionMap_Nova_class, exceptionData);
+	
+	NOVA_FREE(*this);
+}
+
+void nova_io_Nova_nova_io_FileFunctionMap_Nova_this(nova_io_Nova_nova_io_FileFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+}
+
+void nova_io_Nova_nova_io_FileFunctionMap_Nova_super(nova_io_Nova_nova_io_FileFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+	this->nova_io_Nova_nova_io_FileFunctionMap_Nova_class = (nova_meta_Nova_Class*)nova_null;
 }
 

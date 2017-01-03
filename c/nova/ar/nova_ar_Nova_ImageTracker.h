@@ -2,6 +2,7 @@
 #define FILE_nova_ar_Nova_ImageTracker_NOVA
 
 typedef struct nova_ar_Nova_ImageTracker nova_ar_Nova_ImageTracker;
+typedef struct nova_ar_Nova_nova_ar_ImageTrackerFunctionMap nova_ar_Nova_nova_ar_ImageTrackerFunctionMap;
 
 
 #include <Nova.h>
@@ -36,6 +37,7 @@ typedef struct nova_ar_Nova_ImageTracker nova_ar_Nova_ImageTracker;
 #include <nova/nova_Nova_String.h>
 #include <nova/nova_Nova_System.h>
 #include <nova/meta/nova_meta_Nova_Class.h>
+#include <nova/meta/nova_meta_Nova_FunctionMap.h>
 #include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <nova/NativeObject.h>
 #include <nova/operators/nova_operators_Nova_EqualsOperator.h>
@@ -52,5 +54,18 @@ nova_ar_Nova_ImageTracker* nova_ar_Nova_ImageTracker_Nova_construct(nova_ar_Nova
 void nova_ar_Nova_ImageTracker_Nova_destroy(nova_ar_Nova_ImageTracker** this, nova_exception_Nova_ExceptionData* exceptionData);
 void nova_ar_Nova_ImageTracker_Nova_this(nova_ar_Nova_ImageTracker* this, nova_exception_Nova_ExceptionData* exceptionData);
 void nova_ar_Nova_ImageTracker_Nova_super(nova_ar_Nova_ImageTracker* this, nova_exception_Nova_ExceptionData* exceptionData);
+
+CCLASS_CLASS
+(
+	nova_ar_Nova_nova_ar_ImageTrackerFunctionMap, 
+	
+	nova_ar_ImageTracker_nova_ar_ImageTrackerFunctionMap_Extension_VTable* vtable;
+)
+
+void nova_ar_Nova_nova_ar_ImageTrackerFunctionMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData);
+nova_ar_Nova_nova_ar_ImageTrackerFunctionMap* nova_ar_Nova_nova_ar_ImageTrackerFunctionMap_Nova_construct(nova_ar_Nova_nova_ar_ImageTrackerFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+void nova_ar_Nova_nova_ar_ImageTrackerFunctionMap_Nova_destroy(nova_ar_Nova_nova_ar_ImageTrackerFunctionMap** this, nova_exception_Nova_ExceptionData* exceptionData);
+void nova_ar_Nova_nova_ar_ImageTrackerFunctionMap_Nova_this(nova_ar_Nova_nova_ar_ImageTrackerFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+void nova_ar_Nova_nova_ar_ImageTrackerFunctionMap_Nova_super(nova_ar_Nova_nova_ar_ImageTrackerFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
 
 #endif

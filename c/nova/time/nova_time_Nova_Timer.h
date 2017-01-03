@@ -2,6 +2,7 @@
 #define FILE_nova_time_Nova_Timer_NOVA
 
 typedef struct nova_time_Nova_Timer nova_time_Nova_Timer;
+typedef struct nova_time_Nova_nova_time_TimerFunctionMap nova_time_Nova_nova_time_TimerFunctionMap;
 
 typedef struct nova_exception_Nova_ExceptionData nova_exception_Nova_ExceptionData;
 typedef struct nova_time_Nova_Timer nova_time_Nova_Timer;
@@ -47,6 +48,7 @@ typedef void (*nova_time_Nova_Timer_closure8_Nova_callback)(void*, nova_exceptio
 #include <nova/nova_Nova_String.h>
 #include <nova/nova_Nova_System.h>
 #include <nova/meta/nova_meta_Nova_Class.h>
+#include <nova/meta/nova_meta_Nova_FunctionMap.h>
 #include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <nova/time/nova_time_Nova_Time.h>
 #include <nova/NativeObject.h>
@@ -74,5 +76,18 @@ long_long nova_time_Nova_Timer_Accessor_Nova_duration(nova_time_Nova_Timer* this
 void nova_time_Nova_Timer_Nova_super(nova_time_Nova_Timer* this, nova_exception_Nova_ExceptionData* exceptionData);
 nova_time_Nova_Timer* nova_time_Nova_Timer_virtual_Nova_stop(nova_time_Nova_Timer* this, nova_exception_Nova_ExceptionData* exceptionData);
 long_long nova_time_Nova_Timer_virtual_Accessor_Nova_duration(nova_time_Nova_Timer* this, nova_exception_Nova_ExceptionData* exceptionData);
+
+CCLASS_CLASS
+(
+	nova_time_Nova_nova_time_TimerFunctionMap, 
+	
+	nova_time_Timer_nova_time_TimerFunctionMap_Extension_VTable* vtable;
+)
+
+void nova_time_Nova_nova_time_TimerFunctionMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData);
+nova_time_Nova_nova_time_TimerFunctionMap* nova_time_Nova_nova_time_TimerFunctionMap_Nova_construct(nova_time_Nova_nova_time_TimerFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+void nova_time_Nova_nova_time_TimerFunctionMap_Nova_destroy(nova_time_Nova_nova_time_TimerFunctionMap** this, nova_exception_Nova_ExceptionData* exceptionData);
+void nova_time_Nova_nova_time_TimerFunctionMap_Nova_this(nova_time_Nova_nova_time_TimerFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+void nova_time_Nova_nova_time_TimerFunctionMap_Nova_super(nova_time_Nova_nova_time_TimerFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
 
 #endif

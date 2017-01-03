@@ -2,6 +2,7 @@
 #define FILE_example_Nova_GenericDemo_NOVA
 
 typedef struct example_Nova_GenericDemo example_Nova_GenericDemo;
+typedef struct example_Nova_example_GenericDemoFunctionMap example_Nova_example_GenericDemoFunctionMap;
 
 
 #include <Nova.h>
@@ -36,6 +37,7 @@ typedef struct example_Nova_GenericDemo example_Nova_GenericDemo;
 #include <nova/nova_Nova_String.h>
 #include <nova/nova_Nova_System.h>
 #include <nova/meta/nova_meta_Nova_Class.h>
+#include <nova/meta/nova_meta_Nova_FunctionMap.h>
 #include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_Stack.h>
 #include <nova/NativeObject.h>
@@ -54,5 +56,18 @@ void example_Nova_GenericDemo_Nova_destroy(example_Nova_GenericDemo** this, nova
 void example_Nova_GenericDemo_static_Nova_main(example_Nova_GenericDemo* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_list_Nova_Array* args);
 void example_Nova_GenericDemo_Nova_this(example_Nova_GenericDemo* this, nova_exception_Nova_ExceptionData* exceptionData);
 void example_Nova_GenericDemo_Nova_super(example_Nova_GenericDemo* this, nova_exception_Nova_ExceptionData* exceptionData);
+
+CCLASS_CLASS
+(
+	example_Nova_example_GenericDemoFunctionMap, 
+	
+	example_GenericDemo_example_GenericDemoFunctionMap_Extension_VTable* vtable;
+)
+
+void example_Nova_example_GenericDemoFunctionMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData);
+example_Nova_example_GenericDemoFunctionMap* example_Nova_example_GenericDemoFunctionMap_Nova_construct(example_Nova_example_GenericDemoFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+void example_Nova_example_GenericDemoFunctionMap_Nova_destroy(example_Nova_example_GenericDemoFunctionMap** this, nova_exception_Nova_ExceptionData* exceptionData);
+void example_Nova_example_GenericDemoFunctionMap_Nova_this(example_Nova_example_GenericDemoFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+void example_Nova_example_GenericDemoFunctionMap_Nova_super(example_Nova_example_GenericDemoFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
 
 #endif

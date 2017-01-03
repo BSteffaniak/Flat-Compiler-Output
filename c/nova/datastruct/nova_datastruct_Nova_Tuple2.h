@@ -2,6 +2,7 @@
 #define FILE_nova_datastruct_Nova_Tuple2_NOVA
 
 typedef struct nova_datastruct_Nova_Tuple2 nova_datastruct_Nova_Tuple2;
+typedef struct nova_datastruct_Nova_nova_datastruct_Tuple2FunctionMap nova_datastruct_Nova_nova_datastruct_Tuple2FunctionMap;
 
 
 #include <Nova.h>
@@ -36,6 +37,7 @@ typedef struct nova_datastruct_Nova_Tuple2 nova_datastruct_Nova_Tuple2;
 #include <nova/nova_Nova_String.h>
 #include <nova/nova_Nova_System.h>
 #include <nova/meta/nova_meta_Nova_Class.h>
+#include <nova/meta/nova_meta_Nova_FunctionMap.h>
 #include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <nova/datastruct/nova_datastruct_Nova_Tuple.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_List.h>
@@ -61,5 +63,18 @@ nova_Nova_Object* nova_datastruct_Nova_Tuple2_Mutator_Nova_item1(nova_datastruct
 nova_Nova_Object* nova_datastruct_Nova_Tuple2_Accessor_Nova_item2(nova_datastruct_Nova_Tuple2* this, nova_exception_Nova_ExceptionData* exceptionData);
 nova_Nova_Object* nova_datastruct_Nova_Tuple2_Mutator_Nova_item2(nova_datastruct_Nova_Tuple2* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_Object* value);
 void nova_datastruct_Nova_Tuple2_Nova_super(nova_datastruct_Nova_Tuple2* this, nova_exception_Nova_ExceptionData* exceptionData);
+
+CCLASS_CLASS
+(
+	nova_datastruct_Nova_nova_datastruct_Tuple2FunctionMap, 
+	
+	nova_datastruct_Tuple2_nova_datastruct_Tuple2FunctionMap_Extension_VTable* vtable;
+)
+
+void nova_datastruct_Nova_nova_datastruct_Tuple2FunctionMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData);
+nova_datastruct_Nova_nova_datastruct_Tuple2FunctionMap* nova_datastruct_Nova_nova_datastruct_Tuple2FunctionMap_Nova_construct(nova_datastruct_Nova_nova_datastruct_Tuple2FunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+void nova_datastruct_Nova_nova_datastruct_Tuple2FunctionMap_Nova_destroy(nova_datastruct_Nova_nova_datastruct_Tuple2FunctionMap** this, nova_exception_Nova_ExceptionData* exceptionData);
+void nova_datastruct_Nova_nova_datastruct_Tuple2FunctionMap_Nova_this(nova_datastruct_Nova_nova_datastruct_Tuple2FunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+void nova_datastruct_Nova_nova_datastruct_Tuple2FunctionMap_Nova_super(nova_datastruct_Nova_nova_datastruct_Tuple2FunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
 
 #endif

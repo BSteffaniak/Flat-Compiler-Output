@@ -27,6 +27,7 @@
 #include <nova/nova_Nova_String.h>
 #include <nova/nova_Nova_System.h>
 #include <nova/meta/nova_meta_Nova_Class.h>
+#include <nova/meta/nova_meta_Nova_FunctionMap.h>
 #include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <nova/NativeObject.h>
 #include <nova/operators/nova_operators_Nova_EqualsOperator.h>
@@ -76,5 +77,45 @@ void nova_network_Nova_Socket_Nova_super(nova_network_Nova_Socket* this, nova_ex
 {
 	this->nova_network_Nova_Socket_Nova_ip = (nova_Nova_String*)nova_null;
 	this->nova_network_Nova_Socket_Nova_port = 0;
+}
+
+void nova_network_Nova_nova_network_SocketFunctionMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData)
+{
+	{
+	}
+}
+
+nova_network_Nova_nova_network_SocketFunctionMap* nova_network_Nova_nova_network_SocketFunctionMap_Nova_construct(nova_network_Nova_nova_network_SocketFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+	CCLASS_NEW(nova_network_Nova_nova_network_SocketFunctionMap, this,);
+	this->vtable = &nova_network_Socket_nova_network_SocketFunctionMap_Extension_VTable_val;
+	nova_Nova_Object_Nova_super((nova_Nova_Object*)this, exceptionData);
+	nova_meta_Nova_FunctionMap_Nova_super((nova_meta_Nova_FunctionMap*)this, exceptionData);
+	nova_network_Nova_nova_network_SocketFunctionMap_Nova_super(this, exceptionData);
+	
+	{
+		nova_network_Nova_nova_network_SocketFunctionMap_Nova_this(this, exceptionData);
+	}
+	
+	return this;
+}
+
+void nova_network_Nova_nova_network_SocketFunctionMap_Nova_destroy(nova_network_Nova_nova_network_SocketFunctionMap** this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+	if (!*this)
+	{
+		return;
+	}
+	
+	
+	NOVA_FREE(*this);
+}
+
+void nova_network_Nova_nova_network_SocketFunctionMap_Nova_this(nova_network_Nova_nova_network_SocketFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+}
+
+void nova_network_Nova_nova_network_SocketFunctionMap_Nova_super(nova_network_Nova_nova_network_SocketFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+{
 }
 

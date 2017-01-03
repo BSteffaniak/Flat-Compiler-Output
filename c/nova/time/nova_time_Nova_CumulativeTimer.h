@@ -2,6 +2,7 @@
 #define FILE_nova_time_Nova_CumulativeTimer_NOVA
 
 typedef struct nova_time_Nova_CumulativeTimer nova_time_Nova_CumulativeTimer;
+typedef struct nova_time_Nova_nova_time_CumulativeTimerFunctionMap nova_time_Nova_nova_time_CumulativeTimerFunctionMap;
 
 
 #include <Nova.h>
@@ -36,6 +37,7 @@ typedef struct nova_time_Nova_CumulativeTimer nova_time_Nova_CumulativeTimer;
 #include <nova/nova_Nova_String.h>
 #include <nova/nova_Nova_System.h>
 #include <nova/meta/nova_meta_Nova_Class.h>
+#include <nova/meta/nova_meta_Nova_FunctionMap.h>
 #include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <nova/time/nova_time_Nova_Timer.h>
 #include <nova/time/nova_time_Nova_Time.h>
@@ -61,5 +63,18 @@ nova_time_Nova_CumulativeTimer* nova_time_Nova_CumulativeTimer_Nova_stop(nova_ti
 long_long nova_time_Nova_CumulativeTimer_Accessorfunc_Nova_duration(nova_time_Nova_CumulativeTimer* this, nova_exception_Nova_ExceptionData* exceptionData);
 long_long nova_time_Nova_CumulativeTimer_Mutatorfunc_Nova_duration(nova_time_Nova_CumulativeTimer* this, nova_exception_Nova_ExceptionData* exceptionData, long_long value);
 void nova_time_Nova_CumulativeTimer_Nova_super(nova_time_Nova_CumulativeTimer* this, nova_exception_Nova_ExceptionData* exceptionData);
+
+CCLASS_CLASS
+(
+	nova_time_Nova_nova_time_CumulativeTimerFunctionMap, 
+	
+	nova_time_CumulativeTimer_nova_time_CumulativeTimerFunctionMap_Extension_VTable* vtable;
+)
+
+void nova_time_Nova_nova_time_CumulativeTimerFunctionMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData);
+nova_time_Nova_nova_time_CumulativeTimerFunctionMap* nova_time_Nova_nova_time_CumulativeTimerFunctionMap_Nova_construct(nova_time_Nova_nova_time_CumulativeTimerFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+void nova_time_Nova_nova_time_CumulativeTimerFunctionMap_Nova_destroy(nova_time_Nova_nova_time_CumulativeTimerFunctionMap** this, nova_exception_Nova_ExceptionData* exceptionData);
+void nova_time_Nova_nova_time_CumulativeTimerFunctionMap_Nova_this(nova_time_Nova_nova_time_CumulativeTimerFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+void nova_time_Nova_nova_time_CumulativeTimerFunctionMap_Nova_super(nova_time_Nova_nova_time_CumulativeTimerFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
 
 #endif

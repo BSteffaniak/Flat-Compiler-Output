@@ -27,6 +27,7 @@
 #include <nova/nova_Nova_String.h>
 #include <nova/nova_Nova_System.h>
 #include <nova/meta/nova_meta_Nova_Class.h>
+#include <nova/meta/nova_meta_Nova_FunctionMap.h>
 #include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <stabilitytest/stabilitytest_Nova_StabilityTest.h>
 #include <stabilitytest/stabilitytest_Nova_StabilityTestCase.h>
@@ -189,5 +190,45 @@ int stabilitytest_Nova_ClosureStability_static_Nova_pow(stabilitytest_Nova_Closu
 void stabilitytest_Nova_ClosureStability_Nova_super(stabilitytest_Nova_ClosureStability* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
 	this->prv->stabilitytest_Nova_ClosureStability_Nova_number = 0;
+}
+
+void stabilitytest_Nova_stabilitytest_ClosureStabilityFunctionMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData)
+{
+	{
+	}
+}
+
+stabilitytest_Nova_stabilitytest_ClosureStabilityFunctionMap* stabilitytest_Nova_stabilitytest_ClosureStabilityFunctionMap_Nova_construct(stabilitytest_Nova_stabilitytest_ClosureStabilityFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+	CCLASS_NEW(stabilitytest_Nova_stabilitytest_ClosureStabilityFunctionMap, this,);
+	this->vtable = &stabilitytest_ClosureStability_stabilitytest_ClosureStabilityFunctionMap_Extension_VTable_val;
+	nova_Nova_Object_Nova_super((nova_Nova_Object*)this, exceptionData);
+	nova_meta_Nova_FunctionMap_Nova_super((nova_meta_Nova_FunctionMap*)this, exceptionData);
+	stabilitytest_Nova_stabilitytest_ClosureStabilityFunctionMap_Nova_super(this, exceptionData);
+	
+	{
+		stabilitytest_Nova_stabilitytest_ClosureStabilityFunctionMap_Nova_this(this, exceptionData);
+	}
+	
+	return this;
+}
+
+void stabilitytest_Nova_stabilitytest_ClosureStabilityFunctionMap_Nova_destroy(stabilitytest_Nova_stabilitytest_ClosureStabilityFunctionMap** this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+	if (!*this)
+	{
+		return;
+	}
+	
+	
+	NOVA_FREE(*this);
+}
+
+void stabilitytest_Nova_stabilitytest_ClosureStabilityFunctionMap_Nova_this(stabilitytest_Nova_stabilitytest_ClosureStabilityFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+}
+
+void stabilitytest_Nova_stabilitytest_ClosureStabilityFunctionMap_Nova_super(stabilitytest_Nova_stabilitytest_ClosureStabilityFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+{
 }
 

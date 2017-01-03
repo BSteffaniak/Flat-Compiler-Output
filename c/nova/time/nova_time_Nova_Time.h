@@ -2,6 +2,7 @@
 #define FILE_nova_time_Nova_Time_NOVA
 
 typedef struct nova_time_Nova_Time nova_time_Nova_Time;
+typedef struct nova_time_Nova_nova_time_TimeFunctionMap nova_time_Nova_nova_time_TimeFunctionMap;
 
 
 #include <Nova.h>
@@ -36,6 +37,7 @@ typedef struct nova_time_Nova_Time nova_time_Nova_Time;
 #include <nova/nova_Nova_String.h>
 #include <nova/nova_Nova_System.h>
 #include <nova/meta/nova_meta_Nova_Class.h>
+#include <nova/meta/nova_meta_Nova_FunctionMap.h>
 #include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <nova/time/NativeTime.h>
 #include <nova/NativeObject.h>
@@ -54,5 +56,18 @@ void nova_time_Nova_Time_Nova_destroy(nova_time_Nova_Time** this, nova_exception
 void nova_time_Nova_Time_Nova_this(nova_time_Nova_Time* this, nova_exception_Nova_ExceptionData* exceptionData);
 long_long nova_time_Nova_Time_Accessor_static_Nova_currentTimeMillis(nova_time_Nova_Time* this, nova_exception_Nova_ExceptionData* exceptionData);
 void nova_time_Nova_Time_Nova_super(nova_time_Nova_Time* this, nova_exception_Nova_ExceptionData* exceptionData);
+
+CCLASS_CLASS
+(
+	nova_time_Nova_nova_time_TimeFunctionMap, 
+	
+	nova_time_Time_nova_time_TimeFunctionMap_Extension_VTable* vtable;
+)
+
+void nova_time_Nova_nova_time_TimeFunctionMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData);
+nova_time_Nova_nova_time_TimeFunctionMap* nova_time_Nova_nova_time_TimeFunctionMap_Nova_construct(nova_time_Nova_nova_time_TimeFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+void nova_time_Nova_nova_time_TimeFunctionMap_Nova_destroy(nova_time_Nova_nova_time_TimeFunctionMap** this, nova_exception_Nova_ExceptionData* exceptionData);
+void nova_time_Nova_nova_time_TimeFunctionMap_Nova_this(nova_time_Nova_nova_time_TimeFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+void nova_time_Nova_nova_time_TimeFunctionMap_Nova_super(nova_time_Nova_nova_time_TimeFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
 
 #endif

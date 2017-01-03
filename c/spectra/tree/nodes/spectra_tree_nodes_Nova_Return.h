@@ -2,6 +2,7 @@
 #define FILE_spectra_tree_nodes_Nova_Return_NOVA
 
 typedef struct spectra_tree_nodes_Nova_Return spectra_tree_nodes_Nova_Return;
+typedef struct spectra_tree_nodes_Nova_spectra_tree_nodes_ReturnFunctionMap spectra_tree_nodes_Nova_spectra_tree_nodes_ReturnFunctionMap;
 
 
 #include <Nova.h>
@@ -36,6 +37,7 @@ typedef struct spectra_tree_nodes_Nova_Return spectra_tree_nodes_Nova_Return;
 #include <nova/nova_Nova_String.h>
 #include <nova/nova_Nova_System.h>
 #include <nova/meta/nova_meta_Nova_Class.h>
+#include <nova/meta/nova_meta_Nova_FunctionMap.h>
 #include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <spectra/spectra_Nova_InvalidParseException.h>
 #include <spectra/util/spectra_util_Nova_Location.h>
@@ -80,5 +82,18 @@ spectra_tree_nodes_Nova_Return* spectra_tree_nodes_Nova_Return_static_Nova_parse
 nova_Nova_String* spectra_tree_nodes_Nova_Return_Nova_writeValue(spectra_tree_nodes_Nova_Return* this, nova_exception_Nova_ExceptionData* exceptionData);
 nova_Nova_String* spectra_tree_nodes_Nova_Return_Nova_writeNova(spectra_tree_nodes_Nova_Return* this, nova_exception_Nova_ExceptionData* exceptionData);
 void spectra_tree_nodes_Nova_Return_Nova_super(spectra_tree_nodes_Nova_Return* this, nova_exception_Nova_ExceptionData* exceptionData);
+
+CCLASS_CLASS
+(
+	spectra_tree_nodes_Nova_spectra_tree_nodes_ReturnFunctionMap, 
+	
+	spectra_tree_nodes_Return_spectra_tree_nodes_ReturnFunctionMap_Extension_VTable* vtable;
+)
+
+void spectra_tree_nodes_Nova_spectra_tree_nodes_ReturnFunctionMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData);
+spectra_tree_nodes_Nova_spectra_tree_nodes_ReturnFunctionMap* spectra_tree_nodes_Nova_spectra_tree_nodes_ReturnFunctionMap_Nova_construct(spectra_tree_nodes_Nova_spectra_tree_nodes_ReturnFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+void spectra_tree_nodes_Nova_spectra_tree_nodes_ReturnFunctionMap_Nova_destroy(spectra_tree_nodes_Nova_spectra_tree_nodes_ReturnFunctionMap** this, nova_exception_Nova_ExceptionData* exceptionData);
+void spectra_tree_nodes_Nova_spectra_tree_nodes_ReturnFunctionMap_Nova_this(spectra_tree_nodes_Nova_spectra_tree_nodes_ReturnFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+void spectra_tree_nodes_Nova_spectra_tree_nodes_ReturnFunctionMap_Nova_super(spectra_tree_nodes_Nova_spectra_tree_nodes_ReturnFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
 
 #endif

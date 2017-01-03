@@ -2,6 +2,7 @@
 #define FILE_nova_network_Nova_NetworkInputStream_NOVA
 
 typedef struct nova_network_Nova_NetworkInputStream nova_network_Nova_NetworkInputStream;
+typedef struct nova_network_Nova_nova_network_NetworkInputStreamFunctionMap nova_network_Nova_nova_network_NetworkInputStreamFunctionMap;
 
 
 #include <Nova.h>
@@ -36,10 +37,13 @@ typedef struct nova_network_Nova_NetworkInputStream nova_network_Nova_NetworkInp
 #include <nova/nova_Nova_String.h>
 #include <nova/nova_Nova_System.h>
 #include <nova/meta/nova_meta_Nova_Class.h>
+#include <nova/meta/nova_meta_Nova_FunctionMap.h>
 #include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <nova/network/NativeSocket.h>
 #include <nova/io/nova_io_Nova_InputStream.h>
 #include <nova/network/nova_network_Nova_ConnectionSocket.h>
+#include <nova/NativeObject.h>
+#include <nova/operators/nova_operators_Nova_EqualsOperator.h>
 
 CCLASS_CLASS
 (
@@ -56,5 +60,18 @@ void nova_network_Nova_NetworkInputStream_Nova_this(nova_network_Nova_NetworkInp
 nova_Nova_String* nova_network_Nova_NetworkInputStream_Nova_readString(nova_network_Nova_NetworkInputStream* this, nova_exception_Nova_ExceptionData* exceptionData);
 nova_datastruct_list_Nova_Array* nova_network_Nova_NetworkInputStream_Nova_readBytes(nova_network_Nova_NetworkInputStream* this, nova_exception_Nova_ExceptionData* exceptionData);
 void nova_network_Nova_NetworkInputStream_Nova_super(nova_network_Nova_NetworkInputStream* this, nova_exception_Nova_ExceptionData* exceptionData);
+
+CCLASS_CLASS
+(
+	nova_network_Nova_nova_network_NetworkInputStreamFunctionMap, 
+	
+	nova_network_NetworkInputStream_nova_network_NetworkInputStreamFunctionMap_Extension_VTable* vtable;
+)
+
+void nova_network_Nova_nova_network_NetworkInputStreamFunctionMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData);
+nova_network_Nova_nova_network_NetworkInputStreamFunctionMap* nova_network_Nova_nova_network_NetworkInputStreamFunctionMap_Nova_construct(nova_network_Nova_nova_network_NetworkInputStreamFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+void nova_network_Nova_nova_network_NetworkInputStreamFunctionMap_Nova_destroy(nova_network_Nova_nova_network_NetworkInputStreamFunctionMap** this, nova_exception_Nova_ExceptionData* exceptionData);
+void nova_network_Nova_nova_network_NetworkInputStreamFunctionMap_Nova_this(nova_network_Nova_nova_network_NetworkInputStreamFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+void nova_network_Nova_nova_network_NetworkInputStreamFunctionMap_Nova_super(nova_network_Nova_nova_network_NetworkInputStreamFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
 
 #endif

@@ -2,6 +2,7 @@
 #define FILE_example_database_Nova_DatabaseDemo_NOVA
 
 typedef struct example_database_Nova_DatabaseDemo example_database_Nova_DatabaseDemo;
+typedef struct example_database_Nova_example_database_DatabaseDemoFunctionMap example_database_Nova_example_database_DatabaseDemoFunctionMap;
 
 
 #include <Nova.h>
@@ -36,6 +37,7 @@ typedef struct example_database_Nova_DatabaseDemo example_database_Nova_Database
 #include <nova/nova_Nova_String.h>
 #include <nova/nova_Nova_System.h>
 #include <nova/meta/nova_meta_Nova_Class.h>
+#include <nova/meta/nova_meta_Nova_FunctionMap.h>
 #include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <nova/database/nova_database_Nova_DBConnector.h>
 #include <nova/database/nova_database_Nova_ResultSet.h>
@@ -55,5 +57,18 @@ void example_database_Nova_DatabaseDemo_Nova_destroy(example_database_Nova_Datab
 void example_database_Nova_DatabaseDemo_static_Nova_main(example_database_Nova_DatabaseDemo* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_list_Nova_Array* args);
 void example_database_Nova_DatabaseDemo_Nova_this(example_database_Nova_DatabaseDemo* this, nova_exception_Nova_ExceptionData* exceptionData);
 void example_database_Nova_DatabaseDemo_Nova_super(example_database_Nova_DatabaseDemo* this, nova_exception_Nova_ExceptionData* exceptionData);
+
+CCLASS_CLASS
+(
+	example_database_Nova_example_database_DatabaseDemoFunctionMap, 
+	
+	example_database_DatabaseDemo_example_database_DatabaseDemoFunctionMap_Extension_VTable* vtable;
+)
+
+void example_database_Nova_example_database_DatabaseDemoFunctionMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData);
+example_database_Nova_example_database_DatabaseDemoFunctionMap* example_database_Nova_example_database_DatabaseDemoFunctionMap_Nova_construct(example_database_Nova_example_database_DatabaseDemoFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+void example_database_Nova_example_database_DatabaseDemoFunctionMap_Nova_destroy(example_database_Nova_example_database_DatabaseDemoFunctionMap** this, nova_exception_Nova_ExceptionData* exceptionData);
+void example_database_Nova_example_database_DatabaseDemoFunctionMap_Nova_this(example_database_Nova_example_database_DatabaseDemoFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+void example_database_Nova_example_database_DatabaseDemoFunctionMap_Nova_super(example_database_Nova_example_database_DatabaseDemoFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
 
 #endif

@@ -2,6 +2,7 @@
 #define FILE_nova_math_logic_Nova_Conclusion_NOVA
 
 typedef struct nova_math_logic_Nova_Conclusion nova_math_logic_Nova_Conclusion;
+typedef struct nova_math_logic_Nova_nova_math_logic_ConclusionFunctionMap nova_math_logic_Nova_nova_math_logic_ConclusionFunctionMap;
 
 
 #include <Nova.h>
@@ -36,6 +37,7 @@ typedef struct nova_math_logic_Nova_Conclusion nova_math_logic_Nova_Conclusion;
 #include <nova/nova_Nova_String.h>
 #include <nova/nova_Nova_System.h>
 #include <nova/meta/nova_meta_Nova_Class.h>
+#include <nova/meta/nova_meta_Nova_FunctionMap.h>
 #include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <nova/math/logic/nova_math_logic_Nova_LogicalStatement.h>
 #include <nova/math/nova_math_Nova_Statement.h>
@@ -56,5 +58,18 @@ nova_math_logic_Nova_Conclusion* nova_math_logic_Nova_Conclusion_Nova_construct(
 void nova_math_logic_Nova_Conclusion_Nova_destroy(nova_math_logic_Nova_Conclusion** this, nova_exception_Nova_ExceptionData* exceptionData);
 void nova_math_logic_Nova_Conclusion_Nova_this(nova_math_logic_Nova_Conclusion* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* statement);
 void nova_math_logic_Nova_Conclusion_Nova_super(nova_math_logic_Nova_Conclusion* this, nova_exception_Nova_ExceptionData* exceptionData);
+
+CCLASS_CLASS
+(
+	nova_math_logic_Nova_nova_math_logic_ConclusionFunctionMap, 
+	
+	nova_math_logic_Conclusion_nova_math_logic_ConclusionFunctionMap_Extension_VTable* vtable;
+)
+
+void nova_math_logic_Nova_nova_math_logic_ConclusionFunctionMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData);
+nova_math_logic_Nova_nova_math_logic_ConclusionFunctionMap* nova_math_logic_Nova_nova_math_logic_ConclusionFunctionMap_Nova_construct(nova_math_logic_Nova_nova_math_logic_ConclusionFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+void nova_math_logic_Nova_nova_math_logic_ConclusionFunctionMap_Nova_destroy(nova_math_logic_Nova_nova_math_logic_ConclusionFunctionMap** this, nova_exception_Nova_ExceptionData* exceptionData);
+void nova_math_logic_Nova_nova_math_logic_ConclusionFunctionMap_Nova_this(nova_math_logic_Nova_nova_math_logic_ConclusionFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+void nova_math_logic_Nova_nova_math_logic_ConclusionFunctionMap_Nova_super(nova_math_logic_Nova_nova_math_logic_ConclusionFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
 
 #endif

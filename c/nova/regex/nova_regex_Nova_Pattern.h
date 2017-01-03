@@ -2,6 +2,7 @@
 #define FILE_nova_regex_Nova_Pattern_NOVA
 
 typedef struct nova_regex_Nova_Pattern nova_regex_Nova_Pattern;
+typedef struct nova_regex_Nova_nova_regex_PatternFunctionMap nova_regex_Nova_nova_regex_PatternFunctionMap;
 
 
 #include <Nova.h>
@@ -36,6 +37,7 @@ typedef struct nova_regex_Nova_Pattern nova_regex_Nova_Pattern;
 #include <nova/nova_Nova_String.h>
 #include <nova/nova_Nova_System.h>
 #include <nova/meta/nova_meta_Nova_Class.h>
+#include <nova/meta/nova_meta_Nova_FunctionMap.h>
 #include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <nova/NativeObject.h>
 #include <nova/operators/nova_operators_Nova_EqualsOperator.h>
@@ -53,5 +55,18 @@ nova_regex_Nova_Pattern* nova_regex_Nova_Pattern_Nova_construct(nova_regex_Nova_
 void nova_regex_Nova_Pattern_Nova_destroy(nova_regex_Nova_Pattern** this, nova_exception_Nova_ExceptionData* exceptionData);
 void nova_regex_Nova_Pattern_Nova_this(nova_regex_Nova_Pattern* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* pattern);
 void nova_regex_Nova_Pattern_Nova_super(nova_regex_Nova_Pattern* this, nova_exception_Nova_ExceptionData* exceptionData);
+
+CCLASS_CLASS
+(
+	nova_regex_Nova_nova_regex_PatternFunctionMap, 
+	
+	nova_regex_Pattern_nova_regex_PatternFunctionMap_Extension_VTable* vtable;
+)
+
+void nova_regex_Nova_nova_regex_PatternFunctionMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData);
+nova_regex_Nova_nova_regex_PatternFunctionMap* nova_regex_Nova_nova_regex_PatternFunctionMap_Nova_construct(nova_regex_Nova_nova_regex_PatternFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+void nova_regex_Nova_nova_regex_PatternFunctionMap_Nova_destroy(nova_regex_Nova_nova_regex_PatternFunctionMap** this, nova_exception_Nova_ExceptionData* exceptionData);
+void nova_regex_Nova_nova_regex_PatternFunctionMap_Nova_this(nova_regex_Nova_nova_regex_PatternFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+void nova_regex_Nova_nova_regex_PatternFunctionMap_Nova_super(nova_regex_Nova_nova_regex_PatternFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
 
 #endif

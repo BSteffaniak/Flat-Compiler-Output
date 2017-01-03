@@ -27,6 +27,7 @@
 #include <nova/nova_Nova_String.h>
 #include <nova/nova_Nova_System.h>
 #include <nova/meta/nova_meta_Nova_Class.h>
+#include <nova/meta/nova_meta_Nova_FunctionMap.h>
 #include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <nova/NativeObject.h>
 #include <nova/operators/nova_operators_Nova_EqualsOperator.h>
@@ -71,6 +72,46 @@ void spectra_error_Nova_UnimplementedOperationException_Nova_this(spectra_error_
 }
 
 void spectra_error_Nova_UnimplementedOperationException_Nova_super(spectra_error_Nova_UnimplementedOperationException* this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+}
+
+void spectra_error_Nova_spectra_error_UnimplementedOperationExceptionFunctionMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData)
+{
+	{
+	}
+}
+
+spectra_error_Nova_spectra_error_UnimplementedOperationExceptionFunctionMap* spectra_error_Nova_spectra_error_UnimplementedOperationExceptionFunctionMap_Nova_construct(spectra_error_Nova_spectra_error_UnimplementedOperationExceptionFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+	CCLASS_NEW(spectra_error_Nova_spectra_error_UnimplementedOperationExceptionFunctionMap, this,);
+	this->vtable = &spectra_error_UnimplementedOperationException_spectra_error_UnimplementedOperationExceptionFunctionMap_Extension_VTable_val;
+	nova_Nova_Object_Nova_super((nova_Nova_Object*)this, exceptionData);
+	nova_meta_Nova_FunctionMap_Nova_super((nova_meta_Nova_FunctionMap*)this, exceptionData);
+	spectra_error_Nova_spectra_error_UnimplementedOperationExceptionFunctionMap_Nova_super(this, exceptionData);
+	
+	{
+		spectra_error_Nova_spectra_error_UnimplementedOperationExceptionFunctionMap_Nova_this(this, exceptionData);
+	}
+	
+	return this;
+}
+
+void spectra_error_Nova_spectra_error_UnimplementedOperationExceptionFunctionMap_Nova_destroy(spectra_error_Nova_spectra_error_UnimplementedOperationExceptionFunctionMap** this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+	if (!*this)
+	{
+		return;
+	}
+	
+	
+	NOVA_FREE(*this);
+}
+
+void spectra_error_Nova_spectra_error_UnimplementedOperationExceptionFunctionMap_Nova_this(spectra_error_Nova_spectra_error_UnimplementedOperationExceptionFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+}
+
+void spectra_error_Nova_spectra_error_UnimplementedOperationExceptionFunctionMap_Nova_super(spectra_error_Nova_spectra_error_UnimplementedOperationExceptionFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
 }
 

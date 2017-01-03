@@ -2,6 +2,7 @@
 #define FILE_example_network_Nova_OutputThread_NOVA
 
 typedef struct example_network_Nova_OutputThread example_network_Nova_OutputThread;
+typedef struct example_network_Nova_example_network_OutputThreadFunctionMap example_network_Nova_example_network_OutputThreadFunctionMap;
 
 
 #include <Nova.h>
@@ -36,6 +37,7 @@ typedef struct example_network_Nova_OutputThread example_network_Nova_OutputThre
 #include <nova/nova_Nova_String.h>
 #include <nova/nova_Nova_System.h>
 #include <nova/meta/nova_meta_Nova_Class.h>
+#include <nova/meta/nova_meta_Nova_FunctionMap.h>
 #include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <nova/network/nova_network_Nova_ConnectionSocket.h>
 #include <nova/network/nova_network_Nova_ServerSocket.h>
@@ -58,5 +60,18 @@ void example_network_Nova_OutputThread_Nova_destroy(example_network_Nova_OutputT
 void example_network_Nova_OutputThread_Nova_this(example_network_Nova_OutputThread* this, nova_exception_Nova_ExceptionData* exceptionData, nova_network_Nova_ServerSocket* serverSocket, nova_network_Nova_ConnectionSocket* socket);
 void example_network_Nova_OutputThread_Nova_run(example_network_Nova_OutputThread* this, nova_exception_Nova_ExceptionData* exceptionData);
 void example_network_Nova_OutputThread_Nova_super(example_network_Nova_OutputThread* this, nova_exception_Nova_ExceptionData* exceptionData);
+
+CCLASS_CLASS
+(
+	example_network_Nova_example_network_OutputThreadFunctionMap, 
+	
+	example_network_OutputThread_example_network_OutputThreadFunctionMap_Extension_VTable* vtable;
+)
+
+void example_network_Nova_example_network_OutputThreadFunctionMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData);
+example_network_Nova_example_network_OutputThreadFunctionMap* example_network_Nova_example_network_OutputThreadFunctionMap_Nova_construct(example_network_Nova_example_network_OutputThreadFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+void example_network_Nova_example_network_OutputThreadFunctionMap_Nova_destroy(example_network_Nova_example_network_OutputThreadFunctionMap** this, nova_exception_Nova_ExceptionData* exceptionData);
+void example_network_Nova_example_network_OutputThreadFunctionMap_Nova_this(example_network_Nova_example_network_OutputThreadFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+void example_network_Nova_example_network_OutputThreadFunctionMap_Nova_super(example_network_Nova_example_network_OutputThreadFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
 
 #endif

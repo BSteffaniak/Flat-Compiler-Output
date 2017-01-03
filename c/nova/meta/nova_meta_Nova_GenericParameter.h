@@ -2,6 +2,7 @@
 #define FILE_nova_meta_Nova_GenericParameter_NOVA
 
 typedef struct nova_meta_Nova_GenericParameter nova_meta_Nova_GenericParameter;
+typedef struct nova_meta_Nova_nova_meta_GenericParameterFunctionMap nova_meta_Nova_nova_meta_GenericParameterFunctionMap;
 
 
 #include <Nova.h>
@@ -36,6 +37,7 @@ typedef struct nova_meta_Nova_GenericParameter nova_meta_Nova_GenericParameter;
 #include <nova/nova_Nova_String.h>
 #include <nova/nova_Nova_System.h>
 #include <nova/meta/nova_meta_Nova_Class.h>
+#include <nova/meta/nova_meta_Nova_FunctionMap.h>
 #include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <nova/meta/nova_meta_Nova_Type.h>
 #include <nova/NativeObject.h>
@@ -55,5 +57,18 @@ nova_meta_Nova_GenericParameter* nova_meta_Nova_GenericParameter_Nova_construct(
 void nova_meta_Nova_GenericParameter_Nova_destroy(nova_meta_Nova_GenericParameter** this, nova_exception_Nova_ExceptionData* exceptionData);
 void nova_meta_Nova_GenericParameter_Nova_this(nova_meta_Nova_GenericParameter* this, nova_exception_Nova_ExceptionData* exceptionData, nova_meta_Nova_Type* value, nova_meta_Nova_Type* defaultValue);
 void nova_meta_Nova_GenericParameter_Nova_super(nova_meta_Nova_GenericParameter* this, nova_exception_Nova_ExceptionData* exceptionData);
+
+CCLASS_CLASS
+(
+	nova_meta_Nova_nova_meta_GenericParameterFunctionMap, 
+	
+	nova_meta_GenericParameter_nova_meta_GenericParameterFunctionMap_Extension_VTable* vtable;
+)
+
+void nova_meta_Nova_nova_meta_GenericParameterFunctionMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData);
+nova_meta_Nova_nova_meta_GenericParameterFunctionMap* nova_meta_Nova_nova_meta_GenericParameterFunctionMap_Nova_construct(nova_meta_Nova_nova_meta_GenericParameterFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+void nova_meta_Nova_nova_meta_GenericParameterFunctionMap_Nova_destroy(nova_meta_Nova_nova_meta_GenericParameterFunctionMap** this, nova_exception_Nova_ExceptionData* exceptionData);
+void nova_meta_Nova_nova_meta_GenericParameterFunctionMap_Nova_this(nova_meta_Nova_nova_meta_GenericParameterFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+void nova_meta_Nova_nova_meta_GenericParameterFunctionMap_Nova_super(nova_meta_Nova_nova_meta_GenericParameterFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
 
 #endif

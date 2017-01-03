@@ -2,6 +2,7 @@
 #define FILE_nova_Nova_System_NOVA
 
 typedef struct nova_Nova_System nova_Nova_System;
+typedef struct nova_Nova_nova_SystemFunctionMap nova_Nova_nova_SystemFunctionMap;
 
 
 #include <Nova.h>
@@ -36,6 +37,7 @@ typedef struct nova_Nova_System nova_Nova_System;
 #include <nova/nova_Nova_String.h>
 #include <nova/nova_Nova_System.h>
 #include <nova/meta/nova_meta_Nova_Class.h>
+#include <nova/meta/nova_meta_Nova_FunctionMap.h>
 #include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <nova/io/nova_io_Nova_FileWriter.h>
 #include <nova/io/nova_io_Nova_FileReader.h>
@@ -63,5 +65,18 @@ void nova_Nova_System_2_static_Nova_exit(nova_Nova_System* this, nova_exception_
 nova_process_Nova_Process* nova_Nova_System_static_Nova_execute(nova_Nova_System* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* command);
 void nova_Nova_System_Nova_this(nova_Nova_System* this, nova_exception_Nova_ExceptionData* exceptionData);
 void nova_Nova_System_Nova_super(nova_Nova_System* this, nova_exception_Nova_ExceptionData* exceptionData);
+
+CCLASS_CLASS
+(
+	nova_Nova_nova_SystemFunctionMap, 
+	
+	nova_System_nova_SystemFunctionMap_Extension_VTable* vtable;
+)
+
+void nova_Nova_nova_SystemFunctionMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData);
+nova_Nova_nova_SystemFunctionMap* nova_Nova_nova_SystemFunctionMap_Nova_construct(nova_Nova_nova_SystemFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+void nova_Nova_nova_SystemFunctionMap_Nova_destroy(nova_Nova_nova_SystemFunctionMap** this, nova_exception_Nova_ExceptionData* exceptionData);
+void nova_Nova_nova_SystemFunctionMap_Nova_this(nova_Nova_nova_SystemFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+void nova_Nova_nova_SystemFunctionMap_Nova_super(nova_Nova_nova_SystemFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
 
 #endif

@@ -27,6 +27,7 @@
 #include <nova/nova_Nova_String.h>
 #include <nova/nova_Nova_System.h>
 #include <nova/meta/nova_meta_Nova_Class.h>
+#include <nova/meta/nova_meta_Nova_FunctionMap.h>
 #include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <nova/meta/nova_meta_Nova_Type.h>
 #include <nova/NativeObject.h>
@@ -74,5 +75,45 @@ void nova_meta_Nova_GenericArgument_Nova_this(nova_meta_Nova_GenericArgument* th
 void nova_meta_Nova_GenericArgument_Nova_super(nova_meta_Nova_GenericArgument* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
 	this->nova_meta_Nova_GenericArgument_Nova_value = (nova_meta_Nova_Type*)nova_null;
+}
+
+void nova_meta_Nova_nova_meta_GenericArgumentFunctionMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData)
+{
+	{
+	}
+}
+
+nova_meta_Nova_nova_meta_GenericArgumentFunctionMap* nova_meta_Nova_nova_meta_GenericArgumentFunctionMap_Nova_construct(nova_meta_Nova_nova_meta_GenericArgumentFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+	CCLASS_NEW(nova_meta_Nova_nova_meta_GenericArgumentFunctionMap, this,);
+	this->vtable = &nova_meta_GenericArgument_nova_meta_GenericArgumentFunctionMap_Extension_VTable_val;
+	nova_Nova_Object_Nova_super((nova_Nova_Object*)this, exceptionData);
+	nova_meta_Nova_FunctionMap_Nova_super((nova_meta_Nova_FunctionMap*)this, exceptionData);
+	nova_meta_Nova_nova_meta_GenericArgumentFunctionMap_Nova_super(this, exceptionData);
+	
+	{
+		nova_meta_Nova_nova_meta_GenericArgumentFunctionMap_Nova_this(this, exceptionData);
+	}
+	
+	return this;
+}
+
+void nova_meta_Nova_nova_meta_GenericArgumentFunctionMap_Nova_destroy(nova_meta_Nova_nova_meta_GenericArgumentFunctionMap** this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+	if (!*this)
+	{
+		return;
+	}
+	
+	
+	NOVA_FREE(*this);
+}
+
+void nova_meta_Nova_nova_meta_GenericArgumentFunctionMap_Nova_this(nova_meta_Nova_nova_meta_GenericArgumentFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+}
+
+void nova_meta_Nova_nova_meta_GenericArgumentFunctionMap_Nova_super(nova_meta_Nova_nova_meta_GenericArgumentFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+{
 }
 

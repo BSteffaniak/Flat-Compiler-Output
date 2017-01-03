@@ -27,6 +27,7 @@
 #include <nova/nova_Nova_String.h>
 #include <nova/nova_Nova_System.h>
 #include <nova/meta/nova_meta_Nova_Class.h>
+#include <nova/meta/nova_meta_Nova_FunctionMap.h>
 #include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <nova/datastruct/nova_datastruct_Nova_Comparable.h>
 #include <nova/primitive/number/nova_primitive_number_Nova_Integer.h>
@@ -104,5 +105,45 @@ nova_Nova_String* nova_primitive_number_Nova_Byte_static_Nova_toString(nova_prim
 void nova_primitive_number_Nova_Byte_Nova_super(nova_primitive_number_Nova_Byte* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
 	this->nova_primitive_number_Nova_Byte_Nova_value = 0;
+}
+
+void nova_primitive_number_Nova_nova_primitive_number_ByteFunctionMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData)
+{
+	{
+	}
+}
+
+nova_primitive_number_Nova_nova_primitive_number_ByteFunctionMap* nova_primitive_number_Nova_nova_primitive_number_ByteFunctionMap_Nova_construct(nova_primitive_number_Nova_nova_primitive_number_ByteFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+	CCLASS_NEW(nova_primitive_number_Nova_nova_primitive_number_ByteFunctionMap, this,);
+	this->vtable = &nova_primitive_number_Byte_nova_primitive_number_ByteFunctionMap_Extension_VTable_val;
+	nova_Nova_Object_Nova_super((nova_Nova_Object*)this, exceptionData);
+	nova_meta_Nova_FunctionMap_Nova_super((nova_meta_Nova_FunctionMap*)this, exceptionData);
+	nova_primitive_number_Nova_nova_primitive_number_ByteFunctionMap_Nova_super(this, exceptionData);
+	
+	{
+		nova_primitive_number_Nova_nova_primitive_number_ByteFunctionMap_Nova_this(this, exceptionData);
+	}
+	
+	return this;
+}
+
+void nova_primitive_number_Nova_nova_primitive_number_ByteFunctionMap_Nova_destroy(nova_primitive_number_Nova_nova_primitive_number_ByteFunctionMap** this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+	if (!*this)
+	{
+		return;
+	}
+	
+	
+	NOVA_FREE(*this);
+}
+
+void nova_primitive_number_Nova_nova_primitive_number_ByteFunctionMap_Nova_this(nova_primitive_number_Nova_nova_primitive_number_ByteFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+}
+
+void nova_primitive_number_Nova_nova_primitive_number_ByteFunctionMap_Nova_super(nova_primitive_number_Nova_nova_primitive_number_ByteFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+{
 }
 

@@ -2,6 +2,7 @@
 #define FILE_nova_web_svg_Nova_SvgComponentList_NOVA
 
 typedef struct nova_web_svg_Nova_SvgComponentList nova_web_svg_Nova_SvgComponentList;
+typedef struct nova_web_svg_Nova_nova_web_svg_SvgComponentListFunctionMap nova_web_svg_Nova_nova_web_svg_SvgComponentListFunctionMap;
 
 
 #include <Nova.h>
@@ -36,6 +37,7 @@ typedef struct nova_web_svg_Nova_SvgComponentList nova_web_svg_Nova_SvgComponent
 #include <nova/nova_Nova_String.h>
 #include <nova/nova_Nova_System.h>
 #include <nova/meta/nova_meta_Nova_Class.h>
+#include <nova/meta/nova_meta_Nova_FunctionMap.h>
 #include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <nova/io/nova_io_Nova_FileWriter.h>
 #include <nova/web/svg/nova_web_svg_Nova_SvgComponent.h>
@@ -58,5 +60,18 @@ void nova_web_svg_Nova_SvgComponentList_Nova_generateOutput(nova_web_svg_Nova_Sv
 void nova_web_svg_Nova_SvgComponentList_Nova_addChild(nova_web_svg_Nova_SvgComponentList* this, nova_exception_Nova_ExceptionData* exceptionData, nova_web_svg_Nova_SvgComponent* component);
 void nova_web_svg_Nova_SvgComponentList_Nova_this(nova_web_svg_Nova_SvgComponentList* this, nova_exception_Nova_ExceptionData* exceptionData);
 void nova_web_svg_Nova_SvgComponentList_Nova_super(nova_web_svg_Nova_SvgComponentList* this, nova_exception_Nova_ExceptionData* exceptionData);
+
+CCLASS_CLASS
+(
+	nova_web_svg_Nova_nova_web_svg_SvgComponentListFunctionMap, 
+	
+	nova_web_svg_SvgComponentList_nova_web_svg_SvgComponentListFunctionMap_Extension_VTable* vtable;
+)
+
+void nova_web_svg_Nova_nova_web_svg_SvgComponentListFunctionMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData);
+nova_web_svg_Nova_nova_web_svg_SvgComponentListFunctionMap* nova_web_svg_Nova_nova_web_svg_SvgComponentListFunctionMap_Nova_construct(nova_web_svg_Nova_nova_web_svg_SvgComponentListFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+void nova_web_svg_Nova_nova_web_svg_SvgComponentListFunctionMap_Nova_destroy(nova_web_svg_Nova_nova_web_svg_SvgComponentListFunctionMap** this, nova_exception_Nova_ExceptionData* exceptionData);
+void nova_web_svg_Nova_nova_web_svg_SvgComponentListFunctionMap_Nova_this(nova_web_svg_Nova_nova_web_svg_SvgComponentListFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+void nova_web_svg_Nova_nova_web_svg_SvgComponentListFunctionMap_Nova_super(nova_web_svg_Nova_nova_web_svg_SvgComponentListFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
 
 #endif

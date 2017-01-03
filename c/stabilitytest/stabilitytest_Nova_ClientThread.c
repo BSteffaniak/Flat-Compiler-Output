@@ -27,6 +27,7 @@
 #include <nova/nova_Nova_String.h>
 #include <nova/nova_Nova_System.h>
 #include <nova/meta/nova_meta_Nova_Class.h>
+#include <nova/meta/nova_meta_Nova_FunctionMap.h>
 #include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <nova/network/nova_network_Nova_ClientSocket.h>
 #include <stabilitytest/stabilitytest_Nova_NetworkStability.h>
@@ -116,5 +117,45 @@ void stabilitytest_Nova_ClientThread_Nova_super(stabilitytest_Nova_ClientThread*
 {
 	this->prv->stabilitytest_Nova_ClientThread_Nova_port = 0;
 	this->prv->stabilitytest_Nova_ClientThread_Nova_program = (stabilitytest_Nova_StabilityTest*)nova_null;
+}
+
+void stabilitytest_Nova_stabilitytest_ClientThreadFunctionMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData)
+{
+	{
+	}
+}
+
+stabilitytest_Nova_stabilitytest_ClientThreadFunctionMap* stabilitytest_Nova_stabilitytest_ClientThreadFunctionMap_Nova_construct(stabilitytest_Nova_stabilitytest_ClientThreadFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+	CCLASS_NEW(stabilitytest_Nova_stabilitytest_ClientThreadFunctionMap, this,);
+	this->vtable = &stabilitytest_ClientThread_stabilitytest_ClientThreadFunctionMap_Extension_VTable_val;
+	nova_Nova_Object_Nova_super((nova_Nova_Object*)this, exceptionData);
+	nova_meta_Nova_FunctionMap_Nova_super((nova_meta_Nova_FunctionMap*)this, exceptionData);
+	stabilitytest_Nova_stabilitytest_ClientThreadFunctionMap_Nova_super(this, exceptionData);
+	
+	{
+		stabilitytest_Nova_stabilitytest_ClientThreadFunctionMap_Nova_this(this, exceptionData);
+	}
+	
+	return this;
+}
+
+void stabilitytest_Nova_stabilitytest_ClientThreadFunctionMap_Nova_destroy(stabilitytest_Nova_stabilitytest_ClientThreadFunctionMap** this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+	if (!*this)
+	{
+		return;
+	}
+	
+	
+	NOVA_FREE(*this);
+}
+
+void stabilitytest_Nova_stabilitytest_ClientThreadFunctionMap_Nova_this(stabilitytest_Nova_stabilitytest_ClientThreadFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+}
+
+void stabilitytest_Nova_stabilitytest_ClientThreadFunctionMap_Nova_super(stabilitytest_Nova_stabilitytest_ClientThreadFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+{
 }
 

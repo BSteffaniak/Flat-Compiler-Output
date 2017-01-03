@@ -2,6 +2,7 @@
 #define FILE_stabilitytest_Nova_StabilityTest_NOVA
 
 typedef struct stabilitytest_Nova_StabilityTest stabilitytest_Nova_StabilityTest;
+typedef struct stabilitytest_Nova_stabilitytest_StabilityTestFunctionMap stabilitytest_Nova_stabilitytest_StabilityTestFunctionMap;
 
 
 #include <Nova.h>
@@ -36,6 +37,7 @@ typedef struct stabilitytest_Nova_StabilityTest stabilitytest_Nova_StabilityTest
 #include <nova/nova_Nova_String.h>
 #include <nova/nova_Nova_System.h>
 #include <nova/meta/nova_meta_Nova_Class.h>
+#include <nova/meta/nova_meta_Nova_FunctionMap.h>
 #include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <nova/time/nova_time_Nova_Timer.h>
 #include <stabilitytest/stabilitytest_Nova_AssignmentStability.h>
@@ -73,5 +75,18 @@ void stabilitytest_Nova_StabilityTest_Nova_this(stabilitytest_Nova_StabilityTest
 void stabilitytest_Nova_StabilityTest_Nova_test(stabilitytest_Nova_StabilityTest* this, nova_exception_Nova_ExceptionData* exceptionData);
 void stabilitytest_Nova_StabilityTest_Nova_fail(stabilitytest_Nova_StabilityTest* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* message, int condition);
 void stabilitytest_Nova_StabilityTest_Nova_super(stabilitytest_Nova_StabilityTest* this, nova_exception_Nova_ExceptionData* exceptionData);
+
+CCLASS_CLASS
+(
+	stabilitytest_Nova_stabilitytest_StabilityTestFunctionMap, 
+	
+	stabilitytest_StabilityTest_stabilitytest_StabilityTestFunctionMap_Extension_VTable* vtable;
+)
+
+void stabilitytest_Nova_stabilitytest_StabilityTestFunctionMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData);
+stabilitytest_Nova_stabilitytest_StabilityTestFunctionMap* stabilitytest_Nova_stabilitytest_StabilityTestFunctionMap_Nova_construct(stabilitytest_Nova_stabilitytest_StabilityTestFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+void stabilitytest_Nova_stabilitytest_StabilityTestFunctionMap_Nova_destroy(stabilitytest_Nova_stabilitytest_StabilityTestFunctionMap** this, nova_exception_Nova_ExceptionData* exceptionData);
+void stabilitytest_Nova_stabilitytest_StabilityTestFunctionMap_Nova_this(stabilitytest_Nova_stabilitytest_StabilityTestFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+void stabilitytest_Nova_stabilitytest_StabilityTestFunctionMap_Nova_super(stabilitytest_Nova_stabilitytest_StabilityTestFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
 
 #endif

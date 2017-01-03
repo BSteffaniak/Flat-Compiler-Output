@@ -27,6 +27,7 @@
 #include <nova/nova_Nova_String.h>
 #include <nova/nova_Nova_System.h>
 #include <nova/meta/nova_meta_Nova_Class.h>
+#include <nova/meta/nova_meta_Nova_FunctionMap.h>
 #include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <spectra/util/spectra_util_Nova_Location.h>
 #include <spectra/tree/nodes/spectra_tree_nodes_Nova_Node.h>
@@ -143,5 +144,45 @@ spectra_tree_nodes_Nova_Identifier* spectra_tree_nodes_Nova_Identifier_Nova_clon
 void spectra_tree_nodes_Nova_Identifier_Nova_super(spectra_tree_nodes_Nova_Identifier* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
 	this->spectra_tree_nodes_Nova_Identifier_Nova_name = (nova_Nova_String*)nova_null;
+}
+
+void spectra_tree_nodes_Nova_spectra_tree_nodes_IdentifierFunctionMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData)
+{
+	{
+	}
+}
+
+spectra_tree_nodes_Nova_spectra_tree_nodes_IdentifierFunctionMap* spectra_tree_nodes_Nova_spectra_tree_nodes_IdentifierFunctionMap_Nova_construct(spectra_tree_nodes_Nova_spectra_tree_nodes_IdentifierFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+	CCLASS_NEW(spectra_tree_nodes_Nova_spectra_tree_nodes_IdentifierFunctionMap, this,);
+	this->vtable = &spectra_tree_nodes_Identifier_spectra_tree_nodes_IdentifierFunctionMap_Extension_VTable_val;
+	nova_Nova_Object_Nova_super((nova_Nova_Object*)this, exceptionData);
+	nova_meta_Nova_FunctionMap_Nova_super((nova_meta_Nova_FunctionMap*)this, exceptionData);
+	spectra_tree_nodes_Nova_spectra_tree_nodes_IdentifierFunctionMap_Nova_super(this, exceptionData);
+	
+	{
+		spectra_tree_nodes_Nova_spectra_tree_nodes_IdentifierFunctionMap_Nova_this(this, exceptionData);
+	}
+	
+	return this;
+}
+
+void spectra_tree_nodes_Nova_spectra_tree_nodes_IdentifierFunctionMap_Nova_destroy(spectra_tree_nodes_Nova_spectra_tree_nodes_IdentifierFunctionMap** this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+	if (!*this)
+	{
+		return;
+	}
+	
+	
+	NOVA_FREE(*this);
+}
+
+void spectra_tree_nodes_Nova_spectra_tree_nodes_IdentifierFunctionMap_Nova_this(spectra_tree_nodes_Nova_spectra_tree_nodes_IdentifierFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+}
+
+void spectra_tree_nodes_Nova_spectra_tree_nodes_IdentifierFunctionMap_Nova_super(spectra_tree_nodes_Nova_spectra_tree_nodes_IdentifierFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+{
 }
 

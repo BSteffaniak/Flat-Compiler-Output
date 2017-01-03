@@ -2,6 +2,7 @@
 #define FILE_nova_math_Nova_Sequence_NOVA
 
 typedef struct nova_math_Nova_Sequence nova_math_Nova_Sequence;
+typedef struct nova_math_Nova_nova_math_SequenceFunctionMap nova_math_Nova_nova_math_SequenceFunctionMap;
 
 
 #include <Nova.h>
@@ -36,6 +37,7 @@ typedef struct nova_math_Nova_Sequence nova_math_Nova_Sequence;
 #include <nova/nova_Nova_String.h>
 #include <nova/nova_Nova_System.h>
 #include <nova/meta/nova_meta_Nova_Class.h>
+#include <nova/meta/nova_meta_Nova_FunctionMap.h>
 #include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <nova/NativeObject.h>
 #include <nova/operators/nova_operators_Nova_EqualsOperator.h>
@@ -55,5 +57,18 @@ void nova_math_Nova_Sequence_Nova_destroy(nova_math_Nova_Sequence** this, nova_e
 void nova_math_Nova_Sequence_Nova_this(nova_math_Nova_Sequence* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_list_Nova_DoubleArray* values);
 double nova_math_Nova_Sequence_static_Nova_sum(nova_math_Nova_Sequence* this, nova_exception_Nova_ExceptionData* exceptionData, int num);
 void nova_math_Nova_Sequence_Nova_super(nova_math_Nova_Sequence* this, nova_exception_Nova_ExceptionData* exceptionData);
+
+CCLASS_CLASS
+(
+	nova_math_Nova_nova_math_SequenceFunctionMap, 
+	
+	nova_math_Sequence_nova_math_SequenceFunctionMap_Extension_VTable* vtable;
+)
+
+void nova_math_Nova_nova_math_SequenceFunctionMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData);
+nova_math_Nova_nova_math_SequenceFunctionMap* nova_math_Nova_nova_math_SequenceFunctionMap_Nova_construct(nova_math_Nova_nova_math_SequenceFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+void nova_math_Nova_nova_math_SequenceFunctionMap_Nova_destroy(nova_math_Nova_nova_math_SequenceFunctionMap** this, nova_exception_Nova_ExceptionData* exceptionData);
+void nova_math_Nova_nova_math_SequenceFunctionMap_Nova_this(nova_math_Nova_nova_math_SequenceFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+void nova_math_Nova_nova_math_SequenceFunctionMap_Nova_super(nova_math_Nova_nova_math_SequenceFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
 
 #endif

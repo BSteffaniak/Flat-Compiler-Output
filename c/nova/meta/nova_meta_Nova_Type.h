@@ -2,6 +2,7 @@
 #define FILE_nova_meta_Nova_Type_NOVA
 
 typedef struct nova_meta_Nova_Type nova_meta_Nova_Type;
+typedef struct nova_meta_Nova_nova_meta_TypeFunctionMap nova_meta_Nova_nova_meta_TypeFunctionMap;
 
 
 #include <Nova.h>
@@ -36,6 +37,7 @@ typedef struct nova_meta_Nova_Type nova_meta_Nova_Type;
 #include <nova/nova_Nova_String.h>
 #include <nova/nova_Nova_System.h>
 #include <nova/meta/nova_meta_Nova_Class.h>
+#include <nova/meta/nova_meta_Nova_FunctionMap.h>
 #include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <nova/meta/nova_meta_Nova_GenericArgument.h>
 #include <nova/NativeObject.h>
@@ -55,5 +57,18 @@ nova_meta_Nova_Type* nova_meta_Nova_Type_Nova_construct(nova_meta_Nova_Type* thi
 void nova_meta_Nova_Type_Nova_destroy(nova_meta_Nova_Type** this, nova_exception_Nova_ExceptionData* exceptionData);
 void nova_meta_Nova_Type_Nova_this(nova_meta_Nova_Type* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* value, nova_datastruct_list_Nova_ImmutableArray* genericArguments);
 void nova_meta_Nova_Type_Nova_super(nova_meta_Nova_Type* this, nova_exception_Nova_ExceptionData* exceptionData);
+
+CCLASS_CLASS
+(
+	nova_meta_Nova_nova_meta_TypeFunctionMap, 
+	
+	nova_meta_Type_nova_meta_TypeFunctionMap_Extension_VTable* vtable;
+)
+
+void nova_meta_Nova_nova_meta_TypeFunctionMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData);
+nova_meta_Nova_nova_meta_TypeFunctionMap* nova_meta_Nova_nova_meta_TypeFunctionMap_Nova_construct(nova_meta_Nova_nova_meta_TypeFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+void nova_meta_Nova_nova_meta_TypeFunctionMap_Nova_destroy(nova_meta_Nova_nova_meta_TypeFunctionMap** this, nova_exception_Nova_ExceptionData* exceptionData);
+void nova_meta_Nova_nova_meta_TypeFunctionMap_Nova_this(nova_meta_Nova_nova_meta_TypeFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+void nova_meta_Nova_nova_meta_TypeFunctionMap_Nova_super(nova_meta_Nova_nova_meta_TypeFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
 
 #endif

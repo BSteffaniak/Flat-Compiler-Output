@@ -2,6 +2,7 @@
 #define FILE_nova_meta_Nova_Class_NOVA
 
 typedef struct nova_meta_Nova_Class nova_meta_Nova_Class;
+typedef struct nova_meta_Nova_nova_meta_ClassFunctionMap nova_meta_Nova_nova_meta_ClassFunctionMap;
 
 
 #include <Nova.h>
@@ -36,9 +37,9 @@ typedef struct nova_meta_Nova_Class nova_meta_Nova_Class;
 #include <nova/nova_Nova_String.h>
 #include <nova/nova_Nova_System.h>
 #include <nova/meta/nova_meta_Nova_Class.h>
+#include <nova/meta/nova_meta_Nova_FunctionMap.h>
 #include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <nova/meta/nova_meta_Nova_Field.h>
-#include <nova/meta/nova_meta_Nova_FunctionMap.h>
 #include <nova/NativeObject.h>
 #include <nova/operators/nova_operators_Nova_EqualsOperator.h>
 
@@ -65,5 +66,18 @@ nova_Nova_String* nova_meta_Nova_Class_Nova_toString(nova_meta_Nova_Class* this,
 nova_Nova_String* nova_meta_Nova_Class_Accessor_Nova_package(nova_meta_Nova_Class* this, nova_exception_Nova_ExceptionData* exceptionData);
 nova_Nova_String* nova_meta_Nova_Class_Accessor_Nova_name(nova_meta_Nova_Class* this, nova_exception_Nova_ExceptionData* exceptionData);
 void nova_meta_Nova_Class_Nova_super(nova_meta_Nova_Class* this, nova_exception_Nova_ExceptionData* exceptionData);
+
+CCLASS_CLASS
+(
+	nova_meta_Nova_nova_meta_ClassFunctionMap, 
+	
+	nova_meta_Class_nova_meta_ClassFunctionMap_Extension_VTable* vtable;
+)
+
+void nova_meta_Nova_nova_meta_ClassFunctionMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData);
+nova_meta_Nova_nova_meta_ClassFunctionMap* nova_meta_Nova_nova_meta_ClassFunctionMap_Nova_construct(nova_meta_Nova_nova_meta_ClassFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+void nova_meta_Nova_nova_meta_ClassFunctionMap_Nova_destroy(nova_meta_Nova_nova_meta_ClassFunctionMap** this, nova_exception_Nova_ExceptionData* exceptionData);
+void nova_meta_Nova_nova_meta_ClassFunctionMap_Nova_this(nova_meta_Nova_nova_meta_ClassFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+void nova_meta_Nova_nova_meta_ClassFunctionMap_Nova_super(nova_meta_Nova_nova_meta_ClassFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
 
 #endif

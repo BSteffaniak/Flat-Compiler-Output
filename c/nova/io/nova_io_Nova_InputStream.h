@@ -36,6 +36,7 @@ typedef struct nova_io_Nova_InputStream nova_io_Nova_InputStream;
 #include <nova/nova_Nova_String.h>
 #include <nova/nova_Nova_System.h>
 #include <nova/meta/nova_meta_Nova_Class.h>
+#include <nova/meta/nova_meta_Nova_FunctionMap.h>
 #include <nova/regex/nova_regex_Nova_Pattern.h>
 
 CCLASS_CLASS

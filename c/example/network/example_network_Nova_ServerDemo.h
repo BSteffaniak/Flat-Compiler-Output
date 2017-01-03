@@ -2,6 +2,7 @@
 #define FILE_example_network_Nova_ServerDemo_NOVA
 
 typedef struct example_network_Nova_ServerDemo example_network_Nova_ServerDemo;
+typedef struct example_network_Nova_example_network_ServerDemoFunctionMap example_network_Nova_example_network_ServerDemoFunctionMap;
 
 
 #include <Nova.h>
@@ -36,6 +37,7 @@ typedef struct example_network_Nova_ServerDemo example_network_Nova_ServerDemo;
 #include <nova/nova_Nova_String.h>
 #include <nova/nova_Nova_System.h>
 #include <nova/meta/nova_meta_Nova_Class.h>
+#include <nova/meta/nova_meta_Nova_FunctionMap.h>
 #include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <nova/network/nova_network_Nova_ServerSocket.h>
 #include <nova/network/nova_network_Nova_ConnectionSocket.h>
@@ -57,5 +59,18 @@ void example_network_Nova_ServerDemo_Nova_destroy(example_network_Nova_ServerDem
 void example_network_Nova_ServerDemo_static_Nova_main(example_network_Nova_ServerDemo* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_list_Nova_Array* args);
 void example_network_Nova_ServerDemo_Nova_this(example_network_Nova_ServerDemo* this, nova_exception_Nova_ExceptionData* exceptionData);
 void example_network_Nova_ServerDemo_Nova_super(example_network_Nova_ServerDemo* this, nova_exception_Nova_ExceptionData* exceptionData);
+
+CCLASS_CLASS
+(
+	example_network_Nova_example_network_ServerDemoFunctionMap, 
+	
+	example_network_ServerDemo_example_network_ServerDemoFunctionMap_Extension_VTable* vtable;
+)
+
+void example_network_Nova_example_network_ServerDemoFunctionMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData);
+example_network_Nova_example_network_ServerDemoFunctionMap* example_network_Nova_example_network_ServerDemoFunctionMap_Nova_construct(example_network_Nova_example_network_ServerDemoFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+void example_network_Nova_example_network_ServerDemoFunctionMap_Nova_destroy(example_network_Nova_example_network_ServerDemoFunctionMap** this, nova_exception_Nova_ExceptionData* exceptionData);
+void example_network_Nova_example_network_ServerDemoFunctionMap_Nova_this(example_network_Nova_example_network_ServerDemoFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+void example_network_Nova_example_network_ServerDemoFunctionMap_Nova_super(example_network_Nova_example_network_ServerDemoFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
 
 #endif

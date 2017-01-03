@@ -27,6 +27,7 @@
 #include <nova/nova_Nova_String.h>
 #include <nova/nova_Nova_System.h>
 #include <nova/meta/nova_meta_Nova_Class.h>
+#include <nova/meta/nova_meta_Nova_FunctionMap.h>
 #include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <nova/network/nova_network_Nova_ConnectionSocket.h>
 #include <nova/thread/NativeThread.h>
@@ -104,5 +105,45 @@ void example_network_Nova_ConnectionThread_Nova_run(example_network_Nova_Connect
 void example_network_Nova_ConnectionThread_Nova_super(example_network_Nova_ConnectionThread* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
 	this->prv->example_network_Nova_ConnectionThread_Nova_socket = (nova_network_Nova_ConnectionSocket*)nova_null;
+}
+
+void example_network_Nova_example_network_ConnectionThreadFunctionMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData)
+{
+	{
+	}
+}
+
+example_network_Nova_example_network_ConnectionThreadFunctionMap* example_network_Nova_example_network_ConnectionThreadFunctionMap_Nova_construct(example_network_Nova_example_network_ConnectionThreadFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+	CCLASS_NEW(example_network_Nova_example_network_ConnectionThreadFunctionMap, this,);
+	this->vtable = &example_network_ConnectionThread_example_network_ConnectionThreadFunctionMap_Extension_VTable_val;
+	nova_Nova_Object_Nova_super((nova_Nova_Object*)this, exceptionData);
+	nova_meta_Nova_FunctionMap_Nova_super((nova_meta_Nova_FunctionMap*)this, exceptionData);
+	example_network_Nova_example_network_ConnectionThreadFunctionMap_Nova_super(this, exceptionData);
+	
+	{
+		example_network_Nova_example_network_ConnectionThreadFunctionMap_Nova_this(this, exceptionData);
+	}
+	
+	return this;
+}
+
+void example_network_Nova_example_network_ConnectionThreadFunctionMap_Nova_destroy(example_network_Nova_example_network_ConnectionThreadFunctionMap** this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+	if (!*this)
+	{
+		return;
+	}
+	
+	
+	NOVA_FREE(*this);
+}
+
+void example_network_Nova_example_network_ConnectionThreadFunctionMap_Nova_this(example_network_Nova_example_network_ConnectionThreadFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+}
+
+void example_network_Nova_example_network_ConnectionThreadFunctionMap_Nova_super(example_network_Nova_example_network_ConnectionThreadFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+{
 }
 

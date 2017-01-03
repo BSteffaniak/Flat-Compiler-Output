@@ -2,6 +2,7 @@
 #define FILE_spectra_tree_nodes_Nova_Priority_NOVA
 
 typedef struct spectra_tree_nodes_Nova_Priority spectra_tree_nodes_Nova_Priority;
+typedef struct spectra_tree_nodes_Nova_spectra_tree_nodes_PriorityFunctionMap spectra_tree_nodes_Nova_spectra_tree_nodes_PriorityFunctionMap;
 
 
 #include <Nova.h>
@@ -36,6 +37,7 @@ typedef struct spectra_tree_nodes_Nova_Priority spectra_tree_nodes_Nova_Priority
 #include <nova/nova_Nova_String.h>
 #include <nova/nova_Nova_System.h>
 #include <nova/meta/nova_meta_Nova_Class.h>
+#include <nova/meta/nova_meta_Nova_FunctionMap.h>
 #include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <spectra/spectra_Nova_InvalidParseException.h>
 #include <spectra/util/spectra_util_Nova_Location.h>
@@ -107,5 +109,18 @@ char spectra_tree_nodes_Nova_Priority_Mutatorfunc0_Nova_safeNavigation(spectra_t
 spectra_tree_nodes_Nova_Accessible* spectra_tree_nodes_Nova_Priority_Accessorfunc1_Nova_accessedNode(spectra_tree_nodes_Nova_Priority* this, nova_exception_Nova_ExceptionData* exceptionData);
 spectra_tree_nodes_Nova_Accessible* spectra_tree_nodes_Nova_Priority_Mutatorfunc0_Nova_accessedNode(spectra_tree_nodes_Nova_Priority* this, nova_exception_Nova_ExceptionData* exceptionData, spectra_tree_nodes_Nova_Accessible* value);
 void spectra_tree_nodes_Nova_Priority_Nova_super(spectra_tree_nodes_Nova_Priority* this, nova_exception_Nova_ExceptionData* exceptionData);
+
+CCLASS_CLASS
+(
+	spectra_tree_nodes_Nova_spectra_tree_nodes_PriorityFunctionMap, 
+	
+	spectra_tree_nodes_Priority_spectra_tree_nodes_PriorityFunctionMap_Extension_VTable* vtable;
+)
+
+void spectra_tree_nodes_Nova_spectra_tree_nodes_PriorityFunctionMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData);
+spectra_tree_nodes_Nova_spectra_tree_nodes_PriorityFunctionMap* spectra_tree_nodes_Nova_spectra_tree_nodes_PriorityFunctionMap_Nova_construct(spectra_tree_nodes_Nova_spectra_tree_nodes_PriorityFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+void spectra_tree_nodes_Nova_spectra_tree_nodes_PriorityFunctionMap_Nova_destroy(spectra_tree_nodes_Nova_spectra_tree_nodes_PriorityFunctionMap** this, nova_exception_Nova_ExceptionData* exceptionData);
+void spectra_tree_nodes_Nova_spectra_tree_nodes_PriorityFunctionMap_Nova_this(spectra_tree_nodes_Nova_spectra_tree_nodes_PriorityFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+void spectra_tree_nodes_Nova_spectra_tree_nodes_PriorityFunctionMap_Nova_super(spectra_tree_nodes_Nova_spectra_tree_nodes_PriorityFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
 
 #endif

@@ -27,6 +27,7 @@
 #include <nova/nova_Nova_String.h>
 #include <nova/nova_Nova_System.h>
 #include <nova/meta/nova_meta_Nova_Class.h>
+#include <nova/meta/nova_meta_Nova_FunctionMap.h>
 #include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <nova/NativeObject.h>
 #include <nova/operators/nova_operators_Nova_EqualsOperator.h>
@@ -115,6 +116,46 @@ void example_ackermann_Nova_Ackermann_Nova_this(example_ackermann_Nova_Ackermann
 }
 
 void example_ackermann_Nova_Ackermann_Nova_super(example_ackermann_Nova_Ackermann* this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+}
+
+void example_ackermann_Nova_example_ackermann_AckermannFunctionMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData)
+{
+	{
+	}
+}
+
+example_ackermann_Nova_example_ackermann_AckermannFunctionMap* example_ackermann_Nova_example_ackermann_AckermannFunctionMap_Nova_construct(example_ackermann_Nova_example_ackermann_AckermannFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+	CCLASS_NEW(example_ackermann_Nova_example_ackermann_AckermannFunctionMap, this,);
+	this->vtable = &example_ackermann_Ackermann_example_ackermann_AckermannFunctionMap_Extension_VTable_val;
+	nova_Nova_Object_Nova_super((nova_Nova_Object*)this, exceptionData);
+	nova_meta_Nova_FunctionMap_Nova_super((nova_meta_Nova_FunctionMap*)this, exceptionData);
+	example_ackermann_Nova_example_ackermann_AckermannFunctionMap_Nova_super(this, exceptionData);
+	
+	{
+		example_ackermann_Nova_example_ackermann_AckermannFunctionMap_Nova_this(this, exceptionData);
+	}
+	
+	return this;
+}
+
+void example_ackermann_Nova_example_ackermann_AckermannFunctionMap_Nova_destroy(example_ackermann_Nova_example_ackermann_AckermannFunctionMap** this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+	if (!*this)
+	{
+		return;
+	}
+	
+	
+	NOVA_FREE(*this);
+}
+
+void example_ackermann_Nova_example_ackermann_AckermannFunctionMap_Nova_this(example_ackermann_Nova_example_ackermann_AckermannFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+}
+
+void example_ackermann_Nova_example_ackermann_AckermannFunctionMap_Nova_super(example_ackermann_Nova_example_ackermann_AckermannFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
 }
 

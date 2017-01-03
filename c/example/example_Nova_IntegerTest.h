@@ -2,6 +2,7 @@
 #define FILE_example_Nova_IntegerTest_NOVA
 
 typedef struct example_Nova_IntegerTest example_Nova_IntegerTest;
+typedef struct example_Nova_example_IntegerTestFunctionMap example_Nova_example_IntegerTestFunctionMap;
 
 
 #include <Nova.h>
@@ -36,6 +37,7 @@ typedef struct example_Nova_IntegerTest example_Nova_IntegerTest;
 #include <nova/nova_Nova_String.h>
 #include <nova/nova_Nova_System.h>
 #include <nova/meta/nova_meta_Nova_Class.h>
+#include <nova/meta/nova_meta_Nova_FunctionMap.h>
 #include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <nova/time/nova_time_Nova_Timer.h>
 #include <nova/NativeObject.h>
@@ -54,5 +56,18 @@ void example_Nova_IntegerTest_Nova_destroy(example_Nova_IntegerTest** this, nova
 void example_Nova_IntegerTest_static_Nova_main(example_Nova_IntegerTest* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_list_Nova_Array* args);
 void example_Nova_IntegerTest_Nova_this(example_Nova_IntegerTest* this, nova_exception_Nova_ExceptionData* exceptionData);
 void example_Nova_IntegerTest_Nova_super(example_Nova_IntegerTest* this, nova_exception_Nova_ExceptionData* exceptionData);
+
+CCLASS_CLASS
+(
+	example_Nova_example_IntegerTestFunctionMap, 
+	
+	example_IntegerTest_example_IntegerTestFunctionMap_Extension_VTable* vtable;
+)
+
+void example_Nova_example_IntegerTestFunctionMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData);
+example_Nova_example_IntegerTestFunctionMap* example_Nova_example_IntegerTestFunctionMap_Nova_construct(example_Nova_example_IntegerTestFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+void example_Nova_example_IntegerTestFunctionMap_Nova_destroy(example_Nova_example_IntegerTestFunctionMap** this, nova_exception_Nova_ExceptionData* exceptionData);
+void example_Nova_example_IntegerTestFunctionMap_Nova_this(example_Nova_example_IntegerTestFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+void example_Nova_example_IntegerTestFunctionMap_Nova_super(example_Nova_example_IntegerTestFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
 
 #endif

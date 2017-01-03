@@ -2,6 +2,7 @@
 #define FILE_nova_io_Nova_FileReader_NOVA
 
 typedef struct nova_io_Nova_FileReader nova_io_Nova_FileReader;
+typedef struct nova_io_Nova_nova_io_FileReaderFunctionMap nova_io_Nova_nova_io_FileReaderFunctionMap;
 
 
 #include <Nova.h>
@@ -36,9 +37,12 @@ typedef struct nova_io_Nova_FileReader nova_io_Nova_FileReader;
 #include <nova/nova_Nova_String.h>
 #include <nova/nova_Nova_System.h>
 #include <nova/meta/nova_meta_Nova_Class.h>
+#include <nova/meta/nova_meta_Nova_FunctionMap.h>
 #include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <nova/io/nova_io_Nova_File.h>
 #include <nova/io/nova_io_Nova_InputStream.h>
+#include <nova/NativeObject.h>
+#include <nova/operators/nova_operators_Nova_EqualsOperator.h>
 
 CCLASS_CLASS
 (
@@ -63,5 +67,18 @@ nova_Nova_String* nova_io_Nova_FileReader_Nova_readLine(nova_io_Nova_FileReader*
 char nova_io_Nova_FileReader_Nova_close(nova_io_Nova_FileReader* this, nova_exception_Nova_ExceptionData* exceptionData);
 char nova_io_Nova_FileReader_Accessor_Nova_isOpen(nova_io_Nova_FileReader* this, nova_exception_Nova_ExceptionData* exceptionData);
 void nova_io_Nova_FileReader_Nova_super(nova_io_Nova_FileReader* this, nova_exception_Nova_ExceptionData* exceptionData);
+
+CCLASS_CLASS
+(
+	nova_io_Nova_nova_io_FileReaderFunctionMap, 
+	
+	nova_io_FileReader_nova_io_FileReaderFunctionMap_Extension_VTable* vtable;
+)
+
+void nova_io_Nova_nova_io_FileReaderFunctionMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData);
+nova_io_Nova_nova_io_FileReaderFunctionMap* nova_io_Nova_nova_io_FileReaderFunctionMap_Nova_construct(nova_io_Nova_nova_io_FileReaderFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+void nova_io_Nova_nova_io_FileReaderFunctionMap_Nova_destroy(nova_io_Nova_nova_io_FileReaderFunctionMap** this, nova_exception_Nova_ExceptionData* exceptionData);
+void nova_io_Nova_nova_io_FileReaderFunctionMap_Nova_this(nova_io_Nova_nova_io_FileReaderFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+void nova_io_Nova_nova_io_FileReaderFunctionMap_Nova_super(nova_io_Nova_nova_io_FileReaderFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
 
 #endif

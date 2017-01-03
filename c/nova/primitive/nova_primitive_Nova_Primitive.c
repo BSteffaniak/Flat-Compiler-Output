@@ -27,6 +27,7 @@
 #include <nova/nova_Nova_String.h>
 #include <nova/nova_Nova_System.h>
 #include <nova/meta/nova_meta_Nova_Class.h>
+#include <nova/meta/nova_meta_Nova_FunctionMap.h>
 #include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <nova/NativeObject.h>
 #include <nova/operators/nova_operators_Nova_EqualsOperator.h>
@@ -69,6 +70,46 @@ void nova_primitive_Nova_Primitive_Nova_this(nova_primitive_Nova_Primitive* this
 }
 
 void nova_primitive_Nova_Primitive_Nova_super(nova_primitive_Nova_Primitive* this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+}
+
+void nova_primitive_Nova_nova_primitive_PrimitiveFunctionMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData)
+{
+	{
+	}
+}
+
+nova_primitive_Nova_nova_primitive_PrimitiveFunctionMap* nova_primitive_Nova_nova_primitive_PrimitiveFunctionMap_Nova_construct(nova_primitive_Nova_nova_primitive_PrimitiveFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+	CCLASS_NEW(nova_primitive_Nova_nova_primitive_PrimitiveFunctionMap, this,);
+	this->vtable = &nova_primitive_Primitive_nova_primitive_PrimitiveFunctionMap_Extension_VTable_val;
+	nova_Nova_Object_Nova_super((nova_Nova_Object*)this, exceptionData);
+	nova_meta_Nova_FunctionMap_Nova_super((nova_meta_Nova_FunctionMap*)this, exceptionData);
+	nova_primitive_Nova_nova_primitive_PrimitiveFunctionMap_Nova_super(this, exceptionData);
+	
+	{
+		nova_primitive_Nova_nova_primitive_PrimitiveFunctionMap_Nova_this(this, exceptionData);
+	}
+	
+	return this;
+}
+
+void nova_primitive_Nova_nova_primitive_PrimitiveFunctionMap_Nova_destroy(nova_primitive_Nova_nova_primitive_PrimitiveFunctionMap** this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+	if (!*this)
+	{
+		return;
+	}
+	
+	
+	NOVA_FREE(*this);
+}
+
+void nova_primitive_Nova_nova_primitive_PrimitiveFunctionMap_Nova_this(nova_primitive_Nova_nova_primitive_PrimitiveFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+}
+
+void nova_primitive_Nova_nova_primitive_PrimitiveFunctionMap_Nova_super(nova_primitive_Nova_nova_primitive_PrimitiveFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
 }
 

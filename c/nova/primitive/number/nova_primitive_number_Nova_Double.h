@@ -2,6 +2,7 @@
 #define FILE_nova_primitive_number_Nova_Double_NOVA
 
 typedef struct nova_primitive_number_Nova_Double nova_primitive_number_Nova_Double;
+typedef struct nova_primitive_number_Nova_nova_primitive_number_DoubleFunctionMap nova_primitive_number_Nova_nova_primitive_number_DoubleFunctionMap;
 
 
 #include <Nova.h>
@@ -36,6 +37,7 @@ typedef struct nova_primitive_number_Nova_Double nova_primitive_number_Nova_Doub
 #include <nova/nova_Nova_String.h>
 #include <nova/nova_Nova_System.h>
 #include <nova/meta/nova_meta_Nova_Class.h>
+#include <nova/meta/nova_meta_Nova_FunctionMap.h>
 #include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <nova/datastruct/nova_datastruct_Nova_Comparable.h>
 #include <nova/primitive/number/nova_primitive_number_Nova_RealNumber.h>
@@ -68,5 +70,18 @@ double nova_primitive_number_Nova_Double_Nova_compareTo(nova_primitive_number_No
 double nova_primitive_number_Nova_Double_Nova_multiply(nova_primitive_number_Nova_Double* this, nova_exception_Nova_ExceptionData* exceptionData, double value);
 nova_Nova_String* nova_primitive_number_Nova_Double_Nova_toString(nova_primitive_number_Nova_Double* this, nova_exception_Nova_ExceptionData* exceptionData);
 void nova_primitive_number_Nova_Double_Nova_super(nova_primitive_number_Nova_Double* this, nova_exception_Nova_ExceptionData* exceptionData);
+
+CCLASS_CLASS
+(
+	nova_primitive_number_Nova_nova_primitive_number_DoubleFunctionMap, 
+	
+	nova_primitive_number_Double_nova_primitive_number_DoubleFunctionMap_Extension_VTable* vtable;
+)
+
+void nova_primitive_number_Nova_nova_primitive_number_DoubleFunctionMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData);
+nova_primitive_number_Nova_nova_primitive_number_DoubleFunctionMap* nova_primitive_number_Nova_nova_primitive_number_DoubleFunctionMap_Nova_construct(nova_primitive_number_Nova_nova_primitive_number_DoubleFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+void nova_primitive_number_Nova_nova_primitive_number_DoubleFunctionMap_Nova_destroy(nova_primitive_number_Nova_nova_primitive_number_DoubleFunctionMap** this, nova_exception_Nova_ExceptionData* exceptionData);
+void nova_primitive_number_Nova_nova_primitive_number_DoubleFunctionMap_Nova_this(nova_primitive_number_Nova_nova_primitive_number_DoubleFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+void nova_primitive_number_Nova_nova_primitive_number_DoubleFunctionMap_Nova_super(nova_primitive_number_Nova_nova_primitive_number_DoubleFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
 
 #endif

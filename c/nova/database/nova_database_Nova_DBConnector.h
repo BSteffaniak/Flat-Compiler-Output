@@ -2,6 +2,7 @@
 #define FILE_nova_database_Nova_DBConnector_NOVA
 
 typedef struct nova_database_Nova_DBConnector nova_database_Nova_DBConnector;
+typedef struct nova_database_Nova_nova_database_DBConnectorFunctionMap nova_database_Nova_nova_database_DBConnectorFunctionMap;
 
 
 #include <Nova.h>
@@ -36,6 +37,7 @@ typedef struct nova_database_Nova_DBConnector nova_database_Nova_DBConnector;
 #include <nova/nova_Nova_String.h>
 #include <nova/nova_Nova_System.h>
 #include <nova/meta/nova_meta_Nova_Class.h>
+#include <nova/meta/nova_meta_Nova_FunctionMap.h>
 #include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <nova/database/NativeDBConnector.h>
 #include <nova/database/nova_database_Nova_ResultSet.h>
@@ -63,5 +65,18 @@ void nova_database_Nova_DBConnector_Nova_changeUser(nova_database_Nova_DBConnect
 nova_database_Nova_ResultSet* nova_database_Nova_DBConnector_Nova_query(nova_database_Nova_DBConnector* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* query);
 void nova_database_Nova_DBConnector_Nova_close(nova_database_Nova_DBConnector* this, nova_exception_Nova_ExceptionData* exceptionData);
 void nova_database_Nova_DBConnector_Nova_super(nova_database_Nova_DBConnector* this, nova_exception_Nova_ExceptionData* exceptionData);
+
+CCLASS_CLASS
+(
+	nova_database_Nova_nova_database_DBConnectorFunctionMap, 
+	
+	nova_database_DBConnector_nova_database_DBConnectorFunctionMap_Extension_VTable* vtable;
+)
+
+void nova_database_Nova_nova_database_DBConnectorFunctionMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData);
+nova_database_Nova_nova_database_DBConnectorFunctionMap* nova_database_Nova_nova_database_DBConnectorFunctionMap_Nova_construct(nova_database_Nova_nova_database_DBConnectorFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+void nova_database_Nova_nova_database_DBConnectorFunctionMap_Nova_destroy(nova_database_Nova_nova_database_DBConnectorFunctionMap** this, nova_exception_Nova_ExceptionData* exceptionData);
+void nova_database_Nova_nova_database_DBConnectorFunctionMap_Nova_this(nova_database_Nova_nova_database_DBConnectorFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+void nova_database_Nova_nova_database_DBConnectorFunctionMap_Nova_super(nova_database_Nova_nova_database_DBConnectorFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
 
 #endif

@@ -27,6 +27,7 @@
 #include <nova/nova_Nova_String.h>
 #include <nova/nova_Nova_System.h>
 #include <nova/meta/nova_meta_Nova_Class.h>
+#include <nova/meta/nova_meta_Nova_FunctionMap.h>
 #include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <spectra/util/spectra_util_Nova_Location.h>
 #include <spectra/tree/nodes/spectra_tree_nodes_Nova_Accessible.h>
@@ -277,5 +278,45 @@ void spectra_tree_nodes_Nova_Scope_Nova_super(spectra_tree_nodes_Nova_Scope* thi
 {
 	this->spectra_tree_nodes_Nova_Scope_Nova_declarations = (nova_datastruct_list_Nova_Array*)nova_null;
 	this->prv->spectra_tree_nodes_Nova_Scope_Nova_id = 0;
+}
+
+void spectra_tree_nodes_Nova_spectra_tree_nodes_ScopeFunctionMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData)
+{
+	{
+	}
+}
+
+spectra_tree_nodes_Nova_spectra_tree_nodes_ScopeFunctionMap* spectra_tree_nodes_Nova_spectra_tree_nodes_ScopeFunctionMap_Nova_construct(spectra_tree_nodes_Nova_spectra_tree_nodes_ScopeFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+	CCLASS_NEW(spectra_tree_nodes_Nova_spectra_tree_nodes_ScopeFunctionMap, this,);
+	this->vtable = &spectra_tree_nodes_Scope_spectra_tree_nodes_ScopeFunctionMap_Extension_VTable_val;
+	nova_Nova_Object_Nova_super((nova_Nova_Object*)this, exceptionData);
+	nova_meta_Nova_FunctionMap_Nova_super((nova_meta_Nova_FunctionMap*)this, exceptionData);
+	spectra_tree_nodes_Nova_spectra_tree_nodes_ScopeFunctionMap_Nova_super(this, exceptionData);
+	
+	{
+		spectra_tree_nodes_Nova_spectra_tree_nodes_ScopeFunctionMap_Nova_this(this, exceptionData);
+	}
+	
+	return this;
+}
+
+void spectra_tree_nodes_Nova_spectra_tree_nodes_ScopeFunctionMap_Nova_destroy(spectra_tree_nodes_Nova_spectra_tree_nodes_ScopeFunctionMap** this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+	if (!*this)
+	{
+		return;
+	}
+	
+	
+	NOVA_FREE(*this);
+}
+
+void spectra_tree_nodes_Nova_spectra_tree_nodes_ScopeFunctionMap_Nova_this(spectra_tree_nodes_Nova_spectra_tree_nodes_ScopeFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+}
+
+void spectra_tree_nodes_Nova_spectra_tree_nodes_ScopeFunctionMap_Nova_super(spectra_tree_nodes_Nova_spectra_tree_nodes_ScopeFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+{
 }
 

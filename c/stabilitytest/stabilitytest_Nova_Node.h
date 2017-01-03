@@ -2,6 +2,7 @@
 #define FILE_stabilitytest_Nova_Node_NOVA
 
 typedef struct stabilitytest_Nova_Node stabilitytest_Nova_Node;
+typedef struct stabilitytest_Nova_stabilitytest_NodeFunctionMap stabilitytest_Nova_stabilitytest_NodeFunctionMap;
 
 
 #include <Nova.h>
@@ -36,6 +37,7 @@ typedef struct stabilitytest_Nova_Node stabilitytest_Nova_Node;
 #include <nova/nova_Nova_String.h>
 #include <nova/nova_Nova_System.h>
 #include <nova/meta/nova_meta_Nova_Class.h>
+#include <nova/meta/nova_meta_Nova_FunctionMap.h>
 #include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <nova/NativeObject.h>
 #include <nova/operators/nova_operators_Nova_EqualsOperator.h>
@@ -54,5 +56,18 @@ stabilitytest_Nova_Node* stabilitytest_Nova_Node_Nova_construct(stabilitytest_No
 void stabilitytest_Nova_Node_Nova_destroy(stabilitytest_Nova_Node** this, nova_exception_Nova_ExceptionData* exceptionData);
 void stabilitytest_Nova_Node_Nova_this(stabilitytest_Nova_Node* this, nova_exception_Nova_ExceptionData* exceptionData);
 void stabilitytest_Nova_Node_Nova_super(stabilitytest_Nova_Node* this, nova_exception_Nova_ExceptionData* exceptionData);
+
+CCLASS_CLASS
+(
+	stabilitytest_Nova_stabilitytest_NodeFunctionMap, 
+	
+	stabilitytest_Node_stabilitytest_NodeFunctionMap_Extension_VTable* vtable;
+)
+
+void stabilitytest_Nova_stabilitytest_NodeFunctionMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData);
+stabilitytest_Nova_stabilitytest_NodeFunctionMap* stabilitytest_Nova_stabilitytest_NodeFunctionMap_Nova_construct(stabilitytest_Nova_stabilitytest_NodeFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+void stabilitytest_Nova_stabilitytest_NodeFunctionMap_Nova_destroy(stabilitytest_Nova_stabilitytest_NodeFunctionMap** this, nova_exception_Nova_ExceptionData* exceptionData);
+void stabilitytest_Nova_stabilitytest_NodeFunctionMap_Nova_this(stabilitytest_Nova_stabilitytest_NodeFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+void stabilitytest_Nova_stabilitytest_NodeFunctionMap_Nova_super(stabilitytest_Nova_stabilitytest_NodeFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
 
 #endif

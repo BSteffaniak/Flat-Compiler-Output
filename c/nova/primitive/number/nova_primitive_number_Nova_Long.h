@@ -2,6 +2,7 @@
 #define FILE_nova_primitive_number_Nova_Long_NOVA
 
 typedef struct nova_primitive_number_Nova_Long nova_primitive_number_Nova_Long;
+typedef struct nova_primitive_number_Nova_nova_primitive_number_LongFunctionMap nova_primitive_number_Nova_nova_primitive_number_LongFunctionMap;
 
 
 #include <Nova.h>
@@ -36,6 +37,7 @@ typedef struct nova_primitive_number_Nova_Long nova_primitive_number_Nova_Long;
 #include <nova/nova_Nova_String.h>
 #include <nova/nova_Nova_System.h>
 #include <nova/meta/nova_meta_Nova_Class.h>
+#include <nova/meta/nova_meta_Nova_FunctionMap.h>
 #include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <nova/datastruct/nova_datastruct_Nova_Comparable.h>
 #include <nova/primitive/number/nova_primitive_number_Nova_Integer.h>
@@ -64,5 +66,18 @@ long_long nova_primitive_number_Nova_Long_Nova_compareTo(nova_primitive_number_N
 long_long nova_primitive_number_Nova_Long_Nova_multiply(nova_primitive_number_Nova_Long* this, nova_exception_Nova_ExceptionData* exceptionData, long_long value);
 nova_Nova_String* nova_primitive_number_Nova_Long_Nova_toString(nova_primitive_number_Nova_Long* this, nova_exception_Nova_ExceptionData* exceptionData);
 void nova_primitive_number_Nova_Long_Nova_super(nova_primitive_number_Nova_Long* this, nova_exception_Nova_ExceptionData* exceptionData);
+
+CCLASS_CLASS
+(
+	nova_primitive_number_Nova_nova_primitive_number_LongFunctionMap, 
+	
+	nova_primitive_number_Long_nova_primitive_number_LongFunctionMap_Extension_VTable* vtable;
+)
+
+void nova_primitive_number_Nova_nova_primitive_number_LongFunctionMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData);
+nova_primitive_number_Nova_nova_primitive_number_LongFunctionMap* nova_primitive_number_Nova_nova_primitive_number_LongFunctionMap_Nova_construct(nova_primitive_number_Nova_nova_primitive_number_LongFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+void nova_primitive_number_Nova_nova_primitive_number_LongFunctionMap_Nova_destroy(nova_primitive_number_Nova_nova_primitive_number_LongFunctionMap** this, nova_exception_Nova_ExceptionData* exceptionData);
+void nova_primitive_number_Nova_nova_primitive_number_LongFunctionMap_Nova_this(nova_primitive_number_Nova_nova_primitive_number_LongFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+void nova_primitive_number_Nova_nova_primitive_number_LongFunctionMap_Nova_super(nova_primitive_number_Nova_nova_primitive_number_LongFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
 
 #endif

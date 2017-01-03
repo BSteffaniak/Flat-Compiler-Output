@@ -36,6 +36,7 @@ typedef struct nova_primitive_number_Nova_RealNumber nova_primitive_number_Nova_
 #include <nova/nova_Nova_String.h>
 #include <nova/nova_Nova_System.h>
 #include <nova/meta/nova_meta_Nova_Class.h>
+#include <nova/meta/nova_meta_Nova_FunctionMap.h>
 #include <nova/regex/nova_regex_Nova_Pattern.h>
 
 CCLASS_CLASS

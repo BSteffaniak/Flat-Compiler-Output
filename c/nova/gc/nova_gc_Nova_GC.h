@@ -2,6 +2,7 @@
 #define FILE_nova_gc_Nova_GC_NOVA
 
 typedef struct nova_gc_Nova_GC nova_gc_Nova_GC;
+typedef struct nova_gc_Nova_nova_gc_GCFunctionMap nova_gc_Nova_nova_gc_GCFunctionMap;
 
 
 #include <Nova.h>
@@ -36,6 +37,7 @@ typedef struct nova_gc_Nova_GC nova_gc_Nova_GC;
 #include <nova/nova_Nova_String.h>
 #include <nova/nova_Nova_System.h>
 #include <nova/meta/nova_meta_Nova_Class.h>
+#include <nova/meta/nova_meta_Nova_FunctionMap.h>
 #include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <nova/gc/NativeGC.h>
 #include <nova/NativeObject.h>
@@ -61,5 +63,18 @@ int nova_gc_Nova_GC_Accessor_Nova_totalBytes(nova_gc_Nova_GC* this, nova_excepti
 int nova_gc_Nova_GC_Accessor_Nova_heapSize(nova_gc_Nova_GC* this, nova_exception_Nova_ExceptionData* exceptionData);
 int nova_gc_Nova_GC_Accessor_Nova_bytesSinceGC(nova_gc_Nova_GC* this, nova_exception_Nova_ExceptionData* exceptionData);
 void nova_gc_Nova_GC_Nova_super(nova_gc_Nova_GC* this, nova_exception_Nova_ExceptionData* exceptionData);
+
+CCLASS_CLASS
+(
+	nova_gc_Nova_nova_gc_GCFunctionMap, 
+	
+	nova_gc_GC_nova_gc_GCFunctionMap_Extension_VTable* vtable;
+)
+
+void nova_gc_Nova_nova_gc_GCFunctionMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData);
+nova_gc_Nova_nova_gc_GCFunctionMap* nova_gc_Nova_nova_gc_GCFunctionMap_Nova_construct(nova_gc_Nova_nova_gc_GCFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+void nova_gc_Nova_nova_gc_GCFunctionMap_Nova_destroy(nova_gc_Nova_nova_gc_GCFunctionMap** this, nova_exception_Nova_ExceptionData* exceptionData);
+void nova_gc_Nova_nova_gc_GCFunctionMap_Nova_this(nova_gc_Nova_nova_gc_GCFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+void nova_gc_Nova_nova_gc_GCFunctionMap_Nova_super(nova_gc_Nova_nova_gc_GCFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
 
 #endif

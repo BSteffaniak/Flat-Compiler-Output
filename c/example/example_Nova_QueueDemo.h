@@ -2,6 +2,7 @@
 #define FILE_example_Nova_QueueDemo_NOVA
 
 typedef struct example_Nova_QueueDemo example_Nova_QueueDemo;
+typedef struct example_Nova_example_QueueDemoFunctionMap example_Nova_example_QueueDemoFunctionMap;
 
 
 #include <Nova.h>
@@ -36,6 +37,7 @@ typedef struct example_Nova_QueueDemo example_Nova_QueueDemo;
 #include <nova/nova_Nova_String.h>
 #include <nova/nova_Nova_System.h>
 #include <nova/meta/nova_meta_Nova_Class.h>
+#include <nova/meta/nova_meta_Nova_FunctionMap.h>
 #include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <nova/NativeObject.h>
 #include <nova/operators/nova_operators_Nova_EqualsOperator.h>
@@ -53,5 +55,18 @@ void example_Nova_QueueDemo_Nova_destroy(example_Nova_QueueDemo** this, nova_exc
 void example_Nova_QueueDemo_static_Nova_main(example_Nova_QueueDemo* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_list_Nova_Array* args);
 void example_Nova_QueueDemo_Nova_this(example_Nova_QueueDemo* this, nova_exception_Nova_ExceptionData* exceptionData);
 void example_Nova_QueueDemo_Nova_super(example_Nova_QueueDemo* this, nova_exception_Nova_ExceptionData* exceptionData);
+
+CCLASS_CLASS
+(
+	example_Nova_example_QueueDemoFunctionMap, 
+	
+	example_QueueDemo_example_QueueDemoFunctionMap_Extension_VTable* vtable;
+)
+
+void example_Nova_example_QueueDemoFunctionMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData);
+example_Nova_example_QueueDemoFunctionMap* example_Nova_example_QueueDemoFunctionMap_Nova_construct(example_Nova_example_QueueDemoFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+void example_Nova_example_QueueDemoFunctionMap_Nova_destroy(example_Nova_example_QueueDemoFunctionMap** this, nova_exception_Nova_ExceptionData* exceptionData);
+void example_Nova_example_QueueDemoFunctionMap_Nova_this(example_Nova_example_QueueDemoFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+void example_Nova_example_QueueDemoFunctionMap_Nova_super(example_Nova_example_QueueDemoFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
 
 #endif

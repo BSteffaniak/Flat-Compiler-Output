@@ -27,6 +27,7 @@
 #include <nova/nova_Nova_String.h>
 #include <nova/nova_Nova_System.h>
 #include <nova/meta/nova_meta_Nova_Class.h>
+#include <nova/meta/nova_meta_Nova_FunctionMap.h>
 #include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <stabilitytest/stabilitytest_Nova_StabilityTest.h>
 #include <nova/NativeObject.h>
@@ -80,5 +81,45 @@ void stabilitytest_Nova_StabilityTestCase_Nova_super(stabilitytest_Nova_Stabilit
 void stabilitytest_Nova_StabilityTestCase_virtual_Nova_test(stabilitytest_Nova_StabilityTestCase* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
 	this->vtable->stabilitytest_Nova_StabilityTestCase_virtual_Nova_test((stabilitytest_Nova_StabilityTestCase*)(this), exceptionData);
+}
+
+void stabilitytest_Nova_stabilitytest_StabilityTestCaseFunctionMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData)
+{
+	{
+	}
+}
+
+stabilitytest_Nova_stabilitytest_StabilityTestCaseFunctionMap* stabilitytest_Nova_stabilitytest_StabilityTestCaseFunctionMap_Nova_construct(stabilitytest_Nova_stabilitytest_StabilityTestCaseFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+	CCLASS_NEW(stabilitytest_Nova_stabilitytest_StabilityTestCaseFunctionMap, this,);
+	this->vtable = &stabilitytest_StabilityTestCase_stabilitytest_StabilityTestCaseFunctionMap_Extension_VTable_val;
+	nova_Nova_Object_Nova_super((nova_Nova_Object*)this, exceptionData);
+	nova_meta_Nova_FunctionMap_Nova_super((nova_meta_Nova_FunctionMap*)this, exceptionData);
+	stabilitytest_Nova_stabilitytest_StabilityTestCaseFunctionMap_Nova_super(this, exceptionData);
+	
+	{
+		stabilitytest_Nova_stabilitytest_StabilityTestCaseFunctionMap_Nova_this(this, exceptionData);
+	}
+	
+	return this;
+}
+
+void stabilitytest_Nova_stabilitytest_StabilityTestCaseFunctionMap_Nova_destroy(stabilitytest_Nova_stabilitytest_StabilityTestCaseFunctionMap** this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+	if (!*this)
+	{
+		return;
+	}
+	
+	
+	NOVA_FREE(*this);
+}
+
+void stabilitytest_Nova_stabilitytest_StabilityTestCaseFunctionMap_Nova_this(stabilitytest_Nova_stabilitytest_StabilityTestCaseFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+}
+
+void stabilitytest_Nova_stabilitytest_StabilityTestCaseFunctionMap_Nova_super(stabilitytest_Nova_stabilitytest_StabilityTestCaseFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+{
 }
 

@@ -2,6 +2,7 @@
 #define FILE_spectra_util_Nova_Location_NOVA
 
 typedef struct spectra_util_Nova_Location spectra_util_Nova_Location;
+typedef struct spectra_util_Nova_spectra_util_LocationFunctionMap spectra_util_Nova_spectra_util_LocationFunctionMap;
 
 
 #include <Nova.h>
@@ -36,6 +37,7 @@ typedef struct spectra_util_Nova_Location spectra_util_Nova_Location;
 #include <nova/nova_Nova_String.h>
 #include <nova/nova_Nova_System.h>
 #include <nova/meta/nova_meta_Nova_Class.h>
+#include <nova/meta/nova_meta_Nova_FunctionMap.h>
 #include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <nova/datastruct/nova_datastruct_Nova_Bounds.h>
 #include <nova/NativeObject.h>
@@ -77,5 +79,18 @@ char spectra_util_Nova_Location_Nova_isValid(spectra_util_Nova_Location* this, n
 spectra_util_Nova_Location* spectra_util_Nova_Location_Nova_asNew(spectra_util_Nova_Location* this, nova_exception_Nova_ExceptionData* exceptionData);
 nova_Nova_String* spectra_util_Nova_Location_Nova_toString(spectra_util_Nova_Location* this, nova_exception_Nova_ExceptionData* exceptionData);
 void spectra_util_Nova_Location_Nova_super(spectra_util_Nova_Location* this, nova_exception_Nova_ExceptionData* exceptionData);
+
+CCLASS_CLASS
+(
+	spectra_util_Nova_spectra_util_LocationFunctionMap, 
+	
+	spectra_util_Location_spectra_util_LocationFunctionMap_Extension_VTable* vtable;
+)
+
+void spectra_util_Nova_spectra_util_LocationFunctionMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData);
+spectra_util_Nova_spectra_util_LocationFunctionMap* spectra_util_Nova_spectra_util_LocationFunctionMap_Nova_construct(spectra_util_Nova_spectra_util_LocationFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+void spectra_util_Nova_spectra_util_LocationFunctionMap_Nova_destroy(spectra_util_Nova_spectra_util_LocationFunctionMap** this, nova_exception_Nova_ExceptionData* exceptionData);
+void spectra_util_Nova_spectra_util_LocationFunctionMap_Nova_this(spectra_util_Nova_spectra_util_LocationFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+void spectra_util_Nova_spectra_util_LocationFunctionMap_Nova_super(spectra_util_Nova_spectra_util_LocationFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
 
 #endif

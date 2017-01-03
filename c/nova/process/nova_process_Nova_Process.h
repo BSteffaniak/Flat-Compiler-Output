@@ -2,6 +2,7 @@
 #define FILE_nova_process_Nova_Process_NOVA
 
 typedef struct nova_process_Nova_Process nova_process_Nova_Process;
+typedef struct nova_process_Nova_nova_process_ProcessFunctionMap nova_process_Nova_nova_process_ProcessFunctionMap;
 
 
 #include <Nova.h>
@@ -36,6 +37,7 @@ typedef struct nova_process_Nova_Process nova_process_Nova_Process;
 #include <nova/nova_Nova_String.h>
 #include <nova/nova_Nova_System.h>
 #include <nova/meta/nova_meta_Nova_Class.h>
+#include <nova/meta/nova_meta_Nova_FunctionMap.h>
 #include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <nova/io/nova_io_Nova_InputStream.h>
 #include <nova/NativeObject.h>
@@ -54,5 +56,18 @@ nova_process_Nova_Process* nova_process_Nova_Process_Nova_construct(nova_process
 void nova_process_Nova_Process_Nova_destroy(nova_process_Nova_Process** this, nova_exception_Nova_ExceptionData* exceptionData);
 void nova_process_Nova_Process_Nova_this(nova_process_Nova_Process* this, nova_exception_Nova_ExceptionData* exceptionData, nova_io_Nova_InputStream* reader);
 void nova_process_Nova_Process_Nova_super(nova_process_Nova_Process* this, nova_exception_Nova_ExceptionData* exceptionData);
+
+CCLASS_CLASS
+(
+	nova_process_Nova_nova_process_ProcessFunctionMap, 
+	
+	nova_process_Process_nova_process_ProcessFunctionMap_Extension_VTable* vtable;
+)
+
+void nova_process_Nova_nova_process_ProcessFunctionMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData);
+nova_process_Nova_nova_process_ProcessFunctionMap* nova_process_Nova_nova_process_ProcessFunctionMap_Nova_construct(nova_process_Nova_nova_process_ProcessFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+void nova_process_Nova_nova_process_ProcessFunctionMap_Nova_destroy(nova_process_Nova_nova_process_ProcessFunctionMap** this, nova_exception_Nova_ExceptionData* exceptionData);
+void nova_process_Nova_nova_process_ProcessFunctionMap_Nova_this(nova_process_Nova_nova_process_ProcessFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+void nova_process_Nova_nova_process_ProcessFunctionMap_Nova_super(nova_process_Nova_nova_process_ProcessFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
 
 #endif

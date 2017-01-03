@@ -2,6 +2,7 @@
 #define FILE_example_Nova_HashSetDemo_NOVA
 
 typedef struct example_Nova_HashSetDemo example_Nova_HashSetDemo;
+typedef struct example_Nova_example_HashSetDemoFunctionMap example_Nova_example_HashSetDemoFunctionMap;
 
 
 #include <Nova.h>
@@ -36,6 +37,7 @@ typedef struct example_Nova_HashSetDemo example_Nova_HashSetDemo;
 #include <nova/nova_Nova_String.h>
 #include <nova/nova_Nova_System.h>
 #include <nova/meta/nova_meta_Nova_Class.h>
+#include <nova/meta/nova_meta_Nova_FunctionMap.h>
 #include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <nova/datastruct/nova_datastruct_Nova_HashSet.h>
 #include <nova/time/nova_time_Nova_Timer.h>
@@ -55,5 +57,18 @@ void example_Nova_HashSetDemo_Nova_destroy(example_Nova_HashSetDemo** this, nova
 void example_Nova_HashSetDemo_static_Nova_main(example_Nova_HashSetDemo* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_list_Nova_Array* args);
 void example_Nova_HashSetDemo_Nova_this(example_Nova_HashSetDemo* this, nova_exception_Nova_ExceptionData* exceptionData);
 void example_Nova_HashSetDemo_Nova_super(example_Nova_HashSetDemo* this, nova_exception_Nova_ExceptionData* exceptionData);
+
+CCLASS_CLASS
+(
+	example_Nova_example_HashSetDemoFunctionMap, 
+	
+	example_HashSetDemo_example_HashSetDemoFunctionMap_Extension_VTable* vtable;
+)
+
+void example_Nova_example_HashSetDemoFunctionMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData);
+example_Nova_example_HashSetDemoFunctionMap* example_Nova_example_HashSetDemoFunctionMap_Nova_construct(example_Nova_example_HashSetDemoFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+void example_Nova_example_HashSetDemoFunctionMap_Nova_destroy(example_Nova_example_HashSetDemoFunctionMap** this, nova_exception_Nova_ExceptionData* exceptionData);
+void example_Nova_example_HashSetDemoFunctionMap_Nova_this(example_Nova_example_HashSetDemoFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+void example_Nova_example_HashSetDemoFunctionMap_Nova_super(example_Nova_example_HashSetDemoFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
 
 #endif

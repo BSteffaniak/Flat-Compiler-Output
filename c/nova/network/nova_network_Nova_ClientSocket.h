@@ -2,6 +2,7 @@
 #define FILE_nova_network_Nova_ClientSocket_NOVA
 
 typedef struct nova_network_Nova_ClientSocket nova_network_Nova_ClientSocket;
+typedef struct nova_network_Nova_nova_network_ClientSocketFunctionMap nova_network_Nova_nova_network_ClientSocketFunctionMap;
 
 
 #include <Nova.h>
@@ -36,6 +37,7 @@ typedef struct nova_network_Nova_ClientSocket nova_network_Nova_ClientSocket;
 #include <nova/nova_Nova_String.h>
 #include <nova/nova_Nova_System.h>
 #include <nova/meta/nova_meta_Nova_Class.h>
+#include <nova/meta/nova_meta_Nova_FunctionMap.h>
 #include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <nova/network/NativeClientSocket.h>
 #include <nova/network/NativeSocket.h>
@@ -62,5 +64,18 @@ void nova_network_Nova_ClientSocket_Nova_this(nova_network_Nova_ClientSocket* th
 char nova_network_Nova_ClientSocket_Nova_connect(nova_network_Nova_ClientSocket* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* ipAddress, int port);
 char nova_network_Nova_ClientSocket_Nova_close(nova_network_Nova_ClientSocket* this, nova_exception_Nova_ExceptionData* exceptionData);
 void nova_network_Nova_ClientSocket_Nova_super(nova_network_Nova_ClientSocket* this, nova_exception_Nova_ExceptionData* exceptionData);
+
+CCLASS_CLASS
+(
+	nova_network_Nova_nova_network_ClientSocketFunctionMap, 
+	
+	nova_network_ClientSocket_nova_network_ClientSocketFunctionMap_Extension_VTable* vtable;
+)
+
+void nova_network_Nova_nova_network_ClientSocketFunctionMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData);
+nova_network_Nova_nova_network_ClientSocketFunctionMap* nova_network_Nova_nova_network_ClientSocketFunctionMap_Nova_construct(nova_network_Nova_nova_network_ClientSocketFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+void nova_network_Nova_nova_network_ClientSocketFunctionMap_Nova_destroy(nova_network_Nova_nova_network_ClientSocketFunctionMap** this, nova_exception_Nova_ExceptionData* exceptionData);
+void nova_network_Nova_nova_network_ClientSocketFunctionMap_Nova_this(nova_network_Nova_nova_network_ClientSocketFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+void nova_network_Nova_nova_network_ClientSocketFunctionMap_Nova_super(nova_network_Nova_nova_network_ClientSocketFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
 
 #endif

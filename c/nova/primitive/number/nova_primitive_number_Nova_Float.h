@@ -2,6 +2,7 @@
 #define FILE_nova_primitive_number_Nova_Float_NOVA
 
 typedef struct nova_primitive_number_Nova_Float nova_primitive_number_Nova_Float;
+typedef struct nova_primitive_number_Nova_nova_primitive_number_FloatFunctionMap nova_primitive_number_Nova_nova_primitive_number_FloatFunctionMap;
 
 
 #include <Nova.h>
@@ -36,6 +37,7 @@ typedef struct nova_primitive_number_Nova_Float nova_primitive_number_Nova_Float
 #include <nova/nova_Nova_String.h>
 #include <nova/nova_Nova_System.h>
 #include <nova/meta/nova_meta_Nova_Class.h>
+#include <nova/meta/nova_meta_Nova_FunctionMap.h>
 #include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <nova/datastruct/nova_datastruct_Nova_Comparable.h>
 #include <nova/primitive/number/nova_primitive_number_Nova_RealNumber.h>
@@ -62,5 +64,18 @@ nova_Nova_String* nova_primitive_number_Nova_Float_Nova_toString(nova_primitive_
 int nova_primitive_number_Nova_Float_static_Nova_numDigits(nova_primitive_number_Nova_Float* this, nova_exception_Nova_ExceptionData* exceptionData, float number);
 nova_Nova_String* nova_primitive_number_Nova_Float_static_Nova_toString(nova_primitive_number_Nova_Float* this, nova_exception_Nova_ExceptionData* exceptionData, float value);
 void nova_primitive_number_Nova_Float_Nova_super(nova_primitive_number_Nova_Float* this, nova_exception_Nova_ExceptionData* exceptionData);
+
+CCLASS_CLASS
+(
+	nova_primitive_number_Nova_nova_primitive_number_FloatFunctionMap, 
+	
+	nova_primitive_number_Float_nova_primitive_number_FloatFunctionMap_Extension_VTable* vtable;
+)
+
+void nova_primitive_number_Nova_nova_primitive_number_FloatFunctionMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData);
+nova_primitive_number_Nova_nova_primitive_number_FloatFunctionMap* nova_primitive_number_Nova_nova_primitive_number_FloatFunctionMap_Nova_construct(nova_primitive_number_Nova_nova_primitive_number_FloatFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+void nova_primitive_number_Nova_nova_primitive_number_FloatFunctionMap_Nova_destroy(nova_primitive_number_Nova_nova_primitive_number_FloatFunctionMap** this, nova_exception_Nova_ExceptionData* exceptionData);
+void nova_primitive_number_Nova_nova_primitive_number_FloatFunctionMap_Nova_this(nova_primitive_number_Nova_nova_primitive_number_FloatFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+void nova_primitive_number_Nova_nova_primitive_number_FloatFunctionMap_Nova_super(nova_primitive_number_Nova_nova_primitive_number_FloatFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
 
 #endif

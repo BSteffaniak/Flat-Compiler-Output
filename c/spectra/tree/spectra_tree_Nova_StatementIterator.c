@@ -27,6 +27,7 @@
 #include <nova/nova_Nova_String.h>
 #include <nova/nova_Nova_System.h>
 #include <nova/meta/nova_meta_Nova_Class.h>
+#include <nova/meta/nova_meta_Nova_FunctionMap.h>
 #include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_NoSuchElementException.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_Iterator.h>
@@ -194,5 +195,45 @@ void spectra_tree_Nova_StatementIterator_Nova_super(spectra_tree_Nova_StatementI
 	this->spectra_tree_Nova_StatementIterator_Nova_scopesEnded = 0;
 	this->spectra_tree_Nova_StatementIterator_Nova_position = 0;
 	this->prv->spectra_tree_Nova_StatementIterator_Nova_parents = (nova_datastruct_list_Nova_Stack*)nova_null;
+}
+
+void spectra_tree_Nova_spectra_tree_StatementIteratorFunctionMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData)
+{
+	{
+	}
+}
+
+spectra_tree_Nova_spectra_tree_StatementIteratorFunctionMap* spectra_tree_Nova_spectra_tree_StatementIteratorFunctionMap_Nova_construct(spectra_tree_Nova_spectra_tree_StatementIteratorFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+	CCLASS_NEW(spectra_tree_Nova_spectra_tree_StatementIteratorFunctionMap, this,);
+	this->vtable = &spectra_tree_StatementIterator_spectra_tree_StatementIteratorFunctionMap_Extension_VTable_val;
+	nova_Nova_Object_Nova_super((nova_Nova_Object*)this, exceptionData);
+	nova_meta_Nova_FunctionMap_Nova_super((nova_meta_Nova_FunctionMap*)this, exceptionData);
+	spectra_tree_Nova_spectra_tree_StatementIteratorFunctionMap_Nova_super(this, exceptionData);
+	
+	{
+		spectra_tree_Nova_spectra_tree_StatementIteratorFunctionMap_Nova_this(this, exceptionData);
+	}
+	
+	return this;
+}
+
+void spectra_tree_Nova_spectra_tree_StatementIteratorFunctionMap_Nova_destroy(spectra_tree_Nova_spectra_tree_StatementIteratorFunctionMap** this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+	if (!*this)
+	{
+		return;
+	}
+	
+	
+	NOVA_FREE(*this);
+}
+
+void spectra_tree_Nova_spectra_tree_StatementIteratorFunctionMap_Nova_this(spectra_tree_Nova_spectra_tree_StatementIteratorFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+}
+
+void spectra_tree_Nova_spectra_tree_StatementIteratorFunctionMap_Nova_super(spectra_tree_Nova_spectra_tree_StatementIteratorFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+{
 }
 
