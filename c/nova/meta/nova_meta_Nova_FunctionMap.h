@@ -2,6 +2,7 @@
 #define FILE_nova_meta_Nova_FunctionMap_NOVA
 
 typedef struct nova_meta_Nova_FunctionMap nova_meta_Nova_FunctionMap;
+typedef struct nova_meta_Nova_ModifierFunctionMap nova_meta_Nova_ModifierFunctionMap;
 
 
 #include <Nova.h>
@@ -52,5 +53,17 @@ nova_meta_Nova_FunctionMap* nova_meta_Nova_FunctionMap_Nova_construct(nova_meta_
 void nova_meta_Nova_FunctionMap_Nova_destroy(nova_meta_Nova_FunctionMap** this, nova_exception_Nova_ExceptionData* exceptionData);
 void nova_meta_Nova_FunctionMap_Nova_this(nova_meta_Nova_FunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
 void nova_meta_Nova_FunctionMap_Nova_super(nova_meta_Nova_FunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+CCLASS_CLASS
+(
+	nova_meta_Nova_ModifierFunctionMap, 
+	
+	nova_meta_FunctionMap_ModifierFunctionMap_Extension_VTable* vtable;
+)
+
+void nova_meta_Nova_ModifierFunctionMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData);
+nova_meta_Nova_ModifierFunctionMap* nova_meta_Nova_ModifierFunctionMap_Nova_construct(nova_meta_Nova_ModifierFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+void nova_meta_Nova_ModifierFunctionMap_Nova_destroy(nova_meta_Nova_ModifierFunctionMap** this, nova_exception_Nova_ExceptionData* exceptionData);
+void nova_meta_Nova_ModifierFunctionMap_Nova_this(nova_meta_Nova_ModifierFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+void nova_meta_Nova_ModifierFunctionMap_Nova_super(nova_meta_Nova_ModifierFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
 
 #endif

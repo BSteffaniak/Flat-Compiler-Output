@@ -30,6 +30,8 @@
 #include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <nova/datastruct/nova_datastruct_Nova_HashMap.h>
 #include <nova/datastruct/nova_datastruct_Nova_ImmutableHashMap.h>
+#include <spectra/tree/nodes/spectra_tree_nodes_Nova_Node.h>
+#include <spectra/tree/nodes/annotations/spectra_tree_nodes_annotations_Nova_Annotation.h>
 
 
 
@@ -40,5 +42,38 @@ void spectra_tree_nodes_annotations_Nova_Modifier_Nova_init_static(nova_exceptio
 	}
 	{
 	}
+}
+
+char spectra_tree_nodes_annotations_Nova_Modifier_Nova_apply(spectra_tree_nodes_annotations_Nova_Modifier* this, nova_exception_Nova_ExceptionData* exceptionData, spectra_tree_nodes_Nova_Node* to, nova_Nova_String* alias)
+{
+	if (to != ((spectra_tree_nodes_annotations_Nova_Annotation*)this)->spectra_tree_nodes_Nova_Node_Nova_parent)
+	{
+		if (spectra_tree_nodes_annotations_Nova_Modifier_Nova_onAppliedAsModifier(this, exceptionData, to, 0))
+		{
+			spectra_tree_nodes_Nova_Node_Nova_addAnnotation(to, exceptionData, (spectra_tree_nodes_annotations_Nova_Annotation*)this);
+			spectra_tree_nodes_annotations_Nova_Modifier_Mutator_Nova_aliasUsed(this, exceptionData, alias);
+		}
+		else
+		{
+			return 0;
+		}
+	}
+	return 1;
+}
+
+char spectra_tree_nodes_annotations_Nova_Modifier_Nova_onAppliedAsModifier(spectra_tree_nodes_annotations_Nova_Modifier* this, nova_exception_Nova_ExceptionData* exceptionData, spectra_tree_nodes_Nova_Node* toNode, int throwError)
+{
+	throwError = (int)(throwError == (intptr_t)nova_null ? 1 : throwError);
+	return spectra_tree_nodes_annotations_Nova_Annotation_Nova_onApplied(((spectra_tree_nodes_annotations_Nova_Annotation*)this), exceptionData, toNode, throwError);
+}
+
+nova_Nova_String* spectra_tree_nodes_annotations_Nova_Modifier_Accessor_Nova_aliasUsed(spectra_tree_nodes_annotations_Nova_Modifier* this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+	return (nova_Nova_String*)(nova_Nova_Object*)nova_null;
+}
+
+nova_Nova_String* spectra_tree_nodes_annotations_Nova_Modifier_Mutator_Nova_aliasUsed(spectra_tree_nodes_annotations_Nova_Modifier* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* value)
+{
+	return value;
 }
 

@@ -301,6 +301,9 @@ extern nova_meta_Field_Extension_VTable nova_meta_Field_Extension_VTable_val;
 typedef struct nova_meta_FunctionMap_Extension_VTable nova_meta_FunctionMap_Extension_VTable;
 extern nova_meta_FunctionMap_Extension_VTable nova_meta_FunctionMap_Extension_VTable_val;
 
+typedef struct nova_meta_FunctionMap_ModifierFunctionMap_Extension_VTable nova_meta_FunctionMap_ModifierFunctionMap_Extension_VTable;
+extern nova_meta_FunctionMap_ModifierFunctionMap_Extension_VTable nova_meta_FunctionMap_ModifierFunctionMap_Extension_VTable_val;
+
 typedef struct nova_meta_GenericArgument_Extension_VTable nova_meta_GenericArgument_Extension_VTable;
 extern nova_meta_GenericArgument_Extension_VTable nova_meta_GenericArgument_Extension_VTable_val;
 
@@ -2413,6 +2416,17 @@ long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Objec
 
 
 struct nova_meta_FunctionMap_Extension_VTable
+{
+nova_meta_Nova_Class* classInstance;
+nova_Interface_VTable itable;
+nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
+long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
+};
+
+
+
+
+struct nova_meta_FunctionMap_ModifierFunctionMap_Extension_VTable
 {
 nova_meta_Nova_Class* classInstance;
 nova_Interface_VTable itable;

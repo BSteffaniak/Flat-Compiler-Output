@@ -612,6 +612,9 @@ nova_env novaEnv = {
 {
 &nova_meta_Nova_FunctionMap_Nova_construct,
 },
+{
+&nova_meta_Nova_ModifierFunctionMap_Nova_construct,
+},
 
 {
 &nova_meta_Nova_GenericArgument_Nova_construct,
@@ -1101,6 +1104,7 @@ nova_env novaEnv = {
 },
 
 {
+&spectra_tree_nodes_annotations_Nova_Annotation_Nova_onApplied,
 &spectra_tree_nodes_annotations_Nova_Annotation_Nova_construct,
 },
 
@@ -1125,6 +1129,8 @@ nova_env novaEnv = {
 },
 
 {
+&spectra_tree_nodes_annotations_Nova_Modifier_Nova_apply,
+&spectra_tree_nodes_annotations_Nova_Modifier_Nova_onAppliedAsModifier,
 },
 
 {
