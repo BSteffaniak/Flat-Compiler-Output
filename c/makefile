@@ -6,14 +6,4 @@ NOVA_STDLIB_LOCATION = ../../StandardLibrary
 
 MAKEFILE_LOCATION = $(NOVA_COMPILE_HOME)/makefile.nova
 
-export NOVA_DEPS
-export NOVA_OBJ
-export NOVA_STDLIB_LOCATION
-export NOVA_COMPILE_HOME
-
-.PHONY: install link headers clean
-
-install:; $(MAKE) -f $(MAKEFILE_LOCATION) install
-link:; $(MAKE) -f $(MAKEFILE_LOCATION) link
-headers:; $(MAKE) -f $(MAKEFILE_LOCATION) headers
-clean:; $(MAKE) -f $(MAKEFILE_LOCATION) clean
+include $(MAKEFILE_LOCATION)
