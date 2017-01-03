@@ -59,7 +59,7 @@ typedef int (*nova_datastruct_list_Nova_Array_closure20_Nova_comparator)(void*, 
 #include <nova/nova_Nova_Object.h>
 #include <nova/nova_Nova_String.h>
 #include <nova/nova_Nova_System.h>
-#include <nova/nova_Nova_Class.h>
+#include <nova/meta/nova_meta_Nova_Class.h>
 #include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <nova/datastruct/nova_datastruct_Nova_Comparable.h>
 #include <nova/operators/nova_operators_Nova_PlusOperator.h>

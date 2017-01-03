@@ -26,7 +26,7 @@
 #include <nova/nova_Nova_Object.h>
 #include <nova/nova_Nova_String.h>
 #include <nova/nova_Nova_System.h>
-#include <nova/nova_Nova_Class.h>
+#include <nova/meta/nova_meta_Nova_Class.h>
 #include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <nova/io/nova_io_Nova_File.h>
 #include <nova/io/nova_io_Nova_FileReader.h>
@@ -160,15 +160,15 @@ void spectra_tree_nodes_Nova_NovaFile_Nova_this(spectra_tree_nodes_Nova_NovaFile
 
 void spectra_tree_nodes_Nova_NovaFile_Nova_addChild(spectra_tree_nodes_Nova_NovaFile* this, nova_exception_Nova_ExceptionData* exceptionData, spectra_tree_nodes_Nova_Node* child)
 {
-	if (nova_Nova_Class_Nova_isOfType(child->vtable->classInstance, exceptionData, (nova_Nova_Class*)(spectra_tree_nodes_ClassDeclaration_Extension_VTable_val.classInstance)))
+	if (nova_meta_Nova_Class_Nova_isOfType(child->vtable->classInstance, exceptionData, (nova_meta_Nova_Class*)(spectra_tree_nodes_ClassDeclaration_Extension_VTable_val.classInstance)))
 	{
 		spectra_tree_nodes_Nova_NovaFile_Nova_addClass(this, exceptionData, (spectra_tree_nodes_Nova_ClassDeclaration*)child);
 	}
-	else if (nova_Nova_Class_Nova_isOfType(child->vtable->classInstance, exceptionData, (nova_Nova_Class*)(spectra_tree_nodes_Import_Extension_VTable_val.classInstance)))
+	else if (nova_meta_Nova_Class_Nova_isOfType(child->vtable->classInstance, exceptionData, (nova_meta_Nova_Class*)(spectra_tree_nodes_Import_Extension_VTable_val.classInstance)))
 	{
 		nova_datastruct_list_Nova_Array_0_Nova_add((nova_datastruct_list_Nova_Array*)(spectra_tree_nodes_Nova_NovaFile_Accessor_Nova_imports(this, exceptionData)), exceptionData, (nova_Nova_Object*)((spectra_tree_nodes_Nova_Import*)child));
 	}
-	else if (nova_Nova_Class_Nova_isOfType(child->vtable->classInstance, exceptionData, (nova_Nova_Class*)(spectra_tree_nodes_Package_Extension_VTable_val.classInstance)))
+	else if (nova_meta_Nova_Class_Nova_isOfType(child->vtable->classInstance, exceptionData, (nova_meta_Nova_Class*)(spectra_tree_nodes_Package_Extension_VTable_val.classInstance)))
 	{
 		this->spectra_tree_nodes_Nova_NovaFile_Nova_packageDeclaration = (spectra_tree_nodes_Nova_Package*)child;
 	}
@@ -356,7 +356,7 @@ nova_datastruct_list_Nova_Array* generated17(spectra_tree_nodes_Nova_NovaFile* t
 	l1_Nova_temp[22] = nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("nova/Object"));
 	l1_Nova_temp[23] = nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("nova/String"));
 	l1_Nova_temp[24] = nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("nova/System"));
-	l1_Nova_temp[25] = nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("nova/Class"));
+	l1_Nova_temp[25] = nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("nova/meta/Class"));
 	return nova_datastruct_list_Nova_Array_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)(l1_Nova_temp), 26);
 }
 

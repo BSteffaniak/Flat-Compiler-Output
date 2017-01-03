@@ -35,7 +35,7 @@ typedef struct nova_exception_Nova_CaughtException nova_exception_Nova_CaughtExc
 #include <nova/nova_Nova_Object.h>
 #include <nova/nova_Nova_String.h>
 #include <nova/nova_Nova_System.h>
-#include <nova/nova_Nova_Class.h>
+#include <nova/meta/nova_meta_Nova_Class.h>
 #include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <nova/NativeObject.h>
 #include <nova/operators/nova_operators_Nova_EqualsOperator.h>
@@ -45,14 +45,14 @@ CCLASS_CLASS
 	nova_exception_Nova_CaughtException, 
 	
 	nova_exception_CaughtException_Extension_VTable* vtable;
-	nova_Nova_Class* nova_exception_Nova_CaughtException_Nova_type;
+	nova_meta_Nova_Class* nova_exception_Nova_CaughtException_Nova_type;
 	char nova_exception_Nova_CaughtException_Nova_soft;
 )
 
 void nova_exception_Nova_CaughtException_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData);
-nova_exception_Nova_CaughtException* nova_exception_Nova_CaughtException_Nova_construct(nova_exception_Nova_CaughtException* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_Class* type, int soft);
+nova_exception_Nova_CaughtException* nova_exception_Nova_CaughtException_Nova_construct(nova_exception_Nova_CaughtException* this, nova_exception_Nova_ExceptionData* exceptionData, nova_meta_Nova_Class* type, int soft);
 void nova_exception_Nova_CaughtException_Nova_destroy(nova_exception_Nova_CaughtException** this, nova_exception_Nova_ExceptionData* exceptionData);
-void nova_exception_Nova_CaughtException_Nova_this(nova_exception_Nova_CaughtException* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_Class* type, int soft);
+void nova_exception_Nova_CaughtException_Nova_this(nova_exception_Nova_CaughtException* this, nova_exception_Nova_ExceptionData* exceptionData, nova_meta_Nova_Class* type, int soft);
 void nova_exception_Nova_CaughtException_Nova_super(nova_exception_Nova_CaughtException* this, nova_exception_Nova_ExceptionData* exceptionData);
 
 #endif

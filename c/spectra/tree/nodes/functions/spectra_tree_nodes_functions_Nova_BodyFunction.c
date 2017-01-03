@@ -26,7 +26,7 @@
 #include <nova/nova_Nova_Object.h>
 #include <nova/nova_Nova_String.h>
 #include <nova/nova_Nova_System.h>
-#include <nova/nova_Nova_Class.h>
+#include <nova/meta/nova_meta_Nova_Class.h>
 #include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <spectra/tree/nodes/spectra_tree_nodes_Nova_Node.h>
 #include <spectra/tree/nodes/spectra_tree_nodes_Nova_Scope.h>
@@ -206,10 +206,10 @@ else
 
 char spectra_tree_nodes_functions_Nova_BodyFunction_Nova_parseInlineBody(spectra_tree_nodes_functions_Nova_BodyFunction* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
-	if (nova_Nova_Class_Nova_isOfType(this->spectra_tree_nodes_functions_Nova_BodyFunction_Nova_inlineBody->vtable->classInstance, exceptionData, (nova_Nova_Class*)(spectra_tree_nodes_PlaceholderValue_Extension_VTable_val.classInstance)))
+	if (nova_meta_Nova_Class_Nova_isOfType(this->spectra_tree_nodes_functions_Nova_BodyFunction_Nova_inlineBody->vtable->classInstance, exceptionData, (nova_meta_Nova_Class*)(spectra_tree_nodes_PlaceholderValue_Extension_VTable_val.classInstance)))
 	{
 		this->spectra_tree_nodes_functions_Nova_BodyFunction_Nova_inlineBody = (spectra_tree_nodes_Nova_Node*)(spectra_tree_nodes_Nova_Scope_Nova_parseStatement(spectra_tree_nodes_functions_Nova_BodyFunction_Accessorfunc_Nova_scope(this, exceptionData), exceptionData, ((spectra_tree_nodes_Nova_PlaceholderValue*)this->spectra_tree_nodes_functions_Nova_BodyFunction_Nova_inlineBody)->spectra_tree_nodes_Nova_PlaceholderValue_Nova_value, this->spectra_tree_nodes_functions_Nova_BodyFunction_Nova_inlineBody->spectra_tree_nodes_Nova_Node_Nova_parent, 0, (intptr_t)nova_null));
-		if (nova_Nova_Class_Nova_isOfType(this->spectra_tree_nodes_functions_Nova_BodyFunction_Nova_inlineBody->vtable->classInstance, exceptionData, (nova_Nova_Class*)(spectra_tree_nodes_Value_Extension_VTable_val.classInstance)))
+		if (nova_meta_Nova_Class_Nova_isOfType(this->spectra_tree_nodes_functions_Nova_BodyFunction_Nova_inlineBody->vtable->classInstance, exceptionData, (nova_meta_Nova_Class*)(spectra_tree_nodes_Value_Extension_VTable_val.classInstance)))
 		{
 			spectra_tree_nodes_Nova_Type* l3_Nova_type = (spectra_tree_nodes_Nova_Type*)nova_null;
 			

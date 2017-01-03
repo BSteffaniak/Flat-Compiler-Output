@@ -35,7 +35,7 @@ typedef struct nova_math_logic_Nova_Conclusion nova_math_logic_Nova_Conclusion;
 #include <nova/nova_Nova_Object.h>
 #include <nova/nova_Nova_String.h>
 #include <nova/nova_Nova_System.h>
-#include <nova/nova_Nova_Class.h>
+#include <nova/meta/nova_meta_Nova_Class.h>
 #include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <nova/math/logic/nova_math_logic_Nova_LogicalStatement.h>
 #include <nova/math/nova_math_Nova_Statement.h>

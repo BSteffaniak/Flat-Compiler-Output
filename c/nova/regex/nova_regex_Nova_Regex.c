@@ -26,7 +26,7 @@
 #include <nova/nova_Nova_Object.h>
 #include <nova/nova_Nova_String.h>
 #include <nova/nova_Nova_System.h>
-#include <nova/nova_Nova_Class.h>
+#include <nova/meta/nova_meta_Nova_Class.h>
 #include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <nova/regex/nova_regex_Nova_Match.h>
 #include <pcre/pcre2.h>
@@ -62,7 +62,7 @@ void nova_regex_Nova_Regex_Nova_destroy(nova_regex_Nova_Regex** this, nova_excep
 		return;
 	}
 	
-	nova_Nova_Class_Nova_destroy(&(*this)->nova_regex_Nova_Regex_Nova_class, exceptionData);
+	nova_meta_Nova_Class_Nova_destroy(&(*this)->nova_regex_Nova_Regex_Nova_class, exceptionData);
 	
 	NOVA_FREE(*this);
 }
@@ -198,6 +198,6 @@ void nova_regex_Nova_Regex_Nova_this(nova_regex_Nova_Regex* this, nova_exception
 
 void nova_regex_Nova_Regex_Nova_super(nova_regex_Nova_Regex* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
-	this->nova_regex_Nova_Regex_Nova_class = (nova_Nova_Class*)nova_null;
+	this->nova_regex_Nova_Regex_Nova_class = (nova_meta_Nova_Class*)nova_null;
 }
 

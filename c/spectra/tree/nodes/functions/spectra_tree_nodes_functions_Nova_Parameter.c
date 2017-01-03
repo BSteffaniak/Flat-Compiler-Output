@@ -26,7 +26,7 @@
 #include <nova/nova_Nova_Object.h>
 #include <nova/nova_Nova_String.h>
 #include <nova/nova_Nova_System.h>
-#include <nova/nova_Nova_Class.h>
+#include <nova/meta/nova_meta_Nova_Class.h>
 #include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <spectra/tree/nodes/spectra_tree_nodes_Nova_Node.h>
 #include <spectra/tree/nodes/spectra_tree_nodes_Nova_Value.h>
@@ -160,7 +160,7 @@ spectra_tree_nodes_functions_Nova_Parameter* spectra_tree_nodes_functions_Nova_P
 
 char spectra_tree_nodes_functions_Nova_Parameter_Nova_parsePlaceholders(spectra_tree_nodes_functions_Nova_Parameter* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
-	return (char)(nova_Nova_Class_Nova_isOfType(this->spectra_tree_nodes_functions_Nova_Parameter_Nova_defaultValue->vtable->classInstance, exceptionData, (nova_Nova_Class*)(spectra_tree_nodes_PlaceholderValue_Extension_VTable_val.classInstance)) ? (this->spectra_tree_nodes_functions_Nova_Parameter_Nova_defaultValue = spectra_tree_nodes_Nova_Value_1_static_Nova_parse(0, exceptionData, (spectra_tree_nodes_Nova_PlaceholderValue*)this->spectra_tree_nodes_functions_Nova_Parameter_Nova_defaultValue, (intptr_t)nova_null)) != (spectra_tree_nodes_Nova_Value*)nova_null : 1);
+	return (char)(nova_meta_Nova_Class_Nova_isOfType(this->spectra_tree_nodes_functions_Nova_Parameter_Nova_defaultValue->vtable->classInstance, exceptionData, (nova_meta_Nova_Class*)(spectra_tree_nodes_PlaceholderValue_Extension_VTable_val.classInstance)) ? (this->spectra_tree_nodes_functions_Nova_Parameter_Nova_defaultValue = spectra_tree_nodes_Nova_Value_1_static_Nova_parse(0, exceptionData, (spectra_tree_nodes_Nova_PlaceholderValue*)this->spectra_tree_nodes_functions_Nova_Parameter_Nova_defaultValue, (intptr_t)nova_null)) != (spectra_tree_nodes_Nova_Value*)nova_null : 1);
 }
 
 spectra_tree_nodes_functions_Nova_Parameter* spectra_tree_nodes_functions_Nova_Parameter_Nova_cloneTo(spectra_tree_nodes_functions_Nova_Parameter* this, nova_exception_Nova_ExceptionData* exceptionData, spectra_tree_nodes_functions_Nova_Parameter* other)
@@ -172,7 +172,7 @@ spectra_tree_nodes_functions_Nova_Parameter* spectra_tree_nodes_functions_Nova_P
 
 spectra_tree_nodes_functions_Nova_ParameterList* spectra_tree_nodes_functions_Nova_Parameter_Accessor_Nova_parentParameterList(spectra_tree_nodes_functions_Nova_Parameter* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
-	return (spectra_tree_nodes_functions_Nova_ParameterList*)(nova_Nova_Class_Nova_isOfType(this->spectra_tree_nodes_Nova_Node_Nova_parent->vtable->classInstance, exceptionData, (nova_Nova_Class*)(spectra_tree_nodes_functions_ParameterList_Extension_VTable_val.classInstance)) ? (nova_Nova_Object*)(spectra_tree_nodes_functions_Nova_ParameterList*)this->spectra_tree_nodes_Nova_Node_Nova_parent : (nova_Nova_Object*)nova_null);
+	return (spectra_tree_nodes_functions_Nova_ParameterList*)(nova_meta_Nova_Class_Nova_isOfType(this->spectra_tree_nodes_Nova_Node_Nova_parent->vtable->classInstance, exceptionData, (nova_meta_Nova_Class*)(spectra_tree_nodes_functions_ParameterList_Extension_VTable_val.classInstance)) ? (nova_Nova_Object*)(spectra_tree_nodes_functions_Nova_ParameterList*)this->spectra_tree_nodes_Nova_Node_Nova_parent : (nova_Nova_Object*)nova_null);
 }
 
 

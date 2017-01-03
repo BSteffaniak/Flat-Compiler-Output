@@ -26,7 +26,7 @@
 #include <nova/nova_Nova_Object.h>
 #include <nova/nova_Nova_String.h>
 #include <nova/nova_Nova_System.h>
-#include <nova/nova_Nova_Class.h>
+#include <nova/meta/nova_meta_Nova_Class.h>
 #include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <nova/datastruct/nova_datastruct_Nova_Comparable.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_StringCharArray.h>
@@ -62,8 +62,8 @@ typedef struct
 int nova_Nova_String_Nova_calculateSize(nova_Nova_String* this, nova_exception_Nova_ExceptionData* exceptionData, char* chars);
 nova_Nova_String* nova_Nova_String_Nova_lambda1(nova_Nova_String* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* _1, int _2, nova_datastruct_list_Nova_Array* _3, Context1* context);
 nova_datastruct_list_Nova_CharArray* generated7(nova_Nova_String* this, nova_exception_Nova_ExceptionData* exceptionData);
-void nova_Nova_String_Nova_lambda72(nova_Nova_String* this, nova_exception_Nova_ExceptionData* exceptionData, nova_regex_Nova_Match* match, int _2, nova_datastruct_list_Nova_Array* _3, Context2* context);
-void nova_Nova_String_Nova_lambda73(nova_Nova_String* this, nova_exception_Nova_ExceptionData* exceptionData, nova_regex_Nova_Match* match, int _2, nova_datastruct_list_Nova_Array* _3, Context3* context);
+void nova_Nova_String_Nova_lambda71(nova_Nova_String* this, nova_exception_Nova_ExceptionData* exceptionData, nova_regex_Nova_Match* match, int _2, nova_datastruct_list_Nova_Array* _3, Context2* context);
+void nova_Nova_String_Nova_lambda72(nova_Nova_String* this, nova_exception_Nova_ExceptionData* exceptionData, nova_regex_Nova_Match* match, int _2, nova_datastruct_list_Nova_Array* _3, Context3* context);
 
 
 
@@ -196,13 +196,13 @@ nova_Nova_String* nova_Nova_String_Nova_concat(nova_Nova_String* this, nova_exce
 	l1_Nova_sz = str->nova_Nova_String_Nova_count + this->nova_Nova_String_Nova_count + 1;
 	l1_Nova_data1 = (char*)(this->nova_Nova_String_Nova_chars->nova_datastruct_list_Nova_Array_Nova_data);
 	l1_Nova_data2 = (char*)(str->nova_Nova_String_Nova_chars->nova_datastruct_list_Nova_Array_Nova_data);
-	if (nova_Nova_Class_Nova_isOfType(this->vtable->classInstance, exceptionData, (nova_Nova_Class*)(nova_Substring_Extension_VTable_val.classInstance)))
+	if (nova_meta_Nova_Class_Nova_isOfType(this->vtable->classInstance, exceptionData, (nova_meta_Nova_Class*)(nova_Substring_Extension_VTable_val.classInstance)))
 	{
 		char* c = malloc(this->nova_Nova_String_Nova_count);
 		memcpy(c, l1_Nova_data1, this->nova_Nova_String_Nova_count);
 		l1_Nova_data1 = c;
 	}
-	if (nova_Nova_Class_Nova_isOfType(str->vtable->classInstance, exceptionData, (nova_Nova_Class*)(nova_Substring_Extension_VTable_val.classInstance)))
+	if (nova_meta_Nova_Class_Nova_isOfType(str->vtable->classInstance, exceptionData, (nova_meta_Nova_Class*)(nova_Substring_Extension_VTable_val.classInstance)))
 	{
 		char* c = malloc(str->nova_Nova_String_Nova_count);
 		memcpy(c, l1_Nova_data2, str->nova_Nova_String_Nova_count);
@@ -241,14 +241,14 @@ nova_Nova_String* nova_Nova_String_0_Nova_replace(nova_Nova_String* this, nova_e
 {
 	nova_Nova_String* l1_Nova_output = (nova_Nova_String*)nova_null;
 	int l1_Nova_offset = 0;
-	Context2* contextArg72 = NOVA_MALLOC(sizeof(Context2));
-	contextArg72->nova_Nova_String_Nova_output = &l1_Nova_output;
-	contextArg72->nova_Nova_String_Nova_offset = &l1_Nova_offset;
-	contextArg72->nova_Nova_String_Nova_replace = &replace;
+	Context2* contextArg71 = NOVA_MALLOC(sizeof(Context2));
+	contextArg71->nova_Nova_String_Nova_output = &l1_Nova_output;
+	contextArg71->nova_Nova_String_Nova_offset = &l1_Nova_offset;
+	contextArg71->nova_Nova_String_Nova_replace = &replace;
 	
 	l1_Nova_output = this;
 	l1_Nova_offset = (int)(0);
-	nova_datastruct_list_Nova_List_virtual0_Nova_forEach((nova_datastruct_list_Nova_List*)(nova_regex_Nova_Regex_static_Nova_getMatches(0, exceptionData, pattern->nova_regex_Nova_Pattern_Nova_pattern, this)), exceptionData, (nova_datastruct_list_Nova_List_closure4_Nova_func)&nova_Nova_String_Nova_lambda72, this, contextArg72);
+	nova_datastruct_list_Nova_List_virtual0_Nova_forEach((nova_datastruct_list_Nova_List*)(nova_regex_Nova_Regex_static_Nova_getMatches(0, exceptionData, pattern->nova_regex_Nova_Pattern_Nova_pattern, this)), exceptionData, (nova_datastruct_list_Nova_List_closure4_Nova_func)&nova_Nova_String_Nova_lambda71, this, contextArg71);
 	return l1_Nova_output;
 }
 
@@ -501,13 +501,13 @@ nova_datastruct_list_Nova_Array* nova_Nova_String_Nova_split(nova_Nova_String* t
 {
 	nova_datastruct_list_Nova_Array* l1_Nova_strs = (nova_datastruct_list_Nova_Array*)nova_null;
 	int l1_Nova_start = 0;
-	Context3* contextArg73 = NOVA_MALLOC(sizeof(Context3));
-	contextArg73->nova_Nova_String_Nova_strs = &l1_Nova_strs;
-	contextArg73->nova_Nova_String_Nova_start = &l1_Nova_start;
+	Context3* contextArg72 = NOVA_MALLOC(sizeof(Context3));
+	contextArg72->nova_Nova_String_Nova_strs = &l1_Nova_strs;
+	contextArg72->nova_Nova_String_Nova_start = &l1_Nova_start;
 	
 	l1_Nova_strs = nova_datastruct_list_Nova_Array_0_Nova_construct(0, exceptionData);
 	l1_Nova_start = (int)(0);
-	nova_datastruct_list_Nova_List_virtual0_Nova_forEach((nova_datastruct_list_Nova_List*)(nova_regex_Nova_Regex_static_Nova_getMatches(0, exceptionData, regex->nova_regex_Nova_Pattern_Nova_pattern, this)), exceptionData, (nova_datastruct_list_Nova_List_closure4_Nova_func)&nova_Nova_String_Nova_lambda73, this, contextArg73);
+	nova_datastruct_list_Nova_List_virtual0_Nova_forEach((nova_datastruct_list_Nova_List*)(nova_regex_Nova_Regex_static_Nova_getMatches(0, exceptionData, regex->nova_regex_Nova_Pattern_Nova_pattern, this)), exceptionData, (nova_datastruct_list_Nova_List_closure4_Nova_func)&nova_Nova_String_Nova_lambda72, this, contextArg72);
 	nova_datastruct_list_Nova_Array_0_Nova_add((nova_datastruct_list_Nova_Array*)(l1_Nova_strs), exceptionData, (nova_Nova_Object*)(nova_Nova_String_virtual_Nova_substring((nova_Nova_String*)(this), exceptionData, l1_Nova_start, (intptr_t)nova_null)));
 	return l1_Nova_strs;
 }
@@ -558,13 +558,13 @@ nova_datastruct_list_Nova_CharArray* generated7(nova_Nova_String* this, nova_exc
 	return nova_datastruct_list_Nova_CharArray_2_Nova_construct(0, exceptionData, l1_Nova_temp, 4);
 }
 
-void nova_Nova_String_Nova_lambda72(nova_Nova_String* this, nova_exception_Nova_ExceptionData* exceptionData, nova_regex_Nova_Match* match, int _2, nova_datastruct_list_Nova_Array* _3, Context2* context)
+void nova_Nova_String_Nova_lambda71(nova_Nova_String* this, nova_exception_Nova_ExceptionData* exceptionData, nova_regex_Nova_Match* match, int _2, nova_datastruct_list_Nova_Array* _3, Context2* context)
 {
 	(*context->nova_Nova_String_Nova_output) = (nova_Nova_String*)(nova_Nova_String_Nova_plus(nova_Nova_String_virtual_Nova_substring((nova_Nova_String*)((*context->nova_Nova_String_Nova_output)), exceptionData, 0, match->nova_regex_Nova_Match_Nova_start + (*context->nova_Nova_String_Nova_offset)), exceptionData, (nova_Nova_String*)(nova_Nova_String_Nova_plus((*context->nova_Nova_String_Nova_replace), exceptionData, nova_Nova_String_virtual_Nova_substring((nova_Nova_String*)((*context->nova_Nova_String_Nova_output)), exceptionData, match->nova_regex_Nova_Match_Nova_end + (*context->nova_Nova_String_Nova_offset), (intptr_t)nova_null)))));
 	(*context->nova_Nova_String_Nova_offset) += (*context->nova_Nova_String_Nova_replace)->nova_Nova_String_Nova_count - nova_regex_Nova_Match_Accessor_Nova_count(match, exceptionData);
 }
 
-void nova_Nova_String_Nova_lambda73(nova_Nova_String* this, nova_exception_Nova_ExceptionData* exceptionData, nova_regex_Nova_Match* match, int _2, nova_datastruct_list_Nova_Array* _3, Context3* context)
+void nova_Nova_String_Nova_lambda72(nova_Nova_String* this, nova_exception_Nova_ExceptionData* exceptionData, nova_regex_Nova_Match* match, int _2, nova_datastruct_list_Nova_Array* _3, Context3* context)
 {
 	nova_datastruct_list_Nova_Array_0_Nova_add((nova_datastruct_list_Nova_Array*)((*context->nova_Nova_String_Nova_strs)), exceptionData, (nova_Nova_Object*)(nova_Nova_String_virtual_Nova_substring((nova_Nova_String*)(this), exceptionData, (*context->nova_Nova_String_Nova_start), match->nova_regex_Nova_Match_Nova_start)));
 	(*context->nova_Nova_String_Nova_start) = match->nova_regex_Nova_Match_Nova_end;

@@ -26,7 +26,7 @@
 #include <nova/nova_Nova_Object.h>
 #include <nova/nova_Nova_String.h>
 #include <nova/nova_Nova_System.h>
-#include <nova/nova_Nova_Class.h>
+#include <nova/meta/nova_meta_Nova_Class.h>
 #include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <spectra/tree/nodes/spectra_tree_nodes_Nova_Node.h>
 #include <spectra/tree/nodes/spectra_tree_nodes_Nova_Value.h>
@@ -263,7 +263,7 @@ char spectra_tree_nodes_functions_Nova_FunctionCall_Nova_searchClosureDeclaratio
 	spectra_tree_nodes_variables_Nova_VariableDeclaration* l1_Nova_variable = (spectra_tree_nodes_variables_Nova_VariableDeclaration*)nova_null;
 	
 	l1_Nova_variable = (spectra_tree_nodes_variables_Nova_VariableDeclaration*)(spectra_tree_nodes_Nova_Node_virtual_Nova_findVariableDeclaration((spectra_tree_nodes_Nova_Node*)(this->spectra_tree_nodes_Nova_Node_Nova_parent), exceptionData, this->spectra_tree_nodes_Nova_Identifier_Nova_name, (intptr_t)nova_null));
-	if (nova_Nova_Class_Nova_isOfType(l1_Nova_variable->vtable->classInstance, exceptionData, (nova_Nova_Class*)(spectra_tree_nodes_functions_closures_ClosureDeclaration_Extension_VTable_val.classInstance)))
+	if (nova_meta_Nova_Class_Nova_isOfType(l1_Nova_variable->vtable->classInstance, exceptionData, (nova_meta_Nova_Class*)(spectra_tree_nodes_functions_closures_ClosureDeclaration_Extension_VTable_val.classInstance)))
 	{
 		this->spectra_tree_nodes_variables_Nova_Variable_Nova_declaration = (spectra_tree_nodes_variables_Nova_VariableDeclaration*)l1_Nova_variable;
 		return 1;

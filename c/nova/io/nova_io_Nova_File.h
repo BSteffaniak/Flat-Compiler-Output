@@ -35,7 +35,7 @@ typedef struct nova_io_Nova_File nova_io_Nova_File;
 #include <nova/nova_Nova_Object.h>
 #include <nova/nova_Nova_String.h>
 #include <nova/nova_Nova_System.h>
-#include <nova/nova_Nova_Class.h>
+#include <nova/meta/nova_meta_Nova_Class.h>
 #include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <nova/io/NativeFile.h>
 #include <nova/time/nova_time_Nova_Time.h>
@@ -48,7 +48,7 @@ CCLASS_CLASS
 	nova_io_Nova_File, 
 	
 	nova_io_File_Extension_VTable* vtable;
-	nova_Nova_Class* nova_io_Nova_File_Nova_class;
+	nova_meta_Nova_Class* nova_io_Nova_File_Nova_class;
 	nova_Nova_String* nova_io_Nova_File_Nova_location;
 	nova_Nova_String* nova_io_Nova_File_Nova_name;
 	nova_Nova_String* nova_io_Nova_File_Nova_extension;

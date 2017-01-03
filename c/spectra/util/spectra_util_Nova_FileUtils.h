@@ -35,7 +35,7 @@ typedef struct spectra_util_Nova_FileUtils spectra_util_Nova_FileUtils;
 #include <nova/nova_Nova_Object.h>
 #include <nova/nova_Nova_String.h>
 #include <nova/nova_Nova_System.h>
-#include <nova/nova_Nova_Class.h>
+#include <nova/meta/nova_meta_Nova_Class.h>
 #include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <spectra/util/spectra_util_Nova_OS.h>
 #include <nova/NativeObject.h>

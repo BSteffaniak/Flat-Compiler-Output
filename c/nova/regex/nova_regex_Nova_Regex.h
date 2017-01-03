@@ -35,7 +35,7 @@ typedef struct nova_regex_Nova_Regex nova_regex_Nova_Regex;
 #include <nova/nova_Nova_Object.h>
 #include <nova/nova_Nova_String.h>
 #include <nova/nova_Nova_System.h>
-#include <nova/nova_Nova_Class.h>
+#include <nova/meta/nova_meta_Nova_Class.h>
 #include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <nova/regex/nova_regex_Nova_Match.h>
 #include <pcre/pcre2.h>
@@ -47,7 +47,7 @@ CCLASS_CLASS
 	nova_regex_Nova_Regex, 
 	
 	nova_regex_Regex_Extension_VTable* vtable;
-	nova_Nova_Class* nova_regex_Nova_Regex_Nova_class;
+	nova_meta_Nova_Class* nova_regex_Nova_Regex_Nova_class;
 )
 
 void nova_regex_Nova_Regex_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData);

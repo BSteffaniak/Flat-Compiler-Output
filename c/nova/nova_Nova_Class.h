@@ -48,7 +48,7 @@ CCLASS_CLASS
 	nova_Class_Extension_VTable* vtable;
 	nova_Nova_Class* nova_Nova_Class_Nova_extension;
 	nova_datastruct_list_Nova_ImmutableArray* nova_Nova_Class_Nova_interfaces;
-	nova_datastruct_list_Nova_ImmutableArray* nova_Nova_Class_Nova_fields;
+	nova_datastruct_list_Nova_ImmutableArray* nova_Nova_Class_Nova_fieldList;
 	char nova_Nova_Class_Nova_isInterface;
 	nova_Nova_String* nova_Nova_Class_Nova_location;
 )

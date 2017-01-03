@@ -52,7 +52,7 @@ typedef char (*nova_datastruct_list_Nova_ImmutableCharArray_closure12_Nova_filte
 #include <nova/nova_Nova_Object.h>
 #include <nova/nova_Nova_String.h>
 #include <nova/nova_Nova_System.h>
-#include <nova/nova_Nova_Class.h>
+#include <nova/meta/nova_meta_Nova_Class.h>
 #include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_ImmutableCharArrayIterator.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_List.h>

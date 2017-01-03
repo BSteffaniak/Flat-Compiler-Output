@@ -26,7 +26,7 @@
 #include <nova/nova_Nova_Object.h>
 #include <nova/nova_Nova_String.h>
 #include <nova/nova_Nova_System.h>
-#include <nova/nova_Nova_Class.h>
+#include <nova/meta/nova_meta_Nova_Class.h>
 #include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <nova/NativeObject.h>
 #include <nova/operators/nova_operators_Nova_EqualsOperator.h>
@@ -39,7 +39,7 @@ void nova_exception_Nova_CaughtException_Nova_init_static(nova_exception_Nova_Ex
 	}
 }
 
-nova_exception_Nova_CaughtException* nova_exception_Nova_CaughtException_Nova_construct(nova_exception_Nova_CaughtException* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_Class* type, int soft)
+nova_exception_Nova_CaughtException* nova_exception_Nova_CaughtException_Nova_construct(nova_exception_Nova_CaughtException* this, nova_exception_Nova_ExceptionData* exceptionData, nova_meta_Nova_Class* type, int soft)
 {
 	CCLASS_NEW(nova_exception_Nova_CaughtException, this,);
 	this->vtable = &nova_exception_CaughtException_Extension_VTable_val;
@@ -60,13 +60,13 @@ void nova_exception_Nova_CaughtException_Nova_destroy(nova_exception_Nova_Caught
 		return;
 	}
 	
-	nova_Nova_Class_Nova_destroy(&(*this)->nova_exception_Nova_CaughtException_Nova_type, exceptionData);
+	nova_meta_Nova_Class_Nova_destroy(&(*this)->nova_exception_Nova_CaughtException_Nova_type, exceptionData);
 	
 	
 	NOVA_FREE(*this);
 }
 
-void nova_exception_Nova_CaughtException_Nova_this(nova_exception_Nova_CaughtException* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_Class* type, int soft)
+void nova_exception_Nova_CaughtException_Nova_this(nova_exception_Nova_CaughtException* this, nova_exception_Nova_ExceptionData* exceptionData, nova_meta_Nova_Class* type, int soft)
 {
 	soft = (int)(soft == (intptr_t)nova_null ? 1 : soft);
 	this->nova_exception_Nova_CaughtException_Nova_type = type;
@@ -75,7 +75,7 @@ void nova_exception_Nova_CaughtException_Nova_this(nova_exception_Nova_CaughtExc
 
 void nova_exception_Nova_CaughtException_Nova_super(nova_exception_Nova_CaughtException* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
-	this->nova_exception_Nova_CaughtException_Nova_type = (nova_Nova_Class*)nova_null;
+	this->nova_exception_Nova_CaughtException_Nova_type = (nova_meta_Nova_Class*)nova_null;
 	this->nova_exception_Nova_CaughtException_Nova_soft = 0;
 }
 

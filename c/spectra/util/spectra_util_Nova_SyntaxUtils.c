@@ -26,7 +26,7 @@
 #include <nova/nova_Nova_Object.h>
 #include <nova/nova_Nova_String.h>
 #include <nova/nova_Nova_System.h>
-#include <nova/nova_Nova_Class.h>
+#include <nova/meta/nova_meta_Nova_Class.h>
 #include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <nova/NativeObject.h>
 #include <nova/operators/nova_operators_Nova_EqualsOperator.h>
@@ -64,7 +64,7 @@ void spectra_util_Nova_SyntaxUtils_Nova_destroy(spectra_util_Nova_SyntaxUtils** 
 	NOVA_FREE(*this);
 }
 
-char spectra_util_Nova_SyntaxUtils_static_Nova_checkTypes(spectra_util_Nova_SyntaxUtils* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_list_Nova_Array* types, nova_Nova_Class* clazz)
+char spectra_util_Nova_SyntaxUtils_static_Nova_checkTypes(spectra_util_Nova_SyntaxUtils* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_list_Nova_Array* types, nova_meta_Nova_Class* clazz)
 {
 	return 0;
 }

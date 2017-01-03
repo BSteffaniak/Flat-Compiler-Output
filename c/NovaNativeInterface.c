@@ -2,11 +2,6 @@
 
 nova_env novaEnv = {
 {
-&nova_Nova_Class_Nova_isOfType,
-&nova_Nova_Class_Nova_construct,
-},
-
-{
 0,
 &nova_Nova_Object_Nova_construct,
 },
@@ -603,6 +598,11 @@ nova_env novaEnv = {
 
 {
 &nova_math_logic_Nova_WFF_Nova_construct,
+},
+
+{
+&nova_meta_Nova_Class_Nova_isOfType,
+&nova_meta_Nova_Class_Nova_construct,
 },
 
 {

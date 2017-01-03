@@ -26,7 +26,7 @@
 #include <nova/nova_Nova_Object.h>
 #include <nova/nova_Nova_String.h>
 #include <nova/nova_Nova_System.h>
-#include <nova/nova_Nova_Class.h>
+#include <nova/meta/nova_meta_Nova_Class.h>
 #include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <spectra/spectra_Nova_SyntaxErrorException.h>
 #include <spectra/spectra_Nova_InvalidParseException.h>
@@ -194,15 +194,15 @@ void spectra_tree_nodes_Nova_ClassDeclaration_Nova_this(spectra_tree_nodes_Nova_
 
 void spectra_tree_nodes_Nova_ClassDeclaration_Nova_addChild(spectra_tree_nodes_Nova_ClassDeclaration* this, nova_exception_Nova_ExceptionData* exceptionData, spectra_tree_nodes_Nova_Node* child)
 {
-	if (nova_Nova_Class_Nova_isOfType(child->vtable->classInstance, exceptionData, (nova_Nova_Class*)(spectra_tree_nodes_variables_FieldDeclaration_Extension_VTable_val.classInstance)))
+	if (nova_meta_Nova_Class_Nova_isOfType(child->vtable->classInstance, exceptionData, (nova_meta_Nova_Class*)(spectra_tree_nodes_variables_FieldDeclaration_Extension_VTable_val.classInstance)))
 	{
 		nova_datastruct_list_Nova_Array_0_Nova_add((nova_datastruct_list_Nova_Array*)(this->spectra_tree_nodes_Nova_ClassDeclaration_Nova_fields), exceptionData, (nova_Nova_Object*)(child));
 	}
-	else if (nova_Nova_Class_Nova_isOfType(child->vtable->classInstance, exceptionData, (nova_Nova_Class*)(spectra_tree_nodes_functions_FunctionDeclaration_Extension_VTable_val.classInstance)))
+	else if (nova_meta_Nova_Class_Nova_isOfType(child->vtable->classInstance, exceptionData, (nova_meta_Nova_Class*)(spectra_tree_nodes_functions_FunctionDeclaration_Extension_VTable_val.classInstance)))
 	{
 		nova_datastruct_list_Nova_Array_0_Nova_add((nova_datastruct_list_Nova_Array*)(this->spectra_tree_nodes_Nova_ClassDeclaration_Nova_functions), exceptionData, (nova_Nova_Object*)(child));
 	}
-	else if (nova_Nova_Class_Nova_isOfType(child->vtable->classInstance, exceptionData, (nova_Nova_Class*)(spectra_tree_nodes_variables_ArrayBracketOverload_Extension_VTable_val.classInstance)))
+	else if (nova_meta_Nova_Class_Nova_isOfType(child->vtable->classInstance, exceptionData, (nova_meta_Nova_Class*)(spectra_tree_nodes_variables_ArrayBracketOverload_Extension_VTable_val.classInstance)))
 	{
 		if ((this->spectra_tree_nodes_Nova_ClassDeclaration_Nova_arrayBracketOverload) == (spectra_tree_nodes_variables_Nova_ArrayBracketOverload*)nova_null)
 		{
@@ -222,7 +222,7 @@ void spectra_tree_nodes_Nova_ClassDeclaration_Nova_addChild(spectra_tree_nodes_N
 
 char spectra_tree_nodes_Nova_ClassDeclaration_Nova_replace(spectra_tree_nodes_Nova_ClassDeclaration* this, nova_exception_Nova_ExceptionData* exceptionData, spectra_tree_nodes_Nova_Node* toReplace, spectra_tree_nodes_Nova_Node* replacement)
 {
-	return nova_Nova_Class_Nova_isOfType(toReplace->vtable->classInstance, exceptionData, (nova_Nova_Class*)(spectra_tree_nodes_variables_FieldDeclaration_Extension_VTable_val.classInstance)) && (spectra_tree_nodes_variables_Nova_FieldDeclaration*)(nova_datastruct_list_Nova_Array_Nova_replace((nova_datastruct_list_Nova_Array*)(this->spectra_tree_nodes_Nova_ClassDeclaration_Nova_fields), exceptionData, (nova_Nova_Object*)((spectra_tree_nodes_variables_Nova_FieldDeclaration*)toReplace), (nova_Nova_Object*)((spectra_tree_nodes_variables_Nova_FieldDeclaration*)replacement))) != (spectra_tree_nodes_variables_Nova_FieldDeclaration*)(spectra_tree_nodes_variables_Nova_FieldDeclaration*)nova_null || nova_Nova_Class_Nova_isOfType(toReplace->vtable->classInstance, exceptionData, (nova_Nova_Class*)(spectra_tree_nodes_functions_FunctionDeclaration_Extension_VTable_val.classInstance)) && (spectra_tree_nodes_functions_Nova_FunctionDeclaration*)(nova_datastruct_list_Nova_Array_Nova_replace((nova_datastruct_list_Nova_Array*)(this->spectra_tree_nodes_Nova_ClassDeclaration_Nova_functions), exceptionData, (nova_Nova_Object*)((spectra_tree_nodes_functions_Nova_FunctionDeclaration*)toReplace), (nova_Nova_Object*)((spectra_tree_nodes_functions_Nova_FunctionDeclaration*)replacement))) != (spectra_tree_nodes_functions_Nova_FunctionDeclaration*)(spectra_tree_nodes_functions_Nova_FunctionDeclaration*)nova_null;
+	return nova_meta_Nova_Class_Nova_isOfType(toReplace->vtable->classInstance, exceptionData, (nova_meta_Nova_Class*)(spectra_tree_nodes_variables_FieldDeclaration_Extension_VTable_val.classInstance)) && (spectra_tree_nodes_variables_Nova_FieldDeclaration*)(nova_datastruct_list_Nova_Array_Nova_replace((nova_datastruct_list_Nova_Array*)(this->spectra_tree_nodes_Nova_ClassDeclaration_Nova_fields), exceptionData, (nova_Nova_Object*)((spectra_tree_nodes_variables_Nova_FieldDeclaration*)toReplace), (nova_Nova_Object*)((spectra_tree_nodes_variables_Nova_FieldDeclaration*)replacement))) != (spectra_tree_nodes_variables_Nova_FieldDeclaration*)(spectra_tree_nodes_variables_Nova_FieldDeclaration*)nova_null || nova_meta_Nova_Class_Nova_isOfType(toReplace->vtable->classInstance, exceptionData, (nova_meta_Nova_Class*)(spectra_tree_nodes_functions_FunctionDeclaration_Extension_VTable_val.classInstance)) && (spectra_tree_nodes_functions_Nova_FunctionDeclaration*)(nova_datastruct_list_Nova_Array_Nova_replace((nova_datastruct_list_Nova_Array*)(this->spectra_tree_nodes_Nova_ClassDeclaration_Nova_functions), exceptionData, (nova_Nova_Object*)((spectra_tree_nodes_functions_Nova_FunctionDeclaration*)toReplace), (nova_Nova_Object*)((spectra_tree_nodes_functions_Nova_FunctionDeclaration*)replacement))) != (spectra_tree_nodes_functions_Nova_FunctionDeclaration*)(spectra_tree_nodes_functions_Nova_FunctionDeclaration*)nova_null;
 }
 
 nova_datastruct_list_Nova_Array* spectra_tree_nodes_Nova_ClassDeclaration_Nova_findCompatibleFunctions(spectra_tree_nodes_Nova_ClassDeclaration* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* name, nova_datastruct_list_Nova_Array* argumentTypes)
@@ -554,7 +554,7 @@ nova_Nova_String* spectra_tree_nodes_Nova_ClassDeclaration_Nova_lambda39(spectra
 
 char spectra_tree_nodes_Nova_ClassDeclaration_Nova_lambda40(spectra_tree_nodes_Nova_ClassDeclaration* this, nova_exception_Nova_ExceptionData* exceptionData, spectra_tree_nodes_functions_Nova_FunctionDeclaration* _1, int _2, nova_datastruct_list_Nova_Array* _3, Context8* context)
 {
-	return nova_Nova_Class_Nova_isOfType(_1->vtable->classInstance, exceptionData, (nova_Nova_Class*)(spectra_tree_nodes_functions_Constructor_Extension_VTable_val.classInstance));
+	return nova_meta_Nova_Class_Nova_isOfType(_1->vtable->classInstance, exceptionData, (nova_meta_Nova_Class*)(spectra_tree_nodes_functions_Constructor_Extension_VTable_val.classInstance));
 }
 
 char spectra_tree_nodes_Nova_ClassDeclaration_Nova_lambda114(spectra_tree_nodes_Nova_ClassDeclaration* this, nova_exception_Nova_ExceptionData* exceptionData, spectra_tree_nodes_variables_Nova_FieldDeclaration* _1, Context9* context)

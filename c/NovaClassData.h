@@ -48,7 +48,6 @@ extern spectra_tree_nodes_functions_vtable_CallableFunction spectra_tree_nodes_f
 extern spectra_tree_nodes_generics_vtable_GenericCompatible spectra_tree_nodes_generics_vtable_GenericCompatible_value_default;
 extern spectra_tree_nodes_operations_vtable_Assignable spectra_tree_nodes_operations_vtable_Assignable_value_default;
 
-#include <nova/nova_Nova_Class.h>
 #include <nova/nova_Nova_Object.h>
 #include <nova/nova_Nova_String.h>
 #include <nova/nova_Nova_Substring.h>
@@ -146,6 +145,7 @@ extern spectra_tree_nodes_operations_vtable_Assignable spectra_tree_nodes_operat
 #include <nova/math/logic/nova_math_logic_Nova_StatementGroup.h>
 #include <nova/math/logic/nova_math_logic_Nova_StatementLetter.h>
 #include <nova/math/logic/nova_math_logic_Nova_WFF.h>
+#include <nova/meta/nova_meta_Nova_Class.h>
 #include <nova/meta/nova_meta_Nova_Field.h>
 #include <nova/meta/nova_meta_Nova_GenericArgument.h>
 #include <nova/meta/nova_meta_Nova_GenericParameter.h>

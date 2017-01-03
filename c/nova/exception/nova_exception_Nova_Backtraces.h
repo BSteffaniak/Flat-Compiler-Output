@@ -35,7 +35,7 @@ typedef struct nova_exception_Nova_Backtraces nova_exception_Nova_Backtraces;
 #include <nova/nova_Nova_Object.h>
 #include <nova/nova_Nova_String.h>
 #include <nova/nova_Nova_System.h>
-#include <nova/nova_Nova_Class.h>
+#include <nova/meta/nova_meta_Nova_Class.h>
 #include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <nova/NativeObject.h>
 #include <nova/operators/nova_operators_Nova_EqualsOperator.h>
@@ -45,7 +45,7 @@ CCLASS_CLASS
 	nova_exception_Nova_Backtraces, 
 	
 	nova_exception_Backtraces_Extension_VTable* vtable;
-	nova_Nova_Class* nova_exception_Nova_Backtraces_Nova_class;
+	nova_meta_Nova_Class* nova_exception_Nova_Backtraces_Nova_class;
 )
 
 void nova_exception_Nova_Backtraces_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData);

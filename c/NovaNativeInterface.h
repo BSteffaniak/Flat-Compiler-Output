@@ -1,7 +1,6 @@
 #ifndef NOVA_NATIVE_INTERFACE
 #define NOVA_NATIVE_INTERFACE
 
-#include <nova/nova_Nova_Class.h>
 #include <nova/nova_Nova_Object.h>
 #include <nova/nova_Nova_String.h>
 #include <nova/nova_Nova_Substring.h>
@@ -99,6 +98,7 @@
 #include <nova/math/logic/nova_math_logic_Nova_StatementGroup.h>
 #include <nova/math/logic/nova_math_logic_Nova_StatementLetter.h>
 #include <nova/math/logic/nova_math_logic_Nova_WFF.h>
+#include <nova/meta/nova_meta_Nova_Class.h>
 #include <nova/meta/nova_meta_Nova_Field.h>
 #include <nova/meta/nova_meta_Nova_GenericArgument.h>
 #include <nova/meta/nova_meta_Nova_GenericParameter.h>
@@ -265,15 +265,6 @@
 #include <spectra/util/spectra_util_Nova_Location.h>
 #include <spectra/util/spectra_util_Nova_OS.h>
 #include <spectra/util/spectra_util_Nova_SyntaxUtils.h>
-
-typedef char (*nova_Nova_Class_native_Nova_isOfType)(nova_Nova_Class*, nova_exception_Nova_ExceptionData*, nova_Nova_Class*);
-typedef nova_Nova_Class* (*nova_Nova_Class_native_Nova_construct)(nova_Nova_Class*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, char);
-
-typedef struct nova_native_Class
-{
-nova_Nova_Class_native_Nova_isOfType isOfType;
-nova_Nova_Class_native_Nova_construct Class;
-} nova_native_Class;
 
 typedef nova_Nova_String* (*nova_Nova_Object_native_Nova_toString)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 typedef nova_Nova_Object* (*nova_Nova_Object_native_Nova_construct)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
@@ -953,7 +944,7 @@ typedef struct nova_exception_native_Backtraces
 nova_exception_Nova_Backtraces_native_Nova_construct Backtraces;
 } nova_exception_native_Backtraces;
 
-typedef nova_exception_Nova_CaughtException* (*nova_exception_Nova_CaughtException_native_Nova_construct)(nova_exception_Nova_CaughtException*, nova_exception_Nova_ExceptionData*, nova_Nova_Class*, int);
+typedef nova_exception_Nova_CaughtException* (*nova_exception_Nova_CaughtException_native_Nova_construct)(nova_exception_Nova_CaughtException*, nova_exception_Nova_ExceptionData*, nova_meta_Nova_Class*, int);
 
 typedef struct nova_exception_native_CaughtException
 {
@@ -974,7 +965,7 @@ typedef struct nova_exception_native_Exception
 nova_exception_Nova_Exception_native_Nova_construct Exception;
 } nova_exception_native_Exception;
 
-typedef void (*nova_exception_Nova_ExceptionData_native_Nova_addCaught)(nova_exception_Nova_ExceptionData*, nova_exception_Nova_ExceptionData*, nova_Nova_Class*, int);
+typedef void (*nova_exception_Nova_ExceptionData_native_Nova_addCaught)(nova_exception_Nova_ExceptionData*, nova_exception_Nova_ExceptionData*, nova_meta_Nova_Class*, int);
 typedef char (*nova_exception_Nova_ExceptionData_native_Nova_throwException)(nova_exception_Nova_ExceptionData*, nova_exception_Nova_ExceptionData*, nova_exception_Nova_ExceptionData**, nova_exception_Nova_Exception*, char);
 typedef nova_exception_Nova_ExceptionData* (*nova_exception_Nova_ExceptionData_native_Nova_construct)(nova_exception_Nova_ExceptionData*, nova_exception_Nova_ExceptionData*, buffer*);
 
@@ -1432,6 +1423,15 @@ typedef struct nova_math_logic_native_WFF
 {
 nova_math_logic_Nova_WFF_native_Nova_construct WFF;
 } nova_math_logic_native_WFF;
+
+typedef char (*nova_meta_Nova_Class_native_Nova_isOfType)(nova_meta_Nova_Class*, nova_exception_Nova_ExceptionData*, nova_meta_Nova_Class*);
+typedef nova_meta_Nova_Class* (*nova_meta_Nova_Class_native_Nova_construct)(nova_meta_Nova_Class*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, char);
+
+typedef struct nova_meta_native_Class
+{
+nova_meta_Nova_Class_native_Nova_isOfType isOfType;
+nova_meta_Nova_Class_native_Nova_construct Class;
+} nova_meta_native_Class;
 
 typedef nova_meta_Nova_Field* (*nova_meta_Nova_Field_native_Nova_construct)(nova_meta_Nova_Field*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, nova_meta_Nova_Type*);
 
@@ -2035,15 +2035,15 @@ spectra_tree_nodes_Nova_Abstractable_native_Nova_writeAbstract writeAbstract;
 spectra_tree_nodes_Nova_Abstractable_native0_Nova_cloneTo cloneTo__spectra_tree_nodes_Abstractable;
 } spectra_tree_nodes_native_Abstractable;
 
-typedef spectra_tree_nodes_Nova_Accessible* (*spectra_tree_nodes_Nova_Accessible_native0_Nova_getNextAccessingOfType)(spectra_tree_nodes_Nova_Accessible*, nova_exception_Nova_ExceptionData*, nova_Nova_Class*);
+typedef spectra_tree_nodes_Nova_Accessible* (*spectra_tree_nodes_Nova_Accessible_native0_Nova_getNextAccessingOfType)(spectra_tree_nodes_Nova_Accessible*, nova_exception_Nova_ExceptionData*, nova_meta_Nova_Class*);
 typedef spectra_tree_nodes_Nova_Accessible* (*spectra_tree_nodes_Nova_Accessible_native1_Nova_getNextAccessingOfType)(spectra_tree_nodes_Nova_Accessible*, nova_exception_Nova_ExceptionData*, nova_datastruct_list_Nova_Array*);
 typedef spectra_tree_nodes_Nova_Accessible* (*spectra_tree_nodes_Nova_Accessible_native2_Nova_getNextAccessingOfType)(spectra_tree_nodes_Nova_Accessible*, nova_exception_Nova_ExceptionData*, nova_datastruct_list_Nova_Array*, char);
-typedef spectra_tree_nodes_Nova_Accessible* (*spectra_tree_nodes_Nova_Accessible_native0_Nova_getLastAccessingOfType)(spectra_tree_nodes_Nova_Accessible*, nova_exception_Nova_ExceptionData*, nova_Nova_Class*, char, int);
+typedef spectra_tree_nodes_Nova_Accessible* (*spectra_tree_nodes_Nova_Accessible_native0_Nova_getLastAccessingOfType)(spectra_tree_nodes_Nova_Accessible*, nova_exception_Nova_ExceptionData*, nova_meta_Nova_Class*, char, int);
 typedef spectra_tree_nodes_Nova_Accessible* (*spectra_tree_nodes_Nova_Accessible_native1_Nova_getLastAccessingOfType)(spectra_tree_nodes_Nova_Accessible*, nova_exception_Nova_ExceptionData*, nova_datastruct_list_Nova_Array*, char, int);
-typedef spectra_tree_nodes_Nova_Accessible* (*spectra_tree_nodes_Nova_Accessible_native0_Nova_getLastAccessedOfType)(spectra_tree_nodes_Nova_Accessible*, nova_exception_Nova_ExceptionData*, nova_Nova_Class*, char);
+typedef spectra_tree_nodes_Nova_Accessible* (*spectra_tree_nodes_Nova_Accessible_native0_Nova_getLastAccessedOfType)(spectra_tree_nodes_Nova_Accessible*, nova_exception_Nova_ExceptionData*, nova_meta_Nova_Class*, char);
 typedef spectra_tree_nodes_Nova_Accessible* (*spectra_tree_nodes_Nova_Accessible_native1_Nova_getLastAccessedOfType)(spectra_tree_nodes_Nova_Accessible*, nova_exception_Nova_ExceptionData*, nova_datastruct_list_Nova_Array*, char);
 typedef spectra_tree_nodes_Nova_Accessible* (*spectra_tree_nodes_Nova_Accessible_native_Nova_getLastAccessed)(spectra_tree_nodes_Nova_Accessible*, nova_exception_Nova_ExceptionData*);
-typedef spectra_tree_nodes_Nova_Accessible* (*spectra_tree_nodes_Nova_Accessible_native0_Nova_getNextAccessedOfType)(spectra_tree_nodes_Nova_Accessible*, nova_exception_Nova_ExceptionData*, nova_Nova_Class*);
+typedef spectra_tree_nodes_Nova_Accessible* (*spectra_tree_nodes_Nova_Accessible_native0_Nova_getNextAccessedOfType)(spectra_tree_nodes_Nova_Accessible*, nova_exception_Nova_ExceptionData*, nova_meta_Nova_Class*);
 typedef spectra_tree_nodes_Nova_Accessible* (*spectra_tree_nodes_Nova_Accessible_native1_Nova_getNextAccessedOfType)(spectra_tree_nodes_Nova_Accessible*, nova_exception_Nova_ExceptionData*, nova_datastruct_list_Nova_Array*);
 typedef spectra_tree_nodes_Nova_Accessible* (*spectra_tree_nodes_Nova_Accessible_native_Nova_getRootReferenceNode)(spectra_tree_nodes_Nova_Accessible*, nova_exception_Nova_ExceptionData*, int);
 typedef spectra_tree_nodes_Nova_Accessible* (*spectra_tree_nodes_Nova_Accessible_native_Nova_getReferenceNode)(spectra_tree_nodes_Nova_Accessible*, nova_exception_Nova_ExceptionData*, int, int);
@@ -2054,15 +2054,15 @@ typedef nova_Nova_String* (*spectra_tree_nodes_Nova_Accessible_native_Nova_write
 
 typedef struct spectra_tree_nodes_native_Accessible
 {
-spectra_tree_nodes_Nova_Accessible_native0_Nova_getNextAccessingOfType getNextAccessingOfType__nova_Class;
+spectra_tree_nodes_Nova_Accessible_native0_Nova_getNextAccessingOfType getNextAccessingOfType__nova_meta_Class;
 spectra_tree_nodes_Nova_Accessible_native1_Nova_getNextAccessingOfType getNextAccessingOfType__nova_datastruct_list_Array;
 spectra_tree_nodes_Nova_Accessible_native2_Nova_getNextAccessingOfType getNextAccessingOfType__nova_datastruct_list_Array__nova_primitive_Bool;
-spectra_tree_nodes_Nova_Accessible_native0_Nova_getLastAccessingOfType getLastAccessingOfType__nova_Class__nova_primitive_Bool__nova_primitive_Bool;
+spectra_tree_nodes_Nova_Accessible_native0_Nova_getLastAccessingOfType getLastAccessingOfType__nova_meta_Class__nova_primitive_Bool__nova_primitive_Bool;
 spectra_tree_nodes_Nova_Accessible_native1_Nova_getLastAccessingOfType getLastAccessingOfType__nova_datastruct_list_Array__nova_primitive_Bool__nova_primitive_Bool;
-spectra_tree_nodes_Nova_Accessible_native0_Nova_getLastAccessedOfType getLastAccessedOfType__nova_Class__nova_primitive_Bool;
+spectra_tree_nodes_Nova_Accessible_native0_Nova_getLastAccessedOfType getLastAccessedOfType__nova_meta_Class__nova_primitive_Bool;
 spectra_tree_nodes_Nova_Accessible_native1_Nova_getLastAccessedOfType getLastAccessedOfType__nova_datastruct_list_Array__nova_primitive_Bool;
 spectra_tree_nodes_Nova_Accessible_native_Nova_getLastAccessed getLastAccessed;
-spectra_tree_nodes_Nova_Accessible_native0_Nova_getNextAccessedOfType getNextAccessedOfType__nova_Class;
+spectra_tree_nodes_Nova_Accessible_native0_Nova_getNextAccessedOfType getNextAccessedOfType__nova_meta_Class;
 spectra_tree_nodes_Nova_Accessible_native1_Nova_getNextAccessedOfType getNextAccessedOfType__nova_datastruct_list_Array;
 spectra_tree_nodes_Nova_Accessible_native_Nova_getRootReferenceNode getRootReferenceNode;
 spectra_tree_nodes_Nova_Accessible_native_Nova_getReferenceNode getReferenceNode;
@@ -3104,7 +3104,7 @@ typedef struct spectra_util_native_OS
 spectra_util_Nova_OS_nativefunc_Nova_construct OS;
 } spectra_util_native_OS;
 
-typedef char (*spectra_util_Nova_SyntaxUtils_native_static_Nova_checkTypes)(spectra_util_Nova_SyntaxUtils*, nova_exception_Nova_ExceptionData*, nova_datastruct_list_Nova_Array*, nova_Nova_Class*);
+typedef char (*spectra_util_Nova_SyntaxUtils_native_static_Nova_checkTypes)(spectra_util_Nova_SyntaxUtils*, nova_exception_Nova_ExceptionData*, nova_datastruct_list_Nova_Array*, nova_meta_Nova_Class*);
 typedef spectra_util_Nova_SyntaxUtils* (*spectra_util_Nova_SyntaxUtils_native_Nova_construct)(spectra_util_Nova_SyntaxUtils*, nova_exception_Nova_ExceptionData*);
 
 typedef struct spectra_util_native_SyntaxUtils
@@ -3115,7 +3115,6 @@ spectra_util_Nova_SyntaxUtils_native_Nova_construct SyntaxUtils;
 
 typedef struct nova_env
 {
-nova_native_Class nova_Class;
 nova_native_Object nova_Object;
 nova_native_String nova_String;
 nova_native_Substring nova_Substring;
@@ -3213,6 +3212,7 @@ nova_math_logic_native_StatementComponent nova_math_logic_StatementComponent;
 nova_math_logic_native_StatementGroup nova_math_logic_StatementGroup;
 nova_math_logic_native_StatementLetter nova_math_logic_StatementLetter;
 nova_math_logic_native_WFF nova_math_logic_WFF;
+nova_meta_native_Class nova_meta_Class;
 nova_meta_native_Field nova_meta_Field;
 nova_meta_native_GenericArgument nova_meta_GenericArgument;
 nova_meta_native_GenericParameter nova_meta_GenericParameter;

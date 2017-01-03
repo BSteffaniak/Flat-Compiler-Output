@@ -26,7 +26,7 @@
 #include <nova/nova_Nova_Object.h>
 #include <nova/nova_Nova_String.h>
 #include <nova/nova_Nova_System.h>
-#include <nova/nova_Nova_Class.h>
+#include <nova/meta/nova_meta_Nova_Class.h>
 #include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <nova/io/nova_io_Nova_File.h>
 #include <nova/time/nova_time_Nova_Timer.h>
@@ -76,7 +76,7 @@ CCLASS_PRIVATE
 )
 
 void spectra_Nova_Spectra_func_Nova_testClasses(spectra_Nova_Spectra* this, nova_exception_Nova_ExceptionData* exceptionData);
-char spectra_Nova_Spectra_Nova_lambda100(spectra_Nova_Spectra* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_Class* _1, int _2, nova_datastruct_list_Nova_Array* _3, Context1* context);
+char spectra_Nova_Spectra_Nova_lambda100(spectra_Nova_Spectra* this, nova_exception_Nova_ExceptionData* exceptionData, nova_meta_Nova_Class* _1, int _2, nova_datastruct_list_Nova_Array* _3, Context1* context);
 char spectra_Nova_Spectra_Nova_lambda101(spectra_Nova_Spectra* this, nova_exception_Nova_ExceptionData* exceptionData, nova_io_Nova_File* _1, int _2, nova_datastruct_list_Nova_Array* _3, Context2* context);
 spectra_tree_nodes_Nova_NovaFile* spectra_Nova_Spectra_Nova_lambda102(spectra_Nova_Spectra* this, nova_exception_Nova_ExceptionData* exceptionData, nova_io_Nova_File* _1, int _2, nova_datastruct_list_Nova_Array* _3, Context3* context);
 void spectra_Nova_Spectra_Nova_lambda103(spectra_Nova_Spectra* this, nova_exception_Nova_ExceptionData* exceptionData, spectra_tree_nodes_Nova_NovaFile* _1, int _2, nova_datastruct_list_Nova_Array* _3, Context4* context);
@@ -163,7 +163,7 @@ void spectra_Nova_Spectra_Nova_compile(spectra_Nova_Spectra* this, nova_exceptio
 		spectra_Nova_Spectra_func_Nova_testClasses(this, exceptionData);
 		l2_Nova_target = nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("c"));
 		l2_Nova_myString = nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("hey this is my string"));
-		l2_Nova_annotationTypes = (nova_datastruct_list_Nova_ImmutableArray*)(nova_datastruct_list_Nova_ImmutableArray_Nova_filter((nova_datastruct_list_Nova_ImmutableArray*)(nova_Nova_Class_Nova_ALL), exceptionData, (nova_datastruct_list_Nova_ImmutableArray_closure12_Nova_filterFunc)&spectra_Nova_Spectra_Nova_lambda100, this, contextArg100));
+		l2_Nova_annotationTypes = (nova_datastruct_list_Nova_ImmutableArray*)(nova_datastruct_list_Nova_ImmutableArray_Nova_filter((nova_datastruct_list_Nova_ImmutableArray*)(nova_meta_Nova_Class_Nova_ALL), exceptionData, (nova_datastruct_list_Nova_ImmutableArray_closure12_Nova_filterFunc)&spectra_Nova_Spectra_Nova_lambda100, this, contextArg100));
 		l2_Nova_program = spectra_tree_nodes_Nova_Program_Nova_construct(0, exceptionData, 0);
 		l2_Nova_parentDir = nova_io_Nova_File_1_Nova_construct(0, exceptionData, (nova_Nova_String*)(nova_datastruct_list_Nova_List_Nova_firstOr((nova_datastruct_list_Nova_List*)(args), exceptionData, (nova_Nova_Object*)(nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("../../../tempstd"))), 0, 0, 0)));
 		l2_Nova_parseTimer = nova_time_Nova_Timer_Nova_construct(0, exceptionData);
@@ -226,9 +226,9 @@ void spectra_Nova_Spectra_func_Nova_testClasses(spectra_Nova_Spectra* this, nova
 {
 }
 
-char spectra_Nova_Spectra_Nova_lambda100(spectra_Nova_Spectra* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_Class* _1, int _2, nova_datastruct_list_Nova_Array* _3, Context1* context)
+char spectra_Nova_Spectra_Nova_lambda100(spectra_Nova_Spectra* this, nova_exception_Nova_ExceptionData* exceptionData, nova_meta_Nova_Class* _1, int _2, nova_datastruct_list_Nova_Array* _3, Context1* context)
 {
-	return nova_Nova_Class_Nova_isOfType(_1, exceptionData, (nova_Nova_Class*)(spectra_tree_nodes_annotations_Annotation_Extension_VTable_val.classInstance));
+	return nova_meta_Nova_Class_Nova_isOfType(_1, exceptionData, (nova_meta_Nova_Class*)(spectra_tree_nodes_annotations_Annotation_Extension_VTable_val.classInstance));
 }
 
 char spectra_Nova_Spectra_Nova_lambda101(spectra_Nova_Spectra* this, nova_exception_Nova_ExceptionData* exceptionData, nova_io_Nova_File* _1, int _2, nova_datastruct_list_Nova_Array* _3, Context2* context)

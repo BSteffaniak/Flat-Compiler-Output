@@ -41,7 +41,7 @@ typedef void (*nova_thread_Nova_Thread_closure5_Nova_action)(void*, nova_excepti
 #include <nova/nova_Nova_Object.h>
 #include <nova/nova_Nova_String.h>
 #include <nova/nova_Nova_System.h>
-#include <nova/nova_Nova_Class.h>
+#include <nova/meta/nova_meta_Nova_Class.h>
 #include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <nova/thread/NativeThread.h>
 #include <nova/NativeObject.h>

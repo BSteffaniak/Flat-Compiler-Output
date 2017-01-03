@@ -26,7 +26,7 @@
 #include <nova/nova_Nova_Object.h>
 #include <nova/nova_Nova_String.h>
 #include <nova/nova_Nova_System.h>
-#include <nova/nova_Nova_Class.h>
+#include <nova/meta/nova_meta_Nova_Class.h>
 #include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <spectra/spectra_Nova_InvalidParseException.h>
 #include <spectra/spectra_Nova_SyntaxErrorException.h>
@@ -446,7 +446,7 @@ nova_Nova_String* spectra_tree_nodes_Nova_Node_Accessor_Nova_nodeType(spectra_tr
 {
 	nova_Nova_String* l1_Nova_name = (nova_Nova_String*)nova_null;
 	
-	l1_Nova_name = nova_Nova_Class_Accessor_Nova_name(this->vtable->classInstance, exceptionData);
+	l1_Nova_name = nova_meta_Nova_Class_Accessor_Nova_name(this->vtable->classInstance, exceptionData);
 	return l1_Nova_name;
 }
 

@@ -71,7 +71,7 @@ typedef char (*nova_datastruct_list_Nova_CharArray_closure32_Nova_func)(void*, n
 #include <nova/nova_Nova_Object.h>
 #include <nova/nova_Nova_String.h>
 #include <nova/nova_Nova_System.h>
-#include <nova/nova_Nova_Class.h>
+#include <nova/meta/nova_meta_Nova_Class.h>
 #include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_CharArrayIterator.h>
 #include <nova/datastruct/nova_datastruct_Nova_Comparable.h>

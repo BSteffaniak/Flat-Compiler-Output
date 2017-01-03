@@ -35,7 +35,7 @@ typedef struct spectra_tree_nodes_controlstructures_loops_Nova_Loop spectra_tree
 #include <nova/nova_Nova_Object.h>
 #include <nova/nova_Nova_String.h>
 #include <nova/nova_Nova_System.h>
-#include <nova/nova_Nova_Class.h>
+#include <nova/meta/nova_meta_Nova_Class.h>
 #include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <spectra/tree/nodes/controlstructures/spectra_tree_nodes_controlstructures_Nova_ControlStructure.h>
 #include <spectra/tree/nodes/spectra_tree_nodes_Nova_Node.h>
