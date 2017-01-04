@@ -100,7 +100,6 @@ void spectra_tree_nodes_annotations_Nova_Annotation_Nova_destroy(spectra_tree_no
 	}
 	
 	
-	
 	NOVA_FREE(*this);
 }
 
@@ -224,7 +223,6 @@ nova_Nova_String* spectra_tree_nodes_annotations_Nova_Annotation_Accessor_Nova_l
 
 void spectra_tree_nodes_annotations_Nova_Annotation_Nova_super(spectra_tree_nodes_annotations_Nova_Annotation* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
-	this->spectra_tree_nodes_annotations_Nova_Annotation_Nova_myvar = 0;
 }
 
 void spectra_tree_nodes_annotations_Nova_AnnotationFunctionMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData)

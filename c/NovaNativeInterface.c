@@ -1396,8 +1396,10 @@ nova_env novaEnv = {
 &spectra_tree_nodes_Nova_Accessible_1_Nova_getNextAccessedOfType,
 &spectra_tree_nodes_Nova_Accessible_Nova_getRootReferenceNode,
 &spectra_tree_nodes_Nova_Accessible_Nova_getReferenceNode,
-&spectra_tree_nodes_Nova_Accessible_0_Nova_cloneTo,
 &spectra_tree_nodes_Nova_Accessible_Nova_writeAccessedNodes,
+},
+{
+&spectra_tree_nodes_Nova_AccessibleFunctionMap_Nova_construct,
 },
 
 {

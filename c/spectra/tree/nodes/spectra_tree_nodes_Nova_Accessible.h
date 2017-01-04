@@ -2,6 +2,7 @@
 #define FILE_spectra_tree_nodes_Nova_Accessible_NOVA
 
 typedef struct spectra_tree_nodes_Nova_Accessible spectra_tree_nodes_Nova_Accessible;
+typedef struct spectra_tree_nodes_Nova_AccessibleFunctionMap spectra_tree_nodes_Nova_AccessibleFunctionMap;
 
 
 #include <Nova.h>
@@ -44,6 +45,44 @@ typedef struct spectra_tree_nodes_Nova_Accessible spectra_tree_nodes_Nova_Access
 #include <spectra/tree/nodes/spectra_tree_nodes_Nova_ClassDeclaration.h>
 #include <spectra/tree/nodes/spectra_tree_nodes_Nova_Node.h>
 #include <spectra/tree/nodes/spectra_tree_nodes_Nova_Value.h>
+#include <nova/datastruct/nova_datastruct_Nova_Tuple2.h>
+#include <spectra/spectra_Nova_SyntaxMessage.h>
+#include <spectra/util/spectra_util_Nova_Location.h>
+#include <spectra/tree/nodes/arrays/spectra_tree_nodes_arrays_Nova_ArrayAccess.h>
+#include <spectra/tree/nodes/operations/spectra_tree_nodes_operations_Nova_Operation.h>
+#include <spectra/tree/nodes/operations/spectra_tree_nodes_operations_Nova_UnaryOperation.h>
+#include <spectra/tree/nodes/operations/spectra_tree_nodes_operations_Nova_TernaryOperation.h>
+#include <spectra/tree/nodes/operations/spectra_tree_nodes_operations_Nova_ElvisOperation.h>
+#include <spectra/tree/nodes/operations/spectra_tree_nodes_operations_Nova_Assignable.h>
+#include <spectra/tree/nodes/variables/spectra_tree_nodes_variables_Nova_Variable.h>
+#include <spectra/tree/nodes/functions/spectra_tree_nodes_functions_Nova_FunctionCall.h>
+#include <spectra/tree/nodes/functions/spectra_tree_nodes_functions_Nova_ArrayInstantiation.h>
+#include <spectra/tree/nodes/functions/spectra_tree_nodes_functions_Nova_Instantiation.h>
+#include <spectra/tree/nodes/spectra_tree_nodes_Nova_Accessible.h>
+#include <spectra/tree/nodes/spectra_tree_nodes_Nova_Cast.h>
+#include <spectra/tree/nodes/spectra_tree_nodes_Nova_Identifier.h>
+#include <spectra/tree/nodes/spectra_tree_nodes_Nova_Import.h>
+#include <spectra/tree/nodes/spectra_tree_nodes_Nova_Literal.h>
+#include <spectra/tree/nodes/spectra_tree_nodes_Nova_NovaFile.h>
+#include <spectra/tree/nodes/spectra_tree_nodes_Nova_NumericRange.h>
+#include <spectra/tree/nodes/spectra_tree_nodes_Nova_PlaceholderValue.h>
+#include <spectra/tree/nodes/spectra_tree_nodes_Nova_Priority.h>
+#include <spectra/tree/nodes/spectra_tree_nodes_Nova_StaticClassReference.h>
+#include <spectra/tree/nodes/spectra_tree_nodes_Nova_Type.h>
+#include <spectra/spectra_Nova_SyntaxErrorException.h>
+#include <spectra/error/spectra_error_Nova_UnimplementedOperationException.h>
+#include <spectra/tree/nodes/annotations/spectra_tree_nodes_annotations_Nova_Annotatable.h>
+#include <spectra/tree/nodes/annotations/spectra_tree_nodes_annotations_Nova_Annotation.h>
+#include <spectra/tree/nodes/exceptionhandling/spectra_tree_nodes_exceptionhandling_Nova_Try.h>
+#include <spectra/tree/nodes/functions/spectra_tree_nodes_functions_Nova_FunctionDeclaration.h>
+#include <spectra/tree/nodes/functions/closures/spectra_tree_nodes_functions_closures_Nova_LambdaExpression.h>
+#include <spectra/tree/nodes/variables/spectra_tree_nodes_variables_Nova_VariableDeclaration.h>
+#include <spectra/tree/nodes/spectra_tree_nodes_Nova_NodeList.h>
+#include <spectra/tree/nodes/spectra_tree_nodes_Nova_Program.h>
+#include <spectra/tree/nodes/spectra_tree_nodes_Nova_Scope.h>
+#include <spectra/tree/nodes/spectra_tree_nodes_Nova_ValidationResult.h>
+#include <nova/NativeObject.h>
+#include <nova/operators/nova_operators_Nova_EqualsOperator.h>
 
 CCLASS_CLASS
 (
@@ -82,5 +121,18 @@ char spectra_tree_nodes_Nova_Accessible_virtual_Accessor1_Nova_safeNavigation(sp
 char spectra_tree_nodes_Nova_Accessible_virtual_Mutator0_Nova_safeNavigation(spectra_tree_nodes_Nova_Accessible* this, nova_exception_Nova_ExceptionData* exceptionData, char value);
 spectra_tree_nodes_Nova_Accessible* spectra_tree_nodes_Nova_Accessible_virtual_Accessor1_Nova_accessedNode(spectra_tree_nodes_Nova_Accessible* this, nova_exception_Nova_ExceptionData* exceptionData);
 spectra_tree_nodes_Nova_Accessible* spectra_tree_nodes_Nova_Accessible_virtual_Mutator0_Nova_accessedNode(spectra_tree_nodes_Nova_Accessible* this, nova_exception_Nova_ExceptionData* exceptionData, spectra_tree_nodes_Nova_Accessible* value);
+
+CCLASS_CLASS
+(
+	spectra_tree_nodes_Nova_AccessibleFunctionMap, 
+	
+	spectra_tree_nodes_Accessible_AccessibleFunctionMap_Extension_VTable* vtable;
+)
+
+void spectra_tree_nodes_Nova_AccessibleFunctionMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData);
+spectra_tree_nodes_Nova_AccessibleFunctionMap* spectra_tree_nodes_Nova_AccessibleFunctionMap_Nova_construct(spectra_tree_nodes_Nova_AccessibleFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+void spectra_tree_nodes_Nova_AccessibleFunctionMap_Nova_destroy(spectra_tree_nodes_Nova_AccessibleFunctionMap** this, nova_exception_Nova_ExceptionData* exceptionData);
+void spectra_tree_nodes_Nova_AccessibleFunctionMap_Nova_this(spectra_tree_nodes_Nova_AccessibleFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+void spectra_tree_nodes_Nova_AccessibleFunctionMap_Nova_super(spectra_tree_nodes_Nova_AccessibleFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
 
 #endif

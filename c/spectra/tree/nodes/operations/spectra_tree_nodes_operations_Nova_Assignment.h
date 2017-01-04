@@ -51,6 +51,7 @@ typedef struct spectra_tree_nodes_operations_Nova_AssignmentFunctionMap spectra_
 #include <spectra/tree/nodes/operations/spectra_tree_nodes_operations_Nova_Assignable.h>
 #include <spectra/tree/nodes/operations/spectra_tree_nodes_operations_Nova_Operation.h>
 #include <spectra/tree/nodes/operations/spectra_tree_nodes_operations_Nova_Operator.h>
+#include <spectra/tree/nodes/spectra_tree_nodes_Nova_Accessible.h>
 #include <spectra/spectra_Nova_InvalidParseException.h>
 #include <nova/datastruct/nova_datastruct_Nova_Tuple2.h>
 #include <spectra/tree/nodes/arrays/spectra_tree_nodes_arrays_Nova_ArrayAccess.h>
@@ -60,7 +61,6 @@ typedef struct spectra_tree_nodes_operations_Nova_AssignmentFunctionMap spectra_
 #include <spectra/tree/nodes/functions/spectra_tree_nodes_functions_Nova_FunctionCall.h>
 #include <spectra/tree/nodes/functions/spectra_tree_nodes_functions_Nova_ArrayInstantiation.h>
 #include <spectra/tree/nodes/functions/spectra_tree_nodes_functions_Nova_Instantiation.h>
-#include <spectra/tree/nodes/spectra_tree_nodes_Nova_Accessible.h>
 #include <spectra/tree/nodes/spectra_tree_nodes_Nova_Cast.h>
 #include <spectra/tree/nodes/spectra_tree_nodes_Nova_ClassDeclaration.h>
 #include <spectra/tree/nodes/spectra_tree_nodes_Nova_Identifier.h>

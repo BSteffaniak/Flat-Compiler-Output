@@ -156,7 +156,7 @@ nova_Nova_String* spectra_tree_nodes_Nova_Priority_Nova_writeNova(spectra_tree_n
 
 spectra_tree_nodes_Nova_Value* spectra_tree_nodes_Nova_Priority_Accessor_Nova_returnedValue(spectra_tree_nodes_Nova_Priority* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
-	return (spectra_tree_nodes_Nova_Value*)spectra_tree_nodes_Nova_Value_Accessor_Nova_returnedNode(this->spectra_tree_nodes_Nova_Priority_Nova_value, exceptionData);
+	return (spectra_tree_nodes_Nova_Value*)spectra_tree_nodes_Nova_Value_virtual_Accessor_Nova_returnedNode((spectra_tree_nodes_Nova_Value*)(this->spectra_tree_nodes_Nova_Priority_Nova_value), exceptionData);
 }
 
 

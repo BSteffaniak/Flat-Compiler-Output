@@ -41,6 +41,7 @@
 #include <spectra/tree/nodes/operations/spectra_tree_nodes_operations_Nova_Assignable.h>
 #include <spectra/tree/nodes/operations/spectra_tree_nodes_operations_Nova_Operation.h>
 #include <spectra/tree/nodes/operations/spectra_tree_nodes_operations_Nova_Operator.h>
+#include <spectra/tree/nodes/spectra_tree_nodes_Nova_Accessible.h>
 #include <spectra/spectra_Nova_InvalidParseException.h>
 #include <nova/datastruct/nova_datastruct_Nova_Tuple2.h>
 #include <spectra/tree/nodes/arrays/spectra_tree_nodes_arrays_Nova_ArrayAccess.h>
@@ -50,7 +51,6 @@
 #include <spectra/tree/nodes/functions/spectra_tree_nodes_functions_Nova_FunctionCall.h>
 #include <spectra/tree/nodes/functions/spectra_tree_nodes_functions_Nova_ArrayInstantiation.h>
 #include <spectra/tree/nodes/functions/spectra_tree_nodes_functions_Nova_Instantiation.h>
-#include <spectra/tree/nodes/spectra_tree_nodes_Nova_Accessible.h>
 #include <spectra/tree/nodes/spectra_tree_nodes_Nova_Cast.h>
 #include <spectra/tree/nodes/spectra_tree_nodes_Nova_ClassDeclaration.h>
 #include <spectra/tree/nodes/spectra_tree_nodes_Nova_Identifier.h>
@@ -231,13 +231,13 @@ spectra_tree_nodes_Nova_Value* spectra_tree_nodes_operations_Nova_Assignment_Mut
 
 spectra_tree_nodes_Nova_Node* spectra_tree_nodes_operations_Nova_Assignment_Accessor_Nova_scopeConsumer(spectra_tree_nodes_operations_Nova_Assignment* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
-	return (spectra_tree_nodes_Nova_Node*)spectra_tree_nodes_Nova_Value_Accessor_Nova_returnedNode(spectra_tree_nodes_operations_Nova_Assignment_Accessor_Nova_assignment(this, exceptionData), exceptionData);
+	return (spectra_tree_nodes_Nova_Node*)(spectra_tree_nodes_Nova_Accessible*)((spectra_tree_nodes_operations_Nova_Assignment_Accessor_Nova_assignment(this, exceptionData)) != (spectra_tree_nodes_Nova_Value*)nova_null ? (nova_Nova_Object*)spectra_tree_nodes_Nova_Value_virtual_Accessor_Nova_returnedNode((spectra_tree_nodes_Nova_Value*)(spectra_tree_nodes_operations_Nova_Assignment_Accessor_Nova_assignment(this, exceptionData)), exceptionData) : (nova_Nova_Object*)nova_null);
 }
 
 
 spectra_tree_nodes_Nova_Type* spectra_tree_nodes_operations_Nova_Assignment_Accessorfunc_Nova_type(spectra_tree_nodes_operations_Nova_Assignment* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
-	return spectra_tree_nodes_operations_Nova_Assignment_Accessorfunc_Nova_type((spectra_tree_nodes_operations_Nova_Assignment*)(spectra_tree_nodes_Nova_Value_Accessor_Nova_returnedNode(spectra_tree_nodes_operations_Nova_Assignment_Accessor_Nova_assignment(this, exceptionData), exceptionData)), exceptionData);
+	return spectra_tree_nodes_Nova_Value_virtual_Accessorfunc_Nova_type((spectra_tree_nodes_Nova_Value*)(spectra_tree_nodes_Nova_Value_virtual_Accessor_Nova_returnedNode((spectra_tree_nodes_Nova_Value*)(spectra_tree_nodes_operations_Nova_Assignment_Accessor_Nova_assignment(this, exceptionData)), exceptionData)), exceptionData);
 }
 
 

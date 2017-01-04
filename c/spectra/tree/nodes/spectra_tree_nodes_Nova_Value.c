@@ -344,6 +344,11 @@ nova_Nova_String* spectra_tree_nodes_Nova_Value_virtual_Nova_writeType(spectra_t
 	return this->vtable->spectra_tree_nodes_Nova_Value_virtual_Nova_writeType((spectra_tree_nodes_Nova_Value*)(this), exceptionData);
 }
 
+spectra_tree_nodes_Nova_Accessible* spectra_tree_nodes_Nova_Value_virtual_Accessor_Nova_returnedNode(spectra_tree_nodes_Nova_Value* this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+	return this->vtable->spectra_tree_nodes_Nova_Value_virtual_Accessor_Nova_returnedNode((spectra_tree_nodes_Nova_Value*)(this), exceptionData);
+}
+
 spectra_tree_nodes_Nova_Type* spectra_tree_nodes_Nova_Value_virtual_Accessorfunc_Nova_type(spectra_tree_nodes_Nova_Value* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
 	return this->vtable->spectra_tree_nodes_Nova_Value_virtual_Accessorfunc_Nova_type((spectra_tree_nodes_Nova_Value*)(this), exceptionData);
