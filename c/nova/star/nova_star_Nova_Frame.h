@@ -2,7 +2,7 @@
 #define FILE_nova_star_Nova_Frame_NOVA
 
 typedef struct nova_star_Nova_Frame nova_star_Nova_Frame;
-typedef struct nova_star_Nova_nova_star_FrameFunctionMap nova_star_Nova_nova_star_FrameFunctionMap;
+typedef struct nova_star_Nova_FrameFunctionMap nova_star_Nova_FrameFunctionMap;
 
 
 #include <Nova.h>
@@ -65,15 +65,15 @@ void nova_star_Nova_Frame_Nova_super(nova_star_Nova_Frame* this, nova_exception_
 
 CCLASS_CLASS
 (
-	nova_star_Nova_nova_star_FrameFunctionMap, 
+	nova_star_Nova_FrameFunctionMap, 
 	
-	nova_star_Frame_nova_star_FrameFunctionMap_Extension_VTable* vtable;
+	nova_star_Frame_FrameFunctionMap_Extension_VTable* vtable;
 )
 
-void nova_star_Nova_nova_star_FrameFunctionMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData);
-nova_star_Nova_nova_star_FrameFunctionMap* nova_star_Nova_nova_star_FrameFunctionMap_Nova_construct(nova_star_Nova_nova_star_FrameFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
-void nova_star_Nova_nova_star_FrameFunctionMap_Nova_destroy(nova_star_Nova_nova_star_FrameFunctionMap** this, nova_exception_Nova_ExceptionData* exceptionData);
-void nova_star_Nova_nova_star_FrameFunctionMap_Nova_this(nova_star_Nova_nova_star_FrameFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
-void nova_star_Nova_nova_star_FrameFunctionMap_Nova_super(nova_star_Nova_nova_star_FrameFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+void nova_star_Nova_FrameFunctionMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData);
+nova_star_Nova_FrameFunctionMap* nova_star_Nova_FrameFunctionMap_Nova_construct(nova_star_Nova_FrameFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+void nova_star_Nova_FrameFunctionMap_Nova_destroy(nova_star_Nova_FrameFunctionMap** this, nova_exception_Nova_ExceptionData* exceptionData);
+void nova_star_Nova_FrameFunctionMap_Nova_this(nova_star_Nova_FrameFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+void nova_star_Nova_FrameFunctionMap_Nova_super(nova_star_Nova_FrameFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
 
 #endif

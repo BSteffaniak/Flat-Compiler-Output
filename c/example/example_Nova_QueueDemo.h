@@ -2,7 +2,7 @@
 #define FILE_example_Nova_QueueDemo_NOVA
 
 typedef struct example_Nova_QueueDemo example_Nova_QueueDemo;
-typedef struct example_Nova_example_QueueDemoFunctionMap example_Nova_example_QueueDemoFunctionMap;
+typedef struct example_Nova_QueueDemoFunctionMap example_Nova_QueueDemoFunctionMap;
 
 
 #include <Nova.h>
@@ -58,15 +58,15 @@ void example_Nova_QueueDemo_Nova_super(example_Nova_QueueDemo* this, nova_except
 
 CCLASS_CLASS
 (
-	example_Nova_example_QueueDemoFunctionMap, 
+	example_Nova_QueueDemoFunctionMap, 
 	
-	example_QueueDemo_example_QueueDemoFunctionMap_Extension_VTable* vtable;
+	example_QueueDemo_QueueDemoFunctionMap_Extension_VTable* vtable;
 )
 
-void example_Nova_example_QueueDemoFunctionMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData);
-example_Nova_example_QueueDemoFunctionMap* example_Nova_example_QueueDemoFunctionMap_Nova_construct(example_Nova_example_QueueDemoFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
-void example_Nova_example_QueueDemoFunctionMap_Nova_destroy(example_Nova_example_QueueDemoFunctionMap** this, nova_exception_Nova_ExceptionData* exceptionData);
-void example_Nova_example_QueueDemoFunctionMap_Nova_this(example_Nova_example_QueueDemoFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
-void example_Nova_example_QueueDemoFunctionMap_Nova_super(example_Nova_example_QueueDemoFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+void example_Nova_QueueDemoFunctionMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData);
+example_Nova_QueueDemoFunctionMap* example_Nova_QueueDemoFunctionMap_Nova_construct(example_Nova_QueueDemoFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+void example_Nova_QueueDemoFunctionMap_Nova_destroy(example_Nova_QueueDemoFunctionMap** this, nova_exception_Nova_ExceptionData* exceptionData);
+void example_Nova_QueueDemoFunctionMap_Nova_this(example_Nova_QueueDemoFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+void example_Nova_QueueDemoFunctionMap_Nova_super(example_Nova_QueueDemoFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
 
 #endif

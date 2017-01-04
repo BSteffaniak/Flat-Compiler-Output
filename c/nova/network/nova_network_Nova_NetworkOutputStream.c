@@ -97,28 +97,28 @@ void nova_network_Nova_NetworkOutputStream_Nova_super(nova_network_Nova_NetworkO
 	this->prv->nova_network_Nova_NetworkOutputStream_Nova_socket = (nova_network_Nova_ConnectionSocket*)nova_null;
 }
 
-void nova_network_Nova_nova_network_NetworkOutputStreamFunctionMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData)
+void nova_network_Nova_NetworkOutputStreamFunctionMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData)
 {
 	{
 	}
 }
 
-nova_network_Nova_nova_network_NetworkOutputStreamFunctionMap* nova_network_Nova_nova_network_NetworkOutputStreamFunctionMap_Nova_construct(nova_network_Nova_nova_network_NetworkOutputStreamFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+nova_network_Nova_NetworkOutputStreamFunctionMap* nova_network_Nova_NetworkOutputStreamFunctionMap_Nova_construct(nova_network_Nova_NetworkOutputStreamFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
-	CCLASS_NEW(nova_network_Nova_nova_network_NetworkOutputStreamFunctionMap, this,);
-	this->vtable = &nova_network_NetworkOutputStream_nova_network_NetworkOutputStreamFunctionMap_Extension_VTable_val;
+	CCLASS_NEW(nova_network_Nova_NetworkOutputStreamFunctionMap, this,);
+	this->vtable = &nova_network_NetworkOutputStream_NetworkOutputStreamFunctionMap_Extension_VTable_val;
 	nova_Nova_Object_Nova_super((nova_Nova_Object*)this, exceptionData);
 	nova_meta_Nova_FunctionMap_Nova_super((nova_meta_Nova_FunctionMap*)this, exceptionData);
-	nova_network_Nova_nova_network_NetworkOutputStreamFunctionMap_Nova_super(this, exceptionData);
+	nova_network_Nova_NetworkOutputStreamFunctionMap_Nova_super(this, exceptionData);
 	
 	{
-		nova_network_Nova_nova_network_NetworkOutputStreamFunctionMap_Nova_this(this, exceptionData);
+		nova_network_Nova_NetworkOutputStreamFunctionMap_Nova_this(this, exceptionData);
 	}
 	
 	return this;
 }
 
-void nova_network_Nova_nova_network_NetworkOutputStreamFunctionMap_Nova_destroy(nova_network_Nova_nova_network_NetworkOutputStreamFunctionMap** this, nova_exception_Nova_ExceptionData* exceptionData)
+void nova_network_Nova_NetworkOutputStreamFunctionMap_Nova_destroy(nova_network_Nova_NetworkOutputStreamFunctionMap** this, nova_exception_Nova_ExceptionData* exceptionData)
 {
 	if (!*this)
 	{
@@ -129,11 +129,11 @@ void nova_network_Nova_nova_network_NetworkOutputStreamFunctionMap_Nova_destroy(
 	NOVA_FREE(*this);
 }
 
-void nova_network_Nova_nova_network_NetworkOutputStreamFunctionMap_Nova_this(nova_network_Nova_nova_network_NetworkOutputStreamFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+void nova_network_Nova_NetworkOutputStreamFunctionMap_Nova_this(nova_network_Nova_NetworkOutputStreamFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
 }
 
-void nova_network_Nova_nova_network_NetworkOutputStreamFunctionMap_Nova_super(nova_network_Nova_nova_network_NetworkOutputStreamFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+void nova_network_Nova_NetworkOutputStreamFunctionMap_Nova_super(nova_network_Nova_NetworkOutputStreamFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
 }
 

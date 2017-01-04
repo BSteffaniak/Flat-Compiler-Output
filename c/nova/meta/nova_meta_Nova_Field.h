@@ -2,7 +2,7 @@
 #define FILE_nova_meta_Nova_Field_NOVA
 
 typedef struct nova_meta_Nova_Field nova_meta_Nova_Field;
-typedef struct nova_meta_Nova_nova_meta_FieldFunctionMap nova_meta_Nova_nova_meta_FieldFunctionMap;
+typedef struct nova_meta_Nova_FieldFunctionMap nova_meta_Nova_FieldFunctionMap;
 
 
 #include <Nova.h>
@@ -60,15 +60,15 @@ void nova_meta_Nova_Field_Nova_super(nova_meta_Nova_Field* this, nova_exception_
 
 CCLASS_CLASS
 (
-	nova_meta_Nova_nova_meta_FieldFunctionMap, 
+	nova_meta_Nova_FieldFunctionMap, 
 	
-	nova_meta_Field_nova_meta_FieldFunctionMap_Extension_VTable* vtable;
+	nova_meta_Field_FieldFunctionMap_Extension_VTable* vtable;
 )
 
-void nova_meta_Nova_nova_meta_FieldFunctionMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData);
-nova_meta_Nova_nova_meta_FieldFunctionMap* nova_meta_Nova_nova_meta_FieldFunctionMap_Nova_construct(nova_meta_Nova_nova_meta_FieldFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
-void nova_meta_Nova_nova_meta_FieldFunctionMap_Nova_destroy(nova_meta_Nova_nova_meta_FieldFunctionMap** this, nova_exception_Nova_ExceptionData* exceptionData);
-void nova_meta_Nova_nova_meta_FieldFunctionMap_Nova_this(nova_meta_Nova_nova_meta_FieldFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
-void nova_meta_Nova_nova_meta_FieldFunctionMap_Nova_super(nova_meta_Nova_nova_meta_FieldFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+void nova_meta_Nova_FieldFunctionMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData);
+nova_meta_Nova_FieldFunctionMap* nova_meta_Nova_FieldFunctionMap_Nova_construct(nova_meta_Nova_FieldFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+void nova_meta_Nova_FieldFunctionMap_Nova_destroy(nova_meta_Nova_FieldFunctionMap** this, nova_exception_Nova_ExceptionData* exceptionData);
+void nova_meta_Nova_FieldFunctionMap_Nova_this(nova_meta_Nova_FieldFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+void nova_meta_Nova_FieldFunctionMap_Nova_super(nova_meta_Nova_FieldFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
 
 #endif

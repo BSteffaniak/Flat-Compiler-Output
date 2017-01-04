@@ -74,28 +74,28 @@ void nova_exception_Nova_DivideByZeroException_Nova_super(nova_exception_Nova_Di
 {
 }
 
-void nova_exception_Nova_nova_exception_DivideByZeroExceptionFunctionMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData)
+void nova_exception_Nova_DivideByZeroExceptionFunctionMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData)
 {
 	{
 	}
 }
 
-nova_exception_Nova_nova_exception_DivideByZeroExceptionFunctionMap* nova_exception_Nova_nova_exception_DivideByZeroExceptionFunctionMap_Nova_construct(nova_exception_Nova_nova_exception_DivideByZeroExceptionFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+nova_exception_Nova_DivideByZeroExceptionFunctionMap* nova_exception_Nova_DivideByZeroExceptionFunctionMap_Nova_construct(nova_exception_Nova_DivideByZeroExceptionFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
-	CCLASS_NEW(nova_exception_Nova_nova_exception_DivideByZeroExceptionFunctionMap, this,);
-	this->vtable = &nova_exception_DivideByZeroException_nova_exception_DivideByZeroExceptionFunctionMap_Extension_VTable_val;
+	CCLASS_NEW(nova_exception_Nova_DivideByZeroExceptionFunctionMap, this,);
+	this->vtable = &nova_exception_DivideByZeroException_DivideByZeroExceptionFunctionMap_Extension_VTable_val;
 	nova_Nova_Object_Nova_super((nova_Nova_Object*)this, exceptionData);
 	nova_meta_Nova_FunctionMap_Nova_super((nova_meta_Nova_FunctionMap*)this, exceptionData);
-	nova_exception_Nova_nova_exception_DivideByZeroExceptionFunctionMap_Nova_super(this, exceptionData);
+	nova_exception_Nova_DivideByZeroExceptionFunctionMap_Nova_super(this, exceptionData);
 	
 	{
-		nova_exception_Nova_nova_exception_DivideByZeroExceptionFunctionMap_Nova_this(this, exceptionData);
+		nova_exception_Nova_DivideByZeroExceptionFunctionMap_Nova_this(this, exceptionData);
 	}
 	
 	return this;
 }
 
-void nova_exception_Nova_nova_exception_DivideByZeroExceptionFunctionMap_Nova_destroy(nova_exception_Nova_nova_exception_DivideByZeroExceptionFunctionMap** this, nova_exception_Nova_ExceptionData* exceptionData)
+void nova_exception_Nova_DivideByZeroExceptionFunctionMap_Nova_destroy(nova_exception_Nova_DivideByZeroExceptionFunctionMap** this, nova_exception_Nova_ExceptionData* exceptionData)
 {
 	if (!*this)
 	{
@@ -106,11 +106,11 @@ void nova_exception_Nova_nova_exception_DivideByZeroExceptionFunctionMap_Nova_de
 	NOVA_FREE(*this);
 }
 
-void nova_exception_Nova_nova_exception_DivideByZeroExceptionFunctionMap_Nova_this(nova_exception_Nova_nova_exception_DivideByZeroExceptionFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+void nova_exception_Nova_DivideByZeroExceptionFunctionMap_Nova_this(nova_exception_Nova_DivideByZeroExceptionFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
 }
 
-void nova_exception_Nova_nova_exception_DivideByZeroExceptionFunctionMap_Nova_super(nova_exception_Nova_nova_exception_DivideByZeroExceptionFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+void nova_exception_Nova_DivideByZeroExceptionFunctionMap_Nova_super(nova_exception_Nova_DivideByZeroExceptionFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
 }
 

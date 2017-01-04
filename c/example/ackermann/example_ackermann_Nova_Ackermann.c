@@ -119,28 +119,28 @@ void example_ackermann_Nova_Ackermann_Nova_super(example_ackermann_Nova_Ackerman
 {
 }
 
-void example_ackermann_Nova_example_ackermann_AckermannFunctionMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData)
+void example_ackermann_Nova_AckermannFunctionMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData)
 {
 	{
 	}
 }
 
-example_ackermann_Nova_example_ackermann_AckermannFunctionMap* example_ackermann_Nova_example_ackermann_AckermannFunctionMap_Nova_construct(example_ackermann_Nova_example_ackermann_AckermannFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+example_ackermann_Nova_AckermannFunctionMap* example_ackermann_Nova_AckermannFunctionMap_Nova_construct(example_ackermann_Nova_AckermannFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
-	CCLASS_NEW(example_ackermann_Nova_example_ackermann_AckermannFunctionMap, this,);
-	this->vtable = &example_ackermann_Ackermann_example_ackermann_AckermannFunctionMap_Extension_VTable_val;
+	CCLASS_NEW(example_ackermann_Nova_AckermannFunctionMap, this,);
+	this->vtable = &example_ackermann_Ackermann_AckermannFunctionMap_Extension_VTable_val;
 	nova_Nova_Object_Nova_super((nova_Nova_Object*)this, exceptionData);
 	nova_meta_Nova_FunctionMap_Nova_super((nova_meta_Nova_FunctionMap*)this, exceptionData);
-	example_ackermann_Nova_example_ackermann_AckermannFunctionMap_Nova_super(this, exceptionData);
+	example_ackermann_Nova_AckermannFunctionMap_Nova_super(this, exceptionData);
 	
 	{
-		example_ackermann_Nova_example_ackermann_AckermannFunctionMap_Nova_this(this, exceptionData);
+		example_ackermann_Nova_AckermannFunctionMap_Nova_this(this, exceptionData);
 	}
 	
 	return this;
 }
 
-void example_ackermann_Nova_example_ackermann_AckermannFunctionMap_Nova_destroy(example_ackermann_Nova_example_ackermann_AckermannFunctionMap** this, nova_exception_Nova_ExceptionData* exceptionData)
+void example_ackermann_Nova_AckermannFunctionMap_Nova_destroy(example_ackermann_Nova_AckermannFunctionMap** this, nova_exception_Nova_ExceptionData* exceptionData)
 {
 	if (!*this)
 	{
@@ -151,11 +151,11 @@ void example_ackermann_Nova_example_ackermann_AckermannFunctionMap_Nova_destroy(
 	NOVA_FREE(*this);
 }
 
-void example_ackermann_Nova_example_ackermann_AckermannFunctionMap_Nova_this(example_ackermann_Nova_example_ackermann_AckermannFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+void example_ackermann_Nova_AckermannFunctionMap_Nova_this(example_ackermann_Nova_AckermannFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
 }
 
-void example_ackermann_Nova_example_ackermann_AckermannFunctionMap_Nova_super(example_ackermann_Nova_example_ackermann_AckermannFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+void example_ackermann_Nova_AckermannFunctionMap_Nova_super(example_ackermann_Nova_AckermannFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
 }
 

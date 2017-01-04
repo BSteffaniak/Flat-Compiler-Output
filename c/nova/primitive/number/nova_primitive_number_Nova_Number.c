@@ -86,28 +86,28 @@ char nova_primitive_number_Nova_Number_virtual_static_Nova_numDigits(nova_primit
 	return this->vtable->nova_primitive_number_Nova_Number_virtual_static_Nova_numDigits(0, exceptionData, number);
 }
 
-void nova_primitive_number_Nova_nova_primitive_number_NumberFunctionMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData)
+void nova_primitive_number_Nova_NumberFunctionMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData)
 {
 	{
 	}
 }
 
-nova_primitive_number_Nova_nova_primitive_number_NumberFunctionMap* nova_primitive_number_Nova_nova_primitive_number_NumberFunctionMap_Nova_construct(nova_primitive_number_Nova_nova_primitive_number_NumberFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+nova_primitive_number_Nova_NumberFunctionMap* nova_primitive_number_Nova_NumberFunctionMap_Nova_construct(nova_primitive_number_Nova_NumberFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
-	CCLASS_NEW(nova_primitive_number_Nova_nova_primitive_number_NumberFunctionMap, this,);
-	this->vtable = &nova_primitive_number_Number_nova_primitive_number_NumberFunctionMap_Extension_VTable_val;
+	CCLASS_NEW(nova_primitive_number_Nova_NumberFunctionMap, this,);
+	this->vtable = &nova_primitive_number_Number_NumberFunctionMap_Extension_VTable_val;
 	nova_Nova_Object_Nova_super((nova_Nova_Object*)this, exceptionData);
 	nova_meta_Nova_FunctionMap_Nova_super((nova_meta_Nova_FunctionMap*)this, exceptionData);
-	nova_primitive_number_Nova_nova_primitive_number_NumberFunctionMap_Nova_super(this, exceptionData);
+	nova_primitive_number_Nova_NumberFunctionMap_Nova_super(this, exceptionData);
 	
 	{
-		nova_primitive_number_Nova_nova_primitive_number_NumberFunctionMap_Nova_this(this, exceptionData);
+		nova_primitive_number_Nova_NumberFunctionMap_Nova_this(this, exceptionData);
 	}
 	
 	return this;
 }
 
-void nova_primitive_number_Nova_nova_primitive_number_NumberFunctionMap_Nova_destroy(nova_primitive_number_Nova_nova_primitive_number_NumberFunctionMap** this, nova_exception_Nova_ExceptionData* exceptionData)
+void nova_primitive_number_Nova_NumberFunctionMap_Nova_destroy(nova_primitive_number_Nova_NumberFunctionMap** this, nova_exception_Nova_ExceptionData* exceptionData)
 {
 	if (!*this)
 	{
@@ -118,11 +118,11 @@ void nova_primitive_number_Nova_nova_primitive_number_NumberFunctionMap_Nova_des
 	NOVA_FREE(*this);
 }
 
-void nova_primitive_number_Nova_nova_primitive_number_NumberFunctionMap_Nova_this(nova_primitive_number_Nova_nova_primitive_number_NumberFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+void nova_primitive_number_Nova_NumberFunctionMap_Nova_this(nova_primitive_number_Nova_NumberFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
 }
 
-void nova_primitive_number_Nova_nova_primitive_number_NumberFunctionMap_Nova_super(nova_primitive_number_Nova_nova_primitive_number_NumberFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+void nova_primitive_number_Nova_NumberFunctionMap_Nova_super(nova_primitive_number_Nova_NumberFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
 }
 

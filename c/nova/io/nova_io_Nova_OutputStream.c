@@ -79,28 +79,28 @@ char nova_io_Nova_OutputStream_virtual_Nova_write(nova_io_Nova_OutputStream* thi
 	return this->vtable->nova_io_Nova_OutputStream_virtual_Nova_write((nova_io_Nova_OutputStream*)(this), exceptionData, data);
 }
 
-void nova_io_Nova_nova_io_OutputStreamFunctionMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData)
+void nova_io_Nova_OutputStreamFunctionMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData)
 {
 	{
 	}
 }
 
-nova_io_Nova_nova_io_OutputStreamFunctionMap* nova_io_Nova_nova_io_OutputStreamFunctionMap_Nova_construct(nova_io_Nova_nova_io_OutputStreamFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+nova_io_Nova_OutputStreamFunctionMap* nova_io_Nova_OutputStreamFunctionMap_Nova_construct(nova_io_Nova_OutputStreamFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
-	CCLASS_NEW(nova_io_Nova_nova_io_OutputStreamFunctionMap, this,);
-	this->vtable = &nova_io_OutputStream_nova_io_OutputStreamFunctionMap_Extension_VTable_val;
+	CCLASS_NEW(nova_io_Nova_OutputStreamFunctionMap, this,);
+	this->vtable = &nova_io_OutputStream_OutputStreamFunctionMap_Extension_VTable_val;
 	nova_Nova_Object_Nova_super((nova_Nova_Object*)this, exceptionData);
 	nova_meta_Nova_FunctionMap_Nova_super((nova_meta_Nova_FunctionMap*)this, exceptionData);
-	nova_io_Nova_nova_io_OutputStreamFunctionMap_Nova_super(this, exceptionData);
+	nova_io_Nova_OutputStreamFunctionMap_Nova_super(this, exceptionData);
 	
 	{
-		nova_io_Nova_nova_io_OutputStreamFunctionMap_Nova_this(this, exceptionData);
+		nova_io_Nova_OutputStreamFunctionMap_Nova_this(this, exceptionData);
 	}
 	
 	return this;
 }
 
-void nova_io_Nova_nova_io_OutputStreamFunctionMap_Nova_destroy(nova_io_Nova_nova_io_OutputStreamFunctionMap** this, nova_exception_Nova_ExceptionData* exceptionData)
+void nova_io_Nova_OutputStreamFunctionMap_Nova_destroy(nova_io_Nova_OutputStreamFunctionMap** this, nova_exception_Nova_ExceptionData* exceptionData)
 {
 	if (!*this)
 	{
@@ -111,11 +111,11 @@ void nova_io_Nova_nova_io_OutputStreamFunctionMap_Nova_destroy(nova_io_Nova_nova
 	NOVA_FREE(*this);
 }
 
-void nova_io_Nova_nova_io_OutputStreamFunctionMap_Nova_this(nova_io_Nova_nova_io_OutputStreamFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+void nova_io_Nova_OutputStreamFunctionMap_Nova_this(nova_io_Nova_OutputStreamFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
 }
 
-void nova_io_Nova_nova_io_OutputStreamFunctionMap_Nova_super(nova_io_Nova_nova_io_OutputStreamFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+void nova_io_Nova_OutputStreamFunctionMap_Nova_super(nova_io_Nova_OutputStreamFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
 }
 

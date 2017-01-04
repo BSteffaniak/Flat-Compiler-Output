@@ -2,7 +2,7 @@
 #define FILE_example_Nova_ArrayDemo_NOVA
 
 typedef struct example_Nova_ArrayDemo example_Nova_ArrayDemo;
-typedef struct example_Nova_example_ArrayDemoFunctionMap example_Nova_example_ArrayDemoFunctionMap;
+typedef struct example_Nova_ArrayDemoFunctionMap example_Nova_ArrayDemoFunctionMap;
 
 
 #include <Nova.h>
@@ -61,15 +61,15 @@ void example_Nova_ArrayDemo_Nova_super(example_Nova_ArrayDemo* this, nova_except
 
 CCLASS_CLASS
 (
-	example_Nova_example_ArrayDemoFunctionMap, 
+	example_Nova_ArrayDemoFunctionMap, 
 	
-	example_ArrayDemo_example_ArrayDemoFunctionMap_Extension_VTable* vtable;
+	example_ArrayDemo_ArrayDemoFunctionMap_Extension_VTable* vtable;
 )
 
-void example_Nova_example_ArrayDemoFunctionMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData);
-example_Nova_example_ArrayDemoFunctionMap* example_Nova_example_ArrayDemoFunctionMap_Nova_construct(example_Nova_example_ArrayDemoFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
-void example_Nova_example_ArrayDemoFunctionMap_Nova_destroy(example_Nova_example_ArrayDemoFunctionMap** this, nova_exception_Nova_ExceptionData* exceptionData);
-void example_Nova_example_ArrayDemoFunctionMap_Nova_this(example_Nova_example_ArrayDemoFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
-void example_Nova_example_ArrayDemoFunctionMap_Nova_super(example_Nova_example_ArrayDemoFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+void example_Nova_ArrayDemoFunctionMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData);
+example_Nova_ArrayDemoFunctionMap* example_Nova_ArrayDemoFunctionMap_Nova_construct(example_Nova_ArrayDemoFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+void example_Nova_ArrayDemoFunctionMap_Nova_destroy(example_Nova_ArrayDemoFunctionMap** this, nova_exception_Nova_ExceptionData* exceptionData);
+void example_Nova_ArrayDemoFunctionMap_Nova_this(example_Nova_ArrayDemoFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+void example_Nova_ArrayDemoFunctionMap_Nova_super(example_Nova_ArrayDemoFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
 
 #endif

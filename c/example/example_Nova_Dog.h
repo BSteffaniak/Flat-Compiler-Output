@@ -2,7 +2,7 @@
 #define FILE_example_Nova_Dog_NOVA
 
 typedef struct example_Nova_Dog example_Nova_Dog;
-typedef struct example_Nova_example_DogFunctionMap example_Nova_example_DogFunctionMap;
+typedef struct example_Nova_DogFunctionMap example_Nova_DogFunctionMap;
 
 
 #include <Nova.h>
@@ -61,15 +61,15 @@ void example_Nova_Dog_Nova_super(example_Nova_Dog* this, nova_exception_Nova_Exc
 
 CCLASS_CLASS
 (
-	example_Nova_example_DogFunctionMap, 
+	example_Nova_DogFunctionMap, 
 	
-	example_Dog_example_DogFunctionMap_Extension_VTable* vtable;
+	example_Dog_DogFunctionMap_Extension_VTable* vtable;
 )
 
-void example_Nova_example_DogFunctionMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData);
-example_Nova_example_DogFunctionMap* example_Nova_example_DogFunctionMap_Nova_construct(example_Nova_example_DogFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
-void example_Nova_example_DogFunctionMap_Nova_destroy(example_Nova_example_DogFunctionMap** this, nova_exception_Nova_ExceptionData* exceptionData);
-void example_Nova_example_DogFunctionMap_Nova_this(example_Nova_example_DogFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
-void example_Nova_example_DogFunctionMap_Nova_super(example_Nova_example_DogFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+void example_Nova_DogFunctionMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData);
+example_Nova_DogFunctionMap* example_Nova_DogFunctionMap_Nova_construct(example_Nova_DogFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+void example_Nova_DogFunctionMap_Nova_destroy(example_Nova_DogFunctionMap** this, nova_exception_Nova_ExceptionData* exceptionData);
+void example_Nova_DogFunctionMap_Nova_this(example_Nova_DogFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+void example_Nova_DogFunctionMap_Nova_super(example_Nova_DogFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
 
 #endif

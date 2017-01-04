@@ -85,28 +85,28 @@ void nova_datastruct_list_Nova_ListNode_Nova_super(nova_datastruct_list_Nova_Lis
 	this->nova_datastruct_list_Nova_ListNode_Nova_next = (nova_datastruct_list_Nova_ListNode*)nova_null;
 }
 
-void nova_datastruct_list_Nova_nova_datastruct_list_ListNodeFunctionMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData)
+void nova_datastruct_list_Nova_ListNodeFunctionMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData)
 {
 	{
 	}
 }
 
-nova_datastruct_list_Nova_nova_datastruct_list_ListNodeFunctionMap* nova_datastruct_list_Nova_nova_datastruct_list_ListNodeFunctionMap_Nova_construct(nova_datastruct_list_Nova_nova_datastruct_list_ListNodeFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+nova_datastruct_list_Nova_ListNodeFunctionMap* nova_datastruct_list_Nova_ListNodeFunctionMap_Nova_construct(nova_datastruct_list_Nova_ListNodeFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
-	CCLASS_NEW(nova_datastruct_list_Nova_nova_datastruct_list_ListNodeFunctionMap, this,);
-	this->vtable = &nova_datastruct_list_ListNode_nova_datastruct_list_ListNodeFunctionMap_Extension_VTable_val;
+	CCLASS_NEW(nova_datastruct_list_Nova_ListNodeFunctionMap, this,);
+	this->vtable = &nova_datastruct_list_ListNode_ListNodeFunctionMap_Extension_VTable_val;
 	nova_Nova_Object_Nova_super((nova_Nova_Object*)this, exceptionData);
 	nova_meta_Nova_FunctionMap_Nova_super((nova_meta_Nova_FunctionMap*)this, exceptionData);
-	nova_datastruct_list_Nova_nova_datastruct_list_ListNodeFunctionMap_Nova_super(this, exceptionData);
+	nova_datastruct_list_Nova_ListNodeFunctionMap_Nova_super(this, exceptionData);
 	
 	{
-		nova_datastruct_list_Nova_nova_datastruct_list_ListNodeFunctionMap_Nova_this(this, exceptionData);
+		nova_datastruct_list_Nova_ListNodeFunctionMap_Nova_this(this, exceptionData);
 	}
 	
 	return this;
 }
 
-void nova_datastruct_list_Nova_nova_datastruct_list_ListNodeFunctionMap_Nova_destroy(nova_datastruct_list_Nova_nova_datastruct_list_ListNodeFunctionMap** this, nova_exception_Nova_ExceptionData* exceptionData)
+void nova_datastruct_list_Nova_ListNodeFunctionMap_Nova_destroy(nova_datastruct_list_Nova_ListNodeFunctionMap** this, nova_exception_Nova_ExceptionData* exceptionData)
 {
 	if (!*this)
 	{
@@ -117,11 +117,11 @@ void nova_datastruct_list_Nova_nova_datastruct_list_ListNodeFunctionMap_Nova_des
 	NOVA_FREE(*this);
 }
 
-void nova_datastruct_list_Nova_nova_datastruct_list_ListNodeFunctionMap_Nova_this(nova_datastruct_list_Nova_nova_datastruct_list_ListNodeFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+void nova_datastruct_list_Nova_ListNodeFunctionMap_Nova_this(nova_datastruct_list_Nova_ListNodeFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
 }
 
-void nova_datastruct_list_Nova_nova_datastruct_list_ListNodeFunctionMap_Nova_super(nova_datastruct_list_Nova_nova_datastruct_list_ListNodeFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+void nova_datastruct_list_Nova_ListNodeFunctionMap_Nova_super(nova_datastruct_list_Nova_ListNodeFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
 }
 

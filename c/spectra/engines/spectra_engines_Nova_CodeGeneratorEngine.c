@@ -88,28 +88,28 @@ void spectra_engines_Nova_CodeGeneratorEngine_virtual_Nova_insertMainMethod(spec
 	this->vtable->spectra_engines_Nova_CodeGeneratorEngine_virtual_Nova_insertMainMethod(this, exceptionData);
 }
 
-void spectra_engines_Nova_spectra_engines_CodeGeneratorEngineFunctionMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData)
+void spectra_engines_Nova_CodeGeneratorEngineFunctionMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData)
 {
 	{
 	}
 }
 
-spectra_engines_Nova_spectra_engines_CodeGeneratorEngineFunctionMap* spectra_engines_Nova_spectra_engines_CodeGeneratorEngineFunctionMap_Nova_construct(spectra_engines_Nova_spectra_engines_CodeGeneratorEngineFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+spectra_engines_Nova_CodeGeneratorEngineFunctionMap* spectra_engines_Nova_CodeGeneratorEngineFunctionMap_Nova_construct(spectra_engines_Nova_CodeGeneratorEngineFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
-	CCLASS_NEW(spectra_engines_Nova_spectra_engines_CodeGeneratorEngineFunctionMap, this,);
-	this->vtable = &spectra_engines_CodeGeneratorEngine_spectra_engines_CodeGeneratorEngineFunctionMap_Extension_VTable_val;
+	CCLASS_NEW(spectra_engines_Nova_CodeGeneratorEngineFunctionMap, this,);
+	this->vtable = &spectra_engines_CodeGeneratorEngine_CodeGeneratorEngineFunctionMap_Extension_VTable_val;
 	nova_Nova_Object_Nova_super((nova_Nova_Object*)this, exceptionData);
 	nova_meta_Nova_FunctionMap_Nova_super((nova_meta_Nova_FunctionMap*)this, exceptionData);
-	spectra_engines_Nova_spectra_engines_CodeGeneratorEngineFunctionMap_Nova_super(this, exceptionData);
+	spectra_engines_Nova_CodeGeneratorEngineFunctionMap_Nova_super(this, exceptionData);
 	
 	{
-		spectra_engines_Nova_spectra_engines_CodeGeneratorEngineFunctionMap_Nova_this(this, exceptionData);
+		spectra_engines_Nova_CodeGeneratorEngineFunctionMap_Nova_this(this, exceptionData);
 	}
 	
 	return this;
 }
 
-void spectra_engines_Nova_spectra_engines_CodeGeneratorEngineFunctionMap_Nova_destroy(spectra_engines_Nova_spectra_engines_CodeGeneratorEngineFunctionMap** this, nova_exception_Nova_ExceptionData* exceptionData)
+void spectra_engines_Nova_CodeGeneratorEngineFunctionMap_Nova_destroy(spectra_engines_Nova_CodeGeneratorEngineFunctionMap** this, nova_exception_Nova_ExceptionData* exceptionData)
 {
 	if (!*this)
 	{
@@ -120,11 +120,11 @@ void spectra_engines_Nova_spectra_engines_CodeGeneratorEngineFunctionMap_Nova_de
 	NOVA_FREE(*this);
 }
 
-void spectra_engines_Nova_spectra_engines_CodeGeneratorEngineFunctionMap_Nova_this(spectra_engines_Nova_spectra_engines_CodeGeneratorEngineFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+void spectra_engines_Nova_CodeGeneratorEngineFunctionMap_Nova_this(spectra_engines_Nova_CodeGeneratorEngineFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
 }
 
-void spectra_engines_Nova_spectra_engines_CodeGeneratorEngineFunctionMap_Nova_super(spectra_engines_Nova_spectra_engines_CodeGeneratorEngineFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+void spectra_engines_Nova_CodeGeneratorEngineFunctionMap_Nova_super(spectra_engines_Nova_CodeGeneratorEngineFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
 }
 

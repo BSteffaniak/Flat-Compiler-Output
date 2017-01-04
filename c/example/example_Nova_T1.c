@@ -83,28 +83,28 @@ int example_Nova_T1_virtual_Accessor_static_Nova_ind(example_Nova_T1* this, nova
 	return this->vtable->example_Nova_T1_virtual_Accessor_static_Nova_ind(0, exceptionData);
 }
 
-void example_Nova_example_T1FunctionMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData)
+void example_Nova_T1FunctionMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData)
 {
 	{
 	}
 }
 
-example_Nova_example_T1FunctionMap* example_Nova_example_T1FunctionMap_Nova_construct(example_Nova_example_T1FunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+example_Nova_T1FunctionMap* example_Nova_T1FunctionMap_Nova_construct(example_Nova_T1FunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
-	CCLASS_NEW(example_Nova_example_T1FunctionMap, this,);
-	this->vtable = &example_T1_example_T1FunctionMap_Extension_VTable_val;
+	CCLASS_NEW(example_Nova_T1FunctionMap, this,);
+	this->vtable = &example_T1_T1FunctionMap_Extension_VTable_val;
 	nova_Nova_Object_Nova_super((nova_Nova_Object*)this, exceptionData);
 	nova_meta_Nova_FunctionMap_Nova_super((nova_meta_Nova_FunctionMap*)this, exceptionData);
-	example_Nova_example_T1FunctionMap_Nova_super(this, exceptionData);
+	example_Nova_T1FunctionMap_Nova_super(this, exceptionData);
 	
 	{
-		example_Nova_example_T1FunctionMap_Nova_this(this, exceptionData);
+		example_Nova_T1FunctionMap_Nova_this(this, exceptionData);
 	}
 	
 	return this;
 }
 
-void example_Nova_example_T1FunctionMap_Nova_destroy(example_Nova_example_T1FunctionMap** this, nova_exception_Nova_ExceptionData* exceptionData)
+void example_Nova_T1FunctionMap_Nova_destroy(example_Nova_T1FunctionMap** this, nova_exception_Nova_ExceptionData* exceptionData)
 {
 	if (!*this)
 	{
@@ -115,11 +115,11 @@ void example_Nova_example_T1FunctionMap_Nova_destroy(example_Nova_example_T1Func
 	NOVA_FREE(*this);
 }
 
-void example_Nova_example_T1FunctionMap_Nova_this(example_Nova_example_T1FunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+void example_Nova_T1FunctionMap_Nova_this(example_Nova_T1FunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
 }
 
-void example_Nova_example_T1FunctionMap_Nova_super(example_Nova_example_T1FunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+void example_Nova_T1FunctionMap_Nova_super(example_Nova_T1FunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
 }
 

@@ -2,7 +2,7 @@
 #define FILE_nova_meta_Nova_Class_NOVA
 
 typedef struct nova_meta_Nova_Class nova_meta_Nova_Class;
-typedef struct nova_meta_Nova_nova_meta_ClassFunctionMap nova_meta_Nova_nova_meta_ClassFunctionMap;
+typedef struct nova_meta_Nova_ClassFunctionMap nova_meta_Nova_ClassFunctionMap;
 
 
 #include <Nova.h>
@@ -50,8 +50,8 @@ CCLASS_CLASS
 	nova_meta_Class_Extension_VTable* vtable;
 	nova_meta_Nova_Class* nova_meta_Nova_Class_Nova_extension;
 	nova_datastruct_list_Nova_ImmutableArray* nova_meta_Nova_Class_Nova_interfaces;
-	nova_datastruct_list_Nova_ImmutableArray* nova_meta_Nova_Class_Nova_fieldList;
-	nova_meta_Nova_FunctionMap* nova_meta_Nova_Class_Nova_functions;
+	nova_datastruct_list_Nova_ImmutableArray* nova_meta_Nova_Class_Nova_fields;
+	nova_meta_Nova_FunctionMap* nova_meta_Nova_Class_Nova_functionMap;
 	char nova_meta_Nova_Class_Nova_isInterface;
 	nova_Nova_String* nova_meta_Nova_Class_Nova_location;
 )
@@ -69,15 +69,15 @@ void nova_meta_Nova_Class_Nova_super(nova_meta_Nova_Class* this, nova_exception_
 
 CCLASS_CLASS
 (
-	nova_meta_Nova_nova_meta_ClassFunctionMap, 
+	nova_meta_Nova_ClassFunctionMap, 
 	
-	nova_meta_Class_nova_meta_ClassFunctionMap_Extension_VTable* vtable;
+	nova_meta_Class_ClassFunctionMap_Extension_VTable* vtable;
 )
 
-void nova_meta_Nova_nova_meta_ClassFunctionMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData);
-nova_meta_Nova_nova_meta_ClassFunctionMap* nova_meta_Nova_nova_meta_ClassFunctionMap_Nova_construct(nova_meta_Nova_nova_meta_ClassFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
-void nova_meta_Nova_nova_meta_ClassFunctionMap_Nova_destroy(nova_meta_Nova_nova_meta_ClassFunctionMap** this, nova_exception_Nova_ExceptionData* exceptionData);
-void nova_meta_Nova_nova_meta_ClassFunctionMap_Nova_this(nova_meta_Nova_nova_meta_ClassFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
-void nova_meta_Nova_nova_meta_ClassFunctionMap_Nova_super(nova_meta_Nova_nova_meta_ClassFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+void nova_meta_Nova_ClassFunctionMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData);
+nova_meta_Nova_ClassFunctionMap* nova_meta_Nova_ClassFunctionMap_Nova_construct(nova_meta_Nova_ClassFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+void nova_meta_Nova_ClassFunctionMap_Nova_destroy(nova_meta_Nova_ClassFunctionMap** this, nova_exception_Nova_ExceptionData* exceptionData);
+void nova_meta_Nova_ClassFunctionMap_Nova_this(nova_meta_Nova_ClassFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+void nova_meta_Nova_ClassFunctionMap_Nova_super(nova_meta_Nova_ClassFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
 
 #endif

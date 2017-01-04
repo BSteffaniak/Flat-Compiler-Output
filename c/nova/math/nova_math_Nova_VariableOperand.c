@@ -73,28 +73,28 @@ void nova_math_Nova_VariableOperand_Nova_super(nova_math_Nova_VariableOperand* t
 {
 }
 
-void nova_math_Nova_nova_math_VariableOperandFunctionMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData)
+void nova_math_Nova_VariableOperandFunctionMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData)
 {
 	{
 	}
 }
 
-nova_math_Nova_nova_math_VariableOperandFunctionMap* nova_math_Nova_nova_math_VariableOperandFunctionMap_Nova_construct(nova_math_Nova_nova_math_VariableOperandFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+nova_math_Nova_VariableOperandFunctionMap* nova_math_Nova_VariableOperandFunctionMap_Nova_construct(nova_math_Nova_VariableOperandFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
-	CCLASS_NEW(nova_math_Nova_nova_math_VariableOperandFunctionMap, this,);
-	this->vtable = &nova_math_VariableOperand_nova_math_VariableOperandFunctionMap_Extension_VTable_val;
+	CCLASS_NEW(nova_math_Nova_VariableOperandFunctionMap, this,);
+	this->vtable = &nova_math_VariableOperand_VariableOperandFunctionMap_Extension_VTable_val;
 	nova_Nova_Object_Nova_super((nova_Nova_Object*)this, exceptionData);
 	nova_meta_Nova_FunctionMap_Nova_super((nova_meta_Nova_FunctionMap*)this, exceptionData);
-	nova_math_Nova_nova_math_VariableOperandFunctionMap_Nova_super(this, exceptionData);
+	nova_math_Nova_VariableOperandFunctionMap_Nova_super(this, exceptionData);
 	
 	{
-		nova_math_Nova_nova_math_VariableOperandFunctionMap_Nova_this(this, exceptionData);
+		nova_math_Nova_VariableOperandFunctionMap_Nova_this(this, exceptionData);
 	}
 	
 	return this;
 }
 
-void nova_math_Nova_nova_math_VariableOperandFunctionMap_Nova_destroy(nova_math_Nova_nova_math_VariableOperandFunctionMap** this, nova_exception_Nova_ExceptionData* exceptionData)
+void nova_math_Nova_VariableOperandFunctionMap_Nova_destroy(nova_math_Nova_VariableOperandFunctionMap** this, nova_exception_Nova_ExceptionData* exceptionData)
 {
 	if (!*this)
 	{
@@ -105,11 +105,11 @@ void nova_math_Nova_nova_math_VariableOperandFunctionMap_Nova_destroy(nova_math_
 	NOVA_FREE(*this);
 }
 
-void nova_math_Nova_nova_math_VariableOperandFunctionMap_Nova_this(nova_math_Nova_nova_math_VariableOperandFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+void nova_math_Nova_VariableOperandFunctionMap_Nova_this(nova_math_Nova_VariableOperandFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
 }
 
-void nova_math_Nova_nova_math_VariableOperandFunctionMap_Nova_super(nova_math_Nova_nova_math_VariableOperandFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+void nova_math_Nova_VariableOperandFunctionMap_Nova_super(nova_math_Nova_VariableOperandFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
 }
 

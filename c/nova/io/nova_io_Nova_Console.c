@@ -251,28 +251,28 @@ void nova_io_Nova_Console_Nova_super(nova_io_Nova_Console* this, nova_exception_
 {
 }
 
-void nova_io_Nova_nova_io_ConsoleFunctionMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData)
+void nova_io_Nova_ConsoleFunctionMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData)
 {
 	{
 	}
 }
 
-nova_io_Nova_nova_io_ConsoleFunctionMap* nova_io_Nova_nova_io_ConsoleFunctionMap_Nova_construct(nova_io_Nova_nova_io_ConsoleFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+nova_io_Nova_ConsoleFunctionMap* nova_io_Nova_ConsoleFunctionMap_Nova_construct(nova_io_Nova_ConsoleFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
-	CCLASS_NEW(nova_io_Nova_nova_io_ConsoleFunctionMap, this,);
-	this->vtable = &nova_io_Console_nova_io_ConsoleFunctionMap_Extension_VTable_val;
+	CCLASS_NEW(nova_io_Nova_ConsoleFunctionMap, this,);
+	this->vtable = &nova_io_Console_ConsoleFunctionMap_Extension_VTable_val;
 	nova_Nova_Object_Nova_super((nova_Nova_Object*)this, exceptionData);
 	nova_meta_Nova_FunctionMap_Nova_super((nova_meta_Nova_FunctionMap*)this, exceptionData);
-	nova_io_Nova_nova_io_ConsoleFunctionMap_Nova_super(this, exceptionData);
+	nova_io_Nova_ConsoleFunctionMap_Nova_super(this, exceptionData);
 	
 	{
-		nova_io_Nova_nova_io_ConsoleFunctionMap_Nova_this(this, exceptionData);
+		nova_io_Nova_ConsoleFunctionMap_Nova_this(this, exceptionData);
 	}
 	
 	return this;
 }
 
-void nova_io_Nova_nova_io_ConsoleFunctionMap_Nova_destroy(nova_io_Nova_nova_io_ConsoleFunctionMap** this, nova_exception_Nova_ExceptionData* exceptionData)
+void nova_io_Nova_ConsoleFunctionMap_Nova_destroy(nova_io_Nova_ConsoleFunctionMap** this, nova_exception_Nova_ExceptionData* exceptionData)
 {
 	if (!*this)
 	{
@@ -283,11 +283,11 @@ void nova_io_Nova_nova_io_ConsoleFunctionMap_Nova_destroy(nova_io_Nova_nova_io_C
 	NOVA_FREE(*this);
 }
 
-void nova_io_Nova_nova_io_ConsoleFunctionMap_Nova_this(nova_io_Nova_nova_io_ConsoleFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+void nova_io_Nova_ConsoleFunctionMap_Nova_this(nova_io_Nova_ConsoleFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
 }
 
-void nova_io_Nova_nova_io_ConsoleFunctionMap_Nova_super(nova_io_Nova_nova_io_ConsoleFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+void nova_io_Nova_ConsoleFunctionMap_Nova_super(nova_io_Nova_ConsoleFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
 }
 

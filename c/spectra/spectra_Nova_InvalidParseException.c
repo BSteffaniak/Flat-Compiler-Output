@@ -80,28 +80,28 @@ void spectra_Nova_InvalidParseException_Nova_super(spectra_Nova_InvalidParseExce
 	this->spectra_Nova_InvalidParseException_Nova_node = (spectra_tree_nodes_Nova_Node*)nova_null;
 }
 
-void spectra_Nova_spectra_InvalidParseExceptionFunctionMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData)
+void spectra_Nova_InvalidParseExceptionFunctionMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData)
 {
 	{
 	}
 }
 
-spectra_Nova_spectra_InvalidParseExceptionFunctionMap* spectra_Nova_spectra_InvalidParseExceptionFunctionMap_Nova_construct(spectra_Nova_spectra_InvalidParseExceptionFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+spectra_Nova_InvalidParseExceptionFunctionMap* spectra_Nova_InvalidParseExceptionFunctionMap_Nova_construct(spectra_Nova_InvalidParseExceptionFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
-	CCLASS_NEW(spectra_Nova_spectra_InvalidParseExceptionFunctionMap, this,);
-	this->vtable = &spectra_InvalidParseException_spectra_InvalidParseExceptionFunctionMap_Extension_VTable_val;
+	CCLASS_NEW(spectra_Nova_InvalidParseExceptionFunctionMap, this,);
+	this->vtable = &spectra_InvalidParseException_InvalidParseExceptionFunctionMap_Extension_VTable_val;
 	nova_Nova_Object_Nova_super((nova_Nova_Object*)this, exceptionData);
 	nova_meta_Nova_FunctionMap_Nova_super((nova_meta_Nova_FunctionMap*)this, exceptionData);
-	spectra_Nova_spectra_InvalidParseExceptionFunctionMap_Nova_super(this, exceptionData);
+	spectra_Nova_InvalidParseExceptionFunctionMap_Nova_super(this, exceptionData);
 	
 	{
-		spectra_Nova_spectra_InvalidParseExceptionFunctionMap_Nova_this(this, exceptionData);
+		spectra_Nova_InvalidParseExceptionFunctionMap_Nova_this(this, exceptionData);
 	}
 	
 	return this;
 }
 
-void spectra_Nova_spectra_InvalidParseExceptionFunctionMap_Nova_destroy(spectra_Nova_spectra_InvalidParseExceptionFunctionMap** this, nova_exception_Nova_ExceptionData* exceptionData)
+void spectra_Nova_InvalidParseExceptionFunctionMap_Nova_destroy(spectra_Nova_InvalidParseExceptionFunctionMap** this, nova_exception_Nova_ExceptionData* exceptionData)
 {
 	if (!*this)
 	{
@@ -112,11 +112,11 @@ void spectra_Nova_spectra_InvalidParseExceptionFunctionMap_Nova_destroy(spectra_
 	NOVA_FREE(*this);
 }
 
-void spectra_Nova_spectra_InvalidParseExceptionFunctionMap_Nova_this(spectra_Nova_spectra_InvalidParseExceptionFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+void spectra_Nova_InvalidParseExceptionFunctionMap_Nova_this(spectra_Nova_InvalidParseExceptionFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
 }
 
-void spectra_Nova_spectra_InvalidParseExceptionFunctionMap_Nova_super(spectra_Nova_spectra_InvalidParseExceptionFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+void spectra_Nova_InvalidParseExceptionFunctionMap_Nova_super(spectra_Nova_InvalidParseExceptionFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
 }
 

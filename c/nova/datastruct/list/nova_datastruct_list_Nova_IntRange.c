@@ -320,28 +320,28 @@ void nova_datastruct_list_Nova_IntRange_Nova_super(nova_datastruct_list_Nova_Int
 	this->nova_datastruct_list_Nova_IntRange_Nova_count = 0;
 }
 
-void nova_datastruct_list_Nova_nova_datastruct_list_IntRangeFunctionMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData)
+void nova_datastruct_list_Nova_IntRangeFunctionMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData)
 {
 	{
 	}
 }
 
-nova_datastruct_list_Nova_nova_datastruct_list_IntRangeFunctionMap* nova_datastruct_list_Nova_nova_datastruct_list_IntRangeFunctionMap_Nova_construct(nova_datastruct_list_Nova_nova_datastruct_list_IntRangeFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+nova_datastruct_list_Nova_IntRangeFunctionMap* nova_datastruct_list_Nova_IntRangeFunctionMap_Nova_construct(nova_datastruct_list_Nova_IntRangeFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
-	CCLASS_NEW(nova_datastruct_list_Nova_nova_datastruct_list_IntRangeFunctionMap, this,);
-	this->vtable = &nova_datastruct_list_IntRange_nova_datastruct_list_IntRangeFunctionMap_Extension_VTable_val;
+	CCLASS_NEW(nova_datastruct_list_Nova_IntRangeFunctionMap, this,);
+	this->vtable = &nova_datastruct_list_IntRange_IntRangeFunctionMap_Extension_VTable_val;
 	nova_Nova_Object_Nova_super((nova_Nova_Object*)this, exceptionData);
 	nova_meta_Nova_FunctionMap_Nova_super((nova_meta_Nova_FunctionMap*)this, exceptionData);
-	nova_datastruct_list_Nova_nova_datastruct_list_IntRangeFunctionMap_Nova_super(this, exceptionData);
+	nova_datastruct_list_Nova_IntRangeFunctionMap_Nova_super(this, exceptionData);
 	
 	{
-		nova_datastruct_list_Nova_nova_datastruct_list_IntRangeFunctionMap_Nova_this(this, exceptionData);
+		nova_datastruct_list_Nova_IntRangeFunctionMap_Nova_this(this, exceptionData);
 	}
 	
 	return this;
 }
 
-void nova_datastruct_list_Nova_nova_datastruct_list_IntRangeFunctionMap_Nova_destroy(nova_datastruct_list_Nova_nova_datastruct_list_IntRangeFunctionMap** this, nova_exception_Nova_ExceptionData* exceptionData)
+void nova_datastruct_list_Nova_IntRangeFunctionMap_Nova_destroy(nova_datastruct_list_Nova_IntRangeFunctionMap** this, nova_exception_Nova_ExceptionData* exceptionData)
 {
 	if (!*this)
 	{
@@ -352,11 +352,11 @@ void nova_datastruct_list_Nova_nova_datastruct_list_IntRangeFunctionMap_Nova_des
 	NOVA_FREE(*this);
 }
 
-void nova_datastruct_list_Nova_nova_datastruct_list_IntRangeFunctionMap_Nova_this(nova_datastruct_list_Nova_nova_datastruct_list_IntRangeFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+void nova_datastruct_list_Nova_IntRangeFunctionMap_Nova_this(nova_datastruct_list_Nova_IntRangeFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
 }
 
-void nova_datastruct_list_Nova_nova_datastruct_list_IntRangeFunctionMap_Nova_super(nova_datastruct_list_Nova_nova_datastruct_list_IntRangeFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+void nova_datastruct_list_Nova_IntRangeFunctionMap_Nova_super(nova_datastruct_list_Nova_IntRangeFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
 }
 

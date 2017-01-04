@@ -119,28 +119,28 @@ void example_network_Nova_ServerDemo_Nova_super(example_network_Nova_ServerDemo*
 {
 }
 
-void example_network_Nova_example_network_ServerDemoFunctionMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData)
+void example_network_Nova_ServerDemoFunctionMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData)
 {
 	{
 	}
 }
 
-example_network_Nova_example_network_ServerDemoFunctionMap* example_network_Nova_example_network_ServerDemoFunctionMap_Nova_construct(example_network_Nova_example_network_ServerDemoFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+example_network_Nova_ServerDemoFunctionMap* example_network_Nova_ServerDemoFunctionMap_Nova_construct(example_network_Nova_ServerDemoFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
-	CCLASS_NEW(example_network_Nova_example_network_ServerDemoFunctionMap, this,);
-	this->vtable = &example_network_ServerDemo_example_network_ServerDemoFunctionMap_Extension_VTable_val;
+	CCLASS_NEW(example_network_Nova_ServerDemoFunctionMap, this,);
+	this->vtable = &example_network_ServerDemo_ServerDemoFunctionMap_Extension_VTable_val;
 	nova_Nova_Object_Nova_super((nova_Nova_Object*)this, exceptionData);
 	nova_meta_Nova_FunctionMap_Nova_super((nova_meta_Nova_FunctionMap*)this, exceptionData);
-	example_network_Nova_example_network_ServerDemoFunctionMap_Nova_super(this, exceptionData);
+	example_network_Nova_ServerDemoFunctionMap_Nova_super(this, exceptionData);
 	
 	{
-		example_network_Nova_example_network_ServerDemoFunctionMap_Nova_this(this, exceptionData);
+		example_network_Nova_ServerDemoFunctionMap_Nova_this(this, exceptionData);
 	}
 	
 	return this;
 }
 
-void example_network_Nova_example_network_ServerDemoFunctionMap_Nova_destroy(example_network_Nova_example_network_ServerDemoFunctionMap** this, nova_exception_Nova_ExceptionData* exceptionData)
+void example_network_Nova_ServerDemoFunctionMap_Nova_destroy(example_network_Nova_ServerDemoFunctionMap** this, nova_exception_Nova_ExceptionData* exceptionData)
 {
 	if (!*this)
 	{
@@ -151,11 +151,11 @@ void example_network_Nova_example_network_ServerDemoFunctionMap_Nova_destroy(exa
 	NOVA_FREE(*this);
 }
 
-void example_network_Nova_example_network_ServerDemoFunctionMap_Nova_this(example_network_Nova_example_network_ServerDemoFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+void example_network_Nova_ServerDemoFunctionMap_Nova_this(example_network_Nova_ServerDemoFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
 }
 
-void example_network_Nova_example_network_ServerDemoFunctionMap_Nova_super(example_network_Nova_example_network_ServerDemoFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+void example_network_Nova_ServerDemoFunctionMap_Nova_super(example_network_Nova_ServerDemoFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
 }
 

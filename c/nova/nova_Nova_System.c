@@ -123,28 +123,28 @@ void nova_Nova_System_Nova_super(nova_Nova_System* this, nova_exception_Nova_Exc
 {
 }
 
-void nova_Nova_nova_SystemFunctionMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData)
+void nova_Nova_SystemFunctionMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData)
 {
 	{
 	}
 }
 
-nova_Nova_nova_SystemFunctionMap* nova_Nova_nova_SystemFunctionMap_Nova_construct(nova_Nova_nova_SystemFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+nova_Nova_SystemFunctionMap* nova_Nova_SystemFunctionMap_Nova_construct(nova_Nova_SystemFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
-	CCLASS_NEW(nova_Nova_nova_SystemFunctionMap, this,);
-	this->vtable = &nova_System_nova_SystemFunctionMap_Extension_VTable_val;
+	CCLASS_NEW(nova_Nova_SystemFunctionMap, this,);
+	this->vtable = &nova_System_SystemFunctionMap_Extension_VTable_val;
 	nova_Nova_Object_Nova_super((nova_Nova_Object*)this, exceptionData);
 	nova_meta_Nova_FunctionMap_Nova_super((nova_meta_Nova_FunctionMap*)this, exceptionData);
-	nova_Nova_nova_SystemFunctionMap_Nova_super(this, exceptionData);
+	nova_Nova_SystemFunctionMap_Nova_super(this, exceptionData);
 	
 	{
-		nova_Nova_nova_SystemFunctionMap_Nova_this(this, exceptionData);
+		nova_Nova_SystemFunctionMap_Nova_this(this, exceptionData);
 	}
 	
 	return this;
 }
 
-void nova_Nova_nova_SystemFunctionMap_Nova_destroy(nova_Nova_nova_SystemFunctionMap** this, nova_exception_Nova_ExceptionData* exceptionData)
+void nova_Nova_SystemFunctionMap_Nova_destroy(nova_Nova_SystemFunctionMap** this, nova_exception_Nova_ExceptionData* exceptionData)
 {
 	if (!*this)
 	{
@@ -155,11 +155,11 @@ void nova_Nova_nova_SystemFunctionMap_Nova_destroy(nova_Nova_nova_SystemFunction
 	NOVA_FREE(*this);
 }
 
-void nova_Nova_nova_SystemFunctionMap_Nova_this(nova_Nova_nova_SystemFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+void nova_Nova_SystemFunctionMap_Nova_this(nova_Nova_SystemFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
 }
 
-void nova_Nova_nova_SystemFunctionMap_Nova_super(nova_Nova_nova_SystemFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+void nova_Nova_SystemFunctionMap_Nova_super(nova_Nova_SystemFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
 }
 

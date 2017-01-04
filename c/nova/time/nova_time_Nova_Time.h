@@ -2,7 +2,7 @@
 #define FILE_nova_time_Nova_Time_NOVA
 
 typedef struct nova_time_Nova_Time nova_time_Nova_Time;
-typedef struct nova_time_Nova_nova_time_TimeFunctionMap nova_time_Nova_nova_time_TimeFunctionMap;
+typedef struct nova_time_Nova_TimeFunctionMap nova_time_Nova_TimeFunctionMap;
 
 
 #include <Nova.h>
@@ -59,15 +59,15 @@ void nova_time_Nova_Time_Nova_super(nova_time_Nova_Time* this, nova_exception_No
 
 CCLASS_CLASS
 (
-	nova_time_Nova_nova_time_TimeFunctionMap, 
+	nova_time_Nova_TimeFunctionMap, 
 	
-	nova_time_Time_nova_time_TimeFunctionMap_Extension_VTable* vtable;
+	nova_time_Time_TimeFunctionMap_Extension_VTable* vtable;
 )
 
-void nova_time_Nova_nova_time_TimeFunctionMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData);
-nova_time_Nova_nova_time_TimeFunctionMap* nova_time_Nova_nova_time_TimeFunctionMap_Nova_construct(nova_time_Nova_nova_time_TimeFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
-void nova_time_Nova_nova_time_TimeFunctionMap_Nova_destroy(nova_time_Nova_nova_time_TimeFunctionMap** this, nova_exception_Nova_ExceptionData* exceptionData);
-void nova_time_Nova_nova_time_TimeFunctionMap_Nova_this(nova_time_Nova_nova_time_TimeFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
-void nova_time_Nova_nova_time_TimeFunctionMap_Nova_super(nova_time_Nova_nova_time_TimeFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+void nova_time_Nova_TimeFunctionMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData);
+nova_time_Nova_TimeFunctionMap* nova_time_Nova_TimeFunctionMap_Nova_construct(nova_time_Nova_TimeFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+void nova_time_Nova_TimeFunctionMap_Nova_destroy(nova_time_Nova_TimeFunctionMap** this, nova_exception_Nova_ExceptionData* exceptionData);
+void nova_time_Nova_TimeFunctionMap_Nova_this(nova_time_Nova_TimeFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+void nova_time_Nova_TimeFunctionMap_Nova_super(nova_time_Nova_TimeFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
 
 #endif

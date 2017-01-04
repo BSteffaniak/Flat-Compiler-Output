@@ -98,28 +98,28 @@ void nova_star_Nova_WindowThread_Nova_super(nova_star_Nova_WindowThread* this, n
 	this->prv->nova_star_Nova_WindowThread_Nova_window = (nova_star_Nova_Window*)nova_null;
 }
 
-void nova_star_Nova_nova_star_WindowThreadFunctionMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData)
+void nova_star_Nova_WindowThreadFunctionMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData)
 {
 	{
 	}
 }
 
-nova_star_Nova_nova_star_WindowThreadFunctionMap* nova_star_Nova_nova_star_WindowThreadFunctionMap_Nova_construct(nova_star_Nova_nova_star_WindowThreadFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+nova_star_Nova_WindowThreadFunctionMap* nova_star_Nova_WindowThreadFunctionMap_Nova_construct(nova_star_Nova_WindowThreadFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
-	CCLASS_NEW(nova_star_Nova_nova_star_WindowThreadFunctionMap, this,);
-	this->vtable = &nova_star_WindowThread_nova_star_WindowThreadFunctionMap_Extension_VTable_val;
+	CCLASS_NEW(nova_star_Nova_WindowThreadFunctionMap, this,);
+	this->vtable = &nova_star_WindowThread_WindowThreadFunctionMap_Extension_VTable_val;
 	nova_Nova_Object_Nova_super((nova_Nova_Object*)this, exceptionData);
 	nova_meta_Nova_FunctionMap_Nova_super((nova_meta_Nova_FunctionMap*)this, exceptionData);
-	nova_star_Nova_nova_star_WindowThreadFunctionMap_Nova_super(this, exceptionData);
+	nova_star_Nova_WindowThreadFunctionMap_Nova_super(this, exceptionData);
 	
 	{
-		nova_star_Nova_nova_star_WindowThreadFunctionMap_Nova_this(this, exceptionData);
+		nova_star_Nova_WindowThreadFunctionMap_Nova_this(this, exceptionData);
 	}
 	
 	return this;
 }
 
-void nova_star_Nova_nova_star_WindowThreadFunctionMap_Nova_destroy(nova_star_Nova_nova_star_WindowThreadFunctionMap** this, nova_exception_Nova_ExceptionData* exceptionData)
+void nova_star_Nova_WindowThreadFunctionMap_Nova_destroy(nova_star_Nova_WindowThreadFunctionMap** this, nova_exception_Nova_ExceptionData* exceptionData)
 {
 	if (!*this)
 	{
@@ -130,11 +130,11 @@ void nova_star_Nova_nova_star_WindowThreadFunctionMap_Nova_destroy(nova_star_Nov
 	NOVA_FREE(*this);
 }
 
-void nova_star_Nova_nova_star_WindowThreadFunctionMap_Nova_this(nova_star_Nova_nova_star_WindowThreadFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+void nova_star_Nova_WindowThreadFunctionMap_Nova_this(nova_star_Nova_WindowThreadFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
 }
 
-void nova_star_Nova_nova_star_WindowThreadFunctionMap_Nova_super(nova_star_Nova_nova_star_WindowThreadFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+void nova_star_Nova_WindowThreadFunctionMap_Nova_super(nova_star_Nova_WindowThreadFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
 }
 

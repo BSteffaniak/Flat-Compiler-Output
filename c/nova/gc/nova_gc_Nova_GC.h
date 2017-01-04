@@ -2,7 +2,7 @@
 #define FILE_nova_gc_Nova_GC_NOVA
 
 typedef struct nova_gc_Nova_GC nova_gc_Nova_GC;
-typedef struct nova_gc_Nova_nova_gc_GCFunctionMap nova_gc_Nova_nova_gc_GCFunctionMap;
+typedef struct nova_gc_Nova_GCFunctionMap nova_gc_Nova_GCFunctionMap;
 
 
 #include <Nova.h>
@@ -66,15 +66,15 @@ void nova_gc_Nova_GC_Nova_super(nova_gc_Nova_GC* this, nova_exception_Nova_Excep
 
 CCLASS_CLASS
 (
-	nova_gc_Nova_nova_gc_GCFunctionMap, 
+	nova_gc_Nova_GCFunctionMap, 
 	
-	nova_gc_GC_nova_gc_GCFunctionMap_Extension_VTable* vtable;
+	nova_gc_GC_GCFunctionMap_Extension_VTable* vtable;
 )
 
-void nova_gc_Nova_nova_gc_GCFunctionMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData);
-nova_gc_Nova_nova_gc_GCFunctionMap* nova_gc_Nova_nova_gc_GCFunctionMap_Nova_construct(nova_gc_Nova_nova_gc_GCFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
-void nova_gc_Nova_nova_gc_GCFunctionMap_Nova_destroy(nova_gc_Nova_nova_gc_GCFunctionMap** this, nova_exception_Nova_ExceptionData* exceptionData);
-void nova_gc_Nova_nova_gc_GCFunctionMap_Nova_this(nova_gc_Nova_nova_gc_GCFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
-void nova_gc_Nova_nova_gc_GCFunctionMap_Nova_super(nova_gc_Nova_nova_gc_GCFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+void nova_gc_Nova_GCFunctionMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData);
+nova_gc_Nova_GCFunctionMap* nova_gc_Nova_GCFunctionMap_Nova_construct(nova_gc_Nova_GCFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+void nova_gc_Nova_GCFunctionMap_Nova_destroy(nova_gc_Nova_GCFunctionMap** this, nova_exception_Nova_ExceptionData* exceptionData);
+void nova_gc_Nova_GCFunctionMap_Nova_this(nova_gc_Nova_GCFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+void nova_gc_Nova_GCFunctionMap_Nova_super(nova_gc_Nova_GCFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
 
 #endif

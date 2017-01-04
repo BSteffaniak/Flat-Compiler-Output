@@ -2,7 +2,7 @@
 #define FILE_nova_Nova_String_NOVA
 
 typedef struct nova_Nova_String nova_Nova_String;
-typedef struct nova_Nova_nova_StringFunctionMap nova_Nova_nova_StringFunctionMap;
+typedef struct nova_Nova_StringFunctionMap nova_Nova_StringFunctionMap;
 
 typedef struct nova_exception_Nova_ExceptionData nova_exception_Nova_ExceptionData;
 
@@ -119,15 +119,15 @@ nova_Nova_String* nova_Nova_String_virtual_Nova_substring(nova_Nova_String* this
 
 CCLASS_CLASS
 (
-	nova_Nova_nova_StringFunctionMap, 
+	nova_Nova_StringFunctionMap, 
 	
-	nova_String_nova_StringFunctionMap_Extension_VTable* vtable;
+	nova_String_StringFunctionMap_Extension_VTable* vtable;
 )
 
-void nova_Nova_nova_StringFunctionMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData);
-nova_Nova_nova_StringFunctionMap* nova_Nova_nova_StringFunctionMap_Nova_construct(nova_Nova_nova_StringFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
-void nova_Nova_nova_StringFunctionMap_Nova_destroy(nova_Nova_nova_StringFunctionMap** this, nova_exception_Nova_ExceptionData* exceptionData);
-void nova_Nova_nova_StringFunctionMap_Nova_this(nova_Nova_nova_StringFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
-void nova_Nova_nova_StringFunctionMap_Nova_super(nova_Nova_nova_StringFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+void nova_Nova_StringFunctionMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData);
+nova_Nova_StringFunctionMap* nova_Nova_StringFunctionMap_Nova_construct(nova_Nova_StringFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+void nova_Nova_StringFunctionMap_Nova_destroy(nova_Nova_StringFunctionMap** this, nova_exception_Nova_ExceptionData* exceptionData);
+void nova_Nova_StringFunctionMap_Nova_this(nova_Nova_StringFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+void nova_Nova_StringFunctionMap_Nova_super(nova_Nova_StringFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
 
 #endif

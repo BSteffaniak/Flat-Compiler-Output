@@ -87,28 +87,28 @@ void nova_database_Nova_ResultSet_Nova_super(nova_database_Nova_ResultSet* this,
 	this->nova_database_Nova_ResultSet_Nova_numCols = 0;
 }
 
-void nova_database_Nova_nova_database_ResultSetFunctionMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData)
+void nova_database_Nova_ResultSetFunctionMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData)
 {
 	{
 	}
 }
 
-nova_database_Nova_nova_database_ResultSetFunctionMap* nova_database_Nova_nova_database_ResultSetFunctionMap_Nova_construct(nova_database_Nova_nova_database_ResultSetFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+nova_database_Nova_ResultSetFunctionMap* nova_database_Nova_ResultSetFunctionMap_Nova_construct(nova_database_Nova_ResultSetFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
-	CCLASS_NEW(nova_database_Nova_nova_database_ResultSetFunctionMap, this,);
-	this->vtable = &nova_database_ResultSet_nova_database_ResultSetFunctionMap_Extension_VTable_val;
+	CCLASS_NEW(nova_database_Nova_ResultSetFunctionMap, this,);
+	this->vtable = &nova_database_ResultSet_ResultSetFunctionMap_Extension_VTable_val;
 	nova_Nova_Object_Nova_super((nova_Nova_Object*)this, exceptionData);
 	nova_meta_Nova_FunctionMap_Nova_super((nova_meta_Nova_FunctionMap*)this, exceptionData);
-	nova_database_Nova_nova_database_ResultSetFunctionMap_Nova_super(this, exceptionData);
+	nova_database_Nova_ResultSetFunctionMap_Nova_super(this, exceptionData);
 	
 	{
-		nova_database_Nova_nova_database_ResultSetFunctionMap_Nova_this(this, exceptionData);
+		nova_database_Nova_ResultSetFunctionMap_Nova_this(this, exceptionData);
 	}
 	
 	return this;
 }
 
-void nova_database_Nova_nova_database_ResultSetFunctionMap_Nova_destroy(nova_database_Nova_nova_database_ResultSetFunctionMap** this, nova_exception_Nova_ExceptionData* exceptionData)
+void nova_database_Nova_ResultSetFunctionMap_Nova_destroy(nova_database_Nova_ResultSetFunctionMap** this, nova_exception_Nova_ExceptionData* exceptionData)
 {
 	if (!*this)
 	{
@@ -119,11 +119,11 @@ void nova_database_Nova_nova_database_ResultSetFunctionMap_Nova_destroy(nova_dat
 	NOVA_FREE(*this);
 }
 
-void nova_database_Nova_nova_database_ResultSetFunctionMap_Nova_this(nova_database_Nova_nova_database_ResultSetFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+void nova_database_Nova_ResultSetFunctionMap_Nova_this(nova_database_Nova_ResultSetFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
 }
 
-void nova_database_Nova_nova_database_ResultSetFunctionMap_Nova_super(nova_database_Nova_nova_database_ResultSetFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+void nova_database_Nova_ResultSetFunctionMap_Nova_super(nova_database_Nova_ResultSetFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
 }
 

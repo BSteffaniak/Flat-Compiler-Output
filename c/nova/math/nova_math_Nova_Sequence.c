@@ -92,28 +92,28 @@ void nova_math_Nova_Sequence_Nova_super(nova_math_Nova_Sequence* this, nova_exce
 	this->nova_math_Nova_Sequence_Nova_values = (nova_datastruct_list_Nova_DoubleArray*)nova_null;
 }
 
-void nova_math_Nova_nova_math_SequenceFunctionMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData)
+void nova_math_Nova_SequenceFunctionMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData)
 {
 	{
 	}
 }
 
-nova_math_Nova_nova_math_SequenceFunctionMap* nova_math_Nova_nova_math_SequenceFunctionMap_Nova_construct(nova_math_Nova_nova_math_SequenceFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+nova_math_Nova_SequenceFunctionMap* nova_math_Nova_SequenceFunctionMap_Nova_construct(nova_math_Nova_SequenceFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
-	CCLASS_NEW(nova_math_Nova_nova_math_SequenceFunctionMap, this,);
-	this->vtable = &nova_math_Sequence_nova_math_SequenceFunctionMap_Extension_VTable_val;
+	CCLASS_NEW(nova_math_Nova_SequenceFunctionMap, this,);
+	this->vtable = &nova_math_Sequence_SequenceFunctionMap_Extension_VTable_val;
 	nova_Nova_Object_Nova_super((nova_Nova_Object*)this, exceptionData);
 	nova_meta_Nova_FunctionMap_Nova_super((nova_meta_Nova_FunctionMap*)this, exceptionData);
-	nova_math_Nova_nova_math_SequenceFunctionMap_Nova_super(this, exceptionData);
+	nova_math_Nova_SequenceFunctionMap_Nova_super(this, exceptionData);
 	
 	{
-		nova_math_Nova_nova_math_SequenceFunctionMap_Nova_this(this, exceptionData);
+		nova_math_Nova_SequenceFunctionMap_Nova_this(this, exceptionData);
 	}
 	
 	return this;
 }
 
-void nova_math_Nova_nova_math_SequenceFunctionMap_Nova_destroy(nova_math_Nova_nova_math_SequenceFunctionMap** this, nova_exception_Nova_ExceptionData* exceptionData)
+void nova_math_Nova_SequenceFunctionMap_Nova_destroy(nova_math_Nova_SequenceFunctionMap** this, nova_exception_Nova_ExceptionData* exceptionData)
 {
 	if (!*this)
 	{
@@ -124,11 +124,11 @@ void nova_math_Nova_nova_math_SequenceFunctionMap_Nova_destroy(nova_math_Nova_no
 	NOVA_FREE(*this);
 }
 
-void nova_math_Nova_nova_math_SequenceFunctionMap_Nova_this(nova_math_Nova_nova_math_SequenceFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+void nova_math_Nova_SequenceFunctionMap_Nova_this(nova_math_Nova_SequenceFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
 }
 
-void nova_math_Nova_nova_math_SequenceFunctionMap_Nova_super(nova_math_Nova_nova_math_SequenceFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+void nova_math_Nova_SequenceFunctionMap_Nova_super(nova_math_Nova_SequenceFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
 }
 

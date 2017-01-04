@@ -83,28 +83,28 @@ void nova_web_svg_no3_Nova_No3Select_Nova_super(nova_web_svg_no3_Nova_No3Select*
 	this->nova_web_svg_no3_Nova_No3Select_Nova_selection = (nova_Nova_String*)nova_null;
 }
 
-void nova_web_svg_no3_Nova_nova_web_svg_no3_No3SelectFunctionMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData)
+void nova_web_svg_no3_Nova_No3SelectFunctionMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData)
 {
 	{
 	}
 }
 
-nova_web_svg_no3_Nova_nova_web_svg_no3_No3SelectFunctionMap* nova_web_svg_no3_Nova_nova_web_svg_no3_No3SelectFunctionMap_Nova_construct(nova_web_svg_no3_Nova_nova_web_svg_no3_No3SelectFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+nova_web_svg_no3_Nova_No3SelectFunctionMap* nova_web_svg_no3_Nova_No3SelectFunctionMap_Nova_construct(nova_web_svg_no3_Nova_No3SelectFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
-	CCLASS_NEW(nova_web_svg_no3_Nova_nova_web_svg_no3_No3SelectFunctionMap, this,);
-	this->vtable = &nova_web_svg_no3_No3Select_nova_web_svg_no3_No3SelectFunctionMap_Extension_VTable_val;
+	CCLASS_NEW(nova_web_svg_no3_Nova_No3SelectFunctionMap, this,);
+	this->vtable = &nova_web_svg_no3_No3Select_No3SelectFunctionMap_Extension_VTable_val;
 	nova_Nova_Object_Nova_super((nova_Nova_Object*)this, exceptionData);
 	nova_meta_Nova_FunctionMap_Nova_super((nova_meta_Nova_FunctionMap*)this, exceptionData);
-	nova_web_svg_no3_Nova_nova_web_svg_no3_No3SelectFunctionMap_Nova_super(this, exceptionData);
+	nova_web_svg_no3_Nova_No3SelectFunctionMap_Nova_super(this, exceptionData);
 	
 	{
-		nova_web_svg_no3_Nova_nova_web_svg_no3_No3SelectFunctionMap_Nova_this(this, exceptionData);
+		nova_web_svg_no3_Nova_No3SelectFunctionMap_Nova_this(this, exceptionData);
 	}
 	
 	return this;
 }
 
-void nova_web_svg_no3_Nova_nova_web_svg_no3_No3SelectFunctionMap_Nova_destroy(nova_web_svg_no3_Nova_nova_web_svg_no3_No3SelectFunctionMap** this, nova_exception_Nova_ExceptionData* exceptionData)
+void nova_web_svg_no3_Nova_No3SelectFunctionMap_Nova_destroy(nova_web_svg_no3_Nova_No3SelectFunctionMap** this, nova_exception_Nova_ExceptionData* exceptionData)
 {
 	if (!*this)
 	{
@@ -115,11 +115,11 @@ void nova_web_svg_no3_Nova_nova_web_svg_no3_No3SelectFunctionMap_Nova_destroy(no
 	NOVA_FREE(*this);
 }
 
-void nova_web_svg_no3_Nova_nova_web_svg_no3_No3SelectFunctionMap_Nova_this(nova_web_svg_no3_Nova_nova_web_svg_no3_No3SelectFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+void nova_web_svg_no3_Nova_No3SelectFunctionMap_Nova_this(nova_web_svg_no3_Nova_No3SelectFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
 }
 
-void nova_web_svg_no3_Nova_nova_web_svg_no3_No3SelectFunctionMap_Nova_super(nova_web_svg_no3_Nova_nova_web_svg_no3_No3SelectFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+void nova_web_svg_no3_Nova_No3SelectFunctionMap_Nova_super(nova_web_svg_no3_Nova_No3SelectFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
 }
 

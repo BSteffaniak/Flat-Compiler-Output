@@ -86,28 +86,28 @@ void nova_security_Nova_MD5_Nova_super(nova_security_Nova_MD5* this, nova_except
 {
 }
 
-void nova_security_Nova_nova_security_MD5FunctionMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData)
+void nova_security_Nova_MD5FunctionMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData)
 {
 	{
 	}
 }
 
-nova_security_Nova_nova_security_MD5FunctionMap* nova_security_Nova_nova_security_MD5FunctionMap_Nova_construct(nova_security_Nova_nova_security_MD5FunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+nova_security_Nova_MD5FunctionMap* nova_security_Nova_MD5FunctionMap_Nova_construct(nova_security_Nova_MD5FunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
-	CCLASS_NEW(nova_security_Nova_nova_security_MD5FunctionMap, this,);
-	this->vtable = &nova_security_MD5_nova_security_MD5FunctionMap_Extension_VTable_val;
+	CCLASS_NEW(nova_security_Nova_MD5FunctionMap, this,);
+	this->vtable = &nova_security_MD5_MD5FunctionMap_Extension_VTable_val;
 	nova_Nova_Object_Nova_super((nova_Nova_Object*)this, exceptionData);
 	nova_meta_Nova_FunctionMap_Nova_super((nova_meta_Nova_FunctionMap*)this, exceptionData);
-	nova_security_Nova_nova_security_MD5FunctionMap_Nova_super(this, exceptionData);
+	nova_security_Nova_MD5FunctionMap_Nova_super(this, exceptionData);
 	
 	{
-		nova_security_Nova_nova_security_MD5FunctionMap_Nova_this(this, exceptionData);
+		nova_security_Nova_MD5FunctionMap_Nova_this(this, exceptionData);
 	}
 	
 	return this;
 }
 
-void nova_security_Nova_nova_security_MD5FunctionMap_Nova_destroy(nova_security_Nova_nova_security_MD5FunctionMap** this, nova_exception_Nova_ExceptionData* exceptionData)
+void nova_security_Nova_MD5FunctionMap_Nova_destroy(nova_security_Nova_MD5FunctionMap** this, nova_exception_Nova_ExceptionData* exceptionData)
 {
 	if (!*this)
 	{
@@ -118,11 +118,11 @@ void nova_security_Nova_nova_security_MD5FunctionMap_Nova_destroy(nova_security_
 	NOVA_FREE(*this);
 }
 
-void nova_security_Nova_nova_security_MD5FunctionMap_Nova_this(nova_security_Nova_nova_security_MD5FunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+void nova_security_Nova_MD5FunctionMap_Nova_this(nova_security_Nova_MD5FunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
 }
 
-void nova_security_Nova_nova_security_MD5FunctionMap_Nova_super(nova_security_Nova_nova_security_MD5FunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+void nova_security_Nova_MD5FunctionMap_Nova_super(nova_security_Nova_MD5FunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
 }
 

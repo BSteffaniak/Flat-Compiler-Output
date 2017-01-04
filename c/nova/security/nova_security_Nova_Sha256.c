@@ -278,28 +278,28 @@ void nova_security_Nova_Sha256_Nova_super(nova_security_Nova_Sha256* this, nova_
 {
 }
 
-void nova_security_Nova_nova_security_Sha256FunctionMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData)
+void nova_security_Nova_Sha256FunctionMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData)
 {
 	{
 	}
 }
 
-nova_security_Nova_nova_security_Sha256FunctionMap* nova_security_Nova_nova_security_Sha256FunctionMap_Nova_construct(nova_security_Nova_nova_security_Sha256FunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+nova_security_Nova_Sha256FunctionMap* nova_security_Nova_Sha256FunctionMap_Nova_construct(nova_security_Nova_Sha256FunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
-	CCLASS_NEW(nova_security_Nova_nova_security_Sha256FunctionMap, this,);
-	this->vtable = &nova_security_Sha256_nova_security_Sha256FunctionMap_Extension_VTable_val;
+	CCLASS_NEW(nova_security_Nova_Sha256FunctionMap, this,);
+	this->vtable = &nova_security_Sha256_Sha256FunctionMap_Extension_VTable_val;
 	nova_Nova_Object_Nova_super((nova_Nova_Object*)this, exceptionData);
 	nova_meta_Nova_FunctionMap_Nova_super((nova_meta_Nova_FunctionMap*)this, exceptionData);
-	nova_security_Nova_nova_security_Sha256FunctionMap_Nova_super(this, exceptionData);
+	nova_security_Nova_Sha256FunctionMap_Nova_super(this, exceptionData);
 	
 	{
-		nova_security_Nova_nova_security_Sha256FunctionMap_Nova_this(this, exceptionData);
+		nova_security_Nova_Sha256FunctionMap_Nova_this(this, exceptionData);
 	}
 	
 	return this;
 }
 
-void nova_security_Nova_nova_security_Sha256FunctionMap_Nova_destroy(nova_security_Nova_nova_security_Sha256FunctionMap** this, nova_exception_Nova_ExceptionData* exceptionData)
+void nova_security_Nova_Sha256FunctionMap_Nova_destroy(nova_security_Nova_Sha256FunctionMap** this, nova_exception_Nova_ExceptionData* exceptionData)
 {
 	if (!*this)
 	{
@@ -310,11 +310,11 @@ void nova_security_Nova_nova_security_Sha256FunctionMap_Nova_destroy(nova_securi
 	NOVA_FREE(*this);
 }
 
-void nova_security_Nova_nova_security_Sha256FunctionMap_Nova_this(nova_security_Nova_nova_security_Sha256FunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+void nova_security_Nova_Sha256FunctionMap_Nova_this(nova_security_Nova_Sha256FunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
 }
 
-void nova_security_Nova_nova_security_Sha256FunctionMap_Nova_super(nova_security_Nova_nova_security_Sha256FunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+void nova_security_Nova_Sha256FunctionMap_Nova_super(nova_security_Nova_Sha256FunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
 }
 

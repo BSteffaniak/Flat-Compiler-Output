@@ -137,28 +137,28 @@ void nova_Nova_Substring_Nova_super(nova_Nova_Substring* this, nova_exception_No
 	this->nova_Nova_Substring_Nova_start = 0;
 }
 
-void nova_Nova_nova_SubstringFunctionMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData)
+void nova_Nova_SubstringFunctionMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData)
 {
 	{
 	}
 }
 
-nova_Nova_nova_SubstringFunctionMap* nova_Nova_nova_SubstringFunctionMap_Nova_construct(nova_Nova_nova_SubstringFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+nova_Nova_SubstringFunctionMap* nova_Nova_SubstringFunctionMap_Nova_construct(nova_Nova_SubstringFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
-	CCLASS_NEW(nova_Nova_nova_SubstringFunctionMap, this,);
-	this->vtable = &nova_Substring_nova_SubstringFunctionMap_Extension_VTable_val;
+	CCLASS_NEW(nova_Nova_SubstringFunctionMap, this,);
+	this->vtable = &nova_Substring_SubstringFunctionMap_Extension_VTable_val;
 	nova_Nova_Object_Nova_super((nova_Nova_Object*)this, exceptionData);
 	nova_meta_Nova_FunctionMap_Nova_super((nova_meta_Nova_FunctionMap*)this, exceptionData);
-	nova_Nova_nova_SubstringFunctionMap_Nova_super(this, exceptionData);
+	nova_Nova_SubstringFunctionMap_Nova_super(this, exceptionData);
 	
 	{
-		nova_Nova_nova_SubstringFunctionMap_Nova_this(this, exceptionData);
+		nova_Nova_SubstringFunctionMap_Nova_this(this, exceptionData);
 	}
 	
 	return this;
 }
 
-void nova_Nova_nova_SubstringFunctionMap_Nova_destroy(nova_Nova_nova_SubstringFunctionMap** this, nova_exception_Nova_ExceptionData* exceptionData)
+void nova_Nova_SubstringFunctionMap_Nova_destroy(nova_Nova_SubstringFunctionMap** this, nova_exception_Nova_ExceptionData* exceptionData)
 {
 	if (!*this)
 	{
@@ -169,11 +169,11 @@ void nova_Nova_nova_SubstringFunctionMap_Nova_destroy(nova_Nova_nova_SubstringFu
 	NOVA_FREE(*this);
 }
 
-void nova_Nova_nova_SubstringFunctionMap_Nova_this(nova_Nova_nova_SubstringFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+void nova_Nova_SubstringFunctionMap_Nova_this(nova_Nova_SubstringFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
 }
 
-void nova_Nova_nova_SubstringFunctionMap_Nova_super(nova_Nova_nova_SubstringFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+void nova_Nova_SubstringFunctionMap_Nova_super(nova_Nova_SubstringFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
 }
 

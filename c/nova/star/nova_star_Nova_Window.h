@@ -2,7 +2,7 @@
 #define FILE_nova_star_Nova_Window_NOVA
 
 typedef struct nova_star_Nova_Window nova_star_Nova_Window;
-typedef struct nova_star_Nova_nova_star_WindowFunctionMap nova_star_Nova_nova_star_WindowFunctionMap;
+typedef struct nova_star_Nova_WindowFunctionMap nova_star_Nova_WindowFunctionMap;
 
 
 #include <Nova.h>
@@ -65,15 +65,15 @@ void nova_star_Nova_Window_Nova_super(nova_star_Nova_Window* this, nova_exceptio
 
 CCLASS_CLASS
 (
-	nova_star_Nova_nova_star_WindowFunctionMap, 
+	nova_star_Nova_WindowFunctionMap, 
 	
-	nova_star_Window_nova_star_WindowFunctionMap_Extension_VTable* vtable;
+	nova_star_Window_WindowFunctionMap_Extension_VTable* vtable;
 )
 
-void nova_star_Nova_nova_star_WindowFunctionMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData);
-nova_star_Nova_nova_star_WindowFunctionMap* nova_star_Nova_nova_star_WindowFunctionMap_Nova_construct(nova_star_Nova_nova_star_WindowFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
-void nova_star_Nova_nova_star_WindowFunctionMap_Nova_destroy(nova_star_Nova_nova_star_WindowFunctionMap** this, nova_exception_Nova_ExceptionData* exceptionData);
-void nova_star_Nova_nova_star_WindowFunctionMap_Nova_this(nova_star_Nova_nova_star_WindowFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
-void nova_star_Nova_nova_star_WindowFunctionMap_Nova_super(nova_star_Nova_nova_star_WindowFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+void nova_star_Nova_WindowFunctionMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData);
+nova_star_Nova_WindowFunctionMap* nova_star_Nova_WindowFunctionMap_Nova_construct(nova_star_Nova_WindowFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+void nova_star_Nova_WindowFunctionMap_Nova_destroy(nova_star_Nova_WindowFunctionMap** this, nova_exception_Nova_ExceptionData* exceptionData);
+void nova_star_Nova_WindowFunctionMap_Nova_this(nova_star_Nova_WindowFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+void nova_star_Nova_WindowFunctionMap_Nova_super(nova_star_Nova_WindowFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
 
 #endif

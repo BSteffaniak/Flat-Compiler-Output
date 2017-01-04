@@ -2,7 +2,7 @@
 #define FILE_nova_Nova_Substring_NOVA
 
 typedef struct nova_Nova_Substring nova_Nova_Substring;
-typedef struct nova_Nova_nova_SubstringFunctionMap nova_Nova_nova_SubstringFunctionMap;
+typedef struct nova_Nova_SubstringFunctionMap nova_Nova_SubstringFunctionMap;
 
 
 #include <Nova.h>
@@ -71,15 +71,15 @@ void nova_Nova_Substring_Nova_super(nova_Nova_Substring* this, nova_exception_No
 
 CCLASS_CLASS
 (
-	nova_Nova_nova_SubstringFunctionMap, 
+	nova_Nova_SubstringFunctionMap, 
 	
-	nova_Substring_nova_SubstringFunctionMap_Extension_VTable* vtable;
+	nova_Substring_SubstringFunctionMap_Extension_VTable* vtable;
 )
 
-void nova_Nova_nova_SubstringFunctionMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData);
-nova_Nova_nova_SubstringFunctionMap* nova_Nova_nova_SubstringFunctionMap_Nova_construct(nova_Nova_nova_SubstringFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
-void nova_Nova_nova_SubstringFunctionMap_Nova_destroy(nova_Nova_nova_SubstringFunctionMap** this, nova_exception_Nova_ExceptionData* exceptionData);
-void nova_Nova_nova_SubstringFunctionMap_Nova_this(nova_Nova_nova_SubstringFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
-void nova_Nova_nova_SubstringFunctionMap_Nova_super(nova_Nova_nova_SubstringFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+void nova_Nova_SubstringFunctionMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData);
+nova_Nova_SubstringFunctionMap* nova_Nova_SubstringFunctionMap_Nova_construct(nova_Nova_SubstringFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+void nova_Nova_SubstringFunctionMap_Nova_destroy(nova_Nova_SubstringFunctionMap** this, nova_exception_Nova_ExceptionData* exceptionData);
+void nova_Nova_SubstringFunctionMap_Nova_this(nova_Nova_SubstringFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+void nova_Nova_SubstringFunctionMap_Nova_super(nova_Nova_SubstringFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
 
 #endif

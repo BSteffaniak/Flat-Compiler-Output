@@ -94,28 +94,28 @@ void nova_primitive_Nova_Bool_Nova_super(nova_primitive_Nova_Bool* this, nova_ex
 	this->nova_primitive_Nova_Bool_Nova_value = 0;
 }
 
-void nova_primitive_Nova_nova_primitive_BoolFunctionMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData)
+void nova_primitive_Nova_BoolFunctionMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData)
 {
 	{
 	}
 }
 
-nova_primitive_Nova_nova_primitive_BoolFunctionMap* nova_primitive_Nova_nova_primitive_BoolFunctionMap_Nova_construct(nova_primitive_Nova_nova_primitive_BoolFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+nova_primitive_Nova_BoolFunctionMap* nova_primitive_Nova_BoolFunctionMap_Nova_construct(nova_primitive_Nova_BoolFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
-	CCLASS_NEW(nova_primitive_Nova_nova_primitive_BoolFunctionMap, this,);
-	this->vtable = &nova_primitive_Bool_nova_primitive_BoolFunctionMap_Extension_VTable_val;
+	CCLASS_NEW(nova_primitive_Nova_BoolFunctionMap, this,);
+	this->vtable = &nova_primitive_Bool_BoolFunctionMap_Extension_VTable_val;
 	nova_Nova_Object_Nova_super((nova_Nova_Object*)this, exceptionData);
 	nova_meta_Nova_FunctionMap_Nova_super((nova_meta_Nova_FunctionMap*)this, exceptionData);
-	nova_primitive_Nova_nova_primitive_BoolFunctionMap_Nova_super(this, exceptionData);
+	nova_primitive_Nova_BoolFunctionMap_Nova_super(this, exceptionData);
 	
 	{
-		nova_primitive_Nova_nova_primitive_BoolFunctionMap_Nova_this(this, exceptionData);
+		nova_primitive_Nova_BoolFunctionMap_Nova_this(this, exceptionData);
 	}
 	
 	return this;
 }
 
-void nova_primitive_Nova_nova_primitive_BoolFunctionMap_Nova_destroy(nova_primitive_Nova_nova_primitive_BoolFunctionMap** this, nova_exception_Nova_ExceptionData* exceptionData)
+void nova_primitive_Nova_BoolFunctionMap_Nova_destroy(nova_primitive_Nova_BoolFunctionMap** this, nova_exception_Nova_ExceptionData* exceptionData)
 {
 	if (!*this)
 	{
@@ -126,11 +126,11 @@ void nova_primitive_Nova_nova_primitive_BoolFunctionMap_Nova_destroy(nova_primit
 	NOVA_FREE(*this);
 }
 
-void nova_primitive_Nova_nova_primitive_BoolFunctionMap_Nova_this(nova_primitive_Nova_nova_primitive_BoolFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+void nova_primitive_Nova_BoolFunctionMap_Nova_this(nova_primitive_Nova_BoolFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
 }
 
-void nova_primitive_Nova_nova_primitive_BoolFunctionMap_Nova_super(nova_primitive_Nova_nova_primitive_BoolFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+void nova_primitive_Nova_BoolFunctionMap_Nova_super(nova_primitive_Nova_BoolFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
 }
 

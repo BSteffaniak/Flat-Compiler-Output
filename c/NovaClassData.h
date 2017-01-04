@@ -357,6 +357,7 @@ extern example_vtable_Polygon example_vtable_Polygon_value_default;
 #include <stabilitytest/stabilitytest_Nova_ClientThread.h>
 #include <stabilitytest/stabilitytest_Nova_ClosureStability.h>
 #include <stabilitytest/stabilitytest_Nova_ExceptionStability.h>
+#include <stabilitytest/stabilitytest_Nova_ExternalInnerClassStability.h>
 #include <stabilitytest/stabilitytest_Nova_FileStability.h>
 #include <stabilitytest/stabilitytest_Nova_InnerClassStability.h>
 #include <stabilitytest/stabilitytest_Nova_LambdaStability.h>
@@ -475,7 +476,8 @@ char x;
 };
 
 struct spectra_tree_nodes_annotations_vtable_Modifier {
-char x;
+nova_Nova_String* (*spectra_tree_nodes_annotations_Nova_Modifier_virtual_Accessor1_Nova_aliasUsed)(spectra_tree_nodes_annotations_Nova_Modifier*, nova_exception_Nova_ExceptionData*);
+nova_Nova_String* (*spectra_tree_nodes_annotations_Nova_Modifier_virtual_Mutator0_Nova_aliasUsed)(spectra_tree_nodes_annotations_Nova_Modifier*, nova_exception_Nova_ExceptionData*, nova_Nova_String*);
 };
 
 struct spectra_tree_nodes_annotations_vtable_VisibilityModifier {

@@ -39,6 +39,7 @@
 #include <spectra/tree/nodes/operations/spectra_tree_nodes_operations_Nova_Assignable.h>
 #include <spectra/tree/nodes/variables/spectra_tree_nodes_variables_Nova_VariableDeclaration.h>
 #include <spectra/tree/nodes/spectra_tree_nodes_Nova_Identifier.h>
+#include <spectra/tree/nodes/annotations/spectra_tree_nodes_annotations_Nova_Modifier.h>
 #include <spectra/spectra_Nova_SyntaxMessage.h>
 #include <spectra/spectra_Nova_InvalidParseException.h>
 #include <spectra/tree/nodes/arrays/spectra_tree_nodes_arrays_Nova_ArrayAccess.h>
@@ -182,28 +183,28 @@ void spectra_tree_nodes_functions_Nova_Parameter_Nova_super(spectra_tree_nodes_f
 	this->spectra_tree_nodes_functions_Nova_Parameter_Nova_defaultValue = (spectra_tree_nodes_Nova_Value*)nova_null;
 }
 
-void spectra_tree_nodes_functions_Nova_spectra_tree_nodes_functions_ParameterFunctionMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData)
+void spectra_tree_nodes_functions_Nova_ParameterFunctionMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData)
 {
 	{
 	}
 }
 
-spectra_tree_nodes_functions_Nova_spectra_tree_nodes_functions_ParameterFunctionMap* spectra_tree_nodes_functions_Nova_spectra_tree_nodes_functions_ParameterFunctionMap_Nova_construct(spectra_tree_nodes_functions_Nova_spectra_tree_nodes_functions_ParameterFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+spectra_tree_nodes_functions_Nova_ParameterFunctionMap* spectra_tree_nodes_functions_Nova_ParameterFunctionMap_Nova_construct(spectra_tree_nodes_functions_Nova_ParameterFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
-	CCLASS_NEW(spectra_tree_nodes_functions_Nova_spectra_tree_nodes_functions_ParameterFunctionMap, this,);
-	this->vtable = &spectra_tree_nodes_functions_Parameter_spectra_tree_nodes_functions_ParameterFunctionMap_Extension_VTable_val;
+	CCLASS_NEW(spectra_tree_nodes_functions_Nova_ParameterFunctionMap, this,);
+	this->vtable = &spectra_tree_nodes_functions_Parameter_ParameterFunctionMap_Extension_VTable_val;
 	nova_Nova_Object_Nova_super((nova_Nova_Object*)this, exceptionData);
 	nova_meta_Nova_FunctionMap_Nova_super((nova_meta_Nova_FunctionMap*)this, exceptionData);
-	spectra_tree_nodes_functions_Nova_spectra_tree_nodes_functions_ParameterFunctionMap_Nova_super(this, exceptionData);
+	spectra_tree_nodes_functions_Nova_ParameterFunctionMap_Nova_super(this, exceptionData);
 	
 	{
-		spectra_tree_nodes_functions_Nova_spectra_tree_nodes_functions_ParameterFunctionMap_Nova_this(this, exceptionData);
+		spectra_tree_nodes_functions_Nova_ParameterFunctionMap_Nova_this(this, exceptionData);
 	}
 	
 	return this;
 }
 
-void spectra_tree_nodes_functions_Nova_spectra_tree_nodes_functions_ParameterFunctionMap_Nova_destroy(spectra_tree_nodes_functions_Nova_spectra_tree_nodes_functions_ParameterFunctionMap** this, nova_exception_Nova_ExceptionData* exceptionData)
+void spectra_tree_nodes_functions_Nova_ParameterFunctionMap_Nova_destroy(spectra_tree_nodes_functions_Nova_ParameterFunctionMap** this, nova_exception_Nova_ExceptionData* exceptionData)
 {
 	if (!*this)
 	{
@@ -214,11 +215,11 @@ void spectra_tree_nodes_functions_Nova_spectra_tree_nodes_functions_ParameterFun
 	NOVA_FREE(*this);
 }
 
-void spectra_tree_nodes_functions_Nova_spectra_tree_nodes_functions_ParameterFunctionMap_Nova_this(spectra_tree_nodes_functions_Nova_spectra_tree_nodes_functions_ParameterFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+void spectra_tree_nodes_functions_Nova_ParameterFunctionMap_Nova_this(spectra_tree_nodes_functions_Nova_ParameterFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
 }
 
-void spectra_tree_nodes_functions_Nova_spectra_tree_nodes_functions_ParameterFunctionMap_Nova_super(spectra_tree_nodes_functions_Nova_spectra_tree_nodes_functions_ParameterFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+void spectra_tree_nodes_functions_Nova_ParameterFunctionMap_Nova_super(spectra_tree_nodes_functions_Nova_ParameterFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
 }
 

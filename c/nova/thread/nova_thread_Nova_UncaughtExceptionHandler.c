@@ -82,28 +82,28 @@ void nova_thread_Nova_UncaughtExceptionHandler_virtual_Nova_uncaughtException(no
 	this->vtable->nova_thread_Nova_UncaughtExceptionHandler_virtual_Nova_uncaughtException((nova_thread_Nova_UncaughtExceptionHandler*)(this), exceptionData, thread, exception);
 }
 
-void nova_thread_Nova_nova_thread_UncaughtExceptionHandlerFunctionMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData)
+void nova_thread_Nova_UncaughtExceptionHandlerFunctionMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData)
 {
 	{
 	}
 }
 
-nova_thread_Nova_nova_thread_UncaughtExceptionHandlerFunctionMap* nova_thread_Nova_nova_thread_UncaughtExceptionHandlerFunctionMap_Nova_construct(nova_thread_Nova_nova_thread_UncaughtExceptionHandlerFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+nova_thread_Nova_UncaughtExceptionHandlerFunctionMap* nova_thread_Nova_UncaughtExceptionHandlerFunctionMap_Nova_construct(nova_thread_Nova_UncaughtExceptionHandlerFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
-	CCLASS_NEW(nova_thread_Nova_nova_thread_UncaughtExceptionHandlerFunctionMap, this,);
-	this->vtable = &nova_thread_UncaughtExceptionHandler_nova_thread_UncaughtExceptionHandlerFunctionMap_Extension_VTable_val;
+	CCLASS_NEW(nova_thread_Nova_UncaughtExceptionHandlerFunctionMap, this,);
+	this->vtable = &nova_thread_UncaughtExceptionHandler_UncaughtExceptionHandlerFunctionMap_Extension_VTable_val;
 	nova_Nova_Object_Nova_super((nova_Nova_Object*)this, exceptionData);
 	nova_meta_Nova_FunctionMap_Nova_super((nova_meta_Nova_FunctionMap*)this, exceptionData);
-	nova_thread_Nova_nova_thread_UncaughtExceptionHandlerFunctionMap_Nova_super(this, exceptionData);
+	nova_thread_Nova_UncaughtExceptionHandlerFunctionMap_Nova_super(this, exceptionData);
 	
 	{
-		nova_thread_Nova_nova_thread_UncaughtExceptionHandlerFunctionMap_Nova_this(this, exceptionData);
+		nova_thread_Nova_UncaughtExceptionHandlerFunctionMap_Nova_this(this, exceptionData);
 	}
 	
 	return this;
 }
 
-void nova_thread_Nova_nova_thread_UncaughtExceptionHandlerFunctionMap_Nova_destroy(nova_thread_Nova_nova_thread_UncaughtExceptionHandlerFunctionMap** this, nova_exception_Nova_ExceptionData* exceptionData)
+void nova_thread_Nova_UncaughtExceptionHandlerFunctionMap_Nova_destroy(nova_thread_Nova_UncaughtExceptionHandlerFunctionMap** this, nova_exception_Nova_ExceptionData* exceptionData)
 {
 	if (!*this)
 	{
@@ -114,11 +114,11 @@ void nova_thread_Nova_nova_thread_UncaughtExceptionHandlerFunctionMap_Nova_destr
 	NOVA_FREE(*this);
 }
 
-void nova_thread_Nova_nova_thread_UncaughtExceptionHandlerFunctionMap_Nova_this(nova_thread_Nova_nova_thread_UncaughtExceptionHandlerFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+void nova_thread_Nova_UncaughtExceptionHandlerFunctionMap_Nova_this(nova_thread_Nova_UncaughtExceptionHandlerFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
 }
 
-void nova_thread_Nova_nova_thread_UncaughtExceptionHandlerFunctionMap_Nova_super(nova_thread_Nova_nova_thread_UncaughtExceptionHandlerFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+void nova_thread_Nova_UncaughtExceptionHandlerFunctionMap_Nova_super(nova_thread_Nova_UncaughtExceptionHandlerFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
 }
 

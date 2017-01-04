@@ -85,28 +85,28 @@ void nova_math_Nova_StatementComponent_Nova_super(nova_math_Nova_StatementCompon
 	this->nova_math_Nova_StatementComponent_Nova_next = (nova_math_Nova_StatementComponent*)nova_null;
 }
 
-void nova_math_Nova_nova_math_StatementComponentFunctionMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData)
+void nova_math_Nova_StatementComponentFunctionMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData)
 {
 	{
 	}
 }
 
-nova_math_Nova_nova_math_StatementComponentFunctionMap* nova_math_Nova_nova_math_StatementComponentFunctionMap_Nova_construct(nova_math_Nova_nova_math_StatementComponentFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+nova_math_Nova_StatementComponentFunctionMap* nova_math_Nova_StatementComponentFunctionMap_Nova_construct(nova_math_Nova_StatementComponentFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
-	CCLASS_NEW(nova_math_Nova_nova_math_StatementComponentFunctionMap, this,);
-	this->vtable = &nova_math_StatementComponent_nova_math_StatementComponentFunctionMap_Extension_VTable_val;
+	CCLASS_NEW(nova_math_Nova_StatementComponentFunctionMap, this,);
+	this->vtable = &nova_math_StatementComponent_StatementComponentFunctionMap_Extension_VTable_val;
 	nova_Nova_Object_Nova_super((nova_Nova_Object*)this, exceptionData);
 	nova_meta_Nova_FunctionMap_Nova_super((nova_meta_Nova_FunctionMap*)this, exceptionData);
-	nova_math_Nova_nova_math_StatementComponentFunctionMap_Nova_super(this, exceptionData);
+	nova_math_Nova_StatementComponentFunctionMap_Nova_super(this, exceptionData);
 	
 	{
-		nova_math_Nova_nova_math_StatementComponentFunctionMap_Nova_this(this, exceptionData);
+		nova_math_Nova_StatementComponentFunctionMap_Nova_this(this, exceptionData);
 	}
 	
 	return this;
 }
 
-void nova_math_Nova_nova_math_StatementComponentFunctionMap_Nova_destroy(nova_math_Nova_nova_math_StatementComponentFunctionMap** this, nova_exception_Nova_ExceptionData* exceptionData)
+void nova_math_Nova_StatementComponentFunctionMap_Nova_destroy(nova_math_Nova_StatementComponentFunctionMap** this, nova_exception_Nova_ExceptionData* exceptionData)
 {
 	if (!*this)
 	{
@@ -117,11 +117,11 @@ void nova_math_Nova_nova_math_StatementComponentFunctionMap_Nova_destroy(nova_ma
 	NOVA_FREE(*this);
 }
 
-void nova_math_Nova_nova_math_StatementComponentFunctionMap_Nova_this(nova_math_Nova_nova_math_StatementComponentFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+void nova_math_Nova_StatementComponentFunctionMap_Nova_this(nova_math_Nova_StatementComponentFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
 }
 
-void nova_math_Nova_nova_math_StatementComponentFunctionMap_Nova_super(nova_math_Nova_nova_math_StatementComponentFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+void nova_math_Nova_StatementComponentFunctionMap_Nova_super(nova_math_Nova_StatementComponentFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
 }
 

@@ -2,7 +2,7 @@
 #define FILE_example_copy_Nova_Dog_NOVA
 
 typedef struct example_copy_Nova_Dog example_copy_Nova_Dog;
-typedef struct example_copy_Nova_example_copy_DogFunctionMap example_copy_Nova_example_copy_DogFunctionMap;
+typedef struct example_copy_Nova_DogFunctionMap example_copy_Nova_DogFunctionMap;
 
 
 #include <Nova.h>
@@ -57,15 +57,15 @@ void example_copy_Nova_Dog_Nova_super(example_copy_Nova_Dog* this, nova_exceptio
 
 CCLASS_CLASS
 (
-	example_copy_Nova_example_copy_DogFunctionMap, 
+	example_copy_Nova_DogFunctionMap, 
 	
-	example_copy_Dog_example_copy_DogFunctionMap_Extension_VTable* vtable;
+	example_copy_Dog_DogFunctionMap_Extension_VTable* vtable;
 )
 
-void example_copy_Nova_example_copy_DogFunctionMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData);
-example_copy_Nova_example_copy_DogFunctionMap* example_copy_Nova_example_copy_DogFunctionMap_Nova_construct(example_copy_Nova_example_copy_DogFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
-void example_copy_Nova_example_copy_DogFunctionMap_Nova_destroy(example_copy_Nova_example_copy_DogFunctionMap** this, nova_exception_Nova_ExceptionData* exceptionData);
-void example_copy_Nova_example_copy_DogFunctionMap_Nova_this(example_copy_Nova_example_copy_DogFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
-void example_copy_Nova_example_copy_DogFunctionMap_Nova_super(example_copy_Nova_example_copy_DogFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+void example_copy_Nova_DogFunctionMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData);
+example_copy_Nova_DogFunctionMap* example_copy_Nova_DogFunctionMap_Nova_construct(example_copy_Nova_DogFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+void example_copy_Nova_DogFunctionMap_Nova_destroy(example_copy_Nova_DogFunctionMap** this, nova_exception_Nova_ExceptionData* exceptionData);
+void example_copy_Nova_DogFunctionMap_Nova_this(example_copy_Nova_DogFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+void example_copy_Nova_DogFunctionMap_Nova_super(example_copy_Nova_DogFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
 
 #endif

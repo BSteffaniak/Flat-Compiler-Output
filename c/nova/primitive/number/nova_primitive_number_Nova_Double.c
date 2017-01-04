@@ -209,28 +209,28 @@ void nova_primitive_number_Nova_Double_Nova_super(nova_primitive_number_Nova_Dou
 	this->nova_primitive_number_Nova_Double_Nova_value = 0;
 }
 
-void nova_primitive_number_Nova_nova_primitive_number_DoubleFunctionMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData)
+void nova_primitive_number_Nova_DoubleFunctionMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData)
 {
 	{
 	}
 }
 
-nova_primitive_number_Nova_nova_primitive_number_DoubleFunctionMap* nova_primitive_number_Nova_nova_primitive_number_DoubleFunctionMap_Nova_construct(nova_primitive_number_Nova_nova_primitive_number_DoubleFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+nova_primitive_number_Nova_DoubleFunctionMap* nova_primitive_number_Nova_DoubleFunctionMap_Nova_construct(nova_primitive_number_Nova_DoubleFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
-	CCLASS_NEW(nova_primitive_number_Nova_nova_primitive_number_DoubleFunctionMap, this,);
-	this->vtable = &nova_primitive_number_Double_nova_primitive_number_DoubleFunctionMap_Extension_VTable_val;
+	CCLASS_NEW(nova_primitive_number_Nova_DoubleFunctionMap, this,);
+	this->vtable = &nova_primitive_number_Double_DoubleFunctionMap_Extension_VTable_val;
 	nova_Nova_Object_Nova_super((nova_Nova_Object*)this, exceptionData);
 	nova_meta_Nova_FunctionMap_Nova_super((nova_meta_Nova_FunctionMap*)this, exceptionData);
-	nova_primitive_number_Nova_nova_primitive_number_DoubleFunctionMap_Nova_super(this, exceptionData);
+	nova_primitive_number_Nova_DoubleFunctionMap_Nova_super(this, exceptionData);
 	
 	{
-		nova_primitive_number_Nova_nova_primitive_number_DoubleFunctionMap_Nova_this(this, exceptionData);
+		nova_primitive_number_Nova_DoubleFunctionMap_Nova_this(this, exceptionData);
 	}
 	
 	return this;
 }
 
-void nova_primitive_number_Nova_nova_primitive_number_DoubleFunctionMap_Nova_destroy(nova_primitive_number_Nova_nova_primitive_number_DoubleFunctionMap** this, nova_exception_Nova_ExceptionData* exceptionData)
+void nova_primitive_number_Nova_DoubleFunctionMap_Nova_destroy(nova_primitive_number_Nova_DoubleFunctionMap** this, nova_exception_Nova_ExceptionData* exceptionData)
 {
 	if (!*this)
 	{
@@ -241,11 +241,11 @@ void nova_primitive_number_Nova_nova_primitive_number_DoubleFunctionMap_Nova_des
 	NOVA_FREE(*this);
 }
 
-void nova_primitive_number_Nova_nova_primitive_number_DoubleFunctionMap_Nova_this(nova_primitive_number_Nova_nova_primitive_number_DoubleFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+void nova_primitive_number_Nova_DoubleFunctionMap_Nova_this(nova_primitive_number_Nova_DoubleFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
 }
 
-void nova_primitive_number_Nova_nova_primitive_number_DoubleFunctionMap_Nova_super(nova_primitive_number_Nova_nova_primitive_number_DoubleFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+void nova_primitive_number_Nova_DoubleFunctionMap_Nova_super(nova_primitive_number_Nova_DoubleFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
 }
 

@@ -101,28 +101,28 @@ void nova_time_Nova_CumulativeTimer_Nova_super(nova_time_Nova_CumulativeTimer* t
 	this->nova_time_Nova_CumulativeTimer_Nova_iterations = (int)(0);
 }
 
-void nova_time_Nova_nova_time_CumulativeTimerFunctionMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData)
+void nova_time_Nova_CumulativeTimerFunctionMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData)
 {
 	{
 	}
 }
 
-nova_time_Nova_nova_time_CumulativeTimerFunctionMap* nova_time_Nova_nova_time_CumulativeTimerFunctionMap_Nova_construct(nova_time_Nova_nova_time_CumulativeTimerFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+nova_time_Nova_CumulativeTimerFunctionMap* nova_time_Nova_CumulativeTimerFunctionMap_Nova_construct(nova_time_Nova_CumulativeTimerFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
-	CCLASS_NEW(nova_time_Nova_nova_time_CumulativeTimerFunctionMap, this,);
-	this->vtable = &nova_time_CumulativeTimer_nova_time_CumulativeTimerFunctionMap_Extension_VTable_val;
+	CCLASS_NEW(nova_time_Nova_CumulativeTimerFunctionMap, this,);
+	this->vtable = &nova_time_CumulativeTimer_CumulativeTimerFunctionMap_Extension_VTable_val;
 	nova_Nova_Object_Nova_super((nova_Nova_Object*)this, exceptionData);
 	nova_meta_Nova_FunctionMap_Nova_super((nova_meta_Nova_FunctionMap*)this, exceptionData);
-	nova_time_Nova_nova_time_CumulativeTimerFunctionMap_Nova_super(this, exceptionData);
+	nova_time_Nova_CumulativeTimerFunctionMap_Nova_super(this, exceptionData);
 	
 	{
-		nova_time_Nova_nova_time_CumulativeTimerFunctionMap_Nova_this(this, exceptionData);
+		nova_time_Nova_CumulativeTimerFunctionMap_Nova_this(this, exceptionData);
 	}
 	
 	return this;
 }
 
-void nova_time_Nova_nova_time_CumulativeTimerFunctionMap_Nova_destroy(nova_time_Nova_nova_time_CumulativeTimerFunctionMap** this, nova_exception_Nova_ExceptionData* exceptionData)
+void nova_time_Nova_CumulativeTimerFunctionMap_Nova_destroy(nova_time_Nova_CumulativeTimerFunctionMap** this, nova_exception_Nova_ExceptionData* exceptionData)
 {
 	if (!*this)
 	{
@@ -133,11 +133,11 @@ void nova_time_Nova_nova_time_CumulativeTimerFunctionMap_Nova_destroy(nova_time_
 	NOVA_FREE(*this);
 }
 
-void nova_time_Nova_nova_time_CumulativeTimerFunctionMap_Nova_this(nova_time_Nova_nova_time_CumulativeTimerFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+void nova_time_Nova_CumulativeTimerFunctionMap_Nova_this(nova_time_Nova_CumulativeTimerFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
 }
 
-void nova_time_Nova_nova_time_CumulativeTimerFunctionMap_Nova_super(nova_time_Nova_nova_time_CumulativeTimerFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+void nova_time_Nova_CumulativeTimerFunctionMap_Nova_super(nova_time_Nova_CumulativeTimerFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
 }
 

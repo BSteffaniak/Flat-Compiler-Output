@@ -2,7 +2,7 @@
 #define FILE_nova_time_Nova_Date_NOVA
 
 typedef struct nova_time_Nova_Date nova_time_Nova_Date;
-typedef struct nova_time_Nova_nova_time_DateFunctionMap nova_time_Nova_nova_time_DateFunctionMap;
+typedef struct nova_time_Nova_DateFunctionMap nova_time_Nova_DateFunctionMap;
 
 
 #include <Nova.h>
@@ -67,15 +67,15 @@ void nova_time_Nova_Date_Nova_super(nova_time_Nova_Date* this, nova_exception_No
 
 CCLASS_CLASS
 (
-	nova_time_Nova_nova_time_DateFunctionMap, 
+	nova_time_Nova_DateFunctionMap, 
 	
-	nova_time_Date_nova_time_DateFunctionMap_Extension_VTable* vtable;
+	nova_time_Date_DateFunctionMap_Extension_VTable* vtable;
 )
 
-void nova_time_Nova_nova_time_DateFunctionMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData);
-nova_time_Nova_nova_time_DateFunctionMap* nova_time_Nova_nova_time_DateFunctionMap_Nova_construct(nova_time_Nova_nova_time_DateFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
-void nova_time_Nova_nova_time_DateFunctionMap_Nova_destroy(nova_time_Nova_nova_time_DateFunctionMap** this, nova_exception_Nova_ExceptionData* exceptionData);
-void nova_time_Nova_nova_time_DateFunctionMap_Nova_this(nova_time_Nova_nova_time_DateFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
-void nova_time_Nova_nova_time_DateFunctionMap_Nova_super(nova_time_Nova_nova_time_DateFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+void nova_time_Nova_DateFunctionMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData);
+nova_time_Nova_DateFunctionMap* nova_time_Nova_DateFunctionMap_Nova_construct(nova_time_Nova_DateFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+void nova_time_Nova_DateFunctionMap_Nova_destroy(nova_time_Nova_DateFunctionMap** this, nova_exception_Nova_ExceptionData* exceptionData);
+void nova_time_Nova_DateFunctionMap_Nova_this(nova_time_Nova_DateFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+void nova_time_Nova_DateFunctionMap_Nova_super(nova_time_Nova_DateFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
 
 #endif

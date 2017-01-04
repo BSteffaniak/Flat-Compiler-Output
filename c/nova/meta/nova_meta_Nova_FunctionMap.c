@@ -73,28 +73,28 @@ void nova_meta_Nova_FunctionMap_Nova_super(nova_meta_Nova_FunctionMap* this, nov
 {
 }
 
-void nova_meta_Nova_nova_meta_FunctionMapFunctionMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData)
+void nova_meta_Nova_FunctionMapFunctionMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData)
 {
 	{
 	}
 }
 
-nova_meta_Nova_nova_meta_FunctionMapFunctionMap* nova_meta_Nova_nova_meta_FunctionMapFunctionMap_Nova_construct(nova_meta_Nova_nova_meta_FunctionMapFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+nova_meta_Nova_FunctionMapFunctionMap* nova_meta_Nova_FunctionMapFunctionMap_Nova_construct(nova_meta_Nova_FunctionMapFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
-	CCLASS_NEW(nova_meta_Nova_nova_meta_FunctionMapFunctionMap, this,);
-	this->vtable = &nova_meta_FunctionMap_nova_meta_FunctionMapFunctionMap_Extension_VTable_val;
+	CCLASS_NEW(nova_meta_Nova_FunctionMapFunctionMap, this,);
+	this->vtable = &nova_meta_FunctionMap_FunctionMapFunctionMap_Extension_VTable_val;
 	nova_Nova_Object_Nova_super((nova_Nova_Object*)this, exceptionData);
 	nova_meta_Nova_FunctionMap_Nova_super((nova_meta_Nova_FunctionMap*)this, exceptionData);
-	nova_meta_Nova_nova_meta_FunctionMapFunctionMap_Nova_super(this, exceptionData);
+	nova_meta_Nova_FunctionMapFunctionMap_Nova_super(this, exceptionData);
 	
 	{
-		nova_meta_Nova_nova_meta_FunctionMapFunctionMap_Nova_this(this, exceptionData);
+		nova_meta_Nova_FunctionMapFunctionMap_Nova_this(this, exceptionData);
 	}
 	
 	return this;
 }
 
-void nova_meta_Nova_nova_meta_FunctionMapFunctionMap_Nova_destroy(nova_meta_Nova_nova_meta_FunctionMapFunctionMap** this, nova_exception_Nova_ExceptionData* exceptionData)
+void nova_meta_Nova_FunctionMapFunctionMap_Nova_destroy(nova_meta_Nova_FunctionMapFunctionMap** this, nova_exception_Nova_ExceptionData* exceptionData)
 {
 	if (!*this)
 	{
@@ -105,11 +105,11 @@ void nova_meta_Nova_nova_meta_FunctionMapFunctionMap_Nova_destroy(nova_meta_Nova
 	NOVA_FREE(*this);
 }
 
-void nova_meta_Nova_nova_meta_FunctionMapFunctionMap_Nova_this(nova_meta_Nova_nova_meta_FunctionMapFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+void nova_meta_Nova_FunctionMapFunctionMap_Nova_this(nova_meta_Nova_FunctionMapFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
 }
 
-void nova_meta_Nova_nova_meta_FunctionMapFunctionMap_Nova_super(nova_meta_Nova_nova_meta_FunctionMapFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+void nova_meta_Nova_FunctionMapFunctionMap_Nova_super(nova_meta_Nova_FunctionMapFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
 }
 

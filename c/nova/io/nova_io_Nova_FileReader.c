@@ -180,28 +180,28 @@ void nova_io_Nova_FileReader_Nova_super(nova_io_Nova_FileReader* this, nova_exce
 	this->nova_io_Nova_FileReader_Nova_file = (nova_io_Nova_File*)nova_null;
 }
 
-void nova_io_Nova_nova_io_FileReaderFunctionMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData)
+void nova_io_Nova_FileReaderFunctionMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData)
 {
 	{
 	}
 }
 
-nova_io_Nova_nova_io_FileReaderFunctionMap* nova_io_Nova_nova_io_FileReaderFunctionMap_Nova_construct(nova_io_Nova_nova_io_FileReaderFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+nova_io_Nova_FileReaderFunctionMap* nova_io_Nova_FileReaderFunctionMap_Nova_construct(nova_io_Nova_FileReaderFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
-	CCLASS_NEW(nova_io_Nova_nova_io_FileReaderFunctionMap, this,);
-	this->vtable = &nova_io_FileReader_nova_io_FileReaderFunctionMap_Extension_VTable_val;
+	CCLASS_NEW(nova_io_Nova_FileReaderFunctionMap, this,);
+	this->vtable = &nova_io_FileReader_FileReaderFunctionMap_Extension_VTable_val;
 	nova_Nova_Object_Nova_super((nova_Nova_Object*)this, exceptionData);
 	nova_meta_Nova_FunctionMap_Nova_super((nova_meta_Nova_FunctionMap*)this, exceptionData);
-	nova_io_Nova_nova_io_FileReaderFunctionMap_Nova_super(this, exceptionData);
+	nova_io_Nova_FileReaderFunctionMap_Nova_super(this, exceptionData);
 	
 	{
-		nova_io_Nova_nova_io_FileReaderFunctionMap_Nova_this(this, exceptionData);
+		nova_io_Nova_FileReaderFunctionMap_Nova_this(this, exceptionData);
 	}
 	
 	return this;
 }
 
-void nova_io_Nova_nova_io_FileReaderFunctionMap_Nova_destroy(nova_io_Nova_nova_io_FileReaderFunctionMap** this, nova_exception_Nova_ExceptionData* exceptionData)
+void nova_io_Nova_FileReaderFunctionMap_Nova_destroy(nova_io_Nova_FileReaderFunctionMap** this, nova_exception_Nova_ExceptionData* exceptionData)
 {
 	if (!*this)
 	{
@@ -212,11 +212,11 @@ void nova_io_Nova_nova_io_FileReaderFunctionMap_Nova_destroy(nova_io_Nova_nova_i
 	NOVA_FREE(*this);
 }
 
-void nova_io_Nova_nova_io_FileReaderFunctionMap_Nova_this(nova_io_Nova_nova_io_FileReaderFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+void nova_io_Nova_FileReaderFunctionMap_Nova_this(nova_io_Nova_FileReaderFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
 }
 
-void nova_io_Nova_nova_io_FileReaderFunctionMap_Nova_super(nova_io_Nova_nova_io_FileReaderFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+void nova_io_Nova_FileReaderFunctionMap_Nova_super(nova_io_Nova_FileReaderFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
 }
 

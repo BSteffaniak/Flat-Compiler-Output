@@ -2,7 +2,7 @@
 #define FILE_nova_io_Nova_Console_NOVA
 
 typedef struct nova_io_Nova_Console nova_io_Nova_Console;
-typedef struct nova_io_Nova_nova_io_ConsoleFunctionMap nova_io_Nova_nova_io_ConsoleFunctionMap;
+typedef struct nova_io_Nova_ConsoleFunctionMap nova_io_Nova_ConsoleFunctionMap;
 
 
 #include <Nova.h>
@@ -88,15 +88,15 @@ void nova_io_Nova_Console_Nova_super(nova_io_Nova_Console* this, nova_exception_
 
 CCLASS_CLASS
 (
-	nova_io_Nova_nova_io_ConsoleFunctionMap, 
+	nova_io_Nova_ConsoleFunctionMap, 
 	
-	nova_io_Console_nova_io_ConsoleFunctionMap_Extension_VTable* vtable;
+	nova_io_Console_ConsoleFunctionMap_Extension_VTable* vtable;
 )
 
-void nova_io_Nova_nova_io_ConsoleFunctionMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData);
-nova_io_Nova_nova_io_ConsoleFunctionMap* nova_io_Nova_nova_io_ConsoleFunctionMap_Nova_construct(nova_io_Nova_nova_io_ConsoleFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
-void nova_io_Nova_nova_io_ConsoleFunctionMap_Nova_destroy(nova_io_Nova_nova_io_ConsoleFunctionMap** this, nova_exception_Nova_ExceptionData* exceptionData);
-void nova_io_Nova_nova_io_ConsoleFunctionMap_Nova_this(nova_io_Nova_nova_io_ConsoleFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
-void nova_io_Nova_nova_io_ConsoleFunctionMap_Nova_super(nova_io_Nova_nova_io_ConsoleFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+void nova_io_Nova_ConsoleFunctionMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData);
+nova_io_Nova_ConsoleFunctionMap* nova_io_Nova_ConsoleFunctionMap_Nova_construct(nova_io_Nova_ConsoleFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+void nova_io_Nova_ConsoleFunctionMap_Nova_destroy(nova_io_Nova_ConsoleFunctionMap** this, nova_exception_Nova_ExceptionData* exceptionData);
+void nova_io_Nova_ConsoleFunctionMap_Nova_this(nova_io_Nova_ConsoleFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+void nova_io_Nova_ConsoleFunctionMap_Nova_super(nova_io_Nova_ConsoleFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
 
 #endif

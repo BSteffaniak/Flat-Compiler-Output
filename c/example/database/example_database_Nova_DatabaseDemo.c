@@ -133,28 +133,28 @@ void example_database_Nova_DatabaseDemo_Nova_super(example_database_Nova_Databas
 {
 }
 
-void example_database_Nova_example_database_DatabaseDemoFunctionMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData)
+void example_database_Nova_DatabaseDemoFunctionMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData)
 {
 	{
 	}
 }
 
-example_database_Nova_example_database_DatabaseDemoFunctionMap* example_database_Nova_example_database_DatabaseDemoFunctionMap_Nova_construct(example_database_Nova_example_database_DatabaseDemoFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+example_database_Nova_DatabaseDemoFunctionMap* example_database_Nova_DatabaseDemoFunctionMap_Nova_construct(example_database_Nova_DatabaseDemoFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
-	CCLASS_NEW(example_database_Nova_example_database_DatabaseDemoFunctionMap, this,);
-	this->vtable = &example_database_DatabaseDemo_example_database_DatabaseDemoFunctionMap_Extension_VTable_val;
+	CCLASS_NEW(example_database_Nova_DatabaseDemoFunctionMap, this,);
+	this->vtable = &example_database_DatabaseDemo_DatabaseDemoFunctionMap_Extension_VTable_val;
 	nova_Nova_Object_Nova_super((nova_Nova_Object*)this, exceptionData);
 	nova_meta_Nova_FunctionMap_Nova_super((nova_meta_Nova_FunctionMap*)this, exceptionData);
-	example_database_Nova_example_database_DatabaseDemoFunctionMap_Nova_super(this, exceptionData);
+	example_database_Nova_DatabaseDemoFunctionMap_Nova_super(this, exceptionData);
 	
 	{
-		example_database_Nova_example_database_DatabaseDemoFunctionMap_Nova_this(this, exceptionData);
+		example_database_Nova_DatabaseDemoFunctionMap_Nova_this(this, exceptionData);
 	}
 	
 	return this;
 }
 
-void example_database_Nova_example_database_DatabaseDemoFunctionMap_Nova_destroy(example_database_Nova_example_database_DatabaseDemoFunctionMap** this, nova_exception_Nova_ExceptionData* exceptionData)
+void example_database_Nova_DatabaseDemoFunctionMap_Nova_destroy(example_database_Nova_DatabaseDemoFunctionMap** this, nova_exception_Nova_ExceptionData* exceptionData)
 {
 	if (!*this)
 	{
@@ -165,11 +165,11 @@ void example_database_Nova_example_database_DatabaseDemoFunctionMap_Nova_destroy
 	NOVA_FREE(*this);
 }
 
-void example_database_Nova_example_database_DatabaseDemoFunctionMap_Nova_this(example_database_Nova_example_database_DatabaseDemoFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+void example_database_Nova_DatabaseDemoFunctionMap_Nova_this(example_database_Nova_DatabaseDemoFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
 }
 
-void example_database_Nova_example_database_DatabaseDemoFunctionMap_Nova_super(example_database_Nova_example_database_DatabaseDemoFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+void example_database_Nova_DatabaseDemoFunctionMap_Nova_super(example_database_Nova_DatabaseDemoFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
 }
 

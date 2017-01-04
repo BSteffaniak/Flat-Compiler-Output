@@ -119,28 +119,28 @@ void spectra_tree_Nova_AnnotationSearchResult_Nova_super(spectra_tree_Nova_Annot
 	this->spectra_tree_Nova_AnnotationSearchResult_Nova_annotations = nova_datastruct_list_Nova_Array_1_Nova_construct(0, exceptionData, 0, (intptr_t)nova_null);
 }
 
-void spectra_tree_Nova_spectra_tree_AnnotationSearchResultFunctionMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData)
+void spectra_tree_Nova_AnnotationSearchResultFunctionMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData)
 {
 	{
 	}
 }
 
-spectra_tree_Nova_spectra_tree_AnnotationSearchResultFunctionMap* spectra_tree_Nova_spectra_tree_AnnotationSearchResultFunctionMap_Nova_construct(spectra_tree_Nova_spectra_tree_AnnotationSearchResultFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+spectra_tree_Nova_AnnotationSearchResultFunctionMap* spectra_tree_Nova_AnnotationSearchResultFunctionMap_Nova_construct(spectra_tree_Nova_AnnotationSearchResultFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
-	CCLASS_NEW(spectra_tree_Nova_spectra_tree_AnnotationSearchResultFunctionMap, this,);
-	this->vtable = &spectra_tree_AnnotationSearchResult_spectra_tree_AnnotationSearchResultFunctionMap_Extension_VTable_val;
+	CCLASS_NEW(spectra_tree_Nova_AnnotationSearchResultFunctionMap, this,);
+	this->vtable = &spectra_tree_AnnotationSearchResult_AnnotationSearchResultFunctionMap_Extension_VTable_val;
 	nova_Nova_Object_Nova_super((nova_Nova_Object*)this, exceptionData);
 	nova_meta_Nova_FunctionMap_Nova_super((nova_meta_Nova_FunctionMap*)this, exceptionData);
-	spectra_tree_Nova_spectra_tree_AnnotationSearchResultFunctionMap_Nova_super(this, exceptionData);
+	spectra_tree_Nova_AnnotationSearchResultFunctionMap_Nova_super(this, exceptionData);
 	
 	{
-		spectra_tree_Nova_spectra_tree_AnnotationSearchResultFunctionMap_Nova_this(this, exceptionData);
+		spectra_tree_Nova_AnnotationSearchResultFunctionMap_Nova_this(this, exceptionData);
 	}
 	
 	return this;
 }
 
-void spectra_tree_Nova_spectra_tree_AnnotationSearchResultFunctionMap_Nova_destroy(spectra_tree_Nova_spectra_tree_AnnotationSearchResultFunctionMap** this, nova_exception_Nova_ExceptionData* exceptionData)
+void spectra_tree_Nova_AnnotationSearchResultFunctionMap_Nova_destroy(spectra_tree_Nova_AnnotationSearchResultFunctionMap** this, nova_exception_Nova_ExceptionData* exceptionData)
 {
 	if (!*this)
 	{
@@ -151,11 +151,11 @@ void spectra_tree_Nova_spectra_tree_AnnotationSearchResultFunctionMap_Nova_destr
 	NOVA_FREE(*this);
 }
 
-void spectra_tree_Nova_spectra_tree_AnnotationSearchResultFunctionMap_Nova_this(spectra_tree_Nova_spectra_tree_AnnotationSearchResultFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+void spectra_tree_Nova_AnnotationSearchResultFunctionMap_Nova_this(spectra_tree_Nova_AnnotationSearchResultFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
 }
 
-void spectra_tree_Nova_spectra_tree_AnnotationSearchResultFunctionMap_Nova_super(spectra_tree_Nova_spectra_tree_AnnotationSearchResultFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+void spectra_tree_Nova_AnnotationSearchResultFunctionMap_Nova_super(spectra_tree_Nova_AnnotationSearchResultFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
 }
 

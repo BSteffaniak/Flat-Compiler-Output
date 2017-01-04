@@ -73,28 +73,28 @@ void nova_io_Nova_StreamReader_Nova_super(nova_io_Nova_StreamReader* this, nova_
 {
 }
 
-void nova_io_Nova_nova_io_StreamReaderFunctionMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData)
+void nova_io_Nova_StreamReaderFunctionMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData)
 {
 	{
 	}
 }
 
-nova_io_Nova_nova_io_StreamReaderFunctionMap* nova_io_Nova_nova_io_StreamReaderFunctionMap_Nova_construct(nova_io_Nova_nova_io_StreamReaderFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+nova_io_Nova_StreamReaderFunctionMap* nova_io_Nova_StreamReaderFunctionMap_Nova_construct(nova_io_Nova_StreamReaderFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
-	CCLASS_NEW(nova_io_Nova_nova_io_StreamReaderFunctionMap, this,);
-	this->vtable = &nova_io_StreamReader_nova_io_StreamReaderFunctionMap_Extension_VTable_val;
+	CCLASS_NEW(nova_io_Nova_StreamReaderFunctionMap, this,);
+	this->vtable = &nova_io_StreamReader_StreamReaderFunctionMap_Extension_VTable_val;
 	nova_Nova_Object_Nova_super((nova_Nova_Object*)this, exceptionData);
 	nova_meta_Nova_FunctionMap_Nova_super((nova_meta_Nova_FunctionMap*)this, exceptionData);
-	nova_io_Nova_nova_io_StreamReaderFunctionMap_Nova_super(this, exceptionData);
+	nova_io_Nova_StreamReaderFunctionMap_Nova_super(this, exceptionData);
 	
 	{
-		nova_io_Nova_nova_io_StreamReaderFunctionMap_Nova_this(this, exceptionData);
+		nova_io_Nova_StreamReaderFunctionMap_Nova_this(this, exceptionData);
 	}
 	
 	return this;
 }
 
-void nova_io_Nova_nova_io_StreamReaderFunctionMap_Nova_destroy(nova_io_Nova_nova_io_StreamReaderFunctionMap** this, nova_exception_Nova_ExceptionData* exceptionData)
+void nova_io_Nova_StreamReaderFunctionMap_Nova_destroy(nova_io_Nova_StreamReaderFunctionMap** this, nova_exception_Nova_ExceptionData* exceptionData)
 {
 	if (!*this)
 	{
@@ -105,11 +105,11 @@ void nova_io_Nova_nova_io_StreamReaderFunctionMap_Nova_destroy(nova_io_Nova_nova
 	NOVA_FREE(*this);
 }
 
-void nova_io_Nova_nova_io_StreamReaderFunctionMap_Nova_this(nova_io_Nova_nova_io_StreamReaderFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+void nova_io_Nova_StreamReaderFunctionMap_Nova_this(nova_io_Nova_StreamReaderFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
 }
 
-void nova_io_Nova_nova_io_StreamReaderFunctionMap_Nova_super(nova_io_Nova_nova_io_StreamReaderFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+void nova_io_Nova_StreamReaderFunctionMap_Nova_super(nova_io_Nova_StreamReaderFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
 }
 

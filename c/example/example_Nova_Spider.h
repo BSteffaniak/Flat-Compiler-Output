@@ -2,7 +2,7 @@
 #define FILE_example_Nova_Spider_NOVA
 
 typedef struct example_Nova_Spider example_Nova_Spider;
-typedef struct example_Nova_example_SpiderFunctionMap example_Nova_example_SpiderFunctionMap;
+typedef struct example_Nova_SpiderFunctionMap example_Nova_SpiderFunctionMap;
 
 
 #include <Nova.h>
@@ -61,15 +61,15 @@ void example_Nova_Spider_Nova_super(example_Nova_Spider* this, nova_exception_No
 
 CCLASS_CLASS
 (
-	example_Nova_example_SpiderFunctionMap, 
+	example_Nova_SpiderFunctionMap, 
 	
-	example_Spider_example_SpiderFunctionMap_Extension_VTable* vtable;
+	example_Spider_SpiderFunctionMap_Extension_VTable* vtable;
 )
 
-void example_Nova_example_SpiderFunctionMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData);
-example_Nova_example_SpiderFunctionMap* example_Nova_example_SpiderFunctionMap_Nova_construct(example_Nova_example_SpiderFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
-void example_Nova_example_SpiderFunctionMap_Nova_destroy(example_Nova_example_SpiderFunctionMap** this, nova_exception_Nova_ExceptionData* exceptionData);
-void example_Nova_example_SpiderFunctionMap_Nova_this(example_Nova_example_SpiderFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
-void example_Nova_example_SpiderFunctionMap_Nova_super(example_Nova_example_SpiderFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+void example_Nova_SpiderFunctionMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData);
+example_Nova_SpiderFunctionMap* example_Nova_SpiderFunctionMap_Nova_construct(example_Nova_SpiderFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+void example_Nova_SpiderFunctionMap_Nova_destroy(example_Nova_SpiderFunctionMap** this, nova_exception_Nova_ExceptionData* exceptionData);
+void example_Nova_SpiderFunctionMap_Nova_this(example_Nova_SpiderFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+void example_Nova_SpiderFunctionMap_Nova_super(example_Nova_SpiderFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
 
 #endif

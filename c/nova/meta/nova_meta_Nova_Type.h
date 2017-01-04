@@ -2,7 +2,7 @@
 #define FILE_nova_meta_Nova_Type_NOVA
 
 typedef struct nova_meta_Nova_Type nova_meta_Nova_Type;
-typedef struct nova_meta_Nova_nova_meta_TypeFunctionMap nova_meta_Nova_nova_meta_TypeFunctionMap;
+typedef struct nova_meta_Nova_TypeFunctionMap nova_meta_Nova_TypeFunctionMap;
 
 
 #include <Nova.h>
@@ -60,15 +60,15 @@ void nova_meta_Nova_Type_Nova_super(nova_meta_Nova_Type* this, nova_exception_No
 
 CCLASS_CLASS
 (
-	nova_meta_Nova_nova_meta_TypeFunctionMap, 
+	nova_meta_Nova_TypeFunctionMap, 
 	
-	nova_meta_Type_nova_meta_TypeFunctionMap_Extension_VTable* vtable;
+	nova_meta_Type_TypeFunctionMap_Extension_VTable* vtable;
 )
 
-void nova_meta_Nova_nova_meta_TypeFunctionMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData);
-nova_meta_Nova_nova_meta_TypeFunctionMap* nova_meta_Nova_nova_meta_TypeFunctionMap_Nova_construct(nova_meta_Nova_nova_meta_TypeFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
-void nova_meta_Nova_nova_meta_TypeFunctionMap_Nova_destroy(nova_meta_Nova_nova_meta_TypeFunctionMap** this, nova_exception_Nova_ExceptionData* exceptionData);
-void nova_meta_Nova_nova_meta_TypeFunctionMap_Nova_this(nova_meta_Nova_nova_meta_TypeFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
-void nova_meta_Nova_nova_meta_TypeFunctionMap_Nova_super(nova_meta_Nova_nova_meta_TypeFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+void nova_meta_Nova_TypeFunctionMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData);
+nova_meta_Nova_TypeFunctionMap* nova_meta_Nova_TypeFunctionMap_Nova_construct(nova_meta_Nova_TypeFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+void nova_meta_Nova_TypeFunctionMap_Nova_destroy(nova_meta_Nova_TypeFunctionMap** this, nova_exception_Nova_ExceptionData* exceptionData);
+void nova_meta_Nova_TypeFunctionMap_Nova_this(nova_meta_Nova_TypeFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+void nova_meta_Nova_TypeFunctionMap_Nova_super(nova_meta_Nova_TypeFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
 
 #endif

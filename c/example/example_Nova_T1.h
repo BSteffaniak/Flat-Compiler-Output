@@ -2,7 +2,7 @@
 #define FILE_example_Nova_T1_NOVA
 
 typedef struct example_Nova_T1 example_Nova_T1;
-typedef struct example_Nova_example_T1FunctionMap example_Nova_example_T1FunctionMap;
+typedef struct example_Nova_T1FunctionMap example_Nova_T1FunctionMap;
 
 
 #include <Nova.h>
@@ -59,15 +59,15 @@ int example_Nova_T1_virtual_Accessor_static_Nova_ind(example_Nova_T1* this, nova
 
 CCLASS_CLASS
 (
-	example_Nova_example_T1FunctionMap, 
+	example_Nova_T1FunctionMap, 
 	
-	example_T1_example_T1FunctionMap_Extension_VTable* vtable;
+	example_T1_T1FunctionMap_Extension_VTable* vtable;
 )
 
-void example_Nova_example_T1FunctionMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData);
-example_Nova_example_T1FunctionMap* example_Nova_example_T1FunctionMap_Nova_construct(example_Nova_example_T1FunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
-void example_Nova_example_T1FunctionMap_Nova_destroy(example_Nova_example_T1FunctionMap** this, nova_exception_Nova_ExceptionData* exceptionData);
-void example_Nova_example_T1FunctionMap_Nova_this(example_Nova_example_T1FunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
-void example_Nova_example_T1FunctionMap_Nova_super(example_Nova_example_T1FunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+void example_Nova_T1FunctionMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData);
+example_Nova_T1FunctionMap* example_Nova_T1FunctionMap_Nova_construct(example_Nova_T1FunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+void example_Nova_T1FunctionMap_Nova_destroy(example_Nova_T1FunctionMap** this, nova_exception_Nova_ExceptionData* exceptionData);
+void example_Nova_T1FunctionMap_Nova_this(example_Nova_T1FunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+void example_Nova_T1FunctionMap_Nova_super(example_Nova_T1FunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
 
 #endif

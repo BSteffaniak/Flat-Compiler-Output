@@ -89,28 +89,28 @@ void nova_thread_async_Nova_Task_Nova_super(nova_thread_async_Nova_Task* this, n
 	this->nova_thread_async_Nova_Task_Nova_thread = (nova_thread_Nova_Thread*)nova_null;
 }
 
-void nova_thread_async_Nova_nova_thread_async_TaskFunctionMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData)
+void nova_thread_async_Nova_TaskFunctionMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData)
 {
 	{
 	}
 }
 
-nova_thread_async_Nova_nova_thread_async_TaskFunctionMap* nova_thread_async_Nova_nova_thread_async_TaskFunctionMap_Nova_construct(nova_thread_async_Nova_nova_thread_async_TaskFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+nova_thread_async_Nova_TaskFunctionMap* nova_thread_async_Nova_TaskFunctionMap_Nova_construct(nova_thread_async_Nova_TaskFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
-	CCLASS_NEW(nova_thread_async_Nova_nova_thread_async_TaskFunctionMap, this,);
-	this->vtable = &nova_thread_async_Task_nova_thread_async_TaskFunctionMap_Extension_VTable_val;
+	CCLASS_NEW(nova_thread_async_Nova_TaskFunctionMap, this,);
+	this->vtable = &nova_thread_async_Task_TaskFunctionMap_Extension_VTable_val;
 	nova_Nova_Object_Nova_super((nova_Nova_Object*)this, exceptionData);
 	nova_meta_Nova_FunctionMap_Nova_super((nova_meta_Nova_FunctionMap*)this, exceptionData);
-	nova_thread_async_Nova_nova_thread_async_TaskFunctionMap_Nova_super(this, exceptionData);
+	nova_thread_async_Nova_TaskFunctionMap_Nova_super(this, exceptionData);
 	
 	{
-		nova_thread_async_Nova_nova_thread_async_TaskFunctionMap_Nova_this(this, exceptionData);
+		nova_thread_async_Nova_TaskFunctionMap_Nova_this(this, exceptionData);
 	}
 	
 	return this;
 }
 
-void nova_thread_async_Nova_nova_thread_async_TaskFunctionMap_Nova_destroy(nova_thread_async_Nova_nova_thread_async_TaskFunctionMap** this, nova_exception_Nova_ExceptionData* exceptionData)
+void nova_thread_async_Nova_TaskFunctionMap_Nova_destroy(nova_thread_async_Nova_TaskFunctionMap** this, nova_exception_Nova_ExceptionData* exceptionData)
 {
 	if (!*this)
 	{
@@ -121,11 +121,11 @@ void nova_thread_async_Nova_nova_thread_async_TaskFunctionMap_Nova_destroy(nova_
 	NOVA_FREE(*this);
 }
 
-void nova_thread_async_Nova_nova_thread_async_TaskFunctionMap_Nova_this(nova_thread_async_Nova_nova_thread_async_TaskFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+void nova_thread_async_Nova_TaskFunctionMap_Nova_this(nova_thread_async_Nova_TaskFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
 }
 
-void nova_thread_async_Nova_nova_thread_async_TaskFunctionMap_Nova_super(nova_thread_async_Nova_nova_thread_async_TaskFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+void nova_thread_async_Nova_TaskFunctionMap_Nova_super(nova_thread_async_Nova_TaskFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
 }
 

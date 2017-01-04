@@ -2,7 +2,7 @@
 #define FILE_spectra_Nova_Spectra_NOVA
 
 typedef struct spectra_Nova_Spectra spectra_Nova_Spectra;
-typedef struct spectra_Nova_spectra_SpectraFunctionMap spectra_Nova_spectra_SpectraFunctionMap;
+typedef struct spectra_Nova_SpectraFunctionMap spectra_Nova_SpectraFunctionMap;
 
 
 #include <Nova.h>
@@ -73,15 +73,15 @@ void spectra_Nova_Spectra_Nova_super(spectra_Nova_Spectra* this, nova_exception_
 
 CCLASS_CLASS
 (
-	spectra_Nova_spectra_SpectraFunctionMap, 
+	spectra_Nova_SpectraFunctionMap, 
 	
-	spectra_Spectra_spectra_SpectraFunctionMap_Extension_VTable* vtable;
+	spectra_Spectra_SpectraFunctionMap_Extension_VTable* vtable;
 )
 
-void spectra_Nova_spectra_SpectraFunctionMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData);
-spectra_Nova_spectra_SpectraFunctionMap* spectra_Nova_spectra_SpectraFunctionMap_Nova_construct(spectra_Nova_spectra_SpectraFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
-void spectra_Nova_spectra_SpectraFunctionMap_Nova_destroy(spectra_Nova_spectra_SpectraFunctionMap** this, nova_exception_Nova_ExceptionData* exceptionData);
-void spectra_Nova_spectra_SpectraFunctionMap_Nova_this(spectra_Nova_spectra_SpectraFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
-void spectra_Nova_spectra_SpectraFunctionMap_Nova_super(spectra_Nova_spectra_SpectraFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+void spectra_Nova_SpectraFunctionMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData);
+spectra_Nova_SpectraFunctionMap* spectra_Nova_SpectraFunctionMap_Nova_construct(spectra_Nova_SpectraFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+void spectra_Nova_SpectraFunctionMap_Nova_destroy(spectra_Nova_SpectraFunctionMap** this, nova_exception_Nova_ExceptionData* exceptionData);
+void spectra_Nova_SpectraFunctionMap_Nova_this(spectra_Nova_SpectraFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+void spectra_Nova_SpectraFunctionMap_Nova_super(spectra_Nova_SpectraFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
 
 #endif

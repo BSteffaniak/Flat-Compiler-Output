@@ -2,7 +2,7 @@
 #define FILE_nova_math_Nova_Matrix_NOVA
 
 typedef struct nova_math_Nova_Matrix nova_math_Nova_Matrix;
-typedef struct nova_math_Nova_nova_math_MatrixFunctionMap nova_math_Nova_nova_math_MatrixFunctionMap;
+typedef struct nova_math_Nova_MatrixFunctionMap nova_math_Nova_MatrixFunctionMap;
 
 
 #include <Nova.h>
@@ -90,15 +90,15 @@ void nova_math_Nova_Matrix_Nova_super(nova_math_Nova_Matrix* this, nova_exceptio
 
 CCLASS_CLASS
 (
-	nova_math_Nova_nova_math_MatrixFunctionMap, 
+	nova_math_Nova_MatrixFunctionMap, 
 	
-	nova_math_Matrix_nova_math_MatrixFunctionMap_Extension_VTable* vtable;
+	nova_math_Matrix_MatrixFunctionMap_Extension_VTable* vtable;
 )
 
-void nova_math_Nova_nova_math_MatrixFunctionMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData);
-nova_math_Nova_nova_math_MatrixFunctionMap* nova_math_Nova_nova_math_MatrixFunctionMap_Nova_construct(nova_math_Nova_nova_math_MatrixFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
-void nova_math_Nova_nova_math_MatrixFunctionMap_Nova_destroy(nova_math_Nova_nova_math_MatrixFunctionMap** this, nova_exception_Nova_ExceptionData* exceptionData);
-void nova_math_Nova_nova_math_MatrixFunctionMap_Nova_this(nova_math_Nova_nova_math_MatrixFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
-void nova_math_Nova_nova_math_MatrixFunctionMap_Nova_super(nova_math_Nova_nova_math_MatrixFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+void nova_math_Nova_MatrixFunctionMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData);
+nova_math_Nova_MatrixFunctionMap* nova_math_Nova_MatrixFunctionMap_Nova_construct(nova_math_Nova_MatrixFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+void nova_math_Nova_MatrixFunctionMap_Nova_destroy(nova_math_Nova_MatrixFunctionMap** this, nova_exception_Nova_ExceptionData* exceptionData);
+void nova_math_Nova_MatrixFunctionMap_Nova_this(nova_math_Nova_MatrixFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+void nova_math_Nova_MatrixFunctionMap_Nova_super(nova_math_Nova_MatrixFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
 
 #endif

@@ -77,28 +77,28 @@ void nova_process_Nova_Process_Nova_super(nova_process_Nova_Process* this, nova_
 	this->nova_process_Nova_Process_Nova_reader = (nova_io_Nova_InputStream*)nova_null;
 }
 
-void nova_process_Nova_nova_process_ProcessFunctionMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData)
+void nova_process_Nova_ProcessFunctionMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData)
 {
 	{
 	}
 }
 
-nova_process_Nova_nova_process_ProcessFunctionMap* nova_process_Nova_nova_process_ProcessFunctionMap_Nova_construct(nova_process_Nova_nova_process_ProcessFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+nova_process_Nova_ProcessFunctionMap* nova_process_Nova_ProcessFunctionMap_Nova_construct(nova_process_Nova_ProcessFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
-	CCLASS_NEW(nova_process_Nova_nova_process_ProcessFunctionMap, this,);
-	this->vtable = &nova_process_Process_nova_process_ProcessFunctionMap_Extension_VTable_val;
+	CCLASS_NEW(nova_process_Nova_ProcessFunctionMap, this,);
+	this->vtable = &nova_process_Process_ProcessFunctionMap_Extension_VTable_val;
 	nova_Nova_Object_Nova_super((nova_Nova_Object*)this, exceptionData);
 	nova_meta_Nova_FunctionMap_Nova_super((nova_meta_Nova_FunctionMap*)this, exceptionData);
-	nova_process_Nova_nova_process_ProcessFunctionMap_Nova_super(this, exceptionData);
+	nova_process_Nova_ProcessFunctionMap_Nova_super(this, exceptionData);
 	
 	{
-		nova_process_Nova_nova_process_ProcessFunctionMap_Nova_this(this, exceptionData);
+		nova_process_Nova_ProcessFunctionMap_Nova_this(this, exceptionData);
 	}
 	
 	return this;
 }
 
-void nova_process_Nova_nova_process_ProcessFunctionMap_Nova_destroy(nova_process_Nova_nova_process_ProcessFunctionMap** this, nova_exception_Nova_ExceptionData* exceptionData)
+void nova_process_Nova_ProcessFunctionMap_Nova_destroy(nova_process_Nova_ProcessFunctionMap** this, nova_exception_Nova_ExceptionData* exceptionData)
 {
 	if (!*this)
 	{
@@ -109,11 +109,11 @@ void nova_process_Nova_nova_process_ProcessFunctionMap_Nova_destroy(nova_process
 	NOVA_FREE(*this);
 }
 
-void nova_process_Nova_nova_process_ProcessFunctionMap_Nova_this(nova_process_Nova_nova_process_ProcessFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+void nova_process_Nova_ProcessFunctionMap_Nova_this(nova_process_Nova_ProcessFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
 }
 
-void nova_process_Nova_nova_process_ProcessFunctionMap_Nova_super(nova_process_Nova_nova_process_ProcessFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+void nova_process_Nova_ProcessFunctionMap_Nova_super(nova_process_Nova_ProcessFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
 }
 

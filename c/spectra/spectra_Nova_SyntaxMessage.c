@@ -102,28 +102,28 @@ void spectra_Nova_SyntaxMessage_Nova_super(spectra_Nova_SyntaxMessage* this, nov
 {
 }
 
-void spectra_Nova_spectra_SyntaxMessageFunctionMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData)
+void spectra_Nova_SyntaxMessageFunctionMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData)
 {
 	{
 	}
 }
 
-spectra_Nova_spectra_SyntaxMessageFunctionMap* spectra_Nova_spectra_SyntaxMessageFunctionMap_Nova_construct(spectra_Nova_spectra_SyntaxMessageFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+spectra_Nova_SyntaxMessageFunctionMap* spectra_Nova_SyntaxMessageFunctionMap_Nova_construct(spectra_Nova_SyntaxMessageFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
-	CCLASS_NEW(spectra_Nova_spectra_SyntaxMessageFunctionMap, this,);
-	this->vtable = &spectra_SyntaxMessage_spectra_SyntaxMessageFunctionMap_Extension_VTable_val;
+	CCLASS_NEW(spectra_Nova_SyntaxMessageFunctionMap, this,);
+	this->vtable = &spectra_SyntaxMessage_SyntaxMessageFunctionMap_Extension_VTable_val;
 	nova_Nova_Object_Nova_super((nova_Nova_Object*)this, exceptionData);
 	nova_meta_Nova_FunctionMap_Nova_super((nova_meta_Nova_FunctionMap*)this, exceptionData);
-	spectra_Nova_spectra_SyntaxMessageFunctionMap_Nova_super(this, exceptionData);
+	spectra_Nova_SyntaxMessageFunctionMap_Nova_super(this, exceptionData);
 	
 	{
-		spectra_Nova_spectra_SyntaxMessageFunctionMap_Nova_this(this, exceptionData);
+		spectra_Nova_SyntaxMessageFunctionMap_Nova_this(this, exceptionData);
 	}
 	
 	return this;
 }
 
-void spectra_Nova_spectra_SyntaxMessageFunctionMap_Nova_destroy(spectra_Nova_spectra_SyntaxMessageFunctionMap** this, nova_exception_Nova_ExceptionData* exceptionData)
+void spectra_Nova_SyntaxMessageFunctionMap_Nova_destroy(spectra_Nova_SyntaxMessageFunctionMap** this, nova_exception_Nova_ExceptionData* exceptionData)
 {
 	if (!*this)
 	{
@@ -134,11 +134,11 @@ void spectra_Nova_spectra_SyntaxMessageFunctionMap_Nova_destroy(spectra_Nova_spe
 	NOVA_FREE(*this);
 }
 
-void spectra_Nova_spectra_SyntaxMessageFunctionMap_Nova_this(spectra_Nova_spectra_SyntaxMessageFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+void spectra_Nova_SyntaxMessageFunctionMap_Nova_this(spectra_Nova_SyntaxMessageFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
 }
 
-void spectra_Nova_spectra_SyntaxMessageFunctionMap_Nova_super(spectra_Nova_spectra_SyntaxMessageFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+void spectra_Nova_SyntaxMessageFunctionMap_Nova_super(spectra_Nova_SyntaxMessageFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
 }
 

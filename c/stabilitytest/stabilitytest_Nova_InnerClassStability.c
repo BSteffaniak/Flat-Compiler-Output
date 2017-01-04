@@ -139,28 +139,28 @@ void stabilitytest_Nova_MyOuter_Nova_super(stabilitytest_Nova_MyOuter* this, nov
 {
 }
 
-void stabilitytest_Nova_stabilitytest_InnerClassStabilityFunctionMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData)
+void stabilitytest_Nova_InnerClassStabilityFunctionMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData)
 {
 	{
 	}
 }
 
-stabilitytest_Nova_stabilitytest_InnerClassStabilityFunctionMap* stabilitytest_Nova_stabilitytest_InnerClassStabilityFunctionMap_Nova_construct(stabilitytest_Nova_stabilitytest_InnerClassStabilityFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+stabilitytest_Nova_InnerClassStabilityFunctionMap* stabilitytest_Nova_InnerClassStabilityFunctionMap_Nova_construct(stabilitytest_Nova_InnerClassStabilityFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
-	CCLASS_NEW(stabilitytest_Nova_stabilitytest_InnerClassStabilityFunctionMap, this,);
-	this->vtable = &stabilitytest_InnerClassStability_stabilitytest_InnerClassStabilityFunctionMap_Extension_VTable_val;
+	CCLASS_NEW(stabilitytest_Nova_InnerClassStabilityFunctionMap, this,);
+	this->vtable = &stabilitytest_InnerClassStability_InnerClassStabilityFunctionMap_Extension_VTable_val;
 	nova_Nova_Object_Nova_super((nova_Nova_Object*)this, exceptionData);
 	nova_meta_Nova_FunctionMap_Nova_super((nova_meta_Nova_FunctionMap*)this, exceptionData);
-	stabilitytest_Nova_stabilitytest_InnerClassStabilityFunctionMap_Nova_super(this, exceptionData);
+	stabilitytest_Nova_InnerClassStabilityFunctionMap_Nova_super(this, exceptionData);
 	
 	{
-		stabilitytest_Nova_stabilitytest_InnerClassStabilityFunctionMap_Nova_this(this, exceptionData);
+		stabilitytest_Nova_InnerClassStabilityFunctionMap_Nova_this(this, exceptionData);
 	}
 	
 	return this;
 }
 
-void stabilitytest_Nova_stabilitytest_InnerClassStabilityFunctionMap_Nova_destroy(stabilitytest_Nova_stabilitytest_InnerClassStabilityFunctionMap** this, nova_exception_Nova_ExceptionData* exceptionData)
+void stabilitytest_Nova_InnerClassStabilityFunctionMap_Nova_destroy(stabilitytest_Nova_InnerClassStabilityFunctionMap** this, nova_exception_Nova_ExceptionData* exceptionData)
 {
 	if (!*this)
 	{
@@ -171,36 +171,36 @@ void stabilitytest_Nova_stabilitytest_InnerClassStabilityFunctionMap_Nova_destro
 	NOVA_FREE(*this);
 }
 
-void stabilitytest_Nova_stabilitytest_InnerClassStabilityFunctionMap_Nova_this(stabilitytest_Nova_stabilitytest_InnerClassStabilityFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+void stabilitytest_Nova_InnerClassStabilityFunctionMap_Nova_this(stabilitytest_Nova_InnerClassStabilityFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
 }
 
-void stabilitytest_Nova_stabilitytest_InnerClassStabilityFunctionMap_Nova_super(stabilitytest_Nova_stabilitytest_InnerClassStabilityFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+void stabilitytest_Nova_InnerClassStabilityFunctionMap_Nova_super(stabilitytest_Nova_InnerClassStabilityFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
 }
 
-void stabilitytest_Nova_stabilitytest_InnerClassStability_MyOuterFunctionMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData)
+void stabilitytest_Nova_MyOuterFunctionMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData)
 {
 	{
 	}
 }
 
-stabilitytest_Nova_stabilitytest_InnerClassStability_MyOuterFunctionMap* stabilitytest_Nova_stabilitytest_InnerClassStability_MyOuterFunctionMap_Nova_construct(stabilitytest_Nova_stabilitytest_InnerClassStability_MyOuterFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+stabilitytest_Nova_MyOuterFunctionMap* stabilitytest_Nova_MyOuterFunctionMap_Nova_construct(stabilitytest_Nova_MyOuterFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
-	CCLASS_NEW(stabilitytest_Nova_stabilitytest_InnerClassStability_MyOuterFunctionMap, this,);
-	this->vtable = &stabilitytest_InnerClassStability_stabilitytest_InnerClassStability_MyOuterFunctionMap_Extension_VTable_val;
+	CCLASS_NEW(stabilitytest_Nova_MyOuterFunctionMap, this,);
+	this->vtable = &stabilitytest_InnerClassStability_MyOuterFunctionMap_Extension_VTable_val;
 	nova_Nova_Object_Nova_super((nova_Nova_Object*)this, exceptionData);
 	nova_meta_Nova_FunctionMap_Nova_super((nova_meta_Nova_FunctionMap*)this, exceptionData);
-	stabilitytest_Nova_stabilitytest_InnerClassStability_MyOuterFunctionMap_Nova_super(this, exceptionData);
+	stabilitytest_Nova_MyOuterFunctionMap_Nova_super(this, exceptionData);
 	
 	{
-		stabilitytest_Nova_stabilitytest_InnerClassStability_MyOuterFunctionMap_Nova_this(this, exceptionData);
+		stabilitytest_Nova_MyOuterFunctionMap_Nova_this(this, exceptionData);
 	}
 	
 	return this;
 }
 
-void stabilitytest_Nova_stabilitytest_InnerClassStability_MyOuterFunctionMap_Nova_destroy(stabilitytest_Nova_stabilitytest_InnerClassStability_MyOuterFunctionMap** this, nova_exception_Nova_ExceptionData* exceptionData)
+void stabilitytest_Nova_MyOuterFunctionMap_Nova_destroy(stabilitytest_Nova_MyOuterFunctionMap** this, nova_exception_Nova_ExceptionData* exceptionData)
 {
 	if (!*this)
 	{
@@ -211,11 +211,11 @@ void stabilitytest_Nova_stabilitytest_InnerClassStability_MyOuterFunctionMap_Nov
 	NOVA_FREE(*this);
 }
 
-void stabilitytest_Nova_stabilitytest_InnerClassStability_MyOuterFunctionMap_Nova_this(stabilitytest_Nova_stabilitytest_InnerClassStability_MyOuterFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+void stabilitytest_Nova_MyOuterFunctionMap_Nova_this(stabilitytest_Nova_MyOuterFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
 }
 
-void stabilitytest_Nova_stabilitytest_InnerClassStability_MyOuterFunctionMap_Nova_super(stabilitytest_Nova_stabilitytest_InnerClassStability_MyOuterFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+void stabilitytest_Nova_MyOuterFunctionMap_Nova_super(stabilitytest_Nova_MyOuterFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
 }
 
@@ -265,28 +265,28 @@ void stabilitytest_Nova_MyInner_Nova_super(stabilitytest_Nova_MyInner* this, nov
 	this->prv->stabilitytest_Nova_MyInner_Nova_y = 0;
 }
 
-void stabilitytest_Nova_stabilitytest_InnerClassStability_MyInnerFunctionMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData)
+void stabilitytest_Nova_MyInnerFunctionMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData)
 {
 	{
 	}
 }
 
-stabilitytest_Nova_stabilitytest_InnerClassStability_MyInnerFunctionMap* stabilitytest_Nova_stabilitytest_InnerClassStability_MyInnerFunctionMap_Nova_construct(stabilitytest_Nova_stabilitytest_InnerClassStability_MyInnerFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+stabilitytest_Nova_MyInnerFunctionMap* stabilitytest_Nova_MyInnerFunctionMap_Nova_construct(stabilitytest_Nova_MyInnerFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
-	CCLASS_NEW(stabilitytest_Nova_stabilitytest_InnerClassStability_MyInnerFunctionMap, this,);
-	this->vtable = &stabilitytest_InnerClassStability_stabilitytest_InnerClassStability_MyInnerFunctionMap_Extension_VTable_val;
+	CCLASS_NEW(stabilitytest_Nova_MyInnerFunctionMap, this,);
+	this->vtable = &stabilitytest_InnerClassStability_MyInnerFunctionMap_Extension_VTable_val;
 	nova_Nova_Object_Nova_super((nova_Nova_Object*)this, exceptionData);
 	nova_meta_Nova_FunctionMap_Nova_super((nova_meta_Nova_FunctionMap*)this, exceptionData);
-	stabilitytest_Nova_stabilitytest_InnerClassStability_MyInnerFunctionMap_Nova_super(this, exceptionData);
+	stabilitytest_Nova_MyInnerFunctionMap_Nova_super(this, exceptionData);
 	
 	{
-		stabilitytest_Nova_stabilitytest_InnerClassStability_MyInnerFunctionMap_Nova_this(this, exceptionData);
+		stabilitytest_Nova_MyInnerFunctionMap_Nova_this(this, exceptionData);
 	}
 	
 	return this;
 }
 
-void stabilitytest_Nova_stabilitytest_InnerClassStability_MyInnerFunctionMap_Nova_destroy(stabilitytest_Nova_stabilitytest_InnerClassStability_MyInnerFunctionMap** this, nova_exception_Nova_ExceptionData* exceptionData)
+void stabilitytest_Nova_MyInnerFunctionMap_Nova_destroy(stabilitytest_Nova_MyInnerFunctionMap** this, nova_exception_Nova_ExceptionData* exceptionData)
 {
 	if (!*this)
 	{
@@ -297,11 +297,11 @@ void stabilitytest_Nova_stabilitytest_InnerClassStability_MyInnerFunctionMap_Nov
 	NOVA_FREE(*this);
 }
 
-void stabilitytest_Nova_stabilitytest_InnerClassStability_MyInnerFunctionMap_Nova_this(stabilitytest_Nova_stabilitytest_InnerClassStability_MyInnerFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+void stabilitytest_Nova_MyInnerFunctionMap_Nova_this(stabilitytest_Nova_MyInnerFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
 }
 
-void stabilitytest_Nova_stabilitytest_InnerClassStability_MyInnerFunctionMap_Nova_super(stabilitytest_Nova_stabilitytest_InnerClassStability_MyInnerFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+void stabilitytest_Nova_MyInnerFunctionMap_Nova_super(stabilitytest_Nova_MyInnerFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
 }
 

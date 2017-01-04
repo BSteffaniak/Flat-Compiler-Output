@@ -2,7 +2,7 @@
 #define FILE_nova_regex_Nova_Match_NOVA
 
 typedef struct nova_regex_Nova_Match nova_regex_Nova_Match;
-typedef struct nova_regex_Nova_nova_regex_MatchFunctionMap nova_regex_Nova_nova_regex_MatchFunctionMap;
+typedef struct nova_regex_Nova_MatchFunctionMap nova_regex_Nova_MatchFunctionMap;
 
 
 #include <Nova.h>
@@ -63,15 +63,15 @@ void nova_regex_Nova_Match_Nova_super(nova_regex_Nova_Match* this, nova_exceptio
 
 CCLASS_CLASS
 (
-	nova_regex_Nova_nova_regex_MatchFunctionMap, 
+	nova_regex_Nova_MatchFunctionMap, 
 	
-	nova_regex_Match_nova_regex_MatchFunctionMap_Extension_VTable* vtable;
+	nova_regex_Match_MatchFunctionMap_Extension_VTable* vtable;
 )
 
-void nova_regex_Nova_nova_regex_MatchFunctionMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData);
-nova_regex_Nova_nova_regex_MatchFunctionMap* nova_regex_Nova_nova_regex_MatchFunctionMap_Nova_construct(nova_regex_Nova_nova_regex_MatchFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
-void nova_regex_Nova_nova_regex_MatchFunctionMap_Nova_destroy(nova_regex_Nova_nova_regex_MatchFunctionMap** this, nova_exception_Nova_ExceptionData* exceptionData);
-void nova_regex_Nova_nova_regex_MatchFunctionMap_Nova_this(nova_regex_Nova_nova_regex_MatchFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
-void nova_regex_Nova_nova_regex_MatchFunctionMap_Nova_super(nova_regex_Nova_nova_regex_MatchFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+void nova_regex_Nova_MatchFunctionMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData);
+nova_regex_Nova_MatchFunctionMap* nova_regex_Nova_MatchFunctionMap_Nova_construct(nova_regex_Nova_MatchFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+void nova_regex_Nova_MatchFunctionMap_Nova_destroy(nova_regex_Nova_MatchFunctionMap** this, nova_exception_Nova_ExceptionData* exceptionData);
+void nova_regex_Nova_MatchFunctionMap_Nova_this(nova_regex_Nova_MatchFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+void nova_regex_Nova_MatchFunctionMap_Nova_super(nova_regex_Nova_MatchFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
 
 #endif

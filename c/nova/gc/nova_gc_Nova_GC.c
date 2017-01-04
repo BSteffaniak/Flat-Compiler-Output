@@ -123,28 +123,28 @@ void nova_gc_Nova_GC_Nova_super(nova_gc_Nova_GC* this, nova_exception_Nova_Excep
 {
 }
 
-void nova_gc_Nova_nova_gc_GCFunctionMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData)
+void nova_gc_Nova_GCFunctionMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData)
 {
 	{
 	}
 }
 
-nova_gc_Nova_nova_gc_GCFunctionMap* nova_gc_Nova_nova_gc_GCFunctionMap_Nova_construct(nova_gc_Nova_nova_gc_GCFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+nova_gc_Nova_GCFunctionMap* nova_gc_Nova_GCFunctionMap_Nova_construct(nova_gc_Nova_GCFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
-	CCLASS_NEW(nova_gc_Nova_nova_gc_GCFunctionMap, this,);
-	this->vtable = &nova_gc_GC_nova_gc_GCFunctionMap_Extension_VTable_val;
+	CCLASS_NEW(nova_gc_Nova_GCFunctionMap, this,);
+	this->vtable = &nova_gc_GC_GCFunctionMap_Extension_VTable_val;
 	nova_Nova_Object_Nova_super((nova_Nova_Object*)this, exceptionData);
 	nova_meta_Nova_FunctionMap_Nova_super((nova_meta_Nova_FunctionMap*)this, exceptionData);
-	nova_gc_Nova_nova_gc_GCFunctionMap_Nova_super(this, exceptionData);
+	nova_gc_Nova_GCFunctionMap_Nova_super(this, exceptionData);
 	
 	{
-		nova_gc_Nova_nova_gc_GCFunctionMap_Nova_this(this, exceptionData);
+		nova_gc_Nova_GCFunctionMap_Nova_this(this, exceptionData);
 	}
 	
 	return this;
 }
 
-void nova_gc_Nova_nova_gc_GCFunctionMap_Nova_destroy(nova_gc_Nova_nova_gc_GCFunctionMap** this, nova_exception_Nova_ExceptionData* exceptionData)
+void nova_gc_Nova_GCFunctionMap_Nova_destroy(nova_gc_Nova_GCFunctionMap** this, nova_exception_Nova_ExceptionData* exceptionData)
 {
 	if (!*this)
 	{
@@ -155,11 +155,11 @@ void nova_gc_Nova_nova_gc_GCFunctionMap_Nova_destroy(nova_gc_Nova_nova_gc_GCFunc
 	NOVA_FREE(*this);
 }
 
-void nova_gc_Nova_nova_gc_GCFunctionMap_Nova_this(nova_gc_Nova_nova_gc_GCFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+void nova_gc_Nova_GCFunctionMap_Nova_this(nova_gc_Nova_GCFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
 }
 
-void nova_gc_Nova_nova_gc_GCFunctionMap_Nova_super(nova_gc_Nova_nova_gc_GCFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+void nova_gc_Nova_GCFunctionMap_Nova_super(nova_gc_Nova_GCFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
 }
 

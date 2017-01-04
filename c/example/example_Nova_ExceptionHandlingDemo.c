@@ -123,28 +123,28 @@ void example_Nova_ExceptionHandlingDemo_Nova_super(example_Nova_ExceptionHandlin
 {
 }
 
-void example_Nova_example_ExceptionHandlingDemoFunctionMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData)
+void example_Nova_ExceptionHandlingDemoFunctionMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData)
 {
 	{
 	}
 }
 
-example_Nova_example_ExceptionHandlingDemoFunctionMap* example_Nova_example_ExceptionHandlingDemoFunctionMap_Nova_construct(example_Nova_example_ExceptionHandlingDemoFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+example_Nova_ExceptionHandlingDemoFunctionMap* example_Nova_ExceptionHandlingDemoFunctionMap_Nova_construct(example_Nova_ExceptionHandlingDemoFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
-	CCLASS_NEW(example_Nova_example_ExceptionHandlingDemoFunctionMap, this,);
-	this->vtable = &example_ExceptionHandlingDemo_example_ExceptionHandlingDemoFunctionMap_Extension_VTable_val;
+	CCLASS_NEW(example_Nova_ExceptionHandlingDemoFunctionMap, this,);
+	this->vtable = &example_ExceptionHandlingDemo_ExceptionHandlingDemoFunctionMap_Extension_VTable_val;
 	nova_Nova_Object_Nova_super((nova_Nova_Object*)this, exceptionData);
 	nova_meta_Nova_FunctionMap_Nova_super((nova_meta_Nova_FunctionMap*)this, exceptionData);
-	example_Nova_example_ExceptionHandlingDemoFunctionMap_Nova_super(this, exceptionData);
+	example_Nova_ExceptionHandlingDemoFunctionMap_Nova_super(this, exceptionData);
 	
 	{
-		example_Nova_example_ExceptionHandlingDemoFunctionMap_Nova_this(this, exceptionData);
+		example_Nova_ExceptionHandlingDemoFunctionMap_Nova_this(this, exceptionData);
 	}
 	
 	return this;
 }
 
-void example_Nova_example_ExceptionHandlingDemoFunctionMap_Nova_destroy(example_Nova_example_ExceptionHandlingDemoFunctionMap** this, nova_exception_Nova_ExceptionData* exceptionData)
+void example_Nova_ExceptionHandlingDemoFunctionMap_Nova_destroy(example_Nova_ExceptionHandlingDemoFunctionMap** this, nova_exception_Nova_ExceptionData* exceptionData)
 {
 	if (!*this)
 	{
@@ -155,11 +155,11 @@ void example_Nova_example_ExceptionHandlingDemoFunctionMap_Nova_destroy(example_
 	NOVA_FREE(*this);
 }
 
-void example_Nova_example_ExceptionHandlingDemoFunctionMap_Nova_this(example_Nova_example_ExceptionHandlingDemoFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+void example_Nova_ExceptionHandlingDemoFunctionMap_Nova_this(example_Nova_ExceptionHandlingDemoFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
 }
 
-void example_Nova_example_ExceptionHandlingDemoFunctionMap_Nova_super(example_Nova_example_ExceptionHandlingDemoFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+void example_Nova_ExceptionHandlingDemoFunctionMap_Nova_super(example_Nova_ExceptionHandlingDemoFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
 }
 

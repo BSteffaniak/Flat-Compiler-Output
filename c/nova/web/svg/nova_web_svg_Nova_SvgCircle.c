@@ -96,28 +96,28 @@ void nova_web_svg_Nova_SvgCircle_Nova_super(nova_web_svg_Nova_SvgCircle* this, n
 	this->nova_web_svg_Nova_SvgCircle_Nova_r = 0;
 }
 
-void nova_web_svg_Nova_nova_web_svg_SvgCircleFunctionMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData)
+void nova_web_svg_Nova_SvgCircleFunctionMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData)
 {
 	{
 	}
 }
 
-nova_web_svg_Nova_nova_web_svg_SvgCircleFunctionMap* nova_web_svg_Nova_nova_web_svg_SvgCircleFunctionMap_Nova_construct(nova_web_svg_Nova_nova_web_svg_SvgCircleFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+nova_web_svg_Nova_SvgCircleFunctionMap* nova_web_svg_Nova_SvgCircleFunctionMap_Nova_construct(nova_web_svg_Nova_SvgCircleFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
-	CCLASS_NEW(nova_web_svg_Nova_nova_web_svg_SvgCircleFunctionMap, this,);
-	this->vtable = &nova_web_svg_SvgCircle_nova_web_svg_SvgCircleFunctionMap_Extension_VTable_val;
+	CCLASS_NEW(nova_web_svg_Nova_SvgCircleFunctionMap, this,);
+	this->vtable = &nova_web_svg_SvgCircle_SvgCircleFunctionMap_Extension_VTable_val;
 	nova_Nova_Object_Nova_super((nova_Nova_Object*)this, exceptionData);
 	nova_meta_Nova_FunctionMap_Nova_super((nova_meta_Nova_FunctionMap*)this, exceptionData);
-	nova_web_svg_Nova_nova_web_svg_SvgCircleFunctionMap_Nova_super(this, exceptionData);
+	nova_web_svg_Nova_SvgCircleFunctionMap_Nova_super(this, exceptionData);
 	
 	{
-		nova_web_svg_Nova_nova_web_svg_SvgCircleFunctionMap_Nova_this(this, exceptionData);
+		nova_web_svg_Nova_SvgCircleFunctionMap_Nova_this(this, exceptionData);
 	}
 	
 	return this;
 }
 
-void nova_web_svg_Nova_nova_web_svg_SvgCircleFunctionMap_Nova_destroy(nova_web_svg_Nova_nova_web_svg_SvgCircleFunctionMap** this, nova_exception_Nova_ExceptionData* exceptionData)
+void nova_web_svg_Nova_SvgCircleFunctionMap_Nova_destroy(nova_web_svg_Nova_SvgCircleFunctionMap** this, nova_exception_Nova_ExceptionData* exceptionData)
 {
 	if (!*this)
 	{
@@ -128,11 +128,11 @@ void nova_web_svg_Nova_nova_web_svg_SvgCircleFunctionMap_Nova_destroy(nova_web_s
 	NOVA_FREE(*this);
 }
 
-void nova_web_svg_Nova_nova_web_svg_SvgCircleFunctionMap_Nova_this(nova_web_svg_Nova_nova_web_svg_SvgCircleFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+void nova_web_svg_Nova_SvgCircleFunctionMap_Nova_this(nova_web_svg_Nova_SvgCircleFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
 }
 
-void nova_web_svg_Nova_nova_web_svg_SvgCircleFunctionMap_Nova_super(nova_web_svg_Nova_nova_web_svg_SvgCircleFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+void nova_web_svg_Nova_SvgCircleFunctionMap_Nova_super(nova_web_svg_Nova_SvgCircleFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
 }
 

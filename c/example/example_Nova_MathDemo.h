@@ -2,7 +2,7 @@
 #define FILE_example_Nova_MathDemo_NOVA
 
 typedef struct example_Nova_MathDemo example_Nova_MathDemo;
-typedef struct example_Nova_example_MathDemoFunctionMap example_Nova_example_MathDemoFunctionMap;
+typedef struct example_Nova_MathDemoFunctionMap example_Nova_MathDemoFunctionMap;
 
 
 #include <Nova.h>
@@ -59,15 +59,15 @@ void example_Nova_MathDemo_Nova_super(example_Nova_MathDemo* this, nova_exceptio
 
 CCLASS_CLASS
 (
-	example_Nova_example_MathDemoFunctionMap, 
+	example_Nova_MathDemoFunctionMap, 
 	
-	example_MathDemo_example_MathDemoFunctionMap_Extension_VTable* vtable;
+	example_MathDemo_MathDemoFunctionMap_Extension_VTable* vtable;
 )
 
-void example_Nova_example_MathDemoFunctionMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData);
-example_Nova_example_MathDemoFunctionMap* example_Nova_example_MathDemoFunctionMap_Nova_construct(example_Nova_example_MathDemoFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
-void example_Nova_example_MathDemoFunctionMap_Nova_destroy(example_Nova_example_MathDemoFunctionMap** this, nova_exception_Nova_ExceptionData* exceptionData);
-void example_Nova_example_MathDemoFunctionMap_Nova_this(example_Nova_example_MathDemoFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
-void example_Nova_example_MathDemoFunctionMap_Nova_super(example_Nova_example_MathDemoFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+void example_Nova_MathDemoFunctionMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData);
+example_Nova_MathDemoFunctionMap* example_Nova_MathDemoFunctionMap_Nova_construct(example_Nova_MathDemoFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+void example_Nova_MathDemoFunctionMap_Nova_destroy(example_Nova_MathDemoFunctionMap** this, nova_exception_Nova_ExceptionData* exceptionData);
+void example_Nova_MathDemoFunctionMap_Nova_this(example_Nova_MathDemoFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+void example_Nova_MathDemoFunctionMap_Nova_super(example_Nova_MathDemoFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
 
 #endif

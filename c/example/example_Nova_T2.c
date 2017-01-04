@@ -80,28 +80,28 @@ void example_Nova_T2_Nova_super(example_Nova_T2* this, nova_exception_Nova_Excep
 {
 }
 
-void example_Nova_example_T2FunctionMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData)
+void example_Nova_T2FunctionMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData)
 {
 	{
 	}
 }
 
-example_Nova_example_T2FunctionMap* example_Nova_example_T2FunctionMap_Nova_construct(example_Nova_example_T2FunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+example_Nova_T2FunctionMap* example_Nova_T2FunctionMap_Nova_construct(example_Nova_T2FunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
-	CCLASS_NEW(example_Nova_example_T2FunctionMap, this,);
-	this->vtable = &example_T2_example_T2FunctionMap_Extension_VTable_val;
+	CCLASS_NEW(example_Nova_T2FunctionMap, this,);
+	this->vtable = &example_T2_T2FunctionMap_Extension_VTable_val;
 	nova_Nova_Object_Nova_super((nova_Nova_Object*)this, exceptionData);
 	nova_meta_Nova_FunctionMap_Nova_super((nova_meta_Nova_FunctionMap*)this, exceptionData);
-	example_Nova_example_T2FunctionMap_Nova_super(this, exceptionData);
+	example_Nova_T2FunctionMap_Nova_super(this, exceptionData);
 	
 	{
-		example_Nova_example_T2FunctionMap_Nova_this(this, exceptionData);
+		example_Nova_T2FunctionMap_Nova_this(this, exceptionData);
 	}
 	
 	return this;
 }
 
-void example_Nova_example_T2FunctionMap_Nova_destroy(example_Nova_example_T2FunctionMap** this, nova_exception_Nova_ExceptionData* exceptionData)
+void example_Nova_T2FunctionMap_Nova_destroy(example_Nova_T2FunctionMap** this, nova_exception_Nova_ExceptionData* exceptionData)
 {
 	if (!*this)
 	{
@@ -112,11 +112,11 @@ void example_Nova_example_T2FunctionMap_Nova_destroy(example_Nova_example_T2Func
 	NOVA_FREE(*this);
 }
 
-void example_Nova_example_T2FunctionMap_Nova_this(example_Nova_example_T2FunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+void example_Nova_T2FunctionMap_Nova_this(example_Nova_T2FunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
 }
 
-void example_Nova_example_T2FunctionMap_Nova_super(example_Nova_example_T2FunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+void example_Nova_T2FunctionMap_Nova_super(example_Nova_T2FunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
 }
 

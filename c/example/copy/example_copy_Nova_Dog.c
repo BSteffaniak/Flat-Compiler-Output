@@ -74,28 +74,28 @@ void example_copy_Nova_Dog_Nova_super(example_copy_Nova_Dog* this, nova_exceptio
 {
 }
 
-void example_copy_Nova_example_copy_DogFunctionMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData)
+void example_copy_Nova_DogFunctionMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData)
 {
 	{
 	}
 }
 
-example_copy_Nova_example_copy_DogFunctionMap* example_copy_Nova_example_copy_DogFunctionMap_Nova_construct(example_copy_Nova_example_copy_DogFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+example_copy_Nova_DogFunctionMap* example_copy_Nova_DogFunctionMap_Nova_construct(example_copy_Nova_DogFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
-	CCLASS_NEW(example_copy_Nova_example_copy_DogFunctionMap, this,);
-	this->vtable = &example_copy_Dog_example_copy_DogFunctionMap_Extension_VTable_val;
+	CCLASS_NEW(example_copy_Nova_DogFunctionMap, this,);
+	this->vtable = &example_copy_Dog_DogFunctionMap_Extension_VTable_val;
 	nova_Nova_Object_Nova_super((nova_Nova_Object*)this, exceptionData);
 	nova_meta_Nova_FunctionMap_Nova_super((nova_meta_Nova_FunctionMap*)this, exceptionData);
-	example_copy_Nova_example_copy_DogFunctionMap_Nova_super(this, exceptionData);
+	example_copy_Nova_DogFunctionMap_Nova_super(this, exceptionData);
 	
 	{
-		example_copy_Nova_example_copy_DogFunctionMap_Nova_this(this, exceptionData);
+		example_copy_Nova_DogFunctionMap_Nova_this(this, exceptionData);
 	}
 	
 	return this;
 }
 
-void example_copy_Nova_example_copy_DogFunctionMap_Nova_destroy(example_copy_Nova_example_copy_DogFunctionMap** this, nova_exception_Nova_ExceptionData* exceptionData)
+void example_copy_Nova_DogFunctionMap_Nova_destroy(example_copy_Nova_DogFunctionMap** this, nova_exception_Nova_ExceptionData* exceptionData)
 {
 	if (!*this)
 	{
@@ -106,11 +106,11 @@ void example_copy_Nova_example_copy_DogFunctionMap_Nova_destroy(example_copy_Nov
 	NOVA_FREE(*this);
 }
 
-void example_copy_Nova_example_copy_DogFunctionMap_Nova_this(example_copy_Nova_example_copy_DogFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+void example_copy_Nova_DogFunctionMap_Nova_this(example_copy_Nova_DogFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
 }
 
-void example_copy_Nova_example_copy_DogFunctionMap_Nova_super(example_copy_Nova_example_copy_DogFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+void example_copy_Nova_DogFunctionMap_Nova_super(example_copy_Nova_DogFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
 }
 
