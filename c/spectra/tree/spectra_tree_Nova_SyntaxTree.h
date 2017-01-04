@@ -69,7 +69,7 @@ CCLASS_CLASS
 	spectra_tree_nodes_Nova_Program* spectra_tree_Nova_SyntaxTree_Nova_root;
 	char spectra_tree_Nova_SyntaxTree_Nova_phase;
 	spectra_Nova_Spectra* spectra_tree_Nova_SyntaxTree_Nova_compiler;
-	struct Private* prv;
+	struct Private_spectra_tree_Nova_SyntaxTree* prv;
 )
 
 void spectra_tree_Nova_SyntaxTree_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData);

@@ -49,7 +49,7 @@ CCLASS_CLASS
 	stabilitytest_Nova_StabilityExceptionHandler, 
 	
 	stabilitytest_StabilityExceptionHandler_Extension_VTable* vtable;
-	struct Private* prv;
+	struct Private_stabilitytest_Nova_StabilityExceptionHandler* prv;
 )
 
 void stabilitytest_Nova_StabilityExceptionHandler_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData);

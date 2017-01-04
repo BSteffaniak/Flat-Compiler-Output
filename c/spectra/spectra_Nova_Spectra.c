@@ -72,6 +72,7 @@ typedef struct
 
 CCLASS_PRIVATE
 (
+	spectra_Nova_Spectra,
 	nova_datastruct_list_Nova_Array* spectra_Nova_Spectra_Nova_files;
 	
 )

@@ -40,6 +40,7 @@
 
 CCLASS_PRIVATE
 (
+	spectra_tree_Nova_StatementIterator,
 	nova_datastruct_list_Nova_Stack* spectra_tree_Nova_StatementIterator_Nova_parents;
 	
 )

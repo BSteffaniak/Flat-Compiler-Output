@@ -56,7 +56,7 @@ CCLASS_CLASS
 	char spectra_tree_Nova_StatementIterator_Nova_endsScope;
 	int spectra_tree_Nova_StatementIterator_Nova_scopesEnded;
 	int spectra_tree_Nova_StatementIterator_Nova_position;
-	struct Private* prv;
+	struct Private_spectra_tree_Nova_StatementIterator* prv;
 )
 
 void spectra_tree_Nova_StatementIterator_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData);

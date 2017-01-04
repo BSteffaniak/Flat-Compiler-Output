@@ -50,7 +50,7 @@ CCLASS_CLASS
 	nova_network_Nova_NetworkOutputStream, 
 	
 	nova_network_NetworkOutputStream_Extension_VTable* vtable;
-	struct Private* prv;
+	struct Private_nova_network_Nova_NetworkOutputStream* prv;
 )
 
 void nova_network_Nova_NetworkOutputStream_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData);

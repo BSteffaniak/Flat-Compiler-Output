@@ -891,9 +891,6 @@ nova_env novaEnv = {
 {
 &nova_meta_Nova_nova_meta_FunctionMapFunctionMap_Nova_construct,
 },
-{
-&nova_meta_Nova_ModifierFdunctionMap_Nova_construct,
-},
 
 {
 &nova_meta_Nova_GenericArgument_Nova_construct,
@@ -2499,6 +2496,26 @@ nova_env novaEnv = {
 },
 {
 &stabilitytest_Nova_stabilitytest_FileStabilityFunctionMap_Nova_construct,
+},
+
+{
+&stabilitytest_Nova_InnerClassStability_Nova_construct,
+},
+{
+&stabilitytest_Nova_MyOuter_Nova_test,
+&stabilitytest_Nova_MyOuter_Nova_construct,
+},
+{
+&stabilitytest_Nova_stabilitytest_InnerClassStabilityFunctionMap_Nova_construct,
+},
+{
+&stabilitytest_Nova_stabilitytest_InnerClassStability_MyOuterFunctionMap_Nova_construct,
+},
+{
+&stabilitytest_Nova_MyInner_Nova_construct,
+},
+{
+&stabilitytest_Nova_stabilitytest_InnerClassStability_MyInnerFunctionMap_Nova_construct,
 },
 
 {

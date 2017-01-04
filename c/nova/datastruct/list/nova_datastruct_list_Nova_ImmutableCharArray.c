@@ -38,6 +38,7 @@
 
 CCLASS_PRIVATE
 (
+	nova_datastruct_list_Nova_ImmutableCharArray,
 	nova_datastruct_list_Nova_CharArray* nova_datastruct_list_Nova_ImmutableCharArray_Nova_array;
 	
 )

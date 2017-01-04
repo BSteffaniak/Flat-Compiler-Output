@@ -64,6 +64,7 @@ typedef struct
 
 CCLASS_PRIVATE
 (
+	nova_datastruct_Nova_HashMap,
 	nova_datastruct_list_Nova_Array* nova_datastruct_Nova_HashMap_Nova_buckets;
 	int nova_datastruct_Nova_HashMap_Nova_bucketSize;
 	

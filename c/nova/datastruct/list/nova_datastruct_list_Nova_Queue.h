@@ -52,7 +52,7 @@ CCLASS_CLASS
 	int nova_datastruct_list_Nova_Queue_Nova_count;
 	nova_Nova_Object* nova_datastruct_list_Nova_Queue_Nova_first;
 	nova_Nova_Object* nova_datastruct_list_Nova_Queue_Nova_last;
-	struct Private* prv;
+	struct Private_nova_datastruct_list_Nova_Queue* prv;
 )
 
 void nova_datastruct_list_Nova_Queue_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData);

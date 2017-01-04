@@ -42,6 +42,7 @@
 
 CCLASS_PRIVATE
 (
+	nova_network_Nova_ConnectionSocket,
 	nova_datastruct_list_Nova_Queue* nova_network_Nova_ConnectionSocket_Nova_inputBuffer;
 	SOCKET_ID_TYPE nova_network_Nova_ConnectionSocket_Nova_socket;
 	

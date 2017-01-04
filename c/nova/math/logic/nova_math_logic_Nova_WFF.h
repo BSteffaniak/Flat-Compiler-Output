@@ -53,7 +53,7 @@ CCLASS_CLASS
 	nova_math_logic_Nova_WFF, 
 	
 	nova_math_logic_WFF_Extension_VTable* vtable;
-	struct Private* prv;
+	struct Private_nova_math_logic_Nova_WFF* prv;
 )
 
 void nova_math_logic_Nova_WFF_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData);

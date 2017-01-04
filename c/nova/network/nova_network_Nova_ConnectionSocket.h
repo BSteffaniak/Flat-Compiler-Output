@@ -58,7 +58,7 @@ CCLASS_CLASS
 	char nova_network_Nova_ConnectionSocket_Nova_connected;
 	nova_io_Nova_InputStream* nova_network_Nova_ConnectionSocket_Nova_in;
 	nova_io_Nova_OutputStream* nova_network_Nova_ConnectionSocket_Nova_out;
-	struct Private* prv;
+	struct Private_nova_network_Nova_ConnectionSocket* prv;
 )
 
 void nova_network_Nova_ConnectionSocket_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData);

@@ -75,6 +75,7 @@ typedef struct
 
 CCLASS_PRIVATE
 (
+	nova_math_Nova_Matrix,
 	nova_datastruct_list_Nova_Array* nova_math_Nova_Matrix_Nova_data;
 	
 )

@@ -48,7 +48,7 @@ CCLASS_CLASS
 	nova_math_Nova_NumericTree, 
 	
 	nova_math_NumericTree_Extension_VTable* vtable;
-	struct Private* prv;
+	struct Private_nova_math_Nova_NumericTree* prv;
 )
 
 void nova_math_Nova_NumericTree_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData);

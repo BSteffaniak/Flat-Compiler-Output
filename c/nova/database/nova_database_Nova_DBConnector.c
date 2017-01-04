@@ -38,6 +38,7 @@
 
 CCLASS_PRIVATE
 (
+	nova_database_Nova_DBConnector,
 	MYSQL* nova_database_Nova_DBConnector_Nova_mysql;
 	MYSQL_RES* nova_database_Nova_DBConnector_Nova_result;
 	

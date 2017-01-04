@@ -37,6 +37,7 @@
 
 CCLASS_PRIVATE
 (
+	stabilitytest_Nova_ThreadImplementation,
 	void (*nova_thread_Nova_Thread_Nova_action)(void*, nova_exception_Nova_ExceptionData*, void*);
 	void* nova_thread_Nova_Thread_context_Nova_action;
 	void* nova_thread_Nova_Thread_reference_Nova_action;

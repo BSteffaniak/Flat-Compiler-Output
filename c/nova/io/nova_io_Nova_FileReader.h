@@ -50,7 +50,7 @@ CCLASS_CLASS
 	
 	nova_io_FileReader_Extension_VTable* vtable;
 	nova_io_Nova_File* nova_io_Nova_FileReader_Nova_file;
-	struct Private* prv;
+	struct Private_nova_io_Nova_FileReader* prv;
 )
 
 void nova_io_Nova_FileReader_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData);

@@ -34,6 +34,7 @@
 #include <stabilitytest/stabilitytest_Nova_ClosureStability.h>
 #include <stabilitytest/stabilitytest_Nova_ExceptionStability.h>
 #include <stabilitytest/stabilitytest_Nova_FileStability.h>
+#include <stabilitytest/stabilitytest_Nova_InnerClassStability.h>
 #include <stabilitytest/stabilitytest_Nova_LambdaStability.h>
 #include <stabilitytest/stabilitytest_Nova_NetworkStability.h>
 #include <stabilitytest/stabilitytest_Nova_PolymorphismStability.h>
@@ -119,6 +120,7 @@ void stabilitytest_Nova_StabilityTest_Nova_test(stabilitytest_Nova_StabilityTest
 			stabilitytest_Nova_AssignmentStability_Nova_test(stabilitytest_Nova_AssignmentStability_Nova_construct(0, exceptionData, this), exceptionData);
 			stabilitytest_Nova_RegexStability_Nova_test(stabilitytest_Nova_RegexStability_Nova_construct(0, exceptionData, this), exceptionData);
 			stabilitytest_Nova_StaticImportStability_Nova_test(stabilitytest_Nova_StaticImportStability_Nova_construct(0, exceptionData, this), exceptionData);
+			stabilitytest_Nova_InnerClassStability_Nova_test(stabilitytest_Nova_InnerClassStability_Nova_construct(0, exceptionData, this), exceptionData);
 			stabilitytest_Nova_TimeStability_Nova_test(stabilitytest_Nova_TimeStability_Nova_construct(0, exceptionData, this), exceptionData);
 			stabilitytest_Nova_ThreadStability_Nova_test(stabilitytest_Nova_ThreadStability_Nova_construct(0, exceptionData, this), exceptionData);
 			stabilitytest_Nova_FileStability_Nova_test(stabilitytest_Nova_FileStability_Nova_construct(0, exceptionData, this), exceptionData);

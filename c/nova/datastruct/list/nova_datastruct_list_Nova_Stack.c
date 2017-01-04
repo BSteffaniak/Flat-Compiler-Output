@@ -39,6 +39,7 @@
 
 CCLASS_PRIVATE
 (
+	nova_datastruct_list_Nova_Stack,
 	nova_datastruct_list_Nova_ListNode* nova_datastruct_list_Nova_Stack_Nova_top;
 	
 )

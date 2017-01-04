@@ -36,6 +36,7 @@
 
 CCLASS_PRIVATE
 (
+	stabilitytest_Nova_ClassWithProperties,
 	int stabilitytest_Nova_ClassWithProperties_Nova_privateProp1;
 	int stabilitytest_Nova_ClassWithProperties_Nova_privateProp2;
 	

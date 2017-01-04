@@ -83,7 +83,7 @@ CCLASS_CLASS
 	spectra_tree_nodes_Nova_Node* spectra_tree_nodes_Nova_Node_Nova_parent;
 	nova_datastruct_list_Nova_Array* spectra_tree_nodes_Nova_NodeList_Nova_children;
 	nova_datastruct_list_Nova_Array* spectra_tree_nodes_Nova_Scope_Nova_declarations;
-	struct Private* prv;
+	struct Private_spectra_tree_nodes_Nova_Scope* prv;
 )
 
 void spectra_tree_nodes_Nova_Scope_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData);

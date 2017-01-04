@@ -37,6 +37,7 @@
 
 CCLASS_PRIVATE
 (
+	nova_math_logic_Nova_StatementLetter,
 	nova_Nova_String* nova_math_logic_Nova_StatementLetter_Nova_letter;
 	nova_Nova_String* nova_math_logic_Nova_StatementLetter_Nova_representation;
 	

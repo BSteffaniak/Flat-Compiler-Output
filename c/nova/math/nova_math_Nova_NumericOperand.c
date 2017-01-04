@@ -36,6 +36,7 @@
 
 CCLASS_PRIVATE
 (
+	nova_math_Nova_NumericOperand,
 	nova_Nova_Object* nova_math_Nova_NumericOperand_Nova_data;
 	
 )

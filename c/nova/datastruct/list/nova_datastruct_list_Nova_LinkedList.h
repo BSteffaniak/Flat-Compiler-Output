@@ -81,7 +81,7 @@ CCLASS_CLASS
 	nova_datastruct_list_LinkedList_Extension_VTable* vtable;
 	int nova_datastruct_list_Nova_LinkedList_Nova_size;
 	int nova_datastruct_list_Nova_LinkedList_Nova_count;
-	struct Private* prv;
+	struct Private_nova_datastruct_list_Nova_LinkedList* prv;
 )
 
 void nova_datastruct_list_Nova_LinkedList_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData);

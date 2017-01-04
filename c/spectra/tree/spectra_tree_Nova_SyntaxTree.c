@@ -63,6 +63,7 @@ typedef struct
 
 CCLASS_PRIVATE
 (
+	spectra_tree_Nova_SyntaxTree,
 	nova_datastruct_list_Nova_Stack* spectra_tree_Nova_SyntaxTree_Nova_pendingAnnotations;
 	nova_datastruct_list_Nova_Stack* spectra_tree_Nova_SyntaxTree_Nova_parents;
 	nova_datastruct_list_Nova_Array* spectra_tree_Nova_SyntaxTree_Nova_fileGroups;

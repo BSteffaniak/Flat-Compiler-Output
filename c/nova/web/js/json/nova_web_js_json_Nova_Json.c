@@ -42,6 +42,7 @@
 
 CCLASS_PRIVATE
 (
+	nova_web_js_json_Nova_Json,
 	nova_datastruct_list_Nova_Array* nova_datastruct_Nova_HashMap_Nova_buckets;
 	int nova_datastruct_Nova_HashMap_Nova_bucketSize;
 	

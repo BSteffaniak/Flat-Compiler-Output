@@ -38,6 +38,7 @@
 
 CCLASS_PRIVATE
 (
+	stabilitytest_Nova_StabilityExceptionHandler,
 	stabilitytest_Nova_StabilityTest* stabilitytest_Nova_StabilityExceptionHandler_Nova_program;
 	
 )

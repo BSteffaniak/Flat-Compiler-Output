@@ -38,6 +38,7 @@
 
 CCLASS_PRIVATE
 (
+	nova_datastruct_list_Nova_DoubleArrayIterator,
 	nova_datastruct_list_Nova_DoubleArray* nova_datastruct_list_Nova_DoubleArrayIterator_Nova_array;
 	
 )

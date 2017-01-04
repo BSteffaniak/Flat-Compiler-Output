@@ -55,7 +55,7 @@ CCLASS_CLASS
 	
 	nova_thread_Thread_Extension_VTable* vtable;
 	char nova_thread_Nova_Thread_Nova_active;
-	struct Private* prv;
+	struct Private_nova_thread_Nova_Thread* prv;
 )
 extern nova_datastruct_list_Nova_ImmutableArray* nova_thread_Nova_Thread_Nova_ACTIVE_THREADS;
 

@@ -42,6 +42,7 @@
 
 CCLASS_PRIVATE
 (
+	nova_math_logic_Nova_WFF,
 	nova_datastruct_list_Nova_Array* nova_math_logic_Nova_WFF_Nova_hypotheses;
 	nova_math_logic_Nova_Conclusion* nova_math_logic_Nova_WFF_Nova_conclusion;
 	nova_Nova_String* nova_math_logic_Nova_WFF_Nova_wff;

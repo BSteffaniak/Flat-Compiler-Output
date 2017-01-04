@@ -50,7 +50,7 @@ CCLASS_CLASS
 	
 	stabilitytest_ClosureStability_Extension_VTable* vtable;
 	stabilitytest_Nova_StabilityTest* stabilitytest_Nova_StabilityTestCase_Nova_program;
-	struct Private* prv;
+	struct Private_stabilitytest_Nova_ClosureStability* prv;
 )
 
 void stabilitytest_Nova_ClosureStability_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData);

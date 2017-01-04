@@ -38,6 +38,7 @@
 
 CCLASS_PRIVATE
 (
+	nova_datastruct_list_Nova_CharArrayIterator,
 	nova_datastruct_list_Nova_CharArray* nova_datastruct_list_Nova_CharArrayIterator_Nova_array;
 	int nova_datastruct_list_Nova_CharArrayIterator_Nova_indexSize;
 	

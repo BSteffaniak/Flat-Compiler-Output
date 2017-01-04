@@ -38,6 +38,7 @@
 
 CCLASS_PRIVATE
 (
+	nova_io_Nova_FileReader,
 	FILE* nova_io_Nova_FileReader_Nova_fp;
 	
 )

@@ -38,6 +38,7 @@
 
 CCLASS_PRIVATE
 (
+	example_network_Nova_ConnectionThread,
 	void (*nova_thread_Nova_Thread_Nova_action)(void*, nova_exception_Nova_ExceptionData*, void*);
 	void* nova_thread_Nova_Thread_context_Nova_action;
 	void* nova_thread_Nova_Thread_reference_Nova_action;

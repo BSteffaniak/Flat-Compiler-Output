@@ -44,6 +44,7 @@ typedef struct
 
 CCLASS_PRIVATE
 (
+	nova_datastruct_list_Nova_LinkedList,
 	nova_datastruct_list_Nova_ListNode* nova_datastruct_list_Nova_LinkedList_Nova_start;
 	nova_datastruct_list_Nova_ListNode* nova_datastruct_list_Nova_LinkedList_Nova_current;
 	

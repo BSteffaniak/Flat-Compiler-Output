@@ -58,7 +58,7 @@ CCLASS_CLASS
 	nova_datastruct_list_Nova_Array* spectra_Nova_Spectra_Nova_errors;
 	nova_datastruct_list_Nova_Array* spectra_Nova_Spectra_Nova_warnings;
 	nova_datastruct_list_Nova_Array* spectra_Nova_Spectra_Nova_info;
-	struct Private* prv;
+	struct Private_spectra_Nova_Spectra* prv;
 )
 extern char spectra_Nova_Spectra_Nova_DEBUG;
 extern char spectra_Nova_Spectra_Nova_testClasses;

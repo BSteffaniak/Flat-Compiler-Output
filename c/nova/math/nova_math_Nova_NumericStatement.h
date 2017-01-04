@@ -49,7 +49,7 @@ CCLASS_CLASS
 	nova_math_Nova_NumericStatement, 
 	
 	nova_math_NumericStatement_Extension_VTable* vtable;
-	struct Private* prv;
+	struct Private_nova_math_Nova_NumericStatement* prv;
 )
 
 void nova_math_Nova_NumericStatement_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData);

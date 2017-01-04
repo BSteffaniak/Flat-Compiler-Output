@@ -83,7 +83,7 @@ CCLASS_CLASS
 	nova_datastruct_list_Nova_Iterator* nova_datastruct_Nova_HashSet_Nova_iterator;
 	nova_Nova_Object* nova_datastruct_Nova_HashSet_Nova_first;
 	nova_Nova_Object* nova_datastruct_Nova_HashSet_Nova_last;
-	struct Private* prv;
+	struct Private_nova_datastruct_Nova_HashSet* prv;
 )
 
 void nova_datastruct_Nova_HashSet_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData);

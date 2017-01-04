@@ -57,7 +57,7 @@ CCLASS_CLASS
 	nova_datastruct_list_Nova_Iterator* nova_datastruct_Nova_HashMap_Nova_iterator;
 	nova_datastruct_Nova_Pair* nova_datastruct_Nova_HashMap_Nova_first;
 	nova_datastruct_Nova_Pair* nova_datastruct_Nova_HashMap_Nova_last;
-	struct Private* prv;
+	struct Private_nova_web_js_json_Nova_Json* prv;
 )
 
 void nova_web_js_json_Nova_Json_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData);

@@ -50,7 +50,7 @@ CCLASS_CLASS
 	nova_math_Nova_NumericOperation, 
 	
 	nova_math_NumericOperation_Extension_VTable* vtable;
-	struct Private* prv;
+	struct Private_nova_math_Nova_NumericOperation* prv;
 )
 
 void nova_math_Nova_NumericOperation_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData);

@@ -40,6 +40,7 @@
 
 CCLASS_PRIVATE
 (
+	nova_network_Nova_ClientSocket,
 	SOCKET_ID_TYPE nova_network_Nova_ClientSocket_Nova_socket;
 	
 )

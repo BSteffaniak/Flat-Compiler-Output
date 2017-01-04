@@ -38,6 +38,7 @@
 
 CCLASS_PRIVATE
 (
+	nova_math_logic_Nova_LogicalStatement,
 	nova_datastruct_list_Nova_Array* nova_math_logic_Nova_LogicalStatement_Nova_components;
 	nova_Nova_String* nova_math_logic_Nova_LogicalStatement_Nova_statement;
 	

@@ -50,7 +50,7 @@ CCLASS_CLASS
 	
 	example_network_ConnectionThread_Extension_VTable* vtable;
 	char nova_thread_Nova_Thread_Nova_active;
-	struct Private* prv;
+	struct Private_example_network_Nova_ConnectionThread* prv;
 )
 
 void example_network_Nova_ConnectionThread_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData);

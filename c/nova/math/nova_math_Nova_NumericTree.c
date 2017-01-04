@@ -37,6 +37,7 @@
 
 CCLASS_PRIVATE
 (
+	nova_math_Nova_NumericTree,
 	nova_math_Nova_NumericOperation* nova_math_Nova_NumericTree_Nova_root;
 	
 )

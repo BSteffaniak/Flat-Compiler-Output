@@ -52,7 +52,7 @@ CCLASS_CLASS
 	
 	stabilitytest_ClientThread_Extension_VTable* vtable;
 	char nova_thread_Nova_Thread_Nova_active;
-	struct Private* prv;
+	struct Private_stabilitytest_Nova_ClientThread* prv;
 )
 
 void stabilitytest_Nova_ClientThread_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData);

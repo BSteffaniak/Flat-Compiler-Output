@@ -68,7 +68,7 @@ CCLASS_CLASS
 	
 	nova_datastruct_list_ImmutableArray_Extension_VTable* vtable;
 	int nova_datastruct_list_Nova_ImmutableArray_Nova_count;
-	struct Private* prv;
+	struct Private_nova_datastruct_list_Nova_ImmutableArray* prv;
 )
 
 void nova_datastruct_list_Nova_ImmutableArray_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData);

@@ -52,6 +52,7 @@ typedef void (*stabilitytest_Nova_ClosureStability_closure12_Nova_closure)(void*
 
 CCLASS_PRIVATE
 (
+	stabilitytest_Nova_ClosureStability,
 	int stabilitytest_Nova_ClosureStability_Nova_number;
 	
 )

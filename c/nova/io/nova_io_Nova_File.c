@@ -52,6 +52,7 @@ typedef struct
 
 CCLASS_PRIVATE
 (
+	nova_io_Nova_File,
 	tinydir_file* nova_io_Nova_File_Nova_file;
 	
 )

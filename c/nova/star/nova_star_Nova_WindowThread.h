@@ -51,7 +51,7 @@ CCLASS_CLASS
 	
 	nova_star_WindowThread_Extension_VTable* vtable;
 	char nova_thread_Nova_Thread_Nova_active;
-	struct Private* prv;
+	struct Private_nova_star_Nova_WindowThread* prv;
 )
 
 void nova_star_Nova_WindowThread_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData);

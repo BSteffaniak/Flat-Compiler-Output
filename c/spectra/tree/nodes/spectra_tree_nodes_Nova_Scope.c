@@ -76,6 +76,7 @@ typedef struct
 
 CCLASS_PRIVATE
 (
+	spectra_tree_nodes_Nova_Scope,
 	int spectra_tree_nodes_Nova_Scope_Nova_id;
 	
 )

@@ -4,6 +4,6 @@
 #include <Nova.h>
 #include <InterfaceVTable.h>
 #include <ExceptionHandler.h>
-#include <spectra/spectra_Nova_Spectra.h>
+#include <stabilitytest/stabilitytest_Nova_StabilityTest.h>
 
 #endif

@@ -60,7 +60,7 @@ CCLASS_CLASS
 	char nova_io_Nova_File_Nova_exists;
 	nova_datastruct_list_Nova_Array* nova_io_Nova_File_Nova_files;
 	int nova_io_Nova_File_Nova_maxOpenFiles;
-	struct Private* prv;
+	struct Private_nova_io_Nova_File* prv;
 )
 
 void nova_io_Nova_File_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData);

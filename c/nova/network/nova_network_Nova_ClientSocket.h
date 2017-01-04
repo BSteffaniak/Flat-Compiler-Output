@@ -54,7 +54,7 @@ CCLASS_CLASS
 	nova_Nova_String* nova_network_Nova_Socket_Nova_ip;
 	int nova_network_Nova_Socket_Nova_port;
 	nova_network_Nova_ConnectionSocket* nova_network_Nova_ClientSocket_Nova_connection;
-	struct Private* prv;
+	struct Private_nova_network_Nova_ClientSocket* prv;
 )
 
 void nova_network_Nova_ClientSocket_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData);

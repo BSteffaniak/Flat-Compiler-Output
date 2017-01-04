@@ -39,6 +39,7 @@
 
 CCLASS_PRIVATE
 (
+	nova_network_Nova_NetworkInputStream,
 	nova_network_Nova_ConnectionSocket* nova_network_Nova_NetworkInputStream_Nova_socket;
 	
 )

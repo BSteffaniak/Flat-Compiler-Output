@@ -52,6 +52,7 @@ typedef struct
 
 CCLASS_PRIVATE
 (
+	nova_datastruct_Nova_ImmutableHashMap,
 	nova_datastruct_Nova_HashMap* nova_datastruct_Nova_ImmutableHashMap_Nova_map;
 	
 )

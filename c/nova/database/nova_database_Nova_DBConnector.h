@@ -50,7 +50,7 @@ CCLASS_CLASS
 	
 	nova_database_DBConnector_Extension_VTable* vtable;
 	nova_Nova_String* nova_database_Nova_DBConnector_Nova_error;
-	struct Private* prv;
+	struct Private_nova_database_Nova_DBConnector* prv;
 )
 
 void nova_database_Nova_DBConnector_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData);

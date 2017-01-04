@@ -39,6 +39,7 @@
 
 CCLASS_PRIVATE
 (
+	nova_io_Nova_FileWriter,
 	FILE* nova_io_Nova_FileWriter_Nova_fp;
 	
 )

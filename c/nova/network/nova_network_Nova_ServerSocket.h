@@ -55,7 +55,7 @@ CCLASS_CLASS
 	int nova_network_Nova_Socket_Nova_port;
 	char nova_network_Nova_ServerSocket_Nova_open;
 	nova_datastruct_list_Nova_Array* nova_network_Nova_ServerSocket_Nova_requests;
-	struct Private* prv;
+	struct Private_nova_network_Nova_ServerSocket* prv;
 )
 
 void nova_network_Nova_ServerSocket_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData);

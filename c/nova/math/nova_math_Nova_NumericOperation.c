@@ -39,6 +39,7 @@
 
 CCLASS_PRIVATE
 (
+	nova_math_Nova_NumericOperation,
 	nova_Nova_Object* nova_math_Nova_NumericOperand_Nova_data;
 	
 	nova_math_Nova_NumericOperand* nova_math_Nova_NumericOperation_Nova_leftOperand;

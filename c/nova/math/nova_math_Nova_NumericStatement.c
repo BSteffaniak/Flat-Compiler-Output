@@ -38,6 +38,7 @@
 
 CCLASS_PRIVATE
 (
+	nova_math_Nova_NumericStatement,
 	nova_math_Nova_NumericTree* nova_math_Nova_NumericStatement_Nova_tree;
 	
 )

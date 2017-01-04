@@ -66,7 +66,7 @@ CCLASS_CLASS
 	nova_datastruct_list_Nova_ImmutableCharArray, 
 	
 	nova_datastruct_list_ImmutableCharArray_Extension_VTable* vtable;
-	struct Private* prv;
+	struct Private_nova_datastruct_list_Nova_ImmutableCharArray* prv;
 )
 
 void nova_datastruct_list_Nova_ImmutableCharArray_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData);

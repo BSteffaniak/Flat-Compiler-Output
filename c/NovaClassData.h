@@ -358,6 +358,7 @@ extern example_vtable_Polygon example_vtable_Polygon_value_default;
 #include <stabilitytest/stabilitytest_Nova_ClosureStability.h>
 #include <stabilitytest/stabilitytest_Nova_ExceptionStability.h>
 #include <stabilitytest/stabilitytest_Nova_FileStability.h>
+#include <stabilitytest/stabilitytest_Nova_InnerClassStability.h>
 #include <stabilitytest/stabilitytest_Nova_LambdaStability.h>
 #include <stabilitytest/stabilitytest_Nova_NetworkStability.h>
 #include <stabilitytest/stabilitytest_Nova_Node.h>

@@ -83,7 +83,7 @@ CCLASS_CLASS
 	nova_datastruct_list_Nova_Iterator* nova_datastruct_Nova_ImmutableHashMap_Nova_iterator;
 	nova_datastruct_Nova_Pair* nova_datastruct_Nova_ImmutableHashMap_Nova_first;
 	nova_datastruct_Nova_Pair* nova_datastruct_Nova_ImmutableHashMap_Nova_last;
-	struct Private* prv;
+	struct Private_nova_datastruct_Nova_ImmutableHashMap* prv;
 )
 
 void nova_datastruct_Nova_ImmutableHashMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData);
