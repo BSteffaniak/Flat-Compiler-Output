@@ -32,6 +32,7 @@
 #include <spectra/tree/nodes/spectra_tree_nodes_Nova_Node.h>
 #include <spectra/util/spectra_util_Nova_Location.h>
 #include <spectra/tree/nodes/annotations/spectra_tree_nodes_annotations_Nova_Annotation.h>
+#include <spectra/tree/nodes/annotations/spectra_tree_nodes_annotations_Nova_Modifier.h>
 #include <spectra/tree/nodes/annotations/spectra_tree_nodes_annotations_Nova_AbstractAnnotation.h>
 #include <spectra/tree/nodes/annotations/spectra_tree_nodes_annotations_Nova_AutoFinalAnnotation.h>
 #include <spectra/tree/nodes/annotations/spectra_tree_nodes_annotations_Nova_AutoPureAnnotation.h>
@@ -98,6 +99,7 @@ void spectra_tree_nodes_annotations_Nova_ImmutableAnnotation_Nova_destroy(spectr
 		return;
 	}
 	
+	nova_Nova_String_Nova_destroy(&(*this)->spectra_tree_nodes_annotations_Nova_ImmutableAnnotation_Nova_aliasUsed, exceptionData);
 	
 	NOVA_FREE(*this);
 }
@@ -129,8 +131,20 @@ nova_Nova_String* spectra_tree_nodes_annotations_Nova_ImmutableAnnotation_Nova_w
 	return nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("[Immutable]"));
 }
 
+nova_Nova_String* spectra_tree_nodes_annotations_Nova_ImmutableAnnotation_Accessorfunc_Nova_aliasUsed(spectra_tree_nodes_annotations_Nova_ImmutableAnnotation* this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+	return this->spectra_tree_nodes_annotations_Nova_ImmutableAnnotation_Nova_aliasUsed;
+}
+
+nova_Nova_String* spectra_tree_nodes_annotations_Nova_ImmutableAnnotation_Mutatorfunc_Nova_aliasUsed(spectra_tree_nodes_annotations_Nova_ImmutableAnnotation* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* value)
+{
+	this->spectra_tree_nodes_annotations_Nova_ImmutableAnnotation_Nova_aliasUsed = value;
+	return value;
+}
+
 void spectra_tree_nodes_annotations_Nova_ImmutableAnnotation_Nova_super(spectra_tree_nodes_annotations_Nova_ImmutableAnnotation* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
+	this->spectra_tree_nodes_annotations_Nova_ImmutableAnnotation_Nova_aliasUsed = (nova_Nova_String*)nova_null;
 }
 
 void spectra_tree_nodes_annotations_Nova_ImmutableAnnotationFunctionMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData)

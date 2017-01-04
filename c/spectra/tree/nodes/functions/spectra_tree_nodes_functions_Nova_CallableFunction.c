@@ -32,6 +32,7 @@
 #include <spectra/tree/nodes/spectra_tree_nodes_Nova_Node.h>
 #include <spectra/tree/nodes/spectra_tree_nodes_Nova_Identifier.h>
 #include <spectra/spectra_Nova_InvalidParseException.h>
+#include <spectra/tree/spectra_tree_Nova_AnnotationSearchResult.h>
 #include <spectra/tree/nodes/generics/spectra_tree_nodes_generics_Nova_GenericCompatible.h>
 #include <spectra/tree/nodes/spectra_tree_nodes_Nova_Value.h>
 #include <spectra/tree/spectra_tree_Nova_SyntaxTree.h>

@@ -46,20 +46,24 @@ nova_datastruct_Nova_ImmutableHashMap* spectra_tree_nodes_annotations_Nova_Modif
 void spectra_tree_nodes_annotations_Nova_Modifier_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData)
 {
 	{
-		spectra_tree_nodes_annotations_Nova_Modifier_Nova_MODIFIERS = nova_datastruct_Nova_HashMap_Nova_toImmutable((nova_datastruct_Nova_HashMap*)(nova_datastruct_Nova_HashMap_0_Nova_construct(0, exceptionData, (intptr_t)nova_null, (intptr_t)nova_null)), exceptionData);
 	}
 	{
+		nova_datastruct_Nova_HashMap* l1_Nova_modifiers = (nova_datastruct_Nova_HashMap*)nova_null;
 		Context1* contextArg124 = NOVA_MALLOC(sizeof(Context1));
 		nova_datastruct_list_Nova_ImmutableArrayIterator* nova_local_0 = (nova_datastruct_list_Nova_ImmutableArrayIterator*)nova_null;
 		nova_Nova_Object* l2_Nova_class = (nova_Nova_Object*)nova_null;
 		
+		l1_Nova_modifiers = nova_datastruct_Nova_HashMap_0_Nova_construct(0, exceptionData, (intptr_t)nova_null, (intptr_t)nova_null);
 		nova_local_0 = (nova_datastruct_list_Nova_ImmutableArrayIterator*)(nova_datastruct_list_Nova_ImmutableArray_Accessor_Nova_iterator((nova_datastruct_list_Nova_ImmutableArray*)((nova_datastruct_list_Nova_ImmutableArray_Nova_filter((nova_datastruct_list_Nova_ImmutableArray*)(nova_meta_Nova_Class_Nova_ALL), exceptionData, (nova_datastruct_list_Nova_ImmutableArray_closure12_Nova_filterFunc)&spectra_tree_nodes_annotations_Nova_Modifier_static_Nova_lambda124, nova_null, contextArg124))), exceptionData));
 		while (nova_datastruct_list_Nova_ImmutableArrayIterator_Accessor_Nova_hasNext(nova_local_0, exceptionData))
 		{
+			nova_Nova_String* l2_Nova_alias = (nova_Nova_String*)nova_null;
+			
 			l2_Nova_class = (nova_Nova_Object*)(nova_datastruct_list_Nova_ImmutableArrayIterator_Accessor_Nova_next(nova_local_0, exceptionData));
-			nova_datastruct_Nova_ImmutableHashMap_Nova_set((nova_datastruct_Nova_ImmutableHashMap*)(spectra_tree_nodes_annotations_Nova_Modifier_Nova_MODIFIERS), exceptionData, (nova_Nova_Object*)(nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("x"))), (nova_Nova_Object*)(l2_Nova_class));
-			nova_io_Nova_Console_static_Nova_log(0, exceptionData, (nova_Nova_Object*)(nova_Nova_String_Nova_plus(nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("Added ")), exceptionData, (nova_Nova_String*)(nova_Nova_String_Nova_plus(nova_Nova_Object_virtual_Nova_toString((nova_Nova_Object*)((l2_Nova_class)), exceptionData), exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("")))))));
+			l2_Nova_alias = nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("x"));
+			nova_datastruct_Nova_HashMap_Nova_set((nova_datastruct_Nova_HashMap*)(l1_Nova_modifiers), exceptionData, (nova_Nova_Object*)(l2_Nova_alias), (nova_Nova_Object*)(l2_Nova_class));
 		}
+		spectra_tree_nodes_annotations_Nova_Modifier_Nova_MODIFIERS = nova_datastruct_Nova_HashMap_Nova_toImmutable((nova_datastruct_Nova_HashMap*)(l1_Nova_modifiers), exceptionData);
 	}
 }
 

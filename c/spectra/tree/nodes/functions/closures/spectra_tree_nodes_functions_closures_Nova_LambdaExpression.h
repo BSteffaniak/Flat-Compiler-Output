@@ -57,6 +57,7 @@ typedef struct spectra_tree_nodes_functions_closures_Nova_LambdaExpressionFuncti
 #include <spectra/tree/nodes/functions/closures/spectra_tree_nodes_functions_closures_Nova_LambdaParameter.h>
 #include <spectra/tree/nodes/generics/spectra_tree_nodes_generics_Nova_GenericParameter.h>
 #include <spectra/tree/spectra_tree_Nova_StatementIterator.h>
+#include <nova/datastruct/nova_datastruct_Nova_Tuple2.h>
 #include <spectra/spectra_Nova_SyntaxMessage.h>
 #include <spectra/tree/nodes/arrays/spectra_tree_nodes_arrays_Nova_ArrayAccess.h>
 #include <spectra/tree/nodes/operations/spectra_tree_nodes_operations_Nova_Operation.h>

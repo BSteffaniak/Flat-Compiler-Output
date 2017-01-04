@@ -131,7 +131,7 @@ nova_Nova_String* spectra_tree_nodes_annotations_Nova_StaticAnnotation_Nova_writ
 	return nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("[Static]"));
 }
 
-nova_Nova_String* spectra_tree_nodes_annotations_Nova_StaticAnnotation_Accessorfunc_Nova_aliasUsed(spectra_tree_nodes_annotations_Nova_StaticAnnotation* this, nova_exception_Nova_ExceptionData* exceptionData)
+nova_Nova_String* spectra_tree_nodes_annotations_Nova_StaticAnnotation_Accessorfunc1_Nova_aliasUsed(spectra_tree_nodes_annotations_Nova_StaticAnnotation* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
 	return this->spectra_tree_nodes_annotations_Nova_StaticAnnotation_Nova_aliasUsed;
 }
