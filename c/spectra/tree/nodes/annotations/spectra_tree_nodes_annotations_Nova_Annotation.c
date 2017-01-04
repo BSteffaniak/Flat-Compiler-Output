@@ -69,6 +69,8 @@
 
 
 
+
+
 void spectra_tree_nodes_annotations_Nova_Annotation_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData)
 {
 	{
@@ -96,6 +98,7 @@ void spectra_tree_nodes_annotations_Nova_Annotation_Nova_destroy(spectra_tree_no
 	{
 		return;
 	}
+	
 	
 	
 	NOVA_FREE(*this);
@@ -208,8 +211,20 @@ char spectra_tree_nodes_annotations_Nova_Annotation_Nova_onApplied(spectra_tree_
 	return 1;
 }
 
+nova_Nova_String* spectra_tree_nodes_annotations_Nova_Annotation_Nova_writeNova(spectra_tree_nodes_annotations_Nova_Annotation* this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+	return (nova_Nova_String*)nova_Nova_String_Nova_plus(nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("[")), exceptionData, (nova_Nova_String*)(nova_Nova_String_Nova_plus((spectra_tree_nodes_annotations_Nova_Annotation_Accessor_Nova_label(this, exceptionData)), exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("]")))));
+}
+
+nova_Nova_String* spectra_tree_nodes_annotations_Nova_Annotation_Accessor_Nova_label(spectra_tree_nodes_annotations_Nova_Annotation* this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+	return (nova_Nova_String*)(nova_Nova_String_0_Nova_endsWith(nova_meta_Nova_Class_Accessor_Nova_name(this->vtable->classInstance, exceptionData), exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("Annotation"))) ? (nova_Nova_Object*)nova_Nova_String_Nova_trimEnd(nova_meta_Nova_Class_Accessor_Nova_name(this->vtable->classInstance, exceptionData), exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("Annotation"))->nova_Nova_String_Nova_count) : (nova_Nova_Object*)nova_null);
+}
+
+
 void spectra_tree_nodes_annotations_Nova_Annotation_Nova_super(spectra_tree_nodes_annotations_Nova_Annotation* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
+	this->spectra_tree_nodes_annotations_Nova_Annotation_Nova_myvar = 0;
 }
 
 void spectra_tree_nodes_annotations_Nova_AnnotationFunctionMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData)

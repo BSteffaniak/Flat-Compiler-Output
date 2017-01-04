@@ -96,6 +96,8 @@ int nova_Nova_String_0_Nova_lastIndexOf(nova_Nova_String* this, nova_exception_N
 int nova_Nova_String_1_Nova_lastIndexOf(nova_Nova_String* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* search, int start, int defaultReturnValue);
 char nova_Nova_String_Nova_validateSubstringBounds(nova_Nova_String* this, nova_exception_Nova_ExceptionData* exceptionData, int start, int end, int throwException);
 nova_Nova_String* nova_Nova_String_Nova_substring(nova_Nova_String* this, nova_exception_Nova_ExceptionData* exceptionData, int start, int end);
+nova_Nova_String* nova_Nova_String_Nova_trimStart(nova_Nova_String* this, nova_exception_Nova_ExceptionData* exceptionData, int count);
+nova_Nova_String* nova_Nova_String_Nova_trimEnd(nova_Nova_String* this, nova_exception_Nova_ExceptionData* exceptionData, int count);
 nova_Nova_String* nova_Nova_String_Nova_trimEnds(nova_Nova_String* this, nova_exception_Nova_ExceptionData* exceptionData, int count, int trimWhitespace);
 nova_Nova_String* nova_Nova_String_Nova_trim(nova_Nova_String* this, nova_exception_Nova_ExceptionData* exceptionData, int start, int end, nova_datastruct_list_Nova_CharArray* charsToTrim);
 nova_Nova_String* nova_Nova_String_Nova_toLowerCase(nova_Nova_String* this, nova_exception_Nova_ExceptionData* exceptionData);

@@ -124,11 +124,6 @@ spectra_tree_nodes_annotations_Nova_AutoPureAnnotation* spectra_tree_nodes_annot
 	return (spectra_tree_nodes_annotations_Nova_AutoPureAnnotation*)(nova_Nova_Object*)nova_null;
 }
 
-nova_Nova_String* spectra_tree_nodes_annotations_Nova_AutoPureAnnotation_Nova_writeNova(spectra_tree_nodes_annotations_Nova_AutoPureAnnotation* this, nova_exception_Nova_ExceptionData* exceptionData)
-{
-	return nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("[AutoPure]"));
-}
-
 void spectra_tree_nodes_annotations_Nova_AutoPureAnnotation_Nova_super(spectra_tree_nodes_annotations_Nova_AutoPureAnnotation* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
 }

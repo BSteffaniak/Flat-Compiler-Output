@@ -86,6 +86,7 @@ CCLASS_CLASS
 	spectra_util_Nova_Location* spectra_tree_nodes_Nova_Node_Nova_location;
 	nova_datastruct_list_Nova_Array* spectra_tree_nodes_Nova_Node_Nova_annotations;
 	spectra_tree_nodes_Nova_Node* spectra_tree_nodes_Nova_Node_Nova_parent;
+	int spectra_tree_nodes_annotations_Nova_Annotation_Nova_myvar;
 	nova_Nova_String* spectra_tree_nodes_annotations_Nova_ImpureAnnotation_Nova_aliasUsed;
 )
 

@@ -81,6 +81,7 @@ char spectra_tree_nodes_annotations_Nova_Modifier_Nova_apply(spectra_tree_nodes_
 			return 0;
 		}
 	}
+	((spectra_tree_nodes_annotations_Nova_Annotation*)this)->spectra_tree_nodes_annotations_Nova_Annotation_Nova_myvar = (int)(4);
 	return 1;
 }
 
@@ -88,6 +89,13 @@ char spectra_tree_nodes_annotations_Nova_Modifier_Nova_onAppliedAsModifier(spect
 {
 	throwError = (int)(throwError == (intptr_t)nova_null ? 1 : throwError);
 	return spectra_tree_nodes_annotations_Nova_Annotation_Nova_onApplied(((spectra_tree_nodes_annotations_Nova_Annotation*)this), exceptionData, toNode, throwError);
+}
+
+nova_Nova_String* spectra_tree_nodes_annotations_Nova_Modifier_Nova_writeNova(spectra_tree_nodes_annotations_Nova_Modifier* this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+	nova_Nova_String* nova_local_0 = (nova_Nova_String*)nova_null;
+	
+	return (nova_Nova_String*)((nova_local_0 = (nova_Nova_String*)(spectra_tree_nodes_annotations_Nova_Modifier_virtual_Accessor1_Nova_aliasUsed((spectra_tree_nodes_annotations_Nova_Modifier*)(this), exceptionData))) != (nova_Nova_String*)nova_null ? nova_local_0 : spectra_tree_nodes_annotations_Nova_Annotation_Nova_writeNova(((spectra_tree_nodes_annotations_Nova_Annotation*)this), exceptionData));
 }
 
 char spectra_tree_nodes_annotations_Nova_Modifier_static_Nova_lambda124(spectra_tree_nodes_annotations_Nova_Modifier* this, nova_exception_Nova_ExceptionData* exceptionData, nova_meta_Nova_Class* _1, int _2, nova_datastruct_list_Nova_Array* _3, Context1* context)

@@ -294,12 +294,12 @@ char nova_Nova_String_1_Nova_contains(nova_Nova_String* this, nova_exception_Nov
 
 char nova_Nova_String_0_Nova_endsWith(nova_Nova_String* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* search)
 {
-	return this->nova_Nova_String_Nova_count > 0 && nova_Nova_String_2_Nova_indexOf(this, exceptionData, search, (intptr_t)nova_null, (intptr_t)nova_null, (intptr_t)nova_null) == this->nova_Nova_String_Nova_count - search->nova_Nova_String_Nova_count - 1;
+	return this->nova_Nova_String_Nova_count > 0 && nova_Nova_String_2_Nova_indexOf(this, exceptionData, search, (intptr_t)nova_null, (intptr_t)nova_null, (intptr_t)nova_null) == this->nova_Nova_String_Nova_count - search->nova_Nova_String_Nova_count;
 }
 
 char nova_Nova_String_1_Nova_endsWith(nova_Nova_String* this, nova_exception_Nova_ExceptionData* exceptionData, nova_regex_Nova_Pattern* search)
 {
-	return this->nova_Nova_String_Nova_count > 0 && nova_Nova_String_0_Nova_indexOf(this, exceptionData, search, (intptr_t)nova_null, (intptr_t)nova_null, (intptr_t)nova_null) == this->nova_Nova_String_Nova_count - search->nova_regex_Nova_Pattern_Nova_pattern->nova_Nova_String_Nova_count - 1;
+	return this->nova_Nova_String_Nova_count > 0 && nova_Nova_String_0_Nova_indexOf(this, exceptionData, search, (intptr_t)nova_null, (intptr_t)nova_null, (intptr_t)nova_null) == this->nova_Nova_String_Nova_count - search->nova_regex_Nova_Pattern_Nova_pattern->nova_Nova_String_Nova_count;
 }
 
 char nova_Nova_String_Nova_matches(nova_Nova_String* this, nova_exception_Nova_ExceptionData* exceptionData, nova_regex_Nova_Pattern* pattern)
@@ -413,6 +413,16 @@ nova_Nova_String* nova_Nova_String_Nova_substring(nova_Nova_String* this, nova_e
 		return this;
 	}
 	return (nova_Nova_String*)nova_Nova_Substring_Nova_construct(0, exceptionData, this, start, end);
+}
+
+nova_Nova_String* nova_Nova_String_Nova_trimStart(nova_Nova_String* this, nova_exception_Nova_ExceptionData* exceptionData, int count)
+{
+	return nova_Nova_String_virtual_Nova_substring((nova_Nova_String*)(this), exceptionData, count, (intptr_t)nova_null);
+}
+
+nova_Nova_String* nova_Nova_String_Nova_trimEnd(nova_Nova_String* this, nova_exception_Nova_ExceptionData* exceptionData, int count)
+{
+	return nova_Nova_String_virtual_Nova_substring((nova_Nova_String*)(this), exceptionData, (intptr_t)nova_null, this->nova_Nova_String_Nova_count - count);
 }
 
 nova_Nova_String* nova_Nova_String_Nova_trimEnds(nova_Nova_String* this, nova_exception_Nova_ExceptionData* exceptionData, int count, int trimWhitespace)

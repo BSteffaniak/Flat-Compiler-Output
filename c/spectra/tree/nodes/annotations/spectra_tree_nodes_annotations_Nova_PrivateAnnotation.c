@@ -32,7 +32,7 @@
 #include <spectra/tree/nodes/spectra_tree_nodes_Nova_Node.h>
 #include <spectra/util/spectra_util_Nova_Location.h>
 #include <spectra/tree/nodes/annotations/spectra_tree_nodes_annotations_Nova_Annotation.h>
-#include <spectra/tree/nodes/annotations/spectra_tree_nodes_annotations_Nova_Modifier.h>
+#include <spectra/tree/nodes/annotations/spectra_tree_nodes_annotations_Nova_VisibilityModifier.h>
 #include <spectra/tree/nodes/annotations/spectra_tree_nodes_annotations_Nova_AbstractAnnotation.h>
 #include <spectra/tree/nodes/annotations/spectra_tree_nodes_annotations_Nova_AutoFinalAnnotation.h>
 #include <spectra/tree/nodes/annotations/spectra_tree_nodes_annotations_Nova_AutoPureAnnotation.h>
@@ -128,7 +128,9 @@ spectra_tree_nodes_annotations_Nova_PrivateAnnotation* spectra_tree_nodes_annota
 
 nova_Nova_String* spectra_tree_nodes_annotations_Nova_PrivateAnnotation_Nova_writeNova(spectra_tree_nodes_annotations_Nova_PrivateAnnotation* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
-	return nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("[Private]"));
+	nova_Nova_String* nova_local_0 = (nova_Nova_String*)nova_null;
+	
+	return (nova_Nova_String*)((nova_local_0 = spectra_tree_nodes_annotations_Nova_Modifier_Nova_writeNova((spectra_tree_nodes_annotations_Nova_Modifier*)(((spectra_tree_nodes_annotations_Nova_VisibilityModifier*)this)), exceptionData)) != (nova_Nova_String*)nova_null ? nova_local_0 : spectra_tree_nodes_annotations_Nova_Annotation_Nova_writeNova(((spectra_tree_nodes_annotations_Nova_Annotation*)this), exceptionData));
 }
 
 nova_Nova_String* spectra_tree_nodes_annotations_Nova_PrivateAnnotation_Accessorfunc1_Nova_aliasUsed(spectra_tree_nodes_annotations_Nova_PrivateAnnotation* this, nova_exception_Nova_ExceptionData* exceptionData)

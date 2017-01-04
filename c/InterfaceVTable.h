@@ -27,7 +27,6 @@ typedef struct spectra_tree_nodes_functions_Nova_ParameterList spectra_tree_node
 typedef struct spectra_tree_nodes_generics_Nova_GenericCompatible spectra_tree_nodes_generics_Nova_GenericCompatible;
 typedef struct spectra_tree_nodes_operations_Nova_Assignable spectra_tree_nodes_operations_Nova_Assignable;
 typedef struct spectra_tree_nodes_Nova_Value spectra_tree_nodes_Nova_Value;
-typedef struct example_Nova_Polygon example_Nova_Polygon;
 typedef char (*nova_Nova_String_closure1_Nova_transform)(void*, nova_exception_Nova_ExceptionData*, char, int, void*);
 typedef char (*nova_Nova_String_closure2_Nova_transform)(void*, nova_exception_Nova_ExceptionData*, char, int, void*);
 typedef char (*nova_Nova_String_closure3_Nova_transform)(void*, nova_exception_Nova_ExceptionData*, char, int, void*);
@@ -450,8 +449,6 @@ spectra_tree_nodes_functions_Nova_ParameterList* (*spectra_tree_nodes_functions_
 nova_datastruct_list_Nova_Array* (*spectra_tree_nodes_generics_Nova_GenericCompatible_virtual_Accessor_Nova_genericParameters)(spectra_tree_nodes_generics_Nova_GenericCompatible*, nova_exception_Nova_ExceptionData*);
 nova_datastruct_list_Nova_Array* (*spectra_tree_nodes_generics_Nova_GenericCompatible_virtual_Mutator_Nova_genericParameters)(spectra_tree_nodes_generics_Nova_GenericCompatible*, nova_exception_Nova_ExceptionData*, nova_datastruct_list_Nova_Array*);
 void (*spectra_tree_nodes_operations_Nova_Assignable_virtual_Nova_onAssigned)(spectra_tree_nodes_operations_Nova_Assignable*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Value*);
-int (*example_Nova_Polygon_virtual_Nova_numberSides)(example_Nova_Polygon*, nova_exception_Nova_ExceptionData*);
-double (*example_Nova_Polygon_virtual_Nova_calculateArea)(example_Nova_Polygon*, nova_exception_Nova_ExceptionData*);
 } nova_Interface_VTable;
 
 #endif
