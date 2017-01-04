@@ -1679,7 +1679,9 @@ nova_env novaEnv = {
 {
 &spectra_tree_nodes_annotations_Nova_Modifier_Nova_apply,
 &spectra_tree_nodes_annotations_Nova_Modifier_Nova_onAppliedAsModifier,
-&spectra_tree_nodes_annotations_Nova_Modifier_Nova_writeNova,
+},
+{
+&spectra_tree_nodes_annotations_Nova_ModifierFunctionMap_Nova_construct,
 },
 
 {

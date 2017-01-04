@@ -126,13 +126,6 @@ spectra_tree_nodes_annotations_Nova_VisibleAnnotation* spectra_tree_nodes_annota
 	return (spectra_tree_nodes_annotations_Nova_VisibleAnnotation*)(nova_Nova_Object*)nova_null;
 }
 
-nova_Nova_String* spectra_tree_nodes_annotations_Nova_VisibleAnnotation_Nova_writeNova(spectra_tree_nodes_annotations_Nova_VisibleAnnotation* this, nova_exception_Nova_ExceptionData* exceptionData)
-{
-	nova_Nova_String* nova_local_0 = (nova_Nova_String*)nova_null;
-	
-	return (nova_Nova_String*)((nova_local_0 = spectra_tree_nodes_annotations_Nova_Modifier_Nova_writeNova((spectra_tree_nodes_annotations_Nova_Modifier*)(((spectra_tree_nodes_annotations_Nova_VisibilityModifier*)this)), exceptionData)) != (nova_Nova_String*)nova_null ? nova_local_0 : spectra_tree_nodes_annotations_Nova_Annotation_Nova_writeNova(((spectra_tree_nodes_annotations_Nova_Annotation*)this), exceptionData));
-}
-
 nova_Nova_String* spectra_tree_nodes_annotations_Nova_VisibleAnnotation_Accessorfunc1_Nova_aliasUsed(spectra_tree_nodes_annotations_Nova_VisibleAnnotation* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
 	return this->spectra_tree_nodes_annotations_Nova_VisibleAnnotation_Nova_aliasUsed;
