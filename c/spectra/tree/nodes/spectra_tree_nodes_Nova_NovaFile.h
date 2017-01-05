@@ -50,6 +50,7 @@ typedef struct spectra_tree_nodes_Nova_NovaFileFunctionMap spectra_tree_nodes_No
 #include <spectra/tree/nodes/spectra_tree_nodes_Nova_ImportList.h>
 #include <spectra/tree/nodes/spectra_tree_nodes_Nova_Node.h>
 #include <spectra/tree/nodes/spectra_tree_nodes_Nova_Package.h>
+#include <spectra/tree/nodes/spectra_tree_nodes_Nova_TraitDeclaration.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_ArrayIterator.h>
 #include <spectra/spectra_Nova_InvalidParseException.h>
 #include <spectra/spectra_Nova_SyntaxErrorException.h>

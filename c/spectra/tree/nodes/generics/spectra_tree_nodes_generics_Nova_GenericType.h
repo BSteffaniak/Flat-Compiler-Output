@@ -42,12 +42,15 @@ typedef struct spectra_tree_nodes_generics_Nova_GenericTypeFunctionMap spectra_t
 #include <spectra/tree/nodes/spectra_tree_nodes_Nova_Node.h>
 #include <spectra/tree/nodes/spectra_tree_nodes_Nova_Type.h>
 #include <spectra/tree/nodes/generics/spectra_tree_nodes_generics_Nova_GenericParameter.h>
-#include <spectra/spectra_Nova_SyntaxMessage.h>
 #include <spectra/spectra_Nova_InvalidParseException.h>
 #include <spectra/util/spectra_util_Nova_Location.h>
 #include <spectra/tree/nodes/generics/spectra_tree_nodes_generics_Nova_GenericType.h>
 #include <spectra/tree/nodes/generics/spectra_tree_nodes_generics_Nova_GenericArgument.h>
+#include <spectra/tree/nodes/spectra_tree_nodes_Nova_ArrayType.h>
+#include <spectra/tree/nodes/spectra_tree_nodes_Nova_ClassDeclaration.h>
 #include <spectra/tree/nodes/spectra_tree_nodes_Nova_Import.h>
+#include <spectra/tree/nodes/spectra_tree_nodes_Nova_NovaFile.h>
+#include <spectra/tree/nodes/functions/spectra_tree_nodes_functions_Nova_FunctionDeclaration.h>
 #include <nova/NativeObject.h>
 #include <nova/operators/nova_operators_Nova_EqualsOperator.h>
 
@@ -56,7 +59,6 @@ CCLASS_CLASS
 	spectra_tree_nodes_generics_Nova_GenericType, 
 	
 	spectra_tree_nodes_generics_GenericType_Extension_VTable* vtable;
-	int spectra_tree_nodes_Nova_Type_Nova_arrayDimensions;
 	nova_datastruct_list_Nova_Array* spectra_tree_nodes_Nova_Type_Nova_genericArguments;
 	nova_Nova_String* spectra_tree_nodes_Nova_Type_Nova_name;
 	spectra_tree_nodes_generics_Nova_GenericParameter* spectra_tree_nodes_generics_Nova_GenericType_Nova_parameter;

@@ -153,7 +153,7 @@ char spectra_tree_nodes_exceptionhandling_Nova_Catch_Nova_parseException(spectra
 		case 2:
 		this->spectra_tree_nodes_exceptionhandling_Nova_Catch_Nova_variable = (nova_Nova_String*)(nova_datastruct_list_Nova_Array_virtual_Nova_get((nova_datastruct_list_Nova_Array*)(l1_Nova_values), exceptionData, 1));
 		case 1:
-		return (this->spectra_tree_nodes_exceptionhandling_Nova_Catch_Nova_exception = spectra_tree_nodes_Nova_Type_static_Nova_parse(0, exceptionData, (nova_Nova_String*)(nova_datastruct_list_Nova_Array_virtual_Nova_get((nova_datastruct_list_Nova_Array*)(l1_Nova_values), exceptionData, 0)), 0, 0, (intptr_t)nova_null)) != (spectra_tree_nodes_Nova_Type*)nova_null;
+		return (this->spectra_tree_nodes_exceptionhandling_Nova_Catch_Nova_exception = (spectra_tree_nodes_Nova_Type*)(spectra_tree_nodes_Nova_Type_static_Nova_parse(0, exceptionData, (nova_Nova_String*)(nova_datastruct_list_Nova_Array_virtual_Nova_get((nova_datastruct_list_Nova_Array*)(l1_Nova_values), exceptionData, 0)), 0, 0, (intptr_t)nova_null))) != (spectra_tree_nodes_Nova_Type*)nova_null;
 		default:
 		return 0;
 	}

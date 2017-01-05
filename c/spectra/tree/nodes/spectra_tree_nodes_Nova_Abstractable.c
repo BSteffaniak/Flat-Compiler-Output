@@ -49,23 +49,23 @@ spectra_tree_nodes_Nova_Abstractable* spectra_tree_nodes_Nova_Abstractable_0_Nov
 	return other;
 }
 
-char spectra_tree_nodes_Nova_Abstractable_Mutator_Nova_isAbstract(spectra_tree_nodes_Nova_Abstractable* this, nova_exception_Nova_ExceptionData* exceptionData, char value)
-{
-	return value;
-}
-
 char spectra_tree_nodes_Nova_Abstractable_Accessor_Nova_isAbstract(spectra_tree_nodes_Nova_Abstractable* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
 	return 0;
 }
 
-char spectra_tree_nodes_Nova_Abstractable_virtual_Mutator0_Nova_isAbstract(spectra_tree_nodes_Nova_Abstractable* this, nova_exception_Nova_ExceptionData* exceptionData, char value)
+char spectra_tree_nodes_Nova_Abstractable_Mutator_Nova_isAbstract(spectra_tree_nodes_Nova_Abstractable* this, nova_exception_Nova_ExceptionData* exceptionData, char value)
 {
-	return this->vtable->itable.spectra_tree_nodes_Nova_Abstractable_virtual_Mutator0_Nova_isAbstract((spectra_tree_nodes_Nova_Abstractable*)(this), exceptionData, value);
+	return value;
 }
 
 char spectra_tree_nodes_Nova_Abstractable_virtual_Accessor1_Nova_isAbstract(spectra_tree_nodes_Nova_Abstractable* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
 	return this->vtable->itable.spectra_tree_nodes_Nova_Abstractable_virtual_Accessor1_Nova_isAbstract((spectra_tree_nodes_Nova_Abstractable*)(this), exceptionData);
+}
+
+char spectra_tree_nodes_Nova_Abstractable_virtual_Mutator0_Nova_isAbstract(spectra_tree_nodes_Nova_Abstractable* this, nova_exception_Nova_ExceptionData* exceptionData, char value)
+{
+	return this->vtable->itable.spectra_tree_nodes_Nova_Abstractable_virtual_Mutator0_Nova_isAbstract((spectra_tree_nodes_Nova_Abstractable*)(this), exceptionData, value);
 }
 

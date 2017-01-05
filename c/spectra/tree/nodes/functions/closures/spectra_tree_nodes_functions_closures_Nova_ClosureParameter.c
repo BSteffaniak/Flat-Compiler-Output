@@ -130,7 +130,7 @@ spectra_tree_nodes_functions_closures_Nova_ClosureParameter* spectra_tree_nodes_
 	parent = (spectra_tree_nodes_Nova_Node*)(parent == 0 ? (nova_Nova_Object*)(nova_Nova_Object*)nova_null : (nova_Nova_Object*)parent);
 	location = (spectra_util_Nova_Location*)(location == 0 ? (nova_Nova_Object*)spectra_util_Nova_Location_Nova_INVALID : (nova_Nova_Object*)location);
 	require = (int)(require == (intptr_t)nova_null ? 1 : require);
-	l1_Nova_type = spectra_tree_nodes_Nova_Type_static_Nova_parse(0, exceptionData, input, parent, 0, (intptr_t)nova_null);
+	l1_Nova_type = (spectra_tree_nodes_Nova_Type*)(spectra_tree_nodes_Nova_Type_static_Nova_parse(0, exceptionData, input, parent, 0, (intptr_t)nova_null));
 	if ((l1_Nova_type) != (spectra_tree_nodes_Nova_Type*)nova_null)
 	{
 		spectra_tree_nodes_functions_closures_Nova_ClosureParameter* l2_Nova_node = (spectra_tree_nodes_functions_closures_Nova_ClosureParameter*)nova_null;

@@ -421,6 +421,7 @@ nova_env novaEnv = {
 0,
 0,
 0,
+&nova_datastruct_list_Nova_List_Nova_filterNull,
 &nova_datastruct_list_Nova_List_Nova_filterEmpty,
 0,
 &nova_datastruct_list_Nova_List_Nova_takeLast,
@@ -1410,6 +1411,14 @@ nova_env novaEnv = {
 },
 
 {
+&spectra_tree_nodes_Nova_ArrayType_Nova_writeArray,
+&spectra_tree_nodes_Nova_ArrayType_Nova_construct,
+},
+{
+&spectra_tree_nodes_Nova_ArrayTypeFunctionMap_Nova_construct,
+},
+
+{
 &spectra_tree_nodes_Nova_Cast_Nova_construct,
 },
 {
@@ -1419,6 +1428,7 @@ nova_env novaEnv = {
 {
 &spectra_tree_nodes_Nova_ClassDeclaration_Nova_findCompatibleFunctions,
 &spectra_tree_nodes_Nova_ClassDeclaration_0_Nova_findVariableDeclaration,
+&spectra_tree_nodes_Nova_ClassDeclaration_Nova_findFunction,
 &spectra_tree_nodes_Nova_ClassDeclaration_Nova_writeHeader,
 &spectra_tree_nodes_Nova_ClassDeclaration_Nova_writeExtension,
 &spectra_tree_nodes_Nova_ClassDeclaration_Nova_writeImplementedInterfaces,
@@ -1472,7 +1482,7 @@ nova_env novaEnv = {
 &spectra_tree_nodes_Nova_Node_Nova_getAdjacentNode,
 &spectra_tree_nodes_Nova_Node_0_Nova_detach,
 0,
-&spectra_tree_nodes_Nova_Node_Nova_onAdded,
+0,
 &spectra_tree_nodes_Nova_Node_Nova_onRemoved,
 &spectra_tree_nodes_Nova_Node_Nova_onAfterDecoded,
 &spectra_tree_nodes_Nova_Node_Nova_onNextStatementDecoded,
@@ -1594,11 +1604,18 @@ nova_env novaEnv = {
 },
 
 {
+&spectra_tree_nodes_Nova_TraitDeclaration_Nova_construct,
+},
+{
+&spectra_tree_nodes_Nova_TraitDeclarationFunctionMap_Nova_construct,
+},
+
+{
+&spectra_tree_nodes_Nova_Type_Nova_getClass,
 0,
-&spectra_tree_nodes_Nova_Type_Nova_writeArray,
 &spectra_tree_nodes_Nova_Type_Nova_writeGenericParameters,
 &spectra_tree_nodes_Nova_Type_Nova_toNova,
-&spectra_tree_nodes_Nova_Type_Nova_writeNova,
+0,
 0,
 &spectra_tree_nodes_Nova_Type_Nova_construct,
 },
