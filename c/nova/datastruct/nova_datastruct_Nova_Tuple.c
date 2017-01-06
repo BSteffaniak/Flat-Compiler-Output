@@ -141,23 +141,23 @@ nova_datastruct_list_Nova_ArrayIterator* nova_datastruct_Nova_Tuple_Accessor_Nov
 
 nova_Nova_Object* nova_datastruct_Nova_Tuple_Accessor_Nova_first(nova_datastruct_Nova_Tuple* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
-	return (nova_Nova_Object*)nova_datastruct_list_Nova_List_virtual_Accessor1_Nova_first((nova_datastruct_list_Nova_List*)(this->nova_datastruct_Nova_Tuple_Nova_items), exceptionData);
+	return (nova_Nova_Object*)nova_datastruct_list_Nova_List_virtual_Accessor_Nova_first((nova_datastruct_list_Nova_List*)(this->nova_datastruct_Nova_Tuple_Nova_items), exceptionData);
 }
 
 nova_Nova_Object* nova_datastruct_Nova_Tuple_Mutator_Nova_first(nova_datastruct_Nova_Tuple* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_Object* value)
 {
-	nova_datastruct_list_Nova_List_virtual_Mutator0_Nova_first((nova_datastruct_list_Nova_List*)(this->nova_datastruct_Nova_Tuple_Nova_items), exceptionData, (nova_Nova_Object*)(value));
+	nova_datastruct_list_Nova_List_virtual_Mutator_Nova_first((nova_datastruct_list_Nova_List*)(this->nova_datastruct_Nova_Tuple_Nova_items), exceptionData, (nova_Nova_Object*)(value));
 	return value;
 }
 
 nova_Nova_Object* nova_datastruct_Nova_Tuple_Accessor_Nova_last(nova_datastruct_Nova_Tuple* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
-	return (nova_Nova_Object*)nova_datastruct_list_Nova_List_virtual_Accessor1_Nova_last((nova_datastruct_list_Nova_List*)(this->nova_datastruct_Nova_Tuple_Nova_items), exceptionData);
+	return (nova_Nova_Object*)nova_datastruct_list_Nova_List_virtual_Accessor_Nova_last((nova_datastruct_list_Nova_List*)(this->nova_datastruct_Nova_Tuple_Nova_items), exceptionData);
 }
 
 nova_Nova_Object* nova_datastruct_Nova_Tuple_Mutator_Nova_last(nova_datastruct_Nova_Tuple* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_Object* value)
 {
-	nova_datastruct_list_Nova_List_virtual_Mutator0_Nova_last((nova_datastruct_list_Nova_List*)(this->nova_datastruct_Nova_Tuple_Nova_items), exceptionData, (nova_Nova_Object*)(value));
+	nova_datastruct_list_Nova_List_virtual_Mutator_Nova_last((nova_datastruct_list_Nova_List*)(this->nova_datastruct_Nova_Tuple_Nova_items), exceptionData, (nova_Nova_Object*)(value));
 	return value;
 }
 

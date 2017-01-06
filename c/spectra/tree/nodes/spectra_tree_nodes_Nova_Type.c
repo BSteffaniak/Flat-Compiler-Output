@@ -459,9 +459,9 @@ void spectra_tree_nodes_Nova_TypeFunctionMap_Nova_super(spectra_tree_nodes_Nova_
 {
 }
 
-spectra_tree_nodes_Nova_Type* spectra_tree_nodes_Nova_TypeFunctionMap_virtualfunctionMapTypeFunctionMap_static_Nova_construct(spectra_tree_nodes_Nova_TypeFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* name)
+spectra_tree_nodes_Nova_Type* spectra_tree_nodes_Nova_TypeFunctionMap_virtualfunctionMapType_static_Nova_construct(spectra_tree_nodes_Nova_TypeFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* name)
 {
-	return this->vtable->spectra_tree_nodes_Nova_TypeFunctionMap_virtualfunctionMapTypeFunctionMap_static_Nova_construct(0, exceptionData, name);
+	return this->vtable->spectra_tree_nodes_Nova_TypeFunctionMap_virtualfunctionMapType_static_Nova_construct(0, exceptionData, name);
 }
 
 spectra_tree_nodes_Nova_Type* spectra_tree_nodes_Nova_TypeFunctionMap_virtualfunctionMap_static_Nova_parse(spectra_tree_nodes_Nova_TypeFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* input, spectra_tree_nodes_Nova_Node* parent, spectra_util_Nova_Location* location, int require)

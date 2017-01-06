@@ -403,7 +403,7 @@ nova_datastruct_Nova_Pair* nova_datastruct_Nova_HashMap_Nova_getPair(nova_datast
 	Context5* contextArg8 = NOVA_MALLOC(sizeof(Context5));
 	contextArg8->nova_datastruct_Nova_HashMap_Nova_key = &key;
 	
-	return (nova_datastruct_Nova_Pair*)nova_datastruct_list_Nova_List_virtual_Accessor1_Nova_first((nova_datastruct_list_Nova_List*)(nova_datastruct_list_Nova_List_virtual0_Nova_filter((nova_datastruct_list_Nova_List*)(nova_datastruct_Nova_HashMap_Nova_getBucket(this, exceptionData, key)), exceptionData, (nova_datastruct_list_Nova_List_closure20_Nova_filterFunc)&nova_datastruct_Nova_HashMap_Nova_lambda8, this, contextArg8)), exceptionData);
+	return (nova_datastruct_Nova_Pair*)nova_datastruct_list_Nova_List_virtual_Accessor_Nova_first((nova_datastruct_list_Nova_List*)(nova_datastruct_list_Nova_List_virtual0_Nova_filter((nova_datastruct_list_Nova_List*)(nova_datastruct_Nova_HashMap_Nova_getBucket(this, exceptionData, key)), exceptionData, (nova_datastruct_list_Nova_List_closure20_Nova_filterFunc)&nova_datastruct_Nova_HashMap_Nova_lambda8, this, contextArg8)), exceptionData);
 }
 
 nova_Nova_Object* nova_datastruct_Nova_HashMap_Nova_remove(nova_datastruct_Nova_HashMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_Object* key)
@@ -664,7 +664,7 @@ nova_datastruct_Nova_HashMap* nova_datastruct_Nova_HashMapFunctionMap_functionMa
 
 nova_datastruct_list_Nova_Array* nova_datastruct_Nova_HashMapFunctionMap_functionMap_Nova_getBucket(nova_datastruct_Nova_HashMapFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_Nova_HashMap* reference, nova_Nova_Object* key)
 {
-	return (nova_datastruct_list_Nova_Array*)nova_datastruct_Nova_HashMap_Nova_getBucket(reference, exceptionData, key);
+	return nova_datastruct_Nova_HashMap_Nova_getBucket(reference, exceptionData, key);
 }
 
 nova_datastruct_Nova_Pair* nova_datastruct_Nova_HashMapFunctionMap_functionMap_Nova_getPair(nova_datastruct_Nova_HashMapFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_Nova_HashMap* reference, nova_Nova_Object* key)
@@ -706,9 +706,9 @@ void nova_datastruct_Nova_HashMapFunctionMap_Nova_super(nova_datastruct_Nova_Has
 {
 }
 
-nova_datastruct_Nova_HashMap* nova_datastruct_Nova_HashMapFunctionMap_virtualfunctionMapHashMapFunctionMap0_static_Nova_construct(nova_datastruct_Nova_HashMapFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, int bucketCount, int bucketSize)
+nova_datastruct_Nova_HashMap* nova_datastruct_Nova_HashMapFunctionMap_virtualfunctionMapHashMap0_static_Nova_construct(nova_datastruct_Nova_HashMapFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, int bucketCount, int bucketSize)
 {
-	return this->vtable->nova_datastruct_Nova_HashMapFunctionMap_virtualfunctionMapHashMapFunctionMap0_static_Nova_construct(0, exceptionData, bucketCount, bucketSize);
+	return this->vtable->nova_datastruct_Nova_HashMapFunctionMap_virtualfunctionMapHashMap0_static_Nova_construct(0, exceptionData, bucketCount, bucketSize);
 }
 
 nova_Nova_Object* nova_datastruct_Nova_HashMapFunctionMap_virtualfunctionMap_Nova_add(nova_datastruct_Nova_HashMapFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_Nova_HashMap* reference, nova_Nova_Object* key, nova_Nova_Object* value)

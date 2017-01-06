@@ -263,7 +263,7 @@ void spectra_tree_nodes_Nova_NovaFile_Nova_addAutoImports(spectra_tree_nodes_Nov
 		spectra_tree_nodes_Nova_ClassDeclaration* l3_Nova_class = (spectra_tree_nodes_Nova_ClassDeclaration*)nova_null;
 		
 		l2_Nova_file = (spectra_tree_nodes_Nova_NovaFile*)(nova_datastruct_list_Nova_ArrayIterator_Accessor_Nova_next((nova_datastruct_list_Nova_ArrayIterator*)(nova_local_0), exceptionData));
-		nova_local_1 = (nova_datastruct_list_Nova_Iterator*)(nova_datastruct_list_Nova_Iterable_virtual_Accessor1_Nova_iterator((nova_datastruct_list_Nova_Iterable*)((nova_datastruct_list_Nova_List_Nova_filterNull((nova_datastruct_list_Nova_List*)(l2_Nova_file->spectra_tree_nodes_Nova_NovaFile_Nova_classes), exceptionData))), exceptionData));
+		nova_local_1 = (nova_datastruct_list_Nova_Iterator*)(nova_datastruct_list_Nova_Iterable_virtual_Accessor_Nova_iterator((nova_datastruct_list_Nova_Iterable*)((nova_datastruct_list_Nova_List_Nova_filterNull((nova_datastruct_list_Nova_List*)(l2_Nova_file->spectra_tree_nodes_Nova_NovaFile_Nova_classes), exceptionData))), exceptionData));
 		while (nova_datastruct_list_Nova_Iterator_virtual_Accessor_Nova_hasNext((nova_datastruct_list_Nova_Iterator*)(nova_local_1), exceptionData))
 		{
 			l3_Nova_class = (spectra_tree_nodes_Nova_ClassDeclaration*)(nova_datastruct_list_Nova_Iterator_virtual_Accessor_Nova_next((nova_datastruct_list_Nova_Iterator*)(nova_local_1), exceptionData));
@@ -489,7 +489,7 @@ spectra_tree_nodes_Nova_Node* spectra_tree_nodes_Nova_NovaFileFunctionMap_functi
 spectra_tree_nodes_Nova_ClassDeclaration* spectra_tree_nodes_Nova_NovaFileFunctionMap_functionMap_Nova_getImportedClass(spectra_tree_nodes_Nova_NovaFileFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, spectra_tree_nodes_Nova_NovaFile* reference, nova_Nova_String* name, int includeSelf)
 {
 	includeSelf = (int)(includeSelf == (intptr_t)nova_null ? 1 : includeSelf);
-	return (spectra_tree_nodes_Nova_ClassDeclaration*)spectra_tree_nodes_Nova_NovaFile_Nova_getImportedClass(reference, exceptionData, name, includeSelf);
+	return spectra_tree_nodes_Nova_NovaFile_Nova_getImportedClass(reference, exceptionData, name, includeSelf);
 }
 
 void spectra_tree_nodes_Nova_NovaFileFunctionMap_functionMap_Nova_addDefaultImports(spectra_tree_nodes_Nova_NovaFileFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, spectra_tree_nodes_Nova_NovaFile* reference)

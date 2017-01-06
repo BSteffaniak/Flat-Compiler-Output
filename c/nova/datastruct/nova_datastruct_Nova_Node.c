@@ -390,8 +390,8 @@ void nova_datastruct_Nova_NodeFunctionMap_Nova_super(nova_datastruct_Nova_NodeFu
 {
 }
 
-nova_datastruct_Nova_Node* nova_datastruct_Nova_NodeFunctionMap_virtualfunctionMapNodeFunctionMap_static_Nova_construct(nova_datastruct_Nova_NodeFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_Object* data, int numChildren)
+nova_datastruct_Nova_Node* nova_datastruct_Nova_NodeFunctionMap_virtualfunctionMapNode_static_Nova_construct(nova_datastruct_Nova_NodeFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_Object* data, int numChildren)
 {
-	return this->vtable->nova_datastruct_Nova_NodeFunctionMap_virtualfunctionMapNodeFunctionMap_static_Nova_construct(0, exceptionData, data, numChildren);
+	return this->vtable->nova_datastruct_Nova_NodeFunctionMap_virtualfunctionMapNode_static_Nova_construct(0, exceptionData, data, numChildren);
 }
 

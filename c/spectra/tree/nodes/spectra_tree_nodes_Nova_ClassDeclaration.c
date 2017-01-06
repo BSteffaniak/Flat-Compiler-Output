@@ -54,7 +54,7 @@
 #include <spectra/tree/nodes/variables/spectra_tree_nodes_variables_Nova_VariableDeclaration.h>
 #include <spectra/tree/nodes/spectra_tree_nodes_Nova_Identifier.h>
 #include <spectra/tree/nodes/annotations/spectra_tree_nodes_annotations_Nova_Modifier.h>
-#include <spectra/tree/nodes/annotations/spectra_tree_nodes_annotations_Nova_PublicAnnotation.h>
+#include <spectra/tree/nodes/annotations/spectra_tree_nodes_annotations_Nova_PureAnnotation.h>
 #include <spectra/tree/nodes/annotations/spectra_tree_nodes_annotations_Nova_Annotation.h>
 #include <spectra/tree/nodes/spectra_tree_nodes_Nova_Identifier.h>
 #include <spectra/tree/nodes/spectra_tree_nodes_Nova_Value.h>
@@ -792,7 +792,7 @@ char spectra_tree_nodes_Nova_ClassDeclarationFunctionMap_functionMap_Nova_replac
 nova_datastruct_list_Nova_Array* spectra_tree_nodes_Nova_ClassDeclarationFunctionMap_functionMap_Nova_findCompatibleFunctions(spectra_tree_nodes_Nova_ClassDeclarationFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, spectra_tree_nodes_Nova_ClassDeclaration* reference, nova_Nova_String* name, nova_datastruct_list_Nova_Array* argumentTypes)
 {
 	argumentTypes = (nova_datastruct_list_Nova_Array*)(argumentTypes == 0 ? (nova_Nova_Object*)(nova_Nova_Object*)nova_null : (nova_Nova_Object*)argumentTypes);
-	return (nova_datastruct_list_Nova_Array*)spectra_tree_nodes_Nova_ClassDeclaration_Nova_findCompatibleFunctions(reference, exceptionData, name, argumentTypes);
+	return spectra_tree_nodes_Nova_ClassDeclaration_Nova_findCompatibleFunctions(reference, exceptionData, name, argumentTypes);
 }
 
 spectra_tree_nodes_variables_Nova_VariableDeclaration* spectra_tree_nodes_Nova_ClassDeclarationFunctionMap_functionMap_Nova_findVariableDeclaration(spectra_tree_nodes_Nova_ClassDeclarationFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, spectra_tree_nodes_Nova_ClassDeclaration* reference, nova_Nova_String* name, int searchAncestors)

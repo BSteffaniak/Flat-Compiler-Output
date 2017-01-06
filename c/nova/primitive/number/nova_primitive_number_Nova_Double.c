@@ -253,7 +253,7 @@ void nova_primitive_number_Nova_DoubleFunctionMap_Nova_this(nova_primitive_numbe
 {
 }
 
-double nova_primitive_number_Nova_DoubleFunctionMap_functionMapDoubleFunctionMap_static_Nova_construct(nova_primitive_number_Nova_DoubleFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, double value)
+nova_primitive_number_Nova_Double* nova_primitive_number_Nova_DoubleFunctionMap_functionMapDoubleFunctionMap_static_Nova_construct(nova_primitive_number_Nova_DoubleFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, double value)
 {
 	return nova_primitive_number_Nova_Double_Nova_construct(0, exceptionData, value);
 }
@@ -268,9 +268,9 @@ nova_Nova_String* nova_primitive_number_Nova_DoubleFunctionMap_functionMap_stati
 	return nova_primitive_number_Nova_Double_static_Nova_genString(0, exceptionData, buffer, lastIndex);
 }
 
-char nova_primitive_number_Nova_DoubleFunctionMap_functionMap_static_Nova_genBuffer(nova_primitive_number_Nova_DoubleFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, double value)
+char* nova_primitive_number_Nova_DoubleFunctionMap_functionMap_static_Nova_genBuffer(nova_primitive_number_Nova_DoubleFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, double value)
 {
-	return (char)nova_primitive_number_Nova_Double_static_Nova_genBuffer(0, exceptionData, value);
+	return nova_primitive_number_Nova_Double_static_Nova_genBuffer(0, exceptionData, value);
 }
 
 int nova_primitive_number_Nova_DoubleFunctionMap_functionMap_static_Nova_repetition(nova_primitive_number_Nova_DoubleFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, char* buffer, int start)
@@ -283,9 +283,9 @@ int nova_primitive_number_Nova_DoubleFunctionMap_functionMap_static_Nova_lastSig
 	return nova_primitive_number_Nova_Double_static_Nova_lastSignificantDigit(0, exceptionData, buffer, start);
 }
 
-char nova_primitive_number_Nova_DoubleFunctionMap_functionMap_static_Nova_toCharArray(nova_primitive_number_Nova_DoubleFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, double value)
+char* nova_primitive_number_Nova_DoubleFunctionMap_functionMap_static_Nova_toCharArray(nova_primitive_number_Nova_DoubleFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, double value)
 {
-	return (char)nova_primitive_number_Nova_Double_static_Nova_toCharArray(0, exceptionData, value);
+	return nova_primitive_number_Nova_Double_static_Nova_toCharArray(0, exceptionData, value);
 }
 
 nova_Nova_String* nova_primitive_number_Nova_DoubleFunctionMap_functionMap_static_Nova_toString(nova_primitive_number_Nova_DoubleFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, double value)

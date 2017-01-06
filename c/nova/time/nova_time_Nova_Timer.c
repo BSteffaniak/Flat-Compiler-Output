@@ -228,9 +228,9 @@ void nova_time_Nova_TimerFunctionMap_Nova_super(nova_time_Nova_TimerFunctionMap*
 {
 }
 
-nova_time_Nova_Timer* nova_time_Nova_TimerFunctionMap_virtualfunctionMapTimerFunctionMap_static_Nova_construct(nova_time_Nova_TimerFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+nova_time_Nova_Timer* nova_time_Nova_TimerFunctionMap_virtualfunctionMapTimer_static_Nova_construct(nova_time_Nova_TimerFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
-	return this->vtable->nova_time_Nova_TimerFunctionMap_virtualfunctionMapTimerFunctionMap_static_Nova_construct(0, exceptionData);
+	return this->vtable->nova_time_Nova_TimerFunctionMap_virtualfunctionMapTimer_static_Nova_construct(0, exceptionData);
 }
 
 nova_time_Nova_Timer* nova_time_Nova_TimerFunctionMap_virtualfunctionMap_Nova_stop(nova_time_Nova_TimerFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_time_Nova_Timer* reference)

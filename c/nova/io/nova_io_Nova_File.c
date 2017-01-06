@@ -370,7 +370,7 @@ nova_datastruct_list_Nova_Array* nova_io_Nova_FileFunctionMap_functionMap_Nova_g
 {
 	recursive = (int)(recursive == (intptr_t)nova_null ? 0 : recursive);
 	includeHidden = (int)(includeHidden == (intptr_t)nova_null ? 0 : includeHidden);
-	return (nova_datastruct_list_Nova_Array*)nova_io_Nova_File_Nova_getChildFiles(reference, exceptionData, recursive, includeHidden);
+	return nova_io_Nova_File_Nova_getChildFiles(reference, exceptionData, recursive, includeHidden);
 }
 
 nova_Nova_String* nova_io_Nova_FileFunctionMap_functionMap_Nova_toString(nova_io_Nova_FileFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_io_Nova_File* reference)

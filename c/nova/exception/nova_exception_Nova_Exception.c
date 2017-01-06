@@ -134,8 +134,8 @@ void nova_exception_Nova_ExceptionFunctionMap_Nova_super(nova_exception_Nova_Exc
 {
 }
 
-nova_exception_Nova_Exception* nova_exception_Nova_ExceptionFunctionMap_virtualfunctionMapExceptionFunctionMap_static_Nova_construct(nova_exception_Nova_ExceptionFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* message)
+nova_exception_Nova_Exception* nova_exception_Nova_ExceptionFunctionMap_virtualfunctionMapException_static_Nova_construct(nova_exception_Nova_ExceptionFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* message)
 {
-	return this->vtable->nova_exception_Nova_ExceptionFunctionMap_virtualfunctionMapExceptionFunctionMap_static_Nova_construct(0, exceptionData, message);
+	return this->vtable->nova_exception_Nova_ExceptionFunctionMap_virtualfunctionMapException_static_Nova_construct(0, exceptionData, message);
 }
 

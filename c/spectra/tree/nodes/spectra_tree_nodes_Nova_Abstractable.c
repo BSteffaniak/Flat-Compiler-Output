@@ -43,12 +43,12 @@ void spectra_tree_nodes_Nova_Abstractable_Nova_init_static(nova_exception_Nova_E
 
 nova_Nova_String* spectra_tree_nodes_Nova_Abstractable_Nova_writeAbstract(spectra_tree_nodes_Nova_Abstractable* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
-	return (nova_Nova_String*)(spectra_tree_nodes_Nova_Abstractable_virtual_Accessor1_Nova_isAbstract((spectra_tree_nodes_Nova_Abstractable*)(this), exceptionData) ? nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("abstract ")) : nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("")));
+	return (nova_Nova_String*)(spectra_tree_nodes_Nova_Abstractable_virtual_Accessor_Nova_isAbstract((spectra_tree_nodes_Nova_Abstractable*)(this), exceptionData) ? nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("abstract ")) : nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("")));
 }
 
 spectra_tree_nodes_Nova_Abstractable* spectra_tree_nodes_Nova_Abstractable_0_Nova_cloneTo(spectra_tree_nodes_Nova_Abstractable* this, nova_exception_Nova_ExceptionData* exceptionData, spectra_tree_nodes_Nova_Abstractable* other)
 {
-	spectra_tree_nodes_Nova_Abstractable_virtual_Mutator0_Nova_isAbstract((spectra_tree_nodes_Nova_Abstractable*)(other), exceptionData, spectra_tree_nodes_Nova_Abstractable_virtual_Accessor1_Nova_isAbstract((spectra_tree_nodes_Nova_Abstractable*)(this), exceptionData));
+	spectra_tree_nodes_Nova_Abstractable_virtual_Mutator_Nova_isAbstract((spectra_tree_nodes_Nova_Abstractable*)(other), exceptionData, spectra_tree_nodes_Nova_Abstractable_virtual_Accessor_Nova_isAbstract((spectra_tree_nodes_Nova_Abstractable*)(this), exceptionData));
 	return other;
 }
 
@@ -62,14 +62,14 @@ char spectra_tree_nodes_Nova_Abstractable_Mutator_Nova_isAbstract(spectra_tree_n
 	return value;
 }
 
-char spectra_tree_nodes_Nova_Abstractable_virtual_Accessor1_Nova_isAbstract(spectra_tree_nodes_Nova_Abstractable* this, nova_exception_Nova_ExceptionData* exceptionData)
+char spectra_tree_nodes_Nova_Abstractable_virtual_Accessor_Nova_isAbstract(spectra_tree_nodes_Nova_Abstractable* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
-	return this->vtable->itable.spectra_tree_nodes_Nova_Abstractable_virtual_Accessor1_Nova_isAbstract((spectra_tree_nodes_Nova_Abstractable*)(this), exceptionData);
+	return this->vtable->itable.spectra_tree_nodes_Nova_Abstractable_virtual_Accessor_Nova_isAbstract((spectra_tree_nodes_Nova_Abstractable*)(this), exceptionData);
 }
 
-char spectra_tree_nodes_Nova_Abstractable_virtual_Mutator0_Nova_isAbstract(spectra_tree_nodes_Nova_Abstractable* this, nova_exception_Nova_ExceptionData* exceptionData, char value)
+char spectra_tree_nodes_Nova_Abstractable_virtual_Mutator_Nova_isAbstract(spectra_tree_nodes_Nova_Abstractable* this, nova_exception_Nova_ExceptionData* exceptionData, char value)
 {
-	return this->vtable->itable.spectra_tree_nodes_Nova_Abstractable_virtual_Mutator0_Nova_isAbstract((spectra_tree_nodes_Nova_Abstractable*)(this), exceptionData, value);
+	return this->vtable->itable.spectra_tree_nodes_Nova_Abstractable_virtual_Mutator_Nova_isAbstract((spectra_tree_nodes_Nova_Abstractable*)(this), exceptionData, value);
 }
 
 void spectra_tree_nodes_Nova_AbstractableFunctionMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData)

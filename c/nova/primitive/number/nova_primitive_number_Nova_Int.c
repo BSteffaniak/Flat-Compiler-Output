@@ -166,7 +166,7 @@ void nova_primitive_number_Nova_IntFunctionMap_Nova_this(nova_primitive_number_N
 {
 }
 
-int nova_primitive_number_Nova_IntFunctionMap_functionMapIntFunctionMap_static_Nova_construct(nova_primitive_number_Nova_IntFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, int value)
+nova_primitive_number_Nova_Int* nova_primitive_number_Nova_IntFunctionMap_functionMapIntFunctionMap_static_Nova_construct(nova_primitive_number_Nova_IntFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, int value)
 {
 	return nova_primitive_number_Nova_Int_Nova_construct(0, exceptionData, value);
 }

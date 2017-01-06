@@ -151,7 +151,7 @@ void nova_primitive_number_Nova_FloatFunctionMap_Nova_this(nova_primitive_number
 {
 }
 
-float nova_primitive_number_Nova_FloatFunctionMap_functionMapFloatFunctionMap_static_Nova_construct(nova_primitive_number_Nova_FloatFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, float value)
+nova_primitive_number_Nova_Float* nova_primitive_number_Nova_FloatFunctionMap_functionMapFloatFunctionMap_static_Nova_construct(nova_primitive_number_Nova_FloatFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, float value)
 {
 	return nova_primitive_number_Nova_Float_Nova_construct(0, exceptionData, value);
 }

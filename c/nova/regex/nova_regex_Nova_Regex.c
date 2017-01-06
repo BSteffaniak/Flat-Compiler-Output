@@ -257,12 +257,12 @@ char nova_regex_Nova_RegexFunctionMap_functionMap1_static_Nova_containsMatch(nov
 
 nova_datastruct_list_Nova_Array* nova_regex_Nova_RegexFunctionMap_functionMap0_static_Nova_getMatches(nova_regex_Nova_RegexFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_regex_Nova_Pattern* pattern, nova_Nova_String* search)
 {
-	return (nova_datastruct_list_Nova_Array*)nova_regex_Nova_Regex_0_static_Nova_getMatches(0, exceptionData, pattern, search);
+	return nova_regex_Nova_Regex_0_static_Nova_getMatches(0, exceptionData, pattern, search);
 }
 
 nova_datastruct_list_Nova_Array* nova_regex_Nova_RegexFunctionMap_functionMap1_static_Nova_getMatches(nova_regex_Nova_RegexFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* regex, nova_Nova_String* search)
 {
-	return (nova_datastruct_list_Nova_Array*)nova_regex_Nova_Regex_static_Nova_getMatches(0, exceptionData, regex, search);
+	return nova_regex_Nova_Regex_static_Nova_getMatches(0, exceptionData, regex, search);
 }
 
 void nova_regex_Nova_RegexFunctionMap_Nova_super(nova_regex_Nova_RegexFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)

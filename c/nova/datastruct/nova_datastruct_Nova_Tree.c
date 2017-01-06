@@ -165,8 +165,8 @@ void nova_datastruct_Nova_TreeFunctionMap_Nova_super(nova_datastruct_Nova_TreeFu
 {
 }
 
-nova_datastruct_Nova_Tree* nova_datastruct_Nova_TreeFunctionMap_virtualfunctionMapTreeFunctionMap_static_Nova_construct(nova_datastruct_Nova_TreeFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_Nova_Node* root)
+nova_datastruct_Nova_Tree* nova_datastruct_Nova_TreeFunctionMap_virtualfunctionMapTree_static_Nova_construct(nova_datastruct_Nova_TreeFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_Nova_Node* root)
 {
-	return this->vtable->nova_datastruct_Nova_TreeFunctionMap_virtualfunctionMapTreeFunctionMap_static_Nova_construct(0, exceptionData, root);
+	return this->vtable->nova_datastruct_Nova_TreeFunctionMap_virtualfunctionMapTree_static_Nova_construct(0, exceptionData, root);
 }
 

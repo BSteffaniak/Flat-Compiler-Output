@@ -338,7 +338,7 @@ void spectra_tree_nodes_Nova_Node_static_Nova_catchSyntaxErrors(spectra_tree_nod
 spectra_tree_nodes_Nova_Node* spectra_tree_nodes_Nova_Node_Nova_clone(spectra_tree_nodes_Nova_Node* this, nova_exception_Nova_ExceptionData* exceptionData, spectra_tree_nodes_Nova_Node* parent, spectra_util_Nova_Location* location, int cloneChildren)
 {
 	parent = (spectra_tree_nodes_Nova_Node*)(parent == 0 ? (nova_Nova_Object*)this->spectra_tree_nodes_Nova_Node_Nova_parent : (nova_Nova_Object*)parent);
-	location = (spectra_util_Nova_Location*)(location == 0 ? (nova_Nova_Object*)location : (nova_Nova_Object*)location);
+	location = (spectra_util_Nova_Location*)(location == 0 ? (nova_Nova_Object*)this->spectra_tree_nodes_Nova_Node_Nova_location : (nova_Nova_Object*)location);
 	cloneChildren = (int)(cloneChildren == (intptr_t)nova_null ? 1 : cloneChildren);
 	return spectra_tree_nodes_Nova_Node_virtual_Nova_cloneTo((spectra_tree_nodes_Nova_Node*)(this), exceptionData, spectra_tree_nodes_Nova_Node_Nova_construct(0, exceptionData, parent, location));
 }
@@ -943,8 +943,8 @@ void spectra_tree_nodes_Nova_NodeFunctionMap_functionMap_static_Nova_catchSyntax
 
 spectra_tree_nodes_Nova_Node* spectra_tree_nodes_Nova_NodeFunctionMap_functionMap_Nova_clone(spectra_tree_nodes_Nova_NodeFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, spectra_tree_nodes_Nova_Node* reference, spectra_tree_nodes_Nova_Node* parent, spectra_util_Nova_Location* location, int cloneChildren)
 {
-	parent = (spectra_tree_nodes_Nova_Node*)(parent == 0 ? (nova_Nova_Object*)this->spectra_tree_nodes_Nova_Node_Nova_parent : (nova_Nova_Object*)parent);
-	location = (spectra_util_Nova_Location*)(location == 0 ? (nova_Nova_Object*)location : (nova_Nova_Object*)location);
+	parent = (spectra_tree_nodes_Nova_Node*)(parent == 0 ? (nova_Nova_Object*)reference->spectra_tree_nodes_Nova_Node_Nova_parent : (nova_Nova_Object*)parent);
+	location = (spectra_util_Nova_Location*)(location == 0 ? (nova_Nova_Object*)reference->spectra_tree_nodes_Nova_Node_Nova_location : (nova_Nova_Object*)location);
 	cloneChildren = (int)(cloneChildren == (intptr_t)nova_null ? 1 : cloneChildren);
 	return spectra_tree_nodes_Nova_Node_Nova_clone(reference, exceptionData, parent, location, cloneChildren);
 }
@@ -1003,9 +1003,9 @@ void spectra_tree_nodes_Nova_NodeFunctionMap_Nova_super(spectra_tree_nodes_Nova_
 {
 }
 
-spectra_tree_nodes_Nova_Node* spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMapNodeFunctionMap_static_Nova_construct(spectra_tree_nodes_Nova_NodeFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, spectra_tree_nodes_Nova_Node* parent, spectra_util_Nova_Location* location)
+spectra_tree_nodes_Nova_Node* spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMapNode_static_Nova_construct(spectra_tree_nodes_Nova_NodeFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, spectra_tree_nodes_Nova_Node* parent, spectra_util_Nova_Location* location)
 {
-	return this->vtable->spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMapNodeFunctionMap_static_Nova_construct(0, exceptionData, parent, location);
+	return this->vtable->spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMapNode_static_Nova_construct(0, exceptionData, parent, location);
 }
 
 void spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_addChild(spectra_tree_nodes_Nova_NodeFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, spectra_tree_nodes_Nova_Node* reference, spectra_tree_nodes_Nova_Node* child)

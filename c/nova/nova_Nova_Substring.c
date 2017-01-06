@@ -188,7 +188,7 @@ nova_Nova_Substring* nova_Nova_SubstringFunctionMap_functionMapSubstringFunction
 nova_Nova_String* nova_Nova_SubstringFunctionMap_functionMap_Nova_substring(nova_Nova_SubstringFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_Substring* reference, int start, int end)
 {
 	start = (int)(start == (intptr_t)nova_null ? 0 : start);
-	end = (int)(end == (intptr_t)nova_null ? this->nova_Nova_String_Nova_count : end);
+	end = (int)(end == (intptr_t)nova_null ? (nova_Nova_Object*)reference->nova_Nova_String_Nova_count : (nova_Nova_Object*)end);
 	return nova_Nova_Substring_Nova_substring(reference, exceptionData, start, end);
 }
 

@@ -459,9 +459,9 @@ void spectra_tree_nodes_Nova_ValueFunctionMap_Nova_super(spectra_tree_nodes_Nova
 {
 }
 
-spectra_tree_nodes_Nova_Value* spectra_tree_nodes_Nova_ValueFunctionMap_virtualfunctionMapValueFunctionMap_static_Nova_construct(spectra_tree_nodes_Nova_ValueFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, spectra_tree_nodes_Nova_Node* parent, spectra_util_Nova_Location* location, spectra_tree_nodes_Nova_Type* type)
+spectra_tree_nodes_Nova_Value* spectra_tree_nodes_Nova_ValueFunctionMap_virtualfunctionMapValue_static_Nova_construct(spectra_tree_nodes_Nova_ValueFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, spectra_tree_nodes_Nova_Node* parent, spectra_util_Nova_Location* location, spectra_tree_nodes_Nova_Type* type)
 {
-	return this->vtable->spectra_tree_nodes_Nova_ValueFunctionMap_virtualfunctionMapValueFunctionMap_static_Nova_construct(0, exceptionData, parent, location, type);
+	return this->vtable->spectra_tree_nodes_Nova_ValueFunctionMap_virtualfunctionMapValue_static_Nova_construct(0, exceptionData, parent, location, type);
 }
 
 spectra_tree_nodes_Nova_Value* spectra_tree_nodes_Nova_ValueFunctionMap_virtualfunctionMap0_static_Nova_parse(spectra_tree_nodes_Nova_ValueFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* input, spectra_tree_nodes_Nova_Node* parent, spectra_util_Nova_Location* location, int require)

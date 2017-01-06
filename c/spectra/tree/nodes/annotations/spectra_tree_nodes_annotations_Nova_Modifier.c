@@ -34,7 +34,7 @@
 #include <nova/datastruct/nova_datastruct_Nova_ImmutableHashMap.h>
 #include <spectra/tree/nodes/spectra_tree_nodes_Nova_Node.h>
 #include <spectra/tree/nodes/annotations/spectra_tree_nodes_annotations_Nova_Annotation.h>
-#include <spectra/tree/nodes/annotations/spectra_tree_nodes_annotations_Nova_PublicAnnotation.h>
+#include <spectra/tree/nodes/annotations/spectra_tree_nodes_annotations_Nova_PureAnnotation.h>
 #include <spectra/tree/nodes/annotations/spectra_tree_nodes_annotations_Nova_Annotation.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_ImmutableArrayIterator.h>
 #include <spectra/util/spectra_util_Nova_Location.h>
@@ -47,7 +47,7 @@
 #include <spectra/tree/nodes/annotations/spectra_tree_nodes_annotations_Nova_NativeAnnotation.h>
 #include <spectra/tree/nodes/annotations/spectra_tree_nodes_annotations_Nova_OverrideAnnotation.h>
 #include <spectra/tree/nodes/annotations/spectra_tree_nodes_annotations_Nova_PrivateAnnotation.h>
-#include <spectra/tree/nodes/annotations/spectra_tree_nodes_annotations_Nova_PureAnnotation.h>
+#include <spectra/tree/nodes/annotations/spectra_tree_nodes_annotations_Nova_PublicAnnotation.h>
 #include <spectra/tree/nodes/annotations/spectra_tree_nodes_annotations_Nova_StaticAnnotation.h>
 #include <spectra/tree/nodes/annotations/spectra_tree_nodes_annotations_Nova_TargetAnnotation.h>
 #include <spectra/tree/nodes/annotations/spectra_tree_nodes_annotations_Nova_VarAnnotation.h>
@@ -99,8 +99,8 @@ void spectra_tree_nodes_annotations_Nova_Modifier_Nova_init_static(nova_exceptio
 			nova_Nova_String* l2_Nova_alias = (nova_Nova_String*)nova_null;
 			
 			l2_Nova_class = (nova_Nova_Object*)(nova_datastruct_list_Nova_ImmutableArrayIterator_Accessor_Nova_next(nova_local_0, exceptionData));
-			l2_Nova_alias = nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("public"));
-			nova_datastruct_Nova_HashMap_Nova_set((nova_datastruct_Nova_HashMap*)(l1_Nova_modifiers), exceptionData, (nova_Nova_Object*)(l2_Nova_alias), (nova_Nova_Object*)(spectra_tree_nodes_annotations_PublicAnnotation_Extension_VTable_val.classInstance));
+			l2_Nova_alias = nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("pure"));
+			nova_datastruct_Nova_HashMap_Nova_set((nova_datastruct_Nova_HashMap*)(l1_Nova_modifiers), exceptionData, (nova_Nova_Object*)(l2_Nova_alias), (nova_Nova_Object*)(spectra_tree_nodes_annotations_PureAnnotation_Extension_VTable_val.classInstance));
 		}
 		spectra_tree_nodes_annotations_Nova_Modifier_Nova_MODIFIERS = nova_datastruct_Nova_HashMap_Nova_toImmutable((nova_datastruct_Nova_HashMap*)(l1_Nova_modifiers), exceptionData);
 	}
@@ -113,7 +113,7 @@ char spectra_tree_nodes_annotations_Nova_Modifier_Nova_apply(spectra_tree_nodes_
 		if (spectra_tree_nodes_annotations_Nova_Modifier_Nova_onAppliedAsModifier(this, exceptionData, to, 0))
 		{
 			spectra_tree_nodes_Nova_Node_Nova_addAnnotation(to, exceptionData, (spectra_tree_nodes_annotations_Nova_Annotation*)(this));
-			spectra_tree_nodes_annotations_Nova_Modifier_virtual_Mutator0_Nova_aliasUsed((spectra_tree_nodes_annotations_Nova_Modifier*)(this), exceptionData, alias);
+			spectra_tree_nodes_annotations_Nova_Modifier_virtual_Mutator_Nova_aliasUsed((spectra_tree_nodes_annotations_Nova_Modifier*)(this), exceptionData, alias);
 		}
 		else
 		{
@@ -133,7 +133,7 @@ nova_Nova_String* spectra_tree_nodes_annotations_Nova_Modifier_Nova_writeNova(sp
 {
 	nova_Nova_String* nova_local_0 = (nova_Nova_String*)nova_null;
 	
-	return (nova_Nova_String*)((nova_local_0 = (nova_Nova_String*)(spectra_tree_nodes_annotations_Nova_Modifier_virtual_Accessor1_Nova_aliasUsed((spectra_tree_nodes_annotations_Nova_Modifier*)(this), exceptionData))) != (nova_Nova_String*)nova_null ? nova_local_0 : spectra_tree_nodes_annotations_Nova_Annotation_Nova_writeNova(((spectra_tree_nodes_annotations_Nova_Annotation*)this), exceptionData));
+	return (nova_Nova_String*)((nova_local_0 = (nova_Nova_String*)(spectra_tree_nodes_annotations_Nova_Modifier_virtual_Accessor_Nova_aliasUsed((spectra_tree_nodes_annotations_Nova_Modifier*)(this), exceptionData))) != (nova_Nova_String*)nova_null ? nova_local_0 : spectra_tree_nodes_annotations_Nova_Annotation_Nova_writeNova(((spectra_tree_nodes_annotations_Nova_Annotation*)this), exceptionData));
 }
 
 char spectra_tree_nodes_annotations_Nova_Modifier_static_Nova_lambda128(spectra_tree_nodes_annotations_Nova_Modifier* this, nova_exception_Nova_ExceptionData* exceptionData, nova_meta_Nova_Class* _1, int _2, nova_datastruct_list_Nova_Array* _3, Context1* context)
@@ -151,14 +151,14 @@ nova_Nova_String* spectra_tree_nodes_annotations_Nova_Modifier_Mutator_Nova_alia
 	return value;
 }
 
-nova_Nova_String* spectra_tree_nodes_annotations_Nova_Modifier_virtual_Accessor1_Nova_aliasUsed(spectra_tree_nodes_annotations_Nova_Modifier* this, nova_exception_Nova_ExceptionData* exceptionData)
+nova_Nova_String* spectra_tree_nodes_annotations_Nova_Modifier_virtual_Accessor_Nova_aliasUsed(spectra_tree_nodes_annotations_Nova_Modifier* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
-	return this->vtable->itable.spectra_tree_nodes_annotations_Nova_Modifier_virtual_Accessor1_Nova_aliasUsed((spectra_tree_nodes_annotations_Nova_Modifier*)(this), exceptionData);
+	return this->vtable->itable.spectra_tree_nodes_annotations_Nova_Modifier_virtual_Accessor_Nova_aliasUsed((spectra_tree_nodes_annotations_Nova_Modifier*)(this), exceptionData);
 }
 
-nova_Nova_String* spectra_tree_nodes_annotations_Nova_Modifier_virtual_Mutator0_Nova_aliasUsed(spectra_tree_nodes_annotations_Nova_Modifier* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* value)
+nova_Nova_String* spectra_tree_nodes_annotations_Nova_Modifier_virtual_Mutator_Nova_aliasUsed(spectra_tree_nodes_annotations_Nova_Modifier* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* value)
 {
-	return this->vtable->itable.spectra_tree_nodes_annotations_Nova_Modifier_virtual_Mutator0_Nova_aliasUsed((spectra_tree_nodes_annotations_Nova_Modifier*)(this), exceptionData, value);
+	return this->vtable->itable.spectra_tree_nodes_annotations_Nova_Modifier_virtual_Mutator_Nova_aliasUsed((spectra_tree_nodes_annotations_Nova_Modifier*)(this), exceptionData, value);
 }
 
 void spectra_tree_nodes_annotations_Nova_ModifierFunctionMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData)

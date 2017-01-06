@@ -352,22 +352,22 @@ void nova_math_logic_Nova_WFFFunctionMap_functionMap_Nova_decodeFormula(nova_mat
 
 nova_math_logic_Nova_StatementGroup* nova_math_logic_Nova_WFFFunctionMap_functionMap_Nova_searchForConclusion(nova_math_logic_Nova_WFFFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_math_logic_Nova_WFF* reference, nova_Nova_String* wff)
 {
-	return (nova_math_logic_Nova_StatementGroup*)nova_math_logic_Nova_WFF_Nova_searchForConclusion(reference, exceptionData, wff);
+	return nova_math_logic_Nova_WFF_Nova_searchForConclusion(reference, exceptionData, wff);
 }
 
 nova_datastruct_list_Nova_Array* nova_math_logic_Nova_WFFFunctionMap_functionMap_Nova_decodeHypotheses(nova_math_logic_Nova_WFFFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_math_logic_Nova_WFF* reference, nova_Nova_String* wff)
 {
-	return (nova_datastruct_list_Nova_Array*)nova_math_logic_Nova_WFF_Nova_decodeHypotheses(reference, exceptionData, wff);
+	return nova_math_logic_Nova_WFF_Nova_decodeHypotheses(reference, exceptionData, wff);
 }
 
 nova_math_logic_Nova_StatementGroup* nova_math_logic_Nova_WFFFunctionMap_functionMap_Nova_generateHypothesis(nova_math_logic_Nova_WFFFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_math_logic_Nova_WFF* reference, nova_Nova_String* wff, int start, int end)
 {
-	return (nova_math_logic_Nova_StatementGroup*)nova_math_logic_Nova_WFF_Nova_generateHypothesis(reference, exceptionData, wff, start, end);
+	return nova_math_logic_Nova_WFF_Nova_generateHypothesis(reference, exceptionData, wff, start, end);
 }
 
 nova_math_logic_Nova_StatementGroup* nova_math_logic_Nova_WFFFunctionMap_functionMap_Nova_searchForStatement(nova_math_logic_Nova_WFFFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_math_logic_Nova_WFF* reference, nova_Nova_String* wff)
 {
-	return (nova_math_logic_Nova_StatementGroup*)nova_math_logic_Nova_WFF_Nova_searchForStatement(reference, exceptionData, wff);
+	return nova_math_logic_Nova_WFF_Nova_searchForStatement(reference, exceptionData, wff);
 }
 
 int nova_math_logic_Nova_WFFFunctionMap_functionMap_static_Nova_nextNonWhitespaceIndex(nova_math_logic_Nova_WFFFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* wff, int index, int direction)

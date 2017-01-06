@@ -151,7 +151,7 @@ void nova_primitive_number_Nova_ShortFunctionMap_Nova_this(nova_primitive_number
 {
 }
 
-short nova_primitive_number_Nova_ShortFunctionMap_functionMapShortFunctionMap_static_Nova_construct(nova_primitive_number_Nova_ShortFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, short value)
+nova_primitive_number_Nova_Short* nova_primitive_number_Nova_ShortFunctionMap_functionMapShortFunctionMap_static_Nova_construct(nova_primitive_number_Nova_ShortFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, short value)
 {
 	return nova_primitive_number_Nova_Short_Nova_construct(0, exceptionData, value);
 }

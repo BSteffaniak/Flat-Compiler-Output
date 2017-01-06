@@ -96,7 +96,7 @@ nova_Nova_String* nova_io_Nova_InputStreamFunctionMap_functionMap_Nova_readStrin
 
 nova_datastruct_list_Nova_Array* nova_io_Nova_InputStreamFunctionMap_functionMap_Nova_readBytes(nova_io_Nova_InputStreamFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_io_Nova_InputStream* reference)
 {
-	return (nova_datastruct_list_Nova_Array*)nova_io_Nova_InputStream_virtual_Nova_readBytes((nova_io_Nova_InputStream*)(reference), exceptionData);
+	return nova_io_Nova_InputStream_virtual_Nova_readBytes((nova_io_Nova_InputStream*)(reference), exceptionData);
 }
 
 void nova_io_Nova_InputStreamFunctionMap_Nova_super(nova_io_Nova_InputStreamFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)

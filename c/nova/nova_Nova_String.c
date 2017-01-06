@@ -322,7 +322,7 @@ int nova_Nova_String_0_Nova_indexOf(nova_Nova_String* this, nova_exception_Nova_
 	start = (int)(start == (intptr_t)nova_null ? 0 : start);
 	direction = (int)(direction == (intptr_t)nova_null ? 1 : direction);
 	defaultReturnValue = (int)(defaultReturnValue == (intptr_t)nova_null ? -1 : defaultReturnValue);
-	l1_Nova_first = (nova_regex_Nova_Match*)(nova_datastruct_list_Nova_List_virtual_Accessor1_Nova_first((nova_datastruct_list_Nova_List*)(nova_regex_Nova_Regex_0_static_Nova_getMatches(0, exceptionData, search, this)), exceptionData));
+	l1_Nova_first = (nova_regex_Nova_Match*)(nova_datastruct_list_Nova_List_virtual_Accessor_Nova_first((nova_datastruct_list_Nova_List*)(nova_regex_Nova_Regex_0_static_Nova_getMatches(0, exceptionData, search, this)), exceptionData));
 	if ((l1_Nova_first) != (nova_regex_Nova_Match*)nova_null)
 	{
 		return l1_Nova_first->nova_regex_Nova_Match_Nova_start;
@@ -870,7 +870,7 @@ int nova_Nova_StringFunctionMap_functionMap_Nova_compareTo(nova_Nova_StringFunct
 
 nova_datastruct_list_Nova_Array* nova_Nova_StringFunctionMap_functionMap_Nova_split(nova_Nova_StringFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* reference, nova_regex_Nova_Pattern* regex)
 {
-	return (nova_datastruct_list_Nova_Array*)nova_Nova_String_Nova_split(reference, exceptionData, regex);
+	return nova_Nova_String_Nova_split(reference, exceptionData, regex);
 }
 
 nova_Nova_String* nova_Nova_StringFunctionMap_functionMap_Nova_getGroupedChars(nova_Nova_StringFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* reference, nova_datastruct_list_Nova_CharArray* chars, int start, int end, int opposite)
