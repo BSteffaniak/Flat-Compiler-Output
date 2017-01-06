@@ -12,6 +12,7 @@
 #include <nova/primitive/nova_primitive_Nova_Null.h>
 #include <nova/primitive/number/nova_primitive_number_Nova_Char.h>
 #include <nova/primitive/nova_primitive_Nova_Bool.h>
+#include <nova/datastruct/list/nova_datastruct_list_Nova_List.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_Array.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_ImmutableArray.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_IntArray.h>
@@ -31,6 +32,7 @@
 #include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <nova/math/nova_math_Nova_Vector.h>
 #include <nova/math/nova_math_Nova_Vector3D.h>
+#include <nova/math/nova_math_Nova_Vector.h>
 #include <nova/NativeObject.h>
 #include <nova/operators/nova_operators_Nova_EqualsOperator.h>
 
@@ -138,6 +140,7 @@ nova_math_Nova_Vector2DFunctionMap* nova_math_Nova_Vector2DFunctionMap_Nova_cons
 	this->vtable = &nova_math_Vector2D_Vector2DFunctionMap_Extension_VTable_val;
 	nova_Nova_Object_Nova_super((nova_Nova_Object*)this, exceptionData);
 	nova_meta_Nova_FunctionMap_Nova_super((nova_meta_Nova_FunctionMap*)this, exceptionData);
+	nova_math_Nova_VectorFunctionMap_Nova_super((nova_math_Nova_VectorFunctionMap*)this, exceptionData);
 	nova_math_Nova_Vector2DFunctionMap_Nova_super(this, exceptionData);
 	
 	{
@@ -160,6 +163,21 @@ void nova_math_Nova_Vector2DFunctionMap_Nova_destroy(nova_math_Nova_Vector2DFunc
 
 void nova_math_Nova_Vector2DFunctionMap_Nova_this(nova_math_Nova_Vector2DFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
+}
+
+nova_math_Nova_Vector2D* nova_math_Nova_Vector2DFunctionMap_functionMapVector2DFunctionMap0_static_Nova_construct(nova_math_Nova_Vector2DFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+	return nova_math_Nova_Vector2D_0_Nova_construct(0, exceptionData);
+}
+
+nova_math_Nova_Vector2D* nova_math_Nova_Vector2DFunctionMap_functionMapVector2DFunctionMap1_static_Nova_construct(nova_math_Nova_Vector2DFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, double x, double y)
+{
+	return nova_math_Nova_Vector2D_1_Nova_construct(0, exceptionData, x, y);
+}
+
+double nova_math_Nova_Vector2DFunctionMap_functionMap_Nova_dotProduct(nova_math_Nova_Vector2DFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_math_Nova_Vector2D* reference, nova_math_Nova_Vector3D* other)
+{
+	return nova_math_Nova_Vector2D_Nova_dotProduct(reference, exceptionData, other);
 }
 
 void nova_math_Nova_Vector2DFunctionMap_Nova_super(nova_math_Nova_Vector2DFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)

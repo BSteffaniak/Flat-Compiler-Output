@@ -12,6 +12,7 @@
 #include <nova/primitive/nova_primitive_Nova_Null.h>
 #include <nova/primitive/number/nova_primitive_number_Nova_Char.h>
 #include <nova/primitive/nova_primitive_Nova_Bool.h>
+#include <nova/datastruct/list/nova_datastruct_list_Nova_List.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_Array.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_ImmutableArray.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_IntArray.h>
@@ -29,6 +30,7 @@
 #include <nova/meta/nova_meta_Nova_Class.h>
 #include <nova/meta/nova_meta_Nova_FunctionMap.h>
 #include <nova/regex/nova_regex_Nova_Pattern.h>
+#include <nova/datastruct/nova_datastruct_Nova_Tree.h>
 #include <nova/datastruct/nova_datastruct_Nova_Tree.h>
 #include <nova/datastruct/nova_datastruct_Nova_Node.h>
 #include <nova/NativeObject.h>
@@ -88,6 +90,7 @@ nova_math_huffman_Nova_HuffmanTreeFunctionMap* nova_math_huffman_Nova_HuffmanTre
 	this->vtable = &nova_math_huffman_HuffmanTree_HuffmanTreeFunctionMap_Extension_VTable_val;
 	nova_Nova_Object_Nova_super((nova_Nova_Object*)this, exceptionData);
 	nova_meta_Nova_FunctionMap_Nova_super((nova_meta_Nova_FunctionMap*)this, exceptionData);
+	nova_datastruct_Nova_TreeFunctionMap_Nova_super((nova_datastruct_Nova_TreeFunctionMap*)this, exceptionData);
 	nova_math_huffman_Nova_HuffmanTreeFunctionMap_Nova_super(this, exceptionData);
 	
 	{
@@ -110,6 +113,11 @@ void nova_math_huffman_Nova_HuffmanTreeFunctionMap_Nova_destroy(nova_math_huffma
 
 void nova_math_huffman_Nova_HuffmanTreeFunctionMap_Nova_this(nova_math_huffman_Nova_HuffmanTreeFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
+}
+
+nova_math_huffman_Nova_HuffmanTree* nova_math_huffman_Nova_HuffmanTreeFunctionMap_functionMapHuffmanTreeFunctionMap_static_Nova_construct(nova_math_huffman_Nova_HuffmanTreeFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+	return nova_math_huffman_Nova_HuffmanTree_Nova_construct(0, exceptionData);
 }
 
 void nova_math_huffman_Nova_HuffmanTreeFunctionMap_Nova_super(nova_math_huffman_Nova_HuffmanTreeFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)

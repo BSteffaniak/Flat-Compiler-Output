@@ -12,6 +12,7 @@
 #include <nova/primitive/nova_primitive_Nova_Null.h>
 #include <nova/primitive/number/nova_primitive_number_Nova_Char.h>
 #include <nova/primitive/nova_primitive_Nova_Bool.h>
+#include <nova/datastruct/list/nova_datastruct_list_Nova_List.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_Array.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_ImmutableArray.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_IntArray.h>
@@ -118,7 +119,23 @@ void nova_exception_Nova_ExceptionFunctionMap_Nova_this(nova_exception_Nova_Exce
 {
 }
 
+nova_exception_Nova_Exception* nova_exception_Nova_ExceptionFunctionMap_functionMapExceptionFunctionMap_static_Nova_construct(nova_exception_Nova_ExceptionFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* message)
+{
+	message = (nova_Nova_String*)(message == 0 ? (nova_Nova_Object*)nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("")) : (nova_Nova_Object*)message);
+	return nova_exception_Nova_Exception_Nova_construct(0, exceptionData, message);
+}
+
+nova_Nova_String* nova_exception_Nova_ExceptionFunctionMap_functionMap_Nova_toString(nova_exception_Nova_ExceptionFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_exception_Nova_Exception* reference)
+{
+	return nova_Nova_Object_virtual_Nova_toString((nova_Nova_Object*)(reference), exceptionData);
+}
+
 void nova_exception_Nova_ExceptionFunctionMap_Nova_super(nova_exception_Nova_ExceptionFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
+}
+
+nova_exception_Nova_Exception* nova_exception_Nova_ExceptionFunctionMap_virtualfunctionMapExceptionFunctionMap_static_Nova_construct(nova_exception_Nova_ExceptionFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* message)
+{
+	return this->vtable->nova_exception_Nova_ExceptionFunctionMap_virtualfunctionMapExceptionFunctionMap_static_Nova_construct(0, exceptionData, message);
 }
 

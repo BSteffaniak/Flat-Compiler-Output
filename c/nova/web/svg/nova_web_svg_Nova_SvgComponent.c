@@ -12,6 +12,7 @@
 #include <nova/primitive/nova_primitive_Nova_Null.h>
 #include <nova/primitive/number/nova_primitive_number_Nova_Char.h>
 #include <nova/primitive/nova_primitive_Nova_Bool.h>
+#include <nova/datastruct/list/nova_datastruct_list_Nova_List.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_Array.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_ImmutableArray.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_IntArray.h>
@@ -124,7 +125,27 @@ void nova_web_svg_Nova_SvgComponentFunctionMap_Nova_this(nova_web_svg_Nova_SvgCo
 {
 }
 
+nova_web_svg_Nova_SvgComponent* nova_web_svg_Nova_SvgComponentFunctionMap_functionMapSvgComponentFunctionMap_static_Nova_construct(nova_web_svg_Nova_SvgComponentFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+	return nova_web_svg_Nova_SvgComponent_Nova_construct(0, exceptionData);
+}
+
+void nova_web_svg_Nova_SvgComponentFunctionMap_functionMap_Nova_generateOutput(nova_web_svg_Nova_SvgComponentFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_web_svg_Nova_SvgComponent* reference, nova_io_Nova_FileWriter* writer)
+{
+	nova_web_svg_Nova_SvgComponent_virtual_Nova_generateOutput((nova_web_svg_Nova_SvgComponent*)(reference), exceptionData, writer);
+}
+
 void nova_web_svg_Nova_SvgComponentFunctionMap_Nova_super(nova_web_svg_Nova_SvgComponentFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
+}
+
+nova_web_svg_Nova_SvgComponent* nova_web_svg_Nova_SvgComponentFunctionMap_virtualfunctionMapSvgComponentFunctionMap_static_Nova_construct(nova_web_svg_Nova_SvgComponentFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+	return this->vtable->nova_web_svg_Nova_SvgComponentFunctionMap_virtualfunctionMapSvgComponentFunctionMap_static_Nova_construct(0, exceptionData);
+}
+
+void nova_web_svg_Nova_SvgComponentFunctionMap_virtualfunctionMap_Nova_generateOutput(nova_web_svg_Nova_SvgComponentFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_web_svg_Nova_SvgComponent* reference, nova_io_Nova_FileWriter* writer)
+{
+	this->vtable->nova_web_svg_Nova_SvgComponentFunctionMap_virtualfunctionMap_Nova_generateOutput(this, exceptionData, reference, writer);
 }
 

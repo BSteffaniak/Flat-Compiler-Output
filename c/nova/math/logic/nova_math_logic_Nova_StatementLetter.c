@@ -12,6 +12,7 @@
 #include <nova/primitive/nova_primitive_Nova_Null.h>
 #include <nova/primitive/number/nova_primitive_number_Nova_Char.h>
 #include <nova/primitive/nova_primitive_Nova_Bool.h>
+#include <nova/datastruct/list/nova_datastruct_list_Nova_List.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_Array.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_ImmutableArray.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_IntArray.h>
@@ -29,6 +30,7 @@
 #include <nova/meta/nova_meta_Nova_Class.h>
 #include <nova/meta/nova_meta_Nova_FunctionMap.h>
 #include <nova/regex/nova_regex_Nova_Pattern.h>
+#include <nova/math/logic/nova_math_logic_Nova_StatementComponent.h>
 #include <nova/math/logic/nova_math_logic_Nova_StatementComponent.h>
 #include <nova/NativeObject.h>
 #include <nova/operators/nova_operators_Nova_EqualsOperator.h>
@@ -101,6 +103,7 @@ nova_math_logic_Nova_StatementLetterFunctionMap* nova_math_logic_Nova_StatementL
 	this->vtable = &nova_math_logic_StatementLetter_StatementLetterFunctionMap_Extension_VTable_val;
 	nova_Nova_Object_Nova_super((nova_Nova_Object*)this, exceptionData);
 	nova_meta_Nova_FunctionMap_Nova_super((nova_meta_Nova_FunctionMap*)this, exceptionData);
+	nova_math_logic_Nova_StatementComponentFunctionMap_Nova_super((nova_math_logic_Nova_StatementComponentFunctionMap*)this, exceptionData);
 	nova_math_logic_Nova_StatementLetterFunctionMap_Nova_super(this, exceptionData);
 	
 	{
@@ -123,6 +126,11 @@ void nova_math_logic_Nova_StatementLetterFunctionMap_Nova_destroy(nova_math_logi
 
 void nova_math_logic_Nova_StatementLetterFunctionMap_Nova_this(nova_math_logic_Nova_StatementLetterFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
+}
+
+nova_math_logic_Nova_StatementLetter* nova_math_logic_Nova_StatementLetterFunctionMap_functionMapStatementLetterFunctionMap_static_Nova_construct(nova_math_logic_Nova_StatementLetterFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* letter, nova_Nova_String* representation)
+{
+	return nova_math_logic_Nova_StatementLetter_Nova_construct(0, exceptionData, letter, representation);
 }
 
 void nova_math_logic_Nova_StatementLetterFunctionMap_Nova_super(nova_math_logic_Nova_StatementLetterFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)

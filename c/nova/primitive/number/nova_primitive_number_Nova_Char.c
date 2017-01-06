@@ -12,6 +12,7 @@
 #include <nova/primitive/nova_primitive_Nova_Null.h>
 #include <nova/primitive/number/nova_primitive_number_Nova_Char.h>
 #include <nova/primitive/nova_primitive_Nova_Bool.h>
+#include <nova/datastruct/list/nova_datastruct_list_Nova_List.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_Array.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_ImmutableArray.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_IntArray.h>
@@ -31,6 +32,11 @@
 #include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <nova/datastruct/nova_datastruct_Nova_Comparable.h>
 #include <nova/primitive/number/nova_primitive_number_Nova_Integer.h>
+#include <nova/primitive/number/nova_primitive_number_Nova_Number.h>
+#include <nova/datastruct/nova_datastruct_Nova_Comparable.h>
+#include <nova/primitive/number/nova_primitive_number_Nova_Integer.h>
+#include <nova/primitive/nova_primitive_Nova_Primitive.h>
+#include <nova/operators/nova_operators_Nova_MultiplyOperator.h>
 #include <nova/primitive/nova_primitive_Nova_Primitive.h>
 #include <nova/operators/nova_operators_Nova_MultiplyOperator.h>
 #include <nova/NativeObject.h>
@@ -148,6 +154,8 @@ nova_primitive_number_Nova_CharFunctionMap* nova_primitive_number_Nova_CharFunct
 	this->vtable = &nova_primitive_number_Char_CharFunctionMap_Extension_VTable_val;
 	nova_Nova_Object_Nova_super((nova_Nova_Object*)this, exceptionData);
 	nova_meta_Nova_FunctionMap_Nova_super((nova_meta_Nova_FunctionMap*)this, exceptionData);
+	nova_primitive_Nova_PrimitiveFunctionMap_Nova_super((nova_primitive_Nova_PrimitiveFunctionMap*)this, exceptionData);
+	nova_primitive_number_Nova_NumberFunctionMap_Nova_super((nova_primitive_number_Nova_NumberFunctionMap*)this, exceptionData);
 	nova_primitive_number_Nova_CharFunctionMap_Nova_super(this, exceptionData);
 	
 	{
@@ -170,6 +178,51 @@ void nova_primitive_number_Nova_CharFunctionMap_Nova_destroy(nova_primitive_numb
 
 void nova_primitive_number_Nova_CharFunctionMap_Nova_this(nova_primitive_number_Nova_CharFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
+}
+
+char nova_primitive_number_Nova_CharFunctionMap_functionMapCharFunctionMap_static_Nova_construct(nova_primitive_number_Nova_CharFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, char value)
+{
+	return nova_primitive_number_Nova_Char_Nova_construct(0, exceptionData, value);
+}
+
+char nova_primitive_number_Nova_CharFunctionMap_functionMap_static_Nova_toLowerCase(nova_primitive_number_Nova_CharFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, char c)
+{
+	return nova_primitive_number_Nova_Char_static_Nova_toLowerCase(0, exceptionData, c);
+}
+
+char nova_primitive_number_Nova_CharFunctionMap_functionMap_static_Nova_toUpperCase(nova_primitive_number_Nova_CharFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, char c)
+{
+	return nova_primitive_number_Nova_Char_static_Nova_toUpperCase(0, exceptionData, c);
+}
+
+char nova_primitive_number_Nova_CharFunctionMap_functionMap_Nova_toLowerCase(nova_primitive_number_Nova_CharFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_primitive_number_Nova_Char* reference)
+{
+	return nova_primitive_number_Nova_Char_Nova_toLowerCase(reference, exceptionData);
+}
+
+char nova_primitive_number_Nova_CharFunctionMap_functionMap_Nova_toUpperCase(nova_primitive_number_Nova_CharFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_primitive_number_Nova_Char* reference)
+{
+	return nova_primitive_number_Nova_Char_Nova_toUpperCase(reference, exceptionData);
+}
+
+char nova_primitive_number_Nova_CharFunctionMap_functionMap0_Nova_compareTo(nova_primitive_number_Nova_CharFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_primitive_number_Nova_Char* reference, char other)
+{
+	return nova_primitive_number_Nova_Char_0_Nova_compareTo(reference, exceptionData, other);
+}
+
+char nova_primitive_number_Nova_CharFunctionMap_functionMap_Nova_multiply(nova_primitive_number_Nova_CharFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_primitive_number_Nova_Char* reference, char value)
+{
+	return (char)nova_primitive_number_Nova_Char_Nova_multiply(reference, exceptionData, value);
+}
+
+nova_Nova_String* nova_primitive_number_Nova_CharFunctionMap_functionMap_Nova_toString(nova_primitive_number_Nova_CharFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_primitive_number_Nova_Char* reference)
+{
+	return nova_Nova_Object_virtual_Nova_toString((nova_Nova_Object*)(reference), exceptionData);
+}
+
+nova_Nova_String* nova_primitive_number_Nova_CharFunctionMap_functionMap_static_Nova_toString(nova_primitive_number_Nova_CharFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, char c)
+{
+	return nova_primitive_number_Nova_Char_static_Nova_toString(0, exceptionData, c);
 }
 
 void nova_primitive_number_Nova_CharFunctionMap_Nova_super(nova_primitive_number_Nova_CharFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)

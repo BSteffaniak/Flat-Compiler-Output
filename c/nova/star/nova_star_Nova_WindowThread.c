@@ -12,6 +12,7 @@
 #include <nova/primitive/nova_primitive_Nova_Null.h>
 #include <nova/primitive/number/nova_primitive_number_Nova_Char.h>
 #include <nova/primitive/nova_primitive_Nova_Bool.h>
+#include <nova/datastruct/list/nova_datastruct_list_Nova_List.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_Array.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_ImmutableArray.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_IntArray.h>
@@ -31,6 +32,7 @@
 #include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <nova/star/NativeWindow.h>
 #include <nova/star/nova_star_Nova_Window.h>
+#include <nova/thread/nova_thread_Nova_Thread.h>
 #include <nova/thread/NativeThread.h>
 #include <nova/NativeObject.h>
 #include <nova/operators/nova_operators_Nova_EqualsOperator.h>
@@ -110,6 +112,7 @@ nova_star_Nova_WindowThreadFunctionMap* nova_star_Nova_WindowThreadFunctionMap_N
 	this->vtable = &nova_star_WindowThread_WindowThreadFunctionMap_Extension_VTable_val;
 	nova_Nova_Object_Nova_super((nova_Nova_Object*)this, exceptionData);
 	nova_meta_Nova_FunctionMap_Nova_super((nova_meta_Nova_FunctionMap*)this, exceptionData);
+	nova_thread_Nova_ThreadFunctionMap_Nova_super((nova_thread_Nova_ThreadFunctionMap*)this, exceptionData);
 	nova_star_Nova_WindowThreadFunctionMap_Nova_super(this, exceptionData);
 	
 	{
@@ -132,6 +135,16 @@ void nova_star_Nova_WindowThreadFunctionMap_Nova_destroy(nova_star_Nova_WindowTh
 
 void nova_star_Nova_WindowThreadFunctionMap_Nova_this(nova_star_Nova_WindowThreadFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
+}
+
+nova_star_Nova_WindowThread* nova_star_Nova_WindowThreadFunctionMap_functionMapWindowThreadFunctionMap_static_Nova_construct(nova_star_Nova_WindowThreadFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_star_Nova_Window* window)
+{
+	return nova_star_Nova_WindowThread_Nova_construct(0, exceptionData, window);
+}
+
+void nova_star_Nova_WindowThreadFunctionMap_functionMap_Nova_run(nova_star_Nova_WindowThreadFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_star_Nova_WindowThread* reference)
+{
+	nova_star_Nova_WindowThread_Nova_run(reference, exceptionData);
 }
 
 void nova_star_Nova_WindowThreadFunctionMap_Nova_super(nova_star_Nova_WindowThreadFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)

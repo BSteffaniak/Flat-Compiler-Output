@@ -12,6 +12,7 @@
 #include <nova/primitive/nova_primitive_Nova_Null.h>
 #include <nova/primitive/number/nova_primitive_number_Nova_Char.h>
 #include <nova/primitive/nova_primitive_Nova_Bool.h>
+#include <nova/datastruct/list/nova_datastruct_list_Nova_List.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_Array.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_ImmutableArray.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_IntArray.h>
@@ -167,6 +168,11 @@ void spectra_util_Nova_OSFunctionMap_Nova_destroy(spectra_util_Nova_OSFunctionMa
 
 void spectra_util_Nova_OSFunctionMap_Nova_this(spectra_util_Nova_OSFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
+}
+
+spectra_util_Nova_OS* spectra_util_Nova_OSFunctionMap_functionMapOSFunctionMap_static_Nova_construct(spectra_util_Nova_OSFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+	return spectra_util_Nova_OS_func_Nova_construct(0, exceptionData);
 }
 
 void spectra_util_Nova_OSFunctionMap_Nova_super(spectra_util_Nova_OSFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)

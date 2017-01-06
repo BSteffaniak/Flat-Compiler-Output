@@ -12,6 +12,7 @@
 #include <nova/primitive/nova_primitive_Nova_Null.h>
 #include <nova/primitive/number/nova_primitive_number_Nova_Char.h>
 #include <nova/primitive/nova_primitive_Nova_Bool.h>
+#include <nova/datastruct/list/nova_datastruct_list_Nova_List.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_Array.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_ImmutableArray.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_IntArray.h>
@@ -33,6 +34,7 @@
 #include <nova/datastruct/list/nova_datastruct_list_Nova_Iterator.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_Stack.h>
 #include <spectra/tree/nodes/spectra_tree_nodes_Nova_Node.h>
+#include <nova/datastruct/list/nova_datastruct_list_Nova_Iterator.h>
 #include <nova/NativeObject.h>
 #include <nova/operators/nova_operators_Nova_EqualsOperator.h>
 
@@ -232,6 +234,21 @@ void spectra_tree_Nova_StatementIteratorFunctionMap_Nova_destroy(spectra_tree_No
 
 void spectra_tree_Nova_StatementIteratorFunctionMap_Nova_this(spectra_tree_Nova_StatementIteratorFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
+}
+
+spectra_tree_Nova_StatementIterator* spectra_tree_Nova_StatementIteratorFunctionMap_functionMapStatementIteratorFunctionMap_static_Nova_construct(spectra_tree_Nova_StatementIteratorFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* source, nova_datastruct_list_Nova_Stack* parents)
+{
+	return spectra_tree_Nova_StatementIterator_Nova_construct(0, exceptionData, source, parents);
+}
+
+void spectra_tree_Nova_StatementIteratorFunctionMap_functionMap_Nova_updateScopeProperties(spectra_tree_Nova_StatementIteratorFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, spectra_tree_Nova_StatementIterator* reference)
+{
+	spectra_tree_Nova_StatementIterator_Nova_updateScopeProperties(reference, exceptionData);
+}
+
+spectra_tree_Nova_StatementIterator* spectra_tree_Nova_StatementIteratorFunctionMap_functionMap_Nova_reset(spectra_tree_Nova_StatementIteratorFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, spectra_tree_Nova_StatementIterator* reference)
+{
+	return spectra_tree_Nova_StatementIterator_Nova_reset(reference, exceptionData);
 }
 
 void spectra_tree_Nova_StatementIteratorFunctionMap_Nova_super(spectra_tree_Nova_StatementIteratorFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)

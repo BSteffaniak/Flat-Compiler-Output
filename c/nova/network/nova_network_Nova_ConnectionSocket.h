@@ -22,6 +22,7 @@ typedef struct nova_network_Nova_ConnectionSocketFunctionMap nova_network_Nova_C
 #include <nova/primitive/nova_primitive_Nova_Null.h>
 #include <nova/primitive/number/nova_primitive_number_Nova_Char.h>
 #include <nova/primitive/nova_primitive_Nova_Bool.h>
+#include <nova/datastruct/list/nova_datastruct_list_Nova_List.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_Array.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_ImmutableArray.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_IntArray.h>
@@ -44,6 +45,7 @@ typedef struct nova_network_Nova_ConnectionSocketFunctionMap nova_network_Nova_C
 #include <nova/datastruct/list/nova_datastruct_list_Nova_Queue.h>
 #include <nova/network/nova_network_Nova_NetworkInputStream.h>
 #include <nova/network/nova_network_Nova_NetworkOutputStream.h>
+#include <nova/network/nova_network_Nova_Socket.h>
 #include <nova/network/nova_network_Nova_Socket.h>
 #include <nova/NativeObject.h>
 #include <nova/operators/nova_operators_Nova_EqualsOperator.h>
@@ -82,6 +84,11 @@ void nova_network_Nova_ConnectionSocketFunctionMap_Nova_init_static(nova_excepti
 nova_network_Nova_ConnectionSocketFunctionMap* nova_network_Nova_ConnectionSocketFunctionMap_Nova_construct(nova_network_Nova_ConnectionSocketFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
 void nova_network_Nova_ConnectionSocketFunctionMap_Nova_destroy(nova_network_Nova_ConnectionSocketFunctionMap** this, nova_exception_Nova_ExceptionData* exceptionData);
 void nova_network_Nova_ConnectionSocketFunctionMap_Nova_this(nova_network_Nova_ConnectionSocketFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+void nova_network_Nova_ConnectionSocketFunctionMap_functionMap_Nova_close(nova_network_Nova_ConnectionSocketFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_network_Nova_ConnectionSocket* reference);
+char nova_network_Nova_ConnectionSocketFunctionMap_functionMap_Nova_validateConnection(nova_network_Nova_ConnectionSocketFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_network_Nova_ConnectionSocket* reference);
+nova_Nova_String* nova_network_Nova_ConnectionSocketFunctionMap_functionMap0_Nova_readString(nova_network_Nova_ConnectionSocketFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_network_Nova_ConnectionSocket* reference);
+nova_Nova_String* nova_network_Nova_ConnectionSocketFunctionMap_functionMap1_Nova_readString(nova_network_Nova_ConnectionSocketFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_network_Nova_ConnectionSocket* reference, char checkBuffer);
+char nova_network_Nova_ConnectionSocketFunctionMap_functionMap_Nova_write(nova_network_Nova_ConnectionSocketFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_network_Nova_ConnectionSocket* reference, nova_Nova_String* data);
 void nova_network_Nova_ConnectionSocketFunctionMap_Nova_super(nova_network_Nova_ConnectionSocketFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
 
 #endif

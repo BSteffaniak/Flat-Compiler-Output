@@ -12,6 +12,7 @@
 #include <nova/primitive/nova_primitive_Nova_Null.h>
 #include <nova/primitive/number/nova_primitive_number_Nova_Char.h>
 #include <nova/primitive/nova_primitive_Nova_Bool.h>
+#include <nova/datastruct/list/nova_datastruct_list_Nova_List.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_Array.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_ImmutableArray.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_IntArray.h>
@@ -30,6 +31,8 @@
 #include <nova/meta/nova_meta_Nova_FunctionMap.h>
 #include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <spectra/tree/nodes/annotations/spectra_tree_nodes_annotations_Nova_Annotation.h>
+#include <nova/NativeObject.h>
+#include <nova/operators/nova_operators_Nova_EqualsOperator.h>
 
 
 
@@ -53,5 +56,55 @@ nova_datastruct_list_Nova_Array* spectra_tree_nodes_annotations_Nova_Annotatable
 void spectra_tree_nodes_annotations_Nova_Annotatable_virtual_Nova_addAnnotation(spectra_tree_nodes_annotations_Nova_Annotatable* this, nova_exception_Nova_ExceptionData* exceptionData, spectra_tree_nodes_annotations_Nova_Annotation* annotation)
 {
 	this->vtable->itable.spectra_tree_nodes_annotations_Nova_Annotatable_virtual_Nova_addAnnotation((spectra_tree_nodes_annotations_Nova_Annotatable*)(this), exceptionData, annotation);
+}
+
+void spectra_tree_nodes_annotations_Nova_AnnotatableFunctionMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData)
+{
+	{
+	}
+}
+
+spectra_tree_nodes_annotations_Nova_AnnotatableFunctionMap* spectra_tree_nodes_annotations_Nova_AnnotatableFunctionMap_Nova_construct(spectra_tree_nodes_annotations_Nova_AnnotatableFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+	CCLASS_NEW(spectra_tree_nodes_annotations_Nova_AnnotatableFunctionMap, this,);
+	this->vtable = &spectra_tree_nodes_annotations_Annotatable_AnnotatableFunctionMap_Extension_VTable_val;
+	nova_Nova_Object_Nova_super((nova_Nova_Object*)this, exceptionData);
+	nova_meta_Nova_FunctionMap_Nova_super((nova_meta_Nova_FunctionMap*)this, exceptionData);
+	spectra_tree_nodes_annotations_Nova_AnnotatableFunctionMap_Nova_super(this, exceptionData);
+	
+	{
+		spectra_tree_nodes_annotations_Nova_AnnotatableFunctionMap_Nova_this(this, exceptionData);
+	}
+	
+	return this;
+}
+
+void spectra_tree_nodes_annotations_Nova_AnnotatableFunctionMap_Nova_destroy(spectra_tree_nodes_annotations_Nova_AnnotatableFunctionMap** this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+	if (!*this)
+	{
+		return;
+	}
+	
+	
+	NOVA_FREE(*this);
+}
+
+void spectra_tree_nodes_annotations_Nova_AnnotatableFunctionMap_Nova_this(spectra_tree_nodes_annotations_Nova_AnnotatableFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+}
+
+void spectra_tree_nodes_annotations_Nova_AnnotatableFunctionMap_functionMap0_Nova_addAnnotation(spectra_tree_nodes_annotations_Nova_AnnotatableFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, spectra_tree_nodes_annotations_Nova_Annotatable* reference, spectra_tree_nodes_annotations_Nova_Annotation* annotation)
+{
+	spectra_tree_nodes_annotations_Nova_Annotatable_virtual_Nova_addAnnotation((spectra_tree_nodes_annotations_Nova_Annotatable*)(reference), exceptionData, annotation);
+}
+
+void spectra_tree_nodes_annotations_Nova_AnnotatableFunctionMap_Nova_super(spectra_tree_nodes_annotations_Nova_AnnotatableFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+}
+
+void spectra_tree_nodes_annotations_Nova_AnnotatableFunctionMap_virtualfunctionMap0_Nova_addAnnotation(spectra_tree_nodes_annotations_Nova_AnnotatableFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, spectra_tree_nodes_annotations_Nova_Annotatable* reference, spectra_tree_nodes_annotations_Nova_Annotation* annotation)
+{
+	this->vtable->itable.spectra_tree_nodes_annotations_Nova_AnnotatableFunctionMap_virtualfunctionMap0_Nova_addAnnotation(this, exceptionData, reference, annotation);
 }
 

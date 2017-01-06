@@ -12,6 +12,7 @@
 #include <nova/primitive/nova_primitive_Nova_Null.h>
 #include <nova/primitive/number/nova_primitive_number_Nova_Char.h>
 #include <nova/primitive/nova_primitive_Nova_Bool.h>
+#include <nova/datastruct/list/nova_datastruct_list_Nova_List.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_Array.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_ImmutableArray.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_IntArray.h>
@@ -115,6 +116,12 @@ void nova_web_svg_Nova_SvgComponentNodeFunctionMap_Nova_destroy(nova_web_svg_Nov
 
 void nova_web_svg_Nova_SvgComponentNodeFunctionMap_Nova_this(nova_web_svg_Nova_SvgComponentNodeFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
+}
+
+nova_web_svg_Nova_SvgComponentNode* nova_web_svg_Nova_SvgComponentNodeFunctionMap_functionMapSvgComponentNodeFunctionMap_static_Nova_construct(nova_web_svg_Nova_SvgComponentNodeFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_web_svg_Nova_SvgComponent* component, nova_web_svg_Nova_SvgComponentNode* next)
+{
+	next = (nova_web_svg_Nova_SvgComponentNode*)(next == 0 ? (nova_Nova_Object*)(nova_Nova_Object*)nova_null : (nova_Nova_Object*)next);
+	return nova_web_svg_Nova_SvgComponentNode_Nova_construct(0, exceptionData, component, next);
 }
 
 void nova_web_svg_Nova_SvgComponentNodeFunctionMap_Nova_super(nova_web_svg_Nova_SvgComponentNodeFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)

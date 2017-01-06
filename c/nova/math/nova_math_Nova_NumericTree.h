@@ -22,6 +22,7 @@ typedef struct nova_math_Nova_NumericTreeFunctionMap nova_math_Nova_NumericTreeF
 #include <nova/primitive/nova_primitive_Nova_Null.h>
 #include <nova/primitive/number/nova_primitive_number_Nova_Char.h>
 #include <nova/primitive/nova_primitive_Nova_Bool.h>
+#include <nova/datastruct/list/nova_datastruct_list_Nova_List.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_Array.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_ImmutableArray.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_IntArray.h>
@@ -69,6 +70,8 @@ void nova_math_Nova_NumericTreeFunctionMap_Nova_init_static(nova_exception_Nova_
 nova_math_Nova_NumericTreeFunctionMap* nova_math_Nova_NumericTreeFunctionMap_Nova_construct(nova_math_Nova_NumericTreeFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
 void nova_math_Nova_NumericTreeFunctionMap_Nova_destroy(nova_math_Nova_NumericTreeFunctionMap** this, nova_exception_Nova_ExceptionData* exceptionData);
 void nova_math_Nova_NumericTreeFunctionMap_Nova_this(nova_math_Nova_NumericTreeFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+nova_math_Nova_NumericTree* nova_math_Nova_NumericTreeFunctionMap_functionMapNumericTreeFunctionMap_static_Nova_construct(nova_math_Nova_NumericTreeFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* statement);
+nova_Nova_String* nova_math_Nova_NumericTreeFunctionMap_functionMap_Nova_toString(nova_math_Nova_NumericTreeFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_math_Nova_NumericTree* reference);
 void nova_math_Nova_NumericTreeFunctionMap_Nova_super(nova_math_Nova_NumericTreeFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
 
 #endif

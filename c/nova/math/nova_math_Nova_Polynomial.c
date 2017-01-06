@@ -12,6 +12,7 @@
 #include <nova/primitive/nova_primitive_Nova_Null.h>
 #include <nova/primitive/number/nova_primitive_number_Nova_Char.h>
 #include <nova/primitive/nova_primitive_Nova_Bool.h>
+#include <nova/datastruct/list/nova_datastruct_list_Nova_List.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_Array.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_ImmutableArray.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_IntArray.h>
@@ -204,6 +205,26 @@ void nova_math_Nova_PolynomialFunctionMap_Nova_destroy(nova_math_Nova_Polynomial
 
 void nova_math_Nova_PolynomialFunctionMap_Nova_this(nova_math_Nova_PolynomialFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
+}
+
+nova_math_Nova_Polynomial* nova_math_Nova_PolynomialFunctionMap_functionMapPolynomialFunctionMap_static_Nova_construct(nova_math_Nova_PolynomialFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* polynomial)
+{
+	return nova_math_Nova_Polynomial_Nova_construct(0, exceptionData, polynomial);
+}
+
+char nova_math_Nova_PolynomialFunctionMap_functionMap_static_Nova_isLetter(nova_math_Nova_PolynomialFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, char c)
+{
+	return nova_math_Nova_Polynomial_static_Nova_isLetter(0, exceptionData, c);
+}
+
+char nova_math_Nova_PolynomialFunctionMap_functionMap_static_Nova_isSymbol(nova_math_Nova_PolynomialFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, char c)
+{
+	return nova_math_Nova_Polynomial_static_Nova_isSymbol(0, exceptionData, c);
+}
+
+char nova_math_Nova_PolynomialFunctionMap_functionMap_static_Nova_isWhitespace(nova_math_Nova_PolynomialFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, char c)
+{
+	return nova_math_Nova_Polynomial_static_Nova_isWhitespace(0, exceptionData, c);
 }
 
 void nova_math_Nova_PolynomialFunctionMap_Nova_super(nova_math_Nova_PolynomialFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)

@@ -12,6 +12,7 @@
 #include <nova/primitive/nova_primitive_Nova_Null.h>
 #include <nova/primitive/number/nova_primitive_number_Nova_Char.h>
 #include <nova/primitive/nova_primitive_Nova_Bool.h>
+#include <nova/datastruct/list/nova_datastruct_list_Nova_List.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_Array.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_ImmutableArray.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_IntArray.h>
@@ -237,6 +238,31 @@ void nova_regex_Nova_RegexFunctionMap_Nova_destroy(nova_regex_Nova_RegexFunction
 
 void nova_regex_Nova_RegexFunctionMap_Nova_this(nova_regex_Nova_RegexFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
+}
+
+nova_regex_Nova_Regex* nova_regex_Nova_RegexFunctionMap_functionMapRegexFunctionMap_static_Nova_construct(nova_regex_Nova_RegexFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+	return nova_regex_Nova_Regex_Nova_construct(0, exceptionData);
+}
+
+char nova_regex_Nova_RegexFunctionMap_functionMap0_static_Nova_containsMatch(nova_regex_Nova_RegexFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_regex_Nova_Pattern* pattern, nova_Nova_String* search)
+{
+	return nova_regex_Nova_Regex_0_static_Nova_containsMatch(0, exceptionData, pattern, search);
+}
+
+char nova_regex_Nova_RegexFunctionMap_functionMap1_static_Nova_containsMatch(nova_regex_Nova_RegexFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* regex, nova_Nova_String* search)
+{
+	return nova_regex_Nova_Regex_1_static_Nova_containsMatch(0, exceptionData, regex, search);
+}
+
+nova_datastruct_list_Nova_Array* nova_regex_Nova_RegexFunctionMap_functionMap0_static_Nova_getMatches(nova_regex_Nova_RegexFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_regex_Nova_Pattern* pattern, nova_Nova_String* search)
+{
+	return (nova_datastruct_list_Nova_Array*)nova_regex_Nova_Regex_0_static_Nova_getMatches(0, exceptionData, pattern, search);
+}
+
+nova_datastruct_list_Nova_Array* nova_regex_Nova_RegexFunctionMap_functionMap1_static_Nova_getMatches(nova_regex_Nova_RegexFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* regex, nova_Nova_String* search)
+{
+	return (nova_datastruct_list_Nova_Array*)nova_regex_Nova_Regex_static_Nova_getMatches(0, exceptionData, regex, search);
 }
 
 void nova_regex_Nova_RegexFunctionMap_Nova_super(nova_regex_Nova_RegexFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)

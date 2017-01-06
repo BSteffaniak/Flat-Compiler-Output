@@ -12,6 +12,7 @@
 #include <nova/primitive/nova_primitive_Nova_Null.h>
 #include <nova/primitive/number/nova_primitive_number_Nova_Char.h>
 #include <nova/primitive/nova_primitive_Nova_Bool.h>
+#include <nova/datastruct/list/nova_datastruct_list_Nova_List.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_Array.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_ImmutableArray.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_IntArray.h>
@@ -107,6 +108,11 @@ void nova_ar_Nova_ImageTrackerFunctionMap_Nova_destroy(nova_ar_Nova_ImageTracker
 
 void nova_ar_Nova_ImageTrackerFunctionMap_Nova_this(nova_ar_Nova_ImageTrackerFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
+}
+
+nova_ar_Nova_ImageTracker* nova_ar_Nova_ImageTrackerFunctionMap_functionMapImageTrackerFunctionMap_static_Nova_construct(nova_ar_Nova_ImageTrackerFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+	return nova_ar_Nova_ImageTracker_Nova_construct(0, exceptionData);
 }
 
 void nova_ar_Nova_ImageTrackerFunctionMap_Nova_super(nova_ar_Nova_ImageTrackerFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)

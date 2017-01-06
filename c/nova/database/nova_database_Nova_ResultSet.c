@@ -12,6 +12,7 @@
 #include <nova/primitive/nova_primitive_Nova_Null.h>
 #include <nova/primitive/number/nova_primitive_number_Nova_Char.h>
 #include <nova/primitive/nova_primitive_Nova_Bool.h>
+#include <nova/datastruct/list/nova_datastruct_list_Nova_List.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_Array.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_ImmutableArray.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_IntArray.h>
@@ -121,6 +122,11 @@ void nova_database_Nova_ResultSetFunctionMap_Nova_destroy(nova_database_Nova_Res
 
 void nova_database_Nova_ResultSetFunctionMap_Nova_this(nova_database_Nova_ResultSetFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
+}
+
+nova_database_Nova_ResultSet* nova_database_Nova_ResultSetFunctionMap_functionMapResultSetFunctionMap_static_Nova_construct(nova_database_Nova_ResultSetFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_list_Nova_Array* rows, int numCols)
+{
+	return nova_database_Nova_ResultSet_Nova_construct(0, exceptionData, rows, numCols);
 }
 
 void nova_database_Nova_ResultSetFunctionMap_Nova_super(nova_database_Nova_ResultSetFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)

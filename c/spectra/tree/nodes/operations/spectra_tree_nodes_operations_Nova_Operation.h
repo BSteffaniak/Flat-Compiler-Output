@@ -22,6 +22,7 @@ typedef struct spectra_tree_nodes_operations_Nova_OperationFunctionMap spectra_t
 #include <nova/primitive/nova_primitive_Nova_Null.h>
 #include <nova/primitive/number/nova_primitive_number_Nova_Char.h>
 #include <nova/primitive/nova_primitive_Nova_Bool.h>
+#include <nova/datastruct/list/nova_datastruct_list_Nova_List.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_Array.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_ImmutableArray.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_IntArray.h>
@@ -44,6 +45,7 @@ typedef struct spectra_tree_nodes_operations_Nova_OperationFunctionMap spectra_t
 #include <spectra/tree/nodes/spectra_tree_nodes_Nova_Node.h>
 #include <spectra/util/spectra_util_Nova_Location.h>
 #include <spectra/tree/nodes/operations/spectra_tree_nodes_operations_Nova_Operator.h>
+#include <spectra/tree/nodes/spectra_tree_nodes_Nova_Value.h>
 #include <nova/datastruct/nova_datastruct_Nova_Tuple2.h>
 #include <spectra/spectra_Nova_SyntaxMessage.h>
 #include <spectra/tree/nodes/arrays/spectra_tree_nodes_arrays_Nova_ArrayAccess.h>
@@ -68,6 +70,7 @@ typedef struct spectra_tree_nodes_operations_Nova_OperationFunctionMap spectra_t
 #include <spectra/tree/nodes/spectra_tree_nodes_Nova_Priority.h>
 #include <spectra/tree/nodes/spectra_tree_nodes_Nova_StaticClassReference.h>
 #include <spectra/tree/nodes/spectra_tree_nodes_Nova_Type.h>
+#include <spectra/tree/nodes/spectra_tree_nodes_Nova_Node.h>
 #include <spectra/spectra_Nova_SyntaxErrorException.h>
 #include <spectra/error/spectra_error_Nova_UnimplementedOperationException.h>
 #include <spectra/tree/nodes/annotations/spectra_tree_nodes_annotations_Nova_Annotatable.h>
@@ -80,6 +83,7 @@ typedef struct spectra_tree_nodes_operations_Nova_OperationFunctionMap spectra_t
 #include <spectra/tree/nodes/spectra_tree_nodes_Nova_Program.h>
 #include <spectra/tree/nodes/spectra_tree_nodes_Nova_Scope.h>
 #include <spectra/tree/nodes/spectra_tree_nodes_Nova_ValidationResult.h>
+#include <spectra/tree/nodes/annotations/spectra_tree_nodes_annotations_Nova_Annotatable.h>
 #include <nova/NativeObject.h>
 #include <nova/operators/nova_operators_Nova_EqualsOperator.h>
 
@@ -116,6 +120,12 @@ void spectra_tree_nodes_operations_Nova_OperationFunctionMap_Nova_init_static(no
 spectra_tree_nodes_operations_Nova_OperationFunctionMap* spectra_tree_nodes_operations_Nova_OperationFunctionMap_Nova_construct(spectra_tree_nodes_operations_Nova_OperationFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
 void spectra_tree_nodes_operations_Nova_OperationFunctionMap_Nova_destroy(spectra_tree_nodes_operations_Nova_OperationFunctionMap** this, nova_exception_Nova_ExceptionData* exceptionData);
 void spectra_tree_nodes_operations_Nova_OperationFunctionMap_Nova_this(spectra_tree_nodes_operations_Nova_OperationFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+spectra_tree_nodes_operations_Nova_Operation* spectra_tree_nodes_operations_Nova_OperationFunctionMap_functionMapOperationFunctionMap_static_Nova_construct(spectra_tree_nodes_operations_Nova_OperationFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, spectra_tree_nodes_Nova_Node* parent, spectra_util_Nova_Location* location);
+spectra_tree_nodes_operations_Nova_Operation* spectra_tree_nodes_operations_Nova_OperationFunctionMap_functionMap_static_Nova_parse(spectra_tree_nodes_operations_Nova_OperationFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* input, spectra_tree_nodes_Nova_Node* parent, spectra_util_Nova_Location* location, int require);
+nova_datastruct_list_Nova_IntArray* spectra_tree_nodes_operations_Nova_OperationFunctionMap_functionMap_Nova_parseOperators(spectra_tree_nodes_operations_Nova_OperationFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, spectra_tree_nodes_operations_Nova_Operation* reference, nova_Nova_String* input, nova_datastruct_list_Nova_IntArray* matches);
+char spectra_tree_nodes_operations_Nova_OperationFunctionMap_functionMap0_Nova_parseOperands(spectra_tree_nodes_operations_Nova_OperationFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, spectra_tree_nodes_operations_Nova_Operation* reference, nova_datastruct_list_Nova_Array* operands);
+char spectra_tree_nodes_operations_Nova_OperationFunctionMap_functionMap1_Nova_parseOperands(spectra_tree_nodes_operations_Nova_OperationFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, spectra_tree_nodes_operations_Nova_Operation* reference, nova_Nova_String* input, nova_datastruct_list_Nova_IntArray* matches);
+nova_Nova_String* spectra_tree_nodes_operations_Nova_OperationFunctionMap_functionMap_Nova_writeNova(spectra_tree_nodes_operations_Nova_OperationFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, spectra_tree_nodes_operations_Nova_Operation* reference);
 void spectra_tree_nodes_operations_Nova_OperationFunctionMap_Nova_super(spectra_tree_nodes_operations_Nova_OperationFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
 
 #endif

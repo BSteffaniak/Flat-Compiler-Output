@@ -22,6 +22,7 @@ typedef struct nova_time_Nova_TimeFunctionMap nova_time_Nova_TimeFunctionMap;
 #include <nova/primitive/nova_primitive_Nova_Null.h>
 #include <nova/primitive/number/nova_primitive_number_Nova_Char.h>
 #include <nova/primitive/nova_primitive_Nova_Bool.h>
+#include <nova/datastruct/list/nova_datastruct_list_Nova_List.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_Array.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_ImmutableArray.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_IntArray.h>
@@ -68,6 +69,7 @@ void nova_time_Nova_TimeFunctionMap_Nova_init_static(nova_exception_Nova_Excepti
 nova_time_Nova_TimeFunctionMap* nova_time_Nova_TimeFunctionMap_Nova_construct(nova_time_Nova_TimeFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
 void nova_time_Nova_TimeFunctionMap_Nova_destroy(nova_time_Nova_TimeFunctionMap** this, nova_exception_Nova_ExceptionData* exceptionData);
 void nova_time_Nova_TimeFunctionMap_Nova_this(nova_time_Nova_TimeFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+nova_time_Nova_Time* nova_time_Nova_TimeFunctionMap_functionMapTimeFunctionMap_static_Nova_construct(nova_time_Nova_TimeFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
 void nova_time_Nova_TimeFunctionMap_Nova_super(nova_time_Nova_TimeFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
 
 #endif

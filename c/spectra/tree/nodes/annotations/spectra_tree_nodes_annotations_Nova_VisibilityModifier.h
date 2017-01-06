@@ -2,6 +2,7 @@
 #define FILE_spectra_tree_nodes_annotations_Nova_VisibilityModifier_NOVA
 
 typedef struct spectra_tree_nodes_annotations_Nova_VisibilityModifier spectra_tree_nodes_annotations_Nova_VisibilityModifier;
+typedef struct spectra_tree_nodes_annotations_Nova_VisibilityModifierFunctionMap spectra_tree_nodes_annotations_Nova_VisibilityModifierFunctionMap;
 
 
 #include <Nova.h>
@@ -21,6 +22,7 @@ typedef struct spectra_tree_nodes_annotations_Nova_VisibilityModifier spectra_tr
 #include <nova/primitive/nova_primitive_Nova_Null.h>
 #include <nova/primitive/number/nova_primitive_number_Nova_Char.h>
 #include <nova/primitive/nova_primitive_Nova_Bool.h>
+#include <nova/datastruct/list/nova_datastruct_list_Nova_List.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_Array.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_ImmutableArray.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_IntArray.h>
@@ -39,6 +41,9 @@ typedef struct spectra_tree_nodes_annotations_Nova_VisibilityModifier spectra_tr
 #include <nova/meta/nova_meta_Nova_FunctionMap.h>
 #include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <spectra/tree/nodes/annotations/spectra_tree_nodes_annotations_Nova_Modifier.h>
+#include <spectra/tree/nodes/annotations/spectra_tree_nodes_annotations_Nova_Modifier.h>
+#include <nova/NativeObject.h>
+#include <nova/operators/nova_operators_Nova_EqualsOperator.h>
 
 CCLASS_CLASS
 (
@@ -48,5 +53,18 @@ CCLASS_CLASS
 )
 
 void spectra_tree_nodes_annotations_Nova_VisibilityModifier_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData);
+
+CCLASS_CLASS
+(
+	spectra_tree_nodes_annotations_Nova_VisibilityModifierFunctionMap, 
+	
+	spectra_tree_nodes_annotations_VisibilityModifier_VisibilityModifierFunctionMap_Extension_VTable* vtable;
+)
+
+void spectra_tree_nodes_annotations_Nova_VisibilityModifierFunctionMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData);
+spectra_tree_nodes_annotations_Nova_VisibilityModifierFunctionMap* spectra_tree_nodes_annotations_Nova_VisibilityModifierFunctionMap_Nova_construct(spectra_tree_nodes_annotations_Nova_VisibilityModifierFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+void spectra_tree_nodes_annotations_Nova_VisibilityModifierFunctionMap_Nova_destroy(spectra_tree_nodes_annotations_Nova_VisibilityModifierFunctionMap** this, nova_exception_Nova_ExceptionData* exceptionData);
+void spectra_tree_nodes_annotations_Nova_VisibilityModifierFunctionMap_Nova_this(spectra_tree_nodes_annotations_Nova_VisibilityModifierFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+void spectra_tree_nodes_annotations_Nova_VisibilityModifierFunctionMap_Nova_super(spectra_tree_nodes_annotations_Nova_VisibilityModifierFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
 
 #endif

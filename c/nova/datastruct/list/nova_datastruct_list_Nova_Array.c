@@ -12,6 +12,7 @@
 #include <nova/primitive/nova_primitive_Nova_Null.h>
 #include <nova/primitive/number/nova_primitive_number_Nova_Char.h>
 #include <nova/primitive/nova_primitive_Nova_Bool.h>
+#include <nova/datastruct/list/nova_datastruct_list_Nova_List.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_Array.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_ImmutableArray.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_IntArray.h>
@@ -33,8 +34,12 @@
 #include <nova/operators/nova_operators_Nova_PlusOperator.h>
 #include <nova/operators/nova_operators_Nova_PlusEqualsOperator.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_ArrayIterator.h>
+#include <nova/datastruct/list/nova_datastruct_list_Nova_OrderedList.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_List.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_OrderedList.h>
+#include <nova/operators/nova_operators_Nova_PlusOperator.h>
+#include <nova/operators/nova_operators_Nova_PlusEqualsOperator.h>
+#include <nova/datastruct/list/nova_datastruct_list_Nova_Iterable.h>
 #include <nova/NativeObject.h>
 #include <nova/operators/nova_operators_Nova_EqualsOperator.h>
 
@@ -744,7 +749,249 @@ void nova_datastruct_list_Nova_ArrayFunctionMap_Nova_this(nova_datastruct_list_N
 {
 }
 
+nova_datastruct_list_Nova_Array* nova_datastruct_list_Nova_ArrayFunctionMap_functionMapArrayFunctionMap0_static_Nova_construct(nova_datastruct_list_Nova_ArrayFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+	return (nova_datastruct_list_Nova_Array*)nova_datastruct_list_Nova_Array_0_Nova_construct(0, exceptionData);
+}
+
+nova_datastruct_list_Nova_Array* nova_datastruct_list_Nova_ArrayFunctionMap_functionMapArrayFunctionMap1_static_Nova_construct(nova_datastruct_list_Nova_ArrayFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, int count, int initialCapacity)
+{
+	initialCapacity = (int)(initialCapacity == (intptr_t)nova_null ? count : initialCapacity);
+	return (nova_datastruct_list_Nova_Array*)nova_datastruct_list_Nova_Array_1_Nova_construct(0, exceptionData, count, initialCapacity);
+}
+
+nova_datastruct_list_Nova_Array* nova_datastruct_list_Nova_ArrayFunctionMap_functionMapArrayFunctionMap2_static_Nova_construct(nova_datastruct_list_Nova_ArrayFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_Object** data, int count)
+{
+	return (nova_datastruct_list_Nova_Array*)nova_datastruct_list_Nova_Array_2_Nova_construct(0, exceptionData, data, count);
+}
+
+nova_datastruct_list_Nova_Array* nova_datastruct_list_Nova_ArrayFunctionMap_functionMap_Nova_fillRemaining(nova_datastruct_list_Nova_ArrayFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_list_Nova_Array* reference, nova_Nova_Object* value)
+{
+	return (nova_datastruct_list_Nova_Array*)nova_datastruct_list_Nova_Array_Nova_fillRemaining(reference, exceptionData, value);
+}
+
+nova_datastruct_list_Nova_Array* nova_datastruct_list_Nova_ArrayFunctionMap_functionMap0_Nova_plus(nova_datastruct_list_Nova_ArrayFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_list_Nova_Array* reference, nova_datastruct_list_Nova_Array* other)
+{
+	return (nova_datastruct_list_Nova_Array*)nova_datastruct_list_Nova_Array_0_Nova_plus(reference, exceptionData, other);
+}
+
+nova_datastruct_list_Nova_Array* nova_datastruct_list_Nova_ArrayFunctionMap_functionMap_Nova_plusEquals(nova_datastruct_list_Nova_ArrayFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_list_Nova_Array* reference, nova_datastruct_list_Nova_Array* other)
+{
+	return (nova_datastruct_list_Nova_Array*)nova_datastruct_list_Nova_Array_Nova_plusEquals(reference, exceptionData, other);
+}
+
+nova_datastruct_list_Nova_Array* nova_datastruct_list_Nova_ArrayFunctionMap_functionMap_Nova_addAll(nova_datastruct_list_Nova_ArrayFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_list_Nova_Array* reference, nova_datastruct_list_Nova_Array* data)
+{
+	return (nova_datastruct_list_Nova_Array*)nova_datastruct_list_Nova_Array_Nova_addAll(reference, exceptionData, data);
+}
+
+nova_datastruct_list_Nova_Array* nova_datastruct_list_Nova_ArrayFunctionMap_functionMap_Nova_addUnique(nova_datastruct_list_Nova_ArrayFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_list_Nova_Array* reference, nova_Nova_Object* element)
+{
+	return (nova_datastruct_list_Nova_Array*)nova_datastruct_list_Nova_Array_virtual_Nova_addUnique((nova_datastruct_list_Nova_Array*)(reference), exceptionData, element);
+}
+
+nova_datastruct_list_Nova_Array* nova_datastruct_list_Nova_ArrayFunctionMap_functionMap0_Nova_add(nova_datastruct_list_Nova_ArrayFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_list_Nova_Array* reference, nova_Nova_Object* element)
+{
+	return (nova_datastruct_list_Nova_Array*)nova_datastruct_list_Nova_Array_0_Nova_add(reference, exceptionData, element);
+}
+
+nova_datastruct_list_Nova_Array* nova_datastruct_list_Nova_ArrayFunctionMap_functionMap1_Nova_add(nova_datastruct_list_Nova_ArrayFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_list_Nova_Array* reference, int index, nova_Nova_Object* element)
+{
+	return (nova_datastruct_list_Nova_Array*)nova_datastruct_list_Nova_Array_1_Nova_add(reference, exceptionData, index, element);
+}
+
+nova_Nova_Object* nova_datastruct_list_Nova_ArrayFunctionMap_functionMap0_Nova_remove(nova_datastruct_list_Nova_ArrayFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_list_Nova_Array* reference, int index)
+{
+	return (nova_Nova_Object*)nova_datastruct_list_Nova_Array_0_Nova_remove(reference, exceptionData, index);
+}
+
+nova_Nova_Object* nova_datastruct_list_Nova_ArrayFunctionMap_functionMap1_Nova_remove(nova_datastruct_list_Nova_ArrayFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_list_Nova_Array* reference, nova_Nova_Object* element)
+{
+	return (nova_Nova_Object*)nova_datastruct_list_Nova_Array_1_Nova_remove(reference, exceptionData, element);
+}
+
+int nova_datastruct_list_Nova_ArrayFunctionMap_functionMap_Nova_indexOf(nova_datastruct_list_Nova_ArrayFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_list_Nova_Array* reference, nova_Nova_Object* element, int defaultReturnValue)
+{
+	defaultReturnValue = (int)(defaultReturnValue == (intptr_t)nova_null ? -1 : defaultReturnValue);
+	return nova_datastruct_list_Nova_Array_Nova_indexOf(reference, exceptionData, element, defaultReturnValue);
+}
+
+nova_Nova_Object* nova_datastruct_list_Nova_ArrayFunctionMap_functionMap_Nova_replace(nova_datastruct_list_Nova_ArrayFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_list_Nova_Array* reference, nova_Nova_Object* element, nova_Nova_Object* other)
+{
+	return (nova_Nova_Object*)nova_datastruct_list_Nova_Array_Nova_replace(reference, exceptionData, element, other);
+}
+
+nova_datastruct_list_Nova_Array* nova_datastruct_list_Nova_ArrayFunctionMap_functionMap_Nova_shiftRight(nova_datastruct_list_Nova_ArrayFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_list_Nova_Array* reference, int left, int right)
+{
+	return (nova_datastruct_list_Nova_Array*)nova_datastruct_list_Nova_Array_Nova_shiftRight(reference, exceptionData, left, right);
+}
+
+nova_datastruct_list_Nova_Array* nova_datastruct_list_Nova_ArrayFunctionMap_functionMap_Nova_shiftLeft(nova_datastruct_list_Nova_ArrayFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_list_Nova_Array* reference, int left, int right)
+{
+	return (nova_datastruct_list_Nova_Array*)nova_datastruct_list_Nova_Array_Nova_shiftLeft(reference, exceptionData, left, right);
+}
+
+nova_datastruct_list_Nova_Array* nova_datastruct_list_Nova_ArrayFunctionMap_functionMap_Nova_swap(nova_datastruct_list_Nova_ArrayFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_list_Nova_Array* reference, int index1, int index2)
+{
+	return (nova_datastruct_list_Nova_Array*)nova_datastruct_list_Nova_Array_Nova_swap(reference, exceptionData, index1, index2);
+}
+
+nova_datastruct_list_Nova_Array* nova_datastruct_list_Nova_ArrayFunctionMap_functionMap0_Nova_increaseSize(nova_datastruct_list_Nova_ArrayFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_list_Nova_Array* reference)
+{
+	return (nova_datastruct_list_Nova_Array*)nova_datastruct_list_Nova_Array_0_Nova_increaseSize(reference, exceptionData);
+}
+
+nova_datastruct_list_Nova_Array* nova_datastruct_list_Nova_ArrayFunctionMap_functionMap1_Nova_increaseSize(nova_datastruct_list_Nova_ArrayFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_list_Nova_Array* reference, int count)
+{
+	return (nova_datastruct_list_Nova_Array*)nova_datastruct_list_Nova_Array_1_Nova_increaseSize(reference, exceptionData, count);
+}
+
+nova_Nova_Object* nova_datastruct_list_Nova_ArrayFunctionMap_functionMap_Nova_cloneData(nova_datastruct_list_Nova_ArrayFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_list_Nova_Array* reference)
+{
+	return (nova_Nova_Object*)nova_datastruct_list_Nova_Array_virtual_Nova_cloneData((nova_datastruct_list_Nova_Array*)(reference), exceptionData);
+}
+
+nova_datastruct_list_Nova_Array* nova_datastruct_list_Nova_ArrayFunctionMap_functionMap_Nova_clone(nova_datastruct_list_Nova_ArrayFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_list_Nova_Array* reference)
+{
+	return (nova_datastruct_list_Nova_Array*)nova_datastruct_list_Nova_Array_virtual_Nova_clone((nova_datastruct_list_Nova_Array*)(reference), exceptionData);
+}
+
+nova_datastruct_list_Nova_Array* nova_datastruct_list_Nova_ArrayFunctionMap_functionMap0_Nova_toArray(nova_datastruct_list_Nova_ArrayFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_list_Nova_Array* reference)
+{
+	return (nova_datastruct_list_Nova_Array*)nova_datastruct_list_Nova_Array_Nova_toArray(reference, exceptionData);
+}
+
+nova_datastruct_list_Nova_Array* nova_datastruct_list_Nova_ArrayFunctionMap_functionMap0_Nova_map(nova_datastruct_list_Nova_ArrayFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_list_Nova_Array* reference, nova_datastruct_list_Nova_ArrayFunctionMap_closure29_Nova_mapFunc nova_datastruct_list_Nova_ArrayFunctionMap_Nova_mapFunc, void* nova_datastruct_list_Nova_ArrayFunctionMap_ref_Nova_mapFunc, void* mapFunc_context)
+{
+	return (nova_datastruct_list_Nova_Array*)nova_datastruct_list_Nova_List_virtual0_Nova_map((nova_datastruct_list_Nova_List*)(reference), exceptionData, (nova_datastruct_list_Nova_List_closure8_Nova_mapFunc)nova_datastruct_list_Nova_ArrayFunctionMap_Nova_mapFunc, nova_datastruct_list_Nova_ArrayFunctionMap_ref_Nova_mapFunc, mapFunc_context);
+}
+
+nova_datastruct_list_Nova_Array* nova_datastruct_list_Nova_ArrayFunctionMap_functionMap0_Nova_forEach(nova_datastruct_list_Nova_ArrayFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_list_Nova_Array* reference, nova_datastruct_list_Nova_ArrayFunctionMap_closure30_Nova_func nova_datastruct_list_Nova_ArrayFunctionMap_Nova_func, void* nova_datastruct_list_Nova_ArrayFunctionMap_ref_Nova_func, void* func_context)
+{
+	return (nova_datastruct_list_Nova_Array*)nova_datastruct_list_Nova_List_virtual0_Nova_forEach((nova_datastruct_list_Nova_List*)(reference), exceptionData, (nova_datastruct_list_Nova_List_closure4_Nova_func)nova_datastruct_list_Nova_ArrayFunctionMap_Nova_func, nova_datastruct_list_Nova_ArrayFunctionMap_ref_Nova_func, func_context);
+}
+
+nova_datastruct_list_Nova_Array* nova_datastruct_list_Nova_ArrayFunctionMap_functionMap0_Nova_filter(nova_datastruct_list_Nova_ArrayFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_list_Nova_Array* reference, nova_datastruct_list_Nova_ArrayFunctionMap_closure31_Nova_filterFunc nova_datastruct_list_Nova_ArrayFunctionMap_Nova_filterFunc, void* nova_datastruct_list_Nova_ArrayFunctionMap_ref_Nova_filterFunc, void* filterFunc_context)
+{
+	return (nova_datastruct_list_Nova_Array*)nova_datastruct_list_Nova_List_virtual0_Nova_filter((nova_datastruct_list_Nova_List*)(reference), exceptionData, (nova_datastruct_list_Nova_List_closure20_Nova_filterFunc)nova_datastruct_list_Nova_ArrayFunctionMap_Nova_filterFunc, nova_datastruct_list_Nova_ArrayFunctionMap_ref_Nova_filterFunc, filterFunc_context);
+}
+
+nova_datastruct_list_Nova_Array* nova_datastruct_list_Nova_ArrayFunctionMap_functionMap0_Nova_take(nova_datastruct_list_Nova_ArrayFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_list_Nova_Array* reference, int howMany)
+{
+	return (nova_datastruct_list_Nova_Array*)nova_datastruct_list_Nova_List_virtual_Nova_take((nova_datastruct_list_Nova_List*)(reference), exceptionData, howMany);
+}
+
+nova_datastruct_list_Nova_Array* nova_datastruct_list_Nova_ArrayFunctionMap_functionMap0_Nova_skip(nova_datastruct_list_Nova_ArrayFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_list_Nova_Array* reference, int howMany)
+{
+	return (nova_datastruct_list_Nova_Array*)nova_datastruct_list_Nova_List_virtual_Nova_skip((nova_datastruct_list_Nova_List*)(reference), exceptionData, howMany);
+}
+
+long_long nova_datastruct_list_Nova_ArrayFunctionMap_functionMap_Nova_sumSize(nova_datastruct_list_Nova_ArrayFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_list_Nova_Array* reference)
+{
+	return nova_datastruct_list_Nova_Array_Nova_sumSize(reference, exceptionData);
+}
+
+nova_datastruct_list_Nova_Array* nova_datastruct_list_Nova_ArrayFunctionMap_functionMap0_Nova_reverse(nova_datastruct_list_Nova_ArrayFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_list_Nova_Array* reference)
+{
+	return (nova_datastruct_list_Nova_Array*)nova_datastruct_list_Nova_List_virtual_Nova_reverse((nova_datastruct_list_Nova_List*)(reference), exceptionData);
+}
+
+nova_datastruct_list_Nova_Array* nova_datastruct_list_Nova_ArrayFunctionMap_functionMap0_Nova_mergeSort(nova_datastruct_list_Nova_ArrayFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_list_Nova_Array* reference, nova_datastruct_list_Nova_ArrayFunctionMap_closure32_Nova_comparator nova_datastruct_list_Nova_ArrayFunctionMap_Nova_comparator, void* nova_datastruct_list_Nova_ArrayFunctionMap_ref_Nova_comparator, void* comparator_context)
+{
+	return (nova_datastruct_list_Nova_Array*)nova_datastruct_list_Nova_Array_0_Nova_mergeSort(reference, exceptionData, (nova_datastruct_list_Nova_Array_closure16_Nova_comparator)nova_datastruct_list_Nova_ArrayFunctionMap_Nova_comparator, nova_datastruct_list_Nova_ArrayFunctionMap_ref_Nova_comparator, comparator_context);
+}
+
+nova_datastruct_list_Nova_Array* nova_datastruct_list_Nova_ArrayFunctionMap_functionMap0_Nova_quickSort(nova_datastruct_list_Nova_ArrayFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_list_Nova_Array* reference, nova_datastruct_list_Nova_ArrayFunctionMap_closure33_Nova_comparator nova_datastruct_list_Nova_ArrayFunctionMap_Nova_comparator, void* nova_datastruct_list_Nova_ArrayFunctionMap_ref_Nova_comparator, void* comparator_context)
+{
+	return (nova_datastruct_list_Nova_Array*)nova_datastruct_list_Nova_Array_0_Nova_quickSort(reference, exceptionData, (nova_datastruct_list_Nova_Array_closure20_Nova_comparator)nova_datastruct_list_Nova_ArrayFunctionMap_Nova_comparator, nova_datastruct_list_Nova_ArrayFunctionMap_ref_Nova_comparator, comparator_context);
+}
+
+nova_datastruct_list_Nova_Array* nova_datastruct_list_Nova_ArrayFunctionMap_functionMap_static_Nova_quickSortHelper(nova_datastruct_list_Nova_ArrayFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_list_Nova_Array* list, int first, int last, nova_datastruct_list_Nova_ArrayFunctionMap_closure34_Nova_comparator nova_datastruct_list_Nova_ArrayFunctionMap_Nova_comparator, void* nova_datastruct_list_Nova_ArrayFunctionMap_ref_Nova_comparator, void* comparator_context)
+{
+	return (nova_datastruct_list_Nova_Array*)nova_datastruct_list_Nova_Array_static_Nova_quickSortHelper(0, exceptionData, list, first, last, (nova_datastruct_list_Nova_Array_closure24_Nova_comparator)nova_datastruct_list_Nova_ArrayFunctionMap_Nova_comparator, nova_datastruct_list_Nova_ArrayFunctionMap_ref_Nova_comparator, comparator_context);
+}
+
+int nova_datastruct_list_Nova_ArrayFunctionMap_functionMap_static_Nova_partition(nova_datastruct_list_Nova_ArrayFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_list_Nova_Array* list, int first, int last, nova_datastruct_list_Nova_ArrayFunctionMap_closure35_Nova_comparator nova_datastruct_list_Nova_ArrayFunctionMap_Nova_comparator, void* nova_datastruct_list_Nova_ArrayFunctionMap_ref_Nova_comparator, void* comparator_context)
+{
+	return nova_datastruct_list_Nova_Array_static_Nova_partition(0, exceptionData, list, first, last, (nova_datastruct_list_Nova_Array_closure28_Nova_comparator)nova_datastruct_list_Nova_ArrayFunctionMap_Nova_comparator, nova_datastruct_list_Nova_ArrayFunctionMap_ref_Nova_comparator, comparator_context);
+}
+
+nova_datastruct_list_Nova_Array* nova_datastruct_list_Nova_ArrayFunctionMap_functionMap1_Nova_mergeSort(nova_datastruct_list_Nova_ArrayFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_list_Nova_Array* reference)
+{
+	return (nova_datastruct_list_Nova_Array*)nova_datastruct_list_Nova_Array_1_Nova_mergeSort(reference, exceptionData);
+}
+
+nova_datastruct_list_Nova_Array* nova_datastruct_list_Nova_ArrayFunctionMap_functionMap1_Nova_quickSort(nova_datastruct_list_Nova_ArrayFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_list_Nova_Array* reference)
+{
+	return (nova_datastruct_list_Nova_Array*)nova_datastruct_list_Nova_Array_1_Nova_quickSort(reference, exceptionData);
+}
+
+nova_datastruct_list_Nova_Array* nova_datastruct_list_Nova_ArrayFunctionMap_functionMap_Nova_sort(nova_datastruct_list_Nova_ArrayFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_list_Nova_Array* reference)
+{
+	return (nova_datastruct_list_Nova_Array*)nova_datastruct_list_Nova_Array_Nova_sort(reference, exceptionData);
+}
+
+nova_datastruct_list_Nova_ImmutableArray* nova_datastruct_list_Nova_ArrayFunctionMap_functionMap_Nova_toImmutable(nova_datastruct_list_Nova_ArrayFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_list_Nova_Array* reference)
+{
+	return nova_datastruct_list_Nova_Array_Nova_toImmutable(reference, exceptionData);
+}
+
+nova_Nova_String* nova_datastruct_list_Nova_ArrayFunctionMap_functionMap_Nova_toString(nova_datastruct_list_Nova_ArrayFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_list_Nova_Array* reference)
+{
+	return nova_Nova_Object_virtual_Nova_toString((nova_Nova_Object*)(reference), exceptionData);
+}
+
+nova_Nova_Object* nova_datastruct_list_Nova_ArrayFunctionMap_functionMap_Nova_get(nova_datastruct_list_Nova_ArrayFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_list_Nova_Array* reference, int index)
+{
+	return (nova_Nova_Object*)nova_datastruct_list_Nova_Array_virtual_Nova_get((nova_datastruct_list_Nova_Array*)(reference), exceptionData, index);
+}
+
+nova_Nova_Object* nova_datastruct_list_Nova_ArrayFunctionMap_functionMap_Nova_set(nova_datastruct_list_Nova_ArrayFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_list_Nova_Array* reference, int index, nova_Nova_Object* value)
+{
+	return (nova_Nova_Object*)nova_datastruct_list_Nova_Array_virtual_Nova_set((nova_datastruct_list_Nova_Array*)(reference), exceptionData, index, value);
+}
+
 void nova_datastruct_list_Nova_ArrayFunctionMap_Nova_super(nova_datastruct_list_Nova_ArrayFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
+}
+
+nova_datastruct_list_Nova_Array* nova_datastruct_list_Nova_ArrayFunctionMap_virtualfunctionMapArrayFunctionMap0_static_Nova_construct(nova_datastruct_list_Nova_ArrayFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+	return this->vtable->nova_datastruct_list_Nova_ArrayFunctionMap_virtualfunctionMapArrayFunctionMap0_static_Nova_construct(0, exceptionData);
+}
+
+nova_datastruct_list_Nova_Array* nova_datastruct_list_Nova_ArrayFunctionMap_virtualfunctionMapArrayFunctionMap1_static_Nova_construct(nova_datastruct_list_Nova_ArrayFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, int count, int initialCapacity)
+{
+	return this->vtable->nova_datastruct_list_Nova_ArrayFunctionMap_virtualfunctionMapArrayFunctionMap1_static_Nova_construct(0, exceptionData, count, initialCapacity);
+}
+
+nova_datastruct_list_Nova_Array* nova_datastruct_list_Nova_ArrayFunctionMap_virtualfunctionMapArrayFunctionMap2_static_Nova_construct(nova_datastruct_list_Nova_ArrayFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_Object** data, int count)
+{
+	return this->vtable->nova_datastruct_list_Nova_ArrayFunctionMap_virtualfunctionMapArrayFunctionMap2_static_Nova_construct(0, exceptionData, data, count);
+}
+
+nova_datastruct_list_Nova_Array* nova_datastruct_list_Nova_ArrayFunctionMap_virtualfunctionMap_Nova_addUnique(nova_datastruct_list_Nova_ArrayFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_list_Nova_Array* reference, nova_Nova_Object* element)
+{
+	return this->vtable->nova_datastruct_list_Nova_ArrayFunctionMap_virtualfunctionMap_Nova_addUnique(this, exceptionData, reference, element);
+}
+
+nova_Nova_Object* nova_datastruct_list_Nova_ArrayFunctionMap_virtualfunctionMap_Nova_cloneData(nova_datastruct_list_Nova_ArrayFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_list_Nova_Array* reference)
+{
+	return this->vtable->nova_datastruct_list_Nova_ArrayFunctionMap_virtualfunctionMap_Nova_cloneData(this, exceptionData, reference);
+}
+
+nova_datastruct_list_Nova_Array* nova_datastruct_list_Nova_ArrayFunctionMap_virtualfunctionMap_Nova_clone(nova_datastruct_list_Nova_ArrayFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_list_Nova_Array* reference)
+{
+	return this->vtable->nova_datastruct_list_Nova_ArrayFunctionMap_virtualfunctionMap_Nova_clone(this, exceptionData, reference);
+}
+
+nova_Nova_Object* nova_datastruct_list_Nova_ArrayFunctionMap_virtualfunctionMap_Nova_get(nova_datastruct_list_Nova_ArrayFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_list_Nova_Array* reference, int index)
+{
+	return this->vtable->nova_datastruct_list_Nova_ArrayFunctionMap_virtualfunctionMap_Nova_get(this, exceptionData, reference, index);
+}
+
+nova_Nova_Object* nova_datastruct_list_Nova_ArrayFunctionMap_virtualfunctionMap_Nova_set(nova_datastruct_list_Nova_ArrayFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_list_Nova_Array* reference, int index, nova_Nova_Object* value)
+{
+	return this->vtable->nova_datastruct_list_Nova_ArrayFunctionMap_virtualfunctionMap_Nova_set(this, exceptionData, reference, index, value);
 }
 

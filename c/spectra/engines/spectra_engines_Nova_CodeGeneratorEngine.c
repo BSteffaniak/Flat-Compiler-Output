@@ -12,6 +12,7 @@
 #include <nova/primitive/nova_primitive_Nova_Null.h>
 #include <nova/primitive/number/nova_primitive_number_Nova_Char.h>
 #include <nova/primitive/nova_primitive_Nova_Bool.h>
+#include <nova/datastruct/list/nova_datastruct_list_Nova_List.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_Array.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_ImmutableArray.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_IntArray.h>
@@ -122,6 +123,11 @@ void spectra_engines_Nova_CodeGeneratorEngineFunctionMap_Nova_destroy(spectra_en
 
 void spectra_engines_Nova_CodeGeneratorEngineFunctionMap_Nova_this(spectra_engines_Nova_CodeGeneratorEngineFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
+}
+
+spectra_engines_Nova_CodeGeneratorEngine* spectra_engines_Nova_CodeGeneratorEngineFunctionMap_functionMapCodeGeneratorEngineFunctionMap_static_Nova_construct(spectra_engines_Nova_CodeGeneratorEngineFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+	return spectra_engines_Nova_CodeGeneratorEngine_Nova_construct(0, exceptionData);
 }
 
 void spectra_engines_Nova_CodeGeneratorEngineFunctionMap_Nova_super(spectra_engines_Nova_CodeGeneratorEngineFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)

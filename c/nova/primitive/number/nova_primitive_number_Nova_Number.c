@@ -12,6 +12,7 @@
 #include <nova/primitive/nova_primitive_Nova_Null.h>
 #include <nova/primitive/number/nova_primitive_number_Nova_Char.h>
 #include <nova/primitive/nova_primitive_Nova_Bool.h>
+#include <nova/datastruct/list/nova_datastruct_list_Nova_List.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_Array.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_ImmutableArray.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_IntArray.h>
@@ -29,6 +30,8 @@
 #include <nova/meta/nova_meta_Nova_Class.h>
 #include <nova/meta/nova_meta_Nova_FunctionMap.h>
 #include <nova/regex/nova_regex_Nova_Pattern.h>
+#include <nova/primitive/nova_primitive_Nova_Primitive.h>
+#include <nova/operators/nova_operators_Nova_MultiplyOperator.h>
 #include <nova/primitive/nova_primitive_Nova_Primitive.h>
 #include <nova/operators/nova_operators_Nova_MultiplyOperator.h>
 #include <nova/NativeObject.h>
@@ -98,6 +101,7 @@ nova_primitive_number_Nova_NumberFunctionMap* nova_primitive_number_Nova_NumberF
 	this->vtable = &nova_primitive_number_Number_NumberFunctionMap_Extension_VTable_val;
 	nova_Nova_Object_Nova_super((nova_Nova_Object*)this, exceptionData);
 	nova_meta_Nova_FunctionMap_Nova_super((nova_meta_Nova_FunctionMap*)this, exceptionData);
+	nova_primitive_Nova_PrimitiveFunctionMap_Nova_super((nova_primitive_Nova_PrimitiveFunctionMap*)this, exceptionData);
 	nova_primitive_number_Nova_NumberFunctionMap_Nova_super(this, exceptionData);
 	
 	{
@@ -120,6 +124,16 @@ void nova_primitive_number_Nova_NumberFunctionMap_Nova_destroy(nova_primitive_nu
 
 void nova_primitive_number_Nova_NumberFunctionMap_Nova_this(nova_primitive_number_Nova_NumberFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
+}
+
+nova_primitive_number_Nova_Number* nova_primitive_number_Nova_NumberFunctionMap_functionMapNumberFunctionMap_static_Nova_construct(nova_primitive_number_Nova_NumberFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+	return nova_primitive_number_Nova_Number_Nova_construct(0, exceptionData);
+}
+
+char nova_primitive_number_Nova_NumberFunctionMap_functionMap_static_Nova_numDigits(nova_primitive_number_Nova_NumberFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_primitive_number_Nova_Number* number)
+{
+	return nova_primitive_number_Nova_Number_static_Nova_numDigits(0, exceptionData, number);
 }
 
 void nova_primitive_number_Nova_NumberFunctionMap_Nova_super(nova_primitive_number_Nova_NumberFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)

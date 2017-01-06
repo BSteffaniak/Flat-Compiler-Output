@@ -12,6 +12,7 @@
 #include <nova/primitive/nova_primitive_Nova_Null.h>
 #include <nova/primitive/number/nova_primitive_number_Nova_Char.h>
 #include <nova/primitive/nova_primitive_Nova_Bool.h>
+#include <nova/datastruct/list/nova_datastruct_list_Nova_List.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_Array.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_ImmutableArray.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_IntArray.h>
@@ -32,6 +33,8 @@
 #include <spectra/spectra_Nova_InvalidParseException.h>
 #include <spectra/tree/nodes/spectra_tree_nodes_Nova_Node.h>
 #include <spectra/tree/nodes/generics/spectra_tree_nodes_generics_Nova_GenericParameter.h>
+#include <nova/NativeObject.h>
+#include <nova/operators/nova_operators_Nova_EqualsOperator.h>
 
 typedef struct
 {
@@ -46,8 +49,8 @@ typedef struct
 
 
 nova_Nova_String* spectra_tree_nodes_generics_Nova_GenericCompatible_Nova_lambda40(spectra_tree_nodes_generics_Nova_GenericCompatible* this, nova_exception_Nova_ExceptionData* exceptionData, spectra_tree_nodes_generics_Nova_GenericParameter* _1, int _2, nova_datastruct_list_Nova_Array* _3, Context1* context);
-spectra_tree_nodes_generics_Nova_GenericParameter* spectra_tree_nodes_generics_Nova_GenericCompatible_Nova_lambda137(spectra_tree_nodes_generics_Nova_GenericCompatible* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* _1, int _2, nova_datastruct_list_Nova_Array* _3, Context2* context);
-char spectra_tree_nodes_generics_Nova_GenericCompatible_Nova_lambda138(spectra_tree_nodes_generics_Nova_GenericCompatible* this, nova_exception_Nova_ExceptionData* exceptionData, spectra_tree_nodes_generics_Nova_GenericParameter* _1, Context3* context);
+spectra_tree_nodes_generics_Nova_GenericParameter* spectra_tree_nodes_generics_Nova_GenericCompatible_Nova_lambda135(spectra_tree_nodes_generics_Nova_GenericCompatible* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* _1, int _2, nova_datastruct_list_Nova_Array* _3, Context2* context);
+char spectra_tree_nodes_generics_Nova_GenericCompatible_Nova_lambda136(spectra_tree_nodes_generics_Nova_GenericCompatible* this, nova_exception_Nova_ExceptionData* exceptionData, spectra_tree_nodes_generics_Nova_GenericParameter* _1, Context3* context);
 void spectra_tree_nodes_generics_Nova_GenericCompatible_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData)
 {
 	{
@@ -69,13 +72,13 @@ char spectra_tree_nodes_generics_Nova_GenericCompatible_Nova_parseGenericParamet
 		{
 			nova_Nova_String* l3_Nova_contents = (nova_Nova_String*)nova_null;
 			nova_datastruct_list_Nova_Array* l3_Nova_params = (nova_datastruct_list_Nova_Array*)nova_null;
-			Context2* contextArg137 = NOVA_MALLOC(sizeof(Context2));
-			Context3* contextArg138 = NOVA_MALLOC(sizeof(Context3));
+			Context2* contextArg135 = NOVA_MALLOC(sizeof(Context2));
+			Context3* contextArg136 = NOVA_MALLOC(sizeof(Context3));
 			
 			l3_Nova_contents = (nova_Nova_String*)(nova_Nova_String_virtual_Nova_substring((nova_Nova_String*)(input), exceptionData, l1_Nova_genericIndex + 1, l2_Nova_end));
-			l3_Nova_params = (nova_datastruct_list_Nova_Array*)(nova_datastruct_list_Nova_List_virtual0_Nova_map((nova_datastruct_list_Nova_List*)(spectra_util_Nova_CompilerStringFunctions_Nova_splitAtCommas(l3_Nova_contents, exceptionData, (intptr_t)nova_null, (intptr_t)nova_null)), exceptionData, (nova_datastruct_list_Nova_List_closure8_Nova_mapFunc)&spectra_tree_nodes_generics_Nova_GenericCompatible_Nova_lambda137, this, contextArg137));
+			l3_Nova_params = (nova_datastruct_list_Nova_Array*)(nova_datastruct_list_Nova_List_virtual0_Nova_map((nova_datastruct_list_Nova_List*)(spectra_util_Nova_CompilerStringFunctions_Nova_splitAtCommas(l3_Nova_contents, exceptionData, (intptr_t)nova_null, (intptr_t)nova_null)), exceptionData, (nova_datastruct_list_Nova_List_closure8_Nova_mapFunc)&spectra_tree_nodes_generics_Nova_GenericCompatible_Nova_lambda135, this, contextArg135));
 			spectra_tree_nodes_generics_Nova_GenericCompatible_virtual_Mutator_Nova_genericParameters((spectra_tree_nodes_generics_Nova_GenericCompatible*)(this), exceptionData, (nova_datastruct_list_Nova_Array*)(l3_Nova_params));
-			if (nova_datastruct_list_Nova_List_virtual0_Nova_any((nova_datastruct_list_Nova_List*)(spectra_tree_nodes_generics_Nova_GenericCompatible_virtual_Accessor_Nova_genericParameters((spectra_tree_nodes_generics_Nova_GenericCompatible*)(this), exceptionData)), exceptionData, (nova_datastruct_list_Nova_List_closure12_Nova_anyFunc)&spectra_tree_nodes_generics_Nova_GenericCompatible_Nova_lambda138, this, contextArg138))
+			if (nova_datastruct_list_Nova_List_virtual0_Nova_any((nova_datastruct_list_Nova_List*)(spectra_tree_nodes_generics_Nova_GenericCompatible_virtual_Accessor_Nova_genericParameters((spectra_tree_nodes_generics_Nova_GenericCompatible*)(this), exceptionData)), exceptionData, (nova_datastruct_list_Nova_List_closure12_Nova_anyFunc)&spectra_tree_nodes_generics_Nova_GenericCompatible_Nova_lambda136, this, contextArg136))
 			{
 				THROW(spectra_Nova_InvalidParseException_Nova_construct(0, exceptionData, (nova_Nova_String*)(nova_Nova_String_Nova_plus(nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("Failed to parse all generic parameters '")), exceptionData, (nova_Nova_String*)(nova_Nova_String_Nova_plus((l3_Nova_contents), exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("'")))))), (spectra_tree_nodes_Nova_Node*)this), 1);
 				return 0;
@@ -108,12 +111,12 @@ nova_Nova_String* spectra_tree_nodes_generics_Nova_GenericCompatible_Nova_lambda
 	return spectra_tree_nodes_Nova_Node_virtual_Nova_toNova((spectra_tree_nodes_Nova_Node*)(_1), exceptionData);
 }
 
-spectra_tree_nodes_generics_Nova_GenericParameter* spectra_tree_nodes_generics_Nova_GenericCompatible_Nova_lambda137(spectra_tree_nodes_generics_Nova_GenericCompatible* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* _1, int _2, nova_datastruct_list_Nova_Array* _3, Context2* context)
+spectra_tree_nodes_generics_Nova_GenericParameter* spectra_tree_nodes_generics_Nova_GenericCompatible_Nova_lambda135(spectra_tree_nodes_generics_Nova_GenericCompatible* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* _1, int _2, nova_datastruct_list_Nova_Array* _3, Context2* context)
 {
 	return spectra_tree_nodes_generics_Nova_GenericParameter_Nova_construct(0, exceptionData, (spectra_tree_nodes_Nova_Node*)this, ((spectra_tree_nodes_Nova_Node*)this)->spectra_tree_nodes_Nova_Node_Nova_location, _1);
 }
 
-char spectra_tree_nodes_generics_Nova_GenericCompatible_Nova_lambda138(spectra_tree_nodes_generics_Nova_GenericCompatible* this, nova_exception_Nova_ExceptionData* exceptionData, spectra_tree_nodes_generics_Nova_GenericParameter* _1, Context3* context)
+char spectra_tree_nodes_generics_Nova_GenericCompatible_Nova_lambda136(spectra_tree_nodes_generics_Nova_GenericCompatible* this, nova_exception_Nova_ExceptionData* exceptionData, spectra_tree_nodes_generics_Nova_GenericParameter* _1, Context3* context)
 {
 	return (_1) == (spectra_tree_nodes_generics_Nova_GenericParameter*)nova_null;
 }
@@ -136,5 +139,61 @@ nova_datastruct_list_Nova_Array* spectra_tree_nodes_generics_Nova_GenericCompati
 nova_datastruct_list_Nova_Array* spectra_tree_nodes_generics_Nova_GenericCompatible_virtual_Mutator_Nova_genericParameters(spectra_tree_nodes_generics_Nova_GenericCompatible* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_list_Nova_Array* value)
 {
 	return this->vtable->itable.spectra_tree_nodes_generics_Nova_GenericCompatible_virtual_Mutator_Nova_genericParameters((spectra_tree_nodes_generics_Nova_GenericCompatible*)(this), exceptionData, value);
+}
+
+void spectra_tree_nodes_generics_Nova_GenericCompatibleFunctionMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData)
+{
+	{
+	}
+}
+
+spectra_tree_nodes_generics_Nova_GenericCompatibleFunctionMap* spectra_tree_nodes_generics_Nova_GenericCompatibleFunctionMap_Nova_construct(spectra_tree_nodes_generics_Nova_GenericCompatibleFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+	CCLASS_NEW(spectra_tree_nodes_generics_Nova_GenericCompatibleFunctionMap, this,);
+	this->vtable = &spectra_tree_nodes_generics_GenericCompatible_GenericCompatibleFunctionMap_Extension_VTable_val;
+	nova_Nova_Object_Nova_super((nova_Nova_Object*)this, exceptionData);
+	nova_meta_Nova_FunctionMap_Nova_super((nova_meta_Nova_FunctionMap*)this, exceptionData);
+	spectra_tree_nodes_generics_Nova_GenericCompatibleFunctionMap_Nova_super(this, exceptionData);
+	
+	{
+		spectra_tree_nodes_generics_Nova_GenericCompatibleFunctionMap_Nova_this(this, exceptionData);
+	}
+	
+	return this;
+}
+
+void spectra_tree_nodes_generics_Nova_GenericCompatibleFunctionMap_Nova_destroy(spectra_tree_nodes_generics_Nova_GenericCompatibleFunctionMap** this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+	if (!*this)
+	{
+		return;
+	}
+	
+	
+	NOVA_FREE(*this);
+}
+
+void spectra_tree_nodes_generics_Nova_GenericCompatibleFunctionMap_Nova_this(spectra_tree_nodes_generics_Nova_GenericCompatibleFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+}
+
+char spectra_tree_nodes_generics_Nova_GenericCompatibleFunctionMap_functionMap_Nova_parseGenericParameters(spectra_tree_nodes_generics_Nova_GenericCompatibleFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, spectra_tree_nodes_generics_Nova_GenericCompatible* reference, nova_Nova_String* input, int requireWholeString)
+{
+	requireWholeString = (int)(requireWholeString == (intptr_t)nova_null ? 0 : requireWholeString);
+	return spectra_tree_nodes_generics_Nova_GenericCompatible_Nova_parseGenericParameters(reference, exceptionData, input, requireWholeString);
+}
+
+nova_Nova_String* spectra_tree_nodes_generics_Nova_GenericCompatibleFunctionMap_functionMap_Nova_writeGenericParameters(spectra_tree_nodes_generics_Nova_GenericCompatibleFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, spectra_tree_nodes_generics_Nova_GenericCompatible* reference)
+{
+	return spectra_tree_nodes_generics_Nova_GenericCompatible_Nova_writeGenericParameters(reference, exceptionData);
+}
+
+spectra_tree_nodes_generics_Nova_GenericCompatible* spectra_tree_nodes_generics_Nova_GenericCompatibleFunctionMap_functionMap1_Nova_cloneTo(spectra_tree_nodes_generics_Nova_GenericCompatibleFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, spectra_tree_nodes_generics_Nova_GenericCompatible* reference, spectra_tree_nodes_generics_Nova_GenericCompatible* other)
+{
+	return spectra_tree_nodes_generics_Nova_GenericCompatible_1_Nova_cloneTo(reference, exceptionData, other);
+}
+
+void spectra_tree_nodes_generics_Nova_GenericCompatibleFunctionMap_Nova_super(spectra_tree_nodes_generics_Nova_GenericCompatibleFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+{
 }
 

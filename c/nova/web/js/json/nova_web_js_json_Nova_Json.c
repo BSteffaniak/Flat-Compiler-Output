@@ -12,6 +12,7 @@
 #include <nova/primitive/nova_primitive_Nova_Null.h>
 #include <nova/primitive/number/nova_primitive_number_Nova_Char.h>
 #include <nova/primitive/nova_primitive_Nova_Bool.h>
+#include <nova/datastruct/list/nova_datastruct_list_Nova_List.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_Array.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_ImmutableArray.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_IntArray.h>
@@ -30,9 +31,11 @@
 #include <nova/meta/nova_meta_Nova_FunctionMap.h>
 #include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <nova/datastruct/nova_datastruct_Nova_HashMap.h>
-#include <nova/datastruct/list/nova_datastruct_list_Nova_List.h>
+#include <nova/datastruct/nova_datastruct_Nova_HashMap.h>
 #include <nova/datastruct/nova_datastruct_Nova_ImmutableHashMap.h>
 #include <nova/datastruct/nova_datastruct_Nova_Pair.h>
+#include <nova/datastruct/list/nova_datastruct_list_Nova_List.h>
+#include <nova/datastruct/list/nova_datastruct_list_Nova_Iterable.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_Iterator.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_ArrayIterator.h>
 #include <nova/NativeObject.h>
@@ -105,6 +108,7 @@ nova_web_js_json_Nova_JsonFunctionMap* nova_web_js_json_Nova_JsonFunctionMap_Nov
 	this->vtable = &nova_web_js_json_Json_JsonFunctionMap_Extension_VTable_val;
 	nova_Nova_Object_Nova_super((nova_Nova_Object*)this, exceptionData);
 	nova_meta_Nova_FunctionMap_Nova_super((nova_meta_Nova_FunctionMap*)this, exceptionData);
+	nova_datastruct_Nova_HashMapFunctionMap_Nova_super((nova_datastruct_Nova_HashMapFunctionMap*)this, exceptionData);
 	nova_web_js_json_Nova_JsonFunctionMap_Nova_super(this, exceptionData);
 	
 	{
@@ -127,6 +131,16 @@ void nova_web_js_json_Nova_JsonFunctionMap_Nova_destroy(nova_web_js_json_Nova_Js
 
 void nova_web_js_json_Nova_JsonFunctionMap_Nova_this(nova_web_js_json_Nova_JsonFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
+}
+
+nova_web_js_json_Nova_Json* nova_web_js_json_Nova_JsonFunctionMap_functionMapJsonFunctionMap_static_Nova_construct(nova_web_js_json_Nova_JsonFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+	return nova_web_js_json_Nova_Json_Nova_construct(0, exceptionData);
+}
+
+nova_Nova_String* nova_web_js_json_Nova_JsonFunctionMap_functionMap_Nova_toString(nova_web_js_json_Nova_JsonFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_web_js_json_Nova_Json* reference)
+{
+	return nova_Nova_Object_virtual_Nova_toString((nova_Nova_Object*)(reference), exceptionData);
 }
 
 void nova_web_js_json_Nova_JsonFunctionMap_Nova_super(nova_web_js_json_Nova_JsonFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)

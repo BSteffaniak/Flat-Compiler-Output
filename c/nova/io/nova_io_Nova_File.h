@@ -22,6 +22,7 @@ typedef struct nova_io_Nova_FileFunctionMap nova_io_Nova_FileFunctionMap;
 #include <nova/primitive/nova_primitive_Nova_Null.h>
 #include <nova/primitive/number/nova_primitive_number_Nova_Char.h>
 #include <nova/primitive/nova_primitive_Nova_Bool.h>
+#include <nova/datastruct/list/nova_datastruct_list_Nova_List.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_Array.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_ImmutableArray.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_IntArray.h>
@@ -95,6 +96,9 @@ void nova_io_Nova_FileFunctionMap_Nova_init_static(nova_exception_Nova_Exception
 nova_io_Nova_FileFunctionMap* nova_io_Nova_FileFunctionMap_Nova_construct(nova_io_Nova_FileFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
 void nova_io_Nova_FileFunctionMap_Nova_destroy(nova_io_Nova_FileFunctionMap** this, nova_exception_Nova_ExceptionData* exceptionData);
 void nova_io_Nova_FileFunctionMap_Nova_this(nova_io_Nova_FileFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+nova_io_Nova_File* nova_io_Nova_FileFunctionMap_functionMapFileFunctionMap_static_Nova_construct(nova_io_Nova_FileFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* location);
+nova_datastruct_list_Nova_Array* nova_io_Nova_FileFunctionMap_functionMap_Nova_getChildFiles(nova_io_Nova_FileFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_io_Nova_File* reference, int recursive, int includeHidden);
+nova_Nova_String* nova_io_Nova_FileFunctionMap_functionMap_Nova_toString(nova_io_Nova_FileFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_io_Nova_File* reference);
 void nova_io_Nova_FileFunctionMap_Nova_super(nova_io_Nova_FileFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
 
 #endif

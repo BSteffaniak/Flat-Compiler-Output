@@ -22,6 +22,7 @@ typedef struct spectra_Nova_SpectraFunctionMap spectra_Nova_SpectraFunctionMap;
 #include <nova/primitive/nova_primitive_Nova_Null.h>
 #include <nova/primitive/number/nova_primitive_number_Nova_Char.h>
 #include <nova/primitive/nova_primitive_Nova_Bool.h>
+#include <nova/datastruct/list/nova_datastruct_list_Nova_List.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_Array.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_ImmutableArray.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_IntArray.h>
@@ -82,6 +83,10 @@ void spectra_Nova_SpectraFunctionMap_Nova_init_static(nova_exception_Nova_Except
 spectra_Nova_SpectraFunctionMap* spectra_Nova_SpectraFunctionMap_Nova_construct(spectra_Nova_SpectraFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
 void spectra_Nova_SpectraFunctionMap_Nova_destroy(spectra_Nova_SpectraFunctionMap** this, nova_exception_Nova_ExceptionData* exceptionData);
 void spectra_Nova_SpectraFunctionMap_Nova_this(spectra_Nova_SpectraFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+spectra_Nova_Spectra* spectra_Nova_SpectraFunctionMap_functionMapSpectraFunctionMap_static_Nova_construct(spectra_Nova_SpectraFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+void spectra_Nova_SpectraFunctionMap_functionMap_static_Nova_main(spectra_Nova_SpectraFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_list_Nova_Array* args);
+void spectra_Nova_SpectraFunctionMap_functionMap_Nova_compile(spectra_Nova_SpectraFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, spectra_Nova_Spectra* reference, nova_datastruct_list_Nova_Array* args);
+void spectra_Nova_SpectraFunctionMap_functionMap_Nova_testClasses(spectra_Nova_SpectraFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, spectra_Nova_Spectra* reference);
 void spectra_Nova_SpectraFunctionMap_Nova_super(spectra_Nova_SpectraFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
 
 #endif

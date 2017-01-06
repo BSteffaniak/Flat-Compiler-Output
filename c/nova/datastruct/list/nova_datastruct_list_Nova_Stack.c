@@ -12,6 +12,7 @@
 #include <nova/primitive/nova_primitive_Nova_Null.h>
 #include <nova/primitive/number/nova_primitive_number_Nova_Char.h>
 #include <nova/primitive/nova_primitive_Nova_Bool.h>
+#include <nova/datastruct/list/nova_datastruct_list_Nova_List.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_Array.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_ImmutableArray.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_IntArray.h>
@@ -184,6 +185,31 @@ void nova_datastruct_list_Nova_StackFunctionMap_Nova_destroy(nova_datastruct_lis
 
 void nova_datastruct_list_Nova_StackFunctionMap_Nova_this(nova_datastruct_list_Nova_StackFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
+}
+
+nova_datastruct_list_Nova_Stack* nova_datastruct_list_Nova_StackFunctionMap_functionMapStackFunctionMap0_static_Nova_construct(nova_datastruct_list_Nova_StackFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+	return (nova_datastruct_list_Nova_Stack*)nova_datastruct_list_Nova_Stack_0_Nova_construct(0, exceptionData);
+}
+
+nova_datastruct_list_Nova_Stack* nova_datastruct_list_Nova_StackFunctionMap_functionMapStackFunctionMap1_static_Nova_construct(nova_datastruct_list_Nova_StackFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_list_Nova_Array* data)
+{
+	return (nova_datastruct_list_Nova_Stack*)nova_datastruct_list_Nova_Stack_1_Nova_construct(0, exceptionData, data);
+}
+
+void nova_datastruct_list_Nova_StackFunctionMap_functionMap_Nova_push(nova_datastruct_list_Nova_StackFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_list_Nova_Stack* reference, nova_Nova_Object* data)
+{
+	nova_datastruct_list_Nova_Stack_Nova_push(reference, exceptionData, data);
+}
+
+nova_Nova_Object* nova_datastruct_list_Nova_StackFunctionMap_functionMap_Nova_pop(nova_datastruct_list_Nova_StackFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_list_Nova_Stack* reference)
+{
+	return (nova_Nova_Object*)nova_datastruct_list_Nova_Stack_Nova_pop(reference, exceptionData);
+}
+
+nova_Nova_Object* nova_datastruct_list_Nova_StackFunctionMap_functionMap_Nova_peek(nova_datastruct_list_Nova_StackFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_list_Nova_Stack* reference)
+{
+	return (nova_Nova_Object*)nova_datastruct_list_Nova_Stack_Nova_peek(reference, exceptionData);
 }
 
 void nova_datastruct_list_Nova_StackFunctionMap_Nova_super(nova_datastruct_list_Nova_StackFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)

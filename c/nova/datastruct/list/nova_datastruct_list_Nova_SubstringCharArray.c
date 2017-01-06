@@ -12,6 +12,7 @@
 #include <nova/primitive/nova_primitive_Nova_Null.h>
 #include <nova/primitive/number/nova_primitive_number_Nova_Char.h>
 #include <nova/primitive/nova_primitive_Nova_Bool.h>
+#include <nova/datastruct/list/nova_datastruct_list_Nova_List.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_Array.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_ImmutableArray.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_IntArray.h>
@@ -107,6 +108,11 @@ void nova_datastruct_list_Nova_SubstringCharArrayFunctionMap_Nova_destroy(nova_d
 
 void nova_datastruct_list_Nova_SubstringCharArrayFunctionMap_Nova_this(nova_datastruct_list_Nova_SubstringCharArrayFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
+}
+
+nova_datastruct_list_Nova_SubstringCharArray* nova_datastruct_list_Nova_SubstringCharArrayFunctionMap_functionMapSubstringCharArrayFunctionMap_static_Nova_construct(nova_datastruct_list_Nova_SubstringCharArrayFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+	return nova_datastruct_list_Nova_SubstringCharArray_Nova_construct(0, exceptionData);
 }
 
 void nova_datastruct_list_Nova_SubstringCharArrayFunctionMap_Nova_super(nova_datastruct_list_Nova_SubstringCharArrayFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)

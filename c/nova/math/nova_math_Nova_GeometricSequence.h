@@ -22,6 +22,7 @@ typedef struct nova_math_Nova_GeometricSequenceFunctionMap nova_math_Nova_Geomet
 #include <nova/primitive/nova_primitive_Nova_Null.h>
 #include <nova/primitive/number/nova_primitive_number_Nova_Char.h>
 #include <nova/primitive/nova_primitive_Nova_Bool.h>
+#include <nova/datastruct/list/nova_datastruct_list_Nova_List.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_Array.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_ImmutableArray.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_IntArray.h>
@@ -66,6 +67,7 @@ void nova_math_Nova_GeometricSequenceFunctionMap_Nova_init_static(nova_exception
 nova_math_Nova_GeometricSequenceFunctionMap* nova_math_Nova_GeometricSequenceFunctionMap_Nova_construct(nova_math_Nova_GeometricSequenceFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
 void nova_math_Nova_GeometricSequenceFunctionMap_Nova_destroy(nova_math_Nova_GeometricSequenceFunctionMap** this, nova_exception_Nova_ExceptionData* exceptionData);
 void nova_math_Nova_GeometricSequenceFunctionMap_Nova_this(nova_math_Nova_GeometricSequenceFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+nova_math_Nova_GeometricSequence* nova_math_Nova_GeometricSequenceFunctionMap_functionMapGeometricSequenceFunctionMap_static_Nova_construct(nova_math_Nova_GeometricSequenceFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
 void nova_math_Nova_GeometricSequenceFunctionMap_Nova_super(nova_math_Nova_GeometricSequenceFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
 
 #endif

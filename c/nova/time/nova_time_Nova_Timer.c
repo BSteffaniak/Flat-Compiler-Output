@@ -12,6 +12,7 @@
 #include <nova/primitive/nova_primitive_Nova_Null.h>
 #include <nova/primitive/number/nova_primitive_number_Nova_Char.h>
 #include <nova/primitive/nova_primitive_Nova_Bool.h>
+#include <nova/datastruct/list/nova_datastruct_list_Nova_List.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_Array.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_ImmutableArray.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_IntArray.h>
@@ -36,6 +37,9 @@
 typedef struct
 {
 } Context1;
+typedef struct
+{
+} Context2;
 
 
 
@@ -143,6 +147,8 @@ long_long nova_time_Nova_Timer_virtual_Accessor_Nova_duration(nova_time_Nova_Tim
 	return this->vtable->nova_time_Nova_Timer_virtual_Accessor_Nova_duration((nova_time_Nova_Timer*)(this), exceptionData);
 }
 
+
+void nova_time_Nova_TimerFunctionMap_functionMap_static_Nova_lambda145(nova_time_Nova_TimerFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_time_Nova_Timer* _1, Context2* context);
 void nova_time_Nova_TimerFunctionMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData)
 {
 	{
@@ -179,7 +185,56 @@ void nova_time_Nova_TimerFunctionMap_Nova_this(nova_time_Nova_TimerFunctionMap* 
 {
 }
 
+nova_time_Nova_Timer* nova_time_Nova_TimerFunctionMap_functionMapTimerFunctionMap_static_Nova_construct(nova_time_Nova_TimerFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+	return nova_time_Nova_Timer_Nova_construct(0, exceptionData);
+}
+
+nova_time_Nova_Timer* nova_time_Nova_TimerFunctionMap_functionMap_Nova_start(nova_time_Nova_TimerFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_time_Nova_Timer* reference)
+{
+	return nova_time_Nova_Timer_Nova_start(reference, exceptionData);
+}
+
+nova_time_Nova_Timer* nova_time_Nova_TimerFunctionMap_functionMap_Nova_stop(nova_time_Nova_TimerFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_time_Nova_Timer* reference)
+{
+	return nova_time_Nova_Timer_virtual_Nova_stop((nova_time_Nova_Timer*)(reference), exceptionData);
+}
+
+nova_time_Nova_Timer* nova_time_Nova_TimerFunctionMap_functionMap_Nova_reset(nova_time_Nova_TimerFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_time_Nova_Timer* reference)
+{
+	return nova_time_Nova_Timer_Nova_reset(reference, exceptionData);
+}
+
+nova_Nova_String* nova_time_Nova_TimerFunctionMap_functionMap_Nova_toString(nova_time_Nova_TimerFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_time_Nova_Timer* reference)
+{
+	return nova_Nova_Object_virtual_Nova_toString((nova_Nova_Object*)(reference), exceptionData);
+}
+
+nova_time_Nova_Timer* nova_time_Nova_TimerFunctionMap_functionMap_static_Nova_time(nova_time_Nova_TimerFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_time_Nova_TimerFunctionMap_closure9_Nova_action nova_time_Nova_TimerFunctionMap_Nova_action, void* nova_time_Nova_TimerFunctionMap_ref_Nova_action, void* action_context, nova_time_Nova_TimerFunctionMap_closure10_Nova_callback nova_time_Nova_TimerFunctionMap_Nova_callback, void* nova_time_Nova_TimerFunctionMap_ref_Nova_callback, void* callback_context)
+{
+	Context2* contextArg179 = NOVA_MALLOC(sizeof(Context2));
+	
+	nova_time_Nova_TimerFunctionMap_Nova_callback = (nova_time_Nova_TimerFunctionMap_closure10_Nova_callback)(nova_time_Nova_TimerFunctionMap_Nova_callback == 0 ? (nova_time_Nova_TimerFunctionMap_closure10_Nova_callback)&nova_time_Nova_TimerFunctionMap_functionMap_static_Nova_lambda145 : nova_time_Nova_TimerFunctionMap_Nova_callback);
+	nova_time_Nova_TimerFunctionMap_ref_Nova_callback = (void*)(nova_time_Nova_TimerFunctionMap_ref_Nova_callback == 0 ? (void*)nova_null : nova_time_Nova_TimerFunctionMap_ref_Nova_callback);
+	callback_context = (void*)(callback_context == 0 ? (void*)contextArg179 : callback_context);
+	return nova_time_Nova_Timer_static_Nova_time(0, exceptionData, (nova_time_Nova_Timer_closure7_Nova_action)nova_time_Nova_TimerFunctionMap_Nova_action, nova_time_Nova_TimerFunctionMap_ref_Nova_action, action_context, (nova_time_Nova_Timer_closure8_Nova_callback)nova_time_Nova_TimerFunctionMap_Nova_callback, nova_time_Nova_TimerFunctionMap_ref_Nova_callback, callback_context);
+}
+
+void nova_time_Nova_TimerFunctionMap_functionMap_static_Nova_lambda145(nova_time_Nova_TimerFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_time_Nova_Timer* _1, Context2* context)
+{
+}
+
 void nova_time_Nova_TimerFunctionMap_Nova_super(nova_time_Nova_TimerFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
+}
+
+nova_time_Nova_Timer* nova_time_Nova_TimerFunctionMap_virtualfunctionMapTimerFunctionMap_static_Nova_construct(nova_time_Nova_TimerFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+	return this->vtable->nova_time_Nova_TimerFunctionMap_virtualfunctionMapTimerFunctionMap_static_Nova_construct(0, exceptionData);
+}
+
+nova_time_Nova_Timer* nova_time_Nova_TimerFunctionMap_virtualfunctionMap_Nova_stop(nova_time_Nova_TimerFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_time_Nova_Timer* reference)
+{
+	return this->vtable->nova_time_Nova_TimerFunctionMap_virtualfunctionMap_Nova_stop(this, exceptionData, reference);
 }
 

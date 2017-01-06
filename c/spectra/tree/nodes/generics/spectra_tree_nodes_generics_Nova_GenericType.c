@@ -12,6 +12,7 @@
 #include <nova/primitive/nova_primitive_Nova_Null.h>
 #include <nova/primitive/number/nova_primitive_number_Nova_Char.h>
 #include <nova/primitive/nova_primitive_Nova_Bool.h>
+#include <nova/datastruct/list/nova_datastruct_list_Nova_List.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_Array.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_ImmutableArray.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_IntArray.h>
@@ -32,6 +33,7 @@
 #include <spectra/tree/nodes/spectra_tree_nodes_Nova_Node.h>
 #include <spectra/tree/nodes/spectra_tree_nodes_Nova_Type.h>
 #include <spectra/tree/nodes/generics/spectra_tree_nodes_generics_Nova_GenericParameter.h>
+#include <spectra/tree/nodes/spectra_tree_nodes_Nova_Type.h>
 #include <spectra/spectra_Nova_InvalidParseException.h>
 #include <spectra/util/spectra_util_Nova_Location.h>
 #include <spectra/tree/nodes/generics/spectra_tree_nodes_generics_Nova_GenericType.h>
@@ -150,6 +152,7 @@ spectra_tree_nodes_generics_Nova_GenericTypeFunctionMap* spectra_tree_nodes_gene
 	this->vtable = &spectra_tree_nodes_generics_GenericType_GenericTypeFunctionMap_Extension_VTable_val;
 	nova_Nova_Object_Nova_super((nova_Nova_Object*)this, exceptionData);
 	nova_meta_Nova_FunctionMap_Nova_super((nova_meta_Nova_FunctionMap*)this, exceptionData);
+	spectra_tree_nodes_Nova_TypeFunctionMap_Nova_super((spectra_tree_nodes_Nova_TypeFunctionMap*)this, exceptionData);
 	spectra_tree_nodes_generics_Nova_GenericTypeFunctionMap_Nova_super(this, exceptionData);
 	
 	{
@@ -172,6 +175,27 @@ void spectra_tree_nodes_generics_Nova_GenericTypeFunctionMap_Nova_destroy(spectr
 
 void spectra_tree_nodes_generics_Nova_GenericTypeFunctionMap_Nova_this(spectra_tree_nodes_generics_Nova_GenericTypeFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
+}
+
+spectra_tree_nodes_generics_Nova_GenericType* spectra_tree_nodes_generics_Nova_GenericTypeFunctionMap_functionMapGenericTypeFunctionMap_static_Nova_construct(spectra_tree_nodes_generics_Nova_GenericTypeFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* name)
+{
+	name = (nova_Nova_String*)(name == 0 ? (nova_Nova_Object*)(nova_Nova_Object*)nova_null : (nova_Nova_Object*)name);
+	return spectra_tree_nodes_generics_Nova_GenericType_0_Nova_construct(0, exceptionData, name);
+}
+
+spectra_tree_nodes_generics_Nova_GenericType* spectra_tree_nodes_generics_Nova_GenericTypeFunctionMap_functionMapGenericTypeFunctionMap0_static_Nova_construct(spectra_tree_nodes_generics_Nova_GenericTypeFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, spectra_tree_nodes_Nova_Type* type, spectra_tree_nodes_generics_Nova_GenericParameter* parameter)
+{
+	return spectra_tree_nodes_generics_Nova_GenericType_1_Nova_construct(0, exceptionData, type, parameter);
+}
+
+char spectra_tree_nodes_generics_Nova_GenericTypeFunctionMap_functionMap_Nova_isValid(spectra_tree_nodes_generics_Nova_GenericTypeFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, spectra_tree_nodes_generics_Nova_GenericType* reference, spectra_tree_nodes_Nova_Node* parent)
+{
+	return spectra_tree_nodes_generics_Nova_GenericType_Nova_isValid(reference, exceptionData, parent);
+}
+
+spectra_tree_nodes_generics_Nova_GenericType* spectra_tree_nodes_generics_Nova_GenericTypeFunctionMap_functionMap_Nova_cloneTo(spectra_tree_nodes_generics_Nova_GenericTypeFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, spectra_tree_nodes_generics_Nova_GenericType* reference, spectra_tree_nodes_generics_Nova_GenericType* other)
+{
+	return spectra_tree_nodes_generics_Nova_GenericType_Nova_cloneTo(reference, exceptionData, other);
 }
 
 void spectra_tree_nodes_generics_Nova_GenericTypeFunctionMap_Nova_super(spectra_tree_nodes_generics_Nova_GenericTypeFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)

@@ -22,6 +22,7 @@ typedef struct nova_datastruct_list_Nova_QueueFunctionMap nova_datastruct_list_N
 #include <nova/primitive/nova_primitive_Nova_Null.h>
 #include <nova/primitive/number/nova_primitive_number_Nova_Char.h>
 #include <nova/primitive/nova_primitive_Nova_Bool.h>
+#include <nova/datastruct/list/nova_datastruct_list_Nova_List.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_Array.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_ImmutableArray.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_IntArray.h>
@@ -41,6 +42,7 @@ typedef struct nova_datastruct_list_Nova_QueueFunctionMap nova_datastruct_list_N
 #include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_ArrayIterator.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_List.h>
+#include <nova/datastruct/list/nova_datastruct_list_Nova_Iterable.h>
 #include <nova/NativeObject.h>
 #include <nova/operators/nova_operators_Nova_EqualsOperator.h>
 
@@ -87,6 +89,12 @@ void nova_datastruct_list_Nova_QueueFunctionMap_Nova_init_static(nova_exception_
 nova_datastruct_list_Nova_QueueFunctionMap* nova_datastruct_list_Nova_QueueFunctionMap_Nova_construct(nova_datastruct_list_Nova_QueueFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
 void nova_datastruct_list_Nova_QueueFunctionMap_Nova_destroy(nova_datastruct_list_Nova_QueueFunctionMap** this, nova_exception_Nova_ExceptionData* exceptionData);
 void nova_datastruct_list_Nova_QueueFunctionMap_Nova_this(nova_datastruct_list_Nova_QueueFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+nova_datastruct_list_Nova_Queue* nova_datastruct_list_Nova_QueueFunctionMap_functionMapQueueFunctionMap0_static_Nova_construct(nova_datastruct_list_Nova_QueueFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+nova_datastruct_list_Nova_Queue* nova_datastruct_list_Nova_QueueFunctionMap_functionMapQueueFunctionMap1_static_Nova_construct(nova_datastruct_list_Nova_QueueFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_list_Nova_Array* data);
+nova_Nova_Object* nova_datastruct_list_Nova_QueueFunctionMap_functionMap_Nova_dequeue(nova_datastruct_list_Nova_QueueFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_list_Nova_Queue* reference);
+nova_datastruct_list_Nova_Array* nova_datastruct_list_Nova_QueueFunctionMap_functionMap_Nova_enqueue(nova_datastruct_list_Nova_QueueFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_list_Nova_Queue* reference, nova_Nova_Object* element);
+nova_datastruct_list_Nova_Queue* nova_datastruct_list_Nova_QueueFunctionMap_functionMap0_Nova_reverse(nova_datastruct_list_Nova_QueueFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_list_Nova_Queue* reference);
+nova_Nova_String* nova_datastruct_list_Nova_QueueFunctionMap_functionMap_Nova_toString(nova_datastruct_list_Nova_QueueFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_list_Nova_Queue* reference);
 void nova_datastruct_list_Nova_QueueFunctionMap_Nova_super(nova_datastruct_list_Nova_QueueFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
 
 #endif

@@ -12,6 +12,7 @@
 #include <nova/primitive/nova_primitive_Nova_Null.h>
 #include <nova/primitive/number/nova_primitive_number_Nova_Char.h>
 #include <nova/primitive/nova_primitive_Nova_Bool.h>
+#include <nova/datastruct/list/nova_datastruct_list_Nova_List.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_Array.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_ImmutableArray.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_IntArray.h>
@@ -76,17 +77,17 @@ nova_datastruct_list_Nova_Array* nova_datastruct_Nova_Node_1_Nova_preorder(nova_
 nova_datastruct_list_Nova_Array* nova_datastruct_Nova_Node_1_Nova_inorder(nova_datastruct_Nova_Node* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_list_Nova_Array* array);
 nova_datastruct_list_Nova_Array* nova_datastruct_Nova_Node_1_Nova_postorder(nova_datastruct_Nova_Node* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_list_Nova_Array* array);
 nova_datastruct_list_Nova_Array* nova_datastruct_Nova_Node_1_Nova_levelorder(nova_datastruct_Nova_Node* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_list_Nova_Array* array);
-char nova_datastruct_Nova_Node_Nova_lambda80(nova_datastruct_Nova_Node* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_Nova_Node* _1, int _2, nova_datastruct_list_Nova_Array* _3, Context1* context);
-void nova_datastruct_Nova_Node_Nova_lambda81(nova_datastruct_Nova_Node* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_Nova_Node* _1, int _2, nova_datastruct_list_Nova_Array* _3, Context2* context);
-char nova_datastruct_Nova_Node_Nova_lambda82(nova_datastruct_Nova_Node* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_Nova_Node* _1, int _2, nova_datastruct_list_Nova_Array* _3, Context3* context);
-void nova_datastruct_Nova_Node_Nova_lambda83(nova_datastruct_Nova_Node* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_Nova_Node* _1, int _2, nova_datastruct_list_Nova_Array* _3, Context4* context);
-char nova_datastruct_Nova_Node_Nova_lambda84(nova_datastruct_Nova_Node* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_Nova_Node* _1, int _2, nova_datastruct_list_Nova_Array* _3, Context5* context);
-void nova_datastruct_Nova_Node_Nova_lambda85(nova_datastruct_Nova_Node* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_Nova_Node* _1, int _2, nova_datastruct_list_Nova_Array* _3, Context6* context);
-char nova_datastruct_Nova_Node_Nova_lambda86(nova_datastruct_Nova_Node* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_Nova_Node* _1, int _2, nova_datastruct_list_Nova_Array* _3, Context7* context);
-void nova_datastruct_Nova_Node_Nova_lambda87(nova_datastruct_Nova_Node* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_Nova_Node* _1, int _2, nova_datastruct_list_Nova_Array* _3, Context8* context);
+char nova_datastruct_Nova_Node_Nova_lambda77(nova_datastruct_Nova_Node* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_Nova_Node* _1, int _2, nova_datastruct_list_Nova_Array* _3, Context1* context);
+void nova_datastruct_Nova_Node_Nova_lambda78(nova_datastruct_Nova_Node* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_Nova_Node* _1, int _2, nova_datastruct_list_Nova_Array* _3, Context2* context);
+char nova_datastruct_Nova_Node_Nova_lambda79(nova_datastruct_Nova_Node* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_Nova_Node* _1, int _2, nova_datastruct_list_Nova_Array* _3, Context3* context);
+void nova_datastruct_Nova_Node_Nova_lambda80(nova_datastruct_Nova_Node* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_Nova_Node* _1, int _2, nova_datastruct_list_Nova_Array* _3, Context4* context);
+char nova_datastruct_Nova_Node_Nova_lambda81(nova_datastruct_Nova_Node* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_Nova_Node* _1, int _2, nova_datastruct_list_Nova_Array* _3, Context5* context);
+void nova_datastruct_Nova_Node_Nova_lambda82(nova_datastruct_Nova_Node* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_Nova_Node* _1, int _2, nova_datastruct_list_Nova_Array* _3, Context6* context);
+char nova_datastruct_Nova_Node_Nova_lambda83(nova_datastruct_Nova_Node* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_Nova_Node* _1, int _2, nova_datastruct_list_Nova_Array* _3, Context7* context);
+void nova_datastruct_Nova_Node_Nova_lambda84(nova_datastruct_Nova_Node* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_Nova_Node* _1, int _2, nova_datastruct_list_Nova_Array* _3, Context8* context);
 nova_datastruct_list_Nova_Array* generated27(nova_datastruct_Nova_Node* this, nova_exception_Nova_ExceptionData* exceptionData);
-char nova_datastruct_Nova_Node_Nova_lambda88(nova_datastruct_Nova_Node* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_Nova_Node* _1, int _2, nova_datastruct_list_Nova_Array* _3, Context9* context);
-void nova_datastruct_Nova_Node_Nova_lambda89(nova_datastruct_Nova_Node* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_Nova_Node* _1, int _2, nova_datastruct_list_Nova_Array* _3, Context10* context);
+char nova_datastruct_Nova_Node_Nova_lambda85(nova_datastruct_Nova_Node* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_Nova_Node* _1, int _2, nova_datastruct_list_Nova_Array* _3, Context9* context);
+void nova_datastruct_Nova_Node_Nova_lambda86(nova_datastruct_Nova_Node* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_Nova_Node* _1, int _2, nova_datastruct_list_Nova_Array* _3, Context10* context);
 void nova_datastruct_Nova_Node_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData)
 {
 	{
@@ -150,39 +151,39 @@ nova_datastruct_list_Nova_Array* nova_datastruct_Nova_Node_0_Nova_levelorder(nov
 
 nova_datastruct_list_Nova_Array* nova_datastruct_Nova_Node_1_Nova_preorder(nova_datastruct_Nova_Node* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_list_Nova_Array* array)
 {
-	Context1* contextArg80 = NOVA_MALLOC(sizeof(Context1));
-	Context2* contextArg81 = NOVA_MALLOC(sizeof(Context2));
-	contextArg81->nova_datastruct_Nova_Node_Nova_array = &array;
+	Context1* contextArg77 = NOVA_MALLOC(sizeof(Context1));
+	Context2* contextArg78 = NOVA_MALLOC(sizeof(Context2));
+	contextArg78->nova_datastruct_Nova_Node_Nova_array = &array;
 	
 	nova_datastruct_list_Nova_Array_0_Nova_add(array, exceptionData, this->nova_datastruct_Nova_Node_Nova_data);
-	nova_datastruct_list_Nova_List_virtual0_Nova_forEach((nova_datastruct_list_Nova_List*)(nova_datastruct_list_Nova_List_virtual0_Nova_filter((nova_datastruct_list_Nova_List*)(this->nova_datastruct_Nova_Node_Nova_children), exceptionData, (nova_datastruct_list_Nova_List_closure20_Nova_filterFunc)&nova_datastruct_Nova_Node_Nova_lambda80, this, contextArg80)), exceptionData, (nova_datastruct_list_Nova_List_closure4_Nova_func)&nova_datastruct_Nova_Node_Nova_lambda81, this, contextArg81);
+	nova_datastruct_list_Nova_List_virtual0_Nova_forEach((nova_datastruct_list_Nova_List*)(nova_datastruct_list_Nova_List_virtual0_Nova_filter((nova_datastruct_list_Nova_List*)(this->nova_datastruct_Nova_Node_Nova_children), exceptionData, (nova_datastruct_list_Nova_List_closure20_Nova_filterFunc)&nova_datastruct_Nova_Node_Nova_lambda77, this, contextArg77)), exceptionData, (nova_datastruct_list_Nova_List_closure4_Nova_func)&nova_datastruct_Nova_Node_Nova_lambda78, this, contextArg78);
 	return (nova_datastruct_list_Nova_Array*)array;
 }
 
 nova_datastruct_list_Nova_Array* nova_datastruct_Nova_Node_1_Nova_inorder(nova_datastruct_Nova_Node* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_list_Nova_Array* array)
 {
 	int l1_Nova_half = 0;
-	Context3* contextArg82 = NOVA_MALLOC(sizeof(Context3));
-	Context4* contextArg83 = NOVA_MALLOC(sizeof(Context4));
-	contextArg83->nova_datastruct_Nova_Node_Nova_array = &array;
-	Context5* contextArg84 = NOVA_MALLOC(sizeof(Context5));
-	Context6* contextArg85 = NOVA_MALLOC(sizeof(Context6));
-	contextArg85->nova_datastruct_Nova_Node_Nova_array = &array;
+	Context3* contextArg79 = NOVA_MALLOC(sizeof(Context3));
+	Context4* contextArg80 = NOVA_MALLOC(sizeof(Context4));
+	contextArg80->nova_datastruct_Nova_Node_Nova_array = &array;
+	Context5* contextArg81 = NOVA_MALLOC(sizeof(Context5));
+	Context6* contextArg82 = NOVA_MALLOC(sizeof(Context6));
+	contextArg82->nova_datastruct_Nova_Node_Nova_array = &array;
 	
 	l1_Nova_half = nova_datastruct_list_Nova_Array_Accessorfunc_Nova_count((nova_datastruct_list_Nova_Array*)(this->nova_datastruct_Nova_Node_Nova_children), exceptionData) - nova_datastruct_list_Nova_Array_Accessorfunc_Nova_count((nova_datastruct_list_Nova_Array*)(this->nova_datastruct_Nova_Node_Nova_children), exceptionData) / 2;
-	nova_datastruct_list_Nova_List_virtual0_Nova_forEach((nova_datastruct_list_Nova_List*)(nova_datastruct_list_Nova_List_virtual0_Nova_filter((nova_datastruct_list_Nova_List*)(nova_datastruct_list_Nova_List_virtual_Nova_take((nova_datastruct_list_Nova_List*)(this->nova_datastruct_Nova_Node_Nova_children), exceptionData, l1_Nova_half)), exceptionData, (nova_datastruct_list_Nova_List_closure20_Nova_filterFunc)&nova_datastruct_Nova_Node_Nova_lambda82, this, contextArg82)), exceptionData, (nova_datastruct_list_Nova_List_closure4_Nova_func)&nova_datastruct_Nova_Node_Nova_lambda83, this, contextArg83);
+	nova_datastruct_list_Nova_List_virtual0_Nova_forEach((nova_datastruct_list_Nova_List*)(nova_datastruct_list_Nova_List_virtual0_Nova_filter((nova_datastruct_list_Nova_List*)(nova_datastruct_list_Nova_List_virtual_Nova_take((nova_datastruct_list_Nova_List*)(this->nova_datastruct_Nova_Node_Nova_children), exceptionData, l1_Nova_half)), exceptionData, (nova_datastruct_list_Nova_List_closure20_Nova_filterFunc)&nova_datastruct_Nova_Node_Nova_lambda79, this, contextArg79)), exceptionData, (nova_datastruct_list_Nova_List_closure4_Nova_func)&nova_datastruct_Nova_Node_Nova_lambda80, this, contextArg80);
 	nova_datastruct_list_Nova_Array_0_Nova_add(array, exceptionData, this->nova_datastruct_Nova_Node_Nova_data);
-	nova_datastruct_list_Nova_List_virtual0_Nova_forEach((nova_datastruct_list_Nova_List*)(nova_datastruct_list_Nova_List_virtual0_Nova_filter((nova_datastruct_list_Nova_List*)(nova_datastruct_list_Nova_List_virtual_Nova_skip((nova_datastruct_list_Nova_List*)(this->nova_datastruct_Nova_Node_Nova_children), exceptionData, l1_Nova_half)), exceptionData, (nova_datastruct_list_Nova_List_closure20_Nova_filterFunc)&nova_datastruct_Nova_Node_Nova_lambda84, this, contextArg84)), exceptionData, (nova_datastruct_list_Nova_List_closure4_Nova_func)&nova_datastruct_Nova_Node_Nova_lambda85, this, contextArg85);
+	nova_datastruct_list_Nova_List_virtual0_Nova_forEach((nova_datastruct_list_Nova_List*)(nova_datastruct_list_Nova_List_virtual0_Nova_filter((nova_datastruct_list_Nova_List*)(nova_datastruct_list_Nova_List_virtual_Nova_skip((nova_datastruct_list_Nova_List*)(this->nova_datastruct_Nova_Node_Nova_children), exceptionData, l1_Nova_half)), exceptionData, (nova_datastruct_list_Nova_List_closure20_Nova_filterFunc)&nova_datastruct_Nova_Node_Nova_lambda81, this, contextArg81)), exceptionData, (nova_datastruct_list_Nova_List_closure4_Nova_func)&nova_datastruct_Nova_Node_Nova_lambda82, this, contextArg82);
 	return (nova_datastruct_list_Nova_Array*)array;
 }
 
 nova_datastruct_list_Nova_Array* nova_datastruct_Nova_Node_1_Nova_postorder(nova_datastruct_Nova_Node* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_list_Nova_Array* array)
 {
-	Context7* contextArg86 = NOVA_MALLOC(sizeof(Context7));
-	Context8* contextArg87 = NOVA_MALLOC(sizeof(Context8));
-	contextArg87->nova_datastruct_Nova_Node_Nova_array = &array;
+	Context7* contextArg83 = NOVA_MALLOC(sizeof(Context7));
+	Context8* contextArg84 = NOVA_MALLOC(sizeof(Context8));
+	contextArg84->nova_datastruct_Nova_Node_Nova_array = &array;
 	
-	nova_datastruct_list_Nova_List_virtual0_Nova_forEach((nova_datastruct_list_Nova_List*)(nova_datastruct_list_Nova_List_virtual0_Nova_filter((nova_datastruct_list_Nova_List*)(this->nova_datastruct_Nova_Node_Nova_children), exceptionData, (nova_datastruct_list_Nova_List_closure20_Nova_filterFunc)&nova_datastruct_Nova_Node_Nova_lambda86, this, contextArg86)), exceptionData, (nova_datastruct_list_Nova_List_closure4_Nova_func)&nova_datastruct_Nova_Node_Nova_lambda87, this, contextArg87);
+	nova_datastruct_list_Nova_List_virtual0_Nova_forEach((nova_datastruct_list_Nova_List*)(nova_datastruct_list_Nova_List_virtual0_Nova_filter((nova_datastruct_list_Nova_List*)(this->nova_datastruct_Nova_Node_Nova_children), exceptionData, (nova_datastruct_list_Nova_List_closure20_Nova_filterFunc)&nova_datastruct_Nova_Node_Nova_lambda83, this, contextArg83)), exceptionData, (nova_datastruct_list_Nova_List_closure4_Nova_func)&nova_datastruct_Nova_Node_Nova_lambda84, this, contextArg84);
 	nova_datastruct_list_Nova_Array_0_Nova_add(array, exceptionData, this->nova_datastruct_Nova_Node_Nova_data);
 	return (nova_datastruct_list_Nova_Array*)array;
 }
@@ -195,13 +196,13 @@ nova_datastruct_list_Nova_Array* nova_datastruct_Nova_Node_1_Nova_levelorder(nov
 	while (!nova_datastruct_list_Nova_Queue_Accessor_Nova_empty((nova_datastruct_list_Nova_Queue*)(l1_Nova_queue), exceptionData))
 	{
 		nova_datastruct_Nova_Node* l2_Nova_current = (nova_datastruct_Nova_Node*)nova_null;
-		Context9* contextArg88 = NOVA_MALLOC(sizeof(Context9));
-		Context10* contextArg89 = NOVA_MALLOC(sizeof(Context10));
-		contextArg89->nova_datastruct_Nova_Node_Nova_queue = &l1_Nova_queue;
+		Context9* contextArg85 = NOVA_MALLOC(sizeof(Context9));
+		Context10* contextArg86 = NOVA_MALLOC(sizeof(Context10));
+		contextArg86->nova_datastruct_Nova_Node_Nova_queue = &l1_Nova_queue;
 		
 		l2_Nova_current = (nova_datastruct_Nova_Node*)(nova_datastruct_list_Nova_Queue_Nova_dequeue((nova_datastruct_list_Nova_Queue*)(l1_Nova_queue), exceptionData));
 		nova_datastruct_list_Nova_Array_0_Nova_add(array, exceptionData, l2_Nova_current->nova_datastruct_Nova_Node_Nova_data);
-		nova_datastruct_list_Nova_List_virtual0_Nova_forEach((nova_datastruct_list_Nova_List*)(nova_datastruct_list_Nova_List_virtual0_Nova_filter((nova_datastruct_list_Nova_List*)(l2_Nova_current->nova_datastruct_Nova_Node_Nova_children), exceptionData, (nova_datastruct_list_Nova_List_closure20_Nova_filterFunc)&nova_datastruct_Nova_Node_Nova_lambda88, this, contextArg88)), exceptionData, (nova_datastruct_list_Nova_List_closure4_Nova_func)&nova_datastruct_Nova_Node_Nova_lambda89, this, contextArg89);
+		nova_datastruct_list_Nova_List_virtual0_Nova_forEach((nova_datastruct_list_Nova_List*)(nova_datastruct_list_Nova_List_virtual0_Nova_filter((nova_datastruct_list_Nova_List*)(l2_Nova_current->nova_datastruct_Nova_Node_Nova_children), exceptionData, (nova_datastruct_list_Nova_List_closure20_Nova_filterFunc)&nova_datastruct_Nova_Node_Nova_lambda85, this, contextArg85)), exceptionData, (nova_datastruct_list_Nova_List_closure4_Nova_func)&nova_datastruct_Nova_Node_Nova_lambda86, this, contextArg86);
 	}
 	return (nova_datastruct_list_Nova_Array*)array;
 }
@@ -222,42 +223,42 @@ nova_datastruct_Nova_Node* nova_datastruct_Nova_Node_Nova_set(nova_datastruct_No
 	return value;
 }
 
-char nova_datastruct_Nova_Node_Nova_lambda80(nova_datastruct_Nova_Node* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_Nova_Node* _1, int _2, nova_datastruct_list_Nova_Array* _3, Context1* context)
+char nova_datastruct_Nova_Node_Nova_lambda77(nova_datastruct_Nova_Node* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_Nova_Node* _1, int _2, nova_datastruct_list_Nova_Array* _3, Context1* context)
 {
 	return _1 != (nova_datastruct_Nova_Node*)nova_null;
 }
 
-void nova_datastruct_Nova_Node_Nova_lambda81(nova_datastruct_Nova_Node* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_Nova_Node* _1, int _2, nova_datastruct_list_Nova_Array* _3, Context2* context)
+void nova_datastruct_Nova_Node_Nova_lambda78(nova_datastruct_Nova_Node* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_Nova_Node* _1, int _2, nova_datastruct_list_Nova_Array* _3, Context2* context)
 {
 	nova_datastruct_Nova_Node_1_Nova_preorder(_1, exceptionData, (*context->nova_datastruct_Nova_Node_Nova_array));
 }
 
-char nova_datastruct_Nova_Node_Nova_lambda82(nova_datastruct_Nova_Node* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_Nova_Node* _1, int _2, nova_datastruct_list_Nova_Array* _3, Context3* context)
+char nova_datastruct_Nova_Node_Nova_lambda79(nova_datastruct_Nova_Node* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_Nova_Node* _1, int _2, nova_datastruct_list_Nova_Array* _3, Context3* context)
 {
 	return _1 != (nova_datastruct_Nova_Node*)nova_null;
 }
 
-void nova_datastruct_Nova_Node_Nova_lambda83(nova_datastruct_Nova_Node* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_Nova_Node* _1, int _2, nova_datastruct_list_Nova_Array* _3, Context4* context)
+void nova_datastruct_Nova_Node_Nova_lambda80(nova_datastruct_Nova_Node* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_Nova_Node* _1, int _2, nova_datastruct_list_Nova_Array* _3, Context4* context)
 {
 	nova_datastruct_Nova_Node_1_Nova_inorder(_1, exceptionData, (*context->nova_datastruct_Nova_Node_Nova_array));
 }
 
-char nova_datastruct_Nova_Node_Nova_lambda84(nova_datastruct_Nova_Node* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_Nova_Node* _1, int _2, nova_datastruct_list_Nova_Array* _3, Context5* context)
+char nova_datastruct_Nova_Node_Nova_lambda81(nova_datastruct_Nova_Node* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_Nova_Node* _1, int _2, nova_datastruct_list_Nova_Array* _3, Context5* context)
 {
 	return _1 != (nova_datastruct_Nova_Node*)nova_null;
 }
 
-void nova_datastruct_Nova_Node_Nova_lambda85(nova_datastruct_Nova_Node* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_Nova_Node* _1, int _2, nova_datastruct_list_Nova_Array* _3, Context6* context)
+void nova_datastruct_Nova_Node_Nova_lambda82(nova_datastruct_Nova_Node* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_Nova_Node* _1, int _2, nova_datastruct_list_Nova_Array* _3, Context6* context)
 {
 	nova_datastruct_Nova_Node_1_Nova_inorder(_1, exceptionData, (*context->nova_datastruct_Nova_Node_Nova_array));
 }
 
-char nova_datastruct_Nova_Node_Nova_lambda86(nova_datastruct_Nova_Node* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_Nova_Node* _1, int _2, nova_datastruct_list_Nova_Array* _3, Context7* context)
+char nova_datastruct_Nova_Node_Nova_lambda83(nova_datastruct_Nova_Node* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_Nova_Node* _1, int _2, nova_datastruct_list_Nova_Array* _3, Context7* context)
 {
 	return _1 != (nova_datastruct_Nova_Node*)nova_null;
 }
 
-void nova_datastruct_Nova_Node_Nova_lambda87(nova_datastruct_Nova_Node* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_Nova_Node* _1, int _2, nova_datastruct_list_Nova_Array* _3, Context8* context)
+void nova_datastruct_Nova_Node_Nova_lambda84(nova_datastruct_Nova_Node* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_Nova_Node* _1, int _2, nova_datastruct_list_Nova_Array* _3, Context8* context)
 {
 	nova_datastruct_Nova_Node_1_Nova_postorder(_1, exceptionData, (*context->nova_datastruct_Nova_Node_Nova_array));
 }
@@ -271,12 +272,12 @@ nova_datastruct_list_Nova_Array* generated27(nova_datastruct_Nova_Node* this, no
 	return nova_datastruct_list_Nova_Array_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)(l1_Nova_temp), 1);
 }
 
-char nova_datastruct_Nova_Node_Nova_lambda88(nova_datastruct_Nova_Node* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_Nova_Node* _1, int _2, nova_datastruct_list_Nova_Array* _3, Context9* context)
+char nova_datastruct_Nova_Node_Nova_lambda85(nova_datastruct_Nova_Node* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_Nova_Node* _1, int _2, nova_datastruct_list_Nova_Array* _3, Context9* context)
 {
 	return _1 != (nova_datastruct_Nova_Node*)nova_null;
 }
 
-void nova_datastruct_Nova_Node_Nova_lambda89(nova_datastruct_Nova_Node* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_Nova_Node* _1, int _2, nova_datastruct_list_Nova_Array* _3, Context10* context)
+void nova_datastruct_Nova_Node_Nova_lambda86(nova_datastruct_Nova_Node* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_Nova_Node* _1, int _2, nova_datastruct_list_Nova_Array* _3, Context10* context)
 {
 	nova_datastruct_list_Nova_Queue_Nova_enqueue((nova_datastruct_list_Nova_Queue*)((*context->nova_datastruct_Nova_Node_Nova_queue)), exceptionData, (nova_Nova_Object*)(_1));
 }
@@ -323,7 +324,74 @@ void nova_datastruct_Nova_NodeFunctionMap_Nova_this(nova_datastruct_Nova_NodeFun
 {
 }
 
+nova_datastruct_Nova_Node* nova_datastruct_Nova_NodeFunctionMap_functionMapNodeFunctionMap_static_Nova_construct(nova_datastruct_Nova_NodeFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_Object* data, int numChildren)
+{
+	data = (nova_Nova_Object*)(data == 0 ? (nova_Nova_Object*)(nova_Nova_Object*)nova_null : (nova_Nova_Object*)data);
+	numChildren = (int)(numChildren == (intptr_t)nova_null ? 5 : numChildren);
+	return nova_datastruct_Nova_Node_Nova_construct(0, exceptionData, data, numChildren);
+}
+
+nova_datastruct_list_Nova_Array* nova_datastruct_Nova_NodeFunctionMap_functionMap0_Nova_preorder(nova_datastruct_Nova_NodeFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_Nova_Node* reference)
+{
+	return (nova_datastruct_list_Nova_Array*)nova_datastruct_Nova_Node_0_Nova_preorder(reference, exceptionData);
+}
+
+nova_datastruct_list_Nova_Array* nova_datastruct_Nova_NodeFunctionMap_functionMap0_Nova_inorder(nova_datastruct_Nova_NodeFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_Nova_Node* reference)
+{
+	return (nova_datastruct_list_Nova_Array*)nova_datastruct_Nova_Node_0_Nova_inorder(reference, exceptionData);
+}
+
+nova_datastruct_list_Nova_Array* nova_datastruct_Nova_NodeFunctionMap_functionMap0_Nova_postorder(nova_datastruct_Nova_NodeFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_Nova_Node* reference)
+{
+	return (nova_datastruct_list_Nova_Array*)nova_datastruct_Nova_Node_0_Nova_postorder(reference, exceptionData);
+}
+
+nova_datastruct_list_Nova_Array* nova_datastruct_Nova_NodeFunctionMap_functionMap0_Nova_levelorder(nova_datastruct_Nova_NodeFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_Nova_Node* reference)
+{
+	return (nova_datastruct_list_Nova_Array*)nova_datastruct_Nova_Node_0_Nova_levelorder(reference, exceptionData);
+}
+
+nova_datastruct_list_Nova_Array* nova_datastruct_Nova_NodeFunctionMap_functionMap1_Nova_preorder(nova_datastruct_Nova_NodeFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_Nova_Node* reference, nova_datastruct_list_Nova_Array* array)
+{
+	return (nova_datastruct_list_Nova_Array*)nova_datastruct_Nova_Node_1_Nova_preorder(reference, exceptionData, array);
+}
+
+nova_datastruct_list_Nova_Array* nova_datastruct_Nova_NodeFunctionMap_functionMap1_Nova_inorder(nova_datastruct_Nova_NodeFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_Nova_Node* reference, nova_datastruct_list_Nova_Array* array)
+{
+	return (nova_datastruct_list_Nova_Array*)nova_datastruct_Nova_Node_1_Nova_inorder(reference, exceptionData, array);
+}
+
+nova_datastruct_list_Nova_Array* nova_datastruct_Nova_NodeFunctionMap_functionMap1_Nova_postorder(nova_datastruct_Nova_NodeFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_Nova_Node* reference, nova_datastruct_list_Nova_Array* array)
+{
+	return (nova_datastruct_list_Nova_Array*)nova_datastruct_Nova_Node_1_Nova_postorder(reference, exceptionData, array);
+}
+
+nova_datastruct_list_Nova_Array* nova_datastruct_Nova_NodeFunctionMap_functionMap1_Nova_levelorder(nova_datastruct_Nova_NodeFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_Nova_Node* reference, nova_datastruct_list_Nova_Array* array)
+{
+	return (nova_datastruct_list_Nova_Array*)nova_datastruct_Nova_Node_1_Nova_levelorder(reference, exceptionData, array);
+}
+
+nova_Nova_String* nova_datastruct_Nova_NodeFunctionMap_functionMap_Nova_toString(nova_datastruct_Nova_NodeFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_Nova_Node* reference)
+{
+	return nova_Nova_Object_virtual_Nova_toString((nova_Nova_Object*)(reference), exceptionData);
+}
+
+nova_datastruct_Nova_Node* nova_datastruct_Nova_NodeFunctionMap_functionMap_Nova_get(nova_datastruct_Nova_NodeFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_Nova_Node* reference, int index)
+{
+	return nova_datastruct_Nova_Node_Nova_get(reference, exceptionData, index);
+}
+
+nova_datastruct_Nova_Node* nova_datastruct_Nova_NodeFunctionMap_functionMap_Nova_set(nova_datastruct_Nova_NodeFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_Nova_Node* reference, int index, nova_datastruct_Nova_Node* value)
+{
+	return nova_datastruct_Nova_Node_Nova_set(reference, exceptionData, index, value);
+}
+
 void nova_datastruct_Nova_NodeFunctionMap_Nova_super(nova_datastruct_Nova_NodeFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
+}
+
+nova_datastruct_Nova_Node* nova_datastruct_Nova_NodeFunctionMap_virtualfunctionMapNodeFunctionMap_static_Nova_construct(nova_datastruct_Nova_NodeFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_Object* data, int numChildren)
+{
+	return this->vtable->nova_datastruct_Nova_NodeFunctionMap_virtualfunctionMapNodeFunctionMap_static_Nova_construct(0, exceptionData, data, numChildren);
 }
 

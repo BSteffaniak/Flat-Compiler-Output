@@ -12,6 +12,7 @@
 #include <nova/primitive/nova_primitive_Nova_Null.h>
 #include <nova/primitive/number/nova_primitive_number_Nova_Char.h>
 #include <nova/primitive/nova_primitive_Nova_Bool.h>
+#include <nova/datastruct/list/nova_datastruct_list_Nova_List.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_Array.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_ImmutableArray.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_IntArray.h>
@@ -29,6 +30,7 @@
 #include <nova/meta/nova_meta_Nova_Class.h>
 #include <nova/meta/nova_meta_Nova_FunctionMap.h>
 #include <nova/regex/nova_regex_Nova_Pattern.h>
+#include <nova/web/svg/no3/nova_web_svg_no3_Nova_No3Node.h>
 #include <nova/web/svg/no3/nova_web_svg_no3_Nova_No3Node.h>
 #include <nova/NativeObject.h>
 #include <nova/operators/nova_operators_Nova_EqualsOperator.h>
@@ -95,6 +97,7 @@ nova_web_svg_no3_Nova_No3SelectAllFunctionMap* nova_web_svg_no3_Nova_No3SelectAl
 	this->vtable = &nova_web_svg_no3_No3SelectAll_No3SelectAllFunctionMap_Extension_VTable_val;
 	nova_Nova_Object_Nova_super((nova_Nova_Object*)this, exceptionData);
 	nova_meta_Nova_FunctionMap_Nova_super((nova_meta_Nova_FunctionMap*)this, exceptionData);
+	nova_web_svg_no3_Nova_No3NodeFunctionMap_Nova_super((nova_web_svg_no3_Nova_No3NodeFunctionMap*)this, exceptionData);
 	nova_web_svg_no3_Nova_No3SelectAllFunctionMap_Nova_super(this, exceptionData);
 	
 	{
@@ -117,6 +120,16 @@ void nova_web_svg_no3_Nova_No3SelectAllFunctionMap_Nova_destroy(nova_web_svg_no3
 
 void nova_web_svg_no3_Nova_No3SelectAllFunctionMap_Nova_this(nova_web_svg_no3_Nova_No3SelectAllFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
+}
+
+nova_web_svg_no3_Nova_No3SelectAll* nova_web_svg_no3_Nova_No3SelectAllFunctionMap_functionMapNo3SelectAllFunctionMap_static_Nova_construct(nova_web_svg_no3_Nova_No3SelectAllFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* selection)
+{
+	return nova_web_svg_no3_Nova_No3SelectAll_Nova_construct(0, exceptionData, selection);
+}
+
+nova_Nova_String* nova_web_svg_no3_Nova_No3SelectAllFunctionMap_functionMap_Nova_toJs(nova_web_svg_no3_Nova_No3SelectAllFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_web_svg_no3_Nova_No3SelectAll* reference)
+{
+	return nova_web_svg_no3_Nova_No3SelectAll_Nova_toJs(reference, exceptionData);
 }
 
 void nova_web_svg_no3_Nova_No3SelectAllFunctionMap_Nova_super(nova_web_svg_no3_Nova_No3SelectAllFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)

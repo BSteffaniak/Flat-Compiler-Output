@@ -12,6 +12,7 @@
 #include <nova/primitive/nova_primitive_Nova_Null.h>
 #include <nova/primitive/number/nova_primitive_number_Nova_Char.h>
 #include <nova/primitive/nova_primitive_Nova_Bool.h>
+#include <nova/datastruct/list/nova_datastruct_list_Nova_List.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_Array.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_ImmutableArray.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_IntArray.h>
@@ -137,6 +138,21 @@ void nova_star_Nova_WindowFunctionMap_Nova_destroy(nova_star_Nova_WindowFunction
 
 void nova_star_Nova_WindowFunctionMap_Nova_this(nova_star_Nova_WindowFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
+}
+
+nova_star_Nova_Window* nova_star_Nova_WindowFunctionMap_functionMapWindowFunctionMap_static_Nova_construct(nova_star_Nova_WindowFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* title, int x, int y, int width, int height)
+{
+	title = (nova_Nova_String*)(title == 0 ? (nova_Nova_Object*)(nova_Nova_Object*)nova_null : (nova_Nova_Object*)title);
+	x = (int)(x == (intptr_t)nova_null ? 0 : x);
+	y = (int)(y == (intptr_t)nova_null ? 0 : y);
+	width = (int)(width == (intptr_t)nova_null ? 0 : width);
+	height = (int)(height == (intptr_t)nova_null ? 0 : height);
+	return nova_star_Nova_Window_Nova_construct(0, exceptionData, title, x, y, width, height);
+}
+
+void nova_star_Nova_WindowFunctionMap_functionMap_Nova_create(nova_star_Nova_WindowFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_star_Nova_Window* reference)
+{
+	nova_star_Nova_Window_Nova_create(reference, exceptionData);
 }
 
 void nova_star_Nova_WindowFunctionMap_Nova_super(nova_star_Nova_WindowFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)

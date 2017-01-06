@@ -12,6 +12,7 @@
 #include <nova/primitive/nova_primitive_Nova_Null.h>
 #include <nova/primitive/number/nova_primitive_number_Nova_Char.h>
 #include <nova/primitive/nova_primitive_Nova_Bool.h>
+#include <nova/datastruct/list/nova_datastruct_list_Nova_List.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_Array.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_ImmutableArray.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_IntArray.h>
@@ -113,6 +114,11 @@ void nova_network_Nova_SocketFunctionMap_Nova_destroy(nova_network_Nova_SocketFu
 
 void nova_network_Nova_SocketFunctionMap_Nova_this(nova_network_Nova_SocketFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
+}
+
+nova_network_Nova_Socket* nova_network_Nova_SocketFunctionMap_functionMapSocketFunctionMap_static_Nova_construct(nova_network_Nova_SocketFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* ip, int port)
+{
+	return nova_network_Nova_Socket_Nova_construct(0, exceptionData, ip, port);
 }
 
 void nova_network_Nova_SocketFunctionMap_Nova_super(nova_network_Nova_SocketFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)

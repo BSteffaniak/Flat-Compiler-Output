@@ -22,6 +22,7 @@ typedef struct nova_Nova_SystemFunctionMap nova_Nova_SystemFunctionMap;
 #include <nova/primitive/nova_primitive_Nova_Null.h>
 #include <nova/primitive/number/nova_primitive_number_Nova_Char.h>
 #include <nova/primitive/nova_primitive_Nova_Bool.h>
+#include <nova/datastruct/list/nova_datastruct_list_Nova_List.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_Array.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_ImmutableArray.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_IntArray.h>
@@ -77,6 +78,11 @@ void nova_Nova_SystemFunctionMap_Nova_init_static(nova_exception_Nova_ExceptionD
 nova_Nova_SystemFunctionMap* nova_Nova_SystemFunctionMap_Nova_construct(nova_Nova_SystemFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
 void nova_Nova_SystemFunctionMap_Nova_destroy(nova_Nova_SystemFunctionMap** this, nova_exception_Nova_ExceptionData* exceptionData);
 void nova_Nova_SystemFunctionMap_Nova_this(nova_Nova_SystemFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+nova_Nova_System* nova_Nova_SystemFunctionMap_functionMapSystemFunctionMap_static_Nova_construct(nova_Nova_SystemFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+void nova_Nova_SystemFunctionMap_functionMap0_static_Nova_exit(nova_Nova_SystemFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, int code);
+void nova_Nova_SystemFunctionMap_functionMap1_static_Nova_exit(nova_Nova_SystemFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, int code, nova_Nova_String* message);
+void nova_Nova_SystemFunctionMap_functionMap2_static_Nova_exit(nova_Nova_SystemFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, int code, nova_Nova_String* message, char log);
+nova_process_Nova_Process* nova_Nova_SystemFunctionMap_functionMap_static_Nova_execute(nova_Nova_SystemFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* command);
 void nova_Nova_SystemFunctionMap_Nova_super(nova_Nova_SystemFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
 
 #endif

@@ -12,6 +12,7 @@
 #include <nova/primitive/nova_primitive_Nova_Null.h>
 #include <nova/primitive/number/nova_primitive_number_Nova_Char.h>
 #include <nova/primitive/nova_primitive_Nova_Bool.h>
+#include <nova/datastruct/list/nova_datastruct_list_Nova_List.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_Array.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_ImmutableArray.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_IntArray.h>
@@ -42,7 +43,7 @@ typedef struct
 
 char nova_meta_Nova_Class_Nova_isOfTypeClass(nova_meta_Nova_Class* this, nova_exception_Nova_ExceptionData* exceptionData, nova_meta_Nova_Class* other);
 char nova_meta_Nova_Class_Nova_isOfTypeInterface(nova_meta_Nova_Class* this, nova_exception_Nova_ExceptionData* exceptionData, nova_meta_Nova_Class* other);
-char nova_meta_Nova_Class_Nova_lambda102(nova_meta_Nova_Class* this, nova_exception_Nova_ExceptionData* exceptionData, nova_meta_Nova_Class* _1, Context1* context);
+char nova_meta_Nova_Class_Nova_lambda99(nova_meta_Nova_Class* this, nova_exception_Nova_ExceptionData* exceptionData, nova_meta_Nova_Class* _1, Context1* context);
 
 
 nova_datastruct_list_Nova_ImmutableArray* nova_meta_Nova_Class_Nova_ALL;
@@ -117,10 +118,10 @@ char nova_meta_Nova_Class_Nova_isOfTypeInterface(nova_meta_Nova_Class* this, nov
 	l1_Nova_current = this;
 	while ((l1_Nova_current) != (nova_meta_Nova_Class*)nova_null)
 	{
-		Context1* contextArg102 = NOVA_MALLOC(sizeof(Context1));
-		contextArg102->nova_meta_Nova_Class_Nova_other = &other;
+		Context1* contextArg99 = NOVA_MALLOC(sizeof(Context1));
+		contextArg99->nova_meta_Nova_Class_Nova_other = &other;
 		
-		if (nova_datastruct_list_Nova_List_virtual0_Nova_any((nova_datastruct_list_Nova_List*)(l1_Nova_current->nova_meta_Nova_Class_Nova_interfaces), exceptionData, (nova_datastruct_list_Nova_List_closure12_Nova_anyFunc)&nova_meta_Nova_Class_Nova_lambda102, this, contextArg102))
+		if (nova_datastruct_list_Nova_List_virtual0_Nova_any((nova_datastruct_list_Nova_List*)(l1_Nova_current->nova_meta_Nova_Class_Nova_interfaces), exceptionData, (nova_datastruct_list_Nova_List_closure12_Nova_anyFunc)&nova_meta_Nova_Class_Nova_lambda99, this, contextArg99))
 		{
 			return 1;
 		}
@@ -134,7 +135,7 @@ nova_Nova_String* nova_meta_Nova_Class_Nova_toString(nova_meta_Nova_Class* this,
 	return (nova_Nova_String*)nova_Nova_String_Nova_plus(nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("Class \"")), exceptionData, (nova_Nova_String*)(nova_Nova_String_Nova_plus((this->nova_meta_Nova_Class_Nova_location), exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("\"")))));
 }
 
-char nova_meta_Nova_Class_Nova_lambda102(nova_meta_Nova_Class* this, nova_exception_Nova_ExceptionData* exceptionData, nova_meta_Nova_Class* _1, Context1* context)
+char nova_meta_Nova_Class_Nova_lambda99(nova_meta_Nova_Class* this, nova_exception_Nova_ExceptionData* exceptionData, nova_meta_Nova_Class* _1, Context1* context)
 {
 	return _1 == (*context->nova_meta_Nova_Class_Nova_other);
 }
@@ -196,6 +197,31 @@ void nova_meta_Nova_ClassFunctionMap_Nova_destroy(nova_meta_Nova_ClassFunctionMa
 
 void nova_meta_Nova_ClassFunctionMap_Nova_this(nova_meta_Nova_ClassFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
+}
+
+nova_meta_Nova_Class* nova_meta_Nova_ClassFunctionMap_functionMapClassFunctionMap_static_Nova_construct(nova_meta_Nova_ClassFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* location, char isInterface)
+{
+	return nova_meta_Nova_Class_Nova_construct(0, exceptionData, location, isInterface);
+}
+
+char nova_meta_Nova_ClassFunctionMap_functionMap_Nova_isOfType(nova_meta_Nova_ClassFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_meta_Nova_Class* reference, nova_meta_Nova_Class* other)
+{
+	return nova_meta_Nova_Class_Nova_isOfType(reference, exceptionData, other);
+}
+
+char nova_meta_Nova_ClassFunctionMap_functionMap_Nova_isOfTypeClass(nova_meta_Nova_ClassFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_meta_Nova_Class* reference, nova_meta_Nova_Class* other)
+{
+	return nova_meta_Nova_Class_Nova_isOfTypeClass(reference, exceptionData, other);
+}
+
+char nova_meta_Nova_ClassFunctionMap_functionMap_Nova_isOfTypeInterface(nova_meta_Nova_ClassFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_meta_Nova_Class* reference, nova_meta_Nova_Class* other)
+{
+	return nova_meta_Nova_Class_Nova_isOfTypeInterface(reference, exceptionData, other);
+}
+
+nova_Nova_String* nova_meta_Nova_ClassFunctionMap_functionMap_Nova_toString(nova_meta_Nova_ClassFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_meta_Nova_Class* reference)
+{
+	return nova_Nova_Object_virtual_Nova_toString((nova_Nova_Object*)(reference), exceptionData);
 }
 
 void nova_meta_Nova_ClassFunctionMap_Nova_super(nova_meta_Nova_ClassFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)

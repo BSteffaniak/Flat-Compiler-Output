@@ -22,6 +22,7 @@ typedef struct nova_math_logic_Nova_HypothesisFunctionMap nova_math_logic_Nova_H
 #include <nova/primitive/nova_primitive_Nova_Null.h>
 #include <nova/primitive/number/nova_primitive_number_Nova_Char.h>
 #include <nova/primitive/nova_primitive_Nova_Bool.h>
+#include <nova/datastruct/list/nova_datastruct_list_Nova_List.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_Array.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_ImmutableArray.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_IntArray.h>
@@ -40,8 +41,10 @@ typedef struct nova_math_logic_Nova_HypothesisFunctionMap nova_math_logic_Nova_H
 #include <nova/meta/nova_meta_Nova_FunctionMap.h>
 #include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <nova/math/logic/nova_math_logic_Nova_LogicalStatement.h>
+#include <nova/math/logic/nova_math_logic_Nova_LogicalStatement.h>
 #include <nova/math/nova_math_Nova_Statement.h>
 #include <nova/math/logic/nova_math_logic_Nova_StatementComponent.h>
+#include <nova/math/nova_math_Nova_Statement.h>
 #include <nova/NativeObject.h>
 #include <nova/operators/nova_operators_Nova_EqualsOperator.h>
 
@@ -70,6 +73,7 @@ void nova_math_logic_Nova_HypothesisFunctionMap_Nova_init_static(nova_exception_
 nova_math_logic_Nova_HypothesisFunctionMap* nova_math_logic_Nova_HypothesisFunctionMap_Nova_construct(nova_math_logic_Nova_HypothesisFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
 void nova_math_logic_Nova_HypothesisFunctionMap_Nova_destroy(nova_math_logic_Nova_HypothesisFunctionMap** this, nova_exception_Nova_ExceptionData* exceptionData);
 void nova_math_logic_Nova_HypothesisFunctionMap_Nova_this(nova_math_logic_Nova_HypothesisFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+nova_math_logic_Nova_Hypothesis* nova_math_logic_Nova_HypothesisFunctionMap_functionMapHypothesisFunctionMap_static_Nova_construct(nova_math_logic_Nova_HypothesisFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* statement);
 void nova_math_logic_Nova_HypothesisFunctionMap_Nova_super(nova_math_logic_Nova_HypothesisFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
 
 #endif

@@ -12,6 +12,7 @@
 #include <nova/primitive/nova_primitive_Nova_Null.h>
 #include <nova/primitive/number/nova_primitive_number_Nova_Char.h>
 #include <nova/primitive/nova_primitive_Nova_Bool.h>
+#include <nova/datastruct/list/nova_datastruct_list_Nova_List.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_Array.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_ImmutableArray.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_IntArray.h>
@@ -31,6 +32,7 @@
 #include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <nova/datastruct/nova_datastruct_Nova_Bounds.h>
 #include <nova/math/nova_math_Nova_InvalidNumericStatementException.h>
+#include <nova/math/nova_math_Nova_NumericOperand.h>
 #include <nova/math/nova_math_Nova_NumericOperand.h>
 #include <nova/NativeObject.h>
 #include <nova/operators/nova_operators_Nova_EqualsOperator.h>
@@ -464,6 +466,7 @@ nova_math_Nova_NumericOperationFunctionMap* nova_math_Nova_NumericOperationFunct
 	this->vtable = &nova_math_NumericOperation_NumericOperationFunctionMap_Extension_VTable_val;
 	nova_Nova_Object_Nova_super((nova_Nova_Object*)this, exceptionData);
 	nova_meta_Nova_FunctionMap_Nova_super((nova_meta_Nova_FunctionMap*)this, exceptionData);
+	nova_math_Nova_NumericOperandFunctionMap_Nova_super((nova_math_Nova_NumericOperandFunctionMap*)this, exceptionData);
 	nova_math_Nova_NumericOperationFunctionMap_Nova_super(this, exceptionData);
 	
 	{
@@ -486,6 +489,81 @@ void nova_math_Nova_NumericOperationFunctionMap_Nova_destroy(nova_math_Nova_Nume
 
 void nova_math_Nova_NumericOperationFunctionMap_Nova_this(nova_math_Nova_NumericOperationFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
+}
+
+nova_math_Nova_NumericOperation* nova_math_Nova_NumericOperationFunctionMap_functionMapNumericOperationFunctionMap_static_Nova_construct(nova_math_Nova_NumericOperationFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* operation)
+{
+	return nova_math_Nova_NumericOperation_0_Nova_construct(0, exceptionData, operation);
+}
+
+nova_math_Nova_NumericOperation* nova_math_Nova_NumericOperationFunctionMap_functionMapNumericOperationFunctionMap0_static_Nova_construct(nova_math_Nova_NumericOperationFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* left, nova_Nova_String* operator, nova_Nova_String* right)
+{
+	return nova_math_Nova_NumericOperation_1_Nova_construct(0, exceptionData, left, operator, right);
+}
+
+nova_math_Nova_NumericOperation* nova_math_Nova_NumericOperationFunctionMap_functionMapNumericOperationFunctionMap1_static_Nova_construct(nova_math_Nova_NumericOperationFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_math_Nova_NumericOperand* left, nova_Nova_String* operator, nova_math_Nova_NumericOperand* right)
+{
+	return nova_math_Nova_NumericOperation_2_Nova_construct(0, exceptionData, left, operator, right);
+}
+
+nova_math_Nova_NumericOperand* nova_math_Nova_NumericOperationFunctionMap_functionMap_Nova_decodeOperand(nova_math_Nova_NumericOperationFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_math_Nova_NumericOperation* reference, nova_Nova_String* operand)
+{
+	return nova_math_Nova_NumericOperation_Nova_decodeOperand(reference, exceptionData, operand);
+}
+
+int nova_math_Nova_NumericOperationFunctionMap_functionMap0_static_Nova_getType(nova_math_Nova_NumericOperationFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* s)
+{
+	return nova_math_Nova_NumericOperation_0_static_Nova_getType(0, exceptionData, s);
+}
+
+int nova_math_Nova_NumericOperationFunctionMap_functionMap1_static_Nova_getType(nova_math_Nova_NumericOperationFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, char c)
+{
+	return nova_math_Nova_NumericOperation_1_static_Nova_getType(0, exceptionData, c);
+}
+
+nova_datastruct_Nova_Bounds* nova_math_Nova_NumericOperationFunctionMap_functionMap_static_Nova_searchNextType(nova_math_Nova_NumericOperationFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* str, int start)
+{
+	return nova_math_Nova_NumericOperation_static_Nova_searchNextType(0, exceptionData, str, start, (int*)(&nova_garbageData));
+}
+
+int nova_math_Nova_NumericOperationFunctionMap_functionMap_static_Nova_nextOperator(nova_math_Nova_NumericOperationFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* str, int start)
+{
+	return nova_math_Nova_NumericOperation_static_Nova_nextOperator(0, exceptionData, str, start);
+}
+
+int nova_math_Nova_NumericOperationFunctionMap_functionMap_static_Nova_getOperatorRank(nova_math_Nova_NumericOperationFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, char operator)
+{
+	return nova_math_Nova_NumericOperation_static_Nova_getOperatorRank(0, exceptionData, operator);
+}
+
+int nova_math_Nova_NumericOperationFunctionMap_functionMap_static_Nova_nextNonWhitespaceIndex(nova_math_Nova_NumericOperationFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* str, int start, int direction)
+{
+	return nova_math_Nova_NumericOperation_static_Nova_nextNonWhitespaceIndex(0, exceptionData, str, start, direction);
+}
+
+char nova_math_Nova_NumericOperationFunctionMap_functionMap_static_Nova_isLetter(nova_math_Nova_NumericOperationFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, char c)
+{
+	return nova_math_Nova_NumericOperation_static_Nova_isLetter(0, exceptionData, c);
+}
+
+char nova_math_Nova_NumericOperationFunctionMap_functionMap_static_Nova_isNumeric(nova_math_Nova_NumericOperationFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, char c)
+{
+	return nova_math_Nova_NumericOperation_static_Nova_isNumeric(0, exceptionData, c);
+}
+
+char nova_math_Nova_NumericOperationFunctionMap_functionMap_static_Nova_isOperator(nova_math_Nova_NumericOperationFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, char c)
+{
+	return nova_math_Nova_NumericOperation_static_Nova_isOperator(0, exceptionData, c);
+}
+
+char nova_math_Nova_NumericOperationFunctionMap_functionMap_static_Nova_isWhitespace(nova_math_Nova_NumericOperationFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, char c)
+{
+	return nova_math_Nova_NumericOperation_static_Nova_isWhitespace(0, exceptionData, c);
+}
+
+nova_Nova_String* nova_math_Nova_NumericOperationFunctionMap_functionMap_Nova_toString(nova_math_Nova_NumericOperationFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_math_Nova_NumericOperation* reference)
+{
+	return nova_Nova_Object_virtual_Nova_toString((nova_Nova_Object*)(reference), exceptionData);
 }
 
 void nova_math_Nova_NumericOperationFunctionMap_Nova_super(nova_math_Nova_NumericOperationFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)

@@ -12,6 +12,7 @@
 #include <nova/primitive/nova_primitive_Nova_Null.h>
 #include <nova/primitive/number/nova_primitive_number_Nova_Char.h>
 #include <nova/primitive/nova_primitive_Nova_Bool.h>
+#include <nova/datastruct/list/nova_datastruct_list_Nova_List.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_Array.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_ImmutableArray.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_IntArray.h>
@@ -134,7 +135,38 @@ void nova_datastruct_Nova_TreeFunctionMap_Nova_this(nova_datastruct_Nova_TreeFun
 {
 }
 
+nova_datastruct_Nova_Tree* nova_datastruct_Nova_TreeFunctionMap_functionMapTreeFunctionMap_static_Nova_construct(nova_datastruct_Nova_TreeFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_Nova_Node* root)
+{
+	root = (nova_datastruct_Nova_Node*)(root == 0 ? (nova_Nova_Object*)(nova_Nova_Object*)nova_null : (nova_Nova_Object*)root);
+	return (nova_datastruct_Nova_Tree*)nova_datastruct_Nova_Tree_Nova_construct(0, exceptionData, root);
+}
+
+nova_datastruct_list_Nova_Array* nova_datastruct_Nova_TreeFunctionMap_functionMap_Nova_preorder(nova_datastruct_Nova_TreeFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_Nova_Tree* reference)
+{
+	return (nova_datastruct_list_Nova_Array*)nova_datastruct_Nova_Tree_Nova_preorder(reference, exceptionData);
+}
+
+nova_datastruct_list_Nova_Array* nova_datastruct_Nova_TreeFunctionMap_functionMap_Nova_inorder(nova_datastruct_Nova_TreeFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_Nova_Tree* reference)
+{
+	return (nova_datastruct_list_Nova_Array*)nova_datastruct_Nova_Tree_Nova_inorder(reference, exceptionData);
+}
+
+nova_datastruct_list_Nova_Array* nova_datastruct_Nova_TreeFunctionMap_functionMap_Nova_postorder(nova_datastruct_Nova_TreeFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_Nova_Tree* reference)
+{
+	return (nova_datastruct_list_Nova_Array*)nova_datastruct_Nova_Tree_Nova_postorder(reference, exceptionData);
+}
+
+nova_datastruct_list_Nova_Array* nova_datastruct_Nova_TreeFunctionMap_functionMap_Nova_levelorder(nova_datastruct_Nova_TreeFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_Nova_Tree* reference)
+{
+	return (nova_datastruct_list_Nova_Array*)nova_datastruct_Nova_Tree_Nova_levelorder(reference, exceptionData);
+}
+
 void nova_datastruct_Nova_TreeFunctionMap_Nova_super(nova_datastruct_Nova_TreeFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
+}
+
+nova_datastruct_Nova_Tree* nova_datastruct_Nova_TreeFunctionMap_virtualfunctionMapTreeFunctionMap_static_Nova_construct(nova_datastruct_Nova_TreeFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_Nova_Node* root)
+{
+	return this->vtable->nova_datastruct_Nova_TreeFunctionMap_virtualfunctionMapTreeFunctionMap_static_Nova_construct(0, exceptionData, root);
 }
 

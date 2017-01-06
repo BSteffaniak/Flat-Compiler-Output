@@ -12,6 +12,7 @@
 #include <nova/primitive/nova_primitive_Nova_Null.h>
 #include <nova/primitive/number/nova_primitive_number_Nova_Char.h>
 #include <nova/primitive/nova_primitive_Nova_Bool.h>
+#include <nova/datastruct/list/nova_datastruct_list_Nova_List.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_Array.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_ImmutableArray.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_IntArray.h>
@@ -119,6 +120,17 @@ void nova_math_Nova_StatementComponentFunctionMap_Nova_destroy(nova_math_Nova_St
 
 void nova_math_Nova_StatementComponentFunctionMap_Nova_this(nova_math_Nova_StatementComponentFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
+}
+
+nova_math_Nova_StatementComponent* nova_math_Nova_StatementComponentFunctionMap_functionMapStatementComponentFunctionMap_static_Nova_construct(nova_math_Nova_StatementComponentFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_Object* data, nova_math_Nova_StatementComponent* next)
+{
+	next = (nova_math_Nova_StatementComponent*)(next == 0 ? (nova_Nova_Object*)(nova_Nova_Object*)nova_null : (nova_Nova_Object*)next);
+	return nova_math_Nova_StatementComponent_Nova_construct(0, exceptionData, data, next);
+}
+
+nova_Nova_String* nova_math_Nova_StatementComponentFunctionMap_functionMap_Nova_toString(nova_math_Nova_StatementComponentFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_math_Nova_StatementComponent* reference)
+{
+	return nova_Nova_Object_virtual_Nova_toString((nova_Nova_Object*)(reference), exceptionData);
 }
 
 void nova_math_Nova_StatementComponentFunctionMap_Nova_super(nova_math_Nova_StatementComponentFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)

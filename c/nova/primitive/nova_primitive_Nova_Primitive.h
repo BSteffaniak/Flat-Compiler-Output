@@ -22,6 +22,7 @@ typedef struct nova_primitive_Nova_PrimitiveFunctionMap nova_primitive_Nova_Prim
 #include <nova/primitive/nova_primitive_Nova_Null.h>
 #include <nova/primitive/number/nova_primitive_number_Nova_Char.h>
 #include <nova/primitive/nova_primitive_Nova_Bool.h>
+#include <nova/datastruct/list/nova_datastruct_list_Nova_List.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_Array.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_ImmutableArray.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_IntArray.h>
@@ -66,6 +67,8 @@ void nova_primitive_Nova_PrimitiveFunctionMap_Nova_init_static(nova_exception_No
 nova_primitive_Nova_PrimitiveFunctionMap* nova_primitive_Nova_PrimitiveFunctionMap_Nova_construct(nova_primitive_Nova_PrimitiveFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
 void nova_primitive_Nova_PrimitiveFunctionMap_Nova_destroy(nova_primitive_Nova_PrimitiveFunctionMap** this, nova_exception_Nova_ExceptionData* exceptionData);
 void nova_primitive_Nova_PrimitiveFunctionMap_Nova_this(nova_primitive_Nova_PrimitiveFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+nova_primitive_Nova_Primitive* nova_primitive_Nova_PrimitiveFunctionMap_functionMapPrimitiveFunctionMap_static_Nova_construct(nova_primitive_Nova_PrimitiveFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
 void nova_primitive_Nova_PrimitiveFunctionMap_Nova_super(nova_primitive_Nova_PrimitiveFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+nova_primitive_Nova_Primitive* nova_primitive_Nova_PrimitiveFunctionMap_virtualfunctionMapPrimitiveFunctionMap_static_Nova_construct(nova_primitive_Nova_PrimitiveFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
 
 #endif

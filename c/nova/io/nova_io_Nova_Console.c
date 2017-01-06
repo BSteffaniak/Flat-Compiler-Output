@@ -12,6 +12,7 @@
 #include <nova/primitive/nova_primitive_Nova_Null.h>
 #include <nova/primitive/number/nova_primitive_number_Nova_Char.h>
 #include <nova/primitive/nova_primitive_Nova_Bool.h>
+#include <nova/datastruct/list/nova_datastruct_list_Nova_List.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_Array.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_ImmutableArray.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_IntArray.h>
@@ -285,6 +286,162 @@ void nova_io_Nova_ConsoleFunctionMap_Nova_destroy(nova_io_Nova_ConsoleFunctionMa
 
 void nova_io_Nova_ConsoleFunctionMap_Nova_this(nova_io_Nova_ConsoleFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
+}
+
+nova_io_Nova_Console* nova_io_Nova_ConsoleFunctionMap_functionMapConsoleFunctionMap_static_Nova_construct(nova_io_Nova_ConsoleFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+	return nova_io_Nova_Console_Nova_construct(0, exceptionData);
+}
+
+void nova_io_Nova_ConsoleFunctionMap_functionMap_static_Nova_log(nova_io_Nova_ConsoleFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_Object* obj)
+{
+	obj = (nova_Nova_Object*)(obj == 0 ? (nova_Nova_Object*)nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("")) : (nova_Nova_Object*)obj);
+	nova_io_Nova_Console_static_Nova_log(0, exceptionData, obj);
+}
+
+void nova_io_Nova_ConsoleFunctionMap_functionMap0_static_Nova_writeLine(nova_io_Nova_ConsoleFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+	nova_io_Nova_Console_0_static_Nova_writeLine(0, exceptionData);
+}
+
+void nova_io_Nova_ConsoleFunctionMap_functionMap1_static_Nova_writeLine(nova_io_Nova_ConsoleFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* text)
+{
+	nova_io_Nova_Console_1_static_Nova_writeLine(0, exceptionData, text);
+}
+
+void nova_io_Nova_ConsoleFunctionMap_functionMap2_static_Nova_writeLine(nova_io_Nova_ConsoleFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_Object* obj)
+{
+	nova_io_Nova_Console_2_static_Nova_writeLine(0, exceptionData, obj);
+}
+
+void nova_io_Nova_ConsoleFunctionMap_functionMap3_static_Nova_writeLine(nova_io_Nova_ConsoleFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, double num)
+{
+	nova_io_Nova_Console_3_static_Nova_writeLine(0, exceptionData, num);
+}
+
+void nova_io_Nova_ConsoleFunctionMap_functionMap4_static_Nova_writeLine(nova_io_Nova_ConsoleFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, float num)
+{
+	nova_io_Nova_Console_4_static_Nova_writeLine(0, exceptionData, num);
+}
+
+void nova_io_Nova_ConsoleFunctionMap_functionMap5_static_Nova_writeLine(nova_io_Nova_ConsoleFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, long_long num)
+{
+	nova_io_Nova_Console_5_static_Nova_writeLine(0, exceptionData, num);
+}
+
+void nova_io_Nova_ConsoleFunctionMap_functionMap6_static_Nova_writeLine(nova_io_Nova_ConsoleFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, int num)
+{
+	nova_io_Nova_Console_6_static_Nova_writeLine(0, exceptionData, num);
+}
+
+void nova_io_Nova_ConsoleFunctionMap_functionMap7_static_Nova_writeLine(nova_io_Nova_ConsoleFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, short num)
+{
+	nova_io_Nova_Console_7_static_Nova_writeLine(0, exceptionData, num);
+}
+
+void nova_io_Nova_ConsoleFunctionMap_functionMap8_static_Nova_writeLine(nova_io_Nova_ConsoleFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, char num)
+{
+	nova_io_Nova_Console_8_static_Nova_writeLine(0, exceptionData, num);
+}
+
+void nova_io_Nova_ConsoleFunctionMap_functionMap9_static_Nova_writeLine(nova_io_Nova_ConsoleFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, char c)
+{
+	nova_io_Nova_Console_9_static_Nova_writeLine(0, exceptionData, c);
+}
+
+void nova_io_Nova_ConsoleFunctionMap_functionMap0_static_Nova_write(nova_io_Nova_ConsoleFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* text)
+{
+	nova_io_Nova_Console_0_static_Nova_write(0, exceptionData, text);
+}
+
+void nova_io_Nova_ConsoleFunctionMap_functionMap1_static_Nova_write(nova_io_Nova_ConsoleFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_Object* obj)
+{
+	nova_io_Nova_Console_1_static_Nova_write(0, exceptionData, obj);
+}
+
+void nova_io_Nova_ConsoleFunctionMap_functionMap2_static_Nova_write(nova_io_Nova_ConsoleFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, double num)
+{
+	nova_io_Nova_Console_2_static_Nova_write(0, exceptionData, num);
+}
+
+void nova_io_Nova_ConsoleFunctionMap_functionMap3_static_Nova_write(nova_io_Nova_ConsoleFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, float num)
+{
+	nova_io_Nova_Console_3_static_Nova_write(0, exceptionData, num);
+}
+
+void nova_io_Nova_ConsoleFunctionMap_functionMap4_static_Nova_write(nova_io_Nova_ConsoleFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, long_long num)
+{
+	nova_io_Nova_Console_4_static_Nova_write(0, exceptionData, num);
+}
+
+void nova_io_Nova_ConsoleFunctionMap_functionMap5_static_Nova_write(nova_io_Nova_ConsoleFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, int num)
+{
+	nova_io_Nova_Console_5_static_Nova_write(0, exceptionData, num);
+}
+
+void nova_io_Nova_ConsoleFunctionMap_functionMap6_static_Nova_write(nova_io_Nova_ConsoleFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, short num)
+{
+	nova_io_Nova_Console_6_static_Nova_write(0, exceptionData, num);
+}
+
+void nova_io_Nova_ConsoleFunctionMap_functionMap7_static_Nova_write(nova_io_Nova_ConsoleFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, char num)
+{
+	nova_io_Nova_Console_7_static_Nova_write(0, exceptionData, num);
+}
+
+void nova_io_Nova_ConsoleFunctionMap_functionMap8_static_Nova_write(nova_io_Nova_ConsoleFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, char c)
+{
+	nova_io_Nova_Console_8_static_Nova_write(0, exceptionData, c);
+}
+
+int nova_io_Nova_ConsoleFunctionMap_functionMap_static_Nova_readInt(nova_io_Nova_ConsoleFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+	return nova_io_Nova_Console_static_Nova_readInt(0, exceptionData);
+}
+
+double nova_io_Nova_ConsoleFunctionMap_functionMap_static_Nova_readDouble(nova_io_Nova_ConsoleFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+	return nova_io_Nova_Console_static_Nova_readDouble(0, exceptionData);
+}
+
+char nova_io_Nova_ConsoleFunctionMap_functionMap_static_Nova_readChar(nova_io_Nova_ConsoleFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+	return nova_io_Nova_Console_static_Nova_readChar(0, exceptionData);
+}
+
+void nova_io_Nova_ConsoleFunctionMap_functionMap_static_Nova_flushInput(nova_io_Nova_ConsoleFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+	nova_io_Nova_Console_static_Nova_flushInput(0, exceptionData);
+}
+
+void nova_io_Nova_ConsoleFunctionMap_functionMap_static_Nova_flushOutput(nova_io_Nova_ConsoleFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+	nova_io_Nova_Console_static_Nova_flushOutput(0, exceptionData);
+}
+
+nova_Nova_String* nova_io_Nova_ConsoleFunctionMap_functionMap_static_Nova_readLine(nova_io_Nova_ConsoleFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+	return nova_io_Nova_Console_static_Nova_readLine(0, exceptionData);
+}
+
+nova_Nova_String* nova_io_Nova_ConsoleFunctionMap_functionMap_static_Nova_readPassword(nova_io_Nova_ConsoleFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+	return nova_io_Nova_Console_static_Nova_readPassword(0, exceptionData);
+}
+
+void nova_io_Nova_ConsoleFunctionMap_functionMap_static_Nova_setEcho(nova_io_Nova_ConsoleFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, char echo)
+{
+	nova_io_Nova_Console_static_Nova_setEcho(0, exceptionData, echo);
+}
+
+void nova_io_Nova_ConsoleFunctionMap_functionMap_static_Nova_clearScreen(nova_io_Nova_ConsoleFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+	nova_io_Nova_Console_static_Nova_clearScreen(0, exceptionData);
+}
+
+void nova_io_Nova_ConsoleFunctionMap_functionMap_static_Nova_waitForEnter(nova_io_Nova_ConsoleFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+	nova_io_Nova_Console_static_Nova_waitForEnter(0, exceptionData);
 }
 
 void nova_io_Nova_ConsoleFunctionMap_Nova_super(nova_io_Nova_ConsoleFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)

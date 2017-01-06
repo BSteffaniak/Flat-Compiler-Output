@@ -12,6 +12,7 @@
 #include <nova/primitive/nova_primitive_Nova_Null.h>
 #include <nova/primitive/number/nova_primitive_number_Nova_Char.h>
 #include <nova/primitive/nova_primitive_Nova_Bool.h>
+#include <nova/datastruct/list/nova_datastruct_list_Nova_List.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_Array.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_ImmutableArray.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_IntArray.h>
@@ -118,6 +119,16 @@ void nova_datastruct_Nova_PairFunctionMap_Nova_destroy(nova_datastruct_Nova_Pair
 
 void nova_datastruct_Nova_PairFunctionMap_Nova_this(nova_datastruct_Nova_PairFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
+}
+
+nova_datastruct_Nova_Pair* nova_datastruct_Nova_PairFunctionMap_functionMapPairFunctionMap_static_Nova_construct(nova_datastruct_Nova_PairFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_Object* key, nova_Nova_Object* value)
+{
+	return nova_datastruct_Nova_Pair_Nova_construct(0, exceptionData, key, value);
+}
+
+nova_Nova_String* nova_datastruct_Nova_PairFunctionMap_functionMap_Nova_toString(nova_datastruct_Nova_PairFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_Nova_Pair* reference)
+{
+	return nova_Nova_Object_virtual_Nova_toString((nova_Nova_Object*)(reference), exceptionData);
 }
 
 void nova_datastruct_Nova_PairFunctionMap_Nova_super(nova_datastruct_Nova_PairFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)

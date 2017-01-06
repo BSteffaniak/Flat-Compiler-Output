@@ -22,6 +22,7 @@ typedef struct nova_math_Nova_PolynomialFunctionMap nova_math_Nova_PolynomialFun
 #include <nova/primitive/nova_primitive_Nova_Null.h>
 #include <nova/primitive/number/nova_primitive_number_Nova_Char.h>
 #include <nova/primitive/nova_primitive_Nova_Bool.h>
+#include <nova/datastruct/list/nova_datastruct_list_Nova_List.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_Array.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_ImmutableArray.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_IntArray.h>
@@ -69,6 +70,10 @@ void nova_math_Nova_PolynomialFunctionMap_Nova_init_static(nova_exception_Nova_E
 nova_math_Nova_PolynomialFunctionMap* nova_math_Nova_PolynomialFunctionMap_Nova_construct(nova_math_Nova_PolynomialFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
 void nova_math_Nova_PolynomialFunctionMap_Nova_destroy(nova_math_Nova_PolynomialFunctionMap** this, nova_exception_Nova_ExceptionData* exceptionData);
 void nova_math_Nova_PolynomialFunctionMap_Nova_this(nova_math_Nova_PolynomialFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+nova_math_Nova_Polynomial* nova_math_Nova_PolynomialFunctionMap_functionMapPolynomialFunctionMap_static_Nova_construct(nova_math_Nova_PolynomialFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* polynomial);
+char nova_math_Nova_PolynomialFunctionMap_functionMap_static_Nova_isLetter(nova_math_Nova_PolynomialFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, char c);
+char nova_math_Nova_PolynomialFunctionMap_functionMap_static_Nova_isSymbol(nova_math_Nova_PolynomialFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, char c);
+char nova_math_Nova_PolynomialFunctionMap_functionMap_static_Nova_isWhitespace(nova_math_Nova_PolynomialFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, char c);
 void nova_math_Nova_PolynomialFunctionMap_Nova_super(nova_math_Nova_PolynomialFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
 
 #endif

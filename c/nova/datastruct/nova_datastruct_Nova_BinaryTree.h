@@ -22,6 +22,7 @@ typedef struct nova_datastruct_Nova_BinaryTreeFunctionMap nova_datastruct_Nova_B
 #include <nova/primitive/nova_primitive_Nova_Null.h>
 #include <nova/primitive/number/nova_primitive_number_Nova_Char.h>
 #include <nova/primitive/nova_primitive_Nova_Bool.h>
+#include <nova/datastruct/list/nova_datastruct_list_Nova_List.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_Array.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_ImmutableArray.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_IntArray.h>
@@ -41,6 +42,7 @@ typedef struct nova_datastruct_Nova_BinaryTreeFunctionMap nova_datastruct_Nova_B
 #include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <nova/datastruct/nova_datastruct_Nova_BinaryNode.h>
 #include <nova/datastruct/nova_datastruct_Nova_Comparable.h>
+#include <nova/datastruct/nova_datastruct_Nova_Tree.h>
 #include <nova/datastruct/nova_datastruct_Nova_Tree.h>
 #include <nova/datastruct/nova_datastruct_Nova_Node.h>
 #include <nova/NativeObject.h>
@@ -75,6 +77,9 @@ void nova_datastruct_Nova_BinaryTreeFunctionMap_Nova_init_static(nova_exception_
 nova_datastruct_Nova_BinaryTreeFunctionMap* nova_datastruct_Nova_BinaryTreeFunctionMap_Nova_construct(nova_datastruct_Nova_BinaryTreeFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
 void nova_datastruct_Nova_BinaryTreeFunctionMap_Nova_destroy(nova_datastruct_Nova_BinaryTreeFunctionMap** this, nova_exception_Nova_ExceptionData* exceptionData);
 void nova_datastruct_Nova_BinaryTreeFunctionMap_Nova_this(nova_datastruct_Nova_BinaryTreeFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+nova_datastruct_Nova_BinaryTree* nova_datastruct_Nova_BinaryTreeFunctionMap_functionMapBinaryTreeFunctionMap_static_Nova_construct(nova_datastruct_Nova_BinaryTreeFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_list_Nova_Array* data);
+nova_datastruct_Nova_BinaryTree* nova_datastruct_Nova_BinaryTreeFunctionMap_functionMap_Nova_addNode(nova_datastruct_Nova_BinaryTreeFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_Nova_BinaryTree* reference, nova_datastruct_Nova_Comparable* data);
+nova_datastruct_Nova_BinaryTree* nova_datastruct_Nova_BinaryTreeFunctionMap_functionMap_Nova_addNodes(nova_datastruct_Nova_BinaryTreeFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_Nova_BinaryTree* reference, nova_datastruct_list_Nova_Array* data);
 void nova_datastruct_Nova_BinaryTreeFunctionMap_Nova_super(nova_datastruct_Nova_BinaryTreeFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
 
 #endif

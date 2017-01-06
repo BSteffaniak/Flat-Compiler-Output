@@ -12,6 +12,7 @@
 #include <nova/primitive/nova_primitive_Nova_Null.h>
 #include <nova/primitive/number/nova_primitive_number_Nova_Char.h>
 #include <nova/primitive/nova_primitive_Nova_Bool.h>
+#include <nova/datastruct/list/nova_datastruct_list_Nova_List.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_Array.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_ImmutableArray.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_IntArray.h>
@@ -244,6 +245,101 @@ void spectra_util_Nova_LocationFunctionMap_Nova_destroy(spectra_util_Nova_Locati
 
 void spectra_util_Nova_LocationFunctionMap_Nova_this(spectra_util_Nova_LocationFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
+}
+
+spectra_util_Nova_Location* spectra_util_Nova_LocationFunctionMap_functionMapLocationFunctionMap0_static_Nova_construct(spectra_util_Nova_LocationFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+	return spectra_util_Nova_Location_0_Nova_construct(0, exceptionData);
+}
+
+spectra_util_Nova_Location* spectra_util_Nova_LocationFunctionMap_functionMapLocationFunctionMap1_static_Nova_construct(spectra_util_Nova_LocationFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, spectra_util_Nova_Location* loc)
+{
+	return spectra_util_Nova_Location_1_Nova_construct(0, exceptionData, loc);
+}
+
+spectra_util_Nova_Location* spectra_util_Nova_LocationFunctionMap_functionMapLocationFunctionMap2_static_Nova_construct(spectra_util_Nova_LocationFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, int lineNumber, int offset, int start, int end)
+{
+	return spectra_util_Nova_Location_2_Nova_construct(0, exceptionData, lineNumber, offset, start, end);
+}
+
+void spectra_util_Nova_LocationFunctionMap_functionMap_Nova_setLineNumber(spectra_util_Nova_LocationFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, spectra_util_Nova_Location* reference, int lineNumber)
+{
+	spectra_util_Nova_Location_Nova_setLineNumber(reference, exceptionData, lineNumber);
+}
+
+int spectra_util_Nova_LocationFunctionMap_functionMap_Nova_getStart(spectra_util_Nova_LocationFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, spectra_util_Nova_Location* reference)
+{
+	return spectra_util_Nova_Location_Nova_getStart(reference, exceptionData);
+}
+
+int spectra_util_Nova_LocationFunctionMap_functionMap_Nova_getEnd(spectra_util_Nova_LocationFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, spectra_util_Nova_Location* reference)
+{
+	return spectra_util_Nova_Location_Nova_getEnd(reference, exceptionData);
+}
+
+void spectra_util_Nova_LocationFunctionMap_functionMap_Nova_setOffset(spectra_util_Nova_LocationFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, spectra_util_Nova_Location* reference, int offset)
+{
+	spectra_util_Nova_Location_Nova_setOffset(reference, exceptionData, offset);
+}
+
+void spectra_util_Nova_LocationFunctionMap_functionMap_Nova_addOffset(spectra_util_Nova_LocationFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, spectra_util_Nova_Location* reference, int amount)
+{
+	spectra_util_Nova_Location_Nova_addOffset(reference, exceptionData, amount);
+}
+
+void spectra_util_Nova_LocationFunctionMap_functionMap_Nova_subtractOffset(spectra_util_Nova_LocationFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, spectra_util_Nova_Location* reference, int amount)
+{
+	spectra_util_Nova_Location_Nova_subtractOffset(reference, exceptionData, amount);
+}
+
+void spectra_util_Nova_LocationFunctionMap_functionMap0_Nova_setBounds(spectra_util_Nova_LocationFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, spectra_util_Nova_Location* reference, nova_datastruct_Nova_Bounds* bounds)
+{
+	spectra_util_Nova_Location_0_Nova_setBounds(reference, exceptionData, bounds);
+}
+
+void spectra_util_Nova_LocationFunctionMap_functionMap1_Nova_setBounds(spectra_util_Nova_LocationFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, spectra_util_Nova_Location* reference, int start, int end)
+{
+	spectra_util_Nova_Location_1_Nova_setBounds(reference, exceptionData, start, end);
+}
+
+void spectra_util_Nova_LocationFunctionMap_functionMap0_Nova_addBounds(spectra_util_Nova_LocationFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, spectra_util_Nova_Location* reference, int amount)
+{
+	spectra_util_Nova_Location_0_Nova_addBounds(reference, exceptionData, amount);
+}
+
+void spectra_util_Nova_LocationFunctionMap_functionMap_Nova_moveBounds(spectra_util_Nova_LocationFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, spectra_util_Nova_Location* reference, int startAmount, int endAmount)
+{
+	spectra_util_Nova_Location_Nova_moveBounds(reference, exceptionData, startAmount, endAmount);
+}
+
+void spectra_util_Nova_LocationFunctionMap_functionMap0_Nova_subtractBounds(spectra_util_Nova_LocationFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, spectra_util_Nova_Location* reference, int startAmount, int endAmount)
+{
+	spectra_util_Nova_Location_0_Nova_subtractBounds(reference, exceptionData, startAmount, endAmount);
+}
+
+void spectra_util_Nova_LocationFunctionMap_functionMap1_Nova_subtractBounds(spectra_util_Nova_LocationFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, spectra_util_Nova_Location* reference, int amount)
+{
+	spectra_util_Nova_Location_1_Nova_subtractBounds(reference, exceptionData, amount);
+}
+
+void spectra_util_Nova_LocationFunctionMap_functionMap1_Nova_addBounds(spectra_util_Nova_LocationFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, spectra_util_Nova_Location* reference, int startAmount, int endAmount)
+{
+	spectra_util_Nova_Location_1_Nova_addBounds(reference, exceptionData, startAmount, endAmount);
+}
+
+char spectra_util_Nova_LocationFunctionMap_functionMap_Nova_isValid(spectra_util_Nova_LocationFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, spectra_util_Nova_Location* reference)
+{
+	return spectra_util_Nova_Location_Nova_isValid(reference, exceptionData);
+}
+
+spectra_util_Nova_Location* spectra_util_Nova_LocationFunctionMap_functionMap_Nova_asNew(spectra_util_Nova_LocationFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, spectra_util_Nova_Location* reference)
+{
+	return spectra_util_Nova_Location_Nova_asNew(reference, exceptionData);
+}
+
+nova_Nova_String* spectra_util_Nova_LocationFunctionMap_functionMap_Nova_toString(spectra_util_Nova_LocationFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, spectra_util_Nova_Location* reference)
+{
+	return nova_Nova_Object_virtual_Nova_toString((nova_Nova_Object*)(reference), exceptionData);
 }
 
 void spectra_util_Nova_LocationFunctionMap_Nova_super(spectra_util_Nova_LocationFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)

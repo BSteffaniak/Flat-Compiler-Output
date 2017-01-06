@@ -22,6 +22,7 @@ typedef struct nova_primitive_Nova_NullFunctionMap nova_primitive_Nova_NullFunct
 #include <nova/primitive/nova_primitive_Nova_Null.h>
 #include <nova/primitive/number/nova_primitive_number_Nova_Char.h>
 #include <nova/primitive/nova_primitive_Nova_Bool.h>
+#include <nova/datastruct/list/nova_datastruct_list_Nova_List.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_Array.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_ImmutableArray.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_IntArray.h>
@@ -39,6 +40,7 @@ typedef struct nova_primitive_Nova_NullFunctionMap nova_primitive_Nova_NullFunct
 #include <nova/meta/nova_meta_Nova_Class.h>
 #include <nova/meta/nova_meta_Nova_FunctionMap.h>
 #include <nova/regex/nova_regex_Nova_Pattern.h>
+#include <nova/nova_Nova_String.h>
 #include <nova/datastruct/nova_datastruct_Nova_Comparable.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_StringCharArray.h>
 #include <nova/operators/nova_operators_Nova_PlusOperator.h>
@@ -47,6 +49,10 @@ typedef struct nova_primitive_Nova_NullFunctionMap nova_primitive_Nova_NullFunct
 #include <nova/regex/nova_regex_Nova_Regex.h>
 #include <nova/regex/nova_regex_Nova_Match.h>
 #include <nova/nova_Nova_Substring.h>
+#include <nova/datastruct/nova_datastruct_Nova_Comparable.h>
+#include <nova/operators/nova_operators_Nova_PlusOperator.h>
+#include <nova/operators/nova_operators_Nova_EqualsOperator.h>
+#include <nova/operators/nova_operators_Nova_MultiplyOperator.h>
 #include <nova/NativeObject.h>
 
 CCLASS_CLASS
@@ -77,6 +83,9 @@ void nova_primitive_Nova_NullFunctionMap_Nova_init_static(nova_exception_Nova_Ex
 nova_primitive_Nova_NullFunctionMap* nova_primitive_Nova_NullFunctionMap_Nova_construct(nova_primitive_Nova_NullFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
 void nova_primitive_Nova_NullFunctionMap_Nova_destroy(nova_primitive_Nova_NullFunctionMap** this, nova_exception_Nova_ExceptionData* exceptionData);
 void nova_primitive_Nova_NullFunctionMap_Nova_this(nova_primitive_Nova_NullFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+nova_primitive_Nova_Null* nova_primitive_Nova_NullFunctionMap_functionMapNullFunctionMap_static_Nova_construct(nova_primitive_Nova_NullFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+nova_Nova_String* nova_primitive_Nova_NullFunctionMap_functionMap_Nova_concat(nova_primitive_Nova_NullFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_primitive_Nova_Null* reference, nova_Nova_String* other);
+nova_Nova_String* nova_primitive_Nova_NullFunctionMap_functionMap_Nova_toString(nova_primitive_Nova_NullFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_primitive_Nova_Null* reference);
 void nova_primitive_Nova_NullFunctionMap_Nova_super(nova_primitive_Nova_NullFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
 
 #endif

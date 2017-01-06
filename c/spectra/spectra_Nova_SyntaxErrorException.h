@@ -22,6 +22,7 @@ typedef struct spectra_Nova_SyntaxErrorExceptionFunctionMap spectra_Nova_SyntaxE
 #include <nova/primitive/nova_primitive_Nova_Null.h>
 #include <nova/primitive/number/nova_primitive_number_Nova_Char.h>
 #include <nova/primitive/nova_primitive_Nova_Bool.h>
+#include <nova/datastruct/list/nova_datastruct_list_Nova_List.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_Array.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_ImmutableArray.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_IntArray.h>
@@ -41,6 +42,7 @@ typedef struct spectra_Nova_SyntaxErrorExceptionFunctionMap spectra_Nova_SyntaxE
 #include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <spectra/tree/nodes/spectra_tree_nodes_Nova_Node.h>
 #include <spectra/tree/nodes/spectra_tree_nodes_Nova_Program.h>
+#include <nova/exception/nova_exception_Nova_Exception.h>
 #include <nova/NativeObject.h>
 #include <nova/operators/nova_operators_Nova_EqualsOperator.h>
 
@@ -71,6 +73,8 @@ void spectra_Nova_SyntaxErrorExceptionFunctionMap_Nova_init_static(nova_exceptio
 spectra_Nova_SyntaxErrorExceptionFunctionMap* spectra_Nova_SyntaxErrorExceptionFunctionMap_Nova_construct(spectra_Nova_SyntaxErrorExceptionFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
 void spectra_Nova_SyntaxErrorExceptionFunctionMap_Nova_destroy(spectra_Nova_SyntaxErrorExceptionFunctionMap** this, nova_exception_Nova_ExceptionData* exceptionData);
 void spectra_Nova_SyntaxErrorExceptionFunctionMap_Nova_this(spectra_Nova_SyntaxErrorExceptionFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+spectra_Nova_SyntaxErrorException* spectra_Nova_SyntaxErrorExceptionFunctionMap_functionMapSyntaxErrorExceptionFunctionMap_static_Nova_construct(spectra_Nova_SyntaxErrorExceptionFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+spectra_Nova_SyntaxErrorException* spectra_Nova_SyntaxErrorExceptionFunctionMap_functionMapSyntaxErrorExceptionFunctionMap0_static_Nova_construct(spectra_Nova_SyntaxErrorExceptionFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* message, spectra_tree_nodes_Nova_Node* node, spectra_tree_nodes_Nova_Program* program);
 void spectra_Nova_SyntaxErrorExceptionFunctionMap_Nova_super(spectra_Nova_SyntaxErrorExceptionFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
 
 #endif

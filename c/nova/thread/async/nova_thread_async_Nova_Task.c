@@ -12,6 +12,7 @@
 #include <nova/primitive/nova_primitive_Nova_Null.h>
 #include <nova/primitive/number/nova_primitive_number_Nova_Char.h>
 #include <nova/primitive/nova_primitive_Nova_Bool.h>
+#include <nova/datastruct/list/nova_datastruct_list_Nova_List.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_Array.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_ImmutableArray.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_IntArray.h>
@@ -123,6 +124,21 @@ void nova_thread_async_Nova_TaskFunctionMap_Nova_destroy(nova_thread_async_Nova_
 
 void nova_thread_async_Nova_TaskFunctionMap_Nova_this(nova_thread_async_Nova_TaskFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
+}
+
+nova_thread_async_Nova_Task* nova_thread_async_Nova_TaskFunctionMap_functionMapTaskFunctionMap_static_Nova_construct(nova_thread_async_Nova_TaskFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_thread_Nova_Thread* thread)
+{
+	return (nova_thread_async_Nova_Task*)nova_thread_async_Nova_Task_Nova_construct(0, exceptionData, thread);
+}
+
+void nova_thread_async_Nova_TaskFunctionMap_functionMap_Nova_waitForCompletion(nova_thread_async_Nova_TaskFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_thread_async_Nova_Task* reference)
+{
+	nova_thread_async_Nova_Task_Nova_waitForCompletion(reference, exceptionData);
+}
+
+nova_Nova_Object* nova_thread_async_Nova_TaskFunctionMap_functionMap_Nova_waitForResult(nova_thread_async_Nova_TaskFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_thread_async_Nova_Task* reference)
+{
+	return (nova_Nova_Object*)nova_thread_async_Nova_Task_Nova_waitForResult(reference, exceptionData);
 }
 
 void nova_thread_async_Nova_TaskFunctionMap_Nova_super(nova_thread_async_Nova_TaskFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)

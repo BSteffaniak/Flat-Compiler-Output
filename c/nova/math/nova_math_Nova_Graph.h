@@ -22,6 +22,7 @@ typedef struct nova_math_Nova_GraphFunctionMap nova_math_Nova_GraphFunctionMap;
 #include <nova/primitive/nova_primitive_Nova_Null.h>
 #include <nova/primitive/number/nova_primitive_number_Nova_Char.h>
 #include <nova/primitive/nova_primitive_Nova_Bool.h>
+#include <nova/datastruct/list/nova_datastruct_list_Nova_List.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_Array.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_ImmutableArray.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_IntArray.h>
@@ -66,6 +67,7 @@ void nova_math_Nova_GraphFunctionMap_Nova_init_static(nova_exception_Nova_Except
 nova_math_Nova_GraphFunctionMap* nova_math_Nova_GraphFunctionMap_Nova_construct(nova_math_Nova_GraphFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
 void nova_math_Nova_GraphFunctionMap_Nova_destroy(nova_math_Nova_GraphFunctionMap** this, nova_exception_Nova_ExceptionData* exceptionData);
 void nova_math_Nova_GraphFunctionMap_Nova_this(nova_math_Nova_GraphFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+nova_math_Nova_Graph* nova_math_Nova_GraphFunctionMap_functionMapGraphFunctionMap_static_Nova_construct(nova_math_Nova_GraphFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
 void nova_math_Nova_GraphFunctionMap_Nova_super(nova_math_Nova_GraphFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
 
 #endif

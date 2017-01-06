@@ -22,6 +22,7 @@ typedef struct nova_process_Nova_ProcessFunctionMap nova_process_Nova_ProcessFun
 #include <nova/primitive/nova_primitive_Nova_Null.h>
 #include <nova/primitive/number/nova_primitive_number_Nova_Char.h>
 #include <nova/primitive/nova_primitive_Nova_Bool.h>
+#include <nova/datastruct/list/nova_datastruct_list_Nova_List.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_Array.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_ImmutableArray.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_IntArray.h>
@@ -68,6 +69,7 @@ void nova_process_Nova_ProcessFunctionMap_Nova_init_static(nova_exception_Nova_E
 nova_process_Nova_ProcessFunctionMap* nova_process_Nova_ProcessFunctionMap_Nova_construct(nova_process_Nova_ProcessFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
 void nova_process_Nova_ProcessFunctionMap_Nova_destroy(nova_process_Nova_ProcessFunctionMap** this, nova_exception_Nova_ExceptionData* exceptionData);
 void nova_process_Nova_ProcessFunctionMap_Nova_this(nova_process_Nova_ProcessFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+nova_process_Nova_Process* nova_process_Nova_ProcessFunctionMap_functionMapProcessFunctionMap_static_Nova_construct(nova_process_Nova_ProcessFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_io_Nova_InputStream* reader);
 void nova_process_Nova_ProcessFunctionMap_Nova_super(nova_process_Nova_ProcessFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
 
 #endif

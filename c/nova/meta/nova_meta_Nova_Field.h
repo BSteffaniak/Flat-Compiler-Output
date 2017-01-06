@@ -22,6 +22,7 @@ typedef struct nova_meta_Nova_FieldFunctionMap nova_meta_Nova_FieldFunctionMap;
 #include <nova/primitive/nova_primitive_Nova_Null.h>
 #include <nova/primitive/number/nova_primitive_number_Nova_Char.h>
 #include <nova/primitive/nova_primitive_Nova_Bool.h>
+#include <nova/datastruct/list/nova_datastruct_list_Nova_List.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_Array.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_ImmutableArray.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_IntArray.h>
@@ -69,6 +70,7 @@ void nova_meta_Nova_FieldFunctionMap_Nova_init_static(nova_exception_Nova_Except
 nova_meta_Nova_FieldFunctionMap* nova_meta_Nova_FieldFunctionMap_Nova_construct(nova_meta_Nova_FieldFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
 void nova_meta_Nova_FieldFunctionMap_Nova_destroy(nova_meta_Nova_FieldFunctionMap** this, nova_exception_Nova_ExceptionData* exceptionData);
 void nova_meta_Nova_FieldFunctionMap_Nova_this(nova_meta_Nova_FieldFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+nova_meta_Nova_Field* nova_meta_Nova_FieldFunctionMap_functionMapFieldFunctionMap_static_Nova_construct(nova_meta_Nova_FieldFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* name, nova_meta_Nova_Type* type);
 void nova_meta_Nova_FieldFunctionMap_Nova_super(nova_meta_Nova_FieldFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
 
 #endif

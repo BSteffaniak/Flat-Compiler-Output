@@ -12,6 +12,7 @@
 #include <nova/primitive/nova_primitive_Nova_Null.h>
 #include <nova/primitive/number/nova_primitive_number_Nova_Char.h>
 #include <nova/primitive/nova_primitive_Nova_Bool.h>
+#include <nova/datastruct/list/nova_datastruct_list_Nova_List.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_Array.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_ImmutableArray.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_IntArray.h>
@@ -30,6 +31,7 @@
 #include <nova/meta/nova_meta_Nova_FunctionMap.h>
 #include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <nova/io/nova_io_Nova_FileWriter.h>
+#include <nova/web/svg/nova_web_svg_Nova_SvgComponent.h>
 #include <nova/web/svg/nova_web_svg_Nova_SvgComponent.h>
 #include <nova/web/svg/nova_web_svg_Nova_SvgComponentList.h>
 #include <nova/NativeObject.h>
@@ -108,6 +110,7 @@ nova_web_svg_Nova_SvgCircleFunctionMap* nova_web_svg_Nova_SvgCircleFunctionMap_N
 	this->vtable = &nova_web_svg_SvgCircle_SvgCircleFunctionMap_Extension_VTable_val;
 	nova_Nova_Object_Nova_super((nova_Nova_Object*)this, exceptionData);
 	nova_meta_Nova_FunctionMap_Nova_super((nova_meta_Nova_FunctionMap*)this, exceptionData);
+	nova_web_svg_Nova_SvgComponentFunctionMap_Nova_super((nova_web_svg_Nova_SvgComponentFunctionMap*)this, exceptionData);
 	nova_web_svg_Nova_SvgCircleFunctionMap_Nova_super(this, exceptionData);
 	
 	{
@@ -130,6 +133,21 @@ void nova_web_svg_Nova_SvgCircleFunctionMap_Nova_destroy(nova_web_svg_Nova_SvgCi
 
 void nova_web_svg_Nova_SvgCircleFunctionMap_Nova_this(nova_web_svg_Nova_SvgCircleFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
+}
+
+nova_web_svg_Nova_SvgCircle* nova_web_svg_Nova_SvgCircleFunctionMap_functionMapSvgCircleFunctionMap_static_Nova_construct(nova_web_svg_Nova_SvgCircleFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, double x, double y, int r)
+{
+	return nova_web_svg_Nova_SvgCircle_Nova_construct(0, exceptionData, x, y, r);
+}
+
+char nova_web_svg_Nova_SvgCircleFunctionMap_functionMap_Nova_generateOutput(nova_web_svg_Nova_SvgCircleFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_web_svg_Nova_SvgCircle* reference, nova_io_Nova_FileWriter* writer)
+{
+	return nova_web_svg_Nova_SvgCircle_Nova_generateOutput(reference, exceptionData, writer);
+}
+
+nova_Nova_String* nova_web_svg_Nova_SvgCircleFunctionMap_functionMap_Nova_toString(nova_web_svg_Nova_SvgCircleFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_web_svg_Nova_SvgCircle* reference)
+{
+	return nova_Nova_Object_virtual_Nova_toString((nova_Nova_Object*)(reference), exceptionData);
 }
 
 void nova_web_svg_Nova_SvgCircleFunctionMap_Nova_super(nova_web_svg_Nova_SvgCircleFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)

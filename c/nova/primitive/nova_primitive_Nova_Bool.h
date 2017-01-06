@@ -22,6 +22,7 @@ typedef struct nova_primitive_Nova_BoolFunctionMap nova_primitive_Nova_BoolFunct
 #include <nova/primitive/nova_primitive_Nova_Null.h>
 #include <nova/primitive/number/nova_primitive_number_Nova_Char.h>
 #include <nova/primitive/nova_primitive_Nova_Bool.h>
+#include <nova/datastruct/list/nova_datastruct_list_Nova_List.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_Array.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_ImmutableArray.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_IntArray.h>
@@ -41,6 +42,8 @@ typedef struct nova_primitive_Nova_BoolFunctionMap nova_primitive_Nova_BoolFunct
 #include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <nova/datastruct/nova_datastruct_Nova_Comparable.h>
 #include <nova/primitive/nova_primitive_Nova_Primitive.h>
+#include <nova/primitive/nova_primitive_Nova_Primitive.h>
+#include <nova/datastruct/nova_datastruct_Nova_Comparable.h>
 #include <nova/NativeObject.h>
 #include <nova/operators/nova_operators_Nova_EqualsOperator.h>
 
@@ -72,6 +75,10 @@ void nova_primitive_Nova_BoolFunctionMap_Nova_init_static(nova_exception_Nova_Ex
 nova_primitive_Nova_BoolFunctionMap* nova_primitive_Nova_BoolFunctionMap_Nova_construct(nova_primitive_Nova_BoolFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
 void nova_primitive_Nova_BoolFunctionMap_Nova_destroy(nova_primitive_Nova_BoolFunctionMap** this, nova_exception_Nova_ExceptionData* exceptionData);
 void nova_primitive_Nova_BoolFunctionMap_Nova_this(nova_primitive_Nova_BoolFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+char nova_primitive_Nova_BoolFunctionMap_functionMapBoolFunctionMap_static_Nova_construct(nova_primitive_Nova_BoolFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, char value);
+char nova_primitive_Nova_BoolFunctionMap_functionMap_Nova_compareTo(nova_primitive_Nova_BoolFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_primitive_Nova_Bool* reference, char other);
+nova_Nova_String* nova_primitive_Nova_BoolFunctionMap_functionMap_Nova_toString(nova_primitive_Nova_BoolFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_primitive_Nova_Bool* reference);
+nova_Nova_String* nova_primitive_Nova_BoolFunctionMap_functionMap_static_Nova_toString(nova_primitive_Nova_BoolFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, char value);
 void nova_primitive_Nova_BoolFunctionMap_Nova_super(nova_primitive_Nova_BoolFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
 
 #endif

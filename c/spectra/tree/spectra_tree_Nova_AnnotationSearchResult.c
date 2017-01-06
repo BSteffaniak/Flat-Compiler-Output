@@ -12,6 +12,7 @@
 #include <nova/primitive/nova_primitive_Nova_Null.h>
 #include <nova/primitive/number/nova_primitive_number_Nova_Char.h>
 #include <nova/primitive/nova_primitive_Nova_Bool.h>
+#include <nova/datastruct/list/nova_datastruct_list_Nova_List.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_Array.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_ImmutableArray.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_IntArray.h>
@@ -153,6 +154,21 @@ void spectra_tree_Nova_AnnotationSearchResultFunctionMap_Nova_destroy(spectra_tr
 
 void spectra_tree_Nova_AnnotationSearchResultFunctionMap_Nova_this(spectra_tree_Nova_AnnotationSearchResultFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
+}
+
+spectra_tree_Nova_AnnotationSearchResult* spectra_tree_Nova_AnnotationSearchResultFunctionMap_functionMapAnnotationSearchResultFunctionMap_static_Nova_construct(spectra_tree_Nova_AnnotationSearchResultFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* remainingStatement)
+{
+	return spectra_tree_Nova_AnnotationSearchResult_Nova_construct(0, exceptionData, remainingStatement);
+}
+
+nova_datastruct_list_Nova_Array* spectra_tree_Nova_AnnotationSearchResultFunctionMap_functionMap0_Nova_addTo(spectra_tree_Nova_AnnotationSearchResultFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, spectra_tree_Nova_AnnotationSearchResult* reference, spectra_tree_nodes_Nova_Node* node)
+{
+	return (nova_datastruct_list_Nova_Array*)spectra_tree_Nova_AnnotationSearchResult_0_Nova_addTo(reference, exceptionData, node);
+}
+
+nova_datastruct_list_Nova_Array* spectra_tree_Nova_AnnotationSearchResultFunctionMap_functionMap1_Nova_addTo(spectra_tree_Nova_AnnotationSearchResultFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, spectra_tree_Nova_AnnotationSearchResult* reference, nova_datastruct_list_Nova_Stack* stack)
+{
+	return (nova_datastruct_list_Nova_Array*)spectra_tree_Nova_AnnotationSearchResult_1_Nova_addTo(reference, exceptionData, stack);
 }
 
 void spectra_tree_Nova_AnnotationSearchResultFunctionMap_Nova_super(spectra_tree_Nova_AnnotationSearchResultFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)

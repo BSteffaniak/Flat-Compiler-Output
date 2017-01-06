@@ -12,6 +12,7 @@
 #include <nova/primitive/nova_primitive_Nova_Null.h>
 #include <nova/primitive/number/nova_primitive_number_Nova_Char.h>
 #include <nova/primitive/nova_primitive_Nova_Bool.h>
+#include <nova/datastruct/list/nova_datastruct_list_Nova_List.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_Array.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_ImmutableArray.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_IntArray.h>
@@ -31,6 +32,8 @@
 #include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <spectra/tree/nodes/spectra_tree_nodes_Nova_Value.h>
 #include <spectra/tree/nodes/variables/spectra_tree_nodes_variables_Nova_VariableDeclaration.h>
+#include <nova/NativeObject.h>
+#include <nova/operators/nova_operators_Nova_EqualsOperator.h>
 
 
 
@@ -51,5 +54,60 @@ void spectra_tree_nodes_operations_Nova_Assignable_Nova_onAssignedTo(spectra_tre
 void spectra_tree_nodes_operations_Nova_Assignable_virtual_Nova_onAssigned(spectra_tree_nodes_operations_Nova_Assignable* this, nova_exception_Nova_ExceptionData* exceptionData, spectra_tree_nodes_Nova_Value* value)
 {
 	this->vtable->itable.spectra_tree_nodes_operations_Nova_Assignable_virtual_Nova_onAssigned((spectra_tree_nodes_operations_Nova_Assignable*)(this), exceptionData, value);
+}
+
+void spectra_tree_nodes_operations_Nova_AssignableFunctionMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData)
+{
+	{
+	}
+}
+
+spectra_tree_nodes_operations_Nova_AssignableFunctionMap* spectra_tree_nodes_operations_Nova_AssignableFunctionMap_Nova_construct(spectra_tree_nodes_operations_Nova_AssignableFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+	CCLASS_NEW(spectra_tree_nodes_operations_Nova_AssignableFunctionMap, this,);
+	this->vtable = &spectra_tree_nodes_operations_Assignable_AssignableFunctionMap_Extension_VTable_val;
+	nova_Nova_Object_Nova_super((nova_Nova_Object*)this, exceptionData);
+	nova_meta_Nova_FunctionMap_Nova_super((nova_meta_Nova_FunctionMap*)this, exceptionData);
+	spectra_tree_nodes_operations_Nova_AssignableFunctionMap_Nova_super(this, exceptionData);
+	
+	{
+		spectra_tree_nodes_operations_Nova_AssignableFunctionMap_Nova_this(this, exceptionData);
+	}
+	
+	return this;
+}
+
+void spectra_tree_nodes_operations_Nova_AssignableFunctionMap_Nova_destroy(spectra_tree_nodes_operations_Nova_AssignableFunctionMap** this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+	if (!*this)
+	{
+		return;
+	}
+	
+	
+	NOVA_FREE(*this);
+}
+
+void spectra_tree_nodes_operations_Nova_AssignableFunctionMap_Nova_this(spectra_tree_nodes_operations_Nova_AssignableFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+}
+
+void spectra_tree_nodes_operations_Nova_AssignableFunctionMap_functionMap0_Nova_onAssigned(spectra_tree_nodes_operations_Nova_AssignableFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, spectra_tree_nodes_operations_Nova_Assignable* reference, spectra_tree_nodes_Nova_Value* value)
+{
+	spectra_tree_nodes_operations_Nova_Assignable_virtual_Nova_onAssigned((spectra_tree_nodes_operations_Nova_Assignable*)(reference), exceptionData, value);
+}
+
+void spectra_tree_nodes_operations_Nova_AssignableFunctionMap_functionMap_Nova_onAssignedTo(spectra_tree_nodes_operations_Nova_AssignableFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, spectra_tree_nodes_operations_Nova_Assignable* reference, spectra_tree_nodes_variables_Nova_VariableDeclaration* declaration)
+{
+	spectra_tree_nodes_operations_Nova_Assignable_Nova_onAssignedTo(reference, exceptionData, declaration);
+}
+
+void spectra_tree_nodes_operations_Nova_AssignableFunctionMap_Nova_super(spectra_tree_nodes_operations_Nova_AssignableFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+}
+
+void spectra_tree_nodes_operations_Nova_AssignableFunctionMap_virtualfunctionMap1_Nova_onAssigned(spectra_tree_nodes_operations_Nova_AssignableFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, spectra_tree_nodes_operations_Nova_Assignable* reference, spectra_tree_nodes_Nova_Value* value)
+{
+	this->vtable->itable.spectra_tree_nodes_operations_Nova_AssignableFunctionMap_virtualfunctionMap1_Nova_onAssigned(this, exceptionData, reference, value);
 }
 

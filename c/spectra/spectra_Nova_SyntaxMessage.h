@@ -22,6 +22,7 @@ typedef struct spectra_Nova_SyntaxMessageFunctionMap spectra_Nova_SyntaxMessageF
 #include <nova/primitive/nova_primitive_Nova_Null.h>
 #include <nova/primitive/number/nova_primitive_number_Nova_Char.h>
 #include <nova/primitive/nova_primitive_Nova_Bool.h>
+#include <nova/datastruct/list/nova_datastruct_list_Nova_List.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_Array.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_ImmutableArray.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_IntArray.h>
@@ -71,6 +72,9 @@ void spectra_Nova_SyntaxMessageFunctionMap_Nova_init_static(nova_exception_Nova_
 spectra_Nova_SyntaxMessageFunctionMap* spectra_Nova_SyntaxMessageFunctionMap_Nova_construct(spectra_Nova_SyntaxMessageFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
 void spectra_Nova_SyntaxMessageFunctionMap_Nova_destroy(spectra_Nova_SyntaxMessageFunctionMap** this, nova_exception_Nova_ExceptionData* exceptionData);
 void spectra_Nova_SyntaxMessageFunctionMap_Nova_this(spectra_Nova_SyntaxMessageFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+spectra_Nova_SyntaxMessage* spectra_Nova_SyntaxMessageFunctionMap_functionMapSyntaxMessageFunctionMap_static_Nova_construct(spectra_Nova_SyntaxMessageFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+void spectra_Nova_SyntaxMessageFunctionMap_functionMap_static_Nova_errorIf(spectra_Nova_SyntaxMessageFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* message, spectra_tree_nodes_Nova_Node* node, char condition, int throwException);
+void spectra_Nova_SyntaxMessageFunctionMap_functionMap_static_Nova_error(spectra_Nova_SyntaxMessageFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* message, spectra_tree_nodes_Nova_Node* node, int throwException);
 void spectra_Nova_SyntaxMessageFunctionMap_Nova_super(spectra_Nova_SyntaxMessageFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
 
 #endif

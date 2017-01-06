@@ -12,6 +12,7 @@
 #include <nova/primitive/nova_primitive_Nova_Null.h>
 #include <nova/primitive/number/nova_primitive_number_Nova_Char.h>
 #include <nova/primitive/nova_primitive_Nova_Bool.h>
+#include <nova/datastruct/list/nova_datastruct_list_Nova_List.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_Array.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_ImmutableArray.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_IntArray.h>
@@ -31,6 +32,11 @@
 #include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <nova/datastruct/nova_datastruct_Nova_Comparable.h>
 #include <nova/primitive/number/nova_primitive_number_Nova_Integer.h>
+#include <nova/primitive/number/nova_primitive_number_Nova_Number.h>
+#include <nova/datastruct/nova_datastruct_Nova_Comparable.h>
+#include <nova/primitive/number/nova_primitive_number_Nova_Integer.h>
+#include <nova/primitive/nova_primitive_Nova_Primitive.h>
+#include <nova/operators/nova_operators_Nova_MultiplyOperator.h>
 #include <nova/primitive/nova_primitive_Nova_Primitive.h>
 #include <nova/operators/nova_operators_Nova_MultiplyOperator.h>
 #include <nova/NativeObject.h>
@@ -134,6 +140,8 @@ nova_primitive_number_Nova_IntFunctionMap* nova_primitive_number_Nova_IntFunctio
 	this->vtable = &nova_primitive_number_Int_IntFunctionMap_Extension_VTable_val;
 	nova_Nova_Object_Nova_super((nova_Nova_Object*)this, exceptionData);
 	nova_meta_Nova_FunctionMap_Nova_super((nova_meta_Nova_FunctionMap*)this, exceptionData);
+	nova_primitive_Nova_PrimitiveFunctionMap_Nova_super((nova_primitive_Nova_PrimitiveFunctionMap*)this, exceptionData);
+	nova_primitive_number_Nova_NumberFunctionMap_Nova_super((nova_primitive_number_Nova_NumberFunctionMap*)this, exceptionData);
 	nova_primitive_number_Nova_IntFunctionMap_Nova_super(this, exceptionData);
 	
 	{
@@ -156,6 +164,41 @@ void nova_primitive_number_Nova_IntFunctionMap_Nova_destroy(nova_primitive_numbe
 
 void nova_primitive_number_Nova_IntFunctionMap_Nova_this(nova_primitive_number_Nova_IntFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
+}
+
+int nova_primitive_number_Nova_IntFunctionMap_functionMapIntFunctionMap_static_Nova_construct(nova_primitive_number_Nova_IntFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, int value)
+{
+	return nova_primitive_number_Nova_Int_Nova_construct(0, exceptionData, value);
+}
+
+int nova_primitive_number_Nova_IntFunctionMap_functionMap0_Nova_compareTo(nova_primitive_number_Nova_IntFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_primitive_number_Nova_Int* reference, int other)
+{
+	return nova_primitive_number_Nova_Int_0_Nova_compareTo(reference, exceptionData, other);
+}
+
+int nova_primitive_number_Nova_IntFunctionMap_functionMap_Nova_multiply(nova_primitive_number_Nova_IntFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_primitive_number_Nova_Int* reference, int value)
+{
+	return (int)nova_primitive_number_Nova_Int_Nova_multiply(reference, exceptionData, value);
+}
+
+nova_Nova_String* nova_primitive_number_Nova_IntFunctionMap_functionMap_Nova_toString(nova_primitive_number_Nova_IntFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_primitive_number_Nova_Int* reference)
+{
+	return nova_Nova_Object_virtual_Nova_toString((nova_Nova_Object*)(reference), exceptionData);
+}
+
+int nova_primitive_number_Nova_IntFunctionMap_functionMap_static_Nova_numDigits(nova_primitive_number_Nova_IntFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, int number)
+{
+	return nova_primitive_number_Nova_Int_static_Nova_numDigits(0, exceptionData, number);
+}
+
+nova_Nova_String* nova_primitive_number_Nova_IntFunctionMap_functionMap_static_Nova_toString(nova_primitive_number_Nova_IntFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, int value)
+{
+	return nova_primitive_number_Nova_Int_static_Nova_toString(0, exceptionData, value);
+}
+
+int nova_primitive_number_Nova_IntFunctionMap_functionMap_static_Nova_parseInt(nova_primitive_number_Nova_IntFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* num)
+{
+	return nova_primitive_number_Nova_Int_static_Nova_parseInt(0, exceptionData, num);
 }
 
 void nova_primitive_number_Nova_IntFunctionMap_Nova_super(nova_primitive_number_Nova_IntFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)

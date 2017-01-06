@@ -22,6 +22,7 @@ typedef struct nova_gc_Nova_GCFunctionMap nova_gc_Nova_GCFunctionMap;
 #include <nova/primitive/nova_primitive_Nova_Null.h>
 #include <nova/primitive/number/nova_primitive_number_Nova_Char.h>
 #include <nova/primitive/nova_primitive_Nova_Bool.h>
+#include <nova/datastruct/list/nova_datastruct_list_Nova_List.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_Array.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_ImmutableArray.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_IntArray.h>
@@ -75,6 +76,11 @@ void nova_gc_Nova_GCFunctionMap_Nova_init_static(nova_exception_Nova_ExceptionDa
 nova_gc_Nova_GCFunctionMap* nova_gc_Nova_GCFunctionMap_Nova_construct(nova_gc_Nova_GCFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
 void nova_gc_Nova_GCFunctionMap_Nova_destroy(nova_gc_Nova_GCFunctionMap** this, nova_exception_Nova_ExceptionData* exceptionData);
 void nova_gc_Nova_GCFunctionMap_Nova_this(nova_gc_Nova_GCFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+nova_gc_Nova_GC* nova_gc_Nova_GCFunctionMap_functionMapGCFunctionMap_static_Nova_construct(nova_gc_Nova_GCFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+void nova_gc_Nova_GCFunctionMap_functionMap_static_Nova_init(nova_gc_Nova_GCFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+void nova_gc_Nova_GCFunctionMap_functionMap_static_Nova_collect(nova_gc_Nova_GCFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+void nova_gc_Nova_GCFunctionMap_functionMap_static_Nova_enableIncremental(nova_gc_Nova_GCFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+void nova_gc_Nova_GCFunctionMap_functionMap_static_Nova_dump(nova_gc_Nova_GCFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
 void nova_gc_Nova_GCFunctionMap_Nova_super(nova_gc_Nova_GCFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
 
 #endif

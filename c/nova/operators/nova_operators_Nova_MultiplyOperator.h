@@ -2,6 +2,7 @@
 #define FILE_nova_operators_Nova_MultiplyOperator_NOVA
 
 typedef struct nova_operators_Nova_MultiplyOperator nova_operators_Nova_MultiplyOperator;
+typedef struct nova_operators_Nova_MultiplyOperatorFunctionMap nova_operators_Nova_MultiplyOperatorFunctionMap;
 
 
 #include <Nova.h>
@@ -21,6 +22,7 @@ typedef struct nova_operators_Nova_MultiplyOperator nova_operators_Nova_Multiply
 #include <nova/primitive/nova_primitive_Nova_Null.h>
 #include <nova/primitive/number/nova_primitive_number_Nova_Char.h>
 #include <nova/primitive/nova_primitive_Nova_Bool.h>
+#include <nova/datastruct/list/nova_datastruct_list_Nova_List.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_Array.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_ImmutableArray.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_IntArray.h>
@@ -38,6 +40,8 @@ typedef struct nova_operators_Nova_MultiplyOperator nova_operators_Nova_Multiply
 #include <nova/meta/nova_meta_Nova_Class.h>
 #include <nova/meta/nova_meta_Nova_FunctionMap.h>
 #include <nova/regex/nova_regex_Nova_Pattern.h>
+#include <nova/NativeObject.h>
+#include <nova/operators/nova_operators_Nova_EqualsOperator.h>
 
 CCLASS_CLASS
 (
@@ -48,5 +52,20 @@ CCLASS_CLASS
 
 void nova_operators_Nova_MultiplyOperator_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData);
 nova_Nova_Object* nova_operators_Nova_MultiplyOperator_0_Nova_multiply(nova_operators_Nova_MultiplyOperator* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_Object* value);nova_Nova_Object* nova_operators_Nova_MultiplyOperator_virtual0_Nova_multiply(nova_operators_Nova_MultiplyOperator* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_Object* value);
+
+CCLASS_CLASS
+(
+	nova_operators_Nova_MultiplyOperatorFunctionMap, 
+	
+	nova_operators_MultiplyOperator_MultiplyOperatorFunctionMap_Extension_VTable* vtable;
+)
+
+void nova_operators_Nova_MultiplyOperatorFunctionMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData);
+nova_operators_Nova_MultiplyOperatorFunctionMap* nova_operators_Nova_MultiplyOperatorFunctionMap_Nova_construct(nova_operators_Nova_MultiplyOperatorFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+void nova_operators_Nova_MultiplyOperatorFunctionMap_Nova_destroy(nova_operators_Nova_MultiplyOperatorFunctionMap** this, nova_exception_Nova_ExceptionData* exceptionData);
+void nova_operators_Nova_MultiplyOperatorFunctionMap_Nova_this(nova_operators_Nova_MultiplyOperatorFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+nova_Nova_Object* nova_operators_Nova_MultiplyOperatorFunctionMap_functionMap0_Nova_multiply(nova_operators_Nova_MultiplyOperatorFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_operators_Nova_MultiplyOperator* reference, nova_Nova_Object* value);
+void nova_operators_Nova_MultiplyOperatorFunctionMap_Nova_super(nova_operators_Nova_MultiplyOperatorFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+nova_Nova_Object* nova_operators_Nova_MultiplyOperatorFunctionMap_virtualfunctionMap0_Nova_multiply(nova_operators_Nova_MultiplyOperatorFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_operators_Nova_MultiplyOperator* reference, nova_Nova_Object* value);
 
 #endif

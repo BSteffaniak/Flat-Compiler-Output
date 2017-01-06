@@ -12,6 +12,7 @@
 #include <nova/primitive/nova_primitive_Nova_Null.h>
 #include <nova/primitive/number/nova_primitive_number_Nova_Char.h>
 #include <nova/primitive/nova_primitive_Nova_Bool.h>
+#include <nova/datastruct/list/nova_datastruct_list_Nova_List.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_Array.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_ImmutableArray.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_IntArray.h>
@@ -30,6 +31,7 @@
 #include <nova/meta/nova_meta_Nova_FunctionMap.h>
 #include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <spectra/tree/nodes/spectra_tree_nodes_Nova_Node.h>
+#include <nova/exception/nova_exception_Nova_Exception.h>
 #include <nova/NativeObject.h>
 #include <nova/operators/nova_operators_Nova_EqualsOperator.h>
 
@@ -92,6 +94,7 @@ spectra_Nova_InvalidParseExceptionFunctionMap* spectra_Nova_InvalidParseExceptio
 	this->vtable = &spectra_InvalidParseException_InvalidParseExceptionFunctionMap_Extension_VTable_val;
 	nova_Nova_Object_Nova_super((nova_Nova_Object*)this, exceptionData);
 	nova_meta_Nova_FunctionMap_Nova_super((nova_meta_Nova_FunctionMap*)this, exceptionData);
+	nova_exception_Nova_ExceptionFunctionMap_Nova_super((nova_exception_Nova_ExceptionFunctionMap*)this, exceptionData);
 	spectra_Nova_InvalidParseExceptionFunctionMap_Nova_super(this, exceptionData);
 	
 	{
@@ -114,6 +117,12 @@ void spectra_Nova_InvalidParseExceptionFunctionMap_Nova_destroy(spectra_Nova_Inv
 
 void spectra_Nova_InvalidParseExceptionFunctionMap_Nova_this(spectra_Nova_InvalidParseExceptionFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
+}
+
+spectra_Nova_InvalidParseException* spectra_Nova_InvalidParseExceptionFunctionMap_functionMapInvalidParseExceptionFunctionMap_static_Nova_construct(spectra_Nova_InvalidParseExceptionFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* message, spectra_tree_nodes_Nova_Node* node)
+{
+	node = (spectra_tree_nodes_Nova_Node*)(node == 0 ? (nova_Nova_Object*)(nova_Nova_Object*)nova_null : (nova_Nova_Object*)node);
+	return spectra_Nova_InvalidParseException_Nova_construct(0, exceptionData, message, node);
 }
 
 void spectra_Nova_InvalidParseExceptionFunctionMap_Nova_super(spectra_Nova_InvalidParseExceptionFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)

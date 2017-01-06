@@ -22,6 +22,7 @@ typedef struct nova_network_Nova_ServerSocketFunctionMap nova_network_Nova_Serve
 #include <nova/primitive/nova_primitive_Nova_Null.h>
 #include <nova/primitive/number/nova_primitive_number_Nova_Char.h>
 #include <nova/primitive/nova_primitive_Nova_Bool.h>
+#include <nova/datastruct/list/nova_datastruct_list_Nova_List.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_Array.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_ImmutableArray.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_IntArray.h>
@@ -42,6 +43,7 @@ typedef struct nova_network_Nova_ServerSocketFunctionMap nova_network_Nova_Serve
 #include <nova/network/NativeServerSocket.h>
 #include <nova/network/NativeSocket.h>
 #include <nova/network/nova_network_Nova_ConnectionSocket.h>
+#include <nova/network/nova_network_Nova_Socket.h>
 #include <nova/network/nova_network_Nova_Socket.h>
 #include <nova/NativeObject.h>
 #include <nova/operators/nova_operators_Nova_EqualsOperator.h>
@@ -78,6 +80,10 @@ void nova_network_Nova_ServerSocketFunctionMap_Nova_init_static(nova_exception_N
 nova_network_Nova_ServerSocketFunctionMap* nova_network_Nova_ServerSocketFunctionMap_Nova_construct(nova_network_Nova_ServerSocketFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
 void nova_network_Nova_ServerSocketFunctionMap_Nova_destroy(nova_network_Nova_ServerSocketFunctionMap** this, nova_exception_Nova_ExceptionData* exceptionData);
 void nova_network_Nova_ServerSocketFunctionMap_Nova_this(nova_network_Nova_ServerSocketFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+nova_network_Nova_ServerSocket* nova_network_Nova_ServerSocketFunctionMap_functionMapServerSocketFunctionMap_static_Nova_construct(nova_network_Nova_ServerSocketFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+char nova_network_Nova_ServerSocketFunctionMap_functionMap_Nova_start(nova_network_Nova_ServerSocketFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_network_Nova_ServerSocket* reference, int port);
+char nova_network_Nova_ServerSocketFunctionMap_functionMap_Nova_close(nova_network_Nova_ServerSocketFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_network_Nova_ServerSocket* reference);
+nova_network_Nova_ConnectionSocket* nova_network_Nova_ServerSocketFunctionMap_functionMap_Nova_acceptClient(nova_network_Nova_ServerSocketFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_network_Nova_ServerSocket* reference);
 void nova_network_Nova_ServerSocketFunctionMap_Nova_super(nova_network_Nova_ServerSocketFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
 
 #endif

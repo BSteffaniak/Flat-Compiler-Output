@@ -12,6 +12,7 @@
 #include <nova/primitive/nova_primitive_Nova_Null.h>
 #include <nova/primitive/number/nova_primitive_number_Nova_Char.h>
 #include <nova/primitive/nova_primitive_Nova_Bool.h>
+#include <nova/datastruct/list/nova_datastruct_list_Nova_List.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_Array.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_ImmutableArray.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_IntArray.h>
@@ -114,6 +115,12 @@ void nova_exception_Nova_CaughtExceptionFunctionMap_Nova_destroy(nova_exception_
 
 void nova_exception_Nova_CaughtExceptionFunctionMap_Nova_this(nova_exception_Nova_CaughtExceptionFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
+}
+
+nova_exception_Nova_CaughtException* nova_exception_Nova_CaughtExceptionFunctionMap_functionMapCaughtExceptionFunctionMap_static_Nova_construct(nova_exception_Nova_CaughtExceptionFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_meta_Nova_Class* type, int soft)
+{
+	soft = (int)(soft == (intptr_t)nova_null ? 1 : soft);
+	return nova_exception_Nova_CaughtException_Nova_construct(0, exceptionData, type, soft);
 }
 
 void nova_exception_Nova_CaughtExceptionFunctionMap_Nova_super(nova_exception_Nova_CaughtExceptionFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)

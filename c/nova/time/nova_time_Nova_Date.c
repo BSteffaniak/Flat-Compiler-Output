@@ -12,6 +12,7 @@
 #include <nova/primitive/nova_primitive_Nova_Null.h>
 #include <nova/primitive/number/nova_primitive_number_Nova_Char.h>
 #include <nova/primitive/nova_primitive_Nova_Bool.h>
+#include <nova/datastruct/list/nova_datastruct_list_Nova_List.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_Array.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_ImmutableArray.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_IntArray.h>
@@ -150,6 +151,32 @@ void nova_time_Nova_DateFunctionMap_Nova_destroy(nova_time_Nova_DateFunctionMap*
 
 void nova_time_Nova_DateFunctionMap_Nova_this(nova_time_Nova_DateFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
+}
+
+nova_time_Nova_Date* nova_time_Nova_DateFunctionMap_functionMapDateFunctionMap_static_Nova_construct(nova_time_Nova_DateFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+	return nova_time_Nova_Date_Nova_construct(0, exceptionData);
+}
+
+void nova_time_Nova_DateFunctionMap_functionMap_Nova_decodeDate(nova_time_Nova_DateFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_time_Nova_Date* reference, nova_Nova_String* prototype, nova_Nova_String* date)
+{
+	nova_time_Nova_Date_Nova_decodeDate(reference, exceptionData, prototype, date);
+}
+
+void nova_time_Nova_DateFunctionMap_functionMap_Nova_updateTime(nova_time_Nova_DateFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_time_Nova_Date* reference)
+{
+	nova_time_Nova_Date_Nova_updateTime(reference, exceptionData);
+}
+
+nova_Nova_String* nova_time_Nova_DateFunctionMap_functionMap_Nova_formatDate(nova_time_Nova_DateFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_time_Nova_Date* reference, nova_Nova_String* str, int first, int second, int third, int fourth, int fifth, int sixth)
+{
+	first = (int)(first == (intptr_t)nova_null ? (nova_Nova_Object*)reference->nova_time_Nova_Date_Nova_month : (nova_Nova_Object*)first);
+	second = (int)(second == (intptr_t)nova_null ? (nova_Nova_Object*)reference->nova_time_Nova_Date_Nova_day : (nova_Nova_Object*)second);
+	third = (int)(third == (intptr_t)nova_null ? (nova_Nova_Object*)reference->nova_time_Nova_Date_Nova_year : (nova_Nova_Object*)third);
+	fourth = (int)(fourth == (intptr_t)nova_null ? (nova_Nova_Object*)reference->nova_time_Nova_Date_Nova_hour : (nova_Nova_Object*)fourth);
+	fifth = (int)(fifth == (intptr_t)nova_null ? (nova_Nova_Object*)reference->nova_time_Nova_Date_Nova_minute : (nova_Nova_Object*)fifth);
+	sixth = (int)(sixth == (intptr_t)nova_null ? second : sixth);
+	return nova_time_Nova_Date_Nova_formatDate(reference, exceptionData, str, first, second, third, fourth, fifth, sixth);
 }
 
 void nova_time_Nova_DateFunctionMap_Nova_super(nova_time_Nova_DateFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)

@@ -12,6 +12,7 @@
 #include <nova/primitive/nova_primitive_Nova_Null.h>
 #include <nova/primitive/number/nova_primitive_number_Nova_Char.h>
 #include <nova/primitive/nova_primitive_Nova_Bool.h>
+#include <nova/datastruct/list/nova_datastruct_list_Nova_List.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_Array.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_ImmutableArray.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_IntArray.h>
@@ -31,6 +32,7 @@
 #include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <nova/io/nova_io_Nova_File.h>
 #include <nova/io/nova_io_Nova_FileNotFoundException.h>
+#include <nova/io/nova_io_Nova_OutputStream.h>
 #include <nova/io/nova_io_Nova_OutputStream.h>
 #include <nova/NativeObject.h>
 #include <nova/operators/nova_operators_Nova_EqualsOperator.h>
@@ -190,6 +192,7 @@ nova_io_Nova_FileWriterFunctionMap* nova_io_Nova_FileWriterFunctionMap_Nova_cons
 	this->vtable = &nova_io_FileWriter_FileWriterFunctionMap_Extension_VTable_val;
 	nova_Nova_Object_Nova_super((nova_Nova_Object*)this, exceptionData);
 	nova_meta_Nova_FunctionMap_Nova_super((nova_meta_Nova_FunctionMap*)this, exceptionData);
+	nova_io_Nova_OutputStreamFunctionMap_Nova_super((nova_io_Nova_OutputStreamFunctionMap*)this, exceptionData);
 	nova_io_Nova_FileWriterFunctionMap_Nova_super(this, exceptionData);
 	
 	{
@@ -212,6 +215,61 @@ void nova_io_Nova_FileWriterFunctionMap_Nova_destroy(nova_io_Nova_FileWriterFunc
 
 void nova_io_Nova_FileWriterFunctionMap_Nova_this(nova_io_Nova_FileWriterFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
+}
+
+nova_io_Nova_FileWriter* nova_io_Nova_FileWriterFunctionMap_functionMapFileWriterFunctionMap0_static_Nova_construct(nova_io_Nova_FileWriterFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_io_Nova_File* file)
+{
+	return nova_io_Nova_FileWriter_0_Nova_construct(0, exceptionData, file);
+}
+
+nova_io_Nova_FileWriter* nova_io_Nova_FileWriterFunctionMap_functionMapFileWriterFunctionMap1_static_Nova_construct(nova_io_Nova_FileWriterFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* location)
+{
+	return nova_io_Nova_FileWriter_1_Nova_construct(0, exceptionData, location);
+}
+
+char nova_io_Nova_FileWriterFunctionMap_functionMap_Nova_delete(nova_io_Nova_FileWriterFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_io_Nova_FileWriter* reference)
+{
+	return nova_io_Nova_FileWriter_Nova_delete(reference, exceptionData);
+}
+
+char nova_io_Nova_FileWriterFunctionMap_functionMap_Nova_reopen(nova_io_Nova_FileWriterFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_io_Nova_FileWriter* reference)
+{
+	return nova_io_Nova_FileWriter_Nova_reopen(reference, exceptionData);
+}
+
+void nova_io_Nova_FileWriterFunctionMap_functionMap_Nova_rewind(nova_io_Nova_FileWriterFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_io_Nova_FileWriter* reference)
+{
+	nova_io_Nova_FileWriter_Nova_rewind(reference, exceptionData);
+}
+
+char nova_io_Nova_FileWriterFunctionMap_functionMap_Nova_clearContents(nova_io_Nova_FileWriterFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_io_Nova_FileWriter* reference)
+{
+	return nova_io_Nova_FileWriter_Nova_clearContents(reference, exceptionData);
+}
+
+char nova_io_Nova_FileWriterFunctionMap_functionMap_Nova_create(nova_io_Nova_FileWriterFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_io_Nova_FileWriter* reference)
+{
+	return nova_io_Nova_FileWriter_Nova_create(reference, exceptionData);
+}
+
+char nova_io_Nova_FileWriterFunctionMap_functionMap_Nova_writeLine(nova_io_Nova_FileWriterFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_io_Nova_FileWriter* reference, nova_Nova_String* line)
+{
+	return nova_io_Nova_FileWriter_Nova_writeLine(reference, exceptionData, line);
+}
+
+char nova_io_Nova_FileWriterFunctionMap_functionMap_Nova_write(nova_io_Nova_FileWriterFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_io_Nova_FileWriter* reference, nova_Nova_String* data)
+{
+	return nova_io_Nova_FileWriter_Nova_write(reference, exceptionData, data);
+}
+
+char nova_io_Nova_FileWriterFunctionMap_functionMap_Nova_flush(nova_io_Nova_FileWriterFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_io_Nova_FileWriter* reference)
+{
+	return nova_io_Nova_FileWriter_Nova_flush(reference, exceptionData);
+}
+
+char nova_io_Nova_FileWriterFunctionMap_functionMap_Nova_close(nova_io_Nova_FileWriterFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_io_Nova_FileWriter* reference)
+{
+	return nova_io_Nova_FileWriter_Nova_close(reference, exceptionData);
 }
 
 void nova_io_Nova_FileWriterFunctionMap_Nova_super(nova_io_Nova_FileWriterFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)

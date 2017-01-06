@@ -12,6 +12,7 @@
 #include <nova/primitive/nova_primitive_Nova_Null.h>
 #include <nova/primitive/number/nova_primitive_number_Nova_Char.h>
 #include <nova/primitive/nova_primitive_Nova_Bool.h>
+#include <nova/datastruct/list/nova_datastruct_list_Nova_List.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_Array.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_ImmutableArray.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_IntArray.h>
@@ -337,6 +338,63 @@ void nova_math_logic_Nova_WFFFunctionMap_Nova_destroy(nova_math_logic_Nova_WFFFu
 
 void nova_math_logic_Nova_WFFFunctionMap_Nova_this(nova_math_logic_Nova_WFFFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
+}
+
+nova_math_logic_Nova_WFF* nova_math_logic_Nova_WFFFunctionMap_functionMapWFFFunctionMap_static_Nova_construct(nova_math_logic_Nova_WFFFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* wff, nova_datastruct_list_Nova_Array* letters)
+{
+	return nova_math_logic_Nova_WFF_Nova_construct(0, exceptionData, wff, letters);
+}
+
+void nova_math_logic_Nova_WFFFunctionMap_functionMap_Nova_decodeFormula(nova_math_logic_Nova_WFFFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_math_logic_Nova_WFF* reference)
+{
+	nova_math_logic_Nova_WFF_Nova_decodeFormula(reference, exceptionData);
+}
+
+nova_math_logic_Nova_StatementGroup* nova_math_logic_Nova_WFFFunctionMap_functionMap_Nova_searchForConclusion(nova_math_logic_Nova_WFFFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_math_logic_Nova_WFF* reference, nova_Nova_String* wff)
+{
+	return (nova_math_logic_Nova_StatementGroup*)nova_math_logic_Nova_WFF_Nova_searchForConclusion(reference, exceptionData, wff);
+}
+
+nova_datastruct_list_Nova_Array* nova_math_logic_Nova_WFFFunctionMap_functionMap_Nova_decodeHypotheses(nova_math_logic_Nova_WFFFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_math_logic_Nova_WFF* reference, nova_Nova_String* wff)
+{
+	return (nova_datastruct_list_Nova_Array*)nova_math_logic_Nova_WFF_Nova_decodeHypotheses(reference, exceptionData, wff);
+}
+
+nova_math_logic_Nova_StatementGroup* nova_math_logic_Nova_WFFFunctionMap_functionMap_Nova_generateHypothesis(nova_math_logic_Nova_WFFFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_math_logic_Nova_WFF* reference, nova_Nova_String* wff, int start, int end)
+{
+	return (nova_math_logic_Nova_StatementGroup*)nova_math_logic_Nova_WFF_Nova_generateHypothesis(reference, exceptionData, wff, start, end);
+}
+
+nova_math_logic_Nova_StatementGroup* nova_math_logic_Nova_WFFFunctionMap_functionMap_Nova_searchForStatement(nova_math_logic_Nova_WFFFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_math_logic_Nova_WFF* reference, nova_Nova_String* wff)
+{
+	return (nova_math_logic_Nova_StatementGroup*)nova_math_logic_Nova_WFF_Nova_searchForStatement(reference, exceptionData, wff);
+}
+
+int nova_math_logic_Nova_WFFFunctionMap_functionMap_static_Nova_nextNonWhitespaceIndex(nova_math_logic_Nova_WFFFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* wff, int index, int direction)
+{
+	return nova_math_logic_Nova_WFF_static_Nova_nextNonWhitespaceIndex(0, exceptionData, wff, index, direction);
+}
+
+int nova_math_logic_Nova_WFFFunctionMap_functionMap0_static_Nova_nextWhitespaceIndex(nova_math_logic_Nova_WFFFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* wff, int index, int direction)
+{
+	return nova_math_logic_Nova_WFF_0_static_Nova_nextWhitespaceIndex(0, exceptionData, wff, index, direction);
+}
+
+int nova_math_logic_Nova_WFFFunctionMap_functionMap1_static_Nova_nextWhitespaceIndex(nova_math_logic_Nova_WFFFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* wff, int index, int direction, char opposite, int defaultReturnValue)
+{
+	defaultReturnValue = (int)(defaultReturnValue == (intptr_t)nova_null ? -1 : defaultReturnValue);
+	return nova_math_logic_Nova_WFF_1_static_Nova_nextWhitespaceIndex(0, exceptionData, wff, index, direction, opposite, defaultReturnValue);
+}
+
+char nova_math_logic_Nova_WFFFunctionMap_functionMap_static_Nova_containsChar(nova_math_logic_Nova_WFFFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, char needle, nova_datastruct_list_Nova_CharArray* chars)
+{
+	return nova_math_logic_Nova_WFF_static_Nova_containsChar(0, exceptionData, needle, chars);
+}
+
+int nova_math_logic_Nova_WFFFunctionMap_functionMap_static_Nova_findEndingMatch(nova_math_logic_Nova_WFFFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* wff, char start, char end, int index, int direction, int defaultReturnValue)
+{
+	defaultReturnValue = (int)(defaultReturnValue == (intptr_t)nova_null ? -1 : defaultReturnValue);
+	return nova_math_logic_Nova_WFF_static_Nova_findEndingMatch(0, exceptionData, wff, start, end, index, direction, defaultReturnValue);
 }
 
 void nova_math_logic_Nova_WFFFunctionMap_Nova_super(nova_math_logic_Nova_WFFFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)

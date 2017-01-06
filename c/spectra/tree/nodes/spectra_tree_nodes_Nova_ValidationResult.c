@@ -12,6 +12,7 @@
 #include <nova/primitive/nova_primitive_Nova_Null.h>
 #include <nova/primitive/number/nova_primitive_number_Nova_Char.h>
 #include <nova/primitive/nova_primitive_Nova_Bool.h>
+#include <nova/datastruct/list/nova_datastruct_list_Nova_List.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_Array.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_ImmutableArray.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_IntArray.h>
@@ -119,6 +120,11 @@ void spectra_tree_nodes_Nova_ValidationResultFunctionMap_Nova_destroy(spectra_tr
 
 void spectra_tree_nodes_Nova_ValidationResultFunctionMap_Nova_this(spectra_tree_nodes_Nova_ValidationResultFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
+}
+
+spectra_tree_nodes_Nova_ValidationResult* spectra_tree_nodes_Nova_ValidationResultFunctionMap_functionMapValidationResultFunctionMap_static_Nova_construct(spectra_tree_nodes_Nova_ValidationResultFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, spectra_tree_nodes_Nova_Node* node)
+{
+	return spectra_tree_nodes_Nova_ValidationResult_Nova_construct(0, exceptionData, node);
 }
 
 void spectra_tree_nodes_Nova_ValidationResultFunctionMap_Nova_super(spectra_tree_nodes_Nova_ValidationResultFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)

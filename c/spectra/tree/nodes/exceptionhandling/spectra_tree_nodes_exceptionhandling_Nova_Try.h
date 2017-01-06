@@ -22,6 +22,7 @@ typedef struct spectra_tree_nodes_exceptionhandling_Nova_TryFunctionMap spectra_
 #include <nova/primitive/nova_primitive_Nova_Null.h>
 #include <nova/primitive/number/nova_primitive_number_Nova_Char.h>
 #include <nova/primitive/nova_primitive_Nova_Bool.h>
+#include <nova/datastruct/list/nova_datastruct_list_Nova_List.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_Array.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_ImmutableArray.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_IntArray.h>
@@ -43,6 +44,8 @@ typedef struct spectra_tree_nodes_exceptionhandling_Nova_TryFunctionMap spectra_
 #include <spectra/tree/nodes/spectra_tree_nodes_Nova_Scope.h>
 #include <spectra/util/spectra_util_Nova_Location.h>
 #include <spectra/tree/nodes/exceptionhandling/spectra_tree_nodes_exceptionhandling_Nova_ExceptionHandler.h>
+#include <spectra/tree/nodes/exceptionhandling/spectra_tree_nodes_exceptionhandling_Nova_ExceptionHandler.h>
+#include <spectra/tree/nodes/spectra_tree_nodes_Nova_Node.h>
 #include <spectra/spectra_Nova_InvalidParseException.h>
 #include <spectra/spectra_Nova_SyntaxErrorException.h>
 #include <spectra/error/spectra_error_Nova_UnimplementedOperationException.h>
@@ -60,6 +63,7 @@ typedef struct spectra_tree_nodes_exceptionhandling_Nova_TryFunctionMap spectra_
 #include <spectra/tree/nodes/spectra_tree_nodes_Nova_PlaceholderValue.h>
 #include <spectra/tree/nodes/spectra_tree_nodes_Nova_Program.h>
 #include <spectra/tree/nodes/spectra_tree_nodes_Nova_ValidationResult.h>
+#include <spectra/tree/nodes/annotations/spectra_tree_nodes_annotations_Nova_Annotatable.h>
 #include <nova/NativeObject.h>
 #include <nova/operators/nova_operators_Nova_EqualsOperator.h>
 
@@ -97,6 +101,9 @@ void spectra_tree_nodes_exceptionhandling_Nova_TryFunctionMap_Nova_init_static(n
 spectra_tree_nodes_exceptionhandling_Nova_TryFunctionMap* spectra_tree_nodes_exceptionhandling_Nova_TryFunctionMap_Nova_construct(spectra_tree_nodes_exceptionhandling_Nova_TryFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
 void spectra_tree_nodes_exceptionhandling_Nova_TryFunctionMap_Nova_destroy(spectra_tree_nodes_exceptionhandling_Nova_TryFunctionMap** this, nova_exception_Nova_ExceptionData* exceptionData);
 void spectra_tree_nodes_exceptionhandling_Nova_TryFunctionMap_Nova_this(spectra_tree_nodes_exceptionhandling_Nova_TryFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+spectra_tree_nodes_exceptionhandling_Nova_Try* spectra_tree_nodes_exceptionhandling_Nova_TryFunctionMap_functionMapTryFunctionMap_static_Nova_construct(spectra_tree_nodes_exceptionhandling_Nova_TryFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, spectra_tree_nodes_Nova_Node* parent, spectra_util_Nova_Location* location);
+spectra_tree_nodes_exceptionhandling_Nova_Try* spectra_tree_nodes_exceptionhandling_Nova_TryFunctionMap_functionMap_static_Nova_parse(spectra_tree_nodes_exceptionhandling_Nova_TryFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* input, spectra_tree_nodes_Nova_Node* parent, spectra_util_Nova_Location* location, int require);
+nova_Nova_String* spectra_tree_nodes_exceptionhandling_Nova_TryFunctionMap_functionMap_Nova_writeNova(spectra_tree_nodes_exceptionhandling_Nova_TryFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, spectra_tree_nodes_exceptionhandling_Nova_Try* reference);
 void spectra_tree_nodes_exceptionhandling_Nova_TryFunctionMap_Nova_super(spectra_tree_nodes_exceptionhandling_Nova_TryFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
 
 #endif

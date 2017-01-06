@@ -22,6 +22,7 @@ typedef struct nova_primitive_number_Nova_ShortFunctionMap nova_primitive_number
 #include <nova/primitive/nova_primitive_Nova_Null.h>
 #include <nova/primitive/number/nova_primitive_number_Nova_Char.h>
 #include <nova/primitive/nova_primitive_Nova_Bool.h>
+#include <nova/datastruct/list/nova_datastruct_list_Nova_List.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_Array.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_ImmutableArray.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_IntArray.h>
@@ -41,6 +42,11 @@ typedef struct nova_primitive_number_Nova_ShortFunctionMap nova_primitive_number
 #include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <nova/datastruct/nova_datastruct_Nova_Comparable.h>
 #include <nova/primitive/number/nova_primitive_number_Nova_Integer.h>
+#include <nova/primitive/number/nova_primitive_number_Nova_Number.h>
+#include <nova/datastruct/nova_datastruct_Nova_Comparable.h>
+#include <nova/primitive/number/nova_primitive_number_Nova_Integer.h>
+#include <nova/primitive/nova_primitive_Nova_Primitive.h>
+#include <nova/operators/nova_operators_Nova_MultiplyOperator.h>
 #include <nova/primitive/nova_primitive_Nova_Primitive.h>
 #include <nova/operators/nova_operators_Nova_MultiplyOperator.h>
 #include <nova/NativeObject.h>
@@ -76,6 +82,12 @@ void nova_primitive_number_Nova_ShortFunctionMap_Nova_init_static(nova_exception
 nova_primitive_number_Nova_ShortFunctionMap* nova_primitive_number_Nova_ShortFunctionMap_Nova_construct(nova_primitive_number_Nova_ShortFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
 void nova_primitive_number_Nova_ShortFunctionMap_Nova_destroy(nova_primitive_number_Nova_ShortFunctionMap** this, nova_exception_Nova_ExceptionData* exceptionData);
 void nova_primitive_number_Nova_ShortFunctionMap_Nova_this(nova_primitive_number_Nova_ShortFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+short nova_primitive_number_Nova_ShortFunctionMap_functionMapShortFunctionMap_static_Nova_construct(nova_primitive_number_Nova_ShortFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, short value);
+short nova_primitive_number_Nova_ShortFunctionMap_functionMap0_Nova_compareTo(nova_primitive_number_Nova_ShortFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_primitive_number_Nova_Short* reference, short other);
+short nova_primitive_number_Nova_ShortFunctionMap_functionMap_Nova_multiply(nova_primitive_number_Nova_ShortFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_primitive_number_Nova_Short* reference, short value);
+nova_Nova_String* nova_primitive_number_Nova_ShortFunctionMap_functionMap_Nova_toString(nova_primitive_number_Nova_ShortFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_primitive_number_Nova_Short* reference);
+int nova_primitive_number_Nova_ShortFunctionMap_functionMap_static_Nova_numDigits(nova_primitive_number_Nova_ShortFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, short number);
+nova_Nova_String* nova_primitive_number_Nova_ShortFunctionMap_functionMap_static_Nova_toString(nova_primitive_number_Nova_ShortFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, short value);
 void nova_primitive_number_Nova_ShortFunctionMap_Nova_super(nova_primitive_number_Nova_ShortFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
 
 #endif
