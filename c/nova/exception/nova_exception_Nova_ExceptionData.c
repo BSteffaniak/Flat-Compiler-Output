@@ -144,7 +144,7 @@ void nova_exception_Nova_ExceptionData_Nova_super(nova_exception_Nova_ExceptionD
 }
 
 
-nova_exception_Nova_ExceptionData* nova_exception_Nova_ExceptionDataFunctionMap_functionMap_Nova_getDataByException(nova_exception_Nova_ExceptionDataFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_exception_Nova_ExceptionData* reference, nova_exception_Nova_Exception* exception, int soft);
+nova_exception_Nova_ExceptionData* nova_exception_Nova_ExceptionDataFunctionMap_functionMap_Nova_getDataByException(nova_exception_Nova_ExceptionDataFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_exception_Nova_ExceptionData* reference, nova_exception_Nova_Exception* exception, char soft);
 void nova_exception_Nova_ExceptionDataFunctionMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData)
 {
 	{
@@ -181,15 +181,13 @@ void nova_exception_Nova_ExceptionDataFunctionMap_Nova_this(nova_exception_Nova_
 {
 }
 
-void nova_exception_Nova_ExceptionDataFunctionMap_functionMap_Nova_addCaught(nova_exception_Nova_ExceptionDataFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_exception_Nova_ExceptionData* reference, nova_meta_Nova_Class* type, int soft)
+void nova_exception_Nova_ExceptionDataFunctionMap_functionMap_Nova_addCaught(nova_exception_Nova_ExceptionDataFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_exception_Nova_ExceptionData* reference, nova_meta_Nova_Class* type, char soft)
 {
-	soft = (int)(soft == (intptr_t)nova_null ? 0 : soft);
 	nova_exception_Nova_ExceptionData_Nova_addCaught(reference, exceptionData, type, soft);
 }
 
-nova_exception_Nova_ExceptionData* nova_exception_Nova_ExceptionDataFunctionMap_functionMap_Nova_getDataByException(nova_exception_Nova_ExceptionDataFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_exception_Nova_ExceptionData* reference, nova_exception_Nova_Exception* exception, int soft)
+nova_exception_Nova_ExceptionData* nova_exception_Nova_ExceptionDataFunctionMap_functionMap_Nova_getDataByException(nova_exception_Nova_ExceptionDataFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_exception_Nova_ExceptionData* reference, nova_exception_Nova_Exception* exception, char soft)
 {
-	soft = (int)(soft == (intptr_t)nova_null ? 0 : soft);
 	return nova_exception_Nova_ExceptionData_Nova_getDataByException(reference, exceptionData, exception, soft);
 }
 

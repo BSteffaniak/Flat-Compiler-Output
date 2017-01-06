@@ -331,8 +331,6 @@ void nova_datastruct_Nova_NodeFunctionMap_Nova_this(nova_datastruct_Nova_NodeFun
 
 nova_datastruct_Nova_Node* nova_datastruct_Nova_NodeFunctionMap_functionMapNodeFunctionMap_Nova_construct(nova_datastruct_Nova_NodeFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_Object* data, int numChildren)
 {
-	data = (nova_Nova_Object*)(data == 0 ? (nova_Nova_Object*)(nova_Nova_Object*)nova_null : (nova_Nova_Object*)data);
-	numChildren = (int)(numChildren == (intptr_t)nova_null ? 5 : numChildren);
 	return nova_datastruct_Nova_Node_Nova_construct(0, exceptionData, data, numChildren);
 }
 

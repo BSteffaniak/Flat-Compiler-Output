@@ -198,8 +198,6 @@ void spectra_util_Nova_BoundsFunctionMap_Nova_this(spectra_util_Nova_BoundsFunct
 
 spectra_util_Nova_Bounds* spectra_util_Nova_BoundsFunctionMap_functionMapBoundsFunctionMap_Nova_construct(spectra_util_Nova_BoundsFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, int start, int end)
 {
-	start = (int)(start == (intptr_t)nova_null ? 0 : start);
-	end = (int)(end == (intptr_t)nova_null ? 0 : end);
 	return spectra_util_Nova_Bounds_Nova_construct(0, exceptionData, start, end);
 }
 

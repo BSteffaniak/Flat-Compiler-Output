@@ -484,15 +484,13 @@ spectra_tree_nodes_Nova_Accessible* spectra_tree_nodes_Nova_AccessibleFunctionMa
 	return spectra_tree_nodes_Nova_Accessible_2_Nova_getNextAccessingOfType(reference, exceptionData, types, opposite);
 }
 
-spectra_tree_nodes_Nova_Accessible* spectra_tree_nodes_Nova_AccessibleFunctionMap_functionMap0_Nova_getLastAccessingOfType(spectra_tree_nodes_Nova_AccessibleFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, spectra_tree_nodes_Nova_Accessible* reference, nova_meta_Nova_Class* type, char opposite, int inclusive)
+spectra_tree_nodes_Nova_Accessible* spectra_tree_nodes_Nova_AccessibleFunctionMap_functionMap0_Nova_getLastAccessingOfType(spectra_tree_nodes_Nova_AccessibleFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, spectra_tree_nodes_Nova_Accessible* reference, nova_meta_Nova_Class* type, char opposite, char inclusive)
 {
-	inclusive = (int)(inclusive == (intptr_t)nova_null ? 0 : inclusive);
 	return spectra_tree_nodes_Nova_Accessible_0_Nova_getLastAccessingOfType(reference, exceptionData, type, opposite, inclusive);
 }
 
-spectra_tree_nodes_Nova_Accessible* spectra_tree_nodes_Nova_AccessibleFunctionMap_functionMap1_Nova_getLastAccessingOfType(spectra_tree_nodes_Nova_AccessibleFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, spectra_tree_nodes_Nova_Accessible* reference, nova_datastruct_list_Nova_Array* types, char opposite, int inclusive)
+spectra_tree_nodes_Nova_Accessible* spectra_tree_nodes_Nova_AccessibleFunctionMap_functionMap1_Nova_getLastAccessingOfType(spectra_tree_nodes_Nova_AccessibleFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, spectra_tree_nodes_Nova_Accessible* reference, nova_datastruct_list_Nova_Array* types, char opposite, char inclusive)
 {
-	inclusive = (int)(inclusive == (intptr_t)nova_null ? 0 : inclusive);
 	return spectra_tree_nodes_Nova_Accessible_1_Nova_getLastAccessingOfType(reference, exceptionData, types, opposite, inclusive);
 }
 
@@ -521,29 +519,23 @@ spectra_tree_nodes_Nova_Accessible* spectra_tree_nodes_Nova_AccessibleFunctionMa
 	return spectra_tree_nodes_Nova_Accessible_1_Nova_getNextAccessedOfType(reference, exceptionData, types);
 }
 
-spectra_tree_nodes_Nova_Accessible* spectra_tree_nodes_Nova_AccessibleFunctionMap_functionMap_Nova_getRootReferenceNode(spectra_tree_nodes_Nova_AccessibleFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, spectra_tree_nodes_Nova_Accessible* reference, int inclusive)
+spectra_tree_nodes_Nova_Accessible* spectra_tree_nodes_Nova_AccessibleFunctionMap_functionMap_Nova_getRootReferenceNode(spectra_tree_nodes_Nova_AccessibleFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, spectra_tree_nodes_Nova_Accessible* reference, char inclusive)
 {
-	inclusive = (int)(inclusive == (intptr_t)nova_null ? 0 : inclusive);
 	return spectra_tree_nodes_Nova_Accessible_Nova_getRootReferenceNode(reference, exceptionData, inclusive);
 }
 
-spectra_tree_nodes_Nova_Accessible* spectra_tree_nodes_Nova_AccessibleFunctionMap_functionMap_Nova_getReferenceNode(spectra_tree_nodes_Nova_AccessibleFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, spectra_tree_nodes_Nova_Accessible* reference, int requireAccessingNode, int skipPriority)
+spectra_tree_nodes_Nova_Accessible* spectra_tree_nodes_Nova_AccessibleFunctionMap_functionMap_Nova_getReferenceNode(spectra_tree_nodes_Nova_AccessibleFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, spectra_tree_nodes_Nova_Accessible* reference, char requireAccessingNode, char skipPriority)
 {
-	requireAccessingNode = (int)(requireAccessingNode == (intptr_t)nova_null ? 0 : requireAccessingNode);
-	skipPriority = (int)(skipPriority == (intptr_t)nova_null ? 0 : skipPriority);
 	return spectra_tree_nodes_Nova_Accessible_Nova_getReferenceNode(reference, exceptionData, requireAccessingNode, skipPriority);
 }
 
-spectra_tree_nodes_Nova_Accessible* spectra_tree_nodes_Nova_AccessibleFunctionMap_functionMap0_static_Nova_parse(spectra_tree_nodes_Nova_AccessibleFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* input, spectra_tree_nodes_Nova_Node* parent, int require)
+spectra_tree_nodes_Nova_Accessible* spectra_tree_nodes_Nova_AccessibleFunctionMap_functionMap0_static_Nova_parse(spectra_tree_nodes_Nova_AccessibleFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* input, spectra_tree_nodes_Nova_Node* parent, char require)
 {
-	parent = (spectra_tree_nodes_Nova_Node*)(parent == 0 ? (nova_Nova_Object*)(nova_Nova_Object*)nova_null : (nova_Nova_Object*)parent);
-	require = (int)(require == (intptr_t)nova_null ? 1 : require);
 	return spectra_tree_nodes_Nova_Accessible_0_static_Nova_parse(0, exceptionData, input, parent, require);
 }
 
-spectra_tree_nodes_Nova_Node* spectra_tree_nodes_Nova_AccessibleFunctionMap_functionMap_static_Nova_parseDotAccess(spectra_tree_nodes_Nova_AccessibleFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* input, spectra_tree_nodes_Nova_Node* parent, int require)
+spectra_tree_nodes_Nova_Node* spectra_tree_nodes_Nova_AccessibleFunctionMap_functionMap_static_Nova_parseDotAccess(spectra_tree_nodes_Nova_AccessibleFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* input, spectra_tree_nodes_Nova_Node* parent, char require)
 {
-	require = (int)(require == (intptr_t)nova_null ? 1 : require);
 	return spectra_tree_nodes_Nova_Accessible_static_Nova_parseDotAccess(0, exceptionData, input, parent, require);
 }
 

@@ -12,6 +12,7 @@
 #include <nova/primitive/nova_primitive_Nova_Null.h>
 #include <nova/primitive/number/nova_primitive_number_Nova_Char.h>
 #include <nova/primitive/nova_primitive_Nova_Bool.h>
+#include <nova/datastruct/list/nova_datastruct_list_Nova_List.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_Array.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_ImmutableArray.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_IntArray.h>
@@ -153,6 +154,26 @@ void example_ackermann_Nova_AckermannFunctionMap_Nova_destroy(example_ackermann_
 
 void example_ackermann_Nova_AckermannFunctionMap_Nova_this(example_ackermann_Nova_AckermannFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
+}
+
+example_ackermann_Nova_Ackermann* example_ackermann_Nova_AckermannFunctionMap_functionMapAckermannFunctionMap_Nova_construct(example_ackermann_Nova_AckermannFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+	return example_ackermann_Nova_Ackermann_Nova_construct(0, exceptionData);
+}
+
+void example_ackermann_Nova_AckermannFunctionMap_functionMap_static_Nova_main(example_ackermann_Nova_AckermannFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_list_Nova_Array* args)
+{
+	example_ackermann_Nova_Ackermann_static_Nova_main(0, exceptionData, args);
+}
+
+int example_ackermann_Nova_AckermannFunctionMap_functionMap_static_Nova_run(example_ackermann_Nova_AckermannFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, int m, int n)
+{
+	return example_ackermann_Nova_Ackermann_static_Nova_run(0, exceptionData, m, n);
+}
+
+int example_ackermann_Nova_AckermannFunctionMap_functionMap_static_Nova_run2(example_ackermann_Nova_AckermannFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, int m, int n)
+{
+	return example_ackermann_Nova_Ackermann_static_Nova_run2(0, exceptionData, m, n);
 }
 
 void example_ackermann_Nova_AckermannFunctionMap_Nova_super(example_ackermann_Nova_AckermannFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)

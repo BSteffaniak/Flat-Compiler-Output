@@ -12,6 +12,7 @@
 #include <nova/primitive/nova_primitive_Nova_Null.h>
 #include <nova/primitive/number/nova_primitive_number_Nova_Char.h>
 #include <nova/primitive/nova_primitive_Nova_Bool.h>
+#include <nova/datastruct/list/nova_datastruct_list_Nova_List.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_Array.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_ImmutableArray.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_IntArray.h>
@@ -133,6 +134,9 @@ void example_database_Nova_DatabaseDemo_Nova_super(example_database_Nova_Databas
 {
 }
 
+
+nova_database_Nova_DBConnector* example_database_Nova_DatabaseDemoFunctionMap_functionMap_static_Nova_connect(example_database_Nova_DatabaseDemoFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+void example_database_Nova_DatabaseDemoFunctionMap_functionMap_static_Nova_close(example_database_Nova_DatabaseDemoFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_database_Nova_DBConnector* connection);
 void example_database_Nova_DatabaseDemoFunctionMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData)
 {
 	{
@@ -167,6 +171,26 @@ void example_database_Nova_DatabaseDemoFunctionMap_Nova_destroy(example_database
 
 void example_database_Nova_DatabaseDemoFunctionMap_Nova_this(example_database_Nova_DatabaseDemoFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
+}
+
+example_database_Nova_DatabaseDemo* example_database_Nova_DatabaseDemoFunctionMap_functionMapDatabaseDemoFunctionMap_Nova_construct(example_database_Nova_DatabaseDemoFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+	return example_database_Nova_DatabaseDemo_Nova_construct(0, exceptionData);
+}
+
+void example_database_Nova_DatabaseDemoFunctionMap_functionMap_static_Nova_main(example_database_Nova_DatabaseDemoFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_list_Nova_Array* args)
+{
+	example_database_Nova_DatabaseDemo_static_Nova_main(0, exceptionData, args);
+}
+
+nova_database_Nova_DBConnector* example_database_Nova_DatabaseDemoFunctionMap_functionMap_static_Nova_connect(example_database_Nova_DatabaseDemoFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+	return example_database_Nova_DatabaseDemo_static_Nova_connect(0, exceptionData);
+}
+
+void example_database_Nova_DatabaseDemoFunctionMap_functionMap_static_Nova_close(example_database_Nova_DatabaseDemoFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_database_Nova_DBConnector* connection)
+{
+	example_database_Nova_DatabaseDemo_static_Nova_close(0, exceptionData, connection);
 }
 
 void example_database_Nova_DatabaseDemoFunctionMap_Nova_super(example_database_Nova_DatabaseDemoFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)

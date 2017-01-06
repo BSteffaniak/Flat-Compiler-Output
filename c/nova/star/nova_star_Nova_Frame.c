@@ -152,10 +152,6 @@ void nova_star_Nova_FrameFunctionMap_Nova_this(nova_star_Nova_FrameFunctionMap* 
 
 nova_star_Nova_Frame* nova_star_Nova_FrameFunctionMap_functionMapFrameFunctionMap_Nova_construct(nova_star_Nova_FrameFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, int x, int y, int width, int height)
 {
-	x = (int)(x == (intptr_t)nova_null ? 0 : x);
-	y = (int)(y == (intptr_t)nova_null ? 0 : y);
-	width = (int)(width == (intptr_t)nova_null ? 800 : width);
-	height = (int)(height == (intptr_t)nova_null ? 600 : height);
 	return nova_star_Nova_Frame_Nova_construct(0, exceptionData, x, y, width, height);
 }
 

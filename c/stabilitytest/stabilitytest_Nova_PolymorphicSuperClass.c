@@ -12,6 +12,7 @@
 #include <nova/primitive/nova_primitive_Nova_Null.h>
 #include <nova/primitive/number/nova_primitive_number_Nova_Char.h>
 #include <nova/primitive/nova_primitive_Nova_Bool.h>
+#include <nova/datastruct/list/nova_datastruct_list_Nova_List.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_Array.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_ImmutableArray.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_IntArray.h>
@@ -135,7 +136,32 @@ void stabilitytest_Nova_PolymorphicSuperClassFunctionMap_Nova_this(stabilitytest
 {
 }
 
+stabilitytest_Nova_PolymorphicSuperClass* stabilitytest_Nova_PolymorphicSuperClassFunctionMap_functionMapPolymorphicSuperClassFunctionMap_Nova_construct(stabilitytest_Nova_PolymorphicSuperClassFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+	return stabilitytest_Nova_PolymorphicSuperClass_Nova_construct(0, exceptionData);
+}
+
+stabilitytest_Nova_PolymorphicSubClass* stabilitytest_Nova_PolymorphicSuperClassFunctionMap_functionMap_Nova_giveBirth(stabilitytest_Nova_PolymorphicSuperClassFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, stabilitytest_Nova_PolymorphicSuperClass* reference)
+{
+	return stabilitytest_Nova_PolymorphicSuperClass_Nova_giveBirth(reference, exceptionData);
+}
+
+nova_Nova_String* stabilitytest_Nova_PolymorphicSuperClassFunctionMap_functionMap_Nova_toString(stabilitytest_Nova_PolymorphicSuperClassFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, stabilitytest_Nova_PolymorphicSuperClass* reference)
+{
+	return stabilitytest_Nova_PolymorphicSuperClass_Nova_toString(reference, exceptionData);
+}
+
 void stabilitytest_Nova_PolymorphicSuperClassFunctionMap_Nova_super(stabilitytest_Nova_PolymorphicSuperClassFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
+}
+
+stabilitytest_Nova_PolymorphicSuperClass* stabilitytest_Nova_PolymorphicSuperClassFunctionMap_virtualfunctionMapPolymorphicSuperClass_Nova_construct(stabilitytest_Nova_PolymorphicSuperClassFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+	return this->vtable->stabilitytest_Nova_PolymorphicSuperClassFunctionMap_virtualfunctionMapPolymorphicSuperClass_Nova_construct(this, exceptionData);
+}
+
+nova_Nova_String* stabilitytest_Nova_PolymorphicSuperClassFunctionMap_virtualfunctionMap_Nova_toString(stabilitytest_Nova_PolymorphicSuperClassFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, stabilitytest_Nova_PolymorphicSuperClass* reference)
+{
+	return this->vtable->stabilitytest_Nova_PolymorphicSuperClassFunctionMap_virtualfunctionMap_Nova_toString(this, exceptionData, reference);
 }
 

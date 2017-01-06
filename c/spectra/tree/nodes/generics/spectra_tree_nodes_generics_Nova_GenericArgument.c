@@ -168,8 +168,6 @@ void spectra_tree_nodes_generics_Nova_GenericArgumentFunctionMap_Nova_this(spect
 
 spectra_tree_nodes_generics_Nova_GenericArgument* spectra_tree_nodes_generics_Nova_GenericArgumentFunctionMap_functionMapGenericArgumentFunctionMap_Nova_construct(spectra_tree_nodes_generics_Nova_GenericArgumentFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, spectra_tree_nodes_Nova_Node* parent, spectra_util_Nova_Location* location, nova_Nova_String* type)
 {
-	parent = (spectra_tree_nodes_Nova_Node*)(parent == 0 ? (nova_Nova_Object*)(nova_Nova_Object*)nova_null : (nova_Nova_Object*)parent);
-	location = (spectra_util_Nova_Location*)(location == 0 ? (nova_Nova_Object*)spectra_util_Nova_Location_Nova_INVALID : (nova_Nova_Object*)location);
 	return spectra_tree_nodes_generics_Nova_GenericArgument_Nova_construct(0, exceptionData, parent, location, type);
 }
 

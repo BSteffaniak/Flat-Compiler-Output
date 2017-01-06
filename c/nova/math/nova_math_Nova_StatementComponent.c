@@ -124,7 +124,6 @@ void nova_math_Nova_StatementComponentFunctionMap_Nova_this(nova_math_Nova_State
 
 nova_math_Nova_StatementComponent* nova_math_Nova_StatementComponentFunctionMap_functionMapStatementComponentFunctionMap_Nova_construct(nova_math_Nova_StatementComponentFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_Object* data, nova_math_Nova_StatementComponent* next)
 {
-	next = (nova_math_Nova_StatementComponent*)(next == 0 ? (nova_Nova_Object*)(nova_Nova_Object*)nova_null : (nova_Nova_Object*)next);
 	return nova_math_Nova_StatementComponent_Nova_construct(0, exceptionData, data, next);
 }
 

@@ -12,6 +12,7 @@
 #include <nova/primitive/nova_primitive_Nova_Null.h>
 #include <nova/primitive/number/nova_primitive_number_Nova_Char.h>
 #include <nova/primitive/nova_primitive_Nova_Bool.h>
+#include <nova/datastruct/list/nova_datastruct_list_Nova_List.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_Array.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_ImmutableArray.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_IntArray.h>
@@ -153,6 +154,16 @@ void example_network_Nova_ServerDemoFunctionMap_Nova_destroy(example_network_Nov
 
 void example_network_Nova_ServerDemoFunctionMap_Nova_this(example_network_Nova_ServerDemoFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
+}
+
+example_network_Nova_ServerDemo* example_network_Nova_ServerDemoFunctionMap_functionMapServerDemoFunctionMap_Nova_construct(example_network_Nova_ServerDemoFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+	return example_network_Nova_ServerDemo_Nova_construct(0, exceptionData);
+}
+
+void example_network_Nova_ServerDemoFunctionMap_functionMap_static_Nova_main(example_network_Nova_ServerDemoFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_list_Nova_Array* args)
+{
+	example_network_Nova_ServerDemo_static_Nova_main(0, exceptionData, args);
 }
 
 void example_network_Nova_ServerDemoFunctionMap_Nova_super(example_network_Nova_ServerDemoFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)

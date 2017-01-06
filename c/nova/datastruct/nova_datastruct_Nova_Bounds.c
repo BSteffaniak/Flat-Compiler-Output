@@ -196,8 +196,6 @@ void nova_datastruct_Nova_BoundsFunctionMap_Nova_this(nova_datastruct_Nova_Bound
 
 nova_datastruct_Nova_Bounds* nova_datastruct_Nova_BoundsFunctionMap_functionMapBoundsFunctionMap_Nova_construct(nova_datastruct_Nova_BoundsFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, int start, int end)
 {
-	start = (int)(start == (intptr_t)nova_null ? 0 : start);
-	end = (int)(end == (intptr_t)nova_null ? 0 : end);
 	return nova_datastruct_Nova_Bounds_Nova_construct(0, exceptionData, start, end);
 }
 

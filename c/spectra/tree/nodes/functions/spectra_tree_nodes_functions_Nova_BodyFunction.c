@@ -341,8 +341,6 @@ void spectra_tree_nodes_functions_Nova_BodyFunctionFunctionMap_Nova_this(spectra
 
 spectra_tree_nodes_functions_Nova_BodyFunction* spectra_tree_nodes_functions_Nova_BodyFunctionFunctionMap_functionMapBodyFunctionFunctionMap_Nova_construct(spectra_tree_nodes_functions_Nova_BodyFunctionFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, spectra_tree_nodes_Nova_Node* parent, spectra_util_Nova_Location* location)
 {
-	parent = (spectra_tree_nodes_Nova_Node*)(parent == 0 ? (nova_Nova_Object*)(nova_Nova_Object*)nova_null : (nova_Nova_Object*)parent);
-	location = (spectra_util_Nova_Location*)(location == 0 ? (nova_Nova_Object*)spectra_util_Nova_Location_Nova_INVALID : (nova_Nova_Object*)location);
 	return spectra_tree_nodes_functions_Nova_BodyFunction_Nova_construct(0, exceptionData, parent, location);
 }
 
@@ -351,25 +349,18 @@ void spectra_tree_nodes_functions_Nova_BodyFunctionFunctionMap_functionMap_Nova_
 	spectra_tree_nodes_functions_Nova_BodyFunction_Nova_addChild(reference, exceptionData, child);
 }
 
-spectra_tree_nodes_Nova_Node* spectra_tree_nodes_functions_Nova_BodyFunctionFunctionMap_functionMap_Nova_parseStatement(spectra_tree_nodes_functions_Nova_BodyFunctionFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, spectra_tree_nodes_functions_Nova_BodyFunction* reference, nova_Nova_String* input, spectra_tree_nodes_Nova_Node* parent, spectra_util_Nova_Location* location, int require)
+spectra_tree_nodes_Nova_Node* spectra_tree_nodes_functions_Nova_BodyFunctionFunctionMap_functionMap_Nova_parseStatement(spectra_tree_nodes_functions_Nova_BodyFunctionFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, spectra_tree_nodes_functions_Nova_BodyFunction* reference, nova_Nova_String* input, spectra_tree_nodes_Nova_Node* parent, spectra_util_Nova_Location* location, char require)
 {
-	parent = (spectra_tree_nodes_Nova_Node*)(parent == 0 ? (nova_Nova_Object*)(nova_Nova_Object*)nova_null : (nova_Nova_Object*)parent);
-	location = (spectra_util_Nova_Location*)(location == 0 ? (nova_Nova_Object*)spectra_util_Nova_Location_Nova_INVALID : (nova_Nova_Object*)location);
-	require = (int)(require == (intptr_t)nova_null ? 1 : require);
 	return spectra_tree_nodes_functions_Nova_BodyFunction_Nova_parseStatement(reference, exceptionData, input, parent, location, require);
 }
 
-spectra_tree_nodes_functions_Nova_BodyFunction* spectra_tree_nodes_functions_Nova_BodyFunctionFunctionMap_functionMap_static_Nova_parse(spectra_tree_nodes_functions_Nova_BodyFunctionFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* input, spectra_tree_nodes_Nova_Node* parent, spectra_util_Nova_Location* location, int require)
+spectra_tree_nodes_functions_Nova_BodyFunction* spectra_tree_nodes_functions_Nova_BodyFunctionFunctionMap_functionMap_static_Nova_parse(spectra_tree_nodes_functions_Nova_BodyFunctionFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* input, spectra_tree_nodes_Nova_Node* parent, spectra_util_Nova_Location* location, char require)
 {
-	parent = (spectra_tree_nodes_Nova_Node*)(parent == 0 ? (nova_Nova_Object*)(nova_Nova_Object*)nova_null : (nova_Nova_Object*)parent);
-	location = (spectra_util_Nova_Location*)(location == 0 ? (nova_Nova_Object*)spectra_util_Nova_Location_Nova_INVALID : (nova_Nova_Object*)location);
-	require = (int)(require == (intptr_t)nova_null ? 1 : require);
 	return spectra_tree_nodes_functions_Nova_BodyFunction_static_Nova_parse(0, exceptionData, input, parent, location, require);
 }
 
 int spectra_tree_nodes_functions_Nova_BodyFunctionFunctionMap_functionMap_static_Nova_findInlineBodyIndex(spectra_tree_nodes_functions_Nova_BodyFunctionFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* input, int defaultReturnValue)
 {
-	defaultReturnValue = (int)(defaultReturnValue == (intptr_t)nova_null ? -1 : defaultReturnValue);
 	return spectra_tree_nodes_functions_Nova_BodyFunction_static_Nova_findInlineBodyIndex(0, exceptionData, input, defaultReturnValue);
 }
 

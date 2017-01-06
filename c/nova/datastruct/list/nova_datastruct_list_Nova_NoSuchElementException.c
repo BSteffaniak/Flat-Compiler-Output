@@ -117,7 +117,6 @@ void nova_datastruct_list_Nova_NoSuchElementExceptionFunctionMap_Nova_this(nova_
 
 nova_datastruct_list_Nova_NoSuchElementException* nova_datastruct_list_Nova_NoSuchElementExceptionFunctionMap_functionMapNoSuchElementExceptionFunctionMap_Nova_construct(nova_datastruct_list_Nova_NoSuchElementExceptionFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* message)
 {
-	message = (nova_Nova_String*)(message == 0 ? (nova_Nova_Object*)nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("No such element")) : (nova_Nova_Object*)message);
 	return nova_datastruct_list_Nova_NoSuchElementException_Nova_construct(0, exceptionData, message);
 }
 

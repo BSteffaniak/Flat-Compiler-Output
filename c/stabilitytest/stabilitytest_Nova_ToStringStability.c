@@ -12,6 +12,7 @@
 #include <nova/primitive/nova_primitive_Nova_Null.h>
 #include <nova/primitive/number/nova_primitive_number_Nova_Char.h>
 #include <nova/primitive/nova_primitive_Nova_Bool.h>
+#include <nova/datastruct/list/nova_datastruct_list_Nova_List.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_Array.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_ImmutableArray.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_IntArray.h>
@@ -30,6 +31,7 @@
 #include <nova/meta/nova_meta_Nova_FunctionMap.h>
 #include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <stabilitytest/stabilitytest_Nova_StabilityTest.h>
+#include <stabilitytest/stabilitytest_Nova_StabilityTestCase.h>
 #include <stabilitytest/stabilitytest_Nova_StabilityTestCase.h>
 #include <nova/NativeObject.h>
 #include <nova/operators/nova_operators_Nova_EqualsOperator.h>
@@ -103,6 +105,8 @@ void stabilitytest_Nova_ToStringStability_Nova_super(stabilitytest_Nova_ToString
 {
 }
 
+
+void stabilitytest_Nova_ToStringStabilityFunctionMap_functionMap_Nova_checkToString(stabilitytest_Nova_ToStringStabilityFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, stabilitytest_Nova_ToStringStability* reference, nova_Nova_String* type, nova_primitive_number_Nova_Number* number, nova_Nova_String* expected);
 void stabilitytest_Nova_ToStringStabilityFunctionMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData)
 {
 	{
@@ -115,6 +119,7 @@ stabilitytest_Nova_ToStringStabilityFunctionMap* stabilitytest_Nova_ToStringStab
 	this->vtable = &stabilitytest_ToStringStability_ToStringStabilityFunctionMap_Extension_VTable_val;
 	nova_Nova_Object_Nova_super((nova_Nova_Object*)this, exceptionData);
 	nova_meta_Nova_FunctionMap_Nova_super((nova_meta_Nova_FunctionMap*)this, exceptionData);
+	stabilitytest_Nova_StabilityTestCaseFunctionMap_Nova_super((stabilitytest_Nova_StabilityTestCaseFunctionMap*)this, exceptionData);
 	stabilitytest_Nova_ToStringStabilityFunctionMap_Nova_super(this, exceptionData);
 	
 	{
@@ -137,6 +142,21 @@ void stabilitytest_Nova_ToStringStabilityFunctionMap_Nova_destroy(stabilitytest_
 
 void stabilitytest_Nova_ToStringStabilityFunctionMap_Nova_this(stabilitytest_Nova_ToStringStabilityFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
+}
+
+stabilitytest_Nova_ToStringStability* stabilitytest_Nova_ToStringStabilityFunctionMap_functionMapToStringStabilityFunctionMap_Nova_construct(stabilitytest_Nova_ToStringStabilityFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, stabilitytest_Nova_StabilityTest* program)
+{
+	return stabilitytest_Nova_ToStringStability_Nova_construct(0, exceptionData, program);
+}
+
+void stabilitytest_Nova_ToStringStabilityFunctionMap_functionMap_Nova_test(stabilitytest_Nova_ToStringStabilityFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, stabilitytest_Nova_ToStringStability* reference)
+{
+	stabilitytest_Nova_ToStringStability_Nova_test(reference, exceptionData);
+}
+
+void stabilitytest_Nova_ToStringStabilityFunctionMap_functionMap_Nova_checkToString(stabilitytest_Nova_ToStringStabilityFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, stabilitytest_Nova_ToStringStability* reference, nova_Nova_String* type, nova_primitive_number_Nova_Number* number, nova_Nova_String* expected)
+{
+	stabilitytest_Nova_ToStringStability_Nova_checkToString(reference, exceptionData, type, number, expected);
 }
 
 void stabilitytest_Nova_ToStringStabilityFunctionMap_Nova_super(stabilitytest_Nova_ToStringStabilityFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)

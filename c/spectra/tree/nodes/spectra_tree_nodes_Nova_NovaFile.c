@@ -461,8 +461,6 @@ void spectra_tree_nodes_Nova_NovaFileFunctionMap_Nova_this(spectra_tree_nodes_No
 
 spectra_tree_nodes_Nova_NovaFile* spectra_tree_nodes_Nova_NovaFileFunctionMap_functionMapNovaFileFunctionMap_Nova_construct(spectra_tree_nodes_Nova_NovaFileFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_io_Nova_File* file, spectra_tree_nodes_Nova_Node* parent, spectra_util_Nova_Location* location)
 {
-	parent = (spectra_tree_nodes_Nova_Node*)(parent == 0 ? (nova_Nova_Object*)(nova_Nova_Object*)nova_null : (nova_Nova_Object*)parent);
-	location = (spectra_util_Nova_Location*)(location == 0 ? (nova_Nova_Object*)spectra_util_Nova_Location_Nova_INVALID : (nova_Nova_Object*)location);
 	return spectra_tree_nodes_Nova_NovaFile_Nova_construct(0, exceptionData, file, parent, location);
 }
 
@@ -476,11 +474,8 @@ void spectra_tree_nodes_Nova_NovaFileFunctionMap_functionMap_Nova_addClass(spect
 	spectra_tree_nodes_Nova_NovaFile_Nova_addClass(reference, exceptionData, child);
 }
 
-spectra_tree_nodes_Nova_Node* spectra_tree_nodes_Nova_NovaFileFunctionMap_functionMap_Nova_parseStatement(spectra_tree_nodes_Nova_NovaFileFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, spectra_tree_nodes_Nova_NovaFile* reference, nova_Nova_String* input, spectra_tree_nodes_Nova_Node* parent, spectra_util_Nova_Location* location, int require)
+spectra_tree_nodes_Nova_Node* spectra_tree_nodes_Nova_NovaFileFunctionMap_functionMap_Nova_parseStatement(spectra_tree_nodes_Nova_NovaFileFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, spectra_tree_nodes_Nova_NovaFile* reference, nova_Nova_String* input, spectra_tree_nodes_Nova_Node* parent, spectra_util_Nova_Location* location, char require)
 {
-	parent = (spectra_tree_nodes_Nova_Node*)(parent == 0 ? (nova_Nova_Object*)(nova_Nova_Object*)nova_null : (nova_Nova_Object*)parent);
-	location = (spectra_util_Nova_Location*)(location == 0 ? (nova_Nova_Object*)spectra_util_Nova_Location_Nova_INVALID : (nova_Nova_Object*)location);
-	require = (int)(require == (intptr_t)nova_null ? 1 : require);
 	return spectra_tree_nodes_Nova_NovaFile_Nova_parseStatement(reference, exceptionData, input, parent, location, require);
 }
 
@@ -489,9 +484,8 @@ spectra_tree_nodes_Nova_Node* spectra_tree_nodes_Nova_NovaFileFunctionMap_functi
 	return spectra_tree_nodes_Nova_NovaFile_Nova_generateTemporaryScopeNode(reference, exceptionData);
 }
 
-spectra_tree_nodes_Nova_ClassDeclaration* spectra_tree_nodes_Nova_NovaFileFunctionMap_functionMap_Nova_getImportedClass(spectra_tree_nodes_Nova_NovaFileFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, spectra_tree_nodes_Nova_NovaFile* reference, nova_Nova_String* name, int includeSelf)
+spectra_tree_nodes_Nova_ClassDeclaration* spectra_tree_nodes_Nova_NovaFileFunctionMap_functionMap_Nova_getImportedClass(spectra_tree_nodes_Nova_NovaFileFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, spectra_tree_nodes_Nova_NovaFile* reference, nova_Nova_String* name, char includeSelf)
 {
-	includeSelf = (int)(includeSelf == (intptr_t)nova_null ? 1 : includeSelf);
 	return spectra_tree_nodes_Nova_NovaFile_Nova_getImportedClass(reference, exceptionData, name, includeSelf);
 }
 
@@ -505,16 +499,13 @@ void spectra_tree_nodes_Nova_NovaFileFunctionMap_functionMap_Nova_addAutoImports
 	spectra_tree_nodes_Nova_NovaFile_Nova_addAutoImports(reference, exceptionData);
 }
 
-spectra_tree_nodes_Nova_Import* spectra_tree_nodes_Nova_NovaFileFunctionMap_functionMap_Nova_addImport(spectra_tree_nodes_Nova_NovaFileFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, spectra_tree_nodes_Nova_NovaFile* reference, nova_Nova_String* location, int userAdded)
+spectra_tree_nodes_Nova_Import* spectra_tree_nodes_Nova_NovaFileFunctionMap_functionMap_Nova_addImport(spectra_tree_nodes_Nova_NovaFileFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, spectra_tree_nodes_Nova_NovaFile* reference, nova_Nova_String* location, char userAdded)
 {
-	userAdded = (int)(userAdded == (intptr_t)nova_null ? 1 : userAdded);
 	return spectra_tree_nodes_Nova_NovaFile_Nova_addImport(reference, exceptionData, location, userAdded);
 }
 
-char spectra_tree_nodes_Nova_NovaFileFunctionMap_functionMap_Nova_containsImport(spectra_tree_nodes_Nova_NovaFileFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, spectra_tree_nodes_Nova_NovaFile* reference, nova_Nova_String* location, int absoluteLocation, int aliased)
+char spectra_tree_nodes_Nova_NovaFileFunctionMap_functionMap_Nova_containsImport(spectra_tree_nodes_Nova_NovaFileFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, spectra_tree_nodes_Nova_NovaFile* reference, nova_Nova_String* location, char absoluteLocation, char aliased)
 {
-	absoluteLocation = (int)(absoluteLocation == (intptr_t)nova_null ? 1 : absoluteLocation);
-	aliased = (int)(aliased == (intptr_t)nova_null ? 0 : aliased);
 	return spectra_tree_nodes_Nova_NovaFile_Nova_containsImport(reference, exceptionData, location, absoluteLocation, aliased);
 }
 

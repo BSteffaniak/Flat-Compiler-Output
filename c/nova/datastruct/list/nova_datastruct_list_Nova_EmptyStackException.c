@@ -121,7 +121,6 @@ void nova_datastruct_list_Nova_EmptyStackExceptionFunctionMap_Nova_this(nova_dat
 
 nova_datastruct_list_Nova_EmptyStackException* nova_datastruct_list_Nova_EmptyStackExceptionFunctionMap_functionMapEmptyStackExceptionFunctionMap_Nova_construct(nova_datastruct_list_Nova_EmptyStackExceptionFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* message)
 {
-	message = (nova_Nova_String*)(message == 0 ? (nova_Nova_Object*)nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("")) : (nova_Nova_Object*)message);
 	return nova_datastruct_list_Nova_EmptyStackException_Nova_construct(0, exceptionData, message);
 }
 

@@ -22,6 +22,7 @@ typedef struct example_Nova_NonWholeDivisionExceptionFunctionMap example_Nova_No
 #include <nova/primitive/nova_primitive_Nova_Null.h>
 #include <nova/primitive/number/nova_primitive_number_Nova_Char.h>
 #include <nova/primitive/nova_primitive_Nova_Bool.h>
+#include <nova/datastruct/list/nova_datastruct_list_Nova_List.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_Array.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_ImmutableArray.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_IntArray.h>
@@ -39,6 +40,7 @@ typedef struct example_Nova_NonWholeDivisionExceptionFunctionMap example_Nova_No
 #include <nova/meta/nova_meta_Nova_Class.h>
 #include <nova/meta/nova_meta_Nova_FunctionMap.h>
 #include <nova/regex/nova_regex_Nova_Pattern.h>
+#include <nova/exception/nova_exception_Nova_Exception.h>
 #include <nova/NativeObject.h>
 #include <nova/operators/nova_operators_Nova_EqualsOperator.h>
 
@@ -67,6 +69,7 @@ void example_Nova_NonWholeDivisionExceptionFunctionMap_Nova_init_static(nova_exc
 example_Nova_NonWholeDivisionExceptionFunctionMap* example_Nova_NonWholeDivisionExceptionFunctionMap_Nova_construct(example_Nova_NonWholeDivisionExceptionFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
 void example_Nova_NonWholeDivisionExceptionFunctionMap_Nova_destroy(example_Nova_NonWholeDivisionExceptionFunctionMap** this, nova_exception_Nova_ExceptionData* exceptionData);
 void example_Nova_NonWholeDivisionExceptionFunctionMap_Nova_this(example_Nova_NonWholeDivisionExceptionFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+example_Nova_NonWholeDivisionException* example_Nova_NonWholeDivisionExceptionFunctionMap_functionMapNonWholeDivisionExceptionFunctionMap_Nova_construct(example_Nova_NonWholeDivisionExceptionFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
 void example_Nova_NonWholeDivisionExceptionFunctionMap_Nova_super(example_Nova_NonWholeDivisionExceptionFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
 
 #endif

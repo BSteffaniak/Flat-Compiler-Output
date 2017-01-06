@@ -22,6 +22,7 @@ typedef struct stabilitytest_Nova_NodeFunctionMap stabilitytest_Nova_NodeFunctio
 #include <nova/primitive/nova_primitive_Nova_Null.h>
 #include <nova/primitive/number/nova_primitive_number_Nova_Char.h>
 #include <nova/primitive/nova_primitive_Nova_Bool.h>
+#include <nova/datastruct/list/nova_datastruct_list_Nova_List.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_Array.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_ImmutableArray.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_IntArray.h>
@@ -68,6 +69,7 @@ void stabilitytest_Nova_NodeFunctionMap_Nova_init_static(nova_exception_Nova_Exc
 stabilitytest_Nova_NodeFunctionMap* stabilitytest_Nova_NodeFunctionMap_Nova_construct(stabilitytest_Nova_NodeFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
 void stabilitytest_Nova_NodeFunctionMap_Nova_destroy(stabilitytest_Nova_NodeFunctionMap** this, nova_exception_Nova_ExceptionData* exceptionData);
 void stabilitytest_Nova_NodeFunctionMap_Nova_this(stabilitytest_Nova_NodeFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+stabilitytest_Nova_Node* stabilitytest_Nova_NodeFunctionMap_functionMapNodeFunctionMap_Nova_construct(stabilitytest_Nova_NodeFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
 void stabilitytest_Nova_NodeFunctionMap_Nova_super(stabilitytest_Nova_NodeFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
 
 #endif

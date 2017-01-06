@@ -212,7 +212,6 @@ void nova_datastruct_Nova_BinaryNodeFunctionMap_Nova_this(nova_datastruct_Nova_B
 
 nova_datastruct_Nova_BinaryNode* nova_datastruct_Nova_BinaryNodeFunctionMap_functionMapBinaryNodeFunctionMap_Nova_construct(nova_datastruct_Nova_BinaryNodeFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_Object* data)
 {
-	data = (nova_Nova_Object*)(data == 0 ? (nova_Nova_Object*)(nova_Nova_Object*)nova_null : (nova_Nova_Object*)data);
 	return (nova_datastruct_Nova_BinaryNode*)nova_datastruct_Nova_BinaryNode_0_Nova_construct(0, exceptionData, (nova_datastruct_Nova_Comparable*)(data));
 }
 

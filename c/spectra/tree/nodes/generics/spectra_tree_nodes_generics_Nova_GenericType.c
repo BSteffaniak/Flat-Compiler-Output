@@ -179,7 +179,6 @@ void spectra_tree_nodes_generics_Nova_GenericTypeFunctionMap_Nova_this(spectra_t
 
 spectra_tree_nodes_generics_Nova_GenericType* spectra_tree_nodes_generics_Nova_GenericTypeFunctionMap_functionMapGenericTypeFunctionMap_Nova_construct(spectra_tree_nodes_generics_Nova_GenericTypeFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* name)
 {
-	name = (nova_Nova_String*)(name == 0 ? (nova_Nova_Object*)(nova_Nova_Object*)nova_null : (nova_Nova_Object*)name);
 	return spectra_tree_nodes_generics_Nova_GenericType_0_Nova_construct(0, exceptionData, name);
 }
 

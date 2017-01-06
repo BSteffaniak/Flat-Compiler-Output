@@ -121,7 +121,6 @@ void nova_exception_Nova_ExceptionFunctionMap_Nova_this(nova_exception_Nova_Exce
 
 nova_exception_Nova_Exception* nova_exception_Nova_ExceptionFunctionMap_functionMapExceptionFunctionMap_Nova_construct(nova_exception_Nova_ExceptionFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* message)
 {
-	message = (nova_Nova_String*)(message == 0 ? (nova_Nova_Object*)nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("")) : (nova_Nova_Object*)message);
 	return nova_exception_Nova_Exception_Nova_construct(0, exceptionData, message);
 }
 

@@ -22,6 +22,7 @@ typedef struct stabilitytest_Nova_ThreadImplementationFunctionMap stabilitytest_
 #include <nova/primitive/nova_primitive_Nova_Null.h>
 #include <nova/primitive/number/nova_primitive_number_Nova_Char.h>
 #include <nova/primitive/nova_primitive_Nova_Bool.h>
+#include <nova/datastruct/list/nova_datastruct_list_Nova_List.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_Array.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_ImmutableArray.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_IntArray.h>
@@ -39,6 +40,7 @@ typedef struct stabilitytest_Nova_ThreadImplementationFunctionMap stabilitytest_
 #include <nova/meta/nova_meta_Nova_Class.h>
 #include <nova/meta/nova_meta_Nova_FunctionMap.h>
 #include <nova/regex/nova_regex_Nova_Pattern.h>
+#include <nova/thread/nova_thread_Nova_Thread.h>
 #include <nova/thread/NativeThread.h>
 #include <nova/NativeObject.h>
 #include <nova/operators/nova_operators_Nova_EqualsOperator.h>
@@ -70,6 +72,8 @@ void stabilitytest_Nova_ThreadImplementationFunctionMap_Nova_init_static(nova_ex
 stabilitytest_Nova_ThreadImplementationFunctionMap* stabilitytest_Nova_ThreadImplementationFunctionMap_Nova_construct(stabilitytest_Nova_ThreadImplementationFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
 void stabilitytest_Nova_ThreadImplementationFunctionMap_Nova_destroy(stabilitytest_Nova_ThreadImplementationFunctionMap** this, nova_exception_Nova_ExceptionData* exceptionData);
 void stabilitytest_Nova_ThreadImplementationFunctionMap_Nova_this(stabilitytest_Nova_ThreadImplementationFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+stabilitytest_Nova_ThreadImplementation* stabilitytest_Nova_ThreadImplementationFunctionMap_functionMapThreadImplementationFunctionMap_Nova_construct(stabilitytest_Nova_ThreadImplementationFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, int times, int millis);
+void stabilitytest_Nova_ThreadImplementationFunctionMap_functionMap_Nova_run(stabilitytest_Nova_ThreadImplementationFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, stabilitytest_Nova_ThreadImplementation* reference);
 void stabilitytest_Nova_ThreadImplementationFunctionMap_Nova_super(stabilitytest_Nova_ThreadImplementationFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
 
 #endif

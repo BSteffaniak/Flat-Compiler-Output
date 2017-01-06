@@ -12,6 +12,7 @@
 #include <nova/primitive/nova_primitive_Nova_Null.h>
 #include <nova/primitive/number/nova_primitive_number_Nova_Char.h>
 #include <nova/primitive/nova_primitive_Nova_Bool.h>
+#include <nova/datastruct/list/nova_datastruct_list_Nova_List.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_Array.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_ImmutableArray.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_IntArray.h>
@@ -39,6 +40,7 @@ typedef int (*example_Nova_ClosureDemo_closure1_Nova_closure)(void*, nova_except
 typedef int (*example_Nova_ClosureDemo_closure2_Nova_closure)(void*, nova_exception_Nova_ExceptionData*, int, int, void*);
 typedef int (*example_Nova_ClosureDemo_closure3_Nova_closure)(void*, nova_exception_Nova_ExceptionData*, int, int, void*);
 typedef int (*example_Nova_ClosureDemo_closure4_Nova_closure)(void*, nova_exception_Nova_ExceptionData*, int, int, void*);
+typedef int (*example_Nova_ClosureDemoFunctionMap_closure5_Nova_closure)(void*, nova_exception_Nova_ExceptionData*, int, int, void*);
 
 
 void example_Nova_ClosureDemo_Nova_callClosure(example_Nova_ClosureDemo* this, nova_exception_Nova_ExceptionData* exceptionData, example_Nova_ClosureDemo_closure4_Nova_closure example_Nova_ClosureDemo_Nova_closure, void* example_Nova_ClosureDemo_ref_Nova_closure, void* closure_context);
@@ -122,6 +124,10 @@ void example_Nova_ClosureDemo_Nova_super(example_Nova_ClosureDemo* this, nova_ex
 {
 }
 
+
+void example_Nova_ClosureDemoFunctionMap_functionMap_Nova_callClosure(example_Nova_ClosureDemoFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, example_Nova_ClosureDemo* reference, example_Nova_ClosureDemoFunctionMap_closure5_Nova_closure example_Nova_ClosureDemoFunctionMap_Nova_closure, void* example_Nova_ClosureDemoFunctionMap_ref_Nova_closure, void* closure_context);
+int example_Nova_ClosureDemoFunctionMap_functionMap_static_Nova_multiply(example_Nova_ClosureDemoFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, int value1, int value2);
+int example_Nova_ClosureDemoFunctionMap_functionMap_static_Nova_pow(example_Nova_ClosureDemoFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, int base, int pow);
 void example_Nova_ClosureDemoFunctionMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData)
 {
 	{
@@ -156,6 +162,31 @@ void example_Nova_ClosureDemoFunctionMap_Nova_destroy(example_Nova_ClosureDemoFu
 
 void example_Nova_ClosureDemoFunctionMap_Nova_this(example_Nova_ClosureDemoFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
+}
+
+example_Nova_ClosureDemo* example_Nova_ClosureDemoFunctionMap_functionMapClosureDemoFunctionMap_Nova_construct(example_Nova_ClosureDemoFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+	return example_Nova_ClosureDemo_Nova_construct(0, exceptionData);
+}
+
+void example_Nova_ClosureDemoFunctionMap_functionMap_static_Nova_main(example_Nova_ClosureDemoFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_list_Nova_Array* args)
+{
+	example_Nova_ClosureDemo_static_Nova_main(0, exceptionData, args);
+}
+
+void example_Nova_ClosureDemoFunctionMap_functionMap_Nova_callClosure(example_Nova_ClosureDemoFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, example_Nova_ClosureDemo* reference, example_Nova_ClosureDemoFunctionMap_closure5_Nova_closure example_Nova_ClosureDemoFunctionMap_Nova_closure, void* example_Nova_ClosureDemoFunctionMap_ref_Nova_closure, void* closure_context)
+{
+	example_Nova_ClosureDemo_Nova_callClosure(reference, exceptionData, (example_Nova_ClosureDemo_closure4_Nova_closure)example_Nova_ClosureDemoFunctionMap_Nova_closure, example_Nova_ClosureDemoFunctionMap_ref_Nova_closure, closure_context);
+}
+
+int example_Nova_ClosureDemoFunctionMap_functionMap_static_Nova_multiply(example_Nova_ClosureDemoFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, int value1, int value2)
+{
+	return example_Nova_ClosureDemo_static_Nova_multiply(0, exceptionData, value1, value2);
+}
+
+int example_Nova_ClosureDemoFunctionMap_functionMap_static_Nova_pow(example_Nova_ClosureDemoFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, int base, int pow)
+{
+	return example_Nova_ClosureDemo_static_Nova_pow(0, exceptionData, base, pow);
 }
 
 void example_Nova_ClosureDemoFunctionMap_Nova_super(example_Nova_ClosureDemoFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)

@@ -393,7 +393,6 @@ int nova_math_logic_Nova_WFFFunctionMap_functionMap0_static_Nova_nextWhitespaceI
 
 int nova_math_logic_Nova_WFFFunctionMap_functionMap1_static_Nova_nextWhitespaceIndex(nova_math_logic_Nova_WFFFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* wff, int index, int direction, char opposite, int defaultReturnValue)
 {
-	defaultReturnValue = (int)(defaultReturnValue == (intptr_t)nova_null ? -1 : defaultReturnValue);
 	return nova_math_logic_Nova_WFF_1_static_Nova_nextWhitespaceIndex(0, exceptionData, wff, index, direction, opposite, defaultReturnValue);
 }
 
@@ -404,7 +403,6 @@ char nova_math_logic_Nova_WFFFunctionMap_functionMap_static_Nova_containsChar(no
 
 int nova_math_logic_Nova_WFFFunctionMap_functionMap_static_Nova_findEndingMatch(nova_math_logic_Nova_WFFFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* wff, char start, char end, int index, int direction, int defaultReturnValue)
 {
-	defaultReturnValue = (int)(defaultReturnValue == (intptr_t)nova_null ? -1 : defaultReturnValue);
 	return nova_math_logic_Nova_WFF_static_Nova_findEndingMatch(0, exceptionData, wff, start, end, index, direction, defaultReturnValue);
 }
 

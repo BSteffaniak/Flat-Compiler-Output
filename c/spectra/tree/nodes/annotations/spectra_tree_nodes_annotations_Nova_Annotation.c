@@ -267,16 +267,11 @@ void spectra_tree_nodes_annotations_Nova_AnnotationFunctionMap_Nova_this(spectra
 
 spectra_tree_nodes_annotations_Nova_Annotation* spectra_tree_nodes_annotations_Nova_AnnotationFunctionMap_functionMapAnnotationFunctionMap_Nova_construct(spectra_tree_nodes_annotations_Nova_AnnotationFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, spectra_tree_nodes_Nova_Node* parent, spectra_util_Nova_Location* location)
 {
-	parent = (spectra_tree_nodes_Nova_Node*)(parent == 0 ? (nova_Nova_Object*)(nova_Nova_Object*)nova_null : (nova_Nova_Object*)parent);
-	location = (spectra_util_Nova_Location*)(location == 0 ? (nova_Nova_Object*)spectra_util_Nova_Location_Nova_INVALID : (nova_Nova_Object*)location);
 	return spectra_tree_nodes_annotations_Nova_Annotation_Nova_construct(0, exceptionData, parent, location);
 }
 
-spectra_tree_nodes_annotations_Nova_Annotation* spectra_tree_nodes_annotations_Nova_AnnotationFunctionMap_functionMap_static_Nova_parse(spectra_tree_nodes_annotations_Nova_AnnotationFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* input, spectra_tree_nodes_Nova_Node* parent, spectra_util_Nova_Location* location, int require)
+spectra_tree_nodes_annotations_Nova_Annotation* spectra_tree_nodes_annotations_Nova_AnnotationFunctionMap_functionMap_static_Nova_parse(spectra_tree_nodes_annotations_Nova_AnnotationFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* input, spectra_tree_nodes_Nova_Node* parent, spectra_util_Nova_Location* location, char require)
 {
-	parent = (spectra_tree_nodes_Nova_Node*)(parent == 0 ? (nova_Nova_Object*)(nova_Nova_Object*)nova_null : (nova_Nova_Object*)parent);
-	location = (spectra_util_Nova_Location*)(location == 0 ? (nova_Nova_Object*)spectra_util_Nova_Location_Nova_INVALID : (nova_Nova_Object*)location);
-	require = (int)(require == (intptr_t)nova_null ? 1 : require);
 	return spectra_tree_nodes_annotations_Nova_Annotation_static_Nova_parse(0, exceptionData, input, parent, location, require);
 }
 
@@ -285,9 +280,8 @@ nova_Nova_String* spectra_tree_nodes_annotations_Nova_AnnotationFunctionMap_func
 	return spectra_tree_nodes_annotations_Nova_Annotation_static_Nova_getRemainingStatement(0, exceptionData, input);
 }
 
-char spectra_tree_nodes_annotations_Nova_AnnotationFunctionMap_functionMap_Nova_onApplied(spectra_tree_nodes_annotations_Nova_AnnotationFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, spectra_tree_nodes_annotations_Nova_Annotation* reference, spectra_tree_nodes_Nova_Node* appliedTo, int throwError)
+char spectra_tree_nodes_annotations_Nova_AnnotationFunctionMap_functionMap_Nova_onApplied(spectra_tree_nodes_annotations_Nova_AnnotationFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, spectra_tree_nodes_annotations_Nova_Annotation* reference, spectra_tree_nodes_Nova_Node* appliedTo, char throwError)
 {
-	throwError = (int)(throwError == (intptr_t)nova_null ? 1 : throwError);
 	return spectra_tree_nodes_annotations_Nova_Annotation_Nova_onApplied(reference, exceptionData, appliedTo, throwError);
 }
 

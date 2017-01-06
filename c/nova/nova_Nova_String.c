@@ -760,52 +760,36 @@ char nova_Nova_StringFunctionMap_functionMap_Nova_matches(nova_Nova_StringFuncti
 
 int nova_Nova_StringFunctionMap_functionMap0_Nova_indexOf(nova_Nova_StringFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* reference, nova_regex_Nova_Pattern* search, int start, int direction, int defaultReturnValue)
 {
-	start = (int)(start == (intptr_t)nova_null ? 0 : start);
-	direction = (int)(direction == (intptr_t)nova_null ? 1 : direction);
-	defaultReturnValue = (int)(defaultReturnValue == (intptr_t)nova_null ? -1 : defaultReturnValue);
 	return nova_Nova_String_0_Nova_indexOf(reference, exceptionData, search, start, direction, defaultReturnValue);
 }
 
 int nova_Nova_StringFunctionMap_functionMap1_Nova_indexOf(nova_Nova_StringFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* reference, char search, int start, int direction, int defaultReturnValue)
 {
-	start = (int)(start == (intptr_t)nova_null ? 0 : start);
-	direction = (int)(direction == (intptr_t)nova_null ? 1 : direction);
-	defaultReturnValue = (int)(defaultReturnValue == (intptr_t)nova_null ? -1 : defaultReturnValue);
 	return nova_Nova_String_1_Nova_indexOf(reference, exceptionData, search, start, direction, defaultReturnValue);
 }
 
 int nova_Nova_StringFunctionMap_functionMap2_Nova_indexOf(nova_Nova_StringFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* reference, nova_Nova_String* search, int start, int direction, int defaultReturnValue)
 {
-	start = (int)(start == (intptr_t)nova_null ? 0 : start);
-	direction = (int)(direction == (intptr_t)nova_null ? 1 : direction);
-	defaultReturnValue = (int)(defaultReturnValue == (intptr_t)nova_null ? -1 : defaultReturnValue);
 	return nova_Nova_String_2_Nova_indexOf(reference, exceptionData, search, start, direction, defaultReturnValue);
 }
 
 int nova_Nova_StringFunctionMap_functionMap0_Nova_lastIndexOf(nova_Nova_StringFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* reference, char search, int start, int defaultReturnValue)
 {
-	start = (int)(start == (intptr_t)nova_null ? reference->nova_Nova_String_Nova_count - 1 : start);
-	defaultReturnValue = (int)(defaultReturnValue == (intptr_t)nova_null ? -1 : defaultReturnValue);
 	return nova_Nova_String_0_Nova_lastIndexOf(reference, exceptionData, search, start, defaultReturnValue);
 }
 
 int nova_Nova_StringFunctionMap_functionMap1_Nova_lastIndexOf(nova_Nova_StringFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* reference, nova_Nova_String* search, int start, int defaultReturnValue)
 {
-	start = (int)(start == (intptr_t)nova_null ? reference->nova_Nova_String_Nova_count - 1 : start);
-	defaultReturnValue = (int)(defaultReturnValue == (intptr_t)nova_null ? -1 : defaultReturnValue);
 	return nova_Nova_String_1_Nova_lastIndexOf(reference, exceptionData, search, start, defaultReturnValue);
 }
 
-char nova_Nova_StringFunctionMap_functionMap_Nova_validateSubstringBounds(nova_Nova_StringFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* reference, int start, int end, int throwException)
+char nova_Nova_StringFunctionMap_functionMap_Nova_validateSubstringBounds(nova_Nova_StringFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* reference, int start, int end, char throwException)
 {
-	throwException = (int)(throwException == (intptr_t)nova_null ? 0 : throwException);
 	return nova_Nova_String_Nova_validateSubstringBounds(reference, exceptionData, start, end, throwException);
 }
 
 nova_Nova_String* nova_Nova_StringFunctionMap_functionMap_Nova_substring(nova_Nova_StringFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* reference, int start, int end)
 {
-	start = (int)(start == (intptr_t)nova_null ? 0 : start);
-	end = (int)(end == (intptr_t)nova_null ? (nova_Nova_Object*)reference->nova_Nova_String_Nova_count : (nova_Nova_Object*)end);
 	return nova_Nova_String_Nova_substring(reference, exceptionData, start, end);
 }
 
@@ -819,17 +803,13 @@ nova_Nova_String* nova_Nova_StringFunctionMap_functionMap_Nova_trimEnd(nova_Nova
 	return nova_Nova_String_Nova_trimEnd(reference, exceptionData, count);
 }
 
-nova_Nova_String* nova_Nova_StringFunctionMap_functionMap_Nova_trimEnds(nova_Nova_StringFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* reference, int count, int trimWhitespace)
+nova_Nova_String* nova_Nova_StringFunctionMap_functionMap_Nova_trimEnds(nova_Nova_StringFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* reference, int count, char trimWhitespace)
 {
-	trimWhitespace = (int)(trimWhitespace == (intptr_t)nova_null ? 0 : trimWhitespace);
 	return nova_Nova_String_Nova_trimEnds(reference, exceptionData, count, trimWhitespace);
 }
 
 nova_Nova_String* nova_Nova_StringFunctionMap_functionMap_Nova_trim(nova_Nova_StringFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* reference, int start, int end, nova_datastruct_list_Nova_CharArray* charsToTrim)
 {
-	start = (int)(start == (intptr_t)nova_null ? 0 : start);
-	end = (int)(end == (intptr_t)nova_null ? reference->nova_Nova_String_Nova_count - 1 : end);
-	charsToTrim = (nova_datastruct_list_Nova_CharArray*)(charsToTrim == 0 ? (nova_Nova_Object*)nova_Nova_String_Nova_WHITESPACE : (nova_Nova_Object*)charsToTrim);
 	return nova_Nova_String_Nova_trim(reference, exceptionData, start, end, charsToTrim);
 }
 
@@ -855,13 +835,11 @@ nova_Nova_String* nova_Nova_StringFunctionMap_functionMap_Nova_transform(nova_No
 
 nova_Nova_String* nova_Nova_StringFunctionMap_functionMap_Nova_getStringBetween(nova_Nova_StringFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* reference, nova_Nova_String* before, nova_Nova_String* after, int start)
 {
-	start = (int)(start == (intptr_t)nova_null ? 0 : start);
 	return nova_Nova_String_Nova_getStringBetween(reference, exceptionData, before, after, start);
 }
 
-nova_Nova_String* nova_Nova_StringFunctionMap_functionMap_Nova_surroundWith(nova_Nova_StringFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* reference, nova_Nova_String* str, int symmetrical)
+nova_Nova_String* nova_Nova_StringFunctionMap_functionMap_Nova_surroundWith(nova_Nova_StringFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* reference, nova_Nova_String* str, char symmetrical)
 {
-	symmetrical = (int)(symmetrical == (intptr_t)nova_null ? 0 : symmetrical);
 	return nova_Nova_String_Nova_surroundWith(reference, exceptionData, str, symmetrical);
 }
 
@@ -875,11 +853,8 @@ nova_datastruct_list_Nova_Array* nova_Nova_StringFunctionMap_functionMap_Nova_sp
 	return nova_Nova_String_Nova_split(reference, exceptionData, regex);
 }
 
-nova_Nova_String* nova_Nova_StringFunctionMap_functionMap_Nova_getGroupedChars(nova_Nova_StringFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* reference, nova_datastruct_list_Nova_CharArray* chars, int start, int end, int opposite)
+nova_Nova_String* nova_Nova_StringFunctionMap_functionMap_Nova_getGroupedChars(nova_Nova_StringFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* reference, nova_datastruct_list_Nova_CharArray* chars, int start, int end, char opposite)
 {
-	start = (int)(start == (intptr_t)nova_null ? 0 : start);
-	end = (int)(end == (intptr_t)nova_null ? (nova_Nova_Object*)reference->nova_Nova_String_Nova_count : (nova_Nova_Object*)end);
-	opposite = (int)(opposite == (intptr_t)nova_null ? 0 : opposite);
 	return nova_Nova_String_Nova_getGroupedChars(reference, exceptionData, chars, start, end, opposite);
 }
 

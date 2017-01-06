@@ -57,7 +57,7 @@ typedef struct
 } Context5;
 typedef struct
 {
-	/* [Private] let Int bucketSize = 5 */ int* nova_datastruct_Nova_HashMap_Nova_bucketSize;
+	/* private let Int bucketSize = 5 */ int* nova_datastruct_Nova_HashMap_Nova_bucketSize;
 } Context6;
 typedef struct
 {
@@ -588,15 +588,11 @@ void nova_datastruct_Nova_HashMapFunctionMap_Nova_this(nova_datastruct_Nova_Hash
 
 nova_datastruct_Nova_HashMap* nova_datastruct_Nova_HashMapFunctionMap_functionMapHashMapFunctionMap0_Nova_construct(nova_datastruct_Nova_HashMapFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, int bucketCount, int bucketSize)
 {
-	bucketCount = (int)(bucketCount == (intptr_t)nova_null ? 5 : bucketCount);
-	bucketSize = (int)(bucketSize == (intptr_t)nova_null ? 5 : bucketSize);
 	return (nova_datastruct_Nova_HashMap*)nova_datastruct_Nova_HashMap_0_Nova_construct(0, exceptionData, bucketCount, bucketSize);
 }
 
 nova_datastruct_Nova_HashMap* nova_datastruct_Nova_HashMapFunctionMap_functionMapHashMapFunctionMap1_Nova_construct(nova_datastruct_Nova_HashMapFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_Nova_HashMap* source, int bucketCount, int bucketSize)
 {
-	bucketCount = (int)(bucketCount == (intptr_t)nova_null ? 5 : bucketCount);
-	bucketSize = (int)(bucketSize == (intptr_t)nova_null ? 5 : bucketSize);
 	return (nova_datastruct_Nova_HashMap*)nova_datastruct_Nova_HashMap_1_Nova_construct(0, exceptionData, source, bucketCount, bucketSize);
 }
 

@@ -144,15 +144,13 @@ spectra_Nova_SyntaxMessage* spectra_Nova_SyntaxMessageFunctionMap_functionMapSyn
 	return spectra_Nova_SyntaxMessage_Nova_construct(0, exceptionData);
 }
 
-void spectra_Nova_SyntaxMessageFunctionMap_functionMap_static_Nova_errorIf(spectra_Nova_SyntaxMessageFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* message, spectra_tree_nodes_Nova_Node* node, char condition, int throwException)
+void spectra_Nova_SyntaxMessageFunctionMap_functionMap_static_Nova_errorIf(spectra_Nova_SyntaxMessageFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* message, spectra_tree_nodes_Nova_Node* node, char condition, char throwException)
 {
-	throwException = (int)(throwException == (intptr_t)nova_null ? 1 : throwException);
 	spectra_Nova_SyntaxMessage_static_Nova_errorIf(0, exceptionData, message, node, condition, throwException);
 }
 
-void spectra_Nova_SyntaxMessageFunctionMap_functionMap_static_Nova_error(spectra_Nova_SyntaxMessageFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* message, spectra_tree_nodes_Nova_Node* node, int throwException)
+void spectra_Nova_SyntaxMessageFunctionMap_functionMap_static_Nova_error(spectra_Nova_SyntaxMessageFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* message, spectra_tree_nodes_Nova_Node* node, char throwException)
 {
-	throwException = (int)(throwException == (intptr_t)nova_null ? 1 : throwException);
 	spectra_Nova_SyntaxMessage_static_Nova_error(0, exceptionData, message, node, throwException);
 }
 

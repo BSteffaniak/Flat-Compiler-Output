@@ -12,6 +12,7 @@
 #include <nova/primitive/nova_primitive_Nova_Null.h>
 #include <nova/primitive/number/nova_primitive_number_Nova_Char.h>
 #include <nova/primitive/nova_primitive_Nova_Bool.h>
+#include <nova/datastruct/list/nova_datastruct_list_Nova_List.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_Array.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_ImmutableArray.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_IntArray.h>
@@ -34,6 +35,7 @@
 #include <nova/io/nova_io_Nova_FileWriter.h>
 #include <nova/time/nova_time_Nova_Time.h>
 #include <stabilitytest/stabilitytest_Nova_StabilityTest.h>
+#include <stabilitytest/stabilitytest_Nova_StabilityTestCase.h>
 #include <stabilitytest/stabilitytest_Nova_StabilityTestCase.h>
 #include <nova/NativeObject.h>
 #include <nova/operators/nova_operators_Nova_EqualsOperator.h>
@@ -175,6 +177,11 @@ void stabilitytest_Nova_FileStability_Nova_super(stabilitytest_Nova_FileStabilit
 {
 }
 
+
+void stabilitytest_Nova_FileStabilityFunctionMap_functionMap_Nova_createFile(stabilitytest_Nova_FileStabilityFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, stabilitytest_Nova_FileStability* reference, nova_io_Nova_FileWriter* writer);
+void stabilitytest_Nova_FileStabilityFunctionMap_functionMap_Nova_writeToFile(stabilitytest_Nova_FileStabilityFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, stabilitytest_Nova_FileStability* reference, nova_io_Nova_FileWriter* writer);
+void stabilitytest_Nova_FileStabilityFunctionMap_functionMap_Nova_readFromFile(stabilitytest_Nova_FileStabilityFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, stabilitytest_Nova_FileStability* reference, nova_io_Nova_FileReader* reader);
+void stabilitytest_Nova_FileStabilityFunctionMap_functionMap_Nova_deleteFile(stabilitytest_Nova_FileStabilityFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, stabilitytest_Nova_FileStability* reference, nova_io_Nova_FileWriter* writer);
 void stabilitytest_Nova_FileStabilityFunctionMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData)
 {
 	{
@@ -187,6 +194,7 @@ stabilitytest_Nova_FileStabilityFunctionMap* stabilitytest_Nova_FileStabilityFun
 	this->vtable = &stabilitytest_FileStability_FileStabilityFunctionMap_Extension_VTable_val;
 	nova_Nova_Object_Nova_super((nova_Nova_Object*)this, exceptionData);
 	nova_meta_Nova_FunctionMap_Nova_super((nova_meta_Nova_FunctionMap*)this, exceptionData);
+	stabilitytest_Nova_StabilityTestCaseFunctionMap_Nova_super((stabilitytest_Nova_StabilityTestCaseFunctionMap*)this, exceptionData);
 	stabilitytest_Nova_FileStabilityFunctionMap_Nova_super(this, exceptionData);
 	
 	{
@@ -209,6 +217,36 @@ void stabilitytest_Nova_FileStabilityFunctionMap_Nova_destroy(stabilitytest_Nova
 
 void stabilitytest_Nova_FileStabilityFunctionMap_Nova_this(stabilitytest_Nova_FileStabilityFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
+}
+
+stabilitytest_Nova_FileStability* stabilitytest_Nova_FileStabilityFunctionMap_functionMapFileStabilityFunctionMap_Nova_construct(stabilitytest_Nova_FileStabilityFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, stabilitytest_Nova_StabilityTest* program)
+{
+	return stabilitytest_Nova_FileStability_Nova_construct(0, exceptionData, program);
+}
+
+void stabilitytest_Nova_FileStabilityFunctionMap_functionMap_Nova_test(stabilitytest_Nova_FileStabilityFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, stabilitytest_Nova_FileStability* reference)
+{
+	stabilitytest_Nova_FileStability_Nova_test(reference, exceptionData);
+}
+
+void stabilitytest_Nova_FileStabilityFunctionMap_functionMap_Nova_createFile(stabilitytest_Nova_FileStabilityFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, stabilitytest_Nova_FileStability* reference, nova_io_Nova_FileWriter* writer)
+{
+	stabilitytest_Nova_FileStability_Nova_createFile(reference, exceptionData, writer);
+}
+
+void stabilitytest_Nova_FileStabilityFunctionMap_functionMap_Nova_writeToFile(stabilitytest_Nova_FileStabilityFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, stabilitytest_Nova_FileStability* reference, nova_io_Nova_FileWriter* writer)
+{
+	stabilitytest_Nova_FileStability_Nova_writeToFile(reference, exceptionData, writer);
+}
+
+void stabilitytest_Nova_FileStabilityFunctionMap_functionMap_Nova_readFromFile(stabilitytest_Nova_FileStabilityFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, stabilitytest_Nova_FileStability* reference, nova_io_Nova_FileReader* reader)
+{
+	stabilitytest_Nova_FileStability_Nova_readFromFile(reference, exceptionData, reader);
+}
+
+void stabilitytest_Nova_FileStabilityFunctionMap_functionMap_Nova_deleteFile(stabilitytest_Nova_FileStabilityFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, stabilitytest_Nova_FileStability* reference, nova_io_Nova_FileWriter* writer)
+{
+	stabilitytest_Nova_FileStability_Nova_deleteFile(reference, exceptionData, writer);
 }
 
 void stabilitytest_Nova_FileStabilityFunctionMap_Nova_super(stabilitytest_Nova_FileStabilityFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)

@@ -12,6 +12,7 @@
 #include <nova/primitive/nova_primitive_Nova_Null.h>
 #include <nova/primitive/number/nova_primitive_number_Nova_Char.h>
 #include <nova/primitive/nova_primitive_Nova_Bool.h>
+#include <nova/datastruct/list/nova_datastruct_list_Nova_List.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_Array.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_ImmutableArray.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_IntArray.h>
@@ -30,6 +31,7 @@
 #include <nova/meta/nova_meta_Nova_FunctionMap.h>
 #include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <nova/network/nova_network_Nova_ConnectionSocket.h>
+#include <nova/thread/nova_thread_Nova_Thread.h>
 #include <nova/thread/NativeThread.h>
 #include <nova/NativeObject.h>
 #include <nova/operators/nova_operators_Nova_EqualsOperator.h>
@@ -120,6 +122,7 @@ example_network_Nova_ConnectionThreadFunctionMap* example_network_Nova_Connectio
 	this->vtable = &example_network_ConnectionThread_ConnectionThreadFunctionMap_Extension_VTable_val;
 	nova_Nova_Object_Nova_super((nova_Nova_Object*)this, exceptionData);
 	nova_meta_Nova_FunctionMap_Nova_super((nova_meta_Nova_FunctionMap*)this, exceptionData);
+	nova_thread_Nova_ThreadFunctionMap_Nova_super((nova_thread_Nova_ThreadFunctionMap*)this, exceptionData);
 	example_network_Nova_ConnectionThreadFunctionMap_Nova_super(this, exceptionData);
 	
 	{
@@ -142,6 +145,16 @@ void example_network_Nova_ConnectionThreadFunctionMap_Nova_destroy(example_netwo
 
 void example_network_Nova_ConnectionThreadFunctionMap_Nova_this(example_network_Nova_ConnectionThreadFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
+}
+
+example_network_Nova_ConnectionThread* example_network_Nova_ConnectionThreadFunctionMap_functionMapConnectionThreadFunctionMap_Nova_construct(example_network_Nova_ConnectionThreadFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_network_Nova_ConnectionSocket* socket)
+{
+	return example_network_Nova_ConnectionThread_Nova_construct(0, exceptionData, socket);
+}
+
+void example_network_Nova_ConnectionThreadFunctionMap_functionMap_Nova_run(example_network_Nova_ConnectionThreadFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, example_network_Nova_ConnectionThread* reference)
+{
+	example_network_Nova_ConnectionThread_Nova_run(reference, exceptionData);
 }
 
 void example_network_Nova_ConnectionThreadFunctionMap_Nova_super(example_network_Nova_ConnectionThreadFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)

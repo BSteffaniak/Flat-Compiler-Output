@@ -139,8 +139,6 @@ void spectra_tree_nodes_functions_closures_Nova_ClosureContextFunctionMap_Nova_t
 
 spectra_tree_nodes_functions_closures_Nova_ClosureContext* spectra_tree_nodes_functions_closures_Nova_ClosureContextFunctionMap_functionMapClosureContextFunctionMap_Nova_construct(spectra_tree_nodes_functions_closures_Nova_ClosureContextFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, spectra_tree_nodes_Nova_Node* parent, spectra_util_Nova_Location* location)
 {
-	parent = (spectra_tree_nodes_Nova_Node*)(parent == 0 ? (nova_Nova_Object*)(nova_Nova_Object*)nova_null : (nova_Nova_Object*)parent);
-	location = (spectra_util_Nova_Location*)(location == 0 ? (nova_Nova_Object*)spectra_util_Nova_Location_Nova_INVALID : (nova_Nova_Object*)location);
 	return spectra_tree_nodes_functions_closures_Nova_ClosureContext_Nova_construct(0, exceptionData, parent, location);
 }
 

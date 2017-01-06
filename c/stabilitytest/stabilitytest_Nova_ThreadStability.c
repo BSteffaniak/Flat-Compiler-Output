@@ -12,6 +12,7 @@
 #include <nova/primitive/nova_primitive_Nova_Null.h>
 #include <nova/primitive/number/nova_primitive_number_Nova_Char.h>
 #include <nova/primitive/nova_primitive_Nova_Bool.h>
+#include <nova/datastruct/list/nova_datastruct_list_Nova_List.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_Array.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_ImmutableArray.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_IntArray.h>
@@ -33,6 +34,7 @@
 #include <stabilitytest/stabilitytest_Nova_StabilityTest.h>
 #include <stabilitytest/stabilitytest_Nova_StabilityTestCase.h>
 #include <stabilitytest/stabilitytest_Nova_ThreadImplementation.h>
+#include <stabilitytest/stabilitytest_Nova_StabilityTestCase.h>
 #include <nova/NativeObject.h>
 #include <nova/operators/nova_operators_Nova_EqualsOperator.h>
 
@@ -135,6 +137,10 @@ void stabilitytest_Nova_ThreadStability_Nova_super(stabilitytest_Nova_ThreadStab
 {
 }
 
+
+void stabilitytest_Nova_ThreadStabilityFunctionMap_functionMap_Nova_createThreads(stabilitytest_Nova_ThreadStabilityFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, stabilitytest_Nova_ThreadStability* reference, nova_datastruct_list_Nova_Array* threads, int amount);
+void stabilitytest_Nova_ThreadStabilityFunctionMap_functionMap_static_Nova_checkMemoryAccess(stabilitytest_Nova_ThreadStabilityFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+void stabilitytest_Nova_ThreadStabilityFunctionMap_functionMap_static_Nova_joinThreads(stabilitytest_Nova_ThreadStabilityFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_list_Nova_Array* threads, int amount);
 void stabilitytest_Nova_ThreadStabilityFunctionMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData)
 {
 	{
@@ -147,6 +153,7 @@ stabilitytest_Nova_ThreadStabilityFunctionMap* stabilitytest_Nova_ThreadStabilit
 	this->vtable = &stabilitytest_ThreadStability_ThreadStabilityFunctionMap_Extension_VTable_val;
 	nova_Nova_Object_Nova_super((nova_Nova_Object*)this, exceptionData);
 	nova_meta_Nova_FunctionMap_Nova_super((nova_meta_Nova_FunctionMap*)this, exceptionData);
+	stabilitytest_Nova_StabilityTestCaseFunctionMap_Nova_super((stabilitytest_Nova_StabilityTestCaseFunctionMap*)this, exceptionData);
 	stabilitytest_Nova_ThreadStabilityFunctionMap_Nova_super(this, exceptionData);
 	
 	{
@@ -169,6 +176,31 @@ void stabilitytest_Nova_ThreadStabilityFunctionMap_Nova_destroy(stabilitytest_No
 
 void stabilitytest_Nova_ThreadStabilityFunctionMap_Nova_this(stabilitytest_Nova_ThreadStabilityFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
+}
+
+stabilitytest_Nova_ThreadStability* stabilitytest_Nova_ThreadStabilityFunctionMap_functionMapThreadStabilityFunctionMap_Nova_construct(stabilitytest_Nova_ThreadStabilityFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, stabilitytest_Nova_StabilityTest* program)
+{
+	return stabilitytest_Nova_ThreadStability_Nova_construct(0, exceptionData, program);
+}
+
+void stabilitytest_Nova_ThreadStabilityFunctionMap_functionMap_Nova_test(stabilitytest_Nova_ThreadStabilityFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, stabilitytest_Nova_ThreadStability* reference)
+{
+	stabilitytest_Nova_ThreadStability_Nova_test(reference, exceptionData);
+}
+
+void stabilitytest_Nova_ThreadStabilityFunctionMap_functionMap_Nova_createThreads(stabilitytest_Nova_ThreadStabilityFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, stabilitytest_Nova_ThreadStability* reference, nova_datastruct_list_Nova_Array* threads, int amount)
+{
+	stabilitytest_Nova_ThreadStability_Nova_createThreads(reference, exceptionData, threads, amount);
+}
+
+void stabilitytest_Nova_ThreadStabilityFunctionMap_functionMap_static_Nova_checkMemoryAccess(stabilitytest_Nova_ThreadStabilityFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+	stabilitytest_Nova_ThreadStability_static_Nova_checkMemoryAccess(0, exceptionData);
+}
+
+void stabilitytest_Nova_ThreadStabilityFunctionMap_functionMap_static_Nova_joinThreads(stabilitytest_Nova_ThreadStabilityFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_list_Nova_Array* threads, int amount)
+{
+	stabilitytest_Nova_ThreadStability_static_Nova_joinThreads(0, exceptionData, threads, amount);
 }
 
 void stabilitytest_Nova_ThreadStabilityFunctionMap_Nova_super(stabilitytest_Nova_ThreadStabilityFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)

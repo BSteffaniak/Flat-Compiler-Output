@@ -205,7 +205,6 @@ void spectra_tree_nodes_Nova_ProgramFunctionMap_Nova_this(spectra_tree_nodes_Nov
 
 spectra_tree_nodes_Nova_Program* spectra_tree_nodes_Nova_ProgramFunctionMap_functionMapProgramFunctionMap_Nova_construct(spectra_tree_nodes_Nova_ProgramFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, spectra_tree_Nova_SyntaxTree* tree)
 {
-	tree = (spectra_tree_Nova_SyntaxTree*)(tree == 0 ? (nova_Nova_Object*)(nova_Nova_Object*)nova_null : (nova_Nova_Object*)tree);
 	return spectra_tree_nodes_Nova_Program_Nova_construct(0, exceptionData, tree);
 }
 

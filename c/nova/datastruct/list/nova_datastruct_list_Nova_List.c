@@ -65,8 +65,8 @@ typedef struct
 nova_Nova_String* nova_datastruct_list_Nova_List_Nova_lambda2(nova_datastruct_list_Nova_List* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_Object* str, nova_Nova_Object* e, int i, nova_datastruct_list_Nova_List* _4, Context1* context);
 char nova_datastruct_list_Nova_List_Nova_lambda18(nova_datastruct_list_Nova_List* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_Object* _1, Context2* context);
 char nova_datastruct_list_Nova_List_Nova_lambda22(nova_datastruct_list_Nova_List* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_Object* _1, int _2, nova_datastruct_list_Nova_List* _3, Context3* context);
-char nova_datastruct_list_Nova_List_Nova_lambda140(nova_datastruct_list_Nova_List* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_Object* _1, Context4* context);
-char nova_datastruct_list_Nova_List_Nova_lambda141(nova_datastruct_list_Nova_List* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_Object* _1, Context5* context);
+char nova_datastruct_list_Nova_List_Nova_lambda161(nova_datastruct_list_Nova_List* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_Object* _1, Context4* context);
+char nova_datastruct_list_Nova_List_Nova_lambda162(nova_datastruct_list_Nova_List* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_Object* _1, Context5* context);
 void nova_datastruct_list_Nova_List_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData)
 {
 	{
@@ -297,11 +297,11 @@ nova_Nova_Object* nova_datastruct_list_Nova_List_Nova_firstOr(nova_datastruct_li
 {
 	nova_datastruct_list_Nova_Iterator* nova_local_0 = (nova_datastruct_list_Nova_Iterator*)nova_null;
 	nova_Nova_Object* l2_Nova_element = (nova_Nova_Object*)nova_null;
-	Context4* contextArg170 = NOVA_MALLOC(sizeof(Context4));
+	Context4* contextArg191 = NOVA_MALLOC(sizeof(Context4));
 	
-	nova_datastruct_list_Nova_List_Nova_func = (nova_datastruct_list_Nova_List_closure24_Nova_func)(nova_datastruct_list_Nova_List_Nova_func == 0 ? (nova_datastruct_list_Nova_List_closure24_Nova_func)&nova_datastruct_list_Nova_List_Nova_lambda140 : nova_datastruct_list_Nova_List_Nova_func);
+	nova_datastruct_list_Nova_List_Nova_func = (nova_datastruct_list_Nova_List_closure24_Nova_func)(nova_datastruct_list_Nova_List_Nova_func == 0 ? (nova_datastruct_list_Nova_List_closure24_Nova_func)&nova_datastruct_list_Nova_List_Nova_lambda161 : nova_datastruct_list_Nova_List_Nova_func);
 	nova_datastruct_list_Nova_List_ref_Nova_func = (void*)(nova_datastruct_list_Nova_List_ref_Nova_func == 0 ? (void*)this : nova_datastruct_list_Nova_List_ref_Nova_func);
-	func_context = (void*)(func_context == 0 ? (void*)contextArg170 : func_context);
+	func_context = (void*)(func_context == 0 ? (void*)contextArg191 : func_context);
 	nova_local_0 = (nova_datastruct_list_Nova_Iterator*)(nova_datastruct_list_Nova_Iterable_virtual_Accessor_Nova_iterator((nova_datastruct_list_Nova_Iterable*)((this)), exceptionData));
 	while (nova_datastruct_list_Nova_Iterator_virtual_Accessor_Nova_hasNext((nova_datastruct_list_Nova_Iterator*)(nova_local_0), exceptionData))
 	{
@@ -318,11 +318,11 @@ nova_Nova_Object* nova_datastruct_list_Nova_List_Nova_firstOrThrow(nova_datastru
 {
 	nova_datastruct_list_Nova_Iterator* nova_local_0 = (nova_datastruct_list_Nova_Iterator*)nova_null;
 	nova_Nova_Object* l2_Nova_element = (nova_Nova_Object*)nova_null;
-	Context5* contextArg171 = NOVA_MALLOC(sizeof(Context5));
+	Context5* contextArg192 = NOVA_MALLOC(sizeof(Context5));
 	
-	nova_datastruct_list_Nova_List_Nova_func = (nova_datastruct_list_Nova_List_closure28_Nova_func)(nova_datastruct_list_Nova_List_Nova_func == 0 ? (nova_datastruct_list_Nova_List_closure28_Nova_func)&nova_datastruct_list_Nova_List_Nova_lambda141 : nova_datastruct_list_Nova_List_Nova_func);
+	nova_datastruct_list_Nova_List_Nova_func = (nova_datastruct_list_Nova_List_closure28_Nova_func)(nova_datastruct_list_Nova_List_Nova_func == 0 ? (nova_datastruct_list_Nova_List_closure28_Nova_func)&nova_datastruct_list_Nova_List_Nova_lambda162 : nova_datastruct_list_Nova_List_Nova_func);
 	nova_datastruct_list_Nova_List_ref_Nova_func = (void*)(nova_datastruct_list_Nova_List_ref_Nova_func == 0 ? (void*)this : nova_datastruct_list_Nova_List_ref_Nova_func);
-	func_context = (void*)(func_context == 0 ? (void*)contextArg171 : func_context);
+	func_context = (void*)(func_context == 0 ? (void*)contextArg192 : func_context);
 	nova_local_0 = (nova_datastruct_list_Nova_Iterator*)(nova_datastruct_list_Nova_Iterable_virtual_Accessor_Nova_iterator((nova_datastruct_list_Nova_Iterable*)((this)), exceptionData));
 	while (nova_datastruct_list_Nova_Iterator_virtual_Accessor_Nova_hasNext((nova_datastruct_list_Nova_Iterator*)(nova_local_0), exceptionData))
 	{
@@ -431,12 +431,12 @@ char nova_datastruct_list_Nova_List_Nova_lambda22(nova_datastruct_list_Nova_List
 	return _1 != (nova_Nova_Object*)nova_null;
 }
 
-char nova_datastruct_list_Nova_List_Nova_lambda140(nova_datastruct_list_Nova_List* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_Object* _1, Context4* context)
+char nova_datastruct_list_Nova_List_Nova_lambda161(nova_datastruct_list_Nova_List* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_Object* _1, Context4* context)
 {
 	return 1;
 }
 
-char nova_datastruct_list_Nova_List_Nova_lambda141(nova_datastruct_list_Nova_List* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_Object* _1, Context5* context)
+char nova_datastruct_list_Nova_List_Nova_lambda162(nova_datastruct_list_Nova_List* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_Object* _1, Context5* context)
 {
 	return 1;
 }
@@ -572,8 +572,8 @@ nova_Nova_Object* nova_datastruct_list_Nova_List_virtual_Mutator_Nova_last(nova_
 }
 
 
-char nova_datastruct_list_Nova_ListFunctionMap_functionMap_Nova_lambda142(nova_datastruct_list_Nova_ListFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_Object* _1, Context6* context);
-char nova_datastruct_list_Nova_ListFunctionMap_functionMap_Nova_lambda143(nova_datastruct_list_Nova_ListFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_Object* _1, Context7* context);
+char nova_datastruct_list_Nova_ListFunctionMap_functionMap_Nova_lambda163(nova_datastruct_list_Nova_ListFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_Object* _1, Context6* context);
+char nova_datastruct_list_Nova_ListFunctionMap_functionMap_Nova_lambda164(nova_datastruct_list_Nova_ListFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_Object* _1, Context7* context);
 void nova_datastruct_list_Nova_ListFunctionMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData)
 {
 	{
@@ -635,9 +635,8 @@ char nova_datastruct_list_Nova_ListFunctionMap_functionMap0_Nova_any(nova_datast
 	return nova_datastruct_list_Nova_List_0_Nova_any(reference, exceptionData, (nova_datastruct_list_Nova_List_closure12_Nova_anyFunc)nova_datastruct_list_Nova_ListFunctionMap_Nova_anyFunc, nova_datastruct_list_Nova_ListFunctionMap_ref_Nova_anyFunc, anyFunc_context);
 }
 
-char nova_datastruct_list_Nova_ListFunctionMap_functionMap0_Nova_all(nova_datastruct_list_Nova_ListFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_list_Nova_List* reference, nova_datastruct_list_Nova_ListFunctionMap_closure48_Nova_allFunc nova_datastruct_list_Nova_ListFunctionMap_Nova_allFunc, void* nova_datastruct_list_Nova_ListFunctionMap_ref_Nova_allFunc, void* allFunc_context, int stopOnContradiction)
+char nova_datastruct_list_Nova_ListFunctionMap_functionMap0_Nova_all(nova_datastruct_list_Nova_ListFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_list_Nova_List* reference, nova_datastruct_list_Nova_ListFunctionMap_closure48_Nova_allFunc nova_datastruct_list_Nova_ListFunctionMap_Nova_allFunc, void* nova_datastruct_list_Nova_ListFunctionMap_ref_Nova_allFunc, void* allFunc_context, char stopOnContradiction)
 {
-	stopOnContradiction = (int)(stopOnContradiction == (intptr_t)nova_null ? 1 : stopOnContradiction);
 	return nova_datastruct_list_Nova_List_0_Nova_all(reference, exceptionData, (nova_datastruct_list_Nova_List_closure16_Nova_allFunc)nova_datastruct_list_Nova_ListFunctionMap_Nova_allFunc, nova_datastruct_list_Nova_ListFunctionMap_ref_Nova_allFunc, allFunc_context, stopOnContradiction);
 }
 
@@ -673,21 +672,15 @@ nova_datastruct_list_Nova_List* nova_datastruct_list_Nova_ListFunctionMap_functi
 
 nova_Nova_Object* nova_datastruct_list_Nova_ListFunctionMap_functionMap_Nova_firstOr(nova_datastruct_list_Nova_ListFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_list_Nova_List* reference, nova_Nova_Object* _default, nova_datastruct_list_Nova_ListFunctionMap_closure50_Nova_func nova_datastruct_list_Nova_ListFunctionMap_Nova_func, void* nova_datastruct_list_Nova_ListFunctionMap_ref_Nova_func, void* func_context)
 {
-	Context6* contextArg175 = NOVA_MALLOC(sizeof(Context6));
+	Context6* contextArg196 = NOVA_MALLOC(sizeof(Context6));
 	
-	nova_datastruct_list_Nova_ListFunctionMap_Nova_func = (nova_datastruct_list_Nova_ListFunctionMap_closure50_Nova_func)(nova_datastruct_list_Nova_ListFunctionMap_Nova_func == 0 ? (nova_datastruct_list_Nova_ListFunctionMap_closure50_Nova_func)&nova_datastruct_list_Nova_ListFunctionMap_functionMap_Nova_lambda142 : nova_datastruct_list_Nova_ListFunctionMap_Nova_func);
-	nova_datastruct_list_Nova_ListFunctionMap_ref_Nova_func = (void*)(nova_datastruct_list_Nova_ListFunctionMap_ref_Nova_func == 0 ? (void*)this : nova_datastruct_list_Nova_ListFunctionMap_ref_Nova_func);
-	func_context = (void*)(func_context == 0 ? (void*)contextArg175 : func_context);
 	return (nova_Nova_Object*)nova_datastruct_list_Nova_List_Nova_firstOr(reference, exceptionData, _default, (nova_datastruct_list_Nova_List_closure24_Nova_func)nova_datastruct_list_Nova_ListFunctionMap_Nova_func, nova_datastruct_list_Nova_ListFunctionMap_ref_Nova_func, func_context);
 }
 
 nova_Nova_Object* nova_datastruct_list_Nova_ListFunctionMap_functionMap_Nova_firstOrThrow(nova_datastruct_list_Nova_ListFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_list_Nova_List* reference, nova_exception_Nova_Exception* e, nova_datastruct_list_Nova_ListFunctionMap_closure51_Nova_func nova_datastruct_list_Nova_ListFunctionMap_Nova_func, void* nova_datastruct_list_Nova_ListFunctionMap_ref_Nova_func, void* func_context)
 {
-	Context7* contextArg176 = NOVA_MALLOC(sizeof(Context7));
+	Context7* contextArg197 = NOVA_MALLOC(sizeof(Context7));
 	
-	nova_datastruct_list_Nova_ListFunctionMap_Nova_func = (nova_datastruct_list_Nova_ListFunctionMap_closure51_Nova_func)(nova_datastruct_list_Nova_ListFunctionMap_Nova_func == 0 ? (nova_datastruct_list_Nova_ListFunctionMap_closure51_Nova_func)&nova_datastruct_list_Nova_ListFunctionMap_functionMap_Nova_lambda143 : nova_datastruct_list_Nova_ListFunctionMap_Nova_func);
-	nova_datastruct_list_Nova_ListFunctionMap_ref_Nova_func = (void*)(nova_datastruct_list_Nova_ListFunctionMap_ref_Nova_func == 0 ? (void*)this : nova_datastruct_list_Nova_ListFunctionMap_ref_Nova_func);
-	func_context = (void*)(func_context == 0 ? (void*)contextArg176 : func_context);
 	return (nova_Nova_Object*)nova_datastruct_list_Nova_List_Nova_firstOrThrow(reference, exceptionData, e, (nova_datastruct_list_Nova_List_closure28_Nova_func)nova_datastruct_list_Nova_ListFunctionMap_Nova_func, nova_datastruct_list_Nova_ListFunctionMap_ref_Nova_func, func_context);
 }
 
@@ -713,16 +706,15 @@ nova_Nova_Object* nova_datastruct_list_Nova_ListFunctionMap_functionMap_Nova_red
 
 nova_Nova_String* nova_datastruct_list_Nova_ListFunctionMap_functionMap0_Nova_join(nova_datastruct_list_Nova_ListFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_list_Nova_List* reference, nova_Nova_String* delimiter)
 {
-	delimiter = (nova_Nova_String*)(delimiter == 0 ? (nova_Nova_Object*)nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("")) : (nova_Nova_Object*)delimiter);
 	return nova_datastruct_list_Nova_List_Nova_join(reference, exceptionData, delimiter);
 }
 
-char nova_datastruct_list_Nova_ListFunctionMap_functionMap_Nova_lambda142(nova_datastruct_list_Nova_ListFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_Object* _1, Context6* context)
+char nova_datastruct_list_Nova_ListFunctionMap_functionMap_Nova_lambda163(nova_datastruct_list_Nova_ListFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_Object* _1, Context6* context)
 {
 	return 1;
 }
 
-char nova_datastruct_list_Nova_ListFunctionMap_functionMap_Nova_lambda143(nova_datastruct_list_Nova_ListFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_Object* _1, Context7* context)
+char nova_datastruct_list_Nova_ListFunctionMap_functionMap_Nova_lambda164(nova_datastruct_list_Nova_ListFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_Object* _1, Context7* context)
 {
 	return 1;
 }
@@ -756,7 +748,7 @@ char nova_datastruct_list_Nova_ListFunctionMap_virtualfunctionMap0_Nova_any(nova
 	return this->vtable->itable.nova_datastruct_list_Nova_ListFunctionMap_virtualfunctionMap0_Nova_any(this, exceptionData, reference, (nova_datastruct_list_Nova_ListFunctionMap_closure47_Nova_anyFunc)nova_datastruct_list_Nova_ListFunctionMap_Nova_anyFunc, nova_datastruct_list_Nova_ListFunctionMap_ref_Nova_anyFunc, anyFunc_context);
 }
 
-char nova_datastruct_list_Nova_ListFunctionMap_virtualfunctionMap0_Nova_all(nova_datastruct_list_Nova_ListFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_list_Nova_List* reference, nova_datastruct_list_Nova_ListFunctionMap_closure48_Nova_allFunc nova_datastruct_list_Nova_ListFunctionMap_Nova_allFunc, void* nova_datastruct_list_Nova_ListFunctionMap_ref_Nova_allFunc, void* allFunc_context, int stopOnContradiction)
+char nova_datastruct_list_Nova_ListFunctionMap_virtualfunctionMap0_Nova_all(nova_datastruct_list_Nova_ListFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_list_Nova_List* reference, nova_datastruct_list_Nova_ListFunctionMap_closure48_Nova_allFunc nova_datastruct_list_Nova_ListFunctionMap_Nova_allFunc, void* nova_datastruct_list_Nova_ListFunctionMap_ref_Nova_allFunc, void* allFunc_context, char stopOnContradiction)
 {
 	return this->vtable->itable.nova_datastruct_list_Nova_ListFunctionMap_virtualfunctionMap0_Nova_all(this, exceptionData, reference, (nova_datastruct_list_Nova_ListFunctionMap_closure48_Nova_allFunc)nova_datastruct_list_Nova_ListFunctionMap_Nova_allFunc, nova_datastruct_list_Nova_ListFunctionMap_ref_Nova_allFunc, allFunc_context, stopOnContradiction);
 }

@@ -12,6 +12,7 @@
 #include <nova/primitive/nova_primitive_Nova_Null.h>
 #include <nova/primitive/number/nova_primitive_number_Nova_Char.h>
 #include <nova/primitive/nova_primitive_Nova_Bool.h>
+#include <nova/datastruct/list/nova_datastruct_list_Nova_List.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_Array.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_ImmutableArray.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_IntArray.h>
@@ -31,6 +32,7 @@
 #include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <nova/time/nova_time_Nova_Timer.h>
 #include <stabilitytest/stabilitytest_Nova_StabilityTest.h>
+#include <stabilitytest/stabilitytest_Nova_StabilityTestCase.h>
 #include <stabilitytest/stabilitytest_Nova_StabilityTestCase.h>
 #include <nova/NativeObject.h>
 #include <nova/operators/nova_operators_Nova_EqualsOperator.h>
@@ -103,6 +105,7 @@ stabilitytest_Nova_TimeStabilityFunctionMap* stabilitytest_Nova_TimeStabilityFun
 	this->vtable = &stabilitytest_TimeStability_TimeStabilityFunctionMap_Extension_VTable_val;
 	nova_Nova_Object_Nova_super((nova_Nova_Object*)this, exceptionData);
 	nova_meta_Nova_FunctionMap_Nova_super((nova_meta_Nova_FunctionMap*)this, exceptionData);
+	stabilitytest_Nova_StabilityTestCaseFunctionMap_Nova_super((stabilitytest_Nova_StabilityTestCaseFunctionMap*)this, exceptionData);
 	stabilitytest_Nova_TimeStabilityFunctionMap_Nova_super(this, exceptionData);
 	
 	{
@@ -125,6 +128,16 @@ void stabilitytest_Nova_TimeStabilityFunctionMap_Nova_destroy(stabilitytest_Nova
 
 void stabilitytest_Nova_TimeStabilityFunctionMap_Nova_this(stabilitytest_Nova_TimeStabilityFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
+}
+
+stabilitytest_Nova_TimeStability* stabilitytest_Nova_TimeStabilityFunctionMap_functionMapTimeStabilityFunctionMap_Nova_construct(stabilitytest_Nova_TimeStabilityFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, stabilitytest_Nova_StabilityTest* program)
+{
+	return stabilitytest_Nova_TimeStability_Nova_construct(0, exceptionData, program);
+}
+
+void stabilitytest_Nova_TimeStabilityFunctionMap_functionMap_Nova_test(stabilitytest_Nova_TimeStabilityFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, stabilitytest_Nova_TimeStability* reference)
+{
+	stabilitytest_Nova_TimeStability_Nova_test(reference, exceptionData);
 }
 
 void stabilitytest_Nova_TimeStabilityFunctionMap_Nova_super(stabilitytest_Nova_TimeStabilityFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)

@@ -180,14 +180,11 @@ void spectra_tree_nodes_functions_Nova_ObjectNotationFunctionMap_Nova_this(spect
 
 spectra_tree_nodes_functions_Nova_ObjectNotation* spectra_tree_nodes_functions_Nova_ObjectNotationFunctionMap_functionMapObjectNotationFunctionMap_Nova_construct(spectra_tree_nodes_functions_Nova_ObjectNotationFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, spectra_tree_nodes_Nova_Node* parent, spectra_util_Nova_Location* location)
 {
-	parent = (spectra_tree_nodes_Nova_Node*)(parent == 0 ? (nova_Nova_Object*)(nova_Nova_Object*)nova_null : (nova_Nova_Object*)parent);
-	location = (spectra_util_Nova_Location*)(location == 0 ? (nova_Nova_Object*)spectra_util_Nova_Location_Nova_INVALID : (nova_Nova_Object*)location);
 	return spectra_tree_nodes_functions_Nova_ObjectNotation_Nova_construct(0, exceptionData, parent, location);
 }
 
-spectra_tree_nodes_variables_Nova_VariableDeclaration* spectra_tree_nodes_functions_Nova_ObjectNotationFunctionMap_functionMap_Nova_findVariableDeclaration(spectra_tree_nodes_functions_Nova_ObjectNotationFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, spectra_tree_nodes_functions_Nova_ObjectNotation* reference, nova_Nova_String* name, int searchAncestors)
+spectra_tree_nodes_variables_Nova_VariableDeclaration* spectra_tree_nodes_functions_Nova_ObjectNotationFunctionMap_functionMap_Nova_findVariableDeclaration(spectra_tree_nodes_functions_Nova_ObjectNotationFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, spectra_tree_nodes_functions_Nova_ObjectNotation* reference, nova_Nova_String* name, char searchAncestors)
 {
-	searchAncestors = (int)(searchAncestors == (intptr_t)nova_null ? 1 : searchAncestors);
 	return spectra_tree_nodes_functions_Nova_ObjectNotation_Nova_findVariableDeclaration(reference, exceptionData, name, searchAncestors);
 }
 

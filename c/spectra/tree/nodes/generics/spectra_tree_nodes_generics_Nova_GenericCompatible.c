@@ -177,9 +177,8 @@ void spectra_tree_nodes_generics_Nova_GenericCompatibleFunctionMap_Nova_this(spe
 {
 }
 
-char spectra_tree_nodes_generics_Nova_GenericCompatibleFunctionMap_functionMap_Nova_parseGenericParameters(spectra_tree_nodes_generics_Nova_GenericCompatibleFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, spectra_tree_nodes_generics_Nova_GenericCompatible* reference, nova_Nova_String* input, int requireWholeString)
+char spectra_tree_nodes_generics_Nova_GenericCompatibleFunctionMap_functionMap_Nova_parseGenericParameters(spectra_tree_nodes_generics_Nova_GenericCompatibleFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, spectra_tree_nodes_generics_Nova_GenericCompatible* reference, nova_Nova_String* input, char requireWholeString)
 {
-	requireWholeString = (int)(requireWholeString == (intptr_t)nova_null ? 0 : requireWholeString);
 	return spectra_tree_nodes_generics_Nova_GenericCompatible_Nova_parseGenericParameters(reference, exceptionData, input, requireWholeString);
 }
 

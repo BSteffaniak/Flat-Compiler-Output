@@ -22,6 +22,7 @@ typedef struct example_Nova_PersonFunctionMap example_Nova_PersonFunctionMap;
 #include <nova/primitive/nova_primitive_Nova_Null.h>
 #include <nova/primitive/number/nova_primitive_number_Nova_Char.h>
 #include <nova/primitive/nova_primitive_Nova_Bool.h>
+#include <nova/datastruct/list/nova_datastruct_list_Nova_List.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_Array.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_ImmutableArray.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_IntArray.h>
@@ -70,6 +71,9 @@ void example_Nova_PersonFunctionMap_Nova_init_static(nova_exception_Nova_Excepti
 example_Nova_PersonFunctionMap* example_Nova_PersonFunctionMap_Nova_construct(example_Nova_PersonFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
 void example_Nova_PersonFunctionMap_Nova_destroy(example_Nova_PersonFunctionMap** this, nova_exception_Nova_ExceptionData* exceptionData);
 void example_Nova_PersonFunctionMap_Nova_this(example_Nova_PersonFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+example_Nova_Person* example_Nova_PersonFunctionMap_functionMapPersonFunctionMap_Nova_construct(example_Nova_PersonFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* name, int age);
+void example_Nova_PersonFunctionMap_functionMap_Nova_sayHello(example_Nova_PersonFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, example_Nova_Person* reference);
 void example_Nova_PersonFunctionMap_Nova_super(example_Nova_PersonFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+void example_Nova_PersonFunctionMap_virtualfunctionMap_Nova_sayHello(example_Nova_PersonFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, example_Nova_Person* reference);
 
 #endif

@@ -169,11 +169,8 @@ spectra_tree_nodes_controlstructures_loops_Nova_Loop* spectra_tree_nodes_control
 	return spectra_tree_nodes_controlstructures_loops_Nova_Loop_Nova_construct(0, exceptionData);
 }
 
-spectra_tree_nodes_controlstructures_loops_Nova_Loop* spectra_tree_nodes_controlstructures_loops_Nova_LoopFunctionMap_functionMap_static_Nova_parse(spectra_tree_nodes_controlstructures_loops_Nova_LoopFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* input, spectra_tree_nodes_Nova_Node* parent, spectra_util_Nova_Location* location, int require)
+spectra_tree_nodes_controlstructures_loops_Nova_Loop* spectra_tree_nodes_controlstructures_loops_Nova_LoopFunctionMap_functionMap_static_Nova_parse(spectra_tree_nodes_controlstructures_loops_Nova_LoopFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* input, spectra_tree_nodes_Nova_Node* parent, spectra_util_Nova_Location* location, char require)
 {
-	parent = (spectra_tree_nodes_Nova_Node*)(parent == 0 ? (nova_Nova_Object*)(nova_Nova_Object*)nova_null : (nova_Nova_Object*)parent);
-	location = (spectra_util_Nova_Location*)(location == 0 ? (nova_Nova_Object*)spectra_util_Nova_Location_Nova_INVALID : (nova_Nova_Object*)location);
-	require = (int)(require == (intptr_t)nova_null ? 1 : require);
 	return spectra_tree_nodes_controlstructures_loops_Nova_Loop_static_Nova_parse(0, exceptionData, input, parent, location, require);
 }
 
@@ -181,7 +178,7 @@ void spectra_tree_nodes_controlstructures_loops_Nova_LoopFunctionMap_Nova_super(
 {
 }
 
-spectra_tree_nodes_controlstructures_loops_Nova_Loop* spectra_tree_nodes_controlstructures_loops_Nova_LoopFunctionMap_virtualfunctionMap_static_Nova_parse(spectra_tree_nodes_controlstructures_loops_Nova_LoopFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* input, spectra_tree_nodes_Nova_Node* parent, spectra_util_Nova_Location* location, int require)
+spectra_tree_nodes_controlstructures_loops_Nova_Loop* spectra_tree_nodes_controlstructures_loops_Nova_LoopFunctionMap_virtualfunctionMap_static_Nova_parse(spectra_tree_nodes_controlstructures_loops_Nova_LoopFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* input, spectra_tree_nodes_Nova_Node* parent, spectra_util_Nova_Location* location, char require)
 {
 	return this->vtable->spectra_tree_nodes_controlstructures_loops_Nova_LoopFunctionMap_virtualfunctionMap_static_Nova_parse(0, exceptionData, input, parent, location, require);
 }

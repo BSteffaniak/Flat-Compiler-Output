@@ -12,6 +12,7 @@
 #include <nova/primitive/nova_primitive_Nova_Null.h>
 #include <nova/primitive/number/nova_primitive_number_Nova_Char.h>
 #include <nova/primitive/nova_primitive_Nova_Bool.h>
+#include <nova/datastruct/list/nova_datastruct_list_Nova_List.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_Array.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_ImmutableArray.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_IntArray.h>
@@ -144,7 +145,52 @@ void example_Nova_AnimalFunctionMap_Nova_this(example_Nova_AnimalFunctionMap* th
 {
 }
 
+example_Nova_Animal* example_Nova_AnimalFunctionMap_functionMapAnimalFunctionMap_Nova_construct(example_Nova_AnimalFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+	return example_Nova_Animal_Nova_construct(0, exceptionData);
+}
+
+int example_Nova_AnimalFunctionMap_functionMap_Nova_getNumLegs(example_Nova_AnimalFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, example_Nova_Animal* reference)
+{
+	return example_Nova_Animal_Nova_getNumLegs(reference, exceptionData);
+}
+
+int example_Nova_AnimalFunctionMap_functionMap_Nova_getNumEyes(example_Nova_AnimalFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, example_Nova_Animal* reference)
+{
+	return example_Nova_Animal_Nova_getNumEyes(reference, exceptionData);
+}
+
+nova_Nova_String* example_Nova_AnimalFunctionMap_functionMap_Nova_getDescription(example_Nova_AnimalFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, example_Nova_Animal* reference)
+{
+	return example_Nova_Animal_Nova_getDescription(reference, exceptionData);
+}
+
+nova_Nova_String* example_Nova_AnimalFunctionMap_functionMap_Nova_toString(example_Nova_AnimalFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, example_Nova_Animal* reference)
+{
+	return example_Nova_Animal_Nova_toString(reference, exceptionData);
+}
+
 void example_Nova_AnimalFunctionMap_Nova_super(example_Nova_AnimalFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
+}
+
+example_Nova_Animal* example_Nova_AnimalFunctionMap_virtualfunctionMapAnimal_Nova_construct(example_Nova_AnimalFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+	return this->vtable->example_Nova_AnimalFunctionMap_virtualfunctionMapAnimal_Nova_construct(this, exceptionData);
+}
+
+int example_Nova_AnimalFunctionMap_virtualfunctionMap_Nova_getNumLegs(example_Nova_AnimalFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, example_Nova_Animal* reference)
+{
+	return this->vtable->example_Nova_AnimalFunctionMap_virtualfunctionMap_Nova_getNumLegs(this, exceptionData, reference);
+}
+
+int example_Nova_AnimalFunctionMap_virtualfunctionMap_Nova_getNumEyes(example_Nova_AnimalFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, example_Nova_Animal* reference)
+{
+	return this->vtable->example_Nova_AnimalFunctionMap_virtualfunctionMap_Nova_getNumEyes(this, exceptionData, reference);
+}
+
+nova_Nova_String* example_Nova_AnimalFunctionMap_virtualfunctionMap_Nova_getDescription(example_Nova_AnimalFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, example_Nova_Animal* reference)
+{
+	return this->vtable->example_Nova_AnimalFunctionMap_virtualfunctionMap_Nova_getDescription(this, exceptionData, reference);
 }
 

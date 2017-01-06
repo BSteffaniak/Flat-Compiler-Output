@@ -142,11 +142,6 @@ void nova_star_Nova_WindowFunctionMap_Nova_this(nova_star_Nova_WindowFunctionMap
 
 nova_star_Nova_Window* nova_star_Nova_WindowFunctionMap_functionMapWindowFunctionMap_Nova_construct(nova_star_Nova_WindowFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* title, int x, int y, int width, int height)
 {
-	title = (nova_Nova_String*)(title == 0 ? (nova_Nova_Object*)(nova_Nova_Object*)nova_null : (nova_Nova_Object*)title);
-	x = (int)(x == (intptr_t)nova_null ? 0 : x);
-	y = (int)(y == (intptr_t)nova_null ? 0 : y);
-	width = (int)(width == (intptr_t)nova_null ? 0 : width);
-	height = (int)(height == (intptr_t)nova_null ? 0 : height);
 	return nova_star_Nova_Window_Nova_construct(0, exceptionData, title, x, y, width, height);
 }
 

@@ -366,10 +366,8 @@ nova_io_Nova_File* nova_io_Nova_FileFunctionMap_functionMapFileFunctionMap_Nova_
 	return nova_io_Nova_File_1_Nova_construct(0, exceptionData, location);
 }
 
-nova_datastruct_list_Nova_Array* nova_io_Nova_FileFunctionMap_functionMap_Nova_getChildFiles(nova_io_Nova_FileFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_io_Nova_File* reference, int recursive, int includeHidden)
+nova_datastruct_list_Nova_Array* nova_io_Nova_FileFunctionMap_functionMap_Nova_getChildFiles(nova_io_Nova_FileFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_io_Nova_File* reference, char recursive, char includeHidden)
 {
-	recursive = (int)(recursive == (intptr_t)nova_null ? 0 : recursive);
-	includeHidden = (int)(includeHidden == (intptr_t)nova_null ? 0 : includeHidden);
 	return nova_io_Nova_File_Nova_getChildFiles(reference, exceptionData, recursive, includeHidden);
 }
 

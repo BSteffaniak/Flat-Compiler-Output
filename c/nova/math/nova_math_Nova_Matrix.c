@@ -663,26 +663,21 @@ void nova_math_Nova_MatrixFunctionMap_functionMap_Nova_swapRows(nova_math_Nova_M
 
 void nova_math_Nova_MatrixFunctionMap_functionMap_Nova_multiplyRow(nova_math_Nova_MatrixFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_math_Nova_Matrix* reference, int sourceRow, int destinationRow, double scalar)
 {
-	destinationRow = (int)(destinationRow == (intptr_t)nova_null ? sourceRow : destinationRow);
-	scalar = (double)(scalar == (intptr_t)nova_null ? 1 : scalar);
 	nova_math_Nova_Matrix_Nova_multiplyRow(reference, exceptionData, sourceRow, destinationRow, scalar);
 }
 
 void nova_math_Nova_MatrixFunctionMap_functionMap_Nova_addRow(nova_math_Nova_MatrixFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_math_Nova_Matrix* reference, int sourceRow, int destinationRow)
 {
-	destinationRow = (int)(destinationRow == (intptr_t)nova_null ? sourceRow : destinationRow);
 	nova_math_Nova_Matrix_Nova_addRow(reference, exceptionData, sourceRow, destinationRow);
 }
 
 void nova_math_Nova_MatrixFunctionMap_functionMap_Nova_subtractRow(nova_math_Nova_MatrixFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_math_Nova_Matrix* reference, int sourceRow, int destinationRow)
 {
-	destinationRow = (int)(destinationRow == (intptr_t)nova_null ? sourceRow : destinationRow);
 	nova_math_Nova_Matrix_Nova_subtractRow(reference, exceptionData, sourceRow, destinationRow);
 }
 
-nova_math_Nova_Matrix* nova_math_Nova_MatrixFunctionMap_functionMap_Nova_add(nova_math_Nova_MatrixFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_math_Nova_Matrix* reference, nova_math_Nova_Matrix* other, int allowUnequalDimensions)
+nova_math_Nova_Matrix* nova_math_Nova_MatrixFunctionMap_functionMap_Nova_add(nova_math_Nova_MatrixFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_math_Nova_Matrix* reference, nova_math_Nova_Matrix* other, char allowUnequalDimensions)
 {
-	allowUnequalDimensions = (int)(allowUnequalDimensions == (intptr_t)nova_null ? 0 : allowUnequalDimensions);
 	return nova_math_Nova_Matrix_Nova_add(reference, exceptionData, other, allowUnequalDimensions);
 }
 
@@ -696,9 +691,8 @@ nova_math_Nova_Matrix* nova_math_Nova_MatrixFunctionMap_functionMap1_Nova_plus(n
 	return nova_math_Nova_Matrix_1_Nova_plus(reference, exceptionData, other, allowUnequalDimensions);
 }
 
-nova_math_Nova_Matrix* nova_math_Nova_MatrixFunctionMap_functionMap_Nova_subtract(nova_math_Nova_MatrixFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_math_Nova_Matrix* reference, nova_math_Nova_Matrix* other, int allowUnequalDimensions)
+nova_math_Nova_Matrix* nova_math_Nova_MatrixFunctionMap_functionMap_Nova_subtract(nova_math_Nova_MatrixFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_math_Nova_Matrix* reference, nova_math_Nova_Matrix* other, char allowUnequalDimensions)
 {
-	allowUnequalDimensions = (int)(allowUnequalDimensions == (intptr_t)nova_null ? 0 : allowUnequalDimensions);
 	return nova_math_Nova_Matrix_Nova_subtract(reference, exceptionData, other, allowUnequalDimensions);
 }
 

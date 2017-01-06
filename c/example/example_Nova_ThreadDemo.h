@@ -22,6 +22,7 @@ typedef struct example_Nova_ThreadDemoFunctionMap example_Nova_ThreadDemoFunctio
 #include <nova/primitive/nova_primitive_Nova_Null.h>
 #include <nova/primitive/number/nova_primitive_number_Nova_Char.h>
 #include <nova/primitive/nova_primitive_Nova_Bool.h>
+#include <nova/datastruct/list/nova_datastruct_list_Nova_List.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_Array.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_ImmutableArray.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_IntArray.h>
@@ -69,6 +70,8 @@ void example_Nova_ThreadDemoFunctionMap_Nova_init_static(nova_exception_Nova_Exc
 example_Nova_ThreadDemoFunctionMap* example_Nova_ThreadDemoFunctionMap_Nova_construct(example_Nova_ThreadDemoFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
 void example_Nova_ThreadDemoFunctionMap_Nova_destroy(example_Nova_ThreadDemoFunctionMap** this, nova_exception_Nova_ExceptionData* exceptionData);
 void example_Nova_ThreadDemoFunctionMap_Nova_this(example_Nova_ThreadDemoFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+example_Nova_ThreadDemo* example_Nova_ThreadDemoFunctionMap_functionMapThreadDemoFunctionMap_Nova_construct(example_Nova_ThreadDemoFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+void example_Nova_ThreadDemoFunctionMap_functionMap_static_Nova_main(example_Nova_ThreadDemoFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_list_Nova_Array* args);
 void example_Nova_ThreadDemoFunctionMap_Nova_super(example_Nova_ThreadDemoFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
 
 #endif

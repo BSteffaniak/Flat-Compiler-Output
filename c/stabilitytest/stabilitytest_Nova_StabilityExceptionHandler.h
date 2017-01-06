@@ -22,6 +22,7 @@ typedef struct stabilitytest_Nova_StabilityExceptionHandlerFunctionMap stability
 #include <nova/primitive/nova_primitive_Nova_Null.h>
 #include <nova/primitive/number/nova_primitive_number_Nova_Char.h>
 #include <nova/primitive/nova_primitive_Nova_Bool.h>
+#include <nova/datastruct/list/nova_datastruct_list_Nova_List.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_Array.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_ImmutableArray.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_IntArray.h>
@@ -41,6 +42,7 @@ typedef struct stabilitytest_Nova_StabilityExceptionHandlerFunctionMap stability
 #include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <nova/thread/nova_thread_Nova_UncaughtExceptionHandler.h>
 #include <stabilitytest/stabilitytest_Nova_StabilityTest.h>
+#include <nova/thread/nova_thread_Nova_UncaughtExceptionHandler.h>
 #include <nova/NativeObject.h>
 #include <nova/operators/nova_operators_Nova_EqualsOperator.h>
 
@@ -70,6 +72,8 @@ void stabilitytest_Nova_StabilityExceptionHandlerFunctionMap_Nova_init_static(no
 stabilitytest_Nova_StabilityExceptionHandlerFunctionMap* stabilitytest_Nova_StabilityExceptionHandlerFunctionMap_Nova_construct(stabilitytest_Nova_StabilityExceptionHandlerFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
 void stabilitytest_Nova_StabilityExceptionHandlerFunctionMap_Nova_destroy(stabilitytest_Nova_StabilityExceptionHandlerFunctionMap** this, nova_exception_Nova_ExceptionData* exceptionData);
 void stabilitytest_Nova_StabilityExceptionHandlerFunctionMap_Nova_this(stabilitytest_Nova_StabilityExceptionHandlerFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+stabilitytest_Nova_StabilityExceptionHandler* stabilitytest_Nova_StabilityExceptionHandlerFunctionMap_functionMapStabilityExceptionHandlerFunctionMap_Nova_construct(stabilitytest_Nova_StabilityExceptionHandlerFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, stabilitytest_Nova_StabilityTest* program);
+void stabilitytest_Nova_StabilityExceptionHandlerFunctionMap_functionMap_Nova_uncaughtException(stabilitytest_Nova_StabilityExceptionHandlerFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, stabilitytest_Nova_StabilityExceptionHandler* reference, nova_thread_Nova_Thread* thread, nova_exception_Nova_Exception* exception);
 void stabilitytest_Nova_StabilityExceptionHandlerFunctionMap_Nova_super(stabilitytest_Nova_StabilityExceptionHandlerFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
 
 #endif

@@ -170,12 +170,6 @@ void nova_time_Nova_DateFunctionMap_functionMap_Nova_updateTime(nova_time_Nova_D
 
 nova_Nova_String* nova_time_Nova_DateFunctionMap_functionMap_Nova_formatDate(nova_time_Nova_DateFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_time_Nova_Date* reference, nova_Nova_String* str, int first, int second, int third, int fourth, int fifth, int sixth)
 {
-	first = (int)(first == (intptr_t)nova_null ? (nova_Nova_Object*)reference->nova_time_Nova_Date_Nova_month : (nova_Nova_Object*)first);
-	second = (int)(second == (intptr_t)nova_null ? (nova_Nova_Object*)reference->nova_time_Nova_Date_Nova_day : (nova_Nova_Object*)second);
-	third = (int)(third == (intptr_t)nova_null ? (nova_Nova_Object*)reference->nova_time_Nova_Date_Nova_year : (nova_Nova_Object*)third);
-	fourth = (int)(fourth == (intptr_t)nova_null ? (nova_Nova_Object*)reference->nova_time_Nova_Date_Nova_hour : (nova_Nova_Object*)fourth);
-	fifth = (int)(fifth == (intptr_t)nova_null ? (nova_Nova_Object*)reference->nova_time_Nova_Date_Nova_minute : (nova_Nova_Object*)fifth);
-	sixth = (int)(sixth == (intptr_t)nova_null ? second : sixth);
 	return nova_time_Nova_Date_Nova_formatDate(reference, exceptionData, str, first, second, third, fourth, fifth, sixth);
 }
 

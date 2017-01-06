@@ -765,7 +765,6 @@ nova_datastruct_list_Nova_Array* nova_datastruct_list_Nova_ArrayFunctionMap_func
 
 nova_datastruct_list_Nova_Array* nova_datastruct_list_Nova_ArrayFunctionMap_functionMapArrayFunctionMap1_Nova_construct(nova_datastruct_list_Nova_ArrayFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, int count, int initialCapacity)
 {
-	initialCapacity = (int)(initialCapacity == (intptr_t)nova_null ? count : initialCapacity);
 	return (nova_datastruct_list_Nova_Array*)nova_datastruct_list_Nova_Array_1_Nova_construct(0, exceptionData, count, initialCapacity);
 }
 
@@ -821,7 +820,6 @@ nova_Nova_Object* nova_datastruct_list_Nova_ArrayFunctionMap_functionMap1_Nova_r
 
 int nova_datastruct_list_Nova_ArrayFunctionMap_functionMap_Nova_indexOf(nova_datastruct_list_Nova_ArrayFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_list_Nova_Array* reference, nova_Nova_Object* element, int defaultReturnValue)
 {
-	defaultReturnValue = (int)(defaultReturnValue == (intptr_t)nova_null ? -1 : defaultReturnValue);
 	return nova_datastruct_list_Nova_Array_Nova_indexOf(reference, exceptionData, element, defaultReturnValue);
 }
 

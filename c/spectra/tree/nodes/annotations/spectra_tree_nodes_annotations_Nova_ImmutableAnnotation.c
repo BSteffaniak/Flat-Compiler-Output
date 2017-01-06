@@ -187,16 +187,11 @@ void spectra_tree_nodes_annotations_Nova_ImmutableAnnotationFunctionMap_Nova_thi
 
 spectra_tree_nodes_annotations_Nova_ImmutableAnnotation* spectra_tree_nodes_annotations_Nova_ImmutableAnnotationFunctionMap_functionMapImmutableAnnotationFunctionMap_Nova_construct(spectra_tree_nodes_annotations_Nova_ImmutableAnnotationFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, spectra_tree_nodes_Nova_Node* parent, spectra_util_Nova_Location* location)
 {
-	parent = (spectra_tree_nodes_Nova_Node*)(parent == 0 ? (nova_Nova_Object*)(nova_Nova_Object*)nova_null : (nova_Nova_Object*)parent);
-	location = (spectra_util_Nova_Location*)(location == 0 ? (nova_Nova_Object*)spectra_util_Nova_Location_Nova_INVALID : (nova_Nova_Object*)location);
 	return spectra_tree_nodes_annotations_Nova_ImmutableAnnotation_Nova_construct(0, exceptionData, parent, location);
 }
 
-spectra_tree_nodes_annotations_Nova_ImmutableAnnotation* spectra_tree_nodes_annotations_Nova_ImmutableAnnotationFunctionMap_functionMap_static_Nova_parse(spectra_tree_nodes_annotations_Nova_ImmutableAnnotationFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* type, nova_Nova_String* parameters, spectra_tree_nodes_Nova_Node* parent, spectra_util_Nova_Location* location, int require)
+spectra_tree_nodes_annotations_Nova_ImmutableAnnotation* spectra_tree_nodes_annotations_Nova_ImmutableAnnotationFunctionMap_functionMap_static_Nova_parse(spectra_tree_nodes_annotations_Nova_ImmutableAnnotationFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* type, nova_Nova_String* parameters, spectra_tree_nodes_Nova_Node* parent, spectra_util_Nova_Location* location, char require)
 {
-	parent = (spectra_tree_nodes_Nova_Node*)(parent == 0 ? (nova_Nova_Object*)(nova_Nova_Object*)nova_null : (nova_Nova_Object*)parent);
-	location = (spectra_util_Nova_Location*)(location == 0 ? (nova_Nova_Object*)spectra_util_Nova_Location_Nova_INVALID : (nova_Nova_Object*)location);
-	require = (int)(require == (intptr_t)nova_null ? 1 : require);
 	return spectra_tree_nodes_annotations_Nova_ImmutableAnnotation_static_Nova_parse(0, exceptionData, type, parameters, parent, location, require);
 }
 

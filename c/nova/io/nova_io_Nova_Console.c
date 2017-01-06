@@ -298,7 +298,6 @@ nova_io_Nova_Console* nova_io_Nova_ConsoleFunctionMap_functionMapConsoleFunction
 
 void nova_io_Nova_ConsoleFunctionMap_functionMap_static_Nova_log(nova_io_Nova_ConsoleFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_Object* obj)
 {
-	obj = (nova_Nova_Object*)(obj == 0 ? (nova_Nova_Object*)nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("")) : (nova_Nova_Object*)obj);
 	nova_io_Nova_Console_static_Nova_log(0, exceptionData, obj);
 }
 

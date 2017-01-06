@@ -204,9 +204,8 @@ char spectra_tree_nodes_annotations_Nova_ModifierFunctionMap_functionMap_Nova_ap
 	return spectra_tree_nodes_annotations_Nova_Modifier_Nova_apply(reference, exceptionData, to, alias);
 }
 
-char spectra_tree_nodes_annotations_Nova_ModifierFunctionMap_functionMap_Nova_onAppliedAsModifier(spectra_tree_nodes_annotations_Nova_ModifierFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, spectra_tree_nodes_annotations_Nova_Modifier* reference, spectra_tree_nodes_Nova_Node* toNode, int throwError)
+char spectra_tree_nodes_annotations_Nova_ModifierFunctionMap_functionMap_Nova_onAppliedAsModifier(spectra_tree_nodes_annotations_Nova_ModifierFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, spectra_tree_nodes_annotations_Nova_Modifier* reference, spectra_tree_nodes_Nova_Node* toNode, char throwError)
 {
-	throwError = (int)(throwError == (intptr_t)nova_null ? 1 : throwError);
 	return spectra_tree_nodes_annotations_Nova_Modifier_Nova_onAppliedAsModifier(reference, exceptionData, toNode, throwError);
 }
 
