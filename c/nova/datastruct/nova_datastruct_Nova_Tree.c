@@ -135,7 +135,7 @@ void nova_datastruct_Nova_TreeFunctionMap_Nova_this(nova_datastruct_Nova_TreeFun
 {
 }
 
-nova_datastruct_Nova_Tree* nova_datastruct_Nova_TreeFunctionMap_functionMapTreeFunctionMap_static_Nova_construct(nova_datastruct_Nova_TreeFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_Nova_Node* root)
+nova_datastruct_Nova_Tree* nova_datastruct_Nova_TreeFunctionMap_functionMapTreeFunctionMap_Nova_construct(nova_datastruct_Nova_TreeFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_Nova_Node* root)
 {
 	root = (nova_datastruct_Nova_Node*)(root == 0 ? (nova_Nova_Object*)(nova_Nova_Object*)nova_null : (nova_Nova_Object*)root);
 	return (nova_datastruct_Nova_Tree*)nova_datastruct_Nova_Tree_Nova_construct(0, exceptionData, root);
@@ -165,8 +165,8 @@ void nova_datastruct_Nova_TreeFunctionMap_Nova_super(nova_datastruct_Nova_TreeFu
 {
 }
 
-nova_datastruct_Nova_Tree* nova_datastruct_Nova_TreeFunctionMap_virtualfunctionMapTree_static_Nova_construct(nova_datastruct_Nova_TreeFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_Nova_Node* root)
+nova_datastruct_Nova_Tree* nova_datastruct_Nova_TreeFunctionMap_virtualfunctionMapTree_Nova_construct(nova_datastruct_Nova_TreeFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_Nova_Node* root)
 {
-	return this->vtable->nova_datastruct_Nova_TreeFunctionMap_virtualfunctionMapTree_static_Nova_construct(0, exceptionData, root);
+	return this->vtable->nova_datastruct_Nova_TreeFunctionMap_virtualfunctionMapTree_Nova_construct(this, exceptionData, root);
 }
 

@@ -658,22 +658,22 @@ void nova_Nova_StringFunctionMap_Nova_this(nova_Nova_StringFunctionMap* this, no
 {
 }
 
-nova_Nova_String* nova_Nova_StringFunctionMap_functionMapStringFunctionMap0_static_Nova_construct(nova_Nova_StringFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, char c)
+nova_Nova_String* nova_Nova_StringFunctionMap_functionMapStringFunctionMap0_Nova_construct(nova_Nova_StringFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, char c)
 {
 	return nova_Nova_String_0_Nova_construct(0, exceptionData, c);
 }
 
-nova_Nova_String* nova_Nova_StringFunctionMap_functionMapStringFunctionMap1_static_Nova_construct(nova_Nova_StringFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, char* chars)
+nova_Nova_String* nova_Nova_StringFunctionMap_functionMapStringFunctionMap1_Nova_construct(nova_Nova_StringFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, char* chars)
 {
 	return nova_Nova_String_1_Nova_construct(0, exceptionData, chars);
 }
 
-nova_Nova_String* nova_Nova_StringFunctionMap_functionMapStringFunctionMap2_static_Nova_construct(nova_Nova_StringFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, char* chars, int count)
+nova_Nova_String* nova_Nova_StringFunctionMap_functionMapStringFunctionMap2_Nova_construct(nova_Nova_StringFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, char* chars, int count)
 {
 	return nova_Nova_String_2_Nova_construct(0, exceptionData, chars, count);
 }
 
-nova_Nova_String* nova_Nova_StringFunctionMap_functionMapStringFunctionMap3_static_Nova_construct(nova_Nova_StringFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_list_Nova_CharArray* chars)
+nova_Nova_String* nova_Nova_StringFunctionMap_functionMapStringFunctionMap3_Nova_construct(nova_Nova_StringFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_list_Nova_CharArray* chars)
 {
 	return nova_Nova_String_3_Nova_construct(0, exceptionData, chars);
 }

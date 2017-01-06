@@ -198,7 +198,7 @@ void nova_math_Nova_MathFunctionMap_Nova_this(nova_math_Nova_MathFunctionMap* th
 {
 }
 
-nova_math_Nova_Math* nova_math_Nova_MathFunctionMap_functionMapMathFunctionMap_static_Nova_construct(nova_math_Nova_MathFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+nova_math_Nova_Math* nova_math_Nova_MathFunctionMap_functionMapMathFunctionMap_Nova_construct(nova_math_Nova_MathFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
 	return nova_math_Nova_Math_Nova_construct(0, exceptionData);
 }

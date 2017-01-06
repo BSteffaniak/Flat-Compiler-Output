@@ -143,7 +143,7 @@ void nova_primitive_number_Nova_Char_Nova_super(nova_primitive_number_Nova_Char*
 }
 
 
-nova_primitive_number_Nova_Char* nova_primitive_number_Nova_CharFunctionMap_functionMapCharFunctionMap_static_Nova_construct(nova_primitive_number_Nova_CharFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, char value);
+nova_primitive_number_Nova_Char* nova_primitive_number_Nova_CharFunctionMap_functionMapCharFunctionMap_Nova_construct(nova_primitive_number_Nova_CharFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, char value);
 void nova_primitive_number_Nova_CharFunctionMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData)
 {
 	{
@@ -182,7 +182,7 @@ void nova_primitive_number_Nova_CharFunctionMap_Nova_this(nova_primitive_number_
 {
 }
 
-nova_primitive_number_Nova_Char* nova_primitive_number_Nova_CharFunctionMap_functionMapCharFunctionMap_static_Nova_construct(nova_primitive_number_Nova_CharFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, char value)
+nova_primitive_number_Nova_Char* nova_primitive_number_Nova_CharFunctionMap_functionMapCharFunctionMap_Nova_construct(nova_primitive_number_Nova_CharFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, char value)
 {
 	return nova_primitive_number_Nova_Char_Nova_construct(0, exceptionData, value);
 }

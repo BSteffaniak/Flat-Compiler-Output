@@ -117,7 +117,7 @@ void nova_meta_Nova_GenericParameterFunctionMap_Nova_this(nova_meta_Nova_Generic
 {
 }
 
-nova_meta_Nova_GenericParameter* nova_meta_Nova_GenericParameterFunctionMap_functionMapGenericParameterFunctionMap_static_Nova_construct(nova_meta_Nova_GenericParameterFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_meta_Nova_Type* value, nova_meta_Nova_Type* defaultValue)
+nova_meta_Nova_GenericParameter* nova_meta_Nova_GenericParameterFunctionMap_functionMapGenericParameterFunctionMap_Nova_construct(nova_meta_Nova_GenericParameterFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_meta_Nova_Type* value, nova_meta_Nova_Type* defaultValue)
 {
 	return nova_meta_Nova_GenericParameter_Nova_construct(0, exceptionData, value, defaultValue);
 }

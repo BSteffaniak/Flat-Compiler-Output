@@ -113,7 +113,7 @@ void nova_regex_Nova_PatternFunctionMap_Nova_this(nova_regex_Nova_PatternFunctio
 {
 }
 
-nova_regex_Nova_Pattern* nova_regex_Nova_PatternFunctionMap_functionMapPatternFunctionMap_static_Nova_construct(nova_regex_Nova_PatternFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* pattern)
+nova_regex_Nova_Pattern* nova_regex_Nova_PatternFunctionMap_functionMapPatternFunctionMap_Nova_construct(nova_regex_Nova_PatternFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* pattern)
 {
 	return nova_regex_Nova_Pattern_Nova_construct(0, exceptionData, pattern);
 }

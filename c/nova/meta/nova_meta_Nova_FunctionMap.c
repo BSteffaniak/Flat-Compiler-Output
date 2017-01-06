@@ -110,7 +110,7 @@ void nova_meta_Nova_FunctionMapFunctionMap_Nova_this(nova_meta_Nova_FunctionMapF
 {
 }
 
-nova_meta_Nova_FunctionMap* nova_meta_Nova_FunctionMapFunctionMap_functionMapFunctionMapFunctionMap_static_Nova_construct(nova_meta_Nova_FunctionMapFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+nova_meta_Nova_FunctionMap* nova_meta_Nova_FunctionMapFunctionMap_functionMapFunctionMapFunctionMap_Nova_construct(nova_meta_Nova_FunctionMapFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
 	return nova_meta_Nova_FunctionMap_Nova_construct(0, exceptionData);
 }

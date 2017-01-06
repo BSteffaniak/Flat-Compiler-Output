@@ -399,7 +399,7 @@ void spectra_tree_nodes_Nova_TypeFunctionMap_Nova_this(spectra_tree_nodes_Nova_T
 {
 }
 
-spectra_tree_nodes_Nova_Type* spectra_tree_nodes_Nova_TypeFunctionMap_functionMapTypeFunctionMap_static_Nova_construct(spectra_tree_nodes_Nova_TypeFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* name)
+spectra_tree_nodes_Nova_Type* spectra_tree_nodes_Nova_TypeFunctionMap_functionMapTypeFunctionMap_Nova_construct(spectra_tree_nodes_Nova_TypeFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* name)
 {
 	name = (nova_Nova_String*)(name == 0 ? (nova_Nova_Object*)(nova_Nova_Object*)nova_null : (nova_Nova_Object*)name);
 	return spectra_tree_nodes_Nova_Type_Nova_construct(0, exceptionData, name);
@@ -462,9 +462,9 @@ void spectra_tree_nodes_Nova_TypeFunctionMap_Nova_super(spectra_tree_nodes_Nova_
 {
 }
 
-spectra_tree_nodes_Nova_Type* spectra_tree_nodes_Nova_TypeFunctionMap_virtualfunctionMapType_static_Nova_construct(spectra_tree_nodes_Nova_TypeFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* name)
+spectra_tree_nodes_Nova_Type* spectra_tree_nodes_Nova_TypeFunctionMap_virtualfunctionMapType_Nova_construct(spectra_tree_nodes_Nova_TypeFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* name)
 {
-	return this->vtable->spectra_tree_nodes_Nova_TypeFunctionMap_virtualfunctionMapType_static_Nova_construct(0, exceptionData, name);
+	return this->vtable->spectra_tree_nodes_Nova_TypeFunctionMap_virtualfunctionMapType_Nova_construct(this, exceptionData, name);
 }
 
 spectra_tree_nodes_Nova_Type* spectra_tree_nodes_Nova_TypeFunctionMap_virtualfunctionMap_static_Nova_parse(spectra_tree_nodes_Nova_TypeFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* input, spectra_tree_nodes_Nova_Node* parent, spectra_util_Nova_Location* location, int require)

@@ -351,7 +351,7 @@ void nova_math_logic_Nova_WFFFunctionMap_Nova_this(nova_math_logic_Nova_WFFFunct
 {
 }
 
-nova_math_logic_Nova_WFF* nova_math_logic_Nova_WFFFunctionMap_functionMapWFFFunctionMap_static_Nova_construct(nova_math_logic_Nova_WFFFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* wff, nova_datastruct_list_Nova_Array* letters)
+nova_math_logic_Nova_WFF* nova_math_logic_Nova_WFFFunctionMap_functionMapWFFFunctionMap_Nova_construct(nova_math_logic_Nova_WFFFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* wff, nova_datastruct_list_Nova_Array* letters)
 {
 	return nova_math_logic_Nova_WFF_Nova_construct(0, exceptionData, wff, letters);
 }

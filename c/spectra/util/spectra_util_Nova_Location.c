@@ -247,17 +247,17 @@ void spectra_util_Nova_LocationFunctionMap_Nova_this(spectra_util_Nova_LocationF
 {
 }
 
-spectra_util_Nova_Location* spectra_util_Nova_LocationFunctionMap_functionMapLocationFunctionMap0_static_Nova_construct(spectra_util_Nova_LocationFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+spectra_util_Nova_Location* spectra_util_Nova_LocationFunctionMap_functionMapLocationFunctionMap0_Nova_construct(spectra_util_Nova_LocationFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
 	return spectra_util_Nova_Location_0_Nova_construct(0, exceptionData);
 }
 
-spectra_util_Nova_Location* spectra_util_Nova_LocationFunctionMap_functionMapLocationFunctionMap1_static_Nova_construct(spectra_util_Nova_LocationFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, spectra_util_Nova_Location* loc)
+spectra_util_Nova_Location* spectra_util_Nova_LocationFunctionMap_functionMapLocationFunctionMap1_Nova_construct(spectra_util_Nova_LocationFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, spectra_util_Nova_Location* loc)
 {
 	return spectra_util_Nova_Location_1_Nova_construct(0, exceptionData, loc);
 }
 
-spectra_util_Nova_Location* spectra_util_Nova_LocationFunctionMap_functionMapLocationFunctionMap2_static_Nova_construct(spectra_util_Nova_LocationFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, int lineNumber, int offset, int start, int end)
+spectra_util_Nova_Location* spectra_util_Nova_LocationFunctionMap_functionMapLocationFunctionMap2_Nova_construct(spectra_util_Nova_LocationFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, int lineNumber, int offset, int start, int end)
 {
 	return spectra_util_Nova_Location_2_Nova_construct(0, exceptionData, lineNumber, offset, start, end);
 }

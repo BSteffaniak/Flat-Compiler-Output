@@ -122,7 +122,7 @@ void nova_datastruct_list_Nova_ListNodeFunctionMap_Nova_this(nova_datastruct_lis
 {
 }
 
-nova_datastruct_list_Nova_ListNode* nova_datastruct_list_Nova_ListNodeFunctionMap_functionMapListNodeFunctionMap_static_Nova_construct(nova_datastruct_list_Nova_ListNodeFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_Object* data, nova_datastruct_list_Nova_ListNode* next)
+nova_datastruct_list_Nova_ListNode* nova_datastruct_list_Nova_ListNodeFunctionMap_functionMapListNodeFunctionMap_Nova_construct(nova_datastruct_list_Nova_ListNodeFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_Object* data, nova_datastruct_list_Nova_ListNode* next)
 {
 	next = (nova_datastruct_list_Nova_ListNode*)(next == 0 ? (nova_Nova_Object*)(nova_Nova_Object*)nova_null : (nova_Nova_Object*)next);
 	return nova_datastruct_list_Nova_ListNode_Nova_construct(0, exceptionData, data, next);

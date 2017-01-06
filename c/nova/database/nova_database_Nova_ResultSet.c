@@ -124,7 +124,7 @@ void nova_database_Nova_ResultSetFunctionMap_Nova_this(nova_database_Nova_Result
 {
 }
 
-nova_database_Nova_ResultSet* nova_database_Nova_ResultSetFunctionMap_functionMapResultSetFunctionMap_static_Nova_construct(nova_database_Nova_ResultSetFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_list_Nova_Array* rows, int numCols)
+nova_database_Nova_ResultSet* nova_database_Nova_ResultSetFunctionMap_functionMapResultSetFunctionMap_Nova_construct(nova_database_Nova_ResultSetFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_list_Nova_Array* rows, int numCols)
 {
 	return nova_database_Nova_ResultSet_Nova_construct(0, exceptionData, rows, numCols);
 }

@@ -176,12 +176,12 @@ void nova_math_Nova_Vector3DFunctionMap_Nova_this(nova_math_Nova_Vector3DFunctio
 {
 }
 
-nova_math_Nova_Vector3D* nova_math_Nova_Vector3DFunctionMap_functionMapVector3DFunctionMap0_static_Nova_construct(nova_math_Nova_Vector3DFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+nova_math_Nova_Vector3D* nova_math_Nova_Vector3DFunctionMap_functionMapVector3DFunctionMap0_Nova_construct(nova_math_Nova_Vector3DFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
 	return nova_math_Nova_Vector3D_0_Nova_construct(0, exceptionData);
 }
 
-nova_math_Nova_Vector3D* nova_math_Nova_Vector3DFunctionMap_functionMapVector3DFunctionMap1_static_Nova_construct(nova_math_Nova_Vector3DFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, double x, double y, double z)
+nova_math_Nova_Vector3D* nova_math_Nova_Vector3DFunctionMap_functionMapVector3DFunctionMap1_Nova_construct(nova_math_Nova_Vector3DFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, double x, double y, double z)
 {
 	return nova_math_Nova_Vector3D_1_Nova_construct(0, exceptionData, x, y, z);
 }

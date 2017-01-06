@@ -152,7 +152,7 @@ void nova_datastruct_Nova_Tuple2FunctionMap_Nova_this(nova_datastruct_Nova_Tuple
 {
 }
 
-nova_datastruct_Nova_Tuple2* nova_datastruct_Nova_Tuple2FunctionMap_functionMapTuple2FunctionMap_static_Nova_construct(nova_datastruct_Nova_Tuple2FunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_Object* item1, nova_Nova_Object* item2)
+nova_datastruct_Nova_Tuple2* nova_datastruct_Nova_Tuple2FunctionMap_functionMapTuple2FunctionMap_Nova_construct(nova_datastruct_Nova_Tuple2FunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_Object* item1, nova_Nova_Object* item2)
 {
 	return nova_datastruct_Nova_Tuple2_Nova_construct(0, exceptionData, item1, item2);
 }

@@ -153,7 +153,7 @@ void nova_time_Nova_DateFunctionMap_Nova_this(nova_time_Nova_DateFunctionMap* th
 {
 }
 
-nova_time_Nova_Date* nova_time_Nova_DateFunctionMap_functionMapDateFunctionMap_static_Nova_construct(nova_time_Nova_DateFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+nova_time_Nova_Date* nova_time_Nova_DateFunctionMap_functionMapDateFunctionMap_Nova_construct(nova_time_Nova_DateFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
 	return nova_time_Nova_Date_Nova_construct(0, exceptionData);
 }

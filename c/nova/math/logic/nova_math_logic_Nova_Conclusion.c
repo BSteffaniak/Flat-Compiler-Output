@@ -128,7 +128,7 @@ void nova_math_logic_Nova_ConclusionFunctionMap_Nova_this(nova_math_logic_Nova_C
 {
 }
 
-nova_math_logic_Nova_Conclusion* nova_math_logic_Nova_ConclusionFunctionMap_functionMapConclusionFunctionMap_static_Nova_construct(nova_math_logic_Nova_ConclusionFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* statement)
+nova_math_logic_Nova_Conclusion* nova_math_logic_Nova_ConclusionFunctionMap_functionMapConclusionFunctionMap_Nova_construct(nova_math_logic_Nova_ConclusionFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* statement)
 {
 	return nova_math_logic_Nova_Conclusion_Nova_construct(0, exceptionData, statement);
 }

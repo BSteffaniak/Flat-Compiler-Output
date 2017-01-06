@@ -626,17 +626,17 @@ void nova_math_Nova_MatrixFunctionMap_Nova_this(nova_math_Nova_MatrixFunctionMap
 {
 }
 
-nova_math_Nova_Matrix* nova_math_Nova_MatrixFunctionMap_functionMapMatrixFunctionMap0_static_Nova_construct(nova_math_Nova_MatrixFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, int order)
+nova_math_Nova_Matrix* nova_math_Nova_MatrixFunctionMap_functionMapMatrixFunctionMap0_Nova_construct(nova_math_Nova_MatrixFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, int order)
 {
 	return nova_math_Nova_Matrix_0_Nova_construct(0, exceptionData, order);
 }
 
-nova_math_Nova_Matrix* nova_math_Nova_MatrixFunctionMap_functionMapMatrixFunctionMap1_static_Nova_construct(nova_math_Nova_MatrixFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, int rows, int cols)
+nova_math_Nova_Matrix* nova_math_Nova_MatrixFunctionMap_functionMapMatrixFunctionMap1_Nova_construct(nova_math_Nova_MatrixFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, int rows, int cols)
 {
 	return nova_math_Nova_Matrix_1_Nova_construct(0, exceptionData, rows, cols);
 }
 
-nova_math_Nova_Matrix* nova_math_Nova_MatrixFunctionMap_functionMapMatrixFunctionMap2_static_Nova_construct(nova_math_Nova_MatrixFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_list_Nova_Array* data)
+nova_math_Nova_Matrix* nova_math_Nova_MatrixFunctionMap_functionMapMatrixFunctionMap2_Nova_construct(nova_math_Nova_MatrixFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_list_Nova_Array* data)
 {
 	return nova_math_Nova_Matrix_2_Nova_construct(0, exceptionData, data);
 }

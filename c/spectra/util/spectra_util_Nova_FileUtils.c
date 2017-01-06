@@ -141,7 +141,7 @@ void spectra_util_Nova_FileUtilsFunctionMap_Nova_this(spectra_util_Nova_FileUtil
 {
 }
 
-spectra_util_Nova_FileUtils* spectra_util_Nova_FileUtilsFunctionMap_functionMapFileUtilsFunctionMap_static_Nova_construct(spectra_util_Nova_FileUtilsFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+spectra_util_Nova_FileUtils* spectra_util_Nova_FileUtilsFunctionMap_functionMapFileUtilsFunctionMap_Nova_construct(spectra_util_Nova_FileUtilsFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
 	return spectra_util_Nova_FileUtils_Nova_construct(0, exceptionData);
 }

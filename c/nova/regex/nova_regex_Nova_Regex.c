@@ -240,7 +240,7 @@ void nova_regex_Nova_RegexFunctionMap_Nova_this(nova_regex_Nova_RegexFunctionMap
 {
 }
 
-nova_regex_Nova_Regex* nova_regex_Nova_RegexFunctionMap_functionMapRegexFunctionMap_static_Nova_construct(nova_regex_Nova_RegexFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+nova_regex_Nova_Regex* nova_regex_Nova_RegexFunctionMap_functionMapRegexFunctionMap_Nova_construct(nova_regex_Nova_RegexFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
 	return nova_regex_Nova_Regex_Nova_construct(0, exceptionData);
 }

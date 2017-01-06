@@ -128,7 +128,7 @@ void nova_math_logic_Nova_HypothesisFunctionMap_Nova_this(nova_math_logic_Nova_H
 {
 }
 
-nova_math_logic_Nova_Hypothesis* nova_math_logic_Nova_HypothesisFunctionMap_functionMapHypothesisFunctionMap_static_Nova_construct(nova_math_logic_Nova_HypothesisFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* statement)
+nova_math_logic_Nova_Hypothesis* nova_math_logic_Nova_HypothesisFunctionMap_functionMapHypothesisFunctionMap_Nova_construct(nova_math_logic_Nova_HypothesisFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* statement)
 {
 	return nova_math_logic_Nova_Hypothesis_Nova_construct(0, exceptionData, statement);
 }

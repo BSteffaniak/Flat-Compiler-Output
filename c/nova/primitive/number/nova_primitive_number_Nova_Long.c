@@ -151,7 +151,7 @@ void nova_primitive_number_Nova_Long_Nova_super(nova_primitive_number_Nova_Long*
 }
 
 
-nova_primitive_number_Nova_Long* nova_primitive_number_Nova_LongFunctionMap_functionMapLongFunctionMap_static_Nova_construct(nova_primitive_number_Nova_LongFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, long_long value);
+nova_primitive_number_Nova_Long* nova_primitive_number_Nova_LongFunctionMap_functionMapLongFunctionMap_Nova_construct(nova_primitive_number_Nova_LongFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, long_long value);
 void nova_primitive_number_Nova_LongFunctionMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData)
 {
 	{
@@ -190,7 +190,7 @@ void nova_primitive_number_Nova_LongFunctionMap_Nova_this(nova_primitive_number_
 {
 }
 
-nova_primitive_number_Nova_Long* nova_primitive_number_Nova_LongFunctionMap_functionMapLongFunctionMap_static_Nova_construct(nova_primitive_number_Nova_LongFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, long_long value)
+nova_primitive_number_Nova_Long* nova_primitive_number_Nova_LongFunctionMap_functionMapLongFunctionMap_Nova_construct(nova_primitive_number_Nova_LongFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, long_long value)
 {
 	return nova_primitive_number_Nova_Long_Nova_construct(0, exceptionData, value);
 }

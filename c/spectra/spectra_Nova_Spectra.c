@@ -318,7 +318,7 @@ void spectra_Nova_SpectraFunctionMap_Nova_this(spectra_Nova_SpectraFunctionMap* 
 {
 }
 
-spectra_Nova_Spectra* spectra_Nova_SpectraFunctionMap_functionMapSpectraFunctionMap_static_Nova_construct(spectra_Nova_SpectraFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+spectra_Nova_Spectra* spectra_Nova_SpectraFunctionMap_functionMapSpectraFunctionMap_Nova_construct(spectra_Nova_SpectraFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
 	return spectra_Nova_Spectra_Nova_construct(0, exceptionData);
 }

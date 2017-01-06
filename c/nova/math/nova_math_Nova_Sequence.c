@@ -129,7 +129,7 @@ void nova_math_Nova_SequenceFunctionMap_Nova_this(nova_math_Nova_SequenceFunctio
 {
 }
 
-nova_math_Nova_Sequence* nova_math_Nova_SequenceFunctionMap_functionMapSequenceFunctionMap_static_Nova_construct(nova_math_Nova_SequenceFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_list_Nova_DoubleArray* values)
+nova_math_Nova_Sequence* nova_math_Nova_SequenceFunctionMap_functionMapSequenceFunctionMap_Nova_construct(nova_math_Nova_SequenceFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_list_Nova_DoubleArray* values)
 {
 	return nova_math_Nova_Sequence_Nova_construct(0, exceptionData, values);
 }

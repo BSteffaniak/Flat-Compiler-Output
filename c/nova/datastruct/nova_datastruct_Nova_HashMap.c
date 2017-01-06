@@ -586,14 +586,14 @@ void nova_datastruct_Nova_HashMapFunctionMap_Nova_this(nova_datastruct_Nova_Hash
 {
 }
 
-nova_datastruct_Nova_HashMap* nova_datastruct_Nova_HashMapFunctionMap_functionMapHashMapFunctionMap0_static_Nova_construct(nova_datastruct_Nova_HashMapFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, int bucketCount, int bucketSize)
+nova_datastruct_Nova_HashMap* nova_datastruct_Nova_HashMapFunctionMap_functionMapHashMapFunctionMap0_Nova_construct(nova_datastruct_Nova_HashMapFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, int bucketCount, int bucketSize)
 {
 	bucketCount = (int)(bucketCount == (intptr_t)nova_null ? 5 : bucketCount);
 	bucketSize = (int)(bucketSize == (intptr_t)nova_null ? 5 : bucketSize);
 	return (nova_datastruct_Nova_HashMap*)nova_datastruct_Nova_HashMap_0_Nova_construct(0, exceptionData, bucketCount, bucketSize);
 }
 
-nova_datastruct_Nova_HashMap* nova_datastruct_Nova_HashMapFunctionMap_functionMapHashMapFunctionMap1_static_Nova_construct(nova_datastruct_Nova_HashMapFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_Nova_HashMap* source, int bucketCount, int bucketSize)
+nova_datastruct_Nova_HashMap* nova_datastruct_Nova_HashMapFunctionMap_functionMapHashMapFunctionMap1_Nova_construct(nova_datastruct_Nova_HashMapFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_Nova_HashMap* source, int bucketCount, int bucketSize)
 {
 	bucketCount = (int)(bucketCount == (intptr_t)nova_null ? 5 : bucketCount);
 	bucketSize = (int)(bucketSize == (intptr_t)nova_null ? 5 : bucketSize);
@@ -709,9 +709,9 @@ void nova_datastruct_Nova_HashMapFunctionMap_Nova_super(nova_datastruct_Nova_Has
 {
 }
 
-nova_datastruct_Nova_HashMap* nova_datastruct_Nova_HashMapFunctionMap_virtualfunctionMapHashMap0_static_Nova_construct(nova_datastruct_Nova_HashMapFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, int bucketCount, int bucketSize)
+nova_datastruct_Nova_HashMap* nova_datastruct_Nova_HashMapFunctionMap_virtualfunctionMapHashMap0_Nova_construct(nova_datastruct_Nova_HashMapFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, int bucketCount, int bucketSize)
 {
-	return this->vtable->nova_datastruct_Nova_HashMapFunctionMap_virtualfunctionMapHashMap0_static_Nova_construct(0, exceptionData, bucketCount, bucketSize);
+	return this->vtable->nova_datastruct_Nova_HashMapFunctionMap_virtualfunctionMapHashMap0_Nova_construct(this, exceptionData, bucketCount, bucketSize);
 }
 
 nova_Nova_Object* nova_datastruct_Nova_HashMapFunctionMap_virtualfunctionMap_Nova_add(nova_datastruct_Nova_HashMapFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_Nova_HashMap* reference, nova_Nova_Object* key, nova_Nova_Object* value)

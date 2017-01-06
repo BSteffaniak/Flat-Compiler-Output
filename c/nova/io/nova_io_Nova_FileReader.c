@@ -219,7 +219,7 @@ void nova_io_Nova_FileReaderFunctionMap_Nova_this(nova_io_Nova_FileReaderFunctio
 {
 }
 
-nova_io_Nova_FileReader* nova_io_Nova_FileReaderFunctionMap_functionMapFileReaderFunctionMap_static_Nova_construct(nova_io_Nova_FileReaderFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_io_Nova_File* file)
+nova_io_Nova_FileReader* nova_io_Nova_FileReaderFunctionMap_functionMapFileReaderFunctionMap_Nova_construct(nova_io_Nova_FileReaderFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_io_Nova_File* file)
 {
 	return nova_io_Nova_FileReader_0_Nova_construct(0, exceptionData, file);
 }

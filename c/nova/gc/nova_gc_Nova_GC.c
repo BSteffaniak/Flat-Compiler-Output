@@ -160,7 +160,7 @@ void nova_gc_Nova_GCFunctionMap_Nova_this(nova_gc_Nova_GCFunctionMap* this, nova
 {
 }
 
-nova_gc_Nova_GC* nova_gc_Nova_GCFunctionMap_functionMapGCFunctionMap_static_Nova_construct(nova_gc_Nova_GCFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+nova_gc_Nova_GC* nova_gc_Nova_GCFunctionMap_functionMapGCFunctionMap_Nova_construct(nova_gc_Nova_GCFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
 	return nova_gc_Nova_GC_Nova_construct(0, exceptionData);
 }

@@ -178,7 +178,7 @@ void spectra_tree_nodes_Nova_ReturnFunctionMap_Nova_this(spectra_tree_nodes_Nova
 {
 }
 
-spectra_tree_nodes_Nova_Return* spectra_tree_nodes_Nova_ReturnFunctionMap_functionMapReturnFunctionMap_static_Nova_construct(spectra_tree_nodes_Nova_ReturnFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, spectra_tree_nodes_Nova_Node* parent, spectra_util_Nova_Location* location, spectra_tree_nodes_Nova_Value* value)
+spectra_tree_nodes_Nova_Return* spectra_tree_nodes_Nova_ReturnFunctionMap_functionMapReturnFunctionMap_Nova_construct(spectra_tree_nodes_Nova_ReturnFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, spectra_tree_nodes_Nova_Node* parent, spectra_util_Nova_Location* location, spectra_tree_nodes_Nova_Value* value)
 {
 	parent = (spectra_tree_nodes_Nova_Node*)(parent == 0 ? (nova_Nova_Object*)(nova_Nova_Object*)nova_null : (nova_Nova_Object*)parent);
 	location = (spectra_util_Nova_Location*)(location == 0 ? (nova_Nova_Object*)spectra_util_Nova_Location_Nova_INVALID : (nova_Nova_Object*)location);

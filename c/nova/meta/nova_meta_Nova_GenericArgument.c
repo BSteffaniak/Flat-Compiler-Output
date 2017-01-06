@@ -114,7 +114,7 @@ void nova_meta_Nova_GenericArgumentFunctionMap_Nova_this(nova_meta_Nova_GenericA
 {
 }
 
-nova_meta_Nova_GenericArgument* nova_meta_Nova_GenericArgumentFunctionMap_functionMapGenericArgumentFunctionMap_static_Nova_construct(nova_meta_Nova_GenericArgumentFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_meta_Nova_Type* value)
+nova_meta_Nova_GenericArgument* nova_meta_Nova_GenericArgumentFunctionMap_functionMapGenericArgumentFunctionMap_Nova_construct(nova_meta_Nova_GenericArgumentFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_meta_Nova_Type* value)
 {
 	return nova_meta_Nova_GenericArgument_Nova_construct(0, exceptionData, value);
 }

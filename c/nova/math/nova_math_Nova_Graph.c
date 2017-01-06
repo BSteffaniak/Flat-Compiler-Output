@@ -110,7 +110,7 @@ void nova_math_Nova_GraphFunctionMap_Nova_this(nova_math_Nova_GraphFunctionMap* 
 {
 }
 
-nova_math_Nova_Graph* nova_math_Nova_GraphFunctionMap_functionMapGraphFunctionMap_static_Nova_construct(nova_math_Nova_GraphFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+nova_math_Nova_Graph* nova_math_Nova_GraphFunctionMap_functionMapGraphFunctionMap_Nova_construct(nova_math_Nova_GraphFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
 	return nova_math_Nova_Graph_Nova_construct(0, exceptionData);
 }

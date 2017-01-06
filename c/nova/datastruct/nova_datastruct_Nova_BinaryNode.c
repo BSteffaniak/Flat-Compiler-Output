@@ -170,7 +170,7 @@ void nova_datastruct_Nova_BinaryNode_Nova_super(nova_datastruct_Nova_BinaryNode*
 }
 
 
-nova_datastruct_Nova_BinaryNode* nova_datastruct_Nova_BinaryNodeFunctionMap_functionMapBinaryNodeFunctionMap0_static_Nova_construct(nova_datastruct_Nova_BinaryNodeFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_Object* data, int size);
+nova_datastruct_Nova_BinaryNode* nova_datastruct_Nova_BinaryNodeFunctionMap_functionMapBinaryNodeFunctionMap0_Nova_construct(nova_datastruct_Nova_BinaryNodeFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_Object* data, int size);
 nova_datastruct_Nova_BinaryNode* nova_datastruct_Nova_BinaryNodeFunctionMap_functionMap_Nova_getNode(nova_datastruct_Nova_BinaryNodeFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_Nova_BinaryNode* reference, int index);
 void nova_datastruct_Nova_BinaryNodeFunctionMap_functionMap_Nova_setNode(nova_datastruct_Nova_BinaryNodeFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_Nova_BinaryNode* reference, int index, nova_datastruct_Nova_BinaryNode* data);
 void nova_datastruct_Nova_BinaryNodeFunctionMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData)
@@ -210,13 +210,13 @@ void nova_datastruct_Nova_BinaryNodeFunctionMap_Nova_this(nova_datastruct_Nova_B
 {
 }
 
-nova_datastruct_Nova_BinaryNode* nova_datastruct_Nova_BinaryNodeFunctionMap_functionMapBinaryNodeFunctionMap_static_Nova_construct(nova_datastruct_Nova_BinaryNodeFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_Object* data)
+nova_datastruct_Nova_BinaryNode* nova_datastruct_Nova_BinaryNodeFunctionMap_functionMapBinaryNodeFunctionMap_Nova_construct(nova_datastruct_Nova_BinaryNodeFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_Object* data)
 {
 	data = (nova_Nova_Object*)(data == 0 ? (nova_Nova_Object*)(nova_Nova_Object*)nova_null : (nova_Nova_Object*)data);
 	return (nova_datastruct_Nova_BinaryNode*)nova_datastruct_Nova_BinaryNode_0_Nova_construct(0, exceptionData, (nova_datastruct_Nova_Comparable*)(data));
 }
 
-nova_datastruct_Nova_BinaryNode* nova_datastruct_Nova_BinaryNodeFunctionMap_functionMapBinaryNodeFunctionMap0_static_Nova_construct(nova_datastruct_Nova_BinaryNodeFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_Object* data, int size)
+nova_datastruct_Nova_BinaryNode* nova_datastruct_Nova_BinaryNodeFunctionMap_functionMapBinaryNodeFunctionMap0_Nova_construct(nova_datastruct_Nova_BinaryNodeFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_Object* data, int size)
 {
 	return (nova_datastruct_Nova_BinaryNode*)nova_datastruct_Nova_BinaryNode_1_Nova_construct(0, exceptionData, (nova_datastruct_Nova_Comparable*)(data), size);
 }

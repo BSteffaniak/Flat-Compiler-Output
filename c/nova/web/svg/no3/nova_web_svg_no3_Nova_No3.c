@@ -122,7 +122,7 @@ void nova_web_svg_no3_Nova_No3FunctionMap_Nova_this(nova_web_svg_no3_Nova_No3Fun
 {
 }
 
-nova_web_svg_no3_Nova_No3* nova_web_svg_no3_Nova_No3FunctionMap_functionMapNo3FunctionMap_static_Nova_construct(nova_web_svg_no3_Nova_No3FunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+nova_web_svg_no3_Nova_No3* nova_web_svg_no3_Nova_No3FunctionMap_functionMapNo3FunctionMap_Nova_construct(nova_web_svg_no3_Nova_No3FunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
 	return nova_web_svg_no3_Nova_No3_Nova_construct(0, exceptionData);
 }

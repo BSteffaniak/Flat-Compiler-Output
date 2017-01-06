@@ -180,7 +180,7 @@ void nova_Nova_SubstringFunctionMap_Nova_this(nova_Nova_SubstringFunctionMap* th
 {
 }
 
-nova_Nova_Substring* nova_Nova_SubstringFunctionMap_functionMapSubstringFunctionMap_static_Nova_construct(nova_Nova_SubstringFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* source, int start, int end)
+nova_Nova_Substring* nova_Nova_SubstringFunctionMap_functionMapSubstringFunctionMap_Nova_construct(nova_Nova_SubstringFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* source, int start, int end)
 {
 	return nova_Nova_Substring_Nova_construct(0, exceptionData, source, start, end);
 }

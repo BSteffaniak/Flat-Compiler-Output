@@ -116,7 +116,7 @@ void nova_io_Nova_OutputStreamFunctionMap_Nova_this(nova_io_Nova_OutputStreamFun
 {
 }
 
-nova_io_Nova_OutputStream* nova_io_Nova_OutputStreamFunctionMap_functionMapOutputStreamFunctionMap_static_Nova_construct(nova_io_Nova_OutputStreamFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+nova_io_Nova_OutputStream* nova_io_Nova_OutputStreamFunctionMap_functionMapOutputStreamFunctionMap_Nova_construct(nova_io_Nova_OutputStreamFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
 	return nova_io_Nova_OutputStream_Nova_construct(0, exceptionData);
 }

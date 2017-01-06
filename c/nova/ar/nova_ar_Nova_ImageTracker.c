@@ -110,7 +110,7 @@ void nova_ar_Nova_ImageTrackerFunctionMap_Nova_this(nova_ar_Nova_ImageTrackerFun
 {
 }
 
-nova_ar_Nova_ImageTracker* nova_ar_Nova_ImageTrackerFunctionMap_functionMapImageTrackerFunctionMap_static_Nova_construct(nova_ar_Nova_ImageTrackerFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+nova_ar_Nova_ImageTracker* nova_ar_Nova_ImageTrackerFunctionMap_functionMapImageTrackerFunctionMap_Nova_construct(nova_ar_Nova_ImageTrackerFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
 	return nova_ar_Nova_ImageTracker_Nova_construct(0, exceptionData);
 }

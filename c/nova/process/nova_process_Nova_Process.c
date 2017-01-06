@@ -114,7 +114,7 @@ void nova_process_Nova_ProcessFunctionMap_Nova_this(nova_process_Nova_ProcessFun
 {
 }
 
-nova_process_Nova_Process* nova_process_Nova_ProcessFunctionMap_functionMapProcessFunctionMap_static_Nova_construct(nova_process_Nova_ProcessFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_io_Nova_InputStream* reader)
+nova_process_Nova_Process* nova_process_Nova_ProcessFunctionMap_functionMapProcessFunctionMap_Nova_construct(nova_process_Nova_ProcessFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_io_Nova_InputStream* reader)
 {
 	return nova_process_Nova_Process_Nova_construct(0, exceptionData, reader);
 }

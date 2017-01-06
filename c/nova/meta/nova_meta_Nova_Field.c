@@ -117,7 +117,7 @@ void nova_meta_Nova_FieldFunctionMap_Nova_this(nova_meta_Nova_FieldFunctionMap* 
 {
 }
 
-nova_meta_Nova_Field* nova_meta_Nova_FieldFunctionMap_functionMapFieldFunctionMap_static_Nova_construct(nova_meta_Nova_FieldFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* name, nova_meta_Nova_Type* type)
+nova_meta_Nova_Field* nova_meta_Nova_FieldFunctionMap_functionMapFieldFunctionMap_Nova_construct(nova_meta_Nova_FieldFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* name, nova_meta_Nova_Type* type)
 {
 	return nova_meta_Nova_Field_Nova_construct(0, exceptionData, name, type);
 }

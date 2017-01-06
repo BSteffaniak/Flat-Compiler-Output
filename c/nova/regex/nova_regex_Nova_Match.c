@@ -139,7 +139,7 @@ void nova_regex_Nova_MatchFunctionMap_Nova_this(nova_regex_Nova_MatchFunctionMap
 {
 }
 
-nova_regex_Nova_Match* nova_regex_Nova_MatchFunctionMap_functionMapMatchFunctionMap_static_Nova_construct(nova_regex_Nova_MatchFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* source, int start, int end)
+nova_regex_Nova_Match* nova_regex_Nova_MatchFunctionMap_functionMapMatchFunctionMap_Nova_construct(nova_regex_Nova_MatchFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* source, int start, int end)
 {
 	return nova_regex_Nova_Match_Nova_construct(0, exceptionData, source, start, end);
 }

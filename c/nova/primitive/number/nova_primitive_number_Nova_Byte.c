@@ -114,7 +114,7 @@ void nova_primitive_number_Nova_Byte_Nova_super(nova_primitive_number_Nova_Byte*
 }
 
 
-nova_primitive_number_Nova_Byte* nova_primitive_number_Nova_ByteFunctionMap_functionMapByteFunctionMap_static_Nova_construct(nova_primitive_number_Nova_ByteFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, char value);
+nova_primitive_number_Nova_Byte* nova_primitive_number_Nova_ByteFunctionMap_functionMapByteFunctionMap_Nova_construct(nova_primitive_number_Nova_ByteFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, char value);
 void nova_primitive_number_Nova_ByteFunctionMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData)
 {
 	{
@@ -153,7 +153,7 @@ void nova_primitive_number_Nova_ByteFunctionMap_Nova_this(nova_primitive_number_
 {
 }
 
-nova_primitive_number_Nova_Byte* nova_primitive_number_Nova_ByteFunctionMap_functionMapByteFunctionMap_static_Nova_construct(nova_primitive_number_Nova_ByteFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, char value)
+nova_primitive_number_Nova_Byte* nova_primitive_number_Nova_ByteFunctionMap_functionMapByteFunctionMap_Nova_construct(nova_primitive_number_Nova_ByteFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, char value)
 {
 	return nova_primitive_number_Nova_Byte_Nova_construct(0, exceptionData, value);
 }

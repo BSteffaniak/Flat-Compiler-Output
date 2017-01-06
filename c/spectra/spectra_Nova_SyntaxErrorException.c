@@ -141,12 +141,12 @@ void spectra_Nova_SyntaxErrorExceptionFunctionMap_Nova_this(spectra_Nova_SyntaxE
 {
 }
 
-spectra_Nova_SyntaxErrorException* spectra_Nova_SyntaxErrorExceptionFunctionMap_functionMapSyntaxErrorExceptionFunctionMap_static_Nova_construct(spectra_Nova_SyntaxErrorExceptionFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+spectra_Nova_SyntaxErrorException* spectra_Nova_SyntaxErrorExceptionFunctionMap_functionMapSyntaxErrorExceptionFunctionMap_Nova_construct(spectra_Nova_SyntaxErrorExceptionFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
 	return spectra_Nova_SyntaxErrorException_0_Nova_construct(0, exceptionData);
 }
 
-spectra_Nova_SyntaxErrorException* spectra_Nova_SyntaxErrorExceptionFunctionMap_functionMapSyntaxErrorExceptionFunctionMap0_static_Nova_construct(spectra_Nova_SyntaxErrorExceptionFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* message, spectra_tree_nodes_Nova_Node* node, spectra_tree_nodes_Nova_Program* program)
+spectra_Nova_SyntaxErrorException* spectra_Nova_SyntaxErrorExceptionFunctionMap_functionMapSyntaxErrorExceptionFunctionMap0_Nova_construct(spectra_Nova_SyntaxErrorExceptionFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* message, spectra_tree_nodes_Nova_Node* node, spectra_tree_nodes_Nova_Program* program)
 {
 	node = (spectra_tree_nodes_Nova_Node*)(node == 0 ? (nova_Nova_Object*)(nova_Nova_Object*)nova_null : (nova_Nova_Object*)node);
 	program = (spectra_tree_nodes_Nova_Program*)(program == 0 ? (nova_Nova_Object*)(nova_Nova_Object*)nova_null : (nova_Nova_Object*)program);

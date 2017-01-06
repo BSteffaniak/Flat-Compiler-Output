@@ -56,7 +56,7 @@
 #include <spectra/tree/nodes/spectra_tree_nodes_Nova_Identifier.h>
 #include <spectra/tree/nodes/annotations/spectra_tree_nodes_annotations_Nova_Modifier.h>
 #include <spectra/tree/nodes/annotations/spectra_tree_nodes_annotations_Nova_PureAnnotation.h>
-#include <spectra/tree/nodes/annotations/spectra_tree_nodes_annotations_Nova_Annotation.h>
+#include <spectra/tree/nodes/annotations/spectra_tree_nodes_annotations_Nova_PureAnnotation.h>
 #include <spectra/tree/nodes/spectra_tree_nodes_Nova_Identifier.h>
 #include <spectra/tree/nodes/spectra_tree_nodes_Nova_Value.h>
 #include <nova/datastruct/nova_datastruct_Nova_Tuple2.h>
@@ -188,7 +188,7 @@ void spectra_tree_nodes_functions_Nova_InitializationFunctionFunctionMap_Nova_th
 {
 }
 
-spectra_tree_nodes_functions_Nova_InitializationFunction* spectra_tree_nodes_functions_Nova_InitializationFunctionFunctionMap_functionMapInitializationFunctionFunctionMap_static_Nova_construct(spectra_tree_nodes_functions_Nova_InitializationFunctionFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, spectra_tree_nodes_functions_Nova_Constructor* constructor)
+spectra_tree_nodes_functions_Nova_InitializationFunction* spectra_tree_nodes_functions_Nova_InitializationFunctionFunctionMap_functionMapInitializationFunctionFunctionMap_Nova_construct(spectra_tree_nodes_functions_Nova_InitializationFunctionFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, spectra_tree_nodes_functions_Nova_Constructor* constructor)
 {
 	return spectra_tree_nodes_functions_Nova_InitializationFunction_Nova_construct(0, exceptionData, constructor);
 }

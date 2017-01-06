@@ -183,12 +183,12 @@ void nova_math_Nova_Vector4DFunctionMap_Nova_this(nova_math_Nova_Vector4DFunctio
 {
 }
 
-nova_math_Nova_Vector4D* nova_math_Nova_Vector4DFunctionMap_functionMapVector4DFunctionMap0_static_Nova_construct(nova_math_Nova_Vector4DFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+nova_math_Nova_Vector4D* nova_math_Nova_Vector4DFunctionMap_functionMapVector4DFunctionMap0_Nova_construct(nova_math_Nova_Vector4DFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
 	return nova_math_Nova_Vector4D_0_Nova_construct(0, exceptionData);
 }
 
-nova_math_Nova_Vector4D* nova_math_Nova_Vector4DFunctionMap_functionMapVector4DFunctionMap1_static_Nova_construct(nova_math_Nova_Vector4DFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, double x, double y, double z, double w)
+nova_math_Nova_Vector4D* nova_math_Nova_Vector4DFunctionMap_functionMapVector4DFunctionMap1_Nova_construct(nova_math_Nova_Vector4DFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, double x, double y, double z, double w)
 {
 	return nova_math_Nova_Vector4D_1_Nova_construct(0, exceptionData, x, y, z, w);
 }

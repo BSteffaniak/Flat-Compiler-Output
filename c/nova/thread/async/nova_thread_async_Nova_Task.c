@@ -126,7 +126,7 @@ void nova_thread_async_Nova_TaskFunctionMap_Nova_this(nova_thread_async_Nova_Tas
 {
 }
 
-nova_thread_async_Nova_Task* nova_thread_async_Nova_TaskFunctionMap_functionMapTaskFunctionMap_static_Nova_construct(nova_thread_async_Nova_TaskFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_thread_Nova_Thread* thread)
+nova_thread_async_Nova_Task* nova_thread_async_Nova_TaskFunctionMap_functionMapTaskFunctionMap_Nova_construct(nova_thread_async_Nova_TaskFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_thread_Nova_Thread* thread)
 {
 	return (nova_thread_async_Nova_Task*)nova_thread_async_Nova_Task_Nova_construct(0, exceptionData, thread);
 }

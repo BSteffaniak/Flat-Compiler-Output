@@ -197,7 +197,7 @@ void spectra_tree_nodes_controlstructures_loops_Nova_WhileLoopFunctionMap_Nova_t
 {
 }
 
-spectra_tree_nodes_controlstructures_loops_Nova_WhileLoop* spectra_tree_nodes_controlstructures_loops_Nova_WhileLoopFunctionMap_functionMapWhileLoopFunctionMap_static_Nova_construct(spectra_tree_nodes_controlstructures_loops_Nova_WhileLoopFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, spectra_tree_nodes_Nova_Node* parent, spectra_util_Nova_Location* location)
+spectra_tree_nodes_controlstructures_loops_Nova_WhileLoop* spectra_tree_nodes_controlstructures_loops_Nova_WhileLoopFunctionMap_functionMapWhileLoopFunctionMap_Nova_construct(spectra_tree_nodes_controlstructures_loops_Nova_WhileLoopFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, spectra_tree_nodes_Nova_Node* parent, spectra_util_Nova_Location* location)
 {
 	parent = (spectra_tree_nodes_Nova_Node*)(parent == 0 ? (nova_Nova_Object*)(nova_Nova_Object*)nova_null : (nova_Nova_Object*)parent);
 	location = (spectra_util_Nova_Location*)(location == 0 ? (nova_Nova_Object*)spectra_util_Nova_Location_Nova_INVALID : (nova_Nova_Object*)location);

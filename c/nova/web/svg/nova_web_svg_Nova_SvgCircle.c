@@ -135,7 +135,7 @@ void nova_web_svg_Nova_SvgCircleFunctionMap_Nova_this(nova_web_svg_Nova_SvgCircl
 {
 }
 
-nova_web_svg_Nova_SvgCircle* nova_web_svg_Nova_SvgCircleFunctionMap_functionMapSvgCircleFunctionMap_static_Nova_construct(nova_web_svg_Nova_SvgCircleFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, double x, double y, int r)
+nova_web_svg_Nova_SvgCircle* nova_web_svg_Nova_SvgCircleFunctionMap_functionMapSvgCircleFunctionMap_Nova_construct(nova_web_svg_Nova_SvgCircleFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, double x, double y, int r)
 {
 	return nova_web_svg_Nova_SvgCircle_Nova_construct(0, exceptionData, x, y, r);
 }

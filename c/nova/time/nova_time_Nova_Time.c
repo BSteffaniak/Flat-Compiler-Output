@@ -119,7 +119,7 @@ void nova_time_Nova_TimeFunctionMap_Nova_this(nova_time_Nova_TimeFunctionMap* th
 {
 }
 
-nova_time_Nova_Time* nova_time_Nova_TimeFunctionMap_functionMapTimeFunctionMap_static_Nova_construct(nova_time_Nova_TimeFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+nova_time_Nova_Time* nova_time_Nova_TimeFunctionMap_functionMapTimeFunctionMap_Nova_construct(nova_time_Nova_TimeFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
 	return nova_time_Nova_Time_Nova_construct(0, exceptionData);
 }

@@ -132,7 +132,7 @@ void nova_thread_async_Nova_AsyncFunctionMap_Nova_this(nova_thread_async_Nova_As
 {
 }
 
-nova_thread_async_Nova_Async* nova_thread_async_Nova_AsyncFunctionMap_functionMapAsyncFunctionMap_static_Nova_construct(nova_thread_async_Nova_AsyncFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+nova_thread_async_Nova_Async* nova_thread_async_Nova_AsyncFunctionMap_functionMapAsyncFunctionMap_Nova_construct(nova_thread_async_Nova_AsyncFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
 	return nova_thread_async_Nova_Async_Nova_construct(0, exceptionData);
 }

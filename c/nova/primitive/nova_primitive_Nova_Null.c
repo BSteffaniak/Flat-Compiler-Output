@@ -134,7 +134,7 @@ void nova_primitive_Nova_NullFunctionMap_Nova_this(nova_primitive_Nova_NullFunct
 {
 }
 
-nova_primitive_Nova_Null* nova_primitive_Nova_NullFunctionMap_functionMapNullFunctionMap_static_Nova_construct(nova_primitive_Nova_NullFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+nova_primitive_Nova_Null* nova_primitive_Nova_NullFunctionMap_functionMapNullFunctionMap_Nova_construct(nova_primitive_Nova_NullFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
 	return nova_primitive_Nova_Null_Nova_construct(0, exceptionData);
 }

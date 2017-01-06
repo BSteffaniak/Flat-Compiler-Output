@@ -211,7 +211,7 @@ void nova_math_Nova_PolynomialFunctionMap_Nova_this(nova_math_Nova_PolynomialFun
 {
 }
 
-nova_math_Nova_Polynomial* nova_math_Nova_PolynomialFunctionMap_functionMapPolynomialFunctionMap_static_Nova_construct(nova_math_Nova_PolynomialFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* polynomial)
+nova_math_Nova_Polynomial* nova_math_Nova_PolynomialFunctionMap_functionMapPolynomialFunctionMap_Nova_construct(nova_math_Nova_PolynomialFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* polynomial)
 {
 	return nova_math_Nova_Polynomial_Nova_construct(0, exceptionData, polynomial);
 }

@@ -137,7 +137,7 @@ void nova_star_Nova_WindowThreadFunctionMap_Nova_this(nova_star_Nova_WindowThrea
 {
 }
 
-nova_star_Nova_WindowThread* nova_star_Nova_WindowThreadFunctionMap_functionMapWindowThreadFunctionMap_static_Nova_construct(nova_star_Nova_WindowThreadFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_star_Nova_Window* window)
+nova_star_Nova_WindowThread* nova_star_Nova_WindowThreadFunctionMap_functionMapWindowThreadFunctionMap_Nova_construct(nova_star_Nova_WindowThreadFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_star_Nova_Window* window)
 {
 	return nova_star_Nova_WindowThread_Nova_construct(0, exceptionData, window);
 }

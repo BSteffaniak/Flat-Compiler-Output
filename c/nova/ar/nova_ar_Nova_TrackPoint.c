@@ -110,7 +110,7 @@ void nova_ar_Nova_TrackPointFunctionMap_Nova_this(nova_ar_Nova_TrackPointFunctio
 {
 }
 
-nova_ar_Nova_TrackPoint* nova_ar_Nova_TrackPointFunctionMap_functionMapTrackPointFunctionMap_static_Nova_construct(nova_ar_Nova_TrackPointFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+nova_ar_Nova_TrackPoint* nova_ar_Nova_TrackPointFunctionMap_functionMapTrackPointFunctionMap_Nova_construct(nova_ar_Nova_TrackPointFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
 	return nova_ar_Nova_TrackPoint_Nova_construct(0, exceptionData);
 }

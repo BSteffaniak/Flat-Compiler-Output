@@ -117,7 +117,7 @@ void nova_meta_Nova_TypeFunctionMap_Nova_this(nova_meta_Nova_TypeFunctionMap* th
 {
 }
 
-nova_meta_Nova_Type* nova_meta_Nova_TypeFunctionMap_functionMapTypeFunctionMap_static_Nova_construct(nova_meta_Nova_TypeFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* value, nova_datastruct_list_Nova_ImmutableArray* genericArguments)
+nova_meta_Nova_Type* nova_meta_Nova_TypeFunctionMap_functionMapTypeFunctionMap_Nova_construct(nova_meta_Nova_TypeFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* value, nova_datastruct_list_Nova_ImmutableArray* genericArguments)
 {
 	return nova_meta_Nova_Type_Nova_construct(0, exceptionData, value, genericArguments);
 }

@@ -119,7 +119,7 @@ void spectra_Nova_InvalidParseExceptionFunctionMap_Nova_this(spectra_Nova_Invali
 {
 }
 
-spectra_Nova_InvalidParseException* spectra_Nova_InvalidParseExceptionFunctionMap_functionMapInvalidParseExceptionFunctionMap_static_Nova_construct(spectra_Nova_InvalidParseExceptionFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* message, spectra_tree_nodes_Nova_Node* node)
+spectra_Nova_InvalidParseException* spectra_Nova_InvalidParseExceptionFunctionMap_functionMapInvalidParseExceptionFunctionMap_Nova_construct(spectra_Nova_InvalidParseExceptionFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* message, spectra_tree_nodes_Nova_Node* node)
 {
 	node = (spectra_tree_nodes_Nova_Node*)(node == 0 ? (nova_Nova_Object*)(nova_Nova_Object*)nova_null : (nova_Nova_Object*)node);
 	return spectra_Nova_InvalidParseException_Nova_construct(0, exceptionData, message, node);

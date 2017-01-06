@@ -117,7 +117,7 @@ void nova_exception_Nova_CaughtExceptionFunctionMap_Nova_this(nova_exception_Nov
 {
 }
 
-nova_exception_Nova_CaughtException* nova_exception_Nova_CaughtExceptionFunctionMap_functionMapCaughtExceptionFunctionMap_static_Nova_construct(nova_exception_Nova_CaughtExceptionFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_meta_Nova_Class* type, int soft)
+nova_exception_Nova_CaughtException* nova_exception_Nova_CaughtExceptionFunctionMap_functionMapCaughtExceptionFunctionMap_Nova_construct(nova_exception_Nova_CaughtExceptionFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_meta_Nova_Class* type, int soft)
 {
 	soft = (int)(soft == (intptr_t)nova_null ? 1 : soft);
 	return nova_exception_Nova_CaughtException_Nova_construct(0, exceptionData, type, soft);

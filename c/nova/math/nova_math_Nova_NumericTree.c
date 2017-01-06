@@ -126,7 +126,7 @@ void nova_math_Nova_NumericTreeFunctionMap_Nova_this(nova_math_Nova_NumericTreeF
 {
 }
 
-nova_math_Nova_NumericTree* nova_math_Nova_NumericTreeFunctionMap_functionMapNumericTreeFunctionMap_static_Nova_construct(nova_math_Nova_NumericTreeFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* statement)
+nova_math_Nova_NumericTree* nova_math_Nova_NumericTreeFunctionMap_functionMapNumericTreeFunctionMap_Nova_construct(nova_math_Nova_NumericTreeFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* statement)
 {
 	return nova_math_Nova_NumericTree_Nova_construct(0, exceptionData, statement);
 }

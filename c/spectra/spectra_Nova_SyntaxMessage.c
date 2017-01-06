@@ -139,7 +139,7 @@ void spectra_Nova_SyntaxMessageFunctionMap_Nova_this(spectra_Nova_SyntaxMessageF
 {
 }
 
-spectra_Nova_SyntaxMessage* spectra_Nova_SyntaxMessageFunctionMap_functionMapSyntaxMessageFunctionMap_static_Nova_construct(spectra_Nova_SyntaxMessageFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+spectra_Nova_SyntaxMessage* spectra_Nova_SyntaxMessageFunctionMap_functionMapSyntaxMessageFunctionMap_Nova_construct(spectra_Nova_SyntaxMessageFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
 	return spectra_Nova_SyntaxMessage_Nova_construct(0, exceptionData);
 }

@@ -110,7 +110,7 @@ void nova_io_Nova_StreamReaderFunctionMap_Nova_this(nova_io_Nova_StreamReaderFun
 {
 }
 
-nova_io_Nova_StreamReader* nova_io_Nova_StreamReaderFunctionMap_functionMapStreamReaderFunctionMap_static_Nova_construct(nova_io_Nova_StreamReaderFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+nova_io_Nova_StreamReader* nova_io_Nova_StreamReaderFunctionMap_functionMapStreamReaderFunctionMap_Nova_construct(nova_io_Nova_StreamReaderFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
 	return nova_io_Nova_StreamReader_Nova_construct(0, exceptionData);
 }

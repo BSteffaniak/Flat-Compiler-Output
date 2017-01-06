@@ -140,7 +140,7 @@ void nova_star_Nova_WindowFunctionMap_Nova_this(nova_star_Nova_WindowFunctionMap
 {
 }
 
-nova_star_Nova_Window* nova_star_Nova_WindowFunctionMap_functionMapWindowFunctionMap_static_Nova_construct(nova_star_Nova_WindowFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* title, int x, int y, int width, int height)
+nova_star_Nova_Window* nova_star_Nova_WindowFunctionMap_functionMapWindowFunctionMap_Nova_construct(nova_star_Nova_WindowFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* title, int x, int y, int width, int height)
 {
 	title = (nova_Nova_String*)(title == 0 ? (nova_Nova_Object*)(nova_Nova_Object*)nova_null : (nova_Nova_Object*)title);
 	x = (int)(x == (intptr_t)nova_null ? 0 : x);

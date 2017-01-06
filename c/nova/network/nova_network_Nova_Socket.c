@@ -116,7 +116,7 @@ void nova_network_Nova_SocketFunctionMap_Nova_this(nova_network_Nova_SocketFunct
 {
 }
 
-nova_network_Nova_Socket* nova_network_Nova_SocketFunctionMap_functionMapSocketFunctionMap_static_Nova_construct(nova_network_Nova_SocketFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* ip, int port)
+nova_network_Nova_Socket* nova_network_Nova_SocketFunctionMap_functionMapSocketFunctionMap_Nova_construct(nova_network_Nova_SocketFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* ip, int port)
 {
 	return nova_network_Nova_Socket_Nova_construct(0, exceptionData, ip, port);
 }

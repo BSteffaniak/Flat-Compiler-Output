@@ -291,7 +291,7 @@ void nova_io_Nova_ConsoleFunctionMap_Nova_this(nova_io_Nova_ConsoleFunctionMap* 
 {
 }
 
-nova_io_Nova_Console* nova_io_Nova_ConsoleFunctionMap_functionMapConsoleFunctionMap_static_Nova_construct(nova_io_Nova_ConsoleFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+nova_io_Nova_Console* nova_io_Nova_ConsoleFunctionMap_functionMapConsoleFunctionMap_Nova_construct(nova_io_Nova_ConsoleFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
 	return nova_io_Nova_Console_Nova_construct(0, exceptionData);
 }

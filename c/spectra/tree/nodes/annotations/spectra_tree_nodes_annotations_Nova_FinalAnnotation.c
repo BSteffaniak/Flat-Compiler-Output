@@ -185,7 +185,7 @@ void spectra_tree_nodes_annotations_Nova_FinalAnnotationFunctionMap_Nova_this(sp
 {
 }
 
-spectra_tree_nodes_annotations_Nova_FinalAnnotation* spectra_tree_nodes_annotations_Nova_FinalAnnotationFunctionMap_functionMapFinalAnnotationFunctionMap_static_Nova_construct(spectra_tree_nodes_annotations_Nova_FinalAnnotationFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, spectra_tree_nodes_Nova_Node* parent, spectra_util_Nova_Location* location)
+spectra_tree_nodes_annotations_Nova_FinalAnnotation* spectra_tree_nodes_annotations_Nova_FinalAnnotationFunctionMap_functionMapFinalAnnotationFunctionMap_Nova_construct(spectra_tree_nodes_annotations_Nova_FinalAnnotationFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, spectra_tree_nodes_Nova_Node* parent, spectra_util_Nova_Location* location)
 {
 	parent = (spectra_tree_nodes_Nova_Node*)(parent == 0 ? (nova_Nova_Object*)(nova_Nova_Object*)nova_null : (nova_Nova_Object*)parent);
 	location = (spectra_util_Nova_Location*)(location == 0 ? (nova_Nova_Object*)spectra_util_Nova_Location_Nova_INVALID : (nova_Nova_Object*)location);

@@ -133,7 +133,7 @@ void nova_web_js_json_Nova_JsonFunctionMap_Nova_this(nova_web_js_json_Nova_JsonF
 {
 }
 
-nova_web_js_json_Nova_Json* nova_web_js_json_Nova_JsonFunctionMap_functionMapJsonFunctionMap_static_Nova_construct(nova_web_js_json_Nova_JsonFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+nova_web_js_json_Nova_Json* nova_web_js_json_Nova_JsonFunctionMap_functionMapJsonFunctionMap_Nova_construct(nova_web_js_json_Nova_JsonFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
 	return nova_web_js_json_Nova_Json_Nova_construct(0, exceptionData);
 }

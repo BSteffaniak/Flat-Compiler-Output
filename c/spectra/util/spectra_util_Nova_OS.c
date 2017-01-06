@@ -170,7 +170,7 @@ void spectra_util_Nova_OSFunctionMap_Nova_this(spectra_util_Nova_OSFunctionMap* 
 {
 }
 
-spectra_util_Nova_OS* spectra_util_Nova_OSFunctionMap_functionMapOSFunctionMap_static_Nova_construct(spectra_util_Nova_OSFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+spectra_util_Nova_OS* spectra_util_Nova_OSFunctionMap_functionMapOSFunctionMap_Nova_construct(spectra_util_Nova_OSFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
 	return spectra_util_Nova_OS_func_Nova_construct(0, exceptionData);
 }

@@ -75,7 +75,7 @@ void nova_star_Nova_FrameFunctionMap_Nova_init_static(nova_exception_Nova_Except
 nova_star_Nova_FrameFunctionMap* nova_star_Nova_FrameFunctionMap_Nova_construct(nova_star_Nova_FrameFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
 void nova_star_Nova_FrameFunctionMap_Nova_destroy(nova_star_Nova_FrameFunctionMap** this, nova_exception_Nova_ExceptionData* exceptionData);
 void nova_star_Nova_FrameFunctionMap_Nova_this(nova_star_Nova_FrameFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
-nova_star_Nova_Frame* nova_star_Nova_FrameFunctionMap_functionMapFrameFunctionMap_static_Nova_construct(nova_star_Nova_FrameFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, int x, int y, int width, int height);
+nova_star_Nova_Frame* nova_star_Nova_FrameFunctionMap_functionMapFrameFunctionMap_Nova_construct(nova_star_Nova_FrameFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, int x, int y, int width, int height);
 void nova_star_Nova_FrameFunctionMap_Nova_super(nova_star_Nova_FrameFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
 
 #endif

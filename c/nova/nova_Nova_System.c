@@ -160,7 +160,7 @@ void nova_Nova_SystemFunctionMap_Nova_this(nova_Nova_SystemFunctionMap* this, no
 {
 }
 
-nova_Nova_System* nova_Nova_SystemFunctionMap_functionMapSystemFunctionMap_static_Nova_construct(nova_Nova_SystemFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+nova_Nova_System* nova_Nova_SystemFunctionMap_functionMapSystemFunctionMap_Nova_construct(nova_Nova_SystemFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
 	return nova_Nova_System_Nova_construct(0, exceptionData);
 }

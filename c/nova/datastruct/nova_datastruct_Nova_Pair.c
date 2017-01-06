@@ -121,7 +121,7 @@ void nova_datastruct_Nova_PairFunctionMap_Nova_this(nova_datastruct_Nova_PairFun
 {
 }
 
-nova_datastruct_Nova_Pair* nova_datastruct_Nova_PairFunctionMap_functionMapPairFunctionMap_static_Nova_construct(nova_datastruct_Nova_PairFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_Object* key, nova_Nova_Object* value)
+nova_datastruct_Nova_Pair* nova_datastruct_Nova_PairFunctionMap_functionMapPairFunctionMap_Nova_construct(nova_datastruct_Nova_PairFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_Object* key, nova_Nova_Object* value)
 {
 	return nova_datastruct_Nova_Pair_Nova_construct(0, exceptionData, key, value);
 }

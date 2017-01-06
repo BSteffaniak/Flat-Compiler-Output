@@ -368,7 +368,7 @@ void spectra_tree_Nova_SyntaxTreeFunctionMap_Nova_this(spectra_tree_Nova_SyntaxT
 {
 }
 
-spectra_tree_Nova_SyntaxTree* spectra_tree_Nova_SyntaxTreeFunctionMap_functionMapSyntaxTreeFunctionMap_static_Nova_construct(spectra_tree_Nova_SyntaxTreeFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, spectra_Nova_Spectra* compiler, spectra_tree_nodes_Nova_Program* root)
+spectra_tree_Nova_SyntaxTree* spectra_tree_Nova_SyntaxTreeFunctionMap_functionMapSyntaxTreeFunctionMap_Nova_construct(spectra_tree_Nova_SyntaxTreeFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, spectra_Nova_Spectra* compiler, spectra_tree_nodes_Nova_Program* root)
 {
 	return spectra_tree_Nova_SyntaxTree_Nova_construct(0, exceptionData, compiler, root);
 }

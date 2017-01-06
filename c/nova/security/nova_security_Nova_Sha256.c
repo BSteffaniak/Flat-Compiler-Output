@@ -323,7 +323,7 @@ void nova_security_Nova_Sha256FunctionMap_Nova_this(nova_security_Nova_Sha256Fun
 {
 }
 
-nova_security_Nova_Sha256* nova_security_Nova_Sha256FunctionMap_functionMapSha256FunctionMap_static_Nova_construct(nova_security_Nova_Sha256FunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+nova_security_Nova_Sha256* nova_security_Nova_Sha256FunctionMap_functionMapSha256FunctionMap_Nova_construct(nova_security_Nova_Sha256FunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
 	return nova_security_Nova_Sha256_Nova_construct(0, exceptionData);
 }

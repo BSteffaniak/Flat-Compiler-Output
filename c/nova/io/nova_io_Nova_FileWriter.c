@@ -217,12 +217,12 @@ void nova_io_Nova_FileWriterFunctionMap_Nova_this(nova_io_Nova_FileWriterFunctio
 {
 }
 
-nova_io_Nova_FileWriter* nova_io_Nova_FileWriterFunctionMap_functionMapFileWriterFunctionMap0_static_Nova_construct(nova_io_Nova_FileWriterFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_io_Nova_File* file)
+nova_io_Nova_FileWriter* nova_io_Nova_FileWriterFunctionMap_functionMapFileWriterFunctionMap0_Nova_construct(nova_io_Nova_FileWriterFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_io_Nova_File* file)
 {
 	return nova_io_Nova_FileWriter_0_Nova_construct(0, exceptionData, file);
 }
 
-nova_io_Nova_FileWriter* nova_io_Nova_FileWriterFunctionMap_functionMapFileWriterFunctionMap1_static_Nova_construct(nova_io_Nova_FileWriterFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* location)
+nova_io_Nova_FileWriter* nova_io_Nova_FileWriterFunctionMap_functionMapFileWriterFunctionMap1_Nova_construct(nova_io_Nova_FileWriterFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* location)
 {
 	return nova_io_Nova_FileWriter_1_Nova_construct(0, exceptionData, location);
 }

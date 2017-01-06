@@ -361,7 +361,7 @@ void nova_io_Nova_FileFunctionMap_Nova_this(nova_io_Nova_FileFunctionMap* this, 
 {
 }
 
-nova_io_Nova_File* nova_io_Nova_FileFunctionMap_functionMapFileFunctionMap_static_Nova_construct(nova_io_Nova_FileFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* location)
+nova_io_Nova_File* nova_io_Nova_FileFunctionMap_functionMapFileFunctionMap_Nova_construct(nova_io_Nova_FileFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* location)
 {
 	return nova_io_Nova_File_1_Nova_construct(0, exceptionData, location);
 }
