@@ -132,7 +132,7 @@ nova_web_svg_Nova_SvgComponent* nova_web_svg_Nova_SvgComponentFunctionMap_functi
 
 void nova_web_svg_Nova_SvgComponentFunctionMap_functionMap_Nova_generateOutput(nova_web_svg_Nova_SvgComponentFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_web_svg_Nova_SvgComponent* reference, nova_io_Nova_FileWriter* writer)
 {
-	nova_web_svg_Nova_SvgComponent_virtual_Nova_generateOutput((nova_web_svg_Nova_SvgComponent*)(reference), exceptionData, writer);
+	nova_web_svg_Nova_SvgComponent_Nova_generateOutput(reference, exceptionData, writer);
 }
 
 void nova_web_svg_Nova_SvgComponentFunctionMap_Nova_super(nova_web_svg_Nova_SvgComponentFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)

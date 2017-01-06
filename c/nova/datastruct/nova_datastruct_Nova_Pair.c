@@ -128,7 +128,7 @@ nova_datastruct_Nova_Pair* nova_datastruct_Nova_PairFunctionMap_functionMapPairF
 
 nova_Nova_String* nova_datastruct_Nova_PairFunctionMap_functionMap_Nova_toString(nova_datastruct_Nova_PairFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_Nova_Pair* reference)
 {
-	return nova_Nova_Object_virtual_Nova_toString((nova_Nova_Object*)(reference), exceptionData);
+	return nova_datastruct_Nova_Pair_Nova_toString(reference, exceptionData);
 }
 
 void nova_datastruct_Nova_PairFunctionMap_Nova_super(nova_datastruct_Nova_PairFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)

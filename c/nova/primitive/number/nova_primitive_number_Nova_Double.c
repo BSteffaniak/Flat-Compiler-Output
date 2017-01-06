@@ -310,7 +310,7 @@ double nova_primitive_number_Nova_DoubleFunctionMap_functionMap_Nova_multiply(no
 
 nova_Nova_String* nova_primitive_number_Nova_DoubleFunctionMap_functionMap_Nova_toString(nova_primitive_number_Nova_DoubleFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_primitive_number_Nova_Double* reference)
 {
-	return nova_Nova_Object_virtual_Nova_toString((nova_Nova_Object*)(reference), exceptionData);
+	return nova_primitive_number_Nova_Double_Nova_toString(reference, exceptionData);
 }
 
 void nova_primitive_number_Nova_DoubleFunctionMap_Nova_super(nova_primitive_number_Nova_DoubleFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)

@@ -121,17 +121,7 @@ nova_web_svg_no3_Nova_No3Node* nova_web_svg_no3_Nova_No3NodeFunctionMap_function
 	return nova_web_svg_no3_Nova_No3Node_Nova_construct(0, exceptionData);
 }
 
-nova_Nova_String* nova_web_svg_no3_Nova_No3NodeFunctionMap_functionMap_Nova_toJs(nova_web_svg_no3_Nova_No3NodeFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_web_svg_no3_Nova_No3Node* reference)
-{
-	return nova_web_svg_no3_Nova_No3Node_virtual_Nova_toJs((nova_web_svg_no3_Nova_No3Node*)(reference), exceptionData);
-}
-
 void nova_web_svg_no3_Nova_No3NodeFunctionMap_Nova_super(nova_web_svg_no3_Nova_No3NodeFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
-}
-
-nova_Nova_String* nova_web_svg_no3_Nova_No3NodeFunctionMap_virtualfunctionMap_Nova_toJs(nova_web_svg_no3_Nova_No3NodeFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_web_svg_no3_Nova_No3Node* reference)
-{
-	return this->vtable->nova_web_svg_no3_Nova_No3NodeFunctionMap_virtualfunctionMap_Nova_toJs(this, exceptionData, reference);
 }
 

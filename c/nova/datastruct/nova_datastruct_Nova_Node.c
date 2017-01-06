@@ -373,7 +373,7 @@ nova_datastruct_list_Nova_Array* nova_datastruct_Nova_NodeFunctionMap_functionMa
 
 nova_Nova_String* nova_datastruct_Nova_NodeFunctionMap_functionMap_Nova_toString(nova_datastruct_Nova_NodeFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_Nova_Node* reference)
 {
-	return nova_Nova_Object_virtual_Nova_toString((nova_Nova_Object*)(reference), exceptionData);
+	return nova_datastruct_Nova_Node_Nova_toString(reference, exceptionData);
 }
 
 nova_datastruct_Nova_Node* nova_datastruct_Nova_NodeFunctionMap_functionMap_Nova_get(nova_datastruct_Nova_NodeFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_Nova_Node* reference, int index)

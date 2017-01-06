@@ -221,7 +221,7 @@ char nova_meta_Nova_ClassFunctionMap_functionMap_Nova_isOfTypeInterface(nova_met
 
 nova_Nova_String* nova_meta_Nova_ClassFunctionMap_functionMap_Nova_toString(nova_meta_Nova_ClassFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_meta_Nova_Class* reference)
 {
-	return nova_Nova_Object_virtual_Nova_toString((nova_Nova_Object*)(reference), exceptionData);
+	return nova_meta_Nova_Class_Nova_toString(reference, exceptionData);
 }
 
 void nova_meta_Nova_ClassFunctionMap_Nova_super(nova_meta_Nova_ClassFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)

@@ -146,7 +146,7 @@ char nova_primitive_Nova_BoolFunctionMap_functionMap_Nova_compareTo(nova_primiti
 
 nova_Nova_String* nova_primitive_Nova_BoolFunctionMap_functionMap_Nova_toString(nova_primitive_Nova_BoolFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_primitive_Nova_Bool* reference)
 {
-	return nova_Nova_Object_virtual_Nova_toString((nova_Nova_Object*)(reference), exceptionData);
+	return nova_primitive_Nova_Bool_Nova_toString(reference, exceptionData);
 }
 
 nova_Nova_String* nova_primitive_Nova_BoolFunctionMap_functionMap_static_Nova_toString(nova_primitive_Nova_BoolFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, char value)

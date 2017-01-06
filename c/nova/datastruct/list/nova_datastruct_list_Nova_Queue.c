@@ -243,14 +243,14 @@ nova_datastruct_list_Nova_Array* nova_datastruct_list_Nova_QueueFunctionMap_func
 	return (nova_datastruct_list_Nova_Array*)nova_datastruct_list_Nova_Queue_Nova_enqueue(reference, exceptionData, element);
 }
 
-nova_datastruct_list_Nova_Queue* nova_datastruct_list_Nova_QueueFunctionMap_functionMap0_Nova_reverse(nova_datastruct_list_Nova_QueueFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_list_Nova_Queue* reference)
+nova_datastruct_list_Nova_Queue* nova_datastruct_list_Nova_QueueFunctionMap_functionMap_Nova_reverse(nova_datastruct_list_Nova_QueueFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_list_Nova_Queue* reference)
 {
 	return (nova_datastruct_list_Nova_Queue*)nova_datastruct_list_Nova_Queue_Nova_reverse(reference, exceptionData);
 }
 
 nova_Nova_String* nova_datastruct_list_Nova_QueueFunctionMap_functionMap_Nova_toString(nova_datastruct_list_Nova_QueueFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_list_Nova_Queue* reference)
 {
-	return nova_Nova_Object_virtual_Nova_toString((nova_Nova_Object*)(reference), exceptionData);
+	return nova_datastruct_list_Nova_Queue_Nova_toString(reference, exceptionData);
 }
 
 void nova_datastruct_list_Nova_QueueFunctionMap_Nova_super(nova_datastruct_list_Nova_QueueFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)

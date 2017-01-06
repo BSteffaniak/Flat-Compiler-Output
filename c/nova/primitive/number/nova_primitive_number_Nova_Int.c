@@ -171,7 +171,7 @@ nova_primitive_number_Nova_Int* nova_primitive_number_Nova_IntFunctionMap_functi
 	return nova_primitive_number_Nova_Int_Nova_construct(0, exceptionData, value);
 }
 
-int nova_primitive_number_Nova_IntFunctionMap_functionMap0_Nova_compareTo(nova_primitive_number_Nova_IntFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_primitive_number_Nova_Int* reference, int other)
+int nova_primitive_number_Nova_IntFunctionMap_functionMap_Nova_compareTo(nova_primitive_number_Nova_IntFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_primitive_number_Nova_Int* reference, int other)
 {
 	return nova_primitive_number_Nova_Int_0_Nova_compareTo(reference, exceptionData, other);
 }
@@ -183,7 +183,7 @@ int nova_primitive_number_Nova_IntFunctionMap_functionMap_Nova_multiply(nova_pri
 
 nova_Nova_String* nova_primitive_number_Nova_IntFunctionMap_functionMap_Nova_toString(nova_primitive_number_Nova_IntFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_primitive_number_Nova_Int* reference)
 {
-	return nova_Nova_Object_virtual_Nova_toString((nova_Nova_Object*)(reference), exceptionData);
+	return nova_primitive_number_Nova_Int_Nova_toString(reference, exceptionData);
 }
 
 int nova_primitive_number_Nova_IntFunctionMap_functionMap_static_Nova_numDigits(nova_primitive_number_Nova_IntFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, int number)

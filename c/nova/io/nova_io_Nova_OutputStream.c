@@ -121,17 +121,7 @@ nova_io_Nova_OutputStream* nova_io_Nova_OutputStreamFunctionMap_functionMapOutpu
 	return nova_io_Nova_OutputStream_Nova_construct(0, exceptionData);
 }
 
-char nova_io_Nova_OutputStreamFunctionMap_functionMap_Nova_write(nova_io_Nova_OutputStreamFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_io_Nova_OutputStream* reference, nova_Nova_String* data)
-{
-	return nova_io_Nova_OutputStream_virtual_Nova_write((nova_io_Nova_OutputStream*)(reference), exceptionData, data);
-}
-
 void nova_io_Nova_OutputStreamFunctionMap_Nova_super(nova_io_Nova_OutputStreamFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
-}
-
-char nova_io_Nova_OutputStreamFunctionMap_virtualfunctionMap_Nova_write(nova_io_Nova_OutputStreamFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_io_Nova_OutputStream* reference, nova_Nova_String* data)
-{
-	return this->vtable->nova_io_Nova_OutputStreamFunctionMap_virtualfunctionMap_Nova_write(this, exceptionData, reference, data);
 }
 

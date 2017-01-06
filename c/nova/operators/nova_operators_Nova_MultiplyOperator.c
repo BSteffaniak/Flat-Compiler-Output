@@ -83,17 +83,7 @@ void nova_operators_Nova_MultiplyOperatorFunctionMap_Nova_this(nova_operators_No
 {
 }
 
-nova_Nova_Object* nova_operators_Nova_MultiplyOperatorFunctionMap_functionMap0_Nova_multiply(nova_operators_Nova_MultiplyOperatorFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_operators_Nova_MultiplyOperator* reference, nova_Nova_Object* value)
-{
-	return (nova_Nova_Object*)nova_operators_Nova_MultiplyOperator_virtual0_Nova_multiply((nova_operators_Nova_MultiplyOperator*)(reference), exceptionData, value);
-}
-
 void nova_operators_Nova_MultiplyOperatorFunctionMap_Nova_super(nova_operators_Nova_MultiplyOperatorFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
-}
-
-nova_Nova_Object* nova_operators_Nova_MultiplyOperatorFunctionMap_virtualfunctionMap0_Nova_multiply(nova_operators_Nova_MultiplyOperatorFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_operators_Nova_MultiplyOperator* reference, nova_Nova_Object* value)
-{
-	return this->vtable->itable.nova_operators_Nova_MultiplyOperatorFunctionMap_virtualfunctionMap0_Nova_multiply(this, exceptionData, reference, value);
 }
 

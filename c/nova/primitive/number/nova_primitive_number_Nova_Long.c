@@ -215,7 +215,7 @@ long_long nova_primitive_number_Nova_LongFunctionMap_functionMap_Nova_multiply(n
 
 nova_Nova_String* nova_primitive_number_Nova_LongFunctionMap_functionMap_Nova_toString(nova_primitive_number_Nova_LongFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_primitive_number_Nova_Long* reference)
 {
-	return nova_Nova_Object_virtual_Nova_toString((nova_Nova_Object*)(reference), exceptionData);
+	return nova_primitive_number_Nova_Long_Nova_toString(reference, exceptionData);
 }
 
 void nova_primitive_number_Nova_LongFunctionMap_Nova_super(nova_primitive_number_Nova_LongFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)

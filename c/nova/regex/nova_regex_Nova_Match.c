@@ -146,7 +146,7 @@ nova_regex_Nova_Match* nova_regex_Nova_MatchFunctionMap_functionMapMatchFunction
 
 nova_Nova_String* nova_regex_Nova_MatchFunctionMap_functionMap_Nova_toString(nova_regex_Nova_MatchFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_regex_Nova_Match* reference)
 {
-	return nova_Nova_Object_virtual_Nova_toString((nova_Nova_Object*)(reference), exceptionData);
+	return nova_regex_Nova_Match_Nova_toString(reference, exceptionData);
 }
 
 void nova_regex_Nova_MatchFunctionMap_Nova_super(nova_regex_Nova_MatchFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)

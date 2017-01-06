@@ -127,7 +127,7 @@ nova_exception_Nova_Exception* nova_exception_Nova_ExceptionFunctionMap_function
 
 nova_Nova_String* nova_exception_Nova_ExceptionFunctionMap_functionMap_Nova_toString(nova_exception_Nova_ExceptionFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_exception_Nova_Exception* reference)
 {
-	return nova_Nova_Object_virtual_Nova_toString((nova_Nova_Object*)(reference), exceptionData);
+	return nova_exception_Nova_Exception_Nova_toString(reference, exceptionData);
 }
 
 void nova_exception_Nova_ExceptionFunctionMap_Nova_super(nova_exception_Nova_ExceptionFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)

@@ -137,7 +137,7 @@ nova_math_Nova_NumericStatement* nova_math_Nova_NumericStatementFunctionMap_func
 
 nova_Nova_String* nova_math_Nova_NumericStatementFunctionMap_functionMap_Nova_toString(nova_math_Nova_NumericStatementFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_math_Nova_NumericStatement* reference)
 {
-	return nova_Nova_Object_virtual_Nova_toString((nova_Nova_Object*)(reference), exceptionData);
+	return nova_math_Nova_NumericStatement_Nova_toString(reference, exceptionData);
 }
 
 void nova_math_Nova_NumericStatementFunctionMap_Nova_super(nova_math_Nova_NumericStatementFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)

@@ -257,7 +257,7 @@ nova_math_Nova_Vector* nova_math_Nova_VectorFunctionMap_functionMapVectorFunctio
 
 double nova_math_Nova_VectorFunctionMap_functionMap_Nova_dotProduct(nova_math_Nova_VectorFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_math_Nova_Vector* reference, nova_math_Nova_Vector* other)
 {
-	return nova_math_Nova_Vector_virtual_Nova_dotProduct((nova_math_Nova_Vector*)(reference), exceptionData, other);
+	return nova_math_Nova_Vector_Nova_dotProduct(reference, exceptionData, other);
 }
 
 double nova_math_Nova_VectorFunctionMap_functionMap_Nova_innerProduct(nova_math_Nova_VectorFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_math_Nova_Vector* reference, nova_math_Nova_Vector* other)
@@ -277,7 +277,7 @@ nova_datastruct_list_Nova_DoubleArray* nova_math_Nova_VectorFunctionMap_function
 
 nova_Nova_String* nova_math_Nova_VectorFunctionMap_functionMap_Nova_toString(nova_math_Nova_VectorFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_math_Nova_Vector* reference)
 {
-	return nova_Nova_Object_virtual_Nova_toString((nova_Nova_Object*)(reference), exceptionData);
+	return nova_math_Nova_Vector_Nova_toString(reference, exceptionData);
 }
 
 void nova_math_Nova_VectorFunctionMap_Nova_super(nova_math_Nova_VectorFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)

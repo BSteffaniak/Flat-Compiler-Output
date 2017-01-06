@@ -140,7 +140,7 @@ nova_web_js_json_Nova_Json* nova_web_js_json_Nova_JsonFunctionMap_functionMapJso
 
 nova_Nova_String* nova_web_js_json_Nova_JsonFunctionMap_functionMap_Nova_toString(nova_web_js_json_Nova_JsonFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_web_js_json_Nova_Json* reference)
 {
-	return nova_Nova_Object_virtual_Nova_toString((nova_Nova_Object*)(reference), exceptionData);
+	return nova_web_js_json_Nova_Json_Nova_toString(reference, exceptionData);
 }
 
 void nova_web_js_json_Nova_JsonFunctionMap_Nova_super(nova_web_js_json_Nova_JsonFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)

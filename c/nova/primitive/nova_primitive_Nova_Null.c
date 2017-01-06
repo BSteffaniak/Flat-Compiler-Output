@@ -146,7 +146,7 @@ nova_Nova_String* nova_primitive_Nova_NullFunctionMap_functionMap_Nova_concat(no
 
 nova_Nova_String* nova_primitive_Nova_NullFunctionMap_functionMap_Nova_toString(nova_primitive_Nova_NullFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_primitive_Nova_Null* reference)
 {
-	return nova_Nova_Object_virtual_Nova_toString((nova_Nova_Object*)(reference), exceptionData);
+	return nova_primitive_Nova_Null_Nova_toString(reference, exceptionData);
 }
 
 void nova_primitive_Nova_NullFunctionMap_Nova_super(nova_primitive_Nova_NullFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)

@@ -715,7 +715,7 @@ void nova_math_Nova_MatrixFunctionMap_functionMap_Nova_checkUnequalDimensions(no
 	nova_math_Nova_Matrix_Nova_checkUnequalDimensions(reference, exceptionData, other);
 }
 
-nova_math_Nova_Matrix* nova_math_Nova_MatrixFunctionMap_functionMap0_Nova_multiply(nova_math_Nova_MatrixFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_math_Nova_Matrix* reference, nova_math_Nova_Matrix* other)
+nova_math_Nova_Matrix* nova_math_Nova_MatrixFunctionMap_functionMap_Nova_multiply(nova_math_Nova_MatrixFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_math_Nova_Matrix* reference, nova_math_Nova_Matrix* other)
 {
 	return (nova_math_Nova_Matrix*)nova_math_Nova_Matrix_0_Nova_multiply(reference, exceptionData, other);
 }
@@ -737,7 +737,7 @@ double nova_math_Nova_MatrixFunctionMap_functionMap_static_Nova_determinant(nova
 
 nova_Nova_String* nova_math_Nova_MatrixFunctionMap_functionMap_Nova_toString(nova_math_Nova_MatrixFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_math_Nova_Matrix* reference)
 {
-	return nova_Nova_Object_virtual_Nova_toString((nova_Nova_Object*)(reference), exceptionData);
+	return nova_math_Nova_Matrix_Nova_toString(reference, exceptionData);
 }
 
 nova_datastruct_list_Nova_DoubleArray* nova_math_Nova_MatrixFunctionMap_functionMap_Nova_get(nova_math_Nova_MatrixFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_math_Nova_Matrix* reference, int index)

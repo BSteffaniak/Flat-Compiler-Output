@@ -254,7 +254,7 @@ void nova_thread_Nova_ThreadFunctionMap_functionMap_static_Nova_sleep(nova_threa
 
 void nova_thread_Nova_ThreadFunctionMap_functionMap_Nova_run(nova_thread_Nova_ThreadFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_thread_Nova_Thread* reference)
 {
-	nova_thread_Nova_Thread_virtual_Nova_run((nova_thread_Nova_Thread*)(reference), exceptionData);
+	nova_thread_Nova_Thread_Nova_run(reference, exceptionData);
 }
 
 void nova_thread_Nova_ThreadFunctionMap_functionMap_Nova_startRun(nova_thread_Nova_ThreadFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_thread_Nova_Thread* reference)

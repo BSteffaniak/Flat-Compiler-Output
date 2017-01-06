@@ -147,7 +147,7 @@ char nova_web_svg_Nova_SvgCircleFunctionMap_functionMap_Nova_generateOutput(nova
 
 nova_Nova_String* nova_web_svg_Nova_SvgCircleFunctionMap_functionMap_Nova_toString(nova_web_svg_Nova_SvgCircleFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_web_svg_Nova_SvgCircle* reference)
 {
-	return nova_Nova_Object_virtual_Nova_toString((nova_Nova_Object*)(reference), exceptionData);
+	return nova_web_svg_Nova_SvgCircle_Nova_toString(reference, exceptionData);
 }
 
 void nova_web_svg_Nova_SvgCircleFunctionMap_Nova_super(nova_web_svg_Nova_SvgCircleFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)

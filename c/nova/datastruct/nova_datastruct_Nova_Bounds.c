@@ -233,7 +233,7 @@ char nova_datastruct_Nova_BoundsFunctionMap_functionMap_Nova_equals(nova_datastr
 
 nova_Nova_String* nova_datastruct_Nova_BoundsFunctionMap_functionMap_Nova_toString(nova_datastruct_Nova_BoundsFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_Nova_Bounds* reference)
 {
-	return nova_Nova_Object_virtual_Nova_toString((nova_Nova_Object*)(reference), exceptionData);
+	return nova_datastruct_Nova_Bounds_Nova_toString(reference, exceptionData);
 }
 
 nova_datastruct_Nova_Bounds* nova_datastruct_Nova_BoundsFunctionMap_functionMap_Nova_cloneTo(nova_datastruct_Nova_BoundsFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_Nova_Bounds* reference, nova_datastruct_Nova_Bounds* bounds)

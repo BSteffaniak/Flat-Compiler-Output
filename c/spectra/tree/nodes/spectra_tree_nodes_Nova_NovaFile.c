@@ -522,7 +522,7 @@ nova_Nova_String* spectra_tree_nodes_Nova_NovaFileFunctionMap_functionMap_Nova_t
 
 nova_Nova_String* spectra_tree_nodes_Nova_NovaFileFunctionMap_functionMap_Nova_toString(spectra_tree_nodes_Nova_NovaFileFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, spectra_tree_nodes_Nova_NovaFile* reference)
 {
-	return nova_Nova_Object_virtual_Nova_toString((nova_Nova_Object*)(reference), exceptionData);
+	return spectra_tree_nodes_Nova_NovaFile_Nova_toString(reference, exceptionData);
 }
 
 void spectra_tree_nodes_Nova_NovaFileFunctionMap_Nova_super(spectra_tree_nodes_Nova_NovaFileFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)

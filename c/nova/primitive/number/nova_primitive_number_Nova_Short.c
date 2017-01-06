@@ -156,7 +156,7 @@ nova_primitive_number_Nova_Short* nova_primitive_number_Nova_ShortFunctionMap_fu
 	return nova_primitive_number_Nova_Short_Nova_construct(0, exceptionData, value);
 }
 
-short nova_primitive_number_Nova_ShortFunctionMap_functionMap0_Nova_compareTo(nova_primitive_number_Nova_ShortFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_primitive_number_Nova_Short* reference, short other)
+short nova_primitive_number_Nova_ShortFunctionMap_functionMap_Nova_compareTo(nova_primitive_number_Nova_ShortFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_primitive_number_Nova_Short* reference, short other)
 {
 	return nova_primitive_number_Nova_Short_0_Nova_compareTo(reference, exceptionData, other);
 }
@@ -168,7 +168,7 @@ short nova_primitive_number_Nova_ShortFunctionMap_functionMap_Nova_multiply(nova
 
 nova_Nova_String* nova_primitive_number_Nova_ShortFunctionMap_functionMap_Nova_toString(nova_primitive_number_Nova_ShortFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_primitive_number_Nova_Short* reference)
 {
-	return nova_Nova_Object_virtual_Nova_toString((nova_Nova_Object*)(reference), exceptionData);
+	return nova_primitive_number_Nova_Short_Nova_toString(reference, exceptionData);
 }
 
 int nova_primitive_number_Nova_ShortFunctionMap_functionMap_static_Nova_numDigits(nova_primitive_number_Nova_ShortFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, short number)

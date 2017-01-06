@@ -206,12 +206,12 @@ spectra_tree_nodes_Nova_Identifier* spectra_tree_nodes_Nova_IdentifierFunctionMa
 
 nova_Nova_String* spectra_tree_nodes_Nova_IdentifierFunctionMap_functionMap_Nova_writeNova(spectra_tree_nodes_Nova_IdentifierFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, spectra_tree_nodes_Nova_Identifier* reference)
 {
-	return spectra_tree_nodes_Nova_Node_virtual_Nova_writeNova((spectra_tree_nodes_Nova_Node*)(reference), exceptionData);
+	return spectra_tree_nodes_Nova_Identifier_Nova_writeNova(reference, exceptionData);
 }
 
 spectra_tree_nodes_Nova_Identifier* spectra_tree_nodes_Nova_IdentifierFunctionMap_functionMap_Nova_cloneTo(spectra_tree_nodes_Nova_IdentifierFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, spectra_tree_nodes_Nova_Identifier* reference, spectra_tree_nodes_Nova_Identifier* other)
 {
-	return spectra_tree_nodes_Nova_Node_virtual_Nova_cloneTo((spectra_tree_nodes_Nova_Node*)(reference), exceptionData, (spectra_tree_nodes_Nova_Node*)(other));
+	return spectra_tree_nodes_Nova_Identifier_Nova_cloneTo(reference, exceptionData, other);
 }
 
 void spectra_tree_nodes_Nova_IdentifierFunctionMap_Nova_super(spectra_tree_nodes_Nova_IdentifierFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)

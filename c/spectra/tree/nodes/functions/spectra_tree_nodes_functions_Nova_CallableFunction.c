@@ -195,7 +195,7 @@ void spectra_tree_nodes_functions_Nova_CallableFunctionFunctionMap_Nova_this(spe
 spectra_tree_nodes_functions_Nova_Parameter* spectra_tree_nodes_functions_Nova_CallableFunctionFunctionMap_functionMap0_Nova_parseParameter(spectra_tree_nodes_functions_Nova_CallableFunctionFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, spectra_tree_nodes_functions_Nova_CallableFunction* reference, nova_Nova_String* parameter, int require)
 {
 	require = (int)(require == (intptr_t)nova_null ? 1 : require);
-	return spectra_tree_nodes_functions_Nova_CallableFunction_virtual_Nova_parseParameter((spectra_tree_nodes_functions_Nova_CallableFunction*)(reference), exceptionData, parameter, require);
+	return spectra_tree_nodes_functions_Nova_CallableFunction_Nova_parseParameter(reference, exceptionData, parameter, require);
 }
 
 char spectra_tree_nodes_functions_Nova_CallableFunctionFunctionMap_functionMap_Nova_parseParameterAndAnnotations(spectra_tree_nodes_functions_Nova_CallableFunctionFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, spectra_tree_nodes_functions_Nova_CallableFunction* reference, nova_Nova_String* parameter, int require)
@@ -207,7 +207,7 @@ char spectra_tree_nodes_functions_Nova_CallableFunctionFunctionMap_functionMap_N
 char spectra_tree_nodes_functions_Nova_CallableFunctionFunctionMap_functionMap0_Nova_parseParameters(spectra_tree_nodes_functions_Nova_CallableFunctionFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, spectra_tree_nodes_functions_Nova_CallableFunction* reference, nova_Nova_String* parameters, int require)
 {
 	require = (int)(require == (intptr_t)nova_null ? 1 : require);
-	return spectra_tree_nodes_functions_Nova_CallableFunction_virtual_Nova_parseParameters((spectra_tree_nodes_functions_Nova_CallableFunction*)(reference), exceptionData, parameters, require);
+	return spectra_tree_nodes_functions_Nova_CallableFunction_Nova_parseParameters(reference, exceptionData, parameters, require);
 }
 
 char spectra_tree_nodes_functions_Nova_CallableFunctionFunctionMap_functionMap_Nova_compatibleArguments(spectra_tree_nodes_functions_Nova_CallableFunctionFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, spectra_tree_nodes_functions_Nova_CallableFunction* reference, nova_datastruct_list_Nova_Array* arguments)

@@ -2296,6 +2296,7 @@ nova_datastruct_list_Nova_Array* (*nova_datastruct_list_Nova_ArrayFunctionMap_vi
 nova_datastruct_list_Nova_Array* (*nova_datastruct_list_Nova_ArrayFunctionMap_virtualfunctionMap_Nova_addUnique)(nova_datastruct_list_Nova_ArrayFunctionMap*, nova_exception_Nova_ExceptionData*, nova_datastruct_list_Nova_Array*, nova_Nova_Object*);
 nova_Nova_Object** (*nova_datastruct_list_Nova_ArrayFunctionMap_virtualfunctionMap_Nova_cloneData)(nova_datastruct_list_Nova_ArrayFunctionMap*, nova_exception_Nova_ExceptionData*, nova_datastruct_list_Nova_Array*);
 nova_datastruct_list_Nova_Array* (*nova_datastruct_list_Nova_ArrayFunctionMap_virtualfunctionMap_Nova_clone)(nova_datastruct_list_Nova_ArrayFunctionMap*, nova_exception_Nova_ExceptionData*, nova_datastruct_list_Nova_Array*);
+nova_datastruct_list_Nova_Array* (*nova_datastruct_list_Nova_ArrayFunctionMap_virtualfunctionMap_Nova_reverse)(nova_datastruct_list_Nova_ArrayFunctionMap*, nova_exception_Nova_ExceptionData*, nova_datastruct_list_Nova_Array*);
 nova_Nova_Object* (*nova_datastruct_list_Nova_ArrayFunctionMap_virtualfunctionMap_Nova_get)(nova_datastruct_list_Nova_ArrayFunctionMap*, nova_exception_Nova_ExceptionData*, nova_datastruct_list_Nova_Array*, int);
 nova_Nova_Object* (*nova_datastruct_list_Nova_ArrayFunctionMap_virtualfunctionMap_Nova_set)(nova_datastruct_list_Nova_ArrayFunctionMap*, nova_exception_Nova_ExceptionData*, nova_datastruct_list_Nova_Array*, int, nova_Nova_Object*);
 };
@@ -2345,6 +2346,7 @@ nova_datastruct_list_Nova_CharArray* (*nova_datastruct_list_Nova_ArrayFunctionMa
 nova_datastruct_list_Nova_CharArray* (*nova_datastruct_list_Nova_ArrayFunctionMap_virtualfunctionMap_Nova_addUnique)(nova_datastruct_list_Nova_CharArrayFunctionMap*, nova_exception_Nova_ExceptionData*, nova_datastruct_list_Nova_CharArray*, char);
 char* (*nova_datastruct_list_Nova_ArrayFunctionMap_virtualfunctionMap_Nova_cloneData)(nova_datastruct_list_Nova_CharArrayFunctionMap*, nova_exception_Nova_ExceptionData*, nova_datastruct_list_Nova_CharArray*);
 nova_datastruct_list_Nova_CharArray* (*nova_datastruct_list_Nova_ArrayFunctionMap_virtualfunctionMap_Nova_clone)(nova_datastruct_list_Nova_CharArrayFunctionMap*, nova_exception_Nova_ExceptionData*, nova_datastruct_list_Nova_CharArray*);
+nova_datastruct_list_Nova_CharArray* (*nova_datastruct_list_Nova_ArrayFunctionMap_virtualfunctionMap_Nova_reverse)(nova_datastruct_list_Nova_CharArrayFunctionMap*, nova_exception_Nova_ExceptionData*, nova_datastruct_list_Nova_CharArray*);
 char (*nova_datastruct_list_Nova_ArrayFunctionMap_virtualfunctionMap_Nova_get)(nova_datastruct_list_Nova_CharArrayFunctionMap*, nova_exception_Nova_ExceptionData*, nova_datastruct_list_Nova_CharArray*, int);
 char (*nova_datastruct_list_Nova_ArrayFunctionMap_virtualfunctionMap_Nova_set)(nova_datastruct_list_Nova_CharArrayFunctionMap*, nova_exception_Nova_ExceptionData*, nova_datastruct_list_Nova_CharArray*, int, char);
 };
@@ -2412,6 +2414,7 @@ nova_datastruct_list_Nova_DoubleArray* (*nova_datastruct_list_Nova_ArrayFunction
 nova_datastruct_list_Nova_Array* (*nova_datastruct_list_Nova_ArrayFunctionMap_virtualfunctionMap_Nova_addUnique)(nova_datastruct_list_Nova_ArrayFunctionMap*, nova_exception_Nova_ExceptionData*, nova_datastruct_list_Nova_Array*, nova_Nova_Object*);
 nova_Nova_Object** (*nova_datastruct_list_Nova_ArrayFunctionMap_virtualfunctionMap_Nova_cloneData)(nova_datastruct_list_Nova_ArrayFunctionMap*, nova_exception_Nova_ExceptionData*, nova_datastruct_list_Nova_Array*);
 nova_datastruct_list_Nova_Array* (*nova_datastruct_list_Nova_ArrayFunctionMap_virtualfunctionMap_Nova_clone)(nova_datastruct_list_Nova_ArrayFunctionMap*, nova_exception_Nova_ExceptionData*, nova_datastruct_list_Nova_Array*);
+nova_datastruct_list_Nova_DoubleArray* (*nova_datastruct_list_Nova_ArrayFunctionMap_virtualfunctionMap_Nova_reverse)(nova_datastruct_list_Nova_DoubleArrayFunctionMap*, nova_exception_Nova_ExceptionData*, nova_datastruct_list_Nova_DoubleArray*);
 double (*nova_datastruct_list_Nova_ArrayFunctionMap_virtualfunctionMap_Nova_get)(nova_datastruct_list_Nova_DoubleArrayFunctionMap*, nova_exception_Nova_ExceptionData*, nova_datastruct_list_Nova_DoubleArray*, int);
 double (*nova_datastruct_list_Nova_ArrayFunctionMap_virtualfunctionMap_Nova_set)(nova_datastruct_list_Nova_DoubleArrayFunctionMap*, nova_exception_Nova_ExceptionData*, nova_datastruct_list_Nova_DoubleArray*, int, double);
 };
@@ -2551,6 +2554,7 @@ nova_datastruct_list_Nova_IntArray* (*nova_datastruct_list_Nova_ArrayFunctionMap
 nova_datastruct_list_Nova_Array* (*nova_datastruct_list_Nova_ArrayFunctionMap_virtualfunctionMap_Nova_addUnique)(nova_datastruct_list_Nova_ArrayFunctionMap*, nova_exception_Nova_ExceptionData*, nova_datastruct_list_Nova_Array*, nova_Nova_Object*);
 nova_Nova_Object** (*nova_datastruct_list_Nova_ArrayFunctionMap_virtualfunctionMap_Nova_cloneData)(nova_datastruct_list_Nova_ArrayFunctionMap*, nova_exception_Nova_ExceptionData*, nova_datastruct_list_Nova_Array*);
 nova_datastruct_list_Nova_IntArray* (*nova_datastruct_list_Nova_ArrayFunctionMap_virtualfunctionMap_Nova_clone)(nova_datastruct_list_Nova_IntArrayFunctionMap*, nova_exception_Nova_ExceptionData*, nova_datastruct_list_Nova_IntArray*);
+nova_datastruct_list_Nova_IntArray* (*nova_datastruct_list_Nova_ArrayFunctionMap_virtualfunctionMap_Nova_reverse)(nova_datastruct_list_Nova_IntArrayFunctionMap*, nova_exception_Nova_ExceptionData*, nova_datastruct_list_Nova_IntArray*);
 int (*nova_datastruct_list_Nova_ArrayFunctionMap_virtualfunctionMap_Nova_get)(nova_datastruct_list_Nova_IntArrayFunctionMap*, nova_exception_Nova_ExceptionData*, nova_datastruct_list_Nova_IntArray*, int);
 int (*nova_datastruct_list_Nova_ArrayFunctionMap_virtualfunctionMap_Nova_set)(nova_datastruct_list_Nova_IntArrayFunctionMap*, nova_exception_Nova_ExceptionData*, nova_datastruct_list_Nova_IntArray*, int, int);
 };
@@ -2809,6 +2813,7 @@ nova_datastruct_list_Nova_StringCharArray* (*nova_datastruct_list_Nova_ArrayFunc
 nova_datastruct_list_Nova_CharArray* (*nova_datastruct_list_Nova_ArrayFunctionMap_virtualfunctionMap_Nova_addUnique)(nova_datastruct_list_Nova_CharArrayFunctionMap*, nova_exception_Nova_ExceptionData*, nova_datastruct_list_Nova_CharArray*, char);
 char* (*nova_datastruct_list_Nova_ArrayFunctionMap_virtualfunctionMap_Nova_cloneData)(nova_datastruct_list_Nova_CharArrayFunctionMap*, nova_exception_Nova_ExceptionData*, nova_datastruct_list_Nova_CharArray*);
 nova_datastruct_list_Nova_CharArray* (*nova_datastruct_list_Nova_ArrayFunctionMap_virtualfunctionMap_Nova_clone)(nova_datastruct_list_Nova_CharArrayFunctionMap*, nova_exception_Nova_ExceptionData*, nova_datastruct_list_Nova_CharArray*);
+nova_datastruct_list_Nova_CharArray* (*nova_datastruct_list_Nova_ArrayFunctionMap_virtualfunctionMap_Nova_reverse)(nova_datastruct_list_Nova_CharArrayFunctionMap*, nova_exception_Nova_ExceptionData*, nova_datastruct_list_Nova_CharArray*);
 char (*nova_datastruct_list_Nova_ArrayFunctionMap_virtualfunctionMap_Nova_get)(nova_datastruct_list_Nova_CharArrayFunctionMap*, nova_exception_Nova_ExceptionData*, nova_datastruct_list_Nova_CharArray*, int);
 char (*nova_datastruct_list_Nova_ArrayFunctionMap_virtualfunctionMap_Nova_set)(nova_datastruct_list_Nova_CharArrayFunctionMap*, nova_exception_Nova_ExceptionData*, nova_datastruct_list_Nova_CharArray*, int, char);
 };
@@ -3086,7 +3091,6 @@ nova_meta_Nova_Class* classInstance;
 nova_Interface_VTable itable;
 nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
-char (*nova_io_Nova_OutputStreamFunctionMap_virtualfunctionMap_Nova_write)(nova_io_Nova_FileWriterFunctionMap*, nova_exception_Nova_ExceptionData*, nova_io_Nova_FileWriter*, nova_Nova_String*);
 };
 
 
@@ -3122,7 +3126,6 @@ nova_meta_Nova_Class* classInstance;
 nova_Interface_VTable itable;
 nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
-char (*nova_io_Nova_OutputStreamFunctionMap_virtualfunctionMap_Nova_write)(nova_io_Nova_OutputStreamFunctionMap*, nova_exception_Nova_ExceptionData*, nova_io_Nova_OutputStream*, nova_Nova_String*);
 };
 
 
@@ -3899,7 +3902,6 @@ nova_meta_Nova_Class* classInstance;
 nova_Interface_VTable itable;
 nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
-char (*nova_io_Nova_OutputStreamFunctionMap_virtualfunctionMap_Nova_write)(nova_network_Nova_NetworkOutputStreamFunctionMap*, nova_exception_Nova_ExceptionData*, nova_network_Nova_NetworkOutputStream*, nova_Nova_String*);
 };
 
 
@@ -4796,7 +4798,6 @@ nova_meta_Nova_Class* classInstance;
 nova_Interface_VTable itable;
 nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
-nova_Nova_String* (*nova_web_svg_no3_Nova_No3NodeFunctionMap_virtualfunctionMap_Nova_toJs)(nova_web_svg_no3_Nova_No3NodeFunctionMap*, nova_exception_Nova_ExceptionData*, nova_web_svg_no3_Nova_No3Node*);
 };
 
 
@@ -4816,7 +4817,6 @@ nova_meta_Nova_Class* classInstance;
 nova_Interface_VTable itable;
 nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
-nova_Nova_String* (*nova_web_svg_no3_Nova_No3NodeFunctionMap_virtualfunctionMap_Nova_toJs)(nova_web_svg_no3_Nova_No3SelectFunctionMap*, nova_exception_Nova_ExceptionData*, nova_web_svg_no3_Nova_No3Select*);
 };
 
 
@@ -4836,7 +4836,6 @@ nova_meta_Nova_Class* classInstance;
 nova_Interface_VTable itable;
 nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
-nova_Nova_String* (*nova_web_svg_no3_Nova_No3NodeFunctionMap_virtualfunctionMap_Nova_toJs)(nova_web_svg_no3_Nova_No3SelectAllFunctionMap*, nova_exception_Nova_ExceptionData*, nova_web_svg_no3_Nova_No3SelectAll*);
 };
 
 

@@ -156,7 +156,7 @@ nova_primitive_number_Nova_Byte* nova_primitive_number_Nova_ByteFunctionMap_func
 	return nova_primitive_number_Nova_Byte_Nova_construct(0, exceptionData, value);
 }
 
-char nova_primitive_number_Nova_ByteFunctionMap_functionMap0_Nova_compareTo(nova_primitive_number_Nova_ByteFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_primitive_number_Nova_Byte* reference, char other)
+char nova_primitive_number_Nova_ByteFunctionMap_functionMap_Nova_compareTo(nova_primitive_number_Nova_ByteFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_primitive_number_Nova_Byte* reference, char other)
 {
 	return nova_primitive_number_Nova_Byte_0_Nova_compareTo(reference, exceptionData, other);
 }
@@ -168,7 +168,7 @@ char nova_primitive_number_Nova_ByteFunctionMap_functionMap_Nova_multiply(nova_p
 
 nova_Nova_String* nova_primitive_number_Nova_ByteFunctionMap_functionMap_Nova_toString(nova_primitive_number_Nova_ByteFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_primitive_number_Nova_Byte* reference)
 {
-	return nova_Nova_Object_virtual_Nova_toString((nova_Nova_Object*)(reference), exceptionData);
+	return nova_primitive_number_Nova_Byte_Nova_toString(reference, exceptionData);
 }
 
 int nova_primitive_number_Nova_ByteFunctionMap_functionMap_static_Nova_numDigits(nova_primitive_number_Nova_ByteFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, char number)

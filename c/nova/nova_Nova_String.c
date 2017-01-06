@@ -683,7 +683,7 @@ int nova_Nova_StringFunctionMap_functionMap_Nova_calculateSize(nova_Nova_StringF
 
 nova_Nova_String* nova_Nova_StringFunctionMap_functionMap_Nova_concat(nova_Nova_StringFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* reference, nova_Nova_String* str)
 {
-	return nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)(reference), exceptionData, str);
+	return nova_Nova_String_Nova_concat(reference, exceptionData, str);
 }
 
 nova_Nova_String* nova_Nova_StringFunctionMap_functionMap_Nova_plus(nova_Nova_StringFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* reference, nova_Nova_String* another)
@@ -804,7 +804,7 @@ nova_Nova_String* nova_Nova_StringFunctionMap_functionMap_Nova_substring(nova_No
 {
 	start = (int)(start == (intptr_t)nova_null ? 0 : start);
 	end = (int)(end == (intptr_t)nova_null ? (nova_Nova_Object*)reference->nova_Nova_String_Nova_count : (nova_Nova_Object*)end);
-	return nova_Nova_String_virtual_Nova_substring((nova_Nova_String*)(reference), exceptionData, start, end);
+	return nova_Nova_String_Nova_substring(reference, exceptionData, start, end);
 }
 
 nova_Nova_String* nova_Nova_StringFunctionMap_functionMap_Nova_trimStart(nova_Nova_StringFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* reference, int count)
@@ -883,7 +883,7 @@ nova_Nova_String* nova_Nova_StringFunctionMap_functionMap_Nova_getGroupedChars(n
 
 nova_Nova_String* nova_Nova_StringFunctionMap_functionMap_Nova_toString(nova_Nova_StringFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* reference)
 {
-	return nova_Nova_Object_virtual_Nova_toString((nova_Nova_Object*)(reference), exceptionData);
+	return nova_Nova_String_Nova_toString(reference, exceptionData);
 }
 
 char nova_Nova_StringFunctionMap_functionMap_Nova_get(nova_Nova_StringFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* reference, int index)

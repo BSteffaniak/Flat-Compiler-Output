@@ -89,27 +89,7 @@ void nova_io_Nova_InputStreamFunctionMap_Nova_this(nova_io_Nova_InputStreamFunct
 {
 }
 
-nova_Nova_String* nova_io_Nova_InputStreamFunctionMap_functionMap_Nova_readString(nova_io_Nova_InputStreamFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_io_Nova_InputStream* reference)
-{
-	return nova_io_Nova_InputStream_virtual_Nova_readString((nova_io_Nova_InputStream*)(reference), exceptionData);
-}
-
-nova_datastruct_list_Nova_Array* nova_io_Nova_InputStreamFunctionMap_functionMap_Nova_readBytes(nova_io_Nova_InputStreamFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_io_Nova_InputStream* reference)
-{
-	return nova_io_Nova_InputStream_virtual_Nova_readBytes((nova_io_Nova_InputStream*)(reference), exceptionData);
-}
-
 void nova_io_Nova_InputStreamFunctionMap_Nova_super(nova_io_Nova_InputStreamFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
-}
-
-nova_Nova_String* nova_io_Nova_InputStreamFunctionMap_virtualfunctionMap_Nova_readString(nova_io_Nova_InputStreamFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_io_Nova_InputStream* reference)
-{
-	return this->vtable->itable.nova_io_Nova_InputStreamFunctionMap_virtualfunctionMap_Nova_readString(this, exceptionData, reference);
-}
-
-nova_datastruct_list_Nova_Array* nova_io_Nova_InputStreamFunctionMap_virtualfunctionMap_Nova_readBytes(nova_io_Nova_InputStreamFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_io_Nova_InputStream* reference)
-{
-	return this->vtable->itable.nova_io_Nova_InputStreamFunctionMap_virtualfunctionMap_Nova_readBytes(this, exceptionData, reference);
 }
 

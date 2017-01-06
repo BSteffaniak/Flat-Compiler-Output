@@ -563,7 +563,7 @@ char nova_math_Nova_NumericOperationFunctionMap_functionMap_static_Nova_isWhites
 
 nova_Nova_String* nova_math_Nova_NumericOperationFunctionMap_functionMap_Nova_toString(nova_math_Nova_NumericOperationFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_math_Nova_NumericOperation* reference)
 {
-	return nova_Nova_Object_virtual_Nova_toString((nova_Nova_Object*)(reference), exceptionData);
+	return nova_math_Nova_NumericOperation_Nova_toString(reference, exceptionData);
 }
 
 void nova_math_Nova_NumericOperationFunctionMap_Nova_super(nova_math_Nova_NumericOperationFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)

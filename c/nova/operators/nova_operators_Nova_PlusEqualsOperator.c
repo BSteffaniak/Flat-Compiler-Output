@@ -83,17 +83,7 @@ void nova_operators_Nova_PlusEqualsOperatorFunctionMap_Nova_this(nova_operators_
 {
 }
 
-nova_Nova_Object* nova_operators_Nova_PlusEqualsOperatorFunctionMap_functionMap0_Nova_plusEquals(nova_operators_Nova_PlusEqualsOperatorFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_operators_Nova_PlusEqualsOperator* reference, nova_Nova_Object* another)
-{
-	return (nova_Nova_Object*)nova_operators_Nova_PlusEqualsOperator_virtual0_Nova_plusEquals((nova_operators_Nova_PlusEqualsOperator*)(reference), exceptionData, another);
-}
-
 void nova_operators_Nova_PlusEqualsOperatorFunctionMap_Nova_super(nova_operators_Nova_PlusEqualsOperatorFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
-}
-
-nova_Nova_Object* nova_operators_Nova_PlusEqualsOperatorFunctionMap_virtualfunctionMap0_Nova_plusEquals(nova_operators_Nova_PlusEqualsOperatorFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_operators_Nova_PlusEqualsOperator* reference, nova_Nova_Object* another)
-{
-	return this->vtable->itable.nova_operators_Nova_PlusEqualsOperatorFunctionMap_virtualfunctionMap0_Nova_plusEquals(this, exceptionData, reference, another);
 }
 

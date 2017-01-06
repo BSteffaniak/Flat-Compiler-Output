@@ -221,7 +221,7 @@ spectra_tree_nodes_Nova_ClassDeclaration* spectra_tree_nodes_Nova_ProgramFunctio
 
 nova_Nova_String* spectra_tree_nodes_Nova_ProgramFunctionMap_functionMap_Nova_toString(spectra_tree_nodes_Nova_ProgramFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, spectra_tree_nodes_Nova_Program* reference)
 {
-	return nova_Nova_Object_virtual_Nova_toString((nova_Nova_Object*)(reference), exceptionData);
+	return spectra_tree_nodes_Nova_Program_Nova_toString(reference, exceptionData);
 }
 
 void spectra_tree_nodes_Nova_ProgramFunctionMap_Nova_super(spectra_tree_nodes_Nova_ProgramFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)

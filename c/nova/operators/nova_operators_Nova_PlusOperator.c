@@ -83,17 +83,7 @@ void nova_operators_Nova_PlusOperatorFunctionMap_Nova_this(nova_operators_Nova_P
 {
 }
 
-nova_Nova_Object* nova_operators_Nova_PlusOperatorFunctionMap_functionMap0_Nova_plus(nova_operators_Nova_PlusOperatorFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_operators_Nova_PlusOperator* reference, nova_Nova_Object* another)
-{
-	return (nova_Nova_Object*)nova_operators_Nova_PlusOperator_virtual0_Nova_plus((nova_operators_Nova_PlusOperator*)(reference), exceptionData, another);
-}
-
 void nova_operators_Nova_PlusOperatorFunctionMap_Nova_super(nova_operators_Nova_PlusOperatorFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
-}
-
-nova_Nova_Object* nova_operators_Nova_PlusOperatorFunctionMap_virtualfunctionMap0_Nova_plus(nova_operators_Nova_PlusOperatorFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_operators_Nova_PlusOperator* reference, nova_Nova_Object* another)
-{
-	return this->vtable->itable.nova_operators_Nova_PlusOperatorFunctionMap_virtualfunctionMap0_Nova_plus(this, exceptionData, reference, another);
 }
 

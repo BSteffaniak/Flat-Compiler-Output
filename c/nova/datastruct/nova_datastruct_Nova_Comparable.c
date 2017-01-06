@@ -83,17 +83,7 @@ void nova_datastruct_Nova_ComparableFunctionMap_Nova_this(nova_datastruct_Nova_C
 {
 }
 
-int nova_datastruct_Nova_ComparableFunctionMap_functionMap0_Nova_compareTo(nova_datastruct_Nova_ComparableFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_Nova_Comparable* reference, nova_Nova_Object* other)
-{
-	return nova_datastruct_Nova_Comparable_virtual0_Nova_compareTo((nova_datastruct_Nova_Comparable*)(reference), exceptionData, other);
-}
-
 void nova_datastruct_Nova_ComparableFunctionMap_Nova_super(nova_datastruct_Nova_ComparableFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
-}
-
-int nova_datastruct_Nova_ComparableFunctionMap_virtualfunctionMap0_Nova_compareTo(nova_datastruct_Nova_ComparableFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_Nova_Comparable* reference, nova_Nova_Object* other)
-{
-	return this->vtable->itable.nova_datastruct_Nova_ComparableFunctionMap_virtualfunctionMap0_Nova_compareTo(this, exceptionData, reference, other);
 }
 

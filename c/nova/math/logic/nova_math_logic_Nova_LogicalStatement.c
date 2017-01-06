@@ -141,7 +141,7 @@ nova_math_logic_Nova_LogicalStatement* nova_math_logic_Nova_LogicalStatementFunc
 
 nova_Nova_String* nova_math_logic_Nova_LogicalStatementFunctionMap_functionMap_Nova_toString(nova_math_logic_Nova_LogicalStatementFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_math_logic_Nova_LogicalStatement* reference)
 {
-	return nova_Nova_Object_virtual_Nova_toString((nova_Nova_Object*)(reference), exceptionData);
+	return nova_math_logic_Nova_LogicalStatement_Nova_toString(reference, exceptionData);
 }
 
 void nova_math_logic_Nova_LogicalStatementFunctionMap_Nova_super(nova_math_logic_Nova_LogicalStatementFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)

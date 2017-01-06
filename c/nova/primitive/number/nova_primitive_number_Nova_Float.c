@@ -168,7 +168,7 @@ float nova_primitive_number_Nova_FloatFunctionMap_functionMap_Nova_multiply(nova
 
 nova_Nova_String* nova_primitive_number_Nova_FloatFunctionMap_functionMap_Nova_toString(nova_primitive_number_Nova_FloatFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_primitive_number_Nova_Float* reference)
 {
-	return nova_Nova_Object_virtual_Nova_toString((nova_Nova_Object*)(reference), exceptionData);
+	return nova_primitive_number_Nova_Float_Nova_toString(reference, exceptionData);
 }
 
 int nova_primitive_number_Nova_FloatFunctionMap_functionMap_static_Nova_numDigits(nova_primitive_number_Nova_FloatFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, float number)

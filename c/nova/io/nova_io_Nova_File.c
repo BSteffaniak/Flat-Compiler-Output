@@ -375,7 +375,7 @@ nova_datastruct_list_Nova_Array* nova_io_Nova_FileFunctionMap_functionMap_Nova_g
 
 nova_Nova_String* nova_io_Nova_FileFunctionMap_functionMap_Nova_toString(nova_io_Nova_FileFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_io_Nova_File* reference)
 {
-	return nova_Nova_Object_virtual_Nova_toString((nova_Nova_Object*)(reference), exceptionData);
+	return nova_io_Nova_File_Nova_toString(reference, exceptionData);
 }
 
 void nova_io_Nova_FileFunctionMap_Nova_super(nova_io_Nova_FileFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)

@@ -339,7 +339,7 @@ spectra_util_Nova_Location* spectra_util_Nova_LocationFunctionMap_functionMap_No
 
 nova_Nova_String* spectra_util_Nova_LocationFunctionMap_functionMap_Nova_toString(spectra_util_Nova_LocationFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, spectra_util_Nova_Location* reference)
 {
-	return nova_Nova_Object_virtual_Nova_toString((nova_Nova_Object*)(reference), exceptionData);
+	return spectra_util_Nova_Location_Nova_toString(reference, exceptionData);
 }
 
 void spectra_util_Nova_LocationFunctionMap_Nova_super(spectra_util_Nova_LocationFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)

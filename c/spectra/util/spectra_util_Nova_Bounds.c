@@ -235,7 +235,7 @@ char spectra_util_Nova_BoundsFunctionMap_functionMap_Nova_equals(spectra_util_No
 
 nova_Nova_String* spectra_util_Nova_BoundsFunctionMap_functionMap_Nova_toString(spectra_util_Nova_BoundsFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, spectra_util_Nova_Bounds* reference)
 {
-	return nova_Nova_Object_virtual_Nova_toString((nova_Nova_Object*)(reference), exceptionData);
+	return spectra_util_Nova_Bounds_Nova_toString(reference, exceptionData);
 }
 
 void spectra_util_Nova_BoundsFunctionMap_functionMap_Nova_cloneTo(spectra_util_Nova_BoundsFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, spectra_util_Nova_Bounds* reference, spectra_util_Nova_Bounds* bounds)
