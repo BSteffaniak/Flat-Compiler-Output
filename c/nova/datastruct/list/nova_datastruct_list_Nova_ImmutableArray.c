@@ -285,6 +285,8 @@ void nova_datastruct_list_Nova_ImmutableArray_Nova_super(nova_datastruct_list_No
 	this->prv->nova_datastruct_list_Nova_ImmutableArray_Nova_array = (nova_datastruct_list_Nova_Array*)nova_null;
 }
 
+
+nova_datastruct_list_Nova_ImmutableArray* nova_datastruct_list_Nova_ImmutableArrayFunctionMap_functionMapImmutableArrayFunctionMap3_static_Nova_construct(nova_datastruct_list_Nova_ImmutableArrayFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_list_Nova_Array* array, char clone);
 void nova_datastruct_list_Nova_ImmutableArrayFunctionMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData)
 {
 	{

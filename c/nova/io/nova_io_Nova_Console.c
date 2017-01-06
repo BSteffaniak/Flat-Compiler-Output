@@ -252,6 +252,9 @@ void nova_io_Nova_Console_Nova_super(nova_io_Nova_Console* this, nova_exception_
 {
 }
 
+
+void nova_io_Nova_ConsoleFunctionMap_functionMap_static_Nova_flushInput(nova_io_Nova_ConsoleFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+void nova_io_Nova_ConsoleFunctionMap_functionMap_static_Nova_flushOutput(nova_io_Nova_ConsoleFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
 void nova_io_Nova_ConsoleFunctionMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData)
 {
 	{

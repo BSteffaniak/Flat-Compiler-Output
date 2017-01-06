@@ -113,6 +113,8 @@ void nova_primitive_number_Nova_Float_Nova_super(nova_primitive_number_Nova_Floa
 	this->nova_primitive_number_Nova_Float_Nova_value = 0;
 }
 
+
+nova_primitive_number_Nova_Float* nova_primitive_number_Nova_FloatFunctionMap_functionMapFloatFunctionMap_static_Nova_construct(nova_primitive_number_Nova_FloatFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, float value);
 void nova_primitive_number_Nova_FloatFunctionMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData)
 {
 	{

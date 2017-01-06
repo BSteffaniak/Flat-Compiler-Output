@@ -359,6 +359,8 @@ char spectra_tree_nodes_Nova_Value_virtual_Accessor_Nova_isAssignable(spectra_tr
 	return this->vtable->spectra_tree_nodes_Nova_Value_virtual_Accessor_Nova_isAssignable((spectra_tree_nodes_Nova_Value*)(this), exceptionData);
 }
 
+
+spectra_tree_nodes_Nova_Value* spectra_tree_nodes_Nova_ValueFunctionMap_functionMap_static_Nova_parseValue(spectra_tree_nodes_Nova_ValueFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* input, spectra_tree_nodes_Nova_Node* parent, spectra_util_Nova_Location* location, char require);
 void spectra_tree_nodes_Nova_ValueFunctionMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData)
 {
 	{
@@ -435,7 +437,7 @@ char spectra_tree_nodes_Nova_ValueFunctionMap_functionMap_Nova_validateTypes(spe
 
 void spectra_tree_nodes_Nova_ValueFunctionMap_functionMap_Nova_invalidTypeError(spectra_tree_nodes_Nova_ValueFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, spectra_tree_nodes_Nova_Value* reference, spectra_tree_nodes_Nova_Type* type, int throwException)
 {
-	type = (spectra_tree_nodes_Nova_Type*)(type == 0 ? (nova_Nova_Object*)spectra_tree_nodes_Nova_Value_Accessorfunc_Nova_type(this, exceptionData) : (nova_Nova_Object*)type);
+	type = (spectra_tree_nodes_Nova_Type*)(type == 0 ? (nova_Nova_Object*)spectra_tree_nodes_Nova_Value_Accessorfunc_Nova_type(reference, exceptionData) : (nova_Nova_Object*)type);
 	throwException = (int)(throwException == (intptr_t)nova_null ? 1 : throwException);
 	spectra_tree_nodes_Nova_Value_Nova_invalidTypeError(reference, exceptionData, type, throwException);
 }

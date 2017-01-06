@@ -186,6 +186,8 @@ void nova_thread_Nova_Thread_virtual_Nova_run(nova_thread_Nova_Thread* this, nov
 	this->vtable->nova_thread_Nova_Thread_virtual_Nova_run((nova_thread_Nova_Thread*)(this), exceptionData);
 }
 
+
+void nova_thread_Nova_ThreadFunctionMap_functionMap_Nova_startRun(nova_thread_Nova_ThreadFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_thread_Nova_Thread* reference);
 void nova_thread_Nova_ThreadFunctionMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData)
 {
 	{

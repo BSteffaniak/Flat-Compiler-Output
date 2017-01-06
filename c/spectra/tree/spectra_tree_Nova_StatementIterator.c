@@ -200,6 +200,8 @@ void spectra_tree_Nova_StatementIterator_Nova_super(spectra_tree_Nova_StatementI
 	this->prv->spectra_tree_Nova_StatementIterator_Nova_parents = (nova_datastruct_list_Nova_Stack*)nova_null;
 }
 
+
+void spectra_tree_Nova_StatementIteratorFunctionMap_functionMap_Nova_updateScopeProperties(spectra_tree_Nova_StatementIteratorFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, spectra_tree_Nova_StatementIterator* reference);
 void spectra_tree_Nova_StatementIteratorFunctionMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData)
 {
 	{

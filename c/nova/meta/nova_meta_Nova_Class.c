@@ -163,6 +163,9 @@ void nova_meta_Nova_Class_Nova_super(nova_meta_Nova_Class* this, nova_exception_
 	this->nova_meta_Nova_Class_Nova_fields = nova_datastruct_list_Nova_Array_Nova_toImmutable((nova_datastruct_list_Nova_Array*)(nova_datastruct_list_Nova_Array_1_Nova_construct(0, exceptionData, 0, (intptr_t)nova_null)), exceptionData);
 }
 
+
+char nova_meta_Nova_ClassFunctionMap_functionMap_Nova_isOfTypeClass(nova_meta_Nova_ClassFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_meta_Nova_Class* reference, nova_meta_Nova_Class* other);
+char nova_meta_Nova_ClassFunctionMap_functionMap_Nova_isOfTypeInterface(nova_meta_Nova_ClassFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_meta_Nova_Class* reference, nova_meta_Nova_Class* other);
 void nova_meta_Nova_ClassFunctionMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData)
 {
 	{

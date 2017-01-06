@@ -97,6 +97,8 @@ void nova_primitive_Nova_Bool_Nova_super(nova_primitive_Nova_Bool* this, nova_ex
 	this->nova_primitive_Nova_Bool_Nova_value = 0;
 }
 
+
+nova_primitive_Nova_Bool* nova_primitive_Nova_BoolFunctionMap_functionMapBoolFunctionMap_static_Nova_construct(nova_primitive_Nova_BoolFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, char value);
 void nova_primitive_Nova_BoolFunctionMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData)
 {
 	{

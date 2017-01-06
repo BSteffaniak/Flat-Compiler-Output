@@ -195,6 +195,8 @@ void spectra_tree_nodes_Nova_ArrayType_Nova_super(spectra_tree_nodes_Nova_ArrayT
 	this->spectra_tree_nodes_Nova_ArrayType_Nova_arrayDimensions = (int)(0);
 }
 
+
+char spectra_tree_nodes_Nova_ArrayTypeFunctionMap_functionMap_Nova_parseDimensions(spectra_tree_nodes_Nova_ArrayTypeFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, spectra_tree_nodes_Nova_ArrayType* reference, nova_Nova_String* dimensions, nova_Nova_String* input, spectra_tree_nodes_Nova_Node* parent);
 void spectra_tree_nodes_Nova_ArrayTypeFunctionMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData)
 {
 	{

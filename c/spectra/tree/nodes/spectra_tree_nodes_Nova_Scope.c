@@ -285,6 +285,9 @@ void spectra_tree_nodes_Nova_Scope_Nova_super(spectra_tree_nodes_Nova_Scope* thi
 	this->prv->spectra_tree_nodes_Nova_Scope_Nova_id = 0;
 }
 
+
+nova_Nova_String* spectra_tree_nodes_Nova_ScopeFunctionMap_functionMap_Nova_printPrecedingWhitespace(spectra_tree_nodes_Nova_ScopeFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, spectra_tree_nodes_Nova_Scope* reference, spectra_tree_nodes_Nova_Node* child);
+nova_Nova_String* spectra_tree_nodes_Nova_ScopeFunctionMap_functionMap_Nova_childToNova(spectra_tree_nodes_Nova_ScopeFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, spectra_tree_nodes_Nova_Scope* reference, spectra_tree_nodes_Nova_Node* child);
 void spectra_tree_nodes_Nova_ScopeFunctionMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData)
 {
 	{

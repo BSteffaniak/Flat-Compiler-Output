@@ -142,6 +142,8 @@ void nova_primitive_number_Nova_Char_Nova_super(nova_primitive_number_Nova_Char*
 	this->nova_primitive_number_Nova_Char_Nova_value = 0;
 }
 
+
+nova_primitive_number_Nova_Char* nova_primitive_number_Nova_CharFunctionMap_functionMapCharFunctionMap_static_Nova_construct(nova_primitive_number_Nova_CharFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, char value);
 void nova_primitive_number_Nova_CharFunctionMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData)
 {
 	{

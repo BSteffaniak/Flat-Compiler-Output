@@ -200,6 +200,8 @@ void spectra_tree_nodes_Nova_Priority_Nova_super(spectra_tree_nodes_Nova_Priorit
 	this->spectra_tree_nodes_Nova_Priority_Nova_accessedNode = (spectra_tree_nodes_Nova_Accessible*)nova_null;
 }
 
+
+char spectra_tree_nodes_Nova_PriorityFunctionMap_functionMap_Nova_parseValue(spectra_tree_nodes_Nova_PriorityFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, spectra_tree_nodes_Nova_Priority* reference, nova_Nova_String* input);
 void spectra_tree_nodes_Nova_PriorityFunctionMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData)
 {
 	{

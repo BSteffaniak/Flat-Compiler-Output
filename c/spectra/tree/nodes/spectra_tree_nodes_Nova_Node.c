@@ -789,6 +789,9 @@ spectra_tree_nodes_Nova_Node* spectra_tree_nodes_Nova_Node_virtual_Accessor_Nova
 	return this->vtable->spectra_tree_nodes_Nova_Node_virtual_Accessor_Nova_scopeConsumer((spectra_tree_nodes_Nova_Node*)(this), exceptionData);
 }
 
+
+spectra_tree_nodes_Nova_Scope* spectra_tree_nodes_Nova_NodeFunctionMap_functionMap_Nova_setScope(spectra_tree_nodes_Nova_NodeFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, spectra_tree_nodes_Nova_Node* reference, spectra_tree_nodes_Nova_Scope* s);
+void spectra_tree_nodes_Nova_NodeFunctionMap_functionMap1_Nova_detach(spectra_tree_nodes_Nova_NodeFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, spectra_tree_nodes_Nova_Node* reference, spectra_tree_nodes_Nova_Node* fromNode);
 void spectra_tree_nodes_Nova_NodeFunctionMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData)
 {
 	{

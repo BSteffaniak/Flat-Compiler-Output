@@ -190,8 +190,6 @@ typedef void (*nova_datastruct_list_Nova_ArrayFunctionMap_closure30_Nova_func)(v
 typedef char (*nova_datastruct_list_Nova_ArrayFunctionMap_closure31_Nova_filterFunc)(void*, nova_exception_Nova_ExceptionData*, nova_Nova_Object*, int, nova_datastruct_list_Nova_Array*, void*);
 typedef int (*nova_datastruct_list_Nova_ArrayFunctionMap_closure32_Nova_comparator)(void*, nova_exception_Nova_ExceptionData*, nova_Nova_Object*, nova_Nova_Object*, void*);
 typedef int (*nova_datastruct_list_Nova_ArrayFunctionMap_closure33_Nova_comparator)(void*, nova_exception_Nova_ExceptionData*, nova_Nova_Object*, nova_Nova_Object*, void*);
-typedef int (*nova_datastruct_list_Nova_ArrayFunctionMap_closure34_Nova_comparator)(void*, nova_exception_Nova_ExceptionData*, nova_Nova_Object*, nova_Nova_Object*, void*);
-typedef int (*nova_datastruct_list_Nova_ArrayFunctionMap_closure35_Nova_comparator)(void*, nova_exception_Nova_ExceptionData*, nova_Nova_Object*, nova_Nova_Object*, void*);
 typedef struct nova_datastruct_list_Nova_CharArray nova_datastruct_list_Nova_CharArray;
 typedef long_long (*nova_datastruct_list_Nova_CharArray_closure1_Nova_func)(void*, nova_exception_Nova_ExceptionData*, char, int, nova_datastruct_list_Nova_CharArray*, long_long, void*);
 typedef long_long (*nova_datastruct_list_Nova_CharArray_closure2_Nova_func)(void*, nova_exception_Nova_ExceptionData*, char, int, nova_datastruct_list_Nova_CharArray*, long_long, void*);

@@ -173,6 +173,8 @@ void spectra_tree_nodes_Nova_Cast_Nova_super(spectra_tree_nodes_Nova_Cast* this,
 	this->spectra_tree_nodes_Nova_Cast_Nova_value = (spectra_tree_nodes_Nova_Value*)nova_null;
 }
 
+
+spectra_tree_nodes_Nova_Value* spectra_tree_nodes_Nova_CastFunctionMap_functionMap_Nova_parseValue(spectra_tree_nodes_Nova_CastFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, spectra_tree_nodes_Nova_Cast* reference, nova_Nova_String* input);
 void spectra_tree_nodes_Nova_CastFunctionMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData)
 {
 	{

@@ -143,6 +143,8 @@ void nova_exception_Nova_ExceptionData_Nova_super(nova_exception_Nova_ExceptionD
 	this->nova_exception_Nova_ExceptionData_Nova_thrownException = (nova_exception_Nova_Exception*)nova_null;
 }
 
+
+nova_exception_Nova_ExceptionData* nova_exception_Nova_ExceptionDataFunctionMap_functionMap_Nova_getDataByException(nova_exception_Nova_ExceptionDataFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_exception_Nova_ExceptionData* reference, nova_exception_Nova_Exception* exception, int soft);
 void nova_exception_Nova_ExceptionDataFunctionMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData)
 {
 	{

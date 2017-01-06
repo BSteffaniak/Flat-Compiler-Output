@@ -215,6 +215,9 @@ void spectra_tree_nodes_Nova_Literal_Nova_super(spectra_tree_nodes_Nova_Literal*
 	this->spectra_tree_nodes_Nova_Literal_Nova_accessedNode = (spectra_tree_nodes_Nova_Accessible*)nova_null;
 }
 
+
+nova_Nova_String* spectra_tree_nodes_Nova_LiteralFunctionMap_functionMap_static_Nova_getLiteralType(spectra_tree_nodes_Nova_LiteralFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* input);
+char spectra_tree_nodes_Nova_LiteralFunctionMap_functionMap_Nova_formatValue(spectra_tree_nodes_Nova_LiteralFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, spectra_tree_nodes_Nova_Literal* reference);
 void spectra_tree_nodes_Nova_LiteralFunctionMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData)
 {
 	{

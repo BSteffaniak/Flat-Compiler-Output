@@ -175,6 +175,9 @@ void spectra_tree_nodes_Nova_Package_Nova_super(spectra_tree_nodes_Nova_Package*
 	this->spectra_tree_nodes_Nova_Package_Nova_location = (nova_Nova_String*)nova_null;
 }
 
+
+char spectra_tree_nodes_Nova_PackageFunctionMap_functionMap_Nova_validateLocation(spectra_tree_nodes_Nova_PackageFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, spectra_tree_nodes_Nova_Package* reference);
+char spectra_tree_nodes_Nova_PackageFunctionMap_functionMap_Nova_validateAlias(spectra_tree_nodes_Nova_PackageFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, spectra_tree_nodes_Nova_Package* reference);
 void spectra_tree_nodes_Nova_PackageFunctionMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData)
 {
 	{

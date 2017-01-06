@@ -150,6 +150,8 @@ void nova_primitive_number_Nova_Long_Nova_super(nova_primitive_number_Nova_Long*
 	this->nova_primitive_number_Nova_Long_Nova_value = 0;
 }
 
+
+nova_primitive_number_Nova_Long* nova_primitive_number_Nova_LongFunctionMap_functionMapLongFunctionMap_static_Nova_construct(nova_primitive_number_Nova_LongFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, long_long value);
 void nova_primitive_number_Nova_LongFunctionMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData)
 {
 	{

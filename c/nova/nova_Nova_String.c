@@ -620,6 +620,8 @@ nova_Nova_String* nova_Nova_String_virtual_Nova_substring(nova_Nova_String* this
 	return this->vtable->nova_Nova_String_virtual_Nova_substring((nova_Nova_String*)(this), exceptionData, start, end);
 }
 
+
+int nova_Nova_StringFunctionMap_functionMap_Nova_calculateSize(nova_Nova_StringFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* reference, char* chars);
 void nova_Nova_StringFunctionMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData)
 {
 	{

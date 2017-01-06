@@ -360,6 +360,9 @@ char spectra_tree_nodes_Nova_Type_virtual_Accessor_Nova_isPrimitiveType(spectra_
 	return this->vtable->spectra_tree_nodes_Nova_Type_virtual_Accessor_Nova_isPrimitiveType((spectra_tree_nodes_Nova_Type*)(this), exceptionData);
 }
 
+
+spectra_tree_nodes_generics_Nova_GenericParameter* spectra_tree_nodes_Nova_TypeFunctionMap_functionMap_Nova_getGenericParameter(spectra_tree_nodes_Nova_TypeFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, spectra_tree_nodes_Nova_Type* reference, spectra_tree_nodes_Nova_Node* parent);
+char spectra_tree_nodes_Nova_TypeFunctionMap_functionMap_Nova_parseGenericArguments(spectra_tree_nodes_Nova_TypeFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, spectra_tree_nodes_Nova_Type* reference, nova_Nova_String* input, spectra_tree_nodes_Nova_Node* parent, spectra_util_Nova_Location* location);
 void spectra_tree_nodes_Nova_TypeFunctionMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData)
 {
 	{

@@ -258,7 +258,7 @@ int spectra_tree_nodes_variables_Nova_FieldDeclaration_static_Nova_findExtraDecl
 		l1_Nova_last = l1_Nova_index;
 		l1_Nova_index = nova_Nova_String_0_Nova_lastIndexOf(input, exceptionData, ',', l1_Nova_index - 2, (intptr_t)nova_null);
 	}
-	return (nova_primitive_number_Nova_Int*)(l1_Nova_last < input->nova_Nova_String_Nova_count - 1 ? l1_Nova_last : (int)0);
+	return (int)(l1_Nova_last < input->nova_Nova_String_Nova_count - 1 ? l1_Nova_last : (int)0);
 }
 
 int spectra_tree_nodes_variables_Nova_FieldDeclaration_static_Nova_findAccessorIndex(spectra_tree_nodes_variables_Nova_FieldDeclaration* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* input, int defaultReturnValue)
@@ -334,6 +334,11 @@ void spectra_tree_nodes_variables_Nova_FieldDeclaration_Nova_super(spectra_tree_
 	this->spectra_tree_nodes_variables_Nova_FieldDeclaration_Nova_isTwoWayAccessor = 0;
 }
 
+
+int spectra_tree_nodes_variables_Nova_FieldDeclarationFunctionMap_functionMap_static_Nova_findExtraDeclarationsIndex(spectra_tree_nodes_variables_Nova_FieldDeclarationFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* input);
+int spectra_tree_nodes_variables_Nova_FieldDeclarationFunctionMap_functionMap_static_Nova_findAccessorIndex(spectra_tree_nodes_variables_Nova_FieldDeclarationFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* input, int defaultReturnValue);
+char spectra_tree_nodes_variables_Nova_FieldDeclarationFunctionMap_functionMap_Nova_parseAccessorValue(spectra_tree_nodes_variables_Nova_FieldDeclarationFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, spectra_tree_nodes_variables_Nova_FieldDeclaration* reference);
+char spectra_tree_nodes_variables_Nova_FieldDeclarationFunctionMap_functionMap_Nova_parseInitializationValue(spectra_tree_nodes_variables_Nova_FieldDeclarationFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, spectra_tree_nodes_variables_Nova_FieldDeclaration* reference);
 void spectra_tree_nodes_variables_Nova_FieldDeclarationFunctionMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData)
 {
 	{

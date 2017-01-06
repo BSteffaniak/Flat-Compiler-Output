@@ -147,6 +147,8 @@ void spectra_tree_nodes_arrays_Nova_ArrayAccess_Nova_super(spectra_tree_nodes_ar
 	this->spectra_tree_nodes_arrays_Nova_ArrayAccess_Nova_dimensions = nova_datastruct_list_Nova_Array_0_Nova_construct(0, exceptionData);
 }
 
+
+char spectra_tree_nodes_arrays_Nova_ArrayAccessFunctionMap_functionMap_Nova_parseDimensions(spectra_tree_nodes_arrays_Nova_ArrayAccessFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, spectra_tree_nodes_arrays_Nova_ArrayAccess* reference, nova_datastruct_list_Nova_Array* input);
 void spectra_tree_nodes_arrays_Nova_ArrayAccessFunctionMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData)
 {
 	{

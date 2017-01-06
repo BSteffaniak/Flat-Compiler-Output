@@ -588,6 +588,8 @@ void nova_math_Nova_Matrix_Nova_super(nova_math_Nova_Matrix* this, nova_exceptio
 	this->prv->nova_math_Nova_Matrix_Nova_data = (nova_datastruct_list_Nova_Array*)nova_null;
 }
 
+
+void nova_math_Nova_MatrixFunctionMap_functionMap_Nova_checkUnequalDimensions(nova_math_Nova_MatrixFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_math_Nova_Matrix* reference, nova_math_Nova_Matrix* other);
 void nova_math_Nova_MatrixFunctionMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData)
 {
 	{

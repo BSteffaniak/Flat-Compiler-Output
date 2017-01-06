@@ -171,6 +171,10 @@ void nova_math_Nova_Polynomial_Nova_super(nova_math_Nova_Polynomial* this, nova_
 	this->nova_math_Nova_Polynomial_Nova_signs = (nova_datastruct_list_Nova_Array*)nova_null;
 }
 
+
+char nova_math_Nova_PolynomialFunctionMap_functionMap_static_Nova_isLetter(nova_math_Nova_PolynomialFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, char c);
+char nova_math_Nova_PolynomialFunctionMap_functionMap_static_Nova_isSymbol(nova_math_Nova_PolynomialFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, char c);
+char nova_math_Nova_PolynomialFunctionMap_functionMap_static_Nova_isWhitespace(nova_math_Nova_PolynomialFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, char c);
 void nova_math_Nova_PolynomialFunctionMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData)
 {
 	{

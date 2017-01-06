@@ -46,7 +46,6 @@ nova_env novaEnv = {
 &nova_Nova_String_3_Nova_construct,
 },
 {
-&nova_Nova_StringFunctionMap_functionMap_Nova_calculateSize,
 0,
 &nova_Nova_StringFunctionMap_functionMap_Nova_plus,
 &nova_Nova_StringFunctionMap_functionMap_Nova_multiply,
@@ -149,8 +148,6 @@ nova_env novaEnv = {
 &nova_datastruct_Nova_BinaryNode_0_Nova_construct,
 },
 {
-&nova_datastruct_Nova_BinaryNodeFunctionMap_functionMap_Nova_getNode,
-&nova_datastruct_Nova_BinaryNodeFunctionMap_functionMap_Nova_setNode,
 &nova_datastruct_Nova_BinaryNodeFunctionMap_functionMap_Nova_addChild,
 &nova_datastruct_Nova_BinaryNodeFunctionMap_Nova_construct,
 },
@@ -210,8 +207,6 @@ nova_env novaEnv = {
 {
 0,
 &nova_datastruct_Nova_HashMapFunctionMap_functionMap_Nova_reverse,
-&nova_datastruct_Nova_HashMapFunctionMap_functionMap_Nova_getBucket,
-&nova_datastruct_Nova_HashMapFunctionMap_functionMap_Nova_getPair,
 &nova_datastruct_Nova_HashMapFunctionMap_functionMap_Nova_remove,
 &nova_datastruct_Nova_HashMapFunctionMap_functionMap_Nova_containsKey,
 &nova_datastruct_Nova_HashMapFunctionMap_functionMap_Nova_clone,
@@ -229,7 +224,6 @@ nova_env novaEnv = {
 },
 {
 &nova_datastruct_Nova_HashSetFunctionMap_functionMap_Nova_reverse,
-&nova_datastruct_Nova_HashSetFunctionMap_functionMap_Nova_getBucket,
 &nova_datastruct_Nova_HashSetFunctionMap_functionMap_Nova_add,
 &nova_datastruct_Nova_HashSetFunctionMap_functionMap_Nova_get,
 &nova_datastruct_Nova_HashSetFunctionMap_functionMap_Nova_remove,
@@ -265,10 +259,6 @@ nova_env novaEnv = {
 &nova_datastruct_Nova_NodeFunctionMap_functionMap0_Nova_inorder,
 &nova_datastruct_Nova_NodeFunctionMap_functionMap0_Nova_postorder,
 &nova_datastruct_Nova_NodeFunctionMap_functionMap0_Nova_levelorder,
-&nova_datastruct_Nova_NodeFunctionMap_functionMap1_Nova_preorder,
-&nova_datastruct_Nova_NodeFunctionMap_functionMap1_Nova_inorder,
-&nova_datastruct_Nova_NodeFunctionMap_functionMap1_Nova_postorder,
-&nova_datastruct_Nova_NodeFunctionMap_functionMap1_Nova_levelorder,
 &nova_datastruct_Nova_NodeFunctionMap_functionMap_Nova_toString,
 &nova_datastruct_Nova_NodeFunctionMap_functionMap_Nova_get,
 &nova_datastruct_Nova_NodeFunctionMap_functionMap_Nova_set,
@@ -362,11 +352,7 @@ nova_env novaEnv = {
 &nova_datastruct_list_Nova_ArrayFunctionMap_functionMap1_Nova_remove,
 &nova_datastruct_list_Nova_ArrayFunctionMap_functionMap_Nova_indexOf,
 &nova_datastruct_list_Nova_ArrayFunctionMap_functionMap_Nova_replace,
-&nova_datastruct_list_Nova_ArrayFunctionMap_functionMap_Nova_shiftRight,
-&nova_datastruct_list_Nova_ArrayFunctionMap_functionMap_Nova_shiftLeft,
 &nova_datastruct_list_Nova_ArrayFunctionMap_functionMap_Nova_swap,
-&nova_datastruct_list_Nova_ArrayFunctionMap_functionMap0_Nova_increaseSize,
-&nova_datastruct_list_Nova_ArrayFunctionMap_functionMap1_Nova_increaseSize,
 0,
 0,
 &nova_datastruct_list_Nova_ArrayFunctionMap_functionMap_Nova_sumSize,
@@ -731,7 +717,6 @@ nova_env novaEnv = {
 },
 {
 &nova_exception_Nova_ExceptionDataFunctionMap_functionMap_Nova_addCaught,
-&nova_exception_Nova_ExceptionDataFunctionMap_functionMap_Nova_getDataByException,
 &nova_exception_Nova_ExceptionDataFunctionMap_functionMap_Nova_throwException,
 &nova_exception_Nova_ExceptionDataFunctionMap_Nova_construct,
 },
@@ -932,7 +917,6 @@ nova_env novaEnv = {
 &nova_math_Nova_MatrixFunctionMap_functionMap_Nova_subtract,
 &nova_math_Nova_MatrixFunctionMap_functionMap0_Nova_minus,
 &nova_math_Nova_MatrixFunctionMap_functionMap1_Nova_minus,
-&nova_math_Nova_MatrixFunctionMap_functionMap_Nova_checkUnequalDimensions,
 &nova_math_Nova_MatrixFunctionMap_functionMap_Nova_multiply,
 &nova_math_Nova_MatrixFunctionMap_functionMap_Nova_transpose,
 &nova_math_Nova_MatrixFunctionMap_functionMap_Nova_determinant,
@@ -955,7 +939,6 @@ nova_env novaEnv = {
 &nova_math_Nova_NumericOperation_1_Nova_construct,
 },
 {
-&nova_math_Nova_NumericOperationFunctionMap_functionMap_Nova_decodeOperand,
 &nova_math_Nova_NumericOperationFunctionMap_Nova_construct,
 },
 
@@ -1129,11 +1112,6 @@ nova_env novaEnv = {
 &nova_math_logic_Nova_WFF_Nova_construct,
 },
 {
-&nova_math_logic_Nova_WFFFunctionMap_functionMap_Nova_decodeFormula,
-&nova_math_logic_Nova_WFFFunctionMap_functionMap_Nova_searchForConclusion,
-&nova_math_logic_Nova_WFFFunctionMap_functionMap_Nova_decodeHypotheses,
-&nova_math_logic_Nova_WFFFunctionMap_functionMap_Nova_generateHypothesis,
-&nova_math_logic_Nova_WFFFunctionMap_functionMap_Nova_searchForStatement,
 &nova_math_logic_Nova_WFFFunctionMap_Nova_construct,
 },
 
@@ -1143,8 +1121,6 @@ nova_env novaEnv = {
 },
 {
 &nova_meta_Nova_ClassFunctionMap_functionMap_Nova_isOfType,
-&nova_meta_Nova_ClassFunctionMap_functionMap_Nova_isOfTypeClass,
-&nova_meta_Nova_ClassFunctionMap_functionMap_Nova_isOfTypeInterface,
 &nova_meta_Nova_ClassFunctionMap_functionMap_Nova_toString,
 &nova_meta_Nova_ClassFunctionMap_Nova_construct,
 },
@@ -1206,7 +1182,6 @@ nova_env novaEnv = {
 &nova_network_Nova_ConnectionSocketFunctionMap_functionMap_Nova_close,
 &nova_network_Nova_ConnectionSocketFunctionMap_functionMap_Nova_validateConnection,
 &nova_network_Nova_ConnectionSocketFunctionMap_functionMap0_Nova_readString,
-&nova_network_Nova_ConnectionSocketFunctionMap_functionMap1_Nova_readString,
 &nova_network_Nova_ConnectionSocketFunctionMap_functionMap_Nova_write,
 &nova_network_Nova_ConnectionSocketFunctionMap_Nova_construct,
 },
@@ -1452,13 +1427,6 @@ nova_env novaEnv = {
 },
 {
 &nova_security_Nova_Sha256FunctionMap_functionMap_Nova_digest,
-&nova_security_Nova_Sha256FunctionMap_functionMap_Nova_rotr,
-&nova_security_Nova_Sha256FunctionMap_functionMap_Nova_l1,
-&nova_security_Nova_Sha256FunctionMap_functionMap_Nova_l2,
-&nova_security_Nova_Sha256FunctionMap_functionMap_Nova_l3,
-&nova_security_Nova_Sha256FunctionMap_functionMap_Nova_l4,
-&nova_security_Nova_Sha256FunctionMap_functionMap_Nova_l5,
-&nova_security_Nova_Sha256FunctionMap_functionMap_Nova_l6,
 &nova_security_Nova_Sha256FunctionMap_Nova_construct,
 },
 
@@ -1509,7 +1477,6 @@ nova_env novaEnv = {
 &nova_thread_Nova_ThreadFunctionMap_functionMap_Nova_join,
 &nova_thread_Nova_ThreadFunctionMap_functionMap_Nova_kill,
 0,
-&nova_thread_Nova_ThreadFunctionMap_functionMap_Nova_startRun,
 &nova_thread_Nova_ThreadFunctionMap_Nova_construct,
 },
 
@@ -1688,7 +1655,6 @@ nova_env novaEnv = {
 },
 {
 &spectra_Nova_SpectraFunctionMap_functionMap_Nova_compile,
-&spectra_Nova_SpectraFunctionMap_functionMap_Nova_testClasses,
 &spectra_Nova_SpectraFunctionMap_Nova_construct,
 },
 
@@ -1737,7 +1703,6 @@ nova_env novaEnv = {
 &spectra_tree_Nova_StatementIterator_Nova_construct,
 },
 {
-&spectra_tree_Nova_StatementIteratorFunctionMap_functionMap_Nova_updateScopeProperties,
 &spectra_tree_Nova_StatementIteratorFunctionMap_functionMap_Nova_reset,
 &spectra_tree_Nova_StatementIteratorFunctionMap_Nova_construct,
 },
@@ -1811,7 +1776,6 @@ nova_env novaEnv = {
 &spectra_tree_nodes_Nova_ArrayType_Nova_construct,
 },
 {
-&spectra_tree_nodes_Nova_ArrayTypeFunctionMap_functionMap_Nova_parseDimensions,
 &spectra_tree_nodes_Nova_ArrayTypeFunctionMap_functionMap_Nova_writeArray,
 &spectra_tree_nodes_Nova_ArrayTypeFunctionMap_Nova_construct,
 },
@@ -1820,7 +1784,6 @@ nova_env novaEnv = {
 &spectra_tree_nodes_Nova_Cast_Nova_construct,
 },
 {
-&spectra_tree_nodes_Nova_CastFunctionMap_functionMap_Nova_parseValue,
 &spectra_tree_nodes_Nova_CastFunctionMap_Nova_construct,
 },
 
@@ -1838,11 +1801,6 @@ nova_env novaEnv = {
 &spectra_tree_nodes_Nova_ClassDeclarationFunctionMap_functionMap_Nova_findCompatibleFunctions,
 &spectra_tree_nodes_Nova_ClassDeclarationFunctionMap_functionMap0_Nova_findVariableDeclaration,
 &spectra_tree_nodes_Nova_ClassDeclarationFunctionMap_functionMap_Nova_findFunction,
-&spectra_tree_nodes_Nova_ClassDeclarationFunctionMap_functionMap_Nova_parseModifiers,
-&spectra_tree_nodes_Nova_ClassDeclarationFunctionMap_functionMap_Nova_parseName,
-&spectra_tree_nodes_Nova_ClassDeclarationFunctionMap_functionMap_Nova_parseInheritence,
-&spectra_tree_nodes_Nova_ClassDeclarationFunctionMap_functionMap_Nova_parseExtension,
-&spectra_tree_nodes_Nova_ClassDeclarationFunctionMap_functionMap_Nova_parseImplementations,
 &spectra_tree_nodes_Nova_ClassDeclarationFunctionMap_functionMap_Nova_writeHeader,
 &spectra_tree_nodes_Nova_ClassDeclarationFunctionMap_functionMap_Nova_writeExtension,
 &spectra_tree_nodes_Nova_ClassDeclarationFunctionMap_functionMap_Nova_writeImplementedInterfaces,
@@ -1890,7 +1848,6 @@ nova_env novaEnv = {
 &spectra_tree_nodes_Nova_Literal_Nova_construct,
 },
 {
-&spectra_tree_nodes_Nova_LiteralFunctionMap_functionMap_Nova_formatValue,
 &spectra_tree_nodes_Nova_LiteralFunctionMap_Nova_construct,
 },
 
@@ -1924,11 +1881,9 @@ nova_env novaEnv = {
 &spectra_tree_nodes_Nova_Node_Nova_construct,
 },
 {
-&spectra_tree_nodes_Nova_NodeFunctionMap_functionMap_Nova_setScope,
 &spectra_tree_nodes_Nova_NodeFunctionMap_functionMap_Nova_getAdjacentNode,
 &spectra_tree_nodes_Nova_NodeFunctionMap_functionMap_Nova_addAnnotation,
 &spectra_tree_nodes_Nova_NodeFunctionMap_functionMap0_Nova_detach,
-&spectra_tree_nodes_Nova_NodeFunctionMap_functionMap1_Nova_detach,
 0,
 0,
 &spectra_tree_nodes_Nova_NodeFunctionMap_functionMap_Nova_onRemoved,
@@ -1986,9 +1941,7 @@ nova_env novaEnv = {
 &spectra_tree_nodes_Nova_NovaFile_Nova_construct,
 },
 {
-&spectra_tree_nodes_Nova_NovaFileFunctionMap_functionMap_Nova_addClass,
 &spectra_tree_nodes_Nova_NovaFileFunctionMap_functionMap_Nova_getImportedClass,
-&spectra_tree_nodes_Nova_NovaFileFunctionMap_functionMap_Nova_addDefaultImports,
 &spectra_tree_nodes_Nova_NovaFileFunctionMap_functionMap_Nova_addAutoImports,
 &spectra_tree_nodes_Nova_NovaFileFunctionMap_functionMap_Nova_addImport,
 &spectra_tree_nodes_Nova_NovaFileFunctionMap_functionMap_Nova_containsImport,
@@ -2006,8 +1959,6 @@ nova_env novaEnv = {
 &spectra_tree_nodes_Nova_Package_Nova_construct,
 },
 {
-&spectra_tree_nodes_Nova_PackageFunctionMap_functionMap_Nova_validateLocation,
-&spectra_tree_nodes_Nova_PackageFunctionMap_functionMap_Nova_validateAlias,
 &spectra_tree_nodes_Nova_PackageFunctionMap_Nova_construct,
 },
 
@@ -2024,7 +1975,6 @@ nova_env novaEnv = {
 &spectra_tree_nodes_Nova_Priority_Nova_construct,
 },
 {
-&spectra_tree_nodes_Nova_PriorityFunctionMap_functionMap_Nova_parseValue,
 &spectra_tree_nodes_Nova_PriorityFunctionMap_Nova_construct,
 },
 
@@ -2052,8 +2002,6 @@ nova_env novaEnv = {
 &spectra_tree_nodes_Nova_Scope_Nova_construct,
 },
 {
-&spectra_tree_nodes_Nova_ScopeFunctionMap_functionMap_Nova_printPrecedingWhitespace,
-&spectra_tree_nodes_Nova_ScopeFunctionMap_functionMap_Nova_childToNova,
 &spectra_tree_nodes_Nova_ScopeFunctionMap_Nova_construct,
 },
 
@@ -2089,8 +2037,6 @@ nova_env novaEnv = {
 },
 {
 &spectra_tree_nodes_Nova_TypeFunctionMap_functionMap_Nova_getClass,
-&spectra_tree_nodes_Nova_TypeFunctionMap_functionMap_Nova_getGenericParameter,
-&spectra_tree_nodes_Nova_TypeFunctionMap_functionMap_Nova_parseGenericArguments,
 0,
 &spectra_tree_nodes_Nova_TypeFunctionMap_functionMap_Nova_writeGenericParameters,
 &spectra_tree_nodes_Nova_TypeFunctionMap_functionMap_Nova_toString,
@@ -2267,7 +2213,6 @@ nova_env novaEnv = {
 {
 &spectra_tree_nodes_arrays_Nova_ArrayAccessFunctionMap_functionMap_Nova_parse,
 &spectra_tree_nodes_arrays_Nova_ArrayAccessFunctionMap_functionMap_Nova_parseDimension,
-&spectra_tree_nodes_arrays_Nova_ArrayAccessFunctionMap_functionMap_Nova_parseDimensions,
 &spectra_tree_nodes_arrays_Nova_ArrayAccessFunctionMap_Nova_construct,
 },
 
@@ -2282,7 +2227,6 @@ nova_env novaEnv = {
 &spectra_tree_nodes_controlstructures_Nova_ElseStatement_Nova_construct,
 },
 {
-&spectra_tree_nodes_controlstructures_Nova_ElseStatementFunctionMap_functionMap_Nova_parseContents,
 &spectra_tree_nodes_controlstructures_Nova_ElseStatementFunctionMap_Nova_construct,
 },
 
@@ -2290,7 +2234,6 @@ nova_env novaEnv = {
 &spectra_tree_nodes_controlstructures_Nova_IfStatement_Nova_construct,
 },
 {
-&spectra_tree_nodes_controlstructures_Nova_IfStatementFunctionMap_functionMap_Nova_parseCondition,
 &spectra_tree_nodes_controlstructures_Nova_IfStatementFunctionMap_Nova_construct,
 },
 
@@ -2298,8 +2241,6 @@ nova_env novaEnv = {
 &spectra_tree_nodes_controlstructures_loops_Nova_ForEachLoop_Nova_construct,
 },
 {
-&spectra_tree_nodes_controlstructures_loops_Nova_ForEachLoopFunctionMap_functionMap_Nova_parseIterator,
-&spectra_tree_nodes_controlstructures_loops_Nova_ForEachLoopFunctionMap_functionMap_Nova_parseVariable,
 &spectra_tree_nodes_controlstructures_loops_Nova_ForEachLoopFunctionMap_Nova_construct,
 },
 
@@ -2314,7 +2255,6 @@ nova_env novaEnv = {
 &spectra_tree_nodes_controlstructures_loops_Nova_WhileLoop_Nova_construct,
 },
 {
-&spectra_tree_nodes_controlstructures_loops_Nova_WhileLoopFunctionMap_functionMap_Nova_parseCondition,
 &spectra_tree_nodes_controlstructures_loops_Nova_WhileLoopFunctionMap_Nova_construct,
 },
 
@@ -2323,7 +2263,6 @@ nova_env novaEnv = {
 &spectra_tree_nodes_exceptionhandling_Nova_Catch_Nova_construct,
 },
 {
-&spectra_tree_nodes_exceptionhandling_Nova_CatchFunctionMap_functionMap_Nova_parseException,
 &spectra_tree_nodes_exceptionhandling_Nova_CatchFunctionMap_functionMap_Nova_writeException,
 &spectra_tree_nodes_exceptionhandling_Nova_CatchFunctionMap_Nova_construct,
 },
@@ -2339,7 +2278,6 @@ nova_env novaEnv = {
 &spectra_tree_nodes_exceptionhandling_Nova_Throw_Nova_construct,
 },
 {
-&spectra_tree_nodes_exceptionhandling_Nova_ThrowFunctionMap_functionMap_Nova_parseException,
 &spectra_tree_nodes_exceptionhandling_Nova_ThrowFunctionMap_Nova_construct,
 },
 
@@ -2362,8 +2300,6 @@ nova_env novaEnv = {
 &spectra_tree_nodes_functions_Nova_ArrayInstantiation_Nova_construct,
 },
 {
-&spectra_tree_nodes_functions_Nova_ArrayInstantiationFunctionMap_functionMap_Nova_parseDimension,
-&spectra_tree_nodes_functions_Nova_ArrayInstantiationFunctionMap_functionMap_Nova_parseDimensions,
 &spectra_tree_nodes_functions_Nova_ArrayInstantiationFunctionMap_functionMap_Nova_writeDimensions,
 &spectra_tree_nodes_functions_Nova_ArrayInstantiationFunctionMap_Nova_construct,
 },
@@ -2373,8 +2309,6 @@ nova_env novaEnv = {
 &spectra_tree_nodes_functions_Nova_BodyFunction_Nova_construct,
 },
 {
-&spectra_tree_nodes_functions_Nova_BodyFunctionFunctionMap_functionMap_Nova_parseInlineBody,
-&spectra_tree_nodes_functions_Nova_BodyFunctionFunctionMap_functionMap_Nova_writeInlineBody,
 &spectra_tree_nodes_functions_Nova_BodyFunctionFunctionMap_functionMap_Nova_writeBody,
 &spectra_tree_nodes_functions_Nova_BodyFunctionFunctionMap_Nova_construct,
 },
@@ -2414,13 +2348,6 @@ nova_env novaEnv = {
 &spectra_tree_nodes_functions_Nova_FunctionCall_Nova_construct,
 },
 {
-&spectra_tree_nodes_functions_Nova_FunctionCallFunctionMap_functionMap_Nova_parseArgument,
-&spectra_tree_nodes_functions_Nova_FunctionCallFunctionMap_functionMap_Nova_parseArguments,
-&spectra_tree_nodes_functions_Nova_FunctionCallFunctionMap_functionMap_Nova_validateDeclarationCompatible,
-&spectra_tree_nodes_functions_Nova_FunctionCallFunctionMap_functionMap_Nova_searchDeclaration,
-&spectra_tree_nodes_functions_Nova_FunctionCallFunctionMap_functionMap_Nova_searchClosureDeclaration,
-&spectra_tree_nodes_functions_Nova_FunctionCallFunctionMap_functionMap_Nova_searchThisDeclaration,
-&spectra_tree_nodes_functions_Nova_FunctionCallFunctionMap_functionMap_Nova_searchFunctionDeclaration,
 0,
 &spectra_tree_nodes_functions_Nova_FunctionCallFunctionMap_Nova_construct,
 },
@@ -2528,10 +2455,7 @@ nova_env novaEnv = {
 &spectra_tree_nodes_functions_closures_Nova_LambdaExpression_Nova_construct,
 },
 {
-&spectra_tree_nodes_functions_closures_Nova_LambdaExpressionFunctionMap_functionMap_Nova_findOperation,
-&spectra_tree_nodes_functions_closures_Nova_LambdaExpressionFunctionMap_functionMap_Nova_parseOperation,
 &spectra_tree_nodes_functions_closures_Nova_LambdaExpressionFunctionMap_functionMap_Nova_writeParameters,
-&spectra_tree_nodes_functions_closures_Nova_LambdaExpressionFunctionMap_functionMap_Nova_writeParameterClause,
 &spectra_tree_nodes_functions_closures_Nova_LambdaExpressionFunctionMap_Nova_construct,
 },
 
@@ -2539,7 +2463,6 @@ nova_env novaEnv = {
 &spectra_tree_nodes_functions_closures_Nova_LambdaParameter_Nova_construct,
 },
 {
-&spectra_tree_nodes_functions_closures_Nova_LambdaParameterFunctionMap_functionMap_Nova_parseFromSourceParamter,
 &spectra_tree_nodes_functions_closures_Nova_LambdaParameterFunctionMap_Nova_construct,
 },
 
@@ -2591,8 +2514,6 @@ nova_env novaEnv = {
 &spectra_tree_nodes_operations_Nova_Assignment_Nova_construct,
 },
 {
-0,
-0,
 &spectra_tree_nodes_operations_Nova_AssignmentFunctionMap_Nova_construct,
 },
 
@@ -2600,9 +2521,6 @@ nova_env novaEnv = {
 &spectra_tree_nodes_operations_Nova_ElvisOperation_Nova_construct,
 },
 {
-&spectra_tree_nodes_operations_Nova_ElvisOperationFunctionMap_functionMap_Nova_parseCondition,
-&spectra_tree_nodes_operations_Nova_ElvisOperationFunctionMap_functionMap_Nova_parseOtherwise,
-&spectra_tree_nodes_operations_Nova_ElvisOperationFunctionMap_functionMap_Nova_parseType,
 &spectra_tree_nodes_operations_Nova_ElvisOperationFunctionMap_Nova_construct,
 },
 
@@ -2610,9 +2528,6 @@ nova_env novaEnv = {
 &spectra_tree_nodes_operations_Nova_Operation_Nova_construct,
 },
 {
-&spectra_tree_nodes_operations_Nova_OperationFunctionMap_functionMap_Nova_parseOperators,
-&spectra_tree_nodes_operations_Nova_OperationFunctionMap_functionMap0_Nova_parseOperands,
-&spectra_tree_nodes_operations_Nova_OperationFunctionMap_functionMap1_Nova_parseOperands,
 &spectra_tree_nodes_operations_Nova_OperationFunctionMap_Nova_construct,
 },
 
@@ -2627,10 +2542,6 @@ nova_env novaEnv = {
 &spectra_tree_nodes_operations_Nova_TernaryOperation_Nova_construct,
 },
 {
-&spectra_tree_nodes_operations_Nova_TernaryOperationFunctionMap_functionMap_Nova_parseCondition,
-&spectra_tree_nodes_operations_Nova_TernaryOperationFunctionMap_functionMap_Nova_parseTrueValue,
-&spectra_tree_nodes_operations_Nova_TernaryOperationFunctionMap_functionMap_Nova_parseFalseValue,
-&spectra_tree_nodes_operations_Nova_TernaryOperationFunctionMap_functionMap_Nova_parseType,
 &spectra_tree_nodes_operations_Nova_TernaryOperationFunctionMap_Nova_construct,
 },
 
@@ -2638,8 +2549,6 @@ nova_env novaEnv = {
 &spectra_tree_nodes_operations_Nova_UnaryOperation_Nova_construct,
 },
 {
-&spectra_tree_nodes_operations_Nova_UnaryOperationFunctionMap_functionMap_Nova_parseOperator,
-&spectra_tree_nodes_operations_Nova_UnaryOperationFunctionMap_functionMap_Nova_parseOperand,
 &spectra_tree_nodes_operations_Nova_UnaryOperationFunctionMap_Nova_construct,
 },
 
@@ -2656,8 +2565,6 @@ nova_env novaEnv = {
 &spectra_tree_nodes_variables_Nova_FieldDeclaration_Nova_construct,
 },
 {
-&spectra_tree_nodes_variables_Nova_FieldDeclarationFunctionMap_functionMap_Nova_parseAccessorValue,
-&spectra_tree_nodes_variables_Nova_FieldDeclarationFunctionMap_functionMap_Nova_parseInitializationValue,
 &spectra_tree_nodes_variables_Nova_FieldDeclarationFunctionMap_functionMap_Nova_writeInitializationValue,
 &spectra_tree_nodes_variables_Nova_FieldDeclarationFunctionMap_functionMap_Nova_writeAccessorValue,
 &spectra_tree_nodes_variables_Nova_FieldDeclarationFunctionMap_Nova_construct,

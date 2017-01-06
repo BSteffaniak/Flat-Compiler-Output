@@ -131,7 +131,7 @@ nova_Nova_String* nova_network_Nova_ConnectionSocket_1_Nova_readString(nova_netw
 		char* l2_Nova_data = (char*)nova_null;
 		
 		l2_Nova_data = (char*)(nova_socket_receive(this->prv->nova_network_Nova_ConnectionSocket_Nova_socket));
-		if ((nova_primitive_number_Nova_Byte*)l2_Nova_data == (nova_primitive_number_Nova_Byte*)0)
+		if (l2_Nova_data == 0)
 		{
 			this->nova_network_Nova_ConnectionSocket_Nova_connected = 0;
 			return (nova_Nova_String*)(nova_Nova_Object*)nova_null;
@@ -155,6 +155,8 @@ void nova_network_Nova_ConnectionSocket_Nova_super(nova_network_Nova_ConnectionS
 	this->prv->nova_network_Nova_ConnectionSocket_Nova_inputBuffer = nova_datastruct_list_Nova_Queue_0_Nova_construct(0, exceptionData);
 }
 
+
+nova_Nova_String* nova_network_Nova_ConnectionSocketFunctionMap_functionMap1_Nova_readString(nova_network_Nova_ConnectionSocketFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_network_Nova_ConnectionSocket* reference, char checkBuffer);
 void nova_network_Nova_ConnectionSocketFunctionMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData)
 {
 	{

@@ -280,6 +280,8 @@ void spectra_Nova_Spectra_Nova_super(spectra_Nova_Spectra* this, nova_exception_
 	this->spectra_Nova_Spectra_Nova_info = nova_datastruct_list_Nova_Array_0_Nova_construct(0, exceptionData);
 }
 
+
+void spectra_Nova_SpectraFunctionMap_functionMap_Nova_testClasses(spectra_Nova_SpectraFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, spectra_Nova_Spectra* reference);
 void spectra_Nova_SpectraFunctionMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData)
 {
 	{

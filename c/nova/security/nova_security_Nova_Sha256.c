@@ -279,6 +279,14 @@ void nova_security_Nova_Sha256_Nova_super(nova_security_Nova_Sha256* this, nova_
 {
 }
 
+
+long_long nova_security_Nova_Sha256FunctionMap_functionMap_Nova_rotr(nova_security_Nova_Sha256FunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_security_Nova_Sha256* reference, long_long n, long_long x);
+long_long nova_security_Nova_Sha256FunctionMap_functionMap_Nova_l1(nova_security_Nova_Sha256FunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_security_Nova_Sha256* reference, long_long x);
+long_long nova_security_Nova_Sha256FunctionMap_functionMap_Nova_l2(nova_security_Nova_Sha256FunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_security_Nova_Sha256* reference, long_long x);
+long_long nova_security_Nova_Sha256FunctionMap_functionMap_Nova_l3(nova_security_Nova_Sha256FunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_security_Nova_Sha256* reference, long_long x);
+long_long nova_security_Nova_Sha256FunctionMap_functionMap_Nova_l4(nova_security_Nova_Sha256FunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_security_Nova_Sha256* reference, long_long x);
+long_long nova_security_Nova_Sha256FunctionMap_functionMap_Nova_l5(nova_security_Nova_Sha256FunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_security_Nova_Sha256* reference, long_long x, long_long y, long_long z);
+long_long nova_security_Nova_Sha256FunctionMap_functionMap_Nova_l6(nova_security_Nova_Sha256FunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_security_Nova_Sha256* reference, long_long x, long_long y, long_long z);
 void nova_security_Nova_Sha256FunctionMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData)
 {
 	{

@@ -478,6 +478,8 @@ void nova_datastruct_Nova_HashSet_Nova_super(nova_datastruct_Nova_HashSet* this,
 	this->prv->nova_datastruct_Nova_HashSet_Nova_bucketSize = 0;
 }
 
+
+nova_datastruct_list_Nova_Array* nova_datastruct_Nova_HashSetFunctionMap_functionMap_Nova_getBucket(nova_datastruct_Nova_HashSetFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_Nova_HashSet* reference, nova_Nova_Object* value);
 void nova_datastruct_Nova_HashSetFunctionMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData)
 {
 	{

@@ -193,6 +193,8 @@ void spectra_tree_nodes_exceptionhandling_Nova_Catch_Nova_super(spectra_tree_nod
 	this->spectra_tree_nodes_exceptionhandling_Nova_Catch_Nova_soft = 0;
 }
 
+
+char spectra_tree_nodes_exceptionhandling_Nova_CatchFunctionMap_functionMap_Nova_parseException(spectra_tree_nodes_exceptionhandling_Nova_CatchFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, spectra_tree_nodes_exceptionhandling_Nova_Catch* reference, nova_Nova_String* input);
 void spectra_tree_nodes_exceptionhandling_Nova_CatchFunctionMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData)
 {
 	{
