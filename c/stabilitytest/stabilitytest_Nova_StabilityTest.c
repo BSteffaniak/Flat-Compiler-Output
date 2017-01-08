@@ -51,7 +51,6 @@
 #include <stabilitytest/stabilitytest_Nova_StabilityTestCase.h>
 #include <stabilitytest/stabilitytest_Nova_StabilityTest.h>
 #include <nova/NativeObject.h>
-#include <nova/operators/nova_operators_Nova_EqualsOperator.h>
 
 
 

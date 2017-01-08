@@ -40,7 +40,6 @@
 #include <nova/primitive/nova_primitive_Nova_Primitive.h>
 #include <nova/operators/nova_operators_Nova_MultiplyOperator.h>
 #include <nova/NativeObject.h>
-#include <nova/operators/nova_operators_Nova_EqualsOperator.h>
 
 
 
@@ -142,7 +141,7 @@ long_long nova_primitive_number_Nova_Long_Nova_multiply(nova_primitive_number_No
 
 nova_Nova_String* nova_primitive_number_Nova_Long_Nova_toString(nova_primitive_number_Nova_Long* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
-	return nova_primitive_number_Nova_Long_static_Nova_toString(0, exceptionData, this->nova_primitive_number_Nova_Long_Nova_value);
+	return nova_primitive_number_Nova_Long_static_Nova_toString(this, exceptionData, this->nova_primitive_number_Nova_Long_Nova_value);
 }
 
 void nova_primitive_number_Nova_Long_Nova_super(nova_primitive_number_Nova_Long* this, nova_exception_Nova_ExceptionData* exceptionData)

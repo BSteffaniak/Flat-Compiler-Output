@@ -41,7 +41,6 @@ typedef struct nova_thread_async_Nova_TaskFunctionMap nova_thread_async_Nova_Tas
 #include <nova/meta/nova_meta_Nova_FunctionMap.h>
 #include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <nova/NativeObject.h>
-#include <nova/operators/nova_operators_Nova_EqualsOperator.h>
 
 CCLASS_CLASS
 (

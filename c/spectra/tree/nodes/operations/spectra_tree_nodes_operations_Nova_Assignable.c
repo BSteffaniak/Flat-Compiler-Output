@@ -33,7 +33,6 @@
 #include <spectra/tree/nodes/spectra_tree_nodes_Nova_Value.h>
 #include <spectra/tree/nodes/variables/spectra_tree_nodes_variables_Nova_VariableDeclaration.h>
 #include <nova/NativeObject.h>
-#include <nova/operators/nova_operators_Nova_EqualsOperator.h>
 
 
 

@@ -43,7 +43,6 @@ typedef struct spectra_Nova_InvalidParseExceptionFunctionMap spectra_Nova_Invali
 #include <spectra/tree/nodes/spectra_tree_nodes_Nova_Node.h>
 #include <nova/exception/nova_exception_Nova_Exception.h>
 #include <nova/NativeObject.h>
-#include <nova/operators/nova_operators_Nova_EqualsOperator.h>
 
 CCLASS_CLASS
 (

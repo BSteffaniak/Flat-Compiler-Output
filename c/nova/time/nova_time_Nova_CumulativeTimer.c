@@ -34,7 +34,6 @@
 #include <nova/time/nova_time_Nova_Timer.h>
 #include <nova/time/nova_time_Nova_Time.h>
 #include <nova/NativeObject.h>
-#include <nova/operators/nova_operators_Nova_EqualsOperator.h>
 
 
 

@@ -44,7 +44,6 @@ typedef struct stabilitytest_Nova_ToStringStabilityFunctionMap stabilitytest_Nov
 #include <stabilitytest/stabilitytest_Nova_StabilityTestCase.h>
 #include <stabilitytest/stabilitytest_Nova_StabilityTestCase.h>
 #include <nova/NativeObject.h>
-#include <nova/operators/nova_operators_Nova_EqualsOperator.h>
 
 CCLASS_CLASS
 (

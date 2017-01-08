@@ -35,7 +35,6 @@
 #include <nova/primitive/nova_primitive_Nova_Primitive.h>
 #include <nova/datastruct/nova_datastruct_Nova_Comparable.h>
 #include <nova/NativeObject.h>
-#include <nova/operators/nova_operators_Nova_EqualsOperator.h>
 
 
 
@@ -84,7 +83,7 @@ char nova_primitive_Nova_Bool_Nova_compareTo(nova_primitive_Nova_Bool* this, nov
 
 nova_Nova_String* nova_primitive_Nova_Bool_Nova_toString(nova_primitive_Nova_Bool* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
-	return nova_primitive_Nova_Bool_static_Nova_toString(0, exceptionData, this->nova_primitive_Nova_Bool_Nova_value);
+	return nova_primitive_Nova_Bool_static_Nova_toString(this, exceptionData, this->nova_primitive_Nova_Bool_Nova_value);
 }
 
 nova_Nova_String* nova_primitive_Nova_Bool_static_Nova_toString(nova_primitive_Nova_Bool* this, nova_exception_Nova_ExceptionData* exceptionData, char value)

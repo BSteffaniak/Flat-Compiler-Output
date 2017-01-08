@@ -43,7 +43,6 @@ typedef struct nova_regex_Nova_RegexFunctionMap nova_regex_Nova_RegexFunctionMap
 #include <nova/regex/nova_regex_Nova_Match.h>
 #include <pcre/pcre2.h>
 #include <nova/NativeObject.h>
-#include <nova/operators/nova_operators_Nova_EqualsOperator.h>
 
 CCLASS_CLASS
 (

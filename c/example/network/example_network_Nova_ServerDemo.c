@@ -35,7 +35,6 @@
 #include <example/network/example_network_Nova_ConnectionThread.h>
 #include <example/network/example_network_Nova_OutputThread.h>
 #include <nova/NativeObject.h>
-#include <nova/operators/nova_operators_Nova_EqualsOperator.h>
 
 
 

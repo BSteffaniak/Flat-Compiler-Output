@@ -52,7 +52,6 @@ typedef struct spectra_tree_nodes_functions_Nova_CallableFunctionFunctionMap spe
 #include <spectra/tree/nodes/functions/spectra_tree_nodes_functions_Nova_ParameterList.h>
 #include <spectra/tree/nodes/generics/spectra_tree_nodes_generics_Nova_GenericCompatible.h>
 #include <nova/NativeObject.h>
-#include <nova/operators/nova_operators_Nova_EqualsOperator.h>
 
 CCLASS_CLASS
 (

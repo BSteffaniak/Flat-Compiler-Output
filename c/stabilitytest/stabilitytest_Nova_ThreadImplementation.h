@@ -43,7 +43,6 @@ typedef struct stabilitytest_Nova_ThreadImplementationFunctionMap stabilitytest_
 #include <nova/thread/nova_thread_Nova_Thread.h>
 #include <nova/thread/NativeThread.h>
 #include <nova/NativeObject.h>
-#include <nova/operators/nova_operators_Nova_EqualsOperator.h>
 
 CCLASS_CLASS
 (

@@ -44,7 +44,6 @@ typedef struct stabilitytest_Nova_PolymorphicSubClassFunctionMap stabilitytest_N
 #include <stabilitytest/stabilitytest_Nova_PolymorphicSuperClass.h>
 #include <stabilitytest/stabilitytest_Nova_PolymorphicSubClass.h>
 #include <nova/NativeObject.h>
-#include <nova/operators/nova_operators_Nova_EqualsOperator.h>
 
 CCLASS_CLASS
 (

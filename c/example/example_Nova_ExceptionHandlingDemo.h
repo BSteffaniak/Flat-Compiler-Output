@@ -42,7 +42,6 @@ typedef struct example_Nova_ExceptionHandlingDemoFunctionMap example_Nova_Except
 #include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <example/example_Nova_NonWholeDivisionException.h>
 #include <nova/NativeObject.h>
-#include <nova/operators/nova_operators_Nova_EqualsOperator.h>
 
 CCLASS_CLASS
 (

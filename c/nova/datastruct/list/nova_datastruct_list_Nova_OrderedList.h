@@ -51,7 +51,6 @@ typedef char (*nova_datastruct_list_Nova_OrderedListFunctionMap_closure5_Nova_co
 #include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_Iterator.h>
 #include <nova/NativeObject.h>
-#include <nova/operators/nova_operators_Nova_EqualsOperator.h>
 
 CCLASS_CLASS
 (

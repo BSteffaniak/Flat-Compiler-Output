@@ -78,7 +78,6 @@ typedef char (*nova_datastruct_list_Nova_IntRangeFunctionMap_closure30_Nova_func
 #include <nova/datastruct/list/nova_datastruct_list_Nova_List.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_Iterable.h>
 #include <nova/NativeObject.h>
-#include <nova/operators/nova_operators_Nova_EqualsOperator.h>
 
 CCLASS_CLASS
 (

@@ -43,7 +43,6 @@ typedef struct nova_math_logic_Nova_LogicalConnectiveFunctionMap nova_math_logic
 #include <nova/math/logic/nova_math_logic_Nova_StatementComponent.h>
 #include <nova/math/logic/nova_math_logic_Nova_StatementComponent.h>
 #include <nova/NativeObject.h>
-#include <nova/operators/nova_operators_Nova_EqualsOperator.h>
 
 CCLASS_CLASS
 (

@@ -54,7 +54,6 @@
 #include <spectra/tree/nodes/spectra_tree_nodes_Nova_ValidationResult.h>
 #include <spectra/tree/nodes/annotations/spectra_tree_nodes_annotations_Nova_Annotatable.h>
 #include <nova/NativeObject.h>
-#include <nova/operators/nova_operators_Nova_EqualsOperator.h>
 
 typedef struct
 {
@@ -62,7 +61,7 @@ typedef struct
 
 
 
-nova_Nova_String* spectra_tree_nodes_functions_Nova_ObjectNotation_Nova_lambda65(spectra_tree_nodes_functions_Nova_ObjectNotation* this, nova_exception_Nova_ExceptionData* exceptionData, spectra_tree_nodes_Nova_Node* _1, int _2, nova_datastruct_list_Nova_Array* _3, Context1* context);
+nova_Nova_String* spectra_tree_nodes_functions_Nova_ObjectNotation_Nova_lambda67(spectra_tree_nodes_functions_Nova_ObjectNotation* this, nova_exception_Nova_ExceptionData* exceptionData, spectra_tree_nodes_Nova_Node* _1, int _2, nova_datastruct_list_Nova_Array* _3, Context1* context);
 void spectra_tree_nodes_functions_Nova_ObjectNotation_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData)
 {
 	{
@@ -121,9 +120,9 @@ spectra_tree_nodes_variables_Nova_VariableDeclaration* spectra_tree_nodes_functi
 
 nova_Nova_String* spectra_tree_nodes_functions_Nova_ObjectNotation_Nova_writeChildren(spectra_tree_nodes_functions_Nova_ObjectNotation* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
-	Context1* contextArg65 = NOVA_MALLOC(sizeof(Context1));
+	Context1* contextArg67 = NOVA_MALLOC(sizeof(Context1));
 	
-	return (nova_Nova_String*)(nova_datastruct_list_Nova_Array_Accessorfunc_Nova_count((nova_datastruct_list_Nova_Array*)(this->spectra_tree_nodes_Nova_NodeList_Nova_children), exceptionData) > 0 ? nova_Nova_String_Nova_plus(nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("\n")), exceptionData, nova_datastruct_list_Nova_List_virtual_Nova_join((nova_datastruct_list_Nova_List*)(nova_datastruct_list_Nova_List_virtual0_Nova_map((nova_datastruct_list_Nova_List*)(this->spectra_tree_nodes_Nova_NodeList_Nova_children), exceptionData, (nova_datastruct_list_Nova_List_closure8_Nova_mapFunc)&spectra_tree_nodes_functions_Nova_ObjectNotation_Nova_lambda65, this, contextArg65)), exceptionData, 0)) : nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("")));
+	return (nova_Nova_String*)(nova_datastruct_list_Nova_Array_Accessorfunc_Nova_count((nova_datastruct_list_Nova_Array*)(this->spectra_tree_nodes_Nova_NodeList_Nova_children), exceptionData) > 0 ? nova_Nova_String_Nova_plus(nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("\n")), exceptionData, nova_datastruct_list_Nova_List_virtual_Nova_join((nova_datastruct_list_Nova_List*)(nova_datastruct_list_Nova_List_virtual0_Nova_map((nova_datastruct_list_Nova_List*)(this->spectra_tree_nodes_Nova_NodeList_Nova_children), exceptionData, (nova_datastruct_list_Nova_List_closure8_Nova_mapFunc)&spectra_tree_nodes_functions_Nova_ObjectNotation_Nova_lambda67, this, contextArg67)), exceptionData, 0)) : nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("")));
 }
 
 nova_Nova_String* spectra_tree_nodes_functions_Nova_ObjectNotation_Nova_writeNova(spectra_tree_nodes_functions_Nova_ObjectNotation* this, nova_exception_Nova_ExceptionData* exceptionData)
@@ -131,7 +130,7 @@ nova_Nova_String* spectra_tree_nodes_functions_Nova_ObjectNotation_Nova_writeNov
 	return (nova_Nova_String*)nova_Nova_String_Nova_plus(nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("{")), exceptionData, (nova_Nova_String*)(nova_Nova_String_Nova_plus(spectra_tree_nodes_functions_Nova_ObjectNotation_Nova_writeChildren(this, exceptionData), exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("}")))));
 }
 
-nova_Nova_String* spectra_tree_nodes_functions_Nova_ObjectNotation_Nova_lambda65(spectra_tree_nodes_functions_Nova_ObjectNotation* this, nova_exception_Nova_ExceptionData* exceptionData, spectra_tree_nodes_Nova_Node* _1, int _2, nova_datastruct_list_Nova_Array* _3, Context1* context)
+nova_Nova_String* spectra_tree_nodes_functions_Nova_ObjectNotation_Nova_lambda67(spectra_tree_nodes_functions_Nova_ObjectNotation* this, nova_exception_Nova_ExceptionData* exceptionData, spectra_tree_nodes_Nova_Node* _1, int _2, nova_datastruct_list_Nova_Array* _3, Context1* context)
 {
 	return (nova_Nova_String*)nova_Nova_String_Nova_plus(spectra_tree_nodes_Nova_Node_virtual_Nova_toNova((spectra_tree_nodes_Nova_Node*)(_1), exceptionData), exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("\n")));
 }

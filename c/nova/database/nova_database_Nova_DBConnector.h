@@ -43,7 +43,6 @@ typedef struct nova_database_Nova_DBConnectorFunctionMap nova_database_Nova_DBCo
 #include <nova/database/NativeDBConnector.h>
 #include <nova/database/nova_database_Nova_ResultSet.h>
 #include <nova/NativeObject.h>
-#include <nova/operators/nova_operators_Nova_EqualsOperator.h>
 
 CCLASS_CLASS
 (

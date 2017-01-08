@@ -43,7 +43,6 @@ typedef struct nova_star_Nova_WindowFunctionMap nova_star_Nova_WindowFunctionMap
 #include <nova/star/NativeWindow.h>
 #include <nova/star/nova_star_Nova_WindowThread.h>
 #include <nova/NativeObject.h>
-#include <nova/operators/nova_operators_Nova_EqualsOperator.h>
 
 CCLASS_CLASS
 (

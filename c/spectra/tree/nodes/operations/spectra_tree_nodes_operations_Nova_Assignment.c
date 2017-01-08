@@ -78,7 +78,6 @@
 #include <spectra/tree/nodes/spectra_tree_nodes_Nova_ValidationResult.h>
 #include <spectra/tree/nodes/annotations/spectra_tree_nodes_annotations_Nova_Annotatable.h>
 #include <nova/NativeObject.h>
-#include <nova/operators/nova_operators_Nova_EqualsOperator.h>
 
 
 
@@ -146,7 +145,7 @@ spectra_tree_nodes_operations_Nova_Assignment* spectra_tree_nodes_operations_Nov
 		if (spectra_tree_nodes_operations_Nova_Assignment_Nova_parseAssignedNode(l2_Nova_node, exceptionData, spectra_tree_nodes_operations_Nova_Assignment_static_Nova_findAssigned(0, exceptionData, input, l1_Nova_assignmentIndex)) && spectra_tree_nodes_operations_Nova_Assignment_Nova_parseAssignment(l2_Nova_node, exceptionData, spectra_tree_nodes_operations_Nova_Assignment_static_Nova_findAssignment(0, exceptionData, input, l1_Nova_assignmentIndex)))
 		{
 			nova_datastruct_list_Nova_Array_0_Nova_add((nova_datastruct_list_Nova_Array*)(l2_Nova_node->spectra_tree_nodes_operations_Nova_Operation_Nova_operators), exceptionData, (nova_Nova_Object*)(spectra_tree_nodes_operations_Nova_Operator_Nova_construct(0, exceptionData, (spectra_tree_nodes_Nova_Node*)(l2_Nova_node), location, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("=")))));
-			if (nova_meta_Nova_Class_Nova_isOfType(spectra_tree_nodes_operations_Nova_Assignment_Accessor_Nova_assigned(l2_Nova_node, exceptionData)->vtable->classInstance, exceptionData, (nova_meta_Nova_Class*)(spectra_tree_nodes_variables_VariableDeclaration_Extension_VTable_val.classInstance)))
+			if (nova_meta_Nova_Class_Nova_isOfType((nova_meta_Nova_Class*)(spectra_tree_nodes_operations_Nova_Assignment_Accessor_Nova_assigned(l2_Nova_node, exceptionData)->vtable->classInstance), exceptionData, (nova_meta_Nova_Class*)(spectra_tree_nodes_variables_VariableDeclaration_Extension_VTable_val.classInstance)))
 			{
 				nova_datastruct_list_Nova_Array_0_Nova_add((nova_datastruct_list_Nova_Array*)(spectra_tree_nodes_Nova_Node_Accessor_Nova_parentScope((spectra_tree_nodes_Nova_Node*)(l2_Nova_node), exceptionData)->spectra_tree_nodes_Nova_Scope_Nova_declarations), exceptionData, (nova_Nova_Object*)((spectra_tree_nodes_variables_Nova_VariableDeclaration*)spectra_tree_nodes_operations_Nova_Assignment_Accessor_Nova_assigned(l2_Nova_node, exceptionData)));
 			}
@@ -248,7 +247,7 @@ spectra_tree_nodes_Nova_Type* spectra_tree_nodes_operations_Nova_Assignment_Acce
 
 spectra_tree_nodes_variables_Nova_VariableDeclaration* spectra_tree_nodes_operations_Nova_Assignment_Accessor_Nova_assignedDeclaration(spectra_tree_nodes_operations_Nova_Assignment* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
-	return (spectra_tree_nodes_variables_Nova_VariableDeclaration*)(nova_meta_Nova_Class_Nova_isOfType(spectra_tree_nodes_operations_Nova_Assignment_Accessor_Nova_assigned(this, exceptionData)->vtable->classInstance, exceptionData, (nova_meta_Nova_Class*)(spectra_tree_nodes_variables_VariableDeclaration_Extension_VTable_val.classInstance)) ? (spectra_tree_nodes_variables_Nova_VariableDeclaration*)spectra_tree_nodes_operations_Nova_Assignment_Accessor_Nova_assigned(this, exceptionData) : ((spectra_tree_nodes_variables_Nova_Variable*)spectra_tree_nodes_operations_Nova_Assignment_Accessor_Nova_assigned(this, exceptionData))->spectra_tree_nodes_variables_Nova_Variable_Nova_declaration);
+	return (spectra_tree_nodes_variables_Nova_VariableDeclaration*)(nova_meta_Nova_Class_Nova_isOfType((nova_meta_Nova_Class*)(spectra_tree_nodes_operations_Nova_Assignment_Accessor_Nova_assigned(this, exceptionData)->vtable->classInstance), exceptionData, (nova_meta_Nova_Class*)(spectra_tree_nodes_variables_VariableDeclaration_Extension_VTable_val.classInstance)) ? (spectra_tree_nodes_variables_Nova_VariableDeclaration*)spectra_tree_nodes_operations_Nova_Assignment_Accessor_Nova_assigned(this, exceptionData) : ((spectra_tree_nodes_variables_Nova_Variable*)spectra_tree_nodes_operations_Nova_Assignment_Accessor_Nova_assigned(this, exceptionData))->spectra_tree_nodes_variables_Nova_Variable_Nova_declaration);
 }
 
 

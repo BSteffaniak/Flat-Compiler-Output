@@ -44,7 +44,6 @@ typedef struct nova_math_huffman_Nova_HuffmanTreeFunctionMap nova_math_huffman_N
 #include <nova/datastruct/nova_datastruct_Nova_Tree.h>
 #include <nova/datastruct/nova_datastruct_Nova_Node.h>
 #include <nova/NativeObject.h>
-#include <nova/operators/nova_operators_Nova_EqualsOperator.h>
 
 CCLASS_CLASS
 (

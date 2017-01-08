@@ -42,7 +42,6 @@ typedef struct stabilitytest_Nova_StabilityTestCaseFunctionMap stabilitytest_Nov
 #include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <stabilitytest/stabilitytest_Nova_StabilityTest.h>
 #include <nova/NativeObject.h>
-#include <nova/operators/nova_operators_Nova_EqualsOperator.h>
 
 CCLASS_CLASS
 (

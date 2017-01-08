@@ -44,8 +44,7 @@
 #include <spectra/tree/nodes/variables/spectra_tree_nodes_variables_Nova_VariableDeclaration.h>
 #include <spectra/tree/nodes/spectra_tree_nodes_Nova_Identifier.h>
 #include <spectra/tree/nodes/annotations/spectra_tree_nodes_annotations_Nova_Modifier.h>
-#include <spectra/tree/nodes/annotations/spectra_tree_nodes_annotations_Nova_PureAnnotation.h>
-#include <spectra/tree/nodes/annotations/spectra_tree_nodes_annotations_Nova_PureAnnotation.h>
+#include <spectra/tree/nodes/annotations/spectra_tree_nodes_annotations_Nova_Modifier.h>
 #include <spectra/tree/nodes/spectra_tree_nodes_Nova_Identifier.h>
 #include <spectra/tree/nodes/spectra_tree_nodes_Nova_Value.h>
 #include <nova/datastruct/nova_datastruct_Nova_Tuple2.h>
@@ -84,7 +83,6 @@
 #include <spectra/tree/nodes/spectra_tree_nodes_Nova_ValidationResult.h>
 #include <spectra/tree/nodes/annotations/spectra_tree_nodes_annotations_Nova_Annotatable.h>
 #include <nova/NativeObject.h>
-#include <nova/operators/nova_operators_Nova_EqualsOperator.h>
 
 
 
@@ -287,12 +285,12 @@ int spectra_tree_nodes_variables_Nova_FieldDeclaration_static_Nova_findAccessorI
 
 char spectra_tree_nodes_variables_Nova_FieldDeclaration_Nova_parseAccessorValue(spectra_tree_nodes_variables_Nova_FieldDeclaration* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
-	return (char)(nova_meta_Nova_Class_Nova_isOfType(this->spectra_tree_nodes_variables_Nova_FieldDeclaration_Nova_accessorValue->vtable->classInstance, exceptionData, (nova_meta_Nova_Class*)(spectra_tree_nodes_PlaceholderValue_Extension_VTable_val.classInstance)) ? (this->spectra_tree_nodes_variables_Nova_FieldDeclaration_Nova_accessorValue = spectra_tree_nodes_Nova_Value_1_static_Nova_parse(0, exceptionData, (spectra_tree_nodes_Nova_PlaceholderValue*)this->spectra_tree_nodes_variables_Nova_FieldDeclaration_Nova_accessorValue, (intptr_t)nova_null)) != (spectra_tree_nodes_Nova_Value*)nova_null : 1);
+	return (char)(nova_meta_Nova_Class_Nova_isOfType((nova_meta_Nova_Class*)(this->spectra_tree_nodes_variables_Nova_FieldDeclaration_Nova_accessorValue->vtable->classInstance), exceptionData, (nova_meta_Nova_Class*)(spectra_tree_nodes_PlaceholderValue_Extension_VTable_val.classInstance)) ? (this->spectra_tree_nodes_variables_Nova_FieldDeclaration_Nova_accessorValue = spectra_tree_nodes_Nova_Value_1_static_Nova_parse(0, exceptionData, (spectra_tree_nodes_Nova_PlaceholderValue*)this->spectra_tree_nodes_variables_Nova_FieldDeclaration_Nova_accessorValue, (intptr_t)nova_null)) != (spectra_tree_nodes_Nova_Value*)nova_null : 1);
 }
 
 char spectra_tree_nodes_variables_Nova_FieldDeclaration_Nova_parseInitializationValue(spectra_tree_nodes_variables_Nova_FieldDeclaration* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
-	return (char)(nova_meta_Nova_Class_Nova_isOfType(this->spectra_tree_nodes_variables_Nova_FieldDeclaration_Nova_initializationValue->vtable->classInstance, exceptionData, (nova_meta_Nova_Class*)(spectra_tree_nodes_PlaceholderValue_Extension_VTable_val.classInstance)) ? (this->spectra_tree_nodes_variables_Nova_FieldDeclaration_Nova_initializationValue = spectra_tree_nodes_Nova_Value_1_static_Nova_parse(0, exceptionData, (spectra_tree_nodes_Nova_PlaceholderValue*)this->spectra_tree_nodes_variables_Nova_FieldDeclaration_Nova_initializationValue, (intptr_t)nova_null)) != (spectra_tree_nodes_Nova_Value*)nova_null : 1);
+	return (char)(nova_meta_Nova_Class_Nova_isOfType((nova_meta_Nova_Class*)(this->spectra_tree_nodes_variables_Nova_FieldDeclaration_Nova_initializationValue->vtable->classInstance), exceptionData, (nova_meta_Nova_Class*)(spectra_tree_nodes_PlaceholderValue_Extension_VTable_val.classInstance)) ? (this->spectra_tree_nodes_variables_Nova_FieldDeclaration_Nova_initializationValue = spectra_tree_nodes_Nova_Value_1_static_Nova_parse(0, exceptionData, (spectra_tree_nodes_Nova_PlaceholderValue*)this->spectra_tree_nodes_variables_Nova_FieldDeclaration_Nova_initializationValue, (intptr_t)nova_null)) != (spectra_tree_nodes_Nova_Value*)nova_null : 1);
 }
 
 char spectra_tree_nodes_variables_Nova_FieldDeclaration_Nova_parsePlaceholders(spectra_tree_nodes_variables_Nova_FieldDeclaration* this, nova_exception_Nova_ExceptionData* exceptionData)

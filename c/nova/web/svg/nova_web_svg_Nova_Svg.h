@@ -43,7 +43,6 @@ typedef struct nova_web_svg_Nova_SvgFunctionMap nova_web_svg_Nova_SvgFunctionMap
 #include <nova/io/nova_io_Nova_FileWriter.h>
 #include <nova/web/svg/nova_web_svg_Nova_SvgMainComponent.h>
 #include <nova/NativeObject.h>
-#include <nova/operators/nova_operators_Nova_EqualsOperator.h>
 
 CCLASS_CLASS
 (

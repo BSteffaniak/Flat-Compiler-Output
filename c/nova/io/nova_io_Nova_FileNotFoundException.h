@@ -43,7 +43,6 @@ typedef struct nova_io_Nova_FileNotFoundExceptionFunctionMap nova_io_Nova_FileNo
 #include <nova/io/nova_io_Nova_File.h>
 #include <nova/exception/nova_exception_Nova_Exception.h>
 #include <nova/NativeObject.h>
-#include <nova/operators/nova_operators_Nova_EqualsOperator.h>
 
 CCLASS_CLASS
 (

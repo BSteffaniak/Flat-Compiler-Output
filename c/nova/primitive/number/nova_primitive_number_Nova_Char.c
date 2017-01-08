@@ -40,7 +40,6 @@
 #include <nova/primitive/nova_primitive_Nova_Primitive.h>
 #include <nova/operators/nova_operators_Nova_MultiplyOperator.h>
 #include <nova/NativeObject.h>
-#include <nova/operators/nova_operators_Nova_EqualsOperator.h>
 
 
 
@@ -109,12 +108,12 @@ char nova_primitive_number_Nova_Char_static_Nova_toUpperCase(nova_primitive_numb
 
 char nova_primitive_number_Nova_Char_Nova_toLowerCase(nova_primitive_number_Nova_Char* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
-	return nova_primitive_number_Nova_Char_static_Nova_toLowerCase(0, exceptionData, this->nova_primitive_number_Nova_Char_Nova_value);
+	return nova_primitive_number_Nova_Char_static_Nova_toLowerCase(this, exceptionData, this->nova_primitive_number_Nova_Char_Nova_value);
 }
 
 char nova_primitive_number_Nova_Char_Nova_toUpperCase(nova_primitive_number_Nova_Char* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
-	return nova_primitive_number_Nova_Char_static_Nova_toUpperCase(0, exceptionData, this->nova_primitive_number_Nova_Char_Nova_value);
+	return nova_primitive_number_Nova_Char_static_Nova_toUpperCase(this, exceptionData, this->nova_primitive_number_Nova_Char_Nova_value);
 }
 
 char nova_primitive_number_Nova_Char_0_Nova_compareTo(nova_primitive_number_Nova_Char* this, nova_exception_Nova_ExceptionData* exceptionData, char other)
@@ -129,7 +128,7 @@ char nova_primitive_number_Nova_Char_Nova_multiply(nova_primitive_number_Nova_Ch
 
 nova_Nova_String* nova_primitive_number_Nova_Char_Nova_toString(nova_primitive_number_Nova_Char* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
-	return nova_primitive_number_Nova_Char_static_Nova_toString(0, exceptionData, this->nova_primitive_number_Nova_Char_Nova_value);
+	return nova_primitive_number_Nova_Char_static_Nova_toString(this, exceptionData, this->nova_primitive_number_Nova_Char_Nova_value);
 }
 
 nova_Nova_String* nova_primitive_number_Nova_Char_static_Nova_toString(nova_primitive_number_Nova_Char* this, nova_exception_Nova_ExceptionData* exceptionData, char c)

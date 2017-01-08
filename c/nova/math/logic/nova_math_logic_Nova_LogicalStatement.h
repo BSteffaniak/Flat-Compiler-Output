@@ -44,7 +44,6 @@ typedef struct nova_math_logic_Nova_LogicalStatementFunctionMap nova_math_logic_
 #include <nova/math/logic/nova_math_logic_Nova_StatementComponent.h>
 #include <nova/math/nova_math_Nova_Statement.h>
 #include <nova/NativeObject.h>
-#include <nova/operators/nova_operators_Nova_EqualsOperator.h>
 
 CCLASS_CLASS
 (

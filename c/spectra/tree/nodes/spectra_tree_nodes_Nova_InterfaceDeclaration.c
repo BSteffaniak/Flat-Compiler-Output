@@ -58,8 +58,7 @@
 #include <spectra/tree/nodes/variables/spectra_tree_nodes_variables_Nova_VariableDeclaration.h>
 #include <spectra/tree/nodes/spectra_tree_nodes_Nova_Identifier.h>
 #include <spectra/tree/nodes/annotations/spectra_tree_nodes_annotations_Nova_Modifier.h>
-#include <spectra/tree/nodes/annotations/spectra_tree_nodes_annotations_Nova_PureAnnotation.h>
-#include <spectra/tree/nodes/annotations/spectra_tree_nodes_annotations_Nova_PureAnnotation.h>
+#include <spectra/tree/nodes/annotations/spectra_tree_nodes_annotations_Nova_Modifier.h>
 #include <spectra/tree/nodes/spectra_tree_nodes_Nova_Identifier.h>
 #include <spectra/tree/nodes/spectra_tree_nodes_Nova_Value.h>
 #include <nova/datastruct/nova_datastruct_Nova_Tuple2.h>
@@ -93,7 +92,6 @@
 #include <spectra/tree/nodes/spectra_tree_nodes_Nova_ValidationResult.h>
 #include <spectra/tree/nodes/annotations/spectra_tree_nodes_annotations_Nova_Annotatable.h>
 #include <nova/NativeObject.h>
-#include <nova/operators/nova_operators_Nova_EqualsOperator.h>
 
 
 
@@ -151,7 +149,7 @@ spectra_tree_nodes_Nova_InterfaceDeclaration* spectra_tree_nodes_Nova_InterfaceD
 	parent = (spectra_tree_nodes_Nova_Node*)(parent == 0 ? (nova_Nova_Object*)(nova_Nova_Object*)nova_null : (nova_Nova_Object*)parent);
 	location = (spectra_util_Nova_Location*)(location == 0 ? (nova_Nova_Object*)spectra_util_Nova_Location_Nova_INVALID : (nova_Nova_Object*)location);
 	require = (int)(require == (intptr_t)nova_null ? 1 : require);
-	l1_Nova_trait = spectra_tree_nodes_Nova_ClassDeclaration_0_static_Nova_parse(0, exceptionData, input, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("interface")), parent, location, require);
+	l1_Nova_trait = spectra_tree_nodes_Nova_ClassDeclaration_0_static_Nova_parse((spectra_tree_nodes_Nova_ClassDeclaration*)(0), exceptionData, input, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("interface")), parent, location, require);
 	if ((l1_Nova_trait) != (spectra_tree_nodes_Nova_ClassDeclaration*)nova_null)
 	{
 		spectra_tree_nodes_Nova_InterfaceDeclaration* l2_Nova_node = (spectra_tree_nodes_Nova_InterfaceDeclaration*)nova_null;

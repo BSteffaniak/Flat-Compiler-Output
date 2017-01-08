@@ -42,7 +42,6 @@ typedef struct spectra_error_Nova_UnimplementedOperationExceptionFunctionMap spe
 #include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <nova/exception/nova_exception_Nova_Exception.h>
 #include <nova/NativeObject.h>
-#include <nova/operators/nova_operators_Nova_EqualsOperator.h>
 
 CCLASS_CLASS
 (

@@ -57,7 +57,6 @@
 #include <spectra/tree/nodes/spectra_tree_nodes_Nova_ValidationResult.h>
 #include <spectra/tree/nodes/annotations/spectra_tree_nodes_annotations_Nova_Annotatable.h>
 #include <nova/NativeObject.h>
-#include <nova/operators/nova_operators_Nova_EqualsOperator.h>
 
 
 
@@ -102,10 +101,10 @@ spectra_tree_nodes_controlstructures_loops_Nova_Loop* spectra_tree_nodes_control
 	location = (spectra_util_Nova_Location*)(location == 0 ? (nova_Nova_Object*)spectra_util_Nova_Location_Nova_INVALID : (nova_Nova_Object*)location);
 	require = (int)(require == (intptr_t)nova_null ? 1 : require);
 	l1_Nova_node = (nova_Nova_Object*)nova_null;
-	if (!(nova_meta_Nova_Class_Nova_isOfType(l1_Nova_node->vtable->classInstance, exceptionData, (nova_meta_Nova_Class*)(spectra_tree_nodes_controlstructures_loops_Loop_Extension_VTable_val.classInstance))))
+	if (!(nova_meta_Nova_Class_Nova_isOfType((nova_meta_Nova_Class*)(l1_Nova_node->vtable->classInstance), exceptionData, (nova_meta_Nova_Class*)(spectra_tree_nodes_controlstructures_loops_Loop_Extension_VTable_val.classInstance))))
 	{
 		l1_Nova_node = (nova_Nova_Object*)(spectra_tree_nodes_controlstructures_loops_Nova_WhileLoop_static_Nova_parse(0, exceptionData, input, parent, location, require));
-		if (!(nova_meta_Nova_Class_Nova_isOfType(l1_Nova_node->vtable->classInstance, exceptionData, (nova_meta_Nova_Class*)(spectra_tree_nodes_controlstructures_loops_Loop_Extension_VTable_val.classInstance))))
+		if (!(nova_meta_Nova_Class_Nova_isOfType((nova_meta_Nova_Class*)(l1_Nova_node->vtable->classInstance), exceptionData, (nova_meta_Nova_Class*)(spectra_tree_nodes_controlstructures_loops_Loop_Extension_VTable_val.classInstance))))
 		{
 			l1_Nova_node = (nova_Nova_Object*)(spectra_tree_nodes_controlstructures_loops_Nova_ForEachLoop_static_Nova_parse(0, exceptionData, input, parent, location, require));
 		}

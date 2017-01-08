@@ -36,7 +36,6 @@
 #include <stabilitytest/stabilitytest_Nova_ThreadImplementation.h>
 #include <stabilitytest/stabilitytest_Nova_StabilityTestCase.h>
 #include <nova/NativeObject.h>
-#include <nova/operators/nova_operators_Nova_EqualsOperator.h>
 
 
 
@@ -88,8 +87,8 @@ void stabilitytest_Nova_ThreadStability_Nova_test(stabilitytest_Nova_ThreadStabi
 	nova_io_Nova_Console_1_static_Nova_writeLine(0, exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("Checking Thread.nova with 20 Threads... ")));
 	l1_Nova_threads = nova_datastruct_list_Nova_Array_1_Nova_construct(0, exceptionData, 20, (intptr_t)nova_null);
 	stabilitytest_Nova_ThreadStability_Nova_createThreads(this, exceptionData, l1_Nova_threads, 20);
-	stabilitytest_Nova_ThreadStability_static_Nova_checkMemoryAccess(0, exceptionData);
-	stabilitytest_Nova_ThreadStability_static_Nova_joinThreads(0, exceptionData, l1_Nova_threads, 20);
+	stabilitytest_Nova_ThreadStability_static_Nova_checkMemoryAccess(this, exceptionData);
+	stabilitytest_Nova_ThreadStability_static_Nova_joinThreads(this, exceptionData, l1_Nova_threads, 20);
 }
 
 void stabilitytest_Nova_ThreadStability_Nova_createThreads(stabilitytest_Nova_ThreadStability* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_list_Nova_Array* threads, int amount)

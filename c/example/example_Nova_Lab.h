@@ -47,7 +47,6 @@ typedef struct example_Nova_LabFunctionMap example_Nova_LabFunctionMap;
 #include <example/example_Nova_Polygon.h>
 #include <example/example_Nova_Square.h>
 #include <nova/NativeObject.h>
-#include <nova/operators/nova_operators_Nova_EqualsOperator.h>
 
 CCLASS_CLASS
 (

@@ -45,7 +45,6 @@ typedef struct nova_primitive_Nova_BoolFunctionMap nova_primitive_Nova_BoolFunct
 #include <nova/primitive/nova_primitive_Nova_Primitive.h>
 #include <nova/datastruct/nova_datastruct_Nova_Comparable.h>
 #include <nova/NativeObject.h>
-#include <nova/operators/nova_operators_Nova_EqualsOperator.h>
 
 CCLASS_CLASS
 (

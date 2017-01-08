@@ -34,7 +34,6 @@
 #include <stabilitytest/stabilitytest_Nova_StabilityTestCase.h>
 #include <stabilitytest/stabilitytest_Nova_StabilityTestCase.h>
 #include <nova/NativeObject.h>
-#include <nova/operators/nova_operators_Nova_EqualsOperator.h>
 
 
 
@@ -78,11 +77,11 @@ void stabilitytest_Nova_StaticImportStability_Nova_this(stabilitytest_Nova_Stati
 void stabilitytest_Nova_StaticImportStability_Nova_test(stabilitytest_Nova_StaticImportStability* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
 	nova_io_Nova_Console_0_static_Nova_write(0, exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("Checking math static imports... ")));
-	stabilitytest_Nova_StabilityTest_Nova_fail(this->stabilitytest_Nova_StabilityTestCase_Nova_program, exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("Did not call abs correctly")), nova_math_Nova_Math_0_static_Nova_abs(0, exceptionData, -5) != 5);
-	stabilitytest_Nova_StabilityTest_Nova_fail(this->stabilitytest_Nova_StabilityTestCase_Nova_program, exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("Did not call max correctly")), nova_math_Nova_Math_static_Nova_max(0, exceptionData, -5, -6) != -5);
-	stabilitytest_Nova_StabilityTest_Nova_fail(this->stabilitytest_Nova_StabilityTestCase_Nova_program, exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("Did not call min correctly")), nova_math_Nova_Math_static_Nova_min(0, exceptionData, -5, -6) != -6);
-	stabilitytest_Nova_StabilityTest_Nova_fail(this->stabilitytest_Nova_StabilityTestCase_Nova_program, exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("Did not call sign correctly")), nova_math_Nova_Math_static_Nova_sign(0, exceptionData, -5) != -1);
-	stabilitytest_Nova_StabilityTest_Nova_fail(this->stabilitytest_Nova_StabilityTestCase_Nova_program, exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("Did not call round correctly")), nova_math_Nova_Math_static_Nova_round(0, exceptionData, 5.6) != 6);
+	stabilitytest_Nova_StabilityTest_Nova_fail(this->stabilitytest_Nova_StabilityTestCase_Nova_program, exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("Did not call abs correctly")), nova_math_Nova_Math_0_static_Nova_abs((nova_math_Nova_Math*)(this), exceptionData, -5) != 5);
+	stabilitytest_Nova_StabilityTest_Nova_fail(this->stabilitytest_Nova_StabilityTestCase_Nova_program, exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("Did not call max correctly")), nova_math_Nova_Math_static_Nova_max((nova_math_Nova_Math*)(this), exceptionData, -5, -6) != -5);
+	stabilitytest_Nova_StabilityTest_Nova_fail(this->stabilitytest_Nova_StabilityTestCase_Nova_program, exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("Did not call min correctly")), nova_math_Nova_Math_static_Nova_min((nova_math_Nova_Math*)(this), exceptionData, -5, -6) != -6);
+	stabilitytest_Nova_StabilityTest_Nova_fail(this->stabilitytest_Nova_StabilityTestCase_Nova_program, exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("Did not call sign correctly")), nova_math_Nova_Math_static_Nova_sign((nova_math_Nova_Math*)(this), exceptionData, -5) != -1);
+	stabilitytest_Nova_StabilityTest_Nova_fail(this->stabilitytest_Nova_StabilityTestCase_Nova_program, exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("Did not call round correctly")), nova_math_Nova_Math_static_Nova_round((nova_math_Nova_Math*)(this), exceptionData, 5.6) != 6);
 	nova_io_Nova_Console_1_static_Nova_writeLine(0, exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("OK")));
 }
 

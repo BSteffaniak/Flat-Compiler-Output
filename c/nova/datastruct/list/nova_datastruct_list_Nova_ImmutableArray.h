@@ -61,11 +61,11 @@ typedef char (*nova_datastruct_list_Nova_ImmutableArrayFunctionMap_closure15_Nov
 #include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_ImmutableArrayIterator.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_List.h>
+#include <nova/operators/nova_operators_Nova_EqualsOperator.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_Iterable.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_Iterator.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_Iterable.h>
 #include <nova/NativeObject.h>
-#include <nova/operators/nova_operators_Nova_EqualsOperator.h>
 
 CCLASS_CLASS
 (

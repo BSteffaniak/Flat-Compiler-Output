@@ -36,7 +36,6 @@
 #include <nova/io/nova_io_Nova_FileWriter.h>
 #include <nova/time/nova_time_Nova_Timer.h>
 #include <nova/NativeObject.h>
-#include <nova/operators/nova_operators_Nova_EqualsOperator.h>
 
 
 
@@ -149,7 +148,7 @@ void example_Nova_SvgFractal_static_Nova_main(example_Nova_SvgFractal* this, nov
 			
 			if ((l9_Nova_p + 1) % 1000 == 0)
 			{
-				nova_io_Nova_Console_2_static_Nova_writeLine(0, exceptionData, (nova_Nova_Object*)(nova_primitive_number_Nova_Int_Nova_construct(0, exceptionData, l9_Nova_p + 1)));
+				nova_io_Nova_Console_6_static_Nova_writeLine(0, exceptionData, l9_Nova_p + 1);
 			}
 			l10_Nova_circle = nova_web_svg_Nova_SvgCircle_Nova_construct(0, exceptionData, l1_Nova_cx, l1_Nova_cy, 1);
 			nova_web_svg_Nova_SvgComponentList_Nova_addChild(l1_Nova_s->nova_web_svg_Nova_Svg_Nova_root->nova_web_svg_Nova_SvgComponent_Nova_children, exceptionData, (nova_web_svg_Nova_SvgComponent*)(l10_Nova_circle));

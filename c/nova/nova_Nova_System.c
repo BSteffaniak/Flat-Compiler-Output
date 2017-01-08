@@ -37,7 +37,6 @@
 #include <nova/process/nova_process_Nova_Process.h>
 #include <nova/NativeSystem.h>
 #include <nova/NativeObject.h>
-#include <nova/operators/nova_operators_Nova_EqualsOperator.h>
 
 
 typedef struct nova_exception_Nova_ExceptionData nova_exception_Nova_ExceptionData;

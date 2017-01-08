@@ -60,7 +60,6 @@ typedef void (*spectra_tree_Nova_SyntaxTreeFunctionMap_closure5_Nova_func)(void*
 #include <spectra/tree/spectra_tree_Nova_AnnotationSearchResult.h>
 #include <spectra/tree/spectra_tree_Nova_StatementIterator.h>
 #include <nova/NativeObject.h>
-#include <nova/operators/nova_operators_Nova_EqualsOperator.h>
 
 CCLASS_CLASS
 (

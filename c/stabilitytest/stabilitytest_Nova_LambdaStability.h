@@ -46,7 +46,6 @@ typedef struct stabilitytest_Nova_LambdaStabilityFunctionMap stabilitytest_Nova_
 #include <stabilitytest/stabilitytest_Nova_StabilityTestCase.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_ArrayIterator.h>
 #include <nova/NativeObject.h>
-#include <nova/operators/nova_operators_Nova_EqualsOperator.h>
 
 CCLASS_CLASS
 (

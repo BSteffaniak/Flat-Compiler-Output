@@ -34,7 +34,6 @@
 #include <nova/io/nova_io_Nova_FileReader.h>
 #include <nova/io/nova_io_Nova_FileWriter.h>
 #include <nova/NativeObject.h>
-#include <nova/operators/nova_operators_Nova_EqualsOperator.h>
 
 
 

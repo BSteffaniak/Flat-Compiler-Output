@@ -42,7 +42,6 @@ typedef struct nova_security_Nova_MD5FunctionMap nova_security_Nova_MD5FunctionM
 #include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <nova/security/NativeMD5.h>
 #include <nova/NativeObject.h>
-#include <nova/operators/nova_operators_Nova_EqualsOperator.h>
 
 CCLASS_CLASS
 (

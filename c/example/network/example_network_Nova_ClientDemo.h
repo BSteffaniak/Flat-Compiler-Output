@@ -43,7 +43,6 @@ typedef struct example_network_Nova_ClientDemoFunctionMap example_network_Nova_C
 #include <nova/network/nova_network_Nova_ClientSocket.h>
 #include <example/network/example_network_Nova_ConnectionThread.h>
 #include <nova/NativeObject.h>
-#include <nova/operators/nova_operators_Nova_EqualsOperator.h>
 
 CCLASS_CLASS
 (

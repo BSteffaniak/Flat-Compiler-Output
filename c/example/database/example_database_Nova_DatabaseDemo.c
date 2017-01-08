@@ -33,7 +33,6 @@
 #include <nova/database/nova_database_Nova_DBConnector.h>
 #include <nova/database/nova_database_Nova_ResultSet.h>
 #include <nova/NativeObject.h>
-#include <nova/operators/nova_operators_Nova_EqualsOperator.h>
 
 
 

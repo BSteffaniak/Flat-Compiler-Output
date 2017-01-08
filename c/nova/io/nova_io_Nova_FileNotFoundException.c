@@ -33,7 +33,6 @@
 #include <nova/io/nova_io_Nova_File.h>
 #include <nova/exception/nova_exception_Nova_Exception.h>
 #include <nova/NativeObject.h>
-#include <nova/operators/nova_operators_Nova_EqualsOperator.h>
 
 
 

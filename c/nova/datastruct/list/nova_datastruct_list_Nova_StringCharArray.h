@@ -54,7 +54,6 @@ typedef struct nova_datastruct_list_Nova_StringCharArrayFunctionMap nova_datastr
 #include <nova/operators/nova_operators_Nova_PlusEqualsOperator.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_Iterable.h>
 #include <nova/NativeObject.h>
-#include <nova/operators/nova_operators_Nova_EqualsOperator.h>
 
 CCLASS_CLASS
 (

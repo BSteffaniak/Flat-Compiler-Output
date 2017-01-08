@@ -97,7 +97,6 @@ typedef char (*nova_datastruct_list_Nova_CharArrayFunctionMap_closure40_Nova_fun
 #include <nova/operators/nova_operators_Nova_PlusEqualsOperator.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_Iterable.h>
 #include <nova/NativeObject.h>
-#include <nova/operators/nova_operators_Nova_EqualsOperator.h>
 
 CCLASS_CLASS
 (

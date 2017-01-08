@@ -43,7 +43,6 @@ typedef struct example_Nova_BodyBuilderFunctionMap example_Nova_BodyBuilderFunct
 #include <example/example_Nova_Person.h>
 #include <example/example_Nova_Person.h>
 #include <nova/NativeObject.h>
-#include <nova/operators/nova_operators_Nova_EqualsOperator.h>
 
 CCLASS_CLASS
 (

@@ -35,7 +35,6 @@
 #include <nova/web/svg/nova_web_svg_Nova_SvgComponentList.h>
 #include <nova/web/svg/nova_web_svg_Nova_SvgComponent.h>
 #include <nova/NativeObject.h>
-#include <nova/operators/nova_operators_Nova_EqualsOperator.h>
 
 
 

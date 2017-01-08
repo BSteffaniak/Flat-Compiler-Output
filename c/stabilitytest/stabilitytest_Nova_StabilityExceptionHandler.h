@@ -44,7 +44,6 @@ typedef struct stabilitytest_Nova_StabilityExceptionHandlerFunctionMap stability
 #include <stabilitytest/stabilitytest_Nova_StabilityTest.h>
 #include <nova/thread/nova_thread_Nova_UncaughtExceptionHandler.h>
 #include <nova/NativeObject.h>
-#include <nova/operators/nova_operators_Nova_EqualsOperator.h>
 
 CCLASS_CLASS
 (

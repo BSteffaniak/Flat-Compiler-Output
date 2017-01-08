@@ -42,7 +42,6 @@ typedef struct nova_datastruct_list_Nova_NoSuchElementExceptionFunctionMap nova_
 #include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <nova/exception/nova_exception_Nova_Exception.h>
 #include <nova/NativeObject.h>
-#include <nova/operators/nova_operators_Nova_EqualsOperator.h>
 
 CCLASS_CLASS
 (

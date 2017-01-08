@@ -36,7 +36,6 @@
 #include <nova/datastruct/list/nova_datastruct_list_Nova_List.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_Iterable.h>
 #include <nova/NativeObject.h>
-#include <nova/operators/nova_operators_Nova_EqualsOperator.h>
 
 
 
@@ -76,7 +75,7 @@ void nova_datastruct_Nova_Tuple2_Nova_destroy(nova_datastruct_Nova_Tuple2** this
 
 void nova_datastruct_Nova_Tuple2_Nova_this(nova_datastruct_Nova_Tuple2* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_Object* item1, nova_Nova_Object* item2)
 {
-	nova_datastruct_Nova_Tuple_Nova_this((nova_datastruct_Nova_Tuple*)(this), exceptionData, generated1(0, exceptionData, item1, item2));
+	nova_datastruct_Nova_Tuple_Nova_this((nova_datastruct_Nova_Tuple*)(this), exceptionData, generated1(this, exceptionData, item1, item2));
 }
 
 nova_datastruct_list_Nova_Array* generated1(nova_datastruct_Nova_Tuple2* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_Object* value0, nova_Nova_Object* value1)

@@ -41,7 +41,6 @@ typedef struct nova_primitive_number_Nova_RealNumberFunctionMap nova_primitive_n
 #include <nova/meta/nova_meta_Nova_FunctionMap.h>
 #include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <nova/NativeObject.h>
-#include <nova/operators/nova_operators_Nova_EqualsOperator.h>
 
 CCLASS_CLASS
 (

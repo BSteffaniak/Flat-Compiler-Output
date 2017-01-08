@@ -52,7 +52,6 @@ typedef struct spectra_tree_nodes_Nova_TypeFunctionMap spectra_tree_nodes_Nova_T
 #include <spectra/tree/nodes/spectra_tree_nodes_Nova_NovaFile.h>
 #include <spectra/tree/nodes/functions/spectra_tree_nodes_functions_Nova_FunctionDeclaration.h>
 #include <nova/NativeObject.h>
-#include <nova/operators/nova_operators_Nova_EqualsOperator.h>
 
 CCLASS_CLASS
 (

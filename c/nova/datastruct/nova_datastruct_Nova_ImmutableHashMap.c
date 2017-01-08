@@ -30,13 +30,13 @@
 #include <nova/meta/nova_meta_Nova_Class.h>
 #include <nova/meta/nova_meta_Nova_FunctionMap.h>
 #include <nova/regex/nova_regex_Nova_Pattern.h>
+#include <nova/operators/nova_operators_Nova_EqualsOperator.h>
 #include <nova/datastruct/nova_datastruct_Nova_HashMap.h>
 #include <nova/datastruct/nova_datastruct_Nova_Pair.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_List.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_Iterable.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_Iterator.h>
 #include <nova/NativeObject.h>
-#include <nova/operators/nova_operators_Nova_EqualsOperator.h>
 
 typedef struct
 {
@@ -192,17 +192,17 @@ nova_datastruct_Nova_HashMap* nova_datastruct_Nova_ImmutableHashMap_0_Nova_forEa
 	return (nova_datastruct_Nova_HashMap*)nova_datastruct_Nova_HashMap_Nova_forEach(this->prv->nova_datastruct_Nova_ImmutableHashMap_Nova_map, exceptionData, (nova_datastruct_Nova_HashMap_closure24_Nova_func)nova_datastruct_Nova_ImmutableHashMap_Nova_func, nova_datastruct_Nova_ImmutableHashMap_ref_Nova_func, func_context);
 }
 
-char nova_datastruct_Nova_ImmutableHashMap_Nova_containsKey(nova_datastruct_Nova_ImmutableHashMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_Object* key)
+char nova_datastruct_Nova_ImmutableHashMap_Nova_containsKey(nova_datastruct_Nova_ImmutableHashMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_operators_Nova_EqualsOperator* key)
 {
 	return nova_datastruct_Nova_HashMap_Nova_containsKey(this->prv->nova_datastruct_Nova_ImmutableHashMap_Nova_map, exceptionData, key);
 }
 
-nova_Nova_Object* nova_datastruct_Nova_ImmutableHashMap_Nova_get(nova_datastruct_Nova_ImmutableHashMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_Object* key)
+nova_Nova_Object* nova_datastruct_Nova_ImmutableHashMap_Nova_get(nova_datastruct_Nova_ImmutableHashMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_operators_Nova_EqualsOperator* key)
 {
 	return (nova_Nova_Object*)nova_datastruct_Nova_HashMap_Nova_get(this->prv->nova_datastruct_Nova_ImmutableHashMap_Nova_map, exceptionData, key);
 }
 
-nova_Nova_Object* nova_datastruct_Nova_ImmutableHashMap_Nova_set(nova_datastruct_Nova_ImmutableHashMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_Object* key, nova_Nova_Object* value)
+nova_Nova_Object* nova_datastruct_Nova_ImmutableHashMap_Nova_set(nova_datastruct_Nova_ImmutableHashMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_operators_Nova_EqualsOperator* key, nova_Nova_Object* value)
 {
 }
 
@@ -379,17 +379,17 @@ nova_datastruct_Nova_HashMap* nova_datastruct_Nova_ImmutableHashMapFunctionMap_f
 
 char nova_datastruct_Nova_ImmutableHashMapFunctionMap_functionMap_Nova_containsKey(nova_datastruct_Nova_ImmutableHashMapFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_Nova_ImmutableHashMap* reference, nova_Nova_Object* key)
 {
-	return nova_datastruct_Nova_ImmutableHashMap_Nova_containsKey(reference, exceptionData, key);
+	return nova_datastruct_Nova_ImmutableHashMap_Nova_containsKey(reference, exceptionData, (nova_operators_Nova_EqualsOperator*)(key));
 }
 
 nova_Nova_Object* nova_datastruct_Nova_ImmutableHashMapFunctionMap_functionMap_Nova_get(nova_datastruct_Nova_ImmutableHashMapFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_Nova_ImmutableHashMap* reference, nova_Nova_Object* key)
 {
-	return (nova_Nova_Object*)nova_datastruct_Nova_ImmutableHashMap_Nova_get(reference, exceptionData, key);
+	return (nova_Nova_Object*)nova_datastruct_Nova_ImmutableHashMap_Nova_get(reference, exceptionData, (nova_operators_Nova_EqualsOperator*)(key));
 }
 
 nova_Nova_Object* nova_datastruct_Nova_ImmutableHashMapFunctionMap_functionMap_Nova_set(nova_datastruct_Nova_ImmutableHashMapFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_Nova_ImmutableHashMap* reference, nova_Nova_Object* key, nova_Nova_Object* value)
 {
-	return (nova_Nova_Object*)nova_datastruct_Nova_ImmutableHashMap_Nova_set(reference, exceptionData, key, value);
+	return (nova_Nova_Object*)nova_datastruct_Nova_ImmutableHashMap_Nova_set(reference, exceptionData, (nova_operators_Nova_EqualsOperator*)(key), value);
 }
 
 void nova_datastruct_Nova_ImmutableHashMapFunctionMap_Nova_super(nova_datastruct_Nova_ImmutableHashMapFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)

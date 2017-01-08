@@ -68,7 +68,6 @@
 #include <spectra/tree/nodes/spectra_tree_nodes_Nova_ValidationResult.h>
 #include <spectra/tree/nodes/annotations/spectra_tree_nodes_annotations_Nova_Annotatable.h>
 #include <nova/NativeObject.h>
-#include <nova/operators/nova_operators_Nova_EqualsOperator.h>
 
 
 
@@ -220,7 +219,7 @@ nova_Nova_String* spectra_tree_nodes_annotations_Nova_Annotation_Nova_writeNova(
 
 nova_Nova_String* spectra_tree_nodes_annotations_Nova_Annotation_Accessor_Nova_label(spectra_tree_nodes_annotations_Nova_Annotation* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
-	return (nova_Nova_String*)(nova_Nova_String_0_Nova_endsWith(nova_meta_Nova_Class_Accessor_Nova_name(this->vtable->classInstance, exceptionData), exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("Annotation"))) ? (nova_Nova_Object*)nova_Nova_String_Nova_trimEnd(nova_meta_Nova_Class_Accessor_Nova_name(this->vtable->classInstance, exceptionData), exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("Annotation"))->nova_Nova_String_Nova_count) : (nova_Nova_Object*)nova_null);
+	return (nova_Nova_String*)(nova_Nova_String_0_Nova_endsWith(nova_meta_Nova_Class_Accessor_Nova_name((nova_meta_Nova_Class*)(this->vtable->classInstance), exceptionData), exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("Annotation"))) ? (nova_Nova_Object*)nova_Nova_String_Nova_trimEnd(nova_meta_Nova_Class_Accessor_Nova_name((nova_meta_Nova_Class*)(this->vtable->classInstance), exceptionData), exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("Annotation"))->nova_Nova_String_Nova_count) : (nova_Nova_Object*)nova_null);
 }
 
 

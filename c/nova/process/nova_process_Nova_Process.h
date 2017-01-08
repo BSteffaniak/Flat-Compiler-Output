@@ -42,7 +42,6 @@ typedef struct nova_process_Nova_ProcessFunctionMap nova_process_Nova_ProcessFun
 #include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <nova/io/nova_io_Nova_InputStream.h>
 #include <nova/NativeObject.h>
-#include <nova/operators/nova_operators_Nova_EqualsOperator.h>
 
 CCLASS_CLASS
 (

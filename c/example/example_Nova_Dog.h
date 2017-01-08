@@ -43,7 +43,6 @@ typedef struct example_Nova_DogFunctionMap example_Nova_DogFunctionMap;
 #include <example/example_Nova_Animal.h>
 #include <example/example_Nova_Animal.h>
 #include <nova/NativeObject.h>
-#include <nova/operators/nova_operators_Nova_EqualsOperator.h>
 
 CCLASS_CLASS
 (

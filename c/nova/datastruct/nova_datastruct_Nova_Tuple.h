@@ -79,7 +79,6 @@ typedef nova_Nova_Object* (*nova_datastruct_Nova_TupleFunctionMap_closure30_Nova
 #include <nova/datastruct/list/nova_datastruct_list_Nova_List.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_Iterable.h>
 #include <nova/NativeObject.h>
-#include <nova/operators/nova_operators_Nova_EqualsOperator.h>
 
 CCLASS_CLASS
 (

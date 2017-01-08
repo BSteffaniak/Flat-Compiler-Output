@@ -34,7 +34,6 @@
 #include <nova/datastruct/list/nova_datastruct_list_Nova_EmptyStackException.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_ListNode.h>
 #include <nova/NativeObject.h>
-#include <nova/operators/nova_operators_Nova_EqualsOperator.h>
 
 
 

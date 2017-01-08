@@ -43,7 +43,6 @@ typedef struct spectra_Nova_SyntaxMessageFunctionMap spectra_Nova_SyntaxMessageF
 #include <spectra/tree/nodes/spectra_tree_nodes_Nova_Node.h>
 #include <spectra/spectra_Nova_SyntaxErrorException.h>
 #include <nova/NativeObject.h>
-#include <nova/operators/nova_operators_Nova_EqualsOperator.h>
 
 CCLASS_CLASS
 (

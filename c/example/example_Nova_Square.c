@@ -33,7 +33,6 @@
 #include <example/example_Nova_Polygon.h>
 #include <example/example_Nova_Polygon.h>
 #include <nova/NativeObject.h>
-#include <nova/operators/nova_operators_Nova_EqualsOperator.h>
 
 
 

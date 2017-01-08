@@ -72,9 +72,11 @@
 #include <spectra/tree/nodes/spectra_tree_nodes_Nova_ValidationResult.h>
 #include <spectra/tree/nodes/annotations/spectra_tree_nodes_annotations_Nova_Annotatable.h>
 #include <nova/NativeObject.h>
-#include <nova/operators/nova_operators_Nova_EqualsOperator.h>
 
 
+
+
+nova_datastruct_list_Nova_Array* generated6(spectra_tree_nodes_annotations_Nova_PublicAnnotation* this, nova_exception_Nova_ExceptionData* exceptionData);
 
 void spectra_tree_nodes_annotations_Nova_PublicAnnotation_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData)
 {
@@ -105,7 +107,7 @@ void spectra_tree_nodes_annotations_Nova_PublicAnnotation_Nova_destroy(spectra_t
 		return;
 	}
 	
-	nova_Nova_String_Nova_destroy(&(*this)->spectra_tree_nodes_annotations_Nova_PublicAnnotation_Nova_aliasUsed, exceptionData);
+	nova_Nova_String_Nova_destroy(&(*this)->spectra_tree_nodes_annotations_Nova_PublicAnnotation_Nova_alias, exceptionData);
 	
 	NOVA_FREE(*this);
 }
@@ -127,25 +129,39 @@ spectra_tree_nodes_annotations_Nova_PublicAnnotation* spectra_tree_nodes_annotat
 		spectra_tree_nodes_annotations_Nova_PublicAnnotation* l2_Nova_node = (spectra_tree_nodes_annotations_Nova_PublicAnnotation*)nova_null;
 		
 		l2_Nova_node = spectra_tree_nodes_annotations_Nova_PublicAnnotation_Nova_construct(0, exceptionData, parent, location);
-		return l2_Nova_node;
 	}
 	return (spectra_tree_nodes_annotations_Nova_PublicAnnotation*)(nova_Nova_Object*)nova_null;
 }
 
-nova_Nova_String* spectra_tree_nodes_annotations_Nova_PublicAnnotation_Accessorfunc1_Nova_aliasUsed(spectra_tree_nodes_annotations_Nova_PublicAnnotation* this, nova_exception_Nova_ExceptionData* exceptionData)
+nova_datastruct_list_Nova_Array* generated6(spectra_tree_nodes_annotations_Nova_PublicAnnotation* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
-	return this->spectra_tree_nodes_annotations_Nova_PublicAnnotation_Nova_aliasUsed;
+	nova_Nova_String** l1_Nova_temp = (nova_Nova_String**)nova_null;
+	
+	l1_Nova_temp = (nova_Nova_String**)NOVA_MALLOC(sizeof(nova_Nova_String) * 1);
+	l1_Nova_temp[0] = nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("public"));
+	return nova_datastruct_list_Nova_Array_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)(l1_Nova_temp), 1);
 }
 
-nova_Nova_String* spectra_tree_nodes_annotations_Nova_PublicAnnotation_Mutatorfunc0_Nova_aliasUsed(spectra_tree_nodes_annotations_Nova_PublicAnnotation* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* value)
+nova_datastruct_list_Nova_ImmutableArray* spectra_tree_nodes_annotations_Nova_PublicAnnotation_Accessor_static_Nova_aliases(spectra_tree_nodes_annotations_Nova_PublicAnnotation* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
-	this->spectra_tree_nodes_annotations_Nova_PublicAnnotation_Nova_aliasUsed = value;
+	return nova_datastruct_list_Nova_ImmutableArray_1_Nova_construct(0, exceptionData, (nova_datastruct_list_Nova_Array*)(generated6(0, exceptionData)));
+}
+
+
+nova_Nova_String* spectra_tree_nodes_annotations_Nova_PublicAnnotation_Accessorfunc1_Nova_alias(spectra_tree_nodes_annotations_Nova_PublicAnnotation* this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+	return this->spectra_tree_nodes_annotations_Nova_PublicAnnotation_Nova_alias;
+}
+
+nova_Nova_String* spectra_tree_nodes_annotations_Nova_PublicAnnotation_Mutatorfunc0_Nova_alias(spectra_tree_nodes_annotations_Nova_PublicAnnotation* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* value)
+{
+	this->spectra_tree_nodes_annotations_Nova_PublicAnnotation_Nova_alias = value;
 	return value;
 }
 
 void spectra_tree_nodes_annotations_Nova_PublicAnnotation_Nova_super(spectra_tree_nodes_annotations_Nova_PublicAnnotation* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
-	this->spectra_tree_nodes_annotations_Nova_PublicAnnotation_Nova_aliasUsed = (nova_Nova_String*)nova_null;
+	this->spectra_tree_nodes_annotations_Nova_PublicAnnotation_Nova_alias = (nova_Nova_String*)nova_null;
 }
 
 void spectra_tree_nodes_annotations_Nova_PublicAnnotationFunctionMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData)

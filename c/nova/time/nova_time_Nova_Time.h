@@ -42,7 +42,6 @@ typedef struct nova_time_Nova_TimeFunctionMap nova_time_Nova_TimeFunctionMap;
 #include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <nova/time/NativeTime.h>
 #include <nova/NativeObject.h>
-#include <nova/operators/nova_operators_Nova_EqualsOperator.h>
 
 CCLASS_CLASS
 (

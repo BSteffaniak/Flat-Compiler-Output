@@ -33,7 +33,6 @@
 #include <nova/time/nova_time_Nova_Timer.h>
 #include <example/example_Nova_ThreadDemoImplementation.h>
 #include <nova/NativeObject.h>
-#include <nova/operators/nova_operators_Nova_EqualsOperator.h>
 
 
 

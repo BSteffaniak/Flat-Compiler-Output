@@ -44,7 +44,6 @@ typedef struct nova_web_svg_Nova_SvgComponentListFunctionMap nova_web_svg_Nova_S
 #include <nova/web/svg/nova_web_svg_Nova_SvgComponent.h>
 #include <nova/web/svg/nova_web_svg_Nova_SvgComponentNode.h>
 #include <nova/NativeObject.h>
-#include <nova/operators/nova_operators_Nova_EqualsOperator.h>
 
 CCLASS_CLASS
 (

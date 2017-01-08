@@ -44,7 +44,6 @@ typedef struct example_Nova_PolymorphismDemoFunctionMap example_Nova_Polymorphis
 #include <example/example_Nova_Dog.h>
 #include <example/example_Nova_Spider.h>
 #include <nova/NativeObject.h>
-#include <nova/operators/nova_operators_Nova_EqualsOperator.h>
 
 CCLASS_CLASS
 (

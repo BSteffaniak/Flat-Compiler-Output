@@ -42,7 +42,6 @@ typedef struct nova_math_Nova_MathFunctionMap nova_math_Nova_MathFunctionMap;
 #include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <math.h>
 #include <nova/NativeObject.h>
-#include <nova/operators/nova_operators_Nova_EqualsOperator.h>
 
 CCLASS_CLASS
 (

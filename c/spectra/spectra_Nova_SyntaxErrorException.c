@@ -34,7 +34,6 @@
 #include <spectra/tree/nodes/spectra_tree_nodes_Nova_Program.h>
 #include <nova/exception/nova_exception_Nova_Exception.h>
 #include <nova/NativeObject.h>
-#include <nova/operators/nova_operators_Nova_EqualsOperator.h>
 
 
 

@@ -55,7 +55,6 @@
 #include <spectra/tree/nodes/spectra_tree_nodes_Nova_ValidationResult.h>
 #include <spectra/tree/nodes/annotations/spectra_tree_nodes_annotations_Nova_Annotatable.h>
 #include <nova/NativeObject.h>
-#include <nova/operators/nova_operators_Nova_EqualsOperator.h>
 
 
 
@@ -141,8 +140,8 @@ spectra_tree_nodes_Nova_Package* spectra_tree_nodes_Nova_Package_static_Nova_par
 		{
 			nova_datastruct_list_Nova_Array* nova_local_0 = (nova_datastruct_list_Nova_Array*)nova_null;
 			
-			nova_datastruct_Nova_HashMap_virtual_Nova_add((nova_datastruct_Nova_HashMap*)(spectra_tree_nodes_Nova_Package_Nova_filesMap), exceptionData, (nova_Nova_Object*)(l2_Nova_node->spectra_tree_nodes_Nova_Package_Nova_location), (nova_Nova_Object*)((nova_datastruct_list_Nova_Array*)((nova_local_0 = (nova_datastruct_list_Nova_Array*)(nova_datastruct_Nova_HashMap_Nova_get((nova_datastruct_Nova_HashMap*)(spectra_tree_nodes_Nova_Package_Nova_filesMap), exceptionData, (nova_Nova_Object*)(l2_Nova_node->spectra_tree_nodes_Nova_Package_Nova_location)))) != (nova_datastruct_list_Nova_Array*)nova_null ? nova_local_0 : nova_datastruct_list_Nova_Array_0_Nova_construct(0, exceptionData))));
-			nova_datastruct_list_Nova_Array_0_Nova_add((nova_datastruct_list_Nova_Array*)(nova_datastruct_Nova_HashMap_Nova_get((nova_datastruct_Nova_HashMap*)(spectra_tree_nodes_Nova_Package_Nova_filesMap), exceptionData, (nova_Nova_Object*)(l2_Nova_node->spectra_tree_nodes_Nova_Package_Nova_location))), exceptionData, (nova_Nova_Object*)(spectra_tree_nodes_Nova_Node_virtual_Accessor_Nova_parentFile((spectra_tree_nodes_Nova_Node*)(parent), exceptionData)));
+			nova_datastruct_Nova_HashMap_virtual_Nova_add((nova_datastruct_Nova_HashMap*)(spectra_tree_nodes_Nova_Package_Nova_filesMap), exceptionData, (nova_operators_Nova_EqualsOperator*)(l2_Nova_node->spectra_tree_nodes_Nova_Package_Nova_location), (nova_Nova_Object*)((nova_datastruct_list_Nova_Array*)((nova_local_0 = (nova_datastruct_list_Nova_Array*)(nova_datastruct_Nova_HashMap_Nova_get((nova_datastruct_Nova_HashMap*)(spectra_tree_nodes_Nova_Package_Nova_filesMap), exceptionData, (nova_operators_Nova_EqualsOperator*)(l2_Nova_node->spectra_tree_nodes_Nova_Package_Nova_location)))) != (nova_datastruct_list_Nova_Array*)nova_null ? nova_local_0 : nova_datastruct_list_Nova_Array_0_Nova_construct(0, exceptionData))));
+			nova_datastruct_list_Nova_Array_0_Nova_add((nova_datastruct_list_Nova_Array*)(nova_datastruct_Nova_HashMap_Nova_get((nova_datastruct_Nova_HashMap*)(spectra_tree_nodes_Nova_Package_Nova_filesMap), exceptionData, (nova_operators_Nova_EqualsOperator*)(l2_Nova_node->spectra_tree_nodes_Nova_Package_Nova_location))), exceptionData, (nova_Nova_Object*)(spectra_tree_nodes_Nova_Node_virtual_Accessor_Nova_parentFile((spectra_tree_nodes_Nova_Node*)(parent), exceptionData)));
 			return l2_Nova_node;
 		}
 	}
@@ -166,7 +165,7 @@ nova_Nova_String* spectra_tree_nodes_Nova_Package_Nova_writeNova(spectra_tree_no
 
 nova_datastruct_list_Nova_Array* spectra_tree_nodes_Nova_Package_Accessor_Nova_files(spectra_tree_nodes_Nova_Package* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
-	return (nova_datastruct_list_Nova_Array*)nova_datastruct_Nova_HashMap_Nova_get((nova_datastruct_Nova_HashMap*)(spectra_tree_nodes_Nova_Package_Nova_filesMap), exceptionData, (nova_Nova_Object*)(this->spectra_tree_nodes_Nova_Package_Nova_location));
+	return (nova_datastruct_list_Nova_Array*)nova_datastruct_Nova_HashMap_Nova_get((nova_datastruct_Nova_HashMap*)(spectra_tree_nodes_Nova_Package_Nova_filesMap), exceptionData, (nova_operators_Nova_EqualsOperator*)(this->spectra_tree_nodes_Nova_Package_Nova_location));
 }
 
 

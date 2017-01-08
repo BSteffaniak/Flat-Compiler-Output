@@ -44,7 +44,6 @@ typedef struct spectra_tree_nodes_generics_Nova_GenericCompatibleFunctionMap spe
 #include <spectra/tree/nodes/spectra_tree_nodes_Nova_Node.h>
 #include <spectra/tree/nodes/generics/spectra_tree_nodes_generics_Nova_GenericParameter.h>
 #include <nova/NativeObject.h>
-#include <nova/operators/nova_operators_Nova_EqualsOperator.h>
 
 CCLASS_CLASS
 (

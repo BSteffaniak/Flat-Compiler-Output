@@ -44,7 +44,6 @@ typedef struct nova_exception_Nova_ExceptionDataFunctionMap nova_exception_Nova_
 #include <NovaExceptionHandling.h>
 #include <nova/exception/nova_exception_Nova_CaughtException.h>
 #include <nova/NativeObject.h>
-#include <nova/operators/nova_operators_Nova_EqualsOperator.h>
 
 CCLASS_CLASS
 (

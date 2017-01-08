@@ -43,7 +43,6 @@ typedef struct example_Nova_SquareFunctionMap example_Nova_SquareFunctionMap;
 #include <example/example_Nova_Polygon.h>
 #include <example/example_Nova_Polygon.h>
 #include <nova/NativeObject.h>
-#include <nova/operators/nova_operators_Nova_EqualsOperator.h>
 
 CCLASS_CLASS
 (

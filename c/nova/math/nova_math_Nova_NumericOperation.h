@@ -45,7 +45,6 @@ typedef struct nova_math_Nova_NumericOperationFunctionMap nova_math_Nova_Numeric
 #include <nova/math/nova_math_Nova_NumericOperand.h>
 #include <nova/math/nova_math_Nova_NumericOperand.h>
 #include <nova/NativeObject.h>
-#include <nova/operators/nova_operators_Nova_EqualsOperator.h>
 
 CCLASS_CLASS
 (

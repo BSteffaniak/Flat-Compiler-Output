@@ -33,7 +33,6 @@
 #include <nova/thread/nova_thread_Nova_Thread.h>
 #include <nova/thread/NativeThread.h>
 #include <nova/NativeObject.h>
-#include <nova/operators/nova_operators_Nova_EqualsOperator.h>
 
 
 
@@ -99,7 +98,7 @@ void example_Nova_ThreadDemoImplementation_Nova_run(example_Nova_ThreadDemoImple
 	for (; l3_Nova_i < (int)10; l3_Nova_i++)
 	{
 		nova_io_Nova_Console_1_static_Nova_writeLine(0, exceptionData, this->prv->example_Nova_ThreadDemoImplementation_Nova_word);
-		nova_thread_Nova_Thread_static_Nova_sleep(0, exceptionData, this->prv->example_Nova_ThreadDemoImplementation_Nova_millis);
+		nova_thread_Nova_Thread_static_Nova_sleep((nova_thread_Nova_Thread*)(this), exceptionData, this->prv->example_Nova_ThreadDemoImplementation_Nova_millis);
 	}
 }
 

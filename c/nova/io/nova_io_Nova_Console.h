@@ -44,7 +44,6 @@ typedef struct nova_io_Nova_ConsoleFunctionMap nova_io_Nova_ConsoleFunctionMap;
 #include <stdlib.h>
 #include <nova/io/NativeConsole.h>
 #include <nova/NativeObject.h>
-#include <nova/operators/nova_operators_Nova_EqualsOperator.h>
 
 CCLASS_CLASS
 (

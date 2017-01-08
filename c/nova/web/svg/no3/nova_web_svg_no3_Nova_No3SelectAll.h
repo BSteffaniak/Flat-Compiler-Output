@@ -43,7 +43,6 @@ typedef struct nova_web_svg_no3_Nova_No3SelectAllFunctionMap nova_web_svg_no3_No
 #include <nova/web/svg/no3/nova_web_svg_no3_Nova_No3Node.h>
 #include <nova/web/svg/no3/nova_web_svg_no3_Nova_No3Node.h>
 #include <nova/NativeObject.h>
-#include <nova/operators/nova_operators_Nova_EqualsOperator.h>
 
 CCLASS_CLASS
 (

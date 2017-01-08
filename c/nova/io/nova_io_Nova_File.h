@@ -44,7 +44,6 @@ typedef struct nova_io_Nova_FileFunctionMap nova_io_Nova_FileFunctionMap;
 #include <nova/time/nova_time_Nova_Time.h>
 #include <tinydir.h>
 #include <nova/NativeObject.h>
-#include <nova/operators/nova_operators_Nova_EqualsOperator.h>
 
 CCLASS_CLASS
 (

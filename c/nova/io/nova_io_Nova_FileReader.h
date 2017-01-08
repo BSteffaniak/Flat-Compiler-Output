@@ -44,7 +44,6 @@ typedef struct nova_io_Nova_FileReaderFunctionMap nova_io_Nova_FileReaderFunctio
 #include <nova/io/nova_io_Nova_InputStream.h>
 #include <nova/io/nova_io_Nova_InputStream.h>
 #include <nova/NativeObject.h>
-#include <nova/operators/nova_operators_Nova_EqualsOperator.h>
 
 CCLASS_CLASS
 (

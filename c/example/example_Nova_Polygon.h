@@ -41,7 +41,6 @@ typedef struct example_Nova_PolygonFunctionMap example_Nova_PolygonFunctionMap;
 #include <nova/meta/nova_meta_Nova_FunctionMap.h>
 #include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <nova/NativeObject.h>
-#include <nova/operators/nova_operators_Nova_EqualsOperator.h>
 
 CCLASS_CLASS
 (

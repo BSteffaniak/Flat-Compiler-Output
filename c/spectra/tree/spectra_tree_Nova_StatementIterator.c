@@ -36,7 +36,6 @@
 #include <spectra/tree/nodes/spectra_tree_nodes_Nova_Node.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_Iterator.h>
 #include <nova/NativeObject.h>
-#include <nova/operators/nova_operators_Nova_EqualsOperator.h>
 
 
 
@@ -48,14 +47,14 @@ CCLASS_PRIVATE
 )
 
 void spectra_tree_Nova_StatementIterator_Nova_updateScopeProperties(spectra_tree_Nova_StatementIterator* this, nova_exception_Nova_ExceptionData* exceptionData);
-nova_datastruct_list_Nova_CharArray* generated16(spectra_tree_Nova_StatementIterator* this, nova_exception_Nova_ExceptionData* exceptionData);
+nova_datastruct_list_Nova_CharArray* generated17(spectra_tree_Nova_StatementIterator* this, nova_exception_Nova_ExceptionData* exceptionData);
 
 
 nova_datastruct_list_Nova_CharArray* spectra_tree_Nova_StatementIterator_Nova_NON_STATEMENT_CHARS;
 void spectra_tree_Nova_StatementIterator_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData)
 {
 	{
-		spectra_tree_Nova_StatementIterator_Nova_NON_STATEMENT_CHARS = generated16(0, exceptionData);
+		spectra_tree_Nova_StatementIterator_Nova_NON_STATEMENT_CHARS = generated17(0, exceptionData);
 	}
 }
 
@@ -139,7 +138,7 @@ spectra_tree_Nova_StatementIterator* spectra_tree_Nova_StatementIterator_Nova_re
 	return this;
 }
 
-nova_datastruct_list_Nova_CharArray* generated16(spectra_tree_Nova_StatementIterator* this, nova_exception_Nova_ExceptionData* exceptionData)
+nova_datastruct_list_Nova_CharArray* generated17(spectra_tree_Nova_StatementIterator* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
 	char* l1_Nova_temp = (char*)nova_null;
 	

@@ -33,7 +33,6 @@
 #include <nova/web/svg/no3/nova_web_svg_no3_Nova_No3.h>
 #include <nova/time/nova_time_Nova_Timer.h>
 #include <nova/NativeObject.h>
-#include <nova/operators/nova_operators_Nova_EqualsOperator.h>
 
 
 

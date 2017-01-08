@@ -42,8 +42,8 @@ typedef struct example_Nova_HashMapDemoFunctionMap example_Nova_HashMapDemoFunct
 #include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <nova/datastruct/nova_datastruct_Nova_HashMap.h>
 #include <nova/datastruct/nova_datastruct_Nova_Pair.h>
-#include <nova/NativeObject.h>
 #include <nova/operators/nova_operators_Nova_EqualsOperator.h>
+#include <nova/NativeObject.h>
 
 CCLASS_CLASS
 (

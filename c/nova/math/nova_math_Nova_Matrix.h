@@ -47,7 +47,6 @@ typedef struct nova_math_Nova_MatrixFunctionMap nova_math_Nova_MatrixFunctionMap
 #include <nova/operators/nova_operators_Nova_MultiplyOperator.h>
 #include <nova/operators/nova_operators_Nova_PlusOperator.h>
 #include <nova/NativeObject.h>
-#include <nova/operators/nova_operators_Nova_EqualsOperator.h>
 
 CCLASS_CLASS
 (

@@ -52,6 +52,7 @@ novaEnv.nova_datastruct_list_ArrayFunctionMap.get = nova_datastruct_list_Array_A
 novaEnv.nova_datastruct_list_ArrayFunctionMap.set = nova_datastruct_list_Array_ArrayFunctionMap_Extension_VTable_val.nova_datastruct_list_Nova_ArrayFunctionMap_virtualfunctionMap_Nova_set;
 novaEnv.nova_datastruct_list_List.toArray = nova_datastruct_list_List_Extension_VTable_val.itable.nova_datastruct_list_Nova_List_virtual_Nova_toArray;
 novaEnv.nova_datastruct_list_List.contains__nova_Object = nova_datastruct_list_List_Extension_VTable_val.itable.nova_datastruct_list_Nova_List_virtual0_Nova_contains;
+novaEnv.nova_datastruct_list_List.contains__nova_operators_EqualsOperator = nova_datastruct_list_List_Extension_VTable_val.itable.nova_datastruct_list_Nova_List_virtual1_Nova_contains;
 novaEnv.nova_datastruct_list_List.forEach__void = nova_datastruct_list_List_Extension_VTable_val.itable.nova_datastruct_list_Nova_List_virtual0_Nova_forEach;
 novaEnv.nova_datastruct_list_List.map__nova_Object = nova_datastruct_list_List_Extension_VTable_val.itable.nova_datastruct_list_Nova_List_virtual0_Nova_map;
 novaEnv.nova_datastruct_list_List.any__nova_primitive_Bool = nova_datastruct_list_List_Extension_VTable_val.itable.nova_datastruct_list_Nova_List_virtual0_Nova_any;
@@ -2486,9 +2487,8 @@ stabilitytest_UnstableException_UnstableExceptionFunctionMap_Extension_VTable_va
 nova_Nova_Object** nova_class_interfaces;
 
 nova_Object_Extension_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = (nova_meta_Nova_Class*)nova_null;
-nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 1);
-nova_class_interfaces[0] = (nova_Nova_Object*)nova_operators_EqualsOperator_Extension_VTable_val.classInstance;
-nova_Object_Extension_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 1);
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 0);
+nova_Object_Extension_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 0);
 nova_String_Extension_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = nova_Object_Extension_VTable_val.classInstance;
 nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 4);
 nova_class_interfaces[0] = (nova_Nova_Object*)nova_datastruct_Comparable_Extension_VTable_val.classInstance;
@@ -5965,7 +5965,7 @@ args[i] = nova_Nova_String_1_Nova_construct(0, 0, str);
 nova_datastruct_list_Nova_Array* argsArray = nova_datastruct_list_Nova_Array_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)args, argc);
 TRY
 {
-spectra_Nova_Spectra_static_Nova_main(0, exceptionData, argsArray);
+example_Nova_Lab_static_Nova_main(0, exceptionData, argsArray);
 }
 CATCH (nova_exception_Exception_Extension_VTable_val.classInstance)
 {

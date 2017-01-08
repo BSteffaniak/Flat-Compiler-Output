@@ -43,7 +43,6 @@ typedef struct nova_math_Nova_Vector4DFunctionMap nova_math_Nova_Vector4DFunctio
 #include <nova/math/nova_math_Nova_Vector.h>
 #include <nova/math/nova_math_Nova_Vector.h>
 #include <nova/NativeObject.h>
-#include <nova/operators/nova_operators_Nova_EqualsOperator.h>
 
 CCLASS_CLASS
 (

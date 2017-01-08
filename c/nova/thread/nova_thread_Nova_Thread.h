@@ -49,7 +49,6 @@ typedef void (*nova_thread_Nova_ThreadFunctionMap_closure6_Nova_action)(void*, n
 #include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <nova/thread/NativeThread.h>
 #include <nova/NativeObject.h>
-#include <nova/operators/nova_operators_Nova_EqualsOperator.h>
 
 CCLASS_CLASS
 (

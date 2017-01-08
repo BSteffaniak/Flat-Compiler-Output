@@ -34,7 +34,6 @@
 #include <nova/math/nova_math_Nova_Statement.h>
 #include <nova/math/nova_math_Nova_Statement.h>
 #include <nova/NativeObject.h>
-#include <nova/operators/nova_operators_Nova_EqualsOperator.h>
 
 
 

@@ -42,7 +42,6 @@ typedef struct example_Nova_MathDemoFunctionMap example_Nova_MathDemoFunctionMap
 #include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <nova/time/nova_time_Nova_Timer.h>
 #include <nova/NativeObject.h>
-#include <nova/operators/nova_operators_Nova_EqualsOperator.h>
 
 CCLASS_CLASS
 (

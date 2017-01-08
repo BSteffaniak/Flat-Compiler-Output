@@ -42,7 +42,6 @@ typedef struct nova_math_Nova_NumericTreeFunctionMap nova_math_Nova_NumericTreeF
 #include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <nova/math/nova_math_Nova_NumericOperation.h>
 #include <nova/NativeObject.h>
-#include <nova/operators/nova_operators_Nova_EqualsOperator.h>
 
 CCLASS_CLASS
 (

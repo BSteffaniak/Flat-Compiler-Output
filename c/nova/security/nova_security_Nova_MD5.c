@@ -32,7 +32,6 @@
 #include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <nova/security/NativeMD5.h>
 #include <nova/NativeObject.h>
-#include <nova/operators/nova_operators_Nova_EqualsOperator.h>
 
 
 
