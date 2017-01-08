@@ -661,9 +661,9 @@ typedef struct stabilitytest_Nova_ToStringStability stabilitytest_Nova_ToStringS
 typedef struct stabilitytest_Nova_ToStringStabilityFunctionMap stabilitytest_Nova_ToStringStabilityFunctionMap;
 typedef struct stabilitytest_Nova_UnstableException stabilitytest_Nova_UnstableException;
 typedef struct stabilitytest_Nova_UnstableExceptionFunctionMap stabilitytest_Nova_UnstableExceptionFunctionMap;
-typedef struct nova_exception_Nova_ExceptionData nova_exception_Nova_ExceptionData;
-
 #include <MacroLib.h>
+
+typedef struct nova_exception_Nova_ExceptionData nova_exception_Nova_ExceptionData;
 
 typedef char (*nova_Nova_String_closure0_Nova_transform)(void*, nova_exception_Nova_ExceptionData*, char, int, void*);
 typedef char (*nova_Nova_String_closure1_Nova_transform)(void*, nova_exception_Nova_ExceptionData*, char, int, void*);
@@ -1190,7 +1190,6 @@ typedef struct nova_Nova_String nova_Nova_String;
 
 typedef int (*spectra_util_Nova_CompilerStringFunctions_closure366_Nova_advance)(void*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, char, int, int, void*);
 typedef int (*spectra_util_Nova_CompilerStringFunctions_closure367_Nova_advance)(void*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, char, int, int, void*);
-
 
 #include <Nova.h>
 #include <pcre/pcre2.h>
