@@ -6,16 +6,16 @@ typedef struct nova_thread_async_Nova_AsyncFunctionMap nova_thread_async_Nova_As
 
 typedef struct nova_exception_Nova_ExceptionData nova_exception_Nova_ExceptionData;
 
-typedef void (*nova_thread_async_Nova_Async_closure1_Nova_func)(void*, nova_exception_Nova_ExceptionData*, void*);
-typedef void (*nova_thread_async_Nova_Async_closure2_Nova_func)(void*, nova_exception_Nova_ExceptionData*, void*);
-typedef void (*nova_thread_async_Nova_Async_closure3_Nova_func)(void*, nova_exception_Nova_ExceptionData*, void*);
-typedef void (*nova_thread_async_Nova_Async_closure4_Nova_func)(void*, nova_exception_Nova_ExceptionData*, void*);
-typedef void (*nova_thread_async_Nova_Async_closure5_Nova_func)(void*, nova_exception_Nova_ExceptionData*, void*);
-typedef void (*nova_thread_async_Nova_Async_closure6_Nova_func)(void*, nova_exception_Nova_ExceptionData*, void*);
-typedef void (*nova_thread_async_Nova_Async_closure7_Nova_func)(void*, nova_exception_Nova_ExceptionData*, void*);
-typedef void (*nova_thread_async_Nova_Async_closure8_Nova_func)(void*, nova_exception_Nova_ExceptionData*, void*);
-typedef void (*nova_thread_async_Nova_AsyncFunctionMap_closure9_Nova_func)(void*, nova_exception_Nova_ExceptionData*, void*);
-typedef void (*nova_thread_async_Nova_AsyncFunctionMap_closure10_Nova_func)(void*, nova_exception_Nova_ExceptionData*, void*);
+typedef void (*nova_thread_async_Nova_Async_closure338_Nova_func)(void*, nova_exception_Nova_ExceptionData*, void*);
+typedef void (*nova_thread_async_Nova_Async_closure339_Nova_func)(void*, nova_exception_Nova_ExceptionData*, void*);
+typedef void (*nova_thread_async_Nova_Async_closure340_Nova_func)(void*, nova_exception_Nova_ExceptionData*, void*);
+typedef void (*nova_thread_async_Nova_Async_closure341_Nova_func)(void*, nova_exception_Nova_ExceptionData*, void*);
+typedef void (*nova_thread_async_Nova_Async_closure342_Nova_func)(void*, nova_exception_Nova_ExceptionData*, void*);
+typedef void (*nova_thread_async_Nova_Async_closure343_Nova_func)(void*, nova_exception_Nova_ExceptionData*, void*);
+typedef void (*nova_thread_async_Nova_Async_closure344_Nova_func)(void*, nova_exception_Nova_ExceptionData*, void*);
+typedef void (*nova_thread_async_Nova_Async_closure345_Nova_func)(void*, nova_exception_Nova_ExceptionData*, void*);
+typedef void (*nova_thread_async_Nova_AsyncFunctionMap_closure476_Nova_func)(void*, nova_exception_Nova_ExceptionData*, void*);
+typedef void (*nova_thread_async_Nova_AsyncFunctionMap_closure477_Nova_func)(void*, nova_exception_Nova_ExceptionData*, void*);
 
 #include <Nova.h>
 #include <InterfaceVTable.h>
@@ -64,8 +64,8 @@ CCLASS_CLASS
 void nova_thread_async_Nova_Async_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData);
 nova_thread_async_Nova_Async* nova_thread_async_Nova_Async_Nova_construct(nova_thread_async_Nova_Async* this, nova_exception_Nova_ExceptionData* exceptionData);
 void nova_thread_async_Nova_Async_Nova_destroy(nova_thread_async_Nova_Async** this, nova_exception_Nova_ExceptionData* exceptionData);
-nova_thread_async_Nova_Task* nova_thread_async_Nova_Async_static_Nova_execute(nova_thread_async_Nova_Async* this, nova_exception_Nova_ExceptionData* exceptionData, nova_thread_async_Nova_Async_closure4_Nova_func nova_thread_async_Nova_Async_Nova_func, void* nova_thread_async_Nova_Async_ref_Nova_func, void* func_context);
-nova_thread_async_Nova_Task* nova_thread_async_Nova_Async_static_Nova_request(nova_thread_async_Nova_Async* this, nova_exception_Nova_ExceptionData* exceptionData, nova_thread_async_Nova_Async_closure8_Nova_func nova_thread_async_Nova_Async_Nova_func, void* nova_thread_async_Nova_Async_ref_Nova_func, void* func_context);
+nova_thread_async_Nova_Task* nova_thread_async_Nova_Async_static_Nova_execute(nova_thread_async_Nova_Async* this, nova_exception_Nova_ExceptionData* exceptionData, nova_thread_async_Nova_Async_closure341_Nova_func nova_thread_async_Nova_Async_Nova_func, void* nova_thread_async_Nova_Async_ref_Nova_func, void* func_context);
+nova_thread_async_Nova_Task* nova_thread_async_Nova_Async_static_Nova_request(nova_thread_async_Nova_Async* this, nova_exception_Nova_ExceptionData* exceptionData, nova_thread_async_Nova_Async_closure345_Nova_func nova_thread_async_Nova_Async_Nova_func, void* nova_thread_async_Nova_Async_ref_Nova_func, void* func_context);
 void nova_thread_async_Nova_Async_Nova_this(nova_thread_async_Nova_Async* this, nova_exception_Nova_ExceptionData* exceptionData);
 void nova_thread_async_Nova_Async_Nova_super(nova_thread_async_Nova_Async* this, nova_exception_Nova_ExceptionData* exceptionData);
 
@@ -81,8 +81,8 @@ nova_thread_async_Nova_AsyncFunctionMap* nova_thread_async_Nova_AsyncFunctionMap
 void nova_thread_async_Nova_AsyncFunctionMap_Nova_destroy(nova_thread_async_Nova_AsyncFunctionMap** this, nova_exception_Nova_ExceptionData* exceptionData);
 void nova_thread_async_Nova_AsyncFunctionMap_Nova_this(nova_thread_async_Nova_AsyncFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
 nova_thread_async_Nova_Async* nova_thread_async_Nova_AsyncFunctionMap_functionMapAsyncFunctionMap_Nova_construct(nova_thread_async_Nova_AsyncFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
-nova_thread_async_Nova_Task* nova_thread_async_Nova_AsyncFunctionMap_functionMap_static_Nova_execute(nova_thread_async_Nova_AsyncFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_thread_async_Nova_AsyncFunctionMap_closure9_Nova_func nova_thread_async_Nova_AsyncFunctionMap_Nova_func, void* nova_thread_async_Nova_AsyncFunctionMap_ref_Nova_func, void* func_context);
-nova_thread_async_Nova_Task* nova_thread_async_Nova_AsyncFunctionMap_functionMap_static_Nova_request(nova_thread_async_Nova_AsyncFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_thread_async_Nova_AsyncFunctionMap_closure10_Nova_func nova_thread_async_Nova_AsyncFunctionMap_Nova_func, void* nova_thread_async_Nova_AsyncFunctionMap_ref_Nova_func, void* func_context);
+nova_thread_async_Nova_Task* nova_thread_async_Nova_AsyncFunctionMap_functionMap_static_Nova_execute(nova_thread_async_Nova_AsyncFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_thread_async_Nova_AsyncFunctionMap_closure476_Nova_func nova_thread_async_Nova_AsyncFunctionMap_Nova_func, void* nova_thread_async_Nova_AsyncFunctionMap_ref_Nova_func, void* func_context);
+nova_thread_async_Nova_Task* nova_thread_async_Nova_AsyncFunctionMap_functionMap_static_Nova_request(nova_thread_async_Nova_AsyncFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_thread_async_Nova_AsyncFunctionMap_closure477_Nova_func nova_thread_async_Nova_AsyncFunctionMap_Nova_func, void* nova_thread_async_Nova_AsyncFunctionMap_ref_Nova_func, void* func_context);
 void nova_thread_async_Nova_AsyncFunctionMap_Nova_super(nova_thread_async_Nova_AsyncFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
 
 #endif

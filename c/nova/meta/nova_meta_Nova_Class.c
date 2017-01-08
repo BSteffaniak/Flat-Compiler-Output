@@ -36,13 +36,13 @@
 typedef struct
 {
 	/* let Class<Object> other */ nova_meta_Nova_Class** nova_meta_Nova_Class_Nova_other;
-} Context1;
+} Context100;
 
 
 
 char nova_meta_Nova_Class_Nova_isOfTypeClass(nova_meta_Nova_Class* this, nova_exception_Nova_ExceptionData* exceptionData, nova_meta_Nova_Class* other);
 char nova_meta_Nova_Class_Nova_isOfTypeInterface(nova_meta_Nova_Class* this, nova_exception_Nova_ExceptionData* exceptionData, nova_meta_Nova_Class* other);
-char nova_meta_Nova_Class_Nova_lambda101(nova_meta_Nova_Class* this, nova_exception_Nova_ExceptionData* exceptionData, nova_meta_Nova_Class* _1, Context1* context);
+char nova_meta_Nova_Class_Nova_lambda101(nova_meta_Nova_Class* this, nova_exception_Nova_ExceptionData* exceptionData, nova_meta_Nova_Class* _1, Context100* context);
 
 
 nova_datastruct_list_Nova_ImmutableArray* nova_meta_Nova_Class_Nova_ALL;
@@ -117,10 +117,10 @@ char nova_meta_Nova_Class_Nova_isOfTypeInterface(nova_meta_Nova_Class* this, nov
 	l1_Nova_current = this;
 	while ((l1_Nova_current) != (nova_meta_Nova_Class*)nova_null)
 	{
-		Context1* contextArg101 = NOVA_MALLOC(sizeof(Context1));
+		Context100* contextArg101 = NOVA_MALLOC(sizeof(Context100));
 		contextArg101->nova_meta_Nova_Class_Nova_other = &other;
 		
-		if (nova_datastruct_list_Nova_List_virtual0_Nova_any((nova_datastruct_list_Nova_List*)(l1_Nova_current->nova_meta_Nova_Class_Nova_interfaces), exceptionData, (nova_datastruct_list_Nova_List_closure12_Nova_anyFunc)&nova_meta_Nova_Class_Nova_lambda101, this, contextArg101))
+		if (nova_datastruct_list_Nova_List_virtual0_Nova_any((nova_datastruct_list_Nova_List*)(l1_Nova_current->nova_meta_Nova_Class_Nova_interfaces), exceptionData, (nova_datastruct_list_Nova_List_closure296_Nova_anyFunc)&nova_meta_Nova_Class_Nova_lambda101, this, contextArg101))
 		{
 			return 1;
 		}
@@ -134,7 +134,7 @@ nova_Nova_String* nova_meta_Nova_Class_Nova_toString(nova_meta_Nova_Class* this,
 	return (nova_Nova_String*)nova_Nova_String_Nova_plus(nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("Class \"")), exceptionData, (nova_Nova_String*)(nova_Nova_String_Nova_plus((this->nova_meta_Nova_Class_Nova_location), exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("\"")))));
 }
 
-char nova_meta_Nova_Class_Nova_lambda101(nova_meta_Nova_Class* this, nova_exception_Nova_ExceptionData* exceptionData, nova_meta_Nova_Class* _1, Context1* context)
+char nova_meta_Nova_Class_Nova_lambda101(nova_meta_Nova_Class* this, nova_exception_Nova_ExceptionData* exceptionData, nova_meta_Nova_Class* _1, Context100* context)
 {
 	return _1 == (*context->nova_meta_Nova_Class_Nova_other);
 }

@@ -42,7 +42,7 @@
 typedef struct nova_exception_Nova_ExceptionData nova_exception_Nova_ExceptionData;
 typedef struct nova_Nova_String nova_Nova_String;
 
-typedef void (*nova_Nova_System_closure1_Nova_exit)(void*, nova_exception_Nova_ExceptionData*, int, nova_Nova_String*, char, void*);
+typedef void (*nova_Nova_System_closure4_Nova_exit)(void*, nova_exception_Nova_ExceptionData*, int, nova_Nova_String*, char, void*);
 
 nova_time_Nova_CumulativeTimer* nova_Nova_System_Nova_overheadTimer;
 void nova_Nova_System_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData)
@@ -107,7 +107,7 @@ nova_process_Nova_Process* nova_Nova_System_static_Nova_execute(nova_Nova_System
 {
 	FILE* l1_Nova_pipe = (FILE*)nova_null;
 	
-	l1_Nova_pipe = getPipe((char*)(command->nova_Nova_String_Nova_chars->nova_datastruct_list_Nova_Array_Nova_data), (nova_Nova_System_closure1_Nova_exit)&nova_Nova_System_2_static_Nova_exit, nova_null, nova_null);
+	l1_Nova_pipe = getPipe((char*)(command->nova_Nova_String_Nova_chars->nova_datastruct_list_Nova_Array_Nova_data), (nova_Nova_System_closure4_Nova_exit)&nova_Nova_System_2_static_Nova_exit, nova_null, nova_null);
 	if (l1_Nova_pipe == 0)
 	{
 		nova_Nova_System_1_static_Nova_exit(0, exceptionData, 1, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("Unable to open pipe")));

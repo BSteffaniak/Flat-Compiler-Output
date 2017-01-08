@@ -1982,6 +1982,8 @@ typedef struct stabilitytest_UnstableException_UnstableExceptionFunctionMap_Exte
 extern stabilitytest_UnstableException_UnstableExceptionFunctionMap_Extension_VTable stabilitytest_UnstableException_UnstableExceptionFunctionMap_Extension_VTable_val;
 
 
+#include <NovaOutput.h>
+
 #include <Nova.h>
 #include <InterfaceVTable.h>
 

@@ -39,12 +39,12 @@ typedef struct
 {
 	/* Bool soft = false */ int* nova_exception_Nova_ExceptionData_Nova_soft;
 	/* Exception exception */ nova_exception_Nova_Exception** nova_exception_Nova_ExceptionData_Nova_exception;
-} Context1;
+} Context90;
 
 
 
 nova_exception_Nova_ExceptionData* nova_exception_Nova_ExceptionData_Nova_getDataByException(nova_exception_Nova_ExceptionData* this, nova_exception_Nova_ExceptionData* exceptionData, nova_exception_Nova_Exception* exception, int soft);
-char nova_exception_Nova_ExceptionData_Nova_lambda91(nova_exception_Nova_ExceptionData* this, nova_exception_Nova_ExceptionData* exceptionData, nova_exception_Nova_CaughtException* c, Context1* context);
+char nova_exception_Nova_ExceptionData_Nova_lambda91(nova_exception_Nova_ExceptionData* this, nova_exception_Nova_ExceptionData* exceptionData, nova_exception_Nova_CaughtException* c, Context90* context);
 void nova_exception_Nova_ExceptionData_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData)
 {
 	{
@@ -100,11 +100,11 @@ nova_exception_Nova_ExceptionData* nova_exception_Nova_ExceptionData_Nova_getDat
 	l1_Nova_data = this;
 	while (1)
 	{
-		Context1* contextArg91 = NOVA_MALLOC(sizeof(Context1));
+		Context90* contextArg91 = NOVA_MALLOC(sizeof(Context90));
 		contextArg91->nova_exception_Nova_ExceptionData_Nova_soft = &soft;
 		contextArg91->nova_exception_Nova_ExceptionData_Nova_exception = &exception;
 		
-		if (nova_datastruct_list_Nova_List_virtual0_Nova_any((nova_datastruct_list_Nova_List*)(l1_Nova_data->nova_exception_Nova_ExceptionData_Nova_caught), exceptionData, (nova_datastruct_list_Nova_List_closure12_Nova_anyFunc)&nova_exception_Nova_ExceptionData_Nova_lambda91, this, contextArg91))
+		if (nova_datastruct_list_Nova_List_virtual0_Nova_any((nova_datastruct_list_Nova_List*)(l1_Nova_data->nova_exception_Nova_ExceptionData_Nova_caught), exceptionData, (nova_datastruct_list_Nova_List_closure296_Nova_anyFunc)&nova_exception_Nova_ExceptionData_Nova_lambda91, this, contextArg91))
 		{
 			return l1_Nova_data;
 		}
@@ -130,7 +130,7 @@ char nova_exception_Nova_ExceptionData_Nova_throwException(nova_exception_Nova_E
 	return 0;
 }
 
-char nova_exception_Nova_ExceptionData_Nova_lambda91(nova_exception_Nova_ExceptionData* this, nova_exception_Nova_ExceptionData* exceptionData, nova_exception_Nova_CaughtException* c, Context1* context)
+char nova_exception_Nova_ExceptionData_Nova_lambda91(nova_exception_Nova_ExceptionData* this, nova_exception_Nova_ExceptionData* exceptionData, nova_exception_Nova_CaughtException* c, Context90* context)
 {
 	return (!(*context->nova_exception_Nova_ExceptionData_Nova_soft) || c->nova_exception_Nova_CaughtException_Nova_soft) && nova_meta_Nova_Class_Nova_isOfType((nova_meta_Nova_Class*)((*context->nova_exception_Nova_ExceptionData_Nova_exception)->vtable->classInstance), exceptionData, c->nova_exception_Nova_CaughtException_Nova_type);
 }

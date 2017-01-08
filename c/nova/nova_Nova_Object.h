@@ -2,7 +2,7 @@
 #define FILE_nova_Nova_Object_NOVA
 
 typedef struct nova_Nova_Object nova_Nova_Object;
-#error why am ihere
+
 
 #include <Nova.h>
 #include <InterfaceVTable.h>

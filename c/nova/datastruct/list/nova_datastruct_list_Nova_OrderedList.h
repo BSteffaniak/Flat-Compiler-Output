@@ -8,11 +8,11 @@ typedef struct nova_exception_Nova_ExceptionData nova_exception_Nova_ExceptionDa
 typedef struct nova_Nova_Object nova_Nova_Object;
 typedef struct nova_datastruct_list_Nova_OrderedList nova_datastruct_list_Nova_OrderedList;
 
-typedef char (*nova_datastruct_list_Nova_OrderedList_closure1_Nova_condition)(void*, nova_exception_Nova_ExceptionData*, nova_Nova_Object*, int, nova_datastruct_list_Nova_OrderedList*, void*);
-typedef char (*nova_datastruct_list_Nova_OrderedList_closure2_Nova_condition)(void*, nova_exception_Nova_ExceptionData*, nova_Nova_Object*, int, nova_datastruct_list_Nova_OrderedList*, void*);
-typedef char (*nova_datastruct_list_Nova_OrderedList_closure3_Nova_condition)(void*, nova_exception_Nova_ExceptionData*, nova_Nova_Object*, int, nova_datastruct_list_Nova_OrderedList*, void*);
-typedef char (*nova_datastruct_list_Nova_OrderedList_closure4_Nova_condition)(void*, nova_exception_Nova_ExceptionData*, nova_Nova_Object*, int, nova_datastruct_list_Nova_OrderedList*, void*);
-typedef char (*nova_datastruct_list_Nova_OrderedListFunctionMap_closure5_Nova_condition)(void*, nova_exception_Nova_ExceptionData*, nova_Nova_Object*, int, nova_datastruct_list_Nova_OrderedList*, void*);
+typedef char (*nova_datastruct_list_Nova_OrderedList_closure329_Nova_condition)(void*, nova_exception_Nova_ExceptionData*, nova_Nova_Object*, int, nova_datastruct_list_Nova_OrderedList*, void*);
+typedef char (*nova_datastruct_list_Nova_OrderedList_closure330_Nova_condition)(void*, nova_exception_Nova_ExceptionData*, nova_Nova_Object*, int, nova_datastruct_list_Nova_OrderedList*, void*);
+typedef char (*nova_datastruct_list_Nova_OrderedList_closure331_Nova_condition)(void*, nova_exception_Nova_ExceptionData*, nova_Nova_Object*, int, nova_datastruct_list_Nova_OrderedList*, void*);
+typedef char (*nova_datastruct_list_Nova_OrderedList_closure332_Nova_condition)(void*, nova_exception_Nova_ExceptionData*, nova_Nova_Object*, int, nova_datastruct_list_Nova_OrderedList*, void*);
+typedef char (*nova_datastruct_list_Nova_OrderedListFunctionMap_closure474_Nova_condition)(void*, nova_exception_Nova_ExceptionData*, nova_Nova_Object*, int, nova_datastruct_list_Nova_OrderedList*, void*);
 
 #include <Nova.h>
 #include <InterfaceVTable.h>
@@ -60,7 +60,7 @@ CCLASS_CLASS
 )
 
 void nova_datastruct_list_Nova_OrderedList_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData);
-char nova_datastruct_list_Nova_OrderedList_Nova_findIndex(nova_datastruct_list_Nova_OrderedList* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_list_Nova_OrderedList_closure4_Nova_condition nova_datastruct_list_Nova_OrderedList_Nova_condition, void* nova_datastruct_list_Nova_OrderedList_ref_Nova_condition, void* condition_context, int defaultReturnValue);
+char nova_datastruct_list_Nova_OrderedList_Nova_findIndex(nova_datastruct_list_Nova_OrderedList* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_list_Nova_OrderedList_closure332_Nova_condition nova_datastruct_list_Nova_OrderedList_Nova_condition, void* nova_datastruct_list_Nova_OrderedList_ref_Nova_condition, void* condition_context, int defaultReturnValue);
 
 CCLASS_CLASS
 (
@@ -73,7 +73,7 @@ void nova_datastruct_list_Nova_OrderedListFunctionMap_Nova_init_static(nova_exce
 nova_datastruct_list_Nova_OrderedListFunctionMap* nova_datastruct_list_Nova_OrderedListFunctionMap_Nova_construct(nova_datastruct_list_Nova_OrderedListFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
 void nova_datastruct_list_Nova_OrderedListFunctionMap_Nova_destroy(nova_datastruct_list_Nova_OrderedListFunctionMap** this, nova_exception_Nova_ExceptionData* exceptionData);
 void nova_datastruct_list_Nova_OrderedListFunctionMap_Nova_this(nova_datastruct_list_Nova_OrderedListFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
-char nova_datastruct_list_Nova_OrderedListFunctionMap_functionMap_Nova_findIndex(nova_datastruct_list_Nova_OrderedListFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_list_Nova_OrderedList* reference, nova_datastruct_list_Nova_OrderedListFunctionMap_closure5_Nova_condition nova_datastruct_list_Nova_OrderedListFunctionMap_Nova_condition, void* nova_datastruct_list_Nova_OrderedListFunctionMap_ref_Nova_condition, void* condition_context, int defaultReturnValue);
+char nova_datastruct_list_Nova_OrderedListFunctionMap_functionMap_Nova_findIndex(nova_datastruct_list_Nova_OrderedListFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_list_Nova_OrderedList* reference, nova_datastruct_list_Nova_OrderedListFunctionMap_closure474_Nova_condition nova_datastruct_list_Nova_OrderedListFunctionMap_Nova_condition, void* nova_datastruct_list_Nova_OrderedListFunctionMap_ref_Nova_condition, void* condition_context, int defaultReturnValue);
 void nova_datastruct_list_Nova_OrderedListFunctionMap_Nova_super(nova_datastruct_list_Nova_OrderedListFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
 
 #endif

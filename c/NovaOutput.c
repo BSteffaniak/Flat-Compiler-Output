@@ -37249,6 +37249,7 @@ spectra_tree_nodes_annotations_Nova_PublicAnnotation* spectra_tree_nodes_annotat
 		spectra_tree_nodes_annotations_Nova_PublicAnnotation* l2_Nova_node = (spectra_tree_nodes_annotations_Nova_PublicAnnotation*)nova_null;
 		
 		l2_Nova_node = spectra_tree_nodes_annotations_Nova_PublicAnnotation_Nova_construct(0, exceptionData, parent, location);
+		return l2_Nova_node;
 	}
 	return (spectra_tree_nodes_annotations_Nova_PublicAnnotation*)(nova_Nova_Object*)nova_null;
 }

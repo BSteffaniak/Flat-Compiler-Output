@@ -36,7 +36,7 @@
 
 typedef struct nova_exception_Nova_ExceptionData nova_exception_Nova_ExceptionData;
 
-typedef void (*nova_thread_Nova_Thread_closure1_Nova_run)(void*, nova_exception_Nova_ExceptionData*, void*);
+typedef void (*nova_thread_Nova_Thread_closure333_Nova_run)(void*, nova_exception_Nova_ExceptionData*, void*);
 
 CCLASS_PRIVATE
 (
@@ -73,7 +73,7 @@ nova_thread_Nova_Thread* nova_thread_Nova_Thread_0_Nova_construct(nova_thread_No
 	return this;
 }
 
-nova_thread_Nova_Thread* nova_thread_Nova_Thread_1_Nova_construct(nova_thread_Nova_Thread* this, nova_exception_Nova_ExceptionData* exceptionData, nova_thread_Nova_Thread_closure4_Nova_action nova_thread_Nova_Thread_Nova_action, void* nova_thread_Nova_Thread_ref_Nova_action, void* action_context)
+nova_thread_Nova_Thread* nova_thread_Nova_Thread_1_Nova_construct(nova_thread_Nova_Thread* this, nova_exception_Nova_ExceptionData* exceptionData, nova_thread_Nova_Thread_closure336_Nova_action nova_thread_Nova_Thread_Nova_action, void* nova_thread_Nova_Thread_ref_Nova_action, void* action_context)
 {
 	CCLASS_NEW(nova_thread_Nova_Thread, this);
 	this->vtable = &nova_thread_Thread_Extension_VTable_val;
@@ -81,7 +81,7 @@ nova_thread_Nova_Thread* nova_thread_Nova_Thread_1_Nova_construct(nova_thread_No
 	nova_thread_Nova_Thread_Nova_super(this, exceptionData);
 	
 	{
-		nova_thread_Nova_Thread_0_Nova_this(this, exceptionData, (nova_thread_Nova_Thread_closure5_Nova_action)nova_thread_Nova_Thread_Nova_action, nova_thread_Nova_Thread_ref_Nova_action, action_context);
+		nova_thread_Nova_Thread_0_Nova_this(this, exceptionData, (nova_thread_Nova_Thread_closure337_Nova_action)nova_thread_Nova_Thread_Nova_action, nova_thread_Nova_Thread_ref_Nova_action, action_context);
 	}
 	
 	return this;
@@ -107,7 +107,7 @@ void nova_thread_Nova_Thread_Nova_this(nova_thread_Nova_Thread* this, nova_excep
 {
 }
 
-void nova_thread_Nova_Thread_0_Nova_this(nova_thread_Nova_Thread* this, nova_exception_Nova_ExceptionData* exceptionData, nova_thread_Nova_Thread_closure5_Nova_action nova_thread_Nova_Thread_Nova_action, void* nova_thread_Nova_Thread_ref_Nova_action, void* action_context)
+void nova_thread_Nova_Thread_0_Nova_this(nova_thread_Nova_Thread* this, nova_exception_Nova_ExceptionData* exceptionData, nova_thread_Nova_Thread_closure337_Nova_action nova_thread_Nova_Thread_Nova_action, void* nova_thread_Nova_Thread_ref_Nova_action, void* action_context)
 {
 	this->prv->nova_thread_Nova_Thread_Nova_action = nova_thread_Nova_Thread_Nova_action;
 	this->prv->nova_thread_Nova_Thread_reference_Nova_action = nova_thread_Nova_Thread_ref_Nova_action;
@@ -117,7 +117,7 @@ void nova_thread_Nova_Thread_0_Nova_this(nova_thread_Nova_Thread* this, nova_exc
 
 NOVA_THREAD_HANDLE* nova_thread_Nova_Thread_Nova_start(nova_thread_Nova_Thread* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
-	return this->prv->nova_thread_Nova_Thread_Nova_handle = create_thread(this, (nova_thread_Nova_Thread_closure1_Nova_run)&nova_thread_Nova_Thread_Nova_startRun, this, nova_null);
+	return this->prv->nova_thread_Nova_Thread_Nova_handle = create_thread(this, (nova_thread_Nova_Thread_closure333_Nova_run)&nova_thread_Nova_Thread_Nova_startRun, this, nova_null);
 }
 
 void nova_thread_Nova_Thread_Nova_join(nova_thread_Nova_Thread* this, nova_exception_Nova_ExceptionData* exceptionData)
@@ -228,9 +228,9 @@ nova_thread_Nova_Thread* nova_thread_Nova_ThreadFunctionMap_functionMapThreadFun
 	return nova_thread_Nova_Thread_0_Nova_construct(0, exceptionData);
 }
 
-nova_thread_Nova_Thread* nova_thread_Nova_ThreadFunctionMap_functionMapThreadFunctionMap1_Nova_construct(nova_thread_Nova_ThreadFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_thread_Nova_ThreadFunctionMap_closure6_Nova_action nova_thread_Nova_ThreadFunctionMap_Nova_action, void* nova_thread_Nova_ThreadFunctionMap_ref_Nova_action, void* action_context)
+nova_thread_Nova_Thread* nova_thread_Nova_ThreadFunctionMap_functionMapThreadFunctionMap1_Nova_construct(nova_thread_Nova_ThreadFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_thread_Nova_ThreadFunctionMap_closure475_Nova_action nova_thread_Nova_ThreadFunctionMap_Nova_action, void* nova_thread_Nova_ThreadFunctionMap_ref_Nova_action, void* action_context)
 {
-	return nova_thread_Nova_Thread_1_Nova_construct(0, exceptionData, (nova_thread_Nova_Thread_closure4_Nova_action)nova_thread_Nova_ThreadFunctionMap_Nova_action, nova_thread_Nova_ThreadFunctionMap_ref_Nova_action, action_context);
+	return nova_thread_Nova_Thread_1_Nova_construct(0, exceptionData, (nova_thread_Nova_Thread_closure336_Nova_action)nova_thread_Nova_ThreadFunctionMap_Nova_action, nova_thread_Nova_ThreadFunctionMap_ref_Nova_action, action_context);
 }
 
 NOVA_THREAD_HANDLE* nova_thread_Nova_ThreadFunctionMap_functionMap_Nova_start(nova_thread_Nova_ThreadFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_thread_Nova_Thread* reference)

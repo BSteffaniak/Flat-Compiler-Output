@@ -41,15 +41,15 @@
 
 typedef struct
 {
-} Context1;
+} Context164;
 
 typedef struct nova_exception_Nova_ExceptionData nova_exception_Nova_ExceptionData;
 
-typedef int (*stabilitytest_Nova_SyntaxStability_closure1_Nova_something)(void*, nova_exception_Nova_ExceptionData*, int, void*);
-typedef int (*stabilitytest_Nova_SyntaxStability_closure2_Nova_something)(void*, nova_exception_Nova_ExceptionData*, int, void*);
-typedef int (*stabilitytest_Nova_SyntaxStability_closure3_Nova_something)(void*, nova_exception_Nova_ExceptionData*, int, void*);
-typedef int (*stabilitytest_Nova_SyntaxStability_closure4_Nova_something)(void*, nova_exception_Nova_ExceptionData*, int, void*);
-typedef int (*stabilitytest_Nova_SyntaxStabilityFunctionMap_closure5_Nova_something)(void*, nova_exception_Nova_ExceptionData*, int, void*);
+typedef int (*stabilitytest_Nova_SyntaxStability_closure388_Nova_something)(void*, nova_exception_Nova_ExceptionData*, int, void*);
+typedef int (*stabilitytest_Nova_SyntaxStability_closure389_Nova_something)(void*, nova_exception_Nova_ExceptionData*, int, void*);
+typedef int (*stabilitytest_Nova_SyntaxStability_closure390_Nova_something)(void*, nova_exception_Nova_ExceptionData*, int, void*);
+typedef int (*stabilitytest_Nova_SyntaxStability_closure391_Nova_something)(void*, nova_exception_Nova_ExceptionData*, int, void*);
+typedef int (*stabilitytest_Nova_SyntaxStabilityFunctionMap_closure488_Nova_something)(void*, nova_exception_Nova_ExceptionData*, int, void*);
 
 
 void stabilitytest_Nova_SyntaxStability_Nova_checkMatchStatements(stabilitytest_Nova_SyntaxStability* this, nova_exception_Nova_ExceptionData* exceptionData);
@@ -72,7 +72,7 @@ int stabilitytest_Nova_SyntaxStability_1_Nova_named(stabilitytest_Nova_SyntaxSta
 void stabilitytest_Nova_SyntaxStability_Nova_checkNamedArguments(stabilitytest_Nova_SyntaxStability* this, nova_exception_Nova_ExceptionData* exceptionData);
 int stabilitytest_Nova_SyntaxStability_Nova_func1(stabilitytest_Nova_SyntaxStability* this, nova_exception_Nova_ExceptionData* exceptionData, int a);
 int stabilitytest_Nova_SyntaxStability_Nova_func2(stabilitytest_Nova_SyntaxStability* this, nova_exception_Nova_ExceptionData* exceptionData, int a);
-int stabilitytest_Nova_SyntaxStability_Nova_myFunc(stabilitytest_Nova_SyntaxStability* this, nova_exception_Nova_ExceptionData* exceptionData, stabilitytest_Nova_SyntaxStability_closure4_Nova_something stabilitytest_Nova_SyntaxStability_Nova_something, void* stabilitytest_Nova_SyntaxStability_ref_Nova_something, void* something_context);
+int stabilitytest_Nova_SyntaxStability_Nova_myFunc(stabilitytest_Nova_SyntaxStability* this, nova_exception_Nova_ExceptionData* exceptionData, stabilitytest_Nova_SyntaxStability_closure391_Nova_something stabilitytest_Nova_SyntaxStability_Nova_something, void* stabilitytest_Nova_SyntaxStability_ref_Nova_something, void* something_context);
 void stabilitytest_Nova_SyntaxStability_Nova_checkDefaultClosureArguments(stabilitytest_Nova_SyntaxStability* this, nova_exception_Nova_ExceptionData* exceptionData);
 void stabilitytest_Nova_SyntaxStability_Nova_checkZipper(stabilitytest_Nova_SyntaxStability* this, nova_exception_Nova_ExceptionData* exceptionData);
 void stabilitytest_Nova_SyntaxStability_Nova_checkSafeNavigation(stabilitytest_Nova_SyntaxStability* this, nova_exception_Nova_ExceptionData* exceptionData);
@@ -83,7 +83,7 @@ void stabilitytest_Nova_SyntaxStability_Nova_checkArrayInitializers(stabilitytes
 nova_datastruct_list_Nova_Array* generated41(stabilitytest_Nova_SyntaxStability* this, nova_exception_Nova_ExceptionData* exceptionData);
 nova_datastruct_list_Nova_Array* generated42(stabilitytest_Nova_SyntaxStability* this, nova_exception_Nova_ExceptionData* exceptionData);
 nova_datastruct_list_Nova_Array* generated43(stabilitytest_Nova_SyntaxStability* this, nova_exception_Nova_ExceptionData* exceptionData);
-nova_Nova_String* stabilitytest_Nova_SyntaxStability_Nova_lambda165(stabilitytest_Nova_SyntaxStability* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* x, nova_Nova_Object* y, Context1* context);
+nova_Nova_String* stabilitytest_Nova_SyntaxStability_Nova_lambda165(stabilitytest_Nova_SyntaxStability* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* x, nova_Nova_Object* y, Context164* context);
 nova_datastruct_list_Nova_Array* generated44(stabilitytest_Nova_SyntaxStability* this, nova_exception_Nova_ExceptionData* exceptionData);
 nova_datastruct_list_Nova_IntArray* generated45(stabilitytest_Nova_SyntaxStability* this, nova_exception_Nova_ExceptionData* exceptionData, int value2, int value3);
 void stabilitytest_Nova_SyntaxStability_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData)
@@ -421,13 +421,13 @@ void stabilitytest_Nova_SyntaxStability_Nova_checkIterators(stabilitytest_Nova_S
 	
 	nova_io_Nova_Console_0_static_Nova_write(0, exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("Checking filter functionality... ")));
 	l1_Nova_list = generated41(this, exceptionData);
-	l1_Nova_list2 = (nova_datastruct_list_Nova_Array*)(nova_datastruct_list_Nova_List_virtual0_Nova_filter((nova_datastruct_list_Nova_List*)(l1_Nova_list), exceptionData, (nova_datastruct_list_Nova_List_closure20_Nova_filterFunc)&stabilitytest_Nova_SyntaxStability_static_Nova_filterFunc, this, nova_null));
+	l1_Nova_list2 = (nova_datastruct_list_Nova_Array*)(nova_datastruct_list_Nova_List_virtual0_Nova_filter((nova_datastruct_list_Nova_List*)(l1_Nova_list), exceptionData, (nova_datastruct_list_Nova_List_closure304_Nova_filterFunc)&stabilitytest_Nova_SyntaxStability_static_Nova_filterFunc, this, nova_null));
 	TRY
 	{
 		novaEnv.nova_exception_ExceptionData.addCaught(exceptionData, exceptionData, stabilitytest_UnstableException_Extension_VTable_val.classInstance, 0);
 		
 		{
-			nova_datastruct_list_Nova_List_virtual0_Nova_forEach((nova_datastruct_list_Nova_List*)(l1_Nova_list2), exceptionData, (nova_datastruct_list_Nova_List_closure4_Nova_func)&stabilitytest_Nova_SyntaxStability_static_Nova_foreachClosure, this, nova_null);
+			nova_datastruct_list_Nova_List_virtual0_Nova_forEach((nova_datastruct_list_Nova_List*)(l1_Nova_list2), exceptionData, (nova_datastruct_list_Nova_List_closure288_Nova_func)&stabilitytest_Nova_SyntaxStability_static_Nova_foreachClosure, this, nova_null);
 		}
 	}
 	CATCH (stabilitytest_UnstableException_Extension_VTable_val.classInstance)
@@ -545,9 +545,9 @@ int stabilitytest_Nova_SyntaxStability_Nova_func2(stabilitytest_Nova_SyntaxStabi
 	return a * 4;
 }
 
-int stabilitytest_Nova_SyntaxStability_Nova_myFunc(stabilitytest_Nova_SyntaxStability* this, nova_exception_Nova_ExceptionData* exceptionData, stabilitytest_Nova_SyntaxStability_closure4_Nova_something stabilitytest_Nova_SyntaxStability_Nova_something, void* stabilitytest_Nova_SyntaxStability_ref_Nova_something, void* something_context)
+int stabilitytest_Nova_SyntaxStability_Nova_myFunc(stabilitytest_Nova_SyntaxStability* this, nova_exception_Nova_ExceptionData* exceptionData, stabilitytest_Nova_SyntaxStability_closure391_Nova_something stabilitytest_Nova_SyntaxStability_Nova_something, void* stabilitytest_Nova_SyntaxStability_ref_Nova_something, void* something_context)
 {
-	stabilitytest_Nova_SyntaxStability_Nova_something = (stabilitytest_Nova_SyntaxStability_closure4_Nova_something)(stabilitytest_Nova_SyntaxStability_Nova_something == 0 ? (stabilitytest_Nova_SyntaxStability_closure4_Nova_something)&stabilitytest_Nova_SyntaxStability_Nova_func2 : stabilitytest_Nova_SyntaxStability_Nova_something);
+	stabilitytest_Nova_SyntaxStability_Nova_something = (stabilitytest_Nova_SyntaxStability_closure391_Nova_something)(stabilitytest_Nova_SyntaxStability_Nova_something == 0 ? (stabilitytest_Nova_SyntaxStability_closure391_Nova_something)&stabilitytest_Nova_SyntaxStability_Nova_func2 : stabilitytest_Nova_SyntaxStability_Nova_something);
 	stabilitytest_Nova_SyntaxStability_ref_Nova_something = (void*)(stabilitytest_Nova_SyntaxStability_ref_Nova_something == 0 ? (void*)this : stabilitytest_Nova_SyntaxStability_ref_Nova_something);
 	something_context = (void*)(something_context == 0 ? (void*)nova_null : something_context);
 	return stabilitytest_Nova_SyntaxStability_Nova_something(stabilitytest_Nova_SyntaxStability_ref_Nova_something, exceptionData, 5, something_context);
@@ -557,7 +557,7 @@ void stabilitytest_Nova_SyntaxStability_Nova_checkDefaultClosureArguments(stabil
 {
 	nova_io_Nova_Console_0_static_Nova_write(0, exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("Checking default closure arguments... ")));
 	stabilitytest_Nova_StabilityTest_Nova_fail(this->stabilitytest_Nova_StabilityTestCase_Nova_program, exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("Failed to call default closure")), stabilitytest_Nova_SyntaxStability_Nova_myFunc(this, exceptionData, 0, 0, 0) != 20);
-	stabilitytest_Nova_StabilityTest_Nova_fail(this->stabilitytest_Nova_StabilityTestCase_Nova_program, exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("Failed to call overrided default closure")), stabilitytest_Nova_SyntaxStability_Nova_myFunc(this, exceptionData, (stabilitytest_Nova_SyntaxStability_closure4_Nova_something)&stabilitytest_Nova_SyntaxStability_Nova_func1, this, nova_null) != 10);
+	stabilitytest_Nova_StabilityTest_Nova_fail(this->stabilitytest_Nova_StabilityTestCase_Nova_program, exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("Failed to call overrided default closure")), stabilitytest_Nova_SyntaxStability_Nova_myFunc(this, exceptionData, (stabilitytest_Nova_SyntaxStability_closure391_Nova_something)&stabilitytest_Nova_SyntaxStability_Nova_func1, this, nova_null) != 10);
 	nova_io_Nova_Console_1_static_Nova_writeLine(0, exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("OK")));
 }
 
@@ -566,12 +566,12 @@ void stabilitytest_Nova_SyntaxStability_Nova_checkZipper(stabilitytest_Nova_Synt
 	nova_datastruct_list_Nova_Array* l1_Nova_array1 = (nova_datastruct_list_Nova_Array*)nova_null;
 	nova_datastruct_list_Nova_Array* l1_Nova_array2 = (nova_datastruct_list_Nova_Array*)nova_null;
 	nova_datastruct_list_Nova_Array* l1_Nova_zipped = (nova_datastruct_list_Nova_Array*)nova_null;
-	Context1* contextArg165 = NOVA_MALLOC(sizeof(Context1));
+	Context164* contextArg165 = NOVA_MALLOC(sizeof(Context164));
 	
 	nova_io_Nova_Console_0_static_Nova_write(0, exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("Checking zip function... ")));
 	l1_Nova_array1 = generated42(this, exceptionData);
 	l1_Nova_array2 = generated43(this, exceptionData);
-	l1_Nova_zipped = nova_datastruct_list_Nova_List_Nova_zip((nova_datastruct_list_Nova_List*)(l1_Nova_array1), exceptionData, (nova_datastruct_list_Nova_List*)(l1_Nova_array2), (nova_datastruct_list_Nova_List_closure40_Nova_zipper)&stabilitytest_Nova_SyntaxStability_Nova_lambda165, this, contextArg165);
+	l1_Nova_zipped = nova_datastruct_list_Nova_List_Nova_zip((nova_datastruct_list_Nova_List*)(l1_Nova_array1), exceptionData, (nova_datastruct_list_Nova_List*)(l1_Nova_array2), (nova_datastruct_list_Nova_List_closure324_Nova_zipper)&stabilitytest_Nova_SyntaxStability_Nova_lambda165, this, contextArg165);
 	nova_io_Nova_Console_0_static_Nova_write(0, exceptionData, (nova_Nova_String*)(nova_Nova_String_Nova_plus(nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("Zipped: ")), exceptionData, (nova_Nova_String*)(nova_Nova_String_Nova_plus(nova_Nova_Object_virtual_Nova_toString((nova_Nova_Object*)((l1_Nova_zipped)), exceptionData), exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)(" ")))))));
 	nova_io_Nova_Console_1_static_Nova_writeLine(0, exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("OK")));
 }
@@ -724,7 +724,7 @@ nova_datastruct_list_Nova_Array* generated43(stabilitytest_Nova_SyntaxStability*
 	return nova_datastruct_list_Nova_Array_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)(l1_Nova_temp), 4);
 }
 
-nova_Nova_String* stabilitytest_Nova_SyntaxStability_Nova_lambda165(stabilitytest_Nova_SyntaxStability* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* x, nova_Nova_Object* y, Context1* context)
+nova_Nova_String* stabilitytest_Nova_SyntaxStability_Nova_lambda165(stabilitytest_Nova_SyntaxStability* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* x, nova_Nova_Object* y, Context164* context)
 {
 	return (nova_Nova_String*)nova_Nova_String_Nova_plus((x), exceptionData, (nova_Nova_String*)(nova_Nova_String_Nova_plus(nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)(" ")), exceptionData, (nova_Nova_String*)(nova_Nova_String_Nova_plus(nova_Nova_Object_virtual_Nova_toString((nova_Nova_Object*)((y)), exceptionData), exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("")))))));
 }
@@ -780,7 +780,7 @@ int stabilitytest_Nova_SyntaxStabilityFunctionMap_functionMap1_Nova_named(stabil
 void stabilitytest_Nova_SyntaxStabilityFunctionMap_functionMap_Nova_checkNamedArguments(stabilitytest_Nova_SyntaxStabilityFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, stabilitytest_Nova_SyntaxStability* reference);
 int stabilitytest_Nova_SyntaxStabilityFunctionMap_functionMap_Nova_func1(stabilitytest_Nova_SyntaxStabilityFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, stabilitytest_Nova_SyntaxStability* reference, int a);
 int stabilitytest_Nova_SyntaxStabilityFunctionMap_functionMap_Nova_func2(stabilitytest_Nova_SyntaxStabilityFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, stabilitytest_Nova_SyntaxStability* reference, int a);
-int stabilitytest_Nova_SyntaxStabilityFunctionMap_functionMap_Nova_myFunc(stabilitytest_Nova_SyntaxStabilityFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, stabilitytest_Nova_SyntaxStability* reference, stabilitytest_Nova_SyntaxStabilityFunctionMap_closure5_Nova_something stabilitytest_Nova_SyntaxStabilityFunctionMap_Nova_something, void* stabilitytest_Nova_SyntaxStabilityFunctionMap_ref_Nova_something, void* something_context);
+int stabilitytest_Nova_SyntaxStabilityFunctionMap_functionMap_Nova_myFunc(stabilitytest_Nova_SyntaxStabilityFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, stabilitytest_Nova_SyntaxStability* reference, stabilitytest_Nova_SyntaxStabilityFunctionMap_closure488_Nova_something stabilitytest_Nova_SyntaxStabilityFunctionMap_Nova_something, void* stabilitytest_Nova_SyntaxStabilityFunctionMap_ref_Nova_something, void* something_context);
 void stabilitytest_Nova_SyntaxStabilityFunctionMap_functionMap_Nova_checkDefaultClosureArguments(stabilitytest_Nova_SyntaxStabilityFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, stabilitytest_Nova_SyntaxStability* reference);
 void stabilitytest_Nova_SyntaxStabilityFunctionMap_functionMap_Nova_checkZipper(stabilitytest_Nova_SyntaxStabilityFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, stabilitytest_Nova_SyntaxStability* reference);
 void stabilitytest_Nova_SyntaxStabilityFunctionMap_functionMap_Nova_checkSafeNavigation(stabilitytest_Nova_SyntaxStabilityFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, stabilitytest_Nova_SyntaxStability* reference);
@@ -935,9 +935,9 @@ int stabilitytest_Nova_SyntaxStabilityFunctionMap_functionMap_Nova_func2(stabili
 	return stabilitytest_Nova_SyntaxStability_Nova_func2(reference, exceptionData, a);
 }
 
-int stabilitytest_Nova_SyntaxStabilityFunctionMap_functionMap_Nova_myFunc(stabilitytest_Nova_SyntaxStabilityFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, stabilitytest_Nova_SyntaxStability* reference, stabilitytest_Nova_SyntaxStabilityFunctionMap_closure5_Nova_something stabilitytest_Nova_SyntaxStabilityFunctionMap_Nova_something, void* stabilitytest_Nova_SyntaxStabilityFunctionMap_ref_Nova_something, void* something_context)
+int stabilitytest_Nova_SyntaxStabilityFunctionMap_functionMap_Nova_myFunc(stabilitytest_Nova_SyntaxStabilityFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, stabilitytest_Nova_SyntaxStability* reference, stabilitytest_Nova_SyntaxStabilityFunctionMap_closure488_Nova_something stabilitytest_Nova_SyntaxStabilityFunctionMap_Nova_something, void* stabilitytest_Nova_SyntaxStabilityFunctionMap_ref_Nova_something, void* something_context)
 {
-	return stabilitytest_Nova_SyntaxStability_Nova_myFunc(reference, exceptionData, (stabilitytest_Nova_SyntaxStability_closure4_Nova_something)stabilitytest_Nova_SyntaxStabilityFunctionMap_Nova_something, stabilitytest_Nova_SyntaxStabilityFunctionMap_ref_Nova_something, something_context);
+	return stabilitytest_Nova_SyntaxStability_Nova_myFunc(reference, exceptionData, (stabilitytest_Nova_SyntaxStability_closure391_Nova_something)stabilitytest_Nova_SyntaxStabilityFunctionMap_Nova_something, stabilitytest_Nova_SyntaxStabilityFunctionMap_ref_Nova_something, something_context);
 }
 
 void stabilitytest_Nova_SyntaxStabilityFunctionMap_functionMap_Nova_checkDefaultClosureArguments(stabilitytest_Nova_SyntaxStabilityFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, stabilitytest_Nova_SyntaxStability* reference)

@@ -75,12 +75,12 @@
 
 typedef struct
 {
-} Context1;
+} Context60;
 
 
 
 spectra_tree_nodes_Nova_Value* spectra_tree_nodes_Nova_Value_static_Nova_parseValue(spectra_tree_nodes_Nova_Value* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* input, spectra_tree_nodes_Nova_Node* parent, spectra_util_Nova_Location* location, char require);
-char spectra_tree_nodes_Nova_Value_Nova_lambda61(spectra_tree_nodes_Nova_Value* this, nova_exception_Nova_ExceptionData* exceptionData, spectra_tree_nodes_Nova_Import* x, Context1* context);
+char spectra_tree_nodes_Nova_Value_Nova_lambda61(spectra_tree_nodes_Nova_Value* this, nova_exception_Nova_ExceptionData* exceptionData, spectra_tree_nodes_Nova_Import* x, Context60* context);
 
 
 
@@ -279,7 +279,7 @@ spectra_tree_nodes_Nova_Value* spectra_tree_nodes_Nova_Value_Nova_cloneTo(spectr
 	return other;
 }
 
-char spectra_tree_nodes_Nova_Value_Nova_lambda61(spectra_tree_nodes_Nova_Value* this, nova_exception_Nova_ExceptionData* exceptionData, spectra_tree_nodes_Nova_Import* x, Context1* context)
+char spectra_tree_nodes_Nova_Value_Nova_lambda61(spectra_tree_nodes_Nova_Value* this, nova_exception_Nova_ExceptionData* exceptionData, spectra_tree_nodes_Nova_Import* x, Context60* context)
 {
 	return (spectra_tree_nodes_Nova_Import_Accessor_Nova_className(x, exceptionData)) != (nova_Nova_String*)nova_null && nova_Nova_String_Nova_equals(spectra_tree_nodes_Nova_Import_Accessor_Nova_className(x, exceptionData), exceptionData, spectra_tree_nodes_Nova_Value_virtual_Accessorfunc_Nova_type((spectra_tree_nodes_Nova_Value*)(this), exceptionData)->spectra_tree_nodes_Nova_Type_Nova_name);
 }
@@ -309,10 +309,10 @@ char spectra_tree_nodes_Nova_Value_Accessor_Nova_isAssignable(spectra_tree_nodes
 
 spectra_tree_nodes_Nova_ClassDeclaration* spectra_tree_nodes_Nova_Value_Accessor_Nova_typeClass(spectra_tree_nodes_Nova_Value* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
-	Context1* contextArg61 = NOVA_MALLOC(sizeof(Context1));
+	Context60* contextArg61 = NOVA_MALLOC(sizeof(Context60));
 	spectra_tree_nodes_Nova_Import* nova_local_0 = (spectra_tree_nodes_Nova_Import*)nova_null;
 	
-	return (spectra_tree_nodes_Nova_ClassDeclaration*)((spectra_tree_nodes_Nova_Value_virtual_Accessorfunc_Nova_type((spectra_tree_nodes_Nova_Value*)(this), exceptionData)) != (spectra_tree_nodes_Nova_Type*)nova_null ? (nova_Nova_Object*)(spectra_tree_nodes_Nova_ClassDeclaration*)((nova_local_0 = (spectra_tree_nodes_Nova_Import*)(nova_datastruct_list_Nova_List_virtual0_Nova_firstWhere((nova_datastruct_list_Nova_List*)(spectra_tree_nodes_Nova_NovaFile_Accessor_Nova_imports(spectra_tree_nodes_Nova_Node_virtual_Accessor_Nova_parentFile((spectra_tree_nodes_Nova_Node*)(this), exceptionData), exceptionData)), exceptionData, (nova_datastruct_list_Nova_List_closure32_Nova_func)&spectra_tree_nodes_Nova_Value_Nova_lambda61, this, contextArg61))) != (spectra_tree_nodes_Nova_Import*)nova_null ? (nova_Nova_Object*)(spectra_tree_nodes_Nova_Import_Accessor_Nova_classDeclaration(nova_local_0, exceptionData)) : (nova_Nova_Object*)nova_null) : (nova_Nova_Object*)nova_null);
+	return (spectra_tree_nodes_Nova_ClassDeclaration*)((spectra_tree_nodes_Nova_Value_virtual_Accessorfunc_Nova_type((spectra_tree_nodes_Nova_Value*)(this), exceptionData)) != (spectra_tree_nodes_Nova_Type*)nova_null ? (nova_Nova_Object*)(spectra_tree_nodes_Nova_ClassDeclaration*)((nova_local_0 = (spectra_tree_nodes_Nova_Import*)(nova_datastruct_list_Nova_List_virtual0_Nova_firstWhere((nova_datastruct_list_Nova_List*)(spectra_tree_nodes_Nova_NovaFile_Accessor_Nova_imports(spectra_tree_nodes_Nova_Node_virtual_Accessor_Nova_parentFile((spectra_tree_nodes_Nova_Node*)(this), exceptionData), exceptionData)), exceptionData, (nova_datastruct_list_Nova_List_closure316_Nova_func)&spectra_tree_nodes_Nova_Value_Nova_lambda61, this, contextArg61))) != (spectra_tree_nodes_Nova_Import*)nova_null ? (nova_Nova_Object*)(spectra_tree_nodes_Nova_Import_Accessor_Nova_classDeclaration(nova_local_0, exceptionData)) : (nova_Nova_Object*)nova_null) : (nova_Nova_Object*)nova_null);
 }
 
 

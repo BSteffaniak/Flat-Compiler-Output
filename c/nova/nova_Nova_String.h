@@ -6,11 +6,11 @@ typedef struct nova_Nova_StringFunctionMap nova_Nova_StringFunctionMap;
 
 typedef struct nova_exception_Nova_ExceptionData nova_exception_Nova_ExceptionData;
 
+typedef char (*nova_Nova_String_closure0_Nova_transform)(void*, nova_exception_Nova_ExceptionData*, char, int, void*);
 typedef char (*nova_Nova_String_closure1_Nova_transform)(void*, nova_exception_Nova_ExceptionData*, char, int, void*);
 typedef char (*nova_Nova_String_closure2_Nova_transform)(void*, nova_exception_Nova_ExceptionData*, char, int, void*);
 typedef char (*nova_Nova_String_closure3_Nova_transform)(void*, nova_exception_Nova_ExceptionData*, char, int, void*);
-typedef char (*nova_Nova_String_closure4_Nova_transform)(void*, nova_exception_Nova_ExceptionData*, char, int, void*);
-typedef char (*nova_Nova_StringFunctionMap_closure5_Nova_transform)(void*, nova_exception_Nova_ExceptionData*, char, int, void*);
+typedef char (*nova_Nova_StringFunctionMap_closure392_Nova_transform)(void*, nova_exception_Nova_ExceptionData*, char, int, void*);
 
 #include <Nova.h>
 #include <InterfaceVTable.h>
@@ -109,7 +109,7 @@ nova_Nova_String* nova_Nova_String_Nova_trim(nova_Nova_String* this, nova_except
 nova_Nova_String* nova_Nova_String_Nova_toLowerCase(nova_Nova_String* this, nova_exception_Nova_ExceptionData* exceptionData);
 nova_Nova_String* nova_Nova_String_Nova_toUpperCase(nova_Nova_String* this, nova_exception_Nova_ExceptionData* exceptionData);
 nova_Nova_String* nova_Nova_String_Nova_capitalize(nova_Nova_String* this, nova_exception_Nova_ExceptionData* exceptionData);
-nova_Nova_String* nova_Nova_String_Nova_transform(nova_Nova_String* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String_closure4_Nova_transform nova_Nova_String_Nova_transform, void* nova_Nova_String_ref_Nova_transform, void* transform_context);
+nova_Nova_String* nova_Nova_String_Nova_transform(nova_Nova_String* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String_closure3_Nova_transform nova_Nova_String_Nova_transform, void* nova_Nova_String_ref_Nova_transform, void* transform_context);
 nova_Nova_String* nova_Nova_String_Nova_getStringBetween(nova_Nova_String* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* before, nova_Nova_String* after, int start);
 nova_Nova_String* nova_Nova_String_Nova_surroundWith(nova_Nova_String* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* str, int symmetrical);
 int nova_Nova_String_Nova_compareTo(nova_Nova_String* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* other);
@@ -169,7 +169,7 @@ nova_Nova_String* nova_Nova_StringFunctionMap_functionMap_Nova_trim(nova_Nova_St
 nova_Nova_String* nova_Nova_StringFunctionMap_functionMap_Nova_toLowerCase(nova_Nova_StringFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* reference);
 nova_Nova_String* nova_Nova_StringFunctionMap_functionMap_Nova_toUpperCase(nova_Nova_StringFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* reference);
 nova_Nova_String* nova_Nova_StringFunctionMap_functionMap_Nova_capitalize(nova_Nova_StringFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* reference);
-nova_Nova_String* nova_Nova_StringFunctionMap_functionMap_Nova_transform(nova_Nova_StringFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* reference, nova_Nova_StringFunctionMap_closure5_Nova_transform nova_Nova_StringFunctionMap_Nova_transform, void* nova_Nova_StringFunctionMap_ref_Nova_transform, void* transform_context);
+nova_Nova_String* nova_Nova_StringFunctionMap_functionMap_Nova_transform(nova_Nova_StringFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* reference, nova_Nova_StringFunctionMap_closure392_Nova_transform nova_Nova_StringFunctionMap_Nova_transform, void* nova_Nova_StringFunctionMap_ref_Nova_transform, void* transform_context);
 nova_Nova_String* nova_Nova_StringFunctionMap_functionMap_Nova_getStringBetween(nova_Nova_StringFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* reference, nova_Nova_String* before, nova_Nova_String* after, int start);
 nova_Nova_String* nova_Nova_StringFunctionMap_functionMap_Nova_surroundWith(nova_Nova_StringFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* reference, nova_Nova_String* str, char symmetrical);
 int nova_Nova_StringFunctionMap_functionMap_Nova_compareTo(nova_Nova_StringFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* reference, nova_Nova_String* other);

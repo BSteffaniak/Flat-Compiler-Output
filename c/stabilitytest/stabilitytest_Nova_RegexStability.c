@@ -39,16 +39,16 @@
 
 typedef struct
 {
-} Context1;
+} Context162;
 typedef struct
 {
-} Context2;
+} Context163;
 
 
 
 void stabilitytest_Nova_RegexStability_Nova_match(stabilitytest_Nova_RegexStability* this, nova_exception_Nova_ExceptionData* exceptionData);
-void stabilitytest_Nova_RegexStability_Nova_lambda163(stabilitytest_Nova_RegexStability* this, nova_exception_Nova_ExceptionData* exceptionData, nova_regex_Nova_Match* _1, int _2, nova_datastruct_list_Nova_Array* _3, Context1* context);
-void stabilitytest_Nova_RegexStability_Nova_lambda164(stabilitytest_Nova_RegexStability* this, nova_exception_Nova_ExceptionData* exceptionData, nova_regex_Nova_Match* _1, int _2, nova_datastruct_list_Nova_Array* _3, Context2* context);
+void stabilitytest_Nova_RegexStability_Nova_lambda163(stabilitytest_Nova_RegexStability* this, nova_exception_Nova_ExceptionData* exceptionData, nova_regex_Nova_Match* _1, int _2, nova_datastruct_list_Nova_Array* _3, Context162* context);
+void stabilitytest_Nova_RegexStability_Nova_lambda164(stabilitytest_Nova_RegexStability* this, nova_exception_Nova_ExceptionData* exceptionData, nova_regex_Nova_Match* _1, int _2, nova_datastruct_list_Nova_Array* _3, Context163* context);
 void stabilitytest_Nova_RegexStability_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData)
 {
 	{
@@ -94,28 +94,28 @@ void stabilitytest_Nova_RegexStability_Nova_test(stabilitytest_Nova_RegexStabili
 void stabilitytest_Nova_RegexStability_Nova_match(stabilitytest_Nova_RegexStability* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
 	nova_datastruct_list_Nova_Array* l1_Nova_matches = (nova_datastruct_list_Nova_Array*)nova_null;
-	Context1* contextArg163 = NOVA_MALLOC(sizeof(Context1));
+	Context162* contextArg163 = NOVA_MALLOC(sizeof(Context162));
 	nova_datastruct_list_Nova_Array* l1_Nova_matches2 = (nova_datastruct_list_Nova_Array*)nova_null;
-	Context2* contextArg164 = NOVA_MALLOC(sizeof(Context2));
+	Context163* contextArg164 = NOVA_MALLOC(sizeof(Context163));
 	
 	nova_io_Nova_Console_0_static_Nova_write(0, exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("Checking Regex match... ")));
 	stabilitytest_Nova_StabilityTest_Nova_fail(this->stabilitytest_Nova_StabilityTestCase_Nova_program, exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("Failed to find valid match")), !nova_regex_Nova_Regex_0_static_Nova_containsMatch(0, exceptionData, nova_regex_Nova_Pattern_Nova_construct(0, exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("a[bd]c"))), nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("hello adc goodbye"))));
 	stabilitytest_Nova_StabilityTest_Nova_fail(this->stabilitytest_Nova_StabilityTestCase_Nova_program, exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("Failed to not find match")), nova_regex_Nova_Regex_0_static_Nova_containsMatch(0, exceptionData, nova_regex_Nova_Pattern_Nova_construct(0, exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("a[bd]c"))), nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("no match here..."))));
 	l1_Nova_matches = nova_regex_Nova_Regex_0_static_Nova_getMatches(0, exceptionData, nova_regex_Nova_Pattern_Nova_construct(0, exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("a[bd]c"))), nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("this is abc test adc adc hello")));
 	nova_io_Nova_Console_0_static_Nova_write(0, exceptionData, (nova_Nova_String*)(nova_Nova_String_Nova_plus(nova_primitive_number_Nova_Int_static_Nova_toString(0, exceptionData, (nova_datastruct_list_Nova_Array_Accessorfunc_Nova_count((nova_datastruct_list_Nova_Array*)(l1_Nova_matches), exceptionData))), exceptionData, (nova_Nova_String*)(nova_Nova_String_Nova_plus(nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)(" match")), exceptionData, (nova_Nova_String*)(nova_Nova_String_Nova_plus(((nova_Nova_String*)(nova_datastruct_list_Nova_Array_Accessorfunc_Nova_count((nova_datastruct_list_Nova_Array*)(l1_Nova_matches), exceptionData) != 1 ? nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("es")) : nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("")))), exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)(": ")))))))));
-	nova_datastruct_list_Nova_List_virtual0_Nova_forEach((nova_datastruct_list_Nova_List*)(l1_Nova_matches), exceptionData, (nova_datastruct_list_Nova_List_closure4_Nova_func)&stabilitytest_Nova_RegexStability_Nova_lambda163, this, contextArg163);
+	nova_datastruct_list_Nova_List_virtual0_Nova_forEach((nova_datastruct_list_Nova_List*)(l1_Nova_matches), exceptionData, (nova_datastruct_list_Nova_List_closure288_Nova_func)&stabilitytest_Nova_RegexStability_Nova_lambda163, this, contextArg163);
 	l1_Nova_matches2 = nova_regex_Nova_Regex_0_static_Nova_getMatches(0, exceptionData, nova_regex_Nova_Pattern_Nova_construct(0, exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("\\d+"))), nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("whats my number? 818 414-5326")));
 	nova_io_Nova_Console_0_static_Nova_write(0, exceptionData, (nova_Nova_String*)(nova_Nova_String_Nova_plus(nova_primitive_number_Nova_Int_static_Nova_toString(0, exceptionData, (nova_datastruct_list_Nova_Array_Accessorfunc_Nova_count((nova_datastruct_list_Nova_Array*)(l1_Nova_matches2), exceptionData))), exceptionData, (nova_Nova_String*)(nova_Nova_String_Nova_plus(nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)(" match")), exceptionData, (nova_Nova_String*)(nova_Nova_String_Nova_plus(((nova_Nova_String*)(nova_datastruct_list_Nova_Array_Accessorfunc_Nova_count((nova_datastruct_list_Nova_Array*)(l1_Nova_matches2), exceptionData) != 1 ? nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("es")) : nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("")))), exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)(": ")))))))));
-	nova_datastruct_list_Nova_List_virtual0_Nova_forEach((nova_datastruct_list_Nova_List*)(l1_Nova_matches2), exceptionData, (nova_datastruct_list_Nova_List_closure4_Nova_func)&stabilitytest_Nova_RegexStability_Nova_lambda164, this, contextArg164);
+	nova_datastruct_list_Nova_List_virtual0_Nova_forEach((nova_datastruct_list_Nova_List*)(l1_Nova_matches2), exceptionData, (nova_datastruct_list_Nova_List_closure288_Nova_func)&stabilitytest_Nova_RegexStability_Nova_lambda164, this, contextArg164);
 	nova_io_Nova_Console_1_static_Nova_writeLine(0, exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("OK")));
 }
 
-void stabilitytest_Nova_RegexStability_Nova_lambda163(stabilitytest_Nova_RegexStability* this, nova_exception_Nova_ExceptionData* exceptionData, nova_regex_Nova_Match* _1, int _2, nova_datastruct_list_Nova_Array* _3, Context1* context)
+void stabilitytest_Nova_RegexStability_Nova_lambda163(stabilitytest_Nova_RegexStability* this, nova_exception_Nova_ExceptionData* exceptionData, nova_regex_Nova_Match* _1, int _2, nova_datastruct_list_Nova_Array* _3, Context162* context)
 {
 	nova_io_Nova_Console_0_static_Nova_write(0, exceptionData, (nova_Nova_String*)(nova_Nova_String_Nova_plus(nova_Nova_Object_virtual_Nova_toString((nova_Nova_Object*)((_1)), exceptionData), exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)(", ")))));
 }
 
-void stabilitytest_Nova_RegexStability_Nova_lambda164(stabilitytest_Nova_RegexStability* this, nova_exception_Nova_ExceptionData* exceptionData, nova_regex_Nova_Match* _1, int _2, nova_datastruct_list_Nova_Array* _3, Context2* context)
+void stabilitytest_Nova_RegexStability_Nova_lambda164(stabilitytest_Nova_RegexStability* this, nova_exception_Nova_ExceptionData* exceptionData, nova_regex_Nova_Match* _1, int _2, nova_datastruct_list_Nova_Array* _3, Context163* context)
 {
 	nova_io_Nova_Console_0_static_Nova_write(0, exceptionData, (nova_Nova_String*)(nova_Nova_String_Nova_plus(nova_Nova_Object_virtual_Nova_toString((nova_Nova_Object*)((_1)), exceptionData), exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)(", ")))));
 }

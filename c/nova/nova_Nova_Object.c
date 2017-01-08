@@ -104,9 +104,6 @@ nova_Nova_Object* nova_Nova_Object_virtual_static_Nova_default(nova_Nova_Object*
 
 nova_Nova_String* nova_Nova_Object_virtual_Nova_toString(nova_Nova_Object* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
-	printf("%p\n", this);
-	printf("%p\n", this->vtable);
-	printf("%p\n", this->vtable->nova_Nova_Object_virtual_Nova_toString);
 	return this->vtable->nova_Nova_Object_virtual_Nova_toString((nova_Nova_Object*)(this), exceptionData);
 }
 

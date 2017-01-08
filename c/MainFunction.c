@@ -5965,7 +5965,7 @@ args[i] = nova_Nova_String_1_Nova_construct(0, 0, str);
 nova_datastruct_list_Nova_Array* argsArray = nova_datastruct_list_Nova_Array_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)args, argc);
 TRY
 {
-example_Nova_Lab_static_Nova_main(0, exceptionData, argsArray);
+spectra_Nova_Spectra_static_Nova_main(0, exceptionData, argsArray);
 }
 CATCH (nova_exception_Exception_Extension_VTable_val.classInstance)
 {

@@ -47,11 +47,11 @@
 
 typedef struct
 {
-} Context1;
+} Context2;
 
 
 
-long_long nova_Nova_Substring_Nova_lambda3(nova_Nova_Substring* this, nova_exception_Nova_ExceptionData* exceptionData, long_long v, char c, int _3, nova_datastruct_list_Nova_CharArray* _4, Context1* context);
+long_long nova_Nova_Substring_Nova_lambda3(nova_Nova_Substring* this, nova_exception_Nova_ExceptionData* exceptionData, long_long v, char c, int _3, nova_datastruct_list_Nova_CharArray* _4, Context2* context);
 
 
 void nova_Nova_Substring_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData)
@@ -118,7 +118,7 @@ nova_Nova_String* nova_Nova_Substring_Nova_substring(nova_Nova_Substring* this, 
 	return (nova_Nova_String*)nova_Nova_Substring_Nova_construct(0, exceptionData, this->nova_Nova_Substring_Nova_source, this->nova_Nova_Substring_Nova_start + start, this->nova_Nova_Substring_Nova_start + end);
 }
 
-long_long nova_Nova_Substring_Nova_lambda3(nova_Nova_Substring* this, nova_exception_Nova_ExceptionData* exceptionData, long_long v, char c, int _3, nova_datastruct_list_Nova_CharArray* _4, Context1* context)
+long_long nova_Nova_Substring_Nova_lambda3(nova_Nova_Substring* this, nova_exception_Nova_ExceptionData* exceptionData, long_long v, char c, int _3, nova_datastruct_list_Nova_CharArray* _4, Context2* context)
 {
 	return 31 * v + (int)c;
 }
@@ -131,9 +131,9 @@ int nova_Nova_Substring_Accessor_Nova_end(nova_Nova_Substring* this, nova_except
 
 long_long nova_Nova_Substring_Accessor_Nova_hashCodeLong(nova_Nova_Substring* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
-	Context1* contextArg3 = NOVA_MALLOC(sizeof(Context1));
+	Context2* contextArg3 = NOVA_MALLOC(sizeof(Context2));
 	
-	return nova_datastruct_list_Nova_CharArray_Nova_reduce((nova_datastruct_list_Nova_CharArray*)(nova_datastruct_list_Nova_CharArray_Nova_take((nova_datastruct_list_Nova_CharArray*)(nova_datastruct_list_Nova_CharArray_Nova_skip((nova_datastruct_list_Nova_CharArray*)(this->nova_Nova_String_Nova_chars), exceptionData, this->nova_Nova_Substring_Nova_start)), exceptionData, this->nova_Nova_String_Nova_count)), exceptionData, (nova_datastruct_list_Nova_CharArray_closure8_Nova_func)&nova_Nova_Substring_Nova_lambda3, this, contextArg3, 0);
+	return nova_datastruct_list_Nova_CharArray_Nova_reduce((nova_datastruct_list_Nova_CharArray*)(nova_datastruct_list_Nova_CharArray_Nova_take((nova_datastruct_list_Nova_CharArray*)(nova_datastruct_list_Nova_CharArray_Nova_skip((nova_datastruct_list_Nova_CharArray*)(this->nova_Nova_String_Nova_chars), exceptionData, this->nova_Nova_Substring_Nova_start)), exceptionData, this->nova_Nova_String_Nova_count)), exceptionData, (nova_datastruct_list_Nova_CharArray_closure136_Nova_func)&nova_Nova_Substring_Nova_lambda3, this, contextArg3, 0);
 }
 
 

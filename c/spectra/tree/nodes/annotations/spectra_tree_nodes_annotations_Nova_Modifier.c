@@ -75,15 +75,15 @@
 
 typedef struct
 {
-} Context1;
+} Context129;
 typedef struct
 {
-} Context2;
+} Context130;
 
 
 
-nova_Nova_String* spectra_tree_nodes_annotations_Nova_Modifier_Nova_lambda130(spectra_tree_nodes_annotations_Nova_Modifier* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* _1, int _2, nova_datastruct_list_Nova_Array* _3, Context1* context);
-char spectra_tree_nodes_annotations_Nova_Modifier_static_Nova_lambda131(spectra_tree_nodes_annotations_Nova_Modifier* this, nova_exception_Nova_ExceptionData* exceptionData, nova_meta_Nova_Class* _1, int _2, nova_datastruct_list_Nova_Array* _3, Context2* context);
+nova_Nova_String* spectra_tree_nodes_annotations_Nova_Modifier_Nova_lambda130(spectra_tree_nodes_annotations_Nova_Modifier* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* _1, int _2, nova_datastruct_list_Nova_Array* _3, Context129* context);
+char spectra_tree_nodes_annotations_Nova_Modifier_static_Nova_lambda131(spectra_tree_nodes_annotations_Nova_Modifier* this, nova_exception_Nova_ExceptionData* exceptionData, nova_meta_Nova_Class* _1, int _2, nova_datastruct_list_Nova_Array* _3, Context130* context);
 
 nova_datastruct_Nova_ImmutableHashMap* spectra_tree_nodes_annotations_Nova_Modifier_Nova_MODIFIERS;
 void spectra_tree_nodes_annotations_Nova_Modifier_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData)
@@ -92,12 +92,12 @@ void spectra_tree_nodes_annotations_Nova_Modifier_Nova_init_static(nova_exceptio
 	}
 	{
 		nova_datastruct_Nova_HashMap* l1_Nova_modifiers = (nova_datastruct_Nova_HashMap*)nova_null;
-		Context2* contextArg131 = NOVA_MALLOC(sizeof(Context2));
+		Context130* contextArg131 = NOVA_MALLOC(sizeof(Context130));
 		nova_datastruct_list_Nova_ImmutableArrayIterator* nova_local_0 = (nova_datastruct_list_Nova_ImmutableArrayIterator*)nova_null;
 		nova_Nova_Object* l2_Nova_class = (nova_Nova_Object*)nova_null;
 		
 		l1_Nova_modifiers = nova_datastruct_Nova_HashMap_0_Nova_construct(0, exceptionData, (intptr_t)nova_null, (intptr_t)nova_null);
-		nova_local_0 = (nova_datastruct_list_Nova_ImmutableArrayIterator*)(nova_datastruct_list_Nova_ImmutableArray_Accessor_Nova_iterator((nova_datastruct_list_Nova_ImmutableArray*)((nova_datastruct_list_Nova_ImmutableArray_Nova_filter((nova_datastruct_list_Nova_ImmutableArray*)(nova_meta_Nova_Class_Nova_ALL), exceptionData, (nova_datastruct_list_Nova_ImmutableArray_closure12_Nova_filterFunc)&spectra_tree_nodes_annotations_Nova_Modifier_static_Nova_lambda131, nova_null, contextArg131))), exceptionData));
+		nova_local_0 = (nova_datastruct_list_Nova_ImmutableArrayIterator*)(nova_datastruct_list_Nova_ImmutableArray_Accessor_Nova_iterator((nova_datastruct_list_Nova_ImmutableArray*)((nova_datastruct_list_Nova_ImmutableArray_Nova_filter((nova_datastruct_list_Nova_ImmutableArray*)(nova_meta_Nova_Class_Nova_ALL), exceptionData, (nova_datastruct_list_Nova_ImmutableArray_closure200_Nova_filterFunc)&spectra_tree_nodes_annotations_Nova_Modifier_static_Nova_lambda131, nova_null, contextArg131))), exceptionData));
 		while (nova_datastruct_list_Nova_ImmutableArrayIterator_Accessor_Nova_hasNext(nova_local_0, exceptionData))
 		{
 			nova_Nova_String* l2_Nova_alias = (nova_Nova_String*)nova_null;
@@ -119,9 +119,9 @@ char spectra_tree_nodes_annotations_Nova_Modifier_Nova_apply(spectra_tree_nodes_
 {
 	if (!nova_datastruct_list_Nova_List_virtual1_Nova_contains((nova_datastruct_list_Nova_List*)(spectra_tree_nodes_annotations_Nova_Modifier_virtual_Accessor_static_Nova_aliases((spectra_tree_nodes_annotations_Nova_Modifier*)(this), exceptionData)), exceptionData, (nova_operators_Nova_EqualsOperator*)(alias)))
 	{
-		Context1* contextArg130 = NOVA_MALLOC(sizeof(Context1));
+		Context129* contextArg130 = NOVA_MALLOC(sizeof(Context129));
 		
-		THROW(spectra_Nova_InvalidParseException_Nova_construct(0, exceptionData, (nova_Nova_String*)(nova_Nova_String_Nova_plus((nova_Nova_String*)(nova_Nova_String_Nova_plus(nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("Invalid modifier '")), exceptionData, (nova_Nova_String*)(nova_Nova_String_Nova_plus((alias), exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("' given when expected ")))))), exceptionData, nova_datastruct_list_Nova_List_Nova_toEnglish((nova_datastruct_list_Nova_List*)(nova_datastruct_list_Nova_ImmutableArray_Nova_map((nova_datastruct_list_Nova_ImmutableArray*)(spectra_tree_nodes_annotations_Nova_Modifier_virtual_Accessor_static_Nova_aliases((spectra_tree_nodes_annotations_Nova_Modifier*)(this), exceptionData)), exceptionData, (nova_datastruct_list_Nova_ImmutableArray_closure4_Nova_mapFunc)&spectra_tree_nodes_annotations_Nova_Modifier_Nova_lambda130, this, contextArg130)), exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("or")), (intptr_t)nova_null))), (spectra_tree_nodes_Nova_Node*)(this)), 0);
+		THROW(spectra_Nova_InvalidParseException_Nova_construct(0, exceptionData, (nova_Nova_String*)(nova_Nova_String_Nova_plus((nova_Nova_String*)(nova_Nova_String_Nova_plus(nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("Invalid modifier '")), exceptionData, (nova_Nova_String*)(nova_Nova_String_Nova_plus((alias), exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("' given when expected ")))))), exceptionData, nova_datastruct_list_Nova_List_Nova_toEnglish((nova_datastruct_list_Nova_List*)(nova_datastruct_list_Nova_ImmutableArray_Nova_map((nova_datastruct_list_Nova_ImmutableArray*)(spectra_tree_nodes_annotations_Nova_Modifier_virtual_Accessor_static_Nova_aliases((spectra_tree_nodes_annotations_Nova_Modifier*)(this), exceptionData)), exceptionData, (nova_datastruct_list_Nova_ImmutableArray_closure192_Nova_mapFunc)&spectra_tree_nodes_annotations_Nova_Modifier_Nova_lambda130, this, contextArg130)), exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("or")), (intptr_t)nova_null))), (spectra_tree_nodes_Nova_Node*)(this)), 0);
 	}
 	if (to != ((spectra_tree_nodes_Nova_Node*)this)->spectra_tree_nodes_Nova_Node_Nova_parent)
 	{
@@ -151,12 +151,12 @@ nova_Nova_String* spectra_tree_nodes_annotations_Nova_Modifier_Nova_writeNova(sp
 	return (nova_Nova_String*)((nova_local_0 = (nova_Nova_String*)(spectra_tree_nodes_annotations_Nova_Modifier_virtual_Accessor_Nova_alias((spectra_tree_nodes_annotations_Nova_Modifier*)(this), exceptionData))) != (nova_Nova_String*)nova_null ? nova_local_0 : spectra_tree_nodes_annotations_Nova_Annotation_Nova_writeNova(((spectra_tree_nodes_annotations_Nova_Annotation*)this), exceptionData));
 }
 
-nova_Nova_String* spectra_tree_nodes_annotations_Nova_Modifier_Nova_lambda130(spectra_tree_nodes_annotations_Nova_Modifier* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* _1, int _2, nova_datastruct_list_Nova_Array* _3, Context1* context)
+nova_Nova_String* spectra_tree_nodes_annotations_Nova_Modifier_Nova_lambda130(spectra_tree_nodes_annotations_Nova_Modifier* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* _1, int _2, nova_datastruct_list_Nova_Array* _3, Context129* context)
 {
 	return (nova_Nova_String*)nova_Nova_String_Nova_plus(nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("'")), exceptionData, (nova_Nova_String*)(nova_Nova_String_Nova_plus((_1), exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("'")))));
 }
 
-char spectra_tree_nodes_annotations_Nova_Modifier_static_Nova_lambda131(spectra_tree_nodes_annotations_Nova_Modifier* this, nova_exception_Nova_ExceptionData* exceptionData, nova_meta_Nova_Class* _1, int _2, nova_datastruct_list_Nova_Array* _3, Context2* context)
+char spectra_tree_nodes_annotations_Nova_Modifier_static_Nova_lambda131(spectra_tree_nodes_annotations_Nova_Modifier* this, nova_exception_Nova_ExceptionData* exceptionData, nova_meta_Nova_Class* _1, int _2, nova_datastruct_list_Nova_Array* _3, Context130* context)
 {
 	return nova_meta_Nova_Class_Nova_isOfType(_1, exceptionData, (nova_meta_Nova_Class*)(spectra_tree_nodes_annotations_Modifier_Extension_VTable_val.classInstance));
 }

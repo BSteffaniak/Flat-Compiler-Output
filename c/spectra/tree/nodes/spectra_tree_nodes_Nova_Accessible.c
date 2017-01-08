@@ -81,7 +81,7 @@ typedef struct
 	/* var
 	Accessible current */ spectra_tree_nodes_Nova_Accessible** spectra_tree_nodes_Nova_Accessible_Nova_current;
 	/* Bool require = true */ int* spectra_tree_nodes_Nova_Accessible_Nova_require;
-} Context1;
+} Context115;
 
 
 
@@ -89,7 +89,7 @@ nova_datastruct_list_Nova_Array* generated2(spectra_tree_nodes_Nova_Accessible* 
 nova_datastruct_list_Nova_Array* generated3(spectra_tree_nodes_Nova_Accessible* this, nova_exception_Nova_ExceptionData* exceptionData, nova_meta_Nova_Class* value0);
 nova_datastruct_list_Nova_Array* generated4(spectra_tree_nodes_Nova_Accessible* this, nova_exception_Nova_ExceptionData* exceptionData, nova_meta_Nova_Class* value0);
 nova_datastruct_list_Nova_Array* generated5(spectra_tree_nodes_Nova_Accessible* this, nova_exception_Nova_ExceptionData* exceptionData, nova_meta_Nova_Class* value0);
-char spectra_tree_nodes_Nova_Accessible_static_Nova_lambda116(spectra_tree_nodes_Nova_Accessible* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* _1, int _2, nova_datastruct_list_Nova_List* _3, Context1* context);
+char spectra_tree_nodes_Nova_Accessible_static_Nova_lambda116(spectra_tree_nodes_Nova_Accessible* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* _1, int _2, nova_datastruct_list_Nova_List* _3, Context115* context);
 
 
 
@@ -268,12 +268,12 @@ spectra_tree_nodes_Nova_Node* spectra_tree_nodes_Nova_Accessible_static_Nova_par
 		if ((l3_Nova_root = spectra_tree_nodes_Nova_Accessible_0_static_Nova_parse(0, exceptionData, (nova_Nova_String*)(nova_datastruct_list_Nova_List_virtual_Accessor_Nova_first((nova_datastruct_list_Nova_List*)(l2_Nova_fragments), exceptionData)), parent, require)) != (spectra_tree_nodes_Nova_Accessible*)nova_null)
 		{
 			spectra_tree_nodes_Nova_Accessible* l3_Nova_current = (spectra_tree_nodes_Nova_Accessible*)nova_null;
-			Context1* contextArg116 = NOVA_MALLOC(sizeof(Context1));
+			Context115* contextArg116 = NOVA_MALLOC(sizeof(Context115));
 			contextArg116->spectra_tree_nodes_Nova_Accessible_Nova_current = &l3_Nova_current;
 			contextArg116->spectra_tree_nodes_Nova_Accessible_Nova_require = &require;
 			
 			l3_Nova_current = l3_Nova_root;
-			if (nova_datastruct_list_Nova_List_virtual0_Nova_all((nova_datastruct_list_Nova_List*)(nova_datastruct_list_Nova_List_virtual_Nova_skip((nova_datastruct_list_Nova_List*)(l2_Nova_fragments), exceptionData, 1)), exceptionData, (nova_datastruct_list_Nova_List_closure16_Nova_allFunc)&spectra_tree_nodes_Nova_Accessible_static_Nova_lambda116, nova_null, contextArg116, (intptr_t)nova_null))
+			if (nova_datastruct_list_Nova_List_virtual0_Nova_all((nova_datastruct_list_Nova_List*)(nova_datastruct_list_Nova_List_virtual_Nova_skip((nova_datastruct_list_Nova_List*)(l2_Nova_fragments), exceptionData, 1)), exceptionData, (nova_datastruct_list_Nova_List_closure300_Nova_allFunc)&spectra_tree_nodes_Nova_Accessible_static_Nova_lambda116, nova_null, contextArg116, (intptr_t)nova_null))
 			{
 				return (spectra_tree_nodes_Nova_Node*)l3_Nova_root;
 			}
@@ -330,7 +330,7 @@ nova_datastruct_list_Nova_Array* generated5(spectra_tree_nodes_Nova_Accessible* 
 	return nova_datastruct_list_Nova_Array_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)(l1_Nova_temp), 1);
 }
 
-char spectra_tree_nodes_Nova_Accessible_static_Nova_lambda116(spectra_tree_nodes_Nova_Accessible* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* _1, int _2, nova_datastruct_list_Nova_List* _3, Context1* context)
+char spectra_tree_nodes_Nova_Accessible_static_Nova_lambda116(spectra_tree_nodes_Nova_Accessible* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* _1, int _2, nova_datastruct_list_Nova_List* _3, Context115* context)
 {
 	spectra_tree_nodes_Nova_Accessible* l5_Nova_accessed = (spectra_tree_nodes_Nova_Accessible*)nova_null;
 	
