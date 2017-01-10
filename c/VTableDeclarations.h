@@ -352,6 +352,12 @@ extern nova_io_Console_Extension_VTable nova_io_Console_Extension_VTable_val;
 typedef struct nova_io_Console_ConsoleFunctionMap_Extension_VTable nova_io_Console_ConsoleFunctionMap_Extension_VTable;
 extern nova_io_Console_ConsoleFunctionMap_Extension_VTable nova_io_Console_ConsoleFunctionMap_Extension_VTable_val;
 
+typedef struct nova_io_Curl_Extension_VTable nova_io_Curl_Extension_VTable;
+extern nova_io_Curl_Extension_VTable nova_io_Curl_Extension_VTable_val;
+
+typedef struct nova_io_Curl_CurlFunctionMap_Extension_VTable nova_io_Curl_CurlFunctionMap_Extension_VTable;
+extern nova_io_Curl_CurlFunctionMap_Extension_VTable nova_io_Curl_CurlFunctionMap_Extension_VTable_val;
+
 typedef struct nova_io_File_Extension_VTable nova_io_File_Extension_VTable;
 extern nova_io_File_Extension_VTable nova_io_File_Extension_VTable_val;
 
@@ -2621,7 +2627,9 @@ struct nova_datastruct_list_ImmutableArray_Extension_VTable
 {
 nova_meta_Nova_Class* classInstance;
 nova_Interface_VTable itable;
+nova_Nova_Object* (*nova_Nova_Object_virtual_static_Nova_default)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_datastruct_list_Nova_ImmutableArray*, nova_exception_Nova_ExceptionData*);
+long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 };
 
 
@@ -3237,6 +3245,26 @@ long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Objec
 };
 
 
+struct nova_io_Curl_Extension_VTable
+{
+nova_meta_Nova_Class* classInstance;
+nova_Interface_VTable itable;
+nova_Nova_Object* (*nova_Nova_Object_virtual_static_Nova_default)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
+nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
+long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
+};
+
+
+struct nova_io_Curl_CurlFunctionMap_Extension_VTable
+{
+nova_meta_Nova_Class* classInstance;
+nova_Interface_VTable itable;
+nova_Nova_Object* (*nova_Nova_Object_virtual_static_Nova_default)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
+nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
+long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
+};
+
+
 struct nova_io_File_Extension_VTable
 {
 nova_meta_Nova_Class* classInstance;
@@ -3282,6 +3310,9 @@ struct nova_io_FileReader_Extension_VTable
 {
 nova_meta_Nova_Class* classInstance;
 nova_Interface_VTable itable;
+nova_Nova_Object* (*nova_Nova_Object_virtual_static_Nova_default)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
+nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
+long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 };
 
 
@@ -4179,6 +4210,9 @@ struct nova_network_NetworkInputStream_Extension_VTable
 {
 nova_meta_Nova_Class* classInstance;
 nova_Interface_VTable itable;
+nova_Nova_Object* (*nova_Nova_Object_virtual_static_Nova_default)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
+nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
+long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 };
 
 

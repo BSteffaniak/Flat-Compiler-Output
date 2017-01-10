@@ -632,7 +632,6 @@ nova_env novaEnv = {
 0,
 0,
 0,
-0,
 &nova_datastruct_list_Nova_List_Nova_filterNull,
 &nova_datastruct_list_Nova_List_Nova_filterEmpty,
 0,
@@ -652,7 +651,6 @@ nova_env novaEnv = {
 {
 0,
 0,
-&nova_datastruct_list_Nova_ListFunctionMap_functionMap1_Nova_contains,
 0,
 0,
 0,
@@ -831,6 +829,14 @@ nova_env novaEnv = {
 },
 
 {
+&nova_io_Nova_Curl_Nova_construct,
+},
+{
+&nova_io_Nova_CurlFunctionMap_functionMapCurlFunctionMap_Nova_construct,
+&nova_io_Nova_CurlFunctionMap_Nova_construct,
+},
+
+{
 &nova_io_Nova_File_Nova_getChildFiles,
 &nova_io_Nova_File_Nova_directoryContents,
 &nova_io_Nova_File_Nova_listFiles,
@@ -862,11 +868,11 @@ nova_env novaEnv = {
 },
 {
 &nova_io_Nova_FileReaderFunctionMap_functionMapFileReaderFunctionMap_Nova_construct,
-&nova_io_Nova_FileReaderFunctionMap_functionMap_Nova_readString,
 &nova_io_Nova_FileReaderFunctionMap_functionMap_Nova_readBytes,
 &nova_io_Nova_FileReaderFunctionMap_functionMap_Nova_open,
 &nova_io_Nova_FileReaderFunctionMap_functionMap_Nova_readAllContents,
 &nova_io_Nova_FileReaderFunctionMap_functionMap_Nova_readLine,
+&nova_io_Nova_FileReaderFunctionMap_functionMap_Nova_readString,
 &nova_io_Nova_FileReaderFunctionMap_functionMap_Nova_close,
 &nova_io_Nova_FileReaderFunctionMap_Nova_construct,
 },
