@@ -806,6 +806,7 @@ nova_env novaEnv = {
 &nova_datastruct_list_Nova_List_Nova_filterEmpty,
 0,
 &nova_datastruct_list_Nova_List_Nova_takeLast,
+&nova_datastruct_list_Nova_List_Nova_skipLast,
 0,
 &nova_datastruct_list_Nova_List_Nova_firstOr,
 &nova_datastruct_list_Nova_List_Nova_firstOrThrow,
@@ -830,6 +831,7 @@ nova_env novaEnv = {
 &nova_datastruct_list_Nova_ListFunctionMap_functionMap_Nova_filterEmpty,
 0,
 &nova_datastruct_list_Nova_ListFunctionMap_functionMap_Nova_takeLast,
+&nova_datastruct_list_Nova_ListFunctionMap_functionMap_Nova_skipLast,
 0,
 &nova_datastruct_list_Nova_ListFunctionMap_functionMap_Nova_firstOr,
 &nova_datastruct_list_Nova_ListFunctionMap_functionMap_Nova_firstOrThrow,
@@ -3903,13 +3905,9 @@ nova_env novaEnv = {
 },
 
 {
-&spectra_tree_nodes_variables_Nova_InstanceDeclaration_Nova_writeVisibility,
-&spectra_tree_nodes_variables_Nova_InstanceDeclaration_Nova_writeStatic,
 &spectra_tree_nodes_variables_Nova_InstanceDeclaration_Nova_construct,
 },
 {
-&spectra_tree_nodes_variables_Nova_InstanceDeclarationFunctionMap_functionMap_Nova_writeVisibility,
-&spectra_tree_nodes_variables_Nova_InstanceDeclarationFunctionMap_functionMap_Nova_writeStatic,
 &spectra_tree_nodes_variables_Nova_InstanceDeclarationFunctionMap_Nova_construct,
 },
 {
@@ -3950,7 +3948,6 @@ nova_env novaEnv = {
 &spectra_tree_nodes_variables_Nova_VariableDeclaration_0_Nova_parseModifiers,
 &spectra_tree_nodes_variables_Nova_VariableDeclaration_1_Nova_parseModifiers,
 &spectra_tree_nodes_variables_Nova_VariableDeclaration_Nova_getInvalidModifiers,
-0,
 &spectra_tree_nodes_variables_Nova_VariableDeclaration_Nova_construct,
 },
 {
@@ -3958,7 +3955,6 @@ nova_env novaEnv = {
 &spectra_tree_nodes_variables_Nova_VariableDeclarationFunctionMap_functionMap0_Nova_parseModifiers,
 &spectra_tree_nodes_variables_Nova_VariableDeclarationFunctionMap_functionMap1_Nova_parseModifiers,
 &spectra_tree_nodes_variables_Nova_VariableDeclarationFunctionMap_functionMap_Nova_getInvalidModifiers,
-0,
 &spectra_tree_nodes_variables_Nova_VariableDeclarationFunctionMap_Nova_construct,
 },
 {
