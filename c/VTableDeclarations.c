@@ -132,7 +132,6 @@ nova_Object_Extension_VTable nova_Object_Extension_VTable_val =
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -273,7 +272,6 @@ nova_String_Extension_VTable nova_String_Extension_VTable_val =
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_String_Nova_toString,
@@ -287,7 +285,6 @@ nova_String_StringFunctionMap_Extension_VTable nova_String_StringFunctionMap_Ext
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -560,7 +557,6 @@ nova_String_StringPropertyMap_Extension_VTable nova_String_StringPropertyMap_Ext
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -702,7 +698,6 @@ nova_Substring_Extension_VTable nova_Substring_Extension_VTable_val =
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_String_Nova_toString,
@@ -716,7 +711,6 @@ nova_Substring_SubstringFunctionMap_Extension_VTable nova_Substring_SubstringFun
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -989,7 +983,6 @@ nova_Substring_SubstringPropertyMap_Extension_VTable nova_Substring_SubstringPro
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -1002,7 +995,6 @@ nova_System_Extension_VTable nova_System_Extension_VTable_val =
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -1272,7 +1264,6 @@ nova_System_SystemFunctionMap_Extension_VTable nova_System_SystemFunctionMap_Ext
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -1284,7 +1275,6 @@ nova_System_SystemPropertyMap_Extension_VTable nova_System_SystemPropertyMap_Ext
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -1554,7 +1544,6 @@ nova_ar_ImageTracker_Extension_VTable nova_ar_ImageTracker_Extension_VTable_val 
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -1566,7 +1555,6 @@ nova_ar_ImageTracker_ImageTrackerFunctionMap_Extension_VTable nova_ar_ImageTrack
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -1836,7 +1824,6 @@ nova_ar_ImageTracker_ImageTrackerPropertyMap_Extension_VTable nova_ar_ImageTrack
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -1848,7 +1835,6 @@ nova_ar_TrackPoint_Extension_VTable nova_ar_TrackPoint_Extension_VTable_val =
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -2118,7 +2104,6 @@ nova_ar_TrackPoint_TrackPointFunctionMap_Extension_VTable nova_ar_TrackPoint_Tra
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -2130,7 +2115,6 @@ nova_ar_TrackPoint_TrackPointPropertyMap_Extension_VTable nova_ar_TrackPoint_Tra
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -2400,7 +2384,6 @@ nova_database_DBConnector_Extension_VTable nova_database_DBConnector_Extension_V
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -2412,7 +2395,6 @@ nova_database_DBConnector_DBConnectorFunctionMap_Extension_VTable nova_database_
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -2682,7 +2664,6 @@ nova_database_DBConnector_DBConnectorPropertyMap_Extension_VTable nova_database_
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -2694,7 +2675,6 @@ nova_database_ResultSet_Extension_VTable nova_database_ResultSet_Extension_VTabl
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -2964,7 +2944,6 @@ nova_database_ResultSet_ResultSetFunctionMap_Extension_VTable nova_database_Resu
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -2976,7 +2955,6 @@ nova_database_ResultSet_ResultSetPropertyMap_Extension_VTable nova_database_Resu
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -3246,7 +3224,6 @@ nova_datastruct_BinaryNode_Extension_VTable nova_datastruct_BinaryNode_Extension
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_datastruct_Nova_Node_Nova_toString,
@@ -3387,12 +3364,10 @@ nova_datastruct_BinaryNode_BinaryNodeFunctionMap_Extension_VTable nova_datastruc
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
 nova_Nova_Object_Accessor_Nova_hashCodeLong,
-nova_datastruct_Nova_NodeFunctionMap_functionMapNodeFunctionMap_Nova_construct,
 };
 
 
@@ -3400,7 +3375,6 @@ nova_datastruct_BinaryNode_BinaryNodePropertyMap_Extension_VTable nova_datastruc
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -3670,7 +3644,6 @@ nova_datastruct_BinaryTree_Extension_VTable nova_datastruct_BinaryTree_Extension
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -3811,12 +3784,10 @@ nova_datastruct_BinaryTree_BinaryTreeFunctionMap_Extension_VTable nova_datastruc
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
 nova_Nova_Object_Accessor_Nova_hashCodeLong,
-nova_datastruct_Nova_TreeFunctionMap_functionMapTreeFunctionMap_Nova_construct,
 };
 
 
@@ -3824,7 +3795,6 @@ nova_datastruct_BinaryTree_BinaryTreePropertyMap_Extension_VTable nova_datastruc
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -4095,7 +4065,6 @@ nova_datastruct_Bounds_Extension_VTable nova_datastruct_Bounds_Extension_VTable_
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_datastruct_Nova_Bounds_Nova_toString,
@@ -4107,7 +4076,6 @@ nova_datastruct_Bounds_BoundsFunctionMap_Extension_VTable nova_datastruct_Bounds
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -4377,7 +4345,6 @@ nova_datastruct_Bounds_BoundsPropertyMap_Extension_VTable nova_datastruct_Bounds
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -4518,7 +4485,6 @@ nova_datastruct_Comparable_Extension_VTable nova_datastruct_Comparable_Extension
 0,
 0,
 0,
-0,
 },
 };
 
@@ -4527,7 +4493,6 @@ nova_datastruct_Comparable_ComparableFunctionMap_Extension_VTable nova_datastruc
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -4797,7 +4762,6 @@ nova_datastruct_Comparable_ComparablePropertyMap_Extension_VTable nova_datastruc
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -4837,7 +4801,6 @@ nova_datastruct_HashMap_Extension_VTable nova_datastruct_HashMap_Extension_VTabl
 (nova_Nova_Object*(*)(nova_datastruct_list_Nova_List*, nova_exception_Nova_ExceptionData*, nova_Nova_Object*))nova_datastruct_Nova_HashMap_Mutatorfunc_Nova_first,
 (nova_Nova_Object*(*)(nova_datastruct_list_Nova_List*, nova_exception_Nova_ExceptionData*))nova_datastruct_Nova_HashMap_Accessorfunc_Nova_last,
 (nova_Nova_Object*(*)(nova_datastruct_list_Nova_List*, nova_exception_Nova_ExceptionData*, nova_Nova_Object*))nova_datastruct_Nova_HashMap_Mutatorfunc_Nova_last,
-0,
 0,
 0,
 0,
@@ -4984,7 +4947,7 @@ nova_datastruct_HashMap_HashMapFunctionMap_Extension_VTable nova_datastruct_Hash
 (nova_datastruct_list_Nova_List*(*)(nova_datastruct_list_Nova_ListFunctionMap*, nova_exception_Nova_ExceptionData*, nova_datastruct_list_Nova_List*, nova_datastruct_list_Nova_ListFunctionMap_closure463_Nova_func nova_datastruct_list_Nova_ListFunctionMap_Nova_func, void* nova_datastruct_list_Nova_ListFunctionMap_ref_Nova_func, void* func_context))nova_datastruct_Nova_HashMapFunctionMap_functionMap_Nova_forEach,
 (nova_datastruct_list_Nova_List*(*)(nova_datastruct_list_Nova_ListFunctionMap*, nova_exception_Nova_ExceptionData*, nova_datastruct_list_Nova_List*, nova_datastruct_list_Nova_ListFunctionMap_closure464_Nova_mapFunc nova_datastruct_list_Nova_ListFunctionMap_Nova_mapFunc, void* nova_datastruct_list_Nova_ListFunctionMap_ref_Nova_mapFunc, void* mapFunc_context))nova_datastruct_Nova_HashMapFunctionMap_functionMap_Nova_map,
 (char(*)(nova_datastruct_list_Nova_ListFunctionMap*, nova_exception_Nova_ExceptionData*, nova_datastruct_list_Nova_List*, nova_datastruct_list_Nova_ListFunctionMap_closure465_Nova_anyFunc nova_datastruct_list_Nova_ListFunctionMap_Nova_anyFunc, void* nova_datastruct_list_Nova_ListFunctionMap_ref_Nova_anyFunc, void* anyFunc_context))nova_datastruct_Nova_HashMapFunctionMap_functionMap_Nova_any,
-(char(*)(nova_datastruct_list_Nova_ListFunctionMap*, nova_exception_Nova_ExceptionData*, nova_datastruct_list_Nova_List*, nova_datastruct_list_Nova_ListFunctionMap_closure466_Nova_allFunc nova_datastruct_list_Nova_ListFunctionMap_Nova_allFunc, void* nova_datastruct_list_Nova_ListFunctionMap_ref_Nova_allFunc, void* allFunc_context, char))nova_datastruct_list_Nova_ListFunctionMap_functionMap0_Nova_all,
+(char(*)(nova_datastruct_list_Nova_ListFunctionMap*, nova_exception_Nova_ExceptionData*, nova_datastruct_list_Nova_List*, nova_datastruct_list_Nova_ListFunctionMap_closure466_Nova_allFunc nova_datastruct_list_Nova_ListFunctionMap_Nova_allFunc, void* nova_datastruct_list_Nova_ListFunctionMap_ref_Nova_allFunc, void* allFunc_context, char))nova_datastruct_Nova_HashMapFunctionMap_functionMap_Nova_all,
 (nova_datastruct_list_Nova_List*(*)(nova_datastruct_list_Nova_ListFunctionMap*, nova_exception_Nova_ExceptionData*, nova_datastruct_list_Nova_List*, nova_datastruct_list_Nova_ListFunctionMap_closure467_Nova_filterFunc nova_datastruct_list_Nova_ListFunctionMap_Nova_filterFunc, void* nova_datastruct_list_Nova_ListFunctionMap_ref_Nova_filterFunc, void* filterFunc_context))nova_datastruct_Nova_HashMapFunctionMap_functionMap_Nova_filter,
 (nova_datastruct_list_Nova_List*(*)(nova_datastruct_list_Nova_ListFunctionMap*, nova_exception_Nova_ExceptionData*, nova_datastruct_list_Nova_List*, int))nova_datastruct_Nova_HashMapFunctionMap_functionMap_Nova_take,
 (nova_datastruct_list_Nova_List*(*)(nova_datastruct_list_Nova_ListFunctionMap*, nova_exception_Nova_ExceptionData*, nova_datastruct_list_Nova_List*, int))nova_datastruct_Nova_HashMapFunctionMap_functionMap_Nova_skip,
@@ -5080,12 +5043,10 @@ nova_datastruct_HashMap_HashMapFunctionMap_Extension_VTable nova_datastruct_Hash
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
 nova_Nova_Object_Accessor_Nova_hashCodeLong,
-nova_datastruct_Nova_HashMapFunctionMap_functionMapHashMapFunctionMap0_Nova_construct,
 nova_datastruct_Nova_HashMapFunctionMap_functionMap_Nova_add,
 };
 
@@ -5136,7 +5097,6 @@ nova_datastruct_HashMap_HashMapPropertyMap_Extension_VTable nova_datastruct_Hash
 (int(*)(nova_datastruct_list_Nova_ListPropertyMap*, nova_exception_Nova_ExceptionData*, nova_datastruct_list_Nova_List*))nova_datastruct_Nova_HashMapPropertyMap_functionMap_Nova_count,
 (nova_Nova_Object*(*)(nova_datastruct_list_Nova_ListPropertyMap*, nova_exception_Nova_ExceptionData*, nova_datastruct_list_Nova_List*))nova_datastruct_Nova_HashMapPropertyMap_functionMap_Nova_first,
 (nova_Nova_Object*(*)(nova_datastruct_list_Nova_ListPropertyMap*, nova_exception_Nova_ExceptionData*, nova_datastruct_list_Nova_List*))nova_datastruct_Nova_HashMapPropertyMap_functionMap_Nova_last,
-0,
 0,
 0,
 0,
@@ -5364,7 +5324,6 @@ nova_datastruct_HashSet_Extension_VTable nova_datastruct_HashSet_Extension_VTabl
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_datastruct_Nova_HashSet_Nova_toString,
@@ -5409,13 +5368,12 @@ nova_datastruct_HashSet_HashSetFunctionMap_Extension_VTable nova_datastruct_Hash
 (nova_datastruct_list_Nova_List*(*)(nova_datastruct_list_Nova_ListFunctionMap*, nova_exception_Nova_ExceptionData*, nova_datastruct_list_Nova_List*, nova_datastruct_list_Nova_ListFunctionMap_closure463_Nova_func nova_datastruct_list_Nova_ListFunctionMap_Nova_func, void* nova_datastruct_list_Nova_ListFunctionMap_ref_Nova_func, void* func_context))nova_datastruct_Nova_HashSetFunctionMap_functionMap0_Nova_forEach,
 (nova_datastruct_list_Nova_List*(*)(nova_datastruct_list_Nova_ListFunctionMap*, nova_exception_Nova_ExceptionData*, nova_datastruct_list_Nova_List*, nova_datastruct_list_Nova_ListFunctionMap_closure464_Nova_mapFunc nova_datastruct_list_Nova_ListFunctionMap_Nova_mapFunc, void* nova_datastruct_list_Nova_ListFunctionMap_ref_Nova_mapFunc, void* mapFunc_context))nova_datastruct_Nova_HashSetFunctionMap_functionMap0_Nova_map,
 (char(*)(nova_datastruct_list_Nova_ListFunctionMap*, nova_exception_Nova_ExceptionData*, nova_datastruct_list_Nova_List*, nova_datastruct_list_Nova_ListFunctionMap_closure465_Nova_anyFunc nova_datastruct_list_Nova_ListFunctionMap_Nova_anyFunc, void* nova_datastruct_list_Nova_ListFunctionMap_ref_Nova_anyFunc, void* anyFunc_context))nova_datastruct_Nova_HashSetFunctionMap_functionMap0_Nova_any,
-(char(*)(nova_datastruct_list_Nova_ListFunctionMap*, nova_exception_Nova_ExceptionData*, nova_datastruct_list_Nova_List*, nova_datastruct_list_Nova_ListFunctionMap_closure466_Nova_allFunc nova_datastruct_list_Nova_ListFunctionMap_Nova_allFunc, void* nova_datastruct_list_Nova_ListFunctionMap_ref_Nova_allFunc, void* allFunc_context, char))nova_datastruct_list_Nova_ListFunctionMap_functionMap0_Nova_all,
+(char(*)(nova_datastruct_list_Nova_ListFunctionMap*, nova_exception_Nova_ExceptionData*, nova_datastruct_list_Nova_List*, nova_datastruct_list_Nova_ListFunctionMap_closure466_Nova_allFunc nova_datastruct_list_Nova_ListFunctionMap_Nova_allFunc, void* nova_datastruct_list_Nova_ListFunctionMap_ref_Nova_allFunc, void* allFunc_context, char))nova_datastruct_Nova_HashSetFunctionMap_functionMap0_Nova_all,
 (nova_datastruct_list_Nova_List*(*)(nova_datastruct_list_Nova_ListFunctionMap*, nova_exception_Nova_ExceptionData*, nova_datastruct_list_Nova_List*, nova_datastruct_list_Nova_ListFunctionMap_closure467_Nova_filterFunc nova_datastruct_list_Nova_ListFunctionMap_Nova_filterFunc, void* nova_datastruct_list_Nova_ListFunctionMap_ref_Nova_filterFunc, void* filterFunc_context))nova_datastruct_Nova_HashSetFunctionMap_functionMap0_Nova_filter,
 (nova_datastruct_list_Nova_List*(*)(nova_datastruct_list_Nova_ListFunctionMap*, nova_exception_Nova_ExceptionData*, nova_datastruct_list_Nova_List*, int))nova_datastruct_Nova_HashSetFunctionMap_functionMap0_Nova_take,
 (nova_datastruct_list_Nova_List*(*)(nova_datastruct_list_Nova_ListFunctionMap*, nova_exception_Nova_ExceptionData*, nova_datastruct_list_Nova_List*, int))nova_datastruct_Nova_HashSetFunctionMap_functionMap0_Nova_skip,
 (nova_Nova_Object*(*)(nova_datastruct_list_Nova_ListFunctionMap*, nova_exception_Nova_ExceptionData*, nova_datastruct_list_Nova_List*, nova_datastruct_list_Nova_ListFunctionMap_closure470_Nova_func nova_datastruct_list_Nova_ListFunctionMap_Nova_func, void* nova_datastruct_list_Nova_ListFunctionMap_ref_Nova_func, void* func_context))nova_datastruct_Nova_HashSetFunctionMap_functionMap0_Nova_firstWhere,
 (nova_Nova_String*(*)(nova_datastruct_list_Nova_ListFunctionMap*, nova_exception_Nova_ExceptionData*, nova_datastruct_list_Nova_List*, nova_Nova_String*))nova_datastruct_Nova_HashSetFunctionMap_functionMap0_Nova_join,
-0,
 0,
 0,
 0,
@@ -5646,7 +5604,6 @@ nova_datastruct_HashSet_HashSetPropertyMap_Extension_VTable nova_datastruct_Hash
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -5686,7 +5643,6 @@ nova_datastruct_ImmutableHashMap_Extension_VTable nova_datastruct_ImmutableHashM
 (nova_Nova_Object*(*)(nova_datastruct_list_Nova_List*, nova_exception_Nova_ExceptionData*, nova_Nova_Object*))nova_datastruct_Nova_ImmutableHashMap_Mutatorfunc_Nova_first,
 (nova_Nova_Object*(*)(nova_datastruct_list_Nova_List*, nova_exception_Nova_ExceptionData*))nova_datastruct_Nova_ImmutableHashMap_Accessorfunc_Nova_last,
 (nova_Nova_Object*(*)(nova_datastruct_list_Nova_List*, nova_exception_Nova_ExceptionData*, nova_Nova_Object*))nova_datastruct_Nova_ImmutableHashMap_Mutatorfunc_Nova_last,
-0,
 0,
 0,
 0,
@@ -5832,13 +5788,12 @@ nova_datastruct_ImmutableHashMap_ImmutableHashMapFunctionMap_Extension_VTable no
 (nova_datastruct_list_Nova_List*(*)(nova_datastruct_list_Nova_ListFunctionMap*, nova_exception_Nova_ExceptionData*, nova_datastruct_list_Nova_List*, nova_datastruct_list_Nova_ListFunctionMap_closure463_Nova_func nova_datastruct_list_Nova_ListFunctionMap_Nova_func, void* nova_datastruct_list_Nova_ListFunctionMap_ref_Nova_func, void* func_context))nova_datastruct_Nova_ImmutableHashMapFunctionMap_functionMap0_Nova_forEach,
 (nova_datastruct_list_Nova_List*(*)(nova_datastruct_list_Nova_ListFunctionMap*, nova_exception_Nova_ExceptionData*, nova_datastruct_list_Nova_List*, nova_datastruct_list_Nova_ListFunctionMap_closure464_Nova_mapFunc nova_datastruct_list_Nova_ListFunctionMap_Nova_mapFunc, void* nova_datastruct_list_Nova_ListFunctionMap_ref_Nova_mapFunc, void* mapFunc_context))nova_datastruct_Nova_ImmutableHashMapFunctionMap_functionMap0_Nova_map,
 (char(*)(nova_datastruct_list_Nova_ListFunctionMap*, nova_exception_Nova_ExceptionData*, nova_datastruct_list_Nova_List*, nova_datastruct_list_Nova_ListFunctionMap_closure465_Nova_anyFunc nova_datastruct_list_Nova_ListFunctionMap_Nova_anyFunc, void* nova_datastruct_list_Nova_ListFunctionMap_ref_Nova_anyFunc, void* anyFunc_context))nova_datastruct_Nova_ImmutableHashMapFunctionMap_functionMap0_Nova_any,
-(char(*)(nova_datastruct_list_Nova_ListFunctionMap*, nova_exception_Nova_ExceptionData*, nova_datastruct_list_Nova_List*, nova_datastruct_list_Nova_ListFunctionMap_closure466_Nova_allFunc nova_datastruct_list_Nova_ListFunctionMap_Nova_allFunc, void* nova_datastruct_list_Nova_ListFunctionMap_ref_Nova_allFunc, void* allFunc_context, char))nova_datastruct_list_Nova_ListFunctionMap_functionMap0_Nova_all,
+(char(*)(nova_datastruct_list_Nova_ListFunctionMap*, nova_exception_Nova_ExceptionData*, nova_datastruct_list_Nova_List*, nova_datastruct_list_Nova_ListFunctionMap_closure466_Nova_allFunc nova_datastruct_list_Nova_ListFunctionMap_Nova_allFunc, void* nova_datastruct_list_Nova_ListFunctionMap_ref_Nova_allFunc, void* allFunc_context, char))nova_datastruct_Nova_ImmutableHashMapFunctionMap_functionMap0_Nova_all,
 (nova_datastruct_list_Nova_List*(*)(nova_datastruct_list_Nova_ListFunctionMap*, nova_exception_Nova_ExceptionData*, nova_datastruct_list_Nova_List*, nova_datastruct_list_Nova_ListFunctionMap_closure467_Nova_filterFunc nova_datastruct_list_Nova_ListFunctionMap_Nova_filterFunc, void* nova_datastruct_list_Nova_ListFunctionMap_ref_Nova_filterFunc, void* filterFunc_context))nova_datastruct_Nova_ImmutableHashMapFunctionMap_functionMap0_Nova_filter,
 (nova_datastruct_list_Nova_List*(*)(nova_datastruct_list_Nova_ListFunctionMap*, nova_exception_Nova_ExceptionData*, nova_datastruct_list_Nova_List*, int))nova_datastruct_Nova_ImmutableHashMapFunctionMap_functionMap0_Nova_take,
 (nova_datastruct_list_Nova_List*(*)(nova_datastruct_list_Nova_ListFunctionMap*, nova_exception_Nova_ExceptionData*, nova_datastruct_list_Nova_List*, int))nova_datastruct_Nova_ImmutableHashMapFunctionMap_functionMap0_Nova_skip,
 (nova_Nova_Object*(*)(nova_datastruct_list_Nova_ListFunctionMap*, nova_exception_Nova_ExceptionData*, nova_datastruct_list_Nova_List*, nova_datastruct_list_Nova_ListFunctionMap_closure470_Nova_func nova_datastruct_list_Nova_ListFunctionMap_Nova_func, void* nova_datastruct_list_Nova_ListFunctionMap_ref_Nova_func, void* func_context))nova_datastruct_Nova_ImmutableHashMapFunctionMap_functionMap0_Nova_firstWhere,
 (nova_Nova_String*(*)(nova_datastruct_list_Nova_ListFunctionMap*, nova_exception_Nova_ExceptionData*, nova_datastruct_list_Nova_List*, nova_Nova_String*))nova_datastruct_Nova_ImmutableHashMapFunctionMap_functionMap0_Nova_join,
-0,
 0,
 0,
 0,
@@ -6069,7 +6024,6 @@ nova_datastruct_ImmutableHashMap_ImmutableHashMapPropertyMap_Extension_VTable no
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -6081,7 +6035,6 @@ nova_datastruct_Node_Extension_VTable nova_datastruct_Node_Extension_VTable_val 
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -6351,12 +6304,10 @@ nova_datastruct_Node_NodeFunctionMap_Extension_VTable nova_datastruct_Node_NodeF
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
 nova_Nova_Object_Accessor_Nova_hashCodeLong,
-nova_datastruct_Nova_NodeFunctionMap_functionMapNodeFunctionMap_Nova_construct,
 };
 
 
@@ -6364,7 +6315,6 @@ nova_datastruct_Node_NodePropertyMap_Extension_VTable nova_datastruct_Node_NodeP
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -6634,7 +6584,6 @@ nova_datastruct_Pair_Extension_VTable nova_datastruct_Pair_Extension_VTable_val 
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_datastruct_Nova_Pair_Nova_toString,
@@ -6646,7 +6595,6 @@ nova_datastruct_Pair_PairFunctionMap_Extension_VTable nova_datastruct_Pair_PairF
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -6916,7 +6864,6 @@ nova_datastruct_Pair_PairPropertyMap_Extension_VTable nova_datastruct_Pair_PairP
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -6956,7 +6903,6 @@ nova_datastruct_ReversibleHashMap_Extension_VTable nova_datastruct_ReversibleHas
 (nova_Nova_Object*(*)(nova_datastruct_list_Nova_List*, nova_exception_Nova_ExceptionData*, nova_Nova_Object*))nova_datastruct_Nova_HashMap_Mutatorfunc_Nova_first,
 (nova_Nova_Object*(*)(nova_datastruct_list_Nova_List*, nova_exception_Nova_ExceptionData*))nova_datastruct_Nova_HashMap_Accessorfunc_Nova_last,
 (nova_Nova_Object*(*)(nova_datastruct_list_Nova_List*, nova_exception_Nova_ExceptionData*, nova_Nova_Object*))nova_datastruct_Nova_HashMap_Mutatorfunc_Nova_last,
-0,
 0,
 0,
 0,
@@ -7103,7 +7049,7 @@ nova_datastruct_ReversibleHashMap_ReversibleHashMapFunctionMap_Extension_VTable 
 (nova_datastruct_list_Nova_List*(*)(nova_datastruct_list_Nova_ListFunctionMap*, nova_exception_Nova_ExceptionData*, nova_datastruct_list_Nova_List*, nova_datastruct_list_Nova_ListFunctionMap_closure463_Nova_func nova_datastruct_list_Nova_ListFunctionMap_Nova_func, void* nova_datastruct_list_Nova_ListFunctionMap_ref_Nova_func, void* func_context))nova_datastruct_Nova_HashMapFunctionMap_functionMap_Nova_forEach,
 (nova_datastruct_list_Nova_List*(*)(nova_datastruct_list_Nova_ListFunctionMap*, nova_exception_Nova_ExceptionData*, nova_datastruct_list_Nova_List*, nova_datastruct_list_Nova_ListFunctionMap_closure464_Nova_mapFunc nova_datastruct_list_Nova_ListFunctionMap_Nova_mapFunc, void* nova_datastruct_list_Nova_ListFunctionMap_ref_Nova_mapFunc, void* mapFunc_context))nova_datastruct_Nova_HashMapFunctionMap_functionMap_Nova_map,
 (char(*)(nova_datastruct_list_Nova_ListFunctionMap*, nova_exception_Nova_ExceptionData*, nova_datastruct_list_Nova_List*, nova_datastruct_list_Nova_ListFunctionMap_closure465_Nova_anyFunc nova_datastruct_list_Nova_ListFunctionMap_Nova_anyFunc, void* nova_datastruct_list_Nova_ListFunctionMap_ref_Nova_anyFunc, void* anyFunc_context))nova_datastruct_Nova_HashMapFunctionMap_functionMap_Nova_any,
-(char(*)(nova_datastruct_list_Nova_ListFunctionMap*, nova_exception_Nova_ExceptionData*, nova_datastruct_list_Nova_List*, nova_datastruct_list_Nova_ListFunctionMap_closure466_Nova_allFunc nova_datastruct_list_Nova_ListFunctionMap_Nova_allFunc, void* nova_datastruct_list_Nova_ListFunctionMap_ref_Nova_allFunc, void* allFunc_context, char))nova_datastruct_list_Nova_ListFunctionMap_functionMap0_Nova_all,
+(char(*)(nova_datastruct_list_Nova_ListFunctionMap*, nova_exception_Nova_ExceptionData*, nova_datastruct_list_Nova_List*, nova_datastruct_list_Nova_ListFunctionMap_closure466_Nova_allFunc nova_datastruct_list_Nova_ListFunctionMap_Nova_allFunc, void* nova_datastruct_list_Nova_ListFunctionMap_ref_Nova_allFunc, void* allFunc_context, char))nova_datastruct_Nova_HashMapFunctionMap_functionMap_Nova_all,
 (nova_datastruct_list_Nova_List*(*)(nova_datastruct_list_Nova_ListFunctionMap*, nova_exception_Nova_ExceptionData*, nova_datastruct_list_Nova_List*, nova_datastruct_list_Nova_ListFunctionMap_closure467_Nova_filterFunc nova_datastruct_list_Nova_ListFunctionMap_Nova_filterFunc, void* nova_datastruct_list_Nova_ListFunctionMap_ref_Nova_filterFunc, void* filterFunc_context))nova_datastruct_Nova_HashMapFunctionMap_functionMap_Nova_filter,
 (nova_datastruct_list_Nova_List*(*)(nova_datastruct_list_Nova_ListFunctionMap*, nova_exception_Nova_ExceptionData*, nova_datastruct_list_Nova_List*, int))nova_datastruct_Nova_HashMapFunctionMap_functionMap_Nova_take,
 (nova_datastruct_list_Nova_List*(*)(nova_datastruct_list_Nova_ListFunctionMap*, nova_exception_Nova_ExceptionData*, nova_datastruct_list_Nova_List*, int))nova_datastruct_Nova_HashMapFunctionMap_functionMap_Nova_skip,
@@ -7199,12 +7145,10 @@ nova_datastruct_ReversibleHashMap_ReversibleHashMapFunctionMap_Extension_VTable 
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
 nova_Nova_Object_Accessor_Nova_hashCodeLong,
-nova_datastruct_Nova_HashMapFunctionMap_functionMapHashMapFunctionMap0_Nova_construct,
 nova_datastruct_Nova_ReversibleHashMapFunctionMap_functionMap_Nova_add,
 };
 
@@ -7342,7 +7286,6 @@ nova_datastruct_ReversibleHashMap_ReversibleHashMapPropertyMap_Extension_VTable 
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -7354,7 +7297,6 @@ nova_datastruct_Tree_Extension_VTable nova_datastruct_Tree_Extension_VTable_val 
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -7624,12 +7566,10 @@ nova_datastruct_Tree_TreeFunctionMap_Extension_VTable nova_datastruct_Tree_TreeF
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
 nova_Nova_Object_Accessor_Nova_hashCodeLong,
-nova_datastruct_Nova_TreeFunctionMap_functionMapTreeFunctionMap_Nova_construct,
 };
 
 
@@ -7637,7 +7577,6 @@ nova_datastruct_Tree_TreePropertyMap_Extension_VTable nova_datastruct_Tree_TreeP
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -7908,7 +7847,6 @@ nova_datastruct_Tuple_Extension_VTable nova_datastruct_Tuple_Extension_VTable_va
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -7953,13 +7891,12 @@ nova_datastruct_Tuple_TupleFunctionMap_Extension_VTable nova_datastruct_Tuple_Tu
 (nova_datastruct_list_Nova_List*(*)(nova_datastruct_list_Nova_ListFunctionMap*, nova_exception_Nova_ExceptionData*, nova_datastruct_list_Nova_List*, nova_datastruct_list_Nova_ListFunctionMap_closure463_Nova_func nova_datastruct_list_Nova_ListFunctionMap_Nova_func, void* nova_datastruct_list_Nova_ListFunctionMap_ref_Nova_func, void* func_context))nova_datastruct_Nova_TupleFunctionMap_functionMap0_Nova_forEach,
 (nova_datastruct_list_Nova_List*(*)(nova_datastruct_list_Nova_ListFunctionMap*, nova_exception_Nova_ExceptionData*, nova_datastruct_list_Nova_List*, nova_datastruct_list_Nova_ListFunctionMap_closure464_Nova_mapFunc nova_datastruct_list_Nova_ListFunctionMap_Nova_mapFunc, void* nova_datastruct_list_Nova_ListFunctionMap_ref_Nova_mapFunc, void* mapFunc_context))nova_datastruct_Nova_TupleFunctionMap_functionMap0_Nova_map,
 (char(*)(nova_datastruct_list_Nova_ListFunctionMap*, nova_exception_Nova_ExceptionData*, nova_datastruct_list_Nova_List*, nova_datastruct_list_Nova_ListFunctionMap_closure465_Nova_anyFunc nova_datastruct_list_Nova_ListFunctionMap_Nova_anyFunc, void* nova_datastruct_list_Nova_ListFunctionMap_ref_Nova_anyFunc, void* anyFunc_context))nova_datastruct_Nova_TupleFunctionMap_functionMap0_Nova_any,
-(char(*)(nova_datastruct_list_Nova_ListFunctionMap*, nova_exception_Nova_ExceptionData*, nova_datastruct_list_Nova_List*, nova_datastruct_list_Nova_ListFunctionMap_closure466_Nova_allFunc nova_datastruct_list_Nova_ListFunctionMap_Nova_allFunc, void* nova_datastruct_list_Nova_ListFunctionMap_ref_Nova_allFunc, void* allFunc_context, char))nova_datastruct_list_Nova_ListFunctionMap_functionMap0_Nova_all,
+(char(*)(nova_datastruct_list_Nova_ListFunctionMap*, nova_exception_Nova_ExceptionData*, nova_datastruct_list_Nova_List*, nova_datastruct_list_Nova_ListFunctionMap_closure466_Nova_allFunc nova_datastruct_list_Nova_ListFunctionMap_Nova_allFunc, void* nova_datastruct_list_Nova_ListFunctionMap_ref_Nova_allFunc, void* allFunc_context, char))nova_datastruct_Nova_TupleFunctionMap_functionMap0_Nova_all,
 (nova_datastruct_list_Nova_List*(*)(nova_datastruct_list_Nova_ListFunctionMap*, nova_exception_Nova_ExceptionData*, nova_datastruct_list_Nova_List*, nova_datastruct_list_Nova_ListFunctionMap_closure467_Nova_filterFunc nova_datastruct_list_Nova_ListFunctionMap_Nova_filterFunc, void* nova_datastruct_list_Nova_ListFunctionMap_ref_Nova_filterFunc, void* filterFunc_context))nova_datastruct_Nova_TupleFunctionMap_functionMap0_Nova_filter,
 (nova_datastruct_list_Nova_List*(*)(nova_datastruct_list_Nova_ListFunctionMap*, nova_exception_Nova_ExceptionData*, nova_datastruct_list_Nova_List*, int))nova_datastruct_Nova_TupleFunctionMap_functionMap0_Nova_take,
 (nova_datastruct_list_Nova_List*(*)(nova_datastruct_list_Nova_ListFunctionMap*, nova_exception_Nova_ExceptionData*, nova_datastruct_list_Nova_List*, int))nova_datastruct_Nova_TupleFunctionMap_functionMap0_Nova_skip,
 (nova_Nova_Object*(*)(nova_datastruct_list_Nova_ListFunctionMap*, nova_exception_Nova_ExceptionData*, nova_datastruct_list_Nova_List*, nova_datastruct_list_Nova_ListFunctionMap_closure470_Nova_func nova_datastruct_list_Nova_ListFunctionMap_Nova_func, void* nova_datastruct_list_Nova_ListFunctionMap_ref_Nova_func, void* func_context))nova_datastruct_Nova_TupleFunctionMap_functionMap0_Nova_firstWhere,
 (nova_Nova_String*(*)(nova_datastruct_list_Nova_ListFunctionMap*, nova_exception_Nova_ExceptionData*, nova_datastruct_list_Nova_List*, nova_Nova_String*))nova_datastruct_list_Nova_ListFunctionMap_functionMap0_Nova_join,
-0,
 0,
 0,
 0,
@@ -8190,7 +8127,6 @@ nova_datastruct_Tuple_TuplePropertyMap_Extension_VTable nova_datastruct_Tuple_Tu
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -8230,7 +8166,6 @@ nova_datastruct_Tuple2_Extension_VTable nova_datastruct_Tuple2_Extension_VTable_
 (nova_Nova_Object*(*)(nova_datastruct_list_Nova_List*, nova_exception_Nova_ExceptionData*, nova_Nova_Object*))nova_datastruct_Nova_Tuple_Mutator_Nova_first,
 (nova_Nova_Object*(*)(nova_datastruct_list_Nova_List*, nova_exception_Nova_ExceptionData*))nova_datastruct_Nova_Tuple_Accessor_Nova_last,
 (nova_Nova_Object*(*)(nova_datastruct_list_Nova_List*, nova_exception_Nova_ExceptionData*, nova_Nova_Object*))nova_datastruct_Nova_Tuple_Mutator_Nova_last,
-0,
 0,
 0,
 0,
@@ -8376,13 +8311,12 @@ nova_datastruct_Tuple2_Tuple2FunctionMap_Extension_VTable nova_datastruct_Tuple2
 (nova_datastruct_list_Nova_List*(*)(nova_datastruct_list_Nova_ListFunctionMap*, nova_exception_Nova_ExceptionData*, nova_datastruct_list_Nova_List*, nova_datastruct_list_Nova_ListFunctionMap_closure463_Nova_func nova_datastruct_list_Nova_ListFunctionMap_Nova_func, void* nova_datastruct_list_Nova_ListFunctionMap_ref_Nova_func, void* func_context))nova_datastruct_Nova_TupleFunctionMap_functionMap0_Nova_forEach,
 (nova_datastruct_list_Nova_List*(*)(nova_datastruct_list_Nova_ListFunctionMap*, nova_exception_Nova_ExceptionData*, nova_datastruct_list_Nova_List*, nova_datastruct_list_Nova_ListFunctionMap_closure464_Nova_mapFunc nova_datastruct_list_Nova_ListFunctionMap_Nova_mapFunc, void* nova_datastruct_list_Nova_ListFunctionMap_ref_Nova_mapFunc, void* mapFunc_context))nova_datastruct_Nova_TupleFunctionMap_functionMap0_Nova_map,
 (char(*)(nova_datastruct_list_Nova_ListFunctionMap*, nova_exception_Nova_ExceptionData*, nova_datastruct_list_Nova_List*, nova_datastruct_list_Nova_ListFunctionMap_closure465_Nova_anyFunc nova_datastruct_list_Nova_ListFunctionMap_Nova_anyFunc, void* nova_datastruct_list_Nova_ListFunctionMap_ref_Nova_anyFunc, void* anyFunc_context))nova_datastruct_Nova_TupleFunctionMap_functionMap0_Nova_any,
-(char(*)(nova_datastruct_list_Nova_ListFunctionMap*, nova_exception_Nova_ExceptionData*, nova_datastruct_list_Nova_List*, nova_datastruct_list_Nova_ListFunctionMap_closure466_Nova_allFunc nova_datastruct_list_Nova_ListFunctionMap_Nova_allFunc, void* nova_datastruct_list_Nova_ListFunctionMap_ref_Nova_allFunc, void* allFunc_context, char))nova_datastruct_list_Nova_ListFunctionMap_functionMap0_Nova_all,
+(char(*)(nova_datastruct_list_Nova_ListFunctionMap*, nova_exception_Nova_ExceptionData*, nova_datastruct_list_Nova_List*, nova_datastruct_list_Nova_ListFunctionMap_closure466_Nova_allFunc nova_datastruct_list_Nova_ListFunctionMap_Nova_allFunc, void* nova_datastruct_list_Nova_ListFunctionMap_ref_Nova_allFunc, void* allFunc_context, char))nova_datastruct_Nova_TupleFunctionMap_functionMap0_Nova_all,
 (nova_datastruct_list_Nova_List*(*)(nova_datastruct_list_Nova_ListFunctionMap*, nova_exception_Nova_ExceptionData*, nova_datastruct_list_Nova_List*, nova_datastruct_list_Nova_ListFunctionMap_closure467_Nova_filterFunc nova_datastruct_list_Nova_ListFunctionMap_Nova_filterFunc, void* nova_datastruct_list_Nova_ListFunctionMap_ref_Nova_filterFunc, void* filterFunc_context))nova_datastruct_Nova_TupleFunctionMap_functionMap0_Nova_filter,
 (nova_datastruct_list_Nova_List*(*)(nova_datastruct_list_Nova_ListFunctionMap*, nova_exception_Nova_ExceptionData*, nova_datastruct_list_Nova_List*, int))nova_datastruct_Nova_TupleFunctionMap_functionMap0_Nova_take,
 (nova_datastruct_list_Nova_List*(*)(nova_datastruct_list_Nova_ListFunctionMap*, nova_exception_Nova_ExceptionData*, nova_datastruct_list_Nova_List*, int))nova_datastruct_Nova_TupleFunctionMap_functionMap0_Nova_skip,
 (nova_Nova_Object*(*)(nova_datastruct_list_Nova_ListFunctionMap*, nova_exception_Nova_ExceptionData*, nova_datastruct_list_Nova_List*, nova_datastruct_list_Nova_ListFunctionMap_closure470_Nova_func nova_datastruct_list_Nova_ListFunctionMap_Nova_func, void* nova_datastruct_list_Nova_ListFunctionMap_ref_Nova_func, void* func_context))nova_datastruct_Nova_TupleFunctionMap_functionMap0_Nova_firstWhere,
 (nova_Nova_String*(*)(nova_datastruct_list_Nova_ListFunctionMap*, nova_exception_Nova_ExceptionData*, nova_datastruct_list_Nova_List*, nova_Nova_String*))nova_datastruct_list_Nova_ListFunctionMap_functionMap0_Nova_join,
-0,
 0,
 0,
 0,
@@ -8613,7 +8547,6 @@ nova_datastruct_Tuple2_Tuple2PropertyMap_Extension_VTable nova_datastruct_Tuple2
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -8675,7 +8608,6 @@ nova_datastruct_list_Array_Extension_VTable nova_datastruct_list_Array_Extension
 0,
 (nova_Nova_Object*(*)(nova_operators_Nova_PlusEqualsOperator*, nova_exception_Nova_ExceptionData*, nova_Nova_Object*))nova_datastruct_list_Nova_Array_Nova_plusEquals,
 (nova_Nova_Object*(*)(nova_operators_Nova_PlusOperator*, nova_exception_Nova_ExceptionData*, nova_Nova_Object*))nova_datastruct_list_Nova_Array_0_Nova_plus,
-0,
 0,
 0,
 0,
@@ -8900,13 +8832,11 @@ nova_datastruct_list_Array_ArrayFunctionMap_Extension_VTable nova_datastruct_lis
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
 nova_Nova_Object_Accessor_Nova_hashCodeLong,
 nova_datastruct_list_Nova_ArrayFunctionMap_functionMapArrayFunctionMap0_Nova_construct,
-nova_datastruct_list_Nova_ArrayFunctionMap_functionMapArrayFunctionMap1_Nova_construct,
 nova_datastruct_list_Nova_ArrayFunctionMap_functionMapArrayFunctionMap2_Nova_construct,
 nova_datastruct_list_Nova_ArrayFunctionMap_functionMap_Nova_addUnique,
 nova_datastruct_list_Nova_ArrayFunctionMap_functionMap_Nova_cloneData,
@@ -8963,7 +8893,6 @@ nova_datastruct_list_Array_ArrayPropertyMap_Extension_VTable nova_datastruct_lis
 (int(*)(nova_datastruct_list_Nova_ListPropertyMap*, nova_exception_Nova_ExceptionData*, nova_datastruct_list_Nova_List*))nova_datastruct_list_Nova_ArrayPropertyMap_functionMap0_Nova_count,
 (nova_Nova_Object*(*)(nova_datastruct_list_Nova_ListPropertyMap*, nova_exception_Nova_ExceptionData*, nova_datastruct_list_Nova_List*))nova_datastruct_list_Nova_ArrayPropertyMap_functionMap0_Nova_first,
 (nova_Nova_Object*(*)(nova_datastruct_list_Nova_ListPropertyMap*, nova_exception_Nova_ExceptionData*, nova_datastruct_list_Nova_List*))nova_datastruct_list_Nova_ArrayPropertyMap_functionMap0_Nova_last,
-0,
 0,
 0,
 0,
@@ -9191,7 +9120,6 @@ nova_datastruct_list_ArrayIterator_Extension_VTable nova_datastruct_list_ArrayIt
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -9203,7 +9131,6 @@ nova_datastruct_list_ArrayIterator_ArrayIteratorFunctionMap_Extension_VTable nov
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -9473,7 +9400,6 @@ nova_datastruct_list_ArrayIterator_ArrayIteratorPropertyMap_Extension_VTable nov
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -9614,7 +9540,6 @@ nova_datastruct_list_CharArray_Extension_VTable nova_datastruct_list_CharArray_E
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_datastruct_list_Nova_Array_Nova_toString,
@@ -9664,7 +9589,7 @@ nova_datastruct_list_CharArray_CharArrayFunctionMap_Extension_VTable nova_datast
 (nova_datastruct_list_Nova_List*(*)(nova_datastruct_list_Nova_ListFunctionMap*, nova_exception_Nova_ExceptionData*, nova_datastruct_list_Nova_List*, nova_datastruct_list_Nova_ListFunctionMap_closure463_Nova_func nova_datastruct_list_Nova_ListFunctionMap_Nova_func, void* nova_datastruct_list_Nova_ListFunctionMap_ref_Nova_func, void* func_context))nova_datastruct_list_Nova_CharArrayFunctionMap_functionMap_Nova_forEach,
 (nova_datastruct_list_Nova_List*(*)(nova_datastruct_list_Nova_ListFunctionMap*, nova_exception_Nova_ExceptionData*, nova_datastruct_list_Nova_List*, nova_datastruct_list_Nova_ListFunctionMap_closure464_Nova_mapFunc nova_datastruct_list_Nova_ListFunctionMap_Nova_mapFunc, void* nova_datastruct_list_Nova_ListFunctionMap_ref_Nova_mapFunc, void* mapFunc_context))nova_datastruct_list_Nova_CharArrayFunctionMap_functionMap_Nova_map,
 (char(*)(nova_datastruct_list_Nova_ListFunctionMap*, nova_exception_Nova_ExceptionData*, nova_datastruct_list_Nova_List*, nova_datastruct_list_Nova_ListFunctionMap_closure465_Nova_anyFunc nova_datastruct_list_Nova_ListFunctionMap_Nova_anyFunc, void* nova_datastruct_list_Nova_ListFunctionMap_ref_Nova_anyFunc, void* anyFunc_context))nova_datastruct_list_Nova_CharArrayFunctionMap_functionMap_Nova_any,
-(char(*)(nova_datastruct_list_Nova_ListFunctionMap*, nova_exception_Nova_ExceptionData*, nova_datastruct_list_Nova_List*, nova_datastruct_list_Nova_ListFunctionMap_closure466_Nova_allFunc nova_datastruct_list_Nova_ListFunctionMap_Nova_allFunc, void* nova_datastruct_list_Nova_ListFunctionMap_ref_Nova_allFunc, void* allFunc_context, char))nova_datastruct_list_Nova_ListFunctionMap_functionMap0_Nova_all,
+(char(*)(nova_datastruct_list_Nova_ListFunctionMap*, nova_exception_Nova_ExceptionData*, nova_datastruct_list_Nova_List*, nova_datastruct_list_Nova_ListFunctionMap_closure466_Nova_allFunc nova_datastruct_list_Nova_ListFunctionMap_Nova_allFunc, void* nova_datastruct_list_Nova_ListFunctionMap_ref_Nova_allFunc, void* allFunc_context, char))nova_datastruct_list_Nova_CharArrayFunctionMap_functionMap_Nova_all,
 (nova_datastruct_list_Nova_List*(*)(nova_datastruct_list_Nova_ListFunctionMap*, nova_exception_Nova_ExceptionData*, nova_datastruct_list_Nova_List*, nova_datastruct_list_Nova_ListFunctionMap_closure467_Nova_filterFunc nova_datastruct_list_Nova_ListFunctionMap_Nova_filterFunc, void* nova_datastruct_list_Nova_ListFunctionMap_ref_Nova_filterFunc, void* filterFunc_context))nova_datastruct_list_Nova_CharArrayFunctionMap_functionMap_Nova_filter,
 (nova_datastruct_list_Nova_List*(*)(nova_datastruct_list_Nova_ListFunctionMap*, nova_exception_Nova_ExceptionData*, nova_datastruct_list_Nova_List*, int))nova_datastruct_list_Nova_CharArrayFunctionMap_functionMap_Nova_take,
 (nova_datastruct_list_Nova_List*(*)(nova_datastruct_list_Nova_ListFunctionMap*, nova_exception_Nova_ExceptionData*, nova_datastruct_list_Nova_List*, int))nova_datastruct_list_Nova_CharArrayFunctionMap_functionMap_Nova_skip,
@@ -9760,13 +9685,11 @@ nova_datastruct_list_CharArray_CharArrayFunctionMap_Extension_VTable nova_datast
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
 nova_Nova_Object_Accessor_Nova_hashCodeLong,
 nova_datastruct_list_Nova_CharArrayFunctionMap_functionMapCharArrayFunctionMap0_Nova_construct,
-nova_datastruct_list_Nova_ArrayFunctionMap_functionMapArrayFunctionMap1_Nova_construct,
 nova_datastruct_list_Nova_CharArrayFunctionMap_functionMapCharArrayFunctionMap2_Nova_construct,
 nova_datastruct_list_Nova_CharArrayFunctionMap_functionMap_Nova_addUnique,
 nova_datastruct_list_Nova_CharArrayFunctionMap_functionMap_Nova_cloneData,
@@ -9823,7 +9746,6 @@ nova_datastruct_list_CharArray_CharArrayPropertyMap_Extension_VTable nova_datast
 (int(*)(nova_datastruct_list_Nova_ListPropertyMap*, nova_exception_Nova_ExceptionData*, nova_datastruct_list_Nova_List*))nova_datastruct_list_Nova_ArrayPropertyMap_functionMap0_Nova_count,
 (nova_Nova_Object*(*)(nova_datastruct_list_Nova_ListPropertyMap*, nova_exception_Nova_ExceptionData*, nova_datastruct_list_Nova_List*))nova_datastruct_list_Nova_CharArrayPropertyMap_functionMap_Nova_first,
 (nova_Nova_Object*(*)(nova_datastruct_list_Nova_ListPropertyMap*, nova_exception_Nova_ExceptionData*, nova_datastruct_list_Nova_List*))nova_datastruct_list_Nova_CharArrayPropertyMap_functionMap_Nova_last,
-0,
 0,
 0,
 0,
@@ -10051,7 +9973,6 @@ nova_datastruct_list_CharArrayIterator_Extension_VTable nova_datastruct_list_Cha
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -10063,7 +9984,6 @@ nova_datastruct_list_CharArrayIterator_CharArrayIteratorFunctionMap_Extension_VT
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -10333,7 +10253,6 @@ nova_datastruct_list_CharArrayIterator_CharArrayIteratorPropertyMap_Extension_VT
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -10345,7 +10264,6 @@ nova_datastruct_list_CompiledList_Extension_VTable nova_datastruct_list_Compiled
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -10615,7 +10533,6 @@ nova_datastruct_list_CompiledList_CompiledListFunctionMap_Extension_VTable nova_
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -10627,7 +10544,6 @@ nova_datastruct_list_CompiledList_CompiledListPropertyMap_Extension_VTable nova_
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -10897,7 +10813,6 @@ nova_datastruct_list_DoubleArray_Extension_VTable nova_datastruct_list_DoubleArr
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_datastruct_list_Nova_Array_Nova_toString,
@@ -10947,7 +10862,7 @@ nova_datastruct_list_DoubleArray_DoubleArrayFunctionMap_Extension_VTable nova_da
 (nova_datastruct_list_Nova_List*(*)(nova_datastruct_list_Nova_ListFunctionMap*, nova_exception_Nova_ExceptionData*, nova_datastruct_list_Nova_List*, nova_datastruct_list_Nova_ListFunctionMap_closure463_Nova_func nova_datastruct_list_Nova_ListFunctionMap_Nova_func, void* nova_datastruct_list_Nova_ListFunctionMap_ref_Nova_func, void* func_context))nova_datastruct_list_Nova_DoubleArrayFunctionMap_functionMap_Nova_forEach,
 (nova_datastruct_list_Nova_List*(*)(nova_datastruct_list_Nova_ListFunctionMap*, nova_exception_Nova_ExceptionData*, nova_datastruct_list_Nova_List*, nova_datastruct_list_Nova_ListFunctionMap_closure464_Nova_mapFunc nova_datastruct_list_Nova_ListFunctionMap_Nova_mapFunc, void* nova_datastruct_list_Nova_ListFunctionMap_ref_Nova_mapFunc, void* mapFunc_context))nova_datastruct_list_Nova_DoubleArrayFunctionMap_functionMap_Nova_map,
 (char(*)(nova_datastruct_list_Nova_ListFunctionMap*, nova_exception_Nova_ExceptionData*, nova_datastruct_list_Nova_List*, nova_datastruct_list_Nova_ListFunctionMap_closure465_Nova_anyFunc nova_datastruct_list_Nova_ListFunctionMap_Nova_anyFunc, void* nova_datastruct_list_Nova_ListFunctionMap_ref_Nova_anyFunc, void* anyFunc_context))nova_datastruct_list_Nova_DoubleArrayFunctionMap_functionMap_Nova_any,
-(char(*)(nova_datastruct_list_Nova_ListFunctionMap*, nova_exception_Nova_ExceptionData*, nova_datastruct_list_Nova_List*, nova_datastruct_list_Nova_ListFunctionMap_closure466_Nova_allFunc nova_datastruct_list_Nova_ListFunctionMap_Nova_allFunc, void* nova_datastruct_list_Nova_ListFunctionMap_ref_Nova_allFunc, void* allFunc_context, char))nova_datastruct_list_Nova_ListFunctionMap_functionMap0_Nova_all,
+(char(*)(nova_datastruct_list_Nova_ListFunctionMap*, nova_exception_Nova_ExceptionData*, nova_datastruct_list_Nova_List*, nova_datastruct_list_Nova_ListFunctionMap_closure466_Nova_allFunc nova_datastruct_list_Nova_ListFunctionMap_Nova_allFunc, void* nova_datastruct_list_Nova_ListFunctionMap_ref_Nova_allFunc, void* allFunc_context, char))nova_datastruct_list_Nova_DoubleArrayFunctionMap_functionMap_Nova_all,
 (nova_datastruct_list_Nova_List*(*)(nova_datastruct_list_Nova_ListFunctionMap*, nova_exception_Nova_ExceptionData*, nova_datastruct_list_Nova_List*, nova_datastruct_list_Nova_ListFunctionMap_closure467_Nova_filterFunc nova_datastruct_list_Nova_ListFunctionMap_Nova_filterFunc, void* nova_datastruct_list_Nova_ListFunctionMap_ref_Nova_filterFunc, void* filterFunc_context))nova_datastruct_list_Nova_DoubleArrayFunctionMap_functionMap_Nova_filter,
 (nova_datastruct_list_Nova_List*(*)(nova_datastruct_list_Nova_ListFunctionMap*, nova_exception_Nova_ExceptionData*, nova_datastruct_list_Nova_List*, int))nova_datastruct_list_Nova_DoubleArrayFunctionMap_functionMap_Nova_take,
 (nova_datastruct_list_Nova_List*(*)(nova_datastruct_list_Nova_ListFunctionMap*, nova_exception_Nova_ExceptionData*, nova_datastruct_list_Nova_List*, int))nova_datastruct_list_Nova_DoubleArrayFunctionMap_functionMap_Nova_skip,
@@ -11043,13 +10958,11 @@ nova_datastruct_list_DoubleArray_DoubleArrayFunctionMap_Extension_VTable nova_da
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
 nova_Nova_Object_Accessor_Nova_hashCodeLong,
 nova_datastruct_list_Nova_DoubleArrayFunctionMap_functionMapDoubleArrayFunctionMap0_Nova_construct,
-nova_datastruct_list_Nova_ArrayFunctionMap_functionMapArrayFunctionMap1_Nova_construct,
 nova_datastruct_list_Nova_DoubleArrayFunctionMap_functionMapDoubleArrayFunctionMap1_Nova_construct,
 nova_datastruct_list_Nova_ArrayFunctionMap_functionMap_Nova_addUnique,
 nova_datastruct_list_Nova_ArrayFunctionMap_functionMap_Nova_cloneData,
@@ -11106,7 +11019,6 @@ nova_datastruct_list_DoubleArray_DoubleArrayPropertyMap_Extension_VTable nova_da
 (int(*)(nova_datastruct_list_Nova_ListPropertyMap*, nova_exception_Nova_ExceptionData*, nova_datastruct_list_Nova_List*))nova_datastruct_list_Nova_ArrayPropertyMap_functionMap0_Nova_count,
 (nova_Nova_Object*(*)(nova_datastruct_list_Nova_ListPropertyMap*, nova_exception_Nova_ExceptionData*, nova_datastruct_list_Nova_List*))nova_datastruct_list_Nova_DoubleArrayPropertyMap_functionMap_Nova_first,
 (nova_Nova_Object*(*)(nova_datastruct_list_Nova_ListPropertyMap*, nova_exception_Nova_ExceptionData*, nova_datastruct_list_Nova_List*))nova_datastruct_list_Nova_DoubleArrayPropertyMap_functionMap_Nova_last,
-0,
 0,
 0,
 0,
@@ -11334,7 +11246,6 @@ nova_datastruct_list_DoubleArrayIterator_Extension_VTable nova_datastruct_list_D
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -11346,7 +11257,6 @@ nova_datastruct_list_DoubleArrayIterator_DoubleArrayIteratorFunctionMap_Extensio
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -11616,7 +11526,6 @@ nova_datastruct_list_DoubleArrayIterator_DoubleArrayIteratorPropertyMap_Extensio
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -11757,7 +11666,6 @@ nova_datastruct_list_EmptyStackException_Extension_VTable nova_datastruct_list_E
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_exception_Nova_Exception_Nova_toString,
@@ -11769,7 +11677,6 @@ nova_datastruct_list_EmptyStackException_EmptyStackExceptionFunctionMap_Extensio
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -12040,7 +11947,6 @@ nova_datastruct_list_EmptyStackException_EmptyStackExceptionPropertyMap_Extensio
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -12080,7 +11986,6 @@ nova_datastruct_list_ImmutableArray_Extension_VTable nova_datastruct_list_Immuta
 (nova_Nova_Object*(*)(nova_datastruct_list_Nova_List*, nova_exception_Nova_ExceptionData*, nova_Nova_Object*))nova_datastruct_list_Nova_ImmutableArray_Mutator_Nova_first,
 (nova_Nova_Object*(*)(nova_datastruct_list_Nova_List*, nova_exception_Nova_ExceptionData*))nova_datastruct_list_Nova_ImmutableArray_Accessor_Nova_last,
 (nova_Nova_Object*(*)(nova_datastruct_list_Nova_List*, nova_exception_Nova_ExceptionData*, nova_Nova_Object*))nova_datastruct_list_Nova_ImmutableArray_Mutator_Nova_last,
-0,
 0,
 0,
 0,
@@ -12322,7 +12227,6 @@ nova_datastruct_list_ImmutableArray_ImmutableArrayFunctionMap_Extension_VTable n
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -12376,7 +12280,6 @@ nova_datastruct_list_ImmutableArray_ImmutableArrayPropertyMap_Extension_VTable n
 (int(*)(nova_datastruct_list_Nova_ListPropertyMap*, nova_exception_Nova_ExceptionData*, nova_datastruct_list_Nova_List*))nova_datastruct_list_Nova_ImmutableArrayPropertyMap_functionMap0_Nova_count,
 (nova_Nova_Object*(*)(nova_datastruct_list_Nova_ListPropertyMap*, nova_exception_Nova_ExceptionData*, nova_datastruct_list_Nova_List*))nova_datastruct_list_Nova_ImmutableArrayPropertyMap_functionMap0_Nova_first,
 (nova_Nova_Object*(*)(nova_datastruct_list_Nova_ListPropertyMap*, nova_exception_Nova_ExceptionData*, nova_datastruct_list_Nova_List*))nova_datastruct_list_Nova_ImmutableArrayPropertyMap_functionMap0_Nova_last,
-0,
 0,
 0,
 0,
@@ -12604,7 +12507,6 @@ nova_datastruct_list_ImmutableArrayIterator_Extension_VTable nova_datastruct_lis
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -12616,7 +12518,6 @@ nova_datastruct_list_ImmutableArrayIterator_ImmutableArrayIteratorFunctionMap_Ex
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -12886,7 +12787,6 @@ nova_datastruct_list_ImmutableArrayIterator_ImmutableArrayIteratorPropertyMap_Ex
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -12926,7 +12826,6 @@ nova_datastruct_list_ImmutableCharArray_Extension_VTable nova_datastruct_list_Im
 (nova_Nova_Object*(*)(nova_datastruct_list_Nova_List*, nova_exception_Nova_ExceptionData*, nova_Nova_Object*))nova_datastruct_list_Nova_ImmutableCharArray_Mutator_Nova_first,
 (nova_Nova_Object*(*)(nova_datastruct_list_Nova_List*, nova_exception_Nova_ExceptionData*))nova_datastruct_list_Nova_ImmutableCharArray_Accessor_Nova_last,
 (nova_Nova_Object*(*)(nova_datastruct_list_Nova_List*, nova_exception_Nova_ExceptionData*, nova_Nova_Object*))nova_datastruct_list_Nova_ImmutableCharArray_Mutator_Nova_last,
-0,
 0,
 0,
 0,
@@ -13168,7 +13067,6 @@ nova_datastruct_list_ImmutableCharArray_ImmutableCharArrayFunctionMap_Extension_
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -13222,7 +13120,6 @@ nova_datastruct_list_ImmutableCharArray_ImmutableCharArrayPropertyMap_Extension_
 (int(*)(nova_datastruct_list_Nova_ListPropertyMap*, nova_exception_Nova_ExceptionData*, nova_datastruct_list_Nova_List*))nova_datastruct_list_Nova_ImmutableCharArrayPropertyMap_functionMap0_Nova_count,
 (nova_Nova_Object*(*)(nova_datastruct_list_Nova_ListPropertyMap*, nova_exception_Nova_ExceptionData*, nova_datastruct_list_Nova_List*))nova_datastruct_list_Nova_ImmutableCharArrayPropertyMap_functionMap0_Nova_first,
 (nova_Nova_Object*(*)(nova_datastruct_list_Nova_ListPropertyMap*, nova_exception_Nova_ExceptionData*, nova_datastruct_list_Nova_List*))nova_datastruct_list_Nova_ImmutableCharArrayPropertyMap_functionMap0_Nova_last,
-0,
 0,
 0,
 0,
@@ -13450,7 +13347,6 @@ nova_datastruct_list_ImmutableCharArrayIterator_Extension_VTable nova_datastruct
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -13462,7 +13358,6 @@ nova_datastruct_list_ImmutableCharArrayIterator_ImmutableCharArrayIteratorFuncti
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -13732,7 +13627,6 @@ nova_datastruct_list_ImmutableCharArrayIterator_ImmutableCharArrayIteratorProper
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -13794,7 +13688,6 @@ nova_datastruct_list_IntArray_Extension_VTable nova_datastruct_list_IntArray_Ext
 0,
 (nova_Nova_Object*(*)(nova_operators_Nova_PlusEqualsOperator*, nova_exception_Nova_ExceptionData*, nova_Nova_Object*))nova_datastruct_list_Nova_Array_Nova_plusEquals,
 (nova_Nova_Object*(*)(nova_operators_Nova_PlusOperator*, nova_exception_Nova_ExceptionData*, nova_Nova_Object*))nova_datastruct_list_Nova_Array_0_Nova_plus,
-0,
 0,
 0,
 0,
@@ -14019,13 +13912,11 @@ nova_datastruct_list_IntArray_IntArrayFunctionMap_Extension_VTable nova_datastru
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
 nova_Nova_Object_Accessor_Nova_hashCodeLong,
 nova_datastruct_list_Nova_IntArrayFunctionMap_functionMapIntArrayFunctionMap0_Nova_construct,
-nova_datastruct_list_Nova_ArrayFunctionMap_functionMapArrayFunctionMap1_Nova_construct,
 nova_datastruct_list_Nova_IntArrayFunctionMap_functionMapIntArrayFunctionMap2_Nova_construct,
 nova_datastruct_list_Nova_ArrayFunctionMap_functionMap_Nova_addUnique,
 nova_datastruct_list_Nova_ArrayFunctionMap_functionMap_Nova_cloneData,
@@ -14082,7 +13973,6 @@ nova_datastruct_list_IntArray_IntArrayPropertyMap_Extension_VTable nova_datastru
 (int(*)(nova_datastruct_list_Nova_ListPropertyMap*, nova_exception_Nova_ExceptionData*, nova_datastruct_list_Nova_List*))nova_datastruct_list_Nova_ArrayPropertyMap_functionMap0_Nova_count,
 (nova_Nova_Object*(*)(nova_datastruct_list_Nova_ListPropertyMap*, nova_exception_Nova_ExceptionData*, nova_datastruct_list_Nova_List*))nova_datastruct_list_Nova_IntArrayPropertyMap_functionMap_Nova_first,
 (nova_Nova_Object*(*)(nova_datastruct_list_Nova_ListPropertyMap*, nova_exception_Nova_ExceptionData*, nova_datastruct_list_Nova_List*))nova_datastruct_list_Nova_IntArrayPropertyMap_functionMap_Nova_last,
-0,
 0,
 0,
 0,
@@ -14310,7 +14200,6 @@ nova_datastruct_list_IntArrayIterator_Extension_VTable nova_datastruct_list_IntA
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -14322,7 +14211,6 @@ nova_datastruct_list_IntArrayIterator_IntArrayIteratorFunctionMap_Extension_VTab
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -14592,7 +14480,6 @@ nova_datastruct_list_IntArrayIterator_IntArrayIteratorPropertyMap_Extension_VTab
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -14619,7 +14506,7 @@ nova_datastruct_list_IntRange_Extension_VTable nova_datastruct_list_IntRange_Ext
 (nova_datastruct_list_Nova_List*(*)(nova_datastruct_list_Nova_List*, nova_exception_Nova_ExceptionData*, nova_datastruct_list_Nova_List_closure288_Nova_func nova_datastruct_list_Nova_List_Nova_func, void* nova_datastruct_list_Nova_List_ref_Nova_func, void* func_context))nova_datastruct_list_Nova_List_0_Nova_forEach,
 (nova_datastruct_list_Nova_List*(*)(nova_datastruct_list_Nova_List*, nova_exception_Nova_ExceptionData*, nova_datastruct_list_Nova_List_closure292_Nova_mapFunc nova_datastruct_list_Nova_List_Nova_mapFunc, void* nova_datastruct_list_Nova_List_ref_Nova_mapFunc, void* mapFunc_context))nova_datastruct_list_Nova_IntRange_0_Nova_map,
 (char(*)(nova_datastruct_list_Nova_List*, nova_exception_Nova_ExceptionData*, nova_datastruct_list_Nova_List_closure296_Nova_anyFunc nova_datastruct_list_Nova_List_Nova_anyFunc, void* nova_datastruct_list_Nova_List_ref_Nova_anyFunc, void* anyFunc_context))nova_datastruct_list_Nova_IntRange_0_Nova_any,
-(char(*)(nova_datastruct_list_Nova_List*, nova_exception_Nova_ExceptionData*, nova_datastruct_list_Nova_List_closure300_Nova_allFunc nova_datastruct_list_Nova_List_Nova_allFunc, void* nova_datastruct_list_Nova_List_ref_Nova_allFunc, void* allFunc_context, int))nova_datastruct_list_Nova_IntRange_0_Nova_all,
+(char(*)(nova_datastruct_list_Nova_List*, nova_exception_Nova_ExceptionData*, nova_datastruct_list_Nova_List_closure300_Nova_allFunc nova_datastruct_list_Nova_List_Nova_allFunc, void* nova_datastruct_list_Nova_List_ref_Nova_allFunc, void* allFunc_context, int))nova_datastruct_list_Nova_List_0_Nova_all,
 (nova_datastruct_list_Nova_List*(*)(nova_datastruct_list_Nova_List*, nova_exception_Nova_ExceptionData*, nova_datastruct_list_Nova_List_closure304_Nova_filterFunc nova_datastruct_list_Nova_List_Nova_filterFunc, void* nova_datastruct_list_Nova_List_ref_Nova_filterFunc, void* filterFunc_context))nova_datastruct_list_Nova_IntRange_0_Nova_filter,
 (nova_datastruct_list_Nova_List*(*)(nova_datastruct_list_Nova_List*, nova_exception_Nova_ExceptionData*, int))nova_datastruct_list_Nova_IntRange_Nova_take,
 (nova_datastruct_list_Nova_List*(*)(nova_datastruct_list_Nova_List*, nova_exception_Nova_ExceptionData*, int))nova_datastruct_list_Nova_IntRange_Nova_skip,
@@ -14632,7 +14519,6 @@ nova_datastruct_list_IntRange_Extension_VTable nova_datastruct_list_IntRange_Ext
 (nova_Nova_Object*(*)(nova_datastruct_list_Nova_List*, nova_exception_Nova_ExceptionData*, nova_Nova_Object*))nova_datastruct_list_Nova_IntRange_Mutator_Nova_first,
 (nova_Nova_Object*(*)(nova_datastruct_list_Nova_List*, nova_exception_Nova_ExceptionData*))nova_datastruct_list_Nova_IntRange_Accessor_Nova_last,
 (nova_Nova_Object*(*)(nova_datastruct_list_Nova_List*, nova_exception_Nova_ExceptionData*, nova_Nova_Object*))nova_datastruct_list_Nova_IntRange_Mutator_Nova_last,
-0,
 0,
 0,
 0,
@@ -14874,7 +14760,6 @@ nova_datastruct_list_IntRange_IntRangeFunctionMap_Extension_VTable nova_datastru
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -14928,7 +14813,6 @@ nova_datastruct_list_IntRange_IntRangePropertyMap_Extension_VTable nova_datastru
 (int(*)(nova_datastruct_list_Nova_ListPropertyMap*, nova_exception_Nova_ExceptionData*, nova_datastruct_list_Nova_List*))nova_datastruct_list_Nova_IntRangePropertyMap_functionMap0_Nova_count,
 (nova_Nova_Object*(*)(nova_datastruct_list_Nova_ListPropertyMap*, nova_exception_Nova_ExceptionData*, nova_datastruct_list_Nova_List*))nova_datastruct_list_Nova_IntRangePropertyMap_functionMap0_Nova_first,
 (nova_Nova_Object*(*)(nova_datastruct_list_Nova_ListPropertyMap*, nova_exception_Nova_ExceptionData*, nova_datastruct_list_Nova_List*))nova_datastruct_list_Nova_IntRangePropertyMap_functionMap0_Nova_last,
-0,
 0,
 0,
 0,
@@ -15156,7 +15040,6 @@ nova_datastruct_list_IntRangeIterator_Extension_VTable nova_datastruct_list_IntR
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -15168,7 +15051,6 @@ nova_datastruct_list_IntRangeIterator_IntRangeIteratorFunctionMap_Extension_VTab
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -15438,7 +15320,6 @@ nova_datastruct_list_IntRangeIterator_IntRangeIteratorPropertyMap_Extension_VTab
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -15579,7 +15460,6 @@ nova_datastruct_list_Iterable_Extension_VTable nova_datastruct_list_Iterable_Ext
 0,
 0,
 0,
-0,
 },
 };
 
@@ -15588,7 +15468,6 @@ nova_datastruct_list_Iterable_IterableFunctionMap_Extension_VTable nova_datastru
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -15858,7 +15737,6 @@ nova_datastruct_list_Iterable_IterablePropertyMap_Extension_VTable nova_datastru
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -15999,7 +15877,6 @@ nova_datastruct_list_Iterator_Extension_VTable nova_datastruct_list_Iterator_Ext
 0,
 0,
 0,
-0,
 },
 };
 
@@ -16008,7 +15885,6 @@ nova_datastruct_list_Iterator_IteratorFunctionMap_Extension_VTable nova_datastru
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -16278,7 +16154,6 @@ nova_datastruct_list_Iterator_IteratorPropertyMap_Extension_VTable nova_datastru
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -16318,7 +16193,6 @@ nova_datastruct_list_LinkedList_Extension_VTable nova_datastruct_list_LinkedList
 (nova_Nova_Object*(*)(nova_datastruct_list_Nova_List*, nova_exception_Nova_ExceptionData*, nova_Nova_Object*))nova_datastruct_list_Nova_LinkedList_Mutator_Nova_first,
 (nova_Nova_Object*(*)(nova_datastruct_list_Nova_List*, nova_exception_Nova_ExceptionData*))nova_datastruct_list_Nova_LinkedList_Accessor_Nova_last,
 (nova_Nova_Object*(*)(nova_datastruct_list_Nova_List*, nova_exception_Nova_ExceptionData*, nova_Nova_Object*))nova_datastruct_list_Nova_LinkedList_Mutator_Nova_last,
-0,
 0,
 0,
 0,
@@ -16464,13 +16338,12 @@ nova_datastruct_list_LinkedList_LinkedListFunctionMap_Extension_VTable nova_data
 (nova_datastruct_list_Nova_List*(*)(nova_datastruct_list_Nova_ListFunctionMap*, nova_exception_Nova_ExceptionData*, nova_datastruct_list_Nova_List*, nova_datastruct_list_Nova_ListFunctionMap_closure463_Nova_func nova_datastruct_list_Nova_ListFunctionMap_Nova_func, void* nova_datastruct_list_Nova_ListFunctionMap_ref_Nova_func, void* func_context))nova_datastruct_list_Nova_LinkedListFunctionMap_functionMap0_Nova_forEach,
 (nova_datastruct_list_Nova_List*(*)(nova_datastruct_list_Nova_ListFunctionMap*, nova_exception_Nova_ExceptionData*, nova_datastruct_list_Nova_List*, nova_datastruct_list_Nova_ListFunctionMap_closure464_Nova_mapFunc nova_datastruct_list_Nova_ListFunctionMap_Nova_mapFunc, void* nova_datastruct_list_Nova_ListFunctionMap_ref_Nova_mapFunc, void* mapFunc_context))nova_datastruct_list_Nova_LinkedListFunctionMap_functionMap0_Nova_map,
 (char(*)(nova_datastruct_list_Nova_ListFunctionMap*, nova_exception_Nova_ExceptionData*, nova_datastruct_list_Nova_List*, nova_datastruct_list_Nova_ListFunctionMap_closure465_Nova_anyFunc nova_datastruct_list_Nova_ListFunctionMap_Nova_anyFunc, void* nova_datastruct_list_Nova_ListFunctionMap_ref_Nova_anyFunc, void* anyFunc_context))nova_datastruct_list_Nova_LinkedListFunctionMap_functionMap0_Nova_any,
-(char(*)(nova_datastruct_list_Nova_ListFunctionMap*, nova_exception_Nova_ExceptionData*, nova_datastruct_list_Nova_List*, nova_datastruct_list_Nova_ListFunctionMap_closure466_Nova_allFunc nova_datastruct_list_Nova_ListFunctionMap_Nova_allFunc, void* nova_datastruct_list_Nova_ListFunctionMap_ref_Nova_allFunc, void* allFunc_context, char))nova_datastruct_list_Nova_ListFunctionMap_functionMap0_Nova_all,
+(char(*)(nova_datastruct_list_Nova_ListFunctionMap*, nova_exception_Nova_ExceptionData*, nova_datastruct_list_Nova_List*, nova_datastruct_list_Nova_ListFunctionMap_closure466_Nova_allFunc nova_datastruct_list_Nova_ListFunctionMap_Nova_allFunc, void* nova_datastruct_list_Nova_ListFunctionMap_ref_Nova_allFunc, void* allFunc_context, char))nova_datastruct_list_Nova_LinkedListFunctionMap_functionMap0_Nova_all,
 (nova_datastruct_list_Nova_List*(*)(nova_datastruct_list_Nova_ListFunctionMap*, nova_exception_Nova_ExceptionData*, nova_datastruct_list_Nova_List*, nova_datastruct_list_Nova_ListFunctionMap_closure467_Nova_filterFunc nova_datastruct_list_Nova_ListFunctionMap_Nova_filterFunc, void* nova_datastruct_list_Nova_ListFunctionMap_ref_Nova_filterFunc, void* filterFunc_context))nova_datastruct_list_Nova_LinkedListFunctionMap_functionMap0_Nova_filter,
 (nova_datastruct_list_Nova_List*(*)(nova_datastruct_list_Nova_ListFunctionMap*, nova_exception_Nova_ExceptionData*, nova_datastruct_list_Nova_List*, int))nova_datastruct_list_Nova_LinkedListFunctionMap_functionMap0_Nova_take,
 (nova_datastruct_list_Nova_List*(*)(nova_datastruct_list_Nova_ListFunctionMap*, nova_exception_Nova_ExceptionData*, nova_datastruct_list_Nova_List*, int))nova_datastruct_list_Nova_LinkedListFunctionMap_functionMap0_Nova_skip,
 (nova_Nova_Object*(*)(nova_datastruct_list_Nova_ListFunctionMap*, nova_exception_Nova_ExceptionData*, nova_datastruct_list_Nova_List*, nova_datastruct_list_Nova_ListFunctionMap_closure470_Nova_func nova_datastruct_list_Nova_ListFunctionMap_Nova_func, void* nova_datastruct_list_Nova_ListFunctionMap_ref_Nova_func, void* func_context))nova_datastruct_list_Nova_LinkedListFunctionMap_functionMap0_Nova_firstWhere,
 (nova_Nova_String*(*)(nova_datastruct_list_Nova_ListFunctionMap*, nova_exception_Nova_ExceptionData*, nova_datastruct_list_Nova_List*, nova_Nova_String*))nova_datastruct_list_Nova_ListFunctionMap_functionMap0_Nova_join,
-0,
 0,
 0,
 0,
@@ -16701,7 +16574,6 @@ nova_datastruct_list_LinkedList_LinkedListPropertyMap_Extension_VTable nova_data
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -16842,7 +16714,6 @@ nova_datastruct_list_LinkedListIterator_Extension_VTable nova_datastruct_list_Li
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -16854,7 +16725,6 @@ nova_datastruct_list_LinkedListIterator_LinkedListIteratorFunctionMap_Extension_
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -17124,7 +16994,6 @@ nova_datastruct_list_LinkedListIterator_LinkedListIteratorPropertyMap_Extension_
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -17164,7 +17033,6 @@ nova_datastruct_list_List_Extension_VTable nova_datastruct_list_List_Extension_V
 (nova_Nova_Object*(*)(nova_datastruct_list_Nova_List*, nova_exception_Nova_ExceptionData*, nova_Nova_Object*))nova_datastruct_list_Nova_List_Mutator_Nova_first,
 (nova_Nova_Object*(*)(nova_datastruct_list_Nova_List*, nova_exception_Nova_ExceptionData*))nova_datastruct_list_Nova_List_Accessor_Nova_last,
 (nova_Nova_Object*(*)(nova_datastruct_list_Nova_List*, nova_exception_Nova_ExceptionData*, nova_Nova_Object*))nova_datastruct_list_Nova_List_Mutator_Nova_last,
-0,
 0,
 0,
 0,
@@ -17403,7 +17271,6 @@ nova_datastruct_list_List_ListFunctionMap_Extension_VTable nova_datastruct_list_
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -17544,7 +17411,6 @@ nova_datastruct_list_List_ListPropertyMap_Extension_VTable nova_datastruct_list_
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -17556,7 +17422,6 @@ nova_datastruct_list_ListNode_Extension_VTable nova_datastruct_list_ListNode_Ext
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -17826,7 +17691,6 @@ nova_datastruct_list_ListNode_ListNodeFunctionMap_Extension_VTable nova_datastru
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -17838,7 +17702,6 @@ nova_datastruct_list_ListNode_ListNodePropertyMap_Extension_VTable nova_datastru
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -18108,7 +17971,6 @@ nova_datastruct_list_NoSuchElementException_Extension_VTable nova_datastruct_lis
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_exception_Nova_Exception_Nova_toString,
@@ -18120,7 +17982,6 @@ nova_datastruct_list_NoSuchElementException_NoSuchElementExceptionFunctionMap_Ex
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -18391,7 +18252,6 @@ nova_datastruct_list_NoSuchElementException_NoSuchElementExceptionPropertyMap_Ex
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -18532,7 +18392,6 @@ nova_datastruct_list_OrderedList_Extension_VTable nova_datastruct_list_OrderedLi
 0,
 0,
 0,
-0,
 },
 };
 
@@ -18541,7 +18400,6 @@ nova_datastruct_list_OrderedList_OrderedListFunctionMap_Extension_VTable nova_da
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -18811,7 +18669,6 @@ nova_datastruct_list_OrderedList_OrderedListPropertyMap_Extension_VTable nova_da
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -18851,7 +18708,6 @@ nova_datastruct_list_Queue_Extension_VTable nova_datastruct_list_Queue_Extension
 (nova_Nova_Object*(*)(nova_datastruct_list_Nova_List*, nova_exception_Nova_ExceptionData*, nova_Nova_Object*))nova_datastruct_list_Nova_Queue_Mutatorfunc0_Nova_first,
 (nova_Nova_Object*(*)(nova_datastruct_list_Nova_List*, nova_exception_Nova_ExceptionData*))nova_datastruct_list_Nova_Queue_Accessorfunc_Nova_last,
 (nova_Nova_Object*(*)(nova_datastruct_list_Nova_List*, nova_exception_Nova_ExceptionData*, nova_Nova_Object*))nova_datastruct_list_Nova_Queue_Mutatorfunc0_Nova_last,
-0,
 0,
 0,
 0,
@@ -19093,7 +18949,6 @@ nova_datastruct_list_Queue_QueueFunctionMap_Extension_VTable nova_datastruct_lis
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -19234,7 +19089,6 @@ nova_datastruct_list_Queue_QueuePropertyMap_Extension_VTable nova_datastruct_lis
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -19246,7 +19100,6 @@ nova_datastruct_list_Stack_Extension_VTable nova_datastruct_list_Stack_Extension
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -19516,7 +19369,6 @@ nova_datastruct_list_Stack_StackFunctionMap_Extension_VTable nova_datastruct_lis
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -19528,7 +19380,6 @@ nova_datastruct_list_Stack_StackPropertyMap_Extension_VTable nova_datastruct_lis
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -19798,7 +19649,6 @@ nova_datastruct_list_StringCharArray_Extension_VTable nova_datastruct_list_Strin
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_datastruct_list_Nova_Array_Nova_toString,
@@ -19848,7 +19698,7 @@ nova_datastruct_list_StringCharArray_StringCharArrayFunctionMap_Extension_VTable
 (nova_datastruct_list_Nova_List*(*)(nova_datastruct_list_Nova_ListFunctionMap*, nova_exception_Nova_ExceptionData*, nova_datastruct_list_Nova_List*, nova_datastruct_list_Nova_ListFunctionMap_closure463_Nova_func nova_datastruct_list_Nova_ListFunctionMap_Nova_func, void* nova_datastruct_list_Nova_ListFunctionMap_ref_Nova_func, void* func_context))nova_datastruct_list_Nova_CharArrayFunctionMap_functionMap_Nova_forEach,
 (nova_datastruct_list_Nova_List*(*)(nova_datastruct_list_Nova_ListFunctionMap*, nova_exception_Nova_ExceptionData*, nova_datastruct_list_Nova_List*, nova_datastruct_list_Nova_ListFunctionMap_closure464_Nova_mapFunc nova_datastruct_list_Nova_ListFunctionMap_Nova_mapFunc, void* nova_datastruct_list_Nova_ListFunctionMap_ref_Nova_mapFunc, void* mapFunc_context))nova_datastruct_list_Nova_CharArrayFunctionMap_functionMap_Nova_map,
 (char(*)(nova_datastruct_list_Nova_ListFunctionMap*, nova_exception_Nova_ExceptionData*, nova_datastruct_list_Nova_List*, nova_datastruct_list_Nova_ListFunctionMap_closure465_Nova_anyFunc nova_datastruct_list_Nova_ListFunctionMap_Nova_anyFunc, void* nova_datastruct_list_Nova_ListFunctionMap_ref_Nova_anyFunc, void* anyFunc_context))nova_datastruct_list_Nova_CharArrayFunctionMap_functionMap_Nova_any,
-(char(*)(nova_datastruct_list_Nova_ListFunctionMap*, nova_exception_Nova_ExceptionData*, nova_datastruct_list_Nova_List*, nova_datastruct_list_Nova_ListFunctionMap_closure466_Nova_allFunc nova_datastruct_list_Nova_ListFunctionMap_Nova_allFunc, void* nova_datastruct_list_Nova_ListFunctionMap_ref_Nova_allFunc, void* allFunc_context, char))nova_datastruct_list_Nova_ListFunctionMap_functionMap0_Nova_all,
+(char(*)(nova_datastruct_list_Nova_ListFunctionMap*, nova_exception_Nova_ExceptionData*, nova_datastruct_list_Nova_List*, nova_datastruct_list_Nova_ListFunctionMap_closure466_Nova_allFunc nova_datastruct_list_Nova_ListFunctionMap_Nova_allFunc, void* nova_datastruct_list_Nova_ListFunctionMap_ref_Nova_allFunc, void* allFunc_context, char))nova_datastruct_list_Nova_CharArrayFunctionMap_functionMap_Nova_all,
 (nova_datastruct_list_Nova_List*(*)(nova_datastruct_list_Nova_ListFunctionMap*, nova_exception_Nova_ExceptionData*, nova_datastruct_list_Nova_List*, nova_datastruct_list_Nova_ListFunctionMap_closure467_Nova_filterFunc nova_datastruct_list_Nova_ListFunctionMap_Nova_filterFunc, void* nova_datastruct_list_Nova_ListFunctionMap_ref_Nova_filterFunc, void* filterFunc_context))nova_datastruct_list_Nova_CharArrayFunctionMap_functionMap_Nova_filter,
 (nova_datastruct_list_Nova_List*(*)(nova_datastruct_list_Nova_ListFunctionMap*, nova_exception_Nova_ExceptionData*, nova_datastruct_list_Nova_List*, int))nova_datastruct_list_Nova_CharArrayFunctionMap_functionMap_Nova_take,
 (nova_datastruct_list_Nova_List*(*)(nova_datastruct_list_Nova_ListFunctionMap*, nova_exception_Nova_ExceptionData*, nova_datastruct_list_Nova_List*, int))nova_datastruct_list_Nova_CharArrayFunctionMap_functionMap_Nova_skip,
@@ -19944,13 +19794,11 @@ nova_datastruct_list_StringCharArray_StringCharArrayFunctionMap_Extension_VTable
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
 nova_Nova_Object_Accessor_Nova_hashCodeLong,
 nova_datastruct_list_Nova_CharArrayFunctionMap_functionMapCharArrayFunctionMap0_Nova_construct,
-nova_datastruct_list_Nova_ArrayFunctionMap_functionMapArrayFunctionMap1_Nova_construct,
 nova_datastruct_list_Nova_StringCharArrayFunctionMap_functionMapStringCharArrayFunctionMap1_Nova_construct,
 nova_datastruct_list_Nova_CharArrayFunctionMap_functionMap_Nova_addUnique,
 nova_datastruct_list_Nova_CharArrayFunctionMap_functionMap_Nova_cloneData,
@@ -20094,7 +19942,6 @@ nova_datastruct_list_StringCharArray_StringCharArrayPropertyMap_Extension_VTable
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -20106,7 +19953,6 @@ nova_datastruct_list_SubstringCharArray_Extension_VTable nova_datastruct_list_Su
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -20376,7 +20222,6 @@ nova_datastruct_list_SubstringCharArray_SubstringCharArrayFunctionMap_Extension_
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -20388,7 +20233,6 @@ nova_datastruct_list_SubstringCharArray_SubstringCharArrayPropertyMap_Extension_
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -20658,7 +20502,6 @@ nova_exception_Backtraces_Extension_VTable nova_exception_Backtraces_Extension_V
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -20670,7 +20513,6 @@ nova_exception_Backtraces_BacktracesFunctionMap_Extension_VTable nova_exception_
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -20940,7 +20782,6 @@ nova_exception_Backtraces_BacktracesPropertyMap_Extension_VTable nova_exception_
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -20952,7 +20793,6 @@ nova_exception_CaughtException_Extension_VTable nova_exception_CaughtException_E
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -21222,7 +21062,6 @@ nova_exception_CaughtException_CaughtExceptionFunctionMap_Extension_VTable nova_
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -21234,7 +21073,6 @@ nova_exception_CaughtException_CaughtExceptionPropertyMap_Extension_VTable nova_
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -21504,7 +21342,6 @@ nova_exception_DivideByZeroException_Extension_VTable nova_exception_DivideByZer
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_exception_Nova_Exception_Nova_toString,
@@ -21516,7 +21353,6 @@ nova_exception_DivideByZeroException_DivideByZeroExceptionFunctionMap_Extension_
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -21787,7 +21623,6 @@ nova_exception_DivideByZeroException_DivideByZeroExceptionPropertyMap_Extension_
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -21928,7 +21763,6 @@ nova_exception_Exception_Extension_VTable nova_exception_Exception_Extension_VTa
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_exception_Nova_Exception_Nova_toString,
@@ -21940,7 +21774,6 @@ nova_exception_Exception_ExceptionFunctionMap_Extension_VTable nova_exception_Ex
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -22211,7 +22044,6 @@ nova_exception_Exception_ExceptionPropertyMap_Extension_VTable nova_exception_Ex
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -22223,7 +22055,6 @@ nova_exception_ExceptionData_Extension_VTable nova_exception_ExceptionData_Exten
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -22493,7 +22324,6 @@ nova_exception_ExceptionData_ExceptionDataFunctionMap_Extension_VTable nova_exce
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -22505,7 +22335,6 @@ nova_exception_ExceptionData_ExceptionDataPropertyMap_Extension_VTable nova_exce
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -22775,7 +22604,6 @@ nova_exception_InvalidArgumentException_Extension_VTable nova_exception_InvalidA
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_exception_Nova_Exception_Nova_toString,
@@ -22787,7 +22615,6 @@ nova_exception_InvalidArgumentException_InvalidArgumentExceptionFunctionMap_Exte
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -23058,7 +22885,6 @@ nova_exception_InvalidArgumentException_InvalidArgumentExceptionPropertyMap_Exte
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -23199,7 +23025,6 @@ nova_exception_InvalidOperationException_Extension_VTable nova_exception_Invalid
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_exception_Nova_Exception_Nova_toString,
@@ -23211,7 +23036,6 @@ nova_exception_InvalidOperationException_InvalidOperationExceptionFunctionMap_Ex
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -23482,7 +23306,6 @@ nova_exception_InvalidOperationException_InvalidOperationExceptionPropertyMap_Ex
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -23623,7 +23446,6 @@ nova_exception_UnimplementedOperationException_Extension_VTable nova_exception_U
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_exception_Nova_Exception_Nova_toString,
@@ -23635,7 +23457,6 @@ nova_exception_UnimplementedOperationException_UnimplementedOperationExceptionFu
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -23906,7 +23727,6 @@ nova_exception_UnimplementedOperationException_UnimplementedOperationExceptionPr
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -23918,7 +23738,6 @@ nova_gc_GC_Extension_VTable nova_gc_GC_Extension_VTable_val =
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -24188,7 +24007,6 @@ nova_gc_GC_GCFunctionMap_Extension_VTable nova_gc_GC_GCFunctionMap_Extension_VTa
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -24200,7 +24018,6 @@ nova_gc_GC_GCPropertyMap_Extension_VTable nova_gc_GC_GCPropertyMap_Extension_VTa
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -24470,7 +24287,6 @@ nova_io_Console_Extension_VTable nova_io_Console_Extension_VTable_val =
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -24482,7 +24298,6 @@ nova_io_Console_ConsoleFunctionMap_Extension_VTable nova_io_Console_ConsoleFunct
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -24752,7 +24567,6 @@ nova_io_Console_ConsolePropertyMap_Extension_VTable nova_io_Console_ConsolePrope
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -24764,7 +24578,6 @@ nova_io_Curl_Extension_VTable nova_io_Curl_Extension_VTable_val =
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -25034,7 +24847,6 @@ nova_io_Curl_CurlFunctionMap_Extension_VTable nova_io_Curl_CurlFunctionMap_Exten
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -25046,7 +24858,6 @@ nova_io_Curl_CurlPropertyMap_Extension_VTable nova_io_Curl_CurlPropertyMap_Exten
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -25316,7 +25127,6 @@ nova_io_File_Extension_VTable nova_io_File_Extension_VTable_val =
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_io_Nova_File_Nova_toString,
@@ -25328,7 +25138,6 @@ nova_io_File_FileFunctionMap_Extension_VTable nova_io_File_FileFunctionMap_Exten
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -25598,7 +25407,6 @@ nova_io_File_FilePropertyMap_Extension_VTable nova_io_File_FilePropertyMap_Exten
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -25739,7 +25547,6 @@ nova_io_FileNotFoundException_Extension_VTable nova_io_FileNotFoundException_Ext
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_exception_Nova_Exception_Nova_toString,
@@ -25751,7 +25558,6 @@ nova_io_FileNotFoundException_FileNotFoundExceptionFunctionMap_Extension_VTable 
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -26022,7 +25828,6 @@ nova_io_FileNotFoundException_FileNotFoundExceptionPropertyMap_Extension_VTable 
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -26163,7 +25968,6 @@ nova_io_FileReader_Extension_VTable nova_io_FileReader_Extension_VTable_val =
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -26175,7 +25979,6 @@ nova_io_FileReader_FileReaderFunctionMap_Extension_VTable nova_io_FileReader_Fil
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -26445,7 +26248,6 @@ nova_io_FileReader_FileReaderPropertyMap_Extension_VTable nova_io_FileReader_Fil
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -26457,7 +26259,6 @@ nova_io_FileWriter_Extension_VTable nova_io_FileWriter_Extension_VTable_val =
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -26728,7 +26529,6 @@ nova_io_FileWriter_FileWriterFunctionMap_Extension_VTable nova_io_FileWriter_Fil
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -26740,7 +26540,6 @@ nova_io_FileWriter_FileWriterPropertyMap_Extension_VTable nova_io_FileWriter_Fil
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -27010,7 +26809,6 @@ nova_io_InputStream_Extension_VTable nova_io_InputStream_Extension_VTable_val =
 0,
 0,
 0,
-0,
 },
 };
 
@@ -27019,7 +26817,6 @@ nova_io_InputStream_InputStreamFunctionMap_Extension_VTable nova_io_InputStream_
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -27289,7 +27086,6 @@ nova_io_InputStream_InputStreamPropertyMap_Extension_VTable nova_io_InputStream_
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -27301,7 +27097,6 @@ nova_io_OutputStream_Extension_VTable nova_io_OutputStream_Extension_VTable_val 
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -27572,7 +27367,6 @@ nova_io_OutputStream_OutputStreamFunctionMap_Extension_VTable nova_io_OutputStre
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -27584,7 +27378,6 @@ nova_io_OutputStream_OutputStreamPropertyMap_Extension_VTable nova_io_OutputStre
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -27854,7 +27647,6 @@ nova_io_StreamReader_Extension_VTable nova_io_StreamReader_Extension_VTable_val 
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -27866,7 +27658,6 @@ nova_io_StreamReader_StreamReaderFunctionMap_Extension_VTable nova_io_StreamRead
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -28136,7 +27927,6 @@ nova_io_StreamReader_StreamReaderPropertyMap_Extension_VTable nova_io_StreamRead
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -28148,7 +27938,6 @@ nova_math_ArithmeticSequence_Extension_VTable nova_math_ArithmeticSequence_Exten
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -28418,7 +28207,6 @@ nova_math_ArithmeticSequence_ArithmeticSequenceFunctionMap_Extension_VTable nova
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -28430,7 +28218,6 @@ nova_math_ArithmeticSequence_ArithmeticSequencePropertyMap_Extension_VTable nova
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -28700,7 +28487,6 @@ nova_math_Diekstra_Extension_VTable nova_math_Diekstra_Extension_VTable_val =
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -28712,7 +28498,6 @@ nova_math_Diekstra_DiekstraFunctionMap_Extension_VTable nova_math_Diekstra_Dieks
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -28982,7 +28767,6 @@ nova_math_Diekstra_DiekstraPropertyMap_Extension_VTable nova_math_Diekstra_Dieks
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -28994,7 +28778,6 @@ nova_math_GeometricSequence_Extension_VTable nova_math_GeometricSequence_Extensi
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -29264,7 +29047,6 @@ nova_math_GeometricSequence_GeometricSequenceFunctionMap_Extension_VTable nova_m
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -29276,7 +29058,6 @@ nova_math_GeometricSequence_GeometricSequencePropertyMap_Extension_VTable nova_m
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -29546,7 +29327,6 @@ nova_math_Graph_Extension_VTable nova_math_Graph_Extension_VTable_val =
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -29558,7 +29338,6 @@ nova_math_Graph_GraphFunctionMap_Extension_VTable nova_math_Graph_GraphFunctionM
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -29828,7 +29607,6 @@ nova_math_Graph_GraphPropertyMap_Extension_VTable nova_math_Graph_GraphPropertyM
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -29969,7 +29747,6 @@ nova_math_InvalidNumericStatementException_Extension_VTable nova_math_InvalidNum
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_exception_Nova_Exception_Nova_toString,
@@ -29981,7 +29758,6 @@ nova_math_InvalidNumericStatementException_InvalidNumericStatementExceptionFunct
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -30252,7 +30028,6 @@ nova_math_InvalidNumericStatementException_InvalidNumericStatementExceptionPrope
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -30264,7 +30039,6 @@ nova_math_Math_Extension_VTable nova_math_Math_Extension_VTable_val =
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -30534,7 +30308,6 @@ nova_math_Math_MathFunctionMap_Extension_VTable nova_math_Math_MathFunctionMap_E
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -30546,7 +30319,6 @@ nova_math_Math_MathPropertyMap_Extension_VTable nova_math_Math_MathPropertyMap_E
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -30816,7 +30588,6 @@ nova_math_Matrix_Extension_VTable nova_math_Matrix_Extension_VTable_val =
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_math_Nova_Matrix_Nova_toString,
@@ -30828,7 +30599,6 @@ nova_math_Matrix_MatrixFunctionMap_Extension_VTable nova_math_Matrix_MatrixFunct
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -31098,7 +30868,6 @@ nova_math_Matrix_MatrixPropertyMap_Extension_VTable nova_math_Matrix_MatrixPrope
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -31239,7 +31008,6 @@ nova_math_NumericOperand_Extension_VTable nova_math_NumericOperand_Extension_VTa
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_math_Nova_NumericOperand_Nova_toString,
@@ -31251,7 +31019,6 @@ nova_math_NumericOperand_NumericOperandFunctionMap_Extension_VTable nova_math_Nu
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -31523,7 +31290,6 @@ nova_math_NumericOperand_NumericOperandPropertyMap_Extension_VTable nova_math_Nu
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -31664,7 +31430,6 @@ nova_math_NumericOperation_Extension_VTable nova_math_NumericOperation_Extension
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_math_Nova_NumericOperation_Nova_toString,
@@ -31676,7 +31441,6 @@ nova_math_NumericOperation_NumericOperationFunctionMap_Extension_VTable nova_mat
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -31948,7 +31712,6 @@ nova_math_NumericOperation_NumericOperationPropertyMap_Extension_VTable nova_mat
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -31960,7 +31723,6 @@ nova_math_NumericStatement_Extension_VTable nova_math_NumericStatement_Extension
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -32230,7 +31992,6 @@ nova_math_NumericStatement_NumericStatementFunctionMap_Extension_VTable nova_mat
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -32242,7 +32003,6 @@ nova_math_NumericStatement_NumericStatementPropertyMap_Extension_VTable nova_mat
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -32512,7 +32272,6 @@ nova_math_NumericTree_Extension_VTable nova_math_NumericTree_Extension_VTable_va
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_math_Nova_NumericTree_Nova_toString,
@@ -32524,7 +32283,6 @@ nova_math_NumericTree_NumericTreeFunctionMap_Extension_VTable nova_math_NumericT
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -32794,7 +32552,6 @@ nova_math_NumericTree_NumericTreePropertyMap_Extension_VTable nova_math_NumericT
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -32806,7 +32563,6 @@ nova_math_Polynomial_Extension_VTable nova_math_Polynomial_Extension_VTable_val 
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -33076,7 +32832,6 @@ nova_math_Polynomial_PolynomialFunctionMap_Extension_VTable nova_math_Polynomial
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -33088,7 +32843,6 @@ nova_math_Polynomial_PolynomialPropertyMap_Extension_VTable nova_math_Polynomial
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -33358,7 +33112,6 @@ nova_math_Sequence_Extension_VTable nova_math_Sequence_Extension_VTable_val =
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -33370,7 +33123,6 @@ nova_math_Sequence_SequenceFunctionMap_Extension_VTable nova_math_Sequence_Seque
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -33640,7 +33392,6 @@ nova_math_Sequence_SequencePropertyMap_Extension_VTable nova_math_Sequence_Seque
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -33652,7 +33403,6 @@ nova_math_Statement_Extension_VTable nova_math_Statement_Extension_VTable_val =
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -33922,7 +33672,6 @@ nova_math_Statement_StatementFunctionMap_Extension_VTable nova_math_Statement_St
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -33934,7 +33683,6 @@ nova_math_Statement_StatementPropertyMap_Extension_VTable nova_math_Statement_St
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -34204,7 +33952,6 @@ nova_math_StatementComponent_Extension_VTable nova_math_StatementComponent_Exten
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_math_Nova_StatementComponent_Nova_toString,
@@ -34216,7 +33963,6 @@ nova_math_StatementComponent_StatementComponentFunctionMap_Extension_VTable nova
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -34486,7 +34232,6 @@ nova_math_StatementComponent_StatementComponentPropertyMap_Extension_VTable nova
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -34498,7 +34243,6 @@ nova_math_VariableOperand_Extension_VTable nova_math_VariableOperand_Extension_V
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -34768,7 +34512,6 @@ nova_math_VariableOperand_VariableOperandFunctionMap_Extension_VTable nova_math_
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -34909,7 +34652,6 @@ nova_math_VariableOperand_VariableOperandPropertyMap_Extension_VTable nova_math_
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -34921,7 +34663,6 @@ nova_math_Vector_Extension_VTable nova_math_Vector_Extension_VTable_val =
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -35192,7 +34933,6 @@ nova_math_Vector_VectorFunctionMap_Extension_VTable nova_math_Vector_VectorFunct
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -35334,7 +35074,6 @@ nova_math_Vector_VectorPropertyMap_Extension_VTable nova_math_Vector_VectorPrope
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -35346,7 +35085,6 @@ nova_math_Vector2D_Extension_VTable nova_math_Vector2D_Extension_VTable_val =
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -35617,7 +35355,6 @@ nova_math_Vector2D_Vector2DFunctionMap_Extension_VTable nova_math_Vector2D_Vecto
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -35759,7 +35496,6 @@ nova_math_Vector2D_Vector2DPropertyMap_Extension_VTable nova_math_Vector2D_Vecto
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -35771,7 +35507,6 @@ nova_math_Vector3D_Extension_VTable nova_math_Vector3D_Extension_VTable_val =
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -36042,7 +35777,6 @@ nova_math_Vector3D_Vector3DFunctionMap_Extension_VTable nova_math_Vector3D_Vecto
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -36184,7 +35918,6 @@ nova_math_Vector3D_Vector3DPropertyMap_Extension_VTable nova_math_Vector3D_Vecto
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -36196,7 +35929,6 @@ nova_math_Vector4D_Extension_VTable nova_math_Vector4D_Extension_VTable_val =
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -36467,7 +36199,6 @@ nova_math_Vector4D_Vector4DFunctionMap_Extension_VTable nova_math_Vector4D_Vecto
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -36480,7 +36211,6 @@ nova_math_Vector4D_Vector4DPropertyMap_Extension_VTable nova_math_Vector4D_Vecto
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -36750,7 +36480,6 @@ nova_math_calculus_Calculus_Extension_VTable nova_math_calculus_Calculus_Extensi
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -36762,7 +36491,6 @@ nova_math_calculus_Calculus_CalculusFunctionMap_Extension_VTable nova_math_calcu
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -37032,7 +36760,6 @@ nova_math_calculus_Calculus_CalculusPropertyMap_Extension_VTable nova_math_calcu
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -37044,7 +36771,6 @@ nova_math_huffman_HuffmanTree_Extension_VTable nova_math_huffman_HuffmanTree_Ext
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -37314,12 +37040,10 @@ nova_math_huffman_HuffmanTree_HuffmanTreeFunctionMap_Extension_VTable nova_math_
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
 nova_Nova_Object_Accessor_Nova_hashCodeLong,
-nova_datastruct_Nova_TreeFunctionMap_functionMapTreeFunctionMap_Nova_construct,
 };
 
 
@@ -37327,7 +37051,6 @@ nova_math_huffman_HuffmanTree_HuffmanTreePropertyMap_Extension_VTable nova_math_
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -37598,7 +37321,6 @@ nova_math_logic_Conclusion_Extension_VTable nova_math_logic_Conclusion_Extension
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_math_logic_Nova_LogicalStatement_Nova_toString,
@@ -37610,7 +37332,6 @@ nova_math_logic_Conclusion_ConclusionFunctionMap_Extension_VTable nova_math_logi
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -37881,7 +37602,6 @@ nova_math_logic_Conclusion_ConclusionPropertyMap_Extension_VTable nova_math_logi
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -38022,7 +37742,6 @@ nova_math_logic_Hypothesis_Extension_VTable nova_math_logic_Hypothesis_Extension
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_math_logic_Nova_LogicalStatement_Nova_toString,
@@ -38034,7 +37753,6 @@ nova_math_logic_Hypothesis_HypothesisFunctionMap_Extension_VTable nova_math_logi
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -38305,7 +38023,6 @@ nova_math_logic_Hypothesis_HypothesisPropertyMap_Extension_VTable nova_math_logi
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -38446,7 +38163,6 @@ nova_math_logic_InvalidFormulaException_Extension_VTable nova_math_logic_Invalid
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_exception_Nova_Exception_Nova_toString,
@@ -38458,7 +38174,6 @@ nova_math_logic_InvalidFormulaException_InvalidFormulaExceptionFunctionMap_Exten
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -38729,7 +38444,6 @@ nova_math_logic_InvalidFormulaException_InvalidFormulaExceptionPropertyMap_Exten
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -38870,7 +38584,6 @@ nova_math_logic_LogicalConnective_Extension_VTable nova_math_logic_LogicalConnec
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -38882,7 +38595,6 @@ nova_math_logic_LogicalConnective_LogicalConnectiveFunctionMap_Extension_VTable 
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -39153,7 +38865,6 @@ nova_math_logic_LogicalConnective_LogicalConnectivePropertyMap_Extension_VTable 
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -39294,7 +39005,6 @@ nova_math_logic_LogicalStatement_Extension_VTable nova_math_logic_LogicalStateme
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_math_logic_Nova_LogicalStatement_Nova_toString,
@@ -39306,7 +39016,6 @@ nova_math_logic_LogicalStatement_LogicalStatementFunctionMap_Extension_VTable no
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -39577,7 +39286,6 @@ nova_math_logic_LogicalStatement_LogicalStatementPropertyMap_Extension_VTable no
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -39718,7 +39426,6 @@ nova_math_logic_StatementComponent_Extension_VTable nova_math_logic_StatementCom
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -39730,7 +39437,6 @@ nova_math_logic_StatementComponent_StatementComponentFunctionMap_Extension_VTabl
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -40001,7 +39707,6 @@ nova_math_logic_StatementComponent_StatementComponentPropertyMap_Extension_VTabl
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -40013,7 +39718,6 @@ nova_math_logic_StatementGroup_Extension_VTable nova_math_logic_StatementGroup_E
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -40283,7 +39987,6 @@ nova_math_logic_StatementGroup_StatementGroupFunctionMap_Extension_VTable nova_m
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -40295,7 +39998,6 @@ nova_math_logic_StatementGroup_StatementGroupPropertyMap_Extension_VTable nova_m
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -40565,7 +40267,6 @@ nova_math_logic_StatementLetter_Extension_VTable nova_math_logic_StatementLetter
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -40577,7 +40278,6 @@ nova_math_logic_StatementLetter_StatementLetterFunctionMap_Extension_VTable nova
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -40848,7 +40548,6 @@ nova_math_logic_StatementLetter_StatementLetterPropertyMap_Extension_VTable nova
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -40860,7 +40559,6 @@ nova_math_logic_WFF_Extension_VTable nova_math_logic_WFF_Extension_VTable_val =
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -41130,7 +40828,6 @@ nova_math_logic_WFF_WFFFunctionMap_Extension_VTable nova_math_logic_WFF_WFFFunct
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -41142,7 +40839,6 @@ nova_math_logic_WFF_WFFPropertyMap_Extension_VTable nova_math_logic_WFF_WFFPrope
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -41412,7 +41108,6 @@ nova_meta_Class_Extension_VTable nova_meta_Class_Extension_VTable_val =
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_meta_Nova_Class_Nova_toString,
@@ -41424,7 +41119,6 @@ nova_meta_Class_ClassFunctionMap_Extension_VTable nova_meta_Class_ClassFunctionM
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -41694,7 +41388,6 @@ nova_meta_Class_ClassPropertyMap_Extension_VTable nova_meta_Class_ClassPropertyM
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -41706,7 +41399,6 @@ nova_meta_Field_Extension_VTable nova_meta_Field_Extension_VTable_val =
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -41976,7 +41668,6 @@ nova_meta_Field_FieldFunctionMap_Extension_VTable nova_meta_Field_FieldFunctionM
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -41988,7 +41679,6 @@ nova_meta_Field_FieldPropertyMap_Extension_VTable nova_meta_Field_FieldPropertyM
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -42258,7 +41948,6 @@ nova_meta_FunctionMap_Extension_VTable nova_meta_FunctionMap_Extension_VTable_va
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -42270,7 +41959,6 @@ nova_meta_FunctionMap_FunctionMapFunctionMap_Extension_VTable nova_meta_Function
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -42540,7 +42228,6 @@ nova_meta_FunctionMap_FunctionMapPropertyMap_Extension_VTable nova_meta_Function
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -42552,7 +42239,6 @@ nova_meta_GenericArgument_Extension_VTable nova_meta_GenericArgument_Extension_V
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -42822,7 +42508,6 @@ nova_meta_GenericArgument_GenericArgumentFunctionMap_Extension_VTable nova_meta_
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -42834,7 +42519,6 @@ nova_meta_GenericArgument_GenericArgumentPropertyMap_Extension_VTable nova_meta_
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -43104,7 +42788,6 @@ nova_meta_GenericParameter_Extension_VTable nova_meta_GenericParameter_Extension
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -43116,7 +42799,6 @@ nova_meta_GenericParameter_GenericParameterFunctionMap_Extension_VTable nova_met
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -43386,7 +43068,6 @@ nova_meta_GenericParameter_GenericParameterPropertyMap_Extension_VTable nova_met
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -43398,7 +43079,6 @@ nova_meta_PropertyMap_Extension_VTable nova_meta_PropertyMap_Extension_VTable_va
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -43668,7 +43348,6 @@ nova_meta_PropertyMap_PropertyMapFunctionMap_Extension_VTable nova_meta_Property
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -43680,7 +43359,6 @@ nova_meta_PropertyMap_PropertyMapPropertyMap_Extension_VTable nova_meta_Property
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -43950,7 +43628,6 @@ nova_meta_Type_Extension_VTable nova_meta_Type_Extension_VTable_val =
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -43962,7 +43639,6 @@ nova_meta_Type_TypeFunctionMap_Extension_VTable nova_meta_Type_TypeFunctionMap_E
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -44232,7 +43908,6 @@ nova_meta_Type_TypePropertyMap_Extension_VTable nova_meta_Type_TypePropertyMap_E
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -44244,7 +43919,6 @@ nova_network_ClientSocket_Extension_VTable nova_network_ClientSocket_Extension_V
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -44514,7 +44188,6 @@ nova_network_ClientSocket_ClientSocketFunctionMap_Extension_VTable nova_network_
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -44526,7 +44199,6 @@ nova_network_ClientSocket_ClientSocketPropertyMap_Extension_VTable nova_network_
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -44796,7 +44468,6 @@ nova_network_ConnectionSocket_Extension_VTable nova_network_ConnectionSocket_Ext
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -44808,7 +44479,6 @@ nova_network_ConnectionSocket_ConnectionSocketFunctionMap_Extension_VTable nova_
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -45078,7 +44748,6 @@ nova_network_ConnectionSocket_ConnectionSocketPropertyMap_Extension_VTable nova_
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -45219,7 +44888,6 @@ nova_network_NetworkInputStream_Extension_VTable nova_network_NetworkInputStream
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -45231,7 +44899,6 @@ nova_network_NetworkInputStream_NetworkInputStreamFunctionMap_Extension_VTable n
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -45501,7 +45168,6 @@ nova_network_NetworkInputStream_NetworkInputStreamPropertyMap_Extension_VTable n
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -45513,7 +45179,6 @@ nova_network_NetworkOutputStream_Extension_VTable nova_network_NetworkOutputStre
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -45784,7 +45449,6 @@ nova_network_NetworkOutputStream_NetworkOutputStreamFunctionMap_Extension_VTable
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -45796,7 +45460,6 @@ nova_network_NetworkOutputStream_NetworkOutputStreamPropertyMap_Extension_VTable
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -46066,7 +45729,6 @@ nova_network_ServerSocket_Extension_VTable nova_network_ServerSocket_Extension_V
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -46078,7 +45740,6 @@ nova_network_ServerSocket_ServerSocketFunctionMap_Extension_VTable nova_network_
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -46348,7 +46009,6 @@ nova_network_ServerSocket_ServerSocketPropertyMap_Extension_VTable nova_network_
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -46360,7 +46020,6 @@ nova_network_Socket_Extension_VTable nova_network_Socket_Extension_VTable_val =
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -46630,7 +46289,6 @@ nova_network_Socket_SocketFunctionMap_Extension_VTable nova_network_Socket_Socke
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -46642,7 +46300,6 @@ nova_network_Socket_SocketPropertyMap_Extension_VTable nova_network_Socket_Socke
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -46912,7 +46569,6 @@ nova_operators_EqualsOperator_Extension_VTable nova_operators_EqualsOperator_Ext
 0,
 0,
 0,
-0,
 },
 };
 
@@ -46921,7 +46577,6 @@ nova_operators_EqualsOperator_EqualsOperatorFunctionMap_Extension_VTable nova_op
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -47191,7 +46846,6 @@ nova_operators_EqualsOperator_EqualsOperatorPropertyMap_Extension_VTable nova_op
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -47332,7 +46986,6 @@ nova_operators_MultiplyEqualsOperator_Extension_VTable nova_operators_MultiplyEq
 0,
 0,
 0,
-0,
 },
 };
 
@@ -47341,7 +46994,6 @@ nova_operators_MultiplyEqualsOperator_MultiplyEqualsOperatorFunctionMap_Extensio
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -47611,7 +47263,6 @@ nova_operators_MultiplyEqualsOperator_MultiplyEqualsOperatorPropertyMap_Extensio
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -47752,7 +47403,6 @@ nova_operators_MultiplyOperator_Extension_VTable nova_operators_MultiplyOperator
 0,
 0,
 0,
-0,
 },
 };
 
@@ -47761,7 +47411,6 @@ nova_operators_MultiplyOperator_MultiplyOperatorFunctionMap_Extension_VTable nov
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -48031,7 +47680,6 @@ nova_operators_MultiplyOperator_MultiplyOperatorPropertyMap_Extension_VTable nov
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -48172,7 +47820,6 @@ nova_operators_NotEqualToOperator_Extension_VTable nova_operators_NotEqualToOper
 0,
 0,
 0,
-0,
 },
 };
 
@@ -48181,7 +47828,6 @@ nova_operators_NotEqualToOperator_NotEqualToOperatorFunctionMap_Extension_VTable
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -48451,7 +48097,6 @@ nova_operators_NotEqualToOperator_NotEqualToOperatorPropertyMap_Extension_VTable
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -48592,7 +48237,6 @@ nova_operators_PlusEqualsOperator_Extension_VTable nova_operators_PlusEqualsOper
 0,
 0,
 0,
-0,
 },
 };
 
@@ -48601,7 +48245,6 @@ nova_operators_PlusEqualsOperator_PlusEqualsOperatorFunctionMap_Extension_VTable
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -48871,7 +48514,6 @@ nova_operators_PlusEqualsOperator_PlusEqualsOperatorPropertyMap_Extension_VTable
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -49012,7 +48654,6 @@ nova_operators_PlusOperator_Extension_VTable nova_operators_PlusOperator_Extensi
 0,
 0,
 0,
-0,
 },
 };
 
@@ -49021,7 +48662,6 @@ nova_operators_PlusOperator_PlusOperatorFunctionMap_Extension_VTable nova_operat
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -49291,7 +48931,6 @@ nova_operators_PlusOperator_PlusOperatorPropertyMap_Extension_VTable nova_operat
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -49432,7 +49071,6 @@ nova_primitive_Bool_Extension_VTable nova_primitive_Bool_Extension_VTable_val =
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_primitive_Nova_Bool_Nova_toString,
@@ -49444,7 +49082,6 @@ nova_primitive_Bool_BoolFunctionMap_Extension_VTable nova_primitive_Bool_BoolFun
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -49715,7 +49352,6 @@ nova_primitive_Bool_BoolPropertyMap_Extension_VTable nova_primitive_Bool_BoolPro
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -49856,7 +49492,6 @@ nova_primitive_Null_Extension_VTable nova_primitive_Null_Extension_VTable_val =
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_primitive_Nova_Null_Nova_toString,
@@ -49870,7 +49505,6 @@ nova_primitive_Null_NullFunctionMap_Extension_VTable nova_primitive_Null_NullFun
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -50143,7 +49777,6 @@ nova_primitive_Null_NullPropertyMap_Extension_VTable nova_primitive_Null_NullPro
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -50285,7 +49918,6 @@ nova_primitive_Primitive_Extension_VTable nova_primitive_Primitive_Extension_VTa
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -50297,7 +49929,6 @@ nova_primitive_Primitive_PrimitiveFunctionMap_Extension_VTable nova_primitive_Pr
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -50568,7 +50199,6 @@ nova_primitive_Primitive_PrimitivePropertyMap_Extension_VTable nova_primitive_Pr
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -50709,7 +50339,6 @@ nova_primitive_number_Byte_Extension_VTable nova_primitive_number_Byte_Extension
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_primitive_number_Nova_Byte_Nova_toString,
@@ -50722,7 +50351,6 @@ nova_primitive_number_Byte_ByteFunctionMap_Extension_VTable nova_primitive_numbe
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -50993,7 +50621,6 @@ nova_primitive_number_Byte_BytePropertyMap_Extension_VTable nova_primitive_numbe
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -51134,7 +50761,6 @@ nova_primitive_number_Char_Extension_VTable nova_primitive_number_Char_Extension
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_primitive_number_Nova_Char_Nova_toString,
@@ -51147,7 +50773,6 @@ nova_primitive_number_Char_CharFunctionMap_Extension_VTable nova_primitive_numbe
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -51418,7 +51043,6 @@ nova_primitive_number_Char_CharPropertyMap_Extension_VTable nova_primitive_numbe
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -51559,7 +51183,6 @@ nova_primitive_number_Double_Extension_VTable nova_primitive_number_Double_Exten
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_primitive_number_Nova_Double_Nova_toString,
@@ -51572,7 +51195,6 @@ nova_primitive_number_Double_DoubleFunctionMap_Extension_VTable nova_primitive_n
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -51843,7 +51465,6 @@ nova_primitive_number_Double_DoublePropertyMap_Extension_VTable nova_primitive_n
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -51984,7 +51605,6 @@ nova_primitive_number_Float_Extension_VTable nova_primitive_number_Float_Extensi
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_primitive_number_Nova_Float_Nova_toString,
@@ -51997,7 +51617,6 @@ nova_primitive_number_Float_FloatFunctionMap_Extension_VTable nova_primitive_num
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -52268,7 +51887,6 @@ nova_primitive_number_Float_FloatPropertyMap_Extension_VTable nova_primitive_num
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -52409,7 +52027,6 @@ nova_primitive_number_Int_Extension_VTable nova_primitive_number_Int_Extension_V
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_primitive_number_Nova_Int_Nova_toString,
@@ -52422,7 +52039,6 @@ nova_primitive_number_Int_IntFunctionMap_Extension_VTable nova_primitive_number_
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -52693,7 +52309,6 @@ nova_primitive_number_Int_IntPropertyMap_Extension_VTable nova_primitive_number_
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -52834,7 +52449,6 @@ nova_primitive_number_Integer_Extension_VTable nova_primitive_number_Integer_Ext
 0,
 0,
 0,
-0,
 },
 };
 
@@ -52843,7 +52457,6 @@ nova_primitive_number_Integer_IntegerFunctionMap_Extension_VTable nova_primitive
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -53113,7 +52726,6 @@ nova_primitive_number_Integer_IntegerPropertyMap_Extension_VTable nova_primitive
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -53254,7 +52866,6 @@ nova_primitive_number_Long_Extension_VTable nova_primitive_number_Long_Extension
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_primitive_number_Nova_Long_Nova_toString,
@@ -53267,7 +52878,6 @@ nova_primitive_number_Long_LongFunctionMap_Extension_VTable nova_primitive_numbe
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -53538,7 +53148,6 @@ nova_primitive_number_Long_LongPropertyMap_Extension_VTable nova_primitive_numbe
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -53550,7 +53159,6 @@ nova_primitive_number_Number_Extension_VTable nova_primitive_number_Number_Exten
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -53821,7 +53429,6 @@ nova_primitive_number_Number_NumberFunctionMap_Extension_VTable nova_primitive_n
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -53834,7 +53441,6 @@ nova_primitive_number_Number_NumberPropertyMap_Extension_VTable nova_primitive_n
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -54104,7 +53710,6 @@ nova_primitive_number_RealNumber_Extension_VTable nova_primitive_number_RealNumb
 0,
 0,
 0,
-0,
 },
 };
 
@@ -54113,7 +53718,6 @@ nova_primitive_number_RealNumber_RealNumberFunctionMap_Extension_VTable nova_pri
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -54383,7 +53987,6 @@ nova_primitive_number_RealNumber_RealNumberPropertyMap_Extension_VTable nova_pri
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -54524,7 +54127,6 @@ nova_primitive_number_Short_Extension_VTable nova_primitive_number_Short_Extensi
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_primitive_number_Nova_Short_Nova_toString,
@@ -54537,7 +54139,6 @@ nova_primitive_number_Short_ShortFunctionMap_Extension_VTable nova_primitive_num
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -54808,7 +54409,6 @@ nova_primitive_number_Short_ShortPropertyMap_Extension_VTable nova_primitive_num
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -54820,7 +54420,6 @@ nova_process_Process_Extension_VTable nova_process_Process_Extension_VTable_val 
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -55090,7 +54689,6 @@ nova_process_Process_ProcessFunctionMap_Extension_VTable nova_process_Process_Pr
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -55102,7 +54700,6 @@ nova_process_Process_ProcessPropertyMap_Extension_VTable nova_process_Process_Pr
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -55372,7 +54969,6 @@ nova_regex_Match_Extension_VTable nova_regex_Match_Extension_VTable_val =
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_regex_Nova_Match_Nova_toString,
@@ -55384,7 +54980,6 @@ nova_regex_Match_MatchFunctionMap_Extension_VTable nova_regex_Match_MatchFunctio
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -55654,7 +55249,6 @@ nova_regex_Match_MatchPropertyMap_Extension_VTable nova_regex_Match_MatchPropert
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -55666,7 +55260,6 @@ nova_regex_Pattern_Extension_VTable nova_regex_Pattern_Extension_VTable_val =
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -55936,7 +55529,6 @@ nova_regex_Pattern_PatternFunctionMap_Extension_VTable nova_regex_Pattern_Patter
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -55948,7 +55540,6 @@ nova_regex_Pattern_PatternPropertyMap_Extension_VTable nova_regex_Pattern_Patter
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -56218,7 +55809,6 @@ nova_regex_Regex_Extension_VTable nova_regex_Regex_Extension_VTable_val =
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -56230,7 +55820,6 @@ nova_regex_Regex_RegexFunctionMap_Extension_VTable nova_regex_Regex_RegexFunctio
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -56500,7 +56089,6 @@ nova_regex_Regex_RegexPropertyMap_Extension_VTable nova_regex_Regex_RegexPropert
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -56512,7 +56100,6 @@ nova_security_MD5_Extension_VTable nova_security_MD5_Extension_VTable_val =
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -56782,7 +56369,6 @@ nova_security_MD5_MD5FunctionMap_Extension_VTable nova_security_MD5_MD5FunctionM
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -56794,7 +56380,6 @@ nova_security_MD5_MD5PropertyMap_Extension_VTable nova_security_MD5_MD5PropertyM
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -57064,7 +56649,6 @@ nova_security_Sha256_Extension_VTable nova_security_Sha256_Extension_VTable_val 
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -57076,7 +56660,6 @@ nova_security_Sha256_Sha256FunctionMap_Extension_VTable nova_security_Sha256_Sha
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -57346,7 +56929,6 @@ nova_security_Sha256_Sha256PropertyMap_Extension_VTable nova_security_Sha256_Sha
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -57358,7 +56940,6 @@ nova_serialization_JsonSerializer_Extension_VTable nova_serialization_JsonSerial
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -57628,7 +57209,6 @@ nova_serialization_JsonSerializer_JsonSerializerFunctionMap_Extension_VTable nov
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -57640,7 +57220,6 @@ nova_serialization_JsonSerializer_JsonSerializerPropertyMap_Extension_VTable nov
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -57910,7 +57489,6 @@ nova_star_Frame_Extension_VTable nova_star_Frame_Extension_VTable_val =
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -57922,7 +57500,6 @@ nova_star_Frame_FrameFunctionMap_Extension_VTable nova_star_Frame_FrameFunctionM
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -58192,7 +57769,6 @@ nova_star_Frame_FramePropertyMap_Extension_VTable nova_star_Frame_FramePropertyM
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -58204,7 +57780,6 @@ nova_star_Window_Extension_VTable nova_star_Window_Extension_VTable_val =
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -58474,7 +58049,6 @@ nova_star_Window_WindowFunctionMap_Extension_VTable nova_star_Window_WindowFunct
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -58615,7 +58189,6 @@ nova_star_Window_WindowPropertyMap_Extension_VTable nova_star_Window_WindowPrope
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -58627,7 +58200,6 @@ nova_star_WindowThread_Extension_VTable nova_star_WindowThread_Extension_VTable_
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -58898,7 +58470,6 @@ nova_star_WindowThread_WindowThreadFunctionMap_Extension_VTable nova_star_Window
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -59040,7 +58611,6 @@ nova_star_WindowThread_WindowThreadPropertyMap_Extension_VTable nova_star_Window
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -59052,7 +58622,6 @@ nova_thread_Thread_Extension_VTable nova_thread_Thread_Extension_VTable_val =
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -59323,7 +58892,6 @@ nova_thread_Thread_ThreadFunctionMap_Extension_VTable nova_thread_Thread_ThreadF
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -59465,7 +59033,6 @@ nova_thread_Thread_ThreadPropertyMap_Extension_VTable nova_thread_Thread_ThreadP
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -59477,7 +59044,6 @@ nova_thread_UncaughtExceptionHandler_Extension_VTable nova_thread_UncaughtExcept
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -59748,7 +59314,6 @@ nova_thread_UncaughtExceptionHandler_UncaughtExceptionHandlerFunctionMap_Extensi
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -59761,7 +59326,6 @@ nova_thread_UncaughtExceptionHandler_UncaughtExceptionHandlerPropertyMap_Extensi
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -60031,7 +59595,6 @@ nova_thread_async_Async_Extension_VTable nova_thread_async_Async_Extension_VTabl
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -60043,7 +59606,6 @@ nova_thread_async_Async_AsyncFunctionMap_Extension_VTable nova_thread_async_Asyn
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -60313,7 +59875,6 @@ nova_thread_async_Async_AsyncPropertyMap_Extension_VTable nova_thread_async_Asyn
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -60325,7 +59886,6 @@ nova_thread_async_Task_Extension_VTable nova_thread_async_Task_Extension_VTable_
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -60595,7 +60155,6 @@ nova_thread_async_Task_TaskFunctionMap_Extension_VTable nova_thread_async_Task_T
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -60736,7 +60295,6 @@ nova_thread_async_Task_TaskPropertyMap_Extension_VTable nova_thread_async_Task_T
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -60748,7 +60306,6 @@ nova_time_CumulativeTimer_Extension_VTable nova_time_CumulativeTimer_Extension_V
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -61020,7 +60577,6 @@ nova_time_CumulativeTimer_CumulativeTimerFunctionMap_Extension_VTable nova_time_
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -61034,7 +60590,6 @@ nova_time_CumulativeTimer_CumulativeTimerPropertyMap_Extension_VTable nova_time_
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -61305,7 +60860,6 @@ nova_time_Date_Extension_VTable nova_time_Date_Extension_VTable_val =
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -61317,7 +60871,6 @@ nova_time_Date_DateFunctionMap_Extension_VTable nova_time_Date_DateFunctionMap_E
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -61587,7 +61140,6 @@ nova_time_Date_DatePropertyMap_Extension_VTable nova_time_Date_DatePropertyMap_E
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -61599,7 +61151,6 @@ nova_time_Time_Extension_VTable nova_time_Time_Extension_VTable_val =
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -61869,7 +61420,6 @@ nova_time_Time_TimeFunctionMap_Extension_VTable nova_time_Time_TimeFunctionMap_E
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -62010,7 +61560,6 @@ nova_time_Time_TimePropertyMap_Extension_VTable nova_time_Time_TimePropertyMap_E
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -62022,7 +61571,6 @@ nova_time_Timer_Extension_VTable nova_time_Timer_Extension_VTable_val =
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -62294,7 +61842,6 @@ nova_time_Timer_TimerFunctionMap_Extension_VTable nova_time_Timer_TimerFunctionM
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -62308,7 +61855,6 @@ nova_time_Timer_TimerPropertyMap_Extension_VTable nova_time_Timer_TimerPropertyM
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -62579,7 +62125,6 @@ nova_web_js_json_Json_Extension_VTable nova_web_js_json_Json_Extension_VTable_va
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_web_js_json_Nova_Json_Nova_toString,
@@ -62625,7 +62170,7 @@ nova_web_js_json_Json_JsonFunctionMap_Extension_VTable nova_web_js_json_Json_Jso
 (nova_datastruct_list_Nova_List*(*)(nova_datastruct_list_Nova_ListFunctionMap*, nova_exception_Nova_ExceptionData*, nova_datastruct_list_Nova_List*, nova_datastruct_list_Nova_ListFunctionMap_closure463_Nova_func nova_datastruct_list_Nova_ListFunctionMap_Nova_func, void* nova_datastruct_list_Nova_ListFunctionMap_ref_Nova_func, void* func_context))nova_datastruct_Nova_HashMapFunctionMap_functionMap_Nova_forEach,
 (nova_datastruct_list_Nova_List*(*)(nova_datastruct_list_Nova_ListFunctionMap*, nova_exception_Nova_ExceptionData*, nova_datastruct_list_Nova_List*, nova_datastruct_list_Nova_ListFunctionMap_closure464_Nova_mapFunc nova_datastruct_list_Nova_ListFunctionMap_Nova_mapFunc, void* nova_datastruct_list_Nova_ListFunctionMap_ref_Nova_mapFunc, void* mapFunc_context))nova_datastruct_Nova_HashMapFunctionMap_functionMap_Nova_map,
 (char(*)(nova_datastruct_list_Nova_ListFunctionMap*, nova_exception_Nova_ExceptionData*, nova_datastruct_list_Nova_List*, nova_datastruct_list_Nova_ListFunctionMap_closure465_Nova_anyFunc nova_datastruct_list_Nova_ListFunctionMap_Nova_anyFunc, void* nova_datastruct_list_Nova_ListFunctionMap_ref_Nova_anyFunc, void* anyFunc_context))nova_datastruct_Nova_HashMapFunctionMap_functionMap_Nova_any,
-(char(*)(nova_datastruct_list_Nova_ListFunctionMap*, nova_exception_Nova_ExceptionData*, nova_datastruct_list_Nova_List*, nova_datastruct_list_Nova_ListFunctionMap_closure466_Nova_allFunc nova_datastruct_list_Nova_ListFunctionMap_Nova_allFunc, void* nova_datastruct_list_Nova_ListFunctionMap_ref_Nova_allFunc, void* allFunc_context, char))nova_datastruct_list_Nova_ListFunctionMap_functionMap0_Nova_all,
+(char(*)(nova_datastruct_list_Nova_ListFunctionMap*, nova_exception_Nova_ExceptionData*, nova_datastruct_list_Nova_List*, nova_datastruct_list_Nova_ListFunctionMap_closure466_Nova_allFunc nova_datastruct_list_Nova_ListFunctionMap_Nova_allFunc, void* nova_datastruct_list_Nova_ListFunctionMap_ref_Nova_allFunc, void* allFunc_context, char))nova_datastruct_Nova_HashMapFunctionMap_functionMap_Nova_all,
 (nova_datastruct_list_Nova_List*(*)(nova_datastruct_list_Nova_ListFunctionMap*, nova_exception_Nova_ExceptionData*, nova_datastruct_list_Nova_List*, nova_datastruct_list_Nova_ListFunctionMap_closure467_Nova_filterFunc nova_datastruct_list_Nova_ListFunctionMap_Nova_filterFunc, void* nova_datastruct_list_Nova_ListFunctionMap_ref_Nova_filterFunc, void* filterFunc_context))nova_datastruct_Nova_HashMapFunctionMap_functionMap_Nova_filter,
 (nova_datastruct_list_Nova_List*(*)(nova_datastruct_list_Nova_ListFunctionMap*, nova_exception_Nova_ExceptionData*, nova_datastruct_list_Nova_List*, int))nova_datastruct_Nova_HashMapFunctionMap_functionMap_Nova_take,
 (nova_datastruct_list_Nova_List*(*)(nova_datastruct_list_Nova_ListFunctionMap*, nova_exception_Nova_ExceptionData*, nova_datastruct_list_Nova_List*, int))nova_datastruct_Nova_HashMapFunctionMap_functionMap_Nova_skip,
@@ -62721,12 +62266,10 @@ nova_web_js_json_Json_JsonFunctionMap_Extension_VTable nova_web_js_json_Json_Jso
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
 nova_Nova_Object_Accessor_Nova_hashCodeLong,
-nova_datastruct_Nova_HashMapFunctionMap_functionMapHashMapFunctionMap0_Nova_construct,
 nova_datastruct_Nova_HashMapFunctionMap_functionMap_Nova_add,
 };
 
@@ -62864,7 +62407,6 @@ nova_web_js_json_Json_JsonPropertyMap_Extension_VTable nova_web_js_json_Json_Jso
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -62876,7 +62418,6 @@ nova_web_svg_Svg_Extension_VTable nova_web_svg_Svg_Extension_VTable_val =
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -63146,7 +62687,6 @@ nova_web_svg_Svg_SvgFunctionMap_Extension_VTable nova_web_svg_Svg_SvgFunctionMap
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -63158,7 +62698,6 @@ nova_web_svg_Svg_SvgPropertyMap_Extension_VTable nova_web_svg_Svg_SvgPropertyMap
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -63428,7 +62967,6 @@ nova_web_svg_SvgCircle_Extension_VTable nova_web_svg_SvgCircle_Extension_VTable_
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_web_svg_Nova_SvgCircle_Nova_toString,
@@ -63441,7 +62979,6 @@ nova_web_svg_SvgCircle_SvgCircleFunctionMap_Extension_VTable nova_web_svg_SvgCir
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -63713,7 +63250,6 @@ nova_web_svg_SvgCircle_SvgCirclePropertyMap_Extension_VTable nova_web_svg_SvgCir
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -63725,7 +63261,6 @@ nova_web_svg_SvgComponent_Extension_VTable nova_web_svg_SvgComponent_Extension_V
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -63867,7 +63402,6 @@ nova_web_svg_SvgComponent_SvgComponentFunctionMap_Extension_VTable nova_web_svg_
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -64139,7 +63673,6 @@ nova_web_svg_SvgComponent_SvgComponentPropertyMap_Extension_VTable nova_web_svg_
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -64151,7 +63684,6 @@ nova_web_svg_SvgComponentList_Extension_VTable nova_web_svg_SvgComponentList_Ext
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -64421,7 +63953,6 @@ nova_web_svg_SvgComponentList_SvgComponentListFunctionMap_Extension_VTable nova_
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -64433,7 +63964,6 @@ nova_web_svg_SvgComponentList_SvgComponentListPropertyMap_Extension_VTable nova_
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -64703,7 +64233,6 @@ nova_web_svg_SvgComponentNode_Extension_VTable nova_web_svg_SvgComponentNode_Ext
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -64715,7 +64244,6 @@ nova_web_svg_SvgComponentNode_SvgComponentNodeFunctionMap_Extension_VTable nova_
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -64985,7 +64513,6 @@ nova_web_svg_SvgComponentNode_SvgComponentNodePropertyMap_Extension_VTable nova_
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -64997,7 +64524,6 @@ nova_web_svg_SvgMainComponent_Extension_VTable nova_web_svg_SvgMainComponent_Ext
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -65139,7 +64665,6 @@ nova_web_svg_SvgMainComponent_SvgMainComponentFunctionMap_Extension_VTable nova_
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -65411,7 +64936,6 @@ nova_web_svg_SvgMainComponent_SvgMainComponentPropertyMap_Extension_VTable nova_
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -65423,7 +64947,6 @@ nova_web_svg_no3_No3_Extension_VTable nova_web_svg_no3_No3_Extension_VTable_val 
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -65693,7 +65216,6 @@ nova_web_svg_no3_No3_No3FunctionMap_Extension_VTable nova_web_svg_no3_No3_No3Fun
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -65834,7 +65356,6 @@ nova_web_svg_no3_No3_No3PropertyMap_Extension_VTable nova_web_svg_no3_No3_No3Pro
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -65846,7 +65367,6 @@ nova_web_svg_no3_No3Node_Extension_VTable nova_web_svg_no3_No3Node_Extension_VTa
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -66117,7 +65637,6 @@ nova_web_svg_no3_No3Node_No3NodeFunctionMap_Extension_VTable nova_web_svg_no3_No
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -66258,7 +65777,6 @@ nova_web_svg_no3_No3Node_No3NodePropertyMap_Extension_VTable nova_web_svg_no3_No
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -66270,7 +65788,6 @@ nova_web_svg_no3_No3Select_Extension_VTable nova_web_svg_no3_No3Select_Extension
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -66541,7 +66058,6 @@ nova_web_svg_no3_No3Select_No3SelectFunctionMap_Extension_VTable nova_web_svg_no
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -66682,7 +66198,6 @@ nova_web_svg_no3_No3Select_No3SelectPropertyMap_Extension_VTable nova_web_svg_no
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -66694,7 +66209,6 @@ nova_web_svg_no3_No3SelectAll_Extension_VTable nova_web_svg_no3_No3SelectAll_Ext
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -66965,7 +66479,6 @@ nova_web_svg_no3_No3SelectAll_No3SelectAllFunctionMap_Extension_VTable nova_web_
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -66977,7 +66490,6 @@ nova_web_svg_no3_No3SelectAll_No3SelectAllPropertyMap_Extension_VTable nova_web_
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -67247,7 +66759,6 @@ spectra_InvalidParseException_Extension_VTable spectra_InvalidParseException_Ext
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_exception_Nova_Exception_Nova_toString,
@@ -67259,7 +66770,6 @@ spectra_InvalidParseException_InvalidParseExceptionFunctionMap_Extension_VTable 
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -67530,7 +67040,6 @@ spectra_InvalidParseException_InvalidParseExceptionPropertyMap_Extension_VTable 
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -67542,7 +67051,6 @@ spectra_Spectra_Extension_VTable spectra_Spectra_Extension_VTable_val =
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -67812,7 +67320,6 @@ spectra_Spectra_SpectraFunctionMap_Extension_VTable spectra_Spectra_SpectraFunct
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -67824,7 +67331,6 @@ spectra_Spectra_SpectraPropertyMap_Extension_VTable spectra_Spectra_SpectraPrope
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -68094,7 +67600,6 @@ spectra_SyntaxErrorException_Extension_VTable spectra_SyntaxErrorException_Exten
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_exception_Nova_Exception_Nova_toString,
@@ -68106,7 +67611,6 @@ spectra_SyntaxErrorException_SyntaxErrorExceptionFunctionMap_Extension_VTable sp
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -68377,7 +67881,6 @@ spectra_SyntaxErrorException_SyntaxErrorExceptionPropertyMap_Extension_VTable sp
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -68389,7 +67892,6 @@ spectra_SyntaxMessage_Extension_VTable spectra_SyntaxMessage_Extension_VTable_va
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -68659,7 +68161,6 @@ spectra_SyntaxMessage_SyntaxMessageFunctionMap_Extension_VTable spectra_SyntaxMe
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -68800,7 +68301,6 @@ spectra_SyntaxMessage_SyntaxMessagePropertyMap_Extension_VTable spectra_SyntaxMe
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -68812,7 +68312,6 @@ spectra_engines_CodeGeneratorEngine_Extension_VTable spectra_engines_CodeGenerat
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -69084,7 +68583,6 @@ spectra_engines_CodeGeneratorEngine_CodeGeneratorEngineFunctionMap_Extension_VTa
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -69096,7 +68594,6 @@ spectra_engines_CodeGeneratorEngine_CodeGeneratorEnginePropertyMap_Extension_VTa
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -69366,7 +68863,6 @@ spectra_error_UnimplementedOperationException_Extension_VTable spectra_error_Uni
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_exception_Nova_Exception_Nova_toString,
@@ -69378,7 +68874,6 @@ spectra_error_UnimplementedOperationException_UnimplementedOperationExceptionFun
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -69649,7 +69144,6 @@ spectra_error_UnimplementedOperationException_UnimplementedOperationExceptionPro
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -69661,7 +69155,6 @@ spectra_tree_AnnotationSearchResult_Extension_VTable spectra_tree_AnnotationSear
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -69931,7 +69424,6 @@ spectra_tree_AnnotationSearchResult_AnnotationSearchResultFunctionMap_Extension_
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -69943,7 +69435,6 @@ spectra_tree_AnnotationSearchResult_AnnotationSearchResultPropertyMap_Extension_
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -70213,7 +69704,6 @@ spectra_tree_StatementIterator_Extension_VTable spectra_tree_StatementIterator_E
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -70225,7 +69715,6 @@ spectra_tree_StatementIterator_StatementIteratorFunctionMap_Extension_VTable spe
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -70495,7 +69984,6 @@ spectra_tree_StatementIterator_StatementIteratorPropertyMap_Extension_VTable spe
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -70507,7 +69995,6 @@ spectra_tree_SyntaxTree_Extension_VTable spectra_tree_SyntaxTree_Extension_VTabl
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -70777,7 +70264,6 @@ spectra_tree_SyntaxTree_SyntaxTreeFunctionMap_Extension_VTable spectra_tree_Synt
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -70789,7 +70275,6 @@ spectra_tree_SyntaxTree_SyntaxTreePropertyMap_Extension_VTable spectra_tree_Synt
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -71059,7 +70544,6 @@ spectra_tree_nodes_Abstractable_Extension_VTable spectra_tree_nodes_Abstractable
 0,
 0,
 0,
-0,
 },
 };
 
@@ -71068,7 +70552,6 @@ spectra_tree_nodes_Abstractable_AbstractableFunctionMap_Extension_VTable spectra
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -71338,7 +70821,6 @@ spectra_tree_nodes_Abstractable_AbstractablePropertyMap_Extension_VTable spectra
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -71425,7 +70907,6 @@ spectra_tree_nodes_Accessible_Extension_VTable spectra_tree_nodes_Accessible_Ext
 (char(*)(spectra_tree_nodes_Nova_Accessible*, nova_exception_Nova_ExceptionData*, char))spectra_tree_nodes_Nova_Accessible_Mutator_Nova_safeNavigation,
 (spectra_tree_nodes_Nova_Accessible*(*)(spectra_tree_nodes_Nova_Accessible*, nova_exception_Nova_ExceptionData*))spectra_tree_nodes_Nova_Accessible_Accessor_Nova_accessedNode,
 (spectra_tree_nodes_Nova_Accessible*(*)(spectra_tree_nodes_Nova_Accessible*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Accessible*))spectra_tree_nodes_Nova_Accessible_Mutator_Nova_accessedNode,
-0,
 0,
 0,
 0,
@@ -71651,7 +71132,6 @@ spectra_tree_nodes_Accessible_AccessibleFunctionMap_Extension_VTable spectra_tre
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -71671,7 +71151,6 @@ spectra_tree_nodes_Nova_NodeFunctionMap_functionMap_Nova_writeAnnotationSeparato
 spectra_tree_nodes_Nova_NodeFunctionMap_functionMap_Nova_toNova,
 spectra_tree_nodes_Nova_NodeFunctionMap_functionMap_Nova_writeNova,
 spectra_tree_nodes_Nova_NodeFunctionMap_functionMap_Nova_toString,
-spectra_tree_nodes_Nova_ValueFunctionMap_functionMapValueFunctionMap_Nova_construct,
 spectra_tree_nodes_Nova_ValueFunctionMap_functionMap0_static_Nova_parse,
 spectra_tree_nodes_Nova_ValueFunctionMap_functionMap_Nova_parseType,
 spectra_tree_nodes_Nova_ValueFunctionMap_functionMap_Nova_writeType,
@@ -71682,7 +71161,6 @@ spectra_tree_nodes_Accessible_AccessiblePropertyMap_Extension_VTable spectra_tre
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -71966,7 +71444,6 @@ spectra_tree_nodes_ArgumentList_Extension_VTable spectra_tree_nodes_ArgumentList
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 spectra_tree_nodes_Nova_ArgumentList_Nova_toString,
@@ -72132,7 +71609,6 @@ spectra_tree_nodes_ArgumentList_ArgumentListFunctionMap_Extension_VTable spectra
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -72159,7 +71635,6 @@ spectra_tree_nodes_ArgumentList_ArgumentListPropertyMap_Extension_VTable spectra
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -72440,7 +71915,6 @@ spectra_tree_nodes_ArrayType_Extension_VTable spectra_tree_nodes_ArrayType_Exten
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 spectra_tree_nodes_Nova_Type_Nova_toString,
@@ -72458,7 +71932,6 @@ spectra_tree_nodes_ArrayType_ArrayTypeFunctionMap_Extension_VTable spectra_tree_
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -72733,7 +72206,6 @@ spectra_tree_nodes_ArrayType_ArrayTypePropertyMap_Extension_VTable spectra_tree_
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -72806,7 +72278,6 @@ spectra_tree_nodes_Cast_Extension_VTable spectra_tree_nodes_Cast_Extension_VTabl
 0,
 0,
 (void(*)(spectra_tree_nodes_annotations_Nova_Annotatable*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_annotations_Nova_Annotation*))spectra_tree_nodes_Nova_Node_Nova_addAnnotation,
-0,
 0,
 0,
 0,
@@ -73048,7 +72519,6 @@ spectra_tree_nodes_Cast_CastFunctionMap_Extension_VTable spectra_tree_nodes_Cast
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -73068,7 +72538,6 @@ spectra_tree_nodes_Nova_NodeFunctionMap_functionMap_Nova_writeAnnotationSeparato
 spectra_tree_nodes_Nova_NodeFunctionMap_functionMap_Nova_toNova,
 spectra_tree_nodes_Nova_CastFunctionMap_functionMap_Nova_writeNova,
 spectra_tree_nodes_Nova_NodeFunctionMap_functionMap_Nova_toString,
-spectra_tree_nodes_Nova_ValueFunctionMap_functionMapValueFunctionMap_Nova_construct,
 spectra_tree_nodes_Nova_CastFunctionMap_functionMap_static_Nova_parse,
 spectra_tree_nodes_Nova_ValueFunctionMap_functionMap_Nova_parseType,
 spectra_tree_nodes_Nova_ValueFunctionMap_functionMap_Nova_writeType,
@@ -73079,7 +72548,6 @@ spectra_tree_nodes_Cast_CastPropertyMap_Extension_VTable spectra_tree_nodes_Cast
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -73357,7 +72825,6 @@ spectra_tree_nodes_ClassDeclaration_Extension_VTable spectra_tree_nodes_ClassDec
 0,
 0,
 0,
-0,
 (nova_datastruct_list_Nova_Array*(*)(spectra_tree_nodes_generics_Nova_GenericCompatible*, nova_exception_Nova_ExceptionData*))spectra_tree_nodes_Nova_ClassDeclaration_Accessorfunc_Nova_genericParameters,
 (nova_datastruct_list_Nova_Array*(*)(spectra_tree_nodes_generics_Nova_GenericCompatible*, nova_exception_Nova_ExceptionData*, nova_datastruct_list_Nova_Array*))spectra_tree_nodes_Nova_ClassDeclaration_Mutatorfunc_Nova_genericParameters,
 0,
@@ -73540,7 +73007,6 @@ spectra_tree_nodes_ClassDeclaration_ClassDeclarationFunctionMap_Extension_VTable
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -73560,7 +73026,6 @@ spectra_tree_nodes_Nova_NodeFunctionMap_functionMap_Nova_writeAnnotationSeparato
 spectra_tree_nodes_Nova_ClassDeclarationFunctionMap_functionMap_Nova_toNova,
 spectra_tree_nodes_variables_Nova_VariableDeclarationFunctionMap_functionMap_Nova_writeNova,
 spectra_tree_nodes_Nova_ClassDeclarationFunctionMap_functionMap_Nova_toString,
-spectra_tree_nodes_Nova_ValueFunctionMap_functionMapValueFunctionMap_Nova_construct,
 spectra_tree_nodes_Nova_ClassDeclarationFunctionMap_functionMap_static_Nova_parse,
 spectra_tree_nodes_Nova_ValueFunctionMap_functionMap_Nova_parseType,
 spectra_tree_nodes_Nova_ValueFunctionMap_functionMap_Nova_writeType,
@@ -73626,7 +73091,6 @@ spectra_tree_nodes_ClassDeclaration_ClassDeclarationPropertyMap_Extension_VTable
 0,
 0,
 (char(*)(spectra_tree_nodes_Nova_AbstractablePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Abstractable*))spectra_tree_nodes_Nova_ClassDeclarationPropertyMap_functionMap_Nova_isAbstract,
-0,
 0,
 0,
 0,
@@ -73790,7 +73254,6 @@ spectra_tree_nodes_Identifier_Extension_VTable spectra_tree_nodes_Identifier_Ext
 0,
 0,
 (void(*)(spectra_tree_nodes_annotations_Nova_Annotatable*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_annotations_Nova_Annotation*))spectra_tree_nodes_Nova_Node_Nova_addAnnotation,
-0,
 0,
 0,
 0,
@@ -74032,7 +73495,6 @@ spectra_tree_nodes_Identifier_IdentifierFunctionMap_Extension_VTable spectra_tre
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -74052,7 +73514,6 @@ spectra_tree_nodes_Nova_NodeFunctionMap_functionMap_Nova_writeAnnotationSeparato
 spectra_tree_nodes_Nova_NodeFunctionMap_functionMap_Nova_toNova,
 spectra_tree_nodes_Nova_IdentifierFunctionMap_functionMap_Nova_writeNova,
 spectra_tree_nodes_Nova_NodeFunctionMap_functionMap_Nova_toString,
-spectra_tree_nodes_Nova_ValueFunctionMap_functionMapValueFunctionMap_Nova_construct,
 spectra_tree_nodes_Nova_IdentifierFunctionMap_functionMap_static_Nova_parse,
 spectra_tree_nodes_Nova_ValueFunctionMap_functionMap_Nova_parseType,
 spectra_tree_nodes_Nova_ValueFunctionMap_functionMap_Nova_writeType,
@@ -74063,7 +73524,6 @@ spectra_tree_nodes_Identifier_IdentifierPropertyMap_Extension_VTable spectra_tre
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -74347,7 +73807,6 @@ spectra_tree_nodes_Import_Extension_VTable spectra_tree_nodes_Import_Extension_V
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 spectra_tree_nodes_Nova_Node_Nova_toString,
@@ -74513,7 +73972,6 @@ spectra_tree_nodes_Import_ImportFunctionMap_Extension_VTable spectra_tree_nodes_
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -74540,7 +73998,6 @@ spectra_tree_nodes_Import_ImportPropertyMap_Extension_VTable spectra_tree_nodes_
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -74821,7 +74278,6 @@ spectra_tree_nodes_ImportList_Extension_VTable spectra_tree_nodes_ImportList_Ext
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 spectra_tree_nodes_Nova_Node_Nova_toString,
@@ -74987,7 +74443,6 @@ spectra_tree_nodes_ImportList_ImportListFunctionMap_Extension_VTable spectra_tre
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -75014,7 +74469,6 @@ spectra_tree_nodes_ImportList_ImportListPropertyMap_Extension_VTable spectra_tre
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -75289,7 +74743,6 @@ spectra_tree_nodes_InterfaceDeclaration_Extension_VTable spectra_tree_nodes_Inte
 0,
 0,
 0,
-0,
 (nova_datastruct_list_Nova_Array*(*)(spectra_tree_nodes_generics_Nova_GenericCompatible*, nova_exception_Nova_ExceptionData*))spectra_tree_nodes_Nova_ClassDeclaration_Accessorfunc_Nova_genericParameters,
 (nova_datastruct_list_Nova_Array*(*)(spectra_tree_nodes_generics_Nova_GenericCompatible*, nova_exception_Nova_ExceptionData*, nova_datastruct_list_Nova_Array*))spectra_tree_nodes_Nova_ClassDeclaration_Mutatorfunc_Nova_genericParameters,
 0,
@@ -75472,7 +74925,6 @@ spectra_tree_nodes_InterfaceDeclaration_InterfaceDeclarationFunctionMap_Extensio
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -75492,7 +74944,6 @@ spectra_tree_nodes_Nova_NodeFunctionMap_functionMap_Nova_writeAnnotationSeparato
 spectra_tree_nodes_Nova_ClassDeclarationFunctionMap_functionMap_Nova_toNova,
 spectra_tree_nodes_variables_Nova_VariableDeclarationFunctionMap_functionMap_Nova_writeNova,
 spectra_tree_nodes_Nova_ClassDeclarationFunctionMap_functionMap_Nova_toString,
-spectra_tree_nodes_Nova_ValueFunctionMap_functionMapValueFunctionMap_Nova_construct,
 spectra_tree_nodes_Nova_InterfaceDeclarationFunctionMap_functionMap_static_Nova_parse,
 spectra_tree_nodes_Nova_ValueFunctionMap_functionMap_Nova_parseType,
 spectra_tree_nodes_Nova_ValueFunctionMap_functionMap_Nova_writeType,
@@ -75558,7 +75009,6 @@ spectra_tree_nodes_InterfaceDeclaration_InterfaceDeclarationPropertyMap_Extensio
 0,
 0,
 (char(*)(spectra_tree_nodes_Nova_AbstractablePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Abstractable*))spectra_tree_nodes_Nova_ClassDeclarationPropertyMap_functionMap_Nova_isAbstract,
-0,
 0,
 0,
 0,
@@ -75792,7 +75242,6 @@ spectra_tree_nodes_Listener_Extension_VTable spectra_tree_nodes_Listener_Extensi
 0,
 0,
 0,
-0,
 },
 };
 
@@ -75801,7 +75250,6 @@ spectra_tree_nodes_Listener_ListenerFunctionMap_Extension_VTable spectra_tree_no
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -76071,7 +75519,6 @@ spectra_tree_nodes_Listener_ListenerPropertyMap_Extension_VTable spectra_tree_no
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -76158,7 +75605,6 @@ spectra_tree_nodes_Literal_Extension_VTable spectra_tree_nodes_Literal_Extension
 (char(*)(spectra_tree_nodes_Nova_Accessible*, nova_exception_Nova_ExceptionData*, char))spectra_tree_nodes_Nova_Literal_Mutatorfunc0_Nova_safeNavigation,
 (spectra_tree_nodes_Nova_Accessible*(*)(spectra_tree_nodes_Nova_Accessible*, nova_exception_Nova_ExceptionData*))spectra_tree_nodes_Nova_Literal_Accessorfunc_Nova_accessedNode,
 (spectra_tree_nodes_Nova_Accessible*(*)(spectra_tree_nodes_Nova_Accessible*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Accessible*))spectra_tree_nodes_Nova_Literal_Mutatorfunc0_Nova_accessedNode,
-0,
 0,
 0,
 0,
@@ -76384,7 +75830,6 @@ spectra_tree_nodes_Literal_LiteralFunctionMap_Extension_VTable spectra_tree_node
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -76404,7 +75849,6 @@ spectra_tree_nodes_Nova_NodeFunctionMap_functionMap_Nova_writeAnnotationSeparato
 spectra_tree_nodes_Nova_NodeFunctionMap_functionMap_Nova_toNova,
 spectra_tree_nodes_Nova_LiteralFunctionMap_functionMap_Nova_writeNova,
 spectra_tree_nodes_Nova_NodeFunctionMap_functionMap_Nova_toString,
-spectra_tree_nodes_Nova_ValueFunctionMap_functionMapValueFunctionMap_Nova_construct,
 spectra_tree_nodes_Nova_LiteralFunctionMap_functionMap_static_Nova_parse,
 spectra_tree_nodes_Nova_ValueFunctionMap_functionMap_Nova_parseType,
 spectra_tree_nodes_Nova_ValueFunctionMap_functionMap_Nova_writeType,
@@ -76415,7 +75859,6 @@ spectra_tree_nodes_Literal_LiteralPropertyMap_Extension_VTable spectra_tree_node
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -76699,7 +76142,6 @@ spectra_tree_nodes_Node_Extension_VTable spectra_tree_nodes_Node_Extension_VTabl
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 spectra_tree_nodes_Nova_Node_Nova_toString,
@@ -76865,7 +76307,6 @@ spectra_tree_nodes_Node_NodeFunctionMap_Extension_VTable spectra_tree_nodes_Node
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -76892,7 +76333,6 @@ spectra_tree_nodes_Node_NodePropertyMap_Extension_VTable spectra_tree_nodes_Node
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -77173,7 +76613,6 @@ spectra_tree_nodes_NodeList_Extension_VTable spectra_tree_nodes_NodeList_Extensi
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 spectra_tree_nodes_Nova_Node_Nova_toString,
@@ -77339,7 +76778,6 @@ spectra_tree_nodes_NodeList_NodeListFunctionMap_Extension_VTable spectra_tree_no
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -77366,7 +76804,6 @@ spectra_tree_nodes_NodeList_NodeListPropertyMap_Extension_VTable spectra_tree_no
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -77647,7 +77084,6 @@ spectra_tree_nodes_NovaFile_Extension_VTable spectra_tree_nodes_NovaFile_Extensi
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 spectra_tree_nodes_Nova_NovaFile_Nova_toString,
@@ -77813,7 +77249,6 @@ spectra_tree_nodes_NovaFile_NovaFileFunctionMap_Extension_VTable spectra_tree_no
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -77840,7 +77275,6 @@ spectra_tree_nodes_NovaFile_NovaFilePropertyMap_Extension_VTable spectra_tree_no
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -78117,7 +77551,6 @@ spectra_tree_nodes_NumericRange_Extension_VTable spectra_tree_nodes_NumericRange
 0,
 0,
 0,
-0,
 (void(*)(spectra_tree_nodes_operations_Nova_Assignable*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Value*))spectra_tree_nodes_variables_Nova_Variable_Nova_onAssigned,
 0,
 0,
@@ -78291,7 +77724,6 @@ spectra_tree_nodes_NumericRange_NumericRangeFunctionMap_Extension_VTable spectra
 0,
 0,
 0,
-0,
 (void(*)(spectra_tree_nodes_operations_Nova_AssignableFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_operations_Nova_Assignable*, spectra_tree_nodes_Nova_Value*))spectra_tree_nodes_variables_Nova_VariableFunctionMap_functionMap_Nova_onAssigned,
 0,
 0,
@@ -78314,11 +77746,9 @@ spectra_tree_nodes_Nova_NodeFunctionMap_functionMap_Nova_writeAnnotationSeparato
 spectra_tree_nodes_Nova_NodeFunctionMap_functionMap_Nova_toNova,
 spectra_tree_nodes_Nova_NumericRangeFunctionMap_functionMap_Nova_writeNova,
 spectra_tree_nodes_functions_Nova_FunctionCallFunctionMap_functionMap_Nova_toString,
-spectra_tree_nodes_Nova_ValueFunctionMap_functionMapValueFunctionMap_Nova_construct,
 spectra_tree_nodes_Nova_NumericRangeFunctionMap_functionMap_static_Nova_parse,
 spectra_tree_nodes_Nova_ValueFunctionMap_functionMap_Nova_parseType,
 spectra_tree_nodes_Nova_ValueFunctionMap_functionMap_Nova_writeType,
-spectra_tree_nodes_variables_Nova_VariableFunctionMap_functionMapVariableFunctionMap_Nova_construct,
 spectra_tree_nodes_functions_Nova_InstantiationFunctionMap_functionMap_Nova_writeName,
 };
 
@@ -78327,7 +77757,6 @@ spectra_tree_nodes_NumericRange_NumericRangePropertyMap_Extension_VTable spectra
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -78611,7 +78040,6 @@ spectra_tree_nodes_Package_Extension_VTable spectra_tree_nodes_Package_Extension
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 spectra_tree_nodes_Nova_Node_Nova_toString,
@@ -78777,7 +78205,6 @@ spectra_tree_nodes_Package_PackageFunctionMap_Extension_VTable spectra_tree_node
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -78804,7 +78231,6 @@ spectra_tree_nodes_Package_PackagePropertyMap_Extension_VTable spectra_tree_node
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -79085,7 +78511,6 @@ spectra_tree_nodes_PlaceholderValue_Extension_VTable spectra_tree_nodes_Placehol
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 spectra_tree_nodes_Nova_Node_Nova_toString,
@@ -79257,7 +78682,6 @@ spectra_tree_nodes_PlaceholderValue_PlaceholderValueFunctionMap_Extension_VTable
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -79277,7 +78701,6 @@ spectra_tree_nodes_Nova_NodeFunctionMap_functionMap_Nova_writeAnnotationSeparato
 spectra_tree_nodes_Nova_NodeFunctionMap_functionMap_Nova_toNova,
 spectra_tree_nodes_Nova_PlaceholderValueFunctionMap_functionMap_Nova_writeNova,
 spectra_tree_nodes_Nova_NodeFunctionMap_functionMap_Nova_toString,
-spectra_tree_nodes_Nova_ValueFunctionMap_functionMapValueFunctionMap_Nova_construct,
 spectra_tree_nodes_Nova_PlaceholderValueFunctionMap_functionMap_static_Nova_parse,
 spectra_tree_nodes_Nova_ValueFunctionMap_functionMap_Nova_parseType,
 spectra_tree_nodes_Nova_ValueFunctionMap_functionMap_Nova_writeType,
@@ -79288,7 +78711,6 @@ spectra_tree_nodes_PlaceholderValue_PlaceholderValuePropertyMap_Extension_VTable
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -79572,7 +78994,6 @@ spectra_tree_nodes_Priority_Extension_VTable spectra_tree_nodes_Priority_Extensi
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 spectra_tree_nodes_Nova_Node_Nova_toString,
@@ -79744,7 +79165,6 @@ spectra_tree_nodes_Priority_PriorityFunctionMap_Extension_VTable spectra_tree_no
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -79764,7 +79184,6 @@ spectra_tree_nodes_Nova_NodeFunctionMap_functionMap_Nova_writeAnnotationSeparato
 spectra_tree_nodes_Nova_NodeFunctionMap_functionMap_Nova_toNova,
 spectra_tree_nodes_Nova_PriorityFunctionMap_functionMap_Nova_writeNova,
 spectra_tree_nodes_Nova_NodeFunctionMap_functionMap_Nova_toString,
-spectra_tree_nodes_Nova_ValueFunctionMap_functionMapValueFunctionMap_Nova_construct,
 spectra_tree_nodes_Nova_PriorityFunctionMap_functionMap_static_Nova_parse,
 spectra_tree_nodes_Nova_ValueFunctionMap_functionMap_Nova_parseType,
 spectra_tree_nodes_Nova_ValueFunctionMap_functionMap_Nova_writeType,
@@ -79775,7 +79194,6 @@ spectra_tree_nodes_Priority_PriorityPropertyMap_Extension_VTable spectra_tree_no
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -80059,12 +79477,11 @@ spectra_tree_nodes_Program_Extension_VTable spectra_tree_nodes_Program_Extension
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 spectra_tree_nodes_Nova_Program_Nova_toString,
 nova_Nova_Object_Accessor_Nova_hashCodeLong,
-spectra_tree_nodes_Nova_Node_Nova_addChild,
+spectra_tree_nodes_Nova_Program_Nova_addChild,
 spectra_tree_nodes_Nova_Node_Nova_onAdded,
 spectra_tree_nodes_Nova_Node_Nova_findVariableDeclaration,
 spectra_tree_nodes_Nova_Node_Nova_parseStatement,
@@ -80225,7 +79642,6 @@ spectra_tree_nodes_Program_ProgramFunctionMap_Extension_VTable spectra_tree_node
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -80252,7 +79668,6 @@ spectra_tree_nodes_Program_ProgramPropertyMap_Extension_VTable spectra_tree_node
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -80533,7 +79948,6 @@ spectra_tree_nodes_Return_Extension_VTable spectra_tree_nodes_Return_Extension_V
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 spectra_tree_nodes_Nova_Node_Nova_toString,
@@ -80699,7 +80113,6 @@ spectra_tree_nodes_Return_ReturnFunctionMap_Extension_VTable spectra_tree_nodes_
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -80726,7 +80139,6 @@ spectra_tree_nodes_Return_ReturnPropertyMap_Extension_VTable spectra_tree_nodes_
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -81007,7 +80419,6 @@ spectra_tree_nodes_Scope_Extension_VTable spectra_tree_nodes_Scope_Extension_VTa
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 spectra_tree_nodes_Nova_Node_Nova_toString,
@@ -81173,7 +80584,6 @@ spectra_tree_nodes_Scope_ScopeFunctionMap_Extension_VTable spectra_tree_nodes_Sc
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -81200,7 +80610,6 @@ spectra_tree_nodes_Scope_ScopePropertyMap_Extension_VTable spectra_tree_nodes_Sc
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -81481,7 +80890,6 @@ spectra_tree_nodes_Skeleton_Extension_VTable spectra_tree_nodes_Skeleton_Extensi
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 spectra_tree_nodes_Nova_Node_Nova_toString,
@@ -81647,7 +81055,6 @@ spectra_tree_nodes_Skeleton_SkeletonFunctionMap_Extension_VTable spectra_tree_no
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -81674,7 +81081,6 @@ spectra_tree_nodes_Skeleton_SkeletonPropertyMap_Extension_VTable spectra_tree_no
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -81955,7 +81361,6 @@ spectra_tree_nodes_StaticClassReference_Extension_VTable spectra_tree_nodes_Stat
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 spectra_tree_nodes_Nova_Node_Nova_toString,
@@ -82127,7 +81532,6 @@ spectra_tree_nodes_StaticClassReference_StaticClassReferenceFunctionMap_Extensio
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -82147,7 +81551,6 @@ spectra_tree_nodes_Nova_NodeFunctionMap_functionMap_Nova_writeAnnotationSeparato
 spectra_tree_nodes_Nova_NodeFunctionMap_functionMap_Nova_toNova,
 spectra_tree_nodes_Nova_StaticClassReferenceFunctionMap_functionMap_Nova_writeNova,
 spectra_tree_nodes_Nova_NodeFunctionMap_functionMap_Nova_toString,
-spectra_tree_nodes_Nova_ValueFunctionMap_functionMapValueFunctionMap_Nova_construct,
 spectra_tree_nodes_Nova_StaticClassReferenceFunctionMap_functionMap_static_Nova_parse,
 spectra_tree_nodes_Nova_ValueFunctionMap_functionMap_Nova_parseType,
 spectra_tree_nodes_Nova_ValueFunctionMap_functionMap_Nova_writeType,
@@ -82158,7 +81561,6 @@ spectra_tree_nodes_StaticClassReference_StaticClassReferencePropertyMap_Extensio
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -82436,7 +81838,6 @@ spectra_tree_nodes_TraitDeclaration_Extension_VTable spectra_tree_nodes_TraitDec
 0,
 0,
 0,
-0,
 (nova_datastruct_list_Nova_Array*(*)(spectra_tree_nodes_generics_Nova_GenericCompatible*, nova_exception_Nova_ExceptionData*))spectra_tree_nodes_Nova_ClassDeclaration_Accessorfunc_Nova_genericParameters,
 (nova_datastruct_list_Nova_Array*(*)(spectra_tree_nodes_generics_Nova_GenericCompatible*, nova_exception_Nova_ExceptionData*, nova_datastruct_list_Nova_Array*))spectra_tree_nodes_Nova_ClassDeclaration_Mutatorfunc_Nova_genericParameters,
 0,
@@ -82619,7 +82020,6 @@ spectra_tree_nodes_TraitDeclaration_TraitDeclarationFunctionMap_Extension_VTable
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -82639,7 +82039,6 @@ spectra_tree_nodes_Nova_NodeFunctionMap_functionMap_Nova_writeAnnotationSeparato
 spectra_tree_nodes_Nova_ClassDeclarationFunctionMap_functionMap_Nova_toNova,
 spectra_tree_nodes_variables_Nova_VariableDeclarationFunctionMap_functionMap_Nova_writeNova,
 spectra_tree_nodes_Nova_ClassDeclarationFunctionMap_functionMap_Nova_toString,
-spectra_tree_nodes_Nova_ValueFunctionMap_functionMapValueFunctionMap_Nova_construct,
 spectra_tree_nodes_Nova_TraitDeclarationFunctionMap_functionMap_static_Nova_parse,
 spectra_tree_nodes_Nova_ValueFunctionMap_functionMap_Nova_parseType,
 spectra_tree_nodes_Nova_ValueFunctionMap_functionMap_Nova_writeType,
@@ -82750,7 +82149,6 @@ spectra_tree_nodes_TraitDeclaration_TraitDeclarationPropertyMap_Extension_VTable
 0,
 0,
 0,
-0,
 (nova_datastruct_list_Nova_Array*(*)(spectra_tree_nodes_annotations_Nova_AnnotatablePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_annotations_Nova_Annotatable*))spectra_tree_nodes_Nova_NodePropertyMap_functionMap_Nova_annotations,
 0,
 0,
@@ -82810,7 +82208,6 @@ spectra_tree_nodes_Type_Extension_VTable spectra_tree_nodes_Type_Extension_VTabl
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -83086,7 +82483,6 @@ spectra_tree_nodes_Type_TypeFunctionMap_Extension_VTable spectra_tree_nodes_Type
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -83103,7 +82499,6 @@ spectra_tree_nodes_Type_TypePropertyMap_Extension_VTable spectra_tree_nodes_Type
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -83375,7 +82770,6 @@ spectra_tree_nodes_ValidationResult_Extension_VTable spectra_tree_nodes_Validati
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -83387,7 +82781,6 @@ spectra_tree_nodes_ValidationResult_ValidationResultFunctionMap_Extension_VTable
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -83657,7 +83050,6 @@ spectra_tree_nodes_ValidationResult_ValidationResultPropertyMap_Extension_VTable
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -83728,7 +83120,6 @@ spectra_tree_nodes_Value_Extension_VTable spectra_tree_nodes_Value_Extension_VTa
 0,
 0,
 (void(*)(spectra_tree_nodes_annotations_Nova_Annotatable*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_annotations_Nova_Annotation*))spectra_tree_nodes_Nova_Node_Nova_addAnnotation,
-0,
 0,
 0,
 0,
@@ -83970,7 +83361,6 @@ spectra_tree_nodes_Value_ValueFunctionMap_Extension_VTable spectra_tree_nodes_Va
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -83990,7 +83380,6 @@ spectra_tree_nodes_Nova_NodeFunctionMap_functionMap_Nova_writeAnnotationSeparato
 spectra_tree_nodes_Nova_NodeFunctionMap_functionMap_Nova_toNova,
 spectra_tree_nodes_Nova_NodeFunctionMap_functionMap_Nova_writeNova,
 spectra_tree_nodes_Nova_NodeFunctionMap_functionMap_Nova_toString,
-spectra_tree_nodes_Nova_ValueFunctionMap_functionMapValueFunctionMap_Nova_construct,
 spectra_tree_nodes_Nova_ValueFunctionMap_functionMap0_static_Nova_parse,
 spectra_tree_nodes_Nova_ValueFunctionMap_functionMap_Nova_parseType,
 spectra_tree_nodes_Nova_ValueFunctionMap_functionMap_Nova_writeType,
@@ -84001,7 +83390,6 @@ spectra_tree_nodes_Value_ValuePropertyMap_Extension_VTable spectra_tree_nodes_Va
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -84266,7 +83654,6 @@ spectra_tree_nodes_annotations_AbstractAnnotation_Extension_VTable spectra_tree_
 0,
 0,
 0,
-0,
 (nova_Nova_String*(*)(spectra_tree_nodes_annotations_Nova_Modifier*, nova_exception_Nova_ExceptionData*))spectra_tree_nodes_annotations_Nova_AbstractAnnotation_Accessorfunc_Nova_alias,
 (nova_Nova_String*(*)(spectra_tree_nodes_annotations_Nova_Modifier*, nova_exception_Nova_ExceptionData*, nova_Nova_String*))spectra_tree_nodes_annotations_Nova_AbstractAnnotation_Mutatorfunc_Nova_alias,
 (nova_datastruct_list_Nova_ImmutableArray*(*)(spectra_tree_nodes_annotations_Nova_Modifier*, nova_exception_Nova_ExceptionData*))spectra_tree_nodes_annotations_Nova_AbstractAnnotation_Accessor_static_Nova_aliases,
@@ -84451,7 +83838,6 @@ spectra_tree_nodes_annotations_AbstractAnnotation_AbstractAnnotationFunctionMap_
 0,
 0,
 0,
-0,
 },
 spectra_tree_nodes_annotations_Nova_AbstractAnnotationFunctionMap_functionMap_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -84478,7 +83864,6 @@ spectra_tree_nodes_annotations_AbstractAnnotation_AbstractAnnotationPropertyMap_
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -84759,7 +84144,6 @@ spectra_tree_nodes_annotations_Annotatable_Extension_VTable spectra_tree_nodes_a
 0,
 0,
 0,
-0,
 },
 };
 
@@ -84768,7 +84152,6 @@ spectra_tree_nodes_annotations_Annotatable_AnnotatableFunctionMap_Extension_VTab
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -84909,7 +84292,6 @@ spectra_tree_nodes_annotations_Annotatable_AnnotatablePropertyMap_Extension_VTab
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -85179,7 +84561,6 @@ spectra_tree_nodes_annotations_Annotation_Extension_VTable spectra_tree_nodes_an
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 spectra_tree_nodes_Nova_Node_Nova_toString,
@@ -85345,7 +84726,6 @@ spectra_tree_nodes_annotations_Annotation_AnnotationFunctionMap_Extension_VTable
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -85372,7 +84752,6 @@ spectra_tree_nodes_annotations_Annotation_AnnotationPropertyMap_Extension_VTable
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -85653,7 +85032,6 @@ spectra_tree_nodes_annotations_AutoFinalAnnotation_Extension_VTable spectra_tree
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 spectra_tree_nodes_Nova_Node_Nova_toString,
@@ -85819,7 +85197,6 @@ spectra_tree_nodes_annotations_AutoFinalAnnotation_AutoFinalAnnotationFunctionMa
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -85846,7 +85223,6 @@ spectra_tree_nodes_annotations_AutoFinalAnnotation_AutoFinalAnnotationPropertyMa
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -86127,7 +85503,6 @@ spectra_tree_nodes_annotations_AutoPureAnnotation_Extension_VTable spectra_tree_
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 spectra_tree_nodes_Nova_Node_Nova_toString,
@@ -86293,7 +85668,6 @@ spectra_tree_nodes_annotations_AutoPureAnnotation_AutoPureAnnotationFunctionMap_
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -86320,7 +85694,6 @@ spectra_tree_nodes_annotations_AutoPureAnnotation_AutoPureAnnotationPropertyMap_
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -86582,7 +85955,6 @@ spectra_tree_nodes_annotations_FinalAnnotation_Extension_VTable spectra_tree_nod
 0,
 0,
 0,
-0,
 (nova_Nova_String*(*)(spectra_tree_nodes_annotations_Nova_Modifier*, nova_exception_Nova_ExceptionData*))spectra_tree_nodes_annotations_Nova_FinalAnnotation_Accessorfunc_Nova_alias,
 (nova_Nova_String*(*)(spectra_tree_nodes_annotations_Nova_Modifier*, nova_exception_Nova_ExceptionData*, nova_Nova_String*))spectra_tree_nodes_annotations_Nova_FinalAnnotation_Mutatorfunc_Nova_alias,
 (nova_datastruct_list_Nova_ImmutableArray*(*)(spectra_tree_nodes_annotations_Nova_Modifier*, nova_exception_Nova_ExceptionData*))spectra_tree_nodes_annotations_Nova_FinalAnnotation_Accessor_static_Nova_aliases,
@@ -86767,7 +86139,6 @@ spectra_tree_nodes_annotations_FinalAnnotation_FinalAnnotationFunctionMap_Extens
 0,
 0,
 0,
-0,
 },
 spectra_tree_nodes_annotations_Nova_FinalAnnotationFunctionMap_functionMap_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -86794,7 +86165,6 @@ spectra_tree_nodes_annotations_FinalAnnotation_FinalAnnotationPropertyMap_Extens
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -87056,7 +86426,6 @@ spectra_tree_nodes_annotations_ImmutableAnnotation_Extension_VTable spectra_tree
 0,
 0,
 0,
-0,
 (nova_Nova_String*(*)(spectra_tree_nodes_annotations_Nova_Modifier*, nova_exception_Nova_ExceptionData*))spectra_tree_nodes_annotations_Nova_ImmutableAnnotation_Accessorfunc_Nova_alias,
 (nova_Nova_String*(*)(spectra_tree_nodes_annotations_Nova_Modifier*, nova_exception_Nova_ExceptionData*, nova_Nova_String*))spectra_tree_nodes_annotations_Nova_ImmutableAnnotation_Mutatorfunc_Nova_alias,
 (nova_datastruct_list_Nova_ImmutableArray*(*)(spectra_tree_nodes_annotations_Nova_Modifier*, nova_exception_Nova_ExceptionData*))spectra_tree_nodes_annotations_Nova_ImmutableAnnotation_Accessor_static_Nova_aliases,
@@ -87241,7 +86610,6 @@ spectra_tree_nodes_annotations_ImmutableAnnotation_ImmutableAnnotationFunctionMa
 0,
 0,
 0,
-0,
 },
 spectra_tree_nodes_annotations_Nova_ImmutableAnnotationFunctionMap_functionMap_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -87268,7 +86636,6 @@ spectra_tree_nodes_annotations_ImmutableAnnotation_ImmutableAnnotationPropertyMa
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -87530,7 +86897,6 @@ spectra_tree_nodes_annotations_ImpureAnnotation_Extension_VTable spectra_tree_no
 0,
 0,
 0,
-0,
 (nova_Nova_String*(*)(spectra_tree_nodes_annotations_Nova_Modifier*, nova_exception_Nova_ExceptionData*))spectra_tree_nodes_annotations_Nova_ImpureAnnotation_Accessorfunc_Nova_alias,
 (nova_Nova_String*(*)(spectra_tree_nodes_annotations_Nova_Modifier*, nova_exception_Nova_ExceptionData*, nova_Nova_String*))spectra_tree_nodes_annotations_Nova_ImpureAnnotation_Mutatorfunc_Nova_alias,
 (nova_datastruct_list_Nova_ImmutableArray*(*)(spectra_tree_nodes_annotations_Nova_Modifier*, nova_exception_Nova_ExceptionData*))spectra_tree_nodes_annotations_Nova_ImpureAnnotation_Accessor_static_Nova_aliases,
@@ -87715,7 +87081,6 @@ spectra_tree_nodes_annotations_ImpureAnnotation_ImpureAnnotationFunctionMap_Exte
 0,
 0,
 0,
-0,
 },
 spectra_tree_nodes_annotations_Nova_ImpureAnnotationFunctionMap_functionMap_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -87742,7 +87107,6 @@ spectra_tree_nodes_annotations_ImpureAnnotation_ImpureAnnotationPropertyMap_Exte
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -88004,7 +87368,6 @@ spectra_tree_nodes_annotations_Modifier_Extension_VTable spectra_tree_nodes_anno
 0,
 0,
 0,
-0,
 (nova_Nova_String*(*)(spectra_tree_nodes_annotations_Nova_Modifier*, nova_exception_Nova_ExceptionData*))spectra_tree_nodes_annotations_Nova_Modifier_Accessor_Nova_alias,
 (nova_Nova_String*(*)(spectra_tree_nodes_annotations_Nova_Modifier*, nova_exception_Nova_ExceptionData*, nova_Nova_String*))spectra_tree_nodes_annotations_Nova_Modifier_Mutator_Nova_alias,
 (nova_datastruct_list_Nova_ImmutableArray*(*)(spectra_tree_nodes_annotations_Nova_Modifier*, nova_exception_Nova_ExceptionData*))spectra_tree_nodes_annotations_Nova_Modifier_Accessor_static_Nova_aliases,
@@ -88189,7 +87552,6 @@ spectra_tree_nodes_annotations_Modifier_ModifierFunctionMap_Extension_VTable spe
 0,
 0,
 0,
-0,
 },
 spectra_tree_nodes_annotations_Nova_ModifierFunctionMap_functionMap_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -88216,7 +87578,6 @@ spectra_tree_nodes_annotations_Modifier_ModifierPropertyMap_Extension_VTable spe
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -88478,7 +87839,6 @@ spectra_tree_nodes_annotations_NativeAnnotation_Extension_VTable spectra_tree_no
 0,
 0,
 0,
-0,
 (nova_Nova_String*(*)(spectra_tree_nodes_annotations_Nova_Modifier*, nova_exception_Nova_ExceptionData*))spectra_tree_nodes_annotations_Nova_NativeAnnotation_Accessorfunc_Nova_alias,
 (nova_Nova_String*(*)(spectra_tree_nodes_annotations_Nova_Modifier*, nova_exception_Nova_ExceptionData*, nova_Nova_String*))spectra_tree_nodes_annotations_Nova_NativeAnnotation_Mutatorfunc0_Nova_alias,
 (nova_datastruct_list_Nova_ImmutableArray*(*)(spectra_tree_nodes_annotations_Nova_Modifier*, nova_exception_Nova_ExceptionData*))spectra_tree_nodes_annotations_Nova_NativeAnnotation_Accessor_static_Nova_aliases,
@@ -88663,7 +88023,6 @@ spectra_tree_nodes_annotations_NativeAnnotation_NativeAnnotationFunctionMap_Exte
 0,
 0,
 0,
-0,
 },
 spectra_tree_nodes_annotations_Nova_NativeAnnotationFunctionMap_functionMap_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -88690,7 +88049,6 @@ spectra_tree_nodes_annotations_NativeAnnotation_NativeAnnotationPropertyMap_Exte
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -88952,7 +88310,6 @@ spectra_tree_nodes_annotations_OverrideAnnotation_Extension_VTable spectra_tree_
 0,
 0,
 0,
-0,
 (nova_Nova_String*(*)(spectra_tree_nodes_annotations_Nova_Modifier*, nova_exception_Nova_ExceptionData*))spectra_tree_nodes_annotations_Nova_OverrideAnnotation_Accessorfunc1_Nova_alias,
 (nova_Nova_String*(*)(spectra_tree_nodes_annotations_Nova_Modifier*, nova_exception_Nova_ExceptionData*, nova_Nova_String*))spectra_tree_nodes_annotations_Nova_OverrideAnnotation_Mutatorfunc0_Nova_alias,
 (nova_datastruct_list_Nova_ImmutableArray*(*)(spectra_tree_nodes_annotations_Nova_Modifier*, nova_exception_Nova_ExceptionData*))spectra_tree_nodes_annotations_Nova_OverrideAnnotation_Accessor_static_Nova_aliases,
@@ -89137,7 +88494,6 @@ spectra_tree_nodes_annotations_OverrideAnnotation_OverrideAnnotationFunctionMap_
 0,
 0,
 0,
-0,
 },
 spectra_tree_nodes_annotations_Nova_OverrideAnnotationFunctionMap_functionMap_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -89164,7 +88520,6 @@ spectra_tree_nodes_annotations_OverrideAnnotation_OverrideAnnotationPropertyMap_
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -89426,7 +88781,6 @@ spectra_tree_nodes_annotations_PrivateAnnotation_Extension_VTable spectra_tree_n
 0,
 0,
 0,
-0,
 (nova_Nova_String*(*)(spectra_tree_nodes_annotations_Nova_Modifier*, nova_exception_Nova_ExceptionData*))spectra_tree_nodes_annotations_Nova_PrivateAnnotation_Accessorfunc1_Nova_alias,
 (nova_Nova_String*(*)(spectra_tree_nodes_annotations_Nova_Modifier*, nova_exception_Nova_ExceptionData*, nova_Nova_String*))spectra_tree_nodes_annotations_Nova_PrivateAnnotation_Mutatorfunc0_Nova_alias,
 (nova_datastruct_list_Nova_ImmutableArray*(*)(spectra_tree_nodes_annotations_Nova_Modifier*, nova_exception_Nova_ExceptionData*))spectra_tree_nodes_annotations_Nova_PrivateAnnotation_Accessor_static_Nova_aliases,
@@ -89611,7 +88965,6 @@ spectra_tree_nodes_annotations_PrivateAnnotation_PrivateAnnotationFunctionMap_Ex
 0,
 0,
 0,
-0,
 },
 spectra_tree_nodes_annotations_Nova_PrivateAnnotationFunctionMap_functionMap_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -89638,7 +88991,6 @@ spectra_tree_nodes_annotations_PrivateAnnotation_PrivateAnnotationPropertyMap_Ex
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -89900,7 +89252,6 @@ spectra_tree_nodes_annotations_PublicAnnotation_Extension_VTable spectra_tree_no
 0,
 0,
 0,
-0,
 (nova_Nova_String*(*)(spectra_tree_nodes_annotations_Nova_Modifier*, nova_exception_Nova_ExceptionData*))spectra_tree_nodes_annotations_Nova_PublicAnnotation_Accessorfunc1_Nova_alias,
 (nova_Nova_String*(*)(spectra_tree_nodes_annotations_Nova_Modifier*, nova_exception_Nova_ExceptionData*, nova_Nova_String*))spectra_tree_nodes_annotations_Nova_PublicAnnotation_Mutatorfunc0_Nova_alias,
 (nova_datastruct_list_Nova_ImmutableArray*(*)(spectra_tree_nodes_annotations_Nova_Modifier*, nova_exception_Nova_ExceptionData*))spectra_tree_nodes_annotations_Nova_PublicAnnotation_Accessor_static_Nova_aliases,
@@ -90085,7 +89436,6 @@ spectra_tree_nodes_annotations_PublicAnnotation_PublicAnnotationFunctionMap_Exte
 0,
 0,
 0,
-0,
 },
 spectra_tree_nodes_annotations_Nova_PublicAnnotationFunctionMap_functionMap_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -90112,7 +89462,6 @@ spectra_tree_nodes_annotations_PublicAnnotation_PublicAnnotationPropertyMap_Exte
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -90374,7 +89723,6 @@ spectra_tree_nodes_annotations_PureAnnotation_Extension_VTable spectra_tree_node
 0,
 0,
 0,
-0,
 (nova_Nova_String*(*)(spectra_tree_nodes_annotations_Nova_Modifier*, nova_exception_Nova_ExceptionData*))spectra_tree_nodes_annotations_Nova_PureAnnotation_Accessorfunc1_Nova_alias,
 (nova_Nova_String*(*)(spectra_tree_nodes_annotations_Nova_Modifier*, nova_exception_Nova_ExceptionData*, nova_Nova_String*))spectra_tree_nodes_annotations_Nova_PureAnnotation_Mutatorfunc0_Nova_alias,
 (nova_datastruct_list_Nova_ImmutableArray*(*)(spectra_tree_nodes_annotations_Nova_Modifier*, nova_exception_Nova_ExceptionData*))spectra_tree_nodes_annotations_Nova_PureAnnotation_Accessor_static_Nova_aliases,
@@ -90559,7 +89907,6 @@ spectra_tree_nodes_annotations_PureAnnotation_PureAnnotationFunctionMap_Extensio
 0,
 0,
 0,
-0,
 },
 spectra_tree_nodes_annotations_Nova_PureAnnotationFunctionMap_functionMap_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -90586,7 +89933,6 @@ spectra_tree_nodes_annotations_PureAnnotation_PureAnnotationPropertyMap_Extensio
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -90848,7 +90194,6 @@ spectra_tree_nodes_annotations_StaticAnnotation_Extension_VTable spectra_tree_no
 0,
 0,
 0,
-0,
 (nova_Nova_String*(*)(spectra_tree_nodes_annotations_Nova_Modifier*, nova_exception_Nova_ExceptionData*))spectra_tree_nodes_annotations_Nova_StaticAnnotation_Accessorfunc1_Nova_alias,
 (nova_Nova_String*(*)(spectra_tree_nodes_annotations_Nova_Modifier*, nova_exception_Nova_ExceptionData*, nova_Nova_String*))spectra_tree_nodes_annotations_Nova_StaticAnnotation_Mutatorfunc0_Nova_alias,
 (nova_datastruct_list_Nova_ImmutableArray*(*)(spectra_tree_nodes_annotations_Nova_Modifier*, nova_exception_Nova_ExceptionData*))spectra_tree_nodes_annotations_Nova_StaticAnnotation_Accessor_static_Nova_aliases,
@@ -91033,7 +90378,6 @@ spectra_tree_nodes_annotations_StaticAnnotation_StaticAnnotationFunctionMap_Exte
 0,
 0,
 0,
-0,
 },
 spectra_tree_nodes_annotations_Nova_StaticAnnotationFunctionMap_functionMap_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -91060,7 +90404,6 @@ spectra_tree_nodes_annotations_StaticAnnotation_StaticAnnotationPropertyMap_Exte
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -91341,7 +90684,6 @@ spectra_tree_nodes_annotations_TargetAnnotation_Extension_VTable spectra_tree_no
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 spectra_tree_nodes_Nova_Node_Nova_toString,
@@ -91507,7 +90849,6 @@ spectra_tree_nodes_annotations_TargetAnnotation_TargetAnnotationFunctionMap_Exte
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -91534,7 +90875,6 @@ spectra_tree_nodes_annotations_TargetAnnotation_TargetAnnotationPropertyMap_Exte
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -91796,7 +91136,6 @@ spectra_tree_nodes_annotations_VarAnnotation_Extension_VTable spectra_tree_nodes
 0,
 0,
 0,
-0,
 (nova_Nova_String*(*)(spectra_tree_nodes_annotations_Nova_Modifier*, nova_exception_Nova_ExceptionData*))spectra_tree_nodes_annotations_Nova_VarAnnotation_Accessorfunc1_Nova_alias,
 (nova_Nova_String*(*)(spectra_tree_nodes_annotations_Nova_Modifier*, nova_exception_Nova_ExceptionData*, nova_Nova_String*))spectra_tree_nodes_annotations_Nova_VarAnnotation_Mutatorfunc0_Nova_alias,
 (nova_datastruct_list_Nova_ImmutableArray*(*)(spectra_tree_nodes_annotations_Nova_Modifier*, nova_exception_Nova_ExceptionData*))spectra_tree_nodes_annotations_Nova_VarAnnotation_Accessor_static_Nova_aliases,
@@ -91981,7 +91320,6 @@ spectra_tree_nodes_annotations_VarAnnotation_VarAnnotationFunctionMap_Extension_
 0,
 0,
 0,
-0,
 },
 spectra_tree_nodes_annotations_Nova_VarAnnotationFunctionMap_functionMap_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -92008,7 +91346,6 @@ spectra_tree_nodes_annotations_VarAnnotation_VarAnnotationPropertyMap_Extension_
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -92270,7 +91607,6 @@ spectra_tree_nodes_annotations_VisibilityModifier_Extension_VTable spectra_tree_
 0,
 0,
 0,
-0,
 (nova_Nova_String*(*)(spectra_tree_nodes_annotations_Nova_Modifier*, nova_exception_Nova_ExceptionData*))spectra_tree_nodes_annotations_Nova_Modifier_Accessor_Nova_alias,
 (nova_Nova_String*(*)(spectra_tree_nodes_annotations_Nova_Modifier*, nova_exception_Nova_ExceptionData*, nova_Nova_String*))spectra_tree_nodes_annotations_Nova_Modifier_Mutator_Nova_alias,
 (nova_datastruct_list_Nova_ImmutableArray*(*)(spectra_tree_nodes_annotations_Nova_Modifier*, nova_exception_Nova_ExceptionData*))spectra_tree_nodes_annotations_Nova_Modifier_Accessor_static_Nova_aliases,
@@ -92427,7 +91763,6 @@ spectra_tree_nodes_annotations_VisibilityModifier_VisibilityModifierFunctionMap_
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -92439,7 +91774,6 @@ spectra_tree_nodes_annotations_VisibilityModifier_VisibilityModifierPropertyMap_
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -92690,7 +92024,6 @@ spectra_tree_nodes_annotations_VisibleAnnotation_Extension_VTable spectra_tree_n
 0,
 0,
 0,
-0,
 (nova_Nova_String*(*)(spectra_tree_nodes_annotations_Nova_Modifier*, nova_exception_Nova_ExceptionData*))spectra_tree_nodes_annotations_Nova_VisibleAnnotation_Accessorfunc1_Nova_alias,
 (nova_Nova_String*(*)(spectra_tree_nodes_annotations_Nova_Modifier*, nova_exception_Nova_ExceptionData*, nova_Nova_String*))spectra_tree_nodes_annotations_Nova_VisibleAnnotation_Mutatorfunc0_Nova_alias,
 (nova_datastruct_list_Nova_ImmutableArray*(*)(spectra_tree_nodes_annotations_Nova_Modifier*, nova_exception_Nova_ExceptionData*))spectra_tree_nodes_annotations_Nova_VisibleAnnotation_Accessor_static_Nova_aliases,
@@ -92875,7 +92208,6 @@ spectra_tree_nodes_annotations_VisibleAnnotation_VisibleAnnotationFunctionMap_Ex
 0,
 0,
 0,
-0,
 },
 spectra_tree_nodes_annotations_Nova_VisibleAnnotationFunctionMap_functionMap_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -92902,7 +92234,6 @@ spectra_tree_nodes_annotations_VisibleAnnotation_VisibleAnnotationPropertyMap_Ex
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -93183,7 +92514,6 @@ spectra_tree_nodes_arrays_ArrayAccess_Extension_VTable spectra_tree_nodes_arrays
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 spectra_tree_nodes_Nova_Node_Nova_toString,
@@ -93349,7 +92679,6 @@ spectra_tree_nodes_arrays_ArrayAccess_ArrayAccessFunctionMap_Extension_VTable sp
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -93376,7 +92705,6 @@ spectra_tree_nodes_arrays_ArrayAccess_ArrayAccessPropertyMap_Extension_VTable sp
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -93657,7 +92985,6 @@ spectra_tree_nodes_controlstructures_ControlStructure_Extension_VTable spectra_t
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 spectra_tree_nodes_Nova_Node_Nova_toString,
@@ -93823,7 +93150,6 @@ spectra_tree_nodes_controlstructures_ControlStructure_ControlStructureFunctionMa
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -93850,7 +93176,6 @@ spectra_tree_nodes_controlstructures_ControlStructure_ControlStructurePropertyMa
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -94131,7 +93456,6 @@ spectra_tree_nodes_controlstructures_ElseStatement_Extension_VTable spectra_tree
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 spectra_tree_nodes_Nova_Node_Nova_toString,
@@ -94297,7 +93621,6 @@ spectra_tree_nodes_controlstructures_ElseStatement_ElseStatementFunctionMap_Exte
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -94324,7 +93647,6 @@ spectra_tree_nodes_controlstructures_ElseStatement_ElseStatementPropertyMap_Exte
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -94605,7 +93927,6 @@ spectra_tree_nodes_controlstructures_IfStatement_Extension_VTable spectra_tree_n
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 spectra_tree_nodes_Nova_Node_Nova_toString,
@@ -94771,7 +94092,6 @@ spectra_tree_nodes_controlstructures_IfStatement_IfStatementFunctionMap_Extensio
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -94798,7 +94118,6 @@ spectra_tree_nodes_controlstructures_IfStatement_IfStatementPropertyMap_Extensio
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -95079,7 +94398,6 @@ spectra_tree_nodes_controlstructures_loops_ForEachLoop_Extension_VTable spectra_
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 spectra_tree_nodes_Nova_Node_Nova_toString,
@@ -95246,7 +94564,6 @@ spectra_tree_nodes_controlstructures_loops_ForEachLoop_ForEachLoopFunctionMap_Ex
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -95274,7 +94591,6 @@ spectra_tree_nodes_controlstructures_loops_ForEachLoop_ForEachLoopPropertyMap_Ex
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -95555,7 +94871,6 @@ spectra_tree_nodes_controlstructures_loops_Loop_Extension_VTable spectra_tree_no
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 spectra_tree_nodes_Nova_Node_Nova_toString,
@@ -95722,7 +95037,6 @@ spectra_tree_nodes_controlstructures_loops_Loop_LoopFunctionMap_Extension_VTable
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -95750,7 +95064,6 @@ spectra_tree_nodes_controlstructures_loops_Loop_LoopPropertyMap_Extension_VTable
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -96031,7 +95344,6 @@ spectra_tree_nodes_controlstructures_loops_WhileLoop_Extension_VTable spectra_tr
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 spectra_tree_nodes_Nova_Node_Nova_toString,
@@ -96198,7 +95510,6 @@ spectra_tree_nodes_controlstructures_loops_WhileLoop_WhileLoopFunctionMap_Extens
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -96226,7 +95537,6 @@ spectra_tree_nodes_controlstructures_loops_WhileLoop_WhileLoopPropertyMap_Extens
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -96507,7 +95817,6 @@ spectra_tree_nodes_exceptionhandling_Catch_Extension_VTable spectra_tree_nodes_e
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 spectra_tree_nodes_Nova_Node_Nova_toString,
@@ -96673,7 +95982,6 @@ spectra_tree_nodes_exceptionhandling_Catch_CatchFunctionMap_Extension_VTable spe
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -96700,7 +96008,6 @@ spectra_tree_nodes_exceptionhandling_Catch_CatchPropertyMap_Extension_VTable spe
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -96981,7 +96288,6 @@ spectra_tree_nodes_exceptionhandling_ExceptionHandler_Extension_VTable spectra_t
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 spectra_tree_nodes_Nova_Node_Nova_toString,
@@ -97147,7 +96453,6 @@ spectra_tree_nodes_exceptionhandling_ExceptionHandler_ExceptionHandlerFunctionMa
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -97174,7 +96479,6 @@ spectra_tree_nodes_exceptionhandling_ExceptionHandler_ExceptionHandlerPropertyMa
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -97455,7 +96759,6 @@ spectra_tree_nodes_exceptionhandling_Throw_Extension_VTable spectra_tree_nodes_e
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 spectra_tree_nodes_Nova_Node_Nova_toString,
@@ -97621,7 +96924,6 @@ spectra_tree_nodes_exceptionhandling_Throw_ThrowFunctionMap_Extension_VTable spe
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -97648,7 +96950,6 @@ spectra_tree_nodes_exceptionhandling_Throw_ThrowPropertyMap_Extension_VTable spe
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -97929,7 +97230,6 @@ spectra_tree_nodes_exceptionhandling_Try_Extension_VTable spectra_tree_nodes_exc
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 spectra_tree_nodes_Nova_Node_Nova_toString,
@@ -98095,7 +97395,6 @@ spectra_tree_nodes_exceptionhandling_Try_TryFunctionMap_Extension_VTable spectra
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -98122,7 +97421,6 @@ spectra_tree_nodes_exceptionhandling_Try_TryPropertyMap_Extension_VTable spectra
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -98389,7 +97687,6 @@ spectra_tree_nodes_functions_AccessorFunction_Extension_VTable spectra_tree_node
 0,
 0,
 0,
-0,
 (spectra_tree_nodes_functions_Nova_Parameter*(*)(spectra_tree_nodes_functions_Nova_CallableFunction*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, int))spectra_tree_nodes_functions_Nova_CallableFunction_Nova_parseParameter,
 (char(*)(spectra_tree_nodes_functions_Nova_CallableFunction*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, int))spectra_tree_nodes_functions_Nova_CallableFunction_Nova_parseParameters,
 (spectra_tree_nodes_functions_Nova_ParameterList*(*)(spectra_tree_nodes_functions_Nova_CallableFunction*, nova_exception_Nova_ExceptionData*))spectra_tree_nodes_functions_Nova_FunctionDeclaration_Accessorfunc_Nova_parameterList,
@@ -98570,7 +97867,6 @@ spectra_tree_nodes_functions_AccessorFunction_AccessorFunctionFunctionMap_Extens
 0,
 0,
 0,
-0,
 (spectra_tree_nodes_functions_Nova_Parameter*(*)(spectra_tree_nodes_functions_Nova_CallableFunctionFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_functions_Nova_CallableFunction*, nova_Nova_String*, char))spectra_tree_nodes_functions_Nova_CallableFunctionFunctionMap_functionMap0_Nova_parseParameter,
 (char(*)(spectra_tree_nodes_functions_Nova_CallableFunctionFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_functions_Nova_CallableFunction*, nova_Nova_String*, char))spectra_tree_nodes_functions_Nova_CallableFunctionFunctionMap_functionMap0_Nova_parseParameters,
 0,
@@ -98600,7 +97896,6 @@ spectra_tree_nodes_functions_Nova_FunctionDeclarationFunctionMap_functionMap_Nov
 spectra_tree_nodes_Nova_NodeFunctionMap_functionMap_Nova_toNova,
 spectra_tree_nodes_functions_Nova_BodyFunctionFunctionMap_functionMap_Nova_writeNova,
 spectra_tree_nodes_Nova_NodeFunctionMap_functionMap_Nova_toString,
-spectra_tree_nodes_Nova_ValueFunctionMap_functionMapValueFunctionMap_Nova_construct,
 spectra_tree_nodes_functions_Nova_AccessorFunctionFunctionMap_functionMap_static_Nova_parse,
 spectra_tree_nodes_functions_Nova_FunctionDeclarationFunctionMap_functionMap_Nova_parseType,
 spectra_tree_nodes_Nova_ValueFunctionMap_functionMap_Nova_writeType,
@@ -98614,7 +97909,6 @@ spectra_tree_nodes_functions_AccessorFunction_AccessorFunctionPropertyMap_Extens
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -98896,7 +98190,6 @@ spectra_tree_nodes_functions_ArrayInstantiation_Extension_VTable spectra_tree_no
 0,
 0,
 0,
-0,
 (void(*)(spectra_tree_nodes_operations_Nova_Assignable*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Value*))spectra_tree_nodes_variables_Nova_Variable_Nova_onAssigned,
 0,
 0,
@@ -99070,7 +98363,6 @@ spectra_tree_nodes_functions_ArrayInstantiation_ArrayInstantiationFunctionMap_Ex
 0,
 0,
 0,
-0,
 (void(*)(spectra_tree_nodes_operations_Nova_AssignableFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_operations_Nova_Assignable*, spectra_tree_nodes_Nova_Value*))spectra_tree_nodes_variables_Nova_VariableFunctionMap_functionMap_Nova_onAssigned,
 0,
 0,
@@ -99093,11 +98385,9 @@ spectra_tree_nodes_Nova_NodeFunctionMap_functionMap_Nova_writeAnnotationSeparato
 spectra_tree_nodes_Nova_NodeFunctionMap_functionMap_Nova_toNova,
 spectra_tree_nodes_functions_Nova_ArrayInstantiationFunctionMap_functionMap_Nova_writeNova,
 spectra_tree_nodes_functions_Nova_FunctionCallFunctionMap_functionMap_Nova_toString,
-spectra_tree_nodes_Nova_ValueFunctionMap_functionMapValueFunctionMap_Nova_construct,
 spectra_tree_nodes_functions_Nova_ArrayInstantiationFunctionMap_functionMap_static_Nova_parse,
 spectra_tree_nodes_Nova_ValueFunctionMap_functionMap_Nova_parseType,
 spectra_tree_nodes_Nova_ValueFunctionMap_functionMap_Nova_writeType,
-spectra_tree_nodes_variables_Nova_VariableFunctionMap_functionMapVariableFunctionMap_Nova_construct,
 spectra_tree_nodes_functions_Nova_InstantiationFunctionMap_functionMap_Nova_writeName,
 };
 
@@ -99106,7 +98396,6 @@ spectra_tree_nodes_functions_ArrayInstantiation_ArrayInstantiationPropertyMap_Ex
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -99376,7 +98665,6 @@ spectra_tree_nodes_functions_BodyFunction_Extension_VTable spectra_tree_nodes_fu
 0,
 0,
 0,
-0,
 (spectra_tree_nodes_functions_Nova_Parameter*(*)(spectra_tree_nodes_functions_Nova_CallableFunction*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, int))spectra_tree_nodes_functions_Nova_CallableFunction_Nova_parseParameter,
 (char(*)(spectra_tree_nodes_functions_Nova_CallableFunction*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, int))spectra_tree_nodes_functions_Nova_CallableFunction_Nova_parseParameters,
 (spectra_tree_nodes_functions_Nova_ParameterList*(*)(spectra_tree_nodes_functions_Nova_CallableFunction*, nova_exception_Nova_ExceptionData*))spectra_tree_nodes_functions_Nova_FunctionDeclaration_Accessorfunc_Nova_parameterList,
@@ -99557,7 +98845,6 @@ spectra_tree_nodes_functions_BodyFunction_BodyFunctionFunctionMap_Extension_VTab
 0,
 0,
 0,
-0,
 (spectra_tree_nodes_functions_Nova_Parameter*(*)(spectra_tree_nodes_functions_Nova_CallableFunctionFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_functions_Nova_CallableFunction*, nova_Nova_String*, char))spectra_tree_nodes_functions_Nova_CallableFunctionFunctionMap_functionMap0_Nova_parseParameter,
 (char(*)(spectra_tree_nodes_functions_Nova_CallableFunctionFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_functions_Nova_CallableFunction*, nova_Nova_String*, char))spectra_tree_nodes_functions_Nova_CallableFunctionFunctionMap_functionMap0_Nova_parseParameters,
 0,
@@ -99587,7 +98874,6 @@ spectra_tree_nodes_functions_Nova_FunctionDeclarationFunctionMap_functionMap_Nov
 spectra_tree_nodes_Nova_NodeFunctionMap_functionMap_Nova_toNova,
 spectra_tree_nodes_functions_Nova_BodyFunctionFunctionMap_functionMap_Nova_writeNova,
 spectra_tree_nodes_Nova_NodeFunctionMap_functionMap_Nova_toString,
-spectra_tree_nodes_Nova_ValueFunctionMap_functionMapValueFunctionMap_Nova_construct,
 spectra_tree_nodes_functions_Nova_BodyFunctionFunctionMap_functionMap_static_Nova_parse,
 spectra_tree_nodes_functions_Nova_FunctionDeclarationFunctionMap_functionMap_Nova_parseType,
 spectra_tree_nodes_Nova_ValueFunctionMap_functionMap_Nova_writeType,
@@ -99601,7 +98887,6 @@ spectra_tree_nodes_functions_BodyFunction_BodyFunctionPropertyMap_Extension_VTab
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -99873,7 +99158,6 @@ spectra_tree_nodes_functions_CallableFunction_Extension_VTable spectra_tree_node
 0,
 0,
 0,
-0,
 (spectra_tree_nodes_functions_Nova_Parameter*(*)(spectra_tree_nodes_functions_Nova_CallableFunction*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, int))spectra_tree_nodes_functions_Nova_CallableFunction_Nova_parseParameter,
 (char(*)(spectra_tree_nodes_functions_Nova_CallableFunction*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, int))spectra_tree_nodes_functions_Nova_CallableFunction_Nova_parseParameters,
 (spectra_tree_nodes_functions_Nova_ParameterList*(*)(spectra_tree_nodes_functions_Nova_CallableFunction*, nova_exception_Nova_ExceptionData*))spectra_tree_nodes_functions_Nova_CallableFunction_Accessor_Nova_parameterList,
@@ -99896,7 +99180,6 @@ spectra_tree_nodes_functions_CallableFunction_CallableFunctionFunctionMap_Extens
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -100158,7 +99441,6 @@ spectra_tree_nodes_functions_CallableFunction_CallableFunctionPropertyMap_Extens
 0,
 0,
 0,
-0,
 (spectra_tree_nodes_functions_Nova_ParameterList*(*)(spectra_tree_nodes_functions_Nova_CallableFunctionPropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_functions_Nova_CallableFunction*))spectra_tree_nodes_functions_Nova_CallableFunctionPropertyMap_functionMap0_Nova_parameterList,
 (nova_datastruct_list_Nova_Array*(*)(spectra_tree_nodes_generics_Nova_GenericCompatiblePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_generics_Nova_GenericCompatible*))spectra_tree_nodes_generics_Nova_GenericCompatiblePropertyMap_functionMap0_Nova_genericParameters,
 0,
@@ -100237,7 +99519,6 @@ spectra_tree_nodes_functions_Constructor_Extension_VTable spectra_tree_nodes_fun
 0,
 0,
 (void(*)(spectra_tree_nodes_annotations_Nova_Annotatable*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_annotations_Nova_Annotation*))spectra_tree_nodes_Nova_Node_Nova_addAnnotation,
-0,
 0,
 0,
 0,
@@ -100474,7 +99755,6 @@ spectra_tree_nodes_functions_Constructor_ConstructorFunctionMap_Extension_VTable
 0,
 0,
 0,
-0,
 (spectra_tree_nodes_functions_Nova_Parameter*(*)(spectra_tree_nodes_functions_Nova_CallableFunctionFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_functions_Nova_CallableFunction*, nova_Nova_String*, char))spectra_tree_nodes_functions_Nova_CallableFunctionFunctionMap_functionMap0_Nova_parseParameter,
 (char(*)(spectra_tree_nodes_functions_Nova_CallableFunctionFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_functions_Nova_CallableFunction*, nova_Nova_String*, char))spectra_tree_nodes_functions_Nova_CallableFunctionFunctionMap_functionMap0_Nova_parseParameters,
 0,
@@ -100504,7 +99784,6 @@ spectra_tree_nodes_functions_Nova_FunctionDeclarationFunctionMap_functionMap_Nov
 spectra_tree_nodes_Nova_NodeFunctionMap_functionMap_Nova_toNova,
 spectra_tree_nodes_functions_Nova_BodyFunctionFunctionMap_functionMap_Nova_writeNova,
 spectra_tree_nodes_Nova_NodeFunctionMap_functionMap_Nova_toString,
-spectra_tree_nodes_Nova_ValueFunctionMap_functionMapValueFunctionMap_Nova_construct,
 spectra_tree_nodes_functions_Nova_ConstructorFunctionMap_functionMap_static_Nova_parse,
 spectra_tree_nodes_functions_Nova_FunctionDeclarationFunctionMap_functionMap_Nova_parseType,
 spectra_tree_nodes_Nova_ValueFunctionMap_functionMap_Nova_writeType,
@@ -100518,7 +99797,6 @@ spectra_tree_nodes_functions_Constructor_ConstructorPropertyMap_Extension_VTable
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -100804,7 +100082,6 @@ spectra_tree_nodes_functions_FunctionArgumentList_Extension_VTable spectra_tree_
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 spectra_tree_nodes_Nova_ArgumentList_Nova_toString,
@@ -100970,7 +100247,6 @@ spectra_tree_nodes_functions_FunctionArgumentList_FunctionArgumentListFunctionMa
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -100997,7 +100273,6 @@ spectra_tree_nodes_functions_FunctionArgumentList_FunctionArgumentListPropertyMa
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -101274,7 +100549,6 @@ spectra_tree_nodes_functions_FunctionCall_Extension_VTable spectra_tree_nodes_fu
 0,
 0,
 0,
-0,
 (void(*)(spectra_tree_nodes_operations_Nova_Assignable*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Value*))spectra_tree_nodes_variables_Nova_Variable_Nova_onAssigned,
 0,
 0,
@@ -101448,7 +100722,6 @@ spectra_tree_nodes_functions_FunctionCall_FunctionCallFunctionMap_Extension_VTab
 0,
 0,
 0,
-0,
 (void(*)(spectra_tree_nodes_operations_Nova_AssignableFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_operations_Nova_Assignable*, spectra_tree_nodes_Nova_Value*))spectra_tree_nodes_variables_Nova_VariableFunctionMap_functionMap_Nova_onAssigned,
 0,
 0,
@@ -101471,11 +100744,9 @@ spectra_tree_nodes_Nova_NodeFunctionMap_functionMap_Nova_writeAnnotationSeparato
 spectra_tree_nodes_Nova_NodeFunctionMap_functionMap_Nova_toNova,
 spectra_tree_nodes_functions_Nova_FunctionCallFunctionMap_functionMap_Nova_writeNova,
 spectra_tree_nodes_functions_Nova_FunctionCallFunctionMap_functionMap_Nova_toString,
-spectra_tree_nodes_Nova_ValueFunctionMap_functionMapValueFunctionMap_Nova_construct,
 spectra_tree_nodes_functions_Nova_FunctionCallFunctionMap_functionMap_static_Nova_parse,
 spectra_tree_nodes_Nova_ValueFunctionMap_functionMap_Nova_parseType,
 spectra_tree_nodes_Nova_ValueFunctionMap_functionMap_Nova_writeType,
-spectra_tree_nodes_variables_Nova_VariableFunctionMap_functionMapVariableFunctionMap_Nova_construct,
 spectra_tree_nodes_functions_Nova_FunctionCallFunctionMap_functionMap_Nova_writeName,
 };
 
@@ -101484,7 +100755,6 @@ spectra_tree_nodes_functions_FunctionCall_FunctionCallPropertyMap_Extension_VTab
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -101754,7 +101024,6 @@ spectra_tree_nodes_functions_FunctionDeclaration_Extension_VTable spectra_tree_n
 0,
 0,
 0,
-0,
 (spectra_tree_nodes_functions_Nova_Parameter*(*)(spectra_tree_nodes_functions_Nova_CallableFunction*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, int))spectra_tree_nodes_functions_Nova_CallableFunction_Nova_parseParameter,
 (char(*)(spectra_tree_nodes_functions_Nova_CallableFunction*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, int))spectra_tree_nodes_functions_Nova_CallableFunction_Nova_parseParameters,
 (spectra_tree_nodes_functions_Nova_ParameterList*(*)(spectra_tree_nodes_functions_Nova_CallableFunction*, nova_exception_Nova_ExceptionData*))spectra_tree_nodes_functions_Nova_FunctionDeclaration_Accessorfunc_Nova_parameterList,
@@ -101935,7 +101204,6 @@ spectra_tree_nodes_functions_FunctionDeclaration_FunctionDeclarationFunctionMap_
 0,
 0,
 0,
-0,
 (spectra_tree_nodes_functions_Nova_Parameter*(*)(spectra_tree_nodes_functions_Nova_CallableFunctionFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_functions_Nova_CallableFunction*, nova_Nova_String*, char))spectra_tree_nodes_functions_Nova_CallableFunctionFunctionMap_functionMap0_Nova_parseParameter,
 (char(*)(spectra_tree_nodes_functions_Nova_CallableFunctionFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_functions_Nova_CallableFunction*, nova_Nova_String*, char))spectra_tree_nodes_functions_Nova_CallableFunctionFunctionMap_functionMap0_Nova_parseParameters,
 0,
@@ -101965,7 +101233,6 @@ spectra_tree_nodes_functions_Nova_FunctionDeclarationFunctionMap_functionMap_Nov
 spectra_tree_nodes_Nova_NodeFunctionMap_functionMap_Nova_toNova,
 spectra_tree_nodes_functions_Nova_FunctionDeclarationFunctionMap_functionMap_Nova_writeNova,
 spectra_tree_nodes_Nova_NodeFunctionMap_functionMap_Nova_toString,
-spectra_tree_nodes_Nova_ValueFunctionMap_functionMapValueFunctionMap_Nova_construct,
 spectra_tree_nodes_functions_Nova_FunctionDeclarationFunctionMap_functionMap_static_Nova_parse,
 spectra_tree_nodes_functions_Nova_FunctionDeclarationFunctionMap_functionMap_Nova_parseType,
 spectra_tree_nodes_Nova_ValueFunctionMap_functionMap_Nova_writeType,
@@ -101979,7 +101246,6 @@ spectra_tree_nodes_functions_FunctionDeclaration_FunctionDeclarationPropertyMap_
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -102251,7 +101517,6 @@ spectra_tree_nodes_functions_InitializationFunction_Extension_VTable spectra_tre
 0,
 0,
 0,
-0,
 (spectra_tree_nodes_functions_Nova_Parameter*(*)(spectra_tree_nodes_functions_Nova_CallableFunction*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, int))spectra_tree_nodes_functions_Nova_CallableFunction_Nova_parseParameter,
 (char(*)(spectra_tree_nodes_functions_Nova_CallableFunction*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, int))spectra_tree_nodes_functions_Nova_CallableFunction_Nova_parseParameters,
 (spectra_tree_nodes_functions_Nova_ParameterList*(*)(spectra_tree_nodes_functions_Nova_CallableFunction*, nova_exception_Nova_ExceptionData*))spectra_tree_nodes_functions_Nova_FunctionDeclaration_Accessorfunc_Nova_parameterList,
@@ -102432,7 +101697,6 @@ spectra_tree_nodes_functions_InitializationFunction_InitializationFunctionFuncti
 0,
 0,
 0,
-0,
 (spectra_tree_nodes_functions_Nova_Parameter*(*)(spectra_tree_nodes_functions_Nova_CallableFunctionFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_functions_Nova_CallableFunction*, nova_Nova_String*, char))spectra_tree_nodes_functions_Nova_CallableFunctionFunctionMap_functionMap0_Nova_parseParameter,
 (char(*)(spectra_tree_nodes_functions_Nova_CallableFunctionFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_functions_Nova_CallableFunction*, nova_Nova_String*, char))spectra_tree_nodes_functions_Nova_CallableFunctionFunctionMap_functionMap0_Nova_parseParameters,
 0,
@@ -102462,7 +101726,6 @@ spectra_tree_nodes_functions_Nova_FunctionDeclarationFunctionMap_functionMap_Nov
 spectra_tree_nodes_Nova_NodeFunctionMap_functionMap_Nova_toNova,
 spectra_tree_nodes_functions_Nova_BodyFunctionFunctionMap_functionMap_Nova_writeNova,
 spectra_tree_nodes_Nova_NodeFunctionMap_functionMap_Nova_toString,
-spectra_tree_nodes_Nova_ValueFunctionMap_functionMapValueFunctionMap_Nova_construct,
 spectra_tree_nodes_functions_Nova_BodyFunctionFunctionMap_functionMap_static_Nova_parse,
 spectra_tree_nodes_functions_Nova_FunctionDeclarationFunctionMap_functionMap_Nova_parseType,
 spectra_tree_nodes_Nova_ValueFunctionMap_functionMap_Nova_writeType,
@@ -102476,7 +101739,6 @@ spectra_tree_nodes_functions_InitializationFunction_InitializationFunctionProper
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -102758,7 +102020,6 @@ spectra_tree_nodes_functions_Instantiation_Extension_VTable spectra_tree_nodes_f
 0,
 0,
 0,
-0,
 (void(*)(spectra_tree_nodes_operations_Nova_Assignable*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Value*))spectra_tree_nodes_variables_Nova_Variable_Nova_onAssigned,
 0,
 0,
@@ -102932,7 +102193,6 @@ spectra_tree_nodes_functions_Instantiation_InstantiationFunctionMap_Extension_VT
 0,
 0,
 0,
-0,
 (void(*)(spectra_tree_nodes_operations_Nova_AssignableFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_operations_Nova_Assignable*, spectra_tree_nodes_Nova_Value*))spectra_tree_nodes_variables_Nova_VariableFunctionMap_functionMap_Nova_onAssigned,
 0,
 0,
@@ -102955,11 +102215,9 @@ spectra_tree_nodes_Nova_NodeFunctionMap_functionMap_Nova_writeAnnotationSeparato
 spectra_tree_nodes_Nova_NodeFunctionMap_functionMap_Nova_toNova,
 spectra_tree_nodes_functions_Nova_InstantiationFunctionMap_functionMap_Nova_writeNova,
 spectra_tree_nodes_functions_Nova_FunctionCallFunctionMap_functionMap_Nova_toString,
-spectra_tree_nodes_Nova_ValueFunctionMap_functionMapValueFunctionMap_Nova_construct,
 spectra_tree_nodes_functions_Nova_InstantiationFunctionMap_functionMap_static_Nova_parse,
 spectra_tree_nodes_Nova_ValueFunctionMap_functionMap_Nova_parseType,
 spectra_tree_nodes_Nova_ValueFunctionMap_functionMap_Nova_writeType,
-spectra_tree_nodes_variables_Nova_VariableFunctionMap_functionMapVariableFunctionMap_Nova_construct,
 spectra_tree_nodes_functions_Nova_InstantiationFunctionMap_functionMap_Nova_writeName,
 };
 
@@ -102968,7 +102226,6 @@ spectra_tree_nodes_functions_Instantiation_InstantiationPropertyMap_Extension_VT
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -103238,7 +102495,6 @@ spectra_tree_nodes_functions_MutatorFunction_Extension_VTable spectra_tree_nodes
 0,
 0,
 0,
-0,
 (spectra_tree_nodes_functions_Nova_Parameter*(*)(spectra_tree_nodes_functions_Nova_CallableFunction*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, int))spectra_tree_nodes_functions_Nova_CallableFunction_Nova_parseParameter,
 (char(*)(spectra_tree_nodes_functions_Nova_CallableFunction*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, int))spectra_tree_nodes_functions_Nova_CallableFunction_Nova_parseParameters,
 (spectra_tree_nodes_functions_Nova_ParameterList*(*)(spectra_tree_nodes_functions_Nova_CallableFunction*, nova_exception_Nova_ExceptionData*))spectra_tree_nodes_functions_Nova_FunctionDeclaration_Accessorfunc_Nova_parameterList,
@@ -103419,7 +102675,6 @@ spectra_tree_nodes_functions_MutatorFunction_MutatorFunctionFunctionMap_Extensio
 0,
 0,
 0,
-0,
 (spectra_tree_nodes_functions_Nova_Parameter*(*)(spectra_tree_nodes_functions_Nova_CallableFunctionFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_functions_Nova_CallableFunction*, nova_Nova_String*, char))spectra_tree_nodes_functions_Nova_CallableFunctionFunctionMap_functionMap0_Nova_parseParameter,
 (char(*)(spectra_tree_nodes_functions_Nova_CallableFunctionFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_functions_Nova_CallableFunction*, nova_Nova_String*, char))spectra_tree_nodes_functions_Nova_CallableFunctionFunctionMap_functionMap0_Nova_parseParameters,
 0,
@@ -103449,7 +102704,6 @@ spectra_tree_nodes_functions_Nova_FunctionDeclarationFunctionMap_functionMap_Nov
 spectra_tree_nodes_Nova_NodeFunctionMap_functionMap_Nova_toNova,
 spectra_tree_nodes_functions_Nova_BodyFunctionFunctionMap_functionMap_Nova_writeNova,
 spectra_tree_nodes_Nova_NodeFunctionMap_functionMap_Nova_toString,
-spectra_tree_nodes_Nova_ValueFunctionMap_functionMapValueFunctionMap_Nova_construct,
 spectra_tree_nodes_functions_Nova_MutatorFunctionFunctionMap_functionMap_static_Nova_parse,
 spectra_tree_nodes_functions_Nova_FunctionDeclarationFunctionMap_functionMap_Nova_parseType,
 spectra_tree_nodes_Nova_ValueFunctionMap_functionMap_Nova_writeType,
@@ -103463,7 +102717,6 @@ spectra_tree_nodes_functions_MutatorFunction_MutatorFunctionPropertyMap_Extensio
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -103749,7 +103002,6 @@ spectra_tree_nodes_functions_ObjectNotation_Extension_VTable spectra_tree_nodes_
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 spectra_tree_nodes_Nova_Node_Nova_toString,
@@ -103915,7 +103167,6 @@ spectra_tree_nodes_functions_ObjectNotation_ObjectNotationFunctionMap_Extension_
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -103942,7 +103193,6 @@ spectra_tree_nodes_functions_ObjectNotation_ObjectNotationPropertyMap_Extension_
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -104223,7 +103473,6 @@ spectra_tree_nodes_functions_ObjectNotationProperty_Extension_VTable spectra_tre
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 spectra_tree_nodes_Nova_Node_Nova_toString,
@@ -104395,7 +103644,6 @@ spectra_tree_nodes_functions_ObjectNotationProperty_ObjectNotationPropertyFuncti
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -104415,7 +103663,6 @@ spectra_tree_nodes_Nova_NodeFunctionMap_functionMap_Nova_writeAnnotationSeparato
 spectra_tree_nodes_Nova_NodeFunctionMap_functionMap_Nova_toNova,
 spectra_tree_nodes_functions_Nova_ObjectNotationPropertyFunctionMap_functionMap_Nova_writeNova,
 spectra_tree_nodes_Nova_NodeFunctionMap_functionMap_Nova_toString,
-spectra_tree_nodes_Nova_ValueFunctionMap_functionMapValueFunctionMap_Nova_construct,
 spectra_tree_nodes_functions_Nova_ObjectNotationPropertyFunctionMap_functionMap_static_Nova_parse,
 spectra_tree_nodes_Nova_ValueFunctionMap_functionMap_Nova_parseType,
 spectra_tree_nodes_Nova_ValueFunctionMap_functionMap_Nova_writeType,
@@ -104426,7 +103673,6 @@ spectra_tree_nodes_functions_ObjectNotationProperty_ObjectNotationPropertyProper
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -104706,7 +103952,6 @@ spectra_tree_nodes_functions_Parameter_Extension_VTable spectra_tree_nodes_funct
 0,
 0,
 0,
-0,
 (void(*)(spectra_tree_nodes_operations_Nova_Assignable*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Value*))spectra_tree_nodes_operations_Nova_Assignable_Nova_onAssigned,
 0,
 0,
@@ -104882,7 +104127,6 @@ spectra_tree_nodes_functions_Parameter_ParameterFunctionMap_Extension_VTable spe
 0,
 0,
 0,
-0,
 (void(*)(spectra_tree_nodes_operations_Nova_AssignableFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_operations_Nova_Assignable*, spectra_tree_nodes_Nova_Value*))spectra_tree_nodes_operations_Nova_AssignableFunctionMap_functionMap0_Nova_onAssigned,
 0,
 0,
@@ -104905,7 +104149,6 @@ spectra_tree_nodes_Nova_NodeFunctionMap_functionMap_Nova_writeAnnotationSeparato
 spectra_tree_nodes_Nova_NodeFunctionMap_functionMap_Nova_toNova,
 spectra_tree_nodes_variables_Nova_VariableDeclarationFunctionMap_functionMap_Nova_writeNova,
 spectra_tree_nodes_Nova_NodeFunctionMap_functionMap_Nova_toString,
-spectra_tree_nodes_Nova_ValueFunctionMap_functionMapValueFunctionMap_Nova_construct,
 spectra_tree_nodes_functions_Nova_ParameterFunctionMap_functionMap_static_Nova_parse,
 spectra_tree_nodes_Nova_ValueFunctionMap_functionMap_Nova_parseType,
 spectra_tree_nodes_Nova_ValueFunctionMap_functionMap_Nova_writeType,
@@ -104918,7 +104161,6 @@ spectra_tree_nodes_functions_Parameter_ParameterPropertyMap_Extension_VTable spe
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -105203,7 +104445,6 @@ spectra_tree_nodes_functions_ParameterList_Extension_VTable spectra_tree_nodes_f
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 spectra_tree_nodes_Nova_Node_Nova_toString,
@@ -105369,7 +104610,6 @@ spectra_tree_nodes_functions_ParameterList_ParameterListFunctionMap_Extension_VT
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -105396,7 +104636,6 @@ spectra_tree_nodes_functions_ParameterList_ParameterListPropertyMap_Extension_VT
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -105663,7 +104902,6 @@ spectra_tree_nodes_functions_PropertyFunction_Extension_VTable spectra_tree_node
 0,
 0,
 0,
-0,
 (spectra_tree_nodes_functions_Nova_Parameter*(*)(spectra_tree_nodes_functions_Nova_CallableFunction*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, int))spectra_tree_nodes_functions_Nova_CallableFunction_Nova_parseParameter,
 (char(*)(spectra_tree_nodes_functions_Nova_CallableFunction*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, int))spectra_tree_nodes_functions_Nova_CallableFunction_Nova_parseParameters,
 (spectra_tree_nodes_functions_Nova_ParameterList*(*)(spectra_tree_nodes_functions_Nova_CallableFunction*, nova_exception_Nova_ExceptionData*))spectra_tree_nodes_functions_Nova_FunctionDeclaration_Accessorfunc_Nova_parameterList,
@@ -105844,7 +105082,6 @@ spectra_tree_nodes_functions_PropertyFunction_PropertyFunctionFunctionMap_Extens
 0,
 0,
 0,
-0,
 (spectra_tree_nodes_functions_Nova_Parameter*(*)(spectra_tree_nodes_functions_Nova_CallableFunctionFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_functions_Nova_CallableFunction*, nova_Nova_String*, char))spectra_tree_nodes_functions_Nova_CallableFunctionFunctionMap_functionMap0_Nova_parseParameter,
 (char(*)(spectra_tree_nodes_functions_Nova_CallableFunctionFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_functions_Nova_CallableFunction*, nova_Nova_String*, char))spectra_tree_nodes_functions_Nova_CallableFunctionFunctionMap_functionMap0_Nova_parseParameters,
 0,
@@ -105874,7 +105111,6 @@ spectra_tree_nodes_functions_Nova_FunctionDeclarationFunctionMap_functionMap_Nov
 spectra_tree_nodes_Nova_NodeFunctionMap_functionMap_Nova_toNova,
 spectra_tree_nodes_functions_Nova_BodyFunctionFunctionMap_functionMap_Nova_writeNova,
 spectra_tree_nodes_Nova_NodeFunctionMap_functionMap_Nova_toString,
-spectra_tree_nodes_Nova_ValueFunctionMap_functionMapValueFunctionMap_Nova_construct,
 spectra_tree_nodes_functions_Nova_PropertyFunctionFunctionMap_functionMap_static_Nova_parse,
 spectra_tree_nodes_functions_Nova_FunctionDeclarationFunctionMap_functionMap_Nova_parseType,
 spectra_tree_nodes_Nova_ValueFunctionMap_functionMap_Nova_writeType,
@@ -105888,7 +105124,6 @@ spectra_tree_nodes_functions_PropertyFunction_PropertyFunctionPropertyMap_Extens
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -106174,7 +105409,6 @@ spectra_tree_nodes_functions_closures_ClosureContext_Extension_VTable spectra_tr
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 spectra_tree_nodes_Nova_Node_Nova_toString,
@@ -106340,7 +105574,6 @@ spectra_tree_nodes_functions_closures_ClosureContext_ClosureContextFunctionMap_E
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -106367,7 +105600,6 @@ spectra_tree_nodes_functions_closures_ClosureContext_ClosureContextPropertyMap_E
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -106634,7 +105866,6 @@ spectra_tree_nodes_functions_closures_ClosureDeclaration_Extension_VTable spectr
 0,
 0,
 0,
-0,
 (spectra_tree_nodes_functions_Nova_Parameter*(*)(spectra_tree_nodes_functions_Nova_CallableFunction*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, int))spectra_tree_nodes_functions_closures_Nova_ClosureDeclaration_Nova_parseParameter,
 (char(*)(spectra_tree_nodes_functions_Nova_CallableFunction*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, int))spectra_tree_nodes_functions_Nova_CallableFunction_Nova_parseParameters,
 (spectra_tree_nodes_functions_Nova_ParameterList*(*)(spectra_tree_nodes_functions_Nova_CallableFunction*, nova_exception_Nova_ExceptionData*))spectra_tree_nodes_functions_closures_Nova_ClosureDeclaration_Accessorfunc1_Nova_parameterList,
@@ -106813,7 +106044,6 @@ spectra_tree_nodes_functions_closures_ClosureDeclaration_ClosureDeclarationFunct
 0,
 0,
 0,
-0,
 (spectra_tree_nodes_functions_Nova_Parameter*(*)(spectra_tree_nodes_functions_Nova_CallableFunctionFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_functions_Nova_CallableFunction*, nova_Nova_String*, char))spectra_tree_nodes_functions_closures_Nova_ClosureDeclarationFunctionMap_functionMap_Nova_parseParameter,
 (char(*)(spectra_tree_nodes_functions_Nova_CallableFunctionFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_functions_Nova_CallableFunction*, nova_Nova_String*, char))spectra_tree_nodes_functions_Nova_CallableFunctionFunctionMap_functionMap0_Nova_parseParameters,
 0,
@@ -106843,7 +106073,6 @@ spectra_tree_nodes_Nova_NodeFunctionMap_functionMap_Nova_writeAnnotationSeparato
 spectra_tree_nodes_Nova_NodeFunctionMap_functionMap_Nova_toNova,
 spectra_tree_nodes_functions_closures_Nova_ClosureDeclarationFunctionMap_functionMap_Nova_writeNova,
 spectra_tree_nodes_Nova_NodeFunctionMap_functionMap_Nova_toString,
-spectra_tree_nodes_Nova_ValueFunctionMap_functionMapValueFunctionMap_Nova_construct,
 spectra_tree_nodes_functions_closures_Nova_ClosureDeclarationFunctionMap_functionMap_static_Nova_parse,
 spectra_tree_nodes_functions_closures_Nova_ClosureDeclarationFunctionMap_functionMap_Nova_parseType,
 spectra_tree_nodes_functions_closures_Nova_ClosureDeclarationFunctionMap_functionMap_Nova_writeType,
@@ -106856,7 +106085,6 @@ spectra_tree_nodes_functions_closures_ClosureDeclaration_ClosureDeclarationPrope
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -107137,7 +106365,6 @@ spectra_tree_nodes_functions_closures_ClosureParameter_Extension_VTable spectra_
 0,
 0,
 0,
-0,
 (void(*)(spectra_tree_nodes_operations_Nova_Assignable*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Value*))spectra_tree_nodes_operations_Nova_Assignable_Nova_onAssigned,
 0,
 0,
@@ -107313,7 +106540,6 @@ spectra_tree_nodes_functions_closures_ClosureParameter_ClosureParameterFunctionM
 0,
 0,
 0,
-0,
 (void(*)(spectra_tree_nodes_operations_Nova_AssignableFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_operations_Nova_Assignable*, spectra_tree_nodes_Nova_Value*))spectra_tree_nodes_operations_Nova_AssignableFunctionMap_functionMap0_Nova_onAssigned,
 0,
 0,
@@ -107336,7 +106562,6 @@ spectra_tree_nodes_Nova_NodeFunctionMap_functionMap_Nova_writeAnnotationSeparato
 spectra_tree_nodes_Nova_NodeFunctionMap_functionMap_Nova_toNova,
 spectra_tree_nodes_variables_Nova_VariableDeclarationFunctionMap_functionMap_Nova_writeNova,
 spectra_tree_nodes_Nova_NodeFunctionMap_functionMap_Nova_toString,
-spectra_tree_nodes_Nova_ValueFunctionMap_functionMapValueFunctionMap_Nova_construct,
 spectra_tree_nodes_functions_closures_Nova_ClosureParameterFunctionMap_functionMap_static_Nova_parse,
 spectra_tree_nodes_Nova_ValueFunctionMap_functionMap_Nova_parseType,
 spectra_tree_nodes_Nova_ValueFunctionMap_functionMap_Nova_writeType,
@@ -107349,7 +106574,6 @@ spectra_tree_nodes_functions_closures_ClosureParameter_ClosureParameterPropertyM
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -107620,7 +106844,6 @@ spectra_tree_nodes_functions_closures_LambdaExpression_Extension_VTable spectra_
 0,
 0,
 0,
-0,
 (spectra_tree_nodes_functions_Nova_Parameter*(*)(spectra_tree_nodes_functions_Nova_CallableFunction*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, int))spectra_tree_nodes_functions_closures_Nova_LambdaExpression_Nova_parseParameter,
 (char(*)(spectra_tree_nodes_functions_Nova_CallableFunction*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, int))spectra_tree_nodes_functions_closures_Nova_LambdaExpression_Nova_parseParameters,
 (spectra_tree_nodes_functions_Nova_ParameterList*(*)(spectra_tree_nodes_functions_Nova_CallableFunction*, nova_exception_Nova_ExceptionData*))spectra_tree_nodes_functions_closures_Nova_LambdaExpression_Accessorfunc1_Nova_parameterList,
@@ -107796,7 +107019,6 @@ spectra_tree_nodes_functions_closures_LambdaExpression_LambdaExpressionFunctionM
 0,
 0,
 0,
-0,
 (spectra_tree_nodes_functions_Nova_Parameter*(*)(spectra_tree_nodes_functions_Nova_CallableFunctionFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_functions_Nova_CallableFunction*, nova_Nova_String*, char))spectra_tree_nodes_functions_closures_Nova_LambdaExpressionFunctionMap_functionMap0_Nova_parseParameter,
 (char(*)(spectra_tree_nodes_functions_Nova_CallableFunctionFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_functions_Nova_CallableFunction*, nova_Nova_String*, char))spectra_tree_nodes_functions_closures_Nova_LambdaExpressionFunctionMap_functionMap_Nova_parseParameters,
 0,
@@ -107826,7 +107048,6 @@ spectra_tree_nodes_Nova_NodeFunctionMap_functionMap_Nova_writeAnnotationSeparato
 spectra_tree_nodes_Nova_NodeFunctionMap_functionMap_Nova_toNova,
 spectra_tree_nodes_functions_closures_Nova_LambdaExpressionFunctionMap_functionMap_Nova_writeNova,
 spectra_tree_nodes_Nova_NodeFunctionMap_functionMap_Nova_toString,
-spectra_tree_nodes_Nova_ValueFunctionMap_functionMapValueFunctionMap_Nova_construct,
 spectra_tree_nodes_functions_closures_Nova_LambdaExpressionFunctionMap_functionMap_static_Nova_parse,
 spectra_tree_nodes_Nova_ValueFunctionMap_functionMap_Nova_parseType,
 spectra_tree_nodes_Nova_ValueFunctionMap_functionMap_Nova_writeType,
@@ -107837,7 +107058,6 @@ spectra_tree_nodes_functions_closures_LambdaExpression_LambdaExpressionPropertyM
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -108117,7 +107337,6 @@ spectra_tree_nodes_functions_closures_LambdaParameter_Extension_VTable spectra_t
 0,
 0,
 0,
-0,
 (void(*)(spectra_tree_nodes_operations_Nova_Assignable*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Value*))spectra_tree_nodes_operations_Nova_Assignable_Nova_onAssigned,
 0,
 0,
@@ -108293,7 +107512,6 @@ spectra_tree_nodes_functions_closures_LambdaParameter_LambdaParameterFunctionMap
 0,
 0,
 0,
-0,
 (void(*)(spectra_tree_nodes_operations_Nova_AssignableFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_operations_Nova_Assignable*, spectra_tree_nodes_Nova_Value*))spectra_tree_nodes_operations_Nova_AssignableFunctionMap_functionMap0_Nova_onAssigned,
 0,
 0,
@@ -108316,7 +107534,6 @@ spectra_tree_nodes_Nova_NodeFunctionMap_functionMap_Nova_writeAnnotationSeparato
 spectra_tree_nodes_Nova_NodeFunctionMap_functionMap_Nova_toNova,
 spectra_tree_nodes_variables_Nova_VariableDeclarationFunctionMap_functionMap_Nova_writeNova,
 spectra_tree_nodes_Nova_NodeFunctionMap_functionMap_Nova_toString,
-spectra_tree_nodes_Nova_ValueFunctionMap_functionMapValueFunctionMap_Nova_construct,
 spectra_tree_nodes_functions_closures_Nova_LambdaParameterFunctionMap_functionMap_static_Nova_parse,
 spectra_tree_nodes_Nova_ValueFunctionMap_functionMap_Nova_parseType,
 spectra_tree_nodes_Nova_ValueFunctionMap_functionMap_Nova_writeType,
@@ -108329,7 +107546,6 @@ spectra_tree_nodes_functions_closures_LambdaParameter_LambdaParameterPropertyMap
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -108614,7 +107830,6 @@ spectra_tree_nodes_generics_GenericArgument_Extension_VTable spectra_tree_nodes_
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 spectra_tree_nodes_Nova_Node_Nova_toString,
@@ -108786,7 +108001,6 @@ spectra_tree_nodes_generics_GenericArgument_GenericArgumentFunctionMap_Extension
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -108806,7 +108020,6 @@ spectra_tree_nodes_Nova_NodeFunctionMap_functionMap_Nova_writeAnnotationSeparato
 spectra_tree_nodes_Nova_NodeFunctionMap_functionMap_Nova_toNova,
 spectra_tree_nodes_generics_Nova_GenericArgumentFunctionMap_functionMap_Nova_writeNova,
 spectra_tree_nodes_Nova_NodeFunctionMap_functionMap_Nova_toString,
-spectra_tree_nodes_Nova_ValueFunctionMap_functionMapValueFunctionMap_Nova_construct,
 spectra_tree_nodes_Nova_ValueFunctionMap_functionMap0_static_Nova_parse,
 spectra_tree_nodes_Nova_ValueFunctionMap_functionMap_Nova_parseType,
 spectra_tree_nodes_Nova_ValueFunctionMap_functionMap_Nova_writeType,
@@ -108817,7 +108030,6 @@ spectra_tree_nodes_generics_GenericArgument_GenericArgumentPropertyMap_Extension
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -109095,7 +108307,6 @@ spectra_tree_nodes_generics_GenericCompatible_Extension_VTable spectra_tree_node
 0,
 0,
 0,
-0,
 (nova_datastruct_list_Nova_Array*(*)(spectra_tree_nodes_generics_Nova_GenericCompatible*, nova_exception_Nova_ExceptionData*))spectra_tree_nodes_generics_Nova_GenericCompatible_Accessor_Nova_genericParameters,
 (nova_datastruct_list_Nova_Array*(*)(spectra_tree_nodes_generics_Nova_GenericCompatible*, nova_exception_Nova_ExceptionData*, nova_datastruct_list_Nova_Array*))spectra_tree_nodes_generics_Nova_GenericCompatible_Mutator_Nova_genericParameters,
 0,
@@ -109239,7 +108450,6 @@ spectra_tree_nodes_generics_GenericCompatible_GenericCompatibleFunctionMap_Exten
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -109251,7 +108461,6 @@ spectra_tree_nodes_generics_GenericCompatible_GenericCompatiblePropertyMap_Exten
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -109521,7 +108730,6 @@ spectra_tree_nodes_generics_GenericParameter_Extension_VTable spectra_tree_nodes
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 spectra_tree_nodes_Nova_Node_Nova_toString,
@@ -109693,7 +108901,6 @@ spectra_tree_nodes_generics_GenericParameter_GenericParameterFunctionMap_Extensi
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -109713,7 +108920,6 @@ spectra_tree_nodes_Nova_NodeFunctionMap_functionMap_Nova_writeAnnotationSeparato
 spectra_tree_nodes_Nova_NodeFunctionMap_functionMap_Nova_toNova,
 spectra_tree_nodes_generics_Nova_GenericParameterFunctionMap_functionMap_Nova_writeNova,
 spectra_tree_nodes_Nova_NodeFunctionMap_functionMap_Nova_toString,
-spectra_tree_nodes_Nova_ValueFunctionMap_functionMapValueFunctionMap_Nova_construct,
 spectra_tree_nodes_Nova_ValueFunctionMap_functionMap0_static_Nova_parse,
 spectra_tree_nodes_Nova_ValueFunctionMap_functionMap_Nova_parseType,
 spectra_tree_nodes_Nova_ValueFunctionMap_functionMap_Nova_writeType,
@@ -109724,7 +108930,6 @@ spectra_tree_nodes_generics_GenericParameter_GenericParameterPropertyMap_Extensi
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -110008,7 +109213,6 @@ spectra_tree_nodes_generics_GenericType_Extension_VTable spectra_tree_nodes_gene
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 spectra_tree_nodes_Nova_Type_Nova_toString,
@@ -110026,7 +109230,6 @@ spectra_tree_nodes_generics_GenericType_GenericTypeFunctionMap_Extension_VTable 
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -110301,7 +109504,6 @@ spectra_tree_nodes_generics_GenericType_GenericTypePropertyMap_Extension_VTable 
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -110440,7 +109642,6 @@ spectra_tree_nodes_operations_Assignable_Extension_VTable spectra_tree_nodes_ope
 0,
 0,
 0,
-0,
 (void(*)(spectra_tree_nodes_operations_Nova_Assignable*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Value*))spectra_tree_nodes_operations_Nova_Assignable_Nova_onAssigned,
 0,
 0,
@@ -110453,7 +109654,6 @@ spectra_tree_nodes_operations_Assignable_AssignableFunctionMap_Extension_VTable 
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -110723,7 +109923,6 @@ spectra_tree_nodes_operations_Assignable_AssignablePropertyMap_Extension_VTable 
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -110794,7 +109993,6 @@ spectra_tree_nodes_operations_Assignment_Extension_VTable spectra_tree_nodes_ope
 0,
 0,
 (void(*)(spectra_tree_nodes_annotations_Nova_Annotatable*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_annotations_Nova_Annotation*))spectra_tree_nodes_Nova_Node_Nova_addAnnotation,
-0,
 0,
 0,
 0,
@@ -111036,7 +110234,6 @@ spectra_tree_nodes_operations_Assignment_AssignmentFunctionMap_Extension_VTable 
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -111056,7 +110253,6 @@ spectra_tree_nodes_Nova_NodeFunctionMap_functionMap_Nova_writeAnnotationSeparato
 spectra_tree_nodes_Nova_NodeFunctionMap_functionMap_Nova_toNova,
 spectra_tree_nodes_operations_Nova_OperationFunctionMap_functionMap_Nova_writeNova,
 spectra_tree_nodes_Nova_NodeFunctionMap_functionMap_Nova_toString,
-spectra_tree_nodes_Nova_ValueFunctionMap_functionMapValueFunctionMap_Nova_construct,
 spectra_tree_nodes_operations_Nova_AssignmentFunctionMap_functionMap_static_Nova_parse,
 spectra_tree_nodes_Nova_ValueFunctionMap_functionMap_Nova_parseType,
 spectra_tree_nodes_Nova_ValueFunctionMap_functionMap_Nova_writeType,
@@ -111067,7 +110263,6 @@ spectra_tree_nodes_operations_Assignment_AssignmentPropertyMap_Extension_VTable 
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -111351,7 +110546,6 @@ spectra_tree_nodes_operations_ElvisOperation_Extension_VTable spectra_tree_nodes
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 spectra_tree_nodes_Nova_Node_Nova_toString,
@@ -111523,7 +110717,6 @@ spectra_tree_nodes_operations_ElvisOperation_ElvisOperationFunctionMap_Extension
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -111543,7 +110736,6 @@ spectra_tree_nodes_Nova_NodeFunctionMap_functionMap_Nova_writeAnnotationSeparato
 spectra_tree_nodes_Nova_NodeFunctionMap_functionMap_Nova_toNova,
 spectra_tree_nodes_operations_Nova_ElvisOperationFunctionMap_functionMap_Nova_writeNova,
 spectra_tree_nodes_Nova_NodeFunctionMap_functionMap_Nova_toString,
-spectra_tree_nodes_Nova_ValueFunctionMap_functionMapValueFunctionMap_Nova_construct,
 spectra_tree_nodes_operations_Nova_ElvisOperationFunctionMap_functionMap_static_Nova_parse,
 spectra_tree_nodes_Nova_ValueFunctionMap_functionMap_Nova_parseType,
 spectra_tree_nodes_Nova_ValueFunctionMap_functionMap_Nova_writeType,
@@ -111554,7 +110746,6 @@ spectra_tree_nodes_operations_ElvisOperation_ElvisOperationPropertyMap_Extension
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -111838,7 +111029,6 @@ spectra_tree_nodes_operations_Operation_Extension_VTable spectra_tree_nodes_oper
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 spectra_tree_nodes_Nova_Node_Nova_toString,
@@ -112010,7 +111200,6 @@ spectra_tree_nodes_operations_Operation_OperationFunctionMap_Extension_VTable sp
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -112030,7 +111219,6 @@ spectra_tree_nodes_Nova_NodeFunctionMap_functionMap_Nova_writeAnnotationSeparato
 spectra_tree_nodes_Nova_NodeFunctionMap_functionMap_Nova_toNova,
 spectra_tree_nodes_operations_Nova_OperationFunctionMap_functionMap_Nova_writeNova,
 spectra_tree_nodes_Nova_NodeFunctionMap_functionMap_Nova_toString,
-spectra_tree_nodes_Nova_ValueFunctionMap_functionMapValueFunctionMap_Nova_construct,
 spectra_tree_nodes_operations_Nova_OperationFunctionMap_functionMap_static_Nova_parse,
 spectra_tree_nodes_Nova_ValueFunctionMap_functionMap_Nova_parseType,
 spectra_tree_nodes_Nova_ValueFunctionMap_functionMap_Nova_writeType,
@@ -112041,7 +111229,6 @@ spectra_tree_nodes_operations_Operation_OperationPropertyMap_Extension_VTable sp
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -112325,7 +111512,6 @@ spectra_tree_nodes_operations_Operator_Extension_VTable spectra_tree_nodes_opera
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 spectra_tree_nodes_Nova_Node_Nova_toString,
@@ -112491,7 +111677,6 @@ spectra_tree_nodes_operations_Operator_OperatorFunctionMap_Extension_VTable spec
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -112518,7 +111703,6 @@ spectra_tree_nodes_operations_Operator_OperatorPropertyMap_Extension_VTable spec
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -112799,7 +111983,6 @@ spectra_tree_nodes_operations_TernaryOperation_Extension_VTable spectra_tree_nod
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 spectra_tree_nodes_Nova_Node_Nova_toString,
@@ -112971,7 +112154,6 @@ spectra_tree_nodes_operations_TernaryOperation_TernaryOperationFunctionMap_Exten
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -112991,7 +112173,6 @@ spectra_tree_nodes_Nova_NodeFunctionMap_functionMap_Nova_writeAnnotationSeparato
 spectra_tree_nodes_Nova_NodeFunctionMap_functionMap_Nova_toNova,
 spectra_tree_nodes_operations_Nova_TernaryOperationFunctionMap_functionMap_Nova_writeNova,
 spectra_tree_nodes_Nova_NodeFunctionMap_functionMap_Nova_toString,
-spectra_tree_nodes_Nova_ValueFunctionMap_functionMapValueFunctionMap_Nova_construct,
 spectra_tree_nodes_operations_Nova_TernaryOperationFunctionMap_functionMap_static_Nova_parse,
 spectra_tree_nodes_Nova_ValueFunctionMap_functionMap_Nova_parseType,
 spectra_tree_nodes_Nova_ValueFunctionMap_functionMap_Nova_writeType,
@@ -113002,7 +112183,6 @@ spectra_tree_nodes_operations_TernaryOperation_TernaryOperationPropertyMap_Exten
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -113286,7 +112466,6 @@ spectra_tree_nodes_operations_UnaryOperation_Extension_VTable spectra_tree_nodes
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 spectra_tree_nodes_Nova_Node_Nova_toString,
@@ -113458,7 +112637,6 @@ spectra_tree_nodes_operations_UnaryOperation_UnaryOperationFunctionMap_Extension
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -113478,7 +112656,6 @@ spectra_tree_nodes_Nova_NodeFunctionMap_functionMap_Nova_writeAnnotationSeparato
 spectra_tree_nodes_Nova_NodeFunctionMap_functionMap_Nova_toNova,
 spectra_tree_nodes_operations_Nova_UnaryOperationFunctionMap_functionMap_Nova_writeNova,
 spectra_tree_nodes_Nova_NodeFunctionMap_functionMap_Nova_toString,
-spectra_tree_nodes_Nova_ValueFunctionMap_functionMapValueFunctionMap_Nova_construct,
 spectra_tree_nodes_operations_Nova_UnaryOperationFunctionMap_functionMap_static_Nova_parse,
 spectra_tree_nodes_Nova_ValueFunctionMap_functionMap_Nova_parseType,
 spectra_tree_nodes_Nova_ValueFunctionMap_functionMap_Nova_writeType,
@@ -113489,7 +112666,6 @@ spectra_tree_nodes_operations_UnaryOperation_UnaryOperationPropertyMap_Extension
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -113773,7 +112949,6 @@ spectra_tree_nodes_variables_ArrayBracketOverload_Extension_VTable spectra_tree_
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 spectra_tree_nodes_Nova_Node_Nova_toString,
@@ -113939,7 +113114,6 @@ spectra_tree_nodes_variables_ArrayBracketOverload_ArrayBracketOverloadFunctionMa
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -113966,7 +113140,6 @@ spectra_tree_nodes_variables_ArrayBracketOverload_ArrayBracketOverloadPropertyMa
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -114243,7 +113416,6 @@ spectra_tree_nodes_variables_FieldDeclaration_Extension_VTable spectra_tree_node
 0,
 0,
 0,
-0,
 (void(*)(spectra_tree_nodes_operations_Nova_Assignable*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Value*))spectra_tree_nodes_operations_Nova_Assignable_Nova_onAssigned,
 0,
 0,
@@ -114420,7 +113592,6 @@ spectra_tree_nodes_variables_FieldDeclaration_FieldDeclarationFunctionMap_Extens
 0,
 0,
 0,
-0,
 (void(*)(spectra_tree_nodes_operations_Nova_AssignableFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_operations_Nova_Assignable*, spectra_tree_nodes_Nova_Value*))spectra_tree_nodes_operations_Nova_AssignableFunctionMap_functionMap0_Nova_onAssigned,
 0,
 0,
@@ -114443,7 +113614,6 @@ spectra_tree_nodes_Nova_NodeFunctionMap_functionMap_Nova_writeAnnotationSeparato
 spectra_tree_nodes_Nova_NodeFunctionMap_functionMap_Nova_toNova,
 spectra_tree_nodes_variables_Nova_FieldDeclarationFunctionMap_functionMap_Nova_writeNova,
 spectra_tree_nodes_Nova_NodeFunctionMap_functionMap_Nova_toString,
-spectra_tree_nodes_Nova_ValueFunctionMap_functionMapValueFunctionMap_Nova_construct,
 spectra_tree_nodes_variables_Nova_FieldDeclarationFunctionMap_functionMap_static_Nova_parse,
 spectra_tree_nodes_Nova_ValueFunctionMap_functionMap_Nova_parseType,
 spectra_tree_nodes_Nova_ValueFunctionMap_functionMap_Nova_writeType,
@@ -114456,7 +113626,6 @@ spectra_tree_nodes_variables_FieldDeclaration_FieldDeclarationPropertyMap_Extens
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -114738,7 +113907,6 @@ spectra_tree_nodes_variables_ImplicitDeclaration_Extension_VTable spectra_tree_n
 0,
 0,
 0,
-0,
 (void(*)(spectra_tree_nodes_operations_Nova_Assignable*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Value*))spectra_tree_nodes_variables_Nova_ImplicitDeclaration_Nova_onAssigned,
 0,
 0,
@@ -114914,7 +114082,6 @@ spectra_tree_nodes_variables_ImplicitDeclaration_ImplicitDeclarationFunctionMap_
 0,
 0,
 0,
-0,
 (void(*)(spectra_tree_nodes_operations_Nova_AssignableFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_operations_Nova_Assignable*, spectra_tree_nodes_Nova_Value*))spectra_tree_nodes_variables_Nova_ImplicitDeclarationFunctionMap_functionMap_Nova_onAssigned,
 0,
 0,
@@ -114937,7 +114104,6 @@ spectra_tree_nodes_Nova_NodeFunctionMap_functionMap_Nova_writeAnnotationSeparato
 spectra_tree_nodes_Nova_NodeFunctionMap_functionMap_Nova_toNova,
 spectra_tree_nodes_variables_Nova_VariableDeclarationFunctionMap_functionMap_Nova_writeNova,
 spectra_tree_nodes_Nova_NodeFunctionMap_functionMap_Nova_toString,
-spectra_tree_nodes_Nova_ValueFunctionMap_functionMapValueFunctionMap_Nova_construct,
 spectra_tree_nodes_variables_Nova_ImplicitDeclarationFunctionMap_functionMap_static_Nova_parse,
 spectra_tree_nodes_Nova_ValueFunctionMap_functionMap_Nova_parseType,
 spectra_tree_nodes_variables_Nova_ImplicitDeclarationFunctionMap_functionMap_Nova_writeType,
@@ -114950,7 +114116,6 @@ spectra_tree_nodes_variables_ImplicitDeclaration_ImplicitDeclarationPropertyMap_
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -115235,7 +114400,6 @@ spectra_tree_nodes_variables_InstanceDeclaration_Extension_VTable spectra_tree_n
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 spectra_tree_nodes_Nova_Node_Nova_toString,
@@ -115411,7 +114575,6 @@ spectra_tree_nodes_variables_InstanceDeclaration_InstanceDeclarationFunctionMap_
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -115431,7 +114594,6 @@ spectra_tree_nodes_Nova_NodeFunctionMap_functionMap_Nova_writeAnnotationSeparato
 spectra_tree_nodes_Nova_NodeFunctionMap_functionMap_Nova_toNova,
 spectra_tree_nodes_variables_Nova_VariableDeclarationFunctionMap_functionMap_Nova_writeNova,
 spectra_tree_nodes_Nova_NodeFunctionMap_functionMap_Nova_toString,
-spectra_tree_nodes_Nova_ValueFunctionMap_functionMapValueFunctionMap_Nova_construct,
 spectra_tree_nodes_variables_Nova_InstanceDeclarationFunctionMap_functionMap_static_Nova_parse,
 spectra_tree_nodes_Nova_ValueFunctionMap_functionMap_Nova_parseType,
 spectra_tree_nodes_Nova_ValueFunctionMap_functionMap_Nova_writeType,
@@ -115444,7 +114606,6 @@ spectra_tree_nodes_variables_InstanceDeclaration_InstanceDeclarationPropertyMap_
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -115726,7 +114887,6 @@ spectra_tree_nodes_variables_LocalDeclaration_Extension_VTable spectra_tree_node
 0,
 0,
 0,
-0,
 (void(*)(spectra_tree_nodes_operations_Nova_Assignable*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Value*))spectra_tree_nodes_operations_Nova_Assignable_Nova_onAssigned,
 0,
 0,
@@ -115902,7 +115062,6 @@ spectra_tree_nodes_variables_LocalDeclaration_LocalDeclarationFunctionMap_Extens
 0,
 0,
 0,
-0,
 (void(*)(spectra_tree_nodes_operations_Nova_AssignableFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_operations_Nova_Assignable*, spectra_tree_nodes_Nova_Value*))spectra_tree_nodes_operations_Nova_AssignableFunctionMap_functionMap0_Nova_onAssigned,
 0,
 0,
@@ -115925,7 +115084,6 @@ spectra_tree_nodes_Nova_NodeFunctionMap_functionMap_Nova_writeAnnotationSeparato
 spectra_tree_nodes_Nova_NodeFunctionMap_functionMap_Nova_toNova,
 spectra_tree_nodes_variables_Nova_VariableDeclarationFunctionMap_functionMap_Nova_writeNova,
 spectra_tree_nodes_Nova_NodeFunctionMap_functionMap_Nova_toString,
-spectra_tree_nodes_Nova_ValueFunctionMap_functionMapValueFunctionMap_Nova_construct,
 spectra_tree_nodes_variables_Nova_LocalDeclarationFunctionMap_functionMap_static_Nova_parse,
 spectra_tree_nodes_Nova_ValueFunctionMap_functionMap_Nova_parseType,
 spectra_tree_nodes_Nova_ValueFunctionMap_functionMap_Nova_writeType,
@@ -115938,7 +115096,6 @@ spectra_tree_nodes_variables_LocalDeclaration_LocalDeclarationPropertyMap_Extens
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -116219,7 +115376,6 @@ spectra_tree_nodes_variables_Variable_Extension_VTable spectra_tree_nodes_variab
 0,
 0,
 0,
-0,
 (void(*)(spectra_tree_nodes_operations_Nova_Assignable*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Value*))spectra_tree_nodes_variables_Nova_Variable_Nova_onAssigned,
 0,
 0,
@@ -116392,7 +115548,6 @@ spectra_tree_nodes_variables_Variable_VariableFunctionMap_Extension_VTable spect
 0,
 0,
 0,
-0,
 (void(*)(spectra_tree_nodes_operations_Nova_AssignableFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_operations_Nova_Assignable*, spectra_tree_nodes_Nova_Value*))spectra_tree_nodes_variables_Nova_VariableFunctionMap_functionMap_Nova_onAssigned,
 0,
 0,
@@ -116415,11 +115570,9 @@ spectra_tree_nodes_Nova_NodeFunctionMap_functionMap_Nova_writeAnnotationSeparato
 spectra_tree_nodes_Nova_NodeFunctionMap_functionMap_Nova_toNova,
 spectra_tree_nodes_variables_Nova_VariableFunctionMap_functionMap_Nova_writeNova,
 spectra_tree_nodes_Nova_NodeFunctionMap_functionMap_Nova_toString,
-spectra_tree_nodes_Nova_ValueFunctionMap_functionMapValueFunctionMap_Nova_construct,
 spectra_tree_nodes_Nova_IdentifierFunctionMap_functionMap_static_Nova_parse,
 spectra_tree_nodes_Nova_ValueFunctionMap_functionMap_Nova_parseType,
 spectra_tree_nodes_Nova_ValueFunctionMap_functionMap_Nova_writeType,
-spectra_tree_nodes_variables_Nova_VariableFunctionMap_functionMapVariableFunctionMap_Nova_construct,
 };
 
 
@@ -116427,7 +115580,6 @@ spectra_tree_nodes_variables_Variable_VariablePropertyMap_Extension_VTable spect
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -116711,7 +115863,6 @@ spectra_tree_nodes_variables_VariableDeclaration_Extension_VTable spectra_tree_n
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 spectra_tree_nodes_Nova_Node_Nova_toString,
@@ -116885,7 +116036,6 @@ spectra_tree_nodes_variables_VariableDeclaration_VariableDeclarationFunctionMap_
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -116905,7 +116055,6 @@ spectra_tree_nodes_Nova_NodeFunctionMap_functionMap_Nova_writeAnnotationSeparato
 spectra_tree_nodes_Nova_NodeFunctionMap_functionMap_Nova_toNova,
 spectra_tree_nodes_variables_Nova_VariableDeclarationFunctionMap_functionMap_Nova_writeNova,
 spectra_tree_nodes_Nova_NodeFunctionMap_functionMap_Nova_toString,
-spectra_tree_nodes_Nova_ValueFunctionMap_functionMapValueFunctionMap_Nova_construct,
 spectra_tree_nodes_variables_Nova_VariableDeclarationFunctionMap_functionMap_static_Nova_parse,
 spectra_tree_nodes_Nova_ValueFunctionMap_functionMap_Nova_parseType,
 spectra_tree_nodes_Nova_ValueFunctionMap_functionMap_Nova_writeType,
@@ -116918,7 +116067,6 @@ spectra_tree_nodes_variables_VariableDeclaration_VariableDeclarationPropertyMap_
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -117202,7 +116350,6 @@ spectra_util_Bounds_Extension_VTable spectra_util_Bounds_Extension_VTable_val =
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 spectra_util_Nova_Bounds_Nova_toString,
@@ -117214,7 +116361,6 @@ spectra_util_Bounds_BoundsFunctionMap_Extension_VTable spectra_util_Bounds_Bound
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -117484,7 +116630,6 @@ spectra_util_Bounds_BoundsPropertyMap_Extension_VTable spectra_util_Bounds_Bound
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -117625,7 +116770,6 @@ spectra_util_CompilerStringFunctions_Extension_VTable spectra_util_CompilerStrin
 0,
 0,
 0,
-0,
 },
 };
 
@@ -117634,7 +116778,6 @@ spectra_util_FileUtils_Extension_VTable spectra_util_FileUtils_Extension_VTable_
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -117904,7 +117047,6 @@ spectra_util_FileUtils_FileUtilsFunctionMap_Extension_VTable spectra_util_FileUt
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -117916,7 +117058,6 @@ spectra_util_FileUtils_FileUtilsPropertyMap_Extension_VTable spectra_util_FileUt
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -118186,7 +117327,6 @@ spectra_util_Location_Extension_VTable spectra_util_Location_Extension_VTable_va
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 spectra_util_Nova_Location_Nova_toString,
@@ -118198,7 +117338,6 @@ spectra_util_Location_LocationFunctionMap_Extension_VTable spectra_util_Location
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -118468,7 +117607,6 @@ spectra_util_Location_LocationPropertyMap_Extension_VTable spectra_util_Location
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -118480,7 +117618,6 @@ spectra_util_OS_Extension_VTable spectra_util_OS_Extension_VTable_val =
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -118750,7 +117887,6 @@ spectra_util_OS_OSFunctionMap_Extension_VTable spectra_util_OS_OSFunctionMap_Ext
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -118762,7 +117898,6 @@ spectra_util_OS_OSPropertyMap_Extension_VTable spectra_util_OS_OSPropertyMap_Ext
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -119032,7 +118167,6 @@ spectra_util_SyntaxUtils_Extension_VTable spectra_util_SyntaxUtils_Extension_VTa
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -119044,7 +118178,6 @@ spectra_util_SyntaxUtils_SyntaxUtilsFunctionMap_Extension_VTable spectra_util_Sy
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -119314,7 +118447,6 @@ spectra_util_SyntaxUtils_SyntaxUtilsPropertyMap_Extension_VTable spectra_util_Sy
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -119326,7 +118458,6 @@ example_Animal_Extension_VTable example_Animal_Extension_VTable_val =
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -119470,7 +118601,6 @@ example_Animal_AnimalFunctionMap_Extension_VTable example_Animal_AnimalFunctionM
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -119744,7 +118874,6 @@ example_Animal_AnimalPropertyMap_Extension_VTable example_Animal_AnimalPropertyM
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -119756,7 +118885,6 @@ example_ArrayDemo_Extension_VTable example_ArrayDemo_Extension_VTable_val =
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -120026,7 +119154,6 @@ example_ArrayDemo_ArrayDemoFunctionMap_Extension_VTable example_ArrayDemo_ArrayD
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -120167,7 +119294,6 @@ example_ArrayDemo_ArrayDemoPropertyMap_Extension_VTable example_ArrayDemo_ArrayD
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -120179,7 +119305,6 @@ example_BodyBuilder_Extension_VTable example_BodyBuilder_Extension_VTable_val =
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -120450,7 +119575,6 @@ example_BodyBuilder_BodyBuilderFunctionMap_Extension_VTable example_BodyBuilder_
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -120463,7 +119587,6 @@ example_BodyBuilder_BodyBuilderPropertyMap_Extension_VTable example_BodyBuilder_
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -120733,7 +119856,6 @@ example_ClosureDemo_Extension_VTable example_ClosureDemo_Extension_VTable_val =
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -120745,7 +119867,6 @@ example_ClosureDemo_ClosureDemoFunctionMap_Extension_VTable example_ClosureDemo_
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -121015,7 +120136,6 @@ example_ClosureDemo_ClosureDemoPropertyMap_Extension_VTable example_ClosureDemo_
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -121027,7 +120147,6 @@ example_Dog_Extension_VTable example_Dog_Extension_VTable_val =
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -121171,7 +120290,6 @@ example_Dog_DogFunctionMap_Extension_VTable example_Dog_DogFunctionMap_Extension
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -121445,7 +120563,6 @@ example_Dog_DogPropertyMap_Extension_VTable example_Dog_DogPropertyMap_Extension
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -121457,7 +120574,6 @@ example_ExceptionHandlingDemo_Extension_VTable example_ExceptionHandlingDemo_Ext
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -121727,7 +120843,6 @@ example_ExceptionHandlingDemo_ExceptionHandlingDemoFunctionMap_Extension_VTable 
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -121739,7 +120854,6 @@ example_ExceptionHandlingDemo_ExceptionHandlingDemoPropertyMap_Extension_VTable 
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -122009,7 +121123,6 @@ example_FileTest_Extension_VTable example_FileTest_Extension_VTable_val =
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -122021,7 +121134,6 @@ example_FileTest_FileTestFunctionMap_Extension_VTable example_FileTest_FileTestF
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -122291,7 +121403,6 @@ example_FileTest_FileTestPropertyMap_Extension_VTable example_FileTest_FileTestP
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -122303,7 +121414,6 @@ example_GenericDemo_Extension_VTable example_GenericDemo_Extension_VTable_val =
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -122573,7 +121683,6 @@ example_GenericDemo_GenericDemoFunctionMap_Extension_VTable example_GenericDemo_
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -122585,7 +121694,6 @@ example_GenericDemo_GenericDemoPropertyMap_Extension_VTable example_GenericDemo_
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -122855,7 +121963,6 @@ example_HashMapDemo_Extension_VTable example_HashMapDemo_Extension_VTable_val =
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -122867,7 +121974,6 @@ example_HashMapDemo_HashMapDemoFunctionMap_Extension_VTable example_HashMapDemo_
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -123137,7 +122243,6 @@ example_HashMapDemo_HashMapDemoPropertyMap_Extension_VTable example_HashMapDemo_
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -123149,7 +122254,6 @@ example_HashSetDemo_Extension_VTable example_HashSetDemo_Extension_VTable_val =
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -123419,7 +122523,6 @@ example_HashSetDemo_HashSetDemoFunctionMap_Extension_VTable example_HashSetDemo_
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -123431,7 +122534,6 @@ example_HashSetDemo_HashSetDemoPropertyMap_Extension_VTable example_HashSetDemo_
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -123701,7 +122803,6 @@ example_IntegerTest_Extension_VTable example_IntegerTest_Extension_VTable_val =
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -123713,7 +122814,6 @@ example_IntegerTest_IntegerTestFunctionMap_Extension_VTable example_IntegerTest_
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -123983,7 +123083,6 @@ example_IntegerTest_IntegerTestPropertyMap_Extension_VTable example_IntegerTest_
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -123995,7 +123094,6 @@ example_Lab_Extension_VTable example_Lab_Extension_VTable_val =
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -124265,7 +123363,6 @@ example_Lab_LabFunctionMap_Extension_VTable example_Lab_LabFunctionMap_Extension
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -124277,7 +123374,6 @@ example_Lab_LabPropertyMap_Extension_VTable example_Lab_LabPropertyMap_Extension
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -124547,7 +123643,6 @@ example_MathDemo_Extension_VTable example_MathDemo_Extension_VTable_val =
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -124559,7 +123654,6 @@ example_MathDemo_MathDemoFunctionMap_Extension_VTable example_MathDemo_MathDemoF
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -124829,7 +123923,6 @@ example_MathDemo_MathDemoPropertyMap_Extension_VTable example_MathDemo_MathDemoP
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -124970,7 +124063,6 @@ example_NonWholeDivisionException_Extension_VTable example_NonWholeDivisionExcep
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_exception_Nova_Exception_Nova_toString,
@@ -124982,7 +124074,6 @@ example_NonWholeDivisionException_NonWholeDivisionExceptionFunctionMap_Extension
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -125253,7 +124344,6 @@ example_NonWholeDivisionException_NonWholeDivisionExceptionPropertyMap_Extension
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -125265,7 +124355,6 @@ example_Person_Extension_VTable example_Person_Extension_VTable_val =
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -125536,7 +124625,6 @@ example_Person_PersonFunctionMap_Extension_VTable example_Person_PersonFunctionM
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -125549,7 +124637,6 @@ example_Person_PersonPropertyMap_Extension_VTable example_Person_PersonPropertyM
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -125819,7 +124906,6 @@ example_Polygon_Extension_VTable example_Polygon_Extension_VTable_val =
 0,
 0,
 0,
-0,
 },
 };
 
@@ -125828,7 +124914,6 @@ example_Polygon_PolygonFunctionMap_Extension_VTable example_Polygon_PolygonFunct
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -126098,7 +125183,6 @@ example_Polygon_PolygonPropertyMap_Extension_VTable example_Polygon_PolygonPrope
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -126110,7 +125194,6 @@ example_PolymorphismDemo_Extension_VTable example_PolymorphismDemo_Extension_VTa
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -126380,7 +125463,6 @@ example_PolymorphismDemo_PolymorphismDemoFunctionMap_Extension_VTable example_Po
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -126392,7 +125474,6 @@ example_PolymorphismDemo_PolymorphismDemoPropertyMap_Extension_VTable example_Po
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -126662,7 +125743,6 @@ example_QueueDemo_Extension_VTable example_QueueDemo_Extension_VTable_val =
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -126674,7 +125754,6 @@ example_QueueDemo_QueueDemoFunctionMap_Extension_VTable example_QueueDemo_QueueD
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -126944,7 +126023,6 @@ example_QueueDemo_QueueDemoPropertyMap_Extension_VTable example_QueueDemo_QueueD
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -126956,7 +126034,6 @@ example_Spider_Extension_VTable example_Spider_Extension_VTable_val =
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -127100,7 +126177,6 @@ example_Spider_SpiderFunctionMap_Extension_VTable example_Spider_SpiderFunctionM
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -127374,7 +126450,6 @@ example_Spider_SpiderPropertyMap_Extension_VTable example_Spider_SpiderPropertyM
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -127386,7 +126461,6 @@ example_Square_Extension_VTable example_Square_Extension_VTable_val =
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -127656,7 +126730,6 @@ example_Square_SquareFunctionMap_Extension_VTable example_Square_SquareFunctionM
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -127668,7 +126741,6 @@ example_Square_SquarePropertyMap_Extension_VTable example_Square_SquarePropertyM
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -127938,7 +127010,6 @@ example_SvgChart_Extension_VTable example_SvgChart_Extension_VTable_val =
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -127950,7 +127021,6 @@ example_SvgChart_SvgChartFunctionMap_Extension_VTable example_SvgChart_SvgChartF
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -128220,7 +127290,6 @@ example_SvgChart_SvgChartPropertyMap_Extension_VTable example_SvgChart_SvgChartP
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -128232,7 +127301,6 @@ example_SvgFractal_Extension_VTable example_SvgFractal_Extension_VTable_val =
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -128502,7 +127570,6 @@ example_SvgFractal_SvgFractalFunctionMap_Extension_VTable example_SvgFractal_Svg
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -128643,7 +127710,6 @@ example_SvgFractal_SvgFractalPropertyMap_Extension_VTable example_SvgFractal_Svg
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -128655,7 +127721,6 @@ example_T1_Extension_VTable example_T1_Extension_VTable_val =
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -128926,7 +127991,6 @@ example_T1_T1FunctionMap_Extension_VTable example_T1_T1FunctionMap_Extension_VTa
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -128939,7 +128003,6 @@ example_T1_T1PropertyMap_Extension_VTable example_T1_T1PropertyMap_Extension_VTa
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -129210,7 +128273,6 @@ example_T2_Extension_VTable example_T2_Extension_VTable_val =
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -129223,7 +128285,6 @@ example_T2_T2FunctionMap_Extension_VTable example_T2_T2FunctionMap_Extension_VTa
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -129494,7 +128555,6 @@ example_T2_T2PropertyMap_Extension_VTable example_T2_T2PropertyMap_Extension_VTa
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -129507,7 +128567,6 @@ example_Test_Extension_VTable example_Test_Extension_VTable_val =
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -129777,7 +128836,6 @@ example_Test_TestFunctionMap_Extension_VTable example_Test_TestFunctionMap_Exten
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -129789,7 +128847,6 @@ example_Test_TestPropertyMap_Extension_VTable example_Test_TestPropertyMap_Exten
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -130059,7 +129116,6 @@ example_ThreadDemo_Extension_VTable example_ThreadDemo_Extension_VTable_val =
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -130071,7 +129127,6 @@ example_ThreadDemo_ThreadDemoFunctionMap_Extension_VTable example_ThreadDemo_Thr
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -130341,7 +129396,6 @@ example_ThreadDemo_ThreadDemoPropertyMap_Extension_VTable example_ThreadDemo_Thr
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -130353,7 +129407,6 @@ example_ThreadDemoImplementation_Extension_VTable example_ThreadDemoImplementati
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -130624,7 +129677,6 @@ example_ThreadDemoImplementation_ThreadDemoImplementationFunctionMap_Extension_V
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -130637,7 +129689,6 @@ example_ThreadDemoImplementation_ThreadDemoImplementationPropertyMap_Extension_V
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -130907,7 +129958,6 @@ example_ackermann_Ackermann_Extension_VTable example_ackermann_Ackermann_Extensi
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -130919,7 +129969,6 @@ example_ackermann_Ackermann_AckermannFunctionMap_Extension_VTable example_ackerm
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -131189,7 +130238,6 @@ example_ackermann_Ackermann_AckermannPropertyMap_Extension_VTable example_ackerm
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -131201,7 +130249,6 @@ example_copy_Dog_Extension_VTable example_copy_Dog_Extension_VTable_val =
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -131471,7 +130518,6 @@ example_copy_Dog_DogFunctionMap_Extension_VTable example_copy_Dog_DogFunctionMap
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -131483,7 +130529,6 @@ example_copy_Dog_DogPropertyMap_Extension_VTable example_copy_Dog_DogPropertyMap
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -131753,7 +130798,6 @@ example_database_DatabaseDemo_Extension_VTable example_database_DatabaseDemo_Ext
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -131765,7 +130809,6 @@ example_database_DatabaseDemo_DatabaseDemoFunctionMap_Extension_VTable example_d
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -132035,7 +131078,6 @@ example_database_DatabaseDemo_DatabaseDemoPropertyMap_Extension_VTable example_d
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -132047,7 +131089,6 @@ example_network_ClientDemo_Extension_VTable example_network_ClientDemo_Extension
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -132317,7 +131358,6 @@ example_network_ClientDemo_ClientDemoFunctionMap_Extension_VTable example_networ
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -132458,7 +131498,6 @@ example_network_ClientDemo_ClientDemoPropertyMap_Extension_VTable example_networ
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -132470,7 +131509,6 @@ example_network_ConnectionThread_Extension_VTable example_network_ConnectionThre
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -132741,7 +131779,6 @@ example_network_ConnectionThread_ConnectionThreadFunctionMap_Extension_VTable ex
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -132883,7 +131920,6 @@ example_network_ConnectionThread_ConnectionThreadPropertyMap_Extension_VTable ex
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -132895,7 +131931,6 @@ example_network_OutputThread_Extension_VTable example_network_OutputThread_Exten
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -133166,7 +132201,6 @@ example_network_OutputThread_OutputThreadFunctionMap_Extension_VTable example_ne
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -133179,7 +132213,6 @@ example_network_OutputThread_OutputThreadPropertyMap_Extension_VTable example_ne
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -133449,7 +132482,6 @@ example_network_ServerDemo_Extension_VTable example_network_ServerDemo_Extension
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -133461,7 +132493,6 @@ example_network_ServerDemo_ServerDemoFunctionMap_Extension_VTable example_networ
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -133731,7 +132762,6 @@ example_network_ServerDemo_ServerDemoPropertyMap_Extension_VTable example_networ
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -133743,7 +132773,6 @@ stabilitytest_AssignmentStability_Extension_VTable stabilitytest_AssignmentStabi
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -134014,7 +133043,6 @@ stabilitytest_AssignmentStability_AssignmentStabilityFunctionMap_Extension_VTabl
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -134027,7 +133055,6 @@ stabilitytest_AssignmentStability_AssignmentStabilityPropertyMap_Extension_VTabl
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -134297,7 +133324,6 @@ stabilitytest_ClassWithProperties_Extension_VTable stabilitytest_ClassWithProper
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -134309,7 +133335,6 @@ stabilitytest_ClassWithProperties_ClassWithPropertiesFunctionMap_Extension_VTabl
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -134579,7 +133604,6 @@ stabilitytest_ClassWithProperties_ClassWithPropertiesPropertyMap_Extension_VTabl
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -134591,7 +133615,6 @@ stabilitytest_ClientThread_Extension_VTable stabilitytest_ClientThread_Extension
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -134862,7 +133885,6 @@ stabilitytest_ClientThread_ClientThreadFunctionMap_Extension_VTable stabilitytes
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -135004,7 +134026,6 @@ stabilitytest_ClientThread_ClientThreadPropertyMap_Extension_VTable stabilitytes
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -135016,7 +134037,6 @@ stabilitytest_ClosureStability_Extension_VTable stabilitytest_ClosureStability_E
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -135287,7 +134307,6 @@ stabilitytest_ClosureStability_ClosureStabilityFunctionMap_Extension_VTable stab
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -135429,7 +134448,6 @@ stabilitytest_ClosureStability_ClosureStabilityPropertyMap_Extension_VTable stab
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -135441,7 +134459,6 @@ stabilitytest_ExceptionStability_Extension_VTable stabilitytest_ExceptionStabili
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -135712,7 +134729,6 @@ stabilitytest_ExceptionStability_ExceptionStabilityFunctionMap_Extension_VTable 
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -135854,7 +134870,6 @@ stabilitytest_ExceptionStability_ExceptionStabilityPropertyMap_Extension_VTable 
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -135866,7 +134881,6 @@ stabilitytest_ExternalInnerClassStability_Extension_VTable stabilitytest_Externa
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -136137,7 +135151,6 @@ stabilitytest_ExternalInnerClassStability_ExternalInnerClassStabilityFunctionMap
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -136279,7 +135292,6 @@ stabilitytest_ExternalInnerClassStability_ExternalInnerClassStabilityPropertyMap
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -136291,7 +135303,6 @@ stabilitytest_FileStability_Extension_VTable stabilitytest_FileStability_Extensi
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -136562,7 +135573,6 @@ stabilitytest_FileStability_FileStabilityFunctionMap_Extension_VTable stabilityt
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -136704,7 +135714,6 @@ stabilitytest_FileStability_FileStabilityPropertyMap_Extension_VTable stabilityt
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -136716,7 +135725,6 @@ stabilitytest_InnerClassStability_Extension_VTable stabilitytest_InnerClassStabi
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -136987,7 +135995,6 @@ stabilitytest_InnerClassStability_MyOuter_Extension_VTable stabilitytest_InnerCl
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -136999,7 +136006,6 @@ stabilitytest_InnerClassStability_InnerClassStabilityFunctionMap_Extension_VTabl
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -137270,7 +136276,6 @@ stabilitytest_InnerClassStability_InnerClassStabilityPropertyMap_Extension_VTabl
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -137282,7 +136287,6 @@ stabilitytest_InnerClassStability_MyOuterFunctionMap_Extension_VTable stabilityt
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -137552,7 +136556,6 @@ stabilitytest_InnerClassStability_MyOuterPropertyMap_Extension_VTable stabilityt
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -137564,7 +136567,6 @@ stabilitytest_InnerClassStability_MyInner_Extension_VTable stabilitytest_InnerCl
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -137834,7 +136836,6 @@ stabilitytest_InnerClassStability_MyInnerFunctionMap_Extension_VTable stabilityt
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -137846,7 +136847,6 @@ stabilitytest_InnerClassStability_MyInnerPropertyMap_Extension_VTable stabilityt
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -138116,7 +137116,6 @@ stabilitytest_InnerClassStability_MyInnerPropertyMapFunctionMap_Extension_VTable
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -138128,7 +137127,6 @@ stabilitytest_LambdaStability_Extension_VTable stabilitytest_LambdaStability_Ext
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -138399,7 +137397,6 @@ stabilitytest_LambdaStability_LambdaStabilityFunctionMap_Extension_VTable stabil
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -138541,7 +137538,6 @@ stabilitytest_LambdaStability_LambdaStabilityPropertyMap_Extension_VTable stabil
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -138553,7 +137549,6 @@ stabilitytest_NetworkStability_Extension_VTable stabilitytest_NetworkStability_E
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -138824,7 +137819,6 @@ stabilitytest_NetworkStability_NetworkStabilityFunctionMap_Extension_VTable stab
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -138837,7 +137831,6 @@ stabilitytest_NetworkStability_NetworkStabilityPropertyMap_Extension_VTable stab
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -139107,7 +138100,6 @@ stabilitytest_Node_Extension_VTable stabilitytest_Node_Extension_VTable_val =
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -139119,7 +138111,6 @@ stabilitytest_Node_NodeFunctionMap_Extension_VTable stabilitytest_Node_NodeFunct
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -139389,7 +138380,6 @@ stabilitytest_Node_NodePropertyMap_Extension_VTable stabilitytest_Node_NodePrope
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -139401,7 +138391,6 @@ stabilitytest_PolymorphicSubClass_Extension_VTable stabilitytest_PolymorphicSubC
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -139543,7 +138532,6 @@ stabilitytest_PolymorphicSubClass_PolymorphicSubClassFunctionMap_Extension_VTabl
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -139815,7 +138803,6 @@ stabilitytest_PolymorphicSubClass_PolymorphicSubClassPropertyMap_Extension_VTabl
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -139957,7 +138944,6 @@ stabilitytest_PolymorphicSuperClass_Extension_VTable stabilitytest_PolymorphicSu
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 stabilitytest_Nova_PolymorphicSuperClass_Nova_toString,
@@ -139970,7 +138956,6 @@ stabilitytest_PolymorphicSuperClass_PolymorphicSuperClassFunctionMap_Extension_V
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -140242,7 +139227,6 @@ stabilitytest_PolymorphicSuperClass_PolymorphicSuperClassPropertyMap_Extension_V
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -140255,7 +139239,6 @@ stabilitytest_PolymorphismStability_Extension_VTable stabilitytest_PolymorphismS
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -140526,7 +139509,6 @@ stabilitytest_PolymorphismStability_PolymorphismStabilityFunctionMap_Extension_V
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -140668,7 +139650,6 @@ stabilitytest_PolymorphismStability_PolymorphismStabilityPropertyMap_Extension_V
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -140680,7 +139661,6 @@ stabilitytest_RegexStability_Extension_VTable stabilitytest_RegexStability_Exten
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -140951,7 +139931,6 @@ stabilitytest_RegexStability_RegexStabilityFunctionMap_Extension_VTable stabilit
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -141093,7 +140072,6 @@ stabilitytest_RegexStability_RegexStabilityPropertyMap_Extension_VTable stabilit
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -141105,7 +140083,6 @@ stabilitytest_StabilityExceptionHandler_Extension_VTable stabilitytest_Stability
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -141376,7 +140353,6 @@ stabilitytest_StabilityExceptionHandler_StabilityExceptionHandlerFunctionMap_Ext
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -141518,7 +140494,6 @@ stabilitytest_StabilityExceptionHandler_StabilityExceptionHandlerPropertyMap_Ext
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -141530,7 +140505,6 @@ stabilitytest_StabilityTest_Extension_VTable stabilitytest_StabilityTest_Extensi
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -141801,7 +140775,6 @@ stabilitytest_StabilityTest_StabilityTestFunctionMap_Extension_VTable stabilityt
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -141943,7 +140916,6 @@ stabilitytest_StabilityTest_StabilityTestPropertyMap_Extension_VTable stabilityt
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -141955,7 +140927,6 @@ stabilitytest_StabilityTestCase_Extension_VTable stabilitytest_StabilityTestCase
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -142226,7 +141197,6 @@ stabilitytest_StabilityTestCase_StabilityTestCaseFunctionMap_Extension_VTable st
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -142239,7 +141209,6 @@ stabilitytest_StabilityTestCase_StabilityTestCasePropertyMap_Extension_VTable st
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -142509,7 +141478,6 @@ stabilitytest_StabilityTestException_Extension_VTable stabilitytest_StabilityTes
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_exception_Nova_Exception_Nova_toString,
@@ -142521,7 +141489,6 @@ stabilitytest_StabilityTestException_StabilityTestExceptionFunctionMap_Extension
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -142792,7 +141759,6 @@ stabilitytest_StabilityTestException_StabilityTestExceptionPropertyMap_Extension
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -142804,7 +141770,6 @@ stabilitytest_StaticImportStability_Extension_VTable stabilitytest_StaticImportS
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -143075,7 +142040,6 @@ stabilitytest_StaticImportStability_StaticImportStabilityFunctionMap_Extension_V
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -143217,7 +142181,6 @@ stabilitytest_StaticImportStability_StaticImportStabilityPropertyMap_Extension_V
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -143229,7 +142192,6 @@ stabilitytest_SyntaxStability_Extension_VTable stabilitytest_SyntaxStability_Ext
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -143500,7 +142462,6 @@ stabilitytest_SyntaxStability_SyntaxStabilityFunctionMap_Extension_VTable stabil
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -143642,7 +142603,6 @@ stabilitytest_SyntaxStability_SyntaxStabilityPropertyMap_Extension_VTable stabil
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -143654,7 +142614,6 @@ stabilitytest_ThreadImplementation_Extension_VTable stabilitytest_ThreadImplemen
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -143925,7 +142884,6 @@ stabilitytest_ThreadImplementation_ThreadImplementationFunctionMap_Extension_VTa
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -144067,7 +143025,6 @@ stabilitytest_ThreadImplementation_ThreadImplementationPropertyMap_Extension_VTa
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -144079,7 +143036,6 @@ stabilitytest_ThreadStability_Extension_VTable stabilitytest_ThreadStability_Ext
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -144350,7 +143306,6 @@ stabilitytest_ThreadStability_ThreadStabilityFunctionMap_Extension_VTable stabil
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -144492,7 +143447,6 @@ stabilitytest_ThreadStability_ThreadStabilityPropertyMap_Extension_VTable stabil
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -144504,7 +143458,6 @@ stabilitytest_TimeStability_Extension_VTable stabilitytest_TimeStability_Extensi
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -144775,7 +143728,6 @@ stabilitytest_TimeStability_TimeStabilityFunctionMap_Extension_VTable stabilityt
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -144917,7 +143869,6 @@ stabilitytest_TimeStability_TimeStabilityPropertyMap_Extension_VTable stabilityt
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -144929,7 +143880,6 @@ stabilitytest_ToStringStability_Extension_VTable stabilitytest_ToStringStability
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -145200,7 +144150,6 @@ stabilitytest_ToStringStability_ToStringStabilityFunctionMap_Extension_VTable st
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_Nova_Object_Nova_toString,
@@ -145213,7 +144162,6 @@ stabilitytest_ToStringStability_ToStringStabilityPropertyMap_Extension_VTable st
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -145483,7 +144431,6 @@ stabilitytest_UnstableException_Extension_VTable stabilitytest_UnstableException
 0,
 0,
 0,
-0,
 },
 nova_Nova_Object_static_Nova_default,
 nova_exception_Nova_Exception_Nova_toString,
@@ -145495,7 +144442,6 @@ stabilitytest_UnstableException_UnstableExceptionFunctionMap_Extension_VTable st
 {
 0,
 {
-0,
 0,
 0,
 0,
@@ -145637,7 +144583,6 @@ stabilitytest_UnstableException_UnstableExceptionPropertyMap_Extension_VTable st
 {
 0,
 {
-0,
 0,
 0,
 0,
