@@ -3,6 +3,7 @@
 
 typedef struct nova_web_svg_no3_Nova_No3SelectAll nova_web_svg_no3_Nova_No3SelectAll;
 typedef struct nova_web_svg_no3_Nova_No3SelectAllFunctionMap nova_web_svg_no3_Nova_No3SelectAllFunctionMap;
+typedef struct nova_web_svg_no3_Nova_No3SelectAllPropertyMap nova_web_svg_no3_Nova_No3SelectAllPropertyMap;
 
 
 #include <Nova.h>
@@ -39,7 +40,9 @@ typedef struct nova_web_svg_no3_Nova_No3SelectAllFunctionMap nova_web_svg_no3_No
 #include <nova/nova_Nova_System.h>
 #include <nova/meta/nova_meta_Nova_Class.h>
 #include <nova/meta/nova_meta_Nova_FunctionMap.h>
+#include <nova/meta/nova_meta_Nova_PropertyMap.h>
 #include <nova/regex/nova_regex_Nova_Pattern.h>
+#include <nova/web/svg/no3/nova_web_svg_no3_Nova_No3Node.h>
 #include <nova/web/svg/no3/nova_web_svg_no3_Nova_No3Node.h>
 #include <nova/web/svg/no3/nova_web_svg_no3_Nova_No3Node.h>
 #include <nova/NativeObject.h>
@@ -73,5 +76,19 @@ void nova_web_svg_no3_Nova_No3SelectAllFunctionMap_Nova_this(nova_web_svg_no3_No
 nova_web_svg_no3_Nova_No3SelectAll* nova_web_svg_no3_Nova_No3SelectAllFunctionMap_functionMapNo3SelectAllFunctionMap_Nova_construct(nova_web_svg_no3_Nova_No3SelectAllFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* selection);
 nova_Nova_String* nova_web_svg_no3_Nova_No3SelectAllFunctionMap_functionMap_Nova_toJs(nova_web_svg_no3_Nova_No3SelectAllFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_web_svg_no3_Nova_No3SelectAll* reference);
 void nova_web_svg_no3_Nova_No3SelectAllFunctionMap_Nova_super(nova_web_svg_no3_Nova_No3SelectAllFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+
+CCLASS_CLASS
+(
+	nova_web_svg_no3_Nova_No3SelectAllPropertyMap, 
+	
+	nova_web_svg_no3_No3SelectAll_No3SelectAllPropertyMap_Extension_VTable* vtable;
+)
+
+void nova_web_svg_no3_Nova_No3SelectAllPropertyMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData);
+nova_web_svg_no3_Nova_No3SelectAllPropertyMap* nova_web_svg_no3_Nova_No3SelectAllPropertyMap_Nova_construct(nova_web_svg_no3_Nova_No3SelectAllPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+void nova_web_svg_no3_Nova_No3SelectAllPropertyMap_Nova_destroy(nova_web_svg_no3_Nova_No3SelectAllPropertyMap** this, nova_exception_Nova_ExceptionData* exceptionData);
+void nova_web_svg_no3_Nova_No3SelectAllPropertyMap_Nova_this(nova_web_svg_no3_Nova_No3SelectAllPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+nova_Nova_String* nova_web_svg_no3_Nova_No3SelectAllPropertyMap_functionMap_Nova_selection(nova_web_svg_no3_Nova_No3SelectAllPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_web_svg_no3_Nova_No3SelectAll* reference);
+void nova_web_svg_no3_Nova_No3SelectAllPropertyMap_Nova_super(nova_web_svg_no3_Nova_No3SelectAllPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData);
 
 #endif

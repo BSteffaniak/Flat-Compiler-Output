@@ -29,6 +29,7 @@
 #include <nova/nova_Nova_System.h>
 #include <nova/meta/nova_meta_Nova_Class.h>
 #include <nova/meta/nova_meta_Nova_FunctionMap.h>
+#include <nova/meta/nova_meta_Nova_PropertyMap.h>
 #include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <nova/time/nova_time_Nova_Timer.h>
 #include <stabilitytest/stabilitytest_Nova_AssignmentStability.h>
@@ -48,6 +49,7 @@
 #include <stabilitytest/stabilitytest_Nova_TimeStability.h>
 #include <stabilitytest/stabilitytest_Nova_ToStringStability.h>
 #include <stabilitytest/stabilitytest_Nova_UnstableException.h>
+#include <stabilitytest/stabilitytest_Nova_StabilityTestCase.h>
 #include <stabilitytest/stabilitytest_Nova_StabilityTestCase.h>
 #include <stabilitytest/stabilitytest_Nova_StabilityTest.h>
 #include <nova/NativeObject.h>
@@ -95,7 +97,7 @@ void stabilitytest_Nova_StabilityTest_static_Nova_main(stabilitytest_Nova_Stabil
 	l1_Nova_n = (stabilitytest_Nova_StabilityTest*)((nova_Nova_Object*)nova_null);
 	l1_Nova_test = stabilitytest_Nova_StabilityTest_Nova_construct(0, exceptionData, l1_Nova_n);
 	l1_Nova_timer = nova_time_Nova_Timer_Nova_start(nova_time_Nova_Timer_Nova_construct(0, exceptionData), exceptionData);
-	stabilitytest_Nova_StabilityTest_Nova_test(l1_Nova_test, exceptionData);
+	stabilitytest_Nova_StabilityTestCase_virtual_Nova_test((stabilitytest_Nova_StabilityTestCase*)(l1_Nova_test), exceptionData);
 	nova_time_Nova_Timer_virtual_Nova_stop((nova_time_Nova_Timer*)(l1_Nova_timer), exceptionData);
 	nova_io_Nova_Console_1_static_Nova_writeLine(0, exceptionData, (nova_Nova_String*)(nova_Nova_String_Nova_plus(nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("Took ")), exceptionData, (nova_Nova_String*)(nova_Nova_String_Nova_plus(nova_primitive_number_Nova_Long_static_Nova_toString(0, exceptionData, nova_time_Nova_Timer_virtual_Accessor_Nova_duration((nova_time_Nova_Timer*)(l1_Nova_timer), exceptionData)), exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("ms")))))));
 	nova_io_Nova_Console_static_Nova_waitForEnter(0, exceptionData);
@@ -216,6 +218,47 @@ void stabilitytest_Nova_StabilityTestFunctionMap_functionMap_Nova_fail(stability
 }
 
 void stabilitytest_Nova_StabilityTestFunctionMap_Nova_super(stabilitytest_Nova_StabilityTestFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+}
+
+void stabilitytest_Nova_StabilityTestPropertyMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData)
+{
+	{
+	}
+}
+
+stabilitytest_Nova_StabilityTestPropertyMap* stabilitytest_Nova_StabilityTestPropertyMap_Nova_construct(stabilitytest_Nova_StabilityTestPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+	CCLASS_NEW(stabilitytest_Nova_StabilityTestPropertyMap, this,);
+	this->vtable = &stabilitytest_StabilityTest_StabilityTestPropertyMap_Extension_VTable_val;
+	nova_Nova_Object_Nova_super((nova_Nova_Object*)this, exceptionData);
+	nova_meta_Nova_PropertyMap_Nova_super((nova_meta_Nova_PropertyMap*)this, exceptionData);
+	stabilitytest_Nova_StabilityTestCasePropertyMap_Nova_super((stabilitytest_Nova_StabilityTestCasePropertyMap*)this, exceptionData);
+	stabilitytest_Nova_StabilityTestPropertyMap_Nova_super(this, exceptionData);
+	
+	{
+		stabilitytest_Nova_StabilityTestPropertyMap_Nova_this(this, exceptionData);
+	}
+	
+	return this;
+}
+
+void stabilitytest_Nova_StabilityTestPropertyMap_Nova_destroy(stabilitytest_Nova_StabilityTestPropertyMap** this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+	if (!*this)
+	{
+		return;
+	}
+	
+	
+	NOVA_FREE(*this);
+}
+
+void stabilitytest_Nova_StabilityTestPropertyMap_Nova_this(stabilitytest_Nova_StabilityTestPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+}
+
+void stabilitytest_Nova_StabilityTestPropertyMap_Nova_super(stabilitytest_Nova_StabilityTestPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
 }
 

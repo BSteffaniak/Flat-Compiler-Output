@@ -3,6 +3,7 @@
 
 typedef struct nova_process_Nova_Process nova_process_Nova_Process;
 typedef struct nova_process_Nova_ProcessFunctionMap nova_process_Nova_ProcessFunctionMap;
+typedef struct nova_process_Nova_ProcessPropertyMap nova_process_Nova_ProcessPropertyMap;
 
 
 #include <Nova.h>
@@ -39,8 +40,9 @@ typedef struct nova_process_Nova_ProcessFunctionMap nova_process_Nova_ProcessFun
 #include <nova/nova_Nova_System.h>
 #include <nova/meta/nova_meta_Nova_Class.h>
 #include <nova/meta/nova_meta_Nova_FunctionMap.h>
+#include <nova/meta/nova_meta_Nova_PropertyMap.h>
 #include <nova/regex/nova_regex_Nova_Pattern.h>
-#include <nova/io/nova_io_Nova_InputStream.h>
+#include <nova/io/nova_io_Nova_FileReader.h>
 #include <nova/NativeObject.h>
 
 CCLASS_CLASS
@@ -48,13 +50,13 @@ CCLASS_CLASS
 	nova_process_Nova_Process, 
 	
 	nova_process_Process_Extension_VTable* vtable;
-	nova_io_Nova_InputStream* nova_process_Nova_Process_Nova_reader;
+	nova_io_Nova_FileReader* nova_process_Nova_Process_Nova_reader;
 )
 
 void nova_process_Nova_Process_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData);
-nova_process_Nova_Process* nova_process_Nova_Process_Nova_construct(nova_process_Nova_Process* this, nova_exception_Nova_ExceptionData* exceptionData, nova_io_Nova_InputStream* reader);
+nova_process_Nova_Process* nova_process_Nova_Process_Nova_construct(nova_process_Nova_Process* this, nova_exception_Nova_ExceptionData* exceptionData, nova_io_Nova_FileReader* reader);
 void nova_process_Nova_Process_Nova_destroy(nova_process_Nova_Process** this, nova_exception_Nova_ExceptionData* exceptionData);
-void nova_process_Nova_Process_Nova_this(nova_process_Nova_Process* this, nova_exception_Nova_ExceptionData* exceptionData, nova_io_Nova_InputStream* reader);
+void nova_process_Nova_Process_Nova_this(nova_process_Nova_Process* this, nova_exception_Nova_ExceptionData* exceptionData, nova_io_Nova_FileReader* reader);
 void nova_process_Nova_Process_Nova_super(nova_process_Nova_Process* this, nova_exception_Nova_ExceptionData* exceptionData);
 
 CCLASS_CLASS
@@ -68,7 +70,21 @@ void nova_process_Nova_ProcessFunctionMap_Nova_init_static(nova_exception_Nova_E
 nova_process_Nova_ProcessFunctionMap* nova_process_Nova_ProcessFunctionMap_Nova_construct(nova_process_Nova_ProcessFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
 void nova_process_Nova_ProcessFunctionMap_Nova_destroy(nova_process_Nova_ProcessFunctionMap** this, nova_exception_Nova_ExceptionData* exceptionData);
 void nova_process_Nova_ProcessFunctionMap_Nova_this(nova_process_Nova_ProcessFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
-nova_process_Nova_Process* nova_process_Nova_ProcessFunctionMap_functionMapProcessFunctionMap_Nova_construct(nova_process_Nova_ProcessFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_io_Nova_InputStream* reader);
+nova_process_Nova_Process* nova_process_Nova_ProcessFunctionMap_functionMapProcessFunctionMap_Nova_construct(nova_process_Nova_ProcessFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_io_Nova_FileReader* reader);
 void nova_process_Nova_ProcessFunctionMap_Nova_super(nova_process_Nova_ProcessFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+
+CCLASS_CLASS
+(
+	nova_process_Nova_ProcessPropertyMap, 
+	
+	nova_process_Process_ProcessPropertyMap_Extension_VTable* vtable;
+)
+
+void nova_process_Nova_ProcessPropertyMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData);
+nova_process_Nova_ProcessPropertyMap* nova_process_Nova_ProcessPropertyMap_Nova_construct(nova_process_Nova_ProcessPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+void nova_process_Nova_ProcessPropertyMap_Nova_destroy(nova_process_Nova_ProcessPropertyMap** this, nova_exception_Nova_ExceptionData* exceptionData);
+void nova_process_Nova_ProcessPropertyMap_Nova_this(nova_process_Nova_ProcessPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+nova_io_Nova_FileReader* nova_process_Nova_ProcessPropertyMap_functionMap_Nova_reader(nova_process_Nova_ProcessPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_process_Nova_Process* reference);
+void nova_process_Nova_ProcessPropertyMap_Nova_super(nova_process_Nova_ProcessPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData);
 
 #endif

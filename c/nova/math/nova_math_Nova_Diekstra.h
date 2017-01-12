@@ -3,6 +3,7 @@
 
 typedef struct nova_math_Nova_Diekstra nova_math_Nova_Diekstra;
 typedef struct nova_math_Nova_DiekstraFunctionMap nova_math_Nova_DiekstraFunctionMap;
+typedef struct nova_math_Nova_DiekstraPropertyMap nova_math_Nova_DiekstraPropertyMap;
 
 
 #include <Nova.h>
@@ -39,6 +40,7 @@ typedef struct nova_math_Nova_DiekstraFunctionMap nova_math_Nova_DiekstraFunctio
 #include <nova/nova_Nova_System.h>
 #include <nova/meta/nova_meta_Nova_Class.h>
 #include <nova/meta/nova_meta_Nova_FunctionMap.h>
+#include <nova/meta/nova_meta_Nova_PropertyMap.h>
 #include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <nova/NativeObject.h>
 
@@ -68,5 +70,18 @@ void nova_math_Nova_DiekstraFunctionMap_Nova_destroy(nova_math_Nova_DiekstraFunc
 void nova_math_Nova_DiekstraFunctionMap_Nova_this(nova_math_Nova_DiekstraFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
 nova_math_Nova_Diekstra* nova_math_Nova_DiekstraFunctionMap_functionMapDiekstraFunctionMap_Nova_construct(nova_math_Nova_DiekstraFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
 void nova_math_Nova_DiekstraFunctionMap_Nova_super(nova_math_Nova_DiekstraFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+
+CCLASS_CLASS
+(
+	nova_math_Nova_DiekstraPropertyMap, 
+	
+	nova_math_Diekstra_DiekstraPropertyMap_Extension_VTable* vtable;
+)
+
+void nova_math_Nova_DiekstraPropertyMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData);
+nova_math_Nova_DiekstraPropertyMap* nova_math_Nova_DiekstraPropertyMap_Nova_construct(nova_math_Nova_DiekstraPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+void nova_math_Nova_DiekstraPropertyMap_Nova_destroy(nova_math_Nova_DiekstraPropertyMap** this, nova_exception_Nova_ExceptionData* exceptionData);
+void nova_math_Nova_DiekstraPropertyMap_Nova_this(nova_math_Nova_DiekstraPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+void nova_math_Nova_DiekstraPropertyMap_Nova_super(nova_math_Nova_DiekstraPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData);
 
 #endif

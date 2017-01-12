@@ -3,6 +3,7 @@
 
 typedef struct nova_io_Nova_InputStream nova_io_Nova_InputStream;
 typedef struct nova_io_Nova_InputStreamFunctionMap nova_io_Nova_InputStreamFunctionMap;
+typedef struct nova_io_Nova_InputStreamPropertyMap nova_io_Nova_InputStreamPropertyMap;
 
 
 #include <Nova.h>
@@ -39,6 +40,7 @@ typedef struct nova_io_Nova_InputStreamFunctionMap nova_io_Nova_InputStreamFunct
 #include <nova/nova_Nova_System.h>
 #include <nova/meta/nova_meta_Nova_Class.h>
 #include <nova/meta/nova_meta_Nova_FunctionMap.h>
+#include <nova/meta/nova_meta_Nova_PropertyMap.h>
 #include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <nova/NativeObject.h>
 
@@ -65,5 +67,18 @@ nova_io_Nova_InputStreamFunctionMap* nova_io_Nova_InputStreamFunctionMap_Nova_co
 void nova_io_Nova_InputStreamFunctionMap_Nova_destroy(nova_io_Nova_InputStreamFunctionMap** this, nova_exception_Nova_ExceptionData* exceptionData);
 void nova_io_Nova_InputStreamFunctionMap_Nova_this(nova_io_Nova_InputStreamFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
 void nova_io_Nova_InputStreamFunctionMap_Nova_super(nova_io_Nova_InputStreamFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+
+CCLASS_CLASS
+(
+	nova_io_Nova_InputStreamPropertyMap, 
+	
+	nova_io_InputStream_InputStreamPropertyMap_Extension_VTable* vtable;
+)
+
+void nova_io_Nova_InputStreamPropertyMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData);
+nova_io_Nova_InputStreamPropertyMap* nova_io_Nova_InputStreamPropertyMap_Nova_construct(nova_io_Nova_InputStreamPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+void nova_io_Nova_InputStreamPropertyMap_Nova_destroy(nova_io_Nova_InputStreamPropertyMap** this, nova_exception_Nova_ExceptionData* exceptionData);
+void nova_io_Nova_InputStreamPropertyMap_Nova_this(nova_io_Nova_InputStreamPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+void nova_io_Nova_InputStreamPropertyMap_Nova_super(nova_io_Nova_InputStreamPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData);
 
 #endif

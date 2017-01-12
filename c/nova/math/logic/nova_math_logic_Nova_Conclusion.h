@@ -3,6 +3,7 @@
 
 typedef struct nova_math_logic_Nova_Conclusion nova_math_logic_Nova_Conclusion;
 typedef struct nova_math_logic_Nova_ConclusionFunctionMap nova_math_logic_Nova_ConclusionFunctionMap;
+typedef struct nova_math_logic_Nova_ConclusionPropertyMap nova_math_logic_Nova_ConclusionPropertyMap;
 
 
 #include <Nova.h>
@@ -39,11 +40,14 @@ typedef struct nova_math_logic_Nova_ConclusionFunctionMap nova_math_logic_Nova_C
 #include <nova/nova_Nova_System.h>
 #include <nova/meta/nova_meta_Nova_Class.h>
 #include <nova/meta/nova_meta_Nova_FunctionMap.h>
+#include <nova/meta/nova_meta_Nova_PropertyMap.h>
 #include <nova/regex/nova_regex_Nova_Pattern.h>
+#include <nova/math/logic/nova_math_logic_Nova_LogicalStatement.h>
 #include <nova/math/logic/nova_math_logic_Nova_LogicalStatement.h>
 #include <nova/math/logic/nova_math_logic_Nova_LogicalStatement.h>
 #include <nova/math/nova_math_Nova_Statement.h>
 #include <nova/math/logic/nova_math_logic_Nova_StatementComponent.h>
+#include <nova/math/nova_math_Nova_Statement.h>
 #include <nova/math/nova_math_Nova_Statement.h>
 #include <nova/NativeObject.h>
 
@@ -74,5 +78,18 @@ void nova_math_logic_Nova_ConclusionFunctionMap_Nova_destroy(nova_math_logic_Nov
 void nova_math_logic_Nova_ConclusionFunctionMap_Nova_this(nova_math_logic_Nova_ConclusionFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
 nova_math_logic_Nova_Conclusion* nova_math_logic_Nova_ConclusionFunctionMap_functionMapConclusionFunctionMap_Nova_construct(nova_math_logic_Nova_ConclusionFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* statement);
 void nova_math_logic_Nova_ConclusionFunctionMap_Nova_super(nova_math_logic_Nova_ConclusionFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+
+CCLASS_CLASS
+(
+	nova_math_logic_Nova_ConclusionPropertyMap, 
+	
+	nova_math_logic_Conclusion_ConclusionPropertyMap_Extension_VTable* vtable;
+)
+
+void nova_math_logic_Nova_ConclusionPropertyMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData);
+nova_math_logic_Nova_ConclusionPropertyMap* nova_math_logic_Nova_ConclusionPropertyMap_Nova_construct(nova_math_logic_Nova_ConclusionPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+void nova_math_logic_Nova_ConclusionPropertyMap_Nova_destroy(nova_math_logic_Nova_ConclusionPropertyMap** this, nova_exception_Nova_ExceptionData* exceptionData);
+void nova_math_logic_Nova_ConclusionPropertyMap_Nova_this(nova_math_logic_Nova_ConclusionPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+void nova_math_logic_Nova_ConclusionPropertyMap_Nova_super(nova_math_logic_Nova_ConclusionPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData);
 
 #endif

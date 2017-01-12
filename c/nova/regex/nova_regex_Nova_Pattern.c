@@ -29,6 +29,7 @@
 #include <nova/nova_Nova_System.h>
 #include <nova/meta/nova_meta_Nova_Class.h>
 #include <nova/meta/nova_meta_Nova_FunctionMap.h>
+#include <nova/meta/nova_meta_Nova_PropertyMap.h>
 #include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <nova/NativeObject.h>
 
@@ -118,6 +119,51 @@ nova_regex_Nova_Pattern* nova_regex_Nova_PatternFunctionMap_functionMapPatternFu
 }
 
 void nova_regex_Nova_PatternFunctionMap_Nova_super(nova_regex_Nova_PatternFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+}
+
+void nova_regex_Nova_PatternPropertyMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData)
+{
+	{
+	}
+}
+
+nova_regex_Nova_PatternPropertyMap* nova_regex_Nova_PatternPropertyMap_Nova_construct(nova_regex_Nova_PatternPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+	CCLASS_NEW(nova_regex_Nova_PatternPropertyMap, this,);
+	this->vtable = &nova_regex_Pattern_PatternPropertyMap_Extension_VTable_val;
+	nova_Nova_Object_Nova_super((nova_Nova_Object*)this, exceptionData);
+	nova_meta_Nova_PropertyMap_Nova_super((nova_meta_Nova_PropertyMap*)this, exceptionData);
+	nova_regex_Nova_PatternPropertyMap_Nova_super(this, exceptionData);
+	
+	{
+		nova_regex_Nova_PatternPropertyMap_Nova_this(this, exceptionData);
+	}
+	
+	return this;
+}
+
+void nova_regex_Nova_PatternPropertyMap_Nova_destroy(nova_regex_Nova_PatternPropertyMap** this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+	if (!*this)
+	{
+		return;
+	}
+	
+	
+	NOVA_FREE(*this);
+}
+
+void nova_regex_Nova_PatternPropertyMap_Nova_this(nova_regex_Nova_PatternPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+}
+
+nova_Nova_String* nova_regex_Nova_PatternPropertyMap_functionMap_Nova_pattern(nova_regex_Nova_PatternPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_regex_Nova_Pattern* reference)
+{
+	return reference->nova_regex_Nova_Pattern_Nova_pattern;
+}
+
+void nova_regex_Nova_PatternPropertyMap_Nova_super(nova_regex_Nova_PatternPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
 }
 

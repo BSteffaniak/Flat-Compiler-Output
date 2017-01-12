@@ -29,6 +29,7 @@
 #include <nova/nova_Nova_System.h>
 #include <nova/meta/nova_meta_Nova_Class.h>
 #include <nova/meta/nova_meta_Nova_FunctionMap.h>
+#include <nova/meta/nova_meta_Nova_PropertyMap.h>
 #include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <example/example_Nova_Animal.h>
 #include <example/example_Nova_Dog.h>
@@ -80,8 +81,8 @@ void example_Nova_PolymorphismDemo_static_Nova_main(example_Nova_PolymorphismDem
 	l1_Nova_animals = nova_datastruct_list_Nova_Array_1_Nova_construct(0, exceptionData, 2, (intptr_t)nova_null);
 	l1_Nova_dog = example_Nova_Dog_Nova_construct(0, exceptionData);
 	l1_Nova_spider = example_Nova_Spider_Nova_construct(0, exceptionData);
-	nova_datastruct_list_Nova_Array_virtual_Nova_set((nova_datastruct_list_Nova_Array*)(l1_Nova_animals), exceptionData, 0, (nova_Nova_Object*)(l1_Nova_dog));
-	nova_datastruct_list_Nova_Array_virtual_Nova_set((nova_datastruct_list_Nova_Array*)(l1_Nova_animals), exceptionData, 1, (nova_Nova_Object*)(l1_Nova_spider));
+	nova_datastruct_list_Nova_Array_Nova_set((nova_datastruct_list_Nova_Array*)(l1_Nova_animals), exceptionData, 0, (nova_Nova_Object*)(l1_Nova_dog));
+	nova_datastruct_list_Nova_Array_Nova_set((nova_datastruct_list_Nova_Array*)(l1_Nova_animals), exceptionData, 1, (nova_Nova_Object*)(l1_Nova_spider));
 	l1_Nova_description = example_Nova_PolymorphismDemo_static_Nova_getDescriptionOfAnimalWithNumberOfLegs(0, exceptionData, l1_Nova_animals, 8);
 	nova_io_Nova_Console_1_static_Nova_writeLine(0, exceptionData, (nova_Nova_String*)(nova_Nova_String_Nova_plus(nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("Searched for animal with 8 legs and found: ")), exceptionData, (nova_Nova_String*)(nova_Nova_String_Nova_plus((l1_Nova_description), exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("")))))));
 	nova_io_Nova_Console_static_Nova_waitForEnter(0, exceptionData);
@@ -164,6 +165,46 @@ nova_Nova_String* example_Nova_PolymorphismDemoFunctionMap_functionMap_static_No
 }
 
 void example_Nova_PolymorphismDemoFunctionMap_Nova_super(example_Nova_PolymorphismDemoFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+}
+
+void example_Nova_PolymorphismDemoPropertyMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData)
+{
+	{
+	}
+}
+
+example_Nova_PolymorphismDemoPropertyMap* example_Nova_PolymorphismDemoPropertyMap_Nova_construct(example_Nova_PolymorphismDemoPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+	CCLASS_NEW(example_Nova_PolymorphismDemoPropertyMap, this,);
+	this->vtable = &example_PolymorphismDemo_PolymorphismDemoPropertyMap_Extension_VTable_val;
+	nova_Nova_Object_Nova_super((nova_Nova_Object*)this, exceptionData);
+	nova_meta_Nova_PropertyMap_Nova_super((nova_meta_Nova_PropertyMap*)this, exceptionData);
+	example_Nova_PolymorphismDemoPropertyMap_Nova_super(this, exceptionData);
+	
+	{
+		example_Nova_PolymorphismDemoPropertyMap_Nova_this(this, exceptionData);
+	}
+	
+	return this;
+}
+
+void example_Nova_PolymorphismDemoPropertyMap_Nova_destroy(example_Nova_PolymorphismDemoPropertyMap** this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+	if (!*this)
+	{
+		return;
+	}
+	
+	
+	NOVA_FREE(*this);
+}
+
+void example_Nova_PolymorphismDemoPropertyMap_Nova_this(example_Nova_PolymorphismDemoPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+}
+
+void example_Nova_PolymorphismDemoPropertyMap_Nova_super(example_Nova_PolymorphismDemoPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
 }
 

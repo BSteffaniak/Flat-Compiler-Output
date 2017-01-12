@@ -3,6 +3,7 @@
 
 typedef struct spectra_tree_nodes_functions_Nova_ObjectNotation spectra_tree_nodes_functions_Nova_ObjectNotation;
 typedef struct spectra_tree_nodes_functions_Nova_ObjectNotationFunctionMap spectra_tree_nodes_functions_Nova_ObjectNotationFunctionMap;
+typedef struct spectra_tree_nodes_functions_Nova_ObjectNotationPropertyMap spectra_tree_nodes_functions_Nova_ObjectNotationPropertyMap;
 
 
 #include <Nova.h>
@@ -39,6 +40,7 @@ typedef struct spectra_tree_nodes_functions_Nova_ObjectNotationFunctionMap spect
 #include <nova/nova_Nova_System.h>
 #include <nova/meta/nova_meta_Nova_Class.h>
 #include <nova/meta/nova_meta_Nova_FunctionMap.h>
+#include <nova/meta/nova_meta_Nova_PropertyMap.h>
 #include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <spectra/util/spectra_util_Nova_Location.h>
 #include <spectra/tree/nodes/spectra_tree_nodes_Nova_Node.h>
@@ -46,6 +48,8 @@ typedef struct spectra_tree_nodes_functions_Nova_ObjectNotationFunctionMap spect
 #include <spectra/tree/nodes/variables/spectra_tree_nodes_variables_Nova_VariableDeclaration.h>
 #include <spectra/tree/nodes/functions/spectra_tree_nodes_functions_Nova_Instantiation.h>
 #include <spectra/tree/nodes/spectra_tree_nodes_Nova_NodeList.h>
+#include <spectra/tree/nodes/spectra_tree_nodes_Nova_NodeList.h>
+#include <spectra/tree/nodes/spectra_tree_nodes_Nova_Node.h>
 #include <spectra/tree/nodes/spectra_tree_nodes_Nova_Node.h>
 #include <spectra/spectra_Nova_InvalidParseException.h>
 #include <spectra/spectra_Nova_SyntaxErrorException.h>
@@ -62,6 +66,7 @@ typedef struct spectra_tree_nodes_functions_Nova_ObjectNotationFunctionMap spect
 #include <spectra/tree/nodes/spectra_tree_nodes_Nova_Program.h>
 #include <spectra/tree/nodes/spectra_tree_nodes_Nova_Scope.h>
 #include <spectra/tree/nodes/spectra_tree_nodes_Nova_ValidationResult.h>
+#include <spectra/tree/nodes/annotations/spectra_tree_nodes_annotations_Nova_Annotatable.h>
 #include <spectra/tree/nodes/annotations/spectra_tree_nodes_annotations_Nova_Annotatable.h>
 #include <nova/NativeObject.h>
 
@@ -101,5 +106,18 @@ spectra_tree_nodes_variables_Nova_VariableDeclaration* spectra_tree_nodes_functi
 nova_Nova_String* spectra_tree_nodes_functions_Nova_ObjectNotationFunctionMap_functionMap_Nova_writeChildren(spectra_tree_nodes_functions_Nova_ObjectNotationFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, spectra_tree_nodes_functions_Nova_ObjectNotation* reference);
 nova_Nova_String* spectra_tree_nodes_functions_Nova_ObjectNotationFunctionMap_functionMap_Nova_writeNova(spectra_tree_nodes_functions_Nova_ObjectNotationFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, spectra_tree_nodes_functions_Nova_ObjectNotation* reference);
 void spectra_tree_nodes_functions_Nova_ObjectNotationFunctionMap_Nova_super(spectra_tree_nodes_functions_Nova_ObjectNotationFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+
+CCLASS_CLASS
+(
+	spectra_tree_nodes_functions_Nova_ObjectNotationPropertyMap, 
+	
+	spectra_tree_nodes_functions_ObjectNotation_ObjectNotationPropertyMap_Extension_VTable* vtable;
+)
+
+void spectra_tree_nodes_functions_Nova_ObjectNotationPropertyMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData);
+spectra_tree_nodes_functions_Nova_ObjectNotationPropertyMap* spectra_tree_nodes_functions_Nova_ObjectNotationPropertyMap_Nova_construct(spectra_tree_nodes_functions_Nova_ObjectNotationPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+void spectra_tree_nodes_functions_Nova_ObjectNotationPropertyMap_Nova_destroy(spectra_tree_nodes_functions_Nova_ObjectNotationPropertyMap** this, nova_exception_Nova_ExceptionData* exceptionData);
+void spectra_tree_nodes_functions_Nova_ObjectNotationPropertyMap_Nova_this(spectra_tree_nodes_functions_Nova_ObjectNotationPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+void spectra_tree_nodes_functions_Nova_ObjectNotationPropertyMap_Nova_super(spectra_tree_nodes_functions_Nova_ObjectNotationPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData);
 
 #endif

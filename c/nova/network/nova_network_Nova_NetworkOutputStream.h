@@ -3,6 +3,7 @@
 
 typedef struct nova_network_Nova_NetworkOutputStream nova_network_Nova_NetworkOutputStream;
 typedef struct nova_network_Nova_NetworkOutputStreamFunctionMap nova_network_Nova_NetworkOutputStreamFunctionMap;
+typedef struct nova_network_Nova_NetworkOutputStreamPropertyMap nova_network_Nova_NetworkOutputStreamPropertyMap;
 
 
 #include <Nova.h>
@@ -39,10 +40,12 @@ typedef struct nova_network_Nova_NetworkOutputStreamFunctionMap nova_network_Nov
 #include <nova/nova_Nova_System.h>
 #include <nova/meta/nova_meta_Nova_Class.h>
 #include <nova/meta/nova_meta_Nova_FunctionMap.h>
+#include <nova/meta/nova_meta_Nova_PropertyMap.h>
 #include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <nova/network/NativeSocket.h>
 #include <nova/io/nova_io_Nova_OutputStream.h>
 #include <nova/network/nova_network_Nova_ConnectionSocket.h>
+#include <nova/io/nova_io_Nova_OutputStream.h>
 #include <nova/io/nova_io_Nova_OutputStream.h>
 #include <nova/NativeObject.h>
 
@@ -77,5 +80,18 @@ nova_network_Nova_NetworkOutputStream* nova_network_Nova_NetworkOutputStreamFunc
 char nova_network_Nova_NetworkOutputStreamFunctionMap_functionMap0_Nova_write(nova_network_Nova_NetworkOutputStreamFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_network_Nova_NetworkOutputStream* reference, nova_Nova_String* data);
 char nova_network_Nova_NetworkOutputStreamFunctionMap_functionMap1_Nova_write(nova_network_Nova_NetworkOutputStreamFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_network_Nova_NetworkOutputStream* reference, nova_Nova_Object* data);
 void nova_network_Nova_NetworkOutputStreamFunctionMap_Nova_super(nova_network_Nova_NetworkOutputStreamFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+
+CCLASS_CLASS
+(
+	nova_network_Nova_NetworkOutputStreamPropertyMap, 
+	
+	nova_network_NetworkOutputStream_NetworkOutputStreamPropertyMap_Extension_VTable* vtable;
+)
+
+void nova_network_Nova_NetworkOutputStreamPropertyMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData);
+nova_network_Nova_NetworkOutputStreamPropertyMap* nova_network_Nova_NetworkOutputStreamPropertyMap_Nova_construct(nova_network_Nova_NetworkOutputStreamPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+void nova_network_Nova_NetworkOutputStreamPropertyMap_Nova_destroy(nova_network_Nova_NetworkOutputStreamPropertyMap** this, nova_exception_Nova_ExceptionData* exceptionData);
+void nova_network_Nova_NetworkOutputStreamPropertyMap_Nova_this(nova_network_Nova_NetworkOutputStreamPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+void nova_network_Nova_NetworkOutputStreamPropertyMap_Nova_super(nova_network_Nova_NetworkOutputStreamPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData);
 
 #endif

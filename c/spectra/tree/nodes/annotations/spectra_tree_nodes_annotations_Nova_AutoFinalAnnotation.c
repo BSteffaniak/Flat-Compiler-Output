@@ -29,26 +29,15 @@
 #include <nova/nova_Nova_System.h>
 #include <nova/meta/nova_meta_Nova_Class.h>
 #include <nova/meta/nova_meta_Nova_FunctionMap.h>
+#include <nova/meta/nova_meta_Nova_PropertyMap.h>
 #include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <spectra/tree/nodes/spectra_tree_nodes_Nova_Node.h>
 #include <spectra/util/spectra_util_Nova_Location.h>
 #include <spectra/tree/nodes/annotations/spectra_tree_nodes_annotations_Nova_Annotation.h>
 #include <spectra/tree/nodes/annotations/spectra_tree_nodes_annotations_Nova_Annotation.h>
-#include <spectra/tree/nodes/annotations/spectra_tree_nodes_annotations_Nova_AbstractAnnotation.h>
-#include <spectra/tree/nodes/annotations/spectra_tree_nodes_annotations_Nova_AutoFinalAnnotation.h>
-#include <spectra/tree/nodes/annotations/spectra_tree_nodes_annotations_Nova_AutoPureAnnotation.h>
-#include <spectra/tree/nodes/annotations/spectra_tree_nodes_annotations_Nova_FinalAnnotation.h>
-#include <spectra/tree/nodes/annotations/spectra_tree_nodes_annotations_Nova_ImmutableAnnotation.h>
-#include <spectra/tree/nodes/annotations/spectra_tree_nodes_annotations_Nova_ImpureAnnotation.h>
-#include <spectra/tree/nodes/annotations/spectra_tree_nodes_annotations_Nova_NativeAnnotation.h>
-#include <spectra/tree/nodes/annotations/spectra_tree_nodes_annotations_Nova_OverrideAnnotation.h>
-#include <spectra/tree/nodes/annotations/spectra_tree_nodes_annotations_Nova_PrivateAnnotation.h>
-#include <spectra/tree/nodes/annotations/spectra_tree_nodes_annotations_Nova_PublicAnnotation.h>
-#include <spectra/tree/nodes/annotations/spectra_tree_nodes_annotations_Nova_PureAnnotation.h>
-#include <spectra/tree/nodes/annotations/spectra_tree_nodes_annotations_Nova_StaticAnnotation.h>
-#include <spectra/tree/nodes/annotations/spectra_tree_nodes_annotations_Nova_TargetAnnotation.h>
-#include <spectra/tree/nodes/annotations/spectra_tree_nodes_annotations_Nova_VarAnnotation.h>
-#include <spectra/tree/nodes/annotations/spectra_tree_nodes_annotations_Nova_VisibleAnnotation.h>
+#include <spectra/tree/nodes/annotations/spectra_tree_nodes_annotations_Nova_Annotation.h>
+#include <spectra/tree/nodes/annotations/spectra_tree_nodes_annotations_Nova_Modifier.h>
+#include <spectra/tree/nodes/spectra_tree_nodes_Nova_Node.h>
 #include <spectra/tree/nodes/spectra_tree_nodes_Nova_Node.h>
 #include <spectra/spectra_Nova_InvalidParseException.h>
 #include <spectra/spectra_Nova_SyntaxErrorException.h>
@@ -67,6 +56,7 @@
 #include <spectra/tree/nodes/spectra_tree_nodes_Nova_Program.h>
 #include <spectra/tree/nodes/spectra_tree_nodes_Nova_Scope.h>
 #include <spectra/tree/nodes/spectra_tree_nodes_Nova_ValidationResult.h>
+#include <spectra/tree/nodes/annotations/spectra_tree_nodes_annotations_Nova_Annotatable.h>
 #include <spectra/tree/nodes/annotations/spectra_tree_nodes_annotations_Nova_Annotatable.h>
 #include <nova/NativeObject.h>
 
@@ -180,6 +170,48 @@ spectra_tree_nodes_annotations_Nova_AutoFinalAnnotation* spectra_tree_nodes_anno
 }
 
 void spectra_tree_nodes_annotations_Nova_AutoFinalAnnotationFunctionMap_Nova_super(spectra_tree_nodes_annotations_Nova_AutoFinalAnnotationFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+}
+
+void spectra_tree_nodes_annotations_Nova_AutoFinalAnnotationPropertyMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData)
+{
+	{
+	}
+}
+
+spectra_tree_nodes_annotations_Nova_AutoFinalAnnotationPropertyMap* spectra_tree_nodes_annotations_Nova_AutoFinalAnnotationPropertyMap_Nova_construct(spectra_tree_nodes_annotations_Nova_AutoFinalAnnotationPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+	CCLASS_NEW(spectra_tree_nodes_annotations_Nova_AutoFinalAnnotationPropertyMap, this,);
+	this->vtable = &spectra_tree_nodes_annotations_AutoFinalAnnotation_AutoFinalAnnotationPropertyMap_Extension_VTable_val;
+	nova_Nova_Object_Nova_super((nova_Nova_Object*)this, exceptionData);
+	nova_meta_Nova_PropertyMap_Nova_super((nova_meta_Nova_PropertyMap*)this, exceptionData);
+	spectra_tree_nodes_Nova_NodePropertyMap_Nova_super((spectra_tree_nodes_Nova_NodePropertyMap*)this, exceptionData);
+	spectra_tree_nodes_annotations_Nova_AnnotationPropertyMap_Nova_super((spectra_tree_nodes_annotations_Nova_AnnotationPropertyMap*)this, exceptionData);
+	spectra_tree_nodes_annotations_Nova_AutoFinalAnnotationPropertyMap_Nova_super(this, exceptionData);
+	
+	{
+		spectra_tree_nodes_annotations_Nova_AutoFinalAnnotationPropertyMap_Nova_this(this, exceptionData);
+	}
+	
+	return this;
+}
+
+void spectra_tree_nodes_annotations_Nova_AutoFinalAnnotationPropertyMap_Nova_destroy(spectra_tree_nodes_annotations_Nova_AutoFinalAnnotationPropertyMap** this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+	if (!*this)
+	{
+		return;
+	}
+	
+	
+	NOVA_FREE(*this);
+}
+
+void spectra_tree_nodes_annotations_Nova_AutoFinalAnnotationPropertyMap_Nova_this(spectra_tree_nodes_annotations_Nova_AutoFinalAnnotationPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+}
+
+void spectra_tree_nodes_annotations_Nova_AutoFinalAnnotationPropertyMap_Nova_super(spectra_tree_nodes_annotations_Nova_AutoFinalAnnotationPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
 }
 

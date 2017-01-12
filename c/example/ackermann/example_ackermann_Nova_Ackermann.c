@@ -29,6 +29,7 @@
 #include <nova/nova_Nova_System.h>
 #include <nova/meta/nova_meta_Nova_Class.h>
 #include <nova/meta/nova_meta_Nova_FunctionMap.h>
+#include <nova/meta/nova_meta_Nova_PropertyMap.h>
 #include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <nova/NativeObject.h>
 
@@ -176,6 +177,46 @@ int example_ackermann_Nova_AckermannFunctionMap_functionMap_static_Nova_run2(exa
 }
 
 void example_ackermann_Nova_AckermannFunctionMap_Nova_super(example_ackermann_Nova_AckermannFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+}
+
+void example_ackermann_Nova_AckermannPropertyMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData)
+{
+	{
+	}
+}
+
+example_ackermann_Nova_AckermannPropertyMap* example_ackermann_Nova_AckermannPropertyMap_Nova_construct(example_ackermann_Nova_AckermannPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+	CCLASS_NEW(example_ackermann_Nova_AckermannPropertyMap, this,);
+	this->vtable = &example_ackermann_Ackermann_AckermannPropertyMap_Extension_VTable_val;
+	nova_Nova_Object_Nova_super((nova_Nova_Object*)this, exceptionData);
+	nova_meta_Nova_PropertyMap_Nova_super((nova_meta_Nova_PropertyMap*)this, exceptionData);
+	example_ackermann_Nova_AckermannPropertyMap_Nova_super(this, exceptionData);
+	
+	{
+		example_ackermann_Nova_AckermannPropertyMap_Nova_this(this, exceptionData);
+	}
+	
+	return this;
+}
+
+void example_ackermann_Nova_AckermannPropertyMap_Nova_destroy(example_ackermann_Nova_AckermannPropertyMap** this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+	if (!*this)
+	{
+		return;
+	}
+	
+	
+	NOVA_FREE(*this);
+}
+
+void example_ackermann_Nova_AckermannPropertyMap_Nova_this(example_ackermann_Nova_AckermannPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+}
+
+void example_ackermann_Nova_AckermannPropertyMap_Nova_super(example_ackermann_Nova_AckermannPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
 }
 

@@ -3,6 +3,7 @@
 
 typedef struct example_Nova_Polygon example_Nova_Polygon;
 typedef struct example_Nova_PolygonFunctionMap example_Nova_PolygonFunctionMap;
+typedef struct example_Nova_PolygonPropertyMap example_Nova_PolygonPropertyMap;
 
 
 #include <Nova.h>
@@ -39,6 +40,7 @@ typedef struct example_Nova_PolygonFunctionMap example_Nova_PolygonFunctionMap;
 #include <nova/nova_Nova_System.h>
 #include <nova/meta/nova_meta_Nova_Class.h>
 #include <nova/meta/nova_meta_Nova_FunctionMap.h>
+#include <nova/meta/nova_meta_Nova_PropertyMap.h>
 #include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <nova/NativeObject.h>
 
@@ -65,5 +67,18 @@ example_Nova_PolygonFunctionMap* example_Nova_PolygonFunctionMap_Nova_construct(
 void example_Nova_PolygonFunctionMap_Nova_destroy(example_Nova_PolygonFunctionMap** this, nova_exception_Nova_ExceptionData* exceptionData);
 void example_Nova_PolygonFunctionMap_Nova_this(example_Nova_PolygonFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
 void example_Nova_PolygonFunctionMap_Nova_super(example_Nova_PolygonFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+
+CCLASS_CLASS
+(
+	example_Nova_PolygonPropertyMap, 
+	
+	example_Polygon_PolygonPropertyMap_Extension_VTable* vtable;
+)
+
+void example_Nova_PolygonPropertyMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData);
+example_Nova_PolygonPropertyMap* example_Nova_PolygonPropertyMap_Nova_construct(example_Nova_PolygonPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+void example_Nova_PolygonPropertyMap_Nova_destroy(example_Nova_PolygonPropertyMap** this, nova_exception_Nova_ExceptionData* exceptionData);
+void example_Nova_PolygonPropertyMap_Nova_this(example_Nova_PolygonPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+void example_Nova_PolygonPropertyMap_Nova_super(example_Nova_PolygonPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData);
 
 #endif

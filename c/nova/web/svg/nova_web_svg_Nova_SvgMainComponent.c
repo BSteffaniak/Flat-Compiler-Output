@@ -29,10 +29,12 @@
 #include <nova/nova_Nova_System.h>
 #include <nova/meta/nova_meta_Nova_Class.h>
 #include <nova/meta/nova_meta_Nova_FunctionMap.h>
+#include <nova/meta/nova_meta_Nova_PropertyMap.h>
 #include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <nova/io/nova_io_Nova_FileWriter.h>
 #include <nova/web/svg/nova_web_svg_Nova_SvgComponent.h>
 #include <nova/web/svg/nova_web_svg_Nova_SvgComponentList.h>
+#include <nova/web/svg/nova_web_svg_Nova_SvgComponent.h>
 #include <nova/web/svg/nova_web_svg_Nova_SvgComponent.h>
 #include <nova/NativeObject.h>
 
@@ -77,9 +79,9 @@ void nova_web_svg_Nova_SvgMainComponent_Nova_this(nova_web_svg_Nova_SvgMainCompo
 
 void nova_web_svg_Nova_SvgMainComponent_Nova_generateOutput(nova_web_svg_Nova_SvgMainComponent* this, nova_exception_Nova_ExceptionData* exceptionData, nova_io_Nova_FileWriter* writer)
 {
-	nova_io_Nova_FileWriter_Nova_write(writer, exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("<?xml version = '1.0' standalone = 'no'?>\n<!DOCTYPE svg PUBLIC\"-//W3C//DTD Svg1.1//EN\" \"http://www.w3.org/Graphics/Svg/1.1/DTD/svg11.dtd\"><svg width=\"1400px\" height=\"950px\" version=\"1.1\" preserveAspectRatio=\"none\">\n")));
+	nova_io_Nova_OutputStream_virtual_Nova_write((nova_io_Nova_OutputStream*)(writer), exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("<?xml version = '1.0' standalone = 'no'?>\n<!DOCTYPE svg PUBLIC\"-//W3C//DTD Svg1.1//EN\" \"http://www.w3.org/Graphics/Svg/1.1/DTD/svg11.dtd\"><svg width=\"1400px\" height=\"950px\" version=\"1.1\" preserveAspectRatio=\"none\">\n")));
 	nova_web_svg_Nova_SvgComponentList_Nova_generateOutput(this->nova_web_svg_Nova_SvgComponent_Nova_children, exceptionData, writer);
-	nova_io_Nova_FileWriter_Nova_write(writer, exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("</svg>\n")));
+	nova_io_Nova_OutputStream_virtual_Nova_write((nova_io_Nova_OutputStream*)(writer), exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("</svg>\n")));
 }
 
 void nova_web_svg_Nova_SvgMainComponent_Nova_super(nova_web_svg_Nova_SvgMainComponent* this, nova_exception_Nova_ExceptionData* exceptionData)
@@ -134,6 +136,47 @@ void nova_web_svg_Nova_SvgMainComponentFunctionMap_functionMap_Nova_generateOutp
 }
 
 void nova_web_svg_Nova_SvgMainComponentFunctionMap_Nova_super(nova_web_svg_Nova_SvgMainComponentFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+}
+
+void nova_web_svg_Nova_SvgMainComponentPropertyMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData)
+{
+	{
+	}
+}
+
+nova_web_svg_Nova_SvgMainComponentPropertyMap* nova_web_svg_Nova_SvgMainComponentPropertyMap_Nova_construct(nova_web_svg_Nova_SvgMainComponentPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+	CCLASS_NEW(nova_web_svg_Nova_SvgMainComponentPropertyMap, this,);
+	this->vtable = &nova_web_svg_SvgMainComponent_SvgMainComponentPropertyMap_Extension_VTable_val;
+	nova_Nova_Object_Nova_super((nova_Nova_Object*)this, exceptionData);
+	nova_meta_Nova_PropertyMap_Nova_super((nova_meta_Nova_PropertyMap*)this, exceptionData);
+	nova_web_svg_Nova_SvgComponentPropertyMap_Nova_super((nova_web_svg_Nova_SvgComponentPropertyMap*)this, exceptionData);
+	nova_web_svg_Nova_SvgMainComponentPropertyMap_Nova_super(this, exceptionData);
+	
+	{
+		nova_web_svg_Nova_SvgMainComponentPropertyMap_Nova_this(this, exceptionData);
+	}
+	
+	return this;
+}
+
+void nova_web_svg_Nova_SvgMainComponentPropertyMap_Nova_destroy(nova_web_svg_Nova_SvgMainComponentPropertyMap** this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+	if (!*this)
+	{
+		return;
+	}
+	
+	
+	NOVA_FREE(*this);
+}
+
+void nova_web_svg_Nova_SvgMainComponentPropertyMap_Nova_this(nova_web_svg_Nova_SvgMainComponentPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+}
+
+void nova_web_svg_Nova_SvgMainComponentPropertyMap_Nova_super(nova_web_svg_Nova_SvgMainComponentPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
 }
 

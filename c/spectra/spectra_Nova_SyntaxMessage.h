@@ -3,6 +3,7 @@
 
 typedef struct spectra_Nova_SyntaxMessage spectra_Nova_SyntaxMessage;
 typedef struct spectra_Nova_SyntaxMessageFunctionMap spectra_Nova_SyntaxMessageFunctionMap;
+typedef struct spectra_Nova_SyntaxMessagePropertyMap spectra_Nova_SyntaxMessagePropertyMap;
 
 
 #include <Nova.h>
@@ -39,6 +40,7 @@ typedef struct spectra_Nova_SyntaxMessageFunctionMap spectra_Nova_SyntaxMessageF
 #include <nova/nova_Nova_System.h>
 #include <nova/meta/nova_meta_Nova_Class.h>
 #include <nova/meta/nova_meta_Nova_FunctionMap.h>
+#include <nova/meta/nova_meta_Nova_PropertyMap.h>
 #include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <spectra/tree/nodes/spectra_tree_nodes_Nova_Node.h>
 #include <spectra/spectra_Nova_SyntaxErrorException.h>
@@ -75,5 +77,19 @@ spectra_Nova_SyntaxMessage* spectra_Nova_SyntaxMessageFunctionMap_functionMapSyn
 void spectra_Nova_SyntaxMessageFunctionMap_functionMap_static_Nova_errorIf(spectra_Nova_SyntaxMessageFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* message, spectra_tree_nodes_Nova_Node* node, char condition, char throwException);
 void spectra_Nova_SyntaxMessageFunctionMap_functionMap_static_Nova_error(spectra_Nova_SyntaxMessageFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* message, spectra_tree_nodes_Nova_Node* node, char throwException);
 void spectra_Nova_SyntaxMessageFunctionMap_Nova_super(spectra_Nova_SyntaxMessageFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+
+CCLASS_CLASS
+(
+	spectra_Nova_SyntaxMessagePropertyMap, 
+	
+	spectra_SyntaxMessage_SyntaxMessagePropertyMap_Extension_VTable* vtable;
+)
+
+void spectra_Nova_SyntaxMessagePropertyMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData);
+spectra_Nova_SyntaxMessagePropertyMap* spectra_Nova_SyntaxMessagePropertyMap_Nova_construct(spectra_Nova_SyntaxMessagePropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+void spectra_Nova_SyntaxMessagePropertyMap_Nova_destroy(spectra_Nova_SyntaxMessagePropertyMap** this, nova_exception_Nova_ExceptionData* exceptionData);
+void spectra_Nova_SyntaxMessagePropertyMap_Nova_this(spectra_Nova_SyntaxMessagePropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+nova_Nova_String* spectra_Nova_SyntaxMessagePropertyMap_functionMap_static_Nova_latestErrorMessage(spectra_Nova_SyntaxMessagePropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+void spectra_Nova_SyntaxMessagePropertyMap_Nova_super(spectra_Nova_SyntaxMessagePropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData);
 
 #endif

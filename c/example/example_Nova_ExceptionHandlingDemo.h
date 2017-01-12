@@ -3,6 +3,7 @@
 
 typedef struct example_Nova_ExceptionHandlingDemo example_Nova_ExceptionHandlingDemo;
 typedef struct example_Nova_ExceptionHandlingDemoFunctionMap example_Nova_ExceptionHandlingDemoFunctionMap;
+typedef struct example_Nova_ExceptionHandlingDemoPropertyMap example_Nova_ExceptionHandlingDemoPropertyMap;
 
 
 #include <Nova.h>
@@ -39,6 +40,7 @@ typedef struct example_Nova_ExceptionHandlingDemoFunctionMap example_Nova_Except
 #include <nova/nova_Nova_System.h>
 #include <nova/meta/nova_meta_Nova_Class.h>
 #include <nova/meta/nova_meta_Nova_FunctionMap.h>
+#include <nova/meta/nova_meta_Nova_PropertyMap.h>
 #include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <example/example_Nova_NonWholeDivisionException.h>
 #include <nova/NativeObject.h>
@@ -71,5 +73,18 @@ void example_Nova_ExceptionHandlingDemoFunctionMap_Nova_this(example_Nova_Except
 example_Nova_ExceptionHandlingDemo* example_Nova_ExceptionHandlingDemoFunctionMap_functionMapExceptionHandlingDemoFunctionMap_Nova_construct(example_Nova_ExceptionHandlingDemoFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
 void example_Nova_ExceptionHandlingDemoFunctionMap_functionMap_static_Nova_main(example_Nova_ExceptionHandlingDemoFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_list_Nova_Array* args);
 void example_Nova_ExceptionHandlingDemoFunctionMap_Nova_super(example_Nova_ExceptionHandlingDemoFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+
+CCLASS_CLASS
+(
+	example_Nova_ExceptionHandlingDemoPropertyMap, 
+	
+	example_ExceptionHandlingDemo_ExceptionHandlingDemoPropertyMap_Extension_VTable* vtable;
+)
+
+void example_Nova_ExceptionHandlingDemoPropertyMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData);
+example_Nova_ExceptionHandlingDemoPropertyMap* example_Nova_ExceptionHandlingDemoPropertyMap_Nova_construct(example_Nova_ExceptionHandlingDemoPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+void example_Nova_ExceptionHandlingDemoPropertyMap_Nova_destroy(example_Nova_ExceptionHandlingDemoPropertyMap** this, nova_exception_Nova_ExceptionData* exceptionData);
+void example_Nova_ExceptionHandlingDemoPropertyMap_Nova_this(example_Nova_ExceptionHandlingDemoPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+void example_Nova_ExceptionHandlingDemoPropertyMap_Nova_super(example_Nova_ExceptionHandlingDemoPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData);
 
 #endif

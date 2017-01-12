@@ -3,6 +3,7 @@
 
 typedef struct nova_io_Nova_FileReader nova_io_Nova_FileReader;
 typedef struct nova_io_Nova_FileReaderFunctionMap nova_io_Nova_FileReaderFunctionMap;
+typedef struct nova_io_Nova_FileReaderPropertyMap nova_io_Nova_FileReaderPropertyMap;
 
 
 #include <Nova.h>
@@ -39,8 +40,10 @@ typedef struct nova_io_Nova_FileReaderFunctionMap nova_io_Nova_FileReaderFunctio
 #include <nova/nova_Nova_System.h>
 #include <nova/meta/nova_meta_Nova_Class.h>
 #include <nova/meta/nova_meta_Nova_FunctionMap.h>
+#include <nova/meta/nova_meta_Nova_PropertyMap.h>
 #include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <nova/io/nova_io_Nova_File.h>
+#include <nova/io/nova_io_Nova_InputStream.h>
 #include <nova/io/nova_io_Nova_InputStream.h>
 #include <nova/io/nova_io_Nova_InputStream.h>
 #include <nova/NativeObject.h>
@@ -58,13 +61,13 @@ void nova_io_Nova_FileReader_Nova_init_static(nova_exception_Nova_ExceptionData*
 nova_io_Nova_FileReader* nova_io_Nova_FileReader_0_Nova_construct(nova_io_Nova_FileReader* this, nova_exception_Nova_ExceptionData* exceptionData, nova_io_Nova_File* file);
 nova_io_Nova_FileReader* nova_io_Nova_FileReader_1_Nova_construct(nova_io_Nova_FileReader* this, nova_exception_Nova_ExceptionData* exceptionData, FILE* fp);
 void nova_io_Nova_FileReader_Nova_destroy(nova_io_Nova_FileReader** this, nova_exception_Nova_ExceptionData* exceptionData);
-nova_Nova_String* nova_io_Nova_FileReader_Nova_readString(nova_io_Nova_FileReader* this, nova_exception_Nova_ExceptionData* exceptionData);
 nova_Nova_Object* nova_io_Nova_FileReader_Nova_readBytes(nova_io_Nova_FileReader* this, nova_exception_Nova_ExceptionData* exceptionData);
 void nova_io_Nova_FileReader_0_Nova_this(nova_io_Nova_FileReader* this, nova_exception_Nova_ExceptionData* exceptionData, nova_io_Nova_File* file);
 void nova_io_Nova_FileReader_1_Nova_this(nova_io_Nova_FileReader* this, nova_exception_Nova_ExceptionData* exceptionData, FILE* fp);
 void nova_io_Nova_FileReader_Nova_open(nova_io_Nova_FileReader* this, nova_exception_Nova_ExceptionData* exceptionData);
 nova_Nova_String* nova_io_Nova_FileReader_Nova_readAllContents(nova_io_Nova_FileReader* this, nova_exception_Nova_ExceptionData* exceptionData);
 nova_Nova_String* nova_io_Nova_FileReader_Nova_readLine(nova_io_Nova_FileReader* this, nova_exception_Nova_ExceptionData* exceptionData);
+nova_Nova_String* nova_io_Nova_FileReader_Nova_readString(nova_io_Nova_FileReader* this, nova_exception_Nova_ExceptionData* exceptionData);
 char nova_io_Nova_FileReader_Nova_close(nova_io_Nova_FileReader* this, nova_exception_Nova_ExceptionData* exceptionData);
 char nova_io_Nova_FileReader_Accessor_Nova_isOpen(nova_io_Nova_FileReader* this, nova_exception_Nova_ExceptionData* exceptionData);
 void nova_io_Nova_FileReader_Nova_super(nova_io_Nova_FileReader* this, nova_exception_Nova_ExceptionData* exceptionData);
@@ -81,12 +84,27 @@ nova_io_Nova_FileReaderFunctionMap* nova_io_Nova_FileReaderFunctionMap_Nova_cons
 void nova_io_Nova_FileReaderFunctionMap_Nova_destroy(nova_io_Nova_FileReaderFunctionMap** this, nova_exception_Nova_ExceptionData* exceptionData);
 void nova_io_Nova_FileReaderFunctionMap_Nova_this(nova_io_Nova_FileReaderFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
 nova_io_Nova_FileReader* nova_io_Nova_FileReaderFunctionMap_functionMapFileReaderFunctionMap_Nova_construct(nova_io_Nova_FileReaderFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_io_Nova_File* file);
-nova_Nova_String* nova_io_Nova_FileReaderFunctionMap_functionMap_Nova_readString(nova_io_Nova_FileReaderFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_io_Nova_FileReader* reference);
 nova_Nova_Object* nova_io_Nova_FileReaderFunctionMap_functionMap_Nova_readBytes(nova_io_Nova_FileReaderFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_io_Nova_FileReader* reference);
 void nova_io_Nova_FileReaderFunctionMap_functionMap_Nova_open(nova_io_Nova_FileReaderFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_io_Nova_FileReader* reference);
 nova_Nova_String* nova_io_Nova_FileReaderFunctionMap_functionMap_Nova_readAllContents(nova_io_Nova_FileReaderFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_io_Nova_FileReader* reference);
 nova_Nova_String* nova_io_Nova_FileReaderFunctionMap_functionMap_Nova_readLine(nova_io_Nova_FileReaderFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_io_Nova_FileReader* reference);
+nova_Nova_String* nova_io_Nova_FileReaderFunctionMap_functionMap_Nova_readString(nova_io_Nova_FileReaderFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_io_Nova_FileReader* reference);
 char nova_io_Nova_FileReaderFunctionMap_functionMap_Nova_close(nova_io_Nova_FileReaderFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_io_Nova_FileReader* reference);
 void nova_io_Nova_FileReaderFunctionMap_Nova_super(nova_io_Nova_FileReaderFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+
+CCLASS_CLASS
+(
+	nova_io_Nova_FileReaderPropertyMap, 
+	
+	nova_io_FileReader_FileReaderPropertyMap_Extension_VTable* vtable;
+)
+
+void nova_io_Nova_FileReaderPropertyMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData);
+nova_io_Nova_FileReaderPropertyMap* nova_io_Nova_FileReaderPropertyMap_Nova_construct(nova_io_Nova_FileReaderPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+void nova_io_Nova_FileReaderPropertyMap_Nova_destroy(nova_io_Nova_FileReaderPropertyMap** this, nova_exception_Nova_ExceptionData* exceptionData);
+void nova_io_Nova_FileReaderPropertyMap_Nova_this(nova_io_Nova_FileReaderPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+char nova_io_Nova_FileReaderPropertyMap_functionMap_Nova_isOpen(nova_io_Nova_FileReaderPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_io_Nova_FileReader* reference);
+nova_io_Nova_File* nova_io_Nova_FileReaderPropertyMap_functionMap_Nova_file(nova_io_Nova_FileReaderPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_io_Nova_FileReader* reference);
+void nova_io_Nova_FileReaderPropertyMap_Nova_super(nova_io_Nova_FileReaderPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData);
 
 #endif

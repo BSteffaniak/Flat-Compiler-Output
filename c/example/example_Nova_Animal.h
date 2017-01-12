@@ -3,6 +3,7 @@
 
 typedef struct example_Nova_Animal example_Nova_Animal;
 typedef struct example_Nova_AnimalFunctionMap example_Nova_AnimalFunctionMap;
+typedef struct example_Nova_AnimalPropertyMap example_Nova_AnimalPropertyMap;
 
 
 #include <Nova.h>
@@ -39,6 +40,7 @@ typedef struct example_Nova_AnimalFunctionMap example_Nova_AnimalFunctionMap;
 #include <nova/nova_Nova_System.h>
 #include <nova/meta/nova_meta_Nova_Class.h>
 #include <nova/meta/nova_meta_Nova_FunctionMap.h>
+#include <nova/meta/nova_meta_Nova_PropertyMap.h>
 #include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <nova/NativeObject.h>
 
@@ -83,5 +85,18 @@ example_Nova_Animal* example_Nova_AnimalFunctionMap_virtualfunctionMapAnimal_Nov
 int example_Nova_AnimalFunctionMap_virtualfunctionMap_Nova_getNumLegs(example_Nova_AnimalFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, example_Nova_Animal* reference);
 int example_Nova_AnimalFunctionMap_virtualfunctionMap_Nova_getNumEyes(example_Nova_AnimalFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, example_Nova_Animal* reference);
 nova_Nova_String* example_Nova_AnimalFunctionMap_virtualfunctionMap_Nova_getDescription(example_Nova_AnimalFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, example_Nova_Animal* reference);
+
+CCLASS_CLASS
+(
+	example_Nova_AnimalPropertyMap, 
+	
+	example_Animal_AnimalPropertyMap_Extension_VTable* vtable;
+)
+
+void example_Nova_AnimalPropertyMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData);
+example_Nova_AnimalPropertyMap* example_Nova_AnimalPropertyMap_Nova_construct(example_Nova_AnimalPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+void example_Nova_AnimalPropertyMap_Nova_destroy(example_Nova_AnimalPropertyMap** this, nova_exception_Nova_ExceptionData* exceptionData);
+void example_Nova_AnimalPropertyMap_Nova_this(example_Nova_AnimalPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+void example_Nova_AnimalPropertyMap_Nova_super(example_Nova_AnimalPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData);
 
 #endif

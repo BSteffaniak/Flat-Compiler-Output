@@ -29,9 +29,11 @@
 #include <nova/nova_Nova_System.h>
 #include <nova/meta/nova_meta_Nova_Class.h>
 #include <nova/meta/nova_meta_Nova_FunctionMap.h>
+#include <nova/meta/nova_meta_Nova_PropertyMap.h>
 #include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <nova/datastruct/nova_datastruct_Nova_BinaryNode.h>
 #include <nova/datastruct/nova_datastruct_Nova_Comparable.h>
+#include <nova/datastruct/nova_datastruct_Nova_Tree.h>
 #include <nova/datastruct/nova_datastruct_Nova_Tree.h>
 #include <nova/datastruct/nova_datastruct_Nova_Tree.h>
 #include <nova/datastruct/nova_datastruct_Nova_Node.h>
@@ -163,6 +165,52 @@ nova_datastruct_Nova_BinaryTree* nova_datastruct_Nova_BinaryTreeFunctionMap_func
 }
 
 void nova_datastruct_Nova_BinaryTreeFunctionMap_Nova_super(nova_datastruct_Nova_BinaryTreeFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+}
+
+void nova_datastruct_Nova_BinaryTreePropertyMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData)
+{
+	{
+	}
+}
+
+nova_datastruct_Nova_BinaryTreePropertyMap* nova_datastruct_Nova_BinaryTreePropertyMap_Nova_construct(nova_datastruct_Nova_BinaryTreePropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+	CCLASS_NEW(nova_datastruct_Nova_BinaryTreePropertyMap, this,);
+	this->vtable = &nova_datastruct_BinaryTree_BinaryTreePropertyMap_Extension_VTable_val;
+	nova_Nova_Object_Nova_super((nova_Nova_Object*)this, exceptionData);
+	nova_meta_Nova_PropertyMap_Nova_super((nova_meta_Nova_PropertyMap*)this, exceptionData);
+	nova_datastruct_Nova_TreePropertyMap_Nova_super((nova_datastruct_Nova_TreePropertyMap*)this, exceptionData);
+	nova_datastruct_Nova_BinaryTreePropertyMap_Nova_super(this, exceptionData);
+	
+	{
+		nova_datastruct_Nova_BinaryTreePropertyMap_Nova_this(this, exceptionData);
+	}
+	
+	return this;
+}
+
+void nova_datastruct_Nova_BinaryTreePropertyMap_Nova_destroy(nova_datastruct_Nova_BinaryTreePropertyMap** this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+	if (!*this)
+	{
+		return;
+	}
+	
+	
+	NOVA_FREE(*this);
+}
+
+void nova_datastruct_Nova_BinaryTreePropertyMap_Nova_this(nova_datastruct_Nova_BinaryTreePropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+}
+
+nova_datastruct_Nova_BinaryNode* nova_datastruct_Nova_BinaryTreePropertyMap_functionMap_Nova_root(nova_datastruct_Nova_BinaryTreePropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_Nova_BinaryTree* reference)
+{
+	return nova_datastruct_Nova_BinaryTree_Accessorfunc_Nova_root(reference, exceptionData);
+}
+
+void nova_datastruct_Nova_BinaryTreePropertyMap_Nova_super(nova_datastruct_Nova_BinaryTreePropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
 }
 

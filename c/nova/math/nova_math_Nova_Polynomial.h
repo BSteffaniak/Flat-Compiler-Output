@@ -3,6 +3,7 @@
 
 typedef struct nova_math_Nova_Polynomial nova_math_Nova_Polynomial;
 typedef struct nova_math_Nova_PolynomialFunctionMap nova_math_Nova_PolynomialFunctionMap;
+typedef struct nova_math_Nova_PolynomialPropertyMap nova_math_Nova_PolynomialPropertyMap;
 
 
 #include <Nova.h>
@@ -39,6 +40,7 @@ typedef struct nova_math_Nova_PolynomialFunctionMap nova_math_Nova_PolynomialFun
 #include <nova/nova_Nova_System.h>
 #include <nova/meta/nova_meta_Nova_Class.h>
 #include <nova/meta/nova_meta_Nova_FunctionMap.h>
+#include <nova/meta/nova_meta_Nova_PropertyMap.h>
 #include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <nova/NativeObject.h>
 
@@ -71,5 +73,21 @@ void nova_math_Nova_PolynomialFunctionMap_Nova_destroy(nova_math_Nova_Polynomial
 void nova_math_Nova_PolynomialFunctionMap_Nova_this(nova_math_Nova_PolynomialFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
 nova_math_Nova_Polynomial* nova_math_Nova_PolynomialFunctionMap_functionMapPolynomialFunctionMap_Nova_construct(nova_math_Nova_PolynomialFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* polynomial);
 void nova_math_Nova_PolynomialFunctionMap_Nova_super(nova_math_Nova_PolynomialFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+
+CCLASS_CLASS
+(
+	nova_math_Nova_PolynomialPropertyMap, 
+	
+	nova_math_Polynomial_PolynomialPropertyMap_Extension_VTable* vtable;
+)
+
+void nova_math_Nova_PolynomialPropertyMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData);
+nova_math_Nova_PolynomialPropertyMap* nova_math_Nova_PolynomialPropertyMap_Nova_construct(nova_math_Nova_PolynomialPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+void nova_math_Nova_PolynomialPropertyMap_Nova_destroy(nova_math_Nova_PolynomialPropertyMap** this, nova_exception_Nova_ExceptionData* exceptionData);
+void nova_math_Nova_PolynomialPropertyMap_Nova_this(nova_math_Nova_PolynomialPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+nova_datastruct_list_Nova_DoubleArray* nova_math_Nova_PolynomialPropertyMap_functionMap_Nova_coefficients(nova_math_Nova_PolynomialPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_math_Nova_Polynomial* reference);
+nova_datastruct_list_Nova_DoubleArray* nova_math_Nova_PolynomialPropertyMap_functionMap_Nova_degrees(nova_math_Nova_PolynomialPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_math_Nova_Polynomial* reference);
+nova_datastruct_list_Nova_Array* nova_math_Nova_PolynomialPropertyMap_functionMap_Nova_signs(nova_math_Nova_PolynomialPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_math_Nova_Polynomial* reference);
+void nova_math_Nova_PolynomialPropertyMap_Nova_super(nova_math_Nova_PolynomialPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData);
 
 #endif

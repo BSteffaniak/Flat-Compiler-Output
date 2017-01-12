@@ -3,6 +3,7 @@
 
 typedef struct spectra_Nova_InvalidParseException spectra_Nova_InvalidParseException;
 typedef struct spectra_Nova_InvalidParseExceptionFunctionMap spectra_Nova_InvalidParseExceptionFunctionMap;
+typedef struct spectra_Nova_InvalidParseExceptionPropertyMap spectra_Nova_InvalidParseExceptionPropertyMap;
 
 
 #include <Nova.h>
@@ -39,8 +40,10 @@ typedef struct spectra_Nova_InvalidParseExceptionFunctionMap spectra_Nova_Invali
 #include <nova/nova_Nova_System.h>
 #include <nova/meta/nova_meta_Nova_Class.h>
 #include <nova/meta/nova_meta_Nova_FunctionMap.h>
+#include <nova/meta/nova_meta_Nova_PropertyMap.h>
 #include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <spectra/tree/nodes/spectra_tree_nodes_Nova_Node.h>
+#include <nova/exception/nova_exception_Nova_Exception.h>
 #include <nova/exception/nova_exception_Nova_Exception.h>
 #include <nova/NativeObject.h>
 
@@ -72,5 +75,19 @@ void spectra_Nova_InvalidParseExceptionFunctionMap_Nova_destroy(spectra_Nova_Inv
 void spectra_Nova_InvalidParseExceptionFunctionMap_Nova_this(spectra_Nova_InvalidParseExceptionFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
 spectra_Nova_InvalidParseException* spectra_Nova_InvalidParseExceptionFunctionMap_functionMapInvalidParseExceptionFunctionMap_Nova_construct(spectra_Nova_InvalidParseExceptionFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* message, spectra_tree_nodes_Nova_Node* node);
 void spectra_Nova_InvalidParseExceptionFunctionMap_Nova_super(spectra_Nova_InvalidParseExceptionFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+
+CCLASS_CLASS
+(
+	spectra_Nova_InvalidParseExceptionPropertyMap, 
+	
+	spectra_InvalidParseException_InvalidParseExceptionPropertyMap_Extension_VTable* vtable;
+)
+
+void spectra_Nova_InvalidParseExceptionPropertyMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData);
+spectra_Nova_InvalidParseExceptionPropertyMap* spectra_Nova_InvalidParseExceptionPropertyMap_Nova_construct(spectra_Nova_InvalidParseExceptionPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+void spectra_Nova_InvalidParseExceptionPropertyMap_Nova_destroy(spectra_Nova_InvalidParseExceptionPropertyMap** this, nova_exception_Nova_ExceptionData* exceptionData);
+void spectra_Nova_InvalidParseExceptionPropertyMap_Nova_this(spectra_Nova_InvalidParseExceptionPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+spectra_tree_nodes_Nova_Node* spectra_Nova_InvalidParseExceptionPropertyMap_functionMap_Nova_node(spectra_Nova_InvalidParseExceptionPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData, spectra_Nova_InvalidParseException* reference);
+void spectra_Nova_InvalidParseExceptionPropertyMap_Nova_super(spectra_Nova_InvalidParseExceptionPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData);
 
 #endif

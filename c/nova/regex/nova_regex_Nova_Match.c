@@ -29,6 +29,7 @@
 #include <nova/nova_Nova_System.h>
 #include <nova/meta/nova_meta_Nova_Class.h>
 #include <nova/meta/nova_meta_Nova_FunctionMap.h>
+#include <nova/meta/nova_meta_Nova_PropertyMap.h>
 #include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <nova/NativeObject.h>
 
@@ -149,6 +150,71 @@ nova_Nova_String* nova_regex_Nova_MatchFunctionMap_functionMap_Nova_toString(nov
 }
 
 void nova_regex_Nova_MatchFunctionMap_Nova_super(nova_regex_Nova_MatchFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+}
+
+void nova_regex_Nova_MatchPropertyMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData)
+{
+	{
+	}
+}
+
+nova_regex_Nova_MatchPropertyMap* nova_regex_Nova_MatchPropertyMap_Nova_construct(nova_regex_Nova_MatchPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+	CCLASS_NEW(nova_regex_Nova_MatchPropertyMap, this,);
+	this->vtable = &nova_regex_Match_MatchPropertyMap_Extension_VTable_val;
+	nova_Nova_Object_Nova_super((nova_Nova_Object*)this, exceptionData);
+	nova_meta_Nova_PropertyMap_Nova_super((nova_meta_Nova_PropertyMap*)this, exceptionData);
+	nova_regex_Nova_MatchPropertyMap_Nova_super(this, exceptionData);
+	
+	{
+		nova_regex_Nova_MatchPropertyMap_Nova_this(this, exceptionData);
+	}
+	
+	return this;
+}
+
+void nova_regex_Nova_MatchPropertyMap_Nova_destroy(nova_regex_Nova_MatchPropertyMap** this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+	if (!*this)
+	{
+		return;
+	}
+	
+	
+	NOVA_FREE(*this);
+}
+
+void nova_regex_Nova_MatchPropertyMap_Nova_this(nova_regex_Nova_MatchPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+}
+
+int nova_regex_Nova_MatchPropertyMap_functionMap_Nova_count(nova_regex_Nova_MatchPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_regex_Nova_Match* reference)
+{
+	return nova_regex_Nova_Match_Accessor_Nova_count(reference, exceptionData);
+}
+
+nova_Nova_String* nova_regex_Nova_MatchPropertyMap_functionMap_Nova_match(nova_regex_Nova_MatchPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_regex_Nova_Match* reference)
+{
+	return nova_regex_Nova_Match_Accessor_Nova_match(reference, exceptionData);
+}
+
+nova_Nova_String* nova_regex_Nova_MatchPropertyMap_functionMap_Nova_source(nova_regex_Nova_MatchPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_regex_Nova_Match* reference)
+{
+	return reference->nova_regex_Nova_Match_Nova_source;
+}
+
+int nova_regex_Nova_MatchPropertyMap_functionMap_Nova_start(nova_regex_Nova_MatchPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_regex_Nova_Match* reference)
+{
+	return reference->nova_regex_Nova_Match_Nova_start;
+}
+
+int nova_regex_Nova_MatchPropertyMap_functionMap_Nova_end(nova_regex_Nova_MatchPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_regex_Nova_Match* reference)
+{
+	return reference->nova_regex_Nova_Match_Nova_end;
+}
+
+void nova_regex_Nova_MatchPropertyMap_Nova_super(nova_regex_Nova_MatchPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
 }
 

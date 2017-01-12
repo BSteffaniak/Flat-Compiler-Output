@@ -3,6 +3,7 @@
 
 typedef struct nova_web_svg_Nova_SvgMainComponent nova_web_svg_Nova_SvgMainComponent;
 typedef struct nova_web_svg_Nova_SvgMainComponentFunctionMap nova_web_svg_Nova_SvgMainComponentFunctionMap;
+typedef struct nova_web_svg_Nova_SvgMainComponentPropertyMap nova_web_svg_Nova_SvgMainComponentPropertyMap;
 
 
 #include <Nova.h>
@@ -39,10 +40,12 @@ typedef struct nova_web_svg_Nova_SvgMainComponentFunctionMap nova_web_svg_Nova_S
 #include <nova/nova_Nova_System.h>
 #include <nova/meta/nova_meta_Nova_Class.h>
 #include <nova/meta/nova_meta_Nova_FunctionMap.h>
+#include <nova/meta/nova_meta_Nova_PropertyMap.h>
 #include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <nova/io/nova_io_Nova_FileWriter.h>
 #include <nova/web/svg/nova_web_svg_Nova_SvgComponent.h>
 #include <nova/web/svg/nova_web_svg_Nova_SvgComponentList.h>
+#include <nova/web/svg/nova_web_svg_Nova_SvgComponent.h>
 #include <nova/web/svg/nova_web_svg_Nova_SvgComponent.h>
 #include <nova/NativeObject.h>
 
@@ -75,5 +78,18 @@ void nova_web_svg_Nova_SvgMainComponentFunctionMap_Nova_this(nova_web_svg_Nova_S
 nova_web_svg_Nova_SvgMainComponent* nova_web_svg_Nova_SvgMainComponentFunctionMap_functionMapSvgMainComponentFunctionMap_Nova_construct(nova_web_svg_Nova_SvgMainComponentFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
 void nova_web_svg_Nova_SvgMainComponentFunctionMap_functionMap_Nova_generateOutput(nova_web_svg_Nova_SvgMainComponentFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_web_svg_Nova_SvgMainComponent* reference, nova_io_Nova_FileWriter* writer);
 void nova_web_svg_Nova_SvgMainComponentFunctionMap_Nova_super(nova_web_svg_Nova_SvgMainComponentFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+
+CCLASS_CLASS
+(
+	nova_web_svg_Nova_SvgMainComponentPropertyMap, 
+	
+	nova_web_svg_SvgMainComponent_SvgMainComponentPropertyMap_Extension_VTable* vtable;
+)
+
+void nova_web_svg_Nova_SvgMainComponentPropertyMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData);
+nova_web_svg_Nova_SvgMainComponentPropertyMap* nova_web_svg_Nova_SvgMainComponentPropertyMap_Nova_construct(nova_web_svg_Nova_SvgMainComponentPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+void nova_web_svg_Nova_SvgMainComponentPropertyMap_Nova_destroy(nova_web_svg_Nova_SvgMainComponentPropertyMap** this, nova_exception_Nova_ExceptionData* exceptionData);
+void nova_web_svg_Nova_SvgMainComponentPropertyMap_Nova_this(nova_web_svg_Nova_SvgMainComponentPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+void nova_web_svg_Nova_SvgMainComponentPropertyMap_Nova_super(nova_web_svg_Nova_SvgMainComponentPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData);
 
 #endif

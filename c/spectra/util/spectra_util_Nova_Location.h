@@ -3,6 +3,7 @@
 
 typedef struct spectra_util_Nova_Location spectra_util_Nova_Location;
 typedef struct spectra_util_Nova_LocationFunctionMap spectra_util_Nova_LocationFunctionMap;
+typedef struct spectra_util_Nova_LocationPropertyMap spectra_util_Nova_LocationPropertyMap;
 
 
 #include <Nova.h>
@@ -39,6 +40,7 @@ typedef struct spectra_util_Nova_LocationFunctionMap spectra_util_Nova_LocationF
 #include <nova/nova_Nova_System.h>
 #include <nova/meta/nova_meta_Nova_Class.h>
 #include <nova/meta/nova_meta_Nova_FunctionMap.h>
+#include <nova/meta/nova_meta_Nova_PropertyMap.h>
 #include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <nova/datastruct/nova_datastruct_Nova_Bounds.h>
 #include <nova/NativeObject.h>
@@ -111,5 +113,22 @@ char spectra_util_Nova_LocationFunctionMap_functionMap_Nova_isValid(spectra_util
 spectra_util_Nova_Location* spectra_util_Nova_LocationFunctionMap_functionMap_Nova_asNew(spectra_util_Nova_LocationFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, spectra_util_Nova_Location* reference);
 nova_Nova_String* spectra_util_Nova_LocationFunctionMap_functionMap_Nova_toString(spectra_util_Nova_LocationFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, spectra_util_Nova_Location* reference);
 void spectra_util_Nova_LocationFunctionMap_Nova_super(spectra_util_Nova_LocationFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+
+CCLASS_CLASS
+(
+	spectra_util_Nova_LocationPropertyMap, 
+	
+	spectra_util_Location_LocationPropertyMap_Extension_VTable* vtable;
+)
+
+void spectra_util_Nova_LocationPropertyMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData);
+spectra_util_Nova_LocationPropertyMap* spectra_util_Nova_LocationPropertyMap_Nova_construct(spectra_util_Nova_LocationPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+void spectra_util_Nova_LocationPropertyMap_Nova_destroy(spectra_util_Nova_LocationPropertyMap** this, nova_exception_Nova_ExceptionData* exceptionData);
+void spectra_util_Nova_LocationPropertyMap_Nova_this(spectra_util_Nova_LocationPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+int spectra_util_Nova_LocationPropertyMap_functionMap_Nova_lineNumber(spectra_util_Nova_LocationPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData, spectra_util_Nova_Location* reference);
+int spectra_util_Nova_LocationPropertyMap_functionMap_Nova_offset(spectra_util_Nova_LocationPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData, spectra_util_Nova_Location* reference);
+nova_datastruct_Nova_Bounds* spectra_util_Nova_LocationPropertyMap_functionMap_Nova_bounds(spectra_util_Nova_LocationPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData, spectra_util_Nova_Location* reference);
+spectra_util_Nova_Location* spectra_util_Nova_LocationPropertyMap_functionMap_static_Nova_INVALID(spectra_util_Nova_LocationPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+void spectra_util_Nova_LocationPropertyMap_Nova_super(spectra_util_Nova_LocationPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData);
 
 #endif

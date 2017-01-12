@@ -3,6 +3,7 @@
 
 typedef struct example_network_Nova_ClientDemo example_network_Nova_ClientDemo;
 typedef struct example_network_Nova_ClientDemoFunctionMap example_network_Nova_ClientDemoFunctionMap;
+typedef struct example_network_Nova_ClientDemoPropertyMap example_network_Nova_ClientDemoPropertyMap;
 
 
 #include <Nova.h>
@@ -39,6 +40,7 @@ typedef struct example_network_Nova_ClientDemoFunctionMap example_network_Nova_C
 #include <nova/nova_Nova_System.h>
 #include <nova/meta/nova_meta_Nova_Class.h>
 #include <nova/meta/nova_meta_Nova_FunctionMap.h>
+#include <nova/meta/nova_meta_Nova_PropertyMap.h>
 #include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <nova/network/nova_network_Nova_ClientSocket.h>
 #include <example/network/example_network_Nova_ConnectionThread.h>
@@ -72,5 +74,18 @@ void example_network_Nova_ClientDemoFunctionMap_Nova_this(example_network_Nova_C
 example_network_Nova_ClientDemo* example_network_Nova_ClientDemoFunctionMap_functionMapClientDemoFunctionMap_Nova_construct(example_network_Nova_ClientDemoFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
 void example_network_Nova_ClientDemoFunctionMap_functionMap_static_Nova_main(example_network_Nova_ClientDemoFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_list_Nova_Array* args);
 void example_network_Nova_ClientDemoFunctionMap_Nova_super(example_network_Nova_ClientDemoFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+
+CCLASS_CLASS
+(
+	example_network_Nova_ClientDemoPropertyMap, 
+	
+	example_network_ClientDemo_ClientDemoPropertyMap_Extension_VTable* vtable;
+)
+
+void example_network_Nova_ClientDemoPropertyMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData);
+example_network_Nova_ClientDemoPropertyMap* example_network_Nova_ClientDemoPropertyMap_Nova_construct(example_network_Nova_ClientDemoPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+void example_network_Nova_ClientDemoPropertyMap_Nova_destroy(example_network_Nova_ClientDemoPropertyMap** this, nova_exception_Nova_ExceptionData* exceptionData);
+void example_network_Nova_ClientDemoPropertyMap_Nova_this(example_network_Nova_ClientDemoPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+void example_network_Nova_ClientDemoPropertyMap_Nova_super(example_network_Nova_ClientDemoPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData);
 
 #endif

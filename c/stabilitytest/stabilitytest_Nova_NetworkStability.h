@@ -3,6 +3,7 @@
 
 typedef struct stabilitytest_Nova_NetworkStability stabilitytest_Nova_NetworkStability;
 typedef struct stabilitytest_Nova_NetworkStabilityFunctionMap stabilitytest_Nova_NetworkStabilityFunctionMap;
+typedef struct stabilitytest_Nova_NetworkStabilityPropertyMap stabilitytest_Nova_NetworkStabilityPropertyMap;
 
 
 #include <Nova.h>
@@ -39,11 +40,13 @@ typedef struct stabilitytest_Nova_NetworkStabilityFunctionMap stabilitytest_Nova
 #include <nova/nova_Nova_System.h>
 #include <nova/meta/nova_meta_Nova_Class.h>
 #include <nova/meta/nova_meta_Nova_FunctionMap.h>
+#include <nova/meta/nova_meta_Nova_PropertyMap.h>
 #include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <nova/network/nova_network_Nova_ServerSocket.h>
 #include <nova/network/nova_network_Nova_ConnectionSocket.h>
 #include <stabilitytest/stabilitytest_Nova_ClientThread.h>
 #include <stabilitytest/stabilitytest_Nova_StabilityTest.h>
+#include <stabilitytest/stabilitytest_Nova_StabilityTestCase.h>
 #include <stabilitytest/stabilitytest_Nova_StabilityTestCase.h>
 #include <stabilitytest/stabilitytest_Nova_StabilityTestCase.h>
 #include <nova/NativeObject.h>
@@ -78,5 +81,19 @@ void stabilitytest_Nova_NetworkStabilityFunctionMap_Nova_this(stabilitytest_Nova
 stabilitytest_Nova_NetworkStability* stabilitytest_Nova_NetworkStabilityFunctionMap_functionMapNetworkStabilityFunctionMap_Nova_construct(stabilitytest_Nova_NetworkStabilityFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, stabilitytest_Nova_StabilityTest* program);
 void stabilitytest_Nova_NetworkStabilityFunctionMap_functionMap_Nova_test(stabilitytest_Nova_NetworkStabilityFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, stabilitytest_Nova_NetworkStability* reference);
 void stabilitytest_Nova_NetworkStabilityFunctionMap_Nova_super(stabilitytest_Nova_NetworkStabilityFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+
+CCLASS_CLASS
+(
+	stabilitytest_Nova_NetworkStabilityPropertyMap, 
+	
+	stabilitytest_NetworkStability_NetworkStabilityPropertyMap_Extension_VTable* vtable;
+)
+
+void stabilitytest_Nova_NetworkStabilityPropertyMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData);
+stabilitytest_Nova_NetworkStabilityPropertyMap* stabilitytest_Nova_NetworkStabilityPropertyMap_Nova_construct(stabilitytest_Nova_NetworkStabilityPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+void stabilitytest_Nova_NetworkStabilityPropertyMap_Nova_destroy(stabilitytest_Nova_NetworkStabilityPropertyMap** this, nova_exception_Nova_ExceptionData* exceptionData);
+void stabilitytest_Nova_NetworkStabilityPropertyMap_Nova_this(stabilitytest_Nova_NetworkStabilityPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+nova_Nova_String* stabilitytest_Nova_NetworkStabilityPropertyMap_functionMap_static_Nova_received(stabilitytest_Nova_NetworkStabilityPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+void stabilitytest_Nova_NetworkStabilityPropertyMap_Nova_super(stabilitytest_Nova_NetworkStabilityPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData);
 
 #endif

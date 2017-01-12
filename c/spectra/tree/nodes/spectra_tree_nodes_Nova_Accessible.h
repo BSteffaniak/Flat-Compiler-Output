@@ -3,6 +3,7 @@
 
 typedef struct spectra_tree_nodes_Nova_Accessible spectra_tree_nodes_Nova_Accessible;
 typedef struct spectra_tree_nodes_Nova_AccessibleFunctionMap spectra_tree_nodes_Nova_AccessibleFunctionMap;
+typedef struct spectra_tree_nodes_Nova_AccessiblePropertyMap spectra_tree_nodes_Nova_AccessiblePropertyMap;
 
 
 #include <Nova.h>
@@ -39,11 +40,13 @@ typedef struct spectra_tree_nodes_Nova_AccessibleFunctionMap spectra_tree_nodes_
 #include <nova/nova_Nova_System.h>
 #include <nova/meta/nova_meta_Nova_Class.h>
 #include <nova/meta/nova_meta_Nova_FunctionMap.h>
+#include <nova/meta/nova_meta_Nova_PropertyMap.h>
 #include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <spectra/spectra_Nova_InvalidParseException.h>
 #include <spectra/util/spectra_util_Nova_SyntaxUtils.h>
 #include <spectra/tree/nodes/spectra_tree_nodes_Nova_ClassDeclaration.h>
 #include <spectra/tree/nodes/spectra_tree_nodes_Nova_Node.h>
+#include <spectra/tree/nodes/spectra_tree_nodes_Nova_Value.h>
 #include <spectra/tree/nodes/spectra_tree_nodes_Nova_Value.h>
 #include <spectra/tree/nodes/spectra_tree_nodes_Nova_Value.h>
 #include <nova/datastruct/nova_datastruct_Nova_Tuple2.h>
@@ -71,6 +74,7 @@ typedef struct spectra_tree_nodes_Nova_AccessibleFunctionMap spectra_tree_nodes_
 #include <spectra/tree/nodes/spectra_tree_nodes_Nova_StaticClassReference.h>
 #include <spectra/tree/nodes/spectra_tree_nodes_Nova_Type.h>
 #include <spectra/tree/nodes/spectra_tree_nodes_Nova_Node.h>
+#include <spectra/tree/nodes/spectra_tree_nodes_Nova_Node.h>
 #include <spectra/spectra_Nova_SyntaxErrorException.h>
 #include <spectra/error/spectra_error_Nova_UnimplementedOperationException.h>
 #include <spectra/tree/nodes/annotations/spectra_tree_nodes_annotations_Nova_Annotatable.h>
@@ -83,6 +87,7 @@ typedef struct spectra_tree_nodes_Nova_AccessibleFunctionMap spectra_tree_nodes_
 #include <spectra/tree/nodes/spectra_tree_nodes_Nova_Program.h>
 #include <spectra/tree/nodes/spectra_tree_nodes_Nova_Scope.h>
 #include <spectra/tree/nodes/spectra_tree_nodes_Nova_ValidationResult.h>
+#include <spectra/tree/nodes/annotations/spectra_tree_nodes_annotations_Nova_Annotatable.h>
 #include <spectra/tree/nodes/annotations/spectra_tree_nodes_annotations_Nova_Annotatable.h>
 #include <nova/NativeObject.h>
 
@@ -152,5 +157,27 @@ spectra_tree_nodes_Nova_Node* spectra_tree_nodes_Nova_AccessibleFunctionMap_func
 spectra_tree_nodes_Nova_Accessible* spectra_tree_nodes_Nova_AccessibleFunctionMap_functionMap0_Nova_cloneTo(spectra_tree_nodes_Nova_AccessibleFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, spectra_tree_nodes_Nova_Accessible* reference, spectra_tree_nodes_Nova_Accessible* other);
 nova_Nova_String* spectra_tree_nodes_Nova_AccessibleFunctionMap_functionMap_Nova_writeAccessedNodes(spectra_tree_nodes_Nova_AccessibleFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, spectra_tree_nodes_Nova_Accessible* reference);
 void spectra_tree_nodes_Nova_AccessibleFunctionMap_Nova_super(spectra_tree_nodes_Nova_AccessibleFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+
+CCLASS_CLASS
+(
+	spectra_tree_nodes_Nova_AccessiblePropertyMap, 
+	
+	spectra_tree_nodes_Accessible_AccessiblePropertyMap_Extension_VTable* vtable;
+)
+
+void spectra_tree_nodes_Nova_AccessiblePropertyMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData);
+spectra_tree_nodes_Nova_AccessiblePropertyMap* spectra_tree_nodes_Nova_AccessiblePropertyMap_Nova_construct(spectra_tree_nodes_Nova_AccessiblePropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+void spectra_tree_nodes_Nova_AccessiblePropertyMap_Nova_destroy(spectra_tree_nodes_Nova_AccessiblePropertyMap** this, nova_exception_Nova_ExceptionData* exceptionData);
+void spectra_tree_nodes_Nova_AccessiblePropertyMap_Nova_this(spectra_tree_nodes_Nova_AccessiblePropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+char spectra_tree_nodes_Nova_AccessiblePropertyMap_functionMap0_Nova_safeNavigation(spectra_tree_nodes_Nova_AccessiblePropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData, spectra_tree_nodes_Nova_Accessible* reference);
+spectra_tree_nodes_Nova_Accessible* spectra_tree_nodes_Nova_AccessiblePropertyMap_functionMap0_Nova_accessedNode(spectra_tree_nodes_Nova_AccessiblePropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData, spectra_tree_nodes_Nova_Accessible* reference);
+spectra_tree_nodes_Nova_Accessible* spectra_tree_nodes_Nova_AccessiblePropertyMap_functionMap_Nova_returnedNode(spectra_tree_nodes_Nova_AccessiblePropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData, spectra_tree_nodes_Nova_Accessible* reference);
+spectra_tree_nodes_Nova_Accessible* spectra_tree_nodes_Nova_AccessiblePropertyMap_functionMap_Nova_accessingNode(spectra_tree_nodes_Nova_AccessiblePropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData, spectra_tree_nodes_Nova_Accessible* reference);
+spectra_tree_nodes_Nova_ClassDeclaration* spectra_tree_nodes_Nova_AccessiblePropertyMap_functionMap_Nova_referenceClass(spectra_tree_nodes_Nova_AccessiblePropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData, spectra_tree_nodes_Nova_Accessible* reference);
+char spectra_tree_nodes_Nova_AccessiblePropertyMap_functionMap_Nova_isAccessed(spectra_tree_nodes_Nova_AccessiblePropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData, spectra_tree_nodes_Nova_Accessible* reference);
+char spectra_tree_nodes_Nova_AccessiblePropertyMap_functionMap_Nova_doesAccess(spectra_tree_nodes_Nova_AccessiblePropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData, spectra_tree_nodes_Nova_Accessible* reference);
+void spectra_tree_nodes_Nova_AccessiblePropertyMap_Nova_super(spectra_tree_nodes_Nova_AccessiblePropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+char spectra_tree_nodes_Nova_AccessiblePropertyMap_virtualfunctionMap0_Nova_safeNavigation(spectra_tree_nodes_Nova_AccessiblePropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData, spectra_tree_nodes_Nova_Accessible* reference);
+spectra_tree_nodes_Nova_Accessible* spectra_tree_nodes_Nova_AccessiblePropertyMap_virtualfunctionMap0_Nova_accessedNode(spectra_tree_nodes_Nova_AccessiblePropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData, spectra_tree_nodes_Nova_Accessible* reference);
 
 #endif

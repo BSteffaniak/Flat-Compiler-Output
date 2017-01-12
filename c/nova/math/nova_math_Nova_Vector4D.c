@@ -29,7 +29,9 @@
 #include <nova/nova_Nova_System.h>
 #include <nova/meta/nova_meta_Nova_Class.h>
 #include <nova/meta/nova_meta_Nova_FunctionMap.h>
+#include <nova/meta/nova_meta_Nova_PropertyMap.h>
 #include <nova/regex/nova_regex_Nova_Pattern.h>
+#include <nova/math/nova_math_Nova_Vector.h>
 #include <nova/math/nova_math_Nova_Vector.h>
 #include <nova/math/nova_math_Nova_Vector.h>
 #include <nova/NativeObject.h>
@@ -193,6 +195,67 @@ nova_math_Nova_Vector4D* nova_math_Nova_Vector4DFunctionMap_functionMapVector4DF
 }
 
 void nova_math_Nova_Vector4DFunctionMap_Nova_super(nova_math_Nova_Vector4DFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+}
+
+void nova_math_Nova_Vector4DPropertyMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData)
+{
+	{
+	}
+}
+
+nova_math_Nova_Vector4DPropertyMap* nova_math_Nova_Vector4DPropertyMap_Nova_construct(nova_math_Nova_Vector4DPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+	CCLASS_NEW(nova_math_Nova_Vector4DPropertyMap, this,);
+	this->vtable = &nova_math_Vector4D_Vector4DPropertyMap_Extension_VTable_val;
+	nova_Nova_Object_Nova_super((nova_Nova_Object*)this, exceptionData);
+	nova_meta_Nova_PropertyMap_Nova_super((nova_meta_Nova_PropertyMap*)this, exceptionData);
+	nova_math_Nova_VectorPropertyMap_Nova_super((nova_math_Nova_VectorPropertyMap*)this, exceptionData);
+	nova_math_Nova_Vector4DPropertyMap_Nova_super(this, exceptionData);
+	
+	{
+		nova_math_Nova_Vector4DPropertyMap_Nova_this(this, exceptionData);
+	}
+	
+	return this;
+}
+
+void nova_math_Nova_Vector4DPropertyMap_Nova_destroy(nova_math_Nova_Vector4DPropertyMap** this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+	if (!*this)
+	{
+		return;
+	}
+	
+	
+	NOVA_FREE(*this);
+}
+
+void nova_math_Nova_Vector4DPropertyMap_Nova_this(nova_math_Nova_Vector4DPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+}
+
+double nova_math_Nova_Vector4DPropertyMap_functionMap_Nova_x(nova_math_Nova_Vector4DPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_math_Nova_Vector4D* reference)
+{
+	return nova_math_Nova_Vector4D_Accessor_Nova_x(reference, exceptionData);
+}
+
+double nova_math_Nova_Vector4DPropertyMap_functionMap_Nova_y(nova_math_Nova_Vector4DPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_math_Nova_Vector4D* reference)
+{
+	return nova_math_Nova_Vector4D_Accessor_Nova_y(reference, exceptionData);
+}
+
+double nova_math_Nova_Vector4DPropertyMap_functionMap_Nova_z(nova_math_Nova_Vector4DPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_math_Nova_Vector4D* reference)
+{
+	return nova_math_Nova_Vector4D_Accessor_Nova_z(reference, exceptionData);
+}
+
+double nova_math_Nova_Vector4DPropertyMap_functionMap_Nova_w(nova_math_Nova_Vector4DPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_math_Nova_Vector4D* reference)
+{
+	return nova_math_Nova_Vector4D_Accessor_Nova_w(reference, exceptionData);
+}
+
+void nova_math_Nova_Vector4DPropertyMap_Nova_super(nova_math_Nova_Vector4DPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
 }
 

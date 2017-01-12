@@ -3,6 +3,7 @@
 
 typedef struct spectra_tree_nodes_Nova_ArrayType spectra_tree_nodes_Nova_ArrayType;
 typedef struct spectra_tree_nodes_Nova_ArrayTypeFunctionMap spectra_tree_nodes_Nova_ArrayTypeFunctionMap;
+typedef struct spectra_tree_nodes_Nova_ArrayTypePropertyMap spectra_tree_nodes_Nova_ArrayTypePropertyMap;
 
 
 #include <Nova.h>
@@ -39,10 +40,12 @@ typedef struct spectra_tree_nodes_Nova_ArrayTypeFunctionMap spectra_tree_nodes_N
 #include <nova/nova_Nova_System.h>
 #include <nova/meta/nova_meta_Nova_Class.h>
 #include <nova/meta/nova_meta_Nova_FunctionMap.h>
+#include <nova/meta/nova_meta_Nova_PropertyMap.h>
 #include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <spectra/spectra_Nova_InvalidParseException.h>
 #include <spectra/util/spectra_util_Nova_Location.h>
 #include <spectra/tree/nodes/spectra_tree_nodes_Nova_Node.h>
+#include <spectra/tree/nodes/spectra_tree_nodes_Nova_Type.h>
 #include <spectra/tree/nodes/spectra_tree_nodes_Nova_Type.h>
 #include <spectra/tree/nodes/spectra_tree_nodes_Nova_Type.h>
 #include <spectra/tree/nodes/generics/spectra_tree_nodes_generics_Nova_GenericType.h>
@@ -97,5 +100,22 @@ nova_Nova_String* spectra_tree_nodes_Nova_ArrayTypeFunctionMap_functionMap_Nova_
 nova_Nova_String* spectra_tree_nodes_Nova_ArrayTypeFunctionMap_functionMap_Nova_writeNova(spectra_tree_nodes_Nova_ArrayTypeFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, spectra_tree_nodes_Nova_ArrayType* reference);
 spectra_tree_nodes_Nova_ArrayType* spectra_tree_nodes_Nova_ArrayTypeFunctionMap_functionMap_Nova_cloneTo(spectra_tree_nodes_Nova_ArrayTypeFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, spectra_tree_nodes_Nova_ArrayType* reference, spectra_tree_nodes_Nova_ArrayType* other);
 void spectra_tree_nodes_Nova_ArrayTypeFunctionMap_Nova_super(spectra_tree_nodes_Nova_ArrayTypeFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+
+CCLASS_CLASS
+(
+	spectra_tree_nodes_Nova_ArrayTypePropertyMap, 
+	
+	spectra_tree_nodes_ArrayType_ArrayTypePropertyMap_Extension_VTable* vtable;
+)
+
+void spectra_tree_nodes_Nova_ArrayTypePropertyMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData);
+spectra_tree_nodes_Nova_ArrayTypePropertyMap* spectra_tree_nodes_Nova_ArrayTypePropertyMap_Nova_construct(spectra_tree_nodes_Nova_ArrayTypePropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+void spectra_tree_nodes_Nova_ArrayTypePropertyMap_Nova_destroy(spectra_tree_nodes_Nova_ArrayTypePropertyMap** this, nova_exception_Nova_ExceptionData* exceptionData);
+void spectra_tree_nodes_Nova_ArrayTypePropertyMap_Nova_this(spectra_tree_nodes_Nova_ArrayTypePropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+spectra_tree_nodes_Nova_Type* spectra_tree_nodes_Nova_ArrayTypePropertyMap_functionMap_Nova_type(spectra_tree_nodes_Nova_ArrayTypePropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData, spectra_tree_nodes_Nova_ArrayType* reference);
+int spectra_tree_nodes_Nova_ArrayTypePropertyMap_functionMap_Nova_arrayDimensions(spectra_tree_nodes_Nova_ArrayTypePropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData, spectra_tree_nodes_Nova_ArrayType* reference);
+char spectra_tree_nodes_Nova_ArrayTypePropertyMap_functionMap_Nova_isGeneric(spectra_tree_nodes_Nova_ArrayTypePropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData, spectra_tree_nodes_Nova_ArrayType* reference);
+char spectra_tree_nodes_Nova_ArrayTypePropertyMap_functionMap_Nova_isPrimitiveType(spectra_tree_nodes_Nova_ArrayTypePropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData, spectra_tree_nodes_Nova_ArrayType* reference);
+void spectra_tree_nodes_Nova_ArrayTypePropertyMap_Nova_super(spectra_tree_nodes_Nova_ArrayTypePropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData);
 
 #endif

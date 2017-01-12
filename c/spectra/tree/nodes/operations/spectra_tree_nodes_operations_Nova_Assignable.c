@@ -29,6 +29,7 @@
 #include <nova/nova_Nova_System.h>
 #include <nova/meta/nova_meta_Nova_Class.h>
 #include <nova/meta/nova_meta_Nova_FunctionMap.h>
+#include <nova/meta/nova_meta_Nova_PropertyMap.h>
 #include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <spectra/tree/nodes/spectra_tree_nodes_Nova_Value.h>
 #include <spectra/tree/nodes/variables/spectra_tree_nodes_variables_Nova_VariableDeclaration.h>
@@ -108,5 +109,45 @@ void spectra_tree_nodes_operations_Nova_AssignableFunctionMap_Nova_super(spectra
 void spectra_tree_nodes_operations_Nova_AssignableFunctionMap_virtualfunctionMap0_Nova_onAssigned(spectra_tree_nodes_operations_Nova_AssignableFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, spectra_tree_nodes_operations_Nova_Assignable* reference, spectra_tree_nodes_Nova_Value* value)
 {
 	this->vtable->itable.spectra_tree_nodes_operations_Nova_AssignableFunctionMap_virtualfunctionMap0_Nova_onAssigned(this, exceptionData, reference, value);
+}
+
+void spectra_tree_nodes_operations_Nova_AssignablePropertyMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData)
+{
+	{
+	}
+}
+
+spectra_tree_nodes_operations_Nova_AssignablePropertyMap* spectra_tree_nodes_operations_Nova_AssignablePropertyMap_Nova_construct(spectra_tree_nodes_operations_Nova_AssignablePropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+	CCLASS_NEW(spectra_tree_nodes_operations_Nova_AssignablePropertyMap, this,);
+	this->vtable = &spectra_tree_nodes_operations_Assignable_AssignablePropertyMap_Extension_VTable_val;
+	nova_Nova_Object_Nova_super((nova_Nova_Object*)this, exceptionData);
+	nova_meta_Nova_PropertyMap_Nova_super((nova_meta_Nova_PropertyMap*)this, exceptionData);
+	spectra_tree_nodes_operations_Nova_AssignablePropertyMap_Nova_super(this, exceptionData);
+	
+	{
+		spectra_tree_nodes_operations_Nova_AssignablePropertyMap_Nova_this(this, exceptionData);
+	}
+	
+	return this;
+}
+
+void spectra_tree_nodes_operations_Nova_AssignablePropertyMap_Nova_destroy(spectra_tree_nodes_operations_Nova_AssignablePropertyMap** this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+	if (!*this)
+	{
+		return;
+	}
+	
+	
+	NOVA_FREE(*this);
+}
+
+void spectra_tree_nodes_operations_Nova_AssignablePropertyMap_Nova_this(spectra_tree_nodes_operations_Nova_AssignablePropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+}
+
+void spectra_tree_nodes_operations_Nova_AssignablePropertyMap_Nova_super(spectra_tree_nodes_operations_Nova_AssignablePropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+{
 }
 

@@ -3,6 +3,7 @@
 
 typedef struct stabilitytest_Nova_RegexStability stabilitytest_Nova_RegexStability;
 typedef struct stabilitytest_Nova_RegexStabilityFunctionMap stabilitytest_Nova_RegexStabilityFunctionMap;
+typedef struct stabilitytest_Nova_RegexStabilityPropertyMap stabilitytest_Nova_RegexStabilityPropertyMap;
 
 
 #include <Nova.h>
@@ -39,10 +40,12 @@ typedef struct stabilitytest_Nova_RegexStabilityFunctionMap stabilitytest_Nova_R
 #include <nova/nova_Nova_System.h>
 #include <nova/meta/nova_meta_Nova_Class.h>
 #include <nova/meta/nova_meta_Nova_FunctionMap.h>
+#include <nova/meta/nova_meta_Nova_PropertyMap.h>
 #include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <nova/regex/nova_regex_Nova_Regex.h>
 #include <nova/regex/nova_regex_Nova_Match.h>
 #include <stabilitytest/stabilitytest_Nova_StabilityTest.h>
+#include <stabilitytest/stabilitytest_Nova_StabilityTestCase.h>
 #include <stabilitytest/stabilitytest_Nova_StabilityTestCase.h>
 #include <stabilitytest/stabilitytest_Nova_StabilityTestCase.h>
 #include <nova/NativeObject.h>
@@ -76,5 +79,18 @@ void stabilitytest_Nova_RegexStabilityFunctionMap_Nova_this(stabilitytest_Nova_R
 stabilitytest_Nova_RegexStability* stabilitytest_Nova_RegexStabilityFunctionMap_functionMapRegexStabilityFunctionMap_Nova_construct(stabilitytest_Nova_RegexStabilityFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, stabilitytest_Nova_StabilityTest* program);
 void stabilitytest_Nova_RegexStabilityFunctionMap_functionMap_Nova_test(stabilitytest_Nova_RegexStabilityFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, stabilitytest_Nova_RegexStability* reference);
 void stabilitytest_Nova_RegexStabilityFunctionMap_Nova_super(stabilitytest_Nova_RegexStabilityFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+
+CCLASS_CLASS
+(
+	stabilitytest_Nova_RegexStabilityPropertyMap, 
+	
+	stabilitytest_RegexStability_RegexStabilityPropertyMap_Extension_VTable* vtable;
+)
+
+void stabilitytest_Nova_RegexStabilityPropertyMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData);
+stabilitytest_Nova_RegexStabilityPropertyMap* stabilitytest_Nova_RegexStabilityPropertyMap_Nova_construct(stabilitytest_Nova_RegexStabilityPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+void stabilitytest_Nova_RegexStabilityPropertyMap_Nova_destroy(stabilitytest_Nova_RegexStabilityPropertyMap** this, nova_exception_Nova_ExceptionData* exceptionData);
+void stabilitytest_Nova_RegexStabilityPropertyMap_Nova_this(stabilitytest_Nova_RegexStabilityPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+void stabilitytest_Nova_RegexStabilityPropertyMap_Nova_super(stabilitytest_Nova_RegexStabilityPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData);
 
 #endif

@@ -3,6 +3,7 @@
 
 typedef struct nova_operators_Nova_PlusOperator nova_operators_Nova_PlusOperator;
 typedef struct nova_operators_Nova_PlusOperatorFunctionMap nova_operators_Nova_PlusOperatorFunctionMap;
+typedef struct nova_operators_Nova_PlusOperatorPropertyMap nova_operators_Nova_PlusOperatorPropertyMap;
 
 
 #include <Nova.h>
@@ -39,6 +40,7 @@ typedef struct nova_operators_Nova_PlusOperatorFunctionMap nova_operators_Nova_P
 #include <nova/nova_Nova_System.h>
 #include <nova/meta/nova_meta_Nova_Class.h>
 #include <nova/meta/nova_meta_Nova_FunctionMap.h>
+#include <nova/meta/nova_meta_Nova_PropertyMap.h>
 #include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <nova/NativeObject.h>
 
@@ -64,5 +66,18 @@ nova_operators_Nova_PlusOperatorFunctionMap* nova_operators_Nova_PlusOperatorFun
 void nova_operators_Nova_PlusOperatorFunctionMap_Nova_destroy(nova_operators_Nova_PlusOperatorFunctionMap** this, nova_exception_Nova_ExceptionData* exceptionData);
 void nova_operators_Nova_PlusOperatorFunctionMap_Nova_this(nova_operators_Nova_PlusOperatorFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
 void nova_operators_Nova_PlusOperatorFunctionMap_Nova_super(nova_operators_Nova_PlusOperatorFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+
+CCLASS_CLASS
+(
+	nova_operators_Nova_PlusOperatorPropertyMap, 
+	
+	nova_operators_PlusOperator_PlusOperatorPropertyMap_Extension_VTable* vtable;
+)
+
+void nova_operators_Nova_PlusOperatorPropertyMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData);
+nova_operators_Nova_PlusOperatorPropertyMap* nova_operators_Nova_PlusOperatorPropertyMap_Nova_construct(nova_operators_Nova_PlusOperatorPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+void nova_operators_Nova_PlusOperatorPropertyMap_Nova_destroy(nova_operators_Nova_PlusOperatorPropertyMap** this, nova_exception_Nova_ExceptionData* exceptionData);
+void nova_operators_Nova_PlusOperatorPropertyMap_Nova_this(nova_operators_Nova_PlusOperatorPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+void nova_operators_Nova_PlusOperatorPropertyMap_Nova_super(nova_operators_Nova_PlusOperatorPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData);
 
 #endif

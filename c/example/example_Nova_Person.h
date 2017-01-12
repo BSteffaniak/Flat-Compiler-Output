@@ -3,6 +3,7 @@
 
 typedef struct example_Nova_Person example_Nova_Person;
 typedef struct example_Nova_PersonFunctionMap example_Nova_PersonFunctionMap;
+typedef struct example_Nova_PersonPropertyMap example_Nova_PersonPropertyMap;
 
 
 #include <Nova.h>
@@ -39,6 +40,7 @@ typedef struct example_Nova_PersonFunctionMap example_Nova_PersonFunctionMap;
 #include <nova/nova_Nova_System.h>
 #include <nova/meta/nova_meta_Nova_Class.h>
 #include <nova/meta/nova_meta_Nova_FunctionMap.h>
+#include <nova/meta/nova_meta_Nova_PropertyMap.h>
 #include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <nova/NativeObject.h>
 
@@ -74,5 +76,20 @@ example_Nova_Person* example_Nova_PersonFunctionMap_functionMapPersonFunctionMap
 void example_Nova_PersonFunctionMap_functionMap_Nova_sayHello(example_Nova_PersonFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, example_Nova_Person* reference);
 void example_Nova_PersonFunctionMap_Nova_super(example_Nova_PersonFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
 void example_Nova_PersonFunctionMap_virtualfunctionMap_Nova_sayHello(example_Nova_PersonFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, example_Nova_Person* reference);
+
+CCLASS_CLASS
+(
+	example_Nova_PersonPropertyMap, 
+	
+	example_Person_PersonPropertyMap_Extension_VTable* vtable;
+)
+
+void example_Nova_PersonPropertyMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData);
+example_Nova_PersonPropertyMap* example_Nova_PersonPropertyMap_Nova_construct(example_Nova_PersonPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+void example_Nova_PersonPropertyMap_Nova_destroy(example_Nova_PersonPropertyMap** this, nova_exception_Nova_ExceptionData* exceptionData);
+void example_Nova_PersonPropertyMap_Nova_this(example_Nova_PersonPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+int example_Nova_PersonPropertyMap_functionMap_Nova_age(example_Nova_PersonPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData, example_Nova_Person* reference);
+nova_Nova_String* example_Nova_PersonPropertyMap_functionMap_Nova_name(example_Nova_PersonPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData, example_Nova_Person* reference);
+void example_Nova_PersonPropertyMap_Nova_super(example_Nova_PersonPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData);
 
 #endif

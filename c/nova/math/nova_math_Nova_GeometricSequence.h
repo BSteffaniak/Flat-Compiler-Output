@@ -3,6 +3,7 @@
 
 typedef struct nova_math_Nova_GeometricSequence nova_math_Nova_GeometricSequence;
 typedef struct nova_math_Nova_GeometricSequenceFunctionMap nova_math_Nova_GeometricSequenceFunctionMap;
+typedef struct nova_math_Nova_GeometricSequencePropertyMap nova_math_Nova_GeometricSequencePropertyMap;
 
 
 #include <Nova.h>
@@ -39,6 +40,7 @@ typedef struct nova_math_Nova_GeometricSequenceFunctionMap nova_math_Nova_Geomet
 #include <nova/nova_Nova_System.h>
 #include <nova/meta/nova_meta_Nova_Class.h>
 #include <nova/meta/nova_meta_Nova_FunctionMap.h>
+#include <nova/meta/nova_meta_Nova_PropertyMap.h>
 #include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <nova/NativeObject.h>
 
@@ -68,5 +70,18 @@ void nova_math_Nova_GeometricSequenceFunctionMap_Nova_destroy(nova_math_Nova_Geo
 void nova_math_Nova_GeometricSequenceFunctionMap_Nova_this(nova_math_Nova_GeometricSequenceFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
 nova_math_Nova_GeometricSequence* nova_math_Nova_GeometricSequenceFunctionMap_functionMapGeometricSequenceFunctionMap_Nova_construct(nova_math_Nova_GeometricSequenceFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
 void nova_math_Nova_GeometricSequenceFunctionMap_Nova_super(nova_math_Nova_GeometricSequenceFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+
+CCLASS_CLASS
+(
+	nova_math_Nova_GeometricSequencePropertyMap, 
+	
+	nova_math_GeometricSequence_GeometricSequencePropertyMap_Extension_VTable* vtable;
+)
+
+void nova_math_Nova_GeometricSequencePropertyMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData);
+nova_math_Nova_GeometricSequencePropertyMap* nova_math_Nova_GeometricSequencePropertyMap_Nova_construct(nova_math_Nova_GeometricSequencePropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+void nova_math_Nova_GeometricSequencePropertyMap_Nova_destroy(nova_math_Nova_GeometricSequencePropertyMap** this, nova_exception_Nova_ExceptionData* exceptionData);
+void nova_math_Nova_GeometricSequencePropertyMap_Nova_this(nova_math_Nova_GeometricSequencePropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+void nova_math_Nova_GeometricSequencePropertyMap_Nova_super(nova_math_Nova_GeometricSequencePropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData);
 
 #endif

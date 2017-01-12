@@ -3,6 +3,7 @@
 
 typedef struct spectra_tree_nodes_Nova_Scope spectra_tree_nodes_Nova_Scope;
 typedef struct spectra_tree_nodes_Nova_ScopeFunctionMap spectra_tree_nodes_Nova_ScopeFunctionMap;
+typedef struct spectra_tree_nodes_Nova_ScopePropertyMap spectra_tree_nodes_Nova_ScopePropertyMap;
 
 
 #include <Nova.h>
@@ -39,6 +40,7 @@ typedef struct spectra_tree_nodes_Nova_ScopeFunctionMap spectra_tree_nodes_Nova_
 #include <nova/nova_Nova_System.h>
 #include <nova/meta/nova_meta_Nova_Class.h>
 #include <nova/meta/nova_meta_Nova_FunctionMap.h>
+#include <nova/meta/nova_meta_Nova_PropertyMap.h>
 #include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <spectra/util/spectra_util_Nova_Location.h>
 #include <spectra/tree/nodes/spectra_tree_nodes_Nova_Accessible.h>
@@ -57,6 +59,8 @@ typedef struct spectra_tree_nodes_Nova_ScopeFunctionMap spectra_tree_nodes_Nova_
 #include <spectra/tree/nodes/spectra_tree_nodes_Nova_Return.h>
 #include <spectra/tree/nodes/spectra_tree_nodes_Nova_Value.h>
 #include <spectra/tree/nodes/spectra_tree_nodes_Nova_NodeList.h>
+#include <spectra/tree/nodes/spectra_tree_nodes_Nova_NodeList.h>
+#include <spectra/tree/nodes/spectra_tree_nodes_Nova_Node.h>
 #include <spectra/tree/nodes/spectra_tree_nodes_Nova_Node.h>
 #include <spectra/spectra_Nova_InvalidParseException.h>
 #include <spectra/spectra_Nova_SyntaxErrorException.h>
@@ -73,6 +77,7 @@ typedef struct spectra_tree_nodes_Nova_ScopeFunctionMap spectra_tree_nodes_Nova_
 #include <spectra/tree/nodes/spectra_tree_nodes_Nova_Program.h>
 #include <spectra/tree/nodes/spectra_tree_nodes_Nova_Scope.h>
 #include <spectra/tree/nodes/spectra_tree_nodes_Nova_ValidationResult.h>
+#include <spectra/tree/nodes/annotations/spectra_tree_nodes_annotations_Nova_Annotatable.h>
 #include <spectra/tree/nodes/annotations/spectra_tree_nodes_annotations_Nova_Annotatable.h>
 #include <nova/NativeObject.h>
 
@@ -115,5 +120,20 @@ spectra_tree_nodes_Nova_Node* spectra_tree_nodes_Nova_ScopeFunctionMap_functionM
 char spectra_tree_nodes_Nova_ScopeFunctionMap_functionMap_Nova_parsePlaceholders(spectra_tree_nodes_Nova_ScopeFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, spectra_tree_nodes_Nova_Scope* reference);
 nova_Nova_String* spectra_tree_nodes_Nova_ScopeFunctionMap_functionMap_Nova_writeNova(spectra_tree_nodes_Nova_ScopeFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, spectra_tree_nodes_Nova_Scope* reference);
 void spectra_tree_nodes_Nova_ScopeFunctionMap_Nova_super(spectra_tree_nodes_Nova_ScopeFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+
+CCLASS_CLASS
+(
+	spectra_tree_nodes_Nova_ScopePropertyMap, 
+	
+	spectra_tree_nodes_Scope_ScopePropertyMap_Extension_VTable* vtable;
+)
+
+void spectra_tree_nodes_Nova_ScopePropertyMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData);
+spectra_tree_nodes_Nova_ScopePropertyMap* spectra_tree_nodes_Nova_ScopePropertyMap_Nova_construct(spectra_tree_nodes_Nova_ScopePropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+void spectra_tree_nodes_Nova_ScopePropertyMap_Nova_destroy(spectra_tree_nodes_Nova_ScopePropertyMap** this, nova_exception_Nova_ExceptionData* exceptionData);
+void spectra_tree_nodes_Nova_ScopePropertyMap_Nova_this(spectra_tree_nodes_Nova_ScopePropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+nova_datastruct_list_Nova_Array* spectra_tree_nodes_Nova_ScopePropertyMap_functionMap_Nova_declarations(spectra_tree_nodes_Nova_ScopePropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData, spectra_tree_nodes_Nova_Scope* reference);
+int spectra_tree_nodes_Nova_ScopePropertyMap_functionMap_Nova_depth(spectra_tree_nodes_Nova_ScopePropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData, spectra_tree_nodes_Nova_Scope* reference);
+void spectra_tree_nodes_Nova_ScopePropertyMap_Nova_super(spectra_tree_nodes_Nova_ScopePropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData);
 
 #endif

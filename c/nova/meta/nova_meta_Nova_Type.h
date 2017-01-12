@@ -3,6 +3,7 @@
 
 typedef struct nova_meta_Nova_Type nova_meta_Nova_Type;
 typedef struct nova_meta_Nova_TypeFunctionMap nova_meta_Nova_TypeFunctionMap;
+typedef struct nova_meta_Nova_TypePropertyMap nova_meta_Nova_TypePropertyMap;
 
 
 #include <Nova.h>
@@ -39,6 +40,7 @@ typedef struct nova_meta_Nova_TypeFunctionMap nova_meta_Nova_TypeFunctionMap;
 #include <nova/nova_Nova_System.h>
 #include <nova/meta/nova_meta_Nova_Class.h>
 #include <nova/meta/nova_meta_Nova_FunctionMap.h>
+#include <nova/meta/nova_meta_Nova_PropertyMap.h>
 #include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <nova/meta/nova_meta_Nova_GenericArgument.h>
 #include <nova/NativeObject.h>
@@ -71,5 +73,20 @@ void nova_meta_Nova_TypeFunctionMap_Nova_destroy(nova_meta_Nova_TypeFunctionMap*
 void nova_meta_Nova_TypeFunctionMap_Nova_this(nova_meta_Nova_TypeFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
 nova_meta_Nova_Type* nova_meta_Nova_TypeFunctionMap_functionMapTypeFunctionMap_Nova_construct(nova_meta_Nova_TypeFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* value, nova_datastruct_list_Nova_ImmutableArray* genericArguments);
 void nova_meta_Nova_TypeFunctionMap_Nova_super(nova_meta_Nova_TypeFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+
+CCLASS_CLASS
+(
+	nova_meta_Nova_TypePropertyMap, 
+	
+	nova_meta_Type_TypePropertyMap_Extension_VTable* vtable;
+)
+
+void nova_meta_Nova_TypePropertyMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData);
+nova_meta_Nova_TypePropertyMap* nova_meta_Nova_TypePropertyMap_Nova_construct(nova_meta_Nova_TypePropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+void nova_meta_Nova_TypePropertyMap_Nova_destroy(nova_meta_Nova_TypePropertyMap** this, nova_exception_Nova_ExceptionData* exceptionData);
+void nova_meta_Nova_TypePropertyMap_Nova_this(nova_meta_Nova_TypePropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+nova_Nova_String* nova_meta_Nova_TypePropertyMap_functionMap_Nova_value(nova_meta_Nova_TypePropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_meta_Nova_Type* reference);
+nova_datastruct_list_Nova_ImmutableArray* nova_meta_Nova_TypePropertyMap_functionMap_Nova_genericArguments(nova_meta_Nova_TypePropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_meta_Nova_Type* reference);
+void nova_meta_Nova_TypePropertyMap_Nova_super(nova_meta_Nova_TypePropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData);
 
 #endif

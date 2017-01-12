@@ -29,6 +29,7 @@
 #include <nova/nova_Nova_System.h>
 #include <nova/meta/nova_meta_Nova_Class.h>
 #include <nova/meta/nova_meta_Nova_FunctionMap.h>
+#include <nova/meta/nova_meta_Nova_PropertyMap.h>
 #include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <nova/datastruct/nova_datastruct_Nova_Bounds.h>
 #include <nova/NativeObject.h>
@@ -122,6 +123,56 @@ nova_math_logic_Nova_StatementGroup* nova_math_logic_Nova_StatementGroupFunction
 }
 
 void nova_math_logic_Nova_StatementGroupFunctionMap_Nova_super(nova_math_logic_Nova_StatementGroupFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+}
+
+void nova_math_logic_Nova_StatementGroupPropertyMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData)
+{
+	{
+	}
+}
+
+nova_math_logic_Nova_StatementGroupPropertyMap* nova_math_logic_Nova_StatementGroupPropertyMap_Nova_construct(nova_math_logic_Nova_StatementGroupPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+	CCLASS_NEW(nova_math_logic_Nova_StatementGroupPropertyMap, this,);
+	this->vtable = &nova_math_logic_StatementGroup_StatementGroupPropertyMap_Extension_VTable_val;
+	nova_Nova_Object_Nova_super((nova_Nova_Object*)this, exceptionData);
+	nova_meta_Nova_PropertyMap_Nova_super((nova_meta_Nova_PropertyMap*)this, exceptionData);
+	nova_math_logic_Nova_StatementGroupPropertyMap_Nova_super(this, exceptionData);
+	
+	{
+		nova_math_logic_Nova_StatementGroupPropertyMap_Nova_this(this, exceptionData);
+	}
+	
+	return this;
+}
+
+void nova_math_logic_Nova_StatementGroupPropertyMap_Nova_destroy(nova_math_logic_Nova_StatementGroupPropertyMap** this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+	if (!*this)
+	{
+		return;
+	}
+	
+	
+	NOVA_FREE(*this);
+}
+
+void nova_math_logic_Nova_StatementGroupPropertyMap_Nova_this(nova_math_logic_Nova_StatementGroupPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+}
+
+nova_Nova_Object* nova_math_logic_Nova_StatementGroupPropertyMap_functionMap_Nova_statement(nova_math_logic_Nova_StatementGroupPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_math_logic_Nova_StatementGroup* reference)
+{
+	return (nova_Nova_Object*)reference->nova_math_logic_Nova_StatementGroup_Nova_statement;
+}
+
+nova_datastruct_Nova_Bounds* nova_math_logic_Nova_StatementGroupPropertyMap_functionMap_Nova_bounds(nova_math_logic_Nova_StatementGroupPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_math_logic_Nova_StatementGroup* reference)
+{
+	return reference->nova_math_logic_Nova_StatementGroup_Nova_bounds;
+}
+
+void nova_math_logic_Nova_StatementGroupPropertyMap_Nova_super(nova_math_logic_Nova_StatementGroupPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
 }
 

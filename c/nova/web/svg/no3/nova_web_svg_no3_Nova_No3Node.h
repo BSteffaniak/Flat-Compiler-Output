@@ -3,6 +3,7 @@
 
 typedef struct nova_web_svg_no3_Nova_No3Node nova_web_svg_no3_Nova_No3Node;
 typedef struct nova_web_svg_no3_Nova_No3NodeFunctionMap nova_web_svg_no3_Nova_No3NodeFunctionMap;
+typedef struct nova_web_svg_no3_Nova_No3NodePropertyMap nova_web_svg_no3_Nova_No3NodePropertyMap;
 
 
 #include <Nova.h>
@@ -39,6 +40,7 @@ typedef struct nova_web_svg_no3_Nova_No3NodeFunctionMap nova_web_svg_no3_Nova_No
 #include <nova/nova_Nova_System.h>
 #include <nova/meta/nova_meta_Nova_Class.h>
 #include <nova/meta/nova_meta_Nova_FunctionMap.h>
+#include <nova/meta/nova_meta_Nova_PropertyMap.h>
 #include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <nova/NativeObject.h>
 
@@ -69,5 +71,18 @@ void nova_web_svg_no3_Nova_No3NodeFunctionMap_Nova_destroy(nova_web_svg_no3_Nova
 void nova_web_svg_no3_Nova_No3NodeFunctionMap_Nova_this(nova_web_svg_no3_Nova_No3NodeFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
 nova_web_svg_no3_Nova_No3Node* nova_web_svg_no3_Nova_No3NodeFunctionMap_functionMapNo3NodeFunctionMap_Nova_construct(nova_web_svg_no3_Nova_No3NodeFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
 void nova_web_svg_no3_Nova_No3NodeFunctionMap_Nova_super(nova_web_svg_no3_Nova_No3NodeFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+
+CCLASS_CLASS
+(
+	nova_web_svg_no3_Nova_No3NodePropertyMap, 
+	
+	nova_web_svg_no3_No3Node_No3NodePropertyMap_Extension_VTable* vtable;
+)
+
+void nova_web_svg_no3_Nova_No3NodePropertyMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData);
+nova_web_svg_no3_Nova_No3NodePropertyMap* nova_web_svg_no3_Nova_No3NodePropertyMap_Nova_construct(nova_web_svg_no3_Nova_No3NodePropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+void nova_web_svg_no3_Nova_No3NodePropertyMap_Nova_destroy(nova_web_svg_no3_Nova_No3NodePropertyMap** this, nova_exception_Nova_ExceptionData* exceptionData);
+void nova_web_svg_no3_Nova_No3NodePropertyMap_Nova_this(nova_web_svg_no3_Nova_No3NodePropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+void nova_web_svg_no3_Nova_No3NodePropertyMap_Nova_super(nova_web_svg_no3_Nova_No3NodePropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData);
 
 #endif

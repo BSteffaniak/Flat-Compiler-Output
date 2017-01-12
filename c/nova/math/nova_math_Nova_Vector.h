@@ -3,6 +3,7 @@
 
 typedef struct nova_math_Nova_Vector nova_math_Nova_Vector;
 typedef struct nova_math_Nova_VectorFunctionMap nova_math_Nova_VectorFunctionMap;
+typedef struct nova_math_Nova_VectorPropertyMap nova_math_Nova_VectorPropertyMap;
 
 
 #include <Nova.h>
@@ -39,6 +40,7 @@ typedef struct nova_math_Nova_VectorFunctionMap nova_math_Nova_VectorFunctionMap
 #include <nova/nova_Nova_System.h>
 #include <nova/meta/nova_meta_Nova_Class.h>
 #include <nova/meta/nova_meta_Nova_FunctionMap.h>
+#include <nova/meta/nova_meta_Nova_PropertyMap.h>
 #include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <nova/NativeObject.h>
 
@@ -85,5 +87,20 @@ nova_datastruct_list_Nova_DoubleArray* nova_math_Nova_VectorFunctionMap_function
 nova_Nova_String* nova_math_Nova_VectorFunctionMap_functionMap_Nova_toString(nova_math_Nova_VectorFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_math_Nova_Vector* reference);
 void nova_math_Nova_VectorFunctionMap_Nova_super(nova_math_Nova_VectorFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
 double nova_math_Nova_VectorFunctionMap_virtualfunctionMap_Nova_dotProduct(nova_math_Nova_VectorFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_math_Nova_Vector* reference, nova_math_Nova_Vector* other);
+
+CCLASS_CLASS
+(
+	nova_math_Nova_VectorPropertyMap, 
+	
+	nova_math_Vector_VectorPropertyMap_Extension_VTable* vtable;
+)
+
+void nova_math_Nova_VectorPropertyMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData);
+nova_math_Nova_VectorPropertyMap* nova_math_Nova_VectorPropertyMap_Nova_construct(nova_math_Nova_VectorPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+void nova_math_Nova_VectorPropertyMap_Nova_destroy(nova_math_Nova_VectorPropertyMap** this, nova_exception_Nova_ExceptionData* exceptionData);
+void nova_math_Nova_VectorPropertyMap_Nova_this(nova_math_Nova_VectorPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+double nova_math_Nova_VectorPropertyMap_functionMap_Nova_magnitude(nova_math_Nova_VectorPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_math_Nova_Vector* reference);
+nova_datastruct_list_Nova_DoubleArray* nova_math_Nova_VectorPropertyMap_functionMap_Nova_data(nova_math_Nova_VectorPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_math_Nova_Vector* reference);
+void nova_math_Nova_VectorPropertyMap_Nova_super(nova_math_Nova_VectorPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData);
 
 #endif

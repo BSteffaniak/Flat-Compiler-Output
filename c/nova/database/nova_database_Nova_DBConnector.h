@@ -3,6 +3,7 @@
 
 typedef struct nova_database_Nova_DBConnector nova_database_Nova_DBConnector;
 typedef struct nova_database_Nova_DBConnectorFunctionMap nova_database_Nova_DBConnectorFunctionMap;
+typedef struct nova_database_Nova_DBConnectorPropertyMap nova_database_Nova_DBConnectorPropertyMap;
 
 
 #include <Nova.h>
@@ -39,6 +40,7 @@ typedef struct nova_database_Nova_DBConnectorFunctionMap nova_database_Nova_DBCo
 #include <nova/nova_Nova_System.h>
 #include <nova/meta/nova_meta_Nova_Class.h>
 #include <nova/meta/nova_meta_Nova_FunctionMap.h>
+#include <nova/meta/nova_meta_Nova_PropertyMap.h>
 #include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <nova/database/NativeDBConnector.h>
 #include <nova/database/nova_database_Nova_ResultSet.h>
@@ -86,5 +88,19 @@ void nova_database_Nova_DBConnectorFunctionMap_functionMap_Nova_changeUser(nova_
 nova_database_Nova_ResultSet* nova_database_Nova_DBConnectorFunctionMap_functionMap_Nova_query(nova_database_Nova_DBConnectorFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_database_Nova_DBConnector* reference, nova_Nova_String* query);
 void nova_database_Nova_DBConnectorFunctionMap_functionMap_Nova_close(nova_database_Nova_DBConnectorFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_database_Nova_DBConnector* reference);
 void nova_database_Nova_DBConnectorFunctionMap_Nova_super(nova_database_Nova_DBConnectorFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+
+CCLASS_CLASS
+(
+	nova_database_Nova_DBConnectorPropertyMap, 
+	
+	nova_database_DBConnector_DBConnectorPropertyMap_Extension_VTable* vtable;
+)
+
+void nova_database_Nova_DBConnectorPropertyMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData);
+nova_database_Nova_DBConnectorPropertyMap* nova_database_Nova_DBConnectorPropertyMap_Nova_construct(nova_database_Nova_DBConnectorPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+void nova_database_Nova_DBConnectorPropertyMap_Nova_destroy(nova_database_Nova_DBConnectorPropertyMap** this, nova_exception_Nova_ExceptionData* exceptionData);
+void nova_database_Nova_DBConnectorPropertyMap_Nova_this(nova_database_Nova_DBConnectorPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+nova_Nova_String* nova_database_Nova_DBConnectorPropertyMap_functionMap_Nova_error(nova_database_Nova_DBConnectorPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_database_Nova_DBConnector* reference);
+void nova_database_Nova_DBConnectorPropertyMap_Nova_super(nova_database_Nova_DBConnectorPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData);
 
 #endif

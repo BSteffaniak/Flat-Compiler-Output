@@ -29,6 +29,7 @@
 #include <nova/nova_Nova_System.h>
 #include <nova/meta/nova_meta_Nova_Class.h>
 #include <nova/meta/nova_meta_Nova_FunctionMap.h>
+#include <nova/meta/nova_meta_Nova_PropertyMap.h>
 #include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <nova/NativeObject.h>
 
@@ -38,15 +39,15 @@
 char nova_math_Nova_Polynomial_static_Nova_isLetter(nova_math_Nova_Polynomial* this, nova_exception_Nova_ExceptionData* exceptionData, char c);
 char nova_math_Nova_Polynomial_static_Nova_isSymbol(nova_math_Nova_Polynomial* this, nova_exception_Nova_ExceptionData* exceptionData, char c);
 char nova_math_Nova_Polynomial_static_Nova_isWhitespace(nova_math_Nova_Polynomial* this, nova_exception_Nova_ExceptionData* exceptionData, char c);
-nova_datastruct_list_Nova_CharArray* generated13(nova_math_Nova_Polynomial* this, nova_exception_Nova_ExceptionData* exceptionData);
-nova_datastruct_list_Nova_CharArray* generated14(nova_math_Nova_Polynomial* this, nova_exception_Nova_ExceptionData* exceptionData);
+nova_datastruct_list_Nova_CharArray* generated24(nova_math_Nova_Polynomial* this, nova_exception_Nova_ExceptionData* exceptionData);
+nova_datastruct_list_Nova_CharArray* generated25(nova_math_Nova_Polynomial* this, nova_exception_Nova_ExceptionData* exceptionData);
 nova_datastruct_list_Nova_CharArray* nova_math_Nova_Polynomial_Nova_SYMBOLS_CHARS;
 nova_datastruct_list_Nova_CharArray* nova_math_Nova_Polynomial_Nova_WHITESPACE_CHARS;
 void nova_math_Nova_Polynomial_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData)
 {
 	{
-		nova_math_Nova_Polynomial_Nova_SYMBOLS_CHARS = generated13(0, exceptionData);
-		nova_math_Nova_Polynomial_Nova_WHITESPACE_CHARS = generated14(0, exceptionData);
+		nova_math_Nova_Polynomial_Nova_SYMBOLS_CHARS = generated24(0, exceptionData);
+		nova_math_Nova_Polynomial_Nova_WHITESPACE_CHARS = generated25(0, exceptionData);
 	}
 }
 
@@ -122,7 +123,7 @@ char nova_math_Nova_Polynomial_static_Nova_isWhitespace(nova_math_Nova_Polynomia
 	return nova_datastruct_list_Nova_CharArray_Nova_contains(nova_math_Nova_Polynomial_Nova_WHITESPACE_CHARS, exceptionData, c);
 }
 
-nova_datastruct_list_Nova_CharArray* generated13(nova_math_Nova_Polynomial* this, nova_exception_Nova_ExceptionData* exceptionData)
+nova_datastruct_list_Nova_CharArray* generated24(nova_math_Nova_Polynomial* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
 	char* l1_Nova_temp = (char*)nova_null;
 	
@@ -151,7 +152,7 @@ l1_Nova_temp[20] = ';';
 l1_Nova_temp[21] = '(';l1_Nova_temp[22] = ')';
 return nova_datastruct_list_Nova_CharArray_2_Nova_construct(0, exceptionData, l1_Nova_temp, 23);}
 
-nova_datastruct_list_Nova_CharArray* generated14(nova_math_Nova_Polynomial* this, nova_exception_Nova_ExceptionData* exceptionData)
+nova_datastruct_list_Nova_CharArray* generated25(nova_math_Nova_Polynomial* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
 	char* l1_Nova_temp = (char*)nova_null;
 	
@@ -231,6 +232,61 @@ char nova_math_Nova_PolynomialFunctionMap_functionMap_static_Nova_isWhitespace(n
 }
 
 void nova_math_Nova_PolynomialFunctionMap_Nova_super(nova_math_Nova_PolynomialFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+}
+
+void nova_math_Nova_PolynomialPropertyMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData)
+{
+	{
+	}
+}
+
+nova_math_Nova_PolynomialPropertyMap* nova_math_Nova_PolynomialPropertyMap_Nova_construct(nova_math_Nova_PolynomialPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+	CCLASS_NEW(nova_math_Nova_PolynomialPropertyMap, this,);
+	this->vtable = &nova_math_Polynomial_PolynomialPropertyMap_Extension_VTable_val;
+	nova_Nova_Object_Nova_super((nova_Nova_Object*)this, exceptionData);
+	nova_meta_Nova_PropertyMap_Nova_super((nova_meta_Nova_PropertyMap*)this, exceptionData);
+	nova_math_Nova_PolynomialPropertyMap_Nova_super(this, exceptionData);
+	
+	{
+		nova_math_Nova_PolynomialPropertyMap_Nova_this(this, exceptionData);
+	}
+	
+	return this;
+}
+
+void nova_math_Nova_PolynomialPropertyMap_Nova_destroy(nova_math_Nova_PolynomialPropertyMap** this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+	if (!*this)
+	{
+		return;
+	}
+	
+	
+	NOVA_FREE(*this);
+}
+
+void nova_math_Nova_PolynomialPropertyMap_Nova_this(nova_math_Nova_PolynomialPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+}
+
+nova_datastruct_list_Nova_DoubleArray* nova_math_Nova_PolynomialPropertyMap_functionMap_Nova_coefficients(nova_math_Nova_PolynomialPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_math_Nova_Polynomial* reference)
+{
+	return reference->nova_math_Nova_Polynomial_Nova_coefficients;
+}
+
+nova_datastruct_list_Nova_DoubleArray* nova_math_Nova_PolynomialPropertyMap_functionMap_Nova_degrees(nova_math_Nova_PolynomialPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_math_Nova_Polynomial* reference)
+{
+	return reference->nova_math_Nova_Polynomial_Nova_degrees;
+}
+
+nova_datastruct_list_Nova_Array* nova_math_Nova_PolynomialPropertyMap_functionMap_Nova_signs(nova_math_Nova_PolynomialPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_math_Nova_Polynomial* reference)
+{
+	return reference->nova_math_Nova_Polynomial_Nova_signs;
+}
+
+void nova_math_Nova_PolynomialPropertyMap_Nova_super(nova_math_Nova_PolynomialPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
 }
 

@@ -3,6 +3,7 @@
 
 typedef struct example_Nova_SvgChart example_Nova_SvgChart;
 typedef struct example_Nova_SvgChartFunctionMap example_Nova_SvgChartFunctionMap;
+typedef struct example_Nova_SvgChartPropertyMap example_Nova_SvgChartPropertyMap;
 
 
 #include <Nova.h>
@@ -39,6 +40,7 @@ typedef struct example_Nova_SvgChartFunctionMap example_Nova_SvgChartFunctionMap
 #include <nova/nova_Nova_System.h>
 #include <nova/meta/nova_meta_Nova_Class.h>
 #include <nova/meta/nova_meta_Nova_FunctionMap.h>
+#include <nova/meta/nova_meta_Nova_PropertyMap.h>
 #include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <nova/web/svg/no3/nova_web_svg_no3_Nova_No3.h>
 #include <nova/time/nova_time_Nova_Timer.h>
@@ -72,5 +74,18 @@ void example_Nova_SvgChartFunctionMap_Nova_this(example_Nova_SvgChartFunctionMap
 example_Nova_SvgChart* example_Nova_SvgChartFunctionMap_functionMapSvgChartFunctionMap_Nova_construct(example_Nova_SvgChartFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
 void example_Nova_SvgChartFunctionMap_functionMap_static_Nova_main(example_Nova_SvgChartFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_list_Nova_Array* args);
 void example_Nova_SvgChartFunctionMap_Nova_super(example_Nova_SvgChartFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+
+CCLASS_CLASS
+(
+	example_Nova_SvgChartPropertyMap, 
+	
+	example_SvgChart_SvgChartPropertyMap_Extension_VTable* vtable;
+)
+
+void example_Nova_SvgChartPropertyMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData);
+example_Nova_SvgChartPropertyMap* example_Nova_SvgChartPropertyMap_Nova_construct(example_Nova_SvgChartPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+void example_Nova_SvgChartPropertyMap_Nova_destroy(example_Nova_SvgChartPropertyMap** this, nova_exception_Nova_ExceptionData* exceptionData);
+void example_Nova_SvgChartPropertyMap_Nova_this(example_Nova_SvgChartPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+void example_Nova_SvgChartPropertyMap_Nova_super(example_Nova_SvgChartPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData);
 
 #endif

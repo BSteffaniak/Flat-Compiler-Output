@@ -3,6 +3,7 @@
 
 typedef struct stabilitytest_Nova_LambdaStability stabilitytest_Nova_LambdaStability;
 typedef struct stabilitytest_Nova_LambdaStabilityFunctionMap stabilitytest_Nova_LambdaStabilityFunctionMap;
+typedef struct stabilitytest_Nova_LambdaStabilityPropertyMap stabilitytest_Nova_LambdaStabilityPropertyMap;
 
 
 #include <Nova.h>
@@ -39,9 +40,11 @@ typedef struct stabilitytest_Nova_LambdaStabilityFunctionMap stabilitytest_Nova_
 #include <nova/nova_Nova_System.h>
 #include <nova/meta/nova_meta_Nova_Class.h>
 #include <nova/meta/nova_meta_Nova_FunctionMap.h>
+#include <nova/meta/nova_meta_Nova_PropertyMap.h>
 #include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_LinkedList.h>
 #include <stabilitytest/stabilitytest_Nova_StabilityTest.h>
+#include <stabilitytest/stabilitytest_Nova_StabilityTestCase.h>
 #include <stabilitytest/stabilitytest_Nova_StabilityTestCase.h>
 #include <stabilitytest/stabilitytest_Nova_StabilityTestCase.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_ArrayIterator.h>
@@ -76,5 +79,18 @@ void stabilitytest_Nova_LambdaStabilityFunctionMap_Nova_this(stabilitytest_Nova_
 stabilitytest_Nova_LambdaStability* stabilitytest_Nova_LambdaStabilityFunctionMap_functionMapLambdaStabilityFunctionMap_Nova_construct(stabilitytest_Nova_LambdaStabilityFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, stabilitytest_Nova_StabilityTest* program);
 void stabilitytest_Nova_LambdaStabilityFunctionMap_functionMap_Nova_test(stabilitytest_Nova_LambdaStabilityFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, stabilitytest_Nova_LambdaStability* reference);
 void stabilitytest_Nova_LambdaStabilityFunctionMap_Nova_super(stabilitytest_Nova_LambdaStabilityFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+
+CCLASS_CLASS
+(
+	stabilitytest_Nova_LambdaStabilityPropertyMap, 
+	
+	stabilitytest_LambdaStability_LambdaStabilityPropertyMap_Extension_VTable* vtable;
+)
+
+void stabilitytest_Nova_LambdaStabilityPropertyMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData);
+stabilitytest_Nova_LambdaStabilityPropertyMap* stabilitytest_Nova_LambdaStabilityPropertyMap_Nova_construct(stabilitytest_Nova_LambdaStabilityPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+void stabilitytest_Nova_LambdaStabilityPropertyMap_Nova_destroy(stabilitytest_Nova_LambdaStabilityPropertyMap** this, nova_exception_Nova_ExceptionData* exceptionData);
+void stabilitytest_Nova_LambdaStabilityPropertyMap_Nova_this(stabilitytest_Nova_LambdaStabilityPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+void stabilitytest_Nova_LambdaStabilityPropertyMap_Nova_super(stabilitytest_Nova_LambdaStabilityPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData);
 
 #endif

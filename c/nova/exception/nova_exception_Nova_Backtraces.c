@@ -29,6 +29,7 @@
 #include <nova/nova_Nova_System.h>
 #include <nova/meta/nova_meta_Nova_Class.h>
 #include <nova/meta/nova_meta_Nova_FunctionMap.h>
+#include <nova/meta/nova_meta_Nova_PropertyMap.h>
 #include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <nova/NativeObject.h>
 
@@ -120,5 +121,47 @@ nova_exception_Nova_Backtraces* nova_exception_Nova_BacktracesFunctionMap_functi
 void nova_exception_Nova_BacktracesFunctionMap_Nova_super(nova_exception_Nova_BacktracesFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
 	this->nova_exception_Nova_BacktracesFunctionMap_Nova_class = (nova_meta_Nova_Class*)nova_null;
+}
+
+void nova_exception_Nova_BacktracesPropertyMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData)
+{
+	{
+	}
+}
+
+nova_exception_Nova_BacktracesPropertyMap* nova_exception_Nova_BacktracesPropertyMap_Nova_construct(nova_exception_Nova_BacktracesPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+	CCLASS_NEW(nova_exception_Nova_BacktracesPropertyMap, this,);
+	this->vtable = &nova_exception_Backtraces_BacktracesPropertyMap_Extension_VTable_val;
+	nova_Nova_Object_Nova_super((nova_Nova_Object*)this, exceptionData);
+	nova_meta_Nova_PropertyMap_Nova_super((nova_meta_Nova_PropertyMap*)this, exceptionData);
+	nova_exception_Nova_BacktracesPropertyMap_Nova_super(this, exceptionData);
+	
+	{
+		nova_exception_Nova_BacktracesPropertyMap_Nova_this(this, exceptionData);
+	}
+	
+	return this;
+}
+
+void nova_exception_Nova_BacktracesPropertyMap_Nova_destroy(nova_exception_Nova_BacktracesPropertyMap** this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+	if (!*this)
+	{
+		return;
+	}
+	
+	nova_meta_Nova_Class_Nova_destroy(&(*this)->nova_exception_Nova_BacktracesPropertyMap_Nova_class, exceptionData);
+	
+	NOVA_FREE(*this);
+}
+
+void nova_exception_Nova_BacktracesPropertyMap_Nova_this(nova_exception_Nova_BacktracesPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+}
+
+void nova_exception_Nova_BacktracesPropertyMap_Nova_super(nova_exception_Nova_BacktracesPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+	this->nova_exception_Nova_BacktracesPropertyMap_Nova_class = (nova_meta_Nova_Class*)nova_null;
 }
 

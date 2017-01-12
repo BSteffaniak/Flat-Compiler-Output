@@ -3,6 +3,7 @@
 
 typedef struct example_Nova_SvgFractal example_Nova_SvgFractal;
 typedef struct example_Nova_SvgFractalFunctionMap example_Nova_SvgFractalFunctionMap;
+typedef struct example_Nova_SvgFractalPropertyMap example_Nova_SvgFractalPropertyMap;
 
 
 #include <Nova.h>
@@ -39,6 +40,7 @@ typedef struct example_Nova_SvgFractalFunctionMap example_Nova_SvgFractalFunctio
 #include <nova/nova_Nova_System.h>
 #include <nova/meta/nova_meta_Nova_Class.h>
 #include <nova/meta/nova_meta_Nova_FunctionMap.h>
+#include <nova/meta/nova_meta_Nova_PropertyMap.h>
 #include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <nova/web/svg/nova_web_svg_Nova_Svg.h>
 #include <nova/web/svg/nova_web_svg_Nova_SvgCircle.h>
@@ -75,5 +77,18 @@ void example_Nova_SvgFractalFunctionMap_Nova_this(example_Nova_SvgFractalFunctio
 example_Nova_SvgFractal* example_Nova_SvgFractalFunctionMap_functionMapSvgFractalFunctionMap_Nova_construct(example_Nova_SvgFractalFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
 void example_Nova_SvgFractalFunctionMap_functionMap_static_Nova_main(example_Nova_SvgFractalFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_list_Nova_Array* args);
 void example_Nova_SvgFractalFunctionMap_Nova_super(example_Nova_SvgFractalFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+
+CCLASS_CLASS
+(
+	example_Nova_SvgFractalPropertyMap, 
+	
+	example_SvgFractal_SvgFractalPropertyMap_Extension_VTable* vtable;
+)
+
+void example_Nova_SvgFractalPropertyMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData);
+example_Nova_SvgFractalPropertyMap* example_Nova_SvgFractalPropertyMap_Nova_construct(example_Nova_SvgFractalPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+void example_Nova_SvgFractalPropertyMap_Nova_destroy(example_Nova_SvgFractalPropertyMap** this, nova_exception_Nova_ExceptionData* exceptionData);
+void example_Nova_SvgFractalPropertyMap_Nova_this(example_Nova_SvgFractalPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+void example_Nova_SvgFractalPropertyMap_Nova_super(example_Nova_SvgFractalPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData);
 
 #endif

@@ -29,9 +29,11 @@
 #include <nova/nova_Nova_System.h>
 #include <nova/meta/nova_meta_Nova_Class.h>
 #include <nova/meta/nova_meta_Nova_FunctionMap.h>
+#include <nova/meta/nova_meta_Nova_PropertyMap.h>
 #include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <nova/datastruct/nova_datastruct_Nova_Bounds.h>
 #include <nova/math/nova_math_Nova_InvalidNumericStatementException.h>
+#include <nova/math/nova_math_Nova_NumericOperand.h>
 #include <nova/math/nova_math_Nova_NumericOperand.h>
 #include <nova/math/nova_math_Nova_NumericOperand.h>
 #include <nova/NativeObject.h>
@@ -60,10 +62,10 @@ char nova_math_Nova_NumericOperation_static_Nova_isLetter(nova_math_Nova_Numeric
 char nova_math_Nova_NumericOperation_static_Nova_isNumeric(nova_math_Nova_NumericOperation* this, nova_exception_Nova_ExceptionData* exceptionData, char c);
 char nova_math_Nova_NumericOperation_static_Nova_isOperator(nova_math_Nova_NumericOperation* this, nova_exception_Nova_ExceptionData* exceptionData, char c);
 char nova_math_Nova_NumericOperation_static_Nova_isWhitespace(nova_math_Nova_NumericOperation* this, nova_exception_Nova_ExceptionData* exceptionData, char c);
-nova_datastruct_list_Nova_CharArray* generated9(nova_math_Nova_NumericOperation* this, nova_exception_Nova_ExceptionData* exceptionData);
-nova_datastruct_list_Nova_CharArray* generated10(nova_math_Nova_NumericOperation* this, nova_exception_Nova_ExceptionData* exceptionData);
-nova_datastruct_list_Nova_CharArray* generated11(nova_math_Nova_NumericOperation* this, nova_exception_Nova_ExceptionData* exceptionData);
-nova_datastruct_list_Nova_CharArray* generated12(nova_math_Nova_NumericOperation* this, nova_exception_Nova_ExceptionData* exceptionData);
+nova_datastruct_list_Nova_CharArray* generated20(nova_math_Nova_NumericOperation* this, nova_exception_Nova_ExceptionData* exceptionData);
+nova_datastruct_list_Nova_CharArray* generated21(nova_math_Nova_NumericOperation* this, nova_exception_Nova_ExceptionData* exceptionData);
+nova_datastruct_list_Nova_CharArray* generated22(nova_math_Nova_NumericOperation* this, nova_exception_Nova_ExceptionData* exceptionData);
+nova_datastruct_list_Nova_CharArray* generated23(nova_math_Nova_NumericOperation* this, nova_exception_Nova_ExceptionData* exceptionData);
 int nova_math_Nova_NumericOperation_Nova_GROUPING;
 int nova_math_Nova_NumericOperation_Nova_EXPONENT;
 int nova_math_Nova_NumericOperation_Nova_MULTIPLICATION;
@@ -91,11 +93,11 @@ void nova_math_Nova_NumericOperation_Nova_init_static(nova_exception_Nova_Except
 		nova_math_Nova_NumericOperation_Nova_MAX = (int)(5);
 		nova_math_Nova_NumericOperation_Nova_INVALID = (int)(-1);
 		nova_math_Nova_NumericOperation_Nova_OPERATOR = (int)(1);
-		nova_math_Nova_NumericOperation_Nova_VALID_OPERATORS = generated9(0, exceptionData);
-		nova_math_Nova_NumericOperation_Nova_INVALID_OPERATORS = generated10(0, exceptionData);
-		nova_math_Nova_NumericOperation_Nova_WHITESPACE_CHARS = generated11(0, exceptionData);
+		nova_math_Nova_NumericOperation_Nova_VALID_OPERATORS = generated20(0, exceptionData);
+		nova_math_Nova_NumericOperation_Nova_INVALID_OPERATORS = generated21(0, exceptionData);
+		nova_math_Nova_NumericOperation_Nova_WHITESPACE_CHARS = generated22(0, exceptionData);
 		nova_math_Nova_NumericOperation_Nova_NUMBER = (int)(3);
-		nova_math_Nova_NumericOperation_Nova_NUMERIC_CHARS = generated12(0, exceptionData);
+		nova_math_Nova_NumericOperation_Nova_NUMERIC_CHARS = generated23(0, exceptionData);
 		nova_math_Nova_NumericOperation_Nova_VARIABLE = (int)(4);
 	}
 }
@@ -371,7 +373,7 @@ nova_Nova_String* nova_math_Nova_NumericOperation_Nova_toString(nova_math_Nova_N
 	return (nova_Nova_String*)nova_Nova_String_Nova_plus(nova_Nova_Object_virtual_Nova_toString((nova_Nova_Object*)((this->prv->nova_math_Nova_NumericOperation_Nova_leftOperand)), exceptionData), exceptionData, (nova_Nova_String*)(nova_Nova_String_Nova_plus(nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("")), exceptionData, (nova_Nova_String*)(nova_Nova_String_Nova_plus((this->prv->nova_math_Nova_NumericOperation_Nova_operator), exceptionData, (nova_Nova_String*)(nova_Nova_String_Nova_plus(nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("")), exceptionData, (nova_Nova_String*)(nova_Nova_String_Nova_plus(nova_Nova_Object_virtual_Nova_toString((nova_Nova_Object*)((this->prv->nova_math_Nova_NumericOperation_Nova_rightOperand)), exceptionData), exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("")))))))))));
 }
 
-nova_datastruct_list_Nova_CharArray* generated9(nova_math_Nova_NumericOperation* this, nova_exception_Nova_ExceptionData* exceptionData)
+nova_datastruct_list_Nova_CharArray* generated20(nova_math_Nova_NumericOperation* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
 	char* l1_Nova_temp = (char*)nova_null;
 	
@@ -392,7 +394,7 @@ nova_datastruct_list_Nova_CharArray* generated9(nova_math_Nova_NumericOperation*
 l1_Nova_temp[13] = ')';
 return nova_datastruct_list_Nova_CharArray_2_Nova_construct(0, exceptionData, l1_Nova_temp, 14);}
 
-nova_datastruct_list_Nova_CharArray* generated10(nova_math_Nova_NumericOperation* this, nova_exception_Nova_ExceptionData* exceptionData)
+nova_datastruct_list_Nova_CharArray* generated21(nova_math_Nova_NumericOperation* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
 	char* l1_Nova_temp = (char*)nova_null;
 	
@@ -416,7 +418,7 @@ nova_datastruct_list_Nova_CharArray* generated10(nova_math_Nova_NumericOperation
 	return nova_datastruct_list_Nova_CharArray_2_Nova_construct(0, exceptionData, l1_Nova_temp, 16);
 }
 
-nova_datastruct_list_Nova_CharArray* generated11(nova_math_Nova_NumericOperation* this, nova_exception_Nova_ExceptionData* exceptionData)
+nova_datastruct_list_Nova_CharArray* generated22(nova_math_Nova_NumericOperation* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
 	char* l1_Nova_temp = (char*)nova_null;
 	
@@ -428,7 +430,7 @@ nova_datastruct_list_Nova_CharArray* generated11(nova_math_Nova_NumericOperation
 	return nova_datastruct_list_Nova_CharArray_2_Nova_construct(0, exceptionData, l1_Nova_temp, 4);
 }
 
-nova_datastruct_list_Nova_CharArray* generated12(nova_math_Nova_NumericOperation* this, nova_exception_Nova_ExceptionData* exceptionData)
+nova_datastruct_list_Nova_CharArray* generated23(nova_math_Nova_NumericOperation* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
 	char* l1_Nova_temp = (char*)nova_null;
 	
@@ -579,6 +581,47 @@ nova_Nova_String* nova_math_Nova_NumericOperationFunctionMap_functionMap_Nova_to
 }
 
 void nova_math_Nova_NumericOperationFunctionMap_Nova_super(nova_math_Nova_NumericOperationFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+}
+
+void nova_math_Nova_NumericOperationPropertyMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData)
+{
+	{
+	}
+}
+
+nova_math_Nova_NumericOperationPropertyMap* nova_math_Nova_NumericOperationPropertyMap_Nova_construct(nova_math_Nova_NumericOperationPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+	CCLASS_NEW(nova_math_Nova_NumericOperationPropertyMap, this,);
+	this->vtable = &nova_math_NumericOperation_NumericOperationPropertyMap_Extension_VTable_val;
+	nova_Nova_Object_Nova_super((nova_Nova_Object*)this, exceptionData);
+	nova_meta_Nova_PropertyMap_Nova_super((nova_meta_Nova_PropertyMap*)this, exceptionData);
+	nova_math_Nova_NumericOperandPropertyMap_Nova_super((nova_math_Nova_NumericOperandPropertyMap*)this, exceptionData);
+	nova_math_Nova_NumericOperationPropertyMap_Nova_super(this, exceptionData);
+	
+	{
+		nova_math_Nova_NumericOperationPropertyMap_Nova_this(this, exceptionData);
+	}
+	
+	return this;
+}
+
+void nova_math_Nova_NumericOperationPropertyMap_Nova_destroy(nova_math_Nova_NumericOperationPropertyMap** this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+	if (!*this)
+	{
+		return;
+	}
+	
+	
+	NOVA_FREE(*this);
+}
+
+void nova_math_Nova_NumericOperationPropertyMap_Nova_this(nova_math_Nova_NumericOperationPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+}
+
+void nova_math_Nova_NumericOperationPropertyMap_Nova_super(nova_math_Nova_NumericOperationPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
 }
 

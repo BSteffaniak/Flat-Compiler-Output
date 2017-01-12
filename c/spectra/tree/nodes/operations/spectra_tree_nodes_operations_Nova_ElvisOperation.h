@@ -3,6 +3,7 @@
 
 typedef struct spectra_tree_nodes_operations_Nova_ElvisOperation spectra_tree_nodes_operations_Nova_ElvisOperation;
 typedef struct spectra_tree_nodes_operations_Nova_ElvisOperationFunctionMap spectra_tree_nodes_operations_Nova_ElvisOperationFunctionMap;
+typedef struct spectra_tree_nodes_operations_Nova_ElvisOperationPropertyMap spectra_tree_nodes_operations_Nova_ElvisOperationPropertyMap;
 
 
 #include <Nova.h>
@@ -39,11 +40,13 @@ typedef struct spectra_tree_nodes_operations_Nova_ElvisOperationFunctionMap spec
 #include <nova/nova_Nova_System.h>
 #include <nova/meta/nova_meta_Nova_Class.h>
 #include <nova/meta/nova_meta_Nova_FunctionMap.h>
+#include <nova/meta/nova_meta_Nova_PropertyMap.h>
 #include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <spectra/spectra_Nova_InvalidParseException.h>
 #include <spectra/tree/nodes/spectra_tree_nodes_Nova_Node.h>
 #include <spectra/tree/nodes/spectra_tree_nodes_Nova_Value.h>
 #include <spectra/util/spectra_util_Nova_Location.h>
+#include <spectra/tree/nodes/spectra_tree_nodes_Nova_Value.h>
 #include <spectra/tree/nodes/spectra_tree_nodes_Nova_Value.h>
 #include <nova/datastruct/nova_datastruct_Nova_Tuple2.h>
 #include <spectra/spectra_Nova_SyntaxMessage.h>
@@ -70,6 +73,7 @@ typedef struct spectra_tree_nodes_operations_Nova_ElvisOperationFunctionMap spec
 #include <spectra/tree/nodes/spectra_tree_nodes_Nova_StaticClassReference.h>
 #include <spectra/tree/nodes/spectra_tree_nodes_Nova_Type.h>
 #include <spectra/tree/nodes/spectra_tree_nodes_Nova_Node.h>
+#include <spectra/tree/nodes/spectra_tree_nodes_Nova_Node.h>
 #include <spectra/spectra_Nova_SyntaxErrorException.h>
 #include <spectra/error/spectra_error_Nova_UnimplementedOperationException.h>
 #include <spectra/tree/nodes/annotations/spectra_tree_nodes_annotations_Nova_Annotatable.h>
@@ -82,6 +86,7 @@ typedef struct spectra_tree_nodes_operations_Nova_ElvisOperationFunctionMap spec
 #include <spectra/tree/nodes/spectra_tree_nodes_Nova_Program.h>
 #include <spectra/tree/nodes/spectra_tree_nodes_Nova_Scope.h>
 #include <spectra/tree/nodes/spectra_tree_nodes_Nova_ValidationResult.h>
+#include <spectra/tree/nodes/annotations/spectra_tree_nodes_annotations_Nova_Annotatable.h>
 #include <spectra/tree/nodes/annotations/spectra_tree_nodes_annotations_Nova_Annotatable.h>
 #include <nova/NativeObject.h>
 
@@ -122,5 +127,20 @@ spectra_tree_nodes_operations_Nova_ElvisOperation* spectra_tree_nodes_operations
 spectra_tree_nodes_operations_Nova_ElvisOperation* spectra_tree_nodes_operations_Nova_ElvisOperationFunctionMap_functionMap_static_Nova_parse(spectra_tree_nodes_operations_Nova_ElvisOperationFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* input, spectra_tree_nodes_Nova_Node* parent, spectra_util_Nova_Location* location, char require);
 nova_Nova_String* spectra_tree_nodes_operations_Nova_ElvisOperationFunctionMap_functionMap_Nova_writeNova(spectra_tree_nodes_operations_Nova_ElvisOperationFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, spectra_tree_nodes_operations_Nova_ElvisOperation* reference);
 void spectra_tree_nodes_operations_Nova_ElvisOperationFunctionMap_Nova_super(spectra_tree_nodes_operations_Nova_ElvisOperationFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+
+CCLASS_CLASS
+(
+	spectra_tree_nodes_operations_Nova_ElvisOperationPropertyMap, 
+	
+	spectra_tree_nodes_operations_ElvisOperation_ElvisOperationPropertyMap_Extension_VTable* vtable;
+)
+
+void spectra_tree_nodes_operations_Nova_ElvisOperationPropertyMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData);
+spectra_tree_nodes_operations_Nova_ElvisOperationPropertyMap* spectra_tree_nodes_operations_Nova_ElvisOperationPropertyMap_Nova_construct(spectra_tree_nodes_operations_Nova_ElvisOperationPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+void spectra_tree_nodes_operations_Nova_ElvisOperationPropertyMap_Nova_destroy(spectra_tree_nodes_operations_Nova_ElvisOperationPropertyMap** this, nova_exception_Nova_ExceptionData* exceptionData);
+void spectra_tree_nodes_operations_Nova_ElvisOperationPropertyMap_Nova_this(spectra_tree_nodes_operations_Nova_ElvisOperationPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+spectra_tree_nodes_Nova_Value* spectra_tree_nodes_operations_Nova_ElvisOperationPropertyMap_functionMap_Nova_condition(spectra_tree_nodes_operations_Nova_ElvisOperationPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData, spectra_tree_nodes_operations_Nova_ElvisOperation* reference);
+spectra_tree_nodes_Nova_Value* spectra_tree_nodes_operations_Nova_ElvisOperationPropertyMap_functionMap_Nova_otherwise(spectra_tree_nodes_operations_Nova_ElvisOperationPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData, spectra_tree_nodes_operations_Nova_ElvisOperation* reference);
+void spectra_tree_nodes_operations_Nova_ElvisOperationPropertyMap_Nova_super(spectra_tree_nodes_operations_Nova_ElvisOperationPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData);
 
 #endif

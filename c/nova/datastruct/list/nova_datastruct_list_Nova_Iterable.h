@@ -3,6 +3,7 @@
 
 typedef struct nova_datastruct_list_Nova_Iterable nova_datastruct_list_Nova_Iterable;
 typedef struct nova_datastruct_list_Nova_IterableFunctionMap nova_datastruct_list_Nova_IterableFunctionMap;
+typedef struct nova_datastruct_list_Nova_IterablePropertyMap nova_datastruct_list_Nova_IterablePropertyMap;
 
 
 #include <Nova.h>
@@ -39,6 +40,7 @@ typedef struct nova_datastruct_list_Nova_IterableFunctionMap nova_datastruct_lis
 #include <nova/nova_Nova_System.h>
 #include <nova/meta/nova_meta_Nova_Class.h>
 #include <nova/meta/nova_meta_Nova_FunctionMap.h>
+#include <nova/meta/nova_meta_Nova_PropertyMap.h>
 #include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_Iterator.h>
 #include <nova/NativeObject.h>
@@ -68,5 +70,20 @@ nova_datastruct_list_Nova_IterableFunctionMap* nova_datastruct_list_Nova_Iterabl
 void nova_datastruct_list_Nova_IterableFunctionMap_Nova_destroy(nova_datastruct_list_Nova_IterableFunctionMap** this, nova_exception_Nova_ExceptionData* exceptionData);
 void nova_datastruct_list_Nova_IterableFunctionMap_Nova_this(nova_datastruct_list_Nova_IterableFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
 void nova_datastruct_list_Nova_IterableFunctionMap_Nova_super(nova_datastruct_list_Nova_IterableFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+
+CCLASS_CLASS
+(
+	nova_datastruct_list_Nova_IterablePropertyMap, 
+	
+	nova_datastruct_list_Iterable_IterablePropertyMap_Extension_VTable* vtable;
+)
+
+void nova_datastruct_list_Nova_IterablePropertyMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData);
+nova_datastruct_list_Nova_IterablePropertyMap* nova_datastruct_list_Nova_IterablePropertyMap_Nova_construct(nova_datastruct_list_Nova_IterablePropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+void nova_datastruct_list_Nova_IterablePropertyMap_Nova_destroy(nova_datastruct_list_Nova_IterablePropertyMap** this, nova_exception_Nova_ExceptionData* exceptionData);
+void nova_datastruct_list_Nova_IterablePropertyMap_Nova_this(nova_datastruct_list_Nova_IterablePropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+nova_datastruct_list_Nova_Iterator* nova_datastruct_list_Nova_IterablePropertyMap_functionMap2_Nova_iterator(nova_datastruct_list_Nova_IterablePropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_list_Nova_Iterable* reference);
+void nova_datastruct_list_Nova_IterablePropertyMap_Nova_super(nova_datastruct_list_Nova_IterablePropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+nova_datastruct_list_Nova_Iterator* nova_datastruct_list_Nova_IterablePropertyMap_virtualfunctionMap2_Nova_iterator(nova_datastruct_list_Nova_IterablePropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_list_Nova_Iterable* reference);
 
 #endif

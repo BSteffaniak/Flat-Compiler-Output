@@ -3,6 +3,7 @@
 
 typedef struct example_Nova_ClosureDemo example_Nova_ClosureDemo;
 typedef struct example_Nova_ClosureDemoFunctionMap example_Nova_ClosureDemoFunctionMap;
+typedef struct example_Nova_ClosureDemoPropertyMap example_Nova_ClosureDemoPropertyMap;
 
 
 #include <Nova.h>
@@ -39,6 +40,7 @@ typedef struct example_Nova_ClosureDemoFunctionMap example_Nova_ClosureDemoFunct
 #include <nova/nova_Nova_System.h>
 #include <nova/meta/nova_meta_Nova_Class.h>
 #include <nova/meta/nova_meta_Nova_FunctionMap.h>
+#include <nova/meta/nova_meta_Nova_PropertyMap.h>
 #include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <nova/NativeObject.h>
 
@@ -70,5 +72,18 @@ void example_Nova_ClosureDemoFunctionMap_Nova_this(example_Nova_ClosureDemoFunct
 example_Nova_ClosureDemo* example_Nova_ClosureDemoFunctionMap_functionMapClosureDemoFunctionMap_Nova_construct(example_Nova_ClosureDemoFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
 void example_Nova_ClosureDemoFunctionMap_functionMap_static_Nova_main(example_Nova_ClosureDemoFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_list_Nova_Array* args);
 void example_Nova_ClosureDemoFunctionMap_Nova_super(example_Nova_ClosureDemoFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+
+CCLASS_CLASS
+(
+	example_Nova_ClosureDemoPropertyMap, 
+	
+	example_ClosureDemo_ClosureDemoPropertyMap_Extension_VTable* vtable;
+)
+
+void example_Nova_ClosureDemoPropertyMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData);
+example_Nova_ClosureDemoPropertyMap* example_Nova_ClosureDemoPropertyMap_Nova_construct(example_Nova_ClosureDemoPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+void example_Nova_ClosureDemoPropertyMap_Nova_destroy(example_Nova_ClosureDemoPropertyMap** this, nova_exception_Nova_ExceptionData* exceptionData);
+void example_Nova_ClosureDemoPropertyMap_Nova_this(example_Nova_ClosureDemoPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+void example_Nova_ClosureDemoPropertyMap_Nova_super(example_Nova_ClosureDemoPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData);
 
 #endif

@@ -3,6 +3,7 @@
 
 typedef struct nova_operators_Nova_PlusEqualsOperator nova_operators_Nova_PlusEqualsOperator;
 typedef struct nova_operators_Nova_PlusEqualsOperatorFunctionMap nova_operators_Nova_PlusEqualsOperatorFunctionMap;
+typedef struct nova_operators_Nova_PlusEqualsOperatorPropertyMap nova_operators_Nova_PlusEqualsOperatorPropertyMap;
 
 
 #include <Nova.h>
@@ -39,6 +40,7 @@ typedef struct nova_operators_Nova_PlusEqualsOperatorFunctionMap nova_operators_
 #include <nova/nova_Nova_System.h>
 #include <nova/meta/nova_meta_Nova_Class.h>
 #include <nova/meta/nova_meta_Nova_FunctionMap.h>
+#include <nova/meta/nova_meta_Nova_PropertyMap.h>
 #include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <nova/NativeObject.h>
 
@@ -64,5 +66,18 @@ nova_operators_Nova_PlusEqualsOperatorFunctionMap* nova_operators_Nova_PlusEqual
 void nova_operators_Nova_PlusEqualsOperatorFunctionMap_Nova_destroy(nova_operators_Nova_PlusEqualsOperatorFunctionMap** this, nova_exception_Nova_ExceptionData* exceptionData);
 void nova_operators_Nova_PlusEqualsOperatorFunctionMap_Nova_this(nova_operators_Nova_PlusEqualsOperatorFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
 void nova_operators_Nova_PlusEqualsOperatorFunctionMap_Nova_super(nova_operators_Nova_PlusEqualsOperatorFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+
+CCLASS_CLASS
+(
+	nova_operators_Nova_PlusEqualsOperatorPropertyMap, 
+	
+	nova_operators_PlusEqualsOperator_PlusEqualsOperatorPropertyMap_Extension_VTable* vtable;
+)
+
+void nova_operators_Nova_PlusEqualsOperatorPropertyMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData);
+nova_operators_Nova_PlusEqualsOperatorPropertyMap* nova_operators_Nova_PlusEqualsOperatorPropertyMap_Nova_construct(nova_operators_Nova_PlusEqualsOperatorPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+void nova_operators_Nova_PlusEqualsOperatorPropertyMap_Nova_destroy(nova_operators_Nova_PlusEqualsOperatorPropertyMap** this, nova_exception_Nova_ExceptionData* exceptionData);
+void nova_operators_Nova_PlusEqualsOperatorPropertyMap_Nova_this(nova_operators_Nova_PlusEqualsOperatorPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+void nova_operators_Nova_PlusEqualsOperatorPropertyMap_Nova_super(nova_operators_Nova_PlusEqualsOperatorPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData);
 
 #endif

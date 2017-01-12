@@ -29,12 +29,16 @@
 #include <nova/nova_Nova_System.h>
 #include <nova/meta/nova_meta_Nova_Class.h>
 #include <nova/meta/nova_meta_Nova_FunctionMap.h>
+#include <nova/meta/nova_meta_Nova_PropertyMap.h>
 #include <nova/regex/nova_regex_Nova_Pattern.h>
+#include <nova/datastruct/nova_datastruct_Nova_HashMap.h>
 #include <nova/datastruct/nova_datastruct_Nova_HashMap.h>
 #include <nova/datastruct/nova_datastruct_Nova_HashMap.h>
 #include <nova/operators/nova_operators_Nova_EqualsOperator.h>
 #include <nova/datastruct/nova_datastruct_Nova_ImmutableHashMap.h>
 #include <nova/datastruct/nova_datastruct_Nova_Pair.h>
+#include <nova/datastruct/list/nova_datastruct_list_Nova_List.h>
+#include <nova/datastruct/list/nova_datastruct_list_Nova_Iterable.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_List.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_Iterable.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_Iterator.h>
@@ -144,6 +148,47 @@ nova_Nova_String* nova_web_js_json_Nova_JsonFunctionMap_functionMap_Nova_toStrin
 }
 
 void nova_web_js_json_Nova_JsonFunctionMap_Nova_super(nova_web_js_json_Nova_JsonFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+}
+
+void nova_web_js_json_Nova_JsonPropertyMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData)
+{
+	{
+	}
+}
+
+nova_web_js_json_Nova_JsonPropertyMap* nova_web_js_json_Nova_JsonPropertyMap_Nova_construct(nova_web_js_json_Nova_JsonPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+	CCLASS_NEW(nova_web_js_json_Nova_JsonPropertyMap, this,);
+	this->vtable = &nova_web_js_json_Json_JsonPropertyMap_Extension_VTable_val;
+	nova_Nova_Object_Nova_super((nova_Nova_Object*)this, exceptionData);
+	nova_meta_Nova_PropertyMap_Nova_super((nova_meta_Nova_PropertyMap*)this, exceptionData);
+	nova_datastruct_Nova_HashMapPropertyMap_Nova_super((nova_datastruct_Nova_HashMapPropertyMap*)this, exceptionData);
+	nova_web_js_json_Nova_JsonPropertyMap_Nova_super(this, exceptionData);
+	
+	{
+		nova_web_js_json_Nova_JsonPropertyMap_Nova_this(this, exceptionData);
+	}
+	
+	return this;
+}
+
+void nova_web_js_json_Nova_JsonPropertyMap_Nova_destroy(nova_web_js_json_Nova_JsonPropertyMap** this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+	if (!*this)
+	{
+		return;
+	}
+	
+	
+	NOVA_FREE(*this);
+}
+
+void nova_web_js_json_Nova_JsonPropertyMap_Nova_this(nova_web_js_json_Nova_JsonPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+}
+
+void nova_web_js_json_Nova_JsonPropertyMap_Nova_super(nova_web_js_json_Nova_JsonPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
 }
 

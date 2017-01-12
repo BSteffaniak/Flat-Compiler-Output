@@ -3,6 +3,7 @@
 
 typedef struct stabilitytest_Nova_PolymorphismStability stabilitytest_Nova_PolymorphismStability;
 typedef struct stabilitytest_Nova_PolymorphismStabilityFunctionMap stabilitytest_Nova_PolymorphismStabilityFunctionMap;
+typedef struct stabilitytest_Nova_PolymorphismStabilityPropertyMap stabilitytest_Nova_PolymorphismStabilityPropertyMap;
 
 
 #include <Nova.h>
@@ -39,10 +40,12 @@ typedef struct stabilitytest_Nova_PolymorphismStabilityFunctionMap stabilitytest
 #include <nova/nova_Nova_System.h>
 #include <nova/meta/nova_meta_Nova_Class.h>
 #include <nova/meta/nova_meta_Nova_FunctionMap.h>
+#include <nova/meta/nova_meta_Nova_PropertyMap.h>
 #include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <stabilitytest/stabilitytest_Nova_PolymorphicSubClass.h>
 #include <stabilitytest/stabilitytest_Nova_PolymorphicSuperClass.h>
 #include <stabilitytest/stabilitytest_Nova_StabilityTest.h>
+#include <stabilitytest/stabilitytest_Nova_StabilityTestCase.h>
 #include <stabilitytest/stabilitytest_Nova_StabilityTestCase.h>
 #include <stabilitytest/stabilitytest_Nova_StabilityTestCase.h>
 #include <nova/NativeObject.h>
@@ -76,5 +79,18 @@ void stabilitytest_Nova_PolymorphismStabilityFunctionMap_Nova_this(stabilitytest
 stabilitytest_Nova_PolymorphismStability* stabilitytest_Nova_PolymorphismStabilityFunctionMap_functionMapPolymorphismStabilityFunctionMap_Nova_construct(stabilitytest_Nova_PolymorphismStabilityFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, stabilitytest_Nova_StabilityTest* program);
 void stabilitytest_Nova_PolymorphismStabilityFunctionMap_functionMap_Nova_test(stabilitytest_Nova_PolymorphismStabilityFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, stabilitytest_Nova_PolymorphismStability* reference);
 void stabilitytest_Nova_PolymorphismStabilityFunctionMap_Nova_super(stabilitytest_Nova_PolymorphismStabilityFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+
+CCLASS_CLASS
+(
+	stabilitytest_Nova_PolymorphismStabilityPropertyMap, 
+	
+	stabilitytest_PolymorphismStability_PolymorphismStabilityPropertyMap_Extension_VTable* vtable;
+)
+
+void stabilitytest_Nova_PolymorphismStabilityPropertyMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData);
+stabilitytest_Nova_PolymorphismStabilityPropertyMap* stabilitytest_Nova_PolymorphismStabilityPropertyMap_Nova_construct(stabilitytest_Nova_PolymorphismStabilityPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+void stabilitytest_Nova_PolymorphismStabilityPropertyMap_Nova_destroy(stabilitytest_Nova_PolymorphismStabilityPropertyMap** this, nova_exception_Nova_ExceptionData* exceptionData);
+void stabilitytest_Nova_PolymorphismStabilityPropertyMap_Nova_this(stabilitytest_Nova_PolymorphismStabilityPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+void stabilitytest_Nova_PolymorphismStabilityPropertyMap_Nova_super(stabilitytest_Nova_PolymorphismStabilityPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData);
 
 #endif

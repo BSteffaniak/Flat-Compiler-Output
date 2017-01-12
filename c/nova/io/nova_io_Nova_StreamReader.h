@@ -3,6 +3,7 @@
 
 typedef struct nova_io_Nova_StreamReader nova_io_Nova_StreamReader;
 typedef struct nova_io_Nova_StreamReaderFunctionMap nova_io_Nova_StreamReaderFunctionMap;
+typedef struct nova_io_Nova_StreamReaderPropertyMap nova_io_Nova_StreamReaderPropertyMap;
 
 
 #include <Nova.h>
@@ -39,6 +40,7 @@ typedef struct nova_io_Nova_StreamReaderFunctionMap nova_io_Nova_StreamReaderFun
 #include <nova/nova_Nova_System.h>
 #include <nova/meta/nova_meta_Nova_Class.h>
 #include <nova/meta/nova_meta_Nova_FunctionMap.h>
+#include <nova/meta/nova_meta_Nova_PropertyMap.h>
 #include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <nova/NativeObject.h>
 
@@ -68,5 +70,18 @@ void nova_io_Nova_StreamReaderFunctionMap_Nova_destroy(nova_io_Nova_StreamReader
 void nova_io_Nova_StreamReaderFunctionMap_Nova_this(nova_io_Nova_StreamReaderFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
 nova_io_Nova_StreamReader* nova_io_Nova_StreamReaderFunctionMap_functionMapStreamReaderFunctionMap_Nova_construct(nova_io_Nova_StreamReaderFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
 void nova_io_Nova_StreamReaderFunctionMap_Nova_super(nova_io_Nova_StreamReaderFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+
+CCLASS_CLASS
+(
+	nova_io_Nova_StreamReaderPropertyMap, 
+	
+	nova_io_StreamReader_StreamReaderPropertyMap_Extension_VTable* vtable;
+)
+
+void nova_io_Nova_StreamReaderPropertyMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData);
+nova_io_Nova_StreamReaderPropertyMap* nova_io_Nova_StreamReaderPropertyMap_Nova_construct(nova_io_Nova_StreamReaderPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+void nova_io_Nova_StreamReaderPropertyMap_Nova_destroy(nova_io_Nova_StreamReaderPropertyMap** this, nova_exception_Nova_ExceptionData* exceptionData);
+void nova_io_Nova_StreamReaderPropertyMap_Nova_this(nova_io_Nova_StreamReaderPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+void nova_io_Nova_StreamReaderPropertyMap_Nova_super(nova_io_Nova_StreamReaderPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData);
 
 #endif

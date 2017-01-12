@@ -29,12 +29,18 @@
 #include <nova/nova_Nova_System.h>
 #include <nova/meta/nova_meta_Nova_Class.h>
 #include <nova/meta/nova_meta_Nova_FunctionMap.h>
+#include <nova/meta/nova_meta_Nova_PropertyMap.h>
 #include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <nova/datastruct/nova_datastruct_Nova_Comparable.h>
 #include <nova/primitive/number/nova_primitive_number_Nova_Integer.h>
 #include <nova/primitive/number/nova_primitive_number_Nova_Number.h>
 #include <nova/datastruct/nova_datastruct_Nova_Comparable.h>
 #include <nova/primitive/number/nova_primitive_number_Nova_Integer.h>
+#include <nova/primitive/number/nova_primitive_number_Nova_Number.h>
+#include <nova/datastruct/nova_datastruct_Nova_Comparable.h>
+#include <nova/primitive/number/nova_primitive_number_Nova_Integer.h>
+#include <nova/primitive/nova_primitive_Nova_Primitive.h>
+#include <nova/operators/nova_operators_Nova_MultiplyOperator.h>
 #include <nova/primitive/nova_primitive_Nova_Primitive.h>
 #include <nova/operators/nova_operators_Nova_MultiplyOperator.h>
 #include <nova/primitive/nova_primitive_Nova_Primitive.h>
@@ -220,6 +226,58 @@ nova_Nova_String* nova_primitive_number_Nova_LongFunctionMap_functionMap_Nova_to
 }
 
 void nova_primitive_number_Nova_LongFunctionMap_Nova_super(nova_primitive_number_Nova_LongFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+}
+
+void nova_primitive_number_Nova_LongPropertyMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData)
+{
+	{
+	}
+}
+
+nova_primitive_number_Nova_LongPropertyMap* nova_primitive_number_Nova_LongPropertyMap_Nova_construct(nova_primitive_number_Nova_LongPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+	CCLASS_NEW(nova_primitive_number_Nova_LongPropertyMap, this,);
+	this->vtable = &nova_primitive_number_Long_LongPropertyMap_Extension_VTable_val;
+	nova_Nova_Object_Nova_super((nova_Nova_Object*)this, exceptionData);
+	nova_meta_Nova_PropertyMap_Nova_super((nova_meta_Nova_PropertyMap*)this, exceptionData);
+	nova_primitive_Nova_PrimitivePropertyMap_Nova_super((nova_primitive_Nova_PrimitivePropertyMap*)this, exceptionData);
+	nova_primitive_number_Nova_NumberPropertyMap_Nova_super((nova_primitive_number_Nova_NumberPropertyMap*)this, exceptionData);
+	nova_primitive_number_Nova_LongPropertyMap_Nova_super(this, exceptionData);
+	
+	{
+		nova_primitive_number_Nova_LongPropertyMap_Nova_this(this, exceptionData);
+	}
+	
+	return this;
+}
+
+void nova_primitive_number_Nova_LongPropertyMap_Nova_destroy(nova_primitive_number_Nova_LongPropertyMap** this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+	if (!*this)
+	{
+		return;
+	}
+	
+	
+	NOVA_FREE(*this);
+}
+
+void nova_primitive_number_Nova_LongPropertyMap_Nova_this(nova_primitive_number_Nova_LongPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+}
+
+long_long nova_primitive_number_Nova_LongPropertyMap_functionMap_static_Nova_MAX_VALUE(nova_primitive_number_Nova_LongPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+	return nova_primitive_number_Nova_Long_Nova_MAX_VALUE;
+}
+
+long_long nova_primitive_number_Nova_LongPropertyMap_functionMap_static_Nova_MIN_VALUE(nova_primitive_number_Nova_LongPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+	return nova_primitive_number_Nova_Long_Nova_MIN_VALUE;
+}
+
+void nova_primitive_number_Nova_LongPropertyMap_Nova_super(nova_primitive_number_Nova_LongPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
 }
 

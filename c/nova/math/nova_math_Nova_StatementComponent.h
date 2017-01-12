@@ -3,6 +3,7 @@
 
 typedef struct nova_math_Nova_StatementComponent nova_math_Nova_StatementComponent;
 typedef struct nova_math_Nova_StatementComponentFunctionMap nova_math_Nova_StatementComponentFunctionMap;
+typedef struct nova_math_Nova_StatementComponentPropertyMap nova_math_Nova_StatementComponentPropertyMap;
 
 
 #include <Nova.h>
@@ -39,6 +40,7 @@ typedef struct nova_math_Nova_StatementComponentFunctionMap nova_math_Nova_State
 #include <nova/nova_Nova_System.h>
 #include <nova/meta/nova_meta_Nova_Class.h>
 #include <nova/meta/nova_meta_Nova_FunctionMap.h>
+#include <nova/meta/nova_meta_Nova_PropertyMap.h>
 #include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <nova/NativeObject.h>
 
@@ -72,5 +74,20 @@ void nova_math_Nova_StatementComponentFunctionMap_Nova_this(nova_math_Nova_State
 nova_math_Nova_StatementComponent* nova_math_Nova_StatementComponentFunctionMap_functionMapStatementComponentFunctionMap_Nova_construct(nova_math_Nova_StatementComponentFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_Object* data, nova_math_Nova_StatementComponent* next);
 nova_Nova_String* nova_math_Nova_StatementComponentFunctionMap_functionMap_Nova_toString(nova_math_Nova_StatementComponentFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_math_Nova_StatementComponent* reference);
 void nova_math_Nova_StatementComponentFunctionMap_Nova_super(nova_math_Nova_StatementComponentFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+
+CCLASS_CLASS
+(
+	nova_math_Nova_StatementComponentPropertyMap, 
+	
+	nova_math_StatementComponent_StatementComponentPropertyMap_Extension_VTable* vtable;
+)
+
+void nova_math_Nova_StatementComponentPropertyMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData);
+nova_math_Nova_StatementComponentPropertyMap* nova_math_Nova_StatementComponentPropertyMap_Nova_construct(nova_math_Nova_StatementComponentPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+void nova_math_Nova_StatementComponentPropertyMap_Nova_destroy(nova_math_Nova_StatementComponentPropertyMap** this, nova_exception_Nova_ExceptionData* exceptionData);
+void nova_math_Nova_StatementComponentPropertyMap_Nova_this(nova_math_Nova_StatementComponentPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+nova_Nova_Object* nova_math_Nova_StatementComponentPropertyMap_functionMap_Nova_data(nova_math_Nova_StatementComponentPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_math_Nova_StatementComponent* reference);
+nova_math_Nova_StatementComponent* nova_math_Nova_StatementComponentPropertyMap_functionMap_Nova_next(nova_math_Nova_StatementComponentPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_math_Nova_StatementComponent* reference);
+void nova_math_Nova_StatementComponentPropertyMap_Nova_super(nova_math_Nova_StatementComponentPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData);
 
 #endif

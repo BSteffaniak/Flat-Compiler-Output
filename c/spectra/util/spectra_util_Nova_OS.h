@@ -3,6 +3,7 @@
 
 typedef struct spectra_util_Nova_OS spectra_util_Nova_OS;
 typedef struct spectra_util_Nova_OSFunctionMap spectra_util_Nova_OSFunctionMap;
+typedef struct spectra_util_Nova_OSPropertyMap spectra_util_Nova_OSPropertyMap;
 
 
 #include <Nova.h>
@@ -39,6 +40,7 @@ typedef struct spectra_util_Nova_OSFunctionMap spectra_util_Nova_OSFunctionMap;
 #include <nova/nova_Nova_System.h>
 #include <nova/meta/nova_meta_Nova_Class.h>
 #include <nova/meta/nova_meta_Nova_FunctionMap.h>
+#include <nova/meta/nova_meta_Nova_PropertyMap.h>
 #include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <nova/NativeObject.h>
 
@@ -77,5 +79,27 @@ void spectra_util_Nova_OSFunctionMap_Nova_destroy(spectra_util_Nova_OSFunctionMa
 void spectra_util_Nova_OSFunctionMap_Nova_this(spectra_util_Nova_OSFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
 spectra_util_Nova_OS* spectra_util_Nova_OSFunctionMap_functionMapOSFunctionMap_Nova_construct(spectra_util_Nova_OSFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
 void spectra_util_Nova_OSFunctionMap_Nova_super(spectra_util_Nova_OSFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+
+CCLASS_CLASS
+(
+	spectra_util_Nova_OSPropertyMap, 
+	
+	spectra_util_OS_OSPropertyMap_Extension_VTable* vtable;
+)
+
+void spectra_util_Nova_OSPropertyMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData);
+spectra_util_Nova_OSPropertyMap* spectra_util_Nova_OSPropertyMap_Nova_construct(spectra_util_Nova_OSPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+void spectra_util_Nova_OSPropertyMap_Nova_destroy(spectra_util_Nova_OSPropertyMap** this, nova_exception_Nova_ExceptionData* exceptionData);
+void spectra_util_Nova_OSPropertyMap_Nova_this(spectra_util_Nova_OSPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+char spectra_util_Nova_OSPropertyMap_functionMap_static_Nova_OS(spectra_util_Nova_OSPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+char spectra_util_Nova_OSPropertyMap_functionMap_static_Nova_WINDOWS(spectra_util_Nova_OSPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+char spectra_util_Nova_OSPropertyMap_functionMap_static_Nova_MACOSX(spectra_util_Nova_OSPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+char spectra_util_Nova_OSPropertyMap_functionMap_static_Nova_LINUX(spectra_util_Nova_OSPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+nova_Nova_String* spectra_util_Nova_OSPropertyMap_functionMap_static_Nova_OUTPUT_EXTENSION(spectra_util_Nova_OSPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+nova_Nova_String* spectra_util_Nova_OSPropertyMap_functionMap_static_Nova_DYNAMIC_LIB_EXT(spectra_util_Nova_OSPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+char spectra_util_Nova_OSPropertyMap_functionMap_static_Nova_isWindows(spectra_util_Nova_OSPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+char spectra_util_Nova_OSPropertyMap_functionMap_static_Nova_isMacOsx(spectra_util_Nova_OSPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+char spectra_util_Nova_OSPropertyMap_functionMap_static_Nova_isLinux(spectra_util_Nova_OSPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+void spectra_util_Nova_OSPropertyMap_Nova_super(spectra_util_Nova_OSPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData);
 
 #endif

@@ -29,7 +29,9 @@
 #include <nova/nova_Nova_System.h>
 #include <nova/meta/nova_meta_Nova_Class.h>
 #include <nova/meta/nova_meta_Nova_FunctionMap.h>
+#include <nova/meta/nova_meta_Nova_PropertyMap.h>
 #include <nova/regex/nova_regex_Nova_Pattern.h>
+#include <example/example_Nova_Animal.h>
 #include <example/example_Nova_Animal.h>
 #include <example/example_Nova_Animal.h>
 #include <nova/NativeObject.h>
@@ -149,6 +151,47 @@ nova_Nova_String* example_Nova_DogFunctionMap_functionMap_Nova_getDescription(ex
 }
 
 void example_Nova_DogFunctionMap_Nova_super(example_Nova_DogFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+}
+
+void example_Nova_DogPropertyMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData)
+{
+	{
+	}
+}
+
+example_Nova_DogPropertyMap* example_Nova_DogPropertyMap_Nova_construct(example_Nova_DogPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+	CCLASS_NEW(example_Nova_DogPropertyMap, this,);
+	this->vtable = &example_Dog_DogPropertyMap_Extension_VTable_val;
+	nova_Nova_Object_Nova_super((nova_Nova_Object*)this, exceptionData);
+	nova_meta_Nova_PropertyMap_Nova_super((nova_meta_Nova_PropertyMap*)this, exceptionData);
+	example_Nova_AnimalPropertyMap_Nova_super((example_Nova_AnimalPropertyMap*)this, exceptionData);
+	example_Nova_DogPropertyMap_Nova_super(this, exceptionData);
+	
+	{
+		example_Nova_DogPropertyMap_Nova_this(this, exceptionData);
+	}
+	
+	return this;
+}
+
+void example_Nova_DogPropertyMap_Nova_destroy(example_Nova_DogPropertyMap** this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+	if (!*this)
+	{
+		return;
+	}
+	
+	
+	NOVA_FREE(*this);
+}
+
+void example_Nova_DogPropertyMap_Nova_this(example_Nova_DogPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+}
+
+void example_Nova_DogPropertyMap_Nova_super(example_Nova_DogPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
 }
 

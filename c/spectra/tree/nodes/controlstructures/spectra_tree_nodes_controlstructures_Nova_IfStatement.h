@@ -3,6 +3,7 @@
 
 typedef struct spectra_tree_nodes_controlstructures_Nova_IfStatement spectra_tree_nodes_controlstructures_Nova_IfStatement;
 typedef struct spectra_tree_nodes_controlstructures_Nova_IfStatementFunctionMap spectra_tree_nodes_controlstructures_Nova_IfStatementFunctionMap;
+typedef struct spectra_tree_nodes_controlstructures_Nova_IfStatementPropertyMap spectra_tree_nodes_controlstructures_Nova_IfStatementPropertyMap;
 
 
 #include <Nova.h>
@@ -39,6 +40,7 @@ typedef struct spectra_tree_nodes_controlstructures_Nova_IfStatementFunctionMap 
 #include <nova/nova_Nova_System.h>
 #include <nova/meta/nova_meta_Nova_Class.h>
 #include <nova/meta/nova_meta_Nova_FunctionMap.h>
+#include <nova/meta/nova_meta_Nova_PropertyMap.h>
 #include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <spectra/tree/nodes/spectra_tree_nodes_Nova_Node.h>
 #include <spectra/tree/nodes/spectra_tree_nodes_Nova_Scope.h>
@@ -47,6 +49,8 @@ typedef struct spectra_tree_nodes_controlstructures_Nova_IfStatementFunctionMap 
 #include <spectra/util/spectra_util_Nova_Location.h>
 #include <spectra/tree/nodes/controlstructures/spectra_tree_nodes_controlstructures_Nova_ControlStructure.h>
 #include <spectra/tree/nodes/controlstructures/spectra_tree_nodes_controlstructures_Nova_ControlStructure.h>
+#include <spectra/tree/nodes/controlstructures/spectra_tree_nodes_controlstructures_Nova_ControlStructure.h>
+#include <spectra/tree/nodes/spectra_tree_nodes_Nova_Node.h>
 #include <spectra/tree/nodes/spectra_tree_nodes_Nova_Node.h>
 #include <spectra/spectra_Nova_InvalidParseException.h>
 #include <spectra/spectra_Nova_SyntaxErrorException.h>
@@ -65,6 +69,7 @@ typedef struct spectra_tree_nodes_controlstructures_Nova_IfStatementFunctionMap 
 #include <spectra/tree/nodes/spectra_tree_nodes_Nova_PlaceholderValue.h>
 #include <spectra/tree/nodes/spectra_tree_nodes_Nova_Program.h>
 #include <spectra/tree/nodes/spectra_tree_nodes_Nova_ValidationResult.h>
+#include <spectra/tree/nodes/annotations/spectra_tree_nodes_annotations_Nova_Annotatable.h>
 #include <spectra/tree/nodes/annotations/spectra_tree_nodes_annotations_Nova_Annotatable.h>
 #include <nova/NativeObject.h>
 
@@ -103,5 +108,19 @@ spectra_tree_nodes_controlstructures_Nova_IfStatement* spectra_tree_nodes_contro
 spectra_tree_nodes_controlstructures_Nova_IfStatement* spectra_tree_nodes_controlstructures_Nova_IfStatementFunctionMap_functionMap_static_Nova_parse(spectra_tree_nodes_controlstructures_Nova_IfStatementFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* input, spectra_tree_nodes_Nova_Node* parent, spectra_util_Nova_Location* location, char require);
 nova_Nova_String* spectra_tree_nodes_controlstructures_Nova_IfStatementFunctionMap_functionMap_Nova_writeNova(spectra_tree_nodes_controlstructures_Nova_IfStatementFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, spectra_tree_nodes_controlstructures_Nova_IfStatement* reference);
 void spectra_tree_nodes_controlstructures_Nova_IfStatementFunctionMap_Nova_super(spectra_tree_nodes_controlstructures_Nova_IfStatementFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+
+CCLASS_CLASS
+(
+	spectra_tree_nodes_controlstructures_Nova_IfStatementPropertyMap, 
+	
+	spectra_tree_nodes_controlstructures_IfStatement_IfStatementPropertyMap_Extension_VTable* vtable;
+)
+
+void spectra_tree_nodes_controlstructures_Nova_IfStatementPropertyMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData);
+spectra_tree_nodes_controlstructures_Nova_IfStatementPropertyMap* spectra_tree_nodes_controlstructures_Nova_IfStatementPropertyMap_Nova_construct(spectra_tree_nodes_controlstructures_Nova_IfStatementPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+void spectra_tree_nodes_controlstructures_Nova_IfStatementPropertyMap_Nova_destroy(spectra_tree_nodes_controlstructures_Nova_IfStatementPropertyMap** this, nova_exception_Nova_ExceptionData* exceptionData);
+void spectra_tree_nodes_controlstructures_Nova_IfStatementPropertyMap_Nova_this(spectra_tree_nodes_controlstructures_Nova_IfStatementPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+spectra_tree_nodes_Nova_Value* spectra_tree_nodes_controlstructures_Nova_IfStatementPropertyMap_functionMap_Nova_condition(spectra_tree_nodes_controlstructures_Nova_IfStatementPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData, spectra_tree_nodes_controlstructures_Nova_IfStatement* reference);
+void spectra_tree_nodes_controlstructures_Nova_IfStatementPropertyMap_Nova_super(spectra_tree_nodes_controlstructures_Nova_IfStatementPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData);
 
 #endif

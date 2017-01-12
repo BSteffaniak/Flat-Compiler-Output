@@ -29,6 +29,7 @@
 #include <nova/nova_Nova_System.h>
 #include <nova/meta/nova_meta_Nova_Class.h>
 #include <nova/meta/nova_meta_Nova_FunctionMap.h>
+#include <nova/meta/nova_meta_Nova_PropertyMap.h>
 #include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <nova/time/NativeTime.h>
 #include <nova/NativeObject.h>
@@ -124,6 +125,51 @@ nova_time_Nova_Time* nova_time_Nova_TimeFunctionMap_functionMapTimeFunctionMap_N
 }
 
 void nova_time_Nova_TimeFunctionMap_Nova_super(nova_time_Nova_TimeFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+}
+
+void nova_time_Nova_TimePropertyMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData)
+{
+	{
+	}
+}
+
+nova_time_Nova_TimePropertyMap* nova_time_Nova_TimePropertyMap_Nova_construct(nova_time_Nova_TimePropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+	CCLASS_NEW(nova_time_Nova_TimePropertyMap, this,);
+	this->vtable = &nova_time_Time_TimePropertyMap_Extension_VTable_val;
+	nova_Nova_Object_Nova_super((nova_Nova_Object*)this, exceptionData);
+	nova_meta_Nova_PropertyMap_Nova_super((nova_meta_Nova_PropertyMap*)this, exceptionData);
+	nova_time_Nova_TimePropertyMap_Nova_super(this, exceptionData);
+	
+	{
+		nova_time_Nova_TimePropertyMap_Nova_this(this, exceptionData);
+	}
+	
+	return this;
+}
+
+void nova_time_Nova_TimePropertyMap_Nova_destroy(nova_time_Nova_TimePropertyMap** this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+	if (!*this)
+	{
+		return;
+	}
+	
+	
+	NOVA_FREE(*this);
+}
+
+void nova_time_Nova_TimePropertyMap_Nova_this(nova_time_Nova_TimePropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+}
+
+long_long nova_time_Nova_TimePropertyMap_functionMap_static_Nova_currentTimeMillis(nova_time_Nova_TimePropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+	return nova_time_Nova_Time_Accessor_static_Nova_currentTimeMillis(0, exceptionData);
+}
+
+void nova_time_Nova_TimePropertyMap_Nova_super(nova_time_Nova_TimePropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
 }
 

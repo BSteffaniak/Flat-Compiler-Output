@@ -3,6 +3,7 @@
 
 typedef struct nova_meta_Nova_Field nova_meta_Nova_Field;
 typedef struct nova_meta_Nova_FieldFunctionMap nova_meta_Nova_FieldFunctionMap;
+typedef struct nova_meta_Nova_FieldPropertyMap nova_meta_Nova_FieldPropertyMap;
 
 
 #include <Nova.h>
@@ -39,6 +40,7 @@ typedef struct nova_meta_Nova_FieldFunctionMap nova_meta_Nova_FieldFunctionMap;
 #include <nova/nova_Nova_System.h>
 #include <nova/meta/nova_meta_Nova_Class.h>
 #include <nova/meta/nova_meta_Nova_FunctionMap.h>
+#include <nova/meta/nova_meta_Nova_PropertyMap.h>
 #include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <nova/meta/nova_meta_Nova_Type.h>
 #include <nova/NativeObject.h>
@@ -71,5 +73,20 @@ void nova_meta_Nova_FieldFunctionMap_Nova_destroy(nova_meta_Nova_FieldFunctionMa
 void nova_meta_Nova_FieldFunctionMap_Nova_this(nova_meta_Nova_FieldFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
 nova_meta_Nova_Field* nova_meta_Nova_FieldFunctionMap_functionMapFieldFunctionMap_Nova_construct(nova_meta_Nova_FieldFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* name, nova_meta_Nova_Type* type);
 void nova_meta_Nova_FieldFunctionMap_Nova_super(nova_meta_Nova_FieldFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+
+CCLASS_CLASS
+(
+	nova_meta_Nova_FieldPropertyMap, 
+	
+	nova_meta_Field_FieldPropertyMap_Extension_VTable* vtable;
+)
+
+void nova_meta_Nova_FieldPropertyMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData);
+nova_meta_Nova_FieldPropertyMap* nova_meta_Nova_FieldPropertyMap_Nova_construct(nova_meta_Nova_FieldPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+void nova_meta_Nova_FieldPropertyMap_Nova_destroy(nova_meta_Nova_FieldPropertyMap** this, nova_exception_Nova_ExceptionData* exceptionData);
+void nova_meta_Nova_FieldPropertyMap_Nova_this(nova_meta_Nova_FieldPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+nova_Nova_String* nova_meta_Nova_FieldPropertyMap_functionMap_Nova_name(nova_meta_Nova_FieldPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_meta_Nova_Field* reference);
+nova_meta_Nova_Type* nova_meta_Nova_FieldPropertyMap_functionMap_Nova_type(nova_meta_Nova_FieldPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_meta_Nova_Field* reference);
+void nova_meta_Nova_FieldPropertyMap_Nova_super(nova_meta_Nova_FieldPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData);
 
 #endif

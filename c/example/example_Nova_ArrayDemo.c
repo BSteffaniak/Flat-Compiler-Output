@@ -29,6 +29,7 @@
 #include <nova/nova_Nova_System.h>
 #include <nova/meta/nova_meta_Nova_Class.h>
 #include <nova/meta/nova_meta_Nova_FunctionMap.h>
+#include <nova/meta/nova_meta_Nova_PropertyMap.h>
 #include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <example/example_Nova_Animal.h>
 #include <example/example_Nova_Dog.h>
@@ -89,7 +90,7 @@ void example_Nova_ArrayDemo_static_Nova_main(example_Nova_ArrayDemo* this, nova_
 		nova_datastruct_list_Nova_Array_0_Nova_add((nova_datastruct_list_Nova_Array*)(l2_Nova_list), exceptionData, (nova_Nova_Object*)(example_Nova_Animal_Nova_construct(0, exceptionData)));
 		nova_datastruct_list_Nova_Array_0_Nova_add((nova_datastruct_list_Nova_Array*)(l2_Nova_list), exceptionData, (nova_Nova_Object*)(example_Nova_Spider_Nova_construct(0, exceptionData)));
 		l4_Nova_i = (int)0;
-		for (; l4_Nova_i < (int)nova_datastruct_list_Nova_Array_Accessorfunc_Nova_count((nova_datastruct_list_Nova_Array*)(l2_Nova_list), exceptionData); l4_Nova_i++)
+		for (; l4_Nova_i < (int)nova_datastruct_list_Nova_List_virtual_Accessor_Nova_count((nova_datastruct_list_Nova_List*)(l2_Nova_list), exceptionData); l4_Nova_i++)
 		{
 			nova_io_Nova_Console_1_static_Nova_writeLine(0, exceptionData, (nova_Nova_String*)(nova_Nova_String_Nova_plus(nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("Contains: ")), exceptionData, nova_Nova_Object_virtual_Nova_toString((nova_Nova_Object*)(l2_Nova_list), exceptionData))));
 		}
@@ -97,14 +98,14 @@ void example_Nova_ArrayDemo_static_Nova_main(example_Nova_ArrayDemo* this, nova_
 		nova_datastruct_list_Nova_Array_0_Nova_remove((nova_datastruct_list_Nova_Array*)(l2_Nova_list), exceptionData, 2);
 		nova_io_Nova_Console_1_static_Nova_writeLine(0, exceptionData, (nova_Nova_String*)(nova_Nova_String_Nova_plus(nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("--------- Removed: ")), exceptionData, (nova_Nova_String*)(nova_Nova_String_Nova_plus(nova_Nova_Object_virtual_Nova_toString((nova_Nova_Object*)(l2_Nova_animal), exceptionData), exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)(" ----------")))))));
 		l6_Nova_i2 = (int)0;
-		for (; l6_Nova_i2 < (int)nova_datastruct_list_Nova_Array_Accessorfunc_Nova_count((nova_datastruct_list_Nova_Array*)(l2_Nova_list), exceptionData); l6_Nova_i2++)
+		for (; l6_Nova_i2 < (int)nova_datastruct_list_Nova_List_virtual_Accessor_Nova_count((nova_datastruct_list_Nova_List*)(l2_Nova_list), exceptionData); l6_Nova_i2++)
 		{
 			nova_io_Nova_Console_1_static_Nova_writeLine(0, exceptionData, (nova_Nova_String*)(nova_Nova_String_Nova_plus(nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("Contains: ")), exceptionData, nova_Nova_Object_virtual_Nova_toString((nova_Nova_Object*)(l2_Nova_list), exceptionData))));
 		}
 		nova_datastruct_list_Nova_Array_1_Nova_add((nova_datastruct_list_Nova_Array*)(l2_Nova_list), exceptionData, 1, (nova_Nova_Object*)(example_Nova_Spider_Nova_construct(0, exceptionData)));
 		nova_io_Nova_Console_1_static_Nova_writeLine(0, exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("--------- Added a new spider at index 1 ----------")));
 		l8_Nova_i3 = (int)0;
-		for (; l8_Nova_i3 < (int)nova_datastruct_list_Nova_Array_Accessorfunc_Nova_count((nova_datastruct_list_Nova_Array*)(l2_Nova_list), exceptionData); l8_Nova_i3++)
+		for (; l8_Nova_i3 < (int)nova_datastruct_list_Nova_List_virtual_Accessor_Nova_count((nova_datastruct_list_Nova_List*)(l2_Nova_list), exceptionData); l8_Nova_i3++)
 		{
 			nova_io_Nova_Console_1_static_Nova_writeLine(0, exceptionData, (nova_Nova_String*)(nova_Nova_String_Nova_plus(nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("Contains: ")), exceptionData, nova_Nova_Object_virtual_Nova_toString((nova_Nova_Object*)(l2_Nova_list), exceptionData))));
 		}
@@ -170,6 +171,46 @@ void example_Nova_ArrayDemoFunctionMap_functionMap_static_Nova_main(example_Nova
 }
 
 void example_Nova_ArrayDemoFunctionMap_Nova_super(example_Nova_ArrayDemoFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+}
+
+void example_Nova_ArrayDemoPropertyMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData)
+{
+	{
+	}
+}
+
+example_Nova_ArrayDemoPropertyMap* example_Nova_ArrayDemoPropertyMap_Nova_construct(example_Nova_ArrayDemoPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+	CCLASS_NEW(example_Nova_ArrayDemoPropertyMap, this,);
+	this->vtable = &example_ArrayDemo_ArrayDemoPropertyMap_Extension_VTable_val;
+	nova_Nova_Object_Nova_super((nova_Nova_Object*)this, exceptionData);
+	nova_meta_Nova_PropertyMap_Nova_super((nova_meta_Nova_PropertyMap*)this, exceptionData);
+	example_Nova_ArrayDemoPropertyMap_Nova_super(this, exceptionData);
+	
+	{
+		example_Nova_ArrayDemoPropertyMap_Nova_this(this, exceptionData);
+	}
+	
+	return this;
+}
+
+void example_Nova_ArrayDemoPropertyMap_Nova_destroy(example_Nova_ArrayDemoPropertyMap** this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+	if (!*this)
+	{
+		return;
+	}
+	
+	
+	NOVA_FREE(*this);
+}
+
+void example_Nova_ArrayDemoPropertyMap_Nova_this(example_Nova_ArrayDemoPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+}
+
+void example_Nova_ArrayDemoPropertyMap_Nova_super(example_Nova_ArrayDemoPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
 }
 

@@ -3,6 +3,7 @@
 
 typedef struct nova_time_Nova_Time nova_time_Nova_Time;
 typedef struct nova_time_Nova_TimeFunctionMap nova_time_Nova_TimeFunctionMap;
+typedef struct nova_time_Nova_TimePropertyMap nova_time_Nova_TimePropertyMap;
 
 
 #include <Nova.h>
@@ -39,6 +40,7 @@ typedef struct nova_time_Nova_TimeFunctionMap nova_time_Nova_TimeFunctionMap;
 #include <nova/nova_Nova_System.h>
 #include <nova/meta/nova_meta_Nova_Class.h>
 #include <nova/meta/nova_meta_Nova_FunctionMap.h>
+#include <nova/meta/nova_meta_Nova_PropertyMap.h>
 #include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <nova/time/NativeTime.h>
 #include <nova/NativeObject.h>
@@ -70,5 +72,19 @@ void nova_time_Nova_TimeFunctionMap_Nova_destroy(nova_time_Nova_TimeFunctionMap*
 void nova_time_Nova_TimeFunctionMap_Nova_this(nova_time_Nova_TimeFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
 nova_time_Nova_Time* nova_time_Nova_TimeFunctionMap_functionMapTimeFunctionMap_Nova_construct(nova_time_Nova_TimeFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
 void nova_time_Nova_TimeFunctionMap_Nova_super(nova_time_Nova_TimeFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+
+CCLASS_CLASS
+(
+	nova_time_Nova_TimePropertyMap, 
+	
+	nova_time_Time_TimePropertyMap_Extension_VTable* vtable;
+)
+
+void nova_time_Nova_TimePropertyMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData);
+nova_time_Nova_TimePropertyMap* nova_time_Nova_TimePropertyMap_Nova_construct(nova_time_Nova_TimePropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+void nova_time_Nova_TimePropertyMap_Nova_destroy(nova_time_Nova_TimePropertyMap** this, nova_exception_Nova_ExceptionData* exceptionData);
+void nova_time_Nova_TimePropertyMap_Nova_this(nova_time_Nova_TimePropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+long_long nova_time_Nova_TimePropertyMap_functionMap_static_Nova_currentTimeMillis(nova_time_Nova_TimePropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+void nova_time_Nova_TimePropertyMap_Nova_super(nova_time_Nova_TimePropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData);
 
 #endif

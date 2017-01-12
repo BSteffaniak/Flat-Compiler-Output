@@ -29,6 +29,7 @@
 #include <nova/nova_Nova_System.h>
 #include <nova/meta/nova_meta_Nova_Class.h>
 #include <nova/meta/nova_meta_Nova_FunctionMap.h>
+#include <nova/meta/nova_meta_Nova_PropertyMap.h>
 #include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <nova/datastruct/nova_datastruct_Nova_HashSet.h>
 #include <nova/time/nova_time_Nova_Timer.h>
@@ -90,8 +91,8 @@ void example_Nova_HashSetDemo_static_Nova_main(example_Nova_HashSetDemo* this, n
 	l1_Nova_set = nova_datastruct_Nova_HashSet_Nova_construct(0, exceptionData, (intptr_t)nova_null, (intptr_t)nova_null);
 	nova_datastruct_Nova_HashSet_Nova_add((nova_datastruct_Nova_HashSet*)(l1_Nova_set), exceptionData, (nova_operators_Nova_EqualsOperator*)(nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("TEseting"))));
 	nova_io_Nova_Console_2_static_Nova_writeLine(0, exceptionData, (nova_Nova_Object*)(l1_Nova_set));
-	nova_io_Nova_Console_1_static_Nova_writeLine(0, exceptionData, (nova_Nova_String*)(nova_Nova_String_Nova_plus(nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("Contains TEset? ")), exceptionData, (nova_Nova_String*)(nova_Nova_String_Nova_plus(nova_primitive_Nova_Bool_static_Nova_toString(0, exceptionData, (nova_datastruct_Nova_HashSet_1_Nova_contains((nova_datastruct_Nova_HashSet*)(l1_Nova_set), exceptionData, (nova_operators_Nova_EqualsOperator*)(nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("TEset")))))), exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("")))))));
-	nova_io_Nova_Console_1_static_Nova_writeLine(0, exceptionData, (nova_Nova_String*)(nova_Nova_String_Nova_plus(nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("Contains TEseting? ")), exceptionData, (nova_Nova_String*)(nova_Nova_String_Nova_plus(nova_primitive_Nova_Bool_static_Nova_toString(0, exceptionData, (nova_datastruct_Nova_HashSet_1_Nova_contains((nova_datastruct_Nova_HashSet*)(l1_Nova_set), exceptionData, (nova_operators_Nova_EqualsOperator*)(nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("TEseting")))))), exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("")))))));
+	nova_io_Nova_Console_1_static_Nova_writeLine(0, exceptionData, (nova_Nova_String*)(nova_Nova_String_Nova_plus(nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("Contains TEset? ")), exceptionData, (nova_Nova_String*)(nova_Nova_String_Nova_plus(nova_primitive_Nova_Bool_static_Nova_toString(0, exceptionData, (nova_datastruct_Nova_HashSet_0_Nova_contains((nova_datastruct_Nova_HashSet*)(l1_Nova_set), exceptionData, (nova_operators_Nova_EqualsOperator*)(nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("TEset")))))), exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("")))))));
+	nova_io_Nova_Console_1_static_Nova_writeLine(0, exceptionData, (nova_Nova_String*)(nova_Nova_String_Nova_plus(nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("Contains TEseting? ")), exceptionData, (nova_Nova_String*)(nova_Nova_String_Nova_plus(nova_primitive_Nova_Bool_static_Nova_toString(0, exceptionData, (nova_datastruct_Nova_HashSet_0_Nova_contains((nova_datastruct_Nova_HashSet*)(l1_Nova_set), exceptionData, (nova_operators_Nova_EqualsOperator*)(nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("TEseting")))))), exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("")))))));
 	nova_io_Nova_Console_2_static_Nova_writeLine(0, exceptionData, (nova_Nova_Object*)(l1_Nova_set));
 	nova_io_Nova_Console_1_static_Nova_writeLine(0, exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("Benchmarking")));
 	l1_Nova_count = 50000;
@@ -214,6 +215,46 @@ void example_Nova_HashSetDemoFunctionMap_functionMap_static_Nova_main(example_No
 }
 
 void example_Nova_HashSetDemoFunctionMap_Nova_super(example_Nova_HashSetDemoFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+}
+
+void example_Nova_HashSetDemoPropertyMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData)
+{
+	{
+	}
+}
+
+example_Nova_HashSetDemoPropertyMap* example_Nova_HashSetDemoPropertyMap_Nova_construct(example_Nova_HashSetDemoPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+	CCLASS_NEW(example_Nova_HashSetDemoPropertyMap, this,);
+	this->vtable = &example_HashSetDemo_HashSetDemoPropertyMap_Extension_VTable_val;
+	nova_Nova_Object_Nova_super((nova_Nova_Object*)this, exceptionData);
+	nova_meta_Nova_PropertyMap_Nova_super((nova_meta_Nova_PropertyMap*)this, exceptionData);
+	example_Nova_HashSetDemoPropertyMap_Nova_super(this, exceptionData);
+	
+	{
+		example_Nova_HashSetDemoPropertyMap_Nova_this(this, exceptionData);
+	}
+	
+	return this;
+}
+
+void example_Nova_HashSetDemoPropertyMap_Nova_destroy(example_Nova_HashSetDemoPropertyMap** this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+	if (!*this)
+	{
+		return;
+	}
+	
+	
+	NOVA_FREE(*this);
+}
+
+void example_Nova_HashSetDemoPropertyMap_Nova_this(example_Nova_HashSetDemoPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+}
+
+void example_Nova_HashSetDemoPropertyMap_Nova_super(example_Nova_HashSetDemoPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
 }
 

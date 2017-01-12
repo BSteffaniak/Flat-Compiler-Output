@@ -29,6 +29,7 @@
 #include <nova/nova_Nova_System.h>
 #include <nova/meta/nova_meta_Nova_Class.h>
 #include <nova/meta/nova_meta_Nova_FunctionMap.h>
+#include <nova/meta/nova_meta_Nova_PropertyMap.h>
 #include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <nova/NativeObject.h>
 
@@ -77,7 +78,7 @@ void nova_database_Nova_ResultSet_Nova_this(nova_database_Nova_ResultSet* this, 
 
 int nova_database_Nova_ResultSet_Accessor_Nova_numRows(nova_database_Nova_ResultSet* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
-	return nova_datastruct_list_Nova_Array_Accessorfunc_Nova_count((nova_datastruct_list_Nova_Array*)(this->nova_database_Nova_ResultSet_Nova_rows), exceptionData);
+	return nova_datastruct_list_Nova_List_virtual_Accessor_Nova_count((nova_datastruct_list_Nova_List*)(this->nova_database_Nova_ResultSet_Nova_rows), exceptionData);
 }
 
 
@@ -129,6 +130,61 @@ nova_database_Nova_ResultSet* nova_database_Nova_ResultSetFunctionMap_functionMa
 }
 
 void nova_database_Nova_ResultSetFunctionMap_Nova_super(nova_database_Nova_ResultSetFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+}
+
+void nova_database_Nova_ResultSetPropertyMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData)
+{
+	{
+	}
+}
+
+nova_database_Nova_ResultSetPropertyMap* nova_database_Nova_ResultSetPropertyMap_Nova_construct(nova_database_Nova_ResultSetPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+	CCLASS_NEW(nova_database_Nova_ResultSetPropertyMap, this,);
+	this->vtable = &nova_database_ResultSet_ResultSetPropertyMap_Extension_VTable_val;
+	nova_Nova_Object_Nova_super((nova_Nova_Object*)this, exceptionData);
+	nova_meta_Nova_PropertyMap_Nova_super((nova_meta_Nova_PropertyMap*)this, exceptionData);
+	nova_database_Nova_ResultSetPropertyMap_Nova_super(this, exceptionData);
+	
+	{
+		nova_database_Nova_ResultSetPropertyMap_Nova_this(this, exceptionData);
+	}
+	
+	return this;
+}
+
+void nova_database_Nova_ResultSetPropertyMap_Nova_destroy(nova_database_Nova_ResultSetPropertyMap** this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+	if (!*this)
+	{
+		return;
+	}
+	
+	
+	NOVA_FREE(*this);
+}
+
+void nova_database_Nova_ResultSetPropertyMap_Nova_this(nova_database_Nova_ResultSetPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+}
+
+int nova_database_Nova_ResultSetPropertyMap_functionMap_Nova_numRows(nova_database_Nova_ResultSetPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_database_Nova_ResultSet* reference)
+{
+	return nova_database_Nova_ResultSet_Accessor_Nova_numRows(reference, exceptionData);
+}
+
+nova_datastruct_list_Nova_Array* nova_database_Nova_ResultSetPropertyMap_functionMap_Nova_rows(nova_database_Nova_ResultSetPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_database_Nova_ResultSet* reference)
+{
+	return reference->nova_database_Nova_ResultSet_Nova_rows;
+}
+
+int nova_database_Nova_ResultSetPropertyMap_functionMap_Nova_numCols(nova_database_Nova_ResultSetPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_database_Nova_ResultSet* reference)
+{
+	return reference->nova_database_Nova_ResultSet_Nova_numCols;
+}
+
+void nova_database_Nova_ResultSetPropertyMap_Nova_super(nova_database_Nova_ResultSetPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
 }
 

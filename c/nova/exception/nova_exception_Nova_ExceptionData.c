@@ -29,6 +29,7 @@
 #include <nova/nova_Nova_System.h>
 #include <nova/meta/nova_meta_Nova_Class.h>
 #include <nova/meta/nova_meta_Nova_FunctionMap.h>
+#include <nova/meta/nova_meta_Nova_PropertyMap.h>
 #include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <signal.h>
 #include <NovaExceptionHandling.h>
@@ -39,12 +40,12 @@ typedef struct
 {
 	/* Bool soft = false */ int* nova_exception_Nova_ExceptionData_Nova_soft;
 	/* Exception exception */ nova_exception_Nova_Exception** nova_exception_Nova_ExceptionData_Nova_exception;
-} Context90;
+} Context93;
 
 
 
 nova_exception_Nova_ExceptionData* nova_exception_Nova_ExceptionData_Nova_getDataByException(nova_exception_Nova_ExceptionData* this, nova_exception_Nova_ExceptionData* exceptionData, nova_exception_Nova_Exception* exception, int soft);
-char nova_exception_Nova_ExceptionData_Nova_lambda91(nova_exception_Nova_ExceptionData* this, nova_exception_Nova_ExceptionData* exceptionData, nova_exception_Nova_CaughtException* c, Context90* context);
+char nova_exception_Nova_ExceptionData_Nova_lambda94(nova_exception_Nova_ExceptionData* this, nova_exception_Nova_ExceptionData* exceptionData, nova_exception_Nova_CaughtException* c, Context93* context);
 void nova_exception_Nova_ExceptionData_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData)
 {
 	{
@@ -100,11 +101,11 @@ nova_exception_Nova_ExceptionData* nova_exception_Nova_ExceptionData_Nova_getDat
 	l1_Nova_data = this;
 	while (1)
 	{
-		Context90* contextArg91 = NOVA_MALLOC(sizeof(Context90));
-		contextArg91->nova_exception_Nova_ExceptionData_Nova_soft = &soft;
-		contextArg91->nova_exception_Nova_ExceptionData_Nova_exception = &exception;
+		Context93* contextArg94 = NOVA_MALLOC(sizeof(Context93));
+		contextArg94->nova_exception_Nova_ExceptionData_Nova_soft = &soft;
+		contextArg94->nova_exception_Nova_ExceptionData_Nova_exception = &exception;
 		
-		if (nova_datastruct_list_Nova_List_virtual0_Nova_any((nova_datastruct_list_Nova_List*)(l1_Nova_data->nova_exception_Nova_ExceptionData_Nova_caught), exceptionData, (nova_datastruct_list_Nova_List_closure296_Nova_anyFunc)&nova_exception_Nova_ExceptionData_Nova_lambda91, this, contextArg91))
+		if (nova_datastruct_list_Nova_List_virtual0_Nova_any((nova_datastruct_list_Nova_List*)(l1_Nova_data->nova_exception_Nova_ExceptionData_Nova_caught), exceptionData, (nova_datastruct_list_Nova_List_closure296_Nova_anyFunc)&nova_exception_Nova_ExceptionData_Nova_lambda94, this, contextArg94))
 		{
 			return l1_Nova_data;
 		}
@@ -130,7 +131,7 @@ char nova_exception_Nova_ExceptionData_Nova_throwException(nova_exception_Nova_E
 	return 0;
 }
 
-char nova_exception_Nova_ExceptionData_Nova_lambda91(nova_exception_Nova_ExceptionData* this, nova_exception_Nova_ExceptionData* exceptionData, nova_exception_Nova_CaughtException* c, Context90* context)
+char nova_exception_Nova_ExceptionData_Nova_lambda94(nova_exception_Nova_ExceptionData* this, nova_exception_Nova_ExceptionData* exceptionData, nova_exception_Nova_CaughtException* c, Context93* context)
 {
 	return (!(*context->nova_exception_Nova_ExceptionData_Nova_soft) || c->nova_exception_Nova_CaughtException_Nova_soft) && nova_meta_Nova_Class_Nova_isOfType((nova_meta_Nova_Class*)((*context->nova_exception_Nova_ExceptionData_Nova_exception)->vtable->classInstance), exceptionData, c->nova_exception_Nova_CaughtException_Nova_type);
 }
@@ -196,6 +197,66 @@ char nova_exception_Nova_ExceptionDataFunctionMap_functionMap_Nova_throwExceptio
 }
 
 void nova_exception_Nova_ExceptionDataFunctionMap_Nova_super(nova_exception_Nova_ExceptionDataFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+}
+
+void nova_exception_Nova_ExceptionDataPropertyMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData)
+{
+	{
+	}
+}
+
+nova_exception_Nova_ExceptionDataPropertyMap* nova_exception_Nova_ExceptionDataPropertyMap_Nova_construct(nova_exception_Nova_ExceptionDataPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+	CCLASS_NEW(nova_exception_Nova_ExceptionDataPropertyMap, this,);
+	this->vtable = &nova_exception_ExceptionData_ExceptionDataPropertyMap_Extension_VTable_val;
+	nova_Nova_Object_Nova_super((nova_Nova_Object*)this, exceptionData);
+	nova_meta_Nova_PropertyMap_Nova_super((nova_meta_Nova_PropertyMap*)this, exceptionData);
+	nova_exception_Nova_ExceptionDataPropertyMap_Nova_super(this, exceptionData);
+	
+	{
+		nova_exception_Nova_ExceptionDataPropertyMap_Nova_this(this, exceptionData);
+	}
+	
+	return this;
+}
+
+void nova_exception_Nova_ExceptionDataPropertyMap_Nova_destroy(nova_exception_Nova_ExceptionDataPropertyMap** this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+	if (!*this)
+	{
+		return;
+	}
+	
+	
+	NOVA_FREE(*this);
+}
+
+void nova_exception_Nova_ExceptionDataPropertyMap_Nova_this(nova_exception_Nova_ExceptionDataPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+}
+
+nova_exception_Nova_ExceptionData* nova_exception_Nova_ExceptionDataPropertyMap_functionMap_Nova_parent(nova_exception_Nova_ExceptionDataPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_exception_Nova_ExceptionData* reference)
+{
+	return reference->nova_exception_Nova_ExceptionData_Nova_parent;
+}
+
+nova_datastruct_list_Nova_Array* nova_exception_Nova_ExceptionDataPropertyMap_functionMap_Nova_caught(nova_exception_Nova_ExceptionDataPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_exception_Nova_ExceptionData* reference)
+{
+	return reference->nova_exception_Nova_ExceptionData_Nova_caught;
+}
+
+nova_exception_Nova_Exception* nova_exception_Nova_ExceptionDataPropertyMap_functionMap_Nova_thrownException(nova_exception_Nova_ExceptionDataPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_exception_Nova_ExceptionData* reference)
+{
+	return reference->nova_exception_Nova_ExceptionData_Nova_thrownException;
+}
+
+buffer* nova_exception_Nova_ExceptionDataPropertyMap_functionMap_Nova_buf(nova_exception_Nova_ExceptionDataPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_exception_Nova_ExceptionData* reference)
+{
+	return reference->nova_exception_Nova_ExceptionData_Nova_buf;
+}
+
+void nova_exception_Nova_ExceptionDataPropertyMap_Nova_super(nova_exception_Nova_ExceptionDataPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
 }
 

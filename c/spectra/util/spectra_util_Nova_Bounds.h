@@ -3,6 +3,7 @@
 
 typedef struct spectra_util_Nova_Bounds spectra_util_Nova_Bounds;
 typedef struct spectra_util_Nova_BoundsFunctionMap spectra_util_Nova_BoundsFunctionMap;
+typedef struct spectra_util_Nova_BoundsPropertyMap spectra_util_Nova_BoundsPropertyMap;
 
 
 #include <Nova.h>
@@ -39,6 +40,7 @@ typedef struct spectra_util_Nova_BoundsFunctionMap spectra_util_Nova_BoundsFunct
 #include <nova/nova_Nova_System.h>
 #include <nova/meta/nova_meta_Nova_Class.h>
 #include <nova/meta/nova_meta_Nova_FunctionMap.h>
+#include <nova/meta/nova_meta_Nova_PropertyMap.h>
 #include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <nova/NativeObject.h>
 
@@ -93,5 +95,25 @@ nova_Nova_String* spectra_util_Nova_BoundsFunctionMap_functionMap_Nova_toString(
 void spectra_util_Nova_BoundsFunctionMap_functionMap_Nova_cloneTo(spectra_util_Nova_BoundsFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, spectra_util_Nova_Bounds* reference, spectra_util_Nova_Bounds* bounds);
 spectra_util_Nova_Bounds* spectra_util_Nova_BoundsFunctionMap_functionMap_Nova_clone(spectra_util_Nova_BoundsFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, spectra_util_Nova_Bounds* reference);
 void spectra_util_Nova_BoundsFunctionMap_Nova_super(spectra_util_Nova_BoundsFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+
+CCLASS_CLASS
+(
+	spectra_util_Nova_BoundsPropertyMap, 
+	
+	spectra_util_Bounds_BoundsPropertyMap_Extension_VTable* vtable;
+)
+
+void spectra_util_Nova_BoundsPropertyMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData);
+spectra_util_Nova_BoundsPropertyMap* spectra_util_Nova_BoundsPropertyMap_Nova_construct(spectra_util_Nova_BoundsPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+void spectra_util_Nova_BoundsPropertyMap_Nova_destroy(spectra_util_Nova_BoundsPropertyMap** this, nova_exception_Nova_ExceptionData* exceptionData);
+void spectra_util_Nova_BoundsPropertyMap_Nova_this(spectra_util_Nova_BoundsPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+int spectra_util_Nova_BoundsPropertyMap_functionMap_Nova_start(spectra_util_Nova_BoundsPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData, spectra_util_Nova_Bounds* reference);
+int spectra_util_Nova_BoundsPropertyMap_functionMap_Nova_end(spectra_util_Nova_BoundsPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData, spectra_util_Nova_Bounds* reference);
+int spectra_util_Nova_BoundsPropertyMap_functionMap_Nova_count(spectra_util_Nova_BoundsPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData, spectra_util_Nova_Bounds* reference);
+char spectra_util_Nova_BoundsPropertyMap_functionMap_Nova_isValid(spectra_util_Nova_BoundsPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData, spectra_util_Nova_Bounds* reference);
+char spectra_util_Nova_BoundsPropertyMap_functionMap_Nova_isEndless(spectra_util_Nova_BoundsPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData, spectra_util_Nova_Bounds* reference);
+char spectra_util_Nova_BoundsPropertyMap_functionMap_Nova_isOptional(spectra_util_Nova_BoundsPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData, spectra_util_Nova_Bounds* reference);
+spectra_util_Nova_Bounds* spectra_util_Nova_BoundsPropertyMap_functionMap_static_Nova_EMPTY(spectra_util_Nova_BoundsPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+void spectra_util_Nova_BoundsPropertyMap_Nova_super(spectra_util_Nova_BoundsPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData);
 
 #endif

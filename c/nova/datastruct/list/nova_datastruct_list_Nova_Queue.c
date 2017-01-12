@@ -29,8 +29,11 @@
 #include <nova/nova_Nova_System.h>
 #include <nova/meta/nova_meta_Nova_Class.h>
 #include <nova/meta/nova_meta_Nova_FunctionMap.h>
+#include <nova/meta/nova_meta_Nova_PropertyMap.h>
 #include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_ArrayIterator.h>
+#include <nova/datastruct/list/nova_datastruct_list_Nova_List.h>
+#include <nova/datastruct/list/nova_datastruct_list_Nova_Iterable.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_List.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_Iterable.h>
 #include <nova/NativeObject.h>
@@ -253,6 +256,76 @@ nova_Nova_String* nova_datastruct_list_Nova_QueueFunctionMap_functionMap_Nova_to
 }
 
 void nova_datastruct_list_Nova_QueueFunctionMap_Nova_super(nova_datastruct_list_Nova_QueueFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+}
+
+void nova_datastruct_list_Nova_QueuePropertyMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData)
+{
+	{
+	}
+}
+
+nova_datastruct_list_Nova_QueuePropertyMap* nova_datastruct_list_Nova_QueuePropertyMap_Nova_construct(nova_datastruct_list_Nova_QueuePropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+	CCLASS_NEW(nova_datastruct_list_Nova_QueuePropertyMap, this,);
+	this->vtable = &nova_datastruct_list_Queue_QueuePropertyMap_Extension_VTable_val;
+	nova_Nova_Object_Nova_super((nova_Nova_Object*)this, exceptionData);
+	nova_meta_Nova_PropertyMap_Nova_super((nova_meta_Nova_PropertyMap*)this, exceptionData);
+	nova_datastruct_list_Nova_QueuePropertyMap_Nova_super(this, exceptionData);
+	
+	{
+		nova_datastruct_list_Nova_QueuePropertyMap_Nova_this(this, exceptionData);
+	}
+	
+	return this;
+}
+
+void nova_datastruct_list_Nova_QueuePropertyMap_Nova_destroy(nova_datastruct_list_Nova_QueuePropertyMap** this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+	if (!*this)
+	{
+		return;
+	}
+	
+	
+	NOVA_FREE(*this);
+}
+
+void nova_datastruct_list_Nova_QueuePropertyMap_Nova_this(nova_datastruct_list_Nova_QueuePropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+}
+
+int nova_datastruct_list_Nova_QueuePropertyMap_functionMap_Nova_size(nova_datastruct_list_Nova_QueuePropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_list_Nova_Queue* reference)
+{
+	return nova_datastruct_list_Nova_Queue_Accessor_Nova_size(reference, exceptionData);
+}
+
+char nova_datastruct_list_Nova_QueuePropertyMap_functionMap_Nova_empty(nova_datastruct_list_Nova_QueuePropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_list_Nova_Queue* reference)
+{
+	return nova_datastruct_list_Nova_Queue_Accessor_Nova_empty(reference, exceptionData);
+}
+
+nova_datastruct_list_Nova_ArrayIterator* nova_datastruct_list_Nova_QueuePropertyMap_functionMap0_Nova_iterator(nova_datastruct_list_Nova_QueuePropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_list_Nova_Queue* reference)
+{
+	return (nova_datastruct_list_Nova_ArrayIterator*)nova_datastruct_list_Nova_Queue_Accessor_Nova_iterator(reference, exceptionData);
+}
+
+int nova_datastruct_list_Nova_QueuePropertyMap_functionMap0_Nova_count(nova_datastruct_list_Nova_QueuePropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_list_Nova_Queue* reference)
+{
+	return nova_datastruct_list_Nova_Queue_Accessorfunc_Nova_count(reference, exceptionData);
+}
+
+nova_Nova_Object* nova_datastruct_list_Nova_QueuePropertyMap_functionMap0_Nova_first(nova_datastruct_list_Nova_QueuePropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_list_Nova_Queue* reference)
+{
+	return (nova_Nova_Object*)nova_datastruct_list_Nova_Queue_Accessorfunc_Nova_first(reference, exceptionData);
+}
+
+nova_Nova_Object* nova_datastruct_list_Nova_QueuePropertyMap_functionMap0_Nova_last(nova_datastruct_list_Nova_QueuePropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_list_Nova_Queue* reference)
+{
+	return (nova_Nova_Object*)nova_datastruct_list_Nova_Queue_Accessorfunc_Nova_last(reference, exceptionData);
+}
+
+void nova_datastruct_list_Nova_QueuePropertyMap_Nova_super(nova_datastruct_list_Nova_QueuePropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
 }
 

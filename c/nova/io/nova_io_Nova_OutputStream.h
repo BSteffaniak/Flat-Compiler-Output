@@ -3,6 +3,7 @@
 
 typedef struct nova_io_Nova_OutputStream nova_io_Nova_OutputStream;
 typedef struct nova_io_Nova_OutputStreamFunctionMap nova_io_Nova_OutputStreamFunctionMap;
+typedef struct nova_io_Nova_OutputStreamPropertyMap nova_io_Nova_OutputStreamPropertyMap;
 
 
 #include <Nova.h>
@@ -39,6 +40,7 @@ typedef struct nova_io_Nova_OutputStreamFunctionMap nova_io_Nova_OutputStreamFun
 #include <nova/nova_Nova_System.h>
 #include <nova/meta/nova_meta_Nova_Class.h>
 #include <nova/meta/nova_meta_Nova_FunctionMap.h>
+#include <nova/meta/nova_meta_Nova_PropertyMap.h>
 #include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <nova/NativeObject.h>
 
@@ -69,5 +71,18 @@ void nova_io_Nova_OutputStreamFunctionMap_Nova_destroy(nova_io_Nova_OutputStream
 void nova_io_Nova_OutputStreamFunctionMap_Nova_this(nova_io_Nova_OutputStreamFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
 nova_io_Nova_OutputStream* nova_io_Nova_OutputStreamFunctionMap_functionMapOutputStreamFunctionMap_Nova_construct(nova_io_Nova_OutputStreamFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
 void nova_io_Nova_OutputStreamFunctionMap_Nova_super(nova_io_Nova_OutputStreamFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+
+CCLASS_CLASS
+(
+	nova_io_Nova_OutputStreamPropertyMap, 
+	
+	nova_io_OutputStream_OutputStreamPropertyMap_Extension_VTable* vtable;
+)
+
+void nova_io_Nova_OutputStreamPropertyMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData);
+nova_io_Nova_OutputStreamPropertyMap* nova_io_Nova_OutputStreamPropertyMap_Nova_construct(nova_io_Nova_OutputStreamPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+void nova_io_Nova_OutputStreamPropertyMap_Nova_destroy(nova_io_Nova_OutputStreamPropertyMap** this, nova_exception_Nova_ExceptionData* exceptionData);
+void nova_io_Nova_OutputStreamPropertyMap_Nova_this(nova_io_Nova_OutputStreamPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+void nova_io_Nova_OutputStreamPropertyMap_Nova_super(nova_io_Nova_OutputStreamPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData);
 
 #endif

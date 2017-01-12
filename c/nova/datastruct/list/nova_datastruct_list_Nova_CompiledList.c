@@ -29,6 +29,7 @@
 #include <nova/nova_Nova_System.h>
 #include <nova/meta/nova_meta_Nova_Class.h>
 #include <nova/meta/nova_meta_Nova_FunctionMap.h>
+#include <nova/meta/nova_meta_Nova_PropertyMap.h>
 #include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <nova/NativeObject.h>
 
@@ -115,6 +116,46 @@ nova_datastruct_list_Nova_CompiledList* nova_datastruct_list_Nova_CompiledListFu
 }
 
 void nova_datastruct_list_Nova_CompiledListFunctionMap_Nova_super(nova_datastruct_list_Nova_CompiledListFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+}
+
+void nova_datastruct_list_Nova_CompiledListPropertyMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData)
+{
+	{
+	}
+}
+
+nova_datastruct_list_Nova_CompiledListPropertyMap* nova_datastruct_list_Nova_CompiledListPropertyMap_Nova_construct(nova_datastruct_list_Nova_CompiledListPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+	CCLASS_NEW(nova_datastruct_list_Nova_CompiledListPropertyMap, this,);
+	this->vtable = &nova_datastruct_list_CompiledList_CompiledListPropertyMap_Extension_VTable_val;
+	nova_Nova_Object_Nova_super((nova_Nova_Object*)this, exceptionData);
+	nova_meta_Nova_PropertyMap_Nova_super((nova_meta_Nova_PropertyMap*)this, exceptionData);
+	nova_datastruct_list_Nova_CompiledListPropertyMap_Nova_super(this, exceptionData);
+	
+	{
+		nova_datastruct_list_Nova_CompiledListPropertyMap_Nova_this(this, exceptionData);
+	}
+	
+	return this;
+}
+
+void nova_datastruct_list_Nova_CompiledListPropertyMap_Nova_destroy(nova_datastruct_list_Nova_CompiledListPropertyMap** this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+	if (!*this)
+	{
+		return;
+	}
+	
+	
+	NOVA_FREE(*this);
+}
+
+void nova_datastruct_list_Nova_CompiledListPropertyMap_Nova_this(nova_datastruct_list_Nova_CompiledListPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+}
+
+void nova_datastruct_list_Nova_CompiledListPropertyMap_Nova_super(nova_datastruct_list_Nova_CompiledListPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
 }
 

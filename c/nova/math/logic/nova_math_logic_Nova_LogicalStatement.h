@@ -3,6 +3,7 @@
 
 typedef struct nova_math_logic_Nova_LogicalStatement nova_math_logic_Nova_LogicalStatement;
 typedef struct nova_math_logic_Nova_LogicalStatementFunctionMap nova_math_logic_Nova_LogicalStatementFunctionMap;
+typedef struct nova_math_logic_Nova_LogicalStatementPropertyMap nova_math_logic_Nova_LogicalStatementPropertyMap;
 
 
 #include <Nova.h>
@@ -39,9 +40,11 @@ typedef struct nova_math_logic_Nova_LogicalStatementFunctionMap nova_math_logic_
 #include <nova/nova_Nova_System.h>
 #include <nova/meta/nova_meta_Nova_Class.h>
 #include <nova/meta/nova_meta_Nova_FunctionMap.h>
+#include <nova/meta/nova_meta_Nova_PropertyMap.h>
 #include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <nova/math/nova_math_Nova_Statement.h>
 #include <nova/math/logic/nova_math_logic_Nova_StatementComponent.h>
+#include <nova/math/nova_math_Nova_Statement.h>
 #include <nova/math/nova_math_Nova_Statement.h>
 #include <nova/NativeObject.h>
 
@@ -75,5 +78,18 @@ nova_math_logic_Nova_LogicalStatement* nova_math_logic_Nova_LogicalStatementFunc
 nova_Nova_String* nova_math_logic_Nova_LogicalStatementFunctionMap_functionMap_Nova_toString(nova_math_logic_Nova_LogicalStatementFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_math_logic_Nova_LogicalStatement* reference);
 void nova_math_logic_Nova_LogicalStatementFunctionMap_Nova_super(nova_math_logic_Nova_LogicalStatementFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
 nova_math_logic_Nova_LogicalStatement* nova_math_logic_Nova_LogicalStatementFunctionMap_virtualfunctionMapLogicalStatement_Nova_construct(nova_math_logic_Nova_LogicalStatementFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* statement);
+
+CCLASS_CLASS
+(
+	nova_math_logic_Nova_LogicalStatementPropertyMap, 
+	
+	nova_math_logic_LogicalStatement_LogicalStatementPropertyMap_Extension_VTable* vtable;
+)
+
+void nova_math_logic_Nova_LogicalStatementPropertyMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData);
+nova_math_logic_Nova_LogicalStatementPropertyMap* nova_math_logic_Nova_LogicalStatementPropertyMap_Nova_construct(nova_math_logic_Nova_LogicalStatementPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+void nova_math_logic_Nova_LogicalStatementPropertyMap_Nova_destroy(nova_math_logic_Nova_LogicalStatementPropertyMap** this, nova_exception_Nova_ExceptionData* exceptionData);
+void nova_math_logic_Nova_LogicalStatementPropertyMap_Nova_this(nova_math_logic_Nova_LogicalStatementPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+void nova_math_logic_Nova_LogicalStatementPropertyMap_Nova_super(nova_math_logic_Nova_LogicalStatementPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData);
 
 #endif

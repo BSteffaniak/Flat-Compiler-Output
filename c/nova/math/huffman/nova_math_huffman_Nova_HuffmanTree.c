@@ -29,7 +29,9 @@
 #include <nova/nova_Nova_System.h>
 #include <nova/meta/nova_meta_Nova_Class.h>
 #include <nova/meta/nova_meta_Nova_FunctionMap.h>
+#include <nova/meta/nova_meta_Nova_PropertyMap.h>
 #include <nova/regex/nova_regex_Nova_Pattern.h>
+#include <nova/datastruct/nova_datastruct_Nova_Tree.h>
 #include <nova/datastruct/nova_datastruct_Nova_Tree.h>
 #include <nova/datastruct/nova_datastruct_Nova_Tree.h>
 #include <nova/datastruct/nova_datastruct_Nova_Node.h>
@@ -120,6 +122,47 @@ nova_math_huffman_Nova_HuffmanTree* nova_math_huffman_Nova_HuffmanTreeFunctionMa
 }
 
 void nova_math_huffman_Nova_HuffmanTreeFunctionMap_Nova_super(nova_math_huffman_Nova_HuffmanTreeFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+}
+
+void nova_math_huffman_Nova_HuffmanTreePropertyMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData)
+{
+	{
+	}
+}
+
+nova_math_huffman_Nova_HuffmanTreePropertyMap* nova_math_huffman_Nova_HuffmanTreePropertyMap_Nova_construct(nova_math_huffman_Nova_HuffmanTreePropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+	CCLASS_NEW(nova_math_huffman_Nova_HuffmanTreePropertyMap, this,);
+	this->vtable = &nova_math_huffman_HuffmanTree_HuffmanTreePropertyMap_Extension_VTable_val;
+	nova_Nova_Object_Nova_super((nova_Nova_Object*)this, exceptionData);
+	nova_meta_Nova_PropertyMap_Nova_super((nova_meta_Nova_PropertyMap*)this, exceptionData);
+	nova_datastruct_Nova_TreePropertyMap_Nova_super((nova_datastruct_Nova_TreePropertyMap*)this, exceptionData);
+	nova_math_huffman_Nova_HuffmanTreePropertyMap_Nova_super(this, exceptionData);
+	
+	{
+		nova_math_huffman_Nova_HuffmanTreePropertyMap_Nova_this(this, exceptionData);
+	}
+	
+	return this;
+}
+
+void nova_math_huffman_Nova_HuffmanTreePropertyMap_Nova_destroy(nova_math_huffman_Nova_HuffmanTreePropertyMap** this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+	if (!*this)
+	{
+		return;
+	}
+	
+	
+	NOVA_FREE(*this);
+}
+
+void nova_math_huffman_Nova_HuffmanTreePropertyMap_Nova_this(nova_math_huffman_Nova_HuffmanTreePropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+}
+
+void nova_math_huffman_Nova_HuffmanTreePropertyMap_Nova_super(nova_math_huffman_Nova_HuffmanTreePropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
 }
 

@@ -29,6 +29,7 @@
 #include <nova/nova_Nova_System.h>
 #include <nova/meta/nova_meta_Nova_Class.h>
 #include <nova/meta/nova_meta_Nova_FunctionMap.h>
+#include <nova/meta/nova_meta_Nova_PropertyMap.h>
 #include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <nova/NativeObject.h>
 
@@ -83,6 +84,46 @@ void nova_operators_Nova_NotEqualToOperatorFunctionMap_Nova_this(nova_operators_
 }
 
 void nova_operators_Nova_NotEqualToOperatorFunctionMap_Nova_super(nova_operators_Nova_NotEqualToOperatorFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+}
+
+void nova_operators_Nova_NotEqualToOperatorPropertyMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData)
+{
+	{
+	}
+}
+
+nova_operators_Nova_NotEqualToOperatorPropertyMap* nova_operators_Nova_NotEqualToOperatorPropertyMap_Nova_construct(nova_operators_Nova_NotEqualToOperatorPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+	CCLASS_NEW(nova_operators_Nova_NotEqualToOperatorPropertyMap, this,);
+	this->vtable = &nova_operators_NotEqualToOperator_NotEqualToOperatorPropertyMap_Extension_VTable_val;
+	nova_Nova_Object_Nova_super((nova_Nova_Object*)this, exceptionData);
+	nova_meta_Nova_PropertyMap_Nova_super((nova_meta_Nova_PropertyMap*)this, exceptionData);
+	nova_operators_Nova_NotEqualToOperatorPropertyMap_Nova_super(this, exceptionData);
+	
+	{
+		nova_operators_Nova_NotEqualToOperatorPropertyMap_Nova_this(this, exceptionData);
+	}
+	
+	return this;
+}
+
+void nova_operators_Nova_NotEqualToOperatorPropertyMap_Nova_destroy(nova_operators_Nova_NotEqualToOperatorPropertyMap** this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+	if (!*this)
+	{
+		return;
+	}
+	
+	
+	NOVA_FREE(*this);
+}
+
+void nova_operators_Nova_NotEqualToOperatorPropertyMap_Nova_this(nova_operators_Nova_NotEqualToOperatorPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+}
+
+void nova_operators_Nova_NotEqualToOperatorPropertyMap_Nova_super(nova_operators_Nova_NotEqualToOperatorPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
 }
 

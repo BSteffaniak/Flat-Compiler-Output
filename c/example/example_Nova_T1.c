@@ -29,6 +29,7 @@
 #include <nova/nova_Nova_System.h>
 #include <nova/meta/nova_meta_Nova_Class.h>
 #include <nova/meta/nova_meta_Nova_FunctionMap.h>
+#include <nova/meta/nova_meta_Nova_PropertyMap.h>
 #include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <nova/NativeObject.h>
 
@@ -131,5 +132,55 @@ void example_Nova_T1FunctionMap_Nova_super(example_Nova_T1FunctionMap* this, nov
 example_Nova_T1* example_Nova_T1FunctionMap_virtualfunctionMapT1_Nova_construct(example_Nova_T1FunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
 	return this->vtable->example_Nova_T1FunctionMap_virtualfunctionMapT1_Nova_construct(this, exceptionData);
+}
+
+void example_Nova_T1PropertyMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData)
+{
+	{
+	}
+}
+
+example_Nova_T1PropertyMap* example_Nova_T1PropertyMap_Nova_construct(example_Nova_T1PropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+	CCLASS_NEW(example_Nova_T1PropertyMap, this,);
+	this->vtable = &example_T1_T1PropertyMap_Extension_VTable_val;
+	nova_Nova_Object_Nova_super((nova_Nova_Object*)this, exceptionData);
+	nova_meta_Nova_PropertyMap_Nova_super((nova_meta_Nova_PropertyMap*)this, exceptionData);
+	example_Nova_T1PropertyMap_Nova_super(this, exceptionData);
+	
+	{
+		example_Nova_T1PropertyMap_Nova_this(this, exceptionData);
+	}
+	
+	return this;
+}
+
+void example_Nova_T1PropertyMap_Nova_destroy(example_Nova_T1PropertyMap** this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+	if (!*this)
+	{
+		return;
+	}
+	
+	
+	NOVA_FREE(*this);
+}
+
+void example_Nova_T1PropertyMap_Nova_this(example_Nova_T1PropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+}
+
+int example_Nova_T1PropertyMap_functionMap_static_Nova_ind(example_Nova_T1PropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+	return example_Nova_T1_Accessor_static_Nova_ind(0, exceptionData);
+}
+
+void example_Nova_T1PropertyMap_Nova_super(example_Nova_T1PropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+}
+
+int example_Nova_T1PropertyMap_virtualfunctionMap_static_Nova_ind(example_Nova_T1PropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+	return this->vtable->example_Nova_T1PropertyMap_virtualfunctionMap_static_Nova_ind(0, exceptionData);
 }
 

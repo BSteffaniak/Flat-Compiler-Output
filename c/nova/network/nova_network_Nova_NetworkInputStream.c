@@ -29,10 +29,12 @@
 #include <nova/nova_Nova_System.h>
 #include <nova/meta/nova_meta_Nova_Class.h>
 #include <nova/meta/nova_meta_Nova_FunctionMap.h>
+#include <nova/meta/nova_meta_Nova_PropertyMap.h>
 #include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <nova/network/NativeSocket.h>
 #include <nova/io/nova_io_Nova_InputStream.h>
 #include <nova/network/nova_network_Nova_ConnectionSocket.h>
+#include <nova/io/nova_io_Nova_InputStream.h>
 #include <nova/io/nova_io_Nova_InputStream.h>
 #include <nova/NativeObject.h>
 
@@ -54,6 +56,7 @@ nova_network_Nova_NetworkInputStream* nova_network_Nova_NetworkInputStream_Nova_
 {
 	CCLASS_NEW(nova_network_Nova_NetworkInputStream, this);
 	this->vtable = &nova_network_NetworkInputStream_Extension_VTable_val;
+	nova_Nova_Object_Nova_super((nova_Nova_Object*)this, exceptionData);
 	nova_network_Nova_NetworkInputStream_Nova_super(this, exceptionData);
 	
 	{
@@ -108,7 +111,6 @@ nova_network_Nova_NetworkInputStreamFunctionMap* nova_network_Nova_NetworkInputS
 	this->vtable = &nova_network_NetworkInputStream_NetworkInputStreamFunctionMap_Extension_VTable_val;
 	nova_Nova_Object_Nova_super((nova_Nova_Object*)this, exceptionData);
 	nova_meta_Nova_FunctionMap_Nova_super((nova_meta_Nova_FunctionMap*)this, exceptionData);
-	nova_io_Nova_InputStreamFunctionMap_Nova_super((nova_io_Nova_InputStreamFunctionMap*)this, exceptionData);
 	nova_network_Nova_NetworkInputStreamFunctionMap_Nova_super(this, exceptionData);
 	
 	{
@@ -149,6 +151,46 @@ nova_datastruct_list_Nova_Array* nova_network_Nova_NetworkInputStreamFunctionMap
 }
 
 void nova_network_Nova_NetworkInputStreamFunctionMap_Nova_super(nova_network_Nova_NetworkInputStreamFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+}
+
+void nova_network_Nova_NetworkInputStreamPropertyMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData)
+{
+	{
+	}
+}
+
+nova_network_Nova_NetworkInputStreamPropertyMap* nova_network_Nova_NetworkInputStreamPropertyMap_Nova_construct(nova_network_Nova_NetworkInputStreamPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+	CCLASS_NEW(nova_network_Nova_NetworkInputStreamPropertyMap, this,);
+	this->vtable = &nova_network_NetworkInputStream_NetworkInputStreamPropertyMap_Extension_VTable_val;
+	nova_Nova_Object_Nova_super((nova_Nova_Object*)this, exceptionData);
+	nova_meta_Nova_PropertyMap_Nova_super((nova_meta_Nova_PropertyMap*)this, exceptionData);
+	nova_network_Nova_NetworkInputStreamPropertyMap_Nova_super(this, exceptionData);
+	
+	{
+		nova_network_Nova_NetworkInputStreamPropertyMap_Nova_this(this, exceptionData);
+	}
+	
+	return this;
+}
+
+void nova_network_Nova_NetworkInputStreamPropertyMap_Nova_destroy(nova_network_Nova_NetworkInputStreamPropertyMap** this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+	if (!*this)
+	{
+		return;
+	}
+	
+	
+	NOVA_FREE(*this);
+}
+
+void nova_network_Nova_NetworkInputStreamPropertyMap_Nova_this(nova_network_Nova_NetworkInputStreamPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+}
+
+void nova_network_Nova_NetworkInputStreamPropertyMap_Nova_super(nova_network_Nova_NetworkInputStreamPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
 }
 

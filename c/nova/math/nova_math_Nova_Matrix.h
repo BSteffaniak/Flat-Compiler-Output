@@ -3,6 +3,7 @@
 
 typedef struct nova_math_Nova_Matrix nova_math_Nova_Matrix;
 typedef struct nova_math_Nova_MatrixFunctionMap nova_math_Nova_MatrixFunctionMap;
+typedef struct nova_math_Nova_MatrixPropertyMap nova_math_Nova_MatrixPropertyMap;
 
 
 #include <Nova.h>
@@ -39,11 +40,14 @@ typedef struct nova_math_Nova_MatrixFunctionMap nova_math_Nova_MatrixFunctionMap
 #include <nova/nova_Nova_System.h>
 #include <nova/meta/nova_meta_Nova_Class.h>
 #include <nova/meta/nova_meta_Nova_FunctionMap.h>
+#include <nova/meta/nova_meta_Nova_PropertyMap.h>
 #include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <nova/operators/nova_operators_Nova_MultiplyOperator.h>
 #include <nova/operators/nova_operators_Nova_PlusOperator.h>
 #include <nova/exception/nova_exception_Nova_InvalidArgumentException.h>
 #include <nova/exception/nova_exception_Nova_InvalidOperationException.h>
+#include <nova/operators/nova_operators_Nova_MultiplyOperator.h>
+#include <nova/operators/nova_operators_Nova_PlusOperator.h>
 #include <nova/operators/nova_operators_Nova_MultiplyOperator.h>
 #include <nova/operators/nova_operators_Nova_PlusOperator.h>
 #include <nova/NativeObject.h>
@@ -125,5 +129,22 @@ nova_Nova_String* nova_math_Nova_MatrixFunctionMap_functionMap_Nova_toString(nov
 nova_datastruct_list_Nova_DoubleArray* nova_math_Nova_MatrixFunctionMap_functionMap_Nova_get(nova_math_Nova_MatrixFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_math_Nova_Matrix* reference, int index);
 nova_datastruct_list_Nova_DoubleArray* nova_math_Nova_MatrixFunctionMap_functionMap_Nova_set(nova_math_Nova_MatrixFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_math_Nova_Matrix* reference, int index, nova_datastruct_list_Nova_DoubleArray* value);
 void nova_math_Nova_MatrixFunctionMap_Nova_super(nova_math_Nova_MatrixFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+
+CCLASS_CLASS
+(
+	nova_math_Nova_MatrixPropertyMap, 
+	
+	nova_math_Matrix_MatrixPropertyMap_Extension_VTable* vtable;
+)
+
+void nova_math_Nova_MatrixPropertyMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData);
+nova_math_Nova_MatrixPropertyMap* nova_math_Nova_MatrixPropertyMap_Nova_construct(nova_math_Nova_MatrixPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+void nova_math_Nova_MatrixPropertyMap_Nova_destroy(nova_math_Nova_MatrixPropertyMap** this, nova_exception_Nova_ExceptionData* exceptionData);
+void nova_math_Nova_MatrixPropertyMap_Nova_this(nova_math_Nova_MatrixPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+char nova_math_Nova_MatrixPropertyMap_functionMap_Nova_isSquare(nova_math_Nova_MatrixPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_math_Nova_Matrix* reference);
+int nova_math_Nova_MatrixPropertyMap_functionMap_Nova_rows(nova_math_Nova_MatrixPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_math_Nova_Matrix* reference);
+int nova_math_Nova_MatrixPropertyMap_functionMap_Nova_cols(nova_math_Nova_MatrixPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_math_Nova_Matrix* reference);
+char nova_math_Nova_MatrixPropertyMap_functionMap_Nova_isIdentity(nova_math_Nova_MatrixPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_math_Nova_Matrix* reference);
+void nova_math_Nova_MatrixPropertyMap_Nova_super(nova_math_Nova_MatrixPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData);
 
 #endif

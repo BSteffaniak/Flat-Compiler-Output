@@ -29,9 +29,11 @@
 #include <nova/nova_Nova_System.h>
 #include <nova/meta/nova_meta_Nova_Class.h>
 #include <nova/meta/nova_meta_Nova_FunctionMap.h>
+#include <nova/meta/nova_meta_Nova_PropertyMap.h>
 #include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <nova/star/NativeWindow.h>
 #include <nova/star/nova_star_Nova_Window.h>
+#include <nova/thread/nova_thread_Nova_Thread.h>
 #include <nova/thread/nova_thread_Nova_Thread.h>
 #include <nova/thread/NativeThread.h>
 #include <nova/NativeObject.h>
@@ -147,6 +149,47 @@ void nova_star_Nova_WindowThreadFunctionMap_functionMap_Nova_run(nova_star_Nova_
 }
 
 void nova_star_Nova_WindowThreadFunctionMap_Nova_super(nova_star_Nova_WindowThreadFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+}
+
+void nova_star_Nova_WindowThreadPropertyMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData)
+{
+	{
+	}
+}
+
+nova_star_Nova_WindowThreadPropertyMap* nova_star_Nova_WindowThreadPropertyMap_Nova_construct(nova_star_Nova_WindowThreadPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+	CCLASS_NEW(nova_star_Nova_WindowThreadPropertyMap, this,);
+	this->vtable = &nova_star_WindowThread_WindowThreadPropertyMap_Extension_VTable_val;
+	nova_Nova_Object_Nova_super((nova_Nova_Object*)this, exceptionData);
+	nova_meta_Nova_PropertyMap_Nova_super((nova_meta_Nova_PropertyMap*)this, exceptionData);
+	nova_thread_Nova_ThreadPropertyMap_Nova_super((nova_thread_Nova_ThreadPropertyMap*)this, exceptionData);
+	nova_star_Nova_WindowThreadPropertyMap_Nova_super(this, exceptionData);
+	
+	{
+		nova_star_Nova_WindowThreadPropertyMap_Nova_this(this, exceptionData);
+	}
+	
+	return this;
+}
+
+void nova_star_Nova_WindowThreadPropertyMap_Nova_destroy(nova_star_Nova_WindowThreadPropertyMap** this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+	if (!*this)
+	{
+		return;
+	}
+	
+	
+	NOVA_FREE(*this);
+}
+
+void nova_star_Nova_WindowThreadPropertyMap_Nova_this(nova_star_Nova_WindowThreadPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+}
+
+void nova_star_Nova_WindowThreadPropertyMap_Nova_super(nova_star_Nova_WindowThreadPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
 }
 

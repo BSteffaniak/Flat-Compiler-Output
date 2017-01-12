@@ -3,6 +3,7 @@
 
 typedef struct nova_math_logic_Nova_LogicalConnective nova_math_logic_Nova_LogicalConnective;
 typedef struct nova_math_logic_Nova_LogicalConnectiveFunctionMap nova_math_logic_Nova_LogicalConnectiveFunctionMap;
+typedef struct nova_math_logic_Nova_LogicalConnectivePropertyMap nova_math_logic_Nova_LogicalConnectivePropertyMap;
 
 
 #include <Nova.h>
@@ -39,7 +40,9 @@ typedef struct nova_math_logic_Nova_LogicalConnectiveFunctionMap nova_math_logic
 #include <nova/nova_Nova_System.h>
 #include <nova/meta/nova_meta_Nova_Class.h>
 #include <nova/meta/nova_meta_Nova_FunctionMap.h>
+#include <nova/meta/nova_meta_Nova_PropertyMap.h>
 #include <nova/regex/nova_regex_Nova_Pattern.h>
+#include <nova/math/logic/nova_math_logic_Nova_StatementComponent.h>
 #include <nova/math/logic/nova_math_logic_Nova_StatementComponent.h>
 #include <nova/math/logic/nova_math_logic_Nova_StatementComponent.h>
 #include <nova/NativeObject.h>
@@ -70,5 +73,18 @@ void nova_math_logic_Nova_LogicalConnectiveFunctionMap_Nova_destroy(nova_math_lo
 void nova_math_logic_Nova_LogicalConnectiveFunctionMap_Nova_this(nova_math_logic_Nova_LogicalConnectiveFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
 nova_math_logic_Nova_LogicalConnective* nova_math_logic_Nova_LogicalConnectiveFunctionMap_functionMapLogicalConnectiveFunctionMap_Nova_construct(nova_math_logic_Nova_LogicalConnectiveFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
 void nova_math_logic_Nova_LogicalConnectiveFunctionMap_Nova_super(nova_math_logic_Nova_LogicalConnectiveFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+
+CCLASS_CLASS
+(
+	nova_math_logic_Nova_LogicalConnectivePropertyMap, 
+	
+	nova_math_logic_LogicalConnective_LogicalConnectivePropertyMap_Extension_VTable* vtable;
+)
+
+void nova_math_logic_Nova_LogicalConnectivePropertyMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData);
+nova_math_logic_Nova_LogicalConnectivePropertyMap* nova_math_logic_Nova_LogicalConnectivePropertyMap_Nova_construct(nova_math_logic_Nova_LogicalConnectivePropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+void nova_math_logic_Nova_LogicalConnectivePropertyMap_Nova_destroy(nova_math_logic_Nova_LogicalConnectivePropertyMap** this, nova_exception_Nova_ExceptionData* exceptionData);
+void nova_math_logic_Nova_LogicalConnectivePropertyMap_Nova_this(nova_math_logic_Nova_LogicalConnectivePropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+void nova_math_logic_Nova_LogicalConnectivePropertyMap_Nova_super(nova_math_logic_Nova_LogicalConnectivePropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData);
 
 #endif

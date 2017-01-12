@@ -3,6 +3,7 @@
 
 typedef struct nova_regex_Nova_Regex nova_regex_Nova_Regex;
 typedef struct nova_regex_Nova_RegexFunctionMap nova_regex_Nova_RegexFunctionMap;
+typedef struct nova_regex_Nova_RegexPropertyMap nova_regex_Nova_RegexPropertyMap;
 
 
 #include <Nova.h>
@@ -39,6 +40,7 @@ typedef struct nova_regex_Nova_RegexFunctionMap nova_regex_Nova_RegexFunctionMap
 #include <nova/nova_Nova_System.h>
 #include <nova/meta/nova_meta_Nova_Class.h>
 #include <nova/meta/nova_meta_Nova_FunctionMap.h>
+#include <nova/meta/nova_meta_Nova_PropertyMap.h>
 #include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <nova/regex/nova_regex_Nova_Match.h>
 #include <pcre/pcre2.h>
@@ -80,5 +82,19 @@ char nova_regex_Nova_RegexFunctionMap_functionMap1_static_Nova_containsMatch(nov
 nova_datastruct_list_Nova_Array* nova_regex_Nova_RegexFunctionMap_functionMap0_static_Nova_getMatches(nova_regex_Nova_RegexFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_regex_Nova_Pattern* pattern, nova_Nova_String* search);
 nova_datastruct_list_Nova_Array* nova_regex_Nova_RegexFunctionMap_functionMap1_static_Nova_getMatches(nova_regex_Nova_RegexFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* regex, nova_Nova_String* search);
 void nova_regex_Nova_RegexFunctionMap_Nova_super(nova_regex_Nova_RegexFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+
+CCLASS_CLASS
+(
+	nova_regex_Nova_RegexPropertyMap, 
+	
+	nova_regex_Regex_RegexPropertyMap_Extension_VTable* vtable;
+	nova_meta_Nova_Class* nova_regex_Nova_RegexPropertyMap_Nova_class;
+)
+
+void nova_regex_Nova_RegexPropertyMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData);
+nova_regex_Nova_RegexPropertyMap* nova_regex_Nova_RegexPropertyMap_Nova_construct(nova_regex_Nova_RegexPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+void nova_regex_Nova_RegexPropertyMap_Nova_destroy(nova_regex_Nova_RegexPropertyMap** this, nova_exception_Nova_ExceptionData* exceptionData);
+void nova_regex_Nova_RegexPropertyMap_Nova_this(nova_regex_Nova_RegexPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+void nova_regex_Nova_RegexPropertyMap_Nova_super(nova_regex_Nova_RegexPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData);
 
 #endif

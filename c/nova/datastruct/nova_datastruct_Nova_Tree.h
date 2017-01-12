@@ -3,6 +3,7 @@
 
 typedef struct nova_datastruct_Nova_Tree nova_datastruct_Nova_Tree;
 typedef struct nova_datastruct_Nova_TreeFunctionMap nova_datastruct_Nova_TreeFunctionMap;
+typedef struct nova_datastruct_Nova_TreePropertyMap nova_datastruct_Nova_TreePropertyMap;
 
 
 #include <Nova.h>
@@ -39,6 +40,7 @@ typedef struct nova_datastruct_Nova_TreeFunctionMap nova_datastruct_Nova_TreeFun
 #include <nova/nova_Nova_System.h>
 #include <nova/meta/nova_meta_Nova_Class.h>
 #include <nova/meta/nova_meta_Nova_FunctionMap.h>
+#include <nova/meta/nova_meta_Nova_PropertyMap.h>
 #include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <nova/datastruct/nova_datastruct_Nova_Node.h>
 #include <nova/NativeObject.h>
@@ -78,6 +80,20 @@ nova_datastruct_list_Nova_Array* nova_datastruct_Nova_TreeFunctionMap_functionMa
 nova_datastruct_list_Nova_Array* nova_datastruct_Nova_TreeFunctionMap_functionMap_Nova_postorder(nova_datastruct_Nova_TreeFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_Nova_Tree* reference);
 nova_datastruct_list_Nova_Array* nova_datastruct_Nova_TreeFunctionMap_functionMap_Nova_levelorder(nova_datastruct_Nova_TreeFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_Nova_Tree* reference);
 void nova_datastruct_Nova_TreeFunctionMap_Nova_super(nova_datastruct_Nova_TreeFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
-nova_datastruct_Nova_Tree* nova_datastruct_Nova_TreeFunctionMap_virtualfunctionMapTree_Nova_construct(nova_datastruct_Nova_TreeFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_Nova_Node* root);
+
+CCLASS_CLASS
+(
+	nova_datastruct_Nova_TreePropertyMap, 
+	
+	nova_datastruct_Tree_TreePropertyMap_Extension_VTable* vtable;
+)
+
+void nova_datastruct_Nova_TreePropertyMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData);
+nova_datastruct_Nova_TreePropertyMap* nova_datastruct_Nova_TreePropertyMap_Nova_construct(nova_datastruct_Nova_TreePropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+void nova_datastruct_Nova_TreePropertyMap_Nova_destroy(nova_datastruct_Nova_TreePropertyMap** this, nova_exception_Nova_ExceptionData* exceptionData);
+void nova_datastruct_Nova_TreePropertyMap_Nova_this(nova_datastruct_Nova_TreePropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+nova_datastruct_Nova_Node* nova_datastruct_Nova_TreePropertyMap_functionMap_Nova_root(nova_datastruct_Nova_TreePropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_Nova_Tree* reference);
+void nova_datastruct_Nova_TreePropertyMap_Nova_super(nova_datastruct_Nova_TreePropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+nova_datastruct_Nova_Node* nova_datastruct_Nova_TreePropertyMap_virtualfunctionMap_Nova_root(nova_datastruct_Nova_TreePropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_Nova_Tree* reference);
 
 #endif

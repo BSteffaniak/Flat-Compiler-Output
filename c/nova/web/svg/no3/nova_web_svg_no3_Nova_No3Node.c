@@ -29,6 +29,7 @@
 #include <nova/nova_Nova_System.h>
 #include <nova/meta/nova_meta_Nova_Class.h>
 #include <nova/meta/nova_meta_Nova_FunctionMap.h>
+#include <nova/meta/nova_meta_Nova_PropertyMap.h>
 #include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <nova/NativeObject.h>
 
@@ -121,6 +122,46 @@ nova_web_svg_no3_Nova_No3Node* nova_web_svg_no3_Nova_No3NodeFunctionMap_function
 }
 
 void nova_web_svg_no3_Nova_No3NodeFunctionMap_Nova_super(nova_web_svg_no3_Nova_No3NodeFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+}
+
+void nova_web_svg_no3_Nova_No3NodePropertyMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData)
+{
+	{
+	}
+}
+
+nova_web_svg_no3_Nova_No3NodePropertyMap* nova_web_svg_no3_Nova_No3NodePropertyMap_Nova_construct(nova_web_svg_no3_Nova_No3NodePropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+	CCLASS_NEW(nova_web_svg_no3_Nova_No3NodePropertyMap, this,);
+	this->vtable = &nova_web_svg_no3_No3Node_No3NodePropertyMap_Extension_VTable_val;
+	nova_Nova_Object_Nova_super((nova_Nova_Object*)this, exceptionData);
+	nova_meta_Nova_PropertyMap_Nova_super((nova_meta_Nova_PropertyMap*)this, exceptionData);
+	nova_web_svg_no3_Nova_No3NodePropertyMap_Nova_super(this, exceptionData);
+	
+	{
+		nova_web_svg_no3_Nova_No3NodePropertyMap_Nova_this(this, exceptionData);
+	}
+	
+	return this;
+}
+
+void nova_web_svg_no3_Nova_No3NodePropertyMap_Nova_destroy(nova_web_svg_no3_Nova_No3NodePropertyMap** this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+	if (!*this)
+	{
+		return;
+	}
+	
+	
+	NOVA_FREE(*this);
+}
+
+void nova_web_svg_no3_Nova_No3NodePropertyMap_Nova_this(nova_web_svg_no3_Nova_No3NodePropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+}
+
+void nova_web_svg_no3_Nova_No3NodePropertyMap_Nova_super(nova_web_svg_no3_Nova_No3NodePropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
 }
 

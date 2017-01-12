@@ -3,6 +3,7 @@
 
 typedef struct nova_security_Nova_MD5 nova_security_Nova_MD5;
 typedef struct nova_security_Nova_MD5FunctionMap nova_security_Nova_MD5FunctionMap;
+typedef struct nova_security_Nova_MD5PropertyMap nova_security_Nova_MD5PropertyMap;
 
 
 #include <Nova.h>
@@ -39,6 +40,7 @@ typedef struct nova_security_Nova_MD5FunctionMap nova_security_Nova_MD5FunctionM
 #include <nova/nova_Nova_System.h>
 #include <nova/meta/nova_meta_Nova_Class.h>
 #include <nova/meta/nova_meta_Nova_FunctionMap.h>
+#include <nova/meta/nova_meta_Nova_PropertyMap.h>
 #include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <nova/security/NativeMD5.h>
 #include <nova/NativeObject.h>
@@ -71,5 +73,18 @@ void nova_security_Nova_MD5FunctionMap_Nova_this(nova_security_Nova_MD5FunctionM
 nova_security_Nova_MD5* nova_security_Nova_MD5FunctionMap_functionMapMD5FunctionMap_Nova_construct(nova_security_Nova_MD5FunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
 nova_Nova_String* nova_security_Nova_MD5FunctionMap_functionMap_static_Nova_encrypt(nova_security_Nova_MD5FunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* str);
 void nova_security_Nova_MD5FunctionMap_Nova_super(nova_security_Nova_MD5FunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+
+CCLASS_CLASS
+(
+	nova_security_Nova_MD5PropertyMap, 
+	
+	nova_security_MD5_MD5PropertyMap_Extension_VTable* vtable;
+)
+
+void nova_security_Nova_MD5PropertyMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData);
+nova_security_Nova_MD5PropertyMap* nova_security_Nova_MD5PropertyMap_Nova_construct(nova_security_Nova_MD5PropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+void nova_security_Nova_MD5PropertyMap_Nova_destroy(nova_security_Nova_MD5PropertyMap** this, nova_exception_Nova_ExceptionData* exceptionData);
+void nova_security_Nova_MD5PropertyMap_Nova_this(nova_security_Nova_MD5PropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+void nova_security_Nova_MD5PropertyMap_Nova_super(nova_security_Nova_MD5PropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData);
 
 #endif

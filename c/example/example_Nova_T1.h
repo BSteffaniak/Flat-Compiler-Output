@@ -3,6 +3,7 @@
 
 typedef struct example_Nova_T1 example_Nova_T1;
 typedef struct example_Nova_T1FunctionMap example_Nova_T1FunctionMap;
+typedef struct example_Nova_T1PropertyMap example_Nova_T1PropertyMap;
 
 
 #include <Nova.h>
@@ -39,6 +40,7 @@ typedef struct example_Nova_T1FunctionMap example_Nova_T1FunctionMap;
 #include <nova/nova_Nova_System.h>
 #include <nova/meta/nova_meta_Nova_Class.h>
 #include <nova/meta/nova_meta_Nova_FunctionMap.h>
+#include <nova/meta/nova_meta_Nova_PropertyMap.h>
 #include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <nova/NativeObject.h>
 
@@ -71,5 +73,20 @@ void example_Nova_T1FunctionMap_Nova_this(example_Nova_T1FunctionMap* this, nova
 example_Nova_T1* example_Nova_T1FunctionMap_functionMapT1FunctionMap_Nova_construct(example_Nova_T1FunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
 void example_Nova_T1FunctionMap_Nova_super(example_Nova_T1FunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
 example_Nova_T1* example_Nova_T1FunctionMap_virtualfunctionMapT1_Nova_construct(example_Nova_T1FunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+
+CCLASS_CLASS
+(
+	example_Nova_T1PropertyMap, 
+	
+	example_T1_T1PropertyMap_Extension_VTable* vtable;
+)
+
+void example_Nova_T1PropertyMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData);
+example_Nova_T1PropertyMap* example_Nova_T1PropertyMap_Nova_construct(example_Nova_T1PropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+void example_Nova_T1PropertyMap_Nova_destroy(example_Nova_T1PropertyMap** this, nova_exception_Nova_ExceptionData* exceptionData);
+void example_Nova_T1PropertyMap_Nova_this(example_Nova_T1PropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+int example_Nova_T1PropertyMap_functionMap_static_Nova_ind(example_Nova_T1PropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+void example_Nova_T1PropertyMap_Nova_super(example_Nova_T1PropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+int example_Nova_T1PropertyMap_virtualfunctionMap_static_Nova_ind(example_Nova_T1PropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData);
 
 #endif

@@ -3,6 +3,7 @@
 
 typedef struct spectra_tree_nodes_Nova_Listener spectra_tree_nodes_Nova_Listener;
 typedef struct spectra_tree_nodes_Nova_ListenerFunctionMap spectra_tree_nodes_Nova_ListenerFunctionMap;
+typedef struct spectra_tree_nodes_Nova_ListenerPropertyMap spectra_tree_nodes_Nova_ListenerPropertyMap;
 
 
 #include <Nova.h>
@@ -39,6 +40,7 @@ typedef struct spectra_tree_nodes_Nova_ListenerFunctionMap spectra_tree_nodes_No
 #include <nova/nova_Nova_System.h>
 #include <nova/meta/nova_meta_Nova_Class.h>
 #include <nova/meta/nova_meta_Nova_FunctionMap.h>
+#include <nova/meta/nova_meta_Nova_PropertyMap.h>
 #include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <nova/NativeObject.h>
 
@@ -63,5 +65,18 @@ spectra_tree_nodes_Nova_ListenerFunctionMap* spectra_tree_nodes_Nova_ListenerFun
 void spectra_tree_nodes_Nova_ListenerFunctionMap_Nova_destroy(spectra_tree_nodes_Nova_ListenerFunctionMap** this, nova_exception_Nova_ExceptionData* exceptionData);
 void spectra_tree_nodes_Nova_ListenerFunctionMap_Nova_this(spectra_tree_nodes_Nova_ListenerFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
 void spectra_tree_nodes_Nova_ListenerFunctionMap_Nova_super(spectra_tree_nodes_Nova_ListenerFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+
+CCLASS_CLASS
+(
+	spectra_tree_nodes_Nova_ListenerPropertyMap, 
+	
+	spectra_tree_nodes_Listener_ListenerPropertyMap_Extension_VTable* vtable;
+)
+
+void spectra_tree_nodes_Nova_ListenerPropertyMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData);
+spectra_tree_nodes_Nova_ListenerPropertyMap* spectra_tree_nodes_Nova_ListenerPropertyMap_Nova_construct(spectra_tree_nodes_Nova_ListenerPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+void spectra_tree_nodes_Nova_ListenerPropertyMap_Nova_destroy(spectra_tree_nodes_Nova_ListenerPropertyMap** this, nova_exception_Nova_ExceptionData* exceptionData);
+void spectra_tree_nodes_Nova_ListenerPropertyMap_Nova_this(spectra_tree_nodes_Nova_ListenerPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+void spectra_tree_nodes_Nova_ListenerPropertyMap_Nova_super(spectra_tree_nodes_Nova_ListenerPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData);
 
 #endif

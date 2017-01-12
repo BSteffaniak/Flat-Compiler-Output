@@ -29,6 +29,7 @@
 #include <nova/nova_Nova_System.h>
 #include <nova/meta/nova_meta_Nova_Class.h>
 #include <nova/meta/nova_meta_Nova_FunctionMap.h>
+#include <nova/meta/nova_meta_Nova_PropertyMap.h>
 #include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <nova/NativeObject.h>
 
@@ -179,6 +180,106 @@ void nova_serialization_Nova_JsonSerializerFunctionMap_functionMap_Nova_parse(no
 }
 
 void nova_serialization_Nova_JsonSerializerFunctionMap_Nova_super(nova_serialization_Nova_JsonSerializerFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+}
+
+void nova_serialization_Nova_JsonSerializerPropertyMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData)
+{
+	{
+	}
+}
+
+nova_serialization_Nova_JsonSerializerPropertyMap* nova_serialization_Nova_JsonSerializerPropertyMap_Nova_construct(nova_serialization_Nova_JsonSerializerPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+	CCLASS_NEW(nova_serialization_Nova_JsonSerializerPropertyMap, this,);
+	this->vtable = &nova_serialization_JsonSerializer_JsonSerializerPropertyMap_Extension_VTable_val;
+	nova_Nova_Object_Nova_super((nova_Nova_Object*)this, exceptionData);
+	nova_meta_Nova_PropertyMap_Nova_super((nova_meta_Nova_PropertyMap*)this, exceptionData);
+	nova_serialization_Nova_JsonSerializerPropertyMap_Nova_super(this, exceptionData);
+	
+	{
+		nova_serialization_Nova_JsonSerializerPropertyMap_Nova_this(this, exceptionData);
+	}
+	
+	return this;
+}
+
+void nova_serialization_Nova_JsonSerializerPropertyMap_Nova_destroy(nova_serialization_Nova_JsonSerializerPropertyMap** this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+	if (!*this)
+	{
+		return;
+	}
+	
+	
+	NOVA_FREE(*this);
+}
+
+void nova_serialization_Nova_JsonSerializerPropertyMap_Nova_this(nova_serialization_Nova_JsonSerializerPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+}
+
+int nova_serialization_Nova_JsonSerializerPropertyMap_functionMap_Nova_TOKEN_NONE(nova_serialization_Nova_JsonSerializerPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_serialization_Nova_JsonSerializer* reference)
+{
+	return reference->nova_serialization_Nova_JsonSerializer_Nova_TOKEN_NONE;
+}
+
+int nova_serialization_Nova_JsonSerializerPropertyMap_functionMap_Nova_TOKEN_CURLY_OPEN(nova_serialization_Nova_JsonSerializerPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_serialization_Nova_JsonSerializer* reference)
+{
+	return reference->nova_serialization_Nova_JsonSerializer_Nova_TOKEN_CURLY_OPEN;
+}
+
+int nova_serialization_Nova_JsonSerializerPropertyMap_functionMap_Nova_TOKEN_CURLY_CLOSE(nova_serialization_Nova_JsonSerializerPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_serialization_Nova_JsonSerializer* reference)
+{
+	return reference->nova_serialization_Nova_JsonSerializer_Nova_TOKEN_CURLY_CLOSE;
+}
+
+int nova_serialization_Nova_JsonSerializerPropertyMap_functionMap_Nova_TOKEN_SQUARED_OPEN(nova_serialization_Nova_JsonSerializerPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_serialization_Nova_JsonSerializer* reference)
+{
+	return reference->nova_serialization_Nova_JsonSerializer_Nova_TOKEN_SQUARED_OPEN;
+}
+
+int nova_serialization_Nova_JsonSerializerPropertyMap_functionMap_Nova_TOKEN_SQUARED_CLOSE(nova_serialization_Nova_JsonSerializerPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_serialization_Nova_JsonSerializer* reference)
+{
+	return reference->nova_serialization_Nova_JsonSerializer_Nova_TOKEN_SQUARED_CLOSE;
+}
+
+int nova_serialization_Nova_JsonSerializerPropertyMap_functionMap_Nova_TOKEN_COLON(nova_serialization_Nova_JsonSerializerPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_serialization_Nova_JsonSerializer* reference)
+{
+	return reference->nova_serialization_Nova_JsonSerializer_Nova_TOKEN_COLON;
+}
+
+int nova_serialization_Nova_JsonSerializerPropertyMap_functionMap_Nova_TOKEN_COMMA(nova_serialization_Nova_JsonSerializerPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_serialization_Nova_JsonSerializer* reference)
+{
+	return reference->nova_serialization_Nova_JsonSerializer_Nova_TOKEN_COMMA;
+}
+
+int nova_serialization_Nova_JsonSerializerPropertyMap_functionMap_Nova_TOKEN_STRING(nova_serialization_Nova_JsonSerializerPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_serialization_Nova_JsonSerializer* reference)
+{
+	return reference->nova_serialization_Nova_JsonSerializer_Nova_TOKEN_STRING;
+}
+
+int nova_serialization_Nova_JsonSerializerPropertyMap_functionMap_Nova_TOKEN_NUMBER(nova_serialization_Nova_JsonSerializerPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_serialization_Nova_JsonSerializer* reference)
+{
+	return reference->nova_serialization_Nova_JsonSerializer_Nova_TOKEN_NUMBER;
+}
+
+int nova_serialization_Nova_JsonSerializerPropertyMap_functionMap_Nova_TOKEN_TRUE(nova_serialization_Nova_JsonSerializerPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_serialization_Nova_JsonSerializer* reference)
+{
+	return reference->nova_serialization_Nova_JsonSerializer_Nova_TOKEN_TRUE;
+}
+
+int nova_serialization_Nova_JsonSerializerPropertyMap_functionMap_Nova_TOKEN_FALSE(nova_serialization_Nova_JsonSerializerPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_serialization_Nova_JsonSerializer* reference)
+{
+	return reference->nova_serialization_Nova_JsonSerializer_Nova_TOKEN_FALSE;
+}
+
+int nova_serialization_Nova_JsonSerializerPropertyMap_functionMap_Nova_TOKEN_NULL(nova_serialization_Nova_JsonSerializerPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_serialization_Nova_JsonSerializer* reference)
+{
+	return reference->nova_serialization_Nova_JsonSerializer_Nova_TOKEN_NULL;
+}
+
+void nova_serialization_Nova_JsonSerializerPropertyMap_Nova_super(nova_serialization_Nova_JsonSerializerPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
 }
 

@@ -3,6 +3,7 @@
 
 typedef struct spectra_tree_nodes_Nova_NumericRange spectra_tree_nodes_Nova_NumericRange;
 typedef struct spectra_tree_nodes_Nova_NumericRangeFunctionMap spectra_tree_nodes_Nova_NumericRangeFunctionMap;
+typedef struct spectra_tree_nodes_Nova_NumericRangePropertyMap spectra_tree_nodes_Nova_NumericRangePropertyMap;
 
 
 #include <Nova.h>
@@ -39,11 +40,13 @@ typedef struct spectra_tree_nodes_Nova_NumericRangeFunctionMap spectra_tree_node
 #include <nova/nova_Nova_System.h>
 #include <nova/meta/nova_meta_Nova_Class.h>
 #include <nova/meta/nova_meta_Nova_FunctionMap.h>
+#include <nova/meta/nova_meta_Nova_PropertyMap.h>
 #include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <spectra/util/spectra_util_Nova_Location.h>
 #include <spectra/tree/nodes/functions/spectra_tree_nodes_functions_Nova_Instantiation.h>
 #include <spectra/tree/nodes/spectra_tree_nodes_Nova_Node.h>
 #include <spectra/tree/nodes/spectra_tree_nodes_Nova_Value.h>
+#include <spectra/tree/nodes/functions/spectra_tree_nodes_functions_Nova_Instantiation.h>
 #include <spectra/tree/nodes/functions/spectra_tree_nodes_functions_Nova_Instantiation.h>
 #include <spectra/tree/nodes/spectra_tree_nodes_Nova_PlaceholderValue.h>
 #include <spectra/tree/nodes/spectra_tree_nodes_Nova_NodeList.h>
@@ -53,6 +56,7 @@ typedef struct spectra_tree_nodes_Nova_NumericRangeFunctionMap spectra_tree_node
 #include <spectra/tree/nodes/functions/spectra_tree_nodes_functions_Nova_ObjectNotation.h>
 #include <spectra/tree/nodes/functions/spectra_tree_nodes_functions_Nova_ObjectNotationProperty.h>
 #include <spectra/tree/nodes/functions/spectra_tree_nodes_functions_Nova_FunctionCall.h>
+#include <spectra/tree/nodes/functions/spectra_tree_nodes_functions_Nova_FunctionCall.h>
 #include <spectra/tree/nodes/spectra_tree_nodes_Nova_ClassDeclaration.h>
 #include <spectra/tree/nodes/variables/spectra_tree_nodes_variables_Nova_Variable.h>
 #include <spectra/tree/nodes/functions/closures/spectra_tree_nodes_functions_closures_Nova_ClosureDeclaration.h>
@@ -61,6 +65,7 @@ typedef struct spectra_tree_nodes_Nova_NumericRangeFunctionMap spectra_tree_node
 #include <spectra/tree/nodes/functions/spectra_tree_nodes_functions_Nova_Constructor.h>
 #include <spectra/tree/nodes/functions/spectra_tree_nodes_functions_Nova_FunctionArgumentList.h>
 #include <spectra/tree/nodes/variables/spectra_tree_nodes_variables_Nova_Variable.h>
+#include <spectra/tree/nodes/variables/spectra_tree_nodes_variables_Nova_Variable.h>
 #include <spectra/tree/nodes/spectra_tree_nodes_Nova_Type.h>
 #include <spectra/tree/nodes/spectra_tree_nodes_Nova_Identifier.h>
 #include <spectra/tree/nodes/spectra_tree_nodes_Nova_Accessible.h>
@@ -68,6 +73,10 @@ typedef struct spectra_tree_nodes_Nova_NumericRangeFunctionMap spectra_tree_node
 #include <spectra/tree/nodes/spectra_tree_nodes_Nova_Identifier.h>
 #include <spectra/tree/nodes/spectra_tree_nodes_Nova_Accessible.h>
 #include <spectra/tree/nodes/operations/spectra_tree_nodes_operations_Nova_Assignable.h>
+#include <spectra/tree/nodes/spectra_tree_nodes_Nova_Identifier.h>
+#include <spectra/tree/nodes/spectra_tree_nodes_Nova_Accessible.h>
+#include <spectra/tree/nodes/operations/spectra_tree_nodes_operations_Nova_Assignable.h>
+#include <spectra/tree/nodes/spectra_tree_nodes_Nova_Value.h>
 #include <spectra/tree/nodes/spectra_tree_nodes_Nova_Value.h>
 #include <nova/datastruct/nova_datastruct_Nova_Tuple2.h>
 #include <spectra/spectra_Nova_SyntaxMessage.h>
@@ -85,6 +94,7 @@ typedef struct spectra_tree_nodes_Nova_NumericRangeFunctionMap spectra_tree_node
 #include <spectra/tree/nodes/spectra_tree_nodes_Nova_Priority.h>
 #include <spectra/tree/nodes/spectra_tree_nodes_Nova_StaticClassReference.h>
 #include <spectra/tree/nodes/spectra_tree_nodes_Nova_Node.h>
+#include <spectra/tree/nodes/spectra_tree_nodes_Nova_Node.h>
 #include <spectra/spectra_Nova_SyntaxErrorException.h>
 #include <spectra/error/spectra_error_Nova_UnimplementedOperationException.h>
 #include <spectra/tree/nodes/annotations/spectra_tree_nodes_annotations_Nova_Annotatable.h>
@@ -93,6 +103,7 @@ typedef struct spectra_tree_nodes_Nova_NumericRangeFunctionMap spectra_tree_node
 #include <spectra/tree/nodes/spectra_tree_nodes_Nova_Program.h>
 #include <spectra/tree/nodes/spectra_tree_nodes_Nova_Scope.h>
 #include <spectra/tree/nodes/spectra_tree_nodes_Nova_ValidationResult.h>
+#include <spectra/tree/nodes/annotations/spectra_tree_nodes_annotations_Nova_Annotatable.h>
 #include <spectra/tree/nodes/annotations/spectra_tree_nodes_annotations_Nova_Annotatable.h>
 #include <nova/NativeObject.h>
 
@@ -141,5 +152,20 @@ spectra_tree_nodes_Nova_NumericRange* spectra_tree_nodes_Nova_NumericRangeFuncti
 spectra_tree_nodes_Nova_NumericRange* spectra_tree_nodes_Nova_NumericRangeFunctionMap_functionMap_static_Nova_parse(spectra_tree_nodes_Nova_NumericRangeFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* input, spectra_tree_nodes_Nova_Node* parent, spectra_util_Nova_Location* location, char require);
 nova_Nova_String* spectra_tree_nodes_Nova_NumericRangeFunctionMap_functionMap_Nova_writeNova(spectra_tree_nodes_Nova_NumericRangeFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, spectra_tree_nodes_Nova_NumericRange* reference);
 void spectra_tree_nodes_Nova_NumericRangeFunctionMap_Nova_super(spectra_tree_nodes_Nova_NumericRangeFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+
+CCLASS_CLASS
+(
+	spectra_tree_nodes_Nova_NumericRangePropertyMap, 
+	
+	spectra_tree_nodes_NumericRange_NumericRangePropertyMap_Extension_VTable* vtable;
+)
+
+void spectra_tree_nodes_Nova_NumericRangePropertyMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData);
+spectra_tree_nodes_Nova_NumericRangePropertyMap* spectra_tree_nodes_Nova_NumericRangePropertyMap_Nova_construct(spectra_tree_nodes_Nova_NumericRangePropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+void spectra_tree_nodes_Nova_NumericRangePropertyMap_Nova_destroy(spectra_tree_nodes_Nova_NumericRangePropertyMap** this, nova_exception_Nova_ExceptionData* exceptionData);
+void spectra_tree_nodes_Nova_NumericRangePropertyMap_Nova_this(spectra_tree_nodes_Nova_NumericRangePropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+spectra_tree_nodes_Nova_Value* spectra_tree_nodes_Nova_NumericRangePropertyMap_functionMap_Nova_start(spectra_tree_nodes_Nova_NumericRangePropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData, spectra_tree_nodes_Nova_NumericRange* reference);
+spectra_tree_nodes_Nova_Value* spectra_tree_nodes_Nova_NumericRangePropertyMap_functionMap_Nova_end(spectra_tree_nodes_Nova_NumericRangePropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData, spectra_tree_nodes_Nova_NumericRange* reference);
+void spectra_tree_nodes_Nova_NumericRangePropertyMap_Nova_super(spectra_tree_nodes_Nova_NumericRangePropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData);
 
 #endif

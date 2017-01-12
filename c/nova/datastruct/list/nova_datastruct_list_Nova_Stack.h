@@ -3,6 +3,7 @@
 
 typedef struct nova_datastruct_list_Nova_Stack nova_datastruct_list_Nova_Stack;
 typedef struct nova_datastruct_list_Nova_StackFunctionMap nova_datastruct_list_Nova_StackFunctionMap;
+typedef struct nova_datastruct_list_Nova_StackPropertyMap nova_datastruct_list_Nova_StackPropertyMap;
 
 
 #include <Nova.h>
@@ -39,6 +40,7 @@ typedef struct nova_datastruct_list_Nova_StackFunctionMap nova_datastruct_list_N
 #include <nova/nova_Nova_System.h>
 #include <nova/meta/nova_meta_Nova_Class.h>
 #include <nova/meta/nova_meta_Nova_FunctionMap.h>
+#include <nova/meta/nova_meta_Nova_PropertyMap.h>
 #include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_ArrayIterator.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_EmptyStackException.h>
@@ -83,5 +85,20 @@ void nova_datastruct_list_Nova_StackFunctionMap_functionMap_Nova_push(nova_datas
 nova_Nova_Object* nova_datastruct_list_Nova_StackFunctionMap_functionMap_Nova_pop(nova_datastruct_list_Nova_StackFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_list_Nova_Stack* reference);
 nova_Nova_Object* nova_datastruct_list_Nova_StackFunctionMap_functionMap_Nova_peek(nova_datastruct_list_Nova_StackFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_list_Nova_Stack* reference);
 void nova_datastruct_list_Nova_StackFunctionMap_Nova_super(nova_datastruct_list_Nova_StackFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+
+CCLASS_CLASS
+(
+	nova_datastruct_list_Nova_StackPropertyMap, 
+	
+	nova_datastruct_list_Stack_StackPropertyMap_Extension_VTable* vtable;
+)
+
+void nova_datastruct_list_Nova_StackPropertyMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData);
+nova_datastruct_list_Nova_StackPropertyMap* nova_datastruct_list_Nova_StackPropertyMap_Nova_construct(nova_datastruct_list_Nova_StackPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+void nova_datastruct_list_Nova_StackPropertyMap_Nova_destroy(nova_datastruct_list_Nova_StackPropertyMap** this, nova_exception_Nova_ExceptionData* exceptionData);
+void nova_datastruct_list_Nova_StackPropertyMap_Nova_this(nova_datastruct_list_Nova_StackPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+int nova_datastruct_list_Nova_StackPropertyMap_functionMap_Nova_count(nova_datastruct_list_Nova_StackPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_list_Nova_Stack* reference);
+char nova_datastruct_list_Nova_StackPropertyMap_functionMap_Nova_isEmpty(nova_datastruct_list_Nova_StackPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_list_Nova_Stack* reference);
+void nova_datastruct_list_Nova_StackPropertyMap_Nova_super(nova_datastruct_list_Nova_StackPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData);
 
 #endif

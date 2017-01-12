@@ -3,6 +3,7 @@
 
 typedef struct nova_primitive_Nova_Primitive nova_primitive_Nova_Primitive;
 typedef struct nova_primitive_Nova_PrimitiveFunctionMap nova_primitive_Nova_PrimitiveFunctionMap;
+typedef struct nova_primitive_Nova_PrimitivePropertyMap nova_primitive_Nova_PrimitivePropertyMap;
 
 
 #include <Nova.h>
@@ -39,6 +40,7 @@ typedef struct nova_primitive_Nova_PrimitiveFunctionMap nova_primitive_Nova_Prim
 #include <nova/nova_Nova_System.h>
 #include <nova/meta/nova_meta_Nova_Class.h>
 #include <nova/meta/nova_meta_Nova_FunctionMap.h>
+#include <nova/meta/nova_meta_Nova_PropertyMap.h>
 #include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <nova/NativeObject.h>
 
@@ -69,5 +71,18 @@ void nova_primitive_Nova_PrimitiveFunctionMap_Nova_this(nova_primitive_Nova_Prim
 nova_primitive_Nova_Primitive* nova_primitive_Nova_PrimitiveFunctionMap_functionMapPrimitiveFunctionMap_Nova_construct(nova_primitive_Nova_PrimitiveFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
 void nova_primitive_Nova_PrimitiveFunctionMap_Nova_super(nova_primitive_Nova_PrimitiveFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
 nova_primitive_Nova_Primitive* nova_primitive_Nova_PrimitiveFunctionMap_virtualfunctionMapPrimitive_Nova_construct(nova_primitive_Nova_PrimitiveFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+
+CCLASS_CLASS
+(
+	nova_primitive_Nova_PrimitivePropertyMap, 
+	
+	nova_primitive_Primitive_PrimitivePropertyMap_Extension_VTable* vtable;
+)
+
+void nova_primitive_Nova_PrimitivePropertyMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData);
+nova_primitive_Nova_PrimitivePropertyMap* nova_primitive_Nova_PrimitivePropertyMap_Nova_construct(nova_primitive_Nova_PrimitivePropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+void nova_primitive_Nova_PrimitivePropertyMap_Nova_destroy(nova_primitive_Nova_PrimitivePropertyMap** this, nova_exception_Nova_ExceptionData* exceptionData);
+void nova_primitive_Nova_PrimitivePropertyMap_Nova_this(nova_primitive_Nova_PrimitivePropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+void nova_primitive_Nova_PrimitivePropertyMap_Nova_super(nova_primitive_Nova_PrimitivePropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData);
 
 #endif

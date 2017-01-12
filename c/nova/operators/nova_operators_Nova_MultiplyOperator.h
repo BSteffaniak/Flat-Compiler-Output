@@ -3,6 +3,7 @@
 
 typedef struct nova_operators_Nova_MultiplyOperator nova_operators_Nova_MultiplyOperator;
 typedef struct nova_operators_Nova_MultiplyOperatorFunctionMap nova_operators_Nova_MultiplyOperatorFunctionMap;
+typedef struct nova_operators_Nova_MultiplyOperatorPropertyMap nova_operators_Nova_MultiplyOperatorPropertyMap;
 
 
 #include <Nova.h>
@@ -39,6 +40,7 @@ typedef struct nova_operators_Nova_MultiplyOperatorFunctionMap nova_operators_No
 #include <nova/nova_Nova_System.h>
 #include <nova/meta/nova_meta_Nova_Class.h>
 #include <nova/meta/nova_meta_Nova_FunctionMap.h>
+#include <nova/meta/nova_meta_Nova_PropertyMap.h>
 #include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <nova/NativeObject.h>
 
@@ -64,5 +66,18 @@ nova_operators_Nova_MultiplyOperatorFunctionMap* nova_operators_Nova_MultiplyOpe
 void nova_operators_Nova_MultiplyOperatorFunctionMap_Nova_destroy(nova_operators_Nova_MultiplyOperatorFunctionMap** this, nova_exception_Nova_ExceptionData* exceptionData);
 void nova_operators_Nova_MultiplyOperatorFunctionMap_Nova_this(nova_operators_Nova_MultiplyOperatorFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
 void nova_operators_Nova_MultiplyOperatorFunctionMap_Nova_super(nova_operators_Nova_MultiplyOperatorFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+
+CCLASS_CLASS
+(
+	nova_operators_Nova_MultiplyOperatorPropertyMap, 
+	
+	nova_operators_MultiplyOperator_MultiplyOperatorPropertyMap_Extension_VTable* vtable;
+)
+
+void nova_operators_Nova_MultiplyOperatorPropertyMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData);
+nova_operators_Nova_MultiplyOperatorPropertyMap* nova_operators_Nova_MultiplyOperatorPropertyMap_Nova_construct(nova_operators_Nova_MultiplyOperatorPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+void nova_operators_Nova_MultiplyOperatorPropertyMap_Nova_destroy(nova_operators_Nova_MultiplyOperatorPropertyMap** this, nova_exception_Nova_ExceptionData* exceptionData);
+void nova_operators_Nova_MultiplyOperatorPropertyMap_Nova_this(nova_operators_Nova_MultiplyOperatorPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+void nova_operators_Nova_MultiplyOperatorPropertyMap_Nova_super(nova_operators_Nova_MultiplyOperatorPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData);
 
 #endif

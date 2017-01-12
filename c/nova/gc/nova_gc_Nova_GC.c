@@ -29,6 +29,7 @@
 #include <nova/nova_Nova_System.h>
 #include <nova/meta/nova_meta_Nova_Class.h>
 #include <nova/meta/nova_meta_Nova_FunctionMap.h>
+#include <nova/meta/nova_meta_Nova_PropertyMap.h>
 #include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <nova/gc/NativeGC.h>
 #include <nova/NativeObject.h>
@@ -185,6 +186,66 @@ void nova_gc_Nova_GCFunctionMap_functionMap_static_Nova_dump(nova_gc_Nova_GCFunc
 }
 
 void nova_gc_Nova_GCFunctionMap_Nova_super(nova_gc_Nova_GCFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+}
+
+void nova_gc_Nova_GCPropertyMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData)
+{
+	{
+	}
+}
+
+nova_gc_Nova_GCPropertyMap* nova_gc_Nova_GCPropertyMap_Nova_construct(nova_gc_Nova_GCPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+	CCLASS_NEW(nova_gc_Nova_GCPropertyMap, this,);
+	this->vtable = &nova_gc_GC_GCPropertyMap_Extension_VTable_val;
+	nova_Nova_Object_Nova_super((nova_Nova_Object*)this, exceptionData);
+	nova_meta_Nova_PropertyMap_Nova_super((nova_meta_Nova_PropertyMap*)this, exceptionData);
+	nova_gc_Nova_GCPropertyMap_Nova_super(this, exceptionData);
+	
+	{
+		nova_gc_Nova_GCPropertyMap_Nova_this(this, exceptionData);
+	}
+	
+	return this;
+}
+
+void nova_gc_Nova_GCPropertyMap_Nova_destroy(nova_gc_Nova_GCPropertyMap** this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+	if (!*this)
+	{
+		return;
+	}
+	
+	
+	NOVA_FREE(*this);
+}
+
+void nova_gc_Nova_GCPropertyMap_Nova_this(nova_gc_Nova_GCPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+}
+
+int nova_gc_Nova_GCPropertyMap_functionMap_Nova_freeBytes(nova_gc_Nova_GCPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_gc_Nova_GC* reference)
+{
+	return nova_gc_Nova_GC_Accessor_Nova_freeBytes(reference, exceptionData);
+}
+
+int nova_gc_Nova_GCPropertyMap_functionMap_Nova_totalBytes(nova_gc_Nova_GCPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_gc_Nova_GC* reference)
+{
+	return nova_gc_Nova_GC_Accessor_Nova_totalBytes(reference, exceptionData);
+}
+
+int nova_gc_Nova_GCPropertyMap_functionMap_Nova_heapSize(nova_gc_Nova_GCPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_gc_Nova_GC* reference)
+{
+	return nova_gc_Nova_GC_Accessor_Nova_heapSize(reference, exceptionData);
+}
+
+int nova_gc_Nova_GCPropertyMap_functionMap_Nova_bytesSinceGC(nova_gc_Nova_GCPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_gc_Nova_GC* reference)
+{
+	return nova_gc_Nova_GC_Accessor_Nova_bytesSinceGC(reference, exceptionData);
+}
+
+void nova_gc_Nova_GCPropertyMap_Nova_super(nova_gc_Nova_GCPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
 }
 

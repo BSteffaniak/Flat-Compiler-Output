@@ -29,12 +29,14 @@
 #include <nova/nova_Nova_System.h>
 #include <nova/meta/nova_meta_Nova_Class.h>
 #include <nova/meta/nova_meta_Nova_FunctionMap.h>
+#include <nova/meta/nova_meta_Nova_PropertyMap.h>
 #include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <nova/io/nova_io_Nova_File.h>
 #include <nova/io/nova_io_Nova_FileReader.h>
 #include <nova/io/nova_io_Nova_FileWriter.h>
 #include <nova/time/nova_time_Nova_Time.h>
 #include <stabilitytest/stabilitytest_Nova_StabilityTest.h>
+#include <stabilitytest/stabilitytest_Nova_StabilityTestCase.h>
 #include <stabilitytest/stabilitytest_Nova_StabilityTestCase.h>
 #include <stabilitytest/stabilitytest_Nova_StabilityTestCase.h>
 #include <nova/NativeObject.h>
@@ -249,6 +251,47 @@ void stabilitytest_Nova_FileStabilityFunctionMap_functionMap_Nova_deleteFile(sta
 }
 
 void stabilitytest_Nova_FileStabilityFunctionMap_Nova_super(stabilitytest_Nova_FileStabilityFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+}
+
+void stabilitytest_Nova_FileStabilityPropertyMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData)
+{
+	{
+	}
+}
+
+stabilitytest_Nova_FileStabilityPropertyMap* stabilitytest_Nova_FileStabilityPropertyMap_Nova_construct(stabilitytest_Nova_FileStabilityPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+	CCLASS_NEW(stabilitytest_Nova_FileStabilityPropertyMap, this,);
+	this->vtable = &stabilitytest_FileStability_FileStabilityPropertyMap_Extension_VTable_val;
+	nova_Nova_Object_Nova_super((nova_Nova_Object*)this, exceptionData);
+	nova_meta_Nova_PropertyMap_Nova_super((nova_meta_Nova_PropertyMap*)this, exceptionData);
+	stabilitytest_Nova_StabilityTestCasePropertyMap_Nova_super((stabilitytest_Nova_StabilityTestCasePropertyMap*)this, exceptionData);
+	stabilitytest_Nova_FileStabilityPropertyMap_Nova_super(this, exceptionData);
+	
+	{
+		stabilitytest_Nova_FileStabilityPropertyMap_Nova_this(this, exceptionData);
+	}
+	
+	return this;
+}
+
+void stabilitytest_Nova_FileStabilityPropertyMap_Nova_destroy(stabilitytest_Nova_FileStabilityPropertyMap** this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+	if (!*this)
+	{
+		return;
+	}
+	
+	
+	NOVA_FREE(*this);
+}
+
+void stabilitytest_Nova_FileStabilityPropertyMap_Nova_this(stabilitytest_Nova_FileStabilityPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+}
+
+void stabilitytest_Nova_FileStabilityPropertyMap_Nova_super(stabilitytest_Nova_FileStabilityPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
 }
 

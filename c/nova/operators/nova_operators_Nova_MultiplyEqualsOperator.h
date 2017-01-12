@@ -3,6 +3,7 @@
 
 typedef struct nova_operators_Nova_MultiplyEqualsOperator nova_operators_Nova_MultiplyEqualsOperator;
 typedef struct nova_operators_Nova_MultiplyEqualsOperatorFunctionMap nova_operators_Nova_MultiplyEqualsOperatorFunctionMap;
+typedef struct nova_operators_Nova_MultiplyEqualsOperatorPropertyMap nova_operators_Nova_MultiplyEqualsOperatorPropertyMap;
 
 
 #include <Nova.h>
@@ -39,6 +40,7 @@ typedef struct nova_operators_Nova_MultiplyEqualsOperatorFunctionMap nova_operat
 #include <nova/nova_Nova_System.h>
 #include <nova/meta/nova_meta_Nova_Class.h>
 #include <nova/meta/nova_meta_Nova_FunctionMap.h>
+#include <nova/meta/nova_meta_Nova_PropertyMap.h>
 #include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <nova/NativeObject.h>
 
@@ -64,5 +66,18 @@ nova_operators_Nova_MultiplyEqualsOperatorFunctionMap* nova_operators_Nova_Multi
 void nova_operators_Nova_MultiplyEqualsOperatorFunctionMap_Nova_destroy(nova_operators_Nova_MultiplyEqualsOperatorFunctionMap** this, nova_exception_Nova_ExceptionData* exceptionData);
 void nova_operators_Nova_MultiplyEqualsOperatorFunctionMap_Nova_this(nova_operators_Nova_MultiplyEqualsOperatorFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
 void nova_operators_Nova_MultiplyEqualsOperatorFunctionMap_Nova_super(nova_operators_Nova_MultiplyEqualsOperatorFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+
+CCLASS_CLASS
+(
+	nova_operators_Nova_MultiplyEqualsOperatorPropertyMap, 
+	
+	nova_operators_MultiplyEqualsOperator_MultiplyEqualsOperatorPropertyMap_Extension_VTable* vtable;
+)
+
+void nova_operators_Nova_MultiplyEqualsOperatorPropertyMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData);
+nova_operators_Nova_MultiplyEqualsOperatorPropertyMap* nova_operators_Nova_MultiplyEqualsOperatorPropertyMap_Nova_construct(nova_operators_Nova_MultiplyEqualsOperatorPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+void nova_operators_Nova_MultiplyEqualsOperatorPropertyMap_Nova_destroy(nova_operators_Nova_MultiplyEqualsOperatorPropertyMap** this, nova_exception_Nova_ExceptionData* exceptionData);
+void nova_operators_Nova_MultiplyEqualsOperatorPropertyMap_Nova_this(nova_operators_Nova_MultiplyEqualsOperatorPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+void nova_operators_Nova_MultiplyEqualsOperatorPropertyMap_Nova_super(nova_operators_Nova_MultiplyEqualsOperatorPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData);
 
 #endif

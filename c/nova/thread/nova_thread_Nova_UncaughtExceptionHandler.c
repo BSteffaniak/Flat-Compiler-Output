@@ -29,6 +29,7 @@
 #include <nova/nova_Nova_System.h>
 #include <nova/meta/nova_meta_Nova_Class.h>
 #include <nova/meta/nova_meta_Nova_FunctionMap.h>
+#include <nova/meta/nova_meta_Nova_PropertyMap.h>
 #include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <nova/NativeObject.h>
 
@@ -135,5 +136,45 @@ void nova_thread_Nova_UncaughtExceptionHandlerFunctionMap_Nova_super(nova_thread
 void nova_thread_Nova_UncaughtExceptionHandlerFunctionMap_virtualfunctionMap_Nova_uncaughtException(nova_thread_Nova_UncaughtExceptionHandlerFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_thread_Nova_UncaughtExceptionHandler* reference, nova_thread_Nova_Thread* thread, nova_exception_Nova_Exception* exception)
 {
 	this->vtable->nova_thread_Nova_UncaughtExceptionHandlerFunctionMap_virtualfunctionMap_Nova_uncaughtException(this, exceptionData, reference, thread, exception);
+}
+
+void nova_thread_Nova_UncaughtExceptionHandlerPropertyMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData)
+{
+	{
+	}
+}
+
+nova_thread_Nova_UncaughtExceptionHandlerPropertyMap* nova_thread_Nova_UncaughtExceptionHandlerPropertyMap_Nova_construct(nova_thread_Nova_UncaughtExceptionHandlerPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+	CCLASS_NEW(nova_thread_Nova_UncaughtExceptionHandlerPropertyMap, this,);
+	this->vtable = &nova_thread_UncaughtExceptionHandler_UncaughtExceptionHandlerPropertyMap_Extension_VTable_val;
+	nova_Nova_Object_Nova_super((nova_Nova_Object*)this, exceptionData);
+	nova_meta_Nova_PropertyMap_Nova_super((nova_meta_Nova_PropertyMap*)this, exceptionData);
+	nova_thread_Nova_UncaughtExceptionHandlerPropertyMap_Nova_super(this, exceptionData);
+	
+	{
+		nova_thread_Nova_UncaughtExceptionHandlerPropertyMap_Nova_this(this, exceptionData);
+	}
+	
+	return this;
+}
+
+void nova_thread_Nova_UncaughtExceptionHandlerPropertyMap_Nova_destroy(nova_thread_Nova_UncaughtExceptionHandlerPropertyMap** this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+	if (!*this)
+	{
+		return;
+	}
+	
+	
+	NOVA_FREE(*this);
+}
+
+void nova_thread_Nova_UncaughtExceptionHandlerPropertyMap_Nova_this(nova_thread_Nova_UncaughtExceptionHandlerPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+}
+
+void nova_thread_Nova_UncaughtExceptionHandlerPropertyMap_Nova_super(nova_thread_Nova_UncaughtExceptionHandlerPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+{
 }
 

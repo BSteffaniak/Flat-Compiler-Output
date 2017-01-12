@@ -29,6 +29,7 @@
 #include <nova/nova_Nova_System.h>
 #include <nova/meta/nova_meta_Nova_Class.h>
 #include <nova/meta/nova_meta_Nova_FunctionMap.h>
+#include <nova/meta/nova_meta_Nova_PropertyMap.h>
 #include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <nova/database/NativeDBConnector.h>
 #include <nova/database/nova_database_Nova_ResultSet.h>
@@ -139,11 +140,11 @@ nova_database_Nova_ResultSet* nova_database_Nova_DBConnector_Nova_query(nova_dat
 		{
 			int l7_Nova_j = 0;
 			
-			nova_datastruct_list_Nova_Array_virtual_Nova_set((nova_datastruct_list_Nova_Array*)(l3_Nova_rows), exceptionData, l5_Nova_i, (nova_Nova_Object*)(nova_datastruct_list_Nova_Array_1_Nova_construct(0, exceptionData, l3_Nova_numCols, (intptr_t)nova_null)));
+			nova_datastruct_list_Nova_Array_Nova_set((nova_datastruct_list_Nova_Array*)(l3_Nova_rows), exceptionData, l5_Nova_i, (nova_Nova_Object*)(nova_datastruct_list_Nova_Array_1_Nova_construct(0, exceptionData, l3_Nova_numCols, (intptr_t)nova_null)));
 			l7_Nova_j = (int)0;
 			for (; l7_Nova_j < (int)l3_Nova_numCols; l7_Nova_j++)
 			{
-				nova_datastruct_list_Nova_Array_virtual_Nova_set((nova_datastruct_list_Nova_Array*)(nova_datastruct_list_Nova_Array_virtual_Nova_get((nova_datastruct_list_Nova_Array*)(l3_Nova_rows), exceptionData, l5_Nova_i)), exceptionData, l7_Nova_j, (nova_Nova_Object*)(nova_Nova_String_1_Nova_construct(0, exceptionData, l1_Nova_arrays[l5_Nova_i][l7_Nova_j])));
+				nova_datastruct_list_Nova_Array_Nova_set((nova_datastruct_list_Nova_Array*)(nova_datastruct_list_Nova_Array_virtual_Nova_get((nova_datastruct_list_Nova_Array*)(l3_Nova_rows), exceptionData, l5_Nova_i)), exceptionData, l7_Nova_j, (nova_Nova_Object*)(nova_Nova_String_1_Nova_construct(0, exceptionData, l1_Nova_arrays[l5_Nova_i][l7_Nova_j])));
 			}
 		}
 		l3_Nova_r = nova_database_Nova_ResultSet_Nova_construct(0, exceptionData, l3_Nova_rows, l3_Nova_numCols);
@@ -242,6 +243,51 @@ void nova_database_Nova_DBConnectorFunctionMap_functionMap_Nova_close(nova_datab
 }
 
 void nova_database_Nova_DBConnectorFunctionMap_Nova_super(nova_database_Nova_DBConnectorFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+}
+
+void nova_database_Nova_DBConnectorPropertyMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData)
+{
+	{
+	}
+}
+
+nova_database_Nova_DBConnectorPropertyMap* nova_database_Nova_DBConnectorPropertyMap_Nova_construct(nova_database_Nova_DBConnectorPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+	CCLASS_NEW(nova_database_Nova_DBConnectorPropertyMap, this,);
+	this->vtable = &nova_database_DBConnector_DBConnectorPropertyMap_Extension_VTable_val;
+	nova_Nova_Object_Nova_super((nova_Nova_Object*)this, exceptionData);
+	nova_meta_Nova_PropertyMap_Nova_super((nova_meta_Nova_PropertyMap*)this, exceptionData);
+	nova_database_Nova_DBConnectorPropertyMap_Nova_super(this, exceptionData);
+	
+	{
+		nova_database_Nova_DBConnectorPropertyMap_Nova_this(this, exceptionData);
+	}
+	
+	return this;
+}
+
+void nova_database_Nova_DBConnectorPropertyMap_Nova_destroy(nova_database_Nova_DBConnectorPropertyMap** this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+	if (!*this)
+	{
+		return;
+	}
+	
+	
+	NOVA_FREE(*this);
+}
+
+void nova_database_Nova_DBConnectorPropertyMap_Nova_this(nova_database_Nova_DBConnectorPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+}
+
+nova_Nova_String* nova_database_Nova_DBConnectorPropertyMap_functionMap_Nova_error(nova_database_Nova_DBConnectorPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_database_Nova_DBConnector* reference)
+{
+	return reference->nova_database_Nova_DBConnector_Nova_error;
+}
+
+void nova_database_Nova_DBConnectorPropertyMap_Nova_super(nova_database_Nova_DBConnectorPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
 }
 

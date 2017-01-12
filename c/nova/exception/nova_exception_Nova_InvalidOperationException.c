@@ -29,7 +29,9 @@
 #include <nova/nova_Nova_System.h>
 #include <nova/meta/nova_meta_Nova_Class.h>
 #include <nova/meta/nova_meta_Nova_FunctionMap.h>
+#include <nova/meta/nova_meta_Nova_PropertyMap.h>
 #include <nova/regex/nova_regex_Nova_Pattern.h>
+#include <nova/exception/nova_exception_Nova_Exception.h>
 #include <nova/exception/nova_exception_Nova_Exception.h>
 #include <nova/NativeObject.h>
 
@@ -119,6 +121,47 @@ nova_exception_Nova_InvalidOperationException* nova_exception_Nova_InvalidOperat
 }
 
 void nova_exception_Nova_InvalidOperationExceptionFunctionMap_Nova_super(nova_exception_Nova_InvalidOperationExceptionFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+}
+
+void nova_exception_Nova_InvalidOperationExceptionPropertyMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData)
+{
+	{
+	}
+}
+
+nova_exception_Nova_InvalidOperationExceptionPropertyMap* nova_exception_Nova_InvalidOperationExceptionPropertyMap_Nova_construct(nova_exception_Nova_InvalidOperationExceptionPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+	CCLASS_NEW(nova_exception_Nova_InvalidOperationExceptionPropertyMap, this,);
+	this->vtable = &nova_exception_InvalidOperationException_InvalidOperationExceptionPropertyMap_Extension_VTable_val;
+	nova_Nova_Object_Nova_super((nova_Nova_Object*)this, exceptionData);
+	nova_meta_Nova_PropertyMap_Nova_super((nova_meta_Nova_PropertyMap*)this, exceptionData);
+	nova_exception_Nova_ExceptionPropertyMap_Nova_super((nova_exception_Nova_ExceptionPropertyMap*)this, exceptionData);
+	nova_exception_Nova_InvalidOperationExceptionPropertyMap_Nova_super(this, exceptionData);
+	
+	{
+		nova_exception_Nova_InvalidOperationExceptionPropertyMap_Nova_this(this, exceptionData);
+	}
+	
+	return this;
+}
+
+void nova_exception_Nova_InvalidOperationExceptionPropertyMap_Nova_destroy(nova_exception_Nova_InvalidOperationExceptionPropertyMap** this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+	if (!*this)
+	{
+		return;
+	}
+	
+	
+	NOVA_FREE(*this);
+}
+
+void nova_exception_Nova_InvalidOperationExceptionPropertyMap_Nova_this(nova_exception_Nova_InvalidOperationExceptionPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+}
+
+void nova_exception_Nova_InvalidOperationExceptionPropertyMap_Nova_super(nova_exception_Nova_InvalidOperationExceptionPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
 }
 

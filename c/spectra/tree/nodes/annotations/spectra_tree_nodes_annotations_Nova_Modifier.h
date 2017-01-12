@@ -3,6 +3,7 @@
 
 typedef struct spectra_tree_nodes_annotations_Nova_Modifier spectra_tree_nodes_annotations_Nova_Modifier;
 typedef struct spectra_tree_nodes_annotations_Nova_ModifierFunctionMap spectra_tree_nodes_annotations_Nova_ModifierFunctionMap;
+typedef struct spectra_tree_nodes_annotations_Nova_ModifierPropertyMap spectra_tree_nodes_annotations_Nova_ModifierPropertyMap;
 
 
 #include <Nova.h>
@@ -39,32 +40,22 @@ typedef struct spectra_tree_nodes_annotations_Nova_ModifierFunctionMap spectra_t
 #include <nova/nova_Nova_System.h>
 #include <nova/meta/nova_meta_Nova_Class.h>
 #include <nova/meta/nova_meta_Nova_FunctionMap.h>
+#include <nova/meta/nova_meta_Nova_PropertyMap.h>
 #include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <nova/datastruct/nova_datastruct_Nova_HashMap.h>
 #include <nova/datastruct/nova_datastruct_Nova_ImmutableHashMap.h>
 #include <spectra/spectra_Nova_InvalidParseException.h>
+#include <spectra/spectra_Nova_SyntaxErrorException.h>
 #include <spectra/tree/nodes/spectra_tree_nodes_Nova_Node.h>
 #include <spectra/tree/nodes/annotations/spectra_tree_nodes_annotations_Nova_Annotation.h>
-#include <spectra/tree/nodes/annotations/spectra_tree_nodes_annotations_Nova_PublicAnnotation.h>
+#include <spectra/tree/nodes/annotations/spectra_tree_nodes_annotations_Nova_Annotation.h>
 #include <spectra/tree/nodes/annotations/spectra_tree_nodes_annotations_Nova_Annotation.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_ImmutableArrayIterator.h>
+#include <spectra/tree/nodes/annotations/spectra_tree_nodes_annotations_Nova_Modifier.h>
 #include <spectra/util/spectra_util_Nova_Location.h>
-#include <spectra/tree/nodes/annotations/spectra_tree_nodes_annotations_Nova_AbstractAnnotation.h>
-#include <spectra/tree/nodes/annotations/spectra_tree_nodes_annotations_Nova_AutoFinalAnnotation.h>
-#include <spectra/tree/nodes/annotations/spectra_tree_nodes_annotations_Nova_AutoPureAnnotation.h>
-#include <spectra/tree/nodes/annotations/spectra_tree_nodes_annotations_Nova_FinalAnnotation.h>
-#include <spectra/tree/nodes/annotations/spectra_tree_nodes_annotations_Nova_ImmutableAnnotation.h>
-#include <spectra/tree/nodes/annotations/spectra_tree_nodes_annotations_Nova_ImpureAnnotation.h>
-#include <spectra/tree/nodes/annotations/spectra_tree_nodes_annotations_Nova_NativeAnnotation.h>
-#include <spectra/tree/nodes/annotations/spectra_tree_nodes_annotations_Nova_OverrideAnnotation.h>
-#include <spectra/tree/nodes/annotations/spectra_tree_nodes_annotations_Nova_PrivateAnnotation.h>
-#include <spectra/tree/nodes/annotations/spectra_tree_nodes_annotations_Nova_PureAnnotation.h>
-#include <spectra/tree/nodes/annotations/spectra_tree_nodes_annotations_Nova_StaticAnnotation.h>
-#include <spectra/tree/nodes/annotations/spectra_tree_nodes_annotations_Nova_TargetAnnotation.h>
-#include <spectra/tree/nodes/annotations/spectra_tree_nodes_annotations_Nova_VarAnnotation.h>
-#include <spectra/tree/nodes/annotations/spectra_tree_nodes_annotations_Nova_VisibleAnnotation.h>
+#include <spectra/tree/nodes/annotations/spectra_tree_nodes_annotations_Nova_Modifier.h>
 #include <spectra/tree/nodes/spectra_tree_nodes_Nova_Node.h>
-#include <spectra/spectra_Nova_SyntaxErrorException.h>
+#include <spectra/tree/nodes/spectra_tree_nodes_Nova_Node.h>
 #include <spectra/error/spectra_error_Nova_UnimplementedOperationException.h>
 #include <spectra/tree/nodes/annotations/spectra_tree_nodes_annotations_Nova_Annotatable.h>
 #include <spectra/tree/nodes/exceptionhandling/spectra_tree_nodes_exceptionhandling_Nova_Try.h>
@@ -80,6 +71,7 @@ typedef struct spectra_tree_nodes_annotations_Nova_ModifierFunctionMap spectra_t
 #include <spectra/tree/nodes/spectra_tree_nodes_Nova_Program.h>
 #include <spectra/tree/nodes/spectra_tree_nodes_Nova_Scope.h>
 #include <spectra/tree/nodes/spectra_tree_nodes_Nova_ValidationResult.h>
+#include <spectra/tree/nodes/annotations/spectra_tree_nodes_annotations_Nova_Annotatable.h>
 #include <spectra/tree/nodes/annotations/spectra_tree_nodes_annotations_Nova_Annotatable.h>
 #include <nova/NativeObject.h>
 
@@ -119,5 +111,23 @@ char spectra_tree_nodes_annotations_Nova_ModifierFunctionMap_functionMap_Nova_ap
 char spectra_tree_nodes_annotations_Nova_ModifierFunctionMap_functionMap_Nova_onAppliedAsModifier(spectra_tree_nodes_annotations_Nova_ModifierFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, spectra_tree_nodes_annotations_Nova_Modifier* reference, spectra_tree_nodes_Nova_Node* toNode, char throwError);
 nova_Nova_String* spectra_tree_nodes_annotations_Nova_ModifierFunctionMap_functionMap_Nova_writeNova(spectra_tree_nodes_annotations_Nova_ModifierFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, spectra_tree_nodes_annotations_Nova_Modifier* reference);
 void spectra_tree_nodes_annotations_Nova_ModifierFunctionMap_Nova_super(spectra_tree_nodes_annotations_Nova_ModifierFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+
+CCLASS_CLASS
+(
+	spectra_tree_nodes_annotations_Nova_ModifierPropertyMap, 
+	
+	spectra_tree_nodes_annotations_Modifier_ModifierPropertyMap_Extension_VTable* vtable;
+)
+
+void spectra_tree_nodes_annotations_Nova_ModifierPropertyMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData);
+spectra_tree_nodes_annotations_Nova_ModifierPropertyMap* spectra_tree_nodes_annotations_Nova_ModifierPropertyMap_Nova_construct(spectra_tree_nodes_annotations_Nova_ModifierPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+void spectra_tree_nodes_annotations_Nova_ModifierPropertyMap_Nova_destroy(spectra_tree_nodes_annotations_Nova_ModifierPropertyMap** this, nova_exception_Nova_ExceptionData* exceptionData);
+void spectra_tree_nodes_annotations_Nova_ModifierPropertyMap_Nova_this(spectra_tree_nodes_annotations_Nova_ModifierPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+nova_Nova_String* spectra_tree_nodes_annotations_Nova_ModifierPropertyMap_functionMap0_Nova_alias(spectra_tree_nodes_annotations_Nova_ModifierPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData, spectra_tree_nodes_annotations_Nova_Modifier* reference);
+nova_datastruct_Nova_ImmutableHashMap* spectra_tree_nodes_annotations_Nova_ModifierPropertyMap_functionMap_static_Nova_MODIFIERS(spectra_tree_nodes_annotations_Nova_ModifierPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+nova_datastruct_list_Nova_ImmutableArray* spectra_tree_nodes_annotations_Nova_ModifierPropertyMap_functionMap_static_Nova_aliases(spectra_tree_nodes_annotations_Nova_ModifierPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+void spectra_tree_nodes_annotations_Nova_ModifierPropertyMap_Nova_super(spectra_tree_nodes_annotations_Nova_ModifierPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+nova_Nova_String* spectra_tree_nodes_annotations_Nova_ModifierPropertyMap_virtualfunctionMap0_Nova_alias(spectra_tree_nodes_annotations_Nova_ModifierPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData, spectra_tree_nodes_annotations_Nova_Modifier* reference);
+nova_datastruct_list_Nova_ImmutableArray* spectra_tree_nodes_annotations_Nova_ModifierPropertyMap_virtualfunctionMap_static_Nova_aliases(spectra_tree_nodes_annotations_Nova_ModifierPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData);
 
 #endif

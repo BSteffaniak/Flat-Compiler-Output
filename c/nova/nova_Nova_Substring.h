@@ -3,6 +3,7 @@
 
 typedef struct nova_Nova_Substring nova_Nova_Substring;
 typedef struct nova_Nova_SubstringFunctionMap nova_Nova_SubstringFunctionMap;
+typedef struct nova_Nova_SubstringPropertyMap nova_Nova_SubstringPropertyMap;
 
 
 #include <Nova.h>
@@ -39,8 +40,10 @@ typedef struct nova_Nova_SubstringFunctionMap nova_Nova_SubstringFunctionMap;
 #include <nova/nova_Nova_System.h>
 #include <nova/meta/nova_meta_Nova_Class.h>
 #include <nova/meta/nova_meta_Nova_FunctionMap.h>
+#include <nova/meta/nova_meta_Nova_PropertyMap.h>
 #include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_StringCharArray.h>
+#include <nova/nova_Nova_String.h>
 #include <nova/nova_Nova_String.h>
 #include <nova/datastruct/nova_datastruct_Nova_Comparable.h>
 #include <nova/operators/nova_operators_Nova_PlusOperator.h>
@@ -49,6 +52,10 @@ typedef struct nova_Nova_SubstringFunctionMap nova_Nova_SubstringFunctionMap;
 #include <nova/regex/nova_regex_Nova_Regex.h>
 #include <nova/regex/nova_regex_Nova_Match.h>
 #include <nova/nova_Nova_Substring.h>
+#include <nova/datastruct/nova_datastruct_Nova_Comparable.h>
+#include <nova/operators/nova_operators_Nova_PlusOperator.h>
+#include <nova/operators/nova_operators_Nova_EqualsOperator.h>
+#include <nova/operators/nova_operators_Nova_MultiplyOperator.h>
 #include <nova/datastruct/nova_datastruct_Nova_Comparable.h>
 #include <nova/operators/nova_operators_Nova_PlusOperator.h>
 #include <nova/operators/nova_operators_Nova_EqualsOperator.h>
@@ -89,5 +96,22 @@ void nova_Nova_SubstringFunctionMap_Nova_this(nova_Nova_SubstringFunctionMap* th
 nova_Nova_Substring* nova_Nova_SubstringFunctionMap_functionMapSubstringFunctionMap_Nova_construct(nova_Nova_SubstringFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* source, int start, int end);
 nova_Nova_String* nova_Nova_SubstringFunctionMap_functionMap_Nova_substring(nova_Nova_SubstringFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_Substring* reference, int start, int end);
 void nova_Nova_SubstringFunctionMap_Nova_super(nova_Nova_SubstringFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+
+CCLASS_CLASS
+(
+	nova_Nova_SubstringPropertyMap, 
+	
+	nova_Substring_SubstringPropertyMap_Extension_VTable* vtable;
+)
+
+void nova_Nova_SubstringPropertyMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData);
+nova_Nova_SubstringPropertyMap* nova_Nova_SubstringPropertyMap_Nova_construct(nova_Nova_SubstringPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+void nova_Nova_SubstringPropertyMap_Nova_destroy(nova_Nova_SubstringPropertyMap** this, nova_exception_Nova_ExceptionData* exceptionData);
+void nova_Nova_SubstringPropertyMap_Nova_this(nova_Nova_SubstringPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+nova_Nova_String* nova_Nova_SubstringPropertyMap_functionMap_Nova_source(nova_Nova_SubstringPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_Substring* reference);
+int nova_Nova_SubstringPropertyMap_functionMap_Nova_start(nova_Nova_SubstringPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_Substring* reference);
+int nova_Nova_SubstringPropertyMap_functionMap_Nova_end(nova_Nova_SubstringPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_Substring* reference);
+long_long nova_Nova_SubstringPropertyMap_functionMap_Nova_hashCodeLong(nova_Nova_SubstringPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_Substring* reference);
+void nova_Nova_SubstringPropertyMap_Nova_super(nova_Nova_SubstringPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData);
 
 #endif

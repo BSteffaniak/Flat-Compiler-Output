@@ -3,6 +3,7 @@
 
 typedef struct spectra_tree_nodes_functions_Nova_ParameterList spectra_tree_nodes_functions_Nova_ParameterList;
 typedef struct spectra_tree_nodes_functions_Nova_ParameterListFunctionMap spectra_tree_nodes_functions_Nova_ParameterListFunctionMap;
+typedef struct spectra_tree_nodes_functions_Nova_ParameterListPropertyMap spectra_tree_nodes_functions_Nova_ParameterListPropertyMap;
 
 
 #include <Nova.h>
@@ -39,12 +40,15 @@ typedef struct spectra_tree_nodes_functions_Nova_ParameterListFunctionMap spectr
 #include <nova/nova_Nova_System.h>
 #include <nova/meta/nova_meta_Nova_Class.h>
 #include <nova/meta/nova_meta_Nova_FunctionMap.h>
+#include <nova/meta/nova_meta_Nova_PropertyMap.h>
 #include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <spectra/tree/nodes/spectra_tree_nodes_Nova_Node.h>
 #include <spectra/tree/nodes/spectra_tree_nodes_Nova_NodeList.h>
 #include <spectra/util/spectra_util_Nova_Location.h>
 #include <spectra/tree/nodes/functions/spectra_tree_nodes_functions_Nova_Parameter.h>
 #include <spectra/tree/nodes/spectra_tree_nodes_Nova_NodeList.h>
+#include <spectra/tree/nodes/spectra_tree_nodes_Nova_NodeList.h>
+#include <spectra/tree/nodes/spectra_tree_nodes_Nova_Node.h>
 #include <spectra/tree/nodes/spectra_tree_nodes_Nova_Node.h>
 #include <spectra/spectra_Nova_InvalidParseException.h>
 #include <spectra/spectra_Nova_SyntaxErrorException.h>
@@ -63,6 +67,7 @@ typedef struct spectra_tree_nodes_functions_Nova_ParameterListFunctionMap spectr
 #include <spectra/tree/nodes/spectra_tree_nodes_Nova_Program.h>
 #include <spectra/tree/nodes/spectra_tree_nodes_Nova_Scope.h>
 #include <spectra/tree/nodes/spectra_tree_nodes_Nova_ValidationResult.h>
+#include <spectra/tree/nodes/annotations/spectra_tree_nodes_annotations_Nova_Annotatable.h>
 #include <spectra/tree/nodes/annotations/spectra_tree_nodes_annotations_Nova_Annotatable.h>
 #include <nova/NativeObject.h>
 
@@ -104,5 +109,19 @@ nova_Nova_String* spectra_tree_nodes_functions_Nova_ParameterListFunctionMap_fun
 spectra_tree_nodes_functions_Nova_Parameter* spectra_tree_nodes_functions_Nova_ParameterListFunctionMap_functionMap_Nova_get(spectra_tree_nodes_functions_Nova_ParameterListFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, spectra_tree_nodes_functions_Nova_ParameterList* reference, int index);
 spectra_tree_nodes_functions_Nova_Parameter* spectra_tree_nodes_functions_Nova_ParameterListFunctionMap_functionMap_Nova_set(spectra_tree_nodes_functions_Nova_ParameterListFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, spectra_tree_nodes_functions_Nova_ParameterList* reference, int index, spectra_tree_nodes_functions_Nova_Parameter* value);
 void spectra_tree_nodes_functions_Nova_ParameterListFunctionMap_Nova_super(spectra_tree_nodes_functions_Nova_ParameterListFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+
+CCLASS_CLASS
+(
+	spectra_tree_nodes_functions_Nova_ParameterListPropertyMap, 
+	
+	spectra_tree_nodes_functions_ParameterList_ParameterListPropertyMap_Extension_VTable* vtable;
+)
+
+void spectra_tree_nodes_functions_Nova_ParameterListPropertyMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData);
+spectra_tree_nodes_functions_Nova_ParameterListPropertyMap* spectra_tree_nodes_functions_Nova_ParameterListPropertyMap_Nova_construct(spectra_tree_nodes_functions_Nova_ParameterListPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+void spectra_tree_nodes_functions_Nova_ParameterListPropertyMap_Nova_destroy(spectra_tree_nodes_functions_Nova_ParameterListPropertyMap** this, nova_exception_Nova_ExceptionData* exceptionData);
+void spectra_tree_nodes_functions_Nova_ParameterListPropertyMap_Nova_this(spectra_tree_nodes_functions_Nova_ParameterListPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+nova_datastruct_list_Nova_Array* spectra_tree_nodes_functions_Nova_ParameterListPropertyMap_functionMap_Nova_parameters(spectra_tree_nodes_functions_Nova_ParameterListPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData, spectra_tree_nodes_functions_Nova_ParameterList* reference);
+void spectra_tree_nodes_functions_Nova_ParameterListPropertyMap_Nova_super(spectra_tree_nodes_functions_Nova_ParameterListPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData);
 
 #endif

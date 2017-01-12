@@ -3,6 +3,7 @@
 
 typedef struct nova_security_Nova_Sha256 nova_security_Nova_Sha256;
 typedef struct nova_security_Nova_Sha256FunctionMap nova_security_Nova_Sha256FunctionMap;
+typedef struct nova_security_Nova_Sha256PropertyMap nova_security_Nova_Sha256PropertyMap;
 
 
 #include <Nova.h>
@@ -39,6 +40,7 @@ typedef struct nova_security_Nova_Sha256FunctionMap nova_security_Nova_Sha256Fun
 #include <nova/nova_Nova_System.h>
 #include <nova/meta/nova_meta_Nova_Class.h>
 #include <nova/meta/nova_meta_Nova_FunctionMap.h>
+#include <nova/meta/nova_meta_Nova_PropertyMap.h>
 #include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <nova/NativeObject.h>
 
@@ -70,5 +72,18 @@ void nova_security_Nova_Sha256FunctionMap_Nova_this(nova_security_Nova_Sha256Fun
 nova_security_Nova_Sha256* nova_security_Nova_Sha256FunctionMap_functionMapSha256FunctionMap_Nova_construct(nova_security_Nova_Sha256FunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
 nova_Nova_String* nova_security_Nova_Sha256FunctionMap_functionMap_Nova_digest(nova_security_Nova_Sha256FunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_security_Nova_Sha256* reference, nova_Nova_String* msg);
 void nova_security_Nova_Sha256FunctionMap_Nova_super(nova_security_Nova_Sha256FunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+
+CCLASS_CLASS
+(
+	nova_security_Nova_Sha256PropertyMap, 
+	
+	nova_security_Sha256_Sha256PropertyMap_Extension_VTable* vtable;
+)
+
+void nova_security_Nova_Sha256PropertyMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData);
+nova_security_Nova_Sha256PropertyMap* nova_security_Nova_Sha256PropertyMap_Nova_construct(nova_security_Nova_Sha256PropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+void nova_security_Nova_Sha256PropertyMap_Nova_destroy(nova_security_Nova_Sha256PropertyMap** this, nova_exception_Nova_ExceptionData* exceptionData);
+void nova_security_Nova_Sha256PropertyMap_Nova_this(nova_security_Nova_Sha256PropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+void nova_security_Nova_Sha256PropertyMap_Nova_super(nova_security_Nova_Sha256PropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData);
 
 #endif

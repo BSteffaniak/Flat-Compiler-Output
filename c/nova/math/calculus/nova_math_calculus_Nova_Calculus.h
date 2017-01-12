@@ -3,6 +3,7 @@
 
 typedef struct nova_math_calculus_Nova_Calculus nova_math_calculus_Nova_Calculus;
 typedef struct nova_math_calculus_Nova_CalculusFunctionMap nova_math_calculus_Nova_CalculusFunctionMap;
+typedef struct nova_math_calculus_Nova_CalculusPropertyMap nova_math_calculus_Nova_CalculusPropertyMap;
 
 
 #include <Nova.h>
@@ -39,6 +40,7 @@ typedef struct nova_math_calculus_Nova_CalculusFunctionMap nova_math_calculus_No
 #include <nova/nova_Nova_System.h>
 #include <nova/meta/nova_meta_Nova_Class.h>
 #include <nova/meta/nova_meta_Nova_FunctionMap.h>
+#include <nova/meta/nova_meta_Nova_PropertyMap.h>
 #include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <nova/math/nova_math_Nova_NumericStatement.h>
 #include <nova/NativeObject.h>
@@ -71,5 +73,18 @@ void nova_math_calculus_Nova_CalculusFunctionMap_Nova_this(nova_math_calculus_No
 nova_math_calculus_Nova_Calculus* nova_math_calculus_Nova_CalculusFunctionMap_functionMapCalculusFunctionMap_Nova_construct(nova_math_calculus_Nova_CalculusFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
 nova_math_Nova_NumericStatement* nova_math_calculus_Nova_CalculusFunctionMap_functionMap_static_Nova_derivative(nova_math_calculus_Nova_CalculusFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_math_Nova_NumericStatement* statement);
 void nova_math_calculus_Nova_CalculusFunctionMap_Nova_super(nova_math_calculus_Nova_CalculusFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+
+CCLASS_CLASS
+(
+	nova_math_calculus_Nova_CalculusPropertyMap, 
+	
+	nova_math_calculus_Calculus_CalculusPropertyMap_Extension_VTable* vtable;
+)
+
+void nova_math_calculus_Nova_CalculusPropertyMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData);
+nova_math_calculus_Nova_CalculusPropertyMap* nova_math_calculus_Nova_CalculusPropertyMap_Nova_construct(nova_math_calculus_Nova_CalculusPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+void nova_math_calculus_Nova_CalculusPropertyMap_Nova_destroy(nova_math_calculus_Nova_CalculusPropertyMap** this, nova_exception_Nova_ExceptionData* exceptionData);
+void nova_math_calculus_Nova_CalculusPropertyMap_Nova_this(nova_math_calculus_Nova_CalculusPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+void nova_math_calculus_Nova_CalculusPropertyMap_Nova_super(nova_math_calculus_Nova_CalculusPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData);
 
 #endif

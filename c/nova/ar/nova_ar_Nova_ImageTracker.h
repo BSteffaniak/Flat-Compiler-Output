@@ -3,6 +3,7 @@
 
 typedef struct nova_ar_Nova_ImageTracker nova_ar_Nova_ImageTracker;
 typedef struct nova_ar_Nova_ImageTrackerFunctionMap nova_ar_Nova_ImageTrackerFunctionMap;
+typedef struct nova_ar_Nova_ImageTrackerPropertyMap nova_ar_Nova_ImageTrackerPropertyMap;
 
 
 #include <Nova.h>
@@ -39,6 +40,7 @@ typedef struct nova_ar_Nova_ImageTrackerFunctionMap nova_ar_Nova_ImageTrackerFun
 #include <nova/nova_Nova_System.h>
 #include <nova/meta/nova_meta_Nova_Class.h>
 #include <nova/meta/nova_meta_Nova_FunctionMap.h>
+#include <nova/meta/nova_meta_Nova_PropertyMap.h>
 #include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <nova/NativeObject.h>
 
@@ -68,5 +70,18 @@ void nova_ar_Nova_ImageTrackerFunctionMap_Nova_destroy(nova_ar_Nova_ImageTracker
 void nova_ar_Nova_ImageTrackerFunctionMap_Nova_this(nova_ar_Nova_ImageTrackerFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
 nova_ar_Nova_ImageTracker* nova_ar_Nova_ImageTrackerFunctionMap_functionMapImageTrackerFunctionMap_Nova_construct(nova_ar_Nova_ImageTrackerFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
 void nova_ar_Nova_ImageTrackerFunctionMap_Nova_super(nova_ar_Nova_ImageTrackerFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+
+CCLASS_CLASS
+(
+	nova_ar_Nova_ImageTrackerPropertyMap, 
+	
+	nova_ar_ImageTracker_ImageTrackerPropertyMap_Extension_VTable* vtable;
+)
+
+void nova_ar_Nova_ImageTrackerPropertyMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData);
+nova_ar_Nova_ImageTrackerPropertyMap* nova_ar_Nova_ImageTrackerPropertyMap_Nova_construct(nova_ar_Nova_ImageTrackerPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+void nova_ar_Nova_ImageTrackerPropertyMap_Nova_destroy(nova_ar_Nova_ImageTrackerPropertyMap** this, nova_exception_Nova_ExceptionData* exceptionData);
+void nova_ar_Nova_ImageTrackerPropertyMap_Nova_this(nova_ar_Nova_ImageTrackerPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+void nova_ar_Nova_ImageTrackerPropertyMap_Nova_super(nova_ar_Nova_ImageTrackerPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData);
 
 #endif

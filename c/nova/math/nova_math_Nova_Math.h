@@ -3,6 +3,7 @@
 
 typedef struct nova_math_Nova_Math nova_math_Nova_Math;
 typedef struct nova_math_Nova_MathFunctionMap nova_math_Nova_MathFunctionMap;
+typedef struct nova_math_Nova_MathPropertyMap nova_math_Nova_MathPropertyMap;
 
 
 #include <Nova.h>
@@ -39,6 +40,7 @@ typedef struct nova_math_Nova_MathFunctionMap nova_math_Nova_MathFunctionMap;
 #include <nova/nova_Nova_System.h>
 #include <nova/meta/nova_meta_Nova_Class.h>
 #include <nova/meta/nova_meta_Nova_FunctionMap.h>
+#include <nova/meta/nova_meta_Nova_PropertyMap.h>
 #include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <math.h>
 #include <nova/NativeObject.h>
@@ -104,5 +106,19 @@ double nova_math_Nova_MathFunctionMap_functionMap_static_Nova_round(nova_math_No
 double nova_math_Nova_MathFunctionMap_functionMap_static_Nova_floor(nova_math_Nova_MathFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, double number);
 double nova_math_Nova_MathFunctionMap_functionMap_static_Nova_ceil(nova_math_Nova_MathFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, double number);
 void nova_math_Nova_MathFunctionMap_Nova_super(nova_math_Nova_MathFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+
+CCLASS_CLASS
+(
+	nova_math_Nova_MathPropertyMap, 
+	
+	nova_math_Math_MathPropertyMap_Extension_VTable* vtable;
+)
+
+void nova_math_Nova_MathPropertyMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData);
+nova_math_Nova_MathPropertyMap* nova_math_Nova_MathPropertyMap_Nova_construct(nova_math_Nova_MathPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+void nova_math_Nova_MathPropertyMap_Nova_destroy(nova_math_Nova_MathPropertyMap** this, nova_exception_Nova_ExceptionData* exceptionData);
+void nova_math_Nova_MathPropertyMap_Nova_this(nova_math_Nova_MathPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+double nova_math_Nova_MathPropertyMap_functionMap_static_Nova_PI(nova_math_Nova_MathPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+void nova_math_Nova_MathPropertyMap_Nova_super(nova_math_Nova_MathPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData);
 
 #endif

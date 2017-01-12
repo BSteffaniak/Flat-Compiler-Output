@@ -29,10 +29,12 @@
 #include <nova/nova_Nova_System.h>
 #include <nova/meta/nova_meta_Nova_Class.h>
 #include <nova/meta/nova_meta_Nova_FunctionMap.h>
+#include <nova/meta/nova_meta_Nova_PropertyMap.h>
 #include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <nova/network/NativeClientSocket.h>
 #include <nova/network/NativeSocket.h>
 #include <nova/network/nova_network_Nova_ConnectionSocket.h>
+#include <nova/network/nova_network_Nova_Socket.h>
 #include <nova/network/nova_network_Nova_Socket.h>
 #include <nova/network/nova_network_Nova_Socket.h>
 #include <nova/NativeObject.h>
@@ -165,6 +167,52 @@ char nova_network_Nova_ClientSocketFunctionMap_functionMap_Nova_close(nova_netwo
 }
 
 void nova_network_Nova_ClientSocketFunctionMap_Nova_super(nova_network_Nova_ClientSocketFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+}
+
+void nova_network_Nova_ClientSocketPropertyMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData)
+{
+	{
+	}
+}
+
+nova_network_Nova_ClientSocketPropertyMap* nova_network_Nova_ClientSocketPropertyMap_Nova_construct(nova_network_Nova_ClientSocketPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+	CCLASS_NEW(nova_network_Nova_ClientSocketPropertyMap, this,);
+	this->vtable = &nova_network_ClientSocket_ClientSocketPropertyMap_Extension_VTable_val;
+	nova_Nova_Object_Nova_super((nova_Nova_Object*)this, exceptionData);
+	nova_meta_Nova_PropertyMap_Nova_super((nova_meta_Nova_PropertyMap*)this, exceptionData);
+	nova_network_Nova_SocketPropertyMap_Nova_super((nova_network_Nova_SocketPropertyMap*)this, exceptionData);
+	nova_network_Nova_ClientSocketPropertyMap_Nova_super(this, exceptionData);
+	
+	{
+		nova_network_Nova_ClientSocketPropertyMap_Nova_this(this, exceptionData);
+	}
+	
+	return this;
+}
+
+void nova_network_Nova_ClientSocketPropertyMap_Nova_destroy(nova_network_Nova_ClientSocketPropertyMap** this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+	if (!*this)
+	{
+		return;
+	}
+	
+	
+	NOVA_FREE(*this);
+}
+
+void nova_network_Nova_ClientSocketPropertyMap_Nova_this(nova_network_Nova_ClientSocketPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+}
+
+nova_network_Nova_ConnectionSocket* nova_network_Nova_ClientSocketPropertyMap_functionMap_Nova_connection(nova_network_Nova_ClientSocketPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_network_Nova_ClientSocket* reference)
+{
+	return reference->nova_network_Nova_ClientSocket_Nova_connection;
+}
+
+void nova_network_Nova_ClientSocketPropertyMap_Nova_super(nova_network_Nova_ClientSocketPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
 }
 

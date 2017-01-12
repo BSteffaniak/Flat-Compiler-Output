@@ -3,6 +3,7 @@
 
 typedef struct example_Nova_NonWholeDivisionException example_Nova_NonWholeDivisionException;
 typedef struct example_Nova_NonWholeDivisionExceptionFunctionMap example_Nova_NonWholeDivisionExceptionFunctionMap;
+typedef struct example_Nova_NonWholeDivisionExceptionPropertyMap example_Nova_NonWholeDivisionExceptionPropertyMap;
 
 
 #include <Nova.h>
@@ -39,7 +40,9 @@ typedef struct example_Nova_NonWholeDivisionExceptionFunctionMap example_Nova_No
 #include <nova/nova_Nova_System.h>
 #include <nova/meta/nova_meta_Nova_Class.h>
 #include <nova/meta/nova_meta_Nova_FunctionMap.h>
+#include <nova/meta/nova_meta_Nova_PropertyMap.h>
 #include <nova/regex/nova_regex_Nova_Pattern.h>
+#include <nova/exception/nova_exception_Nova_Exception.h>
 #include <nova/exception/nova_exception_Nova_Exception.h>
 #include <nova/NativeObject.h>
 
@@ -70,5 +73,18 @@ void example_Nova_NonWholeDivisionExceptionFunctionMap_Nova_destroy(example_Nova
 void example_Nova_NonWholeDivisionExceptionFunctionMap_Nova_this(example_Nova_NonWholeDivisionExceptionFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
 example_Nova_NonWholeDivisionException* example_Nova_NonWholeDivisionExceptionFunctionMap_functionMapNonWholeDivisionExceptionFunctionMap_Nova_construct(example_Nova_NonWholeDivisionExceptionFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
 void example_Nova_NonWholeDivisionExceptionFunctionMap_Nova_super(example_Nova_NonWholeDivisionExceptionFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+
+CCLASS_CLASS
+(
+	example_Nova_NonWholeDivisionExceptionPropertyMap, 
+	
+	example_NonWholeDivisionException_NonWholeDivisionExceptionPropertyMap_Extension_VTable* vtable;
+)
+
+void example_Nova_NonWholeDivisionExceptionPropertyMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData);
+example_Nova_NonWholeDivisionExceptionPropertyMap* example_Nova_NonWholeDivisionExceptionPropertyMap_Nova_construct(example_Nova_NonWholeDivisionExceptionPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+void example_Nova_NonWholeDivisionExceptionPropertyMap_Nova_destroy(example_Nova_NonWholeDivisionExceptionPropertyMap** this, nova_exception_Nova_ExceptionData* exceptionData);
+void example_Nova_NonWholeDivisionExceptionPropertyMap_Nova_this(example_Nova_NonWholeDivisionExceptionPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+void example_Nova_NonWholeDivisionExceptionPropertyMap_Nova_super(example_Nova_NonWholeDivisionExceptionPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData);
 
 #endif

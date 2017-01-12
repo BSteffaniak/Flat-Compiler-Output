@@ -3,6 +3,7 @@
 
 typedef struct nova_primitive_number_Nova_Integer nova_primitive_number_Nova_Integer;
 typedef struct nova_primitive_number_Nova_IntegerFunctionMap nova_primitive_number_Nova_IntegerFunctionMap;
+typedef struct nova_primitive_number_Nova_IntegerPropertyMap nova_primitive_number_Nova_IntegerPropertyMap;
 
 
 #include <Nova.h>
@@ -39,6 +40,7 @@ typedef struct nova_primitive_number_Nova_IntegerFunctionMap nova_primitive_numb
 #include <nova/nova_Nova_System.h>
 #include <nova/meta/nova_meta_Nova_Class.h>
 #include <nova/meta/nova_meta_Nova_FunctionMap.h>
+#include <nova/meta/nova_meta_Nova_PropertyMap.h>
 #include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <nova/NativeObject.h>
 
@@ -63,5 +65,18 @@ nova_primitive_number_Nova_IntegerFunctionMap* nova_primitive_number_Nova_Intege
 void nova_primitive_number_Nova_IntegerFunctionMap_Nova_destroy(nova_primitive_number_Nova_IntegerFunctionMap** this, nova_exception_Nova_ExceptionData* exceptionData);
 void nova_primitive_number_Nova_IntegerFunctionMap_Nova_this(nova_primitive_number_Nova_IntegerFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
 void nova_primitive_number_Nova_IntegerFunctionMap_Nova_super(nova_primitive_number_Nova_IntegerFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+
+CCLASS_CLASS
+(
+	nova_primitive_number_Nova_IntegerPropertyMap, 
+	
+	nova_primitive_number_Integer_IntegerPropertyMap_Extension_VTable* vtable;
+)
+
+void nova_primitive_number_Nova_IntegerPropertyMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData);
+nova_primitive_number_Nova_IntegerPropertyMap* nova_primitive_number_Nova_IntegerPropertyMap_Nova_construct(nova_primitive_number_Nova_IntegerPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+void nova_primitive_number_Nova_IntegerPropertyMap_Nova_destroy(nova_primitive_number_Nova_IntegerPropertyMap** this, nova_exception_Nova_ExceptionData* exceptionData);
+void nova_primitive_number_Nova_IntegerPropertyMap_Nova_this(nova_primitive_number_Nova_IntegerPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+void nova_primitive_number_Nova_IntegerPropertyMap_Nova_super(nova_primitive_number_Nova_IntegerPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData);
 
 #endif

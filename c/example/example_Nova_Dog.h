@@ -3,6 +3,7 @@
 
 typedef struct example_Nova_Dog example_Nova_Dog;
 typedef struct example_Nova_DogFunctionMap example_Nova_DogFunctionMap;
+typedef struct example_Nova_DogPropertyMap example_Nova_DogPropertyMap;
 
 
 #include <Nova.h>
@@ -39,7 +40,9 @@ typedef struct example_Nova_DogFunctionMap example_Nova_DogFunctionMap;
 #include <nova/nova_Nova_System.h>
 #include <nova/meta/nova_meta_Nova_Class.h>
 #include <nova/meta/nova_meta_Nova_FunctionMap.h>
+#include <nova/meta/nova_meta_Nova_PropertyMap.h>
 #include <nova/regex/nova_regex_Nova_Pattern.h>
+#include <example/example_Nova_Animal.h>
 #include <example/example_Nova_Animal.h>
 #include <example/example_Nova_Animal.h>
 #include <nova/NativeObject.h>
@@ -76,5 +79,18 @@ int example_Nova_DogFunctionMap_functionMap_Nova_getNumLegs(example_Nova_DogFunc
 int example_Nova_DogFunctionMap_functionMap_Nova_getNumEyes(example_Nova_DogFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, example_Nova_Dog* reference);
 nova_Nova_String* example_Nova_DogFunctionMap_functionMap_Nova_getDescription(example_Nova_DogFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, example_Nova_Dog* reference);
 void example_Nova_DogFunctionMap_Nova_super(example_Nova_DogFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+
+CCLASS_CLASS
+(
+	example_Nova_DogPropertyMap, 
+	
+	example_Dog_DogPropertyMap_Extension_VTable* vtable;
+)
+
+void example_Nova_DogPropertyMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData);
+example_Nova_DogPropertyMap* example_Nova_DogPropertyMap_Nova_construct(example_Nova_DogPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+void example_Nova_DogPropertyMap_Nova_destroy(example_Nova_DogPropertyMap** this, nova_exception_Nova_ExceptionData* exceptionData);
+void example_Nova_DogPropertyMap_Nova_this(example_Nova_DogPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+void example_Nova_DogPropertyMap_Nova_super(example_Nova_DogPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData);
 
 #endif

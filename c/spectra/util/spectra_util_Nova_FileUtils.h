@@ -3,6 +3,7 @@
 
 typedef struct spectra_util_Nova_FileUtils spectra_util_Nova_FileUtils;
 typedef struct spectra_util_Nova_FileUtilsFunctionMap spectra_util_Nova_FileUtilsFunctionMap;
+typedef struct spectra_util_Nova_FileUtilsPropertyMap spectra_util_Nova_FileUtilsPropertyMap;
 
 
 #include <Nova.h>
@@ -39,6 +40,7 @@ typedef struct spectra_util_Nova_FileUtilsFunctionMap spectra_util_Nova_FileUtil
 #include <nova/nova_Nova_System.h>
 #include <nova/meta/nova_meta_Nova_Class.h>
 #include <nova/meta/nova_meta_Nova_FunctionMap.h>
+#include <nova/meta/nova_meta_Nova_PropertyMap.h>
 #include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <spectra/util/spectra_util_Nova_OS.h>
 #include <nova/NativeObject.h>
@@ -77,5 +79,18 @@ nova_Nova_String* spectra_util_Nova_FileUtilsFunctionMap_functionMap_static_Nova
 nova_Nova_String* spectra_util_Nova_FileUtilsFunctionMap_functionMap_static_Nova_escapeSpaces(spectra_util_Nova_FileUtilsFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* input);
 nova_Nova_String* spectra_util_Nova_FileUtilsFunctionMap_functionMap_static_Nova_getWorkingDirectoryPath(spectra_util_Nova_FileUtilsFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
 void spectra_util_Nova_FileUtilsFunctionMap_Nova_super(spectra_util_Nova_FileUtilsFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+
+CCLASS_CLASS
+(
+	spectra_util_Nova_FileUtilsPropertyMap, 
+	
+	spectra_util_FileUtils_FileUtilsPropertyMap_Extension_VTable* vtable;
+)
+
+void spectra_util_Nova_FileUtilsPropertyMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData);
+spectra_util_Nova_FileUtilsPropertyMap* spectra_util_Nova_FileUtilsPropertyMap_Nova_construct(spectra_util_Nova_FileUtilsPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+void spectra_util_Nova_FileUtilsPropertyMap_Nova_destroy(spectra_util_Nova_FileUtilsPropertyMap** this, nova_exception_Nova_ExceptionData* exceptionData);
+void spectra_util_Nova_FileUtilsPropertyMap_Nova_this(spectra_util_Nova_FileUtilsPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+void spectra_util_Nova_FileUtilsPropertyMap_Nova_super(spectra_util_Nova_FileUtilsPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData);
 
 #endif

@@ -3,6 +3,7 @@
 
 typedef struct nova_Nova_String nova_Nova_String;
 typedef struct nova_Nova_StringFunctionMap nova_Nova_StringFunctionMap;
+typedef struct nova_Nova_StringPropertyMap nova_Nova_StringPropertyMap;
 
 typedef struct nova_exception_Nova_ExceptionData nova_exception_Nova_ExceptionData;
 
@@ -46,6 +47,7 @@ typedef char (*nova_Nova_StringFunctionMap_closure392_Nova_transform)(void*, nov
 #include <nova/nova_Nova_System.h>
 #include <nova/meta/nova_meta_Nova_Class.h>
 #include <nova/meta/nova_meta_Nova_FunctionMap.h>
+#include <nova/meta/nova_meta_Nova_PropertyMap.h>
 #include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <nova/datastruct/nova_datastruct_Nova_Comparable.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_StringCharArray.h>
@@ -55,6 +57,10 @@ typedef char (*nova_Nova_StringFunctionMap_closure392_Nova_transform)(void*, nov
 #include <nova/regex/nova_regex_Nova_Regex.h>
 #include <nova/regex/nova_regex_Nova_Match.h>
 #include <nova/nova_Nova_Substring.h>
+#include <nova/datastruct/nova_datastruct_Nova_Comparable.h>
+#include <nova/operators/nova_operators_Nova_PlusOperator.h>
+#include <nova/operators/nova_operators_Nova_EqualsOperator.h>
+#include <nova/operators/nova_operators_Nova_MultiplyOperator.h>
 #include <nova/datastruct/nova_datastruct_Nova_Comparable.h>
 #include <nova/operators/nova_operators_Nova_PlusOperator.h>
 #include <nova/operators/nova_operators_Nova_EqualsOperator.h>
@@ -182,5 +188,24 @@ void nova_Nova_StringFunctionMap_Nova_super(nova_Nova_StringFunctionMap* this, n
 nova_Nova_String* nova_Nova_StringFunctionMap_virtualfunctionMap_Nova_concat(nova_Nova_StringFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* reference, nova_Nova_String* str);
 nova_Nova_String* nova_Nova_StringFunctionMap_virtualfunctionMap_Nova_substring(nova_Nova_StringFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* reference, int start, int end);
 nova_Nova_String* nova_Nova_StringFunctionMap_virtualfunctionMap_Nova_toString(nova_Nova_StringFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* reference);
+
+CCLASS_CLASS
+(
+	nova_Nova_StringPropertyMap, 
+	
+	nova_String_StringPropertyMap_Extension_VTable* vtable;
+)
+
+void nova_Nova_StringPropertyMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData);
+nova_Nova_StringPropertyMap* nova_Nova_StringPropertyMap_Nova_construct(nova_Nova_StringPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+void nova_Nova_StringPropertyMap_Nova_destroy(nova_Nova_StringPropertyMap** this, nova_exception_Nova_ExceptionData* exceptionData);
+void nova_Nova_StringPropertyMap_Nova_this(nova_Nova_StringPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+int nova_Nova_StringPropertyMap_functionMap_Nova_count(nova_Nova_StringPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* reference);
+nova_datastruct_list_Nova_StringCharArray* nova_Nova_StringPropertyMap_functionMap_Nova_chars(nova_Nova_StringPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* reference);
+char nova_Nova_StringPropertyMap_functionMap_Nova_first(nova_Nova_StringPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* reference);
+char nova_Nova_StringPropertyMap_functionMap_Nova_last(nova_Nova_StringPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* reference);
+long_long nova_Nova_StringPropertyMap_functionMap_Nova_hashCodeLong(nova_Nova_StringPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* reference);
+void nova_Nova_StringPropertyMap_Nova_super(nova_Nova_StringPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+long_long nova_Nova_StringPropertyMap_virtualfunctionMap_Nova_hashCodeLong(nova_Nova_StringPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* reference);
 
 #endif

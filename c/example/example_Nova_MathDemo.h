@@ -3,6 +3,7 @@
 
 typedef struct example_Nova_MathDemo example_Nova_MathDemo;
 typedef struct example_Nova_MathDemoFunctionMap example_Nova_MathDemoFunctionMap;
+typedef struct example_Nova_MathDemoPropertyMap example_Nova_MathDemoPropertyMap;
 
 
 #include <Nova.h>
@@ -39,6 +40,7 @@ typedef struct example_Nova_MathDemoFunctionMap example_Nova_MathDemoFunctionMap
 #include <nova/nova_Nova_System.h>
 #include <nova/meta/nova_meta_Nova_Class.h>
 #include <nova/meta/nova_meta_Nova_FunctionMap.h>
+#include <nova/meta/nova_meta_Nova_PropertyMap.h>
 #include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <nova/time/nova_time_Nova_Timer.h>
 #include <nova/NativeObject.h>
@@ -71,5 +73,18 @@ void example_Nova_MathDemoFunctionMap_Nova_this(example_Nova_MathDemoFunctionMap
 example_Nova_MathDemo* example_Nova_MathDemoFunctionMap_functionMapMathDemoFunctionMap_Nova_construct(example_Nova_MathDemoFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
 void example_Nova_MathDemoFunctionMap_functionMap_static_Nova_main(example_Nova_MathDemoFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_list_Nova_Array* args);
 void example_Nova_MathDemoFunctionMap_Nova_super(example_Nova_MathDemoFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+
+CCLASS_CLASS
+(
+	example_Nova_MathDemoPropertyMap, 
+	
+	example_MathDemo_MathDemoPropertyMap_Extension_VTable* vtable;
+)
+
+void example_Nova_MathDemoPropertyMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData);
+example_Nova_MathDemoPropertyMap* example_Nova_MathDemoPropertyMap_Nova_construct(example_Nova_MathDemoPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+void example_Nova_MathDemoPropertyMap_Nova_destroy(example_Nova_MathDemoPropertyMap** this, nova_exception_Nova_ExceptionData* exceptionData);
+void example_Nova_MathDemoPropertyMap_Nova_this(example_Nova_MathDemoPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+void example_Nova_MathDemoPropertyMap_Nova_super(example_Nova_MathDemoPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData);
 
 #endif

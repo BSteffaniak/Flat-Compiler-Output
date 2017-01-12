@@ -3,6 +3,7 @@
 
 typedef struct stabilitytest_Nova_ClosureStability stabilitytest_Nova_ClosureStability;
 typedef struct stabilitytest_Nova_ClosureStabilityFunctionMap stabilitytest_Nova_ClosureStabilityFunctionMap;
+typedef struct stabilitytest_Nova_ClosureStabilityPropertyMap stabilitytest_Nova_ClosureStabilityPropertyMap;
 
 
 #include <Nova.h>
@@ -39,8 +40,10 @@ typedef struct stabilitytest_Nova_ClosureStabilityFunctionMap stabilitytest_Nova
 #include <nova/nova_Nova_System.h>
 #include <nova/meta/nova_meta_Nova_Class.h>
 #include <nova/meta/nova_meta_Nova_FunctionMap.h>
+#include <nova/meta/nova_meta_Nova_PropertyMap.h>
 #include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <stabilitytest/stabilitytest_Nova_StabilityTest.h>
+#include <stabilitytest/stabilitytest_Nova_StabilityTestCase.h>
 #include <stabilitytest/stabilitytest_Nova_StabilityTestCase.h>
 #include <stabilitytest/stabilitytest_Nova_StabilityTestCase.h>
 #include <nova/NativeObject.h>
@@ -75,5 +78,18 @@ void stabilitytest_Nova_ClosureStabilityFunctionMap_Nova_this(stabilitytest_Nova
 stabilitytest_Nova_ClosureStability* stabilitytest_Nova_ClosureStabilityFunctionMap_functionMapClosureStabilityFunctionMap_Nova_construct(stabilitytest_Nova_ClosureStabilityFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, stabilitytest_Nova_StabilityTest* program);
 void stabilitytest_Nova_ClosureStabilityFunctionMap_functionMap_Nova_test(stabilitytest_Nova_ClosureStabilityFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, stabilitytest_Nova_ClosureStability* reference);
 void stabilitytest_Nova_ClosureStabilityFunctionMap_Nova_super(stabilitytest_Nova_ClosureStabilityFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+
+CCLASS_CLASS
+(
+	stabilitytest_Nova_ClosureStabilityPropertyMap, 
+	
+	stabilitytest_ClosureStability_ClosureStabilityPropertyMap_Extension_VTable* vtable;
+)
+
+void stabilitytest_Nova_ClosureStabilityPropertyMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData);
+stabilitytest_Nova_ClosureStabilityPropertyMap* stabilitytest_Nova_ClosureStabilityPropertyMap_Nova_construct(stabilitytest_Nova_ClosureStabilityPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+void stabilitytest_Nova_ClosureStabilityPropertyMap_Nova_destroy(stabilitytest_Nova_ClosureStabilityPropertyMap** this, nova_exception_Nova_ExceptionData* exceptionData);
+void stabilitytest_Nova_ClosureStabilityPropertyMap_Nova_this(stabilitytest_Nova_ClosureStabilityPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+void stabilitytest_Nova_ClosureStabilityPropertyMap_Nova_super(stabilitytest_Nova_ClosureStabilityPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData);
 
 #endif

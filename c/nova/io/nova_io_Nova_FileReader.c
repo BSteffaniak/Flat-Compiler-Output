@@ -29,8 +29,10 @@
 #include <nova/nova_Nova_System.h>
 #include <nova/meta/nova_meta_Nova_Class.h>
 #include <nova/meta/nova_meta_Nova_FunctionMap.h>
+#include <nova/meta/nova_meta_Nova_PropertyMap.h>
 #include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <nova/io/nova_io_Nova_File.h>
+#include <nova/io/nova_io_Nova_InputStream.h>
 #include <nova/io/nova_io_Nova_InputStream.h>
 #include <nova/io/nova_io_Nova_InputStream.h>
 #include <nova/NativeObject.h>
@@ -55,6 +57,7 @@ nova_io_Nova_FileReader* nova_io_Nova_FileReader_0_Nova_construct(nova_io_Nova_F
 {
 	CCLASS_NEW(nova_io_Nova_FileReader, this);
 	this->vtable = &nova_io_FileReader_Extension_VTable_val;
+	nova_Nova_Object_Nova_super((nova_Nova_Object*)this, exceptionData);
 	nova_io_Nova_FileReader_Nova_super(this, exceptionData);
 	
 	{
@@ -68,6 +71,7 @@ nova_io_Nova_FileReader* nova_io_Nova_FileReader_1_Nova_construct(nova_io_Nova_F
 {
 	CCLASS_NEW(nova_io_Nova_FileReader, this);
 	this->vtable = &nova_io_FileReader_Extension_VTable_val;
+	nova_Nova_Object_Nova_super((nova_Nova_Object*)this, exceptionData);
 	nova_io_Nova_FileReader_Nova_super(this, exceptionData);
 	
 	{
@@ -89,11 +93,6 @@ void nova_io_Nova_FileReader_Nova_destroy(nova_io_Nova_FileReader** this, nova_e
 	nova_io_Nova_File_Nova_destroy(&(*this)->nova_io_Nova_FileReader_Nova_file, exceptionData);
 	
 	NOVA_FREE(*this);
-}
-
-nova_Nova_String* nova_io_Nova_FileReader_Nova_readString(nova_io_Nova_FileReader* this, nova_exception_Nova_ExceptionData* exceptionData)
-{
-	return nova_io_Nova_FileReader_Nova_readLine(this, exceptionData);
 }
 
 nova_Nova_Object* nova_io_Nova_FileReader_Nova_readBytes(nova_io_Nova_FileReader* this, nova_exception_Nova_ExceptionData* exceptionData)
@@ -154,7 +153,23 @@ nova_Nova_String* nova_io_Nova_FileReader_Nova_readLine(nova_io_Nova_FileReader*
 	l1_Nova_line = (char*)NOVA_MALLOC(sizeof(nova_primitive_number_Nova_Char) * l1_Nova_bufferSize);
 	if ((l1_Nova_bufferSize = nova_getline(&l1_Nova_line, &l1_Nova_bufferSize, this->prv->nova_io_Nova_FileReader_Nova_fp)) == -1)
 	{
-		return (nova_Nova_String*)nova_null;
+		return (nova_Nova_String*)(nova_Nova_Object*)nova_null;
+	}
+	l1_Nova_line = realloc(l1_Nova_line, l1_Nova_bufferSize);
+	l1_Nova_line[l1_Nova_bufferSize - 1] = '\0';
+	return nova_Nova_String_2_Nova_construct(0, exceptionData, l1_Nova_line, l1_Nova_bufferSize - 1);
+}
+
+nova_Nova_String* nova_io_Nova_FileReader_Nova_readString(nova_io_Nova_FileReader* this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+	int l1_Nova_bufferSize = 0;
+	char* l1_Nova_line = (char*)nova_null;
+	
+	l1_Nova_bufferSize = (int)(80);
+	l1_Nova_line = (char*)NOVA_MALLOC(sizeof(nova_primitive_number_Nova_Char) * l1_Nova_bufferSize);
+	if ((l1_Nova_bufferSize = nova_read(&l1_Nova_line, &l1_Nova_bufferSize, this->prv->nova_io_Nova_FileReader_Nova_fp)) == -1)
+	{
+		return (nova_Nova_String*)(nova_Nova_Object*)nova_null;
 	}
 	l1_Nova_line = realloc(l1_Nova_line, l1_Nova_bufferSize);
 	l1_Nova_line[l1_Nova_bufferSize - 1] = '\0';
@@ -193,7 +208,6 @@ nova_io_Nova_FileReaderFunctionMap* nova_io_Nova_FileReaderFunctionMap_Nova_cons
 	this->vtable = &nova_io_FileReader_FileReaderFunctionMap_Extension_VTable_val;
 	nova_Nova_Object_Nova_super((nova_Nova_Object*)this, exceptionData);
 	nova_meta_Nova_FunctionMap_Nova_super((nova_meta_Nova_FunctionMap*)this, exceptionData);
-	nova_io_Nova_InputStreamFunctionMap_Nova_super((nova_io_Nova_InputStreamFunctionMap*)this, exceptionData);
 	nova_io_Nova_FileReaderFunctionMap_Nova_super(this, exceptionData);
 	
 	{
@@ -223,11 +237,6 @@ nova_io_Nova_FileReader* nova_io_Nova_FileReaderFunctionMap_functionMapFileReade
 	return nova_io_Nova_FileReader_0_Nova_construct(0, exceptionData, file);
 }
 
-nova_Nova_String* nova_io_Nova_FileReaderFunctionMap_functionMap_Nova_readString(nova_io_Nova_FileReaderFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_io_Nova_FileReader* reference)
-{
-	return nova_io_Nova_FileReader_Nova_readString(reference, exceptionData);
-}
-
 nova_Nova_Object* nova_io_Nova_FileReaderFunctionMap_functionMap_Nova_readBytes(nova_io_Nova_FileReaderFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_io_Nova_FileReader* reference)
 {
 	return nova_io_Nova_FileReader_Nova_readBytes(reference, exceptionData);
@@ -248,12 +257,67 @@ nova_Nova_String* nova_io_Nova_FileReaderFunctionMap_functionMap_Nova_readLine(n
 	return nova_io_Nova_FileReader_Nova_readLine(reference, exceptionData);
 }
 
+nova_Nova_String* nova_io_Nova_FileReaderFunctionMap_functionMap_Nova_readString(nova_io_Nova_FileReaderFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_io_Nova_FileReader* reference)
+{
+	return nova_io_Nova_FileReader_Nova_readString(reference, exceptionData);
+}
+
 char nova_io_Nova_FileReaderFunctionMap_functionMap_Nova_close(nova_io_Nova_FileReaderFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_io_Nova_FileReader* reference)
 {
 	return nova_io_Nova_FileReader_Nova_close(reference, exceptionData);
 }
 
 void nova_io_Nova_FileReaderFunctionMap_Nova_super(nova_io_Nova_FileReaderFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+}
+
+void nova_io_Nova_FileReaderPropertyMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData)
+{
+	{
+	}
+}
+
+nova_io_Nova_FileReaderPropertyMap* nova_io_Nova_FileReaderPropertyMap_Nova_construct(nova_io_Nova_FileReaderPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+	CCLASS_NEW(nova_io_Nova_FileReaderPropertyMap, this,);
+	this->vtable = &nova_io_FileReader_FileReaderPropertyMap_Extension_VTable_val;
+	nova_Nova_Object_Nova_super((nova_Nova_Object*)this, exceptionData);
+	nova_meta_Nova_PropertyMap_Nova_super((nova_meta_Nova_PropertyMap*)this, exceptionData);
+	nova_io_Nova_FileReaderPropertyMap_Nova_super(this, exceptionData);
+	
+	{
+		nova_io_Nova_FileReaderPropertyMap_Nova_this(this, exceptionData);
+	}
+	
+	return this;
+}
+
+void nova_io_Nova_FileReaderPropertyMap_Nova_destroy(nova_io_Nova_FileReaderPropertyMap** this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+	if (!*this)
+	{
+		return;
+	}
+	
+	
+	NOVA_FREE(*this);
+}
+
+void nova_io_Nova_FileReaderPropertyMap_Nova_this(nova_io_Nova_FileReaderPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+}
+
+char nova_io_Nova_FileReaderPropertyMap_functionMap_Nova_isOpen(nova_io_Nova_FileReaderPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_io_Nova_FileReader* reference)
+{
+	return nova_io_Nova_FileReader_Accessor_Nova_isOpen(reference, exceptionData);
+}
+
+nova_io_Nova_File* nova_io_Nova_FileReaderPropertyMap_functionMap_Nova_file(nova_io_Nova_FileReaderPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_io_Nova_FileReader* reference)
+{
+	return reference->nova_io_Nova_FileReader_Nova_file;
+}
+
+void nova_io_Nova_FileReaderPropertyMap_Nova_super(nova_io_Nova_FileReaderPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
 }
 

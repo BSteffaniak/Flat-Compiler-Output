@@ -3,6 +3,7 @@
 
 typedef struct example_Nova_GenericDemo example_Nova_GenericDemo;
 typedef struct example_Nova_GenericDemoFunctionMap example_Nova_GenericDemoFunctionMap;
+typedef struct example_Nova_GenericDemoPropertyMap example_Nova_GenericDemoPropertyMap;
 
 
 #include <Nova.h>
@@ -39,6 +40,7 @@ typedef struct example_Nova_GenericDemoFunctionMap example_Nova_GenericDemoFunct
 #include <nova/nova_Nova_System.h>
 #include <nova/meta/nova_meta_Nova_Class.h>
 #include <nova/meta/nova_meta_Nova_FunctionMap.h>
+#include <nova/meta/nova_meta_Nova_PropertyMap.h>
 #include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_Stack.h>
 #include <nova/NativeObject.h>
@@ -71,5 +73,18 @@ void example_Nova_GenericDemoFunctionMap_Nova_this(example_Nova_GenericDemoFunct
 example_Nova_GenericDemo* example_Nova_GenericDemoFunctionMap_functionMapGenericDemoFunctionMap_Nova_construct(example_Nova_GenericDemoFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
 void example_Nova_GenericDemoFunctionMap_functionMap_static_Nova_main(example_Nova_GenericDemoFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_list_Nova_Array* args);
 void example_Nova_GenericDemoFunctionMap_Nova_super(example_Nova_GenericDemoFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+
+CCLASS_CLASS
+(
+	example_Nova_GenericDemoPropertyMap, 
+	
+	example_GenericDemo_GenericDemoPropertyMap_Extension_VTable* vtable;
+)
+
+void example_Nova_GenericDemoPropertyMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData);
+example_Nova_GenericDemoPropertyMap* example_Nova_GenericDemoPropertyMap_Nova_construct(example_Nova_GenericDemoPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+void example_Nova_GenericDemoPropertyMap_Nova_destroy(example_Nova_GenericDemoPropertyMap** this, nova_exception_Nova_ExceptionData* exceptionData);
+void example_Nova_GenericDemoPropertyMap_Nova_this(example_Nova_GenericDemoPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+void example_Nova_GenericDemoPropertyMap_Nova_super(example_Nova_GenericDemoPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData);
 
 #endif

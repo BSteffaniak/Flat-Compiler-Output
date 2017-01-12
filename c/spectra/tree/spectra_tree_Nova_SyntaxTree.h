@@ -3,6 +3,7 @@
 
 typedef struct spectra_tree_Nova_SyntaxTree spectra_tree_Nova_SyntaxTree;
 typedef struct spectra_tree_Nova_SyntaxTreeFunctionMap spectra_tree_Nova_SyntaxTreeFunctionMap;
+typedef struct spectra_tree_Nova_SyntaxTreePropertyMap spectra_tree_Nova_SyntaxTreePropertyMap;
 
 typedef struct nova_exception_Nova_ExceptionData nova_exception_Nova_ExceptionData;
 typedef struct spectra_tree_nodes_Nova_NovaFile spectra_tree_nodes_Nova_NovaFile;
@@ -47,6 +48,7 @@ typedef void (*spectra_tree_Nova_SyntaxTreeFunctionMap_closure480_Nova_func)(voi
 #include <nova/nova_Nova_System.h>
 #include <nova/meta/nova_meta_Nova_Class.h>
 #include <nova/meta/nova_meta_Nova_FunctionMap.h>
+#include <nova/meta/nova_meta_Nova_PropertyMap.h>
 #include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_Stack.h>
 #include <spectra/spectra_Nova_SyntaxMessage.h>
@@ -101,5 +103,21 @@ void spectra_tree_Nova_SyntaxTreeFunctionMap_functionMap_Nova_validateTypes(spec
 void spectra_tree_Nova_SyntaxTreeFunctionMap_functionMap_Nova_parseStatements(spectra_tree_Nova_SyntaxTreeFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, spectra_tree_Nova_SyntaxTree* reference);
 spectra_tree_Nova_AnnotationSearchResult* spectra_tree_Nova_SyntaxTreeFunctionMap_functionMap_static_Nova_searchAnnotations(spectra_tree_Nova_SyntaxTreeFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* statement);
 void spectra_tree_Nova_SyntaxTreeFunctionMap_Nova_super(spectra_tree_Nova_SyntaxTreeFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+
+CCLASS_CLASS
+(
+	spectra_tree_Nova_SyntaxTreePropertyMap, 
+	
+	spectra_tree_SyntaxTree_SyntaxTreePropertyMap_Extension_VTable* vtable;
+)
+
+void spectra_tree_Nova_SyntaxTreePropertyMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData);
+spectra_tree_Nova_SyntaxTreePropertyMap* spectra_tree_Nova_SyntaxTreePropertyMap_Nova_construct(spectra_tree_Nova_SyntaxTreePropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+void spectra_tree_Nova_SyntaxTreePropertyMap_Nova_destroy(spectra_tree_Nova_SyntaxTreePropertyMap** this, nova_exception_Nova_ExceptionData* exceptionData);
+void spectra_tree_Nova_SyntaxTreePropertyMap_Nova_this(spectra_tree_Nova_SyntaxTreePropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+spectra_tree_nodes_Nova_Program* spectra_tree_Nova_SyntaxTreePropertyMap_functionMap_Nova_root(spectra_tree_Nova_SyntaxTreePropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData, spectra_tree_Nova_SyntaxTree* reference);
+char spectra_tree_Nova_SyntaxTreePropertyMap_functionMap_Nova_phase(spectra_tree_Nova_SyntaxTreePropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData, spectra_tree_Nova_SyntaxTree* reference);
+spectra_Nova_Spectra* spectra_tree_Nova_SyntaxTreePropertyMap_functionMap_Nova_compiler(spectra_tree_Nova_SyntaxTreePropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData, spectra_tree_Nova_SyntaxTree* reference);
+void spectra_tree_Nova_SyntaxTreePropertyMap_Nova_super(spectra_tree_Nova_SyntaxTreePropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData);
 
 #endif

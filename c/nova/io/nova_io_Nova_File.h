@@ -3,6 +3,7 @@
 
 typedef struct nova_io_Nova_File nova_io_Nova_File;
 typedef struct nova_io_Nova_FileFunctionMap nova_io_Nova_FileFunctionMap;
+typedef struct nova_io_Nova_FilePropertyMap nova_io_Nova_FilePropertyMap;
 
 
 #include <Nova.h>
@@ -39,6 +40,7 @@ typedef struct nova_io_Nova_FileFunctionMap nova_io_Nova_FileFunctionMap;
 #include <nova/nova_Nova_System.h>
 #include <nova/meta/nova_meta_Nova_Class.h>
 #include <nova/meta/nova_meta_Nova_FunctionMap.h>
+#include <nova/meta/nova_meta_Nova_PropertyMap.h>
 #include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <nova/io/NativeFile.h>
 #include <nova/time/nova_time_Nova_Time.h>
@@ -99,5 +101,28 @@ nova_io_Nova_File* nova_io_Nova_FileFunctionMap_functionMapFileFunctionMap_Nova_
 nova_datastruct_list_Nova_Array* nova_io_Nova_FileFunctionMap_functionMap_Nova_getChildFiles(nova_io_Nova_FileFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_io_Nova_File* reference, char recursive, char includeHidden);
 nova_Nova_String* nova_io_Nova_FileFunctionMap_functionMap_Nova_toString(nova_io_Nova_FileFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_io_Nova_File* reference);
 void nova_io_Nova_FileFunctionMap_Nova_super(nova_io_Nova_FileFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+
+CCLASS_CLASS
+(
+	nova_io_Nova_FilePropertyMap, 
+	
+	nova_io_File_FilePropertyMap_Extension_VTable* vtable;
+	nova_meta_Nova_Class* nova_io_Nova_FilePropertyMap_Nova_class;
+)
+
+void nova_io_Nova_FilePropertyMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData);
+nova_io_Nova_FilePropertyMap* nova_io_Nova_FilePropertyMap_Nova_construct(nova_io_Nova_FilePropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+void nova_io_Nova_FilePropertyMap_Nova_destroy(nova_io_Nova_FilePropertyMap** this, nova_exception_Nova_ExceptionData* exceptionData);
+void nova_io_Nova_FilePropertyMap_Nova_this(nova_io_Nova_FilePropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+nova_Nova_String* nova_io_Nova_FilePropertyMap_functionMap_Nova_location(nova_io_Nova_FilePropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_io_Nova_File* reference);
+nova_Nova_String* nova_io_Nova_FilePropertyMap_functionMap_Nova_name(nova_io_Nova_FilePropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_io_Nova_File* reference);
+nova_Nova_String* nova_io_Nova_FilePropertyMap_functionMap_Nova_extension(nova_io_Nova_FilePropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_io_Nova_File* reference);
+nova_Nova_String* nova_io_Nova_FilePropertyMap_functionMap_Nova_rootName(nova_io_Nova_FilePropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_io_Nova_File* reference);
+char nova_io_Nova_FilePropertyMap_functionMap_Nova_isHidden(nova_io_Nova_FilePropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_io_Nova_File* reference);
+char nova_io_Nova_FilePropertyMap_functionMap_Nova_isDirectory(nova_io_Nova_FilePropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_io_Nova_File* reference);
+char nova_io_Nova_FilePropertyMap_functionMap_Nova_exists(nova_io_Nova_FilePropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_io_Nova_File* reference);
+nova_datastruct_list_Nova_Array* nova_io_Nova_FilePropertyMap_functionMap_Nova_files(nova_io_Nova_FilePropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_io_Nova_File* reference);
+int nova_io_Nova_FilePropertyMap_functionMap_Nova_maxOpenFiles(nova_io_Nova_FilePropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_io_Nova_File* reference);
+void nova_io_Nova_FilePropertyMap_Nova_super(nova_io_Nova_FilePropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData);
 
 #endif

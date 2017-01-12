@@ -3,6 +3,7 @@
 
 typedef struct nova_thread_Nova_Thread nova_thread_Nova_Thread;
 typedef struct nova_thread_Nova_ThreadFunctionMap nova_thread_Nova_ThreadFunctionMap;
+typedef struct nova_thread_Nova_ThreadPropertyMap nova_thread_Nova_ThreadPropertyMap;
 
 typedef struct nova_exception_Nova_ExceptionData nova_exception_Nova_ExceptionData;
 
@@ -46,6 +47,7 @@ typedef void (*nova_thread_Nova_ThreadFunctionMap_closure475_Nova_action)(void*,
 #include <nova/nova_Nova_System.h>
 #include <nova/meta/nova_meta_Nova_Class.h>
 #include <nova/meta/nova_meta_Nova_FunctionMap.h>
+#include <nova/meta/nova_meta_Nova_PropertyMap.h>
 #include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <nova/thread/NativeThread.h>
 #include <nova/NativeObject.h>
@@ -94,5 +96,20 @@ void nova_thread_Nova_ThreadFunctionMap_functionMap_static_Nova_sleep(nova_threa
 void nova_thread_Nova_ThreadFunctionMap_functionMap_Nova_run(nova_thread_Nova_ThreadFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_thread_Nova_Thread* reference);
 void nova_thread_Nova_ThreadFunctionMap_Nova_super(nova_thread_Nova_ThreadFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
 void nova_thread_Nova_ThreadFunctionMap_virtualfunctionMap_Nova_run(nova_thread_Nova_ThreadFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_thread_Nova_Thread* reference);
+
+CCLASS_CLASS
+(
+	nova_thread_Nova_ThreadPropertyMap, 
+	
+	nova_thread_Thread_ThreadPropertyMap_Extension_VTable* vtable;
+)
+
+void nova_thread_Nova_ThreadPropertyMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData);
+nova_thread_Nova_ThreadPropertyMap* nova_thread_Nova_ThreadPropertyMap_Nova_construct(nova_thread_Nova_ThreadPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+void nova_thread_Nova_ThreadPropertyMap_Nova_destroy(nova_thread_Nova_ThreadPropertyMap** this, nova_exception_Nova_ExceptionData* exceptionData);
+void nova_thread_Nova_ThreadPropertyMap_Nova_this(nova_thread_Nova_ThreadPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+char nova_thread_Nova_ThreadPropertyMap_functionMap_Nova_active(nova_thread_Nova_ThreadPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_thread_Nova_Thread* reference);
+nova_datastruct_list_Nova_ImmutableArray* nova_thread_Nova_ThreadPropertyMap_functionMap_static_Nova_ACTIVE_THREADS(nova_thread_Nova_ThreadPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+void nova_thread_Nova_ThreadPropertyMap_Nova_super(nova_thread_Nova_ThreadPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData);
 
 #endif

@@ -29,6 +29,7 @@
 #include <nova/nova_Nova_System.h>
 #include <nova/meta/nova_meta_Nova_Class.h>
 #include <nova/meta/nova_meta_Nova_FunctionMap.h>
+#include <nova/meta/nova_meta_Nova_PropertyMap.h>
 #include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <nova/regex/nova_regex_Nova_Regex.h>
 #include <nova/regex/nova_regex_Nova_Match.h>
@@ -46,16 +47,16 @@
 typedef struct
 {
 	/* let Int index = 0 */ int* spectra_util_Nova_CompilerStringFunctions_Nova_index;
-} Context71;
+} Context74;
 typedef struct
 {
-} Context72;
+} Context75;
 typedef struct
 {
 	/* let Bool includeEdges = true */ int* spectra_util_Nova_CompilerStringFunctions_Nova_includeEdges;
 	/* let
 	IntArray matches */ nova_datastruct_list_Nova_IntArray** spectra_util_Nova_CompilerStringFunctions_Nova_matches;
-} Context140;
+} Context146;
 typedef struct
 {
 	/* var
@@ -70,16 +71,16 @@ typedef struct
 	String output */ nova_Nova_String** spectra_util_Nova_CompilerStringFunctions_Nova_output;
 	/* var
 	Int lastIndex */ int* spectra_util_Nova_CompilerStringFunctions_Nova_lastIndex;
-} Context141;
+} Context147;
 
 
 
 char spectra_util_Nova_CompilerStringFunctions_static_Nova_validBounds(spectra_util_Nova_CompilerStringFunctions* this, nova_exception_Nova_ExceptionData* exceptionData, spectra_util_Nova_Bounds* bounds, int stopIndex, int direction);
-char spectra_util_Nova_CompilerStringFunctions_Nova_lambda72(nova_Nova_String* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* _1, Context71* context);
-int spectra_util_Nova_CompilerStringFunctions_Nova_lambda73(nova_Nova_String* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* str, char c, int i, int dir, Context72* context);
-nova_datastruct_list_Nova_Array* generated7(spectra_util_Nova_CompilerStringFunctions* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* value0);
-void spectra_util_Nova_CompilerStringFunctions_Nova_lambda141(nova_Nova_String* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* operator, int _2, nova_datastruct_list_Nova_Array* _3, Context140* context);
-void spectra_util_Nova_CompilerStringFunctions_Nova_lambda142(nova_Nova_String* this, nova_exception_Nova_ExceptionData* exceptionData, nova_regex_Nova_Match* match, int _2, nova_datastruct_list_Nova_Array* _3, Context141* context);
+char spectra_util_Nova_CompilerStringFunctions_Nova_lambda75(nova_Nova_String* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* _1, Context74* context);
+int spectra_util_Nova_CompilerStringFunctions_Nova_lambda76(nova_Nova_String* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* str, char c, int i, int dir, Context75* context);
+nova_datastruct_list_Nova_Array* generated18(spectra_util_Nova_CompilerStringFunctions* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* value0);
+void spectra_util_Nova_CompilerStringFunctions_Nova_lambda147(nova_Nova_String* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* operator, int _2, nova_datastruct_list_Nova_Array* _3, Context146* context);
+void spectra_util_Nova_CompilerStringFunctions_Nova_lambda148(nova_Nova_String* this, nova_exception_Nova_ExceptionData* exceptionData, nova_regex_Nova_Match* match, int _2, nova_datastruct_list_Nova_Array* _3, Context147* context);
 
 
 
@@ -332,11 +333,11 @@ nova_Nova_String* spectra_util_Nova_CompilerStringFunctions_Nova_removeSurroundi
 
 char spectra_util_Nova_CompilerStringFunctions_0_Nova_containsString(nova_Nova_String* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_list_Nova_Array* needles, int index)
 {
-	Context71* contextArg72 = NOVA_MALLOC(sizeof(Context71));
-	contextArg72->spectra_util_Nova_CompilerStringFunctions_Nova_index = &index;
+	Context74* contextArg75 = NOVA_MALLOC(sizeof(Context74));
+	contextArg75->spectra_util_Nova_CompilerStringFunctions_Nova_index = &index;
 	
 	index = (int)(index == (intptr_t)nova_null ? 0 : index);
-	return nova_datastruct_list_Nova_List_virtual0_Nova_any((nova_datastruct_list_Nova_List*)(needles), exceptionData, (nova_datastruct_list_Nova_List_closure296_Nova_anyFunc)&spectra_util_Nova_CompilerStringFunctions_Nova_lambda72, this, contextArg72);
+	return nova_datastruct_list_Nova_List_virtual0_Nova_any((nova_datastruct_list_Nova_List*)(needles), exceptionData, (nova_datastruct_list_Nova_List_closure296_Nova_anyFunc)&spectra_util_Nova_CompilerStringFunctions_Nova_lambda75, this, contextArg75);
 }
 
 char spectra_util_Nova_CompilerStringFunctions_1_Nova_containsString(nova_Nova_String* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* needle, int index)
@@ -391,10 +392,10 @@ int spectra_util_Nova_CompilerStringFunctions_Nova_findEndingChar(nova_Nova_Stri
 
 int spectra_util_Nova_CompilerStringFunctions_Nova_findEndingQuote(nova_Nova_String* this, nova_exception_Nova_ExceptionData* exceptionData, int start, int direction)
 {
-	Context72* contextArg73 = NOVA_MALLOC(sizeof(Context72));
+	Context75* contextArg76 = NOVA_MALLOC(sizeof(Context75));
 	
 	direction = (int)(direction == (intptr_t)nova_null ? 1 : direction);
-	return spectra_util_Nova_CompilerStringFunctions_Nova_findEndingChar(this, exceptionData, '"', start, direction, (spectra_util_Nova_CompilerStringFunctions_closure367_Nova_advance)&spectra_util_Nova_CompilerStringFunctions_Nova_lambda73, this, contextArg73, (intptr_t)nova_null);
+	return spectra_util_Nova_CompilerStringFunctions_Nova_findEndingChar(this, exceptionData, '"', start, direction, (spectra_util_Nova_CompilerStringFunctions_closure367_Nova_advance)&spectra_util_Nova_CompilerStringFunctions_Nova_lambda76, this, contextArg76, (intptr_t)nova_null);
 }
 
 int spectra_util_Nova_CompilerStringFunctions_0_Nova_findEndingMatch(nova_Nova_String* this, nova_exception_Nova_ExceptionData* exceptionData, int index, char start, char end, int direction, int escapeChar)
@@ -532,23 +533,23 @@ nova_datastruct_list_Nova_Array* spectra_util_Nova_CompilerStringFunctions_Nova_
 nova_datastruct_list_Nova_IntArray* spectra_util_Nova_CompilerStringFunctions_Nova_findOperatorIndices(nova_Nova_String* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_list_Nova_Array* operators, int includeEdges)
 {
 	nova_datastruct_list_Nova_IntArray* l1_Nova_matches = (nova_datastruct_list_Nova_IntArray*)nova_null;
-	Context140* contextArg141 = NOVA_MALLOC(sizeof(Context140));
-	contextArg141->spectra_util_Nova_CompilerStringFunctions_Nova_includeEdges = &includeEdges;
-	contextArg141->spectra_util_Nova_CompilerStringFunctions_Nova_matches = &l1_Nova_matches;
+	Context146* contextArg147 = NOVA_MALLOC(sizeof(Context146));
+	contextArg147->spectra_util_Nova_CompilerStringFunctions_Nova_includeEdges = &includeEdges;
+	contextArg147->spectra_util_Nova_CompilerStringFunctions_Nova_matches = &l1_Nova_matches;
 	int l3_Nova_i = 0;
 	
 	operators = (nova_datastruct_list_Nova_Array*)(operators == 0 ? (nova_Nova_Object*)spectra_tree_nodes_operations_Nova_Operator_Nova_BINARY_OPERATORS : (nova_Nova_Object*)operators);
 	includeEdges = (int)(includeEdges == (intptr_t)nova_null ? 1 : includeEdges);
 	l1_Nova_matches = nova_datastruct_list_Nova_IntArray_1_Nova_construct(0, exceptionData, 0);
 	nova_time_Nova_Timer_Nova_start((nova_time_Nova_Timer*)(nova_Nova_System_Nova_overheadTimer), exceptionData);
-	nova_datastruct_list_Nova_List_virtual0_Nova_forEach((nova_datastruct_list_Nova_List*)(operators), exceptionData, (nova_datastruct_list_Nova_List_closure288_Nova_func)&spectra_util_Nova_CompilerStringFunctions_Nova_lambda141, this, contextArg141);
+	nova_datastruct_list_Nova_List_virtual0_Nova_forEach((nova_datastruct_list_Nova_List*)(operators), exceptionData, (nova_datastruct_list_Nova_List_closure288_Nova_func)&spectra_util_Nova_CompilerStringFunctions_Nova_lambda147, this, contextArg147);
 	l3_Nova_i = (int)0;
-	for (; l3_Nova_i < (int)nova_datastruct_list_Nova_Array_Accessorfunc_Nova_count((nova_datastruct_list_Nova_Array*)(l1_Nova_matches), exceptionData); l3_Nova_i++)
+	for (; l3_Nova_i < (int)nova_datastruct_list_Nova_List_virtual_Accessor_Nova_count((nova_datastruct_list_Nova_List*)(l1_Nova_matches), exceptionData); l3_Nova_i++)
 	{
 		int l5_Nova_j = 0;
 		
 		l5_Nova_j = (int)1;
-		for (; l5_Nova_j < (int)(nova_datastruct_list_Nova_Array_Accessorfunc_Nova_count((nova_datastruct_list_Nova_Array*)(l1_Nova_matches), exceptionData) - l3_Nova_i); l5_Nova_j++)
+		for (; l5_Nova_j < (int)(nova_datastruct_list_Nova_List_virtual_Accessor_Nova_count((nova_datastruct_list_Nova_List*)(l1_Nova_matches), exceptionData) - l3_Nova_i); l5_Nova_j++)
 		{
 			if ((int)(intptr_t)nova_datastruct_list_Nova_IntArray_Nova_get(l1_Nova_matches, exceptionData, l5_Nova_j - 1) > (int)(intptr_t)nova_datastruct_list_Nova_IntArray_Nova_get(l1_Nova_matches, exceptionData, l5_Nova_j))
 			{
@@ -560,7 +561,7 @@ nova_datastruct_list_Nova_IntArray* spectra_util_Nova_CompilerStringFunctions_No
 			}
 		}
 	}
-	nova_time_Nova_CumulativeTimer_Nova_stop(nova_Nova_System_Nova_overheadTimer, exceptionData);
+	nova_time_Nova_Timer_virtual_Nova_stop((nova_time_Nova_Timer*)(nova_Nova_System_Nova_overheadTimer), exceptionData);
 	return l1_Nova_matches;
 }
 
@@ -620,7 +621,7 @@ int spectra_util_Nova_CompilerStringFunctions_1_Nova_findCharOnTopLevel(nova_Nov
 	
 	start = (int)(start == (intptr_t)nova_null ? 0 : start);
 	searchGenerics = (int)(searchGenerics == (intptr_t)nova_null ? 0 : searchGenerics);
-	l1_Nova_array = nova_datastruct_list_Nova_Array_1_Nova_construct(0, exceptionData, nova_datastruct_list_Nova_Array_Accessorfunc_Nova_count((nova_datastruct_list_Nova_Array*)(needles), exceptionData), (intptr_t)nova_null);
+	l1_Nova_array = nova_datastruct_list_Nova_Array_1_Nova_construct(0, exceptionData, nova_datastruct_list_Nova_List_virtual_Accessor_Nova_count((nova_datastruct_list_Nova_List*)(needles), exceptionData), (intptr_t)nova_null);
 	nova_local_0 = nova_datastruct_list_Nova_CharArray_Accessor_Nova_iterator((needles), exceptionData);
 	while (nova_datastruct_list_Nova_CharArrayIterator_Accessor_Nova_hasNext(nova_local_0, exceptionData))
 	{
@@ -650,7 +651,7 @@ int spectra_util_Nova_CompilerStringFunctions_0_Nova_findStringOnTopLevel(nova_N
 	start = (int)(start == (intptr_t)nova_null ? 0 : start);
 	searchGenerics = (int)(searchGenerics == (intptr_t)nova_null ? 0 : searchGenerics);
 	defaultReturnValue = (int)(defaultReturnValue == (intptr_t)nova_null ? -1 : defaultReturnValue);
-	return spectra_util_Nova_CompilerStringFunctions_1_Nova_findStringOnTopLevel(this, exceptionData, generated7((spectra_util_Nova_CompilerStringFunctions*)(this), exceptionData, needle), start, searchGenerics, defaultReturnValue);
+	return spectra_util_Nova_CompilerStringFunctions_1_Nova_findStringOnTopLevel(this, exceptionData, generated18((spectra_util_Nova_CompilerStringFunctions*)(this), exceptionData, needle), start, searchGenerics, defaultReturnValue);
 }
 
 int spectra_util_Nova_CompilerStringFunctions_1_Nova_findStringOnTopLevel(nova_Nova_String* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_list_Nova_Array* needles, int start, int searchGenerics, int defaultReturnValue)
@@ -910,12 +911,12 @@ spectra_util_Nova_Bounds* spectra_util_Nova_CompilerStringFunctions_Nova_findStr
 		continue;
 	}
 }
-nova_local_0 = (nova_datastruct_list_Nova_ArrayIterator*)(nova_datastruct_list_Nova_Array_Accessor_Nova_iterator((nova_datastruct_list_Nova_Array*)((strings)), exceptionData));
-while (nova_datastruct_list_Nova_ArrayIterator_Accessor_Nova_hasNext((nova_datastruct_list_Nova_ArrayIterator*)(nova_local_0), exceptionData))
+nova_local_0 = (nova_datastruct_list_Nova_ArrayIterator*)(nova_datastruct_list_Nova_Iterable_virtual_Accessor_Nova_iterator((nova_datastruct_list_Nova_Iterable*)((strings)), exceptionData));
+while (nova_datastruct_list_Nova_Iterator_virtual_Accessor_Nova_hasNext((nova_datastruct_list_Nova_Iterator*)(nova_local_0), exceptionData))
 {
 	int l19_Nova_i = 0;
 	
-	l17_Nova_str = (nova_Nova_String*)(nova_datastruct_list_Nova_ArrayIterator_Accessor_Nova_next((nova_datastruct_list_Nova_ArrayIterator*)(nova_local_0), exceptionData));
+	l17_Nova_str = (nova_Nova_String*)(nova_datastruct_list_Nova_Iterator_virtual_Accessor_Nova_next((nova_datastruct_list_Nova_Iterator*)(nova_local_0), exceptionData));
 	l19_Nova_i = (int)(0);
 	for (; l19_Nova_i < l17_Nova_str->nova_Nova_String_Nova_count && start + l19_Nova_i < this->nova_Nova_String_Nova_count; l19_Nova_i++)
 	{
@@ -990,13 +991,13 @@ nova_Nova_String* spectra_util_Nova_CompilerStringFunctions_Nova_formatIndentati
 	int l1_Nova_lambda = 0;
 	char l1_Nova_sameLine = 0;
 	char l1_Nova_inParen = 0;
-	Context141* contextArg142 = NOVA_MALLOC(sizeof(Context141));
-	contextArg142->spectra_util_Nova_CompilerStringFunctions_Nova_inParen = &l1_Nova_inParen;
-	contextArg142->spectra_util_Nova_CompilerStringFunctions_Nova_lambda = &l1_Nova_lambda;
-	contextArg142->spectra_util_Nova_CompilerStringFunctions_Nova_tabs = &l1_Nova_tabs;
-	contextArg142->spectra_util_Nova_CompilerStringFunctions_Nova_sameLine = &l1_Nova_sameLine;
-	contextArg142->spectra_util_Nova_CompilerStringFunctions_Nova_output = &l1_Nova_output;
-	contextArg142->spectra_util_Nova_CompilerStringFunctions_Nova_lastIndex = &l1_Nova_lastIndex;
+	Context147* contextArg148 = NOVA_MALLOC(sizeof(Context147));
+	contextArg148->spectra_util_Nova_CompilerStringFunctions_Nova_inParen = &l1_Nova_inParen;
+	contextArg148->spectra_util_Nova_CompilerStringFunctions_Nova_lambda = &l1_Nova_lambda;
+	contextArg148->spectra_util_Nova_CompilerStringFunctions_Nova_tabs = &l1_Nova_tabs;
+	contextArg148->spectra_util_Nova_CompilerStringFunctions_Nova_sameLine = &l1_Nova_sameLine;
+	contextArg148->spectra_util_Nova_CompilerStringFunctions_Nova_output = &l1_Nova_output;
+	contextArg148->spectra_util_Nova_CompilerStringFunctions_Nova_lastIndex = &l1_Nova_lastIndex;
 	
 	l1_Nova_output = nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)(""));
 	l1_Nova_tabs = nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)(""));
@@ -1005,17 +1006,17 @@ nova_Nova_String* spectra_util_Nova_CompilerStringFunctions_Nova_formatIndentati
 	l1_Nova_lambda = (int)(0);
 	l1_Nova_sameLine = 0;
 	l1_Nova_inParen = 0;
-	nova_datastruct_list_Nova_List_virtual0_Nova_forEach((nova_datastruct_list_Nova_List*)(l1_Nova_matches), exceptionData, (nova_datastruct_list_Nova_List_closure288_Nova_func)&spectra_util_Nova_CompilerStringFunctions_Nova_lambda142, this, contextArg142);
+	nova_datastruct_list_Nova_List_virtual0_Nova_forEach((nova_datastruct_list_Nova_List*)(l1_Nova_matches), exceptionData, (nova_datastruct_list_Nova_List_closure288_Nova_func)&spectra_util_Nova_CompilerStringFunctions_Nova_lambda148, this, contextArg148);
 	l1_Nova_output = (nova_Nova_String*)(nova_Nova_String_virtual_Nova_concat((nova_Nova_String*)(l1_Nova_output), exceptionData, (nova_Nova_String*)(nova_Nova_String_Nova_plus(l1_Nova_tabs, exceptionData, nova_Nova_String_virtual_Nova_substring((nova_Nova_String*)(this), exceptionData, l1_Nova_lastIndex, (intptr_t)nova_null)))));
 	return l1_Nova_output;
 }
 
-char spectra_util_Nova_CompilerStringFunctions_Nova_lambda72(nova_Nova_String* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* _1, Context71* context)
+char spectra_util_Nova_CompilerStringFunctions_Nova_lambda75(nova_Nova_String* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* _1, Context74* context)
 {
 	return spectra_util_Nova_CompilerStringFunctions_1_Nova_containsString(this, exceptionData, _1, (*context->spectra_util_Nova_CompilerStringFunctions_Nova_index));
 }
 
-int spectra_util_Nova_CompilerStringFunctions_Nova_lambda73(nova_Nova_String* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* str, char c, int i, int dir, Context72* context)
+int spectra_util_Nova_CompilerStringFunctions_Nova_lambda76(nova_Nova_String* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* str, char c, int i, int dir, Context75* context)
 {
 	i += dir;
 	if (dir > 0 && i < str->nova_Nova_String_Nova_count - 3 && nova_Nova_String_Nova_get(str, exceptionData, i) == '#' && nova_Nova_String_Nova_get(str, exceptionData, i + 1) == '{')
@@ -1024,7 +1025,7 @@ int spectra_util_Nova_CompilerStringFunctions_Nova_lambda73(nova_Nova_String* th
 }
 return spectra_util_Nova_CompilerStringFunctions_static_Nova_defaultCharacterCheck((spectra_util_Nova_CompilerStringFunctions*)(this), exceptionData, str, c, i - dir, dir);}
 
-nova_datastruct_list_Nova_Array* generated7(spectra_util_Nova_CompilerStringFunctions* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* value0)
+nova_datastruct_list_Nova_Array* generated18(spectra_util_Nova_CompilerStringFunctions* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* value0)
 {
 	nova_Nova_String** l1_Nova_temp = (nova_Nova_String**)nova_null;
 	
@@ -1033,7 +1034,7 @@ nova_datastruct_list_Nova_Array* generated7(spectra_util_Nova_CompilerStringFunc
 	return nova_datastruct_list_Nova_Array_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)(l1_Nova_temp), 1);
 }
 
-void spectra_util_Nova_CompilerStringFunctions_Nova_lambda141(nova_Nova_String* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* operator, int _2, nova_datastruct_list_Nova_Array* _3, Context140* context)
+void spectra_util_Nova_CompilerStringFunctions_Nova_lambda147(nova_Nova_String* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* operator, int _2, nova_datastruct_list_Nova_Array* _3, Context146* context)
 {
 	int l1_Nova_index = 0;
 	
@@ -1048,7 +1049,7 @@ void spectra_util_Nova_CompilerStringFunctions_Nova_lambda141(nova_Nova_String* 
 	}
 }
 
-void spectra_util_Nova_CompilerStringFunctions_Nova_lambda142(nova_Nova_String* this, nova_exception_Nova_ExceptionData* exceptionData, nova_regex_Nova_Match* match, int _2, nova_datastruct_list_Nova_Array* _3, Context141* context)
+void spectra_util_Nova_CompilerStringFunctions_Nova_lambda148(nova_Nova_String* this, nova_exception_Nova_ExceptionData* exceptionData, nova_regex_Nova_Match* match, int _2, nova_datastruct_list_Nova_Array* _3, Context147* context)
 {
 	char l1_Nova_c = 0;
 	

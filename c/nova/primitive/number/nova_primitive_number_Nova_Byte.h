@@ -3,6 +3,7 @@
 
 typedef struct nova_primitive_number_Nova_Byte nova_primitive_number_Nova_Byte;
 typedef struct nova_primitive_number_Nova_ByteFunctionMap nova_primitive_number_Nova_ByteFunctionMap;
+typedef struct nova_primitive_number_Nova_BytePropertyMap nova_primitive_number_Nova_BytePropertyMap;
 
 
 #include <Nova.h>
@@ -39,12 +40,18 @@ typedef struct nova_primitive_number_Nova_ByteFunctionMap nova_primitive_number_
 #include <nova/nova_Nova_System.h>
 #include <nova/meta/nova_meta_Nova_Class.h>
 #include <nova/meta/nova_meta_Nova_FunctionMap.h>
+#include <nova/meta/nova_meta_Nova_PropertyMap.h>
 #include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <nova/datastruct/nova_datastruct_Nova_Comparable.h>
 #include <nova/primitive/number/nova_primitive_number_Nova_Integer.h>
 #include <nova/primitive/number/nova_primitive_number_Nova_Number.h>
 #include <nova/datastruct/nova_datastruct_Nova_Comparable.h>
 #include <nova/primitive/number/nova_primitive_number_Nova_Integer.h>
+#include <nova/primitive/number/nova_primitive_number_Nova_Number.h>
+#include <nova/datastruct/nova_datastruct_Nova_Comparable.h>
+#include <nova/primitive/number/nova_primitive_number_Nova_Integer.h>
+#include <nova/primitive/nova_primitive_Nova_Primitive.h>
+#include <nova/operators/nova_operators_Nova_MultiplyOperator.h>
 #include <nova/primitive/nova_primitive_Nova_Primitive.h>
 #include <nova/operators/nova_operators_Nova_MultiplyOperator.h>
 #include <nova/primitive/nova_primitive_Nova_Primitive.h>
@@ -87,5 +94,18 @@ nova_Nova_String* nova_primitive_number_Nova_ByteFunctionMap_functionMap_Nova_to
 int nova_primitive_number_Nova_ByteFunctionMap_functionMap_static_Nova_numDigits(nova_primitive_number_Nova_ByteFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, char number);
 nova_Nova_String* nova_primitive_number_Nova_ByteFunctionMap_functionMap_static_Nova_toString(nova_primitive_number_Nova_ByteFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, char value);
 void nova_primitive_number_Nova_ByteFunctionMap_Nova_super(nova_primitive_number_Nova_ByteFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+
+CCLASS_CLASS
+(
+	nova_primitive_number_Nova_BytePropertyMap, 
+	
+	nova_primitive_number_Byte_BytePropertyMap_Extension_VTable* vtable;
+)
+
+void nova_primitive_number_Nova_BytePropertyMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData);
+nova_primitive_number_Nova_BytePropertyMap* nova_primitive_number_Nova_BytePropertyMap_Nova_construct(nova_primitive_number_Nova_BytePropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+void nova_primitive_number_Nova_BytePropertyMap_Nova_destroy(nova_primitive_number_Nova_BytePropertyMap** this, nova_exception_Nova_ExceptionData* exceptionData);
+void nova_primitive_number_Nova_BytePropertyMap_Nova_this(nova_primitive_number_Nova_BytePropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+void nova_primitive_number_Nova_BytePropertyMap_Nova_super(nova_primitive_number_Nova_BytePropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData);
 
 #endif

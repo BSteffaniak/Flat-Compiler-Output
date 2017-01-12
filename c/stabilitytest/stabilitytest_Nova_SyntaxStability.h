@@ -3,6 +3,7 @@
 
 typedef struct stabilitytest_Nova_SyntaxStability stabilitytest_Nova_SyntaxStability;
 typedef struct stabilitytest_Nova_SyntaxStabilityFunctionMap stabilitytest_Nova_SyntaxStabilityFunctionMap;
+typedef struct stabilitytest_Nova_SyntaxStabilityPropertyMap stabilitytest_Nova_SyntaxStabilityPropertyMap;
 
 
 #include <Nova.h>
@@ -39,12 +40,14 @@ typedef struct stabilitytest_Nova_SyntaxStabilityFunctionMap stabilitytest_Nova_
 #include <nova/nova_Nova_System.h>
 #include <nova/meta/nova_meta_Nova_Class.h>
 #include <nova/meta/nova_meta_Nova_FunctionMap.h>
+#include <nova/meta/nova_meta_Nova_PropertyMap.h>
 #include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_Iterator.h>
 #include <stabilitytest/stabilitytest_Nova_Node.h>
 #include <stabilitytest/stabilitytest_Nova_StabilityTest.h>
 #include <stabilitytest/stabilitytest_Nova_StabilityTestCase.h>
 #include <stabilitytest/stabilitytest_Nova_UnstableException.h>
+#include <stabilitytest/stabilitytest_Nova_StabilityTestCase.h>
 #include <stabilitytest/stabilitytest_Nova_StabilityTestCase.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_ArrayIterator.h>
 #include <nova/NativeObject.h>
@@ -78,5 +81,18 @@ void stabilitytest_Nova_SyntaxStabilityFunctionMap_Nova_this(stabilitytest_Nova_
 stabilitytest_Nova_SyntaxStability* stabilitytest_Nova_SyntaxStabilityFunctionMap_functionMapSyntaxStabilityFunctionMap_Nova_construct(stabilitytest_Nova_SyntaxStabilityFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, stabilitytest_Nova_StabilityTest* program);
 void stabilitytest_Nova_SyntaxStabilityFunctionMap_functionMap_Nova_test(stabilitytest_Nova_SyntaxStabilityFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, stabilitytest_Nova_SyntaxStability* reference);
 void stabilitytest_Nova_SyntaxStabilityFunctionMap_Nova_super(stabilitytest_Nova_SyntaxStabilityFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+
+CCLASS_CLASS
+(
+	stabilitytest_Nova_SyntaxStabilityPropertyMap, 
+	
+	stabilitytest_SyntaxStability_SyntaxStabilityPropertyMap_Extension_VTable* vtable;
+)
+
+void stabilitytest_Nova_SyntaxStabilityPropertyMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData);
+stabilitytest_Nova_SyntaxStabilityPropertyMap* stabilitytest_Nova_SyntaxStabilityPropertyMap_Nova_construct(stabilitytest_Nova_SyntaxStabilityPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+void stabilitytest_Nova_SyntaxStabilityPropertyMap_Nova_destroy(stabilitytest_Nova_SyntaxStabilityPropertyMap** this, nova_exception_Nova_ExceptionData* exceptionData);
+void stabilitytest_Nova_SyntaxStabilityPropertyMap_Nova_this(stabilitytest_Nova_SyntaxStabilityPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+void stabilitytest_Nova_SyntaxStabilityPropertyMap_Nova_super(stabilitytest_Nova_SyntaxStabilityPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData);
 
 #endif

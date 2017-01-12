@@ -3,6 +3,7 @@
 
 typedef struct nova_star_Nova_Window nova_star_Nova_Window;
 typedef struct nova_star_Nova_WindowFunctionMap nova_star_Nova_WindowFunctionMap;
+typedef struct nova_star_Nova_WindowPropertyMap nova_star_Nova_WindowPropertyMap;
 
 
 #include <Nova.h>
@@ -39,6 +40,7 @@ typedef struct nova_star_Nova_WindowFunctionMap nova_star_Nova_WindowFunctionMap
 #include <nova/nova_Nova_System.h>
 #include <nova/meta/nova_meta_Nova_Class.h>
 #include <nova/meta/nova_meta_Nova_FunctionMap.h>
+#include <nova/meta/nova_meta_Nova_PropertyMap.h>
 #include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <nova/star/NativeWindow.h>
 #include <nova/star/nova_star_Nova_WindowThread.h>
@@ -77,5 +79,23 @@ void nova_star_Nova_WindowFunctionMap_Nova_this(nova_star_Nova_WindowFunctionMap
 nova_star_Nova_Window* nova_star_Nova_WindowFunctionMap_functionMapWindowFunctionMap_Nova_construct(nova_star_Nova_WindowFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* title, int x, int y, int width, int height);
 void nova_star_Nova_WindowFunctionMap_functionMap_Nova_create(nova_star_Nova_WindowFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_star_Nova_Window* reference);
 void nova_star_Nova_WindowFunctionMap_Nova_super(nova_star_Nova_WindowFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+
+CCLASS_CLASS
+(
+	nova_star_Nova_WindowPropertyMap, 
+	
+	nova_star_Window_WindowPropertyMap_Extension_VTable* vtable;
+)
+
+void nova_star_Nova_WindowPropertyMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData);
+nova_star_Nova_WindowPropertyMap* nova_star_Nova_WindowPropertyMap_Nova_construct(nova_star_Nova_WindowPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+void nova_star_Nova_WindowPropertyMap_Nova_destroy(nova_star_Nova_WindowPropertyMap** this, nova_exception_Nova_ExceptionData* exceptionData);
+void nova_star_Nova_WindowPropertyMap_Nova_this(nova_star_Nova_WindowPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+int nova_star_Nova_WindowPropertyMap_functionMap_Nova_x(nova_star_Nova_WindowPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_star_Nova_Window* reference);
+int nova_star_Nova_WindowPropertyMap_functionMap_Nova_y(nova_star_Nova_WindowPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_star_Nova_Window* reference);
+int nova_star_Nova_WindowPropertyMap_functionMap_Nova_width(nova_star_Nova_WindowPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_star_Nova_Window* reference);
+int nova_star_Nova_WindowPropertyMap_functionMap_Nova_height(nova_star_Nova_WindowPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_star_Nova_Window* reference);
+nova_Nova_String* nova_star_Nova_WindowPropertyMap_functionMap_Nova_title(nova_star_Nova_WindowPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_star_Nova_Window* reference);
+void nova_star_Nova_WindowPropertyMap_Nova_super(nova_star_Nova_WindowPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData);
 
 #endif

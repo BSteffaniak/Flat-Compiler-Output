@@ -3,6 +3,7 @@
 
 typedef struct spectra_tree_nodes_Nova_Skeleton spectra_tree_nodes_Nova_Skeleton;
 typedef struct spectra_tree_nodes_Nova_SkeletonFunctionMap spectra_tree_nodes_Nova_SkeletonFunctionMap;
+typedef struct spectra_tree_nodes_Nova_SkeletonPropertyMap spectra_tree_nodes_Nova_SkeletonPropertyMap;
 
 
 #include <Nova.h>
@@ -39,8 +40,10 @@ typedef struct spectra_tree_nodes_Nova_SkeletonFunctionMap spectra_tree_nodes_No
 #include <nova/nova_Nova_System.h>
 #include <nova/meta/nova_meta_Nova_Class.h>
 #include <nova/meta/nova_meta_Nova_FunctionMap.h>
+#include <nova/meta/nova_meta_Nova_PropertyMap.h>
 #include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <spectra/util/spectra_util_Nova_Location.h>
+#include <spectra/tree/nodes/spectra_tree_nodes_Nova_Node.h>
 #include <spectra/tree/nodes/spectra_tree_nodes_Nova_Node.h>
 #include <spectra/tree/nodes/spectra_tree_nodes_Nova_Node.h>
 #include <spectra/spectra_Nova_InvalidParseException.h>
@@ -61,6 +64,7 @@ typedef struct spectra_tree_nodes_Nova_SkeletonFunctionMap spectra_tree_nodes_No
 #include <spectra/tree/nodes/spectra_tree_nodes_Nova_Program.h>
 #include <spectra/tree/nodes/spectra_tree_nodes_Nova_Scope.h>
 #include <spectra/tree/nodes/spectra_tree_nodes_Nova_ValidationResult.h>
+#include <spectra/tree/nodes/annotations/spectra_tree_nodes_annotations_Nova_Annotatable.h>
 #include <spectra/tree/nodes/annotations/spectra_tree_nodes_annotations_Nova_Annotatable.h>
 #include <nova/NativeObject.h>
 
@@ -95,5 +99,18 @@ void spectra_tree_nodes_Nova_SkeletonFunctionMap_Nova_this(spectra_tree_nodes_No
 spectra_tree_nodes_Nova_Skeleton* spectra_tree_nodes_Nova_SkeletonFunctionMap_functionMapSkeletonFunctionMap_Nova_construct(spectra_tree_nodes_Nova_SkeletonFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, spectra_tree_nodes_Nova_Node* parent, spectra_util_Nova_Location* location);
 spectra_tree_nodes_Nova_Skeleton* spectra_tree_nodes_Nova_SkeletonFunctionMap_functionMap_static_Nova_parse(spectra_tree_nodes_Nova_SkeletonFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* input, spectra_tree_nodes_Nova_Node* parent, spectra_util_Nova_Location* location, char require);
 void spectra_tree_nodes_Nova_SkeletonFunctionMap_Nova_super(spectra_tree_nodes_Nova_SkeletonFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+
+CCLASS_CLASS
+(
+	spectra_tree_nodes_Nova_SkeletonPropertyMap, 
+	
+	spectra_tree_nodes_Skeleton_SkeletonPropertyMap_Extension_VTable* vtable;
+)
+
+void spectra_tree_nodes_Nova_SkeletonPropertyMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData);
+spectra_tree_nodes_Nova_SkeletonPropertyMap* spectra_tree_nodes_Nova_SkeletonPropertyMap_Nova_construct(spectra_tree_nodes_Nova_SkeletonPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+void spectra_tree_nodes_Nova_SkeletonPropertyMap_Nova_destroy(spectra_tree_nodes_Nova_SkeletonPropertyMap** this, nova_exception_Nova_ExceptionData* exceptionData);
+void spectra_tree_nodes_Nova_SkeletonPropertyMap_Nova_this(spectra_tree_nodes_Nova_SkeletonPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+void spectra_tree_nodes_Nova_SkeletonPropertyMap_Nova_super(spectra_tree_nodes_Nova_SkeletonPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData);
 
 #endif

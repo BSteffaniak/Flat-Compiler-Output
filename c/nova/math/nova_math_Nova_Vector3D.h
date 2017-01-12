@@ -3,6 +3,7 @@
 
 typedef struct nova_math_Nova_Vector3D nova_math_Nova_Vector3D;
 typedef struct nova_math_Nova_Vector3DFunctionMap nova_math_Nova_Vector3DFunctionMap;
+typedef struct nova_math_Nova_Vector3DPropertyMap nova_math_Nova_Vector3DPropertyMap;
 
 
 #include <Nova.h>
@@ -39,7 +40,9 @@ typedef struct nova_math_Nova_Vector3DFunctionMap nova_math_Nova_Vector3DFunctio
 #include <nova/nova_Nova_System.h>
 #include <nova/meta/nova_meta_Nova_Class.h>
 #include <nova/meta/nova_meta_Nova_FunctionMap.h>
+#include <nova/meta/nova_meta_Nova_PropertyMap.h>
 #include <nova/regex/nova_regex_Nova_Pattern.h>
+#include <nova/math/nova_math_Nova_Vector.h>
 #include <nova/math/nova_math_Nova_Vector.h>
 #include <nova/math/nova_math_Nova_Vector.h>
 #include <nova/NativeObject.h>
@@ -82,5 +85,21 @@ nova_math_Nova_Vector3D* nova_math_Nova_Vector3DFunctionMap_functionMapVector3DF
 nova_math_Nova_Vector3D* nova_math_Nova_Vector3DFunctionMap_functionMapVector3DFunctionMap1_Nova_construct(nova_math_Nova_Vector3DFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, double x, double y, double z);
 nova_math_Nova_Vector3D* nova_math_Nova_Vector3DFunctionMap_functionMap_Nova_crossProduct(nova_math_Nova_Vector3DFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_math_Nova_Vector3D* reference, nova_math_Nova_Vector3D* other);
 void nova_math_Nova_Vector3DFunctionMap_Nova_super(nova_math_Nova_Vector3DFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+
+CCLASS_CLASS
+(
+	nova_math_Nova_Vector3DPropertyMap, 
+	
+	nova_math_Vector3D_Vector3DPropertyMap_Extension_VTable* vtable;
+)
+
+void nova_math_Nova_Vector3DPropertyMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData);
+nova_math_Nova_Vector3DPropertyMap* nova_math_Nova_Vector3DPropertyMap_Nova_construct(nova_math_Nova_Vector3DPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+void nova_math_Nova_Vector3DPropertyMap_Nova_destroy(nova_math_Nova_Vector3DPropertyMap** this, nova_exception_Nova_ExceptionData* exceptionData);
+void nova_math_Nova_Vector3DPropertyMap_Nova_this(nova_math_Nova_Vector3DPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+double nova_math_Nova_Vector3DPropertyMap_functionMap_Nova_x(nova_math_Nova_Vector3DPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_math_Nova_Vector3D* reference);
+double nova_math_Nova_Vector3DPropertyMap_functionMap_Nova_y(nova_math_Nova_Vector3DPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_math_Nova_Vector3D* reference);
+double nova_math_Nova_Vector3DPropertyMap_functionMap_Nova_z(nova_math_Nova_Vector3DPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_math_Nova_Vector3D* reference);
+void nova_math_Nova_Vector3DPropertyMap_Nova_super(nova_math_Nova_Vector3DPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData);
 
 #endif

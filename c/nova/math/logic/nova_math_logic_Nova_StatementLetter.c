@@ -29,7 +29,9 @@
 #include <nova/nova_Nova_System.h>
 #include <nova/meta/nova_meta_Nova_Class.h>
 #include <nova/meta/nova_meta_Nova_FunctionMap.h>
+#include <nova/meta/nova_meta_Nova_PropertyMap.h>
 #include <nova/regex/nova_regex_Nova_Pattern.h>
+#include <nova/math/logic/nova_math_logic_Nova_StatementComponent.h>
 #include <nova/math/logic/nova_math_logic_Nova_StatementComponent.h>
 #include <nova/math/logic/nova_math_logic_Nova_StatementComponent.h>
 #include <nova/NativeObject.h>
@@ -133,6 +135,47 @@ nova_math_logic_Nova_StatementLetter* nova_math_logic_Nova_StatementLetterFuncti
 }
 
 void nova_math_logic_Nova_StatementLetterFunctionMap_Nova_super(nova_math_logic_Nova_StatementLetterFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+}
+
+void nova_math_logic_Nova_StatementLetterPropertyMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData)
+{
+	{
+	}
+}
+
+nova_math_logic_Nova_StatementLetterPropertyMap* nova_math_logic_Nova_StatementLetterPropertyMap_Nova_construct(nova_math_logic_Nova_StatementLetterPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+	CCLASS_NEW(nova_math_logic_Nova_StatementLetterPropertyMap, this,);
+	this->vtable = &nova_math_logic_StatementLetter_StatementLetterPropertyMap_Extension_VTable_val;
+	nova_Nova_Object_Nova_super((nova_Nova_Object*)this, exceptionData);
+	nova_meta_Nova_PropertyMap_Nova_super((nova_meta_Nova_PropertyMap*)this, exceptionData);
+	nova_math_logic_Nova_StatementComponentPropertyMap_Nova_super((nova_math_logic_Nova_StatementComponentPropertyMap*)this, exceptionData);
+	nova_math_logic_Nova_StatementLetterPropertyMap_Nova_super(this, exceptionData);
+	
+	{
+		nova_math_logic_Nova_StatementLetterPropertyMap_Nova_this(this, exceptionData);
+	}
+	
+	return this;
+}
+
+void nova_math_logic_Nova_StatementLetterPropertyMap_Nova_destroy(nova_math_logic_Nova_StatementLetterPropertyMap** this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+	if (!*this)
+	{
+		return;
+	}
+	
+	
+	NOVA_FREE(*this);
+}
+
+void nova_math_logic_Nova_StatementLetterPropertyMap_Nova_this(nova_math_logic_Nova_StatementLetterPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+}
+
+void nova_math_logic_Nova_StatementLetterPropertyMap_Nova_super(nova_math_logic_Nova_StatementLetterPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
 }
 

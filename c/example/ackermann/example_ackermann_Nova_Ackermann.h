@@ -3,6 +3,7 @@
 
 typedef struct example_ackermann_Nova_Ackermann example_ackermann_Nova_Ackermann;
 typedef struct example_ackermann_Nova_AckermannFunctionMap example_ackermann_Nova_AckermannFunctionMap;
+typedef struct example_ackermann_Nova_AckermannPropertyMap example_ackermann_Nova_AckermannPropertyMap;
 
 
 #include <Nova.h>
@@ -39,6 +40,7 @@ typedef struct example_ackermann_Nova_AckermannFunctionMap example_ackermann_Nov
 #include <nova/nova_Nova_System.h>
 #include <nova/meta/nova_meta_Nova_Class.h>
 #include <nova/meta/nova_meta_Nova_FunctionMap.h>
+#include <nova/meta/nova_meta_Nova_PropertyMap.h>
 #include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <nova/NativeObject.h>
 
@@ -74,5 +76,18 @@ void example_ackermann_Nova_AckermannFunctionMap_functionMap_static_Nova_main(ex
 int example_ackermann_Nova_AckermannFunctionMap_functionMap_static_Nova_run(example_ackermann_Nova_AckermannFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, int m, int n);
 int example_ackermann_Nova_AckermannFunctionMap_functionMap_static_Nova_run2(example_ackermann_Nova_AckermannFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, int m, int n);
 void example_ackermann_Nova_AckermannFunctionMap_Nova_super(example_ackermann_Nova_AckermannFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+
+CCLASS_CLASS
+(
+	example_ackermann_Nova_AckermannPropertyMap, 
+	
+	example_ackermann_Ackermann_AckermannPropertyMap_Extension_VTable* vtable;
+)
+
+void example_ackermann_Nova_AckermannPropertyMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData);
+example_ackermann_Nova_AckermannPropertyMap* example_ackermann_Nova_AckermannPropertyMap_Nova_construct(example_ackermann_Nova_AckermannPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+void example_ackermann_Nova_AckermannPropertyMap_Nova_destroy(example_ackermann_Nova_AckermannPropertyMap** this, nova_exception_Nova_ExceptionData* exceptionData);
+void example_ackermann_Nova_AckermannPropertyMap_Nova_this(example_ackermann_Nova_AckermannPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+void example_ackermann_Nova_AckermannPropertyMap_Nova_super(example_ackermann_Nova_AckermannPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData);
 
 #endif

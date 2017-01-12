@@ -3,6 +3,7 @@
 
 typedef struct nova_io_Nova_FileNotFoundException nova_io_Nova_FileNotFoundException;
 typedef struct nova_io_Nova_FileNotFoundExceptionFunctionMap nova_io_Nova_FileNotFoundExceptionFunctionMap;
+typedef struct nova_io_Nova_FileNotFoundExceptionPropertyMap nova_io_Nova_FileNotFoundExceptionPropertyMap;
 
 
 #include <Nova.h>
@@ -39,8 +40,10 @@ typedef struct nova_io_Nova_FileNotFoundExceptionFunctionMap nova_io_Nova_FileNo
 #include <nova/nova_Nova_System.h>
 #include <nova/meta/nova_meta_Nova_Class.h>
 #include <nova/meta/nova_meta_Nova_FunctionMap.h>
+#include <nova/meta/nova_meta_Nova_PropertyMap.h>
 #include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <nova/io/nova_io_Nova_File.h>
+#include <nova/exception/nova_exception_Nova_Exception.h>
 #include <nova/exception/nova_exception_Nova_Exception.h>
 #include <nova/NativeObject.h>
 
@@ -71,5 +74,18 @@ void nova_io_Nova_FileNotFoundExceptionFunctionMap_Nova_destroy(nova_io_Nova_Fil
 void nova_io_Nova_FileNotFoundExceptionFunctionMap_Nova_this(nova_io_Nova_FileNotFoundExceptionFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
 nova_io_Nova_FileNotFoundException* nova_io_Nova_FileNotFoundExceptionFunctionMap_functionMapFileNotFoundExceptionFunctionMap_Nova_construct(nova_io_Nova_FileNotFoundExceptionFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_io_Nova_File* file);
 void nova_io_Nova_FileNotFoundExceptionFunctionMap_Nova_super(nova_io_Nova_FileNotFoundExceptionFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+
+CCLASS_CLASS
+(
+	nova_io_Nova_FileNotFoundExceptionPropertyMap, 
+	
+	nova_io_FileNotFoundException_FileNotFoundExceptionPropertyMap_Extension_VTable* vtable;
+)
+
+void nova_io_Nova_FileNotFoundExceptionPropertyMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData);
+nova_io_Nova_FileNotFoundExceptionPropertyMap* nova_io_Nova_FileNotFoundExceptionPropertyMap_Nova_construct(nova_io_Nova_FileNotFoundExceptionPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+void nova_io_Nova_FileNotFoundExceptionPropertyMap_Nova_destroy(nova_io_Nova_FileNotFoundExceptionPropertyMap** this, nova_exception_Nova_ExceptionData* exceptionData);
+void nova_io_Nova_FileNotFoundExceptionPropertyMap_Nova_this(nova_io_Nova_FileNotFoundExceptionPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+void nova_io_Nova_FileNotFoundExceptionPropertyMap_Nova_super(nova_io_Nova_FileNotFoundExceptionPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData);
 
 #endif

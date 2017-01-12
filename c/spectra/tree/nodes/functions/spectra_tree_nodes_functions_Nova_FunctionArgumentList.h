@@ -3,6 +3,7 @@
 
 typedef struct spectra_tree_nodes_functions_Nova_FunctionArgumentList spectra_tree_nodes_functions_Nova_FunctionArgumentList;
 typedef struct spectra_tree_nodes_functions_Nova_FunctionArgumentListFunctionMap spectra_tree_nodes_functions_Nova_FunctionArgumentListFunctionMap;
+typedef struct spectra_tree_nodes_functions_Nova_FunctionArgumentListPropertyMap spectra_tree_nodes_functions_Nova_FunctionArgumentListPropertyMap;
 
 
 #include <Nova.h>
@@ -39,14 +40,18 @@ typedef struct spectra_tree_nodes_functions_Nova_FunctionArgumentListFunctionMap
 #include <nova/nova_Nova_System.h>
 #include <nova/meta/nova_meta_Nova_Class.h>
 #include <nova/meta/nova_meta_Nova_FunctionMap.h>
+#include <nova/meta/nova_meta_Nova_PropertyMap.h>
 #include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <spectra/tree/nodes/spectra_tree_nodes_Nova_Node.h>
 #include <spectra/tree/nodes/spectra_tree_nodes_Nova_ArgumentList.h>
 #include <spectra/util/spectra_util_Nova_Location.h>
 #include <spectra/tree/nodes/spectra_tree_nodes_Nova_ArgumentList.h>
+#include <spectra/tree/nodes/spectra_tree_nodes_Nova_ArgumentList.h>
 #include <spectra/tree/nodes/spectra_tree_nodes_Nova_NodeList.h>
 #include <spectra/tree/nodes/spectra_tree_nodes_Nova_Value.h>
 #include <spectra/tree/nodes/spectra_tree_nodes_Nova_NodeList.h>
+#include <spectra/tree/nodes/spectra_tree_nodes_Nova_NodeList.h>
+#include <spectra/tree/nodes/spectra_tree_nodes_Nova_Node.h>
 #include <spectra/tree/nodes/spectra_tree_nodes_Nova_Node.h>
 #include <spectra/spectra_Nova_InvalidParseException.h>
 #include <spectra/spectra_Nova_SyntaxErrorException.h>
@@ -65,6 +70,7 @@ typedef struct spectra_tree_nodes_functions_Nova_FunctionArgumentListFunctionMap
 #include <spectra/tree/nodes/spectra_tree_nodes_Nova_Program.h>
 #include <spectra/tree/nodes/spectra_tree_nodes_Nova_Scope.h>
 #include <spectra/tree/nodes/spectra_tree_nodes_Nova_ValidationResult.h>
+#include <spectra/tree/nodes/annotations/spectra_tree_nodes_annotations_Nova_Annotatable.h>
 #include <spectra/tree/nodes/annotations/spectra_tree_nodes_annotations_Nova_Annotatable.h>
 #include <nova/NativeObject.h>
 
@@ -98,5 +104,18 @@ void spectra_tree_nodes_functions_Nova_FunctionArgumentListFunctionMap_Nova_dest
 void spectra_tree_nodes_functions_Nova_FunctionArgumentListFunctionMap_Nova_this(spectra_tree_nodes_functions_Nova_FunctionArgumentListFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
 spectra_tree_nodes_functions_Nova_FunctionArgumentList* spectra_tree_nodes_functions_Nova_FunctionArgumentListFunctionMap_functionMapFunctionArgumentListFunctionMap_Nova_construct(spectra_tree_nodes_functions_Nova_FunctionArgumentListFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, spectra_tree_nodes_Nova_Node* parent, spectra_util_Nova_Location* location);
 void spectra_tree_nodes_functions_Nova_FunctionArgumentListFunctionMap_Nova_super(spectra_tree_nodes_functions_Nova_FunctionArgumentListFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+
+CCLASS_CLASS
+(
+	spectra_tree_nodes_functions_Nova_FunctionArgumentListPropertyMap, 
+	
+	spectra_tree_nodes_functions_FunctionArgumentList_FunctionArgumentListPropertyMap_Extension_VTable* vtable;
+)
+
+void spectra_tree_nodes_functions_Nova_FunctionArgumentListPropertyMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData);
+spectra_tree_nodes_functions_Nova_FunctionArgumentListPropertyMap* spectra_tree_nodes_functions_Nova_FunctionArgumentListPropertyMap_Nova_construct(spectra_tree_nodes_functions_Nova_FunctionArgumentListPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+void spectra_tree_nodes_functions_Nova_FunctionArgumentListPropertyMap_Nova_destroy(spectra_tree_nodes_functions_Nova_FunctionArgumentListPropertyMap** this, nova_exception_Nova_ExceptionData* exceptionData);
+void spectra_tree_nodes_functions_Nova_FunctionArgumentListPropertyMap_Nova_this(spectra_tree_nodes_functions_Nova_FunctionArgumentListPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+void spectra_tree_nodes_functions_Nova_FunctionArgumentListPropertyMap_Nova_super(spectra_tree_nodes_functions_Nova_FunctionArgumentListPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData);
 
 #endif

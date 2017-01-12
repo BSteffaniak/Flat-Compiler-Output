@@ -29,6 +29,7 @@
 #include <nova/nova_Nova_System.h>
 #include <nova/meta/nova_meta_Nova_Class.h>
 #include <nova/meta/nova_meta_Nova_FunctionMap.h>
+#include <nova/meta/nova_meta_Nova_PropertyMap.h>
 #include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <nova/NativeObject.h>
 
@@ -115,6 +116,46 @@ nova_math_Nova_GeometricSequence* nova_math_Nova_GeometricSequenceFunctionMap_fu
 }
 
 void nova_math_Nova_GeometricSequenceFunctionMap_Nova_super(nova_math_Nova_GeometricSequenceFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+}
+
+void nova_math_Nova_GeometricSequencePropertyMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData)
+{
+	{
+	}
+}
+
+nova_math_Nova_GeometricSequencePropertyMap* nova_math_Nova_GeometricSequencePropertyMap_Nova_construct(nova_math_Nova_GeometricSequencePropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+	CCLASS_NEW(nova_math_Nova_GeometricSequencePropertyMap, this,);
+	this->vtable = &nova_math_GeometricSequence_GeometricSequencePropertyMap_Extension_VTable_val;
+	nova_Nova_Object_Nova_super((nova_Nova_Object*)this, exceptionData);
+	nova_meta_Nova_PropertyMap_Nova_super((nova_meta_Nova_PropertyMap*)this, exceptionData);
+	nova_math_Nova_GeometricSequencePropertyMap_Nova_super(this, exceptionData);
+	
+	{
+		nova_math_Nova_GeometricSequencePropertyMap_Nova_this(this, exceptionData);
+	}
+	
+	return this;
+}
+
+void nova_math_Nova_GeometricSequencePropertyMap_Nova_destroy(nova_math_Nova_GeometricSequencePropertyMap** this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+	if (!*this)
+	{
+		return;
+	}
+	
+	
+	NOVA_FREE(*this);
+}
+
+void nova_math_Nova_GeometricSequencePropertyMap_Nova_this(nova_math_Nova_GeometricSequencePropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+}
+
+void nova_math_Nova_GeometricSequencePropertyMap_Nova_super(nova_math_Nova_GeometricSequencePropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
 }
 

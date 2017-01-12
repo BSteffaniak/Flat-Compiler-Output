@@ -29,15 +29,23 @@
 #include <nova/nova_Nova_System.h>
 #include <nova/meta/nova_meta_Nova_Class.h>
 #include <nova/meta/nova_meta_Nova_FunctionMap.h>
+#include <nova/meta/nova_meta_Nova_PropertyMap.h>
 #include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_CharArrayIterator.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_CharArray.h>
+#include <nova/datastruct/list/nova_datastruct_list_Nova_CharArray.h>
+#include <nova/datastruct/list/nova_datastruct_list_Nova_Array.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_Array.h>
 #include <nova/datastruct/nova_datastruct_Nova_Comparable.h>
 #include <nova/operators/nova_operators_Nova_PlusOperator.h>
 #include <nova/operators/nova_operators_Nova_PlusEqualsOperator.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_ArrayIterator.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_OrderedList.h>
+#include <nova/datastruct/list/nova_datastruct_list_Nova_List.h>
+#include <nova/datastruct/list/nova_datastruct_list_Nova_OrderedList.h>
+#include <nova/operators/nova_operators_Nova_PlusOperator.h>
+#include <nova/operators/nova_operators_Nova_PlusEqualsOperator.h>
+#include <nova/datastruct/list/nova_datastruct_list_Nova_Iterable.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_List.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_OrderedList.h>
 #include <nova/operators/nova_operators_Nova_PlusOperator.h>
@@ -98,7 +106,7 @@ void nova_datastruct_list_Nova_StringCharArray_Nova_destroy(nova_datastruct_list
 
 void nova_datastruct_list_Nova_StringCharArray_0_Nova_this(nova_datastruct_list_Nova_StringCharArray* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_list_Nova_CharArray* data)
 {
-	nova_datastruct_list_Nova_CharArray_1_Nova_this((nova_datastruct_list_Nova_CharArray*)(this), exceptionData, (char*)(data->nova_datastruct_list_Nova_Array_Nova_data), nova_datastruct_list_Nova_Array_Accessorfunc_Nova_count((nova_datastruct_list_Nova_Array*)(data), exceptionData));
+	nova_datastruct_list_Nova_CharArray_1_Nova_this((nova_datastruct_list_Nova_CharArray*)(this), exceptionData, (char*)(data->nova_datastruct_list_Nova_Array_Nova_data), nova_datastruct_list_Nova_List_virtual_Accessor_Nova_count((nova_datastruct_list_Nova_List*)(data), exceptionData));
 }
 
 void nova_datastruct_list_Nova_StringCharArray_1_Nova_this(nova_datastruct_list_Nova_StringCharArray* this, nova_exception_Nova_ExceptionData* exceptionData, char* data, int count)
@@ -159,6 +167,48 @@ nova_datastruct_list_Nova_StringCharArray* nova_datastruct_list_Nova_StringCharA
 }
 
 void nova_datastruct_list_Nova_StringCharArrayFunctionMap_Nova_super(nova_datastruct_list_Nova_StringCharArrayFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+}
+
+void nova_datastruct_list_Nova_StringCharArrayPropertyMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData)
+{
+	{
+	}
+}
+
+nova_datastruct_list_Nova_StringCharArrayPropertyMap* nova_datastruct_list_Nova_StringCharArrayPropertyMap_Nova_construct(nova_datastruct_list_Nova_StringCharArrayPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+	CCLASS_NEW(nova_datastruct_list_Nova_StringCharArrayPropertyMap, this,);
+	this->vtable = &nova_datastruct_list_StringCharArray_StringCharArrayPropertyMap_Extension_VTable_val;
+	nova_Nova_Object_Nova_super((nova_Nova_Object*)this, exceptionData);
+	nova_meta_Nova_PropertyMap_Nova_super((nova_meta_Nova_PropertyMap*)this, exceptionData);
+	nova_datastruct_list_Nova_ArrayPropertyMap_Nova_super((nova_datastruct_list_Nova_ArrayPropertyMap*)this, exceptionData);
+	nova_datastruct_list_Nova_CharArrayPropertyMap_Nova_super((nova_datastruct_list_Nova_CharArrayPropertyMap*)this, exceptionData);
+	nova_datastruct_list_Nova_StringCharArrayPropertyMap_Nova_super(this, exceptionData);
+	
+	{
+		nova_datastruct_list_Nova_StringCharArrayPropertyMap_Nova_this(this, exceptionData);
+	}
+	
+	return this;
+}
+
+void nova_datastruct_list_Nova_StringCharArrayPropertyMap_Nova_destroy(nova_datastruct_list_Nova_StringCharArrayPropertyMap** this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+	if (!*this)
+	{
+		return;
+	}
+	
+	
+	NOVA_FREE(*this);
+}
+
+void nova_datastruct_list_Nova_StringCharArrayPropertyMap_Nova_this(nova_datastruct_list_Nova_StringCharArrayPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+}
+
+void nova_datastruct_list_Nova_StringCharArrayPropertyMap_Nova_super(nova_datastruct_list_Nova_StringCharArrayPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
 }
 

@@ -3,6 +3,7 @@
 
 typedef struct example_Nova_Test example_Nova_Test;
 typedef struct example_Nova_TestFunctionMap example_Nova_TestFunctionMap;
+typedef struct example_Nova_TestPropertyMap example_Nova_TestPropertyMap;
 
 
 #include <Nova.h>
@@ -39,6 +40,7 @@ typedef struct example_Nova_TestFunctionMap example_Nova_TestFunctionMap;
 #include <nova/nova_Nova_System.h>
 #include <nova/meta/nova_meta_Nova_Class.h>
 #include <nova/meta/nova_meta_Nova_FunctionMap.h>
+#include <nova/meta/nova_meta_Nova_PropertyMap.h>
 #include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_Stack.h>
 #include <nova/NativeObject.h>
@@ -71,5 +73,18 @@ void example_Nova_TestFunctionMap_Nova_this(example_Nova_TestFunctionMap* this, 
 example_Nova_Test* example_Nova_TestFunctionMap_functionMapTestFunctionMap_Nova_construct(example_Nova_TestFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
 void example_Nova_TestFunctionMap_functionMap_static_Nova_main(example_Nova_TestFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_list_Nova_Array* args);
 void example_Nova_TestFunctionMap_Nova_super(example_Nova_TestFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+
+CCLASS_CLASS
+(
+	example_Nova_TestPropertyMap, 
+	
+	example_Test_TestPropertyMap_Extension_VTable* vtable;
+)
+
+void example_Nova_TestPropertyMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData);
+example_Nova_TestPropertyMap* example_Nova_TestPropertyMap_Nova_construct(example_Nova_TestPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+void example_Nova_TestPropertyMap_Nova_destroy(example_Nova_TestPropertyMap** this, nova_exception_Nova_ExceptionData* exceptionData);
+void example_Nova_TestPropertyMap_Nova_this(example_Nova_TestPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+void example_Nova_TestPropertyMap_Nova_super(example_Nova_TestPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData);
 
 #endif

@@ -29,12 +29,13 @@
 #include <nova/nova_Nova_System.h>
 #include <nova/meta/nova_meta_Nova_Class.h>
 #include <nova/meta/nova_meta_Nova_FunctionMap.h>
+#include <nova/meta/nova_meta_Nova_PropertyMap.h>
 #include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <nova/NativeObject.h>
 
 typedef struct
 {
-} Context101;
+} Context104;
 
 
 
@@ -45,14 +46,14 @@ long_long nova_security_Nova_Sha256_Nova_l3(nova_security_Nova_Sha256* this, nov
 long_long nova_security_Nova_Sha256_Nova_l4(nova_security_Nova_Sha256* this, nova_exception_Nova_ExceptionData* exceptionData, long_long x);
 long_long nova_security_Nova_Sha256_Nova_l5(nova_security_Nova_Sha256* this, nova_exception_Nova_ExceptionData* exceptionData, long_long x, long_long y, long_long z);
 long_long nova_security_Nova_Sha256_Nova_l6(nova_security_Nova_Sha256* this, nova_exception_Nova_ExceptionData* exceptionData, long_long x, long_long y, long_long z);
-nova_datastruct_list_Nova_Array* generated16(nova_security_Nova_Sha256* this, nova_exception_Nova_ExceptionData* exceptionData);
-nova_datastruct_list_Nova_Array* generated29(nova_security_Nova_Sha256* this, nova_exception_Nova_ExceptionData* exceptionData);
-nova_datastruct_list_Nova_IntArray* nova_security_Nova_Sha256_Nova_lambda102(nova_security_Nova_Sha256* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_list_Nova_IntArray* _1, int _2, nova_datastruct_list_Nova_Array* _3, Context101* context);
+nova_datastruct_list_Nova_Array* generated27(nova_security_Nova_Sha256* this, nova_exception_Nova_ExceptionData* exceptionData);
+nova_datastruct_list_Nova_Array* generated40(nova_security_Nova_Sha256* this, nova_exception_Nova_ExceptionData* exceptionData);
+nova_datastruct_list_Nova_IntArray* nova_security_Nova_Sha256_Nova_lambda105(nova_security_Nova_Sha256* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_list_Nova_IntArray* _1, int _2, nova_datastruct_list_Nova_Array* _3, Context104* context);
 nova_datastruct_list_Nova_Array* nova_security_Nova_Sha256_Nova_CONSTANTS;
 void nova_security_Nova_Sha256_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData)
 {
 	{
-		nova_security_Nova_Sha256_Nova_CONSTANTS = generated16(0, exceptionData);
+		nova_security_Nova_Sha256_Nova_CONSTANTS = generated27(0, exceptionData);
 	}
 }
 
@@ -87,16 +88,16 @@ nova_Nova_String* nova_security_Nova_Sha256_Nova_digest(nova_security_Nova_Sha25
 	int l1_Nova_l = 0;
 	int l1_Nova_n = 0;
 	nova_datastruct_list_Nova_Array* l1_Nova_M = (nova_datastruct_list_Nova_Array*)nova_null;
-	Context101* contextArg102 = NOVA_MALLOC(sizeof(Context101));
+	Context104* contextArg105 = NOVA_MALLOC(sizeof(Context104));
 	long_long nova_zero_check3 = 0;
 	long_long nova_zero_check4 = 0;
 	int l3_Nova_i = 0;
 	int l11_Nova_i = 0;
 	
-	l1_Nova_hash = generated29(this, exceptionData);
+	l1_Nova_hash = generated40(this, exceptionData);
 	l1_Nova_l = msg->nova_Nova_String_Nova_count / 4 + 2;
 	l1_Nova_n = (int)(nova_math_Nova_Math_static_Nova_ceil(0, exceptionData, l1_Nova_l / 16));
-	l1_Nova_M = (nova_datastruct_list_Nova_Array*)(nova_datastruct_list_Nova_Array_0_Nova_map((nova_datastruct_list_Nova_Array*)(nova_datastruct_list_Nova_Array_1_Nova_construct(0, exceptionData, l1_Nova_n, (intptr_t)nova_null)), exceptionData, (nova_datastruct_list_Nova_Array_closure104_Nova_mapFunc)&nova_security_Nova_Sha256_Nova_lambda102, this, contextArg102));
+	l1_Nova_M = (nova_datastruct_list_Nova_Array*)(nova_datastruct_list_Nova_Array_0_Nova_map((nova_datastruct_list_Nova_Array*)(nova_datastruct_list_Nova_Array_1_Nova_construct(0, exceptionData, l1_Nova_n, (intptr_t)nova_null)), exceptionData, (nova_datastruct_list_Nova_Array_closure104_Nova_mapFunc)&nova_security_Nova_Sha256_Nova_lambda105, this, contextArg105));
 	l3_Nova_i = (int)0;
 	for (; l3_Nova_i < (int)l1_Nova_n; l3_Nova_i++)
 	{
@@ -181,7 +182,7 @@ void nova_security_Nova_Sha256_Nova_this(nova_security_Nova_Sha256* this, nova_e
 {
 }
 
-nova_datastruct_list_Nova_Array* generated16(nova_security_Nova_Sha256* this, nova_exception_Nova_ExceptionData* exceptionData)
+nova_datastruct_list_Nova_Array* generated27(nova_security_Nova_Sha256* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
 	long_long* l1_Nova_temp = (long_long*)nova_null;
 	
@@ -253,7 +254,7 @@ nova_datastruct_list_Nova_Array* generated16(nova_security_Nova_Sha256* this, no
 	return nova_datastruct_list_Nova_Array_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)&(l1_Nova_temp), 64);
 }
 
-nova_datastruct_list_Nova_Array* generated29(nova_security_Nova_Sha256* this, nova_exception_Nova_ExceptionData* exceptionData)
+nova_datastruct_list_Nova_Array* generated40(nova_security_Nova_Sha256* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
 	long_long* l1_Nova_temp = (long_long*)nova_null;
 	
@@ -269,7 +270,7 @@ nova_datastruct_list_Nova_Array* generated29(nova_security_Nova_Sha256* this, no
 	return nova_datastruct_list_Nova_Array_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)&(l1_Nova_temp), 8);
 }
 
-nova_datastruct_list_Nova_IntArray* nova_security_Nova_Sha256_Nova_lambda102(nova_security_Nova_Sha256* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_list_Nova_IntArray* _1, int _2, nova_datastruct_list_Nova_Array* _3, Context101* context)
+nova_datastruct_list_Nova_IntArray* nova_security_Nova_Sha256_Nova_lambda105(nova_security_Nova_Sha256* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_list_Nova_IntArray* _1, int _2, nova_datastruct_list_Nova_Array* _3, Context104* context)
 {
 	return nova_datastruct_list_Nova_IntArray_1_Nova_construct(0, exceptionData, 16);
 }
@@ -368,6 +369,46 @@ long_long nova_security_Nova_Sha256FunctionMap_functionMap_Nova_l6(nova_security
 }
 
 void nova_security_Nova_Sha256FunctionMap_Nova_super(nova_security_Nova_Sha256FunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+}
+
+void nova_security_Nova_Sha256PropertyMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData)
+{
+	{
+	}
+}
+
+nova_security_Nova_Sha256PropertyMap* nova_security_Nova_Sha256PropertyMap_Nova_construct(nova_security_Nova_Sha256PropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+	CCLASS_NEW(nova_security_Nova_Sha256PropertyMap, this,);
+	this->vtable = &nova_security_Sha256_Sha256PropertyMap_Extension_VTable_val;
+	nova_Nova_Object_Nova_super((nova_Nova_Object*)this, exceptionData);
+	nova_meta_Nova_PropertyMap_Nova_super((nova_meta_Nova_PropertyMap*)this, exceptionData);
+	nova_security_Nova_Sha256PropertyMap_Nova_super(this, exceptionData);
+	
+	{
+		nova_security_Nova_Sha256PropertyMap_Nova_this(this, exceptionData);
+	}
+	
+	return this;
+}
+
+void nova_security_Nova_Sha256PropertyMap_Nova_destroy(nova_security_Nova_Sha256PropertyMap** this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+	if (!*this)
+	{
+		return;
+	}
+	
+	
+	NOVA_FREE(*this);
+}
+
+void nova_security_Nova_Sha256PropertyMap_Nova_this(nova_security_Nova_Sha256PropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+}
+
+void nova_security_Nova_Sha256PropertyMap_Nova_super(nova_security_Nova_Sha256PropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
 }
 

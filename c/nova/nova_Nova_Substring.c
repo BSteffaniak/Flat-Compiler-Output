@@ -29,8 +29,10 @@
 #include <nova/nova_Nova_System.h>
 #include <nova/meta/nova_meta_Nova_Class.h>
 #include <nova/meta/nova_meta_Nova_FunctionMap.h>
+#include <nova/meta/nova_meta_Nova_PropertyMap.h>
 #include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_StringCharArray.h>
+#include <nova/nova_Nova_String.h>
 #include <nova/nova_Nova_String.h>
 #include <nova/datastruct/nova_datastruct_Nova_Comparable.h>
 #include <nova/operators/nova_operators_Nova_PlusOperator.h>
@@ -39,6 +41,10 @@
 #include <nova/regex/nova_regex_Nova_Regex.h>
 #include <nova/regex/nova_regex_Nova_Match.h>
 #include <nova/nova_Nova_Substring.h>
+#include <nova/datastruct/nova_datastruct_Nova_Comparable.h>
+#include <nova/operators/nova_operators_Nova_PlusOperator.h>
+#include <nova/operators/nova_operators_Nova_EqualsOperator.h>
+#include <nova/operators/nova_operators_Nova_MultiplyOperator.h>
 #include <nova/datastruct/nova_datastruct_Nova_Comparable.h>
 #include <nova/operators/nova_operators_Nova_PlusOperator.h>
 #include <nova/operators/nova_operators_Nova_EqualsOperator.h>
@@ -191,6 +197,67 @@ nova_Nova_String* nova_Nova_SubstringFunctionMap_functionMap_Nova_substring(nova
 }
 
 void nova_Nova_SubstringFunctionMap_Nova_super(nova_Nova_SubstringFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+}
+
+void nova_Nova_SubstringPropertyMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData)
+{
+	{
+	}
+}
+
+nova_Nova_SubstringPropertyMap* nova_Nova_SubstringPropertyMap_Nova_construct(nova_Nova_SubstringPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+	CCLASS_NEW(nova_Nova_SubstringPropertyMap, this,);
+	this->vtable = &nova_Substring_SubstringPropertyMap_Extension_VTable_val;
+	nova_Nova_Object_Nova_super((nova_Nova_Object*)this, exceptionData);
+	nova_meta_Nova_PropertyMap_Nova_super((nova_meta_Nova_PropertyMap*)this, exceptionData);
+	nova_Nova_StringPropertyMap_Nova_super((nova_Nova_StringPropertyMap*)this, exceptionData);
+	nova_Nova_SubstringPropertyMap_Nova_super(this, exceptionData);
+	
+	{
+		nova_Nova_SubstringPropertyMap_Nova_this(this, exceptionData);
+	}
+	
+	return this;
+}
+
+void nova_Nova_SubstringPropertyMap_Nova_destroy(nova_Nova_SubstringPropertyMap** this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+	if (!*this)
+	{
+		return;
+	}
+	
+	
+	NOVA_FREE(*this);
+}
+
+void nova_Nova_SubstringPropertyMap_Nova_this(nova_Nova_SubstringPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+}
+
+nova_Nova_String* nova_Nova_SubstringPropertyMap_functionMap_Nova_source(nova_Nova_SubstringPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_Substring* reference)
+{
+	return reference->nova_Nova_Substring_Nova_source;
+}
+
+int nova_Nova_SubstringPropertyMap_functionMap_Nova_start(nova_Nova_SubstringPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_Substring* reference)
+{
+	return reference->nova_Nova_Substring_Nova_start;
+}
+
+int nova_Nova_SubstringPropertyMap_functionMap_Nova_end(nova_Nova_SubstringPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_Substring* reference)
+{
+	return nova_Nova_Substring_Accessor_Nova_end(reference, exceptionData);
+}
+
+long_long nova_Nova_SubstringPropertyMap_functionMap_Nova_hashCodeLong(nova_Nova_SubstringPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_Substring* reference)
+{
+	return nova_Nova_Substring_Accessor_Nova_hashCodeLong(reference, exceptionData);
+}
+
+void nova_Nova_SubstringPropertyMap_Nova_super(nova_Nova_SubstringPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
 }
 

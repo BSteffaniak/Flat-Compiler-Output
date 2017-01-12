@@ -29,6 +29,7 @@
 #include <nova/nova_Nova_System.h>
 #include <nova/meta/nova_meta_Nova_Class.h>
 #include <nova/meta/nova_meta_Nova_FunctionMap.h>
+#include <nova/meta/nova_meta_Nova_PropertyMap.h>
 #include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <spectra/tree/nodes/spectra_tree_nodes_Nova_Node.h>
 #include <spectra/tree/nodes/spectra_tree_nodes_Nova_Identifier.h>
@@ -41,16 +42,17 @@
 #include <spectra/tree/nodes/functions/spectra_tree_nodes_functions_Nova_Parameter.h>
 #include <spectra/tree/nodes/functions/spectra_tree_nodes_functions_Nova_ParameterList.h>
 #include <spectra/tree/nodes/generics/spectra_tree_nodes_generics_Nova_GenericCompatible.h>
+#include <spectra/tree/nodes/generics/spectra_tree_nodes_generics_Nova_GenericCompatible.h>
 #include <nova/NativeObject.h>
 
 typedef struct
 {
 	/* Bool require = true */ int* spectra_tree_nodes_functions_Nova_CallableFunction_Nova_require;
-} Context63;
+} Context66;
 
 
 
-char spectra_tree_nodes_functions_Nova_CallableFunction_Nova_lambda64(spectra_tree_nodes_functions_Nova_CallableFunction* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* _1, int _2, nova_datastruct_list_Nova_List* _3, Context63* context);
+char spectra_tree_nodes_functions_Nova_CallableFunction_Nova_lambda67(spectra_tree_nodes_functions_Nova_CallableFunction* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* _1, int _2, nova_datastruct_list_Nova_List* _3, Context66* context);
 
 void spectra_tree_nodes_functions_Nova_CallableFunction_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData)
 {
@@ -84,11 +86,11 @@ char spectra_tree_nodes_functions_Nova_CallableFunction_Nova_parseParameterAndAn
 
 char spectra_tree_nodes_functions_Nova_CallableFunction_Nova_parseParameters(spectra_tree_nodes_functions_Nova_CallableFunction* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* parameters, int require)
 {
-	Context63* contextArg64 = NOVA_MALLOC(sizeof(Context63));
-	contextArg64->spectra_tree_nodes_functions_Nova_CallableFunction_Nova_require = &require;
+	Context66* contextArg67 = NOVA_MALLOC(sizeof(Context66));
+	contextArg67->spectra_tree_nodes_functions_Nova_CallableFunction_Nova_require = &require;
 	
 	require = (int)(require == (intptr_t)nova_null ? 1 : require);
-	return nova_datastruct_list_Nova_List_virtual0_Nova_all((nova_datastruct_list_Nova_List*)(spectra_util_Nova_CompilerStringFunctions_Nova_splitAtCommas(parameters, exceptionData, (intptr_t)nova_null, (intptr_t)nova_null)), exceptionData, (nova_datastruct_list_Nova_List_closure300_Nova_allFunc)&spectra_tree_nodes_functions_Nova_CallableFunction_Nova_lambda64, this, contextArg64, 0);
+	return nova_datastruct_list_Nova_List_virtual0_Nova_all((nova_datastruct_list_Nova_List*)(spectra_util_Nova_CompilerStringFunctions_Nova_splitAtCommas(parameters, exceptionData, (intptr_t)nova_null, (intptr_t)nova_null)), exceptionData, (nova_datastruct_list_Nova_List_closure300_Nova_allFunc)&spectra_tree_nodes_functions_Nova_CallableFunction_Nova_lambda67, this, contextArg67, 0);
 }
 
 char spectra_tree_nodes_functions_Nova_CallableFunction_Nova_compatibleArguments(spectra_tree_nodes_functions_Nova_CallableFunction* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_list_Nova_Array* arguments)
@@ -104,7 +106,7 @@ char spectra_tree_nodes_functions_Nova_CallableFunction_Nova_parseName(spectra_t
 	}
 	else
 	{
-		if (nova_datastruct_list_Nova_Array_Accessorfunc_Nova_count((nova_datastruct_list_Nova_Array*)(spectra_tree_nodes_generics_Nova_GenericCompatible_virtual_Accessor_Nova_genericParameters((spectra_tree_nodes_generics_Nova_GenericCompatible*)(this), exceptionData)), exceptionData) > 0)
+		if (nova_datastruct_list_Nova_List_virtual_Accessor_Nova_count((nova_datastruct_list_Nova_List*)(spectra_tree_nodes_generics_Nova_GenericCompatible_virtual_Accessor_Nova_genericParameters((spectra_tree_nodes_generics_Nova_GenericCompatible*)(this), exceptionData)), exceptionData) > 0)
 		{
 			name = nova_Nova_String_Nova_trim(nova_Nova_String_virtual_Nova_substring((nova_Nova_String*)(name), exceptionData, (intptr_t)nova_null, nova_Nova_String_1_Nova_indexOf(name, exceptionData, '<', (intptr_t)nova_null, (intptr_t)nova_null, (intptr_t)nova_null)), exceptionData, (intptr_t)nova_null, (intptr_t)nova_null, 0);
 		}
@@ -114,7 +116,7 @@ char spectra_tree_nodes_functions_Nova_CallableFunction_Nova_parseName(spectra_t
 	return 0;
 }
 
-char spectra_tree_nodes_functions_Nova_CallableFunction_Nova_lambda64(spectra_tree_nodes_functions_Nova_CallableFunction* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* _1, int _2, nova_datastruct_list_Nova_List* _3, Context63* context)
+char spectra_tree_nodes_functions_Nova_CallableFunction_Nova_lambda67(spectra_tree_nodes_functions_Nova_CallableFunction* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* _1, int _2, nova_datastruct_list_Nova_List* _3, Context66* context)
 {
 	return spectra_tree_nodes_functions_Nova_CallableFunction_Nova_parseParameterAndAnnotations(this, exceptionData, _1, (*context->spectra_tree_nodes_functions_Nova_CallableFunction_Nova_require));
 }
@@ -228,5 +230,60 @@ spectra_tree_nodes_functions_Nova_Parameter* spectra_tree_nodes_functions_Nova_C
 char spectra_tree_nodes_functions_Nova_CallableFunctionFunctionMap_virtualfunctionMap0_Nova_parseParameters(spectra_tree_nodes_functions_Nova_CallableFunctionFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, spectra_tree_nodes_functions_Nova_CallableFunction* reference, nova_Nova_String* parameters, char require)
 {
 	return this->vtable->itable.spectra_tree_nodes_functions_Nova_CallableFunctionFunctionMap_virtualfunctionMap0_Nova_parseParameters(this, exceptionData, reference, parameters, require);
+}
+
+void spectra_tree_nodes_functions_Nova_CallableFunctionPropertyMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData)
+{
+	{
+	}
+}
+
+spectra_tree_nodes_functions_Nova_CallableFunctionPropertyMap* spectra_tree_nodes_functions_Nova_CallableFunctionPropertyMap_Nova_construct(spectra_tree_nodes_functions_Nova_CallableFunctionPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+	CCLASS_NEW(spectra_tree_nodes_functions_Nova_CallableFunctionPropertyMap, this,);
+	this->vtable = &spectra_tree_nodes_functions_CallableFunction_CallableFunctionPropertyMap_Extension_VTable_val;
+	nova_Nova_Object_Nova_super((nova_Nova_Object*)this, exceptionData);
+	nova_meta_Nova_PropertyMap_Nova_super((nova_meta_Nova_PropertyMap*)this, exceptionData);
+	spectra_tree_nodes_functions_Nova_CallableFunctionPropertyMap_Nova_super(this, exceptionData);
+	
+	{
+		spectra_tree_nodes_functions_Nova_CallableFunctionPropertyMap_Nova_this(this, exceptionData);
+	}
+	
+	return this;
+}
+
+void spectra_tree_nodes_functions_Nova_CallableFunctionPropertyMap_Nova_destroy(spectra_tree_nodes_functions_Nova_CallableFunctionPropertyMap** this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+	if (!*this)
+	{
+		return;
+	}
+	
+	
+	NOVA_FREE(*this);
+}
+
+void spectra_tree_nodes_functions_Nova_CallableFunctionPropertyMap_Nova_this(spectra_tree_nodes_functions_Nova_CallableFunctionPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+}
+
+spectra_tree_nodes_functions_Nova_ParameterList* spectra_tree_nodes_functions_Nova_CallableFunctionPropertyMap_functionMap0_Nova_parameterList(spectra_tree_nodes_functions_Nova_CallableFunctionPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData, spectra_tree_nodes_functions_Nova_CallableFunction* reference)
+{
+	return spectra_tree_nodes_functions_Nova_CallableFunction_Accessor_Nova_parameterList(reference, exceptionData);
+}
+
+nova_datastruct_list_Nova_Array* spectra_tree_nodes_functions_Nova_CallableFunctionPropertyMap_functionMap_Nova_parameters(spectra_tree_nodes_functions_Nova_CallableFunctionPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData, spectra_tree_nodes_functions_Nova_CallableFunction* reference)
+{
+	return spectra_tree_nodes_functions_Nova_CallableFunction_Accessor_Nova_parameters(reference, exceptionData);
+}
+
+void spectra_tree_nodes_functions_Nova_CallableFunctionPropertyMap_Nova_super(spectra_tree_nodes_functions_Nova_CallableFunctionPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+}
+
+spectra_tree_nodes_functions_Nova_ParameterList* spectra_tree_nodes_functions_Nova_CallableFunctionPropertyMap_virtualfunctionMap0_Nova_parameterList(spectra_tree_nodes_functions_Nova_CallableFunctionPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData, spectra_tree_nodes_functions_Nova_CallableFunction* reference)
+{
+	return this->vtable->itable.spectra_tree_nodes_functions_Nova_CallableFunctionPropertyMap_virtualfunctionMap0_Nova_parameterList(this, exceptionData, reference);
 }
 

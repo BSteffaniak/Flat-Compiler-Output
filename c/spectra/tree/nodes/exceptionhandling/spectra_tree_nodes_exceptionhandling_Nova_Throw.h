@@ -3,6 +3,7 @@
 
 typedef struct spectra_tree_nodes_exceptionhandling_Nova_Throw spectra_tree_nodes_exceptionhandling_Nova_Throw;
 typedef struct spectra_tree_nodes_exceptionhandling_Nova_ThrowFunctionMap spectra_tree_nodes_exceptionhandling_Nova_ThrowFunctionMap;
+typedef struct spectra_tree_nodes_exceptionhandling_Nova_ThrowPropertyMap spectra_tree_nodes_exceptionhandling_Nova_ThrowPropertyMap;
 
 
 #include <Nova.h>
@@ -39,6 +40,7 @@ typedef struct spectra_tree_nodes_exceptionhandling_Nova_ThrowFunctionMap spectr
 #include <nova/nova_Nova_System.h>
 #include <nova/meta/nova_meta_Nova_Class.h>
 #include <nova/meta/nova_meta_Nova_FunctionMap.h>
+#include <nova/meta/nova_meta_Nova_PropertyMap.h>
 #include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <spectra/spectra_Nova_InvalidParseException.h>
 #include <spectra/tree/nodes/spectra_tree_nodes_Nova_Node.h>
@@ -46,6 +48,8 @@ typedef struct spectra_tree_nodes_exceptionhandling_Nova_ThrowFunctionMap spectr
 #include <spectra/util/spectra_util_Nova_Location.h>
 #include <spectra/tree/nodes/exceptionhandling/spectra_tree_nodes_exceptionhandling_Nova_ExceptionHandler.h>
 #include <spectra/tree/nodes/exceptionhandling/spectra_tree_nodes_exceptionhandling_Nova_ExceptionHandler.h>
+#include <spectra/tree/nodes/exceptionhandling/spectra_tree_nodes_exceptionhandling_Nova_ExceptionHandler.h>
+#include <spectra/tree/nodes/spectra_tree_nodes_Nova_Node.h>
 #include <spectra/tree/nodes/spectra_tree_nodes_Nova_Node.h>
 #include <spectra/spectra_Nova_SyntaxErrorException.h>
 #include <spectra/error/spectra_error_Nova_UnimplementedOperationException.h>
@@ -64,6 +68,7 @@ typedef struct spectra_tree_nodes_exceptionhandling_Nova_ThrowFunctionMap spectr
 #include <spectra/tree/nodes/spectra_tree_nodes_Nova_Program.h>
 #include <spectra/tree/nodes/spectra_tree_nodes_Nova_Scope.h>
 #include <spectra/tree/nodes/spectra_tree_nodes_Nova_ValidationResult.h>
+#include <spectra/tree/nodes/annotations/spectra_tree_nodes_annotations_Nova_Annotatable.h>
 #include <spectra/tree/nodes/annotations/spectra_tree_nodes_annotations_Nova_Annotatable.h>
 #include <nova/NativeObject.h>
 
@@ -102,5 +107,20 @@ spectra_tree_nodes_exceptionhandling_Nova_Throw* spectra_tree_nodes_exceptionhan
 spectra_tree_nodes_exceptionhandling_Nova_Throw* spectra_tree_nodes_exceptionhandling_Nova_ThrowFunctionMap_functionMap_static_Nova_parse(spectra_tree_nodes_exceptionhandling_Nova_ThrowFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* input, spectra_tree_nodes_Nova_Node* parent, spectra_util_Nova_Location* location, char require);
 nova_Nova_String* spectra_tree_nodes_exceptionhandling_Nova_ThrowFunctionMap_functionMap_Nova_writeNova(spectra_tree_nodes_exceptionhandling_Nova_ThrowFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, spectra_tree_nodes_exceptionhandling_Nova_Throw* reference);
 void spectra_tree_nodes_exceptionhandling_Nova_ThrowFunctionMap_Nova_super(spectra_tree_nodes_exceptionhandling_Nova_ThrowFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+
+CCLASS_CLASS
+(
+	spectra_tree_nodes_exceptionhandling_Nova_ThrowPropertyMap, 
+	
+	spectra_tree_nodes_exceptionhandling_Throw_ThrowPropertyMap_Extension_VTable* vtable;
+)
+
+void spectra_tree_nodes_exceptionhandling_Nova_ThrowPropertyMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData);
+spectra_tree_nodes_exceptionhandling_Nova_ThrowPropertyMap* spectra_tree_nodes_exceptionhandling_Nova_ThrowPropertyMap_Nova_construct(spectra_tree_nodes_exceptionhandling_Nova_ThrowPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+void spectra_tree_nodes_exceptionhandling_Nova_ThrowPropertyMap_Nova_destroy(spectra_tree_nodes_exceptionhandling_Nova_ThrowPropertyMap** this, nova_exception_Nova_ExceptionData* exceptionData);
+void spectra_tree_nodes_exceptionhandling_Nova_ThrowPropertyMap_Nova_this(spectra_tree_nodes_exceptionhandling_Nova_ThrowPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+char spectra_tree_nodes_exceptionhandling_Nova_ThrowPropertyMap_functionMap_Nova_soft(spectra_tree_nodes_exceptionhandling_Nova_ThrowPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData, spectra_tree_nodes_exceptionhandling_Nova_Throw* reference);
+spectra_tree_nodes_Nova_Value* spectra_tree_nodes_exceptionhandling_Nova_ThrowPropertyMap_functionMap_Nova_exception(spectra_tree_nodes_exceptionhandling_Nova_ThrowPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData, spectra_tree_nodes_exceptionhandling_Nova_Throw* reference);
+void spectra_tree_nodes_exceptionhandling_Nova_ThrowPropertyMap_Nova_super(spectra_tree_nodes_exceptionhandling_Nova_ThrowPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData);
 
 #endif

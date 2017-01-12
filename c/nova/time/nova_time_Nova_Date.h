@@ -3,6 +3,7 @@
 
 typedef struct nova_time_Nova_Date nova_time_Nova_Date;
 typedef struct nova_time_Nova_DateFunctionMap nova_time_Nova_DateFunctionMap;
+typedef struct nova_time_Nova_DatePropertyMap nova_time_Nova_DatePropertyMap;
 
 
 #include <Nova.h>
@@ -39,6 +40,7 @@ typedef struct nova_time_Nova_DateFunctionMap nova_time_Nova_DateFunctionMap;
 #include <nova/nova_Nova_System.h>
 #include <nova/meta/nova_meta_Nova_Class.h>
 #include <nova/meta/nova_meta_Nova_FunctionMap.h>
+#include <nova/meta/nova_meta_Nova_PropertyMap.h>
 #include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <nova/time/NativeDate.h>
 #include <nova/NativeObject.h>
@@ -81,5 +83,24 @@ void nova_time_Nova_DateFunctionMap_functionMap_Nova_decodeDate(nova_time_Nova_D
 void nova_time_Nova_DateFunctionMap_functionMap_Nova_updateTime(nova_time_Nova_DateFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_time_Nova_Date* reference);
 nova_Nova_String* nova_time_Nova_DateFunctionMap_functionMap_Nova_formatDate(nova_time_Nova_DateFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_time_Nova_Date* reference, nova_Nova_String* str, int first, int second, int third, int fourth, int fifth, int sixth);
 void nova_time_Nova_DateFunctionMap_Nova_super(nova_time_Nova_DateFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+
+CCLASS_CLASS
+(
+	nova_time_Nova_DatePropertyMap, 
+	
+	nova_time_Date_DatePropertyMap_Extension_VTable* vtable;
+)
+
+void nova_time_Nova_DatePropertyMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData);
+nova_time_Nova_DatePropertyMap* nova_time_Nova_DatePropertyMap_Nova_construct(nova_time_Nova_DatePropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+void nova_time_Nova_DatePropertyMap_Nova_destroy(nova_time_Nova_DatePropertyMap** this, nova_exception_Nova_ExceptionData* exceptionData);
+void nova_time_Nova_DatePropertyMap_Nova_this(nova_time_Nova_DatePropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+int nova_time_Nova_DatePropertyMap_functionMap_Nova_year(nova_time_Nova_DatePropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_time_Nova_Date* reference);
+int nova_time_Nova_DatePropertyMap_functionMap_Nova_month(nova_time_Nova_DatePropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_time_Nova_Date* reference);
+int nova_time_Nova_DatePropertyMap_functionMap_Nova_day(nova_time_Nova_DatePropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_time_Nova_Date* reference);
+int nova_time_Nova_DatePropertyMap_functionMap_Nova_hour(nova_time_Nova_DatePropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_time_Nova_Date* reference);
+int nova_time_Nova_DatePropertyMap_functionMap_Nova_minute(nova_time_Nova_DatePropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_time_Nova_Date* reference);
+int nova_time_Nova_DatePropertyMap_functionMap_Nova_second(nova_time_Nova_DatePropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_time_Nova_Date* reference);
+void nova_time_Nova_DatePropertyMap_Nova_super(nova_time_Nova_DatePropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData);
 
 #endif

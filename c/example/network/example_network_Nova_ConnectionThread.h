@@ -3,6 +3,7 @@
 
 typedef struct example_network_Nova_ConnectionThread example_network_Nova_ConnectionThread;
 typedef struct example_network_Nova_ConnectionThreadFunctionMap example_network_Nova_ConnectionThreadFunctionMap;
+typedef struct example_network_Nova_ConnectionThreadPropertyMap example_network_Nova_ConnectionThreadPropertyMap;
 
 
 #include <Nova.h>
@@ -39,8 +40,10 @@ typedef struct example_network_Nova_ConnectionThreadFunctionMap example_network_
 #include <nova/nova_Nova_System.h>
 #include <nova/meta/nova_meta_Nova_Class.h>
 #include <nova/meta/nova_meta_Nova_FunctionMap.h>
+#include <nova/meta/nova_meta_Nova_PropertyMap.h>
 #include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <nova/network/nova_network_Nova_ConnectionSocket.h>
+#include <nova/thread/nova_thread_Nova_Thread.h>
 #include <nova/thread/nova_thread_Nova_Thread.h>
 #include <nova/thread/NativeThread.h>
 #include <nova/NativeObject.h>
@@ -75,5 +78,18 @@ void example_network_Nova_ConnectionThreadFunctionMap_Nova_this(example_network_
 example_network_Nova_ConnectionThread* example_network_Nova_ConnectionThreadFunctionMap_functionMapConnectionThreadFunctionMap_Nova_construct(example_network_Nova_ConnectionThreadFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_network_Nova_ConnectionSocket* socket);
 void example_network_Nova_ConnectionThreadFunctionMap_functionMap_Nova_run(example_network_Nova_ConnectionThreadFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, example_network_Nova_ConnectionThread* reference);
 void example_network_Nova_ConnectionThreadFunctionMap_Nova_super(example_network_Nova_ConnectionThreadFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+
+CCLASS_CLASS
+(
+	example_network_Nova_ConnectionThreadPropertyMap, 
+	
+	example_network_ConnectionThread_ConnectionThreadPropertyMap_Extension_VTable* vtable;
+)
+
+void example_network_Nova_ConnectionThreadPropertyMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData);
+example_network_Nova_ConnectionThreadPropertyMap* example_network_Nova_ConnectionThreadPropertyMap_Nova_construct(example_network_Nova_ConnectionThreadPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+void example_network_Nova_ConnectionThreadPropertyMap_Nova_destroy(example_network_Nova_ConnectionThreadPropertyMap** this, nova_exception_Nova_ExceptionData* exceptionData);
+void example_network_Nova_ConnectionThreadPropertyMap_Nova_this(example_network_Nova_ConnectionThreadPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+void example_network_Nova_ConnectionThreadPropertyMap_Nova_super(example_network_Nova_ConnectionThreadPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData);
 
 #endif
