@@ -3042,9 +3042,6 @@ nova_Interface_VTable itable;
 nova_Nova_Object* (*nova_Nova_Object_virtual_static_Nova_default)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
-nova_Nova_String* (*nova_Nova_StringFunctionMap_virtualfunctionMap_Nova_concat)(nova_Nova_StringFunctionMap*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, nova_Nova_String*);
-nova_Nova_String* (*nova_Nova_StringFunctionMap_virtualfunctionMap_Nova_substring)(nova_Nova_StringFunctionMap*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, int, int);
-nova_Nova_String* (*nova_Nova_StringFunctionMap_virtualfunctionMap_Nova_toString)(nova_Nova_StringFunctionMap*, nova_exception_Nova_ExceptionData*, nova_Nova_String*);
 };
 
 
@@ -3055,7 +3052,6 @@ nova_Interface_VTable itable;
 nova_Nova_Object* (*nova_Nova_Object_virtual_static_Nova_default)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
-long_long (*nova_Nova_StringPropertyMap_virtualfunctionMap_Nova_hashCodeLong)(nova_Nova_StringPropertyMap*, nova_exception_Nova_ExceptionData*, nova_Nova_String*);
 };
 
 
@@ -3078,9 +3074,6 @@ nova_Interface_VTable itable;
 nova_Nova_Object* (*nova_Nova_Object_virtual_static_Nova_default)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
-nova_Nova_String* (*nova_Nova_StringFunctionMap_virtualfunctionMap_Nova_concat)(nova_Nova_StringFunctionMap*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, nova_Nova_String*);
-nova_Nova_String* (*nova_Nova_StringFunctionMap_virtualfunctionMap_Nova_substring)(nova_Nova_SubstringFunctionMap*, nova_exception_Nova_ExceptionData*, nova_Nova_Substring*, int, int);
-nova_Nova_String* (*nova_Nova_StringFunctionMap_virtualfunctionMap_Nova_toString)(nova_Nova_StringFunctionMap*, nova_exception_Nova_ExceptionData*, nova_Nova_String*);
 };
 
 
@@ -3091,7 +3084,6 @@ nova_Interface_VTable itable;
 nova_Nova_Object* (*nova_Nova_Object_virtual_static_Nova_default)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
-long_long (*nova_Nova_StringPropertyMap_virtualfunctionMap_Nova_hashCodeLong)(nova_Nova_SubstringPropertyMap*, nova_exception_Nova_ExceptionData*, nova_Nova_Substring*);
 };
 
 
@@ -3302,7 +3294,6 @@ nova_Interface_VTable itable;
 nova_Nova_Object* (*nova_Nova_Object_virtual_static_Nova_default)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
-nova_datastruct_Nova_BinaryNode* (*nova_datastruct_Nova_TreePropertyMap_virtualfunctionMap_Nova_root)(nova_datastruct_Nova_BinaryTreePropertyMap*, nova_exception_Nova_ExceptionData*, nova_datastruct_Nova_BinaryTree*);
 };
 
 
@@ -3381,7 +3372,6 @@ nova_Interface_VTable itable;
 nova_Nova_Object* (*nova_Nova_Object_virtual_static_Nova_default)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
-nova_Nova_Object* (*nova_datastruct_Nova_HashMapFunctionMap_virtualfunctionMap_Nova_add)(nova_datastruct_Nova_HashMapFunctionMap*, nova_exception_Nova_ExceptionData*, nova_datastruct_Nova_HashMap*, nova_Nova_Object*, nova_Nova_Object*);
 };
 
 
@@ -3533,7 +3523,6 @@ nova_Interface_VTable itable;
 nova_Nova_Object* (*nova_Nova_Object_virtual_static_Nova_default)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
-nova_Nova_Object* (*nova_datastruct_Nova_HashMapFunctionMap_virtualfunctionMap_Nova_add)(nova_datastruct_Nova_ReversibleHashMapFunctionMap*, nova_exception_Nova_ExceptionData*, nova_datastruct_Nova_ReversibleHashMap*, nova_Nova_Object*, nova_Nova_Object*);
 };
 
 
@@ -3574,7 +3563,6 @@ nova_Interface_VTable itable;
 nova_Nova_Object* (*nova_Nova_Object_virtual_static_Nova_default)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
-nova_datastruct_Nova_Node* (*nova_datastruct_Nova_TreePropertyMap_virtualfunctionMap_Nova_root)(nova_datastruct_Nova_TreePropertyMap*, nova_exception_Nova_ExceptionData*, nova_datastruct_Nova_Tree*);
 };
 
 
@@ -5247,7 +5235,6 @@ nova_Nova_Object* (*nova_Nova_Object_virtual_static_Nova_default)(nova_Nova_Obje
 nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 nova_math_Nova_NumericOperand* (*nova_math_Nova_NumericOperandFunctionMap_virtualfunctionMapNumericOperand_Nova_construct)(nova_math_Nova_NumericOperandFunctionMap*, nova_exception_Nova_ExceptionData*, nova_Nova_Object*);
-nova_Nova_String* (*nova_math_Nova_NumericOperandFunctionMap_virtualfunctionMap_Nova_toString)(nova_math_Nova_NumericOperandFunctionMap*, nova_exception_Nova_ExceptionData*, nova_math_Nova_NumericOperand*);
 };
 
 
@@ -5279,7 +5266,6 @@ nova_Nova_Object* (*nova_Nova_Object_virtual_static_Nova_default)(nova_Nova_Obje
 nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 nova_math_Nova_NumericOperation* (*nova_math_Nova_NumericOperandFunctionMap_virtualfunctionMapNumericOperation_Nova_construct)(nova_math_Nova_NumericOperationFunctionMap*, nova_exception_Nova_ExceptionData*, nova_Nova_String*);
-nova_Nova_String* (*nova_math_Nova_NumericOperandFunctionMap_virtualfunctionMap_Nova_toString)(nova_math_Nova_NumericOperationFunctionMap*, nova_exception_Nova_ExceptionData*, nova_math_Nova_NumericOperation*);
 };
 
 
@@ -5510,7 +5496,6 @@ nova_Interface_VTable itable;
 nova_Nova_Object* (*nova_Nova_Object_virtual_static_Nova_default)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_math_Nova_Vector*, nova_exception_Nova_ExceptionData*);
 long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
-double (*nova_math_Nova_Vector_virtual_Nova_dotProduct)(nova_math_Nova_Vector*, nova_exception_Nova_ExceptionData*, nova_math_Nova_Vector*);
 };
 
 
@@ -5521,7 +5506,6 @@ nova_Interface_VTable itable;
 nova_Nova_Object* (*nova_Nova_Object_virtual_static_Nova_default)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
-double (*nova_math_Nova_VectorFunctionMap_virtualfunctionMap_Nova_dotProduct)(nova_math_Nova_VectorFunctionMap*, nova_exception_Nova_ExceptionData*, nova_math_Nova_Vector*, nova_math_Nova_Vector*);
 };
 
 
@@ -5542,7 +5526,6 @@ nova_Interface_VTable itable;
 nova_Nova_Object* (*nova_Nova_Object_virtual_static_Nova_default)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_math_Nova_Vector*, nova_exception_Nova_ExceptionData*);
 long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
-double (*nova_math_Nova_Vector_virtual_Nova_dotProduct)(nova_math_Nova_Vector2D*, nova_exception_Nova_ExceptionData*, nova_math_Nova_Vector3D*);
 };
 
 
@@ -5553,7 +5536,6 @@ nova_Interface_VTable itable;
 nova_Nova_Object* (*nova_Nova_Object_virtual_static_Nova_default)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
-double (*nova_math_Nova_VectorFunctionMap_virtualfunctionMap_Nova_dotProduct)(nova_math_Nova_Vector2DFunctionMap*, nova_exception_Nova_ExceptionData*, nova_math_Nova_Vector2D*, nova_math_Nova_Vector3D*);
 };
 
 
@@ -5574,7 +5556,6 @@ nova_Interface_VTable itable;
 nova_Nova_Object* (*nova_Nova_Object_virtual_static_Nova_default)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_math_Nova_Vector*, nova_exception_Nova_ExceptionData*);
 long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
-double (*nova_math_Nova_Vector_virtual_Nova_dotProduct)(nova_math_Nova_Vector*, nova_exception_Nova_ExceptionData*, nova_math_Nova_Vector*);
 };
 
 
@@ -5585,7 +5566,6 @@ nova_Interface_VTable itable;
 nova_Nova_Object* (*nova_Nova_Object_virtual_static_Nova_default)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
-double (*nova_math_Nova_VectorFunctionMap_virtualfunctionMap_Nova_dotProduct)(nova_math_Nova_VectorFunctionMap*, nova_exception_Nova_ExceptionData*, nova_math_Nova_Vector*, nova_math_Nova_Vector*);
 };
 
 
@@ -5606,7 +5586,6 @@ nova_Interface_VTable itable;
 nova_Nova_Object* (*nova_Nova_Object_virtual_static_Nova_default)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_math_Nova_Vector*, nova_exception_Nova_ExceptionData*);
 long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
-double (*nova_math_Nova_Vector_virtual_Nova_dotProduct)(nova_math_Nova_Vector*, nova_exception_Nova_ExceptionData*, nova_math_Nova_Vector*);
 };
 
 
@@ -5617,7 +5596,6 @@ nova_Interface_VTable itable;
 nova_Nova_Object* (*nova_Nova_Object_virtual_static_Nova_default)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
-double (*nova_math_Nova_VectorFunctionMap_virtualfunctionMap_Nova_dotProduct)(nova_math_Nova_VectorFunctionMap*, nova_exception_Nova_ExceptionData*, nova_math_Nova_Vector*, nova_math_Nova_Vector*);
 };
 
 
@@ -5688,7 +5666,6 @@ nova_Interface_VTable itable;
 nova_Nova_Object* (*nova_Nova_Object_virtual_static_Nova_default)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
-nova_datastruct_Nova_Node* (*nova_datastruct_Nova_TreePropertyMap_virtualfunctionMap_Nova_root)(nova_datastruct_Nova_TreePropertyMap*, nova_exception_Nova_ExceptionData*, nova_datastruct_Nova_Tree*);
 };
 
 
@@ -6572,9 +6549,6 @@ nova_Interface_VTable itable;
 nova_Nova_Object* (*nova_Nova_Object_virtual_static_Nova_default)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
-nova_Nova_String* (*nova_Nova_StringFunctionMap_virtualfunctionMap_Nova_concat)(nova_primitive_Nova_NullFunctionMap*, nova_exception_Nova_ExceptionData*, nova_primitive_Nova_Null*, nova_Nova_String*);
-nova_Nova_String* (*nova_Nova_StringFunctionMap_virtualfunctionMap_Nova_substring)(nova_Nova_StringFunctionMap*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, int, int);
-nova_Nova_String* (*nova_Nova_StringFunctionMap_virtualfunctionMap_Nova_toString)(nova_primitive_Nova_NullFunctionMap*, nova_exception_Nova_ExceptionData*, nova_primitive_Nova_Null*);
 };
 
 
@@ -6585,7 +6559,6 @@ nova_Interface_VTable itable;
 nova_Nova_Object* (*nova_Nova_Object_virtual_static_Nova_default)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
-long_long (*nova_Nova_StringPropertyMap_virtualfunctionMap_Nova_hashCodeLong)(nova_Nova_StringPropertyMap*, nova_exception_Nova_ExceptionData*, nova_Nova_String*);
 };
 
 
@@ -7218,7 +7191,6 @@ nova_Interface_VTable itable;
 nova_Nova_Object* (*nova_Nova_Object_virtual_static_Nova_default)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
-void (*nova_thread_Nova_ThreadFunctionMap_virtualfunctionMap_Nova_run)(nova_star_Nova_WindowThreadFunctionMap*, nova_exception_Nova_ExceptionData*, nova_star_Nova_WindowThread*);
 };
 
 
@@ -7250,7 +7222,6 @@ nova_Interface_VTable itable;
 nova_Nova_Object* (*nova_Nova_Object_virtual_static_Nova_default)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
-void (*nova_thread_Nova_ThreadFunctionMap_virtualfunctionMap_Nova_run)(nova_thread_Nova_ThreadFunctionMap*, nova_exception_Nova_ExceptionData*, nova_thread_Nova_Thread*);
 };
 
 
@@ -7282,7 +7253,6 @@ nova_Interface_VTable itable;
 nova_Nova_Object* (*nova_Nova_Object_virtual_static_Nova_default)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
-void (*nova_thread_Nova_UncaughtExceptionHandlerFunctionMap_virtualfunctionMap_Nova_uncaughtException)(nova_thread_Nova_UncaughtExceptionHandlerFunctionMap*, nova_exception_Nova_ExceptionData*, nova_thread_Nova_UncaughtExceptionHandler*, nova_thread_Nova_Thread*, nova_exception_Nova_Exception*);
 };
 
 
@@ -7376,7 +7346,6 @@ nova_Nova_Object* (*nova_Nova_Object_virtual_static_Nova_default)(nova_Nova_Obje
 nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 nova_time_Nova_CumulativeTimer* (*nova_time_Nova_TimerFunctionMap_virtualfunctionMapCumulativeTimer_Nova_construct)(nova_time_Nova_CumulativeTimerFunctionMap*, nova_exception_Nova_ExceptionData*);
-nova_time_Nova_CumulativeTimer* (*nova_time_Nova_TimerFunctionMap_virtualfunctionMap_Nova_stop)(nova_time_Nova_CumulativeTimerFunctionMap*, nova_exception_Nova_ExceptionData*, nova_time_Nova_CumulativeTimer*);
 };
 
 
@@ -7387,7 +7356,6 @@ nova_Interface_VTable itable;
 nova_Nova_Object* (*nova_Nova_Object_virtual_static_Nova_default)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
-long_long (*nova_time_Nova_TimerPropertyMap_virtualfunctionMap_Nova_duration)(nova_time_Nova_CumulativeTimerPropertyMap*, nova_exception_Nova_ExceptionData*, nova_time_Nova_CumulativeTimer*);
 };
 
 
@@ -7471,7 +7439,6 @@ nova_Nova_Object* (*nova_Nova_Object_virtual_static_Nova_default)(nova_Nova_Obje
 nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 nova_time_Nova_Timer* (*nova_time_Nova_TimerFunctionMap_virtualfunctionMapTimer_Nova_construct)(nova_time_Nova_TimerFunctionMap*, nova_exception_Nova_ExceptionData*);
-nova_time_Nova_Timer* (*nova_time_Nova_TimerFunctionMap_virtualfunctionMap_Nova_stop)(nova_time_Nova_TimerFunctionMap*, nova_exception_Nova_ExceptionData*, nova_time_Nova_Timer*);
 };
 
 
@@ -7482,7 +7449,6 @@ nova_Interface_VTable itable;
 nova_Nova_Object* (*nova_Nova_Object_virtual_static_Nova_default)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
-long_long (*nova_time_Nova_TimerPropertyMap_virtualfunctionMap_Nova_duration)(nova_time_Nova_TimerPropertyMap*, nova_exception_Nova_ExceptionData*, nova_time_Nova_Timer*);
 };
 
 
@@ -7504,7 +7470,6 @@ nova_Interface_VTable itable;
 nova_Nova_Object* (*nova_Nova_Object_virtual_static_Nova_default)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
-nova_Nova_Object* (*nova_datastruct_Nova_HashMapFunctionMap_virtualfunctionMap_Nova_add)(nova_datastruct_Nova_HashMapFunctionMap*, nova_exception_Nova_ExceptionData*, nova_datastruct_Nova_HashMap*, nova_Nova_Object*, nova_Nova_Object*);
 };
 
 
@@ -7567,7 +7532,6 @@ nova_Nova_Object* (*nova_Nova_Object_virtual_static_Nova_default)(nova_Nova_Obje
 nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 nova_web_svg_Nova_SvgComponent* (*nova_web_svg_Nova_SvgComponentFunctionMap_virtualfunctionMapSvgComponent_Nova_construct)(nova_web_svg_Nova_SvgComponentFunctionMap*, nova_exception_Nova_ExceptionData*);
-void (*nova_web_svg_Nova_SvgComponentFunctionMap_virtualfunctionMap_Nova_generateOutput)(nova_web_svg_Nova_SvgComponentFunctionMap*, nova_exception_Nova_ExceptionData*, nova_web_svg_Nova_SvgComponent*, nova_io_Nova_FileWriter*);
 };
 
 
@@ -7600,7 +7564,6 @@ nova_Nova_Object* (*nova_Nova_Object_virtual_static_Nova_default)(nova_Nova_Obje
 nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 nova_web_svg_Nova_SvgComponent* (*nova_web_svg_Nova_SvgComponentFunctionMap_virtualfunctionMapSvgComponent_Nova_construct)(nova_web_svg_Nova_SvgComponentFunctionMap*, nova_exception_Nova_ExceptionData*);
-void (*nova_web_svg_Nova_SvgComponentFunctionMap_virtualfunctionMap_Nova_generateOutput)(nova_web_svg_Nova_SvgComponentFunctionMap*, nova_exception_Nova_ExceptionData*, nova_web_svg_Nova_SvgComponent*, nova_io_Nova_FileWriter*);
 };
 
 
@@ -7693,7 +7656,6 @@ nova_Nova_Object* (*nova_Nova_Object_virtual_static_Nova_default)(nova_Nova_Obje
 nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 nova_web_svg_Nova_SvgMainComponent* (*nova_web_svg_Nova_SvgComponentFunctionMap_virtualfunctionMapSvgMainComponent_Nova_construct)(nova_web_svg_Nova_SvgMainComponentFunctionMap*, nova_exception_Nova_ExceptionData*);
-void (*nova_web_svg_Nova_SvgComponentFunctionMap_virtualfunctionMap_Nova_generateOutput)(nova_web_svg_Nova_SvgMainComponentFunctionMap*, nova_exception_Nova_ExceptionData*, nova_web_svg_Nova_SvgMainComponent*, nova_io_Nova_FileWriter*);
 };
 
 
@@ -8144,7 +8106,6 @@ void (*spectra_tree_nodes_Nova_Node_virtual_Nova_onAdded)(spectra_tree_nodes_Nov
 spectra_tree_nodes_variables_Nova_VariableDeclaration* (*spectra_tree_nodes_Nova_Node_virtual_Nova_findVariableDeclaration)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, int);
 spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_Node_virtual_Nova_parseStatement)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*, int);
 spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_Node_virtual_Nova_generateTemporaryScopeNode)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*);
-spectra_tree_nodes_Nova_Accessible* (*spectra_tree_nodes_Nova_Node_virtual0_Nova_cloneTo)(spectra_tree_nodes_Nova_Accessible*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Accessible*);
 char (*spectra_tree_nodes_Nova_Node_virtual_Nova_replace)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
 char (*spectra_tree_nodes_Nova_Node_virtual_Nova_validateTypes)(spectra_tree_nodes_Nova_Value*, nova_exception_Nova_ExceptionData*);
 char (*spectra_tree_nodes_Nova_Node_virtual_Nova_parsePlaceholders)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*);
@@ -8181,23 +8142,7 @@ nova_Nova_Object* (*nova_Nova_Object_virtual_static_Nova_default)(nova_Nova_Obje
 nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMapNode_Nova_construct)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*);
-void (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_addChild)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
-void (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_onAdded)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_variables_Nova_VariableDeclaration* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_findVariableDeclaration)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, nova_Nova_String*, char);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_parseStatement)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, nova_Nova_String*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*, char);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_generateTemporaryScopeNode)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_Accessible* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap0_Nova_cloneTo)(spectra_tree_nodes_Nova_AccessibleFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Accessible*, spectra_tree_nodes_Nova_Accessible*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_replace)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_validateTypes)(spectra_tree_nodes_Nova_ValueFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Value*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_parsePlaceholders)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_parsePlaceholderChildren)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_NodeList*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_writeAnnotationSeparator)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_toNova)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_writeNova)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_toString)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
 spectra_tree_nodes_Nova_Value* (*spectra_tree_nodes_Nova_ValueFunctionMap_virtualfunctionMap0_static_Nova_parse)(spectra_tree_nodes_Nova_ValueFunctionMap*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*, char);
-char (*spectra_tree_nodes_Nova_ValueFunctionMap_virtualfunctionMap_Nova_parseType)(spectra_tree_nodes_Nova_ValueFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Value*, nova_Nova_String*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_ValueFunctionMap_virtualfunctionMap_Nova_writeType)(spectra_tree_nodes_Nova_ValueFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Value*);
 };
 
 
@@ -8208,20 +8153,6 @@ nova_Interface_VTable itable;
 nova_Nova_Object* (*nova_Nova_Object_virtual_static_Nova_default)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
-spectra_tree_nodes_Nova_Program* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_program)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_Nova_Instantiation* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentInstantiation)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_closures_Nova_LambdaExpression* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentLambda)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_NovaFile* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentFile)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_Nova_FunctionCall* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentFunctionCall)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_Nova_FunctionDeclaration* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentFunction)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_exceptionhandling_Nova_Try* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentTry)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_ClassDeclaration* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentClass)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_scopeConsumer)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_Scope* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_scope)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-int (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_index)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_Accessible* (*spectra_tree_nodes_Nova_ValuePropertyMap_virtualfunctionMap_Nova_returnedNode)(spectra_tree_nodes_Nova_AccessiblePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Accessible*);
-spectra_tree_nodes_Nova_Type* (*spectra_tree_nodes_Nova_ValuePropertyMap_virtualfunctionMap_Nova_type)(spectra_tree_nodes_Nova_ValuePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Value*);
-char (*spectra_tree_nodes_Nova_ValuePropertyMap_virtualfunctionMap_Nova_isAssignable)(spectra_tree_nodes_Nova_ValuePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Value*);
 };
 
 
@@ -8237,7 +8168,6 @@ void (*spectra_tree_nodes_Nova_Node_virtual_Nova_onAdded)(spectra_tree_nodes_Nov
 spectra_tree_nodes_variables_Nova_VariableDeclaration* (*spectra_tree_nodes_Nova_Node_virtual_Nova_findVariableDeclaration)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, int);
 spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_Node_virtual_Nova_parseStatement)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*, int);
 spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_Node_virtual_Nova_generateTemporaryScopeNode)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_Node_virtual_Nova_cloneTo)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
 char (*spectra_tree_nodes_Nova_Node_virtual_Nova_replace)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
 char (*spectra_tree_nodes_Nova_Node_virtual_Nova_validateTypes)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*);
 char (*spectra_tree_nodes_Nova_Node_virtual_Nova_parsePlaceholders)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*);
@@ -8268,20 +8198,6 @@ nova_Nova_Object* (*nova_Nova_Object_virtual_static_Nova_default)(nova_Nova_Obje
 nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 spectra_tree_nodes_Nova_ArgumentList* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMapArgumentList_Nova_construct)(spectra_tree_nodes_Nova_ArgumentListFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*);
-void (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_addChild)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
-void (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_onAdded)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_variables_Nova_VariableDeclaration* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_findVariableDeclaration)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, nova_Nova_String*, char);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_parseStatement)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, nova_Nova_String*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*, char);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_generateTemporaryScopeNode)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_cloneTo)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_replace)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_validateTypes)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_parsePlaceholders)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_parsePlaceholderChildren)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_NodeList*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_writeAnnotationSeparator)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_toNova)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_writeNova)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_toString)(spectra_tree_nodes_Nova_ArgumentListFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_ArgumentList*);
 };
 
 
@@ -8292,17 +8208,6 @@ nova_Interface_VTable itable;
 nova_Nova_Object* (*nova_Nova_Object_virtual_static_Nova_default)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
-spectra_tree_nodes_Nova_Program* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_program)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_Nova_Instantiation* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentInstantiation)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_closures_Nova_LambdaExpression* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentLambda)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_NovaFile* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentFile)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_Nova_FunctionCall* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentFunctionCall)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_Nova_FunctionDeclaration* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentFunction)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_exceptionhandling_Nova_Try* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentTry)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_ClassDeclaration* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentClass)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_scopeConsumer)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_Scope* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_scope)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-int (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_index)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
 };
 
 
@@ -8316,7 +8221,6 @@ long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Objec
 spectra_tree_nodes_Nova_ArrayType* (*spectra_tree_nodes_Nova_Type_virtual_static_Nova_parse)(spectra_tree_nodes_Nova_ArrayType*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*, int);
 char (*spectra_tree_nodes_Nova_Type_virtual_Nova_isValid)(spectra_tree_nodes_Nova_ArrayType*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
 nova_Nova_String* (*spectra_tree_nodes_Nova_Type_virtual_Nova_writeNova)(spectra_tree_nodes_Nova_ArrayType*, nova_exception_Nova_ExceptionData*);
-spectra_tree_nodes_Nova_ArrayType* (*spectra_tree_nodes_Nova_Type_virtual_Nova_cloneTo)(spectra_tree_nodes_Nova_ArrayType*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_ArrayType*);
 char (*spectra_tree_nodes_Nova_Type_virtual_Accessorfunc_Nova_isGeneric)(spectra_tree_nodes_Nova_ArrayType*, nova_exception_Nova_ExceptionData*);
 char (*spectra_tree_nodes_Nova_Type_virtual_Accessor_Nova_isPrimitiveType)(spectra_tree_nodes_Nova_ArrayType*, nova_exception_Nova_ExceptionData*);
 };
@@ -8331,9 +8235,6 @@ nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*, n
 long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 spectra_tree_nodes_Nova_Type* (*spectra_tree_nodes_Nova_TypeFunctionMap_virtualfunctionMapType_Nova_construct)(spectra_tree_nodes_Nova_TypeFunctionMap*, nova_exception_Nova_ExceptionData*, nova_Nova_String*);
 spectra_tree_nodes_Nova_ArrayType* (*spectra_tree_nodes_Nova_TypeFunctionMap_virtualfunctionMap_static_Nova_parse)(spectra_tree_nodes_Nova_ArrayTypeFunctionMap*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*, char);
-char (*spectra_tree_nodes_Nova_TypeFunctionMap_virtualfunctionMap_Nova_isValid)(spectra_tree_nodes_Nova_ArrayTypeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_ArrayType*, spectra_tree_nodes_Nova_Node*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_TypeFunctionMap_virtualfunctionMap_Nova_writeNova)(spectra_tree_nodes_Nova_ArrayTypeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_ArrayType*);
-spectra_tree_nodes_Nova_ArrayType* (*spectra_tree_nodes_Nova_TypeFunctionMap_virtualfunctionMap_Nova_cloneTo)(spectra_tree_nodes_Nova_ArrayTypeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_ArrayType*, spectra_tree_nodes_Nova_ArrayType*);
 };
 
 
@@ -8344,8 +8245,6 @@ nova_Interface_VTable itable;
 nova_Nova_Object* (*nova_Nova_Object_virtual_static_Nova_default)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
-char (*spectra_tree_nodes_Nova_TypePropertyMap_virtualfunctionMap_Nova_isGeneric)(spectra_tree_nodes_Nova_ArrayTypePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_ArrayType*);
-char (*spectra_tree_nodes_Nova_TypePropertyMap_virtualfunctionMap_Nova_isPrimitiveType)(spectra_tree_nodes_Nova_ArrayTypePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_ArrayType*);
 };
 
 
@@ -8361,7 +8260,6 @@ void (*spectra_tree_nodes_Nova_Node_virtual_Nova_onAdded)(spectra_tree_nodes_Nov
 spectra_tree_nodes_variables_Nova_VariableDeclaration* (*spectra_tree_nodes_Nova_Node_virtual_Nova_findVariableDeclaration)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, int);
 spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_Node_virtual_Nova_parseStatement)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*, int);
 spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_Node_virtual_Nova_generateTemporaryScopeNode)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*);
-spectra_tree_nodes_Nova_Value* (*spectra_tree_nodes_Nova_Node_virtual_Nova_cloneTo)(spectra_tree_nodes_Nova_Value*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Value*);
 char (*spectra_tree_nodes_Nova_Node_virtual_Nova_replace)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
 char (*spectra_tree_nodes_Nova_Node_virtual_Nova_validateTypes)(spectra_tree_nodes_Nova_Value*, nova_exception_Nova_ExceptionData*);
 char (*spectra_tree_nodes_Nova_Node_virtual_Nova_parsePlaceholders)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*);
@@ -8398,23 +8296,7 @@ nova_Nova_Object* (*nova_Nova_Object_virtual_static_Nova_default)(nova_Nova_Obje
 nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 spectra_tree_nodes_Nova_Cast* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMapCast_Nova_construct)(spectra_tree_nodes_Nova_CastFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*);
-void (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_addChild)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
-void (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_onAdded)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_variables_Nova_VariableDeclaration* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_findVariableDeclaration)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, nova_Nova_String*, char);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_parseStatement)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, nova_Nova_String*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*, char);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_generateTemporaryScopeNode)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_Value* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_cloneTo)(spectra_tree_nodes_Nova_ValueFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Value*, spectra_tree_nodes_Nova_Value*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_replace)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_validateTypes)(spectra_tree_nodes_Nova_ValueFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Value*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_parsePlaceholders)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_parsePlaceholderChildren)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_NodeList*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_writeAnnotationSeparator)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_toNova)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_writeNova)(spectra_tree_nodes_Nova_CastFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Cast*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_toString)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
 spectra_tree_nodes_Nova_Cast* (*spectra_tree_nodes_Nova_ValueFunctionMap_virtualfunctionMap_static_Nova_parse)(spectra_tree_nodes_Nova_CastFunctionMap*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*, char);
-char (*spectra_tree_nodes_Nova_ValueFunctionMap_virtualfunctionMap_Nova_parseType)(spectra_tree_nodes_Nova_ValueFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Value*, nova_Nova_String*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_ValueFunctionMap_virtualfunctionMap_Nova_writeType)(spectra_tree_nodes_Nova_ValueFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Value*);
 };
 
 
@@ -8425,20 +8307,6 @@ nova_Interface_VTable itable;
 nova_Nova_Object* (*nova_Nova_Object_virtual_static_Nova_default)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
-spectra_tree_nodes_Nova_Program* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_program)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_Nova_Instantiation* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentInstantiation)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_closures_Nova_LambdaExpression* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentLambda)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_NovaFile* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentFile)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_Nova_FunctionCall* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentFunctionCall)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_Nova_FunctionDeclaration* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentFunction)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_exceptionhandling_Nova_Try* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentTry)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_ClassDeclaration* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentClass)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_scopeConsumer)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_Scope* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_scope)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-int (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_index)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_Accessible* (*spectra_tree_nodes_Nova_ValuePropertyMap_virtualfunctionMap_Nova_returnedNode)(spectra_tree_nodes_Nova_ValuePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Value*);
-spectra_tree_nodes_Nova_Type* (*spectra_tree_nodes_Nova_ValuePropertyMap_virtualfunctionMap_Nova_type)(spectra_tree_nodes_Nova_ValuePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Value*);
-char (*spectra_tree_nodes_Nova_ValuePropertyMap_virtualfunctionMap_Nova_isAssignable)(spectra_tree_nodes_Nova_ValuePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Value*);
 };
 
 
@@ -8454,7 +8322,6 @@ void (*spectra_tree_nodes_Nova_Node_virtual_Nova_onAdded)(spectra_tree_nodes_Nov
 spectra_tree_nodes_variables_Nova_VariableDeclaration* (*spectra_tree_nodes_Nova_Node_virtual_Nova_findVariableDeclaration)(spectra_tree_nodes_Nova_ClassDeclaration*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, int);
 spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_Node_virtual_Nova_parseStatement)(spectra_tree_nodes_Nova_ClassDeclaration*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*, int);
 spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_Node_virtual_Nova_generateTemporaryScopeNode)(spectra_tree_nodes_Nova_ClassDeclaration*, nova_exception_Nova_ExceptionData*);
-spectra_tree_nodes_Nova_ClassDeclaration* (*spectra_tree_nodes_Nova_Node_virtual_Nova_cloneTo)(spectra_tree_nodes_Nova_ClassDeclaration*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_ClassDeclaration*);
 char (*spectra_tree_nodes_Nova_Node_virtual_Nova_replace)(spectra_tree_nodes_Nova_ClassDeclaration*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
 char (*spectra_tree_nodes_Nova_Node_virtual_Nova_validateTypes)(spectra_tree_nodes_Nova_ClassDeclaration*, nova_exception_Nova_ExceptionData*);
 char (*spectra_tree_nodes_Nova_Node_virtual_Nova_parsePlaceholders)(spectra_tree_nodes_Nova_ClassDeclaration*, nova_exception_Nova_ExceptionData*);
@@ -8495,24 +8362,7 @@ nova_Nova_Object* (*nova_Nova_Object_virtual_static_Nova_default)(nova_Nova_Obje
 nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 spectra_tree_nodes_Nova_ClassDeclaration* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMapClassDeclaration_Nova_construct)(spectra_tree_nodes_Nova_ClassDeclarationFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*);
-void (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_addChild)(spectra_tree_nodes_Nova_ClassDeclarationFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_ClassDeclaration*, spectra_tree_nodes_Nova_Node*);
-void (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_onAdded)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_variables_Nova_VariableDeclaration* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_findVariableDeclaration)(spectra_tree_nodes_Nova_ClassDeclarationFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_ClassDeclaration*, nova_Nova_String*, char);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_parseStatement)(spectra_tree_nodes_Nova_ClassDeclarationFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_ClassDeclaration*, nova_Nova_String*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*, char);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_generateTemporaryScopeNode)(spectra_tree_nodes_Nova_ClassDeclarationFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_ClassDeclaration*);
-spectra_tree_nodes_Nova_ClassDeclaration* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_cloneTo)(spectra_tree_nodes_Nova_ClassDeclarationFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_ClassDeclaration*, spectra_tree_nodes_Nova_ClassDeclaration*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_replace)(spectra_tree_nodes_Nova_ClassDeclarationFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_ClassDeclaration*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_validateTypes)(spectra_tree_nodes_Nova_ClassDeclarationFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_ClassDeclaration*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_parsePlaceholders)(spectra_tree_nodes_Nova_ClassDeclarationFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_ClassDeclaration*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_parsePlaceholderChildren)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_NodeList*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_writeAnnotationSeparator)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_toNova)(spectra_tree_nodes_Nova_ClassDeclarationFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_ClassDeclaration*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_writeNova)(spectra_tree_nodes_variables_Nova_VariableDeclarationFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_variables_Nova_VariableDeclaration*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_toString)(spectra_tree_nodes_Nova_ClassDeclarationFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_ClassDeclaration*);
 spectra_tree_nodes_Nova_ClassDeclaration* (*spectra_tree_nodes_Nova_ValueFunctionMap_virtualfunctionMap_static_Nova_parse)(spectra_tree_nodes_Nova_ClassDeclarationFunctionMap*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*, char);
-char (*spectra_tree_nodes_Nova_ValueFunctionMap_virtualfunctionMap_Nova_parseType)(spectra_tree_nodes_Nova_ValueFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Value*, nova_Nova_String*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_ValueFunctionMap_virtualfunctionMap_Nova_writeType)(spectra_tree_nodes_Nova_ValueFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Value*);
-char (*spectra_tree_nodes_variables_Nova_VariableDeclarationFunctionMap_virtualfunctionMap_Nova_parseModifier)(spectra_tree_nodes_Nova_ClassDeclarationFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_ClassDeclaration*, nova_Nova_String*);
 };
 
 
@@ -8523,23 +8373,6 @@ nova_Interface_VTable itable;
 nova_Nova_Object* (*nova_Nova_Object_virtual_static_Nova_default)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
-spectra_tree_nodes_Nova_Program* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_program)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_Nova_Instantiation* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentInstantiation)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_closures_Nova_LambdaExpression* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentLambda)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_NovaFile* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentFile)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_Nova_FunctionCall* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentFunctionCall)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_Nova_FunctionDeclaration* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentFunction)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_exceptionhandling_Nova_Try* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentTry)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_ClassDeclaration* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentClass)(spectra_tree_nodes_Nova_ClassDeclarationPropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_ClassDeclaration*);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_scopeConsumer)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_Scope* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_scope)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-int (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_index)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_Accessible* (*spectra_tree_nodes_Nova_ValuePropertyMap_virtualfunctionMap_Nova_returnedNode)(spectra_tree_nodes_Nova_ValuePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Value*);
-spectra_tree_nodes_Nova_Type* (*spectra_tree_nodes_Nova_ValuePropertyMap_virtualfunctionMap_Nova_type)(spectra_tree_nodes_Nova_ValuePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Value*);
-char (*spectra_tree_nodes_Nova_ValuePropertyMap_virtualfunctionMap_Nova_isAssignable)(spectra_tree_nodes_Nova_ValuePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Value*);
-char (*spectra_tree_nodes_variables_Nova_InstanceDeclarationPropertyMap_virtualfunctionMap_Nova_isPublic)(spectra_tree_nodes_Nova_ClassDeclarationPropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_ClassDeclaration*);
-char (*spectra_tree_nodes_variables_Nova_InstanceDeclarationPropertyMap_virtualfunctionMap_Nova_isPrivate)(spectra_tree_nodes_Nova_ClassDeclarationPropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_ClassDeclaration*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_ClassDeclarationPropertyMap_virtualfunctionMap_Nova_identifier)(spectra_tree_nodes_Nova_ClassDeclarationPropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_ClassDeclaration*);
 };
 
 
@@ -8555,7 +8388,6 @@ void (*spectra_tree_nodes_Nova_Node_virtual_Nova_onAdded)(spectra_tree_nodes_Nov
 spectra_tree_nodes_variables_Nova_VariableDeclaration* (*spectra_tree_nodes_Nova_Node_virtual_Nova_findVariableDeclaration)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, int);
 spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_Node_virtual_Nova_parseStatement)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*, int);
 spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_Node_virtual_Nova_generateTemporaryScopeNode)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*);
-spectra_tree_nodes_Nova_Identifier* (*spectra_tree_nodes_Nova_Node_virtual_Nova_cloneTo)(spectra_tree_nodes_Nova_Identifier*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Identifier*);
 char (*spectra_tree_nodes_Nova_Node_virtual_Nova_replace)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
 char (*spectra_tree_nodes_Nova_Node_virtual_Nova_validateTypes)(spectra_tree_nodes_Nova_Value*, nova_exception_Nova_ExceptionData*);
 char (*spectra_tree_nodes_Nova_Node_virtual_Nova_parsePlaceholders)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*);
@@ -8592,23 +8424,7 @@ nova_Nova_Object* (*nova_Nova_Object_virtual_static_Nova_default)(nova_Nova_Obje
 nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 spectra_tree_nodes_Nova_Identifier* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMapIdentifier_Nova_construct)(spectra_tree_nodes_Nova_IdentifierFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*);
-void (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_addChild)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
-void (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_onAdded)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_variables_Nova_VariableDeclaration* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_findVariableDeclaration)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, nova_Nova_String*, char);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_parseStatement)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, nova_Nova_String*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*, char);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_generateTemporaryScopeNode)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_Identifier* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_cloneTo)(spectra_tree_nodes_Nova_IdentifierFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Identifier*, spectra_tree_nodes_Nova_Identifier*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_replace)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_validateTypes)(spectra_tree_nodes_Nova_ValueFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Value*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_parsePlaceholders)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_parsePlaceholderChildren)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_NodeList*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_writeAnnotationSeparator)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_toNova)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_writeNova)(spectra_tree_nodes_Nova_IdentifierFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Identifier*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_toString)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
 spectra_tree_nodes_Nova_Identifier* (*spectra_tree_nodes_Nova_ValueFunctionMap_virtualfunctionMap_static_Nova_parse)(spectra_tree_nodes_Nova_IdentifierFunctionMap*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*, char);
-char (*spectra_tree_nodes_Nova_ValueFunctionMap_virtualfunctionMap_Nova_parseType)(spectra_tree_nodes_Nova_ValueFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Value*, nova_Nova_String*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_ValueFunctionMap_virtualfunctionMap_Nova_writeType)(spectra_tree_nodes_Nova_ValueFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Value*);
 };
 
 
@@ -8619,20 +8435,6 @@ nova_Interface_VTable itable;
 nova_Nova_Object* (*nova_Nova_Object_virtual_static_Nova_default)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
-spectra_tree_nodes_Nova_Program* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_program)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_Nova_Instantiation* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentInstantiation)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_closures_Nova_LambdaExpression* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentLambda)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_NovaFile* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentFile)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_Nova_FunctionCall* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentFunctionCall)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_Nova_FunctionDeclaration* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentFunction)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_exceptionhandling_Nova_Try* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentTry)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_ClassDeclaration* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentClass)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_scopeConsumer)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_Scope* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_scope)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-int (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_index)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_Accessible* (*spectra_tree_nodes_Nova_ValuePropertyMap_virtualfunctionMap_Nova_returnedNode)(spectra_tree_nodes_Nova_ValuePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Value*);
-spectra_tree_nodes_Nova_Type* (*spectra_tree_nodes_Nova_ValuePropertyMap_virtualfunctionMap_Nova_type)(spectra_tree_nodes_Nova_ValuePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Value*);
-char (*spectra_tree_nodes_Nova_ValuePropertyMap_virtualfunctionMap_Nova_isAssignable)(spectra_tree_nodes_Nova_ValuePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Value*);
 };
 
 
@@ -8648,7 +8450,6 @@ void (*spectra_tree_nodes_Nova_Node_virtual_Nova_onAdded)(spectra_tree_nodes_Nov
 spectra_tree_nodes_variables_Nova_VariableDeclaration* (*spectra_tree_nodes_Nova_Node_virtual_Nova_findVariableDeclaration)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, int);
 spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_Node_virtual_Nova_parseStatement)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*, int);
 spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_Node_virtual_Nova_generateTemporaryScopeNode)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_Node_virtual_Nova_cloneTo)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
 char (*spectra_tree_nodes_Nova_Node_virtual_Nova_replace)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
 char (*spectra_tree_nodes_Nova_Node_virtual_Nova_validateTypes)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*);
 char (*spectra_tree_nodes_Nova_Node_virtual_Nova_parsePlaceholders)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*);
@@ -8679,20 +8480,6 @@ nova_Nova_Object* (*nova_Nova_Object_virtual_static_Nova_default)(nova_Nova_Obje
 nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 spectra_tree_nodes_Nova_Import* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMapImport_Nova_construct)(spectra_tree_nodes_Nova_ImportFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*);
-void (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_addChild)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
-void (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_onAdded)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_variables_Nova_VariableDeclaration* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_findVariableDeclaration)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, nova_Nova_String*, char);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_parseStatement)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, nova_Nova_String*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*, char);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_generateTemporaryScopeNode)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_cloneTo)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_replace)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_validateTypes)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_parsePlaceholders)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_parsePlaceholderChildren)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_NodeList*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_writeAnnotationSeparator)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_toNova)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_writeNova)(spectra_tree_nodes_Nova_ImportFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Import*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_toString)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
 };
 
 
@@ -8703,17 +8490,6 @@ nova_Interface_VTable itable;
 nova_Nova_Object* (*nova_Nova_Object_virtual_static_Nova_default)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
-spectra_tree_nodes_Nova_Program* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_program)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_Nova_Instantiation* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentInstantiation)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_closures_Nova_LambdaExpression* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentLambda)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_NovaFile* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentFile)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_Nova_FunctionCall* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentFunctionCall)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_Nova_FunctionDeclaration* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentFunction)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_exceptionhandling_Nova_Try* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentTry)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_ClassDeclaration* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentClass)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_scopeConsumer)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_Scope* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_scope)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-int (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_index)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
 };
 
 
@@ -8729,7 +8505,6 @@ void (*spectra_tree_nodes_Nova_Node_virtual_Nova_onAdded)(spectra_tree_nodes_Nov
 spectra_tree_nodes_variables_Nova_VariableDeclaration* (*spectra_tree_nodes_Nova_Node_virtual_Nova_findVariableDeclaration)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, int);
 spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_Node_virtual_Nova_parseStatement)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*, int);
 spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_Node_virtual_Nova_generateTemporaryScopeNode)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_Node_virtual_Nova_cloneTo)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
 char (*spectra_tree_nodes_Nova_Node_virtual_Nova_replace)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
 char (*spectra_tree_nodes_Nova_Node_virtual_Nova_validateTypes)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*);
 char (*spectra_tree_nodes_Nova_Node_virtual_Nova_parsePlaceholders)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*);
@@ -8760,20 +8535,6 @@ nova_Nova_Object* (*nova_Nova_Object_virtual_static_Nova_default)(nova_Nova_Obje
 nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 spectra_tree_nodes_Nova_ImportList* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMapImportList_Nova_construct)(spectra_tree_nodes_Nova_ImportListFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*);
-void (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_addChild)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
-void (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_onAdded)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_variables_Nova_VariableDeclaration* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_findVariableDeclaration)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, nova_Nova_String*, char);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_parseStatement)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, nova_Nova_String*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*, char);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_generateTemporaryScopeNode)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_cloneTo)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_replace)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_validateTypes)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_parsePlaceholders)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_parsePlaceholderChildren)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_NodeList*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_writeAnnotationSeparator)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_toNova)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_writeNova)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_toString)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
 };
 
 
@@ -8784,17 +8545,6 @@ nova_Interface_VTable itable;
 nova_Nova_Object* (*nova_Nova_Object_virtual_static_Nova_default)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
-spectra_tree_nodes_Nova_Program* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_program)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_Nova_Instantiation* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentInstantiation)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_closures_Nova_LambdaExpression* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentLambda)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_NovaFile* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentFile)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_Nova_FunctionCall* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentFunctionCall)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_Nova_FunctionDeclaration* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentFunction)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_exceptionhandling_Nova_Try* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentTry)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_ClassDeclaration* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentClass)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_scopeConsumer)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_Scope* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_scope)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-int (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_index)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
 };
 
 
@@ -8810,7 +8560,6 @@ void (*spectra_tree_nodes_Nova_Node_virtual_Nova_onAdded)(spectra_tree_nodes_Nov
 spectra_tree_nodes_variables_Nova_VariableDeclaration* (*spectra_tree_nodes_Nova_Node_virtual_Nova_findVariableDeclaration)(spectra_tree_nodes_Nova_ClassDeclaration*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, int);
 spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_Node_virtual_Nova_parseStatement)(spectra_tree_nodes_Nova_ClassDeclaration*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*, int);
 spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_Node_virtual_Nova_generateTemporaryScopeNode)(spectra_tree_nodes_Nova_ClassDeclaration*, nova_exception_Nova_ExceptionData*);
-spectra_tree_nodes_Nova_ClassDeclaration* (*spectra_tree_nodes_Nova_Node_virtual_Nova_cloneTo)(spectra_tree_nodes_Nova_ClassDeclaration*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_ClassDeclaration*);
 char (*spectra_tree_nodes_Nova_Node_virtual_Nova_replace)(spectra_tree_nodes_Nova_ClassDeclaration*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
 char (*spectra_tree_nodes_Nova_Node_virtual_Nova_validateTypes)(spectra_tree_nodes_Nova_ClassDeclaration*, nova_exception_Nova_ExceptionData*);
 char (*spectra_tree_nodes_Nova_Node_virtual_Nova_parsePlaceholders)(spectra_tree_nodes_Nova_ClassDeclaration*, nova_exception_Nova_ExceptionData*);
@@ -8851,24 +8600,7 @@ nova_Nova_Object* (*nova_Nova_Object_virtual_static_Nova_default)(nova_Nova_Obje
 nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 spectra_tree_nodes_Nova_InterfaceDeclaration* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMapInterfaceDeclaration_Nova_construct)(spectra_tree_nodes_Nova_InterfaceDeclarationFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*);
-void (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_addChild)(spectra_tree_nodes_Nova_ClassDeclarationFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_ClassDeclaration*, spectra_tree_nodes_Nova_Node*);
-void (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_onAdded)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_variables_Nova_VariableDeclaration* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_findVariableDeclaration)(spectra_tree_nodes_Nova_ClassDeclarationFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_ClassDeclaration*, nova_Nova_String*, char);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_parseStatement)(spectra_tree_nodes_Nova_ClassDeclarationFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_ClassDeclaration*, nova_Nova_String*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*, char);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_generateTemporaryScopeNode)(spectra_tree_nodes_Nova_ClassDeclarationFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_ClassDeclaration*);
-spectra_tree_nodes_Nova_ClassDeclaration* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_cloneTo)(spectra_tree_nodes_Nova_ClassDeclarationFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_ClassDeclaration*, spectra_tree_nodes_Nova_ClassDeclaration*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_replace)(spectra_tree_nodes_Nova_ClassDeclarationFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_ClassDeclaration*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_validateTypes)(spectra_tree_nodes_Nova_ClassDeclarationFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_ClassDeclaration*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_parsePlaceholders)(spectra_tree_nodes_Nova_ClassDeclarationFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_ClassDeclaration*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_parsePlaceholderChildren)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_NodeList*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_writeAnnotationSeparator)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_toNova)(spectra_tree_nodes_Nova_ClassDeclarationFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_ClassDeclaration*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_writeNova)(spectra_tree_nodes_variables_Nova_VariableDeclarationFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_variables_Nova_VariableDeclaration*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_toString)(spectra_tree_nodes_Nova_ClassDeclarationFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_ClassDeclaration*);
 spectra_tree_nodes_Nova_InterfaceDeclaration* (*spectra_tree_nodes_Nova_ValueFunctionMap_virtualfunctionMap_static_Nova_parse)(spectra_tree_nodes_Nova_InterfaceDeclarationFunctionMap*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*, char);
-char (*spectra_tree_nodes_Nova_ValueFunctionMap_virtualfunctionMap_Nova_parseType)(spectra_tree_nodes_Nova_ValueFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Value*, nova_Nova_String*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_ValueFunctionMap_virtualfunctionMap_Nova_writeType)(spectra_tree_nodes_Nova_ValueFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Value*);
-char (*spectra_tree_nodes_variables_Nova_VariableDeclarationFunctionMap_virtualfunctionMap_Nova_parseModifier)(spectra_tree_nodes_Nova_ClassDeclarationFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_ClassDeclaration*, nova_Nova_String*);
 };
 
 
@@ -8879,23 +8611,6 @@ nova_Interface_VTable itable;
 nova_Nova_Object* (*nova_Nova_Object_virtual_static_Nova_default)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
-spectra_tree_nodes_Nova_Program* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_program)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_Nova_Instantiation* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentInstantiation)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_closures_Nova_LambdaExpression* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentLambda)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_NovaFile* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentFile)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_Nova_FunctionCall* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentFunctionCall)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_Nova_FunctionDeclaration* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentFunction)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_exceptionhandling_Nova_Try* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentTry)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_ClassDeclaration* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentClass)(spectra_tree_nodes_Nova_ClassDeclarationPropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_ClassDeclaration*);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_scopeConsumer)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_Scope* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_scope)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-int (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_index)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_Accessible* (*spectra_tree_nodes_Nova_ValuePropertyMap_virtualfunctionMap_Nova_returnedNode)(spectra_tree_nodes_Nova_ValuePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Value*);
-spectra_tree_nodes_Nova_Type* (*spectra_tree_nodes_Nova_ValuePropertyMap_virtualfunctionMap_Nova_type)(spectra_tree_nodes_Nova_ValuePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Value*);
-char (*spectra_tree_nodes_Nova_ValuePropertyMap_virtualfunctionMap_Nova_isAssignable)(spectra_tree_nodes_Nova_ValuePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Value*);
-char (*spectra_tree_nodes_variables_Nova_InstanceDeclarationPropertyMap_virtualfunctionMap_Nova_isPublic)(spectra_tree_nodes_Nova_ClassDeclarationPropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_ClassDeclaration*);
-char (*spectra_tree_nodes_variables_Nova_InstanceDeclarationPropertyMap_virtualfunctionMap_Nova_isPrivate)(spectra_tree_nodes_Nova_ClassDeclarationPropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_ClassDeclaration*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_ClassDeclarationPropertyMap_virtualfunctionMap_Nova_identifier)(spectra_tree_nodes_Nova_InterfaceDeclarationPropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_InterfaceDeclaration*);
 };
 
 
@@ -8938,7 +8653,6 @@ void (*spectra_tree_nodes_Nova_Node_virtual_Nova_onAdded)(spectra_tree_nodes_Nov
 spectra_tree_nodes_variables_Nova_VariableDeclaration* (*spectra_tree_nodes_Nova_Node_virtual_Nova_findVariableDeclaration)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, int);
 spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_Node_virtual_Nova_parseStatement)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*, int);
 spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_Node_virtual_Nova_generateTemporaryScopeNode)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*);
-spectra_tree_nodes_Nova_Accessible* (*spectra_tree_nodes_Nova_Node_virtual0_Nova_cloneTo)(spectra_tree_nodes_Nova_Accessible*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Accessible*);
 char (*spectra_tree_nodes_Nova_Node_virtual_Nova_replace)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
 char (*spectra_tree_nodes_Nova_Node_virtual_Nova_validateTypes)(spectra_tree_nodes_Nova_Value*, nova_exception_Nova_ExceptionData*);
 char (*spectra_tree_nodes_Nova_Node_virtual_Nova_parsePlaceholders)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*);
@@ -8975,23 +8689,7 @@ nova_Nova_Object* (*nova_Nova_Object_virtual_static_Nova_default)(nova_Nova_Obje
 nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 spectra_tree_nodes_Nova_Literal* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMapLiteral_Nova_construct)(spectra_tree_nodes_Nova_LiteralFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*);
-void (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_addChild)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
-void (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_onAdded)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_variables_Nova_VariableDeclaration* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_findVariableDeclaration)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, nova_Nova_String*, char);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_parseStatement)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, nova_Nova_String*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*, char);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_generateTemporaryScopeNode)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_Accessible* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap0_Nova_cloneTo)(spectra_tree_nodes_Nova_AccessibleFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Accessible*, spectra_tree_nodes_Nova_Accessible*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_replace)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_validateTypes)(spectra_tree_nodes_Nova_ValueFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Value*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_parsePlaceholders)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_parsePlaceholderChildren)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_NodeList*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_writeAnnotationSeparator)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_toNova)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_writeNova)(spectra_tree_nodes_Nova_LiteralFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Literal*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_toString)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
 spectra_tree_nodes_Nova_Literal* (*spectra_tree_nodes_Nova_ValueFunctionMap_virtualfunctionMap_static_Nova_parse)(spectra_tree_nodes_Nova_LiteralFunctionMap*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*, char);
-char (*spectra_tree_nodes_Nova_ValueFunctionMap_virtualfunctionMap_Nova_parseType)(spectra_tree_nodes_Nova_ValueFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Value*, nova_Nova_String*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_ValueFunctionMap_virtualfunctionMap_Nova_writeType)(spectra_tree_nodes_Nova_ValueFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Value*);
 };
 
 
@@ -9002,20 +8700,6 @@ nova_Interface_VTable itable;
 nova_Nova_Object* (*nova_Nova_Object_virtual_static_Nova_default)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
-spectra_tree_nodes_Nova_Program* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_program)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_Nova_Instantiation* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentInstantiation)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_closures_Nova_LambdaExpression* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentLambda)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_NovaFile* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentFile)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_Nova_FunctionCall* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentFunctionCall)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_Nova_FunctionDeclaration* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentFunction)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_exceptionhandling_Nova_Try* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentTry)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_ClassDeclaration* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentClass)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_scopeConsumer)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_Scope* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_scope)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-int (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_index)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_Accessible* (*spectra_tree_nodes_Nova_ValuePropertyMap_virtualfunctionMap_Nova_returnedNode)(spectra_tree_nodes_Nova_AccessiblePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Accessible*);
-spectra_tree_nodes_Nova_Type* (*spectra_tree_nodes_Nova_ValuePropertyMap_virtualfunctionMap_Nova_type)(spectra_tree_nodes_Nova_ValuePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Value*);
-char (*spectra_tree_nodes_Nova_ValuePropertyMap_virtualfunctionMap_Nova_isAssignable)(spectra_tree_nodes_Nova_ValuePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Value*);
 };
 
 
@@ -9031,7 +8715,6 @@ void (*spectra_tree_nodes_Nova_Node_virtual_Nova_onAdded)(spectra_tree_nodes_Nov
 spectra_tree_nodes_variables_Nova_VariableDeclaration* (*spectra_tree_nodes_Nova_Node_virtual_Nova_findVariableDeclaration)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, int);
 spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_Node_virtual_Nova_parseStatement)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*, int);
 spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_Node_virtual_Nova_generateTemporaryScopeNode)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_Node_virtual_Nova_cloneTo)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
 char (*spectra_tree_nodes_Nova_Node_virtual_Nova_replace)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
 char (*spectra_tree_nodes_Nova_Node_virtual_Nova_validateTypes)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*);
 char (*spectra_tree_nodes_Nova_Node_virtual_Nova_parsePlaceholders)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*);
@@ -9062,20 +8745,6 @@ nova_Nova_Object* (*nova_Nova_Object_virtual_static_Nova_default)(nova_Nova_Obje
 nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMapNode_Nova_construct)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*);
-void (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_addChild)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
-void (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_onAdded)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_variables_Nova_VariableDeclaration* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_findVariableDeclaration)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, nova_Nova_String*, char);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_parseStatement)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, nova_Nova_String*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*, char);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_generateTemporaryScopeNode)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_cloneTo)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_replace)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_validateTypes)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_parsePlaceholders)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_parsePlaceholderChildren)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_NodeList*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_writeAnnotationSeparator)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_toNova)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_writeNova)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_toString)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
 };
 
 
@@ -9086,17 +8755,6 @@ nova_Interface_VTable itable;
 nova_Nova_Object* (*nova_Nova_Object_virtual_static_Nova_default)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
-spectra_tree_nodes_Nova_Program* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_program)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_Nova_Instantiation* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentInstantiation)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_closures_Nova_LambdaExpression* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentLambda)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_NovaFile* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentFile)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_Nova_FunctionCall* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentFunctionCall)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_Nova_FunctionDeclaration* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentFunction)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_exceptionhandling_Nova_Try* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentTry)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_ClassDeclaration* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentClass)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_scopeConsumer)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_Scope* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_scope)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-int (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_index)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
 };
 
 
@@ -9112,7 +8770,6 @@ void (*spectra_tree_nodes_Nova_Node_virtual_Nova_onAdded)(spectra_tree_nodes_Nov
 spectra_tree_nodes_variables_Nova_VariableDeclaration* (*spectra_tree_nodes_Nova_Node_virtual_Nova_findVariableDeclaration)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, int);
 spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_Node_virtual_Nova_parseStatement)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*, int);
 spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_Node_virtual_Nova_generateTemporaryScopeNode)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_Node_virtual_Nova_cloneTo)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
 char (*spectra_tree_nodes_Nova_Node_virtual_Nova_replace)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
 char (*spectra_tree_nodes_Nova_Node_virtual_Nova_validateTypes)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*);
 char (*spectra_tree_nodes_Nova_Node_virtual_Nova_parsePlaceholders)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*);
@@ -9143,20 +8800,6 @@ nova_Nova_Object* (*nova_Nova_Object_virtual_static_Nova_default)(nova_Nova_Obje
 nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 spectra_tree_nodes_Nova_NodeList* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMapNodeList_Nova_construct)(spectra_tree_nodes_Nova_NodeListFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*);
-void (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_addChild)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
-void (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_onAdded)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_variables_Nova_VariableDeclaration* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_findVariableDeclaration)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, nova_Nova_String*, char);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_parseStatement)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, nova_Nova_String*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*, char);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_generateTemporaryScopeNode)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_cloneTo)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_replace)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_validateTypes)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_parsePlaceholders)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_parsePlaceholderChildren)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_NodeList*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_writeAnnotationSeparator)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_toNova)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_writeNova)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_toString)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
 };
 
 
@@ -9167,17 +8810,6 @@ nova_Interface_VTable itable;
 nova_Nova_Object* (*nova_Nova_Object_virtual_static_Nova_default)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
-spectra_tree_nodes_Nova_Program* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_program)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_Nova_Instantiation* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentInstantiation)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_closures_Nova_LambdaExpression* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentLambda)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_NovaFile* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentFile)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_Nova_FunctionCall* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentFunctionCall)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_Nova_FunctionDeclaration* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentFunction)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_exceptionhandling_Nova_Try* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentTry)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_ClassDeclaration* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentClass)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_scopeConsumer)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_Scope* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_scope)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-int (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_index)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
 };
 
 
@@ -9193,7 +8825,6 @@ void (*spectra_tree_nodes_Nova_Node_virtual_Nova_onAdded)(spectra_tree_nodes_Nov
 spectra_tree_nodes_variables_Nova_VariableDeclaration* (*spectra_tree_nodes_Nova_Node_virtual_Nova_findVariableDeclaration)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, int);
 spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_Node_virtual_Nova_parseStatement)(spectra_tree_nodes_Nova_NovaFile*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*, int);
 spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_Node_virtual_Nova_generateTemporaryScopeNode)(spectra_tree_nodes_Nova_NovaFile*, nova_exception_Nova_ExceptionData*);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_Node_virtual_Nova_cloneTo)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
 char (*spectra_tree_nodes_Nova_Node_virtual_Nova_replace)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
 char (*spectra_tree_nodes_Nova_Node_virtual_Nova_validateTypes)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*);
 char (*spectra_tree_nodes_Nova_Node_virtual_Nova_parsePlaceholders)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*);
@@ -9224,20 +8855,6 @@ nova_Nova_Object* (*nova_Nova_Object_virtual_static_Nova_default)(nova_Nova_Obje
 nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMapNode_Nova_construct)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*);
-void (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_addChild)(spectra_tree_nodes_Nova_NovaFileFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_NovaFile*, spectra_tree_nodes_Nova_Node*);
-void (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_onAdded)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_variables_Nova_VariableDeclaration* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_findVariableDeclaration)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, nova_Nova_String*, char);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_parseStatement)(spectra_tree_nodes_Nova_NovaFileFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_NovaFile*, nova_Nova_String*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*, char);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_generateTemporaryScopeNode)(spectra_tree_nodes_Nova_NovaFileFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_NovaFile*);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_cloneTo)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_replace)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_validateTypes)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_parsePlaceholders)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_parsePlaceholderChildren)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_NodeList*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_writeAnnotationSeparator)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_toNova)(spectra_tree_nodes_Nova_NovaFileFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_NovaFile*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_writeNova)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_toString)(spectra_tree_nodes_Nova_NovaFileFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_NovaFile*);
 };
 
 
@@ -9248,17 +8865,6 @@ nova_Interface_VTable itable;
 nova_Nova_Object* (*nova_Nova_Object_virtual_static_Nova_default)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
-spectra_tree_nodes_Nova_Program* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_program)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_Nova_Instantiation* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentInstantiation)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_closures_Nova_LambdaExpression* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentLambda)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_NovaFile* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentFile)(spectra_tree_nodes_Nova_NovaFilePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_NovaFile*);
-spectra_tree_nodes_functions_Nova_FunctionCall* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentFunctionCall)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_Nova_FunctionDeclaration* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentFunction)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_exceptionhandling_Nova_Try* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentTry)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_ClassDeclaration* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentClass)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_scopeConsumer)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_Scope* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_scope)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-int (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_index)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
 };
 
 
@@ -9274,7 +8880,6 @@ void (*spectra_tree_nodes_Nova_Node_virtual_Nova_onAdded)(spectra_tree_nodes_Nov
 spectra_tree_nodes_variables_Nova_VariableDeclaration* (*spectra_tree_nodes_Nova_Node_virtual_Nova_findVariableDeclaration)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, int);
 spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_Node_virtual_Nova_parseStatement)(spectra_tree_nodes_functions_Nova_Instantiation*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*, int);
 spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_Node_virtual_Nova_generateTemporaryScopeNode)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*);
-spectra_tree_nodes_functions_Nova_FunctionCall* (*spectra_tree_nodes_Nova_Node_virtual_Nova_cloneTo)(spectra_tree_nodes_functions_Nova_FunctionCall*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_functions_Nova_FunctionCall*);
 char (*spectra_tree_nodes_Nova_Node_virtual_Nova_replace)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
 char (*spectra_tree_nodes_Nova_Node_virtual_Nova_validateTypes)(spectra_tree_nodes_Nova_Value*, nova_exception_Nova_ExceptionData*);
 char (*spectra_tree_nodes_Nova_Node_virtual_Nova_parsePlaceholders)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*);
@@ -9312,24 +8917,7 @@ nova_Nova_Object* (*nova_Nova_Object_virtual_static_Nova_default)(nova_Nova_Obje
 nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 spectra_tree_nodes_Nova_NumericRange* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMapNumericRange_Nova_construct)(spectra_tree_nodes_Nova_NumericRangeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*);
-void (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_addChild)(spectra_tree_nodes_functions_Nova_InstantiationFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_functions_Nova_Instantiation*, spectra_tree_nodes_Nova_Node*);
-void (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_onAdded)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_variables_Nova_VariableDeclaration* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_findVariableDeclaration)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, nova_Nova_String*, char);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_parseStatement)(spectra_tree_nodes_functions_Nova_InstantiationFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_functions_Nova_Instantiation*, nova_Nova_String*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*, char);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_generateTemporaryScopeNode)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_Nova_FunctionCall* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_cloneTo)(spectra_tree_nodes_functions_Nova_FunctionCallFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_functions_Nova_FunctionCall*, spectra_tree_nodes_functions_Nova_FunctionCall*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_replace)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_validateTypes)(spectra_tree_nodes_Nova_ValueFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Value*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_parsePlaceholders)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_parsePlaceholderChildren)(spectra_tree_nodes_functions_Nova_InstantiationFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_functions_Nova_Instantiation*, spectra_tree_nodes_Nova_NodeList*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_writeAnnotationSeparator)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_toNova)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_writeNova)(spectra_tree_nodes_Nova_NumericRangeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_NumericRange*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_toString)(spectra_tree_nodes_functions_Nova_FunctionCallFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_functions_Nova_FunctionCall*);
 spectra_tree_nodes_Nova_NumericRange* (*spectra_tree_nodes_Nova_ValueFunctionMap_virtualfunctionMap_static_Nova_parse)(spectra_tree_nodes_Nova_NumericRangeFunctionMap*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*, char);
-char (*spectra_tree_nodes_Nova_ValueFunctionMap_virtualfunctionMap_Nova_parseType)(spectra_tree_nodes_Nova_ValueFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Value*, nova_Nova_String*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_ValueFunctionMap_virtualfunctionMap_Nova_writeType)(spectra_tree_nodes_Nova_ValueFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Value*);
-nova_Nova_String* (*spectra_tree_nodes_functions_Nova_FunctionCallFunctionMap_virtualfunctionMap_Nova_writeName)(spectra_tree_nodes_functions_Nova_InstantiationFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_functions_Nova_Instantiation*);
 };
 
 
@@ -9340,20 +8928,6 @@ nova_Interface_VTable itable;
 nova_Nova_Object* (*nova_Nova_Object_virtual_static_Nova_default)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
-spectra_tree_nodes_Nova_Program* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_program)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_Nova_Instantiation* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentInstantiation)(spectra_tree_nodes_functions_Nova_InstantiationPropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_functions_Nova_Instantiation*);
-spectra_tree_nodes_functions_closures_Nova_LambdaExpression* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentLambda)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_NovaFile* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentFile)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_Nova_FunctionCall* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentFunctionCall)(spectra_tree_nodes_functions_Nova_FunctionCallPropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_functions_Nova_FunctionCall*);
-spectra_tree_nodes_functions_Nova_FunctionDeclaration* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentFunction)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_exceptionhandling_Nova_Try* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentTry)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_ClassDeclaration* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentClass)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_scopeConsumer)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_Scope* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_scope)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-int (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_index)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_Accessible* (*spectra_tree_nodes_Nova_ValuePropertyMap_virtualfunctionMap_Nova_returnedNode)(spectra_tree_nodes_Nova_ValuePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Value*);
-spectra_tree_nodes_Nova_Type* (*spectra_tree_nodes_Nova_ValuePropertyMap_virtualfunctionMap_Nova_type)(spectra_tree_nodes_variables_Nova_VariablePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_variables_Nova_Variable*);
-char (*spectra_tree_nodes_Nova_ValuePropertyMap_virtualfunctionMap_Nova_isAssignable)(spectra_tree_nodes_functions_Nova_FunctionCallPropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_functions_Nova_FunctionCall*);
 };
 
 
@@ -9369,7 +8943,6 @@ void (*spectra_tree_nodes_Nova_Node_virtual_Nova_onAdded)(spectra_tree_nodes_Nov
 spectra_tree_nodes_variables_Nova_VariableDeclaration* (*spectra_tree_nodes_Nova_Node_virtual_Nova_findVariableDeclaration)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, int);
 spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_Node_virtual_Nova_parseStatement)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*, int);
 spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_Node_virtual_Nova_generateTemporaryScopeNode)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_Node_virtual_Nova_cloneTo)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
 char (*spectra_tree_nodes_Nova_Node_virtual_Nova_replace)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
 char (*spectra_tree_nodes_Nova_Node_virtual_Nova_validateTypes)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*);
 char (*spectra_tree_nodes_Nova_Node_virtual_Nova_parsePlaceholders)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*);
@@ -9400,20 +8973,6 @@ nova_Nova_Object* (*nova_Nova_Object_virtual_static_Nova_default)(nova_Nova_Obje
 nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 spectra_tree_nodes_Nova_Package* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMapPackage_Nova_construct)(spectra_tree_nodes_Nova_PackageFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*);
-void (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_addChild)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
-void (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_onAdded)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_variables_Nova_VariableDeclaration* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_findVariableDeclaration)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, nova_Nova_String*, char);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_parseStatement)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, nova_Nova_String*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*, char);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_generateTemporaryScopeNode)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_cloneTo)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_replace)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_validateTypes)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_parsePlaceholders)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_parsePlaceholderChildren)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_NodeList*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_writeAnnotationSeparator)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_toNova)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_writeNova)(spectra_tree_nodes_Nova_PackageFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Package*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_toString)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
 };
 
 
@@ -9424,17 +8983,6 @@ nova_Interface_VTable itable;
 nova_Nova_Object* (*nova_Nova_Object_virtual_static_Nova_default)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
-spectra_tree_nodes_Nova_Program* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_program)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_Nova_Instantiation* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentInstantiation)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_closures_Nova_LambdaExpression* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentLambda)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_NovaFile* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentFile)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_Nova_FunctionCall* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentFunctionCall)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_Nova_FunctionDeclaration* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentFunction)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_exceptionhandling_Nova_Try* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentTry)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_ClassDeclaration* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentClass)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_scopeConsumer)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_Scope* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_scope)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-int (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_index)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
 };
 
 
@@ -9450,7 +8998,6 @@ void (*spectra_tree_nodes_Nova_Node_virtual_Nova_onAdded)(spectra_tree_nodes_Nov
 spectra_tree_nodes_variables_Nova_VariableDeclaration* (*spectra_tree_nodes_Nova_Node_virtual_Nova_findVariableDeclaration)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, int);
 spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_Node_virtual_Nova_parseStatement)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*, int);
 spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_Node_virtual_Nova_generateTemporaryScopeNode)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*);
-spectra_tree_nodes_Nova_Value* (*spectra_tree_nodes_Nova_Node_virtual_Nova_cloneTo)(spectra_tree_nodes_Nova_Value*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Value*);
 char (*spectra_tree_nodes_Nova_Node_virtual_Nova_replace)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
 char (*spectra_tree_nodes_Nova_Node_virtual_Nova_validateTypes)(spectra_tree_nodes_Nova_Value*, nova_exception_Nova_ExceptionData*);
 char (*spectra_tree_nodes_Nova_Node_virtual_Nova_parsePlaceholders)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*);
@@ -9487,23 +9034,7 @@ nova_Nova_Object* (*nova_Nova_Object_virtual_static_Nova_default)(nova_Nova_Obje
 nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMapNode_Nova_construct)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*);
-void (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_addChild)(spectra_tree_nodes_Nova_PlaceholderValueFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_PlaceholderValue*, spectra_tree_nodes_Nova_Node*);
-void (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_onAdded)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_variables_Nova_VariableDeclaration* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_findVariableDeclaration)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, nova_Nova_String*, char);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_parseStatement)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, nova_Nova_String*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*, char);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_generateTemporaryScopeNode)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_Value* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_cloneTo)(spectra_tree_nodes_Nova_ValueFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Value*, spectra_tree_nodes_Nova_Value*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_replace)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_validateTypes)(spectra_tree_nodes_Nova_ValueFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Value*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_parsePlaceholders)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_parsePlaceholderChildren)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_NodeList*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_writeAnnotationSeparator)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_toNova)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_writeNova)(spectra_tree_nodes_Nova_PlaceholderValueFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_PlaceholderValue*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_toString)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
 spectra_tree_nodes_Nova_PlaceholderValue* (*spectra_tree_nodes_Nova_ValueFunctionMap_virtualfunctionMap_static_Nova_parse)(spectra_tree_nodes_Nova_PlaceholderValueFunctionMap*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*, char);
-char (*spectra_tree_nodes_Nova_ValueFunctionMap_virtualfunctionMap_Nova_parseType)(spectra_tree_nodes_Nova_ValueFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Value*, nova_Nova_String*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_ValueFunctionMap_virtualfunctionMap_Nova_writeType)(spectra_tree_nodes_Nova_ValueFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Value*);
 };
 
 
@@ -9514,20 +9045,6 @@ nova_Interface_VTable itable;
 nova_Nova_Object* (*nova_Nova_Object_virtual_static_Nova_default)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
-spectra_tree_nodes_Nova_Program* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_program)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_Nova_Instantiation* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentInstantiation)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_closures_Nova_LambdaExpression* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentLambda)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_NovaFile* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentFile)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_Nova_FunctionCall* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentFunctionCall)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_Nova_FunctionDeclaration* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentFunction)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_exceptionhandling_Nova_Try* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentTry)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_ClassDeclaration* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentClass)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_scopeConsumer)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_Scope* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_scope)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-int (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_index)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_Accessible* (*spectra_tree_nodes_Nova_ValuePropertyMap_virtualfunctionMap_Nova_returnedNode)(spectra_tree_nodes_Nova_ValuePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Value*);
-spectra_tree_nodes_Nova_Type* (*spectra_tree_nodes_Nova_ValuePropertyMap_virtualfunctionMap_Nova_type)(spectra_tree_nodes_Nova_ValuePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Value*);
-char (*spectra_tree_nodes_Nova_ValuePropertyMap_virtualfunctionMap_Nova_isAssignable)(spectra_tree_nodes_Nova_ValuePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Value*);
 };
 
 
@@ -9543,7 +9060,6 @@ void (*spectra_tree_nodes_Nova_Node_virtual_Nova_onAdded)(spectra_tree_nodes_Nov
 spectra_tree_nodes_variables_Nova_VariableDeclaration* (*spectra_tree_nodes_Nova_Node_virtual_Nova_findVariableDeclaration)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, int);
 spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_Node_virtual_Nova_parseStatement)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*, int);
 spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_Node_virtual_Nova_generateTemporaryScopeNode)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*);
-spectra_tree_nodes_Nova_Accessible* (*spectra_tree_nodes_Nova_Node_virtual0_Nova_cloneTo)(spectra_tree_nodes_Nova_Accessible*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Accessible*);
 char (*spectra_tree_nodes_Nova_Node_virtual_Nova_replace)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
 char (*spectra_tree_nodes_Nova_Node_virtual_Nova_validateTypes)(spectra_tree_nodes_Nova_Value*, nova_exception_Nova_ExceptionData*);
 char (*spectra_tree_nodes_Nova_Node_virtual_Nova_parsePlaceholders)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*);
@@ -9580,23 +9096,7 @@ nova_Nova_Object* (*nova_Nova_Object_virtual_static_Nova_default)(nova_Nova_Obje
 nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 spectra_tree_nodes_Nova_Priority* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMapPriority_Nova_construct)(spectra_tree_nodes_Nova_PriorityFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*);
-void (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_addChild)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
-void (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_onAdded)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_variables_Nova_VariableDeclaration* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_findVariableDeclaration)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, nova_Nova_String*, char);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_parseStatement)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, nova_Nova_String*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*, char);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_generateTemporaryScopeNode)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_Accessible* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap0_Nova_cloneTo)(spectra_tree_nodes_Nova_AccessibleFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Accessible*, spectra_tree_nodes_Nova_Accessible*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_replace)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_validateTypes)(spectra_tree_nodes_Nova_ValueFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Value*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_parsePlaceholders)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_parsePlaceholderChildren)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_NodeList*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_writeAnnotationSeparator)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_toNova)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_writeNova)(spectra_tree_nodes_Nova_PriorityFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Priority*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_toString)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
 spectra_tree_nodes_Nova_Priority* (*spectra_tree_nodes_Nova_ValueFunctionMap_virtualfunctionMap_static_Nova_parse)(spectra_tree_nodes_Nova_PriorityFunctionMap*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*, char);
-char (*spectra_tree_nodes_Nova_ValueFunctionMap_virtualfunctionMap_Nova_parseType)(spectra_tree_nodes_Nova_ValueFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Value*, nova_Nova_String*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_ValueFunctionMap_virtualfunctionMap_Nova_writeType)(spectra_tree_nodes_Nova_ValueFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Value*);
 };
 
 
@@ -9607,20 +9107,6 @@ nova_Interface_VTable itable;
 nova_Nova_Object* (*nova_Nova_Object_virtual_static_Nova_default)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
-spectra_tree_nodes_Nova_Program* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_program)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_Nova_Instantiation* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentInstantiation)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_closures_Nova_LambdaExpression* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentLambda)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_NovaFile* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentFile)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_Nova_FunctionCall* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentFunctionCall)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_Nova_FunctionDeclaration* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentFunction)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_exceptionhandling_Nova_Try* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentTry)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_ClassDeclaration* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentClass)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_scopeConsumer)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_Scope* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_scope)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-int (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_index)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_Accessible* (*spectra_tree_nodes_Nova_ValuePropertyMap_virtualfunctionMap_Nova_returnedNode)(spectra_tree_nodes_Nova_AccessiblePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Accessible*);
-spectra_tree_nodes_Nova_Type* (*spectra_tree_nodes_Nova_ValuePropertyMap_virtualfunctionMap_Nova_type)(spectra_tree_nodes_Nova_PriorityPropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Priority*);
-char (*spectra_tree_nodes_Nova_ValuePropertyMap_virtualfunctionMap_Nova_isAssignable)(spectra_tree_nodes_Nova_ValuePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Value*);
 };
 
 
@@ -9636,7 +9122,6 @@ void (*spectra_tree_nodes_Nova_Node_virtual_Nova_onAdded)(spectra_tree_nodes_Nov
 spectra_tree_nodes_variables_Nova_VariableDeclaration* (*spectra_tree_nodes_Nova_Node_virtual_Nova_findVariableDeclaration)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, int);
 spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_Node_virtual_Nova_parseStatement)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*, int);
 spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_Node_virtual_Nova_generateTemporaryScopeNode)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_Node_virtual_Nova_cloneTo)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
 char (*spectra_tree_nodes_Nova_Node_virtual_Nova_replace)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
 char (*spectra_tree_nodes_Nova_Node_virtual_Nova_validateTypes)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*);
 char (*spectra_tree_nodes_Nova_Node_virtual_Nova_parsePlaceholders)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*);
@@ -9667,20 +9152,6 @@ nova_Nova_Object* (*nova_Nova_Object_virtual_static_Nova_default)(nova_Nova_Obje
 nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 spectra_tree_nodes_Nova_NodeList* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMapNodeList_Nova_construct)(spectra_tree_nodes_Nova_NodeListFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*);
-void (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_addChild)(spectra_tree_nodes_Nova_ProgramFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Program*, spectra_tree_nodes_Nova_Node*);
-void (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_onAdded)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_variables_Nova_VariableDeclaration* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_findVariableDeclaration)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, nova_Nova_String*, char);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_parseStatement)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, nova_Nova_String*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*, char);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_generateTemporaryScopeNode)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_cloneTo)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_replace)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_validateTypes)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_parsePlaceholders)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_parsePlaceholderChildren)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_NodeList*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_writeAnnotationSeparator)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_toNova)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_writeNova)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_toString)(spectra_tree_nodes_Nova_ProgramFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Program*);
 };
 
 
@@ -9691,17 +9162,6 @@ nova_Interface_VTable itable;
 nova_Nova_Object* (*nova_Nova_Object_virtual_static_Nova_default)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
-spectra_tree_nodes_Nova_Program* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_program)(spectra_tree_nodes_Nova_ProgramPropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Program*);
-spectra_tree_nodes_functions_Nova_Instantiation* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentInstantiation)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_closures_Nova_LambdaExpression* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentLambda)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_NovaFile* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentFile)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_Nova_FunctionCall* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentFunctionCall)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_Nova_FunctionDeclaration* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentFunction)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_exceptionhandling_Nova_Try* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentTry)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_ClassDeclaration* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentClass)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_scopeConsumer)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_Scope* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_scope)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-int (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_index)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
 };
 
 
@@ -9717,7 +9177,6 @@ void (*spectra_tree_nodes_Nova_Node_virtual_Nova_onAdded)(spectra_tree_nodes_Nov
 spectra_tree_nodes_variables_Nova_VariableDeclaration* (*spectra_tree_nodes_Nova_Node_virtual_Nova_findVariableDeclaration)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, int);
 spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_Node_virtual_Nova_parseStatement)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*, int);
 spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_Node_virtual_Nova_generateTemporaryScopeNode)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_Node_virtual_Nova_cloneTo)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
 char (*spectra_tree_nodes_Nova_Node_virtual_Nova_replace)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
 char (*spectra_tree_nodes_Nova_Node_virtual_Nova_validateTypes)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*);
 char (*spectra_tree_nodes_Nova_Node_virtual_Nova_parsePlaceholders)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*);
@@ -9748,20 +9207,6 @@ nova_Nova_Object* (*nova_Nova_Object_virtual_static_Nova_default)(nova_Nova_Obje
 nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMapNode_Nova_construct)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*);
-void (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_addChild)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
-void (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_onAdded)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_variables_Nova_VariableDeclaration* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_findVariableDeclaration)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, nova_Nova_String*, char);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_parseStatement)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, nova_Nova_String*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*, char);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_generateTemporaryScopeNode)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_cloneTo)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_replace)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_validateTypes)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_parsePlaceholders)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_parsePlaceholderChildren)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_NodeList*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_writeAnnotationSeparator)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_toNova)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_writeNova)(spectra_tree_nodes_Nova_ReturnFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Return*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_toString)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
 };
 
 
@@ -9772,17 +9217,6 @@ nova_Interface_VTable itable;
 nova_Nova_Object* (*nova_Nova_Object_virtual_static_Nova_default)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
-spectra_tree_nodes_Nova_Program* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_program)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_Nova_Instantiation* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentInstantiation)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_closures_Nova_LambdaExpression* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentLambda)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_NovaFile* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentFile)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_Nova_FunctionCall* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentFunctionCall)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_Nova_FunctionDeclaration* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentFunction)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_exceptionhandling_Nova_Try* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentTry)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_ClassDeclaration* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentClass)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_scopeConsumer)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_Scope* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_scope)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-int (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_index)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
 };
 
 
@@ -9798,7 +9232,6 @@ void (*spectra_tree_nodes_Nova_Node_virtual_Nova_onAdded)(spectra_tree_nodes_Nov
 spectra_tree_nodes_variables_Nova_VariableDeclaration* (*spectra_tree_nodes_Nova_Node_virtual_Nova_findVariableDeclaration)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, int);
 spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_Node_virtual_Nova_parseStatement)(spectra_tree_nodes_Nova_Scope*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*, int);
 spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_Node_virtual_Nova_generateTemporaryScopeNode)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_Node_virtual_Nova_cloneTo)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
 char (*spectra_tree_nodes_Nova_Node_virtual_Nova_replace)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
 char (*spectra_tree_nodes_Nova_Node_virtual_Nova_validateTypes)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*);
 char (*spectra_tree_nodes_Nova_Node_virtual_Nova_parsePlaceholders)(spectra_tree_nodes_Nova_Scope*, nova_exception_Nova_ExceptionData*);
@@ -9829,20 +9262,6 @@ nova_Nova_Object* (*nova_Nova_Object_virtual_static_Nova_default)(nova_Nova_Obje
 nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 spectra_tree_nodes_Nova_Scope* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMapScope_Nova_construct)(spectra_tree_nodes_Nova_ScopeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*);
-void (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_addChild)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
-void (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_onAdded)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_variables_Nova_VariableDeclaration* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_findVariableDeclaration)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, nova_Nova_String*, char);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_parseStatement)(spectra_tree_nodes_Nova_ScopeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Scope*, nova_Nova_String*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*, char);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_generateTemporaryScopeNode)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_cloneTo)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_replace)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_validateTypes)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_parsePlaceholders)(spectra_tree_nodes_Nova_ScopeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Scope*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_parsePlaceholderChildren)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_NodeList*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_writeAnnotationSeparator)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_toNova)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_writeNova)(spectra_tree_nodes_Nova_ScopeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Scope*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_toString)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
 };
 
 
@@ -9853,17 +9272,6 @@ nova_Interface_VTable itable;
 nova_Nova_Object* (*nova_Nova_Object_virtual_static_Nova_default)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
-spectra_tree_nodes_Nova_Program* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_program)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_Nova_Instantiation* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentInstantiation)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_closures_Nova_LambdaExpression* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentLambda)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_NovaFile* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentFile)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_Nova_FunctionCall* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentFunctionCall)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_Nova_FunctionDeclaration* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentFunction)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_exceptionhandling_Nova_Try* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentTry)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_ClassDeclaration* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentClass)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_scopeConsumer)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_Scope* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_scope)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-int (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_index)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
 };
 
 
@@ -9879,7 +9287,6 @@ void (*spectra_tree_nodes_Nova_Node_virtual_Nova_onAdded)(spectra_tree_nodes_Nov
 spectra_tree_nodes_variables_Nova_VariableDeclaration* (*spectra_tree_nodes_Nova_Node_virtual_Nova_findVariableDeclaration)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, int);
 spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_Node_virtual_Nova_parseStatement)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*, int);
 spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_Node_virtual_Nova_generateTemporaryScopeNode)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_Node_virtual_Nova_cloneTo)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
 char (*spectra_tree_nodes_Nova_Node_virtual_Nova_replace)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
 char (*spectra_tree_nodes_Nova_Node_virtual_Nova_validateTypes)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*);
 char (*spectra_tree_nodes_Nova_Node_virtual_Nova_parsePlaceholders)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*);
@@ -9910,20 +9317,6 @@ nova_Nova_Object* (*nova_Nova_Object_virtual_static_Nova_default)(nova_Nova_Obje
 nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 spectra_tree_nodes_Nova_Skeleton* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMapSkeleton_Nova_construct)(spectra_tree_nodes_Nova_SkeletonFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*);
-void (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_addChild)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
-void (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_onAdded)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_variables_Nova_VariableDeclaration* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_findVariableDeclaration)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, nova_Nova_String*, char);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_parseStatement)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, nova_Nova_String*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*, char);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_generateTemporaryScopeNode)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_cloneTo)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_replace)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_validateTypes)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_parsePlaceholders)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_parsePlaceholderChildren)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_NodeList*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_writeAnnotationSeparator)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_toNova)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_writeNova)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_toString)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
 };
 
 
@@ -9934,17 +9327,6 @@ nova_Interface_VTable itable;
 nova_Nova_Object* (*nova_Nova_Object_virtual_static_Nova_default)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
-spectra_tree_nodes_Nova_Program* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_program)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_Nova_Instantiation* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentInstantiation)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_closures_Nova_LambdaExpression* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentLambda)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_NovaFile* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentFile)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_Nova_FunctionCall* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentFunctionCall)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_Nova_FunctionDeclaration* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentFunction)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_exceptionhandling_Nova_Try* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentTry)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_ClassDeclaration* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentClass)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_scopeConsumer)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_Scope* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_scope)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-int (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_index)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
 };
 
 
@@ -9960,7 +9342,6 @@ void (*spectra_tree_nodes_Nova_Node_virtual_Nova_onAdded)(spectra_tree_nodes_Nov
 spectra_tree_nodes_variables_Nova_VariableDeclaration* (*spectra_tree_nodes_Nova_Node_virtual_Nova_findVariableDeclaration)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, int);
 spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_Node_virtual_Nova_parseStatement)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*, int);
 spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_Node_virtual_Nova_generateTemporaryScopeNode)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*);
-spectra_tree_nodes_Nova_Identifier* (*spectra_tree_nodes_Nova_Node_virtual_Nova_cloneTo)(spectra_tree_nodes_Nova_Identifier*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Identifier*);
 char (*spectra_tree_nodes_Nova_Node_virtual_Nova_replace)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
 char (*spectra_tree_nodes_Nova_Node_virtual_Nova_validateTypes)(spectra_tree_nodes_Nova_Value*, nova_exception_Nova_ExceptionData*);
 char (*spectra_tree_nodes_Nova_Node_virtual_Nova_parsePlaceholders)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*);
@@ -9997,23 +9378,7 @@ nova_Nova_Object* (*nova_Nova_Object_virtual_static_Nova_default)(nova_Nova_Obje
 nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 spectra_tree_nodes_Nova_Identifier* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMapIdentifier_Nova_construct)(spectra_tree_nodes_Nova_IdentifierFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*);
-void (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_addChild)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
-void (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_onAdded)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_variables_Nova_VariableDeclaration* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_findVariableDeclaration)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, nova_Nova_String*, char);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_parseStatement)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, nova_Nova_String*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*, char);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_generateTemporaryScopeNode)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_Identifier* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_cloneTo)(spectra_tree_nodes_Nova_IdentifierFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Identifier*, spectra_tree_nodes_Nova_Identifier*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_replace)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_validateTypes)(spectra_tree_nodes_Nova_ValueFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Value*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_parsePlaceholders)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_parsePlaceholderChildren)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_NodeList*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_writeAnnotationSeparator)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_toNova)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_writeNova)(spectra_tree_nodes_Nova_StaticClassReferenceFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_StaticClassReference*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_toString)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
 spectra_tree_nodes_Nova_StaticClassReference* (*spectra_tree_nodes_Nova_ValueFunctionMap_virtualfunctionMap_static_Nova_parse)(spectra_tree_nodes_Nova_StaticClassReferenceFunctionMap*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*, char);
-char (*spectra_tree_nodes_Nova_ValueFunctionMap_virtualfunctionMap_Nova_parseType)(spectra_tree_nodes_Nova_ValueFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Value*, nova_Nova_String*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_ValueFunctionMap_virtualfunctionMap_Nova_writeType)(spectra_tree_nodes_Nova_ValueFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Value*);
 };
 
 
@@ -10024,20 +9389,6 @@ nova_Interface_VTable itable;
 nova_Nova_Object* (*nova_Nova_Object_virtual_static_Nova_default)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
-spectra_tree_nodes_Nova_Program* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_program)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_Nova_Instantiation* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentInstantiation)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_closures_Nova_LambdaExpression* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentLambda)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_NovaFile* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentFile)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_Nova_FunctionCall* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentFunctionCall)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_Nova_FunctionDeclaration* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentFunction)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_exceptionhandling_Nova_Try* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentTry)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_ClassDeclaration* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentClass)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_scopeConsumer)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_Scope* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_scope)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-int (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_index)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_Accessible* (*spectra_tree_nodes_Nova_ValuePropertyMap_virtualfunctionMap_Nova_returnedNode)(spectra_tree_nodes_Nova_ValuePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Value*);
-spectra_tree_nodes_Nova_Type* (*spectra_tree_nodes_Nova_ValuePropertyMap_virtualfunctionMap_Nova_type)(spectra_tree_nodes_Nova_ValuePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Value*);
-char (*spectra_tree_nodes_Nova_ValuePropertyMap_virtualfunctionMap_Nova_isAssignable)(spectra_tree_nodes_Nova_ValuePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Value*);
 };
 
 
@@ -10053,7 +9404,6 @@ void (*spectra_tree_nodes_Nova_Node_virtual_Nova_onAdded)(spectra_tree_nodes_Nov
 spectra_tree_nodes_variables_Nova_VariableDeclaration* (*spectra_tree_nodes_Nova_Node_virtual_Nova_findVariableDeclaration)(spectra_tree_nodes_Nova_ClassDeclaration*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, int);
 spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_Node_virtual_Nova_parseStatement)(spectra_tree_nodes_Nova_ClassDeclaration*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*, int);
 spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_Node_virtual_Nova_generateTemporaryScopeNode)(spectra_tree_nodes_Nova_ClassDeclaration*, nova_exception_Nova_ExceptionData*);
-spectra_tree_nodes_Nova_ClassDeclaration* (*spectra_tree_nodes_Nova_Node_virtual_Nova_cloneTo)(spectra_tree_nodes_Nova_ClassDeclaration*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_ClassDeclaration*);
 char (*spectra_tree_nodes_Nova_Node_virtual_Nova_replace)(spectra_tree_nodes_Nova_ClassDeclaration*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
 char (*spectra_tree_nodes_Nova_Node_virtual_Nova_validateTypes)(spectra_tree_nodes_Nova_ClassDeclaration*, nova_exception_Nova_ExceptionData*);
 char (*spectra_tree_nodes_Nova_Node_virtual_Nova_parsePlaceholders)(spectra_tree_nodes_Nova_ClassDeclaration*, nova_exception_Nova_ExceptionData*);
@@ -10094,24 +9444,7 @@ nova_Nova_Object* (*nova_Nova_Object_virtual_static_Nova_default)(nova_Nova_Obje
 nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 spectra_tree_nodes_Nova_TraitDeclaration* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMapTraitDeclaration_Nova_construct)(spectra_tree_nodes_Nova_TraitDeclarationFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*);
-void (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_addChild)(spectra_tree_nodes_Nova_ClassDeclarationFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_ClassDeclaration*, spectra_tree_nodes_Nova_Node*);
-void (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_onAdded)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_variables_Nova_VariableDeclaration* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_findVariableDeclaration)(spectra_tree_nodes_Nova_ClassDeclarationFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_ClassDeclaration*, nova_Nova_String*, char);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_parseStatement)(spectra_tree_nodes_Nova_ClassDeclarationFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_ClassDeclaration*, nova_Nova_String*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*, char);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_generateTemporaryScopeNode)(spectra_tree_nodes_Nova_ClassDeclarationFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_ClassDeclaration*);
-spectra_tree_nodes_Nova_ClassDeclaration* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_cloneTo)(spectra_tree_nodes_Nova_ClassDeclarationFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_ClassDeclaration*, spectra_tree_nodes_Nova_ClassDeclaration*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_replace)(spectra_tree_nodes_Nova_ClassDeclarationFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_ClassDeclaration*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_validateTypes)(spectra_tree_nodes_Nova_ClassDeclarationFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_ClassDeclaration*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_parsePlaceholders)(spectra_tree_nodes_Nova_ClassDeclarationFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_ClassDeclaration*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_parsePlaceholderChildren)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_NodeList*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_writeAnnotationSeparator)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_toNova)(spectra_tree_nodes_Nova_ClassDeclarationFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_ClassDeclaration*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_writeNova)(spectra_tree_nodes_variables_Nova_VariableDeclarationFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_variables_Nova_VariableDeclaration*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_toString)(spectra_tree_nodes_Nova_ClassDeclarationFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_ClassDeclaration*);
 spectra_tree_nodes_Nova_TraitDeclaration* (*spectra_tree_nodes_Nova_ValueFunctionMap_virtualfunctionMap_static_Nova_parse)(spectra_tree_nodes_Nova_TraitDeclarationFunctionMap*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*, char);
-char (*spectra_tree_nodes_Nova_ValueFunctionMap_virtualfunctionMap_Nova_parseType)(spectra_tree_nodes_Nova_ValueFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Value*, nova_Nova_String*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_ValueFunctionMap_virtualfunctionMap_Nova_writeType)(spectra_tree_nodes_Nova_ValueFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Value*);
-char (*spectra_tree_nodes_variables_Nova_VariableDeclarationFunctionMap_virtualfunctionMap_Nova_parseModifier)(spectra_tree_nodes_Nova_ClassDeclarationFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_ClassDeclaration*, nova_Nova_String*);
 };
 
 
@@ -10122,23 +9455,6 @@ nova_Interface_VTable itable;
 nova_Nova_Object* (*nova_Nova_Object_virtual_static_Nova_default)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
-spectra_tree_nodes_Nova_Program* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_program)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_Nova_Instantiation* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentInstantiation)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_closures_Nova_LambdaExpression* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentLambda)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_NovaFile* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentFile)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_Nova_FunctionCall* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentFunctionCall)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_Nova_FunctionDeclaration* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentFunction)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_exceptionhandling_Nova_Try* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentTry)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_ClassDeclaration* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentClass)(spectra_tree_nodes_Nova_ClassDeclarationPropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_ClassDeclaration*);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_scopeConsumer)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_Scope* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_scope)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-int (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_index)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_Accessible* (*spectra_tree_nodes_Nova_ValuePropertyMap_virtualfunctionMap_Nova_returnedNode)(spectra_tree_nodes_Nova_ValuePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Value*);
-spectra_tree_nodes_Nova_Type* (*spectra_tree_nodes_Nova_ValuePropertyMap_virtualfunctionMap_Nova_type)(spectra_tree_nodes_Nova_ValuePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Value*);
-char (*spectra_tree_nodes_Nova_ValuePropertyMap_virtualfunctionMap_Nova_isAssignable)(spectra_tree_nodes_Nova_ValuePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Value*);
-char (*spectra_tree_nodes_variables_Nova_InstanceDeclarationPropertyMap_virtualfunctionMap_Nova_isPublic)(spectra_tree_nodes_Nova_ClassDeclarationPropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_ClassDeclaration*);
-char (*spectra_tree_nodes_variables_Nova_InstanceDeclarationPropertyMap_virtualfunctionMap_Nova_isPrivate)(spectra_tree_nodes_Nova_ClassDeclarationPropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_ClassDeclaration*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_ClassDeclarationPropertyMap_virtualfunctionMap_Nova_identifier)(spectra_tree_nodes_Nova_TraitDeclarationPropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_TraitDeclaration*);
 };
 
 
@@ -10152,7 +9468,6 @@ long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Objec
 spectra_tree_nodes_Nova_Type* (*spectra_tree_nodes_Nova_Type_virtual_static_Nova_parse)(spectra_tree_nodes_Nova_Type*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*, int);
 char (*spectra_tree_nodes_Nova_Type_virtual_Nova_isValid)(spectra_tree_nodes_Nova_Type*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
 nova_Nova_String* (*spectra_tree_nodes_Nova_Type_virtual_Nova_writeNova)(spectra_tree_nodes_Nova_Type*, nova_exception_Nova_ExceptionData*);
-spectra_tree_nodes_Nova_Type* (*spectra_tree_nodes_Nova_Type_virtual_Nova_cloneTo)(spectra_tree_nodes_Nova_Type*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Type*);
 char (*spectra_tree_nodes_Nova_Type_virtual_Accessorfunc_Nova_isGeneric)(spectra_tree_nodes_Nova_Type*, nova_exception_Nova_ExceptionData*);
 char (*spectra_tree_nodes_Nova_Type_virtual_Accessor_Nova_isPrimitiveType)(spectra_tree_nodes_Nova_Type*, nova_exception_Nova_ExceptionData*);
 };
@@ -10167,9 +9482,6 @@ nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*, n
 long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 spectra_tree_nodes_Nova_Type* (*spectra_tree_nodes_Nova_TypeFunctionMap_virtualfunctionMapType_Nova_construct)(spectra_tree_nodes_Nova_TypeFunctionMap*, nova_exception_Nova_ExceptionData*, nova_Nova_String*);
 spectra_tree_nodes_Nova_Type* (*spectra_tree_nodes_Nova_TypeFunctionMap_virtualfunctionMap_static_Nova_parse)(spectra_tree_nodes_Nova_TypeFunctionMap*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*, char);
-char (*spectra_tree_nodes_Nova_TypeFunctionMap_virtualfunctionMap_Nova_isValid)(spectra_tree_nodes_Nova_TypeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Type*, spectra_tree_nodes_Nova_Node*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_TypeFunctionMap_virtualfunctionMap_Nova_writeNova)(spectra_tree_nodes_Nova_TypeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Type*);
-spectra_tree_nodes_Nova_Type* (*spectra_tree_nodes_Nova_TypeFunctionMap_virtualfunctionMap_Nova_cloneTo)(spectra_tree_nodes_Nova_TypeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Type*, spectra_tree_nodes_Nova_Type*);
 };
 
 
@@ -10180,8 +9492,6 @@ nova_Interface_VTable itable;
 nova_Nova_Object* (*nova_Nova_Object_virtual_static_Nova_default)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
-char (*spectra_tree_nodes_Nova_TypePropertyMap_virtualfunctionMap_Nova_isGeneric)(spectra_tree_nodes_Nova_TypePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Type*);
-char (*spectra_tree_nodes_Nova_TypePropertyMap_virtualfunctionMap_Nova_isPrimitiveType)(spectra_tree_nodes_Nova_TypePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Type*);
 };
 
 
@@ -10227,7 +9537,6 @@ void (*spectra_tree_nodes_Nova_Node_virtual_Nova_onAdded)(spectra_tree_nodes_Nov
 spectra_tree_nodes_variables_Nova_VariableDeclaration* (*spectra_tree_nodes_Nova_Node_virtual_Nova_findVariableDeclaration)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, int);
 spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_Node_virtual_Nova_parseStatement)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*, int);
 spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_Node_virtual_Nova_generateTemporaryScopeNode)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*);
-spectra_tree_nodes_Nova_Value* (*spectra_tree_nodes_Nova_Node_virtual_Nova_cloneTo)(spectra_tree_nodes_Nova_Value*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Value*);
 char (*spectra_tree_nodes_Nova_Node_virtual_Nova_replace)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
 char (*spectra_tree_nodes_Nova_Node_virtual_Nova_validateTypes)(spectra_tree_nodes_Nova_Value*, nova_exception_Nova_ExceptionData*);
 char (*spectra_tree_nodes_Nova_Node_virtual_Nova_parsePlaceholders)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*);
@@ -10264,23 +9573,7 @@ nova_Nova_Object* (*nova_Nova_Object_virtual_static_Nova_default)(nova_Nova_Obje
 nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMapNode_Nova_construct)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*);
-void (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_addChild)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
-void (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_onAdded)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_variables_Nova_VariableDeclaration* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_findVariableDeclaration)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, nova_Nova_String*, char);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_parseStatement)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, nova_Nova_String*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*, char);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_generateTemporaryScopeNode)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_Value* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_cloneTo)(spectra_tree_nodes_Nova_ValueFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Value*, spectra_tree_nodes_Nova_Value*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_replace)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_validateTypes)(spectra_tree_nodes_Nova_ValueFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Value*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_parsePlaceholders)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_parsePlaceholderChildren)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_NodeList*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_writeAnnotationSeparator)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_toNova)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_writeNova)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_toString)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
 spectra_tree_nodes_Nova_Value* (*spectra_tree_nodes_Nova_ValueFunctionMap_virtualfunctionMap0_static_Nova_parse)(spectra_tree_nodes_Nova_ValueFunctionMap*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*, char);
-char (*spectra_tree_nodes_Nova_ValueFunctionMap_virtualfunctionMap_Nova_parseType)(spectra_tree_nodes_Nova_ValueFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Value*, nova_Nova_String*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_ValueFunctionMap_virtualfunctionMap_Nova_writeType)(spectra_tree_nodes_Nova_ValueFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Value*);
 };
 
 
@@ -10291,20 +9584,6 @@ nova_Interface_VTable itable;
 nova_Nova_Object* (*nova_Nova_Object_virtual_static_Nova_default)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
-spectra_tree_nodes_Nova_Program* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_program)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_Nova_Instantiation* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentInstantiation)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_closures_Nova_LambdaExpression* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentLambda)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_NovaFile* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentFile)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_Nova_FunctionCall* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentFunctionCall)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_Nova_FunctionDeclaration* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentFunction)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_exceptionhandling_Nova_Try* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentTry)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_ClassDeclaration* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentClass)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_scopeConsumer)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_Scope* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_scope)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-int (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_index)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_Accessible* (*spectra_tree_nodes_Nova_ValuePropertyMap_virtualfunctionMap_Nova_returnedNode)(spectra_tree_nodes_Nova_ValuePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Value*);
-spectra_tree_nodes_Nova_Type* (*spectra_tree_nodes_Nova_ValuePropertyMap_virtualfunctionMap_Nova_type)(spectra_tree_nodes_Nova_ValuePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Value*);
-char (*spectra_tree_nodes_Nova_ValuePropertyMap_virtualfunctionMap_Nova_isAssignable)(spectra_tree_nodes_Nova_ValuePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Value*);
 };
 
 
@@ -10320,7 +9599,6 @@ void (*spectra_tree_nodes_Nova_Node_virtual_Nova_onAdded)(spectra_tree_nodes_Nov
 spectra_tree_nodes_variables_Nova_VariableDeclaration* (*spectra_tree_nodes_Nova_Node_virtual_Nova_findVariableDeclaration)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, int);
 spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_Node_virtual_Nova_parseStatement)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*, int);
 spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_Node_virtual_Nova_generateTemporaryScopeNode)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_Node_virtual_Nova_cloneTo)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
 char (*spectra_tree_nodes_Nova_Node_virtual_Nova_replace)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
 char (*spectra_tree_nodes_Nova_Node_virtual_Nova_validateTypes)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*);
 char (*spectra_tree_nodes_Nova_Node_virtual_Nova_parsePlaceholders)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*);
@@ -10355,23 +9633,7 @@ spectra_tree_nodes_annotations_Nova_Modifier* (*nova_Nova_Object_virtual_static_
 nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 spectra_tree_nodes_annotations_Nova_AbstractAnnotation* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMapAbstractAnnotation_Nova_construct)(spectra_tree_nodes_annotations_Nova_AbstractAnnotationFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*);
-void (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_addChild)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
-void (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_onAdded)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_variables_Nova_VariableDeclaration* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_findVariableDeclaration)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, nova_Nova_String*, char);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_parseStatement)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, nova_Nova_String*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*, char);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_generateTemporaryScopeNode)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_cloneTo)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_replace)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_validateTypes)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_parsePlaceholders)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_parsePlaceholderChildren)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_NodeList*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_writeAnnotationSeparator)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_toNova)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_writeNova)(spectra_tree_nodes_annotations_Nova_ModifierFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_annotations_Nova_Modifier*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_toString)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
 spectra_tree_nodes_annotations_Nova_AbstractAnnotation* (*spectra_tree_nodes_annotations_Nova_AnnotationFunctionMap_virtualfunctionMap_static_Nova_parse)(spectra_tree_nodes_annotations_Nova_AbstractAnnotationFunctionMap*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, nova_Nova_String*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*, char);
-char (*spectra_tree_nodes_annotations_Nova_AnnotationFunctionMap_virtualfunctionMap_Nova_onApplied)(spectra_tree_nodes_annotations_Nova_AnnotationFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_annotations_Nova_Annotation*, spectra_tree_nodes_Nova_Node*, char);
-char (*spectra_tree_nodes_annotations_Nova_AnnotationFunctionMap_virtualfunctionMap_Nova_checkApplication)(spectra_tree_nodes_annotations_Nova_AnnotationFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_annotations_Nova_Annotation*, spectra_tree_nodes_Nova_Node*, char);
 };
 
 
@@ -10382,17 +9644,6 @@ nova_Interface_VTable itable;
 nova_Nova_Object* (*nova_Nova_Object_virtual_static_Nova_default)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
-spectra_tree_nodes_Nova_Program* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_program)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_Nova_Instantiation* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentInstantiation)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_closures_Nova_LambdaExpression* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentLambda)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_NovaFile* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentFile)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_Nova_FunctionCall* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentFunctionCall)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_Nova_FunctionDeclaration* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentFunction)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_exceptionhandling_Nova_Try* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentTry)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_ClassDeclaration* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentClass)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_scopeConsumer)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_Scope* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_scope)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-int (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_index)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
 nova_datastruct_list_Nova_ImmutableArray* (*spectra_tree_nodes_annotations_Nova_AnnotationPropertyMap_virtualfunctionMap_static_Nova_applicationTypes)(spectra_tree_nodes_annotations_Nova_AbstractAnnotationPropertyMap*, nova_exception_Nova_ExceptionData*);
 };
 
@@ -10436,7 +9687,6 @@ void (*spectra_tree_nodes_Nova_Node_virtual_Nova_onAdded)(spectra_tree_nodes_Nov
 spectra_tree_nodes_variables_Nova_VariableDeclaration* (*spectra_tree_nodes_Nova_Node_virtual_Nova_findVariableDeclaration)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, int);
 spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_Node_virtual_Nova_parseStatement)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*, int);
 spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_Node_virtual_Nova_generateTemporaryScopeNode)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_Node_virtual_Nova_cloneTo)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
 char (*spectra_tree_nodes_Nova_Node_virtual_Nova_replace)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
 char (*spectra_tree_nodes_Nova_Node_virtual_Nova_validateTypes)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*);
 char (*spectra_tree_nodes_Nova_Node_virtual_Nova_parsePlaceholders)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*);
@@ -10471,23 +9721,7 @@ nova_Nova_Object* (*nova_Nova_Object_virtual_static_Nova_default)(nova_Nova_Obje
 nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 spectra_tree_nodes_annotations_Nova_Annotation* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMapAnnotation_Nova_construct)(spectra_tree_nodes_annotations_Nova_AnnotationFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*);
-void (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_addChild)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
-void (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_onAdded)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_variables_Nova_VariableDeclaration* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_findVariableDeclaration)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, nova_Nova_String*, char);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_parseStatement)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, nova_Nova_String*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*, char);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_generateTemporaryScopeNode)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_cloneTo)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_replace)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_validateTypes)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_parsePlaceholders)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_parsePlaceholderChildren)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_NodeList*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_writeAnnotationSeparator)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_toNova)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_writeNova)(spectra_tree_nodes_annotations_Nova_AnnotationFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_annotations_Nova_Annotation*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_toString)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
 spectra_tree_nodes_annotations_Nova_Annotation* (*spectra_tree_nodes_annotations_Nova_AnnotationFunctionMap_virtualfunctionMap1_static_Nova_parse)(spectra_tree_nodes_annotations_Nova_AnnotationFunctionMap*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, nova_Nova_String*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*, char);
-char (*spectra_tree_nodes_annotations_Nova_AnnotationFunctionMap_virtualfunctionMap_Nova_onApplied)(spectra_tree_nodes_annotations_Nova_AnnotationFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_annotations_Nova_Annotation*, spectra_tree_nodes_Nova_Node*, char);
-char (*spectra_tree_nodes_annotations_Nova_AnnotationFunctionMap_virtualfunctionMap_Nova_checkApplication)(spectra_tree_nodes_annotations_Nova_AnnotationFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_annotations_Nova_Annotation*, spectra_tree_nodes_Nova_Node*, char);
 };
 
 
@@ -10498,17 +9732,6 @@ nova_Interface_VTable itable;
 nova_Nova_Object* (*nova_Nova_Object_virtual_static_Nova_default)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
-spectra_tree_nodes_Nova_Program* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_program)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_Nova_Instantiation* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentInstantiation)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_closures_Nova_LambdaExpression* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentLambda)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_NovaFile* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentFile)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_Nova_FunctionCall* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentFunctionCall)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_Nova_FunctionDeclaration* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentFunction)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_exceptionhandling_Nova_Try* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentTry)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_ClassDeclaration* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentClass)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_scopeConsumer)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_Scope* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_scope)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-int (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_index)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
 nova_datastruct_list_Nova_ImmutableArray* (*spectra_tree_nodes_annotations_Nova_AnnotationPropertyMap_virtualfunctionMap_static_Nova_applicationTypes)(spectra_tree_nodes_annotations_Nova_AnnotationPropertyMap*, nova_exception_Nova_ExceptionData*);
 };
 
@@ -10525,7 +9748,6 @@ void (*spectra_tree_nodes_Nova_Node_virtual_Nova_onAdded)(spectra_tree_nodes_Nov
 spectra_tree_nodes_variables_Nova_VariableDeclaration* (*spectra_tree_nodes_Nova_Node_virtual_Nova_findVariableDeclaration)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, int);
 spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_Node_virtual_Nova_parseStatement)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*, int);
 spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_Node_virtual_Nova_generateTemporaryScopeNode)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_Node_virtual_Nova_cloneTo)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
 char (*spectra_tree_nodes_Nova_Node_virtual_Nova_replace)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
 char (*spectra_tree_nodes_Nova_Node_virtual_Nova_validateTypes)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*);
 char (*spectra_tree_nodes_Nova_Node_virtual_Nova_parsePlaceholders)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*);
@@ -10560,23 +9782,7 @@ nova_Nova_Object* (*nova_Nova_Object_virtual_static_Nova_default)(nova_Nova_Obje
 nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 spectra_tree_nodes_annotations_Nova_AutoFinalAnnotation* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMapAutoFinalAnnotation_Nova_construct)(spectra_tree_nodes_annotations_Nova_AutoFinalAnnotationFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*);
-void (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_addChild)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
-void (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_onAdded)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_variables_Nova_VariableDeclaration* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_findVariableDeclaration)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, nova_Nova_String*, char);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_parseStatement)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, nova_Nova_String*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*, char);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_generateTemporaryScopeNode)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_cloneTo)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_replace)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_validateTypes)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_parsePlaceholders)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_parsePlaceholderChildren)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_NodeList*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_writeAnnotationSeparator)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_toNova)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_writeNova)(spectra_tree_nodes_annotations_Nova_AnnotationFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_annotations_Nova_Annotation*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_toString)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
 spectra_tree_nodes_annotations_Nova_AutoFinalAnnotation* (*spectra_tree_nodes_annotations_Nova_AnnotationFunctionMap_virtualfunctionMap_static_Nova_parse)(spectra_tree_nodes_annotations_Nova_AutoFinalAnnotationFunctionMap*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, nova_Nova_String*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*, char);
-char (*spectra_tree_nodes_annotations_Nova_AnnotationFunctionMap_virtualfunctionMap_Nova_onApplied)(spectra_tree_nodes_annotations_Nova_AnnotationFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_annotations_Nova_Annotation*, spectra_tree_nodes_Nova_Node*, char);
-char (*spectra_tree_nodes_annotations_Nova_AnnotationFunctionMap_virtualfunctionMap_Nova_checkApplication)(spectra_tree_nodes_annotations_Nova_AnnotationFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_annotations_Nova_Annotation*, spectra_tree_nodes_Nova_Node*, char);
 };
 
 
@@ -10587,17 +9793,6 @@ nova_Interface_VTable itable;
 nova_Nova_Object* (*nova_Nova_Object_virtual_static_Nova_default)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
-spectra_tree_nodes_Nova_Program* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_program)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_Nova_Instantiation* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentInstantiation)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_closures_Nova_LambdaExpression* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentLambda)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_NovaFile* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentFile)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_Nova_FunctionCall* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentFunctionCall)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_Nova_FunctionDeclaration* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentFunction)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_exceptionhandling_Nova_Try* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentTry)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_ClassDeclaration* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentClass)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_scopeConsumer)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_Scope* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_scope)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-int (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_index)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
 nova_datastruct_list_Nova_ImmutableArray* (*spectra_tree_nodes_annotations_Nova_AnnotationPropertyMap_virtualfunctionMap_static_Nova_applicationTypes)(spectra_tree_nodes_annotations_Nova_AnnotationPropertyMap*, nova_exception_Nova_ExceptionData*);
 };
 
@@ -10614,7 +9809,6 @@ void (*spectra_tree_nodes_Nova_Node_virtual_Nova_onAdded)(spectra_tree_nodes_Nov
 spectra_tree_nodes_variables_Nova_VariableDeclaration* (*spectra_tree_nodes_Nova_Node_virtual_Nova_findVariableDeclaration)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, int);
 spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_Node_virtual_Nova_parseStatement)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*, int);
 spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_Node_virtual_Nova_generateTemporaryScopeNode)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_Node_virtual_Nova_cloneTo)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
 char (*spectra_tree_nodes_Nova_Node_virtual_Nova_replace)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
 char (*spectra_tree_nodes_Nova_Node_virtual_Nova_validateTypes)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*);
 char (*spectra_tree_nodes_Nova_Node_virtual_Nova_parsePlaceholders)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*);
@@ -10649,23 +9843,7 @@ nova_Nova_Object* (*nova_Nova_Object_virtual_static_Nova_default)(nova_Nova_Obje
 nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 spectra_tree_nodes_annotations_Nova_AutoPureAnnotation* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMapAutoPureAnnotation_Nova_construct)(spectra_tree_nodes_annotations_Nova_AutoPureAnnotationFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*);
-void (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_addChild)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
-void (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_onAdded)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_variables_Nova_VariableDeclaration* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_findVariableDeclaration)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, nova_Nova_String*, char);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_parseStatement)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, nova_Nova_String*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*, char);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_generateTemporaryScopeNode)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_cloneTo)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_replace)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_validateTypes)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_parsePlaceholders)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_parsePlaceholderChildren)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_NodeList*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_writeAnnotationSeparator)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_toNova)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_writeNova)(spectra_tree_nodes_annotations_Nova_AnnotationFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_annotations_Nova_Annotation*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_toString)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
 spectra_tree_nodes_annotations_Nova_AutoPureAnnotation* (*spectra_tree_nodes_annotations_Nova_AnnotationFunctionMap_virtualfunctionMap_static_Nova_parse)(spectra_tree_nodes_annotations_Nova_AutoPureAnnotationFunctionMap*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, nova_Nova_String*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*, char);
-char (*spectra_tree_nodes_annotations_Nova_AnnotationFunctionMap_virtualfunctionMap_Nova_onApplied)(spectra_tree_nodes_annotations_Nova_AnnotationFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_annotations_Nova_Annotation*, spectra_tree_nodes_Nova_Node*, char);
-char (*spectra_tree_nodes_annotations_Nova_AnnotationFunctionMap_virtualfunctionMap_Nova_checkApplication)(spectra_tree_nodes_annotations_Nova_AnnotationFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_annotations_Nova_Annotation*, spectra_tree_nodes_Nova_Node*, char);
 };
 
 
@@ -10676,17 +9854,6 @@ nova_Interface_VTable itable;
 nova_Nova_Object* (*nova_Nova_Object_virtual_static_Nova_default)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
-spectra_tree_nodes_Nova_Program* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_program)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_Nova_Instantiation* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentInstantiation)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_closures_Nova_LambdaExpression* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentLambda)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_NovaFile* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentFile)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_Nova_FunctionCall* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentFunctionCall)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_Nova_FunctionDeclaration* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentFunction)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_exceptionhandling_Nova_Try* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentTry)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_ClassDeclaration* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentClass)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_scopeConsumer)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_Scope* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_scope)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-int (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_index)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
 nova_datastruct_list_Nova_ImmutableArray* (*spectra_tree_nodes_annotations_Nova_AnnotationPropertyMap_virtualfunctionMap_static_Nova_applicationTypes)(spectra_tree_nodes_annotations_Nova_AnnotationPropertyMap*, nova_exception_Nova_ExceptionData*);
 };
 
@@ -10703,7 +9870,6 @@ void (*spectra_tree_nodes_Nova_Node_virtual_Nova_onAdded)(spectra_tree_nodes_Nov
 spectra_tree_nodes_variables_Nova_VariableDeclaration* (*spectra_tree_nodes_Nova_Node_virtual_Nova_findVariableDeclaration)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, int);
 spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_Node_virtual_Nova_parseStatement)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*, int);
 spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_Node_virtual_Nova_generateTemporaryScopeNode)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_Node_virtual_Nova_cloneTo)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
 char (*spectra_tree_nodes_Nova_Node_virtual_Nova_replace)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
 char (*spectra_tree_nodes_Nova_Node_virtual_Nova_validateTypes)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*);
 char (*spectra_tree_nodes_Nova_Node_virtual_Nova_parsePlaceholders)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*);
@@ -10738,23 +9904,7 @@ spectra_tree_nodes_annotations_Nova_Modifier* (*nova_Nova_Object_virtual_static_
 nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 spectra_tree_nodes_annotations_Nova_FinalAnnotation* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMapFinalAnnotation_Nova_construct)(spectra_tree_nodes_annotations_Nova_FinalAnnotationFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*);
-void (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_addChild)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
-void (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_onAdded)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_variables_Nova_VariableDeclaration* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_findVariableDeclaration)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, nova_Nova_String*, char);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_parseStatement)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, nova_Nova_String*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*, char);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_generateTemporaryScopeNode)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_cloneTo)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_replace)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_validateTypes)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_parsePlaceholders)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_parsePlaceholderChildren)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_NodeList*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_writeAnnotationSeparator)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_toNova)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_writeNova)(spectra_tree_nodes_annotations_Nova_ModifierFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_annotations_Nova_Modifier*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_toString)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
 spectra_tree_nodes_annotations_Nova_FinalAnnotation* (*spectra_tree_nodes_annotations_Nova_AnnotationFunctionMap_virtualfunctionMap_static_Nova_parse)(spectra_tree_nodes_annotations_Nova_FinalAnnotationFunctionMap*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, nova_Nova_String*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*, char);
-char (*spectra_tree_nodes_annotations_Nova_AnnotationFunctionMap_virtualfunctionMap_Nova_onApplied)(spectra_tree_nodes_annotations_Nova_AnnotationFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_annotations_Nova_Annotation*, spectra_tree_nodes_Nova_Node*, char);
-char (*spectra_tree_nodes_annotations_Nova_AnnotationFunctionMap_virtualfunctionMap_Nova_checkApplication)(spectra_tree_nodes_annotations_Nova_AnnotationFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_annotations_Nova_Annotation*, spectra_tree_nodes_Nova_Node*, char);
 };
 
 
@@ -10765,17 +9915,6 @@ nova_Interface_VTable itable;
 nova_Nova_Object* (*nova_Nova_Object_virtual_static_Nova_default)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
-spectra_tree_nodes_Nova_Program* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_program)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_Nova_Instantiation* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentInstantiation)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_closures_Nova_LambdaExpression* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentLambda)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_NovaFile* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentFile)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_Nova_FunctionCall* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentFunctionCall)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_Nova_FunctionDeclaration* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentFunction)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_exceptionhandling_Nova_Try* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentTry)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_ClassDeclaration* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentClass)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_scopeConsumer)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_Scope* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_scope)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-int (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_index)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
 nova_datastruct_list_Nova_ImmutableArray* (*spectra_tree_nodes_annotations_Nova_AnnotationPropertyMap_virtualfunctionMap_static_Nova_applicationTypes)(spectra_tree_nodes_annotations_Nova_FinalAnnotationPropertyMap*, nova_exception_Nova_ExceptionData*);
 };
 
@@ -10792,7 +9931,6 @@ void (*spectra_tree_nodes_Nova_Node_virtual_Nova_onAdded)(spectra_tree_nodes_Nov
 spectra_tree_nodes_variables_Nova_VariableDeclaration* (*spectra_tree_nodes_Nova_Node_virtual_Nova_findVariableDeclaration)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, int);
 spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_Node_virtual_Nova_parseStatement)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*, int);
 spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_Node_virtual_Nova_generateTemporaryScopeNode)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_Node_virtual_Nova_cloneTo)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
 char (*spectra_tree_nodes_Nova_Node_virtual_Nova_replace)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
 char (*spectra_tree_nodes_Nova_Node_virtual_Nova_validateTypes)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*);
 char (*spectra_tree_nodes_Nova_Node_virtual_Nova_parsePlaceholders)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*);
@@ -10827,23 +9965,7 @@ spectra_tree_nodes_annotations_Nova_Modifier* (*nova_Nova_Object_virtual_static_
 nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 spectra_tree_nodes_annotations_Nova_ImmutableAnnotation* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMapImmutableAnnotation_Nova_construct)(spectra_tree_nodes_annotations_Nova_ImmutableAnnotationFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*);
-void (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_addChild)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
-void (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_onAdded)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_variables_Nova_VariableDeclaration* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_findVariableDeclaration)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, nova_Nova_String*, char);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_parseStatement)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, nova_Nova_String*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*, char);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_generateTemporaryScopeNode)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_cloneTo)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_replace)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_validateTypes)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_parsePlaceholders)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_parsePlaceholderChildren)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_NodeList*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_writeAnnotationSeparator)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_toNova)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_writeNova)(spectra_tree_nodes_annotations_Nova_ModifierFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_annotations_Nova_Modifier*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_toString)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
 spectra_tree_nodes_annotations_Nova_ImmutableAnnotation* (*spectra_tree_nodes_annotations_Nova_AnnotationFunctionMap_virtualfunctionMap_static_Nova_parse)(spectra_tree_nodes_annotations_Nova_ImmutableAnnotationFunctionMap*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, nova_Nova_String*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*, char);
-char (*spectra_tree_nodes_annotations_Nova_AnnotationFunctionMap_virtualfunctionMap_Nova_onApplied)(spectra_tree_nodes_annotations_Nova_AnnotationFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_annotations_Nova_Annotation*, spectra_tree_nodes_Nova_Node*, char);
-char (*spectra_tree_nodes_annotations_Nova_AnnotationFunctionMap_virtualfunctionMap_Nova_checkApplication)(spectra_tree_nodes_annotations_Nova_AnnotationFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_annotations_Nova_Annotation*, spectra_tree_nodes_Nova_Node*, char);
 };
 
 
@@ -10854,17 +9976,6 @@ nova_Interface_VTable itable;
 nova_Nova_Object* (*nova_Nova_Object_virtual_static_Nova_default)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
-spectra_tree_nodes_Nova_Program* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_program)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_Nova_Instantiation* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentInstantiation)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_closures_Nova_LambdaExpression* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentLambda)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_NovaFile* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentFile)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_Nova_FunctionCall* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentFunctionCall)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_Nova_FunctionDeclaration* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentFunction)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_exceptionhandling_Nova_Try* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentTry)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_ClassDeclaration* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentClass)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_scopeConsumer)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_Scope* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_scope)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-int (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_index)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
 nova_datastruct_list_Nova_ImmutableArray* (*spectra_tree_nodes_annotations_Nova_AnnotationPropertyMap_virtualfunctionMap_static_Nova_applicationTypes)(spectra_tree_nodes_annotations_Nova_ImmutableAnnotationPropertyMap*, nova_exception_Nova_ExceptionData*);
 };
 
@@ -10881,7 +9992,6 @@ void (*spectra_tree_nodes_Nova_Node_virtual_Nova_onAdded)(spectra_tree_nodes_Nov
 spectra_tree_nodes_variables_Nova_VariableDeclaration* (*spectra_tree_nodes_Nova_Node_virtual_Nova_findVariableDeclaration)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, int);
 spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_Node_virtual_Nova_parseStatement)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*, int);
 spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_Node_virtual_Nova_generateTemporaryScopeNode)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_Node_virtual_Nova_cloneTo)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
 char (*spectra_tree_nodes_Nova_Node_virtual_Nova_replace)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
 char (*spectra_tree_nodes_Nova_Node_virtual_Nova_validateTypes)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*);
 char (*spectra_tree_nodes_Nova_Node_virtual_Nova_parsePlaceholders)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*);
@@ -10916,23 +10026,7 @@ spectra_tree_nodes_annotations_Nova_Modifier* (*nova_Nova_Object_virtual_static_
 nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 spectra_tree_nodes_annotations_Nova_ImpureAnnotation* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMapImpureAnnotation_Nova_construct)(spectra_tree_nodes_annotations_Nova_ImpureAnnotationFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*);
-void (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_addChild)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
-void (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_onAdded)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_variables_Nova_VariableDeclaration* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_findVariableDeclaration)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, nova_Nova_String*, char);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_parseStatement)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, nova_Nova_String*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*, char);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_generateTemporaryScopeNode)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_cloneTo)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_replace)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_validateTypes)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_parsePlaceholders)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_parsePlaceholderChildren)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_NodeList*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_writeAnnotationSeparator)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_toNova)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_writeNova)(spectra_tree_nodes_annotations_Nova_ModifierFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_annotations_Nova_Modifier*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_toString)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
 spectra_tree_nodes_annotations_Nova_ImpureAnnotation* (*spectra_tree_nodes_annotations_Nova_AnnotationFunctionMap_virtualfunctionMap_static_Nova_parse)(spectra_tree_nodes_annotations_Nova_ImpureAnnotationFunctionMap*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, nova_Nova_String*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*, char);
-char (*spectra_tree_nodes_annotations_Nova_AnnotationFunctionMap_virtualfunctionMap_Nova_onApplied)(spectra_tree_nodes_annotations_Nova_AnnotationFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_annotations_Nova_Annotation*, spectra_tree_nodes_Nova_Node*, char);
-char (*spectra_tree_nodes_annotations_Nova_AnnotationFunctionMap_virtualfunctionMap_Nova_checkApplication)(spectra_tree_nodes_annotations_Nova_AnnotationFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_annotations_Nova_Annotation*, spectra_tree_nodes_Nova_Node*, char);
 };
 
 
@@ -10943,17 +10037,6 @@ nova_Interface_VTable itable;
 nova_Nova_Object* (*nova_Nova_Object_virtual_static_Nova_default)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
-spectra_tree_nodes_Nova_Program* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_program)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_Nova_Instantiation* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentInstantiation)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_closures_Nova_LambdaExpression* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentLambda)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_NovaFile* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentFile)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_Nova_FunctionCall* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentFunctionCall)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_Nova_FunctionDeclaration* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentFunction)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_exceptionhandling_Nova_Try* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentTry)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_ClassDeclaration* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentClass)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_scopeConsumer)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_Scope* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_scope)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-int (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_index)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
 nova_datastruct_list_Nova_ImmutableArray* (*spectra_tree_nodes_annotations_Nova_AnnotationPropertyMap_virtualfunctionMap_static_Nova_applicationTypes)(spectra_tree_nodes_annotations_Nova_ImpureAnnotationPropertyMap*, nova_exception_Nova_ExceptionData*);
 };
 
@@ -10970,7 +10053,6 @@ void (*spectra_tree_nodes_Nova_Node_virtual_Nova_onAdded)(spectra_tree_nodes_Nov
 spectra_tree_nodes_variables_Nova_VariableDeclaration* (*spectra_tree_nodes_Nova_Node_virtual_Nova_findVariableDeclaration)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, int);
 spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_Node_virtual_Nova_parseStatement)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*, int);
 spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_Node_virtual_Nova_generateTemporaryScopeNode)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_Node_virtual_Nova_cloneTo)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
 char (*spectra_tree_nodes_Nova_Node_virtual_Nova_replace)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
 char (*spectra_tree_nodes_Nova_Node_virtual_Nova_validateTypes)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*);
 char (*spectra_tree_nodes_Nova_Node_virtual_Nova_parsePlaceholders)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*);
@@ -11005,23 +10087,7 @@ spectra_tree_nodes_annotations_Nova_Modifier* (*nova_Nova_Object_virtual_static_
 nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 spectra_tree_nodes_annotations_Nova_LetAnnotation* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMapLetAnnotation_Nova_construct)(spectra_tree_nodes_annotations_Nova_LetAnnotationFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*);
-void (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_addChild)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
-void (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_onAdded)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_variables_Nova_VariableDeclaration* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_findVariableDeclaration)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, nova_Nova_String*, char);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_parseStatement)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, nova_Nova_String*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*, char);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_generateTemporaryScopeNode)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_cloneTo)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_replace)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_validateTypes)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_parsePlaceholders)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_parsePlaceholderChildren)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_NodeList*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_writeAnnotationSeparator)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_toNova)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_writeNova)(spectra_tree_nodes_annotations_Nova_ModifierFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_annotations_Nova_Modifier*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_toString)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
 spectra_tree_nodes_annotations_Nova_FinalAnnotation* (*spectra_tree_nodes_annotations_Nova_AnnotationFunctionMap_virtualfunctionMap_static_Nova_parse)(spectra_tree_nodes_annotations_Nova_FinalAnnotationFunctionMap*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, nova_Nova_String*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*, char);
-char (*spectra_tree_nodes_annotations_Nova_AnnotationFunctionMap_virtualfunctionMap_Nova_onApplied)(spectra_tree_nodes_annotations_Nova_AnnotationFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_annotations_Nova_Annotation*, spectra_tree_nodes_Nova_Node*, char);
-char (*spectra_tree_nodes_annotations_Nova_AnnotationFunctionMap_virtualfunctionMap_Nova_checkApplication)(spectra_tree_nodes_annotations_Nova_AnnotationFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_annotations_Nova_Annotation*, spectra_tree_nodes_Nova_Node*, char);
 };
 
 
@@ -11032,17 +10098,6 @@ nova_Interface_VTable itable;
 nova_Nova_Object* (*nova_Nova_Object_virtual_static_Nova_default)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
-spectra_tree_nodes_Nova_Program* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_program)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_Nova_Instantiation* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentInstantiation)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_closures_Nova_LambdaExpression* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentLambda)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_NovaFile* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentFile)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_Nova_FunctionCall* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentFunctionCall)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_Nova_FunctionDeclaration* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentFunction)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_exceptionhandling_Nova_Try* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentTry)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_ClassDeclaration* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentClass)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_scopeConsumer)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_Scope* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_scope)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-int (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_index)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
 nova_datastruct_list_Nova_ImmutableArray* (*spectra_tree_nodes_annotations_Nova_AnnotationPropertyMap_virtualfunctionMap_static_Nova_applicationTypes)(spectra_tree_nodes_annotations_Nova_LetAnnotationPropertyMap*, nova_exception_Nova_ExceptionData*);
 };
 
@@ -11059,7 +10114,6 @@ void (*spectra_tree_nodes_Nova_Node_virtual_Nova_onAdded)(spectra_tree_nodes_Nov
 spectra_tree_nodes_variables_Nova_VariableDeclaration* (*spectra_tree_nodes_Nova_Node_virtual_Nova_findVariableDeclaration)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, int);
 spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_Node_virtual_Nova_parseStatement)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*, int);
 spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_Node_virtual_Nova_generateTemporaryScopeNode)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_Node_virtual_Nova_cloneTo)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
 char (*spectra_tree_nodes_Nova_Node_virtual_Nova_replace)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
 char (*spectra_tree_nodes_Nova_Node_virtual_Nova_validateTypes)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*);
 char (*spectra_tree_nodes_Nova_Node_virtual_Nova_parsePlaceholders)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*);
@@ -11094,23 +10148,7 @@ spectra_tree_nodes_annotations_Nova_Modifier* (*nova_Nova_Object_virtual_static_
 nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 spectra_tree_nodes_annotations_Nova_Annotation* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMapAnnotation_Nova_construct)(spectra_tree_nodes_annotations_Nova_AnnotationFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*);
-void (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_addChild)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
-void (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_onAdded)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_variables_Nova_VariableDeclaration* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_findVariableDeclaration)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, nova_Nova_String*, char);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_parseStatement)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, nova_Nova_String*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*, char);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_generateTemporaryScopeNode)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_cloneTo)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_replace)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_validateTypes)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_parsePlaceholders)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_parsePlaceholderChildren)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_NodeList*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_writeAnnotationSeparator)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_toNova)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_writeNova)(spectra_tree_nodes_annotations_Nova_ModifierFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_annotations_Nova_Modifier*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_toString)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
 spectra_tree_nodes_annotations_Nova_Annotation* (*spectra_tree_nodes_annotations_Nova_AnnotationFunctionMap_virtualfunctionMap1_static_Nova_parse)(spectra_tree_nodes_annotations_Nova_AnnotationFunctionMap*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, nova_Nova_String*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*, char);
-char (*spectra_tree_nodes_annotations_Nova_AnnotationFunctionMap_virtualfunctionMap_Nova_onApplied)(spectra_tree_nodes_annotations_Nova_AnnotationFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_annotations_Nova_Annotation*, spectra_tree_nodes_Nova_Node*, char);
-char (*spectra_tree_nodes_annotations_Nova_AnnotationFunctionMap_virtualfunctionMap_Nova_checkApplication)(spectra_tree_nodes_annotations_Nova_AnnotationFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_annotations_Nova_Annotation*, spectra_tree_nodes_Nova_Node*, char);
 };
 
 
@@ -11121,17 +10159,6 @@ nova_Interface_VTable itable;
 nova_Nova_Object* (*nova_Nova_Object_virtual_static_Nova_default)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
-spectra_tree_nodes_Nova_Program* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_program)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_Nova_Instantiation* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentInstantiation)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_closures_Nova_LambdaExpression* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentLambda)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_NovaFile* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentFile)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_Nova_FunctionCall* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentFunctionCall)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_Nova_FunctionDeclaration* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentFunction)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_exceptionhandling_Nova_Try* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentTry)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_ClassDeclaration* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentClass)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_scopeConsumer)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_Scope* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_scope)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-int (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_index)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
 nova_datastruct_list_Nova_ImmutableArray* (*spectra_tree_nodes_annotations_Nova_AnnotationPropertyMap_virtualfunctionMap_static_Nova_applicationTypes)(spectra_tree_nodes_annotations_Nova_AnnotationPropertyMap*, nova_exception_Nova_ExceptionData*);
 };
 
@@ -11148,7 +10175,6 @@ void (*spectra_tree_nodes_Nova_Node_virtual_Nova_onAdded)(spectra_tree_nodes_Nov
 spectra_tree_nodes_variables_Nova_VariableDeclaration* (*spectra_tree_nodes_Nova_Node_virtual_Nova_findVariableDeclaration)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, int);
 spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_Node_virtual_Nova_parseStatement)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*, int);
 spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_Node_virtual_Nova_generateTemporaryScopeNode)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_Node_virtual_Nova_cloneTo)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
 char (*spectra_tree_nodes_Nova_Node_virtual_Nova_replace)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
 char (*spectra_tree_nodes_Nova_Node_virtual_Nova_validateTypes)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*);
 char (*spectra_tree_nodes_Nova_Node_virtual_Nova_parsePlaceholders)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*);
@@ -11183,23 +10209,7 @@ spectra_tree_nodes_annotations_Nova_Modifier* (*nova_Nova_Object_virtual_static_
 nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 spectra_tree_nodes_annotations_Nova_NativeAnnotation* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMapNativeAnnotation_Nova_construct)(spectra_tree_nodes_annotations_Nova_NativeAnnotationFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*);
-void (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_addChild)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
-void (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_onAdded)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_variables_Nova_VariableDeclaration* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_findVariableDeclaration)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, nova_Nova_String*, char);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_parseStatement)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, nova_Nova_String*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*, char);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_generateTemporaryScopeNode)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_cloneTo)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_replace)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_validateTypes)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_parsePlaceholders)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_parsePlaceholderChildren)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_NodeList*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_writeAnnotationSeparator)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_toNova)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_writeNova)(spectra_tree_nodes_annotations_Nova_ModifierFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_annotations_Nova_Modifier*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_toString)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
 spectra_tree_nodes_annotations_Nova_NativeAnnotation* (*spectra_tree_nodes_annotations_Nova_AnnotationFunctionMap_virtualfunctionMap_static_Nova_parse)(spectra_tree_nodes_annotations_Nova_NativeAnnotationFunctionMap*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, nova_Nova_String*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*, char);
-char (*spectra_tree_nodes_annotations_Nova_AnnotationFunctionMap_virtualfunctionMap_Nova_onApplied)(spectra_tree_nodes_annotations_Nova_AnnotationFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_annotations_Nova_Annotation*, spectra_tree_nodes_Nova_Node*, char);
-char (*spectra_tree_nodes_annotations_Nova_AnnotationFunctionMap_virtualfunctionMap_Nova_checkApplication)(spectra_tree_nodes_annotations_Nova_AnnotationFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_annotations_Nova_Annotation*, spectra_tree_nodes_Nova_Node*, char);
 };
 
 
@@ -11210,17 +10220,6 @@ nova_Interface_VTable itable;
 nova_Nova_Object* (*nova_Nova_Object_virtual_static_Nova_default)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
-spectra_tree_nodes_Nova_Program* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_program)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_Nova_Instantiation* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentInstantiation)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_closures_Nova_LambdaExpression* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentLambda)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_NovaFile* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentFile)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_Nova_FunctionCall* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentFunctionCall)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_Nova_FunctionDeclaration* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentFunction)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_exceptionhandling_Nova_Try* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentTry)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_ClassDeclaration* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentClass)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_scopeConsumer)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_Scope* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_scope)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-int (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_index)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
 nova_datastruct_list_Nova_ImmutableArray* (*spectra_tree_nodes_annotations_Nova_AnnotationPropertyMap_virtualfunctionMap_static_Nova_applicationTypes)(spectra_tree_nodes_annotations_Nova_NativeAnnotationPropertyMap*, nova_exception_Nova_ExceptionData*);
 };
 
@@ -11237,7 +10236,6 @@ void (*spectra_tree_nodes_Nova_Node_virtual_Nova_onAdded)(spectra_tree_nodes_Nov
 spectra_tree_nodes_variables_Nova_VariableDeclaration* (*spectra_tree_nodes_Nova_Node_virtual_Nova_findVariableDeclaration)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, int);
 spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_Node_virtual_Nova_parseStatement)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*, int);
 spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_Node_virtual_Nova_generateTemporaryScopeNode)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_Node_virtual_Nova_cloneTo)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
 char (*spectra_tree_nodes_Nova_Node_virtual_Nova_replace)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
 char (*spectra_tree_nodes_Nova_Node_virtual_Nova_validateTypes)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*);
 char (*spectra_tree_nodes_Nova_Node_virtual_Nova_parsePlaceholders)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*);
@@ -11272,23 +10270,7 @@ spectra_tree_nodes_annotations_Nova_Modifier* (*nova_Nova_Object_virtual_static_
 nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 spectra_tree_nodes_annotations_Nova_OverrideAnnotation* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMapOverrideAnnotation_Nova_construct)(spectra_tree_nodes_annotations_Nova_OverrideAnnotationFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*);
-void (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_addChild)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
-void (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_onAdded)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_variables_Nova_VariableDeclaration* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_findVariableDeclaration)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, nova_Nova_String*, char);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_parseStatement)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, nova_Nova_String*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*, char);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_generateTemporaryScopeNode)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_cloneTo)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_replace)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_validateTypes)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_parsePlaceholders)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_parsePlaceholderChildren)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_NodeList*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_writeAnnotationSeparator)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_toNova)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_writeNova)(spectra_tree_nodes_annotations_Nova_ModifierFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_annotations_Nova_Modifier*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_toString)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
 spectra_tree_nodes_annotations_Nova_OverrideAnnotation* (*spectra_tree_nodes_annotations_Nova_AnnotationFunctionMap_virtualfunctionMap_static_Nova_parse)(spectra_tree_nodes_annotations_Nova_OverrideAnnotationFunctionMap*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, nova_Nova_String*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*, char);
-char (*spectra_tree_nodes_annotations_Nova_AnnotationFunctionMap_virtualfunctionMap_Nova_onApplied)(spectra_tree_nodes_annotations_Nova_AnnotationFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_annotations_Nova_Annotation*, spectra_tree_nodes_Nova_Node*, char);
-char (*spectra_tree_nodes_annotations_Nova_AnnotationFunctionMap_virtualfunctionMap_Nova_checkApplication)(spectra_tree_nodes_annotations_Nova_AnnotationFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_annotations_Nova_Annotation*, spectra_tree_nodes_Nova_Node*, char);
 };
 
 
@@ -11299,17 +10281,6 @@ nova_Interface_VTable itable;
 nova_Nova_Object* (*nova_Nova_Object_virtual_static_Nova_default)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
-spectra_tree_nodes_Nova_Program* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_program)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_Nova_Instantiation* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentInstantiation)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_closures_Nova_LambdaExpression* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentLambda)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_NovaFile* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentFile)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_Nova_FunctionCall* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentFunctionCall)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_Nova_FunctionDeclaration* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentFunction)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_exceptionhandling_Nova_Try* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentTry)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_ClassDeclaration* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentClass)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_scopeConsumer)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_Scope* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_scope)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-int (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_index)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
 nova_datastruct_list_Nova_ImmutableArray* (*spectra_tree_nodes_annotations_Nova_AnnotationPropertyMap_virtualfunctionMap_static_Nova_applicationTypes)(spectra_tree_nodes_annotations_Nova_OverrideAnnotationPropertyMap*, nova_exception_Nova_ExceptionData*);
 };
 
@@ -11326,7 +10297,6 @@ void (*spectra_tree_nodes_Nova_Node_virtual_Nova_onAdded)(spectra_tree_nodes_Nov
 spectra_tree_nodes_variables_Nova_VariableDeclaration* (*spectra_tree_nodes_Nova_Node_virtual_Nova_findVariableDeclaration)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, int);
 spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_Node_virtual_Nova_parseStatement)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*, int);
 spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_Node_virtual_Nova_generateTemporaryScopeNode)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_Node_virtual_Nova_cloneTo)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
 char (*spectra_tree_nodes_Nova_Node_virtual_Nova_replace)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
 char (*spectra_tree_nodes_Nova_Node_virtual_Nova_validateTypes)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*);
 char (*spectra_tree_nodes_Nova_Node_virtual_Nova_parsePlaceholders)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*);
@@ -11361,23 +10331,7 @@ spectra_tree_nodes_annotations_Nova_Modifier* (*nova_Nova_Object_virtual_static_
 nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 spectra_tree_nodes_annotations_Nova_PrivateAnnotation* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMapPrivateAnnotation_Nova_construct)(spectra_tree_nodes_annotations_Nova_PrivateAnnotationFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*);
-void (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_addChild)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
-void (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_onAdded)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_variables_Nova_VariableDeclaration* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_findVariableDeclaration)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, nova_Nova_String*, char);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_parseStatement)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, nova_Nova_String*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*, char);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_generateTemporaryScopeNode)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_cloneTo)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_replace)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_validateTypes)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_parsePlaceholders)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_parsePlaceholderChildren)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_NodeList*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_writeAnnotationSeparator)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_toNova)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_writeNova)(spectra_tree_nodes_annotations_Nova_ModifierFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_annotations_Nova_Modifier*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_toString)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
 spectra_tree_nodes_annotations_Nova_PrivateAnnotation* (*spectra_tree_nodes_annotations_Nova_AnnotationFunctionMap_virtualfunctionMap_static_Nova_parse)(spectra_tree_nodes_annotations_Nova_PrivateAnnotationFunctionMap*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, nova_Nova_String*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*, char);
-char (*spectra_tree_nodes_annotations_Nova_AnnotationFunctionMap_virtualfunctionMap_Nova_onApplied)(spectra_tree_nodes_annotations_Nova_AnnotationFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_annotations_Nova_Annotation*, spectra_tree_nodes_Nova_Node*, char);
-char (*spectra_tree_nodes_annotations_Nova_AnnotationFunctionMap_virtualfunctionMap_Nova_checkApplication)(spectra_tree_nodes_annotations_Nova_VisibilityModifierFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_annotations_Nova_VisibilityModifier*, spectra_tree_nodes_Nova_Node*, char);
 };
 
 
@@ -11388,17 +10342,6 @@ nova_Interface_VTable itable;
 nova_Nova_Object* (*nova_Nova_Object_virtual_static_Nova_default)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
-spectra_tree_nodes_Nova_Program* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_program)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_Nova_Instantiation* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentInstantiation)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_closures_Nova_LambdaExpression* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentLambda)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_NovaFile* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentFile)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_Nova_FunctionCall* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentFunctionCall)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_Nova_FunctionDeclaration* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentFunction)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_exceptionhandling_Nova_Try* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentTry)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_ClassDeclaration* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentClass)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_scopeConsumer)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_Scope* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_scope)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-int (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_index)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
 nova_datastruct_list_Nova_ImmutableArray* (*spectra_tree_nodes_annotations_Nova_AnnotationPropertyMap_virtualfunctionMap_static_Nova_applicationTypes)(spectra_tree_nodes_annotations_Nova_PrivateAnnotationPropertyMap*, nova_exception_Nova_ExceptionData*);
 };
 
@@ -11415,7 +10358,6 @@ void (*spectra_tree_nodes_Nova_Node_virtual_Nova_onAdded)(spectra_tree_nodes_Nov
 spectra_tree_nodes_variables_Nova_VariableDeclaration* (*spectra_tree_nodes_Nova_Node_virtual_Nova_findVariableDeclaration)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, int);
 spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_Node_virtual_Nova_parseStatement)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*, int);
 spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_Node_virtual_Nova_generateTemporaryScopeNode)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_Node_virtual_Nova_cloneTo)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
 char (*spectra_tree_nodes_Nova_Node_virtual_Nova_replace)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
 char (*spectra_tree_nodes_Nova_Node_virtual_Nova_validateTypes)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*);
 char (*spectra_tree_nodes_Nova_Node_virtual_Nova_parsePlaceholders)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*);
@@ -11450,23 +10392,7 @@ spectra_tree_nodes_annotations_Nova_Modifier* (*nova_Nova_Object_virtual_static_
 nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 spectra_tree_nodes_annotations_Nova_PublicAnnotation* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMapPublicAnnotation_Nova_construct)(spectra_tree_nodes_annotations_Nova_PublicAnnotationFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*);
-void (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_addChild)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
-void (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_onAdded)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_variables_Nova_VariableDeclaration* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_findVariableDeclaration)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, nova_Nova_String*, char);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_parseStatement)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, nova_Nova_String*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*, char);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_generateTemporaryScopeNode)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_cloneTo)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_replace)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_validateTypes)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_parsePlaceholders)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_parsePlaceholderChildren)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_NodeList*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_writeAnnotationSeparator)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_toNova)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_writeNova)(spectra_tree_nodes_annotations_Nova_ModifierFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_annotations_Nova_Modifier*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_toString)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
 spectra_tree_nodes_annotations_Nova_PublicAnnotation* (*spectra_tree_nodes_annotations_Nova_AnnotationFunctionMap_virtualfunctionMap_static_Nova_parse)(spectra_tree_nodes_annotations_Nova_PublicAnnotationFunctionMap*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, nova_Nova_String*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*, char);
-char (*spectra_tree_nodes_annotations_Nova_AnnotationFunctionMap_virtualfunctionMap_Nova_onApplied)(spectra_tree_nodes_annotations_Nova_PublicAnnotationFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_annotations_Nova_PublicAnnotation*, spectra_tree_nodes_Nova_Node*, char);
-char (*spectra_tree_nodes_annotations_Nova_AnnotationFunctionMap_virtualfunctionMap_Nova_checkApplication)(spectra_tree_nodes_annotations_Nova_VisibilityModifierFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_annotations_Nova_VisibilityModifier*, spectra_tree_nodes_Nova_Node*, char);
 };
 
 
@@ -11477,17 +10403,6 @@ nova_Interface_VTable itable;
 nova_Nova_Object* (*nova_Nova_Object_virtual_static_Nova_default)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
-spectra_tree_nodes_Nova_Program* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_program)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_Nova_Instantiation* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentInstantiation)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_closures_Nova_LambdaExpression* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentLambda)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_NovaFile* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentFile)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_Nova_FunctionCall* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentFunctionCall)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_Nova_FunctionDeclaration* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentFunction)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_exceptionhandling_Nova_Try* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentTry)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_ClassDeclaration* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentClass)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_scopeConsumer)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_Scope* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_scope)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-int (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_index)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
 nova_datastruct_list_Nova_ImmutableArray* (*spectra_tree_nodes_annotations_Nova_AnnotationPropertyMap_virtualfunctionMap_static_Nova_applicationTypes)(spectra_tree_nodes_annotations_Nova_PublicAnnotationPropertyMap*, nova_exception_Nova_ExceptionData*);
 };
 
@@ -11504,7 +10419,6 @@ void (*spectra_tree_nodes_Nova_Node_virtual_Nova_onAdded)(spectra_tree_nodes_Nov
 spectra_tree_nodes_variables_Nova_VariableDeclaration* (*spectra_tree_nodes_Nova_Node_virtual_Nova_findVariableDeclaration)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, int);
 spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_Node_virtual_Nova_parseStatement)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*, int);
 spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_Node_virtual_Nova_generateTemporaryScopeNode)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_Node_virtual_Nova_cloneTo)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
 char (*spectra_tree_nodes_Nova_Node_virtual_Nova_replace)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
 char (*spectra_tree_nodes_Nova_Node_virtual_Nova_validateTypes)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*);
 char (*spectra_tree_nodes_Nova_Node_virtual_Nova_parsePlaceholders)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*);
@@ -11539,23 +10453,7 @@ spectra_tree_nodes_annotations_Nova_Modifier* (*nova_Nova_Object_virtual_static_
 nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 spectra_tree_nodes_annotations_Nova_PureAnnotation* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMapPureAnnotation_Nova_construct)(spectra_tree_nodes_annotations_Nova_PureAnnotationFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*);
-void (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_addChild)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
-void (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_onAdded)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_variables_Nova_VariableDeclaration* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_findVariableDeclaration)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, nova_Nova_String*, char);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_parseStatement)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, nova_Nova_String*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*, char);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_generateTemporaryScopeNode)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_cloneTo)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_replace)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_validateTypes)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_parsePlaceholders)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_parsePlaceholderChildren)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_NodeList*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_writeAnnotationSeparator)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_toNova)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_writeNova)(spectra_tree_nodes_annotations_Nova_ModifierFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_annotations_Nova_Modifier*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_toString)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
 spectra_tree_nodes_annotations_Nova_PureAnnotation* (*spectra_tree_nodes_annotations_Nova_AnnotationFunctionMap_virtualfunctionMap_static_Nova_parse)(spectra_tree_nodes_annotations_Nova_PureAnnotationFunctionMap*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, nova_Nova_String*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*, char);
-char (*spectra_tree_nodes_annotations_Nova_AnnotationFunctionMap_virtualfunctionMap_Nova_onApplied)(spectra_tree_nodes_annotations_Nova_AnnotationFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_annotations_Nova_Annotation*, spectra_tree_nodes_Nova_Node*, char);
-char (*spectra_tree_nodes_annotations_Nova_AnnotationFunctionMap_virtualfunctionMap_Nova_checkApplication)(spectra_tree_nodes_annotations_Nova_AnnotationFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_annotations_Nova_Annotation*, spectra_tree_nodes_Nova_Node*, char);
 };
 
 
@@ -11566,17 +10464,6 @@ nova_Interface_VTable itable;
 nova_Nova_Object* (*nova_Nova_Object_virtual_static_Nova_default)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
-spectra_tree_nodes_Nova_Program* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_program)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_Nova_Instantiation* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentInstantiation)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_closures_Nova_LambdaExpression* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentLambda)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_NovaFile* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentFile)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_Nova_FunctionCall* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentFunctionCall)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_Nova_FunctionDeclaration* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentFunction)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_exceptionhandling_Nova_Try* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentTry)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_ClassDeclaration* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentClass)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_scopeConsumer)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_Scope* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_scope)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-int (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_index)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
 nova_datastruct_list_Nova_ImmutableArray* (*spectra_tree_nodes_annotations_Nova_AnnotationPropertyMap_virtualfunctionMap_static_Nova_applicationTypes)(spectra_tree_nodes_annotations_Nova_PureAnnotationPropertyMap*, nova_exception_Nova_ExceptionData*);
 };
 
@@ -11593,7 +10480,6 @@ void (*spectra_tree_nodes_Nova_Node_virtual_Nova_onAdded)(spectra_tree_nodes_Nov
 spectra_tree_nodes_variables_Nova_VariableDeclaration* (*spectra_tree_nodes_Nova_Node_virtual_Nova_findVariableDeclaration)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, int);
 spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_Node_virtual_Nova_parseStatement)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*, int);
 spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_Node_virtual_Nova_generateTemporaryScopeNode)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_Node_virtual_Nova_cloneTo)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
 char (*spectra_tree_nodes_Nova_Node_virtual_Nova_replace)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
 char (*spectra_tree_nodes_Nova_Node_virtual_Nova_validateTypes)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*);
 char (*spectra_tree_nodes_Nova_Node_virtual_Nova_parsePlaceholders)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*);
@@ -11628,23 +10514,7 @@ spectra_tree_nodes_annotations_Nova_Modifier* (*nova_Nova_Object_virtual_static_
 nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 spectra_tree_nodes_annotations_Nova_StaticAnnotation* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMapStaticAnnotation_Nova_construct)(spectra_tree_nodes_annotations_Nova_StaticAnnotationFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*);
-void (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_addChild)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
-void (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_onAdded)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_variables_Nova_VariableDeclaration* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_findVariableDeclaration)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, nova_Nova_String*, char);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_parseStatement)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, nova_Nova_String*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*, char);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_generateTemporaryScopeNode)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_cloneTo)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_replace)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_validateTypes)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_parsePlaceholders)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_parsePlaceholderChildren)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_NodeList*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_writeAnnotationSeparator)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_toNova)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_writeNova)(spectra_tree_nodes_annotations_Nova_ModifierFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_annotations_Nova_Modifier*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_toString)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
 spectra_tree_nodes_annotations_Nova_StaticAnnotation* (*spectra_tree_nodes_annotations_Nova_AnnotationFunctionMap_virtualfunctionMap_static_Nova_parse)(spectra_tree_nodes_annotations_Nova_StaticAnnotationFunctionMap*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, nova_Nova_String*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*, char);
-char (*spectra_tree_nodes_annotations_Nova_AnnotationFunctionMap_virtualfunctionMap_Nova_onApplied)(spectra_tree_nodes_annotations_Nova_StaticAnnotationFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_annotations_Nova_StaticAnnotation*, spectra_tree_nodes_Nova_Node*, char);
-char (*spectra_tree_nodes_annotations_Nova_AnnotationFunctionMap_virtualfunctionMap_Nova_checkApplication)(spectra_tree_nodes_annotations_Nova_AnnotationFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_annotations_Nova_Annotation*, spectra_tree_nodes_Nova_Node*, char);
 };
 
 
@@ -11655,17 +10525,6 @@ nova_Interface_VTable itable;
 nova_Nova_Object* (*nova_Nova_Object_virtual_static_Nova_default)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
-spectra_tree_nodes_Nova_Program* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_program)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_Nova_Instantiation* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentInstantiation)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_closures_Nova_LambdaExpression* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentLambda)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_NovaFile* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentFile)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_Nova_FunctionCall* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentFunctionCall)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_Nova_FunctionDeclaration* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentFunction)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_exceptionhandling_Nova_Try* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentTry)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_ClassDeclaration* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentClass)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_scopeConsumer)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_Scope* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_scope)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-int (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_index)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
 nova_datastruct_list_Nova_ImmutableArray* (*spectra_tree_nodes_annotations_Nova_AnnotationPropertyMap_virtualfunctionMap_static_Nova_applicationTypes)(spectra_tree_nodes_annotations_Nova_StaticAnnotationPropertyMap*, nova_exception_Nova_ExceptionData*);
 };
 
@@ -11682,7 +10541,6 @@ void (*spectra_tree_nodes_Nova_Node_virtual_Nova_onAdded)(spectra_tree_nodes_Nov
 spectra_tree_nodes_variables_Nova_VariableDeclaration* (*spectra_tree_nodes_Nova_Node_virtual_Nova_findVariableDeclaration)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, int);
 spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_Node_virtual_Nova_parseStatement)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*, int);
 spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_Node_virtual_Nova_generateTemporaryScopeNode)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_Node_virtual_Nova_cloneTo)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
 char (*spectra_tree_nodes_Nova_Node_virtual_Nova_replace)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
 char (*spectra_tree_nodes_Nova_Node_virtual_Nova_validateTypes)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*);
 char (*spectra_tree_nodes_Nova_Node_virtual_Nova_parsePlaceholders)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*);
@@ -11717,23 +10575,7 @@ nova_Nova_Object* (*nova_Nova_Object_virtual_static_Nova_default)(nova_Nova_Obje
 nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 spectra_tree_nodes_annotations_Nova_TargetAnnotation* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMapTargetAnnotation_Nova_construct)(spectra_tree_nodes_annotations_Nova_TargetAnnotationFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*);
-void (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_addChild)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
-void (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_onAdded)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_variables_Nova_VariableDeclaration* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_findVariableDeclaration)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, nova_Nova_String*, char);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_parseStatement)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, nova_Nova_String*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*, char);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_generateTemporaryScopeNode)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_cloneTo)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_replace)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_validateTypes)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_parsePlaceholders)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_parsePlaceholderChildren)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_NodeList*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_writeAnnotationSeparator)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_toNova)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_writeNova)(spectra_tree_nodes_annotations_Nova_TargetAnnotationFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_annotations_Nova_TargetAnnotation*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_toString)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
 spectra_tree_nodes_annotations_Nova_TargetAnnotation* (*spectra_tree_nodes_annotations_Nova_AnnotationFunctionMap_virtualfunctionMap_static_Nova_parse)(spectra_tree_nodes_annotations_Nova_TargetAnnotationFunctionMap*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, nova_Nova_String*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*, char);
-char (*spectra_tree_nodes_annotations_Nova_AnnotationFunctionMap_virtualfunctionMap_Nova_onApplied)(spectra_tree_nodes_annotations_Nova_AnnotationFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_annotations_Nova_Annotation*, spectra_tree_nodes_Nova_Node*, char);
-char (*spectra_tree_nodes_annotations_Nova_AnnotationFunctionMap_virtualfunctionMap_Nova_checkApplication)(spectra_tree_nodes_annotations_Nova_AnnotationFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_annotations_Nova_Annotation*, spectra_tree_nodes_Nova_Node*, char);
 };
 
 
@@ -11744,17 +10586,6 @@ nova_Interface_VTable itable;
 nova_Nova_Object* (*nova_Nova_Object_virtual_static_Nova_default)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
-spectra_tree_nodes_Nova_Program* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_program)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_Nova_Instantiation* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentInstantiation)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_closures_Nova_LambdaExpression* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentLambda)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_NovaFile* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentFile)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_Nova_FunctionCall* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentFunctionCall)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_Nova_FunctionDeclaration* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentFunction)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_exceptionhandling_Nova_Try* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentTry)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_ClassDeclaration* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentClass)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_scopeConsumer)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_Scope* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_scope)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-int (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_index)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
 nova_datastruct_list_Nova_ImmutableArray* (*spectra_tree_nodes_annotations_Nova_AnnotationPropertyMap_virtualfunctionMap_static_Nova_applicationTypes)(spectra_tree_nodes_annotations_Nova_AnnotationPropertyMap*, nova_exception_Nova_ExceptionData*);
 };
 
@@ -11771,7 +10602,6 @@ void (*spectra_tree_nodes_Nova_Node_virtual_Nova_onAdded)(spectra_tree_nodes_Nov
 spectra_tree_nodes_variables_Nova_VariableDeclaration* (*spectra_tree_nodes_Nova_Node_virtual_Nova_findVariableDeclaration)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, int);
 spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_Node_virtual_Nova_parseStatement)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*, int);
 spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_Node_virtual_Nova_generateTemporaryScopeNode)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_Node_virtual_Nova_cloneTo)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
 char (*spectra_tree_nodes_Nova_Node_virtual_Nova_replace)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
 char (*spectra_tree_nodes_Nova_Node_virtual_Nova_validateTypes)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*);
 char (*spectra_tree_nodes_Nova_Node_virtual_Nova_parsePlaceholders)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*);
@@ -11806,23 +10636,7 @@ spectra_tree_nodes_annotations_Nova_Modifier* (*nova_Nova_Object_virtual_static_
 nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 spectra_tree_nodes_annotations_Nova_VarAnnotation* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMapVarAnnotation_Nova_construct)(spectra_tree_nodes_annotations_Nova_VarAnnotationFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*);
-void (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_addChild)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
-void (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_onAdded)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_variables_Nova_VariableDeclaration* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_findVariableDeclaration)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, nova_Nova_String*, char);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_parseStatement)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, nova_Nova_String*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*, char);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_generateTemporaryScopeNode)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_cloneTo)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_replace)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_validateTypes)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_parsePlaceholders)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_parsePlaceholderChildren)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_NodeList*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_writeAnnotationSeparator)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_toNova)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_writeNova)(spectra_tree_nodes_annotations_Nova_ModifierFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_annotations_Nova_Modifier*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_toString)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
 spectra_tree_nodes_annotations_Nova_Annotation* (*spectra_tree_nodes_annotations_Nova_AnnotationFunctionMap_virtualfunctionMap1_static_Nova_parse)(spectra_tree_nodes_annotations_Nova_AnnotationFunctionMap*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, nova_Nova_String*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*, char);
-char (*spectra_tree_nodes_annotations_Nova_AnnotationFunctionMap_virtualfunctionMap_Nova_onApplied)(spectra_tree_nodes_annotations_Nova_AnnotationFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_annotations_Nova_Annotation*, spectra_tree_nodes_Nova_Node*, char);
-char (*spectra_tree_nodes_annotations_Nova_AnnotationFunctionMap_virtualfunctionMap_Nova_checkApplication)(spectra_tree_nodes_annotations_Nova_AnnotationFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_annotations_Nova_Annotation*, spectra_tree_nodes_Nova_Node*, char);
 };
 
 
@@ -11833,17 +10647,6 @@ nova_Interface_VTable itable;
 nova_Nova_Object* (*nova_Nova_Object_virtual_static_Nova_default)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
-spectra_tree_nodes_Nova_Program* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_program)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_Nova_Instantiation* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentInstantiation)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_closures_Nova_LambdaExpression* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentLambda)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_NovaFile* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentFile)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_Nova_FunctionCall* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentFunctionCall)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_Nova_FunctionDeclaration* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentFunction)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_exceptionhandling_Nova_Try* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentTry)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_ClassDeclaration* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentClass)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_scopeConsumer)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_Scope* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_scope)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-int (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_index)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
 nova_datastruct_list_Nova_ImmutableArray* (*spectra_tree_nodes_annotations_Nova_AnnotationPropertyMap_virtualfunctionMap_static_Nova_applicationTypes)(spectra_tree_nodes_annotations_Nova_VarAnnotationPropertyMap*, nova_exception_Nova_ExceptionData*);
 };
 
@@ -11860,7 +10663,6 @@ void (*spectra_tree_nodes_Nova_Node_virtual_Nova_onAdded)(spectra_tree_nodes_Nov
 spectra_tree_nodes_variables_Nova_VariableDeclaration* (*spectra_tree_nodes_Nova_Node_virtual_Nova_findVariableDeclaration)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, int);
 spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_Node_virtual_Nova_parseStatement)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*, int);
 spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_Node_virtual_Nova_generateTemporaryScopeNode)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_Node_virtual_Nova_cloneTo)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
 char (*spectra_tree_nodes_Nova_Node_virtual_Nova_replace)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
 char (*spectra_tree_nodes_Nova_Node_virtual_Nova_validateTypes)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*);
 char (*spectra_tree_nodes_Nova_Node_virtual_Nova_parsePlaceholders)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*);
@@ -11895,23 +10697,7 @@ spectra_tree_nodes_annotations_Nova_Modifier* (*nova_Nova_Object_virtual_static_
 nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 spectra_tree_nodes_annotations_Nova_Annotation* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMapAnnotation_Nova_construct)(spectra_tree_nodes_annotations_Nova_AnnotationFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*);
-void (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_addChild)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
-void (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_onAdded)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_variables_Nova_VariableDeclaration* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_findVariableDeclaration)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, nova_Nova_String*, char);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_parseStatement)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, nova_Nova_String*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*, char);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_generateTemporaryScopeNode)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_cloneTo)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_replace)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_validateTypes)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_parsePlaceholders)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_parsePlaceholderChildren)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_NodeList*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_writeAnnotationSeparator)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_toNova)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_writeNova)(spectra_tree_nodes_annotations_Nova_ModifierFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_annotations_Nova_Modifier*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_toString)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
 spectra_tree_nodes_annotations_Nova_Annotation* (*spectra_tree_nodes_annotations_Nova_AnnotationFunctionMap_virtualfunctionMap1_static_Nova_parse)(spectra_tree_nodes_annotations_Nova_AnnotationFunctionMap*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, nova_Nova_String*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*, char);
-char (*spectra_tree_nodes_annotations_Nova_AnnotationFunctionMap_virtualfunctionMap_Nova_onApplied)(spectra_tree_nodes_annotations_Nova_AnnotationFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_annotations_Nova_Annotation*, spectra_tree_nodes_Nova_Node*, char);
-char (*spectra_tree_nodes_annotations_Nova_AnnotationFunctionMap_virtualfunctionMap_Nova_checkApplication)(spectra_tree_nodes_annotations_Nova_VisibilityModifierFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_annotations_Nova_VisibilityModifier*, spectra_tree_nodes_Nova_Node*, char);
 };
 
 
@@ -11922,17 +10708,6 @@ nova_Interface_VTable itable;
 nova_Nova_Object* (*nova_Nova_Object_virtual_static_Nova_default)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
-spectra_tree_nodes_Nova_Program* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_program)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_Nova_Instantiation* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentInstantiation)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_closures_Nova_LambdaExpression* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentLambda)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_NovaFile* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentFile)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_Nova_FunctionCall* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentFunctionCall)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_Nova_FunctionDeclaration* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentFunction)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_exceptionhandling_Nova_Try* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentTry)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_ClassDeclaration* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentClass)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_scopeConsumer)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_Scope* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_scope)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-int (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_index)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
 nova_datastruct_list_Nova_ImmutableArray* (*spectra_tree_nodes_annotations_Nova_AnnotationPropertyMap_virtualfunctionMap_static_Nova_applicationTypes)(spectra_tree_nodes_annotations_Nova_VisibilityModifierPropertyMap*, nova_exception_Nova_ExceptionData*);
 };
 
@@ -11949,7 +10724,6 @@ void (*spectra_tree_nodes_Nova_Node_virtual_Nova_onAdded)(spectra_tree_nodes_Nov
 spectra_tree_nodes_variables_Nova_VariableDeclaration* (*spectra_tree_nodes_Nova_Node_virtual_Nova_findVariableDeclaration)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, int);
 spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_Node_virtual_Nova_parseStatement)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*, int);
 spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_Node_virtual_Nova_generateTemporaryScopeNode)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_Node_virtual_Nova_cloneTo)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
 char (*spectra_tree_nodes_Nova_Node_virtual_Nova_replace)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
 char (*spectra_tree_nodes_Nova_Node_virtual_Nova_validateTypes)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*);
 char (*spectra_tree_nodes_Nova_Node_virtual_Nova_parsePlaceholders)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*);
@@ -11984,23 +10758,7 @@ spectra_tree_nodes_annotations_Nova_Modifier* (*nova_Nova_Object_virtual_static_
 nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 spectra_tree_nodes_annotations_Nova_VisibleAnnotation* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMapVisibleAnnotation_Nova_construct)(spectra_tree_nodes_annotations_Nova_VisibleAnnotationFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*);
-void (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_addChild)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
-void (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_onAdded)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_variables_Nova_VariableDeclaration* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_findVariableDeclaration)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, nova_Nova_String*, char);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_parseStatement)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, nova_Nova_String*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*, char);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_generateTemporaryScopeNode)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_cloneTo)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_replace)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_validateTypes)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_parsePlaceholders)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_parsePlaceholderChildren)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_NodeList*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_writeAnnotationSeparator)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_toNova)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_writeNova)(spectra_tree_nodes_annotations_Nova_ModifierFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_annotations_Nova_Modifier*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_toString)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
 spectra_tree_nodes_annotations_Nova_VisibleAnnotation* (*spectra_tree_nodes_annotations_Nova_AnnotationFunctionMap_virtualfunctionMap_static_Nova_parse)(spectra_tree_nodes_annotations_Nova_VisibleAnnotationFunctionMap*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, nova_Nova_String*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*, char);
-char (*spectra_tree_nodes_annotations_Nova_AnnotationFunctionMap_virtualfunctionMap_Nova_onApplied)(spectra_tree_nodes_annotations_Nova_VisibleAnnotationFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_annotations_Nova_VisibleAnnotation*, spectra_tree_nodes_Nova_Node*, char);
-char (*spectra_tree_nodes_annotations_Nova_AnnotationFunctionMap_virtualfunctionMap_Nova_checkApplication)(spectra_tree_nodes_annotations_Nova_VisibilityModifierFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_annotations_Nova_VisibilityModifier*, spectra_tree_nodes_Nova_Node*, char);
 };
 
 
@@ -12011,17 +10769,6 @@ nova_Interface_VTable itable;
 nova_Nova_Object* (*nova_Nova_Object_virtual_static_Nova_default)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
-spectra_tree_nodes_Nova_Program* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_program)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_Nova_Instantiation* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentInstantiation)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_closures_Nova_LambdaExpression* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentLambda)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_NovaFile* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentFile)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_Nova_FunctionCall* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentFunctionCall)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_Nova_FunctionDeclaration* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentFunction)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_exceptionhandling_Nova_Try* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentTry)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_ClassDeclaration* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentClass)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_scopeConsumer)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_Scope* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_scope)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-int (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_index)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
 nova_datastruct_list_Nova_ImmutableArray* (*spectra_tree_nodes_annotations_Nova_AnnotationPropertyMap_virtualfunctionMap_static_Nova_applicationTypes)(spectra_tree_nodes_annotations_Nova_VisibleAnnotationPropertyMap*, nova_exception_Nova_ExceptionData*);
 };
 
@@ -12038,7 +10785,6 @@ void (*spectra_tree_nodes_Nova_Node_virtual_Nova_onAdded)(spectra_tree_nodes_Nov
 spectra_tree_nodes_variables_Nova_VariableDeclaration* (*spectra_tree_nodes_Nova_Node_virtual_Nova_findVariableDeclaration)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, int);
 spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_Node_virtual_Nova_parseStatement)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*, int);
 spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_Node_virtual_Nova_generateTemporaryScopeNode)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_Node_virtual_Nova_cloneTo)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
 char (*spectra_tree_nodes_Nova_Node_virtual_Nova_replace)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
 char (*spectra_tree_nodes_Nova_Node_virtual_Nova_validateTypes)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*);
 char (*spectra_tree_nodes_Nova_Node_virtual_Nova_parsePlaceholders)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*);
@@ -12069,20 +10815,6 @@ nova_Nova_Object* (*nova_Nova_Object_virtual_static_Nova_default)(nova_Nova_Obje
 nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 spectra_tree_nodes_arrays_Nova_ArrayAccess* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMapArrayAccess_Nova_construct)(spectra_tree_nodes_arrays_Nova_ArrayAccessFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*);
-void (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_addChild)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
-void (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_onAdded)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_variables_Nova_VariableDeclaration* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_findVariableDeclaration)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, nova_Nova_String*, char);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_parseStatement)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, nova_Nova_String*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*, char);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_generateTemporaryScopeNode)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_cloneTo)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_replace)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_validateTypes)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_parsePlaceholders)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_parsePlaceholderChildren)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_NodeList*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_writeAnnotationSeparator)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_toNova)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_writeNova)(spectra_tree_nodes_arrays_Nova_ArrayAccessFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_arrays_Nova_ArrayAccess*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_toString)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
 };
 
 
@@ -12093,17 +10825,6 @@ nova_Interface_VTable itable;
 nova_Nova_Object* (*nova_Nova_Object_virtual_static_Nova_default)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
-spectra_tree_nodes_Nova_Program* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_program)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_Nova_Instantiation* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentInstantiation)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_closures_Nova_LambdaExpression* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentLambda)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_NovaFile* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentFile)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_Nova_FunctionCall* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentFunctionCall)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_Nova_FunctionDeclaration* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentFunction)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_exceptionhandling_Nova_Try* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentTry)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_ClassDeclaration* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentClass)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_scopeConsumer)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_Scope* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_scope)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-int (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_index)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
 };
 
 
@@ -12119,7 +10840,6 @@ void (*spectra_tree_nodes_Nova_Node_virtual_Nova_onAdded)(spectra_tree_nodes_Nov
 spectra_tree_nodes_variables_Nova_VariableDeclaration* (*spectra_tree_nodes_Nova_Node_virtual_Nova_findVariableDeclaration)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, int);
 spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_Node_virtual_Nova_parseStatement)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*, int);
 spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_Node_virtual_Nova_generateTemporaryScopeNode)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*);
-spectra_tree_nodes_controlstructures_Nova_ControlStructure* (*spectra_tree_nodes_Nova_Node_virtual_Nova_cloneTo)(spectra_tree_nodes_controlstructures_Nova_ControlStructure*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_controlstructures_Nova_ControlStructure*);
 char (*spectra_tree_nodes_Nova_Node_virtual_Nova_replace)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
 char (*spectra_tree_nodes_Nova_Node_virtual_Nova_validateTypes)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*);
 char (*spectra_tree_nodes_Nova_Node_virtual_Nova_parsePlaceholders)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*);
@@ -12150,20 +10870,6 @@ nova_Nova_Object* (*nova_Nova_Object_virtual_static_Nova_default)(nova_Nova_Obje
 nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 spectra_tree_nodes_controlstructures_Nova_ControlStructure* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMapControlStructure_Nova_construct)(spectra_tree_nodes_controlstructures_Nova_ControlStructureFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*);
-void (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_addChild)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
-void (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_onAdded)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_variables_Nova_VariableDeclaration* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_findVariableDeclaration)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, nova_Nova_String*, char);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_parseStatement)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, nova_Nova_String*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*, char);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_generateTemporaryScopeNode)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_controlstructures_Nova_ControlStructure* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_cloneTo)(spectra_tree_nodes_controlstructures_Nova_ControlStructureFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_controlstructures_Nova_ControlStructure*, spectra_tree_nodes_controlstructures_Nova_ControlStructure*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_replace)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_validateTypes)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_parsePlaceholders)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_parsePlaceholderChildren)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_NodeList*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_writeAnnotationSeparator)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_toNova)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_writeNova)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_toString)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
 };
 
 
@@ -12174,17 +10880,6 @@ nova_Interface_VTable itable;
 nova_Nova_Object* (*nova_Nova_Object_virtual_static_Nova_default)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
-spectra_tree_nodes_Nova_Program* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_program)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_Nova_Instantiation* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentInstantiation)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_closures_Nova_LambdaExpression* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentLambda)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_NovaFile* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentFile)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_Nova_FunctionCall* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentFunctionCall)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_Nova_FunctionDeclaration* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentFunction)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_exceptionhandling_Nova_Try* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentTry)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_ClassDeclaration* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentClass)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_scopeConsumer)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_Scope* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_scope)(spectra_tree_nodes_controlstructures_Nova_ControlStructurePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_controlstructures_Nova_ControlStructure*);
-int (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_index)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
 };
 
 
@@ -12200,7 +10895,6 @@ void (*spectra_tree_nodes_Nova_Node_virtual_Nova_onAdded)(spectra_tree_nodes_Nov
 spectra_tree_nodes_variables_Nova_VariableDeclaration* (*spectra_tree_nodes_Nova_Node_virtual_Nova_findVariableDeclaration)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, int);
 spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_Node_virtual_Nova_parseStatement)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*, int);
 spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_Node_virtual_Nova_generateTemporaryScopeNode)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*);
-spectra_tree_nodes_controlstructures_Nova_ControlStructure* (*spectra_tree_nodes_Nova_Node_virtual_Nova_cloneTo)(spectra_tree_nodes_controlstructures_Nova_ControlStructure*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_controlstructures_Nova_ControlStructure*);
 char (*spectra_tree_nodes_Nova_Node_virtual_Nova_replace)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
 char (*spectra_tree_nodes_Nova_Node_virtual_Nova_validateTypes)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*);
 char (*spectra_tree_nodes_Nova_Node_virtual_Nova_parsePlaceholders)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*);
@@ -12231,20 +10925,6 @@ nova_Nova_Object* (*nova_Nova_Object_virtual_static_Nova_default)(nova_Nova_Obje
 nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 spectra_tree_nodes_controlstructures_Nova_ElseStatement* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMapElseStatement_Nova_construct)(spectra_tree_nodes_controlstructures_Nova_ElseStatementFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*);
-void (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_addChild)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
-void (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_onAdded)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_variables_Nova_VariableDeclaration* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_findVariableDeclaration)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, nova_Nova_String*, char);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_parseStatement)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, nova_Nova_String*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*, char);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_generateTemporaryScopeNode)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_controlstructures_Nova_ControlStructure* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_cloneTo)(spectra_tree_nodes_controlstructures_Nova_ControlStructureFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_controlstructures_Nova_ControlStructure*, spectra_tree_nodes_controlstructures_Nova_ControlStructure*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_replace)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_validateTypes)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_parsePlaceholders)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_parsePlaceholderChildren)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_NodeList*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_writeAnnotationSeparator)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_toNova)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_writeNova)(spectra_tree_nodes_controlstructures_Nova_ElseStatementFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_controlstructures_Nova_ElseStatement*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_toString)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
 };
 
 
@@ -12255,17 +10935,6 @@ nova_Interface_VTable itable;
 nova_Nova_Object* (*nova_Nova_Object_virtual_static_Nova_default)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
-spectra_tree_nodes_Nova_Program* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_program)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_Nova_Instantiation* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentInstantiation)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_closures_Nova_LambdaExpression* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentLambda)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_NovaFile* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentFile)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_Nova_FunctionCall* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentFunctionCall)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_Nova_FunctionDeclaration* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentFunction)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_exceptionhandling_Nova_Try* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentTry)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_ClassDeclaration* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentClass)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_scopeConsumer)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_Scope* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_scope)(spectra_tree_nodes_controlstructures_Nova_ElseStatementPropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_controlstructures_Nova_ElseStatement*);
-int (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_index)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
 };
 
 
@@ -12281,7 +10950,6 @@ void (*spectra_tree_nodes_Nova_Node_virtual_Nova_onAdded)(spectra_tree_nodes_Nov
 spectra_tree_nodes_variables_Nova_VariableDeclaration* (*spectra_tree_nodes_Nova_Node_virtual_Nova_findVariableDeclaration)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, int);
 spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_Node_virtual_Nova_parseStatement)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*, int);
 spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_Node_virtual_Nova_generateTemporaryScopeNode)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*);
-spectra_tree_nodes_controlstructures_Nova_ControlStructure* (*spectra_tree_nodes_Nova_Node_virtual_Nova_cloneTo)(spectra_tree_nodes_controlstructures_Nova_ControlStructure*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_controlstructures_Nova_ControlStructure*);
 char (*spectra_tree_nodes_Nova_Node_virtual_Nova_replace)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
 char (*spectra_tree_nodes_Nova_Node_virtual_Nova_validateTypes)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*);
 char (*spectra_tree_nodes_Nova_Node_virtual_Nova_parsePlaceholders)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*);
@@ -12312,20 +10980,6 @@ nova_Nova_Object* (*nova_Nova_Object_virtual_static_Nova_default)(nova_Nova_Obje
 nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 spectra_tree_nodes_controlstructures_Nova_IfStatement* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMapIfStatement_Nova_construct)(spectra_tree_nodes_controlstructures_Nova_IfStatementFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*);
-void (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_addChild)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
-void (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_onAdded)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_variables_Nova_VariableDeclaration* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_findVariableDeclaration)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, nova_Nova_String*, char);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_parseStatement)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, nova_Nova_String*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*, char);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_generateTemporaryScopeNode)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_controlstructures_Nova_ControlStructure* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_cloneTo)(spectra_tree_nodes_controlstructures_Nova_ControlStructureFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_controlstructures_Nova_ControlStructure*, spectra_tree_nodes_controlstructures_Nova_ControlStructure*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_replace)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_validateTypes)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_parsePlaceholders)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_parsePlaceholderChildren)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_NodeList*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_writeAnnotationSeparator)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_toNova)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_writeNova)(spectra_tree_nodes_controlstructures_Nova_IfStatementFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_controlstructures_Nova_IfStatement*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_toString)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
 };
 
 
@@ -12336,17 +10990,6 @@ nova_Interface_VTable itable;
 nova_Nova_Object* (*nova_Nova_Object_virtual_static_Nova_default)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
-spectra_tree_nodes_Nova_Program* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_program)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_Nova_Instantiation* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentInstantiation)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_closures_Nova_LambdaExpression* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentLambda)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_NovaFile* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentFile)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_Nova_FunctionCall* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentFunctionCall)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_Nova_FunctionDeclaration* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentFunction)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_exceptionhandling_Nova_Try* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentTry)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_ClassDeclaration* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentClass)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_scopeConsumer)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_Scope* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_scope)(spectra_tree_nodes_controlstructures_Nova_ControlStructurePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_controlstructures_Nova_ControlStructure*);
-int (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_index)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
 };
 
 
@@ -12362,7 +11005,6 @@ void (*spectra_tree_nodes_Nova_Node_virtual_Nova_onAdded)(spectra_tree_nodes_Nov
 spectra_tree_nodes_variables_Nova_VariableDeclaration* (*spectra_tree_nodes_Nova_Node_virtual_Nova_findVariableDeclaration)(spectra_tree_nodes_controlstructures_loops_Nova_ForEachLoop*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, int);
 spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_Node_virtual_Nova_parseStatement)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*, int);
 spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_Node_virtual_Nova_generateTemporaryScopeNode)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*);
-spectra_tree_nodes_controlstructures_loops_Nova_ForEachLoop* (*spectra_tree_nodes_Nova_Node_virtual_Nova_cloneTo)(spectra_tree_nodes_controlstructures_loops_Nova_ForEachLoop*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_controlstructures_loops_Nova_ForEachLoop*);
 char (*spectra_tree_nodes_Nova_Node_virtual_Nova_replace)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
 char (*spectra_tree_nodes_Nova_Node_virtual_Nova_validateTypes)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*);
 char (*spectra_tree_nodes_Nova_Node_virtual_Nova_parsePlaceholders)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*);
@@ -12394,20 +11036,6 @@ nova_Nova_Object* (*nova_Nova_Object_virtual_static_Nova_default)(nova_Nova_Obje
 nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 spectra_tree_nodes_controlstructures_loops_Nova_ForEachLoop* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMapForEachLoop_Nova_construct)(spectra_tree_nodes_controlstructures_loops_Nova_ForEachLoopFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*);
-void (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_addChild)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
-void (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_onAdded)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_variables_Nova_VariableDeclaration* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_findVariableDeclaration)(spectra_tree_nodes_controlstructures_loops_Nova_ForEachLoopFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_controlstructures_loops_Nova_ForEachLoop*, nova_Nova_String*, char);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_parseStatement)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, nova_Nova_String*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*, char);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_generateTemporaryScopeNode)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_controlstructures_loops_Nova_ForEachLoop* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_cloneTo)(spectra_tree_nodes_controlstructures_loops_Nova_ForEachLoopFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_controlstructures_loops_Nova_ForEachLoop*, spectra_tree_nodes_controlstructures_loops_Nova_ForEachLoop*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_replace)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_validateTypes)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_parsePlaceholders)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_parsePlaceholderChildren)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_NodeList*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_writeAnnotationSeparator)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_toNova)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_writeNova)(spectra_tree_nodes_controlstructures_loops_Nova_ForEachLoopFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_controlstructures_loops_Nova_ForEachLoop*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_toString)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
 spectra_tree_nodes_controlstructures_loops_Nova_ForEachLoop* (*spectra_tree_nodes_controlstructures_loops_Nova_LoopFunctionMap_virtualfunctionMap_static_Nova_parse)(spectra_tree_nodes_controlstructures_loops_Nova_ForEachLoopFunctionMap*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*, char);
 };
 
@@ -12419,17 +11047,6 @@ nova_Interface_VTable itable;
 nova_Nova_Object* (*nova_Nova_Object_virtual_static_Nova_default)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
-spectra_tree_nodes_Nova_Program* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_program)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_Nova_Instantiation* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentInstantiation)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_closures_Nova_LambdaExpression* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentLambda)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_NovaFile* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentFile)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_Nova_FunctionCall* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentFunctionCall)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_Nova_FunctionDeclaration* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentFunction)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_exceptionhandling_Nova_Try* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentTry)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_ClassDeclaration* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentClass)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_scopeConsumer)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_Scope* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_scope)(spectra_tree_nodes_controlstructures_Nova_ControlStructurePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_controlstructures_Nova_ControlStructure*);
-int (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_index)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
 };
 
 
@@ -12445,7 +11062,6 @@ void (*spectra_tree_nodes_Nova_Node_virtual_Nova_onAdded)(spectra_tree_nodes_Nov
 spectra_tree_nodes_variables_Nova_VariableDeclaration* (*spectra_tree_nodes_Nova_Node_virtual_Nova_findVariableDeclaration)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, int);
 spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_Node_virtual_Nova_parseStatement)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*, int);
 spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_Node_virtual_Nova_generateTemporaryScopeNode)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*);
-spectra_tree_nodes_controlstructures_Nova_ControlStructure* (*spectra_tree_nodes_Nova_Node_virtual_Nova_cloneTo)(spectra_tree_nodes_controlstructures_Nova_ControlStructure*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_controlstructures_Nova_ControlStructure*);
 char (*spectra_tree_nodes_Nova_Node_virtual_Nova_replace)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
 char (*spectra_tree_nodes_Nova_Node_virtual_Nova_validateTypes)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*);
 char (*spectra_tree_nodes_Nova_Node_virtual_Nova_parsePlaceholders)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*);
@@ -12477,20 +11093,6 @@ nova_Nova_Object* (*nova_Nova_Object_virtual_static_Nova_default)(nova_Nova_Obje
 nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 spectra_tree_nodes_controlstructures_Nova_ControlStructure* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMapControlStructure_Nova_construct)(spectra_tree_nodes_controlstructures_Nova_ControlStructureFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*);
-void (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_addChild)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
-void (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_onAdded)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_variables_Nova_VariableDeclaration* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_findVariableDeclaration)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, nova_Nova_String*, char);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_parseStatement)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, nova_Nova_String*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*, char);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_generateTemporaryScopeNode)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_controlstructures_Nova_ControlStructure* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_cloneTo)(spectra_tree_nodes_controlstructures_Nova_ControlStructureFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_controlstructures_Nova_ControlStructure*, spectra_tree_nodes_controlstructures_Nova_ControlStructure*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_replace)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_validateTypes)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_parsePlaceholders)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_parsePlaceholderChildren)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_NodeList*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_writeAnnotationSeparator)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_toNova)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_writeNova)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_toString)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
 spectra_tree_nodes_controlstructures_loops_Nova_Loop* (*spectra_tree_nodes_controlstructures_loops_Nova_LoopFunctionMap_virtualfunctionMap_static_Nova_parse)(spectra_tree_nodes_controlstructures_loops_Nova_LoopFunctionMap*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*, char);
 };
 
@@ -12502,17 +11104,6 @@ nova_Interface_VTable itable;
 nova_Nova_Object* (*nova_Nova_Object_virtual_static_Nova_default)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
-spectra_tree_nodes_Nova_Program* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_program)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_Nova_Instantiation* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentInstantiation)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_closures_Nova_LambdaExpression* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentLambda)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_NovaFile* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentFile)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_Nova_FunctionCall* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentFunctionCall)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_Nova_FunctionDeclaration* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentFunction)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_exceptionhandling_Nova_Try* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentTry)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_ClassDeclaration* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentClass)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_scopeConsumer)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_Scope* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_scope)(spectra_tree_nodes_controlstructures_Nova_ControlStructurePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_controlstructures_Nova_ControlStructure*);
-int (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_index)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
 };
 
 
@@ -12528,7 +11119,6 @@ void (*spectra_tree_nodes_Nova_Node_virtual_Nova_onAdded)(spectra_tree_nodes_Nov
 spectra_tree_nodes_variables_Nova_VariableDeclaration* (*spectra_tree_nodes_Nova_Node_virtual_Nova_findVariableDeclaration)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, int);
 spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_Node_virtual_Nova_parseStatement)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*, int);
 spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_Node_virtual_Nova_generateTemporaryScopeNode)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*);
-spectra_tree_nodes_controlstructures_Nova_ControlStructure* (*spectra_tree_nodes_Nova_Node_virtual_Nova_cloneTo)(spectra_tree_nodes_controlstructures_Nova_ControlStructure*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_controlstructures_Nova_ControlStructure*);
 char (*spectra_tree_nodes_Nova_Node_virtual_Nova_replace)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
 char (*spectra_tree_nodes_Nova_Node_virtual_Nova_validateTypes)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*);
 char (*spectra_tree_nodes_Nova_Node_virtual_Nova_parsePlaceholders)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*);
@@ -12560,20 +11150,6 @@ nova_Nova_Object* (*nova_Nova_Object_virtual_static_Nova_default)(nova_Nova_Obje
 nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 spectra_tree_nodes_controlstructures_loops_Nova_WhileLoop* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMapWhileLoop_Nova_construct)(spectra_tree_nodes_controlstructures_loops_Nova_WhileLoopFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*);
-void (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_addChild)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
-void (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_onAdded)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_variables_Nova_VariableDeclaration* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_findVariableDeclaration)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, nova_Nova_String*, char);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_parseStatement)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, nova_Nova_String*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*, char);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_generateTemporaryScopeNode)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_controlstructures_Nova_ControlStructure* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_cloneTo)(spectra_tree_nodes_controlstructures_Nova_ControlStructureFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_controlstructures_Nova_ControlStructure*, spectra_tree_nodes_controlstructures_Nova_ControlStructure*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_replace)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_validateTypes)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_parsePlaceholders)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_parsePlaceholderChildren)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_NodeList*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_writeAnnotationSeparator)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_toNova)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_writeNova)(spectra_tree_nodes_controlstructures_loops_Nova_WhileLoopFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_controlstructures_loops_Nova_WhileLoop*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_toString)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
 spectra_tree_nodes_controlstructures_loops_Nova_WhileLoop* (*spectra_tree_nodes_controlstructures_loops_Nova_LoopFunctionMap_virtualfunctionMap_static_Nova_parse)(spectra_tree_nodes_controlstructures_loops_Nova_WhileLoopFunctionMap*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*, char);
 };
 
@@ -12585,17 +11161,6 @@ nova_Interface_VTable itable;
 nova_Nova_Object* (*nova_Nova_Object_virtual_static_Nova_default)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
-spectra_tree_nodes_Nova_Program* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_program)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_Nova_Instantiation* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentInstantiation)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_closures_Nova_LambdaExpression* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentLambda)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_NovaFile* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentFile)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_Nova_FunctionCall* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentFunctionCall)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_Nova_FunctionDeclaration* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentFunction)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_exceptionhandling_Nova_Try* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentTry)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_ClassDeclaration* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentClass)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_scopeConsumer)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_Scope* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_scope)(spectra_tree_nodes_controlstructures_Nova_ControlStructurePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_controlstructures_Nova_ControlStructure*);
-int (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_index)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
 };
 
 
@@ -12611,7 +11176,6 @@ void (*spectra_tree_nodes_Nova_Node_virtual_Nova_onAdded)(spectra_tree_nodes_Nov
 spectra_tree_nodes_variables_Nova_VariableDeclaration* (*spectra_tree_nodes_Nova_Node_virtual_Nova_findVariableDeclaration)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, int);
 spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_Node_virtual_Nova_parseStatement)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*, int);
 spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_Node_virtual_Nova_generateTemporaryScopeNode)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_Node_virtual_Nova_cloneTo)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
 char (*spectra_tree_nodes_Nova_Node_virtual_Nova_replace)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
 char (*spectra_tree_nodes_Nova_Node_virtual_Nova_validateTypes)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*);
 char (*spectra_tree_nodes_Nova_Node_virtual_Nova_parsePlaceholders)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*);
@@ -12642,20 +11206,6 @@ nova_Nova_Object* (*nova_Nova_Object_virtual_static_Nova_default)(nova_Nova_Obje
 nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 spectra_tree_nodes_exceptionhandling_Nova_Catch* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMapCatch_Nova_construct)(spectra_tree_nodes_exceptionhandling_Nova_CatchFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*);
-void (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_addChild)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
-void (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_onAdded)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_variables_Nova_VariableDeclaration* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_findVariableDeclaration)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, nova_Nova_String*, char);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_parseStatement)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, nova_Nova_String*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*, char);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_generateTemporaryScopeNode)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_cloneTo)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_replace)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_validateTypes)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_parsePlaceholders)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_parsePlaceholderChildren)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_NodeList*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_writeAnnotationSeparator)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_toNova)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_writeNova)(spectra_tree_nodes_exceptionhandling_Nova_CatchFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_exceptionhandling_Nova_Catch*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_toString)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
 };
 
 
@@ -12666,17 +11216,6 @@ nova_Interface_VTable itable;
 nova_Nova_Object* (*nova_Nova_Object_virtual_static_Nova_default)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
-spectra_tree_nodes_Nova_Program* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_program)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_Nova_Instantiation* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentInstantiation)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_closures_Nova_LambdaExpression* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentLambda)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_NovaFile* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentFile)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_Nova_FunctionCall* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentFunctionCall)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_Nova_FunctionDeclaration* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentFunction)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_exceptionhandling_Nova_Try* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentTry)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_ClassDeclaration* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentClass)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_scopeConsumer)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_Scope* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_scope)(spectra_tree_nodes_exceptionhandling_Nova_CatchPropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_exceptionhandling_Nova_Catch*);
-int (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_index)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
 };
 
 
@@ -12692,7 +11231,6 @@ void (*spectra_tree_nodes_Nova_Node_virtual_Nova_onAdded)(spectra_tree_nodes_Nov
 spectra_tree_nodes_variables_Nova_VariableDeclaration* (*spectra_tree_nodes_Nova_Node_virtual_Nova_findVariableDeclaration)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, int);
 spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_Node_virtual_Nova_parseStatement)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*, int);
 spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_Node_virtual_Nova_generateTemporaryScopeNode)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_Node_virtual_Nova_cloneTo)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
 char (*spectra_tree_nodes_Nova_Node_virtual_Nova_replace)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
 char (*spectra_tree_nodes_Nova_Node_virtual_Nova_validateTypes)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*);
 char (*spectra_tree_nodes_Nova_Node_virtual_Nova_parsePlaceholders)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*);
@@ -12723,20 +11261,6 @@ nova_Nova_Object* (*nova_Nova_Object_virtual_static_Nova_default)(nova_Nova_Obje
 nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMapNode_Nova_construct)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*);
-void (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_addChild)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
-void (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_onAdded)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_variables_Nova_VariableDeclaration* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_findVariableDeclaration)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, nova_Nova_String*, char);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_parseStatement)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, nova_Nova_String*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*, char);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_generateTemporaryScopeNode)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_cloneTo)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_replace)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_validateTypes)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_parsePlaceholders)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_parsePlaceholderChildren)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_NodeList*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_writeAnnotationSeparator)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_toNova)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_writeNova)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_toString)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
 };
 
 
@@ -12747,17 +11271,6 @@ nova_Interface_VTable itable;
 nova_Nova_Object* (*nova_Nova_Object_virtual_static_Nova_default)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
-spectra_tree_nodes_Nova_Program* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_program)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_Nova_Instantiation* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentInstantiation)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_closures_Nova_LambdaExpression* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentLambda)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_NovaFile* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentFile)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_Nova_FunctionCall* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentFunctionCall)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_Nova_FunctionDeclaration* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentFunction)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_exceptionhandling_Nova_Try* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentTry)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_ClassDeclaration* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentClass)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_scopeConsumer)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_Scope* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_scope)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-int (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_index)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
 };
 
 
@@ -12773,7 +11286,6 @@ void (*spectra_tree_nodes_Nova_Node_virtual_Nova_onAdded)(spectra_tree_nodes_Nov
 spectra_tree_nodes_variables_Nova_VariableDeclaration* (*spectra_tree_nodes_Nova_Node_virtual_Nova_findVariableDeclaration)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, int);
 spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_Node_virtual_Nova_parseStatement)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*, int);
 spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_Node_virtual_Nova_generateTemporaryScopeNode)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_Node_virtual_Nova_cloneTo)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
 char (*spectra_tree_nodes_Nova_Node_virtual_Nova_replace)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
 char (*spectra_tree_nodes_Nova_Node_virtual_Nova_validateTypes)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*);
 char (*spectra_tree_nodes_Nova_Node_virtual_Nova_parsePlaceholders)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*);
@@ -12804,20 +11316,6 @@ nova_Nova_Object* (*nova_Nova_Object_virtual_static_Nova_default)(nova_Nova_Obje
 nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 spectra_tree_nodes_exceptionhandling_Nova_Throw* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMapThrow_Nova_construct)(spectra_tree_nodes_exceptionhandling_Nova_ThrowFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*);
-void (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_addChild)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
-void (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_onAdded)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_variables_Nova_VariableDeclaration* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_findVariableDeclaration)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, nova_Nova_String*, char);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_parseStatement)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, nova_Nova_String*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*, char);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_generateTemporaryScopeNode)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_cloneTo)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_replace)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_validateTypes)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_parsePlaceholders)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_parsePlaceholderChildren)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_NodeList*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_writeAnnotationSeparator)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_toNova)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_writeNova)(spectra_tree_nodes_exceptionhandling_Nova_ThrowFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_exceptionhandling_Nova_Throw*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_toString)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
 };
 
 
@@ -12828,17 +11326,6 @@ nova_Interface_VTable itable;
 nova_Nova_Object* (*nova_Nova_Object_virtual_static_Nova_default)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
-spectra_tree_nodes_Nova_Program* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_program)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_Nova_Instantiation* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentInstantiation)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_closures_Nova_LambdaExpression* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentLambda)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_NovaFile* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentFile)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_Nova_FunctionCall* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentFunctionCall)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_Nova_FunctionDeclaration* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentFunction)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_exceptionhandling_Nova_Try* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentTry)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_ClassDeclaration* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentClass)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_scopeConsumer)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_Scope* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_scope)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-int (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_index)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
 };
 
 
@@ -12854,7 +11341,6 @@ void (*spectra_tree_nodes_Nova_Node_virtual_Nova_onAdded)(spectra_tree_nodes_Nov
 spectra_tree_nodes_variables_Nova_VariableDeclaration* (*spectra_tree_nodes_Nova_Node_virtual_Nova_findVariableDeclaration)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, int);
 spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_Node_virtual_Nova_parseStatement)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*, int);
 spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_Node_virtual_Nova_generateTemporaryScopeNode)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_Node_virtual_Nova_cloneTo)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
 char (*spectra_tree_nodes_Nova_Node_virtual_Nova_replace)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
 char (*spectra_tree_nodes_Nova_Node_virtual_Nova_validateTypes)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*);
 char (*spectra_tree_nodes_Nova_Node_virtual_Nova_parsePlaceholders)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*);
@@ -12885,20 +11371,6 @@ nova_Nova_Object* (*nova_Nova_Object_virtual_static_Nova_default)(nova_Nova_Obje
 nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 spectra_tree_nodes_exceptionhandling_Nova_Try* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMapTry_Nova_construct)(spectra_tree_nodes_exceptionhandling_Nova_TryFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*);
-void (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_addChild)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
-void (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_onAdded)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_variables_Nova_VariableDeclaration* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_findVariableDeclaration)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, nova_Nova_String*, char);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_parseStatement)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, nova_Nova_String*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*, char);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_generateTemporaryScopeNode)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_cloneTo)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_replace)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_validateTypes)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_parsePlaceholders)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_parsePlaceholderChildren)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_NodeList*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_writeAnnotationSeparator)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_toNova)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_writeNova)(spectra_tree_nodes_exceptionhandling_Nova_TryFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_exceptionhandling_Nova_Try*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_toString)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
 };
 
 
@@ -12909,17 +11381,6 @@ nova_Interface_VTable itable;
 nova_Nova_Object* (*nova_Nova_Object_virtual_static_Nova_default)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
-spectra_tree_nodes_Nova_Program* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_program)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_Nova_Instantiation* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentInstantiation)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_closures_Nova_LambdaExpression* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentLambda)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_NovaFile* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentFile)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_Nova_FunctionCall* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentFunctionCall)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_Nova_FunctionDeclaration* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentFunction)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_exceptionhandling_Nova_Try* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentTry)(spectra_tree_nodes_exceptionhandling_Nova_TryPropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_exceptionhandling_Nova_Try*);
-spectra_tree_nodes_Nova_ClassDeclaration* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentClass)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_scopeConsumer)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_Scope* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_scope)(spectra_tree_nodes_exceptionhandling_Nova_TryPropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_exceptionhandling_Nova_Try*);
-int (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_index)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
 };
 
 
@@ -12935,7 +11396,6 @@ void (*spectra_tree_nodes_Nova_Node_virtual_Nova_onAdded)(spectra_tree_nodes_Nov
 spectra_tree_nodes_variables_Nova_VariableDeclaration* (*spectra_tree_nodes_Nova_Node_virtual_Nova_findVariableDeclaration)(spectra_tree_nodes_functions_Nova_FunctionDeclaration*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, int);
 spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_Node_virtual_Nova_parseStatement)(spectra_tree_nodes_functions_Nova_BodyFunction*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*, int);
 spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_Node_virtual_Nova_generateTemporaryScopeNode)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*);
-spectra_tree_nodes_functions_Nova_BodyFunction* (*spectra_tree_nodes_Nova_Node_virtual_Nova_cloneTo)(spectra_tree_nodes_functions_Nova_BodyFunction*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_functions_Nova_BodyFunction*);
 char (*spectra_tree_nodes_Nova_Node_virtual_Nova_replace)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
 char (*spectra_tree_nodes_Nova_Node_virtual_Nova_validateTypes)(spectra_tree_nodes_Nova_Value*, nova_exception_Nova_ExceptionData*);
 char (*spectra_tree_nodes_Nova_Node_virtual_Nova_parsePlaceholders)(spectra_tree_nodes_functions_Nova_BodyFunction*, nova_exception_Nova_ExceptionData*);
@@ -12976,25 +11436,7 @@ nova_Nova_Object* (*nova_Nova_Object_virtual_static_Nova_default)(nova_Nova_Obje
 nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 spectra_tree_nodes_functions_Nova_AccessorFunction* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMapAccessorFunction_Nova_construct)(spectra_tree_nodes_functions_Nova_AccessorFunctionFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*);
-void (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_addChild)(spectra_tree_nodes_functions_Nova_BodyFunctionFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_functions_Nova_BodyFunction*, spectra_tree_nodes_Nova_Node*);
-void (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_onAdded)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_variables_Nova_VariableDeclaration* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_findVariableDeclaration)(spectra_tree_nodes_functions_Nova_FunctionDeclarationFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_functions_Nova_FunctionDeclaration*, nova_Nova_String*, char);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_parseStatement)(spectra_tree_nodes_functions_Nova_BodyFunctionFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_functions_Nova_BodyFunction*, nova_Nova_String*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*, char);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_generateTemporaryScopeNode)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_Nova_BodyFunction* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap1_Nova_cloneTo)(spectra_tree_nodes_functions_Nova_BodyFunctionFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_functions_Nova_BodyFunction*, spectra_tree_nodes_functions_Nova_BodyFunction*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_replace)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_validateTypes)(spectra_tree_nodes_Nova_ValueFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Value*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_parsePlaceholders)(spectra_tree_nodes_functions_Nova_BodyFunctionFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_functions_Nova_BodyFunction*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_parsePlaceholderChildren)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_NodeList*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_writeAnnotationSeparator)(spectra_tree_nodes_functions_Nova_FunctionDeclarationFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_functions_Nova_FunctionDeclaration*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_toNova)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_writeNova)(spectra_tree_nodes_functions_Nova_BodyFunctionFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_functions_Nova_BodyFunction*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_toString)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
 spectra_tree_nodes_functions_Nova_AccessorFunction* (*spectra_tree_nodes_Nova_ValueFunctionMap_virtualfunctionMap_static_Nova_parse)(spectra_tree_nodes_functions_Nova_AccessorFunctionFunctionMap*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*, char);
-char (*spectra_tree_nodes_Nova_ValueFunctionMap_virtualfunctionMap_Nova_parseType)(spectra_tree_nodes_functions_Nova_FunctionDeclarationFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_functions_Nova_FunctionDeclaration*, nova_Nova_String*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_ValueFunctionMap_virtualfunctionMap_Nova_writeType)(spectra_tree_nodes_Nova_ValueFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Value*);
-char (*spectra_tree_nodes_variables_Nova_VariableDeclarationFunctionMap_virtualfunctionMap_Nova_parseModifier)(spectra_tree_nodes_variables_Nova_VariableDeclarationFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_variables_Nova_VariableDeclaration*, nova_Nova_String*);
-nova_Nova_String* (*spectra_tree_nodes_functions_Nova_FunctionDeclarationFunctionMap_virtualfunctionMap_Nova_writeReturnType)(spectra_tree_nodes_functions_Nova_BodyFunctionFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_functions_Nova_BodyFunction*);
 };
 
 
@@ -13005,22 +11447,6 @@ nova_Interface_VTable itable;
 nova_Nova_Object* (*nova_Nova_Object_virtual_static_Nova_default)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
-spectra_tree_nodes_Nova_Program* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_program)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_Nova_Instantiation* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentInstantiation)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_closures_Nova_LambdaExpression* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentLambda)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_NovaFile* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentFile)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_Nova_FunctionCall* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentFunctionCall)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_Nova_FunctionDeclaration* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentFunction)(spectra_tree_nodes_functions_Nova_FunctionDeclarationPropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_functions_Nova_FunctionDeclaration*);
-spectra_tree_nodes_exceptionhandling_Nova_Try* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentTry)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_ClassDeclaration* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentClass)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_scopeConsumer)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_Scope* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_scope)(spectra_tree_nodes_functions_Nova_BodyFunctionPropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_functions_Nova_BodyFunction*);
-int (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_index)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_Accessible* (*spectra_tree_nodes_Nova_ValuePropertyMap_virtualfunctionMap_Nova_returnedNode)(spectra_tree_nodes_Nova_ValuePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Value*);
-spectra_tree_nodes_Nova_Type* (*spectra_tree_nodes_Nova_ValuePropertyMap_virtualfunctionMap_Nova_type)(spectra_tree_nodes_Nova_ValuePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Value*);
-char (*spectra_tree_nodes_Nova_ValuePropertyMap_virtualfunctionMap_Nova_isAssignable)(spectra_tree_nodes_Nova_ValuePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Value*);
-char (*spectra_tree_nodes_variables_Nova_InstanceDeclarationPropertyMap_virtualfunctionMap_Nova_isPublic)(spectra_tree_nodes_variables_Nova_InstanceDeclarationPropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_variables_Nova_InstanceDeclaration*);
-char (*spectra_tree_nodes_variables_Nova_InstanceDeclarationPropertyMap_virtualfunctionMap_Nova_isPrivate)(spectra_tree_nodes_variables_Nova_InstanceDeclarationPropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_variables_Nova_InstanceDeclaration*);
 };
 
 
@@ -13036,7 +11462,6 @@ void (*spectra_tree_nodes_Nova_Node_virtual_Nova_onAdded)(spectra_tree_nodes_Nov
 spectra_tree_nodes_variables_Nova_VariableDeclaration* (*spectra_tree_nodes_Nova_Node_virtual_Nova_findVariableDeclaration)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, int);
 spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_Node_virtual_Nova_parseStatement)(spectra_tree_nodes_functions_Nova_Instantiation*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*, int);
 spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_Node_virtual_Nova_generateTemporaryScopeNode)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*);
-spectra_tree_nodes_functions_Nova_FunctionCall* (*spectra_tree_nodes_Nova_Node_virtual_Nova_cloneTo)(spectra_tree_nodes_functions_Nova_FunctionCall*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_functions_Nova_FunctionCall*);
 char (*spectra_tree_nodes_Nova_Node_virtual_Nova_replace)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
 char (*spectra_tree_nodes_Nova_Node_virtual_Nova_validateTypes)(spectra_tree_nodes_Nova_Value*, nova_exception_Nova_ExceptionData*);
 char (*spectra_tree_nodes_Nova_Node_virtual_Nova_parsePlaceholders)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*);
@@ -13074,24 +11499,7 @@ nova_Nova_Object* (*nova_Nova_Object_virtual_static_Nova_default)(nova_Nova_Obje
 nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 spectra_tree_nodes_functions_Nova_ArrayInstantiation* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMapArrayInstantiation_Nova_construct)(spectra_tree_nodes_functions_Nova_ArrayInstantiationFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*);
-void (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_addChild)(spectra_tree_nodes_functions_Nova_InstantiationFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_functions_Nova_Instantiation*, spectra_tree_nodes_Nova_Node*);
-void (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_onAdded)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_variables_Nova_VariableDeclaration* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_findVariableDeclaration)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, nova_Nova_String*, char);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_parseStatement)(spectra_tree_nodes_functions_Nova_InstantiationFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_functions_Nova_Instantiation*, nova_Nova_String*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*, char);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_generateTemporaryScopeNode)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_Nova_FunctionCall* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_cloneTo)(spectra_tree_nodes_functions_Nova_FunctionCallFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_functions_Nova_FunctionCall*, spectra_tree_nodes_functions_Nova_FunctionCall*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_replace)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_validateTypes)(spectra_tree_nodes_Nova_ValueFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Value*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_parsePlaceholders)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_parsePlaceholderChildren)(spectra_tree_nodes_functions_Nova_InstantiationFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_functions_Nova_Instantiation*, spectra_tree_nodes_Nova_NodeList*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_writeAnnotationSeparator)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_toNova)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_writeNova)(spectra_tree_nodes_functions_Nova_ArrayInstantiationFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_functions_Nova_ArrayInstantiation*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_toString)(spectra_tree_nodes_functions_Nova_FunctionCallFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_functions_Nova_FunctionCall*);
 spectra_tree_nodes_functions_Nova_ArrayInstantiation* (*spectra_tree_nodes_Nova_ValueFunctionMap_virtualfunctionMap_static_Nova_parse)(spectra_tree_nodes_functions_Nova_ArrayInstantiationFunctionMap*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*, char);
-char (*spectra_tree_nodes_Nova_ValueFunctionMap_virtualfunctionMap_Nova_parseType)(spectra_tree_nodes_Nova_ValueFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Value*, nova_Nova_String*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_ValueFunctionMap_virtualfunctionMap_Nova_writeType)(spectra_tree_nodes_Nova_ValueFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Value*);
-nova_Nova_String* (*spectra_tree_nodes_functions_Nova_FunctionCallFunctionMap_virtualfunctionMap_Nova_writeName)(spectra_tree_nodes_functions_Nova_InstantiationFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_functions_Nova_Instantiation*);
 };
 
 
@@ -13102,20 +11510,6 @@ nova_Interface_VTable itable;
 nova_Nova_Object* (*nova_Nova_Object_virtual_static_Nova_default)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
-spectra_tree_nodes_Nova_Program* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_program)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_Nova_Instantiation* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentInstantiation)(spectra_tree_nodes_functions_Nova_InstantiationPropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_functions_Nova_Instantiation*);
-spectra_tree_nodes_functions_closures_Nova_LambdaExpression* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentLambda)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_NovaFile* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentFile)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_Nova_FunctionCall* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentFunctionCall)(spectra_tree_nodes_functions_Nova_FunctionCallPropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_functions_Nova_FunctionCall*);
-spectra_tree_nodes_functions_Nova_FunctionDeclaration* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentFunction)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_exceptionhandling_Nova_Try* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentTry)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_ClassDeclaration* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentClass)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_scopeConsumer)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_Scope* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_scope)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-int (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_index)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_Accessible* (*spectra_tree_nodes_Nova_ValuePropertyMap_virtualfunctionMap_Nova_returnedNode)(spectra_tree_nodes_Nova_ValuePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Value*);
-spectra_tree_nodes_Nova_Type* (*spectra_tree_nodes_Nova_ValuePropertyMap_virtualfunctionMap_Nova_type)(spectra_tree_nodes_variables_Nova_VariablePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_variables_Nova_Variable*);
-char (*spectra_tree_nodes_Nova_ValuePropertyMap_virtualfunctionMap_Nova_isAssignable)(spectra_tree_nodes_functions_Nova_FunctionCallPropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_functions_Nova_FunctionCall*);
 };
 
 
@@ -13131,7 +11525,6 @@ void (*spectra_tree_nodes_Nova_Node_virtual_Nova_onAdded)(spectra_tree_nodes_Nov
 spectra_tree_nodes_variables_Nova_VariableDeclaration* (*spectra_tree_nodes_Nova_Node_virtual_Nova_findVariableDeclaration)(spectra_tree_nodes_functions_Nova_FunctionDeclaration*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, int);
 spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_Node_virtual_Nova_parseStatement)(spectra_tree_nodes_functions_Nova_BodyFunction*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*, int);
 spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_Node_virtual_Nova_generateTemporaryScopeNode)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*);
-spectra_tree_nodes_functions_Nova_BodyFunction* (*spectra_tree_nodes_Nova_Node_virtual_Nova_cloneTo)(spectra_tree_nodes_functions_Nova_BodyFunction*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_functions_Nova_BodyFunction*);
 char (*spectra_tree_nodes_Nova_Node_virtual_Nova_replace)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
 char (*spectra_tree_nodes_Nova_Node_virtual_Nova_validateTypes)(spectra_tree_nodes_Nova_Value*, nova_exception_Nova_ExceptionData*);
 char (*spectra_tree_nodes_Nova_Node_virtual_Nova_parsePlaceholders)(spectra_tree_nodes_functions_Nova_BodyFunction*, nova_exception_Nova_ExceptionData*);
@@ -13172,25 +11565,7 @@ nova_Nova_Object* (*nova_Nova_Object_virtual_static_Nova_default)(nova_Nova_Obje
 nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 spectra_tree_nodes_functions_Nova_BodyFunction* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMapBodyFunction_Nova_construct)(spectra_tree_nodes_functions_Nova_BodyFunctionFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*);
-void (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_addChild)(spectra_tree_nodes_functions_Nova_BodyFunctionFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_functions_Nova_BodyFunction*, spectra_tree_nodes_Nova_Node*);
-void (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_onAdded)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_variables_Nova_VariableDeclaration* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_findVariableDeclaration)(spectra_tree_nodes_functions_Nova_FunctionDeclarationFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_functions_Nova_FunctionDeclaration*, nova_Nova_String*, char);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_parseStatement)(spectra_tree_nodes_functions_Nova_BodyFunctionFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_functions_Nova_BodyFunction*, nova_Nova_String*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*, char);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_generateTemporaryScopeNode)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_Nova_BodyFunction* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap1_Nova_cloneTo)(spectra_tree_nodes_functions_Nova_BodyFunctionFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_functions_Nova_BodyFunction*, spectra_tree_nodes_functions_Nova_BodyFunction*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_replace)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_validateTypes)(spectra_tree_nodes_Nova_ValueFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Value*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_parsePlaceholders)(spectra_tree_nodes_functions_Nova_BodyFunctionFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_functions_Nova_BodyFunction*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_parsePlaceholderChildren)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_NodeList*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_writeAnnotationSeparator)(spectra_tree_nodes_functions_Nova_FunctionDeclarationFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_functions_Nova_FunctionDeclaration*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_toNova)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_writeNova)(spectra_tree_nodes_functions_Nova_BodyFunctionFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_functions_Nova_BodyFunction*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_toString)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
 spectra_tree_nodes_functions_Nova_BodyFunction* (*spectra_tree_nodes_Nova_ValueFunctionMap_virtualfunctionMap_static_Nova_parse)(spectra_tree_nodes_functions_Nova_BodyFunctionFunctionMap*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*, char);
-char (*spectra_tree_nodes_Nova_ValueFunctionMap_virtualfunctionMap_Nova_parseType)(spectra_tree_nodes_functions_Nova_FunctionDeclarationFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_functions_Nova_FunctionDeclaration*, nova_Nova_String*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_ValueFunctionMap_virtualfunctionMap_Nova_writeType)(spectra_tree_nodes_Nova_ValueFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Value*);
-char (*spectra_tree_nodes_variables_Nova_VariableDeclarationFunctionMap_virtualfunctionMap_Nova_parseModifier)(spectra_tree_nodes_variables_Nova_VariableDeclarationFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_variables_Nova_VariableDeclaration*, nova_Nova_String*);
-nova_Nova_String* (*spectra_tree_nodes_functions_Nova_FunctionDeclarationFunctionMap_virtualfunctionMap_Nova_writeReturnType)(spectra_tree_nodes_functions_Nova_BodyFunctionFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_functions_Nova_BodyFunction*);
 };
 
 
@@ -13201,22 +11576,6 @@ nova_Interface_VTable itable;
 nova_Nova_Object* (*nova_Nova_Object_virtual_static_Nova_default)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
-spectra_tree_nodes_Nova_Program* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_program)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_Nova_Instantiation* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentInstantiation)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_closures_Nova_LambdaExpression* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentLambda)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_NovaFile* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentFile)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_Nova_FunctionCall* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentFunctionCall)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_Nova_FunctionDeclaration* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentFunction)(spectra_tree_nodes_functions_Nova_FunctionDeclarationPropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_functions_Nova_FunctionDeclaration*);
-spectra_tree_nodes_exceptionhandling_Nova_Try* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentTry)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_ClassDeclaration* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentClass)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_scopeConsumer)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_Scope* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_scope)(spectra_tree_nodes_functions_Nova_BodyFunctionPropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_functions_Nova_BodyFunction*);
-int (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_index)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_Accessible* (*spectra_tree_nodes_Nova_ValuePropertyMap_virtualfunctionMap_Nova_returnedNode)(spectra_tree_nodes_Nova_ValuePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Value*);
-spectra_tree_nodes_Nova_Type* (*spectra_tree_nodes_Nova_ValuePropertyMap_virtualfunctionMap_Nova_type)(spectra_tree_nodes_Nova_ValuePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Value*);
-char (*spectra_tree_nodes_Nova_ValuePropertyMap_virtualfunctionMap_Nova_isAssignable)(spectra_tree_nodes_Nova_ValuePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Value*);
-char (*spectra_tree_nodes_variables_Nova_InstanceDeclarationPropertyMap_virtualfunctionMap_Nova_isPublic)(spectra_tree_nodes_variables_Nova_InstanceDeclarationPropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_variables_Nova_InstanceDeclaration*);
-char (*spectra_tree_nodes_variables_Nova_InstanceDeclarationPropertyMap_virtualfunctionMap_Nova_isPrivate)(spectra_tree_nodes_variables_Nova_InstanceDeclarationPropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_variables_Nova_InstanceDeclaration*);
 };
 
 
@@ -13259,7 +11618,6 @@ void (*spectra_tree_nodes_Nova_Node_virtual_Nova_onAdded)(spectra_tree_nodes_Nov
 spectra_tree_nodes_variables_Nova_VariableDeclaration* (*spectra_tree_nodes_Nova_Node_virtual_Nova_findVariableDeclaration)(spectra_tree_nodes_functions_Nova_FunctionDeclaration*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, int);
 spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_Node_virtual_Nova_parseStatement)(spectra_tree_nodes_functions_Nova_BodyFunction*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*, int);
 spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_Node_virtual_Nova_generateTemporaryScopeNode)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*);
-spectra_tree_nodes_functions_Nova_BodyFunction* (*spectra_tree_nodes_Nova_Node_virtual_Nova_cloneTo)(spectra_tree_nodes_functions_Nova_BodyFunction*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_functions_Nova_BodyFunction*);
 char (*spectra_tree_nodes_Nova_Node_virtual_Nova_replace)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
 char (*spectra_tree_nodes_Nova_Node_virtual_Nova_validateTypes)(spectra_tree_nodes_Nova_Value*, nova_exception_Nova_ExceptionData*);
 char (*spectra_tree_nodes_Nova_Node_virtual_Nova_parsePlaceholders)(spectra_tree_nodes_functions_Nova_BodyFunction*, nova_exception_Nova_ExceptionData*);
@@ -13300,25 +11658,7 @@ nova_Nova_Object* (*nova_Nova_Object_virtual_static_Nova_default)(nova_Nova_Obje
 nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 spectra_tree_nodes_functions_Nova_Constructor* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMapConstructor_Nova_construct)(spectra_tree_nodes_functions_Nova_ConstructorFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*);
-void (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_addChild)(spectra_tree_nodes_functions_Nova_BodyFunctionFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_functions_Nova_BodyFunction*, spectra_tree_nodes_Nova_Node*);
-void (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_onAdded)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_variables_Nova_VariableDeclaration* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_findVariableDeclaration)(spectra_tree_nodes_functions_Nova_FunctionDeclarationFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_functions_Nova_FunctionDeclaration*, nova_Nova_String*, char);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_parseStatement)(spectra_tree_nodes_functions_Nova_BodyFunctionFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_functions_Nova_BodyFunction*, nova_Nova_String*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*, char);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_generateTemporaryScopeNode)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_Nova_BodyFunction* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap1_Nova_cloneTo)(spectra_tree_nodes_functions_Nova_BodyFunctionFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_functions_Nova_BodyFunction*, spectra_tree_nodes_functions_Nova_BodyFunction*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_replace)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_validateTypes)(spectra_tree_nodes_Nova_ValueFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Value*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_parsePlaceholders)(spectra_tree_nodes_functions_Nova_BodyFunctionFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_functions_Nova_BodyFunction*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_parsePlaceholderChildren)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_NodeList*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_writeAnnotationSeparator)(spectra_tree_nodes_functions_Nova_FunctionDeclarationFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_functions_Nova_FunctionDeclaration*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_toNova)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_writeNova)(spectra_tree_nodes_functions_Nova_BodyFunctionFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_functions_Nova_BodyFunction*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_toString)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
 spectra_tree_nodes_functions_Nova_Constructor* (*spectra_tree_nodes_Nova_ValueFunctionMap_virtualfunctionMap_static_Nova_parse)(spectra_tree_nodes_functions_Nova_ConstructorFunctionMap*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*, char);
-char (*spectra_tree_nodes_Nova_ValueFunctionMap_virtualfunctionMap_Nova_parseType)(spectra_tree_nodes_functions_Nova_FunctionDeclarationFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_functions_Nova_FunctionDeclaration*, nova_Nova_String*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_ValueFunctionMap_virtualfunctionMap_Nova_writeType)(spectra_tree_nodes_Nova_ValueFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Value*);
-char (*spectra_tree_nodes_variables_Nova_VariableDeclarationFunctionMap_virtualfunctionMap_Nova_parseModifier)(spectra_tree_nodes_variables_Nova_VariableDeclarationFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_variables_Nova_VariableDeclaration*, nova_Nova_String*);
-nova_Nova_String* (*spectra_tree_nodes_functions_Nova_FunctionDeclarationFunctionMap_virtualfunctionMap_Nova_writeReturnType)(spectra_tree_nodes_functions_Nova_ConstructorFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_functions_Nova_Constructor*);
 };
 
 
@@ -13329,22 +11669,6 @@ nova_Interface_VTable itable;
 nova_Nova_Object* (*nova_Nova_Object_virtual_static_Nova_default)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
-spectra_tree_nodes_Nova_Program* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_program)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_Nova_Instantiation* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentInstantiation)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_closures_Nova_LambdaExpression* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentLambda)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_NovaFile* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentFile)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_Nova_FunctionCall* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentFunctionCall)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_Nova_FunctionDeclaration* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentFunction)(spectra_tree_nodes_functions_Nova_FunctionDeclarationPropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_functions_Nova_FunctionDeclaration*);
-spectra_tree_nodes_exceptionhandling_Nova_Try* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentTry)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_ClassDeclaration* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentClass)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_scopeConsumer)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_Scope* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_scope)(spectra_tree_nodes_functions_Nova_BodyFunctionPropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_functions_Nova_BodyFunction*);
-int (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_index)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_Accessible* (*spectra_tree_nodes_Nova_ValuePropertyMap_virtualfunctionMap_Nova_returnedNode)(spectra_tree_nodes_Nova_ValuePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Value*);
-spectra_tree_nodes_Nova_Type* (*spectra_tree_nodes_Nova_ValuePropertyMap_virtualfunctionMap_Nova_type)(spectra_tree_nodes_Nova_ValuePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Value*);
-char (*spectra_tree_nodes_Nova_ValuePropertyMap_virtualfunctionMap_Nova_isAssignable)(spectra_tree_nodes_Nova_ValuePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Value*);
-char (*spectra_tree_nodes_variables_Nova_InstanceDeclarationPropertyMap_virtualfunctionMap_Nova_isPublic)(spectra_tree_nodes_variables_Nova_InstanceDeclarationPropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_variables_Nova_InstanceDeclaration*);
-char (*spectra_tree_nodes_variables_Nova_InstanceDeclarationPropertyMap_virtualfunctionMap_Nova_isPrivate)(spectra_tree_nodes_variables_Nova_InstanceDeclarationPropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_variables_Nova_InstanceDeclaration*);
 };
 
 
@@ -13360,7 +11684,6 @@ void (*spectra_tree_nodes_Nova_Node_virtual_Nova_onAdded)(spectra_tree_nodes_Nov
 spectra_tree_nodes_variables_Nova_VariableDeclaration* (*spectra_tree_nodes_Nova_Node_virtual_Nova_findVariableDeclaration)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, int);
 spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_Node_virtual_Nova_parseStatement)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*, int);
 spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_Node_virtual_Nova_generateTemporaryScopeNode)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*);
-spectra_tree_nodes_Nova_Value* (*spectra_tree_nodes_Nova_Node_virtual_Nova_cloneTo)(spectra_tree_nodes_Nova_Value*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Value*);
 char (*spectra_tree_nodes_Nova_Node_virtual_Nova_replace)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
 char (*spectra_tree_nodes_Nova_Node_virtual_Nova_validateTypes)(spectra_tree_nodes_Nova_Value*, nova_exception_Nova_ExceptionData*);
 char (*spectra_tree_nodes_Nova_Node_virtual_Nova_parsePlaceholders)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*);
@@ -13397,23 +11720,7 @@ nova_Nova_Object* (*nova_Nova_Object_virtual_static_Nova_default)(nova_Nova_Obje
 nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 spectra_tree_nodes_functions_Nova_EmptyArrayBracket* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMapEmptyArrayBracket_Nova_construct)(spectra_tree_nodes_functions_Nova_EmptyArrayBracketFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*);
-void (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_addChild)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
-void (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_onAdded)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_variables_Nova_VariableDeclaration* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_findVariableDeclaration)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, nova_Nova_String*, char);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_parseStatement)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, nova_Nova_String*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*, char);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_generateTemporaryScopeNode)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_Value* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_cloneTo)(spectra_tree_nodes_Nova_ValueFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Value*, spectra_tree_nodes_Nova_Value*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_replace)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_validateTypes)(spectra_tree_nodes_Nova_ValueFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Value*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_parsePlaceholders)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_parsePlaceholderChildren)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_NodeList*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_writeAnnotationSeparator)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_toNova)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_writeNova)(spectra_tree_nodes_functions_Nova_EmptyArrayBracketFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_functions_Nova_EmptyArrayBracket*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_toString)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
 spectra_tree_nodes_Nova_Value* (*spectra_tree_nodes_Nova_ValueFunctionMap_virtualfunctionMap0_static_Nova_parse)(spectra_tree_nodes_Nova_ValueFunctionMap*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*, char);
-char (*spectra_tree_nodes_Nova_ValueFunctionMap_virtualfunctionMap_Nova_parseType)(spectra_tree_nodes_Nova_ValueFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Value*, nova_Nova_String*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_ValueFunctionMap_virtualfunctionMap_Nova_writeType)(spectra_tree_nodes_Nova_ValueFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Value*);
 };
 
 
@@ -13424,20 +11731,6 @@ nova_Interface_VTable itable;
 nova_Nova_Object* (*nova_Nova_Object_virtual_static_Nova_default)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
-spectra_tree_nodes_Nova_Program* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_program)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_Nova_Instantiation* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentInstantiation)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_closures_Nova_LambdaExpression* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentLambda)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_NovaFile* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentFile)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_Nova_FunctionCall* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentFunctionCall)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_Nova_FunctionDeclaration* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentFunction)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_exceptionhandling_Nova_Try* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentTry)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_ClassDeclaration* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentClass)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_scopeConsumer)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_Scope* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_scope)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-int (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_index)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_Accessible* (*spectra_tree_nodes_Nova_ValuePropertyMap_virtualfunctionMap_Nova_returnedNode)(spectra_tree_nodes_Nova_ValuePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Value*);
-spectra_tree_nodes_Nova_Type* (*spectra_tree_nodes_Nova_ValuePropertyMap_virtualfunctionMap_Nova_type)(spectra_tree_nodes_Nova_ValuePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Value*);
-char (*spectra_tree_nodes_Nova_ValuePropertyMap_virtualfunctionMap_Nova_isAssignable)(spectra_tree_nodes_Nova_ValuePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Value*);
 };
 
 
@@ -13453,7 +11746,6 @@ void (*spectra_tree_nodes_Nova_Node_virtual_Nova_onAdded)(spectra_tree_nodes_Nov
 spectra_tree_nodes_variables_Nova_VariableDeclaration* (*spectra_tree_nodes_Nova_Node_virtual_Nova_findVariableDeclaration)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, int);
 spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_Node_virtual_Nova_parseStatement)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*, int);
 spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_Node_virtual_Nova_generateTemporaryScopeNode)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_Node_virtual_Nova_cloneTo)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
 char (*spectra_tree_nodes_Nova_Node_virtual_Nova_replace)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
 char (*spectra_tree_nodes_Nova_Node_virtual_Nova_validateTypes)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*);
 char (*spectra_tree_nodes_Nova_Node_virtual_Nova_parsePlaceholders)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*);
@@ -13484,20 +11776,6 @@ nova_Nova_Object* (*nova_Nova_Object_virtual_static_Nova_default)(nova_Nova_Obje
 nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 spectra_tree_nodes_functions_Nova_FunctionArgumentList* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMapFunctionArgumentList_Nova_construct)(spectra_tree_nodes_functions_Nova_FunctionArgumentListFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*);
-void (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_addChild)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
-void (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_onAdded)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_variables_Nova_VariableDeclaration* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_findVariableDeclaration)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, nova_Nova_String*, char);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_parseStatement)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, nova_Nova_String*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*, char);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_generateTemporaryScopeNode)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_cloneTo)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_replace)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_validateTypes)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_parsePlaceholders)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_parsePlaceholderChildren)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_NodeList*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_writeAnnotationSeparator)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_toNova)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_writeNova)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_toString)(spectra_tree_nodes_Nova_ArgumentListFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_ArgumentList*);
 };
 
 
@@ -13508,17 +11786,6 @@ nova_Interface_VTable itable;
 nova_Nova_Object* (*nova_Nova_Object_virtual_static_Nova_default)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
-spectra_tree_nodes_Nova_Program* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_program)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_Nova_Instantiation* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentInstantiation)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_closures_Nova_LambdaExpression* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentLambda)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_NovaFile* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentFile)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_Nova_FunctionCall* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentFunctionCall)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_Nova_FunctionDeclaration* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentFunction)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_exceptionhandling_Nova_Try* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentTry)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_ClassDeclaration* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentClass)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_scopeConsumer)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_Scope* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_scope)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-int (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_index)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
 };
 
 
@@ -13534,7 +11801,6 @@ void (*spectra_tree_nodes_Nova_Node_virtual_Nova_onAdded)(spectra_tree_nodes_Nov
 spectra_tree_nodes_variables_Nova_VariableDeclaration* (*spectra_tree_nodes_Nova_Node_virtual_Nova_findVariableDeclaration)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, int);
 spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_Node_virtual_Nova_parseStatement)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*, int);
 spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_Node_virtual_Nova_generateTemporaryScopeNode)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*);
-spectra_tree_nodes_functions_Nova_FunctionCall* (*spectra_tree_nodes_Nova_Node_virtual_Nova_cloneTo)(spectra_tree_nodes_functions_Nova_FunctionCall*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_functions_Nova_FunctionCall*);
 char (*spectra_tree_nodes_Nova_Node_virtual_Nova_replace)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
 char (*spectra_tree_nodes_Nova_Node_virtual_Nova_validateTypes)(spectra_tree_nodes_Nova_Value*, nova_exception_Nova_ExceptionData*);
 char (*spectra_tree_nodes_Nova_Node_virtual_Nova_parsePlaceholders)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*);
@@ -13572,24 +11838,7 @@ nova_Nova_Object* (*nova_Nova_Object_virtual_static_Nova_default)(nova_Nova_Obje
 nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 spectra_tree_nodes_functions_Nova_FunctionCall* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMapFunctionCall_Nova_construct)(spectra_tree_nodes_functions_Nova_FunctionCallFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*);
-void (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_addChild)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
-void (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_onAdded)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_variables_Nova_VariableDeclaration* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_findVariableDeclaration)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, nova_Nova_String*, char);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_parseStatement)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, nova_Nova_String*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*, char);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_generateTemporaryScopeNode)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_Nova_FunctionCall* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_cloneTo)(spectra_tree_nodes_functions_Nova_FunctionCallFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_functions_Nova_FunctionCall*, spectra_tree_nodes_functions_Nova_FunctionCall*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_replace)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_validateTypes)(spectra_tree_nodes_Nova_ValueFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Value*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_parsePlaceholders)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_parsePlaceholderChildren)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_NodeList*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_writeAnnotationSeparator)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_toNova)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_writeNova)(spectra_tree_nodes_functions_Nova_FunctionCallFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_functions_Nova_FunctionCall*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_toString)(spectra_tree_nodes_functions_Nova_FunctionCallFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_functions_Nova_FunctionCall*);
 spectra_tree_nodes_functions_Nova_FunctionCall* (*spectra_tree_nodes_Nova_ValueFunctionMap_virtualfunctionMap_static_Nova_parse)(spectra_tree_nodes_functions_Nova_FunctionCallFunctionMap*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*, char);
-char (*spectra_tree_nodes_Nova_ValueFunctionMap_virtualfunctionMap_Nova_parseType)(spectra_tree_nodes_Nova_ValueFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Value*, nova_Nova_String*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_ValueFunctionMap_virtualfunctionMap_Nova_writeType)(spectra_tree_nodes_Nova_ValueFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Value*);
-nova_Nova_String* (*spectra_tree_nodes_functions_Nova_FunctionCallFunctionMap_virtualfunctionMap_Nova_writeName)(spectra_tree_nodes_functions_Nova_FunctionCallFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_functions_Nova_FunctionCall*);
 };
 
 
@@ -13600,20 +11849,6 @@ nova_Interface_VTable itable;
 nova_Nova_Object* (*nova_Nova_Object_virtual_static_Nova_default)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
-spectra_tree_nodes_Nova_Program* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_program)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_Nova_Instantiation* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentInstantiation)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_closures_Nova_LambdaExpression* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentLambda)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_NovaFile* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentFile)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_Nova_FunctionCall* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentFunctionCall)(spectra_tree_nodes_functions_Nova_FunctionCallPropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_functions_Nova_FunctionCall*);
-spectra_tree_nodes_functions_Nova_FunctionDeclaration* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentFunction)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_exceptionhandling_Nova_Try* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentTry)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_ClassDeclaration* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentClass)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_scopeConsumer)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_Scope* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_scope)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-int (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_index)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_Accessible* (*spectra_tree_nodes_Nova_ValuePropertyMap_virtualfunctionMap_Nova_returnedNode)(spectra_tree_nodes_Nova_ValuePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Value*);
-spectra_tree_nodes_Nova_Type* (*spectra_tree_nodes_Nova_ValuePropertyMap_virtualfunctionMap_Nova_type)(spectra_tree_nodes_variables_Nova_VariablePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_variables_Nova_Variable*);
-char (*spectra_tree_nodes_Nova_ValuePropertyMap_virtualfunctionMap_Nova_isAssignable)(spectra_tree_nodes_functions_Nova_FunctionCallPropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_functions_Nova_FunctionCall*);
 };
 
 
@@ -13629,7 +11864,6 @@ void (*spectra_tree_nodes_Nova_Node_virtual_Nova_onAdded)(spectra_tree_nodes_Nov
 spectra_tree_nodes_variables_Nova_VariableDeclaration* (*spectra_tree_nodes_Nova_Node_virtual_Nova_findVariableDeclaration)(spectra_tree_nodes_functions_Nova_FunctionDeclaration*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, int);
 spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_Node_virtual_Nova_parseStatement)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*, int);
 spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_Node_virtual_Nova_generateTemporaryScopeNode)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*);
-spectra_tree_nodes_functions_Nova_FunctionDeclaration* (*spectra_tree_nodes_Nova_Node_virtual_Nova_cloneTo)(spectra_tree_nodes_functions_Nova_FunctionDeclaration*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_functions_Nova_FunctionDeclaration*);
 char (*spectra_tree_nodes_Nova_Node_virtual_Nova_replace)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
 char (*spectra_tree_nodes_Nova_Node_virtual_Nova_validateTypes)(spectra_tree_nodes_Nova_Value*, nova_exception_Nova_ExceptionData*);
 char (*spectra_tree_nodes_Nova_Node_virtual_Nova_parsePlaceholders)(spectra_tree_nodes_functions_Nova_FunctionDeclaration*, nova_exception_Nova_ExceptionData*);
@@ -13670,25 +11904,7 @@ nova_Nova_Object* (*nova_Nova_Object_virtual_static_Nova_default)(nova_Nova_Obje
 nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 spectra_tree_nodes_functions_Nova_FunctionDeclaration* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMapFunctionDeclaration_Nova_construct)(spectra_tree_nodes_functions_Nova_FunctionDeclarationFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*);
-void (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_addChild)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
-void (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_onAdded)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_variables_Nova_VariableDeclaration* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_findVariableDeclaration)(spectra_tree_nodes_functions_Nova_FunctionDeclarationFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_functions_Nova_FunctionDeclaration*, nova_Nova_String*, char);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_parseStatement)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, nova_Nova_String*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*, char);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_generateTemporaryScopeNode)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_Nova_FunctionDeclaration* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_cloneTo)(spectra_tree_nodes_functions_Nova_FunctionDeclarationFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_functions_Nova_FunctionDeclaration*, spectra_tree_nodes_functions_Nova_FunctionDeclaration*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_replace)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_validateTypes)(spectra_tree_nodes_Nova_ValueFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Value*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_parsePlaceholders)(spectra_tree_nodes_functions_Nova_FunctionDeclarationFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_functions_Nova_FunctionDeclaration*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_parsePlaceholderChildren)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_NodeList*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_writeAnnotationSeparator)(spectra_tree_nodes_functions_Nova_FunctionDeclarationFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_functions_Nova_FunctionDeclaration*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_toNova)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_writeNova)(spectra_tree_nodes_functions_Nova_FunctionDeclarationFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_functions_Nova_FunctionDeclaration*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_toString)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
 spectra_tree_nodes_functions_Nova_FunctionDeclaration* (*spectra_tree_nodes_Nova_ValueFunctionMap_virtualfunctionMap_static_Nova_parse)(spectra_tree_nodes_functions_Nova_FunctionDeclarationFunctionMap*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*, char);
-char (*spectra_tree_nodes_Nova_ValueFunctionMap_virtualfunctionMap_Nova_parseType)(spectra_tree_nodes_functions_Nova_FunctionDeclarationFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_functions_Nova_FunctionDeclaration*, nova_Nova_String*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_ValueFunctionMap_virtualfunctionMap_Nova_writeType)(spectra_tree_nodes_Nova_ValueFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Value*);
-char (*spectra_tree_nodes_variables_Nova_VariableDeclarationFunctionMap_virtualfunctionMap_Nova_parseModifier)(spectra_tree_nodes_variables_Nova_VariableDeclarationFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_variables_Nova_VariableDeclaration*, nova_Nova_String*);
-nova_Nova_String* (*spectra_tree_nodes_functions_Nova_FunctionDeclarationFunctionMap_virtualfunctionMap_Nova_writeReturnType)(spectra_tree_nodes_functions_Nova_FunctionDeclarationFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_functions_Nova_FunctionDeclaration*);
 };
 
 
@@ -13699,22 +11915,6 @@ nova_Interface_VTable itable;
 nova_Nova_Object* (*nova_Nova_Object_virtual_static_Nova_default)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
-spectra_tree_nodes_Nova_Program* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_program)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_Nova_Instantiation* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentInstantiation)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_closures_Nova_LambdaExpression* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentLambda)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_NovaFile* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentFile)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_Nova_FunctionCall* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentFunctionCall)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_Nova_FunctionDeclaration* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentFunction)(spectra_tree_nodes_functions_Nova_FunctionDeclarationPropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_functions_Nova_FunctionDeclaration*);
-spectra_tree_nodes_exceptionhandling_Nova_Try* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentTry)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_ClassDeclaration* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentClass)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_scopeConsumer)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_Scope* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_scope)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-int (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_index)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_Accessible* (*spectra_tree_nodes_Nova_ValuePropertyMap_virtualfunctionMap_Nova_returnedNode)(spectra_tree_nodes_Nova_ValuePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Value*);
-spectra_tree_nodes_Nova_Type* (*spectra_tree_nodes_Nova_ValuePropertyMap_virtualfunctionMap_Nova_type)(spectra_tree_nodes_Nova_ValuePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Value*);
-char (*spectra_tree_nodes_Nova_ValuePropertyMap_virtualfunctionMap_Nova_isAssignable)(spectra_tree_nodes_Nova_ValuePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Value*);
-char (*spectra_tree_nodes_variables_Nova_InstanceDeclarationPropertyMap_virtualfunctionMap_Nova_isPublic)(spectra_tree_nodes_variables_Nova_InstanceDeclarationPropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_variables_Nova_InstanceDeclaration*);
-char (*spectra_tree_nodes_variables_Nova_InstanceDeclarationPropertyMap_virtualfunctionMap_Nova_isPrivate)(spectra_tree_nodes_variables_Nova_InstanceDeclarationPropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_variables_Nova_InstanceDeclaration*);
 };
 
 
@@ -13730,7 +11930,6 @@ void (*spectra_tree_nodes_Nova_Node_virtual_Nova_onAdded)(spectra_tree_nodes_Nov
 spectra_tree_nodes_variables_Nova_VariableDeclaration* (*spectra_tree_nodes_Nova_Node_virtual_Nova_findVariableDeclaration)(spectra_tree_nodes_functions_Nova_FunctionDeclaration*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, int);
 spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_Node_virtual_Nova_parseStatement)(spectra_tree_nodes_functions_Nova_BodyFunction*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*, int);
 spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_Node_virtual_Nova_generateTemporaryScopeNode)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*);
-spectra_tree_nodes_functions_Nova_BodyFunction* (*spectra_tree_nodes_Nova_Node_virtual_Nova_cloneTo)(spectra_tree_nodes_functions_Nova_BodyFunction*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_functions_Nova_BodyFunction*);
 char (*spectra_tree_nodes_Nova_Node_virtual_Nova_replace)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
 char (*spectra_tree_nodes_Nova_Node_virtual_Nova_validateTypes)(spectra_tree_nodes_Nova_Value*, nova_exception_Nova_ExceptionData*);
 char (*spectra_tree_nodes_Nova_Node_virtual_Nova_parsePlaceholders)(spectra_tree_nodes_functions_Nova_BodyFunction*, nova_exception_Nova_ExceptionData*);
@@ -13771,25 +11970,7 @@ nova_Nova_Object* (*nova_Nova_Object_virtual_static_Nova_default)(nova_Nova_Obje
 nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 spectra_tree_nodes_functions_Nova_BodyFunction* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMapBodyFunction_Nova_construct)(spectra_tree_nodes_functions_Nova_BodyFunctionFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*);
-void (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_addChild)(spectra_tree_nodes_functions_Nova_BodyFunctionFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_functions_Nova_BodyFunction*, spectra_tree_nodes_Nova_Node*);
-void (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_onAdded)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_variables_Nova_VariableDeclaration* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_findVariableDeclaration)(spectra_tree_nodes_functions_Nova_FunctionDeclarationFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_functions_Nova_FunctionDeclaration*, nova_Nova_String*, char);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_parseStatement)(spectra_tree_nodes_functions_Nova_BodyFunctionFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_functions_Nova_BodyFunction*, nova_Nova_String*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*, char);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_generateTemporaryScopeNode)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_Nova_BodyFunction* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap1_Nova_cloneTo)(spectra_tree_nodes_functions_Nova_BodyFunctionFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_functions_Nova_BodyFunction*, spectra_tree_nodes_functions_Nova_BodyFunction*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_replace)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_validateTypes)(spectra_tree_nodes_Nova_ValueFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Value*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_parsePlaceholders)(spectra_tree_nodes_functions_Nova_BodyFunctionFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_functions_Nova_BodyFunction*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_parsePlaceholderChildren)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_NodeList*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_writeAnnotationSeparator)(spectra_tree_nodes_functions_Nova_FunctionDeclarationFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_functions_Nova_FunctionDeclaration*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_toNova)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_writeNova)(spectra_tree_nodes_functions_Nova_BodyFunctionFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_functions_Nova_BodyFunction*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_toString)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
 spectra_tree_nodes_functions_Nova_BodyFunction* (*spectra_tree_nodes_Nova_ValueFunctionMap_virtualfunctionMap_static_Nova_parse)(spectra_tree_nodes_functions_Nova_BodyFunctionFunctionMap*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*, char);
-char (*spectra_tree_nodes_Nova_ValueFunctionMap_virtualfunctionMap_Nova_parseType)(spectra_tree_nodes_functions_Nova_FunctionDeclarationFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_functions_Nova_FunctionDeclaration*, nova_Nova_String*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_ValueFunctionMap_virtualfunctionMap_Nova_writeType)(spectra_tree_nodes_Nova_ValueFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Value*);
-char (*spectra_tree_nodes_variables_Nova_VariableDeclarationFunctionMap_virtualfunctionMap_Nova_parseModifier)(spectra_tree_nodes_variables_Nova_VariableDeclarationFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_variables_Nova_VariableDeclaration*, nova_Nova_String*);
-nova_Nova_String* (*spectra_tree_nodes_functions_Nova_FunctionDeclarationFunctionMap_virtualfunctionMap_Nova_writeReturnType)(spectra_tree_nodes_functions_Nova_BodyFunctionFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_functions_Nova_BodyFunction*);
 };
 
 
@@ -13800,22 +11981,6 @@ nova_Interface_VTable itable;
 nova_Nova_Object* (*nova_Nova_Object_virtual_static_Nova_default)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
-spectra_tree_nodes_Nova_Program* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_program)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_Nova_Instantiation* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentInstantiation)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_closures_Nova_LambdaExpression* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentLambda)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_NovaFile* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentFile)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_Nova_FunctionCall* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentFunctionCall)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_Nova_FunctionDeclaration* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentFunction)(spectra_tree_nodes_functions_Nova_FunctionDeclarationPropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_functions_Nova_FunctionDeclaration*);
-spectra_tree_nodes_exceptionhandling_Nova_Try* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentTry)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_ClassDeclaration* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentClass)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_scopeConsumer)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_Scope* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_scope)(spectra_tree_nodes_functions_Nova_BodyFunctionPropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_functions_Nova_BodyFunction*);
-int (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_index)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_Accessible* (*spectra_tree_nodes_Nova_ValuePropertyMap_virtualfunctionMap_Nova_returnedNode)(spectra_tree_nodes_Nova_ValuePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Value*);
-spectra_tree_nodes_Nova_Type* (*spectra_tree_nodes_Nova_ValuePropertyMap_virtualfunctionMap_Nova_type)(spectra_tree_nodes_Nova_ValuePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Value*);
-char (*spectra_tree_nodes_Nova_ValuePropertyMap_virtualfunctionMap_Nova_isAssignable)(spectra_tree_nodes_Nova_ValuePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Value*);
-char (*spectra_tree_nodes_variables_Nova_InstanceDeclarationPropertyMap_virtualfunctionMap_Nova_isPublic)(spectra_tree_nodes_variables_Nova_InstanceDeclarationPropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_variables_Nova_InstanceDeclaration*);
-char (*spectra_tree_nodes_variables_Nova_InstanceDeclarationPropertyMap_virtualfunctionMap_Nova_isPrivate)(spectra_tree_nodes_variables_Nova_InstanceDeclarationPropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_variables_Nova_InstanceDeclaration*);
 };
 
 
@@ -13831,7 +11996,6 @@ void (*spectra_tree_nodes_Nova_Node_virtual_Nova_onAdded)(spectra_tree_nodes_Nov
 spectra_tree_nodes_variables_Nova_VariableDeclaration* (*spectra_tree_nodes_Nova_Node_virtual_Nova_findVariableDeclaration)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, int);
 spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_Node_virtual_Nova_parseStatement)(spectra_tree_nodes_functions_Nova_Instantiation*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*, int);
 spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_Node_virtual_Nova_generateTemporaryScopeNode)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*);
-spectra_tree_nodes_functions_Nova_FunctionCall* (*spectra_tree_nodes_Nova_Node_virtual_Nova_cloneTo)(spectra_tree_nodes_functions_Nova_FunctionCall*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_functions_Nova_FunctionCall*);
 char (*spectra_tree_nodes_Nova_Node_virtual_Nova_replace)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
 char (*spectra_tree_nodes_Nova_Node_virtual_Nova_validateTypes)(spectra_tree_nodes_Nova_Value*, nova_exception_Nova_ExceptionData*);
 char (*spectra_tree_nodes_Nova_Node_virtual_Nova_parsePlaceholders)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*);
@@ -13869,24 +12033,7 @@ nova_Nova_Object* (*nova_Nova_Object_virtual_static_Nova_default)(nova_Nova_Obje
 nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 spectra_tree_nodes_functions_Nova_Instantiation* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMapInstantiation_Nova_construct)(spectra_tree_nodes_functions_Nova_InstantiationFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*);
-void (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_addChild)(spectra_tree_nodes_functions_Nova_InstantiationFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_functions_Nova_Instantiation*, spectra_tree_nodes_Nova_Node*);
-void (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_onAdded)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_variables_Nova_VariableDeclaration* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_findVariableDeclaration)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, nova_Nova_String*, char);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_parseStatement)(spectra_tree_nodes_functions_Nova_InstantiationFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_functions_Nova_Instantiation*, nova_Nova_String*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*, char);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_generateTemporaryScopeNode)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_Nova_FunctionCall* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_cloneTo)(spectra_tree_nodes_functions_Nova_FunctionCallFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_functions_Nova_FunctionCall*, spectra_tree_nodes_functions_Nova_FunctionCall*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_replace)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_validateTypes)(spectra_tree_nodes_Nova_ValueFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Value*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_parsePlaceholders)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_parsePlaceholderChildren)(spectra_tree_nodes_functions_Nova_InstantiationFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_functions_Nova_Instantiation*, spectra_tree_nodes_Nova_NodeList*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_writeAnnotationSeparator)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_toNova)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_writeNova)(spectra_tree_nodes_functions_Nova_InstantiationFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_functions_Nova_Instantiation*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_toString)(spectra_tree_nodes_functions_Nova_FunctionCallFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_functions_Nova_FunctionCall*);
 spectra_tree_nodes_functions_Nova_Instantiation* (*spectra_tree_nodes_Nova_ValueFunctionMap_virtualfunctionMap_static_Nova_parse)(spectra_tree_nodes_functions_Nova_InstantiationFunctionMap*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*, char);
-char (*spectra_tree_nodes_Nova_ValueFunctionMap_virtualfunctionMap_Nova_parseType)(spectra_tree_nodes_Nova_ValueFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Value*, nova_Nova_String*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_ValueFunctionMap_virtualfunctionMap_Nova_writeType)(spectra_tree_nodes_Nova_ValueFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Value*);
-nova_Nova_String* (*spectra_tree_nodes_functions_Nova_FunctionCallFunctionMap_virtualfunctionMap_Nova_writeName)(spectra_tree_nodes_functions_Nova_InstantiationFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_functions_Nova_Instantiation*);
 };
 
 
@@ -13897,20 +12044,6 @@ nova_Interface_VTable itable;
 nova_Nova_Object* (*nova_Nova_Object_virtual_static_Nova_default)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
-spectra_tree_nodes_Nova_Program* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_program)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_Nova_Instantiation* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentInstantiation)(spectra_tree_nodes_functions_Nova_InstantiationPropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_functions_Nova_Instantiation*);
-spectra_tree_nodes_functions_closures_Nova_LambdaExpression* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentLambda)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_NovaFile* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentFile)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_Nova_FunctionCall* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentFunctionCall)(spectra_tree_nodes_functions_Nova_FunctionCallPropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_functions_Nova_FunctionCall*);
-spectra_tree_nodes_functions_Nova_FunctionDeclaration* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentFunction)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_exceptionhandling_Nova_Try* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentTry)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_ClassDeclaration* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentClass)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_scopeConsumer)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_Scope* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_scope)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-int (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_index)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_Accessible* (*spectra_tree_nodes_Nova_ValuePropertyMap_virtualfunctionMap_Nova_returnedNode)(spectra_tree_nodes_Nova_ValuePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Value*);
-spectra_tree_nodes_Nova_Type* (*spectra_tree_nodes_Nova_ValuePropertyMap_virtualfunctionMap_Nova_type)(spectra_tree_nodes_variables_Nova_VariablePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_variables_Nova_Variable*);
-char (*spectra_tree_nodes_Nova_ValuePropertyMap_virtualfunctionMap_Nova_isAssignable)(spectra_tree_nodes_functions_Nova_FunctionCallPropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_functions_Nova_FunctionCall*);
 };
 
 
@@ -13926,7 +12059,6 @@ void (*spectra_tree_nodes_Nova_Node_virtual_Nova_onAdded)(spectra_tree_nodes_Nov
 spectra_tree_nodes_variables_Nova_VariableDeclaration* (*spectra_tree_nodes_Nova_Node_virtual_Nova_findVariableDeclaration)(spectra_tree_nodes_functions_Nova_FunctionDeclaration*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, int);
 spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_Node_virtual_Nova_parseStatement)(spectra_tree_nodes_functions_Nova_BodyFunction*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*, int);
 spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_Node_virtual_Nova_generateTemporaryScopeNode)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*);
-spectra_tree_nodes_functions_Nova_BodyFunction* (*spectra_tree_nodes_Nova_Node_virtual_Nova_cloneTo)(spectra_tree_nodes_functions_Nova_BodyFunction*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_functions_Nova_BodyFunction*);
 char (*spectra_tree_nodes_Nova_Node_virtual_Nova_replace)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
 char (*spectra_tree_nodes_Nova_Node_virtual_Nova_validateTypes)(spectra_tree_nodes_Nova_Value*, nova_exception_Nova_ExceptionData*);
 char (*spectra_tree_nodes_Nova_Node_virtual_Nova_parsePlaceholders)(spectra_tree_nodes_functions_Nova_BodyFunction*, nova_exception_Nova_ExceptionData*);
@@ -13967,25 +12099,7 @@ nova_Nova_Object* (*nova_Nova_Object_virtual_static_Nova_default)(nova_Nova_Obje
 nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 spectra_tree_nodes_functions_Nova_MutatorFunction* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMapMutatorFunction_Nova_construct)(spectra_tree_nodes_functions_Nova_MutatorFunctionFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*);
-void (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_addChild)(spectra_tree_nodes_functions_Nova_BodyFunctionFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_functions_Nova_BodyFunction*, spectra_tree_nodes_Nova_Node*);
-void (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_onAdded)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_variables_Nova_VariableDeclaration* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_findVariableDeclaration)(spectra_tree_nodes_functions_Nova_FunctionDeclarationFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_functions_Nova_FunctionDeclaration*, nova_Nova_String*, char);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_parseStatement)(spectra_tree_nodes_functions_Nova_BodyFunctionFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_functions_Nova_BodyFunction*, nova_Nova_String*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*, char);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_generateTemporaryScopeNode)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_Nova_BodyFunction* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap1_Nova_cloneTo)(spectra_tree_nodes_functions_Nova_BodyFunctionFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_functions_Nova_BodyFunction*, spectra_tree_nodes_functions_Nova_BodyFunction*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_replace)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_validateTypes)(spectra_tree_nodes_Nova_ValueFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Value*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_parsePlaceholders)(spectra_tree_nodes_functions_Nova_BodyFunctionFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_functions_Nova_BodyFunction*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_parsePlaceholderChildren)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_NodeList*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_writeAnnotationSeparator)(spectra_tree_nodes_functions_Nova_FunctionDeclarationFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_functions_Nova_FunctionDeclaration*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_toNova)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_writeNova)(spectra_tree_nodes_functions_Nova_BodyFunctionFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_functions_Nova_BodyFunction*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_toString)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
 spectra_tree_nodes_functions_Nova_MutatorFunction* (*spectra_tree_nodes_Nova_ValueFunctionMap_virtualfunctionMap_static_Nova_parse)(spectra_tree_nodes_functions_Nova_MutatorFunctionFunctionMap*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*, char);
-char (*spectra_tree_nodes_Nova_ValueFunctionMap_virtualfunctionMap_Nova_parseType)(spectra_tree_nodes_functions_Nova_FunctionDeclarationFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_functions_Nova_FunctionDeclaration*, nova_Nova_String*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_ValueFunctionMap_virtualfunctionMap_Nova_writeType)(spectra_tree_nodes_Nova_ValueFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Value*);
-char (*spectra_tree_nodes_variables_Nova_VariableDeclarationFunctionMap_virtualfunctionMap_Nova_parseModifier)(spectra_tree_nodes_variables_Nova_VariableDeclarationFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_variables_Nova_VariableDeclaration*, nova_Nova_String*);
-nova_Nova_String* (*spectra_tree_nodes_functions_Nova_FunctionDeclarationFunctionMap_virtualfunctionMap_Nova_writeReturnType)(spectra_tree_nodes_functions_Nova_BodyFunctionFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_functions_Nova_BodyFunction*);
 };
 
 
@@ -13996,22 +12110,6 @@ nova_Interface_VTable itable;
 nova_Nova_Object* (*nova_Nova_Object_virtual_static_Nova_default)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
-spectra_tree_nodes_Nova_Program* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_program)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_Nova_Instantiation* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentInstantiation)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_closures_Nova_LambdaExpression* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentLambda)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_NovaFile* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentFile)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_Nova_FunctionCall* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentFunctionCall)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_Nova_FunctionDeclaration* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentFunction)(spectra_tree_nodes_functions_Nova_FunctionDeclarationPropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_functions_Nova_FunctionDeclaration*);
-spectra_tree_nodes_exceptionhandling_Nova_Try* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentTry)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_ClassDeclaration* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentClass)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_scopeConsumer)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_Scope* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_scope)(spectra_tree_nodes_functions_Nova_BodyFunctionPropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_functions_Nova_BodyFunction*);
-int (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_index)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_Accessible* (*spectra_tree_nodes_Nova_ValuePropertyMap_virtualfunctionMap_Nova_returnedNode)(spectra_tree_nodes_Nova_ValuePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Value*);
-spectra_tree_nodes_Nova_Type* (*spectra_tree_nodes_Nova_ValuePropertyMap_virtualfunctionMap_Nova_type)(spectra_tree_nodes_Nova_ValuePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Value*);
-char (*spectra_tree_nodes_Nova_ValuePropertyMap_virtualfunctionMap_Nova_isAssignable)(spectra_tree_nodes_Nova_ValuePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Value*);
-char (*spectra_tree_nodes_variables_Nova_InstanceDeclarationPropertyMap_virtualfunctionMap_Nova_isPublic)(spectra_tree_nodes_variables_Nova_InstanceDeclarationPropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_variables_Nova_InstanceDeclaration*);
-char (*spectra_tree_nodes_variables_Nova_InstanceDeclarationPropertyMap_virtualfunctionMap_Nova_isPrivate)(spectra_tree_nodes_variables_Nova_InstanceDeclarationPropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_variables_Nova_InstanceDeclaration*);
 };
 
 
@@ -14027,7 +12125,6 @@ void (*spectra_tree_nodes_Nova_Node_virtual_Nova_onAdded)(spectra_tree_nodes_Nov
 spectra_tree_nodes_variables_Nova_VariableDeclaration* (*spectra_tree_nodes_Nova_Node_virtual_Nova_findVariableDeclaration)(spectra_tree_nodes_functions_Nova_ObjectNotation*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, int);
 spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_Node_virtual_Nova_parseStatement)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*, int);
 spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_Node_virtual_Nova_generateTemporaryScopeNode)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_Node_virtual_Nova_cloneTo)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
 char (*spectra_tree_nodes_Nova_Node_virtual_Nova_replace)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
 char (*spectra_tree_nodes_Nova_Node_virtual_Nova_validateTypes)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*);
 char (*spectra_tree_nodes_Nova_Node_virtual_Nova_parsePlaceholders)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*);
@@ -14058,20 +12155,6 @@ nova_Nova_Object* (*nova_Nova_Object_virtual_static_Nova_default)(nova_Nova_Obje
 nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 spectra_tree_nodes_functions_Nova_ObjectNotation* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMapObjectNotation_Nova_construct)(spectra_tree_nodes_functions_Nova_ObjectNotationFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*);
-void (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_addChild)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
-void (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_onAdded)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_variables_Nova_VariableDeclaration* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_findVariableDeclaration)(spectra_tree_nodes_functions_Nova_ObjectNotationFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_functions_Nova_ObjectNotation*, nova_Nova_String*, char);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_parseStatement)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, nova_Nova_String*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*, char);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_generateTemporaryScopeNode)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_cloneTo)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_replace)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_validateTypes)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_parsePlaceholders)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_parsePlaceholderChildren)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_NodeList*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_writeAnnotationSeparator)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_toNova)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_writeNova)(spectra_tree_nodes_functions_Nova_ObjectNotationFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_functions_Nova_ObjectNotation*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_toString)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
 };
 
 
@@ -14082,17 +12165,6 @@ nova_Interface_VTable itable;
 nova_Nova_Object* (*nova_Nova_Object_virtual_static_Nova_default)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
-spectra_tree_nodes_Nova_Program* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_program)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_Nova_Instantiation* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentInstantiation)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_closures_Nova_LambdaExpression* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentLambda)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_NovaFile* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentFile)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_Nova_FunctionCall* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentFunctionCall)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_Nova_FunctionDeclaration* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentFunction)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_exceptionhandling_Nova_Try* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentTry)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_ClassDeclaration* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentClass)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_scopeConsumer)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_Scope* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_scope)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-int (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_index)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
 };
 
 
@@ -14108,7 +12180,6 @@ void (*spectra_tree_nodes_Nova_Node_virtual_Nova_onAdded)(spectra_tree_nodes_Nov
 spectra_tree_nodes_variables_Nova_VariableDeclaration* (*spectra_tree_nodes_Nova_Node_virtual_Nova_findVariableDeclaration)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, int);
 spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_Node_virtual_Nova_parseStatement)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*, int);
 spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_Node_virtual_Nova_generateTemporaryScopeNode)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*);
-spectra_tree_nodes_Nova_Value* (*spectra_tree_nodes_Nova_Node_virtual_Nova_cloneTo)(spectra_tree_nodes_Nova_Value*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Value*);
 char (*spectra_tree_nodes_Nova_Node_virtual_Nova_replace)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
 char (*spectra_tree_nodes_Nova_Node_virtual_Nova_validateTypes)(spectra_tree_nodes_Nova_Value*, nova_exception_Nova_ExceptionData*);
 char (*spectra_tree_nodes_Nova_Node_virtual_Nova_parsePlaceholders)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*);
@@ -14145,23 +12216,7 @@ nova_Nova_Object* (*nova_Nova_Object_virtual_static_Nova_default)(nova_Nova_Obje
 nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 spectra_tree_nodes_functions_Nova_ObjectNotationProperty* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMapObjectNotationProperty_Nova_construct)(spectra_tree_nodes_functions_Nova_ObjectNotationPropertyFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*);
-void (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_addChild)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
-void (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_onAdded)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_variables_Nova_VariableDeclaration* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_findVariableDeclaration)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, nova_Nova_String*, char);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_parseStatement)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, nova_Nova_String*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*, char);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_generateTemporaryScopeNode)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_Value* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_cloneTo)(spectra_tree_nodes_Nova_ValueFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Value*, spectra_tree_nodes_Nova_Value*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_replace)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_validateTypes)(spectra_tree_nodes_Nova_ValueFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Value*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_parsePlaceholders)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_parsePlaceholderChildren)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_NodeList*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_writeAnnotationSeparator)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_toNova)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_writeNova)(spectra_tree_nodes_functions_Nova_ObjectNotationPropertyFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_functions_Nova_ObjectNotationProperty*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_toString)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
 spectra_tree_nodes_functions_Nova_ObjectNotationProperty* (*spectra_tree_nodes_Nova_ValueFunctionMap_virtualfunctionMap_static_Nova_parse)(spectra_tree_nodes_functions_Nova_ObjectNotationPropertyFunctionMap*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*, char);
-char (*spectra_tree_nodes_Nova_ValueFunctionMap_virtualfunctionMap_Nova_parseType)(spectra_tree_nodes_Nova_ValueFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Value*, nova_Nova_String*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_ValueFunctionMap_virtualfunctionMap_Nova_writeType)(spectra_tree_nodes_Nova_ValueFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Value*);
 };
 
 
@@ -14172,20 +12227,6 @@ nova_Interface_VTable itable;
 nova_Nova_Object* (*nova_Nova_Object_virtual_static_Nova_default)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
-spectra_tree_nodes_Nova_Program* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_program)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_Nova_Instantiation* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentInstantiation)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_closures_Nova_LambdaExpression* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentLambda)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_NovaFile* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentFile)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_Nova_FunctionCall* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentFunctionCall)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_Nova_FunctionDeclaration* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentFunction)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_exceptionhandling_Nova_Try* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentTry)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_ClassDeclaration* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentClass)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_scopeConsumer)(spectra_tree_nodes_operations_Nova_AssignmentPropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_operations_Nova_Assignment*);
-spectra_tree_nodes_Nova_Scope* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_scope)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-int (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_index)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_Accessible* (*spectra_tree_nodes_Nova_ValuePropertyMap_virtualfunctionMap_Nova_returnedNode)(spectra_tree_nodes_Nova_ValuePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Value*);
-spectra_tree_nodes_Nova_Type* (*spectra_tree_nodes_Nova_ValuePropertyMap_virtualfunctionMap_Nova_type)(spectra_tree_nodes_operations_Nova_AssignmentPropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_operations_Nova_Assignment*);
-char (*spectra_tree_nodes_Nova_ValuePropertyMap_virtualfunctionMap_Nova_isAssignable)(spectra_tree_nodes_Nova_ValuePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Value*);
 };
 
 
@@ -14201,7 +12242,6 @@ void (*spectra_tree_nodes_Nova_Node_virtual_Nova_onAdded)(spectra_tree_nodes_Nov
 spectra_tree_nodes_variables_Nova_VariableDeclaration* (*spectra_tree_nodes_Nova_Node_virtual_Nova_findVariableDeclaration)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, int);
 spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_Node_virtual_Nova_parseStatement)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*, int);
 spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_Node_virtual_Nova_generateTemporaryScopeNode)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*);
-spectra_tree_nodes_functions_Nova_Parameter* (*spectra_tree_nodes_Nova_Node_virtual_Nova_cloneTo)(spectra_tree_nodes_functions_Nova_Parameter*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_functions_Nova_Parameter*);
 char (*spectra_tree_nodes_Nova_Node_virtual_Nova_replace)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
 char (*spectra_tree_nodes_Nova_Node_virtual_Nova_validateTypes)(spectra_tree_nodes_Nova_Value*, nova_exception_Nova_ExceptionData*);
 char (*spectra_tree_nodes_Nova_Node_virtual_Nova_parsePlaceholders)(spectra_tree_nodes_functions_Nova_Parameter*, nova_exception_Nova_ExceptionData*);
@@ -14240,24 +12280,7 @@ nova_Nova_Object* (*nova_Nova_Object_virtual_static_Nova_default)(nova_Nova_Obje
 nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 spectra_tree_nodes_functions_Nova_Parameter* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMapParameter_Nova_construct)(spectra_tree_nodes_functions_Nova_ParameterFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*);
-void (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_addChild)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
-void (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_onAdded)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_variables_Nova_VariableDeclaration* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_findVariableDeclaration)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, nova_Nova_String*, char);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_parseStatement)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, nova_Nova_String*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*, char);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_generateTemporaryScopeNode)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_Nova_Parameter* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_cloneTo)(spectra_tree_nodes_functions_Nova_ParameterFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_functions_Nova_Parameter*, spectra_tree_nodes_functions_Nova_Parameter*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_replace)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_validateTypes)(spectra_tree_nodes_Nova_ValueFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Value*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_parsePlaceholders)(spectra_tree_nodes_functions_Nova_ParameterFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_functions_Nova_Parameter*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_parsePlaceholderChildren)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_NodeList*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_writeAnnotationSeparator)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_toNova)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_writeNova)(spectra_tree_nodes_variables_Nova_VariableDeclarationFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_variables_Nova_VariableDeclaration*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_toString)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
 spectra_tree_nodes_functions_Nova_Parameter* (*spectra_tree_nodes_Nova_ValueFunctionMap_virtualfunctionMap_static_Nova_parse)(spectra_tree_nodes_functions_Nova_ParameterFunctionMap*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*, char);
-char (*spectra_tree_nodes_Nova_ValueFunctionMap_virtualfunctionMap_Nova_parseType)(spectra_tree_nodes_Nova_ValueFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Value*, nova_Nova_String*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_ValueFunctionMap_virtualfunctionMap_Nova_writeType)(spectra_tree_nodes_Nova_ValueFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Value*);
-char (*spectra_tree_nodes_variables_Nova_VariableDeclarationFunctionMap_virtualfunctionMap_Nova_parseModifier)(spectra_tree_nodes_variables_Nova_VariableDeclarationFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_variables_Nova_VariableDeclaration*, nova_Nova_String*);
 };
 
 
@@ -14268,21 +12291,6 @@ nova_Interface_VTable itable;
 nova_Nova_Object* (*nova_Nova_Object_virtual_static_Nova_default)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
-spectra_tree_nodes_Nova_Program* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_program)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_Nova_Instantiation* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentInstantiation)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_closures_Nova_LambdaExpression* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentLambda)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_NovaFile* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentFile)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_Nova_FunctionCall* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentFunctionCall)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_Nova_FunctionDeclaration* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentFunction)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_exceptionhandling_Nova_Try* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentTry)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_ClassDeclaration* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentClass)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_scopeConsumer)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_Scope* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_scope)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-int (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_index)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_Accessible* (*spectra_tree_nodes_Nova_ValuePropertyMap_virtualfunctionMap_Nova_returnedNode)(spectra_tree_nodes_Nova_ValuePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Value*);
-spectra_tree_nodes_Nova_Type* (*spectra_tree_nodes_Nova_ValuePropertyMap_virtualfunctionMap_Nova_type)(spectra_tree_nodes_Nova_ValuePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Value*);
-char (*spectra_tree_nodes_Nova_ValuePropertyMap_virtualfunctionMap_Nova_isAssignable)(spectra_tree_nodes_Nova_ValuePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Value*);
-char (*spectra_tree_nodes_variables_Nova_LocalDeclarationPropertyMap_virtualfunctionMap_Nova_isImplicit)(spectra_tree_nodes_variables_Nova_LocalDeclarationPropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_variables_Nova_LocalDeclaration*);
 };
 
 
@@ -14298,7 +12306,6 @@ void (*spectra_tree_nodes_Nova_Node_virtual_Nova_onAdded)(spectra_tree_nodes_Nov
 spectra_tree_nodes_variables_Nova_VariableDeclaration* (*spectra_tree_nodes_Nova_Node_virtual_Nova_findVariableDeclaration)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, int);
 spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_Node_virtual_Nova_parseStatement)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*, int);
 spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_Node_virtual_Nova_generateTemporaryScopeNode)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_Node_virtual_Nova_cloneTo)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
 char (*spectra_tree_nodes_Nova_Node_virtual_Nova_replace)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
 char (*spectra_tree_nodes_Nova_Node_virtual_Nova_validateTypes)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*);
 char (*spectra_tree_nodes_Nova_Node_virtual_Nova_parsePlaceholders)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*);
@@ -14329,20 +12336,6 @@ nova_Nova_Object* (*nova_Nova_Object_virtual_static_Nova_default)(nova_Nova_Obje
 nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 spectra_tree_nodes_functions_Nova_ParameterList* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMapParameterList_Nova_construct)(spectra_tree_nodes_functions_Nova_ParameterListFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*);
-void (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_addChild)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
-void (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_onAdded)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_variables_Nova_VariableDeclaration* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_findVariableDeclaration)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, nova_Nova_String*, char);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_parseStatement)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, nova_Nova_String*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*, char);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_generateTemporaryScopeNode)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_cloneTo)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_replace)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_validateTypes)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_parsePlaceholders)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_parsePlaceholderChildren)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_NodeList*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_writeAnnotationSeparator)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_toNova)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_writeNova)(spectra_tree_nodes_functions_Nova_ParameterListFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_functions_Nova_ParameterList*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_toString)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
 };
 
 
@@ -14353,17 +12346,6 @@ nova_Interface_VTable itable;
 nova_Nova_Object* (*nova_Nova_Object_virtual_static_Nova_default)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
-spectra_tree_nodes_Nova_Program* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_program)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_Nova_Instantiation* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentInstantiation)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_closures_Nova_LambdaExpression* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentLambda)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_NovaFile* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentFile)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_Nova_FunctionCall* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentFunctionCall)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_Nova_FunctionDeclaration* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentFunction)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_exceptionhandling_Nova_Try* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentTry)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_ClassDeclaration* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentClass)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_scopeConsumer)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_Scope* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_scope)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-int (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_index)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
 };
 
 
@@ -14379,7 +12361,6 @@ void (*spectra_tree_nodes_Nova_Node_virtual_Nova_onAdded)(spectra_tree_nodes_Nov
 spectra_tree_nodes_variables_Nova_VariableDeclaration* (*spectra_tree_nodes_Nova_Node_virtual_Nova_findVariableDeclaration)(spectra_tree_nodes_functions_Nova_FunctionDeclaration*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, int);
 spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_Node_virtual_Nova_parseStatement)(spectra_tree_nodes_functions_Nova_BodyFunction*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*, int);
 spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_Node_virtual_Nova_generateTemporaryScopeNode)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*);
-spectra_tree_nodes_functions_Nova_BodyFunction* (*spectra_tree_nodes_Nova_Node_virtual_Nova_cloneTo)(spectra_tree_nodes_functions_Nova_BodyFunction*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_functions_Nova_BodyFunction*);
 char (*spectra_tree_nodes_Nova_Node_virtual_Nova_replace)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
 char (*spectra_tree_nodes_Nova_Node_virtual_Nova_validateTypes)(spectra_tree_nodes_Nova_Value*, nova_exception_Nova_ExceptionData*);
 char (*spectra_tree_nodes_Nova_Node_virtual_Nova_parsePlaceholders)(spectra_tree_nodes_functions_Nova_BodyFunction*, nova_exception_Nova_ExceptionData*);
@@ -14420,25 +12401,7 @@ nova_Nova_Object* (*nova_Nova_Object_virtual_static_Nova_default)(nova_Nova_Obje
 nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 spectra_tree_nodes_functions_Nova_PropertyFunction* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMapPropertyFunction_Nova_construct)(spectra_tree_nodes_functions_Nova_PropertyFunctionFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*);
-void (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_addChild)(spectra_tree_nodes_functions_Nova_BodyFunctionFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_functions_Nova_BodyFunction*, spectra_tree_nodes_Nova_Node*);
-void (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_onAdded)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_variables_Nova_VariableDeclaration* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_findVariableDeclaration)(spectra_tree_nodes_functions_Nova_FunctionDeclarationFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_functions_Nova_FunctionDeclaration*, nova_Nova_String*, char);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_parseStatement)(spectra_tree_nodes_functions_Nova_BodyFunctionFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_functions_Nova_BodyFunction*, nova_Nova_String*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*, char);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_generateTemporaryScopeNode)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_Nova_BodyFunction* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap1_Nova_cloneTo)(spectra_tree_nodes_functions_Nova_BodyFunctionFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_functions_Nova_BodyFunction*, spectra_tree_nodes_functions_Nova_BodyFunction*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_replace)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_validateTypes)(spectra_tree_nodes_Nova_ValueFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Value*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_parsePlaceholders)(spectra_tree_nodes_functions_Nova_BodyFunctionFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_functions_Nova_BodyFunction*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_parsePlaceholderChildren)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_NodeList*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_writeAnnotationSeparator)(spectra_tree_nodes_functions_Nova_FunctionDeclarationFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_functions_Nova_FunctionDeclaration*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_toNova)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_writeNova)(spectra_tree_nodes_functions_Nova_BodyFunctionFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_functions_Nova_BodyFunction*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_toString)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
 spectra_tree_nodes_functions_Nova_PropertyFunction* (*spectra_tree_nodes_Nova_ValueFunctionMap_virtualfunctionMap_static_Nova_parse)(spectra_tree_nodes_functions_Nova_PropertyFunctionFunctionMap*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*, char);
-char (*spectra_tree_nodes_Nova_ValueFunctionMap_virtualfunctionMap_Nova_parseType)(spectra_tree_nodes_functions_Nova_FunctionDeclarationFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_functions_Nova_FunctionDeclaration*, nova_Nova_String*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_ValueFunctionMap_virtualfunctionMap_Nova_writeType)(spectra_tree_nodes_Nova_ValueFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Value*);
-char (*spectra_tree_nodes_variables_Nova_VariableDeclarationFunctionMap_virtualfunctionMap_Nova_parseModifier)(spectra_tree_nodes_variables_Nova_VariableDeclarationFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_variables_Nova_VariableDeclaration*, nova_Nova_String*);
-nova_Nova_String* (*spectra_tree_nodes_functions_Nova_FunctionDeclarationFunctionMap_virtualfunctionMap_Nova_writeReturnType)(spectra_tree_nodes_functions_Nova_BodyFunctionFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_functions_Nova_BodyFunction*);
 };
 
 
@@ -14449,22 +12412,6 @@ nova_Interface_VTable itable;
 nova_Nova_Object* (*nova_Nova_Object_virtual_static_Nova_default)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
-spectra_tree_nodes_Nova_Program* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_program)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_Nova_Instantiation* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentInstantiation)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_closures_Nova_LambdaExpression* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentLambda)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_NovaFile* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentFile)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_Nova_FunctionCall* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentFunctionCall)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_Nova_FunctionDeclaration* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentFunction)(spectra_tree_nodes_functions_Nova_FunctionDeclarationPropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_functions_Nova_FunctionDeclaration*);
-spectra_tree_nodes_exceptionhandling_Nova_Try* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentTry)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_ClassDeclaration* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentClass)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_scopeConsumer)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_Scope* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_scope)(spectra_tree_nodes_functions_Nova_BodyFunctionPropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_functions_Nova_BodyFunction*);
-int (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_index)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_Accessible* (*spectra_tree_nodes_Nova_ValuePropertyMap_virtualfunctionMap_Nova_returnedNode)(spectra_tree_nodes_Nova_ValuePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Value*);
-spectra_tree_nodes_Nova_Type* (*spectra_tree_nodes_Nova_ValuePropertyMap_virtualfunctionMap_Nova_type)(spectra_tree_nodes_Nova_ValuePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Value*);
-char (*spectra_tree_nodes_Nova_ValuePropertyMap_virtualfunctionMap_Nova_isAssignable)(spectra_tree_nodes_Nova_ValuePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Value*);
-char (*spectra_tree_nodes_variables_Nova_InstanceDeclarationPropertyMap_virtualfunctionMap_Nova_isPublic)(spectra_tree_nodes_variables_Nova_InstanceDeclarationPropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_variables_Nova_InstanceDeclaration*);
-char (*spectra_tree_nodes_variables_Nova_InstanceDeclarationPropertyMap_virtualfunctionMap_Nova_isPrivate)(spectra_tree_nodes_variables_Nova_InstanceDeclarationPropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_variables_Nova_InstanceDeclaration*);
 };
 
 
@@ -14480,7 +12427,6 @@ void (*spectra_tree_nodes_Nova_Node_virtual_Nova_onAdded)(spectra_tree_nodes_Nov
 spectra_tree_nodes_variables_Nova_VariableDeclaration* (*spectra_tree_nodes_Nova_Node_virtual_Nova_findVariableDeclaration)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, int);
 spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_Node_virtual_Nova_parseStatement)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*, int);
 spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_Node_virtual_Nova_generateTemporaryScopeNode)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_Node_virtual_Nova_cloneTo)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
 char (*spectra_tree_nodes_Nova_Node_virtual_Nova_replace)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
 char (*spectra_tree_nodes_Nova_Node_virtual_Nova_validateTypes)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*);
 char (*spectra_tree_nodes_Nova_Node_virtual_Nova_parsePlaceholders)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*);
@@ -14511,20 +12457,6 @@ nova_Nova_Object* (*nova_Nova_Object_virtual_static_Nova_default)(nova_Nova_Obje
 nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 spectra_tree_nodes_functions_closures_Nova_ClosureContext* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMapClosureContext_Nova_construct)(spectra_tree_nodes_functions_closures_Nova_ClosureContextFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*);
-void (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_addChild)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
-void (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_onAdded)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_variables_Nova_VariableDeclaration* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_findVariableDeclaration)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, nova_Nova_String*, char);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_parseStatement)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, nova_Nova_String*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*, char);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_generateTemporaryScopeNode)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_cloneTo)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_replace)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_validateTypes)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_parsePlaceholders)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_parsePlaceholderChildren)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_NodeList*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_writeAnnotationSeparator)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_toNova)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_writeNova)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_toString)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
 };
 
 
@@ -14535,17 +12467,6 @@ nova_Interface_VTable itable;
 nova_Nova_Object* (*nova_Nova_Object_virtual_static_Nova_default)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
-spectra_tree_nodes_Nova_Program* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_program)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_Nova_Instantiation* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentInstantiation)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_closures_Nova_LambdaExpression* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentLambda)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_NovaFile* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentFile)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_Nova_FunctionCall* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentFunctionCall)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_Nova_FunctionDeclaration* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentFunction)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_exceptionhandling_Nova_Try* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentTry)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_ClassDeclaration* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentClass)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_scopeConsumer)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_Scope* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_scope)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-int (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_index)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
 };
 
 
@@ -14561,7 +12482,6 @@ void (*spectra_tree_nodes_Nova_Node_virtual_Nova_onAdded)(spectra_tree_nodes_Nov
 spectra_tree_nodes_variables_Nova_VariableDeclaration* (*spectra_tree_nodes_Nova_Node_virtual_Nova_findVariableDeclaration)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, int);
 spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_Node_virtual_Nova_parseStatement)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*, int);
 spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_Node_virtual_Nova_generateTemporaryScopeNode)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*);
-spectra_tree_nodes_functions_Nova_Parameter* (*spectra_tree_nodes_Nova_Node_virtual_Nova_cloneTo)(spectra_tree_nodes_functions_Nova_Parameter*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_functions_Nova_Parameter*);
 char (*spectra_tree_nodes_Nova_Node_virtual_Nova_replace)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
 char (*spectra_tree_nodes_Nova_Node_virtual_Nova_validateTypes)(spectra_tree_nodes_Nova_Value*, nova_exception_Nova_ExceptionData*);
 char (*spectra_tree_nodes_Nova_Node_virtual_Nova_parsePlaceholders)(spectra_tree_nodes_functions_Nova_Parameter*, nova_exception_Nova_ExceptionData*);
@@ -14600,24 +12520,7 @@ nova_Nova_Object* (*nova_Nova_Object_virtual_static_Nova_default)(nova_Nova_Obje
 nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 spectra_tree_nodes_functions_closures_Nova_ClosureDeclaration* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMapClosureDeclaration_Nova_construct)(spectra_tree_nodes_functions_closures_Nova_ClosureDeclarationFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*);
-void (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_addChild)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
-void (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_onAdded)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_variables_Nova_VariableDeclaration* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_findVariableDeclaration)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, nova_Nova_String*, char);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_parseStatement)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, nova_Nova_String*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*, char);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_generateTemporaryScopeNode)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_Nova_Parameter* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_cloneTo)(spectra_tree_nodes_functions_Nova_ParameterFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_functions_Nova_Parameter*, spectra_tree_nodes_functions_Nova_Parameter*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_replace)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_validateTypes)(spectra_tree_nodes_Nova_ValueFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Value*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_parsePlaceholders)(spectra_tree_nodes_functions_Nova_ParameterFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_functions_Nova_Parameter*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_parsePlaceholderChildren)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_NodeList*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_writeAnnotationSeparator)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_toNova)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_writeNova)(spectra_tree_nodes_functions_closures_Nova_ClosureDeclarationFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_functions_closures_Nova_ClosureDeclaration*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_toString)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
 spectra_tree_nodes_functions_closures_Nova_ClosureDeclaration* (*spectra_tree_nodes_Nova_ValueFunctionMap_virtualfunctionMap_static_Nova_parse)(spectra_tree_nodes_functions_closures_Nova_ClosureDeclarationFunctionMap*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*, char);
-char (*spectra_tree_nodes_Nova_ValueFunctionMap_virtualfunctionMap_Nova_parseType)(spectra_tree_nodes_functions_closures_Nova_ClosureDeclarationFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_functions_closures_Nova_ClosureDeclaration*, nova_Nova_String*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_ValueFunctionMap_virtualfunctionMap_Nova_writeType)(spectra_tree_nodes_functions_closures_Nova_ClosureDeclarationFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_functions_closures_Nova_ClosureDeclaration*);
-char (*spectra_tree_nodes_variables_Nova_VariableDeclarationFunctionMap_virtualfunctionMap_Nova_parseModifier)(spectra_tree_nodes_variables_Nova_VariableDeclarationFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_variables_Nova_VariableDeclaration*, nova_Nova_String*);
 };
 
 
@@ -14628,21 +12531,6 @@ nova_Interface_VTable itable;
 nova_Nova_Object* (*nova_Nova_Object_virtual_static_Nova_default)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
-spectra_tree_nodes_Nova_Program* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_program)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_Nova_Instantiation* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentInstantiation)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_closures_Nova_LambdaExpression* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentLambda)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_NovaFile* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentFile)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_Nova_FunctionCall* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentFunctionCall)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_Nova_FunctionDeclaration* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentFunction)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_exceptionhandling_Nova_Try* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentTry)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_ClassDeclaration* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentClass)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_scopeConsumer)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_Scope* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_scope)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-int (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_index)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_Accessible* (*spectra_tree_nodes_Nova_ValuePropertyMap_virtualfunctionMap_Nova_returnedNode)(spectra_tree_nodes_Nova_ValuePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Value*);
-spectra_tree_nodes_Nova_Type* (*spectra_tree_nodes_Nova_ValuePropertyMap_virtualfunctionMap_Nova_type)(spectra_tree_nodes_Nova_ValuePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Value*);
-char (*spectra_tree_nodes_Nova_ValuePropertyMap_virtualfunctionMap_Nova_isAssignable)(spectra_tree_nodes_Nova_ValuePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Value*);
-char (*spectra_tree_nodes_variables_Nova_LocalDeclarationPropertyMap_virtualfunctionMap_Nova_isImplicit)(spectra_tree_nodes_variables_Nova_LocalDeclarationPropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_variables_Nova_LocalDeclaration*);
 };
 
 
@@ -14658,7 +12546,6 @@ void (*spectra_tree_nodes_Nova_Node_virtual_Nova_onAdded)(spectra_tree_nodes_Nov
 spectra_tree_nodes_variables_Nova_VariableDeclaration* (*spectra_tree_nodes_Nova_Node_virtual_Nova_findVariableDeclaration)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, int);
 spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_Node_virtual_Nova_parseStatement)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*, int);
 spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_Node_virtual_Nova_generateTemporaryScopeNode)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*);
-spectra_tree_nodes_functions_Nova_Parameter* (*spectra_tree_nodes_Nova_Node_virtual_Nova_cloneTo)(spectra_tree_nodes_functions_Nova_Parameter*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_functions_Nova_Parameter*);
 char (*spectra_tree_nodes_Nova_Node_virtual_Nova_replace)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
 char (*spectra_tree_nodes_Nova_Node_virtual_Nova_validateTypes)(spectra_tree_nodes_Nova_Value*, nova_exception_Nova_ExceptionData*);
 char (*spectra_tree_nodes_Nova_Node_virtual_Nova_parsePlaceholders)(spectra_tree_nodes_functions_Nova_Parameter*, nova_exception_Nova_ExceptionData*);
@@ -14697,24 +12584,7 @@ nova_Nova_Object* (*nova_Nova_Object_virtual_static_Nova_default)(nova_Nova_Obje
 nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 spectra_tree_nodes_functions_closures_Nova_ClosureParameter* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMapClosureParameter_Nova_construct)(spectra_tree_nodes_functions_closures_Nova_ClosureParameterFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*);
-void (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_addChild)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
-void (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_onAdded)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_variables_Nova_VariableDeclaration* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_findVariableDeclaration)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, nova_Nova_String*, char);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_parseStatement)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, nova_Nova_String*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*, char);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_generateTemporaryScopeNode)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_Nova_Parameter* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_cloneTo)(spectra_tree_nodes_functions_Nova_ParameterFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_functions_Nova_Parameter*, spectra_tree_nodes_functions_Nova_Parameter*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_replace)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_validateTypes)(spectra_tree_nodes_Nova_ValueFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Value*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_parsePlaceholders)(spectra_tree_nodes_functions_Nova_ParameterFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_functions_Nova_Parameter*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_parsePlaceholderChildren)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_NodeList*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_writeAnnotationSeparator)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_toNova)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_writeNova)(spectra_tree_nodes_variables_Nova_VariableDeclarationFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_variables_Nova_VariableDeclaration*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_toString)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
 spectra_tree_nodes_functions_closures_Nova_ClosureParameter* (*spectra_tree_nodes_Nova_ValueFunctionMap_virtualfunctionMap_static_Nova_parse)(spectra_tree_nodes_functions_closures_Nova_ClosureParameterFunctionMap*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*, char);
-char (*spectra_tree_nodes_Nova_ValueFunctionMap_virtualfunctionMap_Nova_parseType)(spectra_tree_nodes_Nova_ValueFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Value*, nova_Nova_String*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_ValueFunctionMap_virtualfunctionMap_Nova_writeType)(spectra_tree_nodes_Nova_ValueFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Value*);
-char (*spectra_tree_nodes_variables_Nova_VariableDeclarationFunctionMap_virtualfunctionMap_Nova_parseModifier)(spectra_tree_nodes_variables_Nova_VariableDeclarationFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_variables_Nova_VariableDeclaration*, nova_Nova_String*);
 };
 
 
@@ -14725,21 +12595,6 @@ nova_Interface_VTable itable;
 nova_Nova_Object* (*nova_Nova_Object_virtual_static_Nova_default)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
-spectra_tree_nodes_Nova_Program* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_program)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_Nova_Instantiation* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentInstantiation)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_closures_Nova_LambdaExpression* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentLambda)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_NovaFile* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentFile)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_Nova_FunctionCall* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentFunctionCall)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_Nova_FunctionDeclaration* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentFunction)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_exceptionhandling_Nova_Try* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentTry)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_ClassDeclaration* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentClass)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_scopeConsumer)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_Scope* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_scope)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-int (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_index)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_Accessible* (*spectra_tree_nodes_Nova_ValuePropertyMap_virtualfunctionMap_Nova_returnedNode)(spectra_tree_nodes_Nova_ValuePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Value*);
-spectra_tree_nodes_Nova_Type* (*spectra_tree_nodes_Nova_ValuePropertyMap_virtualfunctionMap_Nova_type)(spectra_tree_nodes_Nova_ValuePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Value*);
-char (*spectra_tree_nodes_Nova_ValuePropertyMap_virtualfunctionMap_Nova_isAssignable)(spectra_tree_nodes_Nova_ValuePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Value*);
-char (*spectra_tree_nodes_variables_Nova_LocalDeclarationPropertyMap_virtualfunctionMap_Nova_isImplicit)(spectra_tree_nodes_variables_Nova_LocalDeclarationPropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_variables_Nova_LocalDeclaration*);
 };
 
 
@@ -14755,7 +12610,6 @@ void (*spectra_tree_nodes_Nova_Node_virtual_Nova_onAdded)(spectra_tree_nodes_Nov
 spectra_tree_nodes_variables_Nova_VariableDeclaration* (*spectra_tree_nodes_Nova_Node_virtual_Nova_findVariableDeclaration)(spectra_tree_nodes_functions_closures_Nova_LambdaExpression*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, int);
 spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_Node_virtual_Nova_parseStatement)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*, int);
 spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_Node_virtual_Nova_generateTemporaryScopeNode)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*);
-spectra_tree_nodes_Nova_Value* (*spectra_tree_nodes_Nova_Node_virtual_Nova_cloneTo)(spectra_tree_nodes_Nova_Value*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Value*);
 char (*spectra_tree_nodes_Nova_Node_virtual_Nova_replace)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
 char (*spectra_tree_nodes_Nova_Node_virtual_Nova_validateTypes)(spectra_tree_nodes_Nova_Value*, nova_exception_Nova_ExceptionData*);
 char (*spectra_tree_nodes_Nova_Node_virtual_Nova_parsePlaceholders)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*);
@@ -14792,23 +12646,7 @@ nova_Nova_Object* (*nova_Nova_Object_virtual_static_Nova_default)(nova_Nova_Obje
 nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 spectra_tree_nodes_functions_closures_Nova_LambdaExpression* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMapLambdaExpression_Nova_construct)(spectra_tree_nodes_functions_closures_Nova_LambdaExpressionFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*);
-void (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_addChild)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
-void (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_onAdded)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_variables_Nova_VariableDeclaration* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_findVariableDeclaration)(spectra_tree_nodes_functions_closures_Nova_LambdaExpressionFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_functions_closures_Nova_LambdaExpression*, nova_Nova_String*, char);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_parseStatement)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, nova_Nova_String*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*, char);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_generateTemporaryScopeNode)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_Value* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_cloneTo)(spectra_tree_nodes_Nova_ValueFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Value*, spectra_tree_nodes_Nova_Value*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_replace)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_validateTypes)(spectra_tree_nodes_Nova_ValueFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Value*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_parsePlaceholders)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_parsePlaceholderChildren)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_NodeList*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_writeAnnotationSeparator)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_toNova)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_writeNova)(spectra_tree_nodes_functions_closures_Nova_LambdaExpressionFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_functions_closures_Nova_LambdaExpression*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_toString)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
 spectra_tree_nodes_functions_closures_Nova_LambdaExpression* (*spectra_tree_nodes_Nova_ValueFunctionMap_virtualfunctionMap_static_Nova_parse)(spectra_tree_nodes_functions_closures_Nova_LambdaExpressionFunctionMap*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*, char);
-char (*spectra_tree_nodes_Nova_ValueFunctionMap_virtualfunctionMap_Nova_parseType)(spectra_tree_nodes_Nova_ValueFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Value*, nova_Nova_String*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_ValueFunctionMap_virtualfunctionMap_Nova_writeType)(spectra_tree_nodes_Nova_ValueFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Value*);
 };
 
 
@@ -14819,20 +12657,6 @@ nova_Interface_VTable itable;
 nova_Nova_Object* (*nova_Nova_Object_virtual_static_Nova_default)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
-spectra_tree_nodes_Nova_Program* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_program)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_Nova_Instantiation* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentInstantiation)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_closures_Nova_LambdaExpression* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentLambda)(spectra_tree_nodes_functions_closures_Nova_LambdaExpressionPropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_functions_closures_Nova_LambdaExpression*);
-spectra_tree_nodes_Nova_NovaFile* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentFile)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_Nova_FunctionCall* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentFunctionCall)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_Nova_FunctionDeclaration* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentFunction)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_exceptionhandling_Nova_Try* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentTry)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_ClassDeclaration* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentClass)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_scopeConsumer)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_Scope* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_scope)(spectra_tree_nodes_functions_closures_Nova_LambdaExpressionPropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_functions_closures_Nova_LambdaExpression*);
-int (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_index)(spectra_tree_nodes_functions_closures_Nova_LambdaExpressionPropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_functions_closures_Nova_LambdaExpression*);
-spectra_tree_nodes_Nova_Accessible* (*spectra_tree_nodes_Nova_ValuePropertyMap_virtualfunctionMap_Nova_returnedNode)(spectra_tree_nodes_Nova_ValuePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Value*);
-spectra_tree_nodes_Nova_Type* (*spectra_tree_nodes_Nova_ValuePropertyMap_virtualfunctionMap_Nova_type)(spectra_tree_nodes_Nova_ValuePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Value*);
-char (*spectra_tree_nodes_Nova_ValuePropertyMap_virtualfunctionMap_Nova_isAssignable)(spectra_tree_nodes_Nova_ValuePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Value*);
 };
 
 
@@ -14848,7 +12672,6 @@ void (*spectra_tree_nodes_Nova_Node_virtual_Nova_onAdded)(spectra_tree_nodes_Nov
 spectra_tree_nodes_variables_Nova_VariableDeclaration* (*spectra_tree_nodes_Nova_Node_virtual_Nova_findVariableDeclaration)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, int);
 spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_Node_virtual_Nova_parseStatement)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*, int);
 spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_Node_virtual_Nova_generateTemporaryScopeNode)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*);
-spectra_tree_nodes_functions_Nova_Parameter* (*spectra_tree_nodes_Nova_Node_virtual_Nova_cloneTo)(spectra_tree_nodes_functions_Nova_Parameter*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_functions_Nova_Parameter*);
 char (*spectra_tree_nodes_Nova_Node_virtual_Nova_replace)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
 char (*spectra_tree_nodes_Nova_Node_virtual_Nova_validateTypes)(spectra_tree_nodes_Nova_Value*, nova_exception_Nova_ExceptionData*);
 char (*spectra_tree_nodes_Nova_Node_virtual_Nova_parsePlaceholders)(spectra_tree_nodes_functions_Nova_Parameter*, nova_exception_Nova_ExceptionData*);
@@ -14887,24 +12710,7 @@ nova_Nova_Object* (*nova_Nova_Object_virtual_static_Nova_default)(nova_Nova_Obje
 nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 spectra_tree_nodes_functions_closures_Nova_LambdaParameter* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMapLambdaParameter_Nova_construct)(spectra_tree_nodes_functions_closures_Nova_LambdaParameterFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*);
-void (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_addChild)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
-void (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_onAdded)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_variables_Nova_VariableDeclaration* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_findVariableDeclaration)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, nova_Nova_String*, char);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_parseStatement)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, nova_Nova_String*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*, char);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_generateTemporaryScopeNode)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_Nova_Parameter* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_cloneTo)(spectra_tree_nodes_functions_Nova_ParameterFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_functions_Nova_Parameter*, spectra_tree_nodes_functions_Nova_Parameter*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_replace)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_validateTypes)(spectra_tree_nodes_Nova_ValueFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Value*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_parsePlaceholders)(spectra_tree_nodes_functions_Nova_ParameterFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_functions_Nova_Parameter*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_parsePlaceholderChildren)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_NodeList*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_writeAnnotationSeparator)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_toNova)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_writeNova)(spectra_tree_nodes_variables_Nova_VariableDeclarationFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_variables_Nova_VariableDeclaration*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_toString)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
 spectra_tree_nodes_functions_closures_Nova_LambdaParameter* (*spectra_tree_nodes_Nova_ValueFunctionMap_virtualfunctionMap_static_Nova_parse)(spectra_tree_nodes_functions_closures_Nova_LambdaParameterFunctionMap*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*, char);
-char (*spectra_tree_nodes_Nova_ValueFunctionMap_virtualfunctionMap_Nova_parseType)(spectra_tree_nodes_Nova_ValueFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Value*, nova_Nova_String*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_ValueFunctionMap_virtualfunctionMap_Nova_writeType)(spectra_tree_nodes_Nova_ValueFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Value*);
-char (*spectra_tree_nodes_variables_Nova_VariableDeclarationFunctionMap_virtualfunctionMap_Nova_parseModifier)(spectra_tree_nodes_variables_Nova_VariableDeclarationFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_variables_Nova_VariableDeclaration*, nova_Nova_String*);
 };
 
 
@@ -14915,21 +12721,6 @@ nova_Interface_VTable itable;
 nova_Nova_Object* (*nova_Nova_Object_virtual_static_Nova_default)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
-spectra_tree_nodes_Nova_Program* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_program)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_Nova_Instantiation* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentInstantiation)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_closures_Nova_LambdaExpression* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentLambda)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_NovaFile* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentFile)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_Nova_FunctionCall* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentFunctionCall)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_Nova_FunctionDeclaration* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentFunction)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_exceptionhandling_Nova_Try* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentTry)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_ClassDeclaration* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentClass)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_scopeConsumer)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_Scope* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_scope)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-int (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_index)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_Accessible* (*spectra_tree_nodes_Nova_ValuePropertyMap_virtualfunctionMap_Nova_returnedNode)(spectra_tree_nodes_Nova_ValuePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Value*);
-spectra_tree_nodes_Nova_Type* (*spectra_tree_nodes_Nova_ValuePropertyMap_virtualfunctionMap_Nova_type)(spectra_tree_nodes_Nova_ValuePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Value*);
-char (*spectra_tree_nodes_Nova_ValuePropertyMap_virtualfunctionMap_Nova_isAssignable)(spectra_tree_nodes_Nova_ValuePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Value*);
-char (*spectra_tree_nodes_variables_Nova_LocalDeclarationPropertyMap_virtualfunctionMap_Nova_isImplicit)(spectra_tree_nodes_variables_Nova_LocalDeclarationPropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_variables_Nova_LocalDeclaration*);
 };
 
 
@@ -14945,7 +12736,6 @@ void (*spectra_tree_nodes_Nova_Node_virtual_Nova_onAdded)(spectra_tree_nodes_Nov
 spectra_tree_nodes_variables_Nova_VariableDeclaration* (*spectra_tree_nodes_Nova_Node_virtual_Nova_findVariableDeclaration)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, int);
 spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_Node_virtual_Nova_parseStatement)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*, int);
 spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_Node_virtual_Nova_generateTemporaryScopeNode)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*);
-spectra_tree_nodes_Nova_Value* (*spectra_tree_nodes_Nova_Node_virtual_Nova_cloneTo)(spectra_tree_nodes_Nova_Value*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Value*);
 char (*spectra_tree_nodes_Nova_Node_virtual_Nova_replace)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
 char (*spectra_tree_nodes_Nova_Node_virtual_Nova_validateTypes)(spectra_tree_nodes_Nova_Value*, nova_exception_Nova_ExceptionData*);
 char (*spectra_tree_nodes_Nova_Node_virtual_Nova_parsePlaceholders)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*);
@@ -14982,23 +12772,7 @@ nova_Nova_Object* (*nova_Nova_Object_virtual_static_Nova_default)(nova_Nova_Obje
 nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMapNode_Nova_construct)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*);
-void (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_addChild)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
-void (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_onAdded)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_variables_Nova_VariableDeclaration* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_findVariableDeclaration)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, nova_Nova_String*, char);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_parseStatement)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, nova_Nova_String*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*, char);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_generateTemporaryScopeNode)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_Value* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_cloneTo)(spectra_tree_nodes_Nova_ValueFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Value*, spectra_tree_nodes_Nova_Value*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_replace)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_validateTypes)(spectra_tree_nodes_Nova_ValueFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Value*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_parsePlaceholders)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_parsePlaceholderChildren)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_NodeList*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_writeAnnotationSeparator)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_toNova)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_writeNova)(spectra_tree_nodes_generics_Nova_GenericArgumentFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_generics_Nova_GenericArgument*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_toString)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
 spectra_tree_nodes_Nova_Value* (*spectra_tree_nodes_Nova_ValueFunctionMap_virtualfunctionMap0_static_Nova_parse)(spectra_tree_nodes_Nova_ValueFunctionMap*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*, char);
-char (*spectra_tree_nodes_Nova_ValueFunctionMap_virtualfunctionMap_Nova_parseType)(spectra_tree_nodes_Nova_ValueFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Value*, nova_Nova_String*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_ValueFunctionMap_virtualfunctionMap_Nova_writeType)(spectra_tree_nodes_Nova_ValueFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Value*);
 };
 
 
@@ -15009,20 +12783,6 @@ nova_Interface_VTable itable;
 nova_Nova_Object* (*nova_Nova_Object_virtual_static_Nova_default)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
-spectra_tree_nodes_Nova_Program* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_program)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_Nova_Instantiation* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentInstantiation)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_closures_Nova_LambdaExpression* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentLambda)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_NovaFile* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentFile)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_Nova_FunctionCall* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentFunctionCall)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_Nova_FunctionDeclaration* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentFunction)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_exceptionhandling_Nova_Try* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentTry)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_ClassDeclaration* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentClass)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_scopeConsumer)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_Scope* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_scope)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-int (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_index)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_Accessible* (*spectra_tree_nodes_Nova_ValuePropertyMap_virtualfunctionMap_Nova_returnedNode)(spectra_tree_nodes_Nova_ValuePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Value*);
-spectra_tree_nodes_Nova_Type* (*spectra_tree_nodes_Nova_ValuePropertyMap_virtualfunctionMap_Nova_type)(spectra_tree_nodes_Nova_ValuePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Value*);
-char (*spectra_tree_nodes_Nova_ValuePropertyMap_virtualfunctionMap_Nova_isAssignable)(spectra_tree_nodes_Nova_ValuePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Value*);
 };
 
 
@@ -15038,7 +12798,6 @@ void (*spectra_tree_nodes_Nova_Node_virtual_Nova_onAdded)(spectra_tree_nodes_Nov
 spectra_tree_nodes_variables_Nova_VariableDeclaration* (*spectra_tree_nodes_Nova_Node_virtual_Nova_findVariableDeclaration)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, int);
 spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_Node_virtual_Nova_parseStatement)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*, int);
 spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_Node_virtual_Nova_generateTemporaryScopeNode)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*);
-spectra_tree_nodes_generics_Nova_GenericCompatible* (*spectra_tree_nodes_Nova_Node_virtual1_Nova_cloneTo)(spectra_tree_nodes_generics_Nova_GenericCompatible*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_generics_Nova_GenericCompatible*);
 char (*spectra_tree_nodes_Nova_Node_virtual_Nova_replace)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
 char (*spectra_tree_nodes_Nova_Node_virtual_Nova_validateTypes)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*);
 char (*spectra_tree_nodes_Nova_Node_virtual_Nova_parsePlaceholders)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*);
@@ -15069,20 +12828,6 @@ nova_Nova_Object* (*nova_Nova_Object_virtual_static_Nova_default)(nova_Nova_Obje
 nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMapNode_Nova_construct)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*);
-void (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_addChild)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
-void (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_onAdded)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_variables_Nova_VariableDeclaration* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_findVariableDeclaration)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, nova_Nova_String*, char);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_parseStatement)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, nova_Nova_String*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*, char);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_generateTemporaryScopeNode)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_generics_Nova_GenericCompatible* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap1_Nova_cloneTo)(spectra_tree_nodes_generics_Nova_GenericCompatibleFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_generics_Nova_GenericCompatible*, spectra_tree_nodes_generics_Nova_GenericCompatible*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_replace)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_validateTypes)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_parsePlaceholders)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_parsePlaceholderChildren)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_NodeList*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_writeAnnotationSeparator)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_toNova)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_writeNova)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_toString)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
 };
 
 
@@ -15093,17 +12838,6 @@ nova_Interface_VTable itable;
 nova_Nova_Object* (*nova_Nova_Object_virtual_static_Nova_default)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
-spectra_tree_nodes_Nova_Program* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_program)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_Nova_Instantiation* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentInstantiation)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_closures_Nova_LambdaExpression* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentLambda)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_NovaFile* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentFile)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_Nova_FunctionCall* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentFunctionCall)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_Nova_FunctionDeclaration* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentFunction)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_exceptionhandling_Nova_Try* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentTry)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_ClassDeclaration* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentClass)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_scopeConsumer)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_Scope* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_scope)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-int (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_index)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
 };
 
 
@@ -15119,7 +12853,6 @@ void (*spectra_tree_nodes_Nova_Node_virtual_Nova_onAdded)(spectra_tree_nodes_Nov
 spectra_tree_nodes_variables_Nova_VariableDeclaration* (*spectra_tree_nodes_Nova_Node_virtual_Nova_findVariableDeclaration)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, int);
 spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_Node_virtual_Nova_parseStatement)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*, int);
 spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_Node_virtual_Nova_generateTemporaryScopeNode)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*);
-spectra_tree_nodes_Nova_Value* (*spectra_tree_nodes_Nova_Node_virtual_Nova_cloneTo)(spectra_tree_nodes_Nova_Value*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Value*);
 char (*spectra_tree_nodes_Nova_Node_virtual_Nova_replace)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
 char (*spectra_tree_nodes_Nova_Node_virtual_Nova_validateTypes)(spectra_tree_nodes_Nova_Value*, nova_exception_Nova_ExceptionData*);
 char (*spectra_tree_nodes_Nova_Node_virtual_Nova_parsePlaceholders)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*);
@@ -15156,23 +12889,7 @@ nova_Nova_Object* (*nova_Nova_Object_virtual_static_Nova_default)(nova_Nova_Obje
 nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMapNode_Nova_construct)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*);
-void (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_addChild)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
-void (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_onAdded)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_variables_Nova_VariableDeclaration* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_findVariableDeclaration)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, nova_Nova_String*, char);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_parseStatement)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, nova_Nova_String*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*, char);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_generateTemporaryScopeNode)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_Value* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_cloneTo)(spectra_tree_nodes_Nova_ValueFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Value*, spectra_tree_nodes_Nova_Value*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_replace)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_validateTypes)(spectra_tree_nodes_Nova_ValueFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Value*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_parsePlaceholders)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_parsePlaceholderChildren)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_NodeList*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_writeAnnotationSeparator)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_toNova)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_writeNova)(spectra_tree_nodes_generics_Nova_GenericParameterFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_generics_Nova_GenericParameter*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_toString)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
 spectra_tree_nodes_Nova_Value* (*spectra_tree_nodes_Nova_ValueFunctionMap_virtualfunctionMap0_static_Nova_parse)(spectra_tree_nodes_Nova_ValueFunctionMap*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*, char);
-char (*spectra_tree_nodes_Nova_ValueFunctionMap_virtualfunctionMap_Nova_parseType)(spectra_tree_nodes_Nova_ValueFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Value*, nova_Nova_String*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_ValueFunctionMap_virtualfunctionMap_Nova_writeType)(spectra_tree_nodes_Nova_ValueFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Value*);
 };
 
 
@@ -15183,20 +12900,6 @@ nova_Interface_VTable itable;
 nova_Nova_Object* (*nova_Nova_Object_virtual_static_Nova_default)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
-spectra_tree_nodes_Nova_Program* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_program)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_Nova_Instantiation* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentInstantiation)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_closures_Nova_LambdaExpression* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentLambda)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_NovaFile* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentFile)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_Nova_FunctionCall* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentFunctionCall)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_Nova_FunctionDeclaration* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentFunction)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_exceptionhandling_Nova_Try* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentTry)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_ClassDeclaration* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentClass)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_scopeConsumer)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_Scope* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_scope)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-int (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_index)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_Accessible* (*spectra_tree_nodes_Nova_ValuePropertyMap_virtualfunctionMap_Nova_returnedNode)(spectra_tree_nodes_Nova_ValuePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Value*);
-spectra_tree_nodes_Nova_Type* (*spectra_tree_nodes_Nova_ValuePropertyMap_virtualfunctionMap_Nova_type)(spectra_tree_nodes_Nova_ValuePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Value*);
-char (*spectra_tree_nodes_Nova_ValuePropertyMap_virtualfunctionMap_Nova_isAssignable)(spectra_tree_nodes_Nova_ValuePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Value*);
 };
 
 
@@ -15210,7 +12913,6 @@ long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Objec
 spectra_tree_nodes_Nova_Type* (*spectra_tree_nodes_Nova_Type_virtual_static_Nova_parse)(spectra_tree_nodes_Nova_Type*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*, int);
 char (*spectra_tree_nodes_Nova_Type_virtual_Nova_isValid)(spectra_tree_nodes_generics_Nova_GenericType*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
 nova_Nova_String* (*spectra_tree_nodes_Nova_Type_virtual_Nova_writeNova)(spectra_tree_nodes_Nova_Type*, nova_exception_Nova_ExceptionData*);
-spectra_tree_nodes_generics_Nova_GenericType* (*spectra_tree_nodes_Nova_Type_virtual_Nova_cloneTo)(spectra_tree_nodes_generics_Nova_GenericType*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_generics_Nova_GenericType*);
 char (*spectra_tree_nodes_Nova_Type_virtual_Accessorfunc_Nova_isGeneric)(spectra_tree_nodes_generics_Nova_GenericType*, nova_exception_Nova_ExceptionData*);
 char (*spectra_tree_nodes_Nova_Type_virtual_Accessor_Nova_isPrimitiveType)(spectra_tree_nodes_generics_Nova_GenericType*, nova_exception_Nova_ExceptionData*);
 };
@@ -15225,9 +12927,6 @@ nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*, n
 long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 spectra_tree_nodes_generics_Nova_GenericType* (*spectra_tree_nodes_Nova_TypeFunctionMap_virtualfunctionMapGenericType_Nova_construct)(spectra_tree_nodes_generics_Nova_GenericTypeFunctionMap*, nova_exception_Nova_ExceptionData*, nova_Nova_String*);
 spectra_tree_nodes_Nova_Type* (*spectra_tree_nodes_Nova_TypeFunctionMap_virtualfunctionMap_static_Nova_parse)(spectra_tree_nodes_Nova_TypeFunctionMap*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*, char);
-char (*spectra_tree_nodes_Nova_TypeFunctionMap_virtualfunctionMap_Nova_isValid)(spectra_tree_nodes_generics_Nova_GenericTypeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_generics_Nova_GenericType*, spectra_tree_nodes_Nova_Node*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_TypeFunctionMap_virtualfunctionMap_Nova_writeNova)(spectra_tree_nodes_Nova_TypeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Type*);
-spectra_tree_nodes_generics_Nova_GenericType* (*spectra_tree_nodes_Nova_TypeFunctionMap_virtualfunctionMap_Nova_cloneTo)(spectra_tree_nodes_generics_Nova_GenericTypeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_generics_Nova_GenericType*, spectra_tree_nodes_generics_Nova_GenericType*);
 };
 
 
@@ -15238,8 +12937,6 @@ nova_Interface_VTable itable;
 nova_Nova_Object* (*nova_Nova_Object_virtual_static_Nova_default)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
-char (*spectra_tree_nodes_Nova_TypePropertyMap_virtualfunctionMap_Nova_isGeneric)(spectra_tree_nodes_generics_Nova_GenericTypePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_generics_Nova_GenericType*);
-char (*spectra_tree_nodes_Nova_TypePropertyMap_virtualfunctionMap_Nova_isPrimitiveType)(spectra_tree_nodes_generics_Nova_GenericTypePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_generics_Nova_GenericType*);
 };
 
 
@@ -15282,7 +12979,6 @@ void (*spectra_tree_nodes_Nova_Node_virtual_Nova_onAdded)(spectra_tree_nodes_Nov
 spectra_tree_nodes_variables_Nova_VariableDeclaration* (*spectra_tree_nodes_Nova_Node_virtual_Nova_findVariableDeclaration)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, int);
 spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_Node_virtual_Nova_parseStatement)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*, int);
 spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_Node_virtual_Nova_generateTemporaryScopeNode)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*);
-spectra_tree_nodes_Nova_Value* (*spectra_tree_nodes_Nova_Node_virtual_Nova_cloneTo)(spectra_tree_nodes_Nova_Value*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Value*);
 char (*spectra_tree_nodes_Nova_Node_virtual_Nova_replace)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
 char (*spectra_tree_nodes_Nova_Node_virtual_Nova_validateTypes)(spectra_tree_nodes_Nova_Value*, nova_exception_Nova_ExceptionData*);
 char (*spectra_tree_nodes_Nova_Node_virtual_Nova_parsePlaceholders)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*);
@@ -15319,23 +13015,7 @@ nova_Nova_Object* (*nova_Nova_Object_virtual_static_Nova_default)(nova_Nova_Obje
 nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 spectra_tree_nodes_operations_Nova_Assignment* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMapAssignment_Nova_construct)(spectra_tree_nodes_operations_Nova_AssignmentFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*);
-void (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_addChild)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
-void (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_onAdded)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_variables_Nova_VariableDeclaration* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_findVariableDeclaration)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, nova_Nova_String*, char);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_parseStatement)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, nova_Nova_String*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*, char);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_generateTemporaryScopeNode)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_Value* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_cloneTo)(spectra_tree_nodes_Nova_ValueFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Value*, spectra_tree_nodes_Nova_Value*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_replace)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_validateTypes)(spectra_tree_nodes_Nova_ValueFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Value*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_parsePlaceholders)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_parsePlaceholderChildren)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_NodeList*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_writeAnnotationSeparator)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_toNova)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_writeNova)(spectra_tree_nodes_operations_Nova_OperationFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_operations_Nova_Operation*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_toString)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
 spectra_tree_nodes_operations_Nova_Assignment* (*spectra_tree_nodes_Nova_ValueFunctionMap_virtualfunctionMap_static_Nova_parse)(spectra_tree_nodes_operations_Nova_AssignmentFunctionMap*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*, char);
-char (*spectra_tree_nodes_Nova_ValueFunctionMap_virtualfunctionMap_Nova_parseType)(spectra_tree_nodes_Nova_ValueFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Value*, nova_Nova_String*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_ValueFunctionMap_virtualfunctionMap_Nova_writeType)(spectra_tree_nodes_Nova_ValueFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Value*);
 };
 
 
@@ -15346,20 +13026,6 @@ nova_Interface_VTable itable;
 nova_Nova_Object* (*nova_Nova_Object_virtual_static_Nova_default)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
-spectra_tree_nodes_Nova_Program* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_program)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_Nova_Instantiation* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentInstantiation)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_closures_Nova_LambdaExpression* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentLambda)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_NovaFile* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentFile)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_Nova_FunctionCall* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentFunctionCall)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_Nova_FunctionDeclaration* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentFunction)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_exceptionhandling_Nova_Try* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentTry)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_ClassDeclaration* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentClass)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_scopeConsumer)(spectra_tree_nodes_operations_Nova_AssignmentPropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_operations_Nova_Assignment*);
-spectra_tree_nodes_Nova_Scope* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_scope)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-int (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_index)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_Accessible* (*spectra_tree_nodes_Nova_ValuePropertyMap_virtualfunctionMap_Nova_returnedNode)(spectra_tree_nodes_Nova_ValuePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Value*);
-spectra_tree_nodes_Nova_Type* (*spectra_tree_nodes_Nova_ValuePropertyMap_virtualfunctionMap_Nova_type)(spectra_tree_nodes_operations_Nova_AssignmentPropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_operations_Nova_Assignment*);
-char (*spectra_tree_nodes_Nova_ValuePropertyMap_virtualfunctionMap_Nova_isAssignable)(spectra_tree_nodes_Nova_ValuePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Value*);
 };
 
 
@@ -15375,7 +13041,6 @@ void (*spectra_tree_nodes_Nova_Node_virtual_Nova_onAdded)(spectra_tree_nodes_Nov
 spectra_tree_nodes_variables_Nova_VariableDeclaration* (*spectra_tree_nodes_Nova_Node_virtual_Nova_findVariableDeclaration)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, int);
 spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_Node_virtual_Nova_parseStatement)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*, int);
 spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_Node_virtual_Nova_generateTemporaryScopeNode)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*);
-spectra_tree_nodes_Nova_Value* (*spectra_tree_nodes_Nova_Node_virtual_Nova_cloneTo)(spectra_tree_nodes_Nova_Value*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Value*);
 char (*spectra_tree_nodes_Nova_Node_virtual_Nova_replace)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
 char (*spectra_tree_nodes_Nova_Node_virtual_Nova_validateTypes)(spectra_tree_nodes_Nova_Value*, nova_exception_Nova_ExceptionData*);
 char (*spectra_tree_nodes_Nova_Node_virtual_Nova_parsePlaceholders)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*);
@@ -15412,23 +13077,7 @@ nova_Nova_Object* (*nova_Nova_Object_virtual_static_Nova_default)(nova_Nova_Obje
 nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 spectra_tree_nodes_operations_Nova_ElvisOperation* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMapElvisOperation_Nova_construct)(spectra_tree_nodes_operations_Nova_ElvisOperationFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*);
-void (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_addChild)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
-void (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_onAdded)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_variables_Nova_VariableDeclaration* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_findVariableDeclaration)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, nova_Nova_String*, char);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_parseStatement)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, nova_Nova_String*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*, char);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_generateTemporaryScopeNode)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_Value* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_cloneTo)(spectra_tree_nodes_Nova_ValueFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Value*, spectra_tree_nodes_Nova_Value*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_replace)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_validateTypes)(spectra_tree_nodes_Nova_ValueFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Value*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_parsePlaceholders)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_parsePlaceholderChildren)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_NodeList*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_writeAnnotationSeparator)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_toNova)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_writeNova)(spectra_tree_nodes_operations_Nova_ElvisOperationFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_operations_Nova_ElvisOperation*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_toString)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
 spectra_tree_nodes_operations_Nova_ElvisOperation* (*spectra_tree_nodes_Nova_ValueFunctionMap_virtualfunctionMap_static_Nova_parse)(spectra_tree_nodes_operations_Nova_ElvisOperationFunctionMap*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*, char);
-char (*spectra_tree_nodes_Nova_ValueFunctionMap_virtualfunctionMap_Nova_parseType)(spectra_tree_nodes_Nova_ValueFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Value*, nova_Nova_String*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_ValueFunctionMap_virtualfunctionMap_Nova_writeType)(spectra_tree_nodes_Nova_ValueFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Value*);
 };
 
 
@@ -15439,20 +13088,6 @@ nova_Interface_VTable itable;
 nova_Nova_Object* (*nova_Nova_Object_virtual_static_Nova_default)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
-spectra_tree_nodes_Nova_Program* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_program)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_Nova_Instantiation* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentInstantiation)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_closures_Nova_LambdaExpression* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentLambda)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_NovaFile* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentFile)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_Nova_FunctionCall* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentFunctionCall)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_Nova_FunctionDeclaration* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentFunction)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_exceptionhandling_Nova_Try* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentTry)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_ClassDeclaration* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentClass)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_scopeConsumer)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_Scope* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_scope)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-int (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_index)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_Accessible* (*spectra_tree_nodes_Nova_ValuePropertyMap_virtualfunctionMap_Nova_returnedNode)(spectra_tree_nodes_Nova_ValuePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Value*);
-spectra_tree_nodes_Nova_Type* (*spectra_tree_nodes_Nova_ValuePropertyMap_virtualfunctionMap_Nova_type)(spectra_tree_nodes_Nova_ValuePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Value*);
-char (*spectra_tree_nodes_Nova_ValuePropertyMap_virtualfunctionMap_Nova_isAssignable)(spectra_tree_nodes_Nova_ValuePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Value*);
 };
 
 
@@ -15468,7 +13103,6 @@ void (*spectra_tree_nodes_Nova_Node_virtual_Nova_onAdded)(spectra_tree_nodes_Nov
 spectra_tree_nodes_variables_Nova_VariableDeclaration* (*spectra_tree_nodes_Nova_Node_virtual_Nova_findVariableDeclaration)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, int);
 spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_Node_virtual_Nova_parseStatement)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*, int);
 spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_Node_virtual_Nova_generateTemporaryScopeNode)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*);
-spectra_tree_nodes_Nova_Value* (*spectra_tree_nodes_Nova_Node_virtual_Nova_cloneTo)(spectra_tree_nodes_Nova_Value*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Value*);
 char (*spectra_tree_nodes_Nova_Node_virtual_Nova_replace)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
 char (*spectra_tree_nodes_Nova_Node_virtual_Nova_validateTypes)(spectra_tree_nodes_Nova_Value*, nova_exception_Nova_ExceptionData*);
 char (*spectra_tree_nodes_Nova_Node_virtual_Nova_parsePlaceholders)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*);
@@ -15505,23 +13139,7 @@ nova_Nova_Object* (*nova_Nova_Object_virtual_static_Nova_default)(nova_Nova_Obje
 nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 spectra_tree_nodes_operations_Nova_Operation* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMapOperation_Nova_construct)(spectra_tree_nodes_operations_Nova_OperationFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*);
-void (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_addChild)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
-void (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_onAdded)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_variables_Nova_VariableDeclaration* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_findVariableDeclaration)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, nova_Nova_String*, char);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_parseStatement)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, nova_Nova_String*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*, char);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_generateTemporaryScopeNode)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_Value* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_cloneTo)(spectra_tree_nodes_Nova_ValueFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Value*, spectra_tree_nodes_Nova_Value*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_replace)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_validateTypes)(spectra_tree_nodes_Nova_ValueFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Value*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_parsePlaceholders)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_parsePlaceholderChildren)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_NodeList*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_writeAnnotationSeparator)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_toNova)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_writeNova)(spectra_tree_nodes_operations_Nova_OperationFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_operations_Nova_Operation*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_toString)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
 spectra_tree_nodes_operations_Nova_Operation* (*spectra_tree_nodes_Nova_ValueFunctionMap_virtualfunctionMap_static_Nova_parse)(spectra_tree_nodes_operations_Nova_OperationFunctionMap*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*, char);
-char (*spectra_tree_nodes_Nova_ValueFunctionMap_virtualfunctionMap_Nova_parseType)(spectra_tree_nodes_Nova_ValueFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Value*, nova_Nova_String*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_ValueFunctionMap_virtualfunctionMap_Nova_writeType)(spectra_tree_nodes_Nova_ValueFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Value*);
 };
 
 
@@ -15532,20 +13150,6 @@ nova_Interface_VTable itable;
 nova_Nova_Object* (*nova_Nova_Object_virtual_static_Nova_default)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
-spectra_tree_nodes_Nova_Program* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_program)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_Nova_Instantiation* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentInstantiation)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_closures_Nova_LambdaExpression* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentLambda)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_NovaFile* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentFile)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_Nova_FunctionCall* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentFunctionCall)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_Nova_FunctionDeclaration* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentFunction)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_exceptionhandling_Nova_Try* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentTry)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_ClassDeclaration* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentClass)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_scopeConsumer)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_Scope* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_scope)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-int (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_index)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_Accessible* (*spectra_tree_nodes_Nova_ValuePropertyMap_virtualfunctionMap_Nova_returnedNode)(spectra_tree_nodes_Nova_ValuePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Value*);
-spectra_tree_nodes_Nova_Type* (*spectra_tree_nodes_Nova_ValuePropertyMap_virtualfunctionMap_Nova_type)(spectra_tree_nodes_Nova_ValuePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Value*);
-char (*spectra_tree_nodes_Nova_ValuePropertyMap_virtualfunctionMap_Nova_isAssignable)(spectra_tree_nodes_Nova_ValuePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Value*);
 };
 
 
@@ -15561,7 +13165,6 @@ void (*spectra_tree_nodes_Nova_Node_virtual_Nova_onAdded)(spectra_tree_nodes_Nov
 spectra_tree_nodes_variables_Nova_VariableDeclaration* (*spectra_tree_nodes_Nova_Node_virtual_Nova_findVariableDeclaration)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, int);
 spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_Node_virtual_Nova_parseStatement)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*, int);
 spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_Node_virtual_Nova_generateTemporaryScopeNode)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_Node_virtual_Nova_cloneTo)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
 char (*spectra_tree_nodes_Nova_Node_virtual_Nova_replace)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
 char (*spectra_tree_nodes_Nova_Node_virtual_Nova_validateTypes)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*);
 char (*spectra_tree_nodes_Nova_Node_virtual_Nova_parsePlaceholders)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*);
@@ -15592,20 +13195,6 @@ nova_Nova_Object* (*nova_Nova_Object_virtual_static_Nova_default)(nova_Nova_Obje
 nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMapNode_Nova_construct)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*);
-void (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_addChild)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
-void (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_onAdded)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_variables_Nova_VariableDeclaration* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_findVariableDeclaration)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, nova_Nova_String*, char);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_parseStatement)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, nova_Nova_String*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*, char);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_generateTemporaryScopeNode)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_cloneTo)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_replace)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_validateTypes)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_parsePlaceholders)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_parsePlaceholderChildren)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_NodeList*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_writeAnnotationSeparator)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_toNova)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_writeNova)(spectra_tree_nodes_operations_Nova_OperatorFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_operations_Nova_Operator*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_toString)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
 };
 
 
@@ -15616,17 +13205,6 @@ nova_Interface_VTable itable;
 nova_Nova_Object* (*nova_Nova_Object_virtual_static_Nova_default)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
-spectra_tree_nodes_Nova_Program* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_program)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_Nova_Instantiation* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentInstantiation)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_closures_Nova_LambdaExpression* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentLambda)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_NovaFile* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentFile)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_Nova_FunctionCall* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentFunctionCall)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_Nova_FunctionDeclaration* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentFunction)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_exceptionhandling_Nova_Try* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentTry)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_ClassDeclaration* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentClass)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_scopeConsumer)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_Scope* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_scope)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-int (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_index)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
 };
 
 
@@ -15642,7 +13220,6 @@ void (*spectra_tree_nodes_Nova_Node_virtual_Nova_onAdded)(spectra_tree_nodes_Nov
 spectra_tree_nodes_variables_Nova_VariableDeclaration* (*spectra_tree_nodes_Nova_Node_virtual_Nova_findVariableDeclaration)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, int);
 spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_Node_virtual_Nova_parseStatement)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*, int);
 spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_Node_virtual_Nova_generateTemporaryScopeNode)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*);
-spectra_tree_nodes_Nova_Value* (*spectra_tree_nodes_Nova_Node_virtual_Nova_cloneTo)(spectra_tree_nodes_Nova_Value*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Value*);
 char (*spectra_tree_nodes_Nova_Node_virtual_Nova_replace)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
 char (*spectra_tree_nodes_Nova_Node_virtual_Nova_validateTypes)(spectra_tree_nodes_Nova_Value*, nova_exception_Nova_ExceptionData*);
 char (*spectra_tree_nodes_Nova_Node_virtual_Nova_parsePlaceholders)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*);
@@ -15679,23 +13256,7 @@ nova_Nova_Object* (*nova_Nova_Object_virtual_static_Nova_default)(nova_Nova_Obje
 nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 spectra_tree_nodes_operations_Nova_TernaryOperation* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMapTernaryOperation_Nova_construct)(spectra_tree_nodes_operations_Nova_TernaryOperationFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*);
-void (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_addChild)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
-void (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_onAdded)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_variables_Nova_VariableDeclaration* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_findVariableDeclaration)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, nova_Nova_String*, char);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_parseStatement)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, nova_Nova_String*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*, char);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_generateTemporaryScopeNode)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_Value* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_cloneTo)(spectra_tree_nodes_Nova_ValueFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Value*, spectra_tree_nodes_Nova_Value*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_replace)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_validateTypes)(spectra_tree_nodes_Nova_ValueFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Value*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_parsePlaceholders)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_parsePlaceholderChildren)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_NodeList*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_writeAnnotationSeparator)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_toNova)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_writeNova)(spectra_tree_nodes_operations_Nova_TernaryOperationFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_operations_Nova_TernaryOperation*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_toString)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
 spectra_tree_nodes_operations_Nova_TernaryOperation* (*spectra_tree_nodes_Nova_ValueFunctionMap_virtualfunctionMap_static_Nova_parse)(spectra_tree_nodes_operations_Nova_TernaryOperationFunctionMap*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*, char);
-char (*spectra_tree_nodes_Nova_ValueFunctionMap_virtualfunctionMap_Nova_parseType)(spectra_tree_nodes_Nova_ValueFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Value*, nova_Nova_String*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_ValueFunctionMap_virtualfunctionMap_Nova_writeType)(spectra_tree_nodes_Nova_ValueFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Value*);
 };
 
 
@@ -15706,20 +13267,6 @@ nova_Interface_VTable itable;
 nova_Nova_Object* (*nova_Nova_Object_virtual_static_Nova_default)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
-spectra_tree_nodes_Nova_Program* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_program)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_Nova_Instantiation* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentInstantiation)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_closures_Nova_LambdaExpression* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentLambda)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_NovaFile* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentFile)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_Nova_FunctionCall* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentFunctionCall)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_Nova_FunctionDeclaration* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentFunction)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_exceptionhandling_Nova_Try* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentTry)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_ClassDeclaration* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentClass)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_scopeConsumer)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_Scope* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_scope)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-int (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_index)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_Accessible* (*spectra_tree_nodes_Nova_ValuePropertyMap_virtualfunctionMap_Nova_returnedNode)(spectra_tree_nodes_Nova_ValuePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Value*);
-spectra_tree_nodes_Nova_Type* (*spectra_tree_nodes_Nova_ValuePropertyMap_virtualfunctionMap_Nova_type)(spectra_tree_nodes_Nova_ValuePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Value*);
-char (*spectra_tree_nodes_Nova_ValuePropertyMap_virtualfunctionMap_Nova_isAssignable)(spectra_tree_nodes_Nova_ValuePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Value*);
 };
 
 
@@ -15735,7 +13282,6 @@ void (*spectra_tree_nodes_Nova_Node_virtual_Nova_onAdded)(spectra_tree_nodes_Nov
 spectra_tree_nodes_variables_Nova_VariableDeclaration* (*spectra_tree_nodes_Nova_Node_virtual_Nova_findVariableDeclaration)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, int);
 spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_Node_virtual_Nova_parseStatement)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*, int);
 spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_Node_virtual_Nova_generateTemporaryScopeNode)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*);
-spectra_tree_nodes_Nova_Value* (*spectra_tree_nodes_Nova_Node_virtual_Nova_cloneTo)(spectra_tree_nodes_Nova_Value*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Value*);
 char (*spectra_tree_nodes_Nova_Node_virtual_Nova_replace)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
 char (*spectra_tree_nodes_Nova_Node_virtual_Nova_validateTypes)(spectra_tree_nodes_Nova_Value*, nova_exception_Nova_ExceptionData*);
 char (*spectra_tree_nodes_Nova_Node_virtual_Nova_parsePlaceholders)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*);
@@ -15772,23 +13318,7 @@ nova_Nova_Object* (*nova_Nova_Object_virtual_static_Nova_default)(nova_Nova_Obje
 nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 spectra_tree_nodes_operations_Nova_UnaryOperation* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMapUnaryOperation_Nova_construct)(spectra_tree_nodes_operations_Nova_UnaryOperationFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*);
-void (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_addChild)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
-void (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_onAdded)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_variables_Nova_VariableDeclaration* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_findVariableDeclaration)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, nova_Nova_String*, char);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_parseStatement)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, nova_Nova_String*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*, char);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_generateTemporaryScopeNode)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_Value* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_cloneTo)(spectra_tree_nodes_Nova_ValueFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Value*, spectra_tree_nodes_Nova_Value*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_replace)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_validateTypes)(spectra_tree_nodes_Nova_ValueFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Value*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_parsePlaceholders)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_parsePlaceholderChildren)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_NodeList*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_writeAnnotationSeparator)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_toNova)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_writeNova)(spectra_tree_nodes_operations_Nova_UnaryOperationFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_operations_Nova_UnaryOperation*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_toString)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
 spectra_tree_nodes_operations_Nova_UnaryOperation* (*spectra_tree_nodes_Nova_ValueFunctionMap_virtualfunctionMap_static_Nova_parse)(spectra_tree_nodes_operations_Nova_UnaryOperationFunctionMap*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*, char);
-char (*spectra_tree_nodes_Nova_ValueFunctionMap_virtualfunctionMap_Nova_parseType)(spectra_tree_nodes_Nova_ValueFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Value*, nova_Nova_String*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_ValueFunctionMap_virtualfunctionMap_Nova_writeType)(spectra_tree_nodes_Nova_ValueFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Value*);
 };
 
 
@@ -15799,20 +13329,6 @@ nova_Interface_VTable itable;
 nova_Nova_Object* (*nova_Nova_Object_virtual_static_Nova_default)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
-spectra_tree_nodes_Nova_Program* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_program)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_Nova_Instantiation* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentInstantiation)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_closures_Nova_LambdaExpression* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentLambda)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_NovaFile* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentFile)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_Nova_FunctionCall* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentFunctionCall)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_Nova_FunctionDeclaration* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentFunction)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_exceptionhandling_Nova_Try* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentTry)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_ClassDeclaration* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentClass)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_scopeConsumer)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_Scope* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_scope)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-int (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_index)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_Accessible* (*spectra_tree_nodes_Nova_ValuePropertyMap_virtualfunctionMap_Nova_returnedNode)(spectra_tree_nodes_Nova_ValuePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Value*);
-spectra_tree_nodes_Nova_Type* (*spectra_tree_nodes_Nova_ValuePropertyMap_virtualfunctionMap_Nova_type)(spectra_tree_nodes_Nova_ValuePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Value*);
-char (*spectra_tree_nodes_Nova_ValuePropertyMap_virtualfunctionMap_Nova_isAssignable)(spectra_tree_nodes_Nova_ValuePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Value*);
 };
 
 
@@ -15828,7 +13344,6 @@ void (*spectra_tree_nodes_Nova_Node_virtual_Nova_onAdded)(spectra_tree_nodes_Nov
 spectra_tree_nodes_variables_Nova_VariableDeclaration* (*spectra_tree_nodes_Nova_Node_virtual_Nova_findVariableDeclaration)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, int);
 spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_Node_virtual_Nova_parseStatement)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*, int);
 spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_Node_virtual_Nova_generateTemporaryScopeNode)(spectra_tree_nodes_variables_Nova_ArrayBracketOverload*, nova_exception_Nova_ExceptionData*);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_Node_virtual_Nova_cloneTo)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
 char (*spectra_tree_nodes_Nova_Node_virtual_Nova_replace)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
 char (*spectra_tree_nodes_Nova_Node_virtual_Nova_validateTypes)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*);
 char (*spectra_tree_nodes_Nova_Node_virtual_Nova_parsePlaceholders)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*);
@@ -15859,20 +13374,6 @@ nova_Nova_Object* (*nova_Nova_Object_virtual_static_Nova_default)(nova_Nova_Obje
 nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 spectra_tree_nodes_variables_Nova_ArrayBracketOverload* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMapArrayBracketOverload_Nova_construct)(spectra_tree_nodes_variables_Nova_ArrayBracketOverloadFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*);
-void (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_addChild)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
-void (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_onAdded)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_variables_Nova_VariableDeclaration* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_findVariableDeclaration)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, nova_Nova_String*, char);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_parseStatement)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, nova_Nova_String*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*, char);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_generateTemporaryScopeNode)(spectra_tree_nodes_variables_Nova_ArrayBracketOverloadFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_variables_Nova_ArrayBracketOverload*);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_cloneTo)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_replace)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_validateTypes)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_parsePlaceholders)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_parsePlaceholderChildren)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_NodeList*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_writeAnnotationSeparator)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_toNova)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_writeNova)(spectra_tree_nodes_variables_Nova_ArrayBracketOverloadFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_variables_Nova_ArrayBracketOverload*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_toString)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
 };
 
 
@@ -15883,17 +13384,6 @@ nova_Interface_VTable itable;
 nova_Nova_Object* (*nova_Nova_Object_virtual_static_Nova_default)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
-spectra_tree_nodes_Nova_Program* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_program)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_Nova_Instantiation* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentInstantiation)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_closures_Nova_LambdaExpression* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentLambda)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_NovaFile* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentFile)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_Nova_FunctionCall* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentFunctionCall)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_Nova_FunctionDeclaration* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentFunction)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_exceptionhandling_Nova_Try* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentTry)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_ClassDeclaration* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentClass)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_scopeConsumer)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_Scope* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_scope)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-int (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_index)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
 };
 
 
@@ -15909,7 +13399,6 @@ void (*spectra_tree_nodes_Nova_Node_virtual_Nova_onAdded)(spectra_tree_nodes_var
 spectra_tree_nodes_variables_Nova_VariableDeclaration* (*spectra_tree_nodes_Nova_Node_virtual_Nova_findVariableDeclaration)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, int);
 spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_Node_virtual_Nova_parseStatement)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*, int);
 spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_Node_virtual_Nova_generateTemporaryScopeNode)(spectra_tree_nodes_variables_Nova_FieldDeclaration*, nova_exception_Nova_ExceptionData*);
-spectra_tree_nodes_variables_Nova_FieldDeclaration* (*spectra_tree_nodes_Nova_Node_virtual_Nova_cloneTo)(spectra_tree_nodes_variables_Nova_FieldDeclaration*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_variables_Nova_FieldDeclaration*);
 char (*spectra_tree_nodes_Nova_Node_virtual_Nova_replace)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
 char (*spectra_tree_nodes_Nova_Node_virtual_Nova_validateTypes)(spectra_tree_nodes_Nova_Value*, nova_exception_Nova_ExceptionData*);
 char (*spectra_tree_nodes_Nova_Node_virtual_Nova_parsePlaceholders)(spectra_tree_nodes_variables_Nova_FieldDeclaration*, nova_exception_Nova_ExceptionData*);
@@ -15949,24 +13438,7 @@ nova_Nova_Object* (*nova_Nova_Object_virtual_static_Nova_default)(nova_Nova_Obje
 nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 spectra_tree_nodes_variables_Nova_FieldDeclaration* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMapFieldDeclaration_Nova_construct)(spectra_tree_nodes_variables_Nova_FieldDeclarationFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*);
-void (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_addChild)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
-void (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_onAdded)(spectra_tree_nodes_variables_Nova_FieldDeclarationFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_variables_Nova_FieldDeclaration*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_variables_Nova_VariableDeclaration* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_findVariableDeclaration)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, nova_Nova_String*, char);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_parseStatement)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, nova_Nova_String*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*, char);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_generateTemporaryScopeNode)(spectra_tree_nodes_variables_Nova_FieldDeclarationFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_variables_Nova_FieldDeclaration*);
-spectra_tree_nodes_variables_Nova_FieldDeclaration* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_cloneTo)(spectra_tree_nodes_variables_Nova_FieldDeclarationFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_variables_Nova_FieldDeclaration*, spectra_tree_nodes_variables_Nova_FieldDeclaration*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_replace)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_validateTypes)(spectra_tree_nodes_Nova_ValueFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Value*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_parsePlaceholders)(spectra_tree_nodes_variables_Nova_FieldDeclarationFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_variables_Nova_FieldDeclaration*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_parsePlaceholderChildren)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_NodeList*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_writeAnnotationSeparator)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_toNova)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_writeNova)(spectra_tree_nodes_variables_Nova_FieldDeclarationFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_variables_Nova_FieldDeclaration*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_toString)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
 spectra_tree_nodes_variables_Nova_FieldDeclaration* (*spectra_tree_nodes_Nova_ValueFunctionMap_virtualfunctionMap_static_Nova_parse)(spectra_tree_nodes_variables_Nova_FieldDeclarationFunctionMap*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*, char);
-char (*spectra_tree_nodes_Nova_ValueFunctionMap_virtualfunctionMap_Nova_parseType)(spectra_tree_nodes_Nova_ValueFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Value*, nova_Nova_String*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_ValueFunctionMap_virtualfunctionMap_Nova_writeType)(spectra_tree_nodes_Nova_ValueFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Value*);
-char (*spectra_tree_nodes_variables_Nova_VariableDeclarationFunctionMap_virtualfunctionMap_Nova_parseModifier)(spectra_tree_nodes_variables_Nova_VariableDeclarationFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_variables_Nova_VariableDeclaration*, nova_Nova_String*);
 };
 
 
@@ -15977,22 +13449,6 @@ nova_Interface_VTable itable;
 nova_Nova_Object* (*nova_Nova_Object_virtual_static_Nova_default)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
-spectra_tree_nodes_Nova_Program* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_program)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_Nova_Instantiation* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentInstantiation)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_closures_Nova_LambdaExpression* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentLambda)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_NovaFile* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentFile)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_Nova_FunctionCall* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentFunctionCall)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_Nova_FunctionDeclaration* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentFunction)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_exceptionhandling_Nova_Try* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentTry)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_ClassDeclaration* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentClass)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_scopeConsumer)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_Scope* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_scope)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-int (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_index)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_Accessible* (*spectra_tree_nodes_Nova_ValuePropertyMap_virtualfunctionMap_Nova_returnedNode)(spectra_tree_nodes_Nova_ValuePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Value*);
-spectra_tree_nodes_Nova_Type* (*spectra_tree_nodes_Nova_ValuePropertyMap_virtualfunctionMap_Nova_type)(spectra_tree_nodes_Nova_ValuePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Value*);
-char (*spectra_tree_nodes_Nova_ValuePropertyMap_virtualfunctionMap_Nova_isAssignable)(spectra_tree_nodes_Nova_ValuePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Value*);
-char (*spectra_tree_nodes_variables_Nova_InstanceDeclarationPropertyMap_virtualfunctionMap_Nova_isPublic)(spectra_tree_nodes_variables_Nova_InstanceDeclarationPropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_variables_Nova_InstanceDeclaration*);
-char (*spectra_tree_nodes_variables_Nova_InstanceDeclarationPropertyMap_virtualfunctionMap_Nova_isPrivate)(spectra_tree_nodes_variables_Nova_InstanceDeclarationPropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_variables_Nova_InstanceDeclaration*);
 };
 
 
@@ -16008,7 +13464,6 @@ void (*spectra_tree_nodes_Nova_Node_virtual_Nova_onAdded)(spectra_tree_nodes_Nov
 spectra_tree_nodes_variables_Nova_VariableDeclaration* (*spectra_tree_nodes_Nova_Node_virtual_Nova_findVariableDeclaration)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, int);
 spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_Node_virtual_Nova_parseStatement)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*, int);
 spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_Node_virtual_Nova_generateTemporaryScopeNode)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*);
-spectra_tree_nodes_variables_Nova_ImplicitDeclaration* (*spectra_tree_nodes_Nova_Node_virtual_Nova_cloneTo)(spectra_tree_nodes_variables_Nova_ImplicitDeclaration*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_variables_Nova_ImplicitDeclaration*);
 char (*spectra_tree_nodes_Nova_Node_virtual_Nova_replace)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
 char (*spectra_tree_nodes_Nova_Node_virtual_Nova_validateTypes)(spectra_tree_nodes_Nova_Value*, nova_exception_Nova_ExceptionData*);
 char (*spectra_tree_nodes_Nova_Node_virtual_Nova_parsePlaceholders)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*);
@@ -16047,24 +13502,7 @@ nova_Nova_Object* (*nova_Nova_Object_virtual_static_Nova_default)(nova_Nova_Obje
 nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 spectra_tree_nodes_variables_Nova_ImplicitDeclaration* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMapImplicitDeclaration_Nova_construct)(spectra_tree_nodes_variables_Nova_ImplicitDeclarationFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*);
-void (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_addChild)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
-void (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_onAdded)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_variables_Nova_VariableDeclaration* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_findVariableDeclaration)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, nova_Nova_String*, char);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_parseStatement)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, nova_Nova_String*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*, char);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_generateTemporaryScopeNode)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_variables_Nova_ImplicitDeclaration* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_cloneTo)(spectra_tree_nodes_variables_Nova_ImplicitDeclarationFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_variables_Nova_ImplicitDeclaration*, spectra_tree_nodes_variables_Nova_ImplicitDeclaration*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_replace)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_validateTypes)(spectra_tree_nodes_Nova_ValueFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Value*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_parsePlaceholders)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_parsePlaceholderChildren)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_NodeList*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_writeAnnotationSeparator)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_toNova)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_writeNova)(spectra_tree_nodes_variables_Nova_VariableDeclarationFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_variables_Nova_VariableDeclaration*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_toString)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
 spectra_tree_nodes_variables_Nova_ImplicitDeclaration* (*spectra_tree_nodes_Nova_ValueFunctionMap_virtualfunctionMap_static_Nova_parse)(spectra_tree_nodes_variables_Nova_ImplicitDeclarationFunctionMap*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*, char);
-char (*spectra_tree_nodes_Nova_ValueFunctionMap_virtualfunctionMap_Nova_parseType)(spectra_tree_nodes_Nova_ValueFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Value*, nova_Nova_String*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_ValueFunctionMap_virtualfunctionMap_Nova_writeType)(spectra_tree_nodes_variables_Nova_ImplicitDeclarationFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_variables_Nova_ImplicitDeclaration*);
-char (*spectra_tree_nodes_variables_Nova_VariableDeclarationFunctionMap_virtualfunctionMap_Nova_parseModifier)(spectra_tree_nodes_variables_Nova_VariableDeclarationFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_variables_Nova_VariableDeclaration*, nova_Nova_String*);
 };
 
 
@@ -16075,21 +13513,6 @@ nova_Interface_VTable itable;
 nova_Nova_Object* (*nova_Nova_Object_virtual_static_Nova_default)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
-spectra_tree_nodes_Nova_Program* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_program)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_Nova_Instantiation* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentInstantiation)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_closures_Nova_LambdaExpression* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentLambda)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_NovaFile* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentFile)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_Nova_FunctionCall* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentFunctionCall)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_Nova_FunctionDeclaration* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentFunction)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_exceptionhandling_Nova_Try* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentTry)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_ClassDeclaration* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentClass)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_scopeConsumer)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_Scope* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_scope)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-int (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_index)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_Accessible* (*spectra_tree_nodes_Nova_ValuePropertyMap_virtualfunctionMap_Nova_returnedNode)(spectra_tree_nodes_Nova_ValuePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Value*);
-spectra_tree_nodes_Nova_Type* (*spectra_tree_nodes_Nova_ValuePropertyMap_virtualfunctionMap_Nova_type)(spectra_tree_nodes_variables_Nova_ImplicitDeclarationPropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_variables_Nova_ImplicitDeclaration*);
-char (*spectra_tree_nodes_Nova_ValuePropertyMap_virtualfunctionMap_Nova_isAssignable)(spectra_tree_nodes_Nova_ValuePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Value*);
-char (*spectra_tree_nodes_variables_Nova_LocalDeclarationPropertyMap_virtualfunctionMap_Nova_isImplicit)(spectra_tree_nodes_variables_Nova_ImplicitDeclarationPropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_variables_Nova_ImplicitDeclaration*);
 };
 
 
@@ -16105,7 +13528,6 @@ void (*spectra_tree_nodes_Nova_Node_virtual_Nova_onAdded)(spectra_tree_nodes_Nov
 spectra_tree_nodes_variables_Nova_VariableDeclaration* (*spectra_tree_nodes_Nova_Node_virtual_Nova_findVariableDeclaration)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, int);
 spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_Node_virtual_Nova_parseStatement)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*, int);
 spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_Node_virtual_Nova_generateTemporaryScopeNode)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*);
-spectra_tree_nodes_variables_Nova_InstanceDeclaration* (*spectra_tree_nodes_Nova_Node_virtual_Nova_cloneTo)(spectra_tree_nodes_variables_Nova_InstanceDeclaration*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_variables_Nova_InstanceDeclaration*);
 char (*spectra_tree_nodes_Nova_Node_virtual_Nova_replace)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
 char (*spectra_tree_nodes_Nova_Node_virtual_Nova_validateTypes)(spectra_tree_nodes_Nova_Value*, nova_exception_Nova_ExceptionData*);
 char (*spectra_tree_nodes_Nova_Node_virtual_Nova_parsePlaceholders)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*);
@@ -16145,24 +13567,7 @@ nova_Nova_Object* (*nova_Nova_Object_virtual_static_Nova_default)(nova_Nova_Obje
 nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 spectra_tree_nodes_variables_Nova_InstanceDeclaration* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMapInstanceDeclaration_Nova_construct)(spectra_tree_nodes_variables_Nova_InstanceDeclarationFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*);
-void (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_addChild)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
-void (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_onAdded)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_variables_Nova_VariableDeclaration* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_findVariableDeclaration)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, nova_Nova_String*, char);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_parseStatement)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, nova_Nova_String*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*, char);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_generateTemporaryScopeNode)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_variables_Nova_InstanceDeclaration* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_cloneTo)(spectra_tree_nodes_variables_Nova_InstanceDeclarationFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_variables_Nova_InstanceDeclaration*, spectra_tree_nodes_variables_Nova_InstanceDeclaration*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_replace)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_validateTypes)(spectra_tree_nodes_Nova_ValueFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Value*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_parsePlaceholders)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_parsePlaceholderChildren)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_NodeList*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_writeAnnotationSeparator)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_toNova)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_writeNova)(spectra_tree_nodes_variables_Nova_VariableDeclarationFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_variables_Nova_VariableDeclaration*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_toString)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
 spectra_tree_nodes_variables_Nova_InstanceDeclaration* (*spectra_tree_nodes_Nova_ValueFunctionMap_virtualfunctionMap_static_Nova_parse)(spectra_tree_nodes_variables_Nova_InstanceDeclarationFunctionMap*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*, char);
-char (*spectra_tree_nodes_Nova_ValueFunctionMap_virtualfunctionMap_Nova_parseType)(spectra_tree_nodes_Nova_ValueFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Value*, nova_Nova_String*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_ValueFunctionMap_virtualfunctionMap_Nova_writeType)(spectra_tree_nodes_Nova_ValueFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Value*);
-char (*spectra_tree_nodes_variables_Nova_VariableDeclarationFunctionMap_virtualfunctionMap_Nova_parseModifier)(spectra_tree_nodes_variables_Nova_VariableDeclarationFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_variables_Nova_VariableDeclaration*, nova_Nova_String*);
 };
 
 
@@ -16173,22 +13578,6 @@ nova_Interface_VTable itable;
 nova_Nova_Object* (*nova_Nova_Object_virtual_static_Nova_default)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
-spectra_tree_nodes_Nova_Program* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_program)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_Nova_Instantiation* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentInstantiation)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_closures_Nova_LambdaExpression* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentLambda)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_NovaFile* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentFile)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_Nova_FunctionCall* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentFunctionCall)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_Nova_FunctionDeclaration* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentFunction)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_exceptionhandling_Nova_Try* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentTry)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_ClassDeclaration* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentClass)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_scopeConsumer)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_Scope* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_scope)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-int (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_index)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_Accessible* (*spectra_tree_nodes_Nova_ValuePropertyMap_virtualfunctionMap_Nova_returnedNode)(spectra_tree_nodes_Nova_ValuePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Value*);
-spectra_tree_nodes_Nova_Type* (*spectra_tree_nodes_Nova_ValuePropertyMap_virtualfunctionMap_Nova_type)(spectra_tree_nodes_Nova_ValuePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Value*);
-char (*spectra_tree_nodes_Nova_ValuePropertyMap_virtualfunctionMap_Nova_isAssignable)(spectra_tree_nodes_Nova_ValuePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Value*);
-char (*spectra_tree_nodes_variables_Nova_InstanceDeclarationPropertyMap_virtualfunctionMap_Nova_isPublic)(spectra_tree_nodes_variables_Nova_InstanceDeclarationPropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_variables_Nova_InstanceDeclaration*);
-char (*spectra_tree_nodes_variables_Nova_InstanceDeclarationPropertyMap_virtualfunctionMap_Nova_isPrivate)(spectra_tree_nodes_variables_Nova_InstanceDeclarationPropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_variables_Nova_InstanceDeclaration*);
 };
 
 
@@ -16204,7 +13593,6 @@ void (*spectra_tree_nodes_Nova_Node_virtual_Nova_onAdded)(spectra_tree_nodes_Nov
 spectra_tree_nodes_variables_Nova_VariableDeclaration* (*spectra_tree_nodes_Nova_Node_virtual_Nova_findVariableDeclaration)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, int);
 spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_Node_virtual_Nova_parseStatement)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*, int);
 spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_Node_virtual_Nova_generateTemporaryScopeNode)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*);
-spectra_tree_nodes_variables_Nova_LocalDeclaration* (*spectra_tree_nodes_Nova_Node_virtual_Nova_cloneTo)(spectra_tree_nodes_variables_Nova_LocalDeclaration*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_variables_Nova_LocalDeclaration*);
 char (*spectra_tree_nodes_Nova_Node_virtual_Nova_replace)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
 char (*spectra_tree_nodes_Nova_Node_virtual_Nova_validateTypes)(spectra_tree_nodes_Nova_Value*, nova_exception_Nova_ExceptionData*);
 char (*spectra_tree_nodes_Nova_Node_virtual_Nova_parsePlaceholders)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*);
@@ -16243,24 +13631,7 @@ nova_Nova_Object* (*nova_Nova_Object_virtual_static_Nova_default)(nova_Nova_Obje
 nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 spectra_tree_nodes_variables_Nova_LocalDeclaration* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMapLocalDeclaration_Nova_construct)(spectra_tree_nodes_variables_Nova_LocalDeclarationFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*);
-void (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_addChild)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
-void (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_onAdded)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_variables_Nova_VariableDeclaration* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_findVariableDeclaration)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, nova_Nova_String*, char);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_parseStatement)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, nova_Nova_String*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*, char);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_generateTemporaryScopeNode)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_variables_Nova_LocalDeclaration* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_cloneTo)(spectra_tree_nodes_variables_Nova_LocalDeclarationFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_variables_Nova_LocalDeclaration*, spectra_tree_nodes_variables_Nova_LocalDeclaration*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_replace)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_validateTypes)(spectra_tree_nodes_Nova_ValueFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Value*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_parsePlaceholders)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_parsePlaceholderChildren)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_NodeList*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_writeAnnotationSeparator)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_toNova)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_writeNova)(spectra_tree_nodes_variables_Nova_VariableDeclarationFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_variables_Nova_VariableDeclaration*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_toString)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
 spectra_tree_nodes_variables_Nova_LocalDeclaration* (*spectra_tree_nodes_Nova_ValueFunctionMap_virtualfunctionMap_static_Nova_parse)(spectra_tree_nodes_variables_Nova_LocalDeclarationFunctionMap*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*, char);
-char (*spectra_tree_nodes_Nova_ValueFunctionMap_virtualfunctionMap_Nova_parseType)(spectra_tree_nodes_Nova_ValueFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Value*, nova_Nova_String*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_ValueFunctionMap_virtualfunctionMap_Nova_writeType)(spectra_tree_nodes_Nova_ValueFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Value*);
-char (*spectra_tree_nodes_variables_Nova_VariableDeclarationFunctionMap_virtualfunctionMap_Nova_parseModifier)(spectra_tree_nodes_variables_Nova_VariableDeclarationFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_variables_Nova_VariableDeclaration*, nova_Nova_String*);
 };
 
 
@@ -16271,21 +13642,6 @@ nova_Interface_VTable itable;
 nova_Nova_Object* (*nova_Nova_Object_virtual_static_Nova_default)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
-spectra_tree_nodes_Nova_Program* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_program)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_Nova_Instantiation* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentInstantiation)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_closures_Nova_LambdaExpression* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentLambda)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_NovaFile* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentFile)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_Nova_FunctionCall* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentFunctionCall)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_Nova_FunctionDeclaration* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentFunction)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_exceptionhandling_Nova_Try* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentTry)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_ClassDeclaration* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentClass)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_scopeConsumer)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_Scope* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_scope)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-int (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_index)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_Accessible* (*spectra_tree_nodes_Nova_ValuePropertyMap_virtualfunctionMap_Nova_returnedNode)(spectra_tree_nodes_Nova_ValuePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Value*);
-spectra_tree_nodes_Nova_Type* (*spectra_tree_nodes_Nova_ValuePropertyMap_virtualfunctionMap_Nova_type)(spectra_tree_nodes_Nova_ValuePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Value*);
-char (*spectra_tree_nodes_Nova_ValuePropertyMap_virtualfunctionMap_Nova_isAssignable)(spectra_tree_nodes_Nova_ValuePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Value*);
-char (*spectra_tree_nodes_variables_Nova_LocalDeclarationPropertyMap_virtualfunctionMap_Nova_isImplicit)(spectra_tree_nodes_variables_Nova_LocalDeclarationPropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_variables_Nova_LocalDeclaration*);
 };
 
 
@@ -16301,7 +13657,6 @@ void (*spectra_tree_nodes_Nova_Node_virtual_Nova_onAdded)(spectra_tree_nodes_Nov
 spectra_tree_nodes_variables_Nova_VariableDeclaration* (*spectra_tree_nodes_Nova_Node_virtual_Nova_findVariableDeclaration)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, int);
 spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_Node_virtual_Nova_parseStatement)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*, int);
 spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_Node_virtual_Nova_generateTemporaryScopeNode)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*);
-spectra_tree_nodes_variables_Nova_Variable* (*spectra_tree_nodes_Nova_Node_virtual_Nova_cloneTo)(spectra_tree_nodes_variables_Nova_Variable*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_variables_Nova_Variable*);
 char (*spectra_tree_nodes_Nova_Node_virtual_Nova_replace)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
 char (*spectra_tree_nodes_Nova_Node_virtual_Nova_validateTypes)(spectra_tree_nodes_Nova_Value*, nova_exception_Nova_ExceptionData*);
 char (*spectra_tree_nodes_Nova_Node_virtual_Nova_parsePlaceholders)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*);
@@ -16338,23 +13693,7 @@ nova_Nova_Object* (*nova_Nova_Object_virtual_static_Nova_default)(nova_Nova_Obje
 nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 spectra_tree_nodes_Nova_Identifier* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMapIdentifier_Nova_construct)(spectra_tree_nodes_Nova_IdentifierFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*);
-void (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_addChild)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
-void (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_onAdded)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_variables_Nova_VariableDeclaration* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_findVariableDeclaration)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, nova_Nova_String*, char);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_parseStatement)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, nova_Nova_String*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*, char);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_generateTemporaryScopeNode)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_variables_Nova_Variable* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_cloneTo)(spectra_tree_nodes_variables_Nova_VariableFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_variables_Nova_Variable*, spectra_tree_nodes_variables_Nova_Variable*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_replace)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_validateTypes)(spectra_tree_nodes_Nova_ValueFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Value*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_parsePlaceholders)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_parsePlaceholderChildren)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_NodeList*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_writeAnnotationSeparator)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_toNova)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_writeNova)(spectra_tree_nodes_variables_Nova_VariableFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_variables_Nova_Variable*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_toString)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
 spectra_tree_nodes_Nova_Identifier* (*spectra_tree_nodes_Nova_ValueFunctionMap_virtualfunctionMap_static_Nova_parse)(spectra_tree_nodes_Nova_IdentifierFunctionMap*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*, char);
-char (*spectra_tree_nodes_Nova_ValueFunctionMap_virtualfunctionMap_Nova_parseType)(spectra_tree_nodes_Nova_ValueFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Value*, nova_Nova_String*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_ValueFunctionMap_virtualfunctionMap_Nova_writeType)(spectra_tree_nodes_Nova_ValueFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Value*);
 };
 
 
@@ -16365,20 +13704,6 @@ nova_Interface_VTable itable;
 nova_Nova_Object* (*nova_Nova_Object_virtual_static_Nova_default)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
-spectra_tree_nodes_Nova_Program* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_program)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_Nova_Instantiation* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentInstantiation)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_closures_Nova_LambdaExpression* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentLambda)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_NovaFile* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentFile)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_Nova_FunctionCall* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentFunctionCall)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_Nova_FunctionDeclaration* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentFunction)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_exceptionhandling_Nova_Try* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentTry)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_ClassDeclaration* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentClass)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_scopeConsumer)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_Scope* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_scope)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-int (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_index)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_Accessible* (*spectra_tree_nodes_Nova_ValuePropertyMap_virtualfunctionMap_Nova_returnedNode)(spectra_tree_nodes_Nova_ValuePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Value*);
-spectra_tree_nodes_Nova_Type* (*spectra_tree_nodes_Nova_ValuePropertyMap_virtualfunctionMap_Nova_type)(spectra_tree_nodes_variables_Nova_VariablePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_variables_Nova_Variable*);
-char (*spectra_tree_nodes_Nova_ValuePropertyMap_virtualfunctionMap_Nova_isAssignable)(spectra_tree_nodes_Nova_ValuePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Value*);
 };
 
 
@@ -16394,7 +13719,6 @@ void (*spectra_tree_nodes_Nova_Node_virtual_Nova_onAdded)(spectra_tree_nodes_Nov
 spectra_tree_nodes_variables_Nova_VariableDeclaration* (*spectra_tree_nodes_Nova_Node_virtual_Nova_findVariableDeclaration)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, int);
 spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_Node_virtual_Nova_parseStatement)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*, int);
 spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_Node_virtual_Nova_generateTemporaryScopeNode)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*);
-spectra_tree_nodes_variables_Nova_VariableDeclaration* (*spectra_tree_nodes_Nova_Node_virtual_Nova_cloneTo)(spectra_tree_nodes_variables_Nova_VariableDeclaration*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_variables_Nova_VariableDeclaration*);
 char (*spectra_tree_nodes_Nova_Node_virtual_Nova_replace)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
 char (*spectra_tree_nodes_Nova_Node_virtual_Nova_validateTypes)(spectra_tree_nodes_Nova_Value*, nova_exception_Nova_ExceptionData*);
 char (*spectra_tree_nodes_Nova_Node_virtual_Nova_parsePlaceholders)(spectra_tree_nodes_Nova_Node*, nova_exception_Nova_ExceptionData*);
@@ -16432,24 +13756,7 @@ nova_Nova_Object* (*nova_Nova_Object_virtual_static_Nova_default)(nova_Nova_Obje
 nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 spectra_tree_nodes_variables_Nova_VariableDeclaration* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMapVariableDeclaration_Nova_construct)(spectra_tree_nodes_variables_Nova_VariableDeclarationFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*);
-void (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_addChild)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
-void (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_onAdded)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_variables_Nova_VariableDeclaration* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_findVariableDeclaration)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, nova_Nova_String*, char);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_parseStatement)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, nova_Nova_String*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*, char);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_generateTemporaryScopeNode)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_variables_Nova_VariableDeclaration* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_cloneTo)(spectra_tree_nodes_variables_Nova_VariableDeclarationFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_variables_Nova_VariableDeclaration*, spectra_tree_nodes_variables_Nova_VariableDeclaration*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_replace)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_Node*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_validateTypes)(spectra_tree_nodes_Nova_ValueFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Value*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_parsePlaceholders)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-char (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_parsePlaceholderChildren)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*, spectra_tree_nodes_Nova_NodeList*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_writeAnnotationSeparator)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_toNova)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_writeNova)(spectra_tree_nodes_variables_Nova_VariableDeclarationFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_variables_Nova_VariableDeclaration*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMap_Nova_toString)(spectra_tree_nodes_Nova_NodeFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
 spectra_tree_nodes_variables_Nova_VariableDeclaration* (*spectra_tree_nodes_Nova_ValueFunctionMap_virtualfunctionMap_static_Nova_parse)(spectra_tree_nodes_variables_Nova_VariableDeclarationFunctionMap*, nova_exception_Nova_ExceptionData*, nova_Nova_String*, spectra_tree_nodes_Nova_Node*, spectra_util_Nova_Location*, char);
-char (*spectra_tree_nodes_Nova_ValueFunctionMap_virtualfunctionMap_Nova_parseType)(spectra_tree_nodes_Nova_ValueFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Value*, nova_Nova_String*);
-nova_Nova_String* (*spectra_tree_nodes_Nova_ValueFunctionMap_virtualfunctionMap_Nova_writeType)(spectra_tree_nodes_Nova_ValueFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Value*);
-char (*spectra_tree_nodes_variables_Nova_VariableDeclarationFunctionMap_virtualfunctionMap_Nova_parseModifier)(spectra_tree_nodes_variables_Nova_VariableDeclarationFunctionMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_variables_Nova_VariableDeclaration*, nova_Nova_String*);
 };
 
 
@@ -16460,20 +13767,6 @@ nova_Interface_VTable itable;
 nova_Nova_Object* (*nova_Nova_Object_virtual_static_Nova_default)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
-spectra_tree_nodes_Nova_Program* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_program)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_Nova_Instantiation* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentInstantiation)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_closures_Nova_LambdaExpression* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentLambda)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_NovaFile* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentFile)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_Nova_FunctionCall* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentFunctionCall)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_functions_Nova_FunctionDeclaration* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentFunction)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_exceptionhandling_Nova_Try* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentTry)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_ClassDeclaration* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_parentClass)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_Node* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_scopeConsumer)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_Scope* (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_scope)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-int (*spectra_tree_nodes_Nova_NodePropertyMap_virtualfunctionMap_Nova_index)(spectra_tree_nodes_Nova_NodePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Node*);
-spectra_tree_nodes_Nova_Accessible* (*spectra_tree_nodes_Nova_ValuePropertyMap_virtualfunctionMap_Nova_returnedNode)(spectra_tree_nodes_Nova_ValuePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Value*);
-spectra_tree_nodes_Nova_Type* (*spectra_tree_nodes_Nova_ValuePropertyMap_virtualfunctionMap_Nova_type)(spectra_tree_nodes_Nova_ValuePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Value*);
-char (*spectra_tree_nodes_Nova_ValuePropertyMap_virtualfunctionMap_Nova_isAssignable)(spectra_tree_nodes_Nova_ValuePropertyMap*, nova_exception_Nova_ExceptionData*, spectra_tree_nodes_Nova_Value*);
 };
 
 
@@ -16655,9 +13948,6 @@ nova_Nova_Object* (*nova_Nova_Object_virtual_static_Nova_default)(nova_Nova_Obje
 nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 example_Nova_Animal* (*example_Nova_AnimalFunctionMap_virtualfunctionMapAnimal_Nova_construct)(example_Nova_AnimalFunctionMap*, nova_exception_Nova_ExceptionData*);
-int (*example_Nova_AnimalFunctionMap_virtualfunctionMap_Nova_getNumLegs)(example_Nova_AnimalFunctionMap*, nova_exception_Nova_ExceptionData*, example_Nova_Animal*);
-int (*example_Nova_AnimalFunctionMap_virtualfunctionMap_Nova_getNumEyes)(example_Nova_AnimalFunctionMap*, nova_exception_Nova_ExceptionData*, example_Nova_Animal*);
-nova_Nova_String* (*example_Nova_AnimalFunctionMap_virtualfunctionMap_Nova_getDescription)(example_Nova_AnimalFunctionMap*, nova_exception_Nova_ExceptionData*, example_Nova_Animal*);
 };
 
 
@@ -16719,7 +14009,6 @@ nova_Interface_VTable itable;
 nova_Nova_Object* (*nova_Nova_Object_virtual_static_Nova_default)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
-void (*example_Nova_PersonFunctionMap_virtualfunctionMap_Nova_sayHello)(example_Nova_BodyBuilderFunctionMap*, nova_exception_Nova_ExceptionData*, example_Nova_BodyBuilder*);
 };
 
 
@@ -16784,9 +14073,6 @@ nova_Nova_Object* (*nova_Nova_Object_virtual_static_Nova_default)(nova_Nova_Obje
 nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 example_Nova_Dog* (*example_Nova_AnimalFunctionMap_virtualfunctionMapDog_Nova_construct)(example_Nova_DogFunctionMap*, nova_exception_Nova_ExceptionData*);
-int (*example_Nova_AnimalFunctionMap_virtualfunctionMap_Nova_getNumLegs)(example_Nova_DogFunctionMap*, nova_exception_Nova_ExceptionData*, example_Nova_Dog*);
-int (*example_Nova_AnimalFunctionMap_virtualfunctionMap_Nova_getNumEyes)(example_Nova_DogFunctionMap*, nova_exception_Nova_ExceptionData*, example_Nova_Dog*);
-nova_Nova_String* (*example_Nova_AnimalFunctionMap_virtualfunctionMap_Nova_getDescription)(example_Nova_DogFunctionMap*, nova_exception_Nova_ExceptionData*, example_Nova_Dog*);
 };
 
 
@@ -17089,7 +14375,6 @@ nova_Interface_VTable itable;
 nova_Nova_Object* (*nova_Nova_Object_virtual_static_Nova_default)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
-void (*example_Nova_PersonFunctionMap_virtualfunctionMap_Nova_sayHello)(example_Nova_PersonFunctionMap*, nova_exception_Nova_ExceptionData*, example_Nova_Person*);
 };
 
 
@@ -17211,9 +14496,6 @@ nova_Nova_Object* (*nova_Nova_Object_virtual_static_Nova_default)(nova_Nova_Obje
 nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 example_Nova_Spider* (*example_Nova_AnimalFunctionMap_virtualfunctionMapSpider_Nova_construct)(example_Nova_SpiderFunctionMap*, nova_exception_Nova_ExceptionData*);
-int (*example_Nova_AnimalFunctionMap_virtualfunctionMap_Nova_getNumLegs)(example_Nova_SpiderFunctionMap*, nova_exception_Nova_ExceptionData*, example_Nova_Spider*);
-int (*example_Nova_AnimalFunctionMap_virtualfunctionMap_Nova_getNumEyes)(example_Nova_SpiderFunctionMap*, nova_exception_Nova_ExceptionData*, example_Nova_Spider*);
-nova_Nova_String* (*example_Nova_AnimalFunctionMap_virtualfunctionMap_Nova_getDescription)(example_Nova_SpiderFunctionMap*, nova_exception_Nova_ExceptionData*, example_Nova_Spider*);
 };
 
 
@@ -17461,7 +14743,6 @@ nova_Interface_VTable itable;
 nova_Nova_Object* (*nova_Nova_Object_virtual_static_Nova_default)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
-void (*nova_thread_Nova_ThreadFunctionMap_virtualfunctionMap_Nova_run)(example_Nova_ThreadDemoImplementationFunctionMap*, nova_exception_Nova_ExceptionData*, example_Nova_ThreadDemoImplementation*);
 };
 
 
@@ -17613,7 +14894,6 @@ nova_Interface_VTable itable;
 nova_Nova_Object* (*nova_Nova_Object_virtual_static_Nova_default)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
-void (*nova_thread_Nova_ThreadFunctionMap_virtualfunctionMap_Nova_run)(example_network_Nova_ConnectionThreadFunctionMap*, nova_exception_Nova_ExceptionData*, example_network_Nova_ConnectionThread*);
 };
 
 
@@ -17645,7 +14925,6 @@ nova_Interface_VTable itable;
 nova_Nova_Object* (*nova_Nova_Object_virtual_static_Nova_default)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
-void (*nova_thread_Nova_ThreadFunctionMap_virtualfunctionMap_Nova_run)(example_network_Nova_OutputThreadFunctionMap*, nova_exception_Nova_ExceptionData*, example_network_Nova_OutputThread*);
 };
 
 
@@ -17769,7 +15048,6 @@ nova_Interface_VTable itable;
 nova_Nova_Object* (*nova_Nova_Object_virtual_static_Nova_default)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
-void (*nova_thread_Nova_ThreadFunctionMap_virtualfunctionMap_Nova_run)(stabilitytest_Nova_ClientThreadFunctionMap*, nova_exception_Nova_ExceptionData*, stabilitytest_Nova_ClientThread*);
 };
 
 
@@ -18126,7 +15404,6 @@ nova_Nova_Object* (*nova_Nova_Object_virtual_static_Nova_default)(nova_Nova_Obje
 nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 stabilitytest_Nova_PolymorphicSubClass* (*stabilitytest_Nova_PolymorphicSuperClassFunctionMap_virtualfunctionMapPolymorphicSubClass_Nova_construct)(stabilitytest_Nova_PolymorphicSubClassFunctionMap*, nova_exception_Nova_ExceptionData*);
-nova_Nova_String* (*stabilitytest_Nova_PolymorphicSuperClassFunctionMap_virtualfunctionMap_Nova_toString)(stabilitytest_Nova_PolymorphicSubClassFunctionMap*, nova_exception_Nova_ExceptionData*, stabilitytest_Nova_PolymorphicSubClass*);
 };
 
 
@@ -18137,7 +15414,6 @@ nova_Interface_VTable itable;
 nova_Nova_Object* (*nova_Nova_Object_virtual_static_Nova_default)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
-int (*stabilitytest_Nova_PolymorphicSuperClassPropertyMap_virtualfunctionMap_Nova_myProperty)(stabilitytest_Nova_PolymorphicSubClassPropertyMap*, nova_exception_Nova_ExceptionData*, stabilitytest_Nova_PolymorphicSubClass*);
 };
 
 
@@ -18160,7 +15436,6 @@ nova_Nova_Object* (*nova_Nova_Object_virtual_static_Nova_default)(nova_Nova_Obje
 nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 stabilitytest_Nova_PolymorphicSuperClass* (*stabilitytest_Nova_PolymorphicSuperClassFunctionMap_virtualfunctionMapPolymorphicSuperClass_Nova_construct)(stabilitytest_Nova_PolymorphicSuperClassFunctionMap*, nova_exception_Nova_ExceptionData*);
-nova_Nova_String* (*stabilitytest_Nova_PolymorphicSuperClassFunctionMap_virtualfunctionMap_Nova_toString)(stabilitytest_Nova_PolymorphicSuperClassFunctionMap*, nova_exception_Nova_ExceptionData*, stabilitytest_Nova_PolymorphicSuperClass*);
 };
 
 
@@ -18171,7 +15446,6 @@ nova_Interface_VTable itable;
 nova_Nova_Object* (*nova_Nova_Object_virtual_static_Nova_default)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
-int (*stabilitytest_Nova_PolymorphicSuperClassPropertyMap_virtualfunctionMap_Nova_myProperty)(stabilitytest_Nova_PolymorphicSuperClassPropertyMap*, nova_exception_Nova_ExceptionData*, stabilitytest_Nova_PolymorphicSuperClass*);
 };
 
 
@@ -18257,7 +15531,6 @@ nova_Interface_VTable itable;
 nova_Nova_Object* (*nova_Nova_Object_virtual_static_Nova_default)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
-void (*nova_thread_Nova_UncaughtExceptionHandlerFunctionMap_virtualfunctionMap_Nova_uncaughtException)(stabilitytest_Nova_StabilityExceptionHandlerFunctionMap*, nova_exception_Nova_ExceptionData*, stabilitytest_Nova_StabilityExceptionHandler*, nova_thread_Nova_Thread*, nova_exception_Nova_Exception*);
 };
 
 
@@ -18448,7 +15721,6 @@ nova_Interface_VTable itable;
 nova_Nova_Object* (*nova_Nova_Object_virtual_static_Nova_default)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
-void (*nova_thread_Nova_ThreadFunctionMap_virtualfunctionMap_Nova_run)(stabilitytest_Nova_ThreadImplementationFunctionMap*, nova_exception_Nova_ExceptionData*, stabilitytest_Nova_ThreadImplementation*);
 };
 
 
