@@ -1,5 +1,5 @@
 #include "VTableDeclarations.h"
-nova_Object_Extension_VTable nova_Object_Extension_VTable_val =
+nova_Nova_Object_VTable nova_Nova_Object_VTable_val =
 {
 0,
 {
@@ -45,7 +45,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_String_Extension_VTable nova_String_Extension_VTable_val =
+nova_Nova_String_VTable nova_Nova_String_VTable_val =
 {
 0,
 {
@@ -93,7 +93,7 @@ nova_Nova_String_Nova_substring,
 };
 
 
-nova_String_StringFunctionMap_Extension_VTable nova_String_StringFunctionMap_Extension_VTable_val =
+nova_Nova_StringFunctionMap_VTable nova_Nova_StringFunctionMap_VTable_val =
 {
 0,
 {
@@ -139,7 +139,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_String_StringPropertyMap_Extension_VTable nova_String_StringPropertyMap_Extension_VTable_val =
+nova_Nova_StringPropertyMap_VTable nova_Nova_StringPropertyMap_VTable_val =
 {
 0,
 {
@@ -185,7 +185,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_Substring_Extension_VTable nova_Substring_Extension_VTable_val =
+nova_Nova_Substring_VTable nova_Nova_Substring_VTable_val =
 {
 0,
 {
@@ -233,7 +233,7 @@ nova_Nova_Substring_Nova_substring,
 };
 
 
-nova_Substring_SubstringFunctionMap_Extension_VTable nova_Substring_SubstringFunctionMap_Extension_VTable_val =
+nova_Nova_SubstringFunctionMap_VTable nova_Nova_SubstringFunctionMap_VTable_val =
 {
 0,
 {
@@ -279,7 +279,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_Substring_SubstringPropertyMap_Extension_VTable nova_Substring_SubstringPropertyMap_Extension_VTable_val =
+nova_Nova_SubstringPropertyMap_VTable nova_Nova_SubstringPropertyMap_VTable_val =
 {
 0,
 {
@@ -325,7 +325,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_System_Extension_VTable nova_System_Extension_VTable_val =
+nova_Nova_System_VTable nova_Nova_System_VTable_val =
 {
 0,
 {
@@ -371,7 +371,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_System_SystemFunctionMap_Extension_VTable nova_System_SystemFunctionMap_Extension_VTable_val =
+nova_Nova_SystemFunctionMap_VTable nova_Nova_SystemFunctionMap_VTable_val =
 {
 0,
 {
@@ -417,7 +417,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_System_SystemPropertyMap_Extension_VTable nova_System_SystemPropertyMap_Extension_VTable_val =
+nova_Nova_SystemPropertyMap_VTable nova_Nova_SystemPropertyMap_VTable_val =
 {
 0,
 {
@@ -463,7 +463,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_ar_ImageTracker_Extension_VTable nova_ar_ImageTracker_Extension_VTable_val =
+nova_ar_Nova_ImageTracker_VTable nova_ar_Nova_ImageTracker_VTable_val =
 {
 0,
 {
@@ -509,7 +509,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_ar_ImageTracker_ImageTrackerFunctionMap_Extension_VTable nova_ar_ImageTracker_ImageTrackerFunctionMap_Extension_VTable_val =
+nova_ar_Nova_ImageTrackerFunctionMap_VTable nova_ar_Nova_ImageTrackerFunctionMap_VTable_val =
 {
 0,
 {
@@ -555,7 +555,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_ar_ImageTracker_ImageTrackerPropertyMap_Extension_VTable nova_ar_ImageTracker_ImageTrackerPropertyMap_Extension_VTable_val =
+nova_ar_Nova_ImageTrackerPropertyMap_VTable nova_ar_Nova_ImageTrackerPropertyMap_VTable_val =
 {
 0,
 {
@@ -601,7 +601,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_ar_TrackPoint_Extension_VTable nova_ar_TrackPoint_Extension_VTable_val =
+nova_ar_Nova_TrackPoint_VTable nova_ar_Nova_TrackPoint_VTable_val =
 {
 0,
 {
@@ -647,7 +647,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_ar_TrackPoint_TrackPointFunctionMap_Extension_VTable nova_ar_TrackPoint_TrackPointFunctionMap_Extension_VTable_val =
+nova_ar_Nova_TrackPointFunctionMap_VTable nova_ar_Nova_TrackPointFunctionMap_VTable_val =
 {
 0,
 {
@@ -693,7 +693,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_ar_TrackPoint_TrackPointPropertyMap_Extension_VTable nova_ar_TrackPoint_TrackPointPropertyMap_Extension_VTable_val =
+nova_ar_Nova_TrackPointPropertyMap_VTable nova_ar_Nova_TrackPointPropertyMap_VTable_val =
 {
 0,
 {
@@ -739,7 +739,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_database_DBConnector_Extension_VTable nova_database_DBConnector_Extension_VTable_val =
+nova_database_Nova_DBConnector_VTable nova_database_Nova_DBConnector_VTable_val =
 {
 0,
 {
@@ -785,7 +785,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_database_DBConnector_DBConnectorFunctionMap_Extension_VTable nova_database_DBConnector_DBConnectorFunctionMap_Extension_VTable_val =
+nova_database_Nova_DBConnectorFunctionMap_VTable nova_database_Nova_DBConnectorFunctionMap_VTable_val =
 {
 0,
 {
@@ -831,7 +831,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_database_DBConnector_DBConnectorPropertyMap_Extension_VTable nova_database_DBConnector_DBConnectorPropertyMap_Extension_VTable_val =
+nova_database_Nova_DBConnectorPropertyMap_VTable nova_database_Nova_DBConnectorPropertyMap_VTable_val =
 {
 0,
 {
@@ -877,7 +877,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_database_ResultSet_Extension_VTable nova_database_ResultSet_Extension_VTable_val =
+nova_database_Nova_ResultSet_VTable nova_database_Nova_ResultSet_VTable_val =
 {
 0,
 {
@@ -923,7 +923,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_database_ResultSet_ResultSetFunctionMap_Extension_VTable nova_database_ResultSet_ResultSetFunctionMap_Extension_VTable_val =
+nova_database_Nova_ResultSetFunctionMap_VTable nova_database_Nova_ResultSetFunctionMap_VTable_val =
 {
 0,
 {
@@ -969,7 +969,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_database_ResultSet_ResultSetPropertyMap_Extension_VTable nova_database_ResultSet_ResultSetPropertyMap_Extension_VTable_val =
+nova_database_Nova_ResultSetPropertyMap_VTable nova_database_Nova_ResultSetPropertyMap_VTable_val =
 {
 0,
 {
@@ -1015,7 +1015,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_datastruct_BinaryNode_Extension_VTable nova_datastruct_BinaryNode_Extension_VTable_val =
+nova_datastruct_Nova_BinaryNode_VTable nova_datastruct_Nova_BinaryNode_VTable_val =
 {
 0,
 {
@@ -1061,7 +1061,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_datastruct_BinaryNode_BinaryNodeFunctionMap_Extension_VTable nova_datastruct_BinaryNode_BinaryNodeFunctionMap_Extension_VTable_val =
+nova_datastruct_Nova_BinaryNodeFunctionMap_VTable nova_datastruct_Nova_BinaryNodeFunctionMap_VTable_val =
 {
 0,
 {
@@ -1107,7 +1107,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_datastruct_BinaryNode_BinaryNodePropertyMap_Extension_VTable nova_datastruct_BinaryNode_BinaryNodePropertyMap_Extension_VTable_val =
+nova_datastruct_Nova_BinaryNodePropertyMap_VTable nova_datastruct_Nova_BinaryNodePropertyMap_VTable_val =
 {
 0,
 {
@@ -1153,7 +1153,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_datastruct_BinaryTree_Extension_VTable nova_datastruct_BinaryTree_Extension_VTable_val =
+nova_datastruct_Nova_BinaryTree_VTable nova_datastruct_Nova_BinaryTree_VTable_val =
 {
 0,
 {
@@ -1199,7 +1199,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_datastruct_BinaryTree_BinaryTreeFunctionMap_Extension_VTable nova_datastruct_BinaryTree_BinaryTreeFunctionMap_Extension_VTable_val =
+nova_datastruct_Nova_BinaryTreeFunctionMap_VTable nova_datastruct_Nova_BinaryTreeFunctionMap_VTable_val =
 {
 0,
 {
@@ -1245,7 +1245,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_datastruct_BinaryTree_BinaryTreePropertyMap_Extension_VTable nova_datastruct_BinaryTree_BinaryTreePropertyMap_Extension_VTable_val =
+nova_datastruct_Nova_BinaryTreePropertyMap_VTable nova_datastruct_Nova_BinaryTreePropertyMap_VTable_val =
 {
 0,
 {
@@ -1291,7 +1291,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_datastruct_Bounds_Extension_VTable nova_datastruct_Bounds_Extension_VTable_val =
+nova_datastruct_Nova_Bounds_VTable nova_datastruct_Nova_Bounds_VTable_val =
 {
 0,
 {
@@ -1337,7 +1337,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_datastruct_Bounds_BoundsFunctionMap_Extension_VTable nova_datastruct_Bounds_BoundsFunctionMap_Extension_VTable_val =
+nova_datastruct_Nova_BoundsFunctionMap_VTable nova_datastruct_Nova_BoundsFunctionMap_VTable_val =
 {
 0,
 {
@@ -1383,7 +1383,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_datastruct_Bounds_BoundsPropertyMap_Extension_VTable nova_datastruct_Bounds_BoundsPropertyMap_Extension_VTable_val =
+nova_datastruct_Nova_BoundsPropertyMap_VTable nova_datastruct_Nova_BoundsPropertyMap_VTable_val =
 {
 0,
 {
@@ -1429,7 +1429,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_datastruct_Comparable_Extension_VTable nova_datastruct_Comparable_Extension_VTable_val =
+nova_datastruct_Nova_Comparable_VTable nova_datastruct_Nova_Comparable_VTable_val =
 {
 0,
 {
@@ -1473,53 +1473,7 @@ nova_datastruct_Comparable_Extension_VTable nova_datastruct_Comparable_Extension
 };
 
 
-nova_datastruct_Comparable_ComparableFunctionMap_Extension_VTable nova_datastruct_Comparable_ComparableFunctionMap_Extension_VTable_val =
-{
-0,
-{
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-},
-nova_Nova_Object_Nova_toString,
-nova_Nova_Object_Accessor_Nova_hashCodeLong,
-};
-
-
-nova_datastruct_Comparable_ComparablePropertyMap_Extension_VTable nova_datastruct_Comparable_ComparablePropertyMap_Extension_VTable_val =
+nova_datastruct_Nova_ComparableFunctionMap_VTable nova_datastruct_Nova_ComparableFunctionMap_VTable_val =
 {
 0,
 {
@@ -1565,7 +1519,53 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_datastruct_HashMap_Extension_VTable nova_datastruct_HashMap_Extension_VTable_val =
+nova_datastruct_Nova_ComparablePropertyMap_VTable nova_datastruct_Nova_ComparablePropertyMap_VTable_val =
+{
+0,
+{
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+},
+nova_Nova_Object_Nova_toString,
+nova_Nova_Object_Accessor_Nova_hashCodeLong,
+};
+
+
+nova_datastruct_Nova_HashMap_VTable nova_datastruct_Nova_HashMap_VTable_val =
 {
 0,
 {
@@ -1612,7 +1612,7 @@ nova_datastruct_Nova_HashMap_Nova_add,
 };
 
 
-nova_datastruct_HashMap_HashMapFunctionMap_Extension_VTable nova_datastruct_HashMap_HashMapFunctionMap_Extension_VTable_val =
+nova_datastruct_Nova_HashMapFunctionMap_VTable nova_datastruct_Nova_HashMapFunctionMap_VTable_val =
 {
 0,
 {
@@ -1658,7 +1658,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_datastruct_HashMap_HashMapPropertyMap_Extension_VTable nova_datastruct_HashMap_HashMapPropertyMap_Extension_VTable_val =
+nova_datastruct_Nova_HashMapPropertyMap_VTable nova_datastruct_Nova_HashMapPropertyMap_VTable_val =
 {
 0,
 {
@@ -1704,7 +1704,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_datastruct_HashSet_Extension_VTable nova_datastruct_HashSet_Extension_VTable_val =
+nova_datastruct_Nova_HashSet_VTable nova_datastruct_Nova_HashSet_VTable_val =
 {
 0,
 {
@@ -1750,7 +1750,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_datastruct_HashSet_HashSetFunctionMap_Extension_VTable nova_datastruct_HashSet_HashSetFunctionMap_Extension_VTable_val =
+nova_datastruct_Nova_HashSetFunctionMap_VTable nova_datastruct_Nova_HashSetFunctionMap_VTable_val =
 {
 0,
 {
@@ -1796,7 +1796,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_datastruct_HashSet_HashSetPropertyMap_Extension_VTable nova_datastruct_HashSet_HashSetPropertyMap_Extension_VTable_val =
+nova_datastruct_Nova_HashSetPropertyMap_VTable nova_datastruct_Nova_HashSetPropertyMap_VTable_val =
 {
 0,
 {
@@ -1842,7 +1842,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_datastruct_ImmutableHashMap_Extension_VTable nova_datastruct_ImmutableHashMap_Extension_VTable_val =
+nova_datastruct_Nova_ImmutableHashMap_VTable nova_datastruct_Nova_ImmutableHashMap_VTable_val =
 {
 0,
 {
@@ -1888,7 +1888,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_datastruct_ImmutableHashMap_ImmutableHashMapFunctionMap_Extension_VTable nova_datastruct_ImmutableHashMap_ImmutableHashMapFunctionMap_Extension_VTable_val =
+nova_datastruct_Nova_ImmutableHashMapFunctionMap_VTable nova_datastruct_Nova_ImmutableHashMapFunctionMap_VTable_val =
 {
 0,
 {
@@ -1934,7 +1934,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_datastruct_ImmutableHashMap_ImmutableHashMapPropertyMap_Extension_VTable nova_datastruct_ImmutableHashMap_ImmutableHashMapPropertyMap_Extension_VTable_val =
+nova_datastruct_Nova_ImmutableHashMapPropertyMap_VTable nova_datastruct_Nova_ImmutableHashMapPropertyMap_VTable_val =
 {
 0,
 {
@@ -1980,7 +1980,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_datastruct_Node_Extension_VTable nova_datastruct_Node_Extension_VTable_val =
+nova_datastruct_Nova_Node_VTable nova_datastruct_Nova_Node_VTable_val =
 {
 0,
 {
@@ -2026,7 +2026,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_datastruct_Node_NodeFunctionMap_Extension_VTable nova_datastruct_Node_NodeFunctionMap_Extension_VTable_val =
+nova_datastruct_Nova_NodeFunctionMap_VTable nova_datastruct_Nova_NodeFunctionMap_VTable_val =
 {
 0,
 {
@@ -2072,7 +2072,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_datastruct_Node_NodePropertyMap_Extension_VTable nova_datastruct_Node_NodePropertyMap_Extension_VTable_val =
+nova_datastruct_Nova_NodePropertyMap_VTable nova_datastruct_Nova_NodePropertyMap_VTable_val =
 {
 0,
 {
@@ -2118,7 +2118,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_datastruct_Pair_Extension_VTable nova_datastruct_Pair_Extension_VTable_val =
+nova_datastruct_Nova_Pair_VTable nova_datastruct_Nova_Pair_VTable_val =
 {
 0,
 {
@@ -2164,7 +2164,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_datastruct_Pair_PairFunctionMap_Extension_VTable nova_datastruct_Pair_PairFunctionMap_Extension_VTable_val =
+nova_datastruct_Nova_PairFunctionMap_VTable nova_datastruct_Nova_PairFunctionMap_VTable_val =
 {
 0,
 {
@@ -2210,7 +2210,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_datastruct_Pair_PairPropertyMap_Extension_VTable nova_datastruct_Pair_PairPropertyMap_Extension_VTable_val =
+nova_datastruct_Nova_PairPropertyMap_VTable nova_datastruct_Nova_PairPropertyMap_VTable_val =
 {
 0,
 {
@@ -2256,7 +2256,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_datastruct_ReversibleHashMap_Extension_VTable nova_datastruct_ReversibleHashMap_Extension_VTable_val =
+nova_datastruct_Nova_ReversibleHashMap_VTable nova_datastruct_Nova_ReversibleHashMap_VTable_val =
 {
 0,
 {
@@ -2303,7 +2303,7 @@ nova_datastruct_Nova_ReversibleHashMap_Nova_add,
 };
 
 
-nova_datastruct_ReversibleHashMap_ReversibleHashMapFunctionMap_Extension_VTable nova_datastruct_ReversibleHashMap_ReversibleHashMapFunctionMap_Extension_VTable_val =
+nova_datastruct_Nova_ReversibleHashMapFunctionMap_VTable nova_datastruct_Nova_ReversibleHashMapFunctionMap_VTable_val =
 {
 0,
 {
@@ -2349,7 +2349,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_datastruct_ReversibleHashMap_ReversibleHashMapPropertyMap_Extension_VTable nova_datastruct_ReversibleHashMap_ReversibleHashMapPropertyMap_Extension_VTable_val =
+nova_datastruct_Nova_ReversibleHashMapPropertyMap_VTable nova_datastruct_Nova_ReversibleHashMapPropertyMap_VTable_val =
 {
 0,
 {
@@ -2395,7 +2395,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_datastruct_Tree_Extension_VTable nova_datastruct_Tree_Extension_VTable_val =
+nova_datastruct_Nova_Tree_VTable nova_datastruct_Nova_Tree_VTable_val =
 {
 0,
 {
@@ -2441,7 +2441,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_datastruct_Tree_TreeFunctionMap_Extension_VTable nova_datastruct_Tree_TreeFunctionMap_Extension_VTable_val =
+nova_datastruct_Nova_TreeFunctionMap_VTable nova_datastruct_Nova_TreeFunctionMap_VTable_val =
 {
 0,
 {
@@ -2487,7 +2487,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_datastruct_Tree_TreePropertyMap_Extension_VTable nova_datastruct_Tree_TreePropertyMap_Extension_VTable_val =
+nova_datastruct_Nova_TreePropertyMap_VTable nova_datastruct_Nova_TreePropertyMap_VTable_val =
 {
 0,
 {
@@ -2533,7 +2533,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_datastruct_Tuple_Extension_VTable nova_datastruct_Tuple_Extension_VTable_val =
+nova_datastruct_Nova_Tuple_VTable nova_datastruct_Nova_Tuple_VTable_val =
 {
 0,
 {
@@ -2579,7 +2579,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_datastruct_Tuple_TupleFunctionMap_Extension_VTable nova_datastruct_Tuple_TupleFunctionMap_Extension_VTable_val =
+nova_datastruct_Nova_TupleFunctionMap_VTable nova_datastruct_Nova_TupleFunctionMap_VTable_val =
 {
 0,
 {
@@ -2625,7 +2625,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_datastruct_Tuple_TuplePropertyMap_Extension_VTable nova_datastruct_Tuple_TuplePropertyMap_Extension_VTable_val =
+nova_datastruct_Nova_TuplePropertyMap_VTable nova_datastruct_Nova_TuplePropertyMap_VTable_val =
 {
 0,
 {
@@ -2671,7 +2671,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_datastruct_Tuple2_Extension_VTable nova_datastruct_Tuple2_Extension_VTable_val =
+nova_datastruct_Nova_Tuple2_VTable nova_datastruct_Nova_Tuple2_VTable_val =
 {
 0,
 {
@@ -2717,7 +2717,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_datastruct_Tuple2_Tuple2FunctionMap_Extension_VTable nova_datastruct_Tuple2_Tuple2FunctionMap_Extension_VTable_val =
+nova_datastruct_Nova_Tuple2FunctionMap_VTable nova_datastruct_Nova_Tuple2FunctionMap_VTable_val =
 {
 0,
 {
@@ -2763,7 +2763,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_datastruct_Tuple2_Tuple2PropertyMap_Extension_VTable nova_datastruct_Tuple2_Tuple2PropertyMap_Extension_VTable_val =
+nova_datastruct_Nova_Tuple2PropertyMap_VTable nova_datastruct_Nova_Tuple2PropertyMap_VTable_val =
 {
 0,
 {
@@ -2809,7 +2809,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_datastruct_list_Array_Extension_VTable nova_datastruct_list_Array_Extension_VTable_val =
+nova_datastruct_list_Nova_Array_VTable nova_datastruct_list_Nova_Array_VTable_val =
 {
 0,
 {
@@ -2820,7 +2820,7 @@ nova_datastruct_list_Array_Extension_VTable nova_datastruct_list_Array_Extension
 0,
 0,
 (nova_datastruct_list_Nova_Array*(*)(nova_datastruct_list_Nova_List*, nova_exception_Nova_ExceptionData*))nova_datastruct_list_Nova_Array_Nova_toArray,
-(char(*)(nova_datastruct_list_Nova_List*, nova_exception_Nova_ExceptionData*, nova_Nova_Object*))nova_datastruct_list_Nova_List_0_Nova_contains,
+(char(*)(nova_datastruct_list_Nova_List*, nova_exception_Nova_ExceptionData*, nova_Nova_Object*))nova_datastruct_list_Nova_List_char_char_Nova_contains,
 (nova_datastruct_list_Nova_List*(*)(nova_datastruct_list_Nova_List*, nova_exception_Nova_ExceptionData*, nova_datastruct_list_Nova_List_closure172_Nova_func nova_datastruct_list_Nova_List_Nova_func, void* nova_datastruct_list_Nova_List_ref_Nova_func, void* func_context))nova_datastruct_list_Nova_Array_0_Nova_forEach,
 (nova_datastruct_list_Nova_List*(*)(nova_datastruct_list_Nova_List*, nova_exception_Nova_ExceptionData*, nova_datastruct_list_Nova_List_closure176_Nova_mapFunc nova_datastruct_list_Nova_List_Nova_mapFunc, void* nova_datastruct_list_Nova_List_ref_Nova_mapFunc, void* mapFunc_context))nova_datastruct_list_Nova_Array_0_Nova_map,
 (char(*)(nova_datastruct_list_Nova_List*, nova_exception_Nova_ExceptionData*, nova_datastruct_list_Nova_List_closure180_Nova_anyFunc nova_datastruct_list_Nova_List_Nova_anyFunc, void* nova_datastruct_list_Nova_List_ref_Nova_anyFunc, void* anyFunc_context))nova_datastruct_list_Nova_List_0_Nova_any,
@@ -2852,10 +2852,31 @@ nova_datastruct_list_Array_Extension_VTable nova_datastruct_list_Array_Extension
 },
 nova_datastruct_list_Nova_Array_Nova_toString,
 nova_Nova_Object_Accessor_Nova_hashCodeLong,
+nova_datastruct_list_Nova_Array_Nova_fillRemaining,
+nova_datastruct_list_Nova_Array_Nova_addUnique,
+nova_datastruct_list_Nova_Array_0_Nova_add,
+nova_datastruct_list_Nova_Array_1_Nova_add,
+nova_datastruct_list_Nova_Array_0_Nova_remove,
+nova_datastruct_list_Nova_Array_1_Nova_remove,
+nova_datastruct_list_Nova_Array_Nova_indexOf,
+nova_datastruct_list_Nova_Array_Nova_replace,
+nova_datastruct_list_Nova_Array_Nova_swap,
+nova_datastruct_list_Nova_Array_Nova_cloneData,
+nova_datastruct_list_Nova_Array_Nova_clone,
+nova_datastruct_list_Nova_Array_Nova_sumSize,
+nova_datastruct_list_Nova_Array_Nova_sum,
+nova_datastruct_list_Nova_Array_0_Nova_mergeSort,
+nova_datastruct_list_Nova_Array_0_Nova_quickSort,
+nova_datastruct_list_Nova_Array_1_Nova_mergeSort,
+nova_datastruct_list_Nova_Array_1_Nova_quickSort,
+nova_datastruct_list_Nova_Array_Nova_sort,
+nova_datastruct_list_Nova_Array_Nova_toImmutable,
+nova_datastruct_list_Nova_Array_Nova_get,
+nova_datastruct_list_Nova_Array_Nova_set,
 };
 
 
-nova_datastruct_list_Array_ArrayFunctionMap_Extension_VTable nova_datastruct_list_Array_ArrayFunctionMap_Extension_VTable_val =
+nova_datastruct_list_Nova_ArrayFunctionMap_VTable nova_datastruct_list_Nova_ArrayFunctionMap_VTable_val =
 {
 0,
 {
@@ -2902,7 +2923,7 @@ nova_datastruct_list_Nova_ArrayFunctionMap_functionMapArrayFunctionMap0_Nova_con
 };
 
 
-nova_datastruct_list_Array_ArrayPropertyMap_Extension_VTable nova_datastruct_list_Array_ArrayPropertyMap_Extension_VTable_val =
+nova_datastruct_list_Nova_ArrayPropertyMap_VTable nova_datastruct_list_Nova_ArrayPropertyMap_VTable_val =
 {
 0,
 {
@@ -2948,7 +2969,342 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_datastruct_list_ArrayIterator_Extension_VTable nova_datastruct_list_ArrayIterator_Extension_VTable_val =
+nova_datastruct_list_Double_Nova_Array1Double_VTable nova_datastruct_list_Double_Nova_Array1Double_VTable_val =
+{
+0,
+{
+0,
+0,
+(nova_datastruct_list_Nova_Iterator*(*)(nova_datastruct_list_Nova_Iterable*, nova_exception_Nova_ExceptionData*))nova_datastruct_list_Nova_Array_Accessorfunc_Nova_iterator,
+(nova_datastruct_list_Nova_Iterator*(*)(nova_datastruct_list_Nova_Iterable*, nova_exception_Nova_ExceptionData*, nova_datastruct_list_Nova_Iterator*))nova_datastruct_list_Nova_List_Mutatorfunc_Nova_iterator,
+0,
+0,
+(nova_datastruct_list_Nova_Array*(*)(nova_datastruct_list_Nova_List*, nova_exception_Nova_ExceptionData*))nova_datastruct_list_Double_Nova_Array1Double_Nova_toArray,
+(char(*)(nova_datastruct_list_Nova_List*, nova_exception_Nova_ExceptionData*, nova_Nova_Object*))nova_datastruct_list_Nova_List_char_char_Nova_contains,
+(nova_datastruct_list_Nova_List*(*)(nova_datastruct_list_Nova_List*, nova_exception_Nova_ExceptionData*, nova_datastruct_list_Nova_List_closure172_Nova_func nova_datastruct_list_Nova_List_Nova_func, void* nova_datastruct_list_Nova_List_ref_Nova_func, void* func_context))nova_datastruct_list_Double_Nova_Array1Double_Nova_forEach,
+(nova_datastruct_list_Nova_List*(*)(nova_datastruct_list_Nova_List*, nova_exception_Nova_ExceptionData*, nova_datastruct_list_Nova_List_closure176_Nova_mapFunc nova_datastruct_list_Nova_List_Nova_mapFunc, void* nova_datastruct_list_Nova_List_ref_Nova_mapFunc, void* mapFunc_context))nova_datastruct_list_Nova_Array_0_Nova_map,
+(char(*)(nova_datastruct_list_Nova_List*, nova_exception_Nova_ExceptionData*, nova_datastruct_list_Nova_List_closure180_Nova_anyFunc nova_datastruct_list_Nova_List_Nova_anyFunc, void* nova_datastruct_list_Nova_List_ref_Nova_anyFunc, void* anyFunc_context))nova_datastruct_list_Nova_List_0_Nova_any,
+(char(*)(nova_datastruct_list_Nova_List*, nova_exception_Nova_ExceptionData*, nova_datastruct_list_Nova_List_closure184_Nova_allFunc nova_datastruct_list_Nova_List_Nova_allFunc, void* nova_datastruct_list_Nova_List_ref_Nova_allFunc, void* allFunc_context, int))nova_datastruct_list_Nova_List_0_Nova_all,
+(nova_datastruct_list_Nova_List*(*)(nova_datastruct_list_Nova_List*, nova_exception_Nova_ExceptionData*, nova_datastruct_list_Nova_List_closure188_Nova_filterFunc nova_datastruct_list_Nova_List_Nova_filterFunc, void* nova_datastruct_list_Nova_List_ref_Nova_filterFunc, void* filterFunc_context))nova_datastruct_list_Double_Nova_Array1Double_Nova_filter,
+(nova_datastruct_list_Nova_List*(*)(nova_datastruct_list_Nova_List*, nova_exception_Nova_ExceptionData*, int))nova_datastruct_list_Double_Nova_Array1Double_Nova_take,
+(nova_datastruct_list_Nova_List*(*)(nova_datastruct_list_Nova_List*, nova_exception_Nova_ExceptionData*, int))nova_datastruct_list_Double_Nova_Array1Double_Nova_skip,
+(nova_Nova_Object*(*)(nova_datastruct_list_Nova_List*, nova_exception_Nova_ExceptionData*, nova_datastruct_list_Nova_List_closure200_Nova_func nova_datastruct_list_Nova_List_Nova_func, void* nova_datastruct_list_Nova_List_ref_Nova_func, void* func_context))nova_datastruct_list_Nova_List_0_Nova_firstWhere,
+(nova_datastruct_list_Nova_List*(*)(nova_datastruct_list_Nova_List*, nova_exception_Nova_ExceptionData*))nova_datastruct_list_Double_Nova_Array1Double_Nova_reverse,
+(nova_Nova_String*(*)(nova_datastruct_list_Nova_List*, nova_exception_Nova_ExceptionData*, nova_Nova_String*))nova_datastruct_list_Nova_List_Nova_join,
+(int(*)(nova_datastruct_list_Nova_List*, nova_exception_Nova_ExceptionData*))nova_datastruct_list_Nova_Array_Accessorfunc_Nova_count,
+(int(*)(nova_datastruct_list_Nova_List*, nova_exception_Nova_ExceptionData*, int))nova_datastruct_list_Nova_Array_Mutatorfunc_Nova_count,
+(nova_Nova_Object*(*)(nova_datastruct_list_Nova_List*, nova_exception_Nova_ExceptionData*))nova_datastruct_list_Nova_Array_Accessorfunc_Nova_first,
+(nova_Nova_Object*(*)(nova_datastruct_list_Nova_List*, nova_exception_Nova_ExceptionData*, nova_Nova_Object*))nova_datastruct_list_Double_Nova_Array1Double_Mutatorfunc_Nova_first,
+(nova_Nova_Object*(*)(nova_datastruct_list_Nova_List*, nova_exception_Nova_ExceptionData*))nova_datastruct_list_Nova_Array_Accessorfunc_Nova_last,
+(nova_Nova_Object*(*)(nova_datastruct_list_Nova_List*, nova_exception_Nova_ExceptionData*, nova_Nova_Object*))nova_datastruct_list_Double_Nova_Array1Double_Mutatorfunc_Nova_last,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+(nova_Nova_Object*(*)(nova_operators_Nova_PlusEqualsOperator*, nova_exception_Nova_ExceptionData*, nova_Nova_Object*))nova_datastruct_list_Nova_Array_Nova_plusEquals,
+(nova_Nova_Object*(*)(nova_operators_Nova_PlusOperator*, nova_exception_Nova_ExceptionData*, nova_Nova_Object*))nova_datastruct_list_Nova_Array_0_Nova_plus,
+0,
+0,
+},
+nova_datastruct_list_Double_Nova_Array1Double_Nova_toString,
+nova_Nova_Object_Accessor_Nova_hashCodeLong,
+nova_datastruct_list_Double_Nova_Array1Double_Nova_fillRemaining,
+nova_datastruct_list_Double_Nova_Array1Double_Nova_addUnique,
+nova_datastruct_list_Double_Nova_Array1Double_0_Nova_add,
+nova_datastruct_list_Double_Nova_Array1Double_0_Nova_add,
+nova_datastruct_list_Double_Nova_Array1Double_0_Nova_remove,
+nova_datastruct_list_Double_Nova_Array1Double_0_Nova_remove,
+nova_datastruct_list_Double_Nova_Array1Double_Nova_indexOf,
+nova_datastruct_list_Double_Nova_Array1Double_Nova_replace,
+nova_datastruct_list_Double_Nova_Array1Double_Nova_swap,
+nova_datastruct_list_Double_Nova_Array1Double_Nova_cloneData,
+nova_datastruct_list_Double_Nova_Array1Double_Nova_clone,
+nova_datastruct_list_Double_Nova_Array1Double_Nova_sumSize,
+nova_datastruct_list_Double_Nova_Array1Double_Nova_sum,
+nova_datastruct_list_Double_Nova_Array1Double_0_Nova_mergeSort,
+nova_datastruct_list_Double_Nova_Array1Double_0_Nova_quickSort,
+nova_datastruct_list_Double_Nova_Array1Double_0_Nova_mergeSort,
+nova_datastruct_list_Double_Nova_Array1Double_0_Nova_quickSort,
+nova_datastruct_list_Double_Nova_Array1Double_Nova_sort,
+nova_datastruct_list_Double_Nova_Array1Double_Nova_toImmutable,
+nova_datastruct_list_Double_Nova_Array1Double_Nova_get,
+nova_datastruct_list_Double_Nova_Array1Double_Nova_set,
+};
+
+
+nova_datastruct_list_Char_Nova_Array1Char_VTable nova_datastruct_list_Char_Nova_Array1Char_VTable_val =
+{
+0,
+{
+0,
+0,
+(nova_datastruct_list_Nova_Iterator*(*)(nova_datastruct_list_Nova_Iterable*, nova_exception_Nova_ExceptionData*))nova_datastruct_list_Nova_Array_Accessorfunc_Nova_iterator,
+(nova_datastruct_list_Nova_Iterator*(*)(nova_datastruct_list_Nova_Iterable*, nova_exception_Nova_ExceptionData*, nova_datastruct_list_Nova_Iterator*))nova_datastruct_list_Nova_List_Mutatorfunc_Nova_iterator,
+0,
+0,
+(nova_datastruct_list_Nova_Array*(*)(nova_datastruct_list_Nova_List*, nova_exception_Nova_ExceptionData*))nova_datastruct_list_Char_Nova_Array1Char_Nova_toArray,
+(char(*)(nova_datastruct_list_Nova_List*, nova_exception_Nova_ExceptionData*, nova_Nova_Object*))nova_datastruct_list_Nova_List_char_char_Nova_contains,
+(nova_datastruct_list_Nova_List*(*)(nova_datastruct_list_Nova_List*, nova_exception_Nova_ExceptionData*, nova_datastruct_list_Nova_List_closure172_Nova_func nova_datastruct_list_Nova_List_Nova_func, void* nova_datastruct_list_Nova_List_ref_Nova_func, void* func_context))nova_datastruct_list_Char_Nova_Array1Char_Nova_forEach,
+(nova_datastruct_list_Nova_List*(*)(nova_datastruct_list_Nova_List*, nova_exception_Nova_ExceptionData*, nova_datastruct_list_Nova_List_closure176_Nova_mapFunc nova_datastruct_list_Nova_List_Nova_mapFunc, void* nova_datastruct_list_Nova_List_ref_Nova_mapFunc, void* mapFunc_context))nova_datastruct_list_Nova_Array_0_Nova_map,
+(char(*)(nova_datastruct_list_Nova_List*, nova_exception_Nova_ExceptionData*, nova_datastruct_list_Nova_List_closure180_Nova_anyFunc nova_datastruct_list_Nova_List_Nova_anyFunc, void* nova_datastruct_list_Nova_List_ref_Nova_anyFunc, void* anyFunc_context))nova_datastruct_list_Nova_List_0_Nova_any,
+(char(*)(nova_datastruct_list_Nova_List*, nova_exception_Nova_ExceptionData*, nova_datastruct_list_Nova_List_closure184_Nova_allFunc nova_datastruct_list_Nova_List_Nova_allFunc, void* nova_datastruct_list_Nova_List_ref_Nova_allFunc, void* allFunc_context, int))nova_datastruct_list_Nova_List_0_Nova_all,
+(nova_datastruct_list_Nova_List*(*)(nova_datastruct_list_Nova_List*, nova_exception_Nova_ExceptionData*, nova_datastruct_list_Nova_List_closure188_Nova_filterFunc nova_datastruct_list_Nova_List_Nova_filterFunc, void* nova_datastruct_list_Nova_List_ref_Nova_filterFunc, void* filterFunc_context))nova_datastruct_list_Char_Nova_Array1Char_Nova_filter,
+(nova_datastruct_list_Nova_List*(*)(nova_datastruct_list_Nova_List*, nova_exception_Nova_ExceptionData*, int))nova_datastruct_list_Char_Nova_Array1Char_Nova_take,
+(nova_datastruct_list_Nova_List*(*)(nova_datastruct_list_Nova_List*, nova_exception_Nova_ExceptionData*, int))nova_datastruct_list_Char_Nova_Array1Char_Nova_skip,
+(nova_Nova_Object*(*)(nova_datastruct_list_Nova_List*, nova_exception_Nova_ExceptionData*, nova_datastruct_list_Nova_List_closure200_Nova_func nova_datastruct_list_Nova_List_Nova_func, void* nova_datastruct_list_Nova_List_ref_Nova_func, void* func_context))nova_datastruct_list_Nova_List_0_Nova_firstWhere,
+(nova_datastruct_list_Nova_List*(*)(nova_datastruct_list_Nova_List*, nova_exception_Nova_ExceptionData*))nova_datastruct_list_Char_Nova_Array1Char_Nova_reverse,
+(nova_Nova_String*(*)(nova_datastruct_list_Nova_List*, nova_exception_Nova_ExceptionData*, nova_Nova_String*))nova_datastruct_list_Nova_List_Nova_join,
+(int(*)(nova_datastruct_list_Nova_List*, nova_exception_Nova_ExceptionData*))nova_datastruct_list_Nova_Array_Accessorfunc_Nova_count,
+(int(*)(nova_datastruct_list_Nova_List*, nova_exception_Nova_ExceptionData*, int))nova_datastruct_list_Nova_Array_Mutatorfunc_Nova_count,
+(nova_Nova_Object*(*)(nova_datastruct_list_Nova_List*, nova_exception_Nova_ExceptionData*))nova_datastruct_list_Nova_Array_Accessorfunc_Nova_first,
+(nova_Nova_Object*(*)(nova_datastruct_list_Nova_List*, nova_exception_Nova_ExceptionData*, nova_Nova_Object*))nova_datastruct_list_Char_Nova_Array1Char_Mutatorfunc_Nova_first,
+(nova_Nova_Object*(*)(nova_datastruct_list_Nova_List*, nova_exception_Nova_ExceptionData*))nova_datastruct_list_Nova_Array_Accessorfunc_Nova_last,
+(nova_Nova_Object*(*)(nova_datastruct_list_Nova_List*, nova_exception_Nova_ExceptionData*, nova_Nova_Object*))nova_datastruct_list_Char_Nova_Array1Char_Mutatorfunc_Nova_last,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+(nova_Nova_Object*(*)(nova_operators_Nova_PlusEqualsOperator*, nova_exception_Nova_ExceptionData*, nova_Nova_Object*))nova_datastruct_list_Nova_Array_Nova_plusEquals,
+(nova_Nova_Object*(*)(nova_operators_Nova_PlusOperator*, nova_exception_Nova_ExceptionData*, nova_Nova_Object*))nova_datastruct_list_Nova_Array_0_Nova_plus,
+0,
+0,
+},
+nova_datastruct_list_Char_Nova_Array1Char_Nova_toString,
+nova_Nova_Object_Accessor_Nova_hashCodeLong,
+nova_datastruct_list_Char_Nova_Array1Char_Nova_fillRemaining,
+nova_datastruct_list_Char_Nova_Array1Char_Nova_addUnique,
+nova_datastruct_list_Char_Nova_Array1Char_0_Nova_add,
+nova_datastruct_list_Char_Nova_Array1Char_0_Nova_add,
+nova_datastruct_list_Char_Nova_Array1Char_0_Nova_remove,
+nova_datastruct_list_Char_Nova_Array1Char_0_Nova_remove,
+nova_datastruct_list_Char_Nova_Array1Char_Nova_indexOf,
+nova_datastruct_list_Char_Nova_Array1Char_Nova_replace,
+nova_datastruct_list_Char_Nova_Array1Char_Nova_swap,
+nova_datastruct_list_Char_Nova_Array1Char_Nova_cloneData,
+nova_datastruct_list_Char_Nova_Array1Char_Nova_clone,
+nova_datastruct_list_Char_Nova_Array1Char_Nova_sumSize,
+nova_datastruct_list_Char_Nova_Array1Char_Nova_sum,
+nova_datastruct_list_Char_Nova_Array1Char_0_Nova_mergeSort,
+nova_datastruct_list_Char_Nova_Array1Char_0_Nova_quickSort,
+nova_datastruct_list_Char_Nova_Array1Char_0_Nova_mergeSort,
+nova_datastruct_list_Char_Nova_Array1Char_0_Nova_quickSort,
+nova_datastruct_list_Char_Nova_Array1Char_Nova_sort,
+nova_datastruct_list_Char_Nova_Array1Char_Nova_toImmutable,
+nova_datastruct_list_Char_Nova_Array1Char_Nova_get,
+nova_datastruct_list_Char_Nova_Array1Char_Nova_set,
+};
+
+
+nova_datastruct_list_Int_Nova_Array1Int_VTable nova_datastruct_list_Int_Nova_Array1Int_VTable_val =
+{
+0,
+{
+0,
+0,
+(nova_datastruct_list_Nova_Iterator*(*)(nova_datastruct_list_Nova_Iterable*, nova_exception_Nova_ExceptionData*))nova_datastruct_list_Nova_Array_Accessorfunc_Nova_iterator,
+(nova_datastruct_list_Nova_Iterator*(*)(nova_datastruct_list_Nova_Iterable*, nova_exception_Nova_ExceptionData*, nova_datastruct_list_Nova_Iterator*))nova_datastruct_list_Nova_List_Mutatorfunc_Nova_iterator,
+0,
+0,
+(nova_datastruct_list_Nova_Array*(*)(nova_datastruct_list_Nova_List*, nova_exception_Nova_ExceptionData*))nova_datastruct_list_Int_Nova_Array1Int_Nova_toArray,
+(char(*)(nova_datastruct_list_Nova_List*, nova_exception_Nova_ExceptionData*, nova_Nova_Object*))nova_datastruct_list_Nova_List_char_char_Nova_contains,
+(nova_datastruct_list_Nova_List*(*)(nova_datastruct_list_Nova_List*, nova_exception_Nova_ExceptionData*, nova_datastruct_list_Nova_List_closure172_Nova_func nova_datastruct_list_Nova_List_Nova_func, void* nova_datastruct_list_Nova_List_ref_Nova_func, void* func_context))nova_datastruct_list_Int_Nova_Array1Int_Nova_forEach,
+(nova_datastruct_list_Nova_List*(*)(nova_datastruct_list_Nova_List*, nova_exception_Nova_ExceptionData*, nova_datastruct_list_Nova_List_closure176_Nova_mapFunc nova_datastruct_list_Nova_List_Nova_mapFunc, void* nova_datastruct_list_Nova_List_ref_Nova_mapFunc, void* mapFunc_context))nova_datastruct_list_Int_Nova_Array1Int_Nova_map,
+(char(*)(nova_datastruct_list_Nova_List*, nova_exception_Nova_ExceptionData*, nova_datastruct_list_Nova_List_closure180_Nova_anyFunc nova_datastruct_list_Nova_List_Nova_anyFunc, void* nova_datastruct_list_Nova_List_ref_Nova_anyFunc, void* anyFunc_context))nova_datastruct_list_Nova_List_0_Nova_any,
+(char(*)(nova_datastruct_list_Nova_List*, nova_exception_Nova_ExceptionData*, nova_datastruct_list_Nova_List_closure184_Nova_allFunc nova_datastruct_list_Nova_List_Nova_allFunc, void* nova_datastruct_list_Nova_List_ref_Nova_allFunc, void* allFunc_context, int))nova_datastruct_list_Nova_List_0_Nova_all,
+(nova_datastruct_list_Nova_List*(*)(nova_datastruct_list_Nova_List*, nova_exception_Nova_ExceptionData*, nova_datastruct_list_Nova_List_closure188_Nova_filterFunc nova_datastruct_list_Nova_List_Nova_filterFunc, void* nova_datastruct_list_Nova_List_ref_Nova_filterFunc, void* filterFunc_context))nova_datastruct_list_Int_Nova_Array1Int_Nova_filter,
+(nova_datastruct_list_Nova_List*(*)(nova_datastruct_list_Nova_List*, nova_exception_Nova_ExceptionData*, int))nova_datastruct_list_Int_Nova_Array1Int_Nova_take,
+(nova_datastruct_list_Nova_List*(*)(nova_datastruct_list_Nova_List*, nova_exception_Nova_ExceptionData*, int))nova_datastruct_list_Int_Nova_Array1Int_Nova_skip,
+(nova_Nova_Object*(*)(nova_datastruct_list_Nova_List*, nova_exception_Nova_ExceptionData*, nova_datastruct_list_Nova_List_closure200_Nova_func nova_datastruct_list_Nova_List_Nova_func, void* nova_datastruct_list_Nova_List_ref_Nova_func, void* func_context))nova_datastruct_list_Nova_List_0_Nova_firstWhere,
+(nova_datastruct_list_Nova_List*(*)(nova_datastruct_list_Nova_List*, nova_exception_Nova_ExceptionData*))nova_datastruct_list_Int_Nova_Array1Int_Nova_reverse,
+(nova_Nova_String*(*)(nova_datastruct_list_Nova_List*, nova_exception_Nova_ExceptionData*, nova_Nova_String*))nova_datastruct_list_Nova_List_Nova_join,
+(int(*)(nova_datastruct_list_Nova_List*, nova_exception_Nova_ExceptionData*))nova_datastruct_list_Nova_Array_Accessorfunc_Nova_count,
+(int(*)(nova_datastruct_list_Nova_List*, nova_exception_Nova_ExceptionData*, int))nova_datastruct_list_Nova_Array_Mutatorfunc_Nova_count,
+(nova_Nova_Object*(*)(nova_datastruct_list_Nova_List*, nova_exception_Nova_ExceptionData*))nova_datastruct_list_Nova_Array_Accessorfunc_Nova_first,
+(nova_Nova_Object*(*)(nova_datastruct_list_Nova_List*, nova_exception_Nova_ExceptionData*, nova_Nova_Object*))nova_datastruct_list_Int_Nova_Array1Int_Mutatorfunc_Nova_first,
+(nova_Nova_Object*(*)(nova_datastruct_list_Nova_List*, nova_exception_Nova_ExceptionData*))nova_datastruct_list_Nova_Array_Accessorfunc_Nova_last,
+(nova_Nova_Object*(*)(nova_datastruct_list_Nova_List*, nova_exception_Nova_ExceptionData*, nova_Nova_Object*))nova_datastruct_list_Int_Nova_Array1Int_Mutatorfunc_Nova_last,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+(nova_Nova_Object*(*)(nova_operators_Nova_PlusEqualsOperator*, nova_exception_Nova_ExceptionData*, nova_Nova_Object*))nova_datastruct_list_Int_Nova_Array1Int_Nova_plusEquals,
+(nova_Nova_Object*(*)(nova_operators_Nova_PlusOperator*, nova_exception_Nova_ExceptionData*, nova_Nova_Object*))nova_datastruct_list_Int_Nova_Array1Int_Nova_plus,
+0,
+0,
+},
+nova_datastruct_list_Int_Nova_Array1Int_Nova_toString,
+nova_Nova_Object_Accessor_Nova_hashCodeLong,
+nova_datastruct_list_Int_Nova_Array1Int_Nova_fillRemaining,
+nova_datastruct_list_Int_Nova_Array1Int_Nova_addUnique,
+nova_datastruct_list_Int_Nova_Array1Int_0_Nova_add,
+nova_datastruct_list_Int_Nova_Array1Int_0_Nova_add,
+nova_datastruct_list_Int_Nova_Array1Int_Nova_remove,
+nova_datastruct_list_Nova_Array_1_Nova_remove,
+nova_datastruct_list_Int_Nova_Array1Int_Nova_indexOf,
+nova_datastruct_list_Int_Nova_Array1Int_Nova_replace,
+nova_datastruct_list_Int_Nova_Array1Int_Nova_swap,
+nova_datastruct_list_Int_Nova_Array1Int_Nova_cloneData,
+nova_datastruct_list_Int_Nova_Array1Int_Nova_clone,
+nova_datastruct_list_Int_Nova_Array1Int_Nova_sumSize,
+nova_datastruct_list_Int_Nova_Array1Int_Nova_sum,
+nova_datastruct_list_Int_Nova_Array1Int_0_Nova_mergeSort,
+nova_datastruct_list_Int_Nova_Array1Int_0_Nova_quickSort,
+nova_datastruct_list_Int_Nova_Array1Int_0_Nova_mergeSort,
+nova_datastruct_list_Int_Nova_Array1Int_0_Nova_quickSort,
+nova_datastruct_list_Int_Nova_Array1Int_Nova_sort,
+nova_datastruct_list_Int_Nova_Array1Int_Nova_toImmutable,
+nova_datastruct_list_Int_Nova_Array1Int_Nova_get,
+nova_datastruct_list_Int_Nova_Array1Int_Nova_set,
+};
+
+
+nova_datastruct_list_Byte_Nova_Array1Byte_VTable nova_datastruct_list_Byte_Nova_Array1Byte_VTable_val =
+{
+0,
+{
+0,
+0,
+(nova_datastruct_list_Nova_Iterator*(*)(nova_datastruct_list_Nova_Iterable*, nova_exception_Nova_ExceptionData*))nova_datastruct_list_Nova_Array_Accessorfunc_Nova_iterator,
+(nova_datastruct_list_Nova_Iterator*(*)(nova_datastruct_list_Nova_Iterable*, nova_exception_Nova_ExceptionData*, nova_datastruct_list_Nova_Iterator*))nova_datastruct_list_Nova_List_Mutatorfunc_Nova_iterator,
+0,
+0,
+(nova_datastruct_list_Nova_Array*(*)(nova_datastruct_list_Nova_List*, nova_exception_Nova_ExceptionData*))nova_datastruct_list_Byte_Nova_Array1Byte_Nova_toArray,
+(char(*)(nova_datastruct_list_Nova_List*, nova_exception_Nova_ExceptionData*, nova_Nova_Object*))nova_datastruct_list_Nova_List_char_char_Nova_contains,
+(nova_datastruct_list_Nova_List*(*)(nova_datastruct_list_Nova_List*, nova_exception_Nova_ExceptionData*, nova_datastruct_list_Nova_List_closure172_Nova_func nova_datastruct_list_Nova_List_Nova_func, void* nova_datastruct_list_Nova_List_ref_Nova_func, void* func_context))nova_datastruct_list_Byte_Nova_Array1Byte_Nova_forEach,
+(nova_datastruct_list_Nova_List*(*)(nova_datastruct_list_Nova_List*, nova_exception_Nova_ExceptionData*, nova_datastruct_list_Nova_List_closure176_Nova_mapFunc nova_datastruct_list_Nova_List_Nova_mapFunc, void* nova_datastruct_list_Nova_List_ref_Nova_mapFunc, void* mapFunc_context))nova_datastruct_list_Byte_Nova_Array1Byte_Nova_map,
+(char(*)(nova_datastruct_list_Nova_List*, nova_exception_Nova_ExceptionData*, nova_datastruct_list_Nova_List_closure180_Nova_anyFunc nova_datastruct_list_Nova_List_Nova_anyFunc, void* nova_datastruct_list_Nova_List_ref_Nova_anyFunc, void* anyFunc_context))nova_datastruct_list_Nova_List_0_Nova_any,
+(char(*)(nova_datastruct_list_Nova_List*, nova_exception_Nova_ExceptionData*, nova_datastruct_list_Nova_List_closure184_Nova_allFunc nova_datastruct_list_Nova_List_Nova_allFunc, void* nova_datastruct_list_Nova_List_ref_Nova_allFunc, void* allFunc_context, int))nova_datastruct_list_Nova_List_0_Nova_all,
+(nova_datastruct_list_Nova_List*(*)(nova_datastruct_list_Nova_List*, nova_exception_Nova_ExceptionData*, nova_datastruct_list_Nova_List_closure188_Nova_filterFunc nova_datastruct_list_Nova_List_Nova_filterFunc, void* nova_datastruct_list_Nova_List_ref_Nova_filterFunc, void* filterFunc_context))nova_datastruct_list_Byte_Nova_Array1Byte_Nova_filter,
+(nova_datastruct_list_Nova_List*(*)(nova_datastruct_list_Nova_List*, nova_exception_Nova_ExceptionData*, int))nova_datastruct_list_Byte_Nova_Array1Byte_Nova_take,
+(nova_datastruct_list_Nova_List*(*)(nova_datastruct_list_Nova_List*, nova_exception_Nova_ExceptionData*, int))nova_datastruct_list_Byte_Nova_Array1Byte_Nova_skip,
+(nova_Nova_Object*(*)(nova_datastruct_list_Nova_List*, nova_exception_Nova_ExceptionData*, nova_datastruct_list_Nova_List_closure200_Nova_func nova_datastruct_list_Nova_List_Nova_func, void* nova_datastruct_list_Nova_List_ref_Nova_func, void* func_context))nova_datastruct_list_Nova_List_0_Nova_firstWhere,
+(nova_datastruct_list_Nova_List*(*)(nova_datastruct_list_Nova_List*, nova_exception_Nova_ExceptionData*))nova_datastruct_list_Byte_Nova_Array1Byte_Nova_reverse,
+(nova_Nova_String*(*)(nova_datastruct_list_Nova_List*, nova_exception_Nova_ExceptionData*, nova_Nova_String*))nova_datastruct_list_Nova_List_Nova_join,
+(int(*)(nova_datastruct_list_Nova_List*, nova_exception_Nova_ExceptionData*))nova_datastruct_list_Nova_Array_Accessorfunc_Nova_count,
+(int(*)(nova_datastruct_list_Nova_List*, nova_exception_Nova_ExceptionData*, int))nova_datastruct_list_Nova_Array_Mutatorfunc_Nova_count,
+(nova_Nova_Object*(*)(nova_datastruct_list_Nova_List*, nova_exception_Nova_ExceptionData*))nova_datastruct_list_Nova_Array_Accessorfunc_Nova_first,
+(nova_Nova_Object*(*)(nova_datastruct_list_Nova_List*, nova_exception_Nova_ExceptionData*, nova_Nova_Object*))nova_datastruct_list_Byte_Nova_Array1Byte_Mutatorfunc_Nova_first,
+(nova_Nova_Object*(*)(nova_datastruct_list_Nova_List*, nova_exception_Nova_ExceptionData*))nova_datastruct_list_Nova_Array_Accessorfunc_Nova_last,
+(nova_Nova_Object*(*)(nova_datastruct_list_Nova_List*, nova_exception_Nova_ExceptionData*, nova_Nova_Object*))nova_datastruct_list_Byte_Nova_Array1Byte_Mutatorfunc_Nova_last,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+(nova_Nova_Object*(*)(nova_operators_Nova_PlusEqualsOperator*, nova_exception_Nova_ExceptionData*, nova_Nova_Object*))nova_datastruct_list_Byte_Nova_Array1Byte_Nova_plusEquals,
+(nova_Nova_Object*(*)(nova_operators_Nova_PlusOperator*, nova_exception_Nova_ExceptionData*, nova_Nova_Object*))nova_datastruct_list_Byte_Nova_Array1Byte_Nova_plus,
+0,
+0,
+},
+nova_datastruct_list_Byte_Nova_Array1Byte_Nova_toString,
+nova_Nova_Object_Accessor_Nova_hashCodeLong,
+nova_datastruct_list_Byte_Nova_Array1Byte_Nova_fillRemaining,
+nova_datastruct_list_Byte_Nova_Array1Byte_Nova_addUnique,
+nova_datastruct_list_Byte_Nova_Array1Byte_0_Nova_add,
+nova_datastruct_list_Byte_Nova_Array1Byte_0_Nova_add,
+nova_datastruct_list_Byte_Nova_Array1Byte_0_Nova_remove,
+nova_datastruct_list_Byte_Nova_Array1Byte_0_Nova_remove,
+nova_datastruct_list_Byte_Nova_Array1Byte_Nova_indexOf,
+nova_datastruct_list_Byte_Nova_Array1Byte_Nova_replace,
+nova_datastruct_list_Byte_Nova_Array1Byte_Nova_swap,
+nova_datastruct_list_Byte_Nova_Array1Byte_Nova_cloneData,
+nova_datastruct_list_Byte_Nova_Array1Byte_Nova_clone,
+nova_datastruct_list_Byte_Nova_Array1Byte_Nova_sumSize,
+nova_datastruct_list_Byte_Nova_Array1Byte_Nova_sum,
+nova_datastruct_list_Byte_Nova_Array1Byte_0_Nova_mergeSort,
+nova_datastruct_list_Byte_Nova_Array1Byte_0_Nova_quickSort,
+nova_datastruct_list_Byte_Nova_Array1Byte_0_Nova_mergeSort,
+nova_datastruct_list_Byte_Nova_Array1Byte_0_Nova_quickSort,
+nova_datastruct_list_Byte_Nova_Array1Byte_Nova_sort,
+nova_datastruct_list_Byte_Nova_Array1Byte_Nova_toImmutable,
+nova_datastruct_list_Byte_Nova_Array1Byte_Nova_get,
+nova_datastruct_list_Byte_Nova_Array1Byte_Nova_set,
+};
+
+
+nova_datastruct_list_Long_Nova_Array1Long_VTable nova_datastruct_list_Long_Nova_Array1Long_VTable_val =
+{
+0,
+{
+0,
+0,
+(nova_datastruct_list_Nova_Iterator*(*)(nova_datastruct_list_Nova_Iterable*, nova_exception_Nova_ExceptionData*))nova_datastruct_list_Nova_Array_Accessorfunc_Nova_iterator,
+(nova_datastruct_list_Nova_Iterator*(*)(nova_datastruct_list_Nova_Iterable*, nova_exception_Nova_ExceptionData*, nova_datastruct_list_Nova_Iterator*))nova_datastruct_list_Nova_List_Mutatorfunc_Nova_iterator,
+0,
+0,
+(nova_datastruct_list_Nova_Array*(*)(nova_datastruct_list_Nova_List*, nova_exception_Nova_ExceptionData*))nova_datastruct_list_Long_Nova_Array1Long_Nova_toArray,
+(char(*)(nova_datastruct_list_Nova_List*, nova_exception_Nova_ExceptionData*, nova_Nova_Object*))nova_datastruct_list_Nova_List_char_char_Nova_contains,
+(nova_datastruct_list_Nova_List*(*)(nova_datastruct_list_Nova_List*, nova_exception_Nova_ExceptionData*, nova_datastruct_list_Nova_List_closure172_Nova_func nova_datastruct_list_Nova_List_Nova_func, void* nova_datastruct_list_Nova_List_ref_Nova_func, void* func_context))nova_datastruct_list_Long_Nova_Array1Long_Nova_forEach,
+(nova_datastruct_list_Nova_List*(*)(nova_datastruct_list_Nova_List*, nova_exception_Nova_ExceptionData*, nova_datastruct_list_Nova_List_closure176_Nova_mapFunc nova_datastruct_list_Nova_List_Nova_mapFunc, void* nova_datastruct_list_Nova_List_ref_Nova_mapFunc, void* mapFunc_context))nova_datastruct_list_Long_Nova_Array1Long_Nova_map,
+(char(*)(nova_datastruct_list_Nova_List*, nova_exception_Nova_ExceptionData*, nova_datastruct_list_Nova_List_closure180_Nova_anyFunc nova_datastruct_list_Nova_List_Nova_anyFunc, void* nova_datastruct_list_Nova_List_ref_Nova_anyFunc, void* anyFunc_context))nova_datastruct_list_Nova_List_0_Nova_any,
+(char(*)(nova_datastruct_list_Nova_List*, nova_exception_Nova_ExceptionData*, nova_datastruct_list_Nova_List_closure184_Nova_allFunc nova_datastruct_list_Nova_List_Nova_allFunc, void* nova_datastruct_list_Nova_List_ref_Nova_allFunc, void* allFunc_context, int))nova_datastruct_list_Nova_List_0_Nova_all,
+(nova_datastruct_list_Nova_List*(*)(nova_datastruct_list_Nova_List*, nova_exception_Nova_ExceptionData*, nova_datastruct_list_Nova_List_closure188_Nova_filterFunc nova_datastruct_list_Nova_List_Nova_filterFunc, void* nova_datastruct_list_Nova_List_ref_Nova_filterFunc, void* filterFunc_context))nova_datastruct_list_Long_Nova_Array1Long_Nova_filter,
+(nova_datastruct_list_Nova_List*(*)(nova_datastruct_list_Nova_List*, nova_exception_Nova_ExceptionData*, int))nova_datastruct_list_Long_Nova_Array1Long_Nova_take,
+(nova_datastruct_list_Nova_List*(*)(nova_datastruct_list_Nova_List*, nova_exception_Nova_ExceptionData*, int))nova_datastruct_list_Long_Nova_Array1Long_Nova_skip,
+(nova_Nova_Object*(*)(nova_datastruct_list_Nova_List*, nova_exception_Nova_ExceptionData*, nova_datastruct_list_Nova_List_closure200_Nova_func nova_datastruct_list_Nova_List_Nova_func, void* nova_datastruct_list_Nova_List_ref_Nova_func, void* func_context))nova_datastruct_list_Nova_List_0_Nova_firstWhere,
+(nova_datastruct_list_Nova_List*(*)(nova_datastruct_list_Nova_List*, nova_exception_Nova_ExceptionData*))nova_datastruct_list_Long_Nova_Array1Long_Nova_reverse,
+(nova_Nova_String*(*)(nova_datastruct_list_Nova_List*, nova_exception_Nova_ExceptionData*, nova_Nova_String*))nova_datastruct_list_Nova_List_Nova_join,
+(int(*)(nova_datastruct_list_Nova_List*, nova_exception_Nova_ExceptionData*))nova_datastruct_list_Nova_Array_Accessorfunc_Nova_count,
+(int(*)(nova_datastruct_list_Nova_List*, nova_exception_Nova_ExceptionData*, int))nova_datastruct_list_Nova_Array_Mutatorfunc_Nova_count,
+(nova_Nova_Object*(*)(nova_datastruct_list_Nova_List*, nova_exception_Nova_ExceptionData*))nova_datastruct_list_Nova_Array_Accessorfunc_Nova_first,
+(nova_Nova_Object*(*)(nova_datastruct_list_Nova_List*, nova_exception_Nova_ExceptionData*, nova_Nova_Object*))nova_datastruct_list_Long_Nova_Array1Long_Mutatorfunc_Nova_first,
+(nova_Nova_Object*(*)(nova_datastruct_list_Nova_List*, nova_exception_Nova_ExceptionData*))nova_datastruct_list_Nova_Array_Accessorfunc_Nova_last,
+(nova_Nova_Object*(*)(nova_datastruct_list_Nova_List*, nova_exception_Nova_ExceptionData*, nova_Nova_Object*))nova_datastruct_list_Long_Nova_Array1Long_Mutatorfunc_Nova_last,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+(nova_Nova_Object*(*)(nova_operators_Nova_PlusEqualsOperator*, nova_exception_Nova_ExceptionData*, nova_Nova_Object*))nova_datastruct_list_Long_Nova_Array1Long_Nova_plusEquals,
+(nova_Nova_Object*(*)(nova_operators_Nova_PlusOperator*, nova_exception_Nova_ExceptionData*, nova_Nova_Object*))nova_datastruct_list_Long_Nova_Array1Long_Nova_plus,
+0,
+0,
+},
+nova_datastruct_list_Long_Nova_Array1Long_Nova_toString,
+nova_Nova_Object_Accessor_Nova_hashCodeLong,
+nova_datastruct_list_Long_Nova_Array1Long_Nova_fillRemaining,
+nova_datastruct_list_Long_Nova_Array1Long_Nova_addUnique,
+nova_datastruct_list_Long_Nova_Array1Long_0_Nova_add,
+nova_datastruct_list_Long_Nova_Array1Long_0_Nova_add,
+nova_datastruct_list_Long_Nova_Array1Long_0_Nova_remove,
+nova_datastruct_list_Long_Nova_Array1Long_0_Nova_remove,
+nova_datastruct_list_Long_Nova_Array1Long_Nova_indexOf,
+nova_datastruct_list_Long_Nova_Array1Long_Nova_replace,
+nova_datastruct_list_Long_Nova_Array1Long_Nova_swap,
+nova_datastruct_list_Long_Nova_Array1Long_Nova_cloneData,
+nova_datastruct_list_Long_Nova_Array1Long_Nova_clone,
+nova_datastruct_list_Long_Nova_Array1Long_Nova_sumSize,
+nova_datastruct_list_Long_Nova_Array1Long_Nova_sum,
+nova_datastruct_list_Long_Nova_Array1Long_0_Nova_mergeSort,
+nova_datastruct_list_Long_Nova_Array1Long_0_Nova_quickSort,
+nova_datastruct_list_Long_Nova_Array1Long_0_Nova_mergeSort,
+nova_datastruct_list_Long_Nova_Array1Long_0_Nova_quickSort,
+nova_datastruct_list_Long_Nova_Array1Long_Nova_sort,
+nova_datastruct_list_Long_Nova_Array1Long_Nova_toImmutable,
+nova_datastruct_list_Long_Nova_Array1Long_Nova_get,
+nova_datastruct_list_Long_Nova_Array1Long_Nova_set,
+};
+
+
+nova_datastruct_list_Nova_ArrayIterator_VTable nova_datastruct_list_Nova_ArrayIterator_VTable_val =
 {
 0,
 {
@@ -2991,10 +3347,11 @@ nova_datastruct_list_ArrayIterator_Extension_VTable nova_datastruct_list_ArrayIt
 },
 nova_Nova_Object_Nova_toString,
 nova_Nova_Object_Accessor_Nova_hashCodeLong,
+nova_datastruct_list_Nova_ArrayIterator_Nova_reset,
 };
 
 
-nova_datastruct_list_ArrayIterator_ArrayIteratorFunctionMap_Extension_VTable nova_datastruct_list_ArrayIterator_ArrayIteratorFunctionMap_Extension_VTable_val =
+nova_datastruct_list_Nova_ArrayIteratorFunctionMap_VTable nova_datastruct_list_Nova_ArrayIteratorFunctionMap_VTable_val =
 {
 0,
 {
@@ -3040,7 +3397,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_datastruct_list_ArrayIterator_ArrayIteratorPropertyMap_Extension_VTable nova_datastruct_list_ArrayIterator_ArrayIteratorPropertyMap_Extension_VTable_val =
+nova_datastruct_list_Nova_ArrayIteratorPropertyMap_VTable nova_datastruct_list_Nova_ArrayIteratorPropertyMap_VTable_val =
 {
 0,
 {
@@ -3086,7 +3443,242 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_datastruct_list_CharArray_Extension_VTable nova_datastruct_list_CharArray_Extension_VTable_val =
+nova_datastruct_list_Double_Nova_ArrayIterator1Double_VTable nova_datastruct_list_Double_Nova_ArrayIterator1Double_VTable_val =
+{
+0,
+{
+0,
+0,
+0,
+0,
+(char(*)(nova_datastruct_list_Nova_Iterator*, nova_exception_Nova_ExceptionData*))nova_datastruct_list_Nova_ArrayIterator_Accessorfunc_Nova_hasNext,
+(nova_Nova_Object*(*)(nova_datastruct_list_Nova_Iterator*, nova_exception_Nova_ExceptionData*))nova_datastruct_list_Double_Nova_ArrayIterator1Double_Accessorfunc_Nova_next,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+},
+nova_Nova_Object_Nova_toString,
+nova_Nova_Object_Accessor_Nova_hashCodeLong,
+nova_datastruct_list_Double_Nova_ArrayIterator1Double_Nova_reset,
+};
+
+
+nova_datastruct_list_Char_Nova_ArrayIterator1Char_VTable nova_datastruct_list_Char_Nova_ArrayIterator1Char_VTable_val =
+{
+0,
+{
+0,
+0,
+0,
+0,
+(char(*)(nova_datastruct_list_Nova_Iterator*, nova_exception_Nova_ExceptionData*))nova_datastruct_list_Nova_ArrayIterator_Accessorfunc_Nova_hasNext,
+(nova_Nova_Object*(*)(nova_datastruct_list_Nova_Iterator*, nova_exception_Nova_ExceptionData*))nova_datastruct_list_Char_Nova_ArrayIterator1Char_Accessorfunc_Nova_next,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+},
+nova_Nova_Object_Nova_toString,
+nova_Nova_Object_Accessor_Nova_hashCodeLong,
+nova_datastruct_list_Char_Nova_ArrayIterator1Char_Nova_reset,
+};
+
+
+nova_datastruct_list_Int_Nova_ArrayIterator1Int_VTable nova_datastruct_list_Int_Nova_ArrayIterator1Int_VTable_val =
+{
+0,
+{
+0,
+0,
+0,
+0,
+(char(*)(nova_datastruct_list_Nova_Iterator*, nova_exception_Nova_ExceptionData*))nova_datastruct_list_Nova_ArrayIterator_Accessorfunc_Nova_hasNext,
+(nova_Nova_Object*(*)(nova_datastruct_list_Nova_Iterator*, nova_exception_Nova_ExceptionData*))nova_datastruct_list_Int_Nova_ArrayIterator1Int_Accessorfunc_Nova_next,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+},
+nova_Nova_Object_Nova_toString,
+nova_Nova_Object_Accessor_Nova_hashCodeLong,
+nova_datastruct_list_Int_Nova_ArrayIterator1Int_Nova_reset,
+};
+
+
+nova_datastruct_list_Byte_Nova_ArrayIterator1Byte_VTable nova_datastruct_list_Byte_Nova_ArrayIterator1Byte_VTable_val =
+{
+0,
+{
+0,
+0,
+0,
+0,
+(char(*)(nova_datastruct_list_Nova_Iterator*, nova_exception_Nova_ExceptionData*))nova_datastruct_list_Nova_ArrayIterator_Accessorfunc_Nova_hasNext,
+(nova_Nova_Object*(*)(nova_datastruct_list_Nova_Iterator*, nova_exception_Nova_ExceptionData*))nova_datastruct_list_Byte_Nova_ArrayIterator1Byte_Accessorfunc_Nova_next,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+},
+nova_Nova_Object_Nova_toString,
+nova_Nova_Object_Accessor_Nova_hashCodeLong,
+nova_datastruct_list_Byte_Nova_ArrayIterator1Byte_Nova_reset,
+};
+
+
+nova_datastruct_list_Long_Nova_ArrayIterator1Long_VTable nova_datastruct_list_Long_Nova_ArrayIterator1Long_VTable_val =
+{
+0,
+{
+0,
+0,
+0,
+0,
+(char(*)(nova_datastruct_list_Nova_Iterator*, nova_exception_Nova_ExceptionData*))nova_datastruct_list_Nova_ArrayIterator_Accessorfunc_Nova_hasNext,
+(nova_Nova_Object*(*)(nova_datastruct_list_Nova_Iterator*, nova_exception_Nova_ExceptionData*))nova_datastruct_list_Long_Nova_ArrayIterator1Long_Accessorfunc_Nova_next,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+},
+nova_Nova_Object_Nova_toString,
+nova_Nova_Object_Accessor_Nova_hashCodeLong,
+nova_datastruct_list_Long_Nova_ArrayIterator1Long_Nova_reset,
+};
+
+
+nova_datastruct_list_Nova_CharArray_VTable nova_datastruct_list_Nova_CharArray_VTable_val =
 {
 0,
 {
@@ -3097,7 +3689,7 @@ nova_datastruct_list_CharArray_Extension_VTable nova_datastruct_list_CharArray_E
 0,
 0,
 (nova_datastruct_list_Nova_Array*(*)(nova_datastruct_list_Nova_List*, nova_exception_Nova_ExceptionData*))nova_datastruct_list_Nova_Array_Nova_toArray,
-(char(*)(nova_datastruct_list_Nova_List*, nova_exception_Nova_ExceptionData*, nova_Nova_Object*))nova_datastruct_list_Nova_List_0_Nova_contains,
+(char(*)(nova_datastruct_list_Nova_List*, nova_exception_Nova_ExceptionData*, nova_Nova_Object*))nova_datastruct_list_Nova_List_char_char_Nova_contains,
 (nova_datastruct_list_Nova_List*(*)(nova_datastruct_list_Nova_List*, nova_exception_Nova_ExceptionData*, nova_datastruct_list_Nova_List_closure172_Nova_func nova_datastruct_list_Nova_List_Nova_func, void* nova_datastruct_list_Nova_List_ref_Nova_func, void* func_context))nova_datastruct_list_Nova_Array_0_Nova_forEach,
 (nova_datastruct_list_Nova_List*(*)(nova_datastruct_list_Nova_List*, nova_exception_Nova_ExceptionData*, nova_datastruct_list_Nova_List_closure176_Nova_mapFunc nova_datastruct_list_Nova_List_Nova_mapFunc, void* nova_datastruct_list_Nova_List_ref_Nova_mapFunc, void* mapFunc_context))nova_datastruct_list_Nova_Array_0_Nova_map,
 (char(*)(nova_datastruct_list_Nova_List*, nova_exception_Nova_ExceptionData*, nova_datastruct_list_Nova_List_closure180_Nova_anyFunc nova_datastruct_list_Nova_List_Nova_anyFunc, void* nova_datastruct_list_Nova_List_ref_Nova_anyFunc, void* anyFunc_context))nova_datastruct_list_Nova_List_0_Nova_any,
@@ -3129,10 +3721,31 @@ nova_datastruct_list_CharArray_Extension_VTable nova_datastruct_list_CharArray_E
 },
 nova_datastruct_list_Nova_Array_Nova_toString,
 nova_Nova_Object_Accessor_Nova_hashCodeLong,
+nova_datastruct_list_Nova_Array_Nova_fillRemaining,
+nova_datastruct_list_Nova_Array_Nova_addUnique,
+nova_datastruct_list_Nova_Array_0_Nova_add,
+nova_datastruct_list_Nova_Array_1_Nova_add,
+nova_datastruct_list_Nova_Array_0_Nova_remove,
+nova_datastruct_list_Nova_Array_1_Nova_remove,
+nova_datastruct_list_Nova_Array_Nova_indexOf,
+nova_datastruct_list_Nova_Array_Nova_replace,
+nova_datastruct_list_Nova_Array_Nova_swap,
+nova_datastruct_list_Nova_Array_Nova_cloneData,
+nova_datastruct_list_Nova_Array_Nova_clone,
+nova_datastruct_list_Nova_Array_Nova_sumSize,
+nova_datastruct_list_Nova_Array_Nova_sum,
+nova_datastruct_list_Nova_Array_0_Nova_mergeSort,
+nova_datastruct_list_Nova_Array_0_Nova_quickSort,
+nova_datastruct_list_Nova_Array_1_Nova_mergeSort,
+nova_datastruct_list_Nova_Array_1_Nova_quickSort,
+nova_datastruct_list_Nova_Array_Nova_sort,
+nova_datastruct_list_Nova_Array_Nova_toImmutable,
+nova_datastruct_list_Nova_Array_Nova_get,
+nova_datastruct_list_Nova_Array_Nova_set,
 };
 
 
-nova_datastruct_list_CharArray_CharArrayFunctionMap_Extension_VTable nova_datastruct_list_CharArray_CharArrayFunctionMap_Extension_VTable_val =
+nova_datastruct_list_Nova_CharArrayFunctionMap_VTable nova_datastruct_list_Nova_CharArrayFunctionMap_VTable_val =
 {
 0,
 {
@@ -3179,7 +3792,7 @@ nova_datastruct_list_Nova_CharArrayFunctionMap_functionMapCharArrayFunctionMap_N
 };
 
 
-nova_datastruct_list_CharArray_CharArrayPropertyMap_Extension_VTable nova_datastruct_list_CharArray_CharArrayPropertyMap_Extension_VTable_val =
+nova_datastruct_list_Nova_CharArrayPropertyMap_VTable nova_datastruct_list_Nova_CharArrayPropertyMap_VTable_val =
 {
 0,
 {
@@ -3225,7 +3838,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_datastruct_list_CharArrayIterator_Extension_VTable nova_datastruct_list_CharArrayIterator_Extension_VTable_val =
+nova_datastruct_list_Nova_CharArrayIterator_VTable nova_datastruct_list_Nova_CharArrayIterator_VTable_val =
 {
 0,
 {
@@ -3271,7 +3884,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_datastruct_list_CharArrayIterator_CharArrayIteratorFunctionMap_Extension_VTable nova_datastruct_list_CharArrayIterator_CharArrayIteratorFunctionMap_Extension_VTable_val =
+nova_datastruct_list_Nova_CharArrayIteratorFunctionMap_VTable nova_datastruct_list_Nova_CharArrayIteratorFunctionMap_VTable_val =
 {
 0,
 {
@@ -3317,7 +3930,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_datastruct_list_CharArrayIterator_CharArrayIteratorPropertyMap_Extension_VTable nova_datastruct_list_CharArrayIterator_CharArrayIteratorPropertyMap_Extension_VTable_val =
+nova_datastruct_list_Nova_CharArrayIteratorPropertyMap_VTable nova_datastruct_list_Nova_CharArrayIteratorPropertyMap_VTable_val =
 {
 0,
 {
@@ -3363,7 +3976,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_datastruct_list_CompiledList_Extension_VTable nova_datastruct_list_CompiledList_Extension_VTable_val =
+nova_datastruct_list_Nova_CompiledList_VTable nova_datastruct_list_Nova_CompiledList_VTable_val =
 {
 0,
 {
@@ -3409,7 +4022,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_datastruct_list_CompiledList_CompiledListFunctionMap_Extension_VTable nova_datastruct_list_CompiledList_CompiledListFunctionMap_Extension_VTable_val =
+nova_datastruct_list_Nova_CompiledListFunctionMap_VTable nova_datastruct_list_Nova_CompiledListFunctionMap_VTable_val =
 {
 0,
 {
@@ -3455,7 +4068,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_datastruct_list_CompiledList_CompiledListPropertyMap_Extension_VTable nova_datastruct_list_CompiledList_CompiledListPropertyMap_Extension_VTable_val =
+nova_datastruct_list_Nova_CompiledListPropertyMap_VTable nova_datastruct_list_Nova_CompiledListPropertyMap_VTable_val =
 {
 0,
 {
@@ -3501,7 +4114,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_datastruct_list_DoubleArray_Extension_VTable nova_datastruct_list_DoubleArray_Extension_VTable_val =
+nova_datastruct_list_Nova_DoubleArray_VTable nova_datastruct_list_Nova_DoubleArray_VTable_val =
 {
 0,
 {
@@ -3512,7 +4125,7 @@ nova_datastruct_list_DoubleArray_Extension_VTable nova_datastruct_list_DoubleArr
 0,
 0,
 (nova_datastruct_list_Nova_Array*(*)(nova_datastruct_list_Nova_List*, nova_exception_Nova_ExceptionData*))nova_datastruct_list_Nova_Array_Nova_toArray,
-(char(*)(nova_datastruct_list_Nova_List*, nova_exception_Nova_ExceptionData*, nova_Nova_Object*))nova_datastruct_list_Nova_List_0_Nova_contains,
+(char(*)(nova_datastruct_list_Nova_List*, nova_exception_Nova_ExceptionData*, nova_Nova_Object*))nova_datastruct_list_Nova_List_char_char_Nova_contains,
 (nova_datastruct_list_Nova_List*(*)(nova_datastruct_list_Nova_List*, nova_exception_Nova_ExceptionData*, nova_datastruct_list_Nova_List_closure172_Nova_func nova_datastruct_list_Nova_List_Nova_func, void* nova_datastruct_list_Nova_List_ref_Nova_func, void* func_context))nova_datastruct_list_Nova_Array_0_Nova_forEach,
 (nova_datastruct_list_Nova_List*(*)(nova_datastruct_list_Nova_List*, nova_exception_Nova_ExceptionData*, nova_datastruct_list_Nova_List_closure176_Nova_mapFunc nova_datastruct_list_Nova_List_Nova_mapFunc, void* nova_datastruct_list_Nova_List_ref_Nova_mapFunc, void* mapFunc_context))nova_datastruct_list_Nova_Array_0_Nova_map,
 (char(*)(nova_datastruct_list_Nova_List*, nova_exception_Nova_ExceptionData*, nova_datastruct_list_Nova_List_closure180_Nova_anyFunc nova_datastruct_list_Nova_List_Nova_anyFunc, void* nova_datastruct_list_Nova_List_ref_Nova_anyFunc, void* anyFunc_context))nova_datastruct_list_Nova_List_0_Nova_any,
@@ -3544,10 +4157,31 @@ nova_datastruct_list_DoubleArray_Extension_VTable nova_datastruct_list_DoubleArr
 },
 nova_datastruct_list_Nova_Array_Nova_toString,
 nova_Nova_Object_Accessor_Nova_hashCodeLong,
+nova_datastruct_list_Nova_Array_Nova_fillRemaining,
+nova_datastruct_list_Nova_Array_Nova_addUnique,
+nova_datastruct_list_Nova_Array_0_Nova_add,
+nova_datastruct_list_Nova_Array_1_Nova_add,
+nova_datastruct_list_Nova_Array_0_Nova_remove,
+nova_datastruct_list_Nova_Array_1_Nova_remove,
+nova_datastruct_list_Nova_Array_Nova_indexOf,
+nova_datastruct_list_Nova_Array_Nova_replace,
+nova_datastruct_list_Nova_Array_Nova_swap,
+nova_datastruct_list_Nova_Array_Nova_cloneData,
+nova_datastruct_list_Nova_Array_Nova_clone,
+nova_datastruct_list_Nova_Array_Nova_sumSize,
+nova_datastruct_list_Nova_Array_Nova_sum,
+nova_datastruct_list_Nova_Array_0_Nova_mergeSort,
+nova_datastruct_list_Nova_Array_0_Nova_quickSort,
+nova_datastruct_list_Nova_Array_1_Nova_mergeSort,
+nova_datastruct_list_Nova_Array_1_Nova_quickSort,
+nova_datastruct_list_Nova_Array_Nova_sort,
+nova_datastruct_list_Nova_Array_Nova_toImmutable,
+nova_datastruct_list_Nova_Array_Nova_get,
+nova_datastruct_list_Nova_Array_Nova_set,
 };
 
 
-nova_datastruct_list_DoubleArray_DoubleArrayFunctionMap_Extension_VTable nova_datastruct_list_DoubleArray_DoubleArrayFunctionMap_Extension_VTable_val =
+nova_datastruct_list_Nova_DoubleArrayFunctionMap_VTable nova_datastruct_list_Nova_DoubleArrayFunctionMap_VTable_val =
 {
 0,
 {
@@ -3594,7 +4228,7 @@ nova_datastruct_list_Nova_DoubleArrayFunctionMap_functionMapDoubleArrayFunctionM
 };
 
 
-nova_datastruct_list_DoubleArray_DoubleArrayPropertyMap_Extension_VTable nova_datastruct_list_DoubleArray_DoubleArrayPropertyMap_Extension_VTable_val =
+nova_datastruct_list_Nova_DoubleArrayPropertyMap_VTable nova_datastruct_list_Nova_DoubleArrayPropertyMap_VTable_val =
 {
 0,
 {
@@ -3640,7 +4274,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_datastruct_list_DoubleArrayIterator_Extension_VTable nova_datastruct_list_DoubleArrayIterator_Extension_VTable_val =
+nova_datastruct_list_Nova_DoubleArrayIterator_VTable nova_datastruct_list_Nova_DoubleArrayIterator_VTable_val =
 {
 0,
 {
@@ -3686,7 +4320,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_datastruct_list_DoubleArrayIterator_DoubleArrayIteratorFunctionMap_Extension_VTable nova_datastruct_list_DoubleArrayIterator_DoubleArrayIteratorFunctionMap_Extension_VTable_val =
+nova_datastruct_list_Nova_DoubleArrayIteratorFunctionMap_VTable nova_datastruct_list_Nova_DoubleArrayIteratorFunctionMap_VTable_val =
 {
 0,
 {
@@ -3732,7 +4366,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_datastruct_list_DoubleArrayIterator_DoubleArrayIteratorPropertyMap_Extension_VTable nova_datastruct_list_DoubleArrayIterator_DoubleArrayIteratorPropertyMap_Extension_VTable_val =
+nova_datastruct_list_Nova_DoubleArrayIteratorPropertyMap_VTable nova_datastruct_list_Nova_DoubleArrayIteratorPropertyMap_VTable_val =
 {
 0,
 {
@@ -3778,7 +4412,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_datastruct_list_EmptyStackException_Extension_VTable nova_datastruct_list_EmptyStackException_Extension_VTable_val =
+nova_datastruct_list_Nova_EmptyStackException_VTable nova_datastruct_list_Nova_EmptyStackException_VTable_val =
 {
 0,
 {
@@ -3824,7 +4458,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_datastruct_list_EmptyStackException_EmptyStackExceptionFunctionMap_Extension_VTable nova_datastruct_list_EmptyStackException_EmptyStackExceptionFunctionMap_Extension_VTable_val =
+nova_datastruct_list_Nova_EmptyStackExceptionFunctionMap_VTable nova_datastruct_list_Nova_EmptyStackExceptionFunctionMap_VTable_val =
 {
 0,
 {
@@ -3871,7 +4505,7 @@ nova_datastruct_list_Nova_EmptyStackExceptionFunctionMap_functionMapEmptyStackEx
 };
 
 
-nova_datastruct_list_EmptyStackException_EmptyStackExceptionPropertyMap_Extension_VTable nova_datastruct_list_EmptyStackException_EmptyStackExceptionPropertyMap_Extension_VTable_val =
+nova_datastruct_list_Nova_EmptyStackExceptionPropertyMap_VTable nova_datastruct_list_Nova_EmptyStackExceptionPropertyMap_VTable_val =
 {
 0,
 {
@@ -3917,7 +4551,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_datastruct_list_ImmutableArray_Extension_VTable nova_datastruct_list_ImmutableArray_Extension_VTable_val =
+nova_datastruct_list_Nova_ImmutableArray_VTable nova_datastruct_list_Nova_ImmutableArray_VTable_val =
 {
 0,
 {
@@ -3928,7 +4562,7 @@ nova_datastruct_list_ImmutableArray_Extension_VTable nova_datastruct_list_Immuta
 0,
 0,
 (nova_datastruct_list_Nova_Array*(*)(nova_datastruct_list_Nova_List*, nova_exception_Nova_ExceptionData*))nova_datastruct_list_Nova_ImmutableArray_Nova_toArray,
-(char(*)(nova_datastruct_list_Nova_List*, nova_exception_Nova_ExceptionData*, nova_Nova_Object*))nova_datastruct_list_Nova_List_0_Nova_contains,
+(char(*)(nova_datastruct_list_Nova_List*, nova_exception_Nova_ExceptionData*, nova_Nova_Object*))nova_datastruct_list_Nova_List_char_char_Nova_contains,
 (nova_datastruct_list_Nova_List*(*)(nova_datastruct_list_Nova_List*, nova_exception_Nova_ExceptionData*, nova_datastruct_list_Nova_List_closure172_Nova_func nova_datastruct_list_Nova_List_Nova_func, void* nova_datastruct_list_Nova_List_ref_Nova_func, void* func_context))nova_datastruct_list_Nova_ImmutableArray_0_Nova_forEach,
 (nova_datastruct_list_Nova_List*(*)(nova_datastruct_list_Nova_List*, nova_exception_Nova_ExceptionData*, nova_datastruct_list_Nova_List_closure176_Nova_mapFunc nova_datastruct_list_Nova_List_Nova_mapFunc, void* nova_datastruct_list_Nova_List_ref_Nova_mapFunc, void* mapFunc_context))nova_datastruct_list_Nova_ImmutableArray_0_Nova_map,
 (char(*)(nova_datastruct_list_Nova_List*, nova_exception_Nova_ExceptionData*, nova_datastruct_list_Nova_List_closure180_Nova_anyFunc nova_datastruct_list_Nova_List_Nova_anyFunc, void* nova_datastruct_list_Nova_List_ref_Nova_anyFunc, void* anyFunc_context))nova_datastruct_list_Nova_List_0_Nova_any,
@@ -3963,7 +4597,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_datastruct_list_ImmutableArray_ImmutableArrayFunctionMap_Extension_VTable nova_datastruct_list_ImmutableArray_ImmutableArrayFunctionMap_Extension_VTable_val =
+nova_datastruct_list_Nova_ImmutableArrayFunctionMap_VTable nova_datastruct_list_Nova_ImmutableArrayFunctionMap_VTable_val =
 {
 0,
 {
@@ -4009,7 +4643,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_datastruct_list_ImmutableArray_ImmutableArrayPropertyMap_Extension_VTable nova_datastruct_list_ImmutableArray_ImmutableArrayPropertyMap_Extension_VTable_val =
+nova_datastruct_list_Nova_ImmutableArrayPropertyMap_VTable nova_datastruct_list_Nova_ImmutableArrayPropertyMap_VTable_val =
 {
 0,
 {
@@ -4055,7 +4689,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_datastruct_list_ImmutableArrayIterator_Extension_VTable nova_datastruct_list_ImmutableArrayIterator_Extension_VTable_val =
+nova_datastruct_list_Nova_ImmutableArrayIterator_VTable nova_datastruct_list_Nova_ImmutableArrayIterator_VTable_val =
 {
 0,
 {
@@ -4101,7 +4735,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_datastruct_list_ImmutableArrayIterator_ImmutableArrayIteratorFunctionMap_Extension_VTable nova_datastruct_list_ImmutableArrayIterator_ImmutableArrayIteratorFunctionMap_Extension_VTable_val =
+nova_datastruct_list_Nova_ImmutableArrayIteratorFunctionMap_VTable nova_datastruct_list_Nova_ImmutableArrayIteratorFunctionMap_VTable_val =
 {
 0,
 {
@@ -4147,7 +4781,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_datastruct_list_ImmutableArrayIterator_ImmutableArrayIteratorPropertyMap_Extension_VTable nova_datastruct_list_ImmutableArrayIterator_ImmutableArrayIteratorPropertyMap_Extension_VTable_val =
+nova_datastruct_list_Nova_ImmutableArrayIteratorPropertyMap_VTable nova_datastruct_list_Nova_ImmutableArrayIteratorPropertyMap_VTable_val =
 {
 0,
 {
@@ -4193,7 +4827,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_datastruct_list_ImmutableCharArray_Extension_VTable nova_datastruct_list_ImmutableCharArray_Extension_VTable_val =
+nova_datastruct_list_Nova_ImmutableCharArray_VTable nova_datastruct_list_Nova_ImmutableCharArray_VTable_val =
 {
 0,
 {
@@ -4239,7 +4873,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_datastruct_list_ImmutableCharArray_ImmutableCharArrayFunctionMap_Extension_VTable nova_datastruct_list_ImmutableCharArray_ImmutableCharArrayFunctionMap_Extension_VTable_val =
+nova_datastruct_list_Nova_ImmutableCharArrayFunctionMap_VTable nova_datastruct_list_Nova_ImmutableCharArrayFunctionMap_VTable_val =
 {
 0,
 {
@@ -4285,7 +4919,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_datastruct_list_ImmutableCharArray_ImmutableCharArrayPropertyMap_Extension_VTable nova_datastruct_list_ImmutableCharArray_ImmutableCharArrayPropertyMap_Extension_VTable_val =
+nova_datastruct_list_Nova_ImmutableCharArrayPropertyMap_VTable nova_datastruct_list_Nova_ImmutableCharArrayPropertyMap_VTable_val =
 {
 0,
 {
@@ -4331,7 +4965,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_datastruct_list_ImmutableCharArrayIterator_Extension_VTable nova_datastruct_list_ImmutableCharArrayIterator_Extension_VTable_val =
+nova_datastruct_list_Nova_ImmutableCharArrayIterator_VTable nova_datastruct_list_Nova_ImmutableCharArrayIterator_VTable_val =
 {
 0,
 {
@@ -4377,7 +5011,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_datastruct_list_ImmutableCharArrayIterator_ImmutableCharArrayIteratorFunctionMap_Extension_VTable nova_datastruct_list_ImmutableCharArrayIterator_ImmutableCharArrayIteratorFunctionMap_Extension_VTable_val =
+nova_datastruct_list_Nova_ImmutableCharArrayIteratorFunctionMap_VTable nova_datastruct_list_Nova_ImmutableCharArrayIteratorFunctionMap_VTable_val =
 {
 0,
 {
@@ -4423,7 +5057,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_datastruct_list_ImmutableCharArrayIterator_ImmutableCharArrayIteratorPropertyMap_Extension_VTable nova_datastruct_list_ImmutableCharArrayIterator_ImmutableCharArrayIteratorPropertyMap_Extension_VTable_val =
+nova_datastruct_list_Nova_ImmutableCharArrayIteratorPropertyMap_VTable nova_datastruct_list_Nova_ImmutableCharArrayIteratorPropertyMap_VTable_val =
 {
 0,
 {
@@ -4469,7 +5103,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_datastruct_list_IntArray_Extension_VTable nova_datastruct_list_IntArray_Extension_VTable_val =
+nova_datastruct_list_Nova_IntArray_VTable nova_datastruct_list_Nova_IntArray_VTable_val =
 {
 0,
 {
@@ -4480,7 +5114,7 @@ nova_datastruct_list_IntArray_Extension_VTable nova_datastruct_list_IntArray_Ext
 0,
 0,
 (nova_datastruct_list_Nova_Array*(*)(nova_datastruct_list_Nova_List*, nova_exception_Nova_ExceptionData*))nova_datastruct_list_Nova_Array_Nova_toArray,
-(char(*)(nova_datastruct_list_Nova_List*, nova_exception_Nova_ExceptionData*, nova_Nova_Object*))nova_datastruct_list_Nova_List_0_Nova_contains,
+(char(*)(nova_datastruct_list_Nova_List*, nova_exception_Nova_ExceptionData*, nova_Nova_Object*))nova_datastruct_list_Nova_List_char_char_Nova_contains,
 (nova_datastruct_list_Nova_List*(*)(nova_datastruct_list_Nova_List*, nova_exception_Nova_ExceptionData*, nova_datastruct_list_Nova_List_closure172_Nova_func nova_datastruct_list_Nova_List_Nova_func, void* nova_datastruct_list_Nova_List_ref_Nova_func, void* func_context))nova_datastruct_list_Nova_Array_0_Nova_forEach,
 (nova_datastruct_list_Nova_List*(*)(nova_datastruct_list_Nova_List*, nova_exception_Nova_ExceptionData*, nova_datastruct_list_Nova_List_closure176_Nova_mapFunc nova_datastruct_list_Nova_List_Nova_mapFunc, void* nova_datastruct_list_Nova_List_ref_Nova_mapFunc, void* mapFunc_context))nova_datastruct_list_Nova_Array_0_Nova_map,
 (char(*)(nova_datastruct_list_Nova_List*, nova_exception_Nova_ExceptionData*, nova_datastruct_list_Nova_List_closure180_Nova_anyFunc nova_datastruct_list_Nova_List_Nova_anyFunc, void* nova_datastruct_list_Nova_List_ref_Nova_anyFunc, void* anyFunc_context))nova_datastruct_list_Nova_List_0_Nova_any,
@@ -4512,10 +5146,31 @@ nova_datastruct_list_IntArray_Extension_VTable nova_datastruct_list_IntArray_Ext
 },
 nova_datastruct_list_Nova_Array_Nova_toString,
 nova_Nova_Object_Accessor_Nova_hashCodeLong,
+nova_datastruct_list_Nova_Array_Nova_fillRemaining,
+nova_datastruct_list_Nova_Array_Nova_addUnique,
+nova_datastruct_list_Nova_Array_0_Nova_add,
+nova_datastruct_list_Nova_Array_1_Nova_add,
+nova_datastruct_list_Nova_Array_0_Nova_remove,
+nova_datastruct_list_Nova_Array_1_Nova_remove,
+nova_datastruct_list_Nova_Array_Nova_indexOf,
+nova_datastruct_list_Nova_Array_Nova_replace,
+nova_datastruct_list_Nova_Array_Nova_swap,
+nova_datastruct_list_Nova_Array_Nova_cloneData,
+nova_datastruct_list_Nova_Array_Nova_clone,
+nova_datastruct_list_Nova_Array_Nova_sumSize,
+nova_datastruct_list_Nova_Array_Nova_sum,
+nova_datastruct_list_Nova_Array_0_Nova_mergeSort,
+nova_datastruct_list_Nova_Array_0_Nova_quickSort,
+nova_datastruct_list_Nova_Array_1_Nova_mergeSort,
+nova_datastruct_list_Nova_Array_1_Nova_quickSort,
+nova_datastruct_list_Nova_Array_Nova_sort,
+nova_datastruct_list_Nova_Array_Nova_toImmutable,
+nova_datastruct_list_Nova_Array_Nova_get,
+nova_datastruct_list_Nova_Array_Nova_set,
 };
 
 
-nova_datastruct_list_IntArray_IntArrayFunctionMap_Extension_VTable nova_datastruct_list_IntArray_IntArrayFunctionMap_Extension_VTable_val =
+nova_datastruct_list_Nova_IntArrayFunctionMap_VTable nova_datastruct_list_Nova_IntArrayFunctionMap_VTable_val =
 {
 0,
 {
@@ -4562,7 +5217,7 @@ nova_datastruct_list_Nova_IntArrayFunctionMap_functionMapIntArrayFunctionMap_Nov
 };
 
 
-nova_datastruct_list_IntArray_IntArrayPropertyMap_Extension_VTable nova_datastruct_list_IntArray_IntArrayPropertyMap_Extension_VTable_val =
+nova_datastruct_list_Nova_IntArrayPropertyMap_VTable nova_datastruct_list_Nova_IntArrayPropertyMap_VTable_val =
 {
 0,
 {
@@ -4608,7 +5263,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_datastruct_list_IntArrayIterator_Extension_VTable nova_datastruct_list_IntArrayIterator_Extension_VTable_val =
+nova_datastruct_list_Nova_IntArrayIterator_VTable nova_datastruct_list_Nova_IntArrayIterator_VTable_val =
 {
 0,
 {
@@ -4654,7 +5309,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_datastruct_list_IntArrayIterator_IntArrayIteratorFunctionMap_Extension_VTable nova_datastruct_list_IntArrayIterator_IntArrayIteratorFunctionMap_Extension_VTable_val =
+nova_datastruct_list_Nova_IntArrayIteratorFunctionMap_VTable nova_datastruct_list_Nova_IntArrayIteratorFunctionMap_VTable_val =
 {
 0,
 {
@@ -4700,7 +5355,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_datastruct_list_IntArrayIterator_IntArrayIteratorPropertyMap_Extension_VTable nova_datastruct_list_IntArrayIterator_IntArrayIteratorPropertyMap_Extension_VTable_val =
+nova_datastruct_list_Nova_IntArrayIteratorPropertyMap_VTable nova_datastruct_list_Nova_IntArrayIteratorPropertyMap_VTable_val =
 {
 0,
 {
@@ -4746,7 +5401,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_datastruct_list_IntRange_Extension_VTable nova_datastruct_list_IntRange_Extension_VTable_val =
+nova_datastruct_list_Nova_IntRange_VTable nova_datastruct_list_Nova_IntRange_VTable_val =
 {
 0,
 {
@@ -4792,7 +5447,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_datastruct_list_IntRange_IntRangeFunctionMap_Extension_VTable nova_datastruct_list_IntRange_IntRangeFunctionMap_Extension_VTable_val =
+nova_datastruct_list_Nova_IntRangeFunctionMap_VTable nova_datastruct_list_Nova_IntRangeFunctionMap_VTable_val =
 {
 0,
 {
@@ -4838,7 +5493,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_datastruct_list_IntRange_IntRangePropertyMap_Extension_VTable nova_datastruct_list_IntRange_IntRangePropertyMap_Extension_VTable_val =
+nova_datastruct_list_Nova_IntRangePropertyMap_VTable nova_datastruct_list_Nova_IntRangePropertyMap_VTable_val =
 {
 0,
 {
@@ -4884,7 +5539,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_datastruct_list_IntRangeIterator_Extension_VTable nova_datastruct_list_IntRangeIterator_Extension_VTable_val =
+nova_datastruct_list_Nova_IntRangeIterator_VTable nova_datastruct_list_Nova_IntRangeIterator_VTable_val =
 {
 0,
 {
@@ -4930,7 +5585,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_datastruct_list_IntRangeIterator_IntRangeIteratorFunctionMap_Extension_VTable nova_datastruct_list_IntRangeIterator_IntRangeIteratorFunctionMap_Extension_VTable_val =
+nova_datastruct_list_Nova_IntRangeIteratorFunctionMap_VTable nova_datastruct_list_Nova_IntRangeIteratorFunctionMap_VTable_val =
 {
 0,
 {
@@ -4976,7 +5631,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_datastruct_list_IntRangeIterator_IntRangeIteratorPropertyMap_Extension_VTable nova_datastruct_list_IntRangeIterator_IntRangeIteratorPropertyMap_Extension_VTable_val =
+nova_datastruct_list_Nova_IntRangeIteratorPropertyMap_VTable nova_datastruct_list_Nova_IntRangeIteratorPropertyMap_VTable_val =
 {
 0,
 {
@@ -5022,7 +5677,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_datastruct_list_Iterable_Extension_VTable nova_datastruct_list_Iterable_Extension_VTable_val =
+nova_datastruct_list_Nova_Iterable_VTable nova_datastruct_list_Nova_Iterable_VTable_val =
 {
 0,
 {
@@ -5066,7 +5721,7 @@ nova_datastruct_list_Iterable_Extension_VTable nova_datastruct_list_Iterable_Ext
 };
 
 
-nova_datastruct_list_Iterable_IterableFunctionMap_Extension_VTable nova_datastruct_list_Iterable_IterableFunctionMap_Extension_VTable_val =
+nova_datastruct_list_Nova_IterableFunctionMap_VTable nova_datastruct_list_Nova_IterableFunctionMap_VTable_val =
 {
 0,
 {
@@ -5112,7 +5767,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_datastruct_list_Iterable_IterablePropertyMap_Extension_VTable nova_datastruct_list_Iterable_IterablePropertyMap_Extension_VTable_val =
+nova_datastruct_list_Nova_IterablePropertyMap_VTable nova_datastruct_list_Nova_IterablePropertyMap_VTable_val =
 {
 0,
 {
@@ -5158,7 +5813,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_datastruct_list_Iterator_Extension_VTable nova_datastruct_list_Iterator_Extension_VTable_val =
+nova_datastruct_list_Nova_Iterator_VTable nova_datastruct_list_Nova_Iterator_VTable_val =
 {
 0,
 {
@@ -5202,7 +5857,7 @@ nova_datastruct_list_Iterator_Extension_VTable nova_datastruct_list_Iterator_Ext
 };
 
 
-nova_datastruct_list_Iterator_IteratorFunctionMap_Extension_VTable nova_datastruct_list_Iterator_IteratorFunctionMap_Extension_VTable_val =
+nova_datastruct_list_Nova_IteratorFunctionMap_VTable nova_datastruct_list_Nova_IteratorFunctionMap_VTable_val =
 {
 0,
 {
@@ -5248,7 +5903,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_datastruct_list_Iterator_IteratorPropertyMap_Extension_VTable nova_datastruct_list_Iterator_IteratorPropertyMap_Extension_VTable_val =
+nova_datastruct_list_Nova_IteratorPropertyMap_VTable nova_datastruct_list_Nova_IteratorPropertyMap_VTable_val =
 {
 0,
 {
@@ -5294,7 +5949,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_datastruct_list_LinkedList_Extension_VTable nova_datastruct_list_LinkedList_Extension_VTable_val =
+nova_datastruct_list_Nova_LinkedList_VTable nova_datastruct_list_Nova_LinkedList_VTable_val =
 {
 0,
 {
@@ -5340,7 +5995,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_datastruct_list_LinkedList_LinkedListFunctionMap_Extension_VTable nova_datastruct_list_LinkedList_LinkedListFunctionMap_Extension_VTable_val =
+nova_datastruct_list_Nova_LinkedListFunctionMap_VTable nova_datastruct_list_Nova_LinkedListFunctionMap_VTable_val =
 {
 0,
 {
@@ -5386,7 +6041,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_datastruct_list_LinkedList_LinkedListPropertyMap_Extension_VTable nova_datastruct_list_LinkedList_LinkedListPropertyMap_Extension_VTable_val =
+nova_datastruct_list_Nova_LinkedListPropertyMap_VTable nova_datastruct_list_Nova_LinkedListPropertyMap_VTable_val =
 {
 0,
 {
@@ -5432,7 +6087,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_datastruct_list_LinkedListIterator_Extension_VTable nova_datastruct_list_LinkedListIterator_Extension_VTable_val =
+nova_datastruct_list_Nova_LinkedListIterator_VTable nova_datastruct_list_Nova_LinkedListIterator_VTable_val =
 {
 0,
 {
@@ -5478,7 +6133,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_datastruct_list_LinkedListIterator_LinkedListIteratorFunctionMap_Extension_VTable nova_datastruct_list_LinkedListIterator_LinkedListIteratorFunctionMap_Extension_VTable_val =
+nova_datastruct_list_Nova_LinkedListIteratorFunctionMap_VTable nova_datastruct_list_Nova_LinkedListIteratorFunctionMap_VTable_val =
 {
 0,
 {
@@ -5524,7 +6179,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_datastruct_list_LinkedListIterator_LinkedListIteratorPropertyMap_Extension_VTable nova_datastruct_list_LinkedListIterator_LinkedListIteratorPropertyMap_Extension_VTable_val =
+nova_datastruct_list_Nova_LinkedListIteratorPropertyMap_VTable nova_datastruct_list_Nova_LinkedListIteratorPropertyMap_VTable_val =
 {
 0,
 {
@@ -5570,7 +6225,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_datastruct_list_List_Extension_VTable nova_datastruct_list_List_Extension_VTable_val =
+nova_datastruct_list_Nova_List_VTable nova_datastruct_list_Nova_List_VTable_val =
 {
 0,
 {
@@ -5581,7 +6236,7 @@ nova_datastruct_list_List_Extension_VTable nova_datastruct_list_List_Extension_V
 0,
 0,
 (nova_datastruct_list_Nova_Array*(*)(nova_datastruct_list_Nova_List*, nova_exception_Nova_ExceptionData*))nova_datastruct_list_Nova_List_Nova_toArray,
-(char(*)(nova_datastruct_list_Nova_List*, nova_exception_Nova_ExceptionData*, nova_Nova_Object*))nova_datastruct_list_Nova_List_0_Nova_contains,
+(char(*)(nova_datastruct_list_Nova_List*, nova_exception_Nova_ExceptionData*, nova_Nova_Object*))nova_datastruct_list_Nova_List_char_char_Nova_contains,
 (nova_datastruct_list_Nova_List*(*)(nova_datastruct_list_Nova_List*, nova_exception_Nova_ExceptionData*, nova_datastruct_list_Nova_List_closure172_Nova_func nova_datastruct_list_Nova_List_Nova_func, void* nova_datastruct_list_Nova_List_ref_Nova_func, void* func_context))nova_datastruct_list_Nova_List_0_Nova_forEach,
 (nova_datastruct_list_Nova_List*(*)(nova_datastruct_list_Nova_List*, nova_exception_Nova_ExceptionData*, nova_datastruct_list_Nova_List_closure176_Nova_mapFunc nova_datastruct_list_Nova_List_Nova_mapFunc, void* nova_datastruct_list_Nova_List_ref_Nova_mapFunc, void* mapFunc_context))nova_datastruct_list_Nova_List_0_Nova_map,
 (char(*)(nova_datastruct_list_Nova_List*, nova_exception_Nova_ExceptionData*, nova_datastruct_list_Nova_List_closure180_Nova_anyFunc nova_datastruct_list_Nova_List_Nova_anyFunc, void* nova_datastruct_list_Nova_List_ref_Nova_anyFunc, void* anyFunc_context))nova_datastruct_list_Nova_List_0_Nova_any,
@@ -5615,7 +6270,7 @@ nova_datastruct_list_Nova_List_Nova_toString,
 };
 
 
-nova_datastruct_list_List_ListFunctionMap_Extension_VTable nova_datastruct_list_List_ListFunctionMap_Extension_VTable_val =
+nova_datastruct_list_Nova_ListFunctionMap_VTable nova_datastruct_list_Nova_ListFunctionMap_VTable_val =
 {
 0,
 {
@@ -5661,7 +6316,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_datastruct_list_List_ListPropertyMap_Extension_VTable nova_datastruct_list_List_ListPropertyMap_Extension_VTable_val =
+nova_datastruct_list_Nova_ListPropertyMap_VTable nova_datastruct_list_Nova_ListPropertyMap_VTable_val =
 {
 0,
 {
@@ -5707,7 +6362,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_datastruct_list_ListNode_Extension_VTable nova_datastruct_list_ListNode_Extension_VTable_val =
+nova_datastruct_list_Nova_ListNode_VTable nova_datastruct_list_Nova_ListNode_VTable_val =
 {
 0,
 {
@@ -5753,7 +6408,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_datastruct_list_ListNode_ListNodeFunctionMap_Extension_VTable nova_datastruct_list_ListNode_ListNodeFunctionMap_Extension_VTable_val =
+nova_datastruct_list_Nova_ListNodeFunctionMap_VTable nova_datastruct_list_Nova_ListNodeFunctionMap_VTable_val =
 {
 0,
 {
@@ -5799,7 +6454,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_datastruct_list_ListNode_ListNodePropertyMap_Extension_VTable nova_datastruct_list_ListNode_ListNodePropertyMap_Extension_VTable_val =
+nova_datastruct_list_Nova_ListNodePropertyMap_VTable nova_datastruct_list_Nova_ListNodePropertyMap_VTable_val =
 {
 0,
 {
@@ -5845,7 +6500,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_datastruct_list_NoSuchElementException_Extension_VTable nova_datastruct_list_NoSuchElementException_Extension_VTable_val =
+nova_datastruct_list_Nova_NoSuchElementException_VTable nova_datastruct_list_Nova_NoSuchElementException_VTable_val =
 {
 0,
 {
@@ -5891,7 +6546,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_datastruct_list_NoSuchElementException_NoSuchElementExceptionFunctionMap_Extension_VTable nova_datastruct_list_NoSuchElementException_NoSuchElementExceptionFunctionMap_Extension_VTable_val =
+nova_datastruct_list_Nova_NoSuchElementExceptionFunctionMap_VTable nova_datastruct_list_Nova_NoSuchElementExceptionFunctionMap_VTable_val =
 {
 0,
 {
@@ -5938,7 +6593,7 @@ nova_datastruct_list_Nova_NoSuchElementExceptionFunctionMap_functionMapNoSuchEle
 };
 
 
-nova_datastruct_list_NoSuchElementException_NoSuchElementExceptionPropertyMap_Extension_VTable nova_datastruct_list_NoSuchElementException_NoSuchElementExceptionPropertyMap_Extension_VTable_val =
+nova_datastruct_list_Nova_NoSuchElementExceptionPropertyMap_VTable nova_datastruct_list_Nova_NoSuchElementExceptionPropertyMap_VTable_val =
 {
 0,
 {
@@ -5984,7 +6639,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_datastruct_list_OrderedList_Extension_VTable nova_datastruct_list_OrderedList_Extension_VTable_val =
+nova_datastruct_list_Nova_OrderedList_VTable nova_datastruct_list_Nova_OrderedList_VTable_val =
 {
 0,
 {
@@ -6028,53 +6683,7 @@ nova_datastruct_list_OrderedList_Extension_VTable nova_datastruct_list_OrderedLi
 };
 
 
-nova_datastruct_list_OrderedList_OrderedListFunctionMap_Extension_VTable nova_datastruct_list_OrderedList_OrderedListFunctionMap_Extension_VTable_val =
-{
-0,
-{
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-},
-nova_Nova_Object_Nova_toString,
-nova_Nova_Object_Accessor_Nova_hashCodeLong,
-};
-
-
-nova_datastruct_list_OrderedList_OrderedListPropertyMap_Extension_VTable nova_datastruct_list_OrderedList_OrderedListPropertyMap_Extension_VTable_val =
+nova_datastruct_list_Nova_OrderedListFunctionMap_VTable nova_datastruct_list_Nova_OrderedListFunctionMap_VTable_val =
 {
 0,
 {
@@ -6120,7 +6729,53 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_datastruct_list_Queue_Extension_VTable nova_datastruct_list_Queue_Extension_VTable_val =
+nova_datastruct_list_Nova_OrderedListPropertyMap_VTable nova_datastruct_list_Nova_OrderedListPropertyMap_VTable_val =
+{
+0,
+{
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+},
+nova_Nova_Object_Nova_toString,
+nova_Nova_Object_Accessor_Nova_hashCodeLong,
+};
+
+
+nova_datastruct_list_Nova_Queue_VTable nova_datastruct_list_Nova_Queue_VTable_val =
 {
 0,
 {
@@ -6131,7 +6786,7 @@ nova_datastruct_list_Queue_Extension_VTable nova_datastruct_list_Queue_Extension
 0,
 0,
 (nova_datastruct_list_Nova_Array*(*)(nova_datastruct_list_Nova_List*, nova_exception_Nova_ExceptionData*))nova_datastruct_list_Nova_List_Nova_toArray,
-(char(*)(nova_datastruct_list_Nova_List*, nova_exception_Nova_ExceptionData*, nova_Nova_Object*))nova_datastruct_list_Nova_List_0_Nova_contains,
+(char(*)(nova_datastruct_list_Nova_List*, nova_exception_Nova_ExceptionData*, nova_Nova_Object*))nova_datastruct_list_Nova_List_char_char_Nova_contains,
 (nova_datastruct_list_Nova_List*(*)(nova_datastruct_list_Nova_List*, nova_exception_Nova_ExceptionData*, nova_datastruct_list_Nova_List_closure172_Nova_func nova_datastruct_list_Nova_List_Nova_func, void* nova_datastruct_list_Nova_List_ref_Nova_func, void* func_context))nova_datastruct_list_Nova_List_0_Nova_forEach,
 (nova_datastruct_list_Nova_List*(*)(nova_datastruct_list_Nova_List*, nova_exception_Nova_ExceptionData*, nova_datastruct_list_Nova_List_closure176_Nova_mapFunc nova_datastruct_list_Nova_List_Nova_mapFunc, void* nova_datastruct_list_Nova_List_ref_Nova_mapFunc, void* mapFunc_context))nova_datastruct_list_Nova_List_0_Nova_map,
 (char(*)(nova_datastruct_list_Nova_List*, nova_exception_Nova_ExceptionData*, nova_datastruct_list_Nova_List_closure180_Nova_anyFunc nova_datastruct_list_Nova_List_Nova_anyFunc, void* nova_datastruct_list_Nova_List_ref_Nova_anyFunc, void* anyFunc_context))nova_datastruct_list_Nova_List_0_Nova_any,
@@ -6166,7 +6821,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_datastruct_list_Queue_QueueFunctionMap_Extension_VTable nova_datastruct_list_Queue_QueueFunctionMap_Extension_VTable_val =
+nova_datastruct_list_Nova_QueueFunctionMap_VTable nova_datastruct_list_Nova_QueueFunctionMap_VTable_val =
 {
 0,
 {
@@ -6212,7 +6867,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_datastruct_list_Queue_QueuePropertyMap_Extension_VTable nova_datastruct_list_Queue_QueuePropertyMap_Extension_VTable_val =
+nova_datastruct_list_Nova_QueuePropertyMap_VTable nova_datastruct_list_Nova_QueuePropertyMap_VTable_val =
 {
 0,
 {
@@ -6258,7 +6913,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_datastruct_list_Stack_Extension_VTable nova_datastruct_list_Stack_Extension_VTable_val =
+nova_datastruct_list_Nova_Stack_VTable nova_datastruct_list_Nova_Stack_VTable_val =
 {
 0,
 {
@@ -6304,7 +6959,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_datastruct_list_Stack_StackFunctionMap_Extension_VTable nova_datastruct_list_Stack_StackFunctionMap_Extension_VTable_val =
+nova_datastruct_list_Nova_StackFunctionMap_VTable nova_datastruct_list_Nova_StackFunctionMap_VTable_val =
 {
 0,
 {
@@ -6350,7 +7005,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_datastruct_list_Stack_StackPropertyMap_Extension_VTable nova_datastruct_list_Stack_StackPropertyMap_Extension_VTable_val =
+nova_datastruct_list_Nova_StackPropertyMap_VTable nova_datastruct_list_Nova_StackPropertyMap_VTable_val =
 {
 0,
 {
@@ -6396,7 +7051,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_datastruct_list_StringCharArray_Extension_VTable nova_datastruct_list_StringCharArray_Extension_VTable_val =
+nova_datastruct_list_Nova_StringCharArray_VTable nova_datastruct_list_Nova_StringCharArray_VTable_val =
 {
 0,
 {
@@ -6442,7 +7097,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_datastruct_list_StringCharArray_StringCharArrayFunctionMap_Extension_VTable nova_datastruct_list_StringCharArray_StringCharArrayFunctionMap_Extension_VTable_val =
+nova_datastruct_list_Nova_StringCharArrayFunctionMap_VTable nova_datastruct_list_Nova_StringCharArrayFunctionMap_VTable_val =
 {
 0,
 {
@@ -6488,7 +7143,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_datastruct_list_StringCharArray_StringCharArrayPropertyMap_Extension_VTable nova_datastruct_list_StringCharArray_StringCharArrayPropertyMap_Extension_VTable_val =
+nova_datastruct_list_Nova_StringCharArrayPropertyMap_VTable nova_datastruct_list_Nova_StringCharArrayPropertyMap_VTable_val =
 {
 0,
 {
@@ -6534,7 +7189,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_datastruct_list_SubstringCharArray_Extension_VTable nova_datastruct_list_SubstringCharArray_Extension_VTable_val =
+nova_datastruct_list_Nova_SubstringCharArray_VTable nova_datastruct_list_Nova_SubstringCharArray_VTable_val =
 {
 0,
 {
@@ -6580,7 +7235,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_datastruct_list_SubstringCharArray_SubstringCharArrayFunctionMap_Extension_VTable nova_datastruct_list_SubstringCharArray_SubstringCharArrayFunctionMap_Extension_VTable_val =
+nova_datastruct_list_Nova_SubstringCharArrayFunctionMap_VTable nova_datastruct_list_Nova_SubstringCharArrayFunctionMap_VTable_val =
 {
 0,
 {
@@ -6626,7 +7281,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_datastruct_list_SubstringCharArray_SubstringCharArrayPropertyMap_Extension_VTable nova_datastruct_list_SubstringCharArray_SubstringCharArrayPropertyMap_Extension_VTable_val =
+nova_datastruct_list_Nova_SubstringCharArrayPropertyMap_VTable nova_datastruct_list_Nova_SubstringCharArrayPropertyMap_VTable_val =
 {
 0,
 {
@@ -6672,7 +7327,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_exception_Backtraces_Extension_VTable nova_exception_Backtraces_Extension_VTable_val =
+nova_exception_Nova_Backtraces_VTable nova_exception_Nova_Backtraces_VTable_val =
 {
 0,
 {
@@ -6718,7 +7373,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_exception_Backtraces_BacktracesFunctionMap_Extension_VTable nova_exception_Backtraces_BacktracesFunctionMap_Extension_VTable_val =
+nova_exception_Nova_BacktracesFunctionMap_VTable nova_exception_Nova_BacktracesFunctionMap_VTable_val =
 {
 0,
 {
@@ -6764,7 +7419,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_exception_Backtraces_BacktracesPropertyMap_Extension_VTable nova_exception_Backtraces_BacktracesPropertyMap_Extension_VTable_val =
+nova_exception_Nova_BacktracesPropertyMap_VTable nova_exception_Nova_BacktracesPropertyMap_VTable_val =
 {
 0,
 {
@@ -6810,7 +7465,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_exception_CaughtException_Extension_VTable nova_exception_CaughtException_Extension_VTable_val =
+nova_exception_Nova_CaughtException_VTable nova_exception_Nova_CaughtException_VTable_val =
 {
 0,
 {
@@ -6856,7 +7511,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_exception_CaughtException_CaughtExceptionFunctionMap_Extension_VTable nova_exception_CaughtException_CaughtExceptionFunctionMap_Extension_VTable_val =
+nova_exception_Nova_CaughtExceptionFunctionMap_VTable nova_exception_Nova_CaughtExceptionFunctionMap_VTable_val =
 {
 0,
 {
@@ -6902,7 +7557,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_exception_CaughtException_CaughtExceptionPropertyMap_Extension_VTable nova_exception_CaughtException_CaughtExceptionPropertyMap_Extension_VTable_val =
+nova_exception_Nova_CaughtExceptionPropertyMap_VTable nova_exception_Nova_CaughtExceptionPropertyMap_VTable_val =
 {
 0,
 {
@@ -6948,7 +7603,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_exception_DivideByZeroException_Extension_VTable nova_exception_DivideByZeroException_Extension_VTable_val =
+nova_exception_Nova_DivideByZeroException_VTable nova_exception_Nova_DivideByZeroException_VTable_val =
 {
 0,
 {
@@ -6994,7 +7649,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_exception_DivideByZeroException_DivideByZeroExceptionFunctionMap_Extension_VTable nova_exception_DivideByZeroException_DivideByZeroExceptionFunctionMap_Extension_VTable_val =
+nova_exception_Nova_DivideByZeroExceptionFunctionMap_VTable nova_exception_Nova_DivideByZeroExceptionFunctionMap_VTable_val =
 {
 0,
 {
@@ -7041,7 +7696,7 @@ nova_exception_Nova_ExceptionFunctionMap_functionMapExceptionFunctionMap_Nova_co
 };
 
 
-nova_exception_DivideByZeroException_DivideByZeroExceptionPropertyMap_Extension_VTable nova_exception_DivideByZeroException_DivideByZeroExceptionPropertyMap_Extension_VTable_val =
+nova_exception_Nova_DivideByZeroExceptionPropertyMap_VTable nova_exception_Nova_DivideByZeroExceptionPropertyMap_VTable_val =
 {
 0,
 {
@@ -7087,7 +7742,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_exception_Exception_Extension_VTable nova_exception_Exception_Extension_VTable_val =
+nova_exception_Nova_Exception_VTable nova_exception_Nova_Exception_VTable_val =
 {
 0,
 {
@@ -7133,7 +7788,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_exception_Exception_ExceptionFunctionMap_Extension_VTable nova_exception_Exception_ExceptionFunctionMap_Extension_VTable_val =
+nova_exception_Nova_ExceptionFunctionMap_VTable nova_exception_Nova_ExceptionFunctionMap_VTable_val =
 {
 0,
 {
@@ -7180,7 +7835,7 @@ nova_exception_Nova_ExceptionFunctionMap_functionMapExceptionFunctionMap_Nova_co
 };
 
 
-nova_exception_Exception_ExceptionPropertyMap_Extension_VTable nova_exception_Exception_ExceptionPropertyMap_Extension_VTable_val =
+nova_exception_Nova_ExceptionPropertyMap_VTable nova_exception_Nova_ExceptionPropertyMap_VTable_val =
 {
 0,
 {
@@ -7226,7 +7881,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_exception_ExceptionData_Extension_VTable nova_exception_ExceptionData_Extension_VTable_val =
+nova_exception_Nova_ExceptionData_VTable nova_exception_Nova_ExceptionData_VTable_val =
 {
 0,
 {
@@ -7272,7 +7927,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_exception_ExceptionData_ExceptionDataFunctionMap_Extension_VTable nova_exception_ExceptionData_ExceptionDataFunctionMap_Extension_VTable_val =
+nova_exception_Nova_ExceptionDataFunctionMap_VTable nova_exception_Nova_ExceptionDataFunctionMap_VTable_val =
 {
 0,
 {
@@ -7318,7 +7973,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_exception_ExceptionData_ExceptionDataPropertyMap_Extension_VTable nova_exception_ExceptionData_ExceptionDataPropertyMap_Extension_VTable_val =
+nova_exception_Nova_ExceptionDataPropertyMap_VTable nova_exception_Nova_ExceptionDataPropertyMap_VTable_val =
 {
 0,
 {
@@ -7364,7 +8019,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_exception_InvalidArgumentException_Extension_VTable nova_exception_InvalidArgumentException_Extension_VTable_val =
+nova_exception_Nova_InvalidArgumentException_VTable nova_exception_Nova_InvalidArgumentException_VTable_val =
 {
 0,
 {
@@ -7410,7 +8065,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_exception_InvalidArgumentException_InvalidArgumentExceptionFunctionMap_Extension_VTable nova_exception_InvalidArgumentException_InvalidArgumentExceptionFunctionMap_Extension_VTable_val =
+nova_exception_Nova_InvalidArgumentExceptionFunctionMap_VTable nova_exception_Nova_InvalidArgumentExceptionFunctionMap_VTable_val =
 {
 0,
 {
@@ -7457,7 +8112,7 @@ nova_exception_Nova_InvalidArgumentExceptionFunctionMap_functionMapInvalidArgume
 };
 
 
-nova_exception_InvalidArgumentException_InvalidArgumentExceptionPropertyMap_Extension_VTable nova_exception_InvalidArgumentException_InvalidArgumentExceptionPropertyMap_Extension_VTable_val =
+nova_exception_Nova_InvalidArgumentExceptionPropertyMap_VTable nova_exception_Nova_InvalidArgumentExceptionPropertyMap_VTable_val =
 {
 0,
 {
@@ -7503,7 +8158,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_exception_InvalidOperationException_Extension_VTable nova_exception_InvalidOperationException_Extension_VTable_val =
+nova_exception_Nova_InvalidOperationException_VTable nova_exception_Nova_InvalidOperationException_VTable_val =
 {
 0,
 {
@@ -7549,7 +8204,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_exception_InvalidOperationException_InvalidOperationExceptionFunctionMap_Extension_VTable nova_exception_InvalidOperationException_InvalidOperationExceptionFunctionMap_Extension_VTable_val =
+nova_exception_Nova_InvalidOperationExceptionFunctionMap_VTable nova_exception_Nova_InvalidOperationExceptionFunctionMap_VTable_val =
 {
 0,
 {
@@ -7596,7 +8251,7 @@ nova_exception_Nova_InvalidOperationExceptionFunctionMap_functionMapInvalidOpera
 };
 
 
-nova_exception_InvalidOperationException_InvalidOperationExceptionPropertyMap_Extension_VTable nova_exception_InvalidOperationException_InvalidOperationExceptionPropertyMap_Extension_VTable_val =
+nova_exception_Nova_InvalidOperationExceptionPropertyMap_VTable nova_exception_Nova_InvalidOperationExceptionPropertyMap_VTable_val =
 {
 0,
 {
@@ -7642,7 +8297,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_exception_UnimplementedOperationException_Extension_VTable nova_exception_UnimplementedOperationException_Extension_VTable_val =
+nova_exception_Nova_UnimplementedOperationException_VTable nova_exception_Nova_UnimplementedOperationException_VTable_val =
 {
 0,
 {
@@ -7688,7 +8343,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_exception_UnimplementedOperationException_UnimplementedOperationExceptionFunctionMap_Extension_VTable nova_exception_UnimplementedOperationException_UnimplementedOperationExceptionFunctionMap_Extension_VTable_val =
+nova_exception_Nova_UnimplementedOperationExceptionFunctionMap_VTable nova_exception_Nova_UnimplementedOperationExceptionFunctionMap_VTable_val =
 {
 0,
 {
@@ -7735,7 +8390,7 @@ nova_exception_Nova_UnimplementedOperationExceptionFunctionMap_functionMapUnimpl
 };
 
 
-nova_exception_UnimplementedOperationException_UnimplementedOperationExceptionPropertyMap_Extension_VTable nova_exception_UnimplementedOperationException_UnimplementedOperationExceptionPropertyMap_Extension_VTable_val =
+nova_exception_Nova_UnimplementedOperationExceptionPropertyMap_VTable nova_exception_Nova_UnimplementedOperationExceptionPropertyMap_VTable_val =
 {
 0,
 {
@@ -7781,7 +8436,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_gc_GC_Extension_VTable nova_gc_GC_Extension_VTable_val =
+nova_gc_Nova_GC_VTable nova_gc_Nova_GC_VTable_val =
 {
 0,
 {
@@ -7827,7 +8482,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_gc_GC_GCFunctionMap_Extension_VTable nova_gc_GC_GCFunctionMap_Extension_VTable_val =
+nova_gc_Nova_GCFunctionMap_VTable nova_gc_Nova_GCFunctionMap_VTable_val =
 {
 0,
 {
@@ -7873,7 +8528,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_gc_GC_GCPropertyMap_Extension_VTable nova_gc_GC_GCPropertyMap_Extension_VTable_val =
+nova_gc_Nova_GCPropertyMap_VTable nova_gc_Nova_GCPropertyMap_VTable_val =
 {
 0,
 {
@@ -7919,7 +8574,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_io_Console_Extension_VTable nova_io_Console_Extension_VTable_val =
+nova_io_Nova_Console_VTable nova_io_Nova_Console_VTable_val =
 {
 0,
 {
@@ -7965,7 +8620,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_io_Console_ConsoleFunctionMap_Extension_VTable nova_io_Console_ConsoleFunctionMap_Extension_VTable_val =
+nova_io_Nova_ConsoleFunctionMap_VTable nova_io_Nova_ConsoleFunctionMap_VTable_val =
 {
 0,
 {
@@ -8011,7 +8666,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_io_Console_ConsolePropertyMap_Extension_VTable nova_io_Console_ConsolePropertyMap_Extension_VTable_val =
+nova_io_Nova_ConsolePropertyMap_VTable nova_io_Nova_ConsolePropertyMap_VTable_val =
 {
 0,
 {
@@ -8057,7 +8712,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_io_Curl_Extension_VTable nova_io_Curl_Extension_VTable_val =
+nova_io_Nova_Curl_VTable nova_io_Nova_Curl_VTable_val =
 {
 0,
 {
@@ -8103,7 +8758,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_io_Curl_CurlFunctionMap_Extension_VTable nova_io_Curl_CurlFunctionMap_Extension_VTable_val =
+nova_io_Nova_CurlFunctionMap_VTable nova_io_Nova_CurlFunctionMap_VTable_val =
 {
 0,
 {
@@ -8149,7 +8804,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_io_Curl_CurlPropertyMap_Extension_VTable nova_io_Curl_CurlPropertyMap_Extension_VTable_val =
+nova_io_Nova_CurlPropertyMap_VTable nova_io_Nova_CurlPropertyMap_VTable_val =
 {
 0,
 {
@@ -8195,7 +8850,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_io_File_Extension_VTable nova_io_File_Extension_VTable_val =
+nova_io_Nova_File_VTable nova_io_Nova_File_VTable_val =
 {
 0,
 {
@@ -8241,7 +8896,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_io_File_FileFunctionMap_Extension_VTable nova_io_File_FileFunctionMap_Extension_VTable_val =
+nova_io_Nova_FileFunctionMap_VTable nova_io_Nova_FileFunctionMap_VTable_val =
 {
 0,
 {
@@ -8287,7 +8942,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_io_File_FilePropertyMap_Extension_VTable nova_io_File_FilePropertyMap_Extension_VTable_val =
+nova_io_Nova_FilePropertyMap_VTable nova_io_Nova_FilePropertyMap_VTable_val =
 {
 0,
 {
@@ -8333,7 +8988,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_io_FileNotFoundException_Extension_VTable nova_io_FileNotFoundException_Extension_VTable_val =
+nova_io_Nova_FileNotFoundException_VTable nova_io_Nova_FileNotFoundException_VTable_val =
 {
 0,
 {
@@ -8379,7 +9034,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_io_FileNotFoundException_FileNotFoundExceptionFunctionMap_Extension_VTable nova_io_FileNotFoundException_FileNotFoundExceptionFunctionMap_Extension_VTable_val =
+nova_io_Nova_FileNotFoundExceptionFunctionMap_VTable nova_io_Nova_FileNotFoundExceptionFunctionMap_VTable_val =
 {
 0,
 {
@@ -8426,7 +9081,7 @@ nova_exception_Nova_ExceptionFunctionMap_functionMapExceptionFunctionMap_Nova_co
 };
 
 
-nova_io_FileNotFoundException_FileNotFoundExceptionPropertyMap_Extension_VTable nova_io_FileNotFoundException_FileNotFoundExceptionPropertyMap_Extension_VTable_val =
+nova_io_Nova_FileNotFoundExceptionPropertyMap_VTable nova_io_Nova_FileNotFoundExceptionPropertyMap_VTable_val =
 {
 0,
 {
@@ -8472,7 +9127,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_io_FileReader_Extension_VTable nova_io_FileReader_Extension_VTable_val =
+nova_io_Nova_FileReader_VTable nova_io_Nova_FileReader_VTable_val =
 {
 0,
 {
@@ -8501,7 +9156,7 @@ nova_io_FileReader_Extension_VTable nova_io_FileReader_Extension_VTable_val =
 0,
 0,
 (nova_Nova_String*(*)(nova_io_Nova_InputStream*, nova_exception_Nova_ExceptionData*))nova_io_Nova_FileReader_Nova_readString,
-(nova_datastruct_list_Nova_Array*(*)(nova_io_Nova_InputStream*, nova_exception_Nova_ExceptionData*))nova_io_Nova_FileReader_Nova_readBytes,
+(nova_datastruct_list_Byte_Nova_Array1Byte*(*)(nova_io_Nova_InputStream*, nova_exception_Nova_ExceptionData*))nova_io_Nova_FileReader_Nova_readBytes,
 0,
 0,
 0,
@@ -8518,53 +9173,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_io_FileReader_FileReaderFunctionMap_Extension_VTable nova_io_FileReader_FileReaderFunctionMap_Extension_VTable_val =
-{
-0,
-{
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-},
-nova_Nova_Object_Nova_toString,
-nova_Nova_Object_Accessor_Nova_hashCodeLong,
-};
-
-
-nova_io_FileReader_FileReaderPropertyMap_Extension_VTable nova_io_FileReader_FileReaderPropertyMap_Extension_VTable_val =
+nova_io_Nova_FileReaderFunctionMap_VTable nova_io_Nova_FileReaderFunctionMap_VTable_val =
 {
 0,
 {
@@ -8610,7 +9219,53 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_io_FileWriter_Extension_VTable nova_io_FileWriter_Extension_VTable_val =
+nova_io_Nova_FileReaderPropertyMap_VTable nova_io_Nova_FileReaderPropertyMap_VTable_val =
+{
+0,
+{
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+},
+nova_Nova_Object_Nova_toString,
+nova_Nova_Object_Accessor_Nova_hashCodeLong,
+};
+
+
+nova_io_Nova_FileWriter_VTable nova_io_Nova_FileWriter_VTable_val =
 {
 0,
 {
@@ -8657,7 +9312,7 @@ nova_io_Nova_FileWriter_Nova_write,
 };
 
 
-nova_io_FileWriter_FileWriterFunctionMap_Extension_VTable nova_io_FileWriter_FileWriterFunctionMap_Extension_VTable_val =
+nova_io_Nova_FileWriterFunctionMap_VTable nova_io_Nova_FileWriterFunctionMap_VTable_val =
 {
 0,
 {
@@ -8703,7 +9358,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_io_FileWriter_FileWriterPropertyMap_Extension_VTable nova_io_FileWriter_FileWriterPropertyMap_Extension_VTable_val =
+nova_io_Nova_FileWriterPropertyMap_VTable nova_io_Nova_FileWriterPropertyMap_VTable_val =
 {
 0,
 {
@@ -8749,7 +9404,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_io_InputStream_Extension_VTable nova_io_InputStream_Extension_VTable_val =
+nova_io_Nova_InputStream_VTable nova_io_Nova_InputStream_VTable_val =
 {
 0,
 {
@@ -8793,53 +9448,7 @@ nova_io_InputStream_Extension_VTable nova_io_InputStream_Extension_VTable_val =
 };
 
 
-nova_io_InputStream_InputStreamFunctionMap_Extension_VTable nova_io_InputStream_InputStreamFunctionMap_Extension_VTable_val =
-{
-0,
-{
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-},
-nova_Nova_Object_Nova_toString,
-nova_Nova_Object_Accessor_Nova_hashCodeLong,
-};
-
-
-nova_io_InputStream_InputStreamPropertyMap_Extension_VTable nova_io_InputStream_InputStreamPropertyMap_Extension_VTable_val =
+nova_io_Nova_InputStreamFunctionMap_VTable nova_io_Nova_InputStreamFunctionMap_VTable_val =
 {
 0,
 {
@@ -8885,7 +9494,53 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_io_OutputStream_Extension_VTable nova_io_OutputStream_Extension_VTable_val =
+nova_io_Nova_InputStreamPropertyMap_VTable nova_io_Nova_InputStreamPropertyMap_VTable_val =
+{
+0,
+{
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+},
+nova_Nova_Object_Nova_toString,
+nova_Nova_Object_Accessor_Nova_hashCodeLong,
+};
+
+
+nova_io_Nova_OutputStream_VTable nova_io_Nova_OutputStream_VTable_val =
 {
 0,
 {
@@ -8932,7 +9587,7 @@ nova_io_Nova_OutputStream_virtual_Nova_write,
 };
 
 
-nova_io_OutputStream_OutputStreamFunctionMap_Extension_VTable nova_io_OutputStream_OutputStreamFunctionMap_Extension_VTable_val =
+nova_io_Nova_OutputStreamFunctionMap_VTable nova_io_Nova_OutputStreamFunctionMap_VTable_val =
 {
 0,
 {
@@ -8978,7 +9633,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_io_OutputStream_OutputStreamPropertyMap_Extension_VTable nova_io_OutputStream_OutputStreamPropertyMap_Extension_VTable_val =
+nova_io_Nova_OutputStreamPropertyMap_VTable nova_io_Nova_OutputStreamPropertyMap_VTable_val =
 {
 0,
 {
@@ -9024,7 +9679,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_io_StreamReader_Extension_VTable nova_io_StreamReader_Extension_VTable_val =
+nova_io_Nova_StreamReader_VTable nova_io_Nova_StreamReader_VTable_val =
 {
 0,
 {
@@ -9070,7 +9725,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_io_StreamReader_StreamReaderFunctionMap_Extension_VTable nova_io_StreamReader_StreamReaderFunctionMap_Extension_VTable_val =
+nova_io_Nova_StreamReaderFunctionMap_VTable nova_io_Nova_StreamReaderFunctionMap_VTable_val =
 {
 0,
 {
@@ -9116,7 +9771,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_io_StreamReader_StreamReaderPropertyMap_Extension_VTable nova_io_StreamReader_StreamReaderPropertyMap_Extension_VTable_val =
+nova_io_Nova_StreamReaderPropertyMap_VTable nova_io_Nova_StreamReaderPropertyMap_VTable_val =
 {
 0,
 {
@@ -9162,7 +9817,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_math_ArithmeticSequence_Extension_VTable nova_math_ArithmeticSequence_Extension_VTable_val =
+nova_math_Nova_ArithmeticSequence_VTable nova_math_Nova_ArithmeticSequence_VTable_val =
 {
 0,
 {
@@ -9208,7 +9863,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_math_ArithmeticSequence_ArithmeticSequenceFunctionMap_Extension_VTable nova_math_ArithmeticSequence_ArithmeticSequenceFunctionMap_Extension_VTable_val =
+nova_math_Nova_ArithmeticSequenceFunctionMap_VTable nova_math_Nova_ArithmeticSequenceFunctionMap_VTable_val =
 {
 0,
 {
@@ -9254,7 +9909,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_math_ArithmeticSequence_ArithmeticSequencePropertyMap_Extension_VTable nova_math_ArithmeticSequence_ArithmeticSequencePropertyMap_Extension_VTable_val =
+nova_math_Nova_ArithmeticSequencePropertyMap_VTable nova_math_Nova_ArithmeticSequencePropertyMap_VTable_val =
 {
 0,
 {
@@ -9300,7 +9955,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_math_Diekstra_Extension_VTable nova_math_Diekstra_Extension_VTable_val =
+nova_math_Nova_Diekstra_VTable nova_math_Nova_Diekstra_VTable_val =
 {
 0,
 {
@@ -9346,7 +10001,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_math_Diekstra_DiekstraFunctionMap_Extension_VTable nova_math_Diekstra_DiekstraFunctionMap_Extension_VTable_val =
+nova_math_Nova_DiekstraFunctionMap_VTable nova_math_Nova_DiekstraFunctionMap_VTable_val =
 {
 0,
 {
@@ -9392,7 +10047,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_math_Diekstra_DiekstraPropertyMap_Extension_VTable nova_math_Diekstra_DiekstraPropertyMap_Extension_VTable_val =
+nova_math_Nova_DiekstraPropertyMap_VTable nova_math_Nova_DiekstraPropertyMap_VTable_val =
 {
 0,
 {
@@ -9438,7 +10093,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_math_GeometricSequence_Extension_VTable nova_math_GeometricSequence_Extension_VTable_val =
+nova_math_Nova_GeometricSequence_VTable nova_math_Nova_GeometricSequence_VTable_val =
 {
 0,
 {
@@ -9484,7 +10139,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_math_GeometricSequence_GeometricSequenceFunctionMap_Extension_VTable nova_math_GeometricSequence_GeometricSequenceFunctionMap_Extension_VTable_val =
+nova_math_Nova_GeometricSequenceFunctionMap_VTable nova_math_Nova_GeometricSequenceFunctionMap_VTable_val =
 {
 0,
 {
@@ -9530,7 +10185,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_math_GeometricSequence_GeometricSequencePropertyMap_Extension_VTable nova_math_GeometricSequence_GeometricSequencePropertyMap_Extension_VTable_val =
+nova_math_Nova_GeometricSequencePropertyMap_VTable nova_math_Nova_GeometricSequencePropertyMap_VTable_val =
 {
 0,
 {
@@ -9576,7 +10231,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_math_Graph_Extension_VTable nova_math_Graph_Extension_VTable_val =
+nova_math_Nova_Graph_VTable nova_math_Nova_Graph_VTable_val =
 {
 0,
 {
@@ -9622,7 +10277,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_math_Graph_GraphFunctionMap_Extension_VTable nova_math_Graph_GraphFunctionMap_Extension_VTable_val =
+nova_math_Nova_GraphFunctionMap_VTable nova_math_Nova_GraphFunctionMap_VTable_val =
 {
 0,
 {
@@ -9668,7 +10323,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_math_Graph_GraphPropertyMap_Extension_VTable nova_math_Graph_GraphPropertyMap_Extension_VTable_val =
+nova_math_Nova_GraphPropertyMap_VTable nova_math_Nova_GraphPropertyMap_VTable_val =
 {
 0,
 {
@@ -9714,7 +10369,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_math_InvalidNumericStatementException_Extension_VTable nova_math_InvalidNumericStatementException_Extension_VTable_val =
+nova_math_Nova_InvalidNumericStatementException_VTable nova_math_Nova_InvalidNumericStatementException_VTable_val =
 {
 0,
 {
@@ -9760,7 +10415,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_math_InvalidNumericStatementException_InvalidNumericStatementExceptionFunctionMap_Extension_VTable nova_math_InvalidNumericStatementException_InvalidNumericStatementExceptionFunctionMap_Extension_VTable_val =
+nova_math_Nova_InvalidNumericStatementExceptionFunctionMap_VTable nova_math_Nova_InvalidNumericStatementExceptionFunctionMap_VTable_val =
 {
 0,
 {
@@ -9807,7 +10462,7 @@ nova_math_Nova_InvalidNumericStatementExceptionFunctionMap_functionMapInvalidNum
 };
 
 
-nova_math_InvalidNumericStatementException_InvalidNumericStatementExceptionPropertyMap_Extension_VTable nova_math_InvalidNumericStatementException_InvalidNumericStatementExceptionPropertyMap_Extension_VTable_val =
+nova_math_Nova_InvalidNumericStatementExceptionPropertyMap_VTable nova_math_Nova_InvalidNumericStatementExceptionPropertyMap_VTable_val =
 {
 0,
 {
@@ -9853,7 +10508,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_math_Math_Extension_VTable nova_math_Math_Extension_VTable_val =
+nova_math_Nova_Math_VTable nova_math_Nova_Math_VTable_val =
 {
 0,
 {
@@ -9899,7 +10554,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_math_Math_MathFunctionMap_Extension_VTable nova_math_Math_MathFunctionMap_Extension_VTable_val =
+nova_math_Nova_MathFunctionMap_VTable nova_math_Nova_MathFunctionMap_VTable_val =
 {
 0,
 {
@@ -9945,7 +10600,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_math_Math_MathPropertyMap_Extension_VTable nova_math_Math_MathPropertyMap_Extension_VTable_val =
+nova_math_Nova_MathPropertyMap_VTable nova_math_Nova_MathPropertyMap_VTable_val =
 {
 0,
 {
@@ -9991,7 +10646,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_math_Matrix_Extension_VTable nova_math_Matrix_Extension_VTable_val =
+nova_math_Nova_Matrix_VTable nova_math_Nova_Matrix_VTable_val =
 {
 0,
 {
@@ -10037,7 +10692,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_math_Matrix_MatrixFunctionMap_Extension_VTable nova_math_Matrix_MatrixFunctionMap_Extension_VTable_val =
+nova_math_Nova_MatrixFunctionMap_VTable nova_math_Nova_MatrixFunctionMap_VTable_val =
 {
 0,
 {
@@ -10083,7 +10738,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_math_Matrix_MatrixPropertyMap_Extension_VTable nova_math_Matrix_MatrixPropertyMap_Extension_VTable_val =
+nova_math_Nova_MatrixPropertyMap_VTable nova_math_Nova_MatrixPropertyMap_VTable_val =
 {
 0,
 {
@@ -10129,7 +10784,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_math_NumericOperand_Extension_VTable nova_math_NumericOperand_Extension_VTable_val =
+nova_math_Nova_NumericOperand_VTable nova_math_Nova_NumericOperand_VTable_val =
 {
 0,
 {
@@ -10175,7 +10830,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_math_NumericOperand_NumericOperandFunctionMap_Extension_VTable nova_math_NumericOperand_NumericOperandFunctionMap_Extension_VTable_val =
+nova_math_Nova_NumericOperandFunctionMap_VTable nova_math_Nova_NumericOperandFunctionMap_VTable_val =
 {
 0,
 {
@@ -10222,7 +10877,7 @@ nova_math_Nova_NumericOperandFunctionMap_functionMapNumericOperandFunctionMap_No
 };
 
 
-nova_math_NumericOperand_NumericOperandPropertyMap_Extension_VTable nova_math_NumericOperand_NumericOperandPropertyMap_Extension_VTable_val =
+nova_math_Nova_NumericOperandPropertyMap_VTable nova_math_Nova_NumericOperandPropertyMap_VTable_val =
 {
 0,
 {
@@ -10268,7 +10923,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_math_NumericOperation_Extension_VTable nova_math_NumericOperation_Extension_VTable_val =
+nova_math_Nova_NumericOperation_VTable nova_math_Nova_NumericOperation_VTable_val =
 {
 0,
 {
@@ -10314,7 +10969,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_math_NumericOperation_NumericOperationFunctionMap_Extension_VTable nova_math_NumericOperation_NumericOperationFunctionMap_Extension_VTable_val =
+nova_math_Nova_NumericOperationFunctionMap_VTable nova_math_Nova_NumericOperationFunctionMap_VTable_val =
 {
 0,
 {
@@ -10361,7 +11016,7 @@ nova_math_Nova_NumericOperationFunctionMap_functionMapNumericOperationFunctionMa
 };
 
 
-nova_math_NumericOperation_NumericOperationPropertyMap_Extension_VTable nova_math_NumericOperation_NumericOperationPropertyMap_Extension_VTable_val =
+nova_math_Nova_NumericOperationPropertyMap_VTable nova_math_Nova_NumericOperationPropertyMap_VTable_val =
 {
 0,
 {
@@ -10407,7 +11062,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_math_NumericStatement_Extension_VTable nova_math_NumericStatement_Extension_VTable_val =
+nova_math_Nova_NumericStatement_VTable nova_math_Nova_NumericStatement_VTable_val =
 {
 0,
 {
@@ -10453,7 +11108,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_math_NumericStatement_NumericStatementFunctionMap_Extension_VTable nova_math_NumericStatement_NumericStatementFunctionMap_Extension_VTable_val =
+nova_math_Nova_NumericStatementFunctionMap_VTable nova_math_Nova_NumericStatementFunctionMap_VTable_val =
 {
 0,
 {
@@ -10499,7 +11154,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_math_NumericStatement_NumericStatementPropertyMap_Extension_VTable nova_math_NumericStatement_NumericStatementPropertyMap_Extension_VTable_val =
+nova_math_Nova_NumericStatementPropertyMap_VTable nova_math_Nova_NumericStatementPropertyMap_VTable_val =
 {
 0,
 {
@@ -10545,7 +11200,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_math_NumericTree_Extension_VTable nova_math_NumericTree_Extension_VTable_val =
+nova_math_Nova_NumericTree_VTable nova_math_Nova_NumericTree_VTable_val =
 {
 0,
 {
@@ -10591,7 +11246,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_math_NumericTree_NumericTreeFunctionMap_Extension_VTable nova_math_NumericTree_NumericTreeFunctionMap_Extension_VTable_val =
+nova_math_Nova_NumericTreeFunctionMap_VTable nova_math_Nova_NumericTreeFunctionMap_VTable_val =
 {
 0,
 {
@@ -10637,7 +11292,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_math_NumericTree_NumericTreePropertyMap_Extension_VTable nova_math_NumericTree_NumericTreePropertyMap_Extension_VTable_val =
+nova_math_Nova_NumericTreePropertyMap_VTable nova_math_Nova_NumericTreePropertyMap_VTable_val =
 {
 0,
 {
@@ -10683,7 +11338,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_math_Polynomial_Extension_VTable nova_math_Polynomial_Extension_VTable_val =
+nova_math_Nova_Polynomial_VTable nova_math_Nova_Polynomial_VTable_val =
 {
 0,
 {
@@ -10729,7 +11384,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_math_Polynomial_PolynomialFunctionMap_Extension_VTable nova_math_Polynomial_PolynomialFunctionMap_Extension_VTable_val =
+nova_math_Nova_PolynomialFunctionMap_VTable nova_math_Nova_PolynomialFunctionMap_VTable_val =
 {
 0,
 {
@@ -10775,7 +11430,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_math_Polynomial_PolynomialPropertyMap_Extension_VTable nova_math_Polynomial_PolynomialPropertyMap_Extension_VTable_val =
+nova_math_Nova_PolynomialPropertyMap_VTable nova_math_Nova_PolynomialPropertyMap_VTable_val =
 {
 0,
 {
@@ -10821,7 +11476,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_math_Sequence_Extension_VTable nova_math_Sequence_Extension_VTable_val =
+nova_math_Nova_Sequence_VTable nova_math_Nova_Sequence_VTable_val =
 {
 0,
 {
@@ -10867,7 +11522,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_math_Sequence_SequenceFunctionMap_Extension_VTable nova_math_Sequence_SequenceFunctionMap_Extension_VTable_val =
+nova_math_Nova_SequenceFunctionMap_VTable nova_math_Nova_SequenceFunctionMap_VTable_val =
 {
 0,
 {
@@ -10913,7 +11568,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_math_Sequence_SequencePropertyMap_Extension_VTable nova_math_Sequence_SequencePropertyMap_Extension_VTable_val =
+nova_math_Nova_SequencePropertyMap_VTable nova_math_Nova_SequencePropertyMap_VTable_val =
 {
 0,
 {
@@ -10959,7 +11614,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_math_Statement_Extension_VTable nova_math_Statement_Extension_VTable_val =
+nova_math_Nova_Statement_VTable nova_math_Nova_Statement_VTable_val =
 {
 0,
 {
@@ -11005,7 +11660,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_math_Statement_StatementFunctionMap_Extension_VTable nova_math_Statement_StatementFunctionMap_Extension_VTable_val =
+nova_math_Nova_StatementFunctionMap_VTable nova_math_Nova_StatementFunctionMap_VTable_val =
 {
 0,
 {
@@ -11051,7 +11706,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_math_Statement_StatementPropertyMap_Extension_VTable nova_math_Statement_StatementPropertyMap_Extension_VTable_val =
+nova_math_Nova_StatementPropertyMap_VTable nova_math_Nova_StatementPropertyMap_VTable_val =
 {
 0,
 {
@@ -11097,7 +11752,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_math_StatementComponent_Extension_VTable nova_math_StatementComponent_Extension_VTable_val =
+nova_math_Nova_StatementComponent_VTable nova_math_Nova_StatementComponent_VTable_val =
 {
 0,
 {
@@ -11143,7 +11798,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_math_StatementComponent_StatementComponentFunctionMap_Extension_VTable nova_math_StatementComponent_StatementComponentFunctionMap_Extension_VTable_val =
+nova_math_Nova_StatementComponentFunctionMap_VTable nova_math_Nova_StatementComponentFunctionMap_VTable_val =
 {
 0,
 {
@@ -11189,7 +11844,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_math_StatementComponent_StatementComponentPropertyMap_Extension_VTable nova_math_StatementComponent_StatementComponentPropertyMap_Extension_VTable_val =
+nova_math_Nova_StatementComponentPropertyMap_VTable nova_math_Nova_StatementComponentPropertyMap_VTable_val =
 {
 0,
 {
@@ -11235,7 +11890,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_math_VariableOperand_Extension_VTable nova_math_VariableOperand_Extension_VTable_val =
+nova_math_Nova_VariableOperand_VTable nova_math_Nova_VariableOperand_VTable_val =
 {
 0,
 {
@@ -11281,7 +11936,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_math_VariableOperand_VariableOperandFunctionMap_Extension_VTable nova_math_VariableOperand_VariableOperandFunctionMap_Extension_VTable_val =
+nova_math_Nova_VariableOperandFunctionMap_VTable nova_math_Nova_VariableOperandFunctionMap_VTable_val =
 {
 0,
 {
@@ -11327,7 +11982,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_math_VariableOperand_VariableOperandPropertyMap_Extension_VTable nova_math_VariableOperand_VariableOperandPropertyMap_Extension_VTable_val =
+nova_math_Nova_VariableOperandPropertyMap_VTable nova_math_Nova_VariableOperandPropertyMap_VTable_val =
 {
 0,
 {
@@ -11373,7 +12028,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_math_Vector_Extension_VTable nova_math_Vector_Extension_VTable_val =
+nova_math_Nova_Vector_VTable nova_math_Nova_Vector_VTable_val =
 {
 0,
 {
@@ -11419,7 +12074,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_math_Vector_VectorFunctionMap_Extension_VTable nova_math_Vector_VectorFunctionMap_Extension_VTable_val =
+nova_math_Nova_VectorFunctionMap_VTable nova_math_Nova_VectorFunctionMap_VTable_val =
 {
 0,
 {
@@ -11465,7 +12120,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_math_Vector_VectorPropertyMap_Extension_VTable nova_math_Vector_VectorPropertyMap_Extension_VTable_val =
+nova_math_Nova_VectorPropertyMap_VTable nova_math_Nova_VectorPropertyMap_VTable_val =
 {
 0,
 {
@@ -11511,7 +12166,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_math_Vector2D_Extension_VTable nova_math_Vector2D_Extension_VTable_val =
+nova_math_Nova_Vector2D_VTable nova_math_Nova_Vector2D_VTable_val =
 {
 0,
 {
@@ -11557,7 +12212,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_math_Vector2D_Vector2DFunctionMap_Extension_VTable nova_math_Vector2D_Vector2DFunctionMap_Extension_VTable_val =
+nova_math_Nova_Vector2DFunctionMap_VTable nova_math_Nova_Vector2DFunctionMap_VTable_val =
 {
 0,
 {
@@ -11603,7 +12258,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_math_Vector2D_Vector2DPropertyMap_Extension_VTable nova_math_Vector2D_Vector2DPropertyMap_Extension_VTable_val =
+nova_math_Nova_Vector2DPropertyMap_VTable nova_math_Nova_Vector2DPropertyMap_VTable_val =
 {
 0,
 {
@@ -11649,7 +12304,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_math_Vector3D_Extension_VTable nova_math_Vector3D_Extension_VTable_val =
+nova_math_Nova_Vector3D_VTable nova_math_Nova_Vector3D_VTable_val =
 {
 0,
 {
@@ -11695,7 +12350,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_math_Vector3D_Vector3DFunctionMap_Extension_VTable nova_math_Vector3D_Vector3DFunctionMap_Extension_VTable_val =
+nova_math_Nova_Vector3DFunctionMap_VTable nova_math_Nova_Vector3DFunctionMap_VTable_val =
 {
 0,
 {
@@ -11741,7 +12396,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_math_Vector3D_Vector3DPropertyMap_Extension_VTable nova_math_Vector3D_Vector3DPropertyMap_Extension_VTable_val =
+nova_math_Nova_Vector3DPropertyMap_VTable nova_math_Nova_Vector3DPropertyMap_VTable_val =
 {
 0,
 {
@@ -11787,7 +12442,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_math_Vector4D_Extension_VTable nova_math_Vector4D_Extension_VTable_val =
+nova_math_Nova_Vector4D_VTable nova_math_Nova_Vector4D_VTable_val =
 {
 0,
 {
@@ -11833,7 +12488,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_math_Vector4D_Vector4DFunctionMap_Extension_VTable nova_math_Vector4D_Vector4DFunctionMap_Extension_VTable_val =
+nova_math_Nova_Vector4DFunctionMap_VTable nova_math_Nova_Vector4DFunctionMap_VTable_val =
 {
 0,
 {
@@ -11879,7 +12534,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_math_Vector4D_Vector4DPropertyMap_Extension_VTable nova_math_Vector4D_Vector4DPropertyMap_Extension_VTable_val =
+nova_math_Nova_Vector4DPropertyMap_VTable nova_math_Nova_Vector4DPropertyMap_VTable_val =
 {
 0,
 {
@@ -11925,7 +12580,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_math_calculus_Calculus_Extension_VTable nova_math_calculus_Calculus_Extension_VTable_val =
+nova_math_calculus_Nova_Calculus_VTable nova_math_calculus_Nova_Calculus_VTable_val =
 {
 0,
 {
@@ -11971,7 +12626,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_math_calculus_Calculus_CalculusFunctionMap_Extension_VTable nova_math_calculus_Calculus_CalculusFunctionMap_Extension_VTable_val =
+nova_math_calculus_Nova_CalculusFunctionMap_VTable nova_math_calculus_Nova_CalculusFunctionMap_VTable_val =
 {
 0,
 {
@@ -12017,7 +12672,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_math_calculus_Calculus_CalculusPropertyMap_Extension_VTable nova_math_calculus_Calculus_CalculusPropertyMap_Extension_VTable_val =
+nova_math_calculus_Nova_CalculusPropertyMap_VTable nova_math_calculus_Nova_CalculusPropertyMap_VTable_val =
 {
 0,
 {
@@ -12063,7 +12718,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_math_huffman_HuffmanTree_Extension_VTable nova_math_huffman_HuffmanTree_Extension_VTable_val =
+nova_math_huffman_Nova_HuffmanTree_VTable nova_math_huffman_Nova_HuffmanTree_VTable_val =
 {
 0,
 {
@@ -12109,7 +12764,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_math_huffman_HuffmanTree_HuffmanTreeFunctionMap_Extension_VTable nova_math_huffman_HuffmanTree_HuffmanTreeFunctionMap_Extension_VTable_val =
+nova_math_huffman_Nova_HuffmanTreeFunctionMap_VTable nova_math_huffman_Nova_HuffmanTreeFunctionMap_VTable_val =
 {
 0,
 {
@@ -12155,7 +12810,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_math_huffman_HuffmanTree_HuffmanTreePropertyMap_Extension_VTable nova_math_huffman_HuffmanTree_HuffmanTreePropertyMap_Extension_VTable_val =
+nova_math_huffman_Nova_HuffmanTreePropertyMap_VTable nova_math_huffman_Nova_HuffmanTreePropertyMap_VTable_val =
 {
 0,
 {
@@ -12201,7 +12856,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_math_logic_Conclusion_Extension_VTable nova_math_logic_Conclusion_Extension_VTable_val =
+nova_math_logic_Nova_Conclusion_VTable nova_math_logic_Nova_Conclusion_VTable_val =
 {
 0,
 {
@@ -12247,7 +12902,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_math_logic_Conclusion_ConclusionFunctionMap_Extension_VTable nova_math_logic_Conclusion_ConclusionFunctionMap_Extension_VTable_val =
+nova_math_logic_Nova_ConclusionFunctionMap_VTable nova_math_logic_Nova_ConclusionFunctionMap_VTable_val =
 {
 0,
 {
@@ -12294,7 +12949,7 @@ nova_math_logic_Nova_ConclusionFunctionMap_functionMapConclusionFunctionMap_Nova
 };
 
 
-nova_math_logic_Conclusion_ConclusionPropertyMap_Extension_VTable nova_math_logic_Conclusion_ConclusionPropertyMap_Extension_VTable_val =
+nova_math_logic_Nova_ConclusionPropertyMap_VTable nova_math_logic_Nova_ConclusionPropertyMap_VTable_val =
 {
 0,
 {
@@ -12340,7 +12995,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_math_logic_Hypothesis_Extension_VTable nova_math_logic_Hypothesis_Extension_VTable_val =
+nova_math_logic_Nova_Hypothesis_VTable nova_math_logic_Nova_Hypothesis_VTable_val =
 {
 0,
 {
@@ -12386,7 +13041,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_math_logic_Hypothesis_HypothesisFunctionMap_Extension_VTable nova_math_logic_Hypothesis_HypothesisFunctionMap_Extension_VTable_val =
+nova_math_logic_Nova_HypothesisFunctionMap_VTable nova_math_logic_Nova_HypothesisFunctionMap_VTable_val =
 {
 0,
 {
@@ -12433,7 +13088,7 @@ nova_math_logic_Nova_HypothesisFunctionMap_functionMapHypothesisFunctionMap_Nova
 };
 
 
-nova_math_logic_Hypothesis_HypothesisPropertyMap_Extension_VTable nova_math_logic_Hypothesis_HypothesisPropertyMap_Extension_VTable_val =
+nova_math_logic_Nova_HypothesisPropertyMap_VTable nova_math_logic_Nova_HypothesisPropertyMap_VTable_val =
 {
 0,
 {
@@ -12479,7 +13134,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_math_logic_InvalidFormulaException_Extension_VTable nova_math_logic_InvalidFormulaException_Extension_VTable_val =
+nova_math_logic_Nova_InvalidFormulaException_VTable nova_math_logic_Nova_InvalidFormulaException_VTable_val =
 {
 0,
 {
@@ -12525,7 +13180,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_math_logic_InvalidFormulaException_InvalidFormulaExceptionFunctionMap_Extension_VTable nova_math_logic_InvalidFormulaException_InvalidFormulaExceptionFunctionMap_Extension_VTable_val =
+nova_math_logic_Nova_InvalidFormulaExceptionFunctionMap_VTable nova_math_logic_Nova_InvalidFormulaExceptionFunctionMap_VTable_val =
 {
 0,
 {
@@ -12572,7 +13227,7 @@ nova_math_logic_Nova_InvalidFormulaExceptionFunctionMap_functionMapInvalidFormul
 };
 
 
-nova_math_logic_InvalidFormulaException_InvalidFormulaExceptionPropertyMap_Extension_VTable nova_math_logic_InvalidFormulaException_InvalidFormulaExceptionPropertyMap_Extension_VTable_val =
+nova_math_logic_Nova_InvalidFormulaExceptionPropertyMap_VTable nova_math_logic_Nova_InvalidFormulaExceptionPropertyMap_VTable_val =
 {
 0,
 {
@@ -12618,7 +13273,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_math_logic_LogicalConnective_Extension_VTable nova_math_logic_LogicalConnective_Extension_VTable_val =
+nova_math_logic_Nova_LogicalConnective_VTable nova_math_logic_Nova_LogicalConnective_VTable_val =
 {
 0,
 {
@@ -12664,7 +13319,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_math_logic_LogicalConnective_LogicalConnectiveFunctionMap_Extension_VTable nova_math_logic_LogicalConnective_LogicalConnectiveFunctionMap_Extension_VTable_val =
+nova_math_logic_Nova_LogicalConnectiveFunctionMap_VTable nova_math_logic_Nova_LogicalConnectiveFunctionMap_VTable_val =
 {
 0,
 {
@@ -12711,7 +13366,7 @@ nova_math_logic_Nova_LogicalConnectiveFunctionMap_functionMapLogicalConnectiveFu
 };
 
 
-nova_math_logic_LogicalConnective_LogicalConnectivePropertyMap_Extension_VTable nova_math_logic_LogicalConnective_LogicalConnectivePropertyMap_Extension_VTable_val =
+nova_math_logic_Nova_LogicalConnectivePropertyMap_VTable nova_math_logic_Nova_LogicalConnectivePropertyMap_VTable_val =
 {
 0,
 {
@@ -12757,7 +13412,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_math_logic_LogicalStatement_Extension_VTable nova_math_logic_LogicalStatement_Extension_VTable_val =
+nova_math_logic_Nova_LogicalStatement_VTable nova_math_logic_Nova_LogicalStatement_VTable_val =
 {
 0,
 {
@@ -12803,7 +13458,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_math_logic_LogicalStatement_LogicalStatementFunctionMap_Extension_VTable nova_math_logic_LogicalStatement_LogicalStatementFunctionMap_Extension_VTable_val =
+nova_math_logic_Nova_LogicalStatementFunctionMap_VTable nova_math_logic_Nova_LogicalStatementFunctionMap_VTable_val =
 {
 0,
 {
@@ -12850,7 +13505,7 @@ nova_math_logic_Nova_LogicalStatementFunctionMap_functionMapLogicalStatementFunc
 };
 
 
-nova_math_logic_LogicalStatement_LogicalStatementPropertyMap_Extension_VTable nova_math_logic_LogicalStatement_LogicalStatementPropertyMap_Extension_VTable_val =
+nova_math_logic_Nova_LogicalStatementPropertyMap_VTable nova_math_logic_Nova_LogicalStatementPropertyMap_VTable_val =
 {
 0,
 {
@@ -12896,7 +13551,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_math_logic_StatementComponent_Extension_VTable nova_math_logic_StatementComponent_Extension_VTable_val =
+nova_math_logic_Nova_StatementComponent_VTable nova_math_logic_Nova_StatementComponent_VTable_val =
 {
 0,
 {
@@ -12942,284 +13597,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_math_logic_StatementComponent_StatementComponentFunctionMap_Extension_VTable nova_math_logic_StatementComponent_StatementComponentFunctionMap_Extension_VTable_val =
-{
-0,
-{
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-},
-nova_Nova_Object_Nova_toString,
-nova_Nova_Object_Accessor_Nova_hashCodeLong,
-nova_math_logic_Nova_StatementComponentFunctionMap_functionMapStatementComponentFunctionMap_Nova_construct,
-};
-
-
-nova_math_logic_StatementComponent_StatementComponentPropertyMap_Extension_VTable nova_math_logic_StatementComponent_StatementComponentPropertyMap_Extension_VTable_val =
-{
-0,
-{
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-},
-nova_Nova_Object_Nova_toString,
-nova_Nova_Object_Accessor_Nova_hashCodeLong,
-};
-
-
-nova_math_logic_StatementGroup_Extension_VTable nova_math_logic_StatementGroup_Extension_VTable_val =
-{
-0,
-{
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-},
-nova_Nova_Object_Nova_toString,
-nova_Nova_Object_Accessor_Nova_hashCodeLong,
-};
-
-
-nova_math_logic_StatementGroup_StatementGroupFunctionMap_Extension_VTable nova_math_logic_StatementGroup_StatementGroupFunctionMap_Extension_VTable_val =
-{
-0,
-{
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-},
-nova_Nova_Object_Nova_toString,
-nova_Nova_Object_Accessor_Nova_hashCodeLong,
-};
-
-
-nova_math_logic_StatementGroup_StatementGroupPropertyMap_Extension_VTable nova_math_logic_StatementGroup_StatementGroupPropertyMap_Extension_VTable_val =
-{
-0,
-{
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-},
-nova_Nova_Object_Nova_toString,
-nova_Nova_Object_Accessor_Nova_hashCodeLong,
-};
-
-
-nova_math_logic_StatementLetter_Extension_VTable nova_math_logic_StatementLetter_Extension_VTable_val =
-{
-0,
-{
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-},
-nova_Nova_Object_Nova_toString,
-nova_Nova_Object_Accessor_Nova_hashCodeLong,
-};
-
-
-nova_math_logic_StatementLetter_StatementLetterFunctionMap_Extension_VTable nova_math_logic_StatementLetter_StatementLetterFunctionMap_Extension_VTable_val =
+nova_math_logic_Nova_StatementComponentFunctionMap_VTable nova_math_logic_Nova_StatementComponentFunctionMap_VTable_val =
 {
 0,
 {
@@ -13266,7 +13644,7 @@ nova_math_logic_Nova_StatementComponentFunctionMap_functionMapStatementComponent
 };
 
 
-nova_math_logic_StatementLetter_StatementLetterPropertyMap_Extension_VTable nova_math_logic_StatementLetter_StatementLetterPropertyMap_Extension_VTable_val =
+nova_math_logic_Nova_StatementComponentPropertyMap_VTable nova_math_logic_Nova_StatementComponentPropertyMap_VTable_val =
 {
 0,
 {
@@ -13312,7 +13690,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_math_logic_WFF_Extension_VTable nova_math_logic_WFF_Extension_VTable_val =
+nova_math_logic_Nova_StatementGroup_VTable nova_math_logic_Nova_StatementGroup_VTable_val =
 {
 0,
 {
@@ -13358,7 +13736,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_math_logic_WFF_WFFFunctionMap_Extension_VTable nova_math_logic_WFF_WFFFunctionMap_Extension_VTable_val =
+nova_math_logic_Nova_StatementGroupFunctionMap_VTable nova_math_logic_Nova_StatementGroupFunctionMap_VTable_val =
 {
 0,
 {
@@ -13404,7 +13782,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_math_logic_WFF_WFFPropertyMap_Extension_VTable nova_math_logic_WFF_WFFPropertyMap_Extension_VTable_val =
+nova_math_logic_Nova_StatementGroupPropertyMap_VTable nova_math_logic_Nova_StatementGroupPropertyMap_VTable_val =
 {
 0,
 {
@@ -13450,7 +13828,284 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_meta_Class_Extension_VTable nova_meta_Class_Extension_VTable_val =
+nova_math_logic_Nova_StatementLetter_VTable nova_math_logic_Nova_StatementLetter_VTable_val =
+{
+0,
+{
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+},
+nova_Nova_Object_Nova_toString,
+nova_Nova_Object_Accessor_Nova_hashCodeLong,
+};
+
+
+nova_math_logic_Nova_StatementLetterFunctionMap_VTable nova_math_logic_Nova_StatementLetterFunctionMap_VTable_val =
+{
+0,
+{
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+},
+nova_Nova_Object_Nova_toString,
+nova_Nova_Object_Accessor_Nova_hashCodeLong,
+nova_math_logic_Nova_StatementComponentFunctionMap_functionMapStatementComponentFunctionMap_Nova_construct,
+};
+
+
+nova_math_logic_Nova_StatementLetterPropertyMap_VTable nova_math_logic_Nova_StatementLetterPropertyMap_VTable_val =
+{
+0,
+{
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+},
+nova_Nova_Object_Nova_toString,
+nova_Nova_Object_Accessor_Nova_hashCodeLong,
+};
+
+
+nova_math_logic_Nova_WFF_VTable nova_math_logic_Nova_WFF_VTable_val =
+{
+0,
+{
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+},
+nova_Nova_Object_Nova_toString,
+nova_Nova_Object_Accessor_Nova_hashCodeLong,
+};
+
+
+nova_math_logic_Nova_WFFFunctionMap_VTable nova_math_logic_Nova_WFFFunctionMap_VTable_val =
+{
+0,
+{
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+},
+nova_Nova_Object_Nova_toString,
+nova_Nova_Object_Accessor_Nova_hashCodeLong,
+};
+
+
+nova_math_logic_Nova_WFFPropertyMap_VTable nova_math_logic_Nova_WFFPropertyMap_VTable_val =
+{
+0,
+{
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+},
+nova_Nova_Object_Nova_toString,
+nova_Nova_Object_Accessor_Nova_hashCodeLong,
+};
+
+
+nova_meta_Nova_Class_VTable nova_meta_Nova_Class_VTable_val =
 {
 0,
 {
@@ -13496,7 +14151,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_meta_Class_ClassFunctionMap_Extension_VTable nova_meta_Class_ClassFunctionMap_Extension_VTable_val =
+nova_meta_Nova_ClassFunctionMap_VTable nova_meta_Nova_ClassFunctionMap_VTable_val =
 {
 0,
 {
@@ -13542,7 +14197,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_meta_Class_ClassPropertyMap_Extension_VTable nova_meta_Class_ClassPropertyMap_Extension_VTable_val =
+nova_meta_Nova_ClassPropertyMap_VTable nova_meta_Nova_ClassPropertyMap_VTable_val =
 {
 0,
 {
@@ -13588,7 +14243,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_meta_Field_Extension_VTable nova_meta_Field_Extension_VTable_val =
+nova_meta_Nova_Field_VTable nova_meta_Nova_Field_VTable_val =
 {
 0,
 {
@@ -13634,7 +14289,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_meta_Field_FieldFunctionMap_Extension_VTable nova_meta_Field_FieldFunctionMap_Extension_VTable_val =
+nova_meta_Nova_FieldFunctionMap_VTable nova_meta_Nova_FieldFunctionMap_VTable_val =
 {
 0,
 {
@@ -13680,7 +14335,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_meta_Field_FieldPropertyMap_Extension_VTable nova_meta_Field_FieldPropertyMap_Extension_VTable_val =
+nova_meta_Nova_FieldPropertyMap_VTable nova_meta_Nova_FieldPropertyMap_VTable_val =
 {
 0,
 {
@@ -13726,7 +14381,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_meta_FunctionMap_Extension_VTable nova_meta_FunctionMap_Extension_VTable_val =
+nova_meta_Nova_FunctionMap_VTable nova_meta_Nova_FunctionMap_VTable_val =
 {
 0,
 {
@@ -13772,7 +14427,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_meta_FunctionMap_FunctionMapFunctionMap_Extension_VTable nova_meta_FunctionMap_FunctionMapFunctionMap_Extension_VTable_val =
+nova_meta_Nova_FunctionMapFunctionMap_VTable nova_meta_Nova_FunctionMapFunctionMap_VTable_val =
 {
 0,
 {
@@ -13818,7 +14473,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_meta_FunctionMap_FunctionMapPropertyMap_Extension_VTable nova_meta_FunctionMap_FunctionMapPropertyMap_Extension_VTable_val =
+nova_meta_Nova_FunctionMapPropertyMap_VTable nova_meta_Nova_FunctionMapPropertyMap_VTable_val =
 {
 0,
 {
@@ -13864,7 +14519,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_meta_GenericArgument_Extension_VTable nova_meta_GenericArgument_Extension_VTable_val =
+nova_meta_Nova_GenericArgument_VTable nova_meta_Nova_GenericArgument_VTable_val =
 {
 0,
 {
@@ -13910,7 +14565,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_meta_GenericArgument_GenericArgumentFunctionMap_Extension_VTable nova_meta_GenericArgument_GenericArgumentFunctionMap_Extension_VTable_val =
+nova_meta_Nova_GenericArgumentFunctionMap_VTable nova_meta_Nova_GenericArgumentFunctionMap_VTable_val =
 {
 0,
 {
@@ -13956,7 +14611,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_meta_GenericArgument_GenericArgumentPropertyMap_Extension_VTable nova_meta_GenericArgument_GenericArgumentPropertyMap_Extension_VTable_val =
+nova_meta_Nova_GenericArgumentPropertyMap_VTable nova_meta_Nova_GenericArgumentPropertyMap_VTable_val =
 {
 0,
 {
@@ -14002,7 +14657,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_meta_GenericParameter_Extension_VTable nova_meta_GenericParameter_Extension_VTable_val =
+nova_meta_Nova_GenericParameter_VTable nova_meta_Nova_GenericParameter_VTable_val =
 {
 0,
 {
@@ -14048,7 +14703,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_meta_GenericParameter_GenericParameterFunctionMap_Extension_VTable nova_meta_GenericParameter_GenericParameterFunctionMap_Extension_VTable_val =
+nova_meta_Nova_GenericParameterFunctionMap_VTable nova_meta_Nova_GenericParameterFunctionMap_VTable_val =
 {
 0,
 {
@@ -14094,7 +14749,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_meta_GenericParameter_GenericParameterPropertyMap_Extension_VTable nova_meta_GenericParameter_GenericParameterPropertyMap_Extension_VTable_val =
+nova_meta_Nova_GenericParameterPropertyMap_VTable nova_meta_Nova_GenericParameterPropertyMap_VTable_val =
 {
 0,
 {
@@ -14140,7 +14795,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_meta_PropertyMap_Extension_VTable nova_meta_PropertyMap_Extension_VTable_val =
+nova_meta_Nova_PropertyMap_VTable nova_meta_Nova_PropertyMap_VTable_val =
 {
 0,
 {
@@ -14186,7 +14841,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_meta_PropertyMap_PropertyMapFunctionMap_Extension_VTable nova_meta_PropertyMap_PropertyMapFunctionMap_Extension_VTable_val =
+nova_meta_Nova_PropertyMapFunctionMap_VTable nova_meta_Nova_PropertyMapFunctionMap_VTable_val =
 {
 0,
 {
@@ -14232,7 +14887,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_meta_PropertyMap_PropertyMapPropertyMap_Extension_VTable nova_meta_PropertyMap_PropertyMapPropertyMap_Extension_VTable_val =
+nova_meta_Nova_PropertyMapPropertyMap_VTable nova_meta_Nova_PropertyMapPropertyMap_VTable_val =
 {
 0,
 {
@@ -14278,7 +14933,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_meta_Type_Extension_VTable nova_meta_Type_Extension_VTable_val =
+nova_meta_Nova_Type_VTable nova_meta_Nova_Type_VTable_val =
 {
 0,
 {
@@ -14324,7 +14979,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_meta_Type_TypeFunctionMap_Extension_VTable nova_meta_Type_TypeFunctionMap_Extension_VTable_val =
+nova_meta_Nova_TypeFunctionMap_VTable nova_meta_Nova_TypeFunctionMap_VTable_val =
 {
 0,
 {
@@ -14370,7 +15025,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_meta_Type_TypePropertyMap_Extension_VTable nova_meta_Type_TypePropertyMap_Extension_VTable_val =
+nova_meta_Nova_TypePropertyMap_VTable nova_meta_Nova_TypePropertyMap_VTable_val =
 {
 0,
 {
@@ -14416,7 +15071,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_network_ClientSocket_Extension_VTable nova_network_ClientSocket_Extension_VTable_val =
+nova_network_Nova_ClientSocket_VTable nova_network_Nova_ClientSocket_VTable_val =
 {
 0,
 {
@@ -14462,7 +15117,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_network_ClientSocket_ClientSocketFunctionMap_Extension_VTable nova_network_ClientSocket_ClientSocketFunctionMap_Extension_VTable_val =
+nova_network_Nova_ClientSocketFunctionMap_VTable nova_network_Nova_ClientSocketFunctionMap_VTable_val =
 {
 0,
 {
@@ -14508,7 +15163,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_network_ClientSocket_ClientSocketPropertyMap_Extension_VTable nova_network_ClientSocket_ClientSocketPropertyMap_Extension_VTable_val =
+nova_network_Nova_ClientSocketPropertyMap_VTable nova_network_Nova_ClientSocketPropertyMap_VTable_val =
 {
 0,
 {
@@ -14554,7 +15209,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_network_ConnectionSocket_Extension_VTable nova_network_ConnectionSocket_Extension_VTable_val =
+nova_network_Nova_ConnectionSocket_VTable nova_network_Nova_ConnectionSocket_VTable_val =
 {
 0,
 {
@@ -14600,7 +15255,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_network_ConnectionSocket_ConnectionSocketFunctionMap_Extension_VTable nova_network_ConnectionSocket_ConnectionSocketFunctionMap_Extension_VTable_val =
+nova_network_Nova_ConnectionSocketFunctionMap_VTable nova_network_Nova_ConnectionSocketFunctionMap_VTable_val =
 {
 0,
 {
@@ -14646,7 +15301,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_network_ConnectionSocket_ConnectionSocketPropertyMap_Extension_VTable nova_network_ConnectionSocket_ConnectionSocketPropertyMap_Extension_VTable_val =
+nova_network_Nova_ConnectionSocketPropertyMap_VTable nova_network_Nova_ConnectionSocketPropertyMap_VTable_val =
 {
 0,
 {
@@ -14692,7 +15347,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_network_NetworkInputStream_Extension_VTable nova_network_NetworkInputStream_Extension_VTable_val =
+nova_network_Nova_NetworkInputStream_VTable nova_network_Nova_NetworkInputStream_VTable_val =
 {
 0,
 {
@@ -14721,7 +15376,7 @@ nova_network_NetworkInputStream_Extension_VTable nova_network_NetworkInputStream
 0,
 0,
 (nova_Nova_String*(*)(nova_io_Nova_InputStream*, nova_exception_Nova_ExceptionData*))nova_network_Nova_NetworkInputStream_Nova_readString,
-(nova_datastruct_list_Nova_Array*(*)(nova_io_Nova_InputStream*, nova_exception_Nova_ExceptionData*))nova_network_Nova_NetworkInputStream_Nova_readBytes,
+(nova_datastruct_list_Byte_Nova_Array1Byte*(*)(nova_io_Nova_InputStream*, nova_exception_Nova_ExceptionData*))nova_network_Nova_NetworkInputStream_Nova_readBytes,
 0,
 0,
 0,
@@ -14738,53 +15393,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_network_NetworkInputStream_NetworkInputStreamFunctionMap_Extension_VTable nova_network_NetworkInputStream_NetworkInputStreamFunctionMap_Extension_VTable_val =
-{
-0,
-{
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-},
-nova_Nova_Object_Nova_toString,
-nova_Nova_Object_Accessor_Nova_hashCodeLong,
-};
-
-
-nova_network_NetworkInputStream_NetworkInputStreamPropertyMap_Extension_VTable nova_network_NetworkInputStream_NetworkInputStreamPropertyMap_Extension_VTable_val =
+nova_network_Nova_NetworkInputStreamFunctionMap_VTable nova_network_Nova_NetworkInputStreamFunctionMap_VTable_val =
 {
 0,
 {
@@ -14830,7 +15439,53 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_network_NetworkOutputStream_Extension_VTable nova_network_NetworkOutputStream_Extension_VTable_val =
+nova_network_Nova_NetworkInputStreamPropertyMap_VTable nova_network_Nova_NetworkInputStreamPropertyMap_VTable_val =
+{
+0,
+{
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+},
+nova_Nova_Object_Nova_toString,
+nova_Nova_Object_Accessor_Nova_hashCodeLong,
+};
+
+
+nova_network_Nova_NetworkOutputStream_VTable nova_network_Nova_NetworkOutputStream_VTable_val =
 {
 0,
 {
@@ -14877,7 +15532,7 @@ nova_network_Nova_NetworkOutputStream_Nova_write,
 };
 
 
-nova_network_NetworkOutputStream_NetworkOutputStreamFunctionMap_Extension_VTable nova_network_NetworkOutputStream_NetworkOutputStreamFunctionMap_Extension_VTable_val =
+nova_network_Nova_NetworkOutputStreamFunctionMap_VTable nova_network_Nova_NetworkOutputStreamFunctionMap_VTable_val =
 {
 0,
 {
@@ -14923,7 +15578,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_network_NetworkOutputStream_NetworkOutputStreamPropertyMap_Extension_VTable nova_network_NetworkOutputStream_NetworkOutputStreamPropertyMap_Extension_VTable_val =
+nova_network_Nova_NetworkOutputStreamPropertyMap_VTable nova_network_Nova_NetworkOutputStreamPropertyMap_VTable_val =
 {
 0,
 {
@@ -14969,7 +15624,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_network_ServerSocket_Extension_VTable nova_network_ServerSocket_Extension_VTable_val =
+nova_network_Nova_ServerSocket_VTable nova_network_Nova_ServerSocket_VTable_val =
 {
 0,
 {
@@ -15015,7 +15670,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_network_ServerSocket_ServerSocketFunctionMap_Extension_VTable nova_network_ServerSocket_ServerSocketFunctionMap_Extension_VTable_val =
+nova_network_Nova_ServerSocketFunctionMap_VTable nova_network_Nova_ServerSocketFunctionMap_VTable_val =
 {
 0,
 {
@@ -15061,7 +15716,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_network_ServerSocket_ServerSocketPropertyMap_Extension_VTable nova_network_ServerSocket_ServerSocketPropertyMap_Extension_VTable_val =
+nova_network_Nova_ServerSocketPropertyMap_VTable nova_network_Nova_ServerSocketPropertyMap_VTable_val =
 {
 0,
 {
@@ -15107,7 +15762,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_network_Socket_Extension_VTable nova_network_Socket_Extension_VTable_val =
+nova_network_Nova_Socket_VTable nova_network_Nova_Socket_VTable_val =
 {
 0,
 {
@@ -15153,7 +15808,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_network_Socket_SocketFunctionMap_Extension_VTable nova_network_Socket_SocketFunctionMap_Extension_VTable_val =
+nova_network_Nova_SocketFunctionMap_VTable nova_network_Nova_SocketFunctionMap_VTable_val =
 {
 0,
 {
@@ -15199,7 +15854,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_network_Socket_SocketPropertyMap_Extension_VTable nova_network_Socket_SocketPropertyMap_Extension_VTable_val =
+nova_network_Nova_SocketPropertyMap_VTable nova_network_Nova_SocketPropertyMap_VTable_val =
 {
 0,
 {
@@ -15245,7 +15900,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_operators_EqualsOperator_Extension_VTable nova_operators_EqualsOperator_Extension_VTable_val =
+nova_operators_Nova_EqualsOperator_VTable nova_operators_Nova_EqualsOperator_VTable_val =
 {
 0,
 {
@@ -15289,53 +15944,7 @@ nova_operators_EqualsOperator_Extension_VTable nova_operators_EqualsOperator_Ext
 };
 
 
-nova_operators_EqualsOperator_EqualsOperatorFunctionMap_Extension_VTable nova_operators_EqualsOperator_EqualsOperatorFunctionMap_Extension_VTable_val =
-{
-0,
-{
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-},
-nova_Nova_Object_Nova_toString,
-nova_Nova_Object_Accessor_Nova_hashCodeLong,
-};
-
-
-nova_operators_EqualsOperator_EqualsOperatorPropertyMap_Extension_VTable nova_operators_EqualsOperator_EqualsOperatorPropertyMap_Extension_VTable_val =
+nova_operators_Nova_EqualsOperatorFunctionMap_VTable nova_operators_Nova_EqualsOperatorFunctionMap_VTable_val =
 {
 0,
 {
@@ -15381,51 +15990,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_operators_MinusEqualsOperator_Extension_VTable nova_operators_MinusEqualsOperator_Extension_VTable_val =
-{
-0,
-{
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-},
-};
-
-
-nova_operators_MinusEqualsOperator_MinusEqualsOperatorFunctionMap_Extension_VTable nova_operators_MinusEqualsOperator_MinusEqualsOperatorFunctionMap_Extension_VTable_val =
+nova_operators_Nova_EqualsOperatorPropertyMap_VTable nova_operators_Nova_EqualsOperatorPropertyMap_VTable_val =
 {
 0,
 {
@@ -15471,7 +16036,51 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_operators_MinusEqualsOperator_MinusEqualsOperatorPropertyMap_Extension_VTable nova_operators_MinusEqualsOperator_MinusEqualsOperatorPropertyMap_Extension_VTable_val =
+nova_operators_Nova_MinusEqualsOperator_VTable nova_operators_Nova_MinusEqualsOperator_VTable_val =
+{
+0,
+{
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+},
+};
+
+
+nova_operators_Nova_MinusEqualsOperatorFunctionMap_VTable nova_operators_Nova_MinusEqualsOperatorFunctionMap_VTable_val =
 {
 0,
 {
@@ -15517,51 +16126,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_operators_MinusOperator_Extension_VTable nova_operators_MinusOperator_Extension_VTable_val =
-{
-0,
-{
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-},
-};
-
-
-nova_operators_MinusOperator_MinusOperatorFunctionMap_Extension_VTable nova_operators_MinusOperator_MinusOperatorFunctionMap_Extension_VTable_val =
+nova_operators_Nova_MinusEqualsOperatorPropertyMap_VTable nova_operators_Nova_MinusEqualsOperatorPropertyMap_VTable_val =
 {
 0,
 {
@@ -15607,7 +16172,51 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_operators_MinusOperator_MinusOperatorPropertyMap_Extension_VTable nova_operators_MinusOperator_MinusOperatorPropertyMap_Extension_VTable_val =
+nova_operators_Nova_MinusOperator_VTable nova_operators_Nova_MinusOperator_VTable_val =
+{
+0,
+{
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+},
+};
+
+
+nova_operators_Nova_MinusOperatorFunctionMap_VTable nova_operators_Nova_MinusOperatorFunctionMap_VTable_val =
 {
 0,
 {
@@ -15653,51 +16262,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_operators_MultiplyEqualsOperator_Extension_VTable nova_operators_MultiplyEqualsOperator_Extension_VTable_val =
-{
-0,
-{
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-},
-};
-
-
-nova_operators_MultiplyEqualsOperator_MultiplyEqualsOperatorFunctionMap_Extension_VTable nova_operators_MultiplyEqualsOperator_MultiplyEqualsOperatorFunctionMap_Extension_VTable_val =
+nova_operators_Nova_MinusOperatorPropertyMap_VTable nova_operators_Nova_MinusOperatorPropertyMap_VTable_val =
 {
 0,
 {
@@ -15743,7 +16308,51 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_operators_MultiplyEqualsOperator_MultiplyEqualsOperatorPropertyMap_Extension_VTable nova_operators_MultiplyEqualsOperator_MultiplyEqualsOperatorPropertyMap_Extension_VTable_val =
+nova_operators_Nova_MultiplyEqualsOperator_VTable nova_operators_Nova_MultiplyEqualsOperator_VTable_val =
+{
+0,
+{
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+},
+};
+
+
+nova_operators_Nova_MultiplyEqualsOperatorFunctionMap_VTable nova_operators_Nova_MultiplyEqualsOperatorFunctionMap_VTable_val =
 {
 0,
 {
@@ -15789,51 +16398,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_operators_MultiplyOperator_Extension_VTable nova_operators_MultiplyOperator_Extension_VTable_val =
-{
-0,
-{
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-},
-};
-
-
-nova_operators_MultiplyOperator_MultiplyOperatorFunctionMap_Extension_VTable nova_operators_MultiplyOperator_MultiplyOperatorFunctionMap_Extension_VTable_val =
+nova_operators_Nova_MultiplyEqualsOperatorPropertyMap_VTable nova_operators_Nova_MultiplyEqualsOperatorPropertyMap_VTable_val =
 {
 0,
 {
@@ -15879,7 +16444,51 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_operators_MultiplyOperator_MultiplyOperatorPropertyMap_Extension_VTable nova_operators_MultiplyOperator_MultiplyOperatorPropertyMap_Extension_VTable_val =
+nova_operators_Nova_MultiplyOperator_VTable nova_operators_Nova_MultiplyOperator_VTable_val =
+{
+0,
+{
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+},
+};
+
+
+nova_operators_Nova_MultiplyOperatorFunctionMap_VTable nova_operators_Nova_MultiplyOperatorFunctionMap_VTable_val =
 {
 0,
 {
@@ -15925,51 +16534,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_operators_NotEqualToOperator_Extension_VTable nova_operators_NotEqualToOperator_Extension_VTable_val =
-{
-0,
-{
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-},
-};
-
-
-nova_operators_NotEqualToOperator_NotEqualToOperatorFunctionMap_Extension_VTable nova_operators_NotEqualToOperator_NotEqualToOperatorFunctionMap_Extension_VTable_val =
+nova_operators_Nova_MultiplyOperatorPropertyMap_VTable nova_operators_Nova_MultiplyOperatorPropertyMap_VTable_val =
 {
 0,
 {
@@ -16015,7 +16580,51 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_operators_NotEqualToOperator_NotEqualToOperatorPropertyMap_Extension_VTable nova_operators_NotEqualToOperator_NotEqualToOperatorPropertyMap_Extension_VTable_val =
+nova_operators_Nova_NotEqualToOperator_VTable nova_operators_Nova_NotEqualToOperator_VTable_val =
+{
+0,
+{
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+},
+};
+
+
+nova_operators_Nova_NotEqualToOperatorFunctionMap_VTable nova_operators_Nova_NotEqualToOperatorFunctionMap_VTable_val =
 {
 0,
 {
@@ -16061,51 +16670,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_operators_PlusEqualsOperator_Extension_VTable nova_operators_PlusEqualsOperator_Extension_VTable_val =
-{
-0,
-{
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-},
-};
-
-
-nova_operators_PlusEqualsOperator_PlusEqualsOperatorFunctionMap_Extension_VTable nova_operators_PlusEqualsOperator_PlusEqualsOperatorFunctionMap_Extension_VTable_val =
+nova_operators_Nova_NotEqualToOperatorPropertyMap_VTable nova_operators_Nova_NotEqualToOperatorPropertyMap_VTable_val =
 {
 0,
 {
@@ -16151,7 +16716,51 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_operators_PlusEqualsOperator_PlusEqualsOperatorPropertyMap_Extension_VTable nova_operators_PlusEqualsOperator_PlusEqualsOperatorPropertyMap_Extension_VTable_val =
+nova_operators_Nova_PlusEqualsOperator_VTable nova_operators_Nova_PlusEqualsOperator_VTable_val =
+{
+0,
+{
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+},
+};
+
+
+nova_operators_Nova_PlusEqualsOperatorFunctionMap_VTable nova_operators_Nova_PlusEqualsOperatorFunctionMap_VTable_val =
 {
 0,
 {
@@ -16197,51 +16806,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_operators_PlusOperator_Extension_VTable nova_operators_PlusOperator_Extension_VTable_val =
-{
-0,
-{
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-},
-};
-
-
-nova_operators_PlusOperator_PlusOperatorFunctionMap_Extension_VTable nova_operators_PlusOperator_PlusOperatorFunctionMap_Extension_VTable_val =
+nova_operators_Nova_PlusEqualsOperatorPropertyMap_VTable nova_operators_Nova_PlusEqualsOperatorPropertyMap_VTable_val =
 {
 0,
 {
@@ -16287,7 +16852,51 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_operators_PlusOperator_PlusOperatorPropertyMap_Extension_VTable nova_operators_PlusOperator_PlusOperatorPropertyMap_Extension_VTable_val =
+nova_operators_Nova_PlusOperator_VTable nova_operators_Nova_PlusOperator_VTable_val =
+{
+0,
+{
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+},
+};
+
+
+nova_operators_Nova_PlusOperatorFunctionMap_VTable nova_operators_Nova_PlusOperatorFunctionMap_VTable_val =
 {
 0,
 {
@@ -16333,7 +16942,53 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_primitive_Bool_Extension_VTable nova_primitive_Bool_Extension_VTable_val =
+nova_operators_Nova_PlusOperatorPropertyMap_VTable nova_operators_Nova_PlusOperatorPropertyMap_VTable_val =
+{
+0,
+{
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+},
+nova_Nova_Object_Nova_toString,
+nova_Nova_Object_Accessor_Nova_hashCodeLong,
+};
+
+
+nova_primitive_Nova_Bool_VTable nova_primitive_Nova_Bool_VTable_val =
 {
 0,
 {
@@ -16379,7 +17034,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_primitive_Bool_BoolFunctionMap_Extension_VTable nova_primitive_Bool_BoolFunctionMap_Extension_VTable_val =
+nova_primitive_Nova_BoolFunctionMap_VTable nova_primitive_Nova_BoolFunctionMap_VTable_val =
 {
 0,
 {
@@ -16426,7 +17081,7 @@ nova_primitive_Nova_PrimitiveFunctionMap_functionMapPrimitiveFunctionMap_Nova_co
 };
 
 
-nova_primitive_Bool_BoolPropertyMap_Extension_VTable nova_primitive_Bool_BoolPropertyMap_Extension_VTable_val =
+nova_primitive_Nova_BoolPropertyMap_VTable nova_primitive_Nova_BoolPropertyMap_VTable_val =
 {
 0,
 {
@@ -16472,7 +17127,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_primitive_Null_Extension_VTable nova_primitive_Null_Extension_VTable_val =
+nova_primitive_Nova_Null_VTable nova_primitive_Nova_Null_VTable_val =
 {
 0,
 {
@@ -16520,7 +17175,7 @@ nova_Nova_String_Nova_substring,
 };
 
 
-nova_primitive_Null_NullFunctionMap_Extension_VTable nova_primitive_Null_NullFunctionMap_Extension_VTable_val =
+nova_primitive_Nova_NullFunctionMap_VTable nova_primitive_Nova_NullFunctionMap_VTable_val =
 {
 0,
 {
@@ -16566,7 +17221,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_primitive_Null_NullPropertyMap_Extension_VTable nova_primitive_Null_NullPropertyMap_Extension_VTable_val =
+nova_primitive_Nova_NullPropertyMap_VTable nova_primitive_Nova_NullPropertyMap_VTable_val =
 {
 0,
 {
@@ -16612,7 +17267,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_primitive_Primitive_Extension_VTable nova_primitive_Primitive_Extension_VTable_val =
+nova_primitive_Nova_Primitive_VTable nova_primitive_Nova_Primitive_VTable_val =
 {
 0,
 {
@@ -16658,7 +17313,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_primitive_Primitive_PrimitiveFunctionMap_Extension_VTable nova_primitive_Primitive_PrimitiveFunctionMap_Extension_VTable_val =
+nova_primitive_Nova_PrimitiveFunctionMap_VTable nova_primitive_Nova_PrimitiveFunctionMap_VTable_val =
 {
 0,
 {
@@ -16705,7 +17360,7 @@ nova_primitive_Nova_PrimitiveFunctionMap_functionMapPrimitiveFunctionMap_Nova_co
 };
 
 
-nova_primitive_Primitive_PrimitivePropertyMap_Extension_VTable nova_primitive_Primitive_PrimitivePropertyMap_Extension_VTable_val =
+nova_primitive_Nova_PrimitivePropertyMap_VTable nova_primitive_Nova_PrimitivePropertyMap_VTable_val =
 {
 0,
 {
@@ -16751,7 +17406,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_primitive_number_Byte_Extension_VTable nova_primitive_number_Byte_Extension_VTable_val =
+nova_primitive_number_Nova_Byte_VTable nova_primitive_number_Nova_Byte_VTable_val =
 {
 0,
 {
@@ -16815,7 +17470,7 @@ nova_primitive_number_Nova_Byte_Accessor_Nova_integerValue,
 };
 
 
-nova_primitive_number_Byte_ByteFunctionMap_Extension_VTable nova_primitive_number_Byte_ByteFunctionMap_Extension_VTable_val =
+nova_primitive_number_Nova_ByteFunctionMap_VTable nova_primitive_number_Nova_ByteFunctionMap_VTable_val =
 {
 0,
 {
@@ -16862,7 +17517,7 @@ nova_primitive_number_Nova_NumberFunctionMap_functionMapNumberFunctionMap_Nova_c
 };
 
 
-nova_primitive_number_Byte_BytePropertyMap_Extension_VTable nova_primitive_number_Byte_BytePropertyMap_Extension_VTable_val =
+nova_primitive_number_Nova_BytePropertyMap_VTable nova_primitive_number_Nova_BytePropertyMap_VTable_val =
 {
 0,
 {
@@ -16905,16 +17560,14 @@ nova_primitive_number_Byte_BytePropertyMap_Extension_VTable nova_primitive_numbe
 },
 nova_Nova_Object_Nova_toString,
 nova_Nova_Object_Accessor_Nova_hashCodeLong,
-nova_primitive_number_Nova_NumberPropertyMap_functionMap_Nova_realValue,
-nova_primitive_number_Nova_NumberPropertyMap_functionMap_Nova_integerValue,
 };
 
 
-nova_primitive_number_Char_Extension_VTable nova_primitive_number_Char_Extension_VTable_val =
+nova_primitive_number_Nova_Char_VTable nova_primitive_number_Nova_Char_VTable_val =
 {
 0,
 {
-(int(*)(nova_datastruct_Nova_Comparable*, nova_exception_Nova_ExceptionData*, nova_Nova_Object*))nova_primitive_number_Nova_Char_0_Nova_compareTo,
+(int(*)(nova_datastruct_Nova_Comparable*, nova_exception_Nova_ExceptionData*, nova_Nova_Object*))nova_primitive_number_Nova_Char_Nova_compareTo,
 0,
 0,
 0,
@@ -16974,7 +17627,7 @@ nova_primitive_number_Nova_Char_Accessor_Nova_integerValue,
 };
 
 
-nova_primitive_number_Char_CharFunctionMap_Extension_VTable nova_primitive_number_Char_CharFunctionMap_Extension_VTable_val =
+nova_primitive_number_Nova_CharFunctionMap_VTable nova_primitive_number_Nova_CharFunctionMap_VTable_val =
 {
 0,
 {
@@ -17021,7 +17674,7 @@ nova_primitive_number_Nova_NumberFunctionMap_functionMapNumberFunctionMap_Nova_c
 };
 
 
-nova_primitive_number_Char_CharPropertyMap_Extension_VTable nova_primitive_number_Char_CharPropertyMap_Extension_VTable_val =
+nova_primitive_number_Nova_CharPropertyMap_VTable nova_primitive_number_Nova_CharPropertyMap_VTable_val =
 {
 0,
 {
@@ -17064,12 +17717,10 @@ nova_primitive_number_Char_CharPropertyMap_Extension_VTable nova_primitive_numbe
 },
 nova_Nova_Object_Nova_toString,
 nova_Nova_Object_Accessor_Nova_hashCodeLong,
-nova_primitive_number_Nova_NumberPropertyMap_functionMap_Nova_realValue,
-nova_primitive_number_Nova_NumberPropertyMap_functionMap_Nova_integerValue,
 };
 
 
-nova_primitive_number_Double_Extension_VTable nova_primitive_number_Double_Extension_VTable_val =
+nova_primitive_number_Nova_Double_VTable nova_primitive_number_Nova_Double_VTable_val =
 {
 0,
 {
@@ -17133,7 +17784,7 @@ nova_primitive_number_Nova_Double_Accessor_Nova_integerValue,
 };
 
 
-nova_primitive_number_Double_DoubleFunctionMap_Extension_VTable nova_primitive_number_Double_DoubleFunctionMap_Extension_VTable_val =
+nova_primitive_number_Nova_DoubleFunctionMap_VTable nova_primitive_number_Nova_DoubleFunctionMap_VTable_val =
 {
 0,
 {
@@ -17180,7 +17831,7 @@ nova_primitive_number_Nova_NumberFunctionMap_functionMapNumberFunctionMap_Nova_c
 };
 
 
-nova_primitive_number_Double_DoublePropertyMap_Extension_VTable nova_primitive_number_Double_DoublePropertyMap_Extension_VTable_val =
+nova_primitive_number_Nova_DoublePropertyMap_VTable nova_primitive_number_Nova_DoublePropertyMap_VTable_val =
 {
 0,
 {
@@ -17223,12 +17874,10 @@ nova_primitive_number_Double_DoublePropertyMap_Extension_VTable nova_primitive_n
 },
 nova_Nova_Object_Nova_toString,
 nova_Nova_Object_Accessor_Nova_hashCodeLong,
-nova_primitive_number_Nova_DoublePropertyMap_functionMap_Nova_realValue,
-nova_primitive_number_Nova_DoublePropertyMap_functionMap_Nova_integerValue,
 };
 
 
-nova_primitive_number_Float_Extension_VTable nova_primitive_number_Float_Extension_VTable_val =
+nova_primitive_number_Nova_Float_VTable nova_primitive_number_Nova_Float_VTable_val =
 {
 0,
 {
@@ -17292,7 +17941,7 @@ nova_primitive_number_Nova_Float_Accessor_Nova_integerValue,
 };
 
 
-nova_primitive_number_Float_FloatFunctionMap_Extension_VTable nova_primitive_number_Float_FloatFunctionMap_Extension_VTable_val =
+nova_primitive_number_Nova_FloatFunctionMap_VTable nova_primitive_number_Nova_FloatFunctionMap_VTable_val =
 {
 0,
 {
@@ -17339,7 +17988,7 @@ nova_primitive_number_Nova_NumberFunctionMap_functionMapNumberFunctionMap_Nova_c
 };
 
 
-nova_primitive_number_Float_FloatPropertyMap_Extension_VTable nova_primitive_number_Float_FloatPropertyMap_Extension_VTable_val =
+nova_primitive_number_Nova_FloatPropertyMap_VTable nova_primitive_number_Nova_FloatPropertyMap_VTable_val =
 {
 0,
 {
@@ -17382,12 +18031,10 @@ nova_primitive_number_Float_FloatPropertyMap_Extension_VTable nova_primitive_num
 },
 nova_Nova_Object_Nova_toString,
 nova_Nova_Object_Accessor_Nova_hashCodeLong,
-nova_primitive_number_Nova_NumberPropertyMap_functionMap_Nova_realValue,
-nova_primitive_number_Nova_NumberPropertyMap_functionMap_Nova_integerValue,
 };
 
 
-nova_primitive_number_Int_Extension_VTable nova_primitive_number_Int_Extension_VTable_val =
+nova_primitive_number_Nova_Int_VTable nova_primitive_number_Nova_Int_VTable_val =
 {
 0,
 {
@@ -17451,7 +18098,7 @@ nova_primitive_number_Nova_Int_Accessorfunc_Nova_integerValue,
 };
 
 
-nova_primitive_number_Int_IntFunctionMap_Extension_VTable nova_primitive_number_Int_IntFunctionMap_Extension_VTable_val =
+nova_primitive_number_Nova_IntFunctionMap_VTable nova_primitive_number_Nova_IntFunctionMap_VTable_val =
 {
 0,
 {
@@ -17498,99 +18145,7 @@ nova_primitive_number_Nova_NumberFunctionMap_functionMapNumberFunctionMap_Nova_c
 };
 
 
-nova_primitive_number_Int_IntPropertyMap_Extension_VTable nova_primitive_number_Int_IntPropertyMap_Extension_VTable_val =
-{
-0,
-{
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-},
-nova_Nova_Object_Nova_toString,
-nova_Nova_Object_Accessor_Nova_hashCodeLong,
-nova_primitive_number_Nova_NumberPropertyMap_functionMap_Nova_realValue,
-nova_primitive_number_Nova_NumberPropertyMap_functionMap_Nova_integerValue,
-};
-
-
-nova_primitive_number_Integer_Extension_VTable nova_primitive_number_Integer_Extension_VTable_val =
-{
-0,
-{
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-},
-};
-
-
-nova_primitive_number_Integer_IntegerFunctionMap_Extension_VTable nova_primitive_number_Integer_IntegerFunctionMap_Extension_VTable_val =
+nova_primitive_number_Nova_IntPropertyMap_VTable nova_primitive_number_Nova_IntPropertyMap_VTable_val =
 {
 0,
 {
@@ -17636,7 +18191,51 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_primitive_number_Integer_IntegerPropertyMap_Extension_VTable nova_primitive_number_Integer_IntegerPropertyMap_Extension_VTable_val =
+nova_primitive_number_Nova_Integer_VTable nova_primitive_number_Nova_Integer_VTable_val =
+{
+0,
+{
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+},
+};
+
+
+nova_primitive_number_Nova_IntegerFunctionMap_VTable nova_primitive_number_Nova_IntegerFunctionMap_VTable_val =
 {
 0,
 {
@@ -17682,7 +18281,53 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_primitive_number_Long_Extension_VTable nova_primitive_number_Long_Extension_VTable_val =
+nova_primitive_number_Nova_IntegerPropertyMap_VTable nova_primitive_number_Nova_IntegerPropertyMap_VTable_val =
+{
+0,
+{
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+},
+nova_Nova_Object_Nova_toString,
+nova_Nova_Object_Accessor_Nova_hashCodeLong,
+};
+
+
+nova_primitive_number_Nova_Long_VTable nova_primitive_number_Nova_Long_VTable_val =
 {
 0,
 {
@@ -17746,7 +18391,7 @@ nova_primitive_number_Nova_Long_Accessor_Nova_integerValue,
 };
 
 
-nova_primitive_number_Long_LongFunctionMap_Extension_VTable nova_primitive_number_Long_LongFunctionMap_Extension_VTable_val =
+nova_primitive_number_Nova_LongFunctionMap_VTable nova_primitive_number_Nova_LongFunctionMap_VTable_val =
 {
 0,
 {
@@ -17793,7 +18438,7 @@ nova_primitive_number_Nova_NumberFunctionMap_functionMapNumberFunctionMap_Nova_c
 };
 
 
-nova_primitive_number_Long_LongPropertyMap_Extension_VTable nova_primitive_number_Long_LongPropertyMap_Extension_VTable_val =
+nova_primitive_number_Nova_LongPropertyMap_VTable nova_primitive_number_Nova_LongPropertyMap_VTable_val =
 {
 0,
 {
@@ -17836,12 +18481,10 @@ nova_primitive_number_Long_LongPropertyMap_Extension_VTable nova_primitive_numbe
 },
 nova_Nova_Object_Nova_toString,
 nova_Nova_Object_Accessor_Nova_hashCodeLong,
-nova_primitive_number_Nova_NumberPropertyMap_functionMap_Nova_realValue,
-nova_primitive_number_Nova_NumberPropertyMap_functionMap_Nova_integerValue,
 };
 
 
-nova_primitive_number_Number_Extension_VTable nova_primitive_number_Number_Extension_VTable_val =
+nova_primitive_number_Nova_Number_VTable nova_primitive_number_Nova_Number_VTable_val =
 {
 0,
 {
@@ -17905,7 +18548,7 @@ nova_primitive_number_Nova_Number_Accessor_Nova_integerValue,
 };
 
 
-nova_primitive_number_Number_NumberFunctionMap_Extension_VTable nova_primitive_number_Number_NumberFunctionMap_Extension_VTable_val =
+nova_primitive_number_Nova_NumberFunctionMap_VTable nova_primitive_number_Nova_NumberFunctionMap_VTable_val =
 {
 0,
 {
@@ -17952,99 +18595,7 @@ nova_primitive_number_Nova_NumberFunctionMap_functionMapNumberFunctionMap_Nova_c
 };
 
 
-nova_primitive_number_Number_NumberPropertyMap_Extension_VTable nova_primitive_number_Number_NumberPropertyMap_Extension_VTable_val =
-{
-0,
-{
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-},
-nova_Nova_Object_Nova_toString,
-nova_Nova_Object_Accessor_Nova_hashCodeLong,
-nova_primitive_number_Nova_NumberPropertyMap_functionMap_Nova_realValue,
-nova_primitive_number_Nova_NumberPropertyMap_functionMap_Nova_integerValue,
-};
-
-
-nova_primitive_number_RealNumber_Extension_VTable nova_primitive_number_RealNumber_Extension_VTable_val =
-{
-0,
-{
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-},
-};
-
-
-nova_primitive_number_RealNumber_RealNumberFunctionMap_Extension_VTable nova_primitive_number_RealNumber_RealNumberFunctionMap_Extension_VTable_val =
+nova_primitive_number_Nova_NumberPropertyMap_VTable nova_primitive_number_Nova_NumberPropertyMap_VTable_val =
 {
 0,
 {
@@ -18090,7 +18641,51 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_primitive_number_RealNumber_RealNumberPropertyMap_Extension_VTable nova_primitive_number_RealNumber_RealNumberPropertyMap_Extension_VTable_val =
+nova_primitive_number_Nova_RealNumber_VTable nova_primitive_number_Nova_RealNumber_VTable_val =
+{
+0,
+{
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+},
+};
+
+
+nova_primitive_number_Nova_RealNumberFunctionMap_VTable nova_primitive_number_Nova_RealNumberFunctionMap_VTable_val =
 {
 0,
 {
@@ -18136,7 +18731,53 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_primitive_number_Short_Extension_VTable nova_primitive_number_Short_Extension_VTable_val =
+nova_primitive_number_Nova_RealNumberPropertyMap_VTable nova_primitive_number_Nova_RealNumberPropertyMap_VTable_val =
+{
+0,
+{
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+},
+nova_Nova_Object_Nova_toString,
+nova_Nova_Object_Accessor_Nova_hashCodeLong,
+};
+
+
+nova_primitive_number_Nova_Short_VTable nova_primitive_number_Nova_Short_VTable_val =
 {
 0,
 {
@@ -18200,7 +18841,7 @@ nova_primitive_number_Nova_Short_Accessor_Nova_integerValue,
 };
 
 
-nova_primitive_number_Short_ShortFunctionMap_Extension_VTable nova_primitive_number_Short_ShortFunctionMap_Extension_VTable_val =
+nova_primitive_number_Nova_ShortFunctionMap_VTable nova_primitive_number_Nova_ShortFunctionMap_VTable_val =
 {
 0,
 {
@@ -18247,55 +18888,7 @@ nova_primitive_number_Nova_NumberFunctionMap_functionMapNumberFunctionMap_Nova_c
 };
 
 
-nova_primitive_number_Short_ShortPropertyMap_Extension_VTable nova_primitive_number_Short_ShortPropertyMap_Extension_VTable_val =
-{
-0,
-{
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-},
-nova_Nova_Object_Nova_toString,
-nova_Nova_Object_Accessor_Nova_hashCodeLong,
-nova_primitive_number_Nova_NumberPropertyMap_functionMap_Nova_realValue,
-nova_primitive_number_Nova_NumberPropertyMap_functionMap_Nova_integerValue,
-};
-
-
-nova_process_Process_Extension_VTable nova_process_Process_Extension_VTable_val =
+nova_primitive_number_Nova_ShortPropertyMap_VTable nova_primitive_number_Nova_ShortPropertyMap_VTable_val =
 {
 0,
 {
@@ -18341,7 +18934,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_process_Process_ProcessFunctionMap_Extension_VTable nova_process_Process_ProcessFunctionMap_Extension_VTable_val =
+nova_process_Nova_Process_VTable nova_process_Nova_Process_VTable_val =
 {
 0,
 {
@@ -18387,7 +18980,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_process_Process_ProcessPropertyMap_Extension_VTable nova_process_Process_ProcessPropertyMap_Extension_VTable_val =
+nova_process_Nova_ProcessFunctionMap_VTable nova_process_Nova_ProcessFunctionMap_VTable_val =
 {
 0,
 {
@@ -18433,7 +19026,53 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_regex_Match_Extension_VTable nova_regex_Match_Extension_VTable_val =
+nova_process_Nova_ProcessPropertyMap_VTable nova_process_Nova_ProcessPropertyMap_VTable_val =
+{
+0,
+{
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+},
+nova_Nova_Object_Nova_toString,
+nova_Nova_Object_Accessor_Nova_hashCodeLong,
+};
+
+
+nova_regex_Nova_Match_VTable nova_regex_Nova_Match_VTable_val =
 {
 0,
 {
@@ -18479,7 +19118,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_regex_Match_MatchFunctionMap_Extension_VTable nova_regex_Match_MatchFunctionMap_Extension_VTable_val =
+nova_regex_Nova_MatchFunctionMap_VTable nova_regex_Nova_MatchFunctionMap_VTable_val =
 {
 0,
 {
@@ -18525,7 +19164,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_regex_Match_MatchPropertyMap_Extension_VTable nova_regex_Match_MatchPropertyMap_Extension_VTable_val =
+nova_regex_Nova_MatchPropertyMap_VTable nova_regex_Nova_MatchPropertyMap_VTable_val =
 {
 0,
 {
@@ -18571,7 +19210,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_regex_Pattern_Extension_VTable nova_regex_Pattern_Extension_VTable_val =
+nova_regex_Nova_Pattern_VTable nova_regex_Nova_Pattern_VTable_val =
 {
 0,
 {
@@ -18617,7 +19256,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_regex_Pattern_PatternFunctionMap_Extension_VTable nova_regex_Pattern_PatternFunctionMap_Extension_VTable_val =
+nova_regex_Nova_PatternFunctionMap_VTable nova_regex_Nova_PatternFunctionMap_VTable_val =
 {
 0,
 {
@@ -18663,7 +19302,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_regex_Pattern_PatternPropertyMap_Extension_VTable nova_regex_Pattern_PatternPropertyMap_Extension_VTable_val =
+nova_regex_Nova_PatternPropertyMap_VTable nova_regex_Nova_PatternPropertyMap_VTable_val =
 {
 0,
 {
@@ -18709,7 +19348,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_regex_Regex_Extension_VTable nova_regex_Regex_Extension_VTable_val =
+nova_regex_Nova_Regex_VTable nova_regex_Nova_Regex_VTable_val =
 {
 0,
 {
@@ -18755,7 +19394,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_regex_Regex_RegexFunctionMap_Extension_VTable nova_regex_Regex_RegexFunctionMap_Extension_VTable_val =
+nova_regex_Nova_RegexFunctionMap_VTable nova_regex_Nova_RegexFunctionMap_VTable_val =
 {
 0,
 {
@@ -18801,7 +19440,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_regex_Regex_RegexPropertyMap_Extension_VTable nova_regex_Regex_RegexPropertyMap_Extension_VTable_val =
+nova_regex_Nova_RegexPropertyMap_VTable nova_regex_Nova_RegexPropertyMap_VTable_val =
 {
 0,
 {
@@ -18847,7 +19486,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_security_MD5_Extension_VTable nova_security_MD5_Extension_VTable_val =
+nova_security_Nova_MD5_VTable nova_security_Nova_MD5_VTable_val =
 {
 0,
 {
@@ -18893,7 +19532,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_security_MD5_MD5FunctionMap_Extension_VTable nova_security_MD5_MD5FunctionMap_Extension_VTable_val =
+nova_security_Nova_MD5FunctionMap_VTable nova_security_Nova_MD5FunctionMap_VTable_val =
 {
 0,
 {
@@ -18939,7 +19578,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_security_MD5_MD5PropertyMap_Extension_VTable nova_security_MD5_MD5PropertyMap_Extension_VTable_val =
+nova_security_Nova_MD5PropertyMap_VTable nova_security_Nova_MD5PropertyMap_VTable_val =
 {
 0,
 {
@@ -18985,7 +19624,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_security_Sha256_Extension_VTable nova_security_Sha256_Extension_VTable_val =
+nova_security_Nova_Sha256_VTable nova_security_Nova_Sha256_VTable_val =
 {
 0,
 {
@@ -19031,7 +19670,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_security_Sha256_Sha256FunctionMap_Extension_VTable nova_security_Sha256_Sha256FunctionMap_Extension_VTable_val =
+nova_security_Nova_Sha256FunctionMap_VTable nova_security_Nova_Sha256FunctionMap_VTable_val =
 {
 0,
 {
@@ -19077,7 +19716,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_security_Sha256_Sha256PropertyMap_Extension_VTable nova_security_Sha256_Sha256PropertyMap_Extension_VTable_val =
+nova_security_Nova_Sha256PropertyMap_VTable nova_security_Nova_Sha256PropertyMap_VTable_val =
 {
 0,
 {
@@ -19123,7 +19762,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_serialization_JsonSerializer_Extension_VTable nova_serialization_JsonSerializer_Extension_VTable_val =
+nova_serialization_Nova_JsonSerializer_VTable nova_serialization_Nova_JsonSerializer_VTable_val =
 {
 0,
 {
@@ -19169,7 +19808,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_serialization_JsonSerializer_JsonSerializerFunctionMap_Extension_VTable nova_serialization_JsonSerializer_JsonSerializerFunctionMap_Extension_VTable_val =
+nova_serialization_Nova_JsonSerializerFunctionMap_VTable nova_serialization_Nova_JsonSerializerFunctionMap_VTable_val =
 {
 0,
 {
@@ -19215,7 +19854,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_serialization_JsonSerializer_JsonSerializerPropertyMap_Extension_VTable nova_serialization_JsonSerializer_JsonSerializerPropertyMap_Extension_VTable_val =
+nova_serialization_Nova_JsonSerializerPropertyMap_VTable nova_serialization_Nova_JsonSerializerPropertyMap_VTable_val =
 {
 0,
 {
@@ -19261,7 +19900,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_star_Frame_Extension_VTable nova_star_Frame_Extension_VTable_val =
+nova_star_Nova_Frame_VTable nova_star_Nova_Frame_VTable_val =
 {
 0,
 {
@@ -19307,7 +19946,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_star_Frame_FrameFunctionMap_Extension_VTable nova_star_Frame_FrameFunctionMap_Extension_VTable_val =
+nova_star_Nova_FrameFunctionMap_VTable nova_star_Nova_FrameFunctionMap_VTable_val =
 {
 0,
 {
@@ -19353,7 +19992,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_star_Frame_FramePropertyMap_Extension_VTable nova_star_Frame_FramePropertyMap_Extension_VTable_val =
+nova_star_Nova_FramePropertyMap_VTable nova_star_Nova_FramePropertyMap_VTable_val =
 {
 0,
 {
@@ -19399,7 +20038,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_star_Window_Extension_VTable nova_star_Window_Extension_VTable_val =
+nova_star_Nova_Window_VTable nova_star_Nova_Window_VTable_val =
 {
 0,
 {
@@ -19445,7 +20084,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_star_Window_WindowFunctionMap_Extension_VTable nova_star_Window_WindowFunctionMap_Extension_VTable_val =
+nova_star_Nova_WindowFunctionMap_VTable nova_star_Nova_WindowFunctionMap_VTable_val =
 {
 0,
 {
@@ -19491,7 +20130,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_star_Window_WindowPropertyMap_Extension_VTable nova_star_Window_WindowPropertyMap_Extension_VTable_val =
+nova_star_Nova_WindowPropertyMap_VTable nova_star_Nova_WindowPropertyMap_VTable_val =
 {
 0,
 {
@@ -19537,7 +20176,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_star_WindowThread_Extension_VTable nova_star_WindowThread_Extension_VTable_val =
+nova_star_Nova_WindowThread_VTable nova_star_Nova_WindowThread_VTable_val =
 {
 0,
 {
@@ -19584,7 +20223,7 @@ nova_star_Nova_WindowThread_Nova_run,
 };
 
 
-nova_star_WindowThread_WindowThreadFunctionMap_Extension_VTable nova_star_WindowThread_WindowThreadFunctionMap_Extension_VTable_val =
+nova_star_Nova_WindowThreadFunctionMap_VTable nova_star_Nova_WindowThreadFunctionMap_VTable_val =
 {
 0,
 {
@@ -19630,7 +20269,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_star_WindowThread_WindowThreadPropertyMap_Extension_VTable nova_star_WindowThread_WindowThreadPropertyMap_Extension_VTable_val =
+nova_star_Nova_WindowThreadPropertyMap_VTable nova_star_Nova_WindowThreadPropertyMap_VTable_val =
 {
 0,
 {
@@ -19676,7 +20315,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_thread_Thread_Extension_VTable nova_thread_Thread_Extension_VTable_val =
+nova_thread_Nova_Thread_VTable nova_thread_Nova_Thread_VTable_val =
 {
 0,
 {
@@ -19723,7 +20362,7 @@ nova_thread_Nova_Thread_Nova_run,
 };
 
 
-nova_thread_Thread_ThreadFunctionMap_Extension_VTable nova_thread_Thread_ThreadFunctionMap_Extension_VTable_val =
+nova_thread_Nova_ThreadFunctionMap_VTable nova_thread_Nova_ThreadFunctionMap_VTable_val =
 {
 0,
 {
@@ -19769,7 +20408,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_thread_Thread_ThreadPropertyMap_Extension_VTable nova_thread_Thread_ThreadPropertyMap_Extension_VTable_val =
+nova_thread_Nova_ThreadPropertyMap_VTable nova_thread_Nova_ThreadPropertyMap_VTable_val =
 {
 0,
 {
@@ -19815,7 +20454,54 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_thread_UncaughtExceptionHandler_Extension_VTable nova_thread_UncaughtExceptionHandler_Extension_VTable_val =
+nova_thread_Nova_UncaughtExceptionHandler_VTable nova_thread_Nova_UncaughtExceptionHandler_VTable_val =
+{
+0,
+{
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+},
+nova_Nova_Object_Nova_toString,
+nova_Nova_Object_Accessor_Nova_hashCodeLong,
+nova_thread_Nova_UncaughtExceptionHandler_Nova_uncaughtException,
+};
+
+
+nova_thread_Nova_UncaughtExceptionHandlerFunctionMap_VTable nova_thread_Nova_UncaughtExceptionHandlerFunctionMap_VTable_val =
 {
 0,
 {
@@ -19861,7 +20547,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_thread_UncaughtExceptionHandler_UncaughtExceptionHandlerFunctionMap_Extension_VTable nova_thread_UncaughtExceptionHandler_UncaughtExceptionHandlerFunctionMap_Extension_VTable_val =
+nova_thread_Nova_UncaughtExceptionHandlerPropertyMap_VTable nova_thread_Nova_UncaughtExceptionHandlerPropertyMap_VTable_val =
 {
 0,
 {
@@ -19907,7 +20593,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_thread_UncaughtExceptionHandler_UncaughtExceptionHandlerPropertyMap_Extension_VTable nova_thread_UncaughtExceptionHandler_UncaughtExceptionHandlerPropertyMap_Extension_VTable_val =
+nova_thread_async_Nova_Async_VTable nova_thread_async_Nova_Async_VTable_val =
 {
 0,
 {
@@ -19953,7 +20639,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_thread_async_Async_Extension_VTable nova_thread_async_Async_Extension_VTable_val =
+nova_thread_async_Nova_AsyncFunctionMap_VTable nova_thread_async_Nova_AsyncFunctionMap_VTable_val =
 {
 0,
 {
@@ -19999,7 +20685,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_thread_async_Async_AsyncFunctionMap_Extension_VTable nova_thread_async_Async_AsyncFunctionMap_Extension_VTable_val =
+nova_thread_async_Nova_AsyncPropertyMap_VTable nova_thread_async_Nova_AsyncPropertyMap_VTable_val =
 {
 0,
 {
@@ -20045,7 +20731,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_thread_async_Async_AsyncPropertyMap_Extension_VTable nova_thread_async_Async_AsyncPropertyMap_Extension_VTable_val =
+nova_thread_async_Nova_Task_VTable nova_thread_async_Nova_Task_VTable_val =
 {
 0,
 {
@@ -20091,7 +20777,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_thread_async_Task_Extension_VTable nova_thread_async_Task_Extension_VTable_val =
+nova_thread_async_Nova_TaskFunctionMap_VTable nova_thread_async_Nova_TaskFunctionMap_VTable_val =
 {
 0,
 {
@@ -20137,7 +20823,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_thread_async_Task_TaskFunctionMap_Extension_VTable nova_thread_async_Task_TaskFunctionMap_Extension_VTable_val =
+nova_thread_async_Nova_TaskPropertyMap_VTable nova_thread_async_Nova_TaskPropertyMap_VTable_val =
 {
 0,
 {
@@ -20183,53 +20869,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_thread_async_Task_TaskPropertyMap_Extension_VTable nova_thread_async_Task_TaskPropertyMap_Extension_VTable_val =
-{
-0,
-{
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-},
-nova_Nova_Object_Nova_toString,
-nova_Nova_Object_Accessor_Nova_hashCodeLong,
-};
-
-
-nova_time_CumulativeTimer_Extension_VTable nova_time_CumulativeTimer_Extension_VTable_val =
+nova_time_Nova_CumulativeTimer_VTable nova_time_Nova_CumulativeTimer_VTable_val =
 {
 0,
 {
@@ -20277,7 +20917,7 @@ nova_time_Nova_CumulativeTimer_Accessorfunc_Nova_duration,
 };
 
 
-nova_time_CumulativeTimer_CumulativeTimerFunctionMap_Extension_VTable nova_time_CumulativeTimer_CumulativeTimerFunctionMap_Extension_VTable_val =
+nova_time_Nova_CumulativeTimerFunctionMap_VTable nova_time_Nova_CumulativeTimerFunctionMap_VTable_val =
 {
 0,
 {
@@ -20324,7 +20964,7 @@ nova_time_Nova_CumulativeTimerFunctionMap_functionMapCumulativeTimerFunctionMap_
 };
 
 
-nova_time_CumulativeTimer_CumulativeTimerPropertyMap_Extension_VTable nova_time_CumulativeTimer_CumulativeTimerPropertyMap_Extension_VTable_val =
+nova_time_Nova_CumulativeTimerPropertyMap_VTable nova_time_Nova_CumulativeTimerPropertyMap_VTable_val =
 {
 0,
 {
@@ -20370,7 +21010,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_time_Date_Extension_VTable nova_time_Date_Extension_VTable_val =
+nova_time_Nova_Date_VTable nova_time_Nova_Date_VTable_val =
 {
 0,
 {
@@ -20416,7 +21056,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_time_Date_DateFunctionMap_Extension_VTable nova_time_Date_DateFunctionMap_Extension_VTable_val =
+nova_time_Nova_DateFunctionMap_VTable nova_time_Nova_DateFunctionMap_VTable_val =
 {
 0,
 {
@@ -20462,7 +21102,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_time_Date_DatePropertyMap_Extension_VTable nova_time_Date_DatePropertyMap_Extension_VTable_val =
+nova_time_Nova_DatePropertyMap_VTable nova_time_Nova_DatePropertyMap_VTable_val =
 {
 0,
 {
@@ -20508,7 +21148,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_time_Time_Extension_VTable nova_time_Time_Extension_VTable_val =
+nova_time_Nova_Time_VTable nova_time_Nova_Time_VTable_val =
 {
 0,
 {
@@ -20554,7 +21194,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_time_Time_TimeFunctionMap_Extension_VTable nova_time_Time_TimeFunctionMap_Extension_VTable_val =
+nova_time_Nova_TimeFunctionMap_VTable nova_time_Nova_TimeFunctionMap_VTable_val =
 {
 0,
 {
@@ -20600,7 +21240,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_time_Time_TimePropertyMap_Extension_VTable nova_time_Time_TimePropertyMap_Extension_VTable_val =
+nova_time_Nova_TimePropertyMap_VTable nova_time_Nova_TimePropertyMap_VTable_val =
 {
 0,
 {
@@ -20646,7 +21286,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_time_Timer_Extension_VTable nova_time_Timer_Extension_VTable_val =
+nova_time_Nova_Timer_VTable nova_time_Nova_Timer_VTable_val =
 {
 0,
 {
@@ -20694,7 +21334,7 @@ nova_time_Nova_Timer_Accessor_Nova_duration,
 };
 
 
-nova_time_Timer_TimerFunctionMap_Extension_VTable nova_time_Timer_TimerFunctionMap_Extension_VTable_val =
+nova_time_Nova_TimerFunctionMap_VTable nova_time_Nova_TimerFunctionMap_VTable_val =
 {
 0,
 {
@@ -20741,7 +21381,7 @@ nova_time_Nova_TimerFunctionMap_functionMapTimerFunctionMap_Nova_construct,
 };
 
 
-nova_time_Timer_TimerPropertyMap_Extension_VTable nova_time_Timer_TimerPropertyMap_Extension_VTable_val =
+nova_time_Nova_TimerPropertyMap_VTable nova_time_Nova_TimerPropertyMap_VTable_val =
 {
 0,
 {
@@ -20787,7 +21427,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_web_js_json_Json_Extension_VTable nova_web_js_json_Json_Extension_VTable_val =
+nova_web_js_json_Nova_Json_VTable nova_web_js_json_Nova_Json_VTable_val =
 {
 0,
 {
@@ -20834,7 +21474,7 @@ nova_datastruct_Nova_HashMap_Nova_add,
 };
 
 
-nova_web_js_json_Json_JsonFunctionMap_Extension_VTable nova_web_js_json_Json_JsonFunctionMap_Extension_VTable_val =
+nova_web_js_json_Nova_JsonFunctionMap_VTable nova_web_js_json_Nova_JsonFunctionMap_VTable_val =
 {
 0,
 {
@@ -20880,7 +21520,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_web_js_json_Json_JsonPropertyMap_Extension_VTable nova_web_js_json_Json_JsonPropertyMap_Extension_VTable_val =
+nova_web_js_json_Nova_JsonPropertyMap_VTable nova_web_js_json_Nova_JsonPropertyMap_VTable_val =
 {
 0,
 {
@@ -20926,7 +21566,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_web_svg_Svg_Extension_VTable nova_web_svg_Svg_Extension_VTable_val =
+nova_web_svg_Nova_Svg_VTable nova_web_svg_Nova_Svg_VTable_val =
 {
 0,
 {
@@ -20972,7 +21612,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_web_svg_Svg_SvgFunctionMap_Extension_VTable nova_web_svg_Svg_SvgFunctionMap_Extension_VTable_val =
+nova_web_svg_Nova_SvgFunctionMap_VTable nova_web_svg_Nova_SvgFunctionMap_VTable_val =
 {
 0,
 {
@@ -21018,7 +21658,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_web_svg_Svg_SvgPropertyMap_Extension_VTable nova_web_svg_Svg_SvgPropertyMap_Extension_VTable_val =
+nova_web_svg_Nova_SvgPropertyMap_VTable nova_web_svg_Nova_SvgPropertyMap_VTable_val =
 {
 0,
 {
@@ -21064,7 +21704,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_web_svg_SvgCircle_Extension_VTable nova_web_svg_SvgCircle_Extension_VTable_val =
+nova_web_svg_Nova_SvgCircle_VTable nova_web_svg_Nova_SvgCircle_VTable_val =
 {
 0,
 {
@@ -21111,7 +21751,7 @@ nova_web_svg_Nova_SvgCircle_Nova_generateOutput,
 };
 
 
-nova_web_svg_SvgCircle_SvgCircleFunctionMap_Extension_VTable nova_web_svg_SvgCircle_SvgCircleFunctionMap_Extension_VTable_val =
+nova_web_svg_Nova_SvgCircleFunctionMap_VTable nova_web_svg_Nova_SvgCircleFunctionMap_VTable_val =
 {
 0,
 {
@@ -21158,7 +21798,7 @@ nova_web_svg_Nova_SvgComponentFunctionMap_functionMapSvgComponentFunctionMap_Nov
 };
 
 
-nova_web_svg_SvgCircle_SvgCirclePropertyMap_Extension_VTable nova_web_svg_SvgCircle_SvgCirclePropertyMap_Extension_VTable_val =
+nova_web_svg_Nova_SvgCirclePropertyMap_VTable nova_web_svg_Nova_SvgCirclePropertyMap_VTable_val =
 {
 0,
 {
@@ -21204,7 +21844,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_web_svg_SvgComponent_Extension_VTable nova_web_svg_SvgComponent_Extension_VTable_val =
+nova_web_svg_Nova_SvgComponent_VTable nova_web_svg_Nova_SvgComponent_VTable_val =
 {
 0,
 {
@@ -21251,7 +21891,7 @@ nova_web_svg_Nova_SvgComponent_Nova_generateOutput,
 };
 
 
-nova_web_svg_SvgComponent_SvgComponentFunctionMap_Extension_VTable nova_web_svg_SvgComponent_SvgComponentFunctionMap_Extension_VTable_val =
+nova_web_svg_Nova_SvgComponentFunctionMap_VTable nova_web_svg_Nova_SvgComponentFunctionMap_VTable_val =
 {
 0,
 {
@@ -21298,7 +21938,7 @@ nova_web_svg_Nova_SvgComponentFunctionMap_functionMapSvgComponentFunctionMap_Nov
 };
 
 
-nova_web_svg_SvgComponent_SvgComponentPropertyMap_Extension_VTable nova_web_svg_SvgComponent_SvgComponentPropertyMap_Extension_VTable_val =
+nova_web_svg_Nova_SvgComponentPropertyMap_VTable nova_web_svg_Nova_SvgComponentPropertyMap_VTable_val =
 {
 0,
 {
@@ -21344,7 +21984,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_web_svg_SvgComponentList_Extension_VTable nova_web_svg_SvgComponentList_Extension_VTable_val =
+nova_web_svg_Nova_SvgComponentList_VTable nova_web_svg_Nova_SvgComponentList_VTable_val =
 {
 0,
 {
@@ -21390,7 +22030,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_web_svg_SvgComponentList_SvgComponentListFunctionMap_Extension_VTable nova_web_svg_SvgComponentList_SvgComponentListFunctionMap_Extension_VTable_val =
+nova_web_svg_Nova_SvgComponentListFunctionMap_VTable nova_web_svg_Nova_SvgComponentListFunctionMap_VTable_val =
 {
 0,
 {
@@ -21436,7 +22076,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_web_svg_SvgComponentList_SvgComponentListPropertyMap_Extension_VTable nova_web_svg_SvgComponentList_SvgComponentListPropertyMap_Extension_VTable_val =
+nova_web_svg_Nova_SvgComponentListPropertyMap_VTable nova_web_svg_Nova_SvgComponentListPropertyMap_VTable_val =
 {
 0,
 {
@@ -21482,7 +22122,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_web_svg_SvgComponentNode_Extension_VTable nova_web_svg_SvgComponentNode_Extension_VTable_val =
+nova_web_svg_Nova_SvgComponentNode_VTable nova_web_svg_Nova_SvgComponentNode_VTable_val =
 {
 0,
 {
@@ -21528,7 +22168,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_web_svg_SvgComponentNode_SvgComponentNodeFunctionMap_Extension_VTable nova_web_svg_SvgComponentNode_SvgComponentNodeFunctionMap_Extension_VTable_val =
+nova_web_svg_Nova_SvgComponentNodeFunctionMap_VTable nova_web_svg_Nova_SvgComponentNodeFunctionMap_VTable_val =
 {
 0,
 {
@@ -21574,7 +22214,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_web_svg_SvgComponentNode_SvgComponentNodePropertyMap_Extension_VTable nova_web_svg_SvgComponentNode_SvgComponentNodePropertyMap_Extension_VTable_val =
+nova_web_svg_Nova_SvgComponentNodePropertyMap_VTable nova_web_svg_Nova_SvgComponentNodePropertyMap_VTable_val =
 {
 0,
 {
@@ -21620,7 +22260,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_web_svg_SvgMainComponent_Extension_VTable nova_web_svg_SvgMainComponent_Extension_VTable_val =
+nova_web_svg_Nova_SvgMainComponent_VTable nova_web_svg_Nova_SvgMainComponent_VTable_val =
 {
 0,
 {
@@ -21667,7 +22307,7 @@ nova_web_svg_Nova_SvgMainComponent_Nova_generateOutput,
 };
 
 
-nova_web_svg_SvgMainComponent_SvgMainComponentFunctionMap_Extension_VTable nova_web_svg_SvgMainComponent_SvgMainComponentFunctionMap_Extension_VTable_val =
+nova_web_svg_Nova_SvgMainComponentFunctionMap_VTable nova_web_svg_Nova_SvgMainComponentFunctionMap_VTable_val =
 {
 0,
 {
@@ -21714,7 +22354,7 @@ nova_web_svg_Nova_SvgMainComponentFunctionMap_functionMapSvgMainComponentFunctio
 };
 
 
-nova_web_svg_SvgMainComponent_SvgMainComponentPropertyMap_Extension_VTable nova_web_svg_SvgMainComponent_SvgMainComponentPropertyMap_Extension_VTable_val =
+nova_web_svg_Nova_SvgMainComponentPropertyMap_VTable nova_web_svg_Nova_SvgMainComponentPropertyMap_VTable_val =
 {
 0,
 {
@@ -21760,7 +22400,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_web_svg_no3_No3_Extension_VTable nova_web_svg_no3_No3_Extension_VTable_val =
+nova_web_svg_no3_Nova_No3_VTable nova_web_svg_no3_Nova_No3_VTable_val =
 {
 0,
 {
@@ -21806,7 +22446,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_web_svg_no3_No3_No3FunctionMap_Extension_VTable nova_web_svg_no3_No3_No3FunctionMap_Extension_VTable_val =
+nova_web_svg_no3_Nova_No3FunctionMap_VTable nova_web_svg_no3_Nova_No3FunctionMap_VTable_val =
 {
 0,
 {
@@ -21852,7 +22492,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_web_svg_no3_No3_No3PropertyMap_Extension_VTable nova_web_svg_no3_No3_No3PropertyMap_Extension_VTable_val =
+nova_web_svg_no3_Nova_No3PropertyMap_VTable nova_web_svg_no3_Nova_No3PropertyMap_VTable_val =
 {
 0,
 {
@@ -21898,7 +22538,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_web_svg_no3_No3Node_Extension_VTable nova_web_svg_no3_No3Node_Extension_VTable_val =
+nova_web_svg_no3_Nova_No3Node_VTable nova_web_svg_no3_Nova_No3Node_VTable_val =
 {
 0,
 {
@@ -21945,7 +22585,7 @@ nova_web_svg_no3_Nova_No3Node_virtual_Nova_toJs,
 };
 
 
-nova_web_svg_no3_No3Node_No3NodeFunctionMap_Extension_VTable nova_web_svg_no3_No3Node_No3NodeFunctionMap_Extension_VTable_val =
+nova_web_svg_no3_Nova_No3NodeFunctionMap_VTable nova_web_svg_no3_Nova_No3NodeFunctionMap_VTable_val =
 {
 0,
 {
@@ -21991,7 +22631,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_web_svg_no3_No3Node_No3NodePropertyMap_Extension_VTable nova_web_svg_no3_No3Node_No3NodePropertyMap_Extension_VTable_val =
+nova_web_svg_no3_Nova_No3NodePropertyMap_VTable nova_web_svg_no3_Nova_No3NodePropertyMap_VTable_val =
 {
 0,
 {
@@ -22037,7 +22677,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_web_svg_no3_No3Select_Extension_VTable nova_web_svg_no3_No3Select_Extension_VTable_val =
+nova_web_svg_no3_Nova_No3Select_VTable nova_web_svg_no3_Nova_No3Select_VTable_val =
 {
 0,
 {
@@ -22084,7 +22724,7 @@ nova_web_svg_no3_Nova_No3Select_Nova_toJs,
 };
 
 
-nova_web_svg_no3_No3Select_No3SelectFunctionMap_Extension_VTable nova_web_svg_no3_No3Select_No3SelectFunctionMap_Extension_VTable_val =
+nova_web_svg_no3_Nova_No3SelectFunctionMap_VTable nova_web_svg_no3_Nova_No3SelectFunctionMap_VTable_val =
 {
 0,
 {
@@ -22130,7 +22770,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_web_svg_no3_No3Select_No3SelectPropertyMap_Extension_VTable nova_web_svg_no3_No3Select_No3SelectPropertyMap_Extension_VTable_val =
+nova_web_svg_no3_Nova_No3SelectPropertyMap_VTable nova_web_svg_no3_Nova_No3SelectPropertyMap_VTable_val =
 {
 0,
 {
@@ -22176,7 +22816,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_web_svg_no3_No3SelectAll_Extension_VTable nova_web_svg_no3_No3SelectAll_Extension_VTable_val =
+nova_web_svg_no3_Nova_No3SelectAll_VTable nova_web_svg_no3_Nova_No3SelectAll_VTable_val =
 {
 0,
 {
@@ -22223,7 +22863,7 @@ nova_web_svg_no3_Nova_No3SelectAll_Nova_toJs,
 };
 
 
-nova_web_svg_no3_No3SelectAll_No3SelectAllFunctionMap_Extension_VTable nova_web_svg_no3_No3SelectAll_No3SelectAllFunctionMap_Extension_VTable_val =
+nova_web_svg_no3_Nova_No3SelectAllFunctionMap_VTable nova_web_svg_no3_Nova_No3SelectAllFunctionMap_VTable_val =
 {
 0,
 {
@@ -22269,7 +22909,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-nova_web_svg_no3_No3SelectAll_No3SelectAllPropertyMap_Extension_VTable nova_web_svg_no3_No3SelectAll_No3SelectAllPropertyMap_Extension_VTable_val =
+nova_web_svg_no3_Nova_No3SelectAllPropertyMap_VTable nova_web_svg_no3_Nova_No3SelectAllPropertyMap_VTable_val =
 {
 0,
 {
@@ -22315,7 +22955,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-example_Animal_Extension_VTable example_Animal_Extension_VTable_val =
+example_Nova_Animal_VTable example_Nova_Animal_VTable_val =
 {
 0,
 {
@@ -22364,7 +23004,7 @@ example_Nova_Animal_Nova_getDescription,
 };
 
 
-example_Animal_AnimalFunctionMap_Extension_VTable example_Animal_AnimalFunctionMap_Extension_VTable_val =
+example_Nova_AnimalFunctionMap_VTable example_Nova_AnimalFunctionMap_VTable_val =
 {
 0,
 {
@@ -22411,7 +23051,7 @@ example_Nova_AnimalFunctionMap_functionMapAnimalFunctionMap_Nova_construct,
 };
 
 
-example_Animal_AnimalPropertyMap_Extension_VTable example_Animal_AnimalPropertyMap_Extension_VTable_val =
+example_Nova_AnimalPropertyMap_VTable example_Nova_AnimalPropertyMap_VTable_val =
 {
 0,
 {
@@ -22457,7 +23097,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-example_ArrayDemo_Extension_VTable example_ArrayDemo_Extension_VTable_val =
+example_Nova_ArrayDemo_VTable example_Nova_ArrayDemo_VTable_val =
 {
 0,
 {
@@ -22503,7 +23143,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-example_ArrayDemo_ArrayDemoFunctionMap_Extension_VTable example_ArrayDemo_ArrayDemoFunctionMap_Extension_VTable_val =
+example_Nova_ArrayDemoFunctionMap_VTable example_Nova_ArrayDemoFunctionMap_VTable_val =
 {
 0,
 {
@@ -22549,7 +23189,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-example_ArrayDemo_ArrayDemoPropertyMap_Extension_VTable example_ArrayDemo_ArrayDemoPropertyMap_Extension_VTable_val =
+example_Nova_ArrayDemoPropertyMap_VTable example_Nova_ArrayDemoPropertyMap_VTable_val =
 {
 0,
 {
@@ -22595,7 +23235,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-example_BodyBuilder_Extension_VTable example_BodyBuilder_Extension_VTable_val =
+example_Nova_BodyBuilder_VTable example_Nova_BodyBuilder_VTable_val =
 {
 0,
 {
@@ -22642,7 +23282,7 @@ example_Nova_BodyBuilder_Nova_sayHello,
 };
 
 
-example_BodyBuilder_BodyBuilderFunctionMap_Extension_VTable example_BodyBuilder_BodyBuilderFunctionMap_Extension_VTable_val =
+example_Nova_BodyBuilderFunctionMap_VTable example_Nova_BodyBuilderFunctionMap_VTable_val =
 {
 0,
 {
@@ -22688,7 +23328,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-example_BodyBuilder_BodyBuilderPropertyMap_Extension_VTable example_BodyBuilder_BodyBuilderPropertyMap_Extension_VTable_val =
+example_Nova_BodyBuilderPropertyMap_VTable example_Nova_BodyBuilderPropertyMap_VTable_val =
 {
 0,
 {
@@ -22734,7 +23374,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-example_ClosureDemo_Extension_VTable example_ClosureDemo_Extension_VTable_val =
+example_Nova_ClosureDemo_VTable example_Nova_ClosureDemo_VTable_val =
 {
 0,
 {
@@ -22780,7 +23420,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-example_ClosureDemo_ClosureDemoFunctionMap_Extension_VTable example_ClosureDemo_ClosureDemoFunctionMap_Extension_VTable_val =
+example_Nova_ClosureDemoFunctionMap_VTable example_Nova_ClosureDemoFunctionMap_VTable_val =
 {
 0,
 {
@@ -22826,7 +23466,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-example_ClosureDemo_ClosureDemoPropertyMap_Extension_VTable example_ClosureDemo_ClosureDemoPropertyMap_Extension_VTable_val =
+example_Nova_ClosureDemoPropertyMap_VTable example_Nova_ClosureDemoPropertyMap_VTable_val =
 {
 0,
 {
@@ -22872,7 +23512,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-example_Dog_Extension_VTable example_Dog_Extension_VTable_val =
+example_Nova_Dog_VTable example_Nova_Dog_VTable_val =
 {
 0,
 {
@@ -22921,7 +23561,7 @@ example_Nova_Dog_Nova_getDescription,
 };
 
 
-example_Dog_DogFunctionMap_Extension_VTable example_Dog_DogFunctionMap_Extension_VTable_val =
+example_Nova_DogFunctionMap_VTable example_Nova_DogFunctionMap_VTable_val =
 {
 0,
 {
@@ -22968,7 +23608,7 @@ example_Nova_DogFunctionMap_functionMapDogFunctionMap_Nova_construct,
 };
 
 
-example_Dog_DogPropertyMap_Extension_VTable example_Dog_DogPropertyMap_Extension_VTable_val =
+example_Nova_DogPropertyMap_VTable example_Nova_DogPropertyMap_VTable_val =
 {
 0,
 {
@@ -23014,7 +23654,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-example_ExceptionHandlingDemo_Extension_VTable example_ExceptionHandlingDemo_Extension_VTable_val =
+example_Nova_ExceptionHandlingDemo_VTable example_Nova_ExceptionHandlingDemo_VTable_val =
 {
 0,
 {
@@ -23060,7 +23700,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-example_ExceptionHandlingDemo_ExceptionHandlingDemoFunctionMap_Extension_VTable example_ExceptionHandlingDemo_ExceptionHandlingDemoFunctionMap_Extension_VTable_val =
+example_Nova_ExceptionHandlingDemoFunctionMap_VTable example_Nova_ExceptionHandlingDemoFunctionMap_VTable_val =
 {
 0,
 {
@@ -23106,7 +23746,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-example_ExceptionHandlingDemo_ExceptionHandlingDemoPropertyMap_Extension_VTable example_ExceptionHandlingDemo_ExceptionHandlingDemoPropertyMap_Extension_VTable_val =
+example_Nova_ExceptionHandlingDemoPropertyMap_VTable example_Nova_ExceptionHandlingDemoPropertyMap_VTable_val =
 {
 0,
 {
@@ -23152,7 +23792,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-example_FileTest_Extension_VTable example_FileTest_Extension_VTable_val =
+example_Nova_FileTest_VTable example_Nova_FileTest_VTable_val =
 {
 0,
 {
@@ -23198,7 +23838,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-example_FileTest_FileTestFunctionMap_Extension_VTable example_FileTest_FileTestFunctionMap_Extension_VTable_val =
+example_Nova_FileTestFunctionMap_VTable example_Nova_FileTestFunctionMap_VTable_val =
 {
 0,
 {
@@ -23244,7 +23884,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-example_FileTest_FileTestPropertyMap_Extension_VTable example_FileTest_FileTestPropertyMap_Extension_VTable_val =
+example_Nova_FileTestPropertyMap_VTable example_Nova_FileTestPropertyMap_VTable_val =
 {
 0,
 {
@@ -23290,7 +23930,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-example_GenericDemo_Extension_VTable example_GenericDemo_Extension_VTable_val =
+example_Nova_GenericDemo_VTable example_Nova_GenericDemo_VTable_val =
 {
 0,
 {
@@ -23336,7 +23976,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-example_GenericDemo_GenericDemoFunctionMap_Extension_VTable example_GenericDemo_GenericDemoFunctionMap_Extension_VTable_val =
+example_Nova_GenericDemoFunctionMap_VTable example_Nova_GenericDemoFunctionMap_VTable_val =
 {
 0,
 {
@@ -23382,7 +24022,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-example_GenericDemo_GenericDemoPropertyMap_Extension_VTable example_GenericDemo_GenericDemoPropertyMap_Extension_VTable_val =
+example_Nova_GenericDemoPropertyMap_VTable example_Nova_GenericDemoPropertyMap_VTable_val =
 {
 0,
 {
@@ -23428,7 +24068,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-example_HashMapDemo_Extension_VTable example_HashMapDemo_Extension_VTable_val =
+example_Nova_HashMapDemo_VTable example_Nova_HashMapDemo_VTable_val =
 {
 0,
 {
@@ -23474,7 +24114,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-example_HashMapDemo_HashMapDemoFunctionMap_Extension_VTable example_HashMapDemo_HashMapDemoFunctionMap_Extension_VTable_val =
+example_Nova_HashMapDemoFunctionMap_VTable example_Nova_HashMapDemoFunctionMap_VTable_val =
 {
 0,
 {
@@ -23520,7 +24160,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-example_HashMapDemo_HashMapDemoPropertyMap_Extension_VTable example_HashMapDemo_HashMapDemoPropertyMap_Extension_VTable_val =
+example_Nova_HashMapDemoPropertyMap_VTable example_Nova_HashMapDemoPropertyMap_VTable_val =
 {
 0,
 {
@@ -23566,7 +24206,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-example_HashSetDemo_Extension_VTable example_HashSetDemo_Extension_VTable_val =
+example_Nova_HashSetDemo_VTable example_Nova_HashSetDemo_VTable_val =
 {
 0,
 {
@@ -23612,7 +24252,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-example_HashSetDemo_HashSetDemoFunctionMap_Extension_VTable example_HashSetDemo_HashSetDemoFunctionMap_Extension_VTable_val =
+example_Nova_HashSetDemoFunctionMap_VTable example_Nova_HashSetDemoFunctionMap_VTable_val =
 {
 0,
 {
@@ -23658,7 +24298,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-example_HashSetDemo_HashSetDemoPropertyMap_Extension_VTable example_HashSetDemo_HashSetDemoPropertyMap_Extension_VTable_val =
+example_Nova_HashSetDemoPropertyMap_VTable example_Nova_HashSetDemoPropertyMap_VTable_val =
 {
 0,
 {
@@ -23704,7 +24344,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-example_IntegerTest_Extension_VTable example_IntegerTest_Extension_VTable_val =
+example_Nova_IntegerTest_VTable example_Nova_IntegerTest_VTable_val =
 {
 0,
 {
@@ -23750,7 +24390,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-example_IntegerTest_IntegerTestFunctionMap_Extension_VTable example_IntegerTest_IntegerTestFunctionMap_Extension_VTable_val =
+example_Nova_IntegerTestFunctionMap_VTable example_Nova_IntegerTestFunctionMap_VTable_val =
 {
 0,
 {
@@ -23796,7 +24436,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-example_IntegerTest_IntegerTestPropertyMap_Extension_VTable example_IntegerTest_IntegerTestPropertyMap_Extension_VTable_val =
+example_Nova_IntegerTestPropertyMap_VTable example_Nova_IntegerTestPropertyMap_VTable_val =
 {
 0,
 {
@@ -23842,7 +24482,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-example_Lab_Extension_VTable example_Lab_Extension_VTable_val =
+example_Nova_Lab_VTable example_Nova_Lab_VTable_val =
 {
 0,
 {
@@ -23888,7 +24528,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-example_Lab_LabFunctionMap_Extension_VTable example_Lab_LabFunctionMap_Extension_VTable_val =
+example_Nova_LabFunctionMap_VTable example_Nova_LabFunctionMap_VTable_val =
 {
 0,
 {
@@ -23934,7 +24574,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-example_Lab_LabPropertyMap_Extension_VTable example_Lab_LabPropertyMap_Extension_VTable_val =
+example_Nova_LabPropertyMap_VTable example_Nova_LabPropertyMap_VTable_val =
 {
 0,
 {
@@ -23980,7 +24620,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-example_MathDemo_Extension_VTable example_MathDemo_Extension_VTable_val =
+example_Nova_MathDemo_VTable example_Nova_MathDemo_VTable_val =
 {
 0,
 {
@@ -24026,7 +24666,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-example_MathDemo_MathDemoFunctionMap_Extension_VTable example_MathDemo_MathDemoFunctionMap_Extension_VTable_val =
+example_Nova_MathDemoFunctionMap_VTable example_Nova_MathDemoFunctionMap_VTable_val =
 {
 0,
 {
@@ -24072,7 +24712,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-example_MathDemo_MathDemoPropertyMap_Extension_VTable example_MathDemo_MathDemoPropertyMap_Extension_VTable_val =
+example_Nova_MathDemoPropertyMap_VTable example_Nova_MathDemoPropertyMap_VTable_val =
 {
 0,
 {
@@ -24118,7 +24758,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-example_NonWholeDivisionException_Extension_VTable example_NonWholeDivisionException_Extension_VTable_val =
+example_Nova_NonWholeDivisionException_VTable example_Nova_NonWholeDivisionException_VTable_val =
 {
 0,
 {
@@ -24164,7 +24804,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-example_NonWholeDivisionException_NonWholeDivisionExceptionFunctionMap_Extension_VTable example_NonWholeDivisionException_NonWholeDivisionExceptionFunctionMap_Extension_VTable_val =
+example_Nova_NonWholeDivisionExceptionFunctionMap_VTable example_Nova_NonWholeDivisionExceptionFunctionMap_VTable_val =
 {
 0,
 {
@@ -24211,7 +24851,7 @@ nova_exception_Nova_ExceptionFunctionMap_functionMapExceptionFunctionMap_Nova_co
 };
 
 
-example_NonWholeDivisionException_NonWholeDivisionExceptionPropertyMap_Extension_VTable example_NonWholeDivisionException_NonWholeDivisionExceptionPropertyMap_Extension_VTable_val =
+example_Nova_NonWholeDivisionExceptionPropertyMap_VTable example_Nova_NonWholeDivisionExceptionPropertyMap_VTable_val =
 {
 0,
 {
@@ -24257,7 +24897,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-example_Person_Extension_VTable example_Person_Extension_VTable_val =
+example_Nova_Person_VTable example_Nova_Person_VTable_val =
 {
 0,
 {
@@ -24304,7 +24944,7 @@ example_Nova_Person_Nova_sayHello,
 };
 
 
-example_Person_PersonFunctionMap_Extension_VTable example_Person_PersonFunctionMap_Extension_VTable_val =
+example_Nova_PersonFunctionMap_VTable example_Nova_PersonFunctionMap_VTable_val =
 {
 0,
 {
@@ -24350,7 +24990,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-example_Person_PersonPropertyMap_Extension_VTable example_Person_PersonPropertyMap_Extension_VTable_val =
+example_Nova_PersonPropertyMap_VTable example_Nova_PersonPropertyMap_VTable_val =
 {
 0,
 {
@@ -24396,7 +25036,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-example_Polygon_Extension_VTable example_Polygon_Extension_VTable_val =
+example_Nova_Polygon_VTable example_Nova_Polygon_VTable_val =
 {
 0,
 {
@@ -24440,53 +25080,7 @@ example_Polygon_Extension_VTable example_Polygon_Extension_VTable_val =
 };
 
 
-example_Polygon_PolygonFunctionMap_Extension_VTable example_Polygon_PolygonFunctionMap_Extension_VTable_val =
-{
-0,
-{
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-0,
-},
-nova_Nova_Object_Nova_toString,
-nova_Nova_Object_Accessor_Nova_hashCodeLong,
-};
-
-
-example_Polygon_PolygonPropertyMap_Extension_VTable example_Polygon_PolygonPropertyMap_Extension_VTable_val =
+example_Nova_PolygonFunctionMap_VTable example_Nova_PolygonFunctionMap_VTable_val =
 {
 0,
 {
@@ -24532,7 +25126,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-example_PolymorphismDemo_Extension_VTable example_PolymorphismDemo_Extension_VTable_val =
+example_Nova_PolygonPropertyMap_VTable example_Nova_PolygonPropertyMap_VTable_val =
 {
 0,
 {
@@ -24578,7 +25172,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-example_PolymorphismDemo_PolymorphismDemoFunctionMap_Extension_VTable example_PolymorphismDemo_PolymorphismDemoFunctionMap_Extension_VTable_val =
+example_Nova_PolymorphismDemo_VTable example_Nova_PolymorphismDemo_VTable_val =
 {
 0,
 {
@@ -24624,7 +25218,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-example_PolymorphismDemo_PolymorphismDemoPropertyMap_Extension_VTable example_PolymorphismDemo_PolymorphismDemoPropertyMap_Extension_VTable_val =
+example_Nova_PolymorphismDemoFunctionMap_VTable example_Nova_PolymorphismDemoFunctionMap_VTable_val =
 {
 0,
 {
@@ -24670,7 +25264,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-example_QueueDemo_Extension_VTable example_QueueDemo_Extension_VTable_val =
+example_Nova_PolymorphismDemoPropertyMap_VTable example_Nova_PolymorphismDemoPropertyMap_VTable_val =
 {
 0,
 {
@@ -24716,7 +25310,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-example_QueueDemo_QueueDemoFunctionMap_Extension_VTable example_QueueDemo_QueueDemoFunctionMap_Extension_VTable_val =
+example_Nova_QueueDemo_VTable example_Nova_QueueDemo_VTable_val =
 {
 0,
 {
@@ -24762,7 +25356,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-example_QueueDemo_QueueDemoPropertyMap_Extension_VTable example_QueueDemo_QueueDemoPropertyMap_Extension_VTable_val =
+example_Nova_QueueDemoFunctionMap_VTable example_Nova_QueueDemoFunctionMap_VTable_val =
 {
 0,
 {
@@ -24808,7 +25402,53 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-example_Spider_Extension_VTable example_Spider_Extension_VTable_val =
+example_Nova_QueueDemoPropertyMap_VTable example_Nova_QueueDemoPropertyMap_VTable_val =
+{
+0,
+{
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+},
+nova_Nova_Object_Nova_toString,
+nova_Nova_Object_Accessor_Nova_hashCodeLong,
+};
+
+
+example_Nova_Spider_VTable example_Nova_Spider_VTable_val =
 {
 0,
 {
@@ -24857,7 +25497,7 @@ example_Nova_Spider_Nova_getDescription,
 };
 
 
-example_Spider_SpiderFunctionMap_Extension_VTable example_Spider_SpiderFunctionMap_Extension_VTable_val =
+example_Nova_SpiderFunctionMap_VTable example_Nova_SpiderFunctionMap_VTable_val =
 {
 0,
 {
@@ -24904,7 +25544,7 @@ example_Nova_SpiderFunctionMap_functionMapSpiderFunctionMap_Nova_construct,
 };
 
 
-example_Spider_SpiderPropertyMap_Extension_VTable example_Spider_SpiderPropertyMap_Extension_VTable_val =
+example_Nova_SpiderPropertyMap_VTable example_Nova_SpiderPropertyMap_VTable_val =
 {
 0,
 {
@@ -24950,7 +25590,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-example_Square_Extension_VTable example_Square_Extension_VTable_val =
+example_Nova_Square_VTable example_Nova_Square_VTable_val =
 {
 0,
 {
@@ -24996,7 +25636,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-example_Square_SquareFunctionMap_Extension_VTable example_Square_SquareFunctionMap_Extension_VTable_val =
+example_Nova_SquareFunctionMap_VTable example_Nova_SquareFunctionMap_VTable_val =
 {
 0,
 {
@@ -25042,7 +25682,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-example_Square_SquarePropertyMap_Extension_VTable example_Square_SquarePropertyMap_Extension_VTable_val =
+example_Nova_SquarePropertyMap_VTable example_Nova_SquarePropertyMap_VTable_val =
 {
 0,
 {
@@ -25088,7 +25728,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-example_SvgChart_Extension_VTable example_SvgChart_Extension_VTable_val =
+example_Nova_SvgChart_VTable example_Nova_SvgChart_VTable_val =
 {
 0,
 {
@@ -25134,7 +25774,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-example_SvgChart_SvgChartFunctionMap_Extension_VTable example_SvgChart_SvgChartFunctionMap_Extension_VTable_val =
+example_Nova_SvgChartFunctionMap_VTable example_Nova_SvgChartFunctionMap_VTable_val =
 {
 0,
 {
@@ -25180,7 +25820,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-example_SvgChart_SvgChartPropertyMap_Extension_VTable example_SvgChart_SvgChartPropertyMap_Extension_VTable_val =
+example_Nova_SvgChartPropertyMap_VTable example_Nova_SvgChartPropertyMap_VTable_val =
 {
 0,
 {
@@ -25226,7 +25866,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-example_SvgFractal_Extension_VTable example_SvgFractal_Extension_VTable_val =
+example_Nova_SvgFractal_VTable example_Nova_SvgFractal_VTable_val =
 {
 0,
 {
@@ -25272,7 +25912,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-example_SvgFractal_SvgFractalFunctionMap_Extension_VTable example_SvgFractal_SvgFractalFunctionMap_Extension_VTable_val =
+example_Nova_SvgFractalFunctionMap_VTable example_Nova_SvgFractalFunctionMap_VTable_val =
 {
 0,
 {
@@ -25318,7 +25958,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-example_SvgFractal_SvgFractalPropertyMap_Extension_VTable example_SvgFractal_SvgFractalPropertyMap_Extension_VTable_val =
+example_Nova_SvgFractalPropertyMap_VTable example_Nova_SvgFractalPropertyMap_VTable_val =
 {
 0,
 {
@@ -25364,7 +26004,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-example_T1_Extension_VTable example_T1_Extension_VTable_val =
+example_Nova_T1_VTable example_Nova_T1_VTable_val =
 {
 0,
 {
@@ -25411,7 +26051,7 @@ example_Nova_T1_Accessor_static_Nova_ind,
 };
 
 
-example_T1_T1FunctionMap_Extension_VTable example_T1_T1FunctionMap_Extension_VTable_val =
+example_Nova_T1FunctionMap_VTable example_Nova_T1FunctionMap_VTable_val =
 {
 0,
 {
@@ -25458,7 +26098,7 @@ example_Nova_T1FunctionMap_functionMapT1FunctionMap_Nova_construct,
 };
 
 
-example_T1_T1PropertyMap_Extension_VTable example_T1_T1PropertyMap_Extension_VTable_val =
+example_Nova_T1PropertyMap_VTable example_Nova_T1PropertyMap_VTable_val =
 {
 0,
 {
@@ -25505,7 +26145,7 @@ example_Nova_T1PropertyMap_functionMap_static_Nova_ind,
 };
 
 
-example_T2_Extension_VTable example_T2_Extension_VTable_val =
+example_Nova_T2_VTable example_Nova_T2_VTable_val =
 {
 0,
 {
@@ -25552,7 +26192,7 @@ example_Nova_T2_Accessor_static_Nova_ind,
 };
 
 
-example_T2_T2FunctionMap_Extension_VTable example_T2_T2FunctionMap_Extension_VTable_val =
+example_Nova_T2FunctionMap_VTable example_Nova_T2FunctionMap_VTable_val =
 {
 0,
 {
@@ -25599,7 +26239,7 @@ example_Nova_T2FunctionMap_functionMapT2FunctionMap_Nova_construct,
 };
 
 
-example_T2_T2PropertyMap_Extension_VTable example_T2_T2PropertyMap_Extension_VTable_val =
+example_Nova_T2PropertyMap_VTable example_Nova_T2PropertyMap_VTable_val =
 {
 0,
 {
@@ -25646,7 +26286,7 @@ example_Nova_T2PropertyMap_functionMap_static_Nova_ind,
 };
 
 
-example_Test_Extension_VTable example_Test_Extension_VTable_val =
+example_Nova_Test_VTable example_Nova_Test_VTable_val =
 {
 0,
 {
@@ -25692,7 +26332,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-example_Test_TestFunctionMap_Extension_VTable example_Test_TestFunctionMap_Extension_VTable_val =
+example_Nova_TestFunctionMap_VTable example_Nova_TestFunctionMap_VTable_val =
 {
 0,
 {
@@ -25738,7 +26378,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-example_Test_TestPropertyMap_Extension_VTable example_Test_TestPropertyMap_Extension_VTable_val =
+example_Nova_TestPropertyMap_VTable example_Nova_TestPropertyMap_VTable_val =
 {
 0,
 {
@@ -25784,7 +26424,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-example_ThreadDemo_Extension_VTable example_ThreadDemo_Extension_VTable_val =
+example_Nova_ThreadDemo_VTable example_Nova_ThreadDemo_VTable_val =
 {
 0,
 {
@@ -25830,7 +26470,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-example_ThreadDemo_ThreadDemoFunctionMap_Extension_VTable example_ThreadDemo_ThreadDemoFunctionMap_Extension_VTable_val =
+example_Nova_ThreadDemoFunctionMap_VTable example_Nova_ThreadDemoFunctionMap_VTable_val =
 {
 0,
 {
@@ -25876,7 +26516,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-example_ThreadDemo_ThreadDemoPropertyMap_Extension_VTable example_ThreadDemo_ThreadDemoPropertyMap_Extension_VTable_val =
+example_Nova_ThreadDemoPropertyMap_VTable example_Nova_ThreadDemoPropertyMap_VTable_val =
 {
 0,
 {
@@ -25922,7 +26562,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-example_ThreadDemoImplementation_Extension_VTable example_ThreadDemoImplementation_Extension_VTable_val =
+example_Nova_ThreadDemoImplementation_VTable example_Nova_ThreadDemoImplementation_VTable_val =
 {
 0,
 {
@@ -25969,7 +26609,7 @@ example_Nova_ThreadDemoImplementation_Nova_run,
 };
 
 
-example_ThreadDemoImplementation_ThreadDemoImplementationFunctionMap_Extension_VTable example_ThreadDemoImplementation_ThreadDemoImplementationFunctionMap_Extension_VTable_val =
+example_Nova_ThreadDemoImplementationFunctionMap_VTable example_Nova_ThreadDemoImplementationFunctionMap_VTable_val =
 {
 0,
 {
@@ -26015,7 +26655,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-example_ThreadDemoImplementation_ThreadDemoImplementationPropertyMap_Extension_VTable example_ThreadDemoImplementation_ThreadDemoImplementationPropertyMap_Extension_VTable_val =
+example_Nova_ThreadDemoImplementationPropertyMap_VTable example_Nova_ThreadDemoImplementationPropertyMap_VTable_val =
 {
 0,
 {
@@ -26061,7 +26701,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-example_ackermann_Ackermann_Extension_VTable example_ackermann_Ackermann_Extension_VTable_val =
+example_ackermann_Nova_Ackermann_VTable example_ackermann_Nova_Ackermann_VTable_val =
 {
 0,
 {
@@ -26107,7 +26747,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-example_ackermann_Ackermann_AckermannFunctionMap_Extension_VTable example_ackermann_Ackermann_AckermannFunctionMap_Extension_VTable_val =
+example_ackermann_Nova_AckermannFunctionMap_VTable example_ackermann_Nova_AckermannFunctionMap_VTable_val =
 {
 0,
 {
@@ -26153,7 +26793,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-example_ackermann_Ackermann_AckermannPropertyMap_Extension_VTable example_ackermann_Ackermann_AckermannPropertyMap_Extension_VTable_val =
+example_ackermann_Nova_AckermannPropertyMap_VTable example_ackermann_Nova_AckermannPropertyMap_VTable_val =
 {
 0,
 {
@@ -26199,7 +26839,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-example_copy_Dog_Extension_VTable example_copy_Dog_Extension_VTable_val =
+example_copy_Nova_Dog_VTable example_copy_Nova_Dog_VTable_val =
 {
 0,
 {
@@ -26245,7 +26885,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-example_copy_Dog_DogFunctionMap_Extension_VTable example_copy_Dog_DogFunctionMap_Extension_VTable_val =
+example_copy_Nova_DogFunctionMap_VTable example_copy_Nova_DogFunctionMap_VTable_val =
 {
 0,
 {
@@ -26291,7 +26931,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-example_copy_Dog_DogPropertyMap_Extension_VTable example_copy_Dog_DogPropertyMap_Extension_VTable_val =
+example_copy_Nova_DogPropertyMap_VTable example_copy_Nova_DogPropertyMap_VTable_val =
 {
 0,
 {
@@ -26337,7 +26977,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-example_database_DatabaseDemo_Extension_VTable example_database_DatabaseDemo_Extension_VTable_val =
+example_database_Nova_DatabaseDemo_VTable example_database_Nova_DatabaseDemo_VTable_val =
 {
 0,
 {
@@ -26383,7 +27023,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-example_database_DatabaseDemo_DatabaseDemoFunctionMap_Extension_VTable example_database_DatabaseDemo_DatabaseDemoFunctionMap_Extension_VTable_val =
+example_database_Nova_DatabaseDemoFunctionMap_VTable example_database_Nova_DatabaseDemoFunctionMap_VTable_val =
 {
 0,
 {
@@ -26429,7 +27069,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-example_database_DatabaseDemo_DatabaseDemoPropertyMap_Extension_VTable example_database_DatabaseDemo_DatabaseDemoPropertyMap_Extension_VTable_val =
+example_database_Nova_DatabaseDemoPropertyMap_VTable example_database_Nova_DatabaseDemoPropertyMap_VTable_val =
 {
 0,
 {
@@ -26475,7 +27115,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-example_network_ClientDemo_Extension_VTable example_network_ClientDemo_Extension_VTable_val =
+example_network_Nova_ClientDemo_VTable example_network_Nova_ClientDemo_VTable_val =
 {
 0,
 {
@@ -26521,7 +27161,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-example_network_ClientDemo_ClientDemoFunctionMap_Extension_VTable example_network_ClientDemo_ClientDemoFunctionMap_Extension_VTable_val =
+example_network_Nova_ClientDemoFunctionMap_VTable example_network_Nova_ClientDemoFunctionMap_VTable_val =
 {
 0,
 {
@@ -26567,7 +27207,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-example_network_ClientDemo_ClientDemoPropertyMap_Extension_VTable example_network_ClientDemo_ClientDemoPropertyMap_Extension_VTable_val =
+example_network_Nova_ClientDemoPropertyMap_VTable example_network_Nova_ClientDemoPropertyMap_VTable_val =
 {
 0,
 {
@@ -26613,7 +27253,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-example_network_ConnectionThread_Extension_VTable example_network_ConnectionThread_Extension_VTable_val =
+example_network_Nova_ConnectionThread_VTable example_network_Nova_ConnectionThread_VTable_val =
 {
 0,
 {
@@ -26660,7 +27300,7 @@ example_network_Nova_ConnectionThread_Nova_run,
 };
 
 
-example_network_ConnectionThread_ConnectionThreadFunctionMap_Extension_VTable example_network_ConnectionThread_ConnectionThreadFunctionMap_Extension_VTable_val =
+example_network_Nova_ConnectionThreadFunctionMap_VTable example_network_Nova_ConnectionThreadFunctionMap_VTable_val =
 {
 0,
 {
@@ -26706,7 +27346,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-example_network_ConnectionThread_ConnectionThreadPropertyMap_Extension_VTable example_network_ConnectionThread_ConnectionThreadPropertyMap_Extension_VTable_val =
+example_network_Nova_ConnectionThreadPropertyMap_VTable example_network_Nova_ConnectionThreadPropertyMap_VTable_val =
 {
 0,
 {
@@ -26752,7 +27392,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-example_network_OutputThread_Extension_VTable example_network_OutputThread_Extension_VTable_val =
+example_network_Nova_OutputThread_VTable example_network_Nova_OutputThread_VTable_val =
 {
 0,
 {
@@ -26799,7 +27439,7 @@ example_network_Nova_OutputThread_Nova_run,
 };
 
 
-example_network_OutputThread_OutputThreadFunctionMap_Extension_VTable example_network_OutputThread_OutputThreadFunctionMap_Extension_VTable_val =
+example_network_Nova_OutputThreadFunctionMap_VTable example_network_Nova_OutputThreadFunctionMap_VTable_val =
 {
 0,
 {
@@ -26845,7 +27485,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-example_network_OutputThread_OutputThreadPropertyMap_Extension_VTable example_network_OutputThread_OutputThreadPropertyMap_Extension_VTable_val =
+example_network_Nova_OutputThreadPropertyMap_VTable example_network_Nova_OutputThreadPropertyMap_VTable_val =
 {
 0,
 {
@@ -26891,7 +27531,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-example_network_ServerDemo_Extension_VTable example_network_ServerDemo_Extension_VTable_val =
+example_network_Nova_ServerDemo_VTable example_network_Nova_ServerDemo_VTable_val =
 {
 0,
 {
@@ -26937,7 +27577,7 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-example_network_ServerDemo_ServerDemoFunctionMap_Extension_VTable example_network_ServerDemo_ServerDemoFunctionMap_Extension_VTable_val =
+example_network_Nova_ServerDemoFunctionMap_VTable example_network_Nova_ServerDemoFunctionMap_VTable_val =
 {
 0,
 {
@@ -26983,7 +27623,3960 @@ nova_Nova_Object_Accessor_Nova_hashCodeLong,
 };
 
 
-example_network_ServerDemo_ServerDemoPropertyMap_Extension_VTable example_network_ServerDemo_ServerDemoPropertyMap_Extension_VTable_val =
+example_network_Nova_ServerDemoPropertyMap_VTable example_network_Nova_ServerDemoPropertyMap_VTable_val =
+{
+0,
+{
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+},
+nova_Nova_Object_Nova_toString,
+nova_Nova_Object_Accessor_Nova_hashCodeLong,
+};
+
+
+stabilitytest_Nova_AssignmentStability_VTable stabilitytest_Nova_AssignmentStability_VTable_val =
+{
+0,
+{
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+},
+nova_Nova_Object_Nova_toString,
+nova_Nova_Object_Accessor_Nova_hashCodeLong,
+stabilitytest_Nova_AssignmentStability_Nova_test,
+};
+
+
+stabilitytest_Nova_AssignmentStabilityFunctionMap_VTable stabilitytest_Nova_AssignmentStabilityFunctionMap_VTable_val =
+{
+0,
+{
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+},
+nova_Nova_Object_Nova_toString,
+nova_Nova_Object_Accessor_Nova_hashCodeLong,
+stabilitytest_Nova_AssignmentStabilityFunctionMap_functionMapAssignmentStabilityFunctionMap_Nova_construct,
+};
+
+
+stabilitytest_Nova_AssignmentStabilityPropertyMap_VTable stabilitytest_Nova_AssignmentStabilityPropertyMap_VTable_val =
+{
+0,
+{
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+},
+nova_Nova_Object_Nova_toString,
+nova_Nova_Object_Accessor_Nova_hashCodeLong,
+};
+
+
+stabilitytest_Nova_ClassWithProperties_VTable stabilitytest_Nova_ClassWithProperties_VTable_val =
+{
+0,
+{
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+},
+nova_Nova_Object_Nova_toString,
+nova_Nova_Object_Accessor_Nova_hashCodeLong,
+};
+
+
+stabilitytest_Nova_ClassWithPropertiesFunctionMap_VTable stabilitytest_Nova_ClassWithPropertiesFunctionMap_VTable_val =
+{
+0,
+{
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+},
+nova_Nova_Object_Nova_toString,
+nova_Nova_Object_Accessor_Nova_hashCodeLong,
+};
+
+
+stabilitytest_Nova_ClassWithPropertiesPropertyMap_VTable stabilitytest_Nova_ClassWithPropertiesPropertyMap_VTable_val =
+{
+0,
+{
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+},
+nova_Nova_Object_Nova_toString,
+nova_Nova_Object_Accessor_Nova_hashCodeLong,
+};
+
+
+stabilitytest_Nova_ClientThread_VTable stabilitytest_Nova_ClientThread_VTable_val =
+{
+0,
+{
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+},
+nova_Nova_Object_Nova_toString,
+nova_Nova_Object_Accessor_Nova_hashCodeLong,
+stabilitytest_Nova_ClientThread_Nova_run,
+};
+
+
+stabilitytest_Nova_ClientThreadFunctionMap_VTable stabilitytest_Nova_ClientThreadFunctionMap_VTable_val =
+{
+0,
+{
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+},
+nova_Nova_Object_Nova_toString,
+nova_Nova_Object_Accessor_Nova_hashCodeLong,
+};
+
+
+stabilitytest_Nova_ClientThreadPropertyMap_VTable stabilitytest_Nova_ClientThreadPropertyMap_VTable_val =
+{
+0,
+{
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+},
+nova_Nova_Object_Nova_toString,
+nova_Nova_Object_Accessor_Nova_hashCodeLong,
+};
+
+
+stabilitytest_Nova_ClosureStability_VTable stabilitytest_Nova_ClosureStability_VTable_val =
+{
+0,
+{
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+},
+nova_Nova_Object_Nova_toString,
+nova_Nova_Object_Accessor_Nova_hashCodeLong,
+stabilitytest_Nova_ClosureStability_Nova_test,
+};
+
+
+stabilitytest_Nova_ClosureStabilityFunctionMap_VTable stabilitytest_Nova_ClosureStabilityFunctionMap_VTable_val =
+{
+0,
+{
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+},
+nova_Nova_Object_Nova_toString,
+nova_Nova_Object_Accessor_Nova_hashCodeLong,
+stabilitytest_Nova_ClosureStabilityFunctionMap_functionMapClosureStabilityFunctionMap_Nova_construct,
+};
+
+
+stabilitytest_Nova_ClosureStabilityPropertyMap_VTable stabilitytest_Nova_ClosureStabilityPropertyMap_VTable_val =
+{
+0,
+{
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+},
+nova_Nova_Object_Nova_toString,
+nova_Nova_Object_Accessor_Nova_hashCodeLong,
+};
+
+
+stabilitytest_Nova_ExceptionStability_VTable stabilitytest_Nova_ExceptionStability_VTable_val =
+{
+0,
+{
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+},
+nova_Nova_Object_Nova_toString,
+nova_Nova_Object_Accessor_Nova_hashCodeLong,
+stabilitytest_Nova_ExceptionStability_Nova_test,
+};
+
+
+stabilitytest_Nova_ExceptionStabilityFunctionMap_VTable stabilitytest_Nova_ExceptionStabilityFunctionMap_VTable_val =
+{
+0,
+{
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+},
+nova_Nova_Object_Nova_toString,
+nova_Nova_Object_Accessor_Nova_hashCodeLong,
+stabilitytest_Nova_ExceptionStabilityFunctionMap_functionMapExceptionStabilityFunctionMap_Nova_construct,
+};
+
+
+stabilitytest_Nova_ExceptionStabilityPropertyMap_VTable stabilitytest_Nova_ExceptionStabilityPropertyMap_VTable_val =
+{
+0,
+{
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+},
+nova_Nova_Object_Nova_toString,
+nova_Nova_Object_Accessor_Nova_hashCodeLong,
+};
+
+
+stabilitytest_Nova_ExternalInnerClassStability_VTable stabilitytest_Nova_ExternalInnerClassStability_VTable_val =
+{
+0,
+{
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+},
+nova_Nova_Object_Nova_toString,
+nova_Nova_Object_Accessor_Nova_hashCodeLong,
+stabilitytest_Nova_ExternalInnerClassStability_Nova_test,
+};
+
+
+stabilitytest_Nova_ExternalInnerClassStabilityFunctionMap_VTable stabilitytest_Nova_ExternalInnerClassStabilityFunctionMap_VTable_val =
+{
+0,
+{
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+},
+nova_Nova_Object_Nova_toString,
+nova_Nova_Object_Accessor_Nova_hashCodeLong,
+stabilitytest_Nova_ExternalInnerClassStabilityFunctionMap_functionMapExternalInnerClassStabilityFunctionMap_Nova_construct,
+};
+
+
+stabilitytest_Nova_ExternalInnerClassStabilityPropertyMap_VTable stabilitytest_Nova_ExternalInnerClassStabilityPropertyMap_VTable_val =
+{
+0,
+{
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+},
+nova_Nova_Object_Nova_toString,
+nova_Nova_Object_Accessor_Nova_hashCodeLong,
+};
+
+
+stabilitytest_Nova_FileStability_VTable stabilitytest_Nova_FileStability_VTable_val =
+{
+0,
+{
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+},
+nova_Nova_Object_Nova_toString,
+nova_Nova_Object_Accessor_Nova_hashCodeLong,
+stabilitytest_Nova_FileStability_Nova_test,
+};
+
+
+stabilitytest_Nova_FileStabilityFunctionMap_VTable stabilitytest_Nova_FileStabilityFunctionMap_VTable_val =
+{
+0,
+{
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+},
+nova_Nova_Object_Nova_toString,
+nova_Nova_Object_Accessor_Nova_hashCodeLong,
+stabilitytest_Nova_FileStabilityFunctionMap_functionMapFileStabilityFunctionMap_Nova_construct,
+};
+
+
+stabilitytest_Nova_FileStabilityPropertyMap_VTable stabilitytest_Nova_FileStabilityPropertyMap_VTable_val =
+{
+0,
+{
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+},
+nova_Nova_Object_Nova_toString,
+nova_Nova_Object_Accessor_Nova_hashCodeLong,
+};
+
+
+stabilitytest_Nova_InnerClassStability_VTable stabilitytest_Nova_InnerClassStability_VTable_val =
+{
+0,
+{
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+},
+nova_Nova_Object_Nova_toString,
+nova_Nova_Object_Accessor_Nova_hashCodeLong,
+stabilitytest_Nova_InnerClassStability_Nova_test,
+};
+
+
+stabilitytest_Nova_MyOuter_VTable stabilitytest_Nova_MyOuter_VTable_val =
+{
+0,
+{
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+},
+nova_Nova_Object_Nova_toString,
+nova_Nova_Object_Accessor_Nova_hashCodeLong,
+};
+
+
+stabilitytest_Nova_InnerClassStabilityFunctionMap_VTable stabilitytest_Nova_InnerClassStabilityFunctionMap_VTable_val =
+{
+0,
+{
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+},
+nova_Nova_Object_Nova_toString,
+nova_Nova_Object_Accessor_Nova_hashCodeLong,
+stabilitytest_Nova_InnerClassStabilityFunctionMap_functionMapInnerClassStabilityFunctionMap_Nova_construct,
+};
+
+
+stabilitytest_Nova_InnerClassStabilityPropertyMap_VTable stabilitytest_Nova_InnerClassStabilityPropertyMap_VTable_val =
+{
+0,
+{
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+},
+nova_Nova_Object_Nova_toString,
+nova_Nova_Object_Accessor_Nova_hashCodeLong,
+};
+
+
+stabilitytest_Nova_MyOuterFunctionMap_VTable stabilitytest_Nova_MyOuterFunctionMap_VTable_val =
+{
+0,
+{
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+},
+nova_Nova_Object_Nova_toString,
+nova_Nova_Object_Accessor_Nova_hashCodeLong,
+};
+
+
+stabilitytest_Nova_MyOuterPropertyMap_VTable stabilitytest_Nova_MyOuterPropertyMap_VTable_val =
+{
+0,
+{
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+},
+nova_Nova_Object_Nova_toString,
+nova_Nova_Object_Accessor_Nova_hashCodeLong,
+};
+
+
+stabilitytest_Nova_MyInner_VTable stabilitytest_Nova_MyInner_VTable_val =
+{
+0,
+{
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+},
+nova_Nova_Object_Nova_toString,
+nova_Nova_Object_Accessor_Nova_hashCodeLong,
+};
+
+
+stabilitytest_Nova_MyInnerFunctionMap_VTable stabilitytest_Nova_MyInnerFunctionMap_VTable_val =
+{
+0,
+{
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+},
+nova_Nova_Object_Nova_toString,
+nova_Nova_Object_Accessor_Nova_hashCodeLong,
+};
+
+
+stabilitytest_Nova_MyInnerPropertyMap_VTable stabilitytest_Nova_MyInnerPropertyMap_VTable_val =
+{
+0,
+{
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+},
+nova_Nova_Object_Nova_toString,
+nova_Nova_Object_Accessor_Nova_hashCodeLong,
+};
+
+
+stabilitytest_Nova_MyInnerPropertyMapFunctionMap_VTable stabilitytest_Nova_MyInnerPropertyMapFunctionMap_VTable_val =
+{
+0,
+{
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+},
+nova_Nova_Object_Nova_toString,
+nova_Nova_Object_Accessor_Nova_hashCodeLong,
+};
+
+
+stabilitytest_Nova_LambdaStability_VTable stabilitytest_Nova_LambdaStability_VTable_val =
+{
+0,
+{
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+},
+nova_Nova_Object_Nova_toString,
+nova_Nova_Object_Accessor_Nova_hashCodeLong,
+stabilitytest_Nova_LambdaStability_Nova_test,
+};
+
+
+stabilitytest_Nova_LambdaStabilityFunctionMap_VTable stabilitytest_Nova_LambdaStabilityFunctionMap_VTable_val =
+{
+0,
+{
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+},
+nova_Nova_Object_Nova_toString,
+nova_Nova_Object_Accessor_Nova_hashCodeLong,
+stabilitytest_Nova_LambdaStabilityFunctionMap_functionMapLambdaStabilityFunctionMap_Nova_construct,
+};
+
+
+stabilitytest_Nova_LambdaStabilityPropertyMap_VTable stabilitytest_Nova_LambdaStabilityPropertyMap_VTable_val =
+{
+0,
+{
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+},
+nova_Nova_Object_Nova_toString,
+nova_Nova_Object_Accessor_Nova_hashCodeLong,
+};
+
+
+stabilitytest_Nova_NetworkStability_VTable stabilitytest_Nova_NetworkStability_VTable_val =
+{
+0,
+{
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+},
+nova_Nova_Object_Nova_toString,
+nova_Nova_Object_Accessor_Nova_hashCodeLong,
+stabilitytest_Nova_NetworkStability_Nova_test,
+};
+
+
+stabilitytest_Nova_NetworkStabilityFunctionMap_VTable stabilitytest_Nova_NetworkStabilityFunctionMap_VTable_val =
+{
+0,
+{
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+},
+nova_Nova_Object_Nova_toString,
+nova_Nova_Object_Accessor_Nova_hashCodeLong,
+stabilitytest_Nova_NetworkStabilityFunctionMap_functionMapNetworkStabilityFunctionMap_Nova_construct,
+};
+
+
+stabilitytest_Nova_NetworkStabilityPropertyMap_VTable stabilitytest_Nova_NetworkStabilityPropertyMap_VTable_val =
+{
+0,
+{
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+},
+nova_Nova_Object_Nova_toString,
+nova_Nova_Object_Accessor_Nova_hashCodeLong,
+};
+
+
+stabilitytest_Nova_Node_VTable stabilitytest_Nova_Node_VTable_val =
+{
+0,
+{
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+},
+nova_Nova_Object_Nova_toString,
+nova_Nova_Object_Accessor_Nova_hashCodeLong,
+};
+
+
+stabilitytest_Nova_NodeFunctionMap_VTable stabilitytest_Nova_NodeFunctionMap_VTable_val =
+{
+0,
+{
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+},
+nova_Nova_Object_Nova_toString,
+nova_Nova_Object_Accessor_Nova_hashCodeLong,
+};
+
+
+stabilitytest_Nova_NodePropertyMap_VTable stabilitytest_Nova_NodePropertyMap_VTable_val =
+{
+0,
+{
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+},
+nova_Nova_Object_Nova_toString,
+nova_Nova_Object_Accessor_Nova_hashCodeLong,
+};
+
+
+stabilitytest_Nova_PolymorphicSubClass_VTable stabilitytest_Nova_PolymorphicSubClass_VTable_val =
+{
+0,
+{
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+},
+stabilitytest_Nova_PolymorphicSubClass_Nova_toString,
+nova_Nova_Object_Accessor_Nova_hashCodeLong,
+stabilitytest_Nova_PolymorphicSubClass_Accessorfunc_Nova_myProperty,
+};
+
+
+stabilitytest_Nova_PolymorphicSubClassFunctionMap_VTable stabilitytest_Nova_PolymorphicSubClassFunctionMap_VTable_val =
+{
+0,
+{
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+},
+nova_Nova_Object_Nova_toString,
+nova_Nova_Object_Accessor_Nova_hashCodeLong,
+stabilitytest_Nova_PolymorphicSubClassFunctionMap_functionMapPolymorphicSubClassFunctionMap_Nova_construct,
+};
+
+
+stabilitytest_Nova_PolymorphicSubClassPropertyMap_VTable stabilitytest_Nova_PolymorphicSubClassPropertyMap_VTable_val =
+{
+0,
+{
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+},
+nova_Nova_Object_Nova_toString,
+nova_Nova_Object_Accessor_Nova_hashCodeLong,
+};
+
+
+stabilitytest_Nova_PolymorphicSuperClass_VTable stabilitytest_Nova_PolymorphicSuperClass_VTable_val =
+{
+0,
+{
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+},
+stabilitytest_Nova_PolymorphicSuperClass_Nova_toString,
+nova_Nova_Object_Accessor_Nova_hashCodeLong,
+stabilitytest_Nova_PolymorphicSuperClass_Accessor_Nova_myProperty,
+};
+
+
+stabilitytest_Nova_PolymorphicSuperClassFunctionMap_VTable stabilitytest_Nova_PolymorphicSuperClassFunctionMap_VTable_val =
+{
+0,
+{
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+},
+nova_Nova_Object_Nova_toString,
+nova_Nova_Object_Accessor_Nova_hashCodeLong,
+stabilitytest_Nova_PolymorphicSuperClassFunctionMap_functionMapPolymorphicSuperClassFunctionMap_Nova_construct,
+};
+
+
+stabilitytest_Nova_PolymorphicSuperClassPropertyMap_VTable stabilitytest_Nova_PolymorphicSuperClassPropertyMap_VTable_val =
+{
+0,
+{
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+},
+nova_Nova_Object_Nova_toString,
+nova_Nova_Object_Accessor_Nova_hashCodeLong,
+};
+
+
+stabilitytest_Nova_PolymorphismStability_VTable stabilitytest_Nova_PolymorphismStability_VTable_val =
+{
+0,
+{
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+},
+nova_Nova_Object_Nova_toString,
+nova_Nova_Object_Accessor_Nova_hashCodeLong,
+stabilitytest_Nova_PolymorphismStability_Nova_test,
+};
+
+
+stabilitytest_Nova_PolymorphismStabilityFunctionMap_VTable stabilitytest_Nova_PolymorphismStabilityFunctionMap_VTable_val =
+{
+0,
+{
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+},
+nova_Nova_Object_Nova_toString,
+nova_Nova_Object_Accessor_Nova_hashCodeLong,
+stabilitytest_Nova_PolymorphismStabilityFunctionMap_functionMapPolymorphismStabilityFunctionMap_Nova_construct,
+};
+
+
+stabilitytest_Nova_PolymorphismStabilityPropertyMap_VTable stabilitytest_Nova_PolymorphismStabilityPropertyMap_VTable_val =
+{
+0,
+{
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+},
+nova_Nova_Object_Nova_toString,
+nova_Nova_Object_Accessor_Nova_hashCodeLong,
+};
+
+
+stabilitytest_Nova_RegexStability_VTable stabilitytest_Nova_RegexStability_VTable_val =
+{
+0,
+{
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+},
+nova_Nova_Object_Nova_toString,
+nova_Nova_Object_Accessor_Nova_hashCodeLong,
+stabilitytest_Nova_RegexStability_Nova_test,
+};
+
+
+stabilitytest_Nova_RegexStabilityFunctionMap_VTable stabilitytest_Nova_RegexStabilityFunctionMap_VTable_val =
+{
+0,
+{
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+},
+nova_Nova_Object_Nova_toString,
+nova_Nova_Object_Accessor_Nova_hashCodeLong,
+stabilitytest_Nova_RegexStabilityFunctionMap_functionMapRegexStabilityFunctionMap_Nova_construct,
+};
+
+
+stabilitytest_Nova_RegexStabilityPropertyMap_VTable stabilitytest_Nova_RegexStabilityPropertyMap_VTable_val =
+{
+0,
+{
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+},
+nova_Nova_Object_Nova_toString,
+nova_Nova_Object_Accessor_Nova_hashCodeLong,
+};
+
+
+stabilitytest_Nova_StabilityExceptionHandler_VTable stabilitytest_Nova_StabilityExceptionHandler_VTable_val =
+{
+0,
+{
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+},
+nova_Nova_Object_Nova_toString,
+nova_Nova_Object_Accessor_Nova_hashCodeLong,
+stabilitytest_Nova_StabilityExceptionHandler_Nova_uncaughtException,
+};
+
+
+stabilitytest_Nova_StabilityExceptionHandlerFunctionMap_VTable stabilitytest_Nova_StabilityExceptionHandlerFunctionMap_VTable_val =
+{
+0,
+{
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+},
+nova_Nova_Object_Nova_toString,
+nova_Nova_Object_Accessor_Nova_hashCodeLong,
+};
+
+
+stabilitytest_Nova_StabilityExceptionHandlerPropertyMap_VTable stabilitytest_Nova_StabilityExceptionHandlerPropertyMap_VTable_val =
+{
+0,
+{
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+},
+nova_Nova_Object_Nova_toString,
+nova_Nova_Object_Accessor_Nova_hashCodeLong,
+};
+
+
+stabilitytest_Nova_StabilityTest_VTable stabilitytest_Nova_StabilityTest_VTable_val =
+{
+0,
+{
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+},
+nova_Nova_Object_Nova_toString,
+nova_Nova_Object_Accessor_Nova_hashCodeLong,
+stabilitytest_Nova_StabilityTest_Nova_test,
+};
+
+
+stabilitytest_Nova_StabilityTestFunctionMap_VTable stabilitytest_Nova_StabilityTestFunctionMap_VTable_val =
+{
+0,
+{
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+},
+nova_Nova_Object_Nova_toString,
+nova_Nova_Object_Accessor_Nova_hashCodeLong,
+stabilitytest_Nova_StabilityTestFunctionMap_functionMapStabilityTestFunctionMap_Nova_construct,
+};
+
+
+stabilitytest_Nova_StabilityTestPropertyMap_VTable stabilitytest_Nova_StabilityTestPropertyMap_VTable_val =
+{
+0,
+{
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+},
+nova_Nova_Object_Nova_toString,
+nova_Nova_Object_Accessor_Nova_hashCodeLong,
+};
+
+
+stabilitytest_Nova_StabilityTestCase_VTable stabilitytest_Nova_StabilityTestCase_VTable_val =
+{
+0,
+{
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+},
+nova_Nova_Object_Nova_toString,
+nova_Nova_Object_Accessor_Nova_hashCodeLong,
+stabilitytest_Nova_StabilityTestCase_virtual_Nova_test,
+};
+
+
+stabilitytest_Nova_StabilityTestCaseFunctionMap_VTable stabilitytest_Nova_StabilityTestCaseFunctionMap_VTable_val =
+{
+0,
+{
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+},
+nova_Nova_Object_Nova_toString,
+nova_Nova_Object_Accessor_Nova_hashCodeLong,
+stabilitytest_Nova_StabilityTestCaseFunctionMap_functionMapStabilityTestCaseFunctionMap_Nova_construct,
+};
+
+
+stabilitytest_Nova_StabilityTestCasePropertyMap_VTable stabilitytest_Nova_StabilityTestCasePropertyMap_VTable_val =
+{
+0,
+{
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+},
+nova_Nova_Object_Nova_toString,
+nova_Nova_Object_Accessor_Nova_hashCodeLong,
+};
+
+
+stabilitytest_Nova_StabilityTestException_VTable stabilitytest_Nova_StabilityTestException_VTable_val =
+{
+0,
+{
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+},
+nova_exception_Nova_Exception_Nova_toString,
+nova_Nova_Object_Accessor_Nova_hashCodeLong,
+};
+
+
+stabilitytest_Nova_StabilityTestExceptionFunctionMap_VTable stabilitytest_Nova_StabilityTestExceptionFunctionMap_VTable_val =
+{
+0,
+{
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+},
+nova_Nova_Object_Nova_toString,
+nova_Nova_Object_Accessor_Nova_hashCodeLong,
+nova_exception_Nova_ExceptionFunctionMap_functionMapExceptionFunctionMap_Nova_construct,
+};
+
+
+stabilitytest_Nova_StabilityTestExceptionPropertyMap_VTable stabilitytest_Nova_StabilityTestExceptionPropertyMap_VTable_val =
+{
+0,
+{
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+},
+nova_Nova_Object_Nova_toString,
+nova_Nova_Object_Accessor_Nova_hashCodeLong,
+};
+
+
+stabilitytest_Nova_StaticImportStability_VTable stabilitytest_Nova_StaticImportStability_VTable_val =
+{
+0,
+{
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+},
+nova_Nova_Object_Nova_toString,
+nova_Nova_Object_Accessor_Nova_hashCodeLong,
+stabilitytest_Nova_StaticImportStability_Nova_test,
+};
+
+
+stabilitytest_Nova_StaticImportStabilityFunctionMap_VTable stabilitytest_Nova_StaticImportStabilityFunctionMap_VTable_val =
+{
+0,
+{
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+},
+nova_Nova_Object_Nova_toString,
+nova_Nova_Object_Accessor_Nova_hashCodeLong,
+stabilitytest_Nova_StaticImportStabilityFunctionMap_functionMapStaticImportStabilityFunctionMap_Nova_construct,
+};
+
+
+stabilitytest_Nova_StaticImportStabilityPropertyMap_VTable stabilitytest_Nova_StaticImportStabilityPropertyMap_VTable_val =
+{
+0,
+{
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+},
+nova_Nova_Object_Nova_toString,
+nova_Nova_Object_Accessor_Nova_hashCodeLong,
+};
+
+
+stabilitytest_Nova_SyntaxStability_VTable stabilitytest_Nova_SyntaxStability_VTable_val =
+{
+0,
+{
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+},
+nova_Nova_Object_Nova_toString,
+nova_Nova_Object_Accessor_Nova_hashCodeLong,
+stabilitytest_Nova_SyntaxStability_Nova_test,
+};
+
+
+stabilitytest_Nova_SyntaxStabilityFunctionMap_VTable stabilitytest_Nova_SyntaxStabilityFunctionMap_VTable_val =
+{
+0,
+{
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+},
+nova_Nova_Object_Nova_toString,
+nova_Nova_Object_Accessor_Nova_hashCodeLong,
+stabilitytest_Nova_SyntaxStabilityFunctionMap_functionMapSyntaxStabilityFunctionMap_Nova_construct,
+};
+
+
+stabilitytest_Nova_SyntaxStabilityPropertyMap_VTable stabilitytest_Nova_SyntaxStabilityPropertyMap_VTable_val =
+{
+0,
+{
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+},
+nova_Nova_Object_Nova_toString,
+nova_Nova_Object_Accessor_Nova_hashCodeLong,
+};
+
+
+stabilitytest_Nova_ThreadImplementation_VTable stabilitytest_Nova_ThreadImplementation_VTable_val =
+{
+0,
+{
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+},
+nova_Nova_Object_Nova_toString,
+nova_Nova_Object_Accessor_Nova_hashCodeLong,
+stabilitytest_Nova_ThreadImplementation_Nova_run,
+};
+
+
+stabilitytest_Nova_ThreadImplementationFunctionMap_VTable stabilitytest_Nova_ThreadImplementationFunctionMap_VTable_val =
+{
+0,
+{
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+},
+nova_Nova_Object_Nova_toString,
+nova_Nova_Object_Accessor_Nova_hashCodeLong,
+};
+
+
+stabilitytest_Nova_ThreadImplementationPropertyMap_VTable stabilitytest_Nova_ThreadImplementationPropertyMap_VTable_val =
+{
+0,
+{
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+},
+nova_Nova_Object_Nova_toString,
+nova_Nova_Object_Accessor_Nova_hashCodeLong,
+};
+
+
+stabilitytest_Nova_ThreadStability_VTable stabilitytest_Nova_ThreadStability_VTable_val =
+{
+0,
+{
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+},
+nova_Nova_Object_Nova_toString,
+nova_Nova_Object_Accessor_Nova_hashCodeLong,
+stabilitytest_Nova_ThreadStability_Nova_test,
+};
+
+
+stabilitytest_Nova_ThreadStabilityFunctionMap_VTable stabilitytest_Nova_ThreadStabilityFunctionMap_VTable_val =
+{
+0,
+{
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+},
+nova_Nova_Object_Nova_toString,
+nova_Nova_Object_Accessor_Nova_hashCodeLong,
+stabilitytest_Nova_ThreadStabilityFunctionMap_functionMapThreadStabilityFunctionMap_Nova_construct,
+};
+
+
+stabilitytest_Nova_ThreadStabilityPropertyMap_VTable stabilitytest_Nova_ThreadStabilityPropertyMap_VTable_val =
+{
+0,
+{
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+},
+nova_Nova_Object_Nova_toString,
+nova_Nova_Object_Accessor_Nova_hashCodeLong,
+};
+
+
+stabilitytest_Nova_TimeStability_VTable stabilitytest_Nova_TimeStability_VTable_val =
+{
+0,
+{
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+},
+nova_Nova_Object_Nova_toString,
+nova_Nova_Object_Accessor_Nova_hashCodeLong,
+stabilitytest_Nova_TimeStability_Nova_test,
+};
+
+
+stabilitytest_Nova_TimeStabilityFunctionMap_VTable stabilitytest_Nova_TimeStabilityFunctionMap_VTable_val =
+{
+0,
+{
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+},
+nova_Nova_Object_Nova_toString,
+nova_Nova_Object_Accessor_Nova_hashCodeLong,
+stabilitytest_Nova_TimeStabilityFunctionMap_functionMapTimeStabilityFunctionMap_Nova_construct,
+};
+
+
+stabilitytest_Nova_TimeStabilityPropertyMap_VTable stabilitytest_Nova_TimeStabilityPropertyMap_VTable_val =
+{
+0,
+{
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+},
+nova_Nova_Object_Nova_toString,
+nova_Nova_Object_Accessor_Nova_hashCodeLong,
+};
+
+
+stabilitytest_Nova_ToStringStability_VTable stabilitytest_Nova_ToStringStability_VTable_val =
+{
+0,
+{
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+},
+nova_Nova_Object_Nova_toString,
+nova_Nova_Object_Accessor_Nova_hashCodeLong,
+stabilitytest_Nova_ToStringStability_Nova_test,
+};
+
+
+stabilitytest_Nova_ToStringStabilityFunctionMap_VTable stabilitytest_Nova_ToStringStabilityFunctionMap_VTable_val =
+{
+0,
+{
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+},
+nova_Nova_Object_Nova_toString,
+nova_Nova_Object_Accessor_Nova_hashCodeLong,
+stabilitytest_Nova_ToStringStabilityFunctionMap_functionMapToStringStabilityFunctionMap_Nova_construct,
+};
+
+
+stabilitytest_Nova_ToStringStabilityPropertyMap_VTable stabilitytest_Nova_ToStringStabilityPropertyMap_VTable_val =
+{
+0,
+{
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+},
+nova_Nova_Object_Nova_toString,
+nova_Nova_Object_Accessor_Nova_hashCodeLong,
+};
+
+
+stabilitytest_Nova_UnstableException_VTable stabilitytest_Nova_UnstableException_VTable_val =
+{
+0,
+{
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+},
+nova_exception_Nova_Exception_Nova_toString,
+nova_Nova_Object_Accessor_Nova_hashCodeLong,
+};
+
+
+stabilitytest_Nova_UnstableExceptionFunctionMap_VTable stabilitytest_Nova_UnstableExceptionFunctionMap_VTable_val =
+{
+0,
+{
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+},
+nova_Nova_Object_Nova_toString,
+nova_Nova_Object_Accessor_Nova_hashCodeLong,
+stabilitytest_Nova_UnstableExceptionFunctionMap_functionMapUnstableExceptionFunctionMap_Nova_construct,
+};
+
+
+stabilitytest_Nova_UnstableExceptionPropertyMap_VTable stabilitytest_Nova_UnstableExceptionPropertyMap_VTable_val =
 {
 0,
 {
