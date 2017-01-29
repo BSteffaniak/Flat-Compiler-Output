@@ -582,19 +582,28 @@ nova_env novaEnv = {
 &nova_datastruct_list_Char_Nova_Array1Char_2_Nova_construct,
 },
 {
+&nova_datastruct_list_Int_Nova_Array1Int_Nova_plus,
+&nova_datastruct_list_Int_Nova_Array1Int_Nova_plusEquals,
 &nova_datastruct_list_Int_Nova_Array1Int_Nova_addAll,
+&nova_datastruct_list_Int_Nova_Array1Int_Nova_map,
 &nova_datastruct_list_Int_Nova_Array1Int_0_Nova_construct,
 &nova_datastruct_list_Int_Nova_Array1Int_1_Nova_construct,
 &nova_datastruct_list_Int_Nova_Array1Int_2_Nova_construct,
 },
 {
+&nova_datastruct_list_Byte_Nova_Array1Byte_Nova_plus,
+&nova_datastruct_list_Byte_Nova_Array1Byte_Nova_plusEquals,
 &nova_datastruct_list_Byte_Nova_Array1Byte_Nova_addAll,
+&nova_datastruct_list_Byte_Nova_Array1Byte_Nova_map,
 &nova_datastruct_list_Byte_Nova_Array1Byte_0_Nova_construct,
 &nova_datastruct_list_Byte_Nova_Array1Byte_1_Nova_construct,
 &nova_datastruct_list_Byte_Nova_Array1Byte_2_Nova_construct,
 },
 {
+&nova_datastruct_list_Long_Nova_Array1Long_Nova_plus,
+&nova_datastruct_list_Long_Nova_Array1Long_Nova_plusEquals,
 &nova_datastruct_list_Long_Nova_Array1Long_Nova_addAll,
+&nova_datastruct_list_Long_Nova_Array1Long_Nova_map,
 &nova_datastruct_list_Long_Nova_Array1Long_0_Nova_construct,
 &nova_datastruct_list_Long_Nova_Array1Long_1_Nova_construct,
 &nova_datastruct_list_Long_Nova_Array1Long_2_Nova_construct,
@@ -1430,7 +1439,7 @@ nova_env novaEnv = {
 &nova_math_Nova_Matrix_Nova_addRow,
 &nova_math_Nova_Matrix_Nova_subtractRow,
 &nova_math_Nova_Matrix_Nova_add,
-&nova_math_Nova_Matrix_1_Nova_plus,
+&nova_math_Nova_Matrix_3_Nova_plus,
 &nova_math_Nova_Matrix_Nova_subtract,
 &nova_math_Nova_Matrix_0_Nova_minus,
 &nova_math_Nova_Matrix_1_Nova_minus,
@@ -1491,7 +1500,7 @@ nova_env novaEnv = {
 &nova_math_Nova_NumericOperation_1_Nova_construct,
 },
 {
-&nova_math_Nova_NumericOperationFunctionMap_functionMapNumericOperationFunctionMap0_Nova_construct,
+&nova_math_Nova_NumericOperationFunctionMap_functionMapNumericOperationFunctionMap1_Nova_construct,
 &nova_math_Nova_NumericOperationFunctionMap_functionMap_Nova_toString,
 &nova_math_Nova_NumericOperationFunctionMap_Nova_construct,
 },
@@ -1928,7 +1937,7 @@ nova_env novaEnv = {
 },
 
 {
-&nova_network_Nova_NetworkOutputStream_0_Nova_write,
+&nova_network_Nova_NetworkOutputStream_1_Nova_write,
 &nova_network_Nova_NetworkOutputStream_Nova_construct,
 },
 {
