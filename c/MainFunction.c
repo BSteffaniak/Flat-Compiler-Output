@@ -82,6 +82,33 @@ novaEnv.nova_time_TimerFunctionMap.construct = nova_time_Nova_TimerFunctionMap_V
 novaEnv.nova_web_svg_SvgComponent.generateOutput = nova_web_svg_Nova_SvgComponent_VTable_val.nova_web_svg_Nova_SvgComponent_virtual_Nova_generateOutput;
 novaEnv.nova_web_svg_SvgComponentFunctionMap.construct = nova_web_svg_Nova_SvgComponentFunctionMap_VTable_val.nova_web_svg_Nova_SvgComponentFunctionMap_virtualfunctionMapSvgComponent_Nova_construct;
 novaEnv.nova_web_svg_no3_No3Node.toJs = nova_web_svg_no3_Nova_No3Node_VTable_val.nova_web_svg_no3_Nova_No3Node_virtual_Nova_toJs;
+novaEnv.spectra_tree_nodes_Node.addChild = spectra_tree_nodes_Nova_Node_VTable_val.spectra_tree_nodes_Nova_Node_virtual_Nova_addChild;
+novaEnv.spectra_tree_nodes_Node.onAdded = spectra_tree_nodes_Nova_Node_VTable_val.spectra_tree_nodes_Nova_Node_virtual_Nova_onAdded;
+novaEnv.spectra_tree_nodes_Node.findVariableDeclaration = spectra_tree_nodes_Nova_Node_VTable_val.spectra_tree_nodes_Nova_Node_virtual_Nova_findVariableDeclaration;
+novaEnv.spectra_tree_nodes_Node.parseStatement = spectra_tree_nodes_Nova_Node_VTable_val.spectra_tree_nodes_Nova_Node_virtual_Nova_parseStatement;
+novaEnv.spectra_tree_nodes_Node.generateTemporaryScopeNode = spectra_tree_nodes_Nova_Node_VTable_val.spectra_tree_nodes_Nova_Node_virtual_Nova_generateTemporaryScopeNode;
+novaEnv.spectra_tree_nodes_Node.replace = spectra_tree_nodes_Nova_Node_VTable_val.spectra_tree_nodes_Nova_Node_virtual_Nova_replace;
+novaEnv.spectra_tree_nodes_Node.validateTypes = spectra_tree_nodes_Nova_Node_VTable_val.spectra_tree_nodes_Nova_Node_virtual_Nova_validateTypes;
+novaEnv.spectra_tree_nodes_Node.parsePlaceholders = spectra_tree_nodes_Nova_Node_VTable_val.spectra_tree_nodes_Nova_Node_virtual_Nova_parsePlaceholders;
+novaEnv.spectra_tree_nodes_Node.parsePlaceholderChildren = spectra_tree_nodes_Nova_Node_VTable_val.spectra_tree_nodes_Nova_Node_virtual_Nova_parsePlaceholderChildren;
+novaEnv.spectra_tree_nodes_Node.writeAnnotationSeparator = spectra_tree_nodes_Nova_Node_VTable_val.spectra_tree_nodes_Nova_Node_virtual_Nova_writeAnnotationSeparator;
+novaEnv.spectra_tree_nodes_Node.toNova = spectra_tree_nodes_Nova_Node_VTable_val.spectra_tree_nodes_Nova_Node_virtual_Nova_toNova;
+novaEnv.spectra_tree_nodes_Node.writeNova = spectra_tree_nodes_Nova_Node_VTable_val.spectra_tree_nodes_Nova_Node_virtual_Nova_writeNova;
+novaEnv.spectra_tree_nodes_NodeFunctionMap.construct = spectra_tree_nodes_Nova_NodeFunctionMap_VTable_val.spectra_tree_nodes_Nova_NodeFunctionMap_virtualfunctionMapNode_Nova_construct;
+novaEnv.spectra_tree_nodes_Type.isValid = spectra_tree_nodes_Nova_Type_VTable_val.spectra_tree_nodes_Nova_Type_virtual_Nova_isValid;
+novaEnv.spectra_tree_nodes_Type.writeNova = spectra_tree_nodes_Nova_Type_VTable_val.spectra_tree_nodes_Nova_Type_virtual_Nova_writeNova;
+novaEnv.spectra_tree_nodes_TypeFunctionMap.construct = spectra_tree_nodes_Nova_TypeFunctionMap_VTable_val.spectra_tree_nodes_Nova_TypeFunctionMap_virtualfunctionMapType_Nova_construct;
+novaEnv.spectra_tree_nodes_Value.parseType = spectra_tree_nodes_Nova_Value_VTable_val.spectra_tree_nodes_Nova_Value_virtual_Nova_parseType;
+novaEnv.spectra_tree_nodes_Value.writeType = spectra_tree_nodes_Nova_Value_VTable_val.spectra_tree_nodes_Nova_Value_virtual_Nova_writeType;
+novaEnv.spectra_tree_nodes_annotations_Annotatable.addAnnotation = spectra_tree_nodes_annotations_Nova_Annotatable_VTable_val.itable.spectra_tree_nodes_annotations_Nova_Annotatable_virtual_Nova_addAnnotation;
+novaEnv.spectra_tree_nodes_annotations_Annotation.onApplied = spectra_tree_nodes_annotations_Nova_Annotation_VTable_val.spectra_tree_nodes_annotations_Nova_Annotation_virtual_Nova_onApplied;
+novaEnv.spectra_tree_nodes_annotations_Annotation.checkApplication = spectra_tree_nodes_annotations_Nova_Annotation_VTable_val.spectra_tree_nodes_annotations_Nova_Annotation_virtual_Nova_checkApplication;
+novaEnv.spectra_tree_nodes_functions_CallableFunction.parseParameter = spectra_tree_nodes_functions_Nova_CallableFunction_VTable_val.itable.spectra_tree_nodes_functions_Nova_CallableFunction_virtual_Nova_parseParameter;
+novaEnv.spectra_tree_nodes_functions_CallableFunction.parseParameters = spectra_tree_nodes_functions_Nova_CallableFunction_VTable_val.itable.spectra_tree_nodes_functions_Nova_CallableFunction_virtual_Nova_parseParameters;
+novaEnv.spectra_tree_nodes_functions_FunctionCall.writeName = spectra_tree_nodes_functions_Nova_FunctionCall_VTable_val.spectra_tree_nodes_functions_Nova_FunctionCall_virtual_Nova_writeName;
+novaEnv.spectra_tree_nodes_functions_FunctionDeclaration.writeReturnType = spectra_tree_nodes_functions_Nova_FunctionDeclaration_VTable_val.spectra_tree_nodes_functions_Nova_FunctionDeclaration_virtual_Nova_writeReturnType;
+novaEnv.spectra_tree_nodes_operations_Assignable.onAssigned = spectra_tree_nodes_operations_Nova_Assignable_VTable_val.itable.spectra_tree_nodes_operations_Nova_Assignable_virtual_Nova_onAssigned;
+novaEnv.spectra_tree_nodes_variables_VariableDeclaration.parseModifier = spectra_tree_nodes_variables_Nova_VariableDeclaration_VTable_val.spectra_tree_nodes_variables_Nova_VariableDeclaration_virtual_Nova_parseModifier;
 novaEnv.example_Animal.getNumLegs = example_Nova_Animal_VTable_val.example_Nova_Animal_virtual_Nova_getNumLegs;
 novaEnv.example_Animal.getNumEyes = example_Nova_Animal_VTable_val.example_Nova_Animal_virtual_Nova_getNumEyes;
 novaEnv.example_Animal.getDescription = example_Nova_Animal_VTable_val.example_Nova_Animal_virtual_Nova_getDescription;
@@ -920,6 +947,24 @@ nova_Nova_String_1_Nova_construct(0, exceptionData,
 (char*)("nova/datastruct/list/Iterator.IteratorPropertyMap")),
 1);
 
+// nova/datastruct/list/Iterator.Iterator1Double
+nova_datastruct_list_Double_Nova_Iterator1Double_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("nova/datastruct/list/Iterator.Iterator1Double")),
+1);
+
+// nova/datastruct/list/Iterator.Iterator1Int
+nova_datastruct_list_Int_Nova_Iterator1Int_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("nova/datastruct/list/Iterator.Iterator1Int")),
+1);
+
+// nova/datastruct/list/Iterator.Iterator1Byte
+nova_datastruct_list_Byte_Nova_Iterator1Byte_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("nova/datastruct/list/Iterator.Iterator1Byte")),
+1);
+
 // nova/datastruct/list/LinkedList
 nova_datastruct_list_Nova_LinkedList_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
 nova_Nova_String_1_Nova_construct(0, exceptionData,
@@ -978,6 +1023,24 @@ nova_Nova_String_1_Nova_construct(0, exceptionData,
 nova_datastruct_list_Nova_ListPropertyMap_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
 nova_Nova_String_1_Nova_construct(0, exceptionData,
 (char*)("nova/datastruct/list/List.ListPropertyMap")),
+1);
+
+// nova/datastruct/list/List.List1Double
+nova_datastruct_list_Double_Nova_List1Double_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("nova/datastruct/list/List.List1Double")),
+1);
+
+// nova/datastruct/list/List.List1Int
+nova_datastruct_list_Int_Nova_List1Int_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("nova/datastruct/list/List.List1Int")),
+1);
+
+// nova/datastruct/list/List.List1Byte
+nova_datastruct_list_Byte_Nova_List1Byte_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("nova/datastruct/list/List.List1Byte")),
 1);
 
 // nova/datastruct/list/ListNode
@@ -3360,6 +3423,2272 @@ nova_Nova_String_1_Nova_construct(0, exceptionData,
 (char*)("nova/web/svg/no3/No3SelectAll.No3SelectAllPropertyMap")),
 0);
 
+// spectra/InvalidParseException
+spectra_Nova_InvalidParseException_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("spectra/InvalidParseException")),
+0);
+spectra_Nova_InvalidParseException_VTable_val.classInstance->nova_meta_Nova_Class_Nova_functionMap = (nova_meta_Nova_FunctionMap*)spectra_Nova_InvalidParseExceptionFunctionMap_Nova_construct(0, exceptionData);
+spectra_Nova_InvalidParseException_VTable_val.classInstance->nova_meta_Nova_Class_Nova_propertyMap = (nova_meta_Nova_PropertyMap*)spectra_Nova_InvalidParseExceptionPropertyMap_Nova_construct(0, exceptionData);
+
+// spectra/InvalidParseException.InvalidParseExceptionFunctionMap
+spectra_Nova_InvalidParseExceptionFunctionMap_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("spectra/InvalidParseException.InvalidParseExceptionFunctionMap")),
+0);
+
+// spectra/InvalidParseException.InvalidParseExceptionPropertyMap
+spectra_Nova_InvalidParseExceptionPropertyMap_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("spectra/InvalidParseException.InvalidParseExceptionPropertyMap")),
+0);
+
+// spectra/Spectra
+spectra_Nova_Spectra_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("spectra/Spectra")),
+0);
+spectra_Nova_Spectra_VTable_val.classInstance->nova_meta_Nova_Class_Nova_functionMap = (nova_meta_Nova_FunctionMap*)spectra_Nova_SpectraFunctionMap_Nova_construct(0, exceptionData);
+spectra_Nova_Spectra_VTable_val.classInstance->nova_meta_Nova_Class_Nova_propertyMap = (nova_meta_Nova_PropertyMap*)spectra_Nova_SpectraPropertyMap_Nova_construct(0, exceptionData);
+
+// spectra/Spectra.SpectraFunctionMap
+spectra_Nova_SpectraFunctionMap_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("spectra/Spectra.SpectraFunctionMap")),
+0);
+
+// spectra/Spectra.SpectraPropertyMap
+spectra_Nova_SpectraPropertyMap_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("spectra/Spectra.SpectraPropertyMap")),
+0);
+
+// spectra/SyntaxErrorException
+spectra_Nova_SyntaxErrorException_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("spectra/SyntaxErrorException")),
+0);
+spectra_Nova_SyntaxErrorException_VTable_val.classInstance->nova_meta_Nova_Class_Nova_functionMap = (nova_meta_Nova_FunctionMap*)spectra_Nova_SyntaxErrorExceptionFunctionMap_Nova_construct(0, exceptionData);
+spectra_Nova_SyntaxErrorException_VTable_val.classInstance->nova_meta_Nova_Class_Nova_propertyMap = (nova_meta_Nova_PropertyMap*)spectra_Nova_SyntaxErrorExceptionPropertyMap_Nova_construct(0, exceptionData);
+
+// spectra/SyntaxErrorException.SyntaxErrorExceptionFunctionMap
+spectra_Nova_SyntaxErrorExceptionFunctionMap_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("spectra/SyntaxErrorException.SyntaxErrorExceptionFunctionMap")),
+0);
+
+// spectra/SyntaxErrorException.SyntaxErrorExceptionPropertyMap
+spectra_Nova_SyntaxErrorExceptionPropertyMap_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("spectra/SyntaxErrorException.SyntaxErrorExceptionPropertyMap")),
+0);
+
+// spectra/SyntaxMessage
+spectra_Nova_SyntaxMessage_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("spectra/SyntaxMessage")),
+0);
+spectra_Nova_SyntaxMessage_VTable_val.classInstance->nova_meta_Nova_Class_Nova_functionMap = (nova_meta_Nova_FunctionMap*)spectra_Nova_SyntaxMessageFunctionMap_Nova_construct(0, exceptionData);
+spectra_Nova_SyntaxMessage_VTable_val.classInstance->nova_meta_Nova_Class_Nova_propertyMap = (nova_meta_Nova_PropertyMap*)spectra_Nova_SyntaxMessagePropertyMap_Nova_construct(0, exceptionData);
+
+// spectra/SyntaxMessage.SyntaxMessageFunctionMap
+spectra_Nova_SyntaxMessageFunctionMap_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("spectra/SyntaxMessage.SyntaxMessageFunctionMap")),
+0);
+
+// spectra/SyntaxMessage.SyntaxMessagePropertyMap
+spectra_Nova_SyntaxMessagePropertyMap_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("spectra/SyntaxMessage.SyntaxMessagePropertyMap")),
+0);
+
+// spectra/engines/CodeGeneratorEngine
+spectra_engines_Nova_CodeGeneratorEngine_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("spectra/engines/CodeGeneratorEngine")),
+0);
+spectra_engines_Nova_CodeGeneratorEngine_VTable_val.classInstance->nova_meta_Nova_Class_Nova_functionMap = (nova_meta_Nova_FunctionMap*)spectra_engines_Nova_CodeGeneratorEngineFunctionMap_Nova_construct(0, exceptionData);
+spectra_engines_Nova_CodeGeneratorEngine_VTable_val.classInstance->nova_meta_Nova_Class_Nova_propertyMap = (nova_meta_Nova_PropertyMap*)spectra_engines_Nova_CodeGeneratorEnginePropertyMap_Nova_construct(0, exceptionData);
+
+// spectra/engines/CodeGeneratorEngine.CodeGeneratorEngineFunctionMap
+spectra_engines_Nova_CodeGeneratorEngineFunctionMap_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("spectra/engines/CodeGeneratorEngine.CodeGeneratorEngineFunctionMap")),
+0);
+
+// spectra/engines/CodeGeneratorEngine.CodeGeneratorEnginePropertyMap
+spectra_engines_Nova_CodeGeneratorEnginePropertyMap_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("spectra/engines/CodeGeneratorEngine.CodeGeneratorEnginePropertyMap")),
+0);
+
+// spectra/error/UnimplementedOperationException
+spectra_error_Nova_UnimplementedOperationException_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("spectra/error/UnimplementedOperationException")),
+0);
+spectra_error_Nova_UnimplementedOperationException_VTable_val.classInstance->nova_meta_Nova_Class_Nova_functionMap = (nova_meta_Nova_FunctionMap*)spectra_error_Nova_UnimplementedOperationExceptionFunctionMap_Nova_construct(0, exceptionData);
+spectra_error_Nova_UnimplementedOperationException_VTable_val.classInstance->nova_meta_Nova_Class_Nova_propertyMap = (nova_meta_Nova_PropertyMap*)spectra_error_Nova_UnimplementedOperationExceptionPropertyMap_Nova_construct(0, exceptionData);
+
+// spectra/error/UnimplementedOperationException.UnimplementedOperationExceptionFunctionMap
+spectra_error_Nova_UnimplementedOperationExceptionFunctionMap_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("spectra/error/UnimplementedOperationException.UnimplementedOperationExceptionFunctionMap")),
+0);
+
+// spectra/error/UnimplementedOperationException.UnimplementedOperationExceptionPropertyMap
+spectra_error_Nova_UnimplementedOperationExceptionPropertyMap_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("spectra/error/UnimplementedOperationException.UnimplementedOperationExceptionPropertyMap")),
+0);
+
+// spectra/tree/AnnotationSearchResult
+spectra_tree_Nova_AnnotationSearchResult_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("spectra/tree/AnnotationSearchResult")),
+0);
+spectra_tree_Nova_AnnotationSearchResult_VTable_val.classInstance->nova_meta_Nova_Class_Nova_functionMap = (nova_meta_Nova_FunctionMap*)spectra_tree_Nova_AnnotationSearchResultFunctionMap_Nova_construct(0, exceptionData);
+spectra_tree_Nova_AnnotationSearchResult_VTable_val.classInstance->nova_meta_Nova_Class_Nova_propertyMap = (nova_meta_Nova_PropertyMap*)spectra_tree_Nova_AnnotationSearchResultPropertyMap_Nova_construct(0, exceptionData);
+
+// spectra/tree/AnnotationSearchResult.AnnotationSearchResultFunctionMap
+spectra_tree_Nova_AnnotationSearchResultFunctionMap_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("spectra/tree/AnnotationSearchResult.AnnotationSearchResultFunctionMap")),
+0);
+
+// spectra/tree/AnnotationSearchResult.AnnotationSearchResultPropertyMap
+spectra_tree_Nova_AnnotationSearchResultPropertyMap_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("spectra/tree/AnnotationSearchResult.AnnotationSearchResultPropertyMap")),
+0);
+
+// spectra/tree/StatementIterator
+spectra_tree_Nova_StatementIterator_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("spectra/tree/StatementIterator")),
+0);
+spectra_tree_Nova_StatementIterator_VTable_val.classInstance->nova_meta_Nova_Class_Nova_functionMap = (nova_meta_Nova_FunctionMap*)spectra_tree_Nova_StatementIteratorFunctionMap_Nova_construct(0, exceptionData);
+spectra_tree_Nova_StatementIterator_VTable_val.classInstance->nova_meta_Nova_Class_Nova_propertyMap = (nova_meta_Nova_PropertyMap*)spectra_tree_Nova_StatementIteratorPropertyMap_Nova_construct(0, exceptionData);
+
+// spectra/tree/StatementIterator.StatementIteratorFunctionMap
+spectra_tree_Nova_StatementIteratorFunctionMap_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("spectra/tree/StatementIterator.StatementIteratorFunctionMap")),
+0);
+
+// spectra/tree/StatementIterator.StatementIteratorPropertyMap
+spectra_tree_Nova_StatementIteratorPropertyMap_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("spectra/tree/StatementIterator.StatementIteratorPropertyMap")),
+0);
+
+// spectra/tree/SyntaxTree
+spectra_tree_Nova_SyntaxTree_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("spectra/tree/SyntaxTree")),
+0);
+spectra_tree_Nova_SyntaxTree_VTable_val.classInstance->nova_meta_Nova_Class_Nova_functionMap = (nova_meta_Nova_FunctionMap*)spectra_tree_Nova_SyntaxTreeFunctionMap_Nova_construct(0, exceptionData);
+spectra_tree_Nova_SyntaxTree_VTable_val.classInstance->nova_meta_Nova_Class_Nova_propertyMap = (nova_meta_Nova_PropertyMap*)spectra_tree_Nova_SyntaxTreePropertyMap_Nova_construct(0, exceptionData);
+
+// spectra/tree/SyntaxTree.SyntaxTreeFunctionMap
+spectra_tree_Nova_SyntaxTreeFunctionMap_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("spectra/tree/SyntaxTree.SyntaxTreeFunctionMap")),
+0);
+
+// spectra/tree/SyntaxTree.SyntaxTreePropertyMap
+spectra_tree_Nova_SyntaxTreePropertyMap_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("spectra/tree/SyntaxTree.SyntaxTreePropertyMap")),
+0);
+
+// spectra/tree/nodes/Abstractable
+spectra_tree_nodes_Nova_Abstractable_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("spectra/tree/nodes/Abstractable")),
+1);
+spectra_tree_nodes_Nova_Abstractable_VTable_val.classInstance->nova_meta_Nova_Class_Nova_functionMap = (nova_meta_Nova_FunctionMap*)spectra_tree_nodes_Nova_AbstractableFunctionMap_Nova_construct(0, exceptionData);
+spectra_tree_nodes_Nova_Abstractable_VTable_val.classInstance->nova_meta_Nova_Class_Nova_propertyMap = (nova_meta_Nova_PropertyMap*)spectra_tree_nodes_Nova_AbstractablePropertyMap_Nova_construct(0, exceptionData);
+
+// spectra/tree/nodes/Abstractable.AbstractableFunctionMap
+spectra_tree_nodes_Nova_AbstractableFunctionMap_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("spectra/tree/nodes/Abstractable.AbstractableFunctionMap")),
+1);
+
+// spectra/tree/nodes/Abstractable.AbstractablePropertyMap
+spectra_tree_nodes_Nova_AbstractablePropertyMap_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("spectra/tree/nodes/Abstractable.AbstractablePropertyMap")),
+1);
+
+// spectra/tree/nodes/Accessible
+spectra_tree_nodes_Nova_Accessible_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("spectra/tree/nodes/Accessible")),
+1);
+spectra_tree_nodes_Nova_Accessible_VTable_val.classInstance->nova_meta_Nova_Class_Nova_functionMap = (nova_meta_Nova_FunctionMap*)spectra_tree_nodes_Nova_AccessibleFunctionMap_Nova_construct(0, exceptionData);
+spectra_tree_nodes_Nova_Accessible_VTable_val.classInstance->nova_meta_Nova_Class_Nova_propertyMap = (nova_meta_Nova_PropertyMap*)spectra_tree_nodes_Nova_AccessiblePropertyMap_Nova_construct(0, exceptionData);
+
+// spectra/tree/nodes/Accessible.AccessibleFunctionMap
+spectra_tree_nodes_Nova_AccessibleFunctionMap_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("spectra/tree/nodes/Accessible.AccessibleFunctionMap")),
+1);
+
+// spectra/tree/nodes/Accessible.AccessiblePropertyMap
+spectra_tree_nodes_Nova_AccessiblePropertyMap_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("spectra/tree/nodes/Accessible.AccessiblePropertyMap")),
+1);
+
+// spectra/tree/nodes/ArgumentList
+spectra_tree_nodes_Nova_ArgumentList_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("spectra/tree/nodes/ArgumentList")),
+0);
+spectra_tree_nodes_Nova_ArgumentList_VTable_val.classInstance->nova_meta_Nova_Class_Nova_functionMap = (nova_meta_Nova_FunctionMap*)spectra_tree_nodes_Nova_ArgumentListFunctionMap_Nova_construct(0, exceptionData);
+spectra_tree_nodes_Nova_ArgumentList_VTable_val.classInstance->nova_meta_Nova_Class_Nova_propertyMap = (nova_meta_Nova_PropertyMap*)spectra_tree_nodes_Nova_ArgumentListPropertyMap_Nova_construct(0, exceptionData);
+
+// spectra/tree/nodes/ArgumentList.ArgumentListFunctionMap
+spectra_tree_nodes_Nova_ArgumentListFunctionMap_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("spectra/tree/nodes/ArgumentList.ArgumentListFunctionMap")),
+0);
+
+// spectra/tree/nodes/ArgumentList.ArgumentListPropertyMap
+spectra_tree_nodes_Nova_ArgumentListPropertyMap_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("spectra/tree/nodes/ArgumentList.ArgumentListPropertyMap")),
+0);
+
+// spectra/tree/nodes/ArrayType
+spectra_tree_nodes_Nova_ArrayType_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("spectra/tree/nodes/ArrayType")),
+0);
+spectra_tree_nodes_Nova_ArrayType_VTable_val.classInstance->nova_meta_Nova_Class_Nova_functionMap = (nova_meta_Nova_FunctionMap*)spectra_tree_nodes_Nova_ArrayTypeFunctionMap_Nova_construct(0, exceptionData);
+spectra_tree_nodes_Nova_ArrayType_VTable_val.classInstance->nova_meta_Nova_Class_Nova_propertyMap = (nova_meta_Nova_PropertyMap*)spectra_tree_nodes_Nova_ArrayTypePropertyMap_Nova_construct(0, exceptionData);
+
+// spectra/tree/nodes/ArrayType.ArrayTypeFunctionMap
+spectra_tree_nodes_Nova_ArrayTypeFunctionMap_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("spectra/tree/nodes/ArrayType.ArrayTypeFunctionMap")),
+0);
+
+// spectra/tree/nodes/ArrayType.ArrayTypePropertyMap
+spectra_tree_nodes_Nova_ArrayTypePropertyMap_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("spectra/tree/nodes/ArrayType.ArrayTypePropertyMap")),
+0);
+
+// spectra/tree/nodes/Cast
+spectra_tree_nodes_Nova_Cast_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("spectra/tree/nodes/Cast")),
+0);
+spectra_tree_nodes_Nova_Cast_VTable_val.classInstance->nova_meta_Nova_Class_Nova_functionMap = (nova_meta_Nova_FunctionMap*)spectra_tree_nodes_Nova_CastFunctionMap_Nova_construct(0, exceptionData);
+spectra_tree_nodes_Nova_Cast_VTable_val.classInstance->nova_meta_Nova_Class_Nova_propertyMap = (nova_meta_Nova_PropertyMap*)spectra_tree_nodes_Nova_CastPropertyMap_Nova_construct(0, exceptionData);
+
+// spectra/tree/nodes/Cast.CastFunctionMap
+spectra_tree_nodes_Nova_CastFunctionMap_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("spectra/tree/nodes/Cast.CastFunctionMap")),
+0);
+
+// spectra/tree/nodes/Cast.CastPropertyMap
+spectra_tree_nodes_Nova_CastPropertyMap_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("spectra/tree/nodes/Cast.CastPropertyMap")),
+0);
+
+// spectra/tree/nodes/ClassDeclaration
+spectra_tree_nodes_Nova_ClassDeclaration_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("spectra/tree/nodes/ClassDeclaration")),
+0);
+spectra_tree_nodes_Nova_ClassDeclaration_VTable_val.classInstance->nova_meta_Nova_Class_Nova_functionMap = (nova_meta_Nova_FunctionMap*)spectra_tree_nodes_Nova_ClassDeclarationFunctionMap_Nova_construct(0, exceptionData);
+spectra_tree_nodes_Nova_ClassDeclaration_VTable_val.classInstance->nova_meta_Nova_Class_Nova_propertyMap = (nova_meta_Nova_PropertyMap*)spectra_tree_nodes_Nova_ClassDeclarationPropertyMap_Nova_construct(0, exceptionData);
+
+// spectra/tree/nodes/ClassDeclaration.ClassDeclarationFunctionMap
+spectra_tree_nodes_Nova_ClassDeclarationFunctionMap_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("spectra/tree/nodes/ClassDeclaration.ClassDeclarationFunctionMap")),
+0);
+
+// spectra/tree/nodes/ClassDeclaration.ClassDeclarationPropertyMap
+spectra_tree_nodes_Nova_ClassDeclarationPropertyMap_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("spectra/tree/nodes/ClassDeclaration.ClassDeclarationPropertyMap")),
+0);
+
+// spectra/tree/nodes/Identifier
+spectra_tree_nodes_Nova_Identifier_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("spectra/tree/nodes/Identifier")),
+0);
+spectra_tree_nodes_Nova_Identifier_VTable_val.classInstance->nova_meta_Nova_Class_Nova_functionMap = (nova_meta_Nova_FunctionMap*)spectra_tree_nodes_Nova_IdentifierFunctionMap_Nova_construct(0, exceptionData);
+spectra_tree_nodes_Nova_Identifier_VTable_val.classInstance->nova_meta_Nova_Class_Nova_propertyMap = (nova_meta_Nova_PropertyMap*)spectra_tree_nodes_Nova_IdentifierPropertyMap_Nova_construct(0, exceptionData);
+
+// spectra/tree/nodes/Identifier.IdentifierFunctionMap
+spectra_tree_nodes_Nova_IdentifierFunctionMap_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("spectra/tree/nodes/Identifier.IdentifierFunctionMap")),
+0);
+
+// spectra/tree/nodes/Identifier.IdentifierPropertyMap
+spectra_tree_nodes_Nova_IdentifierPropertyMap_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("spectra/tree/nodes/Identifier.IdentifierPropertyMap")),
+0);
+
+// spectra/tree/nodes/Import
+spectra_tree_nodes_Nova_Import_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("spectra/tree/nodes/Import")),
+0);
+spectra_tree_nodes_Nova_Import_VTable_val.classInstance->nova_meta_Nova_Class_Nova_functionMap = (nova_meta_Nova_FunctionMap*)spectra_tree_nodes_Nova_ImportFunctionMap_Nova_construct(0, exceptionData);
+spectra_tree_nodes_Nova_Import_VTable_val.classInstance->nova_meta_Nova_Class_Nova_propertyMap = (nova_meta_Nova_PropertyMap*)spectra_tree_nodes_Nova_ImportPropertyMap_Nova_construct(0, exceptionData);
+
+// spectra/tree/nodes/Import.ImportFunctionMap
+spectra_tree_nodes_Nova_ImportFunctionMap_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("spectra/tree/nodes/Import.ImportFunctionMap")),
+0);
+
+// spectra/tree/nodes/Import.ImportPropertyMap
+spectra_tree_nodes_Nova_ImportPropertyMap_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("spectra/tree/nodes/Import.ImportPropertyMap")),
+0);
+
+// spectra/tree/nodes/ImportList
+spectra_tree_nodes_Nova_ImportList_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("spectra/tree/nodes/ImportList")),
+0);
+spectra_tree_nodes_Nova_ImportList_VTable_val.classInstance->nova_meta_Nova_Class_Nova_functionMap = (nova_meta_Nova_FunctionMap*)spectra_tree_nodes_Nova_ImportListFunctionMap_Nova_construct(0, exceptionData);
+spectra_tree_nodes_Nova_ImportList_VTable_val.classInstance->nova_meta_Nova_Class_Nova_propertyMap = (nova_meta_Nova_PropertyMap*)spectra_tree_nodes_Nova_ImportListPropertyMap_Nova_construct(0, exceptionData);
+
+// spectra/tree/nodes/ImportList.ImportListFunctionMap
+spectra_tree_nodes_Nova_ImportListFunctionMap_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("spectra/tree/nodes/ImportList.ImportListFunctionMap")),
+0);
+
+// spectra/tree/nodes/ImportList.ImportListPropertyMap
+spectra_tree_nodes_Nova_ImportListPropertyMap_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("spectra/tree/nodes/ImportList.ImportListPropertyMap")),
+0);
+
+// spectra/tree/nodes/InterfaceDeclaration
+spectra_tree_nodes_Nova_InterfaceDeclaration_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("spectra/tree/nodes/InterfaceDeclaration")),
+0);
+spectra_tree_nodes_Nova_InterfaceDeclaration_VTable_val.classInstance->nova_meta_Nova_Class_Nova_functionMap = (nova_meta_Nova_FunctionMap*)spectra_tree_nodes_Nova_InterfaceDeclarationFunctionMap_Nova_construct(0, exceptionData);
+spectra_tree_nodes_Nova_InterfaceDeclaration_VTable_val.classInstance->nova_meta_Nova_Class_Nova_propertyMap = (nova_meta_Nova_PropertyMap*)spectra_tree_nodes_Nova_InterfaceDeclarationPropertyMap_Nova_construct(0, exceptionData);
+
+// spectra/tree/nodes/InterfaceDeclaration.InterfaceDeclarationFunctionMap
+spectra_tree_nodes_Nova_InterfaceDeclarationFunctionMap_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("spectra/tree/nodes/InterfaceDeclaration.InterfaceDeclarationFunctionMap")),
+0);
+
+// spectra/tree/nodes/InterfaceDeclaration.InterfaceDeclarationPropertyMap
+spectra_tree_nodes_Nova_InterfaceDeclarationPropertyMap_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("spectra/tree/nodes/InterfaceDeclaration.InterfaceDeclarationPropertyMap")),
+0);
+
+// spectra/tree/nodes/Listener
+spectra_tree_nodes_Nova_Listener_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("spectra/tree/nodes/Listener")),
+1);
+spectra_tree_nodes_Nova_Listener_VTable_val.classInstance->nova_meta_Nova_Class_Nova_functionMap = (nova_meta_Nova_FunctionMap*)spectra_tree_nodes_Nova_ListenerFunctionMap_Nova_construct(0, exceptionData);
+spectra_tree_nodes_Nova_Listener_VTable_val.classInstance->nova_meta_Nova_Class_Nova_propertyMap = (nova_meta_Nova_PropertyMap*)spectra_tree_nodes_Nova_ListenerPropertyMap_Nova_construct(0, exceptionData);
+
+// spectra/tree/nodes/Listener.ListenerFunctionMap
+spectra_tree_nodes_Nova_ListenerFunctionMap_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("spectra/tree/nodes/Listener.ListenerFunctionMap")),
+1);
+
+// spectra/tree/nodes/Listener.ListenerPropertyMap
+spectra_tree_nodes_Nova_ListenerPropertyMap_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("spectra/tree/nodes/Listener.ListenerPropertyMap")),
+1);
+
+// spectra/tree/nodes/Literal
+spectra_tree_nodes_Nova_Literal_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("spectra/tree/nodes/Literal")),
+0);
+spectra_tree_nodes_Nova_Literal_VTable_val.classInstance->nova_meta_Nova_Class_Nova_functionMap = (nova_meta_Nova_FunctionMap*)spectra_tree_nodes_Nova_LiteralFunctionMap_Nova_construct(0, exceptionData);
+spectra_tree_nodes_Nova_Literal_VTable_val.classInstance->nova_meta_Nova_Class_Nova_propertyMap = (nova_meta_Nova_PropertyMap*)spectra_tree_nodes_Nova_LiteralPropertyMap_Nova_construct(0, exceptionData);
+
+// spectra/tree/nodes/Literal.LiteralFunctionMap
+spectra_tree_nodes_Nova_LiteralFunctionMap_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("spectra/tree/nodes/Literal.LiteralFunctionMap")),
+0);
+
+// spectra/tree/nodes/Literal.LiteralPropertyMap
+spectra_tree_nodes_Nova_LiteralPropertyMap_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("spectra/tree/nodes/Literal.LiteralPropertyMap")),
+0);
+
+// spectra/tree/nodes/Node
+spectra_tree_nodes_Nova_Node_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("spectra/tree/nodes/Node")),
+0);
+spectra_tree_nodes_Nova_Node_VTable_val.classInstance->nova_meta_Nova_Class_Nova_functionMap = (nova_meta_Nova_FunctionMap*)spectra_tree_nodes_Nova_NodeFunctionMap_Nova_construct(0, exceptionData);
+spectra_tree_nodes_Nova_Node_VTable_val.classInstance->nova_meta_Nova_Class_Nova_propertyMap = (nova_meta_Nova_PropertyMap*)spectra_tree_nodes_Nova_NodePropertyMap_Nova_construct(0, exceptionData);
+
+// spectra/tree/nodes/Node.NodeFunctionMap
+spectra_tree_nodes_Nova_NodeFunctionMap_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("spectra/tree/nodes/Node.NodeFunctionMap")),
+0);
+
+// spectra/tree/nodes/Node.NodePropertyMap
+spectra_tree_nodes_Nova_NodePropertyMap_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("spectra/tree/nodes/Node.NodePropertyMap")),
+0);
+
+// spectra/tree/nodes/NodeList
+spectra_tree_nodes_Nova_NodeList_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("spectra/tree/nodes/NodeList")),
+0);
+spectra_tree_nodes_Nova_NodeList_VTable_val.classInstance->nova_meta_Nova_Class_Nova_functionMap = (nova_meta_Nova_FunctionMap*)spectra_tree_nodes_Nova_NodeListFunctionMap_Nova_construct(0, exceptionData);
+spectra_tree_nodes_Nova_NodeList_VTable_val.classInstance->nova_meta_Nova_Class_Nova_propertyMap = (nova_meta_Nova_PropertyMap*)spectra_tree_nodes_Nova_NodeListPropertyMap_Nova_construct(0, exceptionData);
+
+// spectra/tree/nodes/NodeList.NodeListFunctionMap
+spectra_tree_nodes_Nova_NodeListFunctionMap_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("spectra/tree/nodes/NodeList.NodeListFunctionMap")),
+0);
+
+// spectra/tree/nodes/NodeList.NodeListPropertyMap
+spectra_tree_nodes_Nova_NodeListPropertyMap_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("spectra/tree/nodes/NodeList.NodeListPropertyMap")),
+0);
+
+// spectra/tree/nodes/NovaFile
+spectra_tree_nodes_Nova_NovaFile_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("spectra/tree/nodes/NovaFile")),
+0);
+spectra_tree_nodes_Nova_NovaFile_VTable_val.classInstance->nova_meta_Nova_Class_Nova_functionMap = (nova_meta_Nova_FunctionMap*)spectra_tree_nodes_Nova_NovaFileFunctionMap_Nova_construct(0, exceptionData);
+spectra_tree_nodes_Nova_NovaFile_VTable_val.classInstance->nova_meta_Nova_Class_Nova_propertyMap = (nova_meta_Nova_PropertyMap*)spectra_tree_nodes_Nova_NovaFilePropertyMap_Nova_construct(0, exceptionData);
+
+// spectra/tree/nodes/NovaFile.NovaFileFunctionMap
+spectra_tree_nodes_Nova_NovaFileFunctionMap_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("spectra/tree/nodes/NovaFile.NovaFileFunctionMap")),
+0);
+
+// spectra/tree/nodes/NovaFile.NovaFilePropertyMap
+spectra_tree_nodes_Nova_NovaFilePropertyMap_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("spectra/tree/nodes/NovaFile.NovaFilePropertyMap")),
+0);
+
+// spectra/tree/nodes/NumericRange
+spectra_tree_nodes_Nova_NumericRange_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("spectra/tree/nodes/NumericRange")),
+0);
+spectra_tree_nodes_Nova_NumericRange_VTable_val.classInstance->nova_meta_Nova_Class_Nova_functionMap = (nova_meta_Nova_FunctionMap*)spectra_tree_nodes_Nova_NumericRangeFunctionMap_Nova_construct(0, exceptionData);
+spectra_tree_nodes_Nova_NumericRange_VTable_val.classInstance->nova_meta_Nova_Class_Nova_propertyMap = (nova_meta_Nova_PropertyMap*)spectra_tree_nodes_Nova_NumericRangePropertyMap_Nova_construct(0, exceptionData);
+
+// spectra/tree/nodes/NumericRange.NumericRangeFunctionMap
+spectra_tree_nodes_Nova_NumericRangeFunctionMap_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("spectra/tree/nodes/NumericRange.NumericRangeFunctionMap")),
+0);
+
+// spectra/tree/nodes/NumericRange.NumericRangePropertyMap
+spectra_tree_nodes_Nova_NumericRangePropertyMap_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("spectra/tree/nodes/NumericRange.NumericRangePropertyMap")),
+0);
+
+// spectra/tree/nodes/Package
+spectra_tree_nodes_Nova_Package_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("spectra/tree/nodes/Package")),
+0);
+spectra_tree_nodes_Nova_Package_VTable_val.classInstance->nova_meta_Nova_Class_Nova_functionMap = (nova_meta_Nova_FunctionMap*)spectra_tree_nodes_Nova_PackageFunctionMap_Nova_construct(0, exceptionData);
+spectra_tree_nodes_Nova_Package_VTable_val.classInstance->nova_meta_Nova_Class_Nova_propertyMap = (nova_meta_Nova_PropertyMap*)spectra_tree_nodes_Nova_PackagePropertyMap_Nova_construct(0, exceptionData);
+
+// spectra/tree/nodes/Package.PackageFunctionMap
+spectra_tree_nodes_Nova_PackageFunctionMap_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("spectra/tree/nodes/Package.PackageFunctionMap")),
+0);
+
+// spectra/tree/nodes/Package.PackagePropertyMap
+spectra_tree_nodes_Nova_PackagePropertyMap_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("spectra/tree/nodes/Package.PackagePropertyMap")),
+0);
+
+// spectra/tree/nodes/PlaceholderValue
+spectra_tree_nodes_Nova_PlaceholderValue_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("spectra/tree/nodes/PlaceholderValue")),
+0);
+spectra_tree_nodes_Nova_PlaceholderValue_VTable_val.classInstance->nova_meta_Nova_Class_Nova_functionMap = (nova_meta_Nova_FunctionMap*)spectra_tree_nodes_Nova_PlaceholderValueFunctionMap_Nova_construct(0, exceptionData);
+spectra_tree_nodes_Nova_PlaceholderValue_VTable_val.classInstance->nova_meta_Nova_Class_Nova_propertyMap = (nova_meta_Nova_PropertyMap*)spectra_tree_nodes_Nova_PlaceholderValuePropertyMap_Nova_construct(0, exceptionData);
+
+// spectra/tree/nodes/PlaceholderValue.PlaceholderValueFunctionMap
+spectra_tree_nodes_Nova_PlaceholderValueFunctionMap_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("spectra/tree/nodes/PlaceholderValue.PlaceholderValueFunctionMap")),
+0);
+
+// spectra/tree/nodes/PlaceholderValue.PlaceholderValuePropertyMap
+spectra_tree_nodes_Nova_PlaceholderValuePropertyMap_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("spectra/tree/nodes/PlaceholderValue.PlaceholderValuePropertyMap")),
+0);
+
+// spectra/tree/nodes/Priority
+spectra_tree_nodes_Nova_Priority_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("spectra/tree/nodes/Priority")),
+0);
+spectra_tree_nodes_Nova_Priority_VTable_val.classInstance->nova_meta_Nova_Class_Nova_functionMap = (nova_meta_Nova_FunctionMap*)spectra_tree_nodes_Nova_PriorityFunctionMap_Nova_construct(0, exceptionData);
+spectra_tree_nodes_Nova_Priority_VTable_val.classInstance->nova_meta_Nova_Class_Nova_propertyMap = (nova_meta_Nova_PropertyMap*)spectra_tree_nodes_Nova_PriorityPropertyMap_Nova_construct(0, exceptionData);
+
+// spectra/tree/nodes/Priority.PriorityFunctionMap
+spectra_tree_nodes_Nova_PriorityFunctionMap_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("spectra/tree/nodes/Priority.PriorityFunctionMap")),
+0);
+
+// spectra/tree/nodes/Priority.PriorityPropertyMap
+spectra_tree_nodes_Nova_PriorityPropertyMap_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("spectra/tree/nodes/Priority.PriorityPropertyMap")),
+0);
+
+// spectra/tree/nodes/Program
+spectra_tree_nodes_Nova_Program_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("spectra/tree/nodes/Program")),
+0);
+spectra_tree_nodes_Nova_Program_VTable_val.classInstance->nova_meta_Nova_Class_Nova_functionMap = (nova_meta_Nova_FunctionMap*)spectra_tree_nodes_Nova_ProgramFunctionMap_Nova_construct(0, exceptionData);
+spectra_tree_nodes_Nova_Program_VTable_val.classInstance->nova_meta_Nova_Class_Nova_propertyMap = (nova_meta_Nova_PropertyMap*)spectra_tree_nodes_Nova_ProgramPropertyMap_Nova_construct(0, exceptionData);
+
+// spectra/tree/nodes/Program.ProgramFunctionMap
+spectra_tree_nodes_Nova_ProgramFunctionMap_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("spectra/tree/nodes/Program.ProgramFunctionMap")),
+0);
+
+// spectra/tree/nodes/Program.ProgramPropertyMap
+spectra_tree_nodes_Nova_ProgramPropertyMap_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("spectra/tree/nodes/Program.ProgramPropertyMap")),
+0);
+
+// spectra/tree/nodes/Return
+spectra_tree_nodes_Nova_Return_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("spectra/tree/nodes/Return")),
+0);
+spectra_tree_nodes_Nova_Return_VTable_val.classInstance->nova_meta_Nova_Class_Nova_functionMap = (nova_meta_Nova_FunctionMap*)spectra_tree_nodes_Nova_ReturnFunctionMap_Nova_construct(0, exceptionData);
+spectra_tree_nodes_Nova_Return_VTable_val.classInstance->nova_meta_Nova_Class_Nova_propertyMap = (nova_meta_Nova_PropertyMap*)spectra_tree_nodes_Nova_ReturnPropertyMap_Nova_construct(0, exceptionData);
+
+// spectra/tree/nodes/Return.ReturnFunctionMap
+spectra_tree_nodes_Nova_ReturnFunctionMap_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("spectra/tree/nodes/Return.ReturnFunctionMap")),
+0);
+
+// spectra/tree/nodes/Return.ReturnPropertyMap
+spectra_tree_nodes_Nova_ReturnPropertyMap_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("spectra/tree/nodes/Return.ReturnPropertyMap")),
+0);
+
+// spectra/tree/nodes/Scope
+spectra_tree_nodes_Nova_Scope_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("spectra/tree/nodes/Scope")),
+0);
+spectra_tree_nodes_Nova_Scope_VTable_val.classInstance->nova_meta_Nova_Class_Nova_functionMap = (nova_meta_Nova_FunctionMap*)spectra_tree_nodes_Nova_ScopeFunctionMap_Nova_construct(0, exceptionData);
+spectra_tree_nodes_Nova_Scope_VTable_val.classInstance->nova_meta_Nova_Class_Nova_propertyMap = (nova_meta_Nova_PropertyMap*)spectra_tree_nodes_Nova_ScopePropertyMap_Nova_construct(0, exceptionData);
+
+// spectra/tree/nodes/Scope.ScopeFunctionMap
+spectra_tree_nodes_Nova_ScopeFunctionMap_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("spectra/tree/nodes/Scope.ScopeFunctionMap")),
+0);
+
+// spectra/tree/nodes/Scope.ScopePropertyMap
+spectra_tree_nodes_Nova_ScopePropertyMap_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("spectra/tree/nodes/Scope.ScopePropertyMap")),
+0);
+
+// spectra/tree/nodes/Skeleton
+spectra_tree_nodes_Nova_Skeleton_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("spectra/tree/nodes/Skeleton")),
+0);
+spectra_tree_nodes_Nova_Skeleton_VTable_val.classInstance->nova_meta_Nova_Class_Nova_functionMap = (nova_meta_Nova_FunctionMap*)spectra_tree_nodes_Nova_SkeletonFunctionMap_Nova_construct(0, exceptionData);
+spectra_tree_nodes_Nova_Skeleton_VTable_val.classInstance->nova_meta_Nova_Class_Nova_propertyMap = (nova_meta_Nova_PropertyMap*)spectra_tree_nodes_Nova_SkeletonPropertyMap_Nova_construct(0, exceptionData);
+
+// spectra/tree/nodes/Skeleton.SkeletonFunctionMap
+spectra_tree_nodes_Nova_SkeletonFunctionMap_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("spectra/tree/nodes/Skeleton.SkeletonFunctionMap")),
+0);
+
+// spectra/tree/nodes/Skeleton.SkeletonPropertyMap
+spectra_tree_nodes_Nova_SkeletonPropertyMap_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("spectra/tree/nodes/Skeleton.SkeletonPropertyMap")),
+0);
+
+// spectra/tree/nodes/StaticClassReference
+spectra_tree_nodes_Nova_StaticClassReference_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("spectra/tree/nodes/StaticClassReference")),
+0);
+spectra_tree_nodes_Nova_StaticClassReference_VTable_val.classInstance->nova_meta_Nova_Class_Nova_functionMap = (nova_meta_Nova_FunctionMap*)spectra_tree_nodes_Nova_StaticClassReferenceFunctionMap_Nova_construct(0, exceptionData);
+spectra_tree_nodes_Nova_StaticClassReference_VTable_val.classInstance->nova_meta_Nova_Class_Nova_propertyMap = (nova_meta_Nova_PropertyMap*)spectra_tree_nodes_Nova_StaticClassReferencePropertyMap_Nova_construct(0, exceptionData);
+
+// spectra/tree/nodes/StaticClassReference.StaticClassReferenceFunctionMap
+spectra_tree_nodes_Nova_StaticClassReferenceFunctionMap_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("spectra/tree/nodes/StaticClassReference.StaticClassReferenceFunctionMap")),
+0);
+
+// spectra/tree/nodes/StaticClassReference.StaticClassReferencePropertyMap
+spectra_tree_nodes_Nova_StaticClassReferencePropertyMap_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("spectra/tree/nodes/StaticClassReference.StaticClassReferencePropertyMap")),
+0);
+
+// spectra/tree/nodes/TraitDeclaration
+spectra_tree_nodes_Nova_TraitDeclaration_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("spectra/tree/nodes/TraitDeclaration")),
+0);
+spectra_tree_nodes_Nova_TraitDeclaration_VTable_val.classInstance->nova_meta_Nova_Class_Nova_functionMap = (nova_meta_Nova_FunctionMap*)spectra_tree_nodes_Nova_TraitDeclarationFunctionMap_Nova_construct(0, exceptionData);
+spectra_tree_nodes_Nova_TraitDeclaration_VTable_val.classInstance->nova_meta_Nova_Class_Nova_propertyMap = (nova_meta_Nova_PropertyMap*)spectra_tree_nodes_Nova_TraitDeclarationPropertyMap_Nova_construct(0, exceptionData);
+
+// spectra/tree/nodes/TraitDeclaration.TraitDeclarationFunctionMap
+spectra_tree_nodes_Nova_TraitDeclarationFunctionMap_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("spectra/tree/nodes/TraitDeclaration.TraitDeclarationFunctionMap")),
+0);
+
+// spectra/tree/nodes/TraitDeclaration.TraitDeclarationPropertyMap
+spectra_tree_nodes_Nova_TraitDeclarationPropertyMap_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("spectra/tree/nodes/TraitDeclaration.TraitDeclarationPropertyMap")),
+0);
+
+// spectra/tree/nodes/Type
+spectra_tree_nodes_Nova_Type_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("spectra/tree/nodes/Type")),
+0);
+spectra_tree_nodes_Nova_Type_VTable_val.classInstance->nova_meta_Nova_Class_Nova_functionMap = (nova_meta_Nova_FunctionMap*)spectra_tree_nodes_Nova_TypeFunctionMap_Nova_construct(0, exceptionData);
+spectra_tree_nodes_Nova_Type_VTable_val.classInstance->nova_meta_Nova_Class_Nova_propertyMap = (nova_meta_Nova_PropertyMap*)spectra_tree_nodes_Nova_TypePropertyMap_Nova_construct(0, exceptionData);
+
+// spectra/tree/nodes/Type.TypeFunctionMap
+spectra_tree_nodes_Nova_TypeFunctionMap_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("spectra/tree/nodes/Type.TypeFunctionMap")),
+0);
+
+// spectra/tree/nodes/Type.TypePropertyMap
+spectra_tree_nodes_Nova_TypePropertyMap_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("spectra/tree/nodes/Type.TypePropertyMap")),
+0);
+
+// spectra/tree/nodes/ValidationResult
+spectra_tree_nodes_Nova_ValidationResult_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("spectra/tree/nodes/ValidationResult")),
+0);
+spectra_tree_nodes_Nova_ValidationResult_VTable_val.classInstance->nova_meta_Nova_Class_Nova_functionMap = (nova_meta_Nova_FunctionMap*)spectra_tree_nodes_Nova_ValidationResultFunctionMap_Nova_construct(0, exceptionData);
+spectra_tree_nodes_Nova_ValidationResult_VTable_val.classInstance->nova_meta_Nova_Class_Nova_propertyMap = (nova_meta_Nova_PropertyMap*)spectra_tree_nodes_Nova_ValidationResultPropertyMap_Nova_construct(0, exceptionData);
+
+// spectra/tree/nodes/ValidationResult.ValidationResultFunctionMap
+spectra_tree_nodes_Nova_ValidationResultFunctionMap_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("spectra/tree/nodes/ValidationResult.ValidationResultFunctionMap")),
+0);
+
+// spectra/tree/nodes/ValidationResult.ValidationResultPropertyMap
+spectra_tree_nodes_Nova_ValidationResultPropertyMap_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("spectra/tree/nodes/ValidationResult.ValidationResultPropertyMap")),
+0);
+
+// spectra/tree/nodes/Value
+spectra_tree_nodes_Nova_Value_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("spectra/tree/nodes/Value")),
+0);
+spectra_tree_nodes_Nova_Value_VTable_val.classInstance->nova_meta_Nova_Class_Nova_functionMap = (nova_meta_Nova_FunctionMap*)spectra_tree_nodes_Nova_ValueFunctionMap_Nova_construct(0, exceptionData);
+spectra_tree_nodes_Nova_Value_VTable_val.classInstance->nova_meta_Nova_Class_Nova_propertyMap = (nova_meta_Nova_PropertyMap*)spectra_tree_nodes_Nova_ValuePropertyMap_Nova_construct(0, exceptionData);
+
+// spectra/tree/nodes/Value.ValueFunctionMap
+spectra_tree_nodes_Nova_ValueFunctionMap_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("spectra/tree/nodes/Value.ValueFunctionMap")),
+0);
+
+// spectra/tree/nodes/Value.ValuePropertyMap
+spectra_tree_nodes_Nova_ValuePropertyMap_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("spectra/tree/nodes/Value.ValuePropertyMap")),
+0);
+
+// spectra/tree/nodes/annotations/AbstractAnnotation
+spectra_tree_nodes_annotations_Nova_AbstractAnnotation_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("spectra/tree/nodes/annotations/AbstractAnnotation")),
+0);
+spectra_tree_nodes_annotations_Nova_AbstractAnnotation_VTable_val.classInstance->nova_meta_Nova_Class_Nova_functionMap = (nova_meta_Nova_FunctionMap*)spectra_tree_nodes_annotations_Nova_AbstractAnnotationFunctionMap_Nova_construct(0, exceptionData);
+spectra_tree_nodes_annotations_Nova_AbstractAnnotation_VTable_val.classInstance->nova_meta_Nova_Class_Nova_propertyMap = (nova_meta_Nova_PropertyMap*)spectra_tree_nodes_annotations_Nova_AbstractAnnotationPropertyMap_Nova_construct(0, exceptionData);
+
+// spectra/tree/nodes/annotations/AbstractAnnotation.AbstractAnnotationFunctionMap
+spectra_tree_nodes_annotations_Nova_AbstractAnnotationFunctionMap_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("spectra/tree/nodes/annotations/AbstractAnnotation.AbstractAnnotationFunctionMap")),
+0);
+
+// spectra/tree/nodes/annotations/AbstractAnnotation.AbstractAnnotationPropertyMap
+spectra_tree_nodes_annotations_Nova_AbstractAnnotationPropertyMap_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("spectra/tree/nodes/annotations/AbstractAnnotation.AbstractAnnotationPropertyMap")),
+0);
+
+// spectra/tree/nodes/annotations/Annotatable
+spectra_tree_nodes_annotations_Nova_Annotatable_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("spectra/tree/nodes/annotations/Annotatable")),
+1);
+spectra_tree_nodes_annotations_Nova_Annotatable_VTable_val.classInstance->nova_meta_Nova_Class_Nova_functionMap = (nova_meta_Nova_FunctionMap*)spectra_tree_nodes_annotations_Nova_AnnotatableFunctionMap_Nova_construct(0, exceptionData);
+spectra_tree_nodes_annotations_Nova_Annotatable_VTable_val.classInstance->nova_meta_Nova_Class_Nova_propertyMap = (nova_meta_Nova_PropertyMap*)spectra_tree_nodes_annotations_Nova_AnnotatablePropertyMap_Nova_construct(0, exceptionData);
+
+// spectra/tree/nodes/annotations/Annotatable.AnnotatableFunctionMap
+spectra_tree_nodes_annotations_Nova_AnnotatableFunctionMap_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("spectra/tree/nodes/annotations/Annotatable.AnnotatableFunctionMap")),
+1);
+
+// spectra/tree/nodes/annotations/Annotatable.AnnotatablePropertyMap
+spectra_tree_nodes_annotations_Nova_AnnotatablePropertyMap_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("spectra/tree/nodes/annotations/Annotatable.AnnotatablePropertyMap")),
+1);
+
+// spectra/tree/nodes/annotations/Annotation
+spectra_tree_nodes_annotations_Nova_Annotation_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("spectra/tree/nodes/annotations/Annotation")),
+0);
+spectra_tree_nodes_annotations_Nova_Annotation_VTable_val.classInstance->nova_meta_Nova_Class_Nova_functionMap = (nova_meta_Nova_FunctionMap*)spectra_tree_nodes_annotations_Nova_AnnotationFunctionMap_Nova_construct(0, exceptionData);
+spectra_tree_nodes_annotations_Nova_Annotation_VTable_val.classInstance->nova_meta_Nova_Class_Nova_propertyMap = (nova_meta_Nova_PropertyMap*)spectra_tree_nodes_annotations_Nova_AnnotationPropertyMap_Nova_construct(0, exceptionData);
+
+// spectra/tree/nodes/annotations/Annotation.AnnotationFunctionMap
+spectra_tree_nodes_annotations_Nova_AnnotationFunctionMap_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("spectra/tree/nodes/annotations/Annotation.AnnotationFunctionMap")),
+0);
+
+// spectra/tree/nodes/annotations/Annotation.AnnotationPropertyMap
+spectra_tree_nodes_annotations_Nova_AnnotationPropertyMap_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("spectra/tree/nodes/annotations/Annotation.AnnotationPropertyMap")),
+0);
+
+// spectra/tree/nodes/annotations/AutoFinalAnnotation
+spectra_tree_nodes_annotations_Nova_AutoFinalAnnotation_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("spectra/tree/nodes/annotations/AutoFinalAnnotation")),
+0);
+spectra_tree_nodes_annotations_Nova_AutoFinalAnnotation_VTable_val.classInstance->nova_meta_Nova_Class_Nova_functionMap = (nova_meta_Nova_FunctionMap*)spectra_tree_nodes_annotations_Nova_AutoFinalAnnotationFunctionMap_Nova_construct(0, exceptionData);
+spectra_tree_nodes_annotations_Nova_AutoFinalAnnotation_VTable_val.classInstance->nova_meta_Nova_Class_Nova_propertyMap = (nova_meta_Nova_PropertyMap*)spectra_tree_nodes_annotations_Nova_AutoFinalAnnotationPropertyMap_Nova_construct(0, exceptionData);
+
+// spectra/tree/nodes/annotations/AutoFinalAnnotation.AutoFinalAnnotationFunctionMap
+spectra_tree_nodes_annotations_Nova_AutoFinalAnnotationFunctionMap_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("spectra/tree/nodes/annotations/AutoFinalAnnotation.AutoFinalAnnotationFunctionMap")),
+0);
+
+// spectra/tree/nodes/annotations/AutoFinalAnnotation.AutoFinalAnnotationPropertyMap
+spectra_tree_nodes_annotations_Nova_AutoFinalAnnotationPropertyMap_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("spectra/tree/nodes/annotations/AutoFinalAnnotation.AutoFinalAnnotationPropertyMap")),
+0);
+
+// spectra/tree/nodes/annotations/AutoPureAnnotation
+spectra_tree_nodes_annotations_Nova_AutoPureAnnotation_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("spectra/tree/nodes/annotations/AutoPureAnnotation")),
+0);
+spectra_tree_nodes_annotations_Nova_AutoPureAnnotation_VTable_val.classInstance->nova_meta_Nova_Class_Nova_functionMap = (nova_meta_Nova_FunctionMap*)spectra_tree_nodes_annotations_Nova_AutoPureAnnotationFunctionMap_Nova_construct(0, exceptionData);
+spectra_tree_nodes_annotations_Nova_AutoPureAnnotation_VTable_val.classInstance->nova_meta_Nova_Class_Nova_propertyMap = (nova_meta_Nova_PropertyMap*)spectra_tree_nodes_annotations_Nova_AutoPureAnnotationPropertyMap_Nova_construct(0, exceptionData);
+
+// spectra/tree/nodes/annotations/AutoPureAnnotation.AutoPureAnnotationFunctionMap
+spectra_tree_nodes_annotations_Nova_AutoPureAnnotationFunctionMap_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("spectra/tree/nodes/annotations/AutoPureAnnotation.AutoPureAnnotationFunctionMap")),
+0);
+
+// spectra/tree/nodes/annotations/AutoPureAnnotation.AutoPureAnnotationPropertyMap
+spectra_tree_nodes_annotations_Nova_AutoPureAnnotationPropertyMap_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("spectra/tree/nodes/annotations/AutoPureAnnotation.AutoPureAnnotationPropertyMap")),
+0);
+
+// spectra/tree/nodes/annotations/FinalAnnotation
+spectra_tree_nodes_annotations_Nova_FinalAnnotation_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("spectra/tree/nodes/annotations/FinalAnnotation")),
+0);
+spectra_tree_nodes_annotations_Nova_FinalAnnotation_VTable_val.classInstance->nova_meta_Nova_Class_Nova_functionMap = (nova_meta_Nova_FunctionMap*)spectra_tree_nodes_annotations_Nova_FinalAnnotationFunctionMap_Nova_construct(0, exceptionData);
+spectra_tree_nodes_annotations_Nova_FinalAnnotation_VTable_val.classInstance->nova_meta_Nova_Class_Nova_propertyMap = (nova_meta_Nova_PropertyMap*)spectra_tree_nodes_annotations_Nova_FinalAnnotationPropertyMap_Nova_construct(0, exceptionData);
+
+// spectra/tree/nodes/annotations/FinalAnnotation.FinalAnnotationFunctionMap
+spectra_tree_nodes_annotations_Nova_FinalAnnotationFunctionMap_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("spectra/tree/nodes/annotations/FinalAnnotation.FinalAnnotationFunctionMap")),
+0);
+
+// spectra/tree/nodes/annotations/FinalAnnotation.FinalAnnotationPropertyMap
+spectra_tree_nodes_annotations_Nova_FinalAnnotationPropertyMap_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("spectra/tree/nodes/annotations/FinalAnnotation.FinalAnnotationPropertyMap")),
+0);
+
+// spectra/tree/nodes/annotations/ImmutableAnnotation
+spectra_tree_nodes_annotations_Nova_ImmutableAnnotation_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("spectra/tree/nodes/annotations/ImmutableAnnotation")),
+0);
+spectra_tree_nodes_annotations_Nova_ImmutableAnnotation_VTable_val.classInstance->nova_meta_Nova_Class_Nova_functionMap = (nova_meta_Nova_FunctionMap*)spectra_tree_nodes_annotations_Nova_ImmutableAnnotationFunctionMap_Nova_construct(0, exceptionData);
+spectra_tree_nodes_annotations_Nova_ImmutableAnnotation_VTable_val.classInstance->nova_meta_Nova_Class_Nova_propertyMap = (nova_meta_Nova_PropertyMap*)spectra_tree_nodes_annotations_Nova_ImmutableAnnotationPropertyMap_Nova_construct(0, exceptionData);
+
+// spectra/tree/nodes/annotations/ImmutableAnnotation.ImmutableAnnotationFunctionMap
+spectra_tree_nodes_annotations_Nova_ImmutableAnnotationFunctionMap_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("spectra/tree/nodes/annotations/ImmutableAnnotation.ImmutableAnnotationFunctionMap")),
+0);
+
+// spectra/tree/nodes/annotations/ImmutableAnnotation.ImmutableAnnotationPropertyMap
+spectra_tree_nodes_annotations_Nova_ImmutableAnnotationPropertyMap_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("spectra/tree/nodes/annotations/ImmutableAnnotation.ImmutableAnnotationPropertyMap")),
+0);
+
+// spectra/tree/nodes/annotations/ImpureAnnotation
+spectra_tree_nodes_annotations_Nova_ImpureAnnotation_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("spectra/tree/nodes/annotations/ImpureAnnotation")),
+0);
+spectra_tree_nodes_annotations_Nova_ImpureAnnotation_VTable_val.classInstance->nova_meta_Nova_Class_Nova_functionMap = (nova_meta_Nova_FunctionMap*)spectra_tree_nodes_annotations_Nova_ImpureAnnotationFunctionMap_Nova_construct(0, exceptionData);
+spectra_tree_nodes_annotations_Nova_ImpureAnnotation_VTable_val.classInstance->nova_meta_Nova_Class_Nova_propertyMap = (nova_meta_Nova_PropertyMap*)spectra_tree_nodes_annotations_Nova_ImpureAnnotationPropertyMap_Nova_construct(0, exceptionData);
+
+// spectra/tree/nodes/annotations/ImpureAnnotation.ImpureAnnotationFunctionMap
+spectra_tree_nodes_annotations_Nova_ImpureAnnotationFunctionMap_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("spectra/tree/nodes/annotations/ImpureAnnotation.ImpureAnnotationFunctionMap")),
+0);
+
+// spectra/tree/nodes/annotations/ImpureAnnotation.ImpureAnnotationPropertyMap
+spectra_tree_nodes_annotations_Nova_ImpureAnnotationPropertyMap_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("spectra/tree/nodes/annotations/ImpureAnnotation.ImpureAnnotationPropertyMap")),
+0);
+
+// spectra/tree/nodes/annotations/LetAnnotation
+spectra_tree_nodes_annotations_Nova_LetAnnotation_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("spectra/tree/nodes/annotations/LetAnnotation")),
+0);
+spectra_tree_nodes_annotations_Nova_LetAnnotation_VTable_val.classInstance->nova_meta_Nova_Class_Nova_functionMap = (nova_meta_Nova_FunctionMap*)spectra_tree_nodes_annotations_Nova_LetAnnotationFunctionMap_Nova_construct(0, exceptionData);
+spectra_tree_nodes_annotations_Nova_LetAnnotation_VTable_val.classInstance->nova_meta_Nova_Class_Nova_propertyMap = (nova_meta_Nova_PropertyMap*)spectra_tree_nodes_annotations_Nova_LetAnnotationPropertyMap_Nova_construct(0, exceptionData);
+
+// spectra/tree/nodes/annotations/LetAnnotation.LetAnnotationFunctionMap
+spectra_tree_nodes_annotations_Nova_LetAnnotationFunctionMap_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("spectra/tree/nodes/annotations/LetAnnotation.LetAnnotationFunctionMap")),
+0);
+
+// spectra/tree/nodes/annotations/LetAnnotation.LetAnnotationPropertyMap
+spectra_tree_nodes_annotations_Nova_LetAnnotationPropertyMap_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("spectra/tree/nodes/annotations/LetAnnotation.LetAnnotationPropertyMap")),
+0);
+
+// spectra/tree/nodes/annotations/Modifier
+spectra_tree_nodes_annotations_Nova_Modifier_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("spectra/tree/nodes/annotations/Modifier")),
+1);
+spectra_tree_nodes_annotations_Nova_Modifier_VTable_val.classInstance->nova_meta_Nova_Class_Nova_functionMap = (nova_meta_Nova_FunctionMap*)spectra_tree_nodes_annotations_Nova_ModifierFunctionMap_Nova_construct(0, exceptionData);
+spectra_tree_nodes_annotations_Nova_Modifier_VTable_val.classInstance->nova_meta_Nova_Class_Nova_propertyMap = (nova_meta_Nova_PropertyMap*)spectra_tree_nodes_annotations_Nova_ModifierPropertyMap_Nova_construct(0, exceptionData);
+
+// spectra/tree/nodes/annotations/Modifier.ModifierFunctionMap
+spectra_tree_nodes_annotations_Nova_ModifierFunctionMap_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("spectra/tree/nodes/annotations/Modifier.ModifierFunctionMap")),
+1);
+
+// spectra/tree/nodes/annotations/Modifier.ModifierPropertyMap
+spectra_tree_nodes_annotations_Nova_ModifierPropertyMap_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("spectra/tree/nodes/annotations/Modifier.ModifierPropertyMap")),
+1);
+
+// spectra/tree/nodes/annotations/NativeAnnotation
+spectra_tree_nodes_annotations_Nova_NativeAnnotation_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("spectra/tree/nodes/annotations/NativeAnnotation")),
+0);
+spectra_tree_nodes_annotations_Nova_NativeAnnotation_VTable_val.classInstance->nova_meta_Nova_Class_Nova_functionMap = (nova_meta_Nova_FunctionMap*)spectra_tree_nodes_annotations_Nova_NativeAnnotationFunctionMap_Nova_construct(0, exceptionData);
+spectra_tree_nodes_annotations_Nova_NativeAnnotation_VTable_val.classInstance->nova_meta_Nova_Class_Nova_propertyMap = (nova_meta_Nova_PropertyMap*)spectra_tree_nodes_annotations_Nova_NativeAnnotationPropertyMap_Nova_construct(0, exceptionData);
+
+// spectra/tree/nodes/annotations/NativeAnnotation.NativeAnnotationFunctionMap
+spectra_tree_nodes_annotations_Nova_NativeAnnotationFunctionMap_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("spectra/tree/nodes/annotations/NativeAnnotation.NativeAnnotationFunctionMap")),
+0);
+
+// spectra/tree/nodes/annotations/NativeAnnotation.NativeAnnotationPropertyMap
+spectra_tree_nodes_annotations_Nova_NativeAnnotationPropertyMap_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("spectra/tree/nodes/annotations/NativeAnnotation.NativeAnnotationPropertyMap")),
+0);
+
+// spectra/tree/nodes/annotations/OverrideAnnotation
+spectra_tree_nodes_annotations_Nova_OverrideAnnotation_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("spectra/tree/nodes/annotations/OverrideAnnotation")),
+0);
+spectra_tree_nodes_annotations_Nova_OverrideAnnotation_VTable_val.classInstance->nova_meta_Nova_Class_Nova_functionMap = (nova_meta_Nova_FunctionMap*)spectra_tree_nodes_annotations_Nova_OverrideAnnotationFunctionMap_Nova_construct(0, exceptionData);
+spectra_tree_nodes_annotations_Nova_OverrideAnnotation_VTable_val.classInstance->nova_meta_Nova_Class_Nova_propertyMap = (nova_meta_Nova_PropertyMap*)spectra_tree_nodes_annotations_Nova_OverrideAnnotationPropertyMap_Nova_construct(0, exceptionData);
+
+// spectra/tree/nodes/annotations/OverrideAnnotation.OverrideAnnotationFunctionMap
+spectra_tree_nodes_annotations_Nova_OverrideAnnotationFunctionMap_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("spectra/tree/nodes/annotations/OverrideAnnotation.OverrideAnnotationFunctionMap")),
+0);
+
+// spectra/tree/nodes/annotations/OverrideAnnotation.OverrideAnnotationPropertyMap
+spectra_tree_nodes_annotations_Nova_OverrideAnnotationPropertyMap_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("spectra/tree/nodes/annotations/OverrideAnnotation.OverrideAnnotationPropertyMap")),
+0);
+
+// spectra/tree/nodes/annotations/PrivateAnnotation
+spectra_tree_nodes_annotations_Nova_PrivateAnnotation_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("spectra/tree/nodes/annotations/PrivateAnnotation")),
+0);
+spectra_tree_nodes_annotations_Nova_PrivateAnnotation_VTable_val.classInstance->nova_meta_Nova_Class_Nova_functionMap = (nova_meta_Nova_FunctionMap*)spectra_tree_nodes_annotations_Nova_PrivateAnnotationFunctionMap_Nova_construct(0, exceptionData);
+spectra_tree_nodes_annotations_Nova_PrivateAnnotation_VTable_val.classInstance->nova_meta_Nova_Class_Nova_propertyMap = (nova_meta_Nova_PropertyMap*)spectra_tree_nodes_annotations_Nova_PrivateAnnotationPropertyMap_Nova_construct(0, exceptionData);
+
+// spectra/tree/nodes/annotations/PrivateAnnotation.PrivateAnnotationFunctionMap
+spectra_tree_nodes_annotations_Nova_PrivateAnnotationFunctionMap_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("spectra/tree/nodes/annotations/PrivateAnnotation.PrivateAnnotationFunctionMap")),
+0);
+
+// spectra/tree/nodes/annotations/PrivateAnnotation.PrivateAnnotationPropertyMap
+spectra_tree_nodes_annotations_Nova_PrivateAnnotationPropertyMap_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("spectra/tree/nodes/annotations/PrivateAnnotation.PrivateAnnotationPropertyMap")),
+0);
+
+// spectra/tree/nodes/annotations/PublicAnnotation
+spectra_tree_nodes_annotations_Nova_PublicAnnotation_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("spectra/tree/nodes/annotations/PublicAnnotation")),
+0);
+spectra_tree_nodes_annotations_Nova_PublicAnnotation_VTable_val.classInstance->nova_meta_Nova_Class_Nova_functionMap = (nova_meta_Nova_FunctionMap*)spectra_tree_nodes_annotations_Nova_PublicAnnotationFunctionMap_Nova_construct(0, exceptionData);
+spectra_tree_nodes_annotations_Nova_PublicAnnotation_VTable_val.classInstance->nova_meta_Nova_Class_Nova_propertyMap = (nova_meta_Nova_PropertyMap*)spectra_tree_nodes_annotations_Nova_PublicAnnotationPropertyMap_Nova_construct(0, exceptionData);
+
+// spectra/tree/nodes/annotations/PublicAnnotation.PublicAnnotationFunctionMap
+spectra_tree_nodes_annotations_Nova_PublicAnnotationFunctionMap_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("spectra/tree/nodes/annotations/PublicAnnotation.PublicAnnotationFunctionMap")),
+0);
+
+// spectra/tree/nodes/annotations/PublicAnnotation.PublicAnnotationPropertyMap
+spectra_tree_nodes_annotations_Nova_PublicAnnotationPropertyMap_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("spectra/tree/nodes/annotations/PublicAnnotation.PublicAnnotationPropertyMap")),
+0);
+
+// spectra/tree/nodes/annotations/PureAnnotation
+spectra_tree_nodes_annotations_Nova_PureAnnotation_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("spectra/tree/nodes/annotations/PureAnnotation")),
+0);
+spectra_tree_nodes_annotations_Nova_PureAnnotation_VTable_val.classInstance->nova_meta_Nova_Class_Nova_functionMap = (nova_meta_Nova_FunctionMap*)spectra_tree_nodes_annotations_Nova_PureAnnotationFunctionMap_Nova_construct(0, exceptionData);
+spectra_tree_nodes_annotations_Nova_PureAnnotation_VTable_val.classInstance->nova_meta_Nova_Class_Nova_propertyMap = (nova_meta_Nova_PropertyMap*)spectra_tree_nodes_annotations_Nova_PureAnnotationPropertyMap_Nova_construct(0, exceptionData);
+
+// spectra/tree/nodes/annotations/PureAnnotation.PureAnnotationFunctionMap
+spectra_tree_nodes_annotations_Nova_PureAnnotationFunctionMap_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("spectra/tree/nodes/annotations/PureAnnotation.PureAnnotationFunctionMap")),
+0);
+
+// spectra/tree/nodes/annotations/PureAnnotation.PureAnnotationPropertyMap
+spectra_tree_nodes_annotations_Nova_PureAnnotationPropertyMap_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("spectra/tree/nodes/annotations/PureAnnotation.PureAnnotationPropertyMap")),
+0);
+
+// spectra/tree/nodes/annotations/StaticAnnotation
+spectra_tree_nodes_annotations_Nova_StaticAnnotation_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("spectra/tree/nodes/annotations/StaticAnnotation")),
+0);
+spectra_tree_nodes_annotations_Nova_StaticAnnotation_VTable_val.classInstance->nova_meta_Nova_Class_Nova_functionMap = (nova_meta_Nova_FunctionMap*)spectra_tree_nodes_annotations_Nova_StaticAnnotationFunctionMap_Nova_construct(0, exceptionData);
+spectra_tree_nodes_annotations_Nova_StaticAnnotation_VTable_val.classInstance->nova_meta_Nova_Class_Nova_propertyMap = (nova_meta_Nova_PropertyMap*)spectra_tree_nodes_annotations_Nova_StaticAnnotationPropertyMap_Nova_construct(0, exceptionData);
+
+// spectra/tree/nodes/annotations/StaticAnnotation.StaticAnnotationFunctionMap
+spectra_tree_nodes_annotations_Nova_StaticAnnotationFunctionMap_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("spectra/tree/nodes/annotations/StaticAnnotation.StaticAnnotationFunctionMap")),
+0);
+
+// spectra/tree/nodes/annotations/StaticAnnotation.StaticAnnotationPropertyMap
+spectra_tree_nodes_annotations_Nova_StaticAnnotationPropertyMap_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("spectra/tree/nodes/annotations/StaticAnnotation.StaticAnnotationPropertyMap")),
+0);
+
+// spectra/tree/nodes/annotations/TargetAnnotation
+spectra_tree_nodes_annotations_Nova_TargetAnnotation_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("spectra/tree/nodes/annotations/TargetAnnotation")),
+0);
+spectra_tree_nodes_annotations_Nova_TargetAnnotation_VTable_val.classInstance->nova_meta_Nova_Class_Nova_functionMap = (nova_meta_Nova_FunctionMap*)spectra_tree_nodes_annotations_Nova_TargetAnnotationFunctionMap_Nova_construct(0, exceptionData);
+spectra_tree_nodes_annotations_Nova_TargetAnnotation_VTable_val.classInstance->nova_meta_Nova_Class_Nova_propertyMap = (nova_meta_Nova_PropertyMap*)spectra_tree_nodes_annotations_Nova_TargetAnnotationPropertyMap_Nova_construct(0, exceptionData);
+
+// spectra/tree/nodes/annotations/TargetAnnotation.TargetAnnotationFunctionMap
+spectra_tree_nodes_annotations_Nova_TargetAnnotationFunctionMap_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("spectra/tree/nodes/annotations/TargetAnnotation.TargetAnnotationFunctionMap")),
+0);
+
+// spectra/tree/nodes/annotations/TargetAnnotation.TargetAnnotationPropertyMap
+spectra_tree_nodes_annotations_Nova_TargetAnnotationPropertyMap_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("spectra/tree/nodes/annotations/TargetAnnotation.TargetAnnotationPropertyMap")),
+0);
+
+// spectra/tree/nodes/annotations/VarAnnotation
+spectra_tree_nodes_annotations_Nova_VarAnnotation_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("spectra/tree/nodes/annotations/VarAnnotation")),
+0);
+spectra_tree_nodes_annotations_Nova_VarAnnotation_VTable_val.classInstance->nova_meta_Nova_Class_Nova_functionMap = (nova_meta_Nova_FunctionMap*)spectra_tree_nodes_annotations_Nova_VarAnnotationFunctionMap_Nova_construct(0, exceptionData);
+spectra_tree_nodes_annotations_Nova_VarAnnotation_VTable_val.classInstance->nova_meta_Nova_Class_Nova_propertyMap = (nova_meta_Nova_PropertyMap*)spectra_tree_nodes_annotations_Nova_VarAnnotationPropertyMap_Nova_construct(0, exceptionData);
+
+// spectra/tree/nodes/annotations/VarAnnotation.VarAnnotationFunctionMap
+spectra_tree_nodes_annotations_Nova_VarAnnotationFunctionMap_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("spectra/tree/nodes/annotations/VarAnnotation.VarAnnotationFunctionMap")),
+0);
+
+// spectra/tree/nodes/annotations/VarAnnotation.VarAnnotationPropertyMap
+spectra_tree_nodes_annotations_Nova_VarAnnotationPropertyMap_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("spectra/tree/nodes/annotations/VarAnnotation.VarAnnotationPropertyMap")),
+0);
+
+// spectra/tree/nodes/annotations/VisibilityModifier
+spectra_tree_nodes_annotations_Nova_VisibilityModifier_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("spectra/tree/nodes/annotations/VisibilityModifier")),
+1);
+spectra_tree_nodes_annotations_Nova_VisibilityModifier_VTable_val.classInstance->nova_meta_Nova_Class_Nova_functionMap = (nova_meta_Nova_FunctionMap*)spectra_tree_nodes_annotations_Nova_VisibilityModifierFunctionMap_Nova_construct(0, exceptionData);
+spectra_tree_nodes_annotations_Nova_VisibilityModifier_VTable_val.classInstance->nova_meta_Nova_Class_Nova_propertyMap = (nova_meta_Nova_PropertyMap*)spectra_tree_nodes_annotations_Nova_VisibilityModifierPropertyMap_Nova_construct(0, exceptionData);
+
+// spectra/tree/nodes/annotations/VisibilityModifier.VisibilityModifierFunctionMap
+spectra_tree_nodes_annotations_Nova_VisibilityModifierFunctionMap_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("spectra/tree/nodes/annotations/VisibilityModifier.VisibilityModifierFunctionMap")),
+1);
+
+// spectra/tree/nodes/annotations/VisibilityModifier.VisibilityModifierPropertyMap
+spectra_tree_nodes_annotations_Nova_VisibilityModifierPropertyMap_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("spectra/tree/nodes/annotations/VisibilityModifier.VisibilityModifierPropertyMap")),
+1);
+
+// spectra/tree/nodes/annotations/VisibleAnnotation
+spectra_tree_nodes_annotations_Nova_VisibleAnnotation_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("spectra/tree/nodes/annotations/VisibleAnnotation")),
+0);
+spectra_tree_nodes_annotations_Nova_VisibleAnnotation_VTable_val.classInstance->nova_meta_Nova_Class_Nova_functionMap = (nova_meta_Nova_FunctionMap*)spectra_tree_nodes_annotations_Nova_VisibleAnnotationFunctionMap_Nova_construct(0, exceptionData);
+spectra_tree_nodes_annotations_Nova_VisibleAnnotation_VTable_val.classInstance->nova_meta_Nova_Class_Nova_propertyMap = (nova_meta_Nova_PropertyMap*)spectra_tree_nodes_annotations_Nova_VisibleAnnotationPropertyMap_Nova_construct(0, exceptionData);
+
+// spectra/tree/nodes/annotations/VisibleAnnotation.VisibleAnnotationFunctionMap
+spectra_tree_nodes_annotations_Nova_VisibleAnnotationFunctionMap_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("spectra/tree/nodes/annotations/VisibleAnnotation.VisibleAnnotationFunctionMap")),
+0);
+
+// spectra/tree/nodes/annotations/VisibleAnnotation.VisibleAnnotationPropertyMap
+spectra_tree_nodes_annotations_Nova_VisibleAnnotationPropertyMap_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("spectra/tree/nodes/annotations/VisibleAnnotation.VisibleAnnotationPropertyMap")),
+0);
+
+// spectra/tree/nodes/arrays/ArrayAccess
+spectra_tree_nodes_arrays_Nova_ArrayAccess_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("spectra/tree/nodes/arrays/ArrayAccess")),
+0);
+spectra_tree_nodes_arrays_Nova_ArrayAccess_VTable_val.classInstance->nova_meta_Nova_Class_Nova_functionMap = (nova_meta_Nova_FunctionMap*)spectra_tree_nodes_arrays_Nova_ArrayAccessFunctionMap_Nova_construct(0, exceptionData);
+spectra_tree_nodes_arrays_Nova_ArrayAccess_VTable_val.classInstance->nova_meta_Nova_Class_Nova_propertyMap = (nova_meta_Nova_PropertyMap*)spectra_tree_nodes_arrays_Nova_ArrayAccessPropertyMap_Nova_construct(0, exceptionData);
+
+// spectra/tree/nodes/arrays/ArrayAccess.ArrayAccessFunctionMap
+spectra_tree_nodes_arrays_Nova_ArrayAccessFunctionMap_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("spectra/tree/nodes/arrays/ArrayAccess.ArrayAccessFunctionMap")),
+0);
+
+// spectra/tree/nodes/arrays/ArrayAccess.ArrayAccessPropertyMap
+spectra_tree_nodes_arrays_Nova_ArrayAccessPropertyMap_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("spectra/tree/nodes/arrays/ArrayAccess.ArrayAccessPropertyMap")),
+0);
+
+// spectra/tree/nodes/controlstructures/ControlStructure
+spectra_tree_nodes_controlstructures_Nova_ControlStructure_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("spectra/tree/nodes/controlstructures/ControlStructure")),
+0);
+spectra_tree_nodes_controlstructures_Nova_ControlStructure_VTable_val.classInstance->nova_meta_Nova_Class_Nova_functionMap = (nova_meta_Nova_FunctionMap*)spectra_tree_nodes_controlstructures_Nova_ControlStructureFunctionMap_Nova_construct(0, exceptionData);
+spectra_tree_nodes_controlstructures_Nova_ControlStructure_VTable_val.classInstance->nova_meta_Nova_Class_Nova_propertyMap = (nova_meta_Nova_PropertyMap*)spectra_tree_nodes_controlstructures_Nova_ControlStructurePropertyMap_Nova_construct(0, exceptionData);
+
+// spectra/tree/nodes/controlstructures/ControlStructure.ControlStructureFunctionMap
+spectra_tree_nodes_controlstructures_Nova_ControlStructureFunctionMap_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("spectra/tree/nodes/controlstructures/ControlStructure.ControlStructureFunctionMap")),
+0);
+
+// spectra/tree/nodes/controlstructures/ControlStructure.ControlStructurePropertyMap
+spectra_tree_nodes_controlstructures_Nova_ControlStructurePropertyMap_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("spectra/tree/nodes/controlstructures/ControlStructure.ControlStructurePropertyMap")),
+0);
+
+// spectra/tree/nodes/controlstructures/ElseStatement
+spectra_tree_nodes_controlstructures_Nova_ElseStatement_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("spectra/tree/nodes/controlstructures/ElseStatement")),
+0);
+spectra_tree_nodes_controlstructures_Nova_ElseStatement_VTable_val.classInstance->nova_meta_Nova_Class_Nova_functionMap = (nova_meta_Nova_FunctionMap*)spectra_tree_nodes_controlstructures_Nova_ElseStatementFunctionMap_Nova_construct(0, exceptionData);
+spectra_tree_nodes_controlstructures_Nova_ElseStatement_VTable_val.classInstance->nova_meta_Nova_Class_Nova_propertyMap = (nova_meta_Nova_PropertyMap*)spectra_tree_nodes_controlstructures_Nova_ElseStatementPropertyMap_Nova_construct(0, exceptionData);
+
+// spectra/tree/nodes/controlstructures/ElseStatement.ElseStatementFunctionMap
+spectra_tree_nodes_controlstructures_Nova_ElseStatementFunctionMap_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("spectra/tree/nodes/controlstructures/ElseStatement.ElseStatementFunctionMap")),
+0);
+
+// spectra/tree/nodes/controlstructures/ElseStatement.ElseStatementPropertyMap
+spectra_tree_nodes_controlstructures_Nova_ElseStatementPropertyMap_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("spectra/tree/nodes/controlstructures/ElseStatement.ElseStatementPropertyMap")),
+0);
+
+// spectra/tree/nodes/controlstructures/IfStatement
+spectra_tree_nodes_controlstructures_Nova_IfStatement_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("spectra/tree/nodes/controlstructures/IfStatement")),
+0);
+spectra_tree_nodes_controlstructures_Nova_IfStatement_VTable_val.classInstance->nova_meta_Nova_Class_Nova_functionMap = (nova_meta_Nova_FunctionMap*)spectra_tree_nodes_controlstructures_Nova_IfStatementFunctionMap_Nova_construct(0, exceptionData);
+spectra_tree_nodes_controlstructures_Nova_IfStatement_VTable_val.classInstance->nova_meta_Nova_Class_Nova_propertyMap = (nova_meta_Nova_PropertyMap*)spectra_tree_nodes_controlstructures_Nova_IfStatementPropertyMap_Nova_construct(0, exceptionData);
+
+// spectra/tree/nodes/controlstructures/IfStatement.IfStatementFunctionMap
+spectra_tree_nodes_controlstructures_Nova_IfStatementFunctionMap_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("spectra/tree/nodes/controlstructures/IfStatement.IfStatementFunctionMap")),
+0);
+
+// spectra/tree/nodes/controlstructures/IfStatement.IfStatementPropertyMap
+spectra_tree_nodes_controlstructures_Nova_IfStatementPropertyMap_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("spectra/tree/nodes/controlstructures/IfStatement.IfStatementPropertyMap")),
+0);
+
+// spectra/tree/nodes/controlstructures/loops/ForEachLoop
+spectra_tree_nodes_controlstructures_loops_Nova_ForEachLoop_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("spectra/tree/nodes/controlstructures/loops/ForEachLoop")),
+0);
+spectra_tree_nodes_controlstructures_loops_Nova_ForEachLoop_VTable_val.classInstance->nova_meta_Nova_Class_Nova_functionMap = (nova_meta_Nova_FunctionMap*)spectra_tree_nodes_controlstructures_loops_Nova_ForEachLoopFunctionMap_Nova_construct(0, exceptionData);
+spectra_tree_nodes_controlstructures_loops_Nova_ForEachLoop_VTable_val.classInstance->nova_meta_Nova_Class_Nova_propertyMap = (nova_meta_Nova_PropertyMap*)spectra_tree_nodes_controlstructures_loops_Nova_ForEachLoopPropertyMap_Nova_construct(0, exceptionData);
+
+// spectra/tree/nodes/controlstructures/loops/ForEachLoop.ForEachLoopFunctionMap
+spectra_tree_nodes_controlstructures_loops_Nova_ForEachLoopFunctionMap_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("spectra/tree/nodes/controlstructures/loops/ForEachLoop.ForEachLoopFunctionMap")),
+0);
+
+// spectra/tree/nodes/controlstructures/loops/ForEachLoop.ForEachLoopPropertyMap
+spectra_tree_nodes_controlstructures_loops_Nova_ForEachLoopPropertyMap_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("spectra/tree/nodes/controlstructures/loops/ForEachLoop.ForEachLoopPropertyMap")),
+0);
+
+// spectra/tree/nodes/controlstructures/loops/Loop
+spectra_tree_nodes_controlstructures_loops_Nova_Loop_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("spectra/tree/nodes/controlstructures/loops/Loop")),
+0);
+spectra_tree_nodes_controlstructures_loops_Nova_Loop_VTable_val.classInstance->nova_meta_Nova_Class_Nova_functionMap = (nova_meta_Nova_FunctionMap*)spectra_tree_nodes_controlstructures_loops_Nova_LoopFunctionMap_Nova_construct(0, exceptionData);
+spectra_tree_nodes_controlstructures_loops_Nova_Loop_VTable_val.classInstance->nova_meta_Nova_Class_Nova_propertyMap = (nova_meta_Nova_PropertyMap*)spectra_tree_nodes_controlstructures_loops_Nova_LoopPropertyMap_Nova_construct(0, exceptionData);
+
+// spectra/tree/nodes/controlstructures/loops/Loop.LoopFunctionMap
+spectra_tree_nodes_controlstructures_loops_Nova_LoopFunctionMap_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("spectra/tree/nodes/controlstructures/loops/Loop.LoopFunctionMap")),
+0);
+
+// spectra/tree/nodes/controlstructures/loops/Loop.LoopPropertyMap
+spectra_tree_nodes_controlstructures_loops_Nova_LoopPropertyMap_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("spectra/tree/nodes/controlstructures/loops/Loop.LoopPropertyMap")),
+0);
+
+// spectra/tree/nodes/controlstructures/loops/WhileLoop
+spectra_tree_nodes_controlstructures_loops_Nova_WhileLoop_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("spectra/tree/nodes/controlstructures/loops/WhileLoop")),
+0);
+spectra_tree_nodes_controlstructures_loops_Nova_WhileLoop_VTable_val.classInstance->nova_meta_Nova_Class_Nova_functionMap = (nova_meta_Nova_FunctionMap*)spectra_tree_nodes_controlstructures_loops_Nova_WhileLoopFunctionMap_Nova_construct(0, exceptionData);
+spectra_tree_nodes_controlstructures_loops_Nova_WhileLoop_VTable_val.classInstance->nova_meta_Nova_Class_Nova_propertyMap = (nova_meta_Nova_PropertyMap*)spectra_tree_nodes_controlstructures_loops_Nova_WhileLoopPropertyMap_Nova_construct(0, exceptionData);
+
+// spectra/tree/nodes/controlstructures/loops/WhileLoop.WhileLoopFunctionMap
+spectra_tree_nodes_controlstructures_loops_Nova_WhileLoopFunctionMap_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("spectra/tree/nodes/controlstructures/loops/WhileLoop.WhileLoopFunctionMap")),
+0);
+
+// spectra/tree/nodes/controlstructures/loops/WhileLoop.WhileLoopPropertyMap
+spectra_tree_nodes_controlstructures_loops_Nova_WhileLoopPropertyMap_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("spectra/tree/nodes/controlstructures/loops/WhileLoop.WhileLoopPropertyMap")),
+0);
+
+// spectra/tree/nodes/exceptionhandling/Catch
+spectra_tree_nodes_exceptionhandling_Nova_Catch_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("spectra/tree/nodes/exceptionhandling/Catch")),
+0);
+spectra_tree_nodes_exceptionhandling_Nova_Catch_VTable_val.classInstance->nova_meta_Nova_Class_Nova_functionMap = (nova_meta_Nova_FunctionMap*)spectra_tree_nodes_exceptionhandling_Nova_CatchFunctionMap_Nova_construct(0, exceptionData);
+spectra_tree_nodes_exceptionhandling_Nova_Catch_VTable_val.classInstance->nova_meta_Nova_Class_Nova_propertyMap = (nova_meta_Nova_PropertyMap*)spectra_tree_nodes_exceptionhandling_Nova_CatchPropertyMap_Nova_construct(0, exceptionData);
+
+// spectra/tree/nodes/exceptionhandling/Catch.CatchFunctionMap
+spectra_tree_nodes_exceptionhandling_Nova_CatchFunctionMap_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("spectra/tree/nodes/exceptionhandling/Catch.CatchFunctionMap")),
+0);
+
+// spectra/tree/nodes/exceptionhandling/Catch.CatchPropertyMap
+spectra_tree_nodes_exceptionhandling_Nova_CatchPropertyMap_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("spectra/tree/nodes/exceptionhandling/Catch.CatchPropertyMap")),
+0);
+
+// spectra/tree/nodes/exceptionhandling/ExceptionHandler
+spectra_tree_nodes_exceptionhandling_Nova_ExceptionHandler_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("spectra/tree/nodes/exceptionhandling/ExceptionHandler")),
+0);
+spectra_tree_nodes_exceptionhandling_Nova_ExceptionHandler_VTable_val.classInstance->nova_meta_Nova_Class_Nova_functionMap = (nova_meta_Nova_FunctionMap*)spectra_tree_nodes_exceptionhandling_Nova_ExceptionHandlerFunctionMap_Nova_construct(0, exceptionData);
+spectra_tree_nodes_exceptionhandling_Nova_ExceptionHandler_VTable_val.classInstance->nova_meta_Nova_Class_Nova_propertyMap = (nova_meta_Nova_PropertyMap*)spectra_tree_nodes_exceptionhandling_Nova_ExceptionHandlerPropertyMap_Nova_construct(0, exceptionData);
+
+// spectra/tree/nodes/exceptionhandling/ExceptionHandler.ExceptionHandlerFunctionMap
+spectra_tree_nodes_exceptionhandling_Nova_ExceptionHandlerFunctionMap_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("spectra/tree/nodes/exceptionhandling/ExceptionHandler.ExceptionHandlerFunctionMap")),
+0);
+
+// spectra/tree/nodes/exceptionhandling/ExceptionHandler.ExceptionHandlerPropertyMap
+spectra_tree_nodes_exceptionhandling_Nova_ExceptionHandlerPropertyMap_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("spectra/tree/nodes/exceptionhandling/ExceptionHandler.ExceptionHandlerPropertyMap")),
+0);
+
+// spectra/tree/nodes/exceptionhandling/Throw
+spectra_tree_nodes_exceptionhandling_Nova_Throw_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("spectra/tree/nodes/exceptionhandling/Throw")),
+0);
+spectra_tree_nodes_exceptionhandling_Nova_Throw_VTable_val.classInstance->nova_meta_Nova_Class_Nova_functionMap = (nova_meta_Nova_FunctionMap*)spectra_tree_nodes_exceptionhandling_Nova_ThrowFunctionMap_Nova_construct(0, exceptionData);
+spectra_tree_nodes_exceptionhandling_Nova_Throw_VTable_val.classInstance->nova_meta_Nova_Class_Nova_propertyMap = (nova_meta_Nova_PropertyMap*)spectra_tree_nodes_exceptionhandling_Nova_ThrowPropertyMap_Nova_construct(0, exceptionData);
+
+// spectra/tree/nodes/exceptionhandling/Throw.ThrowFunctionMap
+spectra_tree_nodes_exceptionhandling_Nova_ThrowFunctionMap_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("spectra/tree/nodes/exceptionhandling/Throw.ThrowFunctionMap")),
+0);
+
+// spectra/tree/nodes/exceptionhandling/Throw.ThrowPropertyMap
+spectra_tree_nodes_exceptionhandling_Nova_ThrowPropertyMap_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("spectra/tree/nodes/exceptionhandling/Throw.ThrowPropertyMap")),
+0);
+
+// spectra/tree/nodes/exceptionhandling/Try
+spectra_tree_nodes_exceptionhandling_Nova_Try_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("spectra/tree/nodes/exceptionhandling/Try")),
+0);
+spectra_tree_nodes_exceptionhandling_Nova_Try_VTable_val.classInstance->nova_meta_Nova_Class_Nova_functionMap = (nova_meta_Nova_FunctionMap*)spectra_tree_nodes_exceptionhandling_Nova_TryFunctionMap_Nova_construct(0, exceptionData);
+spectra_tree_nodes_exceptionhandling_Nova_Try_VTable_val.classInstance->nova_meta_Nova_Class_Nova_propertyMap = (nova_meta_Nova_PropertyMap*)spectra_tree_nodes_exceptionhandling_Nova_TryPropertyMap_Nova_construct(0, exceptionData);
+
+// spectra/tree/nodes/exceptionhandling/Try.TryFunctionMap
+spectra_tree_nodes_exceptionhandling_Nova_TryFunctionMap_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("spectra/tree/nodes/exceptionhandling/Try.TryFunctionMap")),
+0);
+
+// spectra/tree/nodes/exceptionhandling/Try.TryPropertyMap
+spectra_tree_nodes_exceptionhandling_Nova_TryPropertyMap_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("spectra/tree/nodes/exceptionhandling/Try.TryPropertyMap")),
+0);
+
+// spectra/tree/nodes/functions/AccessorFunction
+spectra_tree_nodes_functions_Nova_AccessorFunction_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("spectra/tree/nodes/functions/AccessorFunction")),
+0);
+spectra_tree_nodes_functions_Nova_AccessorFunction_VTable_val.classInstance->nova_meta_Nova_Class_Nova_functionMap = (nova_meta_Nova_FunctionMap*)spectra_tree_nodes_functions_Nova_AccessorFunctionFunctionMap_Nova_construct(0, exceptionData);
+spectra_tree_nodes_functions_Nova_AccessorFunction_VTable_val.classInstance->nova_meta_Nova_Class_Nova_propertyMap = (nova_meta_Nova_PropertyMap*)spectra_tree_nodes_functions_Nova_AccessorFunctionPropertyMap_Nova_construct(0, exceptionData);
+
+// spectra/tree/nodes/functions/AccessorFunction.AccessorFunctionFunctionMap
+spectra_tree_nodes_functions_Nova_AccessorFunctionFunctionMap_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("spectra/tree/nodes/functions/AccessorFunction.AccessorFunctionFunctionMap")),
+0);
+
+// spectra/tree/nodes/functions/AccessorFunction.AccessorFunctionPropertyMap
+spectra_tree_nodes_functions_Nova_AccessorFunctionPropertyMap_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("spectra/tree/nodes/functions/AccessorFunction.AccessorFunctionPropertyMap")),
+0);
+
+// spectra/tree/nodes/functions/ArrayInstantiation
+spectra_tree_nodes_functions_Nova_ArrayInstantiation_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("spectra/tree/nodes/functions/ArrayInstantiation")),
+0);
+spectra_tree_nodes_functions_Nova_ArrayInstantiation_VTable_val.classInstance->nova_meta_Nova_Class_Nova_functionMap = (nova_meta_Nova_FunctionMap*)spectra_tree_nodes_functions_Nova_ArrayInstantiationFunctionMap_Nova_construct(0, exceptionData);
+spectra_tree_nodes_functions_Nova_ArrayInstantiation_VTable_val.classInstance->nova_meta_Nova_Class_Nova_propertyMap = (nova_meta_Nova_PropertyMap*)spectra_tree_nodes_functions_Nova_ArrayInstantiationPropertyMap_Nova_construct(0, exceptionData);
+
+// spectra/tree/nodes/functions/ArrayInstantiation.ArrayInstantiationFunctionMap
+spectra_tree_nodes_functions_Nova_ArrayInstantiationFunctionMap_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("spectra/tree/nodes/functions/ArrayInstantiation.ArrayInstantiationFunctionMap")),
+0);
+
+// spectra/tree/nodes/functions/ArrayInstantiation.ArrayInstantiationPropertyMap
+spectra_tree_nodes_functions_Nova_ArrayInstantiationPropertyMap_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("spectra/tree/nodes/functions/ArrayInstantiation.ArrayInstantiationPropertyMap")),
+0);
+
+// spectra/tree/nodes/functions/BodyFunction
+spectra_tree_nodes_functions_Nova_BodyFunction_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("spectra/tree/nodes/functions/BodyFunction")),
+0);
+spectra_tree_nodes_functions_Nova_BodyFunction_VTable_val.classInstance->nova_meta_Nova_Class_Nova_functionMap = (nova_meta_Nova_FunctionMap*)spectra_tree_nodes_functions_Nova_BodyFunctionFunctionMap_Nova_construct(0, exceptionData);
+spectra_tree_nodes_functions_Nova_BodyFunction_VTable_val.classInstance->nova_meta_Nova_Class_Nova_propertyMap = (nova_meta_Nova_PropertyMap*)spectra_tree_nodes_functions_Nova_BodyFunctionPropertyMap_Nova_construct(0, exceptionData);
+
+// spectra/tree/nodes/functions/BodyFunction.BodyFunctionFunctionMap
+spectra_tree_nodes_functions_Nova_BodyFunctionFunctionMap_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("spectra/tree/nodes/functions/BodyFunction.BodyFunctionFunctionMap")),
+0);
+
+// spectra/tree/nodes/functions/BodyFunction.BodyFunctionPropertyMap
+spectra_tree_nodes_functions_Nova_BodyFunctionPropertyMap_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("spectra/tree/nodes/functions/BodyFunction.BodyFunctionPropertyMap")),
+0);
+
+// spectra/tree/nodes/functions/CallableFunction
+spectra_tree_nodes_functions_Nova_CallableFunction_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("spectra/tree/nodes/functions/CallableFunction")),
+1);
+spectra_tree_nodes_functions_Nova_CallableFunction_VTable_val.classInstance->nova_meta_Nova_Class_Nova_functionMap = (nova_meta_Nova_FunctionMap*)spectra_tree_nodes_functions_Nova_CallableFunctionFunctionMap_Nova_construct(0, exceptionData);
+spectra_tree_nodes_functions_Nova_CallableFunction_VTable_val.classInstance->nova_meta_Nova_Class_Nova_propertyMap = (nova_meta_Nova_PropertyMap*)spectra_tree_nodes_functions_Nova_CallableFunctionPropertyMap_Nova_construct(0, exceptionData);
+
+// spectra/tree/nodes/functions/CallableFunction.CallableFunctionFunctionMap
+spectra_tree_nodes_functions_Nova_CallableFunctionFunctionMap_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("spectra/tree/nodes/functions/CallableFunction.CallableFunctionFunctionMap")),
+1);
+
+// spectra/tree/nodes/functions/CallableFunction.CallableFunctionPropertyMap
+spectra_tree_nodes_functions_Nova_CallableFunctionPropertyMap_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("spectra/tree/nodes/functions/CallableFunction.CallableFunctionPropertyMap")),
+1);
+
+// spectra/tree/nodes/functions/Constructor
+spectra_tree_nodes_functions_Nova_Constructor_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("spectra/tree/nodes/functions/Constructor")),
+0);
+spectra_tree_nodes_functions_Nova_Constructor_VTable_val.classInstance->nova_meta_Nova_Class_Nova_functionMap = (nova_meta_Nova_FunctionMap*)spectra_tree_nodes_functions_Nova_ConstructorFunctionMap_Nova_construct(0, exceptionData);
+spectra_tree_nodes_functions_Nova_Constructor_VTable_val.classInstance->nova_meta_Nova_Class_Nova_propertyMap = (nova_meta_Nova_PropertyMap*)spectra_tree_nodes_functions_Nova_ConstructorPropertyMap_Nova_construct(0, exceptionData);
+
+// spectra/tree/nodes/functions/Constructor.ConstructorFunctionMap
+spectra_tree_nodes_functions_Nova_ConstructorFunctionMap_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("spectra/tree/nodes/functions/Constructor.ConstructorFunctionMap")),
+0);
+
+// spectra/tree/nodes/functions/Constructor.ConstructorPropertyMap
+spectra_tree_nodes_functions_Nova_ConstructorPropertyMap_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("spectra/tree/nodes/functions/Constructor.ConstructorPropertyMap")),
+0);
+
+// spectra/tree/nodes/functions/EmptyArrayBracket
+spectra_tree_nodes_functions_Nova_EmptyArrayBracket_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("spectra/tree/nodes/functions/EmptyArrayBracket")),
+0);
+spectra_tree_nodes_functions_Nova_EmptyArrayBracket_VTable_val.classInstance->nova_meta_Nova_Class_Nova_functionMap = (nova_meta_Nova_FunctionMap*)spectra_tree_nodes_functions_Nova_EmptyArrayBracketFunctionMap_Nova_construct(0, exceptionData);
+spectra_tree_nodes_functions_Nova_EmptyArrayBracket_VTable_val.classInstance->nova_meta_Nova_Class_Nova_propertyMap = (nova_meta_Nova_PropertyMap*)spectra_tree_nodes_functions_Nova_EmptyArrayBracketPropertyMap_Nova_construct(0, exceptionData);
+
+// spectra/tree/nodes/functions/EmptyArrayBracket.EmptyArrayBracketFunctionMap
+spectra_tree_nodes_functions_Nova_EmptyArrayBracketFunctionMap_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("spectra/tree/nodes/functions/EmptyArrayBracket.EmptyArrayBracketFunctionMap")),
+0);
+
+// spectra/tree/nodes/functions/EmptyArrayBracket.EmptyArrayBracketPropertyMap
+spectra_tree_nodes_functions_Nova_EmptyArrayBracketPropertyMap_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("spectra/tree/nodes/functions/EmptyArrayBracket.EmptyArrayBracketPropertyMap")),
+0);
+
+// spectra/tree/nodes/functions/FunctionArgumentList
+spectra_tree_nodes_functions_Nova_FunctionArgumentList_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("spectra/tree/nodes/functions/FunctionArgumentList")),
+0);
+spectra_tree_nodes_functions_Nova_FunctionArgumentList_VTable_val.classInstance->nova_meta_Nova_Class_Nova_functionMap = (nova_meta_Nova_FunctionMap*)spectra_tree_nodes_functions_Nova_FunctionArgumentListFunctionMap_Nova_construct(0, exceptionData);
+spectra_tree_nodes_functions_Nova_FunctionArgumentList_VTable_val.classInstance->nova_meta_Nova_Class_Nova_propertyMap = (nova_meta_Nova_PropertyMap*)spectra_tree_nodes_functions_Nova_FunctionArgumentListPropertyMap_Nova_construct(0, exceptionData);
+
+// spectra/tree/nodes/functions/FunctionArgumentList.FunctionArgumentListFunctionMap
+spectra_tree_nodes_functions_Nova_FunctionArgumentListFunctionMap_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("spectra/tree/nodes/functions/FunctionArgumentList.FunctionArgumentListFunctionMap")),
+0);
+
+// spectra/tree/nodes/functions/FunctionArgumentList.FunctionArgumentListPropertyMap
+spectra_tree_nodes_functions_Nova_FunctionArgumentListPropertyMap_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("spectra/tree/nodes/functions/FunctionArgumentList.FunctionArgumentListPropertyMap")),
+0);
+
+// spectra/tree/nodes/functions/FunctionCall
+spectra_tree_nodes_functions_Nova_FunctionCall_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("spectra/tree/nodes/functions/FunctionCall")),
+0);
+spectra_tree_nodes_functions_Nova_FunctionCall_VTable_val.classInstance->nova_meta_Nova_Class_Nova_functionMap = (nova_meta_Nova_FunctionMap*)spectra_tree_nodes_functions_Nova_FunctionCallFunctionMap_Nova_construct(0, exceptionData);
+spectra_tree_nodes_functions_Nova_FunctionCall_VTable_val.classInstance->nova_meta_Nova_Class_Nova_propertyMap = (nova_meta_Nova_PropertyMap*)spectra_tree_nodes_functions_Nova_FunctionCallPropertyMap_Nova_construct(0, exceptionData);
+
+// spectra/tree/nodes/functions/FunctionCall.FunctionCallFunctionMap
+spectra_tree_nodes_functions_Nova_FunctionCallFunctionMap_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("spectra/tree/nodes/functions/FunctionCall.FunctionCallFunctionMap")),
+0);
+
+// spectra/tree/nodes/functions/FunctionCall.FunctionCallPropertyMap
+spectra_tree_nodes_functions_Nova_FunctionCallPropertyMap_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("spectra/tree/nodes/functions/FunctionCall.FunctionCallPropertyMap")),
+0);
+
+// spectra/tree/nodes/functions/FunctionDeclaration
+spectra_tree_nodes_functions_Nova_FunctionDeclaration_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("spectra/tree/nodes/functions/FunctionDeclaration")),
+0);
+spectra_tree_nodes_functions_Nova_FunctionDeclaration_VTable_val.classInstance->nova_meta_Nova_Class_Nova_functionMap = (nova_meta_Nova_FunctionMap*)spectra_tree_nodes_functions_Nova_FunctionDeclarationFunctionMap_Nova_construct(0, exceptionData);
+spectra_tree_nodes_functions_Nova_FunctionDeclaration_VTable_val.classInstance->nova_meta_Nova_Class_Nova_propertyMap = (nova_meta_Nova_PropertyMap*)spectra_tree_nodes_functions_Nova_FunctionDeclarationPropertyMap_Nova_construct(0, exceptionData);
+
+// spectra/tree/nodes/functions/FunctionDeclaration.FunctionDeclarationFunctionMap
+spectra_tree_nodes_functions_Nova_FunctionDeclarationFunctionMap_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("spectra/tree/nodes/functions/FunctionDeclaration.FunctionDeclarationFunctionMap")),
+0);
+
+// spectra/tree/nodes/functions/FunctionDeclaration.FunctionDeclarationPropertyMap
+spectra_tree_nodes_functions_Nova_FunctionDeclarationPropertyMap_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("spectra/tree/nodes/functions/FunctionDeclaration.FunctionDeclarationPropertyMap")),
+0);
+
+// spectra/tree/nodes/functions/InitializationFunction
+spectra_tree_nodes_functions_Nova_InitializationFunction_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("spectra/tree/nodes/functions/InitializationFunction")),
+0);
+spectra_tree_nodes_functions_Nova_InitializationFunction_VTable_val.classInstance->nova_meta_Nova_Class_Nova_functionMap = (nova_meta_Nova_FunctionMap*)spectra_tree_nodes_functions_Nova_InitializationFunctionFunctionMap_Nova_construct(0, exceptionData);
+spectra_tree_nodes_functions_Nova_InitializationFunction_VTable_val.classInstance->nova_meta_Nova_Class_Nova_propertyMap = (nova_meta_Nova_PropertyMap*)spectra_tree_nodes_functions_Nova_InitializationFunctionPropertyMap_Nova_construct(0, exceptionData);
+
+// spectra/tree/nodes/functions/InitializationFunction.InitializationFunctionFunctionMap
+spectra_tree_nodes_functions_Nova_InitializationFunctionFunctionMap_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("spectra/tree/nodes/functions/InitializationFunction.InitializationFunctionFunctionMap")),
+0);
+
+// spectra/tree/nodes/functions/InitializationFunction.InitializationFunctionPropertyMap
+spectra_tree_nodes_functions_Nova_InitializationFunctionPropertyMap_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("spectra/tree/nodes/functions/InitializationFunction.InitializationFunctionPropertyMap")),
+0);
+
+// spectra/tree/nodes/functions/Instantiation
+spectra_tree_nodes_functions_Nova_Instantiation_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("spectra/tree/nodes/functions/Instantiation")),
+0);
+spectra_tree_nodes_functions_Nova_Instantiation_VTable_val.classInstance->nova_meta_Nova_Class_Nova_functionMap = (nova_meta_Nova_FunctionMap*)spectra_tree_nodes_functions_Nova_InstantiationFunctionMap_Nova_construct(0, exceptionData);
+spectra_tree_nodes_functions_Nova_Instantiation_VTable_val.classInstance->nova_meta_Nova_Class_Nova_propertyMap = (nova_meta_Nova_PropertyMap*)spectra_tree_nodes_functions_Nova_InstantiationPropertyMap_Nova_construct(0, exceptionData);
+
+// spectra/tree/nodes/functions/Instantiation.InstantiationFunctionMap
+spectra_tree_nodes_functions_Nova_InstantiationFunctionMap_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("spectra/tree/nodes/functions/Instantiation.InstantiationFunctionMap")),
+0);
+
+// spectra/tree/nodes/functions/Instantiation.InstantiationPropertyMap
+spectra_tree_nodes_functions_Nova_InstantiationPropertyMap_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("spectra/tree/nodes/functions/Instantiation.InstantiationPropertyMap")),
+0);
+
+// spectra/tree/nodes/functions/MutatorFunction
+spectra_tree_nodes_functions_Nova_MutatorFunction_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("spectra/tree/nodes/functions/MutatorFunction")),
+0);
+spectra_tree_nodes_functions_Nova_MutatorFunction_VTable_val.classInstance->nova_meta_Nova_Class_Nova_functionMap = (nova_meta_Nova_FunctionMap*)spectra_tree_nodes_functions_Nova_MutatorFunctionFunctionMap_Nova_construct(0, exceptionData);
+spectra_tree_nodes_functions_Nova_MutatorFunction_VTable_val.classInstance->nova_meta_Nova_Class_Nova_propertyMap = (nova_meta_Nova_PropertyMap*)spectra_tree_nodes_functions_Nova_MutatorFunctionPropertyMap_Nova_construct(0, exceptionData);
+
+// spectra/tree/nodes/functions/MutatorFunction.MutatorFunctionFunctionMap
+spectra_tree_nodes_functions_Nova_MutatorFunctionFunctionMap_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("spectra/tree/nodes/functions/MutatorFunction.MutatorFunctionFunctionMap")),
+0);
+
+// spectra/tree/nodes/functions/MutatorFunction.MutatorFunctionPropertyMap
+spectra_tree_nodes_functions_Nova_MutatorFunctionPropertyMap_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("spectra/tree/nodes/functions/MutatorFunction.MutatorFunctionPropertyMap")),
+0);
+
+// spectra/tree/nodes/functions/ObjectNotation
+spectra_tree_nodes_functions_Nova_ObjectNotation_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("spectra/tree/nodes/functions/ObjectNotation")),
+0);
+spectra_tree_nodes_functions_Nova_ObjectNotation_VTable_val.classInstance->nova_meta_Nova_Class_Nova_functionMap = (nova_meta_Nova_FunctionMap*)spectra_tree_nodes_functions_Nova_ObjectNotationFunctionMap_Nova_construct(0, exceptionData);
+spectra_tree_nodes_functions_Nova_ObjectNotation_VTable_val.classInstance->nova_meta_Nova_Class_Nova_propertyMap = (nova_meta_Nova_PropertyMap*)spectra_tree_nodes_functions_Nova_ObjectNotationPropertyMap_Nova_construct(0, exceptionData);
+
+// spectra/tree/nodes/functions/ObjectNotation.ObjectNotationFunctionMap
+spectra_tree_nodes_functions_Nova_ObjectNotationFunctionMap_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("spectra/tree/nodes/functions/ObjectNotation.ObjectNotationFunctionMap")),
+0);
+
+// spectra/tree/nodes/functions/ObjectNotation.ObjectNotationPropertyMap
+spectra_tree_nodes_functions_Nova_ObjectNotationPropertyMap_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("spectra/tree/nodes/functions/ObjectNotation.ObjectNotationPropertyMap")),
+0);
+
+// spectra/tree/nodes/functions/ObjectNotationProperty
+spectra_tree_nodes_functions_Nova_ObjectNotationProperty_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("spectra/tree/nodes/functions/ObjectNotationProperty")),
+0);
+spectra_tree_nodes_functions_Nova_ObjectNotationProperty_VTable_val.classInstance->nova_meta_Nova_Class_Nova_functionMap = (nova_meta_Nova_FunctionMap*)spectra_tree_nodes_functions_Nova_ObjectNotationPropertyFunctionMap_Nova_construct(0, exceptionData);
+spectra_tree_nodes_functions_Nova_ObjectNotationProperty_VTable_val.classInstance->nova_meta_Nova_Class_Nova_propertyMap = (nova_meta_Nova_PropertyMap*)spectra_tree_nodes_functions_Nova_ObjectNotationPropertyPropertyMap_Nova_construct(0, exceptionData);
+
+// spectra/tree/nodes/functions/ObjectNotationProperty.ObjectNotationPropertyFunctionMap
+spectra_tree_nodes_functions_Nova_ObjectNotationPropertyFunctionMap_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("spectra/tree/nodes/functions/ObjectNotationProperty.ObjectNotationPropertyFunctionMap")),
+0);
+
+// spectra/tree/nodes/functions/ObjectNotationProperty.ObjectNotationPropertyPropertyMap
+spectra_tree_nodes_functions_Nova_ObjectNotationPropertyPropertyMap_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("spectra/tree/nodes/functions/ObjectNotationProperty.ObjectNotationPropertyPropertyMap")),
+0);
+
+// spectra/tree/nodes/functions/Parameter
+spectra_tree_nodes_functions_Nova_Parameter_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("spectra/tree/nodes/functions/Parameter")),
+0);
+spectra_tree_nodes_functions_Nova_Parameter_VTable_val.classInstance->nova_meta_Nova_Class_Nova_functionMap = (nova_meta_Nova_FunctionMap*)spectra_tree_nodes_functions_Nova_ParameterFunctionMap_Nova_construct(0, exceptionData);
+spectra_tree_nodes_functions_Nova_Parameter_VTable_val.classInstance->nova_meta_Nova_Class_Nova_propertyMap = (nova_meta_Nova_PropertyMap*)spectra_tree_nodes_functions_Nova_ParameterPropertyMap_Nova_construct(0, exceptionData);
+
+// spectra/tree/nodes/functions/Parameter.ParameterFunctionMap
+spectra_tree_nodes_functions_Nova_ParameterFunctionMap_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("spectra/tree/nodes/functions/Parameter.ParameterFunctionMap")),
+0);
+
+// spectra/tree/nodes/functions/Parameter.ParameterPropertyMap
+spectra_tree_nodes_functions_Nova_ParameterPropertyMap_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("spectra/tree/nodes/functions/Parameter.ParameterPropertyMap")),
+0);
+
+// spectra/tree/nodes/functions/ParameterList
+spectra_tree_nodes_functions_Nova_ParameterList_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("spectra/tree/nodes/functions/ParameterList")),
+0);
+spectra_tree_nodes_functions_Nova_ParameterList_VTable_val.classInstance->nova_meta_Nova_Class_Nova_functionMap = (nova_meta_Nova_FunctionMap*)spectra_tree_nodes_functions_Nova_ParameterListFunctionMap_Nova_construct(0, exceptionData);
+spectra_tree_nodes_functions_Nova_ParameterList_VTable_val.classInstance->nova_meta_Nova_Class_Nova_propertyMap = (nova_meta_Nova_PropertyMap*)spectra_tree_nodes_functions_Nova_ParameterListPropertyMap_Nova_construct(0, exceptionData);
+
+// spectra/tree/nodes/functions/ParameterList.ParameterListFunctionMap
+spectra_tree_nodes_functions_Nova_ParameterListFunctionMap_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("spectra/tree/nodes/functions/ParameterList.ParameterListFunctionMap")),
+0);
+
+// spectra/tree/nodes/functions/ParameterList.ParameterListPropertyMap
+spectra_tree_nodes_functions_Nova_ParameterListPropertyMap_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("spectra/tree/nodes/functions/ParameterList.ParameterListPropertyMap")),
+0);
+
+// spectra/tree/nodes/functions/PropertyFunction
+spectra_tree_nodes_functions_Nova_PropertyFunction_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("spectra/tree/nodes/functions/PropertyFunction")),
+0);
+spectra_tree_nodes_functions_Nova_PropertyFunction_VTable_val.classInstance->nova_meta_Nova_Class_Nova_functionMap = (nova_meta_Nova_FunctionMap*)spectra_tree_nodes_functions_Nova_PropertyFunctionFunctionMap_Nova_construct(0, exceptionData);
+spectra_tree_nodes_functions_Nova_PropertyFunction_VTable_val.classInstance->nova_meta_Nova_Class_Nova_propertyMap = (nova_meta_Nova_PropertyMap*)spectra_tree_nodes_functions_Nova_PropertyFunctionPropertyMap_Nova_construct(0, exceptionData);
+
+// spectra/tree/nodes/functions/PropertyFunction.PropertyFunctionFunctionMap
+spectra_tree_nodes_functions_Nova_PropertyFunctionFunctionMap_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("spectra/tree/nodes/functions/PropertyFunction.PropertyFunctionFunctionMap")),
+0);
+
+// spectra/tree/nodes/functions/PropertyFunction.PropertyFunctionPropertyMap
+spectra_tree_nodes_functions_Nova_PropertyFunctionPropertyMap_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("spectra/tree/nodes/functions/PropertyFunction.PropertyFunctionPropertyMap")),
+0);
+
+// spectra/tree/nodes/functions/closures/ClosureContext
+spectra_tree_nodes_functions_closures_Nova_ClosureContext_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("spectra/tree/nodes/functions/closures/ClosureContext")),
+0);
+spectra_tree_nodes_functions_closures_Nova_ClosureContext_VTable_val.classInstance->nova_meta_Nova_Class_Nova_functionMap = (nova_meta_Nova_FunctionMap*)spectra_tree_nodes_functions_closures_Nova_ClosureContextFunctionMap_Nova_construct(0, exceptionData);
+spectra_tree_nodes_functions_closures_Nova_ClosureContext_VTable_val.classInstance->nova_meta_Nova_Class_Nova_propertyMap = (nova_meta_Nova_PropertyMap*)spectra_tree_nodes_functions_closures_Nova_ClosureContextPropertyMap_Nova_construct(0, exceptionData);
+
+// spectra/tree/nodes/functions/closures/ClosureContext.ClosureContextFunctionMap
+spectra_tree_nodes_functions_closures_Nova_ClosureContextFunctionMap_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("spectra/tree/nodes/functions/closures/ClosureContext.ClosureContextFunctionMap")),
+0);
+
+// spectra/tree/nodes/functions/closures/ClosureContext.ClosureContextPropertyMap
+spectra_tree_nodes_functions_closures_Nova_ClosureContextPropertyMap_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("spectra/tree/nodes/functions/closures/ClosureContext.ClosureContextPropertyMap")),
+0);
+
+// spectra/tree/nodes/functions/closures/ClosureDeclaration
+spectra_tree_nodes_functions_closures_Nova_ClosureDeclaration_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("spectra/tree/nodes/functions/closures/ClosureDeclaration")),
+0);
+spectra_tree_nodes_functions_closures_Nova_ClosureDeclaration_VTable_val.classInstance->nova_meta_Nova_Class_Nova_functionMap = (nova_meta_Nova_FunctionMap*)spectra_tree_nodes_functions_closures_Nova_ClosureDeclarationFunctionMap_Nova_construct(0, exceptionData);
+spectra_tree_nodes_functions_closures_Nova_ClosureDeclaration_VTable_val.classInstance->nova_meta_Nova_Class_Nova_propertyMap = (nova_meta_Nova_PropertyMap*)spectra_tree_nodes_functions_closures_Nova_ClosureDeclarationPropertyMap_Nova_construct(0, exceptionData);
+
+// spectra/tree/nodes/functions/closures/ClosureDeclaration.ClosureDeclarationFunctionMap
+spectra_tree_nodes_functions_closures_Nova_ClosureDeclarationFunctionMap_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("spectra/tree/nodes/functions/closures/ClosureDeclaration.ClosureDeclarationFunctionMap")),
+0);
+
+// spectra/tree/nodes/functions/closures/ClosureDeclaration.ClosureDeclarationPropertyMap
+spectra_tree_nodes_functions_closures_Nova_ClosureDeclarationPropertyMap_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("spectra/tree/nodes/functions/closures/ClosureDeclaration.ClosureDeclarationPropertyMap")),
+0);
+
+// spectra/tree/nodes/functions/closures/ClosureParameter
+spectra_tree_nodes_functions_closures_Nova_ClosureParameter_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("spectra/tree/nodes/functions/closures/ClosureParameter")),
+0);
+spectra_tree_nodes_functions_closures_Nova_ClosureParameter_VTable_val.classInstance->nova_meta_Nova_Class_Nova_functionMap = (nova_meta_Nova_FunctionMap*)spectra_tree_nodes_functions_closures_Nova_ClosureParameterFunctionMap_Nova_construct(0, exceptionData);
+spectra_tree_nodes_functions_closures_Nova_ClosureParameter_VTable_val.classInstance->nova_meta_Nova_Class_Nova_propertyMap = (nova_meta_Nova_PropertyMap*)spectra_tree_nodes_functions_closures_Nova_ClosureParameterPropertyMap_Nova_construct(0, exceptionData);
+
+// spectra/tree/nodes/functions/closures/ClosureParameter.ClosureParameterFunctionMap
+spectra_tree_nodes_functions_closures_Nova_ClosureParameterFunctionMap_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("spectra/tree/nodes/functions/closures/ClosureParameter.ClosureParameterFunctionMap")),
+0);
+
+// spectra/tree/nodes/functions/closures/ClosureParameter.ClosureParameterPropertyMap
+spectra_tree_nodes_functions_closures_Nova_ClosureParameterPropertyMap_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("spectra/tree/nodes/functions/closures/ClosureParameter.ClosureParameterPropertyMap")),
+0);
+
+// spectra/tree/nodes/functions/closures/LambdaExpression
+spectra_tree_nodes_functions_closures_Nova_LambdaExpression_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("spectra/tree/nodes/functions/closures/LambdaExpression")),
+0);
+spectra_tree_nodes_functions_closures_Nova_LambdaExpression_VTable_val.classInstance->nova_meta_Nova_Class_Nova_functionMap = (nova_meta_Nova_FunctionMap*)spectra_tree_nodes_functions_closures_Nova_LambdaExpressionFunctionMap_Nova_construct(0, exceptionData);
+spectra_tree_nodes_functions_closures_Nova_LambdaExpression_VTable_val.classInstance->nova_meta_Nova_Class_Nova_propertyMap = (nova_meta_Nova_PropertyMap*)spectra_tree_nodes_functions_closures_Nova_LambdaExpressionPropertyMap_Nova_construct(0, exceptionData);
+
+// spectra/tree/nodes/functions/closures/LambdaExpression.LambdaExpressionFunctionMap
+spectra_tree_nodes_functions_closures_Nova_LambdaExpressionFunctionMap_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("spectra/tree/nodes/functions/closures/LambdaExpression.LambdaExpressionFunctionMap")),
+0);
+
+// spectra/tree/nodes/functions/closures/LambdaExpression.LambdaExpressionPropertyMap
+spectra_tree_nodes_functions_closures_Nova_LambdaExpressionPropertyMap_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("spectra/tree/nodes/functions/closures/LambdaExpression.LambdaExpressionPropertyMap")),
+0);
+
+// spectra/tree/nodes/functions/closures/LambdaParameter
+spectra_tree_nodes_functions_closures_Nova_LambdaParameter_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("spectra/tree/nodes/functions/closures/LambdaParameter")),
+0);
+spectra_tree_nodes_functions_closures_Nova_LambdaParameter_VTable_val.classInstance->nova_meta_Nova_Class_Nova_functionMap = (nova_meta_Nova_FunctionMap*)spectra_tree_nodes_functions_closures_Nova_LambdaParameterFunctionMap_Nova_construct(0, exceptionData);
+spectra_tree_nodes_functions_closures_Nova_LambdaParameter_VTable_val.classInstance->nova_meta_Nova_Class_Nova_propertyMap = (nova_meta_Nova_PropertyMap*)spectra_tree_nodes_functions_closures_Nova_LambdaParameterPropertyMap_Nova_construct(0, exceptionData);
+
+// spectra/tree/nodes/functions/closures/LambdaParameter.LambdaParameterFunctionMap
+spectra_tree_nodes_functions_closures_Nova_LambdaParameterFunctionMap_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("spectra/tree/nodes/functions/closures/LambdaParameter.LambdaParameterFunctionMap")),
+0);
+
+// spectra/tree/nodes/functions/closures/LambdaParameter.LambdaParameterPropertyMap
+spectra_tree_nodes_functions_closures_Nova_LambdaParameterPropertyMap_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("spectra/tree/nodes/functions/closures/LambdaParameter.LambdaParameterPropertyMap")),
+0);
+
+// spectra/tree/nodes/generics/GenericArgument
+spectra_tree_nodes_generics_Nova_GenericArgument_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("spectra/tree/nodes/generics/GenericArgument")),
+0);
+spectra_tree_nodes_generics_Nova_GenericArgument_VTable_val.classInstance->nova_meta_Nova_Class_Nova_functionMap = (nova_meta_Nova_FunctionMap*)spectra_tree_nodes_generics_Nova_GenericArgumentFunctionMap_Nova_construct(0, exceptionData);
+spectra_tree_nodes_generics_Nova_GenericArgument_VTable_val.classInstance->nova_meta_Nova_Class_Nova_propertyMap = (nova_meta_Nova_PropertyMap*)spectra_tree_nodes_generics_Nova_GenericArgumentPropertyMap_Nova_construct(0, exceptionData);
+
+// spectra/tree/nodes/generics/GenericArgument.GenericArgumentFunctionMap
+spectra_tree_nodes_generics_Nova_GenericArgumentFunctionMap_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("spectra/tree/nodes/generics/GenericArgument.GenericArgumentFunctionMap")),
+0);
+
+// spectra/tree/nodes/generics/GenericArgument.GenericArgumentPropertyMap
+spectra_tree_nodes_generics_Nova_GenericArgumentPropertyMap_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("spectra/tree/nodes/generics/GenericArgument.GenericArgumentPropertyMap")),
+0);
+
+// spectra/tree/nodes/generics/GenericCompatible
+spectra_tree_nodes_generics_Nova_GenericCompatible_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("spectra/tree/nodes/generics/GenericCompatible")),
+1);
+spectra_tree_nodes_generics_Nova_GenericCompatible_VTable_val.classInstance->nova_meta_Nova_Class_Nova_functionMap = (nova_meta_Nova_FunctionMap*)spectra_tree_nodes_generics_Nova_GenericCompatibleFunctionMap_Nova_construct(0, exceptionData);
+spectra_tree_nodes_generics_Nova_GenericCompatible_VTable_val.classInstance->nova_meta_Nova_Class_Nova_propertyMap = (nova_meta_Nova_PropertyMap*)spectra_tree_nodes_generics_Nova_GenericCompatiblePropertyMap_Nova_construct(0, exceptionData);
+
+// spectra/tree/nodes/generics/GenericCompatible.GenericCompatibleFunctionMap
+spectra_tree_nodes_generics_Nova_GenericCompatibleFunctionMap_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("spectra/tree/nodes/generics/GenericCompatible.GenericCompatibleFunctionMap")),
+1);
+
+// spectra/tree/nodes/generics/GenericCompatible.GenericCompatiblePropertyMap
+spectra_tree_nodes_generics_Nova_GenericCompatiblePropertyMap_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("spectra/tree/nodes/generics/GenericCompatible.GenericCompatiblePropertyMap")),
+1);
+
+// spectra/tree/nodes/generics/GenericParameter
+spectra_tree_nodes_generics_Nova_GenericParameter_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("spectra/tree/nodes/generics/GenericParameter")),
+0);
+spectra_tree_nodes_generics_Nova_GenericParameter_VTable_val.classInstance->nova_meta_Nova_Class_Nova_functionMap = (nova_meta_Nova_FunctionMap*)spectra_tree_nodes_generics_Nova_GenericParameterFunctionMap_Nova_construct(0, exceptionData);
+spectra_tree_nodes_generics_Nova_GenericParameter_VTable_val.classInstance->nova_meta_Nova_Class_Nova_propertyMap = (nova_meta_Nova_PropertyMap*)spectra_tree_nodes_generics_Nova_GenericParameterPropertyMap_Nova_construct(0, exceptionData);
+
+// spectra/tree/nodes/generics/GenericParameter.GenericParameterFunctionMap
+spectra_tree_nodes_generics_Nova_GenericParameterFunctionMap_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("spectra/tree/nodes/generics/GenericParameter.GenericParameterFunctionMap")),
+0);
+
+// spectra/tree/nodes/generics/GenericParameter.GenericParameterPropertyMap
+spectra_tree_nodes_generics_Nova_GenericParameterPropertyMap_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("spectra/tree/nodes/generics/GenericParameter.GenericParameterPropertyMap")),
+0);
+
+// spectra/tree/nodes/generics/GenericType
+spectra_tree_nodes_generics_Nova_GenericType_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("spectra/tree/nodes/generics/GenericType")),
+0);
+spectra_tree_nodes_generics_Nova_GenericType_VTable_val.classInstance->nova_meta_Nova_Class_Nova_functionMap = (nova_meta_Nova_FunctionMap*)spectra_tree_nodes_generics_Nova_GenericTypeFunctionMap_Nova_construct(0, exceptionData);
+spectra_tree_nodes_generics_Nova_GenericType_VTable_val.classInstance->nova_meta_Nova_Class_Nova_propertyMap = (nova_meta_Nova_PropertyMap*)spectra_tree_nodes_generics_Nova_GenericTypePropertyMap_Nova_construct(0, exceptionData);
+
+// spectra/tree/nodes/generics/GenericType.GenericTypeFunctionMap
+spectra_tree_nodes_generics_Nova_GenericTypeFunctionMap_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("spectra/tree/nodes/generics/GenericType.GenericTypeFunctionMap")),
+0);
+
+// spectra/tree/nodes/generics/GenericType.GenericTypePropertyMap
+spectra_tree_nodes_generics_Nova_GenericTypePropertyMap_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("spectra/tree/nodes/generics/GenericType.GenericTypePropertyMap")),
+0);
+
+// spectra/tree/nodes/operations/Assignable
+spectra_tree_nodes_operations_Nova_Assignable_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("spectra/tree/nodes/operations/Assignable")),
+1);
+spectra_tree_nodes_operations_Nova_Assignable_VTable_val.classInstance->nova_meta_Nova_Class_Nova_functionMap = (nova_meta_Nova_FunctionMap*)spectra_tree_nodes_operations_Nova_AssignableFunctionMap_Nova_construct(0, exceptionData);
+spectra_tree_nodes_operations_Nova_Assignable_VTable_val.classInstance->nova_meta_Nova_Class_Nova_propertyMap = (nova_meta_Nova_PropertyMap*)spectra_tree_nodes_operations_Nova_AssignablePropertyMap_Nova_construct(0, exceptionData);
+
+// spectra/tree/nodes/operations/Assignable.AssignableFunctionMap
+spectra_tree_nodes_operations_Nova_AssignableFunctionMap_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("spectra/tree/nodes/operations/Assignable.AssignableFunctionMap")),
+1);
+
+// spectra/tree/nodes/operations/Assignable.AssignablePropertyMap
+spectra_tree_nodes_operations_Nova_AssignablePropertyMap_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("spectra/tree/nodes/operations/Assignable.AssignablePropertyMap")),
+1);
+
+// spectra/tree/nodes/operations/Assignment
+spectra_tree_nodes_operations_Nova_Assignment_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("spectra/tree/nodes/operations/Assignment")),
+0);
+spectra_tree_nodes_operations_Nova_Assignment_VTable_val.classInstance->nova_meta_Nova_Class_Nova_functionMap = (nova_meta_Nova_FunctionMap*)spectra_tree_nodes_operations_Nova_AssignmentFunctionMap_Nova_construct(0, exceptionData);
+spectra_tree_nodes_operations_Nova_Assignment_VTable_val.classInstance->nova_meta_Nova_Class_Nova_propertyMap = (nova_meta_Nova_PropertyMap*)spectra_tree_nodes_operations_Nova_AssignmentPropertyMap_Nova_construct(0, exceptionData);
+
+// spectra/tree/nodes/operations/Assignment.AssignmentFunctionMap
+spectra_tree_nodes_operations_Nova_AssignmentFunctionMap_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("spectra/tree/nodes/operations/Assignment.AssignmentFunctionMap")),
+0);
+
+// spectra/tree/nodes/operations/Assignment.AssignmentPropertyMap
+spectra_tree_nodes_operations_Nova_AssignmentPropertyMap_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("spectra/tree/nodes/operations/Assignment.AssignmentPropertyMap")),
+0);
+
+// spectra/tree/nodes/operations/ElvisOperation
+spectra_tree_nodes_operations_Nova_ElvisOperation_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("spectra/tree/nodes/operations/ElvisOperation")),
+0);
+spectra_tree_nodes_operations_Nova_ElvisOperation_VTable_val.classInstance->nova_meta_Nova_Class_Nova_functionMap = (nova_meta_Nova_FunctionMap*)spectra_tree_nodes_operations_Nova_ElvisOperationFunctionMap_Nova_construct(0, exceptionData);
+spectra_tree_nodes_operations_Nova_ElvisOperation_VTable_val.classInstance->nova_meta_Nova_Class_Nova_propertyMap = (nova_meta_Nova_PropertyMap*)spectra_tree_nodes_operations_Nova_ElvisOperationPropertyMap_Nova_construct(0, exceptionData);
+
+// spectra/tree/nodes/operations/ElvisOperation.ElvisOperationFunctionMap
+spectra_tree_nodes_operations_Nova_ElvisOperationFunctionMap_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("spectra/tree/nodes/operations/ElvisOperation.ElvisOperationFunctionMap")),
+0);
+
+// spectra/tree/nodes/operations/ElvisOperation.ElvisOperationPropertyMap
+spectra_tree_nodes_operations_Nova_ElvisOperationPropertyMap_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("spectra/tree/nodes/operations/ElvisOperation.ElvisOperationPropertyMap")),
+0);
+
+// spectra/tree/nodes/operations/Operation
+spectra_tree_nodes_operations_Nova_Operation_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("spectra/tree/nodes/operations/Operation")),
+0);
+spectra_tree_nodes_operations_Nova_Operation_VTable_val.classInstance->nova_meta_Nova_Class_Nova_functionMap = (nova_meta_Nova_FunctionMap*)spectra_tree_nodes_operations_Nova_OperationFunctionMap_Nova_construct(0, exceptionData);
+spectra_tree_nodes_operations_Nova_Operation_VTable_val.classInstance->nova_meta_Nova_Class_Nova_propertyMap = (nova_meta_Nova_PropertyMap*)spectra_tree_nodes_operations_Nova_OperationPropertyMap_Nova_construct(0, exceptionData);
+
+// spectra/tree/nodes/operations/Operation.OperationFunctionMap
+spectra_tree_nodes_operations_Nova_OperationFunctionMap_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("spectra/tree/nodes/operations/Operation.OperationFunctionMap")),
+0);
+
+// spectra/tree/nodes/operations/Operation.OperationPropertyMap
+spectra_tree_nodes_operations_Nova_OperationPropertyMap_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("spectra/tree/nodes/operations/Operation.OperationPropertyMap")),
+0);
+
+// spectra/tree/nodes/operations/Operator
+spectra_tree_nodes_operations_Nova_Operator_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("spectra/tree/nodes/operations/Operator")),
+0);
+spectra_tree_nodes_operations_Nova_Operator_VTable_val.classInstance->nova_meta_Nova_Class_Nova_functionMap = (nova_meta_Nova_FunctionMap*)spectra_tree_nodes_operations_Nova_OperatorFunctionMap_Nova_construct(0, exceptionData);
+spectra_tree_nodes_operations_Nova_Operator_VTable_val.classInstance->nova_meta_Nova_Class_Nova_propertyMap = (nova_meta_Nova_PropertyMap*)spectra_tree_nodes_operations_Nova_OperatorPropertyMap_Nova_construct(0, exceptionData);
+
+// spectra/tree/nodes/operations/Operator.OperatorFunctionMap
+spectra_tree_nodes_operations_Nova_OperatorFunctionMap_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("spectra/tree/nodes/operations/Operator.OperatorFunctionMap")),
+0);
+
+// spectra/tree/nodes/operations/Operator.OperatorPropertyMap
+spectra_tree_nodes_operations_Nova_OperatorPropertyMap_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("spectra/tree/nodes/operations/Operator.OperatorPropertyMap")),
+0);
+
+// spectra/tree/nodes/operations/TernaryOperation
+spectra_tree_nodes_operations_Nova_TernaryOperation_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("spectra/tree/nodes/operations/TernaryOperation")),
+0);
+spectra_tree_nodes_operations_Nova_TernaryOperation_VTable_val.classInstance->nova_meta_Nova_Class_Nova_functionMap = (nova_meta_Nova_FunctionMap*)spectra_tree_nodes_operations_Nova_TernaryOperationFunctionMap_Nova_construct(0, exceptionData);
+spectra_tree_nodes_operations_Nova_TernaryOperation_VTable_val.classInstance->nova_meta_Nova_Class_Nova_propertyMap = (nova_meta_Nova_PropertyMap*)spectra_tree_nodes_operations_Nova_TernaryOperationPropertyMap_Nova_construct(0, exceptionData);
+
+// spectra/tree/nodes/operations/TernaryOperation.TernaryOperationFunctionMap
+spectra_tree_nodes_operations_Nova_TernaryOperationFunctionMap_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("spectra/tree/nodes/operations/TernaryOperation.TernaryOperationFunctionMap")),
+0);
+
+// spectra/tree/nodes/operations/TernaryOperation.TernaryOperationPropertyMap
+spectra_tree_nodes_operations_Nova_TernaryOperationPropertyMap_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("spectra/tree/nodes/operations/TernaryOperation.TernaryOperationPropertyMap")),
+0);
+
+// spectra/tree/nodes/operations/UnaryOperation
+spectra_tree_nodes_operations_Nova_UnaryOperation_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("spectra/tree/nodes/operations/UnaryOperation")),
+0);
+spectra_tree_nodes_operations_Nova_UnaryOperation_VTable_val.classInstance->nova_meta_Nova_Class_Nova_functionMap = (nova_meta_Nova_FunctionMap*)spectra_tree_nodes_operations_Nova_UnaryOperationFunctionMap_Nova_construct(0, exceptionData);
+spectra_tree_nodes_operations_Nova_UnaryOperation_VTable_val.classInstance->nova_meta_Nova_Class_Nova_propertyMap = (nova_meta_Nova_PropertyMap*)spectra_tree_nodes_operations_Nova_UnaryOperationPropertyMap_Nova_construct(0, exceptionData);
+
+// spectra/tree/nodes/operations/UnaryOperation.UnaryOperationFunctionMap
+spectra_tree_nodes_operations_Nova_UnaryOperationFunctionMap_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("spectra/tree/nodes/operations/UnaryOperation.UnaryOperationFunctionMap")),
+0);
+
+// spectra/tree/nodes/operations/UnaryOperation.UnaryOperationPropertyMap
+spectra_tree_nodes_operations_Nova_UnaryOperationPropertyMap_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("spectra/tree/nodes/operations/UnaryOperation.UnaryOperationPropertyMap")),
+0);
+
+// spectra/tree/nodes/variables/ArrayBracketOverload
+spectra_tree_nodes_variables_Nova_ArrayBracketOverload_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("spectra/tree/nodes/variables/ArrayBracketOverload")),
+0);
+spectra_tree_nodes_variables_Nova_ArrayBracketOverload_VTable_val.classInstance->nova_meta_Nova_Class_Nova_functionMap = (nova_meta_Nova_FunctionMap*)spectra_tree_nodes_variables_Nova_ArrayBracketOverloadFunctionMap_Nova_construct(0, exceptionData);
+spectra_tree_nodes_variables_Nova_ArrayBracketOverload_VTable_val.classInstance->nova_meta_Nova_Class_Nova_propertyMap = (nova_meta_Nova_PropertyMap*)spectra_tree_nodes_variables_Nova_ArrayBracketOverloadPropertyMap_Nova_construct(0, exceptionData);
+
+// spectra/tree/nodes/variables/ArrayBracketOverload.ArrayBracketOverloadFunctionMap
+spectra_tree_nodes_variables_Nova_ArrayBracketOverloadFunctionMap_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("spectra/tree/nodes/variables/ArrayBracketOverload.ArrayBracketOverloadFunctionMap")),
+0);
+
+// spectra/tree/nodes/variables/ArrayBracketOverload.ArrayBracketOverloadPropertyMap
+spectra_tree_nodes_variables_Nova_ArrayBracketOverloadPropertyMap_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("spectra/tree/nodes/variables/ArrayBracketOverload.ArrayBracketOverloadPropertyMap")),
+0);
+
+// spectra/tree/nodes/variables/FieldDeclaration
+spectra_tree_nodes_variables_Nova_FieldDeclaration_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("spectra/tree/nodes/variables/FieldDeclaration")),
+0);
+spectra_tree_nodes_variables_Nova_FieldDeclaration_VTable_val.classInstance->nova_meta_Nova_Class_Nova_functionMap = (nova_meta_Nova_FunctionMap*)spectra_tree_nodes_variables_Nova_FieldDeclarationFunctionMap_Nova_construct(0, exceptionData);
+spectra_tree_nodes_variables_Nova_FieldDeclaration_VTable_val.classInstance->nova_meta_Nova_Class_Nova_propertyMap = (nova_meta_Nova_PropertyMap*)spectra_tree_nodes_variables_Nova_FieldDeclarationPropertyMap_Nova_construct(0, exceptionData);
+
+// spectra/tree/nodes/variables/FieldDeclaration.FieldDeclarationFunctionMap
+spectra_tree_nodes_variables_Nova_FieldDeclarationFunctionMap_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("spectra/tree/nodes/variables/FieldDeclaration.FieldDeclarationFunctionMap")),
+0);
+
+// spectra/tree/nodes/variables/FieldDeclaration.FieldDeclarationPropertyMap
+spectra_tree_nodes_variables_Nova_FieldDeclarationPropertyMap_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("spectra/tree/nodes/variables/FieldDeclaration.FieldDeclarationPropertyMap")),
+0);
+
+// spectra/tree/nodes/variables/ImplicitDeclaration
+spectra_tree_nodes_variables_Nova_ImplicitDeclaration_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("spectra/tree/nodes/variables/ImplicitDeclaration")),
+0);
+spectra_tree_nodes_variables_Nova_ImplicitDeclaration_VTable_val.classInstance->nova_meta_Nova_Class_Nova_functionMap = (nova_meta_Nova_FunctionMap*)spectra_tree_nodes_variables_Nova_ImplicitDeclarationFunctionMap_Nova_construct(0, exceptionData);
+spectra_tree_nodes_variables_Nova_ImplicitDeclaration_VTable_val.classInstance->nova_meta_Nova_Class_Nova_propertyMap = (nova_meta_Nova_PropertyMap*)spectra_tree_nodes_variables_Nova_ImplicitDeclarationPropertyMap_Nova_construct(0, exceptionData);
+
+// spectra/tree/nodes/variables/ImplicitDeclaration.ImplicitDeclarationFunctionMap
+spectra_tree_nodes_variables_Nova_ImplicitDeclarationFunctionMap_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("spectra/tree/nodes/variables/ImplicitDeclaration.ImplicitDeclarationFunctionMap")),
+0);
+
+// spectra/tree/nodes/variables/ImplicitDeclaration.ImplicitDeclarationPropertyMap
+spectra_tree_nodes_variables_Nova_ImplicitDeclarationPropertyMap_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("spectra/tree/nodes/variables/ImplicitDeclaration.ImplicitDeclarationPropertyMap")),
+0);
+
+// spectra/tree/nodes/variables/InstanceDeclaration
+spectra_tree_nodes_variables_Nova_InstanceDeclaration_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("spectra/tree/nodes/variables/InstanceDeclaration")),
+0);
+spectra_tree_nodes_variables_Nova_InstanceDeclaration_VTable_val.classInstance->nova_meta_Nova_Class_Nova_functionMap = (nova_meta_Nova_FunctionMap*)spectra_tree_nodes_variables_Nova_InstanceDeclarationFunctionMap_Nova_construct(0, exceptionData);
+spectra_tree_nodes_variables_Nova_InstanceDeclaration_VTable_val.classInstance->nova_meta_Nova_Class_Nova_propertyMap = (nova_meta_Nova_PropertyMap*)spectra_tree_nodes_variables_Nova_InstanceDeclarationPropertyMap_Nova_construct(0, exceptionData);
+
+// spectra/tree/nodes/variables/InstanceDeclaration.InstanceDeclarationFunctionMap
+spectra_tree_nodes_variables_Nova_InstanceDeclarationFunctionMap_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("spectra/tree/nodes/variables/InstanceDeclaration.InstanceDeclarationFunctionMap")),
+0);
+
+// spectra/tree/nodes/variables/InstanceDeclaration.InstanceDeclarationPropertyMap
+spectra_tree_nodes_variables_Nova_InstanceDeclarationPropertyMap_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("spectra/tree/nodes/variables/InstanceDeclaration.InstanceDeclarationPropertyMap")),
+0);
+
+// spectra/tree/nodes/variables/LocalDeclaration
+spectra_tree_nodes_variables_Nova_LocalDeclaration_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("spectra/tree/nodes/variables/LocalDeclaration")),
+0);
+spectra_tree_nodes_variables_Nova_LocalDeclaration_VTable_val.classInstance->nova_meta_Nova_Class_Nova_functionMap = (nova_meta_Nova_FunctionMap*)spectra_tree_nodes_variables_Nova_LocalDeclarationFunctionMap_Nova_construct(0, exceptionData);
+spectra_tree_nodes_variables_Nova_LocalDeclaration_VTable_val.classInstance->nova_meta_Nova_Class_Nova_propertyMap = (nova_meta_Nova_PropertyMap*)spectra_tree_nodes_variables_Nova_LocalDeclarationPropertyMap_Nova_construct(0, exceptionData);
+
+// spectra/tree/nodes/variables/LocalDeclaration.LocalDeclarationFunctionMap
+spectra_tree_nodes_variables_Nova_LocalDeclarationFunctionMap_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("spectra/tree/nodes/variables/LocalDeclaration.LocalDeclarationFunctionMap")),
+0);
+
+// spectra/tree/nodes/variables/LocalDeclaration.LocalDeclarationPropertyMap
+spectra_tree_nodes_variables_Nova_LocalDeclarationPropertyMap_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("spectra/tree/nodes/variables/LocalDeclaration.LocalDeclarationPropertyMap")),
+0);
+
+// spectra/tree/nodes/variables/Variable
+spectra_tree_nodes_variables_Nova_Variable_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("spectra/tree/nodes/variables/Variable")),
+0);
+spectra_tree_nodes_variables_Nova_Variable_VTable_val.classInstance->nova_meta_Nova_Class_Nova_functionMap = (nova_meta_Nova_FunctionMap*)spectra_tree_nodes_variables_Nova_VariableFunctionMap_Nova_construct(0, exceptionData);
+spectra_tree_nodes_variables_Nova_Variable_VTable_val.classInstance->nova_meta_Nova_Class_Nova_propertyMap = (nova_meta_Nova_PropertyMap*)spectra_tree_nodes_variables_Nova_VariablePropertyMap_Nova_construct(0, exceptionData);
+
+// spectra/tree/nodes/variables/Variable.VariableFunctionMap
+spectra_tree_nodes_variables_Nova_VariableFunctionMap_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("spectra/tree/nodes/variables/Variable.VariableFunctionMap")),
+0);
+
+// spectra/tree/nodes/variables/Variable.VariablePropertyMap
+spectra_tree_nodes_variables_Nova_VariablePropertyMap_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("spectra/tree/nodes/variables/Variable.VariablePropertyMap")),
+0);
+
+// spectra/tree/nodes/variables/VariableDeclaration
+spectra_tree_nodes_variables_Nova_VariableDeclaration_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("spectra/tree/nodes/variables/VariableDeclaration")),
+0);
+spectra_tree_nodes_variables_Nova_VariableDeclaration_VTable_val.classInstance->nova_meta_Nova_Class_Nova_functionMap = (nova_meta_Nova_FunctionMap*)spectra_tree_nodes_variables_Nova_VariableDeclarationFunctionMap_Nova_construct(0, exceptionData);
+spectra_tree_nodes_variables_Nova_VariableDeclaration_VTable_val.classInstance->nova_meta_Nova_Class_Nova_propertyMap = (nova_meta_Nova_PropertyMap*)spectra_tree_nodes_variables_Nova_VariableDeclarationPropertyMap_Nova_construct(0, exceptionData);
+
+// spectra/tree/nodes/variables/VariableDeclaration.VariableDeclarationFunctionMap
+spectra_tree_nodes_variables_Nova_VariableDeclarationFunctionMap_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("spectra/tree/nodes/variables/VariableDeclaration.VariableDeclarationFunctionMap")),
+0);
+
+// spectra/tree/nodes/variables/VariableDeclaration.VariableDeclarationPropertyMap
+spectra_tree_nodes_variables_Nova_VariableDeclarationPropertyMap_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("spectra/tree/nodes/variables/VariableDeclaration.VariableDeclarationPropertyMap")),
+0);
+
+// spectra/util/Bounds
+spectra_util_Nova_Bounds_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("spectra/util/Bounds")),
+0);
+spectra_util_Nova_Bounds_VTable_val.classInstance->nova_meta_Nova_Class_Nova_functionMap = (nova_meta_Nova_FunctionMap*)spectra_util_Nova_BoundsFunctionMap_Nova_construct(0, exceptionData);
+spectra_util_Nova_Bounds_VTable_val.classInstance->nova_meta_Nova_Class_Nova_propertyMap = (nova_meta_Nova_PropertyMap*)spectra_util_Nova_BoundsPropertyMap_Nova_construct(0, exceptionData);
+
+// spectra/util/Bounds.BoundsFunctionMap
+spectra_util_Nova_BoundsFunctionMap_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("spectra/util/Bounds.BoundsFunctionMap")),
+0);
+
+// spectra/util/Bounds.BoundsPropertyMap
+spectra_util_Nova_BoundsPropertyMap_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("spectra/util/Bounds.BoundsPropertyMap")),
+0);
+
+// spectra/util/CompilerStringFunctions
+spectra_util_Nova_CompilerStringFunctions_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("spectra/util/CompilerStringFunctions")),
+0);
+
+// spectra/util/FileUtils
+spectra_util_Nova_FileUtils_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("spectra/util/FileUtils")),
+0);
+spectra_util_Nova_FileUtils_VTable_val.classInstance->nova_meta_Nova_Class_Nova_functionMap = (nova_meta_Nova_FunctionMap*)spectra_util_Nova_FileUtilsFunctionMap_Nova_construct(0, exceptionData);
+spectra_util_Nova_FileUtils_VTable_val.classInstance->nova_meta_Nova_Class_Nova_propertyMap = (nova_meta_Nova_PropertyMap*)spectra_util_Nova_FileUtilsPropertyMap_Nova_construct(0, exceptionData);
+
+// spectra/util/FileUtils.FileUtilsFunctionMap
+spectra_util_Nova_FileUtilsFunctionMap_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("spectra/util/FileUtils.FileUtilsFunctionMap")),
+0);
+
+// spectra/util/FileUtils.FileUtilsPropertyMap
+spectra_util_Nova_FileUtilsPropertyMap_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("spectra/util/FileUtils.FileUtilsPropertyMap")),
+0);
+
+// spectra/util/Location
+spectra_util_Nova_Location_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("spectra/util/Location")),
+0);
+spectra_util_Nova_Location_VTable_val.classInstance->nova_meta_Nova_Class_Nova_functionMap = (nova_meta_Nova_FunctionMap*)spectra_util_Nova_LocationFunctionMap_Nova_construct(0, exceptionData);
+spectra_util_Nova_Location_VTable_val.classInstance->nova_meta_Nova_Class_Nova_propertyMap = (nova_meta_Nova_PropertyMap*)spectra_util_Nova_LocationPropertyMap_Nova_construct(0, exceptionData);
+
+// spectra/util/Location.LocationFunctionMap
+spectra_util_Nova_LocationFunctionMap_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("spectra/util/Location.LocationFunctionMap")),
+0);
+
+// spectra/util/Location.LocationPropertyMap
+spectra_util_Nova_LocationPropertyMap_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("spectra/util/Location.LocationPropertyMap")),
+0);
+
+// spectra/util/OS
+spectra_util_Nova_OS_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("spectra/util/OS")),
+0);
+spectra_util_Nova_OS_VTable_val.classInstance->nova_meta_Nova_Class_Nova_functionMap = (nova_meta_Nova_FunctionMap*)spectra_util_Nova_OSFunctionMap_Nova_construct(0, exceptionData);
+spectra_util_Nova_OS_VTable_val.classInstance->nova_meta_Nova_Class_Nova_propertyMap = (nova_meta_Nova_PropertyMap*)spectra_util_Nova_OSPropertyMap_Nova_construct(0, exceptionData);
+
+// spectra/util/OS.OSFunctionMap
+spectra_util_Nova_OSFunctionMap_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("spectra/util/OS.OSFunctionMap")),
+0);
+
+// spectra/util/OS.OSPropertyMap
+spectra_util_Nova_OSPropertyMap_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("spectra/util/OS.OSPropertyMap")),
+0);
+
+// spectra/util/SyntaxUtils
+spectra_util_Nova_SyntaxUtils_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("spectra/util/SyntaxUtils")),
+0);
+spectra_util_Nova_SyntaxUtils_VTable_val.classInstance->nova_meta_Nova_Class_Nova_functionMap = (nova_meta_Nova_FunctionMap*)spectra_util_Nova_SyntaxUtilsFunctionMap_Nova_construct(0, exceptionData);
+spectra_util_Nova_SyntaxUtils_VTable_val.classInstance->nova_meta_Nova_Class_Nova_propertyMap = (nova_meta_Nova_PropertyMap*)spectra_util_Nova_SyntaxUtilsPropertyMap_Nova_construct(0, exceptionData);
+
+// spectra/util/SyntaxUtils.SyntaxUtilsFunctionMap
+spectra_util_Nova_SyntaxUtilsFunctionMap_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("spectra/util/SyntaxUtils.SyntaxUtilsFunctionMap")),
+0);
+
+// spectra/util/SyntaxUtils.SyntaxUtilsPropertyMap
+spectra_util_Nova_SyntaxUtilsPropertyMap_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("spectra/util/SyntaxUtils.SyntaxUtilsPropertyMap")),
+0);
+
 // example/Animal
 example_Nova_Animal_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
 nova_Nova_String_1_Nova_construct(0, exceptionData,
@@ -5105,6 +7434,18 @@ nova_datastruct_list_Nova_IteratorFunctionMap_VTable_val.classInstance->nova_met
 nova_datastruct_list_Nova_IteratorPropertyMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = nova_meta_Nova_PropertyMap_VTable_val.classInstance;
 nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 0);
 nova_datastruct_list_Nova_IteratorPropertyMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 0);
+nova_datastruct_list_Double_Nova_Iterator1Double_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = (nova_meta_Nova_Class*)nova_null;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 1);
+nova_class_interfaces[0] = (nova_Nova_Object*)nova_datastruct_list_Nova_Iterator_VTable_val.classInstance;
+nova_datastruct_list_Double_Nova_Iterator1Double_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 1);
+nova_datastruct_list_Int_Nova_Iterator1Int_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = (nova_meta_Nova_Class*)nova_null;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 1);
+nova_class_interfaces[0] = (nova_Nova_Object*)nova_datastruct_list_Nova_Iterator_VTable_val.classInstance;
+nova_datastruct_list_Int_Nova_Iterator1Int_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 1);
+nova_datastruct_list_Byte_Nova_Iterator1Byte_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = (nova_meta_Nova_Class*)nova_null;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 1);
+nova_class_interfaces[0] = (nova_Nova_Object*)nova_datastruct_list_Nova_Iterator_VTable_val.classInstance;
+nova_datastruct_list_Byte_Nova_Iterator1Byte_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 1);
 nova_datastruct_list_Nova_LinkedList_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = nova_Nova_Object_VTable_val.classInstance;
 nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 1);
 nova_class_interfaces[0] = (nova_Nova_Object*)nova_datastruct_list_Nova_List_VTable_val.classInstance;
@@ -5143,6 +7484,18 @@ nova_datastruct_list_Nova_ListPropertyMap_VTable_val.classInstance->nova_meta_No
 nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 1);
 nova_class_interfaces[0] = (nova_Nova_Object*)nova_datastruct_list_Nova_IterablePropertyMap_VTable_val.classInstance;
 nova_datastruct_list_Nova_ListPropertyMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 1);
+nova_datastruct_list_Double_Nova_List1Double_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = (nova_meta_Nova_Class*)nova_null;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 1);
+nova_class_interfaces[0] = (nova_Nova_Object*)nova_datastruct_list_Nova_List_VTable_val.classInstance;
+nova_datastruct_list_Double_Nova_List1Double_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 1);
+nova_datastruct_list_Int_Nova_List1Int_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = (nova_meta_Nova_Class*)nova_null;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 1);
+nova_class_interfaces[0] = (nova_Nova_Object*)nova_datastruct_list_Nova_List_VTable_val.classInstance;
+nova_datastruct_list_Int_Nova_List1Int_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 1);
+nova_datastruct_list_Byte_Nova_List1Byte_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = (nova_meta_Nova_Class*)nova_null;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 1);
+nova_class_interfaces[0] = (nova_Nova_Object*)nova_datastruct_list_Nova_List_VTable_val.classInstance;
+nova_datastruct_list_Byte_Nova_List1Byte_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 1);
 nova_datastruct_list_Nova_ListNode_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = nova_Nova_Object_VTable_val.classInstance;
 nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 0);
 nova_datastruct_list_Nova_ListNode_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 0);
@@ -6403,6 +8756,1465 @@ nova_web_svg_no3_Nova_No3SelectAllFunctionMap_VTable_val.classInstance->nova_met
 nova_web_svg_no3_Nova_No3SelectAllPropertyMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = nova_web_svg_no3_Nova_No3NodePropertyMap_VTable_val.classInstance;
 nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 0);
 nova_web_svg_no3_Nova_No3SelectAllPropertyMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 0);
+spectra_Nova_InvalidParseException_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = nova_exception_Nova_Exception_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 0);
+spectra_Nova_InvalidParseException_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 0);
+spectra_Nova_InvalidParseExceptionFunctionMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = nova_exception_Nova_ExceptionFunctionMap_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 0);
+spectra_Nova_InvalidParseExceptionFunctionMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 0);
+spectra_Nova_InvalidParseExceptionPropertyMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = nova_exception_Nova_ExceptionPropertyMap_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 0);
+spectra_Nova_InvalidParseExceptionPropertyMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 0);
+spectra_Nova_Spectra_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = nova_Nova_Object_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 0);
+spectra_Nova_Spectra_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 0);
+spectra_Nova_SpectraFunctionMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = nova_meta_Nova_FunctionMap_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 0);
+spectra_Nova_SpectraFunctionMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 0);
+spectra_Nova_SpectraPropertyMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = nova_meta_Nova_PropertyMap_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 0);
+spectra_Nova_SpectraPropertyMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 0);
+spectra_Nova_SyntaxErrorException_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = nova_exception_Nova_Exception_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 0);
+spectra_Nova_SyntaxErrorException_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 0);
+spectra_Nova_SyntaxErrorExceptionFunctionMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = nova_exception_Nova_ExceptionFunctionMap_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 0);
+spectra_Nova_SyntaxErrorExceptionFunctionMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 0);
+spectra_Nova_SyntaxErrorExceptionPropertyMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = nova_exception_Nova_ExceptionPropertyMap_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 0);
+spectra_Nova_SyntaxErrorExceptionPropertyMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 0);
+spectra_Nova_SyntaxMessage_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = nova_Nova_Object_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 0);
+spectra_Nova_SyntaxMessage_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 0);
+spectra_Nova_SyntaxMessageFunctionMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = nova_meta_Nova_FunctionMap_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 0);
+spectra_Nova_SyntaxMessageFunctionMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 0);
+spectra_Nova_SyntaxMessagePropertyMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = nova_meta_Nova_PropertyMap_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 0);
+spectra_Nova_SyntaxMessagePropertyMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 0);
+spectra_engines_Nova_CodeGeneratorEngine_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = nova_Nova_Object_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 0);
+spectra_engines_Nova_CodeGeneratorEngine_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 0);
+spectra_engines_Nova_CodeGeneratorEngineFunctionMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = nova_meta_Nova_FunctionMap_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 0);
+spectra_engines_Nova_CodeGeneratorEngineFunctionMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 0);
+spectra_engines_Nova_CodeGeneratorEnginePropertyMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = nova_meta_Nova_PropertyMap_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 0);
+spectra_engines_Nova_CodeGeneratorEnginePropertyMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 0);
+spectra_error_Nova_UnimplementedOperationException_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = nova_exception_Nova_Exception_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 0);
+spectra_error_Nova_UnimplementedOperationException_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 0);
+spectra_error_Nova_UnimplementedOperationExceptionFunctionMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = nova_exception_Nova_ExceptionFunctionMap_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 0);
+spectra_error_Nova_UnimplementedOperationExceptionFunctionMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 0);
+spectra_error_Nova_UnimplementedOperationExceptionPropertyMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = nova_exception_Nova_ExceptionPropertyMap_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 0);
+spectra_error_Nova_UnimplementedOperationExceptionPropertyMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 0);
+spectra_tree_Nova_AnnotationSearchResult_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = nova_Nova_Object_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 0);
+spectra_tree_Nova_AnnotationSearchResult_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 0);
+spectra_tree_Nova_AnnotationSearchResultFunctionMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = nova_meta_Nova_FunctionMap_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 0);
+spectra_tree_Nova_AnnotationSearchResultFunctionMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 0);
+spectra_tree_Nova_AnnotationSearchResultPropertyMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = nova_meta_Nova_PropertyMap_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 0);
+spectra_tree_Nova_AnnotationSearchResultPropertyMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 0);
+spectra_tree_Nova_StatementIterator_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = nova_Nova_Object_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 1);
+nova_class_interfaces[0] = (nova_Nova_Object*)nova_datastruct_list_Nova_Iterator_VTable_val.classInstance;
+spectra_tree_Nova_StatementIterator_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 1);
+spectra_tree_Nova_StatementIteratorFunctionMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = nova_meta_Nova_FunctionMap_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 1);
+nova_class_interfaces[0] = (nova_Nova_Object*)nova_datastruct_list_Nova_IteratorFunctionMap_VTable_val.classInstance;
+spectra_tree_Nova_StatementIteratorFunctionMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 1);
+spectra_tree_Nova_StatementIteratorPropertyMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = nova_meta_Nova_PropertyMap_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 1);
+nova_class_interfaces[0] = (nova_Nova_Object*)nova_datastruct_list_Nova_IteratorPropertyMap_VTable_val.classInstance;
+spectra_tree_Nova_StatementIteratorPropertyMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 1);
+spectra_tree_Nova_SyntaxTree_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = nova_Nova_Object_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 0);
+spectra_tree_Nova_SyntaxTree_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 0);
+spectra_tree_Nova_SyntaxTreeFunctionMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = nova_meta_Nova_FunctionMap_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 0);
+spectra_tree_Nova_SyntaxTreeFunctionMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 0);
+spectra_tree_Nova_SyntaxTreePropertyMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = nova_meta_Nova_PropertyMap_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 0);
+spectra_tree_Nova_SyntaxTreePropertyMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 0);
+spectra_tree_nodes_Nova_Abstractable_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = (nova_meta_Nova_Class*)nova_null;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 0);
+spectra_tree_nodes_Nova_Abstractable_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 0);
+spectra_tree_nodes_Nova_AbstractableFunctionMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = nova_meta_Nova_FunctionMap_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 0);
+spectra_tree_nodes_Nova_AbstractableFunctionMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 0);
+spectra_tree_nodes_Nova_AbstractablePropertyMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = nova_meta_Nova_PropertyMap_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 0);
+spectra_tree_nodes_Nova_AbstractablePropertyMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 0);
+spectra_tree_nodes_Nova_Accessible_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = spectra_tree_nodes_Nova_Value_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 0);
+spectra_tree_nodes_Nova_Accessible_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 0);
+spectra_tree_nodes_Nova_AccessibleFunctionMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = spectra_tree_nodes_Nova_ValueFunctionMap_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 1);
+nova_class_interfaces[0] = (nova_Nova_Object*)spectra_tree_nodes_annotations_Nova_AnnotatableFunctionMap_VTable_val.classInstance;
+spectra_tree_nodes_Nova_AccessibleFunctionMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 1);
+spectra_tree_nodes_Nova_AccessiblePropertyMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = spectra_tree_nodes_Nova_ValuePropertyMap_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 1);
+nova_class_interfaces[0] = (nova_Nova_Object*)spectra_tree_nodes_annotations_Nova_AnnotatablePropertyMap_VTable_val.classInstance;
+spectra_tree_nodes_Nova_AccessiblePropertyMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 1);
+spectra_tree_nodes_Nova_ArgumentList_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = spectra_tree_nodes_Nova_NodeList_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 0);
+spectra_tree_nodes_Nova_ArgumentList_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 0);
+spectra_tree_nodes_Nova_ArgumentListFunctionMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = spectra_tree_nodes_Nova_NodeListFunctionMap_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 1);
+nova_class_interfaces[0] = (nova_Nova_Object*)spectra_tree_nodes_annotations_Nova_AnnotatableFunctionMap_VTable_val.classInstance;
+spectra_tree_nodes_Nova_ArgumentListFunctionMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 1);
+spectra_tree_nodes_Nova_ArgumentListPropertyMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = spectra_tree_nodes_Nova_NodeListPropertyMap_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 1);
+nova_class_interfaces[0] = (nova_Nova_Object*)spectra_tree_nodes_annotations_Nova_AnnotatablePropertyMap_VTable_val.classInstance;
+spectra_tree_nodes_Nova_ArgumentListPropertyMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 1);
+spectra_tree_nodes_Nova_ArrayType_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = spectra_tree_nodes_Nova_Type_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 0);
+spectra_tree_nodes_Nova_ArrayType_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 0);
+spectra_tree_nodes_Nova_ArrayTypeFunctionMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = spectra_tree_nodes_Nova_TypeFunctionMap_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 0);
+spectra_tree_nodes_Nova_ArrayTypeFunctionMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 0);
+spectra_tree_nodes_Nova_ArrayTypePropertyMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = spectra_tree_nodes_Nova_TypePropertyMap_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 0);
+spectra_tree_nodes_Nova_ArrayTypePropertyMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 0);
+spectra_tree_nodes_Nova_Cast_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = spectra_tree_nodes_Nova_Value_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 0);
+spectra_tree_nodes_Nova_Cast_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 0);
+spectra_tree_nodes_Nova_CastFunctionMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = spectra_tree_nodes_Nova_ValueFunctionMap_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 1);
+nova_class_interfaces[0] = (nova_Nova_Object*)spectra_tree_nodes_annotations_Nova_AnnotatableFunctionMap_VTable_val.classInstance;
+spectra_tree_nodes_Nova_CastFunctionMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 1);
+spectra_tree_nodes_Nova_CastPropertyMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = spectra_tree_nodes_Nova_ValuePropertyMap_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 1);
+nova_class_interfaces[0] = (nova_Nova_Object*)spectra_tree_nodes_annotations_Nova_AnnotatablePropertyMap_VTable_val.classInstance;
+spectra_tree_nodes_Nova_CastPropertyMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 1);
+spectra_tree_nodes_Nova_ClassDeclaration_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = spectra_tree_nodes_variables_Nova_InstanceDeclaration_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 2);
+nova_class_interfaces[0] = (nova_Nova_Object*)spectra_tree_nodes_Nova_Abstractable_VTable_val.classInstance;
+nova_class_interfaces[1] = (nova_Nova_Object*)spectra_tree_nodes_generics_Nova_GenericCompatible_VTable_val.classInstance;
+spectra_tree_nodes_Nova_ClassDeclaration_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 2);
+spectra_tree_nodes_Nova_ClassDeclarationFunctionMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = spectra_tree_nodes_variables_Nova_InstanceDeclarationFunctionMap_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 4);
+nova_class_interfaces[0] = (nova_Nova_Object*)spectra_tree_nodes_Nova_AbstractableFunctionMap_VTable_val.classInstance;
+nova_class_interfaces[1] = (nova_Nova_Object*)spectra_tree_nodes_generics_Nova_GenericCompatibleFunctionMap_VTable_val.classInstance;
+nova_class_interfaces[2] = (nova_Nova_Object*)spectra_tree_nodes_annotations_Nova_AnnotatableFunctionMap_VTable_val.classInstance;
+nova_class_interfaces[3] = (nova_Nova_Object*)spectra_tree_nodes_annotations_Nova_AnnotatableFunctionMap_VTable_val.classInstance;
+spectra_tree_nodes_Nova_ClassDeclarationFunctionMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 4);
+spectra_tree_nodes_Nova_ClassDeclarationPropertyMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = spectra_tree_nodes_variables_Nova_InstanceDeclarationPropertyMap_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 4);
+nova_class_interfaces[0] = (nova_Nova_Object*)spectra_tree_nodes_Nova_AbstractablePropertyMap_VTable_val.classInstance;
+nova_class_interfaces[1] = (nova_Nova_Object*)spectra_tree_nodes_generics_Nova_GenericCompatiblePropertyMap_VTable_val.classInstance;
+nova_class_interfaces[2] = (nova_Nova_Object*)spectra_tree_nodes_annotations_Nova_AnnotatablePropertyMap_VTable_val.classInstance;
+nova_class_interfaces[3] = (nova_Nova_Object*)spectra_tree_nodes_annotations_Nova_AnnotatablePropertyMap_VTable_val.classInstance;
+spectra_tree_nodes_Nova_ClassDeclarationPropertyMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 4);
+spectra_tree_nodes_Nova_Identifier_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = spectra_tree_nodes_Nova_Value_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 0);
+spectra_tree_nodes_Nova_Identifier_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 0);
+spectra_tree_nodes_Nova_IdentifierFunctionMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = spectra_tree_nodes_Nova_ValueFunctionMap_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 1);
+nova_class_interfaces[0] = (nova_Nova_Object*)spectra_tree_nodes_annotations_Nova_AnnotatableFunctionMap_VTable_val.classInstance;
+spectra_tree_nodes_Nova_IdentifierFunctionMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 1);
+spectra_tree_nodes_Nova_IdentifierPropertyMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = spectra_tree_nodes_Nova_ValuePropertyMap_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 1);
+nova_class_interfaces[0] = (nova_Nova_Object*)spectra_tree_nodes_annotations_Nova_AnnotatablePropertyMap_VTable_val.classInstance;
+spectra_tree_nodes_Nova_IdentifierPropertyMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 1);
+spectra_tree_nodes_Nova_Import_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = spectra_tree_nodes_Nova_Node_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 0);
+spectra_tree_nodes_Nova_Import_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 0);
+spectra_tree_nodes_Nova_ImportFunctionMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = spectra_tree_nodes_Nova_NodeFunctionMap_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 1);
+nova_class_interfaces[0] = (nova_Nova_Object*)spectra_tree_nodes_annotations_Nova_AnnotatableFunctionMap_VTable_val.classInstance;
+spectra_tree_nodes_Nova_ImportFunctionMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 1);
+spectra_tree_nodes_Nova_ImportPropertyMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = spectra_tree_nodes_Nova_NodePropertyMap_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 1);
+nova_class_interfaces[0] = (nova_Nova_Object*)spectra_tree_nodes_annotations_Nova_AnnotatablePropertyMap_VTable_val.classInstance;
+spectra_tree_nodes_Nova_ImportPropertyMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 1);
+spectra_tree_nodes_Nova_ImportList_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = spectra_tree_nodes_Nova_NodeList_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 0);
+spectra_tree_nodes_Nova_ImportList_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 0);
+spectra_tree_nodes_Nova_ImportListFunctionMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = spectra_tree_nodes_Nova_NodeListFunctionMap_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 1);
+nova_class_interfaces[0] = (nova_Nova_Object*)spectra_tree_nodes_annotations_Nova_AnnotatableFunctionMap_VTable_val.classInstance;
+spectra_tree_nodes_Nova_ImportListFunctionMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 1);
+spectra_tree_nodes_Nova_ImportListPropertyMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = spectra_tree_nodes_Nova_NodeListPropertyMap_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 1);
+nova_class_interfaces[0] = (nova_Nova_Object*)spectra_tree_nodes_annotations_Nova_AnnotatablePropertyMap_VTable_val.classInstance;
+spectra_tree_nodes_Nova_ImportListPropertyMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 1);
+spectra_tree_nodes_Nova_InterfaceDeclaration_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = spectra_tree_nodes_Nova_TraitDeclaration_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 0);
+spectra_tree_nodes_Nova_InterfaceDeclaration_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 0);
+spectra_tree_nodes_Nova_InterfaceDeclarationFunctionMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = spectra_tree_nodes_Nova_TraitDeclarationFunctionMap_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 4);
+nova_class_interfaces[0] = (nova_Nova_Object*)spectra_tree_nodes_Nova_AbstractableFunctionMap_VTable_val.classInstance;
+nova_class_interfaces[1] = (nova_Nova_Object*)spectra_tree_nodes_generics_Nova_GenericCompatibleFunctionMap_VTable_val.classInstance;
+nova_class_interfaces[2] = (nova_Nova_Object*)spectra_tree_nodes_annotations_Nova_AnnotatableFunctionMap_VTable_val.classInstance;
+nova_class_interfaces[3] = (nova_Nova_Object*)spectra_tree_nodes_annotations_Nova_AnnotatableFunctionMap_VTable_val.classInstance;
+spectra_tree_nodes_Nova_InterfaceDeclarationFunctionMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 4);
+spectra_tree_nodes_Nova_InterfaceDeclarationPropertyMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = spectra_tree_nodes_Nova_TraitDeclarationPropertyMap_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 4);
+nova_class_interfaces[0] = (nova_Nova_Object*)spectra_tree_nodes_Nova_AbstractablePropertyMap_VTable_val.classInstance;
+nova_class_interfaces[1] = (nova_Nova_Object*)spectra_tree_nodes_generics_Nova_GenericCompatiblePropertyMap_VTable_val.classInstance;
+nova_class_interfaces[2] = (nova_Nova_Object*)spectra_tree_nodes_annotations_Nova_AnnotatablePropertyMap_VTable_val.classInstance;
+nova_class_interfaces[3] = (nova_Nova_Object*)spectra_tree_nodes_annotations_Nova_AnnotatablePropertyMap_VTable_val.classInstance;
+spectra_tree_nodes_Nova_InterfaceDeclarationPropertyMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 4);
+spectra_tree_nodes_Nova_Listener_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = (nova_meta_Nova_Class*)nova_null;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 0);
+spectra_tree_nodes_Nova_Listener_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 0);
+spectra_tree_nodes_Nova_ListenerFunctionMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = nova_meta_Nova_FunctionMap_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 0);
+spectra_tree_nodes_Nova_ListenerFunctionMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 0);
+spectra_tree_nodes_Nova_ListenerPropertyMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = nova_meta_Nova_PropertyMap_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 0);
+spectra_tree_nodes_Nova_ListenerPropertyMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 0);
+spectra_tree_nodes_Nova_Literal_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = spectra_tree_nodes_Nova_Value_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 1);
+nova_class_interfaces[0] = (nova_Nova_Object*)spectra_tree_nodes_Nova_Accessible_VTable_val.classInstance;
+spectra_tree_nodes_Nova_Literal_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 1);
+spectra_tree_nodes_Nova_LiteralFunctionMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = spectra_tree_nodes_Nova_ValueFunctionMap_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 3);
+nova_class_interfaces[0] = (nova_Nova_Object*)spectra_tree_nodes_Nova_AccessibleFunctionMap_VTable_val.classInstance;
+nova_class_interfaces[1] = (nova_Nova_Object*)spectra_tree_nodes_annotations_Nova_AnnotatableFunctionMap_VTable_val.classInstance;
+nova_class_interfaces[2] = (nova_Nova_Object*)spectra_tree_nodes_annotations_Nova_AnnotatableFunctionMap_VTable_val.classInstance;
+spectra_tree_nodes_Nova_LiteralFunctionMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 3);
+spectra_tree_nodes_Nova_LiteralPropertyMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = spectra_tree_nodes_Nova_ValuePropertyMap_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 3);
+nova_class_interfaces[0] = (nova_Nova_Object*)spectra_tree_nodes_Nova_AccessiblePropertyMap_VTable_val.classInstance;
+nova_class_interfaces[1] = (nova_Nova_Object*)spectra_tree_nodes_annotations_Nova_AnnotatablePropertyMap_VTable_val.classInstance;
+nova_class_interfaces[2] = (nova_Nova_Object*)spectra_tree_nodes_annotations_Nova_AnnotatablePropertyMap_VTable_val.classInstance;
+spectra_tree_nodes_Nova_LiteralPropertyMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 3);
+spectra_tree_nodes_Nova_Node_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = nova_Nova_Object_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 1);
+nova_class_interfaces[0] = (nova_Nova_Object*)spectra_tree_nodes_annotations_Nova_Annotatable_VTable_val.classInstance;
+spectra_tree_nodes_Nova_Node_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 1);
+spectra_tree_nodes_Nova_NodeFunctionMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = nova_meta_Nova_FunctionMap_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 1);
+nova_class_interfaces[0] = (nova_Nova_Object*)spectra_tree_nodes_annotations_Nova_AnnotatableFunctionMap_VTable_val.classInstance;
+spectra_tree_nodes_Nova_NodeFunctionMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 1);
+spectra_tree_nodes_Nova_NodePropertyMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = nova_meta_Nova_PropertyMap_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 1);
+nova_class_interfaces[0] = (nova_Nova_Object*)spectra_tree_nodes_annotations_Nova_AnnotatablePropertyMap_VTable_val.classInstance;
+spectra_tree_nodes_Nova_NodePropertyMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 1);
+spectra_tree_nodes_Nova_NodeList_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = spectra_tree_nodes_Nova_Node_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 0);
+spectra_tree_nodes_Nova_NodeList_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 0);
+spectra_tree_nodes_Nova_NodeListFunctionMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = spectra_tree_nodes_Nova_NodeFunctionMap_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 1);
+nova_class_interfaces[0] = (nova_Nova_Object*)spectra_tree_nodes_annotations_Nova_AnnotatableFunctionMap_VTable_val.classInstance;
+spectra_tree_nodes_Nova_NodeListFunctionMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 1);
+spectra_tree_nodes_Nova_NodeListPropertyMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = spectra_tree_nodes_Nova_NodePropertyMap_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 1);
+nova_class_interfaces[0] = (nova_Nova_Object*)spectra_tree_nodes_annotations_Nova_AnnotatablePropertyMap_VTable_val.classInstance;
+spectra_tree_nodes_Nova_NodeListPropertyMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 1);
+spectra_tree_nodes_Nova_NovaFile_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = spectra_tree_nodes_Nova_Node_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 0);
+spectra_tree_nodes_Nova_NovaFile_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 0);
+spectra_tree_nodes_Nova_NovaFileFunctionMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = spectra_tree_nodes_Nova_NodeFunctionMap_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 1);
+nova_class_interfaces[0] = (nova_Nova_Object*)spectra_tree_nodes_annotations_Nova_AnnotatableFunctionMap_VTable_val.classInstance;
+spectra_tree_nodes_Nova_NovaFileFunctionMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 1);
+spectra_tree_nodes_Nova_NovaFilePropertyMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = spectra_tree_nodes_Nova_NodePropertyMap_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 1);
+nova_class_interfaces[0] = (nova_Nova_Object*)spectra_tree_nodes_annotations_Nova_AnnotatablePropertyMap_VTable_val.classInstance;
+spectra_tree_nodes_Nova_NovaFilePropertyMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 1);
+spectra_tree_nodes_Nova_NumericRange_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = spectra_tree_nodes_functions_Nova_Instantiation_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 0);
+spectra_tree_nodes_Nova_NumericRange_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 0);
+spectra_tree_nodes_Nova_NumericRangeFunctionMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = spectra_tree_nodes_functions_Nova_InstantiationFunctionMap_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 4);
+nova_class_interfaces[0] = (nova_Nova_Object*)spectra_tree_nodes_Nova_AccessibleFunctionMap_VTable_val.classInstance;
+nova_class_interfaces[1] = (nova_Nova_Object*)spectra_tree_nodes_operations_Nova_AssignableFunctionMap_VTable_val.classInstance;
+nova_class_interfaces[2] = (nova_Nova_Object*)spectra_tree_nodes_annotations_Nova_AnnotatableFunctionMap_VTable_val.classInstance;
+nova_class_interfaces[3] = (nova_Nova_Object*)spectra_tree_nodes_annotations_Nova_AnnotatableFunctionMap_VTable_val.classInstance;
+spectra_tree_nodes_Nova_NumericRangeFunctionMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 4);
+spectra_tree_nodes_Nova_NumericRangePropertyMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = spectra_tree_nodes_functions_Nova_InstantiationPropertyMap_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 4);
+nova_class_interfaces[0] = (nova_Nova_Object*)spectra_tree_nodes_Nova_AccessiblePropertyMap_VTable_val.classInstance;
+nova_class_interfaces[1] = (nova_Nova_Object*)spectra_tree_nodes_operations_Nova_AssignablePropertyMap_VTable_val.classInstance;
+nova_class_interfaces[2] = (nova_Nova_Object*)spectra_tree_nodes_annotations_Nova_AnnotatablePropertyMap_VTable_val.classInstance;
+nova_class_interfaces[3] = (nova_Nova_Object*)spectra_tree_nodes_annotations_Nova_AnnotatablePropertyMap_VTable_val.classInstance;
+spectra_tree_nodes_Nova_NumericRangePropertyMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 4);
+spectra_tree_nodes_Nova_Package_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = spectra_tree_nodes_Nova_Node_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 0);
+spectra_tree_nodes_Nova_Package_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 0);
+spectra_tree_nodes_Nova_PackageFunctionMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = spectra_tree_nodes_Nova_NodeFunctionMap_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 1);
+nova_class_interfaces[0] = (nova_Nova_Object*)spectra_tree_nodes_annotations_Nova_AnnotatableFunctionMap_VTable_val.classInstance;
+spectra_tree_nodes_Nova_PackageFunctionMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 1);
+spectra_tree_nodes_Nova_PackagePropertyMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = spectra_tree_nodes_Nova_NodePropertyMap_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 1);
+nova_class_interfaces[0] = (nova_Nova_Object*)spectra_tree_nodes_annotations_Nova_AnnotatablePropertyMap_VTable_val.classInstance;
+spectra_tree_nodes_Nova_PackagePropertyMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 1);
+spectra_tree_nodes_Nova_PlaceholderValue_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = spectra_tree_nodes_Nova_Value_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 0);
+spectra_tree_nodes_Nova_PlaceholderValue_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 0);
+spectra_tree_nodes_Nova_PlaceholderValueFunctionMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = spectra_tree_nodes_Nova_ValueFunctionMap_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 1);
+nova_class_interfaces[0] = (nova_Nova_Object*)spectra_tree_nodes_annotations_Nova_AnnotatableFunctionMap_VTable_val.classInstance;
+spectra_tree_nodes_Nova_PlaceholderValueFunctionMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 1);
+spectra_tree_nodes_Nova_PlaceholderValuePropertyMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = spectra_tree_nodes_Nova_ValuePropertyMap_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 1);
+nova_class_interfaces[0] = (nova_Nova_Object*)spectra_tree_nodes_annotations_Nova_AnnotatablePropertyMap_VTable_val.classInstance;
+spectra_tree_nodes_Nova_PlaceholderValuePropertyMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 1);
+spectra_tree_nodes_Nova_Priority_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = spectra_tree_nodes_Nova_Value_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 1);
+nova_class_interfaces[0] = (nova_Nova_Object*)spectra_tree_nodes_Nova_Accessible_VTable_val.classInstance;
+spectra_tree_nodes_Nova_Priority_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 1);
+spectra_tree_nodes_Nova_PriorityFunctionMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = spectra_tree_nodes_Nova_ValueFunctionMap_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 3);
+nova_class_interfaces[0] = (nova_Nova_Object*)spectra_tree_nodes_Nova_AccessibleFunctionMap_VTable_val.classInstance;
+nova_class_interfaces[1] = (nova_Nova_Object*)spectra_tree_nodes_annotations_Nova_AnnotatableFunctionMap_VTable_val.classInstance;
+nova_class_interfaces[2] = (nova_Nova_Object*)spectra_tree_nodes_annotations_Nova_AnnotatableFunctionMap_VTable_val.classInstance;
+spectra_tree_nodes_Nova_PriorityFunctionMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 3);
+spectra_tree_nodes_Nova_PriorityPropertyMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = spectra_tree_nodes_Nova_ValuePropertyMap_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 3);
+nova_class_interfaces[0] = (nova_Nova_Object*)spectra_tree_nodes_Nova_AccessiblePropertyMap_VTable_val.classInstance;
+nova_class_interfaces[1] = (nova_Nova_Object*)spectra_tree_nodes_annotations_Nova_AnnotatablePropertyMap_VTable_val.classInstance;
+nova_class_interfaces[2] = (nova_Nova_Object*)spectra_tree_nodes_annotations_Nova_AnnotatablePropertyMap_VTable_val.classInstance;
+spectra_tree_nodes_Nova_PriorityPropertyMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 3);
+spectra_tree_nodes_Nova_Program_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = spectra_tree_nodes_Nova_NodeList_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 0);
+spectra_tree_nodes_Nova_Program_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 0);
+spectra_tree_nodes_Nova_ProgramFunctionMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = spectra_tree_nodes_Nova_NodeListFunctionMap_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 1);
+nova_class_interfaces[0] = (nova_Nova_Object*)spectra_tree_nodes_annotations_Nova_AnnotatableFunctionMap_VTable_val.classInstance;
+spectra_tree_nodes_Nova_ProgramFunctionMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 1);
+spectra_tree_nodes_Nova_ProgramPropertyMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = spectra_tree_nodes_Nova_NodeListPropertyMap_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 1);
+nova_class_interfaces[0] = (nova_Nova_Object*)spectra_tree_nodes_annotations_Nova_AnnotatablePropertyMap_VTable_val.classInstance;
+spectra_tree_nodes_Nova_ProgramPropertyMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 1);
+spectra_tree_nodes_Nova_Return_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = spectra_tree_nodes_Nova_Node_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 0);
+spectra_tree_nodes_Nova_Return_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 0);
+spectra_tree_nodes_Nova_ReturnFunctionMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = spectra_tree_nodes_Nova_NodeFunctionMap_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 1);
+nova_class_interfaces[0] = (nova_Nova_Object*)spectra_tree_nodes_annotations_Nova_AnnotatableFunctionMap_VTable_val.classInstance;
+spectra_tree_nodes_Nova_ReturnFunctionMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 1);
+spectra_tree_nodes_Nova_ReturnPropertyMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = spectra_tree_nodes_Nova_NodePropertyMap_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 1);
+nova_class_interfaces[0] = (nova_Nova_Object*)spectra_tree_nodes_annotations_Nova_AnnotatablePropertyMap_VTable_val.classInstance;
+spectra_tree_nodes_Nova_ReturnPropertyMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 1);
+spectra_tree_nodes_Nova_Scope_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = spectra_tree_nodes_Nova_NodeList_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 0);
+spectra_tree_nodes_Nova_Scope_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 0);
+spectra_tree_nodes_Nova_ScopeFunctionMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = spectra_tree_nodes_Nova_NodeListFunctionMap_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 1);
+nova_class_interfaces[0] = (nova_Nova_Object*)spectra_tree_nodes_annotations_Nova_AnnotatableFunctionMap_VTable_val.classInstance;
+spectra_tree_nodes_Nova_ScopeFunctionMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 1);
+spectra_tree_nodes_Nova_ScopePropertyMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = spectra_tree_nodes_Nova_NodeListPropertyMap_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 1);
+nova_class_interfaces[0] = (nova_Nova_Object*)spectra_tree_nodes_annotations_Nova_AnnotatablePropertyMap_VTable_val.classInstance;
+spectra_tree_nodes_Nova_ScopePropertyMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 1);
+spectra_tree_nodes_Nova_Skeleton_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = spectra_tree_nodes_Nova_Node_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 0);
+spectra_tree_nodes_Nova_Skeleton_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 0);
+spectra_tree_nodes_Nova_SkeletonFunctionMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = spectra_tree_nodes_Nova_NodeFunctionMap_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 1);
+nova_class_interfaces[0] = (nova_Nova_Object*)spectra_tree_nodes_annotations_Nova_AnnotatableFunctionMap_VTable_val.classInstance;
+spectra_tree_nodes_Nova_SkeletonFunctionMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 1);
+spectra_tree_nodes_Nova_SkeletonPropertyMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = spectra_tree_nodes_Nova_NodePropertyMap_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 1);
+nova_class_interfaces[0] = (nova_Nova_Object*)spectra_tree_nodes_annotations_Nova_AnnotatablePropertyMap_VTable_val.classInstance;
+spectra_tree_nodes_Nova_SkeletonPropertyMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 1);
+spectra_tree_nodes_Nova_StaticClassReference_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = spectra_tree_nodes_Nova_Identifier_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 1);
+nova_class_interfaces[0] = (nova_Nova_Object*)spectra_tree_nodes_Nova_Accessible_VTable_val.classInstance;
+spectra_tree_nodes_Nova_StaticClassReference_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 1);
+spectra_tree_nodes_Nova_StaticClassReferenceFunctionMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = spectra_tree_nodes_Nova_IdentifierFunctionMap_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 3);
+nova_class_interfaces[0] = (nova_Nova_Object*)spectra_tree_nodes_Nova_AccessibleFunctionMap_VTable_val.classInstance;
+nova_class_interfaces[1] = (nova_Nova_Object*)spectra_tree_nodes_annotations_Nova_AnnotatableFunctionMap_VTable_val.classInstance;
+nova_class_interfaces[2] = (nova_Nova_Object*)spectra_tree_nodes_annotations_Nova_AnnotatableFunctionMap_VTable_val.classInstance;
+spectra_tree_nodes_Nova_StaticClassReferenceFunctionMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 3);
+spectra_tree_nodes_Nova_StaticClassReferencePropertyMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = spectra_tree_nodes_Nova_IdentifierPropertyMap_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 3);
+nova_class_interfaces[0] = (nova_Nova_Object*)spectra_tree_nodes_Nova_AccessiblePropertyMap_VTable_val.classInstance;
+nova_class_interfaces[1] = (nova_Nova_Object*)spectra_tree_nodes_annotations_Nova_AnnotatablePropertyMap_VTable_val.classInstance;
+nova_class_interfaces[2] = (nova_Nova_Object*)spectra_tree_nodes_annotations_Nova_AnnotatablePropertyMap_VTable_val.classInstance;
+spectra_tree_nodes_Nova_StaticClassReferencePropertyMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 3);
+spectra_tree_nodes_Nova_TraitDeclaration_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = spectra_tree_nodes_Nova_ClassDeclaration_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 0);
+spectra_tree_nodes_Nova_TraitDeclaration_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 0);
+spectra_tree_nodes_Nova_TraitDeclarationFunctionMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = spectra_tree_nodes_Nova_ClassDeclarationFunctionMap_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 4);
+nova_class_interfaces[0] = (nova_Nova_Object*)spectra_tree_nodes_Nova_AbstractableFunctionMap_VTable_val.classInstance;
+nova_class_interfaces[1] = (nova_Nova_Object*)spectra_tree_nodes_generics_Nova_GenericCompatibleFunctionMap_VTable_val.classInstance;
+nova_class_interfaces[2] = (nova_Nova_Object*)spectra_tree_nodes_annotations_Nova_AnnotatableFunctionMap_VTable_val.classInstance;
+nova_class_interfaces[3] = (nova_Nova_Object*)spectra_tree_nodes_annotations_Nova_AnnotatableFunctionMap_VTable_val.classInstance;
+spectra_tree_nodes_Nova_TraitDeclarationFunctionMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 4);
+spectra_tree_nodes_Nova_TraitDeclarationPropertyMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = spectra_tree_nodes_Nova_ClassDeclarationPropertyMap_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 4);
+nova_class_interfaces[0] = (nova_Nova_Object*)spectra_tree_nodes_Nova_AbstractablePropertyMap_VTable_val.classInstance;
+nova_class_interfaces[1] = (nova_Nova_Object*)spectra_tree_nodes_generics_Nova_GenericCompatiblePropertyMap_VTable_val.classInstance;
+nova_class_interfaces[2] = (nova_Nova_Object*)spectra_tree_nodes_annotations_Nova_AnnotatablePropertyMap_VTable_val.classInstance;
+nova_class_interfaces[3] = (nova_Nova_Object*)spectra_tree_nodes_annotations_Nova_AnnotatablePropertyMap_VTable_val.classInstance;
+spectra_tree_nodes_Nova_TraitDeclarationPropertyMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 4);
+spectra_tree_nodes_Nova_Type_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = nova_Nova_Object_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 0);
+spectra_tree_nodes_Nova_Type_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 0);
+spectra_tree_nodes_Nova_TypeFunctionMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = nova_meta_Nova_FunctionMap_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 0);
+spectra_tree_nodes_Nova_TypeFunctionMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 0);
+spectra_tree_nodes_Nova_TypePropertyMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = nova_meta_Nova_PropertyMap_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 0);
+spectra_tree_nodes_Nova_TypePropertyMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 0);
+spectra_tree_nodes_Nova_ValidationResult_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = nova_Nova_Object_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 0);
+spectra_tree_nodes_Nova_ValidationResult_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 0);
+spectra_tree_nodes_Nova_ValidationResultFunctionMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = nova_meta_Nova_FunctionMap_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 0);
+spectra_tree_nodes_Nova_ValidationResultFunctionMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 0);
+spectra_tree_nodes_Nova_ValidationResultPropertyMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = nova_meta_Nova_PropertyMap_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 0);
+spectra_tree_nodes_Nova_ValidationResultPropertyMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 0);
+spectra_tree_nodes_Nova_Value_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = spectra_tree_nodes_Nova_Node_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 0);
+spectra_tree_nodes_Nova_Value_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 0);
+spectra_tree_nodes_Nova_ValueFunctionMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = spectra_tree_nodes_Nova_NodeFunctionMap_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 1);
+nova_class_interfaces[0] = (nova_Nova_Object*)spectra_tree_nodes_annotations_Nova_AnnotatableFunctionMap_VTable_val.classInstance;
+spectra_tree_nodes_Nova_ValueFunctionMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 1);
+spectra_tree_nodes_Nova_ValuePropertyMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = spectra_tree_nodes_Nova_NodePropertyMap_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 1);
+nova_class_interfaces[0] = (nova_Nova_Object*)spectra_tree_nodes_annotations_Nova_AnnotatablePropertyMap_VTable_val.classInstance;
+spectra_tree_nodes_Nova_ValuePropertyMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 1);
+spectra_tree_nodes_annotations_Nova_AbstractAnnotation_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = spectra_tree_nodes_annotations_Nova_Annotation_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 1);
+nova_class_interfaces[0] = (nova_Nova_Object*)spectra_tree_nodes_annotations_Nova_Modifier_VTable_val.classInstance;
+spectra_tree_nodes_annotations_Nova_AbstractAnnotation_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 1);
+spectra_tree_nodes_annotations_Nova_AbstractAnnotationFunctionMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = spectra_tree_nodes_annotations_Nova_AnnotationFunctionMap_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 3);
+nova_class_interfaces[0] = (nova_Nova_Object*)spectra_tree_nodes_annotations_Nova_ModifierFunctionMap_VTable_val.classInstance;
+nova_class_interfaces[1] = (nova_Nova_Object*)spectra_tree_nodes_annotations_Nova_AnnotatableFunctionMap_VTable_val.classInstance;
+nova_class_interfaces[2] = (nova_Nova_Object*)spectra_tree_nodes_annotations_Nova_AnnotatableFunctionMap_VTable_val.classInstance;
+spectra_tree_nodes_annotations_Nova_AbstractAnnotationFunctionMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 3);
+spectra_tree_nodes_annotations_Nova_AbstractAnnotationPropertyMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = spectra_tree_nodes_annotations_Nova_AnnotationPropertyMap_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 3);
+nova_class_interfaces[0] = (nova_Nova_Object*)spectra_tree_nodes_annotations_Nova_ModifierPropertyMap_VTable_val.classInstance;
+nova_class_interfaces[1] = (nova_Nova_Object*)spectra_tree_nodes_annotations_Nova_AnnotatablePropertyMap_VTable_val.classInstance;
+nova_class_interfaces[2] = (nova_Nova_Object*)spectra_tree_nodes_annotations_Nova_AnnotatablePropertyMap_VTable_val.classInstance;
+spectra_tree_nodes_annotations_Nova_AbstractAnnotationPropertyMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 3);
+spectra_tree_nodes_annotations_Nova_Annotatable_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = (nova_meta_Nova_Class*)nova_null;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 0);
+spectra_tree_nodes_annotations_Nova_Annotatable_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 0);
+spectra_tree_nodes_annotations_Nova_AnnotatableFunctionMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = nova_meta_Nova_FunctionMap_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 0);
+spectra_tree_nodes_annotations_Nova_AnnotatableFunctionMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 0);
+spectra_tree_nodes_annotations_Nova_AnnotatablePropertyMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = nova_meta_Nova_PropertyMap_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 0);
+spectra_tree_nodes_annotations_Nova_AnnotatablePropertyMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 0);
+spectra_tree_nodes_annotations_Nova_Annotation_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = spectra_tree_nodes_Nova_Node_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 0);
+spectra_tree_nodes_annotations_Nova_Annotation_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 0);
+spectra_tree_nodes_annotations_Nova_AnnotationFunctionMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = spectra_tree_nodes_Nova_NodeFunctionMap_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 1);
+nova_class_interfaces[0] = (nova_Nova_Object*)spectra_tree_nodes_annotations_Nova_AnnotatableFunctionMap_VTable_val.classInstance;
+spectra_tree_nodes_annotations_Nova_AnnotationFunctionMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 1);
+spectra_tree_nodes_annotations_Nova_AnnotationPropertyMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = spectra_tree_nodes_Nova_NodePropertyMap_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 1);
+nova_class_interfaces[0] = (nova_Nova_Object*)spectra_tree_nodes_annotations_Nova_AnnotatablePropertyMap_VTable_val.classInstance;
+spectra_tree_nodes_annotations_Nova_AnnotationPropertyMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 1);
+spectra_tree_nodes_annotations_Nova_AutoFinalAnnotation_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = spectra_tree_nodes_annotations_Nova_Annotation_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 0);
+spectra_tree_nodes_annotations_Nova_AutoFinalAnnotation_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 0);
+spectra_tree_nodes_annotations_Nova_AutoFinalAnnotationFunctionMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = spectra_tree_nodes_annotations_Nova_AnnotationFunctionMap_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 1);
+nova_class_interfaces[0] = (nova_Nova_Object*)spectra_tree_nodes_annotations_Nova_AnnotatableFunctionMap_VTable_val.classInstance;
+spectra_tree_nodes_annotations_Nova_AutoFinalAnnotationFunctionMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 1);
+spectra_tree_nodes_annotations_Nova_AutoFinalAnnotationPropertyMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = spectra_tree_nodes_annotations_Nova_AnnotationPropertyMap_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 1);
+nova_class_interfaces[0] = (nova_Nova_Object*)spectra_tree_nodes_annotations_Nova_AnnotatablePropertyMap_VTable_val.classInstance;
+spectra_tree_nodes_annotations_Nova_AutoFinalAnnotationPropertyMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 1);
+spectra_tree_nodes_annotations_Nova_AutoPureAnnotation_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = spectra_tree_nodes_annotations_Nova_Annotation_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 0);
+spectra_tree_nodes_annotations_Nova_AutoPureAnnotation_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 0);
+spectra_tree_nodes_annotations_Nova_AutoPureAnnotationFunctionMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = spectra_tree_nodes_annotations_Nova_AnnotationFunctionMap_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 1);
+nova_class_interfaces[0] = (nova_Nova_Object*)spectra_tree_nodes_annotations_Nova_AnnotatableFunctionMap_VTable_val.classInstance;
+spectra_tree_nodes_annotations_Nova_AutoPureAnnotationFunctionMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 1);
+spectra_tree_nodes_annotations_Nova_AutoPureAnnotationPropertyMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = spectra_tree_nodes_annotations_Nova_AnnotationPropertyMap_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 1);
+nova_class_interfaces[0] = (nova_Nova_Object*)spectra_tree_nodes_annotations_Nova_AnnotatablePropertyMap_VTable_val.classInstance;
+spectra_tree_nodes_annotations_Nova_AutoPureAnnotationPropertyMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 1);
+spectra_tree_nodes_annotations_Nova_FinalAnnotation_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = spectra_tree_nodes_annotations_Nova_Annotation_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 1);
+nova_class_interfaces[0] = (nova_Nova_Object*)spectra_tree_nodes_annotations_Nova_Modifier_VTable_val.classInstance;
+spectra_tree_nodes_annotations_Nova_FinalAnnotation_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 1);
+spectra_tree_nodes_annotations_Nova_FinalAnnotationFunctionMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = spectra_tree_nodes_annotations_Nova_AnnotationFunctionMap_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 3);
+nova_class_interfaces[0] = (nova_Nova_Object*)spectra_tree_nodes_annotations_Nova_ModifierFunctionMap_VTable_val.classInstance;
+nova_class_interfaces[1] = (nova_Nova_Object*)spectra_tree_nodes_annotations_Nova_AnnotatableFunctionMap_VTable_val.classInstance;
+nova_class_interfaces[2] = (nova_Nova_Object*)spectra_tree_nodes_annotations_Nova_AnnotatableFunctionMap_VTable_val.classInstance;
+spectra_tree_nodes_annotations_Nova_FinalAnnotationFunctionMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 3);
+spectra_tree_nodes_annotations_Nova_FinalAnnotationPropertyMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = spectra_tree_nodes_annotations_Nova_AnnotationPropertyMap_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 3);
+nova_class_interfaces[0] = (nova_Nova_Object*)spectra_tree_nodes_annotations_Nova_ModifierPropertyMap_VTable_val.classInstance;
+nova_class_interfaces[1] = (nova_Nova_Object*)spectra_tree_nodes_annotations_Nova_AnnotatablePropertyMap_VTable_val.classInstance;
+nova_class_interfaces[2] = (nova_Nova_Object*)spectra_tree_nodes_annotations_Nova_AnnotatablePropertyMap_VTable_val.classInstance;
+spectra_tree_nodes_annotations_Nova_FinalAnnotationPropertyMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 3);
+spectra_tree_nodes_annotations_Nova_ImmutableAnnotation_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = spectra_tree_nodes_annotations_Nova_Annotation_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 1);
+nova_class_interfaces[0] = (nova_Nova_Object*)spectra_tree_nodes_annotations_Nova_Modifier_VTable_val.classInstance;
+spectra_tree_nodes_annotations_Nova_ImmutableAnnotation_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 1);
+spectra_tree_nodes_annotations_Nova_ImmutableAnnotationFunctionMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = spectra_tree_nodes_annotations_Nova_AnnotationFunctionMap_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 3);
+nova_class_interfaces[0] = (nova_Nova_Object*)spectra_tree_nodes_annotations_Nova_ModifierFunctionMap_VTable_val.classInstance;
+nova_class_interfaces[1] = (nova_Nova_Object*)spectra_tree_nodes_annotations_Nova_AnnotatableFunctionMap_VTable_val.classInstance;
+nova_class_interfaces[2] = (nova_Nova_Object*)spectra_tree_nodes_annotations_Nova_AnnotatableFunctionMap_VTable_val.classInstance;
+spectra_tree_nodes_annotations_Nova_ImmutableAnnotationFunctionMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 3);
+spectra_tree_nodes_annotations_Nova_ImmutableAnnotationPropertyMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = spectra_tree_nodes_annotations_Nova_AnnotationPropertyMap_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 3);
+nova_class_interfaces[0] = (nova_Nova_Object*)spectra_tree_nodes_annotations_Nova_ModifierPropertyMap_VTable_val.classInstance;
+nova_class_interfaces[1] = (nova_Nova_Object*)spectra_tree_nodes_annotations_Nova_AnnotatablePropertyMap_VTable_val.classInstance;
+nova_class_interfaces[2] = (nova_Nova_Object*)spectra_tree_nodes_annotations_Nova_AnnotatablePropertyMap_VTable_val.classInstance;
+spectra_tree_nodes_annotations_Nova_ImmutableAnnotationPropertyMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 3);
+spectra_tree_nodes_annotations_Nova_ImpureAnnotation_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = spectra_tree_nodes_annotations_Nova_Annotation_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 1);
+nova_class_interfaces[0] = (nova_Nova_Object*)spectra_tree_nodes_annotations_Nova_Modifier_VTable_val.classInstance;
+spectra_tree_nodes_annotations_Nova_ImpureAnnotation_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 1);
+spectra_tree_nodes_annotations_Nova_ImpureAnnotationFunctionMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = spectra_tree_nodes_annotations_Nova_AnnotationFunctionMap_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 3);
+nova_class_interfaces[0] = (nova_Nova_Object*)spectra_tree_nodes_annotations_Nova_ModifierFunctionMap_VTable_val.classInstance;
+nova_class_interfaces[1] = (nova_Nova_Object*)spectra_tree_nodes_annotations_Nova_AnnotatableFunctionMap_VTable_val.classInstance;
+nova_class_interfaces[2] = (nova_Nova_Object*)spectra_tree_nodes_annotations_Nova_AnnotatableFunctionMap_VTable_val.classInstance;
+spectra_tree_nodes_annotations_Nova_ImpureAnnotationFunctionMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 3);
+spectra_tree_nodes_annotations_Nova_ImpureAnnotationPropertyMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = spectra_tree_nodes_annotations_Nova_AnnotationPropertyMap_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 3);
+nova_class_interfaces[0] = (nova_Nova_Object*)spectra_tree_nodes_annotations_Nova_ModifierPropertyMap_VTable_val.classInstance;
+nova_class_interfaces[1] = (nova_Nova_Object*)spectra_tree_nodes_annotations_Nova_AnnotatablePropertyMap_VTable_val.classInstance;
+nova_class_interfaces[2] = (nova_Nova_Object*)spectra_tree_nodes_annotations_Nova_AnnotatablePropertyMap_VTable_val.classInstance;
+spectra_tree_nodes_annotations_Nova_ImpureAnnotationPropertyMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 3);
+spectra_tree_nodes_annotations_Nova_LetAnnotation_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = spectra_tree_nodes_annotations_Nova_FinalAnnotation_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 0);
+spectra_tree_nodes_annotations_Nova_LetAnnotation_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 0);
+spectra_tree_nodes_annotations_Nova_LetAnnotationFunctionMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = spectra_tree_nodes_annotations_Nova_FinalAnnotationFunctionMap_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 3);
+nova_class_interfaces[0] = (nova_Nova_Object*)spectra_tree_nodes_annotations_Nova_ModifierFunctionMap_VTable_val.classInstance;
+nova_class_interfaces[1] = (nova_Nova_Object*)spectra_tree_nodes_annotations_Nova_AnnotatableFunctionMap_VTable_val.classInstance;
+nova_class_interfaces[2] = (nova_Nova_Object*)spectra_tree_nodes_annotations_Nova_AnnotatableFunctionMap_VTable_val.classInstance;
+spectra_tree_nodes_annotations_Nova_LetAnnotationFunctionMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 3);
+spectra_tree_nodes_annotations_Nova_LetAnnotationPropertyMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = spectra_tree_nodes_annotations_Nova_FinalAnnotationPropertyMap_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 3);
+nova_class_interfaces[0] = (nova_Nova_Object*)spectra_tree_nodes_annotations_Nova_ModifierPropertyMap_VTable_val.classInstance;
+nova_class_interfaces[1] = (nova_Nova_Object*)spectra_tree_nodes_annotations_Nova_AnnotatablePropertyMap_VTable_val.classInstance;
+nova_class_interfaces[2] = (nova_Nova_Object*)spectra_tree_nodes_annotations_Nova_AnnotatablePropertyMap_VTable_val.classInstance;
+spectra_tree_nodes_annotations_Nova_LetAnnotationPropertyMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 3);
+spectra_tree_nodes_annotations_Nova_Modifier_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = spectra_tree_nodes_annotations_Nova_Annotation_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 0);
+spectra_tree_nodes_annotations_Nova_Modifier_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 0);
+spectra_tree_nodes_annotations_Nova_ModifierFunctionMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = spectra_tree_nodes_annotations_Nova_AnnotationFunctionMap_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 1);
+nova_class_interfaces[0] = (nova_Nova_Object*)spectra_tree_nodes_annotations_Nova_AnnotatableFunctionMap_VTable_val.classInstance;
+spectra_tree_nodes_annotations_Nova_ModifierFunctionMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 1);
+spectra_tree_nodes_annotations_Nova_ModifierPropertyMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = spectra_tree_nodes_annotations_Nova_AnnotationPropertyMap_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 1);
+nova_class_interfaces[0] = (nova_Nova_Object*)spectra_tree_nodes_annotations_Nova_AnnotatablePropertyMap_VTable_val.classInstance;
+spectra_tree_nodes_annotations_Nova_ModifierPropertyMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 1);
+spectra_tree_nodes_annotations_Nova_NativeAnnotation_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = spectra_tree_nodes_annotations_Nova_Annotation_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 1);
+nova_class_interfaces[0] = (nova_Nova_Object*)spectra_tree_nodes_annotations_Nova_Modifier_VTable_val.classInstance;
+spectra_tree_nodes_annotations_Nova_NativeAnnotation_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 1);
+spectra_tree_nodes_annotations_Nova_NativeAnnotationFunctionMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = spectra_tree_nodes_annotations_Nova_AnnotationFunctionMap_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 3);
+nova_class_interfaces[0] = (nova_Nova_Object*)spectra_tree_nodes_annotations_Nova_ModifierFunctionMap_VTable_val.classInstance;
+nova_class_interfaces[1] = (nova_Nova_Object*)spectra_tree_nodes_annotations_Nova_AnnotatableFunctionMap_VTable_val.classInstance;
+nova_class_interfaces[2] = (nova_Nova_Object*)spectra_tree_nodes_annotations_Nova_AnnotatableFunctionMap_VTable_val.classInstance;
+spectra_tree_nodes_annotations_Nova_NativeAnnotationFunctionMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 3);
+spectra_tree_nodes_annotations_Nova_NativeAnnotationPropertyMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = spectra_tree_nodes_annotations_Nova_AnnotationPropertyMap_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 3);
+nova_class_interfaces[0] = (nova_Nova_Object*)spectra_tree_nodes_annotations_Nova_ModifierPropertyMap_VTable_val.classInstance;
+nova_class_interfaces[1] = (nova_Nova_Object*)spectra_tree_nodes_annotations_Nova_AnnotatablePropertyMap_VTable_val.classInstance;
+nova_class_interfaces[2] = (nova_Nova_Object*)spectra_tree_nodes_annotations_Nova_AnnotatablePropertyMap_VTable_val.classInstance;
+spectra_tree_nodes_annotations_Nova_NativeAnnotationPropertyMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 3);
+spectra_tree_nodes_annotations_Nova_OverrideAnnotation_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = spectra_tree_nodes_annotations_Nova_Annotation_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 1);
+nova_class_interfaces[0] = (nova_Nova_Object*)spectra_tree_nodes_annotations_Nova_Modifier_VTable_val.classInstance;
+spectra_tree_nodes_annotations_Nova_OverrideAnnotation_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 1);
+spectra_tree_nodes_annotations_Nova_OverrideAnnotationFunctionMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = spectra_tree_nodes_annotations_Nova_AnnotationFunctionMap_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 3);
+nova_class_interfaces[0] = (nova_Nova_Object*)spectra_tree_nodes_annotations_Nova_ModifierFunctionMap_VTable_val.classInstance;
+nova_class_interfaces[1] = (nova_Nova_Object*)spectra_tree_nodes_annotations_Nova_AnnotatableFunctionMap_VTable_val.classInstance;
+nova_class_interfaces[2] = (nova_Nova_Object*)spectra_tree_nodes_annotations_Nova_AnnotatableFunctionMap_VTable_val.classInstance;
+spectra_tree_nodes_annotations_Nova_OverrideAnnotationFunctionMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 3);
+spectra_tree_nodes_annotations_Nova_OverrideAnnotationPropertyMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = spectra_tree_nodes_annotations_Nova_AnnotationPropertyMap_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 3);
+nova_class_interfaces[0] = (nova_Nova_Object*)spectra_tree_nodes_annotations_Nova_ModifierPropertyMap_VTable_val.classInstance;
+nova_class_interfaces[1] = (nova_Nova_Object*)spectra_tree_nodes_annotations_Nova_AnnotatablePropertyMap_VTable_val.classInstance;
+nova_class_interfaces[2] = (nova_Nova_Object*)spectra_tree_nodes_annotations_Nova_AnnotatablePropertyMap_VTable_val.classInstance;
+spectra_tree_nodes_annotations_Nova_OverrideAnnotationPropertyMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 3);
+spectra_tree_nodes_annotations_Nova_PrivateAnnotation_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = spectra_tree_nodes_annotations_Nova_Annotation_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 1);
+nova_class_interfaces[0] = (nova_Nova_Object*)spectra_tree_nodes_annotations_Nova_VisibilityModifier_VTable_val.classInstance;
+spectra_tree_nodes_annotations_Nova_PrivateAnnotation_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 1);
+spectra_tree_nodes_annotations_Nova_PrivateAnnotationFunctionMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = spectra_tree_nodes_annotations_Nova_AnnotationFunctionMap_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 5);
+nova_class_interfaces[0] = (nova_Nova_Object*)spectra_tree_nodes_annotations_Nova_VisibilityModifierFunctionMap_VTable_val.classInstance;
+nova_class_interfaces[1] = (nova_Nova_Object*)spectra_tree_nodes_annotations_Nova_ModifierFunctionMap_VTable_val.classInstance;
+nova_class_interfaces[2] = (nova_Nova_Object*)spectra_tree_nodes_annotations_Nova_AnnotatableFunctionMap_VTable_val.classInstance;
+nova_class_interfaces[3] = (nova_Nova_Object*)spectra_tree_nodes_annotations_Nova_AnnotatableFunctionMap_VTable_val.classInstance;
+nova_class_interfaces[4] = (nova_Nova_Object*)spectra_tree_nodes_annotations_Nova_AnnotatableFunctionMap_VTable_val.classInstance;
+spectra_tree_nodes_annotations_Nova_PrivateAnnotationFunctionMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 5);
+spectra_tree_nodes_annotations_Nova_PrivateAnnotationPropertyMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = spectra_tree_nodes_annotations_Nova_AnnotationPropertyMap_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 5);
+nova_class_interfaces[0] = (nova_Nova_Object*)spectra_tree_nodes_annotations_Nova_VisibilityModifierPropertyMap_VTable_val.classInstance;
+nova_class_interfaces[1] = (nova_Nova_Object*)spectra_tree_nodes_annotations_Nova_ModifierPropertyMap_VTable_val.classInstance;
+nova_class_interfaces[2] = (nova_Nova_Object*)spectra_tree_nodes_annotations_Nova_AnnotatablePropertyMap_VTable_val.classInstance;
+nova_class_interfaces[3] = (nova_Nova_Object*)spectra_tree_nodes_annotations_Nova_AnnotatablePropertyMap_VTable_val.classInstance;
+nova_class_interfaces[4] = (nova_Nova_Object*)spectra_tree_nodes_annotations_Nova_AnnotatablePropertyMap_VTable_val.classInstance;
+spectra_tree_nodes_annotations_Nova_PrivateAnnotationPropertyMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 5);
+spectra_tree_nodes_annotations_Nova_PublicAnnotation_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = spectra_tree_nodes_annotations_Nova_Annotation_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 1);
+nova_class_interfaces[0] = (nova_Nova_Object*)spectra_tree_nodes_annotations_Nova_VisibilityModifier_VTable_val.classInstance;
+spectra_tree_nodes_annotations_Nova_PublicAnnotation_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 1);
+spectra_tree_nodes_annotations_Nova_PublicAnnotationFunctionMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = spectra_tree_nodes_annotations_Nova_AnnotationFunctionMap_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 5);
+nova_class_interfaces[0] = (nova_Nova_Object*)spectra_tree_nodes_annotations_Nova_VisibilityModifierFunctionMap_VTable_val.classInstance;
+nova_class_interfaces[1] = (nova_Nova_Object*)spectra_tree_nodes_annotations_Nova_ModifierFunctionMap_VTable_val.classInstance;
+nova_class_interfaces[2] = (nova_Nova_Object*)spectra_tree_nodes_annotations_Nova_AnnotatableFunctionMap_VTable_val.classInstance;
+nova_class_interfaces[3] = (nova_Nova_Object*)spectra_tree_nodes_annotations_Nova_AnnotatableFunctionMap_VTable_val.classInstance;
+nova_class_interfaces[4] = (nova_Nova_Object*)spectra_tree_nodes_annotations_Nova_AnnotatableFunctionMap_VTable_val.classInstance;
+spectra_tree_nodes_annotations_Nova_PublicAnnotationFunctionMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 5);
+spectra_tree_nodes_annotations_Nova_PublicAnnotationPropertyMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = spectra_tree_nodes_annotations_Nova_AnnotationPropertyMap_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 5);
+nova_class_interfaces[0] = (nova_Nova_Object*)spectra_tree_nodes_annotations_Nova_VisibilityModifierPropertyMap_VTable_val.classInstance;
+nova_class_interfaces[1] = (nova_Nova_Object*)spectra_tree_nodes_annotations_Nova_ModifierPropertyMap_VTable_val.classInstance;
+nova_class_interfaces[2] = (nova_Nova_Object*)spectra_tree_nodes_annotations_Nova_AnnotatablePropertyMap_VTable_val.classInstance;
+nova_class_interfaces[3] = (nova_Nova_Object*)spectra_tree_nodes_annotations_Nova_AnnotatablePropertyMap_VTable_val.classInstance;
+nova_class_interfaces[4] = (nova_Nova_Object*)spectra_tree_nodes_annotations_Nova_AnnotatablePropertyMap_VTable_val.classInstance;
+spectra_tree_nodes_annotations_Nova_PublicAnnotationPropertyMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 5);
+spectra_tree_nodes_annotations_Nova_PureAnnotation_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = spectra_tree_nodes_annotations_Nova_Annotation_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 1);
+nova_class_interfaces[0] = (nova_Nova_Object*)spectra_tree_nodes_annotations_Nova_Modifier_VTable_val.classInstance;
+spectra_tree_nodes_annotations_Nova_PureAnnotation_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 1);
+spectra_tree_nodes_annotations_Nova_PureAnnotationFunctionMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = spectra_tree_nodes_annotations_Nova_AnnotationFunctionMap_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 3);
+nova_class_interfaces[0] = (nova_Nova_Object*)spectra_tree_nodes_annotations_Nova_ModifierFunctionMap_VTable_val.classInstance;
+nova_class_interfaces[1] = (nova_Nova_Object*)spectra_tree_nodes_annotations_Nova_AnnotatableFunctionMap_VTable_val.classInstance;
+nova_class_interfaces[2] = (nova_Nova_Object*)spectra_tree_nodes_annotations_Nova_AnnotatableFunctionMap_VTable_val.classInstance;
+spectra_tree_nodes_annotations_Nova_PureAnnotationFunctionMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 3);
+spectra_tree_nodes_annotations_Nova_PureAnnotationPropertyMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = spectra_tree_nodes_annotations_Nova_AnnotationPropertyMap_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 3);
+nova_class_interfaces[0] = (nova_Nova_Object*)spectra_tree_nodes_annotations_Nova_ModifierPropertyMap_VTable_val.classInstance;
+nova_class_interfaces[1] = (nova_Nova_Object*)spectra_tree_nodes_annotations_Nova_AnnotatablePropertyMap_VTable_val.classInstance;
+nova_class_interfaces[2] = (nova_Nova_Object*)spectra_tree_nodes_annotations_Nova_AnnotatablePropertyMap_VTable_val.classInstance;
+spectra_tree_nodes_annotations_Nova_PureAnnotationPropertyMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 3);
+spectra_tree_nodes_annotations_Nova_StaticAnnotation_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = spectra_tree_nodes_annotations_Nova_Annotation_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 1);
+nova_class_interfaces[0] = (nova_Nova_Object*)spectra_tree_nodes_annotations_Nova_Modifier_VTable_val.classInstance;
+spectra_tree_nodes_annotations_Nova_StaticAnnotation_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 1);
+spectra_tree_nodes_annotations_Nova_StaticAnnotationFunctionMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = spectra_tree_nodes_annotations_Nova_AnnotationFunctionMap_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 3);
+nova_class_interfaces[0] = (nova_Nova_Object*)spectra_tree_nodes_annotations_Nova_ModifierFunctionMap_VTable_val.classInstance;
+nova_class_interfaces[1] = (nova_Nova_Object*)spectra_tree_nodes_annotations_Nova_AnnotatableFunctionMap_VTable_val.classInstance;
+nova_class_interfaces[2] = (nova_Nova_Object*)spectra_tree_nodes_annotations_Nova_AnnotatableFunctionMap_VTable_val.classInstance;
+spectra_tree_nodes_annotations_Nova_StaticAnnotationFunctionMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 3);
+spectra_tree_nodes_annotations_Nova_StaticAnnotationPropertyMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = spectra_tree_nodes_annotations_Nova_AnnotationPropertyMap_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 3);
+nova_class_interfaces[0] = (nova_Nova_Object*)spectra_tree_nodes_annotations_Nova_ModifierPropertyMap_VTable_val.classInstance;
+nova_class_interfaces[1] = (nova_Nova_Object*)spectra_tree_nodes_annotations_Nova_AnnotatablePropertyMap_VTable_val.classInstance;
+nova_class_interfaces[2] = (nova_Nova_Object*)spectra_tree_nodes_annotations_Nova_AnnotatablePropertyMap_VTable_val.classInstance;
+spectra_tree_nodes_annotations_Nova_StaticAnnotationPropertyMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 3);
+spectra_tree_nodes_annotations_Nova_TargetAnnotation_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = spectra_tree_nodes_annotations_Nova_Annotation_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 0);
+spectra_tree_nodes_annotations_Nova_TargetAnnotation_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 0);
+spectra_tree_nodes_annotations_Nova_TargetAnnotationFunctionMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = spectra_tree_nodes_annotations_Nova_AnnotationFunctionMap_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 1);
+nova_class_interfaces[0] = (nova_Nova_Object*)spectra_tree_nodes_annotations_Nova_AnnotatableFunctionMap_VTable_val.classInstance;
+spectra_tree_nodes_annotations_Nova_TargetAnnotationFunctionMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 1);
+spectra_tree_nodes_annotations_Nova_TargetAnnotationPropertyMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = spectra_tree_nodes_annotations_Nova_AnnotationPropertyMap_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 1);
+nova_class_interfaces[0] = (nova_Nova_Object*)spectra_tree_nodes_annotations_Nova_AnnotatablePropertyMap_VTable_val.classInstance;
+spectra_tree_nodes_annotations_Nova_TargetAnnotationPropertyMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 1);
+spectra_tree_nodes_annotations_Nova_VarAnnotation_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = spectra_tree_nodes_annotations_Nova_Annotation_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 1);
+nova_class_interfaces[0] = (nova_Nova_Object*)spectra_tree_nodes_annotations_Nova_Modifier_VTable_val.classInstance;
+spectra_tree_nodes_annotations_Nova_VarAnnotation_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 1);
+spectra_tree_nodes_annotations_Nova_VarAnnotationFunctionMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = spectra_tree_nodes_annotations_Nova_AnnotationFunctionMap_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 3);
+nova_class_interfaces[0] = (nova_Nova_Object*)spectra_tree_nodes_annotations_Nova_ModifierFunctionMap_VTable_val.classInstance;
+nova_class_interfaces[1] = (nova_Nova_Object*)spectra_tree_nodes_annotations_Nova_AnnotatableFunctionMap_VTable_val.classInstance;
+nova_class_interfaces[2] = (nova_Nova_Object*)spectra_tree_nodes_annotations_Nova_AnnotatableFunctionMap_VTable_val.classInstance;
+spectra_tree_nodes_annotations_Nova_VarAnnotationFunctionMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 3);
+spectra_tree_nodes_annotations_Nova_VarAnnotationPropertyMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = spectra_tree_nodes_annotations_Nova_AnnotationPropertyMap_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 3);
+nova_class_interfaces[0] = (nova_Nova_Object*)spectra_tree_nodes_annotations_Nova_ModifierPropertyMap_VTable_val.classInstance;
+nova_class_interfaces[1] = (nova_Nova_Object*)spectra_tree_nodes_annotations_Nova_AnnotatablePropertyMap_VTable_val.classInstance;
+nova_class_interfaces[2] = (nova_Nova_Object*)spectra_tree_nodes_annotations_Nova_AnnotatablePropertyMap_VTable_val.classInstance;
+spectra_tree_nodes_annotations_Nova_VarAnnotationPropertyMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 3);
+spectra_tree_nodes_annotations_Nova_VisibilityModifier_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = spectra_tree_nodes_annotations_Nova_Annotation_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 1);
+nova_class_interfaces[0] = (nova_Nova_Object*)spectra_tree_nodes_annotations_Nova_Modifier_VTable_val.classInstance;
+spectra_tree_nodes_annotations_Nova_VisibilityModifier_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 1);
+spectra_tree_nodes_annotations_Nova_VisibilityModifierFunctionMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = spectra_tree_nodes_annotations_Nova_AnnotationFunctionMap_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 3);
+nova_class_interfaces[0] = (nova_Nova_Object*)spectra_tree_nodes_annotations_Nova_ModifierFunctionMap_VTable_val.classInstance;
+nova_class_interfaces[1] = (nova_Nova_Object*)spectra_tree_nodes_annotations_Nova_AnnotatableFunctionMap_VTable_val.classInstance;
+nova_class_interfaces[2] = (nova_Nova_Object*)spectra_tree_nodes_annotations_Nova_AnnotatableFunctionMap_VTable_val.classInstance;
+spectra_tree_nodes_annotations_Nova_VisibilityModifierFunctionMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 3);
+spectra_tree_nodes_annotations_Nova_VisibilityModifierPropertyMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = spectra_tree_nodes_annotations_Nova_AnnotationPropertyMap_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 3);
+nova_class_interfaces[0] = (nova_Nova_Object*)spectra_tree_nodes_annotations_Nova_ModifierPropertyMap_VTable_val.classInstance;
+nova_class_interfaces[1] = (nova_Nova_Object*)spectra_tree_nodes_annotations_Nova_AnnotatablePropertyMap_VTable_val.classInstance;
+nova_class_interfaces[2] = (nova_Nova_Object*)spectra_tree_nodes_annotations_Nova_AnnotatablePropertyMap_VTable_val.classInstance;
+spectra_tree_nodes_annotations_Nova_VisibilityModifierPropertyMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 3);
+spectra_tree_nodes_annotations_Nova_VisibleAnnotation_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = spectra_tree_nodes_annotations_Nova_Annotation_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 1);
+nova_class_interfaces[0] = (nova_Nova_Object*)spectra_tree_nodes_annotations_Nova_VisibilityModifier_VTable_val.classInstance;
+spectra_tree_nodes_annotations_Nova_VisibleAnnotation_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 1);
+spectra_tree_nodes_annotations_Nova_VisibleAnnotationFunctionMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = spectra_tree_nodes_annotations_Nova_AnnotationFunctionMap_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 5);
+nova_class_interfaces[0] = (nova_Nova_Object*)spectra_tree_nodes_annotations_Nova_VisibilityModifierFunctionMap_VTable_val.classInstance;
+nova_class_interfaces[1] = (nova_Nova_Object*)spectra_tree_nodes_annotations_Nova_ModifierFunctionMap_VTable_val.classInstance;
+nova_class_interfaces[2] = (nova_Nova_Object*)spectra_tree_nodes_annotations_Nova_AnnotatableFunctionMap_VTable_val.classInstance;
+nova_class_interfaces[3] = (nova_Nova_Object*)spectra_tree_nodes_annotations_Nova_AnnotatableFunctionMap_VTable_val.classInstance;
+nova_class_interfaces[4] = (nova_Nova_Object*)spectra_tree_nodes_annotations_Nova_AnnotatableFunctionMap_VTable_val.classInstance;
+spectra_tree_nodes_annotations_Nova_VisibleAnnotationFunctionMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 5);
+spectra_tree_nodes_annotations_Nova_VisibleAnnotationPropertyMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = spectra_tree_nodes_annotations_Nova_AnnotationPropertyMap_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 5);
+nova_class_interfaces[0] = (nova_Nova_Object*)spectra_tree_nodes_annotations_Nova_VisibilityModifierPropertyMap_VTable_val.classInstance;
+nova_class_interfaces[1] = (nova_Nova_Object*)spectra_tree_nodes_annotations_Nova_ModifierPropertyMap_VTable_val.classInstance;
+nova_class_interfaces[2] = (nova_Nova_Object*)spectra_tree_nodes_annotations_Nova_AnnotatablePropertyMap_VTable_val.classInstance;
+nova_class_interfaces[3] = (nova_Nova_Object*)spectra_tree_nodes_annotations_Nova_AnnotatablePropertyMap_VTable_val.classInstance;
+nova_class_interfaces[4] = (nova_Nova_Object*)spectra_tree_nodes_annotations_Nova_AnnotatablePropertyMap_VTable_val.classInstance;
+spectra_tree_nodes_annotations_Nova_VisibleAnnotationPropertyMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 5);
+spectra_tree_nodes_arrays_Nova_ArrayAccess_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = spectra_tree_nodes_Nova_Node_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 0);
+spectra_tree_nodes_arrays_Nova_ArrayAccess_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 0);
+spectra_tree_nodes_arrays_Nova_ArrayAccessFunctionMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = spectra_tree_nodes_Nova_NodeFunctionMap_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 1);
+nova_class_interfaces[0] = (nova_Nova_Object*)spectra_tree_nodes_annotations_Nova_AnnotatableFunctionMap_VTable_val.classInstance;
+spectra_tree_nodes_arrays_Nova_ArrayAccessFunctionMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 1);
+spectra_tree_nodes_arrays_Nova_ArrayAccessPropertyMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = spectra_tree_nodes_Nova_NodePropertyMap_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 1);
+nova_class_interfaces[0] = (nova_Nova_Object*)spectra_tree_nodes_annotations_Nova_AnnotatablePropertyMap_VTable_val.classInstance;
+spectra_tree_nodes_arrays_Nova_ArrayAccessPropertyMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 1);
+spectra_tree_nodes_controlstructures_Nova_ControlStructure_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = spectra_tree_nodes_Nova_Node_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 0);
+spectra_tree_nodes_controlstructures_Nova_ControlStructure_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 0);
+spectra_tree_nodes_controlstructures_Nova_ControlStructureFunctionMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = spectra_tree_nodes_Nova_NodeFunctionMap_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 1);
+nova_class_interfaces[0] = (nova_Nova_Object*)spectra_tree_nodes_annotations_Nova_AnnotatableFunctionMap_VTable_val.classInstance;
+spectra_tree_nodes_controlstructures_Nova_ControlStructureFunctionMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 1);
+spectra_tree_nodes_controlstructures_Nova_ControlStructurePropertyMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = spectra_tree_nodes_Nova_NodePropertyMap_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 1);
+nova_class_interfaces[0] = (nova_Nova_Object*)spectra_tree_nodes_annotations_Nova_AnnotatablePropertyMap_VTable_val.classInstance;
+spectra_tree_nodes_controlstructures_Nova_ControlStructurePropertyMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 1);
+spectra_tree_nodes_controlstructures_Nova_ElseStatement_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = spectra_tree_nodes_controlstructures_Nova_ControlStructure_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 0);
+spectra_tree_nodes_controlstructures_Nova_ElseStatement_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 0);
+spectra_tree_nodes_controlstructures_Nova_ElseStatementFunctionMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = spectra_tree_nodes_controlstructures_Nova_ControlStructureFunctionMap_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 1);
+nova_class_interfaces[0] = (nova_Nova_Object*)spectra_tree_nodes_annotations_Nova_AnnotatableFunctionMap_VTable_val.classInstance;
+spectra_tree_nodes_controlstructures_Nova_ElseStatementFunctionMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 1);
+spectra_tree_nodes_controlstructures_Nova_ElseStatementPropertyMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = spectra_tree_nodes_controlstructures_Nova_ControlStructurePropertyMap_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 1);
+nova_class_interfaces[0] = (nova_Nova_Object*)spectra_tree_nodes_annotations_Nova_AnnotatablePropertyMap_VTable_val.classInstance;
+spectra_tree_nodes_controlstructures_Nova_ElseStatementPropertyMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 1);
+spectra_tree_nodes_controlstructures_Nova_IfStatement_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = spectra_tree_nodes_controlstructures_Nova_ControlStructure_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 0);
+spectra_tree_nodes_controlstructures_Nova_IfStatement_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 0);
+spectra_tree_nodes_controlstructures_Nova_IfStatementFunctionMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = spectra_tree_nodes_controlstructures_Nova_ControlStructureFunctionMap_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 1);
+nova_class_interfaces[0] = (nova_Nova_Object*)spectra_tree_nodes_annotations_Nova_AnnotatableFunctionMap_VTable_val.classInstance;
+spectra_tree_nodes_controlstructures_Nova_IfStatementFunctionMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 1);
+spectra_tree_nodes_controlstructures_Nova_IfStatementPropertyMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = spectra_tree_nodes_controlstructures_Nova_ControlStructurePropertyMap_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 1);
+nova_class_interfaces[0] = (nova_Nova_Object*)spectra_tree_nodes_annotations_Nova_AnnotatablePropertyMap_VTable_val.classInstance;
+spectra_tree_nodes_controlstructures_Nova_IfStatementPropertyMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 1);
+spectra_tree_nodes_controlstructures_loops_Nova_ForEachLoop_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = spectra_tree_nodes_controlstructures_loops_Nova_Loop_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 0);
+spectra_tree_nodes_controlstructures_loops_Nova_ForEachLoop_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 0);
+spectra_tree_nodes_controlstructures_loops_Nova_ForEachLoopFunctionMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = spectra_tree_nodes_controlstructures_loops_Nova_LoopFunctionMap_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 1);
+nova_class_interfaces[0] = (nova_Nova_Object*)spectra_tree_nodes_annotations_Nova_AnnotatableFunctionMap_VTable_val.classInstance;
+spectra_tree_nodes_controlstructures_loops_Nova_ForEachLoopFunctionMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 1);
+spectra_tree_nodes_controlstructures_loops_Nova_ForEachLoopPropertyMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = spectra_tree_nodes_controlstructures_loops_Nova_LoopPropertyMap_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 1);
+nova_class_interfaces[0] = (nova_Nova_Object*)spectra_tree_nodes_annotations_Nova_AnnotatablePropertyMap_VTable_val.classInstance;
+spectra_tree_nodes_controlstructures_loops_Nova_ForEachLoopPropertyMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 1);
+spectra_tree_nodes_controlstructures_loops_Nova_Loop_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = spectra_tree_nodes_controlstructures_Nova_ControlStructure_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 0);
+spectra_tree_nodes_controlstructures_loops_Nova_Loop_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 0);
+spectra_tree_nodes_controlstructures_loops_Nova_LoopFunctionMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = spectra_tree_nodes_controlstructures_Nova_ControlStructureFunctionMap_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 1);
+nova_class_interfaces[0] = (nova_Nova_Object*)spectra_tree_nodes_annotations_Nova_AnnotatableFunctionMap_VTable_val.classInstance;
+spectra_tree_nodes_controlstructures_loops_Nova_LoopFunctionMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 1);
+spectra_tree_nodes_controlstructures_loops_Nova_LoopPropertyMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = spectra_tree_nodes_controlstructures_Nova_ControlStructurePropertyMap_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 1);
+nova_class_interfaces[0] = (nova_Nova_Object*)spectra_tree_nodes_annotations_Nova_AnnotatablePropertyMap_VTable_val.classInstance;
+spectra_tree_nodes_controlstructures_loops_Nova_LoopPropertyMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 1);
+spectra_tree_nodes_controlstructures_loops_Nova_WhileLoop_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = spectra_tree_nodes_controlstructures_loops_Nova_Loop_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 0);
+spectra_tree_nodes_controlstructures_loops_Nova_WhileLoop_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 0);
+spectra_tree_nodes_controlstructures_loops_Nova_WhileLoopFunctionMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = spectra_tree_nodes_controlstructures_loops_Nova_LoopFunctionMap_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 1);
+nova_class_interfaces[0] = (nova_Nova_Object*)spectra_tree_nodes_annotations_Nova_AnnotatableFunctionMap_VTable_val.classInstance;
+spectra_tree_nodes_controlstructures_loops_Nova_WhileLoopFunctionMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 1);
+spectra_tree_nodes_controlstructures_loops_Nova_WhileLoopPropertyMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = spectra_tree_nodes_controlstructures_loops_Nova_LoopPropertyMap_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 1);
+nova_class_interfaces[0] = (nova_Nova_Object*)spectra_tree_nodes_annotations_Nova_AnnotatablePropertyMap_VTable_val.classInstance;
+spectra_tree_nodes_controlstructures_loops_Nova_WhileLoopPropertyMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 1);
+spectra_tree_nodes_exceptionhandling_Nova_Catch_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = spectra_tree_nodes_Nova_Node_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 0);
+spectra_tree_nodes_exceptionhandling_Nova_Catch_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 0);
+spectra_tree_nodes_exceptionhandling_Nova_CatchFunctionMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = spectra_tree_nodes_Nova_NodeFunctionMap_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 1);
+nova_class_interfaces[0] = (nova_Nova_Object*)spectra_tree_nodes_annotations_Nova_AnnotatableFunctionMap_VTable_val.classInstance;
+spectra_tree_nodes_exceptionhandling_Nova_CatchFunctionMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 1);
+spectra_tree_nodes_exceptionhandling_Nova_CatchPropertyMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = spectra_tree_nodes_Nova_NodePropertyMap_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 1);
+nova_class_interfaces[0] = (nova_Nova_Object*)spectra_tree_nodes_annotations_Nova_AnnotatablePropertyMap_VTable_val.classInstance;
+spectra_tree_nodes_exceptionhandling_Nova_CatchPropertyMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 1);
+spectra_tree_nodes_exceptionhandling_Nova_ExceptionHandler_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = spectra_tree_nodes_Nova_Node_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 0);
+spectra_tree_nodes_exceptionhandling_Nova_ExceptionHandler_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 0);
+spectra_tree_nodes_exceptionhandling_Nova_ExceptionHandlerFunctionMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = spectra_tree_nodes_Nova_NodeFunctionMap_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 1);
+nova_class_interfaces[0] = (nova_Nova_Object*)spectra_tree_nodes_annotations_Nova_AnnotatableFunctionMap_VTable_val.classInstance;
+spectra_tree_nodes_exceptionhandling_Nova_ExceptionHandlerFunctionMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 1);
+spectra_tree_nodes_exceptionhandling_Nova_ExceptionHandlerPropertyMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = spectra_tree_nodes_Nova_NodePropertyMap_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 1);
+nova_class_interfaces[0] = (nova_Nova_Object*)spectra_tree_nodes_annotations_Nova_AnnotatablePropertyMap_VTable_val.classInstance;
+spectra_tree_nodes_exceptionhandling_Nova_ExceptionHandlerPropertyMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 1);
+spectra_tree_nodes_exceptionhandling_Nova_Throw_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = spectra_tree_nodes_exceptionhandling_Nova_ExceptionHandler_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 0);
+spectra_tree_nodes_exceptionhandling_Nova_Throw_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 0);
+spectra_tree_nodes_exceptionhandling_Nova_ThrowFunctionMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = spectra_tree_nodes_exceptionhandling_Nova_ExceptionHandlerFunctionMap_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 1);
+nova_class_interfaces[0] = (nova_Nova_Object*)spectra_tree_nodes_annotations_Nova_AnnotatableFunctionMap_VTable_val.classInstance;
+spectra_tree_nodes_exceptionhandling_Nova_ThrowFunctionMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 1);
+spectra_tree_nodes_exceptionhandling_Nova_ThrowPropertyMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = spectra_tree_nodes_exceptionhandling_Nova_ExceptionHandlerPropertyMap_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 1);
+nova_class_interfaces[0] = (nova_Nova_Object*)spectra_tree_nodes_annotations_Nova_AnnotatablePropertyMap_VTable_val.classInstance;
+spectra_tree_nodes_exceptionhandling_Nova_ThrowPropertyMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 1);
+spectra_tree_nodes_exceptionhandling_Nova_Try_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = spectra_tree_nodes_exceptionhandling_Nova_ExceptionHandler_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 0);
+spectra_tree_nodes_exceptionhandling_Nova_Try_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 0);
+spectra_tree_nodes_exceptionhandling_Nova_TryFunctionMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = spectra_tree_nodes_exceptionhandling_Nova_ExceptionHandlerFunctionMap_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 1);
+nova_class_interfaces[0] = (nova_Nova_Object*)spectra_tree_nodes_annotations_Nova_AnnotatableFunctionMap_VTable_val.classInstance;
+spectra_tree_nodes_exceptionhandling_Nova_TryFunctionMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 1);
+spectra_tree_nodes_exceptionhandling_Nova_TryPropertyMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = spectra_tree_nodes_exceptionhandling_Nova_ExceptionHandlerPropertyMap_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 1);
+nova_class_interfaces[0] = (nova_Nova_Object*)spectra_tree_nodes_annotations_Nova_AnnotatablePropertyMap_VTable_val.classInstance;
+spectra_tree_nodes_exceptionhandling_Nova_TryPropertyMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 1);
+spectra_tree_nodes_functions_Nova_AccessorFunction_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = spectra_tree_nodes_functions_Nova_PropertyFunction_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 0);
+spectra_tree_nodes_functions_Nova_AccessorFunction_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 0);
+spectra_tree_nodes_functions_Nova_AccessorFunctionFunctionMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = spectra_tree_nodes_functions_Nova_PropertyFunctionFunctionMap_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 6);
+nova_class_interfaces[0] = (nova_Nova_Object*)spectra_tree_nodes_functions_Nova_CallableFunctionFunctionMap_VTable_val.classInstance;
+nova_class_interfaces[1] = (nova_Nova_Object*)spectra_tree_nodes_generics_Nova_GenericCompatibleFunctionMap_VTable_val.classInstance;
+nova_class_interfaces[2] = (nova_Nova_Object*)spectra_tree_nodes_annotations_Nova_AnnotatableFunctionMap_VTable_val.classInstance;
+nova_class_interfaces[3] = (nova_Nova_Object*)spectra_tree_nodes_generics_Nova_GenericCompatibleFunctionMap_VTable_val.classInstance;
+nova_class_interfaces[4] = (nova_Nova_Object*)spectra_tree_nodes_annotations_Nova_AnnotatableFunctionMap_VTable_val.classInstance;
+nova_class_interfaces[5] = (nova_Nova_Object*)spectra_tree_nodes_annotations_Nova_AnnotatableFunctionMap_VTable_val.classInstance;
+spectra_tree_nodes_functions_Nova_AccessorFunctionFunctionMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 6);
+spectra_tree_nodes_functions_Nova_AccessorFunctionPropertyMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = spectra_tree_nodes_functions_Nova_PropertyFunctionPropertyMap_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 6);
+nova_class_interfaces[0] = (nova_Nova_Object*)spectra_tree_nodes_functions_Nova_CallableFunctionPropertyMap_VTable_val.classInstance;
+nova_class_interfaces[1] = (nova_Nova_Object*)spectra_tree_nodes_generics_Nova_GenericCompatiblePropertyMap_VTable_val.classInstance;
+nova_class_interfaces[2] = (nova_Nova_Object*)spectra_tree_nodes_annotations_Nova_AnnotatablePropertyMap_VTable_val.classInstance;
+nova_class_interfaces[3] = (nova_Nova_Object*)spectra_tree_nodes_generics_Nova_GenericCompatiblePropertyMap_VTable_val.classInstance;
+nova_class_interfaces[4] = (nova_Nova_Object*)spectra_tree_nodes_annotations_Nova_AnnotatablePropertyMap_VTable_val.classInstance;
+nova_class_interfaces[5] = (nova_Nova_Object*)spectra_tree_nodes_annotations_Nova_AnnotatablePropertyMap_VTable_val.classInstance;
+spectra_tree_nodes_functions_Nova_AccessorFunctionPropertyMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 6);
+spectra_tree_nodes_functions_Nova_ArrayInstantiation_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = spectra_tree_nodes_functions_Nova_Instantiation_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 0);
+spectra_tree_nodes_functions_Nova_ArrayInstantiation_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 0);
+spectra_tree_nodes_functions_Nova_ArrayInstantiationFunctionMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = spectra_tree_nodes_functions_Nova_InstantiationFunctionMap_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 4);
+nova_class_interfaces[0] = (nova_Nova_Object*)spectra_tree_nodes_Nova_AccessibleFunctionMap_VTable_val.classInstance;
+nova_class_interfaces[1] = (nova_Nova_Object*)spectra_tree_nodes_operations_Nova_AssignableFunctionMap_VTable_val.classInstance;
+nova_class_interfaces[2] = (nova_Nova_Object*)spectra_tree_nodes_annotations_Nova_AnnotatableFunctionMap_VTable_val.classInstance;
+nova_class_interfaces[3] = (nova_Nova_Object*)spectra_tree_nodes_annotations_Nova_AnnotatableFunctionMap_VTable_val.classInstance;
+spectra_tree_nodes_functions_Nova_ArrayInstantiationFunctionMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 4);
+spectra_tree_nodes_functions_Nova_ArrayInstantiationPropertyMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = spectra_tree_nodes_functions_Nova_InstantiationPropertyMap_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 4);
+nova_class_interfaces[0] = (nova_Nova_Object*)spectra_tree_nodes_Nova_AccessiblePropertyMap_VTable_val.classInstance;
+nova_class_interfaces[1] = (nova_Nova_Object*)spectra_tree_nodes_operations_Nova_AssignablePropertyMap_VTable_val.classInstance;
+nova_class_interfaces[2] = (nova_Nova_Object*)spectra_tree_nodes_annotations_Nova_AnnotatablePropertyMap_VTable_val.classInstance;
+nova_class_interfaces[3] = (nova_Nova_Object*)spectra_tree_nodes_annotations_Nova_AnnotatablePropertyMap_VTable_val.classInstance;
+spectra_tree_nodes_functions_Nova_ArrayInstantiationPropertyMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 4);
+spectra_tree_nodes_functions_Nova_BodyFunction_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = spectra_tree_nodes_functions_Nova_FunctionDeclaration_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 0);
+spectra_tree_nodes_functions_Nova_BodyFunction_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 0);
+spectra_tree_nodes_functions_Nova_BodyFunctionFunctionMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = spectra_tree_nodes_functions_Nova_FunctionDeclarationFunctionMap_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 6);
+nova_class_interfaces[0] = (nova_Nova_Object*)spectra_tree_nodes_functions_Nova_CallableFunctionFunctionMap_VTable_val.classInstance;
+nova_class_interfaces[1] = (nova_Nova_Object*)spectra_tree_nodes_generics_Nova_GenericCompatibleFunctionMap_VTable_val.classInstance;
+nova_class_interfaces[2] = (nova_Nova_Object*)spectra_tree_nodes_annotations_Nova_AnnotatableFunctionMap_VTable_val.classInstance;
+nova_class_interfaces[3] = (nova_Nova_Object*)spectra_tree_nodes_generics_Nova_GenericCompatibleFunctionMap_VTable_val.classInstance;
+nova_class_interfaces[4] = (nova_Nova_Object*)spectra_tree_nodes_annotations_Nova_AnnotatableFunctionMap_VTable_val.classInstance;
+nova_class_interfaces[5] = (nova_Nova_Object*)spectra_tree_nodes_annotations_Nova_AnnotatableFunctionMap_VTable_val.classInstance;
+spectra_tree_nodes_functions_Nova_BodyFunctionFunctionMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 6);
+spectra_tree_nodes_functions_Nova_BodyFunctionPropertyMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = spectra_tree_nodes_functions_Nova_FunctionDeclarationPropertyMap_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 6);
+nova_class_interfaces[0] = (nova_Nova_Object*)spectra_tree_nodes_functions_Nova_CallableFunctionPropertyMap_VTable_val.classInstance;
+nova_class_interfaces[1] = (nova_Nova_Object*)spectra_tree_nodes_generics_Nova_GenericCompatiblePropertyMap_VTable_val.classInstance;
+nova_class_interfaces[2] = (nova_Nova_Object*)spectra_tree_nodes_annotations_Nova_AnnotatablePropertyMap_VTable_val.classInstance;
+nova_class_interfaces[3] = (nova_Nova_Object*)spectra_tree_nodes_generics_Nova_GenericCompatiblePropertyMap_VTable_val.classInstance;
+nova_class_interfaces[4] = (nova_Nova_Object*)spectra_tree_nodes_annotations_Nova_AnnotatablePropertyMap_VTable_val.classInstance;
+nova_class_interfaces[5] = (nova_Nova_Object*)spectra_tree_nodes_annotations_Nova_AnnotatablePropertyMap_VTable_val.classInstance;
+spectra_tree_nodes_functions_Nova_BodyFunctionPropertyMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 6);
+spectra_tree_nodes_functions_Nova_CallableFunction_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = (nova_meta_Nova_Class*)nova_null;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 1);
+nova_class_interfaces[0] = (nova_Nova_Object*)spectra_tree_nodes_generics_Nova_GenericCompatible_VTable_val.classInstance;
+spectra_tree_nodes_functions_Nova_CallableFunction_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 1);
+spectra_tree_nodes_functions_Nova_CallableFunctionFunctionMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = nova_meta_Nova_FunctionMap_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 2);
+nova_class_interfaces[0] = (nova_Nova_Object*)spectra_tree_nodes_generics_Nova_GenericCompatibleFunctionMap_VTable_val.classInstance;
+nova_class_interfaces[1] = (nova_Nova_Object*)spectra_tree_nodes_annotations_Nova_AnnotatableFunctionMap_VTable_val.classInstance;
+spectra_tree_nodes_functions_Nova_CallableFunctionFunctionMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 2);
+spectra_tree_nodes_functions_Nova_CallableFunctionPropertyMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = nova_meta_Nova_PropertyMap_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 2);
+nova_class_interfaces[0] = (nova_Nova_Object*)spectra_tree_nodes_generics_Nova_GenericCompatiblePropertyMap_VTable_val.classInstance;
+nova_class_interfaces[1] = (nova_Nova_Object*)spectra_tree_nodes_annotations_Nova_AnnotatablePropertyMap_VTable_val.classInstance;
+spectra_tree_nodes_functions_Nova_CallableFunctionPropertyMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 2);
+spectra_tree_nodes_functions_Nova_Constructor_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = spectra_tree_nodes_functions_Nova_BodyFunction_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 0);
+spectra_tree_nodes_functions_Nova_Constructor_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 0);
+spectra_tree_nodes_functions_Nova_ConstructorFunctionMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = spectra_tree_nodes_functions_Nova_BodyFunctionFunctionMap_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 6);
+nova_class_interfaces[0] = (nova_Nova_Object*)spectra_tree_nodes_functions_Nova_CallableFunctionFunctionMap_VTable_val.classInstance;
+nova_class_interfaces[1] = (nova_Nova_Object*)spectra_tree_nodes_generics_Nova_GenericCompatibleFunctionMap_VTable_val.classInstance;
+nova_class_interfaces[2] = (nova_Nova_Object*)spectra_tree_nodes_annotations_Nova_AnnotatableFunctionMap_VTable_val.classInstance;
+nova_class_interfaces[3] = (nova_Nova_Object*)spectra_tree_nodes_generics_Nova_GenericCompatibleFunctionMap_VTable_val.classInstance;
+nova_class_interfaces[4] = (nova_Nova_Object*)spectra_tree_nodes_annotations_Nova_AnnotatableFunctionMap_VTable_val.classInstance;
+nova_class_interfaces[5] = (nova_Nova_Object*)spectra_tree_nodes_annotations_Nova_AnnotatableFunctionMap_VTable_val.classInstance;
+spectra_tree_nodes_functions_Nova_ConstructorFunctionMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 6);
+spectra_tree_nodes_functions_Nova_ConstructorPropertyMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = spectra_tree_nodes_functions_Nova_BodyFunctionPropertyMap_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 6);
+nova_class_interfaces[0] = (nova_Nova_Object*)spectra_tree_nodes_functions_Nova_CallableFunctionPropertyMap_VTable_val.classInstance;
+nova_class_interfaces[1] = (nova_Nova_Object*)spectra_tree_nodes_generics_Nova_GenericCompatiblePropertyMap_VTable_val.classInstance;
+nova_class_interfaces[2] = (nova_Nova_Object*)spectra_tree_nodes_annotations_Nova_AnnotatablePropertyMap_VTable_val.classInstance;
+nova_class_interfaces[3] = (nova_Nova_Object*)spectra_tree_nodes_generics_Nova_GenericCompatiblePropertyMap_VTable_val.classInstance;
+nova_class_interfaces[4] = (nova_Nova_Object*)spectra_tree_nodes_annotations_Nova_AnnotatablePropertyMap_VTable_val.classInstance;
+nova_class_interfaces[5] = (nova_Nova_Object*)spectra_tree_nodes_annotations_Nova_AnnotatablePropertyMap_VTable_val.classInstance;
+spectra_tree_nodes_functions_Nova_ConstructorPropertyMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 6);
+spectra_tree_nodes_functions_Nova_EmptyArrayBracket_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = spectra_tree_nodes_Nova_Value_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 0);
+spectra_tree_nodes_functions_Nova_EmptyArrayBracket_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 0);
+spectra_tree_nodes_functions_Nova_EmptyArrayBracketFunctionMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = spectra_tree_nodes_Nova_ValueFunctionMap_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 1);
+nova_class_interfaces[0] = (nova_Nova_Object*)spectra_tree_nodes_annotations_Nova_AnnotatableFunctionMap_VTable_val.classInstance;
+spectra_tree_nodes_functions_Nova_EmptyArrayBracketFunctionMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 1);
+spectra_tree_nodes_functions_Nova_EmptyArrayBracketPropertyMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = spectra_tree_nodes_Nova_ValuePropertyMap_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 1);
+nova_class_interfaces[0] = (nova_Nova_Object*)spectra_tree_nodes_annotations_Nova_AnnotatablePropertyMap_VTable_val.classInstance;
+spectra_tree_nodes_functions_Nova_EmptyArrayBracketPropertyMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 1);
+spectra_tree_nodes_functions_Nova_FunctionArgumentList_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = spectra_tree_nodes_Nova_ArgumentList_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 0);
+spectra_tree_nodes_functions_Nova_FunctionArgumentList_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 0);
+spectra_tree_nodes_functions_Nova_FunctionArgumentListFunctionMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = spectra_tree_nodes_Nova_ArgumentListFunctionMap_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 1);
+nova_class_interfaces[0] = (nova_Nova_Object*)spectra_tree_nodes_annotations_Nova_AnnotatableFunctionMap_VTable_val.classInstance;
+spectra_tree_nodes_functions_Nova_FunctionArgumentListFunctionMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 1);
+spectra_tree_nodes_functions_Nova_FunctionArgumentListPropertyMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = spectra_tree_nodes_Nova_ArgumentListPropertyMap_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 1);
+nova_class_interfaces[0] = (nova_Nova_Object*)spectra_tree_nodes_annotations_Nova_AnnotatablePropertyMap_VTable_val.classInstance;
+spectra_tree_nodes_functions_Nova_FunctionArgumentListPropertyMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 1);
+spectra_tree_nodes_functions_Nova_FunctionCall_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = spectra_tree_nodes_variables_Nova_Variable_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 0);
+spectra_tree_nodes_functions_Nova_FunctionCall_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 0);
+spectra_tree_nodes_functions_Nova_FunctionCallFunctionMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = spectra_tree_nodes_variables_Nova_VariableFunctionMap_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 4);
+nova_class_interfaces[0] = (nova_Nova_Object*)spectra_tree_nodes_Nova_AccessibleFunctionMap_VTable_val.classInstance;
+nova_class_interfaces[1] = (nova_Nova_Object*)spectra_tree_nodes_operations_Nova_AssignableFunctionMap_VTable_val.classInstance;
+nova_class_interfaces[2] = (nova_Nova_Object*)spectra_tree_nodes_annotations_Nova_AnnotatableFunctionMap_VTable_val.classInstance;
+nova_class_interfaces[3] = (nova_Nova_Object*)spectra_tree_nodes_annotations_Nova_AnnotatableFunctionMap_VTable_val.classInstance;
+spectra_tree_nodes_functions_Nova_FunctionCallFunctionMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 4);
+spectra_tree_nodes_functions_Nova_FunctionCallPropertyMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = spectra_tree_nodes_variables_Nova_VariablePropertyMap_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 4);
+nova_class_interfaces[0] = (nova_Nova_Object*)spectra_tree_nodes_Nova_AccessiblePropertyMap_VTable_val.classInstance;
+nova_class_interfaces[1] = (nova_Nova_Object*)spectra_tree_nodes_operations_Nova_AssignablePropertyMap_VTable_val.classInstance;
+nova_class_interfaces[2] = (nova_Nova_Object*)spectra_tree_nodes_annotations_Nova_AnnotatablePropertyMap_VTable_val.classInstance;
+nova_class_interfaces[3] = (nova_Nova_Object*)spectra_tree_nodes_annotations_Nova_AnnotatablePropertyMap_VTable_val.classInstance;
+spectra_tree_nodes_functions_Nova_FunctionCallPropertyMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 4);
+spectra_tree_nodes_functions_Nova_FunctionDeclaration_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = spectra_tree_nodes_variables_Nova_InstanceDeclaration_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 2);
+nova_class_interfaces[0] = (nova_Nova_Object*)spectra_tree_nodes_functions_Nova_CallableFunction_VTable_val.classInstance;
+nova_class_interfaces[1] = (nova_Nova_Object*)spectra_tree_nodes_generics_Nova_GenericCompatible_VTable_val.classInstance;
+spectra_tree_nodes_functions_Nova_FunctionDeclaration_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 2);
+spectra_tree_nodes_functions_Nova_FunctionDeclarationFunctionMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = spectra_tree_nodes_variables_Nova_InstanceDeclarationFunctionMap_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 6);
+nova_class_interfaces[0] = (nova_Nova_Object*)spectra_tree_nodes_functions_Nova_CallableFunctionFunctionMap_VTable_val.classInstance;
+nova_class_interfaces[1] = (nova_Nova_Object*)spectra_tree_nodes_generics_Nova_GenericCompatibleFunctionMap_VTable_val.classInstance;
+nova_class_interfaces[2] = (nova_Nova_Object*)spectra_tree_nodes_annotations_Nova_AnnotatableFunctionMap_VTable_val.classInstance;
+nova_class_interfaces[3] = (nova_Nova_Object*)spectra_tree_nodes_generics_Nova_GenericCompatibleFunctionMap_VTable_val.classInstance;
+nova_class_interfaces[4] = (nova_Nova_Object*)spectra_tree_nodes_annotations_Nova_AnnotatableFunctionMap_VTable_val.classInstance;
+nova_class_interfaces[5] = (nova_Nova_Object*)spectra_tree_nodes_annotations_Nova_AnnotatableFunctionMap_VTable_val.classInstance;
+spectra_tree_nodes_functions_Nova_FunctionDeclarationFunctionMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 6);
+spectra_tree_nodes_functions_Nova_FunctionDeclarationPropertyMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = spectra_tree_nodes_variables_Nova_InstanceDeclarationPropertyMap_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 6);
+nova_class_interfaces[0] = (nova_Nova_Object*)spectra_tree_nodes_functions_Nova_CallableFunctionPropertyMap_VTable_val.classInstance;
+nova_class_interfaces[1] = (nova_Nova_Object*)spectra_tree_nodes_generics_Nova_GenericCompatiblePropertyMap_VTable_val.classInstance;
+nova_class_interfaces[2] = (nova_Nova_Object*)spectra_tree_nodes_annotations_Nova_AnnotatablePropertyMap_VTable_val.classInstance;
+nova_class_interfaces[3] = (nova_Nova_Object*)spectra_tree_nodes_generics_Nova_GenericCompatiblePropertyMap_VTable_val.classInstance;
+nova_class_interfaces[4] = (nova_Nova_Object*)spectra_tree_nodes_annotations_Nova_AnnotatablePropertyMap_VTable_val.classInstance;
+nova_class_interfaces[5] = (nova_Nova_Object*)spectra_tree_nodes_annotations_Nova_AnnotatablePropertyMap_VTable_val.classInstance;
+spectra_tree_nodes_functions_Nova_FunctionDeclarationPropertyMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 6);
+spectra_tree_nodes_functions_Nova_InitializationFunction_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = spectra_tree_nodes_functions_Nova_BodyFunction_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 0);
+spectra_tree_nodes_functions_Nova_InitializationFunction_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 0);
+spectra_tree_nodes_functions_Nova_InitializationFunctionFunctionMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = spectra_tree_nodes_functions_Nova_BodyFunctionFunctionMap_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 6);
+nova_class_interfaces[0] = (nova_Nova_Object*)spectra_tree_nodes_functions_Nova_CallableFunctionFunctionMap_VTable_val.classInstance;
+nova_class_interfaces[1] = (nova_Nova_Object*)spectra_tree_nodes_generics_Nova_GenericCompatibleFunctionMap_VTable_val.classInstance;
+nova_class_interfaces[2] = (nova_Nova_Object*)spectra_tree_nodes_annotations_Nova_AnnotatableFunctionMap_VTable_val.classInstance;
+nova_class_interfaces[3] = (nova_Nova_Object*)spectra_tree_nodes_generics_Nova_GenericCompatibleFunctionMap_VTable_val.classInstance;
+nova_class_interfaces[4] = (nova_Nova_Object*)spectra_tree_nodes_annotations_Nova_AnnotatableFunctionMap_VTable_val.classInstance;
+nova_class_interfaces[5] = (nova_Nova_Object*)spectra_tree_nodes_annotations_Nova_AnnotatableFunctionMap_VTable_val.classInstance;
+spectra_tree_nodes_functions_Nova_InitializationFunctionFunctionMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 6);
+spectra_tree_nodes_functions_Nova_InitializationFunctionPropertyMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = spectra_tree_nodes_functions_Nova_BodyFunctionPropertyMap_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 6);
+nova_class_interfaces[0] = (nova_Nova_Object*)spectra_tree_nodes_functions_Nova_CallableFunctionPropertyMap_VTable_val.classInstance;
+nova_class_interfaces[1] = (nova_Nova_Object*)spectra_tree_nodes_generics_Nova_GenericCompatiblePropertyMap_VTable_val.classInstance;
+nova_class_interfaces[2] = (nova_Nova_Object*)spectra_tree_nodes_annotations_Nova_AnnotatablePropertyMap_VTable_val.classInstance;
+nova_class_interfaces[3] = (nova_Nova_Object*)spectra_tree_nodes_generics_Nova_GenericCompatiblePropertyMap_VTable_val.classInstance;
+nova_class_interfaces[4] = (nova_Nova_Object*)spectra_tree_nodes_annotations_Nova_AnnotatablePropertyMap_VTable_val.classInstance;
+nova_class_interfaces[5] = (nova_Nova_Object*)spectra_tree_nodes_annotations_Nova_AnnotatablePropertyMap_VTable_val.classInstance;
+spectra_tree_nodes_functions_Nova_InitializationFunctionPropertyMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 6);
+spectra_tree_nodes_functions_Nova_Instantiation_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = spectra_tree_nodes_functions_Nova_FunctionCall_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 0);
+spectra_tree_nodes_functions_Nova_Instantiation_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 0);
+spectra_tree_nodes_functions_Nova_InstantiationFunctionMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = spectra_tree_nodes_functions_Nova_FunctionCallFunctionMap_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 4);
+nova_class_interfaces[0] = (nova_Nova_Object*)spectra_tree_nodes_Nova_AccessibleFunctionMap_VTable_val.classInstance;
+nova_class_interfaces[1] = (nova_Nova_Object*)spectra_tree_nodes_operations_Nova_AssignableFunctionMap_VTable_val.classInstance;
+nova_class_interfaces[2] = (nova_Nova_Object*)spectra_tree_nodes_annotations_Nova_AnnotatableFunctionMap_VTable_val.classInstance;
+nova_class_interfaces[3] = (nova_Nova_Object*)spectra_tree_nodes_annotations_Nova_AnnotatableFunctionMap_VTable_val.classInstance;
+spectra_tree_nodes_functions_Nova_InstantiationFunctionMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 4);
+spectra_tree_nodes_functions_Nova_InstantiationPropertyMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = spectra_tree_nodes_functions_Nova_FunctionCallPropertyMap_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 4);
+nova_class_interfaces[0] = (nova_Nova_Object*)spectra_tree_nodes_Nova_AccessiblePropertyMap_VTable_val.classInstance;
+nova_class_interfaces[1] = (nova_Nova_Object*)spectra_tree_nodes_operations_Nova_AssignablePropertyMap_VTable_val.classInstance;
+nova_class_interfaces[2] = (nova_Nova_Object*)spectra_tree_nodes_annotations_Nova_AnnotatablePropertyMap_VTable_val.classInstance;
+nova_class_interfaces[3] = (nova_Nova_Object*)spectra_tree_nodes_annotations_Nova_AnnotatablePropertyMap_VTable_val.classInstance;
+spectra_tree_nodes_functions_Nova_InstantiationPropertyMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 4);
+spectra_tree_nodes_functions_Nova_MutatorFunction_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = spectra_tree_nodes_functions_Nova_PropertyFunction_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 0);
+spectra_tree_nodes_functions_Nova_MutatorFunction_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 0);
+spectra_tree_nodes_functions_Nova_MutatorFunctionFunctionMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = spectra_tree_nodes_functions_Nova_PropertyFunctionFunctionMap_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 6);
+nova_class_interfaces[0] = (nova_Nova_Object*)spectra_tree_nodes_functions_Nova_CallableFunctionFunctionMap_VTable_val.classInstance;
+nova_class_interfaces[1] = (nova_Nova_Object*)spectra_tree_nodes_generics_Nova_GenericCompatibleFunctionMap_VTable_val.classInstance;
+nova_class_interfaces[2] = (nova_Nova_Object*)spectra_tree_nodes_annotations_Nova_AnnotatableFunctionMap_VTable_val.classInstance;
+nova_class_interfaces[3] = (nova_Nova_Object*)spectra_tree_nodes_generics_Nova_GenericCompatibleFunctionMap_VTable_val.classInstance;
+nova_class_interfaces[4] = (nova_Nova_Object*)spectra_tree_nodes_annotations_Nova_AnnotatableFunctionMap_VTable_val.classInstance;
+nova_class_interfaces[5] = (nova_Nova_Object*)spectra_tree_nodes_annotations_Nova_AnnotatableFunctionMap_VTable_val.classInstance;
+spectra_tree_nodes_functions_Nova_MutatorFunctionFunctionMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 6);
+spectra_tree_nodes_functions_Nova_MutatorFunctionPropertyMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = spectra_tree_nodes_functions_Nova_PropertyFunctionPropertyMap_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 6);
+nova_class_interfaces[0] = (nova_Nova_Object*)spectra_tree_nodes_functions_Nova_CallableFunctionPropertyMap_VTable_val.classInstance;
+nova_class_interfaces[1] = (nova_Nova_Object*)spectra_tree_nodes_generics_Nova_GenericCompatiblePropertyMap_VTable_val.classInstance;
+nova_class_interfaces[2] = (nova_Nova_Object*)spectra_tree_nodes_annotations_Nova_AnnotatablePropertyMap_VTable_val.classInstance;
+nova_class_interfaces[3] = (nova_Nova_Object*)spectra_tree_nodes_generics_Nova_GenericCompatiblePropertyMap_VTable_val.classInstance;
+nova_class_interfaces[4] = (nova_Nova_Object*)spectra_tree_nodes_annotations_Nova_AnnotatablePropertyMap_VTable_val.classInstance;
+nova_class_interfaces[5] = (nova_Nova_Object*)spectra_tree_nodes_annotations_Nova_AnnotatablePropertyMap_VTable_val.classInstance;
+spectra_tree_nodes_functions_Nova_MutatorFunctionPropertyMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 6);
+spectra_tree_nodes_functions_Nova_ObjectNotation_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = spectra_tree_nodes_Nova_NodeList_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 0);
+spectra_tree_nodes_functions_Nova_ObjectNotation_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 0);
+spectra_tree_nodes_functions_Nova_ObjectNotationFunctionMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = spectra_tree_nodes_Nova_NodeListFunctionMap_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 1);
+nova_class_interfaces[0] = (nova_Nova_Object*)spectra_tree_nodes_annotations_Nova_AnnotatableFunctionMap_VTable_val.classInstance;
+spectra_tree_nodes_functions_Nova_ObjectNotationFunctionMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 1);
+spectra_tree_nodes_functions_Nova_ObjectNotationPropertyMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = spectra_tree_nodes_Nova_NodeListPropertyMap_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 1);
+nova_class_interfaces[0] = (nova_Nova_Object*)spectra_tree_nodes_annotations_Nova_AnnotatablePropertyMap_VTable_val.classInstance;
+spectra_tree_nodes_functions_Nova_ObjectNotationPropertyMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 1);
+spectra_tree_nodes_functions_Nova_ObjectNotationProperty_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = spectra_tree_nodes_operations_Nova_Assignment_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 0);
+spectra_tree_nodes_functions_Nova_ObjectNotationProperty_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 0);
+spectra_tree_nodes_functions_Nova_ObjectNotationPropertyFunctionMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = spectra_tree_nodes_operations_Nova_AssignmentFunctionMap_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 1);
+nova_class_interfaces[0] = (nova_Nova_Object*)spectra_tree_nodes_annotations_Nova_AnnotatableFunctionMap_VTable_val.classInstance;
+spectra_tree_nodes_functions_Nova_ObjectNotationPropertyFunctionMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 1);
+spectra_tree_nodes_functions_Nova_ObjectNotationPropertyPropertyMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = spectra_tree_nodes_operations_Nova_AssignmentPropertyMap_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 1);
+nova_class_interfaces[0] = (nova_Nova_Object*)spectra_tree_nodes_annotations_Nova_AnnotatablePropertyMap_VTable_val.classInstance;
+spectra_tree_nodes_functions_Nova_ObjectNotationPropertyPropertyMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 1);
+spectra_tree_nodes_functions_Nova_Parameter_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = spectra_tree_nodes_variables_Nova_LocalDeclaration_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 0);
+spectra_tree_nodes_functions_Nova_Parameter_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 0);
+spectra_tree_nodes_functions_Nova_ParameterFunctionMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = spectra_tree_nodes_variables_Nova_LocalDeclarationFunctionMap_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 2);
+nova_class_interfaces[0] = (nova_Nova_Object*)spectra_tree_nodes_operations_Nova_AssignableFunctionMap_VTable_val.classInstance;
+nova_class_interfaces[1] = (nova_Nova_Object*)spectra_tree_nodes_annotations_Nova_AnnotatableFunctionMap_VTable_val.classInstance;
+spectra_tree_nodes_functions_Nova_ParameterFunctionMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 2);
+spectra_tree_nodes_functions_Nova_ParameterPropertyMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = spectra_tree_nodes_variables_Nova_LocalDeclarationPropertyMap_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 2);
+nova_class_interfaces[0] = (nova_Nova_Object*)spectra_tree_nodes_operations_Nova_AssignablePropertyMap_VTable_val.classInstance;
+nova_class_interfaces[1] = (nova_Nova_Object*)spectra_tree_nodes_annotations_Nova_AnnotatablePropertyMap_VTable_val.classInstance;
+spectra_tree_nodes_functions_Nova_ParameterPropertyMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 2);
+spectra_tree_nodes_functions_Nova_ParameterList_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = spectra_tree_nodes_Nova_NodeList_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 0);
+spectra_tree_nodes_functions_Nova_ParameterList_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 0);
+spectra_tree_nodes_functions_Nova_ParameterListFunctionMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = spectra_tree_nodes_Nova_NodeListFunctionMap_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 1);
+nova_class_interfaces[0] = (nova_Nova_Object*)spectra_tree_nodes_annotations_Nova_AnnotatableFunctionMap_VTable_val.classInstance;
+spectra_tree_nodes_functions_Nova_ParameterListFunctionMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 1);
+spectra_tree_nodes_functions_Nova_ParameterListPropertyMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = spectra_tree_nodes_Nova_NodeListPropertyMap_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 1);
+nova_class_interfaces[0] = (nova_Nova_Object*)spectra_tree_nodes_annotations_Nova_AnnotatablePropertyMap_VTable_val.classInstance;
+spectra_tree_nodes_functions_Nova_ParameterListPropertyMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 1);
+spectra_tree_nodes_functions_Nova_PropertyFunction_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = spectra_tree_nodes_functions_Nova_BodyFunction_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 0);
+spectra_tree_nodes_functions_Nova_PropertyFunction_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 0);
+spectra_tree_nodes_functions_Nova_PropertyFunctionFunctionMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = spectra_tree_nodes_functions_Nova_BodyFunctionFunctionMap_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 6);
+nova_class_interfaces[0] = (nova_Nova_Object*)spectra_tree_nodes_functions_Nova_CallableFunctionFunctionMap_VTable_val.classInstance;
+nova_class_interfaces[1] = (nova_Nova_Object*)spectra_tree_nodes_generics_Nova_GenericCompatibleFunctionMap_VTable_val.classInstance;
+nova_class_interfaces[2] = (nova_Nova_Object*)spectra_tree_nodes_annotations_Nova_AnnotatableFunctionMap_VTable_val.classInstance;
+nova_class_interfaces[3] = (nova_Nova_Object*)spectra_tree_nodes_generics_Nova_GenericCompatibleFunctionMap_VTable_val.classInstance;
+nova_class_interfaces[4] = (nova_Nova_Object*)spectra_tree_nodes_annotations_Nova_AnnotatableFunctionMap_VTable_val.classInstance;
+nova_class_interfaces[5] = (nova_Nova_Object*)spectra_tree_nodes_annotations_Nova_AnnotatableFunctionMap_VTable_val.classInstance;
+spectra_tree_nodes_functions_Nova_PropertyFunctionFunctionMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 6);
+spectra_tree_nodes_functions_Nova_PropertyFunctionPropertyMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = spectra_tree_nodes_functions_Nova_BodyFunctionPropertyMap_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 6);
+nova_class_interfaces[0] = (nova_Nova_Object*)spectra_tree_nodes_functions_Nova_CallableFunctionPropertyMap_VTable_val.classInstance;
+nova_class_interfaces[1] = (nova_Nova_Object*)spectra_tree_nodes_generics_Nova_GenericCompatiblePropertyMap_VTable_val.classInstance;
+nova_class_interfaces[2] = (nova_Nova_Object*)spectra_tree_nodes_annotations_Nova_AnnotatablePropertyMap_VTable_val.classInstance;
+nova_class_interfaces[3] = (nova_Nova_Object*)spectra_tree_nodes_generics_Nova_GenericCompatiblePropertyMap_VTable_val.classInstance;
+nova_class_interfaces[4] = (nova_Nova_Object*)spectra_tree_nodes_annotations_Nova_AnnotatablePropertyMap_VTable_val.classInstance;
+nova_class_interfaces[5] = (nova_Nova_Object*)spectra_tree_nodes_annotations_Nova_AnnotatablePropertyMap_VTable_val.classInstance;
+spectra_tree_nodes_functions_Nova_PropertyFunctionPropertyMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 6);
+spectra_tree_nodes_functions_closures_Nova_ClosureContext_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = spectra_tree_nodes_Nova_Node_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 0);
+spectra_tree_nodes_functions_closures_Nova_ClosureContext_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 0);
+spectra_tree_nodes_functions_closures_Nova_ClosureContextFunctionMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = spectra_tree_nodes_Nova_NodeFunctionMap_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 1);
+nova_class_interfaces[0] = (nova_Nova_Object*)spectra_tree_nodes_annotations_Nova_AnnotatableFunctionMap_VTable_val.classInstance;
+spectra_tree_nodes_functions_closures_Nova_ClosureContextFunctionMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 1);
+spectra_tree_nodes_functions_closures_Nova_ClosureContextPropertyMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = spectra_tree_nodes_Nova_NodePropertyMap_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 1);
+nova_class_interfaces[0] = (nova_Nova_Object*)spectra_tree_nodes_annotations_Nova_AnnotatablePropertyMap_VTable_val.classInstance;
+spectra_tree_nodes_functions_closures_Nova_ClosureContextPropertyMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 1);
+spectra_tree_nodes_functions_closures_Nova_ClosureDeclaration_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = spectra_tree_nodes_functions_Nova_Parameter_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 1);
+nova_class_interfaces[0] = (nova_Nova_Object*)spectra_tree_nodes_functions_Nova_CallableFunction_VTable_val.classInstance;
+spectra_tree_nodes_functions_closures_Nova_ClosureDeclaration_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 1);
+spectra_tree_nodes_functions_closures_Nova_ClosureDeclarationFunctionMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = spectra_tree_nodes_functions_Nova_ParameterFunctionMap_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 5);
+nova_class_interfaces[0] = (nova_Nova_Object*)spectra_tree_nodes_functions_Nova_CallableFunctionFunctionMap_VTable_val.classInstance;
+nova_class_interfaces[1] = (nova_Nova_Object*)spectra_tree_nodes_generics_Nova_GenericCompatibleFunctionMap_VTable_val.classInstance;
+nova_class_interfaces[2] = (nova_Nova_Object*)spectra_tree_nodes_annotations_Nova_AnnotatableFunctionMap_VTable_val.classInstance;
+nova_class_interfaces[3] = (nova_Nova_Object*)spectra_tree_nodes_operations_Nova_AssignableFunctionMap_VTable_val.classInstance;
+nova_class_interfaces[4] = (nova_Nova_Object*)spectra_tree_nodes_annotations_Nova_AnnotatableFunctionMap_VTable_val.classInstance;
+spectra_tree_nodes_functions_closures_Nova_ClosureDeclarationFunctionMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 5);
+spectra_tree_nodes_functions_closures_Nova_ClosureDeclarationPropertyMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = spectra_tree_nodes_functions_Nova_ParameterPropertyMap_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 5);
+nova_class_interfaces[0] = (nova_Nova_Object*)spectra_tree_nodes_functions_Nova_CallableFunctionPropertyMap_VTable_val.classInstance;
+nova_class_interfaces[1] = (nova_Nova_Object*)spectra_tree_nodes_generics_Nova_GenericCompatiblePropertyMap_VTable_val.classInstance;
+nova_class_interfaces[2] = (nova_Nova_Object*)spectra_tree_nodes_annotations_Nova_AnnotatablePropertyMap_VTable_val.classInstance;
+nova_class_interfaces[3] = (nova_Nova_Object*)spectra_tree_nodes_operations_Nova_AssignablePropertyMap_VTable_val.classInstance;
+nova_class_interfaces[4] = (nova_Nova_Object*)spectra_tree_nodes_annotations_Nova_AnnotatablePropertyMap_VTable_val.classInstance;
+spectra_tree_nodes_functions_closures_Nova_ClosureDeclarationPropertyMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 5);
+spectra_tree_nodes_functions_closures_Nova_ClosureParameter_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = spectra_tree_nodes_functions_Nova_Parameter_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 0);
+spectra_tree_nodes_functions_closures_Nova_ClosureParameter_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 0);
+spectra_tree_nodes_functions_closures_Nova_ClosureParameterFunctionMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = spectra_tree_nodes_functions_Nova_ParameterFunctionMap_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 2);
+nova_class_interfaces[0] = (nova_Nova_Object*)spectra_tree_nodes_operations_Nova_AssignableFunctionMap_VTable_val.classInstance;
+nova_class_interfaces[1] = (nova_Nova_Object*)spectra_tree_nodes_annotations_Nova_AnnotatableFunctionMap_VTable_val.classInstance;
+spectra_tree_nodes_functions_closures_Nova_ClosureParameterFunctionMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 2);
+spectra_tree_nodes_functions_closures_Nova_ClosureParameterPropertyMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = spectra_tree_nodes_functions_Nova_ParameterPropertyMap_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 2);
+nova_class_interfaces[0] = (nova_Nova_Object*)spectra_tree_nodes_operations_Nova_AssignablePropertyMap_VTable_val.classInstance;
+nova_class_interfaces[1] = (nova_Nova_Object*)spectra_tree_nodes_annotations_Nova_AnnotatablePropertyMap_VTable_val.classInstance;
+spectra_tree_nodes_functions_closures_Nova_ClosureParameterPropertyMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 2);
+spectra_tree_nodes_functions_closures_Nova_LambdaExpression_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = spectra_tree_nodes_Nova_Value_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 1);
+nova_class_interfaces[0] = (nova_Nova_Object*)spectra_tree_nodes_functions_Nova_CallableFunction_VTable_val.classInstance;
+spectra_tree_nodes_functions_closures_Nova_LambdaExpression_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 1);
+spectra_tree_nodes_functions_closures_Nova_LambdaExpressionFunctionMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = spectra_tree_nodes_Nova_ValueFunctionMap_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 4);
+nova_class_interfaces[0] = (nova_Nova_Object*)spectra_tree_nodes_functions_Nova_CallableFunctionFunctionMap_VTable_val.classInstance;
+nova_class_interfaces[1] = (nova_Nova_Object*)spectra_tree_nodes_generics_Nova_GenericCompatibleFunctionMap_VTable_val.classInstance;
+nova_class_interfaces[2] = (nova_Nova_Object*)spectra_tree_nodes_annotations_Nova_AnnotatableFunctionMap_VTable_val.classInstance;
+nova_class_interfaces[3] = (nova_Nova_Object*)spectra_tree_nodes_annotations_Nova_AnnotatableFunctionMap_VTable_val.classInstance;
+spectra_tree_nodes_functions_closures_Nova_LambdaExpressionFunctionMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 4);
+spectra_tree_nodes_functions_closures_Nova_LambdaExpressionPropertyMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = spectra_tree_nodes_Nova_ValuePropertyMap_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 4);
+nova_class_interfaces[0] = (nova_Nova_Object*)spectra_tree_nodes_functions_Nova_CallableFunctionPropertyMap_VTable_val.classInstance;
+nova_class_interfaces[1] = (nova_Nova_Object*)spectra_tree_nodes_generics_Nova_GenericCompatiblePropertyMap_VTable_val.classInstance;
+nova_class_interfaces[2] = (nova_Nova_Object*)spectra_tree_nodes_annotations_Nova_AnnotatablePropertyMap_VTable_val.classInstance;
+nova_class_interfaces[3] = (nova_Nova_Object*)spectra_tree_nodes_annotations_Nova_AnnotatablePropertyMap_VTable_val.classInstance;
+spectra_tree_nodes_functions_closures_Nova_LambdaExpressionPropertyMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 4);
+spectra_tree_nodes_functions_closures_Nova_LambdaParameter_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = spectra_tree_nodes_functions_Nova_Parameter_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 0);
+spectra_tree_nodes_functions_closures_Nova_LambdaParameter_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 0);
+spectra_tree_nodes_functions_closures_Nova_LambdaParameterFunctionMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = spectra_tree_nodes_functions_Nova_ParameterFunctionMap_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 2);
+nova_class_interfaces[0] = (nova_Nova_Object*)spectra_tree_nodes_operations_Nova_AssignableFunctionMap_VTable_val.classInstance;
+nova_class_interfaces[1] = (nova_Nova_Object*)spectra_tree_nodes_annotations_Nova_AnnotatableFunctionMap_VTable_val.classInstance;
+spectra_tree_nodes_functions_closures_Nova_LambdaParameterFunctionMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 2);
+spectra_tree_nodes_functions_closures_Nova_LambdaParameterPropertyMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = spectra_tree_nodes_functions_Nova_ParameterPropertyMap_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 2);
+nova_class_interfaces[0] = (nova_Nova_Object*)spectra_tree_nodes_operations_Nova_AssignablePropertyMap_VTable_val.classInstance;
+nova_class_interfaces[1] = (nova_Nova_Object*)spectra_tree_nodes_annotations_Nova_AnnotatablePropertyMap_VTable_val.classInstance;
+spectra_tree_nodes_functions_closures_Nova_LambdaParameterPropertyMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 2);
+spectra_tree_nodes_generics_Nova_GenericArgument_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = spectra_tree_nodes_Nova_Value_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 0);
+spectra_tree_nodes_generics_Nova_GenericArgument_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 0);
+spectra_tree_nodes_generics_Nova_GenericArgumentFunctionMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = spectra_tree_nodes_Nova_ValueFunctionMap_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 1);
+nova_class_interfaces[0] = (nova_Nova_Object*)spectra_tree_nodes_annotations_Nova_AnnotatableFunctionMap_VTable_val.classInstance;
+spectra_tree_nodes_generics_Nova_GenericArgumentFunctionMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 1);
+spectra_tree_nodes_generics_Nova_GenericArgumentPropertyMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = spectra_tree_nodes_Nova_ValuePropertyMap_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 1);
+nova_class_interfaces[0] = (nova_Nova_Object*)spectra_tree_nodes_annotations_Nova_AnnotatablePropertyMap_VTable_val.classInstance;
+spectra_tree_nodes_generics_Nova_GenericArgumentPropertyMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 1);
+spectra_tree_nodes_generics_Nova_GenericCompatible_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = spectra_tree_nodes_Nova_Node_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 0);
+spectra_tree_nodes_generics_Nova_GenericCompatible_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 0);
+spectra_tree_nodes_generics_Nova_GenericCompatibleFunctionMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = spectra_tree_nodes_Nova_NodeFunctionMap_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 1);
+nova_class_interfaces[0] = (nova_Nova_Object*)spectra_tree_nodes_annotations_Nova_AnnotatableFunctionMap_VTable_val.classInstance;
+spectra_tree_nodes_generics_Nova_GenericCompatibleFunctionMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 1);
+spectra_tree_nodes_generics_Nova_GenericCompatiblePropertyMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = spectra_tree_nodes_Nova_NodePropertyMap_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 1);
+nova_class_interfaces[0] = (nova_Nova_Object*)spectra_tree_nodes_annotations_Nova_AnnotatablePropertyMap_VTable_val.classInstance;
+spectra_tree_nodes_generics_Nova_GenericCompatiblePropertyMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 1);
+spectra_tree_nodes_generics_Nova_GenericParameter_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = spectra_tree_nodes_Nova_Value_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 0);
+spectra_tree_nodes_generics_Nova_GenericParameter_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 0);
+spectra_tree_nodes_generics_Nova_GenericParameterFunctionMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = spectra_tree_nodes_Nova_ValueFunctionMap_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 1);
+nova_class_interfaces[0] = (nova_Nova_Object*)spectra_tree_nodes_annotations_Nova_AnnotatableFunctionMap_VTable_val.classInstance;
+spectra_tree_nodes_generics_Nova_GenericParameterFunctionMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 1);
+spectra_tree_nodes_generics_Nova_GenericParameterPropertyMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = spectra_tree_nodes_Nova_ValuePropertyMap_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 1);
+nova_class_interfaces[0] = (nova_Nova_Object*)spectra_tree_nodes_annotations_Nova_AnnotatablePropertyMap_VTable_val.classInstance;
+spectra_tree_nodes_generics_Nova_GenericParameterPropertyMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 1);
+spectra_tree_nodes_generics_Nova_GenericType_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = spectra_tree_nodes_Nova_Type_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 0);
+spectra_tree_nodes_generics_Nova_GenericType_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 0);
+spectra_tree_nodes_generics_Nova_GenericTypeFunctionMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = spectra_tree_nodes_Nova_TypeFunctionMap_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 0);
+spectra_tree_nodes_generics_Nova_GenericTypeFunctionMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 0);
+spectra_tree_nodes_generics_Nova_GenericTypePropertyMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = spectra_tree_nodes_Nova_TypePropertyMap_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 0);
+spectra_tree_nodes_generics_Nova_GenericTypePropertyMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 0);
+spectra_tree_nodes_operations_Nova_Assignable_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = (nova_meta_Nova_Class*)nova_null;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 0);
+spectra_tree_nodes_operations_Nova_Assignable_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 0);
+spectra_tree_nodes_operations_Nova_AssignableFunctionMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = nova_meta_Nova_FunctionMap_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 0);
+spectra_tree_nodes_operations_Nova_AssignableFunctionMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 0);
+spectra_tree_nodes_operations_Nova_AssignablePropertyMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = nova_meta_Nova_PropertyMap_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 0);
+spectra_tree_nodes_operations_Nova_AssignablePropertyMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 0);
+spectra_tree_nodes_operations_Nova_Assignment_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = spectra_tree_nodes_operations_Nova_Operation_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 0);
+spectra_tree_nodes_operations_Nova_Assignment_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 0);
+spectra_tree_nodes_operations_Nova_AssignmentFunctionMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = spectra_tree_nodes_operations_Nova_OperationFunctionMap_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 1);
+nova_class_interfaces[0] = (nova_Nova_Object*)spectra_tree_nodes_annotations_Nova_AnnotatableFunctionMap_VTable_val.classInstance;
+spectra_tree_nodes_operations_Nova_AssignmentFunctionMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 1);
+spectra_tree_nodes_operations_Nova_AssignmentPropertyMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = spectra_tree_nodes_operations_Nova_OperationPropertyMap_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 1);
+nova_class_interfaces[0] = (nova_Nova_Object*)spectra_tree_nodes_annotations_Nova_AnnotatablePropertyMap_VTable_val.classInstance;
+spectra_tree_nodes_operations_Nova_AssignmentPropertyMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 1);
+spectra_tree_nodes_operations_Nova_ElvisOperation_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = spectra_tree_nodes_Nova_Value_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 0);
+spectra_tree_nodes_operations_Nova_ElvisOperation_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 0);
+spectra_tree_nodes_operations_Nova_ElvisOperationFunctionMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = spectra_tree_nodes_Nova_ValueFunctionMap_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 1);
+nova_class_interfaces[0] = (nova_Nova_Object*)spectra_tree_nodes_annotations_Nova_AnnotatableFunctionMap_VTable_val.classInstance;
+spectra_tree_nodes_operations_Nova_ElvisOperationFunctionMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 1);
+spectra_tree_nodes_operations_Nova_ElvisOperationPropertyMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = spectra_tree_nodes_Nova_ValuePropertyMap_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 1);
+nova_class_interfaces[0] = (nova_Nova_Object*)spectra_tree_nodes_annotations_Nova_AnnotatablePropertyMap_VTable_val.classInstance;
+spectra_tree_nodes_operations_Nova_ElvisOperationPropertyMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 1);
+spectra_tree_nodes_operations_Nova_Operation_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = spectra_tree_nodes_Nova_Value_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 0);
+spectra_tree_nodes_operations_Nova_Operation_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 0);
+spectra_tree_nodes_operations_Nova_OperationFunctionMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = spectra_tree_nodes_Nova_ValueFunctionMap_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 1);
+nova_class_interfaces[0] = (nova_Nova_Object*)spectra_tree_nodes_annotations_Nova_AnnotatableFunctionMap_VTable_val.classInstance;
+spectra_tree_nodes_operations_Nova_OperationFunctionMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 1);
+spectra_tree_nodes_operations_Nova_OperationPropertyMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = spectra_tree_nodes_Nova_ValuePropertyMap_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 1);
+nova_class_interfaces[0] = (nova_Nova_Object*)spectra_tree_nodes_annotations_Nova_AnnotatablePropertyMap_VTable_val.classInstance;
+spectra_tree_nodes_operations_Nova_OperationPropertyMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 1);
+spectra_tree_nodes_operations_Nova_Operator_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = spectra_tree_nodes_Nova_Node_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 0);
+spectra_tree_nodes_operations_Nova_Operator_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 0);
+spectra_tree_nodes_operations_Nova_OperatorFunctionMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = spectra_tree_nodes_Nova_NodeFunctionMap_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 1);
+nova_class_interfaces[0] = (nova_Nova_Object*)spectra_tree_nodes_annotations_Nova_AnnotatableFunctionMap_VTable_val.classInstance;
+spectra_tree_nodes_operations_Nova_OperatorFunctionMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 1);
+spectra_tree_nodes_operations_Nova_OperatorPropertyMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = spectra_tree_nodes_Nova_NodePropertyMap_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 1);
+nova_class_interfaces[0] = (nova_Nova_Object*)spectra_tree_nodes_annotations_Nova_AnnotatablePropertyMap_VTable_val.classInstance;
+spectra_tree_nodes_operations_Nova_OperatorPropertyMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 1);
+spectra_tree_nodes_operations_Nova_TernaryOperation_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = spectra_tree_nodes_Nova_Value_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 0);
+spectra_tree_nodes_operations_Nova_TernaryOperation_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 0);
+spectra_tree_nodes_operations_Nova_TernaryOperationFunctionMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = spectra_tree_nodes_Nova_ValueFunctionMap_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 1);
+nova_class_interfaces[0] = (nova_Nova_Object*)spectra_tree_nodes_annotations_Nova_AnnotatableFunctionMap_VTable_val.classInstance;
+spectra_tree_nodes_operations_Nova_TernaryOperationFunctionMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 1);
+spectra_tree_nodes_operations_Nova_TernaryOperationPropertyMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = spectra_tree_nodes_Nova_ValuePropertyMap_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 1);
+nova_class_interfaces[0] = (nova_Nova_Object*)spectra_tree_nodes_annotations_Nova_AnnotatablePropertyMap_VTable_val.classInstance;
+spectra_tree_nodes_operations_Nova_TernaryOperationPropertyMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 1);
+spectra_tree_nodes_operations_Nova_UnaryOperation_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = spectra_tree_nodes_Nova_Value_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 0);
+spectra_tree_nodes_operations_Nova_UnaryOperation_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 0);
+spectra_tree_nodes_operations_Nova_UnaryOperationFunctionMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = spectra_tree_nodes_Nova_ValueFunctionMap_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 1);
+nova_class_interfaces[0] = (nova_Nova_Object*)spectra_tree_nodes_annotations_Nova_AnnotatableFunctionMap_VTable_val.classInstance;
+spectra_tree_nodes_operations_Nova_UnaryOperationFunctionMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 1);
+spectra_tree_nodes_operations_Nova_UnaryOperationPropertyMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = spectra_tree_nodes_Nova_ValuePropertyMap_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 1);
+nova_class_interfaces[0] = (nova_Nova_Object*)spectra_tree_nodes_annotations_Nova_AnnotatablePropertyMap_VTable_val.classInstance;
+spectra_tree_nodes_operations_Nova_UnaryOperationPropertyMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 1);
+spectra_tree_nodes_variables_Nova_ArrayBracketOverload_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = spectra_tree_nodes_Nova_Node_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 0);
+spectra_tree_nodes_variables_Nova_ArrayBracketOverload_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 0);
+spectra_tree_nodes_variables_Nova_ArrayBracketOverloadFunctionMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = spectra_tree_nodes_Nova_NodeFunctionMap_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 1);
+nova_class_interfaces[0] = (nova_Nova_Object*)spectra_tree_nodes_annotations_Nova_AnnotatableFunctionMap_VTable_val.classInstance;
+spectra_tree_nodes_variables_Nova_ArrayBracketOverloadFunctionMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 1);
+spectra_tree_nodes_variables_Nova_ArrayBracketOverloadPropertyMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = spectra_tree_nodes_Nova_NodePropertyMap_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 1);
+nova_class_interfaces[0] = (nova_Nova_Object*)spectra_tree_nodes_annotations_Nova_AnnotatablePropertyMap_VTable_val.classInstance;
+spectra_tree_nodes_variables_Nova_ArrayBracketOverloadPropertyMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 1);
+spectra_tree_nodes_variables_Nova_FieldDeclaration_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = spectra_tree_nodes_variables_Nova_InstanceDeclaration_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 1);
+nova_class_interfaces[0] = (nova_Nova_Object*)spectra_tree_nodes_operations_Nova_Assignable_VTable_val.classInstance;
+spectra_tree_nodes_variables_Nova_FieldDeclaration_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 1);
+spectra_tree_nodes_variables_Nova_FieldDeclarationFunctionMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = spectra_tree_nodes_variables_Nova_InstanceDeclarationFunctionMap_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 2);
+nova_class_interfaces[0] = (nova_Nova_Object*)spectra_tree_nodes_operations_Nova_AssignableFunctionMap_VTable_val.classInstance;
+nova_class_interfaces[1] = (nova_Nova_Object*)spectra_tree_nodes_annotations_Nova_AnnotatableFunctionMap_VTable_val.classInstance;
+spectra_tree_nodes_variables_Nova_FieldDeclarationFunctionMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 2);
+spectra_tree_nodes_variables_Nova_FieldDeclarationPropertyMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = spectra_tree_nodes_variables_Nova_InstanceDeclarationPropertyMap_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 2);
+nova_class_interfaces[0] = (nova_Nova_Object*)spectra_tree_nodes_operations_Nova_AssignablePropertyMap_VTable_val.classInstance;
+nova_class_interfaces[1] = (nova_Nova_Object*)spectra_tree_nodes_annotations_Nova_AnnotatablePropertyMap_VTable_val.classInstance;
+spectra_tree_nodes_variables_Nova_FieldDeclarationPropertyMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 2);
+spectra_tree_nodes_variables_Nova_ImplicitDeclaration_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = spectra_tree_nodes_variables_Nova_LocalDeclaration_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 0);
+spectra_tree_nodes_variables_Nova_ImplicitDeclaration_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 0);
+spectra_tree_nodes_variables_Nova_ImplicitDeclarationFunctionMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = spectra_tree_nodes_variables_Nova_LocalDeclarationFunctionMap_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 2);
+nova_class_interfaces[0] = (nova_Nova_Object*)spectra_tree_nodes_operations_Nova_AssignableFunctionMap_VTable_val.classInstance;
+nova_class_interfaces[1] = (nova_Nova_Object*)spectra_tree_nodes_annotations_Nova_AnnotatableFunctionMap_VTable_val.classInstance;
+spectra_tree_nodes_variables_Nova_ImplicitDeclarationFunctionMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 2);
+spectra_tree_nodes_variables_Nova_ImplicitDeclarationPropertyMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = spectra_tree_nodes_variables_Nova_LocalDeclarationPropertyMap_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 2);
+nova_class_interfaces[0] = (nova_Nova_Object*)spectra_tree_nodes_operations_Nova_AssignablePropertyMap_VTable_val.classInstance;
+nova_class_interfaces[1] = (nova_Nova_Object*)spectra_tree_nodes_annotations_Nova_AnnotatablePropertyMap_VTable_val.classInstance;
+spectra_tree_nodes_variables_Nova_ImplicitDeclarationPropertyMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 2);
+spectra_tree_nodes_variables_Nova_InstanceDeclaration_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = spectra_tree_nodes_variables_Nova_VariableDeclaration_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 0);
+spectra_tree_nodes_variables_Nova_InstanceDeclaration_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 0);
+spectra_tree_nodes_variables_Nova_InstanceDeclarationFunctionMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = spectra_tree_nodes_variables_Nova_VariableDeclarationFunctionMap_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 1);
+nova_class_interfaces[0] = (nova_Nova_Object*)spectra_tree_nodes_annotations_Nova_AnnotatableFunctionMap_VTable_val.classInstance;
+spectra_tree_nodes_variables_Nova_InstanceDeclarationFunctionMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 1);
+spectra_tree_nodes_variables_Nova_InstanceDeclarationPropertyMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = spectra_tree_nodes_variables_Nova_VariableDeclarationPropertyMap_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 1);
+nova_class_interfaces[0] = (nova_Nova_Object*)spectra_tree_nodes_annotations_Nova_AnnotatablePropertyMap_VTable_val.classInstance;
+spectra_tree_nodes_variables_Nova_InstanceDeclarationPropertyMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 1);
+spectra_tree_nodes_variables_Nova_LocalDeclaration_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = spectra_tree_nodes_variables_Nova_VariableDeclaration_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 1);
+nova_class_interfaces[0] = (nova_Nova_Object*)spectra_tree_nodes_operations_Nova_Assignable_VTable_val.classInstance;
+spectra_tree_nodes_variables_Nova_LocalDeclaration_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 1);
+spectra_tree_nodes_variables_Nova_LocalDeclarationFunctionMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = spectra_tree_nodes_variables_Nova_VariableDeclarationFunctionMap_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 2);
+nova_class_interfaces[0] = (nova_Nova_Object*)spectra_tree_nodes_operations_Nova_AssignableFunctionMap_VTable_val.classInstance;
+nova_class_interfaces[1] = (nova_Nova_Object*)spectra_tree_nodes_annotations_Nova_AnnotatableFunctionMap_VTable_val.classInstance;
+spectra_tree_nodes_variables_Nova_LocalDeclarationFunctionMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 2);
+spectra_tree_nodes_variables_Nova_LocalDeclarationPropertyMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = spectra_tree_nodes_variables_Nova_VariableDeclarationPropertyMap_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 2);
+nova_class_interfaces[0] = (nova_Nova_Object*)spectra_tree_nodes_operations_Nova_AssignablePropertyMap_VTable_val.classInstance;
+nova_class_interfaces[1] = (nova_Nova_Object*)spectra_tree_nodes_annotations_Nova_AnnotatablePropertyMap_VTable_val.classInstance;
+spectra_tree_nodes_variables_Nova_LocalDeclarationPropertyMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 2);
+spectra_tree_nodes_variables_Nova_Variable_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = spectra_tree_nodes_Nova_Identifier_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 2);
+nova_class_interfaces[0] = (nova_Nova_Object*)spectra_tree_nodes_Nova_Accessible_VTable_val.classInstance;
+nova_class_interfaces[1] = (nova_Nova_Object*)spectra_tree_nodes_operations_Nova_Assignable_VTable_val.classInstance;
+spectra_tree_nodes_variables_Nova_Variable_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 2);
+spectra_tree_nodes_variables_Nova_VariableFunctionMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = spectra_tree_nodes_Nova_IdentifierFunctionMap_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 4);
+nova_class_interfaces[0] = (nova_Nova_Object*)spectra_tree_nodes_Nova_AccessibleFunctionMap_VTable_val.classInstance;
+nova_class_interfaces[1] = (nova_Nova_Object*)spectra_tree_nodes_operations_Nova_AssignableFunctionMap_VTable_val.classInstance;
+nova_class_interfaces[2] = (nova_Nova_Object*)spectra_tree_nodes_annotations_Nova_AnnotatableFunctionMap_VTable_val.classInstance;
+nova_class_interfaces[3] = (nova_Nova_Object*)spectra_tree_nodes_annotations_Nova_AnnotatableFunctionMap_VTable_val.classInstance;
+spectra_tree_nodes_variables_Nova_VariableFunctionMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 4);
+spectra_tree_nodes_variables_Nova_VariablePropertyMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = spectra_tree_nodes_Nova_IdentifierPropertyMap_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 4);
+nova_class_interfaces[0] = (nova_Nova_Object*)spectra_tree_nodes_Nova_AccessiblePropertyMap_VTable_val.classInstance;
+nova_class_interfaces[1] = (nova_Nova_Object*)spectra_tree_nodes_operations_Nova_AssignablePropertyMap_VTable_val.classInstance;
+nova_class_interfaces[2] = (nova_Nova_Object*)spectra_tree_nodes_annotations_Nova_AnnotatablePropertyMap_VTable_val.classInstance;
+nova_class_interfaces[3] = (nova_Nova_Object*)spectra_tree_nodes_annotations_Nova_AnnotatablePropertyMap_VTable_val.classInstance;
+spectra_tree_nodes_variables_Nova_VariablePropertyMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 4);
+spectra_tree_nodes_variables_Nova_VariableDeclaration_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = spectra_tree_nodes_Nova_Identifier_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 0);
+spectra_tree_nodes_variables_Nova_VariableDeclaration_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 0);
+spectra_tree_nodes_variables_Nova_VariableDeclarationFunctionMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = spectra_tree_nodes_Nova_IdentifierFunctionMap_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 1);
+nova_class_interfaces[0] = (nova_Nova_Object*)spectra_tree_nodes_annotations_Nova_AnnotatableFunctionMap_VTable_val.classInstance;
+spectra_tree_nodes_variables_Nova_VariableDeclarationFunctionMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 1);
+spectra_tree_nodes_variables_Nova_VariableDeclarationPropertyMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = spectra_tree_nodes_Nova_IdentifierPropertyMap_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 1);
+nova_class_interfaces[0] = (nova_Nova_Object*)spectra_tree_nodes_annotations_Nova_AnnotatablePropertyMap_VTable_val.classInstance;
+spectra_tree_nodes_variables_Nova_VariableDeclarationPropertyMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 1);
+spectra_util_Nova_Bounds_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = nova_Nova_Object_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 0);
+spectra_util_Nova_Bounds_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 0);
+spectra_util_Nova_BoundsFunctionMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = nova_meta_Nova_FunctionMap_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 0);
+spectra_util_Nova_BoundsFunctionMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 0);
+spectra_util_Nova_BoundsPropertyMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = nova_meta_Nova_PropertyMap_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 0);
+spectra_util_Nova_BoundsPropertyMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 0);
+spectra_util_Nova_CompilerStringFunctions_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = (nova_meta_Nova_Class*)nova_null;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 0);
+spectra_util_Nova_CompilerStringFunctions_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 0);
+spectra_util_Nova_FileUtils_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = nova_Nova_Object_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 0);
+spectra_util_Nova_FileUtils_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 0);
+spectra_util_Nova_FileUtilsFunctionMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = nova_meta_Nova_FunctionMap_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 0);
+spectra_util_Nova_FileUtilsFunctionMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 0);
+spectra_util_Nova_FileUtilsPropertyMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = nova_meta_Nova_PropertyMap_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 0);
+spectra_util_Nova_FileUtilsPropertyMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 0);
+spectra_util_Nova_Location_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = nova_Nova_Object_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 0);
+spectra_util_Nova_Location_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 0);
+spectra_util_Nova_LocationFunctionMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = nova_meta_Nova_FunctionMap_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 0);
+spectra_util_Nova_LocationFunctionMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 0);
+spectra_util_Nova_LocationPropertyMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = nova_meta_Nova_PropertyMap_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 0);
+spectra_util_Nova_LocationPropertyMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 0);
+spectra_util_Nova_OS_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = nova_Nova_Object_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 0);
+spectra_util_Nova_OS_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 0);
+spectra_util_Nova_OSFunctionMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = nova_meta_Nova_FunctionMap_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 0);
+spectra_util_Nova_OSFunctionMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 0);
+spectra_util_Nova_OSPropertyMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = nova_meta_Nova_PropertyMap_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 0);
+spectra_util_Nova_OSPropertyMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 0);
+spectra_util_Nova_SyntaxUtils_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = nova_Nova_Object_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 0);
+spectra_util_Nova_SyntaxUtils_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 0);
+spectra_util_Nova_SyntaxUtilsFunctionMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = nova_meta_Nova_FunctionMap_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 0);
+spectra_util_Nova_SyntaxUtilsFunctionMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 0);
+spectra_util_Nova_SyntaxUtilsPropertyMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = nova_meta_Nova_PropertyMap_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 0);
+spectra_util_Nova_SyntaxUtilsPropertyMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 0);
 example_Nova_Animal_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = nova_Nova_Object_VTable_val.classInstance;
 nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 0);
 example_Nova_Animal_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 0);
@@ -6969,7 +10781,7 @@ nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 0);
 stabilitytest_Nova_UnstableExceptionPropertyMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 0);
 
 
-nova_meta_Nova_Class** nova_all_classes = NOVA_MALLOC(sizeof(nova_meta_Nova_Class*) * 678);
+nova_meta_Nova_Class** nova_all_classes = NOVA_MALLOC(sizeof(nova_meta_Nova_Class*) * 1024);
 nova_all_classes[0] = nova_Nova_Object_VTable_val.classInstance;
 nova_all_classes[1] = nova_Nova_String_VTable_val.classInstance;
 nova_all_classes[2] = nova_Nova_StringFunctionMap_VTable_val.classInstance;
@@ -7095,560 +10907,906 @@ nova_all_classes[121] = nova_datastruct_list_Nova_IterablePropertyMap_VTable_val
 nova_all_classes[122] = nova_datastruct_list_Nova_Iterator_VTable_val.classInstance;
 nova_all_classes[123] = nova_datastruct_list_Nova_IteratorFunctionMap_VTable_val.classInstance;
 nova_all_classes[124] = nova_datastruct_list_Nova_IteratorPropertyMap_VTable_val.classInstance;
-nova_all_classes[125] = nova_datastruct_list_Nova_LinkedList_VTable_val.classInstance;
-nova_all_classes[126] = nova_datastruct_list_Nova_LinkedListFunctionMap_VTable_val.classInstance;
-nova_all_classes[127] = nova_datastruct_list_Nova_LinkedListPropertyMap_VTable_val.classInstance;
-nova_all_classes[128] = nova_datastruct_list_Nova_LinkedListIterator_VTable_val.classInstance;
-nova_all_classes[129] = nova_datastruct_list_Nova_LinkedListIteratorFunctionMap_VTable_val.classInstance;
-nova_all_classes[130] = nova_datastruct_list_Nova_LinkedListIteratorPropertyMap_VTable_val.classInstance;
-nova_all_classes[131] = nova_datastruct_list_Nova_List_VTable_val.classInstance;
-nova_all_classes[132] = nova_datastruct_list_Nova_ListFunctionMap_VTable_val.classInstance;
-nova_all_classes[133] = nova_datastruct_list_Nova_ListPropertyMap_VTable_val.classInstance;
-nova_all_classes[134] = nova_datastruct_list_Nova_ListNode_VTable_val.classInstance;
-nova_all_classes[135] = nova_datastruct_list_Nova_ListNodeFunctionMap_VTable_val.classInstance;
-nova_all_classes[136] = nova_datastruct_list_Nova_ListNodePropertyMap_VTable_val.classInstance;
-nova_all_classes[137] = nova_datastruct_list_Nova_NoSuchElementException_VTable_val.classInstance;
-nova_all_classes[138] = nova_datastruct_list_Nova_NoSuchElementExceptionFunctionMap_VTable_val.classInstance;
-nova_all_classes[139] = nova_datastruct_list_Nova_NoSuchElementExceptionPropertyMap_VTable_val.classInstance;
-nova_all_classes[140] = nova_datastruct_list_Nova_OrderedList_VTable_val.classInstance;
-nova_all_classes[141] = nova_datastruct_list_Nova_OrderedListFunctionMap_VTable_val.classInstance;
-nova_all_classes[142] = nova_datastruct_list_Nova_OrderedListPropertyMap_VTable_val.classInstance;
-nova_all_classes[143] = nova_datastruct_list_Nova_Queue_VTable_val.classInstance;
-nova_all_classes[144] = nova_datastruct_list_Nova_QueueFunctionMap_VTable_val.classInstance;
-nova_all_classes[145] = nova_datastruct_list_Nova_QueuePropertyMap_VTable_val.classInstance;
-nova_all_classes[146] = nova_datastruct_list_Nova_Stack_VTable_val.classInstance;
-nova_all_classes[147] = nova_datastruct_list_Nova_StackFunctionMap_VTable_val.classInstance;
-nova_all_classes[148] = nova_datastruct_list_Nova_StackPropertyMap_VTable_val.classInstance;
-nova_all_classes[149] = nova_datastruct_list_Nova_StringCharArray_VTable_val.classInstance;
-nova_all_classes[150] = nova_datastruct_list_Nova_StringCharArrayFunctionMap_VTable_val.classInstance;
-nova_all_classes[151] = nova_datastruct_list_Nova_StringCharArrayPropertyMap_VTable_val.classInstance;
-nova_all_classes[152] = nova_datastruct_list_Nova_SubstringCharArray_VTable_val.classInstance;
-nova_all_classes[153] = nova_datastruct_list_Nova_SubstringCharArrayFunctionMap_VTable_val.classInstance;
-nova_all_classes[154] = nova_datastruct_list_Nova_SubstringCharArrayPropertyMap_VTable_val.classInstance;
-nova_all_classes[155] = nova_exception_Nova_Backtraces_VTable_val.classInstance;
-nova_all_classes[156] = nova_exception_Nova_BacktracesFunctionMap_VTable_val.classInstance;
-nova_all_classes[157] = nova_exception_Nova_BacktracesPropertyMap_VTable_val.classInstance;
-nova_all_classes[158] = nova_exception_Nova_CaughtException_VTable_val.classInstance;
-nova_all_classes[159] = nova_exception_Nova_CaughtExceptionFunctionMap_VTable_val.classInstance;
-nova_all_classes[160] = nova_exception_Nova_CaughtExceptionPropertyMap_VTable_val.classInstance;
-nova_all_classes[161] = nova_exception_Nova_DivideByZeroException_VTable_val.classInstance;
-nova_all_classes[162] = nova_exception_Nova_DivideByZeroExceptionFunctionMap_VTable_val.classInstance;
-nova_all_classes[163] = nova_exception_Nova_DivideByZeroExceptionPropertyMap_VTable_val.classInstance;
-nova_all_classes[164] = nova_exception_Nova_Exception_VTable_val.classInstance;
-nova_all_classes[165] = nova_exception_Nova_ExceptionFunctionMap_VTable_val.classInstance;
-nova_all_classes[166] = nova_exception_Nova_ExceptionPropertyMap_VTable_val.classInstance;
-nova_all_classes[167] = nova_exception_Nova_ExceptionData_VTable_val.classInstance;
-nova_all_classes[168] = nova_exception_Nova_ExceptionDataFunctionMap_VTable_val.classInstance;
-nova_all_classes[169] = nova_exception_Nova_ExceptionDataPropertyMap_VTable_val.classInstance;
-nova_all_classes[170] = nova_exception_Nova_InvalidArgumentException_VTable_val.classInstance;
-nova_all_classes[171] = nova_exception_Nova_InvalidArgumentExceptionFunctionMap_VTable_val.classInstance;
-nova_all_classes[172] = nova_exception_Nova_InvalidArgumentExceptionPropertyMap_VTable_val.classInstance;
-nova_all_classes[173] = nova_exception_Nova_InvalidOperationException_VTable_val.classInstance;
-nova_all_classes[174] = nova_exception_Nova_InvalidOperationExceptionFunctionMap_VTable_val.classInstance;
-nova_all_classes[175] = nova_exception_Nova_InvalidOperationExceptionPropertyMap_VTable_val.classInstance;
-nova_all_classes[176] = nova_exception_Nova_UnimplementedOperationException_VTable_val.classInstance;
-nova_all_classes[177] = nova_exception_Nova_UnimplementedOperationExceptionFunctionMap_VTable_val.classInstance;
-nova_all_classes[178] = nova_exception_Nova_UnimplementedOperationExceptionPropertyMap_VTable_val.classInstance;
-nova_all_classes[179] = nova_gc_Nova_GC_VTable_val.classInstance;
-nova_all_classes[180] = nova_gc_Nova_GCFunctionMap_VTable_val.classInstance;
-nova_all_classes[181] = nova_gc_Nova_GCPropertyMap_VTable_val.classInstance;
-nova_all_classes[182] = nova_io_Nova_Console_VTable_val.classInstance;
-nova_all_classes[183] = nova_io_Nova_ConsoleFunctionMap_VTable_val.classInstance;
-nova_all_classes[184] = nova_io_Nova_ConsolePropertyMap_VTable_val.classInstance;
-nova_all_classes[185] = nova_io_Nova_Curl_VTable_val.classInstance;
-nova_all_classes[186] = nova_io_Nova_CurlFunctionMap_VTable_val.classInstance;
-nova_all_classes[187] = nova_io_Nova_CurlPropertyMap_VTable_val.classInstance;
-nova_all_classes[188] = nova_io_Nova_File_VTable_val.classInstance;
-nova_all_classes[189] = nova_io_Nova_FileFunctionMap_VTable_val.classInstance;
-nova_all_classes[190] = nova_io_Nova_FilePropertyMap_VTable_val.classInstance;
-nova_all_classes[191] = nova_io_Nova_FileNotFoundException_VTable_val.classInstance;
-nova_all_classes[192] = nova_io_Nova_FileNotFoundExceptionFunctionMap_VTable_val.classInstance;
-nova_all_classes[193] = nova_io_Nova_FileNotFoundExceptionPropertyMap_VTable_val.classInstance;
-nova_all_classes[194] = nova_io_Nova_FileReader_VTable_val.classInstance;
-nova_all_classes[195] = nova_io_Nova_FileReaderFunctionMap_VTable_val.classInstance;
-nova_all_classes[196] = nova_io_Nova_FileReaderPropertyMap_VTable_val.classInstance;
-nova_all_classes[197] = nova_io_Nova_FileWriter_VTable_val.classInstance;
-nova_all_classes[198] = nova_io_Nova_FileWriterFunctionMap_VTable_val.classInstance;
-nova_all_classes[199] = nova_io_Nova_FileWriterPropertyMap_VTable_val.classInstance;
-nova_all_classes[200] = nova_io_Nova_InputStream_VTable_val.classInstance;
-nova_all_classes[201] = nova_io_Nova_InputStreamFunctionMap_VTable_val.classInstance;
-nova_all_classes[202] = nova_io_Nova_InputStreamPropertyMap_VTable_val.classInstance;
-nova_all_classes[203] = nova_io_Nova_OutputStream_VTable_val.classInstance;
-nova_all_classes[204] = nova_io_Nova_OutputStreamFunctionMap_VTable_val.classInstance;
-nova_all_classes[205] = nova_io_Nova_OutputStreamPropertyMap_VTable_val.classInstance;
-nova_all_classes[206] = nova_io_Nova_StreamReader_VTable_val.classInstance;
-nova_all_classes[207] = nova_io_Nova_StreamReaderFunctionMap_VTable_val.classInstance;
-nova_all_classes[208] = nova_io_Nova_StreamReaderPropertyMap_VTable_val.classInstance;
-nova_all_classes[209] = nova_math_Nova_ArithmeticSequence_VTable_val.classInstance;
-nova_all_classes[210] = nova_math_Nova_ArithmeticSequenceFunctionMap_VTable_val.classInstance;
-nova_all_classes[211] = nova_math_Nova_ArithmeticSequencePropertyMap_VTable_val.classInstance;
-nova_all_classes[212] = nova_math_Nova_Diekstra_VTable_val.classInstance;
-nova_all_classes[213] = nova_math_Nova_DiekstraFunctionMap_VTable_val.classInstance;
-nova_all_classes[214] = nova_math_Nova_DiekstraPropertyMap_VTable_val.classInstance;
-nova_all_classes[215] = nova_math_Nova_GeometricSequence_VTable_val.classInstance;
-nova_all_classes[216] = nova_math_Nova_GeometricSequenceFunctionMap_VTable_val.classInstance;
-nova_all_classes[217] = nova_math_Nova_GeometricSequencePropertyMap_VTable_val.classInstance;
-nova_all_classes[218] = nova_math_Nova_Graph_VTable_val.classInstance;
-nova_all_classes[219] = nova_math_Nova_GraphFunctionMap_VTable_val.classInstance;
-nova_all_classes[220] = nova_math_Nova_GraphPropertyMap_VTable_val.classInstance;
-nova_all_classes[221] = nova_math_Nova_InvalidNumericStatementException_VTable_val.classInstance;
-nova_all_classes[222] = nova_math_Nova_InvalidNumericStatementExceptionFunctionMap_VTable_val.classInstance;
-nova_all_classes[223] = nova_math_Nova_InvalidNumericStatementExceptionPropertyMap_VTable_val.classInstance;
-nova_all_classes[224] = nova_math_Nova_Math_VTable_val.classInstance;
-nova_all_classes[225] = nova_math_Nova_MathFunctionMap_VTable_val.classInstance;
-nova_all_classes[226] = nova_math_Nova_MathPropertyMap_VTable_val.classInstance;
-nova_all_classes[227] = nova_math_Nova_Matrix_VTable_val.classInstance;
-nova_all_classes[228] = nova_math_Nova_MatrixFunctionMap_VTable_val.classInstance;
-nova_all_classes[229] = nova_math_Nova_MatrixPropertyMap_VTable_val.classInstance;
-nova_all_classes[230] = nova_math_Nova_NumericOperand_VTable_val.classInstance;
-nova_all_classes[231] = nova_math_Nova_NumericOperandFunctionMap_VTable_val.classInstance;
-nova_all_classes[232] = nova_math_Nova_NumericOperandPropertyMap_VTable_val.classInstance;
-nova_all_classes[233] = nova_math_Nova_NumericOperation_VTable_val.classInstance;
-nova_all_classes[234] = nova_math_Nova_NumericOperationFunctionMap_VTable_val.classInstance;
-nova_all_classes[235] = nova_math_Nova_NumericOperationPropertyMap_VTable_val.classInstance;
-nova_all_classes[236] = nova_math_Nova_NumericStatement_VTable_val.classInstance;
-nova_all_classes[237] = nova_math_Nova_NumericStatementFunctionMap_VTable_val.classInstance;
-nova_all_classes[238] = nova_math_Nova_NumericStatementPropertyMap_VTable_val.classInstance;
-nova_all_classes[239] = nova_math_Nova_NumericTree_VTable_val.classInstance;
-nova_all_classes[240] = nova_math_Nova_NumericTreeFunctionMap_VTable_val.classInstance;
-nova_all_classes[241] = nova_math_Nova_NumericTreePropertyMap_VTable_val.classInstance;
-nova_all_classes[242] = nova_math_Nova_Polynomial_VTable_val.classInstance;
-nova_all_classes[243] = nova_math_Nova_PolynomialFunctionMap_VTable_val.classInstance;
-nova_all_classes[244] = nova_math_Nova_PolynomialPropertyMap_VTable_val.classInstance;
-nova_all_classes[245] = nova_math_Nova_Sequence_VTable_val.classInstance;
-nova_all_classes[246] = nova_math_Nova_SequenceFunctionMap_VTable_val.classInstance;
-nova_all_classes[247] = nova_math_Nova_SequencePropertyMap_VTable_val.classInstance;
-nova_all_classes[248] = nova_math_Nova_Statement_VTable_val.classInstance;
-nova_all_classes[249] = nova_math_Nova_StatementFunctionMap_VTable_val.classInstance;
-nova_all_classes[250] = nova_math_Nova_StatementPropertyMap_VTable_val.classInstance;
-nova_all_classes[251] = nova_math_Nova_StatementComponent_VTable_val.classInstance;
-nova_all_classes[252] = nova_math_Nova_StatementComponentFunctionMap_VTable_val.classInstance;
-nova_all_classes[253] = nova_math_Nova_StatementComponentPropertyMap_VTable_val.classInstance;
-nova_all_classes[254] = nova_math_Nova_VariableOperand_VTable_val.classInstance;
-nova_all_classes[255] = nova_math_Nova_VariableOperandFunctionMap_VTable_val.classInstance;
-nova_all_classes[256] = nova_math_Nova_VariableOperandPropertyMap_VTable_val.classInstance;
-nova_all_classes[257] = nova_math_Nova_Vector_VTable_val.classInstance;
-nova_all_classes[258] = nova_math_Nova_VectorFunctionMap_VTable_val.classInstance;
-nova_all_classes[259] = nova_math_Nova_VectorPropertyMap_VTable_val.classInstance;
-nova_all_classes[260] = nova_math_Nova_Vector2D_VTable_val.classInstance;
-nova_all_classes[261] = nova_math_Nova_Vector2DFunctionMap_VTable_val.classInstance;
-nova_all_classes[262] = nova_math_Nova_Vector2DPropertyMap_VTable_val.classInstance;
-nova_all_classes[263] = nova_math_Nova_Vector3D_VTable_val.classInstance;
-nova_all_classes[264] = nova_math_Nova_Vector3DFunctionMap_VTable_val.classInstance;
-nova_all_classes[265] = nova_math_Nova_Vector3DPropertyMap_VTable_val.classInstance;
-nova_all_classes[266] = nova_math_Nova_Vector4D_VTable_val.classInstance;
-nova_all_classes[267] = nova_math_Nova_Vector4DFunctionMap_VTable_val.classInstance;
-nova_all_classes[268] = nova_math_Nova_Vector4DPropertyMap_VTable_val.classInstance;
-nova_all_classes[269] = nova_math_calculus_Nova_Calculus_VTable_val.classInstance;
-nova_all_classes[270] = nova_math_calculus_Nova_CalculusFunctionMap_VTable_val.classInstance;
-nova_all_classes[271] = nova_math_calculus_Nova_CalculusPropertyMap_VTable_val.classInstance;
-nova_all_classes[272] = nova_math_huffman_Nova_HuffmanTree_VTable_val.classInstance;
-nova_all_classes[273] = nova_math_huffman_Nova_HuffmanTreeFunctionMap_VTable_val.classInstance;
-nova_all_classes[274] = nova_math_huffman_Nova_HuffmanTreePropertyMap_VTable_val.classInstance;
-nova_all_classes[275] = nova_math_logic_Nova_Conclusion_VTable_val.classInstance;
-nova_all_classes[276] = nova_math_logic_Nova_ConclusionFunctionMap_VTable_val.classInstance;
-nova_all_classes[277] = nova_math_logic_Nova_ConclusionPropertyMap_VTable_val.classInstance;
-nova_all_classes[278] = nova_math_logic_Nova_Hypothesis_VTable_val.classInstance;
-nova_all_classes[279] = nova_math_logic_Nova_HypothesisFunctionMap_VTable_val.classInstance;
-nova_all_classes[280] = nova_math_logic_Nova_HypothesisPropertyMap_VTable_val.classInstance;
-nova_all_classes[281] = nova_math_logic_Nova_InvalidFormulaException_VTable_val.classInstance;
-nova_all_classes[282] = nova_math_logic_Nova_InvalidFormulaExceptionFunctionMap_VTable_val.classInstance;
-nova_all_classes[283] = nova_math_logic_Nova_InvalidFormulaExceptionPropertyMap_VTable_val.classInstance;
-nova_all_classes[284] = nova_math_logic_Nova_LogicalConnective_VTable_val.classInstance;
-nova_all_classes[285] = nova_math_logic_Nova_LogicalConnectiveFunctionMap_VTable_val.classInstance;
-nova_all_classes[286] = nova_math_logic_Nova_LogicalConnectivePropertyMap_VTable_val.classInstance;
-nova_all_classes[287] = nova_math_logic_Nova_LogicalStatement_VTable_val.classInstance;
-nova_all_classes[288] = nova_math_logic_Nova_LogicalStatementFunctionMap_VTable_val.classInstance;
-nova_all_classes[289] = nova_math_logic_Nova_LogicalStatementPropertyMap_VTable_val.classInstance;
-nova_all_classes[290] = nova_math_logic_Nova_StatementComponent_VTable_val.classInstance;
-nova_all_classes[291] = nova_math_logic_Nova_StatementComponentFunctionMap_VTable_val.classInstance;
-nova_all_classes[292] = nova_math_logic_Nova_StatementComponentPropertyMap_VTable_val.classInstance;
-nova_all_classes[293] = nova_math_logic_Nova_StatementGroup_VTable_val.classInstance;
-nova_all_classes[294] = nova_math_logic_Nova_StatementGroupFunctionMap_VTable_val.classInstance;
-nova_all_classes[295] = nova_math_logic_Nova_StatementGroupPropertyMap_VTable_val.classInstance;
-nova_all_classes[296] = nova_math_logic_Nova_StatementLetter_VTable_val.classInstance;
-nova_all_classes[297] = nova_math_logic_Nova_StatementLetterFunctionMap_VTable_val.classInstance;
-nova_all_classes[298] = nova_math_logic_Nova_StatementLetterPropertyMap_VTable_val.classInstance;
-nova_all_classes[299] = nova_math_logic_Nova_WFF_VTable_val.classInstance;
-nova_all_classes[300] = nova_math_logic_Nova_WFFFunctionMap_VTable_val.classInstance;
-nova_all_classes[301] = nova_math_logic_Nova_WFFPropertyMap_VTable_val.classInstance;
-nova_all_classes[302] = nova_meta_Nova_Class_VTable_val.classInstance;
-nova_all_classes[303] = nova_meta_Nova_ClassFunctionMap_VTable_val.classInstance;
-nova_all_classes[304] = nova_meta_Nova_ClassPropertyMap_VTable_val.classInstance;
-nova_all_classes[305] = nova_meta_Nova_Field_VTable_val.classInstance;
-nova_all_classes[306] = nova_meta_Nova_FieldFunctionMap_VTable_val.classInstance;
-nova_all_classes[307] = nova_meta_Nova_FieldPropertyMap_VTable_val.classInstance;
-nova_all_classes[308] = nova_meta_Nova_FunctionMap_VTable_val.classInstance;
-nova_all_classes[309] = nova_meta_Nova_FunctionMapFunctionMap_VTable_val.classInstance;
-nova_all_classes[310] = nova_meta_Nova_FunctionMapPropertyMap_VTable_val.classInstance;
-nova_all_classes[311] = nova_meta_Nova_GenericArgument_VTable_val.classInstance;
-nova_all_classes[312] = nova_meta_Nova_GenericArgumentFunctionMap_VTable_val.classInstance;
-nova_all_classes[313] = nova_meta_Nova_GenericArgumentPropertyMap_VTable_val.classInstance;
-nova_all_classes[314] = nova_meta_Nova_GenericParameter_VTable_val.classInstance;
-nova_all_classes[315] = nova_meta_Nova_GenericParameterFunctionMap_VTable_val.classInstance;
-nova_all_classes[316] = nova_meta_Nova_GenericParameterPropertyMap_VTable_val.classInstance;
-nova_all_classes[317] = nova_meta_Nova_PropertyMap_VTable_val.classInstance;
-nova_all_classes[318] = nova_meta_Nova_PropertyMapFunctionMap_VTable_val.classInstance;
-nova_all_classes[319] = nova_meta_Nova_PropertyMapPropertyMap_VTable_val.classInstance;
-nova_all_classes[320] = nova_meta_Nova_Type_VTable_val.classInstance;
-nova_all_classes[321] = nova_meta_Nova_TypeFunctionMap_VTable_val.classInstance;
-nova_all_classes[322] = nova_meta_Nova_TypePropertyMap_VTable_val.classInstance;
-nova_all_classes[323] = nova_network_Nova_ClientSocket_VTable_val.classInstance;
-nova_all_classes[324] = nova_network_Nova_ClientSocketFunctionMap_VTable_val.classInstance;
-nova_all_classes[325] = nova_network_Nova_ClientSocketPropertyMap_VTable_val.classInstance;
-nova_all_classes[326] = nova_network_Nova_ConnectionSocket_VTable_val.classInstance;
-nova_all_classes[327] = nova_network_Nova_ConnectionSocketFunctionMap_VTable_val.classInstance;
-nova_all_classes[328] = nova_network_Nova_ConnectionSocketPropertyMap_VTable_val.classInstance;
-nova_all_classes[329] = nova_network_Nova_NetworkInputStream_VTable_val.classInstance;
-nova_all_classes[330] = nova_network_Nova_NetworkInputStreamFunctionMap_VTable_val.classInstance;
-nova_all_classes[331] = nova_network_Nova_NetworkInputStreamPropertyMap_VTable_val.classInstance;
-nova_all_classes[332] = nova_network_Nova_NetworkOutputStream_VTable_val.classInstance;
-nova_all_classes[333] = nova_network_Nova_NetworkOutputStreamFunctionMap_VTable_val.classInstance;
-nova_all_classes[334] = nova_network_Nova_NetworkOutputStreamPropertyMap_VTable_val.classInstance;
-nova_all_classes[335] = nova_network_Nova_ServerSocket_VTable_val.classInstance;
-nova_all_classes[336] = nova_network_Nova_ServerSocketFunctionMap_VTable_val.classInstance;
-nova_all_classes[337] = nova_network_Nova_ServerSocketPropertyMap_VTable_val.classInstance;
-nova_all_classes[338] = nova_network_Nova_Socket_VTable_val.classInstance;
-nova_all_classes[339] = nova_network_Nova_SocketFunctionMap_VTable_val.classInstance;
-nova_all_classes[340] = nova_network_Nova_SocketPropertyMap_VTable_val.classInstance;
-nova_all_classes[341] = nova_operators_Nova_EqualsOperator_VTable_val.classInstance;
-nova_all_classes[342] = nova_operators_Nova_EqualsOperatorFunctionMap_VTable_val.classInstance;
-nova_all_classes[343] = nova_operators_Nova_EqualsOperatorPropertyMap_VTable_val.classInstance;
-nova_all_classes[344] = nova_operators_Nova_MinusEqualsOperator_VTable_val.classInstance;
-nova_all_classes[345] = nova_operators_Nova_MinusEqualsOperatorFunctionMap_VTable_val.classInstance;
-nova_all_classes[346] = nova_operators_Nova_MinusEqualsOperatorPropertyMap_VTable_val.classInstance;
-nova_all_classes[347] = nova_operators_Nova_MinusOperator_VTable_val.classInstance;
-nova_all_classes[348] = nova_operators_Nova_MinusOperatorFunctionMap_VTable_val.classInstance;
-nova_all_classes[349] = nova_operators_Nova_MinusOperatorPropertyMap_VTable_val.classInstance;
-nova_all_classes[350] = nova_operators_Nova_MultiplyEqualsOperator_VTable_val.classInstance;
-nova_all_classes[351] = nova_operators_Nova_MultiplyEqualsOperatorFunctionMap_VTable_val.classInstance;
-nova_all_classes[352] = nova_operators_Nova_MultiplyEqualsOperatorPropertyMap_VTable_val.classInstance;
-nova_all_classes[353] = nova_operators_Nova_MultiplyOperator_VTable_val.classInstance;
-nova_all_classes[354] = nova_operators_Nova_MultiplyOperatorFunctionMap_VTable_val.classInstance;
-nova_all_classes[355] = nova_operators_Nova_MultiplyOperatorPropertyMap_VTable_val.classInstance;
-nova_all_classes[356] = nova_operators_Nova_NotEqualToOperator_VTable_val.classInstance;
-nova_all_classes[357] = nova_operators_Nova_NotEqualToOperatorFunctionMap_VTable_val.classInstance;
-nova_all_classes[358] = nova_operators_Nova_NotEqualToOperatorPropertyMap_VTable_val.classInstance;
-nova_all_classes[359] = nova_operators_Nova_PlusEqualsOperator_VTable_val.classInstance;
-nova_all_classes[360] = nova_operators_Nova_PlusEqualsOperatorFunctionMap_VTable_val.classInstance;
-nova_all_classes[361] = nova_operators_Nova_PlusEqualsOperatorPropertyMap_VTable_val.classInstance;
-nova_all_classes[362] = nova_operators_Nova_PlusOperator_VTable_val.classInstance;
-nova_all_classes[363] = nova_operators_Nova_PlusOperatorFunctionMap_VTable_val.classInstance;
-nova_all_classes[364] = nova_operators_Nova_PlusOperatorPropertyMap_VTable_val.classInstance;
-nova_all_classes[365] = nova_primitive_Nova_Bool_VTable_val.classInstance;
-nova_all_classes[366] = nova_primitive_Nova_BoolFunctionMap_VTable_val.classInstance;
-nova_all_classes[367] = nova_primitive_Nova_BoolPropertyMap_VTable_val.classInstance;
-nova_all_classes[368] = nova_primitive_Nova_Null_VTable_val.classInstance;
-nova_all_classes[369] = nova_primitive_Nova_NullFunctionMap_VTable_val.classInstance;
-nova_all_classes[370] = nova_primitive_Nova_NullPropertyMap_VTable_val.classInstance;
-nova_all_classes[371] = nova_primitive_Nova_Primitive_VTable_val.classInstance;
-nova_all_classes[372] = nova_primitive_Nova_PrimitiveFunctionMap_VTable_val.classInstance;
-nova_all_classes[373] = nova_primitive_Nova_PrimitivePropertyMap_VTable_val.classInstance;
-nova_all_classes[374] = nova_primitive_number_Nova_Byte_VTable_val.classInstance;
-nova_all_classes[375] = nova_primitive_number_Nova_ByteFunctionMap_VTable_val.classInstance;
-nova_all_classes[376] = nova_primitive_number_Nova_BytePropertyMap_VTable_val.classInstance;
-nova_all_classes[377] = nova_primitive_number_Nova_Char_VTable_val.classInstance;
-nova_all_classes[378] = nova_primitive_number_Nova_CharFunctionMap_VTable_val.classInstance;
-nova_all_classes[379] = nova_primitive_number_Nova_CharPropertyMap_VTable_val.classInstance;
-nova_all_classes[380] = nova_primitive_number_Nova_Double_VTable_val.classInstance;
-nova_all_classes[381] = nova_primitive_number_Nova_DoubleFunctionMap_VTable_val.classInstance;
-nova_all_classes[382] = nova_primitive_number_Nova_DoublePropertyMap_VTable_val.classInstance;
-nova_all_classes[383] = nova_primitive_number_Nova_Float_VTable_val.classInstance;
-nova_all_classes[384] = nova_primitive_number_Nova_FloatFunctionMap_VTable_val.classInstance;
-nova_all_classes[385] = nova_primitive_number_Nova_FloatPropertyMap_VTable_val.classInstance;
-nova_all_classes[386] = nova_primitive_number_Nova_Int_VTable_val.classInstance;
-nova_all_classes[387] = nova_primitive_number_Nova_IntFunctionMap_VTable_val.classInstance;
-nova_all_classes[388] = nova_primitive_number_Nova_IntPropertyMap_VTable_val.classInstance;
-nova_all_classes[389] = nova_primitive_number_Nova_Integer_VTable_val.classInstance;
-nova_all_classes[390] = nova_primitive_number_Nova_IntegerFunctionMap_VTable_val.classInstance;
-nova_all_classes[391] = nova_primitive_number_Nova_IntegerPropertyMap_VTable_val.classInstance;
-nova_all_classes[392] = nova_primitive_number_Nova_Long_VTable_val.classInstance;
-nova_all_classes[393] = nova_primitive_number_Nova_LongFunctionMap_VTable_val.classInstance;
-nova_all_classes[394] = nova_primitive_number_Nova_LongPropertyMap_VTable_val.classInstance;
-nova_all_classes[395] = nova_primitive_number_Nova_Number_VTable_val.classInstance;
-nova_all_classes[396] = nova_primitive_number_Nova_NumberFunctionMap_VTable_val.classInstance;
-nova_all_classes[397] = nova_primitive_number_Nova_NumberPropertyMap_VTable_val.classInstance;
-nova_all_classes[398] = nova_primitive_number_Nova_RealNumber_VTable_val.classInstance;
-nova_all_classes[399] = nova_primitive_number_Nova_RealNumberFunctionMap_VTable_val.classInstance;
-nova_all_classes[400] = nova_primitive_number_Nova_RealNumberPropertyMap_VTable_val.classInstance;
-nova_all_classes[401] = nova_primitive_number_Nova_Short_VTable_val.classInstance;
-nova_all_classes[402] = nova_primitive_number_Nova_ShortFunctionMap_VTable_val.classInstance;
-nova_all_classes[403] = nova_primitive_number_Nova_ShortPropertyMap_VTable_val.classInstance;
-nova_all_classes[404] = nova_process_Nova_Process_VTable_val.classInstance;
-nova_all_classes[405] = nova_process_Nova_ProcessFunctionMap_VTable_val.classInstance;
-nova_all_classes[406] = nova_process_Nova_ProcessPropertyMap_VTable_val.classInstance;
-nova_all_classes[407] = nova_regex_Nova_Match_VTable_val.classInstance;
-nova_all_classes[408] = nova_regex_Nova_MatchFunctionMap_VTable_val.classInstance;
-nova_all_classes[409] = nova_regex_Nova_MatchPropertyMap_VTable_val.classInstance;
-nova_all_classes[410] = nova_regex_Nova_Pattern_VTable_val.classInstance;
-nova_all_classes[411] = nova_regex_Nova_PatternFunctionMap_VTable_val.classInstance;
-nova_all_classes[412] = nova_regex_Nova_PatternPropertyMap_VTable_val.classInstance;
-nova_all_classes[413] = nova_regex_Nova_Regex_VTable_val.classInstance;
-nova_all_classes[414] = nova_regex_Nova_RegexFunctionMap_VTable_val.classInstance;
-nova_all_classes[415] = nova_regex_Nova_RegexPropertyMap_VTable_val.classInstance;
-nova_all_classes[416] = nova_security_Nova_MD5_VTable_val.classInstance;
-nova_all_classes[417] = nova_security_Nova_MD5FunctionMap_VTable_val.classInstance;
-nova_all_classes[418] = nova_security_Nova_MD5PropertyMap_VTable_val.classInstance;
-nova_all_classes[419] = nova_security_Nova_Sha256_VTable_val.classInstance;
-nova_all_classes[420] = nova_security_Nova_Sha256FunctionMap_VTable_val.classInstance;
-nova_all_classes[421] = nova_security_Nova_Sha256PropertyMap_VTable_val.classInstance;
-nova_all_classes[422] = nova_serialization_Nova_JsonSerializer_VTable_val.classInstance;
-nova_all_classes[423] = nova_serialization_Nova_JsonSerializerFunctionMap_VTable_val.classInstance;
-nova_all_classes[424] = nova_serialization_Nova_JsonSerializerPropertyMap_VTable_val.classInstance;
-nova_all_classes[425] = nova_star_Nova_Frame_VTable_val.classInstance;
-nova_all_classes[426] = nova_star_Nova_FrameFunctionMap_VTable_val.classInstance;
-nova_all_classes[427] = nova_star_Nova_FramePropertyMap_VTable_val.classInstance;
-nova_all_classes[428] = nova_star_Nova_Window_VTable_val.classInstance;
-nova_all_classes[429] = nova_star_Nova_WindowFunctionMap_VTable_val.classInstance;
-nova_all_classes[430] = nova_star_Nova_WindowPropertyMap_VTable_val.classInstance;
-nova_all_classes[431] = nova_star_Nova_WindowThread_VTable_val.classInstance;
-nova_all_classes[432] = nova_star_Nova_WindowThreadFunctionMap_VTable_val.classInstance;
-nova_all_classes[433] = nova_star_Nova_WindowThreadPropertyMap_VTable_val.classInstance;
-nova_all_classes[434] = nova_thread_Nova_Thread_VTable_val.classInstance;
-nova_all_classes[435] = nova_thread_Nova_ThreadFunctionMap_VTable_val.classInstance;
-nova_all_classes[436] = nova_thread_Nova_ThreadPropertyMap_VTable_val.classInstance;
-nova_all_classes[437] = nova_thread_Nova_UncaughtExceptionHandler_VTable_val.classInstance;
-nova_all_classes[438] = nova_thread_Nova_UncaughtExceptionHandlerFunctionMap_VTable_val.classInstance;
-nova_all_classes[439] = nova_thread_Nova_UncaughtExceptionHandlerPropertyMap_VTable_val.classInstance;
-nova_all_classes[440] = nova_thread_async_Nova_Async_VTable_val.classInstance;
-nova_all_classes[441] = nova_thread_async_Nova_AsyncFunctionMap_VTable_val.classInstance;
-nova_all_classes[442] = nova_thread_async_Nova_AsyncPropertyMap_VTable_val.classInstance;
-nova_all_classes[443] = nova_thread_async_Nova_Task_VTable_val.classInstance;
-nova_all_classes[444] = nova_thread_async_Nova_TaskFunctionMap_VTable_val.classInstance;
-nova_all_classes[445] = nova_thread_async_Nova_TaskPropertyMap_VTable_val.classInstance;
-nova_all_classes[446] = nova_time_Nova_CumulativeTimer_VTable_val.classInstance;
-nova_all_classes[447] = nova_time_Nova_CumulativeTimerFunctionMap_VTable_val.classInstance;
-nova_all_classes[448] = nova_time_Nova_CumulativeTimerPropertyMap_VTable_val.classInstance;
-nova_all_classes[449] = nova_time_Nova_Date_VTable_val.classInstance;
-nova_all_classes[450] = nova_time_Nova_DateFunctionMap_VTable_val.classInstance;
-nova_all_classes[451] = nova_time_Nova_DatePropertyMap_VTable_val.classInstance;
-nova_all_classes[452] = nova_time_Nova_Time_VTable_val.classInstance;
-nova_all_classes[453] = nova_time_Nova_TimeFunctionMap_VTable_val.classInstance;
-nova_all_classes[454] = nova_time_Nova_TimePropertyMap_VTable_val.classInstance;
-nova_all_classes[455] = nova_time_Nova_Timer_VTable_val.classInstance;
-nova_all_classes[456] = nova_time_Nova_TimerFunctionMap_VTable_val.classInstance;
-nova_all_classes[457] = nova_time_Nova_TimerPropertyMap_VTable_val.classInstance;
-nova_all_classes[458] = nova_web_js_json_Nova_Json_VTable_val.classInstance;
-nova_all_classes[459] = nova_web_js_json_Nova_JsonFunctionMap_VTable_val.classInstance;
-nova_all_classes[460] = nova_web_js_json_Nova_JsonPropertyMap_VTable_val.classInstance;
-nova_all_classes[461] = nova_web_svg_Nova_Svg_VTable_val.classInstance;
-nova_all_classes[462] = nova_web_svg_Nova_SvgFunctionMap_VTable_val.classInstance;
-nova_all_classes[463] = nova_web_svg_Nova_SvgPropertyMap_VTable_val.classInstance;
-nova_all_classes[464] = nova_web_svg_Nova_SvgCircle_VTable_val.classInstance;
-nova_all_classes[465] = nova_web_svg_Nova_SvgCircleFunctionMap_VTable_val.classInstance;
-nova_all_classes[466] = nova_web_svg_Nova_SvgCirclePropertyMap_VTable_val.classInstance;
-nova_all_classes[467] = nova_web_svg_Nova_SvgComponent_VTable_val.classInstance;
-nova_all_classes[468] = nova_web_svg_Nova_SvgComponentFunctionMap_VTable_val.classInstance;
-nova_all_classes[469] = nova_web_svg_Nova_SvgComponentPropertyMap_VTable_val.classInstance;
-nova_all_classes[470] = nova_web_svg_Nova_SvgComponentList_VTable_val.classInstance;
-nova_all_classes[471] = nova_web_svg_Nova_SvgComponentListFunctionMap_VTable_val.classInstance;
-nova_all_classes[472] = nova_web_svg_Nova_SvgComponentListPropertyMap_VTable_val.classInstance;
-nova_all_classes[473] = nova_web_svg_Nova_SvgComponentNode_VTable_val.classInstance;
-nova_all_classes[474] = nova_web_svg_Nova_SvgComponentNodeFunctionMap_VTable_val.classInstance;
-nova_all_classes[475] = nova_web_svg_Nova_SvgComponentNodePropertyMap_VTable_val.classInstance;
-nova_all_classes[476] = nova_web_svg_Nova_SvgMainComponent_VTable_val.classInstance;
-nova_all_classes[477] = nova_web_svg_Nova_SvgMainComponentFunctionMap_VTable_val.classInstance;
-nova_all_classes[478] = nova_web_svg_Nova_SvgMainComponentPropertyMap_VTable_val.classInstance;
-nova_all_classes[479] = nova_web_svg_no3_Nova_No3_VTable_val.classInstance;
-nova_all_classes[480] = nova_web_svg_no3_Nova_No3FunctionMap_VTable_val.classInstance;
-nova_all_classes[481] = nova_web_svg_no3_Nova_No3PropertyMap_VTable_val.classInstance;
-nova_all_classes[482] = nova_web_svg_no3_Nova_No3Node_VTable_val.classInstance;
-nova_all_classes[483] = nova_web_svg_no3_Nova_No3NodeFunctionMap_VTable_val.classInstance;
-nova_all_classes[484] = nova_web_svg_no3_Nova_No3NodePropertyMap_VTable_val.classInstance;
-nova_all_classes[485] = nova_web_svg_no3_Nova_No3Select_VTable_val.classInstance;
-nova_all_classes[486] = nova_web_svg_no3_Nova_No3SelectFunctionMap_VTable_val.classInstance;
-nova_all_classes[487] = nova_web_svg_no3_Nova_No3SelectPropertyMap_VTable_val.classInstance;
-nova_all_classes[488] = nova_web_svg_no3_Nova_No3SelectAll_VTable_val.classInstance;
-nova_all_classes[489] = nova_web_svg_no3_Nova_No3SelectAllFunctionMap_VTable_val.classInstance;
-nova_all_classes[490] = nova_web_svg_no3_Nova_No3SelectAllPropertyMap_VTable_val.classInstance;
-nova_all_classes[491] = example_Nova_Animal_VTable_val.classInstance;
-nova_all_classes[492] = example_Nova_AnimalFunctionMap_VTable_val.classInstance;
-nova_all_classes[493] = example_Nova_AnimalPropertyMap_VTable_val.classInstance;
-nova_all_classes[494] = example_Nova_ArrayDemo_VTable_val.classInstance;
-nova_all_classes[495] = example_Nova_ArrayDemoFunctionMap_VTable_val.classInstance;
-nova_all_classes[496] = example_Nova_ArrayDemoPropertyMap_VTable_val.classInstance;
-nova_all_classes[497] = example_Nova_BodyBuilder_VTable_val.classInstance;
-nova_all_classes[498] = example_Nova_BodyBuilderFunctionMap_VTable_val.classInstance;
-nova_all_classes[499] = example_Nova_BodyBuilderPropertyMap_VTable_val.classInstance;
-nova_all_classes[500] = example_Nova_ClosureDemo_VTable_val.classInstance;
-nova_all_classes[501] = example_Nova_ClosureDemoFunctionMap_VTable_val.classInstance;
-nova_all_classes[502] = example_Nova_ClosureDemoPropertyMap_VTable_val.classInstance;
-nova_all_classes[503] = example_Nova_Dog_VTable_val.classInstance;
-nova_all_classes[504] = example_Nova_DogFunctionMap_VTable_val.classInstance;
-nova_all_classes[505] = example_Nova_DogPropertyMap_VTable_val.classInstance;
-nova_all_classes[506] = example_Nova_ExceptionHandlingDemo_VTable_val.classInstance;
-nova_all_classes[507] = example_Nova_ExceptionHandlingDemoFunctionMap_VTable_val.classInstance;
-nova_all_classes[508] = example_Nova_ExceptionHandlingDemoPropertyMap_VTable_val.classInstance;
-nova_all_classes[509] = example_Nova_FileTest_VTable_val.classInstance;
-nova_all_classes[510] = example_Nova_FileTestFunctionMap_VTable_val.classInstance;
-nova_all_classes[511] = example_Nova_FileTestPropertyMap_VTable_val.classInstance;
-nova_all_classes[512] = example_Nova_GenericDemo_VTable_val.classInstance;
-nova_all_classes[513] = example_Nova_GenericDemoFunctionMap_VTable_val.classInstance;
-nova_all_classes[514] = example_Nova_GenericDemoPropertyMap_VTable_val.classInstance;
-nova_all_classes[515] = example_Nova_HashMapDemo_VTable_val.classInstance;
-nova_all_classes[516] = example_Nova_HashMapDemoFunctionMap_VTable_val.classInstance;
-nova_all_classes[517] = example_Nova_HashMapDemoPropertyMap_VTable_val.classInstance;
-nova_all_classes[518] = example_Nova_HashSetDemo_VTable_val.classInstance;
-nova_all_classes[519] = example_Nova_HashSetDemoFunctionMap_VTable_val.classInstance;
-nova_all_classes[520] = example_Nova_HashSetDemoPropertyMap_VTable_val.classInstance;
-nova_all_classes[521] = example_Nova_IntegerTest_VTable_val.classInstance;
-nova_all_classes[522] = example_Nova_IntegerTestFunctionMap_VTable_val.classInstance;
-nova_all_classes[523] = example_Nova_IntegerTestPropertyMap_VTable_val.classInstance;
-nova_all_classes[524] = example_Nova_Lab_VTable_val.classInstance;
-nova_all_classes[525] = example_Nova_LabFunctionMap_VTable_val.classInstance;
-nova_all_classes[526] = example_Nova_LabPropertyMap_VTable_val.classInstance;
-nova_all_classes[527] = example_Nova_MathDemo_VTable_val.classInstance;
-nova_all_classes[528] = example_Nova_MathDemoFunctionMap_VTable_val.classInstance;
-nova_all_classes[529] = example_Nova_MathDemoPropertyMap_VTable_val.classInstance;
-nova_all_classes[530] = example_Nova_NonWholeDivisionException_VTable_val.classInstance;
-nova_all_classes[531] = example_Nova_NonWholeDivisionExceptionFunctionMap_VTable_val.classInstance;
-nova_all_classes[532] = example_Nova_NonWholeDivisionExceptionPropertyMap_VTable_val.classInstance;
-nova_all_classes[533] = example_Nova_Person_VTable_val.classInstance;
-nova_all_classes[534] = example_Nova_PersonFunctionMap_VTable_val.classInstance;
-nova_all_classes[535] = example_Nova_PersonPropertyMap_VTable_val.classInstance;
-nova_all_classes[536] = example_Nova_Polygon_VTable_val.classInstance;
-nova_all_classes[537] = example_Nova_PolygonFunctionMap_VTable_val.classInstance;
-nova_all_classes[538] = example_Nova_PolygonPropertyMap_VTable_val.classInstance;
-nova_all_classes[539] = example_Nova_PolymorphismDemo_VTable_val.classInstance;
-nova_all_classes[540] = example_Nova_PolymorphismDemoFunctionMap_VTable_val.classInstance;
-nova_all_classes[541] = example_Nova_PolymorphismDemoPropertyMap_VTable_val.classInstance;
-nova_all_classes[542] = example_Nova_QueueDemo_VTable_val.classInstance;
-nova_all_classes[543] = example_Nova_QueueDemoFunctionMap_VTable_val.classInstance;
-nova_all_classes[544] = example_Nova_QueueDemoPropertyMap_VTable_val.classInstance;
-nova_all_classes[545] = example_Nova_Spider_VTable_val.classInstance;
-nova_all_classes[546] = example_Nova_SpiderFunctionMap_VTable_val.classInstance;
-nova_all_classes[547] = example_Nova_SpiderPropertyMap_VTable_val.classInstance;
-nova_all_classes[548] = example_Nova_Square_VTable_val.classInstance;
-nova_all_classes[549] = example_Nova_SquareFunctionMap_VTable_val.classInstance;
-nova_all_classes[550] = example_Nova_SquarePropertyMap_VTable_val.classInstance;
-nova_all_classes[551] = example_Nova_SvgChart_VTable_val.classInstance;
-nova_all_classes[552] = example_Nova_SvgChartFunctionMap_VTable_val.classInstance;
-nova_all_classes[553] = example_Nova_SvgChartPropertyMap_VTable_val.classInstance;
-nova_all_classes[554] = example_Nova_SvgFractal_VTable_val.classInstance;
-nova_all_classes[555] = example_Nova_SvgFractalFunctionMap_VTable_val.classInstance;
-nova_all_classes[556] = example_Nova_SvgFractalPropertyMap_VTable_val.classInstance;
-nova_all_classes[557] = example_Nova_T1_VTable_val.classInstance;
-nova_all_classes[558] = example_Nova_T1FunctionMap_VTable_val.classInstance;
-nova_all_classes[559] = example_Nova_T1PropertyMap_VTable_val.classInstance;
-nova_all_classes[560] = example_Nova_T2_VTable_val.classInstance;
-nova_all_classes[561] = example_Nova_T2FunctionMap_VTable_val.classInstance;
-nova_all_classes[562] = example_Nova_T2PropertyMap_VTable_val.classInstance;
-nova_all_classes[563] = example_Nova_Test_VTable_val.classInstance;
-nova_all_classes[564] = example_Nova_TestFunctionMap_VTable_val.classInstance;
-nova_all_classes[565] = example_Nova_TestPropertyMap_VTable_val.classInstance;
-nova_all_classes[566] = example_Nova_ThreadDemo_VTable_val.classInstance;
-nova_all_classes[567] = example_Nova_ThreadDemoFunctionMap_VTable_val.classInstance;
-nova_all_classes[568] = example_Nova_ThreadDemoPropertyMap_VTable_val.classInstance;
-nova_all_classes[569] = example_Nova_ThreadDemoImplementation_VTable_val.classInstance;
-nova_all_classes[570] = example_Nova_ThreadDemoImplementationFunctionMap_VTable_val.classInstance;
-nova_all_classes[571] = example_Nova_ThreadDemoImplementationPropertyMap_VTable_val.classInstance;
-nova_all_classes[572] = example_ackermann_Nova_Ackermann_VTable_val.classInstance;
-nova_all_classes[573] = example_ackermann_Nova_AckermannFunctionMap_VTable_val.classInstance;
-nova_all_classes[574] = example_ackermann_Nova_AckermannPropertyMap_VTable_val.classInstance;
-nova_all_classes[575] = example_copy_Nova_Dog_VTable_val.classInstance;
-nova_all_classes[576] = example_copy_Nova_DogFunctionMap_VTable_val.classInstance;
-nova_all_classes[577] = example_copy_Nova_DogPropertyMap_VTable_val.classInstance;
-nova_all_classes[578] = example_database_Nova_DatabaseDemo_VTable_val.classInstance;
-nova_all_classes[579] = example_database_Nova_DatabaseDemoFunctionMap_VTable_val.classInstance;
-nova_all_classes[580] = example_database_Nova_DatabaseDemoPropertyMap_VTable_val.classInstance;
-nova_all_classes[581] = example_network_Nova_ClientDemo_VTable_val.classInstance;
-nova_all_classes[582] = example_network_Nova_ClientDemoFunctionMap_VTable_val.classInstance;
-nova_all_classes[583] = example_network_Nova_ClientDemoPropertyMap_VTable_val.classInstance;
-nova_all_classes[584] = example_network_Nova_ConnectionThread_VTable_val.classInstance;
-nova_all_classes[585] = example_network_Nova_ConnectionThreadFunctionMap_VTable_val.classInstance;
-nova_all_classes[586] = example_network_Nova_ConnectionThreadPropertyMap_VTable_val.classInstance;
-nova_all_classes[587] = example_network_Nova_OutputThread_VTable_val.classInstance;
-nova_all_classes[588] = example_network_Nova_OutputThreadFunctionMap_VTable_val.classInstance;
-nova_all_classes[589] = example_network_Nova_OutputThreadPropertyMap_VTable_val.classInstance;
-nova_all_classes[590] = example_network_Nova_ServerDemo_VTable_val.classInstance;
-nova_all_classes[591] = example_network_Nova_ServerDemoFunctionMap_VTable_val.classInstance;
-nova_all_classes[592] = example_network_Nova_ServerDemoPropertyMap_VTable_val.classInstance;
-nova_all_classes[593] = stabilitytest_Nova_AssignmentStability_VTable_val.classInstance;
-nova_all_classes[594] = stabilitytest_Nova_AssignmentStabilityFunctionMap_VTable_val.classInstance;
-nova_all_classes[595] = stabilitytest_Nova_AssignmentStabilityPropertyMap_VTable_val.classInstance;
-nova_all_classes[596] = stabilitytest_Nova_ClassWithProperties_VTable_val.classInstance;
-nova_all_classes[597] = stabilitytest_Nova_ClassWithPropertiesFunctionMap_VTable_val.classInstance;
-nova_all_classes[598] = stabilitytest_Nova_ClassWithPropertiesPropertyMap_VTable_val.classInstance;
-nova_all_classes[599] = stabilitytest_Nova_ClientThread_VTable_val.classInstance;
-nova_all_classes[600] = stabilitytest_Nova_ClientThreadFunctionMap_VTable_val.classInstance;
-nova_all_classes[601] = stabilitytest_Nova_ClientThreadPropertyMap_VTable_val.classInstance;
-nova_all_classes[602] = stabilitytest_Nova_ClosureStability_VTable_val.classInstance;
-nova_all_classes[603] = stabilitytest_Nova_ClosureStabilityFunctionMap_VTable_val.classInstance;
-nova_all_classes[604] = stabilitytest_Nova_ClosureStabilityPropertyMap_VTable_val.classInstance;
-nova_all_classes[605] = stabilitytest_Nova_ExceptionStability_VTable_val.classInstance;
-nova_all_classes[606] = stabilitytest_Nova_ExceptionStabilityFunctionMap_VTable_val.classInstance;
-nova_all_classes[607] = stabilitytest_Nova_ExceptionStabilityPropertyMap_VTable_val.classInstance;
-nova_all_classes[608] = stabilitytest_Nova_ExternalInnerClassStability_VTable_val.classInstance;
-nova_all_classes[609] = stabilitytest_Nova_ExternalInnerClassStabilityFunctionMap_VTable_val.classInstance;
-nova_all_classes[610] = stabilitytest_Nova_ExternalInnerClassStabilityPropertyMap_VTable_val.classInstance;
-nova_all_classes[611] = stabilitytest_Nova_FileStability_VTable_val.classInstance;
-nova_all_classes[612] = stabilitytest_Nova_FileStabilityFunctionMap_VTable_val.classInstance;
-nova_all_classes[613] = stabilitytest_Nova_FileStabilityPropertyMap_VTable_val.classInstance;
-nova_all_classes[614] = stabilitytest_Nova_InnerClassStability_VTable_val.classInstance;
-nova_all_classes[615] = stabilitytest_Nova_MyOuter_VTable_val.classInstance;
-nova_all_classes[616] = stabilitytest_Nova_InnerClassStabilityFunctionMap_VTable_val.classInstance;
-nova_all_classes[617] = stabilitytest_Nova_InnerClassStabilityPropertyMap_VTable_val.classInstance;
-nova_all_classes[618] = stabilitytest_Nova_MyOuterFunctionMap_VTable_val.classInstance;
-nova_all_classes[619] = stabilitytest_Nova_MyOuterPropertyMap_VTable_val.classInstance;
-nova_all_classes[620] = stabilitytest_Nova_MyInner_VTable_val.classInstance;
-nova_all_classes[621] = stabilitytest_Nova_MyInnerFunctionMap_VTable_val.classInstance;
-nova_all_classes[622] = stabilitytest_Nova_MyInnerPropertyMap_VTable_val.classInstance;
-nova_all_classes[623] = stabilitytest_Nova_MyInnerPropertyMapFunctionMap_VTable_val.classInstance;
-nova_all_classes[624] = stabilitytest_Nova_LambdaStability_VTable_val.classInstance;
-nova_all_classes[625] = stabilitytest_Nova_LambdaStabilityFunctionMap_VTable_val.classInstance;
-nova_all_classes[626] = stabilitytest_Nova_LambdaStabilityPropertyMap_VTable_val.classInstance;
-nova_all_classes[627] = stabilitytest_Nova_NetworkStability_VTable_val.classInstance;
-nova_all_classes[628] = stabilitytest_Nova_NetworkStabilityFunctionMap_VTable_val.classInstance;
-nova_all_classes[629] = stabilitytest_Nova_NetworkStabilityPropertyMap_VTable_val.classInstance;
-nova_all_classes[630] = stabilitytest_Nova_Node_VTable_val.classInstance;
-nova_all_classes[631] = stabilitytest_Nova_NodeFunctionMap_VTable_val.classInstance;
-nova_all_classes[632] = stabilitytest_Nova_NodePropertyMap_VTable_val.classInstance;
-nova_all_classes[633] = stabilitytest_Nova_PolymorphicSubClass_VTable_val.classInstance;
-nova_all_classes[634] = stabilitytest_Nova_PolymorphicSubClassFunctionMap_VTable_val.classInstance;
-nova_all_classes[635] = stabilitytest_Nova_PolymorphicSubClassPropertyMap_VTable_val.classInstance;
-nova_all_classes[636] = stabilitytest_Nova_PolymorphicSuperClass_VTable_val.classInstance;
-nova_all_classes[637] = stabilitytest_Nova_PolymorphicSuperClassFunctionMap_VTable_val.classInstance;
-nova_all_classes[638] = stabilitytest_Nova_PolymorphicSuperClassPropertyMap_VTable_val.classInstance;
-nova_all_classes[639] = stabilitytest_Nova_PolymorphismStability_VTable_val.classInstance;
-nova_all_classes[640] = stabilitytest_Nova_PolymorphismStabilityFunctionMap_VTable_val.classInstance;
-nova_all_classes[641] = stabilitytest_Nova_PolymorphismStabilityPropertyMap_VTable_val.classInstance;
-nova_all_classes[642] = stabilitytest_Nova_RegexStability_VTable_val.classInstance;
-nova_all_classes[643] = stabilitytest_Nova_RegexStabilityFunctionMap_VTable_val.classInstance;
-nova_all_classes[644] = stabilitytest_Nova_RegexStabilityPropertyMap_VTable_val.classInstance;
-nova_all_classes[645] = stabilitytest_Nova_StabilityExceptionHandler_VTable_val.classInstance;
-nova_all_classes[646] = stabilitytest_Nova_StabilityExceptionHandlerFunctionMap_VTable_val.classInstance;
-nova_all_classes[647] = stabilitytest_Nova_StabilityExceptionHandlerPropertyMap_VTable_val.classInstance;
-nova_all_classes[648] = stabilitytest_Nova_StabilityTest_VTable_val.classInstance;
-nova_all_classes[649] = stabilitytest_Nova_StabilityTestFunctionMap_VTable_val.classInstance;
-nova_all_classes[650] = stabilitytest_Nova_StabilityTestPropertyMap_VTable_val.classInstance;
-nova_all_classes[651] = stabilitytest_Nova_StabilityTestCase_VTable_val.classInstance;
-nova_all_classes[652] = stabilitytest_Nova_StabilityTestCaseFunctionMap_VTable_val.classInstance;
-nova_all_classes[653] = stabilitytest_Nova_StabilityTestCasePropertyMap_VTable_val.classInstance;
-nova_all_classes[654] = stabilitytest_Nova_StabilityTestException_VTable_val.classInstance;
-nova_all_classes[655] = stabilitytest_Nova_StabilityTestExceptionFunctionMap_VTable_val.classInstance;
-nova_all_classes[656] = stabilitytest_Nova_StabilityTestExceptionPropertyMap_VTable_val.classInstance;
-nova_all_classes[657] = stabilitytest_Nova_StaticImportStability_VTable_val.classInstance;
-nova_all_classes[658] = stabilitytest_Nova_StaticImportStabilityFunctionMap_VTable_val.classInstance;
-nova_all_classes[659] = stabilitytest_Nova_StaticImportStabilityPropertyMap_VTable_val.classInstance;
-nova_all_classes[660] = stabilitytest_Nova_SyntaxStability_VTable_val.classInstance;
-nova_all_classes[661] = stabilitytest_Nova_SyntaxStabilityFunctionMap_VTable_val.classInstance;
-nova_all_classes[662] = stabilitytest_Nova_SyntaxStabilityPropertyMap_VTable_val.classInstance;
-nova_all_classes[663] = stabilitytest_Nova_ThreadImplementation_VTable_val.classInstance;
-nova_all_classes[664] = stabilitytest_Nova_ThreadImplementationFunctionMap_VTable_val.classInstance;
-nova_all_classes[665] = stabilitytest_Nova_ThreadImplementationPropertyMap_VTable_val.classInstance;
-nova_all_classes[666] = stabilitytest_Nova_ThreadStability_VTable_val.classInstance;
-nova_all_classes[667] = stabilitytest_Nova_ThreadStabilityFunctionMap_VTable_val.classInstance;
-nova_all_classes[668] = stabilitytest_Nova_ThreadStabilityPropertyMap_VTable_val.classInstance;
-nova_all_classes[669] = stabilitytest_Nova_TimeStability_VTable_val.classInstance;
-nova_all_classes[670] = stabilitytest_Nova_TimeStabilityFunctionMap_VTable_val.classInstance;
-nova_all_classes[671] = stabilitytest_Nova_TimeStabilityPropertyMap_VTable_val.classInstance;
-nova_all_classes[672] = stabilitytest_Nova_ToStringStability_VTable_val.classInstance;
-nova_all_classes[673] = stabilitytest_Nova_ToStringStabilityFunctionMap_VTable_val.classInstance;
-nova_all_classes[674] = stabilitytest_Nova_ToStringStabilityPropertyMap_VTable_val.classInstance;
-nova_all_classes[675] = stabilitytest_Nova_UnstableException_VTable_val.classInstance;
-nova_all_classes[676] = stabilitytest_Nova_UnstableExceptionFunctionMap_VTable_val.classInstance;
-nova_all_classes[677] = stabilitytest_Nova_UnstableExceptionPropertyMap_VTable_val.classInstance;
-nova_meta_Nova_Class_Nova_ALL = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_all_classes, 678);
+nova_all_classes[125] = nova_datastruct_list_Double_Nova_Iterator1Double_VTable_val.classInstance;
+nova_all_classes[126] = nova_datastruct_list_Int_Nova_Iterator1Int_VTable_val.classInstance;
+nova_all_classes[127] = nova_datastruct_list_Byte_Nova_Iterator1Byte_VTable_val.classInstance;
+nova_all_classes[128] = nova_datastruct_list_Nova_LinkedList_VTable_val.classInstance;
+nova_all_classes[129] = nova_datastruct_list_Nova_LinkedListFunctionMap_VTable_val.classInstance;
+nova_all_classes[130] = nova_datastruct_list_Nova_LinkedListPropertyMap_VTable_val.classInstance;
+nova_all_classes[131] = nova_datastruct_list_Nova_LinkedListIterator_VTable_val.classInstance;
+nova_all_classes[132] = nova_datastruct_list_Nova_LinkedListIteratorFunctionMap_VTable_val.classInstance;
+nova_all_classes[133] = nova_datastruct_list_Nova_LinkedListIteratorPropertyMap_VTable_val.classInstance;
+nova_all_classes[134] = nova_datastruct_list_Nova_List_VTable_val.classInstance;
+nova_all_classes[135] = nova_datastruct_list_Nova_ListFunctionMap_VTable_val.classInstance;
+nova_all_classes[136] = nova_datastruct_list_Nova_ListPropertyMap_VTable_val.classInstance;
+nova_all_classes[137] = nova_datastruct_list_Double_Nova_List1Double_VTable_val.classInstance;
+nova_all_classes[138] = nova_datastruct_list_Int_Nova_List1Int_VTable_val.classInstance;
+nova_all_classes[139] = nova_datastruct_list_Byte_Nova_List1Byte_VTable_val.classInstance;
+nova_all_classes[140] = nova_datastruct_list_Nova_ListNode_VTable_val.classInstance;
+nova_all_classes[141] = nova_datastruct_list_Nova_ListNodeFunctionMap_VTable_val.classInstance;
+nova_all_classes[142] = nova_datastruct_list_Nova_ListNodePropertyMap_VTable_val.classInstance;
+nova_all_classes[143] = nova_datastruct_list_Nova_NoSuchElementException_VTable_val.classInstance;
+nova_all_classes[144] = nova_datastruct_list_Nova_NoSuchElementExceptionFunctionMap_VTable_val.classInstance;
+nova_all_classes[145] = nova_datastruct_list_Nova_NoSuchElementExceptionPropertyMap_VTable_val.classInstance;
+nova_all_classes[146] = nova_datastruct_list_Nova_OrderedList_VTable_val.classInstance;
+nova_all_classes[147] = nova_datastruct_list_Nova_OrderedListFunctionMap_VTable_val.classInstance;
+nova_all_classes[148] = nova_datastruct_list_Nova_OrderedListPropertyMap_VTable_val.classInstance;
+nova_all_classes[149] = nova_datastruct_list_Nova_Queue_VTable_val.classInstance;
+nova_all_classes[150] = nova_datastruct_list_Nova_QueueFunctionMap_VTable_val.classInstance;
+nova_all_classes[151] = nova_datastruct_list_Nova_QueuePropertyMap_VTable_val.classInstance;
+nova_all_classes[152] = nova_datastruct_list_Nova_Stack_VTable_val.classInstance;
+nova_all_classes[153] = nova_datastruct_list_Nova_StackFunctionMap_VTable_val.classInstance;
+nova_all_classes[154] = nova_datastruct_list_Nova_StackPropertyMap_VTable_val.classInstance;
+nova_all_classes[155] = nova_datastruct_list_Nova_StringCharArray_VTable_val.classInstance;
+nova_all_classes[156] = nova_datastruct_list_Nova_StringCharArrayFunctionMap_VTable_val.classInstance;
+nova_all_classes[157] = nova_datastruct_list_Nova_StringCharArrayPropertyMap_VTable_val.classInstance;
+nova_all_classes[158] = nova_datastruct_list_Nova_SubstringCharArray_VTable_val.classInstance;
+nova_all_classes[159] = nova_datastruct_list_Nova_SubstringCharArrayFunctionMap_VTable_val.classInstance;
+nova_all_classes[160] = nova_datastruct_list_Nova_SubstringCharArrayPropertyMap_VTable_val.classInstance;
+nova_all_classes[161] = nova_exception_Nova_Backtraces_VTable_val.classInstance;
+nova_all_classes[162] = nova_exception_Nova_BacktracesFunctionMap_VTable_val.classInstance;
+nova_all_classes[163] = nova_exception_Nova_BacktracesPropertyMap_VTable_val.classInstance;
+nova_all_classes[164] = nova_exception_Nova_CaughtException_VTable_val.classInstance;
+nova_all_classes[165] = nova_exception_Nova_CaughtExceptionFunctionMap_VTable_val.classInstance;
+nova_all_classes[166] = nova_exception_Nova_CaughtExceptionPropertyMap_VTable_val.classInstance;
+nova_all_classes[167] = nova_exception_Nova_DivideByZeroException_VTable_val.classInstance;
+nova_all_classes[168] = nova_exception_Nova_DivideByZeroExceptionFunctionMap_VTable_val.classInstance;
+nova_all_classes[169] = nova_exception_Nova_DivideByZeroExceptionPropertyMap_VTable_val.classInstance;
+nova_all_classes[170] = nova_exception_Nova_Exception_VTable_val.classInstance;
+nova_all_classes[171] = nova_exception_Nova_ExceptionFunctionMap_VTable_val.classInstance;
+nova_all_classes[172] = nova_exception_Nova_ExceptionPropertyMap_VTable_val.classInstance;
+nova_all_classes[173] = nova_exception_Nova_ExceptionData_VTable_val.classInstance;
+nova_all_classes[174] = nova_exception_Nova_ExceptionDataFunctionMap_VTable_val.classInstance;
+nova_all_classes[175] = nova_exception_Nova_ExceptionDataPropertyMap_VTable_val.classInstance;
+nova_all_classes[176] = nova_exception_Nova_InvalidArgumentException_VTable_val.classInstance;
+nova_all_classes[177] = nova_exception_Nova_InvalidArgumentExceptionFunctionMap_VTable_val.classInstance;
+nova_all_classes[178] = nova_exception_Nova_InvalidArgumentExceptionPropertyMap_VTable_val.classInstance;
+nova_all_classes[179] = nova_exception_Nova_InvalidOperationException_VTable_val.classInstance;
+nova_all_classes[180] = nova_exception_Nova_InvalidOperationExceptionFunctionMap_VTable_val.classInstance;
+nova_all_classes[181] = nova_exception_Nova_InvalidOperationExceptionPropertyMap_VTable_val.classInstance;
+nova_all_classes[182] = nova_exception_Nova_UnimplementedOperationException_VTable_val.classInstance;
+nova_all_classes[183] = nova_exception_Nova_UnimplementedOperationExceptionFunctionMap_VTable_val.classInstance;
+nova_all_classes[184] = nova_exception_Nova_UnimplementedOperationExceptionPropertyMap_VTable_val.classInstance;
+nova_all_classes[185] = nova_gc_Nova_GC_VTable_val.classInstance;
+nova_all_classes[186] = nova_gc_Nova_GCFunctionMap_VTable_val.classInstance;
+nova_all_classes[187] = nova_gc_Nova_GCPropertyMap_VTable_val.classInstance;
+nova_all_classes[188] = nova_io_Nova_Console_VTable_val.classInstance;
+nova_all_classes[189] = nova_io_Nova_ConsoleFunctionMap_VTable_val.classInstance;
+nova_all_classes[190] = nova_io_Nova_ConsolePropertyMap_VTable_val.classInstance;
+nova_all_classes[191] = nova_io_Nova_Curl_VTable_val.classInstance;
+nova_all_classes[192] = nova_io_Nova_CurlFunctionMap_VTable_val.classInstance;
+nova_all_classes[193] = nova_io_Nova_CurlPropertyMap_VTable_val.classInstance;
+nova_all_classes[194] = nova_io_Nova_File_VTable_val.classInstance;
+nova_all_classes[195] = nova_io_Nova_FileFunctionMap_VTable_val.classInstance;
+nova_all_classes[196] = nova_io_Nova_FilePropertyMap_VTable_val.classInstance;
+nova_all_classes[197] = nova_io_Nova_FileNotFoundException_VTable_val.classInstance;
+nova_all_classes[198] = nova_io_Nova_FileNotFoundExceptionFunctionMap_VTable_val.classInstance;
+nova_all_classes[199] = nova_io_Nova_FileNotFoundExceptionPropertyMap_VTable_val.classInstance;
+nova_all_classes[200] = nova_io_Nova_FileReader_VTable_val.classInstance;
+nova_all_classes[201] = nova_io_Nova_FileReaderFunctionMap_VTable_val.classInstance;
+nova_all_classes[202] = nova_io_Nova_FileReaderPropertyMap_VTable_val.classInstance;
+nova_all_classes[203] = nova_io_Nova_FileWriter_VTable_val.classInstance;
+nova_all_classes[204] = nova_io_Nova_FileWriterFunctionMap_VTable_val.classInstance;
+nova_all_classes[205] = nova_io_Nova_FileWriterPropertyMap_VTable_val.classInstance;
+nova_all_classes[206] = nova_io_Nova_InputStream_VTable_val.classInstance;
+nova_all_classes[207] = nova_io_Nova_InputStreamFunctionMap_VTable_val.classInstance;
+nova_all_classes[208] = nova_io_Nova_InputStreamPropertyMap_VTable_val.classInstance;
+nova_all_classes[209] = nova_io_Nova_OutputStream_VTable_val.classInstance;
+nova_all_classes[210] = nova_io_Nova_OutputStreamFunctionMap_VTable_val.classInstance;
+nova_all_classes[211] = nova_io_Nova_OutputStreamPropertyMap_VTable_val.classInstance;
+nova_all_classes[212] = nova_io_Nova_StreamReader_VTable_val.classInstance;
+nova_all_classes[213] = nova_io_Nova_StreamReaderFunctionMap_VTable_val.classInstance;
+nova_all_classes[214] = nova_io_Nova_StreamReaderPropertyMap_VTable_val.classInstance;
+nova_all_classes[215] = nova_math_Nova_ArithmeticSequence_VTable_val.classInstance;
+nova_all_classes[216] = nova_math_Nova_ArithmeticSequenceFunctionMap_VTable_val.classInstance;
+nova_all_classes[217] = nova_math_Nova_ArithmeticSequencePropertyMap_VTable_val.classInstance;
+nova_all_classes[218] = nova_math_Nova_Diekstra_VTable_val.classInstance;
+nova_all_classes[219] = nova_math_Nova_DiekstraFunctionMap_VTable_val.classInstance;
+nova_all_classes[220] = nova_math_Nova_DiekstraPropertyMap_VTable_val.classInstance;
+nova_all_classes[221] = nova_math_Nova_GeometricSequence_VTable_val.classInstance;
+nova_all_classes[222] = nova_math_Nova_GeometricSequenceFunctionMap_VTable_val.classInstance;
+nova_all_classes[223] = nova_math_Nova_GeometricSequencePropertyMap_VTable_val.classInstance;
+nova_all_classes[224] = nova_math_Nova_Graph_VTable_val.classInstance;
+nova_all_classes[225] = nova_math_Nova_GraphFunctionMap_VTable_val.classInstance;
+nova_all_classes[226] = nova_math_Nova_GraphPropertyMap_VTable_val.classInstance;
+nova_all_classes[227] = nova_math_Nova_InvalidNumericStatementException_VTable_val.classInstance;
+nova_all_classes[228] = nova_math_Nova_InvalidNumericStatementExceptionFunctionMap_VTable_val.classInstance;
+nova_all_classes[229] = nova_math_Nova_InvalidNumericStatementExceptionPropertyMap_VTable_val.classInstance;
+nova_all_classes[230] = nova_math_Nova_Math_VTable_val.classInstance;
+nova_all_classes[231] = nova_math_Nova_MathFunctionMap_VTable_val.classInstance;
+nova_all_classes[232] = nova_math_Nova_MathPropertyMap_VTable_val.classInstance;
+nova_all_classes[233] = nova_math_Nova_Matrix_VTable_val.classInstance;
+nova_all_classes[234] = nova_math_Nova_MatrixFunctionMap_VTable_val.classInstance;
+nova_all_classes[235] = nova_math_Nova_MatrixPropertyMap_VTable_val.classInstance;
+nova_all_classes[236] = nova_math_Nova_NumericOperand_VTable_val.classInstance;
+nova_all_classes[237] = nova_math_Nova_NumericOperandFunctionMap_VTable_val.classInstance;
+nova_all_classes[238] = nova_math_Nova_NumericOperandPropertyMap_VTable_val.classInstance;
+nova_all_classes[239] = nova_math_Nova_NumericOperation_VTable_val.classInstance;
+nova_all_classes[240] = nova_math_Nova_NumericOperationFunctionMap_VTable_val.classInstance;
+nova_all_classes[241] = nova_math_Nova_NumericOperationPropertyMap_VTable_val.classInstance;
+nova_all_classes[242] = nova_math_Nova_NumericStatement_VTable_val.classInstance;
+nova_all_classes[243] = nova_math_Nova_NumericStatementFunctionMap_VTable_val.classInstance;
+nova_all_classes[244] = nova_math_Nova_NumericStatementPropertyMap_VTable_val.classInstance;
+nova_all_classes[245] = nova_math_Nova_NumericTree_VTable_val.classInstance;
+nova_all_classes[246] = nova_math_Nova_NumericTreeFunctionMap_VTable_val.classInstance;
+nova_all_classes[247] = nova_math_Nova_NumericTreePropertyMap_VTable_val.classInstance;
+nova_all_classes[248] = nova_math_Nova_Polynomial_VTable_val.classInstance;
+nova_all_classes[249] = nova_math_Nova_PolynomialFunctionMap_VTable_val.classInstance;
+nova_all_classes[250] = nova_math_Nova_PolynomialPropertyMap_VTable_val.classInstance;
+nova_all_classes[251] = nova_math_Nova_Sequence_VTable_val.classInstance;
+nova_all_classes[252] = nova_math_Nova_SequenceFunctionMap_VTable_val.classInstance;
+nova_all_classes[253] = nova_math_Nova_SequencePropertyMap_VTable_val.classInstance;
+nova_all_classes[254] = nova_math_Nova_Statement_VTable_val.classInstance;
+nova_all_classes[255] = nova_math_Nova_StatementFunctionMap_VTable_val.classInstance;
+nova_all_classes[256] = nova_math_Nova_StatementPropertyMap_VTable_val.classInstance;
+nova_all_classes[257] = nova_math_Nova_StatementComponent_VTable_val.classInstance;
+nova_all_classes[258] = nova_math_Nova_StatementComponentFunctionMap_VTable_val.classInstance;
+nova_all_classes[259] = nova_math_Nova_StatementComponentPropertyMap_VTable_val.classInstance;
+nova_all_classes[260] = nova_math_Nova_VariableOperand_VTable_val.classInstance;
+nova_all_classes[261] = nova_math_Nova_VariableOperandFunctionMap_VTable_val.classInstance;
+nova_all_classes[262] = nova_math_Nova_VariableOperandPropertyMap_VTable_val.classInstance;
+nova_all_classes[263] = nova_math_Nova_Vector_VTable_val.classInstance;
+nova_all_classes[264] = nova_math_Nova_VectorFunctionMap_VTable_val.classInstance;
+nova_all_classes[265] = nova_math_Nova_VectorPropertyMap_VTable_val.classInstance;
+nova_all_classes[266] = nova_math_Nova_Vector2D_VTable_val.classInstance;
+nova_all_classes[267] = nova_math_Nova_Vector2DFunctionMap_VTable_val.classInstance;
+nova_all_classes[268] = nova_math_Nova_Vector2DPropertyMap_VTable_val.classInstance;
+nova_all_classes[269] = nova_math_Nova_Vector3D_VTable_val.classInstance;
+nova_all_classes[270] = nova_math_Nova_Vector3DFunctionMap_VTable_val.classInstance;
+nova_all_classes[271] = nova_math_Nova_Vector3DPropertyMap_VTable_val.classInstance;
+nova_all_classes[272] = nova_math_Nova_Vector4D_VTable_val.classInstance;
+nova_all_classes[273] = nova_math_Nova_Vector4DFunctionMap_VTable_val.classInstance;
+nova_all_classes[274] = nova_math_Nova_Vector4DPropertyMap_VTable_val.classInstance;
+nova_all_classes[275] = nova_math_calculus_Nova_Calculus_VTable_val.classInstance;
+nova_all_classes[276] = nova_math_calculus_Nova_CalculusFunctionMap_VTable_val.classInstance;
+nova_all_classes[277] = nova_math_calculus_Nova_CalculusPropertyMap_VTable_val.classInstance;
+nova_all_classes[278] = nova_math_huffman_Nova_HuffmanTree_VTable_val.classInstance;
+nova_all_classes[279] = nova_math_huffman_Nova_HuffmanTreeFunctionMap_VTable_val.classInstance;
+nova_all_classes[280] = nova_math_huffman_Nova_HuffmanTreePropertyMap_VTable_val.classInstance;
+nova_all_classes[281] = nova_math_logic_Nova_Conclusion_VTable_val.classInstance;
+nova_all_classes[282] = nova_math_logic_Nova_ConclusionFunctionMap_VTable_val.classInstance;
+nova_all_classes[283] = nova_math_logic_Nova_ConclusionPropertyMap_VTable_val.classInstance;
+nova_all_classes[284] = nova_math_logic_Nova_Hypothesis_VTable_val.classInstance;
+nova_all_classes[285] = nova_math_logic_Nova_HypothesisFunctionMap_VTable_val.classInstance;
+nova_all_classes[286] = nova_math_logic_Nova_HypothesisPropertyMap_VTable_val.classInstance;
+nova_all_classes[287] = nova_math_logic_Nova_InvalidFormulaException_VTable_val.classInstance;
+nova_all_classes[288] = nova_math_logic_Nova_InvalidFormulaExceptionFunctionMap_VTable_val.classInstance;
+nova_all_classes[289] = nova_math_logic_Nova_InvalidFormulaExceptionPropertyMap_VTable_val.classInstance;
+nova_all_classes[290] = nova_math_logic_Nova_LogicalConnective_VTable_val.classInstance;
+nova_all_classes[291] = nova_math_logic_Nova_LogicalConnectiveFunctionMap_VTable_val.classInstance;
+nova_all_classes[292] = nova_math_logic_Nova_LogicalConnectivePropertyMap_VTable_val.classInstance;
+nova_all_classes[293] = nova_math_logic_Nova_LogicalStatement_VTable_val.classInstance;
+nova_all_classes[294] = nova_math_logic_Nova_LogicalStatementFunctionMap_VTable_val.classInstance;
+nova_all_classes[295] = nova_math_logic_Nova_LogicalStatementPropertyMap_VTable_val.classInstance;
+nova_all_classes[296] = nova_math_logic_Nova_StatementComponent_VTable_val.classInstance;
+nova_all_classes[297] = nova_math_logic_Nova_StatementComponentFunctionMap_VTable_val.classInstance;
+nova_all_classes[298] = nova_math_logic_Nova_StatementComponentPropertyMap_VTable_val.classInstance;
+nova_all_classes[299] = nova_math_logic_Nova_StatementGroup_VTable_val.classInstance;
+nova_all_classes[300] = nova_math_logic_Nova_StatementGroupFunctionMap_VTable_val.classInstance;
+nova_all_classes[301] = nova_math_logic_Nova_StatementGroupPropertyMap_VTable_val.classInstance;
+nova_all_classes[302] = nova_math_logic_Nova_StatementLetter_VTable_val.classInstance;
+nova_all_classes[303] = nova_math_logic_Nova_StatementLetterFunctionMap_VTable_val.classInstance;
+nova_all_classes[304] = nova_math_logic_Nova_StatementLetterPropertyMap_VTable_val.classInstance;
+nova_all_classes[305] = nova_math_logic_Nova_WFF_VTable_val.classInstance;
+nova_all_classes[306] = nova_math_logic_Nova_WFFFunctionMap_VTable_val.classInstance;
+nova_all_classes[307] = nova_math_logic_Nova_WFFPropertyMap_VTable_val.classInstance;
+nova_all_classes[308] = nova_meta_Nova_Class_VTable_val.classInstance;
+nova_all_classes[309] = nova_meta_Nova_ClassFunctionMap_VTable_val.classInstance;
+nova_all_classes[310] = nova_meta_Nova_ClassPropertyMap_VTable_val.classInstance;
+nova_all_classes[311] = nova_meta_Nova_Field_VTable_val.classInstance;
+nova_all_classes[312] = nova_meta_Nova_FieldFunctionMap_VTable_val.classInstance;
+nova_all_classes[313] = nova_meta_Nova_FieldPropertyMap_VTable_val.classInstance;
+nova_all_classes[314] = nova_meta_Nova_FunctionMap_VTable_val.classInstance;
+nova_all_classes[315] = nova_meta_Nova_FunctionMapFunctionMap_VTable_val.classInstance;
+nova_all_classes[316] = nova_meta_Nova_FunctionMapPropertyMap_VTable_val.classInstance;
+nova_all_classes[317] = nova_meta_Nova_GenericArgument_VTable_val.classInstance;
+nova_all_classes[318] = nova_meta_Nova_GenericArgumentFunctionMap_VTable_val.classInstance;
+nova_all_classes[319] = nova_meta_Nova_GenericArgumentPropertyMap_VTable_val.classInstance;
+nova_all_classes[320] = nova_meta_Nova_GenericParameter_VTable_val.classInstance;
+nova_all_classes[321] = nova_meta_Nova_GenericParameterFunctionMap_VTable_val.classInstance;
+nova_all_classes[322] = nova_meta_Nova_GenericParameterPropertyMap_VTable_val.classInstance;
+nova_all_classes[323] = nova_meta_Nova_PropertyMap_VTable_val.classInstance;
+nova_all_classes[324] = nova_meta_Nova_PropertyMapFunctionMap_VTable_val.classInstance;
+nova_all_classes[325] = nova_meta_Nova_PropertyMapPropertyMap_VTable_val.classInstance;
+nova_all_classes[326] = nova_meta_Nova_Type_VTable_val.classInstance;
+nova_all_classes[327] = nova_meta_Nova_TypeFunctionMap_VTable_val.classInstance;
+nova_all_classes[328] = nova_meta_Nova_TypePropertyMap_VTable_val.classInstance;
+nova_all_classes[329] = nova_network_Nova_ClientSocket_VTable_val.classInstance;
+nova_all_classes[330] = nova_network_Nova_ClientSocketFunctionMap_VTable_val.classInstance;
+nova_all_classes[331] = nova_network_Nova_ClientSocketPropertyMap_VTable_val.classInstance;
+nova_all_classes[332] = nova_network_Nova_ConnectionSocket_VTable_val.classInstance;
+nova_all_classes[333] = nova_network_Nova_ConnectionSocketFunctionMap_VTable_val.classInstance;
+nova_all_classes[334] = nova_network_Nova_ConnectionSocketPropertyMap_VTable_val.classInstance;
+nova_all_classes[335] = nova_network_Nova_NetworkInputStream_VTable_val.classInstance;
+nova_all_classes[336] = nova_network_Nova_NetworkInputStreamFunctionMap_VTable_val.classInstance;
+nova_all_classes[337] = nova_network_Nova_NetworkInputStreamPropertyMap_VTable_val.classInstance;
+nova_all_classes[338] = nova_network_Nova_NetworkOutputStream_VTable_val.classInstance;
+nova_all_classes[339] = nova_network_Nova_NetworkOutputStreamFunctionMap_VTable_val.classInstance;
+nova_all_classes[340] = nova_network_Nova_NetworkOutputStreamPropertyMap_VTable_val.classInstance;
+nova_all_classes[341] = nova_network_Nova_ServerSocket_VTable_val.classInstance;
+nova_all_classes[342] = nova_network_Nova_ServerSocketFunctionMap_VTable_val.classInstance;
+nova_all_classes[343] = nova_network_Nova_ServerSocketPropertyMap_VTable_val.classInstance;
+nova_all_classes[344] = nova_network_Nova_Socket_VTable_val.classInstance;
+nova_all_classes[345] = nova_network_Nova_SocketFunctionMap_VTable_val.classInstance;
+nova_all_classes[346] = nova_network_Nova_SocketPropertyMap_VTable_val.classInstance;
+nova_all_classes[347] = nova_operators_Nova_EqualsOperator_VTable_val.classInstance;
+nova_all_classes[348] = nova_operators_Nova_EqualsOperatorFunctionMap_VTable_val.classInstance;
+nova_all_classes[349] = nova_operators_Nova_EqualsOperatorPropertyMap_VTable_val.classInstance;
+nova_all_classes[350] = nova_operators_Nova_MinusEqualsOperator_VTable_val.classInstance;
+nova_all_classes[351] = nova_operators_Nova_MinusEqualsOperatorFunctionMap_VTable_val.classInstance;
+nova_all_classes[352] = nova_operators_Nova_MinusEqualsOperatorPropertyMap_VTable_val.classInstance;
+nova_all_classes[353] = nova_operators_Nova_MinusOperator_VTable_val.classInstance;
+nova_all_classes[354] = nova_operators_Nova_MinusOperatorFunctionMap_VTable_val.classInstance;
+nova_all_classes[355] = nova_operators_Nova_MinusOperatorPropertyMap_VTable_val.classInstance;
+nova_all_classes[356] = nova_operators_Nova_MultiplyEqualsOperator_VTable_val.classInstance;
+nova_all_classes[357] = nova_operators_Nova_MultiplyEqualsOperatorFunctionMap_VTable_val.classInstance;
+nova_all_classes[358] = nova_operators_Nova_MultiplyEqualsOperatorPropertyMap_VTable_val.classInstance;
+nova_all_classes[359] = nova_operators_Nova_MultiplyOperator_VTable_val.classInstance;
+nova_all_classes[360] = nova_operators_Nova_MultiplyOperatorFunctionMap_VTable_val.classInstance;
+nova_all_classes[361] = nova_operators_Nova_MultiplyOperatorPropertyMap_VTable_val.classInstance;
+nova_all_classes[362] = nova_operators_Nova_NotEqualToOperator_VTable_val.classInstance;
+nova_all_classes[363] = nova_operators_Nova_NotEqualToOperatorFunctionMap_VTable_val.classInstance;
+nova_all_classes[364] = nova_operators_Nova_NotEqualToOperatorPropertyMap_VTable_val.classInstance;
+nova_all_classes[365] = nova_operators_Nova_PlusEqualsOperator_VTable_val.classInstance;
+nova_all_classes[366] = nova_operators_Nova_PlusEqualsOperatorFunctionMap_VTable_val.classInstance;
+nova_all_classes[367] = nova_operators_Nova_PlusEqualsOperatorPropertyMap_VTable_val.classInstance;
+nova_all_classes[368] = nova_operators_Nova_PlusOperator_VTable_val.classInstance;
+nova_all_classes[369] = nova_operators_Nova_PlusOperatorFunctionMap_VTable_val.classInstance;
+nova_all_classes[370] = nova_operators_Nova_PlusOperatorPropertyMap_VTable_val.classInstance;
+nova_all_classes[371] = nova_primitive_Nova_Bool_VTable_val.classInstance;
+nova_all_classes[372] = nova_primitive_Nova_BoolFunctionMap_VTable_val.classInstance;
+nova_all_classes[373] = nova_primitive_Nova_BoolPropertyMap_VTable_val.classInstance;
+nova_all_classes[374] = nova_primitive_Nova_Null_VTable_val.classInstance;
+nova_all_classes[375] = nova_primitive_Nova_NullFunctionMap_VTable_val.classInstance;
+nova_all_classes[376] = nova_primitive_Nova_NullPropertyMap_VTable_val.classInstance;
+nova_all_classes[377] = nova_primitive_Nova_Primitive_VTable_val.classInstance;
+nova_all_classes[378] = nova_primitive_Nova_PrimitiveFunctionMap_VTable_val.classInstance;
+nova_all_classes[379] = nova_primitive_Nova_PrimitivePropertyMap_VTable_val.classInstance;
+nova_all_classes[380] = nova_primitive_number_Nova_Byte_VTable_val.classInstance;
+nova_all_classes[381] = nova_primitive_number_Nova_ByteFunctionMap_VTable_val.classInstance;
+nova_all_classes[382] = nova_primitive_number_Nova_BytePropertyMap_VTable_val.classInstance;
+nova_all_classes[383] = nova_primitive_number_Nova_Char_VTable_val.classInstance;
+nova_all_classes[384] = nova_primitive_number_Nova_CharFunctionMap_VTable_val.classInstance;
+nova_all_classes[385] = nova_primitive_number_Nova_CharPropertyMap_VTable_val.classInstance;
+nova_all_classes[386] = nova_primitive_number_Nova_Double_VTable_val.classInstance;
+nova_all_classes[387] = nova_primitive_number_Nova_DoubleFunctionMap_VTable_val.classInstance;
+nova_all_classes[388] = nova_primitive_number_Nova_DoublePropertyMap_VTable_val.classInstance;
+nova_all_classes[389] = nova_primitive_number_Nova_Float_VTable_val.classInstance;
+nova_all_classes[390] = nova_primitive_number_Nova_FloatFunctionMap_VTable_val.classInstance;
+nova_all_classes[391] = nova_primitive_number_Nova_FloatPropertyMap_VTable_val.classInstance;
+nova_all_classes[392] = nova_primitive_number_Nova_Int_VTable_val.classInstance;
+nova_all_classes[393] = nova_primitive_number_Nova_IntFunctionMap_VTable_val.classInstance;
+nova_all_classes[394] = nova_primitive_number_Nova_IntPropertyMap_VTable_val.classInstance;
+nova_all_classes[395] = nova_primitive_number_Nova_Integer_VTable_val.classInstance;
+nova_all_classes[396] = nova_primitive_number_Nova_IntegerFunctionMap_VTable_val.classInstance;
+nova_all_classes[397] = nova_primitive_number_Nova_IntegerPropertyMap_VTable_val.classInstance;
+nova_all_classes[398] = nova_primitive_number_Nova_Long_VTable_val.classInstance;
+nova_all_classes[399] = nova_primitive_number_Nova_LongFunctionMap_VTable_val.classInstance;
+nova_all_classes[400] = nova_primitive_number_Nova_LongPropertyMap_VTable_val.classInstance;
+nova_all_classes[401] = nova_primitive_number_Nova_Number_VTable_val.classInstance;
+nova_all_classes[402] = nova_primitive_number_Nova_NumberFunctionMap_VTable_val.classInstance;
+nova_all_classes[403] = nova_primitive_number_Nova_NumberPropertyMap_VTable_val.classInstance;
+nova_all_classes[404] = nova_primitive_number_Nova_RealNumber_VTable_val.classInstance;
+nova_all_classes[405] = nova_primitive_number_Nova_RealNumberFunctionMap_VTable_val.classInstance;
+nova_all_classes[406] = nova_primitive_number_Nova_RealNumberPropertyMap_VTable_val.classInstance;
+nova_all_classes[407] = nova_primitive_number_Nova_Short_VTable_val.classInstance;
+nova_all_classes[408] = nova_primitive_number_Nova_ShortFunctionMap_VTable_val.classInstance;
+nova_all_classes[409] = nova_primitive_number_Nova_ShortPropertyMap_VTable_val.classInstance;
+nova_all_classes[410] = nova_process_Nova_Process_VTable_val.classInstance;
+nova_all_classes[411] = nova_process_Nova_ProcessFunctionMap_VTable_val.classInstance;
+nova_all_classes[412] = nova_process_Nova_ProcessPropertyMap_VTable_val.classInstance;
+nova_all_classes[413] = nova_regex_Nova_Match_VTable_val.classInstance;
+nova_all_classes[414] = nova_regex_Nova_MatchFunctionMap_VTable_val.classInstance;
+nova_all_classes[415] = nova_regex_Nova_MatchPropertyMap_VTable_val.classInstance;
+nova_all_classes[416] = nova_regex_Nova_Pattern_VTable_val.classInstance;
+nova_all_classes[417] = nova_regex_Nova_PatternFunctionMap_VTable_val.classInstance;
+nova_all_classes[418] = nova_regex_Nova_PatternPropertyMap_VTable_val.classInstance;
+nova_all_classes[419] = nova_regex_Nova_Regex_VTable_val.classInstance;
+nova_all_classes[420] = nova_regex_Nova_RegexFunctionMap_VTable_val.classInstance;
+nova_all_classes[421] = nova_regex_Nova_RegexPropertyMap_VTable_val.classInstance;
+nova_all_classes[422] = nova_security_Nova_MD5_VTable_val.classInstance;
+nova_all_classes[423] = nova_security_Nova_MD5FunctionMap_VTable_val.classInstance;
+nova_all_classes[424] = nova_security_Nova_MD5PropertyMap_VTable_val.classInstance;
+nova_all_classes[425] = nova_security_Nova_Sha256_VTable_val.classInstance;
+nova_all_classes[426] = nova_security_Nova_Sha256FunctionMap_VTable_val.classInstance;
+nova_all_classes[427] = nova_security_Nova_Sha256PropertyMap_VTable_val.classInstance;
+nova_all_classes[428] = nova_serialization_Nova_JsonSerializer_VTable_val.classInstance;
+nova_all_classes[429] = nova_serialization_Nova_JsonSerializerFunctionMap_VTable_val.classInstance;
+nova_all_classes[430] = nova_serialization_Nova_JsonSerializerPropertyMap_VTable_val.classInstance;
+nova_all_classes[431] = nova_star_Nova_Frame_VTable_val.classInstance;
+nova_all_classes[432] = nova_star_Nova_FrameFunctionMap_VTable_val.classInstance;
+nova_all_classes[433] = nova_star_Nova_FramePropertyMap_VTable_val.classInstance;
+nova_all_classes[434] = nova_star_Nova_Window_VTable_val.classInstance;
+nova_all_classes[435] = nova_star_Nova_WindowFunctionMap_VTable_val.classInstance;
+nova_all_classes[436] = nova_star_Nova_WindowPropertyMap_VTable_val.classInstance;
+nova_all_classes[437] = nova_star_Nova_WindowThread_VTable_val.classInstance;
+nova_all_classes[438] = nova_star_Nova_WindowThreadFunctionMap_VTable_val.classInstance;
+nova_all_classes[439] = nova_star_Nova_WindowThreadPropertyMap_VTable_val.classInstance;
+nova_all_classes[440] = nova_thread_Nova_Thread_VTable_val.classInstance;
+nova_all_classes[441] = nova_thread_Nova_ThreadFunctionMap_VTable_val.classInstance;
+nova_all_classes[442] = nova_thread_Nova_ThreadPropertyMap_VTable_val.classInstance;
+nova_all_classes[443] = nova_thread_Nova_UncaughtExceptionHandler_VTable_val.classInstance;
+nova_all_classes[444] = nova_thread_Nova_UncaughtExceptionHandlerFunctionMap_VTable_val.classInstance;
+nova_all_classes[445] = nova_thread_Nova_UncaughtExceptionHandlerPropertyMap_VTable_val.classInstance;
+nova_all_classes[446] = nova_thread_async_Nova_Async_VTable_val.classInstance;
+nova_all_classes[447] = nova_thread_async_Nova_AsyncFunctionMap_VTable_val.classInstance;
+nova_all_classes[448] = nova_thread_async_Nova_AsyncPropertyMap_VTable_val.classInstance;
+nova_all_classes[449] = nova_thread_async_Nova_Task_VTable_val.classInstance;
+nova_all_classes[450] = nova_thread_async_Nova_TaskFunctionMap_VTable_val.classInstance;
+nova_all_classes[451] = nova_thread_async_Nova_TaskPropertyMap_VTable_val.classInstance;
+nova_all_classes[452] = nova_time_Nova_CumulativeTimer_VTable_val.classInstance;
+nova_all_classes[453] = nova_time_Nova_CumulativeTimerFunctionMap_VTable_val.classInstance;
+nova_all_classes[454] = nova_time_Nova_CumulativeTimerPropertyMap_VTable_val.classInstance;
+nova_all_classes[455] = nova_time_Nova_Date_VTable_val.classInstance;
+nova_all_classes[456] = nova_time_Nova_DateFunctionMap_VTable_val.classInstance;
+nova_all_classes[457] = nova_time_Nova_DatePropertyMap_VTable_val.classInstance;
+nova_all_classes[458] = nova_time_Nova_Time_VTable_val.classInstance;
+nova_all_classes[459] = nova_time_Nova_TimeFunctionMap_VTable_val.classInstance;
+nova_all_classes[460] = nova_time_Nova_TimePropertyMap_VTable_val.classInstance;
+nova_all_classes[461] = nova_time_Nova_Timer_VTable_val.classInstance;
+nova_all_classes[462] = nova_time_Nova_TimerFunctionMap_VTable_val.classInstance;
+nova_all_classes[463] = nova_time_Nova_TimerPropertyMap_VTable_val.classInstance;
+nova_all_classes[464] = nova_web_js_json_Nova_Json_VTable_val.classInstance;
+nova_all_classes[465] = nova_web_js_json_Nova_JsonFunctionMap_VTable_val.classInstance;
+nova_all_classes[466] = nova_web_js_json_Nova_JsonPropertyMap_VTable_val.classInstance;
+nova_all_classes[467] = nova_web_svg_Nova_Svg_VTable_val.classInstance;
+nova_all_classes[468] = nova_web_svg_Nova_SvgFunctionMap_VTable_val.classInstance;
+nova_all_classes[469] = nova_web_svg_Nova_SvgPropertyMap_VTable_val.classInstance;
+nova_all_classes[470] = nova_web_svg_Nova_SvgCircle_VTable_val.classInstance;
+nova_all_classes[471] = nova_web_svg_Nova_SvgCircleFunctionMap_VTable_val.classInstance;
+nova_all_classes[472] = nova_web_svg_Nova_SvgCirclePropertyMap_VTable_val.classInstance;
+nova_all_classes[473] = nova_web_svg_Nova_SvgComponent_VTable_val.classInstance;
+nova_all_classes[474] = nova_web_svg_Nova_SvgComponentFunctionMap_VTable_val.classInstance;
+nova_all_classes[475] = nova_web_svg_Nova_SvgComponentPropertyMap_VTable_val.classInstance;
+nova_all_classes[476] = nova_web_svg_Nova_SvgComponentList_VTable_val.classInstance;
+nova_all_classes[477] = nova_web_svg_Nova_SvgComponentListFunctionMap_VTable_val.classInstance;
+nova_all_classes[478] = nova_web_svg_Nova_SvgComponentListPropertyMap_VTable_val.classInstance;
+nova_all_classes[479] = nova_web_svg_Nova_SvgComponentNode_VTable_val.classInstance;
+nova_all_classes[480] = nova_web_svg_Nova_SvgComponentNodeFunctionMap_VTable_val.classInstance;
+nova_all_classes[481] = nova_web_svg_Nova_SvgComponentNodePropertyMap_VTable_val.classInstance;
+nova_all_classes[482] = nova_web_svg_Nova_SvgMainComponent_VTable_val.classInstance;
+nova_all_classes[483] = nova_web_svg_Nova_SvgMainComponentFunctionMap_VTable_val.classInstance;
+nova_all_classes[484] = nova_web_svg_Nova_SvgMainComponentPropertyMap_VTable_val.classInstance;
+nova_all_classes[485] = nova_web_svg_no3_Nova_No3_VTable_val.classInstance;
+nova_all_classes[486] = nova_web_svg_no3_Nova_No3FunctionMap_VTable_val.classInstance;
+nova_all_classes[487] = nova_web_svg_no3_Nova_No3PropertyMap_VTable_val.classInstance;
+nova_all_classes[488] = nova_web_svg_no3_Nova_No3Node_VTable_val.classInstance;
+nova_all_classes[489] = nova_web_svg_no3_Nova_No3NodeFunctionMap_VTable_val.classInstance;
+nova_all_classes[490] = nova_web_svg_no3_Nova_No3NodePropertyMap_VTable_val.classInstance;
+nova_all_classes[491] = nova_web_svg_no3_Nova_No3Select_VTable_val.classInstance;
+nova_all_classes[492] = nova_web_svg_no3_Nova_No3SelectFunctionMap_VTable_val.classInstance;
+nova_all_classes[493] = nova_web_svg_no3_Nova_No3SelectPropertyMap_VTable_val.classInstance;
+nova_all_classes[494] = nova_web_svg_no3_Nova_No3SelectAll_VTable_val.classInstance;
+nova_all_classes[495] = nova_web_svg_no3_Nova_No3SelectAllFunctionMap_VTable_val.classInstance;
+nova_all_classes[496] = nova_web_svg_no3_Nova_No3SelectAllPropertyMap_VTable_val.classInstance;
+nova_all_classes[497] = spectra_Nova_InvalidParseException_VTable_val.classInstance;
+nova_all_classes[498] = spectra_Nova_InvalidParseExceptionFunctionMap_VTable_val.classInstance;
+nova_all_classes[499] = spectra_Nova_InvalidParseExceptionPropertyMap_VTable_val.classInstance;
+nova_all_classes[500] = spectra_Nova_Spectra_VTable_val.classInstance;
+nova_all_classes[501] = spectra_Nova_SpectraFunctionMap_VTable_val.classInstance;
+nova_all_classes[502] = spectra_Nova_SpectraPropertyMap_VTable_val.classInstance;
+nova_all_classes[503] = spectra_Nova_SyntaxErrorException_VTable_val.classInstance;
+nova_all_classes[504] = spectra_Nova_SyntaxErrorExceptionFunctionMap_VTable_val.classInstance;
+nova_all_classes[505] = spectra_Nova_SyntaxErrorExceptionPropertyMap_VTable_val.classInstance;
+nova_all_classes[506] = spectra_Nova_SyntaxMessage_VTable_val.classInstance;
+nova_all_classes[507] = spectra_Nova_SyntaxMessageFunctionMap_VTable_val.classInstance;
+nova_all_classes[508] = spectra_Nova_SyntaxMessagePropertyMap_VTable_val.classInstance;
+nova_all_classes[509] = spectra_engines_Nova_CodeGeneratorEngine_VTable_val.classInstance;
+nova_all_classes[510] = spectra_engines_Nova_CodeGeneratorEngineFunctionMap_VTable_val.classInstance;
+nova_all_classes[511] = spectra_engines_Nova_CodeGeneratorEnginePropertyMap_VTable_val.classInstance;
+nova_all_classes[512] = spectra_error_Nova_UnimplementedOperationException_VTable_val.classInstance;
+nova_all_classes[513] = spectra_error_Nova_UnimplementedOperationExceptionFunctionMap_VTable_val.classInstance;
+nova_all_classes[514] = spectra_error_Nova_UnimplementedOperationExceptionPropertyMap_VTable_val.classInstance;
+nova_all_classes[515] = spectra_tree_Nova_AnnotationSearchResult_VTable_val.classInstance;
+nova_all_classes[516] = spectra_tree_Nova_AnnotationSearchResultFunctionMap_VTable_val.classInstance;
+nova_all_classes[517] = spectra_tree_Nova_AnnotationSearchResultPropertyMap_VTable_val.classInstance;
+nova_all_classes[518] = spectra_tree_Nova_StatementIterator_VTable_val.classInstance;
+nova_all_classes[519] = spectra_tree_Nova_StatementIteratorFunctionMap_VTable_val.classInstance;
+nova_all_classes[520] = spectra_tree_Nova_StatementIteratorPropertyMap_VTable_val.classInstance;
+nova_all_classes[521] = spectra_tree_Nova_SyntaxTree_VTable_val.classInstance;
+nova_all_classes[522] = spectra_tree_Nova_SyntaxTreeFunctionMap_VTable_val.classInstance;
+nova_all_classes[523] = spectra_tree_Nova_SyntaxTreePropertyMap_VTable_val.classInstance;
+nova_all_classes[524] = spectra_tree_nodes_Nova_Abstractable_VTable_val.classInstance;
+nova_all_classes[525] = spectra_tree_nodes_Nova_AbstractableFunctionMap_VTable_val.classInstance;
+nova_all_classes[526] = spectra_tree_nodes_Nova_AbstractablePropertyMap_VTable_val.classInstance;
+nova_all_classes[527] = spectra_tree_nodes_Nova_Accessible_VTable_val.classInstance;
+nova_all_classes[528] = spectra_tree_nodes_Nova_AccessibleFunctionMap_VTable_val.classInstance;
+nova_all_classes[529] = spectra_tree_nodes_Nova_AccessiblePropertyMap_VTable_val.classInstance;
+nova_all_classes[530] = spectra_tree_nodes_Nova_ArgumentList_VTable_val.classInstance;
+nova_all_classes[531] = spectra_tree_nodes_Nova_ArgumentListFunctionMap_VTable_val.classInstance;
+nova_all_classes[532] = spectra_tree_nodes_Nova_ArgumentListPropertyMap_VTable_val.classInstance;
+nova_all_classes[533] = spectra_tree_nodes_Nova_ArrayType_VTable_val.classInstance;
+nova_all_classes[534] = spectra_tree_nodes_Nova_ArrayTypeFunctionMap_VTable_val.classInstance;
+nova_all_classes[535] = spectra_tree_nodes_Nova_ArrayTypePropertyMap_VTable_val.classInstance;
+nova_all_classes[536] = spectra_tree_nodes_Nova_Cast_VTable_val.classInstance;
+nova_all_classes[537] = spectra_tree_nodes_Nova_CastFunctionMap_VTable_val.classInstance;
+nova_all_classes[538] = spectra_tree_nodes_Nova_CastPropertyMap_VTable_val.classInstance;
+nova_all_classes[539] = spectra_tree_nodes_Nova_ClassDeclaration_VTable_val.classInstance;
+nova_all_classes[540] = spectra_tree_nodes_Nova_ClassDeclarationFunctionMap_VTable_val.classInstance;
+nova_all_classes[541] = spectra_tree_nodes_Nova_ClassDeclarationPropertyMap_VTable_val.classInstance;
+nova_all_classes[542] = spectra_tree_nodes_Nova_Identifier_VTable_val.classInstance;
+nova_all_classes[543] = spectra_tree_nodes_Nova_IdentifierFunctionMap_VTable_val.classInstance;
+nova_all_classes[544] = spectra_tree_nodes_Nova_IdentifierPropertyMap_VTable_val.classInstance;
+nova_all_classes[545] = spectra_tree_nodes_Nova_Import_VTable_val.classInstance;
+nova_all_classes[546] = spectra_tree_nodes_Nova_ImportFunctionMap_VTable_val.classInstance;
+nova_all_classes[547] = spectra_tree_nodes_Nova_ImportPropertyMap_VTable_val.classInstance;
+nova_all_classes[548] = spectra_tree_nodes_Nova_ImportList_VTable_val.classInstance;
+nova_all_classes[549] = spectra_tree_nodes_Nova_ImportListFunctionMap_VTable_val.classInstance;
+nova_all_classes[550] = spectra_tree_nodes_Nova_ImportListPropertyMap_VTable_val.classInstance;
+nova_all_classes[551] = spectra_tree_nodes_Nova_InterfaceDeclaration_VTable_val.classInstance;
+nova_all_classes[552] = spectra_tree_nodes_Nova_InterfaceDeclarationFunctionMap_VTable_val.classInstance;
+nova_all_classes[553] = spectra_tree_nodes_Nova_InterfaceDeclarationPropertyMap_VTable_val.classInstance;
+nova_all_classes[554] = spectra_tree_nodes_Nova_Listener_VTable_val.classInstance;
+nova_all_classes[555] = spectra_tree_nodes_Nova_ListenerFunctionMap_VTable_val.classInstance;
+nova_all_classes[556] = spectra_tree_nodes_Nova_ListenerPropertyMap_VTable_val.classInstance;
+nova_all_classes[557] = spectra_tree_nodes_Nova_Literal_VTable_val.classInstance;
+nova_all_classes[558] = spectra_tree_nodes_Nova_LiteralFunctionMap_VTable_val.classInstance;
+nova_all_classes[559] = spectra_tree_nodes_Nova_LiteralPropertyMap_VTable_val.classInstance;
+nova_all_classes[560] = spectra_tree_nodes_Nova_Node_VTable_val.classInstance;
+nova_all_classes[561] = spectra_tree_nodes_Nova_NodeFunctionMap_VTable_val.classInstance;
+nova_all_classes[562] = spectra_tree_nodes_Nova_NodePropertyMap_VTable_val.classInstance;
+nova_all_classes[563] = spectra_tree_nodes_Nova_NodeList_VTable_val.classInstance;
+nova_all_classes[564] = spectra_tree_nodes_Nova_NodeListFunctionMap_VTable_val.classInstance;
+nova_all_classes[565] = spectra_tree_nodes_Nova_NodeListPropertyMap_VTable_val.classInstance;
+nova_all_classes[566] = spectra_tree_nodes_Nova_NovaFile_VTable_val.classInstance;
+nova_all_classes[567] = spectra_tree_nodes_Nova_NovaFileFunctionMap_VTable_val.classInstance;
+nova_all_classes[568] = spectra_tree_nodes_Nova_NovaFilePropertyMap_VTable_val.classInstance;
+nova_all_classes[569] = spectra_tree_nodes_Nova_NumericRange_VTable_val.classInstance;
+nova_all_classes[570] = spectra_tree_nodes_Nova_NumericRangeFunctionMap_VTable_val.classInstance;
+nova_all_classes[571] = spectra_tree_nodes_Nova_NumericRangePropertyMap_VTable_val.classInstance;
+nova_all_classes[572] = spectra_tree_nodes_Nova_Package_VTable_val.classInstance;
+nova_all_classes[573] = spectra_tree_nodes_Nova_PackageFunctionMap_VTable_val.classInstance;
+nova_all_classes[574] = spectra_tree_nodes_Nova_PackagePropertyMap_VTable_val.classInstance;
+nova_all_classes[575] = spectra_tree_nodes_Nova_PlaceholderValue_VTable_val.classInstance;
+nova_all_classes[576] = spectra_tree_nodes_Nova_PlaceholderValueFunctionMap_VTable_val.classInstance;
+nova_all_classes[577] = spectra_tree_nodes_Nova_PlaceholderValuePropertyMap_VTable_val.classInstance;
+nova_all_classes[578] = spectra_tree_nodes_Nova_Priority_VTable_val.classInstance;
+nova_all_classes[579] = spectra_tree_nodes_Nova_PriorityFunctionMap_VTable_val.classInstance;
+nova_all_classes[580] = spectra_tree_nodes_Nova_PriorityPropertyMap_VTable_val.classInstance;
+nova_all_classes[581] = spectra_tree_nodes_Nova_Program_VTable_val.classInstance;
+nova_all_classes[582] = spectra_tree_nodes_Nova_ProgramFunctionMap_VTable_val.classInstance;
+nova_all_classes[583] = spectra_tree_nodes_Nova_ProgramPropertyMap_VTable_val.classInstance;
+nova_all_classes[584] = spectra_tree_nodes_Nova_Return_VTable_val.classInstance;
+nova_all_classes[585] = spectra_tree_nodes_Nova_ReturnFunctionMap_VTable_val.classInstance;
+nova_all_classes[586] = spectra_tree_nodes_Nova_ReturnPropertyMap_VTable_val.classInstance;
+nova_all_classes[587] = spectra_tree_nodes_Nova_Scope_VTable_val.classInstance;
+nova_all_classes[588] = spectra_tree_nodes_Nova_ScopeFunctionMap_VTable_val.classInstance;
+nova_all_classes[589] = spectra_tree_nodes_Nova_ScopePropertyMap_VTable_val.classInstance;
+nova_all_classes[590] = spectra_tree_nodes_Nova_Skeleton_VTable_val.classInstance;
+nova_all_classes[591] = spectra_tree_nodes_Nova_SkeletonFunctionMap_VTable_val.classInstance;
+nova_all_classes[592] = spectra_tree_nodes_Nova_SkeletonPropertyMap_VTable_val.classInstance;
+nova_all_classes[593] = spectra_tree_nodes_Nova_StaticClassReference_VTable_val.classInstance;
+nova_all_classes[594] = spectra_tree_nodes_Nova_StaticClassReferenceFunctionMap_VTable_val.classInstance;
+nova_all_classes[595] = spectra_tree_nodes_Nova_StaticClassReferencePropertyMap_VTable_val.classInstance;
+nova_all_classes[596] = spectra_tree_nodes_Nova_TraitDeclaration_VTable_val.classInstance;
+nova_all_classes[597] = spectra_tree_nodes_Nova_TraitDeclarationFunctionMap_VTable_val.classInstance;
+nova_all_classes[598] = spectra_tree_nodes_Nova_TraitDeclarationPropertyMap_VTable_val.classInstance;
+nova_all_classes[599] = spectra_tree_nodes_Nova_Type_VTable_val.classInstance;
+nova_all_classes[600] = spectra_tree_nodes_Nova_TypeFunctionMap_VTable_val.classInstance;
+nova_all_classes[601] = spectra_tree_nodes_Nova_TypePropertyMap_VTable_val.classInstance;
+nova_all_classes[602] = spectra_tree_nodes_Nova_ValidationResult_VTable_val.classInstance;
+nova_all_classes[603] = spectra_tree_nodes_Nova_ValidationResultFunctionMap_VTable_val.classInstance;
+nova_all_classes[604] = spectra_tree_nodes_Nova_ValidationResultPropertyMap_VTable_val.classInstance;
+nova_all_classes[605] = spectra_tree_nodes_Nova_Value_VTable_val.classInstance;
+nova_all_classes[606] = spectra_tree_nodes_Nova_ValueFunctionMap_VTable_val.classInstance;
+nova_all_classes[607] = spectra_tree_nodes_Nova_ValuePropertyMap_VTable_val.classInstance;
+nova_all_classes[608] = spectra_tree_nodes_annotations_Nova_AbstractAnnotation_VTable_val.classInstance;
+nova_all_classes[609] = spectra_tree_nodes_annotations_Nova_AbstractAnnotationFunctionMap_VTable_val.classInstance;
+nova_all_classes[610] = spectra_tree_nodes_annotations_Nova_AbstractAnnotationPropertyMap_VTable_val.classInstance;
+nova_all_classes[611] = spectra_tree_nodes_annotations_Nova_Annotatable_VTable_val.classInstance;
+nova_all_classes[612] = spectra_tree_nodes_annotations_Nova_AnnotatableFunctionMap_VTable_val.classInstance;
+nova_all_classes[613] = spectra_tree_nodes_annotations_Nova_AnnotatablePropertyMap_VTable_val.classInstance;
+nova_all_classes[614] = spectra_tree_nodes_annotations_Nova_Annotation_VTable_val.classInstance;
+nova_all_classes[615] = spectra_tree_nodes_annotations_Nova_AnnotationFunctionMap_VTable_val.classInstance;
+nova_all_classes[616] = spectra_tree_nodes_annotations_Nova_AnnotationPropertyMap_VTable_val.classInstance;
+nova_all_classes[617] = spectra_tree_nodes_annotations_Nova_AutoFinalAnnotation_VTable_val.classInstance;
+nova_all_classes[618] = spectra_tree_nodes_annotations_Nova_AutoFinalAnnotationFunctionMap_VTable_val.classInstance;
+nova_all_classes[619] = spectra_tree_nodes_annotations_Nova_AutoFinalAnnotationPropertyMap_VTable_val.classInstance;
+nova_all_classes[620] = spectra_tree_nodes_annotations_Nova_AutoPureAnnotation_VTable_val.classInstance;
+nova_all_classes[621] = spectra_tree_nodes_annotations_Nova_AutoPureAnnotationFunctionMap_VTable_val.classInstance;
+nova_all_classes[622] = spectra_tree_nodes_annotations_Nova_AutoPureAnnotationPropertyMap_VTable_val.classInstance;
+nova_all_classes[623] = spectra_tree_nodes_annotations_Nova_FinalAnnotation_VTable_val.classInstance;
+nova_all_classes[624] = spectra_tree_nodes_annotations_Nova_FinalAnnotationFunctionMap_VTable_val.classInstance;
+nova_all_classes[625] = spectra_tree_nodes_annotations_Nova_FinalAnnotationPropertyMap_VTable_val.classInstance;
+nova_all_classes[626] = spectra_tree_nodes_annotations_Nova_ImmutableAnnotation_VTable_val.classInstance;
+nova_all_classes[627] = spectra_tree_nodes_annotations_Nova_ImmutableAnnotationFunctionMap_VTable_val.classInstance;
+nova_all_classes[628] = spectra_tree_nodes_annotations_Nova_ImmutableAnnotationPropertyMap_VTable_val.classInstance;
+nova_all_classes[629] = spectra_tree_nodes_annotations_Nova_ImpureAnnotation_VTable_val.classInstance;
+nova_all_classes[630] = spectra_tree_nodes_annotations_Nova_ImpureAnnotationFunctionMap_VTable_val.classInstance;
+nova_all_classes[631] = spectra_tree_nodes_annotations_Nova_ImpureAnnotationPropertyMap_VTable_val.classInstance;
+nova_all_classes[632] = spectra_tree_nodes_annotations_Nova_LetAnnotation_VTable_val.classInstance;
+nova_all_classes[633] = spectra_tree_nodes_annotations_Nova_LetAnnotationFunctionMap_VTable_val.classInstance;
+nova_all_classes[634] = spectra_tree_nodes_annotations_Nova_LetAnnotationPropertyMap_VTable_val.classInstance;
+nova_all_classes[635] = spectra_tree_nodes_annotations_Nova_Modifier_VTable_val.classInstance;
+nova_all_classes[636] = spectra_tree_nodes_annotations_Nova_ModifierFunctionMap_VTable_val.classInstance;
+nova_all_classes[637] = spectra_tree_nodes_annotations_Nova_ModifierPropertyMap_VTable_val.classInstance;
+nova_all_classes[638] = spectra_tree_nodes_annotations_Nova_NativeAnnotation_VTable_val.classInstance;
+nova_all_classes[639] = spectra_tree_nodes_annotations_Nova_NativeAnnotationFunctionMap_VTable_val.classInstance;
+nova_all_classes[640] = spectra_tree_nodes_annotations_Nova_NativeAnnotationPropertyMap_VTable_val.classInstance;
+nova_all_classes[641] = spectra_tree_nodes_annotations_Nova_OverrideAnnotation_VTable_val.classInstance;
+nova_all_classes[642] = spectra_tree_nodes_annotations_Nova_OverrideAnnotationFunctionMap_VTable_val.classInstance;
+nova_all_classes[643] = spectra_tree_nodes_annotations_Nova_OverrideAnnotationPropertyMap_VTable_val.classInstance;
+nova_all_classes[644] = spectra_tree_nodes_annotations_Nova_PrivateAnnotation_VTable_val.classInstance;
+nova_all_classes[645] = spectra_tree_nodes_annotations_Nova_PrivateAnnotationFunctionMap_VTable_val.classInstance;
+nova_all_classes[646] = spectra_tree_nodes_annotations_Nova_PrivateAnnotationPropertyMap_VTable_val.classInstance;
+nova_all_classes[647] = spectra_tree_nodes_annotations_Nova_PublicAnnotation_VTable_val.classInstance;
+nova_all_classes[648] = spectra_tree_nodes_annotations_Nova_PublicAnnotationFunctionMap_VTable_val.classInstance;
+nova_all_classes[649] = spectra_tree_nodes_annotations_Nova_PublicAnnotationPropertyMap_VTable_val.classInstance;
+nova_all_classes[650] = spectra_tree_nodes_annotations_Nova_PureAnnotation_VTable_val.classInstance;
+nova_all_classes[651] = spectra_tree_nodes_annotations_Nova_PureAnnotationFunctionMap_VTable_val.classInstance;
+nova_all_classes[652] = spectra_tree_nodes_annotations_Nova_PureAnnotationPropertyMap_VTable_val.classInstance;
+nova_all_classes[653] = spectra_tree_nodes_annotations_Nova_StaticAnnotation_VTable_val.classInstance;
+nova_all_classes[654] = spectra_tree_nodes_annotations_Nova_StaticAnnotationFunctionMap_VTable_val.classInstance;
+nova_all_classes[655] = spectra_tree_nodes_annotations_Nova_StaticAnnotationPropertyMap_VTable_val.classInstance;
+nova_all_classes[656] = spectra_tree_nodes_annotations_Nova_TargetAnnotation_VTable_val.classInstance;
+nova_all_classes[657] = spectra_tree_nodes_annotations_Nova_TargetAnnotationFunctionMap_VTable_val.classInstance;
+nova_all_classes[658] = spectra_tree_nodes_annotations_Nova_TargetAnnotationPropertyMap_VTable_val.classInstance;
+nova_all_classes[659] = spectra_tree_nodes_annotations_Nova_VarAnnotation_VTable_val.classInstance;
+nova_all_classes[660] = spectra_tree_nodes_annotations_Nova_VarAnnotationFunctionMap_VTable_val.classInstance;
+nova_all_classes[661] = spectra_tree_nodes_annotations_Nova_VarAnnotationPropertyMap_VTable_val.classInstance;
+nova_all_classes[662] = spectra_tree_nodes_annotations_Nova_VisibilityModifier_VTable_val.classInstance;
+nova_all_classes[663] = spectra_tree_nodes_annotations_Nova_VisibilityModifierFunctionMap_VTable_val.classInstance;
+nova_all_classes[664] = spectra_tree_nodes_annotations_Nova_VisibilityModifierPropertyMap_VTable_val.classInstance;
+nova_all_classes[665] = spectra_tree_nodes_annotations_Nova_VisibleAnnotation_VTable_val.classInstance;
+nova_all_classes[666] = spectra_tree_nodes_annotations_Nova_VisibleAnnotationFunctionMap_VTable_val.classInstance;
+nova_all_classes[667] = spectra_tree_nodes_annotations_Nova_VisibleAnnotationPropertyMap_VTable_val.classInstance;
+nova_all_classes[668] = spectra_tree_nodes_arrays_Nova_ArrayAccess_VTable_val.classInstance;
+nova_all_classes[669] = spectra_tree_nodes_arrays_Nova_ArrayAccessFunctionMap_VTable_val.classInstance;
+nova_all_classes[670] = spectra_tree_nodes_arrays_Nova_ArrayAccessPropertyMap_VTable_val.classInstance;
+nova_all_classes[671] = spectra_tree_nodes_controlstructures_Nova_ControlStructure_VTable_val.classInstance;
+nova_all_classes[672] = spectra_tree_nodes_controlstructures_Nova_ControlStructureFunctionMap_VTable_val.classInstance;
+nova_all_classes[673] = spectra_tree_nodes_controlstructures_Nova_ControlStructurePropertyMap_VTable_val.classInstance;
+nova_all_classes[674] = spectra_tree_nodes_controlstructures_Nova_ElseStatement_VTable_val.classInstance;
+nova_all_classes[675] = spectra_tree_nodes_controlstructures_Nova_ElseStatementFunctionMap_VTable_val.classInstance;
+nova_all_classes[676] = spectra_tree_nodes_controlstructures_Nova_ElseStatementPropertyMap_VTable_val.classInstance;
+nova_all_classes[677] = spectra_tree_nodes_controlstructures_Nova_IfStatement_VTable_val.classInstance;
+nova_all_classes[678] = spectra_tree_nodes_controlstructures_Nova_IfStatementFunctionMap_VTable_val.classInstance;
+nova_all_classes[679] = spectra_tree_nodes_controlstructures_Nova_IfStatementPropertyMap_VTable_val.classInstance;
+nova_all_classes[680] = spectra_tree_nodes_controlstructures_loops_Nova_ForEachLoop_VTable_val.classInstance;
+nova_all_classes[681] = spectra_tree_nodes_controlstructures_loops_Nova_ForEachLoopFunctionMap_VTable_val.classInstance;
+nova_all_classes[682] = spectra_tree_nodes_controlstructures_loops_Nova_ForEachLoopPropertyMap_VTable_val.classInstance;
+nova_all_classes[683] = spectra_tree_nodes_controlstructures_loops_Nova_Loop_VTable_val.classInstance;
+nova_all_classes[684] = spectra_tree_nodes_controlstructures_loops_Nova_LoopFunctionMap_VTable_val.classInstance;
+nova_all_classes[685] = spectra_tree_nodes_controlstructures_loops_Nova_LoopPropertyMap_VTable_val.classInstance;
+nova_all_classes[686] = spectra_tree_nodes_controlstructures_loops_Nova_WhileLoop_VTable_val.classInstance;
+nova_all_classes[687] = spectra_tree_nodes_controlstructures_loops_Nova_WhileLoopFunctionMap_VTable_val.classInstance;
+nova_all_classes[688] = spectra_tree_nodes_controlstructures_loops_Nova_WhileLoopPropertyMap_VTable_val.classInstance;
+nova_all_classes[689] = spectra_tree_nodes_exceptionhandling_Nova_Catch_VTable_val.classInstance;
+nova_all_classes[690] = spectra_tree_nodes_exceptionhandling_Nova_CatchFunctionMap_VTable_val.classInstance;
+nova_all_classes[691] = spectra_tree_nodes_exceptionhandling_Nova_CatchPropertyMap_VTable_val.classInstance;
+nova_all_classes[692] = spectra_tree_nodes_exceptionhandling_Nova_ExceptionHandler_VTable_val.classInstance;
+nova_all_classes[693] = spectra_tree_nodes_exceptionhandling_Nova_ExceptionHandlerFunctionMap_VTable_val.classInstance;
+nova_all_classes[694] = spectra_tree_nodes_exceptionhandling_Nova_ExceptionHandlerPropertyMap_VTable_val.classInstance;
+nova_all_classes[695] = spectra_tree_nodes_exceptionhandling_Nova_Throw_VTable_val.classInstance;
+nova_all_classes[696] = spectra_tree_nodes_exceptionhandling_Nova_ThrowFunctionMap_VTable_val.classInstance;
+nova_all_classes[697] = spectra_tree_nodes_exceptionhandling_Nova_ThrowPropertyMap_VTable_val.classInstance;
+nova_all_classes[698] = spectra_tree_nodes_exceptionhandling_Nova_Try_VTable_val.classInstance;
+nova_all_classes[699] = spectra_tree_nodes_exceptionhandling_Nova_TryFunctionMap_VTable_val.classInstance;
+nova_all_classes[700] = spectra_tree_nodes_exceptionhandling_Nova_TryPropertyMap_VTable_val.classInstance;
+nova_all_classes[701] = spectra_tree_nodes_functions_Nova_AccessorFunction_VTable_val.classInstance;
+nova_all_classes[702] = spectra_tree_nodes_functions_Nova_AccessorFunctionFunctionMap_VTable_val.classInstance;
+nova_all_classes[703] = spectra_tree_nodes_functions_Nova_AccessorFunctionPropertyMap_VTable_val.classInstance;
+nova_all_classes[704] = spectra_tree_nodes_functions_Nova_ArrayInstantiation_VTable_val.classInstance;
+nova_all_classes[705] = spectra_tree_nodes_functions_Nova_ArrayInstantiationFunctionMap_VTable_val.classInstance;
+nova_all_classes[706] = spectra_tree_nodes_functions_Nova_ArrayInstantiationPropertyMap_VTable_val.classInstance;
+nova_all_classes[707] = spectra_tree_nodes_functions_Nova_BodyFunction_VTable_val.classInstance;
+nova_all_classes[708] = spectra_tree_nodes_functions_Nova_BodyFunctionFunctionMap_VTable_val.classInstance;
+nova_all_classes[709] = spectra_tree_nodes_functions_Nova_BodyFunctionPropertyMap_VTable_val.classInstance;
+nova_all_classes[710] = spectra_tree_nodes_functions_Nova_CallableFunction_VTable_val.classInstance;
+nova_all_classes[711] = spectra_tree_nodes_functions_Nova_CallableFunctionFunctionMap_VTable_val.classInstance;
+nova_all_classes[712] = spectra_tree_nodes_functions_Nova_CallableFunctionPropertyMap_VTable_val.classInstance;
+nova_all_classes[713] = spectra_tree_nodes_functions_Nova_Constructor_VTable_val.classInstance;
+nova_all_classes[714] = spectra_tree_nodes_functions_Nova_ConstructorFunctionMap_VTable_val.classInstance;
+nova_all_classes[715] = spectra_tree_nodes_functions_Nova_ConstructorPropertyMap_VTable_val.classInstance;
+nova_all_classes[716] = spectra_tree_nodes_functions_Nova_EmptyArrayBracket_VTable_val.classInstance;
+nova_all_classes[717] = spectra_tree_nodes_functions_Nova_EmptyArrayBracketFunctionMap_VTable_val.classInstance;
+nova_all_classes[718] = spectra_tree_nodes_functions_Nova_EmptyArrayBracketPropertyMap_VTable_val.classInstance;
+nova_all_classes[719] = spectra_tree_nodes_functions_Nova_FunctionArgumentList_VTable_val.classInstance;
+nova_all_classes[720] = spectra_tree_nodes_functions_Nova_FunctionArgumentListFunctionMap_VTable_val.classInstance;
+nova_all_classes[721] = spectra_tree_nodes_functions_Nova_FunctionArgumentListPropertyMap_VTable_val.classInstance;
+nova_all_classes[722] = spectra_tree_nodes_functions_Nova_FunctionCall_VTable_val.classInstance;
+nova_all_classes[723] = spectra_tree_nodes_functions_Nova_FunctionCallFunctionMap_VTable_val.classInstance;
+nova_all_classes[724] = spectra_tree_nodes_functions_Nova_FunctionCallPropertyMap_VTable_val.classInstance;
+nova_all_classes[725] = spectra_tree_nodes_functions_Nova_FunctionDeclaration_VTable_val.classInstance;
+nova_all_classes[726] = spectra_tree_nodes_functions_Nova_FunctionDeclarationFunctionMap_VTable_val.classInstance;
+nova_all_classes[727] = spectra_tree_nodes_functions_Nova_FunctionDeclarationPropertyMap_VTable_val.classInstance;
+nova_all_classes[728] = spectra_tree_nodes_functions_Nova_InitializationFunction_VTable_val.classInstance;
+nova_all_classes[729] = spectra_tree_nodes_functions_Nova_InitializationFunctionFunctionMap_VTable_val.classInstance;
+nova_all_classes[730] = spectra_tree_nodes_functions_Nova_InitializationFunctionPropertyMap_VTable_val.classInstance;
+nova_all_classes[731] = spectra_tree_nodes_functions_Nova_Instantiation_VTable_val.classInstance;
+nova_all_classes[732] = spectra_tree_nodes_functions_Nova_InstantiationFunctionMap_VTable_val.classInstance;
+nova_all_classes[733] = spectra_tree_nodes_functions_Nova_InstantiationPropertyMap_VTable_val.classInstance;
+nova_all_classes[734] = spectra_tree_nodes_functions_Nova_MutatorFunction_VTable_val.classInstance;
+nova_all_classes[735] = spectra_tree_nodes_functions_Nova_MutatorFunctionFunctionMap_VTable_val.classInstance;
+nova_all_classes[736] = spectra_tree_nodes_functions_Nova_MutatorFunctionPropertyMap_VTable_val.classInstance;
+nova_all_classes[737] = spectra_tree_nodes_functions_Nova_ObjectNotation_VTable_val.classInstance;
+nova_all_classes[738] = spectra_tree_nodes_functions_Nova_ObjectNotationFunctionMap_VTable_val.classInstance;
+nova_all_classes[739] = spectra_tree_nodes_functions_Nova_ObjectNotationPropertyMap_VTable_val.classInstance;
+nova_all_classes[740] = spectra_tree_nodes_functions_Nova_ObjectNotationProperty_VTable_val.classInstance;
+nova_all_classes[741] = spectra_tree_nodes_functions_Nova_ObjectNotationPropertyFunctionMap_VTable_val.classInstance;
+nova_all_classes[742] = spectra_tree_nodes_functions_Nova_ObjectNotationPropertyPropertyMap_VTable_val.classInstance;
+nova_all_classes[743] = spectra_tree_nodes_functions_Nova_Parameter_VTable_val.classInstance;
+nova_all_classes[744] = spectra_tree_nodes_functions_Nova_ParameterFunctionMap_VTable_val.classInstance;
+nova_all_classes[745] = spectra_tree_nodes_functions_Nova_ParameterPropertyMap_VTable_val.classInstance;
+nova_all_classes[746] = spectra_tree_nodes_functions_Nova_ParameterList_VTable_val.classInstance;
+nova_all_classes[747] = spectra_tree_nodes_functions_Nova_ParameterListFunctionMap_VTable_val.classInstance;
+nova_all_classes[748] = spectra_tree_nodes_functions_Nova_ParameterListPropertyMap_VTable_val.classInstance;
+nova_all_classes[749] = spectra_tree_nodes_functions_Nova_PropertyFunction_VTable_val.classInstance;
+nova_all_classes[750] = spectra_tree_nodes_functions_Nova_PropertyFunctionFunctionMap_VTable_val.classInstance;
+nova_all_classes[751] = spectra_tree_nodes_functions_Nova_PropertyFunctionPropertyMap_VTable_val.classInstance;
+nova_all_classes[752] = spectra_tree_nodes_functions_closures_Nova_ClosureContext_VTable_val.classInstance;
+nova_all_classes[753] = spectra_tree_nodes_functions_closures_Nova_ClosureContextFunctionMap_VTable_val.classInstance;
+nova_all_classes[754] = spectra_tree_nodes_functions_closures_Nova_ClosureContextPropertyMap_VTable_val.classInstance;
+nova_all_classes[755] = spectra_tree_nodes_functions_closures_Nova_ClosureDeclaration_VTable_val.classInstance;
+nova_all_classes[756] = spectra_tree_nodes_functions_closures_Nova_ClosureDeclarationFunctionMap_VTable_val.classInstance;
+nova_all_classes[757] = spectra_tree_nodes_functions_closures_Nova_ClosureDeclarationPropertyMap_VTable_val.classInstance;
+nova_all_classes[758] = spectra_tree_nodes_functions_closures_Nova_ClosureParameter_VTable_val.classInstance;
+nova_all_classes[759] = spectra_tree_nodes_functions_closures_Nova_ClosureParameterFunctionMap_VTable_val.classInstance;
+nova_all_classes[760] = spectra_tree_nodes_functions_closures_Nova_ClosureParameterPropertyMap_VTable_val.classInstance;
+nova_all_classes[761] = spectra_tree_nodes_functions_closures_Nova_LambdaExpression_VTable_val.classInstance;
+nova_all_classes[762] = spectra_tree_nodes_functions_closures_Nova_LambdaExpressionFunctionMap_VTable_val.classInstance;
+nova_all_classes[763] = spectra_tree_nodes_functions_closures_Nova_LambdaExpressionPropertyMap_VTable_val.classInstance;
+nova_all_classes[764] = spectra_tree_nodes_functions_closures_Nova_LambdaParameter_VTable_val.classInstance;
+nova_all_classes[765] = spectra_tree_nodes_functions_closures_Nova_LambdaParameterFunctionMap_VTable_val.classInstance;
+nova_all_classes[766] = spectra_tree_nodes_functions_closures_Nova_LambdaParameterPropertyMap_VTable_val.classInstance;
+nova_all_classes[767] = spectra_tree_nodes_generics_Nova_GenericArgument_VTable_val.classInstance;
+nova_all_classes[768] = spectra_tree_nodes_generics_Nova_GenericArgumentFunctionMap_VTable_val.classInstance;
+nova_all_classes[769] = spectra_tree_nodes_generics_Nova_GenericArgumentPropertyMap_VTable_val.classInstance;
+nova_all_classes[770] = spectra_tree_nodes_generics_Nova_GenericCompatible_VTable_val.classInstance;
+nova_all_classes[771] = spectra_tree_nodes_generics_Nova_GenericCompatibleFunctionMap_VTable_val.classInstance;
+nova_all_classes[772] = spectra_tree_nodes_generics_Nova_GenericCompatiblePropertyMap_VTable_val.classInstance;
+nova_all_classes[773] = spectra_tree_nodes_generics_Nova_GenericParameter_VTable_val.classInstance;
+nova_all_classes[774] = spectra_tree_nodes_generics_Nova_GenericParameterFunctionMap_VTable_val.classInstance;
+nova_all_classes[775] = spectra_tree_nodes_generics_Nova_GenericParameterPropertyMap_VTable_val.classInstance;
+nova_all_classes[776] = spectra_tree_nodes_generics_Nova_GenericType_VTable_val.classInstance;
+nova_all_classes[777] = spectra_tree_nodes_generics_Nova_GenericTypeFunctionMap_VTable_val.classInstance;
+nova_all_classes[778] = spectra_tree_nodes_generics_Nova_GenericTypePropertyMap_VTable_val.classInstance;
+nova_all_classes[779] = spectra_tree_nodes_operations_Nova_Assignable_VTable_val.classInstance;
+nova_all_classes[780] = spectra_tree_nodes_operations_Nova_AssignableFunctionMap_VTable_val.classInstance;
+nova_all_classes[781] = spectra_tree_nodes_operations_Nova_AssignablePropertyMap_VTable_val.classInstance;
+nova_all_classes[782] = spectra_tree_nodes_operations_Nova_Assignment_VTable_val.classInstance;
+nova_all_classes[783] = spectra_tree_nodes_operations_Nova_AssignmentFunctionMap_VTable_val.classInstance;
+nova_all_classes[784] = spectra_tree_nodes_operations_Nova_AssignmentPropertyMap_VTable_val.classInstance;
+nova_all_classes[785] = spectra_tree_nodes_operations_Nova_ElvisOperation_VTable_val.classInstance;
+nova_all_classes[786] = spectra_tree_nodes_operations_Nova_ElvisOperationFunctionMap_VTable_val.classInstance;
+nova_all_classes[787] = spectra_tree_nodes_operations_Nova_ElvisOperationPropertyMap_VTable_val.classInstance;
+nova_all_classes[788] = spectra_tree_nodes_operations_Nova_Operation_VTable_val.classInstance;
+nova_all_classes[789] = spectra_tree_nodes_operations_Nova_OperationFunctionMap_VTable_val.classInstance;
+nova_all_classes[790] = spectra_tree_nodes_operations_Nova_OperationPropertyMap_VTable_val.classInstance;
+nova_all_classes[791] = spectra_tree_nodes_operations_Nova_Operator_VTable_val.classInstance;
+nova_all_classes[792] = spectra_tree_nodes_operations_Nova_OperatorFunctionMap_VTable_val.classInstance;
+nova_all_classes[793] = spectra_tree_nodes_operations_Nova_OperatorPropertyMap_VTable_val.classInstance;
+nova_all_classes[794] = spectra_tree_nodes_operations_Nova_TernaryOperation_VTable_val.classInstance;
+nova_all_classes[795] = spectra_tree_nodes_operations_Nova_TernaryOperationFunctionMap_VTable_val.classInstance;
+nova_all_classes[796] = spectra_tree_nodes_operations_Nova_TernaryOperationPropertyMap_VTable_val.classInstance;
+nova_all_classes[797] = spectra_tree_nodes_operations_Nova_UnaryOperation_VTable_val.classInstance;
+nova_all_classes[798] = spectra_tree_nodes_operations_Nova_UnaryOperationFunctionMap_VTable_val.classInstance;
+nova_all_classes[799] = spectra_tree_nodes_operations_Nova_UnaryOperationPropertyMap_VTable_val.classInstance;
+nova_all_classes[800] = spectra_tree_nodes_variables_Nova_ArrayBracketOverload_VTable_val.classInstance;
+nova_all_classes[801] = spectra_tree_nodes_variables_Nova_ArrayBracketOverloadFunctionMap_VTable_val.classInstance;
+nova_all_classes[802] = spectra_tree_nodes_variables_Nova_ArrayBracketOverloadPropertyMap_VTable_val.classInstance;
+nova_all_classes[803] = spectra_tree_nodes_variables_Nova_FieldDeclaration_VTable_val.classInstance;
+nova_all_classes[804] = spectra_tree_nodes_variables_Nova_FieldDeclarationFunctionMap_VTable_val.classInstance;
+nova_all_classes[805] = spectra_tree_nodes_variables_Nova_FieldDeclarationPropertyMap_VTable_val.classInstance;
+nova_all_classes[806] = spectra_tree_nodes_variables_Nova_ImplicitDeclaration_VTable_val.classInstance;
+nova_all_classes[807] = spectra_tree_nodes_variables_Nova_ImplicitDeclarationFunctionMap_VTable_val.classInstance;
+nova_all_classes[808] = spectra_tree_nodes_variables_Nova_ImplicitDeclarationPropertyMap_VTable_val.classInstance;
+nova_all_classes[809] = spectra_tree_nodes_variables_Nova_InstanceDeclaration_VTable_val.classInstance;
+nova_all_classes[810] = spectra_tree_nodes_variables_Nova_InstanceDeclarationFunctionMap_VTable_val.classInstance;
+nova_all_classes[811] = spectra_tree_nodes_variables_Nova_InstanceDeclarationPropertyMap_VTable_val.classInstance;
+nova_all_classes[812] = spectra_tree_nodes_variables_Nova_LocalDeclaration_VTable_val.classInstance;
+nova_all_classes[813] = spectra_tree_nodes_variables_Nova_LocalDeclarationFunctionMap_VTable_val.classInstance;
+nova_all_classes[814] = spectra_tree_nodes_variables_Nova_LocalDeclarationPropertyMap_VTable_val.classInstance;
+nova_all_classes[815] = spectra_tree_nodes_variables_Nova_Variable_VTable_val.classInstance;
+nova_all_classes[816] = spectra_tree_nodes_variables_Nova_VariableFunctionMap_VTable_val.classInstance;
+nova_all_classes[817] = spectra_tree_nodes_variables_Nova_VariablePropertyMap_VTable_val.classInstance;
+nova_all_classes[818] = spectra_tree_nodes_variables_Nova_VariableDeclaration_VTable_val.classInstance;
+nova_all_classes[819] = spectra_tree_nodes_variables_Nova_VariableDeclarationFunctionMap_VTable_val.classInstance;
+nova_all_classes[820] = spectra_tree_nodes_variables_Nova_VariableDeclarationPropertyMap_VTable_val.classInstance;
+nova_all_classes[821] = spectra_util_Nova_Bounds_VTable_val.classInstance;
+nova_all_classes[822] = spectra_util_Nova_BoundsFunctionMap_VTable_val.classInstance;
+nova_all_classes[823] = spectra_util_Nova_BoundsPropertyMap_VTable_val.classInstance;
+nova_all_classes[824] = spectra_util_Nova_CompilerStringFunctions_VTable_val.classInstance;
+nova_all_classes[825] = spectra_util_Nova_FileUtils_VTable_val.classInstance;
+nova_all_classes[826] = spectra_util_Nova_FileUtilsFunctionMap_VTable_val.classInstance;
+nova_all_classes[827] = spectra_util_Nova_FileUtilsPropertyMap_VTable_val.classInstance;
+nova_all_classes[828] = spectra_util_Nova_Location_VTable_val.classInstance;
+nova_all_classes[829] = spectra_util_Nova_LocationFunctionMap_VTable_val.classInstance;
+nova_all_classes[830] = spectra_util_Nova_LocationPropertyMap_VTable_val.classInstance;
+nova_all_classes[831] = spectra_util_Nova_OS_VTable_val.classInstance;
+nova_all_classes[832] = spectra_util_Nova_OSFunctionMap_VTable_val.classInstance;
+nova_all_classes[833] = spectra_util_Nova_OSPropertyMap_VTable_val.classInstance;
+nova_all_classes[834] = spectra_util_Nova_SyntaxUtils_VTable_val.classInstance;
+nova_all_classes[835] = spectra_util_Nova_SyntaxUtilsFunctionMap_VTable_val.classInstance;
+nova_all_classes[836] = spectra_util_Nova_SyntaxUtilsPropertyMap_VTable_val.classInstance;
+nova_all_classes[837] = example_Nova_Animal_VTable_val.classInstance;
+nova_all_classes[838] = example_Nova_AnimalFunctionMap_VTable_val.classInstance;
+nova_all_classes[839] = example_Nova_AnimalPropertyMap_VTable_val.classInstance;
+nova_all_classes[840] = example_Nova_ArrayDemo_VTable_val.classInstance;
+nova_all_classes[841] = example_Nova_ArrayDemoFunctionMap_VTable_val.classInstance;
+nova_all_classes[842] = example_Nova_ArrayDemoPropertyMap_VTable_val.classInstance;
+nova_all_classes[843] = example_Nova_BodyBuilder_VTable_val.classInstance;
+nova_all_classes[844] = example_Nova_BodyBuilderFunctionMap_VTable_val.classInstance;
+nova_all_classes[845] = example_Nova_BodyBuilderPropertyMap_VTable_val.classInstance;
+nova_all_classes[846] = example_Nova_ClosureDemo_VTable_val.classInstance;
+nova_all_classes[847] = example_Nova_ClosureDemoFunctionMap_VTable_val.classInstance;
+nova_all_classes[848] = example_Nova_ClosureDemoPropertyMap_VTable_val.classInstance;
+nova_all_classes[849] = example_Nova_Dog_VTable_val.classInstance;
+nova_all_classes[850] = example_Nova_DogFunctionMap_VTable_val.classInstance;
+nova_all_classes[851] = example_Nova_DogPropertyMap_VTable_val.classInstance;
+nova_all_classes[852] = example_Nova_ExceptionHandlingDemo_VTable_val.classInstance;
+nova_all_classes[853] = example_Nova_ExceptionHandlingDemoFunctionMap_VTable_val.classInstance;
+nova_all_classes[854] = example_Nova_ExceptionHandlingDemoPropertyMap_VTable_val.classInstance;
+nova_all_classes[855] = example_Nova_FileTest_VTable_val.classInstance;
+nova_all_classes[856] = example_Nova_FileTestFunctionMap_VTable_val.classInstance;
+nova_all_classes[857] = example_Nova_FileTestPropertyMap_VTable_val.classInstance;
+nova_all_classes[858] = example_Nova_GenericDemo_VTable_val.classInstance;
+nova_all_classes[859] = example_Nova_GenericDemoFunctionMap_VTable_val.classInstance;
+nova_all_classes[860] = example_Nova_GenericDemoPropertyMap_VTable_val.classInstance;
+nova_all_classes[861] = example_Nova_HashMapDemo_VTable_val.classInstance;
+nova_all_classes[862] = example_Nova_HashMapDemoFunctionMap_VTable_val.classInstance;
+nova_all_classes[863] = example_Nova_HashMapDemoPropertyMap_VTable_val.classInstance;
+nova_all_classes[864] = example_Nova_HashSetDemo_VTable_val.classInstance;
+nova_all_classes[865] = example_Nova_HashSetDemoFunctionMap_VTable_val.classInstance;
+nova_all_classes[866] = example_Nova_HashSetDemoPropertyMap_VTable_val.classInstance;
+nova_all_classes[867] = example_Nova_IntegerTest_VTable_val.classInstance;
+nova_all_classes[868] = example_Nova_IntegerTestFunctionMap_VTable_val.classInstance;
+nova_all_classes[869] = example_Nova_IntegerTestPropertyMap_VTable_val.classInstance;
+nova_all_classes[870] = example_Nova_Lab_VTable_val.classInstance;
+nova_all_classes[871] = example_Nova_LabFunctionMap_VTable_val.classInstance;
+nova_all_classes[872] = example_Nova_LabPropertyMap_VTable_val.classInstance;
+nova_all_classes[873] = example_Nova_MathDemo_VTable_val.classInstance;
+nova_all_classes[874] = example_Nova_MathDemoFunctionMap_VTable_val.classInstance;
+nova_all_classes[875] = example_Nova_MathDemoPropertyMap_VTable_val.classInstance;
+nova_all_classes[876] = example_Nova_NonWholeDivisionException_VTable_val.classInstance;
+nova_all_classes[877] = example_Nova_NonWholeDivisionExceptionFunctionMap_VTable_val.classInstance;
+nova_all_classes[878] = example_Nova_NonWholeDivisionExceptionPropertyMap_VTable_val.classInstance;
+nova_all_classes[879] = example_Nova_Person_VTable_val.classInstance;
+nova_all_classes[880] = example_Nova_PersonFunctionMap_VTable_val.classInstance;
+nova_all_classes[881] = example_Nova_PersonPropertyMap_VTable_val.classInstance;
+nova_all_classes[882] = example_Nova_Polygon_VTable_val.classInstance;
+nova_all_classes[883] = example_Nova_PolygonFunctionMap_VTable_val.classInstance;
+nova_all_classes[884] = example_Nova_PolygonPropertyMap_VTable_val.classInstance;
+nova_all_classes[885] = example_Nova_PolymorphismDemo_VTable_val.classInstance;
+nova_all_classes[886] = example_Nova_PolymorphismDemoFunctionMap_VTable_val.classInstance;
+nova_all_classes[887] = example_Nova_PolymorphismDemoPropertyMap_VTable_val.classInstance;
+nova_all_classes[888] = example_Nova_QueueDemo_VTable_val.classInstance;
+nova_all_classes[889] = example_Nova_QueueDemoFunctionMap_VTable_val.classInstance;
+nova_all_classes[890] = example_Nova_QueueDemoPropertyMap_VTable_val.classInstance;
+nova_all_classes[891] = example_Nova_Spider_VTable_val.classInstance;
+nova_all_classes[892] = example_Nova_SpiderFunctionMap_VTable_val.classInstance;
+nova_all_classes[893] = example_Nova_SpiderPropertyMap_VTable_val.classInstance;
+nova_all_classes[894] = example_Nova_Square_VTable_val.classInstance;
+nova_all_classes[895] = example_Nova_SquareFunctionMap_VTable_val.classInstance;
+nova_all_classes[896] = example_Nova_SquarePropertyMap_VTable_val.classInstance;
+nova_all_classes[897] = example_Nova_SvgChart_VTable_val.classInstance;
+nova_all_classes[898] = example_Nova_SvgChartFunctionMap_VTable_val.classInstance;
+nova_all_classes[899] = example_Nova_SvgChartPropertyMap_VTable_val.classInstance;
+nova_all_classes[900] = example_Nova_SvgFractal_VTable_val.classInstance;
+nova_all_classes[901] = example_Nova_SvgFractalFunctionMap_VTable_val.classInstance;
+nova_all_classes[902] = example_Nova_SvgFractalPropertyMap_VTable_val.classInstance;
+nova_all_classes[903] = example_Nova_T1_VTable_val.classInstance;
+nova_all_classes[904] = example_Nova_T1FunctionMap_VTable_val.classInstance;
+nova_all_classes[905] = example_Nova_T1PropertyMap_VTable_val.classInstance;
+nova_all_classes[906] = example_Nova_T2_VTable_val.classInstance;
+nova_all_classes[907] = example_Nova_T2FunctionMap_VTable_val.classInstance;
+nova_all_classes[908] = example_Nova_T2PropertyMap_VTable_val.classInstance;
+nova_all_classes[909] = example_Nova_Test_VTable_val.classInstance;
+nova_all_classes[910] = example_Nova_TestFunctionMap_VTable_val.classInstance;
+nova_all_classes[911] = example_Nova_TestPropertyMap_VTable_val.classInstance;
+nova_all_classes[912] = example_Nova_ThreadDemo_VTable_val.classInstance;
+nova_all_classes[913] = example_Nova_ThreadDemoFunctionMap_VTable_val.classInstance;
+nova_all_classes[914] = example_Nova_ThreadDemoPropertyMap_VTable_val.classInstance;
+nova_all_classes[915] = example_Nova_ThreadDemoImplementation_VTable_val.classInstance;
+nova_all_classes[916] = example_Nova_ThreadDemoImplementationFunctionMap_VTable_val.classInstance;
+nova_all_classes[917] = example_Nova_ThreadDemoImplementationPropertyMap_VTable_val.classInstance;
+nova_all_classes[918] = example_ackermann_Nova_Ackermann_VTable_val.classInstance;
+nova_all_classes[919] = example_ackermann_Nova_AckermannFunctionMap_VTable_val.classInstance;
+nova_all_classes[920] = example_ackermann_Nova_AckermannPropertyMap_VTable_val.classInstance;
+nova_all_classes[921] = example_copy_Nova_Dog_VTable_val.classInstance;
+nova_all_classes[922] = example_copy_Nova_DogFunctionMap_VTable_val.classInstance;
+nova_all_classes[923] = example_copy_Nova_DogPropertyMap_VTable_val.classInstance;
+nova_all_classes[924] = example_database_Nova_DatabaseDemo_VTable_val.classInstance;
+nova_all_classes[925] = example_database_Nova_DatabaseDemoFunctionMap_VTable_val.classInstance;
+nova_all_classes[926] = example_database_Nova_DatabaseDemoPropertyMap_VTable_val.classInstance;
+nova_all_classes[927] = example_network_Nova_ClientDemo_VTable_val.classInstance;
+nova_all_classes[928] = example_network_Nova_ClientDemoFunctionMap_VTable_val.classInstance;
+nova_all_classes[929] = example_network_Nova_ClientDemoPropertyMap_VTable_val.classInstance;
+nova_all_classes[930] = example_network_Nova_ConnectionThread_VTable_val.classInstance;
+nova_all_classes[931] = example_network_Nova_ConnectionThreadFunctionMap_VTable_val.classInstance;
+nova_all_classes[932] = example_network_Nova_ConnectionThreadPropertyMap_VTable_val.classInstance;
+nova_all_classes[933] = example_network_Nova_OutputThread_VTable_val.classInstance;
+nova_all_classes[934] = example_network_Nova_OutputThreadFunctionMap_VTable_val.classInstance;
+nova_all_classes[935] = example_network_Nova_OutputThreadPropertyMap_VTable_val.classInstance;
+nova_all_classes[936] = example_network_Nova_ServerDemo_VTable_val.classInstance;
+nova_all_classes[937] = example_network_Nova_ServerDemoFunctionMap_VTable_val.classInstance;
+nova_all_classes[938] = example_network_Nova_ServerDemoPropertyMap_VTable_val.classInstance;
+nova_all_classes[939] = stabilitytest_Nova_AssignmentStability_VTable_val.classInstance;
+nova_all_classes[940] = stabilitytest_Nova_AssignmentStabilityFunctionMap_VTable_val.classInstance;
+nova_all_classes[941] = stabilitytest_Nova_AssignmentStabilityPropertyMap_VTable_val.classInstance;
+nova_all_classes[942] = stabilitytest_Nova_ClassWithProperties_VTable_val.classInstance;
+nova_all_classes[943] = stabilitytest_Nova_ClassWithPropertiesFunctionMap_VTable_val.classInstance;
+nova_all_classes[944] = stabilitytest_Nova_ClassWithPropertiesPropertyMap_VTable_val.classInstance;
+nova_all_classes[945] = stabilitytest_Nova_ClientThread_VTable_val.classInstance;
+nova_all_classes[946] = stabilitytest_Nova_ClientThreadFunctionMap_VTable_val.classInstance;
+nova_all_classes[947] = stabilitytest_Nova_ClientThreadPropertyMap_VTable_val.classInstance;
+nova_all_classes[948] = stabilitytest_Nova_ClosureStability_VTable_val.classInstance;
+nova_all_classes[949] = stabilitytest_Nova_ClosureStabilityFunctionMap_VTable_val.classInstance;
+nova_all_classes[950] = stabilitytest_Nova_ClosureStabilityPropertyMap_VTable_val.classInstance;
+nova_all_classes[951] = stabilitytest_Nova_ExceptionStability_VTable_val.classInstance;
+nova_all_classes[952] = stabilitytest_Nova_ExceptionStabilityFunctionMap_VTable_val.classInstance;
+nova_all_classes[953] = stabilitytest_Nova_ExceptionStabilityPropertyMap_VTable_val.classInstance;
+nova_all_classes[954] = stabilitytest_Nova_ExternalInnerClassStability_VTable_val.classInstance;
+nova_all_classes[955] = stabilitytest_Nova_ExternalInnerClassStabilityFunctionMap_VTable_val.classInstance;
+nova_all_classes[956] = stabilitytest_Nova_ExternalInnerClassStabilityPropertyMap_VTable_val.classInstance;
+nova_all_classes[957] = stabilitytest_Nova_FileStability_VTable_val.classInstance;
+nova_all_classes[958] = stabilitytest_Nova_FileStabilityFunctionMap_VTable_val.classInstance;
+nova_all_classes[959] = stabilitytest_Nova_FileStabilityPropertyMap_VTable_val.classInstance;
+nova_all_classes[960] = stabilitytest_Nova_InnerClassStability_VTable_val.classInstance;
+nova_all_classes[961] = stabilitytest_Nova_MyOuter_VTable_val.classInstance;
+nova_all_classes[962] = stabilitytest_Nova_InnerClassStabilityFunctionMap_VTable_val.classInstance;
+nova_all_classes[963] = stabilitytest_Nova_InnerClassStabilityPropertyMap_VTable_val.classInstance;
+nova_all_classes[964] = stabilitytest_Nova_MyOuterFunctionMap_VTable_val.classInstance;
+nova_all_classes[965] = stabilitytest_Nova_MyOuterPropertyMap_VTable_val.classInstance;
+nova_all_classes[966] = stabilitytest_Nova_MyInner_VTable_val.classInstance;
+nova_all_classes[967] = stabilitytest_Nova_MyInnerFunctionMap_VTable_val.classInstance;
+nova_all_classes[968] = stabilitytest_Nova_MyInnerPropertyMap_VTable_val.classInstance;
+nova_all_classes[969] = stabilitytest_Nova_MyInnerPropertyMapFunctionMap_VTable_val.classInstance;
+nova_all_classes[970] = stabilitytest_Nova_LambdaStability_VTable_val.classInstance;
+nova_all_classes[971] = stabilitytest_Nova_LambdaStabilityFunctionMap_VTable_val.classInstance;
+nova_all_classes[972] = stabilitytest_Nova_LambdaStabilityPropertyMap_VTable_val.classInstance;
+nova_all_classes[973] = stabilitytest_Nova_NetworkStability_VTable_val.classInstance;
+nova_all_classes[974] = stabilitytest_Nova_NetworkStabilityFunctionMap_VTable_val.classInstance;
+nova_all_classes[975] = stabilitytest_Nova_NetworkStabilityPropertyMap_VTable_val.classInstance;
+nova_all_classes[976] = stabilitytest_Nova_Node_VTable_val.classInstance;
+nova_all_classes[977] = stabilitytest_Nova_NodeFunctionMap_VTable_val.classInstance;
+nova_all_classes[978] = stabilitytest_Nova_NodePropertyMap_VTable_val.classInstance;
+nova_all_classes[979] = stabilitytest_Nova_PolymorphicSubClass_VTable_val.classInstance;
+nova_all_classes[980] = stabilitytest_Nova_PolymorphicSubClassFunctionMap_VTable_val.classInstance;
+nova_all_classes[981] = stabilitytest_Nova_PolymorphicSubClassPropertyMap_VTable_val.classInstance;
+nova_all_classes[982] = stabilitytest_Nova_PolymorphicSuperClass_VTable_val.classInstance;
+nova_all_classes[983] = stabilitytest_Nova_PolymorphicSuperClassFunctionMap_VTable_val.classInstance;
+nova_all_classes[984] = stabilitytest_Nova_PolymorphicSuperClassPropertyMap_VTable_val.classInstance;
+nova_all_classes[985] = stabilitytest_Nova_PolymorphismStability_VTable_val.classInstance;
+nova_all_classes[986] = stabilitytest_Nova_PolymorphismStabilityFunctionMap_VTable_val.classInstance;
+nova_all_classes[987] = stabilitytest_Nova_PolymorphismStabilityPropertyMap_VTable_val.classInstance;
+nova_all_classes[988] = stabilitytest_Nova_RegexStability_VTable_val.classInstance;
+nova_all_classes[989] = stabilitytest_Nova_RegexStabilityFunctionMap_VTable_val.classInstance;
+nova_all_classes[990] = stabilitytest_Nova_RegexStabilityPropertyMap_VTable_val.classInstance;
+nova_all_classes[991] = stabilitytest_Nova_StabilityExceptionHandler_VTable_val.classInstance;
+nova_all_classes[992] = stabilitytest_Nova_StabilityExceptionHandlerFunctionMap_VTable_val.classInstance;
+nova_all_classes[993] = stabilitytest_Nova_StabilityExceptionHandlerPropertyMap_VTable_val.classInstance;
+nova_all_classes[994] = stabilitytest_Nova_StabilityTest_VTable_val.classInstance;
+nova_all_classes[995] = stabilitytest_Nova_StabilityTestFunctionMap_VTable_val.classInstance;
+nova_all_classes[996] = stabilitytest_Nova_StabilityTestPropertyMap_VTable_val.classInstance;
+nova_all_classes[997] = stabilitytest_Nova_StabilityTestCase_VTable_val.classInstance;
+nova_all_classes[998] = stabilitytest_Nova_StabilityTestCaseFunctionMap_VTable_val.classInstance;
+nova_all_classes[999] = stabilitytest_Nova_StabilityTestCasePropertyMap_VTable_val.classInstance;
+nova_all_classes[1000] = stabilitytest_Nova_StabilityTestException_VTable_val.classInstance;
+nova_all_classes[1001] = stabilitytest_Nova_StabilityTestExceptionFunctionMap_VTable_val.classInstance;
+nova_all_classes[1002] = stabilitytest_Nova_StabilityTestExceptionPropertyMap_VTable_val.classInstance;
+nova_all_classes[1003] = stabilitytest_Nova_StaticImportStability_VTable_val.classInstance;
+nova_all_classes[1004] = stabilitytest_Nova_StaticImportStabilityFunctionMap_VTable_val.classInstance;
+nova_all_classes[1005] = stabilitytest_Nova_StaticImportStabilityPropertyMap_VTable_val.classInstance;
+nova_all_classes[1006] = stabilitytest_Nova_SyntaxStability_VTable_val.classInstance;
+nova_all_classes[1007] = stabilitytest_Nova_SyntaxStabilityFunctionMap_VTable_val.classInstance;
+nova_all_classes[1008] = stabilitytest_Nova_SyntaxStabilityPropertyMap_VTable_val.classInstance;
+nova_all_classes[1009] = stabilitytest_Nova_ThreadImplementation_VTable_val.classInstance;
+nova_all_classes[1010] = stabilitytest_Nova_ThreadImplementationFunctionMap_VTable_val.classInstance;
+nova_all_classes[1011] = stabilitytest_Nova_ThreadImplementationPropertyMap_VTable_val.classInstance;
+nova_all_classes[1012] = stabilitytest_Nova_ThreadStability_VTable_val.classInstance;
+nova_all_classes[1013] = stabilitytest_Nova_ThreadStabilityFunctionMap_VTable_val.classInstance;
+nova_all_classes[1014] = stabilitytest_Nova_ThreadStabilityPropertyMap_VTable_val.classInstance;
+nova_all_classes[1015] = stabilitytest_Nova_TimeStability_VTable_val.classInstance;
+nova_all_classes[1016] = stabilitytest_Nova_TimeStabilityFunctionMap_VTable_val.classInstance;
+nova_all_classes[1017] = stabilitytest_Nova_TimeStabilityPropertyMap_VTable_val.classInstance;
+nova_all_classes[1018] = stabilitytest_Nova_ToStringStability_VTable_val.classInstance;
+nova_all_classes[1019] = stabilitytest_Nova_ToStringStabilityFunctionMap_VTable_val.classInstance;
+nova_all_classes[1020] = stabilitytest_Nova_ToStringStabilityPropertyMap_VTable_val.classInstance;
+nova_all_classes[1021] = stabilitytest_Nova_UnstableException_VTable_val.classInstance;
+nova_all_classes[1022] = stabilitytest_Nova_UnstableExceptionFunctionMap_VTable_val.classInstance;
+nova_all_classes[1023] = stabilitytest_Nova_UnstableExceptionPropertyMap_VTable_val.classInstance;
+nova_meta_Nova_Class_Nova_ALL = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_all_classes, 1024);
 
 
 nova_Nova_Object_Nova_init_static(exceptionData);
@@ -7776,6 +11934,9 @@ nova_datastruct_list_Nova_IterablePropertyMap_Nova_init_static(exceptionData);
 nova_datastruct_list_Nova_Iterator_Nova_init_static(exceptionData);
 nova_datastruct_list_Nova_IteratorFunctionMap_Nova_init_static(exceptionData);
 nova_datastruct_list_Nova_IteratorPropertyMap_Nova_init_static(exceptionData);
+nova_datastruct_list_Double_Nova_Iterator1Double_Nova_init_static(exceptionData);
+nova_datastruct_list_Int_Nova_Iterator1Int_Nova_init_static(exceptionData);
+nova_datastruct_list_Byte_Nova_Iterator1Byte_Nova_init_static(exceptionData);
 nova_datastruct_list_Nova_LinkedList_Nova_init_static(exceptionData);
 nova_datastruct_list_Nova_LinkedListFunctionMap_Nova_init_static(exceptionData);
 nova_datastruct_list_Nova_LinkedListPropertyMap_Nova_init_static(exceptionData);
@@ -7785,6 +11946,9 @@ nova_datastruct_list_Nova_LinkedListIteratorPropertyMap_Nova_init_static(excepti
 nova_datastruct_list_Nova_List_Nova_init_static(exceptionData);
 nova_datastruct_list_Nova_ListFunctionMap_Nova_init_static(exceptionData);
 nova_datastruct_list_Nova_ListPropertyMap_Nova_init_static(exceptionData);
+nova_datastruct_list_Double_Nova_List1Double_Nova_init_static(exceptionData);
+nova_datastruct_list_Int_Nova_List1Int_Nova_init_static(exceptionData);
+nova_datastruct_list_Byte_Nova_List1Byte_Nova_init_static(exceptionData);
 nova_datastruct_list_Nova_ListNode_Nova_init_static(exceptionData);
 nova_datastruct_list_Nova_ListNodeFunctionMap_Nova_init_static(exceptionData);
 nova_datastruct_list_Nova_ListNodePropertyMap_Nova_init_static(exceptionData);
@@ -8142,6 +12306,346 @@ nova_web_svg_no3_Nova_No3SelectPropertyMap_Nova_init_static(exceptionData);
 nova_web_svg_no3_Nova_No3SelectAll_Nova_init_static(exceptionData);
 nova_web_svg_no3_Nova_No3SelectAllFunctionMap_Nova_init_static(exceptionData);
 nova_web_svg_no3_Nova_No3SelectAllPropertyMap_Nova_init_static(exceptionData);
+spectra_Nova_InvalidParseException_Nova_init_static(exceptionData);
+spectra_Nova_InvalidParseExceptionFunctionMap_Nova_init_static(exceptionData);
+spectra_Nova_InvalidParseExceptionPropertyMap_Nova_init_static(exceptionData);
+spectra_Nova_Spectra_Nova_init_static(exceptionData);
+spectra_Nova_SpectraFunctionMap_Nova_init_static(exceptionData);
+spectra_Nova_SpectraPropertyMap_Nova_init_static(exceptionData);
+spectra_Nova_SyntaxErrorException_Nova_init_static(exceptionData);
+spectra_Nova_SyntaxErrorExceptionFunctionMap_Nova_init_static(exceptionData);
+spectra_Nova_SyntaxErrorExceptionPropertyMap_Nova_init_static(exceptionData);
+spectra_Nova_SyntaxMessage_Nova_init_static(exceptionData);
+spectra_Nova_SyntaxMessageFunctionMap_Nova_init_static(exceptionData);
+spectra_Nova_SyntaxMessagePropertyMap_Nova_init_static(exceptionData);
+spectra_engines_Nova_CodeGeneratorEngine_Nova_init_static(exceptionData);
+spectra_engines_Nova_CodeGeneratorEngineFunctionMap_Nova_init_static(exceptionData);
+spectra_engines_Nova_CodeGeneratorEnginePropertyMap_Nova_init_static(exceptionData);
+spectra_error_Nova_UnimplementedOperationException_Nova_init_static(exceptionData);
+spectra_error_Nova_UnimplementedOperationExceptionFunctionMap_Nova_init_static(exceptionData);
+spectra_error_Nova_UnimplementedOperationExceptionPropertyMap_Nova_init_static(exceptionData);
+spectra_tree_Nova_AnnotationSearchResult_Nova_init_static(exceptionData);
+spectra_tree_Nova_AnnotationSearchResultFunctionMap_Nova_init_static(exceptionData);
+spectra_tree_Nova_AnnotationSearchResultPropertyMap_Nova_init_static(exceptionData);
+spectra_tree_Nova_StatementIterator_Nova_init_static(exceptionData);
+spectra_tree_Nova_StatementIteratorFunctionMap_Nova_init_static(exceptionData);
+spectra_tree_Nova_StatementIteratorPropertyMap_Nova_init_static(exceptionData);
+spectra_tree_Nova_SyntaxTree_Nova_init_static(exceptionData);
+spectra_tree_Nova_SyntaxTreeFunctionMap_Nova_init_static(exceptionData);
+spectra_tree_Nova_SyntaxTreePropertyMap_Nova_init_static(exceptionData);
+spectra_tree_nodes_Nova_Abstractable_Nova_init_static(exceptionData);
+spectra_tree_nodes_Nova_AbstractableFunctionMap_Nova_init_static(exceptionData);
+spectra_tree_nodes_Nova_AbstractablePropertyMap_Nova_init_static(exceptionData);
+spectra_tree_nodes_Nova_Accessible_Nova_init_static(exceptionData);
+spectra_tree_nodes_Nova_AccessibleFunctionMap_Nova_init_static(exceptionData);
+spectra_tree_nodes_Nova_AccessiblePropertyMap_Nova_init_static(exceptionData);
+spectra_tree_nodes_Nova_ArgumentList_Nova_init_static(exceptionData);
+spectra_tree_nodes_Nova_ArgumentListFunctionMap_Nova_init_static(exceptionData);
+spectra_tree_nodes_Nova_ArgumentListPropertyMap_Nova_init_static(exceptionData);
+spectra_tree_nodes_Nova_ArrayType_Nova_init_static(exceptionData);
+spectra_tree_nodes_Nova_ArrayTypeFunctionMap_Nova_init_static(exceptionData);
+spectra_tree_nodes_Nova_ArrayTypePropertyMap_Nova_init_static(exceptionData);
+spectra_tree_nodes_Nova_Cast_Nova_init_static(exceptionData);
+spectra_tree_nodes_Nova_CastFunctionMap_Nova_init_static(exceptionData);
+spectra_tree_nodes_Nova_CastPropertyMap_Nova_init_static(exceptionData);
+spectra_tree_nodes_Nova_ClassDeclaration_Nova_init_static(exceptionData);
+spectra_tree_nodes_Nova_ClassDeclarationFunctionMap_Nova_init_static(exceptionData);
+spectra_tree_nodes_Nova_ClassDeclarationPropertyMap_Nova_init_static(exceptionData);
+spectra_tree_nodes_Nova_Identifier_Nova_init_static(exceptionData);
+spectra_tree_nodes_Nova_IdentifierFunctionMap_Nova_init_static(exceptionData);
+spectra_tree_nodes_Nova_IdentifierPropertyMap_Nova_init_static(exceptionData);
+spectra_tree_nodes_Nova_Import_Nova_init_static(exceptionData);
+spectra_tree_nodes_Nova_ImportFunctionMap_Nova_init_static(exceptionData);
+spectra_tree_nodes_Nova_ImportPropertyMap_Nova_init_static(exceptionData);
+spectra_tree_nodes_Nova_ImportList_Nova_init_static(exceptionData);
+spectra_tree_nodes_Nova_ImportListFunctionMap_Nova_init_static(exceptionData);
+spectra_tree_nodes_Nova_ImportListPropertyMap_Nova_init_static(exceptionData);
+spectra_tree_nodes_Nova_InterfaceDeclaration_Nova_init_static(exceptionData);
+spectra_tree_nodes_Nova_InterfaceDeclarationFunctionMap_Nova_init_static(exceptionData);
+spectra_tree_nodes_Nova_InterfaceDeclarationPropertyMap_Nova_init_static(exceptionData);
+spectra_tree_nodes_Nova_Listener_Nova_init_static(exceptionData);
+spectra_tree_nodes_Nova_ListenerFunctionMap_Nova_init_static(exceptionData);
+spectra_tree_nodes_Nova_ListenerPropertyMap_Nova_init_static(exceptionData);
+spectra_tree_nodes_Nova_Literal_Nova_init_static(exceptionData);
+spectra_tree_nodes_Nova_LiteralFunctionMap_Nova_init_static(exceptionData);
+spectra_tree_nodes_Nova_LiteralPropertyMap_Nova_init_static(exceptionData);
+spectra_tree_nodes_Nova_Node_Nova_init_static(exceptionData);
+spectra_tree_nodes_Nova_NodeFunctionMap_Nova_init_static(exceptionData);
+spectra_tree_nodes_Nova_NodePropertyMap_Nova_init_static(exceptionData);
+spectra_tree_nodes_Nova_NodeList_Nova_init_static(exceptionData);
+spectra_tree_nodes_Nova_NodeListFunctionMap_Nova_init_static(exceptionData);
+spectra_tree_nodes_Nova_NodeListPropertyMap_Nova_init_static(exceptionData);
+spectra_tree_nodes_Nova_NovaFile_Nova_init_static(exceptionData);
+spectra_tree_nodes_Nova_NovaFileFunctionMap_Nova_init_static(exceptionData);
+spectra_tree_nodes_Nova_NovaFilePropertyMap_Nova_init_static(exceptionData);
+spectra_tree_nodes_Nova_NumericRange_Nova_init_static(exceptionData);
+spectra_tree_nodes_Nova_NumericRangeFunctionMap_Nova_init_static(exceptionData);
+spectra_tree_nodes_Nova_NumericRangePropertyMap_Nova_init_static(exceptionData);
+spectra_tree_nodes_Nova_Package_Nova_init_static(exceptionData);
+spectra_tree_nodes_Nova_PackageFunctionMap_Nova_init_static(exceptionData);
+spectra_tree_nodes_Nova_PackagePropertyMap_Nova_init_static(exceptionData);
+spectra_tree_nodes_Nova_PlaceholderValue_Nova_init_static(exceptionData);
+spectra_tree_nodes_Nova_PlaceholderValueFunctionMap_Nova_init_static(exceptionData);
+spectra_tree_nodes_Nova_PlaceholderValuePropertyMap_Nova_init_static(exceptionData);
+spectra_tree_nodes_Nova_Priority_Nova_init_static(exceptionData);
+spectra_tree_nodes_Nova_PriorityFunctionMap_Nova_init_static(exceptionData);
+spectra_tree_nodes_Nova_PriorityPropertyMap_Nova_init_static(exceptionData);
+spectra_tree_nodes_Nova_Program_Nova_init_static(exceptionData);
+spectra_tree_nodes_Nova_ProgramFunctionMap_Nova_init_static(exceptionData);
+spectra_tree_nodes_Nova_ProgramPropertyMap_Nova_init_static(exceptionData);
+spectra_tree_nodes_Nova_Return_Nova_init_static(exceptionData);
+spectra_tree_nodes_Nova_ReturnFunctionMap_Nova_init_static(exceptionData);
+spectra_tree_nodes_Nova_ReturnPropertyMap_Nova_init_static(exceptionData);
+spectra_tree_nodes_Nova_Scope_Nova_init_static(exceptionData);
+spectra_tree_nodes_Nova_ScopeFunctionMap_Nova_init_static(exceptionData);
+spectra_tree_nodes_Nova_ScopePropertyMap_Nova_init_static(exceptionData);
+spectra_tree_nodes_Nova_Skeleton_Nova_init_static(exceptionData);
+spectra_tree_nodes_Nova_SkeletonFunctionMap_Nova_init_static(exceptionData);
+spectra_tree_nodes_Nova_SkeletonPropertyMap_Nova_init_static(exceptionData);
+spectra_tree_nodes_Nova_StaticClassReference_Nova_init_static(exceptionData);
+spectra_tree_nodes_Nova_StaticClassReferenceFunctionMap_Nova_init_static(exceptionData);
+spectra_tree_nodes_Nova_StaticClassReferencePropertyMap_Nova_init_static(exceptionData);
+spectra_tree_nodes_Nova_TraitDeclaration_Nova_init_static(exceptionData);
+spectra_tree_nodes_Nova_TraitDeclarationFunctionMap_Nova_init_static(exceptionData);
+spectra_tree_nodes_Nova_TraitDeclarationPropertyMap_Nova_init_static(exceptionData);
+spectra_tree_nodes_Nova_Type_Nova_init_static(exceptionData);
+spectra_tree_nodes_Nova_TypeFunctionMap_Nova_init_static(exceptionData);
+spectra_tree_nodes_Nova_TypePropertyMap_Nova_init_static(exceptionData);
+spectra_tree_nodes_Nova_ValidationResult_Nova_init_static(exceptionData);
+spectra_tree_nodes_Nova_ValidationResultFunctionMap_Nova_init_static(exceptionData);
+spectra_tree_nodes_Nova_ValidationResultPropertyMap_Nova_init_static(exceptionData);
+spectra_tree_nodes_Nova_Value_Nova_init_static(exceptionData);
+spectra_tree_nodes_Nova_ValueFunctionMap_Nova_init_static(exceptionData);
+spectra_tree_nodes_Nova_ValuePropertyMap_Nova_init_static(exceptionData);
+spectra_tree_nodes_annotations_Nova_AbstractAnnotation_Nova_init_static(exceptionData);
+spectra_tree_nodes_annotations_Nova_AbstractAnnotationFunctionMap_Nova_init_static(exceptionData);
+spectra_tree_nodes_annotations_Nova_AbstractAnnotationPropertyMap_Nova_init_static(exceptionData);
+spectra_tree_nodes_annotations_Nova_Annotatable_Nova_init_static(exceptionData);
+spectra_tree_nodes_annotations_Nova_AnnotatableFunctionMap_Nova_init_static(exceptionData);
+spectra_tree_nodes_annotations_Nova_AnnotatablePropertyMap_Nova_init_static(exceptionData);
+spectra_tree_nodes_annotations_Nova_Annotation_Nova_init_static(exceptionData);
+spectra_tree_nodes_annotations_Nova_AnnotationFunctionMap_Nova_init_static(exceptionData);
+spectra_tree_nodes_annotations_Nova_AnnotationPropertyMap_Nova_init_static(exceptionData);
+spectra_tree_nodes_annotations_Nova_AutoFinalAnnotation_Nova_init_static(exceptionData);
+spectra_tree_nodes_annotations_Nova_AutoFinalAnnotationFunctionMap_Nova_init_static(exceptionData);
+spectra_tree_nodes_annotations_Nova_AutoFinalAnnotationPropertyMap_Nova_init_static(exceptionData);
+spectra_tree_nodes_annotations_Nova_AutoPureAnnotation_Nova_init_static(exceptionData);
+spectra_tree_nodes_annotations_Nova_AutoPureAnnotationFunctionMap_Nova_init_static(exceptionData);
+spectra_tree_nodes_annotations_Nova_AutoPureAnnotationPropertyMap_Nova_init_static(exceptionData);
+spectra_tree_nodes_annotations_Nova_FinalAnnotation_Nova_init_static(exceptionData);
+spectra_tree_nodes_annotations_Nova_FinalAnnotationFunctionMap_Nova_init_static(exceptionData);
+spectra_tree_nodes_annotations_Nova_FinalAnnotationPropertyMap_Nova_init_static(exceptionData);
+spectra_tree_nodes_annotations_Nova_ImmutableAnnotation_Nova_init_static(exceptionData);
+spectra_tree_nodes_annotations_Nova_ImmutableAnnotationFunctionMap_Nova_init_static(exceptionData);
+spectra_tree_nodes_annotations_Nova_ImmutableAnnotationPropertyMap_Nova_init_static(exceptionData);
+spectra_tree_nodes_annotations_Nova_ImpureAnnotation_Nova_init_static(exceptionData);
+spectra_tree_nodes_annotations_Nova_ImpureAnnotationFunctionMap_Nova_init_static(exceptionData);
+spectra_tree_nodes_annotations_Nova_ImpureAnnotationPropertyMap_Nova_init_static(exceptionData);
+spectra_tree_nodes_annotations_Nova_LetAnnotation_Nova_init_static(exceptionData);
+spectra_tree_nodes_annotations_Nova_LetAnnotationFunctionMap_Nova_init_static(exceptionData);
+spectra_tree_nodes_annotations_Nova_LetAnnotationPropertyMap_Nova_init_static(exceptionData);
+spectra_tree_nodes_annotations_Nova_Modifier_Nova_init_static(exceptionData);
+spectra_tree_nodes_annotations_Nova_ModifierFunctionMap_Nova_init_static(exceptionData);
+spectra_tree_nodes_annotations_Nova_ModifierPropertyMap_Nova_init_static(exceptionData);
+spectra_tree_nodes_annotations_Nova_NativeAnnotation_Nova_init_static(exceptionData);
+spectra_tree_nodes_annotations_Nova_NativeAnnotationFunctionMap_Nova_init_static(exceptionData);
+spectra_tree_nodes_annotations_Nova_NativeAnnotationPropertyMap_Nova_init_static(exceptionData);
+spectra_tree_nodes_annotations_Nova_OverrideAnnotation_Nova_init_static(exceptionData);
+spectra_tree_nodes_annotations_Nova_OverrideAnnotationFunctionMap_Nova_init_static(exceptionData);
+spectra_tree_nodes_annotations_Nova_OverrideAnnotationPropertyMap_Nova_init_static(exceptionData);
+spectra_tree_nodes_annotations_Nova_PrivateAnnotation_Nova_init_static(exceptionData);
+spectra_tree_nodes_annotations_Nova_PrivateAnnotationFunctionMap_Nova_init_static(exceptionData);
+spectra_tree_nodes_annotations_Nova_PrivateAnnotationPropertyMap_Nova_init_static(exceptionData);
+spectra_tree_nodes_annotations_Nova_PublicAnnotation_Nova_init_static(exceptionData);
+spectra_tree_nodes_annotations_Nova_PublicAnnotationFunctionMap_Nova_init_static(exceptionData);
+spectra_tree_nodes_annotations_Nova_PublicAnnotationPropertyMap_Nova_init_static(exceptionData);
+spectra_tree_nodes_annotations_Nova_PureAnnotation_Nova_init_static(exceptionData);
+spectra_tree_nodes_annotations_Nova_PureAnnotationFunctionMap_Nova_init_static(exceptionData);
+spectra_tree_nodes_annotations_Nova_PureAnnotationPropertyMap_Nova_init_static(exceptionData);
+spectra_tree_nodes_annotations_Nova_StaticAnnotation_Nova_init_static(exceptionData);
+spectra_tree_nodes_annotations_Nova_StaticAnnotationFunctionMap_Nova_init_static(exceptionData);
+spectra_tree_nodes_annotations_Nova_StaticAnnotationPropertyMap_Nova_init_static(exceptionData);
+spectra_tree_nodes_annotations_Nova_TargetAnnotation_Nova_init_static(exceptionData);
+spectra_tree_nodes_annotations_Nova_TargetAnnotationFunctionMap_Nova_init_static(exceptionData);
+spectra_tree_nodes_annotations_Nova_TargetAnnotationPropertyMap_Nova_init_static(exceptionData);
+spectra_tree_nodes_annotations_Nova_VarAnnotation_Nova_init_static(exceptionData);
+spectra_tree_nodes_annotations_Nova_VarAnnotationFunctionMap_Nova_init_static(exceptionData);
+spectra_tree_nodes_annotations_Nova_VarAnnotationPropertyMap_Nova_init_static(exceptionData);
+spectra_tree_nodes_annotations_Nova_VisibilityModifier_Nova_init_static(exceptionData);
+spectra_tree_nodes_annotations_Nova_VisibilityModifierFunctionMap_Nova_init_static(exceptionData);
+spectra_tree_nodes_annotations_Nova_VisibilityModifierPropertyMap_Nova_init_static(exceptionData);
+spectra_tree_nodes_annotations_Nova_VisibleAnnotation_Nova_init_static(exceptionData);
+spectra_tree_nodes_annotations_Nova_VisibleAnnotationFunctionMap_Nova_init_static(exceptionData);
+spectra_tree_nodes_annotations_Nova_VisibleAnnotationPropertyMap_Nova_init_static(exceptionData);
+spectra_tree_nodes_arrays_Nova_ArrayAccess_Nova_init_static(exceptionData);
+spectra_tree_nodes_arrays_Nova_ArrayAccessFunctionMap_Nova_init_static(exceptionData);
+spectra_tree_nodes_arrays_Nova_ArrayAccessPropertyMap_Nova_init_static(exceptionData);
+spectra_tree_nodes_controlstructures_Nova_ControlStructure_Nova_init_static(exceptionData);
+spectra_tree_nodes_controlstructures_Nova_ControlStructureFunctionMap_Nova_init_static(exceptionData);
+spectra_tree_nodes_controlstructures_Nova_ControlStructurePropertyMap_Nova_init_static(exceptionData);
+spectra_tree_nodes_controlstructures_Nova_ElseStatement_Nova_init_static(exceptionData);
+spectra_tree_nodes_controlstructures_Nova_ElseStatementFunctionMap_Nova_init_static(exceptionData);
+spectra_tree_nodes_controlstructures_Nova_ElseStatementPropertyMap_Nova_init_static(exceptionData);
+spectra_tree_nodes_controlstructures_Nova_IfStatement_Nova_init_static(exceptionData);
+spectra_tree_nodes_controlstructures_Nova_IfStatementFunctionMap_Nova_init_static(exceptionData);
+spectra_tree_nodes_controlstructures_Nova_IfStatementPropertyMap_Nova_init_static(exceptionData);
+spectra_tree_nodes_controlstructures_loops_Nova_ForEachLoop_Nova_init_static(exceptionData);
+spectra_tree_nodes_controlstructures_loops_Nova_ForEachLoopFunctionMap_Nova_init_static(exceptionData);
+spectra_tree_nodes_controlstructures_loops_Nova_ForEachLoopPropertyMap_Nova_init_static(exceptionData);
+spectra_tree_nodes_controlstructures_loops_Nova_Loop_Nova_init_static(exceptionData);
+spectra_tree_nodes_controlstructures_loops_Nova_LoopFunctionMap_Nova_init_static(exceptionData);
+spectra_tree_nodes_controlstructures_loops_Nova_LoopPropertyMap_Nova_init_static(exceptionData);
+spectra_tree_nodes_controlstructures_loops_Nova_WhileLoop_Nova_init_static(exceptionData);
+spectra_tree_nodes_controlstructures_loops_Nova_WhileLoopFunctionMap_Nova_init_static(exceptionData);
+spectra_tree_nodes_controlstructures_loops_Nova_WhileLoopPropertyMap_Nova_init_static(exceptionData);
+spectra_tree_nodes_exceptionhandling_Nova_Catch_Nova_init_static(exceptionData);
+spectra_tree_nodes_exceptionhandling_Nova_CatchFunctionMap_Nova_init_static(exceptionData);
+spectra_tree_nodes_exceptionhandling_Nova_CatchPropertyMap_Nova_init_static(exceptionData);
+spectra_tree_nodes_exceptionhandling_Nova_ExceptionHandler_Nova_init_static(exceptionData);
+spectra_tree_nodes_exceptionhandling_Nova_ExceptionHandlerFunctionMap_Nova_init_static(exceptionData);
+spectra_tree_nodes_exceptionhandling_Nova_ExceptionHandlerPropertyMap_Nova_init_static(exceptionData);
+spectra_tree_nodes_exceptionhandling_Nova_Throw_Nova_init_static(exceptionData);
+spectra_tree_nodes_exceptionhandling_Nova_ThrowFunctionMap_Nova_init_static(exceptionData);
+spectra_tree_nodes_exceptionhandling_Nova_ThrowPropertyMap_Nova_init_static(exceptionData);
+spectra_tree_nodes_exceptionhandling_Nova_Try_Nova_init_static(exceptionData);
+spectra_tree_nodes_exceptionhandling_Nova_TryFunctionMap_Nova_init_static(exceptionData);
+spectra_tree_nodes_exceptionhandling_Nova_TryPropertyMap_Nova_init_static(exceptionData);
+spectra_tree_nodes_functions_Nova_AccessorFunction_Nova_init_static(exceptionData);
+spectra_tree_nodes_functions_Nova_AccessorFunctionFunctionMap_Nova_init_static(exceptionData);
+spectra_tree_nodes_functions_Nova_AccessorFunctionPropertyMap_Nova_init_static(exceptionData);
+spectra_tree_nodes_functions_Nova_ArrayInstantiation_Nova_init_static(exceptionData);
+spectra_tree_nodes_functions_Nova_ArrayInstantiationFunctionMap_Nova_init_static(exceptionData);
+spectra_tree_nodes_functions_Nova_ArrayInstantiationPropertyMap_Nova_init_static(exceptionData);
+spectra_tree_nodes_functions_Nova_BodyFunction_Nova_init_static(exceptionData);
+spectra_tree_nodes_functions_Nova_BodyFunctionFunctionMap_Nova_init_static(exceptionData);
+spectra_tree_nodes_functions_Nova_BodyFunctionPropertyMap_Nova_init_static(exceptionData);
+spectra_tree_nodes_functions_Nova_CallableFunction_Nova_init_static(exceptionData);
+spectra_tree_nodes_functions_Nova_CallableFunctionFunctionMap_Nova_init_static(exceptionData);
+spectra_tree_nodes_functions_Nova_CallableFunctionPropertyMap_Nova_init_static(exceptionData);
+spectra_tree_nodes_functions_Nova_Constructor_Nova_init_static(exceptionData);
+spectra_tree_nodes_functions_Nova_ConstructorFunctionMap_Nova_init_static(exceptionData);
+spectra_tree_nodes_functions_Nova_ConstructorPropertyMap_Nova_init_static(exceptionData);
+spectra_tree_nodes_functions_Nova_EmptyArrayBracket_Nova_init_static(exceptionData);
+spectra_tree_nodes_functions_Nova_EmptyArrayBracketFunctionMap_Nova_init_static(exceptionData);
+spectra_tree_nodes_functions_Nova_EmptyArrayBracketPropertyMap_Nova_init_static(exceptionData);
+spectra_tree_nodes_functions_Nova_FunctionArgumentList_Nova_init_static(exceptionData);
+spectra_tree_nodes_functions_Nova_FunctionArgumentListFunctionMap_Nova_init_static(exceptionData);
+spectra_tree_nodes_functions_Nova_FunctionArgumentListPropertyMap_Nova_init_static(exceptionData);
+spectra_tree_nodes_functions_Nova_FunctionCall_Nova_init_static(exceptionData);
+spectra_tree_nodes_functions_Nova_FunctionCallFunctionMap_Nova_init_static(exceptionData);
+spectra_tree_nodes_functions_Nova_FunctionCallPropertyMap_Nova_init_static(exceptionData);
+spectra_tree_nodes_functions_Nova_FunctionDeclaration_Nova_init_static(exceptionData);
+spectra_tree_nodes_functions_Nova_FunctionDeclarationFunctionMap_Nova_init_static(exceptionData);
+spectra_tree_nodes_functions_Nova_FunctionDeclarationPropertyMap_Nova_init_static(exceptionData);
+spectra_tree_nodes_functions_Nova_InitializationFunction_Nova_init_static(exceptionData);
+spectra_tree_nodes_functions_Nova_InitializationFunctionFunctionMap_Nova_init_static(exceptionData);
+spectra_tree_nodes_functions_Nova_InitializationFunctionPropertyMap_Nova_init_static(exceptionData);
+spectra_tree_nodes_functions_Nova_Instantiation_Nova_init_static(exceptionData);
+spectra_tree_nodes_functions_Nova_InstantiationFunctionMap_Nova_init_static(exceptionData);
+spectra_tree_nodes_functions_Nova_InstantiationPropertyMap_Nova_init_static(exceptionData);
+spectra_tree_nodes_functions_Nova_MutatorFunction_Nova_init_static(exceptionData);
+spectra_tree_nodes_functions_Nova_MutatorFunctionFunctionMap_Nova_init_static(exceptionData);
+spectra_tree_nodes_functions_Nova_MutatorFunctionPropertyMap_Nova_init_static(exceptionData);
+spectra_tree_nodes_functions_Nova_ObjectNotation_Nova_init_static(exceptionData);
+spectra_tree_nodes_functions_Nova_ObjectNotationFunctionMap_Nova_init_static(exceptionData);
+spectra_tree_nodes_functions_Nova_ObjectNotationPropertyMap_Nova_init_static(exceptionData);
+spectra_tree_nodes_functions_Nova_ObjectNotationProperty_Nova_init_static(exceptionData);
+spectra_tree_nodes_functions_Nova_ObjectNotationPropertyFunctionMap_Nova_init_static(exceptionData);
+spectra_tree_nodes_functions_Nova_ObjectNotationPropertyPropertyMap_Nova_init_static(exceptionData);
+spectra_tree_nodes_functions_Nova_Parameter_Nova_init_static(exceptionData);
+spectra_tree_nodes_functions_Nova_ParameterFunctionMap_Nova_init_static(exceptionData);
+spectra_tree_nodes_functions_Nova_ParameterPropertyMap_Nova_init_static(exceptionData);
+spectra_tree_nodes_functions_Nova_ParameterList_Nova_init_static(exceptionData);
+spectra_tree_nodes_functions_Nova_ParameterListFunctionMap_Nova_init_static(exceptionData);
+spectra_tree_nodes_functions_Nova_ParameterListPropertyMap_Nova_init_static(exceptionData);
+spectra_tree_nodes_functions_Nova_PropertyFunction_Nova_init_static(exceptionData);
+spectra_tree_nodes_functions_Nova_PropertyFunctionFunctionMap_Nova_init_static(exceptionData);
+spectra_tree_nodes_functions_Nova_PropertyFunctionPropertyMap_Nova_init_static(exceptionData);
+spectra_tree_nodes_functions_closures_Nova_ClosureContext_Nova_init_static(exceptionData);
+spectra_tree_nodes_functions_closures_Nova_ClosureContextFunctionMap_Nova_init_static(exceptionData);
+spectra_tree_nodes_functions_closures_Nova_ClosureContextPropertyMap_Nova_init_static(exceptionData);
+spectra_tree_nodes_functions_closures_Nova_ClosureDeclaration_Nova_init_static(exceptionData);
+spectra_tree_nodes_functions_closures_Nova_ClosureDeclarationFunctionMap_Nova_init_static(exceptionData);
+spectra_tree_nodes_functions_closures_Nova_ClosureDeclarationPropertyMap_Nova_init_static(exceptionData);
+spectra_tree_nodes_functions_closures_Nova_ClosureParameter_Nova_init_static(exceptionData);
+spectra_tree_nodes_functions_closures_Nova_ClosureParameterFunctionMap_Nova_init_static(exceptionData);
+spectra_tree_nodes_functions_closures_Nova_ClosureParameterPropertyMap_Nova_init_static(exceptionData);
+spectra_tree_nodes_functions_closures_Nova_LambdaExpression_Nova_init_static(exceptionData);
+spectra_tree_nodes_functions_closures_Nova_LambdaExpressionFunctionMap_Nova_init_static(exceptionData);
+spectra_tree_nodes_functions_closures_Nova_LambdaExpressionPropertyMap_Nova_init_static(exceptionData);
+spectra_tree_nodes_functions_closures_Nova_LambdaParameter_Nova_init_static(exceptionData);
+spectra_tree_nodes_functions_closures_Nova_LambdaParameterFunctionMap_Nova_init_static(exceptionData);
+spectra_tree_nodes_functions_closures_Nova_LambdaParameterPropertyMap_Nova_init_static(exceptionData);
+spectra_tree_nodes_generics_Nova_GenericArgument_Nova_init_static(exceptionData);
+spectra_tree_nodes_generics_Nova_GenericArgumentFunctionMap_Nova_init_static(exceptionData);
+spectra_tree_nodes_generics_Nova_GenericArgumentPropertyMap_Nova_init_static(exceptionData);
+spectra_tree_nodes_generics_Nova_GenericCompatible_Nova_init_static(exceptionData);
+spectra_tree_nodes_generics_Nova_GenericCompatibleFunctionMap_Nova_init_static(exceptionData);
+spectra_tree_nodes_generics_Nova_GenericCompatiblePropertyMap_Nova_init_static(exceptionData);
+spectra_tree_nodes_generics_Nova_GenericParameter_Nova_init_static(exceptionData);
+spectra_tree_nodes_generics_Nova_GenericParameterFunctionMap_Nova_init_static(exceptionData);
+spectra_tree_nodes_generics_Nova_GenericParameterPropertyMap_Nova_init_static(exceptionData);
+spectra_tree_nodes_generics_Nova_GenericType_Nova_init_static(exceptionData);
+spectra_tree_nodes_generics_Nova_GenericTypeFunctionMap_Nova_init_static(exceptionData);
+spectra_tree_nodes_generics_Nova_GenericTypePropertyMap_Nova_init_static(exceptionData);
+spectra_tree_nodes_operations_Nova_Assignable_Nova_init_static(exceptionData);
+spectra_tree_nodes_operations_Nova_AssignableFunctionMap_Nova_init_static(exceptionData);
+spectra_tree_nodes_operations_Nova_AssignablePropertyMap_Nova_init_static(exceptionData);
+spectra_tree_nodes_operations_Nova_Assignment_Nova_init_static(exceptionData);
+spectra_tree_nodes_operations_Nova_AssignmentFunctionMap_Nova_init_static(exceptionData);
+spectra_tree_nodes_operations_Nova_AssignmentPropertyMap_Nova_init_static(exceptionData);
+spectra_tree_nodes_operations_Nova_ElvisOperation_Nova_init_static(exceptionData);
+spectra_tree_nodes_operations_Nova_ElvisOperationFunctionMap_Nova_init_static(exceptionData);
+spectra_tree_nodes_operations_Nova_ElvisOperationPropertyMap_Nova_init_static(exceptionData);
+spectra_tree_nodes_operations_Nova_Operation_Nova_init_static(exceptionData);
+spectra_tree_nodes_operations_Nova_OperationFunctionMap_Nova_init_static(exceptionData);
+spectra_tree_nodes_operations_Nova_OperationPropertyMap_Nova_init_static(exceptionData);
+spectra_tree_nodes_operations_Nova_Operator_Nova_init_static(exceptionData);
+spectra_tree_nodes_operations_Nova_OperatorFunctionMap_Nova_init_static(exceptionData);
+spectra_tree_nodes_operations_Nova_OperatorPropertyMap_Nova_init_static(exceptionData);
+spectra_tree_nodes_operations_Nova_TernaryOperation_Nova_init_static(exceptionData);
+spectra_tree_nodes_operations_Nova_TernaryOperationFunctionMap_Nova_init_static(exceptionData);
+spectra_tree_nodes_operations_Nova_TernaryOperationPropertyMap_Nova_init_static(exceptionData);
+spectra_tree_nodes_operations_Nova_UnaryOperation_Nova_init_static(exceptionData);
+spectra_tree_nodes_operations_Nova_UnaryOperationFunctionMap_Nova_init_static(exceptionData);
+spectra_tree_nodes_operations_Nova_UnaryOperationPropertyMap_Nova_init_static(exceptionData);
+spectra_tree_nodes_variables_Nova_ArrayBracketOverload_Nova_init_static(exceptionData);
+spectra_tree_nodes_variables_Nova_ArrayBracketOverloadFunctionMap_Nova_init_static(exceptionData);
+spectra_tree_nodes_variables_Nova_ArrayBracketOverloadPropertyMap_Nova_init_static(exceptionData);
+spectra_tree_nodes_variables_Nova_FieldDeclaration_Nova_init_static(exceptionData);
+spectra_tree_nodes_variables_Nova_FieldDeclarationFunctionMap_Nova_init_static(exceptionData);
+spectra_tree_nodes_variables_Nova_FieldDeclarationPropertyMap_Nova_init_static(exceptionData);
+spectra_tree_nodes_variables_Nova_ImplicitDeclaration_Nova_init_static(exceptionData);
+spectra_tree_nodes_variables_Nova_ImplicitDeclarationFunctionMap_Nova_init_static(exceptionData);
+spectra_tree_nodes_variables_Nova_ImplicitDeclarationPropertyMap_Nova_init_static(exceptionData);
+spectra_tree_nodes_variables_Nova_InstanceDeclaration_Nova_init_static(exceptionData);
+spectra_tree_nodes_variables_Nova_InstanceDeclarationFunctionMap_Nova_init_static(exceptionData);
+spectra_tree_nodes_variables_Nova_InstanceDeclarationPropertyMap_Nova_init_static(exceptionData);
+spectra_tree_nodes_variables_Nova_LocalDeclaration_Nova_init_static(exceptionData);
+spectra_tree_nodes_variables_Nova_LocalDeclarationFunctionMap_Nova_init_static(exceptionData);
+spectra_tree_nodes_variables_Nova_LocalDeclarationPropertyMap_Nova_init_static(exceptionData);
+spectra_tree_nodes_variables_Nova_Variable_Nova_init_static(exceptionData);
+spectra_tree_nodes_variables_Nova_VariableFunctionMap_Nova_init_static(exceptionData);
+spectra_tree_nodes_variables_Nova_VariablePropertyMap_Nova_init_static(exceptionData);
+spectra_tree_nodes_variables_Nova_VariableDeclaration_Nova_init_static(exceptionData);
+spectra_tree_nodes_variables_Nova_VariableDeclarationFunctionMap_Nova_init_static(exceptionData);
+spectra_tree_nodes_variables_Nova_VariableDeclarationPropertyMap_Nova_init_static(exceptionData);
+spectra_util_Nova_Bounds_Nova_init_static(exceptionData);
+spectra_util_Nova_BoundsFunctionMap_Nova_init_static(exceptionData);
+spectra_util_Nova_BoundsPropertyMap_Nova_init_static(exceptionData);
+spectra_util_Nova_CompilerStringFunctions_Nova_init_static(exceptionData);
+spectra_util_Nova_FileUtils_Nova_init_static(exceptionData);
+spectra_util_Nova_FileUtilsFunctionMap_Nova_init_static(exceptionData);
+spectra_util_Nova_FileUtilsPropertyMap_Nova_init_static(exceptionData);
+spectra_util_Nova_Location_Nova_init_static(exceptionData);
+spectra_util_Nova_LocationFunctionMap_Nova_init_static(exceptionData);
+spectra_util_Nova_LocationPropertyMap_Nova_init_static(exceptionData);
+spectra_util_Nova_OS_Nova_init_static(exceptionData);
+spectra_util_Nova_OSFunctionMap_Nova_init_static(exceptionData);
+spectra_util_Nova_OSPropertyMap_Nova_init_static(exceptionData);
+spectra_util_Nova_SyntaxUtils_Nova_init_static(exceptionData);
+spectra_util_Nova_SyntaxUtilsFunctionMap_Nova_init_static(exceptionData);
+spectra_util_Nova_SyntaxUtilsPropertyMap_Nova_init_static(exceptionData);
 example_Nova_Animal_Nova_init_static(exceptionData);
 example_Nova_AnimalFunctionMap_Nova_init_static(exceptionData);
 example_Nova_AnimalPropertyMap_Nova_init_static(exceptionData);
