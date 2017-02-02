@@ -367,6 +367,21 @@ extern nova_datastruct_list_Nova_IterableFunctionMap_VTable nova_datastruct_list
 typedef struct nova_datastruct_list_Nova_IterablePropertyMap_VTable nova_datastruct_list_Nova_IterablePropertyMap_VTable;
 extern nova_datastruct_list_Nova_IterablePropertyMap_VTable nova_datastruct_list_Nova_IterablePropertyMap_VTable_val;
 
+typedef struct nova_datastruct_list_Double_Nova_Iterable1Double_VTable nova_datastruct_list_Double_Nova_Iterable1Double_VTable;
+extern nova_datastruct_list_Double_Nova_Iterable1Double_VTable nova_datastruct_list_Double_Nova_Iterable1Double_VTable_val;
+
+typedef struct nova_datastruct_list_Char_Nova_Iterable1Char_VTable nova_datastruct_list_Char_Nova_Iterable1Char_VTable;
+extern nova_datastruct_list_Char_Nova_Iterable1Char_VTable nova_datastruct_list_Char_Nova_Iterable1Char_VTable_val;
+
+typedef struct nova_datastruct_list_Int_Nova_Iterable1Int_VTable nova_datastruct_list_Int_Nova_Iterable1Int_VTable;
+extern nova_datastruct_list_Int_Nova_Iterable1Int_VTable nova_datastruct_list_Int_Nova_Iterable1Int_VTable_val;
+
+typedef struct nova_datastruct_list_Byte_Nova_Iterable1Byte_VTable nova_datastruct_list_Byte_Nova_Iterable1Byte_VTable;
+extern nova_datastruct_list_Byte_Nova_Iterable1Byte_VTable nova_datastruct_list_Byte_Nova_Iterable1Byte_VTable_val;
+
+typedef struct nova_datastruct_list_Long_Nova_Iterable1Long_VTable nova_datastruct_list_Long_Nova_Iterable1Long_VTable;
+extern nova_datastruct_list_Long_Nova_Iterable1Long_VTable nova_datastruct_list_Long_Nova_Iterable1Long_VTable_val;
+
 typedef struct nova_datastruct_list_Nova_Iterator_VTable nova_datastruct_list_Nova_Iterator_VTable;
 extern nova_datastruct_list_Nova_Iterator_VTable nova_datastruct_list_Nova_Iterator_VTable_val;
 
@@ -379,11 +394,17 @@ extern nova_datastruct_list_Nova_IteratorPropertyMap_VTable nova_datastruct_list
 typedef struct nova_datastruct_list_Double_Nova_Iterator1Double_VTable nova_datastruct_list_Double_Nova_Iterator1Double_VTable;
 extern nova_datastruct_list_Double_Nova_Iterator1Double_VTable nova_datastruct_list_Double_Nova_Iterator1Double_VTable_val;
 
+typedef struct nova_datastruct_list_Char_Nova_Iterator1Char_VTable nova_datastruct_list_Char_Nova_Iterator1Char_VTable;
+extern nova_datastruct_list_Char_Nova_Iterator1Char_VTable nova_datastruct_list_Char_Nova_Iterator1Char_VTable_val;
+
 typedef struct nova_datastruct_list_Int_Nova_Iterator1Int_VTable nova_datastruct_list_Int_Nova_Iterator1Int_VTable;
 extern nova_datastruct_list_Int_Nova_Iterator1Int_VTable nova_datastruct_list_Int_Nova_Iterator1Int_VTable_val;
 
 typedef struct nova_datastruct_list_Byte_Nova_Iterator1Byte_VTable nova_datastruct_list_Byte_Nova_Iterator1Byte_VTable;
 extern nova_datastruct_list_Byte_Nova_Iterator1Byte_VTable nova_datastruct_list_Byte_Nova_Iterator1Byte_VTable_val;
+
+typedef struct nova_datastruct_list_Long_Nova_Iterator1Long_VTable nova_datastruct_list_Long_Nova_Iterator1Long_VTable;
+extern nova_datastruct_list_Long_Nova_Iterator1Long_VTable nova_datastruct_list_Long_Nova_Iterator1Long_VTable_val;
 
 typedef struct nova_datastruct_list_Nova_LinkedList_VTable nova_datastruct_list_Nova_LinkedList_VTable;
 extern nova_datastruct_list_Nova_LinkedList_VTable nova_datastruct_list_Nova_LinkedList_VTable_val;
@@ -415,11 +436,17 @@ extern nova_datastruct_list_Nova_ListPropertyMap_VTable nova_datastruct_list_Nov
 typedef struct nova_datastruct_list_Double_Nova_List1Double_VTable nova_datastruct_list_Double_Nova_List1Double_VTable;
 extern nova_datastruct_list_Double_Nova_List1Double_VTable nova_datastruct_list_Double_Nova_List1Double_VTable_val;
 
+typedef struct nova_datastruct_list_Char_Nova_List1Char_VTable nova_datastruct_list_Char_Nova_List1Char_VTable;
+extern nova_datastruct_list_Char_Nova_List1Char_VTable nova_datastruct_list_Char_Nova_List1Char_VTable_val;
+
 typedef struct nova_datastruct_list_Int_Nova_List1Int_VTable nova_datastruct_list_Int_Nova_List1Int_VTable;
 extern nova_datastruct_list_Int_Nova_List1Int_VTable nova_datastruct_list_Int_Nova_List1Int_VTable_val;
 
 typedef struct nova_datastruct_list_Byte_Nova_List1Byte_VTable nova_datastruct_list_Byte_Nova_List1Byte_VTable;
 extern nova_datastruct_list_Byte_Nova_List1Byte_VTable nova_datastruct_list_Byte_Nova_List1Byte_VTable_val;
+
+typedef struct nova_datastruct_list_Long_Nova_List1Long_VTable nova_datastruct_list_Long_Nova_List1Long_VTable;
+extern nova_datastruct_list_Long_Nova_List1Long_VTable nova_datastruct_list_Long_Nova_List1Long_VTable_val;
 
 typedef struct nova_datastruct_list_Nova_ListNode_VTable nova_datastruct_list_Nova_ListNode_VTable;
 extern nova_datastruct_list_Nova_ListNode_VTable nova_datastruct_list_Nova_ListNode_VTable_val;
@@ -447,6 +474,21 @@ extern nova_datastruct_list_Nova_OrderedListFunctionMap_VTable nova_datastruct_l
 
 typedef struct nova_datastruct_list_Nova_OrderedListPropertyMap_VTable nova_datastruct_list_Nova_OrderedListPropertyMap_VTable;
 extern nova_datastruct_list_Nova_OrderedListPropertyMap_VTable nova_datastruct_list_Nova_OrderedListPropertyMap_VTable_val;
+
+typedef struct nova_datastruct_list_Double_Nova_OrderedList1Double_VTable nova_datastruct_list_Double_Nova_OrderedList1Double_VTable;
+extern nova_datastruct_list_Double_Nova_OrderedList1Double_VTable nova_datastruct_list_Double_Nova_OrderedList1Double_VTable_val;
+
+typedef struct nova_datastruct_list_Char_Nova_OrderedList1Char_VTable nova_datastruct_list_Char_Nova_OrderedList1Char_VTable;
+extern nova_datastruct_list_Char_Nova_OrderedList1Char_VTable nova_datastruct_list_Char_Nova_OrderedList1Char_VTable_val;
+
+typedef struct nova_datastruct_list_Int_Nova_OrderedList1Int_VTable nova_datastruct_list_Int_Nova_OrderedList1Int_VTable;
+extern nova_datastruct_list_Int_Nova_OrderedList1Int_VTable nova_datastruct_list_Int_Nova_OrderedList1Int_VTable_val;
+
+typedef struct nova_datastruct_list_Byte_Nova_OrderedList1Byte_VTable nova_datastruct_list_Byte_Nova_OrderedList1Byte_VTable;
+extern nova_datastruct_list_Byte_Nova_OrderedList1Byte_VTable nova_datastruct_list_Byte_Nova_OrderedList1Byte_VTable_val;
+
+typedef struct nova_datastruct_list_Long_Nova_OrderedList1Long_VTable nova_datastruct_list_Long_Nova_OrderedList1Long_VTable;
+extern nova_datastruct_list_Long_Nova_OrderedList1Long_VTable nova_datastruct_list_Long_Nova_OrderedList1Long_VTable_val;
 
 typedef struct nova_datastruct_list_Nova_Queue_VTable nova_datastruct_list_Nova_Queue_VTable;
 extern nova_datastruct_list_Nova_Queue_VTable nova_datastruct_list_Nova_Queue_VTable_val;
@@ -3727,6 +3769,9 @@ struct nova_datastruct_list_Double_Nova_Array1Double_VTable
 {
 nova_meta_Nova_Class* classInstance;
 nova_Interface_VTable itable;
+nova_Nova_Object* (*nova_Nova_Object_virtual_static_Nova_default)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
+nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_datastruct_list_Double_Nova_Array1Double*, nova_exception_Nova_ExceptionData*);
+long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 };
 
 
@@ -3734,6 +3779,9 @@ struct nova_datastruct_list_Char_Nova_Array1Char_VTable
 {
 nova_meta_Nova_Class* classInstance;
 nova_Interface_VTable itable;
+nova_Nova_Object* (*nova_Nova_Object_virtual_static_Nova_default)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
+nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_datastruct_list_Char_Nova_Array1Char*, nova_exception_Nova_ExceptionData*);
+long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 };
 
 
@@ -3741,6 +3789,9 @@ struct nova_datastruct_list_Int_Nova_Array1Int_VTable
 {
 nova_meta_Nova_Class* classInstance;
 nova_Interface_VTable itable;
+nova_Nova_Object* (*nova_Nova_Object_virtual_static_Nova_default)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
+nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_datastruct_list_Int_Nova_Array1Int*, nova_exception_Nova_ExceptionData*);
+long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 };
 
 
@@ -3748,6 +3799,9 @@ struct nova_datastruct_list_Byte_Nova_Array1Byte_VTable
 {
 nova_meta_Nova_Class* classInstance;
 nova_Interface_VTable itable;
+nova_Nova_Object* (*nova_Nova_Object_virtual_static_Nova_default)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
+nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_datastruct_list_Byte_Nova_Array1Byte*, nova_exception_Nova_ExceptionData*);
+long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 };
 
 
@@ -3755,6 +3809,9 @@ struct nova_datastruct_list_Long_Nova_Array1Long_VTable
 {
 nova_meta_Nova_Class* classInstance;
 nova_Interface_VTable itable;
+nova_Nova_Object* (*nova_Nova_Object_virtual_static_Nova_default)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
+nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_datastruct_list_Long_Nova_Array1Long*, nova_exception_Nova_ExceptionData*);
+long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 };
 
 
@@ -3792,6 +3849,9 @@ struct nova_datastruct_list_Double_Nova_ArrayIterator1Double_VTable
 {
 nova_meta_Nova_Class* classInstance;
 nova_Interface_VTable itable;
+nova_Nova_Object* (*nova_Nova_Object_virtual_static_Nova_default)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
+nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
+long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 };
 
 
@@ -3799,6 +3859,9 @@ struct nova_datastruct_list_Char_Nova_ArrayIterator1Char_VTable
 {
 nova_meta_Nova_Class* classInstance;
 nova_Interface_VTable itable;
+nova_Nova_Object* (*nova_Nova_Object_virtual_static_Nova_default)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
+nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
+long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 };
 
 
@@ -3806,6 +3869,9 @@ struct nova_datastruct_list_Int_Nova_ArrayIterator1Int_VTable
 {
 nova_meta_Nova_Class* classInstance;
 nova_Interface_VTable itable;
+nova_Nova_Object* (*nova_Nova_Object_virtual_static_Nova_default)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
+nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
+long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 };
 
 
@@ -3813,6 +3879,9 @@ struct nova_datastruct_list_Byte_Nova_ArrayIterator1Byte_VTable
 {
 nova_meta_Nova_Class* classInstance;
 nova_Interface_VTable itable;
+nova_Nova_Object* (*nova_Nova_Object_virtual_static_Nova_default)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
+nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
+long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 };
 
 
@@ -3820,6 +3889,9 @@ struct nova_datastruct_list_Long_Nova_ArrayIterator1Long_VTable
 {
 nova_meta_Nova_Class* classInstance;
 nova_Interface_VTable itable;
+nova_Nova_Object* (*nova_Nova_Object_virtual_static_Nova_default)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
+nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
+long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 };
 
 
@@ -4274,6 +4346,41 @@ long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Objec
 };
 
 
+struct nova_datastruct_list_Double_Nova_Iterable1Double_VTable
+{
+nova_meta_Nova_Class* classInstance;
+nova_Interface_VTable itable;
+};
+
+
+struct nova_datastruct_list_Char_Nova_Iterable1Char_VTable
+{
+nova_meta_Nova_Class* classInstance;
+nova_Interface_VTable itable;
+};
+
+
+struct nova_datastruct_list_Int_Nova_Iterable1Int_VTable
+{
+nova_meta_Nova_Class* classInstance;
+nova_Interface_VTable itable;
+};
+
+
+struct nova_datastruct_list_Byte_Nova_Iterable1Byte_VTable
+{
+nova_meta_Nova_Class* classInstance;
+nova_Interface_VTable itable;
+};
+
+
+struct nova_datastruct_list_Long_Nova_Iterable1Long_VTable
+{
+nova_meta_Nova_Class* classInstance;
+nova_Interface_VTable itable;
+};
+
+
 struct nova_datastruct_list_Nova_Iterator_VTable
 {
 nova_meta_Nova_Class* classInstance;
@@ -4308,6 +4415,13 @@ nova_Interface_VTable itable;
 };
 
 
+struct nova_datastruct_list_Char_Nova_Iterator1Char_VTable
+{
+nova_meta_Nova_Class* classInstance;
+nova_Interface_VTable itable;
+};
+
+
 struct nova_datastruct_list_Int_Nova_Iterator1Int_VTable
 {
 nova_meta_Nova_Class* classInstance;
@@ -4316,6 +4430,13 @@ nova_Interface_VTable itable;
 
 
 struct nova_datastruct_list_Byte_Nova_Iterator1Byte_VTable
+{
+nova_meta_Nova_Class* classInstance;
+nova_Interface_VTable itable;
+};
+
+
+struct nova_datastruct_list_Long_Nova_Iterator1Long_VTable
 {
 nova_meta_Nova_Class* classInstance;
 nova_Interface_VTable itable;
@@ -4414,6 +4535,15 @@ struct nova_datastruct_list_Double_Nova_List1Double_VTable
 {
 nova_meta_Nova_Class* classInstance;
 nova_Interface_VTable itable;
+nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_datastruct_list_Double_Nova_List1Double*, nova_exception_Nova_ExceptionData*);
+};
+
+
+struct nova_datastruct_list_Char_Nova_List1Char_VTable
+{
+nova_meta_Nova_Class* classInstance;
+nova_Interface_VTable itable;
+nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_datastruct_list_Char_Nova_List1Char*, nova_exception_Nova_ExceptionData*);
 };
 
 
@@ -4421,6 +4551,7 @@ struct nova_datastruct_list_Int_Nova_List1Int_VTable
 {
 nova_meta_Nova_Class* classInstance;
 nova_Interface_VTable itable;
+nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_datastruct_list_Int_Nova_List1Int*, nova_exception_Nova_ExceptionData*);
 };
 
 
@@ -4428,6 +4559,15 @@ struct nova_datastruct_list_Byte_Nova_List1Byte_VTable
 {
 nova_meta_Nova_Class* classInstance;
 nova_Interface_VTable itable;
+nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_datastruct_list_Byte_Nova_List1Byte*, nova_exception_Nova_ExceptionData*);
+};
+
+
+struct nova_datastruct_list_Long_Nova_List1Long_VTable
+{
+nova_meta_Nova_Class* classInstance;
+nova_Interface_VTable itable;
+nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_datastruct_list_Long_Nova_List1Long*, nova_exception_Nova_ExceptionData*);
 };
 
 
@@ -4516,6 +4656,41 @@ nova_Interface_VTable itable;
 nova_Nova_Object* (*nova_Nova_Object_virtual_static_Nova_default)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
 long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*, nova_exception_Nova_ExceptionData*);
+};
+
+
+struct nova_datastruct_list_Double_Nova_OrderedList1Double_VTable
+{
+nova_meta_Nova_Class* classInstance;
+nova_Interface_VTable itable;
+};
+
+
+struct nova_datastruct_list_Char_Nova_OrderedList1Char_VTable
+{
+nova_meta_Nova_Class* classInstance;
+nova_Interface_VTable itable;
+};
+
+
+struct nova_datastruct_list_Int_Nova_OrderedList1Int_VTable
+{
+nova_meta_Nova_Class* classInstance;
+nova_Interface_VTable itable;
+};
+
+
+struct nova_datastruct_list_Byte_Nova_OrderedList1Byte_VTable
+{
+nova_meta_Nova_Class* classInstance;
+nova_Interface_VTable itable;
+};
+
+
+struct nova_datastruct_list_Long_Nova_OrderedList1Long_VTable
+{
+nova_meta_Nova_Class* classInstance;
+nova_Interface_VTable itable;
 };
 
 
