@@ -1660,6 +1660,7 @@ typedef char (*nova_datastruct_list_Nova_ListFunctionMap_closure525_Nova_func)(v
 typedef nova_Nova_Object* (*nova_datastruct_list_Nova_ListFunctionMap_closure526_Nova_func)(void*, nova_exception_Nova_ExceptionData*, nova_Nova_Object*, void*);
 typedef nova_Nova_Object* (*nova_datastruct_list_Nova_ListFunctionMap_closure527_Nova_zipper)(void*, nova_exception_Nova_ExceptionData*, nova_Nova_Object*, nova_Nova_Object*, void*);
 typedef nova_Nova_Object* (*nova_datastruct_list_Nova_ListFunctionMap_closure528_Nova_func)(void*, nova_exception_Nova_ExceptionData*, nova_Nova_Object*, nova_Nova_Object*, int, nova_datastruct_list_Nova_List*, void*);
+typedef int (*nova_datastruct_list_Nova_List_closure685_Nova_zipper)(void*, nova_exception_Nova_ExceptionData*, nova_Nova_Object*, char, void*);
 typedef struct nova_exception_Nova_ExceptionData nova_exception_Nova_ExceptionData;
 typedef struct nova_Nova_Object nova_Nova_Object;
 typedef struct nova_datastruct_list_Nova_OrderedList nova_datastruct_list_Nova_OrderedList;
@@ -1775,6 +1776,7 @@ void nova_Nova_Object_Nova_init_static(nova_exception_Nova_ExceptionData* except
 nova_Nova_Object* nova_Nova_Object_Nova_construct(nova_Nova_Object* this, nova_exception_Nova_ExceptionData* exceptionData);
 void nova_Nova_Object_Nova_destroy(nova_Nova_Object** this, nova_exception_Nova_ExceptionData* exceptionData);
 nova_Nova_Object* nova_Nova_Object_static_Nova_default(nova_Nova_Object* this, nova_exception_Nova_ExceptionData* exceptionData);
+char nova_Nova_Object_Nova_equals(nova_Nova_Object* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_Object* another);
 nova_Nova_String* nova_Nova_Object_Nova_toString(nova_Nova_Object* this, nova_exception_Nova_ExceptionData* exceptionData);
 void nova_Nova_Object_Nova_this(nova_Nova_Object* this, nova_exception_Nova_ExceptionData* exceptionData);
 nova_Nova_String* nova_Nova_Object_Accessorfunc_Nova_hashCode(nova_Nova_Object* this, nova_exception_Nova_ExceptionData* exceptionData);
@@ -3314,7 +3316,7 @@ nova_datastruct_list_Nova_ImmutableArray* nova_datastruct_list_Double_Nova_Array
 nova_Nova_String* nova_datastruct_list_Double_Nova_Array1Double_String_Nova_toString(nova_datastruct_list_Double_Nova_Array1Double* this, nova_exception_Nova_ExceptionData* exceptionData);
 double nova_datastruct_list_Double_Nova_Array1Double_int_double_Nova_get(nova_datastruct_list_Double_Nova_Array1Double* this, nova_exception_Nova_ExceptionData* exceptionData, int index);
 double nova_datastruct_list_Double_Nova_Array1Double_int_double_double_Nova_set(nova_datastruct_list_Double_Nova_Array1Double* this, nova_exception_Nova_ExceptionData* exceptionData, int index, double value);
-nova_datastruct_list_Nova_Array* nova_datastruct_list_Double_Nova_Array1Double_double_Array1_Nova_map(nova_datastruct_list_Double_Nova_Array1Double* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_list_Double_Nova_Array1Double_closure600_Nova_mapFunc nova_datastruct_list_Double_Nova_Array1Double_Nova_mapFunc, void* nova_datastruct_list_Double_Nova_Array1Double_ref_Nova_mapFunc, void* mapFunc_context);
+nova_datastruct_list_Double_Nova_Array1Double* nova_datastruct_list_Double_Nova_Array1Double_double_Array1Double1_Nova_map(nova_datastruct_list_Double_Nova_Array1Double* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_list_Double_Nova_Array1Double_closure600_Nova_mapFunc nova_datastruct_list_Double_Nova_Array1Double_Nova_mapFunc, void* nova_datastruct_list_Double_Nova_Array1Double_ref_Nova_mapFunc, void* mapFunc_context);
 double nova_datastruct_list_Double_Nova_Array1Double_Mutatorfunc_double_double_Nova_first(nova_datastruct_list_Double_Nova_Array1Double* this, nova_exception_Nova_ExceptionData* exceptionData, double value);
 double nova_datastruct_list_Double_Nova_Array1Double_Mutatorfunc_double_double_Nova_last(nova_datastruct_list_Double_Nova_Array1Double* this, nova_exception_Nova_ExceptionData* exceptionData, double value);
 int nova_datastruct_list_Double_Nova_Array1Double_Accessorfunc_int_Nova_count(nova_datastruct_list_Double_Nova_Array1Double* this, nova_exception_Nova_ExceptionData* exceptionData);
@@ -4900,13 +4902,14 @@ nova_Nova_Object* nova_datastruct_list_Nova_List_Nova_firstOr(nova_datastruct_li
 nova_Nova_Object* nova_datastruct_list_Nova_List_Nova_firstOrThrow(nova_datastruct_list_Nova_List* this, nova_exception_Nova_ExceptionData* exceptionData, nova_exception_Nova_Exception* e, nova_datastruct_list_Nova_List_closure196_Nova_func nova_datastruct_list_Nova_List_Nova_func, void* nova_datastruct_list_Nova_List_ref_Nova_func, void* func_context);
 nova_Nova_Object* nova_datastruct_list_Nova_List_1_Nova_firstWhere(nova_datastruct_list_Nova_List* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_list_Nova_List_closure200_Nova_func nova_datastruct_list_Nova_List_Nova_func, void* nova_datastruct_list_Nova_List_ref_Nova_func, void* func_context);
 nova_Nova_Object* nova_datastruct_list_Nova_List_Nova_firstNonNull(nova_datastruct_list_Nova_List* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_list_Nova_List_closure204_Nova_func nova_datastruct_list_Nova_List_Nova_func, void* nova_datastruct_list_Nova_List_ref_Nova_func, void* func_context);
-nova_datastruct_list_Nova_List* nova_datastruct_list_Nova_List_Nova_zip(nova_datastruct_list_Nova_List* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_list_Nova_List* other, nova_datastruct_list_Nova_List_closure208_Nova_zipper nova_datastruct_list_Nova_List_Nova_zipper, void* nova_datastruct_list_Nova_List_ref_Nova_zipper, void* zipper_context);
+nova_datastruct_list_Nova_List* nova_datastruct_list_Nova_List_0_Nova_zip(nova_datastruct_list_Nova_List* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_list_Nova_List* other, nova_datastruct_list_Nova_List_closure208_Nova_zipper nova_datastruct_list_Nova_List_Nova_zipper, void* nova_datastruct_list_Nova_List_ref_Nova_zipper, void* zipper_context);
 nova_datastruct_list_Nova_List* nova_datastruct_list_Nova_List_Nova_reverse(nova_datastruct_list_Nova_List* this, nova_exception_Nova_ExceptionData* exceptionData);
 nova_Nova_Object* nova_datastruct_list_Nova_List_Nova_reduce(nova_datastruct_list_Nova_List* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_list_Nova_List_closure212_Nova_func nova_datastruct_list_Nova_List_Nova_func, void* nova_datastruct_list_Nova_List_ref_Nova_func, void* func_context, nova_Nova_Object* initialValue);
 nova_Nova_String* nova_datastruct_list_Nova_List_Nova_join(nova_datastruct_list_Nova_List* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* delimiter);
 nova_Nova_String* nova_datastruct_list_Nova_List_Nova_stitch(nova_datastruct_list_Nova_List* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* delimiter);
 nova_Nova_String* nova_datastruct_list_Nova_List_Nova_toEnglish(nova_datastruct_list_Nova_List* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* conjunction, int oxford);
 nova_Nova_String* nova_datastruct_list_Nova_List_Nova_toString(nova_datastruct_list_Nova_List* this, nova_exception_Nova_ExceptionData* exceptionData);
+nova_datastruct_list_Int_Nova_List1Int* nova_datastruct_list_Nova_List_Array1Byte_int_List1Int1_Nova_zip(nova_datastruct_list_Nova_List* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_list_Byte_Nova_Array1Byte* other, nova_datastruct_list_Nova_List_closure685_Nova_zipper nova_datastruct_list_Nova_List_Nova_zipper, void* nova_datastruct_list_Nova_List_ref_Nova_zipper, void* zipper_context);
 int nova_datastruct_list_Nova_List_Accessorfunc_Nova_count(nova_datastruct_list_Nova_List* this, nova_exception_Nova_ExceptionData* exceptionData);
 int nova_datastruct_list_Nova_List_Mutatorfunc_Nova_count(nova_datastruct_list_Nova_List* this, nova_exception_Nova_ExceptionData* exceptionData, int value);
 nova_datastruct_list_Nova_Iterator* nova_datastruct_list_Nova_List_Accessorfunc_Nova_iterator(nova_datastruct_list_Nova_List* this, nova_exception_Nova_ExceptionData* exceptionData);
@@ -12495,6 +12498,7 @@ CCLASS_CLASS
 	spectra_tree_nodes_Nova_ArgumentList_VTable* vtable;
 	void* prv;
 	nova_Nova_String* nova_Nova_Object_Nova_hashCode;
+	int spectra_tree_nodes_Nova_Node_Nova_id;
 	spectra_util_Nova_Location* spectra_tree_nodes_Nova_Node_Nova_location;
 	nova_datastruct_list_Nova_Array* spectra_tree_nodes_Nova_Node_Nova_annotations;
 	spectra_tree_nodes_Nova_Node* spectra_tree_nodes_Nova_Node_Nova_parent;
@@ -12631,6 +12635,7 @@ CCLASS_CLASS
 	spectra_tree_nodes_Nova_Cast_VTable* vtable;
 	void* prv;
 	nova_Nova_String* nova_Nova_Object_Nova_hashCode;
+	int spectra_tree_nodes_Nova_Node_Nova_id;
 	spectra_util_Nova_Location* spectra_tree_nodes_Nova_Node_Nova_location;
 	nova_datastruct_list_Nova_Array* spectra_tree_nodes_Nova_Node_Nova_annotations;
 	spectra_tree_nodes_Nova_Node* spectra_tree_nodes_Nova_Node_Nova_parent;
@@ -12702,6 +12707,7 @@ CCLASS_CLASS
 	spectra_tree_nodes_Nova_ClassDeclaration_VTable* vtable;
 	void* prv;
 	nova_Nova_String* nova_Nova_Object_Nova_hashCode;
+	int spectra_tree_nodes_Nova_Node_Nova_id;
 	spectra_util_Nova_Location* spectra_tree_nodes_Nova_Node_Nova_location;
 	nova_datastruct_list_Nova_Array* spectra_tree_nodes_Nova_Node_Nova_annotations;
 	spectra_tree_nodes_Nova_Node* spectra_tree_nodes_Nova_Node_Nova_parent;
@@ -12843,6 +12849,7 @@ CCLASS_CLASS
 	spectra_tree_nodes_Nova_Identifier_VTable* vtable;
 	void* prv;
 	nova_Nova_String* nova_Nova_Object_Nova_hashCode;
+	int spectra_tree_nodes_Nova_Node_Nova_id;
 	spectra_util_Nova_Location* spectra_tree_nodes_Nova_Node_Nova_location;
 	nova_datastruct_list_Nova_Array* spectra_tree_nodes_Nova_Node_Nova_annotations;
 	spectra_tree_nodes_Nova_Node* spectra_tree_nodes_Nova_Node_Nova_parent;
@@ -12916,6 +12923,7 @@ CCLASS_CLASS
 	spectra_tree_nodes_Nova_Import_VTable* vtable;
 	void* prv;
 	nova_Nova_String* nova_Nova_Object_Nova_hashCode;
+	int spectra_tree_nodes_Nova_Node_Nova_id;
 	spectra_util_Nova_Location* spectra_tree_nodes_Nova_Node_Nova_location;
 	nova_datastruct_list_Nova_Array* spectra_tree_nodes_Nova_Node_Nova_annotations;
 	spectra_tree_nodes_Nova_Node* spectra_tree_nodes_Nova_Node_Nova_parent;
@@ -13006,6 +13014,7 @@ CCLASS_CLASS
 	spectra_tree_nodes_Nova_ImportList_VTable* vtable;
 	void* prv;
 	nova_Nova_String* nova_Nova_Object_Nova_hashCode;
+	int spectra_tree_nodes_Nova_Node_Nova_id;
 	spectra_util_Nova_Location* spectra_tree_nodes_Nova_Node_Nova_location;
 	nova_datastruct_list_Nova_Array* spectra_tree_nodes_Nova_Node_Nova_annotations;
 	spectra_tree_nodes_Nova_Node* spectra_tree_nodes_Nova_Node_Nova_parent;
@@ -13073,6 +13082,7 @@ CCLASS_CLASS
 	spectra_tree_nodes_Nova_InterfaceDeclaration_VTable* vtable;
 	void* prv;
 	nova_Nova_String* nova_Nova_Object_Nova_hashCode;
+	int spectra_tree_nodes_Nova_Node_Nova_id;
 	spectra_util_Nova_Location* spectra_tree_nodes_Nova_Node_Nova_location;
 	nova_datastruct_list_Nova_Array* spectra_tree_nodes_Nova_Node_Nova_annotations;
 	spectra_tree_nodes_Nova_Node* spectra_tree_nodes_Nova_Node_Nova_parent;
@@ -13195,6 +13205,7 @@ CCLASS_CLASS
 	spectra_tree_nodes_Nova_Literal_VTable* vtable;
 	void* prv;
 	nova_Nova_String* nova_Nova_Object_Nova_hashCode;
+	int spectra_tree_nodes_Nova_Node_Nova_id;
 	spectra_util_Nova_Location* spectra_tree_nodes_Nova_Node_Nova_location;
 	nova_datastruct_list_Nova_Array* spectra_tree_nodes_Nova_Node_Nova_annotations;
 	spectra_tree_nodes_Nova_Node* spectra_tree_nodes_Nova_Node_Nova_parent;
@@ -13272,6 +13283,7 @@ CCLASS_CLASS
 	spectra_tree_nodes_Nova_Node_VTable* vtable;
 	void* prv;
 	nova_Nova_String* nova_Nova_Object_Nova_hashCode;
+	int spectra_tree_nodes_Nova_Node_Nova_id;
 	spectra_util_Nova_Location* spectra_tree_nodes_Nova_Node_Nova_location;
 	nova_datastruct_list_Nova_Array* spectra_tree_nodes_Nova_Node_Nova_annotations;
 	spectra_tree_nodes_Nova_Node* spectra_tree_nodes_Nova_Node_Nova_parent;
@@ -13442,6 +13454,7 @@ void spectra_tree_nodes_Nova_NodePropertyMap_Nova_init_static(nova_exception_Nov
 spectra_tree_nodes_Nova_NodePropertyMap* spectra_tree_nodes_Nova_NodePropertyMap_Nova_construct(spectra_tree_nodes_Nova_NodePropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData);
 void spectra_tree_nodes_Nova_NodePropertyMap_Nova_destroy(spectra_tree_nodes_Nova_NodePropertyMap** this, nova_exception_Nova_ExceptionData* exceptionData);
 void spectra_tree_nodes_Nova_NodePropertyMap_Nova_this(spectra_tree_nodes_Nova_NodePropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+int spectra_tree_nodes_Nova_NodePropertyMap_functionMap_Nova_id(spectra_tree_nodes_Nova_NodePropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData, spectra_tree_nodes_Nova_Node* reference);
 spectra_util_Nova_Location* spectra_tree_nodes_Nova_NodePropertyMap_functionMap_Nova_location(spectra_tree_nodes_Nova_NodePropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData, spectra_tree_nodes_Nova_Node* reference);
 nova_datastruct_list_Nova_Array* spectra_tree_nodes_Nova_NodePropertyMap_functionMap0_Nova_annotations(spectra_tree_nodes_Nova_NodePropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData, spectra_tree_nodes_Nova_Node* reference);
 spectra_tree_nodes_Nova_Node* spectra_tree_nodes_Nova_NodePropertyMap_functionMap_Nova_parent(spectra_tree_nodes_Nova_NodePropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData, spectra_tree_nodes_Nova_Node* reference);
@@ -13482,6 +13495,7 @@ CCLASS_CLASS
 	spectra_tree_nodes_Nova_NodeList_VTable* vtable;
 	void* prv;
 	nova_Nova_String* nova_Nova_Object_Nova_hashCode;
+	int spectra_tree_nodes_Nova_Node_Nova_id;
 	spectra_util_Nova_Location* spectra_tree_nodes_Nova_Node_Nova_location;
 	nova_datastruct_list_Nova_Array* spectra_tree_nodes_Nova_Node_Nova_annotations;
 	spectra_tree_nodes_Nova_Node* spectra_tree_nodes_Nova_Node_Nova_parent;
@@ -13565,6 +13579,7 @@ CCLASS_CLASS
 	spectra_tree_nodes_Nova_NovaFile_VTable* vtable;
 	void* prv;
 	nova_Nova_String* nova_Nova_Object_Nova_hashCode;
+	int spectra_tree_nodes_Nova_Node_Nova_id;
 	spectra_util_Nova_Location* spectra_tree_nodes_Nova_Node_Nova_location;
 	nova_datastruct_list_Nova_Array* spectra_tree_nodes_Nova_Node_Nova_annotations;
 	spectra_tree_nodes_Nova_Node* spectra_tree_nodes_Nova_Node_Nova_parent;
@@ -13677,6 +13692,7 @@ CCLASS_CLASS
 	spectra_tree_nodes_Nova_NumericRange_VTable* vtable;
 	void* prv;
 	nova_Nova_String* nova_Nova_Object_Nova_hashCode;
+	int spectra_tree_nodes_Nova_Node_Nova_id;
 	spectra_util_Nova_Location* spectra_tree_nodes_Nova_Node_Nova_location;
 	nova_datastruct_list_Nova_Array* spectra_tree_nodes_Nova_Node_Nova_annotations;
 	spectra_tree_nodes_Nova_Node* spectra_tree_nodes_Nova_Node_Nova_parent;
@@ -13761,6 +13777,7 @@ CCLASS_CLASS
 	spectra_tree_nodes_Nova_Package_VTable* vtable;
 	void* prv;
 	nova_Nova_String* nova_Nova_Object_Nova_hashCode;
+	int spectra_tree_nodes_Nova_Node_Nova_id;
 	spectra_util_Nova_Location* spectra_tree_nodes_Nova_Node_Nova_location;
 	nova_datastruct_list_Nova_Array* spectra_tree_nodes_Nova_Node_Nova_annotations;
 	spectra_tree_nodes_Nova_Node* spectra_tree_nodes_Nova_Node_Nova_parent;
@@ -13833,6 +13850,7 @@ CCLASS_CLASS
 	spectra_tree_nodes_Nova_PlaceholderValue_VTable* vtable;
 	void* prv;
 	nova_Nova_String* nova_Nova_Object_Nova_hashCode;
+	int spectra_tree_nodes_Nova_Node_Nova_id;
 	spectra_util_Nova_Location* spectra_tree_nodes_Nova_Node_Nova_location;
 	nova_datastruct_list_Nova_Array* spectra_tree_nodes_Nova_Node_Nova_annotations;
 	spectra_tree_nodes_Nova_Node* spectra_tree_nodes_Nova_Node_Nova_parent;
@@ -13910,6 +13928,7 @@ CCLASS_CLASS
 	spectra_tree_nodes_Nova_Priority_VTable* vtable;
 	void* prv;
 	nova_Nova_String* nova_Nova_Object_Nova_hashCode;
+	int spectra_tree_nodes_Nova_Node_Nova_id;
 	spectra_util_Nova_Location* spectra_tree_nodes_Nova_Node_Nova_location;
 	nova_datastruct_list_Nova_Array* spectra_tree_nodes_Nova_Node_Nova_annotations;
 	spectra_tree_nodes_Nova_Node* spectra_tree_nodes_Nova_Node_Nova_parent;
@@ -13992,6 +14011,7 @@ CCLASS_CLASS
 	spectra_tree_nodes_Nova_Program_VTable* vtable;
 	void* prv;
 	nova_Nova_String* nova_Nova_Object_Nova_hashCode;
+	int spectra_tree_nodes_Nova_Node_Nova_id;
 	spectra_util_Nova_Location* spectra_tree_nodes_Nova_Node_Nova_location;
 	nova_datastruct_list_Nova_Array* spectra_tree_nodes_Nova_Node_Nova_annotations;
 	spectra_tree_nodes_Nova_Node* spectra_tree_nodes_Nova_Node_Nova_parent;
@@ -14071,6 +14091,7 @@ CCLASS_CLASS
 	spectra_tree_nodes_Nova_Return_VTable* vtable;
 	void* prv;
 	nova_Nova_String* nova_Nova_Object_Nova_hashCode;
+	int spectra_tree_nodes_Nova_Node_Nova_id;
 	spectra_util_Nova_Location* spectra_tree_nodes_Nova_Node_Nova_location;
 	nova_datastruct_list_Nova_Array* spectra_tree_nodes_Nova_Node_Nova_annotations;
 	spectra_tree_nodes_Nova_Node* spectra_tree_nodes_Nova_Node_Nova_parent;
@@ -14141,6 +14162,7 @@ CCLASS_CLASS
 	spectra_tree_nodes_Nova_Scope_VTable* vtable;
 	struct Private_spectra_tree_nodes_Nova_Scope* prv;
 	nova_Nova_String* nova_Nova_Object_Nova_hashCode;
+	int spectra_tree_nodes_Nova_Node_Nova_id;
 	spectra_util_Nova_Location* spectra_tree_nodes_Nova_Node_Nova_location;
 	nova_datastruct_list_Nova_Array* spectra_tree_nodes_Nova_Node_Nova_annotations;
 	spectra_tree_nodes_Nova_Node* spectra_tree_nodes_Nova_Node_Nova_parent;
@@ -14215,6 +14237,7 @@ CCLASS_CLASS
 	spectra_tree_nodes_Nova_Skeleton_VTable* vtable;
 	void* prv;
 	nova_Nova_String* nova_Nova_Object_Nova_hashCode;
+	int spectra_tree_nodes_Nova_Node_Nova_id;
 	spectra_util_Nova_Location* spectra_tree_nodes_Nova_Node_Nova_location;
 	nova_datastruct_list_Nova_Array* spectra_tree_nodes_Nova_Node_Nova_annotations;
 	spectra_tree_nodes_Nova_Node* spectra_tree_nodes_Nova_Node_Nova_parent;
@@ -14279,6 +14302,7 @@ CCLASS_CLASS
 	spectra_tree_nodes_Nova_StaticClassReference_VTable* vtable;
 	void* prv;
 	nova_Nova_String* nova_Nova_Object_Nova_hashCode;
+	int spectra_tree_nodes_Nova_Node_Nova_id;
 	spectra_util_Nova_Location* spectra_tree_nodes_Nova_Node_Nova_location;
 	nova_datastruct_list_Nova_Array* spectra_tree_nodes_Nova_Node_Nova_annotations;
 	spectra_tree_nodes_Nova_Node* spectra_tree_nodes_Nova_Node_Nova_parent;
@@ -14355,6 +14379,7 @@ CCLASS_CLASS
 	spectra_tree_nodes_Nova_TraitDeclaration_VTable* vtable;
 	void* prv;
 	nova_Nova_String* nova_Nova_Object_Nova_hashCode;
+	int spectra_tree_nodes_Nova_Node_Nova_id;
 	spectra_util_Nova_Location* spectra_tree_nodes_Nova_Node_Nova_location;
 	nova_datastruct_list_Nova_Array* spectra_tree_nodes_Nova_Node_Nova_annotations;
 	spectra_tree_nodes_Nova_Node* spectra_tree_nodes_Nova_Node_Nova_parent;
@@ -14568,6 +14593,7 @@ CCLASS_CLASS
 	spectra_tree_nodes_Nova_Value_VTable* vtable;
 	void* prv;
 	nova_Nova_String* nova_Nova_Object_Nova_hashCode;
+	int spectra_tree_nodes_Nova_Node_Nova_id;
 	spectra_util_Nova_Location* spectra_tree_nodes_Nova_Node_Nova_location;
 	nova_datastruct_list_Nova_Array* spectra_tree_nodes_Nova_Node_Nova_annotations;
 	spectra_tree_nodes_Nova_Node* spectra_tree_nodes_Nova_Node_Nova_parent;
@@ -14676,6 +14702,7 @@ CCLASS_CLASS
 	spectra_tree_nodes_annotations_Nova_AbstractAnnotation_VTable* vtable;
 	void* prv;
 	nova_Nova_String* nova_Nova_Object_Nova_hashCode;
+	int spectra_tree_nodes_Nova_Node_Nova_id;
 	spectra_util_Nova_Location* spectra_tree_nodes_Nova_Node_Nova_location;
 	nova_datastruct_list_Nova_Array* spectra_tree_nodes_Nova_Node_Nova_annotations;
 	spectra_tree_nodes_Nova_Node* spectra_tree_nodes_Nova_Node_Nova_parent;
@@ -14793,6 +14820,7 @@ CCLASS_CLASS
 	spectra_tree_nodes_annotations_Nova_Annotation_VTable* vtable;
 	void* prv;
 	nova_Nova_String* nova_Nova_Object_Nova_hashCode;
+	int spectra_tree_nodes_Nova_Node_Nova_id;
 	spectra_util_Nova_Location* spectra_tree_nodes_Nova_Node_Nova_location;
 	nova_datastruct_list_Nova_Array* spectra_tree_nodes_Nova_Node_Nova_annotations;
 	spectra_tree_nodes_Nova_Node* spectra_tree_nodes_Nova_Node_Nova_parent;
@@ -14884,6 +14912,7 @@ CCLASS_CLASS
 	spectra_tree_nodes_annotations_Nova_AutoFinalAnnotation_VTable* vtable;
 	void* prv;
 	nova_Nova_String* nova_Nova_Object_Nova_hashCode;
+	int spectra_tree_nodes_Nova_Node_Nova_id;
 	spectra_util_Nova_Location* spectra_tree_nodes_Nova_Node_Nova_location;
 	nova_datastruct_list_Nova_Array* spectra_tree_nodes_Nova_Node_Nova_annotations;
 	spectra_tree_nodes_Nova_Node* spectra_tree_nodes_Nova_Node_Nova_parent;
@@ -14949,6 +14978,7 @@ CCLASS_CLASS
 	spectra_tree_nodes_annotations_Nova_AutoPureAnnotation_VTable* vtable;
 	void* prv;
 	nova_Nova_String* nova_Nova_Object_Nova_hashCode;
+	int spectra_tree_nodes_Nova_Node_Nova_id;
 	spectra_util_Nova_Location* spectra_tree_nodes_Nova_Node_Nova_location;
 	nova_datastruct_list_Nova_Array* spectra_tree_nodes_Nova_Node_Nova_annotations;
 	spectra_tree_nodes_Nova_Node* spectra_tree_nodes_Nova_Node_Nova_parent;
@@ -15014,6 +15044,7 @@ CCLASS_CLASS
 	spectra_tree_nodes_annotations_Nova_FinalAnnotation_VTable* vtable;
 	void* prv;
 	nova_Nova_String* nova_Nova_Object_Nova_hashCode;
+	int spectra_tree_nodes_Nova_Node_Nova_id;
 	spectra_util_Nova_Location* spectra_tree_nodes_Nova_Node_Nova_location;
 	nova_datastruct_list_Nova_Array* spectra_tree_nodes_Nova_Node_Nova_annotations;
 	spectra_tree_nodes_Nova_Node* spectra_tree_nodes_Nova_Node_Nova_parent;
@@ -15089,6 +15120,7 @@ CCLASS_CLASS
 	spectra_tree_nodes_annotations_Nova_ImmutableAnnotation_VTable* vtable;
 	void* prv;
 	nova_Nova_String* nova_Nova_Object_Nova_hashCode;
+	int spectra_tree_nodes_Nova_Node_Nova_id;
 	spectra_util_Nova_Location* spectra_tree_nodes_Nova_Node_Nova_location;
 	nova_datastruct_list_Nova_Array* spectra_tree_nodes_Nova_Node_Nova_annotations;
 	spectra_tree_nodes_Nova_Node* spectra_tree_nodes_Nova_Node_Nova_parent;
@@ -15164,6 +15196,7 @@ CCLASS_CLASS
 	spectra_tree_nodes_annotations_Nova_ImpureAnnotation_VTable* vtable;
 	void* prv;
 	nova_Nova_String* nova_Nova_Object_Nova_hashCode;
+	int spectra_tree_nodes_Nova_Node_Nova_id;
 	spectra_util_Nova_Location* spectra_tree_nodes_Nova_Node_Nova_location;
 	nova_datastruct_list_Nova_Array* spectra_tree_nodes_Nova_Node_Nova_annotations;
 	spectra_tree_nodes_Nova_Node* spectra_tree_nodes_Nova_Node_Nova_parent;
@@ -15239,6 +15272,7 @@ CCLASS_CLASS
 	spectra_tree_nodes_annotations_Nova_LetAnnotation_VTable* vtable;
 	void* prv;
 	nova_Nova_String* nova_Nova_Object_Nova_hashCode;
+	int spectra_tree_nodes_Nova_Node_Nova_id;
 	spectra_util_Nova_Location* spectra_tree_nodes_Nova_Node_Nova_location;
 	nova_datastruct_list_Nova_Array* spectra_tree_nodes_Nova_Node_Nova_annotations;
 	spectra_tree_nodes_Nova_Node* spectra_tree_nodes_Nova_Node_Nova_parent;
@@ -15366,6 +15400,7 @@ CCLASS_CLASS
 	spectra_tree_nodes_annotations_Nova_NativeAnnotation_VTable* vtable;
 	void* prv;
 	nova_Nova_String* nova_Nova_Object_Nova_hashCode;
+	int spectra_tree_nodes_Nova_Node_Nova_id;
 	spectra_util_Nova_Location* spectra_tree_nodes_Nova_Node_Nova_location;
 	nova_datastruct_list_Nova_Array* spectra_tree_nodes_Nova_Node_Nova_annotations;
 	spectra_tree_nodes_Nova_Node* spectra_tree_nodes_Nova_Node_Nova_parent;
@@ -15441,6 +15476,7 @@ CCLASS_CLASS
 	spectra_tree_nodes_annotations_Nova_OverrideAnnotation_VTable* vtable;
 	void* prv;
 	nova_Nova_String* nova_Nova_Object_Nova_hashCode;
+	int spectra_tree_nodes_Nova_Node_Nova_id;
 	spectra_util_Nova_Location* spectra_tree_nodes_Nova_Node_Nova_location;
 	nova_datastruct_list_Nova_Array* spectra_tree_nodes_Nova_Node_Nova_annotations;
 	spectra_tree_nodes_Nova_Node* spectra_tree_nodes_Nova_Node_Nova_parent;
@@ -15516,6 +15552,7 @@ CCLASS_CLASS
 	spectra_tree_nodes_annotations_Nova_PrivateAnnotation_VTable* vtable;
 	void* prv;
 	nova_Nova_String* nova_Nova_Object_Nova_hashCode;
+	int spectra_tree_nodes_Nova_Node_Nova_id;
 	spectra_util_Nova_Location* spectra_tree_nodes_Nova_Node_Nova_location;
 	nova_datastruct_list_Nova_Array* spectra_tree_nodes_Nova_Node_Nova_annotations;
 	spectra_tree_nodes_Nova_Node* spectra_tree_nodes_Nova_Node_Nova_parent;
@@ -15591,6 +15628,7 @@ CCLASS_CLASS
 	spectra_tree_nodes_annotations_Nova_PublicAnnotation_VTable* vtable;
 	void* prv;
 	nova_Nova_String* nova_Nova_Object_Nova_hashCode;
+	int spectra_tree_nodes_Nova_Node_Nova_id;
 	spectra_util_Nova_Location* spectra_tree_nodes_Nova_Node_Nova_location;
 	nova_datastruct_list_Nova_Array* spectra_tree_nodes_Nova_Node_Nova_annotations;
 	spectra_tree_nodes_Nova_Node* spectra_tree_nodes_Nova_Node_Nova_parent;
@@ -15668,6 +15706,7 @@ CCLASS_CLASS
 	spectra_tree_nodes_annotations_Nova_PureAnnotation_VTable* vtable;
 	void* prv;
 	nova_Nova_String* nova_Nova_Object_Nova_hashCode;
+	int spectra_tree_nodes_Nova_Node_Nova_id;
 	spectra_util_Nova_Location* spectra_tree_nodes_Nova_Node_Nova_location;
 	nova_datastruct_list_Nova_Array* spectra_tree_nodes_Nova_Node_Nova_annotations;
 	spectra_tree_nodes_Nova_Node* spectra_tree_nodes_Nova_Node_Nova_parent;
@@ -15743,6 +15782,7 @@ CCLASS_CLASS
 	spectra_tree_nodes_annotations_Nova_StaticAnnotation_VTable* vtable;
 	void* prv;
 	nova_Nova_String* nova_Nova_Object_Nova_hashCode;
+	int spectra_tree_nodes_Nova_Node_Nova_id;
 	spectra_util_Nova_Location* spectra_tree_nodes_Nova_Node_Nova_location;
 	nova_datastruct_list_Nova_Array* spectra_tree_nodes_Nova_Node_Nova_annotations;
 	spectra_tree_nodes_Nova_Node* spectra_tree_nodes_Nova_Node_Nova_parent;
@@ -15820,6 +15860,7 @@ CCLASS_CLASS
 	spectra_tree_nodes_annotations_Nova_TargetAnnotation_VTable* vtable;
 	void* prv;
 	nova_Nova_String* nova_Nova_Object_Nova_hashCode;
+	int spectra_tree_nodes_Nova_Node_Nova_id;
 	spectra_util_Nova_Location* spectra_tree_nodes_Nova_Node_Nova_location;
 	nova_datastruct_list_Nova_Array* spectra_tree_nodes_Nova_Node_Nova_annotations;
 	spectra_tree_nodes_Nova_Node* spectra_tree_nodes_Nova_Node_Nova_parent;
@@ -15891,6 +15932,7 @@ CCLASS_CLASS
 	spectra_tree_nodes_annotations_Nova_VarAnnotation_VTable* vtable;
 	void* prv;
 	nova_Nova_String* nova_Nova_Object_Nova_hashCode;
+	int spectra_tree_nodes_Nova_Node_Nova_id;
 	spectra_util_Nova_Location* spectra_tree_nodes_Nova_Node_Nova_location;
 	nova_datastruct_list_Nova_Array* spectra_tree_nodes_Nova_Node_Nova_annotations;
 	spectra_tree_nodes_Nova_Node* spectra_tree_nodes_Nova_Node_Nova_parent;
@@ -16005,6 +16047,7 @@ CCLASS_CLASS
 	spectra_tree_nodes_annotations_Nova_VisibleAnnotation_VTable* vtable;
 	void* prv;
 	nova_Nova_String* nova_Nova_Object_Nova_hashCode;
+	int spectra_tree_nodes_Nova_Node_Nova_id;
 	spectra_util_Nova_Location* spectra_tree_nodes_Nova_Node_Nova_location;
 	nova_datastruct_list_Nova_Array* spectra_tree_nodes_Nova_Node_Nova_annotations;
 	spectra_tree_nodes_Nova_Node* spectra_tree_nodes_Nova_Node_Nova_parent;
@@ -16082,6 +16125,7 @@ CCLASS_CLASS
 	spectra_tree_nodes_arrays_Nova_ArrayAccess_VTable* vtable;
 	void* prv;
 	nova_Nova_String* nova_Nova_Object_Nova_hashCode;
+	int spectra_tree_nodes_Nova_Node_Nova_id;
 	spectra_util_Nova_Location* spectra_tree_nodes_Nova_Node_Nova_location;
 	nova_datastruct_list_Nova_Array* spectra_tree_nodes_Nova_Node_Nova_annotations;
 	spectra_tree_nodes_Nova_Node* spectra_tree_nodes_Nova_Node_Nova_parent;
@@ -16152,6 +16196,7 @@ CCLASS_CLASS
 	spectra_tree_nodes_controlstructures_Nova_ControlStructure_VTable* vtable;
 	void* prv;
 	nova_Nova_String* nova_Nova_Object_Nova_hashCode;
+	int spectra_tree_nodes_Nova_Node_Nova_id;
 	spectra_util_Nova_Location* spectra_tree_nodes_Nova_Node_Nova_location;
 	nova_datastruct_list_Nova_Array* spectra_tree_nodes_Nova_Node_Nova_annotations;
 	spectra_tree_nodes_Nova_Node* spectra_tree_nodes_Nova_Node_Nova_parent;
@@ -16220,6 +16265,7 @@ CCLASS_CLASS
 	spectra_tree_nodes_controlstructures_Nova_ElseStatement_VTable* vtable;
 	void* prv;
 	nova_Nova_String* nova_Nova_Object_Nova_hashCode;
+	int spectra_tree_nodes_Nova_Node_Nova_id;
 	spectra_util_Nova_Location* spectra_tree_nodes_Nova_Node_Nova_location;
 	nova_datastruct_list_Nova_Array* spectra_tree_nodes_Nova_Node_Nova_annotations;
 	spectra_tree_nodes_Nova_Node* spectra_tree_nodes_Nova_Node_Nova_parent;
@@ -16293,6 +16339,7 @@ CCLASS_CLASS
 	spectra_tree_nodes_controlstructures_Nova_IfStatement_VTable* vtable;
 	void* prv;
 	nova_Nova_String* nova_Nova_Object_Nova_hashCode;
+	int spectra_tree_nodes_Nova_Node_Nova_id;
 	spectra_util_Nova_Location* spectra_tree_nodes_Nova_Node_Nova_location;
 	nova_datastruct_list_Nova_Array* spectra_tree_nodes_Nova_Node_Nova_annotations;
 	spectra_tree_nodes_Nova_Node* spectra_tree_nodes_Nova_Node_Nova_parent;
@@ -16362,6 +16409,7 @@ CCLASS_CLASS
 	spectra_tree_nodes_controlstructures_loops_Nova_ForEachLoop_VTable* vtable;
 	void* prv;
 	nova_Nova_String* nova_Nova_Object_Nova_hashCode;
+	int spectra_tree_nodes_Nova_Node_Nova_id;
 	spectra_util_Nova_Location* spectra_tree_nodes_Nova_Node_Nova_location;
 	nova_datastruct_list_Nova_Array* spectra_tree_nodes_Nova_Node_Nova_annotations;
 	spectra_tree_nodes_Nova_Node* spectra_tree_nodes_Nova_Node_Nova_parent;
@@ -16437,6 +16485,7 @@ CCLASS_CLASS
 	spectra_tree_nodes_controlstructures_loops_Nova_Loop_VTable* vtable;
 	void* prv;
 	nova_Nova_String* nova_Nova_Object_Nova_hashCode;
+	int spectra_tree_nodes_Nova_Node_Nova_id;
 	spectra_util_Nova_Location* spectra_tree_nodes_Nova_Node_Nova_location;
 	nova_datastruct_list_Nova_Array* spectra_tree_nodes_Nova_Node_Nova_annotations;
 	spectra_tree_nodes_Nova_Node* spectra_tree_nodes_Nova_Node_Nova_parent;
@@ -16504,6 +16553,7 @@ CCLASS_CLASS
 	spectra_tree_nodes_controlstructures_loops_Nova_WhileLoop_VTable* vtable;
 	void* prv;
 	nova_Nova_String* nova_Nova_Object_Nova_hashCode;
+	int spectra_tree_nodes_Nova_Node_Nova_id;
 	spectra_util_Nova_Location* spectra_tree_nodes_Nova_Node_Nova_location;
 	nova_datastruct_list_Nova_Array* spectra_tree_nodes_Nova_Node_Nova_annotations;
 	spectra_tree_nodes_Nova_Node* spectra_tree_nodes_Nova_Node_Nova_parent;
@@ -16573,6 +16623,7 @@ CCLASS_CLASS
 	spectra_tree_nodes_exceptionhandling_Nova_Catch_VTable* vtable;
 	void* prv;
 	nova_Nova_String* nova_Nova_Object_Nova_hashCode;
+	int spectra_tree_nodes_Nova_Node_Nova_id;
 	spectra_util_Nova_Location* spectra_tree_nodes_Nova_Node_Nova_location;
 	nova_datastruct_list_Nova_Array* spectra_tree_nodes_Nova_Node_Nova_annotations;
 	spectra_tree_nodes_Nova_Node* spectra_tree_nodes_Nova_Node_Nova_parent;
@@ -16651,6 +16702,7 @@ CCLASS_CLASS
 	spectra_tree_nodes_exceptionhandling_Nova_ExceptionHandler_VTable* vtable;
 	void* prv;
 	nova_Nova_String* nova_Nova_Object_Nova_hashCode;
+	int spectra_tree_nodes_Nova_Node_Nova_id;
 	spectra_util_Nova_Location* spectra_tree_nodes_Nova_Node_Nova_location;
 	nova_datastruct_list_Nova_Array* spectra_tree_nodes_Nova_Node_Nova_annotations;
 	spectra_tree_nodes_Nova_Node* spectra_tree_nodes_Nova_Node_Nova_parent;
@@ -16713,6 +16765,7 @@ CCLASS_CLASS
 	spectra_tree_nodes_exceptionhandling_Nova_Throw_VTable* vtable;
 	void* prv;
 	nova_Nova_String* nova_Nova_Object_Nova_hashCode;
+	int spectra_tree_nodes_Nova_Node_Nova_id;
 	spectra_util_Nova_Location* spectra_tree_nodes_Nova_Node_Nova_location;
 	nova_datastruct_list_Nova_Array* spectra_tree_nodes_Nova_Node_Nova_annotations;
 	spectra_tree_nodes_Nova_Node* spectra_tree_nodes_Nova_Node_Nova_parent;
@@ -16783,6 +16836,7 @@ CCLASS_CLASS
 	spectra_tree_nodes_exceptionhandling_Nova_Try_VTable* vtable;
 	void* prv;
 	nova_Nova_String* nova_Nova_Object_Nova_hashCode;
+	int spectra_tree_nodes_Nova_Node_Nova_id;
 	spectra_util_Nova_Location* spectra_tree_nodes_Nova_Node_Nova_location;
 	nova_datastruct_list_Nova_Array* spectra_tree_nodes_Nova_Node_Nova_annotations;
 	spectra_tree_nodes_Nova_Node* spectra_tree_nodes_Nova_Node_Nova_parent;
@@ -16858,6 +16912,7 @@ CCLASS_CLASS
 	spectra_tree_nodes_functions_Nova_AccessorFunction_VTable* vtable;
 	void* prv;
 	nova_Nova_String* nova_Nova_Object_Nova_hashCode;
+	int spectra_tree_nodes_Nova_Node_Nova_id;
 	spectra_util_Nova_Location* spectra_tree_nodes_Nova_Node_Nova_location;
 	nova_datastruct_list_Nova_Array* spectra_tree_nodes_Nova_Node_Nova_annotations;
 	spectra_tree_nodes_Nova_Node* spectra_tree_nodes_Nova_Node_Nova_parent;
@@ -16936,6 +16991,7 @@ CCLASS_CLASS
 	spectra_tree_nodes_functions_Nova_ArrayInstantiation_VTable* vtable;
 	void* prv;
 	nova_Nova_String* nova_Nova_Object_Nova_hashCode;
+	int spectra_tree_nodes_Nova_Node_Nova_id;
 	spectra_util_Nova_Location* spectra_tree_nodes_Nova_Node_Nova_location;
 	nova_datastruct_list_Nova_Array* spectra_tree_nodes_Nova_Node_Nova_annotations;
 	spectra_tree_nodes_Nova_Node* spectra_tree_nodes_Nova_Node_Nova_parent;
@@ -17019,6 +17075,7 @@ CCLASS_CLASS
 	spectra_tree_nodes_functions_Nova_BodyFunction_VTable* vtable;
 	void* prv;
 	nova_Nova_String* nova_Nova_Object_Nova_hashCode;
+	int spectra_tree_nodes_Nova_Node_Nova_id;
 	spectra_util_Nova_Location* spectra_tree_nodes_Nova_Node_Nova_location;
 	nova_datastruct_list_Nova_Array* spectra_tree_nodes_Nova_Node_Nova_annotations;
 	spectra_tree_nodes_Nova_Node* spectra_tree_nodes_Nova_Node_Nova_parent;
@@ -17172,6 +17229,7 @@ CCLASS_CLASS
 	spectra_tree_nodes_functions_Nova_Constructor_VTable* vtable;
 	void* prv;
 	nova_Nova_String* nova_Nova_Object_Nova_hashCode;
+	int spectra_tree_nodes_Nova_Node_Nova_id;
 	spectra_util_Nova_Location* spectra_tree_nodes_Nova_Node_Nova_location;
 	nova_datastruct_list_Nova_Array* spectra_tree_nodes_Nova_Node_Nova_annotations;
 	spectra_tree_nodes_Nova_Node* spectra_tree_nodes_Nova_Node_Nova_parent;
@@ -17252,6 +17310,7 @@ CCLASS_CLASS
 	spectra_tree_nodes_functions_Nova_EmptyArrayBracket_VTable* vtable;
 	void* prv;
 	nova_Nova_String* nova_Nova_Object_Nova_hashCode;
+	int spectra_tree_nodes_Nova_Node_Nova_id;
 	spectra_util_Nova_Location* spectra_tree_nodes_Nova_Node_Nova_location;
 	nova_datastruct_list_Nova_Array* spectra_tree_nodes_Nova_Node_Nova_annotations;
 	spectra_tree_nodes_Nova_Node* spectra_tree_nodes_Nova_Node_Nova_parent;
@@ -17319,6 +17378,7 @@ CCLASS_CLASS
 	spectra_tree_nodes_functions_Nova_FunctionArgumentList_VTable* vtable;
 	void* prv;
 	nova_Nova_String* nova_Nova_Object_Nova_hashCode;
+	int spectra_tree_nodes_Nova_Node_Nova_id;
 	spectra_util_Nova_Location* spectra_tree_nodes_Nova_Node_Nova_location;
 	nova_datastruct_list_Nova_Array* spectra_tree_nodes_Nova_Node_Nova_annotations;
 	spectra_tree_nodes_Nova_Node* spectra_tree_nodes_Nova_Node_Nova_parent;
@@ -17384,6 +17444,7 @@ CCLASS_CLASS
 	spectra_tree_nodes_functions_Nova_FunctionCall_VTable* vtable;
 	void* prv;
 	nova_Nova_String* nova_Nova_Object_Nova_hashCode;
+	int spectra_tree_nodes_Nova_Node_Nova_id;
 	spectra_util_Nova_Location* spectra_tree_nodes_Nova_Node_Nova_location;
 	nova_datastruct_list_Nova_Array* spectra_tree_nodes_Nova_Node_Nova_annotations;
 	spectra_tree_nodes_Nova_Node* spectra_tree_nodes_Nova_Node_Nova_parent;
@@ -17478,6 +17539,7 @@ CCLASS_CLASS
 	spectra_tree_nodes_functions_Nova_FunctionDeclaration_VTable* vtable;
 	void* prv;
 	nova_Nova_String* nova_Nova_Object_Nova_hashCode;
+	int spectra_tree_nodes_Nova_Node_Nova_id;
 	spectra_util_Nova_Location* spectra_tree_nodes_Nova_Node_Nova_location;
 	nova_datastruct_list_Nova_Array* spectra_tree_nodes_Nova_Node_Nova_annotations;
 	spectra_tree_nodes_Nova_Node* spectra_tree_nodes_Nova_Node_Nova_parent;
@@ -17579,6 +17641,7 @@ CCLASS_CLASS
 	spectra_tree_nodes_functions_Nova_InitializationFunction_VTable* vtable;
 	void* prv;
 	nova_Nova_String* nova_Nova_Object_Nova_hashCode;
+	int spectra_tree_nodes_Nova_Node_Nova_id;
 	spectra_util_Nova_Location* spectra_tree_nodes_Nova_Node_Nova_location;
 	nova_datastruct_list_Nova_Array* spectra_tree_nodes_Nova_Node_Nova_annotations;
 	spectra_tree_nodes_Nova_Node* spectra_tree_nodes_Nova_Node_Nova_parent;
@@ -17655,6 +17718,7 @@ CCLASS_CLASS
 	spectra_tree_nodes_functions_Nova_Instantiation_VTable* vtable;
 	void* prv;
 	nova_Nova_String* nova_Nova_Object_Nova_hashCode;
+	int spectra_tree_nodes_Nova_Node_Nova_id;
 	spectra_util_Nova_Location* spectra_tree_nodes_Nova_Node_Nova_location;
 	nova_datastruct_list_Nova_Array* spectra_tree_nodes_Nova_Node_Nova_annotations;
 	spectra_tree_nodes_Nova_Node* spectra_tree_nodes_Nova_Node_Nova_parent;
@@ -17745,6 +17809,7 @@ CCLASS_CLASS
 	spectra_tree_nodes_functions_Nova_MutatorFunction_VTable* vtable;
 	void* prv;
 	nova_Nova_String* nova_Nova_Object_Nova_hashCode;
+	int spectra_tree_nodes_Nova_Node_Nova_id;
 	spectra_util_Nova_Location* spectra_tree_nodes_Nova_Node_Nova_location;
 	nova_datastruct_list_Nova_Array* spectra_tree_nodes_Nova_Node_Nova_annotations;
 	spectra_tree_nodes_Nova_Node* spectra_tree_nodes_Nova_Node_Nova_parent;
@@ -17823,6 +17888,7 @@ CCLASS_CLASS
 	spectra_tree_nodes_functions_Nova_ObjectNotation_VTable* vtable;
 	void* prv;
 	nova_Nova_String* nova_Nova_Object_Nova_hashCode;
+	int spectra_tree_nodes_Nova_Node_Nova_id;
 	spectra_util_Nova_Location* spectra_tree_nodes_Nova_Node_Nova_location;
 	nova_datastruct_list_Nova_Array* spectra_tree_nodes_Nova_Node_Nova_annotations;
 	spectra_tree_nodes_Nova_Node* spectra_tree_nodes_Nova_Node_Nova_parent;
@@ -17893,6 +17959,7 @@ CCLASS_CLASS
 	spectra_tree_nodes_functions_Nova_ObjectNotationProperty_VTable* vtable;
 	void* prv;
 	nova_Nova_String* nova_Nova_Object_Nova_hashCode;
+	int spectra_tree_nodes_Nova_Node_Nova_id;
 	spectra_util_Nova_Location* spectra_tree_nodes_Nova_Node_Nova_location;
 	nova_datastruct_list_Nova_Array* spectra_tree_nodes_Nova_Node_Nova_annotations;
 	spectra_tree_nodes_Nova_Node* spectra_tree_nodes_Nova_Node_Nova_parent;
@@ -17967,6 +18034,7 @@ CCLASS_CLASS
 	spectra_tree_nodes_functions_Nova_Parameter_VTable* vtable;
 	void* prv;
 	nova_Nova_String* nova_Nova_Object_Nova_hashCode;
+	int spectra_tree_nodes_Nova_Node_Nova_id;
 	spectra_util_Nova_Location* spectra_tree_nodes_Nova_Node_Nova_location;
 	nova_datastruct_list_Nova_Array* spectra_tree_nodes_Nova_Node_Nova_annotations;
 	spectra_tree_nodes_Nova_Node* spectra_tree_nodes_Nova_Node_Nova_parent;
@@ -18044,6 +18112,7 @@ CCLASS_CLASS
 	spectra_tree_nodes_functions_Nova_ParameterList_VTable* vtable;
 	void* prv;
 	nova_Nova_String* nova_Nova_Object_Nova_hashCode;
+	int spectra_tree_nodes_Nova_Node_Nova_id;
 	spectra_util_Nova_Location* spectra_tree_nodes_Nova_Node_Nova_location;
 	nova_datastruct_list_Nova_Array* spectra_tree_nodes_Nova_Node_Nova_annotations;
 	spectra_tree_nodes_Nova_Node* spectra_tree_nodes_Nova_Node_Nova_parent;
@@ -18118,6 +18187,7 @@ CCLASS_CLASS
 	spectra_tree_nodes_functions_Nova_PropertyFunction_VTable* vtable;
 	void* prv;
 	nova_Nova_String* nova_Nova_Object_Nova_hashCode;
+	int spectra_tree_nodes_Nova_Node_Nova_id;
 	spectra_util_Nova_Location* spectra_tree_nodes_Nova_Node_Nova_location;
 	nova_datastruct_list_Nova_Array* spectra_tree_nodes_Nova_Node_Nova_annotations;
 	spectra_tree_nodes_Nova_Node* spectra_tree_nodes_Nova_Node_Nova_parent;
@@ -18196,6 +18266,7 @@ CCLASS_CLASS
 	spectra_tree_nodes_functions_closures_Nova_ClosureContext_VTable* vtable;
 	void* prv;
 	nova_Nova_String* nova_Nova_Object_Nova_hashCode;
+	int spectra_tree_nodes_Nova_Node_Nova_id;
 	spectra_util_Nova_Location* spectra_tree_nodes_Nova_Node_Nova_location;
 	nova_datastruct_list_Nova_Array* spectra_tree_nodes_Nova_Node_Nova_annotations;
 	spectra_tree_nodes_Nova_Node* spectra_tree_nodes_Nova_Node_Nova_parent;
@@ -18258,6 +18329,7 @@ CCLASS_CLASS
 	spectra_tree_nodes_functions_closures_Nova_ClosureDeclaration_VTable* vtable;
 	void* prv;
 	nova_Nova_String* nova_Nova_Object_Nova_hashCode;
+	int spectra_tree_nodes_Nova_Node_Nova_id;
 	spectra_util_Nova_Location* spectra_tree_nodes_Nova_Node_Nova_location;
 	nova_datastruct_list_Nova_Array* spectra_tree_nodes_Nova_Node_Nova_annotations;
 	spectra_tree_nodes_Nova_Node* spectra_tree_nodes_Nova_Node_Nova_parent;
@@ -18342,6 +18414,7 @@ CCLASS_CLASS
 	spectra_tree_nodes_functions_closures_Nova_ClosureParameter_VTable* vtable;
 	void* prv;
 	nova_Nova_String* nova_Nova_Object_Nova_hashCode;
+	int spectra_tree_nodes_Nova_Node_Nova_id;
 	spectra_util_Nova_Location* spectra_tree_nodes_Nova_Node_Nova_location;
 	nova_datastruct_list_Nova_Array* spectra_tree_nodes_Nova_Node_Nova_annotations;
 	spectra_tree_nodes_Nova_Node* spectra_tree_nodes_Nova_Node_Nova_parent;
@@ -18412,6 +18485,7 @@ CCLASS_CLASS
 	spectra_tree_nodes_functions_closures_Nova_LambdaExpression_VTable* vtable;
 	void* prv;
 	nova_Nova_String* nova_Nova_Object_Nova_hashCode;
+	int spectra_tree_nodes_Nova_Node_Nova_id;
 	spectra_util_Nova_Location* spectra_tree_nodes_Nova_Node_Nova_location;
 	nova_datastruct_list_Nova_Array* spectra_tree_nodes_Nova_Node_Nova_annotations;
 	spectra_tree_nodes_Nova_Node* spectra_tree_nodes_Nova_Node_Nova_parent;
@@ -18512,6 +18586,7 @@ CCLASS_CLASS
 	spectra_tree_nodes_functions_closures_Nova_LambdaParameter_VTable* vtable;
 	void* prv;
 	nova_Nova_String* nova_Nova_Object_Nova_hashCode;
+	int spectra_tree_nodes_Nova_Node_Nova_id;
 	spectra_util_Nova_Location* spectra_tree_nodes_Nova_Node_Nova_location;
 	nova_datastruct_list_Nova_Array* spectra_tree_nodes_Nova_Node_Nova_annotations;
 	spectra_tree_nodes_Nova_Node* spectra_tree_nodes_Nova_Node_Nova_parent;
@@ -18585,6 +18660,7 @@ CCLASS_CLASS
 	spectra_tree_nodes_generics_Nova_GenericArgument_VTable* vtable;
 	void* prv;
 	nova_Nova_String* nova_Nova_Object_Nova_hashCode;
+	int spectra_tree_nodes_Nova_Node_Nova_id;
 	spectra_util_Nova_Location* spectra_tree_nodes_Nova_Node_Nova_location;
 	nova_datastruct_list_Nova_Array* spectra_tree_nodes_Nova_Node_Nova_annotations;
 	spectra_tree_nodes_Nova_Node* spectra_tree_nodes_Nova_Node_Nova_parent;
@@ -18700,6 +18776,7 @@ CCLASS_CLASS
 	spectra_tree_nodes_generics_Nova_GenericParameter_VTable* vtable;
 	void* prv;
 	nova_Nova_String* nova_Nova_Object_Nova_hashCode;
+	int spectra_tree_nodes_Nova_Node_Nova_id;
 	spectra_util_Nova_Location* spectra_tree_nodes_Nova_Node_Nova_location;
 	nova_datastruct_list_Nova_Array* spectra_tree_nodes_Nova_Node_Nova_annotations;
 	spectra_tree_nodes_Nova_Node* spectra_tree_nodes_Nova_Node_Nova_parent;
@@ -18871,6 +18948,7 @@ CCLASS_CLASS
 	spectra_tree_nodes_operations_Nova_Assignment_VTable* vtable;
 	void* prv;
 	nova_Nova_String* nova_Nova_Object_Nova_hashCode;
+	int spectra_tree_nodes_Nova_Node_Nova_id;
 	spectra_util_Nova_Location* spectra_tree_nodes_Nova_Node_Nova_location;
 	nova_datastruct_list_Nova_Array* spectra_tree_nodes_Nova_Node_Nova_annotations;
 	spectra_tree_nodes_Nova_Node* spectra_tree_nodes_Nova_Node_Nova_parent;
@@ -18959,6 +19037,7 @@ CCLASS_CLASS
 	spectra_tree_nodes_operations_Nova_ElvisOperation_VTable* vtable;
 	void* prv;
 	nova_Nova_String* nova_Nova_Object_Nova_hashCode;
+	int spectra_tree_nodes_Nova_Node_Nova_id;
 	spectra_util_Nova_Location* spectra_tree_nodes_Nova_Node_Nova_location;
 	nova_datastruct_list_Nova_Array* spectra_tree_nodes_Nova_Node_Nova_annotations;
 	spectra_tree_nodes_Nova_Node* spectra_tree_nodes_Nova_Node_Nova_parent;
@@ -19032,6 +19111,7 @@ CCLASS_CLASS
 	spectra_tree_nodes_operations_Nova_Operation_VTable* vtable;
 	void* prv;
 	nova_Nova_String* nova_Nova_Object_Nova_hashCode;
+	int spectra_tree_nodes_Nova_Node_Nova_id;
 	spectra_util_Nova_Location* spectra_tree_nodes_Nova_Node_Nova_location;
 	nova_datastruct_list_Nova_Array* spectra_tree_nodes_Nova_Node_Nova_annotations;
 	spectra_tree_nodes_Nova_Node* spectra_tree_nodes_Nova_Node_Nova_parent;
@@ -19105,6 +19185,7 @@ CCLASS_CLASS
 	spectra_tree_nodes_operations_Nova_Operator_VTable* vtable;
 	void* prv;
 	nova_Nova_String* nova_Nova_Object_Nova_hashCode;
+	int spectra_tree_nodes_Nova_Node_Nova_id;
 	spectra_util_Nova_Location* spectra_tree_nodes_Nova_Node_Nova_location;
 	nova_datastruct_list_Nova_Array* spectra_tree_nodes_Nova_Node_Nova_annotations;
 	spectra_tree_nodes_Nova_Node* spectra_tree_nodes_Nova_Node_Nova_parent;
@@ -19261,6 +19342,7 @@ CCLASS_CLASS
 	spectra_tree_nodes_operations_Nova_TernaryOperation_VTable* vtable;
 	void* prv;
 	nova_Nova_String* nova_Nova_Object_Nova_hashCode;
+	int spectra_tree_nodes_Nova_Node_Nova_id;
 	spectra_util_Nova_Location* spectra_tree_nodes_Nova_Node_Nova_location;
 	nova_datastruct_list_Nova_Array* spectra_tree_nodes_Nova_Node_Nova_annotations;
 	spectra_tree_nodes_Nova_Node* spectra_tree_nodes_Nova_Node_Nova_parent;
@@ -19336,6 +19418,7 @@ CCLASS_CLASS
 	spectra_tree_nodes_operations_Nova_UnaryOperation_VTable* vtable;
 	void* prv;
 	nova_Nova_String* nova_Nova_Object_Nova_hashCode;
+	int spectra_tree_nodes_Nova_Node_Nova_id;
 	spectra_util_Nova_Location* spectra_tree_nodes_Nova_Node_Nova_location;
 	nova_datastruct_list_Nova_Array* spectra_tree_nodes_Nova_Node_Nova_annotations;
 	spectra_tree_nodes_Nova_Node* spectra_tree_nodes_Nova_Node_Nova_parent;
@@ -19417,6 +19500,7 @@ CCLASS_CLASS
 	spectra_tree_nodes_variables_Nova_ArrayBracketOverload_VTable* vtable;
 	void* prv;
 	nova_Nova_String* nova_Nova_Object_Nova_hashCode;
+	int spectra_tree_nodes_Nova_Node_Nova_id;
 	spectra_util_Nova_Location* spectra_tree_nodes_Nova_Node_Nova_location;
 	nova_datastruct_list_Nova_Array* spectra_tree_nodes_Nova_Node_Nova_annotations;
 	spectra_tree_nodes_Nova_Node* spectra_tree_nodes_Nova_Node_Nova_parent;
@@ -19487,6 +19571,7 @@ CCLASS_CLASS
 	spectra_tree_nodes_variables_Nova_FieldDeclaration_VTable* vtable;
 	struct Private_spectra_tree_nodes_variables_Nova_FieldDeclaration* prv;
 	nova_Nova_String* nova_Nova_Object_Nova_hashCode;
+	int spectra_tree_nodes_Nova_Node_Nova_id;
 	spectra_util_Nova_Location* spectra_tree_nodes_Nova_Node_Nova_location;
 	nova_datastruct_list_Nova_Array* spectra_tree_nodes_Nova_Node_Nova_annotations;
 	spectra_tree_nodes_Nova_Node* spectra_tree_nodes_Nova_Node_Nova_parent;
@@ -19578,6 +19663,7 @@ CCLASS_CLASS
 	spectra_tree_nodes_variables_Nova_ImplicitDeclaration_VTable* vtable;
 	void* prv;
 	nova_Nova_String* nova_Nova_Object_Nova_hashCode;
+	int spectra_tree_nodes_Nova_Node_Nova_id;
 	spectra_util_Nova_Location* spectra_tree_nodes_Nova_Node_Nova_location;
 	nova_datastruct_list_Nova_Array* spectra_tree_nodes_Nova_Node_Nova_annotations;
 	spectra_tree_nodes_Nova_Node* spectra_tree_nodes_Nova_Node_Nova_parent;
@@ -19666,6 +19752,7 @@ CCLASS_CLASS
 	spectra_tree_nodes_variables_Nova_InstanceDeclaration_VTable* vtable;
 	void* prv;
 	nova_Nova_String* nova_Nova_Object_Nova_hashCode;
+	int spectra_tree_nodes_Nova_Node_Nova_id;
 	spectra_util_Nova_Location* spectra_tree_nodes_Nova_Node_Nova_location;
 	nova_datastruct_list_Nova_Array* spectra_tree_nodes_Nova_Node_Nova_annotations;
 	spectra_tree_nodes_Nova_Node* spectra_tree_nodes_Nova_Node_Nova_parent;
@@ -19751,6 +19838,7 @@ CCLASS_CLASS
 	spectra_tree_nodes_variables_Nova_LocalDeclaration_VTable* vtable;
 	void* prv;
 	nova_Nova_String* nova_Nova_Object_Nova_hashCode;
+	int spectra_tree_nodes_Nova_Node_Nova_id;
 	spectra_util_Nova_Location* spectra_tree_nodes_Nova_Node_Nova_location;
 	nova_datastruct_list_Nova_Array* spectra_tree_nodes_Nova_Node_Nova_annotations;
 	spectra_tree_nodes_Nova_Node* spectra_tree_nodes_Nova_Node_Nova_parent;
@@ -19825,6 +19913,7 @@ CCLASS_CLASS
 	spectra_tree_nodes_variables_Nova_Variable_VTable* vtable;
 	void* prv;
 	nova_Nova_String* nova_Nova_Object_Nova_hashCode;
+	int spectra_tree_nodes_Nova_Node_Nova_id;
 	spectra_util_Nova_Location* spectra_tree_nodes_Nova_Node_Nova_location;
 	nova_datastruct_list_Nova_Array* spectra_tree_nodes_Nova_Node_Nova_annotations;
 	spectra_tree_nodes_Nova_Node* spectra_tree_nodes_Nova_Node_Nova_parent;
@@ -19909,6 +19998,7 @@ CCLASS_CLASS
 	spectra_tree_nodes_variables_Nova_VariableDeclaration_VTable* vtable;
 	void* prv;
 	nova_Nova_String* nova_Nova_Object_Nova_hashCode;
+	int spectra_tree_nodes_Nova_Node_Nova_id;
 	spectra_util_Nova_Location* spectra_tree_nodes_Nova_Node_Nova_location;
 	nova_datastruct_list_Nova_Array* spectra_tree_nodes_Nova_Node_Nova_annotations;
 	spectra_tree_nodes_Nova_Node* spectra_tree_nodes_Nova_Node_Nova_parent;

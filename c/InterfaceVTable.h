@@ -632,6 +632,7 @@ typedef char (*nova_datastruct_list_Nova_ListFunctionMap_closure525_Nova_func)(v
 typedef nova_Nova_Object* (*nova_datastruct_list_Nova_ListFunctionMap_closure526_Nova_func)(void*, nova_exception_Nova_ExceptionData*, nova_Nova_Object*, void*);
 typedef nova_Nova_Object* (*nova_datastruct_list_Nova_ListFunctionMap_closure527_Nova_zipper)(void*, nova_exception_Nova_ExceptionData*, nova_Nova_Object*, nova_Nova_Object*, void*);
 typedef nova_Nova_Object* (*nova_datastruct_list_Nova_ListFunctionMap_closure528_Nova_func)(void*, nova_exception_Nova_ExceptionData*, nova_Nova_Object*, nova_Nova_Object*, int, nova_datastruct_list_Nova_List*, void*);
+typedef int (*nova_datastruct_list_Nova_List_closure685_Nova_zipper)(void*, nova_exception_Nova_ExceptionData*, nova_Nova_Object*, char, void*);
 typedef struct nova_datastruct_list_Nova_OrderedList nova_datastruct_list_Nova_OrderedList;
 typedef char (*nova_datastruct_list_Nova_OrderedList_closure213_Nova_condition)(void*, nova_exception_Nova_ExceptionData*, nova_Nova_Object*, int, nova_datastruct_list_Nova_OrderedList*, void*);
 typedef char (*nova_datastruct_list_Nova_OrderedList_closure214_Nova_condition)(void*, nova_exception_Nova_ExceptionData*, nova_Nova_Object*, int, nova_datastruct_list_Nova_OrderedList*, void*);

@@ -2,6 +2,7 @@
 
 nova_env novaEnv = {
 {
+&nova_Nova_Object_Nova_equals,
 0,
 &nova_Nova_Object_Nova_construct,
 },
@@ -585,7 +586,7 @@ nova_env novaEnv = {
 &nova_datastruct_list_Double_Nova_Array1Double_ImmutableArray_Nova_toImmutable,
 &nova_datastruct_list_Double_Nova_Array1Double_int_double_Nova_get,
 &nova_datastruct_list_Double_Nova_Array1Double_int_double_double_Nova_set,
-&nova_datastruct_list_Double_Nova_Array1Double_double_Array1_Nova_map,
+&nova_datastruct_list_Double_Nova_Array1Double_double_Array1Double1_Nova_map,
 &nova_datastruct_list_Double_Nova_Array1Double_Array1Double0_Nova_construct,
 &nova_datastruct_list_Double_Nova_Array1Double_int_int_Array1Double1_Nova_construct,
 &nova_datastruct_list_Double_Nova_Array1Double_Double_int_Array1Double2_Nova_construct,
@@ -1059,12 +1060,13 @@ nova_env novaEnv = {
 &nova_datastruct_list_Nova_List_Nova_firstOrThrow,
 0,
 &nova_datastruct_list_Nova_List_Nova_firstNonNull,
-&nova_datastruct_list_Nova_List_Nova_zip,
+&nova_datastruct_list_Nova_List_0_Nova_zip,
 0,
 &nova_datastruct_list_Nova_List_Nova_reduce,
 0,
 &nova_datastruct_list_Nova_List_Nova_stitch,
 &nova_datastruct_list_Nova_List_Nova_toEnglish,
+&nova_datastruct_list_Nova_List_Array1Byte_int_List1Int1_Nova_zip,
 },
 {
 &nova_datastruct_list_Nova_ListFunctionMap_functionMap1_Nova_toArray,
@@ -3519,6 +3521,7 @@ nova_env novaEnv = {
 &spectra_tree_nodes_Nova_NodeFunctionMap_Nova_construct,
 },
 {
+&spectra_tree_nodes_Nova_NodePropertyMap_functionMap_Nova_id,
 &spectra_tree_nodes_Nova_NodePropertyMap_functionMap_Nova_location,
 &spectra_tree_nodes_Nova_NodePropertyMap_functionMap0_Nova_annotations,
 &spectra_tree_nodes_Nova_NodePropertyMap_functionMap_Nova_parent,
