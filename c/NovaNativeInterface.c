@@ -510,7 +510,6 @@ nova_env novaEnv = {
 &nova_datastruct_list_Nova_Array_Nova_toImmutable,
 &nova_datastruct_list_Nova_Array_Nova_get,
 &nova_datastruct_list_Nova_Array_Nova_set,
-&nova_datastruct_list_Nova_Array_double_Array0_Nova_add,
 &nova_datastruct_list_Nova_Array_0_Nova_construct,
 &nova_datastruct_list_Nova_Array_1_Nova_construct,
 &nova_datastruct_list_Nova_Array_2_Nova_construct,
