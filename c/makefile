@@ -1,10 +1,10 @@
 NOVA_DEPS = NovaOutput.h C:/Users/Braden/GitHub/NovaWorkspace/Nova-C/nova/NativeObject.h C:/Users/Braden/GitHub/NovaWorkspace/Nova-C/nova/NativeSystem.h C:/Users/Braden/GitHub/NovaWorkspace/Nova-C/nova/database/NativeDBConnector.h C:/Users/Braden/GitHub/NovaWorkspace/Nova-C/nova/gc/NativeGC.h C:/Users/Braden/GitHub/NovaWorkspace/Nova-C/nova/io/NativeConsole.h C:/Users/Braden/GitHub/NovaWorkspace/Nova-C/nova/io/NativeFile.h C:/Users/Braden/GitHub/NovaWorkspace/Nova-C/nova/network/NativeClientSocket.h C:/Users/Braden/GitHub/NovaWorkspace/Nova-C/nova/network/NativeSocket.h C:/Users/Braden/GitHub/NovaWorkspace/Nova-C/nova/network/NativeServerSocket.h C:/Users/Braden/GitHub/NovaWorkspace/Nova-C/nova/security/NativeMD5.h C:/Users/Braden/GitHub/NovaWorkspace/Nova-C/nova/star/NativeWindow.h C:/Users/Braden/GitHub/NovaWorkspace/Nova-C/nova/thread/NativeThread.h C:/Users/Braden/GitHub/NovaWorkspace/Nova-C/nova/time/NativeDate.h C:/Users/Braden/GitHub/NovaWorkspace/Nova-C/nova/time/NativeTime.h
 NOVA_OBJ = NovaOutput.o C:/Users/Braden/GitHub/NovaWorkspace/Nova-C/nova/NativeObject.o C:/Users/Braden/GitHub/NovaWorkspace/Nova-C/nova/NativeSystem.o C:/Users/Braden/GitHub/NovaWorkspace/Nova-C/nova/database/NativeDBConnector.o C:/Users/Braden/GitHub/NovaWorkspace/Nova-C/nova/gc/NativeGC.o C:/Users/Braden/GitHub/NovaWorkspace/Nova-C/nova/io/NativeConsole.o C:/Users/Braden/GitHub/NovaWorkspace/Nova-C/nova/io/NativeFile.o C:/Users/Braden/GitHub/NovaWorkspace/Nova-C/nova/network/NativeClientSocket.o C:/Users/Braden/GitHub/NovaWorkspace/Nova-C/nova/network/NativeSocket.o C:/Users/Braden/GitHub/NovaWorkspace/Nova-C/nova/network/NativeServerSocket.o C:/Users/Braden/GitHub/NovaWorkspace/Nova-C/nova/security/NativeMD5.o C:/Users/Braden/GitHub/NovaWorkspace/Nova-C/nova/star/NativeWindow.o C:/Users/Braden/GitHub/NovaWorkspace/Nova-C/nova/thread/NativeThread.o C:/Users/Braden/GitHub/NovaWorkspace/Nova-C/nova/time/NativeDate.o C:/Users/Braden/GitHub/NovaWorkspace/Nova-C/nova/time/NativeTime.o
 
-NOVA_COMPILE_HOME = C:\Users\Braden\GitHub\NovaWorkspace\Nova-C
+NOVA_COMPILE_HOME = C:/Users/Braden/GitHub/NovaWorkspace/Nova-C
 EXEC_PATH = C:/Users/Braden/GitHub/NovaWorkspace/Misc/example/bin/Executable
 LDIRS=-LC:/Users/Braden/GitHub/NovaWorkspace/Nova/../Misc/example/bin
-NOVA_STDLIB_LOCATION = C:\Users\Braden\GitHub\NovaWorkspace/StandardLibrary
+NOVA_STDLIB_LOCATION = C:/Users/Braden/GitHub/NovaWorkspace/StandardLibrary
 
 MAKEFILE_LOCATION = $(NOVA_COMPILE_HOME)/makefile.nova
 
