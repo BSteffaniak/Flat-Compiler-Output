@@ -1529,6 +1529,17 @@ nova_env novaEnv = {
 },
 
 {
+&nova_exception_Nova_StackTrace_Nova_construct,
+},
+{
+&nova_exception_Nova_StackTraceFunctionMap_functionMapStackTraceFunctionMap_Nova_construct,
+&nova_exception_Nova_StackTraceFunctionMap_Nova_construct,
+},
+{
+&nova_exception_Nova_StackTracePropertyMap_Nova_construct,
+},
+
+{
 &nova_exception_Nova_UnimplementedOperationException_Nova_construct,
 },
 {
@@ -2860,17 +2871,6 @@ nova_env novaEnv = {
 },
 
 {
-&nova_stack_Nova_Stack_Nova_construct,
-},
-{
-&nova_stack_Nova_StackFunctionMap_functionMapStackFunctionMap_Nova_construct,
-&nova_stack_Nova_StackFunctionMap_Nova_construct,
-},
-{
-&nova_stack_Nova_StackPropertyMap_Nova_construct,
-},
-
-{
 &nova_star_Nova_Frame_Nova_construct,
 },
 {
@@ -3472,6 +3472,8 @@ nova_env novaEnv = {
 &novex_astro_tree_nodes_Nova_ClassDeclaration_Nova_writeExtension,
 &novex_astro_tree_nodes_Nova_ClassDeclaration_Nova_writeImplementedInterfaces,
 &novex_astro_tree_nodes_Nova_ClassDeclaration_Nova_writeArrayBracketOverload,
+&novex_astro_tree_nodes_Nova_ClassDeclaration_Nova_writeFields,
+&novex_astro_tree_nodes_Nova_ClassDeclaration_Nova_writeFunctions,
 &novex_astro_tree_nodes_Nova_ClassDeclaration_0_Nova_cloneTo,
 &novex_astro_tree_nodes_Nova_ClassDeclaration_Nova_construct,
 },
@@ -3487,6 +3489,8 @@ nova_env novaEnv = {
 &novex_astro_tree_nodes_Nova_ClassDeclarationFunctionMap_functionMap_Nova_writeExtension,
 &novex_astro_tree_nodes_Nova_ClassDeclarationFunctionMap_functionMap_Nova_writeImplementedInterfaces,
 &novex_astro_tree_nodes_Nova_ClassDeclarationFunctionMap_functionMap_Nova_writeArrayBracketOverload,
+&novex_astro_tree_nodes_Nova_ClassDeclarationFunctionMap_functionMap_Nova_writeFields,
+&novex_astro_tree_nodes_Nova_ClassDeclarationFunctionMap_functionMap_Nova_writeFunctions,
 &novex_astro_tree_nodes_Nova_ClassDeclarationFunctionMap_functionMap_Nova_toNova,
 &novex_astro_tree_nodes_Nova_ClassDeclarationFunctionMap_functionMap_Nova_toString,
 &novex_astro_tree_nodes_Nova_ClassDeclarationFunctionMap_functionMap0_Nova_cloneTo,
