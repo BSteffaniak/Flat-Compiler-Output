@@ -2234,6 +2234,8 @@ nova_env novaEnv = {
 },
 
 {
+&nova_primitive_number_Nova_Int_char_long_long1_Nova_compareTo,
+&nova_primitive_number_Nova_Int_int_char1_Nova_equals,
 &nova_primitive_number_Nova_Int_Nova_construct,
 },
 {
@@ -3501,12 +3503,14 @@ nova_env novaEnv = {
 },
 
 {
+&novex_astro_tree_nodes_Nova_Scope_1_Nova_writeNova,
 &novex_astro_tree_nodes_Nova_Scope_Nova_construct,
 },
 {
 &novex_astro_tree_nodes_Nova_ScopeFunctionMap_functionMap_Nova_parseStatement,
 &novex_astro_tree_nodes_Nova_ScopeFunctionMap_functionMap_Nova_generateTemporaryScopeNode,
-&novex_astro_tree_nodes_Nova_ScopeFunctionMap_functionMap_Nova_writeNova,
+&novex_astro_tree_nodes_Nova_ScopeFunctionMap_functionMap0_Nova_writeNova,
+&novex_astro_tree_nodes_Nova_ScopeFunctionMap_functionMap1_Nova_writeNova,
 &novex_astro_tree_nodes_Nova_ScopeFunctionMap_Nova_construct,
 },
 {
@@ -4210,11 +4214,18 @@ nova_env novaEnv = {
 },
 
 {
+&novex_astro_tree_nodes_functions_Nova_Parameter_Nova_parseDefaultValueAndGetRemaining,
+0,
 &novex_astro_tree_nodes_functions_Nova_Parameter_Nova_cloneTo,
+&novex_astro_tree_nodes_functions_Nova_Parameter_Nova_writeDefaultValue,
 &novex_astro_tree_nodes_functions_Nova_Parameter_Nova_construct,
 },
 {
+&novex_astro_tree_nodes_functions_Nova_ParameterFunctionMap_functionMap_Nova_parseDefaultValueAndGetRemaining,
+&novex_astro_tree_nodes_functions_Nova_ParameterFunctionMap_functionMap_Nova_parseDefaultValue,
 &novex_astro_tree_nodes_functions_Nova_ParameterFunctionMap_functionMap_Nova_cloneTo,
+&novex_astro_tree_nodes_functions_Nova_ParameterFunctionMap_functionMap_Nova_writeDefaultValue,
+&novex_astro_tree_nodes_functions_Nova_ParameterFunctionMap_functionMap_Nova_writeNova,
 &novex_astro_tree_nodes_functions_Nova_ParameterFunctionMap_Nova_construct,
 },
 {
@@ -4265,6 +4276,7 @@ nova_env novaEnv = {
 &novex_astro_tree_nodes_functions_closures_Nova_ClosureDeclaration_Nova_construct,
 },
 {
+&novex_astro_tree_nodes_functions_closures_Nova_ClosureDeclarationFunctionMap_functionMap_Nova_parseDefaultValue,
 &novex_astro_tree_nodes_functions_closures_Nova_ClosureDeclarationFunctionMap_functionMap_Nova_parseType,
 &novex_astro_tree_nodes_functions_closures_Nova_ClosureDeclarationFunctionMap_functionMap0_Nova_parseParameter,
 &novex_astro_tree_nodes_functions_closures_Nova_ClosureDeclarationFunctionMap_functionMap_Nova_writeType,
