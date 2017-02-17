@@ -1546,11 +1546,37 @@ typedef void (*nova_Nova_System_closure4_Nova_exit)(void*, nova_exception_Nova_E
 
 
 nova_Nova_String* nova_Nova_System_static_Nova_lambda3(nova_Nova_System* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* arg, int _2, nova_datastruct_list_Nova_Array* _3, Context2* context);
+nova_Nova_String* nova_Nova_System_Nova_TARGET;
+nova_Nova_String* nova_Nova_System_Nova_OS;
+int nova_Nova_System_Nova_WINDOWS;
+int nova_Nova_System_Nova_LINUX;
+int nova_Nova_System_Nova_MAC_OSX;
+int nova_Nova_System_Nova_OS_INT;
 nova_time_Nova_CumulativeTimer* nova_Nova_System_Nova_overheadTimer;
 void nova_Nova_System_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData)
 {
 	{
+		nova_Nova_System_Nova_TARGET = nova_Nova_String_1_Nova_construct(0, exceptionData,
+			(char*)("C"));
+		nova_Nova_System_Nova_WINDOWS = (int)(1);
+		nova_Nova_System_Nova_LINUX = (int)(2);
+		nova_Nova_System_Nova_MAC_OSX = (int)(3);
 		nova_Nova_System_Nova_overheadTimer = nova_time_Nova_CumulativeTimer_Nova_construct(0, exceptionData);
+	}
+	{
+		#ifdef _WIN32
+		nova_Nova_System_Nova_OS = nova_Nova_String_1_Nova_construct(0, exceptionData,
+			(char*)("Windows"));
+		nova_Nova_System_Nova_OS_INT = nova_Nova_System_Nova_WINDOWS;
+		#elif defined(__linux__)
+		nova_Nova_System_Nova_OS = nova_Nova_String_1_Nova_construct(0, exceptionData,
+			(char*)("Linux"));
+		nova_Nova_System_Nova_OS_INT = nova_Nova_System_Nova_LINUX;
+		#elif defined(__APPLE__)
+		nova_Nova_System_Nova_OS = nova_Nova_String_1_Nova_construct(0, exceptionData,
+			(char*)("Mac OS X"));
+		nova_Nova_System_Nova_OS_INT = nova_Nova_System_Nova_MAC_OSX;
+		#endif
 	}
 }
 
@@ -1777,6 +1803,36 @@ void nova_Nova_SystemPropertyMap_Nova_destroy(nova_Nova_SystemPropertyMap** this
 
 void nova_Nova_SystemPropertyMap_Nova_this(nova_Nova_SystemPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
+}
+
+nova_Nova_String* nova_Nova_SystemPropertyMap_functionMap_static_Nova_TARGET(nova_Nova_SystemPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+	return nova_Nova_System_Nova_TARGET;
+}
+
+nova_Nova_String* nova_Nova_SystemPropertyMap_functionMap_static_Nova_OS(nova_Nova_SystemPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+	return nova_Nova_System_Nova_OS;
+}
+
+int nova_Nova_SystemPropertyMap_functionMap_static_Nova_WINDOWS(nova_Nova_SystemPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+	return nova_Nova_System_Nova_WINDOWS;
+}
+
+int nova_Nova_SystemPropertyMap_functionMap_static_Nova_LINUX(nova_Nova_SystemPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+	return nova_Nova_System_Nova_LINUX;
+}
+
+int nova_Nova_SystemPropertyMap_functionMap_static_Nova_MAC_OSX(nova_Nova_SystemPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+	return nova_Nova_System_Nova_MAC_OSX;
+}
+
+int nova_Nova_SystemPropertyMap_functionMap_static_Nova_OS_INT(nova_Nova_SystemPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+	return nova_Nova_System_Nova_OS_INT;
 }
 
 nova_time_Nova_CumulativeTimer* nova_Nova_SystemPropertyMap_functionMap_static_Nova_overheadTimer(nova_Nova_SystemPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData)
@@ -25937,6 +25993,15 @@ nova_Nova_String* nova_io_Nova_FileReader_Nova_readString(nova_io_Nova_FileReade
 	l1_Nova_bufferSize - 1);
 }
 
+char nova_io_Nova_FileReader_Nova_readChar(nova_io_Nova_FileReader* this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+	char temp = getc(this->prv->nova_io_Nova_FileReader_Nova_fp);
+	if (temp != EOF) {
+		return temp;
+	}
+	return (char)0;
+}
+
 char nova_io_Nova_FileReader_Nova_close(nova_io_Nova_FileReader* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
 	if (nova_io_Nova_FileReader_Accessorfunc_Nova_isOpen((nova_io_Nova_FileReader*)(this), exceptionData))
@@ -26023,6 +26088,11 @@ nova_Nova_String* nova_io_Nova_FileReaderFunctionMap_functionMap_Nova_readLine(n
 nova_Nova_String* nova_io_Nova_FileReaderFunctionMap_functionMap_Nova_readString(nova_io_Nova_FileReaderFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_io_Nova_FileReader* reference)
 {
 	return nova_io_Nova_FileReader_Nova_readString((nova_io_Nova_FileReader*)(reference), exceptionData);
+}
+
+char nova_io_Nova_FileReaderFunctionMap_functionMap_Nova_readChar(nova_io_Nova_FileReaderFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_io_Nova_FileReader* reference)
+{
+	return nova_io_Nova_FileReader_Nova_readChar((nova_io_Nova_FileReader*)(reference), exceptionData);
 }
 
 char nova_io_Nova_FileReaderFunctionMap_functionMap_Nova_close(nova_io_Nova_FileReaderFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_io_Nova_FileReader* reference)
@@ -35239,10 +35309,29 @@ void nova_meta_library_Nova_InvalidLibraryExceptionPropertyMap_Nova_super(nova_m
 
 
 
+nova_io_Nova_File* nova_meta_library_Nova_Library_Nova_loadFile(nova_meta_library_Nova_Library* this, nova_exception_Nova_ExceptionData* exceptionData);
 nova_io_Nova_File* nova_meta_library_Nova_Library_static_Nova_loadFromSource(nova_meta_library_Nova_Library* this, nova_exception_Nova_ExceptionData* exceptionData, nova_io_Nova_File* source);
+nova_Nova_String* nova_meta_library_Nova_Library_Nova_EXTENSION;
 void nova_meta_library_Nova_Library_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData)
 {
 	{
+	}
+	{
+		if ((nova_Nova_System_Nova_OS_INT) == nova_Nova_System_Nova_WINDOWS)
+		{
+			nova_meta_library_Nova_Library_Nova_EXTENSION = nova_Nova_String_1_Nova_construct(0, exceptionData,
+				(char*)(".dll"));
+		}
+		else if ((nova_Nova_System_Nova_OS_INT) == nova_Nova_System_Nova_LINUX)
+		{
+			nova_meta_library_Nova_Library_Nova_EXTENSION = nova_Nova_String_1_Nova_construct(0, exceptionData,
+				(char*)(".so"));
+		}
+		else if ((nova_Nova_System_Nova_OS_INT) == nova_Nova_System_Nova_MAC_OSX)
+		{
+			nova_meta_library_Nova_Library_Nova_EXTENSION = nova_Nova_String_1_Nova_construct(0, exceptionData,
+				(char*)(".dylib"));
+		}
 	}
 }
 
@@ -35282,9 +35371,32 @@ void nova_meta_library_Nova_Library_Nova_this(nova_meta_library_Nova_Library* th
 
 void nova_meta_library_Nova_Library_Nova_load(nova_meta_library_Nova_Library* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
+	nova_thread_Nova_Thread_static_Nova_lock((nova_thread_Nova_Thread*)(0), exceptionData);
+	if ((nova_meta_library_Nova_Library_Nova_loadFile((nova_meta_library_Nova_Library*)(this), exceptionData)) != (nova_io_Nova_File*)nova_null)
+	{
+		#ifdef _WIN32
+		HINSTANCE lib = LoadLibrary((LPCSTR)this->nova_meta_library_Nova_Library_Nova_loadedLibrary->nova_io_Nova_File_Nova_location->nova_Nova_String_Nova_chars->nova_datastruct_list_Nova_StringCharArray_Nova_data);
+		if (lib != NULL) {
+			typedef void (*staticFunc)(void*, void*);
+			staticFunc func = (staticFunc)GetProcAddress(lib, "nova_test_Nova_Test_static_Nova_staticFunc");
+			func(0, 0);
+		} else {
+			THROW(nova_meta_library_Nova_InvalidLibraryException_Nova_construct(0, exceptionData,
+					(nova_Nova_String*)(nova_operators_Nova_PlusOperator_virtual1_Nova_plus((nova_operators_Nova_PlusOperator*)(nova_Nova_String_1_Nova_construct(0, exceptionData,
+									(char*)("Failed to call LoadLibrary for library at location "))), exceptionData,
+							(nova_Nova_Object*)(nova_operators_Nova_PlusOperator_virtual1_Nova_plus((nova_operators_Nova_PlusOperator*)((this->nova_meta_library_Nova_Library_Nova_loadedLibrary->nova_io_Nova_File_Nova_location)), exceptionData,
+									(nova_Nova_Object*)(nova_Nova_String_1_Nova_construct(0, exceptionData,
+											(char*)("")))))))), 0);
+		}
+		#endif
+	}
+	nova_thread_Nova_Thread_static_Nova_unlock((nova_thread_Nova_Thread*)(0), exceptionData);
+}
+
+nova_io_Nova_File* nova_meta_library_Nova_Library_Nova_loadFile(nova_meta_library_Nova_Library* this, nova_exception_Nova_ExceptionData* exceptionData)
+{
 	nova_io_Nova_File* l1_Nova_libFile = (nova_io_Nova_File*)nova_null;
 	
-	nova_thread_Nova_Thread_static_Nova_lock((nova_thread_Nova_Thread*)(0), exceptionData);
 	if (!nova_io_Nova_File_Accessorfunc_Nova_exists((nova_io_Nova_File*)(this->nova_meta_library_Nova_Library_Nova_library), exceptionData))
 	{
 		THROW(nova_meta_library_Nova_InvalidLibraryException_Nova_construct(0, exceptionData,
@@ -35328,15 +35440,14 @@ void nova_meta_library_Nova_Library_Nova_load(nova_meta_library_Nova_Library* th
 								(nova_Nova_Object*)(nova_Nova_String_1_Nova_construct(0, exceptionData,
 										(char*)("'")))))))), 0);
 	}
-	nova_thread_Nova_Thread_static_Nova_unlock((nova_thread_Nova_Thread*)(0), exceptionData);
+	return this->nova_meta_library_Nova_Library_Nova_loadedLibrary;
 }
 
 nova_io_Nova_File* nova_meta_library_Nova_Library_static_Nova_loadFromSource(nova_meta_library_Nova_Library* this, nova_exception_Nova_ExceptionData* exceptionData, nova_io_Nova_File* source)
 {
 	nova_Nova_String* l1_Nova_path = (nova_Nova_String*)nova_null;
 	nova_process_Nova_Process* l1_Nova_process = (nova_process_Nova_Process*)nova_null;
-	nova_Nova_String* l2_Nova_line = (nova_Nova_String*)nova_null;
-	nova_Nova_String* l1_Nova_extension = (nova_Nova_String*)nova_null;
+	char l2_Nova_char = 0;
 	nova_io_Nova_File* l1_Nova_libFile = (nova_io_Nova_File*)nova_null;
 	
 	l1_Nova_path = (nova_Nova_String*)(nova_Nova_String_virtual_Nova_substring((nova_Nova_String*)(source->nova_io_Nova_File_Nova_location), exceptionData,
@@ -35345,18 +35456,6 @@ nova_io_Nova_File* nova_meta_library_Nova_Library_static_Nova_loadFromSource(nov
 				'/',
 				(int)(intptr_t)nova_null,
 				(int)(intptr_t)nova_null) + 1));
-	nova_io_Nova_Console_static_Nova_log((nova_io_Nova_Console*)(0), exceptionData,
-		(nova_Nova_Object*)(nova_operators_Nova_PlusOperator_virtual1_Nova_plus((nova_operators_Nova_PlusOperator*)(nova_Nova_String_1_Nova_construct(0, exceptionData,
-						(char*)("About to execute "))), exceptionData,
-				(nova_Nova_Object*)(nova_operators_Nova_PlusOperator_virtual1_Nova_plus((nova_operators_Nova_PlusOperator*)(nova_Nova_String_1_Nova_construct(0, exceptionData,
-								(char*)("novac "))), exceptionData,
-						(nova_Nova_Object*)(nova_operators_Nova_PlusOperator_virtual1_Nova_plus((nova_operators_Nova_PlusOperator*)((source->nova_io_Nova_File_Nova_location)), exceptionData,
-								(nova_Nova_Object*)(nova_operators_Nova_PlusOperator_virtual1_Nova_plus((nova_operators_Nova_PlusOperator*)(nova_Nova_String_1_Nova_construct(0, exceptionData,
-												(char*)(" -library -o "))), exceptionData,
-										(nova_Nova_Object*)(nova_operators_Nova_PlusOperator_virtual1_Nova_plus((nova_operators_Nova_PlusOperator*)((l1_Nova_path)), exceptionData,
-												(nova_Nova_Object*)(nova_operators_Nova_PlusOperator_virtual1_Nova_plus((nova_operators_Nova_PlusOperator*)(nova_Nova_String_1_Nova_construct(0, exceptionData,
-																(char*)("lib"))), exceptionData,
-														(nova_Nova_Object*)((nova_io_Nova_File_Accessorfunc_Nova_rootName((nova_io_Nova_File*)(source), exceptionData))))))))))))))));
 	l1_Nova_process = nova_Nova_System_0_static_Nova_execute((nova_Nova_System*)(0), exceptionData,
 		(nova_Nova_String*)(nova_operators_Nova_PlusOperator_virtual1_Nova_plus((nova_operators_Nova_PlusOperator*)(nova_Nova_String_1_Nova_construct(0, exceptionData,
 						(char*)("novac "))), exceptionData,
@@ -35367,16 +35466,11 @@ nova_io_Nova_File* nova_meta_library_Nova_Library_static_Nova_loadFromSource(nov
 										(nova_Nova_Object*)(nova_operators_Nova_PlusOperator_virtual1_Nova_plus((nova_operators_Nova_PlusOperator*)(nova_Nova_String_1_Nova_construct(0, exceptionData,
 														(char*)("lib"))), exceptionData,
 												(nova_Nova_Object*)((nova_io_Nova_File_Accessorfunc_Nova_rootName((nova_io_Nova_File*)(source), exceptionData))))))))))))));
-	while ((l2_Nova_line = (nova_Nova_String*)(nova_io_Nova_InputStream_virtual_Nova_readString((nova_io_Nova_InputStream*)(l1_Nova_process->nova_process_Nova_Process_Nova_reader), exceptionData))) != (nova_Nova_String*)nova_null)
+	while ((l2_Nova_char = nova_io_Nova_FileReader_Nova_readChar((nova_io_Nova_FileReader*)(l1_Nova_process->nova_process_Nova_Process_Nova_reader), exceptionData)) != 0)
 	{
-		nova_io_Nova_Console_static_Nova_log((nova_io_Nova_Console*)(0), exceptionData,
-			(nova_Nova_Object*)(l2_Nova_line));
+		nova_io_Nova_Console_8_static_Nova_write((nova_io_Nova_Console*)(0), exceptionData,
+		l2_Nova_char);
 	}
-	nova_io_Nova_Console_static_Nova_log((nova_io_Nova_Console*)(0), exceptionData,
-		(nova_Nova_Object*)(nova_Nova_String_1_Nova_construct(0, exceptionData,
-				(char*)("Done"))));
-	l1_Nova_extension = nova_Nova_String_1_Nova_construct(0, exceptionData,
-		(char*)(".dll"));
 	l1_Nova_libFile = nova_io_Nova_File_1_Nova_construct(0, exceptionData,
 		(nova_Nova_String*)(nova_operators_Nova_PlusOperator_virtual1_Nova_plus((nova_operators_Nova_PlusOperator*)(l1_Nova_path), exceptionData,
 				(nova_Nova_Object*)(nova_operators_Nova_PlusOperator_virtual1_Nova_plus((nova_operators_Nova_PlusOperator*)(nova_operators_Nova_PlusOperator_virtual1_Nova_plus((nova_operators_Nova_PlusOperator*)(nova_Nova_String_1_Nova_construct(0, exceptionData,
@@ -35384,13 +35478,7 @@ nova_io_Nova_File* nova_meta_library_Nova_Library_static_Nova_loadFromSource(nov
 								(nova_Nova_Object*)(nova_operators_Nova_PlusOperator_virtual1_Nova_plus((nova_operators_Nova_PlusOperator*)((nova_io_Nova_File_Accessorfunc_Nova_rootName((nova_io_Nova_File*)(source), exceptionData))), exceptionData,
 										(nova_Nova_Object*)(nova_Nova_String_1_Nova_construct(0, exceptionData,
 												(char*)(""))))))), exceptionData,
-						(nova_Nova_Object*)(l1_Nova_extension))))));
-	nova_io_Nova_Console_static_Nova_log((nova_io_Nova_Console*)(0), exceptionData,
-		(nova_Nova_Object*)(nova_operators_Nova_PlusOperator_virtual1_Nova_plus((nova_operators_Nova_PlusOperator*)(nova_Nova_String_1_Nova_construct(0, exceptionData,
-						(char*)("libfile loc : "))), exceptionData,
-				(nova_Nova_Object*)(nova_operators_Nova_PlusOperator_virtual1_Nova_plus((nova_operators_Nova_PlusOperator*)((l1_Nova_libFile->nova_io_Nova_File_Nova_location)), exceptionData,
-						(nova_Nova_Object*)(nova_Nova_String_1_Nova_construct(0, exceptionData,
-								(char*)(""))))))));
+						(nova_Nova_Object*)(nova_meta_library_Nova_Library_Nova_EXTENSION))))));
 	if (!nova_io_Nova_File_Accessor_Nova_isFile((nova_io_Nova_File*)(l1_Nova_libFile), exceptionData))
 	{
 		THROW(nova_meta_library_Nova_InvalidLibraryException_Nova_construct(0, exceptionData,
@@ -35413,6 +35501,7 @@ void nova_meta_library_Nova_Library_Nova_super(nova_meta_library_Nova_Library* t
 }
 
 
+nova_io_Nova_File* nova_meta_library_Nova_LibraryFunctionMap_functionMap_Nova_loadFile(nova_meta_library_Nova_LibraryFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_meta_library_Nova_Library* reference);
 nova_io_Nova_File* nova_meta_library_Nova_LibraryFunctionMap_functionMap_static_Nova_loadFromSource(nova_meta_library_Nova_LibraryFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_io_Nova_File* source);
 void nova_meta_library_Nova_LibraryFunctionMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData)
 {
@@ -35459,6 +35548,11 @@ nova_meta_library_Nova_Library* nova_meta_library_Nova_LibraryFunctionMap_functi
 void nova_meta_library_Nova_LibraryFunctionMap_functionMap_Nova_load(nova_meta_library_Nova_LibraryFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_meta_library_Nova_Library* reference)
 {
 	nova_meta_library_Nova_Library_Nova_load((nova_meta_library_Nova_Library*)(reference), exceptionData);
+}
+
+nova_io_Nova_File* nova_meta_library_Nova_LibraryFunctionMap_functionMap_Nova_loadFile(nova_meta_library_Nova_LibraryFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_meta_library_Nova_Library* reference)
+{
+	return nova_meta_library_Nova_Library_Nova_loadFile((nova_meta_library_Nova_Library*)(reference), exceptionData);
 }
 
 nova_io_Nova_File* nova_meta_library_Nova_LibraryFunctionMap_functionMap_static_Nova_loadFromSource(nova_meta_library_Nova_LibraryFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_io_Nova_File* source)
@@ -35515,6 +35609,11 @@ nova_io_Nova_File* nova_meta_library_Nova_LibraryPropertyMap_functionMap_Nova_li
 nova_io_Nova_File* nova_meta_library_Nova_LibraryPropertyMap_functionMap_Nova_loadedLibrary(nova_meta_library_Nova_LibraryPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_meta_library_Nova_Library* reference)
 {
 	return reference->nova_meta_library_Nova_Library_Nova_loadedLibrary;
+}
+
+nova_Nova_String* nova_meta_library_Nova_LibraryPropertyMap_functionMap_static_Nova_EXTENSION(nova_meta_library_Nova_LibraryPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+	return nova_meta_library_Nova_Library_Nova_EXTENSION;
 }
 
 void nova_meta_library_Nova_LibraryPropertyMap_Nova_super(nova_meta_library_Nova_LibraryPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData)
