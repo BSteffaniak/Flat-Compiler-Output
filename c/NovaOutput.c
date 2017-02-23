@@ -66,13 +66,13 @@ void nova_Nova_Object_Nova_this(nova_Nova_Object* this, nova_exception_Nova_Exce
 nova_Nova_String* nova_Nova_Object_Accessorfunc_Nova_hashCode(nova_Nova_Object* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
 	return nova_Nova_String_1_Nova_construct(0, exceptionData,
-		*hashCode(this));
+		hashCode(this));
 }
 
 
 long_long nova_Nova_Object_Accessor_Nova_hashCodeLong(nova_Nova_Object* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
-	return strtol(*hashCode(this),
+	return strtol(hashCode(this),
 		NULL,
 	16);
 }
@@ -2181,7 +2181,7 @@ void nova_database_Nova_DBConnector_2_Nova_connect(nova_database_Nova_DBConnecto
 void nova_database_Nova_DBConnector_Nova_updateError(nova_database_Nova_DBConnector* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
 	this->nova_database_Nova_DBConnector_Nova_error = nova_Nova_String_1_Nova_construct(0, exceptionData,
-		*nova_db_error(this->prv->nova_database_Nova_DBConnector_Nova_mysql));
+		nova_db_error(this->prv->nova_database_Nova_DBConnector_Nova_mysql));
 }
 
 void nova_database_Nova_DBConnector_Nova_changeUser(nova_database_Nova_DBConnector* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* username, nova_Nova_String* password, nova_Nova_String* database)
@@ -27385,7 +27385,7 @@ nova_exception_Nova_Exception* nova_exception_Nova_ExceptionDataPropertyMap_func
 	return reference->nova_exception_Nova_ExceptionData_Nova_thrownException;
 }
 
-buffer** nova_exception_Nova_ExceptionDataPropertyMap_functionMap_Nova_buf(nova_exception_Nova_ExceptionDataPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_exception_Nova_ExceptionData* reference)
+buffer* nova_exception_Nova_ExceptionDataPropertyMap_functionMap_Nova_buf(nova_exception_Nova_ExceptionDataPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_exception_Nova_ExceptionData* reference)
 {
 	return reference->nova_exception_Nova_ExceptionData_Nova_buf;
 }
@@ -27807,6 +27807,150 @@ void nova_exception_Nova_StackTracePropertyMap_Nova_this(nova_exception_Nova_Sta
 }
 
 void nova_exception_Nova_StackTracePropertyMap_Nova_super(nova_exception_Nova_StackTracePropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+}
+
+
+
+
+void nova_exception_Nova_UnimplementedForTargetException_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData)
+{
+	{
+	}
+}
+
+nova_exception_Nova_UnimplementedForTargetException* nova_exception_Nova_UnimplementedForTargetException_Nova_construct(nova_exception_Nova_UnimplementedForTargetException* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* message)
+{
+	CCLASS_NEW(nova_exception_Nova_UnimplementedForTargetException, this,);
+	this->vtable = &nova_exception_Nova_UnimplementedForTargetException_VTable_val;
+	nova_Nova_Object_Nova_super((nova_Nova_Object*)this, exceptionData);
+	nova_exception_Nova_Exception_Nova_super((nova_exception_Nova_Exception*)this, exceptionData);
+	nova_exception_Nova_UnimplementedOperationException_Nova_super((nova_exception_Nova_UnimplementedOperationException*)this, exceptionData);
+	nova_exception_Nova_UnimplementedForTargetException_Nova_super(this, exceptionData);
+	
+	{
+		nova_exception_Nova_UnimplementedForTargetException_Nova_this((nova_exception_Nova_UnimplementedForTargetException*)(this), exceptionData,
+		message);
+	}
+	
+	return this;
+}
+
+void nova_exception_Nova_UnimplementedForTargetException_Nova_destroy(nova_exception_Nova_UnimplementedForTargetException** this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+	if (!*this)
+	{
+		return;
+	}
+	
+	
+	NOVA_FREE(*this);
+}
+
+void nova_exception_Nova_UnimplementedForTargetException_Nova_this(nova_exception_Nova_UnimplementedForTargetException* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* message)
+{
+	message = (nova_Nova_String*)(message == 0 ? (nova_Nova_Object*)nova_Nova_String_1_Nova_construct(0, exceptionData,
+			(char*)("Unimplemented")) : (nova_Nova_Object*)message);
+	nova_exception_Nova_UnimplementedOperationException_Nova_this((nova_exception_Nova_UnimplementedOperationException*)(this), exceptionData,
+		(nova_Nova_String*)(nova_operators_Nova_PlusOperator_virtual1_Nova_plus((nova_operators_Nova_PlusOperator*)(message), exceptionData,
+				(nova_Nova_Object*)(nova_operators_Nova_PlusOperator_virtual1_Nova_plus((nova_operators_Nova_PlusOperator*)(nova_Nova_String_1_Nova_construct(0, exceptionData,
+								(char*)(" (target: "))), exceptionData,
+							(nova_Nova_Object*)(nova_operators_Nova_PlusOperator_virtual1_Nova_plus((nova_operators_Nova_PlusOperator*)((nova_Nova_System_Nova_TARGET)), exceptionData,
+									(nova_Nova_Object*)(nova_Nova_String_1_Nova_construct(0, exceptionData,
+											(char*)(")"))))))))));
+}
+
+void nova_exception_Nova_UnimplementedForTargetException_Nova_super(nova_exception_Nova_UnimplementedForTargetException* this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+}
+
+void nova_exception_Nova_UnimplementedForTargetExceptionFunctionMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData)
+{
+	{
+	}
+}
+
+nova_exception_Nova_UnimplementedForTargetExceptionFunctionMap* nova_exception_Nova_UnimplementedForTargetExceptionFunctionMap_Nova_construct(nova_exception_Nova_UnimplementedForTargetExceptionFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+	CCLASS_NEW(nova_exception_Nova_UnimplementedForTargetExceptionFunctionMap, this,);
+	this->vtable = &nova_exception_Nova_UnimplementedForTargetExceptionFunctionMap_VTable_val;
+	nova_Nova_Object_Nova_super((nova_Nova_Object*)this, exceptionData);
+	nova_meta_Nova_FunctionMap_Nova_super((nova_meta_Nova_FunctionMap*)this, exceptionData);
+	nova_exception_Nova_ExceptionFunctionMap_Nova_super((nova_exception_Nova_ExceptionFunctionMap*)this, exceptionData);
+	nova_exception_Nova_UnimplementedOperationExceptionFunctionMap_Nova_super((nova_exception_Nova_UnimplementedOperationExceptionFunctionMap*)this, exceptionData);
+	nova_exception_Nova_UnimplementedForTargetExceptionFunctionMap_Nova_super(this, exceptionData);
+	
+	{
+		nova_exception_Nova_UnimplementedForTargetExceptionFunctionMap_Nova_this((nova_exception_Nova_UnimplementedForTargetExceptionFunctionMap*)(this), exceptionData);
+	}
+	
+	return this;
+}
+
+void nova_exception_Nova_UnimplementedForTargetExceptionFunctionMap_Nova_destroy(nova_exception_Nova_UnimplementedForTargetExceptionFunctionMap** this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+	if (!*this)
+	{
+		return;
+	}
+	
+	
+	NOVA_FREE(*this);
+}
+
+void nova_exception_Nova_UnimplementedForTargetExceptionFunctionMap_Nova_this(nova_exception_Nova_UnimplementedForTargetExceptionFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+}
+
+nova_exception_Nova_UnimplementedForTargetException* nova_exception_Nova_UnimplementedForTargetExceptionFunctionMap_functionMapUnimplementedForTargetExceptionFunctionMap_Nova_construct(nova_exception_Nova_UnimplementedForTargetExceptionFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* message)
+{
+	return nova_exception_Nova_UnimplementedForTargetException_Nova_construct(0, exceptionData,
+	message);
+}
+
+void nova_exception_Nova_UnimplementedForTargetExceptionFunctionMap_Nova_super(nova_exception_Nova_UnimplementedForTargetExceptionFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+}
+
+void nova_exception_Nova_UnimplementedForTargetExceptionPropertyMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData)
+{
+	{
+	}
+}
+
+nova_exception_Nova_UnimplementedForTargetExceptionPropertyMap* nova_exception_Nova_UnimplementedForTargetExceptionPropertyMap_Nova_construct(nova_exception_Nova_UnimplementedForTargetExceptionPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+	CCLASS_NEW(nova_exception_Nova_UnimplementedForTargetExceptionPropertyMap, this,);
+	this->vtable = &nova_exception_Nova_UnimplementedForTargetExceptionPropertyMap_VTable_val;
+	nova_Nova_Object_Nova_super((nova_Nova_Object*)this, exceptionData);
+	nova_meta_Nova_PropertyMap_Nova_super((nova_meta_Nova_PropertyMap*)this, exceptionData);
+	nova_exception_Nova_ExceptionPropertyMap_Nova_super((nova_exception_Nova_ExceptionPropertyMap*)this, exceptionData);
+	nova_exception_Nova_UnimplementedOperationExceptionPropertyMap_Nova_super((nova_exception_Nova_UnimplementedOperationExceptionPropertyMap*)this, exceptionData);
+	nova_exception_Nova_UnimplementedForTargetExceptionPropertyMap_Nova_super(this, exceptionData);
+	
+	{
+		nova_exception_Nova_UnimplementedForTargetExceptionPropertyMap_Nova_this((nova_exception_Nova_UnimplementedForTargetExceptionPropertyMap*)(this), exceptionData);
+	}
+	
+	return this;
+}
+
+void nova_exception_Nova_UnimplementedForTargetExceptionPropertyMap_Nova_destroy(nova_exception_Nova_UnimplementedForTargetExceptionPropertyMap** this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+	if (!*this)
+	{
+		return;
+	}
+	
+	
+	NOVA_FREE(*this);
+}
+
+void nova_exception_Nova_UnimplementedForTargetExceptionPropertyMap_Nova_this(nova_exception_Nova_UnimplementedForTargetExceptionPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+{
+}
+
+void nova_exception_Nova_UnimplementedForTargetExceptionPropertyMap_Nova_super(nova_exception_Nova_UnimplementedForTargetExceptionPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
 }
 
@@ -42909,7 +43053,7 @@ nova_Nova_String* nova_primitive_number_Nova_Double_static_Nova_genString(nova_p
 	buffer);
 }
 
-nova_primitive_number_Nova_Char** nova_primitive_number_Nova_Double_static_Nova_genBuffer(nova_primitive_number_Nova_Double* this, nova_exception_Nova_ExceptionData* exceptionData, double value)
+char* nova_primitive_number_Nova_Double_static_Nova_genBuffer(nova_primitive_number_Nova_Double* this, nova_exception_Nova_ExceptionData* exceptionData, double value)
 {
 	int l1_Nova_size = 0;
 	char* l1_Nova_buffer = (char*)nova_null;
@@ -42939,7 +43083,7 @@ int nova_primitive_number_Nova_Double_static_Nova_lastSignificantDigit(nova_prim
 	return start + 1;
 }
 
-nova_primitive_number_Nova_Char** nova_primitive_number_Nova_Double_static_Nova_toCharArray(nova_primitive_number_Nova_Double* this, nova_exception_Nova_ExceptionData* exceptionData, double value)
+char* nova_primitive_number_Nova_Double_static_Nova_toCharArray(nova_primitive_number_Nova_Double* this, nova_exception_Nova_ExceptionData* exceptionData, double value)
 {
 }
 
@@ -43010,10 +43154,9 @@ nova_Nova_String* nova_primitive_number_Nova_Double_static_Nova_toString(nova_pr
 
 double nova_primitive_number_Nova_Double_static_Nova_parseDouble(nova_primitive_number_Nova_Double* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* str)
 {
-	char* l1_Nova_pEnd = (char*)nova_null;
-	
-	return strtod(str->nova_Nova_String_Nova_chars->nova_datastruct_list_Nova_StringCharArray_Nova_data,
-	&l1_Nova_pEnd);
+	return strtod(str->nova_Nova_String_Nova_chars->nova_datastruct_list_Nova_StringCharArray_Nova_data, NULL);
+	THROW(nova_exception_Nova_UnimplementedForTargetException_Nova_construct(0, exceptionData,
+	0), 0);
 }
 
 double nova_primitive_number_Nova_Double_Nova_compareTo(nova_primitive_number_Nova_Double* this, nova_exception_Nova_ExceptionData* exceptionData, nova_primitive_number_Nova_Number* other)

@@ -1169,6 +1169,16 @@ nova_env novaEnv = {
 },
 
 {
+&nova_exception_Nova_UnimplementedForTargetException_Nova_construct,
+},
+{
+&nova_exception_Nova_UnimplementedForTargetExceptionFunctionMap_Nova_construct,
+},
+{
+&nova_exception_Nova_UnimplementedForTargetExceptionPropertyMap_Nova_construct,
+},
+
+{
 &nova_exception_Nova_UnimplementedOperationException_Nova_construct,
 },
 {
