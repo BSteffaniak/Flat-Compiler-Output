@@ -371,18 +371,6 @@ nova_Nova_String_1_Nova_construct(0, exceptionData,
 (char*)("nova/datastruct/HashMap.HashMapIterator1Long")),
 0);
 
-// nova/datastruct/HashMap.HashMap1Long2Int
-nova_datastruct_Long_Int_Nova_HashMap1Long2Int_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
-nova_Nova_String_1_Nova_construct(0, exceptionData,
-(char*)("nova/datastruct/HashMap.HashMap1Long2Int")),
-0);
-
-// nova/datastruct/HashMap.HashMapIterator1Long2Int
-nova_datastruct_Long_Int_Nova_HashMapIterator1Long2Int_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
-nova_Nova_String_1_Nova_construct(0, exceptionData,
-(char*)("nova/datastruct/HashMap.HashMapIterator1Long2Int")),
-0);
-
 // nova/datastruct/HashMap.HashMap1Int
 nova_datastruct_Int_V_Nova_HashMap1Int_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
 nova_Nova_String_1_Nova_construct(0, exceptionData,
@@ -405,6 +393,18 @@ nova_Nova_String_1_Nova_construct(0, exceptionData,
 nova_datastruct_Int_Int_Nova_HashMapIterator1Int2Int_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
 nova_Nova_String_1_Nova_construct(0, exceptionData,
 (char*)("nova/datastruct/HashMap.HashMapIterator1Int2Int")),
+0);
+
+// nova/datastruct/HashMap.HashMap1Long2Int
+nova_datastruct_Long_Int_Nova_HashMap1Long2Int_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("nova/datastruct/HashMap.HashMap1Long2Int")),
+0);
+
+// nova/datastruct/HashMap.HashMapIterator1Long2Int
+nova_datastruct_Long_Int_Nova_HashMapIterator1Long2Int_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("nova/datastruct/HashMap.HashMapIterator1Long2Int")),
 0);
 
 // nova/datastruct/HashSet
@@ -453,12 +453,6 @@ nova_Nova_String_1_Nova_construct(0, exceptionData,
 (char*)("nova/datastruct/ImmutableHashMap.ImmutableHashMap1Long")),
 0);
 
-// nova/datastruct/ImmutableHashMap.ImmutableHashMap1Long2Int
-nova_datastruct_Long_Int_Nova_ImmutableHashMap1Long2Int_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
-nova_Nova_String_1_Nova_construct(0, exceptionData,
-(char*)("nova/datastruct/ImmutableHashMap.ImmutableHashMap1Long2Int")),
-0);
-
 // nova/datastruct/ImmutableHashMap.ImmutableHashMap1Int
 nova_datastruct_Int_V_Nova_ImmutableHashMap1Int_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
 nova_Nova_String_1_Nova_construct(0, exceptionData,
@@ -469,6 +463,12 @@ nova_Nova_String_1_Nova_construct(0, exceptionData,
 nova_datastruct_Int_Int_Nova_ImmutableHashMap1Int2Int_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
 nova_Nova_String_1_Nova_construct(0, exceptionData,
 (char*)("nova/datastruct/ImmutableHashMap.ImmutableHashMap1Int2Int")),
+0);
+
+// nova/datastruct/ImmutableHashMap.ImmutableHashMap1Long2Int
+nova_datastruct_Long_Int_Nova_ImmutableHashMap1Long2Int_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("nova/datastruct/ImmutableHashMap.ImmutableHashMap1Long2Int")),
 0);
 
 // nova/datastruct/Node
@@ -517,12 +517,6 @@ nova_Nova_String_1_Nova_construct(0, exceptionData,
 (char*)("nova/datastruct/Pair.Pair1Long")),
 0);
 
-// nova/datastruct/Pair.Pair1Long2Int
-nova_datastruct_Long_Int_Nova_Pair1Long2Int_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
-nova_Nova_String_1_Nova_construct(0, exceptionData,
-(char*)("nova/datastruct/Pair.Pair1Long2Int")),
-0);
-
 // nova/datastruct/Pair.Pair1Int
 nova_datastruct_Int_Value_Nova_Pair1Int_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
 nova_Nova_String_1_Nova_construct(0, exceptionData,
@@ -533,6 +527,12 @@ nova_Nova_String_1_Nova_construct(0, exceptionData,
 nova_datastruct_Int_Int_Nova_Pair1Int2Int_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
 nova_Nova_String_1_Nova_construct(0, exceptionData,
 (char*)("nova/datastruct/Pair.Pair1Int2Int")),
+0);
+
+// nova/datastruct/Pair.Pair1Long2Int
+nova_datastruct_Long_Int_Nova_Pair1Long2Int_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0, exceptionData,
+nova_Nova_String_1_Nova_construct(0, exceptionData,
+(char*)("nova/datastruct/Pair.Pair1Long2Int")),
 0);
 
 // nova/datastruct/ReversibleHashMap
@@ -5147,14 +5147,6 @@ nova_datastruct_Long_V_Nova_HashMapIterator1Long_VTable_val.classInstance->nova_
 nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 1);
 nova_class_interfaces[0] = (nova_Nova_Object*)nova_datastruct_list_Nova_Iterator_VTable_val.classInstance;
 nova_datastruct_Long_V_Nova_HashMapIterator1Long_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 1);
-nova_datastruct_Long_Int_Nova_HashMap1Long2Int_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = nova_Nova_Object_VTable_val.classInstance;
-nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 1);
-nova_class_interfaces[0] = (nova_Nova_Object*)nova_datastruct_list_Nova_List_VTable_val.classInstance;
-nova_datastruct_Long_Int_Nova_HashMap1Long2Int_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 1);
-nova_datastruct_Long_Int_Nova_HashMapIterator1Long2Int_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = nova_Nova_Object_VTable_val.classInstance;
-nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 1);
-nova_class_interfaces[0] = (nova_Nova_Object*)nova_datastruct_list_Nova_Iterator_VTable_val.classInstance;
-nova_datastruct_Long_Int_Nova_HashMapIterator1Long2Int_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 1);
 nova_datastruct_Int_V_Nova_HashMap1Int_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = nova_Nova_Object_VTable_val.classInstance;
 nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 1);
 nova_class_interfaces[0] = (nova_Nova_Object*)nova_datastruct_list_Nova_List_VTable_val.classInstance;
@@ -5171,6 +5163,14 @@ nova_datastruct_Int_Int_Nova_HashMapIterator1Int2Int_VTable_val.classInstance->n
 nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 1);
 nova_class_interfaces[0] = (nova_Nova_Object*)nova_datastruct_list_Nova_Iterator_VTable_val.classInstance;
 nova_datastruct_Int_Int_Nova_HashMapIterator1Int2Int_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 1);
+nova_datastruct_Long_Int_Nova_HashMap1Long2Int_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = nova_Nova_Object_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 1);
+nova_class_interfaces[0] = (nova_Nova_Object*)nova_datastruct_list_Nova_List_VTable_val.classInstance;
+nova_datastruct_Long_Int_Nova_HashMap1Long2Int_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 1);
+nova_datastruct_Long_Int_Nova_HashMapIterator1Long2Int_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = nova_Nova_Object_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 1);
+nova_class_interfaces[0] = (nova_Nova_Object*)nova_datastruct_list_Nova_Iterator_VTable_val.classInstance;
+nova_datastruct_Long_Int_Nova_HashMapIterator1Long2Int_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 1);
 nova_datastruct_Nova_HashSet_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = nova_Nova_Object_VTable_val.classInstance;
 nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 1);
 nova_class_interfaces[0] = (nova_Nova_Object*)nova_datastruct_list_Nova_List_VTable_val.classInstance;
@@ -5203,10 +5203,6 @@ nova_datastruct_Long_V_Nova_ImmutableHashMap1Long_VTable_val.classInstance->nova
 nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 1);
 nova_class_interfaces[0] = (nova_Nova_Object*)nova_datastruct_list_Nova_List_VTable_val.classInstance;
 nova_datastruct_Long_V_Nova_ImmutableHashMap1Long_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 1);
-nova_datastruct_Long_Int_Nova_ImmutableHashMap1Long2Int_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = nova_Nova_Object_VTable_val.classInstance;
-nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 1);
-nova_class_interfaces[0] = (nova_Nova_Object*)nova_datastruct_list_Nova_List_VTable_val.classInstance;
-nova_datastruct_Long_Int_Nova_ImmutableHashMap1Long2Int_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 1);
 nova_datastruct_Int_V_Nova_ImmutableHashMap1Int_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = nova_Nova_Object_VTable_val.classInstance;
 nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 1);
 nova_class_interfaces[0] = (nova_Nova_Object*)nova_datastruct_list_Nova_List_VTable_val.classInstance;
@@ -5215,6 +5211,10 @@ nova_datastruct_Int_Int_Nova_ImmutableHashMap1Int2Int_VTable_val.classInstance->
 nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 1);
 nova_class_interfaces[0] = (nova_Nova_Object*)nova_datastruct_list_Nova_List_VTable_val.classInstance;
 nova_datastruct_Int_Int_Nova_ImmutableHashMap1Int2Int_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 1);
+nova_datastruct_Long_Int_Nova_ImmutableHashMap1Long2Int_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = nova_Nova_Object_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 1);
+nova_class_interfaces[0] = (nova_Nova_Object*)nova_datastruct_list_Nova_List_VTable_val.classInstance;
+nova_datastruct_Long_Int_Nova_ImmutableHashMap1Long2Int_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 1);
 nova_datastruct_Nova_Node_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = nova_Nova_Object_VTable_val.classInstance;
 nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 0);
 nova_datastruct_Nova_Node_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 0);
@@ -5236,15 +5236,15 @@ nova_datastruct_Nova_PairPropertyMap_VTable_val.classInstance->nova_meta_Nova_Cl
 nova_datastruct_Long_Value_Nova_Pair1Long_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = nova_Nova_Object_VTable_val.classInstance;
 nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 0);
 nova_datastruct_Long_Value_Nova_Pair1Long_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 0);
-nova_datastruct_Long_Int_Nova_Pair1Long2Int_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = nova_Nova_Object_VTable_val.classInstance;
-nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 0);
-nova_datastruct_Long_Int_Nova_Pair1Long2Int_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 0);
 nova_datastruct_Int_Value_Nova_Pair1Int_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = nova_Nova_Object_VTable_val.classInstance;
 nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 0);
 nova_datastruct_Int_Value_Nova_Pair1Int_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 0);
 nova_datastruct_Int_Int_Nova_Pair1Int2Int_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = nova_Nova_Object_VTable_val.classInstance;
 nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 0);
 nova_datastruct_Int_Int_Nova_Pair1Int2Int_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 0);
+nova_datastruct_Long_Int_Nova_Pair1Long2Int_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = nova_Nova_Object_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 0);
+nova_datastruct_Long_Int_Nova_Pair1Long2Int_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 0);
 nova_datastruct_Nova_ReversibleHashMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = nova_datastruct_Nova_HashMap_VTable_val.classInstance;
 nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 0);
 nova_datastruct_Nova_ReversibleHashMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)nova_class_interfaces, 0);
@@ -7656,12 +7656,12 @@ nova_all_classes[38] = nova_datastruct_Nova_HashMapIteratorFunctionMap_VTable_va
 nova_all_classes[39] = nova_datastruct_Nova_HashMapIteratorPropertyMap_VTable_val.classInstance;
 nova_all_classes[40] = nova_datastruct_Long_V_Nova_HashMap1Long_VTable_val.classInstance;
 nova_all_classes[41] = nova_datastruct_Long_V_Nova_HashMapIterator1Long_VTable_val.classInstance;
-nova_all_classes[42] = nova_datastruct_Long_Int_Nova_HashMap1Long2Int_VTable_val.classInstance;
-nova_all_classes[43] = nova_datastruct_Long_Int_Nova_HashMapIterator1Long2Int_VTable_val.classInstance;
-nova_all_classes[44] = nova_datastruct_Int_V_Nova_HashMap1Int_VTable_val.classInstance;
-nova_all_classes[45] = nova_datastruct_Int_V_Nova_HashMapIterator1Int_VTable_val.classInstance;
-nova_all_classes[46] = nova_datastruct_Int_Int_Nova_HashMap1Int2Int_VTable_val.classInstance;
-nova_all_classes[47] = nova_datastruct_Int_Int_Nova_HashMapIterator1Int2Int_VTable_val.classInstance;
+nova_all_classes[42] = nova_datastruct_Int_V_Nova_HashMap1Int_VTable_val.classInstance;
+nova_all_classes[43] = nova_datastruct_Int_V_Nova_HashMapIterator1Int_VTable_val.classInstance;
+nova_all_classes[44] = nova_datastruct_Int_Int_Nova_HashMap1Int2Int_VTable_val.classInstance;
+nova_all_classes[45] = nova_datastruct_Int_Int_Nova_HashMapIterator1Int2Int_VTable_val.classInstance;
+nova_all_classes[46] = nova_datastruct_Long_Int_Nova_HashMap1Long2Int_VTable_val.classInstance;
+nova_all_classes[47] = nova_datastruct_Long_Int_Nova_HashMapIterator1Long2Int_VTable_val.classInstance;
 nova_all_classes[48] = nova_datastruct_Nova_HashSet_VTable_val.classInstance;
 nova_all_classes[49] = nova_datastruct_Nova_HashSetFunctionMap_VTable_val.classInstance;
 nova_all_classes[50] = nova_datastruct_Nova_HashSetPropertyMap_VTable_val.classInstance;
@@ -7669,9 +7669,9 @@ nova_all_classes[51] = nova_datastruct_Nova_ImmutableHashMap_VTable_val.classIns
 nova_all_classes[52] = nova_datastruct_Nova_ImmutableHashMapFunctionMap_VTable_val.classInstance;
 nova_all_classes[53] = nova_datastruct_Nova_ImmutableHashMapPropertyMap_VTable_val.classInstance;
 nova_all_classes[54] = nova_datastruct_Long_V_Nova_ImmutableHashMap1Long_VTable_val.classInstance;
-nova_all_classes[55] = nova_datastruct_Long_Int_Nova_ImmutableHashMap1Long2Int_VTable_val.classInstance;
-nova_all_classes[56] = nova_datastruct_Int_V_Nova_ImmutableHashMap1Int_VTable_val.classInstance;
-nova_all_classes[57] = nova_datastruct_Int_Int_Nova_ImmutableHashMap1Int2Int_VTable_val.classInstance;
+nova_all_classes[55] = nova_datastruct_Int_V_Nova_ImmutableHashMap1Int_VTable_val.classInstance;
+nova_all_classes[56] = nova_datastruct_Int_Int_Nova_ImmutableHashMap1Int2Int_VTable_val.classInstance;
+nova_all_classes[57] = nova_datastruct_Long_Int_Nova_ImmutableHashMap1Long2Int_VTable_val.classInstance;
 nova_all_classes[58] = nova_datastruct_Nova_Node_VTable_val.classInstance;
 nova_all_classes[59] = nova_datastruct_Nova_NodeFunctionMap_VTable_val.classInstance;
 nova_all_classes[60] = nova_datastruct_Nova_NodePropertyMap_VTable_val.classInstance;
@@ -7679,9 +7679,9 @@ nova_all_classes[61] = nova_datastruct_Nova_Pair_VTable_val.classInstance;
 nova_all_classes[62] = nova_datastruct_Nova_PairFunctionMap_VTable_val.classInstance;
 nova_all_classes[63] = nova_datastruct_Nova_PairPropertyMap_VTable_val.classInstance;
 nova_all_classes[64] = nova_datastruct_Long_Value_Nova_Pair1Long_VTable_val.classInstance;
-nova_all_classes[65] = nova_datastruct_Long_Int_Nova_Pair1Long2Int_VTable_val.classInstance;
-nova_all_classes[66] = nova_datastruct_Int_Value_Nova_Pair1Int_VTable_val.classInstance;
-nova_all_classes[67] = nova_datastruct_Int_Int_Nova_Pair1Int2Int_VTable_val.classInstance;
+nova_all_classes[65] = nova_datastruct_Int_Value_Nova_Pair1Int_VTable_val.classInstance;
+nova_all_classes[66] = nova_datastruct_Int_Int_Nova_Pair1Int2Int_VTable_val.classInstance;
+nova_all_classes[67] = nova_datastruct_Long_Int_Nova_Pair1Long2Int_VTable_val.classInstance;
 nova_all_classes[68] = nova_datastruct_Nova_ReversibleHashMap_VTable_val.classInstance;
 nova_all_classes[69] = nova_datastruct_Nova_ReversibleHashMapFunctionMap_VTable_val.classInstance;
 nova_all_classes[70] = nova_datastruct_Nova_ReversibleHashMapPropertyMap_VTable_val.classInstance;
@@ -8398,12 +8398,12 @@ nova_datastruct_Nova_HashMapIteratorFunctionMap_Nova_init_static(exceptionData);
 nova_datastruct_Nova_HashMapIteratorPropertyMap_Nova_init_static(exceptionData);
 nova_datastruct_Long_V_Nova_HashMap1Long_Nova_init_static(exceptionData);
 nova_datastruct_Long_V_Nova_HashMapIterator1Long_Nova_init_static(exceptionData);
-nova_datastruct_Long_Int_Nova_HashMap1Long2Int_Nova_init_static(exceptionData);
-nova_datastruct_Long_Int_Nova_HashMapIterator1Long2Int_Nova_init_static(exceptionData);
 nova_datastruct_Int_V_Nova_HashMap1Int_Nova_init_static(exceptionData);
 nova_datastruct_Int_V_Nova_HashMapIterator1Int_Nova_init_static(exceptionData);
 nova_datastruct_Int_Int_Nova_HashMap1Int2Int_Nova_init_static(exceptionData);
 nova_datastruct_Int_Int_Nova_HashMapIterator1Int2Int_Nova_init_static(exceptionData);
+nova_datastruct_Long_Int_Nova_HashMap1Long2Int_Nova_init_static(exceptionData);
+nova_datastruct_Long_Int_Nova_HashMapIterator1Long2Int_Nova_init_static(exceptionData);
 nova_datastruct_Nova_HashSet_Nova_init_static(exceptionData);
 nova_datastruct_Nova_HashSetFunctionMap_Nova_init_static(exceptionData);
 nova_datastruct_Nova_HashSetPropertyMap_Nova_init_static(exceptionData);
@@ -8411,9 +8411,9 @@ nova_datastruct_Nova_ImmutableHashMap_Nova_init_static(exceptionData);
 nova_datastruct_Nova_ImmutableHashMapFunctionMap_Nova_init_static(exceptionData);
 nova_datastruct_Nova_ImmutableHashMapPropertyMap_Nova_init_static(exceptionData);
 nova_datastruct_Long_V_Nova_ImmutableHashMap1Long_Nova_init_static(exceptionData);
-nova_datastruct_Long_Int_Nova_ImmutableHashMap1Long2Int_Nova_init_static(exceptionData);
 nova_datastruct_Int_V_Nova_ImmutableHashMap1Int_Nova_init_static(exceptionData);
 nova_datastruct_Int_Int_Nova_ImmutableHashMap1Int2Int_Nova_init_static(exceptionData);
+nova_datastruct_Long_Int_Nova_ImmutableHashMap1Long2Int_Nova_init_static(exceptionData);
 nova_datastruct_Nova_Node_Nova_init_static(exceptionData);
 nova_datastruct_Nova_NodeFunctionMap_Nova_init_static(exceptionData);
 nova_datastruct_Nova_NodePropertyMap_Nova_init_static(exceptionData);
@@ -8421,9 +8421,9 @@ nova_datastruct_Nova_Pair_Nova_init_static(exceptionData);
 nova_datastruct_Nova_PairFunctionMap_Nova_init_static(exceptionData);
 nova_datastruct_Nova_PairPropertyMap_Nova_init_static(exceptionData);
 nova_datastruct_Long_Value_Nova_Pair1Long_Nova_init_static(exceptionData);
-nova_datastruct_Long_Int_Nova_Pair1Long2Int_Nova_init_static(exceptionData);
 nova_datastruct_Int_Value_Nova_Pair1Int_Nova_init_static(exceptionData);
 nova_datastruct_Int_Int_Nova_Pair1Int2Int_Nova_init_static(exceptionData);
+nova_datastruct_Long_Int_Nova_Pair1Long2Int_Nova_init_static(exceptionData);
 nova_datastruct_Nova_ReversibleHashMap_Nova_init_static(exceptionData);
 nova_datastruct_Nova_ReversibleHashMapFunctionMap_Nova_init_static(exceptionData);
 nova_datastruct_Nova_ReversibleHashMapPropertyMap_Nova_init_static(exceptionData);
