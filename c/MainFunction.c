@@ -1,29 +1,6 @@
 #include "MainFunction.h"
 
-typedef void (*thread_join_function_type)(void*, nova_exception_Nova_ExceptionData*, struct E*, int, nova_datastruct_list_Nova_Array*, void*);
-void novaJoinActiveThreads(void* this, nova_exception_Nova_ExceptionData* exceptionData, nova_thread_Nova_Thread* _1, int _2, void* _3, void* context)
-{
-nova_thread_Nova_Thread_Nova_join(_1, exceptionData);
-}
-
-int main(int argc, char** argvs)
-{
-#ifdef _WIN32
-setProgramName(argvs[0]);
-//signal(SIGSEGV, nova_signal_handler);
-SetUnhandledExceptionFilter(nova_exception_handler);
-#endif
-nova_Nova_String** args;
-int      i;
-
-nova_exception_Nova_ExceptionData* exceptionData = 0;
-srand(currentTimeMillis());
-nova_gc_Nova_GC_static_Nova_init((nova_gc_Nova_GC*)(0), exceptionData);
-
-nova_garbageData = malloc(sizeof(void*));
-if ((errno = nova_create_semaphore()) != 0) return errno;
-nova_null = nova_primitive_Nova_Null_Nova_construct(0, exceptionData);
-TRY
+void novaInitProgramData(void* this, nova_exception_Nova_ExceptionData* exceptionData)
 {
 novaEnv.nova_Object.toString = nova_Nova_Object_VTable_val.nova_Nova_Object_virtual_Nova_toString;
 novaEnv.nova_String.concat = nova_Nova_String_VTable_val.nova_Nova_String_virtual_Nova_concat;
@@ -9038,38 +9015,9 @@ stabilitytest_Nova_UnstableException_Nova_init_static(exceptionData);
 stabilitytest_Nova_UnstableExceptionFunctionMap_Nova_init_static(exceptionData);
 stabilitytest_Nova_UnstableExceptionPropertyMap_Nova_init_static(exceptionData);
 
-args = (nova_Nova_String**)NOVA_MALLOC(argc * sizeof(nova_Nova_String));
+}
 
-for (i = 0; i < argc; i++)
+int main(int argc, char** argvs)
 {
-char* str = (char*)NOVA_MALLOC(sizeof(char) * strlen(argvs[i]) + 1);
-copy_string(str, argvs[i]);
-args[i] = nova_Nova_String_1_Nova_construct(0, 0, str);
-}
-nova_datastruct_list_Nova_Array* argsArray = nova_datastruct_list_Nova_Array_2_Nova_construct(0, exceptionData, (nova_Nova_Object**)args, argc);
-example_Nova_Lab_static_Nova_main(0, exceptionData, argsArray);
-}
-CATCH (nova_exception_Nova_Exception_VTable_val.classInstance)
-{
-char* message = "Exception in Thread 'main'";
-nova_exception_Nova_Exception* base = (nova_exception_Nova_Exception*)exceptionData->nova_exception_Nova_ExceptionData_Nova_thrownException;
-if (base != 0 && base->nova_exception_Nova_Exception_Nova_message != 0 && base->nova_exception_Nova_Exception_Nova_message != (nova_Nova_String*)nova_null) {
-printf("%s: %s", message, base->nova_exception_Nova_Exception_Nova_message->nova_Nova_String_Nova_chars->nova_datastruct_list_Nova_StringCharArray_Nova_data);
-} else {
-puts(message);
-}
-}
-FINALLY
-{
-
-}
-END_TRY;
-nova_datastruct_list_Nova_ImmutableArray_Nova_forEach((nova_datastruct_list_Nova_ImmutableArray*)nova_thread_Nova_Thread_Nova_ACTIVE_THREADS, exceptionData, (thread_join_function_type)&novaJoinActiveThreads, 0, 0);
-if ((errno = nova_close_semaphore()) != 0) return errno;
-FreeConsole();
-NOVA_FREE(args);
-nova_gc_Nova_GC_static_Nova_collect((nova_gc_Nova_GC*)(0), exceptionData);
-
-
-return 0;
+return nova_Nova_System_static_Nova_runMain(0, 0, argc, argvs, (nova_Nova_System_closure419_Nova_mainFunc)&example_Nova_Lab_static_Nova_main, 0, 0, (nova_Nova_System_closure420_Nova_initialize)&novaInitProgramData, 0, 0);
 }

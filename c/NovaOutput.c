@@ -1680,7 +1680,7 @@ nova_process_Nova_Process* nova_Nova_System_1_static_Nova_execute(nova_Nova_Syst
 				(char*)(" "))));
 }
 
-int nova_Nova_System_static_Nova_runMain(nova_Nova_System* this, nova_exception_Nova_ExceptionData* exceptionData, char** argvs, int argc, nova_Nova_System_closure419_Nova_mainFunc nova_Nova_System_Nova_mainFunc, void* nova_Nova_System_ref_Nova_mainFunc, void* mainFunc_context, nova_Nova_System_closure420_Nova_initialize nova_Nova_System_Nova_initialize, void* nova_Nova_System_ref_Nova_initialize, void* initialize_context)
+int nova_Nova_System_static_Nova_runMain(nova_Nova_System* this, nova_exception_Nova_ExceptionData* exceptionData, int argc, char** argvs, nova_Nova_System_closure419_Nova_mainFunc nova_Nova_System_Nova_mainFunc, void* nova_Nova_System_ref_Nova_mainFunc, void* mainFunc_context, nova_Nova_System_closure420_Nova_initialize nova_Nova_System_Nova_initialize, void* nova_Nova_System_ref_Nova_initialize, void* initialize_context)
 {
 	Context39* contextArg40 = NOVA_MALLOC(sizeof(Context39));
 	Context123* contextArg98 = NOVA_MALLOC(sizeof(Context123));
@@ -1689,6 +1689,10 @@ int nova_Nova_System_static_Nova_runMain(nova_Nova_System* this, nova_exception_
 	nova_Nova_System_Nova_initialize = (nova_Nova_System_closure420_Nova_initialize)(nova_Nova_System_Nova_initialize == 0 ? (nova_Nova_System_closure420_Nova_initialize)&nova_Nova_System_static_Nova_lambda98 : nova_Nova_System_Nova_initialize);
 	nova_Nova_System_ref_Nova_initialize = (void*)(nova_Nova_System_ref_Nova_initialize == 0 ? (void*)nova_null : nova_Nova_System_ref_Nova_initialize);
 	initialize_context = (void*)(initialize_context == 0 ? (void*)contextArg98 : initialize_context);
+	#ifdef _WIN32
+	setProgramName(argvs[0]);
+	SetUnhandledExceptionFilter(nova_exception_handler);
+	#endif
 	srand(currentTimeMillis());
 	nova_gc_Nova_GC_static_Nova_init((nova_gc_Nova_GC*)(0), exceptionData);
 	nova_garbageData = NOVA_MALLOC(sizeof(void*));
@@ -1789,7 +1793,7 @@ void nova_Nova_System_Nova_super(nova_Nova_System* this, nova_exception_Nova_Exc
 }
 
 
-int nova_Nova_SystemFunctionMap_functionMap_static_Nova_runMain(nova_Nova_SystemFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, char** argvs, int argc, nova_Nova_SystemFunctionMap_closure421_Nova_mainFunc nova_Nova_SystemFunctionMap_Nova_mainFunc, void* nova_Nova_SystemFunctionMap_ref_Nova_mainFunc, void* mainFunc_context, nova_Nova_SystemFunctionMap_closure422_Nova_initialize nova_Nova_SystemFunctionMap_Nova_initialize, void* nova_Nova_SystemFunctionMap_ref_Nova_initialize, void* initialize_context);
+int nova_Nova_SystemFunctionMap_functionMap_static_Nova_runMain(nova_Nova_SystemFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, int argc, char** argvs, nova_Nova_SystemFunctionMap_closure421_Nova_mainFunc nova_Nova_SystemFunctionMap_Nova_mainFunc, void* nova_Nova_SystemFunctionMap_ref_Nova_mainFunc, void* mainFunc_context, nova_Nova_SystemFunctionMap_closure422_Nova_initialize nova_Nova_SystemFunctionMap_Nova_initialize, void* nova_Nova_SystemFunctionMap_ref_Nova_initialize, void* initialize_context);
 void nova_Nova_SystemFunctionMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData)
 {
 	{
@@ -1864,11 +1868,11 @@ nova_process_Nova_Process* nova_Nova_SystemFunctionMap_functionMap1_static_Nova_
 	arguments);
 }
 
-int nova_Nova_SystemFunctionMap_functionMap_static_Nova_runMain(nova_Nova_SystemFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, char** argvs, int argc, nova_Nova_SystemFunctionMap_closure421_Nova_mainFunc nova_Nova_SystemFunctionMap_Nova_mainFunc, void* nova_Nova_SystemFunctionMap_ref_Nova_mainFunc, void* mainFunc_context, nova_Nova_SystemFunctionMap_closure422_Nova_initialize nova_Nova_SystemFunctionMap_Nova_initialize, void* nova_Nova_SystemFunctionMap_ref_Nova_initialize, void* initialize_context)
+int nova_Nova_SystemFunctionMap_functionMap_static_Nova_runMain(nova_Nova_SystemFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, int argc, char** argvs, nova_Nova_SystemFunctionMap_closure421_Nova_mainFunc nova_Nova_SystemFunctionMap_Nova_mainFunc, void* nova_Nova_SystemFunctionMap_ref_Nova_mainFunc, void* mainFunc_context, nova_Nova_SystemFunctionMap_closure422_Nova_initialize nova_Nova_SystemFunctionMap_Nova_initialize, void* nova_Nova_SystemFunctionMap_ref_Nova_initialize, void* initialize_context)
 {
 	return nova_Nova_System_static_Nova_runMain((nova_Nova_System*)(0), exceptionData,
-		argvs,
 		argc,
+		argvs,
 		(nova_Nova_System_closure419_Nova_mainFunc)nova_Nova_SystemFunctionMap_Nova_mainFunc, nova_Nova_SystemFunctionMap_ref_Nova_mainFunc, mainFunc_context,
 		(nova_Nova_System_closure420_Nova_initialize)nova_Nova_SystemFunctionMap_Nova_initialize, nova_Nova_SystemFunctionMap_ref_Nova_initialize, initialize_context);
 }

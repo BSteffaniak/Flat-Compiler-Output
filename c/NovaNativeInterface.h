@@ -264,7 +264,7 @@ typedef void (*nova_Nova_System_native1_static_Nova_exit)(nova_Nova_System*, nov
 typedef void (*nova_Nova_System_native2_static_Nova_exit)(nova_Nova_System*, nova_exception_Nova_ExceptionData*, int, nova_Nova_String*, char);
 typedef nova_process_Nova_Process* (*nova_Nova_System_native0_static_Nova_execute)(nova_Nova_System*, nova_exception_Nova_ExceptionData*, nova_Nova_String*);
 typedef nova_process_Nova_Process* (*nova_Nova_System_native1_static_Nova_execute)(nova_Nova_System*, nova_exception_Nova_ExceptionData*, nova_datastruct_list_Nova_Array*);
-typedef int (*nova_Nova_System_native_static_Nova_runMain)(nova_Nova_System*, nova_exception_Nova_ExceptionData*, char**, int, nova_Nova_System_closure419_Nova_mainFunc nova_Nova_System_Nova_mainFunc, void* nova_Nova_System_ref_Nova_mainFunc, void* mainFunc_context, nova_Nova_System_closure420_Nova_initialize nova_Nova_System_Nova_initialize, void* nova_Nova_System_ref_Nova_initialize, void* initialize_context);
+typedef int (*nova_Nova_System_native_static_Nova_runMain)(nova_Nova_System*, nova_exception_Nova_ExceptionData*, int, char**, nova_Nova_System_closure419_Nova_mainFunc nova_Nova_System_Nova_mainFunc, void* nova_Nova_System_ref_Nova_mainFunc, void* mainFunc_context, nova_Nova_System_closure420_Nova_initialize nova_Nova_System_Nova_initialize, void* nova_Nova_System_ref_Nova_initialize, void* initialize_context);
 typedef nova_Nova_System* (*nova_Nova_System_native_Nova_construct)(nova_Nova_System*, nova_exception_Nova_ExceptionData*);
 
 typedef struct nova_native_System

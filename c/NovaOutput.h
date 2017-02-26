@@ -1626,7 +1626,7 @@ void nova_Nova_System_1_static_Nova_exit(nova_Nova_System* this, nova_exception_
 void nova_Nova_System_2_static_Nova_exit(nova_Nova_System* this, nova_exception_Nova_ExceptionData* exceptionData, int code, nova_Nova_String* message, char log);
 nova_process_Nova_Process* nova_Nova_System_0_static_Nova_execute(nova_Nova_System* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* command);
 nova_process_Nova_Process* nova_Nova_System_1_static_Nova_execute(nova_Nova_System* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_list_Nova_Array* arguments);
-int nova_Nova_System_static_Nova_runMain(nova_Nova_System* this, nova_exception_Nova_ExceptionData* exceptionData, char** argvs, int argc, nova_Nova_System_closure419_Nova_mainFunc nova_Nova_System_Nova_mainFunc, void* nova_Nova_System_ref_Nova_mainFunc, void* mainFunc_context, nova_Nova_System_closure420_Nova_initialize nova_Nova_System_Nova_initialize, void* nova_Nova_System_ref_Nova_initialize, void* initialize_context);
+int nova_Nova_System_static_Nova_runMain(nova_Nova_System* this, nova_exception_Nova_ExceptionData* exceptionData, int argc, char** argvs, nova_Nova_System_closure419_Nova_mainFunc nova_Nova_System_Nova_mainFunc, void* nova_Nova_System_ref_Nova_mainFunc, void* mainFunc_context, nova_Nova_System_closure420_Nova_initialize nova_Nova_System_Nova_initialize, void* nova_Nova_System_ref_Nova_initialize, void* initialize_context);
 void nova_Nova_System_Nova_this(nova_Nova_System* this, nova_exception_Nova_ExceptionData* exceptionData);
 void nova_Nova_System_Nova_super(nova_Nova_System* this, nova_exception_Nova_ExceptionData* exceptionData);
 
