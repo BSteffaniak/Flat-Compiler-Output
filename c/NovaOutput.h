@@ -15216,7 +15216,7 @@ CCLASS_CLASS
 	stabilitytest_Nova_SyntaxStability, 
 	
 	stabilitytest_Nova_SyntaxStability_VTable* vtable;
-	void* prv;
+	struct Private_stabilitytest_Nova_SyntaxStability* prv;
 	nova_Nova_String* nova_Nova_Object_Nova_hashCode;
 	stabilitytest_Nova_StabilityTest* stabilitytest_Nova_StabilityTestCase_Nova_program;
 )

@@ -9025,5 +9025,5 @@ int main(int argc, char** argvs)
 {
 nova_gc_Nova_GC_static_Nova_init((nova_gc_Nova_GC*)(0));
 
-return nova_Nova_System_static_Nova_runMain(0, argc, argvs, (nova_Nova_System_closure419_Nova_mainFunc)&example_Nova_Lab_static_Nova_main, 0, 0, (nova_Nova_System_closure420_Nova_initialize)&novaInitProgramData, 0, 0, (nova_Nova_System_closure421_Nova_callStaticBlocks)&novaCallStaticBlocks, 0, 0);
+return nova_Nova_System_static_Nova_runMain(0, argc, argvs, (nova_Nova_System_closure419_Nova_mainFunc)&stabilitytest_Nova_StabilityTest_static_Nova_main, 0, 0, (nova_Nova_System_closure420_Nova_initialize)&novaInitProgramData, 0, 0, (nova_Nova_System_closure421_Nova_callStaticBlocks)&novaCallStaticBlocks, 0, 0);
 }
