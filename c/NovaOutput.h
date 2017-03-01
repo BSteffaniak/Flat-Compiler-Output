@@ -1333,50 +1333,59 @@ typedef char (*nova_datastruct_list_Nova_OrderedListFunctionMap_closure534_Nova_
 typedef struct nova_exception_Nova_ExceptionData nova_exception_Nova_ExceptionData;
 typedef struct nova_Nova_Object nova_Nova_Object;
 
-typedef nova_Nova_Object* (*l1_closure537_Nova_constructor)(void*, void*);
-typedef nova_Nova_Object* (*nova_meta_Nova_Library_closure550_Nova_getConstructor)(void*, void*);
-typedef nova_Nova_Object* (*l1_closure537_Nova_constructor)(void*, void*);
-typedef nova_Nova_Object* (*nova_meta_Nova_Library_closure550_Nova_getConstructor)(void*, void*);
-typedef nova_Nova_Object* (*nova_meta_Nova_Library_closure550_Nova_getConstructor)(void*, void*);
-typedef void (*l1_closure542_Nova_constructor)(void*, void*);
-typedef void (*nova_meta_Nova_Library_closure5760_Nova_getFunction)(void*, void*);
-typedef void (*l1_closure542_Nova_constructor)(void*, void*);
-typedef void (*nova_meta_Nova_Library_closure5760_Nova_getFunction)(void*, void*);
-typedef void (*nova_meta_Nova_Library_closure5760_Nova_getFunction)(void*, void*);
-typedef void (*nova_meta_Nova_Library_closure5541_Nova_getFunction)(void*, void*);
-typedef nova_Nova_Object* (*nova_meta_Nova_LibraryFunctionMap_closure549functionMap_Nova_getConstructor)(void*, void*);
-typedef nova_Nova_Object* (*nova_meta_Nova_Library_closure550_Nova_getConstructor)(void*, void*);
-typedef void (*nova_meta_Nova_LibraryFunctionMap_closure551functionMap_Nova_getFunction)(void*, void*);
-typedef void (*nova_meta_Nova_Library_closure5760_Nova_getFunction)(void*, void*);
-typedef void (*nova_meta_Nova_LibraryFunctionMap_closure553functionMap_Nova_getFunction)(void*, void*);
-typedef void (*nova_meta_Nova_Library_closure5541_Nova_getFunction)(void*, void*);
-typedef void (*nova_meta_Nova_Library_closure5760_Nova_getFunction)(void*, void*);
-typedef void (*nova_meta_Nova_Library_closure5760_Nova_getFunction)(void*, void*);
+typedef nova_Nova_Object* (*l1_closure539_Nova_constructor)(void*, void*);
+typedef nova_Nova_Object* (*l1_closure539_Nova_constructor)(void*, void*);
+typedef nova_Nova_Object* (*nova_meta_Nova_Library_closure557_Nova_getConstructor)(void*, void*);
+typedef nova_Nova_Object* (*nova_meta_Nova_Library_closure557_Nova_getConstructor)(void*, void*);
+typedef nova_Nova_Object* (*l1_closure539_Nova_constructor)(void*, void*);
+typedef nova_Nova_Object* (*nova_meta_Nova_Library_closure557_Nova_getConstructor)(void*, void*);
+typedef nova_Nova_Object* (*nova_meta_Nova_Library_closure557_Nova_getConstructor)(void*, void*);
+typedef void (*l1_closure546_Nova_constructor)(void*, void*);
+typedef void (*l1_closure546_Nova_constructor)(void*, void*);
+typedef void (*nova_meta_Nova_Library_closure5870_Nova_getFunction)(void*, void*);
+typedef void (*nova_meta_Nova_Library_closure5870_Nova_getFunction)(void*, void*);
+typedef void (*l1_closure546_Nova_constructor)(void*, void*);
+typedef void (*nova_meta_Nova_Library_closure5870_Nova_getFunction)(void*, void*);
+typedef void (*nova_meta_Nova_Library_closure5870_Nova_getFunction)(void*, void*);
+typedef void (*nova_meta_Nova_Library_closure5631_Nova_getFunction)(void*, void*);
+typedef void (*nova_meta_Nova_Library_closure5631_Nova_getFunction)(void*, void*);
+typedef nova_Nova_Object* (*nova_meta_Nova_LibraryFunctionMap_closure556functionMap_Nova_getConstructor)(void*, void*);
+typedef nova_Nova_Object* (*nova_meta_Nova_LibraryFunctionMap_closure556functionMap_Nova_getConstructor)(void*, void*);
+typedef nova_Nova_Object* (*nova_meta_Nova_Library_closure557_Nova_getConstructor)(void*, void*);
+typedef void (*nova_meta_Nova_LibraryFunctionMap_closure559functionMap_Nova_getFunction)(void*, void*);
+typedef void (*nova_meta_Nova_LibraryFunctionMap_closure559functionMap_Nova_getFunction)(void*, void*);
+typedef void (*nova_meta_Nova_Library_closure5870_Nova_getFunction)(void*, void*);
+typedef void (*nova_meta_Nova_LibraryFunctionMap_closure562functionMap_Nova_getFunction)(void*, void*);
+typedef void (*nova_meta_Nova_LibraryFunctionMap_closure562functionMap_Nova_getFunction)(void*, void*);
+typedef void (*nova_meta_Nova_Library_closure5631_Nova_getFunction)(void*, void*);
+typedef void (*nova_meta_Nova_Library_closure5870_Nova_getFunction)(void*, void*);
+typedef void (*nova_meta_Nova_Library_closure5870_Nova_getFunction)(void*, void*);
 typedef struct nova_exception_Nova_ExceptionData nova_exception_Nova_ExceptionData;
 
-typedef void (*nova_thread_Nova_Thread_closure557_Nova_action)(void*, void*);
-typedef void (*nova_thread_Nova_Thread_closure558_Nova_run)(void*, void*);
-typedef void (*nova_thread_Nova_Thread_closure559_Nova_action)(void*, void*);
-typedef void (*nova_thread_Nova_Thread_closure560_Nova_action)(void*, void*);
-typedef void (*nova_thread_Nova_ThreadFunctionMap_closure561_Nova_action)(void*, void*);
-typedef void (*nova_thread_Nova_ThreadFunctionMap_closure562_Nova_action)(void*, void*);
+typedef void (*nova_thread_Nova_Thread_closure567_Nova_action)(void*, void*);
+typedef void (*nova_thread_Nova_Thread_closure568_Nova_run)(void*, void*);
+typedef void (*nova_thread_Nova_Thread_closure569_Nova_action)(void*, void*);
+typedef void (*nova_thread_Nova_Thread_closure570_Nova_action)(void*, void*);
+typedef void (*nova_thread_Nova_ThreadFunctionMap_closure571_Nova_action)(void*, void*);
+typedef void (*nova_thread_Nova_ThreadFunctionMap_closure572_Nova_action)(void*, void*);
 typedef struct nova_exception_Nova_ExceptionData nova_exception_Nova_ExceptionData;
 
-typedef void (*nova_thread_async_Nova_Async_closure563_Nova_func)(void*, void*);
-typedef void (*nova_thread_async_Nova_Async_closure564_Nova_func)(void*, void*);
-typedef void (*nova_thread_async_Nova_AsyncFunctionMap_closure565_Nova_func)(void*, void*);
-typedef void (*nova_thread_async_Nova_AsyncFunctionMap_closure566_Nova_func)(void*, void*);
+typedef void (*nova_thread_async_Nova_Async_closure573_Nova_func)(void*, void*);
+typedef void (*nova_thread_async_Nova_Async_closure574_Nova_func)(void*, void*);
+typedef void (*nova_thread_async_Nova_AsyncFunctionMap_closure575_Nova_func)(void*, void*);
+typedef void (*nova_thread_async_Nova_AsyncFunctionMap_closure576_Nova_func)(void*, void*);
 typedef struct nova_exception_Nova_ExceptionData nova_exception_Nova_ExceptionData;
 typedef struct nova_time_Nova_Timer nova_time_Nova_Timer;
 
-typedef void (*nova_time_Nova_Timer_closure567_Nova_action)(void*, void*);
-typedef void (*nova_time_Nova_Timer_closure568_Nova_callback)(void*, nova_time_Nova_Timer*, void*);
-typedef void (*nova_time_Nova_TimerFunctionMap_closure569_Nova_action)(void*, void*);
-typedef void (*nova_time_Nova_TimerFunctionMap_closure570_Nova_callback)(void*, nova_time_Nova_Timer*, void*);
+typedef void (*nova_time_Nova_Timer_closure577_Nova_action)(void*, void*);
+typedef void (*nova_time_Nova_Timer_closure578_Nova_callback)(void*, nova_time_Nova_Timer*, void*);
+typedef void (*nova_time_Nova_TimerFunctionMap_closure579_Nova_action)(void*, void*);
+typedef void (*nova_time_Nova_TimerFunctionMap_closure580_Nova_callback)(void*, nova_time_Nova_Timer*, void*);
 typedef struct nova_exception_Nova_ExceptionData nova_exception_Nova_ExceptionData;
 
-typedef void (*l1_closure575_Nova_func)(void*, void*);
-typedef void (*l1_closure575_Nova_func)(void*, void*);
+typedef void (*l1_closure586_Nova_func)(void*, void*);
+typedef void (*l1_closure586_Nova_func)(void*, void*);
+typedef void (*l1_closure586_Nova_func)(void*, void*);
 
 #include <Nova.h>
 #include <pcre/pcre2.h>
@@ -8900,9 +8909,9 @@ nova_meta_Nova_Library* nova_meta_Nova_Library_Nova_construct(nova_meta_Nova_Lib
 void nova_meta_Nova_Library_Nova_destroy(nova_meta_Nova_Library** this);
 void nova_meta_Nova_Library_Nova_this(nova_meta_Nova_Library* this, nova_Nova_String* location);
 nova_Nova_Object* nova_meta_Nova_Library_Nova_getInstance(nova_meta_Nova_Library* this, nova_Nova_String* classLocation);
-/*nova_meta_Nova_Library_closure550_Nova_getConstructor*/nova_funcStruct* nova_meta_Nova_Library_Nova_getConstructor(nova_meta_Nova_Library* this, nova_Nova_String* classLocation);
-/*nova_meta_Nova_Library_closure5760_Nova_getFunction*/nova_funcStruct* nova_meta_Nova_Library_0_Nova_getFunction(nova_meta_Nova_Library* this, nova_Nova_String* functionName, nova_Nova_String* classLocation);
-/*nova_meta_Nova_Library_closure5541_Nova_getFunction*/nova_funcStruct* nova_meta_Nova_Library_1_Nova_getFunction(nova_meta_Nova_Library* this, nova_Nova_String* functionName, nova_Nova_Object* reference);
+/*nova_meta_Nova_Library_closure557_Nova_getConstructor*/nova_funcStruct* nova_meta_Nova_Library_Nova_getConstructor(nova_meta_Nova_Library* this, nova_Nova_String* classLocation);
+/*nova_meta_Nova_Library_closure5870_Nova_getFunction*/nova_funcStruct* nova_meta_Nova_Library_0_Nova_getFunction(nova_meta_Nova_Library* this, nova_Nova_String* functionName, nova_Nova_String* classLocation);
+/*nova_meta_Nova_Library_closure5631_Nova_getFunction*/nova_funcStruct* nova_meta_Nova_Library_1_Nova_getFunction(nova_meta_Nova_Library* this, nova_Nova_String* functionName, nova_Nova_Object* reference);
 nova_meta_Nova_Library* nova_meta_Nova_Library_Nova_load(nova_meta_Nova_Library* this);
 void nova_meta_Nova_Library_Nova_super(nova_meta_Nova_Library* this);
 
@@ -8921,9 +8930,9 @@ void nova_meta_Nova_LibraryFunctionMap_Nova_destroy(nova_meta_Nova_LibraryFuncti
 void nova_meta_Nova_LibraryFunctionMap_Nova_this(nova_meta_Nova_LibraryFunctionMap* this);
 nova_meta_Nova_Library* nova_meta_Nova_LibraryFunctionMap_functionMapLibraryFunctionMap_Nova_construct(nova_meta_Nova_LibraryFunctionMap* this, nova_Nova_String* location);
 nova_Nova_Object* nova_meta_Nova_LibraryFunctionMap_functionMap_Nova_getInstance(nova_meta_Nova_LibraryFunctionMap* this, nova_meta_Nova_Library* reference, nova_Nova_String* classLocation);
-/*nova_meta_Nova_LibraryFunctionMap_closure549functionMap_Nova_getConstructor*/nova_funcStruct* nova_meta_Nova_LibraryFunctionMap_functionMap_Nova_getConstructor(nova_meta_Nova_LibraryFunctionMap* this, nova_meta_Nova_Library* reference, nova_Nova_String* classLocation);
-/*nova_meta_Nova_LibraryFunctionMap_closure551functionMap_Nova_getFunction*/nova_funcStruct* nova_meta_Nova_LibraryFunctionMap_functionMap0_Nova_getFunction(nova_meta_Nova_LibraryFunctionMap* this, nova_meta_Nova_Library* reference, nova_Nova_String* functionName, nova_Nova_String* classLocation);
-/*nova_meta_Nova_LibraryFunctionMap_closure553functionMap_Nova_getFunction*/nova_funcStruct* nova_meta_Nova_LibraryFunctionMap_functionMap1_Nova_getFunction(nova_meta_Nova_LibraryFunctionMap* this, nova_meta_Nova_Library* reference_, nova_Nova_String* functionName, nova_Nova_Object* reference);
+/*nova_meta_Nova_LibraryFunctionMap_closure556functionMap_Nova_getConstructor*/nova_funcStruct* nova_meta_Nova_LibraryFunctionMap_functionMap_Nova_getConstructor(nova_meta_Nova_LibraryFunctionMap* this, nova_meta_Nova_Library* reference, nova_Nova_String* classLocation);
+/*nova_meta_Nova_LibraryFunctionMap_closure559functionMap_Nova_getFunction*/nova_funcStruct* nova_meta_Nova_LibraryFunctionMap_functionMap0_Nova_getFunction(nova_meta_Nova_LibraryFunctionMap* this, nova_meta_Nova_Library* reference, nova_Nova_String* functionName, nova_Nova_String* classLocation);
+/*nova_meta_Nova_LibraryFunctionMap_closure562functionMap_Nova_getFunction*/nova_funcStruct* nova_meta_Nova_LibraryFunctionMap_functionMap1_Nova_getFunction(nova_meta_Nova_LibraryFunctionMap* this, nova_meta_Nova_Library* reference_, nova_Nova_String* functionName, nova_Nova_Object* reference);
 nova_meta_Nova_Library* nova_meta_Nova_LibraryFunctionMap_functionMap_Nova_load(nova_meta_Nova_LibraryFunctionMap* this, nova_meta_Nova_Library* reference);
 void nova_meta_Nova_LibraryFunctionMap_Nova_super(nova_meta_Nova_LibraryFunctionMap* this);
 
@@ -11418,18 +11427,18 @@ extern nova_datastruct_list_Nova_ImmutableArray* nova_thread_Nova_Thread_Nova_AC
 
 void nova_thread_Nova_Thread_Nova_init_static();
 nova_thread_Nova_Thread* nova_thread_Nova_Thread_0_Nova_construct(nova_thread_Nova_Thread* this);
-nova_thread_Nova_Thread* nova_thread_Nova_Thread_1_Nova_construct(nova_thread_Nova_Thread* this, nova_thread_Nova_Thread_closure557_Nova_action nova_thread_Nova_Thread_Nova_action, void* nova_thread_Nova_Thread_ref_Nova_action, void* nova_thread_Nova_Thread_context_Nova_action);
+nova_thread_Nova_Thread* nova_thread_Nova_Thread_1_Nova_construct(nova_thread_Nova_Thread* this, nova_thread_Nova_Thread_closure567_Nova_action nova_thread_Nova_Thread_Nova_action, void* nova_thread_Nova_Thread_ref_Nova_action, void* nova_thread_Nova_Thread_context_Nova_action);
 void nova_thread_Nova_Thread_Nova_destroy(nova_thread_Nova_Thread** this);
 
 void nova_thread_Nova_Thread_0_Nova_this(nova_thread_Nova_Thread* this);
-void nova_thread_Nova_Thread_1_Nova_this(nova_thread_Nova_Thread* this, nova_thread_Nova_Thread_closure559_Nova_action nova_thread_Nova_Thread_Nova_action, void* nova_thread_Nova_Thread_ref_Nova_action, void* nova_thread_Nova_Thread_context_Nova_action);
+void nova_thread_Nova_Thread_1_Nova_this(nova_thread_Nova_Thread* this, nova_thread_Nova_Thread_closure569_Nova_action nova_thread_Nova_Thread_Nova_action, void* nova_thread_Nova_Thread_ref_Nova_action, void* nova_thread_Nova_Thread_context_Nova_action);
 NOVA_THREAD_HANDLE* nova_thread_Nova_Thread_Nova_start(nova_thread_Nova_Thread* this);
 void nova_thread_Nova_Thread_Nova_join(nova_thread_Nova_Thread* this);
 void nova_thread_Nova_Thread_Nova_kill(nova_thread_Nova_Thread* this);
 void nova_thread_Nova_Thread_static_Nova_sleep(nova_thread_Nova_Thread* this, long_long millis);
 void nova_thread_Nova_Thread_static_Nova_lock(nova_thread_Nova_Thread* this);
 void nova_thread_Nova_Thread_static_Nova_unlock(nova_thread_Nova_Thread* this);
-void nova_thread_Nova_Thread_static_Nova_sync(nova_thread_Nova_Thread* this, nova_thread_Nova_Thread_closure560_Nova_action nova_thread_Nova_Thread_Nova_action, void* nova_thread_Nova_Thread_ref_Nova_action, void* nova_thread_Nova_Thread_context_Nova_action);
+void nova_thread_Nova_Thread_static_Nova_sync(nova_thread_Nova_Thread* this, nova_thread_Nova_Thread_closure570_Nova_action nova_thread_Nova_Thread_Nova_action, void* nova_thread_Nova_Thread_ref_Nova_action, void* nova_thread_Nova_Thread_context_Nova_action);
 void nova_thread_Nova_Thread_Nova_run(nova_thread_Nova_Thread* this);
 long_long nova_thread_Nova_Thread_Accessor_static_Nova_id(nova_thread_Nova_Thread* this);
 void nova_thread_Nova_Thread_Nova_super(nova_thread_Nova_Thread* this);
@@ -11449,14 +11458,14 @@ nova_thread_Nova_ThreadFunctionMap* nova_thread_Nova_ThreadFunctionMap_Nova_cons
 void nova_thread_Nova_ThreadFunctionMap_Nova_destroy(nova_thread_Nova_ThreadFunctionMap** this);
 void nova_thread_Nova_ThreadFunctionMap_Nova_this(nova_thread_Nova_ThreadFunctionMap* this);
 nova_thread_Nova_Thread* nova_thread_Nova_ThreadFunctionMap_functionMapThreadFunctionMap0_Nova_construct(nova_thread_Nova_ThreadFunctionMap* this);
-nova_thread_Nova_Thread* nova_thread_Nova_ThreadFunctionMap_functionMapThreadFunctionMap1_Nova_construct(nova_thread_Nova_ThreadFunctionMap* this, nova_thread_Nova_ThreadFunctionMap_closure561_Nova_action nova_thread_Nova_ThreadFunctionMap_Nova_action, void* nova_thread_Nova_ThreadFunctionMap_ref_Nova_action, void* nova_thread_Nova_ThreadFunctionMap_context_Nova_action);
+nova_thread_Nova_Thread* nova_thread_Nova_ThreadFunctionMap_functionMapThreadFunctionMap1_Nova_construct(nova_thread_Nova_ThreadFunctionMap* this, nova_thread_Nova_ThreadFunctionMap_closure571_Nova_action nova_thread_Nova_ThreadFunctionMap_Nova_action, void* nova_thread_Nova_ThreadFunctionMap_ref_Nova_action, void* nova_thread_Nova_ThreadFunctionMap_context_Nova_action);
 NOVA_THREAD_HANDLE* nova_thread_Nova_ThreadFunctionMap_functionMap_Nova_start(nova_thread_Nova_ThreadFunctionMap* this, nova_thread_Nova_Thread* reference);
 void nova_thread_Nova_ThreadFunctionMap_functionMap_Nova_join(nova_thread_Nova_ThreadFunctionMap* this, nova_thread_Nova_Thread* reference);
 void nova_thread_Nova_ThreadFunctionMap_functionMap_Nova_kill(nova_thread_Nova_ThreadFunctionMap* this, nova_thread_Nova_Thread* reference);
 void nova_thread_Nova_ThreadFunctionMap_functionMap_static_Nova_sleep(nova_thread_Nova_ThreadFunctionMap* this, long_long millis);
 void nova_thread_Nova_ThreadFunctionMap_functionMap_static_Nova_lock(nova_thread_Nova_ThreadFunctionMap* this);
 void nova_thread_Nova_ThreadFunctionMap_functionMap_static_Nova_unlock(nova_thread_Nova_ThreadFunctionMap* this);
-void nova_thread_Nova_ThreadFunctionMap_functionMap_static_Nova_sync(nova_thread_Nova_ThreadFunctionMap* this, nova_thread_Nova_ThreadFunctionMap_closure562_Nova_action nova_thread_Nova_ThreadFunctionMap_Nova_action, void* nova_thread_Nova_ThreadFunctionMap_ref_Nova_action, void* nova_thread_Nova_ThreadFunctionMap_context_Nova_action);
+void nova_thread_Nova_ThreadFunctionMap_functionMap_static_Nova_sync(nova_thread_Nova_ThreadFunctionMap* this, nova_thread_Nova_ThreadFunctionMap_closure572_Nova_action nova_thread_Nova_ThreadFunctionMap_Nova_action, void* nova_thread_Nova_ThreadFunctionMap_ref_Nova_action, void* nova_thread_Nova_ThreadFunctionMap_context_Nova_action);
 void nova_thread_Nova_ThreadFunctionMap_functionMap_Nova_run(nova_thread_Nova_ThreadFunctionMap* this, nova_thread_Nova_Thread* reference);
 void nova_thread_Nova_ThreadFunctionMap_Nova_super(nova_thread_Nova_ThreadFunctionMap* this);
 
@@ -11588,8 +11597,8 @@ CCLASS_CLASS
 void nova_thread_async_Nova_Async_Nova_init_static();
 nova_thread_async_Nova_Async* nova_thread_async_Nova_Async_Nova_construct(nova_thread_async_Nova_Async* this);
 void nova_thread_async_Nova_Async_Nova_destroy(nova_thread_async_Nova_Async** this);
-nova_thread_async_Nova_Task* nova_thread_async_Nova_Async_static_Nova_execute(nova_thread_async_Nova_Async* this, nova_thread_async_Nova_Async_closure563_Nova_func nova_thread_async_Nova_Async_Nova_func, void* nova_thread_async_Nova_Async_ref_Nova_func, void* nova_thread_async_Nova_Async_context_Nova_func);
-nova_thread_async_Nova_Task* nova_thread_async_Nova_Async_static_Nova_request(nova_thread_async_Nova_Async* this, nova_thread_async_Nova_Async_closure564_Nova_func nova_thread_async_Nova_Async_Nova_func, void* nova_thread_async_Nova_Async_ref_Nova_func, void* nova_thread_async_Nova_Async_context_Nova_func);
+nova_thread_async_Nova_Task* nova_thread_async_Nova_Async_static_Nova_execute(nova_thread_async_Nova_Async* this, nova_thread_async_Nova_Async_closure573_Nova_func nova_thread_async_Nova_Async_Nova_func, void* nova_thread_async_Nova_Async_ref_Nova_func, void* nova_thread_async_Nova_Async_context_Nova_func);
+nova_thread_async_Nova_Task* nova_thread_async_Nova_Async_static_Nova_request(nova_thread_async_Nova_Async* this, nova_thread_async_Nova_Async_closure574_Nova_func nova_thread_async_Nova_Async_Nova_func, void* nova_thread_async_Nova_Async_ref_Nova_func, void* nova_thread_async_Nova_Async_context_Nova_func);
 void nova_thread_async_Nova_Async_Nova_this(nova_thread_async_Nova_Async* this);
 void nova_thread_async_Nova_Async_Nova_super(nova_thread_async_Nova_Async* this);
 
@@ -11607,8 +11616,8 @@ nova_thread_async_Nova_AsyncFunctionMap* nova_thread_async_Nova_AsyncFunctionMap
 void nova_thread_async_Nova_AsyncFunctionMap_Nova_destroy(nova_thread_async_Nova_AsyncFunctionMap** this);
 void nova_thread_async_Nova_AsyncFunctionMap_Nova_this(nova_thread_async_Nova_AsyncFunctionMap* this);
 nova_thread_async_Nova_Async* nova_thread_async_Nova_AsyncFunctionMap_functionMapAsyncFunctionMap_Nova_construct(nova_thread_async_Nova_AsyncFunctionMap* this);
-nova_thread_async_Nova_Task* nova_thread_async_Nova_AsyncFunctionMap_functionMap_static_Nova_execute(nova_thread_async_Nova_AsyncFunctionMap* this, nova_thread_async_Nova_AsyncFunctionMap_closure565_Nova_func nova_thread_async_Nova_AsyncFunctionMap_Nova_func, void* nova_thread_async_Nova_AsyncFunctionMap_ref_Nova_func, void* nova_thread_async_Nova_AsyncFunctionMap_context_Nova_func);
-nova_thread_async_Nova_Task* nova_thread_async_Nova_AsyncFunctionMap_functionMap_static_Nova_request(nova_thread_async_Nova_AsyncFunctionMap* this, nova_thread_async_Nova_AsyncFunctionMap_closure566_Nova_func nova_thread_async_Nova_AsyncFunctionMap_Nova_func, void* nova_thread_async_Nova_AsyncFunctionMap_ref_Nova_func, void* nova_thread_async_Nova_AsyncFunctionMap_context_Nova_func);
+nova_thread_async_Nova_Task* nova_thread_async_Nova_AsyncFunctionMap_functionMap_static_Nova_execute(nova_thread_async_Nova_AsyncFunctionMap* this, nova_thread_async_Nova_AsyncFunctionMap_closure575_Nova_func nova_thread_async_Nova_AsyncFunctionMap_Nova_func, void* nova_thread_async_Nova_AsyncFunctionMap_ref_Nova_func, void* nova_thread_async_Nova_AsyncFunctionMap_context_Nova_func);
+nova_thread_async_Nova_Task* nova_thread_async_Nova_AsyncFunctionMap_functionMap_static_Nova_request(nova_thread_async_Nova_AsyncFunctionMap* this, nova_thread_async_Nova_AsyncFunctionMap_closure576_Nova_func nova_thread_async_Nova_AsyncFunctionMap_Nova_func, void* nova_thread_async_Nova_AsyncFunctionMap_ref_Nova_func, void* nova_thread_async_Nova_AsyncFunctionMap_context_Nova_func);
 void nova_thread_async_Nova_AsyncFunctionMap_Nova_super(nova_thread_async_Nova_AsyncFunctionMap* this);
 
 CCLASS_CLASS
@@ -11862,7 +11871,7 @@ nova_time_Nova_Timer* nova_time_Nova_Timer_Nova_start(nova_time_Nova_Timer* this
 nova_time_Nova_Timer* nova_time_Nova_Timer_Nova_stop(nova_time_Nova_Timer* this);
 nova_time_Nova_Timer* nova_time_Nova_Timer_Nova_reset(nova_time_Nova_Timer* this);
 nova_Nova_String* nova_time_Nova_Timer_Nova_toString(nova_time_Nova_Timer* this);
-nova_time_Nova_Timer* nova_time_Nova_Timer_static_Nova_time(nova_time_Nova_Timer* this, nova_time_Nova_Timer_closure567_Nova_action nova_time_Nova_Timer_Nova_action, void* nova_time_Nova_Timer_ref_Nova_action, void* nova_time_Nova_Timer_context_Nova_action, nova_time_Nova_Timer_closure568_Nova_callback nova_time_Nova_Timer_Nova_callback, void* nova_time_Nova_Timer_ref_Nova_callback, void* nova_time_Nova_Timer_context_Nova_callback);
+nova_time_Nova_Timer* nova_time_Nova_Timer_static_Nova_time(nova_time_Nova_Timer* this, nova_time_Nova_Timer_closure577_Nova_action nova_time_Nova_Timer_Nova_action, void* nova_time_Nova_Timer_ref_Nova_action, void* nova_time_Nova_Timer_context_Nova_action, nova_time_Nova_Timer_closure578_Nova_callback nova_time_Nova_Timer_Nova_callback, void* nova_time_Nova_Timer_ref_Nova_callback, void* nova_time_Nova_Timer_context_Nova_callback);
 long_long nova_time_Nova_Timer_Accessor_Nova_duration(nova_time_Nova_Timer* this);
 void nova_time_Nova_Timer_Nova_super(nova_time_Nova_Timer* this);
 nova_time_Nova_Timer* nova_time_Nova_Timer_virtual_Nova_stop(nova_time_Nova_Timer* this);
@@ -11886,7 +11895,7 @@ nova_time_Nova_Timer* nova_time_Nova_TimerFunctionMap_functionMap_Nova_start(nov
 nova_time_Nova_Timer* nova_time_Nova_TimerFunctionMap_functionMap_Nova_stop(nova_time_Nova_TimerFunctionMap* this, nova_time_Nova_Timer* reference);
 nova_time_Nova_Timer* nova_time_Nova_TimerFunctionMap_functionMap_Nova_reset(nova_time_Nova_TimerFunctionMap* this, nova_time_Nova_Timer* reference);
 nova_Nova_String* nova_time_Nova_TimerFunctionMap_functionMap_Nova_toString(nova_time_Nova_TimerFunctionMap* this, nova_time_Nova_Timer* reference);
-nova_time_Nova_Timer* nova_time_Nova_TimerFunctionMap_functionMap_static_Nova_time(nova_time_Nova_TimerFunctionMap* this, nova_time_Nova_TimerFunctionMap_closure569_Nova_action nova_time_Nova_TimerFunctionMap_Nova_action, void* nova_time_Nova_TimerFunctionMap_ref_Nova_action, void* nova_time_Nova_TimerFunctionMap_context_Nova_action, nova_time_Nova_TimerFunctionMap_closure570_Nova_callback nova_time_Nova_TimerFunctionMap_Nova_callback, void* nova_time_Nova_TimerFunctionMap_ref_Nova_callback, void* nova_time_Nova_TimerFunctionMap_context_Nova_callback);
+nova_time_Nova_Timer* nova_time_Nova_TimerFunctionMap_functionMap_static_Nova_time(nova_time_Nova_TimerFunctionMap* this, nova_time_Nova_TimerFunctionMap_closure579_Nova_action nova_time_Nova_TimerFunctionMap_Nova_action, void* nova_time_Nova_TimerFunctionMap_ref_Nova_action, void* nova_time_Nova_TimerFunctionMap_context_Nova_action, nova_time_Nova_TimerFunctionMap_closure580_Nova_callback nova_time_Nova_TimerFunctionMap_Nova_callback, void* nova_time_Nova_TimerFunctionMap_ref_Nova_callback, void* nova_time_Nova_TimerFunctionMap_context_Nova_callback);
 void nova_time_Nova_TimerFunctionMap_Nova_super(nova_time_Nova_TimerFunctionMap* this);
 nova_time_Nova_Timer* nova_time_Nova_TimerFunctionMap_virtualfunctionMapTimer_Nova_construct(nova_time_Nova_TimerFunctionMap* this);
 
