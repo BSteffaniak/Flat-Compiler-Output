@@ -1087,6 +1087,24 @@ extern nova_meta_Nova_GenericParameterFunctionMap_VTable nova_meta_Nova_GenericP
 typedef struct nova_meta_Nova_GenericParameterPropertyMap_VTable nova_meta_Nova_GenericParameterPropertyMap_VTable;
 extern nova_meta_Nova_GenericParameterPropertyMap_VTable nova_meta_Nova_GenericParameterPropertyMap_VTable_val;
 
+typedef struct nova_meta_Nova_InvalidLibraryException_VTable nova_meta_Nova_InvalidLibraryException_VTable;
+extern nova_meta_Nova_InvalidLibraryException_VTable nova_meta_Nova_InvalidLibraryException_VTable_val;
+
+typedef struct nova_meta_Nova_InvalidLibraryExceptionFunctionMap_VTable nova_meta_Nova_InvalidLibraryExceptionFunctionMap_VTable;
+extern nova_meta_Nova_InvalidLibraryExceptionFunctionMap_VTable nova_meta_Nova_InvalidLibraryExceptionFunctionMap_VTable_val;
+
+typedef struct nova_meta_Nova_InvalidLibraryExceptionPropertyMap_VTable nova_meta_Nova_InvalidLibraryExceptionPropertyMap_VTable;
+extern nova_meta_Nova_InvalidLibraryExceptionPropertyMap_VTable nova_meta_Nova_InvalidLibraryExceptionPropertyMap_VTable_val;
+
+typedef struct nova_meta_Nova_Library_VTable nova_meta_Nova_Library_VTable;
+extern nova_meta_Nova_Library_VTable nova_meta_Nova_Library_VTable_val;
+
+typedef struct nova_meta_Nova_LibraryFunctionMap_VTable nova_meta_Nova_LibraryFunctionMap_VTable;
+extern nova_meta_Nova_LibraryFunctionMap_VTable nova_meta_Nova_LibraryFunctionMap_VTable_val;
+
+typedef struct nova_meta_Nova_LibraryPropertyMap_VTable nova_meta_Nova_LibraryPropertyMap_VTable;
+extern nova_meta_Nova_LibraryPropertyMap_VTable nova_meta_Nova_LibraryPropertyMap_VTable_val;
+
 typedef struct nova_meta_Nova_PropertyMap_VTable nova_meta_Nova_PropertyMap_VTable;
 extern nova_meta_Nova_PropertyMap_VTable nova_meta_Nova_PropertyMap_VTable_val;
 
@@ -1104,24 +1122,6 @@ extern nova_meta_Nova_TypeFunctionMap_VTable nova_meta_Nova_TypeFunctionMap_VTab
 
 typedef struct nova_meta_Nova_TypePropertyMap_VTable nova_meta_Nova_TypePropertyMap_VTable;
 extern nova_meta_Nova_TypePropertyMap_VTable nova_meta_Nova_TypePropertyMap_VTable_val;
-
-typedef struct nova_meta_library_Nova_InvalidLibraryException_VTable nova_meta_library_Nova_InvalidLibraryException_VTable;
-extern nova_meta_library_Nova_InvalidLibraryException_VTable nova_meta_library_Nova_InvalidLibraryException_VTable_val;
-
-typedef struct nova_meta_library_Nova_InvalidLibraryExceptionFunctionMap_VTable nova_meta_library_Nova_InvalidLibraryExceptionFunctionMap_VTable;
-extern nova_meta_library_Nova_InvalidLibraryExceptionFunctionMap_VTable nova_meta_library_Nova_InvalidLibraryExceptionFunctionMap_VTable_val;
-
-typedef struct nova_meta_library_Nova_InvalidLibraryExceptionPropertyMap_VTable nova_meta_library_Nova_InvalidLibraryExceptionPropertyMap_VTable;
-extern nova_meta_library_Nova_InvalidLibraryExceptionPropertyMap_VTable nova_meta_library_Nova_InvalidLibraryExceptionPropertyMap_VTable_val;
-
-typedef struct nova_meta_library_Nova_Library_VTable nova_meta_library_Nova_Library_VTable;
-extern nova_meta_library_Nova_Library_VTable nova_meta_library_Nova_Library_VTable_val;
-
-typedef struct nova_meta_library_Nova_LibraryFunctionMap_VTable nova_meta_library_Nova_LibraryFunctionMap_VTable;
-extern nova_meta_library_Nova_LibraryFunctionMap_VTable nova_meta_library_Nova_LibraryFunctionMap_VTable_val;
-
-typedef struct nova_meta_library_Nova_LibraryPropertyMap_VTable nova_meta_library_Nova_LibraryPropertyMap_VTable;
-extern nova_meta_library_Nova_LibraryPropertyMap_VTable nova_meta_library_Nova_LibraryPropertyMap_VTable_val;
 
 typedef struct nova_network_Nova_ClientSocket_VTable nova_network_Nova_ClientSocket_VTable;
 extern nova_network_Nova_ClientSocket_VTable nova_network_Nova_ClientSocket_VTable_val;
@@ -3927,7 +3927,7 @@ struct nova_exception_Nova_CaughtException_VTable
 {
 nova_meta_Nova_Class* classInstance;
 nova_Interface_VTable itable;
-nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*);
+nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_exception_Nova_CaughtException*);
 long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*);
 };
 
@@ -5448,6 +5448,61 @@ long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Objec
 };
 
 
+struct nova_meta_Nova_InvalidLibraryException_VTable
+{
+nova_meta_Nova_Class* classInstance;
+nova_Interface_VTable itable;
+nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_exception_Nova_Exception*);
+long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*);
+};
+
+
+struct nova_meta_Nova_InvalidLibraryExceptionFunctionMap_VTable
+{
+nova_meta_Nova_Class* classInstance;
+nova_Interface_VTable itable;
+nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*);
+long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*);
+nova_meta_Nova_InvalidLibraryException* (*nova_exception_Nova_ExceptionFunctionMap_virtualfunctionMapInvalidLibraryException_Nova_construct)(nova_meta_Nova_InvalidLibraryExceptionFunctionMap*, nova_Nova_String*);
+};
+
+
+struct nova_meta_Nova_InvalidLibraryExceptionPropertyMap_VTable
+{
+nova_meta_Nova_Class* classInstance;
+nova_Interface_VTable itable;
+nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*);
+long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*);
+};
+
+
+struct nova_meta_Nova_Library_VTable
+{
+nova_meta_Nova_Class* classInstance;
+nova_Interface_VTable itable;
+nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*);
+long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*);
+};
+
+
+struct nova_meta_Nova_LibraryFunctionMap_VTable
+{
+nova_meta_Nova_Class* classInstance;
+nova_Interface_VTable itable;
+nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*);
+long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*);
+};
+
+
+struct nova_meta_Nova_LibraryPropertyMap_VTable
+{
+nova_meta_Nova_Class* classInstance;
+nova_Interface_VTable itable;
+nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*);
+long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*);
+};
+
+
 struct nova_meta_Nova_PropertyMap_VTable
 {
 nova_meta_Nova_Class* classInstance;
@@ -5494,61 +5549,6 @@ long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Objec
 
 
 struct nova_meta_Nova_TypePropertyMap_VTable
-{
-nova_meta_Nova_Class* classInstance;
-nova_Interface_VTable itable;
-nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*);
-long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*);
-};
-
-
-struct nova_meta_library_Nova_InvalidLibraryException_VTable
-{
-nova_meta_Nova_Class* classInstance;
-nova_Interface_VTable itable;
-nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_exception_Nova_Exception*);
-long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*);
-};
-
-
-struct nova_meta_library_Nova_InvalidLibraryExceptionFunctionMap_VTable
-{
-nova_meta_Nova_Class* classInstance;
-nova_Interface_VTable itable;
-nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*);
-long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*);
-nova_meta_library_Nova_InvalidLibraryException* (*nova_exception_Nova_ExceptionFunctionMap_virtualfunctionMapInvalidLibraryException_Nova_construct)(nova_meta_library_Nova_InvalidLibraryExceptionFunctionMap*, nova_Nova_String*);
-};
-
-
-struct nova_meta_library_Nova_InvalidLibraryExceptionPropertyMap_VTable
-{
-nova_meta_Nova_Class* classInstance;
-nova_Interface_VTable itable;
-nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*);
-long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*);
-};
-
-
-struct nova_meta_library_Nova_Library_VTable
-{
-nova_meta_Nova_Class* classInstance;
-nova_Interface_VTable itable;
-nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*);
-long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*);
-};
-
-
-struct nova_meta_library_Nova_LibraryFunctionMap_VTable
-{
-nova_meta_Nova_Class* classInstance;
-nova_Interface_VTable itable;
-nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*);
-long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*);
-};
-
-
-struct nova_meta_library_Nova_LibraryPropertyMap_VTable
 {
 nova_meta_Nova_Class* classInstance;
 nova_Interface_VTable itable;

@@ -2454,6 +2454,46 @@ nova_Nova_String_1_Nova_construct(0,
 (char*)("nova/meta/GenericParameter.GenericParameterPropertyMap")),
 0);
 
+// nova/meta/InvalidLibraryException
+nova_meta_Nova_InvalidLibraryException_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0,
+nova_Nova_String_1_Nova_construct(0,
+(char*)("nova/meta/InvalidLibraryException")),
+0);
+nova_meta_Nova_InvalidLibraryException_VTable_val.classInstance->nova_meta_Nova_Class_Nova_functionMap = (nova_meta_Nova_FunctionMap*)nova_meta_Nova_InvalidLibraryExceptionFunctionMap_Nova_construct(0);
+nova_meta_Nova_InvalidLibraryException_VTable_val.classInstance->nova_meta_Nova_Class_Nova_propertyMap = (nova_meta_Nova_PropertyMap*)nova_meta_Nova_InvalidLibraryExceptionPropertyMap_Nova_construct(0);
+
+// nova/meta/InvalidLibraryException.InvalidLibraryExceptionFunctionMap
+nova_meta_Nova_InvalidLibraryExceptionFunctionMap_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0,
+nova_Nova_String_1_Nova_construct(0,
+(char*)("nova/meta/InvalidLibraryException.InvalidLibraryExceptionFunctionMap")),
+0);
+
+// nova/meta/InvalidLibraryException.InvalidLibraryExceptionPropertyMap
+nova_meta_Nova_InvalidLibraryExceptionPropertyMap_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0,
+nova_Nova_String_1_Nova_construct(0,
+(char*)("nova/meta/InvalidLibraryException.InvalidLibraryExceptionPropertyMap")),
+0);
+
+// nova/meta/Library
+nova_meta_Nova_Library_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0,
+nova_Nova_String_1_Nova_construct(0,
+(char*)("nova/meta/Library")),
+0);
+nova_meta_Nova_Library_VTable_val.classInstance->nova_meta_Nova_Class_Nova_functionMap = (nova_meta_Nova_FunctionMap*)nova_meta_Nova_LibraryFunctionMap_Nova_construct(0);
+nova_meta_Nova_Library_VTable_val.classInstance->nova_meta_Nova_Class_Nova_propertyMap = (nova_meta_Nova_PropertyMap*)nova_meta_Nova_LibraryPropertyMap_Nova_construct(0);
+
+// nova/meta/Library.LibraryFunctionMap
+nova_meta_Nova_LibraryFunctionMap_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0,
+nova_Nova_String_1_Nova_construct(0,
+(char*)("nova/meta/Library.LibraryFunctionMap")),
+0);
+
+// nova/meta/Library.LibraryPropertyMap
+nova_meta_Nova_LibraryPropertyMap_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0,
+nova_Nova_String_1_Nova_construct(0,
+(char*)("nova/meta/Library.LibraryPropertyMap")),
+0);
+
 // nova/meta/PropertyMap
 nova_meta_Nova_PropertyMap_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0,
 nova_Nova_String_1_Nova_construct(0,
@@ -2492,46 +2532,6 @@ nova_Nova_String_1_Nova_construct(0,
 nova_meta_Nova_TypePropertyMap_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0,
 nova_Nova_String_1_Nova_construct(0,
 (char*)("nova/meta/Type.TypePropertyMap")),
-0);
-
-// nova/meta/library/InvalidLibraryException
-nova_meta_library_Nova_InvalidLibraryException_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0,
-nova_Nova_String_1_Nova_construct(0,
-(char*)("nova/meta/library/InvalidLibraryException")),
-0);
-nova_meta_library_Nova_InvalidLibraryException_VTable_val.classInstance->nova_meta_Nova_Class_Nova_functionMap = (nova_meta_Nova_FunctionMap*)nova_meta_library_Nova_InvalidLibraryExceptionFunctionMap_Nova_construct(0);
-nova_meta_library_Nova_InvalidLibraryException_VTable_val.classInstance->nova_meta_Nova_Class_Nova_propertyMap = (nova_meta_Nova_PropertyMap*)nova_meta_library_Nova_InvalidLibraryExceptionPropertyMap_Nova_construct(0);
-
-// nova/meta/library/InvalidLibraryException.InvalidLibraryExceptionFunctionMap
-nova_meta_library_Nova_InvalidLibraryExceptionFunctionMap_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0,
-nova_Nova_String_1_Nova_construct(0,
-(char*)("nova/meta/library/InvalidLibraryException.InvalidLibraryExceptionFunctionMap")),
-0);
-
-// nova/meta/library/InvalidLibraryException.InvalidLibraryExceptionPropertyMap
-nova_meta_library_Nova_InvalidLibraryExceptionPropertyMap_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0,
-nova_Nova_String_1_Nova_construct(0,
-(char*)("nova/meta/library/InvalidLibraryException.InvalidLibraryExceptionPropertyMap")),
-0);
-
-// nova/meta/library/Library
-nova_meta_library_Nova_Library_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0,
-nova_Nova_String_1_Nova_construct(0,
-(char*)("nova/meta/library/Library")),
-0);
-nova_meta_library_Nova_Library_VTable_val.classInstance->nova_meta_Nova_Class_Nova_functionMap = (nova_meta_Nova_FunctionMap*)nova_meta_library_Nova_LibraryFunctionMap_Nova_construct(0);
-nova_meta_library_Nova_Library_VTable_val.classInstance->nova_meta_Nova_Class_Nova_propertyMap = (nova_meta_Nova_PropertyMap*)nova_meta_library_Nova_LibraryPropertyMap_Nova_construct(0);
-
-// nova/meta/library/Library.LibraryFunctionMap
-nova_meta_library_Nova_LibraryFunctionMap_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0,
-nova_Nova_String_1_Nova_construct(0,
-(char*)("nova/meta/library/Library.LibraryFunctionMap")),
-0);
-
-// nova/meta/library/Library.LibraryPropertyMap
-nova_meta_library_Nova_LibraryPropertyMap_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0,
-nova_Nova_String_1_Nova_construct(0,
-(char*)("nova/meta/library/Library.LibraryPropertyMap")),
 0);
 
 // nova/network/ClientSocket
@@ -6243,6 +6243,24 @@ nova_meta_Nova_GenericParameterFunctionMap_VTable_val.classInstance->nova_meta_N
 nova_meta_Nova_GenericParameterPropertyMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = nova_meta_Nova_PropertyMap_VTable_val.classInstance;
 nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 0);
 nova_meta_Nova_GenericParameterPropertyMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, (nova_Nova_Object**)nova_class_interfaces, 0);
+nova_meta_Nova_InvalidLibraryException_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = nova_exception_Nova_Exception_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 0);
+nova_meta_Nova_InvalidLibraryException_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, (nova_Nova_Object**)nova_class_interfaces, 0);
+nova_meta_Nova_InvalidLibraryExceptionFunctionMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = nova_exception_Nova_ExceptionFunctionMap_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 0);
+nova_meta_Nova_InvalidLibraryExceptionFunctionMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, (nova_Nova_Object**)nova_class_interfaces, 0);
+nova_meta_Nova_InvalidLibraryExceptionPropertyMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = nova_exception_Nova_ExceptionPropertyMap_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 0);
+nova_meta_Nova_InvalidLibraryExceptionPropertyMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, (nova_Nova_Object**)nova_class_interfaces, 0);
+nova_meta_Nova_Library_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = nova_Nova_Object_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 0);
+nova_meta_Nova_Library_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, (nova_Nova_Object**)nova_class_interfaces, 0);
+nova_meta_Nova_LibraryFunctionMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = nova_meta_Nova_FunctionMap_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 0);
+nova_meta_Nova_LibraryFunctionMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, (nova_Nova_Object**)nova_class_interfaces, 0);
+nova_meta_Nova_LibraryPropertyMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = nova_meta_Nova_PropertyMap_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 0);
+nova_meta_Nova_LibraryPropertyMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, (nova_Nova_Object**)nova_class_interfaces, 0);
 nova_meta_Nova_PropertyMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = nova_Nova_Object_VTable_val.classInstance;
 nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 0);
 nova_meta_Nova_PropertyMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, (nova_Nova_Object**)nova_class_interfaces, 0);
@@ -6261,24 +6279,6 @@ nova_meta_Nova_TypeFunctionMap_VTable_val.classInstance->nova_meta_Nova_Class_No
 nova_meta_Nova_TypePropertyMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = nova_meta_Nova_PropertyMap_VTable_val.classInstance;
 nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 0);
 nova_meta_Nova_TypePropertyMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, (nova_Nova_Object**)nova_class_interfaces, 0);
-nova_meta_library_Nova_InvalidLibraryException_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = nova_exception_Nova_Exception_VTable_val.classInstance;
-nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 0);
-nova_meta_library_Nova_InvalidLibraryException_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, (nova_Nova_Object**)nova_class_interfaces, 0);
-nova_meta_library_Nova_InvalidLibraryExceptionFunctionMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = nova_exception_Nova_ExceptionFunctionMap_VTable_val.classInstance;
-nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 0);
-nova_meta_library_Nova_InvalidLibraryExceptionFunctionMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, (nova_Nova_Object**)nova_class_interfaces, 0);
-nova_meta_library_Nova_InvalidLibraryExceptionPropertyMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = nova_exception_Nova_ExceptionPropertyMap_VTable_val.classInstance;
-nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 0);
-nova_meta_library_Nova_InvalidLibraryExceptionPropertyMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, (nova_Nova_Object**)nova_class_interfaces, 0);
-nova_meta_library_Nova_Library_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = nova_Nova_Object_VTable_val.classInstance;
-nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 0);
-nova_meta_library_Nova_Library_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, (nova_Nova_Object**)nova_class_interfaces, 0);
-nova_meta_library_Nova_LibraryFunctionMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = nova_meta_Nova_FunctionMap_VTable_val.classInstance;
-nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 0);
-nova_meta_library_Nova_LibraryFunctionMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, (nova_Nova_Object**)nova_class_interfaces, 0);
-nova_meta_library_Nova_LibraryPropertyMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = nova_meta_Nova_PropertyMap_VTable_val.classInstance;
-nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 0);
-nova_meta_library_Nova_LibraryPropertyMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, (nova_Nova_Object**)nova_class_interfaces, 0);
 nova_network_Nova_ClientSocket_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = nova_network_Nova_Socket_VTable_val.classInstance;
 nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 0);
 nova_network_Nova_ClientSocket_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, (nova_Nova_Object**)nova_class_interfaces, 0);
@@ -7905,18 +7905,18 @@ nova_all_classes[358] = nova_meta_Nova_GenericArgumentPropertyMap_VTable_val.cla
 nova_all_classes[359] = nova_meta_Nova_GenericParameter_VTable_val.classInstance;
 nova_all_classes[360] = nova_meta_Nova_GenericParameterFunctionMap_VTable_val.classInstance;
 nova_all_classes[361] = nova_meta_Nova_GenericParameterPropertyMap_VTable_val.classInstance;
-nova_all_classes[362] = nova_meta_Nova_PropertyMap_VTable_val.classInstance;
-nova_all_classes[363] = nova_meta_Nova_PropertyMapFunctionMap_VTable_val.classInstance;
-nova_all_classes[364] = nova_meta_Nova_PropertyMapPropertyMap_VTable_val.classInstance;
-nova_all_classes[365] = nova_meta_Nova_Type_VTable_val.classInstance;
-nova_all_classes[366] = nova_meta_Nova_TypeFunctionMap_VTable_val.classInstance;
-nova_all_classes[367] = nova_meta_Nova_TypePropertyMap_VTable_val.classInstance;
-nova_all_classes[368] = nova_meta_library_Nova_InvalidLibraryException_VTable_val.classInstance;
-nova_all_classes[369] = nova_meta_library_Nova_InvalidLibraryExceptionFunctionMap_VTable_val.classInstance;
-nova_all_classes[370] = nova_meta_library_Nova_InvalidLibraryExceptionPropertyMap_VTable_val.classInstance;
-nova_all_classes[371] = nova_meta_library_Nova_Library_VTable_val.classInstance;
-nova_all_classes[372] = nova_meta_library_Nova_LibraryFunctionMap_VTable_val.classInstance;
-nova_all_classes[373] = nova_meta_library_Nova_LibraryPropertyMap_VTable_val.classInstance;
+nova_all_classes[362] = nova_meta_Nova_InvalidLibraryException_VTable_val.classInstance;
+nova_all_classes[363] = nova_meta_Nova_InvalidLibraryExceptionFunctionMap_VTable_val.classInstance;
+nova_all_classes[364] = nova_meta_Nova_InvalidLibraryExceptionPropertyMap_VTable_val.classInstance;
+nova_all_classes[365] = nova_meta_Nova_Library_VTable_val.classInstance;
+nova_all_classes[366] = nova_meta_Nova_LibraryFunctionMap_VTable_val.classInstance;
+nova_all_classes[367] = nova_meta_Nova_LibraryPropertyMap_VTable_val.classInstance;
+nova_all_classes[368] = nova_meta_Nova_PropertyMap_VTable_val.classInstance;
+nova_all_classes[369] = nova_meta_Nova_PropertyMapFunctionMap_VTable_val.classInstance;
+nova_all_classes[370] = nova_meta_Nova_PropertyMapPropertyMap_VTable_val.classInstance;
+nova_all_classes[371] = nova_meta_Nova_Type_VTable_val.classInstance;
+nova_all_classes[372] = nova_meta_Nova_TypeFunctionMap_VTable_val.classInstance;
+nova_all_classes[373] = nova_meta_Nova_TypePropertyMap_VTable_val.classInstance;
 nova_all_classes[374] = nova_network_Nova_ClientSocket_VTable_val.classInstance;
 nova_all_classes[375] = nova_network_Nova_ClientSocketFunctionMap_VTable_val.classInstance;
 nova_all_classes[376] = nova_network_Nova_ClientSocketPropertyMap_VTable_val.classInstance;
@@ -8280,6 +8280,10 @@ nova_all_classes[733] = stabilitytest_Nova_UnstableExceptionPropertyMap_VTable_v
 nova_meta_Nova_Class_Nova_ALL = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, (nova_Nova_Object**)nova_all_classes, 734);
 
 
+}
+
+void novaCallStaticBlocks(void* this)
+{
 nova_Nova_Object_Nova_init_static();
 nova_Nova_String_Nova_init_static();
 nova_Nova_StringFunctionMap_Nova_init_static();
@@ -8642,18 +8646,18 @@ nova_meta_Nova_GenericArgumentPropertyMap_Nova_init_static();
 nova_meta_Nova_GenericParameter_Nova_init_static();
 nova_meta_Nova_GenericParameterFunctionMap_Nova_init_static();
 nova_meta_Nova_GenericParameterPropertyMap_Nova_init_static();
+nova_meta_Nova_InvalidLibraryException_Nova_init_static();
+nova_meta_Nova_InvalidLibraryExceptionFunctionMap_Nova_init_static();
+nova_meta_Nova_InvalidLibraryExceptionPropertyMap_Nova_init_static();
+nova_meta_Nova_Library_Nova_init_static();
+nova_meta_Nova_LibraryFunctionMap_Nova_init_static();
+nova_meta_Nova_LibraryPropertyMap_Nova_init_static();
 nova_meta_Nova_PropertyMap_Nova_init_static();
 nova_meta_Nova_PropertyMapFunctionMap_Nova_init_static();
 nova_meta_Nova_PropertyMapPropertyMap_Nova_init_static();
 nova_meta_Nova_Type_Nova_init_static();
 nova_meta_Nova_TypeFunctionMap_Nova_init_static();
 nova_meta_Nova_TypePropertyMap_Nova_init_static();
-nova_meta_library_Nova_InvalidLibraryException_Nova_init_static();
-nova_meta_library_Nova_InvalidLibraryExceptionFunctionMap_Nova_init_static();
-nova_meta_library_Nova_InvalidLibraryExceptionPropertyMap_Nova_init_static();
-nova_meta_library_Nova_Library_Nova_init_static();
-nova_meta_library_Nova_LibraryFunctionMap_Nova_init_static();
-nova_meta_library_Nova_LibraryPropertyMap_Nova_init_static();
 nova_network_Nova_ClientSocket_Nova_init_static();
 nova_network_Nova_ClientSocketFunctionMap_Nova_init_static();
 nova_network_Nova_ClientSocketPropertyMap_Nova_init_static();
@@ -9019,5 +9023,7 @@ stabilitytest_Nova_UnstableExceptionPropertyMap_Nova_init_static();
 
 int main(int argc, char** argvs)
 {
-return nova_Nova_System_static_Nova_runMain(0, argc, argvs, (nova_Nova_System_closure419_Nova_mainFunc)&example_Nova_SvgFractal_static_Nova_main, 0, 0, (nova_Nova_System_closure420_Nova_initialize)&novaInitProgramData, 0, 0);
+nova_gc_Nova_GC_static_Nova_init((nova_gc_Nova_GC*)(0));
+
+return nova_Nova_System_static_Nova_runMain(0, argc, argvs, (nova_Nova_System_closure419_Nova_mainFunc)&example_Nova_Lab_static_Nova_main, 0, 0, (nova_Nova_System_closure420_Nova_initialize)&novaInitProgramData, 0, 0, (nova_Nova_System_closure421_Nova_callStaticBlocks)&novaCallStaticBlocks, 0, 0);
 }
