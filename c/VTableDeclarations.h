@@ -1636,6 +1636,36 @@ extern nova_web_svg_no3_Nova_No3SelectAllFunctionMap_VTable nova_web_svg_no3_Nov
 typedef struct nova_web_svg_no3_Nova_No3SelectAllPropertyMap_VTable nova_web_svg_no3_Nova_No3SelectAllPropertyMap_VTable;
 extern nova_web_svg_no3_Nova_No3SelectAllPropertyMap_VTable nova_web_svg_no3_Nova_No3SelectAllPropertyMap_VTable_val;
 
+typedef struct novex_nest_Nova_InvalidAssertionException_VTable novex_nest_Nova_InvalidAssertionException_VTable;
+extern novex_nest_Nova_InvalidAssertionException_VTable novex_nest_Nova_InvalidAssertionException_VTable_val;
+
+typedef struct novex_nest_Nova_InvalidAssertionExceptionFunctionMap_VTable novex_nest_Nova_InvalidAssertionExceptionFunctionMap_VTable;
+extern novex_nest_Nova_InvalidAssertionExceptionFunctionMap_VTable novex_nest_Nova_InvalidAssertionExceptionFunctionMap_VTable_val;
+
+typedef struct novex_nest_Nova_InvalidAssertionExceptionPropertyMap_VTable novex_nest_Nova_InvalidAssertionExceptionPropertyMap_VTable;
+extern novex_nest_Nova_InvalidAssertionExceptionPropertyMap_VTable novex_nest_Nova_InvalidAssertionExceptionPropertyMap_VTable_val;
+
+typedef struct novex_nest_Nova_Nest_VTable novex_nest_Nova_Nest_VTable;
+extern novex_nest_Nova_Nest_VTable novex_nest_Nova_Nest_VTable_val;
+
+typedef struct novex_nest_Nova_NestFunctionMap_VTable novex_nest_Nova_NestFunctionMap_VTable;
+extern novex_nest_Nova_NestFunctionMap_VTable novex_nest_Nova_NestFunctionMap_VTable_val;
+
+typedef struct novex_nest_Nova_NestPropertyMap_VTable novex_nest_Nova_NestPropertyMap_VTable;
+extern novex_nest_Nova_NestPropertyMap_VTable novex_nest_Nova_NestPropertyMap_VTable_val;
+
+typedef struct novex_nest_Int_Nova_Nest1Int_VTable novex_nest_Int_Nova_Nest1Int_VTable;
+extern novex_nest_Int_Nova_Nest1Int_VTable novex_nest_Int_Nova_Nest1Int_VTable_val;
+
+typedef struct novex_nest_Nova_TestSuite_VTable novex_nest_Nova_TestSuite_VTable;
+extern novex_nest_Nova_TestSuite_VTable novex_nest_Nova_TestSuite_VTable_val;
+
+typedef struct novex_nest_Nova_TestSuiteFunctionMap_VTable novex_nest_Nova_TestSuiteFunctionMap_VTable;
+extern novex_nest_Nova_TestSuiteFunctionMap_VTable novex_nest_Nova_TestSuiteFunctionMap_VTable_val;
+
+typedef struct novex_nest_Nova_TestSuitePropertyMap_VTable novex_nest_Nova_TestSuitePropertyMap_VTable;
+extern novex_nest_Nova_TestSuitePropertyMap_VTable novex_nest_Nova_TestSuitePropertyMap_VTable_val;
+
 typedef struct example_Nova_Animal_VTable example_Nova_Animal_VTable;
 extern example_Nova_Animal_VTable example_Nova_Animal_VTable_val;
 
@@ -1752,6 +1782,15 @@ extern example_Nova_MathDemoFunctionMap_VTable example_Nova_MathDemoFunctionMap_
 
 typedef struct example_Nova_MathDemoPropertyMap_VTable example_Nova_MathDemoPropertyMap_VTable;
 extern example_Nova_MathDemoPropertyMap_VTable example_Nova_MathDemoPropertyMap_VTable_val;
+
+typedef struct example_Nova_NestTest_VTable example_Nova_NestTest_VTable;
+extern example_Nova_NestTest_VTable example_Nova_NestTest_VTable_val;
+
+typedef struct example_Nova_NestTestFunctionMap_VTable example_Nova_NestTestFunctionMap_VTable;
+extern example_Nova_NestTestFunctionMap_VTable example_Nova_NestTestFunctionMap_VTable_val;
+
+typedef struct example_Nova_NestTestPropertyMap_VTable example_Nova_NestTestPropertyMap_VTable;
+extern example_Nova_NestTestPropertyMap_VTable example_Nova_NestTestPropertyMap_VTable_val;
 
 typedef struct example_Nova_NonWholeDivisionException_VTable example_Nova_NonWholeDivisionException_VTable;
 extern example_Nova_NonWholeDivisionException_VTable example_Nova_NonWholeDivisionException_VTable_val;
@@ -6764,6 +6803,7 @@ nova_meta_Nova_Class* classInstance;
 nova_Interface_VTable itable;
 nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*);
 long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*);
+nova_thread_Nova_UncaughtExceptionHandler* (*nova_thread_Nova_UncaughtExceptionHandlerFunctionMap_virtualfunctionMapUncaughtExceptionHandler_Nova_construct)(nova_thread_Nova_UncaughtExceptionHandlerFunctionMap*);
 };
 
 
@@ -7251,6 +7291,95 @@ long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Objec
 };
 
 
+struct novex_nest_Nova_InvalidAssertionException_VTable
+{
+nova_meta_Nova_Class* classInstance;
+nova_Interface_VTable itable;
+nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_exception_Nova_Exception*);
+long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*);
+};
+
+
+struct novex_nest_Nova_InvalidAssertionExceptionFunctionMap_VTable
+{
+nova_meta_Nova_Class* classInstance;
+nova_Interface_VTable itable;
+nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*);
+long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*);
+novex_nest_Nova_InvalidAssertionException* (*nova_exception_Nova_ExceptionFunctionMap_virtualfunctionMapInvalidAssertionException_Nova_construct)(novex_nest_Nova_InvalidAssertionExceptionFunctionMap*, nova_Nova_String*);
+};
+
+
+struct novex_nest_Nova_InvalidAssertionExceptionPropertyMap_VTable
+{
+nova_meta_Nova_Class* classInstance;
+nova_Interface_VTable itable;
+nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*);
+long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*);
+};
+
+
+struct novex_nest_Nova_Nest_VTable
+{
+nova_meta_Nova_Class* classInstance;
+nova_Interface_VTable itable;
+nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*);
+long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*);
+};
+
+
+struct novex_nest_Nova_NestFunctionMap_VTable
+{
+nova_meta_Nova_Class* classInstance;
+nova_Interface_VTable itable;
+nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*);
+long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*);
+};
+
+
+struct novex_nest_Nova_NestPropertyMap_VTable
+{
+nova_meta_Nova_Class* classInstance;
+nova_Interface_VTable itable;
+nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*);
+long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*);
+};
+
+
+struct novex_nest_Int_Nova_Nest1Int_VTable
+{
+nova_meta_Nova_Class* classInstance;
+nova_Interface_VTable itable;
+nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*);
+long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*);
+};
+
+
+struct novex_nest_Nova_TestSuite_VTable
+{
+nova_meta_Nova_Class* classInstance;
+nova_Interface_VTable itable;
+};
+
+
+struct novex_nest_Nova_TestSuiteFunctionMap_VTable
+{
+nova_meta_Nova_Class* classInstance;
+nova_Interface_VTable itable;
+nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*);
+long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*);
+};
+
+
+struct novex_nest_Nova_TestSuitePropertyMap_VTable
+{
+nova_meta_Nova_Class* classInstance;
+nova_Interface_VTable itable;
+nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*);
+long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*);
+};
+
+
 struct example_Nova_Animal_VTable
 {
 nova_meta_Nova_Class* classInstance;
@@ -7603,6 +7732,33 @@ long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Objec
 
 
 struct example_Nova_MathDemoPropertyMap_VTable
+{
+nova_meta_Nova_Class* classInstance;
+nova_Interface_VTable itable;
+nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*);
+long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*);
+};
+
+
+struct example_Nova_NestTest_VTable
+{
+nova_meta_Nova_Class* classInstance;
+nova_Interface_VTable itable;
+nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*);
+long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*);
+};
+
+
+struct example_Nova_NestTestFunctionMap_VTable
+{
+nova_meta_Nova_Class* classInstance;
+nova_Interface_VTable itable;
+nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*);
+long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*);
+};
+
+
+struct example_Nova_NestTestPropertyMap_VTable
 {
 nova_meta_Nova_Class* classInstance;
 nova_Interface_VTable itable;
@@ -8197,7 +8353,6 @@ nova_meta_Nova_Class* classInstance;
 nova_Interface_VTable itable;
 nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*);
 long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*);
-void (*stabilitytest_Nova_StabilityTestCase_virtual_Nova_test)(stabilitytest_Nova_AssignmentStability*);
 };
 
 
@@ -8207,7 +8362,6 @@ nova_meta_Nova_Class* classInstance;
 nova_Interface_VTable itable;
 nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*);
 long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*);
-stabilitytest_Nova_AssignmentStability* (*stabilitytest_Nova_StabilityTestCaseFunctionMap_virtualfunctionMapAssignmentStability_Nova_construct)(stabilitytest_Nova_AssignmentStabilityFunctionMap*, stabilitytest_Nova_StabilityTest*);
 };
 
 
@@ -8281,7 +8435,6 @@ nova_meta_Nova_Class* classInstance;
 nova_Interface_VTable itable;
 nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*);
 long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*);
-void (*stabilitytest_Nova_StabilityTestCase_virtual_Nova_test)(stabilitytest_Nova_ClosureStability*);
 };
 
 
@@ -8291,7 +8444,6 @@ nova_meta_Nova_Class* classInstance;
 nova_Interface_VTable itable;
 nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*);
 long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*);
-stabilitytest_Nova_ClosureStability* (*stabilitytest_Nova_StabilityTestCaseFunctionMap_virtualfunctionMapClosureStability_Nova_construct)(stabilitytest_Nova_ClosureStabilityFunctionMap*, stabilitytest_Nova_StabilityTest*);
 };
 
 
@@ -8310,7 +8462,6 @@ nova_meta_Nova_Class* classInstance;
 nova_Interface_VTable itable;
 nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*);
 long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*);
-void (*stabilitytest_Nova_StabilityTestCase_virtual_Nova_test)(stabilitytest_Nova_ExceptionStability*);
 };
 
 
@@ -8320,7 +8471,6 @@ nova_meta_Nova_Class* classInstance;
 nova_Interface_VTable itable;
 nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*);
 long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*);
-stabilitytest_Nova_ExceptionStability* (*stabilitytest_Nova_StabilityTestCaseFunctionMap_virtualfunctionMapExceptionStability_Nova_construct)(stabilitytest_Nova_ExceptionStabilityFunctionMap*, stabilitytest_Nova_StabilityTest*);
 };
 
 
@@ -8339,7 +8489,6 @@ nova_meta_Nova_Class* classInstance;
 nova_Interface_VTable itable;
 nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*);
 long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*);
-void (*stabilitytest_Nova_StabilityTestCase_virtual_Nova_test)(stabilitytest_Nova_ExternalInnerClassStability*);
 };
 
 
@@ -8349,7 +8498,6 @@ nova_meta_Nova_Class* classInstance;
 nova_Interface_VTable itable;
 nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*);
 long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*);
-stabilitytest_Nova_ExternalInnerClassStability* (*stabilitytest_Nova_StabilityTestCaseFunctionMap_virtualfunctionMapExternalInnerClassStability_Nova_construct)(stabilitytest_Nova_ExternalInnerClassStabilityFunctionMap*, stabilitytest_Nova_StabilityTest*);
 };
 
 
@@ -8368,7 +8516,6 @@ nova_meta_Nova_Class* classInstance;
 nova_Interface_VTable itable;
 nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*);
 long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*);
-void (*stabilitytest_Nova_StabilityTestCase_virtual_Nova_test)(stabilitytest_Nova_FileStability*);
 };
 
 
@@ -8378,7 +8525,6 @@ nova_meta_Nova_Class* classInstance;
 nova_Interface_VTable itable;
 nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*);
 long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*);
-stabilitytest_Nova_FileStability* (*stabilitytest_Nova_StabilityTestCaseFunctionMap_virtualfunctionMapFileStability_Nova_construct)(stabilitytest_Nova_FileStabilityFunctionMap*, stabilitytest_Nova_StabilityTest*);
 };
 
 
@@ -8397,7 +8543,6 @@ nova_meta_Nova_Class* classInstance;
 nova_Interface_VTable itable;
 nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*);
 long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*);
-void (*stabilitytest_Nova_StabilityTestCase_virtual_Nova_test)(stabilitytest_Nova_InnerClassStability*);
 };
 
 
@@ -8416,7 +8561,6 @@ nova_meta_Nova_Class* classInstance;
 nova_Interface_VTable itable;
 nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*);
 long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*);
-stabilitytest_Nova_InnerClassStability* (*stabilitytest_Nova_StabilityTestCaseFunctionMap_virtualfunctionMapInnerClassStability_Nova_construct)(stabilitytest_Nova_InnerClassStabilityFunctionMap*, stabilitytest_Nova_StabilityTest*);
 };
 
 
@@ -8480,7 +8624,6 @@ nova_meta_Nova_Class* classInstance;
 nova_Interface_VTable itable;
 nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*);
 long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*);
-void (*stabilitytest_Nova_StabilityTestCase_virtual_Nova_test)(stabilitytest_Nova_LambdaStability*);
 };
 
 
@@ -8490,7 +8633,6 @@ nova_meta_Nova_Class* classInstance;
 nova_Interface_VTable itable;
 nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*);
 long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*);
-stabilitytest_Nova_LambdaStability* (*stabilitytest_Nova_StabilityTestCaseFunctionMap_virtualfunctionMapLambdaStability_Nova_construct)(stabilitytest_Nova_LambdaStabilityFunctionMap*, stabilitytest_Nova_StabilityTest*);
 };
 
 
@@ -8509,7 +8651,6 @@ nova_meta_Nova_Class* classInstance;
 nova_Interface_VTable itable;
 nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*);
 long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*);
-void (*stabilitytest_Nova_StabilityTestCase_virtual_Nova_test)(stabilitytest_Nova_NetworkStability*);
 };
 
 
@@ -8519,7 +8660,6 @@ nova_meta_Nova_Class* classInstance;
 nova_Interface_VTable itable;
 nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*);
 long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*);
-stabilitytest_Nova_NetworkStability* (*stabilitytest_Nova_StabilityTestCaseFunctionMap_virtualfunctionMapNetworkStability_Nova_construct)(stabilitytest_Nova_NetworkStabilityFunctionMap*, stabilitytest_Nova_StabilityTest*);
 };
 
 
@@ -8623,7 +8763,6 @@ nova_meta_Nova_Class* classInstance;
 nova_Interface_VTable itable;
 nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*);
 long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*);
-void (*stabilitytest_Nova_StabilityTestCase_virtual_Nova_test)(stabilitytest_Nova_PolymorphismStability*);
 };
 
 
@@ -8633,7 +8772,6 @@ nova_meta_Nova_Class* classInstance;
 nova_Interface_VTable itable;
 nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*);
 long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*);
-stabilitytest_Nova_PolymorphismStability* (*stabilitytest_Nova_StabilityTestCaseFunctionMap_virtualfunctionMapPolymorphismStability_Nova_construct)(stabilitytest_Nova_PolymorphismStabilityFunctionMap*, stabilitytest_Nova_StabilityTest*);
 };
 
 
@@ -8652,7 +8790,6 @@ nova_meta_Nova_Class* classInstance;
 nova_Interface_VTable itable;
 nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*);
 long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*);
-void (*stabilitytest_Nova_StabilityTestCase_virtual_Nova_test)(stabilitytest_Nova_PrimitiveOverloadStability*);
 };
 
 
@@ -8662,7 +8799,6 @@ nova_meta_Nova_Class* classInstance;
 nova_Interface_VTable itable;
 nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*);
 long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*);
-stabilitytest_Nova_PrimitiveOverloadStability* (*stabilitytest_Nova_StabilityTestCaseFunctionMap_virtualfunctionMapPrimitiveOverloadStability_Nova_construct)(stabilitytest_Nova_PrimitiveOverloadStabilityFunctionMap*, stabilitytest_Nova_StabilityTest*);
 };
 
 
@@ -8681,7 +8817,6 @@ nova_meta_Nova_Class* classInstance;
 nova_Interface_VTable itable;
 nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*);
 long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*);
-void (*stabilitytest_Nova_StabilityTestCase_virtual_Nova_test)(stabilitytest_Nova_RegexStability*);
 };
 
 
@@ -8691,7 +8826,6 @@ nova_meta_Nova_Class* classInstance;
 nova_Interface_VTable itable;
 nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*);
 long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*);
-stabilitytest_Nova_RegexStability* (*stabilitytest_Nova_StabilityTestCaseFunctionMap_virtualfunctionMapRegexStability_Nova_construct)(stabilitytest_Nova_RegexStabilityFunctionMap*, stabilitytest_Nova_StabilityTest*);
 };
 
 
@@ -8720,6 +8854,7 @@ nova_meta_Nova_Class* classInstance;
 nova_Interface_VTable itable;
 nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*);
 long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*);
+stabilitytest_Nova_StabilityExceptionHandler* (*nova_thread_Nova_UncaughtExceptionHandlerFunctionMap_virtualfunctionMapStabilityExceptionHandler_Nova_construct)(stabilitytest_Nova_StabilityExceptionHandlerFunctionMap*);
 };
 
 
@@ -8738,7 +8873,6 @@ nova_meta_Nova_Class* classInstance;
 nova_Interface_VTable itable;
 nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*);
 long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*);
-void (*stabilitytest_Nova_StabilityTestCase_virtual_Nova_test)(stabilitytest_Nova_StabilityTest*);
 };
 
 
@@ -8748,7 +8882,6 @@ nova_meta_Nova_Class* classInstance;
 nova_Interface_VTable itable;
 nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*);
 long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*);
-stabilitytest_Nova_StabilityTest* (*stabilitytest_Nova_StabilityTestCaseFunctionMap_virtualfunctionMapStabilityTest_Nova_construct)(stabilitytest_Nova_StabilityTestFunctionMap*, stabilitytest_Nova_StabilityTest*);
 };
 
 
@@ -8777,7 +8910,6 @@ nova_meta_Nova_Class* classInstance;
 nova_Interface_VTable itable;
 nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*);
 long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*);
-stabilitytest_Nova_StabilityTestCase* (*stabilitytest_Nova_StabilityTestCaseFunctionMap_virtualfunctionMapStabilityTestCase_Nova_construct)(stabilitytest_Nova_StabilityTestCaseFunctionMap*, stabilitytest_Nova_StabilityTest*);
 };
 
 
@@ -8824,7 +8956,6 @@ nova_meta_Nova_Class* classInstance;
 nova_Interface_VTable itable;
 nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*);
 long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*);
-void (*stabilitytest_Nova_StabilityTestCase_virtual_Nova_test)(stabilitytest_Nova_StaticImportStability*);
 };
 
 
@@ -8834,7 +8965,6 @@ nova_meta_Nova_Class* classInstance;
 nova_Interface_VTable itable;
 nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*);
 long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*);
-stabilitytest_Nova_StaticImportStability* (*stabilitytest_Nova_StabilityTestCaseFunctionMap_virtualfunctionMapStaticImportStability_Nova_construct)(stabilitytest_Nova_StaticImportStabilityFunctionMap*, stabilitytest_Nova_StabilityTest*);
 };
 
 
@@ -8853,7 +8983,6 @@ nova_meta_Nova_Class* classInstance;
 nova_Interface_VTable itable;
 nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*);
 long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*);
-void (*stabilitytest_Nova_StabilityTestCase_virtual_Nova_test)(stabilitytest_Nova_SyntaxStability*);
 };
 
 
@@ -8863,7 +8992,6 @@ nova_meta_Nova_Class* classInstance;
 nova_Interface_VTable itable;
 nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*);
 long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*);
-stabilitytest_Nova_SyntaxStability* (*stabilitytest_Nova_StabilityTestCaseFunctionMap_virtualfunctionMapSyntaxStability_Nova_construct)(stabilitytest_Nova_SyntaxStabilityFunctionMap*, stabilitytest_Nova_StabilityTest*);
 };
 
 
@@ -8910,7 +9038,6 @@ nova_meta_Nova_Class* classInstance;
 nova_Interface_VTable itable;
 nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*);
 long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*);
-void (*stabilitytest_Nova_StabilityTestCase_virtual_Nova_test)(stabilitytest_Nova_ThreadStability*);
 };
 
 
@@ -8920,7 +9047,6 @@ nova_meta_Nova_Class* classInstance;
 nova_Interface_VTable itable;
 nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*);
 long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*);
-stabilitytest_Nova_ThreadStability* (*stabilitytest_Nova_StabilityTestCaseFunctionMap_virtualfunctionMapThreadStability_Nova_construct)(stabilitytest_Nova_ThreadStabilityFunctionMap*, stabilitytest_Nova_StabilityTest*);
 };
 
 
@@ -8939,7 +9065,6 @@ nova_meta_Nova_Class* classInstance;
 nova_Interface_VTable itable;
 nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*);
 long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*);
-void (*stabilitytest_Nova_StabilityTestCase_virtual_Nova_test)(stabilitytest_Nova_TimeStability*);
 };
 
 
@@ -8949,7 +9074,6 @@ nova_meta_Nova_Class* classInstance;
 nova_Interface_VTable itable;
 nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*);
 long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*);
-stabilitytest_Nova_TimeStability* (*stabilitytest_Nova_StabilityTestCaseFunctionMap_virtualfunctionMapTimeStability_Nova_construct)(stabilitytest_Nova_TimeStabilityFunctionMap*, stabilitytest_Nova_StabilityTest*);
 };
 
 
@@ -8968,7 +9092,6 @@ nova_meta_Nova_Class* classInstance;
 nova_Interface_VTable itable;
 nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*);
 long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*);
-void (*stabilitytest_Nova_StabilityTestCase_virtual_Nova_test)(stabilitytest_Nova_ToStringStability*);
 };
 
 
@@ -8978,7 +9101,6 @@ nova_meta_Nova_Class* classInstance;
 nova_Interface_VTable itable;
 nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*);
 long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*);
-stabilitytest_Nova_ToStringStability* (*stabilitytest_Nova_StabilityTestCaseFunctionMap_virtualfunctionMapToStringStability_Nova_construct)(stabilitytest_Nova_ToStringStabilityFunctionMap*, stabilitytest_Nova_StabilityTest*);
 };
 
 
