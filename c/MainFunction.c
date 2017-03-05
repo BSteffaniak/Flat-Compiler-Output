@@ -51,6 +51,9 @@ novaEnv.nova_primitive_number_Number.compareToInteger = nova_primitive_number_No
 novaEnv.nova_primitive_number_Number.compareToReal = nova_primitive_number_Nova_Number_VTable_val.nova_primitive_number_Nova_Number_virtual_Nova_compareToReal;
 novaEnv.nova_primitive_number_Number.equalsInteger = nova_primitive_number_Nova_Number_VTable_val.nova_primitive_number_Nova_Number_virtual_Nova_equalsInteger;
 novaEnv.nova_primitive_number_Number.equalsReal = nova_primitive_number_Nova_Number_VTable_val.nova_primitive_number_Nova_Number_virtual_Nova_equalsReal;
+novaEnv.nova_star_UIComponent.draw = nova_star_Nova_UIComponent_VTable_val.nova_star_Nova_UIComponent_virtual_Nova_draw;
+novaEnv.nova_star_UIComponent.paint = nova_star_Nova_UIComponent_VTable_val.nova_star_Nova_UIComponent_virtual_Nova_paint;
+novaEnv.nova_star_UIComponentFunctionMap.construct = nova_star_Nova_UIComponentFunctionMap_VTable_val.nova_star_Nova_UIComponentFunctionMap_virtualfunctionMapUIComponent_Nova_construct;
 novaEnv.nova_thread_Thread.run = nova_thread_Nova_Thread_VTable_val.nova_thread_Nova_Thread_virtual_Nova_run;
 novaEnv.nova_thread_UncaughtExceptionHandler.uncaughtException = nova_thread_Nova_UncaughtExceptionHandler_VTable_val.nova_thread_Nova_UncaughtExceptionHandler_virtual_Nova_uncaughtException;
 novaEnv.nova_thread_UncaughtExceptionHandlerFunctionMap.construct = nova_thread_Nova_UncaughtExceptionHandlerFunctionMap_VTable_val.nova_thread_Nova_UncaughtExceptionHandlerFunctionMap_virtualfunctionMapUncaughtExceptionHandler_Nova_construct;
@@ -469,6 +472,12 @@ nova_Nova_String_1_Nova_construct(0,
 (char*)("nova/datastruct/Pair.PairPropertyMap")),
 0);
 
+// nova/datastruct/Pair.Pair1Int2Int
+nova_datastruct_Int_Int_Nova_Pair1Int2Int_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0,
+nova_Nova_String_1_Nova_construct(0,
+(char*)("nova/datastruct/Pair.Pair1Int2Int")),
+0);
+
 // nova/datastruct/Pair.Pair1Long
 nova_datastruct_Long_Value_Nova_Pair1Long_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0,
 nova_Nova_String_1_Nova_construct(0,
@@ -479,12 +488,6 @@ nova_Nova_String_1_Nova_construct(0,
 nova_datastruct_Int_Value_Nova_Pair1Int_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0,
 nova_Nova_String_1_Nova_construct(0,
 (char*)("nova/datastruct/Pair.Pair1Int")),
-0);
-
-// nova/datastruct/Pair.Pair1Int2Int
-nova_datastruct_Int_Int_Nova_Pair1Int2Int_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0,
-nova_Nova_String_1_Nova_construct(0,
-(char*)("nova/datastruct/Pair.Pair1Int2Int")),
 0);
 
 // nova/datastruct/ReversibleHashMap
@@ -3213,6 +3216,26 @@ nova_Nova_String_1_Nova_construct(0,
 (char*)("nova/serialization/JsonSerializer.JsonSerializerPropertyMap")),
 0);
 
+// nova/star/Button
+nova_star_Nova_Button_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0,
+nova_Nova_String_1_Nova_construct(0,
+(char*)("nova/star/Button")),
+0);
+nova_star_Nova_Button_VTable_val.classInstance->nova_meta_Nova_Class_Nova_functionMap = (nova_meta_Nova_FunctionMap*)nova_star_Nova_ButtonFunctionMap_Nova_construct(0);
+nova_star_Nova_Button_VTable_val.classInstance->nova_meta_Nova_Class_Nova_propertyMap = (nova_meta_Nova_PropertyMap*)nova_star_Nova_ButtonPropertyMap_Nova_construct(0);
+
+// nova/star/Button.ButtonFunctionMap
+nova_star_Nova_ButtonFunctionMap_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0,
+nova_Nova_String_1_Nova_construct(0,
+(char*)("nova/star/Button.ButtonFunctionMap")),
+0);
+
+// nova/star/Button.ButtonPropertyMap
+nova_star_Nova_ButtonPropertyMap_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0,
+nova_Nova_String_1_Nova_construct(0,
+(char*)("nova/star/Button.ButtonPropertyMap")),
+0);
+
 // nova/star/Frame
 nova_star_Nova_Frame_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0,
 nova_Nova_String_1_Nova_construct(0,
@@ -3232,6 +3255,86 @@ nova_star_Nova_FramePropertyMap_VTable_val.classInstance = nova_meta_Nova_Class_
 nova_Nova_String_1_Nova_construct(0,
 (char*)("nova/star/Frame.FramePropertyMap")),
 0);
+
+// nova/star/Panel
+nova_star_Nova_Panel_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0,
+nova_Nova_String_1_Nova_construct(0,
+(char*)("nova/star/Panel")),
+0);
+nova_star_Nova_Panel_VTable_val.classInstance->nova_meta_Nova_Class_Nova_functionMap = (nova_meta_Nova_FunctionMap*)nova_star_Nova_PanelFunctionMap_Nova_construct(0);
+nova_star_Nova_Panel_VTable_val.classInstance->nova_meta_Nova_Class_Nova_propertyMap = (nova_meta_Nova_PropertyMap*)nova_star_Nova_PanelPropertyMap_Nova_construct(0);
+
+// nova/star/Panel.PanelFunctionMap
+nova_star_Nova_PanelFunctionMap_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0,
+nova_Nova_String_1_Nova_construct(0,
+(char*)("nova/star/Panel.PanelFunctionMap")),
+0);
+
+// nova/star/Panel.PanelPropertyMap
+nova_star_Nova_PanelPropertyMap_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0,
+nova_Nova_String_1_Nova_construct(0,
+(char*)("nova/star/Panel.PanelPropertyMap")),
+0);
+
+// nova/star/Screen
+nova_star_Nova_Screen_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0,
+nova_Nova_String_1_Nova_construct(0,
+(char*)("nova/star/Screen")),
+0);
+nova_star_Nova_Screen_VTable_val.classInstance->nova_meta_Nova_Class_Nova_functionMap = (nova_meta_Nova_FunctionMap*)nova_star_Nova_ScreenFunctionMap_Nova_construct(0);
+nova_star_Nova_Screen_VTable_val.classInstance->nova_meta_Nova_Class_Nova_propertyMap = (nova_meta_Nova_PropertyMap*)nova_star_Nova_ScreenPropertyMap_Nova_construct(0);
+
+// nova/star/Screen.ScreenFunctionMap
+nova_star_Nova_ScreenFunctionMap_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0,
+nova_Nova_String_1_Nova_construct(0,
+(char*)("nova/star/Screen.ScreenFunctionMap")),
+0);
+
+// nova/star/Screen.ScreenPropertyMap
+nova_star_Nova_ScreenPropertyMap_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0,
+nova_Nova_String_1_Nova_construct(0,
+(char*)("nova/star/Screen.ScreenPropertyMap")),
+0);
+
+// nova/star/UIComponent
+nova_star_Nova_UIComponent_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0,
+nova_Nova_String_1_Nova_construct(0,
+(char*)("nova/star/UIComponent")),
+0);
+nova_star_Nova_UIComponent_VTable_val.classInstance->nova_meta_Nova_Class_Nova_functionMap = (nova_meta_Nova_FunctionMap*)nova_star_Nova_UIComponentFunctionMap_Nova_construct(0);
+nova_star_Nova_UIComponent_VTable_val.classInstance->nova_meta_Nova_Class_Nova_propertyMap = (nova_meta_Nova_PropertyMap*)nova_star_Nova_UIComponentPropertyMap_Nova_construct(0);
+
+// nova/star/UIComponent.UIComponentFunctionMap
+nova_star_Nova_UIComponentFunctionMap_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0,
+nova_Nova_String_1_Nova_construct(0,
+(char*)("nova/star/UIComponent.UIComponentFunctionMap")),
+0);
+
+// nova/star/UIComponent.UIComponentPropertyMap
+nova_star_Nova_UIComponentPropertyMap_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0,
+nova_Nova_String_1_Nova_construct(0,
+(char*)("nova/star/UIComponent.UIComponentPropertyMap")),
+0);
+
+// nova/star/UIParent
+nova_star_Nova_UIParent_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0,
+nova_Nova_String_1_Nova_construct(0,
+(char*)("nova/star/UIParent")),
+1);
+nova_star_Nova_UIParent_VTable_val.classInstance->nova_meta_Nova_Class_Nova_functionMap = (nova_meta_Nova_FunctionMap*)nova_star_Nova_UIParentFunctionMap_Nova_construct(0);
+nova_star_Nova_UIParent_VTable_val.classInstance->nova_meta_Nova_Class_Nova_propertyMap = (nova_meta_Nova_PropertyMap*)nova_star_Nova_UIParentPropertyMap_Nova_construct(0);
+
+// nova/star/UIParent.UIParentFunctionMap
+nova_star_Nova_UIParentFunctionMap_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0,
+nova_Nova_String_1_Nova_construct(0,
+(char*)("nova/star/UIParent.UIParentFunctionMap")),
+1);
+
+// nova/star/UIParent.UIParentPropertyMap
+nova_star_Nova_UIParentPropertyMap_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0,
+nova_Nova_String_1_Nova_construct(0,
+(char*)("nova/star/UIParent.UIParentPropertyMap")),
+1);
 
 // nova/star/Window
 nova_star_Nova_Window_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0,
@@ -3738,6 +3841,26 @@ novex_nest_Nova_TestSuitePropertyMap_VTable_val.classInstance = nova_meta_Nova_C
 nova_Nova_String_1_Nova_construct(0,
 (char*)("novex/nest/TestSuite.TestSuitePropertyMap")),
 1);
+
+// novex/nest/ui/ResultWindow
+novex_nest_ui_Nova_ResultWindow_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0,
+nova_Nova_String_1_Nova_construct(0,
+(char*)("novex/nest/ui/ResultWindow")),
+0);
+novex_nest_ui_Nova_ResultWindow_VTable_val.classInstance->nova_meta_Nova_Class_Nova_functionMap = (nova_meta_Nova_FunctionMap*)novex_nest_ui_Nova_ResultWindowFunctionMap_Nova_construct(0);
+novex_nest_ui_Nova_ResultWindow_VTable_val.classInstance->nova_meta_Nova_Class_Nova_propertyMap = (nova_meta_Nova_PropertyMap*)novex_nest_ui_Nova_ResultWindowPropertyMap_Nova_construct(0);
+
+// novex/nest/ui/ResultWindow.ResultWindowFunctionMap
+novex_nest_ui_Nova_ResultWindowFunctionMap_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0,
+nova_Nova_String_1_Nova_construct(0,
+(char*)("novex/nest/ui/ResultWindow.ResultWindowFunctionMap")),
+0);
+
+// novex/nest/ui/ResultWindow.ResultWindowPropertyMap
+novex_nest_ui_Nova_ResultWindowPropertyMap_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0,
+nova_Nova_String_1_Nova_construct(0,
+(char*)("novex/nest/ui/ResultWindow.ResultWindowPropertyMap")),
+0);
 
 // example/Animal
 example_Nova_Animal_VTable_val.classInstance = nova_meta_Nova_Class_Nova_construct(0,
@@ -5253,15 +5376,15 @@ nova_datastruct_Nova_PairFunctionMap_VTable_val.classInstance->nova_meta_Nova_Cl
 nova_datastruct_Nova_PairPropertyMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = nova_meta_Nova_PropertyMap_VTable_val.classInstance;
 nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 0);
 nova_datastruct_Nova_PairPropertyMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, (nova_Nova_Object**)nova_class_interfaces, 0);
+nova_datastruct_Int_Int_Nova_Pair1Int2Int_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = nova_Nova_Object_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 0);
+nova_datastruct_Int_Int_Nova_Pair1Int2Int_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, (nova_Nova_Object**)nova_class_interfaces, 0);
 nova_datastruct_Long_Value_Nova_Pair1Long_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = nova_Nova_Object_VTable_val.classInstance;
 nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 0);
 nova_datastruct_Long_Value_Nova_Pair1Long_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, (nova_Nova_Object**)nova_class_interfaces, 0);
 nova_datastruct_Int_Value_Nova_Pair1Int_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = nova_Nova_Object_VTable_val.classInstance;
 nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 0);
 nova_datastruct_Int_Value_Nova_Pair1Int_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, (nova_Nova_Object**)nova_class_interfaces, 0);
-nova_datastruct_Int_Int_Nova_Pair1Int2Int_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = nova_Nova_Object_VTable_val.classInstance;
-nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 0);
-nova_datastruct_Int_Int_Nova_Pair1Int2Int_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, (nova_Nova_Object**)nova_class_interfaces, 0);
 nova_datastruct_Nova_ReversibleHashMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = nova_datastruct_Nova_HashMap_VTable_val.classInstance;
 nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 0);
 nova_datastruct_Nova_ReversibleHashMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, (nova_Nova_Object**)nova_class_interfaces, 0);
@@ -6844,15 +6967,67 @@ nova_serialization_Nova_JsonSerializerFunctionMap_VTable_val.classInstance->nova
 nova_serialization_Nova_JsonSerializerPropertyMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = nova_meta_Nova_PropertyMap_VTable_val.classInstance;
 nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 0);
 nova_serialization_Nova_JsonSerializerPropertyMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, (nova_Nova_Object**)nova_class_interfaces, 0);
-nova_star_Nova_Frame_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = nova_Nova_Object_VTable_val.classInstance;
+nova_star_Nova_Button_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = nova_star_Nova_Panel_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 0);
+nova_star_Nova_Button_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, (nova_Nova_Object**)nova_class_interfaces, 0);
+nova_star_Nova_ButtonFunctionMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = nova_star_Nova_PanelFunctionMap_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 1);
+nova_class_interfaces[0] = (nova_Nova_Object*)nova_star_Nova_UIParentFunctionMap_VTable_val.classInstance;
+nova_star_Nova_ButtonFunctionMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, (nova_Nova_Object**)nova_class_interfaces, 1);
+nova_star_Nova_ButtonPropertyMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = nova_star_Nova_PanelPropertyMap_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 1);
+nova_class_interfaces[0] = (nova_Nova_Object*)nova_star_Nova_UIParentPropertyMap_VTable_val.classInstance;
+nova_star_Nova_ButtonPropertyMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, (nova_Nova_Object**)nova_class_interfaces, 1);
+nova_star_Nova_Frame_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = nova_star_Nova_Panel_VTable_val.classInstance;
 nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 0);
 nova_star_Nova_Frame_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, (nova_Nova_Object**)nova_class_interfaces, 0);
-nova_star_Nova_FrameFunctionMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = nova_meta_Nova_FunctionMap_VTable_val.classInstance;
+nova_star_Nova_FrameFunctionMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = nova_star_Nova_PanelFunctionMap_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 1);
+nova_class_interfaces[0] = (nova_Nova_Object*)nova_star_Nova_UIParentFunctionMap_VTable_val.classInstance;
+nova_star_Nova_FrameFunctionMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, (nova_Nova_Object**)nova_class_interfaces, 1);
+nova_star_Nova_FramePropertyMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = nova_star_Nova_PanelPropertyMap_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 1);
+nova_class_interfaces[0] = (nova_Nova_Object*)nova_star_Nova_UIParentPropertyMap_VTable_val.classInstance;
+nova_star_Nova_FramePropertyMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, (nova_Nova_Object**)nova_class_interfaces, 1);
+nova_star_Nova_Panel_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = nova_star_Nova_UIComponent_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 1);
+nova_class_interfaces[0] = (nova_Nova_Object*)nova_star_Nova_UIParent_VTable_val.classInstance;
+nova_star_Nova_Panel_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, (nova_Nova_Object**)nova_class_interfaces, 1);
+nova_star_Nova_PanelFunctionMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = nova_star_Nova_UIComponentFunctionMap_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 1);
+nova_class_interfaces[0] = (nova_Nova_Object*)nova_star_Nova_UIParentFunctionMap_VTable_val.classInstance;
+nova_star_Nova_PanelFunctionMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, (nova_Nova_Object**)nova_class_interfaces, 1);
+nova_star_Nova_PanelPropertyMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = nova_star_Nova_UIComponentPropertyMap_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 1);
+nova_class_interfaces[0] = (nova_Nova_Object*)nova_star_Nova_UIParentPropertyMap_VTable_val.classInstance;
+nova_star_Nova_PanelPropertyMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, (nova_Nova_Object**)nova_class_interfaces, 1);
+nova_star_Nova_Screen_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = nova_Nova_Object_VTable_val.classInstance;
 nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 0);
-nova_star_Nova_FrameFunctionMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, (nova_Nova_Object**)nova_class_interfaces, 0);
-nova_star_Nova_FramePropertyMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = nova_meta_Nova_PropertyMap_VTable_val.classInstance;
+nova_star_Nova_Screen_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, (nova_Nova_Object**)nova_class_interfaces, 0);
+nova_star_Nova_ScreenFunctionMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = nova_meta_Nova_FunctionMap_VTable_val.classInstance;
 nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 0);
-nova_star_Nova_FramePropertyMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, (nova_Nova_Object**)nova_class_interfaces, 0);
+nova_star_Nova_ScreenFunctionMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, (nova_Nova_Object**)nova_class_interfaces, 0);
+nova_star_Nova_ScreenPropertyMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = nova_meta_Nova_PropertyMap_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 0);
+nova_star_Nova_ScreenPropertyMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, (nova_Nova_Object**)nova_class_interfaces, 0);
+nova_star_Nova_UIComponent_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = nova_Nova_Object_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 0);
+nova_star_Nova_UIComponent_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, (nova_Nova_Object**)nova_class_interfaces, 0);
+nova_star_Nova_UIComponentFunctionMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = nova_meta_Nova_FunctionMap_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 0);
+nova_star_Nova_UIComponentFunctionMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, (nova_Nova_Object**)nova_class_interfaces, 0);
+nova_star_Nova_UIComponentPropertyMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = nova_meta_Nova_PropertyMap_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 0);
+nova_star_Nova_UIComponentPropertyMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, (nova_Nova_Object**)nova_class_interfaces, 0);
+nova_star_Nova_UIParent_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = nova_star_Nova_UIComponent_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 0);
+nova_star_Nova_UIParent_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, (nova_Nova_Object**)nova_class_interfaces, 0);
+nova_star_Nova_UIParentFunctionMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = nova_star_Nova_UIComponentFunctionMap_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 0);
+nova_star_Nova_UIParentFunctionMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, (nova_Nova_Object**)nova_class_interfaces, 0);
+nova_star_Nova_UIParentPropertyMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = nova_star_Nova_UIComponentPropertyMap_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 0);
+nova_star_Nova_UIParentPropertyMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, (nova_Nova_Object**)nova_class_interfaces, 0);
 nova_star_Nova_Window_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = nova_Nova_Object_VTable_val.classInstance;
 nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 0);
 nova_star_Nova_Window_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, (nova_Nova_Object**)nova_class_interfaces, 0);
@@ -7085,6 +7260,15 @@ novex_nest_Nova_TestSuiteFunctionMap_VTable_val.classInstance->nova_meta_Nova_Cl
 novex_nest_Nova_TestSuitePropertyMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = nova_meta_Nova_PropertyMap_VTable_val.classInstance;
 nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 0);
 novex_nest_Nova_TestSuitePropertyMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, (nova_Nova_Object**)nova_class_interfaces, 0);
+novex_nest_ui_Nova_ResultWindow_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = nova_Nova_Object_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 0);
+novex_nest_ui_Nova_ResultWindow_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, (nova_Nova_Object**)nova_class_interfaces, 0);
+novex_nest_ui_Nova_ResultWindowFunctionMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = nova_meta_Nova_FunctionMap_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 0);
+novex_nest_ui_Nova_ResultWindowFunctionMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, (nova_Nova_Object**)nova_class_interfaces, 0);
+novex_nest_ui_Nova_ResultWindowPropertyMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = nova_meta_Nova_PropertyMap_VTable_val.classInstance;
+nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 0);
+novex_nest_ui_Nova_ResultWindowPropertyMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, (nova_Nova_Object**)nova_class_interfaces, 0);
 example_Nova_Animal_VTable_val.classInstance->nova_meta_Nova_Class_Nova_extension = nova_Nova_Object_VTable_val.classInstance;
 nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 0);
 example_Nova_Animal_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, (nova_Nova_Object**)nova_class_interfaces, 0);
@@ -7666,7 +7850,7 @@ nova_class_interfaces = NOVA_MALLOC(sizeof(nova_Nova_Object**) * 0);
 stabilitytest_Nova_UnstableExceptionPropertyMap_VTable_val.classInstance->nova_meta_Nova_Class_Nova_interfaces = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, (nova_Nova_Object**)nova_class_interfaces, 0);
 
 
-nova_meta_Nova_Class** nova_all_classes = NOVA_MALLOC(sizeof(nova_meta_Nova_Class*) * 747);
+nova_meta_Nova_Class** nova_all_classes = NOVA_MALLOC(sizeof(nova_meta_Nova_Class*) * 765);
 nova_all_classes[0] = nova_Nova_Object_VTable_val.classInstance;
 nova_all_classes[1] = nova_Nova_String_VTable_val.classInstance;
 nova_all_classes[2] = nova_Nova_StringFunctionMap_VTable_val.classInstance;
@@ -7728,9 +7912,9 @@ nova_all_classes[57] = nova_datastruct_Nova_NodePropertyMap_VTable_val.classInst
 nova_all_classes[58] = nova_datastruct_Nova_Pair_VTable_val.classInstance;
 nova_all_classes[59] = nova_datastruct_Nova_PairFunctionMap_VTable_val.classInstance;
 nova_all_classes[60] = nova_datastruct_Nova_PairPropertyMap_VTable_val.classInstance;
-nova_all_classes[61] = nova_datastruct_Long_Value_Nova_Pair1Long_VTable_val.classInstance;
-nova_all_classes[62] = nova_datastruct_Int_Value_Nova_Pair1Int_VTable_val.classInstance;
-nova_all_classes[63] = nova_datastruct_Int_Int_Nova_Pair1Int2Int_VTable_val.classInstance;
+nova_all_classes[61] = nova_datastruct_Int_Int_Nova_Pair1Int2Int_VTable_val.classInstance;
+nova_all_classes[62] = nova_datastruct_Long_Value_Nova_Pair1Long_VTable_val.classInstance;
+nova_all_classes[63] = nova_datastruct_Int_Value_Nova_Pair1Int_VTable_val.classInstance;
 nova_all_classes[64] = nova_datastruct_Nova_ReversibleHashMap_VTable_val.classInstance;
 nova_all_classes[65] = nova_datastruct_Nova_ReversibleHashMapFunctionMap_VTable_val.classInstance;
 nova_all_classes[66] = nova_datastruct_Nova_ReversibleHashMapPropertyMap_VTable_val.classInstance;
@@ -8143,278 +8327,296 @@ nova_all_classes[472] = nova_security_Nova_Sha256PropertyMap_VTable_val.classIns
 nova_all_classes[473] = nova_serialization_Nova_JsonSerializer_VTable_val.classInstance;
 nova_all_classes[474] = nova_serialization_Nova_JsonSerializerFunctionMap_VTable_val.classInstance;
 nova_all_classes[475] = nova_serialization_Nova_JsonSerializerPropertyMap_VTable_val.classInstance;
-nova_all_classes[476] = nova_star_Nova_Frame_VTable_val.classInstance;
-nova_all_classes[477] = nova_star_Nova_FrameFunctionMap_VTable_val.classInstance;
-nova_all_classes[478] = nova_star_Nova_FramePropertyMap_VTable_val.classInstance;
-nova_all_classes[479] = nova_star_Nova_Window_VTable_val.classInstance;
-nova_all_classes[480] = nova_star_Nova_WindowFunctionMap_VTable_val.classInstance;
-nova_all_classes[481] = nova_star_Nova_WindowPropertyMap_VTable_val.classInstance;
-nova_all_classes[482] = nova_star_Nova_WindowThread_VTable_val.classInstance;
-nova_all_classes[483] = nova_star_Nova_WindowThreadFunctionMap_VTable_val.classInstance;
-nova_all_classes[484] = nova_star_Nova_WindowThreadPropertyMap_VTable_val.classInstance;
-nova_all_classes[485] = nova_thread_Nova_Thread_VTable_val.classInstance;
-nova_all_classes[486] = nova_thread_Nova_ThreadFunctionMap_VTable_val.classInstance;
-nova_all_classes[487] = nova_thread_Nova_ThreadPropertyMap_VTable_val.classInstance;
-nova_all_classes[488] = nova_thread_Nova_ThreadLocal_VTable_val.classInstance;
-nova_all_classes[489] = nova_thread_Nova_ThreadLocalFunctionMap_VTable_val.classInstance;
-nova_all_classes[490] = nova_thread_Nova_ThreadLocalPropertyMap_VTable_val.classInstance;
-nova_all_classes[491] = nova_thread_Nova_UncaughtExceptionHandler_VTable_val.classInstance;
-nova_all_classes[492] = nova_thread_Nova_UncaughtExceptionHandlerFunctionMap_VTable_val.classInstance;
-nova_all_classes[493] = nova_thread_Nova_UncaughtExceptionHandlerPropertyMap_VTable_val.classInstance;
-nova_all_classes[494] = nova_thread_async_Nova_Async_VTable_val.classInstance;
-nova_all_classes[495] = nova_thread_async_Nova_AsyncFunctionMap_VTable_val.classInstance;
-nova_all_classes[496] = nova_thread_async_Nova_AsyncPropertyMap_VTable_val.classInstance;
-nova_all_classes[497] = nova_thread_async_Nova_Task_VTable_val.classInstance;
-nova_all_classes[498] = nova_thread_async_Nova_TaskFunctionMap_VTable_val.classInstance;
-nova_all_classes[499] = nova_thread_async_Nova_TaskPropertyMap_VTable_val.classInstance;
-nova_all_classes[500] = nova_time_Nova_CumulativeTimer_VTable_val.classInstance;
-nova_all_classes[501] = nova_time_Nova_CumulativeTimerFunctionMap_VTable_val.classInstance;
-nova_all_classes[502] = nova_time_Nova_CumulativeTimerPropertyMap_VTable_val.classInstance;
-nova_all_classes[503] = nova_time_Nova_Date_VTable_val.classInstance;
-nova_all_classes[504] = nova_time_Nova_DateFunctionMap_VTable_val.classInstance;
-nova_all_classes[505] = nova_time_Nova_DatePropertyMap_VTable_val.classInstance;
-nova_all_classes[506] = nova_time_Nova_Time_VTable_val.classInstance;
-nova_all_classes[507] = nova_time_Nova_TimeFunctionMap_VTable_val.classInstance;
-nova_all_classes[508] = nova_time_Nova_TimePropertyMap_VTable_val.classInstance;
-nova_all_classes[509] = nova_time_Nova_Timer_VTable_val.classInstance;
-nova_all_classes[510] = nova_time_Nova_TimerFunctionMap_VTable_val.classInstance;
-nova_all_classes[511] = nova_time_Nova_TimerPropertyMap_VTable_val.classInstance;
-nova_all_classes[512] = nova_web_js_json_Nova_Json_VTable_val.classInstance;
-nova_all_classes[513] = nova_web_js_json_Nova_JsonFunctionMap_VTable_val.classInstance;
-nova_all_classes[514] = nova_web_js_json_Nova_JsonPropertyMap_VTable_val.classInstance;
-nova_all_classes[515] = nova_web_svg_Nova_Svg_VTable_val.classInstance;
-nova_all_classes[516] = nova_web_svg_Nova_SvgFunctionMap_VTable_val.classInstance;
-nova_all_classes[517] = nova_web_svg_Nova_SvgPropertyMap_VTable_val.classInstance;
-nova_all_classes[518] = nova_web_svg_Nova_SvgCircle_VTable_val.classInstance;
-nova_all_classes[519] = nova_web_svg_Nova_SvgCircleFunctionMap_VTable_val.classInstance;
-nova_all_classes[520] = nova_web_svg_Nova_SvgCirclePropertyMap_VTable_val.classInstance;
-nova_all_classes[521] = nova_web_svg_Nova_SvgComponent_VTable_val.classInstance;
-nova_all_classes[522] = nova_web_svg_Nova_SvgComponentFunctionMap_VTable_val.classInstance;
-nova_all_classes[523] = nova_web_svg_Nova_SvgComponentPropertyMap_VTable_val.classInstance;
-nova_all_classes[524] = nova_web_svg_Nova_SvgComponentList_VTable_val.classInstance;
-nova_all_classes[525] = nova_web_svg_Nova_SvgComponentListFunctionMap_VTable_val.classInstance;
-nova_all_classes[526] = nova_web_svg_Nova_SvgComponentListPropertyMap_VTable_val.classInstance;
-nova_all_classes[527] = nova_web_svg_Nova_SvgComponentNode_VTable_val.classInstance;
-nova_all_classes[528] = nova_web_svg_Nova_SvgComponentNodeFunctionMap_VTable_val.classInstance;
-nova_all_classes[529] = nova_web_svg_Nova_SvgComponentNodePropertyMap_VTable_val.classInstance;
-nova_all_classes[530] = nova_web_svg_Nova_SvgMainComponent_VTable_val.classInstance;
-nova_all_classes[531] = nova_web_svg_Nova_SvgMainComponentFunctionMap_VTable_val.classInstance;
-nova_all_classes[532] = nova_web_svg_Nova_SvgMainComponentPropertyMap_VTable_val.classInstance;
-nova_all_classes[533] = nova_web_svg_no3_Nova_No3_VTable_val.classInstance;
-nova_all_classes[534] = nova_web_svg_no3_Nova_No3FunctionMap_VTable_val.classInstance;
-nova_all_classes[535] = nova_web_svg_no3_Nova_No3PropertyMap_VTable_val.classInstance;
-nova_all_classes[536] = nova_web_svg_no3_Nova_No3Node_VTable_val.classInstance;
-nova_all_classes[537] = nova_web_svg_no3_Nova_No3NodeFunctionMap_VTable_val.classInstance;
-nova_all_classes[538] = nova_web_svg_no3_Nova_No3NodePropertyMap_VTable_val.classInstance;
-nova_all_classes[539] = nova_web_svg_no3_Nova_No3Select_VTable_val.classInstance;
-nova_all_classes[540] = nova_web_svg_no3_Nova_No3SelectFunctionMap_VTable_val.classInstance;
-nova_all_classes[541] = nova_web_svg_no3_Nova_No3SelectPropertyMap_VTable_val.classInstance;
-nova_all_classes[542] = nova_web_svg_no3_Nova_No3SelectAll_VTable_val.classInstance;
-nova_all_classes[543] = nova_web_svg_no3_Nova_No3SelectAllFunctionMap_VTable_val.classInstance;
-nova_all_classes[544] = nova_web_svg_no3_Nova_No3SelectAllPropertyMap_VTable_val.classInstance;
-nova_all_classes[545] = novex_nest_Nova_InvalidAssertionException_VTable_val.classInstance;
-nova_all_classes[546] = novex_nest_Nova_InvalidAssertionExceptionFunctionMap_VTable_val.classInstance;
-nova_all_classes[547] = novex_nest_Nova_InvalidAssertionExceptionPropertyMap_VTable_val.classInstance;
-nova_all_classes[548] = novex_nest_Nova_Nest_VTable_val.classInstance;
-nova_all_classes[549] = novex_nest_Nova_NestFunctionMap_VTable_val.classInstance;
-nova_all_classes[550] = novex_nest_Nova_NestPropertyMap_VTable_val.classInstance;
-nova_all_classes[551] = novex_nest_Int_Nova_Nest1Int_VTable_val.classInstance;
-nova_all_classes[552] = novex_nest_Nova_TestSuite_VTable_val.classInstance;
-nova_all_classes[553] = novex_nest_Nova_TestSuiteFunctionMap_VTable_val.classInstance;
-nova_all_classes[554] = novex_nest_Nova_TestSuitePropertyMap_VTable_val.classInstance;
-nova_all_classes[555] = example_Nova_Animal_VTable_val.classInstance;
-nova_all_classes[556] = example_Nova_AnimalFunctionMap_VTable_val.classInstance;
-nova_all_classes[557] = example_Nova_AnimalPropertyMap_VTable_val.classInstance;
-nova_all_classes[558] = example_Nova_ArrayDemo_VTable_val.classInstance;
-nova_all_classes[559] = example_Nova_ArrayDemoFunctionMap_VTable_val.classInstance;
-nova_all_classes[560] = example_Nova_ArrayDemoPropertyMap_VTable_val.classInstance;
-nova_all_classes[561] = example_Nova_BodyBuilder_VTable_val.classInstance;
-nova_all_classes[562] = example_Nova_BodyBuilderFunctionMap_VTable_val.classInstance;
-nova_all_classes[563] = example_Nova_BodyBuilderPropertyMap_VTable_val.classInstance;
-nova_all_classes[564] = example_Nova_ClosureDemo_VTable_val.classInstance;
-nova_all_classes[565] = example_Nova_ClosureDemoFunctionMap_VTable_val.classInstance;
-nova_all_classes[566] = example_Nova_ClosureDemoPropertyMap_VTable_val.classInstance;
-nova_all_classes[567] = example_Nova_Dog_VTable_val.classInstance;
-nova_all_classes[568] = example_Nova_DogFunctionMap_VTable_val.classInstance;
-nova_all_classes[569] = example_Nova_DogPropertyMap_VTable_val.classInstance;
-nova_all_classes[570] = example_Nova_ExceptionHandlingDemo_VTable_val.classInstance;
-nova_all_classes[571] = example_Nova_ExceptionHandlingDemoFunctionMap_VTable_val.classInstance;
-nova_all_classes[572] = example_Nova_ExceptionHandlingDemoPropertyMap_VTable_val.classInstance;
-nova_all_classes[573] = example_Nova_FileTest_VTable_val.classInstance;
-nova_all_classes[574] = example_Nova_FileTestFunctionMap_VTable_val.classInstance;
-nova_all_classes[575] = example_Nova_FileTestPropertyMap_VTable_val.classInstance;
-nova_all_classes[576] = example_Nova_GenericDemo_VTable_val.classInstance;
-nova_all_classes[577] = example_Nova_GenericDemoFunctionMap_VTable_val.classInstance;
-nova_all_classes[578] = example_Nova_GenericDemoPropertyMap_VTable_val.classInstance;
-nova_all_classes[579] = example_Nova_HashMapDemo_VTable_val.classInstance;
-nova_all_classes[580] = example_Nova_HashMapDemoFunctionMap_VTable_val.classInstance;
-nova_all_classes[581] = example_Nova_HashMapDemoPropertyMap_VTable_val.classInstance;
-nova_all_classes[582] = example_Nova_HashSetDemo_VTable_val.classInstance;
-nova_all_classes[583] = example_Nova_HashSetDemoFunctionMap_VTable_val.classInstance;
-nova_all_classes[584] = example_Nova_HashSetDemoPropertyMap_VTable_val.classInstance;
-nova_all_classes[585] = example_Nova_IntegerTest_VTable_val.classInstance;
-nova_all_classes[586] = example_Nova_IntegerTestFunctionMap_VTable_val.classInstance;
-nova_all_classes[587] = example_Nova_IntegerTestPropertyMap_VTable_val.classInstance;
-nova_all_classes[588] = example_Nova_Lab_VTable_val.classInstance;
-nova_all_classes[589] = example_Nova_LabFunctionMap_VTable_val.classInstance;
-nova_all_classes[590] = example_Nova_LabPropertyMap_VTable_val.classInstance;
-nova_all_classes[591] = example_Nova_MathDemo_VTable_val.classInstance;
-nova_all_classes[592] = example_Nova_MathDemoFunctionMap_VTable_val.classInstance;
-nova_all_classes[593] = example_Nova_MathDemoPropertyMap_VTable_val.classInstance;
-nova_all_classes[594] = example_Nova_NestTest_VTable_val.classInstance;
-nova_all_classes[595] = example_Nova_NestTestFunctionMap_VTable_val.classInstance;
-nova_all_classes[596] = example_Nova_NestTestPropertyMap_VTable_val.classInstance;
-nova_all_classes[597] = example_Nova_NonWholeDivisionException_VTable_val.classInstance;
-nova_all_classes[598] = example_Nova_NonWholeDivisionExceptionFunctionMap_VTable_val.classInstance;
-nova_all_classes[599] = example_Nova_NonWholeDivisionExceptionPropertyMap_VTable_val.classInstance;
-nova_all_classes[600] = example_Nova_Person_VTable_val.classInstance;
-nova_all_classes[601] = example_Nova_PersonFunctionMap_VTable_val.classInstance;
-nova_all_classes[602] = example_Nova_PersonPropertyMap_VTable_val.classInstance;
-nova_all_classes[603] = example_Nova_Polygon_VTable_val.classInstance;
-nova_all_classes[604] = example_Nova_PolygonFunctionMap_VTable_val.classInstance;
-nova_all_classes[605] = example_Nova_PolygonPropertyMap_VTable_val.classInstance;
-nova_all_classes[606] = example_Nova_PolymorphismDemo_VTable_val.classInstance;
-nova_all_classes[607] = example_Nova_PolymorphismDemoFunctionMap_VTable_val.classInstance;
-nova_all_classes[608] = example_Nova_PolymorphismDemoPropertyMap_VTable_val.classInstance;
-nova_all_classes[609] = example_Nova_QueueDemo_VTable_val.classInstance;
-nova_all_classes[610] = example_Nova_QueueDemoFunctionMap_VTable_val.classInstance;
-nova_all_classes[611] = example_Nova_QueueDemoPropertyMap_VTable_val.classInstance;
-nova_all_classes[612] = example_Nova_Spider_VTable_val.classInstance;
-nova_all_classes[613] = example_Nova_SpiderFunctionMap_VTable_val.classInstance;
-nova_all_classes[614] = example_Nova_SpiderPropertyMap_VTable_val.classInstance;
-nova_all_classes[615] = example_Nova_Square_VTable_val.classInstance;
-nova_all_classes[616] = example_Nova_SquareFunctionMap_VTable_val.classInstance;
-nova_all_classes[617] = example_Nova_SquarePropertyMap_VTable_val.classInstance;
-nova_all_classes[618] = example_Nova_SvgChart_VTable_val.classInstance;
-nova_all_classes[619] = example_Nova_SvgChartFunctionMap_VTable_val.classInstance;
-nova_all_classes[620] = example_Nova_SvgChartPropertyMap_VTable_val.classInstance;
-nova_all_classes[621] = example_Nova_SvgFractal_VTable_val.classInstance;
-nova_all_classes[622] = example_Nova_SvgFractalFunctionMap_VTable_val.classInstance;
-nova_all_classes[623] = example_Nova_SvgFractalPropertyMap_VTable_val.classInstance;
-nova_all_classes[624] = example_Nova_T1_VTable_val.classInstance;
-nova_all_classes[625] = example_Nova_T1FunctionMap_VTable_val.classInstance;
-nova_all_classes[626] = example_Nova_T1PropertyMap_VTable_val.classInstance;
-nova_all_classes[627] = example_Nova_T2_VTable_val.classInstance;
-nova_all_classes[628] = example_Nova_T2FunctionMap_VTable_val.classInstance;
-nova_all_classes[629] = example_Nova_T2PropertyMap_VTable_val.classInstance;
-nova_all_classes[630] = example_Nova_Test_VTable_val.classInstance;
-nova_all_classes[631] = example_Nova_TestFunctionMap_VTable_val.classInstance;
-nova_all_classes[632] = example_Nova_TestPropertyMap_VTable_val.classInstance;
-nova_all_classes[633] = example_Nova_ThreadDemo_VTable_val.classInstance;
-nova_all_classes[634] = example_Nova_ThreadDemoFunctionMap_VTable_val.classInstance;
-nova_all_classes[635] = example_Nova_ThreadDemoPropertyMap_VTable_val.classInstance;
-nova_all_classes[636] = example_Nova_ThreadDemoImplementation_VTable_val.classInstance;
-nova_all_classes[637] = example_Nova_ThreadDemoImplementationFunctionMap_VTable_val.classInstance;
-nova_all_classes[638] = example_Nova_ThreadDemoImplementationPropertyMap_VTable_val.classInstance;
-nova_all_classes[639] = example_ackermann_Nova_Ackermann_VTable_val.classInstance;
-nova_all_classes[640] = example_ackermann_Nova_AckermannFunctionMap_VTable_val.classInstance;
-nova_all_classes[641] = example_ackermann_Nova_AckermannPropertyMap_VTable_val.classInstance;
-nova_all_classes[642] = example_copy_Nova_Dog_VTable_val.classInstance;
-nova_all_classes[643] = example_copy_Nova_DogFunctionMap_VTable_val.classInstance;
-nova_all_classes[644] = example_copy_Nova_DogPropertyMap_VTable_val.classInstance;
-nova_all_classes[645] = example_database_Nova_DatabaseDemo_VTable_val.classInstance;
-nova_all_classes[646] = example_database_Nova_DatabaseDemoFunctionMap_VTable_val.classInstance;
-nova_all_classes[647] = example_database_Nova_DatabaseDemoPropertyMap_VTable_val.classInstance;
-nova_all_classes[648] = example_network_Nova_ClientDemo_VTable_val.classInstance;
-nova_all_classes[649] = example_network_Nova_ClientDemoFunctionMap_VTable_val.classInstance;
-nova_all_classes[650] = example_network_Nova_ClientDemoPropertyMap_VTable_val.classInstance;
-nova_all_classes[651] = example_network_Nova_ConnectionThread_VTable_val.classInstance;
-nova_all_classes[652] = example_network_Nova_ConnectionThreadFunctionMap_VTable_val.classInstance;
-nova_all_classes[653] = example_network_Nova_ConnectionThreadPropertyMap_VTable_val.classInstance;
-nova_all_classes[654] = example_network_Nova_OutputThread_VTable_val.classInstance;
-nova_all_classes[655] = example_network_Nova_OutputThreadFunctionMap_VTable_val.classInstance;
-nova_all_classes[656] = example_network_Nova_OutputThreadPropertyMap_VTable_val.classInstance;
-nova_all_classes[657] = example_network_Nova_ServerDemo_VTable_val.classInstance;
-nova_all_classes[658] = example_network_Nova_ServerDemoFunctionMap_VTable_val.classInstance;
-nova_all_classes[659] = example_network_Nova_ServerDemoPropertyMap_VTable_val.classInstance;
-nova_all_classes[660] = stabilitytest_Nova_AssignmentStability_VTable_val.classInstance;
-nova_all_classes[661] = stabilitytest_Nova_AssignmentStabilityFunctionMap_VTable_val.classInstance;
-nova_all_classes[662] = stabilitytest_Nova_AssignmentStabilityPropertyMap_VTable_val.classInstance;
-nova_all_classes[663] = stabilitytest_Nova_ClassWithProperties_VTable_val.classInstance;
-nova_all_classes[664] = stabilitytest_Nova_ClassWithPropertiesFunctionMap_VTable_val.classInstance;
-nova_all_classes[665] = stabilitytest_Nova_ClassWithPropertiesPropertyMap_VTable_val.classInstance;
-nova_all_classes[666] = stabilitytest_Nova_ClientThread_VTable_val.classInstance;
-nova_all_classes[667] = stabilitytest_Nova_ClientThreadFunctionMap_VTable_val.classInstance;
-nova_all_classes[668] = stabilitytest_Nova_ClientThreadPropertyMap_VTable_val.classInstance;
-nova_all_classes[669] = stabilitytest_Nova_ClosureStability_VTable_val.classInstance;
-nova_all_classes[670] = stabilitytest_Nova_ClosureStabilityFunctionMap_VTable_val.classInstance;
-nova_all_classes[671] = stabilitytest_Nova_ClosureStabilityPropertyMap_VTable_val.classInstance;
-nova_all_classes[672] = stabilitytest_Nova_ExceptionStability_VTable_val.classInstance;
-nova_all_classes[673] = stabilitytest_Nova_ExceptionStabilityFunctionMap_VTable_val.classInstance;
-nova_all_classes[674] = stabilitytest_Nova_ExceptionStabilityPropertyMap_VTable_val.classInstance;
-nova_all_classes[675] = stabilitytest_Nova_ExternalInnerClassStability_VTable_val.classInstance;
-nova_all_classes[676] = stabilitytest_Nova_ExternalInnerClassStabilityFunctionMap_VTable_val.classInstance;
-nova_all_classes[677] = stabilitytest_Nova_ExternalInnerClassStabilityPropertyMap_VTable_val.classInstance;
-nova_all_classes[678] = stabilitytest_Nova_FileStability_VTable_val.classInstance;
-nova_all_classes[679] = stabilitytest_Nova_FileStabilityFunctionMap_VTable_val.classInstance;
-nova_all_classes[680] = stabilitytest_Nova_FileStabilityPropertyMap_VTable_val.classInstance;
-nova_all_classes[681] = stabilitytest_Nova_InnerClassStability_VTable_val.classInstance;
-nova_all_classes[682] = stabilitytest_Nova_MyOuter_VTable_val.classInstance;
-nova_all_classes[683] = stabilitytest_Nova_InnerClassStabilityFunctionMap_VTable_val.classInstance;
-nova_all_classes[684] = stabilitytest_Nova_InnerClassStabilityPropertyMap_VTable_val.classInstance;
-nova_all_classes[685] = stabilitytest_Nova_MyOuterFunctionMap_VTable_val.classInstance;
-nova_all_classes[686] = stabilitytest_Nova_MyOuterPropertyMap_VTable_val.classInstance;
-nova_all_classes[687] = stabilitytest_Nova_MyInner_VTable_val.classInstance;
-nova_all_classes[688] = stabilitytest_Nova_MyInnerFunctionMap_VTable_val.classInstance;
-nova_all_classes[689] = stabilitytest_Nova_MyInnerPropertyMap_VTable_val.classInstance;
-nova_all_classes[690] = stabilitytest_Nova_LambdaStability_VTable_val.classInstance;
-nova_all_classes[691] = stabilitytest_Nova_LambdaStabilityFunctionMap_VTable_val.classInstance;
-nova_all_classes[692] = stabilitytest_Nova_LambdaStabilityPropertyMap_VTable_val.classInstance;
-nova_all_classes[693] = stabilitytest_Nova_NetworkStability_VTable_val.classInstance;
-nova_all_classes[694] = stabilitytest_Nova_NetworkStabilityFunctionMap_VTable_val.classInstance;
-nova_all_classes[695] = stabilitytest_Nova_NetworkStabilityPropertyMap_VTable_val.classInstance;
-nova_all_classes[696] = stabilitytest_Nova_Node_VTable_val.classInstance;
-nova_all_classes[697] = stabilitytest_Nova_NodeFunctionMap_VTable_val.classInstance;
-nova_all_classes[698] = stabilitytest_Nova_NodePropertyMap_VTable_val.classInstance;
-nova_all_classes[699] = stabilitytest_Nova_PolymorphicSubClass_VTable_val.classInstance;
-nova_all_classes[700] = stabilitytest_Nova_PolymorphicSubClassFunctionMap_VTable_val.classInstance;
-nova_all_classes[701] = stabilitytest_Nova_PolymorphicSubClassPropertyMap_VTable_val.classInstance;
-nova_all_classes[702] = stabilitytest_Nova_PolymorphicSuperClass_VTable_val.classInstance;
-nova_all_classes[703] = stabilitytest_Nova_PolymorphicSuperClassFunctionMap_VTable_val.classInstance;
-nova_all_classes[704] = stabilitytest_Nova_PolymorphicSuperClassPropertyMap_VTable_val.classInstance;
-nova_all_classes[705] = stabilitytest_Nova_PolymorphismStability_VTable_val.classInstance;
-nova_all_classes[706] = stabilitytest_Nova_PolymorphismStabilityFunctionMap_VTable_val.classInstance;
-nova_all_classes[707] = stabilitytest_Nova_PolymorphismStabilityPropertyMap_VTable_val.classInstance;
-nova_all_classes[708] = stabilitytest_Nova_PrimitiveOverloadStability_VTable_val.classInstance;
-nova_all_classes[709] = stabilitytest_Nova_PrimitiveOverloadStabilityFunctionMap_VTable_val.classInstance;
-nova_all_classes[710] = stabilitytest_Nova_PrimitiveOverloadStabilityPropertyMap_VTable_val.classInstance;
-nova_all_classes[711] = stabilitytest_Nova_RegexStability_VTable_val.classInstance;
-nova_all_classes[712] = stabilitytest_Nova_RegexStabilityFunctionMap_VTable_val.classInstance;
-nova_all_classes[713] = stabilitytest_Nova_RegexStabilityPropertyMap_VTable_val.classInstance;
-nova_all_classes[714] = stabilitytest_Nova_StabilityExceptionHandler_VTable_val.classInstance;
-nova_all_classes[715] = stabilitytest_Nova_StabilityExceptionHandlerFunctionMap_VTable_val.classInstance;
-nova_all_classes[716] = stabilitytest_Nova_StabilityExceptionHandlerPropertyMap_VTable_val.classInstance;
-nova_all_classes[717] = stabilitytest_Nova_StabilityTest_VTable_val.classInstance;
-nova_all_classes[718] = stabilitytest_Nova_StabilityTestFunctionMap_VTable_val.classInstance;
-nova_all_classes[719] = stabilitytest_Nova_StabilityTestPropertyMap_VTable_val.classInstance;
-nova_all_classes[720] = stabilitytest_Nova_StabilityTestCase_VTable_val.classInstance;
-nova_all_classes[721] = stabilitytest_Nova_StabilityTestCaseFunctionMap_VTable_val.classInstance;
-nova_all_classes[722] = stabilitytest_Nova_StabilityTestCasePropertyMap_VTable_val.classInstance;
-nova_all_classes[723] = stabilitytest_Nova_StabilityTestException_VTable_val.classInstance;
-nova_all_classes[724] = stabilitytest_Nova_StabilityTestExceptionFunctionMap_VTable_val.classInstance;
-nova_all_classes[725] = stabilitytest_Nova_StabilityTestExceptionPropertyMap_VTable_val.classInstance;
-nova_all_classes[726] = stabilitytest_Nova_StaticImportStability_VTable_val.classInstance;
-nova_all_classes[727] = stabilitytest_Nova_StaticImportStabilityFunctionMap_VTable_val.classInstance;
-nova_all_classes[728] = stabilitytest_Nova_StaticImportStabilityPropertyMap_VTable_val.classInstance;
-nova_all_classes[729] = stabilitytest_Nova_SyntaxStability_VTable_val.classInstance;
-nova_all_classes[730] = stabilitytest_Nova_SyntaxStabilityFunctionMap_VTable_val.classInstance;
-nova_all_classes[731] = stabilitytest_Nova_SyntaxStabilityPropertyMap_VTable_val.classInstance;
-nova_all_classes[732] = stabilitytest_Nova_ThreadImplementation_VTable_val.classInstance;
-nova_all_classes[733] = stabilitytest_Nova_ThreadImplementationFunctionMap_VTable_val.classInstance;
-nova_all_classes[734] = stabilitytest_Nova_ThreadImplementationPropertyMap_VTable_val.classInstance;
-nova_all_classes[735] = stabilitytest_Nova_ThreadStability_VTable_val.classInstance;
-nova_all_classes[736] = stabilitytest_Nova_ThreadStabilityFunctionMap_VTable_val.classInstance;
-nova_all_classes[737] = stabilitytest_Nova_ThreadStabilityPropertyMap_VTable_val.classInstance;
-nova_all_classes[738] = stabilitytest_Nova_TimeStability_VTable_val.classInstance;
-nova_all_classes[739] = stabilitytest_Nova_TimeStabilityFunctionMap_VTable_val.classInstance;
-nova_all_classes[740] = stabilitytest_Nova_TimeStabilityPropertyMap_VTable_val.classInstance;
-nova_all_classes[741] = stabilitytest_Nova_ToStringStability_VTable_val.classInstance;
-nova_all_classes[742] = stabilitytest_Nova_ToStringStabilityFunctionMap_VTable_val.classInstance;
-nova_all_classes[743] = stabilitytest_Nova_ToStringStabilityPropertyMap_VTable_val.classInstance;
-nova_all_classes[744] = stabilitytest_Nova_UnstableException_VTable_val.classInstance;
-nova_all_classes[745] = stabilitytest_Nova_UnstableExceptionFunctionMap_VTable_val.classInstance;
-nova_all_classes[746] = stabilitytest_Nova_UnstableExceptionPropertyMap_VTable_val.classInstance;
-nova_meta_Nova_Class_Nova_ALL = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, (nova_Nova_Object**)nova_all_classes, 747);
+nova_all_classes[476] = nova_star_Nova_Button_VTable_val.classInstance;
+nova_all_classes[477] = nova_star_Nova_ButtonFunctionMap_VTable_val.classInstance;
+nova_all_classes[478] = nova_star_Nova_ButtonPropertyMap_VTable_val.classInstance;
+nova_all_classes[479] = nova_star_Nova_Frame_VTable_val.classInstance;
+nova_all_classes[480] = nova_star_Nova_FrameFunctionMap_VTable_val.classInstance;
+nova_all_classes[481] = nova_star_Nova_FramePropertyMap_VTable_val.classInstance;
+nova_all_classes[482] = nova_star_Nova_Panel_VTable_val.classInstance;
+nova_all_classes[483] = nova_star_Nova_PanelFunctionMap_VTable_val.classInstance;
+nova_all_classes[484] = nova_star_Nova_PanelPropertyMap_VTable_val.classInstance;
+nova_all_classes[485] = nova_star_Nova_Screen_VTable_val.classInstance;
+nova_all_classes[486] = nova_star_Nova_ScreenFunctionMap_VTable_val.classInstance;
+nova_all_classes[487] = nova_star_Nova_ScreenPropertyMap_VTable_val.classInstance;
+nova_all_classes[488] = nova_star_Nova_UIComponent_VTable_val.classInstance;
+nova_all_classes[489] = nova_star_Nova_UIComponentFunctionMap_VTable_val.classInstance;
+nova_all_classes[490] = nova_star_Nova_UIComponentPropertyMap_VTable_val.classInstance;
+nova_all_classes[491] = nova_star_Nova_UIParent_VTable_val.classInstance;
+nova_all_classes[492] = nova_star_Nova_UIParentFunctionMap_VTable_val.classInstance;
+nova_all_classes[493] = nova_star_Nova_UIParentPropertyMap_VTable_val.classInstance;
+nova_all_classes[494] = nova_star_Nova_Window_VTable_val.classInstance;
+nova_all_classes[495] = nova_star_Nova_WindowFunctionMap_VTable_val.classInstance;
+nova_all_classes[496] = nova_star_Nova_WindowPropertyMap_VTable_val.classInstance;
+nova_all_classes[497] = nova_star_Nova_WindowThread_VTable_val.classInstance;
+nova_all_classes[498] = nova_star_Nova_WindowThreadFunctionMap_VTable_val.classInstance;
+nova_all_classes[499] = nova_star_Nova_WindowThreadPropertyMap_VTable_val.classInstance;
+nova_all_classes[500] = nova_thread_Nova_Thread_VTable_val.classInstance;
+nova_all_classes[501] = nova_thread_Nova_ThreadFunctionMap_VTable_val.classInstance;
+nova_all_classes[502] = nova_thread_Nova_ThreadPropertyMap_VTable_val.classInstance;
+nova_all_classes[503] = nova_thread_Nova_ThreadLocal_VTable_val.classInstance;
+nova_all_classes[504] = nova_thread_Nova_ThreadLocalFunctionMap_VTable_val.classInstance;
+nova_all_classes[505] = nova_thread_Nova_ThreadLocalPropertyMap_VTable_val.classInstance;
+nova_all_classes[506] = nova_thread_Nova_UncaughtExceptionHandler_VTable_val.classInstance;
+nova_all_classes[507] = nova_thread_Nova_UncaughtExceptionHandlerFunctionMap_VTable_val.classInstance;
+nova_all_classes[508] = nova_thread_Nova_UncaughtExceptionHandlerPropertyMap_VTable_val.classInstance;
+nova_all_classes[509] = nova_thread_async_Nova_Async_VTable_val.classInstance;
+nova_all_classes[510] = nova_thread_async_Nova_AsyncFunctionMap_VTable_val.classInstance;
+nova_all_classes[511] = nova_thread_async_Nova_AsyncPropertyMap_VTable_val.classInstance;
+nova_all_classes[512] = nova_thread_async_Nova_Task_VTable_val.classInstance;
+nova_all_classes[513] = nova_thread_async_Nova_TaskFunctionMap_VTable_val.classInstance;
+nova_all_classes[514] = nova_thread_async_Nova_TaskPropertyMap_VTable_val.classInstance;
+nova_all_classes[515] = nova_time_Nova_CumulativeTimer_VTable_val.classInstance;
+nova_all_classes[516] = nova_time_Nova_CumulativeTimerFunctionMap_VTable_val.classInstance;
+nova_all_classes[517] = nova_time_Nova_CumulativeTimerPropertyMap_VTable_val.classInstance;
+nova_all_classes[518] = nova_time_Nova_Date_VTable_val.classInstance;
+nova_all_classes[519] = nova_time_Nova_DateFunctionMap_VTable_val.classInstance;
+nova_all_classes[520] = nova_time_Nova_DatePropertyMap_VTable_val.classInstance;
+nova_all_classes[521] = nova_time_Nova_Time_VTable_val.classInstance;
+nova_all_classes[522] = nova_time_Nova_TimeFunctionMap_VTable_val.classInstance;
+nova_all_classes[523] = nova_time_Nova_TimePropertyMap_VTable_val.classInstance;
+nova_all_classes[524] = nova_time_Nova_Timer_VTable_val.classInstance;
+nova_all_classes[525] = nova_time_Nova_TimerFunctionMap_VTable_val.classInstance;
+nova_all_classes[526] = nova_time_Nova_TimerPropertyMap_VTable_val.classInstance;
+nova_all_classes[527] = nova_web_js_json_Nova_Json_VTable_val.classInstance;
+nova_all_classes[528] = nova_web_js_json_Nova_JsonFunctionMap_VTable_val.classInstance;
+nova_all_classes[529] = nova_web_js_json_Nova_JsonPropertyMap_VTable_val.classInstance;
+nova_all_classes[530] = nova_web_svg_Nova_Svg_VTable_val.classInstance;
+nova_all_classes[531] = nova_web_svg_Nova_SvgFunctionMap_VTable_val.classInstance;
+nova_all_classes[532] = nova_web_svg_Nova_SvgPropertyMap_VTable_val.classInstance;
+nova_all_classes[533] = nova_web_svg_Nova_SvgCircle_VTable_val.classInstance;
+nova_all_classes[534] = nova_web_svg_Nova_SvgCircleFunctionMap_VTable_val.classInstance;
+nova_all_classes[535] = nova_web_svg_Nova_SvgCirclePropertyMap_VTable_val.classInstance;
+nova_all_classes[536] = nova_web_svg_Nova_SvgComponent_VTable_val.classInstance;
+nova_all_classes[537] = nova_web_svg_Nova_SvgComponentFunctionMap_VTable_val.classInstance;
+nova_all_classes[538] = nova_web_svg_Nova_SvgComponentPropertyMap_VTable_val.classInstance;
+nova_all_classes[539] = nova_web_svg_Nova_SvgComponentList_VTable_val.classInstance;
+nova_all_classes[540] = nova_web_svg_Nova_SvgComponentListFunctionMap_VTable_val.classInstance;
+nova_all_classes[541] = nova_web_svg_Nova_SvgComponentListPropertyMap_VTable_val.classInstance;
+nova_all_classes[542] = nova_web_svg_Nova_SvgComponentNode_VTable_val.classInstance;
+nova_all_classes[543] = nova_web_svg_Nova_SvgComponentNodeFunctionMap_VTable_val.classInstance;
+nova_all_classes[544] = nova_web_svg_Nova_SvgComponentNodePropertyMap_VTable_val.classInstance;
+nova_all_classes[545] = nova_web_svg_Nova_SvgMainComponent_VTable_val.classInstance;
+nova_all_classes[546] = nova_web_svg_Nova_SvgMainComponentFunctionMap_VTable_val.classInstance;
+nova_all_classes[547] = nova_web_svg_Nova_SvgMainComponentPropertyMap_VTable_val.classInstance;
+nova_all_classes[548] = nova_web_svg_no3_Nova_No3_VTable_val.classInstance;
+nova_all_classes[549] = nova_web_svg_no3_Nova_No3FunctionMap_VTable_val.classInstance;
+nova_all_classes[550] = nova_web_svg_no3_Nova_No3PropertyMap_VTable_val.classInstance;
+nova_all_classes[551] = nova_web_svg_no3_Nova_No3Node_VTable_val.classInstance;
+nova_all_classes[552] = nova_web_svg_no3_Nova_No3NodeFunctionMap_VTable_val.classInstance;
+nova_all_classes[553] = nova_web_svg_no3_Nova_No3NodePropertyMap_VTable_val.classInstance;
+nova_all_classes[554] = nova_web_svg_no3_Nova_No3Select_VTable_val.classInstance;
+nova_all_classes[555] = nova_web_svg_no3_Nova_No3SelectFunctionMap_VTable_val.classInstance;
+nova_all_classes[556] = nova_web_svg_no3_Nova_No3SelectPropertyMap_VTable_val.classInstance;
+nova_all_classes[557] = nova_web_svg_no3_Nova_No3SelectAll_VTable_val.classInstance;
+nova_all_classes[558] = nova_web_svg_no3_Nova_No3SelectAllFunctionMap_VTable_val.classInstance;
+nova_all_classes[559] = nova_web_svg_no3_Nova_No3SelectAllPropertyMap_VTable_val.classInstance;
+nova_all_classes[560] = novex_nest_Nova_InvalidAssertionException_VTable_val.classInstance;
+nova_all_classes[561] = novex_nest_Nova_InvalidAssertionExceptionFunctionMap_VTable_val.classInstance;
+nova_all_classes[562] = novex_nest_Nova_InvalidAssertionExceptionPropertyMap_VTable_val.classInstance;
+nova_all_classes[563] = novex_nest_Nova_Nest_VTable_val.classInstance;
+nova_all_classes[564] = novex_nest_Nova_NestFunctionMap_VTable_val.classInstance;
+nova_all_classes[565] = novex_nest_Nova_NestPropertyMap_VTable_val.classInstance;
+nova_all_classes[566] = novex_nest_Int_Nova_Nest1Int_VTable_val.classInstance;
+nova_all_classes[567] = novex_nest_Nova_TestSuite_VTable_val.classInstance;
+nova_all_classes[568] = novex_nest_Nova_TestSuiteFunctionMap_VTable_val.classInstance;
+nova_all_classes[569] = novex_nest_Nova_TestSuitePropertyMap_VTable_val.classInstance;
+nova_all_classes[570] = novex_nest_ui_Nova_ResultWindow_VTable_val.classInstance;
+nova_all_classes[571] = novex_nest_ui_Nova_ResultWindowFunctionMap_VTable_val.classInstance;
+nova_all_classes[572] = novex_nest_ui_Nova_ResultWindowPropertyMap_VTable_val.classInstance;
+nova_all_classes[573] = example_Nova_Animal_VTable_val.classInstance;
+nova_all_classes[574] = example_Nova_AnimalFunctionMap_VTable_val.classInstance;
+nova_all_classes[575] = example_Nova_AnimalPropertyMap_VTable_val.classInstance;
+nova_all_classes[576] = example_Nova_ArrayDemo_VTable_val.classInstance;
+nova_all_classes[577] = example_Nova_ArrayDemoFunctionMap_VTable_val.classInstance;
+nova_all_classes[578] = example_Nova_ArrayDemoPropertyMap_VTable_val.classInstance;
+nova_all_classes[579] = example_Nova_BodyBuilder_VTable_val.classInstance;
+nova_all_classes[580] = example_Nova_BodyBuilderFunctionMap_VTable_val.classInstance;
+nova_all_classes[581] = example_Nova_BodyBuilderPropertyMap_VTable_val.classInstance;
+nova_all_classes[582] = example_Nova_ClosureDemo_VTable_val.classInstance;
+nova_all_classes[583] = example_Nova_ClosureDemoFunctionMap_VTable_val.classInstance;
+nova_all_classes[584] = example_Nova_ClosureDemoPropertyMap_VTable_val.classInstance;
+nova_all_classes[585] = example_Nova_Dog_VTable_val.classInstance;
+nova_all_classes[586] = example_Nova_DogFunctionMap_VTable_val.classInstance;
+nova_all_classes[587] = example_Nova_DogPropertyMap_VTable_val.classInstance;
+nova_all_classes[588] = example_Nova_ExceptionHandlingDemo_VTable_val.classInstance;
+nova_all_classes[589] = example_Nova_ExceptionHandlingDemoFunctionMap_VTable_val.classInstance;
+nova_all_classes[590] = example_Nova_ExceptionHandlingDemoPropertyMap_VTable_val.classInstance;
+nova_all_classes[591] = example_Nova_FileTest_VTable_val.classInstance;
+nova_all_classes[592] = example_Nova_FileTestFunctionMap_VTable_val.classInstance;
+nova_all_classes[593] = example_Nova_FileTestPropertyMap_VTable_val.classInstance;
+nova_all_classes[594] = example_Nova_GenericDemo_VTable_val.classInstance;
+nova_all_classes[595] = example_Nova_GenericDemoFunctionMap_VTable_val.classInstance;
+nova_all_classes[596] = example_Nova_GenericDemoPropertyMap_VTable_val.classInstance;
+nova_all_classes[597] = example_Nova_HashMapDemo_VTable_val.classInstance;
+nova_all_classes[598] = example_Nova_HashMapDemoFunctionMap_VTable_val.classInstance;
+nova_all_classes[599] = example_Nova_HashMapDemoPropertyMap_VTable_val.classInstance;
+nova_all_classes[600] = example_Nova_HashSetDemo_VTable_val.classInstance;
+nova_all_classes[601] = example_Nova_HashSetDemoFunctionMap_VTable_val.classInstance;
+nova_all_classes[602] = example_Nova_HashSetDemoPropertyMap_VTable_val.classInstance;
+nova_all_classes[603] = example_Nova_IntegerTest_VTable_val.classInstance;
+nova_all_classes[604] = example_Nova_IntegerTestFunctionMap_VTable_val.classInstance;
+nova_all_classes[605] = example_Nova_IntegerTestPropertyMap_VTable_val.classInstance;
+nova_all_classes[606] = example_Nova_Lab_VTable_val.classInstance;
+nova_all_classes[607] = example_Nova_LabFunctionMap_VTable_val.classInstance;
+nova_all_classes[608] = example_Nova_LabPropertyMap_VTable_val.classInstance;
+nova_all_classes[609] = example_Nova_MathDemo_VTable_val.classInstance;
+nova_all_classes[610] = example_Nova_MathDemoFunctionMap_VTable_val.classInstance;
+nova_all_classes[611] = example_Nova_MathDemoPropertyMap_VTable_val.classInstance;
+nova_all_classes[612] = example_Nova_NestTest_VTable_val.classInstance;
+nova_all_classes[613] = example_Nova_NestTestFunctionMap_VTable_val.classInstance;
+nova_all_classes[614] = example_Nova_NestTestPropertyMap_VTable_val.classInstance;
+nova_all_classes[615] = example_Nova_NonWholeDivisionException_VTable_val.classInstance;
+nova_all_classes[616] = example_Nova_NonWholeDivisionExceptionFunctionMap_VTable_val.classInstance;
+nova_all_classes[617] = example_Nova_NonWholeDivisionExceptionPropertyMap_VTable_val.classInstance;
+nova_all_classes[618] = example_Nova_Person_VTable_val.classInstance;
+nova_all_classes[619] = example_Nova_PersonFunctionMap_VTable_val.classInstance;
+nova_all_classes[620] = example_Nova_PersonPropertyMap_VTable_val.classInstance;
+nova_all_classes[621] = example_Nova_Polygon_VTable_val.classInstance;
+nova_all_classes[622] = example_Nova_PolygonFunctionMap_VTable_val.classInstance;
+nova_all_classes[623] = example_Nova_PolygonPropertyMap_VTable_val.classInstance;
+nova_all_classes[624] = example_Nova_PolymorphismDemo_VTable_val.classInstance;
+nova_all_classes[625] = example_Nova_PolymorphismDemoFunctionMap_VTable_val.classInstance;
+nova_all_classes[626] = example_Nova_PolymorphismDemoPropertyMap_VTable_val.classInstance;
+nova_all_classes[627] = example_Nova_QueueDemo_VTable_val.classInstance;
+nova_all_classes[628] = example_Nova_QueueDemoFunctionMap_VTable_val.classInstance;
+nova_all_classes[629] = example_Nova_QueueDemoPropertyMap_VTable_val.classInstance;
+nova_all_classes[630] = example_Nova_Spider_VTable_val.classInstance;
+nova_all_classes[631] = example_Nova_SpiderFunctionMap_VTable_val.classInstance;
+nova_all_classes[632] = example_Nova_SpiderPropertyMap_VTable_val.classInstance;
+nova_all_classes[633] = example_Nova_Square_VTable_val.classInstance;
+nova_all_classes[634] = example_Nova_SquareFunctionMap_VTable_val.classInstance;
+nova_all_classes[635] = example_Nova_SquarePropertyMap_VTable_val.classInstance;
+nova_all_classes[636] = example_Nova_SvgChart_VTable_val.classInstance;
+nova_all_classes[637] = example_Nova_SvgChartFunctionMap_VTable_val.classInstance;
+nova_all_classes[638] = example_Nova_SvgChartPropertyMap_VTable_val.classInstance;
+nova_all_classes[639] = example_Nova_SvgFractal_VTable_val.classInstance;
+nova_all_classes[640] = example_Nova_SvgFractalFunctionMap_VTable_val.classInstance;
+nova_all_classes[641] = example_Nova_SvgFractalPropertyMap_VTable_val.classInstance;
+nova_all_classes[642] = example_Nova_T1_VTable_val.classInstance;
+nova_all_classes[643] = example_Nova_T1FunctionMap_VTable_val.classInstance;
+nova_all_classes[644] = example_Nova_T1PropertyMap_VTable_val.classInstance;
+nova_all_classes[645] = example_Nova_T2_VTable_val.classInstance;
+nova_all_classes[646] = example_Nova_T2FunctionMap_VTable_val.classInstance;
+nova_all_classes[647] = example_Nova_T2PropertyMap_VTable_val.classInstance;
+nova_all_classes[648] = example_Nova_Test_VTable_val.classInstance;
+nova_all_classes[649] = example_Nova_TestFunctionMap_VTable_val.classInstance;
+nova_all_classes[650] = example_Nova_TestPropertyMap_VTable_val.classInstance;
+nova_all_classes[651] = example_Nova_ThreadDemo_VTable_val.classInstance;
+nova_all_classes[652] = example_Nova_ThreadDemoFunctionMap_VTable_val.classInstance;
+nova_all_classes[653] = example_Nova_ThreadDemoPropertyMap_VTable_val.classInstance;
+nova_all_classes[654] = example_Nova_ThreadDemoImplementation_VTable_val.classInstance;
+nova_all_classes[655] = example_Nova_ThreadDemoImplementationFunctionMap_VTable_val.classInstance;
+nova_all_classes[656] = example_Nova_ThreadDemoImplementationPropertyMap_VTable_val.classInstance;
+nova_all_classes[657] = example_ackermann_Nova_Ackermann_VTable_val.classInstance;
+nova_all_classes[658] = example_ackermann_Nova_AckermannFunctionMap_VTable_val.classInstance;
+nova_all_classes[659] = example_ackermann_Nova_AckermannPropertyMap_VTable_val.classInstance;
+nova_all_classes[660] = example_copy_Nova_Dog_VTable_val.classInstance;
+nova_all_classes[661] = example_copy_Nova_DogFunctionMap_VTable_val.classInstance;
+nova_all_classes[662] = example_copy_Nova_DogPropertyMap_VTable_val.classInstance;
+nova_all_classes[663] = example_database_Nova_DatabaseDemo_VTable_val.classInstance;
+nova_all_classes[664] = example_database_Nova_DatabaseDemoFunctionMap_VTable_val.classInstance;
+nova_all_classes[665] = example_database_Nova_DatabaseDemoPropertyMap_VTable_val.classInstance;
+nova_all_classes[666] = example_network_Nova_ClientDemo_VTable_val.classInstance;
+nova_all_classes[667] = example_network_Nova_ClientDemoFunctionMap_VTable_val.classInstance;
+nova_all_classes[668] = example_network_Nova_ClientDemoPropertyMap_VTable_val.classInstance;
+nova_all_classes[669] = example_network_Nova_ConnectionThread_VTable_val.classInstance;
+nova_all_classes[670] = example_network_Nova_ConnectionThreadFunctionMap_VTable_val.classInstance;
+nova_all_classes[671] = example_network_Nova_ConnectionThreadPropertyMap_VTable_val.classInstance;
+nova_all_classes[672] = example_network_Nova_OutputThread_VTable_val.classInstance;
+nova_all_classes[673] = example_network_Nova_OutputThreadFunctionMap_VTable_val.classInstance;
+nova_all_classes[674] = example_network_Nova_OutputThreadPropertyMap_VTable_val.classInstance;
+nova_all_classes[675] = example_network_Nova_ServerDemo_VTable_val.classInstance;
+nova_all_classes[676] = example_network_Nova_ServerDemoFunctionMap_VTable_val.classInstance;
+nova_all_classes[677] = example_network_Nova_ServerDemoPropertyMap_VTable_val.classInstance;
+nova_all_classes[678] = stabilitytest_Nova_AssignmentStability_VTable_val.classInstance;
+nova_all_classes[679] = stabilitytest_Nova_AssignmentStabilityFunctionMap_VTable_val.classInstance;
+nova_all_classes[680] = stabilitytest_Nova_AssignmentStabilityPropertyMap_VTable_val.classInstance;
+nova_all_classes[681] = stabilitytest_Nova_ClassWithProperties_VTable_val.classInstance;
+nova_all_classes[682] = stabilitytest_Nova_ClassWithPropertiesFunctionMap_VTable_val.classInstance;
+nova_all_classes[683] = stabilitytest_Nova_ClassWithPropertiesPropertyMap_VTable_val.classInstance;
+nova_all_classes[684] = stabilitytest_Nova_ClientThread_VTable_val.classInstance;
+nova_all_classes[685] = stabilitytest_Nova_ClientThreadFunctionMap_VTable_val.classInstance;
+nova_all_classes[686] = stabilitytest_Nova_ClientThreadPropertyMap_VTable_val.classInstance;
+nova_all_classes[687] = stabilitytest_Nova_ClosureStability_VTable_val.classInstance;
+nova_all_classes[688] = stabilitytest_Nova_ClosureStabilityFunctionMap_VTable_val.classInstance;
+nova_all_classes[689] = stabilitytest_Nova_ClosureStabilityPropertyMap_VTable_val.classInstance;
+nova_all_classes[690] = stabilitytest_Nova_ExceptionStability_VTable_val.classInstance;
+nova_all_classes[691] = stabilitytest_Nova_ExceptionStabilityFunctionMap_VTable_val.classInstance;
+nova_all_classes[692] = stabilitytest_Nova_ExceptionStabilityPropertyMap_VTable_val.classInstance;
+nova_all_classes[693] = stabilitytest_Nova_ExternalInnerClassStability_VTable_val.classInstance;
+nova_all_classes[694] = stabilitytest_Nova_ExternalInnerClassStabilityFunctionMap_VTable_val.classInstance;
+nova_all_classes[695] = stabilitytest_Nova_ExternalInnerClassStabilityPropertyMap_VTable_val.classInstance;
+nova_all_classes[696] = stabilitytest_Nova_FileStability_VTable_val.classInstance;
+nova_all_classes[697] = stabilitytest_Nova_FileStabilityFunctionMap_VTable_val.classInstance;
+nova_all_classes[698] = stabilitytest_Nova_FileStabilityPropertyMap_VTable_val.classInstance;
+nova_all_classes[699] = stabilitytest_Nova_InnerClassStability_VTable_val.classInstance;
+nova_all_classes[700] = stabilitytest_Nova_MyOuter_VTable_val.classInstance;
+nova_all_classes[701] = stabilitytest_Nova_InnerClassStabilityFunctionMap_VTable_val.classInstance;
+nova_all_classes[702] = stabilitytest_Nova_InnerClassStabilityPropertyMap_VTable_val.classInstance;
+nova_all_classes[703] = stabilitytest_Nova_MyOuterFunctionMap_VTable_val.classInstance;
+nova_all_classes[704] = stabilitytest_Nova_MyOuterPropertyMap_VTable_val.classInstance;
+nova_all_classes[705] = stabilitytest_Nova_MyInner_VTable_val.classInstance;
+nova_all_classes[706] = stabilitytest_Nova_MyInnerFunctionMap_VTable_val.classInstance;
+nova_all_classes[707] = stabilitytest_Nova_MyInnerPropertyMap_VTable_val.classInstance;
+nova_all_classes[708] = stabilitytest_Nova_LambdaStability_VTable_val.classInstance;
+nova_all_classes[709] = stabilitytest_Nova_LambdaStabilityFunctionMap_VTable_val.classInstance;
+nova_all_classes[710] = stabilitytest_Nova_LambdaStabilityPropertyMap_VTable_val.classInstance;
+nova_all_classes[711] = stabilitytest_Nova_NetworkStability_VTable_val.classInstance;
+nova_all_classes[712] = stabilitytest_Nova_NetworkStabilityFunctionMap_VTable_val.classInstance;
+nova_all_classes[713] = stabilitytest_Nova_NetworkStabilityPropertyMap_VTable_val.classInstance;
+nova_all_classes[714] = stabilitytest_Nova_Node_VTable_val.classInstance;
+nova_all_classes[715] = stabilitytest_Nova_NodeFunctionMap_VTable_val.classInstance;
+nova_all_classes[716] = stabilitytest_Nova_NodePropertyMap_VTable_val.classInstance;
+nova_all_classes[717] = stabilitytest_Nova_PolymorphicSubClass_VTable_val.classInstance;
+nova_all_classes[718] = stabilitytest_Nova_PolymorphicSubClassFunctionMap_VTable_val.classInstance;
+nova_all_classes[719] = stabilitytest_Nova_PolymorphicSubClassPropertyMap_VTable_val.classInstance;
+nova_all_classes[720] = stabilitytest_Nova_PolymorphicSuperClass_VTable_val.classInstance;
+nova_all_classes[721] = stabilitytest_Nova_PolymorphicSuperClassFunctionMap_VTable_val.classInstance;
+nova_all_classes[722] = stabilitytest_Nova_PolymorphicSuperClassPropertyMap_VTable_val.classInstance;
+nova_all_classes[723] = stabilitytest_Nova_PolymorphismStability_VTable_val.classInstance;
+nova_all_classes[724] = stabilitytest_Nova_PolymorphismStabilityFunctionMap_VTable_val.classInstance;
+nova_all_classes[725] = stabilitytest_Nova_PolymorphismStabilityPropertyMap_VTable_val.classInstance;
+nova_all_classes[726] = stabilitytest_Nova_PrimitiveOverloadStability_VTable_val.classInstance;
+nova_all_classes[727] = stabilitytest_Nova_PrimitiveOverloadStabilityFunctionMap_VTable_val.classInstance;
+nova_all_classes[728] = stabilitytest_Nova_PrimitiveOverloadStabilityPropertyMap_VTable_val.classInstance;
+nova_all_classes[729] = stabilitytest_Nova_RegexStability_VTable_val.classInstance;
+nova_all_classes[730] = stabilitytest_Nova_RegexStabilityFunctionMap_VTable_val.classInstance;
+nova_all_classes[731] = stabilitytest_Nova_RegexStabilityPropertyMap_VTable_val.classInstance;
+nova_all_classes[732] = stabilitytest_Nova_StabilityExceptionHandler_VTable_val.classInstance;
+nova_all_classes[733] = stabilitytest_Nova_StabilityExceptionHandlerFunctionMap_VTable_val.classInstance;
+nova_all_classes[734] = stabilitytest_Nova_StabilityExceptionHandlerPropertyMap_VTable_val.classInstance;
+nova_all_classes[735] = stabilitytest_Nova_StabilityTest_VTable_val.classInstance;
+nova_all_classes[736] = stabilitytest_Nova_StabilityTestFunctionMap_VTable_val.classInstance;
+nova_all_classes[737] = stabilitytest_Nova_StabilityTestPropertyMap_VTable_val.classInstance;
+nova_all_classes[738] = stabilitytest_Nova_StabilityTestCase_VTable_val.classInstance;
+nova_all_classes[739] = stabilitytest_Nova_StabilityTestCaseFunctionMap_VTable_val.classInstance;
+nova_all_classes[740] = stabilitytest_Nova_StabilityTestCasePropertyMap_VTable_val.classInstance;
+nova_all_classes[741] = stabilitytest_Nova_StabilityTestException_VTable_val.classInstance;
+nova_all_classes[742] = stabilitytest_Nova_StabilityTestExceptionFunctionMap_VTable_val.classInstance;
+nova_all_classes[743] = stabilitytest_Nova_StabilityTestExceptionPropertyMap_VTable_val.classInstance;
+nova_all_classes[744] = stabilitytest_Nova_StaticImportStability_VTable_val.classInstance;
+nova_all_classes[745] = stabilitytest_Nova_StaticImportStabilityFunctionMap_VTable_val.classInstance;
+nova_all_classes[746] = stabilitytest_Nova_StaticImportStabilityPropertyMap_VTable_val.classInstance;
+nova_all_classes[747] = stabilitytest_Nova_SyntaxStability_VTable_val.classInstance;
+nova_all_classes[748] = stabilitytest_Nova_SyntaxStabilityFunctionMap_VTable_val.classInstance;
+nova_all_classes[749] = stabilitytest_Nova_SyntaxStabilityPropertyMap_VTable_val.classInstance;
+nova_all_classes[750] = stabilitytest_Nova_ThreadImplementation_VTable_val.classInstance;
+nova_all_classes[751] = stabilitytest_Nova_ThreadImplementationFunctionMap_VTable_val.classInstance;
+nova_all_classes[752] = stabilitytest_Nova_ThreadImplementationPropertyMap_VTable_val.classInstance;
+nova_all_classes[753] = stabilitytest_Nova_ThreadStability_VTable_val.classInstance;
+nova_all_classes[754] = stabilitytest_Nova_ThreadStabilityFunctionMap_VTable_val.classInstance;
+nova_all_classes[755] = stabilitytest_Nova_ThreadStabilityPropertyMap_VTable_val.classInstance;
+nova_all_classes[756] = stabilitytest_Nova_TimeStability_VTable_val.classInstance;
+nova_all_classes[757] = stabilitytest_Nova_TimeStabilityFunctionMap_VTable_val.classInstance;
+nova_all_classes[758] = stabilitytest_Nova_TimeStabilityPropertyMap_VTable_val.classInstance;
+nova_all_classes[759] = stabilitytest_Nova_ToStringStability_VTable_val.classInstance;
+nova_all_classes[760] = stabilitytest_Nova_ToStringStabilityFunctionMap_VTable_val.classInstance;
+nova_all_classes[761] = stabilitytest_Nova_ToStringStabilityPropertyMap_VTable_val.classInstance;
+nova_all_classes[762] = stabilitytest_Nova_UnstableException_VTable_val.classInstance;
+nova_all_classes[763] = stabilitytest_Nova_UnstableExceptionFunctionMap_VTable_val.classInstance;
+nova_all_classes[764] = stabilitytest_Nova_UnstableExceptionPropertyMap_VTable_val.classInstance;
+nova_meta_Nova_Class_Nova_ALL = nova_datastruct_list_Nova_ImmutableArray_2_Nova_construct(0, (nova_Nova_Object**)nova_all_classes, 765);
 
 
 }
@@ -8482,9 +8684,9 @@ nova_datastruct_Nova_NodePropertyMap_Nova_init_static();
 nova_datastruct_Nova_Pair_Nova_init_static();
 nova_datastruct_Nova_PairFunctionMap_Nova_init_static();
 nova_datastruct_Nova_PairPropertyMap_Nova_init_static();
+nova_datastruct_Int_Int_Nova_Pair1Int2Int_Nova_init_static();
 nova_datastruct_Long_Value_Nova_Pair1Long_Nova_init_static();
 nova_datastruct_Int_Value_Nova_Pair1Int_Nova_init_static();
-nova_datastruct_Int_Int_Nova_Pair1Int2Int_Nova_init_static();
 nova_datastruct_Nova_ReversibleHashMap_Nova_init_static();
 nova_datastruct_Nova_ReversibleHashMapFunctionMap_Nova_init_static();
 nova_datastruct_Nova_ReversibleHashMapPropertyMap_Nova_init_static();
@@ -8897,9 +9099,24 @@ nova_security_Nova_Sha256PropertyMap_Nova_init_static();
 nova_serialization_Nova_JsonSerializer_Nova_init_static();
 nova_serialization_Nova_JsonSerializerFunctionMap_Nova_init_static();
 nova_serialization_Nova_JsonSerializerPropertyMap_Nova_init_static();
+nova_star_Nova_Button_Nova_init_static();
+nova_star_Nova_ButtonFunctionMap_Nova_init_static();
+nova_star_Nova_ButtonPropertyMap_Nova_init_static();
 nova_star_Nova_Frame_Nova_init_static();
 nova_star_Nova_FrameFunctionMap_Nova_init_static();
 nova_star_Nova_FramePropertyMap_Nova_init_static();
+nova_star_Nova_Panel_Nova_init_static();
+nova_star_Nova_PanelFunctionMap_Nova_init_static();
+nova_star_Nova_PanelPropertyMap_Nova_init_static();
+nova_star_Nova_Screen_Nova_init_static();
+nova_star_Nova_ScreenFunctionMap_Nova_init_static();
+nova_star_Nova_ScreenPropertyMap_Nova_init_static();
+nova_star_Nova_UIComponent_Nova_init_static();
+nova_star_Nova_UIComponentFunctionMap_Nova_init_static();
+nova_star_Nova_UIComponentPropertyMap_Nova_init_static();
+nova_star_Nova_UIParent_Nova_init_static();
+nova_star_Nova_UIParentFunctionMap_Nova_init_static();
+nova_star_Nova_UIParentPropertyMap_Nova_init_static();
 nova_star_Nova_Window_Nova_init_static();
 nova_star_Nova_WindowFunctionMap_Nova_init_static();
 nova_star_Nova_WindowPropertyMap_Nova_init_static();
@@ -8976,6 +9193,9 @@ novex_nest_Int_Nova_Nest1Int_Nova_init_static();
 novex_nest_Nova_TestSuite_Nova_init_static();
 novex_nest_Nova_TestSuiteFunctionMap_Nova_init_static();
 novex_nest_Nova_TestSuitePropertyMap_Nova_init_static();
+novex_nest_ui_Nova_ResultWindow_Nova_init_static();
+novex_nest_ui_Nova_ResultWindowFunctionMap_Nova_init_static();
+novex_nest_ui_Nova_ResultWindowPropertyMap_Nova_init_static();
 example_Nova_Animal_Nova_init_static();
 example_Nova_AnimalFunctionMap_Nova_init_static();
 example_Nova_AnimalPropertyMap_Nova_init_static();

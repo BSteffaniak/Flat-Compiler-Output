@@ -40,6 +40,9 @@ typedef struct nova_operators_Nova_MultiplyOperator nova_operators_Nova_Multiply
 typedef struct nova_operators_Nova_NotEqualToOperator nova_operators_Nova_NotEqualToOperator;
 typedef struct nova_operators_Nova_PlusEqualsOperator nova_operators_Nova_PlusEqualsOperator;
 typedef struct nova_operators_Nova_PlusOperator nova_operators_Nova_PlusOperator;
+typedef struct nova_star_Nova_UIComponent nova_star_Nova_UIComponent;
+typedef struct nova_star_Nova_UIParent nova_star_Nova_UIParent;
+typedef struct nova_star_Nova_UIComponentFunctionMap nova_star_Nova_UIComponentFunctionMap;
 typedef struct example_Nova_Polygon example_Nova_Polygon;
 typedef char (*nova_Nova_String_closure416_Nova_transform)(void*, char, int, void*);
 typedef char (*nova_Nova_StringFunctionMap_closure417_Nova_transform)(void*, char, int, void*);
@@ -1001,6 +1004,11 @@ nova_Nova_Object* (*nova_operators_Nova_MultiplyOperator_virtual1_Nova_multiply)
 char (*nova_operators_Nova_NotEqualToOperator_virtual_Nova_notEqualTo)(nova_operators_Nova_NotEqualToOperator*, nova_Nova_Object*);
 nova_Nova_Object* (*nova_operators_Nova_PlusEqualsOperator_virtual1_Nova_plusEquals)(nova_operators_Nova_PlusEqualsOperator*, nova_Nova_Object*);
 nova_Nova_Object* (*nova_operators_Nova_PlusOperator_virtual1_Nova_plus)(nova_operators_Nova_PlusOperator*, nova_Nova_Object*);
+void (*nova_star_Nova_UIComponent_virtual_Nova_paint)(nova_star_Nova_UIComponent*);
+void (*nova_star_Nova_UIComponent_virtual_Nova_draw)(nova_star_Nova_UIComponent*);
+nova_datastruct_list_Nova_Array* (*nova_star_Nova_UIParent_virtual_Accessorfunc_Nova_children)(nova_star_Nova_UIParent*);
+nova_datastruct_list_Nova_Array* (*nova_star_Nova_UIParent_virtual_Mutatorfunc_Nova_children)(nova_star_Nova_UIParent*, nova_datastruct_list_Nova_Array*);
+nova_star_Nova_UIComponent* (*nova_star_Nova_UIComponentFunctionMap_virtualfunctionMapUIComponent_Nova_construct)(nova_star_Nova_UIComponentFunctionMap*);
 int (*example_Nova_Polygon_virtual_Nova_numberSides)(example_Nova_Polygon*);
 double (*example_Nova_Polygon_virtual_Nova_calculateArea)(example_Nova_Polygon*);
 } nova_Interface_VTable;

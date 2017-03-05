@@ -62,9 +62,9 @@ typedef struct nova_datastruct_Nova_NodePropertyMap nova_datastruct_Nova_NodePro
 typedef struct nova_datastruct_Nova_Pair nova_datastruct_Nova_Pair;
 typedef struct nova_datastruct_Nova_PairFunctionMap nova_datastruct_Nova_PairFunctionMap;
 typedef struct nova_datastruct_Nova_PairPropertyMap nova_datastruct_Nova_PairPropertyMap;
+typedef struct nova_datastruct_Int_Int_Nova_Pair1Int2Int nova_datastruct_Int_Int_Nova_Pair1Int2Int;
 typedef struct nova_datastruct_Long_Value_Nova_Pair1Long nova_datastruct_Long_Value_Nova_Pair1Long;
 typedef struct nova_datastruct_Int_Value_Nova_Pair1Int nova_datastruct_Int_Value_Nova_Pair1Int;
-typedef struct nova_datastruct_Int_Int_Nova_Pair1Int2Int nova_datastruct_Int_Int_Nova_Pair1Int2Int;
 typedef struct nova_datastruct_Nova_ReversibleHashMap nova_datastruct_Nova_ReversibleHashMap;
 typedef struct nova_datastruct_Nova_ReversibleHashMapFunctionMap nova_datastruct_Nova_ReversibleHashMapFunctionMap;
 typedef struct nova_datastruct_Nova_ReversibleHashMapPropertyMap nova_datastruct_Nova_ReversibleHashMapPropertyMap;
@@ -477,9 +477,24 @@ typedef struct nova_security_Nova_Sha256PropertyMap nova_security_Nova_Sha256Pro
 typedef struct nova_serialization_Nova_JsonSerializer nova_serialization_Nova_JsonSerializer;
 typedef struct nova_serialization_Nova_JsonSerializerFunctionMap nova_serialization_Nova_JsonSerializerFunctionMap;
 typedef struct nova_serialization_Nova_JsonSerializerPropertyMap nova_serialization_Nova_JsonSerializerPropertyMap;
+typedef struct nova_star_Nova_Button nova_star_Nova_Button;
+typedef struct nova_star_Nova_ButtonFunctionMap nova_star_Nova_ButtonFunctionMap;
+typedef struct nova_star_Nova_ButtonPropertyMap nova_star_Nova_ButtonPropertyMap;
 typedef struct nova_star_Nova_Frame nova_star_Nova_Frame;
 typedef struct nova_star_Nova_FrameFunctionMap nova_star_Nova_FrameFunctionMap;
 typedef struct nova_star_Nova_FramePropertyMap nova_star_Nova_FramePropertyMap;
+typedef struct nova_star_Nova_Panel nova_star_Nova_Panel;
+typedef struct nova_star_Nova_PanelFunctionMap nova_star_Nova_PanelFunctionMap;
+typedef struct nova_star_Nova_PanelPropertyMap nova_star_Nova_PanelPropertyMap;
+typedef struct nova_star_Nova_Screen nova_star_Nova_Screen;
+typedef struct nova_star_Nova_ScreenFunctionMap nova_star_Nova_ScreenFunctionMap;
+typedef struct nova_star_Nova_ScreenPropertyMap nova_star_Nova_ScreenPropertyMap;
+typedef struct nova_star_Nova_UIComponent nova_star_Nova_UIComponent;
+typedef struct nova_star_Nova_UIComponentFunctionMap nova_star_Nova_UIComponentFunctionMap;
+typedef struct nova_star_Nova_UIComponentPropertyMap nova_star_Nova_UIComponentPropertyMap;
+typedef struct nova_star_Nova_UIParent nova_star_Nova_UIParent;
+typedef struct nova_star_Nova_UIParentFunctionMap nova_star_Nova_UIParentFunctionMap;
+typedef struct nova_star_Nova_UIParentPropertyMap nova_star_Nova_UIParentPropertyMap;
 typedef struct nova_star_Nova_Window nova_star_Nova_Window;
 typedef struct nova_star_Nova_WindowFunctionMap nova_star_Nova_WindowFunctionMap;
 typedef struct nova_star_Nova_WindowPropertyMap nova_star_Nova_WindowPropertyMap;
@@ -556,6 +571,9 @@ typedef struct novex_nest_Int_Nova_Nest1Int novex_nest_Int_Nova_Nest1Int;
 typedef struct novex_nest_Nova_TestSuite novex_nest_Nova_TestSuite;
 typedef struct novex_nest_Nova_TestSuiteFunctionMap novex_nest_Nova_TestSuiteFunctionMap;
 typedef struct novex_nest_Nova_TestSuitePropertyMap novex_nest_Nova_TestSuitePropertyMap;
+typedef struct novex_nest_ui_Nova_ResultWindow novex_nest_ui_Nova_ResultWindow;
+typedef struct novex_nest_ui_Nova_ResultWindowFunctionMap novex_nest_ui_Nova_ResultWindowFunctionMap;
+typedef struct novex_nest_ui_Nova_ResultWindowPropertyMap novex_nest_ui_Nova_ResultWindowPropertyMap;
 typedef struct example_Nova_Animal example_Nova_Animal;
 typedef struct example_Nova_AnimalFunctionMap example_Nova_AnimalFunctionMap;
 typedef struct example_Nova_AnimalPropertyMap example_Nova_AnimalPropertyMap;
@@ -3199,6 +3217,24 @@ void nova_datastruct_Nova_PairPropertyMap_Nova_super(nova_datastruct_Nova_PairPr
 
 CCLASS_CLASS
 (
+	nova_datastruct_Int_Int_Nova_Pair1Int2Int, 
+	
+	nova_datastruct_Int_Int_Nova_Pair1Int2Int_VTable* vtable;
+	void* prv;
+	nova_Nova_String* nova_Nova_Object_Nova_hashCode;
+	int nova_datastruct_Int_Int_Nova_Pair1Int2Int_Nova_key;
+	int nova_datastruct_Int_Int_Nova_Pair1Int2Int_Nova_value;
+)
+
+void nova_datastruct_Int_Int_Nova_Pair1Int2Int_Nova_init_static();
+nova_datastruct_Int_Int_Nova_Pair1Int2Int* nova_datastruct_Int_Int_Nova_Pair1Int2Int_int_int_Pair1Int2Int_Nova_construct(nova_datastruct_Int_Int_Nova_Pair1Int2Int* this, int key, int value);
+void nova_datastruct_Int_Int_Nova_Pair1Int2Int_void_Nova_destroy(nova_datastruct_Int_Int_Nova_Pair1Int2Int** this);
+void nova_datastruct_Int_Int_Nova_Pair1Int2Int_int_int_void_Nova_this(nova_datastruct_Int_Int_Nova_Pair1Int2Int* this, int key, int value);
+nova_Nova_String* nova_datastruct_Int_Int_Nova_Pair1Int2Int_String_Nova_toString(nova_datastruct_Int_Int_Nova_Pair1Int2Int* this);
+void nova_datastruct_Int_Int_Nova_Pair1Int2Int_void_Nova_super(nova_datastruct_Int_Int_Nova_Pair1Int2Int* this);
+
+CCLASS_CLASS
+(
 	nova_datastruct_Long_Value_Nova_Pair1Long, 
 	
 	nova_datastruct_Long_Value_Nova_Pair1Long_VTable* vtable;
@@ -3232,24 +3268,6 @@ void nova_datastruct_Int_Value_Nova_Pair1Int_void_Nova_destroy(nova_datastruct_I
 void nova_datastruct_Int_Value_Nova_Pair1Int_int_Value_void_Nova_this(nova_datastruct_Int_Value_Nova_Pair1Int* this, int key, nova_Nova_Object* value);
 nova_Nova_String* nova_datastruct_Int_Value_Nova_Pair1Int_String_Nova_toString(nova_datastruct_Int_Value_Nova_Pair1Int* this);
 void nova_datastruct_Int_Value_Nova_Pair1Int_void_Nova_super(nova_datastruct_Int_Value_Nova_Pair1Int* this);
-
-CCLASS_CLASS
-(
-	nova_datastruct_Int_Int_Nova_Pair1Int2Int, 
-	
-	nova_datastruct_Int_Int_Nova_Pair1Int2Int_VTable* vtable;
-	void* prv;
-	nova_Nova_String* nova_Nova_Object_Nova_hashCode;
-	int nova_datastruct_Int_Int_Nova_Pair1Int2Int_Nova_key;
-	int nova_datastruct_Int_Int_Nova_Pair1Int2Int_Nova_value;
-)
-
-void nova_datastruct_Int_Int_Nova_Pair1Int2Int_Nova_init_static();
-nova_datastruct_Int_Int_Nova_Pair1Int2Int* nova_datastruct_Int_Int_Nova_Pair1Int2Int_int_int_Pair1Int2Int_Nova_construct(nova_datastruct_Int_Int_Nova_Pair1Int2Int* this, int key, int value);
-void nova_datastruct_Int_Int_Nova_Pair1Int2Int_void_Nova_destroy(nova_datastruct_Int_Int_Nova_Pair1Int2Int** this);
-void nova_datastruct_Int_Int_Nova_Pair1Int2Int_int_int_void_Nova_this(nova_datastruct_Int_Int_Nova_Pair1Int2Int* this, int key, int value);
-nova_Nova_String* nova_datastruct_Int_Int_Nova_Pair1Int2Int_String_Nova_toString(nova_datastruct_Int_Int_Nova_Pair1Int2Int* this);
-void nova_datastruct_Int_Int_Nova_Pair1Int2Int_void_Nova_super(nova_datastruct_Int_Int_Nova_Pair1Int2Int* this);
 CCLASS_CLASS
 (
 	nova_datastruct_Nova_ReversibleHashMap, 
@@ -6370,7 +6388,6 @@ void nova_exception_Nova_ExceptionDataPropertyMap_Nova_this(nova_exception_Nova_
 nova_exception_Nova_ExceptionData* nova_exception_Nova_ExceptionDataPropertyMap_functionMap_Nova_parent(nova_exception_Nova_ExceptionDataPropertyMap* this, nova_exception_Nova_ExceptionData* reference);
 nova_datastruct_list_Nova_Array* nova_exception_Nova_ExceptionDataPropertyMap_functionMap_Nova_caught(nova_exception_Nova_ExceptionDataPropertyMap* this, nova_exception_Nova_ExceptionData* reference);
 nova_exception_Nova_Exception* nova_exception_Nova_ExceptionDataPropertyMap_functionMap_Nova_thrownException(nova_exception_Nova_ExceptionDataPropertyMap* this, nova_exception_Nova_ExceptionData* reference);
-buffer* nova_exception_Nova_ExceptionDataPropertyMap_functionMap_Nova_buf(nova_exception_Nova_ExceptionDataPropertyMap* this, nova_exception_Nova_ExceptionData* reference);
 void nova_exception_Nova_ExceptionDataPropertyMap_Nova_super(nova_exception_Nova_ExceptionDataPropertyMap* this);
 CCLASS_CLASS
 (
@@ -11530,25 +11547,79 @@ int nova_serialization_Nova_JsonSerializerPropertyMap_functionMap_Nova_TOKEN_NUL
 void nova_serialization_Nova_JsonSerializerPropertyMap_Nova_super(nova_serialization_Nova_JsonSerializerPropertyMap* this);
 CCLASS_CLASS
 (
+	nova_star_Nova_Button, 
+	
+	nova_star_Nova_Button_VTable* vtable;
+	void* prv;
+	nova_Nova_String* nova_Nova_Object_Nova_hashCode;
+	nova_star_Nova_UIComponent* nova_star_Nova_UIComponent_Nova_parent;
+	int nova_star_Nova_Panel_Nova_x;
+	int nova_star_Nova_Panel_Nova_y;
+	int nova_star_Nova_Panel_Nova_width;
+	int nova_star_Nova_Panel_Nova_height;
+	nova_datastruct_list_Nova_Array* nova_star_Nova_Panel_Nova_children;
+)
+
+void nova_star_Nova_Button_Nova_init_static();
+nova_star_Nova_Button* nova_star_Nova_Button_Nova_construct(nova_star_Nova_Button* this);
+void nova_star_Nova_Button_Nova_destroy(nova_star_Nova_Button** this);
+void nova_star_Nova_Button_Nova_draw(nova_star_Nova_Button* this);
+void nova_star_Nova_Button_Nova_this(nova_star_Nova_Button* this);
+void nova_star_Nova_Button_Nova_super(nova_star_Nova_Button* this);
+
+CCLASS_CLASS
+(
+	nova_star_Nova_ButtonFunctionMap, 
+	
+	nova_star_Nova_ButtonFunctionMap_VTable* vtable;
+	void* prv;
+	nova_Nova_String* nova_Nova_Object_Nova_hashCode;
+)
+
+void nova_star_Nova_ButtonFunctionMap_Nova_init_static();
+nova_star_Nova_ButtonFunctionMap* nova_star_Nova_ButtonFunctionMap_Nova_construct(nova_star_Nova_ButtonFunctionMap* this);
+void nova_star_Nova_ButtonFunctionMap_Nova_destroy(nova_star_Nova_ButtonFunctionMap** this);
+void nova_star_Nova_ButtonFunctionMap_Nova_this(nova_star_Nova_ButtonFunctionMap* this);
+nova_star_Nova_Button* nova_star_Nova_ButtonFunctionMap_functionMapButtonFunctionMap_Nova_construct(nova_star_Nova_ButtonFunctionMap* this);
+void nova_star_Nova_ButtonFunctionMap_functionMap_Nova_draw(nova_star_Nova_ButtonFunctionMap* this, nova_star_Nova_Button* reference);
+void nova_star_Nova_ButtonFunctionMap_Nova_super(nova_star_Nova_ButtonFunctionMap* this);
+
+CCLASS_CLASS
+(
+	nova_star_Nova_ButtonPropertyMap, 
+	
+	nova_star_Nova_ButtonPropertyMap_VTable* vtable;
+	void* prv;
+	nova_Nova_String* nova_Nova_Object_Nova_hashCode;
+)
+
+void nova_star_Nova_ButtonPropertyMap_Nova_init_static();
+nova_star_Nova_ButtonPropertyMap* nova_star_Nova_ButtonPropertyMap_Nova_construct(nova_star_Nova_ButtonPropertyMap* this);
+void nova_star_Nova_ButtonPropertyMap_Nova_destroy(nova_star_Nova_ButtonPropertyMap** this);
+void nova_star_Nova_ButtonPropertyMap_Nova_this(nova_star_Nova_ButtonPropertyMap* this);
+void nova_star_Nova_ButtonPropertyMap_Nova_super(nova_star_Nova_ButtonPropertyMap* this);
+CCLASS_CLASS
+(
 	nova_star_Nova_Frame, 
 	
 	nova_star_Nova_Frame_VTable* vtable;
 	void* prv;
 	nova_Nova_String* nova_Nova_Object_Nova_hashCode;
-	int nova_star_Nova_Frame_Nova_x;
-	int nova_star_Nova_Frame_Nova_y;
-	int nova_star_Nova_Frame_Nova_width;
-	int nova_star_Nova_Frame_Nova_height;
+	nova_star_Nova_UIComponent* nova_star_Nova_UIComponent_Nova_parent;
+	int nova_star_Nova_Panel_Nova_x;
+	int nova_star_Nova_Panel_Nova_y;
+	int nova_star_Nova_Panel_Nova_width;
+	int nova_star_Nova_Panel_Nova_height;
+	nova_datastruct_list_Nova_Array* nova_star_Nova_Panel_Nova_children;
+	nova_star_Nova_Window* nova_star_Nova_Frame_Nova_windowInstance;
 )
 
 void nova_star_Nova_Frame_Nova_init_static();
-nova_star_Nova_Frame* nova_star_Nova_Frame_Nova_construct(nova_star_Nova_Frame* this, int x, int y, int width, int height);
+nova_star_Nova_Frame* nova_star_Nova_Frame_Nova_construct(nova_star_Nova_Frame* this, nova_star_Nova_Window* windowInstance);
 void nova_star_Nova_Frame_Nova_destroy(nova_star_Nova_Frame** this);
-void nova_star_Nova_Frame_Nova_this(nova_star_Nova_Frame* this, int x, int y, int width, int height);
-int nova_star_Nova_Frame_Mutatorfunc_Nova_x(nova_star_Nova_Frame* this, int value);
-int nova_star_Nova_Frame_Mutatorfunc_Nova_y(nova_star_Nova_Frame* this, int value);
-int nova_star_Nova_Frame_Mutatorfunc_Nova_width(nova_star_Nova_Frame* this, int value);
-int nova_star_Nova_Frame_Mutatorfunc_Nova_height(nova_star_Nova_Frame* this, int value);
+void nova_star_Nova_Frame_Nova_this(nova_star_Nova_Frame* this, nova_star_Nova_Window* windowInstance);
+void nova_star_Nova_Frame_Nova_draw(nova_star_Nova_Frame* this);
+nova_star_Nova_Window* nova_star_Nova_Frame_Accessor_Nova_window(nova_star_Nova_Frame* this);
 void nova_star_Nova_Frame_Nova_super(nova_star_Nova_Frame* this);
 
 CCLASS_CLASS
@@ -11564,7 +11635,8 @@ void nova_star_Nova_FrameFunctionMap_Nova_init_static();
 nova_star_Nova_FrameFunctionMap* nova_star_Nova_FrameFunctionMap_Nova_construct(nova_star_Nova_FrameFunctionMap* this);
 void nova_star_Nova_FrameFunctionMap_Nova_destroy(nova_star_Nova_FrameFunctionMap** this);
 void nova_star_Nova_FrameFunctionMap_Nova_this(nova_star_Nova_FrameFunctionMap* this);
-nova_star_Nova_Frame* nova_star_Nova_FrameFunctionMap_functionMapFrameFunctionMap_Nova_construct(nova_star_Nova_FrameFunctionMap* this, int x, int y, int width, int height);
+nova_star_Nova_Frame* nova_star_Nova_FrameFunctionMap_functionMapFrameFunctionMap_Nova_construct(nova_star_Nova_FrameFunctionMap* this, nova_star_Nova_Window* windowInstance);
+void nova_star_Nova_FrameFunctionMap_functionMap_Nova_draw(nova_star_Nova_FrameFunctionMap* this, nova_star_Nova_Frame* reference);
 void nova_star_Nova_FrameFunctionMap_Nova_super(nova_star_Nova_FrameFunctionMap* this);
 
 CCLASS_CLASS
@@ -11580,11 +11652,222 @@ void nova_star_Nova_FramePropertyMap_Nova_init_static();
 nova_star_Nova_FramePropertyMap* nova_star_Nova_FramePropertyMap_Nova_construct(nova_star_Nova_FramePropertyMap* this);
 void nova_star_Nova_FramePropertyMap_Nova_destroy(nova_star_Nova_FramePropertyMap** this);
 void nova_star_Nova_FramePropertyMap_Nova_this(nova_star_Nova_FramePropertyMap* this);
-int nova_star_Nova_FramePropertyMap_functionMap_Nova_x(nova_star_Nova_FramePropertyMap* this, nova_star_Nova_Frame* reference);
-int nova_star_Nova_FramePropertyMap_functionMap_Nova_y(nova_star_Nova_FramePropertyMap* this, nova_star_Nova_Frame* reference);
-int nova_star_Nova_FramePropertyMap_functionMap_Nova_width(nova_star_Nova_FramePropertyMap* this, nova_star_Nova_Frame* reference);
-int nova_star_Nova_FramePropertyMap_functionMap_Nova_height(nova_star_Nova_FramePropertyMap* this, nova_star_Nova_Frame* reference);
+nova_star_Nova_Window* nova_star_Nova_FramePropertyMap_functionMap_Nova_windowInstance(nova_star_Nova_FramePropertyMap* this, nova_star_Nova_Frame* reference);
+nova_star_Nova_Window* nova_star_Nova_FramePropertyMap_functionMap_Nova_window(nova_star_Nova_FramePropertyMap* this, nova_star_Nova_Frame* reference);
 void nova_star_Nova_FramePropertyMap_Nova_super(nova_star_Nova_FramePropertyMap* this);
+CCLASS_CLASS
+(
+	nova_star_Nova_Panel, 
+	
+	nova_star_Nova_Panel_VTable* vtable;
+	void* prv;
+	nova_Nova_String* nova_Nova_Object_Nova_hashCode;
+	nova_star_Nova_UIComponent* nova_star_Nova_UIComponent_Nova_parent;
+	int nova_star_Nova_Panel_Nova_x;
+	int nova_star_Nova_Panel_Nova_y;
+	int nova_star_Nova_Panel_Nova_width;
+	int nova_star_Nova_Panel_Nova_height;
+	nova_datastruct_list_Nova_Array* nova_star_Nova_Panel_Nova_children;
+)
+
+void nova_star_Nova_Panel_Nova_init_static();
+nova_star_Nova_Panel* nova_star_Nova_Panel_Nova_construct(nova_star_Nova_Panel* this, int x, int y, int width, int height);
+void nova_star_Nova_Panel_Nova_destroy(nova_star_Nova_Panel** this);
+void nova_star_Nova_Panel_Nova_this(nova_star_Nova_Panel* this, int x, int y, int width, int height);
+void nova_star_Nova_Panel_Nova_draw(nova_star_Nova_Panel* this);
+nova_datastruct_list_Nova_Array* nova_star_Nova_Panel_Accessorfunc_Nova_children(nova_star_Nova_Panel* this);
+nova_datastruct_list_Nova_Array* nova_star_Nova_Panel_Mutatorfunc_Nova_children(nova_star_Nova_Panel* this, nova_datastruct_list_Nova_Array* value);
+void nova_star_Nova_Panel_Nova_super(nova_star_Nova_Panel* this);
+
+CCLASS_CLASS
+(
+	nova_star_Nova_PanelFunctionMap, 
+	
+	nova_star_Nova_PanelFunctionMap_VTable* vtable;
+	void* prv;
+	nova_Nova_String* nova_Nova_Object_Nova_hashCode;
+)
+
+void nova_star_Nova_PanelFunctionMap_Nova_init_static();
+nova_star_Nova_PanelFunctionMap* nova_star_Nova_PanelFunctionMap_Nova_construct(nova_star_Nova_PanelFunctionMap* this);
+void nova_star_Nova_PanelFunctionMap_Nova_destroy(nova_star_Nova_PanelFunctionMap** this);
+void nova_star_Nova_PanelFunctionMap_Nova_this(nova_star_Nova_PanelFunctionMap* this);
+nova_star_Nova_Panel* nova_star_Nova_PanelFunctionMap_functionMapPanelFunctionMap_Nova_construct(nova_star_Nova_PanelFunctionMap* this, int x, int y, int width, int height);
+void nova_star_Nova_PanelFunctionMap_functionMap_Nova_draw(nova_star_Nova_PanelFunctionMap* this, nova_star_Nova_Panel* reference);
+void nova_star_Nova_PanelFunctionMap_Nova_super(nova_star_Nova_PanelFunctionMap* this);
+
+CCLASS_CLASS
+(
+	nova_star_Nova_PanelPropertyMap, 
+	
+	nova_star_Nova_PanelPropertyMap_VTable* vtable;
+	void* prv;
+	nova_Nova_String* nova_Nova_Object_Nova_hashCode;
+)
+
+void nova_star_Nova_PanelPropertyMap_Nova_init_static();
+nova_star_Nova_PanelPropertyMap* nova_star_Nova_PanelPropertyMap_Nova_construct(nova_star_Nova_PanelPropertyMap* this);
+void nova_star_Nova_PanelPropertyMap_Nova_destroy(nova_star_Nova_PanelPropertyMap** this);
+void nova_star_Nova_PanelPropertyMap_Nova_this(nova_star_Nova_PanelPropertyMap* this);
+int nova_star_Nova_PanelPropertyMap_functionMap_Nova_x(nova_star_Nova_PanelPropertyMap* this, nova_star_Nova_Panel* reference);
+int nova_star_Nova_PanelPropertyMap_functionMap_Nova_y(nova_star_Nova_PanelPropertyMap* this, nova_star_Nova_Panel* reference);
+int nova_star_Nova_PanelPropertyMap_functionMap_Nova_width(nova_star_Nova_PanelPropertyMap* this, nova_star_Nova_Panel* reference);
+int nova_star_Nova_PanelPropertyMap_functionMap_Nova_height(nova_star_Nova_PanelPropertyMap* this, nova_star_Nova_Panel* reference);
+void nova_star_Nova_PanelPropertyMap_Nova_super(nova_star_Nova_PanelPropertyMap* this);
+CCLASS_CLASS
+(
+	nova_star_Nova_Screen, 
+	
+	nova_star_Nova_Screen_VTable* vtable;
+	void* prv;
+	nova_Nova_String* nova_Nova_Object_Nova_hashCode;
+)
+extern int nova_star_Nova_Screen_Nova_height;
+
+void nova_star_Nova_Screen_Nova_init_static();
+nova_star_Nova_Screen* nova_star_Nova_Screen_Nova_construct(nova_star_Nova_Screen* this);
+void nova_star_Nova_Screen_Nova_destroy(nova_star_Nova_Screen** this);
+void nova_star_Nova_Screen_Nova_this(nova_star_Nova_Screen* this);
+nova_datastruct_Int_Int_Nova_Pair1Int2Int* nova_star_Nova_Screen_Accessor_static_Nova_dimensions(nova_star_Nova_Screen* this);
+int nova_star_Nova_Screen_Accessor_static_Nova_width(nova_star_Nova_Screen* this);
+int nova_star_Nova_Screen_Accessorfunc_static_Nova_height(nova_star_Nova_Screen* this);
+void nova_star_Nova_Screen_Nova_super(nova_star_Nova_Screen* this);
+
+CCLASS_CLASS
+(
+	nova_star_Nova_ScreenFunctionMap, 
+	
+	nova_star_Nova_ScreenFunctionMap_VTable* vtable;
+	void* prv;
+	nova_Nova_String* nova_Nova_Object_Nova_hashCode;
+)
+
+void nova_star_Nova_ScreenFunctionMap_Nova_init_static();
+nova_star_Nova_ScreenFunctionMap* nova_star_Nova_ScreenFunctionMap_Nova_construct(nova_star_Nova_ScreenFunctionMap* this);
+void nova_star_Nova_ScreenFunctionMap_Nova_destroy(nova_star_Nova_ScreenFunctionMap** this);
+void nova_star_Nova_ScreenFunctionMap_Nova_this(nova_star_Nova_ScreenFunctionMap* this);
+nova_star_Nova_Screen* nova_star_Nova_ScreenFunctionMap_functionMapScreenFunctionMap_Nova_construct(nova_star_Nova_ScreenFunctionMap* this);
+void nova_star_Nova_ScreenFunctionMap_Nova_super(nova_star_Nova_ScreenFunctionMap* this);
+
+CCLASS_CLASS
+(
+	nova_star_Nova_ScreenPropertyMap, 
+	
+	nova_star_Nova_ScreenPropertyMap_VTable* vtable;
+	void* prv;
+	nova_Nova_String* nova_Nova_Object_Nova_hashCode;
+)
+
+void nova_star_Nova_ScreenPropertyMap_Nova_init_static();
+nova_star_Nova_ScreenPropertyMap* nova_star_Nova_ScreenPropertyMap_Nova_construct(nova_star_Nova_ScreenPropertyMap* this);
+void nova_star_Nova_ScreenPropertyMap_Nova_destroy(nova_star_Nova_ScreenPropertyMap** this);
+void nova_star_Nova_ScreenPropertyMap_Nova_this(nova_star_Nova_ScreenPropertyMap* this);
+int nova_star_Nova_ScreenPropertyMap_functionMap_static_Nova_width(nova_star_Nova_ScreenPropertyMap* this);
+int nova_star_Nova_ScreenPropertyMap_functionMap_static_Nova_height(nova_star_Nova_ScreenPropertyMap* this);
+nova_datastruct_Int_Int_Nova_Pair1Int2Int* nova_star_Nova_ScreenPropertyMap_functionMap_static_Nova_dimensions(nova_star_Nova_ScreenPropertyMap* this);
+void nova_star_Nova_ScreenPropertyMap_Nova_super(nova_star_Nova_ScreenPropertyMap* this);
+CCLASS_CLASS
+(
+	nova_star_Nova_UIComponent, 
+	
+	nova_star_Nova_UIComponent_VTable* vtable;
+	void* prv;
+	nova_Nova_String* nova_Nova_Object_Nova_hashCode;
+	nova_star_Nova_UIComponent* nova_star_Nova_UIComponent_Nova_parent;
+)
+
+void nova_star_Nova_UIComponent_Nova_init_static();
+nova_star_Nova_UIComponent* nova_star_Nova_UIComponent_Nova_construct(nova_star_Nova_UIComponent* this);
+void nova_star_Nova_UIComponent_Nova_destroy(nova_star_Nova_UIComponent** this);
+void nova_star_Nova_UIComponent_Nova_draw(nova_star_Nova_UIComponent* this);
+void nova_star_Nova_UIComponent_Nova_paint(nova_star_Nova_UIComponent* this);
+void nova_star_Nova_UIComponent_Nova_this(nova_star_Nova_UIComponent* this);
+nova_star_Nova_Window* nova_star_Nova_UIComponent_Accessor_Nova_window(nova_star_Nova_UIComponent* this);
+void nova_star_Nova_UIComponent_Nova_super(nova_star_Nova_UIComponent* this);
+void nova_star_Nova_UIComponent_virtual_Nova_draw(nova_star_Nova_UIComponent* this);
+void nova_star_Nova_UIComponent_virtual_Nova_paint(nova_star_Nova_UIComponent* this);
+nova_star_Nova_Window* nova_star_Nova_UIComponent_virtual_Accessor_Nova_window(nova_star_Nova_UIComponent* this);
+
+CCLASS_CLASS
+(
+	nova_star_Nova_UIComponentFunctionMap, 
+	
+	nova_star_Nova_UIComponentFunctionMap_VTable* vtable;
+	void* prv;
+	nova_Nova_String* nova_Nova_Object_Nova_hashCode;
+)
+
+void nova_star_Nova_UIComponentFunctionMap_Nova_init_static();
+nova_star_Nova_UIComponentFunctionMap* nova_star_Nova_UIComponentFunctionMap_Nova_construct(nova_star_Nova_UIComponentFunctionMap* this);
+void nova_star_Nova_UIComponentFunctionMap_Nova_destroy(nova_star_Nova_UIComponentFunctionMap** this);
+void nova_star_Nova_UIComponentFunctionMap_Nova_this(nova_star_Nova_UIComponentFunctionMap* this);
+nova_star_Nova_UIComponent* nova_star_Nova_UIComponentFunctionMap_functionMapUIComponentFunctionMap_Nova_construct(nova_star_Nova_UIComponentFunctionMap* this);
+void nova_star_Nova_UIComponentFunctionMap_functionMap_Nova_paint(nova_star_Nova_UIComponentFunctionMap* this, nova_star_Nova_UIComponent* reference);
+void nova_star_Nova_UIComponentFunctionMap_Nova_super(nova_star_Nova_UIComponentFunctionMap* this);
+nova_star_Nova_UIComponent* nova_star_Nova_UIComponentFunctionMap_virtualfunctionMapUIComponent_Nova_construct(nova_star_Nova_UIComponentFunctionMap* this);
+
+CCLASS_CLASS
+(
+	nova_star_Nova_UIComponentPropertyMap, 
+	
+	nova_star_Nova_UIComponentPropertyMap_VTable* vtable;
+	void* prv;
+	nova_Nova_String* nova_Nova_Object_Nova_hashCode;
+)
+
+void nova_star_Nova_UIComponentPropertyMap_Nova_init_static();
+nova_star_Nova_UIComponentPropertyMap* nova_star_Nova_UIComponentPropertyMap_Nova_construct(nova_star_Nova_UIComponentPropertyMap* this);
+void nova_star_Nova_UIComponentPropertyMap_Nova_destroy(nova_star_Nova_UIComponentPropertyMap** this);
+void nova_star_Nova_UIComponentPropertyMap_Nova_this(nova_star_Nova_UIComponentPropertyMap* this);
+nova_star_Nova_UIComponent* nova_star_Nova_UIComponentPropertyMap_functionMap_Nova_parent(nova_star_Nova_UIComponentPropertyMap* this, nova_star_Nova_UIComponent* reference);
+nova_star_Nova_Window* nova_star_Nova_UIComponentPropertyMap_functionMap_Nova_window(nova_star_Nova_UIComponentPropertyMap* this, nova_star_Nova_UIComponent* reference);
+void nova_star_Nova_UIComponentPropertyMap_Nova_super(nova_star_Nova_UIComponentPropertyMap* this);
+CCLASS_CLASS
+(
+	nova_star_Nova_UIParent, 
+	
+	nova_star_Nova_UIParent_VTable* vtable;
+	void* prv;
+)
+
+void nova_star_Nova_UIParent_Nova_init_static();
+void nova_star_Nova_UIParent_Nova_paint(nova_star_Nova_UIParent* this);
+void nova_star_Nova_UIParent_Nova_addChild(nova_star_Nova_UIParent* this, nova_star_Nova_UIComponent* component);
+nova_datastruct_list_Nova_Array* nova_star_Nova_UIParent_Accessorfunc_Nova_children(nova_star_Nova_UIParent* this);
+nova_datastruct_list_Nova_Array* nova_star_Nova_UIParent_Mutatorfunc_Nova_children(nova_star_Nova_UIParent* this, nova_datastruct_list_Nova_Array* value);
+nova_datastruct_list_Nova_Array* nova_star_Nova_UIParent_virtual_Accessorfunc_Nova_children(nova_star_Nova_UIParent* this);
+nova_datastruct_list_Nova_Array* nova_star_Nova_UIParent_virtual_Mutatorfunc_Nova_children(nova_star_Nova_UIParent* this, nova_datastruct_list_Nova_Array* value);
+
+CCLASS_CLASS
+(
+	nova_star_Nova_UIParentFunctionMap, 
+	
+	nova_star_Nova_UIParentFunctionMap_VTable* vtable;
+	void* prv;
+)
+
+void nova_star_Nova_UIParentFunctionMap_Nova_init_static();
+nova_star_Nova_UIParentFunctionMap* nova_star_Nova_UIParentFunctionMap_Nova_construct(nova_star_Nova_UIParentFunctionMap* this);
+void nova_star_Nova_UIParentFunctionMap_Nova_destroy(nova_star_Nova_UIParentFunctionMap** this);
+void nova_star_Nova_UIParentFunctionMap_Nova_this(nova_star_Nova_UIParentFunctionMap* this);
+void nova_star_Nova_UIParentFunctionMap_functionMap_Nova_paint(nova_star_Nova_UIParentFunctionMap* this, nova_star_Nova_UIParent* reference);
+void nova_star_Nova_UIParentFunctionMap_functionMap_Nova_addChild(nova_star_Nova_UIParentFunctionMap* this, nova_star_Nova_UIParent* reference, nova_star_Nova_UIComponent* component);
+void nova_star_Nova_UIParentFunctionMap_Nova_super(nova_star_Nova_UIParentFunctionMap* this);
+
+CCLASS_CLASS
+(
+	nova_star_Nova_UIParentPropertyMap, 
+	
+	nova_star_Nova_UIParentPropertyMap_VTable* vtable;
+	void* prv;
+)
+
+void nova_star_Nova_UIParentPropertyMap_Nova_init_static();
+nova_star_Nova_UIParentPropertyMap* nova_star_Nova_UIParentPropertyMap_Nova_construct(nova_star_Nova_UIParentPropertyMap* this);
+void nova_star_Nova_UIParentPropertyMap_Nova_destroy(nova_star_Nova_UIParentPropertyMap** this);
+void nova_star_Nova_UIParentPropertyMap_Nova_this(nova_star_Nova_UIParentPropertyMap* this);
+nova_datastruct_list_Nova_Array* nova_star_Nova_UIParentPropertyMap_functionMap_Nova_children(nova_star_Nova_UIParentPropertyMap* this, nova_star_Nova_UIParent* reference);
+void nova_star_Nova_UIParentPropertyMap_Nova_super(nova_star_Nova_UIParentPropertyMap* this);
 CCLASS_CLASS
 (
 	nova_star_Nova_Window, 
@@ -11592,18 +11875,23 @@ CCLASS_CLASS
 	nova_star_Nova_Window_VTable* vtable;
 	void* prv;
 	nova_Nova_String* nova_Nova_Object_Nova_hashCode;
-	int nova_star_Nova_Window_Nova_x;
-	int nova_star_Nova_Window_Nova_y;
-	int nova_star_Nova_Window_Nova_width;
-	int nova_star_Nova_Window_Nova_height;
-	nova_Nova_String* nova_star_Nova_Window_Nova_title;
+	int x;
+	int y;
+	int width;
+	int height;
+	nova_star_Nova_Frame* frame;
+	nova_Nova_String* title;
+	HWND* hwnd;
+	HDC* hdc;
+	PAINTSTRUCT* ps;
 )
 
 void nova_star_Nova_Window_Nova_init_static();
 nova_star_Nova_Window* nova_star_Nova_Window_Nova_construct(nova_star_Nova_Window* this, nova_Nova_String* title, int x, int y, int width, int height);
 void nova_star_Nova_Window_Nova_destroy(nova_star_Nova_Window** this);
 void nova_star_Nova_Window_Nova_this(nova_star_Nova_Window* this, nova_Nova_String* title, int x, int y, int width, int height);
-void nova_star_Nova_Window_Nova_create(nova_star_Nova_Window* this);
+nova_star_Nova_Window* nova_star_Nova_Window_Nova_create(nova_star_Nova_Window* this);
+nova_star_Nova_Window* nova_star_Nova_Window_Nova_center(nova_star_Nova_Window* this);
 void nova_star_Nova_Window_Nova_super(nova_star_Nova_Window* this);
 
 CCLASS_CLASS
@@ -11620,7 +11908,8 @@ nova_star_Nova_WindowFunctionMap* nova_star_Nova_WindowFunctionMap_Nova_construc
 void nova_star_Nova_WindowFunctionMap_Nova_destroy(nova_star_Nova_WindowFunctionMap** this);
 void nova_star_Nova_WindowFunctionMap_Nova_this(nova_star_Nova_WindowFunctionMap* this);
 nova_star_Nova_Window* nova_star_Nova_WindowFunctionMap_functionMapWindowFunctionMap_Nova_construct(nova_star_Nova_WindowFunctionMap* this, nova_Nova_String* title, int x, int y, int width, int height);
-void nova_star_Nova_WindowFunctionMap_functionMap_Nova_create(nova_star_Nova_WindowFunctionMap* this, nova_star_Nova_Window* reference);
+nova_star_Nova_Window* nova_star_Nova_WindowFunctionMap_functionMap_Nova_create(nova_star_Nova_WindowFunctionMap* this, nova_star_Nova_Window* reference);
+nova_star_Nova_Window* nova_star_Nova_WindowFunctionMap_functionMap_Nova_center(nova_star_Nova_WindowFunctionMap* this, nova_star_Nova_Window* reference);
 void nova_star_Nova_WindowFunctionMap_Nova_super(nova_star_Nova_WindowFunctionMap* this);
 
 CCLASS_CLASS
@@ -11640,6 +11929,7 @@ int nova_star_Nova_WindowPropertyMap_functionMap_Nova_x(nova_star_Nova_WindowPro
 int nova_star_Nova_WindowPropertyMap_functionMap_Nova_y(nova_star_Nova_WindowPropertyMap* this, nova_star_Nova_Window* reference);
 int nova_star_Nova_WindowPropertyMap_functionMap_Nova_width(nova_star_Nova_WindowPropertyMap* this, nova_star_Nova_Window* reference);
 int nova_star_Nova_WindowPropertyMap_functionMap_Nova_height(nova_star_Nova_WindowPropertyMap* this, nova_star_Nova_Window* reference);
+nova_star_Nova_Frame* nova_star_Nova_WindowPropertyMap_functionMap_Nova_frame(nova_star_Nova_WindowPropertyMap* this, nova_star_Nova_Window* reference);
 nova_Nova_String* nova_star_Nova_WindowPropertyMap_functionMap_Nova_title(nova_star_Nova_WindowPropertyMap* this, nova_star_Nova_Window* reference);
 void nova_star_Nova_WindowPropertyMap_Nova_super(nova_star_Nova_WindowPropertyMap* this);
 CCLASS_CLASS
@@ -12910,6 +13200,51 @@ novex_nest_Nova_TestSuitePropertyMap* novex_nest_Nova_TestSuitePropertyMap_Nova_
 void novex_nest_Nova_TestSuitePropertyMap_Nova_destroy(novex_nest_Nova_TestSuitePropertyMap** this);
 void novex_nest_Nova_TestSuitePropertyMap_Nova_this(novex_nest_Nova_TestSuitePropertyMap* this);
 void novex_nest_Nova_TestSuitePropertyMap_Nova_super(novex_nest_Nova_TestSuitePropertyMap* this);
+CCLASS_CLASS
+(
+	novex_nest_ui_Nova_ResultWindow, 
+	
+	novex_nest_ui_Nova_ResultWindow_VTable* vtable;
+	struct Private_novex_nest_ui_Nova_ResultWindow* prv;
+	nova_Nova_String* nova_Nova_Object_Nova_hashCode;
+)
+
+void novex_nest_ui_Nova_ResultWindow_Nova_init_static();
+novex_nest_ui_Nova_ResultWindow* novex_nest_ui_Nova_ResultWindow_Nova_construct(novex_nest_ui_Nova_ResultWindow* this);
+void novex_nest_ui_Nova_ResultWindow_Nova_destroy(novex_nest_ui_Nova_ResultWindow** this);
+void novex_nest_ui_Nova_ResultWindow_Nova_this(novex_nest_ui_Nova_ResultWindow* this);
+void novex_nest_ui_Nova_ResultWindow_Nova_super(novex_nest_ui_Nova_ResultWindow* this);
+
+CCLASS_CLASS
+(
+	novex_nest_ui_Nova_ResultWindowFunctionMap, 
+	
+	novex_nest_ui_Nova_ResultWindowFunctionMap_VTable* vtable;
+	void* prv;
+	nova_Nova_String* nova_Nova_Object_Nova_hashCode;
+)
+
+void novex_nest_ui_Nova_ResultWindowFunctionMap_Nova_init_static();
+novex_nest_ui_Nova_ResultWindowFunctionMap* novex_nest_ui_Nova_ResultWindowFunctionMap_Nova_construct(novex_nest_ui_Nova_ResultWindowFunctionMap* this);
+void novex_nest_ui_Nova_ResultWindowFunctionMap_Nova_destroy(novex_nest_ui_Nova_ResultWindowFunctionMap** this);
+void novex_nest_ui_Nova_ResultWindowFunctionMap_Nova_this(novex_nest_ui_Nova_ResultWindowFunctionMap* this);
+novex_nest_ui_Nova_ResultWindow* novex_nest_ui_Nova_ResultWindowFunctionMap_functionMapResultWindowFunctionMap_Nova_construct(novex_nest_ui_Nova_ResultWindowFunctionMap* this);
+void novex_nest_ui_Nova_ResultWindowFunctionMap_Nova_super(novex_nest_ui_Nova_ResultWindowFunctionMap* this);
+
+CCLASS_CLASS
+(
+	novex_nest_ui_Nova_ResultWindowPropertyMap, 
+	
+	novex_nest_ui_Nova_ResultWindowPropertyMap_VTable* vtable;
+	void* prv;
+	nova_Nova_String* nova_Nova_Object_Nova_hashCode;
+)
+
+void novex_nest_ui_Nova_ResultWindowPropertyMap_Nova_init_static();
+novex_nest_ui_Nova_ResultWindowPropertyMap* novex_nest_ui_Nova_ResultWindowPropertyMap_Nova_construct(novex_nest_ui_Nova_ResultWindowPropertyMap* this);
+void novex_nest_ui_Nova_ResultWindowPropertyMap_Nova_destroy(novex_nest_ui_Nova_ResultWindowPropertyMap** this);
+void novex_nest_ui_Nova_ResultWindowPropertyMap_Nova_this(novex_nest_ui_Nova_ResultWindowPropertyMap* this);
+void novex_nest_ui_Nova_ResultWindowPropertyMap_Nova_super(novex_nest_ui_Nova_ResultWindowPropertyMap* this);
 CCLASS_CLASS
 (
 	example_Nova_Animal, 
