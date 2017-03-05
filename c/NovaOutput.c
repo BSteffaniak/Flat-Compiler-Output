@@ -39487,7 +39487,7 @@ nova_Nova_Object* nova_meta_Nova_Library_Nova_getInstance(nova_meta_Nova_Library
 
 /*nova_meta_Nova_Library_closure839_Nova_getConstructor*/nova_funcStruct* nova_meta_Nova_Library_Nova_getConstructor(nova_meta_Nova_Library* this, nova_Nova_String* classLocation)
 {
-	/*nova_meta_Nova_Library_closure8930_Nova_getFunction*/nova_funcStruct* l1_Nova_constructor = (/*nova_meta_Nova_Library_closure8930_Nova_getFunction*/nova_funcStruct*)nova_null;
+	/*nova_meta_Nova_Library_closure8990_Nova_getFunction*/nova_funcStruct* l1_Nova_constructor = (/*nova_meta_Nova_Library_closure8990_Nova_getFunction*/nova_funcStruct*)nova_null;
 	
 	l1_Nova_constructor = nova_meta_Nova_Library_0_Nova_getFunction((nova_meta_Nova_Library*)(this),
 		nova_Nova_String_1_Nova_construct(0,
@@ -39578,7 +39578,7 @@ nova_Nova_String* nova_meta_Nova_Library_1_Nova_formatFunctionName(nova_meta_Nov
 						(nova_Nova_Object*)(l1_Nova_name))))));
 }
 
-/*nova_meta_Nova_Library_closure8930_Nova_getFunction*/nova_funcStruct* nova_meta_Nova_Library_0_Nova_getFunction(nova_meta_Nova_Library* this, nova_Nova_String* functionName, nova_Nova_String* classLocation)
+/*nova_meta_Nova_Library_closure8990_Nova_getFunction*/nova_funcStruct* nova_meta_Nova_Library_0_Nova_getFunction(nova_meta_Nova_Library* this, nova_Nova_String* functionName, nova_Nova_String* classLocation)
 {
 	return nova_meta_Nova_Library_Nova_getFunctionHandle((nova_meta_Nova_Library*)(this),
 		nova_meta_Nova_Library_1_Nova_formatFunctionName((nova_meta_Nova_Library*)(this),
@@ -48975,7 +48975,7 @@ void nova_star_Nova_Button_Nova_init_static()
 	}
 }
 
-nova_star_Nova_Button* nova_star_Nova_Button_Nova_construct(nova_star_Nova_Button* this)
+nova_star_Nova_Button* nova_star_Nova_Button_Nova_construct(nova_star_Nova_Button* this, int x, int y, int width, int height)
 {
 	CCLASS_NEW(nova_star_Nova_Button, this,);
 	this->vtable = &nova_star_Nova_Button_VTable_val;
@@ -48985,7 +48985,11 @@ nova_star_Nova_Button* nova_star_Nova_Button_Nova_construct(nova_star_Nova_Butto
 	nova_star_Nova_Button_Nova_super(this);
 	
 	{
-		nova_star_Nova_Button_Nova_this((nova_star_Nova_Button*)(this));
+		nova_star_Nova_Button_Nova_this((nova_star_Nova_Button*)(this),
+			x,
+			y,
+			width,
+		height);
 	}
 	
 	return this;
@@ -49002,18 +49006,27 @@ void nova_star_Nova_Button_Nova_destroy(nova_star_Nova_Button** this)
 	NOVA_FREE(*this);
 }
 
+void nova_star_Nova_Button_Nova_this(nova_star_Nova_Button* this, int x, int y, int width, int height)
+{
+	x = (int)(x == (int)(intptr_t)nova_null ? 0 : x);
+	y = (int)(y == (int)(intptr_t)nova_null ? 0 : y);
+	width = (int)(width == (int)(intptr_t)nova_null ? 0 : width);
+	height = (int)(height == (int)(intptr_t)nova_null ? 0 : height);
+	nova_star_Nova_Panel_Nova_this((nova_star_Nova_Panel*)(this),
+		x,
+		y,
+		width,
+	height);
+}
+
 void nova_star_Nova_Button_Nova_draw(nova_star_Nova_Button* this)
 {
 	RECT r;
-	r.left   = this->nova_star_Nova_Panel_Nova_x;
-	r.right  = this->nova_star_Nova_Panel_Nova_x + this->nova_star_Nova_Panel_Nova_width;
-	r.top    = this->nova_star_Nova_Panel_Nova_y;
-	r.bottom = this->nova_star_Nova_Panel_Nova_y + this->nova_star_Nova_Panel_Nova_height;
+	r.left   = this->nova_star_Nova_UIComponent_Nova_x;
+	r.right  = this->nova_star_Nova_UIComponent_Nova_x + this->nova_star_Nova_Panel_Nova_width;
+	r.top    = this->nova_star_Nova_UIComponent_Nova_y;
+	r.bottom = this->nova_star_Nova_UIComponent_Nova_y + this->nova_star_Nova_Panel_Nova_height;
 	DrawFrameControl(*nova_star_Nova_UIComponent_virtual_Accessor_Nova_window((nova_star_Nova_UIComponent*)(this))->hdc, &r, DFC_BUTTON, DFCS_BUTTONPUSH);
-}
-
-void nova_star_Nova_Button_Nova_this(nova_star_Nova_Button* this)
-{
 }
 
 void nova_star_Nova_Button_Nova_super(nova_star_Nova_Button* this)
@@ -49058,9 +49071,13 @@ void nova_star_Nova_ButtonFunctionMap_Nova_this(nova_star_Nova_ButtonFunctionMap
 {
 }
 
-nova_star_Nova_Button* nova_star_Nova_ButtonFunctionMap_functionMapButtonFunctionMap_Nova_construct(nova_star_Nova_ButtonFunctionMap* this)
+nova_star_Nova_Button* nova_star_Nova_ButtonFunctionMap_functionMapButtonFunctionMap_Nova_construct(nova_star_Nova_ButtonFunctionMap* this, int x, int y, int width, int height)
 {
-	return nova_star_Nova_Button_Nova_construct(0);
+	return nova_star_Nova_Button_Nova_construct(0,
+		x,
+		y,
+		width,
+	height);
 }
 
 void nova_star_Nova_ButtonFunctionMap_functionMap_Nova_draw(nova_star_Nova_ButtonFunctionMap* this, nova_star_Nova_Button* reference)
@@ -49283,6 +49300,153 @@ void nova_star_Nova_FramePropertyMap_Nova_super(nova_star_Nova_FramePropertyMap*
 
 
 
+void nova_star_Nova_Label_Nova_init_static()
+{
+	{
+	}
+}
+
+nova_star_Nova_Label* nova_star_Nova_Label_Nova_construct(nova_star_Nova_Label* this)
+{
+	CCLASS_NEW(nova_star_Nova_Label, this,);
+	this->vtable = &nova_star_Nova_Label_VTable_val;
+	nova_Nova_Object_Nova_super((nova_Nova_Object*)this);
+	nova_star_Nova_UIComponent_Nova_super((nova_star_Nova_UIComponent*)this);
+	nova_star_Nova_Label_Nova_super(this);
+	
+	{
+		nova_star_Nova_Label_Nova_this((nova_star_Nova_Label*)(this));
+	}
+	
+	return this;
+}
+
+void nova_star_Nova_Label_Nova_destroy(nova_star_Nova_Label** this)
+{
+	if (!*this)
+	{
+		return;
+	}
+	
+	nova_Nova_String_Nova_destroy(&(*this)->nova_star_Nova_Label_Nova_text);
+	
+	NOVA_FREE(*this);
+}
+
+void nova_star_Nova_Label_Nova_draw(nova_star_Nova_Label* this)
+{
+	TextOut(*nova_star_Nova_UIComponent_virtual_Accessor_Nova_window((nova_star_Nova_UIComponent*)(this))->hdc, this->nova_star_Nova_UIComponent_Nova_x, this->nova_star_Nova_UIComponent_Nova_y, this->nova_star_Nova_Label_Nova_text->nova_Nova_String_Nova_chars->nova_datastruct_list_Nova_StringCharArray_Nova_data, this->nova_star_Nova_Label_Nova_text->nova_Nova_String_Nova_count);
+}
+
+void nova_star_Nova_Label_Nova_this(nova_star_Nova_Label* this)
+{
+}
+
+void nova_star_Nova_Label_Nova_super(nova_star_Nova_Label* this)
+{
+	this->nova_star_Nova_Label_Nova_text = (nova_Nova_String*)nova_null;
+}
+
+void nova_star_Nova_LabelFunctionMap_Nova_init_static()
+{
+	{
+	}
+}
+
+nova_star_Nova_LabelFunctionMap* nova_star_Nova_LabelFunctionMap_Nova_construct(nova_star_Nova_LabelFunctionMap* this)
+{
+	CCLASS_NEW(nova_star_Nova_LabelFunctionMap, this,);
+	this->vtable = &nova_star_Nova_LabelFunctionMap_VTable_val;
+	nova_Nova_Object_Nova_super((nova_Nova_Object*)this);
+	nova_meta_Nova_FunctionMap_Nova_super((nova_meta_Nova_FunctionMap*)this);
+	nova_star_Nova_UIComponentFunctionMap_Nova_super((nova_star_Nova_UIComponentFunctionMap*)this);
+	nova_star_Nova_LabelFunctionMap_Nova_super(this);
+	
+	{
+		nova_star_Nova_LabelFunctionMap_Nova_this((nova_star_Nova_LabelFunctionMap*)(this));
+	}
+	
+	return this;
+}
+
+void nova_star_Nova_LabelFunctionMap_Nova_destroy(nova_star_Nova_LabelFunctionMap** this)
+{
+	if (!*this)
+	{
+		return;
+	}
+	
+	
+	NOVA_FREE(*this);
+}
+
+void nova_star_Nova_LabelFunctionMap_Nova_this(nova_star_Nova_LabelFunctionMap* this)
+{
+}
+
+nova_star_Nova_Label* nova_star_Nova_LabelFunctionMap_functionMapLabelFunctionMap_Nova_construct(nova_star_Nova_LabelFunctionMap* this)
+{
+	return nova_star_Nova_Label_Nova_construct(0);
+}
+
+void nova_star_Nova_LabelFunctionMap_functionMap_Nova_draw(nova_star_Nova_LabelFunctionMap* this, nova_star_Nova_Label* reference)
+{
+	nova_star_Nova_Label_Nova_draw((nova_star_Nova_Label*)(reference));
+}
+
+void nova_star_Nova_LabelFunctionMap_Nova_super(nova_star_Nova_LabelFunctionMap* this)
+{
+}
+
+void nova_star_Nova_LabelPropertyMap_Nova_init_static()
+{
+	{
+	}
+}
+
+nova_star_Nova_LabelPropertyMap* nova_star_Nova_LabelPropertyMap_Nova_construct(nova_star_Nova_LabelPropertyMap* this)
+{
+	CCLASS_NEW(nova_star_Nova_LabelPropertyMap, this,);
+	this->vtable = &nova_star_Nova_LabelPropertyMap_VTable_val;
+	nova_Nova_Object_Nova_super((nova_Nova_Object*)this);
+	nova_meta_Nova_PropertyMap_Nova_super((nova_meta_Nova_PropertyMap*)this);
+	nova_star_Nova_UIComponentPropertyMap_Nova_super((nova_star_Nova_UIComponentPropertyMap*)this);
+	nova_star_Nova_LabelPropertyMap_Nova_super(this);
+	
+	{
+		nova_star_Nova_LabelPropertyMap_Nova_this((nova_star_Nova_LabelPropertyMap*)(this));
+	}
+	
+	return this;
+}
+
+void nova_star_Nova_LabelPropertyMap_Nova_destroy(nova_star_Nova_LabelPropertyMap** this)
+{
+	if (!*this)
+	{
+		return;
+	}
+	
+	
+	NOVA_FREE(*this);
+}
+
+void nova_star_Nova_LabelPropertyMap_Nova_this(nova_star_Nova_LabelPropertyMap* this)
+{
+}
+
+nova_Nova_String* nova_star_Nova_LabelPropertyMap_functionMap_Nova_text(nova_star_Nova_LabelPropertyMap* this, nova_star_Nova_Label* reference)
+{
+	return reference->nova_star_Nova_Label_Nova_text;
+}
+
+void nova_star_Nova_LabelPropertyMap_Nova_super(nova_star_Nova_LabelPropertyMap* this)
+{
+}
+
+
+
+
 void nova_star_Nova_Panel_Nova_init_static()
 {
 	{
@@ -49317,8 +49481,6 @@ void nova_star_Nova_Panel_Nova_destroy(nova_star_Nova_Panel** this)
 	
 	
 	
-	
-	
 	nova_datastruct_list_Nova_Array_Nova_destroy(&(*this)->nova_star_Nova_Panel_Nova_children);
 	
 	NOVA_FREE(*this);
@@ -49330,10 +49492,11 @@ void nova_star_Nova_Panel_Nova_this(nova_star_Nova_Panel* this, int x, int y, in
 	y = (int)(y == (int)(intptr_t)nova_null ? 0 : y);
 	width = (int)(width == (int)(intptr_t)nova_null ? 0 : width);
 	height = (int)(height == (int)(intptr_t)nova_null ? 0 : height);
-	this->nova_star_Nova_Panel_Nova_x = x;
-	this->nova_star_Nova_Panel_Nova_y = y;
 	this->nova_star_Nova_Panel_Nova_width = width;
 	this->nova_star_Nova_Panel_Nova_height = height;
+	nova_star_Nova_UIComponent_Nova_this((nova_star_Nova_UIComponent*)(this),
+		x,
+	y);
 }
 
 void nova_star_Nova_Panel_Nova_draw(nova_star_Nova_Panel* this)
@@ -49353,8 +49516,6 @@ nova_datastruct_list_Nova_Array* nova_star_Nova_Panel_Mutatorfunc_Nova_children(
 
 void nova_star_Nova_Panel_Nova_super(nova_star_Nova_Panel* this)
 {
-	this->nova_star_Nova_Panel_Nova_x = 0;
-	this->nova_star_Nova_Panel_Nova_y = 0;
 	this->nova_star_Nova_Panel_Nova_width = 0;
 	this->nova_star_Nova_Panel_Nova_height = 0;
 	this->nova_star_Nova_Panel_Nova_children = (nova_datastruct_list_Nova_Array*)nova_null;
@@ -49417,6 +49578,15 @@ void nova_star_Nova_PanelFunctionMap_Nova_super(nova_star_Nova_PanelFunctionMap*
 {
 }
 
+nova_star_Nova_Panel* nova_star_Nova_PanelFunctionMap_virtualfunctionMapPanel_Nova_construct(nova_star_Nova_PanelFunctionMap* this, int x, int y, int width, int height)
+{
+	return this->vtable->nova_star_Nova_PanelFunctionMap_virtualfunctionMapPanel_Nova_construct((nova_star_Nova_PanelFunctionMap*)(this),
+		x,
+		y,
+		width,
+	height);
+}
+
 void nova_star_Nova_PanelPropertyMap_Nova_init_static()
 {
 	{
@@ -49452,16 +49622,6 @@ void nova_star_Nova_PanelPropertyMap_Nova_destroy(nova_star_Nova_PanelPropertyMa
 
 void nova_star_Nova_PanelPropertyMap_Nova_this(nova_star_Nova_PanelPropertyMap* this)
 {
-}
-
-int nova_star_Nova_PanelPropertyMap_functionMap_Nova_x(nova_star_Nova_PanelPropertyMap* this, nova_star_Nova_Panel* reference)
-{
-	return reference->nova_star_Nova_Panel_Nova_x;
-}
-
-int nova_star_Nova_PanelPropertyMap_functionMap_Nova_y(nova_star_Nova_PanelPropertyMap* this, nova_star_Nova_Panel* reference)
-{
-	return reference->nova_star_Nova_Panel_Nova_y;
 }
 
 int nova_star_Nova_PanelPropertyMap_functionMap_Nova_width(nova_star_Nova_PanelPropertyMap* this, nova_star_Nova_Panel* reference)
@@ -49664,7 +49824,7 @@ void nova_star_Nova_UIComponent_Nova_init_static()
 	}
 }
 
-nova_star_Nova_UIComponent* nova_star_Nova_UIComponent_Nova_construct(nova_star_Nova_UIComponent* this)
+nova_star_Nova_UIComponent* nova_star_Nova_UIComponent_Nova_construct(nova_star_Nova_UIComponent* this, int x, int y)
 {
 	CCLASS_NEW(nova_star_Nova_UIComponent, this,);
 	this->vtable = &nova_star_Nova_UIComponent_VTable_val;
@@ -49672,7 +49832,9 @@ nova_star_Nova_UIComponent* nova_star_Nova_UIComponent_Nova_construct(nova_star_
 	nova_star_Nova_UIComponent_Nova_super(this);
 	
 	{
-		nova_star_Nova_UIComponent_Nova_this((nova_star_Nova_UIComponent*)(this));
+		nova_star_Nova_UIComponent_Nova_this((nova_star_Nova_UIComponent*)(this),
+			x,
+		y);
 	}
 	
 	return this;
@@ -49687,17 +49849,21 @@ void nova_star_Nova_UIComponent_Nova_destroy(nova_star_Nova_UIComponent** this)
 	
 	nova_star_Nova_UIComponent_Nova_destroy(&(*this)->nova_star_Nova_UIComponent_Nova_parent);
 	
+	
+	
 	NOVA_FREE(*this);
+}
+
+void nova_star_Nova_UIComponent_Nova_this(nova_star_Nova_UIComponent* this, int x, int y)
+{
+	this->nova_star_Nova_UIComponent_Nova_x = x;
+	this->nova_star_Nova_UIComponent_Nova_y = y;
 }
 
 
 void nova_star_Nova_UIComponent_Nova_paint(nova_star_Nova_UIComponent* this)
 {
 	nova_star_Nova_UIComponent_virtual_Nova_draw((nova_star_Nova_UIComponent*)(this));
-}
-
-void nova_star_Nova_UIComponent_Nova_this(nova_star_Nova_UIComponent* this)
-{
 }
 
 nova_star_Nova_Window* nova_star_Nova_UIComponent_Accessor_Nova_window(nova_star_Nova_UIComponent* this)
@@ -49711,6 +49877,8 @@ nova_star_Nova_Window* nova_star_Nova_UIComponent_Accessor_Nova_window(nova_star
 void nova_star_Nova_UIComponent_Nova_super(nova_star_Nova_UIComponent* this)
 {
 	this->nova_star_Nova_UIComponent_Nova_parent = (nova_star_Nova_UIComponent*)nova_null;
+	this->nova_star_Nova_UIComponent_Nova_x = 0;
+	this->nova_star_Nova_UIComponent_Nova_y = 0;
 }
 
 void nova_star_Nova_UIComponent_virtual_Nova_draw(nova_star_Nova_UIComponent* this)
@@ -49764,9 +49932,11 @@ void nova_star_Nova_UIComponentFunctionMap_Nova_this(nova_star_Nova_UIComponentF
 {
 }
 
-nova_star_Nova_UIComponent* nova_star_Nova_UIComponentFunctionMap_functionMapUIComponentFunctionMap_Nova_construct(nova_star_Nova_UIComponentFunctionMap* this)
+nova_star_Nova_UIComponent* nova_star_Nova_UIComponentFunctionMap_functionMapUIComponentFunctionMap_Nova_construct(nova_star_Nova_UIComponentFunctionMap* this, int x, int y)
 {
-	return nova_star_Nova_UIComponent_Nova_construct(0);
+	return nova_star_Nova_UIComponent_Nova_construct(0,
+		x,
+	y);
 }
 
 void nova_star_Nova_UIComponentFunctionMap_functionMap_Nova_paint(nova_star_Nova_UIComponentFunctionMap* this, nova_star_Nova_UIComponent* reference)
@@ -49776,11 +49946,6 @@ void nova_star_Nova_UIComponentFunctionMap_functionMap_Nova_paint(nova_star_Nova
 
 void nova_star_Nova_UIComponentFunctionMap_Nova_super(nova_star_Nova_UIComponentFunctionMap* this)
 {
-}
-
-nova_star_Nova_UIComponent* nova_star_Nova_UIComponentFunctionMap_virtualfunctionMapUIComponent_Nova_construct(nova_star_Nova_UIComponentFunctionMap* this)
-{
-	return this->vtable->nova_star_Nova_UIComponentFunctionMap_virtualfunctionMapUIComponent_Nova_construct((nova_star_Nova_UIComponentFunctionMap*)(this));
 }
 
 void nova_star_Nova_UIComponentPropertyMap_Nova_init_static()
@@ -49829,6 +49994,16 @@ nova_star_Nova_Window* nova_star_Nova_UIComponentPropertyMap_functionMap_Nova_wi
 	return nova_star_Nova_UIComponent_Accessor_Nova_window((nova_star_Nova_UIComponent*)(reference));
 }
 
+int nova_star_Nova_UIComponentPropertyMap_functionMap_Nova_x(nova_star_Nova_UIComponentPropertyMap* this, nova_star_Nova_UIComponent* reference)
+{
+	return reference->nova_star_Nova_UIComponent_Nova_x;
+}
+
+int nova_star_Nova_UIComponentPropertyMap_functionMap_Nova_y(nova_star_Nova_UIComponentPropertyMap* this, nova_star_Nova_UIComponent* reference)
+{
+	return reference->nova_star_Nova_UIComponent_Nova_y;
+}
+
 void nova_star_Nova_UIComponentPropertyMap_Nova_super(nova_star_Nova_UIComponentPropertyMap* this)
 {
 }
@@ -49858,8 +50033,13 @@ void nova_star_Nova_UIParent_Nova_paint(nova_star_Nova_UIParent* this)
 
 void nova_star_Nova_UIParent_Nova_addChild(nova_star_Nova_UIParent* this, nova_star_Nova_UIComponent* component)
 {
-	nova_datastruct_list_Nova_Array_Nova_addUnique((nova_datastruct_list_Nova_Array*)(nova_star_Nova_UIParent_virtual_Accessorfunc_Nova_children((nova_star_Nova_UIParent*)(this))),
-		(nova_Nova_Object*)(component));
+	if (!nova_datastruct_list_Nova_List_virtual1_Nova_contains((nova_datastruct_list_Nova_List*)(nova_star_Nova_UIParent_virtual_Accessorfunc_Nova_children((nova_star_Nova_UIParent*)(this))),
+			(nova_Nova_Object*)(component)))
+	{
+		nova_datastruct_list_Nova_Array_0_Nova_add((nova_datastruct_list_Nova_Array*)(nova_star_Nova_UIParent_virtual_Accessorfunc_Nova_children((nova_star_Nova_UIParent*)(this))),
+			(nova_Nova_Object*)(component));
+		component->nova_star_Nova_UIComponent_Nova_parent = (nova_star_Nova_UIComponent*)(this);
+	}
 }
 
 void nova_star_Nova_UIParent_Nova_lambda70(nova_star_Nova_UIParent* this, nova_star_Nova_UIComponent* _1, int _2, nova_datastruct_list_Nova_Array* _3, Context69* context)
@@ -50214,7 +50394,7 @@ CCLASS_PRIVATE
 (
 	nova_star_Nova_WindowThread,
 	NOVA_THREAD_HANDLE* nova_thread_Nova_Thread_Nova_handle;
-	/*nova_thread_Nova_Thread_closure858_Nova_action*/nova_funcStruct* nova_thread_Nova_Thread_Nova_action;
+	/*nova_thread_Nova_Thread_closure864_Nova_action*/nova_funcStruct* nova_thread_Nova_Thread_Nova_action;
 	char nova_thread_Nova_Thread_Nova_useAction;
 	
 	nova_star_Nova_Window* nova_star_Nova_WindowThread_Nova_window;
@@ -50262,7 +50442,10 @@ void nova_star_Nova_WindowThread_Nova_this(nova_star_Nova_WindowThread* this, no
 
 void nova_star_Nova_WindowThread_Nova_run(nova_star_Nova_WindowThread* this)
 {
-	nova_createWindow(this->prv->nova_star_Nova_WindowThread_Nova_window, 0);
+	/*l1_closure854_Nova_paintFunc*/nova_funcStruct* l1_Nova_paintFunc = (/*l1_closure854_Nova_paintFunc*/nova_funcStruct*)nova_null;
+	
+	l1_Nova_paintFunc = nova_get_funcStruct3(&nova_star_Nova_UIParent_Nova_paint, this->prv->nova_star_Nova_WindowThread_Nova_window->frame, nova_null);
+	nova_createWindow(this->prv->nova_star_Nova_WindowThread_Nova_window, l1_Nova_paintFunc);
 }
 
 void nova_star_Nova_WindowThread_Nova_super(nova_star_Nova_WindowThread* this)
@@ -50376,7 +50559,7 @@ CCLASS_PRIVATE
 (
 	nova_thread_Nova_Thread,
 	NOVA_THREAD_HANDLE* nova_thread_Nova_Thread_Nova_handle;
-	/*nova_thread_Nova_Thread_closure858_Nova_action*/nova_funcStruct* nova_thread_Nova_Thread_Nova_action;
+	/*nova_thread_Nova_Thread_closure864_Nova_action*/nova_funcStruct* nova_thread_Nova_Thread_Nova_action;
 	char nova_thread_Nova_Thread_Nova_useAction;
 	
 )
@@ -50412,7 +50595,7 @@ nova_thread_Nova_Thread* nova_thread_Nova_Thread_0_Nova_construct(nova_thread_No
 	return this;
 }
 
-nova_thread_Nova_Thread* nova_thread_Nova_Thread_1_Nova_construct(nova_thread_Nova_Thread* this, nova_thread_Nova_Thread_closure851_Nova_action nova_thread_Nova_Thread_Nova_action, void* nova_thread_Nova_Thread_ref_Nova_action, void* nova_thread_Nova_Thread_context_Nova_action)
+nova_thread_Nova_Thread* nova_thread_Nova_Thread_1_Nova_construct(nova_thread_Nova_Thread* this, nova_thread_Nova_Thread_closure857_Nova_action nova_thread_Nova_Thread_Nova_action, void* nova_thread_Nova_Thread_ref_Nova_action, void* nova_thread_Nova_Thread_context_Nova_action)
 {
 	CCLASS_NEW(nova_thread_Nova_Thread, this);
 	this->vtable = &nova_thread_Nova_Thread_VTable_val;
@@ -50421,7 +50604,7 @@ nova_thread_Nova_Thread* nova_thread_Nova_Thread_1_Nova_construct(nova_thread_No
 	
 	{
 		nova_thread_Nova_Thread_1_Nova_this((nova_thread_Nova_Thread*)(this),
-			(nova_thread_Nova_Thread_closure855_Nova_action)nova_thread_Nova_Thread_Nova_action, nova_thread_Nova_Thread_ref_Nova_action, nova_thread_Nova_Thread_context_Nova_action);
+			(nova_thread_Nova_Thread_closure861_Nova_action)nova_thread_Nova_Thread_Nova_action, nova_thread_Nova_Thread_ref_Nova_action, nova_thread_Nova_Thread_context_Nova_action);
 	}
 	
 	return this;
@@ -50447,7 +50630,7 @@ void nova_thread_Nova_Thread_0_Nova_this(nova_thread_Nova_Thread* this)
 {
 }
 
-void nova_thread_Nova_Thread_1_Nova_this(nova_thread_Nova_Thread* this, nova_thread_Nova_Thread_closure855_Nova_action nova_thread_Nova_Thread_Nova_action, void* nova_thread_Nova_Thread_ref_Nova_action, void* nova_thread_Nova_Thread_context_Nova_action)
+void nova_thread_Nova_Thread_1_Nova_this(nova_thread_Nova_Thread* this, nova_thread_Nova_Thread_closure861_Nova_action nova_thread_Nova_Thread_Nova_action, void* nova_thread_Nova_Thread_ref_Nova_action, void* nova_thread_Nova_Thread_context_Nova_action)
 {
 	this->prv->nova_thread_Nova_Thread_Nova_action = nova_get_funcStruct3(nova_thread_Nova_Thread_Nova_action, nova_thread_Nova_Thread_ref_Nova_action, nova_thread_Nova_Thread_context_Nova_action);
 	this->prv->nova_thread_Nova_Thread_Nova_useAction = 1;
@@ -50456,7 +50639,7 @@ void nova_thread_Nova_Thread_1_Nova_this(nova_thread_Nova_Thread* this, nova_thr
 NOVA_THREAD_HANDLE* nova_thread_Nova_Thread_Nova_start(nova_thread_Nova_Thread* this)
 {
 	return this->prv->nova_thread_Nova_Thread_Nova_handle = create_thread(this,
-		(nova_thread_Nova_Thread_closure854_Nova_run)&nova_thread_Nova_Thread_Nova_startRun, this, nova_null);
+		(nova_thread_Nova_Thread_closure860_Nova_run)&nova_thread_Nova_Thread_Nova_startRun, this, nova_null);
 }
 
 void nova_thread_Nova_Thread_Nova_join(nova_thread_Nova_Thread* this)
@@ -50492,7 +50675,7 @@ void nova_thread_Nova_Thread_static_Nova_unlock(nova_thread_Nova_Thread* this)
 	#endif
 }
 
-void nova_thread_Nova_Thread_static_Nova_sync(nova_thread_Nova_Thread* this, nova_thread_Nova_Thread_closure860_Nova_action nova_thread_Nova_Thread_Nova_action, void* nova_thread_Nova_Thread_ref_Nova_action, void* nova_thread_Nova_Thread_context_Nova_action)
+void nova_thread_Nova_Thread_static_Nova_sync(nova_thread_Nova_Thread* this, nova_thread_Nova_Thread_closure866_Nova_action nova_thread_Nova_Thread_Nova_action, void* nova_thread_Nova_Thread_ref_Nova_action, void* nova_thread_Nova_Thread_context_Nova_action)
 {
 	nova_thread_Nova_Thread_static_Nova_lock(0);
 	nova_thread_Nova_Thread_Nova_action(nova_thread_Nova_Thread_ref_Nova_action,
@@ -50510,7 +50693,7 @@ void nova_thread_Nova_Thread_Nova_startRun(nova_thread_Nova_Thread* this)
 	Context71* contextArg72 = NOVA_MALLOC(sizeof(Context71));
 	this->nova_thread_Nova_Thread_Nova_active = 1;
 	nova_thread_Nova_Thread_static_Nova_sync((nova_thread_Nova_Thread*)(this),
-		(nova_thread_Nova_Thread_closure860_Nova_action)&nova_thread_Nova_Thread_Nova_lambda71, this, contextArg71);
+		(nova_thread_Nova_Thread_closure866_Nova_action)&nova_thread_Nova_Thread_Nova_lambda71, this, contextArg71);
 	TRY
 	{
 		novaEnv.nova_exception_ExceptionData.addCaught(exceptionData, nova_exception_Nova_Exception_VTable_val.classInstance, 0);
@@ -50518,7 +50701,7 @@ void nova_thread_Nova_Thread_Nova_startRun(nova_thread_Nova_Thread* this)
 		{
 			if (this->prv->nova_thread_Nova_Thread_Nova_useAction)
 			{
-				((nova_thread_Nova_Thread_closure858_Nova_action)this->prv->nova_thread_Nova_Thread_Nova_action->func)(this->prv->nova_thread_Nova_Thread_Nova_action->ref,
+				((nova_thread_Nova_Thread_closure864_Nova_action)this->prv->nova_thread_Nova_Thread_Nova_action->func)(this->prv->nova_thread_Nova_Thread_Nova_action->ref,
 				this->prv->nova_thread_Nova_Thread_Nova_action->context);
 			}
 			else
@@ -50559,7 +50742,7 @@ void nova_thread_Nova_Thread_Nova_startRun(nova_thread_Nova_Thread* this)
 	END_TRY;
 	this->nova_thread_Nova_Thread_Nova_active = 0;
 	nova_thread_Nova_Thread_static_Nova_sync((nova_thread_Nova_Thread*)(this),
-		(nova_thread_Nova_Thread_closure860_Nova_action)&nova_thread_Nova_Thread_Nova_lambda72, this, contextArg72);
+		(nova_thread_Nova_Thread_closure866_Nova_action)&nova_thread_Nova_Thread_Nova_lambda72, this, contextArg72);
 }
 
 void nova_thread_Nova_Thread_Nova_lambda71(nova_thread_Nova_Thread* this, Context70* context)
@@ -50583,7 +50766,7 @@ long_long nova_thread_Nova_Thread_Accessor_static_Nova_id(nova_thread_Nova_Threa
 void nova_thread_Nova_Thread_Nova_super(nova_thread_Nova_Thread* this)
 {
 	this->nova_thread_Nova_Thread_Nova_active = 0;
-	this->prv->nova_thread_Nova_Thread_Nova_action = (/*nova_thread_Nova_Thread_closure858_Nova_action*/nova_funcStruct*)nova_null;
+	this->prv->nova_thread_Nova_Thread_Nova_action = (/*nova_thread_Nova_Thread_closure864_Nova_action*/nova_funcStruct*)nova_null;
 	this->prv->nova_thread_Nova_Thread_Nova_useAction = 0;
 	this->prv->nova_thread_Nova_Thread_Nova_useAction = 0;
 }
@@ -50636,10 +50819,10 @@ nova_thread_Nova_Thread* nova_thread_Nova_ThreadFunctionMap_functionMapThreadFun
 	return nova_thread_Nova_Thread_0_Nova_construct(0);
 }
 
-nova_thread_Nova_Thread* nova_thread_Nova_ThreadFunctionMap_functionMapThreadFunctionMap1_Nova_construct(nova_thread_Nova_ThreadFunctionMap* this, nova_thread_Nova_ThreadFunctionMap_closure861_Nova_action nova_thread_Nova_ThreadFunctionMap_Nova_action, void* nova_thread_Nova_ThreadFunctionMap_ref_Nova_action, void* nova_thread_Nova_ThreadFunctionMap_context_Nova_action)
+nova_thread_Nova_Thread* nova_thread_Nova_ThreadFunctionMap_functionMapThreadFunctionMap1_Nova_construct(nova_thread_Nova_ThreadFunctionMap* this, nova_thread_Nova_ThreadFunctionMap_closure867_Nova_action nova_thread_Nova_ThreadFunctionMap_Nova_action, void* nova_thread_Nova_ThreadFunctionMap_ref_Nova_action, void* nova_thread_Nova_ThreadFunctionMap_context_Nova_action)
 {
 	return nova_thread_Nova_Thread_1_Nova_construct(0,
-		(nova_thread_Nova_Thread_closure851_Nova_action)nova_thread_Nova_ThreadFunctionMap_Nova_action, nova_thread_Nova_ThreadFunctionMap_ref_Nova_action, nova_thread_Nova_ThreadFunctionMap_context_Nova_action);
+		(nova_thread_Nova_Thread_closure857_Nova_action)nova_thread_Nova_ThreadFunctionMap_Nova_action, nova_thread_Nova_ThreadFunctionMap_ref_Nova_action, nova_thread_Nova_ThreadFunctionMap_context_Nova_action);
 }
 
 NOVA_THREAD_HANDLE* nova_thread_Nova_ThreadFunctionMap_functionMap_Nova_start(nova_thread_Nova_ThreadFunctionMap* this, nova_thread_Nova_Thread* reference)
@@ -50673,10 +50856,10 @@ void nova_thread_Nova_ThreadFunctionMap_functionMap_static_Nova_unlock(nova_thre
 	nova_thread_Nova_Thread_static_Nova_unlock((nova_thread_Nova_Thread*)(0));
 }
 
-void nova_thread_Nova_ThreadFunctionMap_functionMap_static_Nova_sync(nova_thread_Nova_ThreadFunctionMap* this, nova_thread_Nova_ThreadFunctionMap_closure864_Nova_action nova_thread_Nova_ThreadFunctionMap_Nova_action, void* nova_thread_Nova_ThreadFunctionMap_ref_Nova_action, void* nova_thread_Nova_ThreadFunctionMap_context_Nova_action)
+void nova_thread_Nova_ThreadFunctionMap_functionMap_static_Nova_sync(nova_thread_Nova_ThreadFunctionMap* this, nova_thread_Nova_ThreadFunctionMap_closure870_Nova_action nova_thread_Nova_ThreadFunctionMap_Nova_action, void* nova_thread_Nova_ThreadFunctionMap_ref_Nova_action, void* nova_thread_Nova_ThreadFunctionMap_context_Nova_action)
 {
 	nova_thread_Nova_Thread_static_Nova_sync((nova_thread_Nova_Thread*)(0),
-		(nova_thread_Nova_Thread_closure860_Nova_action)nova_thread_Nova_ThreadFunctionMap_Nova_action, nova_thread_Nova_ThreadFunctionMap_ref_Nova_action, nova_thread_Nova_ThreadFunctionMap_context_Nova_action);
+		(nova_thread_Nova_Thread_closure866_Nova_action)nova_thread_Nova_ThreadFunctionMap_Nova_action, nova_thread_Nova_ThreadFunctionMap_ref_Nova_action, nova_thread_Nova_ThreadFunctionMap_context_Nova_action);
 }
 
 void nova_thread_Nova_ThreadFunctionMap_functionMap_Nova_run(nova_thread_Nova_ThreadFunctionMap* this, nova_thread_Nova_Thread* reference)
@@ -51111,26 +51294,26 @@ void nova_thread_async_Nova_Async_Nova_destroy(nova_thread_async_Nova_Async** th
 	NOVA_FREE(*this);
 }
 
-nova_thread_async_Nova_Task* nova_thread_async_Nova_Async_static_Nova_execute(nova_thread_async_Nova_Async* this, nova_thread_async_Nova_Async_closure867_Nova_func nova_thread_async_Nova_Async_Nova_func, void* nova_thread_async_Nova_Async_ref_Nova_func, void* nova_thread_async_Nova_Async_context_Nova_func)
+nova_thread_async_Nova_Task* nova_thread_async_Nova_Async_static_Nova_execute(nova_thread_async_Nova_Async* this, nova_thread_async_Nova_Async_closure873_Nova_func nova_thread_async_Nova_Async_Nova_func, void* nova_thread_async_Nova_Async_ref_Nova_func, void* nova_thread_async_Nova_Async_context_Nova_func)
 {
 	nova_thread_Nova_Thread* l1_Nova_thread = (nova_thread_Nova_Thread*)nova_null;
 	nova_thread_async_Nova_Task* l1_Nova_task = (nova_thread_async_Nova_Task*)nova_null;
 	
 	l1_Nova_thread = nova_thread_Nova_Thread_1_Nova_construct(0,
-		(nova_thread_Nova_Thread_closure851_Nova_action)nova_thread_async_Nova_Async_Nova_func, nova_thread_async_Nova_Async_ref_Nova_func, nova_thread_async_Nova_Async_context_Nova_func);
+		(nova_thread_Nova_Thread_closure857_Nova_action)nova_thread_async_Nova_Async_Nova_func, nova_thread_async_Nova_Async_ref_Nova_func, nova_thread_async_Nova_Async_context_Nova_func);
 	l1_Nova_task = nova_thread_async_Nova_Task_Nova_construct(0,
 	l1_Nova_thread);
 	nova_thread_Nova_Thread_Nova_start((nova_thread_Nova_Thread*)(l1_Nova_thread));
 	return l1_Nova_task;
 }
 
-nova_thread_async_Nova_Task* nova_thread_async_Nova_Async_static_Nova_request(nova_thread_async_Nova_Async* this, nova_thread_async_Nova_Async_closure870_Nova_func nova_thread_async_Nova_Async_Nova_func, void* nova_thread_async_Nova_Async_ref_Nova_func, void* nova_thread_async_Nova_Async_context_Nova_func)
+nova_thread_async_Nova_Task* nova_thread_async_Nova_Async_static_Nova_request(nova_thread_async_Nova_Async* this, nova_thread_async_Nova_Async_closure876_Nova_func nova_thread_async_Nova_Async_Nova_func, void* nova_thread_async_Nova_Async_ref_Nova_func, void* nova_thread_async_Nova_Async_context_Nova_func)
 {
 	nova_thread_Nova_Thread* l1_Nova_thread = (nova_thread_Nova_Thread*)nova_null;
 	nova_thread_async_Nova_Task* l1_Nova_task = (nova_thread_async_Nova_Task*)nova_null;
 	
 	l1_Nova_thread = nova_thread_Nova_Thread_1_Nova_construct(0,
-		(nova_thread_Nova_Thread_closure851_Nova_action)nova_thread_async_Nova_Async_Nova_func, nova_thread_async_Nova_Async_ref_Nova_func, nova_thread_async_Nova_Async_context_Nova_func);
+		(nova_thread_Nova_Thread_closure857_Nova_action)nova_thread_async_Nova_Async_Nova_func, nova_thread_async_Nova_Async_ref_Nova_func, nova_thread_async_Nova_Async_context_Nova_func);
 	l1_Nova_task = nova_thread_async_Nova_Task_Nova_construct(0,
 	l1_Nova_thread);
 	nova_thread_Nova_Thread_Nova_start((nova_thread_Nova_Thread*)(l1_Nova_thread));
@@ -51186,16 +51369,16 @@ nova_thread_async_Nova_Async* nova_thread_async_Nova_AsyncFunctionMap_functionMa
 	return nova_thread_async_Nova_Async_Nova_construct(0);
 }
 
-nova_thread_async_Nova_Task* nova_thread_async_Nova_AsyncFunctionMap_functionMap_static_Nova_execute(nova_thread_async_Nova_AsyncFunctionMap* this, nova_thread_async_Nova_AsyncFunctionMap_closure873_Nova_func nova_thread_async_Nova_AsyncFunctionMap_Nova_func, void* nova_thread_async_Nova_AsyncFunctionMap_ref_Nova_func, void* nova_thread_async_Nova_AsyncFunctionMap_context_Nova_func)
+nova_thread_async_Nova_Task* nova_thread_async_Nova_AsyncFunctionMap_functionMap_static_Nova_execute(nova_thread_async_Nova_AsyncFunctionMap* this, nova_thread_async_Nova_AsyncFunctionMap_closure879_Nova_func nova_thread_async_Nova_AsyncFunctionMap_Nova_func, void* nova_thread_async_Nova_AsyncFunctionMap_ref_Nova_func, void* nova_thread_async_Nova_AsyncFunctionMap_context_Nova_func)
 {
 	return nova_thread_async_Nova_Async_static_Nova_execute((nova_thread_async_Nova_Async*)(0),
-		(nova_thread_async_Nova_Async_closure867_Nova_func)nova_thread_async_Nova_AsyncFunctionMap_Nova_func, nova_thread_async_Nova_AsyncFunctionMap_ref_Nova_func, nova_thread_async_Nova_AsyncFunctionMap_context_Nova_func);
+		(nova_thread_async_Nova_Async_closure873_Nova_func)nova_thread_async_Nova_AsyncFunctionMap_Nova_func, nova_thread_async_Nova_AsyncFunctionMap_ref_Nova_func, nova_thread_async_Nova_AsyncFunctionMap_context_Nova_func);
 }
 
-nova_thread_async_Nova_Task* nova_thread_async_Nova_AsyncFunctionMap_functionMap_static_Nova_request(nova_thread_async_Nova_AsyncFunctionMap* this, nova_thread_async_Nova_AsyncFunctionMap_closure876_Nova_func nova_thread_async_Nova_AsyncFunctionMap_Nova_func, void* nova_thread_async_Nova_AsyncFunctionMap_ref_Nova_func, void* nova_thread_async_Nova_AsyncFunctionMap_context_Nova_func)
+nova_thread_async_Nova_Task* nova_thread_async_Nova_AsyncFunctionMap_functionMap_static_Nova_request(nova_thread_async_Nova_AsyncFunctionMap* this, nova_thread_async_Nova_AsyncFunctionMap_closure882_Nova_func nova_thread_async_Nova_AsyncFunctionMap_Nova_func, void* nova_thread_async_Nova_AsyncFunctionMap_ref_Nova_func, void* nova_thread_async_Nova_AsyncFunctionMap_context_Nova_func)
 {
 	return nova_thread_async_Nova_Async_static_Nova_request((nova_thread_async_Nova_Async*)(0),
-		(nova_thread_async_Nova_Async_closure870_Nova_func)nova_thread_async_Nova_AsyncFunctionMap_Nova_func, nova_thread_async_Nova_AsyncFunctionMap_ref_Nova_func, nova_thread_async_Nova_AsyncFunctionMap_context_Nova_func);
+		(nova_thread_async_Nova_Async_closure876_Nova_func)nova_thread_async_Nova_AsyncFunctionMap_Nova_func, nova_thread_async_Nova_AsyncFunctionMap_ref_Nova_func, nova_thread_async_Nova_AsyncFunctionMap_context_Nova_func);
 }
 
 void nova_thread_async_Nova_AsyncFunctionMap_Nova_super(nova_thread_async_Nova_AsyncFunctionMap* this)
@@ -52027,12 +52210,12 @@ nova_Nova_String* nova_time_Nova_Timer_Nova_toString(nova_time_Nova_Timer* this)
 							(char*)(" }"))))));
 }
 
-nova_time_Nova_Timer* nova_time_Nova_Timer_static_Nova_time(nova_time_Nova_Timer* this, nova_time_Nova_Timer_closure879_Nova_action nova_time_Nova_Timer_Nova_action, void* nova_time_Nova_Timer_ref_Nova_action, void* nova_time_Nova_Timer_context_Nova_action, nova_time_Nova_Timer_closure880_Nova_callback nova_time_Nova_Timer_Nova_callback, void* nova_time_Nova_Timer_ref_Nova_callback, void* nova_time_Nova_Timer_context_Nova_callback)
+nova_time_Nova_Timer* nova_time_Nova_Timer_static_Nova_time(nova_time_Nova_Timer* this, nova_time_Nova_Timer_closure885_Nova_action nova_time_Nova_Timer_Nova_action, void* nova_time_Nova_Timer_ref_Nova_action, void* nova_time_Nova_Timer_context_Nova_action, nova_time_Nova_Timer_closure886_Nova_callback nova_time_Nova_Timer_Nova_callback, void* nova_time_Nova_Timer_ref_Nova_callback, void* nova_time_Nova_Timer_context_Nova_callback)
 {
 	Context213* contextArg188 = NOVA_MALLOC(sizeof(Context213));
 	nova_time_Nova_Timer* l1_Nova_t = (nova_time_Nova_Timer*)nova_null;
 	
-	nova_time_Nova_Timer_Nova_callback = (nova_time_Nova_Timer_closure880_Nova_callback)(nova_time_Nova_Timer_Nova_callback == 0 ? (nova_time_Nova_Timer_closure880_Nova_callback)&nova_time_Nova_Timer_static_Nova_lambda188 : nova_time_Nova_Timer_Nova_callback);
+	nova_time_Nova_Timer_Nova_callback = (nova_time_Nova_Timer_closure886_Nova_callback)(nova_time_Nova_Timer_Nova_callback == 0 ? (nova_time_Nova_Timer_closure886_Nova_callback)&nova_time_Nova_Timer_static_Nova_lambda188 : nova_time_Nova_Timer_Nova_callback);
 	nova_time_Nova_Timer_ref_Nova_callback = (void*)(nova_time_Nova_Timer_ref_Nova_callback == 0 ? (void*)nova_null : nova_time_Nova_Timer_ref_Nova_callback);
 	nova_time_Nova_Timer_context_Nova_callback = (void*)(nova_time_Nova_Timer_context_Nova_callback == 0 ? (void*)contextArg188 : nova_time_Nova_Timer_context_Nova_callback);
 	l1_Nova_t = nova_time_Nova_Timer_Nova_start((nova_time_Nova_Timer*)(nova_time_Nova_Timer_Nova_construct(0)));
@@ -52131,11 +52314,11 @@ nova_Nova_String* nova_time_Nova_TimerFunctionMap_functionMap_Nova_toString(nova
 	return nova_time_Nova_Timer_Nova_toString((nova_time_Nova_Timer*)(reference));
 }
 
-nova_time_Nova_Timer* nova_time_Nova_TimerFunctionMap_functionMap_static_Nova_time(nova_time_Nova_TimerFunctionMap* this, nova_time_Nova_TimerFunctionMap_closure881_Nova_action nova_time_Nova_TimerFunctionMap_Nova_action, void* nova_time_Nova_TimerFunctionMap_ref_Nova_action, void* nova_time_Nova_TimerFunctionMap_context_Nova_action, nova_time_Nova_TimerFunctionMap_closure882_Nova_callback nova_time_Nova_TimerFunctionMap_Nova_callback, void* nova_time_Nova_TimerFunctionMap_ref_Nova_callback, void* nova_time_Nova_TimerFunctionMap_context_Nova_callback)
+nova_time_Nova_Timer* nova_time_Nova_TimerFunctionMap_functionMap_static_Nova_time(nova_time_Nova_TimerFunctionMap* this, nova_time_Nova_TimerFunctionMap_closure887_Nova_action nova_time_Nova_TimerFunctionMap_Nova_action, void* nova_time_Nova_TimerFunctionMap_ref_Nova_action, void* nova_time_Nova_TimerFunctionMap_context_Nova_action, nova_time_Nova_TimerFunctionMap_closure888_Nova_callback nova_time_Nova_TimerFunctionMap_Nova_callback, void* nova_time_Nova_TimerFunctionMap_ref_Nova_callback, void* nova_time_Nova_TimerFunctionMap_context_Nova_callback)
 {
 	return nova_time_Nova_Timer_static_Nova_time((nova_time_Nova_Timer*)(0),
-		(nova_time_Nova_Timer_closure879_Nova_action)nova_time_Nova_TimerFunctionMap_Nova_action, nova_time_Nova_TimerFunctionMap_ref_Nova_action, nova_time_Nova_TimerFunctionMap_context_Nova_action,
-		(nova_time_Nova_Timer_closure880_Nova_callback)nova_time_Nova_TimerFunctionMap_Nova_callback, nova_time_Nova_TimerFunctionMap_ref_Nova_callback, nova_time_Nova_TimerFunctionMap_context_Nova_callback);
+		(nova_time_Nova_Timer_closure885_Nova_action)nova_time_Nova_TimerFunctionMap_Nova_action, nova_time_Nova_TimerFunctionMap_ref_Nova_action, nova_time_Nova_TimerFunctionMap_context_Nova_action,
+		(nova_time_Nova_Timer_closure886_Nova_callback)nova_time_Nova_TimerFunctionMap_Nova_callback, nova_time_Nova_TimerFunctionMap_ref_Nova_callback, nova_time_Nova_TimerFunctionMap_context_Nova_callback);
 }
 
 void nova_time_Nova_TimerFunctionMap_Nova_super(nova_time_Nova_TimerFunctionMap* this)
@@ -54718,6 +54901,8 @@ void novex_nest_ui_Nova_ResultWindow_Nova_destroy(novex_nest_ui_Nova_ResultWindo
 
 void novex_nest_ui_Nova_ResultWindow_Nova_this(novex_nest_ui_Nova_ResultWindow* this)
 {
+	nova_star_Nova_Button* l1_Nova_button = (nova_star_Nova_Button*)nova_null;
+	
 	this->prv->novex_nest_ui_Nova_ResultWindow_Nova_window = nova_star_Nova_Window_Nova_construct(0,
 		nova_Nova_String_1_Nova_construct(0,
 			(char*)("Results")),
@@ -54725,6 +54910,13 @@ void novex_nest_ui_Nova_ResultWindow_Nova_this(novex_nest_ui_Nova_ResultWindow* 
 		0,
 		800,
 	500);
+	l1_Nova_button = nova_star_Nova_Button_Nova_construct(0,
+		200,
+		200,
+		100,
+	100);
+	nova_star_Nova_UIParent_Nova_addChild((nova_star_Nova_UIParent*)(this->prv->novex_nest_ui_Nova_ResultWindow_Nova_window->frame),
+		(nova_star_Nova_UIComponent*)(l1_Nova_button));
 	nova_star_Nova_Window_Nova_create((nova_star_Nova_Window*)(nova_star_Nova_Window_Nova_center((nova_star_Nova_Window*)(this->prv->novex_nest_ui_Nova_ResultWindow_Nova_window))));
 }
 
@@ -55382,19 +55574,19 @@ void example_Nova_BodyBuilderPropertyMap_Nova_super(example_Nova_BodyBuilderProp
 
 typedef struct nova_exception_Nova_ExceptionData nova_exception_Nova_ExceptionData;
 
-typedef int (*example_Nova_ClosureDemo_closure885_Nova_closure)(void*, int, int, void*);
-typedef int (*example_Nova_ClosureDemoFunctionMap_closure886_Nova_closure)(void*, int, int, void*);
-typedef int (*example_Nova_ClosureDemoFunctionMap_closure888_Nova_closure)(void*, int, int, void*);
-typedef int (*example_Nova_ClosureDemoFunctionMap_closure888_Nova_closure)(void*, int, int, void*);
+typedef int (*example_Nova_ClosureDemo_closure891_Nova_closure)(void*, int, int, void*);
+typedef int (*example_Nova_ClosureDemoFunctionMap_closure892_Nova_closure)(void*, int, int, void*);
+typedef int (*example_Nova_ClosureDemoFunctionMap_closure894_Nova_closure)(void*, int, int, void*);
+typedef int (*example_Nova_ClosureDemoFunctionMap_closure894_Nova_closure)(void*, int, int, void*);
 
-void example_Nova_ClosureDemo_Nova_callClosure(example_Nova_ClosureDemo* this, example_Nova_ClosureDemo_closure885_Nova_closure example_Nova_ClosureDemo_Nova_closure, void* example_Nova_ClosureDemo_ref_Nova_closure, void* example_Nova_ClosureDemo_context_Nova_closure);
+void example_Nova_ClosureDemo_Nova_callClosure(example_Nova_ClosureDemo* this, example_Nova_ClosureDemo_closure891_Nova_closure example_Nova_ClosureDemo_Nova_closure, void* example_Nova_ClosureDemo_ref_Nova_closure, void* example_Nova_ClosureDemo_context_Nova_closure);
 int example_Nova_ClosureDemo_static_Nova_multiply(example_Nova_ClosureDemo* this, int value1, int value2);
 int example_Nova_ClosureDemo_static_Nova_pow(example_Nova_ClosureDemo* this, int base, int pow);
-void example_Nova_ClosureDemoFunctionMap_functionMap_Nova_callClosure(example_Nova_ClosureDemoFunctionMap* this, example_Nova_ClosureDemo* reference, example_Nova_ClosureDemoFunctionMap_closure886_Nova_closure example_Nova_ClosureDemoFunctionMap_Nova_closure, void* example_Nova_ClosureDemoFunctionMap_ref_Nova_closure, void* example_Nova_ClosureDemoFunctionMap_context_Nova_closure);
+void example_Nova_ClosureDemoFunctionMap_functionMap_Nova_callClosure(example_Nova_ClosureDemoFunctionMap* this, example_Nova_ClosureDemo* reference, example_Nova_ClosureDemoFunctionMap_closure892_Nova_closure example_Nova_ClosureDemoFunctionMap_Nova_closure, void* example_Nova_ClosureDemoFunctionMap_ref_Nova_closure, void* example_Nova_ClosureDemoFunctionMap_context_Nova_closure);
 int example_Nova_ClosureDemoFunctionMap_functionMap_static_Nova_multiply(example_Nova_ClosureDemoFunctionMap* this, int value1, int value2);
 int example_Nova_ClosureDemoFunctionMap_functionMap_static_Nova_pow(example_Nova_ClosureDemoFunctionMap* this, int base, int pow);
 
-void example_Nova_ClosureDemo_Nova_callClosure(example_Nova_ClosureDemo* this, example_Nova_ClosureDemo_closure885_Nova_closure example_Nova_ClosureDemo_Nova_closure, void* example_Nova_ClosureDemo_ref_Nova_closure, void* example_Nova_ClosureDemo_context_Nova_closure);
+void example_Nova_ClosureDemo_Nova_callClosure(example_Nova_ClosureDemo* this, example_Nova_ClosureDemo_closure891_Nova_closure example_Nova_ClosureDemo_Nova_closure, void* example_Nova_ClosureDemo_ref_Nova_closure, void* example_Nova_ClosureDemo_context_Nova_closure);
 int example_Nova_ClosureDemo_static_Nova_multiply(example_Nova_ClosureDemo* this, int value1, int value2);
 int example_Nova_ClosureDemo_static_Nova_pow(example_Nova_ClosureDemo* this, int base, int pow);
 void example_Nova_ClosureDemo_Nova_init_static()
@@ -55434,13 +55626,13 @@ void example_Nova_ClosureDemo_static_Nova_main(example_Nova_ClosureDemo* this, n
 	
 	l1_Nova_demo = example_Nova_ClosureDemo_Nova_construct(0);
 	example_Nova_ClosureDemo_Nova_callClosure((example_Nova_ClosureDemo*)(l1_Nova_demo),
-		(example_Nova_ClosureDemo_closure885_Nova_closure)&example_Nova_ClosureDemo_static_Nova_multiply, nova_null, nova_null);
+		(example_Nova_ClosureDemo_closure891_Nova_closure)&example_Nova_ClosureDemo_static_Nova_multiply, nova_null, nova_null);
 	example_Nova_ClosureDemo_Nova_callClosure((example_Nova_ClosureDemo*)(l1_Nova_demo),
-		(example_Nova_ClosureDemo_closure885_Nova_closure)&example_Nova_ClosureDemo_static_Nova_pow, nova_null, nova_null);
+		(example_Nova_ClosureDemo_closure891_Nova_closure)&example_Nova_ClosureDemo_static_Nova_pow, nova_null, nova_null);
 	nova_io_Nova_Console_static_Nova_waitForEnter((nova_io_Nova_Console*)(0));
 }
 
-void example_Nova_ClosureDemo_Nova_callClosure(example_Nova_ClosureDemo* this, example_Nova_ClosureDemo_closure885_Nova_closure example_Nova_ClosureDemo_Nova_closure, void* example_Nova_ClosureDemo_ref_Nova_closure, void* example_Nova_ClosureDemo_context_Nova_closure)
+void example_Nova_ClosureDemo_Nova_callClosure(example_Nova_ClosureDemo* this, example_Nova_ClosureDemo_closure891_Nova_closure example_Nova_ClosureDemo_Nova_closure, void* example_Nova_ClosureDemo_ref_Nova_closure, void* example_Nova_ClosureDemo_context_Nova_closure)
 {
 	int l1_Nova_value = 0;
 	
@@ -55501,7 +55693,7 @@ void example_Nova_ClosureDemo_Nova_super(example_Nova_ClosureDemo* this)
 }
 
 
-void example_Nova_ClosureDemoFunctionMap_functionMap_Nova_callClosure(example_Nova_ClosureDemoFunctionMap* this, example_Nova_ClosureDemo* reference, example_Nova_ClosureDemoFunctionMap_closure886_Nova_closure example_Nova_ClosureDemoFunctionMap_Nova_closure, void* example_Nova_ClosureDemoFunctionMap_ref_Nova_closure, void* example_Nova_ClosureDemoFunctionMap_context_Nova_closure);
+void example_Nova_ClosureDemoFunctionMap_functionMap_Nova_callClosure(example_Nova_ClosureDemoFunctionMap* this, example_Nova_ClosureDemo* reference, example_Nova_ClosureDemoFunctionMap_closure892_Nova_closure example_Nova_ClosureDemoFunctionMap_Nova_closure, void* example_Nova_ClosureDemoFunctionMap_ref_Nova_closure, void* example_Nova_ClosureDemoFunctionMap_context_Nova_closure);
 int example_Nova_ClosureDemoFunctionMap_functionMap_static_Nova_multiply(example_Nova_ClosureDemoFunctionMap* this, int value1, int value2);
 int example_Nova_ClosureDemoFunctionMap_functionMap_static_Nova_pow(example_Nova_ClosureDemoFunctionMap* this, int base, int pow);
 void example_Nova_ClosureDemoFunctionMap_Nova_init_static()
@@ -55551,10 +55743,10 @@ void example_Nova_ClosureDemoFunctionMap_functionMap_static_Nova_main(example_No
 	args);
 }
 
-void example_Nova_ClosureDemoFunctionMap_functionMap_Nova_callClosure(example_Nova_ClosureDemoFunctionMap* this, example_Nova_ClosureDemo* reference, example_Nova_ClosureDemoFunctionMap_closure886_Nova_closure example_Nova_ClosureDemoFunctionMap_Nova_closure, void* example_Nova_ClosureDemoFunctionMap_ref_Nova_closure, void* example_Nova_ClosureDemoFunctionMap_context_Nova_closure)
+void example_Nova_ClosureDemoFunctionMap_functionMap_Nova_callClosure(example_Nova_ClosureDemoFunctionMap* this, example_Nova_ClosureDemo* reference, example_Nova_ClosureDemoFunctionMap_closure892_Nova_closure example_Nova_ClosureDemoFunctionMap_Nova_closure, void* example_Nova_ClosureDemoFunctionMap_ref_Nova_closure, void* example_Nova_ClosureDemoFunctionMap_context_Nova_closure)
 {
 	example_Nova_ClosureDemo_Nova_callClosure((example_Nova_ClosureDemo*)(reference),
-		(example_Nova_ClosureDemo_closure885_Nova_closure)example_Nova_ClosureDemoFunctionMap_Nova_closure, example_Nova_ClosureDemoFunctionMap_ref_Nova_closure, example_Nova_ClosureDemoFunctionMap_context_Nova_closure);
+		(example_Nova_ClosureDemo_closure891_Nova_closure)example_Nova_ClosureDemoFunctionMap_Nova_closure, example_Nova_ClosureDemoFunctionMap_ref_Nova_closure, example_Nova_ClosureDemoFunctionMap_context_Nova_closure);
 }
 
 int example_Nova_ClosureDemoFunctionMap_functionMap_static_Nova_multiply(example_Nova_ClosureDemoFunctionMap* this, int value1, int value2)
@@ -57263,7 +57455,7 @@ void example_Nova_Lab_static_Nova_main(example_Nova_Lab* this, nova_datastruct_l
 	nova_datastruct_list_Nova_ImmutableArray* l1_Nova_myImmutableArray = (nova_datastruct_list_Nova_ImmutableArray*)nova_null;
 	nova_datastruct_list_Nova_ImmutableArray* l1_Nova_outputArray = (nova_datastruct_list_Nova_ImmutableArray*)nova_null;
 	nova_meta_Nova_Library* l1_Nova_lib = (nova_meta_Nova_Library*)nova_null;
-	/*nova_meta_Nova_Library_closure8930_Nova_getFunction*/nova_funcStruct* l1_Nova_func = (/*nova_meta_Nova_Library_closure8930_Nova_getFunction*/nova_funcStruct*)nova_null;
+	/*nova_meta_Nova_Library_closure8990_Nova_getFunction*/nova_funcStruct* l1_Nova_func = (/*nova_meta_Nova_Library_closure8990_Nova_getFunction*/nova_funcStruct*)nova_null;
 	
 	l1_Nova_strData = generated13(0);
 	l1_Nova_otherStrData = generated14(0);
@@ -57457,7 +57649,7 @@ void example_Nova_Lab_static_Nova_main(example_Nova_Lab* this, nova_datastruct_l
 						(nova_Nova_Object*)(nova_Nova_String_1_Nova_construct(0,
 								(char*)(""))))))));
 	nova_thread_async_Nova_Async_static_Nova_execute((nova_thread_async_Nova_Async*)(0),
-		(nova_thread_async_Nova_Async_closure867_Nova_func)&example_Nova_Lab_static_Nova_lambda80, nova_null, contextArg80);
+		(nova_thread_async_Nova_Async_closure873_Nova_func)&example_Nova_Lab_static_Nova_lambda80, nova_null, contextArg80);
 	l1_Nova_sss = (nova_datastruct_list_Nova_Array*)(nova_datastruct_list_Nova_List_virtual1_Nova_map((nova_datastruct_list_Nova_List*)(nova_datastruct_list_Nova_Array_1_Nova_construct(0,
 					4,
 					(int)(intptr_t)nova_null)),
@@ -57527,15 +57719,15 @@ void example_Nova_Lab_static_Nova_main(example_Nova_Lab* this, nova_datastruct_l
 				(nova_Nova_Object*)(nova_datastruct_list_Nova_List_virtual_Nova_join((nova_datastruct_list_Nova_List*)(l1_Nova_linked),
 						nova_Nova_String_1_Nova_construct(0,
 							(char*)(", ")))))));
-	l1_Nova_x = nova_Nova_String_1_Nova_construct(0,
-		(char*)("Hey its a string"));
+	l1_Nova_x = (nova_Nova_Object*)(nova_Nova_String_1_Nova_construct(0,
+			(char*)("Hey its a string")));
 	nova_io_Nova_Console_1_static_Nova_writeLine((nova_io_Nova_Console*)(0),
-	l1_Nova_x);
+		(nova_Nova_String*)(l1_Nova_x));
 	example_Nova_Lab_static_Nova_takesString(0,
-	l1_Nova_x);
+		(nova_Nova_String*)(l1_Nova_x));
 	if (1)
 	{
-		l1_Nova_x = (nova_Nova_String*)(nova_datastruct_list_Nova_Array_0_Nova_construct(0));
+		l1_Nova_x = (nova_Nova_Object*)(nova_datastruct_list_Nova_Array_0_Nova_construct(0));
 		nova_datastruct_list_Nova_Array_0_Nova_add((nova_datastruct_list_Nova_Array*)(l1_Nova_x),
 			(nova_Nova_Object*)(nova_Nova_String_1_Nova_construct(0,
 					(char*)("hey"))));
@@ -57550,7 +57742,7 @@ void example_Nova_Lab_static_Nova_main(example_Nova_Lab* this, nova_datastruct_l
 				(nova_datastruct_list_Nova_List_closure297_Nova_zipper)&example_Nova_Lab_static_Nova_lambda89, nova_null, contextArg89)),
 		(nova_datastruct_list_Int_Nova_List1Int_closure89_Nova_func)&example_Nova_Lab_static_Nova_lambda90, nova_null, contextArg90);
 	nova_io_Nova_Console_2_static_Nova_writeLine((nova_io_Nova_Console*)(0),
-		(nova_Nova_Object*)(l1_Nova_x));
+	l1_Nova_x);
 	l1_Nova_sq = example_Nova_Square_Nova_construct(0,
 	4);
 	nova_io_Nova_Console_3_static_Nova_writeLine((nova_io_Nova_Console*)(0),
@@ -57785,7 +57977,7 @@ void example_Nova_Lab_static_Nova_main(example_Nova_Lab* this, nova_datastruct_l
 			(char*)("staticFunc")),
 		nova_Nova_String_1_Nova_construct(0,
 			(char*)("nova/test/Test")));
-	((l1_closure892_Nova_func)l1_Nova_func->func)(l1_Nova_func->ref,
+	((l1_closure898_Nova_func)l1_Nova_func->func)(l1_Nova_func->ref,
 	l1_Nova_func->context);
 	nova_io_Nova_Console_static_Nova_log((nova_io_Nova_Console*)(0),
 		(nova_Nova_Object*)(nova_operators_Nova_PlusOperator_virtual1_Nova_plus((nova_operators_Nova_PlusOperator*)(nova_Nova_String_1_Nova_construct(0,
@@ -60932,7 +61124,7 @@ CCLASS_PRIVATE
 (
 	example_Nova_ThreadDemoImplementation,
 	NOVA_THREAD_HANDLE* nova_thread_Nova_Thread_Nova_handle;
-	/*nova_thread_Nova_Thread_closure858_Nova_action*/nova_funcStruct* nova_thread_Nova_Thread_Nova_action;
+	/*nova_thread_Nova_Thread_closure864_Nova_action*/nova_funcStruct* nova_thread_Nova_Thread_Nova_action;
 	char nova_thread_Nova_Thread_Nova_useAction;
 	
 	long_long example_Nova_ThreadDemoImplementation_Nova_millis;
@@ -61899,7 +62091,7 @@ CCLASS_PRIVATE
 (
 	example_network_Nova_ConnectionThread,
 	NOVA_THREAD_HANDLE* nova_thread_Nova_Thread_Nova_handle;
-	/*nova_thread_Nova_Thread_closure858_Nova_action*/nova_funcStruct* nova_thread_Nova_Thread_Nova_action;
+	/*nova_thread_Nova_Thread_closure864_Nova_action*/nova_funcStruct* nova_thread_Nova_Thread_Nova_action;
 	char nova_thread_Nova_Thread_Nova_useAction;
 	
 	nova_network_Nova_ConnectionSocket* example_network_Nova_ConnectionThread_Nova_socket;
@@ -62071,7 +62263,7 @@ CCLASS_PRIVATE
 (
 	example_network_Nova_OutputThread,
 	NOVA_THREAD_HANDLE* nova_thread_Nova_Thread_Nova_handle;
-	/*nova_thread_Nova_Thread_closure858_Nova_action*/nova_funcStruct* nova_thread_Nova_Thread_Nova_action;
+	/*nova_thread_Nova_Thread_closure864_Nova_action*/nova_funcStruct* nova_thread_Nova_Thread_Nova_action;
 	char nova_thread_Nova_Thread_Nova_useAction;
 	
 	nova_network_Nova_ServerSocket* example_network_Nova_OutputThread_Nova_serverSocket;
@@ -62518,7 +62710,7 @@ void stabilitytest_Nova_AssignmentStability_Nova_testEmbeddedPrimitiveAssignment
 	nova_io_Nova_Console_0_static_Nova_write((nova_io_Nova_Console*)(0),
 		nova_Nova_String_1_Nova_construct(0,
 			(char*)("Testing embedded primitive assignments ")));
-	l1_Nova_a = l1_Nova_b = l1_Nova_c = 1;
+	l1_Nova_a = (int)(l1_Nova_b = (int)(l1_Nova_c = (int)(1)));
 	novex_nest_Nova_Nest_static_Nova_expectTrue((novex_nest_Nova_Nest*)(this),
 		l1_Nova_a == 1 && l1_Nova_b == 1 && l1_Nova_c == 1,
 		(nova_Nova_String*)(nova_operators_Nova_PlusOperator_virtual1_Nova_plus((nova_operators_Nova_PlusOperator*)(nova_Nova_String_1_Nova_construct(0,
@@ -62844,7 +63036,7 @@ CCLASS_PRIVATE
 (
 	stabilitytest_Nova_ClientThread,
 	NOVA_THREAD_HANDLE* nova_thread_Nova_Thread_Nova_handle;
-	/*nova_thread_Nova_Thread_closure858_Nova_action*/nova_funcStruct* nova_thread_Nova_Thread_Nova_action;
+	/*nova_thread_Nova_Thread_closure864_Nova_action*/nova_funcStruct* nova_thread_Nova_Thread_Nova_action;
 	char nova_thread_Nova_Thread_Nova_useAction;
 	
 	int stabilitytest_Nova_ClientThread_Nova_port;
@@ -63049,18 +63241,18 @@ void stabilitytest_Nova_ClientThreadPropertyMap_Nova_super(stabilitytest_Nova_Cl
 
 typedef struct nova_exception_Nova_ExceptionData nova_exception_Nova_ExceptionData;
 
-typedef int (*stabilitytest_Nova_ClosureStability_closure894_Nova_closure)(void*, int, int, void*);
-typedef double (*stabilitytest_Nova_ClosureStability_closure895_Nova_closure)(void*, double, void*);
-typedef void (*stabilitytest_Nova_ClosureStability_closure896_Nova_closure)(void*, void*);
-typedef int (*stabilitytest_Nova_ClosureStabilityFunctionMap_closure897_Nova_closure)(void*, int, int, void*);
-typedef int (*stabilitytest_Nova_ClosureStabilityFunctionMap_closure899_Nova_closure)(void*, int, int, void*);
-typedef int (*stabilitytest_Nova_ClosureStabilityFunctionMap_closure899_Nova_closure)(void*, int, int, void*);
-typedef double (*stabilitytest_Nova_ClosureStabilityFunctionMap_closure900_Nova_closure)(void*, double, void*);
-typedef double (*stabilitytest_Nova_ClosureStabilityFunctionMap_closure902_Nova_closure)(void*, double, void*);
-typedef double (*stabilitytest_Nova_ClosureStabilityFunctionMap_closure902_Nova_closure)(void*, double, void*);
-typedef void (*stabilitytest_Nova_ClosureStabilityFunctionMap_closure903_Nova_closure)(void*, void*);
-typedef void (*stabilitytest_Nova_ClosureStabilityFunctionMap_closure905_Nova_closure)(void*, void*);
-typedef void (*stabilitytest_Nova_ClosureStabilityFunctionMap_closure905_Nova_closure)(void*, void*);
+typedef int (*stabilitytest_Nova_ClosureStability_closure900_Nova_closure)(void*, int, int, void*);
+typedef double (*stabilitytest_Nova_ClosureStability_closure901_Nova_closure)(void*, double, void*);
+typedef void (*stabilitytest_Nova_ClosureStability_closure902_Nova_closure)(void*, void*);
+typedef int (*stabilitytest_Nova_ClosureStabilityFunctionMap_closure903_Nova_closure)(void*, int, int, void*);
+typedef int (*stabilitytest_Nova_ClosureStabilityFunctionMap_closure905_Nova_closure)(void*, int, int, void*);
+typedef int (*stabilitytest_Nova_ClosureStabilityFunctionMap_closure905_Nova_closure)(void*, int, int, void*);
+typedef double (*stabilitytest_Nova_ClosureStabilityFunctionMap_closure906_Nova_closure)(void*, double, void*);
+typedef double (*stabilitytest_Nova_ClosureStabilityFunctionMap_closure908_Nova_closure)(void*, double, void*);
+typedef double (*stabilitytest_Nova_ClosureStabilityFunctionMap_closure908_Nova_closure)(void*, double, void*);
+typedef void (*stabilitytest_Nova_ClosureStabilityFunctionMap_closure909_Nova_closure)(void*, void*);
+typedef void (*stabilitytest_Nova_ClosureStabilityFunctionMap_closure911_Nova_closure)(void*, void*);
+typedef void (*stabilitytest_Nova_ClosureStabilityFunctionMap_closure911_Nova_closure)(void*, void*);
 
 CCLASS_PRIVATE
 (
@@ -63071,26 +63263,26 @@ CCLASS_PRIVATE
 int stabilitytest_Nova_ClosureStability_Nova_incrementNumber(stabilitytest_Nova_ClosureStability* this);
 void stabilitytest_Nova_ClosureStability_Nova_testMathClosures(stabilitytest_Nova_ClosureStability* this);
 void stabilitytest_Nova_ClosureStability_Nova_testInstanceClosure(stabilitytest_Nova_ClosureStability* this);
-int stabilitytest_Nova_ClosureStability_static_Nova_callClosure(stabilitytest_Nova_ClosureStability* this, stabilitytest_Nova_ClosureStability_closure894_Nova_closure stabilitytest_Nova_ClosureStability_Nova_closure, void* stabilitytest_Nova_ClosureStability_ref_Nova_closure, void* stabilitytest_Nova_ClosureStability_context_Nova_closure, int a, int b);
-double stabilitytest_Nova_ClosureStability_static_Nova_mathClosure(stabilitytest_Nova_ClosureStability* this, stabilitytest_Nova_ClosureStability_closure895_Nova_closure stabilitytest_Nova_ClosureStability_Nova_closure, void* stabilitytest_Nova_ClosureStability_ref_Nova_closure, void* stabilitytest_Nova_ClosureStability_context_Nova_closure, double value);
-void stabilitytest_Nova_ClosureStability_static_Nova_instanceClosure(stabilitytest_Nova_ClosureStability* this, stabilitytest_Nova_ClosureStability_closure896_Nova_closure stabilitytest_Nova_ClosureStability_Nova_closure, void* stabilitytest_Nova_ClosureStability_ref_Nova_closure, void* stabilitytest_Nova_ClosureStability_context_Nova_closure);
+int stabilitytest_Nova_ClosureStability_static_Nova_callClosure(stabilitytest_Nova_ClosureStability* this, stabilitytest_Nova_ClosureStability_closure900_Nova_closure stabilitytest_Nova_ClosureStability_Nova_closure, void* stabilitytest_Nova_ClosureStability_ref_Nova_closure, void* stabilitytest_Nova_ClosureStability_context_Nova_closure, int a, int b);
+double stabilitytest_Nova_ClosureStability_static_Nova_mathClosure(stabilitytest_Nova_ClosureStability* this, stabilitytest_Nova_ClosureStability_closure901_Nova_closure stabilitytest_Nova_ClosureStability_Nova_closure, void* stabilitytest_Nova_ClosureStability_ref_Nova_closure, void* stabilitytest_Nova_ClosureStability_context_Nova_closure, double value);
+void stabilitytest_Nova_ClosureStability_static_Nova_instanceClosure(stabilitytest_Nova_ClosureStability* this, stabilitytest_Nova_ClosureStability_closure902_Nova_closure stabilitytest_Nova_ClosureStability_Nova_closure, void* stabilitytest_Nova_ClosureStability_ref_Nova_closure, void* stabilitytest_Nova_ClosureStability_context_Nova_closure);
 int stabilitytest_Nova_ClosureStability_static_Nova_multiply(stabilitytest_Nova_ClosureStability* this, int value1, int value2);
 int stabilitytest_Nova_ClosureStability_static_Nova_pow(stabilitytest_Nova_ClosureStability* this, int base, int pow);
 int stabilitytest_Nova_ClosureStabilityFunctionMap_functionMap_Nova_incrementNumber(stabilitytest_Nova_ClosureStabilityFunctionMap* this, stabilitytest_Nova_ClosureStability* reference);
 void stabilitytest_Nova_ClosureStabilityFunctionMap_functionMap_Nova_testMathClosures(stabilitytest_Nova_ClosureStabilityFunctionMap* this, stabilitytest_Nova_ClosureStability* reference);
 void stabilitytest_Nova_ClosureStabilityFunctionMap_functionMap_Nova_testInstanceClosure(stabilitytest_Nova_ClosureStabilityFunctionMap* this, stabilitytest_Nova_ClosureStability* reference);
-int stabilitytest_Nova_ClosureStabilityFunctionMap_functionMap_static_Nova_callClosure(stabilitytest_Nova_ClosureStabilityFunctionMap* this, stabilitytest_Nova_ClosureStabilityFunctionMap_closure897_Nova_closure stabilitytest_Nova_ClosureStabilityFunctionMap_Nova_closure, void* stabilitytest_Nova_ClosureStabilityFunctionMap_ref_Nova_closure, void* stabilitytest_Nova_ClosureStabilityFunctionMap_context_Nova_closure, int a, int b);
-double stabilitytest_Nova_ClosureStabilityFunctionMap_functionMap_static_Nova_mathClosure(stabilitytest_Nova_ClosureStabilityFunctionMap* this, stabilitytest_Nova_ClosureStabilityFunctionMap_closure900_Nova_closure stabilitytest_Nova_ClosureStabilityFunctionMap_Nova_closure, void* stabilitytest_Nova_ClosureStabilityFunctionMap_ref_Nova_closure, void* stabilitytest_Nova_ClosureStabilityFunctionMap_context_Nova_closure, double value);
-void stabilitytest_Nova_ClosureStabilityFunctionMap_functionMap_static_Nova_instanceClosure(stabilitytest_Nova_ClosureStabilityFunctionMap* this, stabilitytest_Nova_ClosureStabilityFunctionMap_closure903_Nova_closure stabilitytest_Nova_ClosureStabilityFunctionMap_Nova_closure, void* stabilitytest_Nova_ClosureStabilityFunctionMap_ref_Nova_closure, void* stabilitytest_Nova_ClosureStabilityFunctionMap_context_Nova_closure);
+int stabilitytest_Nova_ClosureStabilityFunctionMap_functionMap_static_Nova_callClosure(stabilitytest_Nova_ClosureStabilityFunctionMap* this, stabilitytest_Nova_ClosureStabilityFunctionMap_closure903_Nova_closure stabilitytest_Nova_ClosureStabilityFunctionMap_Nova_closure, void* stabilitytest_Nova_ClosureStabilityFunctionMap_ref_Nova_closure, void* stabilitytest_Nova_ClosureStabilityFunctionMap_context_Nova_closure, int a, int b);
+double stabilitytest_Nova_ClosureStabilityFunctionMap_functionMap_static_Nova_mathClosure(stabilitytest_Nova_ClosureStabilityFunctionMap* this, stabilitytest_Nova_ClosureStabilityFunctionMap_closure906_Nova_closure stabilitytest_Nova_ClosureStabilityFunctionMap_Nova_closure, void* stabilitytest_Nova_ClosureStabilityFunctionMap_ref_Nova_closure, void* stabilitytest_Nova_ClosureStabilityFunctionMap_context_Nova_closure, double value);
+void stabilitytest_Nova_ClosureStabilityFunctionMap_functionMap_static_Nova_instanceClosure(stabilitytest_Nova_ClosureStabilityFunctionMap* this, stabilitytest_Nova_ClosureStabilityFunctionMap_closure909_Nova_closure stabilitytest_Nova_ClosureStabilityFunctionMap_Nova_closure, void* stabilitytest_Nova_ClosureStabilityFunctionMap_ref_Nova_closure, void* stabilitytest_Nova_ClosureStabilityFunctionMap_context_Nova_closure);
 int stabilitytest_Nova_ClosureStabilityFunctionMap_functionMap_static_Nova_multiply(stabilitytest_Nova_ClosureStabilityFunctionMap* this, int value1, int value2);
 int stabilitytest_Nova_ClosureStabilityFunctionMap_functionMap_static_Nova_pow(stabilitytest_Nova_ClosureStabilityFunctionMap* this, int base, int pow);
 
 int stabilitytest_Nova_ClosureStability_Nova_incrementNumber(stabilitytest_Nova_ClosureStability* this);
 void stabilitytest_Nova_ClosureStability_Nova_testMathClosures(stabilitytest_Nova_ClosureStability* this);
 void stabilitytest_Nova_ClosureStability_Nova_testInstanceClosure(stabilitytest_Nova_ClosureStability* this);
-int stabilitytest_Nova_ClosureStability_static_Nova_callClosure(stabilitytest_Nova_ClosureStability* this, stabilitytest_Nova_ClosureStability_closure894_Nova_closure stabilitytest_Nova_ClosureStability_Nova_closure, void* stabilitytest_Nova_ClosureStability_ref_Nova_closure, void* stabilitytest_Nova_ClosureStability_context_Nova_closure, int a, int b);
-double stabilitytest_Nova_ClosureStability_static_Nova_mathClosure(stabilitytest_Nova_ClosureStability* this, stabilitytest_Nova_ClosureStability_closure895_Nova_closure stabilitytest_Nova_ClosureStability_Nova_closure, void* stabilitytest_Nova_ClosureStability_ref_Nova_closure, void* stabilitytest_Nova_ClosureStability_context_Nova_closure, double value);
-void stabilitytest_Nova_ClosureStability_static_Nova_instanceClosure(stabilitytest_Nova_ClosureStability* this, stabilitytest_Nova_ClosureStability_closure896_Nova_closure stabilitytest_Nova_ClosureStability_Nova_closure, void* stabilitytest_Nova_ClosureStability_ref_Nova_closure, void* stabilitytest_Nova_ClosureStability_context_Nova_closure);
+int stabilitytest_Nova_ClosureStability_static_Nova_callClosure(stabilitytest_Nova_ClosureStability* this, stabilitytest_Nova_ClosureStability_closure900_Nova_closure stabilitytest_Nova_ClosureStability_Nova_closure, void* stabilitytest_Nova_ClosureStability_ref_Nova_closure, void* stabilitytest_Nova_ClosureStability_context_Nova_closure, int a, int b);
+double stabilitytest_Nova_ClosureStability_static_Nova_mathClosure(stabilitytest_Nova_ClosureStability* this, stabilitytest_Nova_ClosureStability_closure901_Nova_closure stabilitytest_Nova_ClosureStability_Nova_closure, void* stabilitytest_Nova_ClosureStability_ref_Nova_closure, void* stabilitytest_Nova_ClosureStability_context_Nova_closure, double value);
+void stabilitytest_Nova_ClosureStability_static_Nova_instanceClosure(stabilitytest_Nova_ClosureStability* this, stabilitytest_Nova_ClosureStability_closure902_Nova_closure stabilitytest_Nova_ClosureStability_Nova_closure, void* stabilitytest_Nova_ClosureStability_ref_Nova_closure, void* stabilitytest_Nova_ClosureStability_context_Nova_closure);
 int stabilitytest_Nova_ClosureStability_static_Nova_multiply(stabilitytest_Nova_ClosureStability* this, int value1, int value2);
 int stabilitytest_Nova_ClosureStability_static_Nova_pow(stabilitytest_Nova_ClosureStability* this, int base, int pow);
 double stabilitytest_Nova_ClosureStability_Nova_TOLERANCE;
@@ -63147,7 +63339,7 @@ void stabilitytest_Nova_ClosureStability_Nova_testMathClosures(stabilitytest_Nov
 	l1_Nova_value = (double)(0.5);
 	novex_nest_Nova_Nest_static_Nova_expectTrue((novex_nest_Nova_Nest*)(this),
 		stabilitytest_Nova_ClosureStability_static_Nova_callClosure((stabilitytest_Nova_ClosureStability*)(this),
-			(stabilitytest_Nova_ClosureStability_closure894_Nova_closure)&stabilitytest_Nova_ClosureStability_static_Nova_multiply, this, nova_null,
+			(stabilitytest_Nova_ClosureStability_closure900_Nova_closure)&stabilitytest_Nova_ClosureStability_static_Nova_multiply, this, nova_null,
 			l1_Nova_a,
 		l1_Nova_b) == stabilitytest_Nova_ClosureStability_static_Nova_multiply((stabilitytest_Nova_ClosureStability*)(this),
 			l1_Nova_a,
@@ -63156,7 +63348,7 @@ void stabilitytest_Nova_ClosureStability_Nova_testMathClosures(stabilitytest_Nov
 			(char*)("Failed to call multiply(Int, Int) closure")));
 	novex_nest_Nova_Nest_static_Nova_expectTrue((novex_nest_Nova_Nest*)(this),
 		stabilitytest_Nova_ClosureStability_static_Nova_callClosure((stabilitytest_Nova_ClosureStability*)(this),
-			(stabilitytest_Nova_ClosureStability_closure894_Nova_closure)&stabilitytest_Nova_ClosureStability_static_Nova_pow, this, nova_null,
+			(stabilitytest_Nova_ClosureStability_closure900_Nova_closure)&stabilitytest_Nova_ClosureStability_static_Nova_pow, this, nova_null,
 			l1_Nova_a,
 		l1_Nova_b) == stabilitytest_Nova_ClosureStability_static_Nova_pow((stabilitytest_Nova_ClosureStability*)(this),
 			l1_Nova_a,
@@ -63165,14 +63357,14 @@ void stabilitytest_Nova_ClosureStability_Nova_testMathClosures(stabilitytest_Nov
 			(char*)("Failed to call pow(Int, Int) closure")));
 	novex_nest_Nova_Nest_static_Nova_expectTrue((novex_nest_Nova_Nest*)(this),
 		stabilitytest_Nova_ClosureStability_static_Nova_mathClosure((stabilitytest_Nova_ClosureStability*)(this),
-			(stabilitytest_Nova_ClosureStability_closure895_Nova_closure)&nova_math_Nova_Math_static_Nova_sin, nova_math_Nova_Math_static_Nova_sin, nova_null,
+			(stabilitytest_Nova_ClosureStability_closure901_Nova_closure)&nova_math_Nova_Math_static_Nova_sin, nova_math_Nova_Math_static_Nova_sin, nova_null,
 		l1_Nova_value) - nova_math_Nova_Math_static_Nova_sin((nova_math_Nova_Math*)(0),
 		l1_Nova_value) < stabilitytest_Nova_ClosureStability_Nova_TOLERANCE,
 		nova_Nova_String_1_Nova_construct(0,
 			(char*)("Failed to call Math.sin(Double) closure")));
 	novex_nest_Nova_Nest_static_Nova_expectTrue((novex_nest_Nova_Nest*)(this),
 		stabilitytest_Nova_ClosureStability_static_Nova_mathClosure((stabilitytest_Nova_ClosureStability*)(this),
-			(stabilitytest_Nova_ClosureStability_closure895_Nova_closure)&nova_math_Nova_Math_static_Nova_tan, nova_math_Nova_Math_static_Nova_tan, nova_null,
+			(stabilitytest_Nova_ClosureStability_closure901_Nova_closure)&nova_math_Nova_Math_static_Nova_tan, nova_math_Nova_Math_static_Nova_tan, nova_null,
 		l1_Nova_value) - nova_math_Nova_Math_static_Nova_tan((nova_math_Nova_Math*)(0),
 		l1_Nova_value) < stabilitytest_Nova_ClosureStability_Nova_TOLERANCE,
 		nova_Nova_String_1_Nova_construct(0,
@@ -63188,18 +63380,18 @@ void stabilitytest_Nova_ClosureStability_Nova_testInstanceClosure(stabilitytest_
 			(char*)("Testing instance closures ")));
 	l1_Nova_c = stabilitytest_Nova_ClosureStability_Nova_construct(0);
 	stabilitytest_Nova_ClosureStability_static_Nova_instanceClosure((stabilitytest_Nova_ClosureStability*)(this),
-		(stabilitytest_Nova_ClosureStability_closure896_Nova_closure)&stabilitytest_Nova_ClosureStability_Nova_incrementNumber, l1_Nova_c, nova_null);
+		(stabilitytest_Nova_ClosureStability_closure902_Nova_closure)&stabilitytest_Nova_ClosureStability_Nova_incrementNumber, l1_Nova_c, nova_null);
 	novex_nest_Nova_Nest_static_Nova_expectFalse((novex_nest_Nova_Nest*)(this),
 		l1_Nova_c->prv->stabilitytest_Nova_ClosureStability_Nova_number == 0,
 		nova_Nova_String_1_Nova_construct(0,
 			(char*)("Failed to call incrementNumber() instance closure")));
 	stabilitytest_Nova_ClosureStability_static_Nova_instanceClosure((stabilitytest_Nova_ClosureStability*)(this),
-		(stabilitytest_Nova_ClosureStability_closure896_Nova_closure)&stabilitytest_Nova_ClosureStability_Nova_incrementNumber, stabilitytest_Nova_ClosureStability_Nova_construct(0), nova_null);
+		(stabilitytest_Nova_ClosureStability_closure902_Nova_closure)&stabilitytest_Nova_ClosureStability_Nova_incrementNumber, stabilitytest_Nova_ClosureStability_Nova_construct(0), nova_null);
 	stabilitytest_Nova_ClosureStability_static_Nova_instanceClosure((stabilitytest_Nova_ClosureStability*)(this),
-		(stabilitytest_Nova_ClosureStability_closure896_Nova_closure)&stabilitytest_Nova_ClosureStability_Nova_incrementNumber, l1_Nova_c, nova_null);
+		(stabilitytest_Nova_ClosureStability_closure902_Nova_closure)&stabilitytest_Nova_ClosureStability_Nova_incrementNumber, l1_Nova_c, nova_null);
 }
 
-int stabilitytest_Nova_ClosureStability_static_Nova_callClosure(stabilitytest_Nova_ClosureStability* this, stabilitytest_Nova_ClosureStability_closure894_Nova_closure stabilitytest_Nova_ClosureStability_Nova_closure, void* stabilitytest_Nova_ClosureStability_ref_Nova_closure, void* stabilitytest_Nova_ClosureStability_context_Nova_closure, int a, int b)
+int stabilitytest_Nova_ClosureStability_static_Nova_callClosure(stabilitytest_Nova_ClosureStability* this, stabilitytest_Nova_ClosureStability_closure900_Nova_closure stabilitytest_Nova_ClosureStability_Nova_closure, void* stabilitytest_Nova_ClosureStability_ref_Nova_closure, void* stabilitytest_Nova_ClosureStability_context_Nova_closure, int a, int b)
 {
 	return stabilitytest_Nova_ClosureStability_Nova_closure(stabilitytest_Nova_ClosureStability_ref_Nova_closure,
 		a,
@@ -63207,14 +63399,14 @@ int stabilitytest_Nova_ClosureStability_static_Nova_callClosure(stabilitytest_No
 	stabilitytest_Nova_ClosureStability_context_Nova_closure);
 }
 
-double stabilitytest_Nova_ClosureStability_static_Nova_mathClosure(stabilitytest_Nova_ClosureStability* this, stabilitytest_Nova_ClosureStability_closure895_Nova_closure stabilitytest_Nova_ClosureStability_Nova_closure, void* stabilitytest_Nova_ClosureStability_ref_Nova_closure, void* stabilitytest_Nova_ClosureStability_context_Nova_closure, double value)
+double stabilitytest_Nova_ClosureStability_static_Nova_mathClosure(stabilitytest_Nova_ClosureStability* this, stabilitytest_Nova_ClosureStability_closure901_Nova_closure stabilitytest_Nova_ClosureStability_Nova_closure, void* stabilitytest_Nova_ClosureStability_ref_Nova_closure, void* stabilitytest_Nova_ClosureStability_context_Nova_closure, double value)
 {
 	return stabilitytest_Nova_ClosureStability_Nova_closure(stabilitytest_Nova_ClosureStability_ref_Nova_closure,
 		value,
 	stabilitytest_Nova_ClosureStability_context_Nova_closure);
 }
 
-void stabilitytest_Nova_ClosureStability_static_Nova_instanceClosure(stabilitytest_Nova_ClosureStability* this, stabilitytest_Nova_ClosureStability_closure896_Nova_closure stabilitytest_Nova_ClosureStability_Nova_closure, void* stabilitytest_Nova_ClosureStability_ref_Nova_closure, void* stabilitytest_Nova_ClosureStability_context_Nova_closure)
+void stabilitytest_Nova_ClosureStability_static_Nova_instanceClosure(stabilitytest_Nova_ClosureStability* this, stabilitytest_Nova_ClosureStability_closure902_Nova_closure stabilitytest_Nova_ClosureStability_Nova_closure, void* stabilitytest_Nova_ClosureStability_ref_Nova_closure, void* stabilitytest_Nova_ClosureStability_context_Nova_closure)
 {
 	stabilitytest_Nova_ClosureStability_Nova_closure(stabilitytest_Nova_ClosureStability_ref_Nova_closure,
 	stabilitytest_Nova_ClosureStability_context_Nova_closure);
@@ -63268,9 +63460,9 @@ void stabilitytest_Nova_ClosureStability_Nova_super(stabilitytest_Nova_ClosureSt
 int stabilitytest_Nova_ClosureStabilityFunctionMap_functionMap_Nova_incrementNumber(stabilitytest_Nova_ClosureStabilityFunctionMap* this, stabilitytest_Nova_ClosureStability* reference);
 void stabilitytest_Nova_ClosureStabilityFunctionMap_functionMap_Nova_testMathClosures(stabilitytest_Nova_ClosureStabilityFunctionMap* this, stabilitytest_Nova_ClosureStability* reference);
 void stabilitytest_Nova_ClosureStabilityFunctionMap_functionMap_Nova_testInstanceClosure(stabilitytest_Nova_ClosureStabilityFunctionMap* this, stabilitytest_Nova_ClosureStability* reference);
-int stabilitytest_Nova_ClosureStabilityFunctionMap_functionMap_static_Nova_callClosure(stabilitytest_Nova_ClosureStabilityFunctionMap* this, stabilitytest_Nova_ClosureStabilityFunctionMap_closure897_Nova_closure stabilitytest_Nova_ClosureStabilityFunctionMap_Nova_closure, void* stabilitytest_Nova_ClosureStabilityFunctionMap_ref_Nova_closure, void* stabilitytest_Nova_ClosureStabilityFunctionMap_context_Nova_closure, int a, int b);
-double stabilitytest_Nova_ClosureStabilityFunctionMap_functionMap_static_Nova_mathClosure(stabilitytest_Nova_ClosureStabilityFunctionMap* this, stabilitytest_Nova_ClosureStabilityFunctionMap_closure900_Nova_closure stabilitytest_Nova_ClosureStabilityFunctionMap_Nova_closure, void* stabilitytest_Nova_ClosureStabilityFunctionMap_ref_Nova_closure, void* stabilitytest_Nova_ClosureStabilityFunctionMap_context_Nova_closure, double value);
-void stabilitytest_Nova_ClosureStabilityFunctionMap_functionMap_static_Nova_instanceClosure(stabilitytest_Nova_ClosureStabilityFunctionMap* this, stabilitytest_Nova_ClosureStabilityFunctionMap_closure903_Nova_closure stabilitytest_Nova_ClosureStabilityFunctionMap_Nova_closure, void* stabilitytest_Nova_ClosureStabilityFunctionMap_ref_Nova_closure, void* stabilitytest_Nova_ClosureStabilityFunctionMap_context_Nova_closure);
+int stabilitytest_Nova_ClosureStabilityFunctionMap_functionMap_static_Nova_callClosure(stabilitytest_Nova_ClosureStabilityFunctionMap* this, stabilitytest_Nova_ClosureStabilityFunctionMap_closure903_Nova_closure stabilitytest_Nova_ClosureStabilityFunctionMap_Nova_closure, void* stabilitytest_Nova_ClosureStabilityFunctionMap_ref_Nova_closure, void* stabilitytest_Nova_ClosureStabilityFunctionMap_context_Nova_closure, int a, int b);
+double stabilitytest_Nova_ClosureStabilityFunctionMap_functionMap_static_Nova_mathClosure(stabilitytest_Nova_ClosureStabilityFunctionMap* this, stabilitytest_Nova_ClosureStabilityFunctionMap_closure906_Nova_closure stabilitytest_Nova_ClosureStabilityFunctionMap_Nova_closure, void* stabilitytest_Nova_ClosureStabilityFunctionMap_ref_Nova_closure, void* stabilitytest_Nova_ClosureStabilityFunctionMap_context_Nova_closure, double value);
+void stabilitytest_Nova_ClosureStabilityFunctionMap_functionMap_static_Nova_instanceClosure(stabilitytest_Nova_ClosureStabilityFunctionMap* this, stabilitytest_Nova_ClosureStabilityFunctionMap_closure909_Nova_closure stabilitytest_Nova_ClosureStabilityFunctionMap_Nova_closure, void* stabilitytest_Nova_ClosureStabilityFunctionMap_ref_Nova_closure, void* stabilitytest_Nova_ClosureStabilityFunctionMap_context_Nova_closure);
 int stabilitytest_Nova_ClosureStabilityFunctionMap_functionMap_static_Nova_multiply(stabilitytest_Nova_ClosureStabilityFunctionMap* this, int value1, int value2);
 int stabilitytest_Nova_ClosureStabilityFunctionMap_functionMap_static_Nova_pow(stabilitytest_Nova_ClosureStabilityFunctionMap* this, int base, int pow);
 void stabilitytest_Nova_ClosureStabilityFunctionMap_Nova_init_static()
@@ -63329,25 +63521,25 @@ void stabilitytest_Nova_ClosureStabilityFunctionMap_functionMap_Nova_testInstanc
 	stabilitytest_Nova_ClosureStability_Nova_testInstanceClosure((stabilitytest_Nova_ClosureStability*)(reference));
 }
 
-int stabilitytest_Nova_ClosureStabilityFunctionMap_functionMap_static_Nova_callClosure(stabilitytest_Nova_ClosureStabilityFunctionMap* this, stabilitytest_Nova_ClosureStabilityFunctionMap_closure897_Nova_closure stabilitytest_Nova_ClosureStabilityFunctionMap_Nova_closure, void* stabilitytest_Nova_ClosureStabilityFunctionMap_ref_Nova_closure, void* stabilitytest_Nova_ClosureStabilityFunctionMap_context_Nova_closure, int a, int b)
+int stabilitytest_Nova_ClosureStabilityFunctionMap_functionMap_static_Nova_callClosure(stabilitytest_Nova_ClosureStabilityFunctionMap* this, stabilitytest_Nova_ClosureStabilityFunctionMap_closure903_Nova_closure stabilitytest_Nova_ClosureStabilityFunctionMap_Nova_closure, void* stabilitytest_Nova_ClosureStabilityFunctionMap_ref_Nova_closure, void* stabilitytest_Nova_ClosureStabilityFunctionMap_context_Nova_closure, int a, int b)
 {
 	return stabilitytest_Nova_ClosureStability_static_Nova_callClosure((stabilitytest_Nova_ClosureStability*)(0),
-		(stabilitytest_Nova_ClosureStability_closure894_Nova_closure)stabilitytest_Nova_ClosureStabilityFunctionMap_Nova_closure, stabilitytest_Nova_ClosureStabilityFunctionMap_ref_Nova_closure, stabilitytest_Nova_ClosureStabilityFunctionMap_context_Nova_closure,
+		(stabilitytest_Nova_ClosureStability_closure900_Nova_closure)stabilitytest_Nova_ClosureStabilityFunctionMap_Nova_closure, stabilitytest_Nova_ClosureStabilityFunctionMap_ref_Nova_closure, stabilitytest_Nova_ClosureStabilityFunctionMap_context_Nova_closure,
 		a,
 	b);
 }
 
-double stabilitytest_Nova_ClosureStabilityFunctionMap_functionMap_static_Nova_mathClosure(stabilitytest_Nova_ClosureStabilityFunctionMap* this, stabilitytest_Nova_ClosureStabilityFunctionMap_closure900_Nova_closure stabilitytest_Nova_ClosureStabilityFunctionMap_Nova_closure, void* stabilitytest_Nova_ClosureStabilityFunctionMap_ref_Nova_closure, void* stabilitytest_Nova_ClosureStabilityFunctionMap_context_Nova_closure, double value)
+double stabilitytest_Nova_ClosureStabilityFunctionMap_functionMap_static_Nova_mathClosure(stabilitytest_Nova_ClosureStabilityFunctionMap* this, stabilitytest_Nova_ClosureStabilityFunctionMap_closure906_Nova_closure stabilitytest_Nova_ClosureStabilityFunctionMap_Nova_closure, void* stabilitytest_Nova_ClosureStabilityFunctionMap_ref_Nova_closure, void* stabilitytest_Nova_ClosureStabilityFunctionMap_context_Nova_closure, double value)
 {
 	return stabilitytest_Nova_ClosureStability_static_Nova_mathClosure((stabilitytest_Nova_ClosureStability*)(0),
-		(stabilitytest_Nova_ClosureStability_closure895_Nova_closure)stabilitytest_Nova_ClosureStabilityFunctionMap_Nova_closure, stabilitytest_Nova_ClosureStabilityFunctionMap_ref_Nova_closure, stabilitytest_Nova_ClosureStabilityFunctionMap_context_Nova_closure,
+		(stabilitytest_Nova_ClosureStability_closure901_Nova_closure)stabilitytest_Nova_ClosureStabilityFunctionMap_Nova_closure, stabilitytest_Nova_ClosureStabilityFunctionMap_ref_Nova_closure, stabilitytest_Nova_ClosureStabilityFunctionMap_context_Nova_closure,
 	value);
 }
 
-void stabilitytest_Nova_ClosureStabilityFunctionMap_functionMap_static_Nova_instanceClosure(stabilitytest_Nova_ClosureStabilityFunctionMap* this, stabilitytest_Nova_ClosureStabilityFunctionMap_closure903_Nova_closure stabilitytest_Nova_ClosureStabilityFunctionMap_Nova_closure, void* stabilitytest_Nova_ClosureStabilityFunctionMap_ref_Nova_closure, void* stabilitytest_Nova_ClosureStabilityFunctionMap_context_Nova_closure)
+void stabilitytest_Nova_ClosureStabilityFunctionMap_functionMap_static_Nova_instanceClosure(stabilitytest_Nova_ClosureStabilityFunctionMap* this, stabilitytest_Nova_ClosureStabilityFunctionMap_closure909_Nova_closure stabilitytest_Nova_ClosureStabilityFunctionMap_Nova_closure, void* stabilitytest_Nova_ClosureStabilityFunctionMap_ref_Nova_closure, void* stabilitytest_Nova_ClosureStabilityFunctionMap_context_Nova_closure)
 {
 	stabilitytest_Nova_ClosureStability_static_Nova_instanceClosure((stabilitytest_Nova_ClosureStability*)(0),
-		(stabilitytest_Nova_ClosureStability_closure896_Nova_closure)stabilitytest_Nova_ClosureStabilityFunctionMap_Nova_closure, stabilitytest_Nova_ClosureStabilityFunctionMap_ref_Nova_closure, stabilitytest_Nova_ClosureStabilityFunctionMap_context_Nova_closure);
+		(stabilitytest_Nova_ClosureStability_closure902_Nova_closure)stabilitytest_Nova_ClosureStabilityFunctionMap_Nova_closure, stabilitytest_Nova_ClosureStabilityFunctionMap_ref_Nova_closure, stabilitytest_Nova_ClosureStabilityFunctionMap_context_Nova_closure);
 }
 
 int stabilitytest_Nova_ClosureStabilityFunctionMap_functionMap_static_Nova_multiply(stabilitytest_Nova_ClosureStabilityFunctionMap* this, int value1, int value2)
@@ -65729,26 +65921,26 @@ void stabilitytest_Nova_PolymorphicSuperClassPropertyMap_Nova_super(stabilitytes
 typedef struct nova_exception_Nova_ExceptionData nova_exception_Nova_ExceptionData;
 typedef struct nova_Nova_String nova_Nova_String;
 
-typedef nova_Nova_String* (*stabilitytest_Nova_PolymorphismStability_closure906_Nova_closure)(void*, void*);
-typedef nova_Nova_String* (*stabilitytest_Nova_PolymorphismStabilityFunctionMap_closure907_Nova_closure)(void*, void*);
-typedef nova_Nova_String* (*stabilitytest_Nova_PolymorphismStabilityFunctionMap_closure909_Nova_closure)(void*, void*);
-typedef nova_Nova_String* (*stabilitytest_Nova_PolymorphismStabilityFunctionMap_closure909_Nova_closure)(void*, void*);
+typedef nova_Nova_String* (*stabilitytest_Nova_PolymorphismStability_closure912_Nova_closure)(void*, void*);
+typedef nova_Nova_String* (*stabilitytest_Nova_PolymorphismStabilityFunctionMap_closure913_Nova_closure)(void*, void*);
+typedef nova_Nova_String* (*stabilitytest_Nova_PolymorphismStabilityFunctionMap_closure915_Nova_closure)(void*, void*);
+typedef nova_Nova_String* (*stabilitytest_Nova_PolymorphismStabilityFunctionMap_closure915_Nova_closure)(void*, void*);
 
 void stabilitytest_Nova_PolymorphismStability_Nova_testCalls(stabilitytest_Nova_PolymorphismStability* this);
 char stabilitytest_Nova_PolymorphismStability_static_Nova_testSubCall(stabilitytest_Nova_PolymorphismStability* this, stabilitytest_Nova_PolymorphicSuperClass* obj);
 void stabilitytest_Nova_PolymorphismStability_Nova_testClosure(stabilitytest_Nova_PolymorphismStability* this);
-char stabilitytest_Nova_PolymorphismStability_static_Nova_callPolymorphicClosure(stabilitytest_Nova_PolymorphismStability* this, stabilitytest_Nova_PolymorphismStability_closure906_Nova_closure stabilitytest_Nova_PolymorphismStability_Nova_closure, void* stabilitytest_Nova_PolymorphismStability_ref_Nova_closure, void* stabilitytest_Nova_PolymorphismStability_context_Nova_closure);
+char stabilitytest_Nova_PolymorphismStability_static_Nova_callPolymorphicClosure(stabilitytest_Nova_PolymorphismStability* this, stabilitytest_Nova_PolymorphismStability_closure912_Nova_closure stabilitytest_Nova_PolymorphismStability_Nova_closure, void* stabilitytest_Nova_PolymorphismStability_ref_Nova_closure, void* stabilitytest_Nova_PolymorphismStability_context_Nova_closure);
 void stabilitytest_Nova_PolymorphismStability_Nova_testProperty(stabilitytest_Nova_PolymorphismStability* this);
 void stabilitytest_Nova_PolymorphismStabilityFunctionMap_functionMap_Nova_testCalls(stabilitytest_Nova_PolymorphismStabilityFunctionMap* this, stabilitytest_Nova_PolymorphismStability* reference);
 char stabilitytest_Nova_PolymorphismStabilityFunctionMap_functionMap_static_Nova_testSubCall(stabilitytest_Nova_PolymorphismStabilityFunctionMap* this, stabilitytest_Nova_PolymorphicSuperClass* obj);
 void stabilitytest_Nova_PolymorphismStabilityFunctionMap_functionMap_Nova_testClosure(stabilitytest_Nova_PolymorphismStabilityFunctionMap* this, stabilitytest_Nova_PolymorphismStability* reference);
-char stabilitytest_Nova_PolymorphismStabilityFunctionMap_functionMap_static_Nova_callPolymorphicClosure(stabilitytest_Nova_PolymorphismStabilityFunctionMap* this, stabilitytest_Nova_PolymorphismStabilityFunctionMap_closure907_Nova_closure stabilitytest_Nova_PolymorphismStabilityFunctionMap_Nova_closure, void* stabilitytest_Nova_PolymorphismStabilityFunctionMap_ref_Nova_closure, void* stabilitytest_Nova_PolymorphismStabilityFunctionMap_context_Nova_closure);
+char stabilitytest_Nova_PolymorphismStabilityFunctionMap_functionMap_static_Nova_callPolymorphicClosure(stabilitytest_Nova_PolymorphismStabilityFunctionMap* this, stabilitytest_Nova_PolymorphismStabilityFunctionMap_closure913_Nova_closure stabilitytest_Nova_PolymorphismStabilityFunctionMap_Nova_closure, void* stabilitytest_Nova_PolymorphismStabilityFunctionMap_ref_Nova_closure, void* stabilitytest_Nova_PolymorphismStabilityFunctionMap_context_Nova_closure);
 void stabilitytest_Nova_PolymorphismStabilityFunctionMap_functionMap_Nova_testProperty(stabilitytest_Nova_PolymorphismStabilityFunctionMap* this, stabilitytest_Nova_PolymorphismStability* reference);
 
 void stabilitytest_Nova_PolymorphismStability_Nova_testCalls(stabilitytest_Nova_PolymorphismStability* this);
 char stabilitytest_Nova_PolymorphismStability_static_Nova_testSubCall(stabilitytest_Nova_PolymorphismStability* this, stabilitytest_Nova_PolymorphicSuperClass* obj);
 void stabilitytest_Nova_PolymorphismStability_Nova_testClosure(stabilitytest_Nova_PolymorphismStability* this);
-char stabilitytest_Nova_PolymorphismStability_static_Nova_callPolymorphicClosure(stabilitytest_Nova_PolymorphismStability* this, stabilitytest_Nova_PolymorphismStability_closure906_Nova_closure stabilitytest_Nova_PolymorphismStability_Nova_closure, void* stabilitytest_Nova_PolymorphismStability_ref_Nova_closure, void* stabilitytest_Nova_PolymorphismStability_context_Nova_closure);
+char stabilitytest_Nova_PolymorphismStability_static_Nova_callPolymorphicClosure(stabilitytest_Nova_PolymorphismStability* this, stabilitytest_Nova_PolymorphismStability_closure912_Nova_closure stabilitytest_Nova_PolymorphismStability_Nova_closure, void* stabilitytest_Nova_PolymorphismStability_ref_Nova_closure, void* stabilitytest_Nova_PolymorphismStability_context_Nova_closure);
 void stabilitytest_Nova_PolymorphismStability_Nova_testProperty(stabilitytest_Nova_PolymorphismStability* this);
 void stabilitytest_Nova_PolymorphismStability_Nova_init_static()
 {
@@ -65816,7 +66008,7 @@ void stabilitytest_Nova_PolymorphismStability_Nova_testClosure(stabilitytest_Nov
 	l1_Nova_obj = (stabilitytest_Nova_PolymorphicSuperClass*)(stabilitytest_Nova_PolymorphicSubClass_Nova_construct(0));
 	novex_nest_Nova_Nest_static_Nova_expectTrue((novex_nest_Nova_Nest*)(this),
 		stabilitytest_Nova_PolymorphismStability_static_Nova_callPolymorphicClosure((stabilitytest_Nova_PolymorphismStability*)(this),
-			(stabilitytest_Nova_PolymorphismStability_closure906_Nova_closure)l1_Nova_obj->vtable->nova_Nova_Object_virtual_Nova_toString, l1_Nova_obj, nova_null),
+			(stabilitytest_Nova_PolymorphismStability_closure912_Nova_closure)l1_Nova_obj->vtable->nova_Nova_Object_virtual_Nova_toString, l1_Nova_obj, nova_null),
 		nova_Nova_String_1_Nova_construct(0,
 			(char*)("Did not call sub class method as closure")));
 	stabilitytest_Nova_PolymorphicSuperClass_Nova_giveBirth((stabilitytest_Nova_PolymorphicSuperClass*)(l1_Nova_obj));
@@ -65825,12 +66017,12 @@ void stabilitytest_Nova_PolymorphismStability_Nova_testClosure(stabilitytest_Nov
 					(char*)("!")))));
 	novex_nest_Nova_Nest_static_Nova_expectTrue((novex_nest_Nova_Nest*)(this),
 		stabilitytest_Nova_PolymorphismStability_static_Nova_callPolymorphicClosure((stabilitytest_Nova_PolymorphismStability*)(this),
-			(stabilitytest_Nova_PolymorphismStability_closure906_Nova_closure)l1_Nova_obj->stabilitytest_Nova_PolymorphicSuperClass_Nova_child->vtable->nova_Nova_Object_virtual_Nova_toString, l1_Nova_obj->stabilitytest_Nova_PolymorphicSuperClass_Nova_child, nova_null),
+			(stabilitytest_Nova_PolymorphismStability_closure912_Nova_closure)l1_Nova_obj->stabilitytest_Nova_PolymorphicSuperClass_Nova_child->vtable->nova_Nova_Object_virtual_Nova_toString, l1_Nova_obj->stabilitytest_Nova_PolymorphicSuperClass_Nova_child, nova_null),
 		nova_Nova_String_1_Nova_construct(0,
 			(char*)("Did not call sub class method as closure")));
 }
 
-char stabilitytest_Nova_PolymorphismStability_static_Nova_callPolymorphicClosure(stabilitytest_Nova_PolymorphismStability* this, stabilitytest_Nova_PolymorphismStability_closure906_Nova_closure stabilitytest_Nova_PolymorphismStability_Nova_closure, void* stabilitytest_Nova_PolymorphismStability_ref_Nova_closure, void* stabilitytest_Nova_PolymorphismStability_context_Nova_closure)
+char stabilitytest_Nova_PolymorphismStability_static_Nova_callPolymorphicClosure(stabilitytest_Nova_PolymorphismStability* this, stabilitytest_Nova_PolymorphismStability_closure912_Nova_closure stabilitytest_Nova_PolymorphismStability_Nova_closure, void* stabilitytest_Nova_PolymorphismStability_ref_Nova_closure, void* stabilitytest_Nova_PolymorphismStability_context_Nova_closure)
 {
 	return nova_operators_Nova_EqualsOperator_virtual1_Nova_equals((nova_operators_Nova_EqualsOperator*)(stabilitytest_Nova_PolymorphismStability_Nova_closure(stabilitytest_Nova_PolymorphismStability_ref_Nova_closure,
 		stabilitytest_Nova_PolymorphismStability_context_Nova_closure)),
@@ -65890,7 +66082,7 @@ void stabilitytest_Nova_PolymorphismStability_Nova_super(stabilitytest_Nova_Poly
 void stabilitytest_Nova_PolymorphismStabilityFunctionMap_functionMap_Nova_testCalls(stabilitytest_Nova_PolymorphismStabilityFunctionMap* this, stabilitytest_Nova_PolymorphismStability* reference);
 char stabilitytest_Nova_PolymorphismStabilityFunctionMap_functionMap_static_Nova_testSubCall(stabilitytest_Nova_PolymorphismStabilityFunctionMap* this, stabilitytest_Nova_PolymorphicSuperClass* obj);
 void stabilitytest_Nova_PolymorphismStabilityFunctionMap_functionMap_Nova_testClosure(stabilitytest_Nova_PolymorphismStabilityFunctionMap* this, stabilitytest_Nova_PolymorphismStability* reference);
-char stabilitytest_Nova_PolymorphismStabilityFunctionMap_functionMap_static_Nova_callPolymorphicClosure(stabilitytest_Nova_PolymorphismStabilityFunctionMap* this, stabilitytest_Nova_PolymorphismStabilityFunctionMap_closure907_Nova_closure stabilitytest_Nova_PolymorphismStabilityFunctionMap_Nova_closure, void* stabilitytest_Nova_PolymorphismStabilityFunctionMap_ref_Nova_closure, void* stabilitytest_Nova_PolymorphismStabilityFunctionMap_context_Nova_closure);
+char stabilitytest_Nova_PolymorphismStabilityFunctionMap_functionMap_static_Nova_callPolymorphicClosure(stabilitytest_Nova_PolymorphismStabilityFunctionMap* this, stabilitytest_Nova_PolymorphismStabilityFunctionMap_closure913_Nova_closure stabilitytest_Nova_PolymorphismStabilityFunctionMap_Nova_closure, void* stabilitytest_Nova_PolymorphismStabilityFunctionMap_ref_Nova_closure, void* stabilitytest_Nova_PolymorphismStabilityFunctionMap_context_Nova_closure);
 void stabilitytest_Nova_PolymorphismStabilityFunctionMap_functionMap_Nova_testProperty(stabilitytest_Nova_PolymorphismStabilityFunctionMap* this, stabilitytest_Nova_PolymorphismStability* reference);
 void stabilitytest_Nova_PolymorphismStabilityFunctionMap_Nova_init_static()
 {
@@ -65949,10 +66141,10 @@ void stabilitytest_Nova_PolymorphismStabilityFunctionMap_functionMap_Nova_testCl
 	stabilitytest_Nova_PolymorphismStability_Nova_testClosure((stabilitytest_Nova_PolymorphismStability*)(reference));
 }
 
-char stabilitytest_Nova_PolymorphismStabilityFunctionMap_functionMap_static_Nova_callPolymorphicClosure(stabilitytest_Nova_PolymorphismStabilityFunctionMap* this, stabilitytest_Nova_PolymorphismStabilityFunctionMap_closure907_Nova_closure stabilitytest_Nova_PolymorphismStabilityFunctionMap_Nova_closure, void* stabilitytest_Nova_PolymorphismStabilityFunctionMap_ref_Nova_closure, void* stabilitytest_Nova_PolymorphismStabilityFunctionMap_context_Nova_closure)
+char stabilitytest_Nova_PolymorphismStabilityFunctionMap_functionMap_static_Nova_callPolymorphicClosure(stabilitytest_Nova_PolymorphismStabilityFunctionMap* this, stabilitytest_Nova_PolymorphismStabilityFunctionMap_closure913_Nova_closure stabilitytest_Nova_PolymorphismStabilityFunctionMap_Nova_closure, void* stabilitytest_Nova_PolymorphismStabilityFunctionMap_ref_Nova_closure, void* stabilitytest_Nova_PolymorphismStabilityFunctionMap_context_Nova_closure)
 {
 	return stabilitytest_Nova_PolymorphismStability_static_Nova_callPolymorphicClosure((stabilitytest_Nova_PolymorphismStability*)(0),
-		(stabilitytest_Nova_PolymorphismStability_closure906_Nova_closure)stabilitytest_Nova_PolymorphismStabilityFunctionMap_Nova_closure, stabilitytest_Nova_PolymorphismStabilityFunctionMap_ref_Nova_closure, stabilitytest_Nova_PolymorphismStabilityFunctionMap_context_Nova_closure);
+		(stabilitytest_Nova_PolymorphismStability_closure912_Nova_closure)stabilitytest_Nova_PolymorphismStabilityFunctionMap_Nova_closure, stabilitytest_Nova_PolymorphismStabilityFunctionMap_ref_Nova_closure, stabilitytest_Nova_PolymorphismStabilityFunctionMap_context_Nova_closure);
 }
 
 void stabilitytest_Nova_PolymorphismStabilityFunctionMap_functionMap_Nova_testProperty(stabilitytest_Nova_PolymorphismStabilityFunctionMap* this, stabilitytest_Nova_PolymorphismStability* reference)
@@ -66013,16 +66205,16 @@ void stabilitytest_Nova_PolymorphismStabilityPropertyMap_Nova_super(stabilitytes
 typedef struct
 {
 	/* var
-	Byte sum */ char* stabilitytest_Nova_PrimitiveOverloadStability_Nova_sum;
+	Int sum */ int* stabilitytest_Nova_PrimitiveOverloadStability_Nova_sum;
 	/* var
-	Byte counter */ char* stabilitytest_Nova_PrimitiveOverloadStability_Nova_counter;
+	Int counter */ int* stabilitytest_Nova_PrimitiveOverloadStability_Nova_counter;
 } Context120;
 typedef struct
 {
 	/* var
-	Byte sum */ char* stabilitytest_Nova_PrimitiveOverloadStability_Nova_sum;
+	Int sum */ int* stabilitytest_Nova_PrimitiveOverloadStability_Nova_sum;
 	/* var
-	Byte counter */ char* stabilitytest_Nova_PrimitiveOverloadStability_Nova_counter;
+	Int counter */ int* stabilitytest_Nova_PrimitiveOverloadStability_Nova_counter;
 } Context121;
 
 
@@ -66092,8 +66284,8 @@ void stabilitytest_Nova_PrimitiveOverloadStability_Nova_test(stabilitytest_Nova_
 		10,
 		(nova_Nova_Object*)(nova_Nova_String_1_Nova_construct(0,
 				(char*)("test2"))));
-	l1_Nova_sum = 0;
-	l1_Nova_counter = 0;
+	l1_Nova_sum = (int)(0);
+	l1_Nova_counter = (int)(0);
 	nova_local_0 = (nova_datastruct_Int_V_Nova_HashMapIterator1Int*)(nova_datastruct_list_Nova_Iterable_virtual_Accessorfunc_Nova_iterator((nova_datastruct_list_Nova_Iterable*)((l1_Nova_map1))));
 	nova_datastruct_Int_Value_Nova_Pair1Int* l2_Nova_entry;
 	while (nova_datastruct_list_Nova_Iterator_virtual_Accessorfunc_Nova_hasNext((nova_datastruct_list_Nova_Iterator*)(nova_local_0)))
@@ -66133,8 +66325,8 @@ void stabilitytest_Nova_PrimitiveOverloadStability_Nova_testPrimitiveKeyAndValue
 	l1_Nova_map2 = nova_datastruct_Int_Int_Nova_HashMap1Int2Int_int_int_HashMap1Int2Int0_Nova_construct(0,
 		(int)(intptr_t)nova_null,
 		(int)(intptr_t)nova_null);
-	l1_Nova_sum = 0;
-	l1_Nova_counter = 0;
+	l1_Nova_sum = (int)(0);
+	l1_Nova_counter = (int)(0);
 	nova_datastruct_Int_Int_Nova_HashMap1Int2Int_int_int_int_Nova_set((nova_datastruct_Int_Int_Nova_HashMap1Int2Int*)(l1_Nova_map2),
 		1,
 	49);
@@ -66195,8 +66387,8 @@ void stabilitytest_Nova_PrimitiveOverloadStability_Nova_testFunctionalPrimitiveK
 		10,
 		(nova_Nova_Object*)(nova_Nova_String_1_Nova_construct(0,
 				(char*)("test2"))));
-	l1_Nova_sum = 0;
-	l1_Nova_counter = 0;
+	l1_Nova_sum = (int)(0);
+	l1_Nova_counter = (int)(0);
 	nova_datastruct_list_Nova_List_virtual1_Nova_forEach((nova_datastruct_list_Nova_List*)(l1_Nova_map1),
 		(nova_datastruct_list_Nova_List_closure761_Nova_func)&stabilitytest_Nova_PrimitiveOverloadStability_Nova_lambda95, this, contextArg95);
 	novex_nest_Nova_Nest_static_Nova_expectTrue((novex_nest_Nova_Nest*)(this),
@@ -66232,8 +66424,8 @@ void stabilitytest_Nova_PrimitiveOverloadStability_Nova_testFunctionalPrimitiveK
 	l1_Nova_map2 = nova_datastruct_Int_Int_Nova_HashMap1Int2Int_int_int_HashMap1Int2Int0_Nova_construct(0,
 		(int)(intptr_t)nova_null,
 		(int)(intptr_t)nova_null);
-	l1_Nova_sum = 0;
-	l1_Nova_counter = 0;
+	l1_Nova_sum = (int)(0);
+	l1_Nova_counter = (int)(0);
 	nova_datastruct_Int_Int_Nova_HashMap1Int2Int_int_int_int_Nova_set((nova_datastruct_Int_Int_Nova_HashMap1Int2Int*)(l1_Nova_map2),
 		1,
 	49);
@@ -66856,6 +67048,7 @@ void stabilitytest_Nova_StabilityTest_static_Nova_main(stabilitytest_Nova_Stabil
 	l1_Nova_test = stabilitytest_Nova_StabilityTest_Nova_construct(0);
 	l1_Nova_results = novex_nest_ui_Nova_ResultWindow_Nova_construct(0);
 	l1_Nova_timer = nova_time_Nova_Timer_Nova_start((nova_time_Nova_Timer*)(nova_time_Nova_Timer_Nova_construct(0)));
+	stabilitytest_Nova_StabilityTest_Nova_runTests((stabilitytest_Nova_StabilityTest*)(l1_Nova_test));
 	nova_time_Nova_Timer_virtual_Nova_stop((nova_time_Nova_Timer*)(l1_Nova_timer));
 	nova_io_Nova_Console_1_static_Nova_writeLine((nova_io_Nova_Console*)(0),
 		(nova_Nova_String*)(nova_operators_Nova_PlusOperator_virtual1_Nova_plus((nova_operators_Nova_PlusOperator*)(nova_Nova_String_1_Nova_construct(0,
@@ -67487,284 +67680,292 @@ typedef struct
 
 typedef struct nova_exception_Nova_ExceptionData nova_exception_Nova_ExceptionData;
 
-typedef int (*stabilitytest_Nova_SyntaxStability_closure910_Nova_something)(void*, int, void*);
-typedef void (*l1_closure915_Nova_func)(void*, void*);
-typedef void (*l1_closure915_Nova_func)(void*, void*);
-typedef void (*stabilitytest_Nova_SyntaxStability_closure1201_Nova_getFunc)(void*, void*);
-typedef void (*stabilitytest_Nova_SyntaxStability_closure1201_Nova_getFunc)(void*, void*);
-typedef void (*l1_closure915_Nova_func)(void*, void*);
-typedef void (*stabilitytest_Nova_SyntaxStability_closure1201_Nova_getFunc)(void*, void*);
-typedef void (*l1_closure921_Nova_func2)(void*, void*);
-typedef void (*l1_closure921_Nova_func2)(void*, void*);
-typedef void (*stabilitytest_Nova_SyntaxStability_closure1204_Nova_inlineGetFunc)(void*, void*);
-typedef void (*stabilitytest_Nova_SyntaxStability_closure1204_Nova_inlineGetFunc)(void*, void*);
-typedef void (*l1_closure921_Nova_func2)(void*, void*);
-typedef void (*stabilitytest_Nova_SyntaxStability_closure1204_Nova_inlineGetFunc)(void*, void*);
-typedef void (*l1_closure927_Nova_func3)(void*, void*);
-typedef void (*l1_closure927_Nova_func3)(void*, void*);
-typedef void (*stabilitytest_Nova_SyntaxStability_closure1207_Nova_inlineGetFunc2)(void*, void*);
-typedef void (*stabilitytest_Nova_SyntaxStability_closure1207_Nova_inlineGetFunc2)(void*, void*);
-typedef void (*l1_closure927_Nova_func3)(void*, void*);
-typedef void (*stabilitytest_Nova_SyntaxStability_closure1207_Nova_inlineGetFunc2)(void*, void*);
-typedef /*stabilitytest_Nova_SyntaxStability_closure943_Nova_inlineGetFunc*/nova_funcStruct* (*l1_closure940_Nova_chained)(void*, void*);
-typedef void (*stabilitytest_Nova_SyntaxStability_closure943_Nova_inlineGetFunc)(void*, void*);
-typedef void (*stabilitytest_Nova_SyntaxStability_closure943_Nova_inlineGetFunc)(void*, void*);
-typedef /*stabilitytest_Nova_SyntaxStability_closure943_Nova_inlineGetFunc*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure932_Nova_inlineGetFunc)(void*, void*);
-typedef /*stabilitytest_Nova_SyntaxStability_closure943_Nova_inlineGetFunc*/nova_funcStruct* (*l1_closure940_Nova_chained)(void*, void*);
-typedef /*stabilitytest_Nova_SyntaxStability_closure1213_Nova_inlineGetFunc*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure1214_Nova_chainedFuncReference)(void*, void*);
-typedef void (*stabilitytest_Nova_SyntaxStability_closure1213_Nova_inlineGetFunc)(void*, void*);
-typedef void (*stabilitytest_Nova_SyntaxStability_closure1213_Nova_inlineGetFunc)(void*, void*);
-typedef /*stabilitytest_Nova_SyntaxStability_closure1213_Nova_inlineGetFunc*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure937_Nova_inlineGetFunc)(void*, void*);
-typedef /*stabilitytest_Nova_SyntaxStability_closure1213_Nova_inlineGetFunc*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure1214_Nova_chainedFuncReference)(void*, void*);
-typedef void (*stabilitytest_Nova_SyntaxStability_closure943_Nova_inlineGetFunc)(void*, void*);
-typedef /*stabilitytest_Nova_SyntaxStability_closure943_Nova_inlineGetFunc*/nova_funcStruct* (*l1_closure940_Nova_chained)(void*, void*);
-typedef void (*stabilitytest_Nova_SyntaxStability_closure1213_Nova_inlineGetFunc)(void*, void*);
-typedef /*stabilitytest_Nova_SyntaxStability_closure1213_Nova_inlineGetFunc*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure1214_Nova_chainedFuncReference)(void*, void*);
-typedef void (*stabilitytest_Nova_SyntaxStability_closure943_Nova_inlineGetFunc)(void*, void*);
-typedef /*stabilitytest_Nova_SyntaxStability_closure959_Nova_inlineGetFunc*/nova_funcStruct* (*l1_closure954_Nova_chained)(void*, void*);
-typedef void (*stabilitytest_Nova_SyntaxStability_closure959_Nova_inlineGetFunc)(void*, void*);
-typedef void (*stabilitytest_Nova_SyntaxStability_closure959_Nova_inlineGetFunc)(void*, void*);
-typedef /*stabilitytest_Nova_SyntaxStability_closure959_Nova_inlineGetFunc*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure947_Nova_inlineGetFunc)(void*, void*);
-typedef /*stabilitytest_Nova_SyntaxStability_closure959_Nova_inlineGetFunc*/nova_funcStruct* (*l1_closure954_Nova_chained)(void*, void*);
-typedef void (*l1_closure958_Nova_c)(void*, void*);
-typedef void (*l1_closure958_Nova_c)(void*, void*);
-typedef void (*stabilitytest_Nova_SyntaxStability_closure1213_Nova_inlineGetFunc)(void*, void*);
-typedef /*stabilitytest_Nova_SyntaxStability_closure1213_Nova_inlineGetFunc*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure1214_Nova_chainedFuncReference)(void*, void*);
-typedef void (*stabilitytest_Nova_SyntaxStability_closure959_Nova_inlineGetFunc)(void*, void*);
-typedef /*stabilitytest_Nova_SyntaxStability_closure959_Nova_inlineGetFunc*/nova_funcStruct* (*l1_closure954_Nova_chained)(void*, void*);
-typedef void (*stabilitytest_Nova_SyntaxStability_closure1213_Nova_inlineGetFunc)(void*, void*);
-typedef /*stabilitytest_Nova_SyntaxStability_closure1213_Nova_inlineGetFunc*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure1214_Nova_chainedFuncReference)(void*, void*);
-typedef void (*stabilitytest_Nova_SyntaxStability_closure959_Nova_inlineGetFunc)(void*, void*);
-typedef void (*l1_closure958_Nova_c)(void*, void*);
-typedef void (*stabilitytest_Nova_SyntaxStability_closure959_Nova_inlineGetFunc)(void*, void*);
-typedef /*stabilitytest_Nova_SyntaxStability_closure983_Nova_chainedFuncReference*/nova_funcStruct* (*l1_closure978_Nova_chainX3)(void*, void*);
-typedef /*stabilitytest_Nova_SyntaxStability_closure985_Nova_inlineGetFunc*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure983_Nova_chainedFuncReference)(void*, void*);
-typedef void (*stabilitytest_Nova_SyntaxStability_closure985_Nova_inlineGetFunc)(void*, void*);
-typedef void (*stabilitytest_Nova_SyntaxStability_closure985_Nova_inlineGetFunc)(void*, void*);
-typedef /*stabilitytest_Nova_SyntaxStability_closure985_Nova_inlineGetFunc*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure964_Nova_inlineGetFunc)(void*, void*);
-typedef /*stabilitytest_Nova_SyntaxStability_closure985_Nova_inlineGetFunc*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure983_Nova_chainedFuncReference)(void*, void*);
-typedef /*stabilitytest_Nova_SyntaxStability_closure983_Nova_chainedFuncReference*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure966_Nova_chainedFuncReference)(void*, void*);
-typedef /*stabilitytest_Nova_SyntaxStability_closure983_Nova_chainedFuncReference*/nova_funcStruct* (*l1_closure978_Nova_chainX3)(void*, void*);
-typedef /*stabilitytest_Nova_SyntaxStability_closure1224_Nova_chainedFuncReference*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure1225_Nova_chainedFuncReference3)(void*, void*);
-typedef /*stabilitytest_Nova_SyntaxStability_closure1223_Nova_inlineGetFunc*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure1224_Nova_chainedFuncReference)(void*, void*);
-typedef void (*stabilitytest_Nova_SyntaxStability_closure1223_Nova_inlineGetFunc)(void*, void*);
-typedef void (*stabilitytest_Nova_SyntaxStability_closure1223_Nova_inlineGetFunc)(void*, void*);
-typedef /*stabilitytest_Nova_SyntaxStability_closure1223_Nova_inlineGetFunc*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure972_Nova_inlineGetFunc)(void*, void*);
-typedef /*stabilitytest_Nova_SyntaxStability_closure1223_Nova_inlineGetFunc*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure1224_Nova_chainedFuncReference)(void*, void*);
-typedef /*stabilitytest_Nova_SyntaxStability_closure1224_Nova_chainedFuncReference*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure974_Nova_chainedFuncReference)(void*, void*);
-typedef /*stabilitytest_Nova_SyntaxStability_closure1224_Nova_chainedFuncReference*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure1225_Nova_chainedFuncReference3)(void*, void*);
-typedef void (*stabilitytest_Nova_SyntaxStability_closure985_Nova_inlineGetFunc)(void*, void*);
-typedef /*stabilitytest_Nova_SyntaxStability_closure985_Nova_inlineGetFunc*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure983_Nova_chainedFuncReference)(void*, void*);
-typedef /*stabilitytest_Nova_SyntaxStability_closure983_Nova_chainedFuncReference*/nova_funcStruct* (*l1_closure978_Nova_chainX3)(void*, void*);
-typedef void (*stabilitytest_Nova_SyntaxStability_closure1223_Nova_inlineGetFunc)(void*, void*);
-typedef /*stabilitytest_Nova_SyntaxStability_closure1223_Nova_inlineGetFunc*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure1224_Nova_chainedFuncReference)(void*, void*);
-typedef /*stabilitytest_Nova_SyntaxStability_closure1224_Nova_chainedFuncReference*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure1225_Nova_chainedFuncReference3)(void*, void*);
-typedef void (*stabilitytest_Nova_SyntaxStability_closure985_Nova_inlineGetFunc)(void*, void*);
-typedef /*stabilitytest_Nova_SyntaxStability_closure985_Nova_inlineGetFunc*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure983_Nova_chainedFuncReference)(void*, void*);
-typedef void (*stabilitytest_Nova_SyntaxStability_closure985_Nova_inlineGetFunc)(void*, void*);
-typedef void (*stabilitytest_Nova_SyntaxStability_closure985_Nova_inlineGetFunc)(void*, void*);
-typedef /*stabilitytest_Nova_SyntaxStability_closure1018_Nova_chainedFuncReference3*/nova_funcStruct* (*l1_closure1011_Nova_chainX4)(void*, void*);
-typedef /*stabilitytest_Nova_SyntaxStability_closure1024_Nova_chainedFuncReference*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure1018_Nova_chainedFuncReference3)(void*, void*);
-typedef /*stabilitytest_Nova_SyntaxStability_closure1023_Nova_inlineGetFunc*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure1024_Nova_chainedFuncReference)(void*, void*);
-typedef void (*stabilitytest_Nova_SyntaxStability_closure1023_Nova_inlineGetFunc)(void*, void*);
-typedef void (*stabilitytest_Nova_SyntaxStability_closure1023_Nova_inlineGetFunc)(void*, void*);
-typedef /*stabilitytest_Nova_SyntaxStability_closure1023_Nova_inlineGetFunc*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure991_Nova_inlineGetFunc)(void*, void*);
-typedef /*stabilitytest_Nova_SyntaxStability_closure1023_Nova_inlineGetFunc*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure1024_Nova_chainedFuncReference)(void*, void*);
-typedef /*stabilitytest_Nova_SyntaxStability_closure1024_Nova_chainedFuncReference*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure993_Nova_chainedFuncReference)(void*, void*);
-typedef /*stabilitytest_Nova_SyntaxStability_closure1024_Nova_chainedFuncReference*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure1018_Nova_chainedFuncReference3)(void*, void*);
-typedef /*stabilitytest_Nova_SyntaxStability_closure1018_Nova_chainedFuncReference3*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure995_Nova_chainedFuncReference3)(void*, void*);
-typedef /*stabilitytest_Nova_SyntaxStability_closure1018_Nova_chainedFuncReference3*/nova_funcStruct* (*l1_closure1011_Nova_chainX4)(void*, void*);
-typedef /*stabilitytest_Nova_SyntaxStability_closure1239_Nova_chainedFuncReference3*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure1240_Nova_chainedFuncReference4)(void*, void*);
-typedef /*stabilitytest_Nova_SyntaxStability_closure1238_Nova_chainedFuncReference*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure1239_Nova_chainedFuncReference3)(void*, void*);
-typedef /*stabilitytest_Nova_SyntaxStability_closure1237_Nova_inlineGetFunc*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure1238_Nova_chainedFuncReference)(void*, void*);
-typedef void (*stabilitytest_Nova_SyntaxStability_closure1237_Nova_inlineGetFunc)(void*, void*);
-typedef void (*stabilitytest_Nova_SyntaxStability_closure1237_Nova_inlineGetFunc)(void*, void*);
-typedef /*stabilitytest_Nova_SyntaxStability_closure1237_Nova_inlineGetFunc*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure1002_Nova_inlineGetFunc)(void*, void*);
-typedef /*stabilitytest_Nova_SyntaxStability_closure1237_Nova_inlineGetFunc*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure1238_Nova_chainedFuncReference)(void*, void*);
-typedef /*stabilitytest_Nova_SyntaxStability_closure1238_Nova_chainedFuncReference*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure1004_Nova_chainedFuncReference)(void*, void*);
-typedef /*stabilitytest_Nova_SyntaxStability_closure1238_Nova_chainedFuncReference*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure1239_Nova_chainedFuncReference3)(void*, void*);
-typedef /*stabilitytest_Nova_SyntaxStability_closure1239_Nova_chainedFuncReference3*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure1006_Nova_chainedFuncReference3)(void*, void*);
-typedef /*stabilitytest_Nova_SyntaxStability_closure1239_Nova_chainedFuncReference3*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure1240_Nova_chainedFuncReference4)(void*, void*);
-typedef void (*stabilitytest_Nova_SyntaxStability_closure1023_Nova_inlineGetFunc)(void*, void*);
-typedef /*stabilitytest_Nova_SyntaxStability_closure1023_Nova_inlineGetFunc*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure1024_Nova_chainedFuncReference)(void*, void*);
-typedef /*stabilitytest_Nova_SyntaxStability_closure1024_Nova_chainedFuncReference*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure1018_Nova_chainedFuncReference3)(void*, void*);
-typedef /*stabilitytest_Nova_SyntaxStability_closure1018_Nova_chainedFuncReference3*/nova_funcStruct* (*l1_closure1011_Nova_chainX4)(void*, void*);
-typedef void (*stabilitytest_Nova_SyntaxStability_closure1237_Nova_inlineGetFunc)(void*, void*);
-typedef /*stabilitytest_Nova_SyntaxStability_closure1237_Nova_inlineGetFunc*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure1238_Nova_chainedFuncReference)(void*, void*);
-typedef /*stabilitytest_Nova_SyntaxStability_closure1238_Nova_chainedFuncReference*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure1239_Nova_chainedFuncReference3)(void*, void*);
-typedef /*stabilitytest_Nova_SyntaxStability_closure1239_Nova_chainedFuncReference3*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure1240_Nova_chainedFuncReference4)(void*, void*);
-typedef void (*stabilitytest_Nova_SyntaxStability_closure1023_Nova_inlineGetFunc)(void*, void*);
-typedef /*stabilitytest_Nova_SyntaxStability_closure1023_Nova_inlineGetFunc*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure1024_Nova_chainedFuncReference)(void*, void*);
-typedef /*stabilitytest_Nova_SyntaxStability_closure1024_Nova_chainedFuncReference*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure1018_Nova_chainedFuncReference3)(void*, void*);
-typedef void (*stabilitytest_Nova_SyntaxStability_closure1023_Nova_inlineGetFunc)(void*, void*);
-typedef /*stabilitytest_Nova_SyntaxStability_closure1023_Nova_inlineGetFunc*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure1024_Nova_chainedFuncReference)(void*, void*);
-typedef void (*stabilitytest_Nova_SyntaxStability_closure1023_Nova_inlineGetFunc)(void*, void*);
-typedef /*stabilitytest_Nova_SyntaxStability_closure1023_Nova_inlineGetFunc*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure1024_Nova_chainedFuncReference)(void*, void*);
-typedef void (*stabilitytest_Nova_SyntaxStability_closure1023_Nova_inlineGetFunc)(void*, void*);
-typedef /*stabilitytest_Nova_SyntaxStability_closure1023_Nova_inlineGetFunc*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure1024_Nova_chainedFuncReference)(void*, void*);
-typedef /*stabilitytest_Nova_SyntaxStability_closure1066_Nova_chainedFuncReference4*/nova_funcStruct* (*l1_closure1057_Nova_chainX5)(void*, void*);
-typedef /*stabilitytest_Nova_SyntaxStability_closure1078_Nova_chainedFuncReference3*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure1066_Nova_chainedFuncReference4)(void*, void*);
-typedef /*stabilitytest_Nova_SyntaxStability_closure1077_Nova_chainedFuncReference*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure1078_Nova_chainedFuncReference3)(void*, void*);
-typedef /*stabilitytest_Nova_SyntaxStability_closure1076_Nova_inlineGetFunc*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure1077_Nova_chainedFuncReference)(void*, void*);
-typedef void (*stabilitytest_Nova_SyntaxStability_closure1076_Nova_inlineGetFunc)(void*, void*);
-typedef void (*stabilitytest_Nova_SyntaxStability_closure1076_Nova_inlineGetFunc)(void*, void*);
-typedef /*stabilitytest_Nova_SyntaxStability_closure1076_Nova_inlineGetFunc*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure1031_Nova_inlineGetFunc)(void*, void*);
-typedef /*stabilitytest_Nova_SyntaxStability_closure1076_Nova_inlineGetFunc*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure1077_Nova_chainedFuncReference)(void*, void*);
-typedef /*stabilitytest_Nova_SyntaxStability_closure1077_Nova_chainedFuncReference*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure1033_Nova_chainedFuncReference)(void*, void*);
-typedef /*stabilitytest_Nova_SyntaxStability_closure1077_Nova_chainedFuncReference*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure1078_Nova_chainedFuncReference3)(void*, void*);
-typedef /*stabilitytest_Nova_SyntaxStability_closure1078_Nova_chainedFuncReference3*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure1035_Nova_chainedFuncReference3)(void*, void*);
-typedef /*stabilitytest_Nova_SyntaxStability_closure1078_Nova_chainedFuncReference3*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure1066_Nova_chainedFuncReference4)(void*, void*);
-typedef /*stabilitytest_Nova_SyntaxStability_closure1066_Nova_chainedFuncReference4*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure1037_Nova_chainedFuncReference4)(void*, void*);
-typedef /*stabilitytest_Nova_SyntaxStability_closure1066_Nova_chainedFuncReference4*/nova_funcStruct* (*l1_closure1057_Nova_chainX5)(void*, void*);
-typedef /*stabilitytest_Nova_SyntaxStability_closure1258_Nova_chainedFuncReference4*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure1259_Nova_chainedFuncReference5)(void*, void*);
-typedef /*stabilitytest_Nova_SyntaxStability_closure1257_Nova_chainedFuncReference3*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure1258_Nova_chainedFuncReference4)(void*, void*);
-typedef /*stabilitytest_Nova_SyntaxStability_closure1256_Nova_chainedFuncReference*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure1257_Nova_chainedFuncReference3)(void*, void*);
-typedef /*stabilitytest_Nova_SyntaxStability_closure1255_Nova_inlineGetFunc*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure1256_Nova_chainedFuncReference)(void*, void*);
-typedef void (*stabilitytest_Nova_SyntaxStability_closure1255_Nova_inlineGetFunc)(void*, void*);
-typedef void (*stabilitytest_Nova_SyntaxStability_closure1255_Nova_inlineGetFunc)(void*, void*);
-typedef /*stabilitytest_Nova_SyntaxStability_closure1255_Nova_inlineGetFunc*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure1045_Nova_inlineGetFunc)(void*, void*);
-typedef /*stabilitytest_Nova_SyntaxStability_closure1255_Nova_inlineGetFunc*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure1256_Nova_chainedFuncReference)(void*, void*);
-typedef /*stabilitytest_Nova_SyntaxStability_closure1256_Nova_chainedFuncReference*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure1047_Nova_chainedFuncReference)(void*, void*);
-typedef /*stabilitytest_Nova_SyntaxStability_closure1256_Nova_chainedFuncReference*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure1257_Nova_chainedFuncReference3)(void*, void*);
-typedef /*stabilitytest_Nova_SyntaxStability_closure1257_Nova_chainedFuncReference3*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure1049_Nova_chainedFuncReference3)(void*, void*);
-typedef /*stabilitytest_Nova_SyntaxStability_closure1257_Nova_chainedFuncReference3*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure1258_Nova_chainedFuncReference4)(void*, void*);
-typedef /*stabilitytest_Nova_SyntaxStability_closure1258_Nova_chainedFuncReference4*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure1051_Nova_chainedFuncReference4)(void*, void*);
-typedef /*stabilitytest_Nova_SyntaxStability_closure1258_Nova_chainedFuncReference4*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure1259_Nova_chainedFuncReference5)(void*, void*);
-typedef void (*stabilitytest_Nova_SyntaxStability_closure1076_Nova_inlineGetFunc)(void*, void*);
-typedef /*stabilitytest_Nova_SyntaxStability_closure1076_Nova_inlineGetFunc*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure1077_Nova_chainedFuncReference)(void*, void*);
-typedef /*stabilitytest_Nova_SyntaxStability_closure1077_Nova_chainedFuncReference*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure1078_Nova_chainedFuncReference3)(void*, void*);
-typedef /*stabilitytest_Nova_SyntaxStability_closure1078_Nova_chainedFuncReference3*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure1066_Nova_chainedFuncReference4)(void*, void*);
-typedef /*stabilitytest_Nova_SyntaxStability_closure1066_Nova_chainedFuncReference4*/nova_funcStruct* (*l1_closure1057_Nova_chainX5)(void*, void*);
-typedef void (*stabilitytest_Nova_SyntaxStability_closure1255_Nova_inlineGetFunc)(void*, void*);
-typedef /*stabilitytest_Nova_SyntaxStability_closure1255_Nova_inlineGetFunc*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure1256_Nova_chainedFuncReference)(void*, void*);
-typedef /*stabilitytest_Nova_SyntaxStability_closure1256_Nova_chainedFuncReference*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure1257_Nova_chainedFuncReference3)(void*, void*);
-typedef /*stabilitytest_Nova_SyntaxStability_closure1257_Nova_chainedFuncReference3*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure1258_Nova_chainedFuncReference4)(void*, void*);
-typedef /*stabilitytest_Nova_SyntaxStability_closure1258_Nova_chainedFuncReference4*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure1259_Nova_chainedFuncReference5)(void*, void*);
-typedef void (*stabilitytest_Nova_SyntaxStability_closure1076_Nova_inlineGetFunc)(void*, void*);
-typedef /*stabilitytest_Nova_SyntaxStability_closure1076_Nova_inlineGetFunc*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure1077_Nova_chainedFuncReference)(void*, void*);
-typedef /*stabilitytest_Nova_SyntaxStability_closure1077_Nova_chainedFuncReference*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure1078_Nova_chainedFuncReference3)(void*, void*);
-typedef /*stabilitytest_Nova_SyntaxStability_closure1078_Nova_chainedFuncReference3*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure1066_Nova_chainedFuncReference4)(void*, void*);
-typedef void (*stabilitytest_Nova_SyntaxStability_closure1076_Nova_inlineGetFunc)(void*, void*);
-typedef /*stabilitytest_Nova_SyntaxStability_closure1076_Nova_inlineGetFunc*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure1077_Nova_chainedFuncReference)(void*, void*);
-typedef /*stabilitytest_Nova_SyntaxStability_closure1077_Nova_chainedFuncReference*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure1078_Nova_chainedFuncReference3)(void*, void*);
-typedef void (*stabilitytest_Nova_SyntaxStability_closure1076_Nova_inlineGetFunc)(void*, void*);
-typedef /*stabilitytest_Nova_SyntaxStability_closure1076_Nova_inlineGetFunc*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure1077_Nova_chainedFuncReference)(void*, void*);
-typedef /*stabilitytest_Nova_SyntaxStability_closure1077_Nova_chainedFuncReference*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure1078_Nova_chainedFuncReference3)(void*, void*);
-typedef void (*stabilitytest_Nova_SyntaxStability_closure1076_Nova_inlineGetFunc)(void*, void*);
-typedef /*stabilitytest_Nova_SyntaxStability_closure1076_Nova_inlineGetFunc*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure1077_Nova_chainedFuncReference)(void*, void*);
-typedef /*stabilitytest_Nova_SyntaxStability_closure1077_Nova_chainedFuncReference*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure1078_Nova_chainedFuncReference3)(void*, void*);
-typedef void (*stabilitytest_Nova_SyntaxStability_closure1076_Nova_inlineGetFunc)(void*, void*);
-typedef /*stabilitytest_Nova_SyntaxStability_closure1076_Nova_inlineGetFunc*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure1077_Nova_chainedFuncReference)(void*, void*);
-typedef /*stabilitytest_Nova_SyntaxStability_closure1077_Nova_chainedFuncReference*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure1078_Nova_chainedFuncReference3)(void*, void*);
-typedef /*stabilitytest_Nova_SyntaxStability_closure1129_Nova_chainedFuncReference5*/nova_funcStruct* (*l1_closure1118_Nova_chainX6)(void*, void*);
-typedef /*stabilitytest_Nova_SyntaxStability_closure1149_Nova_chainedFuncReference4*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure1129_Nova_chainedFuncReference5)(void*, void*);
-typedef /*stabilitytest_Nova_SyntaxStability_closure1148_Nova_chainedFuncReference3*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure1149_Nova_chainedFuncReference4)(void*, void*);
-typedef /*stabilitytest_Nova_SyntaxStability_closure1147_Nova_chainedFuncReference*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure1148_Nova_chainedFuncReference3)(void*, void*);
-typedef /*stabilitytest_Nova_SyntaxStability_closure1146_Nova_inlineGetFunc*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure1147_Nova_chainedFuncReference)(void*, void*);
-typedef void (*stabilitytest_Nova_SyntaxStability_closure1146_Nova_inlineGetFunc)(void*, void*);
-typedef void (*stabilitytest_Nova_SyntaxStability_closure1146_Nova_inlineGetFunc)(void*, void*);
-typedef /*stabilitytest_Nova_SyntaxStability_closure1146_Nova_inlineGetFunc*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure1086_Nova_inlineGetFunc)(void*, void*);
-typedef /*stabilitytest_Nova_SyntaxStability_closure1146_Nova_inlineGetFunc*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure1147_Nova_chainedFuncReference)(void*, void*);
-typedef /*stabilitytest_Nova_SyntaxStability_closure1147_Nova_chainedFuncReference*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure1088_Nova_chainedFuncReference)(void*, void*);
-typedef /*stabilitytest_Nova_SyntaxStability_closure1147_Nova_chainedFuncReference*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure1148_Nova_chainedFuncReference3)(void*, void*);
-typedef /*stabilitytest_Nova_SyntaxStability_closure1148_Nova_chainedFuncReference3*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure1090_Nova_chainedFuncReference3)(void*, void*);
-typedef /*stabilitytest_Nova_SyntaxStability_closure1148_Nova_chainedFuncReference3*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure1149_Nova_chainedFuncReference4)(void*, void*);
-typedef /*stabilitytest_Nova_SyntaxStability_closure1149_Nova_chainedFuncReference4*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure1092_Nova_chainedFuncReference4)(void*, void*);
-typedef /*stabilitytest_Nova_SyntaxStability_closure1149_Nova_chainedFuncReference4*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure1129_Nova_chainedFuncReference5)(void*, void*);
-typedef /*stabilitytest_Nova_SyntaxStability_closure1129_Nova_chainedFuncReference5*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure1094_Nova_chainedFuncReference5)(void*, void*);
-typedef /*stabilitytest_Nova_SyntaxStability_closure1129_Nova_chainedFuncReference5*/nova_funcStruct* (*l1_closure1118_Nova_chainX6)(void*, void*);
-typedef /*stabilitytest_Nova_SyntaxStability_closure1281_Nova_chainedFuncReference5*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure1282_Nova_chainedFuncReference6)(void*, void*);
-typedef /*stabilitytest_Nova_SyntaxStability_closure1280_Nova_chainedFuncReference4*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure1281_Nova_chainedFuncReference5)(void*, void*);
-typedef /*stabilitytest_Nova_SyntaxStability_closure1279_Nova_chainedFuncReference3*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure1280_Nova_chainedFuncReference4)(void*, void*);
-typedef /*stabilitytest_Nova_SyntaxStability_closure1278_Nova_chainedFuncReference*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure1279_Nova_chainedFuncReference3)(void*, void*);
-typedef /*stabilitytest_Nova_SyntaxStability_closure1277_Nova_inlineGetFunc*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure1278_Nova_chainedFuncReference)(void*, void*);
-typedef void (*stabilitytest_Nova_SyntaxStability_closure1277_Nova_inlineGetFunc)(void*, void*);
-typedef void (*stabilitytest_Nova_SyntaxStability_closure1277_Nova_inlineGetFunc)(void*, void*);
-typedef /*stabilitytest_Nova_SyntaxStability_closure1277_Nova_inlineGetFunc*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure1103_Nova_inlineGetFunc)(void*, void*);
-typedef /*stabilitytest_Nova_SyntaxStability_closure1277_Nova_inlineGetFunc*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure1278_Nova_chainedFuncReference)(void*, void*);
-typedef /*stabilitytest_Nova_SyntaxStability_closure1278_Nova_chainedFuncReference*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure1105_Nova_chainedFuncReference)(void*, void*);
-typedef /*stabilitytest_Nova_SyntaxStability_closure1278_Nova_chainedFuncReference*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure1279_Nova_chainedFuncReference3)(void*, void*);
-typedef /*stabilitytest_Nova_SyntaxStability_closure1279_Nova_chainedFuncReference3*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure1107_Nova_chainedFuncReference3)(void*, void*);
-typedef /*stabilitytest_Nova_SyntaxStability_closure1279_Nova_chainedFuncReference3*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure1280_Nova_chainedFuncReference4)(void*, void*);
-typedef /*stabilitytest_Nova_SyntaxStability_closure1280_Nova_chainedFuncReference4*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure1109_Nova_chainedFuncReference4)(void*, void*);
-typedef /*stabilitytest_Nova_SyntaxStability_closure1280_Nova_chainedFuncReference4*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure1281_Nova_chainedFuncReference5)(void*, void*);
-typedef /*stabilitytest_Nova_SyntaxStability_closure1281_Nova_chainedFuncReference5*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure1111_Nova_chainedFuncReference5)(void*, void*);
-typedef /*stabilitytest_Nova_SyntaxStability_closure1281_Nova_chainedFuncReference5*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure1282_Nova_chainedFuncReference6)(void*, void*);
-typedef void (*stabilitytest_Nova_SyntaxStability_closure1146_Nova_inlineGetFunc)(void*, void*);
-typedef /*stabilitytest_Nova_SyntaxStability_closure1146_Nova_inlineGetFunc*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure1147_Nova_chainedFuncReference)(void*, void*);
-typedef /*stabilitytest_Nova_SyntaxStability_closure1147_Nova_chainedFuncReference*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure1148_Nova_chainedFuncReference3)(void*, void*);
-typedef /*stabilitytest_Nova_SyntaxStability_closure1148_Nova_chainedFuncReference3*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure1149_Nova_chainedFuncReference4)(void*, void*);
-typedef /*stabilitytest_Nova_SyntaxStability_closure1149_Nova_chainedFuncReference4*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure1129_Nova_chainedFuncReference5)(void*, void*);
-typedef /*stabilitytest_Nova_SyntaxStability_closure1129_Nova_chainedFuncReference5*/nova_funcStruct* (*l1_closure1118_Nova_chainX6)(void*, void*);
-typedef void (*stabilitytest_Nova_SyntaxStability_closure1277_Nova_inlineGetFunc)(void*, void*);
-typedef /*stabilitytest_Nova_SyntaxStability_closure1277_Nova_inlineGetFunc*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure1278_Nova_chainedFuncReference)(void*, void*);
-typedef /*stabilitytest_Nova_SyntaxStability_closure1278_Nova_chainedFuncReference*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure1279_Nova_chainedFuncReference3)(void*, void*);
-typedef /*stabilitytest_Nova_SyntaxStability_closure1279_Nova_chainedFuncReference3*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure1280_Nova_chainedFuncReference4)(void*, void*);
-typedef /*stabilitytest_Nova_SyntaxStability_closure1280_Nova_chainedFuncReference4*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure1281_Nova_chainedFuncReference5)(void*, void*);
-typedef /*stabilitytest_Nova_SyntaxStability_closure1281_Nova_chainedFuncReference5*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure1282_Nova_chainedFuncReference6)(void*, void*);
-typedef void (*stabilitytest_Nova_SyntaxStability_closure1146_Nova_inlineGetFunc)(void*, void*);
-typedef /*stabilitytest_Nova_SyntaxStability_closure1146_Nova_inlineGetFunc*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure1147_Nova_chainedFuncReference)(void*, void*);
-typedef /*stabilitytest_Nova_SyntaxStability_closure1147_Nova_chainedFuncReference*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure1148_Nova_chainedFuncReference3)(void*, void*);
-typedef /*stabilitytest_Nova_SyntaxStability_closure1148_Nova_chainedFuncReference3*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure1149_Nova_chainedFuncReference4)(void*, void*);
-typedef /*stabilitytest_Nova_SyntaxStability_closure1149_Nova_chainedFuncReference4*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure1129_Nova_chainedFuncReference5)(void*, void*);
-typedef void (*stabilitytest_Nova_SyntaxStability_closure1146_Nova_inlineGetFunc)(void*, void*);
-typedef /*stabilitytest_Nova_SyntaxStability_closure1146_Nova_inlineGetFunc*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure1147_Nova_chainedFuncReference)(void*, void*);
-typedef /*stabilitytest_Nova_SyntaxStability_closure1147_Nova_chainedFuncReference*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure1148_Nova_chainedFuncReference3)(void*, void*);
-typedef /*stabilitytest_Nova_SyntaxStability_closure1148_Nova_chainedFuncReference3*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure1149_Nova_chainedFuncReference4)(void*, void*);
-typedef void (*stabilitytest_Nova_SyntaxStability_closure1146_Nova_inlineGetFunc)(void*, void*);
-typedef /*stabilitytest_Nova_SyntaxStability_closure1146_Nova_inlineGetFunc*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure1147_Nova_chainedFuncReference)(void*, void*);
-typedef /*stabilitytest_Nova_SyntaxStability_closure1147_Nova_chainedFuncReference*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure1148_Nova_chainedFuncReference3)(void*, void*);
-typedef /*stabilitytest_Nova_SyntaxStability_closure1148_Nova_chainedFuncReference3*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure1149_Nova_chainedFuncReference4)(void*, void*);
-typedef void (*stabilitytest_Nova_SyntaxStability_closure1146_Nova_inlineGetFunc)(void*, void*);
-typedef /*stabilitytest_Nova_SyntaxStability_closure1146_Nova_inlineGetFunc*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure1147_Nova_chainedFuncReference)(void*, void*);
-typedef /*stabilitytest_Nova_SyntaxStability_closure1147_Nova_chainedFuncReference*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure1148_Nova_chainedFuncReference3)(void*, void*);
-typedef /*stabilitytest_Nova_SyntaxStability_closure1148_Nova_chainedFuncReference3*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure1149_Nova_chainedFuncReference4)(void*, void*);
-typedef void (*stabilitytest_Nova_SyntaxStability_closure1146_Nova_inlineGetFunc)(void*, void*);
-typedef /*stabilitytest_Nova_SyntaxStability_closure1146_Nova_inlineGetFunc*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure1147_Nova_chainedFuncReference)(void*, void*);
-typedef /*stabilitytest_Nova_SyntaxStability_closure1147_Nova_chainedFuncReference*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure1148_Nova_chainedFuncReference3)(void*, void*);
-typedef /*stabilitytest_Nova_SyntaxStability_closure1148_Nova_chainedFuncReference3*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure1149_Nova_chainedFuncReference4)(void*, void*);
-typedef void (*stabilitytest_Nova_SyntaxStability_closure1146_Nova_inlineGetFunc)(void*, void*);
-typedef /*stabilitytest_Nova_SyntaxStability_closure1146_Nova_inlineGetFunc*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure1147_Nova_chainedFuncReference)(void*, void*);
-typedef /*stabilitytest_Nova_SyntaxStability_closure1147_Nova_chainedFuncReference*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure1148_Nova_chainedFuncReference3)(void*, void*);
-typedef /*stabilitytest_Nova_SyntaxStability_closure1148_Nova_chainedFuncReference3*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure1149_Nova_chainedFuncReference4)(void*, void*);
-typedef void (*stabilitytest_Nova_SyntaxStability_closure1201_Nova_getFunc)(void*, void*);
-typedef void (*stabilitytest_Nova_SyntaxStability_closure1204_Nova_inlineGetFunc)(void*, void*);
-typedef void (*stabilitytest_Nova_SyntaxStability_closure1207_Nova_inlineGetFunc2)(void*, void*);
-typedef void (*stabilitytest_Nova_SyntaxStability_closure1213_Nova_inlineGetFunc)(void*, void*);
-typedef /*stabilitytest_Nova_SyntaxStability_closure1213_Nova_inlineGetFunc*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure1214_Nova_chainedFuncReference)(void*, void*);
-typedef void (*stabilitytest_Nova_SyntaxStability_closure1204_Nova_inlineGetFunc)(void*, void*);
-typedef void (*stabilitytest_Nova_SyntaxStability_closure1223_Nova_inlineGetFunc)(void*, void*);
-typedef /*stabilitytest_Nova_SyntaxStability_closure1223_Nova_inlineGetFunc*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure1224_Nova_chainedFuncReference)(void*, void*);
-typedef /*stabilitytest_Nova_SyntaxStability_closure1224_Nova_chainedFuncReference*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure1225_Nova_chainedFuncReference3)(void*, void*);
-typedef void (*stabilitytest_Nova_SyntaxStability_closure1213_Nova_inlineGetFunc)(void*, void*);
-typedef /*stabilitytest_Nova_SyntaxStability_closure1213_Nova_inlineGetFunc*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure1214_Nova_chainedFuncReference)(void*, void*);
-typedef void (*stabilitytest_Nova_SyntaxStability_closure1237_Nova_inlineGetFunc)(void*, void*);
-typedef /*stabilitytest_Nova_SyntaxStability_closure1237_Nova_inlineGetFunc*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure1238_Nova_chainedFuncReference)(void*, void*);
-typedef /*stabilitytest_Nova_SyntaxStability_closure1238_Nova_chainedFuncReference*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure1239_Nova_chainedFuncReference3)(void*, void*);
-typedef /*stabilitytest_Nova_SyntaxStability_closure1239_Nova_chainedFuncReference3*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure1240_Nova_chainedFuncReference4)(void*, void*);
-typedef void (*stabilitytest_Nova_SyntaxStability_closure1223_Nova_inlineGetFunc)(void*, void*);
-typedef /*stabilitytest_Nova_SyntaxStability_closure1223_Nova_inlineGetFunc*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure1224_Nova_chainedFuncReference)(void*, void*);
-typedef /*stabilitytest_Nova_SyntaxStability_closure1224_Nova_chainedFuncReference*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure1225_Nova_chainedFuncReference3)(void*, void*);
-typedef void (*stabilitytest_Nova_SyntaxStability_closure1255_Nova_inlineGetFunc)(void*, void*);
-typedef /*stabilitytest_Nova_SyntaxStability_closure1255_Nova_inlineGetFunc*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure1256_Nova_chainedFuncReference)(void*, void*);
-typedef /*stabilitytest_Nova_SyntaxStability_closure1256_Nova_chainedFuncReference*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure1257_Nova_chainedFuncReference3)(void*, void*);
-typedef /*stabilitytest_Nova_SyntaxStability_closure1257_Nova_chainedFuncReference3*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure1258_Nova_chainedFuncReference4)(void*, void*);
-typedef /*stabilitytest_Nova_SyntaxStability_closure1258_Nova_chainedFuncReference4*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure1259_Nova_chainedFuncReference5)(void*, void*);
-typedef void (*stabilitytest_Nova_SyntaxStability_closure1237_Nova_inlineGetFunc)(void*, void*);
-typedef /*stabilitytest_Nova_SyntaxStability_closure1237_Nova_inlineGetFunc*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure1238_Nova_chainedFuncReference)(void*, void*);
-typedef /*stabilitytest_Nova_SyntaxStability_closure1238_Nova_chainedFuncReference*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure1239_Nova_chainedFuncReference3)(void*, void*);
-typedef /*stabilitytest_Nova_SyntaxStability_closure1239_Nova_chainedFuncReference3*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure1240_Nova_chainedFuncReference4)(void*, void*);
-typedef void (*stabilitytest_Nova_SyntaxStability_closure1277_Nova_inlineGetFunc)(void*, void*);
-typedef /*stabilitytest_Nova_SyntaxStability_closure1277_Nova_inlineGetFunc*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure1278_Nova_chainedFuncReference)(void*, void*);
-typedef /*stabilitytest_Nova_SyntaxStability_closure1278_Nova_chainedFuncReference*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure1279_Nova_chainedFuncReference3)(void*, void*);
-typedef /*stabilitytest_Nova_SyntaxStability_closure1279_Nova_chainedFuncReference3*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure1280_Nova_chainedFuncReference4)(void*, void*);
-typedef /*stabilitytest_Nova_SyntaxStability_closure1280_Nova_chainedFuncReference4*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure1281_Nova_chainedFuncReference5)(void*, void*);
-typedef /*stabilitytest_Nova_SyntaxStability_closure1281_Nova_chainedFuncReference5*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure1282_Nova_chainedFuncReference6)(void*, void*);
-typedef void (*stabilitytest_Nova_SyntaxStability_closure1255_Nova_inlineGetFunc)(void*, void*);
-typedef /*stabilitytest_Nova_SyntaxStability_closure1255_Nova_inlineGetFunc*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure1256_Nova_chainedFuncReference)(void*, void*);
-typedef /*stabilitytest_Nova_SyntaxStability_closure1256_Nova_chainedFuncReference*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure1257_Nova_chainedFuncReference3)(void*, void*);
-typedef /*stabilitytest_Nova_SyntaxStability_closure1257_Nova_chainedFuncReference3*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure1258_Nova_chainedFuncReference4)(void*, void*);
-typedef /*stabilitytest_Nova_SyntaxStability_closure1258_Nova_chainedFuncReference4*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure1259_Nova_chainedFuncReference5)(void*, void*);
+typedef int (*stabilitytest_Nova_SyntaxStability_closure916_Nova_something)(void*, int, void*);
+typedef void (*l1_closure921_Nova_func)(void*, void*);
+typedef void (*l1_closure921_Nova_func)(void*, void*);
+typedef void (*stabilitytest_Nova_SyntaxStability_closure1217_Nova_getFunc)(void*, void*);
+typedef void (*stabilitytest_Nova_SyntaxStability_closure1217_Nova_getFunc)(void*, void*);
+typedef void (*l1_closure921_Nova_func)(void*, void*);
+typedef void (*stabilitytest_Nova_SyntaxStability_closure1217_Nova_getFunc)(void*, void*);
+typedef void (*l1_closure927_Nova_func2)(void*, void*);
+typedef void (*l1_closure927_Nova_func2)(void*, void*);
+typedef void (*stabilitytest_Nova_SyntaxStability_closure1220_Nova_inlineGetFunc)(void*, void*);
+typedef void (*stabilitytest_Nova_SyntaxStability_closure1220_Nova_inlineGetFunc)(void*, void*);
+typedef void (*l1_closure927_Nova_func2)(void*, void*);
+typedef void (*stabilitytest_Nova_SyntaxStability_closure1220_Nova_inlineGetFunc)(void*, void*);
+typedef void (*l1_closure933_Nova_func3)(void*, void*);
+typedef void (*l1_closure933_Nova_func3)(void*, void*);
+typedef void (*stabilitytest_Nova_SyntaxStability_closure1223_Nova_inlineGetFunc2)(void*, void*);
+typedef void (*stabilitytest_Nova_SyntaxStability_closure1223_Nova_inlineGetFunc2)(void*, void*);
+typedef void (*l1_closure933_Nova_func3)(void*, void*);
+typedef void (*stabilitytest_Nova_SyntaxStability_closure1223_Nova_inlineGetFunc2)(void*, void*);
+typedef /*stabilitytest_Nova_SyntaxStability_closure949_Nova_inlineGetFunc*/nova_funcStruct* (*l1_closure946_Nova_chained)(void*, void*);
+typedef void (*stabilitytest_Nova_SyntaxStability_closure949_Nova_inlineGetFunc)(void*, void*);
+typedef void (*stabilitytest_Nova_SyntaxStability_closure949_Nova_inlineGetFunc)(void*, void*);
+typedef /*stabilitytest_Nova_SyntaxStability_closure949_Nova_inlineGetFunc*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure938_Nova_inlineGetFunc)(void*, void*);
+typedef /*stabilitytest_Nova_SyntaxStability_closure949_Nova_inlineGetFunc*/nova_funcStruct* (*l1_closure946_Nova_chained)(void*, void*);
+typedef /*stabilitytest_Nova_SyntaxStability_closure1229_Nova_inlineGetFunc*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure1230_Nova_chainedFuncReference)(void*, void*);
+typedef void (*stabilitytest_Nova_SyntaxStability_closure1229_Nova_inlineGetFunc)(void*, void*);
+typedef void (*stabilitytest_Nova_SyntaxStability_closure1229_Nova_inlineGetFunc)(void*, void*);
+typedef /*stabilitytest_Nova_SyntaxStability_closure1229_Nova_inlineGetFunc*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure943_Nova_inlineGetFunc)(void*, void*);
+typedef /*stabilitytest_Nova_SyntaxStability_closure1229_Nova_inlineGetFunc*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure1230_Nova_chainedFuncReference)(void*, void*);
+typedef void (*stabilitytest_Nova_SyntaxStability_closure949_Nova_inlineGetFunc)(void*, void*);
+typedef /*stabilitytest_Nova_SyntaxStability_closure949_Nova_inlineGetFunc*/nova_funcStruct* (*l1_closure946_Nova_chained)(void*, void*);
+typedef void (*stabilitytest_Nova_SyntaxStability_closure1229_Nova_inlineGetFunc)(void*, void*);
+typedef /*stabilitytest_Nova_SyntaxStability_closure1229_Nova_inlineGetFunc*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure1230_Nova_chainedFuncReference)(void*, void*);
+typedef void (*stabilitytest_Nova_SyntaxStability_closure949_Nova_inlineGetFunc)(void*, void*);
+typedef /*stabilitytest_Nova_SyntaxStability_closure965_Nova_inlineGetFunc*/nova_funcStruct* (*l1_closure960_Nova_chained)(void*, void*);
+typedef void (*stabilitytest_Nova_SyntaxStability_closure965_Nova_inlineGetFunc)(void*, void*);
+typedef void (*stabilitytest_Nova_SyntaxStability_closure965_Nova_inlineGetFunc)(void*, void*);
+typedef /*stabilitytest_Nova_SyntaxStability_closure965_Nova_inlineGetFunc*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure953_Nova_inlineGetFunc)(void*, void*);
+typedef /*stabilitytest_Nova_SyntaxStability_closure965_Nova_inlineGetFunc*/nova_funcStruct* (*l1_closure960_Nova_chained)(void*, void*);
+typedef void (*l1_closure964_Nova_c)(void*, void*);
+typedef void (*l1_closure964_Nova_c)(void*, void*);
+typedef void (*stabilitytest_Nova_SyntaxStability_closure1229_Nova_inlineGetFunc)(void*, void*);
+typedef /*stabilitytest_Nova_SyntaxStability_closure1229_Nova_inlineGetFunc*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure1230_Nova_chainedFuncReference)(void*, void*);
+typedef void (*stabilitytest_Nova_SyntaxStability_closure965_Nova_inlineGetFunc)(void*, void*);
+typedef /*stabilitytest_Nova_SyntaxStability_closure965_Nova_inlineGetFunc*/nova_funcStruct* (*l1_closure960_Nova_chained)(void*, void*);
+typedef void (*stabilitytest_Nova_SyntaxStability_closure1229_Nova_inlineGetFunc)(void*, void*);
+typedef /*stabilitytest_Nova_SyntaxStability_closure1229_Nova_inlineGetFunc*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure1230_Nova_chainedFuncReference)(void*, void*);
+typedef void (*stabilitytest_Nova_SyntaxStability_closure965_Nova_inlineGetFunc)(void*, void*);
+typedef void (*l1_closure964_Nova_c)(void*, void*);
+typedef void (*stabilitytest_Nova_SyntaxStability_closure965_Nova_inlineGetFunc)(void*, void*);
+typedef /*stabilitytest_Nova_SyntaxStability_closure989_Nova_chainedFuncReference*/nova_funcStruct* (*l1_closure984_Nova_chainX3)(void*, void*);
+typedef /*stabilitytest_Nova_SyntaxStability_closure991_Nova_inlineGetFunc*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure989_Nova_chainedFuncReference)(void*, void*);
+typedef void (*stabilitytest_Nova_SyntaxStability_closure991_Nova_inlineGetFunc)(void*, void*);
+typedef void (*stabilitytest_Nova_SyntaxStability_closure991_Nova_inlineGetFunc)(void*, void*);
+typedef /*stabilitytest_Nova_SyntaxStability_closure991_Nova_inlineGetFunc*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure970_Nova_inlineGetFunc)(void*, void*);
+typedef /*stabilitytest_Nova_SyntaxStability_closure991_Nova_inlineGetFunc*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure989_Nova_chainedFuncReference)(void*, void*);
+typedef /*stabilitytest_Nova_SyntaxStability_closure989_Nova_chainedFuncReference*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure972_Nova_chainedFuncReference)(void*, void*);
+typedef /*stabilitytest_Nova_SyntaxStability_closure989_Nova_chainedFuncReference*/nova_funcStruct* (*l1_closure984_Nova_chainX3)(void*, void*);
+typedef /*stabilitytest_Nova_SyntaxStability_closure1240_Nova_chainedFuncReference*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure1241_Nova_chainedFuncReference3)(void*, void*);
+typedef /*stabilitytest_Nova_SyntaxStability_closure1239_Nova_inlineGetFunc*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure1240_Nova_chainedFuncReference)(void*, void*);
+typedef void (*stabilitytest_Nova_SyntaxStability_closure1239_Nova_inlineGetFunc)(void*, void*);
+typedef void (*stabilitytest_Nova_SyntaxStability_closure1239_Nova_inlineGetFunc)(void*, void*);
+typedef /*stabilitytest_Nova_SyntaxStability_closure1239_Nova_inlineGetFunc*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure978_Nova_inlineGetFunc)(void*, void*);
+typedef /*stabilitytest_Nova_SyntaxStability_closure1239_Nova_inlineGetFunc*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure1240_Nova_chainedFuncReference)(void*, void*);
+typedef /*stabilitytest_Nova_SyntaxStability_closure1240_Nova_chainedFuncReference*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure980_Nova_chainedFuncReference)(void*, void*);
+typedef /*stabilitytest_Nova_SyntaxStability_closure1240_Nova_chainedFuncReference*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure1241_Nova_chainedFuncReference3)(void*, void*);
+typedef void (*stabilitytest_Nova_SyntaxStability_closure991_Nova_inlineGetFunc)(void*, void*);
+typedef /*stabilitytest_Nova_SyntaxStability_closure991_Nova_inlineGetFunc*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure989_Nova_chainedFuncReference)(void*, void*);
+typedef /*stabilitytest_Nova_SyntaxStability_closure989_Nova_chainedFuncReference*/nova_funcStruct* (*l1_closure984_Nova_chainX3)(void*, void*);
+typedef void (*stabilitytest_Nova_SyntaxStability_closure1239_Nova_inlineGetFunc)(void*, void*);
+typedef /*stabilitytest_Nova_SyntaxStability_closure1239_Nova_inlineGetFunc*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure1240_Nova_chainedFuncReference)(void*, void*);
+typedef /*stabilitytest_Nova_SyntaxStability_closure1240_Nova_chainedFuncReference*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure1241_Nova_chainedFuncReference3)(void*, void*);
+typedef void (*stabilitytest_Nova_SyntaxStability_closure991_Nova_inlineGetFunc)(void*, void*);
+typedef /*stabilitytest_Nova_SyntaxStability_closure991_Nova_inlineGetFunc*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure989_Nova_chainedFuncReference)(void*, void*);
+typedef void (*stabilitytest_Nova_SyntaxStability_closure991_Nova_inlineGetFunc)(void*, void*);
+typedef void (*stabilitytest_Nova_SyntaxStability_closure991_Nova_inlineGetFunc)(void*, void*);
+typedef /*stabilitytest_Nova_SyntaxStability_closure1024_Nova_chainedFuncReference3*/nova_funcStruct* (*l1_closure1017_Nova_chainX4)(void*, void*);
+typedef /*stabilitytest_Nova_SyntaxStability_closure1030_Nova_chainedFuncReference*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure1024_Nova_chainedFuncReference3)(void*, void*);
+typedef /*stabilitytest_Nova_SyntaxStability_closure1029_Nova_inlineGetFunc*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure1030_Nova_chainedFuncReference)(void*, void*);
+typedef void (*stabilitytest_Nova_SyntaxStability_closure1029_Nova_inlineGetFunc)(void*, void*);
+typedef void (*stabilitytest_Nova_SyntaxStability_closure1029_Nova_inlineGetFunc)(void*, void*);
+typedef /*stabilitytest_Nova_SyntaxStability_closure1029_Nova_inlineGetFunc*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure997_Nova_inlineGetFunc)(void*, void*);
+typedef /*stabilitytest_Nova_SyntaxStability_closure1029_Nova_inlineGetFunc*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure1030_Nova_chainedFuncReference)(void*, void*);
+typedef /*stabilitytest_Nova_SyntaxStability_closure1030_Nova_chainedFuncReference*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure999_Nova_chainedFuncReference)(void*, void*);
+typedef /*stabilitytest_Nova_SyntaxStability_closure1030_Nova_chainedFuncReference*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure1024_Nova_chainedFuncReference3)(void*, void*);
+typedef /*stabilitytest_Nova_SyntaxStability_closure1024_Nova_chainedFuncReference3*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure1001_Nova_chainedFuncReference3)(void*, void*);
+typedef /*stabilitytest_Nova_SyntaxStability_closure1024_Nova_chainedFuncReference3*/nova_funcStruct* (*l1_closure1017_Nova_chainX4)(void*, void*);
+typedef /*stabilitytest_Nova_SyntaxStability_closure1255_Nova_chainedFuncReference3*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure1256_Nova_chainedFuncReference4)(void*, void*);
+typedef /*stabilitytest_Nova_SyntaxStability_closure1254_Nova_chainedFuncReference*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure1255_Nova_chainedFuncReference3)(void*, void*);
+typedef /*stabilitytest_Nova_SyntaxStability_closure1253_Nova_inlineGetFunc*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure1254_Nova_chainedFuncReference)(void*, void*);
+typedef void (*stabilitytest_Nova_SyntaxStability_closure1253_Nova_inlineGetFunc)(void*, void*);
+typedef void (*stabilitytest_Nova_SyntaxStability_closure1253_Nova_inlineGetFunc)(void*, void*);
+typedef /*stabilitytest_Nova_SyntaxStability_closure1253_Nova_inlineGetFunc*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure1008_Nova_inlineGetFunc)(void*, void*);
+typedef /*stabilitytest_Nova_SyntaxStability_closure1253_Nova_inlineGetFunc*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure1254_Nova_chainedFuncReference)(void*, void*);
+typedef /*stabilitytest_Nova_SyntaxStability_closure1254_Nova_chainedFuncReference*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure1010_Nova_chainedFuncReference)(void*, void*);
+typedef /*stabilitytest_Nova_SyntaxStability_closure1254_Nova_chainedFuncReference*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure1255_Nova_chainedFuncReference3)(void*, void*);
+typedef /*stabilitytest_Nova_SyntaxStability_closure1255_Nova_chainedFuncReference3*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure1012_Nova_chainedFuncReference3)(void*, void*);
+typedef /*stabilitytest_Nova_SyntaxStability_closure1255_Nova_chainedFuncReference3*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure1256_Nova_chainedFuncReference4)(void*, void*);
+typedef void (*stabilitytest_Nova_SyntaxStability_closure1029_Nova_inlineGetFunc)(void*, void*);
+typedef /*stabilitytest_Nova_SyntaxStability_closure1029_Nova_inlineGetFunc*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure1030_Nova_chainedFuncReference)(void*, void*);
+typedef /*stabilitytest_Nova_SyntaxStability_closure1030_Nova_chainedFuncReference*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure1024_Nova_chainedFuncReference3)(void*, void*);
+typedef /*stabilitytest_Nova_SyntaxStability_closure1024_Nova_chainedFuncReference3*/nova_funcStruct* (*l1_closure1017_Nova_chainX4)(void*, void*);
+typedef void (*stabilitytest_Nova_SyntaxStability_closure1253_Nova_inlineGetFunc)(void*, void*);
+typedef /*stabilitytest_Nova_SyntaxStability_closure1253_Nova_inlineGetFunc*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure1254_Nova_chainedFuncReference)(void*, void*);
+typedef /*stabilitytest_Nova_SyntaxStability_closure1254_Nova_chainedFuncReference*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure1255_Nova_chainedFuncReference3)(void*, void*);
+typedef /*stabilitytest_Nova_SyntaxStability_closure1255_Nova_chainedFuncReference3*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure1256_Nova_chainedFuncReference4)(void*, void*);
+typedef void (*stabilitytest_Nova_SyntaxStability_closure1029_Nova_inlineGetFunc)(void*, void*);
+typedef /*stabilitytest_Nova_SyntaxStability_closure1029_Nova_inlineGetFunc*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure1030_Nova_chainedFuncReference)(void*, void*);
+typedef /*stabilitytest_Nova_SyntaxStability_closure1030_Nova_chainedFuncReference*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure1024_Nova_chainedFuncReference3)(void*, void*);
+typedef void (*stabilitytest_Nova_SyntaxStability_closure1029_Nova_inlineGetFunc)(void*, void*);
+typedef /*stabilitytest_Nova_SyntaxStability_closure1029_Nova_inlineGetFunc*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure1030_Nova_chainedFuncReference)(void*, void*);
+typedef void (*stabilitytest_Nova_SyntaxStability_closure1029_Nova_inlineGetFunc)(void*, void*);
+typedef /*stabilitytest_Nova_SyntaxStability_closure1029_Nova_inlineGetFunc*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure1030_Nova_chainedFuncReference)(void*, void*);
+typedef void (*stabilitytest_Nova_SyntaxStability_closure1029_Nova_inlineGetFunc)(void*, void*);
+typedef /*stabilitytest_Nova_SyntaxStability_closure1029_Nova_inlineGetFunc*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure1030_Nova_chainedFuncReference)(void*, void*);
+typedef /*stabilitytest_Nova_SyntaxStability_closure1072_Nova_chainedFuncReference4*/nova_funcStruct* (*l1_closure1063_Nova_chainX5)(void*, void*);
+typedef /*stabilitytest_Nova_SyntaxStability_closure1084_Nova_chainedFuncReference3*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure1072_Nova_chainedFuncReference4)(void*, void*);
+typedef /*stabilitytest_Nova_SyntaxStability_closure1083_Nova_chainedFuncReference*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure1084_Nova_chainedFuncReference3)(void*, void*);
+typedef /*stabilitytest_Nova_SyntaxStability_closure1082_Nova_inlineGetFunc*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure1083_Nova_chainedFuncReference)(void*, void*);
+typedef void (*stabilitytest_Nova_SyntaxStability_closure1082_Nova_inlineGetFunc)(void*, void*);
+typedef void (*stabilitytest_Nova_SyntaxStability_closure1082_Nova_inlineGetFunc)(void*, void*);
+typedef /*stabilitytest_Nova_SyntaxStability_closure1082_Nova_inlineGetFunc*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure1037_Nova_inlineGetFunc)(void*, void*);
+typedef /*stabilitytest_Nova_SyntaxStability_closure1082_Nova_inlineGetFunc*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure1083_Nova_chainedFuncReference)(void*, void*);
+typedef /*stabilitytest_Nova_SyntaxStability_closure1083_Nova_chainedFuncReference*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure1039_Nova_chainedFuncReference)(void*, void*);
+typedef /*stabilitytest_Nova_SyntaxStability_closure1083_Nova_chainedFuncReference*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure1084_Nova_chainedFuncReference3)(void*, void*);
+typedef /*stabilitytest_Nova_SyntaxStability_closure1084_Nova_chainedFuncReference3*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure1041_Nova_chainedFuncReference3)(void*, void*);
+typedef /*stabilitytest_Nova_SyntaxStability_closure1084_Nova_chainedFuncReference3*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure1072_Nova_chainedFuncReference4)(void*, void*);
+typedef /*stabilitytest_Nova_SyntaxStability_closure1072_Nova_chainedFuncReference4*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure1043_Nova_chainedFuncReference4)(void*, void*);
+typedef /*stabilitytest_Nova_SyntaxStability_closure1072_Nova_chainedFuncReference4*/nova_funcStruct* (*l1_closure1063_Nova_chainX5)(void*, void*);
+typedef /*stabilitytest_Nova_SyntaxStability_closure1274_Nova_chainedFuncReference4*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure1275_Nova_chainedFuncReference5)(void*, void*);
+typedef /*stabilitytest_Nova_SyntaxStability_closure1273_Nova_chainedFuncReference3*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure1274_Nova_chainedFuncReference4)(void*, void*);
+typedef /*stabilitytest_Nova_SyntaxStability_closure1272_Nova_chainedFuncReference*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure1273_Nova_chainedFuncReference3)(void*, void*);
+typedef /*stabilitytest_Nova_SyntaxStability_closure1271_Nova_inlineGetFunc*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure1272_Nova_chainedFuncReference)(void*, void*);
+typedef void (*stabilitytest_Nova_SyntaxStability_closure1271_Nova_inlineGetFunc)(void*, void*);
+typedef void (*stabilitytest_Nova_SyntaxStability_closure1271_Nova_inlineGetFunc)(void*, void*);
+typedef /*stabilitytest_Nova_SyntaxStability_closure1271_Nova_inlineGetFunc*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure1051_Nova_inlineGetFunc)(void*, void*);
+typedef /*stabilitytest_Nova_SyntaxStability_closure1271_Nova_inlineGetFunc*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure1272_Nova_chainedFuncReference)(void*, void*);
+typedef /*stabilitytest_Nova_SyntaxStability_closure1272_Nova_chainedFuncReference*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure1053_Nova_chainedFuncReference)(void*, void*);
+typedef /*stabilitytest_Nova_SyntaxStability_closure1272_Nova_chainedFuncReference*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure1273_Nova_chainedFuncReference3)(void*, void*);
+typedef /*stabilitytest_Nova_SyntaxStability_closure1273_Nova_chainedFuncReference3*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure1055_Nova_chainedFuncReference3)(void*, void*);
+typedef /*stabilitytest_Nova_SyntaxStability_closure1273_Nova_chainedFuncReference3*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure1274_Nova_chainedFuncReference4)(void*, void*);
+typedef /*stabilitytest_Nova_SyntaxStability_closure1274_Nova_chainedFuncReference4*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure1057_Nova_chainedFuncReference4)(void*, void*);
+typedef /*stabilitytest_Nova_SyntaxStability_closure1274_Nova_chainedFuncReference4*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure1275_Nova_chainedFuncReference5)(void*, void*);
+typedef void (*stabilitytest_Nova_SyntaxStability_closure1082_Nova_inlineGetFunc)(void*, void*);
+typedef /*stabilitytest_Nova_SyntaxStability_closure1082_Nova_inlineGetFunc*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure1083_Nova_chainedFuncReference)(void*, void*);
+typedef /*stabilitytest_Nova_SyntaxStability_closure1083_Nova_chainedFuncReference*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure1084_Nova_chainedFuncReference3)(void*, void*);
+typedef /*stabilitytest_Nova_SyntaxStability_closure1084_Nova_chainedFuncReference3*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure1072_Nova_chainedFuncReference4)(void*, void*);
+typedef /*stabilitytest_Nova_SyntaxStability_closure1072_Nova_chainedFuncReference4*/nova_funcStruct* (*l1_closure1063_Nova_chainX5)(void*, void*);
+typedef void (*stabilitytest_Nova_SyntaxStability_closure1271_Nova_inlineGetFunc)(void*, void*);
+typedef /*stabilitytest_Nova_SyntaxStability_closure1271_Nova_inlineGetFunc*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure1272_Nova_chainedFuncReference)(void*, void*);
+typedef /*stabilitytest_Nova_SyntaxStability_closure1272_Nova_chainedFuncReference*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure1273_Nova_chainedFuncReference3)(void*, void*);
+typedef /*stabilitytest_Nova_SyntaxStability_closure1273_Nova_chainedFuncReference3*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure1274_Nova_chainedFuncReference4)(void*, void*);
+typedef /*stabilitytest_Nova_SyntaxStability_closure1274_Nova_chainedFuncReference4*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure1275_Nova_chainedFuncReference5)(void*, void*);
+typedef void (*stabilitytest_Nova_SyntaxStability_closure1082_Nova_inlineGetFunc)(void*, void*);
+typedef /*stabilitytest_Nova_SyntaxStability_closure1082_Nova_inlineGetFunc*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure1083_Nova_chainedFuncReference)(void*, void*);
+typedef /*stabilitytest_Nova_SyntaxStability_closure1083_Nova_chainedFuncReference*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure1084_Nova_chainedFuncReference3)(void*, void*);
+typedef /*stabilitytest_Nova_SyntaxStability_closure1084_Nova_chainedFuncReference3*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure1072_Nova_chainedFuncReference4)(void*, void*);
+typedef void (*stabilitytest_Nova_SyntaxStability_closure1082_Nova_inlineGetFunc)(void*, void*);
+typedef /*stabilitytest_Nova_SyntaxStability_closure1082_Nova_inlineGetFunc*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure1083_Nova_chainedFuncReference)(void*, void*);
+typedef /*stabilitytest_Nova_SyntaxStability_closure1083_Nova_chainedFuncReference*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure1084_Nova_chainedFuncReference3)(void*, void*);
+typedef void (*stabilitytest_Nova_SyntaxStability_closure1082_Nova_inlineGetFunc)(void*, void*);
+typedef /*stabilitytest_Nova_SyntaxStability_closure1082_Nova_inlineGetFunc*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure1083_Nova_chainedFuncReference)(void*, void*);
+typedef /*stabilitytest_Nova_SyntaxStability_closure1083_Nova_chainedFuncReference*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure1084_Nova_chainedFuncReference3)(void*, void*);
+typedef void (*stabilitytest_Nova_SyntaxStability_closure1082_Nova_inlineGetFunc)(void*, void*);
+typedef /*stabilitytest_Nova_SyntaxStability_closure1082_Nova_inlineGetFunc*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure1083_Nova_chainedFuncReference)(void*, void*);
+typedef /*stabilitytest_Nova_SyntaxStability_closure1083_Nova_chainedFuncReference*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure1084_Nova_chainedFuncReference3)(void*, void*);
+typedef void (*stabilitytest_Nova_SyntaxStability_closure1082_Nova_inlineGetFunc)(void*, void*);
+typedef /*stabilitytest_Nova_SyntaxStability_closure1082_Nova_inlineGetFunc*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure1083_Nova_chainedFuncReference)(void*, void*);
+typedef /*stabilitytest_Nova_SyntaxStability_closure1083_Nova_chainedFuncReference*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure1084_Nova_chainedFuncReference3)(void*, void*);
+typedef /*stabilitytest_Nova_SyntaxStability_closure1135_Nova_chainedFuncReference5*/nova_funcStruct* (*l1_closure1124_Nova_chainX6)(void*, void*);
+typedef /*stabilitytest_Nova_SyntaxStability_closure1155_Nova_chainedFuncReference4*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure1135_Nova_chainedFuncReference5)(void*, void*);
+typedef /*stabilitytest_Nova_SyntaxStability_closure1154_Nova_chainedFuncReference3*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure1155_Nova_chainedFuncReference4)(void*, void*);
+typedef /*stabilitytest_Nova_SyntaxStability_closure1153_Nova_chainedFuncReference*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure1154_Nova_chainedFuncReference3)(void*, void*);
+typedef /*stabilitytest_Nova_SyntaxStability_closure1152_Nova_inlineGetFunc*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure1153_Nova_chainedFuncReference)(void*, void*);
+typedef void (*stabilitytest_Nova_SyntaxStability_closure1152_Nova_inlineGetFunc)(void*, void*);
+typedef void (*stabilitytest_Nova_SyntaxStability_closure1152_Nova_inlineGetFunc)(void*, void*);
+typedef /*stabilitytest_Nova_SyntaxStability_closure1152_Nova_inlineGetFunc*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure1092_Nova_inlineGetFunc)(void*, void*);
+typedef /*stabilitytest_Nova_SyntaxStability_closure1152_Nova_inlineGetFunc*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure1153_Nova_chainedFuncReference)(void*, void*);
+typedef /*stabilitytest_Nova_SyntaxStability_closure1153_Nova_chainedFuncReference*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure1094_Nova_chainedFuncReference)(void*, void*);
+typedef /*stabilitytest_Nova_SyntaxStability_closure1153_Nova_chainedFuncReference*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure1154_Nova_chainedFuncReference3)(void*, void*);
+typedef /*stabilitytest_Nova_SyntaxStability_closure1154_Nova_chainedFuncReference3*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure1096_Nova_chainedFuncReference3)(void*, void*);
+typedef /*stabilitytest_Nova_SyntaxStability_closure1154_Nova_chainedFuncReference3*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure1155_Nova_chainedFuncReference4)(void*, void*);
+typedef /*stabilitytest_Nova_SyntaxStability_closure1155_Nova_chainedFuncReference4*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure1098_Nova_chainedFuncReference4)(void*, void*);
+typedef /*stabilitytest_Nova_SyntaxStability_closure1155_Nova_chainedFuncReference4*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure1135_Nova_chainedFuncReference5)(void*, void*);
+typedef /*stabilitytest_Nova_SyntaxStability_closure1135_Nova_chainedFuncReference5*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure1100_Nova_chainedFuncReference5)(void*, void*);
+typedef /*stabilitytest_Nova_SyntaxStability_closure1135_Nova_chainedFuncReference5*/nova_funcStruct* (*l1_closure1124_Nova_chainX6)(void*, void*);
+typedef /*stabilitytest_Nova_SyntaxStability_closure1297_Nova_chainedFuncReference5*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure1298_Nova_chainedFuncReference6)(void*, void*);
+typedef /*stabilitytest_Nova_SyntaxStability_closure1296_Nova_chainedFuncReference4*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure1297_Nova_chainedFuncReference5)(void*, void*);
+typedef /*stabilitytest_Nova_SyntaxStability_closure1295_Nova_chainedFuncReference3*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure1296_Nova_chainedFuncReference4)(void*, void*);
+typedef /*stabilitytest_Nova_SyntaxStability_closure1294_Nova_chainedFuncReference*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure1295_Nova_chainedFuncReference3)(void*, void*);
+typedef /*stabilitytest_Nova_SyntaxStability_closure1293_Nova_inlineGetFunc*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure1294_Nova_chainedFuncReference)(void*, void*);
+typedef void (*stabilitytest_Nova_SyntaxStability_closure1293_Nova_inlineGetFunc)(void*, void*);
+typedef void (*stabilitytest_Nova_SyntaxStability_closure1293_Nova_inlineGetFunc)(void*, void*);
+typedef /*stabilitytest_Nova_SyntaxStability_closure1293_Nova_inlineGetFunc*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure1109_Nova_inlineGetFunc)(void*, void*);
+typedef /*stabilitytest_Nova_SyntaxStability_closure1293_Nova_inlineGetFunc*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure1294_Nova_chainedFuncReference)(void*, void*);
+typedef /*stabilitytest_Nova_SyntaxStability_closure1294_Nova_chainedFuncReference*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure1111_Nova_chainedFuncReference)(void*, void*);
+typedef /*stabilitytest_Nova_SyntaxStability_closure1294_Nova_chainedFuncReference*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure1295_Nova_chainedFuncReference3)(void*, void*);
+typedef /*stabilitytest_Nova_SyntaxStability_closure1295_Nova_chainedFuncReference3*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure1113_Nova_chainedFuncReference3)(void*, void*);
+typedef /*stabilitytest_Nova_SyntaxStability_closure1295_Nova_chainedFuncReference3*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure1296_Nova_chainedFuncReference4)(void*, void*);
+typedef /*stabilitytest_Nova_SyntaxStability_closure1296_Nova_chainedFuncReference4*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure1115_Nova_chainedFuncReference4)(void*, void*);
+typedef /*stabilitytest_Nova_SyntaxStability_closure1296_Nova_chainedFuncReference4*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure1297_Nova_chainedFuncReference5)(void*, void*);
+typedef /*stabilitytest_Nova_SyntaxStability_closure1297_Nova_chainedFuncReference5*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure1117_Nova_chainedFuncReference5)(void*, void*);
+typedef /*stabilitytest_Nova_SyntaxStability_closure1297_Nova_chainedFuncReference5*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure1298_Nova_chainedFuncReference6)(void*, void*);
+typedef void (*stabilitytest_Nova_SyntaxStability_closure1152_Nova_inlineGetFunc)(void*, void*);
+typedef /*stabilitytest_Nova_SyntaxStability_closure1152_Nova_inlineGetFunc*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure1153_Nova_chainedFuncReference)(void*, void*);
+typedef /*stabilitytest_Nova_SyntaxStability_closure1153_Nova_chainedFuncReference*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure1154_Nova_chainedFuncReference3)(void*, void*);
+typedef /*stabilitytest_Nova_SyntaxStability_closure1154_Nova_chainedFuncReference3*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure1155_Nova_chainedFuncReference4)(void*, void*);
+typedef /*stabilitytest_Nova_SyntaxStability_closure1155_Nova_chainedFuncReference4*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure1135_Nova_chainedFuncReference5)(void*, void*);
+typedef /*stabilitytest_Nova_SyntaxStability_closure1135_Nova_chainedFuncReference5*/nova_funcStruct* (*l1_closure1124_Nova_chainX6)(void*, void*);
+typedef void (*stabilitytest_Nova_SyntaxStability_closure1293_Nova_inlineGetFunc)(void*, void*);
+typedef /*stabilitytest_Nova_SyntaxStability_closure1293_Nova_inlineGetFunc*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure1294_Nova_chainedFuncReference)(void*, void*);
+typedef /*stabilitytest_Nova_SyntaxStability_closure1294_Nova_chainedFuncReference*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure1295_Nova_chainedFuncReference3)(void*, void*);
+typedef /*stabilitytest_Nova_SyntaxStability_closure1295_Nova_chainedFuncReference3*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure1296_Nova_chainedFuncReference4)(void*, void*);
+typedef /*stabilitytest_Nova_SyntaxStability_closure1296_Nova_chainedFuncReference4*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure1297_Nova_chainedFuncReference5)(void*, void*);
+typedef /*stabilitytest_Nova_SyntaxStability_closure1297_Nova_chainedFuncReference5*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure1298_Nova_chainedFuncReference6)(void*, void*);
+typedef void (*stabilitytest_Nova_SyntaxStability_closure1152_Nova_inlineGetFunc)(void*, void*);
+typedef /*stabilitytest_Nova_SyntaxStability_closure1152_Nova_inlineGetFunc*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure1153_Nova_chainedFuncReference)(void*, void*);
+typedef /*stabilitytest_Nova_SyntaxStability_closure1153_Nova_chainedFuncReference*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure1154_Nova_chainedFuncReference3)(void*, void*);
+typedef /*stabilitytest_Nova_SyntaxStability_closure1154_Nova_chainedFuncReference3*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure1155_Nova_chainedFuncReference4)(void*, void*);
+typedef /*stabilitytest_Nova_SyntaxStability_closure1155_Nova_chainedFuncReference4*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure1135_Nova_chainedFuncReference5)(void*, void*);
+typedef void (*stabilitytest_Nova_SyntaxStability_closure1152_Nova_inlineGetFunc)(void*, void*);
+typedef /*stabilitytest_Nova_SyntaxStability_closure1152_Nova_inlineGetFunc*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure1153_Nova_chainedFuncReference)(void*, void*);
+typedef /*stabilitytest_Nova_SyntaxStability_closure1153_Nova_chainedFuncReference*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure1154_Nova_chainedFuncReference3)(void*, void*);
+typedef /*stabilitytest_Nova_SyntaxStability_closure1154_Nova_chainedFuncReference3*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure1155_Nova_chainedFuncReference4)(void*, void*);
+typedef void (*stabilitytest_Nova_SyntaxStability_closure1152_Nova_inlineGetFunc)(void*, void*);
+typedef /*stabilitytest_Nova_SyntaxStability_closure1152_Nova_inlineGetFunc*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure1153_Nova_chainedFuncReference)(void*, void*);
+typedef /*stabilitytest_Nova_SyntaxStability_closure1153_Nova_chainedFuncReference*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure1154_Nova_chainedFuncReference3)(void*, void*);
+typedef /*stabilitytest_Nova_SyntaxStability_closure1154_Nova_chainedFuncReference3*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure1155_Nova_chainedFuncReference4)(void*, void*);
+typedef void (*stabilitytest_Nova_SyntaxStability_closure1152_Nova_inlineGetFunc)(void*, void*);
+typedef /*stabilitytest_Nova_SyntaxStability_closure1152_Nova_inlineGetFunc*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure1153_Nova_chainedFuncReference)(void*, void*);
+typedef /*stabilitytest_Nova_SyntaxStability_closure1153_Nova_chainedFuncReference*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure1154_Nova_chainedFuncReference3)(void*, void*);
+typedef /*stabilitytest_Nova_SyntaxStability_closure1154_Nova_chainedFuncReference3*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure1155_Nova_chainedFuncReference4)(void*, void*);
+typedef void (*stabilitytest_Nova_SyntaxStability_closure1152_Nova_inlineGetFunc)(void*, void*);
+typedef /*stabilitytest_Nova_SyntaxStability_closure1152_Nova_inlineGetFunc*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure1153_Nova_chainedFuncReference)(void*, void*);
+typedef /*stabilitytest_Nova_SyntaxStability_closure1153_Nova_chainedFuncReference*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure1154_Nova_chainedFuncReference3)(void*, void*);
+typedef /*stabilitytest_Nova_SyntaxStability_closure1154_Nova_chainedFuncReference3*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure1155_Nova_chainedFuncReference4)(void*, void*);
+typedef void (*stabilitytest_Nova_SyntaxStability_closure1152_Nova_inlineGetFunc)(void*, void*);
+typedef /*stabilitytest_Nova_SyntaxStability_closure1152_Nova_inlineGetFunc*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure1153_Nova_chainedFuncReference)(void*, void*);
+typedef /*stabilitytest_Nova_SyntaxStability_closure1153_Nova_chainedFuncReference*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure1154_Nova_chainedFuncReference3)(void*, void*);
+typedef /*stabilitytest_Nova_SyntaxStability_closure1154_Nova_chainedFuncReference3*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure1155_Nova_chainedFuncReference4)(void*, void*);
+typedef void (*stabilitytest_Nova_SyntaxStability_closure1217_Nova_getFunc)(void*, void*);
+typedef void (*stabilitytest_Nova_SyntaxStability_closure1217_Nova_getFunc)(void*, void*);
+typedef void (*stabilitytest_Nova_SyntaxStability_closure1220_Nova_inlineGetFunc)(void*, void*);
+typedef void (*stabilitytest_Nova_SyntaxStability_closure1220_Nova_inlineGetFunc)(void*, void*);
+typedef void (*stabilitytest_Nova_SyntaxStability_closure1223_Nova_inlineGetFunc2)(void*, void*);
+typedef void (*stabilitytest_Nova_SyntaxStability_closure1223_Nova_inlineGetFunc2)(void*, void*);
+typedef void (*stabilitytest_Nova_SyntaxStability_closure1229_Nova_inlineGetFunc)(void*, void*);
+typedef /*stabilitytest_Nova_SyntaxStability_closure1229_Nova_inlineGetFunc*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure1230_Nova_chainedFuncReference)(void*, void*);
+typedef void (*stabilitytest_Nova_SyntaxStability_closure1229_Nova_inlineGetFunc)(void*, void*);
+typedef /*stabilitytest_Nova_SyntaxStability_closure1229_Nova_inlineGetFunc*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure1230_Nova_chainedFuncReference)(void*, void*);
+typedef void (*stabilitytest_Nova_SyntaxStability_closure1239_Nova_inlineGetFunc)(void*, void*);
+typedef /*stabilitytest_Nova_SyntaxStability_closure1239_Nova_inlineGetFunc*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure1240_Nova_chainedFuncReference)(void*, void*);
+typedef /*stabilitytest_Nova_SyntaxStability_closure1240_Nova_chainedFuncReference*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure1241_Nova_chainedFuncReference3)(void*, void*);
+typedef void (*stabilitytest_Nova_SyntaxStability_closure1239_Nova_inlineGetFunc)(void*, void*);
+typedef /*stabilitytest_Nova_SyntaxStability_closure1239_Nova_inlineGetFunc*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure1240_Nova_chainedFuncReference)(void*, void*);
+typedef /*stabilitytest_Nova_SyntaxStability_closure1240_Nova_chainedFuncReference*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure1241_Nova_chainedFuncReference3)(void*, void*);
+typedef void (*stabilitytest_Nova_SyntaxStability_closure1253_Nova_inlineGetFunc)(void*, void*);
+typedef /*stabilitytest_Nova_SyntaxStability_closure1253_Nova_inlineGetFunc*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure1254_Nova_chainedFuncReference)(void*, void*);
+typedef /*stabilitytest_Nova_SyntaxStability_closure1254_Nova_chainedFuncReference*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure1255_Nova_chainedFuncReference3)(void*, void*);
+typedef /*stabilitytest_Nova_SyntaxStability_closure1255_Nova_chainedFuncReference3*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure1256_Nova_chainedFuncReference4)(void*, void*);
+typedef void (*stabilitytest_Nova_SyntaxStability_closure1253_Nova_inlineGetFunc)(void*, void*);
+typedef /*stabilitytest_Nova_SyntaxStability_closure1253_Nova_inlineGetFunc*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure1254_Nova_chainedFuncReference)(void*, void*);
+typedef /*stabilitytest_Nova_SyntaxStability_closure1254_Nova_chainedFuncReference*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure1255_Nova_chainedFuncReference3)(void*, void*);
+typedef /*stabilitytest_Nova_SyntaxStability_closure1255_Nova_chainedFuncReference3*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure1256_Nova_chainedFuncReference4)(void*, void*);
+typedef void (*stabilitytest_Nova_SyntaxStability_closure1271_Nova_inlineGetFunc)(void*, void*);
+typedef /*stabilitytest_Nova_SyntaxStability_closure1271_Nova_inlineGetFunc*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure1272_Nova_chainedFuncReference)(void*, void*);
+typedef /*stabilitytest_Nova_SyntaxStability_closure1272_Nova_chainedFuncReference*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure1273_Nova_chainedFuncReference3)(void*, void*);
+typedef /*stabilitytest_Nova_SyntaxStability_closure1273_Nova_chainedFuncReference3*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure1274_Nova_chainedFuncReference4)(void*, void*);
+typedef /*stabilitytest_Nova_SyntaxStability_closure1274_Nova_chainedFuncReference4*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure1275_Nova_chainedFuncReference5)(void*, void*);
+typedef void (*stabilitytest_Nova_SyntaxStability_closure1271_Nova_inlineGetFunc)(void*, void*);
+typedef /*stabilitytest_Nova_SyntaxStability_closure1271_Nova_inlineGetFunc*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure1272_Nova_chainedFuncReference)(void*, void*);
+typedef /*stabilitytest_Nova_SyntaxStability_closure1272_Nova_chainedFuncReference*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure1273_Nova_chainedFuncReference3)(void*, void*);
+typedef /*stabilitytest_Nova_SyntaxStability_closure1273_Nova_chainedFuncReference3*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure1274_Nova_chainedFuncReference4)(void*, void*);
+typedef /*stabilitytest_Nova_SyntaxStability_closure1274_Nova_chainedFuncReference4*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure1275_Nova_chainedFuncReference5)(void*, void*);
+typedef void (*stabilitytest_Nova_SyntaxStability_closure1293_Nova_inlineGetFunc)(void*, void*);
+typedef /*stabilitytest_Nova_SyntaxStability_closure1293_Nova_inlineGetFunc*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure1294_Nova_chainedFuncReference)(void*, void*);
+typedef /*stabilitytest_Nova_SyntaxStability_closure1294_Nova_chainedFuncReference*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure1295_Nova_chainedFuncReference3)(void*, void*);
+typedef /*stabilitytest_Nova_SyntaxStability_closure1295_Nova_chainedFuncReference3*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure1296_Nova_chainedFuncReference4)(void*, void*);
+typedef /*stabilitytest_Nova_SyntaxStability_closure1296_Nova_chainedFuncReference4*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure1297_Nova_chainedFuncReference5)(void*, void*);
+typedef /*stabilitytest_Nova_SyntaxStability_closure1297_Nova_chainedFuncReference5*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure1298_Nova_chainedFuncReference6)(void*, void*);
+typedef void (*stabilitytest_Nova_SyntaxStability_closure1293_Nova_inlineGetFunc)(void*, void*);
+typedef /*stabilitytest_Nova_SyntaxStability_closure1293_Nova_inlineGetFunc*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure1294_Nova_chainedFuncReference)(void*, void*);
+typedef /*stabilitytest_Nova_SyntaxStability_closure1294_Nova_chainedFuncReference*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure1295_Nova_chainedFuncReference3)(void*, void*);
+typedef /*stabilitytest_Nova_SyntaxStability_closure1295_Nova_chainedFuncReference3*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure1296_Nova_chainedFuncReference4)(void*, void*);
+typedef /*stabilitytest_Nova_SyntaxStability_closure1296_Nova_chainedFuncReference4*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure1297_Nova_chainedFuncReference5)(void*, void*);
+typedef /*stabilitytest_Nova_SyntaxStability_closure1297_Nova_chainedFuncReference5*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure1298_Nova_chainedFuncReference6)(void*, void*);
 typedef void (*func)(void*, void*);
 typedef void (*func)(void*, void*);
 typedef void (*func)(void*, void*);
@@ -67773,53 +67974,39 @@ typedef void (*func)(void*, void*);
 typedef void (*func)(void*, void*);
 typedef void (*func)(void*, void*);
 typedef void (*func)(void*, void*);
-typedef int (*stabilitytest_Nova_SyntaxStabilityFunctionMap_closure1196_Nova_something)(void*, int, void*);
-typedef void* (*stabilitytest_Nova_SyntaxStabilityFunctionMap_closure1198_Nova_something)(void*, int, void*);
-typedef void* (*stabilitytest_Nova_SyntaxStabilityFunctionMap_closure1198_Nova_something)(void*, int, void*);
-typedef void (*stabilitytest_Nova_SyntaxStabilityFunctionMap_closure1200functionMap_Nova_getFunc)(void*, void*);
-typedef void (*stabilitytest_Nova_SyntaxStabilityFunctionMap_closure1200functionMap_Nova_getFunc)(void*, void*);
-typedef void (*stabilitytest_Nova_SyntaxStability_closure1201_Nova_getFunc)(void*, void*);
-typedef void (*stabilitytest_Nova_SyntaxStabilityFunctionMap_closure1203functionMap_Nova_inlineGetFunc)(void*, void*);
-typedef void (*stabilitytest_Nova_SyntaxStabilityFunctionMap_closure1203functionMap_Nova_inlineGetFunc)(void*, void*);
-typedef void (*stabilitytest_Nova_SyntaxStability_closure1204_Nova_inlineGetFunc)(void*, void*);
-typedef void (*stabilitytest_Nova_SyntaxStabilityFunctionMap_closure1206functionMap_Nova_inlineGetFunc2)(void*, void*);
-typedef void (*stabilitytest_Nova_SyntaxStabilityFunctionMap_closure1206functionMap_Nova_inlineGetFunc2)(void*, void*);
-typedef void (*stabilitytest_Nova_SyntaxStability_closure1207_Nova_inlineGetFunc2)(void*, void*);
-typedef /*stabilitytest_Nova_SyntaxStabilityFunctionMap_closure1210_Nova_inlineGetFunc*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStabilityFunctionMap_closure1212functionMap_Nova_chainedFuncReference)(void*, void*);
-typedef void (*stabilitytest_Nova_SyntaxStabilityFunctionMap_closure1210_Nova_inlineGetFunc)(void*, void*);
-typedef void (*stabilitytest_Nova_SyntaxStabilityFunctionMap_closure1210_Nova_inlineGetFunc)(void*, void*);
-typedef /*stabilitytest_Nova_SyntaxStabilityFunctionMap_closure1210_Nova_inlineGetFunc*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStabilityFunctionMap_closure1211_Nova_inlineGetFunc)(void*, void*);
-typedef /*stabilitytest_Nova_SyntaxStabilityFunctionMap_closure1210_Nova_inlineGetFunc*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStabilityFunctionMap_closure1212functionMap_Nova_chainedFuncReference)(void*, void*);
-typedef void (*stabilitytest_Nova_SyntaxStability_closure1213_Nova_inlineGetFunc)(void*, void*);
-typedef /*stabilitytest_Nova_SyntaxStability_closure1213_Nova_inlineGetFunc*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure1214_Nova_chainedFuncReference)(void*, void*);
-typedef /*stabilitytest_Nova_SyntaxStabilityFunctionMap_closure1220_Nova_chainedFuncReference*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStabilityFunctionMap_closure1222functionMap_Nova_chainedFuncReference3)(void*, void*);
-typedef /*stabilitytest_Nova_SyntaxStabilityFunctionMap_closure1218_Nova_inlineGetFunc*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStabilityFunctionMap_closure1220_Nova_chainedFuncReference)(void*, void*);
-typedef void (*stabilitytest_Nova_SyntaxStabilityFunctionMap_closure1218_Nova_inlineGetFunc)(void*, void*);
-typedef void (*stabilitytest_Nova_SyntaxStabilityFunctionMap_closure1218_Nova_inlineGetFunc)(void*, void*);
-typedef /*stabilitytest_Nova_SyntaxStabilityFunctionMap_closure1218_Nova_inlineGetFunc*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStabilityFunctionMap_closure1219_Nova_inlineGetFunc)(void*, void*);
-typedef /*stabilitytest_Nova_SyntaxStabilityFunctionMap_closure1218_Nova_inlineGetFunc*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStabilityFunctionMap_closure1220_Nova_chainedFuncReference)(void*, void*);
-typedef /*stabilitytest_Nova_SyntaxStabilityFunctionMap_closure1220_Nova_chainedFuncReference*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStabilityFunctionMap_closure1221_Nova_chainedFuncReference)(void*, void*);
-typedef /*stabilitytest_Nova_SyntaxStabilityFunctionMap_closure1220_Nova_chainedFuncReference*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStabilityFunctionMap_closure1222functionMap_Nova_chainedFuncReference3)(void*, void*);
-typedef void (*stabilitytest_Nova_SyntaxStability_closure1223_Nova_inlineGetFunc)(void*, void*);
-typedef /*stabilitytest_Nova_SyntaxStability_closure1223_Nova_inlineGetFunc*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure1224_Nova_chainedFuncReference)(void*, void*);
-typedef /*stabilitytest_Nova_SyntaxStability_closure1224_Nova_chainedFuncReference*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure1225_Nova_chainedFuncReference3)(void*, void*);
-typedef /*stabilitytest_Nova_SyntaxStabilityFunctionMap_closure1234_Nova_chainedFuncReference3*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStabilityFunctionMap_closure1236functionMap_Nova_chainedFuncReference4)(void*, void*);
-typedef /*stabilitytest_Nova_SyntaxStabilityFunctionMap_closure1232_Nova_chainedFuncReference*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStabilityFunctionMap_closure1234_Nova_chainedFuncReference3)(void*, void*);
-typedef /*stabilitytest_Nova_SyntaxStabilityFunctionMap_closure1230_Nova_inlineGetFunc*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStabilityFunctionMap_closure1232_Nova_chainedFuncReference)(void*, void*);
-typedef void (*stabilitytest_Nova_SyntaxStabilityFunctionMap_closure1230_Nova_inlineGetFunc)(void*, void*);
-typedef void (*stabilitytest_Nova_SyntaxStabilityFunctionMap_closure1230_Nova_inlineGetFunc)(void*, void*);
-typedef /*stabilitytest_Nova_SyntaxStabilityFunctionMap_closure1230_Nova_inlineGetFunc*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStabilityFunctionMap_closure1231_Nova_inlineGetFunc)(void*, void*);
-typedef /*stabilitytest_Nova_SyntaxStabilityFunctionMap_closure1230_Nova_inlineGetFunc*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStabilityFunctionMap_closure1232_Nova_chainedFuncReference)(void*, void*);
-typedef /*stabilitytest_Nova_SyntaxStabilityFunctionMap_closure1232_Nova_chainedFuncReference*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStabilityFunctionMap_closure1233_Nova_chainedFuncReference)(void*, void*);
-typedef /*stabilitytest_Nova_SyntaxStabilityFunctionMap_closure1232_Nova_chainedFuncReference*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStabilityFunctionMap_closure1234_Nova_chainedFuncReference3)(void*, void*);
-typedef /*stabilitytest_Nova_SyntaxStabilityFunctionMap_closure1234_Nova_chainedFuncReference3*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStabilityFunctionMap_closure1235_Nova_chainedFuncReference3)(void*, void*);
-typedef /*stabilitytest_Nova_SyntaxStabilityFunctionMap_closure1234_Nova_chainedFuncReference3*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStabilityFunctionMap_closure1236functionMap_Nova_chainedFuncReference4)(void*, void*);
-typedef void (*stabilitytest_Nova_SyntaxStability_closure1237_Nova_inlineGetFunc)(void*, void*);
-typedef /*stabilitytest_Nova_SyntaxStability_closure1237_Nova_inlineGetFunc*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure1238_Nova_chainedFuncReference)(void*, void*);
-typedef /*stabilitytest_Nova_SyntaxStability_closure1238_Nova_chainedFuncReference*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure1239_Nova_chainedFuncReference3)(void*, void*);
-typedef /*stabilitytest_Nova_SyntaxStability_closure1239_Nova_chainedFuncReference3*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure1240_Nova_chainedFuncReference4)(void*, void*);
-typedef /*stabilitytest_Nova_SyntaxStabilityFunctionMap_closure1252_Nova_chainedFuncReference4*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStabilityFunctionMap_closure1254functionMap_Nova_chainedFuncReference5)(void*, void*);
-typedef /*stabilitytest_Nova_SyntaxStabilityFunctionMap_closure1250_Nova_chainedFuncReference3*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStabilityFunctionMap_closure1252_Nova_chainedFuncReference4)(void*, void*);
+typedef void (*func)(void*, void*);
+typedef void (*func)(void*, void*);
+typedef int (*stabilitytest_Nova_SyntaxStabilityFunctionMap_closure1212_Nova_something)(void*, int, void*);
+typedef void* (*stabilitytest_Nova_SyntaxStabilityFunctionMap_closure1214_Nova_something)(void*, int, void*);
+typedef void* (*stabilitytest_Nova_SyntaxStabilityFunctionMap_closure1214_Nova_something)(void*, int, void*);
+typedef void (*stabilitytest_Nova_SyntaxStabilityFunctionMap_closure1216functionMap_Nova_getFunc)(void*, void*);
+typedef void (*stabilitytest_Nova_SyntaxStabilityFunctionMap_closure1216functionMap_Nova_getFunc)(void*, void*);
+typedef void (*stabilitytest_Nova_SyntaxStability_closure1217_Nova_getFunc)(void*, void*);
+typedef void (*stabilitytest_Nova_SyntaxStabilityFunctionMap_closure1219functionMap_Nova_inlineGetFunc)(void*, void*);
+typedef void (*stabilitytest_Nova_SyntaxStabilityFunctionMap_closure1219functionMap_Nova_inlineGetFunc)(void*, void*);
+typedef void (*stabilitytest_Nova_SyntaxStability_closure1220_Nova_inlineGetFunc)(void*, void*);
+typedef void (*stabilitytest_Nova_SyntaxStabilityFunctionMap_closure1222functionMap_Nova_inlineGetFunc2)(void*, void*);
+typedef void (*stabilitytest_Nova_SyntaxStabilityFunctionMap_closure1222functionMap_Nova_inlineGetFunc2)(void*, void*);
+typedef void (*stabilitytest_Nova_SyntaxStability_closure1223_Nova_inlineGetFunc2)(void*, void*);
+typedef /*stabilitytest_Nova_SyntaxStabilityFunctionMap_closure1226_Nova_inlineGetFunc*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStabilityFunctionMap_closure1228functionMap_Nova_chainedFuncReference)(void*, void*);
+typedef void (*stabilitytest_Nova_SyntaxStabilityFunctionMap_closure1226_Nova_inlineGetFunc)(void*, void*);
+typedef void (*stabilitytest_Nova_SyntaxStabilityFunctionMap_closure1226_Nova_inlineGetFunc)(void*, void*);
+typedef /*stabilitytest_Nova_SyntaxStabilityFunctionMap_closure1226_Nova_inlineGetFunc*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStabilityFunctionMap_closure1227_Nova_inlineGetFunc)(void*, void*);
+typedef /*stabilitytest_Nova_SyntaxStabilityFunctionMap_closure1226_Nova_inlineGetFunc*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStabilityFunctionMap_closure1228functionMap_Nova_chainedFuncReference)(void*, void*);
+typedef void (*stabilitytest_Nova_SyntaxStability_closure1229_Nova_inlineGetFunc)(void*, void*);
+typedef /*stabilitytest_Nova_SyntaxStability_closure1229_Nova_inlineGetFunc*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure1230_Nova_chainedFuncReference)(void*, void*);
+typedef /*stabilitytest_Nova_SyntaxStabilityFunctionMap_closure1236_Nova_chainedFuncReference*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStabilityFunctionMap_closure1238functionMap_Nova_chainedFuncReference3)(void*, void*);
+typedef /*stabilitytest_Nova_SyntaxStabilityFunctionMap_closure1234_Nova_inlineGetFunc*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStabilityFunctionMap_closure1236_Nova_chainedFuncReference)(void*, void*);
+typedef void (*stabilitytest_Nova_SyntaxStabilityFunctionMap_closure1234_Nova_inlineGetFunc)(void*, void*);
+typedef void (*stabilitytest_Nova_SyntaxStabilityFunctionMap_closure1234_Nova_inlineGetFunc)(void*, void*);
+typedef /*stabilitytest_Nova_SyntaxStabilityFunctionMap_closure1234_Nova_inlineGetFunc*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStabilityFunctionMap_closure1235_Nova_inlineGetFunc)(void*, void*);
+typedef /*stabilitytest_Nova_SyntaxStabilityFunctionMap_closure1234_Nova_inlineGetFunc*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStabilityFunctionMap_closure1236_Nova_chainedFuncReference)(void*, void*);
+typedef /*stabilitytest_Nova_SyntaxStabilityFunctionMap_closure1236_Nova_chainedFuncReference*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStabilityFunctionMap_closure1237_Nova_chainedFuncReference)(void*, void*);
+typedef /*stabilitytest_Nova_SyntaxStabilityFunctionMap_closure1236_Nova_chainedFuncReference*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStabilityFunctionMap_closure1238functionMap_Nova_chainedFuncReference3)(void*, void*);
+typedef void (*stabilitytest_Nova_SyntaxStability_closure1239_Nova_inlineGetFunc)(void*, void*);
+typedef /*stabilitytest_Nova_SyntaxStability_closure1239_Nova_inlineGetFunc*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure1240_Nova_chainedFuncReference)(void*, void*);
+typedef /*stabilitytest_Nova_SyntaxStability_closure1240_Nova_chainedFuncReference*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure1241_Nova_chainedFuncReference3)(void*, void*);
+typedef /*stabilitytest_Nova_SyntaxStabilityFunctionMap_closure1250_Nova_chainedFuncReference3*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStabilityFunctionMap_closure1252functionMap_Nova_chainedFuncReference4)(void*, void*);
 typedef /*stabilitytest_Nova_SyntaxStabilityFunctionMap_closure1248_Nova_chainedFuncReference*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStabilityFunctionMap_closure1250_Nova_chainedFuncReference3)(void*, void*);
 typedef /*stabilitytest_Nova_SyntaxStabilityFunctionMap_closure1246_Nova_inlineGetFunc*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStabilityFunctionMap_closure1248_Nova_chainedFuncReference)(void*, void*);
 typedef void (*stabilitytest_Nova_SyntaxStabilityFunctionMap_closure1246_Nova_inlineGetFunc)(void*, void*);
@@ -67829,37 +68016,53 @@ typedef /*stabilitytest_Nova_SyntaxStabilityFunctionMap_closure1246_Nova_inlineG
 typedef /*stabilitytest_Nova_SyntaxStabilityFunctionMap_closure1248_Nova_chainedFuncReference*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStabilityFunctionMap_closure1249_Nova_chainedFuncReference)(void*, void*);
 typedef /*stabilitytest_Nova_SyntaxStabilityFunctionMap_closure1248_Nova_chainedFuncReference*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStabilityFunctionMap_closure1250_Nova_chainedFuncReference3)(void*, void*);
 typedef /*stabilitytest_Nova_SyntaxStabilityFunctionMap_closure1250_Nova_chainedFuncReference3*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStabilityFunctionMap_closure1251_Nova_chainedFuncReference3)(void*, void*);
-typedef /*stabilitytest_Nova_SyntaxStabilityFunctionMap_closure1250_Nova_chainedFuncReference3*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStabilityFunctionMap_closure1252_Nova_chainedFuncReference4)(void*, void*);
-typedef /*stabilitytest_Nova_SyntaxStabilityFunctionMap_closure1252_Nova_chainedFuncReference4*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStabilityFunctionMap_closure1253_Nova_chainedFuncReference4)(void*, void*);
-typedef /*stabilitytest_Nova_SyntaxStabilityFunctionMap_closure1252_Nova_chainedFuncReference4*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStabilityFunctionMap_closure1254functionMap_Nova_chainedFuncReference5)(void*, void*);
-typedef void (*stabilitytest_Nova_SyntaxStability_closure1255_Nova_inlineGetFunc)(void*, void*);
-typedef /*stabilitytest_Nova_SyntaxStability_closure1255_Nova_inlineGetFunc*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure1256_Nova_chainedFuncReference)(void*, void*);
-typedef /*stabilitytest_Nova_SyntaxStability_closure1256_Nova_chainedFuncReference*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure1257_Nova_chainedFuncReference3)(void*, void*);
-typedef /*stabilitytest_Nova_SyntaxStability_closure1257_Nova_chainedFuncReference3*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure1258_Nova_chainedFuncReference4)(void*, void*);
-typedef /*stabilitytest_Nova_SyntaxStability_closure1258_Nova_chainedFuncReference4*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure1259_Nova_chainedFuncReference5)(void*, void*);
-typedef /*stabilitytest_Nova_SyntaxStabilityFunctionMap_closure1274_Nova_chainedFuncReference5*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStabilityFunctionMap_closure1276functionMap_Nova_chainedFuncReference6)(void*, void*);
-typedef /*stabilitytest_Nova_SyntaxStabilityFunctionMap_closure1272_Nova_chainedFuncReference4*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStabilityFunctionMap_closure1274_Nova_chainedFuncReference5)(void*, void*);
-typedef /*stabilitytest_Nova_SyntaxStabilityFunctionMap_closure1270_Nova_chainedFuncReference3*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStabilityFunctionMap_closure1272_Nova_chainedFuncReference4)(void*, void*);
-typedef /*stabilitytest_Nova_SyntaxStabilityFunctionMap_closure1268_Nova_chainedFuncReference*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStabilityFunctionMap_closure1270_Nova_chainedFuncReference3)(void*, void*);
-typedef /*stabilitytest_Nova_SyntaxStabilityFunctionMap_closure1266_Nova_inlineGetFunc*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStabilityFunctionMap_closure1268_Nova_chainedFuncReference)(void*, void*);
-typedef void (*stabilitytest_Nova_SyntaxStabilityFunctionMap_closure1266_Nova_inlineGetFunc)(void*, void*);
-typedef void (*stabilitytest_Nova_SyntaxStabilityFunctionMap_closure1266_Nova_inlineGetFunc)(void*, void*);
-typedef /*stabilitytest_Nova_SyntaxStabilityFunctionMap_closure1266_Nova_inlineGetFunc*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStabilityFunctionMap_closure1267_Nova_inlineGetFunc)(void*, void*);
-typedef /*stabilitytest_Nova_SyntaxStabilityFunctionMap_closure1266_Nova_inlineGetFunc*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStabilityFunctionMap_closure1268_Nova_chainedFuncReference)(void*, void*);
-typedef /*stabilitytest_Nova_SyntaxStabilityFunctionMap_closure1268_Nova_chainedFuncReference*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStabilityFunctionMap_closure1269_Nova_chainedFuncReference)(void*, void*);
-typedef /*stabilitytest_Nova_SyntaxStabilityFunctionMap_closure1268_Nova_chainedFuncReference*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStabilityFunctionMap_closure1270_Nova_chainedFuncReference3)(void*, void*);
-typedef /*stabilitytest_Nova_SyntaxStabilityFunctionMap_closure1270_Nova_chainedFuncReference3*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStabilityFunctionMap_closure1271_Nova_chainedFuncReference3)(void*, void*);
-typedef /*stabilitytest_Nova_SyntaxStabilityFunctionMap_closure1270_Nova_chainedFuncReference3*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStabilityFunctionMap_closure1272_Nova_chainedFuncReference4)(void*, void*);
-typedef /*stabilitytest_Nova_SyntaxStabilityFunctionMap_closure1272_Nova_chainedFuncReference4*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStabilityFunctionMap_closure1273_Nova_chainedFuncReference4)(void*, void*);
-typedef /*stabilitytest_Nova_SyntaxStabilityFunctionMap_closure1272_Nova_chainedFuncReference4*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStabilityFunctionMap_closure1274_Nova_chainedFuncReference5)(void*, void*);
-typedef /*stabilitytest_Nova_SyntaxStabilityFunctionMap_closure1274_Nova_chainedFuncReference5*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStabilityFunctionMap_closure1275_Nova_chainedFuncReference5)(void*, void*);
-typedef /*stabilitytest_Nova_SyntaxStabilityFunctionMap_closure1274_Nova_chainedFuncReference5*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStabilityFunctionMap_closure1276functionMap_Nova_chainedFuncReference6)(void*, void*);
-typedef void (*stabilitytest_Nova_SyntaxStability_closure1277_Nova_inlineGetFunc)(void*, void*);
-typedef /*stabilitytest_Nova_SyntaxStability_closure1277_Nova_inlineGetFunc*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure1278_Nova_chainedFuncReference)(void*, void*);
-typedef /*stabilitytest_Nova_SyntaxStability_closure1278_Nova_chainedFuncReference*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure1279_Nova_chainedFuncReference3)(void*, void*);
-typedef /*stabilitytest_Nova_SyntaxStability_closure1279_Nova_chainedFuncReference3*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure1280_Nova_chainedFuncReference4)(void*, void*);
-typedef /*stabilitytest_Nova_SyntaxStability_closure1280_Nova_chainedFuncReference4*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure1281_Nova_chainedFuncReference5)(void*, void*);
-typedef /*stabilitytest_Nova_SyntaxStability_closure1281_Nova_chainedFuncReference5*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure1282_Nova_chainedFuncReference6)(void*, void*);
+typedef /*stabilitytest_Nova_SyntaxStabilityFunctionMap_closure1250_Nova_chainedFuncReference3*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStabilityFunctionMap_closure1252functionMap_Nova_chainedFuncReference4)(void*, void*);
+typedef void (*stabilitytest_Nova_SyntaxStability_closure1253_Nova_inlineGetFunc)(void*, void*);
+typedef /*stabilitytest_Nova_SyntaxStability_closure1253_Nova_inlineGetFunc*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure1254_Nova_chainedFuncReference)(void*, void*);
+typedef /*stabilitytest_Nova_SyntaxStability_closure1254_Nova_chainedFuncReference*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure1255_Nova_chainedFuncReference3)(void*, void*);
+typedef /*stabilitytest_Nova_SyntaxStability_closure1255_Nova_chainedFuncReference3*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure1256_Nova_chainedFuncReference4)(void*, void*);
+typedef /*stabilitytest_Nova_SyntaxStabilityFunctionMap_closure1268_Nova_chainedFuncReference4*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStabilityFunctionMap_closure1270functionMap_Nova_chainedFuncReference5)(void*, void*);
+typedef /*stabilitytest_Nova_SyntaxStabilityFunctionMap_closure1266_Nova_chainedFuncReference3*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStabilityFunctionMap_closure1268_Nova_chainedFuncReference4)(void*, void*);
+typedef /*stabilitytest_Nova_SyntaxStabilityFunctionMap_closure1264_Nova_chainedFuncReference*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStabilityFunctionMap_closure1266_Nova_chainedFuncReference3)(void*, void*);
+typedef /*stabilitytest_Nova_SyntaxStabilityFunctionMap_closure1262_Nova_inlineGetFunc*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStabilityFunctionMap_closure1264_Nova_chainedFuncReference)(void*, void*);
+typedef void (*stabilitytest_Nova_SyntaxStabilityFunctionMap_closure1262_Nova_inlineGetFunc)(void*, void*);
+typedef void (*stabilitytest_Nova_SyntaxStabilityFunctionMap_closure1262_Nova_inlineGetFunc)(void*, void*);
+typedef /*stabilitytest_Nova_SyntaxStabilityFunctionMap_closure1262_Nova_inlineGetFunc*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStabilityFunctionMap_closure1263_Nova_inlineGetFunc)(void*, void*);
+typedef /*stabilitytest_Nova_SyntaxStabilityFunctionMap_closure1262_Nova_inlineGetFunc*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStabilityFunctionMap_closure1264_Nova_chainedFuncReference)(void*, void*);
+typedef /*stabilitytest_Nova_SyntaxStabilityFunctionMap_closure1264_Nova_chainedFuncReference*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStabilityFunctionMap_closure1265_Nova_chainedFuncReference)(void*, void*);
+typedef /*stabilitytest_Nova_SyntaxStabilityFunctionMap_closure1264_Nova_chainedFuncReference*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStabilityFunctionMap_closure1266_Nova_chainedFuncReference3)(void*, void*);
+typedef /*stabilitytest_Nova_SyntaxStabilityFunctionMap_closure1266_Nova_chainedFuncReference3*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStabilityFunctionMap_closure1267_Nova_chainedFuncReference3)(void*, void*);
+typedef /*stabilitytest_Nova_SyntaxStabilityFunctionMap_closure1266_Nova_chainedFuncReference3*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStabilityFunctionMap_closure1268_Nova_chainedFuncReference4)(void*, void*);
+typedef /*stabilitytest_Nova_SyntaxStabilityFunctionMap_closure1268_Nova_chainedFuncReference4*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStabilityFunctionMap_closure1269_Nova_chainedFuncReference4)(void*, void*);
+typedef /*stabilitytest_Nova_SyntaxStabilityFunctionMap_closure1268_Nova_chainedFuncReference4*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStabilityFunctionMap_closure1270functionMap_Nova_chainedFuncReference5)(void*, void*);
+typedef void (*stabilitytest_Nova_SyntaxStability_closure1271_Nova_inlineGetFunc)(void*, void*);
+typedef /*stabilitytest_Nova_SyntaxStability_closure1271_Nova_inlineGetFunc*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure1272_Nova_chainedFuncReference)(void*, void*);
+typedef /*stabilitytest_Nova_SyntaxStability_closure1272_Nova_chainedFuncReference*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure1273_Nova_chainedFuncReference3)(void*, void*);
+typedef /*stabilitytest_Nova_SyntaxStability_closure1273_Nova_chainedFuncReference3*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure1274_Nova_chainedFuncReference4)(void*, void*);
+typedef /*stabilitytest_Nova_SyntaxStability_closure1274_Nova_chainedFuncReference4*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure1275_Nova_chainedFuncReference5)(void*, void*);
+typedef /*stabilitytest_Nova_SyntaxStabilityFunctionMap_closure1290_Nova_chainedFuncReference5*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStabilityFunctionMap_closure1292functionMap_Nova_chainedFuncReference6)(void*, void*);
+typedef /*stabilitytest_Nova_SyntaxStabilityFunctionMap_closure1288_Nova_chainedFuncReference4*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStabilityFunctionMap_closure1290_Nova_chainedFuncReference5)(void*, void*);
+typedef /*stabilitytest_Nova_SyntaxStabilityFunctionMap_closure1286_Nova_chainedFuncReference3*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStabilityFunctionMap_closure1288_Nova_chainedFuncReference4)(void*, void*);
+typedef /*stabilitytest_Nova_SyntaxStabilityFunctionMap_closure1284_Nova_chainedFuncReference*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStabilityFunctionMap_closure1286_Nova_chainedFuncReference3)(void*, void*);
+typedef /*stabilitytest_Nova_SyntaxStabilityFunctionMap_closure1282_Nova_inlineGetFunc*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStabilityFunctionMap_closure1284_Nova_chainedFuncReference)(void*, void*);
+typedef void (*stabilitytest_Nova_SyntaxStabilityFunctionMap_closure1282_Nova_inlineGetFunc)(void*, void*);
+typedef void (*stabilitytest_Nova_SyntaxStabilityFunctionMap_closure1282_Nova_inlineGetFunc)(void*, void*);
+typedef /*stabilitytest_Nova_SyntaxStabilityFunctionMap_closure1282_Nova_inlineGetFunc*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStabilityFunctionMap_closure1283_Nova_inlineGetFunc)(void*, void*);
+typedef /*stabilitytest_Nova_SyntaxStabilityFunctionMap_closure1282_Nova_inlineGetFunc*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStabilityFunctionMap_closure1284_Nova_chainedFuncReference)(void*, void*);
+typedef /*stabilitytest_Nova_SyntaxStabilityFunctionMap_closure1284_Nova_chainedFuncReference*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStabilityFunctionMap_closure1285_Nova_chainedFuncReference)(void*, void*);
+typedef /*stabilitytest_Nova_SyntaxStabilityFunctionMap_closure1284_Nova_chainedFuncReference*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStabilityFunctionMap_closure1286_Nova_chainedFuncReference3)(void*, void*);
+typedef /*stabilitytest_Nova_SyntaxStabilityFunctionMap_closure1286_Nova_chainedFuncReference3*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStabilityFunctionMap_closure1287_Nova_chainedFuncReference3)(void*, void*);
+typedef /*stabilitytest_Nova_SyntaxStabilityFunctionMap_closure1286_Nova_chainedFuncReference3*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStabilityFunctionMap_closure1288_Nova_chainedFuncReference4)(void*, void*);
+typedef /*stabilitytest_Nova_SyntaxStabilityFunctionMap_closure1288_Nova_chainedFuncReference4*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStabilityFunctionMap_closure1289_Nova_chainedFuncReference4)(void*, void*);
+typedef /*stabilitytest_Nova_SyntaxStabilityFunctionMap_closure1288_Nova_chainedFuncReference4*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStabilityFunctionMap_closure1290_Nova_chainedFuncReference5)(void*, void*);
+typedef /*stabilitytest_Nova_SyntaxStabilityFunctionMap_closure1290_Nova_chainedFuncReference5*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStabilityFunctionMap_closure1291_Nova_chainedFuncReference5)(void*, void*);
+typedef /*stabilitytest_Nova_SyntaxStabilityFunctionMap_closure1290_Nova_chainedFuncReference5*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStabilityFunctionMap_closure1292functionMap_Nova_chainedFuncReference6)(void*, void*);
+typedef void (*stabilitytest_Nova_SyntaxStability_closure1293_Nova_inlineGetFunc)(void*, void*);
+typedef /*stabilitytest_Nova_SyntaxStability_closure1293_Nova_inlineGetFunc*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure1294_Nova_chainedFuncReference)(void*, void*);
+typedef /*stabilitytest_Nova_SyntaxStability_closure1294_Nova_chainedFuncReference*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure1295_Nova_chainedFuncReference3)(void*, void*);
+typedef /*stabilitytest_Nova_SyntaxStability_closure1295_Nova_chainedFuncReference3*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure1296_Nova_chainedFuncReference4)(void*, void*);
+typedef /*stabilitytest_Nova_SyntaxStability_closure1296_Nova_chainedFuncReference4*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure1297_Nova_chainedFuncReference5)(void*, void*);
+typedef /*stabilitytest_Nova_SyntaxStability_closure1297_Nova_chainedFuncReference5*/nova_funcStruct* (*stabilitytest_Nova_SyntaxStability_closure1298_Nova_chainedFuncReference6)(void*, void*);
 
 CCLASS_PRIVATE
 (
@@ -67894,7 +68097,7 @@ int stabilitytest_Nova_SyntaxStability_1_Nova_named(stabilitytest_Nova_SyntaxSta
 void stabilitytest_Nova_SyntaxStability_Nova_testNamedArguments(stabilitytest_Nova_SyntaxStability* this);
 int stabilitytest_Nova_SyntaxStability_Nova_func1(stabilitytest_Nova_SyntaxStability* this, int a);
 int stabilitytest_Nova_SyntaxStability_Nova_func2(stabilitytest_Nova_SyntaxStability* this, int a);
-int stabilitytest_Nova_SyntaxStability_Nova_myFunc(stabilitytest_Nova_SyntaxStability* this, stabilitytest_Nova_SyntaxStability_closure910_Nova_something stabilitytest_Nova_SyntaxStability_Nova_something, void* stabilitytest_Nova_SyntaxStability_ref_Nova_something, void* stabilitytest_Nova_SyntaxStability_context_Nova_something);
+int stabilitytest_Nova_SyntaxStability_Nova_myFunc(stabilitytest_Nova_SyntaxStability* this, stabilitytest_Nova_SyntaxStability_closure916_Nova_something stabilitytest_Nova_SyntaxStability_Nova_something, void* stabilitytest_Nova_SyntaxStability_ref_Nova_something, void* stabilitytest_Nova_SyntaxStability_context_Nova_something);
 void stabilitytest_Nova_SyntaxStability_Nova_checkDefaultClosureArguments(stabilitytest_Nova_SyntaxStability* this);
 void stabilitytest_Nova_SyntaxStability_Nova_checkZipper(stabilitytest_Nova_SyntaxStability* this);
 void stabilitytest_Nova_SyntaxStability_Nova_testSafeNavigation(stabilitytest_Nova_SyntaxStability* this);
@@ -67912,14 +68115,14 @@ void stabilitytest_Nova_SyntaxStability_Nova_testCallingChainedFunctionX4(stabil
 void stabilitytest_Nova_SyntaxStability_Nova_testCallingChainedFunctionX5(stabilitytest_Nova_SyntaxStability* this);
 void stabilitytest_Nova_SyntaxStability_Nova_testCallingChainedFunctionX6(stabilitytest_Nova_SyntaxStability* this);
 void stabilitytest_Nova_SyntaxStability_Nova_refFunc(stabilitytest_Nova_SyntaxStability* this);
-/*stabilitytest_Nova_SyntaxStability_closure1201_Nova_getFunc*/nova_funcStruct* stabilitytest_Nova_SyntaxStability_Nova_getFunc(stabilitytest_Nova_SyntaxStability* this);
-/*stabilitytest_Nova_SyntaxStability_closure1204_Nova_inlineGetFunc*/nova_funcStruct* stabilitytest_Nova_SyntaxStability_Nova_inlineGetFunc(stabilitytest_Nova_SyntaxStability* this);
-/*stabilitytest_Nova_SyntaxStability_closure1207_Nova_inlineGetFunc2*/nova_funcStruct* stabilitytest_Nova_SyntaxStability_Nova_inlineGetFunc2(stabilitytest_Nova_SyntaxStability* this);
-/*stabilitytest_Nova_SyntaxStability_closure1214_Nova_chainedFuncReference*/nova_funcStruct* stabilitytest_Nova_SyntaxStability_Nova_chainedFuncReference(stabilitytest_Nova_SyntaxStability* this);
-/*stabilitytest_Nova_SyntaxStability_closure1225_Nova_chainedFuncReference3*/nova_funcStruct* stabilitytest_Nova_SyntaxStability_Nova_chainedFuncReference3(stabilitytest_Nova_SyntaxStability* this);
-/*stabilitytest_Nova_SyntaxStability_closure1240_Nova_chainedFuncReference4*/nova_funcStruct* stabilitytest_Nova_SyntaxStability_Nova_chainedFuncReference4(stabilitytest_Nova_SyntaxStability* this);
-/*stabilitytest_Nova_SyntaxStability_closure1259_Nova_chainedFuncReference5*/nova_funcStruct* stabilitytest_Nova_SyntaxStability_Nova_chainedFuncReference5(stabilitytest_Nova_SyntaxStability* this);
-/*stabilitytest_Nova_SyntaxStability_closure1282_Nova_chainedFuncReference6*/nova_funcStruct* stabilitytest_Nova_SyntaxStability_Nova_chainedFuncReference6(stabilitytest_Nova_SyntaxStability* this);
+/*stabilitytest_Nova_SyntaxStability_closure1217_Nova_getFunc*/nova_funcStruct* stabilitytest_Nova_SyntaxStability_Nova_getFunc(stabilitytest_Nova_SyntaxStability* this);
+/*stabilitytest_Nova_SyntaxStability_closure1220_Nova_inlineGetFunc*/nova_funcStruct* stabilitytest_Nova_SyntaxStability_Nova_inlineGetFunc(stabilitytest_Nova_SyntaxStability* this);
+/*stabilitytest_Nova_SyntaxStability_closure1223_Nova_inlineGetFunc2*/nova_funcStruct* stabilitytest_Nova_SyntaxStability_Nova_inlineGetFunc2(stabilitytest_Nova_SyntaxStability* this);
+/*stabilitytest_Nova_SyntaxStability_closure1230_Nova_chainedFuncReference*/nova_funcStruct* stabilitytest_Nova_SyntaxStability_Nova_chainedFuncReference(stabilitytest_Nova_SyntaxStability* this);
+/*stabilitytest_Nova_SyntaxStability_closure1241_Nova_chainedFuncReference3*/nova_funcStruct* stabilitytest_Nova_SyntaxStability_Nova_chainedFuncReference3(stabilitytest_Nova_SyntaxStability* this);
+/*stabilitytest_Nova_SyntaxStability_closure1256_Nova_chainedFuncReference4*/nova_funcStruct* stabilitytest_Nova_SyntaxStability_Nova_chainedFuncReference4(stabilitytest_Nova_SyntaxStability* this);
+/*stabilitytest_Nova_SyntaxStability_closure1275_Nova_chainedFuncReference5*/nova_funcStruct* stabilitytest_Nova_SyntaxStability_Nova_chainedFuncReference5(stabilitytest_Nova_SyntaxStability* this);
+/*stabilitytest_Nova_SyntaxStability_closure1298_Nova_chainedFuncReference6*/nova_funcStruct* stabilitytest_Nova_SyntaxStability_Nova_chainedFuncReference6(stabilitytest_Nova_SyntaxStability* this);
 void stabilitytest_Nova_SyntaxStability_Nova_testSingleFunctionInArray(stabilitytest_Nova_SyntaxStability* this);
 void stabilitytest_Nova_SyntaxStability_Nova_testCallingFunctionFromCollection(stabilitytest_Nova_SyntaxStability* this);
 nova_datastruct_list_Nova_Array* generated25(stabilitytest_Nova_SyntaxStability* this);
@@ -67955,7 +68158,7 @@ int stabilitytest_Nova_SyntaxStabilityFunctionMap_functionMap1_Nova_named(stabil
 void stabilitytest_Nova_SyntaxStabilityFunctionMap_functionMap_Nova_testNamedArguments(stabilitytest_Nova_SyntaxStabilityFunctionMap* this, stabilitytest_Nova_SyntaxStability* reference);
 int stabilitytest_Nova_SyntaxStabilityFunctionMap_functionMap_Nova_func1(stabilitytest_Nova_SyntaxStabilityFunctionMap* this, stabilitytest_Nova_SyntaxStability* reference, int a);
 int stabilitytest_Nova_SyntaxStabilityFunctionMap_functionMap_Nova_func2(stabilitytest_Nova_SyntaxStabilityFunctionMap* this, stabilitytest_Nova_SyntaxStability* reference, int a);
-int stabilitytest_Nova_SyntaxStabilityFunctionMap_functionMap_Nova_myFunc(stabilitytest_Nova_SyntaxStabilityFunctionMap* this, stabilitytest_Nova_SyntaxStability* reference, stabilitytest_Nova_SyntaxStabilityFunctionMap_closure1196_Nova_something stabilitytest_Nova_SyntaxStabilityFunctionMap_Nova_something, void* stabilitytest_Nova_SyntaxStabilityFunctionMap_ref_Nova_something, void* stabilitytest_Nova_SyntaxStabilityFunctionMap_context_Nova_something);
+int stabilitytest_Nova_SyntaxStabilityFunctionMap_functionMap_Nova_myFunc(stabilitytest_Nova_SyntaxStabilityFunctionMap* this, stabilitytest_Nova_SyntaxStability* reference, stabilitytest_Nova_SyntaxStabilityFunctionMap_closure1212_Nova_something stabilitytest_Nova_SyntaxStabilityFunctionMap_Nova_something, void* stabilitytest_Nova_SyntaxStabilityFunctionMap_ref_Nova_something, void* stabilitytest_Nova_SyntaxStabilityFunctionMap_context_Nova_something);
 void stabilitytest_Nova_SyntaxStabilityFunctionMap_functionMap_Nova_checkDefaultClosureArguments(stabilitytest_Nova_SyntaxStabilityFunctionMap* this, stabilitytest_Nova_SyntaxStability* reference);
 void stabilitytest_Nova_SyntaxStabilityFunctionMap_functionMap_Nova_checkZipper(stabilitytest_Nova_SyntaxStabilityFunctionMap* this, stabilitytest_Nova_SyntaxStability* reference);
 void stabilitytest_Nova_SyntaxStabilityFunctionMap_functionMap_Nova_testSafeNavigation(stabilitytest_Nova_SyntaxStabilityFunctionMap* this, stabilitytest_Nova_SyntaxStability* reference);
@@ -67973,14 +68176,14 @@ void stabilitytest_Nova_SyntaxStabilityFunctionMap_functionMap_Nova_testCallingC
 void stabilitytest_Nova_SyntaxStabilityFunctionMap_functionMap_Nova_testCallingChainedFunctionX5(stabilitytest_Nova_SyntaxStabilityFunctionMap* this, stabilitytest_Nova_SyntaxStability* reference);
 void stabilitytest_Nova_SyntaxStabilityFunctionMap_functionMap_Nova_testCallingChainedFunctionX6(stabilitytest_Nova_SyntaxStabilityFunctionMap* this, stabilitytest_Nova_SyntaxStability* reference);
 void stabilitytest_Nova_SyntaxStabilityFunctionMap_functionMap_Nova_refFunc(stabilitytest_Nova_SyntaxStabilityFunctionMap* this, stabilitytest_Nova_SyntaxStability* reference);
-/*stabilitytest_Nova_SyntaxStabilityFunctionMap_closure1200functionMap_Nova_getFunc*/nova_funcStruct* stabilitytest_Nova_SyntaxStabilityFunctionMap_functionMap_Nova_getFunc(stabilitytest_Nova_SyntaxStabilityFunctionMap* this, stabilitytest_Nova_SyntaxStability* reference);
-/*stabilitytest_Nova_SyntaxStabilityFunctionMap_closure1203functionMap_Nova_inlineGetFunc*/nova_funcStruct* stabilitytest_Nova_SyntaxStabilityFunctionMap_functionMap_Nova_inlineGetFunc(stabilitytest_Nova_SyntaxStabilityFunctionMap* this, stabilitytest_Nova_SyntaxStability* reference);
-/*stabilitytest_Nova_SyntaxStabilityFunctionMap_closure1206functionMap_Nova_inlineGetFunc2*/nova_funcStruct* stabilitytest_Nova_SyntaxStabilityFunctionMap_functionMap_Nova_inlineGetFunc2(stabilitytest_Nova_SyntaxStabilityFunctionMap* this, stabilitytest_Nova_SyntaxStability* reference);
-/*stabilitytest_Nova_SyntaxStabilityFunctionMap_closure1212functionMap_Nova_chainedFuncReference*/nova_funcStruct* stabilitytest_Nova_SyntaxStabilityFunctionMap_functionMap_Nova_chainedFuncReference(stabilitytest_Nova_SyntaxStabilityFunctionMap* this, stabilitytest_Nova_SyntaxStability* reference);
-/*stabilitytest_Nova_SyntaxStabilityFunctionMap_closure1222functionMap_Nova_chainedFuncReference3*/nova_funcStruct* stabilitytest_Nova_SyntaxStabilityFunctionMap_functionMap_Nova_chainedFuncReference3(stabilitytest_Nova_SyntaxStabilityFunctionMap* this, stabilitytest_Nova_SyntaxStability* reference);
-/*stabilitytest_Nova_SyntaxStabilityFunctionMap_closure1236functionMap_Nova_chainedFuncReference4*/nova_funcStruct* stabilitytest_Nova_SyntaxStabilityFunctionMap_functionMap_Nova_chainedFuncReference4(stabilitytest_Nova_SyntaxStabilityFunctionMap* this, stabilitytest_Nova_SyntaxStability* reference);
-/*stabilitytest_Nova_SyntaxStabilityFunctionMap_closure1254functionMap_Nova_chainedFuncReference5*/nova_funcStruct* stabilitytest_Nova_SyntaxStabilityFunctionMap_functionMap_Nova_chainedFuncReference5(stabilitytest_Nova_SyntaxStabilityFunctionMap* this, stabilitytest_Nova_SyntaxStability* reference);
-/*stabilitytest_Nova_SyntaxStabilityFunctionMap_closure1276functionMap_Nova_chainedFuncReference6*/nova_funcStruct* stabilitytest_Nova_SyntaxStabilityFunctionMap_functionMap_Nova_chainedFuncReference6(stabilitytest_Nova_SyntaxStabilityFunctionMap* this, stabilitytest_Nova_SyntaxStability* reference);
+/*stabilitytest_Nova_SyntaxStabilityFunctionMap_closure1216functionMap_Nova_getFunc*/nova_funcStruct* stabilitytest_Nova_SyntaxStabilityFunctionMap_functionMap_Nova_getFunc(stabilitytest_Nova_SyntaxStabilityFunctionMap* this, stabilitytest_Nova_SyntaxStability* reference);
+/*stabilitytest_Nova_SyntaxStabilityFunctionMap_closure1219functionMap_Nova_inlineGetFunc*/nova_funcStruct* stabilitytest_Nova_SyntaxStabilityFunctionMap_functionMap_Nova_inlineGetFunc(stabilitytest_Nova_SyntaxStabilityFunctionMap* this, stabilitytest_Nova_SyntaxStability* reference);
+/*stabilitytest_Nova_SyntaxStabilityFunctionMap_closure1222functionMap_Nova_inlineGetFunc2*/nova_funcStruct* stabilitytest_Nova_SyntaxStabilityFunctionMap_functionMap_Nova_inlineGetFunc2(stabilitytest_Nova_SyntaxStabilityFunctionMap* this, stabilitytest_Nova_SyntaxStability* reference);
+/*stabilitytest_Nova_SyntaxStabilityFunctionMap_closure1228functionMap_Nova_chainedFuncReference*/nova_funcStruct* stabilitytest_Nova_SyntaxStabilityFunctionMap_functionMap_Nova_chainedFuncReference(stabilitytest_Nova_SyntaxStabilityFunctionMap* this, stabilitytest_Nova_SyntaxStability* reference);
+/*stabilitytest_Nova_SyntaxStabilityFunctionMap_closure1238functionMap_Nova_chainedFuncReference3*/nova_funcStruct* stabilitytest_Nova_SyntaxStabilityFunctionMap_functionMap_Nova_chainedFuncReference3(stabilitytest_Nova_SyntaxStabilityFunctionMap* this, stabilitytest_Nova_SyntaxStability* reference);
+/*stabilitytest_Nova_SyntaxStabilityFunctionMap_closure1252functionMap_Nova_chainedFuncReference4*/nova_funcStruct* stabilitytest_Nova_SyntaxStabilityFunctionMap_functionMap_Nova_chainedFuncReference4(stabilitytest_Nova_SyntaxStabilityFunctionMap* this, stabilitytest_Nova_SyntaxStability* reference);
+/*stabilitytest_Nova_SyntaxStabilityFunctionMap_closure1270functionMap_Nova_chainedFuncReference5*/nova_funcStruct* stabilitytest_Nova_SyntaxStabilityFunctionMap_functionMap_Nova_chainedFuncReference5(stabilitytest_Nova_SyntaxStabilityFunctionMap* this, stabilitytest_Nova_SyntaxStability* reference);
+/*stabilitytest_Nova_SyntaxStabilityFunctionMap_closure1292functionMap_Nova_chainedFuncReference6*/nova_funcStruct* stabilitytest_Nova_SyntaxStabilityFunctionMap_functionMap_Nova_chainedFuncReference6(stabilitytest_Nova_SyntaxStabilityFunctionMap* this, stabilitytest_Nova_SyntaxStability* reference);
 void stabilitytest_Nova_SyntaxStabilityFunctionMap_functionMap_Nova_testSingleFunctionInArray(stabilitytest_Nova_SyntaxStabilityFunctionMap* this, stabilitytest_Nova_SyntaxStability* reference);
 void stabilitytest_Nova_SyntaxStabilityFunctionMap_functionMap_Nova_testCallingFunctionFromCollection(stabilitytest_Nova_SyntaxStabilityFunctionMap* this, stabilitytest_Nova_SyntaxStability* reference);
 
@@ -68009,7 +68212,7 @@ int stabilitytest_Nova_SyntaxStability_1_Nova_named(stabilitytest_Nova_SyntaxSta
 void stabilitytest_Nova_SyntaxStability_Nova_testNamedArguments(stabilitytest_Nova_SyntaxStability* this);
 int stabilitytest_Nova_SyntaxStability_Nova_func1(stabilitytest_Nova_SyntaxStability* this, int a);
 int stabilitytest_Nova_SyntaxStability_Nova_func2(stabilitytest_Nova_SyntaxStability* this, int a);
-int stabilitytest_Nova_SyntaxStability_Nova_myFunc(stabilitytest_Nova_SyntaxStability* this, stabilitytest_Nova_SyntaxStability_closure910_Nova_something stabilitytest_Nova_SyntaxStability_Nova_something, void* stabilitytest_Nova_SyntaxStability_ref_Nova_something, void* stabilitytest_Nova_SyntaxStability_context_Nova_something);
+int stabilitytest_Nova_SyntaxStability_Nova_myFunc(stabilitytest_Nova_SyntaxStability* this, stabilitytest_Nova_SyntaxStability_closure916_Nova_something stabilitytest_Nova_SyntaxStability_Nova_something, void* stabilitytest_Nova_SyntaxStability_ref_Nova_something, void* stabilitytest_Nova_SyntaxStability_context_Nova_something);
 void stabilitytest_Nova_SyntaxStability_Nova_checkDefaultClosureArguments(stabilitytest_Nova_SyntaxStability* this);
 void stabilitytest_Nova_SyntaxStability_Nova_checkZipper(stabilitytest_Nova_SyntaxStability* this);
 void stabilitytest_Nova_SyntaxStability_Nova_testSafeNavigation(stabilitytest_Nova_SyntaxStability* this);
@@ -68027,14 +68230,14 @@ void stabilitytest_Nova_SyntaxStability_Nova_testCallingChainedFunctionX4(stabil
 void stabilitytest_Nova_SyntaxStability_Nova_testCallingChainedFunctionX5(stabilitytest_Nova_SyntaxStability* this);
 void stabilitytest_Nova_SyntaxStability_Nova_testCallingChainedFunctionX6(stabilitytest_Nova_SyntaxStability* this);
 void stabilitytest_Nova_SyntaxStability_Nova_refFunc(stabilitytest_Nova_SyntaxStability* this);
-/*stabilitytest_Nova_SyntaxStability_closure1201_Nova_getFunc*/nova_funcStruct* stabilitytest_Nova_SyntaxStability_Nova_getFunc(stabilitytest_Nova_SyntaxStability* this);
-/*stabilitytest_Nova_SyntaxStability_closure1204_Nova_inlineGetFunc*/nova_funcStruct* stabilitytest_Nova_SyntaxStability_Nova_inlineGetFunc(stabilitytest_Nova_SyntaxStability* this);
-/*stabilitytest_Nova_SyntaxStability_closure1207_Nova_inlineGetFunc2*/nova_funcStruct* stabilitytest_Nova_SyntaxStability_Nova_inlineGetFunc2(stabilitytest_Nova_SyntaxStability* this);
-/*stabilitytest_Nova_SyntaxStability_closure1214_Nova_chainedFuncReference*/nova_funcStruct* stabilitytest_Nova_SyntaxStability_Nova_chainedFuncReference(stabilitytest_Nova_SyntaxStability* this);
-/*stabilitytest_Nova_SyntaxStability_closure1225_Nova_chainedFuncReference3*/nova_funcStruct* stabilitytest_Nova_SyntaxStability_Nova_chainedFuncReference3(stabilitytest_Nova_SyntaxStability* this);
-/*stabilitytest_Nova_SyntaxStability_closure1240_Nova_chainedFuncReference4*/nova_funcStruct* stabilitytest_Nova_SyntaxStability_Nova_chainedFuncReference4(stabilitytest_Nova_SyntaxStability* this);
-/*stabilitytest_Nova_SyntaxStability_closure1259_Nova_chainedFuncReference5*/nova_funcStruct* stabilitytest_Nova_SyntaxStability_Nova_chainedFuncReference5(stabilitytest_Nova_SyntaxStability* this);
-/*stabilitytest_Nova_SyntaxStability_closure1282_Nova_chainedFuncReference6*/nova_funcStruct* stabilitytest_Nova_SyntaxStability_Nova_chainedFuncReference6(stabilitytest_Nova_SyntaxStability* this);
+/*stabilitytest_Nova_SyntaxStability_closure1217_Nova_getFunc*/nova_funcStruct* stabilitytest_Nova_SyntaxStability_Nova_getFunc(stabilitytest_Nova_SyntaxStability* this);
+/*stabilitytest_Nova_SyntaxStability_closure1220_Nova_inlineGetFunc*/nova_funcStruct* stabilitytest_Nova_SyntaxStability_Nova_inlineGetFunc(stabilitytest_Nova_SyntaxStability* this);
+/*stabilitytest_Nova_SyntaxStability_closure1223_Nova_inlineGetFunc2*/nova_funcStruct* stabilitytest_Nova_SyntaxStability_Nova_inlineGetFunc2(stabilitytest_Nova_SyntaxStability* this);
+/*stabilitytest_Nova_SyntaxStability_closure1230_Nova_chainedFuncReference*/nova_funcStruct* stabilitytest_Nova_SyntaxStability_Nova_chainedFuncReference(stabilitytest_Nova_SyntaxStability* this);
+/*stabilitytest_Nova_SyntaxStability_closure1241_Nova_chainedFuncReference3*/nova_funcStruct* stabilitytest_Nova_SyntaxStability_Nova_chainedFuncReference3(stabilitytest_Nova_SyntaxStability* this);
+/*stabilitytest_Nova_SyntaxStability_closure1256_Nova_chainedFuncReference4*/nova_funcStruct* stabilitytest_Nova_SyntaxStability_Nova_chainedFuncReference4(stabilitytest_Nova_SyntaxStability* this);
+/*stabilitytest_Nova_SyntaxStability_closure1275_Nova_chainedFuncReference5*/nova_funcStruct* stabilitytest_Nova_SyntaxStability_Nova_chainedFuncReference5(stabilitytest_Nova_SyntaxStability* this);
+/*stabilitytest_Nova_SyntaxStability_closure1298_Nova_chainedFuncReference6*/nova_funcStruct* stabilitytest_Nova_SyntaxStability_Nova_chainedFuncReference6(stabilitytest_Nova_SyntaxStability* this);
 void stabilitytest_Nova_SyntaxStability_Nova_testSingleFunctionInArray(stabilitytest_Nova_SyntaxStability* this);
 void stabilitytest_Nova_SyntaxStability_Nova_testCallingFunctionFromCollection(stabilitytest_Nova_SyntaxStability* this);
 nova_datastruct_list_Nova_Array* generated25(stabilitytest_Nova_SyntaxStability* this);
@@ -68700,9 +68903,9 @@ int stabilitytest_Nova_SyntaxStability_Nova_func2(stabilitytest_Nova_SyntaxStabi
 	return a * 4;
 }
 
-int stabilitytest_Nova_SyntaxStability_Nova_myFunc(stabilitytest_Nova_SyntaxStability* this, stabilitytest_Nova_SyntaxStability_closure910_Nova_something stabilitytest_Nova_SyntaxStability_Nova_something, void* stabilitytest_Nova_SyntaxStability_ref_Nova_something, void* stabilitytest_Nova_SyntaxStability_context_Nova_something)
+int stabilitytest_Nova_SyntaxStability_Nova_myFunc(stabilitytest_Nova_SyntaxStability* this, stabilitytest_Nova_SyntaxStability_closure916_Nova_something stabilitytest_Nova_SyntaxStability_Nova_something, void* stabilitytest_Nova_SyntaxStability_ref_Nova_something, void* stabilitytest_Nova_SyntaxStability_context_Nova_something)
 {
-	stabilitytest_Nova_SyntaxStability_Nova_something = (stabilitytest_Nova_SyntaxStability_closure910_Nova_something)(stabilitytest_Nova_SyntaxStability_Nova_something == 0 ? (stabilitytest_Nova_SyntaxStability_closure910_Nova_something)&stabilitytest_Nova_SyntaxStability_Nova_func2 : stabilitytest_Nova_SyntaxStability_Nova_something);
+	stabilitytest_Nova_SyntaxStability_Nova_something = (stabilitytest_Nova_SyntaxStability_closure916_Nova_something)(stabilitytest_Nova_SyntaxStability_Nova_something == 0 ? (stabilitytest_Nova_SyntaxStability_closure916_Nova_something)&stabilitytest_Nova_SyntaxStability_Nova_func2 : stabilitytest_Nova_SyntaxStability_Nova_something);
 	stabilitytest_Nova_SyntaxStability_ref_Nova_something = (void*)(stabilitytest_Nova_SyntaxStability_ref_Nova_something == 0 ? (void*)this : stabilitytest_Nova_SyntaxStability_ref_Nova_something);
 	stabilitytest_Nova_SyntaxStability_context_Nova_something = (void*)(stabilitytest_Nova_SyntaxStability_context_Nova_something == 0 ? (void*)nova_null : stabilitytest_Nova_SyntaxStability_context_Nova_something);
 	return stabilitytest_Nova_SyntaxStability_Nova_something(stabilitytest_Nova_SyntaxStability_ref_Nova_something,
@@ -68722,7 +68925,7 @@ void stabilitytest_Nova_SyntaxStability_Nova_checkDefaultClosureArguments(stabil
 			(char*)("Failed to call default closure")));
 	novex_nest_Nova_Nest_static_Nova_expectTrue((novex_nest_Nova_Nest*)(this),
 		stabilitytest_Nova_SyntaxStability_Nova_myFunc((stabilitytest_Nova_SyntaxStability*)(this),
-			(stabilitytest_Nova_SyntaxStability_closure910_Nova_something)&stabilitytest_Nova_SyntaxStability_Nova_func1, this, nova_null) == 10,
+			(stabilitytest_Nova_SyntaxStability_closure916_Nova_something)&stabilitytest_Nova_SyntaxStability_Nova_func1, this, nova_null) == 10,
 		nova_Nova_String_1_Nova_construct(0,
 			(char*)("Failed to call overrided default closure")));
 }
@@ -68917,13 +69120,13 @@ void stabilitytest_Nova_SyntaxStability_Nova_testArrayInitializers(stabilitytest
 
 void stabilitytest_Nova_SyntaxStability_Nova_testFunctionReturnedByFunction(stabilitytest_Nova_SyntaxStability* this)
 {
-	/*stabilitytest_Nova_SyntaxStability_closure1201_Nova_getFunc*/nova_funcStruct* l1_Nova_func = (/*stabilitytest_Nova_SyntaxStability_closure1201_Nova_getFunc*/nova_funcStruct*)nova_null;
+	/*stabilitytest_Nova_SyntaxStability_closure1217_Nova_getFunc*/nova_funcStruct* l1_Nova_func = (/*stabilitytest_Nova_SyntaxStability_closure1217_Nova_getFunc*/nova_funcStruct*)nova_null;
 	
 	nova_io_Nova_Console_0_static_Nova_write((nova_io_Nova_Console*)(0),
 		nova_Nova_String_1_Nova_construct(0,
 			(char*)("Testing calling a function returned by a function ")));
 	l1_Nova_func = stabilitytest_Nova_SyntaxStability_Nova_getFunc((stabilitytest_Nova_SyntaxStability*)(this));
-	((l1_closure915_Nova_func)l1_Nova_func->func)(l1_Nova_func->ref,
+	((l1_closure921_Nova_func)l1_Nova_func->func)(l1_Nova_func->ref,
 	l1_Nova_func->context);
 	novex_nest_Nova_Nest_static_Nova_expectTrue((novex_nest_Nova_Nest*)(this),
 		this->prv->stabilitytest_Nova_SyntaxStability_Nova_funcSwitch,
@@ -68933,14 +69136,14 @@ void stabilitytest_Nova_SyntaxStability_Nova_testFunctionReturnedByFunction(stab
 
 void stabilitytest_Nova_SyntaxStability_Nova_testFunctionReturnedByInlineFunction(stabilitytest_Nova_SyntaxStability* this)
 {
-	/*stabilitytest_Nova_SyntaxStability_closure1204_Nova_inlineGetFunc*/nova_funcStruct* l1_Nova_func2 = (/*stabilitytest_Nova_SyntaxStability_closure1204_Nova_inlineGetFunc*/nova_funcStruct*)nova_null;
+	/*stabilitytest_Nova_SyntaxStability_closure1220_Nova_inlineGetFunc*/nova_funcStruct* l1_Nova_func2 = (/*stabilitytest_Nova_SyntaxStability_closure1220_Nova_inlineGetFunc*/nova_funcStruct*)nova_null;
 	
 	nova_io_Nova_Console_0_static_Nova_write((nova_io_Nova_Console*)(0),
 		nova_Nova_String_1_Nova_construct(0,
 			(char*)("Testing calling a function returned by an inline function ")));
 	this->prv->stabilitytest_Nova_SyntaxStability_Nova_funcSwitch = 0;
 	l1_Nova_func2 = stabilitytest_Nova_SyntaxStability_Nova_inlineGetFunc((stabilitytest_Nova_SyntaxStability*)(this));
-	((l1_closure921_Nova_func2)l1_Nova_func2->func)(l1_Nova_func2->ref,
+	((l1_closure927_Nova_func2)l1_Nova_func2->func)(l1_Nova_func2->ref,
 	l1_Nova_func2->context);
 	novex_nest_Nova_Nest_static_Nova_expectTrue((novex_nest_Nova_Nest*)(this),
 		this->prv->stabilitytest_Nova_SyntaxStability_Nova_funcSwitch,
@@ -68950,14 +69153,14 @@ void stabilitytest_Nova_SyntaxStability_Nova_testFunctionReturnedByInlineFunctio
 
 void stabilitytest_Nova_SyntaxStability_Nova_testFunctionReturnedByInlineFunctionWithTypeSpecified(stabilitytest_Nova_SyntaxStability* this)
 {
-	/*stabilitytest_Nova_SyntaxStability_closure1207_Nova_inlineGetFunc2*/nova_funcStruct* l1_Nova_func3 = (/*stabilitytest_Nova_SyntaxStability_closure1207_Nova_inlineGetFunc2*/nova_funcStruct*)nova_null;
+	/*stabilitytest_Nova_SyntaxStability_closure1223_Nova_inlineGetFunc2*/nova_funcStruct* l1_Nova_func3 = (/*stabilitytest_Nova_SyntaxStability_closure1223_Nova_inlineGetFunc2*/nova_funcStruct*)nova_null;
 	
 	nova_io_Nova_Console_0_static_Nova_write((nova_io_Nova_Console*)(0),
 		nova_Nova_String_1_Nova_construct(0,
 			(char*)("Testing calling a function returned by an inline function with type specified ")));
 	this->prv->stabilitytest_Nova_SyntaxStability_Nova_funcSwitch = 0;
 	l1_Nova_func3 = stabilitytest_Nova_SyntaxStability_Nova_inlineGetFunc2((stabilitytest_Nova_SyntaxStability*)(this));
-	((l1_closure927_Nova_func3)l1_Nova_func3->func)(l1_Nova_func3->ref,
+	((l1_closure933_Nova_func3)l1_Nova_func3->func)(l1_Nova_func3->ref,
 	l1_Nova_func3->context);
 	novex_nest_Nova_Nest_static_Nova_expectTrue((novex_nest_Nova_Nest*)(this),
 		this->prv->stabilitytest_Nova_SyntaxStability_Nova_funcSwitch,
@@ -68967,7 +69170,7 @@ void stabilitytest_Nova_SyntaxStability_Nova_testFunctionReturnedByInlineFunctio
 
 void stabilitytest_Nova_SyntaxStability_Nova_testCallingChainedFunctionReturnedByFunction(stabilitytest_Nova_SyntaxStability* this)
 {
-	/*stabilitytest_Nova_SyntaxStability_closure1214_Nova_chainedFuncReference*/nova_funcStruct* l1_Nova_chained = (/*stabilitytest_Nova_SyntaxStability_closure1214_Nova_chainedFuncReference*/nova_funcStruct*)nova_null;
+	/*stabilitytest_Nova_SyntaxStability_closure1230_Nova_chainedFuncReference*/nova_funcStruct* l1_Nova_chained = (/*stabilitytest_Nova_SyntaxStability_closure1230_Nova_chainedFuncReference*/nova_funcStruct*)nova_null;
 	/*nova_local_0*/nova_funcStruct* nova_local_0 = (/*nova_local_0*/nova_funcStruct*)nova_null;
 	
 	nova_io_Nova_Console_0_static_Nova_write((nova_io_Nova_Console*)(0),
@@ -68976,7 +69179,7 @@ void stabilitytest_Nova_SyntaxStability_Nova_testCallingChainedFunctionReturnedB
 	this->prv->stabilitytest_Nova_SyntaxStability_Nova_funcCount = (int)(0);
 	this->prv->stabilitytest_Nova_SyntaxStability_Nova_funcSwitch = 0;
 	l1_Nova_chained = stabilitytest_Nova_SyntaxStability_Nova_chainedFuncReference((stabilitytest_Nova_SyntaxStability*)(this));
-	((stabilitytest_Nova_SyntaxStability_closure932_Nova_inlineGetFunc)(nova_local_0 = (/*nova_local_0*/nova_funcStruct*)((l1_closure940_Nova_chained)l1_Nova_chained->func)(l1_Nova_chained->ref,
+	((stabilitytest_Nova_SyntaxStability_closure938_Nova_inlineGetFunc)(nova_local_0 = (/*nova_local_0*/nova_funcStruct*)((l1_closure946_Nova_chained)l1_Nova_chained->func)(l1_Nova_chained->ref,
 	l1_Nova_chained->context))->func)(nova_local_0->ref,
 	nova_local_0->context);
 	novex_nest_Nova_Nest_static_Nova_expectTrue((novex_nest_Nova_Nest*)(this),
@@ -68995,8 +69198,8 @@ void stabilitytest_Nova_SyntaxStability_Nova_testCallingChainedFunctionReturnedB
 
 void stabilitytest_Nova_SyntaxStability_Nova_testCallingAssignedChainFunction(stabilitytest_Nova_SyntaxStability* this)
 {
-	/*stabilitytest_Nova_SyntaxStability_closure1214_Nova_chainedFuncReference*/nova_funcStruct* l1_Nova_chained = (/*stabilitytest_Nova_SyntaxStability_closure1214_Nova_chainedFuncReference*/nova_funcStruct*)nova_null;
-	/*stabilitytest_Nova_SyntaxStability_closure959_Nova_inlineGetFunc*/nova_funcStruct* l1_Nova_c = (/*stabilitytest_Nova_SyntaxStability_closure959_Nova_inlineGetFunc*/nova_funcStruct*)nova_null;
+	/*stabilitytest_Nova_SyntaxStability_closure1230_Nova_chainedFuncReference*/nova_funcStruct* l1_Nova_chained = (/*stabilitytest_Nova_SyntaxStability_closure1230_Nova_chainedFuncReference*/nova_funcStruct*)nova_null;
+	/*stabilitytest_Nova_SyntaxStability_closure965_Nova_inlineGetFunc*/nova_funcStruct* l1_Nova_c = (/*stabilitytest_Nova_SyntaxStability_closure965_Nova_inlineGetFunc*/nova_funcStruct*)nova_null;
 	
 	nova_io_Nova_Console_0_static_Nova_write((nova_io_Nova_Console*)(0),
 		nova_Nova_String_1_Nova_construct(0,
@@ -69004,13 +69207,13 @@ void stabilitytest_Nova_SyntaxStability_Nova_testCallingAssignedChainFunction(st
 	this->prv->stabilitytest_Nova_SyntaxStability_Nova_funcCount = (int)(0);
 	this->prv->stabilitytest_Nova_SyntaxStability_Nova_funcSwitch = 0;
 	l1_Nova_chained = stabilitytest_Nova_SyntaxStability_Nova_chainedFuncReference((stabilitytest_Nova_SyntaxStability*)(this));
-	l1_Nova_c = ((l1_closure954_Nova_chained)l1_Nova_chained->func)(l1_Nova_chained->ref,
+	l1_Nova_c = ((l1_closure960_Nova_chained)l1_Nova_chained->func)(l1_Nova_chained->ref,
 	l1_Nova_chained->context);
-	((l1_closure958_Nova_c)l1_Nova_c->func)(l1_Nova_c->ref,
+	((l1_closure964_Nova_c)l1_Nova_c->func)(l1_Nova_c->ref,
 	l1_Nova_c->context);
-	((l1_closure958_Nova_c)l1_Nova_c->func)(l1_Nova_c->ref,
+	((l1_closure964_Nova_c)l1_Nova_c->func)(l1_Nova_c->ref,
 	l1_Nova_c->context);
-	((l1_closure958_Nova_c)l1_Nova_c->func)(l1_Nova_c->ref,
+	((l1_closure964_Nova_c)l1_Nova_c->func)(l1_Nova_c->ref,
 	l1_Nova_c->context);
 	novex_nest_Nova_Nest_static_Nova_expectTrue((novex_nest_Nova_Nest*)(this),
 		this->prv->stabilitytest_Nova_SyntaxStability_Nova_funcSwitch && this->prv->stabilitytest_Nova_SyntaxStability_Nova_funcCount == 3,
@@ -69028,7 +69231,7 @@ void stabilitytest_Nova_SyntaxStability_Nova_testCallingAssignedChainFunction(st
 
 void stabilitytest_Nova_SyntaxStability_Nova_testCallingChainedFunctionX3(stabilitytest_Nova_SyntaxStability* this)
 {
-	/*stabilitytest_Nova_SyntaxStability_closure1225_Nova_chainedFuncReference3*/nova_funcStruct* l1_Nova_chainX3 = (/*stabilitytest_Nova_SyntaxStability_closure1225_Nova_chainedFuncReference3*/nova_funcStruct*)nova_null;
+	/*stabilitytest_Nova_SyntaxStability_closure1241_Nova_chainedFuncReference3*/nova_funcStruct* l1_Nova_chainX3 = (/*stabilitytest_Nova_SyntaxStability_closure1241_Nova_chainedFuncReference3*/nova_funcStruct*)nova_null;
 	/*nova_local_0*/nova_funcStruct* nova_local_0 = (/*nova_local_0*/nova_funcStruct*)nova_null;
 	/*nova_local_1*/nova_funcStruct* nova_local_1 = (/*nova_local_1*/nova_funcStruct*)nova_null;
 	
@@ -69039,7 +69242,7 @@ void stabilitytest_Nova_SyntaxStability_Nova_testCallingChainedFunctionX3(stabil
 	this->prv->stabilitytest_Nova_SyntaxStability_Nova_funcSwitch = 0;
 	this->prv->stabilitytest_Nova_SyntaxStability_Nova_chainCount = (int)(0);
 	l1_Nova_chainX3 = stabilitytest_Nova_SyntaxStability_Nova_chainedFuncReference3((stabilitytest_Nova_SyntaxStability*)(this));
-	((stabilitytest_Nova_SyntaxStability_closure966_Nova_chainedFuncReference)(nova_local_1 = (/*nova_local_1*/nova_funcStruct*)((stabilitytest_Nova_SyntaxStability_closure964_Nova_inlineGetFunc)(nova_local_0 = (/*nova_local_0*/nova_funcStruct*)((l1_closure978_Nova_chainX3)l1_Nova_chainX3->func)(l1_Nova_chainX3->ref,
+	((stabilitytest_Nova_SyntaxStability_closure972_Nova_chainedFuncReference)(nova_local_1 = (/*nova_local_1*/nova_funcStruct*)((stabilitytest_Nova_SyntaxStability_closure970_Nova_inlineGetFunc)(nova_local_0 = (/*nova_local_0*/nova_funcStruct*)((l1_closure984_Nova_chainX3)l1_Nova_chainX3->func)(l1_Nova_chainX3->ref,
 			l1_Nova_chainX3->context))->func)(nova_local_0->ref,
 	nova_local_0->context))->func)(nova_local_1->ref,
 	nova_local_1->context);
@@ -69063,7 +69266,7 @@ void stabilitytest_Nova_SyntaxStability_Nova_testCallingChainedFunctionX3(stabil
 
 void stabilitytest_Nova_SyntaxStability_Nova_testCallingChainedFunctionX4(stabilitytest_Nova_SyntaxStability* this)
 {
-	/*stabilitytest_Nova_SyntaxStability_closure1240_Nova_chainedFuncReference4*/nova_funcStruct* l1_Nova_chainX4 = (/*stabilitytest_Nova_SyntaxStability_closure1240_Nova_chainedFuncReference4*/nova_funcStruct*)nova_null;
+	/*stabilitytest_Nova_SyntaxStability_closure1256_Nova_chainedFuncReference4*/nova_funcStruct* l1_Nova_chainX4 = (/*stabilitytest_Nova_SyntaxStability_closure1256_Nova_chainedFuncReference4*/nova_funcStruct*)nova_null;
 	/*nova_local_0*/nova_funcStruct* nova_local_0 = (/*nova_local_0*/nova_funcStruct*)nova_null;
 	/*nova_local_1*/nova_funcStruct* nova_local_1 = (/*nova_local_1*/nova_funcStruct*)nova_null;
 	/*nova_local_2*/nova_funcStruct* nova_local_2 = (/*nova_local_2*/nova_funcStruct*)nova_null;
@@ -69075,7 +69278,7 @@ void stabilitytest_Nova_SyntaxStability_Nova_testCallingChainedFunctionX4(stabil
 	this->prv->stabilitytest_Nova_SyntaxStability_Nova_funcSwitch = 0;
 	this->prv->stabilitytest_Nova_SyntaxStability_Nova_chainCount = (int)(0);
 	l1_Nova_chainX4 = stabilitytest_Nova_SyntaxStability_Nova_chainedFuncReference4((stabilitytest_Nova_SyntaxStability*)(this));
-	((stabilitytest_Nova_SyntaxStability_closure995_Nova_chainedFuncReference3)(nova_local_2 = (/*nova_local_2*/nova_funcStruct*)((stabilitytest_Nova_SyntaxStability_closure993_Nova_chainedFuncReference)(nova_local_1 = (/*nova_local_1*/nova_funcStruct*)((stabilitytest_Nova_SyntaxStability_closure993_Nova_chainedFuncReference)(nova_local_0 = (/*nova_local_0*/nova_funcStruct*)((l1_closure1011_Nova_chainX4)l1_Nova_chainX4->func)(l1_Nova_chainX4->ref,
+	((stabilitytest_Nova_SyntaxStability_closure1001_Nova_chainedFuncReference3)(nova_local_2 = (/*nova_local_2*/nova_funcStruct*)((stabilitytest_Nova_SyntaxStability_closure999_Nova_chainedFuncReference)(nova_local_1 = (/*nova_local_1*/nova_funcStruct*)((stabilitytest_Nova_SyntaxStability_closure999_Nova_chainedFuncReference)(nova_local_0 = (/*nova_local_0*/nova_funcStruct*)((l1_closure1017_Nova_chainX4)l1_Nova_chainX4->func)(l1_Nova_chainX4->ref,
 					l1_Nova_chainX4->context))->func)(nova_local_0->ref,
 			nova_local_0->context))->func)(nova_local_1->ref,
 	nova_local_1->context))->func)(nova_local_2->ref,
@@ -69100,7 +69303,7 @@ void stabilitytest_Nova_SyntaxStability_Nova_testCallingChainedFunctionX4(stabil
 
 void stabilitytest_Nova_SyntaxStability_Nova_testCallingChainedFunctionX5(stabilitytest_Nova_SyntaxStability* this)
 {
-	/*stabilitytest_Nova_SyntaxStability_closure1259_Nova_chainedFuncReference5*/nova_funcStruct* l1_Nova_chainX5 = (/*stabilitytest_Nova_SyntaxStability_closure1259_Nova_chainedFuncReference5*/nova_funcStruct*)nova_null;
+	/*stabilitytest_Nova_SyntaxStability_closure1275_Nova_chainedFuncReference5*/nova_funcStruct* l1_Nova_chainX5 = (/*stabilitytest_Nova_SyntaxStability_closure1275_Nova_chainedFuncReference5*/nova_funcStruct*)nova_null;
 	/*nova_local_0*/nova_funcStruct* nova_local_0 = (/*nova_local_0*/nova_funcStruct*)nova_null;
 	/*nova_local_1*/nova_funcStruct* nova_local_1 = (/*nova_local_1*/nova_funcStruct*)nova_null;
 	/*nova_local_2*/nova_funcStruct* nova_local_2 = (/*nova_local_2*/nova_funcStruct*)nova_null;
@@ -69113,7 +69316,7 @@ void stabilitytest_Nova_SyntaxStability_Nova_testCallingChainedFunctionX5(stabil
 	this->prv->stabilitytest_Nova_SyntaxStability_Nova_funcSwitch = 0;
 	this->prv->stabilitytest_Nova_SyntaxStability_Nova_chainCount = (int)(0);
 	l1_Nova_chainX5 = stabilitytest_Nova_SyntaxStability_Nova_chainedFuncReference5((stabilitytest_Nova_SyntaxStability*)(this));
-	((stabilitytest_Nova_SyntaxStability_closure1037_Nova_chainedFuncReference4)(nova_local_3 = (/*nova_local_3*/nova_funcStruct*)((stabilitytest_Nova_SyntaxStability_closure1035_Nova_chainedFuncReference3)(nova_local_2 = (/*nova_local_2*/nova_funcStruct*)((stabilitytest_Nova_SyntaxStability_closure1035_Nova_chainedFuncReference3)(nova_local_1 = (/*nova_local_1*/nova_funcStruct*)((stabilitytest_Nova_SyntaxStability_closure1035_Nova_chainedFuncReference3)(nova_local_0 = (/*nova_local_0*/nova_funcStruct*)((l1_closure1057_Nova_chainX5)l1_Nova_chainX5->func)(l1_Nova_chainX5->ref,
+	((stabilitytest_Nova_SyntaxStability_closure1043_Nova_chainedFuncReference4)(nova_local_3 = (/*nova_local_3*/nova_funcStruct*)((stabilitytest_Nova_SyntaxStability_closure1041_Nova_chainedFuncReference3)(nova_local_2 = (/*nova_local_2*/nova_funcStruct*)((stabilitytest_Nova_SyntaxStability_closure1041_Nova_chainedFuncReference3)(nova_local_1 = (/*nova_local_1*/nova_funcStruct*)((stabilitytest_Nova_SyntaxStability_closure1041_Nova_chainedFuncReference3)(nova_local_0 = (/*nova_local_0*/nova_funcStruct*)((l1_closure1063_Nova_chainX5)l1_Nova_chainX5->func)(l1_Nova_chainX5->ref,
 							l1_Nova_chainX5->context))->func)(nova_local_0->ref,
 					nova_local_0->context))->func)(nova_local_1->ref,
 			nova_local_1->context))->func)(nova_local_2->ref,
@@ -69139,7 +69342,7 @@ void stabilitytest_Nova_SyntaxStability_Nova_testCallingChainedFunctionX5(stabil
 
 void stabilitytest_Nova_SyntaxStability_Nova_testCallingChainedFunctionX6(stabilitytest_Nova_SyntaxStability* this)
 {
-	/*stabilitytest_Nova_SyntaxStability_closure1282_Nova_chainedFuncReference6*/nova_funcStruct* l1_Nova_chainX6 = (/*stabilitytest_Nova_SyntaxStability_closure1282_Nova_chainedFuncReference6*/nova_funcStruct*)nova_null;
+	/*stabilitytest_Nova_SyntaxStability_closure1298_Nova_chainedFuncReference6*/nova_funcStruct* l1_Nova_chainX6 = (/*stabilitytest_Nova_SyntaxStability_closure1298_Nova_chainedFuncReference6*/nova_funcStruct*)nova_null;
 	/*nova_local_0*/nova_funcStruct* nova_local_0 = (/*nova_local_0*/nova_funcStruct*)nova_null;
 	/*nova_local_1*/nova_funcStruct* nova_local_1 = (/*nova_local_1*/nova_funcStruct*)nova_null;
 	/*nova_local_2*/nova_funcStruct* nova_local_2 = (/*nova_local_2*/nova_funcStruct*)nova_null;
@@ -69153,7 +69356,7 @@ void stabilitytest_Nova_SyntaxStability_Nova_testCallingChainedFunctionX6(stabil
 	this->prv->stabilitytest_Nova_SyntaxStability_Nova_funcSwitch = 0;
 	this->prv->stabilitytest_Nova_SyntaxStability_Nova_chainCount = (int)(0);
 	l1_Nova_chainX6 = stabilitytest_Nova_SyntaxStability_Nova_chainedFuncReference6((stabilitytest_Nova_SyntaxStability*)(this));
-	((stabilitytest_Nova_SyntaxStability_closure1094_Nova_chainedFuncReference5)(nova_local_4 = (/*nova_local_4*/nova_funcStruct*)((stabilitytest_Nova_SyntaxStability_closure1092_Nova_chainedFuncReference4)(nova_local_3 = (/*nova_local_3*/nova_funcStruct*)((stabilitytest_Nova_SyntaxStability_closure1092_Nova_chainedFuncReference4)(nova_local_2 = (/*nova_local_2*/nova_funcStruct*)((stabilitytest_Nova_SyntaxStability_closure1092_Nova_chainedFuncReference4)(nova_local_1 = (/*nova_local_1*/nova_funcStruct*)((stabilitytest_Nova_SyntaxStability_closure1092_Nova_chainedFuncReference4)(nova_local_0 = (/*nova_local_0*/nova_funcStruct*)((l1_closure1118_Nova_chainX6)l1_Nova_chainX6->func)(l1_Nova_chainX6->ref,
+	((stabilitytest_Nova_SyntaxStability_closure1100_Nova_chainedFuncReference5)(nova_local_4 = (/*nova_local_4*/nova_funcStruct*)((stabilitytest_Nova_SyntaxStability_closure1098_Nova_chainedFuncReference4)(nova_local_3 = (/*nova_local_3*/nova_funcStruct*)((stabilitytest_Nova_SyntaxStability_closure1098_Nova_chainedFuncReference4)(nova_local_2 = (/*nova_local_2*/nova_funcStruct*)((stabilitytest_Nova_SyntaxStability_closure1098_Nova_chainedFuncReference4)(nova_local_1 = (/*nova_local_1*/nova_funcStruct*)((stabilitytest_Nova_SyntaxStability_closure1098_Nova_chainedFuncReference4)(nova_local_0 = (/*nova_local_0*/nova_funcStruct*)((l1_closure1124_Nova_chainX6)l1_Nova_chainX6->func)(l1_Nova_chainX6->ref,
 									l1_Nova_chainX6->context))->func)(nova_local_0->ref,
 							nova_local_0->context))->func)(nova_local_1->ref,
 					nova_local_1->context))->func)(nova_local_2->ref,
@@ -69184,47 +69387,47 @@ void stabilitytest_Nova_SyntaxStability_Nova_refFunc(stabilitytest_Nova_SyntaxSt
 	this->prv->stabilitytest_Nova_SyntaxStability_Nova_funcCount++;
 }
 
-/*stabilitytest_Nova_SyntaxStability_closure1201_Nova_getFunc*/nova_funcStruct* stabilitytest_Nova_SyntaxStability_Nova_getFunc(stabilitytest_Nova_SyntaxStability* this)
+/*stabilitytest_Nova_SyntaxStability_closure1217_Nova_getFunc*/nova_funcStruct* stabilitytest_Nova_SyntaxStability_Nova_getFunc(stabilitytest_Nova_SyntaxStability* this)
 {
 	return nova_get_funcStruct3(&stabilitytest_Nova_SyntaxStability_Nova_refFunc, this, nova_null);
 }
 
-/*stabilitytest_Nova_SyntaxStability_closure1204_Nova_inlineGetFunc*/nova_funcStruct* stabilitytest_Nova_SyntaxStability_Nova_inlineGetFunc(stabilitytest_Nova_SyntaxStability* this)
+/*stabilitytest_Nova_SyntaxStability_closure1220_Nova_inlineGetFunc*/nova_funcStruct* stabilitytest_Nova_SyntaxStability_Nova_inlineGetFunc(stabilitytest_Nova_SyntaxStability* this)
 {
 	this->prv->stabilitytest_Nova_SyntaxStability_Nova_chainCount++;
 	return nova_get_funcStruct3(&stabilitytest_Nova_SyntaxStability_Nova_refFunc, this, nova_null);
 }
 
-/*stabilitytest_Nova_SyntaxStability_closure1207_Nova_inlineGetFunc2*/nova_funcStruct* stabilitytest_Nova_SyntaxStability_Nova_inlineGetFunc2(stabilitytest_Nova_SyntaxStability* this)
+/*stabilitytest_Nova_SyntaxStability_closure1223_Nova_inlineGetFunc2*/nova_funcStruct* stabilitytest_Nova_SyntaxStability_Nova_inlineGetFunc2(stabilitytest_Nova_SyntaxStability* this)
 {
 	return nova_get_funcStruct3(&stabilitytest_Nova_SyntaxStability_Nova_refFunc, this, nova_null);
 }
 
-/*stabilitytest_Nova_SyntaxStability_closure1214_Nova_chainedFuncReference*/nova_funcStruct* stabilitytest_Nova_SyntaxStability_Nova_chainedFuncReference(stabilitytest_Nova_SyntaxStability* this)
+/*stabilitytest_Nova_SyntaxStability_closure1230_Nova_chainedFuncReference*/nova_funcStruct* stabilitytest_Nova_SyntaxStability_Nova_chainedFuncReference(stabilitytest_Nova_SyntaxStability* this)
 {
 	this->prv->stabilitytest_Nova_SyntaxStability_Nova_chainCount++;
 	return nova_get_funcStruct3(&stabilitytest_Nova_SyntaxStability_Nova_inlineGetFunc, this, nova_null);
 }
 
-/*stabilitytest_Nova_SyntaxStability_closure1225_Nova_chainedFuncReference3*/nova_funcStruct* stabilitytest_Nova_SyntaxStability_Nova_chainedFuncReference3(stabilitytest_Nova_SyntaxStability* this)
+/*stabilitytest_Nova_SyntaxStability_closure1241_Nova_chainedFuncReference3*/nova_funcStruct* stabilitytest_Nova_SyntaxStability_Nova_chainedFuncReference3(stabilitytest_Nova_SyntaxStability* this)
 {
 	this->prv->stabilitytest_Nova_SyntaxStability_Nova_chainCount++;
 	return nova_get_funcStruct3(&stabilitytest_Nova_SyntaxStability_Nova_chainedFuncReference, this, nova_null);
 }
 
-/*stabilitytest_Nova_SyntaxStability_closure1240_Nova_chainedFuncReference4*/nova_funcStruct* stabilitytest_Nova_SyntaxStability_Nova_chainedFuncReference4(stabilitytest_Nova_SyntaxStability* this)
+/*stabilitytest_Nova_SyntaxStability_closure1256_Nova_chainedFuncReference4*/nova_funcStruct* stabilitytest_Nova_SyntaxStability_Nova_chainedFuncReference4(stabilitytest_Nova_SyntaxStability* this)
 {
 	this->prv->stabilitytest_Nova_SyntaxStability_Nova_chainCount++;
 	return nova_get_funcStruct3(&stabilitytest_Nova_SyntaxStability_Nova_chainedFuncReference3, this, nova_null);
 }
 
-/*stabilitytest_Nova_SyntaxStability_closure1259_Nova_chainedFuncReference5*/nova_funcStruct* stabilitytest_Nova_SyntaxStability_Nova_chainedFuncReference5(stabilitytest_Nova_SyntaxStability* this)
+/*stabilitytest_Nova_SyntaxStability_closure1275_Nova_chainedFuncReference5*/nova_funcStruct* stabilitytest_Nova_SyntaxStability_Nova_chainedFuncReference5(stabilitytest_Nova_SyntaxStability* this)
 {
 	this->prv->stabilitytest_Nova_SyntaxStability_Nova_chainCount++;
 	return nova_get_funcStruct3(&stabilitytest_Nova_SyntaxStability_Nova_chainedFuncReference4, this, nova_null);
 }
 
-/*stabilitytest_Nova_SyntaxStability_closure1282_Nova_chainedFuncReference6*/nova_funcStruct* stabilitytest_Nova_SyntaxStability_Nova_chainedFuncReference6(stabilitytest_Nova_SyntaxStability* this)
+/*stabilitytest_Nova_SyntaxStability_closure1298_Nova_chainedFuncReference6*/nova_funcStruct* stabilitytest_Nova_SyntaxStability_Nova_chainedFuncReference6(stabilitytest_Nova_SyntaxStability* this)
 {
 	this->prv->stabilitytest_Nova_SyntaxStability_Nova_chainCount++;
 	return nova_get_funcStruct3(&stabilitytest_Nova_SyntaxStability_Nova_chainedFuncReference5, this, nova_null);
@@ -69583,7 +69786,7 @@ int stabilitytest_Nova_SyntaxStabilityFunctionMap_functionMap1_Nova_named(stabil
 void stabilitytest_Nova_SyntaxStabilityFunctionMap_functionMap_Nova_testNamedArguments(stabilitytest_Nova_SyntaxStabilityFunctionMap* this, stabilitytest_Nova_SyntaxStability* reference);
 int stabilitytest_Nova_SyntaxStabilityFunctionMap_functionMap_Nova_func1(stabilitytest_Nova_SyntaxStabilityFunctionMap* this, stabilitytest_Nova_SyntaxStability* reference, int a);
 int stabilitytest_Nova_SyntaxStabilityFunctionMap_functionMap_Nova_func2(stabilitytest_Nova_SyntaxStabilityFunctionMap* this, stabilitytest_Nova_SyntaxStability* reference, int a);
-int stabilitytest_Nova_SyntaxStabilityFunctionMap_functionMap_Nova_myFunc(stabilitytest_Nova_SyntaxStabilityFunctionMap* this, stabilitytest_Nova_SyntaxStability* reference, stabilitytest_Nova_SyntaxStabilityFunctionMap_closure1196_Nova_something stabilitytest_Nova_SyntaxStabilityFunctionMap_Nova_something, void* stabilitytest_Nova_SyntaxStabilityFunctionMap_ref_Nova_something, void* stabilitytest_Nova_SyntaxStabilityFunctionMap_context_Nova_something);
+int stabilitytest_Nova_SyntaxStabilityFunctionMap_functionMap_Nova_myFunc(stabilitytest_Nova_SyntaxStabilityFunctionMap* this, stabilitytest_Nova_SyntaxStability* reference, stabilitytest_Nova_SyntaxStabilityFunctionMap_closure1212_Nova_something stabilitytest_Nova_SyntaxStabilityFunctionMap_Nova_something, void* stabilitytest_Nova_SyntaxStabilityFunctionMap_ref_Nova_something, void* stabilitytest_Nova_SyntaxStabilityFunctionMap_context_Nova_something);
 void stabilitytest_Nova_SyntaxStabilityFunctionMap_functionMap_Nova_checkDefaultClosureArguments(stabilitytest_Nova_SyntaxStabilityFunctionMap* this, stabilitytest_Nova_SyntaxStability* reference);
 void stabilitytest_Nova_SyntaxStabilityFunctionMap_functionMap_Nova_checkZipper(stabilitytest_Nova_SyntaxStabilityFunctionMap* this, stabilitytest_Nova_SyntaxStability* reference);
 void stabilitytest_Nova_SyntaxStabilityFunctionMap_functionMap_Nova_testSafeNavigation(stabilitytest_Nova_SyntaxStabilityFunctionMap* this, stabilitytest_Nova_SyntaxStability* reference);
@@ -69601,14 +69804,14 @@ void stabilitytest_Nova_SyntaxStabilityFunctionMap_functionMap_Nova_testCallingC
 void stabilitytest_Nova_SyntaxStabilityFunctionMap_functionMap_Nova_testCallingChainedFunctionX5(stabilitytest_Nova_SyntaxStabilityFunctionMap* this, stabilitytest_Nova_SyntaxStability* reference);
 void stabilitytest_Nova_SyntaxStabilityFunctionMap_functionMap_Nova_testCallingChainedFunctionX6(stabilitytest_Nova_SyntaxStabilityFunctionMap* this, stabilitytest_Nova_SyntaxStability* reference);
 void stabilitytest_Nova_SyntaxStabilityFunctionMap_functionMap_Nova_refFunc(stabilitytest_Nova_SyntaxStabilityFunctionMap* this, stabilitytest_Nova_SyntaxStability* reference);
-/*stabilitytest_Nova_SyntaxStabilityFunctionMap_closure1200functionMap_Nova_getFunc*/nova_funcStruct* stabilitytest_Nova_SyntaxStabilityFunctionMap_functionMap_Nova_getFunc(stabilitytest_Nova_SyntaxStabilityFunctionMap* this, stabilitytest_Nova_SyntaxStability* reference);
-/*stabilitytest_Nova_SyntaxStabilityFunctionMap_closure1203functionMap_Nova_inlineGetFunc*/nova_funcStruct* stabilitytest_Nova_SyntaxStabilityFunctionMap_functionMap_Nova_inlineGetFunc(stabilitytest_Nova_SyntaxStabilityFunctionMap* this, stabilitytest_Nova_SyntaxStability* reference);
-/*stabilitytest_Nova_SyntaxStabilityFunctionMap_closure1206functionMap_Nova_inlineGetFunc2*/nova_funcStruct* stabilitytest_Nova_SyntaxStabilityFunctionMap_functionMap_Nova_inlineGetFunc2(stabilitytest_Nova_SyntaxStabilityFunctionMap* this, stabilitytest_Nova_SyntaxStability* reference);
-/*stabilitytest_Nova_SyntaxStabilityFunctionMap_closure1212functionMap_Nova_chainedFuncReference*/nova_funcStruct* stabilitytest_Nova_SyntaxStabilityFunctionMap_functionMap_Nova_chainedFuncReference(stabilitytest_Nova_SyntaxStabilityFunctionMap* this, stabilitytest_Nova_SyntaxStability* reference);
-/*stabilitytest_Nova_SyntaxStabilityFunctionMap_closure1222functionMap_Nova_chainedFuncReference3*/nova_funcStruct* stabilitytest_Nova_SyntaxStabilityFunctionMap_functionMap_Nova_chainedFuncReference3(stabilitytest_Nova_SyntaxStabilityFunctionMap* this, stabilitytest_Nova_SyntaxStability* reference);
-/*stabilitytest_Nova_SyntaxStabilityFunctionMap_closure1236functionMap_Nova_chainedFuncReference4*/nova_funcStruct* stabilitytest_Nova_SyntaxStabilityFunctionMap_functionMap_Nova_chainedFuncReference4(stabilitytest_Nova_SyntaxStabilityFunctionMap* this, stabilitytest_Nova_SyntaxStability* reference);
-/*stabilitytest_Nova_SyntaxStabilityFunctionMap_closure1254functionMap_Nova_chainedFuncReference5*/nova_funcStruct* stabilitytest_Nova_SyntaxStabilityFunctionMap_functionMap_Nova_chainedFuncReference5(stabilitytest_Nova_SyntaxStabilityFunctionMap* this, stabilitytest_Nova_SyntaxStability* reference);
-/*stabilitytest_Nova_SyntaxStabilityFunctionMap_closure1276functionMap_Nova_chainedFuncReference6*/nova_funcStruct* stabilitytest_Nova_SyntaxStabilityFunctionMap_functionMap_Nova_chainedFuncReference6(stabilitytest_Nova_SyntaxStabilityFunctionMap* this, stabilitytest_Nova_SyntaxStability* reference);
+/*stabilitytest_Nova_SyntaxStabilityFunctionMap_closure1216functionMap_Nova_getFunc*/nova_funcStruct* stabilitytest_Nova_SyntaxStabilityFunctionMap_functionMap_Nova_getFunc(stabilitytest_Nova_SyntaxStabilityFunctionMap* this, stabilitytest_Nova_SyntaxStability* reference);
+/*stabilitytest_Nova_SyntaxStabilityFunctionMap_closure1219functionMap_Nova_inlineGetFunc*/nova_funcStruct* stabilitytest_Nova_SyntaxStabilityFunctionMap_functionMap_Nova_inlineGetFunc(stabilitytest_Nova_SyntaxStabilityFunctionMap* this, stabilitytest_Nova_SyntaxStability* reference);
+/*stabilitytest_Nova_SyntaxStabilityFunctionMap_closure1222functionMap_Nova_inlineGetFunc2*/nova_funcStruct* stabilitytest_Nova_SyntaxStabilityFunctionMap_functionMap_Nova_inlineGetFunc2(stabilitytest_Nova_SyntaxStabilityFunctionMap* this, stabilitytest_Nova_SyntaxStability* reference);
+/*stabilitytest_Nova_SyntaxStabilityFunctionMap_closure1228functionMap_Nova_chainedFuncReference*/nova_funcStruct* stabilitytest_Nova_SyntaxStabilityFunctionMap_functionMap_Nova_chainedFuncReference(stabilitytest_Nova_SyntaxStabilityFunctionMap* this, stabilitytest_Nova_SyntaxStability* reference);
+/*stabilitytest_Nova_SyntaxStabilityFunctionMap_closure1238functionMap_Nova_chainedFuncReference3*/nova_funcStruct* stabilitytest_Nova_SyntaxStabilityFunctionMap_functionMap_Nova_chainedFuncReference3(stabilitytest_Nova_SyntaxStabilityFunctionMap* this, stabilitytest_Nova_SyntaxStability* reference);
+/*stabilitytest_Nova_SyntaxStabilityFunctionMap_closure1252functionMap_Nova_chainedFuncReference4*/nova_funcStruct* stabilitytest_Nova_SyntaxStabilityFunctionMap_functionMap_Nova_chainedFuncReference4(stabilitytest_Nova_SyntaxStabilityFunctionMap* this, stabilitytest_Nova_SyntaxStability* reference);
+/*stabilitytest_Nova_SyntaxStabilityFunctionMap_closure1270functionMap_Nova_chainedFuncReference5*/nova_funcStruct* stabilitytest_Nova_SyntaxStabilityFunctionMap_functionMap_Nova_chainedFuncReference5(stabilitytest_Nova_SyntaxStabilityFunctionMap* this, stabilitytest_Nova_SyntaxStability* reference);
+/*stabilitytest_Nova_SyntaxStabilityFunctionMap_closure1292functionMap_Nova_chainedFuncReference6*/nova_funcStruct* stabilitytest_Nova_SyntaxStabilityFunctionMap_functionMap_Nova_chainedFuncReference6(stabilitytest_Nova_SyntaxStabilityFunctionMap* this, stabilitytest_Nova_SyntaxStability* reference);
 void stabilitytest_Nova_SyntaxStabilityFunctionMap_functionMap_Nova_testSingleFunctionInArray(stabilitytest_Nova_SyntaxStabilityFunctionMap* this, stabilitytest_Nova_SyntaxStability* reference);
 void stabilitytest_Nova_SyntaxStabilityFunctionMap_functionMap_Nova_testCallingFunctionFromCollection(stabilitytest_Nova_SyntaxStabilityFunctionMap* this, stabilitytest_Nova_SyntaxStability* reference);
 void stabilitytest_Nova_SyntaxStabilityFunctionMap_Nova_init_static()
@@ -69790,10 +69993,10 @@ int stabilitytest_Nova_SyntaxStabilityFunctionMap_functionMap_Nova_func2(stabili
 	a);
 }
 
-int stabilitytest_Nova_SyntaxStabilityFunctionMap_functionMap_Nova_myFunc(stabilitytest_Nova_SyntaxStabilityFunctionMap* this, stabilitytest_Nova_SyntaxStability* reference, stabilitytest_Nova_SyntaxStabilityFunctionMap_closure1196_Nova_something stabilitytest_Nova_SyntaxStabilityFunctionMap_Nova_something, void* stabilitytest_Nova_SyntaxStabilityFunctionMap_ref_Nova_something, void* stabilitytest_Nova_SyntaxStabilityFunctionMap_context_Nova_something)
+int stabilitytest_Nova_SyntaxStabilityFunctionMap_functionMap_Nova_myFunc(stabilitytest_Nova_SyntaxStabilityFunctionMap* this, stabilitytest_Nova_SyntaxStability* reference, stabilitytest_Nova_SyntaxStabilityFunctionMap_closure1212_Nova_something stabilitytest_Nova_SyntaxStabilityFunctionMap_Nova_something, void* stabilitytest_Nova_SyntaxStabilityFunctionMap_ref_Nova_something, void* stabilitytest_Nova_SyntaxStabilityFunctionMap_context_Nova_something)
 {
 	return stabilitytest_Nova_SyntaxStability_Nova_myFunc((stabilitytest_Nova_SyntaxStability*)(reference),
-		(stabilitytest_Nova_SyntaxStability_closure910_Nova_something)stabilitytest_Nova_SyntaxStabilityFunctionMap_Nova_something, stabilitytest_Nova_SyntaxStabilityFunctionMap_ref_Nova_something, stabilitytest_Nova_SyntaxStabilityFunctionMap_context_Nova_something);
+		(stabilitytest_Nova_SyntaxStability_closure916_Nova_something)stabilitytest_Nova_SyntaxStabilityFunctionMap_Nova_something, stabilitytest_Nova_SyntaxStabilityFunctionMap_ref_Nova_something, stabilitytest_Nova_SyntaxStabilityFunctionMap_context_Nova_something);
 }
 
 void stabilitytest_Nova_SyntaxStabilityFunctionMap_functionMap_Nova_checkDefaultClosureArguments(stabilitytest_Nova_SyntaxStabilityFunctionMap* this, stabilitytest_Nova_SyntaxStability* reference)
@@ -69882,42 +70085,42 @@ void stabilitytest_Nova_SyntaxStabilityFunctionMap_functionMap_Nova_refFunc(stab
 	stabilitytest_Nova_SyntaxStability_Nova_refFunc((stabilitytest_Nova_SyntaxStability*)(reference));
 }
 
-/*stabilitytest_Nova_SyntaxStabilityFunctionMap_closure1200functionMap_Nova_getFunc*/nova_funcStruct* stabilitytest_Nova_SyntaxStabilityFunctionMap_functionMap_Nova_getFunc(stabilitytest_Nova_SyntaxStabilityFunctionMap* this, stabilitytest_Nova_SyntaxStability* reference)
+/*stabilitytest_Nova_SyntaxStabilityFunctionMap_closure1216functionMap_Nova_getFunc*/nova_funcStruct* stabilitytest_Nova_SyntaxStabilityFunctionMap_functionMap_Nova_getFunc(stabilitytest_Nova_SyntaxStabilityFunctionMap* this, stabilitytest_Nova_SyntaxStability* reference)
 {
 	return stabilitytest_Nova_SyntaxStability_Nova_getFunc((stabilitytest_Nova_SyntaxStability*)(reference));
 }
 
-/*stabilitytest_Nova_SyntaxStabilityFunctionMap_closure1203functionMap_Nova_inlineGetFunc*/nova_funcStruct* stabilitytest_Nova_SyntaxStabilityFunctionMap_functionMap_Nova_inlineGetFunc(stabilitytest_Nova_SyntaxStabilityFunctionMap* this, stabilitytest_Nova_SyntaxStability* reference)
+/*stabilitytest_Nova_SyntaxStabilityFunctionMap_closure1219functionMap_Nova_inlineGetFunc*/nova_funcStruct* stabilitytest_Nova_SyntaxStabilityFunctionMap_functionMap_Nova_inlineGetFunc(stabilitytest_Nova_SyntaxStabilityFunctionMap* this, stabilitytest_Nova_SyntaxStability* reference)
 {
 	return stabilitytest_Nova_SyntaxStability_Nova_inlineGetFunc((stabilitytest_Nova_SyntaxStability*)(reference));
 }
 
-/*stabilitytest_Nova_SyntaxStabilityFunctionMap_closure1206functionMap_Nova_inlineGetFunc2*/nova_funcStruct* stabilitytest_Nova_SyntaxStabilityFunctionMap_functionMap_Nova_inlineGetFunc2(stabilitytest_Nova_SyntaxStabilityFunctionMap* this, stabilitytest_Nova_SyntaxStability* reference)
+/*stabilitytest_Nova_SyntaxStabilityFunctionMap_closure1222functionMap_Nova_inlineGetFunc2*/nova_funcStruct* stabilitytest_Nova_SyntaxStabilityFunctionMap_functionMap_Nova_inlineGetFunc2(stabilitytest_Nova_SyntaxStabilityFunctionMap* this, stabilitytest_Nova_SyntaxStability* reference)
 {
 	return stabilitytest_Nova_SyntaxStability_Nova_inlineGetFunc2((stabilitytest_Nova_SyntaxStability*)(reference));
 }
 
-/*stabilitytest_Nova_SyntaxStabilityFunctionMap_closure1212functionMap_Nova_chainedFuncReference*/nova_funcStruct* stabilitytest_Nova_SyntaxStabilityFunctionMap_functionMap_Nova_chainedFuncReference(stabilitytest_Nova_SyntaxStabilityFunctionMap* this, stabilitytest_Nova_SyntaxStability* reference)
+/*stabilitytest_Nova_SyntaxStabilityFunctionMap_closure1228functionMap_Nova_chainedFuncReference*/nova_funcStruct* stabilitytest_Nova_SyntaxStabilityFunctionMap_functionMap_Nova_chainedFuncReference(stabilitytest_Nova_SyntaxStabilityFunctionMap* this, stabilitytest_Nova_SyntaxStability* reference)
 {
 	return stabilitytest_Nova_SyntaxStability_Nova_chainedFuncReference((stabilitytest_Nova_SyntaxStability*)(reference));
 }
 
-/*stabilitytest_Nova_SyntaxStabilityFunctionMap_closure1222functionMap_Nova_chainedFuncReference3*/nova_funcStruct* stabilitytest_Nova_SyntaxStabilityFunctionMap_functionMap_Nova_chainedFuncReference3(stabilitytest_Nova_SyntaxStabilityFunctionMap* this, stabilitytest_Nova_SyntaxStability* reference)
+/*stabilitytest_Nova_SyntaxStabilityFunctionMap_closure1238functionMap_Nova_chainedFuncReference3*/nova_funcStruct* stabilitytest_Nova_SyntaxStabilityFunctionMap_functionMap_Nova_chainedFuncReference3(stabilitytest_Nova_SyntaxStabilityFunctionMap* this, stabilitytest_Nova_SyntaxStability* reference)
 {
 	return stabilitytest_Nova_SyntaxStability_Nova_chainedFuncReference3((stabilitytest_Nova_SyntaxStability*)(reference));
 }
 
-/*stabilitytest_Nova_SyntaxStabilityFunctionMap_closure1236functionMap_Nova_chainedFuncReference4*/nova_funcStruct* stabilitytest_Nova_SyntaxStabilityFunctionMap_functionMap_Nova_chainedFuncReference4(stabilitytest_Nova_SyntaxStabilityFunctionMap* this, stabilitytest_Nova_SyntaxStability* reference)
+/*stabilitytest_Nova_SyntaxStabilityFunctionMap_closure1252functionMap_Nova_chainedFuncReference4*/nova_funcStruct* stabilitytest_Nova_SyntaxStabilityFunctionMap_functionMap_Nova_chainedFuncReference4(stabilitytest_Nova_SyntaxStabilityFunctionMap* this, stabilitytest_Nova_SyntaxStability* reference)
 {
 	return stabilitytest_Nova_SyntaxStability_Nova_chainedFuncReference4((stabilitytest_Nova_SyntaxStability*)(reference));
 }
 
-/*stabilitytest_Nova_SyntaxStabilityFunctionMap_closure1254functionMap_Nova_chainedFuncReference5*/nova_funcStruct* stabilitytest_Nova_SyntaxStabilityFunctionMap_functionMap_Nova_chainedFuncReference5(stabilitytest_Nova_SyntaxStabilityFunctionMap* this, stabilitytest_Nova_SyntaxStability* reference)
+/*stabilitytest_Nova_SyntaxStabilityFunctionMap_closure1270functionMap_Nova_chainedFuncReference5*/nova_funcStruct* stabilitytest_Nova_SyntaxStabilityFunctionMap_functionMap_Nova_chainedFuncReference5(stabilitytest_Nova_SyntaxStabilityFunctionMap* this, stabilitytest_Nova_SyntaxStability* reference)
 {
 	return stabilitytest_Nova_SyntaxStability_Nova_chainedFuncReference5((stabilitytest_Nova_SyntaxStability*)(reference));
 }
 
-/*stabilitytest_Nova_SyntaxStabilityFunctionMap_closure1276functionMap_Nova_chainedFuncReference6*/nova_funcStruct* stabilitytest_Nova_SyntaxStabilityFunctionMap_functionMap_Nova_chainedFuncReference6(stabilitytest_Nova_SyntaxStabilityFunctionMap* this, stabilitytest_Nova_SyntaxStability* reference)
+/*stabilitytest_Nova_SyntaxStabilityFunctionMap_closure1292functionMap_Nova_chainedFuncReference6*/nova_funcStruct* stabilitytest_Nova_SyntaxStabilityFunctionMap_functionMap_Nova_chainedFuncReference6(stabilitytest_Nova_SyntaxStabilityFunctionMap* this, stabilitytest_Nova_SyntaxStability* reference)
 {
 	return stabilitytest_Nova_SyntaxStability_Nova_chainedFuncReference6((stabilitytest_Nova_SyntaxStability*)(reference));
 }
@@ -69988,7 +70191,7 @@ CCLASS_PRIVATE
 (
 	stabilitytest_Nova_ThreadImplementation,
 	NOVA_THREAD_HANDLE* nova_thread_Nova_Thread_Nova_handle;
-	/*nova_thread_Nova_Thread_closure858_Nova_action*/nova_funcStruct* nova_thread_Nova_Thread_Nova_action;
+	/*nova_thread_Nova_Thread_closure864_Nova_action*/nova_funcStruct* nova_thread_Nova_Thread_Nova_action;
 	char nova_thread_Nova_Thread_Nova_useAction;
 	
 	int stabilitytest_Nova_ThreadImplementation_Nova_times;

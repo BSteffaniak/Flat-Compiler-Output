@@ -2587,16 +2587,27 @@ nova_env novaEnv = {
 },
 
 {
+&nova_star_Nova_Label_Nova_construct,
+},
+{
+&nova_star_Nova_LabelFunctionMap_functionMapLabelFunctionMap_Nova_construct,
+&nova_star_Nova_LabelFunctionMap_functionMap_Nova_draw,
+&nova_star_Nova_LabelFunctionMap_Nova_construct,
+},
+{
+&nova_star_Nova_LabelPropertyMap_functionMap_Nova_text,
+&nova_star_Nova_LabelPropertyMap_Nova_construct,
+},
+
+{
 &nova_star_Nova_Panel_Nova_construct,
 },
 {
-&nova_star_Nova_PanelFunctionMap_functionMapPanelFunctionMap_Nova_construct,
+0,
 &nova_star_Nova_PanelFunctionMap_functionMap_Nova_draw,
 &nova_star_Nova_PanelFunctionMap_Nova_construct,
 },
 {
-&nova_star_Nova_PanelPropertyMap_functionMap_Nova_x,
-&nova_star_Nova_PanelPropertyMap_functionMap_Nova_y,
 &nova_star_Nova_PanelPropertyMap_functionMap_Nova_width,
 &nova_star_Nova_PanelPropertyMap_functionMap_Nova_height,
 &nova_star_Nova_PanelPropertyMap_Nova_construct,
@@ -2619,13 +2630,15 @@ nova_env novaEnv = {
 &nova_star_Nova_UIComponent_Nova_construct,
 },
 {
-0,
+&nova_star_Nova_UIComponentFunctionMap_functionMapUIComponentFunctionMap_Nova_construct,
 &nova_star_Nova_UIComponentFunctionMap_functionMap_Nova_paint,
 &nova_star_Nova_UIComponentFunctionMap_Nova_construct,
 },
 {
 &nova_star_Nova_UIComponentPropertyMap_functionMap_Nova_parent,
 &nova_star_Nova_UIComponentPropertyMap_functionMap_Nova_window,
+&nova_star_Nova_UIComponentPropertyMap_functionMap_Nova_x,
+&nova_star_Nova_UIComponentPropertyMap_functionMap_Nova_y,
 &nova_star_Nova_UIComponentPropertyMap_Nova_construct,
 },
 

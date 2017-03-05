@@ -199,7 +199,7 @@ double (*nova_primitive_number_Nova_Number_virtual_Accessorfunc_Nova_realValue)(
 long_long (*nova_primitive_number_Nova_Number_virtual_Accessor_Nova_integerValue)(nova_primitive_number_Nova_Number*);
 void (*nova_star_Nova_UIComponent_virtual_Nova_paint)(nova_star_Nova_UIComponent*);
 void (*nova_star_Nova_UIComponent_virtual_Nova_draw)(nova_star_Nova_UIComponent*);
-nova_star_Nova_UIComponent* (*nova_star_Nova_UIComponentFunctionMap_virtualfunctionMapUIComponent_Nova_construct)(nova_star_Nova_UIComponentFunctionMap*);
+nova_star_Nova_Panel* (*nova_star_Nova_PanelFunctionMap_virtualfunctionMapPanel_Nova_construct)(nova_star_Nova_PanelFunctionMap*, int, int, int, int);
 nova_star_Nova_Window* (*nova_star_Nova_UIComponent_virtual_Accessor_Nova_window)(nova_star_Nova_UIComponent*);
 void (*nova_thread_Nova_Thread_virtual_Nova_run)(nova_thread_Nova_Thread*);
 void (*nova_thread_Nova_UncaughtExceptionHandler_virtual_Nova_uncaughtException)(nova_thread_Nova_UncaughtExceptionHandler*, nova_thread_Nova_Thread*, nova_exception_Nova_Exception*);
