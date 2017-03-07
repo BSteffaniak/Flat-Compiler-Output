@@ -20,6 +20,7 @@ typedef struct nova_operators_vtable_PlusEqualsOperator nova_operators_vtable_Pl
 typedef struct nova_operators_vtable_PlusOperator nova_operators_vtable_PlusOperator;
 typedef struct nova_primitive_number_vtable_Integer nova_primitive_number_vtable_Integer;
 typedef struct nova_primitive_number_vtable_RealNumber nova_primitive_number_vtable_RealNumber;
+typedef struct nova_star_vtable_UIAction nova_star_vtable_UIAction;
 typedef struct nova_star_vtable_UIParent nova_star_vtable_UIParent;
 typedef struct novex_nest_vtable_TestSuite novex_nest_vtable_TestSuite;
 typedef struct example_vtable_Polygon example_vtable_Polygon;
@@ -40,6 +41,7 @@ extern nova_operators_vtable_PlusEqualsOperator nova_operators_vtable_PlusEquals
 extern nova_operators_vtable_PlusOperator nova_operators_vtable_PlusOperator_value_default;
 extern nova_primitive_number_vtable_Integer nova_primitive_number_vtable_Integer_value_default;
 extern nova_primitive_number_vtable_RealNumber nova_primitive_number_vtable_RealNumber_value_default;
+extern nova_star_vtable_UIAction nova_star_vtable_UIAction_value_default;
 extern nova_star_vtable_UIParent nova_star_vtable_UIParent_value_default;
 extern novex_nest_vtable_TestSuite novex_nest_vtable_TestSuite_value_default;
 extern example_vtable_Polygon example_vtable_Polygon_value_default;
@@ -131,6 +133,13 @@ struct nova_primitive_number_vtable_RealNumber {
 char x;
 };
 
+struct nova_star_vtable_UIAction {
+int (*nova_star_Nova_UIAction_virtual_Accessorfunc_Nova_actionId)(nova_star_Nova_UIAction*);
+int (*nova_star_Nova_UIAction_virtual_Mutatorfunc_Nova_actionId)(nova_star_Nova_UIAction*, int);
+nova_datastruct_list_Nova_Array* (*nova_star_Nova_UIAction_virtual_Accessor_Nova_listeners)(nova_star_Nova_UIAction*);
+nova_datastruct_list_Nova_Array* (*nova_star_Nova_UIAction_virtual_Mutator_Nova_listeners)(nova_star_Nova_UIAction*, nova_datastruct_list_Nova_Array*);
+};
+
 struct nova_star_vtable_UIParent {
 nova_datastruct_list_Nova_Array* (*nova_star_Nova_UIParent_virtual_Accessorfunc_Nova_children)(nova_star_Nova_UIParent*);
 nova_datastruct_list_Nova_Array* (*nova_star_Nova_UIParent_virtual_Mutatorfunc_Nova_children)(nova_star_Nova_UIParent*, nova_datastruct_list_Nova_Array*);
@@ -164,6 +173,7 @@ nova_operators_vtable_PlusEqualsOperator* nova_operators_vtable_PlusEqualsOperat
 nova_operators_vtable_PlusOperator* nova_operators_vtable_PlusOperator_value;
 nova_primitive_number_vtable_Integer* nova_primitive_number_vtable_Integer_value;
 nova_primitive_number_vtable_RealNumber* nova_primitive_number_vtable_RealNumber_value;
+nova_star_vtable_UIAction* nova_star_vtable_UIAction_value;
 nova_star_vtable_UIParent* nova_star_vtable_UIParent_value;
 novex_nest_vtable_TestSuite* novex_nest_vtable_TestSuite_value;
 example_vtable_Polygon* example_vtable_Polygon_value;
@@ -198,8 +208,9 @@ char (*nova_primitive_number_Nova_Number_virtual_Nova_equalsInteger)(nova_primit
 double (*nova_primitive_number_Nova_Number_virtual_Accessorfunc_Nova_realValue)(nova_primitive_number_Nova_Number*);
 long_long (*nova_primitive_number_Nova_Number_virtual_Accessor_Nova_integerValue)(nova_primitive_number_Nova_Number*);
 void (*nova_star_Nova_UIComponent_virtual_Nova_paint)(nova_star_Nova_UIComponent*);
+void (*nova_star_Nova_UIComponent_virtual_Nova_searchActionTarget)(nova_star_Nova_UIComponent*, int);
+void (*nova_star_Nova_UIComponent_virtual_Nova_onAdded)(nova_star_Nova_UIComponent*);
 void (*nova_star_Nova_UIComponent_virtual_Nova_draw)(nova_star_Nova_UIComponent*);
-nova_star_Nova_Panel* (*nova_star_Nova_PanelFunctionMap_virtualfunctionMapPanel_Nova_construct)(nova_star_Nova_PanelFunctionMap*, int, int, int, int);
 nova_star_Nova_Window* (*nova_star_Nova_UIComponent_virtual_Accessor_Nova_window)(nova_star_Nova_UIComponent*);
 void (*nova_thread_Nova_Thread_virtual_Nova_run)(nova_thread_Nova_Thread*);
 void (*nova_thread_Nova_UncaughtExceptionHandler_virtual_Nova_uncaughtException)(nova_thread_Nova_UncaughtExceptionHandler*, nova_thread_Nova_Thread*, nova_exception_Nova_Exception*);

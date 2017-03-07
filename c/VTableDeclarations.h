@@ -1438,6 +1438,15 @@ extern nova_star_Nova_ButtonFunctionMap_VTable nova_star_Nova_ButtonFunctionMap_
 typedef struct nova_star_Nova_ButtonPropertyMap_VTable nova_star_Nova_ButtonPropertyMap_VTable;
 extern nova_star_Nova_ButtonPropertyMap_VTable nova_star_Nova_ButtonPropertyMap_VTable_val;
 
+typedef struct nova_star_Nova_Color_VTable nova_star_Nova_Color_VTable;
+extern nova_star_Nova_Color_VTable nova_star_Nova_Color_VTable_val;
+
+typedef struct nova_star_Nova_ColorFunctionMap_VTable nova_star_Nova_ColorFunctionMap_VTable;
+extern nova_star_Nova_ColorFunctionMap_VTable nova_star_Nova_ColorFunctionMap_VTable_val;
+
+typedef struct nova_star_Nova_ColorPropertyMap_VTable nova_star_Nova_ColorPropertyMap_VTable;
+extern nova_star_Nova_ColorPropertyMap_VTable nova_star_Nova_ColorPropertyMap_VTable_val;
+
 typedef struct nova_star_Nova_Frame_VTable nova_star_Nova_Frame_VTable;
 extern nova_star_Nova_Frame_VTable nova_star_Nova_Frame_VTable_val;
 
@@ -1446,6 +1455,15 @@ extern nova_star_Nova_FrameFunctionMap_VTable nova_star_Nova_FrameFunctionMap_VT
 
 typedef struct nova_star_Nova_FramePropertyMap_VTable nova_star_Nova_FramePropertyMap_VTable;
 extern nova_star_Nova_FramePropertyMap_VTable nova_star_Nova_FramePropertyMap_VTable_val;
+
+typedef struct nova_star_Nova_ImmutableColor_VTable nova_star_Nova_ImmutableColor_VTable;
+extern nova_star_Nova_ImmutableColor_VTable nova_star_Nova_ImmutableColor_VTable_val;
+
+typedef struct nova_star_Nova_ImmutableColorFunctionMap_VTable nova_star_Nova_ImmutableColorFunctionMap_VTable;
+extern nova_star_Nova_ImmutableColorFunctionMap_VTable nova_star_Nova_ImmutableColorFunctionMap_VTable_val;
+
+typedef struct nova_star_Nova_ImmutableColorPropertyMap_VTable nova_star_Nova_ImmutableColorPropertyMap_VTable;
+extern nova_star_Nova_ImmutableColorPropertyMap_VTable nova_star_Nova_ImmutableColorPropertyMap_VTable_val;
 
 typedef struct nova_star_Nova_Label_VTable nova_star_Nova_Label_VTable;
 extern nova_star_Nova_Label_VTable nova_star_Nova_Label_VTable_val;
@@ -1473,6 +1491,15 @@ extern nova_star_Nova_ScreenFunctionMap_VTable nova_star_Nova_ScreenFunctionMap_
 
 typedef struct nova_star_Nova_ScreenPropertyMap_VTable nova_star_Nova_ScreenPropertyMap_VTable;
 extern nova_star_Nova_ScreenPropertyMap_VTable nova_star_Nova_ScreenPropertyMap_VTable_val;
+
+typedef struct nova_star_Nova_UIAction_VTable nova_star_Nova_UIAction_VTable;
+extern nova_star_Nova_UIAction_VTable nova_star_Nova_UIAction_VTable_val;
+
+typedef struct nova_star_Nova_UIActionFunctionMap_VTable nova_star_Nova_UIActionFunctionMap_VTable;
+extern nova_star_Nova_UIActionFunctionMap_VTable nova_star_Nova_UIActionFunctionMap_VTable_val;
+
+typedef struct nova_star_Nova_UIActionPropertyMap_VTable nova_star_Nova_UIActionPropertyMap_VTable;
+extern nova_star_Nova_UIActionPropertyMap_VTable nova_star_Nova_UIActionPropertyMap_VTable_val;
 
 typedef struct nova_star_Nova_UIComponent_VTable nova_star_Nova_UIComponent_VTable;
 extern nova_star_Nova_UIComponent_VTable nova_star_Nova_UIComponent_VTable_val;
@@ -1711,6 +1738,15 @@ extern novex_nest_Nova_NestPropertyMap_VTable novex_nest_Nova_NestPropertyMap_VT
 typedef struct novex_nest_Int_Nova_Nest1Int_VTable novex_nest_Int_Nova_Nest1Int_VTable;
 extern novex_nest_Int_Nova_Nest1Int_VTable novex_nest_Int_Nova_Nest1Int_VTable_val;
 
+typedef struct novex_nest_Nova_TestResult_VTable novex_nest_Nova_TestResult_VTable;
+extern novex_nest_Nova_TestResult_VTable novex_nest_Nova_TestResult_VTable_val;
+
+typedef struct novex_nest_Nova_TestResultFunctionMap_VTable novex_nest_Nova_TestResultFunctionMap_VTable;
+extern novex_nest_Nova_TestResultFunctionMap_VTable novex_nest_Nova_TestResultFunctionMap_VTable_val;
+
+typedef struct novex_nest_Nova_TestResultPropertyMap_VTable novex_nest_Nova_TestResultPropertyMap_VTable;
+extern novex_nest_Nova_TestResultPropertyMap_VTable novex_nest_Nova_TestResultPropertyMap_VTable_val;
+
 typedef struct novex_nest_Nova_TestSuite_VTable novex_nest_Nova_TestSuite_VTable;
 extern novex_nest_Nova_TestSuite_VTable novex_nest_Nova_TestSuite_VTable_val;
 
@@ -1719,6 +1755,15 @@ extern novex_nest_Nova_TestSuiteFunctionMap_VTable novex_nest_Nova_TestSuiteFunc
 
 typedef struct novex_nest_Nova_TestSuitePropertyMap_VTable novex_nest_Nova_TestSuitePropertyMap_VTable;
 extern novex_nest_Nova_TestSuitePropertyMap_VTable novex_nest_Nova_TestSuitePropertyMap_VTable_val;
+
+typedef struct novex_nest_ui_Nova_ResultBar_VTable novex_nest_ui_Nova_ResultBar_VTable;
+extern novex_nest_ui_Nova_ResultBar_VTable novex_nest_ui_Nova_ResultBar_VTable_val;
+
+typedef struct novex_nest_ui_Nova_ResultBarFunctionMap_VTable novex_nest_ui_Nova_ResultBarFunctionMap_VTable;
+extern novex_nest_ui_Nova_ResultBarFunctionMap_VTable novex_nest_ui_Nova_ResultBarFunctionMap_VTable_val;
+
+typedef struct novex_nest_ui_Nova_ResultBarPropertyMap_VTable novex_nest_ui_Nova_ResultBarPropertyMap_VTable;
+extern novex_nest_ui_Nova_ResultBarPropertyMap_VTable novex_nest_ui_Nova_ResultBarPropertyMap_VTable_val;
 
 typedef struct novex_nest_ui_Nova_ResultWindow_VTable novex_nest_ui_Nova_ResultWindow_VTable;
 extern novex_nest_ui_Nova_ResultWindow_VTable novex_nest_ui_Nova_ResultWindow_VTable_val;
@@ -6719,7 +6764,9 @@ nova_meta_Nova_Class* classInstance;
 nova_Interface_VTable itable;
 nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*);
 long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*);
+void (*nova_star_Nova_UIComponent_virtual_Nova_onAdded)(nova_star_Nova_Button*);
 void (*nova_star_Nova_UIComponent_virtual_Nova_draw)(nova_star_Nova_Button*);
+void (*nova_star_Nova_UIComponent_virtual_Nova_searchActionTarget)(nova_star_Nova_UIParent*, int);
 void (*nova_star_Nova_UIComponent_virtual_Nova_paint)(nova_star_Nova_UIParent*);
 nova_star_Nova_Window* (*nova_star_Nova_UIComponent_virtual_Accessor_Nova_window)(nova_star_Nova_UIComponent*);
 };
@@ -6731,11 +6778,37 @@ nova_meta_Nova_Class* classInstance;
 nova_Interface_VTable itable;
 nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*);
 long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*);
-nova_star_Nova_Button* (*nova_star_Nova_PanelFunctionMap_virtualfunctionMapButton_Nova_construct)(nova_star_Nova_ButtonFunctionMap*, int, int, int, int);
 };
 
 
 struct nova_star_Nova_ButtonPropertyMap_VTable
+{
+nova_meta_Nova_Class* classInstance;
+nova_Interface_VTable itable;
+nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*);
+long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*);
+};
+
+
+struct nova_star_Nova_Color_VTable
+{
+nova_meta_Nova_Class* classInstance;
+nova_Interface_VTable itable;
+nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*);
+long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*);
+};
+
+
+struct nova_star_Nova_ColorFunctionMap_VTable
+{
+nova_meta_Nova_Class* classInstance;
+nova_Interface_VTable itable;
+nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*);
+long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*);
+};
+
+
+struct nova_star_Nova_ColorPropertyMap_VTable
 {
 nova_meta_Nova_Class* classInstance;
 nova_Interface_VTable itable;
@@ -6750,7 +6823,9 @@ nova_meta_Nova_Class* classInstance;
 nova_Interface_VTable itable;
 nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*);
 long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*);
+void (*nova_star_Nova_UIComponent_virtual_Nova_onAdded)(nova_star_Nova_UIParent*);
 void (*nova_star_Nova_UIComponent_virtual_Nova_draw)(nova_star_Nova_Frame*);
+void (*nova_star_Nova_UIComponent_virtual_Nova_searchActionTarget)(nova_star_Nova_UIParent*, int);
 void (*nova_star_Nova_UIComponent_virtual_Nova_paint)(nova_star_Nova_UIParent*);
 nova_star_Nova_Window* (*nova_star_Nova_UIComponent_virtual_Accessor_Nova_window)(nova_star_Nova_Frame*);
 };
@@ -6762,11 +6837,37 @@ nova_meta_Nova_Class* classInstance;
 nova_Interface_VTable itable;
 nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*);
 long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*);
-nova_star_Nova_Panel* (*nova_star_Nova_PanelFunctionMap_virtualfunctionMapPanel_Nova_construct)(nova_star_Nova_PanelFunctionMap*, int, int, int, int);
 };
 
 
 struct nova_star_Nova_FramePropertyMap_VTable
+{
+nova_meta_Nova_Class* classInstance;
+nova_Interface_VTable itable;
+nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*);
+long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*);
+};
+
+
+struct nova_star_Nova_ImmutableColor_VTable
+{
+nova_meta_Nova_Class* classInstance;
+nova_Interface_VTable itable;
+nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*);
+long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*);
+};
+
+
+struct nova_star_Nova_ImmutableColorFunctionMap_VTable
+{
+nova_meta_Nova_Class* classInstance;
+nova_Interface_VTable itable;
+nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*);
+long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*);
+};
+
+
+struct nova_star_Nova_ImmutableColorPropertyMap_VTable
 {
 nova_meta_Nova_Class* classInstance;
 nova_Interface_VTable itable;
@@ -6781,7 +6882,9 @@ nova_meta_Nova_Class* classInstance;
 nova_Interface_VTable itable;
 nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*);
 long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*);
+void (*nova_star_Nova_UIComponent_virtual_Nova_onAdded)(nova_star_Nova_UIComponent*);
 void (*nova_star_Nova_UIComponent_virtual_Nova_draw)(nova_star_Nova_Label*);
+void (*nova_star_Nova_UIComponent_virtual_Nova_searchActionTarget)(nova_star_Nova_UIComponent*, int);
 void (*nova_star_Nova_UIComponent_virtual_Nova_paint)(nova_star_Nova_UIComponent*);
 nova_star_Nova_Window* (*nova_star_Nova_UIComponent_virtual_Accessor_Nova_window)(nova_star_Nova_UIComponent*);
 };
@@ -6811,7 +6914,9 @@ nova_meta_Nova_Class* classInstance;
 nova_Interface_VTable itable;
 nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*);
 long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*);
+void (*nova_star_Nova_UIComponent_virtual_Nova_onAdded)(nova_star_Nova_UIParent*);
 void (*nova_star_Nova_UIComponent_virtual_Nova_draw)(nova_star_Nova_Panel*);
+void (*nova_star_Nova_UIComponent_virtual_Nova_searchActionTarget)(nova_star_Nova_UIParent*, int);
 void (*nova_star_Nova_UIComponent_virtual_Nova_paint)(nova_star_Nova_UIParent*);
 nova_star_Nova_Window* (*nova_star_Nova_UIComponent_virtual_Accessor_Nova_window)(nova_star_Nova_UIComponent*);
 };
@@ -6823,7 +6928,6 @@ nova_meta_Nova_Class* classInstance;
 nova_Interface_VTable itable;
 nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*);
 long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*);
-nova_star_Nova_Panel* (*nova_star_Nova_PanelFunctionMap_virtualfunctionMapPanel_Nova_construct)(nova_star_Nova_PanelFunctionMap*, int, int, int, int);
 };
 
 
@@ -6863,13 +6967,47 @@ long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Objec
 };
 
 
+struct nova_star_Nova_UIAction_VTable
+{
+nova_meta_Nova_Class* classInstance;
+nova_Interface_VTable itable;
+nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*);
+long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*);
+void (*nova_star_Nova_UIComponent_virtual_Nova_onAdded)(nova_star_Nova_UIComponent*);
+void (*nova_star_Nova_UIComponent_virtual_Nova_draw)(nova_star_Nova_UIComponent*);
+void (*nova_star_Nova_UIComponent_virtual_Nova_searchActionTarget)(nova_star_Nova_UIComponent*, int);
+void (*nova_star_Nova_UIComponent_virtual_Nova_paint)(nova_star_Nova_UIComponent*);
+nova_star_Nova_Window* (*nova_star_Nova_UIComponent_virtual_Accessor_Nova_window)(nova_star_Nova_UIComponent*);
+};
+
+
+struct nova_star_Nova_UIActionFunctionMap_VTable
+{
+nova_meta_Nova_Class* classInstance;
+nova_Interface_VTable itable;
+nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*);
+long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*);
+};
+
+
+struct nova_star_Nova_UIActionPropertyMap_VTable
+{
+nova_meta_Nova_Class* classInstance;
+nova_Interface_VTable itable;
+nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*);
+long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*);
+};
+
+
 struct nova_star_Nova_UIComponent_VTable
 {
 nova_meta_Nova_Class* classInstance;
 nova_Interface_VTable itable;
 nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*);
 long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*);
+void (*nova_star_Nova_UIComponent_virtual_Nova_onAdded)(nova_star_Nova_UIComponent*);
 void (*nova_star_Nova_UIComponent_virtual_Nova_draw)(nova_star_Nova_UIComponent*);
+void (*nova_star_Nova_UIComponent_virtual_Nova_searchActionTarget)(nova_star_Nova_UIComponent*, int);
 void (*nova_star_Nova_UIComponent_virtual_Nova_paint)(nova_star_Nova_UIComponent*);
 nova_star_Nova_Window* (*nova_star_Nova_UIComponent_virtual_Accessor_Nova_window)(nova_star_Nova_UIComponent*);
 };
@@ -6899,7 +7037,9 @@ nova_meta_Nova_Class* classInstance;
 nova_Interface_VTable itable;
 nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*);
 long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*);
+void (*nova_star_Nova_UIComponent_virtual_Nova_onAdded)(nova_star_Nova_UIParent*);
 void (*nova_star_Nova_UIComponent_virtual_Nova_draw)(nova_star_Nova_UIComponent*);
+void (*nova_star_Nova_UIComponent_virtual_Nova_searchActionTarget)(nova_star_Nova_UIParent*, int);
 void (*nova_star_Nova_UIComponent_virtual_Nova_paint)(nova_star_Nova_UIParent*);
 nova_star_Nova_Window* (*nova_star_Nova_UIComponent_virtual_Accessor_Nova_window)(nova_star_Nova_UIComponent*);
 };
@@ -7601,6 +7741,33 @@ long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Objec
 };
 
 
+struct novex_nest_Nova_TestResult_VTable
+{
+nova_meta_Nova_Class* classInstance;
+nova_Interface_VTable itable;
+nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(novex_nest_Nova_TestResult*);
+long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*);
+};
+
+
+struct novex_nest_Nova_TestResultFunctionMap_VTable
+{
+nova_meta_Nova_Class* classInstance;
+nova_Interface_VTable itable;
+nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*);
+long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*);
+};
+
+
+struct novex_nest_Nova_TestResultPropertyMap_VTable
+{
+nova_meta_Nova_Class* classInstance;
+nova_Interface_VTable itable;
+nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*);
+long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*);
+};
+
+
 struct novex_nest_Nova_TestSuite_VTable
 {
 nova_meta_Nova_Class* classInstance;
@@ -7618,6 +7785,38 @@ long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Objec
 
 
 struct novex_nest_Nova_TestSuitePropertyMap_VTable
+{
+nova_meta_Nova_Class* classInstance;
+nova_Interface_VTable itable;
+nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*);
+long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*);
+};
+
+
+struct novex_nest_ui_Nova_ResultBar_VTable
+{
+nova_meta_Nova_Class* classInstance;
+nova_Interface_VTable itable;
+nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*);
+long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*);
+void (*nova_star_Nova_UIComponent_virtual_Nova_onAdded)(nova_star_Nova_UIParent*);
+void (*nova_star_Nova_UIComponent_virtual_Nova_draw)(nova_star_Nova_Panel*);
+void (*nova_star_Nova_UIComponent_virtual_Nova_searchActionTarget)(nova_star_Nova_UIParent*, int);
+void (*nova_star_Nova_UIComponent_virtual_Nova_paint)(nova_star_Nova_UIParent*);
+nova_star_Nova_Window* (*nova_star_Nova_UIComponent_virtual_Accessor_Nova_window)(nova_star_Nova_UIComponent*);
+};
+
+
+struct novex_nest_ui_Nova_ResultBarFunctionMap_VTable
+{
+nova_meta_Nova_Class* classInstance;
+nova_Interface_VTable itable;
+nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*);
+long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*);
+};
+
+
+struct novex_nest_ui_Nova_ResultBarPropertyMap_VTable
 {
 nova_meta_Nova_Class* classInstance;
 nova_Interface_VTable itable;

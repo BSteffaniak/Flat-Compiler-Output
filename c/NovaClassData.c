@@ -17,6 +17,7 @@ nova_operators_vtable_PlusEqualsOperator nova_operators_vtable_PlusEqualsOperato
 nova_operators_vtable_PlusOperator nova_operators_vtable_PlusOperator_value_default = {0};
 nova_primitive_number_vtable_Integer nova_primitive_number_vtable_Integer_value_default = {0};
 nova_primitive_number_vtable_RealNumber nova_primitive_number_vtable_RealNumber_value_default = {0};
+nova_star_vtable_UIAction nova_star_vtable_UIAction_value_default = {0,0,0,0};
 nova_star_vtable_UIParent nova_star_vtable_UIParent_value_default = {0,0};
 novex_nest_vtable_TestSuite novex_nest_vtable_TestSuite_value_default = {0};
 example_vtable_Polygon example_vtable_Polygon_value_default = {0};
