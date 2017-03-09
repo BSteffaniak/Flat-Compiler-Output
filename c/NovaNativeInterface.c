@@ -1227,6 +1227,17 @@ nova_env novaEnv = {
 },
 
 {
+&nova_io_Nova_EmptyOutputStream_Nova_construct,
+},
+{
+&nova_io_Nova_EmptyOutputStreamFunctionMap_functionMapEmptyOutputStreamFunctionMap_Nova_construct,
+&nova_io_Nova_EmptyOutputStreamFunctionMap_Nova_construct,
+},
+{
+&nova_io_Nova_EmptyOutputStreamPropertyMap_Nova_construct,
+},
+
+{
 &nova_io_Nova_File_Nova_getChildFiles,
 &nova_io_Nova_File_Nova_directoryContents,
 &nova_io_Nova_File_Nova_listFiles,
@@ -1296,11 +1307,11 @@ nova_env novaEnv = {
 &nova_io_Nova_FileWriter_Nova_rewind,
 &nova_io_Nova_FileWriter_Nova_clearContents,
 &nova_io_Nova_FileWriter_Nova_create,
-&nova_io_Nova_FileWriter_Nova_writeLine,
 &nova_io_Nova_FileWriter_Nova_flush,
 &nova_io_Nova_FileWriter_Nova_close,
 &nova_io_Nova_FileWriter_0_Nova_construct,
 &nova_io_Nova_FileWriter_1_Nova_construct,
+&nova_io_Nova_FileWriter_2_Nova_construct,
 },
 {
 &nova_io_Nova_FileWriterFunctionMap_functionMapFileWriterFunctionMap0_Nova_construct,
@@ -1310,7 +1321,7 @@ nova_env novaEnv = {
 &nova_io_Nova_FileWriterFunctionMap_functionMap_Nova_rewind,
 &nova_io_Nova_FileWriterFunctionMap_functionMap_Nova_clearContents,
 &nova_io_Nova_FileWriterFunctionMap_functionMap_Nova_create,
-&nova_io_Nova_FileWriterFunctionMap_functionMap_Nova_writeLine,
+&nova_io_Nova_FileWriterFunctionMap_functionMap0_Nova_writeLine,
 &nova_io_Nova_FileWriterFunctionMap_functionMap0_Nova_write,
 &nova_io_Nova_FileWriterFunctionMap_functionMap_Nova_flush,
 &nova_io_Nova_FileWriterFunctionMap_functionMap_Nova_close,
@@ -1335,9 +1346,11 @@ nova_env novaEnv = {
 
 {
 0,
+0,
 },
 {
 &nova_io_Nova_OutputStreamFunctionMap_functionMap1_Nova_write,
+&nova_io_Nova_OutputStreamFunctionMap_functionMap1_Nova_writeLine,
 &nova_io_Nova_OutputStreamFunctionMap_Nova_construct,
 },
 {
@@ -2640,6 +2653,8 @@ nova_env novaEnv = {
 },
 {
 &nova_star_Nova_LabelPropertyMap_functionMap_Nova_text,
+&nova_star_Nova_LabelPropertyMap_functionMap_Nova_width,
+&nova_star_Nova_LabelPropertyMap_functionMap_Nova_height,
 &nova_star_Nova_LabelPropertyMap_Nova_construct,
 },
 
@@ -2648,6 +2663,7 @@ nova_env novaEnv = {
 },
 {
 &nova_star_Nova_PanelFunctionMap_functionMapPanelFunctionMap_Nova_construct,
+&nova_star_Nova_PanelFunctionMap_functionMap_Nova_onAdded,
 &nova_star_Nova_PanelFunctionMap_functionMap_Nova_draw,
 &nova_star_Nova_PanelFunctionMap_Nova_construct,
 },
@@ -2667,6 +2683,17 @@ nova_env novaEnv = {
 },
 {
 &nova_star_Nova_ScreenPropertyMap_Nova_construct,
+},
+
+{
+&nova_star_Nova_ScrollBar_Nova_construct,
+},
+{
+&nova_star_Nova_ScrollBarFunctionMap_functionMap_Nova_onAdded,
+&nova_star_Nova_ScrollBarFunctionMap_Nova_construct,
+},
+{
+&nova_star_Nova_ScrollBarPropertyMap_Nova_construct,
 },
 
 {
@@ -2693,7 +2720,7 @@ nova_env novaEnv = {
 &nova_star_Nova_UIComponent_Nova_construct,
 },
 {
-&nova_star_Nova_UIComponentFunctionMap_functionMapUIComponentFunctionMap_Nova_construct,
+0,
 &nova_star_Nova_UIComponentFunctionMap_functionMap_Nova_onAdded,
 &nova_star_Nova_UIComponentFunctionMap_functionMap_Nova_onRemoved,
 &nova_star_Nova_UIComponentFunctionMap_functionMap_Nova_draw,
@@ -2728,14 +2755,16 @@ nova_env novaEnv = {
 },
 
 {
-&nova_star_Nova_Window_Nova_create,
+&nova_star_Nova_Window_Nova_show,
+&nova_star_Nova_Window_Nova_refreshPosition,
 &nova_star_Nova_Window_Nova_center,
 &nova_star_Nova_Window_Nova_repaint,
 &nova_star_Nova_Window_Nova_construct,
 },
 {
 &nova_star_Nova_WindowFunctionMap_functionMapWindowFunctionMap_Nova_construct,
-&nova_star_Nova_WindowFunctionMap_functionMap_Nova_create,
+&nova_star_Nova_WindowFunctionMap_functionMap_Nova_show,
+&nova_star_Nova_WindowFunctionMap_functionMap_Nova_refreshPosition,
 &nova_star_Nova_WindowFunctionMap_functionMap_Nova_center,
 &nova_star_Nova_WindowFunctionMap_functionMap_Nova_repaint,
 &nova_star_Nova_WindowFunctionMap_Nova_construct,
@@ -2745,17 +2774,22 @@ nova_env novaEnv = {
 &nova_star_Nova_WindowPropertyMap_functionMap_Nova_y,
 &nova_star_Nova_WindowPropertyMap_functionMap_Nova_width,
 &nova_star_Nova_WindowPropertyMap_functionMap_Nova_height,
+&nova_star_Nova_WindowPropertyMap_functionMap_Nova_clientWidth,
+&nova_star_Nova_WindowPropertyMap_functionMap_Nova_clientHeight,
 &nova_star_Nova_WindowPropertyMap_functionMap_Nova_frame,
 &nova_star_Nova_WindowPropertyMap_functionMap_Nova_title,
+&nova_star_Nova_WindowPropertyMap_functionMap_Nova_thread,
 &nova_star_Nova_WindowPropertyMap_Nova_construct,
 },
 
 {
+&nova_star_Nova_WindowThread_Nova_show,
 &nova_star_Nova_WindowThread_Nova_construct,
 },
 {
 &nova_star_Nova_WindowThreadFunctionMap_functionMapWindowThreadFunctionMap_Nova_construct,
 &nova_star_Nova_WindowThreadFunctionMap_functionMap_Nova_run,
+&nova_star_Nova_WindowThreadFunctionMap_functionMap_Nova_show,
 &nova_star_Nova_WindowThreadFunctionMap_Nova_construct,
 },
 {
@@ -2773,6 +2807,7 @@ nova_env novaEnv = {
 {
 &nova_thread_Nova_ThreadFunctionMap_functionMapThreadFunctionMap0_Nova_construct,
 &nova_thread_Nova_ThreadFunctionMap_functionMapThreadFunctionMap1_Nova_construct,
+&nova_thread_Nova_ThreadFunctionMap_functionMap_Nova_start,
 &nova_thread_Nova_ThreadFunctionMap_functionMap_Nova_join,
 &nova_thread_Nova_ThreadFunctionMap_functionMap_Nova_kill,
 &nova_thread_Nova_ThreadFunctionMap_functionMap_Nova_run,
@@ -3082,6 +3117,34 @@ nova_env novaEnv = {
 },
 
 {
+&novex_nest_Nova_NestException_Nova_construct,
+},
+{
+&novex_nest_Nova_NestExceptionFunctionMap_Nova_construct,
+},
+{
+&novex_nest_Nova_NestExceptionPropertyMap_Nova_construct,
+},
+
+{
+&novex_nest_Nova_TestCase_Nova_construct,
+},
+{
+&novex_nest_Nova_TestCaseFunctionMap_functionMapTestCaseFunctionMap_Nova_construct,
+&novex_nest_Nova_TestCaseFunctionMap_functionMap_Nova_equals,
+&novex_nest_Nova_TestCaseFunctionMap_functionMap_Nova_toString,
+&novex_nest_Nova_TestCaseFunctionMap_Nova_construct,
+},
+{
+&novex_nest_Nova_TestCasePropertyMap_functionMap_Nova_functionName,
+&novex_nest_Nova_TestCasePropertyMap_functionMap_Nova_description,
+&novex_nest_Nova_TestCasePropertyMap_functionMap_Nova_header,
+&novex_nest_Nova_TestCasePropertyMap_functionMap_Nova_id,
+&novex_nest_Nova_TestCasePropertyMap_functionMap_Nova_hashCodeLong,
+&novex_nest_Nova_TestCasePropertyMap_Nova_construct,
+},
+
+{
 &novex_nest_Nova_TestResult_Nova_construct,
 },
 {
@@ -3092,20 +3155,72 @@ nova_env novaEnv = {
 {
 &novex_nest_Nova_TestResultPropertyMap_functionMap_Nova_success,
 &novex_nest_Nova_TestResultPropertyMap_functionMap_Nova_timer,
-&novex_nest_Nova_TestResultPropertyMap_functionMap_Nova_description,
-&novex_nest_Nova_TestResultPropertyMap_functionMap_Nova_functionName,
+&novex_nest_Nova_TestResultPropertyMap_functionMap_Nova_testCase,
 &novex_nest_Nova_TestResultPropertyMap_Nova_construct,
 },
 
 {
-&novex_nest_Nova_TestSuite_Nova_runTests,
+0,
 },
 {
-&novex_nest_Nova_TestSuiteFunctionMap_functionMap_Nova_runTests,
+&novex_nest_Nova_TestRunnerFunctionMap_functionMap1_Nova_runTests,
+&novex_nest_Nova_TestRunnerFunctionMap_Nova_construct,
+},
+{
+&novex_nest_Nova_TestRunnerPropertyMap_functionMap1_Nova_model,
+&novex_nest_Nova_TestRunnerPropertyMap_functionMap_Nova_testCases,
+&novex_nest_Nova_TestRunnerPropertyMap_functionMap_Nova_description,
+&novex_nest_Nova_TestRunnerPropertyMap_Nova_construct,
+},
+
+{
+&novex_nest_Nova_TestRunnerModel_Nova_construct,
+},
+{
+&novex_nest_Nova_TestRunnerModelFunctionMap_functionMapTestRunnerModelFunctionMap_Nova_construct,
+&novex_nest_Nova_TestRunnerModelFunctionMap_functionMap_Nova_toString,
+&novex_nest_Nova_TestRunnerModelFunctionMap_Nova_construct,
+},
+{
+&novex_nest_Nova_TestRunnerModelPropertyMap_functionMap_Nova_testCases,
+&novex_nest_Nova_TestRunnerModelPropertyMap_functionMap_Nova_description,
+&novex_nest_Nova_TestRunnerModelPropertyMap_Nova_construct,
+},
+
+{
+&novex_nest_Nova_TestSuite_Nova_construct,
+},
+{
+&novex_nest_Nova_TestSuiteFunctionMap_functionMapTestSuiteFunctionMap_Nova_construct,
+&novex_nest_Nova_TestSuiteFunctionMap_functionMap_Nova_toString,
 &novex_nest_Nova_TestSuiteFunctionMap_Nova_construct,
 },
 {
+&novex_nest_Nova_TestSuitePropertyMap_functionMap_Nova_testRunners,
 &novex_nest_Nova_TestSuitePropertyMap_Nova_construct,
+},
+
+{
+},
+{
+&novex_nest_Nova_TestSuiteRunnerFunctionMap_Nova_construct,
+},
+{
+&novex_nest_Nova_TestSuiteRunnerPropertyMap_Nova_construct,
+},
+
+{
+&novex_nest_Nova_TestSuiteRunnerModel_Nova_construct,
+},
+{
+&novex_nest_Nova_TestSuiteRunnerModelFunctionMap_functionMapTestSuiteRunnerModelFunctionMap_Nova_construct,
+&novex_nest_Nova_TestSuiteRunnerModelFunctionMap_Nova_construct,
+},
+{
+&novex_nest_Nova_TestSuiteRunnerModelPropertyMap_functionMap_Nova_testCases,
+&novex_nest_Nova_TestSuiteRunnerModelPropertyMap_functionMap_Nova_testRunners,
+&novex_nest_Nova_TestSuiteRunnerModelPropertyMap_functionMap_Nova_testSuites,
+&novex_nest_Nova_TestSuiteRunnerModelPropertyMap_Nova_construct,
 },
 
 {
@@ -3116,6 +3231,7 @@ nova_env novaEnv = {
 &novex_nest_ui_Nova_ResultBarFunctionMap_Nova_construct,
 },
 {
+&novex_nest_ui_Nova_ResultBarPropertyMap_functionMap_Nova_borderSize,
 &novex_nest_ui_Nova_ResultBarPropertyMap_functionMap_Nova_testCount,
 &novex_nest_ui_Nova_ResultBarPropertyMap_functionMap_Nova_successCount,
 &novex_nest_ui_Nova_ResultBarPropertyMap_functionMap_Nova_failureCount,
@@ -3295,7 +3411,6 @@ nova_env novaEnv = {
 &example_Nova_NestTest_Nova_afterTest,
 &example_Nova_NestTest_Nova_beforeClass,
 &example_Nova_NestTest_Nova_afterClass,
-&example_Nova_NestTest_Nova_runTests,
 &example_Nova_NestTest_Nova_construct,
 },
 {
@@ -3307,7 +3422,7 @@ nova_env novaEnv = {
 &example_Nova_NestTestFunctionMap_functionMap_Nova_afterTest,
 &example_Nova_NestTestFunctionMap_functionMap_Nova_beforeClass,
 &example_Nova_NestTestFunctionMap_functionMap_Nova_afterClass,
-&example_Nova_NestTestFunctionMap_functionMap_Nova_runTests,
+&example_Nova_NestTestFunctionMap_functionMap0_Nova_runTests,
 &example_Nova_NestTestFunctionMap_Nova_construct,
 },
 {
@@ -3557,7 +3672,6 @@ nova_env novaEnv = {
 },
 
 {
-&stabilitytest_Nova_AssignmentStability_Nova_runTests,
 &stabilitytest_Nova_AssignmentStability_Nova_construct,
 },
 {
@@ -3566,6 +3680,7 @@ nova_env novaEnv = {
 &stabilitytest_Nova_AssignmentStabilityFunctionMap_Nova_construct,
 },
 {
+&stabilitytest_Nova_AssignmentStabilityPropertyMap_functionMap0_Nova_model,
 &stabilitytest_Nova_AssignmentStabilityPropertyMap_Nova_construct,
 },
 
@@ -3595,7 +3710,6 @@ nova_env novaEnv = {
 },
 
 {
-&stabilitytest_Nova_ClosureStability_Nova_runTests,
 &stabilitytest_Nova_ClosureStability_Nova_construct,
 },
 {
@@ -3604,12 +3718,12 @@ nova_env novaEnv = {
 &stabilitytest_Nova_ClosureStabilityFunctionMap_Nova_construct,
 },
 {
+&stabilitytest_Nova_ClosureStabilityPropertyMap_functionMap_Nova_model,
 &stabilitytest_Nova_ClosureStabilityPropertyMap_Nova_construct,
 },
 
 {
 &stabilitytest_Nova_ExceptionStability_Nova_test,
-&stabilitytest_Nova_ExceptionStability_Nova_runTests,
 &stabilitytest_Nova_ExceptionStability_Nova_construct,
 },
 {
@@ -3619,12 +3733,12 @@ nova_env novaEnv = {
 &stabilitytest_Nova_ExceptionStabilityFunctionMap_Nova_construct,
 },
 {
+&stabilitytest_Nova_ExceptionStabilityPropertyMap_functionMap_Nova_model,
 &stabilitytest_Nova_ExceptionStabilityPropertyMap_Nova_construct,
 },
 
 {
 &stabilitytest_Nova_ExternalInnerClassStability_Nova_test,
-&stabilitytest_Nova_ExternalInnerClassStability_Nova_runTests,
 &stabilitytest_Nova_ExternalInnerClassStability_Nova_construct,
 },
 {
@@ -3634,11 +3748,11 @@ nova_env novaEnv = {
 &stabilitytest_Nova_ExternalInnerClassStabilityFunctionMap_Nova_construct,
 },
 {
+&stabilitytest_Nova_ExternalInnerClassStabilityPropertyMap_functionMap_Nova_model,
 &stabilitytest_Nova_ExternalInnerClassStabilityPropertyMap_Nova_construct,
 },
 
 {
-&stabilitytest_Nova_FileStability_Nova_runTests,
 &stabilitytest_Nova_FileStability_Nova_construct,
 },
 {
@@ -3647,12 +3761,12 @@ nova_env novaEnv = {
 &stabilitytest_Nova_FileStabilityFunctionMap_Nova_construct,
 },
 {
+&stabilitytest_Nova_FileStabilityPropertyMap_functionMap_Nova_model,
 &stabilitytest_Nova_FileStabilityPropertyMap_Nova_construct,
 },
 
 {
 &stabilitytest_Nova_InnerClassStability_Nova_test,
-&stabilitytest_Nova_InnerClassStability_Nova_runTests,
 &stabilitytest_Nova_InnerClassStability_Nova_construct,
 },
 {
@@ -3666,6 +3780,7 @@ nova_env novaEnv = {
 &stabilitytest_Nova_InnerClassStabilityFunctionMap_Nova_construct,
 },
 {
+&stabilitytest_Nova_InnerClassStabilityPropertyMap_functionMap_Nova_model,
 &stabilitytest_Nova_InnerClassStabilityPropertyMap_Nova_construct,
 },
 {
@@ -3689,7 +3804,6 @@ nova_env novaEnv = {
 },
 
 {
-&stabilitytest_Nova_LambdaStability_Nova_runTests,
 &stabilitytest_Nova_LambdaStability_Nova_construct,
 },
 {
@@ -3698,12 +3812,12 @@ nova_env novaEnv = {
 &stabilitytest_Nova_LambdaStabilityFunctionMap_Nova_construct,
 },
 {
+&stabilitytest_Nova_LambdaStabilityPropertyMap_functionMap_Nova_model,
 &stabilitytest_Nova_LambdaStabilityPropertyMap_Nova_construct,
 },
 
 {
 &stabilitytest_Nova_NetworkStability_Nova_test,
-&stabilitytest_Nova_NetworkStability_Nova_runTests,
 &stabilitytest_Nova_NetworkStability_Nova_construct,
 },
 {
@@ -3713,6 +3827,7 @@ nova_env novaEnv = {
 &stabilitytest_Nova_NetworkStabilityFunctionMap_Nova_construct,
 },
 {
+&stabilitytest_Nova_NetworkStabilityPropertyMap_functionMap_Nova_model,
 &stabilitytest_Nova_NetworkStabilityPropertyMap_Nova_construct,
 },
 
@@ -3758,7 +3873,6 @@ nova_env novaEnv = {
 },
 
 {
-&stabilitytest_Nova_PolymorphismStability_Nova_runTests,
 &stabilitytest_Nova_PolymorphismStability_Nova_construct,
 },
 {
@@ -3767,12 +3881,12 @@ nova_env novaEnv = {
 &stabilitytest_Nova_PolymorphismStabilityFunctionMap_Nova_construct,
 },
 {
+&stabilitytest_Nova_PolymorphismStabilityPropertyMap_functionMap_Nova_model,
 &stabilitytest_Nova_PolymorphismStabilityPropertyMap_Nova_construct,
 },
 
 {
 &stabilitytest_Nova_PrimitiveOverloadStability_Nova_test,
-&stabilitytest_Nova_PrimitiveOverloadStability_Nova_runTests,
 &stabilitytest_Nova_PrimitiveOverloadStability_Nova_construct,
 },
 {
@@ -3782,11 +3896,11 @@ nova_env novaEnv = {
 &stabilitytest_Nova_PrimitiveOverloadStabilityFunctionMap_Nova_construct,
 },
 {
+&stabilitytest_Nova_PrimitiveOverloadStabilityPropertyMap_functionMap_Nova_model,
 &stabilitytest_Nova_PrimitiveOverloadStabilityPropertyMap_Nova_construct,
 },
 
 {
-&stabilitytest_Nova_RegexStability_Nova_runTests,
 &stabilitytest_Nova_RegexStability_Nova_construct,
 },
 {
@@ -3795,6 +3909,7 @@ nova_env novaEnv = {
 &stabilitytest_Nova_RegexStabilityFunctionMap_Nova_construct,
 },
 {
+&stabilitytest_Nova_RegexStabilityPropertyMap_functionMap_Nova_model,
 &stabilitytest_Nova_RegexStabilityPropertyMap_Nova_construct,
 },
 
@@ -3810,7 +3925,6 @@ nova_env novaEnv = {
 },
 
 {
-&stabilitytest_Nova_StabilityTest_Nova_runTests,
 &stabilitytest_Nova_StabilityTest_Nova_construct,
 },
 {
@@ -3819,6 +3933,7 @@ nova_env novaEnv = {
 &stabilitytest_Nova_StabilityTestFunctionMap_Nova_construct,
 },
 {
+&stabilitytest_Nova_StabilityTestPropertyMap_functionMap_Nova_model,
 &stabilitytest_Nova_StabilityTestPropertyMap_Nova_construct,
 },
 
@@ -3847,7 +3962,6 @@ nova_env novaEnv = {
 
 {
 &stabilitytest_Nova_StaticImportStability_Nova_test,
-&stabilitytest_Nova_StaticImportStability_Nova_runTests,
 &stabilitytest_Nova_StaticImportStability_Nova_construct,
 },
 {
@@ -3857,11 +3971,11 @@ nova_env novaEnv = {
 &stabilitytest_Nova_StaticImportStabilityFunctionMap_Nova_construct,
 },
 {
+&stabilitytest_Nova_StaticImportStabilityPropertyMap_functionMap_Nova_model,
 &stabilitytest_Nova_StaticImportStabilityPropertyMap_Nova_construct,
 },
 
 {
-&stabilitytest_Nova_SyntaxStability_Nova_runTests,
 &stabilitytest_Nova_SyntaxStability_Nova_construct,
 },
 {
@@ -3870,6 +3984,7 @@ nova_env novaEnv = {
 &stabilitytest_Nova_SyntaxStabilityFunctionMap_Nova_construct,
 },
 {
+&stabilitytest_Nova_SyntaxStabilityPropertyMap_functionMap_Nova_model,
 &stabilitytest_Nova_SyntaxStabilityPropertyMap_Nova_construct,
 },
 
@@ -3887,7 +4002,6 @@ nova_env novaEnv = {
 
 {
 &stabilitytest_Nova_ThreadStability_Nova_test,
-&stabilitytest_Nova_ThreadStability_Nova_runTests,
 &stabilitytest_Nova_ThreadStability_Nova_construct,
 },
 {
@@ -3897,12 +4011,12 @@ nova_env novaEnv = {
 &stabilitytest_Nova_ThreadStabilityFunctionMap_Nova_construct,
 },
 {
+&stabilitytest_Nova_ThreadStabilityPropertyMap_functionMap_Nova_model,
 &stabilitytest_Nova_ThreadStabilityPropertyMap_Nova_construct,
 },
 
 {
 &stabilitytest_Nova_TimeStability_Nova_test,
-&stabilitytest_Nova_TimeStability_Nova_runTests,
 &stabilitytest_Nova_TimeStability_Nova_construct,
 },
 {
@@ -3912,11 +4026,11 @@ nova_env novaEnv = {
 &stabilitytest_Nova_TimeStabilityFunctionMap_Nova_construct,
 },
 {
+&stabilitytest_Nova_TimeStabilityPropertyMap_functionMap_Nova_model,
 &stabilitytest_Nova_TimeStabilityPropertyMap_Nova_construct,
 },
 
 {
-&stabilitytest_Nova_ToStringStability_Nova_runTests,
 &stabilitytest_Nova_ToStringStability_Nova_construct,
 },
 {
@@ -3925,6 +4039,7 @@ nova_env novaEnv = {
 &stabilitytest_Nova_ToStringStabilityFunctionMap_Nova_construct,
 },
 {
+&stabilitytest_Nova_ToStringStabilityPropertyMap_functionMap_Nova_model,
 &stabilitytest_Nova_ToStringStabilityPropertyMap_Nova_construct,
 },
 

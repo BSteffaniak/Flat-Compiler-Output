@@ -6,7 +6,7 @@ nova_datastruct_list_vtable_Iterator nova_datastruct_list_vtable_Iterator_value_
 nova_datastruct_list_vtable_List nova_datastruct_list_vtable_List_value_default = {0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0};
 nova_datastruct_list_vtable_OrderedList nova_datastruct_list_vtable_OrderedList_value_default = {0};
 nova_io_vtable_InputStream nova_io_vtable_InputStream_value_default = {0};
-nova_io_vtable_OutputStream nova_io_vtable_OutputStream_value_default = {0};
+nova_io_vtable_OutputStream nova_io_vtable_OutputStream_value_default = {0,0};
 nova_operators_vtable_EqualsOperator nova_operators_vtable_EqualsOperator_value_default = {0};
 nova_operators_vtable_MinusEqualsOperator nova_operators_vtable_MinusEqualsOperator_value_default = {0};
 nova_operators_vtable_MinusOperator nova_operators_vtable_MinusOperator_value_default = {0};
@@ -19,5 +19,6 @@ nova_primitive_number_vtable_Integer nova_primitive_number_vtable_Integer_value_
 nova_primitive_number_vtable_RealNumber nova_primitive_number_vtable_RealNumber_value_default = {0};
 nova_star_vtable_UIAction nova_star_vtable_UIAction_value_default = {0,0,0,0};
 nova_star_vtable_UIParent nova_star_vtable_UIParent_value_default = {0,0};
-novex_nest_vtable_TestSuite novex_nest_vtable_TestSuite_value_default = {0};
+novex_nest_vtable_TestRunner novex_nest_vtable_TestRunner_value_default = {0,0};
+novex_nest_vtable_TestSuiteRunner novex_nest_vtable_TestSuiteRunner_value_default = {0};
 example_vtable_Polygon example_vtable_Polygon_value_default = {0};
