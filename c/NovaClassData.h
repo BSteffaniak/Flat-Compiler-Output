@@ -232,6 +232,7 @@ void (*nova_web_svg_Nova_SvgComponent_virtual_Nova_generateOutput)(nova_web_svg_
 nova_web_svg_Nova_SvgComponent* (*nova_web_svg_Nova_SvgComponentFunctionMap_virtualfunctionMapSvgComponent_Nova_construct)(nova_web_svg_Nova_SvgComponentFunctionMap*);
 nova_Nova_String* (*nova_web_svg_no3_Nova_No3Node_virtual_Nova_toJs)(nova_web_svg_no3_Nova_No3Node*);
 nova_datastruct_list_Nova_Array* (*novex_nest_Nova_TestRunnerModel_virtual_Accessorfunc_Nova_testCases)(novex_nest_Nova_TestRunnerModel*);
+plumbercalc_pipes_Nova_Fitting* (*plumbercalc_pipes_Nova_FittingFunctionMap_virtualfunctionMapFitting_Nova_construct)(plumbercalc_pipes_Nova_FittingFunctionMap*);
 int (*example_Nova_Animal_virtual_Nova_getNumLegs)(example_Nova_Animal*);
 int (*example_Nova_Animal_virtual_Nova_getNumEyes)(example_Nova_Animal*);
 nova_Nova_String* (*example_Nova_Animal_virtual_Nova_getDescription)(example_Nova_Animal*);

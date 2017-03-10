@@ -1783,6 +1783,9 @@ extern novex_nest_Nova_NestFunctionMap_VTable novex_nest_Nova_NestFunctionMap_VT
 typedef struct novex_nest_Nova_NestPropertyMap_VTable novex_nest_Nova_NestPropertyMap_VTable;
 extern novex_nest_Nova_NestPropertyMap_VTable novex_nest_Nova_NestPropertyMap_VTable_val;
 
+typedef struct novex_nest_Double_Nova_Nest1Double_VTable novex_nest_Double_Nova_Nest1Double_VTable;
+extern novex_nest_Double_Nova_Nest1Double_VTable novex_nest_Double_Nova_Nest1Double_VTable_val;
+
 typedef struct novex_nest_Int_Nova_Nest1Int_VTable novex_nest_Int_Nova_Nest1Int_VTable;
 extern novex_nest_Int_Nova_Nest1Int_VTable novex_nest_Int_Nova_Nest1Int_VTable_val;
 
@@ -1875,6 +1878,69 @@ extern novex_nest_ui_Nova_ResultWindowFunctionMap_VTable novex_nest_ui_Nova_Resu
 
 typedef struct novex_nest_ui_Nova_ResultWindowPropertyMap_VTable novex_nest_ui_Nova_ResultWindowPropertyMap_VTable;
 extern novex_nest_ui_Nova_ResultWindowPropertyMap_VTable novex_nest_ui_Nova_ResultWindowPropertyMap_VTable_val;
+
+typedef struct plumbercalc_pipes_Nova_Fitting_VTable plumbercalc_pipes_Nova_Fitting_VTable;
+extern plumbercalc_pipes_Nova_Fitting_VTable plumbercalc_pipes_Nova_Fitting_VTable_val;
+
+typedef struct plumbercalc_pipes_Nova_FittingFunctionMap_VTable plumbercalc_pipes_Nova_FittingFunctionMap_VTable;
+extern plumbercalc_pipes_Nova_FittingFunctionMap_VTable plumbercalc_pipes_Nova_FittingFunctionMap_VTable_val;
+
+typedef struct plumbercalc_pipes_Nova_FittingPropertyMap_VTable plumbercalc_pipes_Nova_FittingPropertyMap_VTable;
+extern plumbercalc_pipes_Nova_FittingPropertyMap_VTable plumbercalc_pipes_Nova_FittingPropertyMap_VTable_val;
+
+typedef struct plumbercalc_pipes_Nova_Pipe_VTable plumbercalc_pipes_Nova_Pipe_VTable;
+extern plumbercalc_pipes_Nova_Pipe_VTable plumbercalc_pipes_Nova_Pipe_VTable_val;
+
+typedef struct plumbercalc_pipes_Nova_PipeFunctionMap_VTable plumbercalc_pipes_Nova_PipeFunctionMap_VTable;
+extern plumbercalc_pipes_Nova_PipeFunctionMap_VTable plumbercalc_pipes_Nova_PipeFunctionMap_VTable_val;
+
+typedef struct plumbercalc_pipes_Nova_PipePropertyMap_VTable plumbercalc_pipes_Nova_PipePropertyMap_VTable;
+extern plumbercalc_pipes_Nova_PipePropertyMap_VTable plumbercalc_pipes_Nova_PipePropertyMap_VTable_val;
+
+typedef struct plumbercalc_pipes_Nova_TFitting_VTable plumbercalc_pipes_Nova_TFitting_VTable;
+extern plumbercalc_pipes_Nova_TFitting_VTable plumbercalc_pipes_Nova_TFitting_VTable_val;
+
+typedef struct plumbercalc_pipes_Nova_TFittingFunctionMap_VTable plumbercalc_pipes_Nova_TFittingFunctionMap_VTable;
+extern plumbercalc_pipes_Nova_TFittingFunctionMap_VTable plumbercalc_pipes_Nova_TFittingFunctionMap_VTable_val;
+
+typedef struct plumbercalc_pipes_Nova_TFittingPropertyMap_VTable plumbercalc_pipes_Nova_TFittingPropertyMap_VTable;
+extern plumbercalc_pipes_Nova_TFittingPropertyMap_VTable plumbercalc_pipes_Nova_TFittingPropertyMap_VTable_val;
+
+typedef struct plumbercalc_pipes_Nova_Units_VTable plumbercalc_pipes_Nova_Units_VTable;
+extern plumbercalc_pipes_Nova_Units_VTable plumbercalc_pipes_Nova_Units_VTable_val;
+
+typedef struct plumbercalc_pipes_Nova_UnitsFunctionMap_VTable plumbercalc_pipes_Nova_UnitsFunctionMap_VTable;
+extern plumbercalc_pipes_Nova_UnitsFunctionMap_VTable plumbercalc_pipes_Nova_UnitsFunctionMap_VTable_val;
+
+typedef struct plumbercalc_pipes_Nova_UnitsPropertyMap_VTable plumbercalc_pipes_Nova_UnitsPropertyMap_VTable;
+extern plumbercalc_pipes_Nova_UnitsPropertyMap_VTable plumbercalc_pipes_Nova_UnitsPropertyMap_VTable_val;
+
+typedef struct plumbercalc_tests_Nova_AllTestsRunner_VTable plumbercalc_tests_Nova_AllTestsRunner_VTable;
+extern plumbercalc_tests_Nova_AllTestsRunner_VTable plumbercalc_tests_Nova_AllTestsRunner_VTable_val;
+
+typedef struct plumbercalc_tests_Nova_AllTestsRunnerFunctionMap_VTable plumbercalc_tests_Nova_AllTestsRunnerFunctionMap_VTable;
+extern plumbercalc_tests_Nova_AllTestsRunnerFunctionMap_VTable plumbercalc_tests_Nova_AllTestsRunnerFunctionMap_VTable_val;
+
+typedef struct plumbercalc_tests_Nova_AllTestsRunnerPropertyMap_VTable plumbercalc_tests_Nova_AllTestsRunnerPropertyMap_VTable;
+extern plumbercalc_tests_Nova_AllTestsRunnerPropertyMap_VTable plumbercalc_tests_Nova_AllTestsRunnerPropertyMap_VTable_val;
+
+typedef struct plumbercalc_tests_Nova_PipeTests_VTable plumbercalc_tests_Nova_PipeTests_VTable;
+extern plumbercalc_tests_Nova_PipeTests_VTable plumbercalc_tests_Nova_PipeTests_VTable_val;
+
+typedef struct plumbercalc_tests_Nova_PipeTestsFunctionMap_VTable plumbercalc_tests_Nova_PipeTestsFunctionMap_VTable;
+extern plumbercalc_tests_Nova_PipeTestsFunctionMap_VTable plumbercalc_tests_Nova_PipeTestsFunctionMap_VTable_val;
+
+typedef struct plumbercalc_tests_Nova_PipeTestsPropertyMap_VTable plumbercalc_tests_Nova_PipeTestsPropertyMap_VTable;
+extern plumbercalc_tests_Nova_PipeTestsPropertyMap_VTable plumbercalc_tests_Nova_PipeTestsPropertyMap_VTable_val;
+
+typedef struct plumbercalc_tests_Nova_UnitConversionTests_VTable plumbercalc_tests_Nova_UnitConversionTests_VTable;
+extern plumbercalc_tests_Nova_UnitConversionTests_VTable plumbercalc_tests_Nova_UnitConversionTests_VTable_val;
+
+typedef struct plumbercalc_tests_Nova_UnitConversionTestsFunctionMap_VTable plumbercalc_tests_Nova_UnitConversionTestsFunctionMap_VTable;
+extern plumbercalc_tests_Nova_UnitConversionTestsFunctionMap_VTable plumbercalc_tests_Nova_UnitConversionTestsFunctionMap_VTable_val;
+
+typedef struct plumbercalc_tests_Nova_UnitConversionTestsPropertyMap_VTable plumbercalc_tests_Nova_UnitConversionTestsPropertyMap_VTable;
+extern plumbercalc_tests_Nova_UnitConversionTestsPropertyMap_VTable plumbercalc_tests_Nova_UnitConversionTestsPropertyMap_VTable_val;
 
 typedef struct example_Nova_Animal_VTable example_Nova_Animal_VTable;
 extern example_Nova_Animal_VTable example_Nova_Animal_VTable_val;
@@ -7991,6 +8057,15 @@ long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Objec
 };
 
 
+struct novex_nest_Double_Nova_Nest1Double_VTable
+{
+nova_meta_Nova_Class* classInstance;
+nova_Interface_VTable itable;
+nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*);
+long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*);
+};
+
+
 struct novex_nest_Int_Nova_Nest1Int_VTable
 {
 nova_meta_Nova_Class* classInstance;
@@ -8267,6 +8342,197 @@ long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Objec
 
 
 struct novex_nest_ui_Nova_ResultWindowPropertyMap_VTable
+{
+nova_meta_Nova_Class* classInstance;
+nova_Interface_VTable itable;
+nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*);
+long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*);
+};
+
+
+struct plumbercalc_pipes_Nova_Fitting_VTable
+{
+nova_meta_Nova_Class* classInstance;
+nova_Interface_VTable itable;
+nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*);
+long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*);
+};
+
+
+struct plumbercalc_pipes_Nova_FittingFunctionMap_VTable
+{
+nova_meta_Nova_Class* classInstance;
+nova_Interface_VTable itable;
+nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*);
+long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*);
+plumbercalc_pipes_Nova_Fitting* (*plumbercalc_pipes_Nova_FittingFunctionMap_virtualfunctionMapFitting_Nova_construct)(plumbercalc_pipes_Nova_FittingFunctionMap*);
+};
+
+
+struct plumbercalc_pipes_Nova_FittingPropertyMap_VTable
+{
+nova_meta_Nova_Class* classInstance;
+nova_Interface_VTable itable;
+nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*);
+long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*);
+};
+
+
+struct plumbercalc_pipes_Nova_Pipe_VTable
+{
+nova_meta_Nova_Class* classInstance;
+nova_Interface_VTable itable;
+nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*);
+long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*);
+};
+
+
+struct plumbercalc_pipes_Nova_PipeFunctionMap_VTable
+{
+nova_meta_Nova_Class* classInstance;
+nova_Interface_VTable itable;
+nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*);
+long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*);
+};
+
+
+struct plumbercalc_pipes_Nova_PipePropertyMap_VTable
+{
+nova_meta_Nova_Class* classInstance;
+nova_Interface_VTable itable;
+nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*);
+long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*);
+};
+
+
+struct plumbercalc_pipes_Nova_TFitting_VTable
+{
+nova_meta_Nova_Class* classInstance;
+nova_Interface_VTable itable;
+nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*);
+long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*);
+};
+
+
+struct plumbercalc_pipes_Nova_TFittingFunctionMap_VTable
+{
+nova_meta_Nova_Class* classInstance;
+nova_Interface_VTable itable;
+nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*);
+long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*);
+plumbercalc_pipes_Nova_TFitting* (*plumbercalc_pipes_Nova_FittingFunctionMap_virtualfunctionMapTFitting_Nova_construct)(plumbercalc_pipes_Nova_TFittingFunctionMap*);
+};
+
+
+struct plumbercalc_pipes_Nova_TFittingPropertyMap_VTable
+{
+nova_meta_Nova_Class* classInstance;
+nova_Interface_VTable itable;
+nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*);
+long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*);
+};
+
+
+struct plumbercalc_pipes_Nova_Units_VTable
+{
+nova_meta_Nova_Class* classInstance;
+nova_Interface_VTable itable;
+nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*);
+long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*);
+};
+
+
+struct plumbercalc_pipes_Nova_UnitsFunctionMap_VTable
+{
+nova_meta_Nova_Class* classInstance;
+nova_Interface_VTable itable;
+nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*);
+long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*);
+};
+
+
+struct plumbercalc_pipes_Nova_UnitsPropertyMap_VTable
+{
+nova_meta_Nova_Class* classInstance;
+nova_Interface_VTable itable;
+nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*);
+long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*);
+};
+
+
+struct plumbercalc_tests_Nova_AllTestsRunner_VTable
+{
+nova_meta_Nova_Class* classInstance;
+nova_Interface_VTable itable;
+nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*);
+long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*);
+};
+
+
+struct plumbercalc_tests_Nova_AllTestsRunnerFunctionMap_VTable
+{
+nova_meta_Nova_Class* classInstance;
+nova_Interface_VTable itable;
+nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*);
+long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*);
+};
+
+
+struct plumbercalc_tests_Nova_AllTestsRunnerPropertyMap_VTable
+{
+nova_meta_Nova_Class* classInstance;
+nova_Interface_VTable itable;
+nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*);
+long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*);
+};
+
+
+struct plumbercalc_tests_Nova_PipeTests_VTable
+{
+nova_meta_Nova_Class* classInstance;
+nova_Interface_VTable itable;
+nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*);
+long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*);
+};
+
+
+struct plumbercalc_tests_Nova_PipeTestsFunctionMap_VTable
+{
+nova_meta_Nova_Class* classInstance;
+nova_Interface_VTable itable;
+nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*);
+long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*);
+};
+
+
+struct plumbercalc_tests_Nova_PipeTestsPropertyMap_VTable
+{
+nova_meta_Nova_Class* classInstance;
+nova_Interface_VTable itable;
+nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*);
+long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*);
+};
+
+
+struct plumbercalc_tests_Nova_UnitConversionTests_VTable
+{
+nova_meta_Nova_Class* classInstance;
+nova_Interface_VTable itable;
+nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*);
+long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*);
+};
+
+
+struct plumbercalc_tests_Nova_UnitConversionTestsFunctionMap_VTable
+{
+nova_meta_Nova_Class* classInstance;
+nova_Interface_VTable itable;
+nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*);
+long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*);
+};
+
+
+struct plumbercalc_tests_Nova_UnitConversionTestsPropertyMap_VTable
 {
 nova_meta_Nova_Class* classInstance;
 nova_Interface_VTable itable;
