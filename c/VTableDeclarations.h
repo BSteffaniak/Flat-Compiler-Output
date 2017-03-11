@@ -1801,6 +1801,9 @@ extern novex_nest_Int_Nova_Nest1Int_VTable novex_nest_Int_Nova_Nest1Int_VTable_v
 typedef struct novex_nest_Char_Nova_Nest1Char_VTable novex_nest_Char_Nova_Nest1Char_VTable;
 extern novex_nest_Char_Nova_Nest1Char_VTable novex_nest_Char_Nova_Nest1Char_VTable_val;
 
+typedef struct novex_nest_Bool_Nova_Nest1Bool_VTable novex_nest_Bool_Nova_Nest1Bool_VTable;
+extern novex_nest_Bool_Nova_Nest1Bool_VTable novex_nest_Bool_Nova_Nest1Bool_VTable_val;
+
 typedef struct novex_nest_Nova_NestException_VTable novex_nest_Nova_NestException_VTable;
 extern novex_nest_Nova_NestException_VTable novex_nest_Nova_NestException_VTable_val;
 
@@ -8124,6 +8127,15 @@ long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Objec
 
 
 struct novex_nest_Char_Nova_Nest1Char_VTable
+{
+nova_meta_Nova_Class* classInstance;
+nova_Interface_VTable itable;
+nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*);
+long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*);
+};
+
+
+struct novex_nest_Bool_Nova_Nest1Bool_VTable
 {
 nova_meta_Nova_Class* classInstance;
 nova_Interface_VTable itable;

@@ -1076,14 +1076,14 @@ typedef void (*stabilitytest_Nova_StabilityTest_closure1105_Nova_onResult)(void*
 typedef void (*stabilitytest_Nova_StabilityTestFunctionMap_closure1106_Nova_onResult)(void*, novex_nest_Nova_TestResult*, void*);
 typedef void (*stabilitytest_Nova_StaticImportStability_closure1107_Nova_onResult)(void*, novex_nest_Nova_TestResult*, void*);
 typedef void (*stabilitytest_Nova_StaticImportStabilityFunctionMap_closure1108_Nova_onResult)(void*, novex_nest_Nova_TestResult*, void*);
-typedef void (*stabilitytest_Nova_SyntaxStability_closure1405_Nova_onResult)(void*, novex_nest_Nova_TestResult*, void*);
-typedef void (*stabilitytest_Nova_SyntaxStabilityFunctionMap_closure1493_Nova_onResult)(void*, novex_nest_Nova_TestResult*, void*);
-typedef void (*stabilitytest_Nova_ThreadStability_closure1494_Nova_onResult)(void*, novex_nest_Nova_TestResult*, void*);
-typedef void (*stabilitytest_Nova_ThreadStabilityFunctionMap_closure1495_Nova_onResult)(void*, novex_nest_Nova_TestResult*, void*);
-typedef void (*stabilitytest_Nova_TimeStability_closure1496_Nova_onResult)(void*, novex_nest_Nova_TestResult*, void*);
-typedef void (*stabilitytest_Nova_TimeStabilityFunctionMap_closure1497_Nova_onResult)(void*, novex_nest_Nova_TestResult*, void*);
-typedef void (*stabilitytest_Nova_ToStringStability_closure1498_Nova_onResult)(void*, novex_nest_Nova_TestResult*, void*);
-typedef void (*stabilitytest_Nova_ToStringStabilityFunctionMap_closure1499_Nova_onResult)(void*, novex_nest_Nova_TestResult*, void*);
+typedef void (*stabilitytest_Nova_SyntaxStability_closure1413_Nova_onResult)(void*, novex_nest_Nova_TestResult*, void*);
+typedef void (*stabilitytest_Nova_SyntaxStabilityFunctionMap_closure1504_Nova_onResult)(void*, novex_nest_Nova_TestResult*, void*);
+typedef void (*stabilitytest_Nova_ThreadStability_closure1505_Nova_onResult)(void*, novex_nest_Nova_TestResult*, void*);
+typedef void (*stabilitytest_Nova_ThreadStabilityFunctionMap_closure1506_Nova_onResult)(void*, novex_nest_Nova_TestResult*, void*);
+typedef void (*stabilitytest_Nova_TimeStability_closure1507_Nova_onResult)(void*, novex_nest_Nova_TestResult*, void*);
+typedef void (*stabilitytest_Nova_TimeStabilityFunctionMap_closure1508_Nova_onResult)(void*, novex_nest_Nova_TestResult*, void*);
+typedef void (*stabilitytest_Nova_ToStringStability_closure1509_Nova_onResult)(void*, novex_nest_Nova_TestResult*, void*);
+typedef void (*stabilitytest_Nova_ToStringStabilityFunctionMap_closure1510_Nova_onResult)(void*, novex_nest_Nova_TestResult*, void*);
 
 typedef struct nova_Interface_VTable
 {
