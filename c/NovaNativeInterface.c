@@ -3888,6 +3888,19 @@ nova_env novaEnv = {
 },
 
 {
+&stabilitytest_Nova_FirstClassFunctionStability_Nova_construct,
+},
+{
+&stabilitytest_Nova_FirstClassFunctionStabilityFunctionMap_functionMapFirstClassFunctionStabilityFunctionMap_Nova_construct,
+&stabilitytest_Nova_FirstClassFunctionStabilityFunctionMap_functionMap_Nova_runTests,
+&stabilitytest_Nova_FirstClassFunctionStabilityFunctionMap_Nova_construct,
+},
+{
+&stabilitytest_Nova_FirstClassFunctionStabilityPropertyMap_functionMap_Nova_model,
+&stabilitytest_Nova_FirstClassFunctionStabilityPropertyMap_Nova_construct,
+},
+
+{
 &stabilitytest_Nova_InnerClassStability_Nova_test,
 &stabilitytest_Nova_InnerClassStability_Nova_construct,
 },
