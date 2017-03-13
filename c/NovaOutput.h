@@ -235,6 +235,9 @@ typedef struct nova_exception_Nova_UnimplementedOperationExceptionPropertyMap no
 typedef struct nova_gc_Nova_GC nova_gc_Nova_GC;
 typedef struct nova_gc_Nova_GCFunctionMap nova_gc_Nova_GCFunctionMap;
 typedef struct nova_gc_Nova_GCPropertyMap nova_gc_Nova_GCPropertyMap;
+typedef struct nova_io_Nova_ClosedStreamException nova_io_Nova_ClosedStreamException;
+typedef struct nova_io_Nova_ClosedStreamExceptionFunctionMap nova_io_Nova_ClosedStreamExceptionFunctionMap;
+typedef struct nova_io_Nova_ClosedStreamExceptionPropertyMap nova_io_Nova_ClosedStreamExceptionPropertyMap;
 typedef struct nova_io_Nova_Console nova_io_Nova_Console;
 typedef struct nova_io_Nova_ConsoleFunctionMap nova_io_Nova_ConsoleFunctionMap;
 typedef struct nova_io_Nova_ConsolePropertyMap nova_io_Nova_ConsolePropertyMap;
@@ -797,6 +800,9 @@ typedef struct stabilitytest_Nova_MyInnerPropertyMap stabilitytest_Nova_MyInnerP
 typedef struct stabilitytest_Nova_LambdaStability stabilitytest_Nova_LambdaStability;
 typedef struct stabilitytest_Nova_LambdaStabilityFunctionMap stabilitytest_Nova_LambdaStabilityFunctionMap;
 typedef struct stabilitytest_Nova_LambdaStabilityPropertyMap stabilitytest_Nova_LambdaStabilityPropertyMap;
+typedef struct stabilitytest_Nova_LibraryLoadingStability stabilitytest_Nova_LibraryLoadingStability;
+typedef struct stabilitytest_Nova_LibraryLoadingStabilityFunctionMap stabilitytest_Nova_LibraryLoadingStabilityFunctionMap;
+typedef struct stabilitytest_Nova_LibraryLoadingStabilityPropertyMap stabilitytest_Nova_LibraryLoadingStabilityPropertyMap;
 typedef struct stabilitytest_Nova_NetworkStability stabilitytest_Nova_NetworkStability;
 typedef struct stabilitytest_Nova_NetworkStabilityFunctionMap stabilitytest_Nova_NetworkStabilityFunctionMap;
 typedef struct stabilitytest_Nova_NetworkStabilityPropertyMap stabilitytest_Nova_NetworkStabilityPropertyMap;
@@ -1792,11 +1798,11 @@ typedef nova_Nova_Object* (*nova_meta_Nova_Library_closure931_Nova_getConstructo
 typedef nova_Nova_Object* (*nova_meta_Nova_Library_closure931_Nova_getConstructor)(void*, void*);
 typedef void (*l1_closure920_Nova_constructor)(void*, void*);
 typedef void (*l1_closure920_Nova_constructor)(void*, void*);
-typedef void (*nova_meta_Nova_Library_closure10300_Nova_getFunction)(void*, void*);
-typedef void (*nova_meta_Nova_Library_closure10300_Nova_getFunction)(void*, void*);
+typedef void (*nova_meta_Nova_Library_closure15520_Nova_getFunction)(void*, void*);
+typedef void (*nova_meta_Nova_Library_closure15520_Nova_getFunction)(void*, void*);
 typedef void (*l1_closure920_Nova_constructor)(void*, void*);
-typedef void (*nova_meta_Nova_Library_closure10300_Nova_getFunction)(void*, void*);
-typedef void (*nova_meta_Nova_Library_closure10300_Nova_getFunction)(void*, void*);
+typedef void (*nova_meta_Nova_Library_closure15520_Nova_getFunction)(void*, void*);
+typedef void (*nova_meta_Nova_Library_closure15520_Nova_getFunction)(void*, void*);
 typedef void (*nova_meta_Nova_Library_closure9371_Nova_getFunction)(void*, void*);
 typedef void (*nova_meta_Nova_Library_closure9371_Nova_getFunction)(void*, void*);
 typedef nova_Nova_Object* (*nova_meta_Nova_LibraryFunctionMap_closure930functionMap_Nova_getConstructor)(void*, void*);
@@ -1804,12 +1810,18 @@ typedef nova_Nova_Object* (*nova_meta_Nova_LibraryFunctionMap_closure930function
 typedef nova_Nova_Object* (*nova_meta_Nova_Library_closure931_Nova_getConstructor)(void*, void*);
 typedef void (*nova_meta_Nova_LibraryFunctionMap_closure933functionMap_Nova_getFunction)(void*, void*);
 typedef void (*nova_meta_Nova_LibraryFunctionMap_closure933functionMap_Nova_getFunction)(void*, void*);
-typedef void (*nova_meta_Nova_Library_closure10300_Nova_getFunction)(void*, void*);
+typedef void (*nova_meta_Nova_Library_closure15520_Nova_getFunction)(void*, void*);
 typedef void (*nova_meta_Nova_LibraryFunctionMap_closure936functionMap_Nova_getFunction)(void*, void*);
 typedef void (*nova_meta_Nova_LibraryFunctionMap_closure936functionMap_Nova_getFunction)(void*, void*);
 typedef void (*nova_meta_Nova_Library_closure9371_Nova_getFunction)(void*, void*);
-typedef void (*nova_meta_Nova_Library_closure10300_Nova_getFunction)(void*, void*);
-typedef void (*nova_meta_Nova_Library_closure10300_Nova_getFunction)(void*, void*);
+typedef void (*nova_meta_Nova_Library_closure15520_Nova_getFunction)(void*, void*);
+typedef void (*nova_meta_Nova_Library_closure15520_Nova_getFunction)(void*, void*);
+typedef void (*nova_meta_Nova_Library_closure15520_Nova_getFunction)(void*, void*);
+typedef void (*nova_meta_Nova_Library_closure15520_Nova_getFunction)(void*, void*);
+typedef void (*nova_meta_Nova_Library_closure15520_Nova_getFunction)(void*, void*);
+typedef void (*nova_meta_Nova_Library_closure15520_Nova_getFunction)(void*, void*);
+typedef void (*nova_meta_Nova_Library_closure15520_Nova_getFunction)(void*, void*);
+typedef void (*nova_meta_Nova_Library_closure15520_Nova_getFunction)(void*, void*);
 typedef struct nova_exception_Nova_ExceptionData nova_exception_Nova_ExceptionData;
 
 typedef void (*actionFunc958)(void*, void*);
@@ -1951,104 +1963,111 @@ typedef void (*stabilitytest_Nova_FileStabilityFunctionMap_closure1056_Nova_onRe
 typedef struct nova_exception_Nova_ExceptionData nova_exception_Nova_ExceptionData;
 typedef struct novex_nest_Nova_TestResult novex_nest_Nova_TestResult;
 
-typedef void (*stabilitytest_Nova_FirstClassFunctionStability_closure1405_Nova_onResult)(void*, novex_nest_Nova_TestResult*, void*);
-typedef void (*stabilitytest_Nova_FirstClassFunctionStabilityFunctionMap_closure1511_Nova_onResult)(void*, novex_nest_Nova_TestResult*, void*);
+typedef void (*stabilitytest_Nova_FirstClassFunctionStability_closure1416_Nova_onResult)(void*, novex_nest_Nova_TestResult*, void*);
+typedef void (*stabilitytest_Nova_FirstClassFunctionStabilityFunctionMap_closure1522_Nova_onResult)(void*, novex_nest_Nova_TestResult*, void*);
 typedef struct nova_exception_Nova_ExceptionData nova_exception_Nova_ExceptionData;
 typedef struct novex_nest_Nova_TestResult novex_nest_Nova_TestResult;
 
-typedef void (*stabilitytest_Nova_InnerClassStability_closure1512_Nova_onResult)(void*, novex_nest_Nova_TestResult*, void*);
-typedef void (*stabilitytest_Nova_InnerClassStabilityFunctionMap_closure1513_Nova_onResult)(void*, novex_nest_Nova_TestResult*, void*);
+typedef void (*stabilitytest_Nova_InnerClassStability_closure1523_Nova_onResult)(void*, novex_nest_Nova_TestResult*, void*);
+typedef void (*stabilitytest_Nova_InnerClassStabilityFunctionMap_closure1524_Nova_onResult)(void*, novex_nest_Nova_TestResult*, void*);
 typedef struct nova_exception_Nova_ExceptionData nova_exception_Nova_ExceptionData;
 typedef struct novex_nest_Nova_TestResult novex_nest_Nova_TestResult;
 
-typedef void (*stabilitytest_Nova_LambdaStability_closure1514_Nova_onResult)(void*, novex_nest_Nova_TestResult*, void*);
-typedef void (*stabilitytest_Nova_LambdaStabilityFunctionMap_closure1515_Nova_onResult)(void*, novex_nest_Nova_TestResult*, void*);
+typedef void (*stabilitytest_Nova_LambdaStability_closure1525_Nova_onResult)(void*, novex_nest_Nova_TestResult*, void*);
+typedef void (*stabilitytest_Nova_LambdaStabilityFunctionMap_closure1526_Nova_onResult)(void*, novex_nest_Nova_TestResult*, void*);
 typedef struct nova_exception_Nova_ExceptionData nova_exception_Nova_ExceptionData;
 typedef struct novex_nest_Nova_TestResult novex_nest_Nova_TestResult;
 
-typedef void (*stabilitytest_Nova_NetworkStability_closure1516_Nova_onResult)(void*, novex_nest_Nova_TestResult*, void*);
-typedef void (*stabilitytest_Nova_NetworkStabilityFunctionMap_closure1517_Nova_onResult)(void*, novex_nest_Nova_TestResult*, void*);
+typedef void (*stabilitytest_Nova_LibraryLoadingStability_closure1558_Nova_onResult)(void*, novex_nest_Nova_TestResult*, void*);
+typedef void (*stabilitytest_Nova_LibraryLoadingStabilityFunctionMap_closure1562_Nova_onResult)(void*, novex_nest_Nova_TestResult*, void*);
 typedef struct nova_exception_Nova_ExceptionData nova_exception_Nova_ExceptionData;
 typedef struct novex_nest_Nova_TestResult novex_nest_Nova_TestResult;
 
-typedef void (*stabilitytest_Nova_PolymorphismStability_closure1519_Nova_onResult)(void*, novex_nest_Nova_TestResult*, void*);
-typedef void (*stabilitytest_Nova_PolymorphismStabilityFunctionMap_closure1523_Nova_onResult)(void*, novex_nest_Nova_TestResult*, void*);
+typedef void (*stabilitytest_Nova_NetworkStability_closure1563_Nova_onResult)(void*, novex_nest_Nova_TestResult*, void*);
+typedef void (*stabilitytest_Nova_NetworkStabilityFunctionMap_closure1564_Nova_onResult)(void*, novex_nest_Nova_TestResult*, void*);
 typedef struct nova_exception_Nova_ExceptionData nova_exception_Nova_ExceptionData;
 typedef struct novex_nest_Nova_TestResult novex_nest_Nova_TestResult;
 
-typedef void (*stabilitytest_Nova_PrimitiveOverloadStability_closure1524_Nova_onResult)(void*, novex_nest_Nova_TestResult*, void*);
-typedef void (*stabilitytest_Nova_PrimitiveOverloadStabilityFunctionMap_closure1525_Nova_onResult)(void*, novex_nest_Nova_TestResult*, void*);
+typedef void (*stabilitytest_Nova_PolymorphismStability_closure1566_Nova_onResult)(void*, novex_nest_Nova_TestResult*, void*);
+typedef void (*stabilitytest_Nova_PolymorphismStabilityFunctionMap_closure1570_Nova_onResult)(void*, novex_nest_Nova_TestResult*, void*);
 typedef struct nova_exception_Nova_ExceptionData nova_exception_Nova_ExceptionData;
 typedef struct novex_nest_Nova_TestResult novex_nest_Nova_TestResult;
 
-typedef void (*stabilitytest_Nova_RegexStability_closure1526_Nova_onResult)(void*, novex_nest_Nova_TestResult*, void*);
-typedef void (*stabilitytest_Nova_RegexStabilityFunctionMap_closure1527_Nova_onResult)(void*, novex_nest_Nova_TestResult*, void*);
+typedef void (*stabilitytest_Nova_PrimitiveOverloadStability_closure1571_Nova_onResult)(void*, novex_nest_Nova_TestResult*, void*);
+typedef void (*stabilitytest_Nova_PrimitiveOverloadStabilityFunctionMap_closure1572_Nova_onResult)(void*, novex_nest_Nova_TestResult*, void*);
 typedef struct nova_exception_Nova_ExceptionData nova_exception_Nova_ExceptionData;
 typedef struct novex_nest_Nova_TestResult novex_nest_Nova_TestResult;
 
-typedef void (*stabilitytest_Nova_StabilityTest_closure1528_Nova_onResult)(void*, novex_nest_Nova_TestResult*, void*);
-typedef void (*stabilitytest_Nova_StabilityTest_closure1530_Nova_onResult)(void*, novex_nest_Nova_TestResult*, void*);
-typedef void (*stabilitytest_Nova_StabilityTest_closure1530_Nova_onResult)(void*, novex_nest_Nova_TestResult*, void*);
-typedef void (*stabilitytest_Nova_StabilityTest_closure1532_Nova_onResult)(void*, novex_nest_Nova_TestResult*, void*);
-typedef void (*stabilitytest_Nova_StabilityTest_closure1532_Nova_onResult)(void*, novex_nest_Nova_TestResult*, void*);
-typedef void (*stabilitytest_Nova_StabilityTest_closure1534_Nova_onResult)(void*, novex_nest_Nova_TestResult*, void*);
-typedef void (*stabilitytest_Nova_StabilityTest_closure1534_Nova_onResult)(void*, novex_nest_Nova_TestResult*, void*);
-typedef void (*stabilitytest_Nova_StabilityTest_closure1536_Nova_onResult)(void*, novex_nest_Nova_TestResult*, void*);
-typedef void (*stabilitytest_Nova_StabilityTest_closure1536_Nova_onResult)(void*, novex_nest_Nova_TestResult*, void*);
-typedef void (*stabilitytest_Nova_StabilityTest_closure1538_Nova_onResult)(void*, novex_nest_Nova_TestResult*, void*);
-typedef void (*stabilitytest_Nova_StabilityTest_closure1538_Nova_onResult)(void*, novex_nest_Nova_TestResult*, void*);
-typedef void (*stabilitytest_Nova_StabilityTest_closure1540_Nova_onResult)(void*, novex_nest_Nova_TestResult*, void*);
-typedef void (*stabilitytest_Nova_StabilityTest_closure1540_Nova_onResult)(void*, novex_nest_Nova_TestResult*, void*);
-typedef void (*stabilitytest_Nova_StabilityTest_closure1542_Nova_onResult)(void*, novex_nest_Nova_TestResult*, void*);
-typedef void (*stabilitytest_Nova_StabilityTest_closure1542_Nova_onResult)(void*, novex_nest_Nova_TestResult*, void*);
-typedef void (*stabilitytest_Nova_StabilityTest_closure1544_Nova_onResult)(void*, novex_nest_Nova_TestResult*, void*);
-typedef void (*stabilitytest_Nova_StabilityTest_closure1544_Nova_onResult)(void*, novex_nest_Nova_TestResult*, void*);
-typedef void (*stabilitytest_Nova_StabilityTest_closure1546_Nova_onResult)(void*, novex_nest_Nova_TestResult*, void*);
-typedef void (*stabilitytest_Nova_StabilityTest_closure1546_Nova_onResult)(void*, novex_nest_Nova_TestResult*, void*);
-typedef void (*stabilitytest_Nova_StabilityTest_closure1548_Nova_onResult)(void*, novex_nest_Nova_TestResult*, void*);
-typedef void (*stabilitytest_Nova_StabilityTest_closure1548_Nova_onResult)(void*, novex_nest_Nova_TestResult*, void*);
-typedef void (*stabilitytest_Nova_StabilityTest_closure1550_Nova_onResult)(void*, novex_nest_Nova_TestResult*, void*);
-typedef void (*stabilitytest_Nova_StabilityTest_closure1550_Nova_onResult)(void*, novex_nest_Nova_TestResult*, void*);
-typedef void (*stabilitytest_Nova_StabilityTest_closure1552_Nova_onResult)(void*, novex_nest_Nova_TestResult*, void*);
-typedef void (*stabilitytest_Nova_StabilityTest_closure1552_Nova_onResult)(void*, novex_nest_Nova_TestResult*, void*);
-typedef void (*stabilitytest_Nova_StabilityTest_closure1554_Nova_onResult)(void*, novex_nest_Nova_TestResult*, void*);
-typedef void (*stabilitytest_Nova_StabilityTest_closure1554_Nova_onResult)(void*, novex_nest_Nova_TestResult*, void*);
-typedef void (*stabilitytest_Nova_StabilityTest_closure1556_Nova_onResult)(void*, novex_nest_Nova_TestResult*, void*);
-typedef void (*stabilitytest_Nova_StabilityTest_closure1556_Nova_onResult)(void*, novex_nest_Nova_TestResult*, void*);
-typedef void (*stabilitytest_Nova_StabilityTest_closure1558_Nova_onResult)(void*, novex_nest_Nova_TestResult*, void*);
-typedef void (*stabilitytest_Nova_StabilityTest_closure1558_Nova_onResult)(void*, novex_nest_Nova_TestResult*, void*);
-typedef void (*stabilitytest_Nova_StabilityTest_closure1560_Nova_onResult)(void*, novex_nest_Nova_TestResult*, void*);
-typedef void (*stabilitytest_Nova_StabilityTest_closure1560_Nova_onResult)(void*, novex_nest_Nova_TestResult*, void*);
-typedef void (*stabilitytest_Nova_StabilityTest_closure1562_Nova_onResult)(void*, novex_nest_Nova_TestResult*, void*);
-typedef void (*stabilitytest_Nova_StabilityTest_closure1562_Nova_onResult)(void*, novex_nest_Nova_TestResult*, void*);
-typedef void (*stabilitytest_Nova_StabilityTest_closure1564_Nova_onResult)(void*, novex_nest_Nova_TestResult*, void*);
-typedef void (*stabilitytest_Nova_StabilityTest_closure1564_Nova_onResult)(void*, novex_nest_Nova_TestResult*, void*);
-typedef void (*stabilitytest_Nova_StabilityTestFunctionMap_closure1565_Nova_onResult)(void*, novex_nest_Nova_TestResult*, void*);
+typedef void (*stabilitytest_Nova_RegexStability_closure1573_Nova_onResult)(void*, novex_nest_Nova_TestResult*, void*);
+typedef void (*stabilitytest_Nova_RegexStabilityFunctionMap_closure1574_Nova_onResult)(void*, novex_nest_Nova_TestResult*, void*);
 typedef struct nova_exception_Nova_ExceptionData nova_exception_Nova_ExceptionData;
 typedef struct novex_nest_Nova_TestResult novex_nest_Nova_TestResult;
 
-typedef void (*stabilitytest_Nova_StaticImportStability_closure1566_Nova_onResult)(void*, novex_nest_Nova_TestResult*, void*);
-typedef void (*stabilitytest_Nova_StaticImportStabilityFunctionMap_closure1567_Nova_onResult)(void*, novex_nest_Nova_TestResult*, void*);
+typedef void (*stabilitytest_Nova_StabilityTest_closure1575_Nova_onResult)(void*, novex_nest_Nova_TestResult*, void*);
+typedef void (*stabilitytest_Nova_StabilityTest_closure1577_Nova_onResult)(void*, novex_nest_Nova_TestResult*, void*);
+typedef void (*stabilitytest_Nova_StabilityTest_closure1577_Nova_onResult)(void*, novex_nest_Nova_TestResult*, void*);
+typedef void (*stabilitytest_Nova_StabilityTest_closure1579_Nova_onResult)(void*, novex_nest_Nova_TestResult*, void*);
+typedef void (*stabilitytest_Nova_StabilityTest_closure1579_Nova_onResult)(void*, novex_nest_Nova_TestResult*, void*);
+typedef void (*stabilitytest_Nova_StabilityTest_closure1581_Nova_onResult)(void*, novex_nest_Nova_TestResult*, void*);
+typedef void (*stabilitytest_Nova_StabilityTest_closure1581_Nova_onResult)(void*, novex_nest_Nova_TestResult*, void*);
+typedef void (*stabilitytest_Nova_StabilityTest_closure1583_Nova_onResult)(void*, novex_nest_Nova_TestResult*, void*);
+typedef void (*stabilitytest_Nova_StabilityTest_closure1583_Nova_onResult)(void*, novex_nest_Nova_TestResult*, void*);
+typedef void (*stabilitytest_Nova_StabilityTest_closure1585_Nova_onResult)(void*, novex_nest_Nova_TestResult*, void*);
+typedef void (*stabilitytest_Nova_StabilityTest_closure1585_Nova_onResult)(void*, novex_nest_Nova_TestResult*, void*);
+typedef void (*stabilitytest_Nova_StabilityTest_closure1587_Nova_onResult)(void*, novex_nest_Nova_TestResult*, void*);
+typedef void (*stabilitytest_Nova_StabilityTest_closure1587_Nova_onResult)(void*, novex_nest_Nova_TestResult*, void*);
+typedef void (*stabilitytest_Nova_StabilityTest_closure1589_Nova_onResult)(void*, novex_nest_Nova_TestResult*, void*);
+typedef void (*stabilitytest_Nova_StabilityTest_closure1589_Nova_onResult)(void*, novex_nest_Nova_TestResult*, void*);
+typedef void (*stabilitytest_Nova_StabilityTest_closure1591_Nova_onResult)(void*, novex_nest_Nova_TestResult*, void*);
+typedef void (*stabilitytest_Nova_StabilityTest_closure1591_Nova_onResult)(void*, novex_nest_Nova_TestResult*, void*);
+typedef void (*stabilitytest_Nova_StabilityTest_closure1593_Nova_onResult)(void*, novex_nest_Nova_TestResult*, void*);
+typedef void (*stabilitytest_Nova_StabilityTest_closure1593_Nova_onResult)(void*, novex_nest_Nova_TestResult*, void*);
+typedef void (*stabilitytest_Nova_StabilityTest_closure1595_Nova_onResult)(void*, novex_nest_Nova_TestResult*, void*);
+typedef void (*stabilitytest_Nova_StabilityTest_closure1595_Nova_onResult)(void*, novex_nest_Nova_TestResult*, void*);
+typedef void (*stabilitytest_Nova_StabilityTest_closure1597_Nova_onResult)(void*, novex_nest_Nova_TestResult*, void*);
+typedef void (*stabilitytest_Nova_StabilityTest_closure1597_Nova_onResult)(void*, novex_nest_Nova_TestResult*, void*);
+typedef void (*stabilitytest_Nova_StabilityTest_closure1599_Nova_onResult)(void*, novex_nest_Nova_TestResult*, void*);
+typedef void (*stabilitytest_Nova_StabilityTest_closure1599_Nova_onResult)(void*, novex_nest_Nova_TestResult*, void*);
+typedef void (*stabilitytest_Nova_StabilityTest_closure1601_Nova_onResult)(void*, novex_nest_Nova_TestResult*, void*);
+typedef void (*stabilitytest_Nova_StabilityTest_closure1601_Nova_onResult)(void*, novex_nest_Nova_TestResult*, void*);
+typedef void (*stabilitytest_Nova_StabilityTest_closure1603_Nova_onResult)(void*, novex_nest_Nova_TestResult*, void*);
+typedef void (*stabilitytest_Nova_StabilityTest_closure1603_Nova_onResult)(void*, novex_nest_Nova_TestResult*, void*);
+typedef void (*stabilitytest_Nova_StabilityTest_closure1605_Nova_onResult)(void*, novex_nest_Nova_TestResult*, void*);
+typedef void (*stabilitytest_Nova_StabilityTest_closure1605_Nova_onResult)(void*, novex_nest_Nova_TestResult*, void*);
+typedef void (*stabilitytest_Nova_StabilityTest_closure1607_Nova_onResult)(void*, novex_nest_Nova_TestResult*, void*);
+typedef void (*stabilitytest_Nova_StabilityTest_closure1607_Nova_onResult)(void*, novex_nest_Nova_TestResult*, void*);
+typedef void (*stabilitytest_Nova_StabilityTest_closure1609_Nova_onResult)(void*, novex_nest_Nova_TestResult*, void*);
+typedef void (*stabilitytest_Nova_StabilityTest_closure1609_Nova_onResult)(void*, novex_nest_Nova_TestResult*, void*);
+typedef void (*stabilitytest_Nova_StabilityTest_closure1611_Nova_onResult)(void*, novex_nest_Nova_TestResult*, void*);
+typedef void (*stabilitytest_Nova_StabilityTest_closure1611_Nova_onResult)(void*, novex_nest_Nova_TestResult*, void*);
+typedef void (*stabilitytest_Nova_StabilityTest_closure1613_Nova_onResult)(void*, novex_nest_Nova_TestResult*, void*);
+typedef void (*stabilitytest_Nova_StabilityTest_closure1613_Nova_onResult)(void*, novex_nest_Nova_TestResult*, void*);
+typedef void (*stabilitytest_Nova_StabilityTestFunctionMap_closure1614_Nova_onResult)(void*, novex_nest_Nova_TestResult*, void*);
 typedef struct nova_exception_Nova_ExceptionData nova_exception_Nova_ExceptionData;
 typedef struct novex_nest_Nova_TestResult novex_nest_Nova_TestResult;
 
-typedef void (*stabilitytest_Nova_SyntaxStability_closure1569_Nova_onResult)(void*, novex_nest_Nova_TestResult*, void*);
-typedef void (*stabilitytest_Nova_SyntaxStabilityFunctionMap_closure1573_Nova_onResult)(void*, novex_nest_Nova_TestResult*, void*);
+typedef void (*stabilitytest_Nova_StaticImportStability_closure1615_Nova_onResult)(void*, novex_nest_Nova_TestResult*, void*);
+typedef void (*stabilitytest_Nova_StaticImportStabilityFunctionMap_closure1616_Nova_onResult)(void*, novex_nest_Nova_TestResult*, void*);
 typedef struct nova_exception_Nova_ExceptionData nova_exception_Nova_ExceptionData;
 typedef struct novex_nest_Nova_TestResult novex_nest_Nova_TestResult;
 
-typedef void (*stabilitytest_Nova_ThreadStability_closure1574_Nova_onResult)(void*, novex_nest_Nova_TestResult*, void*);
-typedef void (*stabilitytest_Nova_ThreadStabilityFunctionMap_closure1575_Nova_onResult)(void*, novex_nest_Nova_TestResult*, void*);
+typedef void (*stabilitytest_Nova_SyntaxStability_closure1618_Nova_onResult)(void*, novex_nest_Nova_TestResult*, void*);
+typedef void (*stabilitytest_Nova_SyntaxStabilityFunctionMap_closure1622_Nova_onResult)(void*, novex_nest_Nova_TestResult*, void*);
 typedef struct nova_exception_Nova_ExceptionData nova_exception_Nova_ExceptionData;
 typedef struct novex_nest_Nova_TestResult novex_nest_Nova_TestResult;
 
-typedef void (*stabilitytest_Nova_TimeStability_closure1576_Nova_onResult)(void*, novex_nest_Nova_TestResult*, void*);
-typedef void (*stabilitytest_Nova_TimeStabilityFunctionMap_closure1577_Nova_onResult)(void*, novex_nest_Nova_TestResult*, void*);
+typedef void (*stabilitytest_Nova_ThreadStability_closure1623_Nova_onResult)(void*, novex_nest_Nova_TestResult*, void*);
+typedef void (*stabilitytest_Nova_ThreadStabilityFunctionMap_closure1624_Nova_onResult)(void*, novex_nest_Nova_TestResult*, void*);
 typedef struct nova_exception_Nova_ExceptionData nova_exception_Nova_ExceptionData;
 typedef struct novex_nest_Nova_TestResult novex_nest_Nova_TestResult;
 
-typedef void (*stabilitytest_Nova_ToStringStability_closure1578_Nova_onResult)(void*, novex_nest_Nova_TestResult*, void*);
-typedef void (*stabilitytest_Nova_ToStringStabilityFunctionMap_closure1579_Nova_onResult)(void*, novex_nest_Nova_TestResult*, void*);
+typedef void (*stabilitytest_Nova_TimeStability_closure1625_Nova_onResult)(void*, novex_nest_Nova_TestResult*, void*);
+typedef void (*stabilitytest_Nova_TimeStabilityFunctionMap_closure1626_Nova_onResult)(void*, novex_nest_Nova_TestResult*, void*);
+typedef struct nova_exception_Nova_ExceptionData nova_exception_Nova_ExceptionData;
+typedef struct novex_nest_Nova_TestResult novex_nest_Nova_TestResult;
+
+typedef void (*stabilitytest_Nova_ToStringStability_closure1627_Nova_onResult)(void*, novex_nest_Nova_TestResult*, void*);
+typedef void (*stabilitytest_Nova_ToStringStabilityFunctionMap_closure1628_Nova_onResult)(void*, novex_nest_Nova_TestResult*, void*);
 
 #include <Nova.h>
 #include <pcre/pcre2.h>
@@ -7630,6 +7649,55 @@ int nova_gc_Nova_GCPropertyMap_functionMap_Nova_bytesSinceGC(nova_gc_Nova_GCProp
 void nova_gc_Nova_GCPropertyMap_Nova_super(nova_gc_Nova_GCPropertyMap* this);
 CCLASS_CLASS
 (
+	nova_io_Nova_ClosedStreamException, 
+	
+	nova_io_Nova_ClosedStreamException_VTable* vtable;
+	void* prv;
+	nova_Nova_String* nova_Nova_Object_Nova_hashCode;
+	nova_Nova_String* nova_exception_Nova_Exception_Nova_message;
+)
+
+extern char nova_io_Nova_ClosedStreamException_Nova_init_static_inited;
+void nova_io_Nova_ClosedStreamException_Nova_init_static();
+nova_io_Nova_ClosedStreamException* nova_io_Nova_ClosedStreamException_Nova_construct(nova_io_Nova_ClosedStreamException* this, nova_Nova_String* message);
+void nova_io_Nova_ClosedStreamException_Nova_destroy(nova_io_Nova_ClosedStreamException** this);
+void nova_io_Nova_ClosedStreamException_Nova_this(nova_io_Nova_ClosedStreamException* this, nova_Nova_String* message);
+void nova_io_Nova_ClosedStreamException_Nova_super(nova_io_Nova_ClosedStreamException* this);
+
+CCLASS_CLASS
+(
+	nova_io_Nova_ClosedStreamExceptionFunctionMap, 
+	
+	nova_io_Nova_ClosedStreamExceptionFunctionMap_VTable* vtable;
+	void* prv;
+	nova_Nova_String* nova_Nova_Object_Nova_hashCode;
+)
+
+extern char nova_io_Nova_ClosedStreamExceptionFunctionMap_Nova_init_static_inited;
+void nova_io_Nova_ClosedStreamExceptionFunctionMap_Nova_init_static();
+nova_io_Nova_ClosedStreamExceptionFunctionMap* nova_io_Nova_ClosedStreamExceptionFunctionMap_Nova_construct(nova_io_Nova_ClosedStreamExceptionFunctionMap* this);
+void nova_io_Nova_ClosedStreamExceptionFunctionMap_Nova_destroy(nova_io_Nova_ClosedStreamExceptionFunctionMap** this);
+void nova_io_Nova_ClosedStreamExceptionFunctionMap_Nova_this(nova_io_Nova_ClosedStreamExceptionFunctionMap* this);
+nova_io_Nova_ClosedStreamException* nova_io_Nova_ClosedStreamExceptionFunctionMap_functionMapClosedStreamExceptionFunctionMap_Nova_construct(nova_io_Nova_ClosedStreamExceptionFunctionMap* this, nova_Nova_String* message);
+void nova_io_Nova_ClosedStreamExceptionFunctionMap_Nova_super(nova_io_Nova_ClosedStreamExceptionFunctionMap* this);
+
+CCLASS_CLASS
+(
+	nova_io_Nova_ClosedStreamExceptionPropertyMap, 
+	
+	nova_io_Nova_ClosedStreamExceptionPropertyMap_VTable* vtable;
+	void* prv;
+	nova_Nova_String* nova_Nova_Object_Nova_hashCode;
+)
+
+extern char nova_io_Nova_ClosedStreamExceptionPropertyMap_Nova_init_static_inited;
+void nova_io_Nova_ClosedStreamExceptionPropertyMap_Nova_init_static();
+nova_io_Nova_ClosedStreamExceptionPropertyMap* nova_io_Nova_ClosedStreamExceptionPropertyMap_Nova_construct(nova_io_Nova_ClosedStreamExceptionPropertyMap* this);
+void nova_io_Nova_ClosedStreamExceptionPropertyMap_Nova_destroy(nova_io_Nova_ClosedStreamExceptionPropertyMap** this);
+void nova_io_Nova_ClosedStreamExceptionPropertyMap_Nova_this(nova_io_Nova_ClosedStreamExceptionPropertyMap* this);
+void nova_io_Nova_ClosedStreamExceptionPropertyMap_Nova_super(nova_io_Nova_ClosedStreamExceptionPropertyMap* this);
+CCLASS_CLASS
+(
 	nova_io_Nova_Console, 
 	
 	nova_io_Nova_Console_VTable* vtable;
@@ -10409,7 +10477,7 @@ void nova_meta_Nova_Library_Nova_destroy(nova_meta_Nova_Library** this);
 void nova_meta_Nova_Library_Nova_this(nova_meta_Nova_Library* this, nova_Nova_String* location);
 nova_Nova_Object* nova_meta_Nova_Library_Nova_getInstance(nova_meta_Nova_Library* this, nova_Nova_String* classLocation);
 /*nova_meta_Nova_Library_closure931_Nova_getConstructor*/nova_funcStruct* nova_meta_Nova_Library_Nova_getConstructor(nova_meta_Nova_Library* this, nova_Nova_String* classLocation);
-/*nova_meta_Nova_Library_closure10300_Nova_getFunction*/nova_funcStruct* nova_meta_Nova_Library_0_Nova_getFunction(nova_meta_Nova_Library* this, nova_Nova_String* functionName, nova_Nova_String* classLocation);
+/*nova_meta_Nova_Library_closure15520_Nova_getFunction*/nova_funcStruct* nova_meta_Nova_Library_0_Nova_getFunction(nova_meta_Nova_Library* this, nova_Nova_String* functionName, nova_Nova_String* classLocation);
 /*nova_meta_Nova_Library_closure9371_Nova_getFunction*/nova_funcStruct* nova_meta_Nova_Library_1_Nova_getFunction(nova_meta_Nova_Library* this, nova_Nova_String* functionName, nova_Nova_Object* reference);
 nova_meta_Nova_Library* nova_meta_Nova_Library_Nova_load(nova_meta_Nova_Library* this);
 void nova_meta_Nova_Library_Nova_super(nova_meta_Nova_Library* this);
@@ -10796,6 +10864,7 @@ void nova_network_Nova_ServerSocket_Nova_this(nova_network_Nova_ServerSocket* th
 nova_network_Nova_ServerSocket* nova_network_Nova_ServerSocket_Nova_start(nova_network_Nova_ServerSocket* this, int port);
 char nova_network_Nova_ServerSocket_Nova_close(nova_network_Nova_ServerSocket* this);
 nova_network_Nova_ConnectionSocket* nova_network_Nova_ServerSocket_Nova_acceptClient(nova_network_Nova_ServerSocket* this);
+char nova_network_Nova_ServerSocket_Accessorfunc_Nova_open(nova_network_Nova_ServerSocket* this);
 void nova_network_Nova_ServerSocket_Nova_super(nova_network_Nova_ServerSocket* this);
 
 CCLASS_CLASS
@@ -12883,45 +12952,11 @@ CCLASS_CLASS
 	int nova_star_Nova_Panel_Nova_width;
 	int nova_star_Nova_Panel_Nova_height;
 	nova_star_Nova_Color* nova_star_Nova_Panel_Nova_backgroundColor;
-	HWND hwnd;
+	WINDOW_ID_TYPE hwnd;
 	nova_datastruct_list_Nova_Array* nova_star_Nova_Panel_Nova_children;
 	nova_Nova_String* nova_star_Nova_Button_Nova_text;
 	int nova_star_Nova_Button_Nova_actionId;
 )
-extern int nova_star_Nova_Button_Nova_REGULAR;
-extern int nova_star_Nova_Button_Nova_TITLE_BAR;
-extern int nova_star_Nova_Button_Nova_MENU_BAR;
-extern int nova_star_Nova_Button_Nova_POPUP_MENU;
-extern int nova_star_Nova_Button_Nova_SCROLL_BAR;
-extern int nova_star_Nova_Button_Nova_THREE_STATE;
-extern int nova_star_Nova_Button_Nova_BUTTON_CHECK;
-extern int nova_star_Nova_Button_Nova_PUSH;
-extern int nova_star_Nova_Button_Nova_RADIO;
-extern int nova_star_Nova_Button_Nova_RADIO_IMAGE;
-extern int nova_star_Nova_Button_Nova_RADIO_MASK;
-extern int nova_star_Nova_Button_Nova_CLOSE;
-extern int nova_star_Nova_Button_Nova_HELP;
-extern int nova_star_Nova_Button_Nova_MAX;
-extern int nova_star_Nova_Button_Nova_MIN;
-extern int nova_star_Nova_Button_Nova_RESTORE;
-extern int nova_star_Nova_Button_Nova_ARROW;
-extern int nova_star_Nova_Button_Nova_ARROW_RIGHT;
-extern int nova_star_Nova_Button_Nova_BULLET;
-extern int nova_star_Nova_Button_Nova_MENU_CHECK;
-extern int nova_star_Nova_Button_Nova_SCROLL_COMBOBOX;
-extern int nova_star_Nova_Button_Nova_SCROLL_DOWN;
-extern int nova_star_Nova_Button_Nova_SCROLL_LEFT;
-extern int nova_star_Nova_Button_Nova_SCROLL_RIGHT;
-extern int nova_star_Nova_Button_Nova_SCROLL_SIZE_GRIP;
-extern int nova_star_Nova_Button_Nova_SCROLL_SIZE_GRIP_RIGHT;
-extern int nova_star_Nova_Button_Nova_SCROLL_UP;
-extern int nova_star_Nova_Button_Nova_CHECKED;
-extern int nova_star_Nova_Button_Nova_FLAT;
-extern int nova_star_Nova_Button_Nova_HOT;
-extern int nova_star_Nova_Button_Nova_INACTIVE;
-extern int nova_star_Nova_Button_Nova_MONO;
-extern int nova_star_Nova_Button_Nova_PUSHED;
-extern int nova_star_Nova_Button_Nova_TRANSPARENT;
 
 extern char nova_star_Nova_Button_Nova_init_static_inited;
 void nova_star_Nova_Button_Nova_init_static();
@@ -12970,40 +13005,6 @@ nova_star_Nova_ButtonPropertyMap* nova_star_Nova_ButtonPropertyMap_Nova_construc
 void nova_star_Nova_ButtonPropertyMap_Nova_destroy(nova_star_Nova_ButtonPropertyMap** this);
 void nova_star_Nova_ButtonPropertyMap_Nova_this(nova_star_Nova_ButtonPropertyMap* this);
 nova_Nova_String* nova_star_Nova_ButtonPropertyMap_functionMap_Nova_text(nova_star_Nova_ButtonPropertyMap* this, nova_star_Nova_Button* reference);
-int nova_star_Nova_ButtonPropertyMap_functionMap_static_Nova_REGULAR(nova_star_Nova_ButtonPropertyMap* this);
-int nova_star_Nova_ButtonPropertyMap_functionMap_static_Nova_TITLE_BAR(nova_star_Nova_ButtonPropertyMap* this);
-int nova_star_Nova_ButtonPropertyMap_functionMap_static_Nova_MENU_BAR(nova_star_Nova_ButtonPropertyMap* this);
-int nova_star_Nova_ButtonPropertyMap_functionMap_static_Nova_POPUP_MENU(nova_star_Nova_ButtonPropertyMap* this);
-int nova_star_Nova_ButtonPropertyMap_functionMap_static_Nova_SCROLL_BAR(nova_star_Nova_ButtonPropertyMap* this);
-int nova_star_Nova_ButtonPropertyMap_functionMap_static_Nova_THREE_STATE(nova_star_Nova_ButtonPropertyMap* this);
-int nova_star_Nova_ButtonPropertyMap_functionMap_static_Nova_BUTTON_CHECK(nova_star_Nova_ButtonPropertyMap* this);
-int nova_star_Nova_ButtonPropertyMap_functionMap_static_Nova_PUSH(nova_star_Nova_ButtonPropertyMap* this);
-int nova_star_Nova_ButtonPropertyMap_functionMap_static_Nova_RADIO(nova_star_Nova_ButtonPropertyMap* this);
-int nova_star_Nova_ButtonPropertyMap_functionMap_static_Nova_RADIO_IMAGE(nova_star_Nova_ButtonPropertyMap* this);
-int nova_star_Nova_ButtonPropertyMap_functionMap_static_Nova_RADIO_MASK(nova_star_Nova_ButtonPropertyMap* this);
-int nova_star_Nova_ButtonPropertyMap_functionMap_static_Nova_CLOSE(nova_star_Nova_ButtonPropertyMap* this);
-int nova_star_Nova_ButtonPropertyMap_functionMap_static_Nova_HELP(nova_star_Nova_ButtonPropertyMap* this);
-int nova_star_Nova_ButtonPropertyMap_functionMap_static_Nova_MAX(nova_star_Nova_ButtonPropertyMap* this);
-int nova_star_Nova_ButtonPropertyMap_functionMap_static_Nova_MIN(nova_star_Nova_ButtonPropertyMap* this);
-int nova_star_Nova_ButtonPropertyMap_functionMap_static_Nova_RESTORE(nova_star_Nova_ButtonPropertyMap* this);
-int nova_star_Nova_ButtonPropertyMap_functionMap_static_Nova_ARROW(nova_star_Nova_ButtonPropertyMap* this);
-int nova_star_Nova_ButtonPropertyMap_functionMap_static_Nova_ARROW_RIGHT(nova_star_Nova_ButtonPropertyMap* this);
-int nova_star_Nova_ButtonPropertyMap_functionMap_static_Nova_BULLET(nova_star_Nova_ButtonPropertyMap* this);
-int nova_star_Nova_ButtonPropertyMap_functionMap_static_Nova_MENU_CHECK(nova_star_Nova_ButtonPropertyMap* this);
-int nova_star_Nova_ButtonPropertyMap_functionMap_static_Nova_SCROLL_COMBOBOX(nova_star_Nova_ButtonPropertyMap* this);
-int nova_star_Nova_ButtonPropertyMap_functionMap_static_Nova_SCROLL_DOWN(nova_star_Nova_ButtonPropertyMap* this);
-int nova_star_Nova_ButtonPropertyMap_functionMap_static_Nova_SCROLL_LEFT(nova_star_Nova_ButtonPropertyMap* this);
-int nova_star_Nova_ButtonPropertyMap_functionMap_static_Nova_SCROLL_RIGHT(nova_star_Nova_ButtonPropertyMap* this);
-int nova_star_Nova_ButtonPropertyMap_functionMap_static_Nova_SCROLL_SIZE_GRIP(nova_star_Nova_ButtonPropertyMap* this);
-int nova_star_Nova_ButtonPropertyMap_functionMap_static_Nova_SCROLL_SIZE_GRIP_RIGHT(nova_star_Nova_ButtonPropertyMap* this);
-int nova_star_Nova_ButtonPropertyMap_functionMap_static_Nova_SCROLL_UP(nova_star_Nova_ButtonPropertyMap* this);
-int nova_star_Nova_ButtonPropertyMap_functionMap_static_Nova_CHECKED(nova_star_Nova_ButtonPropertyMap* this);
-int nova_star_Nova_ButtonPropertyMap_functionMap_static_Nova_FLAT(nova_star_Nova_ButtonPropertyMap* this);
-int nova_star_Nova_ButtonPropertyMap_functionMap_static_Nova_HOT(nova_star_Nova_ButtonPropertyMap* this);
-int nova_star_Nova_ButtonPropertyMap_functionMap_static_Nova_INACTIVE(nova_star_Nova_ButtonPropertyMap* this);
-int nova_star_Nova_ButtonPropertyMap_functionMap_static_Nova_MONO(nova_star_Nova_ButtonPropertyMap* this);
-int nova_star_Nova_ButtonPropertyMap_functionMap_static_Nova_PUSHED(nova_star_Nova_ButtonPropertyMap* this);
-int nova_star_Nova_ButtonPropertyMap_functionMap_static_Nova_TRANSPARENT(nova_star_Nova_ButtonPropertyMap* this);
 void nova_star_Nova_ButtonPropertyMap_Nova_super(nova_star_Nova_ButtonPropertyMap* this);
 CCLASS_CLASS
 (
@@ -13087,7 +13088,7 @@ CCLASS_CLASS
 	int nova_star_Nova_Panel_Nova_width;
 	int nova_star_Nova_Panel_Nova_height;
 	nova_star_Nova_Color* nova_star_Nova_Panel_Nova_backgroundColor;
-	HWND hwnd;
+	WINDOW_ID_TYPE hwnd;
 	nova_datastruct_list_Nova_Array* nova_star_Nova_Panel_Nova_children;
 	nova_star_Nova_Window* nova_star_Nova_Frame_Nova_windowInstance;
 )
@@ -13273,7 +13274,7 @@ CCLASS_CLASS
 	int nova_star_Nova_Panel_Nova_width;
 	int nova_star_Nova_Panel_Nova_height;
 	nova_star_Nova_Color* nova_star_Nova_Panel_Nova_backgroundColor;
-	HWND hwnd;
+	WINDOW_ID_TYPE hwnd;
 	nova_datastruct_list_Nova_Array* nova_star_Nova_Panel_Nova_children;
 )
 
@@ -13391,7 +13392,7 @@ CCLASS_CLASS
 	int nova_star_Nova_UIComponent_Nova_x;
 	int nova_star_Nova_UIComponent_Nova_y;
 	int nova_star_Nova_UIComponent_Nova_absoluteY;
-	HWND hwnd;
+	WINDOW_ID_TYPE hwnd;
 )
 
 extern char nova_star_Nova_ScrollBar_Nova_init_static_inited;
@@ -13635,10 +13636,10 @@ CCLASS_CLASS
 	int nova_star_Nova_Window_Nova_clientHeight;
 	nova_star_Nova_Frame* frame;
 	nova_Nova_String* title;
-	HWND hwnd;
-	HINSTANCE hinstance;
-	HDC hdc;
-	PAINTSTRUCT ps;
+	WINDOW_ID_TYPE hwnd;
+	MODULE_ID_TYPE hinstance;
+	DEVICE_CONTEXT hdc;
+	PAINT_CONTEXT ps;
 	nova_star_Nova_WindowThread* thread;
 )
 
@@ -14932,6 +14933,7 @@ char novex_nest_Nova_Nest_Nova_toBe(novex_nest_Nova_Nest* this, nova_Nova_Object
 char novex_nest_Nova_Nest_Nova_toNotBe(novex_nest_Nova_Nest* this, nova_Nova_Object* other, nova_Nova_String* message);
 char novex_nest_Nova_Nest_Nova_toBeWithinToleranceOf(novex_nest_Nova_Nest* this, double target, double tolerance, nova_Nova_String* message);
 void novex_nest_Nova_Nest_static_Nova_expectValue(novex_nest_Nova_Nest* this, nova_Nova_Object* value, nova_Nova_String* message);
+void novex_nest_Nova_Nest_static_Nova_expectNull(novex_nest_Nova_Nest* this, nova_Nova_Object* value, nova_Nova_String* message);
 void novex_nest_Nova_Nest_static_Nova_expectTrue(novex_nest_Nova_Nest* this, char condition, nova_Nova_String* message);
 void novex_nest_Nova_Nest_static_Nova_expectFalse(novex_nest_Nova_Nest* this, char condition, nova_Nova_String* message);
 void novex_nest_Nova_Nest_static_Nova_fail(novex_nest_Nova_Nest* this, nova_Nova_String* message);
@@ -14974,6 +14976,7 @@ novex_nest_Int_Nova_Nest1Int* novex_nest_Nova_Nest_int_Nest1Int35_static_Nova_ex
 novex_nest_Bool_Nova_Nest1Bool* novex_nest_Nova_Nest_char_Nest1Bool36_static_Nova_expect(novex_nest_Nova_Nest* this, char obj);
 novex_nest_Bool_Nova_Nest1Bool* novex_nest_Nova_Nest_char_Nest1Bool37_static_Nova_expect(novex_nest_Nova_Nest* this, char obj);
 novex_nest_Int_Nova_Nest1Int* novex_nest_Nova_Nest_int_Nest1Int38_static_Nova_expect(novex_nest_Nova_Nest* this, int obj);
+novex_nest_Int_Nova_Nest1Int* novex_nest_Nova_Nest_int_Nest1Int39_static_Nova_expect(novex_nest_Nova_Nest* this, int obj);
 void novex_nest_Nova_Nest_Nova_super(novex_nest_Nova_Nest* this);
 
 CCLASS_CLASS
@@ -14994,6 +14997,7 @@ char novex_nest_Nova_NestFunctionMap_functionMap_Nova_toBe(novex_nest_Nova_NestF
 char novex_nest_Nova_NestFunctionMap_functionMap_Nova_toNotBe(novex_nest_Nova_NestFunctionMap* this, novex_nest_Nova_Nest* reference, nova_Nova_Object* other, nova_Nova_String* message);
 char novex_nest_Nova_NestFunctionMap_functionMap_Nova_toBeWithinToleranceOf(novex_nest_Nova_NestFunctionMap* this, novex_nest_Nova_Nest* reference, double target, double tolerance, nova_Nova_String* message);
 void novex_nest_Nova_NestFunctionMap_functionMap_static_Nova_expectValue(novex_nest_Nova_NestFunctionMap* this, nova_Nova_Object* value, nova_Nova_String* message);
+void novex_nest_Nova_NestFunctionMap_functionMap_static_Nova_expectNull(novex_nest_Nova_NestFunctionMap* this, nova_Nova_Object* value, nova_Nova_String* message);
 void novex_nest_Nova_NestFunctionMap_functionMap_static_Nova_expectTrue(novex_nest_Nova_NestFunctionMap* this, char condition, nova_Nova_String* message);
 void novex_nest_Nova_NestFunctionMap_functionMap_static_Nova_expectFalse(novex_nest_Nova_NestFunctionMap* this, char condition, nova_Nova_String* message);
 void novex_nest_Nova_NestFunctionMap_functionMap_static_Nova_fail(novex_nest_Nova_NestFunctionMap* this, nova_Nova_String* message);
@@ -15036,6 +15040,7 @@ char novex_nest_Double_Nova_Nest1Double_double_String_char_Nova_toBe(novex_nest_
 char novex_nest_Double_Nova_Nest1Double_double_String_char_Nova_toNotBe(novex_nest_Double_Nova_Nest1Double* this, double other, nova_Nova_String* message);
 char novex_nest_Double_Nova_Nest1Double_double_double_String_char_Nova_toBeWithinToleranceOf(novex_nest_Double_Nova_Nest1Double* this, double target, double tolerance, nova_Nova_String* message);
 void novex_nest_Double_Nova_Nest1Double_Object_String_void_static_Nova_expectValue(novex_nest_Double_Nova_Nest1Double* this, nova_Nova_Object* value, nova_Nova_String* message);
+void novex_nest_Double_Nova_Nest1Double_Object_String_void_static_Nova_expectNull(novex_nest_Double_Nova_Nest1Double* this, nova_Nova_Object* value, nova_Nova_String* message);
 void novex_nest_Double_Nova_Nest1Double_char_String_void_static_Nova_expectTrue(novex_nest_Double_Nova_Nest1Double* this, char condition, nova_Nova_String* message);
 void novex_nest_Double_Nova_Nest1Double_char_String_void_static_Nova_expectFalse(novex_nest_Double_Nova_Nest1Double* this, char condition, nova_Nova_String* message);
 void novex_nest_Double_Nova_Nest1Double_String_void_static_Nova_fail(novex_nest_Double_Nova_Nest1Double* this, nova_Nova_String* message);
@@ -15061,6 +15066,7 @@ char novex_nest_Int_Nova_Nest1Int_int_String_char_Nova_toBe(novex_nest_Int_Nova_
 char novex_nest_Int_Nova_Nest1Int_int_String_char_Nova_toNotBe(novex_nest_Int_Nova_Nest1Int* this, int other, nova_Nova_String* message);
 char novex_nest_Int_Nova_Nest1Int_double_double_String_char_Nova_toBeWithinToleranceOf(novex_nest_Int_Nova_Nest1Int* this, double target, double tolerance, nova_Nova_String* message);
 void novex_nest_Int_Nova_Nest1Int_Object_String_void_static_Nova_expectValue(novex_nest_Int_Nova_Nest1Int* this, nova_Nova_Object* value, nova_Nova_String* message);
+void novex_nest_Int_Nova_Nest1Int_Object_String_void_static_Nova_expectNull(novex_nest_Int_Nova_Nest1Int* this, nova_Nova_Object* value, nova_Nova_String* message);
 void novex_nest_Int_Nova_Nest1Int_char_String_void_static_Nova_expectTrue(novex_nest_Int_Nova_Nest1Int* this, char condition, nova_Nova_String* message);
 void novex_nest_Int_Nova_Nest1Int_char_String_void_static_Nova_expectFalse(novex_nest_Int_Nova_Nest1Int* this, char condition, nova_Nova_String* message);
 void novex_nest_Int_Nova_Nest1Int_String_void_static_Nova_fail(novex_nest_Int_Nova_Nest1Int* this, nova_Nova_String* message);
@@ -15086,6 +15092,7 @@ char novex_nest_Char_Nova_Nest1Char_char_String_char_Nova_toBe(novex_nest_Char_N
 char novex_nest_Char_Nova_Nest1Char_char_String_char_Nova_toNotBe(novex_nest_Char_Nova_Nest1Char* this, char other, nova_Nova_String* message);
 char novex_nest_Char_Nova_Nest1Char_double_double_String_char_Nova_toBeWithinToleranceOf(novex_nest_Char_Nova_Nest1Char* this, double target, double tolerance, nova_Nova_String* message);
 void novex_nest_Char_Nova_Nest1Char_Object_String_void_static_Nova_expectValue(novex_nest_Char_Nova_Nest1Char* this, nova_Nova_Object* value, nova_Nova_String* message);
+void novex_nest_Char_Nova_Nest1Char_Object_String_void_static_Nova_expectNull(novex_nest_Char_Nova_Nest1Char* this, nova_Nova_Object* value, nova_Nova_String* message);
 void novex_nest_Char_Nova_Nest1Char_char_String_void_static_Nova_expectTrue(novex_nest_Char_Nova_Nest1Char* this, char condition, nova_Nova_String* message);
 void novex_nest_Char_Nova_Nest1Char_char_String_void_static_Nova_expectFalse(novex_nest_Char_Nova_Nest1Char* this, char condition, nova_Nova_String* message);
 void novex_nest_Char_Nova_Nest1Char_String_void_static_Nova_fail(novex_nest_Char_Nova_Nest1Char* this, nova_Nova_String* message);
@@ -15110,6 +15117,7 @@ void novex_nest_Bool_Nova_Nest1Bool_char_void_Nova_this(novex_nest_Bool_Nova_Nes
 char novex_nest_Bool_Nova_Nest1Bool_char_String_char_Nova_toBe(novex_nest_Bool_Nova_Nest1Bool* this, char other, nova_Nova_String* message);
 char novex_nest_Bool_Nova_Nest1Bool_char_String_char_Nova_toNotBe(novex_nest_Bool_Nova_Nest1Bool* this, char other, nova_Nova_String* message);
 void novex_nest_Bool_Nova_Nest1Bool_Object_String_void_static_Nova_expectValue(novex_nest_Bool_Nova_Nest1Bool* this, nova_Nova_Object* value, nova_Nova_String* message);
+void novex_nest_Bool_Nova_Nest1Bool_Object_String_void_static_Nova_expectNull(novex_nest_Bool_Nova_Nest1Bool* this, nova_Nova_Object* value, nova_Nova_String* message);
 void novex_nest_Bool_Nova_Nest1Bool_char_String_void_static_Nova_expectTrue(novex_nest_Bool_Nova_Nest1Bool* this, char condition, nova_Nova_String* message);
 void novex_nest_Bool_Nova_Nest1Bool_char_String_void_static_Nova_expectFalse(novex_nest_Bool_Nova_Nest1Bool* this, char condition, nova_Nova_String* message);
 void novex_nest_Bool_Nova_Nest1Bool_String_void_static_Nova_fail(novex_nest_Bool_Nova_Nest1Bool* this, nova_Nova_String* message);
@@ -15552,7 +15560,7 @@ CCLASS_CLASS
 	int nova_star_Nova_Panel_Nova_width;
 	int nova_star_Nova_Panel_Nova_height;
 	nova_star_Nova_Color* nova_star_Nova_Panel_Nova_backgroundColor;
-	HWND hwnd;
+	WINDOW_ID_TYPE hwnd;
 	nova_datastruct_list_Nova_Array* nova_star_Nova_Panel_Nova_children;
 	int novex_nest_ui_Nova_ResultBar_Nova_borderSize;
 	int novex_nest_ui_Nova_ResultBar_Nova_testCount;
@@ -15619,10 +15627,10 @@ CCLASS_CLASS
 	int nova_star_Nova_Window_Nova_clientHeight;
 	nova_star_Nova_Frame* frame;
 	nova_Nova_String* title;
-	HWND hwnd;
-	HINSTANCE hinstance;
-	HDC hdc;
-	PAINTSTRUCT ps;
+	WINDOW_ID_TYPE hwnd;
+	MODULE_ID_TYPE hinstance;
+	DEVICE_CONTEXT hdc;
+	PAINT_CONTEXT ps;
 	nova_star_Nova_WindowThread* thread;
 )
 
@@ -18345,13 +18353,16 @@ extern novex_nest_Nova_TestCase* stabilitytest_Nova_FirstClassFunctionStability_
 extern novex_nest_Nova_TestCase* stabilitytest_Nova_FirstClassFunctionStability_Nova__testInlineReturningLambdaWithParametersTestCase;
 extern novex_nest_Nova_TestCase* stabilitytest_Nova_FirstClassFunctionStability_Nova__testInlineReturningLambdaWithParametersAndTypeTestCase;
 extern novex_nest_Nova_TestCase* stabilitytest_Nova_FirstClassFunctionStability_Nova__testInlineReturningLambdaWithParametersAndTypeWithBodyTestCase;
+extern novex_nest_Nova_TestCase* stabilitytest_Nova_FirstClassFunctionStability_Nova__testImplicitNullFunctionReferenceTestCase;
+extern novex_nest_Nova_TestCase* stabilitytest_Nova_FirstClassFunctionStability_Nova__testExplicitNullFunctionReferenceTestCase;
+extern novex_nest_Nova_TestCase* stabilitytest_Nova_FirstClassFunctionStability_Nova__testNonNullFunctionReferenceTestCase;
 extern novex_nest_Nova_TestRunnerModel* stabilitytest_Nova_FirstClassFunctionStability_Nova__runTestsTestRunner;
 
 extern char stabilitytest_Nova_FirstClassFunctionStability_Nova_init_static_inited;
 void stabilitytest_Nova_FirstClassFunctionStability_Nova_init_static();
 stabilitytest_Nova_FirstClassFunctionStability* stabilitytest_Nova_FirstClassFunctionStability_Nova_construct(stabilitytest_Nova_FirstClassFunctionStability* this);
 void stabilitytest_Nova_FirstClassFunctionStability_Nova_destroy(stabilitytest_Nova_FirstClassFunctionStability** this);
-void stabilitytest_Nova_FirstClassFunctionStability_Nova_runTests(stabilitytest_Nova_FirstClassFunctionStability* this, stabilitytest_Nova_FirstClassFunctionStability_closure1405_Nova_onResult stabilitytest_Nova_FirstClassFunctionStability_Nova_onResult, void* stabilitytest_Nova_FirstClassFunctionStability_ref_Nova_onResult, void* stabilitytest_Nova_FirstClassFunctionStability_context_Nova_onResult, nova_io_Nova_OutputStream* out);
+void stabilitytest_Nova_FirstClassFunctionStability_Nova_runTests(stabilitytest_Nova_FirstClassFunctionStability* this, stabilitytest_Nova_FirstClassFunctionStability_closure1416_Nova_onResult stabilitytest_Nova_FirstClassFunctionStability_Nova_onResult, void* stabilitytest_Nova_FirstClassFunctionStability_ref_Nova_onResult, void* stabilitytest_Nova_FirstClassFunctionStability_context_Nova_onResult, nova_io_Nova_OutputStream* out);
 void stabilitytest_Nova_FirstClassFunctionStability_Nova_this(stabilitytest_Nova_FirstClassFunctionStability* this);
 novex_nest_Nova_TestRunnerModel* stabilitytest_Nova_FirstClassFunctionStability_Accessorfunc_Nova_model(stabilitytest_Nova_FirstClassFunctionStability* this);
 void stabilitytest_Nova_FirstClassFunctionStability_Nova_super(stabilitytest_Nova_FirstClassFunctionStability* this);
@@ -18371,7 +18382,7 @@ stabilitytest_Nova_FirstClassFunctionStabilityFunctionMap* stabilitytest_Nova_Fi
 void stabilitytest_Nova_FirstClassFunctionStabilityFunctionMap_Nova_destroy(stabilitytest_Nova_FirstClassFunctionStabilityFunctionMap** this);
 void stabilitytest_Nova_FirstClassFunctionStabilityFunctionMap_Nova_this(stabilitytest_Nova_FirstClassFunctionStabilityFunctionMap* this);
 stabilitytest_Nova_FirstClassFunctionStability* stabilitytest_Nova_FirstClassFunctionStabilityFunctionMap_functionMapFirstClassFunctionStabilityFunctionMap_Nova_construct(stabilitytest_Nova_FirstClassFunctionStabilityFunctionMap* this);
-void stabilitytest_Nova_FirstClassFunctionStabilityFunctionMap_functionMap_Nova_runTests(stabilitytest_Nova_FirstClassFunctionStabilityFunctionMap* this, stabilitytest_Nova_FirstClassFunctionStability* reference, stabilitytest_Nova_FirstClassFunctionStabilityFunctionMap_closure1511_Nova_onResult stabilitytest_Nova_FirstClassFunctionStabilityFunctionMap_Nova_onResult, void* stabilitytest_Nova_FirstClassFunctionStabilityFunctionMap_ref_Nova_onResult, void* stabilitytest_Nova_FirstClassFunctionStabilityFunctionMap_context_Nova_onResult, nova_io_Nova_OutputStream* out);
+void stabilitytest_Nova_FirstClassFunctionStabilityFunctionMap_functionMap_Nova_runTests(stabilitytest_Nova_FirstClassFunctionStabilityFunctionMap* this, stabilitytest_Nova_FirstClassFunctionStability* reference, stabilitytest_Nova_FirstClassFunctionStabilityFunctionMap_closure1522_Nova_onResult stabilitytest_Nova_FirstClassFunctionStabilityFunctionMap_Nova_onResult, void* stabilitytest_Nova_FirstClassFunctionStabilityFunctionMap_ref_Nova_onResult, void* stabilitytest_Nova_FirstClassFunctionStabilityFunctionMap_context_Nova_onResult, nova_io_Nova_OutputStream* out);
 void stabilitytest_Nova_FirstClassFunctionStabilityFunctionMap_Nova_super(stabilitytest_Nova_FirstClassFunctionStabilityFunctionMap* this);
 
 CCLASS_CLASS
@@ -18411,6 +18422,9 @@ novex_nest_Nova_TestCase* stabilitytest_Nova_FirstClassFunctionStabilityProperty
 novex_nest_Nova_TestCase* stabilitytest_Nova_FirstClassFunctionStabilityPropertyMap_functionMap_static_Nova__testInlineReturningLambdaWithParametersTestCase(stabilitytest_Nova_FirstClassFunctionStabilityPropertyMap* this);
 novex_nest_Nova_TestCase* stabilitytest_Nova_FirstClassFunctionStabilityPropertyMap_functionMap_static_Nova__testInlineReturningLambdaWithParametersAndTypeTestCase(stabilitytest_Nova_FirstClassFunctionStabilityPropertyMap* this);
 novex_nest_Nova_TestCase* stabilitytest_Nova_FirstClassFunctionStabilityPropertyMap_functionMap_static_Nova__testInlineReturningLambdaWithParametersAndTypeWithBodyTestCase(stabilitytest_Nova_FirstClassFunctionStabilityPropertyMap* this);
+novex_nest_Nova_TestCase* stabilitytest_Nova_FirstClassFunctionStabilityPropertyMap_functionMap_static_Nova__testImplicitNullFunctionReferenceTestCase(stabilitytest_Nova_FirstClassFunctionStabilityPropertyMap* this);
+novex_nest_Nova_TestCase* stabilitytest_Nova_FirstClassFunctionStabilityPropertyMap_functionMap_static_Nova__testExplicitNullFunctionReferenceTestCase(stabilitytest_Nova_FirstClassFunctionStabilityPropertyMap* this);
+novex_nest_Nova_TestCase* stabilitytest_Nova_FirstClassFunctionStabilityPropertyMap_functionMap_static_Nova__testNonNullFunctionReferenceTestCase(stabilitytest_Nova_FirstClassFunctionStabilityPropertyMap* this);
 novex_nest_Nova_TestRunnerModel* stabilitytest_Nova_FirstClassFunctionStabilityPropertyMap_functionMap_static_Nova__runTestsTestRunner(stabilitytest_Nova_FirstClassFunctionStabilityPropertyMap* this);
 void stabilitytest_Nova_FirstClassFunctionStabilityPropertyMap_Nova_super(stabilitytest_Nova_FirstClassFunctionStabilityPropertyMap* this);
 CCLASS_CLASS
@@ -18430,7 +18444,7 @@ void stabilitytest_Nova_InnerClassStability_Nova_init_static();
 stabilitytest_Nova_InnerClassStability* stabilitytest_Nova_InnerClassStability_Nova_construct(stabilitytest_Nova_InnerClassStability* this);
 void stabilitytest_Nova_InnerClassStability_Nova_destroy(stabilitytest_Nova_InnerClassStability** this);
 void stabilitytest_Nova_InnerClassStability_Nova_test(stabilitytest_Nova_InnerClassStability* this, nova_io_Nova_OutputStream* out);
-void stabilitytest_Nova_InnerClassStability_Nova_runTests(stabilitytest_Nova_InnerClassStability* this, stabilitytest_Nova_InnerClassStability_closure1512_Nova_onResult stabilitytest_Nova_InnerClassStability_Nova_onResult, void* stabilitytest_Nova_InnerClassStability_ref_Nova_onResult, void* stabilitytest_Nova_InnerClassStability_context_Nova_onResult, nova_io_Nova_OutputStream* out);
+void stabilitytest_Nova_InnerClassStability_Nova_runTests(stabilitytest_Nova_InnerClassStability* this, stabilitytest_Nova_InnerClassStability_closure1523_Nova_onResult stabilitytest_Nova_InnerClassStability_Nova_onResult, void* stabilitytest_Nova_InnerClassStability_ref_Nova_onResult, void* stabilitytest_Nova_InnerClassStability_context_Nova_onResult, nova_io_Nova_OutputStream* out);
 void stabilitytest_Nova_InnerClassStability_Nova_this(stabilitytest_Nova_InnerClassStability* this);
 novex_nest_Nova_TestRunnerModel* stabilitytest_Nova_InnerClassStability_Accessorfunc_Nova_model(stabilitytest_Nova_InnerClassStability* this);
 void stabilitytest_Nova_InnerClassStability_Nova_super(stabilitytest_Nova_InnerClassStability* this);
@@ -18468,7 +18482,7 @@ void stabilitytest_Nova_InnerClassStabilityFunctionMap_Nova_destroy(stabilitytes
 void stabilitytest_Nova_InnerClassStabilityFunctionMap_Nova_this(stabilitytest_Nova_InnerClassStabilityFunctionMap* this);
 stabilitytest_Nova_InnerClassStability* stabilitytest_Nova_InnerClassStabilityFunctionMap_functionMapInnerClassStabilityFunctionMap_Nova_construct(stabilitytest_Nova_InnerClassStabilityFunctionMap* this);
 void stabilitytest_Nova_InnerClassStabilityFunctionMap_functionMap_Nova_test(stabilitytest_Nova_InnerClassStabilityFunctionMap* this, stabilitytest_Nova_InnerClassStability* reference, nova_io_Nova_OutputStream* out);
-void stabilitytest_Nova_InnerClassStabilityFunctionMap_functionMap_Nova_runTests(stabilitytest_Nova_InnerClassStabilityFunctionMap* this, stabilitytest_Nova_InnerClassStability* reference, stabilitytest_Nova_InnerClassStabilityFunctionMap_closure1513_Nova_onResult stabilitytest_Nova_InnerClassStabilityFunctionMap_Nova_onResult, void* stabilitytest_Nova_InnerClassStabilityFunctionMap_ref_Nova_onResult, void* stabilitytest_Nova_InnerClassStabilityFunctionMap_context_Nova_onResult, nova_io_Nova_OutputStream* out);
+void stabilitytest_Nova_InnerClassStabilityFunctionMap_functionMap_Nova_runTests(stabilitytest_Nova_InnerClassStabilityFunctionMap* this, stabilitytest_Nova_InnerClassStability* reference, stabilitytest_Nova_InnerClassStabilityFunctionMap_closure1524_Nova_onResult stabilitytest_Nova_InnerClassStabilityFunctionMap_Nova_onResult, void* stabilitytest_Nova_InnerClassStabilityFunctionMap_ref_Nova_onResult, void* stabilitytest_Nova_InnerClassStabilityFunctionMap_context_Nova_onResult, nova_io_Nova_OutputStream* out);
 void stabilitytest_Nova_InnerClassStabilityFunctionMap_Nova_super(stabilitytest_Nova_InnerClassStabilityFunctionMap* this);
 
 CCLASS_CLASS
@@ -18590,7 +18604,7 @@ extern char stabilitytest_Nova_LambdaStability_Nova_init_static_inited;
 void stabilitytest_Nova_LambdaStability_Nova_init_static();
 stabilitytest_Nova_LambdaStability* stabilitytest_Nova_LambdaStability_Nova_construct(stabilitytest_Nova_LambdaStability* this);
 void stabilitytest_Nova_LambdaStability_Nova_destroy(stabilitytest_Nova_LambdaStability** this);
-void stabilitytest_Nova_LambdaStability_Nova_runTests(stabilitytest_Nova_LambdaStability* this, stabilitytest_Nova_LambdaStability_closure1514_Nova_onResult stabilitytest_Nova_LambdaStability_Nova_onResult, void* stabilitytest_Nova_LambdaStability_ref_Nova_onResult, void* stabilitytest_Nova_LambdaStability_context_Nova_onResult, nova_io_Nova_OutputStream* out);
+void stabilitytest_Nova_LambdaStability_Nova_runTests(stabilitytest_Nova_LambdaStability* this, stabilitytest_Nova_LambdaStability_closure1525_Nova_onResult stabilitytest_Nova_LambdaStability_Nova_onResult, void* stabilitytest_Nova_LambdaStability_ref_Nova_onResult, void* stabilitytest_Nova_LambdaStability_context_Nova_onResult, nova_io_Nova_OutputStream* out);
 void stabilitytest_Nova_LambdaStability_Nova_this(stabilitytest_Nova_LambdaStability* this);
 novex_nest_Nova_TestRunnerModel* stabilitytest_Nova_LambdaStability_Accessorfunc_Nova_model(stabilitytest_Nova_LambdaStability* this);
 void stabilitytest_Nova_LambdaStability_Nova_super(stabilitytest_Nova_LambdaStability* this);
@@ -18610,7 +18624,7 @@ stabilitytest_Nova_LambdaStabilityFunctionMap* stabilitytest_Nova_LambdaStabilit
 void stabilitytest_Nova_LambdaStabilityFunctionMap_Nova_destroy(stabilitytest_Nova_LambdaStabilityFunctionMap** this);
 void stabilitytest_Nova_LambdaStabilityFunctionMap_Nova_this(stabilitytest_Nova_LambdaStabilityFunctionMap* this);
 stabilitytest_Nova_LambdaStability* stabilitytest_Nova_LambdaStabilityFunctionMap_functionMapLambdaStabilityFunctionMap_Nova_construct(stabilitytest_Nova_LambdaStabilityFunctionMap* this);
-void stabilitytest_Nova_LambdaStabilityFunctionMap_functionMap_Nova_runTests(stabilitytest_Nova_LambdaStabilityFunctionMap* this, stabilitytest_Nova_LambdaStability* reference, stabilitytest_Nova_LambdaStabilityFunctionMap_closure1515_Nova_onResult stabilitytest_Nova_LambdaStabilityFunctionMap_Nova_onResult, void* stabilitytest_Nova_LambdaStabilityFunctionMap_ref_Nova_onResult, void* stabilitytest_Nova_LambdaStabilityFunctionMap_context_Nova_onResult, nova_io_Nova_OutputStream* out);
+void stabilitytest_Nova_LambdaStabilityFunctionMap_functionMap_Nova_runTests(stabilitytest_Nova_LambdaStabilityFunctionMap* this, stabilitytest_Nova_LambdaStability* reference, stabilitytest_Nova_LambdaStabilityFunctionMap_closure1526_Nova_onResult stabilitytest_Nova_LambdaStabilityFunctionMap_Nova_onResult, void* stabilitytest_Nova_LambdaStabilityFunctionMap_ref_Nova_onResult, void* stabilitytest_Nova_LambdaStabilityFunctionMap_context_Nova_onResult, nova_io_Nova_OutputStream* out);
 void stabilitytest_Nova_LambdaStabilityFunctionMap_Nova_super(stabilitytest_Nova_LambdaStabilityFunctionMap* this);
 
 CCLASS_CLASS
@@ -18633,6 +18647,67 @@ novex_nest_Nova_TestRunnerModel* stabilitytest_Nova_LambdaStabilityPropertyMap_f
 void stabilitytest_Nova_LambdaStabilityPropertyMap_Nova_super(stabilitytest_Nova_LambdaStabilityPropertyMap* this);
 CCLASS_CLASS
 (
+	stabilitytest_Nova_LibraryLoadingStability, 
+	
+	stabilitytest_Nova_LibraryLoadingStability_VTable* vtable;
+	struct Private_stabilitytest_Nova_LibraryLoadingStability* prv;
+	nova_Nova_String* nova_Nova_Object_Nova_hashCode;
+	novex_nest_Nova_TestRunnerModel* stabilitytest_Nova_LibraryLoadingStability_Nova_model;
+)
+extern novex_nest_Nova_TestCase* stabilitytest_Nova_LibraryLoadingStability_Nova__getStaticFunctionTestCase;
+extern novex_nest_Nova_TestCase* stabilitytest_Nova_LibraryLoadingStability_Nova__callStaticFunctionTestCase;
+extern novex_nest_Nova_TestCase* stabilitytest_Nova_LibraryLoadingStability_Nova__nonExistentFunctionTestCase;
+extern novex_nest_Nova_TestRunnerModel* stabilitytest_Nova_LibraryLoadingStability_Nova__runTestsTestRunner;
+
+extern char stabilitytest_Nova_LibraryLoadingStability_Nova_init_static_inited;
+void stabilitytest_Nova_LibraryLoadingStability_Nova_init_static();
+stabilitytest_Nova_LibraryLoadingStability* stabilitytest_Nova_LibraryLoadingStability_Nova_construct(stabilitytest_Nova_LibraryLoadingStability* this);
+void stabilitytest_Nova_LibraryLoadingStability_Nova_destroy(stabilitytest_Nova_LibraryLoadingStability** this);
+void stabilitytest_Nova_LibraryLoadingStability_Nova_runTests(stabilitytest_Nova_LibraryLoadingStability* this, stabilitytest_Nova_LibraryLoadingStability_closure1558_Nova_onResult stabilitytest_Nova_LibraryLoadingStability_Nova_onResult, void* stabilitytest_Nova_LibraryLoadingStability_ref_Nova_onResult, void* stabilitytest_Nova_LibraryLoadingStability_context_Nova_onResult, nova_io_Nova_OutputStream* out);
+void stabilitytest_Nova_LibraryLoadingStability_Nova_this(stabilitytest_Nova_LibraryLoadingStability* this);
+novex_nest_Nova_TestRunnerModel* stabilitytest_Nova_LibraryLoadingStability_Accessorfunc_Nova_model(stabilitytest_Nova_LibraryLoadingStability* this);
+void stabilitytest_Nova_LibraryLoadingStability_Nova_super(stabilitytest_Nova_LibraryLoadingStability* this);
+
+CCLASS_CLASS
+(
+	stabilitytest_Nova_LibraryLoadingStabilityFunctionMap, 
+	
+	stabilitytest_Nova_LibraryLoadingStabilityFunctionMap_VTable* vtable;
+	void* prv;
+	nova_Nova_String* nova_Nova_Object_Nova_hashCode;
+)
+
+extern char stabilitytest_Nova_LibraryLoadingStabilityFunctionMap_Nova_init_static_inited;
+void stabilitytest_Nova_LibraryLoadingStabilityFunctionMap_Nova_init_static();
+stabilitytest_Nova_LibraryLoadingStabilityFunctionMap* stabilitytest_Nova_LibraryLoadingStabilityFunctionMap_Nova_construct(stabilitytest_Nova_LibraryLoadingStabilityFunctionMap* this);
+void stabilitytest_Nova_LibraryLoadingStabilityFunctionMap_Nova_destroy(stabilitytest_Nova_LibraryLoadingStabilityFunctionMap** this);
+void stabilitytest_Nova_LibraryLoadingStabilityFunctionMap_Nova_this(stabilitytest_Nova_LibraryLoadingStabilityFunctionMap* this);
+stabilitytest_Nova_LibraryLoadingStability* stabilitytest_Nova_LibraryLoadingStabilityFunctionMap_functionMapLibraryLoadingStabilityFunctionMap_Nova_construct(stabilitytest_Nova_LibraryLoadingStabilityFunctionMap* this);
+void stabilitytest_Nova_LibraryLoadingStabilityFunctionMap_functionMap_Nova_runTests(stabilitytest_Nova_LibraryLoadingStabilityFunctionMap* this, stabilitytest_Nova_LibraryLoadingStability* reference, stabilitytest_Nova_LibraryLoadingStabilityFunctionMap_closure1562_Nova_onResult stabilitytest_Nova_LibraryLoadingStabilityFunctionMap_Nova_onResult, void* stabilitytest_Nova_LibraryLoadingStabilityFunctionMap_ref_Nova_onResult, void* stabilitytest_Nova_LibraryLoadingStabilityFunctionMap_context_Nova_onResult, nova_io_Nova_OutputStream* out);
+void stabilitytest_Nova_LibraryLoadingStabilityFunctionMap_Nova_super(stabilitytest_Nova_LibraryLoadingStabilityFunctionMap* this);
+
+CCLASS_CLASS
+(
+	stabilitytest_Nova_LibraryLoadingStabilityPropertyMap, 
+	
+	stabilitytest_Nova_LibraryLoadingStabilityPropertyMap_VTable* vtable;
+	void* prv;
+	nova_Nova_String* nova_Nova_Object_Nova_hashCode;
+)
+
+extern char stabilitytest_Nova_LibraryLoadingStabilityPropertyMap_Nova_init_static_inited;
+void stabilitytest_Nova_LibraryLoadingStabilityPropertyMap_Nova_init_static();
+stabilitytest_Nova_LibraryLoadingStabilityPropertyMap* stabilitytest_Nova_LibraryLoadingStabilityPropertyMap_Nova_construct(stabilitytest_Nova_LibraryLoadingStabilityPropertyMap* this);
+void stabilitytest_Nova_LibraryLoadingStabilityPropertyMap_Nova_destroy(stabilitytest_Nova_LibraryLoadingStabilityPropertyMap** this);
+void stabilitytest_Nova_LibraryLoadingStabilityPropertyMap_Nova_this(stabilitytest_Nova_LibraryLoadingStabilityPropertyMap* this);
+novex_nest_Nova_TestRunnerModel* stabilitytest_Nova_LibraryLoadingStabilityPropertyMap_functionMap_Nova_model(stabilitytest_Nova_LibraryLoadingStabilityPropertyMap* this, stabilitytest_Nova_LibraryLoadingStability* reference);
+novex_nest_Nova_TestCase* stabilitytest_Nova_LibraryLoadingStabilityPropertyMap_functionMap_static_Nova__getStaticFunctionTestCase(stabilitytest_Nova_LibraryLoadingStabilityPropertyMap* this);
+novex_nest_Nova_TestCase* stabilitytest_Nova_LibraryLoadingStabilityPropertyMap_functionMap_static_Nova__callStaticFunctionTestCase(stabilitytest_Nova_LibraryLoadingStabilityPropertyMap* this);
+novex_nest_Nova_TestCase* stabilitytest_Nova_LibraryLoadingStabilityPropertyMap_functionMap_static_Nova__nonExistentFunctionTestCase(stabilitytest_Nova_LibraryLoadingStabilityPropertyMap* this);
+novex_nest_Nova_TestRunnerModel* stabilitytest_Nova_LibraryLoadingStabilityPropertyMap_functionMap_static_Nova__runTestsTestRunner(stabilitytest_Nova_LibraryLoadingStabilityPropertyMap* this);
+void stabilitytest_Nova_LibraryLoadingStabilityPropertyMap_Nova_super(stabilitytest_Nova_LibraryLoadingStabilityPropertyMap* this);
+CCLASS_CLASS
+(
 	stabilitytest_Nova_NetworkStability, 
 	
 	stabilitytest_Nova_NetworkStability_VTable* vtable;
@@ -18651,7 +18726,7 @@ void stabilitytest_Nova_NetworkStability_Nova_init_static();
 stabilitytest_Nova_NetworkStability* stabilitytest_Nova_NetworkStability_Nova_construct(stabilitytest_Nova_NetworkStability* this);
 void stabilitytest_Nova_NetworkStability_Nova_destroy(stabilitytest_Nova_NetworkStability** this);
 void stabilitytest_Nova_NetworkStability_Nova_test(stabilitytest_Nova_NetworkStability* this, nova_io_Nova_OutputStream* out);
-void stabilitytest_Nova_NetworkStability_Nova_runTests(stabilitytest_Nova_NetworkStability* this, stabilitytest_Nova_NetworkStability_closure1516_Nova_onResult stabilitytest_Nova_NetworkStability_Nova_onResult, void* stabilitytest_Nova_NetworkStability_ref_Nova_onResult, void* stabilitytest_Nova_NetworkStability_context_Nova_onResult, nova_io_Nova_OutputStream* out);
+void stabilitytest_Nova_NetworkStability_Nova_runTests(stabilitytest_Nova_NetworkStability* this, stabilitytest_Nova_NetworkStability_closure1563_Nova_onResult stabilitytest_Nova_NetworkStability_Nova_onResult, void* stabilitytest_Nova_NetworkStability_ref_Nova_onResult, void* stabilitytest_Nova_NetworkStability_context_Nova_onResult, nova_io_Nova_OutputStream* out);
 void stabilitytest_Nova_NetworkStability_Nova_this(stabilitytest_Nova_NetworkStability* this);
 novex_nest_Nova_TestRunnerModel* stabilitytest_Nova_NetworkStability_Accessorfunc_Nova_model(stabilitytest_Nova_NetworkStability* this);
 void stabilitytest_Nova_NetworkStability_Nova_super(stabilitytest_Nova_NetworkStability* this);
@@ -18672,7 +18747,7 @@ void stabilitytest_Nova_NetworkStabilityFunctionMap_Nova_destroy(stabilitytest_N
 void stabilitytest_Nova_NetworkStabilityFunctionMap_Nova_this(stabilitytest_Nova_NetworkStabilityFunctionMap* this);
 stabilitytest_Nova_NetworkStability* stabilitytest_Nova_NetworkStabilityFunctionMap_functionMapNetworkStabilityFunctionMap_Nova_construct(stabilitytest_Nova_NetworkStabilityFunctionMap* this);
 void stabilitytest_Nova_NetworkStabilityFunctionMap_functionMap_Nova_test(stabilitytest_Nova_NetworkStabilityFunctionMap* this, stabilitytest_Nova_NetworkStability* reference, nova_io_Nova_OutputStream* out);
-void stabilitytest_Nova_NetworkStabilityFunctionMap_functionMap_Nova_runTests(stabilitytest_Nova_NetworkStabilityFunctionMap* this, stabilitytest_Nova_NetworkStability* reference, stabilitytest_Nova_NetworkStabilityFunctionMap_closure1517_Nova_onResult stabilitytest_Nova_NetworkStabilityFunctionMap_Nova_onResult, void* stabilitytest_Nova_NetworkStabilityFunctionMap_ref_Nova_onResult, void* stabilitytest_Nova_NetworkStabilityFunctionMap_context_Nova_onResult, nova_io_Nova_OutputStream* out);
+void stabilitytest_Nova_NetworkStabilityFunctionMap_functionMap_Nova_runTests(stabilitytest_Nova_NetworkStabilityFunctionMap* this, stabilitytest_Nova_NetworkStability* reference, stabilitytest_Nova_NetworkStabilityFunctionMap_closure1564_Nova_onResult stabilitytest_Nova_NetworkStabilityFunctionMap_Nova_onResult, void* stabilitytest_Nova_NetworkStabilityFunctionMap_ref_Nova_onResult, void* stabilitytest_Nova_NetworkStabilityFunctionMap_context_Nova_onResult, nova_io_Nova_OutputStream* out);
 void stabilitytest_Nova_NetworkStabilityFunctionMap_Nova_super(stabilitytest_Nova_NetworkStabilityFunctionMap* this);
 
 CCLASS_CLASS
@@ -18878,7 +18953,7 @@ extern char stabilitytest_Nova_PolymorphismStability_Nova_init_static_inited;
 void stabilitytest_Nova_PolymorphismStability_Nova_init_static();
 stabilitytest_Nova_PolymorphismStability* stabilitytest_Nova_PolymorphismStability_Nova_construct(stabilitytest_Nova_PolymorphismStability* this);
 void stabilitytest_Nova_PolymorphismStability_Nova_destroy(stabilitytest_Nova_PolymorphismStability** this);
-void stabilitytest_Nova_PolymorphismStability_Nova_runTests(stabilitytest_Nova_PolymorphismStability* this, stabilitytest_Nova_PolymorphismStability_closure1519_Nova_onResult stabilitytest_Nova_PolymorphismStability_Nova_onResult, void* stabilitytest_Nova_PolymorphismStability_ref_Nova_onResult, void* stabilitytest_Nova_PolymorphismStability_context_Nova_onResult, nova_io_Nova_OutputStream* out);
+void stabilitytest_Nova_PolymorphismStability_Nova_runTests(stabilitytest_Nova_PolymorphismStability* this, stabilitytest_Nova_PolymorphismStability_closure1566_Nova_onResult stabilitytest_Nova_PolymorphismStability_Nova_onResult, void* stabilitytest_Nova_PolymorphismStability_ref_Nova_onResult, void* stabilitytest_Nova_PolymorphismStability_context_Nova_onResult, nova_io_Nova_OutputStream* out);
 void stabilitytest_Nova_PolymorphismStability_Nova_this(stabilitytest_Nova_PolymorphismStability* this);
 novex_nest_Nova_TestRunnerModel* stabilitytest_Nova_PolymorphismStability_Accessorfunc_Nova_model(stabilitytest_Nova_PolymorphismStability* this);
 void stabilitytest_Nova_PolymorphismStability_Nova_super(stabilitytest_Nova_PolymorphismStability* this);
@@ -18898,7 +18973,7 @@ stabilitytest_Nova_PolymorphismStabilityFunctionMap* stabilitytest_Nova_Polymorp
 void stabilitytest_Nova_PolymorphismStabilityFunctionMap_Nova_destroy(stabilitytest_Nova_PolymorphismStabilityFunctionMap** this);
 void stabilitytest_Nova_PolymorphismStabilityFunctionMap_Nova_this(stabilitytest_Nova_PolymorphismStabilityFunctionMap* this);
 stabilitytest_Nova_PolymorphismStability* stabilitytest_Nova_PolymorphismStabilityFunctionMap_functionMapPolymorphismStabilityFunctionMap_Nova_construct(stabilitytest_Nova_PolymorphismStabilityFunctionMap* this);
-void stabilitytest_Nova_PolymorphismStabilityFunctionMap_functionMap_Nova_runTests(stabilitytest_Nova_PolymorphismStabilityFunctionMap* this, stabilitytest_Nova_PolymorphismStability* reference, stabilitytest_Nova_PolymorphismStabilityFunctionMap_closure1523_Nova_onResult stabilitytest_Nova_PolymorphismStabilityFunctionMap_Nova_onResult, void* stabilitytest_Nova_PolymorphismStabilityFunctionMap_ref_Nova_onResult, void* stabilitytest_Nova_PolymorphismStabilityFunctionMap_context_Nova_onResult, nova_io_Nova_OutputStream* out);
+void stabilitytest_Nova_PolymorphismStabilityFunctionMap_functionMap_Nova_runTests(stabilitytest_Nova_PolymorphismStabilityFunctionMap* this, stabilitytest_Nova_PolymorphismStability* reference, stabilitytest_Nova_PolymorphismStabilityFunctionMap_closure1570_Nova_onResult stabilitytest_Nova_PolymorphismStabilityFunctionMap_Nova_onResult, void* stabilitytest_Nova_PolymorphismStabilityFunctionMap_ref_Nova_onResult, void* stabilitytest_Nova_PolymorphismStabilityFunctionMap_context_Nova_onResult, nova_io_Nova_OutputStream* out);
 void stabilitytest_Nova_PolymorphismStabilityFunctionMap_Nova_super(stabilitytest_Nova_PolymorphismStabilityFunctionMap* this);
 
 CCLASS_CLASS
@@ -18941,7 +19016,7 @@ void stabilitytest_Nova_PrimitiveOverloadStability_Nova_init_static();
 stabilitytest_Nova_PrimitiveOverloadStability* stabilitytest_Nova_PrimitiveOverloadStability_Nova_construct(stabilitytest_Nova_PrimitiveOverloadStability* this);
 void stabilitytest_Nova_PrimitiveOverloadStability_Nova_destroy(stabilitytest_Nova_PrimitiveOverloadStability** this);
 void stabilitytest_Nova_PrimitiveOverloadStability_Nova_test(stabilitytest_Nova_PrimitiveOverloadStability* this, nova_io_Nova_OutputStream* out);
-void stabilitytest_Nova_PrimitiveOverloadStability_Nova_runTests(stabilitytest_Nova_PrimitiveOverloadStability* this, stabilitytest_Nova_PrimitiveOverloadStability_closure1524_Nova_onResult stabilitytest_Nova_PrimitiveOverloadStability_Nova_onResult, void* stabilitytest_Nova_PrimitiveOverloadStability_ref_Nova_onResult, void* stabilitytest_Nova_PrimitiveOverloadStability_context_Nova_onResult, nova_io_Nova_OutputStream* out);
+void stabilitytest_Nova_PrimitiveOverloadStability_Nova_runTests(stabilitytest_Nova_PrimitiveOverloadStability* this, stabilitytest_Nova_PrimitiveOverloadStability_closure1571_Nova_onResult stabilitytest_Nova_PrimitiveOverloadStability_Nova_onResult, void* stabilitytest_Nova_PrimitiveOverloadStability_ref_Nova_onResult, void* stabilitytest_Nova_PrimitiveOverloadStability_context_Nova_onResult, nova_io_Nova_OutputStream* out);
 void stabilitytest_Nova_PrimitiveOverloadStability_Nova_this(stabilitytest_Nova_PrimitiveOverloadStability* this);
 novex_nest_Nova_TestRunnerModel* stabilitytest_Nova_PrimitiveOverloadStability_Accessorfunc_Nova_model(stabilitytest_Nova_PrimitiveOverloadStability* this);
 void stabilitytest_Nova_PrimitiveOverloadStability_Nova_super(stabilitytest_Nova_PrimitiveOverloadStability* this);
@@ -18962,7 +19037,7 @@ void stabilitytest_Nova_PrimitiveOverloadStabilityFunctionMap_Nova_destroy(stabi
 void stabilitytest_Nova_PrimitiveOverloadStabilityFunctionMap_Nova_this(stabilitytest_Nova_PrimitiveOverloadStabilityFunctionMap* this);
 stabilitytest_Nova_PrimitiveOverloadStability* stabilitytest_Nova_PrimitiveOverloadStabilityFunctionMap_functionMapPrimitiveOverloadStabilityFunctionMap_Nova_construct(stabilitytest_Nova_PrimitiveOverloadStabilityFunctionMap* this);
 void stabilitytest_Nova_PrimitiveOverloadStabilityFunctionMap_functionMap_Nova_test(stabilitytest_Nova_PrimitiveOverloadStabilityFunctionMap* this, stabilitytest_Nova_PrimitiveOverloadStability* reference, nova_io_Nova_OutputStream* out);
-void stabilitytest_Nova_PrimitiveOverloadStabilityFunctionMap_functionMap_Nova_runTests(stabilitytest_Nova_PrimitiveOverloadStabilityFunctionMap* this, stabilitytest_Nova_PrimitiveOverloadStability* reference, stabilitytest_Nova_PrimitiveOverloadStabilityFunctionMap_closure1525_Nova_onResult stabilitytest_Nova_PrimitiveOverloadStabilityFunctionMap_Nova_onResult, void* stabilitytest_Nova_PrimitiveOverloadStabilityFunctionMap_ref_Nova_onResult, void* stabilitytest_Nova_PrimitiveOverloadStabilityFunctionMap_context_Nova_onResult, nova_io_Nova_OutputStream* out);
+void stabilitytest_Nova_PrimitiveOverloadStabilityFunctionMap_functionMap_Nova_runTests(stabilitytest_Nova_PrimitiveOverloadStabilityFunctionMap* this, stabilitytest_Nova_PrimitiveOverloadStability* reference, stabilitytest_Nova_PrimitiveOverloadStabilityFunctionMap_closure1572_Nova_onResult stabilitytest_Nova_PrimitiveOverloadStabilityFunctionMap_Nova_onResult, void* stabilitytest_Nova_PrimitiveOverloadStabilityFunctionMap_ref_Nova_onResult, void* stabilitytest_Nova_PrimitiveOverloadStabilityFunctionMap_context_Nova_onResult, nova_io_Nova_OutputStream* out);
 void stabilitytest_Nova_PrimitiveOverloadStabilityFunctionMap_Nova_super(stabilitytest_Nova_PrimitiveOverloadStabilityFunctionMap* this);
 
 CCLASS_CLASS
@@ -19002,7 +19077,7 @@ extern char stabilitytest_Nova_RegexStability_Nova_init_static_inited;
 void stabilitytest_Nova_RegexStability_Nova_init_static();
 stabilitytest_Nova_RegexStability* stabilitytest_Nova_RegexStability_Nova_construct(stabilitytest_Nova_RegexStability* this);
 void stabilitytest_Nova_RegexStability_Nova_destroy(stabilitytest_Nova_RegexStability** this);
-void stabilitytest_Nova_RegexStability_Nova_runTests(stabilitytest_Nova_RegexStability* this, stabilitytest_Nova_RegexStability_closure1526_Nova_onResult stabilitytest_Nova_RegexStability_Nova_onResult, void* stabilitytest_Nova_RegexStability_ref_Nova_onResult, void* stabilitytest_Nova_RegexStability_context_Nova_onResult, nova_io_Nova_OutputStream* out);
+void stabilitytest_Nova_RegexStability_Nova_runTests(stabilitytest_Nova_RegexStability* this, stabilitytest_Nova_RegexStability_closure1573_Nova_onResult stabilitytest_Nova_RegexStability_Nova_onResult, void* stabilitytest_Nova_RegexStability_ref_Nova_onResult, void* stabilitytest_Nova_RegexStability_context_Nova_onResult, nova_io_Nova_OutputStream* out);
 void stabilitytest_Nova_RegexStability_Nova_this(stabilitytest_Nova_RegexStability* this);
 novex_nest_Nova_TestRunnerModel* stabilitytest_Nova_RegexStability_Accessorfunc_Nova_model(stabilitytest_Nova_RegexStability* this);
 void stabilitytest_Nova_RegexStability_Nova_super(stabilitytest_Nova_RegexStability* this);
@@ -19022,7 +19097,7 @@ stabilitytest_Nova_RegexStabilityFunctionMap* stabilitytest_Nova_RegexStabilityF
 void stabilitytest_Nova_RegexStabilityFunctionMap_Nova_destroy(stabilitytest_Nova_RegexStabilityFunctionMap** this);
 void stabilitytest_Nova_RegexStabilityFunctionMap_Nova_this(stabilitytest_Nova_RegexStabilityFunctionMap* this);
 stabilitytest_Nova_RegexStability* stabilitytest_Nova_RegexStabilityFunctionMap_functionMapRegexStabilityFunctionMap_Nova_construct(stabilitytest_Nova_RegexStabilityFunctionMap* this);
-void stabilitytest_Nova_RegexStabilityFunctionMap_functionMap_Nova_runTests(stabilitytest_Nova_RegexStabilityFunctionMap* this, stabilitytest_Nova_RegexStability* reference, stabilitytest_Nova_RegexStabilityFunctionMap_closure1527_Nova_onResult stabilitytest_Nova_RegexStabilityFunctionMap_Nova_onResult, void* stabilitytest_Nova_RegexStabilityFunctionMap_ref_Nova_onResult, void* stabilitytest_Nova_RegexStabilityFunctionMap_context_Nova_onResult, nova_io_Nova_OutputStream* out);
+void stabilitytest_Nova_RegexStabilityFunctionMap_functionMap_Nova_runTests(stabilitytest_Nova_RegexStabilityFunctionMap* this, stabilitytest_Nova_RegexStability* reference, stabilitytest_Nova_RegexStabilityFunctionMap_closure1574_Nova_onResult stabilitytest_Nova_RegexStabilityFunctionMap_Nova_onResult, void* stabilitytest_Nova_RegexStabilityFunctionMap_ref_Nova_onResult, void* stabilitytest_Nova_RegexStabilityFunctionMap_context_Nova_onResult, nova_io_Nova_OutputStream* out);
 void stabilitytest_Nova_RegexStabilityFunctionMap_Nova_super(stabilitytest_Nova_RegexStabilityFunctionMap* this);
 
 CCLASS_CLASS
@@ -19109,7 +19184,7 @@ void stabilitytest_Nova_StabilityTest_Nova_init_static();
 stabilitytest_Nova_StabilityTest* stabilitytest_Nova_StabilityTest_Nova_construct(stabilitytest_Nova_StabilityTest* this);
 void stabilitytest_Nova_StabilityTest_Nova_destroy(stabilitytest_Nova_StabilityTest** this);
 void stabilitytest_Nova_StabilityTest_static_Nova_main(stabilitytest_Nova_StabilityTest* this, nova_datastruct_list_Nova_Array* args);
-void stabilitytest_Nova_StabilityTest_Nova_runTests(stabilitytest_Nova_StabilityTest* this, stabilitytest_Nova_StabilityTest_closure1528_Nova_onResult stabilitytest_Nova_StabilityTest_Nova_onResult, void* stabilitytest_Nova_StabilityTest_ref_Nova_onResult, void* stabilitytest_Nova_StabilityTest_context_Nova_onResult, nova_io_Nova_OutputStream* out);
+void stabilitytest_Nova_StabilityTest_Nova_runTests(stabilitytest_Nova_StabilityTest* this, stabilitytest_Nova_StabilityTest_closure1575_Nova_onResult stabilitytest_Nova_StabilityTest_Nova_onResult, void* stabilitytest_Nova_StabilityTest_ref_Nova_onResult, void* stabilitytest_Nova_StabilityTest_context_Nova_onResult, nova_io_Nova_OutputStream* out);
 void stabilitytest_Nova_StabilityTest_Nova_this(stabilitytest_Nova_StabilityTest* this);
 novex_nest_Nova_TestRunnerModel* stabilitytest_Nova_StabilityTest_Accessorfunc_Nova_model(stabilitytest_Nova_StabilityTest* this);
 void stabilitytest_Nova_StabilityTest_Nova_super(stabilitytest_Nova_StabilityTest* this);
@@ -19130,7 +19205,7 @@ void stabilitytest_Nova_StabilityTestFunctionMap_Nova_destroy(stabilitytest_Nova
 void stabilitytest_Nova_StabilityTestFunctionMap_Nova_this(stabilitytest_Nova_StabilityTestFunctionMap* this);
 stabilitytest_Nova_StabilityTest* stabilitytest_Nova_StabilityTestFunctionMap_functionMapStabilityTestFunctionMap_Nova_construct(stabilitytest_Nova_StabilityTestFunctionMap* this);
 void stabilitytest_Nova_StabilityTestFunctionMap_functionMap_static_Nova_main(stabilitytest_Nova_StabilityTestFunctionMap* this, nova_datastruct_list_Nova_Array* args);
-void stabilitytest_Nova_StabilityTestFunctionMap_functionMap_Nova_runTests(stabilitytest_Nova_StabilityTestFunctionMap* this, stabilitytest_Nova_StabilityTest* reference, stabilitytest_Nova_StabilityTestFunctionMap_closure1565_Nova_onResult stabilitytest_Nova_StabilityTestFunctionMap_Nova_onResult, void* stabilitytest_Nova_StabilityTestFunctionMap_ref_Nova_onResult, void* stabilitytest_Nova_StabilityTestFunctionMap_context_Nova_onResult, nova_io_Nova_OutputStream* out);
+void stabilitytest_Nova_StabilityTestFunctionMap_functionMap_Nova_runTests(stabilitytest_Nova_StabilityTestFunctionMap* this, stabilitytest_Nova_StabilityTest* reference, stabilitytest_Nova_StabilityTestFunctionMap_closure1614_Nova_onResult stabilitytest_Nova_StabilityTestFunctionMap_Nova_onResult, void* stabilitytest_Nova_StabilityTestFunctionMap_ref_Nova_onResult, void* stabilitytest_Nova_StabilityTestFunctionMap_context_Nova_onResult, nova_io_Nova_OutputStream* out);
 void stabilitytest_Nova_StabilityTestFunctionMap_Nova_super(stabilitytest_Nova_StabilityTestFunctionMap* this);
 
 CCLASS_CLASS
@@ -19268,7 +19343,7 @@ void stabilitytest_Nova_StaticImportStability_Nova_init_static();
 stabilitytest_Nova_StaticImportStability* stabilitytest_Nova_StaticImportStability_Nova_construct(stabilitytest_Nova_StaticImportStability* this);
 void stabilitytest_Nova_StaticImportStability_Nova_destroy(stabilitytest_Nova_StaticImportStability** this);
 void stabilitytest_Nova_StaticImportStability_Nova_test(stabilitytest_Nova_StaticImportStability* this, nova_io_Nova_OutputStream* out);
-void stabilitytest_Nova_StaticImportStability_Nova_runTests(stabilitytest_Nova_StaticImportStability* this, stabilitytest_Nova_StaticImportStability_closure1566_Nova_onResult stabilitytest_Nova_StaticImportStability_Nova_onResult, void* stabilitytest_Nova_StaticImportStability_ref_Nova_onResult, void* stabilitytest_Nova_StaticImportStability_context_Nova_onResult, nova_io_Nova_OutputStream* out);
+void stabilitytest_Nova_StaticImportStability_Nova_runTests(stabilitytest_Nova_StaticImportStability* this, stabilitytest_Nova_StaticImportStability_closure1615_Nova_onResult stabilitytest_Nova_StaticImportStability_Nova_onResult, void* stabilitytest_Nova_StaticImportStability_ref_Nova_onResult, void* stabilitytest_Nova_StaticImportStability_context_Nova_onResult, nova_io_Nova_OutputStream* out);
 void stabilitytest_Nova_StaticImportStability_Nova_this(stabilitytest_Nova_StaticImportStability* this);
 novex_nest_Nova_TestRunnerModel* stabilitytest_Nova_StaticImportStability_Accessorfunc_Nova_model(stabilitytest_Nova_StaticImportStability* this);
 void stabilitytest_Nova_StaticImportStability_Nova_super(stabilitytest_Nova_StaticImportStability* this);
@@ -19289,7 +19364,7 @@ void stabilitytest_Nova_StaticImportStabilityFunctionMap_Nova_destroy(stabilityt
 void stabilitytest_Nova_StaticImportStabilityFunctionMap_Nova_this(stabilitytest_Nova_StaticImportStabilityFunctionMap* this);
 stabilitytest_Nova_StaticImportStability* stabilitytest_Nova_StaticImportStabilityFunctionMap_functionMapStaticImportStabilityFunctionMap_Nova_construct(stabilitytest_Nova_StaticImportStabilityFunctionMap* this);
 void stabilitytest_Nova_StaticImportStabilityFunctionMap_functionMap_Nova_test(stabilitytest_Nova_StaticImportStabilityFunctionMap* this, stabilitytest_Nova_StaticImportStability* reference, nova_io_Nova_OutputStream* out);
-void stabilitytest_Nova_StaticImportStabilityFunctionMap_functionMap_Nova_runTests(stabilitytest_Nova_StaticImportStabilityFunctionMap* this, stabilitytest_Nova_StaticImportStability* reference, stabilitytest_Nova_StaticImportStabilityFunctionMap_closure1567_Nova_onResult stabilitytest_Nova_StaticImportStabilityFunctionMap_Nova_onResult, void* stabilitytest_Nova_StaticImportStabilityFunctionMap_ref_Nova_onResult, void* stabilitytest_Nova_StaticImportStabilityFunctionMap_context_Nova_onResult, nova_io_Nova_OutputStream* out);
+void stabilitytest_Nova_StaticImportStabilityFunctionMap_functionMap_Nova_runTests(stabilitytest_Nova_StaticImportStabilityFunctionMap* this, stabilitytest_Nova_StaticImportStability* reference, stabilitytest_Nova_StaticImportStabilityFunctionMap_closure1616_Nova_onResult stabilitytest_Nova_StaticImportStabilityFunctionMap_Nova_onResult, void* stabilitytest_Nova_StaticImportStabilityFunctionMap_ref_Nova_onResult, void* stabilitytest_Nova_StaticImportStabilityFunctionMap_context_Nova_onResult, nova_io_Nova_OutputStream* out);
 void stabilitytest_Nova_StaticImportStabilityFunctionMap_Nova_super(stabilitytest_Nova_StaticImportStabilityFunctionMap* this);
 
 CCLASS_CLASS
@@ -19345,7 +19420,7 @@ extern char stabilitytest_Nova_SyntaxStability_Nova_init_static_inited;
 void stabilitytest_Nova_SyntaxStability_Nova_init_static();
 stabilitytest_Nova_SyntaxStability* stabilitytest_Nova_SyntaxStability_Nova_construct(stabilitytest_Nova_SyntaxStability* this);
 void stabilitytest_Nova_SyntaxStability_Nova_destroy(stabilitytest_Nova_SyntaxStability** this);
-void stabilitytest_Nova_SyntaxStability_Nova_runTests(stabilitytest_Nova_SyntaxStability* this, stabilitytest_Nova_SyntaxStability_closure1569_Nova_onResult stabilitytest_Nova_SyntaxStability_Nova_onResult, void* stabilitytest_Nova_SyntaxStability_ref_Nova_onResult, void* stabilitytest_Nova_SyntaxStability_context_Nova_onResult, nova_io_Nova_OutputStream* out);
+void stabilitytest_Nova_SyntaxStability_Nova_runTests(stabilitytest_Nova_SyntaxStability* this, stabilitytest_Nova_SyntaxStability_closure1618_Nova_onResult stabilitytest_Nova_SyntaxStability_Nova_onResult, void* stabilitytest_Nova_SyntaxStability_ref_Nova_onResult, void* stabilitytest_Nova_SyntaxStability_context_Nova_onResult, nova_io_Nova_OutputStream* out);
 void stabilitytest_Nova_SyntaxStability_Nova_this(stabilitytest_Nova_SyntaxStability* this);
 novex_nest_Nova_TestRunnerModel* stabilitytest_Nova_SyntaxStability_Accessorfunc_Nova_model(stabilitytest_Nova_SyntaxStability* this);
 void stabilitytest_Nova_SyntaxStability_Nova_super(stabilitytest_Nova_SyntaxStability* this);
@@ -19365,7 +19440,7 @@ stabilitytest_Nova_SyntaxStabilityFunctionMap* stabilitytest_Nova_SyntaxStabilit
 void stabilitytest_Nova_SyntaxStabilityFunctionMap_Nova_destroy(stabilitytest_Nova_SyntaxStabilityFunctionMap** this);
 void stabilitytest_Nova_SyntaxStabilityFunctionMap_Nova_this(stabilitytest_Nova_SyntaxStabilityFunctionMap* this);
 stabilitytest_Nova_SyntaxStability* stabilitytest_Nova_SyntaxStabilityFunctionMap_functionMapSyntaxStabilityFunctionMap_Nova_construct(stabilitytest_Nova_SyntaxStabilityFunctionMap* this);
-void stabilitytest_Nova_SyntaxStabilityFunctionMap_functionMap_Nova_runTests(stabilitytest_Nova_SyntaxStabilityFunctionMap* this, stabilitytest_Nova_SyntaxStability* reference, stabilitytest_Nova_SyntaxStabilityFunctionMap_closure1573_Nova_onResult stabilitytest_Nova_SyntaxStabilityFunctionMap_Nova_onResult, void* stabilitytest_Nova_SyntaxStabilityFunctionMap_ref_Nova_onResult, void* stabilitytest_Nova_SyntaxStabilityFunctionMap_context_Nova_onResult, nova_io_Nova_OutputStream* out);
+void stabilitytest_Nova_SyntaxStabilityFunctionMap_functionMap_Nova_runTests(stabilitytest_Nova_SyntaxStabilityFunctionMap* this, stabilitytest_Nova_SyntaxStability* reference, stabilitytest_Nova_SyntaxStabilityFunctionMap_closure1622_Nova_onResult stabilitytest_Nova_SyntaxStabilityFunctionMap_Nova_onResult, void* stabilitytest_Nova_SyntaxStabilityFunctionMap_ref_Nova_onResult, void* stabilitytest_Nova_SyntaxStabilityFunctionMap_context_Nova_onResult, nova_io_Nova_OutputStream* out);
 void stabilitytest_Nova_SyntaxStabilityFunctionMap_Nova_super(stabilitytest_Nova_SyntaxStabilityFunctionMap* this);
 
 CCLASS_CLASS
@@ -19473,7 +19548,7 @@ void stabilitytest_Nova_ThreadStability_Nova_init_static();
 stabilitytest_Nova_ThreadStability* stabilitytest_Nova_ThreadStability_Nova_construct(stabilitytest_Nova_ThreadStability* this);
 void stabilitytest_Nova_ThreadStability_Nova_destroy(stabilitytest_Nova_ThreadStability** this);
 void stabilitytest_Nova_ThreadStability_Nova_test(stabilitytest_Nova_ThreadStability* this, nova_io_Nova_OutputStream* out);
-void stabilitytest_Nova_ThreadStability_Nova_runTests(stabilitytest_Nova_ThreadStability* this, stabilitytest_Nova_ThreadStability_closure1574_Nova_onResult stabilitytest_Nova_ThreadStability_Nova_onResult, void* stabilitytest_Nova_ThreadStability_ref_Nova_onResult, void* stabilitytest_Nova_ThreadStability_context_Nova_onResult, nova_io_Nova_OutputStream* out);
+void stabilitytest_Nova_ThreadStability_Nova_runTests(stabilitytest_Nova_ThreadStability* this, stabilitytest_Nova_ThreadStability_closure1623_Nova_onResult stabilitytest_Nova_ThreadStability_Nova_onResult, void* stabilitytest_Nova_ThreadStability_ref_Nova_onResult, void* stabilitytest_Nova_ThreadStability_context_Nova_onResult, nova_io_Nova_OutputStream* out);
 void stabilitytest_Nova_ThreadStability_Nova_this(stabilitytest_Nova_ThreadStability* this);
 novex_nest_Nova_TestRunnerModel* stabilitytest_Nova_ThreadStability_Accessorfunc_Nova_model(stabilitytest_Nova_ThreadStability* this);
 void stabilitytest_Nova_ThreadStability_Nova_super(stabilitytest_Nova_ThreadStability* this);
@@ -19494,7 +19569,7 @@ void stabilitytest_Nova_ThreadStabilityFunctionMap_Nova_destroy(stabilitytest_No
 void stabilitytest_Nova_ThreadStabilityFunctionMap_Nova_this(stabilitytest_Nova_ThreadStabilityFunctionMap* this);
 stabilitytest_Nova_ThreadStability* stabilitytest_Nova_ThreadStabilityFunctionMap_functionMapThreadStabilityFunctionMap_Nova_construct(stabilitytest_Nova_ThreadStabilityFunctionMap* this);
 void stabilitytest_Nova_ThreadStabilityFunctionMap_functionMap_Nova_test(stabilitytest_Nova_ThreadStabilityFunctionMap* this, stabilitytest_Nova_ThreadStability* reference, nova_io_Nova_OutputStream* out);
-void stabilitytest_Nova_ThreadStabilityFunctionMap_functionMap_Nova_runTests(stabilitytest_Nova_ThreadStabilityFunctionMap* this, stabilitytest_Nova_ThreadStability* reference, stabilitytest_Nova_ThreadStabilityFunctionMap_closure1575_Nova_onResult stabilitytest_Nova_ThreadStabilityFunctionMap_Nova_onResult, void* stabilitytest_Nova_ThreadStabilityFunctionMap_ref_Nova_onResult, void* stabilitytest_Nova_ThreadStabilityFunctionMap_context_Nova_onResult, nova_io_Nova_OutputStream* out);
+void stabilitytest_Nova_ThreadStabilityFunctionMap_functionMap_Nova_runTests(stabilitytest_Nova_ThreadStabilityFunctionMap* this, stabilitytest_Nova_ThreadStability* reference, stabilitytest_Nova_ThreadStabilityFunctionMap_closure1624_Nova_onResult stabilitytest_Nova_ThreadStabilityFunctionMap_Nova_onResult, void* stabilitytest_Nova_ThreadStabilityFunctionMap_ref_Nova_onResult, void* stabilitytest_Nova_ThreadStabilityFunctionMap_context_Nova_onResult, nova_io_Nova_OutputStream* out);
 void stabilitytest_Nova_ThreadStabilityFunctionMap_Nova_super(stabilitytest_Nova_ThreadStabilityFunctionMap* this);
 
 CCLASS_CLASS
@@ -19532,7 +19607,7 @@ void stabilitytest_Nova_TimeStability_Nova_init_static();
 stabilitytest_Nova_TimeStability* stabilitytest_Nova_TimeStability_Nova_construct(stabilitytest_Nova_TimeStability* this);
 void stabilitytest_Nova_TimeStability_Nova_destroy(stabilitytest_Nova_TimeStability** this);
 void stabilitytest_Nova_TimeStability_Nova_test(stabilitytest_Nova_TimeStability* this, nova_io_Nova_OutputStream* out);
-void stabilitytest_Nova_TimeStability_Nova_runTests(stabilitytest_Nova_TimeStability* this, stabilitytest_Nova_TimeStability_closure1576_Nova_onResult stabilitytest_Nova_TimeStability_Nova_onResult, void* stabilitytest_Nova_TimeStability_ref_Nova_onResult, void* stabilitytest_Nova_TimeStability_context_Nova_onResult, nova_io_Nova_OutputStream* out);
+void stabilitytest_Nova_TimeStability_Nova_runTests(stabilitytest_Nova_TimeStability* this, stabilitytest_Nova_TimeStability_closure1625_Nova_onResult stabilitytest_Nova_TimeStability_Nova_onResult, void* stabilitytest_Nova_TimeStability_ref_Nova_onResult, void* stabilitytest_Nova_TimeStability_context_Nova_onResult, nova_io_Nova_OutputStream* out);
 void stabilitytest_Nova_TimeStability_Nova_this(stabilitytest_Nova_TimeStability* this);
 novex_nest_Nova_TestRunnerModel* stabilitytest_Nova_TimeStability_Accessorfunc_Nova_model(stabilitytest_Nova_TimeStability* this);
 void stabilitytest_Nova_TimeStability_Nova_super(stabilitytest_Nova_TimeStability* this);
@@ -19553,7 +19628,7 @@ void stabilitytest_Nova_TimeStabilityFunctionMap_Nova_destroy(stabilitytest_Nova
 void stabilitytest_Nova_TimeStabilityFunctionMap_Nova_this(stabilitytest_Nova_TimeStabilityFunctionMap* this);
 stabilitytest_Nova_TimeStability* stabilitytest_Nova_TimeStabilityFunctionMap_functionMapTimeStabilityFunctionMap_Nova_construct(stabilitytest_Nova_TimeStabilityFunctionMap* this);
 void stabilitytest_Nova_TimeStabilityFunctionMap_functionMap_Nova_test(stabilitytest_Nova_TimeStabilityFunctionMap* this, stabilitytest_Nova_TimeStability* reference, nova_io_Nova_OutputStream* out);
-void stabilitytest_Nova_TimeStabilityFunctionMap_functionMap_Nova_runTests(stabilitytest_Nova_TimeStabilityFunctionMap* this, stabilitytest_Nova_TimeStability* reference, stabilitytest_Nova_TimeStabilityFunctionMap_closure1577_Nova_onResult stabilitytest_Nova_TimeStabilityFunctionMap_Nova_onResult, void* stabilitytest_Nova_TimeStabilityFunctionMap_ref_Nova_onResult, void* stabilitytest_Nova_TimeStabilityFunctionMap_context_Nova_onResult, nova_io_Nova_OutputStream* out);
+void stabilitytest_Nova_TimeStabilityFunctionMap_functionMap_Nova_runTests(stabilitytest_Nova_TimeStabilityFunctionMap* this, stabilitytest_Nova_TimeStability* reference, stabilitytest_Nova_TimeStabilityFunctionMap_closure1626_Nova_onResult stabilitytest_Nova_TimeStabilityFunctionMap_Nova_onResult, void* stabilitytest_Nova_TimeStabilityFunctionMap_ref_Nova_onResult, void* stabilitytest_Nova_TimeStabilityFunctionMap_context_Nova_onResult, nova_io_Nova_OutputStream* out);
 void stabilitytest_Nova_TimeStabilityFunctionMap_Nova_super(stabilitytest_Nova_TimeStabilityFunctionMap* this);
 
 CCLASS_CLASS
@@ -19589,7 +19664,7 @@ extern char stabilitytest_Nova_ToStringStability_Nova_init_static_inited;
 void stabilitytest_Nova_ToStringStability_Nova_init_static();
 stabilitytest_Nova_ToStringStability* stabilitytest_Nova_ToStringStability_Nova_construct(stabilitytest_Nova_ToStringStability* this);
 void stabilitytest_Nova_ToStringStability_Nova_destroy(stabilitytest_Nova_ToStringStability** this);
-void stabilitytest_Nova_ToStringStability_Nova_runTests(stabilitytest_Nova_ToStringStability* this, stabilitytest_Nova_ToStringStability_closure1578_Nova_onResult stabilitytest_Nova_ToStringStability_Nova_onResult, void* stabilitytest_Nova_ToStringStability_ref_Nova_onResult, void* stabilitytest_Nova_ToStringStability_context_Nova_onResult, nova_io_Nova_OutputStream* out);
+void stabilitytest_Nova_ToStringStability_Nova_runTests(stabilitytest_Nova_ToStringStability* this, stabilitytest_Nova_ToStringStability_closure1627_Nova_onResult stabilitytest_Nova_ToStringStability_Nova_onResult, void* stabilitytest_Nova_ToStringStability_ref_Nova_onResult, void* stabilitytest_Nova_ToStringStability_context_Nova_onResult, nova_io_Nova_OutputStream* out);
 void stabilitytest_Nova_ToStringStability_Nova_this(stabilitytest_Nova_ToStringStability* this);
 novex_nest_Nova_TestRunnerModel* stabilitytest_Nova_ToStringStability_Accessorfunc_Nova_model(stabilitytest_Nova_ToStringStability* this);
 void stabilitytest_Nova_ToStringStability_Nova_super(stabilitytest_Nova_ToStringStability* this);
@@ -19609,7 +19684,7 @@ stabilitytest_Nova_ToStringStabilityFunctionMap* stabilitytest_Nova_ToStringStab
 void stabilitytest_Nova_ToStringStabilityFunctionMap_Nova_destroy(stabilitytest_Nova_ToStringStabilityFunctionMap** this);
 void stabilitytest_Nova_ToStringStabilityFunctionMap_Nova_this(stabilitytest_Nova_ToStringStabilityFunctionMap* this);
 stabilitytest_Nova_ToStringStability* stabilitytest_Nova_ToStringStabilityFunctionMap_functionMapToStringStabilityFunctionMap_Nova_construct(stabilitytest_Nova_ToStringStabilityFunctionMap* this);
-void stabilitytest_Nova_ToStringStabilityFunctionMap_functionMap_Nova_runTests(stabilitytest_Nova_ToStringStabilityFunctionMap* this, stabilitytest_Nova_ToStringStability* reference, stabilitytest_Nova_ToStringStabilityFunctionMap_closure1579_Nova_onResult stabilitytest_Nova_ToStringStabilityFunctionMap_Nova_onResult, void* stabilitytest_Nova_ToStringStabilityFunctionMap_ref_Nova_onResult, void* stabilitytest_Nova_ToStringStabilityFunctionMap_context_Nova_onResult, nova_io_Nova_OutputStream* out);
+void stabilitytest_Nova_ToStringStabilityFunctionMap_functionMap_Nova_runTests(stabilitytest_Nova_ToStringStabilityFunctionMap* this, stabilitytest_Nova_ToStringStability* reference, stabilitytest_Nova_ToStringStabilityFunctionMap_closure1628_Nova_onResult stabilitytest_Nova_ToStringStabilityFunctionMap_Nova_onResult, void* stabilitytest_Nova_ToStringStabilityFunctionMap_ref_Nova_onResult, void* stabilitytest_Nova_ToStringStabilityFunctionMap_context_Nova_onResult, nova_io_Nova_OutputStream* out);
 void stabilitytest_Nova_ToStringStabilityFunctionMap_Nova_super(stabilitytest_Nova_ToStringStabilityFunctionMap* this);
 
 CCLASS_CLASS

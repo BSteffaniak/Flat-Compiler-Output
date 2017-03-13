@@ -1205,6 +1205,16 @@ nova_env novaEnv = {
 },
 
 {
+&nova_io_Nova_ClosedStreamException_Nova_construct,
+},
+{
+&nova_io_Nova_ClosedStreamExceptionFunctionMap_Nova_construct,
+},
+{
+&nova_io_Nova_ClosedStreamExceptionPropertyMap_Nova_construct,
+},
+
+{
 &nova_io_Nova_Console_Nova_construct,
 },
 {
@@ -3949,6 +3959,19 @@ nova_env novaEnv = {
 {
 &stabilitytest_Nova_LambdaStabilityPropertyMap_functionMap_Nova_model,
 &stabilitytest_Nova_LambdaStabilityPropertyMap_Nova_construct,
+},
+
+{
+&stabilitytest_Nova_LibraryLoadingStability_Nova_construct,
+},
+{
+&stabilitytest_Nova_LibraryLoadingStabilityFunctionMap_functionMapLibraryLoadingStabilityFunctionMap_Nova_construct,
+&stabilitytest_Nova_LibraryLoadingStabilityFunctionMap_functionMap_Nova_runTests,
+&stabilitytest_Nova_LibraryLoadingStabilityFunctionMap_Nova_construct,
+},
+{
+&stabilitytest_Nova_LibraryLoadingStabilityPropertyMap_functionMap_Nova_model,
+&stabilitytest_Nova_LibraryLoadingStabilityPropertyMap_Nova_construct,
 },
 
 {

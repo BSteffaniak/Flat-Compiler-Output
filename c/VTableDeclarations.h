@@ -703,6 +703,15 @@ extern nova_gc_Nova_GCFunctionMap_VTable nova_gc_Nova_GCFunctionMap_VTable_val;
 typedef struct nova_gc_Nova_GCPropertyMap_VTable nova_gc_Nova_GCPropertyMap_VTable;
 extern nova_gc_Nova_GCPropertyMap_VTable nova_gc_Nova_GCPropertyMap_VTable_val;
 
+typedef struct nova_io_Nova_ClosedStreamException_VTable nova_io_Nova_ClosedStreamException_VTable;
+extern nova_io_Nova_ClosedStreamException_VTable nova_io_Nova_ClosedStreamException_VTable_val;
+
+typedef struct nova_io_Nova_ClosedStreamExceptionFunctionMap_VTable nova_io_Nova_ClosedStreamExceptionFunctionMap_VTable;
+extern nova_io_Nova_ClosedStreamExceptionFunctionMap_VTable nova_io_Nova_ClosedStreamExceptionFunctionMap_VTable_val;
+
+typedef struct nova_io_Nova_ClosedStreamExceptionPropertyMap_VTable nova_io_Nova_ClosedStreamExceptionPropertyMap_VTable;
+extern nova_io_Nova_ClosedStreamExceptionPropertyMap_VTable nova_io_Nova_ClosedStreamExceptionPropertyMap_VTable_val;
+
 typedef struct nova_io_Nova_Console_VTable nova_io_Nova_Console_VTable;
 extern nova_io_Nova_Console_VTable nova_io_Nova_Console_VTable_val;
 
@@ -2388,6 +2397,15 @@ extern stabilitytest_Nova_LambdaStabilityFunctionMap_VTable stabilitytest_Nova_L
 
 typedef struct stabilitytest_Nova_LambdaStabilityPropertyMap_VTable stabilitytest_Nova_LambdaStabilityPropertyMap_VTable;
 extern stabilitytest_Nova_LambdaStabilityPropertyMap_VTable stabilitytest_Nova_LambdaStabilityPropertyMap_VTable_val;
+
+typedef struct stabilitytest_Nova_LibraryLoadingStability_VTable stabilitytest_Nova_LibraryLoadingStability_VTable;
+extern stabilitytest_Nova_LibraryLoadingStability_VTable stabilitytest_Nova_LibraryLoadingStability_VTable_val;
+
+typedef struct stabilitytest_Nova_LibraryLoadingStabilityFunctionMap_VTable stabilitytest_Nova_LibraryLoadingStabilityFunctionMap_VTable;
+extern stabilitytest_Nova_LibraryLoadingStabilityFunctionMap_VTable stabilitytest_Nova_LibraryLoadingStabilityFunctionMap_VTable_val;
+
+typedef struct stabilitytest_Nova_LibraryLoadingStabilityPropertyMap_VTable stabilitytest_Nova_LibraryLoadingStabilityPropertyMap_VTable;
+extern stabilitytest_Nova_LibraryLoadingStabilityPropertyMap_VTable stabilitytest_Nova_LibraryLoadingStabilityPropertyMap_VTable_val;
 
 typedef struct stabilitytest_Nova_NetworkStability_VTable stabilitytest_Nova_NetworkStability_VTable;
 extern stabilitytest_Nova_NetworkStability_VTable stabilitytest_Nova_NetworkStability_VTable_val;
@@ -4629,6 +4647,34 @@ long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Objec
 
 
 struct nova_gc_Nova_GCPropertyMap_VTable
+{
+nova_meta_Nova_Class* classInstance;
+nova_Interface_VTable itable;
+nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*);
+long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*);
+};
+
+
+struct nova_io_Nova_ClosedStreamException_VTable
+{
+nova_meta_Nova_Class* classInstance;
+nova_Interface_VTable itable;
+nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_exception_Nova_Exception*);
+long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*);
+};
+
+
+struct nova_io_Nova_ClosedStreamExceptionFunctionMap_VTable
+{
+nova_meta_Nova_Class* classInstance;
+nova_Interface_VTable itable;
+nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*);
+long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*);
+nova_io_Nova_ClosedStreamException* (*nova_exception_Nova_ExceptionFunctionMap_virtualfunctionMapClosedStreamException_Nova_construct)(nova_io_Nova_ClosedStreamExceptionFunctionMap*, nova_Nova_String*);
+};
+
+
+struct nova_io_Nova_ClosedStreamExceptionPropertyMap_VTable
 {
 nova_meta_Nova_Class* classInstance;
 nova_Interface_VTable itable;
@@ -9930,6 +9976,33 @@ long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Objec
 
 
 struct stabilitytest_Nova_LambdaStabilityPropertyMap_VTable
+{
+nova_meta_Nova_Class* classInstance;
+nova_Interface_VTable itable;
+nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*);
+long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*);
+};
+
+
+struct stabilitytest_Nova_LibraryLoadingStability_VTable
+{
+nova_meta_Nova_Class* classInstance;
+nova_Interface_VTable itable;
+nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*);
+long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*);
+};
+
+
+struct stabilitytest_Nova_LibraryLoadingStabilityFunctionMap_VTable
+{
+nova_meta_Nova_Class* classInstance;
+nova_Interface_VTable itable;
+nova_Nova_String* (*nova_Nova_Object_virtual_Nova_toString)(nova_Nova_Object*);
+long_long (*nova_Nova_Object_virtual_Accessor_Nova_hashCodeLong)(nova_Nova_Object*);
+};
+
+
+struct stabilitytest_Nova_LibraryLoadingStabilityPropertyMap_VTable
 {
 nova_meta_Nova_Class* classInstance;
 nova_Interface_VTable itable;
