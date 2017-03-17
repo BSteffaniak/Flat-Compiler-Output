@@ -3,6 +3,8 @@
 
 #include <NovaOutput.h>
 #include <NovaExceptionHandling.h>
+#include <Nest.h>
+#include <StandardLibrary.h>
 #include <InterfaceVTable.h>
 #include <ExceptionHandler.h>
 

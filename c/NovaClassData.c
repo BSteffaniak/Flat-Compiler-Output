@@ -1,5 +1,8 @@
 #include <NovaClassData.h>
 
+example_vtable_Polygon example_vtable_Polygon_value_default = {0};
+novex_nest_vtable_TestRunner novex_nest_vtable_TestRunner_value_default = {0,0};
+novex_nest_vtable_TestSuiteRunner novex_nest_vtable_TestSuiteRunner_value_default = {0};
 nova_datastruct_vtable_Comparable nova_datastruct_vtable_Comparable_value_default = {0};
 nova_datastruct_list_vtable_Iterable nova_datastruct_list_vtable_Iterable_value_default = {0,0};
 nova_datastruct_list_vtable_Iterator nova_datastruct_list_vtable_Iterator_value_default = {0,0};
@@ -19,6 +22,3 @@ nova_primitive_number_vtable_Integer nova_primitive_number_vtable_Integer_value_
 nova_primitive_number_vtable_RealNumber nova_primitive_number_vtable_RealNumber_value_default = {0};
 nova_star_vtable_UIAction nova_star_vtable_UIAction_value_default = {0,0,0,0};
 nova_star_vtable_UIParent nova_star_vtable_UIParent_value_default = {0,0};
-novex_nest_vtable_TestRunner novex_nest_vtable_TestRunner_value_default = {0,0};
-novex_nest_vtable_TestSuiteRunner novex_nest_vtable_TestSuiteRunner_value_default = {0};
-example_vtable_Polygon example_vtable_Polygon_value_default = {0};
