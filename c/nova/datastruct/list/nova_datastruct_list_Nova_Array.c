@@ -160,10 +160,15 @@ void nova_datastruct_list_Nova_Array_0_Nova_this(nova_datastruct_list_Nova_Array
 
 void nova_datastruct_list_Nova_Array_1_Nova_this(nova_datastruct_list_Nova_Array* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_Object** data, int count)
 {
+	printf("a\n");
 	this->nova_datastruct_list_Nova_Array_Nova_data = data;
+	printf("ab\n");
 	nova_datastruct_list_Nova_List_virtual_Mutator_Nova_count((nova_datastruct_list_Nova_List*)(this), exceptionData, count);
+	printf("av\n");
 	this->nova_datastruct_list_Nova_Array_Nova_capacity = count;
+	printf("ad\n");
 	this->nova_datastruct_list_Nova_Array_Nova_position = count;
+	printf("ae\n");
 }
 
 nova_datastruct_list_Nova_Array* nova_datastruct_list_Nova_Array_Nova_fillRemaining(nova_datastruct_list_Nova_Array* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_Object* value)
