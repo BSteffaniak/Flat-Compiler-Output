@@ -31,164 +31,329 @@
 #include <nova/meta/nova_meta_Nova_FunctionMap.h>
 #include <nova/meta/nova_meta_Nova_PropertyMap.h>
 #include <nova/regex/nova_regex_Nova_Pattern.h>
+#include <nova/datastruct/list/nova_datastruct_list_Nova_LinkedList.h>
+#include <nova/time/nova_time_Nova_Time.h>
+#include <novex/nest/novex_nest_Nova_Nest.h>
+#include <novex/nest/novex_nest_Nova_TestSuite.h>
+#include <stabilitytest/stabilitytest_Nova_BoundedIntervalStability.h>
+#include <stabilitytest/stabilitytest_Nova_BoundlessIntervalStability.h>
+#include <stabilitytest/stabilitytest_Nova_CastStability.h>
 #include <stabilitytest/stabilitytest_Nova_ClassWithProperties.h>
+#include <stabilitytest/stabilitytest_Nova_ClientThread.h>
+#include <stabilitytest/stabilitytest_Nova_ClosureStability.h>
+#include <stabilitytest/stabilitytest_Nova_ExceptionStability.h>
+#include <stabilitytest/stabilitytest_Nova_ExternalInnerClassStability.h>
+#include <stabilitytest/stabilitytest_Nova_FancyOutputStreamTests.h>
+#include <stabilitytest/stabilitytest_Nova_FileStability.h>
+#include <stabilitytest/stabilitytest_Nova_FirstClassFunctionStability.h>
+#include <stabilitytest/stabilitytest_Nova_InnerClassStability.h>
+#include <stabilitytest/stabilitytest_Nova_IntervalStability.h>
+#include <stabilitytest/stabilitytest_Nova_LambdaStability.h>
+#include <stabilitytest/stabilitytest_Nova_LibraryLoadingStability.h>
+#include <stabilitytest/stabilitytest_Nova_NetworkStability.h>
+#include <stabilitytest/stabilitytest_Nova_Node.h>
+#include <stabilitytest/stabilitytest_Nova_PolymorphicSubClass.h>
+#include <stabilitytest/stabilitytest_Nova_PolymorphicSuperClass.h>
+#include <stabilitytest/stabilitytest_Nova_PolymorphismStability.h>
+#include <stabilitytest/stabilitytest_Nova_PrimitiveOverloadStability.h>
+#include <stabilitytest/stabilitytest_Nova_RegexStability.h>
+#include <stabilitytest/stabilitytest_Nova_StabilityExceptionHandler.h>
 #include <stabilitytest/stabilitytest_Nova_StabilityTest.h>
 #include <stabilitytest/stabilitytest_Nova_StabilityTestCase.h>
-#include <stabilitytest/stabilitytest_Nova_StabilityTestCase.h>
-#include <stabilitytest/stabilitytest_Nova_StabilityTestCase.h>
+#include <stabilitytest/stabilitytest_Nova_StabilityTestException.h>
+#include <stabilitytest/stabilitytest_Nova_StaticImportStability.h>
+#include <stabilitytest/stabilitytest_Nova_SyntaxStability.h>
+#include <stabilitytest/stabilitytest_Nova_ThreadImplementation.h>
+#include <stabilitytest/stabilitytest_Nova_ThreadStability.h>
+#include <stabilitytest/stabilitytest_Nova_TimeStability.h>
+#include <stabilitytest/stabilitytest_Nova_ToStringStability.h>
+#include <stabilitytest/stabilitytest_Nova_UnstableException.h>
+#include <novex/nest/novex_nest_Nova_TestRunner.h>
+#include <novex/nest/novex_nest_Nova_TestResult.h>
+#include <nova/io/nova_io_Nova_OutputStream.h>
+#include <novex/nest/novex_nest_Nova_TestCase.h>
+#include <novex/nest/novex_nest_Nova_TestRunnerModel.h>
+#include <novex/nest/novex_nest_Nova_NestException.h>
+#include <nova/time/nova_time_Nova_Timer.h>
 #include <nova/NativeObject.h>
+#include <nova/operators/nova_operators_Nova_EqualsOperator.h>
+#include <nova/nova_Nova_Substring.h>
 
-
-
-void stabilitytest_Nova_AssignmentStability_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData)
+typedef struct
 {
-	{
+} Context200;
+
+
+void stabilitytest_Nova_AssignmentStability_Nova_testEmbeddedPropertyAssignments(stabilitytest_Nova_AssignmentStability* this, nova_io_Nova_OutputStream* out);
+void stabilitytest_Nova_AssignmentStability_Nova_testEmbeddedPrimitiveAssignments(stabilitytest_Nova_AssignmentStability* this, nova_io_Nova_OutputStream* out);
+nova_datastruct_list_Nova_Array* generated8(stabilitytest_Nova_AssignmentStability* this, novex_nest_Nova_TestCase* value0, novex_nest_Nova_TestCase* value1);
+void stabilitytest_Nova_AssignmentStability_Nova_lambda179(stabilitytest_Nova_AssignmentStability* this, novex_nest_Nova_TestResult* _1, Context200* context);
+
+
+void stabilitytest_Nova_AssignmentStability_Nova_testEmbeddedPropertyAssignments(stabilitytest_Nova_AssignmentStability* this, nova_io_Nova_OutputStream* out);
+void stabilitytest_Nova_AssignmentStability_Nova_testEmbeddedPrimitiveAssignments(stabilitytest_Nova_AssignmentStability* this, nova_io_Nova_OutputStream* out);
+nova_datastruct_list_Nova_Array* generated8(stabilitytest_Nova_AssignmentStability* this, novex_nest_Nova_TestCase* value0, novex_nest_Nova_TestCase* value1);
+void stabilitytest_Nova_AssignmentStability_Nova_lambda179(stabilitytest_Nova_AssignmentStability* this, novex_nest_Nova_TestResult* _1, Context200* context);
+
+novex_nest_Nova_TestCase* stabilitytest_Nova_AssignmentStability_Nova__testEmbeddedPropertyAssignmentsTestCase;
+novex_nest_Nova_TestCase* stabilitytest_Nova_AssignmentStability_Nova__testEmbeddedPrimitiveAssignmentsTestCase;
+novex_nest_Nova_TestRunnerModel* stabilitytest_Nova_AssignmentStability_Nova__runTestsTestRunner;
+char stabilitytest_Nova_AssignmentStability_Nova_init_static_inited = 0;
+void stabilitytest_Nova_AssignmentStability_Nova_init_static()
+{
+	if (!stabilitytest_Nova_AssignmentStability_Nova_init_static_inited) {
+		stabilitytest_Nova_AssignmentStability_Nova_init_static_inited = 1;
+		novex_nest_Nova_TestCase_Nova_init_static();
+		novex_nest_Nova_TestRunnerModel_Nova_init_static();
+		nova_datastruct_list_Nova_Array_Nova_init_static();
+		{
+			stabilitytest_Nova_AssignmentStability_Nova__testEmbeddedPropertyAssignmentsTestCase = novex_nest_Nova_TestCase_Nova_construct(0,
+				nova_Nova_String_1_Nova_construct(0,
+					(char*)("testEmbeddedPropertyAssignments")),
+				nova_Nova_String_1_Nova_construct(0,
+					(char*)("Testing embedded property assignments")));
+			stabilitytest_Nova_AssignmentStability_Nova__testEmbeddedPrimitiveAssignmentsTestCase = novex_nest_Nova_TestCase_Nova_construct(0,
+				nova_Nova_String_1_Nova_construct(0,
+					(char*)("testEmbeddedPrimitiveAssignments")),
+				nova_Nova_String_1_Nova_construct(0,
+					(char*)("Testing embedded primitive assignments")));
+			stabilitytest_Nova_AssignmentStability_Nova__runTestsTestRunner = novex_nest_Nova_TestRunnerModel_Nova_construct(0,
+				generated8(0,
+					stabilitytest_Nova_AssignmentStability_Nova__testEmbeddedPropertyAssignmentsTestCase,
+				stabilitytest_Nova_AssignmentStability_Nova__testEmbeddedPrimitiveAssignmentsTestCase),
+			0);
+		}
 	}
 }
 
-stabilitytest_Nova_AssignmentStability* stabilitytest_Nova_AssignmentStability_Nova_construct(stabilitytest_Nova_AssignmentStability* this, nova_exception_Nova_ExceptionData* exceptionData, stabilitytest_Nova_StabilityTest* program)
+stabilitytest_Nova_AssignmentStability* stabilitytest_Nova_AssignmentStability_Nova_construct(stabilitytest_Nova_AssignmentStability* this)
 {
 	CCLASS_NEW(stabilitytest_Nova_AssignmentStability, this,);
-	this->vtable = &stabilitytest_AssignmentStability_Extension_VTable_val;
-	nova_Nova_Object_Nova_super((nova_Nova_Object*)this, exceptionData);
-	stabilitytest_Nova_StabilityTestCase_Nova_super((stabilitytest_Nova_StabilityTestCase*)this, exceptionData);
-	stabilitytest_Nova_AssignmentStability_Nova_super(this, exceptionData);
+	this->vtable = &stabilitytest_Nova_AssignmentStability_VTable_val;
+	nova_Nova_Object_Nova_super((nova_Nova_Object*)this);
+	stabilitytest_Nova_AssignmentStability_Nova_super(this);
 	
-	{
-		stabilitytest_Nova_AssignmentStability_Nova_this(this, exceptionData, program);
-	}
-	
-	return this;
+	return stabilitytest_Nova_AssignmentStability_Nova_this((stabilitytest_Nova_AssignmentStability*)(this));
 }
 
-void stabilitytest_Nova_AssignmentStability_Nova_destroy(stabilitytest_Nova_AssignmentStability** this, nova_exception_Nova_ExceptionData* exceptionData)
+void stabilitytest_Nova_AssignmentStability_Nova_destroy(stabilitytest_Nova_AssignmentStability** this)
 {
 	if (!*this)
 	{
 		return;
 	}
 	
+	novex_nest_Nova_TestRunnerModel_Nova_destroy(&(*this)->stabilitytest_Nova_AssignmentStability_Nova_model);
 	
 	NOVA_FREE(*this);
 }
 
-void stabilitytest_Nova_AssignmentStability_Nova_this(stabilitytest_Nova_AssignmentStability* this, nova_exception_Nova_ExceptionData* exceptionData, stabilitytest_Nova_StabilityTest* program)
-{
-	stabilitytest_Nova_StabilityTestCase_Nova_this((stabilitytest_Nova_StabilityTestCase*)(this), exceptionData, program);
-}
-
-void stabilitytest_Nova_AssignmentStability_Nova_test(stabilitytest_Nova_AssignmentStability* this, nova_exception_Nova_ExceptionData* exceptionData)
+void stabilitytest_Nova_AssignmentStability_Nova_testEmbeddedPropertyAssignments(stabilitytest_Nova_AssignmentStability* this, nova_io_Nova_OutputStream* out)
 {
 	stabilitytest_Nova_ClassWithProperties* l1_Nova_props = (stabilitytest_Nova_ClassWithProperties*)nova_null;
 	int l1_Nova_num = 0;
+	
+	out = (nova_io_Nova_OutputStream*)(out == 0 ? (nova_Nova_Object*)nova_io_Nova_Console_Nova_out : (nova_Nova_Object*)out);
+	nova_io_Nova_OutputStream_virtual_Nova_write((nova_io_Nova_OutputStream*)(out),
+		nova_Nova_String_1_Nova_construct(0,
+			(char*)("Testing embedded property assignments ")));
+	l1_Nova_props = stabilitytest_Nova_ClassWithProperties_Nova_construct(0);
+	l1_Nova_num = stabilitytest_Nova_ClassWithProperties_Mutatorfunc_Nova_prop1((stabilitytest_Nova_ClassWithProperties*)(l1_Nova_props),
+		stabilitytest_Nova_ClassWithProperties_Mutator_Nova_prop2((stabilitytest_Nova_ClassWithProperties*)(l1_Nova_props),
+	1));
+	novex_nest_Bool_Nova_Nest1Bool_char_String_char_Nova_toBe((novex_nest_Bool_Nova_Nest1Bool*)(novex_nest_Nova_Nest_char_Nest1Bool45_static_Nova_expect((novex_nest_Nova_Nest*)(this),
+				l1_Nova_num == 1 && stabilitytest_Nova_ClassWithProperties_Accessorfunc_Nova_prop1((stabilitytest_Nova_ClassWithProperties*)(l1_Nova_props)) == 1 && stabilitytest_Nova_ClassWithProperties_Accessor_Nova_prop2((stabilitytest_Nova_ClassWithProperties*)(l1_Nova_props)) == 1)),
+		1,
+		(nova_Nova_String*)(nova_operators_Nova_PlusOperator_virtual1_Nova_plus((nova_operators_Nova_PlusOperator*)(nova_Nova_String_1_Nova_construct(0,
+						(char*)("Did not return mutated property value correctly. Expected 1, 1, 1 but received "))),
+				(nova_Nova_Object*)(nova_operators_Nova_PlusOperator_virtual1_Nova_plus((nova_operators_Nova_PlusOperator*)(nova_primitive_number_Nova_Int_static_Nova_toString((nova_primitive_number_Nova_Int*)(0),
+								(l1_Nova_num))),
+						(nova_Nova_Object*)(nova_operators_Nova_PlusOperator_virtual1_Nova_plus((nova_operators_Nova_PlusOperator*)(nova_Nova_String_1_Nova_construct(0,
+										(char*)(", "))),
+								(nova_Nova_Object*)(nova_operators_Nova_PlusOperator_virtual1_Nova_plus((nova_operators_Nova_PlusOperator*)(nova_primitive_number_Nova_Int_static_Nova_toString((nova_primitive_number_Nova_Int*)(0),
+												(stabilitytest_Nova_ClassWithProperties_Accessorfunc_Nova_prop1((stabilitytest_Nova_ClassWithProperties*)(l1_Nova_props))))),
+										(nova_Nova_Object*)(nova_operators_Nova_PlusOperator_virtual1_Nova_plus((nova_operators_Nova_PlusOperator*)(nova_Nova_String_1_Nova_construct(0,
+														(char*)(", "))),
+												(nova_Nova_Object*)(nova_operators_Nova_PlusOperator_virtual1_Nova_plus((nova_operators_Nova_PlusOperator*)(nova_primitive_number_Nova_Int_static_Nova_toString((nova_primitive_number_Nova_Int*)(0),
+																(stabilitytest_Nova_ClassWithProperties_Accessor_Nova_prop2((stabilitytest_Nova_ClassWithProperties*)(l1_Nova_props))))),
+														(nova_Nova_Object*)(nova_Nova_String_1_Nova_construct(0,
+																(char*)(""))))))))))))))));
+}
+
+void stabilitytest_Nova_AssignmentStability_Nova_testEmbeddedPrimitiveAssignments(stabilitytest_Nova_AssignmentStability* this, nova_io_Nova_OutputStream* out)
+{
 	char l1_Nova_a = 0;
 	char l1_Nova_b = 0;
 	char l1_Nova_c = 0;
 	
-	nova_io_Nova_Console_0_static_Nova_write(0, exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("Checking embedded property assignments... ")));
-	l1_Nova_props = stabilitytest_Nova_ClassWithProperties_Nova_construct(0, exceptionData);
-	l1_Nova_num = stabilitytest_Nova_ClassWithProperties_Mutator_Nova_prop1(l1_Nova_props, exceptionData, stabilitytest_Nova_ClassWithProperties_Mutator_Nova_prop2(l1_Nova_props, exceptionData, 1));
-	stabilitytest_Nova_StabilityTest_Nova_fail(this->stabilitytest_Nova_StabilityTestCase_Nova_program, exceptionData, (nova_Nova_String*)(nova_Nova_String_Nova_plus(nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("Did not return mutated property value correctly. Expected 1, 1, 1 but received ")), exceptionData, (nova_Nova_String*)(nova_Nova_String_Nova_plus(nova_primitive_number_Nova_Int_static_Nova_toString(0, exceptionData, (l1_Nova_num)), exceptionData, (nova_Nova_String*)(nova_Nova_String_Nova_plus(nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)(", ")), exceptionData, (nova_Nova_String*)(nova_Nova_String_Nova_plus(nova_primitive_number_Nova_Int_static_Nova_toString(0, exceptionData, (stabilitytest_Nova_ClassWithProperties_Accessor_Nova_prop1(l1_Nova_props, exceptionData))), exceptionData, (nova_Nova_String*)(nova_Nova_String_Nova_plus(nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)(", ")), exceptionData, (nova_Nova_String*)(nova_Nova_String_Nova_plus(nova_primitive_number_Nova_Int_static_Nova_toString(0, exceptionData, (stabilitytest_Nova_ClassWithProperties_Accessor_Nova_prop2(l1_Nova_props, exceptionData))), exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("")))))))))))))), l1_Nova_num != 1 || stabilitytest_Nova_ClassWithProperties_Accessor_Nova_prop1(l1_Nova_props, exceptionData) != 1 || stabilitytest_Nova_ClassWithProperties_Accessor_Nova_prop2(l1_Nova_props, exceptionData) != 1);
-	nova_io_Nova_Console_1_static_Nova_writeLine(0, exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("OK")));
-	nova_io_Nova_Console_0_static_Nova_write(0, exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("Checking embedded primitive assignments... ")));
+	out = (nova_io_Nova_OutputStream*)(out == 0 ? (nova_Nova_Object*)nova_io_Nova_Console_Nova_out : (nova_Nova_Object*)out);
+	nova_io_Nova_OutputStream_virtual_Nova_write((nova_io_Nova_OutputStream*)(out),
+		nova_Nova_String_1_Nova_construct(0,
+			(char*)("Testing embedded primitive assignments ")));
 	l1_Nova_a = l1_Nova_b = l1_Nova_c = 1;
-	stabilitytest_Nova_StabilityTest_Nova_fail(this->stabilitytest_Nova_StabilityTestCase_Nova_program, exceptionData, (nova_Nova_String*)(nova_Nova_String_Nova_plus(nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("Did not set assigned primitive values correctly. Expected 1, 1, 1 but received ")), exceptionData, (nova_Nova_String*)(nova_Nova_String_Nova_plus(nova_primitive_number_Nova_Int_static_Nova_toString(0, exceptionData, (l1_Nova_a)), exceptionData, (nova_Nova_String*)(nova_Nova_String_Nova_plus(nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)(", ")), exceptionData, (nova_Nova_String*)(nova_Nova_String_Nova_plus(nova_primitive_number_Nova_Int_static_Nova_toString(0, exceptionData, (l1_Nova_b)), exceptionData, (nova_Nova_String*)(nova_Nova_String_Nova_plus(nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)(", ")), exceptionData, (nova_Nova_String*)(nova_Nova_String_Nova_plus(nova_primitive_number_Nova_Int_static_Nova_toString(0, exceptionData, (l1_Nova_c)), exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("")))))))))))))), l1_Nova_a != 1 || l1_Nova_b != 1 || l1_Nova_c != 1);
-	nova_io_Nova_Console_1_static_Nova_writeLine(0, exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("OK")));
+	novex_nest_Bool_Nova_Nest1Bool_char_String_char_Nova_toBe((novex_nest_Bool_Nova_Nest1Bool*)(novex_nest_Nova_Nest_char_Nest1Bool46_static_Nova_expect((novex_nest_Nova_Nest*)(this),
+		l1_Nova_a == 1 && l1_Nova_b == 1 && l1_Nova_c == 1)),
+		1,
+		(nova_Nova_String*)(nova_operators_Nova_PlusOperator_virtual1_Nova_plus((nova_operators_Nova_PlusOperator*)(nova_Nova_String_1_Nova_construct(0,
+						(char*)("Did not set assigned primitive values correctly. Expected 1, 1, 1 but received "))),
+				(nova_Nova_Object*)(nova_operators_Nova_PlusOperator_virtual1_Nova_plus((nova_operators_Nova_PlusOperator*)(nova_primitive_number_Nova_Int_static_Nova_toString((nova_primitive_number_Nova_Int*)(0),
+								(l1_Nova_a))),
+						(nova_Nova_Object*)(nova_operators_Nova_PlusOperator_virtual1_Nova_plus((nova_operators_Nova_PlusOperator*)(nova_Nova_String_1_Nova_construct(0,
+										(char*)(", "))),
+								(nova_Nova_Object*)(nova_operators_Nova_PlusOperator_virtual1_Nova_plus((nova_operators_Nova_PlusOperator*)(nova_primitive_number_Nova_Int_static_Nova_toString((nova_primitive_number_Nova_Int*)(0),
+												(l1_Nova_b))),
+										(nova_Nova_Object*)(nova_operators_Nova_PlusOperator_virtual1_Nova_plus((nova_operators_Nova_PlusOperator*)(nova_Nova_String_1_Nova_construct(0,
+														(char*)(", "))),
+												(nova_Nova_Object*)(nova_operators_Nova_PlusOperator_virtual1_Nova_plus((nova_operators_Nova_PlusOperator*)(nova_primitive_number_Nova_Int_static_Nova_toString((nova_primitive_number_Nova_Int*)(0),
+																(l1_Nova_c))),
+														(nova_Nova_Object*)(nova_Nova_String_1_Nova_construct(0,
+																(char*)(""))))))))))))))));
 }
 
-void stabilitytest_Nova_AssignmentStability_Nova_super(stabilitytest_Nova_AssignmentStability* this, nova_exception_Nova_ExceptionData* exceptionData)
+void stabilitytest_Nova_AssignmentStability_Nova_runTests(stabilitytest_Nova_AssignmentStability* this, stabilitytest_Nova_AssignmentStability_closure518_Nova_onResult stabilitytest_Nova_AssignmentStability_Nova_onResult, void* stabilitytest_Nova_AssignmentStability_ref_Nova_onResult, void* stabilitytest_Nova_AssignmentStability_context_Nova_onResult, nova_io_Nova_OutputStream* out)
 {
-}
-
-void stabilitytest_Nova_AssignmentStabilityFunctionMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData)
-{
+	Context200* contextArg179 = NOVA_MALLOC(sizeof(Context200));
+	nova_time_Nova_Timer* l1_Nova_testEmbeddedPropertyAssignmentsTimer = (nova_time_Nova_Timer*)nova_null;
+	nova_time_Nova_Timer* l1_Nova_testEmbeddedPrimitiveAssignmentsTimer = (nova_time_Nova_Timer*)nova_null;
+	
+	stabilitytest_Nova_AssignmentStability_Nova_onResult = (stabilitytest_Nova_AssignmentStability_closure518_Nova_onResult)(stabilitytest_Nova_AssignmentStability_Nova_onResult == 0 ? (stabilitytest_Nova_AssignmentStability_closure518_Nova_onResult)&stabilitytest_Nova_AssignmentStability_Nova_lambda179 : stabilitytest_Nova_AssignmentStability_Nova_onResult);
+	stabilitytest_Nova_AssignmentStability_ref_Nova_onResult = (void*)(stabilitytest_Nova_AssignmentStability_ref_Nova_onResult == 0 ? (void*)this : stabilitytest_Nova_AssignmentStability_ref_Nova_onResult);
+	stabilitytest_Nova_AssignmentStability_context_Nova_onResult = (void*)(stabilitytest_Nova_AssignmentStability_context_Nova_onResult == 0 ? (void*)contextArg179 : stabilitytest_Nova_AssignmentStability_context_Nova_onResult);
+	out = (nova_io_Nova_OutputStream*)(out == 0 ? (nova_Nova_Object*)nova_io_Nova_Console_Nova_out : (nova_Nova_Object*)out);
+	nova_io_Nova_FancyOutputStream_1_Nova_writeHeader((nova_io_Nova_FancyOutputStream*)(novex_nest_Nova_Nest_Nova_out),
+		nova_Nova_String_1_Nova_construct(0,
+			(char*)("Testing AssignmentStability")),
+		0,
+		0,
+		(int)(intptr_t)nova_null);
+	l1_Nova_testEmbeddedPropertyAssignmentsTimer = nova_time_Nova_Timer_Nova_start((nova_time_Nova_Timer*)(nova_time_Nova_Timer_Nova_construct(0)));
+	TRY
+	{
+		nova_exception_Nova_ExceptionData_Nova_addCaught(exceptionData, novex_nest_Nova_NestException_VTable_val.classInstance, 0);
+		
+		{
+			novex_nest_Nova_TestResult* l9_Nova_testResult = (novex_nest_Nova_TestResult*)nova_null;
+			
+			stabilitytest_Nova_AssignmentStability_Nova_testEmbeddedPropertyAssignments((stabilitytest_Nova_AssignmentStability*)(this),
+			out);
+			nova_time_Nova_Timer_virtual_Nova_stop((nova_time_Nova_Timer*)(l1_Nova_testEmbeddedPropertyAssignmentsTimer));
+			nova_io_Nova_OutputStream_virtual_Nova_write((nova_io_Nova_OutputStream*)(out),
+				nova_Nova_String_1_Nova_construct(0,
+					(char*)("- Success\n")));
+			l9_Nova_testResult = novex_nest_Nova_TestResult_Nova_construct(0,
+				1,
+				l1_Nova_testEmbeddedPropertyAssignmentsTimer,
+			stabilitytest_Nova_AssignmentStability_Nova__testEmbeddedPropertyAssignmentsTestCase);
+			stabilitytest_Nova_AssignmentStability_Nova_onResult(stabilitytest_Nova_AssignmentStability_ref_Nova_onResult,
+				l9_Nova_testResult,
+			stabilitytest_Nova_AssignmentStability_context_Nova_onResult);
+		}
+	}
+	CATCH (novex_nest_Nova_NestException_VTable_val.classInstance)
+	{
+		novex_nest_Nova_NestException* l14_Nova_e = (novex_nest_Nova_NestException*)nova_null;
+		novex_nest_Nova_TestResult* l14_Nova_testResult = (novex_nest_Nova_TestResult*)nova_null;
+		
+		l14_Nova_e = (void*)thrownData->nova_exception_Nova_ExceptionData_Nova_thrownException;
+		nova_time_Nova_Timer_virtual_Nova_stop((nova_time_Nova_Timer*)(l1_Nova_testEmbeddedPropertyAssignmentsTimer));
+		nova_io_Nova_OutputStream_virtual_Nova_write((nova_io_Nova_OutputStream*)(out),
+			(nova_Nova_String*)(nova_operators_Nova_PlusOperator_virtual1_Nova_plus((nova_operators_Nova_PlusOperator*)(nova_Nova_String_1_Nova_construct(0,
+							(char*)("- Failure: "))),
+					(nova_Nova_Object*)(nova_operators_Nova_PlusOperator_virtual1_Nova_plus((nova_operators_Nova_PlusOperator*)((l14_Nova_e->nova_exception_Nova_Exception_Nova_message)),
+							(nova_Nova_Object*)(nova_Nova_String_1_Nova_construct(0,
+									(char*)("\n"))))))));
+		l14_Nova_testResult = novex_nest_Nova_TestResult_Nova_construct(0,
+			0,
+			l1_Nova_testEmbeddedPropertyAssignmentsTimer,
+		stabilitytest_Nova_AssignmentStability_Nova__testEmbeddedPropertyAssignmentsTestCase);
+		stabilitytest_Nova_AssignmentStability_Nova_onResult(stabilitytest_Nova_AssignmentStability_ref_Nova_onResult,
+			l14_Nova_testResult,
+		stabilitytest_Nova_AssignmentStability_context_Nova_onResult);
+	}
+	FINALLY
 	{
 	}
+	END_TRY;
+	l1_Nova_testEmbeddedPrimitiveAssignmentsTimer = nova_time_Nova_Timer_Nova_start((nova_time_Nova_Timer*)(nova_time_Nova_Timer_Nova_construct(0)));
+	TRY
+	{
+		nova_exception_Nova_ExceptionData_Nova_addCaught(exceptionData, novex_nest_Nova_NestException_VTable_val.classInstance, 0);
+		
+		{
+			novex_nest_Nova_TestResult* l42_Nova_testResult = (novex_nest_Nova_TestResult*)nova_null;
+			
+			stabilitytest_Nova_AssignmentStability_Nova_testEmbeddedPrimitiveAssignments((stabilitytest_Nova_AssignmentStability*)(this),
+			out);
+			nova_time_Nova_Timer_virtual_Nova_stop((nova_time_Nova_Timer*)(l1_Nova_testEmbeddedPrimitiveAssignmentsTimer));
+			nova_io_Nova_OutputStream_virtual_Nova_write((nova_io_Nova_OutputStream*)(out),
+				nova_Nova_String_1_Nova_construct(0,
+					(char*)("- Success\n")));
+			l42_Nova_testResult = novex_nest_Nova_TestResult_Nova_construct(0,
+				1,
+				l1_Nova_testEmbeddedPrimitiveAssignmentsTimer,
+			stabilitytest_Nova_AssignmentStability_Nova__testEmbeddedPrimitiveAssignmentsTestCase);
+			stabilitytest_Nova_AssignmentStability_Nova_onResult(stabilitytest_Nova_AssignmentStability_ref_Nova_onResult,
+				l42_Nova_testResult,
+			stabilitytest_Nova_AssignmentStability_context_Nova_onResult);
+		}
+	}
+	CATCH (novex_nest_Nova_NestException_VTable_val.classInstance)
+	{
+		novex_nest_Nova_NestException* l47_Nova_e = (novex_nest_Nova_NestException*)nova_null;
+		novex_nest_Nova_TestResult* l47_Nova_testResult = (novex_nest_Nova_TestResult*)nova_null;
+		
+		l47_Nova_e = (void*)thrownData->nova_exception_Nova_ExceptionData_Nova_thrownException;
+		nova_time_Nova_Timer_virtual_Nova_stop((nova_time_Nova_Timer*)(l1_Nova_testEmbeddedPrimitiveAssignmentsTimer));
+		nova_io_Nova_OutputStream_virtual_Nova_write((nova_io_Nova_OutputStream*)(out),
+			(nova_Nova_String*)(nova_operators_Nova_PlusOperator_virtual1_Nova_plus((nova_operators_Nova_PlusOperator*)(nova_Nova_String_1_Nova_construct(0,
+							(char*)("- Failure: "))),
+					(nova_Nova_Object*)(nova_operators_Nova_PlusOperator_virtual1_Nova_plus((nova_operators_Nova_PlusOperator*)((l47_Nova_e->nova_exception_Nova_Exception_Nova_message)),
+							(nova_Nova_Object*)(nova_Nova_String_1_Nova_construct(0,
+									(char*)("\n"))))))));
+		l47_Nova_testResult = novex_nest_Nova_TestResult_Nova_construct(0,
+			0,
+			l1_Nova_testEmbeddedPrimitiveAssignmentsTimer,
+		stabilitytest_Nova_AssignmentStability_Nova__testEmbeddedPrimitiveAssignmentsTestCase);
+		stabilitytest_Nova_AssignmentStability_Nova_onResult(stabilitytest_Nova_AssignmentStability_ref_Nova_onResult,
+			l47_Nova_testResult,
+		stabilitytest_Nova_AssignmentStability_context_Nova_onResult);
+	}
+	FINALLY
+	{
+	}
+	END_TRY;
+	nova_io_Nova_OutputStream_virtual_Nova_write((nova_io_Nova_OutputStream*)(out),
+		nova_Nova_String_1_Nova_construct(0,
+			(char*)("\n")));
 }
 
-stabilitytest_Nova_AssignmentStabilityFunctionMap* stabilitytest_Nova_AssignmentStabilityFunctionMap_Nova_construct(stabilitytest_Nova_AssignmentStabilityFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
-{
-	CCLASS_NEW(stabilitytest_Nova_AssignmentStabilityFunctionMap, this,);
-	this->vtable = &stabilitytest_AssignmentStability_AssignmentStabilityFunctionMap_Extension_VTable_val;
-	nova_Nova_Object_Nova_super((nova_Nova_Object*)this, exceptionData);
-	nova_meta_Nova_FunctionMap_Nova_super((nova_meta_Nova_FunctionMap*)this, exceptionData);
-	stabilitytest_Nova_StabilityTestCaseFunctionMap_Nova_super((stabilitytest_Nova_StabilityTestCaseFunctionMap*)this, exceptionData);
-	stabilitytest_Nova_AssignmentStabilityFunctionMap_Nova_super(this, exceptionData);
-	
-	{
-		stabilitytest_Nova_AssignmentStabilityFunctionMap_Nova_this(this, exceptionData);
-	}
-	
+stabilitytest_Nova_AssignmentStability* stabilitytest_Nova_AssignmentStability_Nova_this(stabilitytest_Nova_AssignmentStability* this) {
 	return this;
 }
-
-void stabilitytest_Nova_AssignmentStabilityFunctionMap_Nova_destroy(stabilitytest_Nova_AssignmentStabilityFunctionMap** this, nova_exception_Nova_ExceptionData* exceptionData)
+nova_datastruct_list_Nova_Array* generated8(stabilitytest_Nova_AssignmentStability* this, novex_nest_Nova_TestCase* value0, novex_nest_Nova_TestCase* value1)
 {
-	if (!*this)
-	{
-		return;
-	}
+	novex_nest_Nova_TestCase** l1_Nova_temp = (novex_nest_Nova_TestCase**)nova_null;
 	
-	
-	NOVA_FREE(*this);
+	l1_Nova_temp = (novex_nest_Nova_TestCase**)NOVA_MALLOC(sizeof(novex_nest_Nova_TestCase) * 2);
+	l1_Nova_temp[0] = value0;
+	l1_Nova_temp[1] = value1;
+	return nova_datastruct_list_Nova_Array_2_Nova_construct(0,
+		(nova_Nova_Object**)(l1_Nova_temp),
+	2);
 }
 
-void stabilitytest_Nova_AssignmentStabilityFunctionMap_Nova_this(stabilitytest_Nova_AssignmentStabilityFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+void stabilitytest_Nova_AssignmentStability_Nova_lambda179(stabilitytest_Nova_AssignmentStability* this, novex_nest_Nova_TestResult* _1, Context200* context)
 {
 }
 
-stabilitytest_Nova_AssignmentStability* stabilitytest_Nova_AssignmentStabilityFunctionMap_functionMapAssignmentStabilityFunctionMap_Nova_construct(stabilitytest_Nova_AssignmentStabilityFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, stabilitytest_Nova_StabilityTest* program)
+novex_nest_Nova_TestRunnerModel* stabilitytest_Nova_AssignmentStability_Accessorfunc_Nova_model(stabilitytest_Nova_AssignmentStability* this)
 {
-	return stabilitytest_Nova_AssignmentStability_Nova_construct(0, exceptionData, program);
+	return stabilitytest_Nova_AssignmentStability_Nova__runTestsTestRunner;
 }
 
-void stabilitytest_Nova_AssignmentStabilityFunctionMap_functionMap_Nova_test(stabilitytest_Nova_AssignmentStabilityFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, stabilitytest_Nova_AssignmentStability* reference)
-{
-	stabilitytest_Nova_AssignmentStability_Nova_test(reference, exceptionData);
-}
 
-void stabilitytest_Nova_AssignmentStabilityFunctionMap_Nova_super(stabilitytest_Nova_AssignmentStabilityFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+void stabilitytest_Nova_AssignmentStability_Nova_super(stabilitytest_Nova_AssignmentStability* this)
 {
-}
-
-void stabilitytest_Nova_AssignmentStabilityPropertyMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData)
-{
-	{
-	}
-}
-
-stabilitytest_Nova_AssignmentStabilityPropertyMap* stabilitytest_Nova_AssignmentStabilityPropertyMap_Nova_construct(stabilitytest_Nova_AssignmentStabilityPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData)
-{
-	CCLASS_NEW(stabilitytest_Nova_AssignmentStabilityPropertyMap, this,);
-	this->vtable = &stabilitytest_AssignmentStability_AssignmentStabilityPropertyMap_Extension_VTable_val;
-	nova_Nova_Object_Nova_super((nova_Nova_Object*)this, exceptionData);
-	nova_meta_Nova_PropertyMap_Nova_super((nova_meta_Nova_PropertyMap*)this, exceptionData);
-	stabilitytest_Nova_StabilityTestCasePropertyMap_Nova_super((stabilitytest_Nova_StabilityTestCasePropertyMap*)this, exceptionData);
-	stabilitytest_Nova_AssignmentStabilityPropertyMap_Nova_super(this, exceptionData);
-	
-	{
-		stabilitytest_Nova_AssignmentStabilityPropertyMap_Nova_this(this, exceptionData);
-	}
-	
-	return this;
-}
-
-void stabilitytest_Nova_AssignmentStabilityPropertyMap_Nova_destroy(stabilitytest_Nova_AssignmentStabilityPropertyMap** this, nova_exception_Nova_ExceptionData* exceptionData)
-{
-	if (!*this)
-	{
-		return;
-	}
-	
-	
-	NOVA_FREE(*this);
-}
-
-void stabilitytest_Nova_AssignmentStabilityPropertyMap_Nova_this(stabilitytest_Nova_AssignmentStabilityPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData)
-{
-}
-
-void stabilitytest_Nova_AssignmentStabilityPropertyMap_Nova_super(stabilitytest_Nova_AssignmentStabilityPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData)
-{
+	this->stabilitytest_Nova_AssignmentStability_Nova_model = (novex_nest_Nova_TestRunnerModel*)nova_null;
 }
 

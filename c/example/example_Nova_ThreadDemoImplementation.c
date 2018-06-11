@@ -31,48 +31,77 @@
 #include <nova/meta/nova_meta_Nova_FunctionMap.h>
 #include <nova/meta/nova_meta_Nova_PropertyMap.h>
 #include <nova/regex/nova_regex_Nova_Pattern.h>
-#include <nova/thread/nova_thread_Nova_Thread.h>
-#include <nova/thread/nova_thread_Nova_Thread.h>
+#include <example/example_Nova_Animal.h>
+#include <example/example_Nova_ArrayDemo.h>
+#include <example/example_Nova_BodyBuilder.h>
+#include <example/example_Nova_ClosureDemo.h>
+#include <example/example_Nova_Dog.h>
+#include <example/example_Nova_ExceptionHandlingDemo.h>
+#include <example/example_Nova_FileTest.h>
+#include <example/example_Nova_GenericDemo.h>
+#include <example/example_Nova_HashMapDemo.h>
+#include <example/example_Nova_HashSetDemo.h>
+#include <example/example_Nova_IntegerTest.h>
+#include <example/example_Nova_Lab.h>
+#include <example/example_Nova_MathDemo.h>
+#include <example/example_Nova_NestTest.h>
+#include <example/example_Nova_NonWholeDivisionException.h>
+#include <example/example_Nova_Person.h>
+#include <example/example_Nova_Polygon.h>
+#include <example/example_Nova_PolymorphismDemo.h>
+#include <example/example_Nova_QueueDemo.h>
+#include <example/example_Nova_Spider.h>
+#include <example/example_Nova_Square.h>
+#include <example/example_Nova_SvgChart.h>
+#include <example/example_Nova_SvgFractal.h>
+#include <example/example_Nova_T1.h>
+#include <example/example_Nova_T2.h>
+#include <example/example_Nova_Test.h>
+#include <example/example_Nova_ThreadDemo.h>
 #include <nova/thread/NativeThread.h>
+#include <nova/thread/nova_thread_Nova_ThreadLocal.h>
+#include <nova/thread/nova_thread_Nova_UncaughtExceptionHandler.h>
 #include <nova/NativeObject.h>
+#include <nova/operators/nova_operators_Nova_EqualsOperator.h>
+#include <nova/nova_Nova_Substring.h>
 
 
 
 CCLASS_PRIVATE
 (
 	example_Nova_ThreadDemoImplementation,
-	void (*nova_thread_Nova_Thread_Nova_action)(void*, nova_exception_Nova_ExceptionData*, void*);
-	void* nova_thread_Nova_Thread_context_Nova_action;
-	void* nova_thread_Nova_Thread_reference_Nova_action;
 	NOVA_THREAD_HANDLE* nova_thread_Nova_Thread_Nova_handle;
+	/*nova_thread_Nova_Thread_closure1412_Nova_action*/nova_funcStruct* nova_thread_Nova_Thread_Nova_action;
 	char nova_thread_Nova_Thread_Nova_useAction;
 	
 	long_long example_Nova_ThreadDemoImplementation_Nova_millis;
 	nova_Nova_String* example_Nova_ThreadDemoImplementation_Nova_word;
 	
 )
-void example_Nova_ThreadDemoImplementation_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData)
+char example_Nova_ThreadDemoImplementation_Nova_init_static_inited = 0;
+void example_Nova_ThreadDemoImplementation_Nova_init_static()
 {
-	{
+	if (!example_Nova_ThreadDemoImplementation_Nova_init_static_inited) {
+		example_Nova_ThreadDemoImplementation_Nova_init_static_inited = 1;
+		{
+		}
 	}
 }
 
-example_Nova_ThreadDemoImplementation* example_Nova_ThreadDemoImplementation_Nova_construct(example_Nova_ThreadDemoImplementation* this, nova_exception_Nova_ExceptionData* exceptionData, long_long millis, nova_Nova_String* word)
+example_Nova_ThreadDemoImplementation* example_Nova_ThreadDemoImplementation_Nova_construct(example_Nova_ThreadDemoImplementation* this, long_long millis, nova_Nova_String* word)
 {
 	CCLASS_NEW(example_Nova_ThreadDemoImplementation, this);
-	this->vtable = &example_ThreadDemoImplementation_Extension_VTable_val;
-	nova_Nova_Object_Nova_super((nova_Nova_Object*)this, exceptionData);
-	nova_thread_Nova_Thread_Nova_super((nova_thread_Nova_Thread*)this, exceptionData);
-	example_Nova_ThreadDemoImplementation_Nova_super(this, exceptionData);
+	this->vtable = &example_Nova_ThreadDemoImplementation_VTable_val;
+	nova_Nova_Object_Nova_super((nova_Nova_Object*)this);
+	nova_thread_Nova_Thread_Nova_super((nova_thread_Nova_Thread*)this);
+	example_Nova_ThreadDemoImplementation_Nova_super(this);
 	
-	{
-		example_Nova_ThreadDemoImplementation_Nova_this(this, exceptionData, millis, word);
-	}
-	
-	return this;
+	return example_Nova_ThreadDemoImplementation_Nova_this((example_Nova_ThreadDemoImplementation*)(this),
+		millis,
+	word);
 }
 
-void example_Nova_ThreadDemoImplementation_Nova_destroy(example_Nova_ThreadDemoImplementation** this, nova_exception_Nova_ExceptionData* exceptionData)
+void example_Nova_ThreadDemoImplementation_Nova_destroy(example_Nova_ThreadDemoImplementation** this)
 {
 	if (!*this)
 	{
@@ -80,125 +109,33 @@ void example_Nova_ThreadDemoImplementation_Nova_destroy(example_Nova_ThreadDemoI
 	}
 	
 	
-	nova_Nova_String_Nova_destroy(&(*this)->prv->example_Nova_ThreadDemoImplementation_Nova_word, exceptionData);
+	nova_Nova_String_Nova_destroy(&(*this)->prv->example_Nova_ThreadDemoImplementation_Nova_word);
 	NOVA_FREE((*this)->prv);
 	
 	NOVA_FREE(*this);
 }
 
-void example_Nova_ThreadDemoImplementation_Nova_this(example_Nova_ThreadDemoImplementation* this, nova_exception_Nova_ExceptionData* exceptionData, long_long millis, nova_Nova_String* word)
-{
+example_Nova_ThreadDemoImplementation* example_Nova_ThreadDemoImplementation_Nova_this(example_Nova_ThreadDemoImplementation* this, long_long millis, nova_Nova_String* word) {
 	this->prv->example_Nova_ThreadDemoImplementation_Nova_millis = millis;
 	this->prv->example_Nova_ThreadDemoImplementation_Nova_word = word;
+	return this;
 }
-
-void example_Nova_ThreadDemoImplementation_Nova_run(example_Nova_ThreadDemoImplementation* this, nova_exception_Nova_ExceptionData* exceptionData)
+void example_Nova_ThreadDemoImplementation_Nova_run(example_Nova_ThreadDemoImplementation* this)
 {
-	int l3_Nova_i = 0;
-	
-	l3_Nova_i = (int)0;
-	for (; l3_Nova_i < (int)10; l3_Nova_i++)
+	int l7_Nova_i;
+	l7_Nova_i = (int)0;
+	for (; l7_Nova_i < (int)10; l7_Nova_i++)
 	{
-		nova_io_Nova_Console_1_static_Nova_writeLine(0, exceptionData, this->prv->example_Nova_ThreadDemoImplementation_Nova_word);
-		nova_thread_Nova_Thread_static_Nova_sleep((nova_thread_Nova_Thread*)(this), exceptionData, this->prv->example_Nova_ThreadDemoImplementation_Nova_millis);
+		nova_io_Nova_Console_1_static_Nova_writeLine((nova_io_Nova_Console*)(0),
+		this->prv->example_Nova_ThreadDemoImplementation_Nova_word);
+		nova_thread_Nova_Thread_static_Nova_sleep((nova_thread_Nova_Thread*)(this),
+		this->prv->example_Nova_ThreadDemoImplementation_Nova_millis);
 	}
 }
 
-void example_Nova_ThreadDemoImplementation_Nova_super(example_Nova_ThreadDemoImplementation* this, nova_exception_Nova_ExceptionData* exceptionData)
+void example_Nova_ThreadDemoImplementation_Nova_super(example_Nova_ThreadDemoImplementation* this)
 {
 	this->prv->example_Nova_ThreadDemoImplementation_Nova_millis = 0;
 	this->prv->example_Nova_ThreadDemoImplementation_Nova_word = (nova_Nova_String*)nova_null;
-}
-
-void example_Nova_ThreadDemoImplementationFunctionMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData)
-{
-	{
-	}
-}
-
-example_Nova_ThreadDemoImplementationFunctionMap* example_Nova_ThreadDemoImplementationFunctionMap_Nova_construct(example_Nova_ThreadDemoImplementationFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
-{
-	CCLASS_NEW(example_Nova_ThreadDemoImplementationFunctionMap, this,);
-	this->vtable = &example_ThreadDemoImplementation_ThreadDemoImplementationFunctionMap_Extension_VTable_val;
-	nova_Nova_Object_Nova_super((nova_Nova_Object*)this, exceptionData);
-	nova_meta_Nova_FunctionMap_Nova_super((nova_meta_Nova_FunctionMap*)this, exceptionData);
-	nova_thread_Nova_ThreadFunctionMap_Nova_super((nova_thread_Nova_ThreadFunctionMap*)this, exceptionData);
-	example_Nova_ThreadDemoImplementationFunctionMap_Nova_super(this, exceptionData);
-	
-	{
-		example_Nova_ThreadDemoImplementationFunctionMap_Nova_this(this, exceptionData);
-	}
-	
-	return this;
-}
-
-void example_Nova_ThreadDemoImplementationFunctionMap_Nova_destroy(example_Nova_ThreadDemoImplementationFunctionMap** this, nova_exception_Nova_ExceptionData* exceptionData)
-{
-	if (!*this)
-	{
-		return;
-	}
-	
-	
-	NOVA_FREE(*this);
-}
-
-void example_Nova_ThreadDemoImplementationFunctionMap_Nova_this(example_Nova_ThreadDemoImplementationFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
-{
-}
-
-example_Nova_ThreadDemoImplementation* example_Nova_ThreadDemoImplementationFunctionMap_functionMapThreadDemoImplementationFunctionMap_Nova_construct(example_Nova_ThreadDemoImplementationFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, long_long millis, nova_Nova_String* word)
-{
-	return example_Nova_ThreadDemoImplementation_Nova_construct(0, exceptionData, millis, word);
-}
-
-void example_Nova_ThreadDemoImplementationFunctionMap_functionMap_Nova_run(example_Nova_ThreadDemoImplementationFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, example_Nova_ThreadDemoImplementation* reference)
-{
-	example_Nova_ThreadDemoImplementation_Nova_run(reference, exceptionData);
-}
-
-void example_Nova_ThreadDemoImplementationFunctionMap_Nova_super(example_Nova_ThreadDemoImplementationFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
-{
-}
-
-void example_Nova_ThreadDemoImplementationPropertyMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData)
-{
-	{
-	}
-}
-
-example_Nova_ThreadDemoImplementationPropertyMap* example_Nova_ThreadDemoImplementationPropertyMap_Nova_construct(example_Nova_ThreadDemoImplementationPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData)
-{
-	CCLASS_NEW(example_Nova_ThreadDemoImplementationPropertyMap, this,);
-	this->vtable = &example_ThreadDemoImplementation_ThreadDemoImplementationPropertyMap_Extension_VTable_val;
-	nova_Nova_Object_Nova_super((nova_Nova_Object*)this, exceptionData);
-	nova_meta_Nova_PropertyMap_Nova_super((nova_meta_Nova_PropertyMap*)this, exceptionData);
-	nova_thread_Nova_ThreadPropertyMap_Nova_super((nova_thread_Nova_ThreadPropertyMap*)this, exceptionData);
-	example_Nova_ThreadDemoImplementationPropertyMap_Nova_super(this, exceptionData);
-	
-	{
-		example_Nova_ThreadDemoImplementationPropertyMap_Nova_this(this, exceptionData);
-	}
-	
-	return this;
-}
-
-void example_Nova_ThreadDemoImplementationPropertyMap_Nova_destroy(example_Nova_ThreadDemoImplementationPropertyMap** this, nova_exception_Nova_ExceptionData* exceptionData)
-{
-	if (!*this)
-	{
-		return;
-	}
-	
-	
-	NOVA_FREE(*this);
-}
-
-void example_Nova_ThreadDemoImplementationPropertyMap_Nova_this(example_Nova_ThreadDemoImplementationPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData)
-{
-}
-
-void example_Nova_ThreadDemoImplementationPropertyMap_Nova_super(example_Nova_ThreadDemoImplementationPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData)
-{
 }
 

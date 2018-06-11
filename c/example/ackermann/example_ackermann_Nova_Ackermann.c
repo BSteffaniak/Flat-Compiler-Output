@@ -32,30 +32,32 @@
 #include <nova/meta/nova_meta_Nova_PropertyMap.h>
 #include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <nova/NativeObject.h>
+#include <nova/operators/nova_operators_Nova_EqualsOperator.h>
+#include <nova/nova_Nova_Substring.h>
 
 
 
-void example_ackermann_Nova_Ackermann_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData)
+char example_ackermann_Nova_Ackermann_Nova_init_static_inited = 0;
+void example_ackermann_Nova_Ackermann_Nova_init_static()
 {
-	{
+	if (!example_ackermann_Nova_Ackermann_Nova_init_static_inited) {
+		example_ackermann_Nova_Ackermann_Nova_init_static_inited = 1;
+		{
+		}
 	}
 }
 
-example_ackermann_Nova_Ackermann* example_ackermann_Nova_Ackermann_Nova_construct(example_ackermann_Nova_Ackermann* this, nova_exception_Nova_ExceptionData* exceptionData)
+example_ackermann_Nova_Ackermann* example_ackermann_Nova_Ackermann_Nova_construct(example_ackermann_Nova_Ackermann* this)
 {
 	CCLASS_NEW(example_ackermann_Nova_Ackermann, this,);
-	this->vtable = &example_ackermann_Ackermann_Extension_VTable_val;
-	nova_Nova_Object_Nova_super((nova_Nova_Object*)this, exceptionData);
-	example_ackermann_Nova_Ackermann_Nova_super(this, exceptionData);
+	this->vtable = &example_ackermann_Nova_Ackermann_VTable_val;
+	nova_Nova_Object_Nova_super((nova_Nova_Object*)this);
+	example_ackermann_Nova_Ackermann_Nova_super(this);
 	
-	{
-		example_ackermann_Nova_Ackermann_Nova_this(this, exceptionData);
-	}
-	
-	return this;
+	return example_ackermann_Nova_Ackermann_Nova_this((example_ackermann_Nova_Ackermann*)(this));
 }
 
-void example_ackermann_Nova_Ackermann_Nova_destroy(example_ackermann_Nova_Ackermann** this, nova_exception_Nova_ExceptionData* exceptionData)
+void example_ackermann_Nova_Ackermann_Nova_destroy(example_ackermann_Nova_Ackermann** this)
 {
 	if (!*this)
 	{
@@ -66,13 +68,19 @@ void example_ackermann_Nova_Ackermann_Nova_destroy(example_ackermann_Nova_Ackerm
 	NOVA_FREE(*this);
 }
 
-void example_ackermann_Nova_Ackermann_static_Nova_main(example_ackermann_Nova_Ackermann* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_list_Nova_Array* args)
+void example_ackermann_Nova_Ackermann_static_Nova_main(example_ackermann_Nova_Ackermann* this, nova_datastruct_list_Nova_Array* args)
 {
-	nova_io_Nova_Console_1_static_Nova_writeLine(0, exceptionData, (nova_Nova_String*)(nova_Nova_String_Nova_plus(nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("Ackermann: ")), exceptionData, nova_primitive_number_Nova_Int_static_Nova_toString(0, exceptionData, example_ackermann_Nova_Ackermann_static_Nova_run(0, exceptionData, 4, 1)))));
-	nova_io_Nova_Console_static_Nova_waitForEnter(0, exceptionData);
+	nova_io_Nova_Console_1_static_Nova_writeLine((nova_io_Nova_Console*)(0),
+		(nova_Nova_String*)(nova_operators_Nova_PlusOperator_virtual1_Nova_plus((nova_operators_Nova_PlusOperator*)(nova_Nova_String_1_Nova_construct(0,
+						(char*)("Ackermann: "))),
+				(nova_Nova_Object*)(nova_primitive_number_Nova_Int_static_Nova_toString((nova_primitive_number_Nova_Int*)(0),
+						example_ackermann_Nova_Ackermann_static_Nova_run(0,
+							4,
+	1))))));
+	nova_io_Nova_Console_static_Nova_waitForEnter((nova_io_Nova_Console*)(0));
 }
 
-int example_ackermann_Nova_Ackermann_static_Nova_run(example_ackermann_Nova_Ackermann* this, nova_exception_Nova_ExceptionData* exceptionData, int m, int n)
+int example_ackermann_Nova_Ackermann_static_Nova_run(example_ackermann_Nova_Ackermann* this, int m, int n)
 {
 	if (m == 0)
 	{
@@ -82,17 +90,23 @@ int example_ackermann_Nova_Ackermann_static_Nova_run(example_ackermann_Nova_Acke
 	{
 		if (n == 0)
 		{
-			return example_ackermann_Nova_Ackermann_static_Nova_run(0, exceptionData, m - 1, 1);
+			return example_ackermann_Nova_Ackermann_static_Nova_run(0,
+				m - 1,
+			1);
 		}
 		else if (n > 0)
 		{
-			return example_ackermann_Nova_Ackermann_static_Nova_run(0, exceptionData, m - 1, example_ackermann_Nova_Ackermann_static_Nova_run(0, exceptionData, m, n - 1));
+			return example_ackermann_Nova_Ackermann_static_Nova_run(0,
+				m - 1,
+				example_ackermann_Nova_Ackermann_static_Nova_run(0,
+					m,
+			n - 1));
 		}
 	}
 	return (int)0;
 }
 
-int example_ackermann_Nova_Ackermann_static_Nova_run2(example_ackermann_Nova_Ackermann* this, nova_exception_Nova_ExceptionData* exceptionData, int m, int n)
+int example_ackermann_Nova_Ackermann_static_Nova_run2(example_ackermann_Nova_Ackermann* this, int m, int n)
 {
 	if (m == 0)
 	{
@@ -102,121 +116,26 @@ int example_ackermann_Nova_Ackermann_static_Nova_run2(example_ackermann_Nova_Ack
 	{
 		if (n == 0)
 		{
-			return example_ackermann_Nova_Ackermann_static_Nova_run(0, exceptionData, m - 1, 1);
+			return example_ackermann_Nova_Ackermann_static_Nova_run(0,
+				m - 1,
+			1);
 		}
 		else if (n > 0)
 		{
-			return example_ackermann_Nova_Ackermann_static_Nova_run(0, exceptionData, m - 1, example_ackermann_Nova_Ackermann_static_Nova_run(0, exceptionData, m, n - 1));
+			return example_ackermann_Nova_Ackermann_static_Nova_run(0,
+				m - 1,
+				example_ackermann_Nova_Ackermann_static_Nova_run(0,
+					m,
+			n - 1));
 		}
 	}
 	return (int)0;
 }
 
-void example_ackermann_Nova_Ackermann_Nova_this(example_ackermann_Nova_Ackermann* this, nova_exception_Nova_ExceptionData* exceptionData)
-{
-}
-
-void example_ackermann_Nova_Ackermann_Nova_super(example_ackermann_Nova_Ackermann* this, nova_exception_Nova_ExceptionData* exceptionData)
-{
-}
-
-void example_ackermann_Nova_AckermannFunctionMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData)
-{
-	{
-	}
-}
-
-example_ackermann_Nova_AckermannFunctionMap* example_ackermann_Nova_AckermannFunctionMap_Nova_construct(example_ackermann_Nova_AckermannFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
-{
-	CCLASS_NEW(example_ackermann_Nova_AckermannFunctionMap, this,);
-	this->vtable = &example_ackermann_Ackermann_AckermannFunctionMap_Extension_VTable_val;
-	nova_Nova_Object_Nova_super((nova_Nova_Object*)this, exceptionData);
-	nova_meta_Nova_FunctionMap_Nova_super((nova_meta_Nova_FunctionMap*)this, exceptionData);
-	example_ackermann_Nova_AckermannFunctionMap_Nova_super(this, exceptionData);
-	
-	{
-		example_ackermann_Nova_AckermannFunctionMap_Nova_this(this, exceptionData);
-	}
-	
+example_ackermann_Nova_Ackermann* example_ackermann_Nova_Ackermann_Nova_this(example_ackermann_Nova_Ackermann* this) {
 	return this;
 }
-
-void example_ackermann_Nova_AckermannFunctionMap_Nova_destroy(example_ackermann_Nova_AckermannFunctionMap** this, nova_exception_Nova_ExceptionData* exceptionData)
-{
-	if (!*this)
-	{
-		return;
-	}
-	
-	
-	NOVA_FREE(*this);
-}
-
-void example_ackermann_Nova_AckermannFunctionMap_Nova_this(example_ackermann_Nova_AckermannFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
-{
-}
-
-example_ackermann_Nova_Ackermann* example_ackermann_Nova_AckermannFunctionMap_functionMapAckermannFunctionMap_Nova_construct(example_ackermann_Nova_AckermannFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
-{
-	return example_ackermann_Nova_Ackermann_Nova_construct(0, exceptionData);
-}
-
-void example_ackermann_Nova_AckermannFunctionMap_functionMap_static_Nova_main(example_ackermann_Nova_AckermannFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_list_Nova_Array* args)
-{
-	example_ackermann_Nova_Ackermann_static_Nova_main(0, exceptionData, args);
-}
-
-int example_ackermann_Nova_AckermannFunctionMap_functionMap_static_Nova_run(example_ackermann_Nova_AckermannFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, int m, int n)
-{
-	return example_ackermann_Nova_Ackermann_static_Nova_run(0, exceptionData, m, n);
-}
-
-int example_ackermann_Nova_AckermannFunctionMap_functionMap_static_Nova_run2(example_ackermann_Nova_AckermannFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, int m, int n)
-{
-	return example_ackermann_Nova_Ackermann_static_Nova_run2(0, exceptionData, m, n);
-}
-
-void example_ackermann_Nova_AckermannFunctionMap_Nova_super(example_ackermann_Nova_AckermannFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
-{
-}
-
-void example_ackermann_Nova_AckermannPropertyMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData)
-{
-	{
-	}
-}
-
-example_ackermann_Nova_AckermannPropertyMap* example_ackermann_Nova_AckermannPropertyMap_Nova_construct(example_ackermann_Nova_AckermannPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData)
-{
-	CCLASS_NEW(example_ackermann_Nova_AckermannPropertyMap, this,);
-	this->vtable = &example_ackermann_Ackermann_AckermannPropertyMap_Extension_VTable_val;
-	nova_Nova_Object_Nova_super((nova_Nova_Object*)this, exceptionData);
-	nova_meta_Nova_PropertyMap_Nova_super((nova_meta_Nova_PropertyMap*)this, exceptionData);
-	example_ackermann_Nova_AckermannPropertyMap_Nova_super(this, exceptionData);
-	
-	{
-		example_ackermann_Nova_AckermannPropertyMap_Nova_this(this, exceptionData);
-	}
-	
-	return this;
-}
-
-void example_ackermann_Nova_AckermannPropertyMap_Nova_destroy(example_ackermann_Nova_AckermannPropertyMap** this, nova_exception_Nova_ExceptionData* exceptionData)
-{
-	if (!*this)
-	{
-		return;
-	}
-	
-	
-	NOVA_FREE(*this);
-}
-
-void example_ackermann_Nova_AckermannPropertyMap_Nova_this(example_ackermann_Nova_AckermannPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData)
-{
-}
-
-void example_ackermann_Nova_AckermannPropertyMap_Nova_super(example_ackermann_Nova_AckermannPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+void example_ackermann_Nova_Ackermann_Nova_super(example_ackermann_Nova_Ackermann* this)
 {
 }
 

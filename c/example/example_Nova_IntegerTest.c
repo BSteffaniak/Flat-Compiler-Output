@@ -32,31 +32,62 @@
 #include <nova/meta/nova_meta_Nova_PropertyMap.h>
 #include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <nova/time/nova_time_Nova_Timer.h>
+#include <nova/datastruct/list/nova_datastruct_list_Nova_LinkedList.h>
+#include <nova/datastruct/list/nova_datastruct_list_Nova_ListNode.h>
+#include <example/example_Nova_Animal.h>
+#include <example/example_Nova_ArrayDemo.h>
+#include <example/example_Nova_BodyBuilder.h>
+#include <example/example_Nova_ClosureDemo.h>
+#include <example/example_Nova_Dog.h>
+#include <example/example_Nova_ExceptionHandlingDemo.h>
+#include <example/example_Nova_FileTest.h>
+#include <example/example_Nova_GenericDemo.h>
+#include <example/example_Nova_HashMapDemo.h>
+#include <example/example_Nova_HashSetDemo.h>
+#include <example/example_Nova_Lab.h>
+#include <example/example_Nova_MathDemo.h>
+#include <example/example_Nova_NestTest.h>
+#include <example/example_Nova_NonWholeDivisionException.h>
+#include <example/example_Nova_Person.h>
+#include <example/example_Nova_Polygon.h>
+#include <example/example_Nova_PolymorphismDemo.h>
+#include <example/example_Nova_QueueDemo.h>
+#include <example/example_Nova_Spider.h>
+#include <example/example_Nova_Square.h>
+#include <example/example_Nova_SvgChart.h>
+#include <example/example_Nova_SvgFractal.h>
+#include <example/example_Nova_T1.h>
+#include <example/example_Nova_T2.h>
+#include <example/example_Nova_Test.h>
+#include <example/example_Nova_ThreadDemo.h>
+#include <example/example_Nova_ThreadDemoImplementation.h>
 #include <nova/NativeObject.h>
+#include <nova/operators/nova_operators_Nova_EqualsOperator.h>
+#include <nova/nova_Nova_Substring.h>
 
 
 
-void example_Nova_IntegerTest_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData)
+char example_Nova_IntegerTest_Nova_init_static_inited = 0;
+void example_Nova_IntegerTest_Nova_init_static()
 {
-	{
+	if (!example_Nova_IntegerTest_Nova_init_static_inited) {
+		example_Nova_IntegerTest_Nova_init_static_inited = 1;
+		{
+		}
 	}
 }
 
-example_Nova_IntegerTest* example_Nova_IntegerTest_Nova_construct(example_Nova_IntegerTest* this, nova_exception_Nova_ExceptionData* exceptionData)
+example_Nova_IntegerTest* example_Nova_IntegerTest_Nova_construct(example_Nova_IntegerTest* this)
 {
 	CCLASS_NEW(example_Nova_IntegerTest, this,);
-	this->vtable = &example_IntegerTest_Extension_VTable_val;
-	nova_Nova_Object_Nova_super((nova_Nova_Object*)this, exceptionData);
-	example_Nova_IntegerTest_Nova_super(this, exceptionData);
+	this->vtable = &example_Nova_IntegerTest_VTable_val;
+	nova_Nova_Object_Nova_super((nova_Nova_Object*)this);
+	example_Nova_IntegerTest_Nova_super(this);
 	
-	{
-		example_Nova_IntegerTest_Nova_this(this, exceptionData);
-	}
-	
-	return this;
+	return example_Nova_IntegerTest_Nova_this((example_Nova_IntegerTest*)(this));
 }
 
-void example_Nova_IntegerTest_Nova_destroy(example_Nova_IntegerTest** this, nova_exception_Nova_ExceptionData* exceptionData)
+void example_Nova_IntegerTest_Nova_destroy(example_Nova_IntegerTest** this)
 {
 	if (!*this)
 	{
@@ -67,7 +98,7 @@ void example_Nova_IntegerTest_Nova_destroy(example_Nova_IntegerTest** this, nova
 	NOVA_FREE(*this);
 }
 
-void example_Nova_IntegerTest_static_Nova_main(example_Nova_IntegerTest* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_list_Nova_Array* args)
+void example_Nova_IntegerTest_static_Nova_main(example_Nova_IntegerTest* this, nova_datastruct_list_Nova_Array* args)
 {
 	char l1_Nova_c = 0;
 	
@@ -75,118 +106,38 @@ void example_Nova_IntegerTest_static_Nova_main(example_Nova_IntegerTest* this, n
 	while (l1_Nova_c == 'y' || l1_Nova_c == 'Y')
 	{
 		nova_time_Nova_Timer* l2_Nova_timer = (nova_time_Nova_Timer*)nova_null;
-		int l4_Nova_i = 0;
 		
-		l2_Nova_timer = nova_time_Nova_Timer_Nova_start(nova_time_Nova_Timer_Nova_construct(0, exceptionData), exceptionData);
-		l4_Nova_i = (int)0;
-		for (; l4_Nova_i < (int)999999; l4_Nova_i++)
+		l2_Nova_timer = nova_time_Nova_Timer_Nova_start((nova_time_Nova_Timer*)(nova_time_Nova_Timer_Nova_construct(0)));
+		int l14_Nova_i;
+		l14_Nova_i = (int)0;
+		for (; l14_Nova_i < (int)999999; l14_Nova_i++)
 		{
-			nova_primitive_number_Nova_Long_static_Nova_toString(0, exceptionData, l4_Nova_i);
+			nova_primitive_number_Nova_Long_static_Nova_toString((nova_primitive_number_Nova_Long*)(0),
+			l14_Nova_i);
 		}
-		nova_time_Nova_Timer_virtual_Nova_stop((nova_time_Nova_Timer*)(l2_Nova_timer), exceptionData);
-		nova_io_Nova_Console_1_static_Nova_writeLine(0, exceptionData, (nova_Nova_String*)(nova_Nova_String_Nova_plus(nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("Time taken: ")), exceptionData, (nova_Nova_String*)(nova_Nova_String_Nova_plus(nova_primitive_number_Nova_Long_static_Nova_toString(0, exceptionData, (nova_time_Nova_Timer_virtual_Accessor_Nova_duration((nova_time_Nova_Timer*)(l2_Nova_timer), exceptionData))), exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("ms")))))));
-		nova_io_Nova_Console_0_static_Nova_write(0, exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("Run again? (Y/N) ")));
-		l1_Nova_c = nova_io_Nova_Console_static_Nova_readChar(0, exceptionData);
+		nova_time_Nova_Timer_virtual_Nova_stop((nova_time_Nova_Timer*)(l2_Nova_timer));
+		nova_io_Nova_Console_1_static_Nova_writeLine((nova_io_Nova_Console*)(0),
+			(nova_Nova_String*)(nova_operators_Nova_PlusOperator_virtual1_Nova_plus((nova_operators_Nova_PlusOperator*)(nova_Nova_String_1_Nova_construct(0,
+							(char*)("Time taken: "))),
+					(nova_Nova_Object*)(nova_operators_Nova_PlusOperator_virtual1_Nova_plus((nova_operators_Nova_PlusOperator*)(nova_primitive_number_Nova_Long_static_Nova_toString((nova_primitive_number_Nova_Long*)(0),
+									(nova_time_Nova_Timer_virtual_Accessor_Nova_duration((nova_time_Nova_Timer*)(l2_Nova_timer))))),
+							(nova_Nova_Object*)(nova_Nova_String_1_Nova_construct(0,
+									(char*)("ms"))))))));
+		nova_io_Nova_Console_0_static_Nova_write((nova_io_Nova_Console*)(0),
+			nova_Nova_String_1_Nova_construct(0,
+				(char*)("Run again? (Y/N) ")));
+		l1_Nova_c = nova_io_Nova_Console_static_Nova_readChar((nova_io_Nova_Console*)(0));
 	}
-	nova_io_Nova_Console_1_static_Nova_writeLine(0, exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("\nFinished")));
-	nova_io_Nova_Console_static_Nova_waitForEnter(0, exceptionData);
+	nova_io_Nova_Console_1_static_Nova_writeLine((nova_io_Nova_Console*)(0),
+		nova_Nova_String_1_Nova_construct(0,
+			(char*)("\nFinished")));
+	nova_io_Nova_Console_static_Nova_waitForEnter((nova_io_Nova_Console*)(0));
 }
 
-void example_Nova_IntegerTest_Nova_this(example_Nova_IntegerTest* this, nova_exception_Nova_ExceptionData* exceptionData)
-{
-}
-
-void example_Nova_IntegerTest_Nova_super(example_Nova_IntegerTest* this, nova_exception_Nova_ExceptionData* exceptionData)
-{
-}
-
-void example_Nova_IntegerTestFunctionMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData)
-{
-	{
-	}
-}
-
-example_Nova_IntegerTestFunctionMap* example_Nova_IntegerTestFunctionMap_Nova_construct(example_Nova_IntegerTestFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
-{
-	CCLASS_NEW(example_Nova_IntegerTestFunctionMap, this,);
-	this->vtable = &example_IntegerTest_IntegerTestFunctionMap_Extension_VTable_val;
-	nova_Nova_Object_Nova_super((nova_Nova_Object*)this, exceptionData);
-	nova_meta_Nova_FunctionMap_Nova_super((nova_meta_Nova_FunctionMap*)this, exceptionData);
-	example_Nova_IntegerTestFunctionMap_Nova_super(this, exceptionData);
-	
-	{
-		example_Nova_IntegerTestFunctionMap_Nova_this(this, exceptionData);
-	}
-	
+example_Nova_IntegerTest* example_Nova_IntegerTest_Nova_this(example_Nova_IntegerTest* this) {
 	return this;
 }
-
-void example_Nova_IntegerTestFunctionMap_Nova_destroy(example_Nova_IntegerTestFunctionMap** this, nova_exception_Nova_ExceptionData* exceptionData)
-{
-	if (!*this)
-	{
-		return;
-	}
-	
-	
-	NOVA_FREE(*this);
-}
-
-void example_Nova_IntegerTestFunctionMap_Nova_this(example_Nova_IntegerTestFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
-{
-}
-
-example_Nova_IntegerTest* example_Nova_IntegerTestFunctionMap_functionMapIntegerTestFunctionMap_Nova_construct(example_Nova_IntegerTestFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
-{
-	return example_Nova_IntegerTest_Nova_construct(0, exceptionData);
-}
-
-void example_Nova_IntegerTestFunctionMap_functionMap_static_Nova_main(example_Nova_IntegerTestFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_list_Nova_Array* args)
-{
-	example_Nova_IntegerTest_static_Nova_main(0, exceptionData, args);
-}
-
-void example_Nova_IntegerTestFunctionMap_Nova_super(example_Nova_IntegerTestFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
-{
-}
-
-void example_Nova_IntegerTestPropertyMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData)
-{
-	{
-	}
-}
-
-example_Nova_IntegerTestPropertyMap* example_Nova_IntegerTestPropertyMap_Nova_construct(example_Nova_IntegerTestPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData)
-{
-	CCLASS_NEW(example_Nova_IntegerTestPropertyMap, this,);
-	this->vtable = &example_IntegerTest_IntegerTestPropertyMap_Extension_VTable_val;
-	nova_Nova_Object_Nova_super((nova_Nova_Object*)this, exceptionData);
-	nova_meta_Nova_PropertyMap_Nova_super((nova_meta_Nova_PropertyMap*)this, exceptionData);
-	example_Nova_IntegerTestPropertyMap_Nova_super(this, exceptionData);
-	
-	{
-		example_Nova_IntegerTestPropertyMap_Nova_this(this, exceptionData);
-	}
-	
-	return this;
-}
-
-void example_Nova_IntegerTestPropertyMap_Nova_destroy(example_Nova_IntegerTestPropertyMap** this, nova_exception_Nova_ExceptionData* exceptionData)
-{
-	if (!*this)
-	{
-		return;
-	}
-	
-	
-	NOVA_FREE(*this);
-}
-
-void example_Nova_IntegerTestPropertyMap_Nova_this(example_Nova_IntegerTestPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData)
-{
-}
-
-void example_Nova_IntegerTestPropertyMap_Nova_super(example_Nova_IntegerTestPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+void example_Nova_IntegerTest_Nova_super(example_Nova_IntegerTest* this)
 {
 }
 

@@ -31,192 +31,102 @@
 #include <nova/meta/nova_meta_Nova_FunctionMap.h>
 #include <nova/meta/nova_meta_Nova_PropertyMap.h>
 #include <nova/regex/nova_regex_Nova_Pattern.h>
+#include <stabilitytest/stabilitytest_Nova_AssignmentStability.h>
+#include <stabilitytest/stabilitytest_Nova_BoundedIntervalStability.h>
+#include <stabilitytest/stabilitytest_Nova_BoundlessIntervalStability.h>
+#include <stabilitytest/stabilitytest_Nova_CastStability.h>
+#include <stabilitytest/stabilitytest_Nova_ClassWithProperties.h>
+#include <stabilitytest/stabilitytest_Nova_ClientThread.h>
+#include <stabilitytest/stabilitytest_Nova_ClosureStability.h>
+#include <stabilitytest/stabilitytest_Nova_ExceptionStability.h>
+#include <stabilitytest/stabilitytest_Nova_ExternalInnerClassStability.h>
+#include <stabilitytest/stabilitytest_Nova_FancyOutputStreamTests.h>
+#include <stabilitytest/stabilitytest_Nova_FileStability.h>
+#include <stabilitytest/stabilitytest_Nova_FirstClassFunctionStability.h>
+#include <stabilitytest/stabilitytest_Nova_InnerClassStability.h>
+#include <stabilitytest/stabilitytest_Nova_IntervalStability.h>
+#include <stabilitytest/stabilitytest_Nova_LambdaStability.h>
+#include <stabilitytest/stabilitytest_Nova_LibraryLoadingStability.h>
+#include <stabilitytest/stabilitytest_Nova_NetworkStability.h>
+#include <stabilitytest/stabilitytest_Nova_Node.h>
 #include <stabilitytest/stabilitytest_Nova_PolymorphicSubClass.h>
+#include <stabilitytest/stabilitytest_Nova_PolymorphismStability.h>
+#include <stabilitytest/stabilitytest_Nova_PrimitiveOverloadStability.h>
+#include <stabilitytest/stabilitytest_Nova_RegexStability.h>
+#include <stabilitytest/stabilitytest_Nova_StabilityExceptionHandler.h>
+#include <stabilitytest/stabilitytest_Nova_StabilityTest.h>
+#include <stabilitytest/stabilitytest_Nova_StabilityTestCase.h>
+#include <stabilitytest/stabilitytest_Nova_StabilityTestException.h>
+#include <stabilitytest/stabilitytest_Nova_StaticImportStability.h>
+#include <stabilitytest/stabilitytest_Nova_SyntaxStability.h>
+#include <stabilitytest/stabilitytest_Nova_ThreadImplementation.h>
+#include <stabilitytest/stabilitytest_Nova_ThreadStability.h>
+#include <stabilitytest/stabilitytest_Nova_TimeStability.h>
+#include <stabilitytest/stabilitytest_Nova_ToStringStability.h>
+#include <stabilitytest/stabilitytest_Nova_UnstableException.h>
 #include <nova/NativeObject.h>
+#include <nova/operators/nova_operators_Nova_EqualsOperator.h>
+#include <nova/nova_Nova_Substring.h>
 
 
 
 
 
-void stabilitytest_Nova_PolymorphicSuperClass_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData)
+
+char stabilitytest_Nova_PolymorphicSuperClass_Nova_init_static_inited = 0;
+void stabilitytest_Nova_PolymorphicSuperClass_Nova_init_static()
 {
-	{
+	if (!stabilitytest_Nova_PolymorphicSuperClass_Nova_init_static_inited) {
+		stabilitytest_Nova_PolymorphicSuperClass_Nova_init_static_inited = 1;
+		{
+		}
 	}
 }
 
-stabilitytest_Nova_PolymorphicSuperClass* stabilitytest_Nova_PolymorphicSuperClass_Nova_construct(stabilitytest_Nova_PolymorphicSuperClass* this, nova_exception_Nova_ExceptionData* exceptionData)
+stabilitytest_Nova_PolymorphicSuperClass* stabilitytest_Nova_PolymorphicSuperClass_Nova_construct(stabilitytest_Nova_PolymorphicSuperClass* this)
 {
 	CCLASS_NEW(stabilitytest_Nova_PolymorphicSuperClass, this,);
-	this->vtable = &stabilitytest_PolymorphicSuperClass_Extension_VTable_val;
-	nova_Nova_Object_Nova_super((nova_Nova_Object*)this, exceptionData);
-	stabilitytest_Nova_PolymorphicSuperClass_Nova_super(this, exceptionData);
+	this->vtable = &stabilitytest_Nova_PolymorphicSuperClass_VTable_val;
+	nova_Nova_Object_Nova_super((nova_Nova_Object*)this);
+	stabilitytest_Nova_PolymorphicSuperClass_Nova_super(this);
 	
-	{
-		stabilitytest_Nova_PolymorphicSuperClass_Nova_this(this, exceptionData);
-	}
-	
-	return this;
+	return stabilitytest_Nova_PolymorphicSuperClass_Nova_this((stabilitytest_Nova_PolymorphicSuperClass*)(this));
 }
 
-void stabilitytest_Nova_PolymorphicSuperClass_Nova_destroy(stabilitytest_Nova_PolymorphicSuperClass** this, nova_exception_Nova_ExceptionData* exceptionData)
+void stabilitytest_Nova_PolymorphicSuperClass_Nova_destroy(stabilitytest_Nova_PolymorphicSuperClass** this)
 {
 	if (!*this)
 	{
 		return;
 	}
 	
-	stabilitytest_Nova_PolymorphicSubClass_Nova_destroy(&(*this)->stabilitytest_Nova_PolymorphicSuperClass_Nova_child, exceptionData);
+	stabilitytest_Nova_PolymorphicSubClass_Nova_destroy(&(*this)->stabilitytest_Nova_PolymorphicSuperClass_Nova_child);
 	
 	NOVA_FREE(*this);
 }
 
-stabilitytest_Nova_PolymorphicSubClass* stabilitytest_Nova_PolymorphicSuperClass_Nova_giveBirth(stabilitytest_Nova_PolymorphicSuperClass* this, nova_exception_Nova_ExceptionData* exceptionData)
+stabilitytest_Nova_PolymorphicSubClass* stabilitytest_Nova_PolymorphicSuperClass_Nova_giveBirth(stabilitytest_Nova_PolymorphicSuperClass* this)
 {
-	return this->stabilitytest_Nova_PolymorphicSuperClass_Nova_child = stabilitytest_Nova_PolymorphicSubClass_Nova_construct(0, exceptionData);
+	return this->stabilitytest_Nova_PolymorphicSuperClass_Nova_child = stabilitytest_Nova_PolymorphicSubClass_Nova_construct(0);
 }
 
-nova_Nova_String* stabilitytest_Nova_PolymorphicSuperClass_Nova_toString(stabilitytest_Nova_PolymorphicSuperClass* this, nova_exception_Nova_ExceptionData* exceptionData)
+nova_Nova_String* stabilitytest_Nova_PolymorphicSuperClass_Nova_toString(stabilitytest_Nova_PolymorphicSuperClass* this)
 {
-	return nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("super class"));
+	return nova_Nova_String_1_Nova_construct(0,
+		(char*)("super class"));
 }
 
-void stabilitytest_Nova_PolymorphicSuperClass_Nova_this(stabilitytest_Nova_PolymorphicSuperClass* this, nova_exception_Nova_ExceptionData* exceptionData)
-{
+stabilitytest_Nova_PolymorphicSuperClass* stabilitytest_Nova_PolymorphicSuperClass_Nova_this(stabilitytest_Nova_PolymorphicSuperClass* this) {
+	return this;
 }
-
-int stabilitytest_Nova_PolymorphicSuperClass_Accessor_Nova_myProperty(stabilitytest_Nova_PolymorphicSuperClass* this, nova_exception_Nova_ExceptionData* exceptionData)
+int stabilitytest_Nova_PolymorphicSuperClass_Accessor_Nova_myProperty(stabilitytest_Nova_PolymorphicSuperClass* this)
 {
 	return (int)1;
 }
 
 
-void stabilitytest_Nova_PolymorphicSuperClass_Nova_super(stabilitytest_Nova_PolymorphicSuperClass* this, nova_exception_Nova_ExceptionData* exceptionData)
+void stabilitytest_Nova_PolymorphicSuperClass_Nova_super(stabilitytest_Nova_PolymorphicSuperClass* this)
 {
 	this->stabilitytest_Nova_PolymorphicSuperClass_Nova_child = (stabilitytest_Nova_PolymorphicSubClass*)nova_null;
-}
-
-int stabilitytest_Nova_PolymorphicSuperClass_virtual_Accessor_Nova_myProperty(stabilitytest_Nova_PolymorphicSuperClass* this, nova_exception_Nova_ExceptionData* exceptionData)
-{
-	return this->vtable->stabilitytest_Nova_PolymorphicSuperClass_virtual_Accessor_Nova_myProperty((stabilitytest_Nova_PolymorphicSuperClass*)(this), exceptionData);
-}
-
-void stabilitytest_Nova_PolymorphicSuperClassFunctionMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData)
-{
-	{
-	}
-}
-
-stabilitytest_Nova_PolymorphicSuperClassFunctionMap* stabilitytest_Nova_PolymorphicSuperClassFunctionMap_Nova_construct(stabilitytest_Nova_PolymorphicSuperClassFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
-{
-	CCLASS_NEW(stabilitytest_Nova_PolymorphicSuperClassFunctionMap, this,);
-	this->vtable = &stabilitytest_PolymorphicSuperClass_PolymorphicSuperClassFunctionMap_Extension_VTable_val;
-	nova_Nova_Object_Nova_super((nova_Nova_Object*)this, exceptionData);
-	nova_meta_Nova_FunctionMap_Nova_super((nova_meta_Nova_FunctionMap*)this, exceptionData);
-	stabilitytest_Nova_PolymorphicSuperClassFunctionMap_Nova_super(this, exceptionData);
-	
-	{
-		stabilitytest_Nova_PolymorphicSuperClassFunctionMap_Nova_this(this, exceptionData);
-	}
-	
-	return this;
-}
-
-void stabilitytest_Nova_PolymorphicSuperClassFunctionMap_Nova_destroy(stabilitytest_Nova_PolymorphicSuperClassFunctionMap** this, nova_exception_Nova_ExceptionData* exceptionData)
-{
-	if (!*this)
-	{
-		return;
-	}
-	
-	
-	NOVA_FREE(*this);
-}
-
-void stabilitytest_Nova_PolymorphicSuperClassFunctionMap_Nova_this(stabilitytest_Nova_PolymorphicSuperClassFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
-{
-}
-
-stabilitytest_Nova_PolymorphicSuperClass* stabilitytest_Nova_PolymorphicSuperClassFunctionMap_functionMapPolymorphicSuperClassFunctionMap_Nova_construct(stabilitytest_Nova_PolymorphicSuperClassFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
-{
-	return stabilitytest_Nova_PolymorphicSuperClass_Nova_construct(0, exceptionData);
-}
-
-stabilitytest_Nova_PolymorphicSubClass* stabilitytest_Nova_PolymorphicSuperClassFunctionMap_functionMap_Nova_giveBirth(stabilitytest_Nova_PolymorphicSuperClassFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, stabilitytest_Nova_PolymorphicSuperClass* reference)
-{
-	return stabilitytest_Nova_PolymorphicSuperClass_Nova_giveBirth(reference, exceptionData);
-}
-
-nova_Nova_String* stabilitytest_Nova_PolymorphicSuperClassFunctionMap_functionMap_Nova_toString(stabilitytest_Nova_PolymorphicSuperClassFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, stabilitytest_Nova_PolymorphicSuperClass* reference)
-{
-	return stabilitytest_Nova_PolymorphicSuperClass_Nova_toString(reference, exceptionData);
-}
-
-void stabilitytest_Nova_PolymorphicSuperClassFunctionMap_Nova_super(stabilitytest_Nova_PolymorphicSuperClassFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
-{
-}
-
-stabilitytest_Nova_PolymorphicSuperClass* stabilitytest_Nova_PolymorphicSuperClassFunctionMap_virtualfunctionMapPolymorphicSuperClass_Nova_construct(stabilitytest_Nova_PolymorphicSuperClassFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
-{
-	return this->vtable->stabilitytest_Nova_PolymorphicSuperClassFunctionMap_virtualfunctionMapPolymorphicSuperClass_Nova_construct(this, exceptionData);
-}
-
-nova_Nova_String* stabilitytest_Nova_PolymorphicSuperClassFunctionMap_virtualfunctionMap_Nova_toString(stabilitytest_Nova_PolymorphicSuperClassFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, stabilitytest_Nova_PolymorphicSuperClass* reference)
-{
-	return this->vtable->stabilitytest_Nova_PolymorphicSuperClassFunctionMap_virtualfunctionMap_Nova_toString(this, exceptionData, reference);
-}
-
-void stabilitytest_Nova_PolymorphicSuperClassPropertyMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData)
-{
-	{
-	}
-}
-
-stabilitytest_Nova_PolymorphicSuperClassPropertyMap* stabilitytest_Nova_PolymorphicSuperClassPropertyMap_Nova_construct(stabilitytest_Nova_PolymorphicSuperClassPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData)
-{
-	CCLASS_NEW(stabilitytest_Nova_PolymorphicSuperClassPropertyMap, this,);
-	this->vtable = &stabilitytest_PolymorphicSuperClass_PolymorphicSuperClassPropertyMap_Extension_VTable_val;
-	nova_Nova_Object_Nova_super((nova_Nova_Object*)this, exceptionData);
-	nova_meta_Nova_PropertyMap_Nova_super((nova_meta_Nova_PropertyMap*)this, exceptionData);
-	stabilitytest_Nova_PolymorphicSuperClassPropertyMap_Nova_super(this, exceptionData);
-	
-	{
-		stabilitytest_Nova_PolymorphicSuperClassPropertyMap_Nova_this(this, exceptionData);
-	}
-	
-	return this;
-}
-
-void stabilitytest_Nova_PolymorphicSuperClassPropertyMap_Nova_destroy(stabilitytest_Nova_PolymorphicSuperClassPropertyMap** this, nova_exception_Nova_ExceptionData* exceptionData)
-{
-	if (!*this)
-	{
-		return;
-	}
-	
-	
-	NOVA_FREE(*this);
-}
-
-void stabilitytest_Nova_PolymorphicSuperClassPropertyMap_Nova_this(stabilitytest_Nova_PolymorphicSuperClassPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData)
-{
-}
-
-stabilitytest_Nova_PolymorphicSubClass* stabilitytest_Nova_PolymorphicSuperClassPropertyMap_functionMap_Nova_child(stabilitytest_Nova_PolymorphicSuperClassPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData, stabilitytest_Nova_PolymorphicSuperClass* reference)
-{
-	return reference->stabilitytest_Nova_PolymorphicSuperClass_Nova_child;
-}
-
-int stabilitytest_Nova_PolymorphicSuperClassPropertyMap_functionMap_Nova_myProperty(stabilitytest_Nova_PolymorphicSuperClassPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData, stabilitytest_Nova_PolymorphicSuperClass* reference)
-{
-	return stabilitytest_Nova_PolymorphicSuperClass_Accessor_Nova_myProperty(reference, exceptionData);
-}
-
-void stabilitytest_Nova_PolymorphicSuperClassPropertyMap_Nova_super(stabilitytest_Nova_PolymorphicSuperClassPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData)
-{
-}
-
-int stabilitytest_Nova_PolymorphicSuperClassPropertyMap_virtualfunctionMap_Nova_myProperty(stabilitytest_Nova_PolymorphicSuperClassPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData, stabilitytest_Nova_PolymorphicSuperClass* reference)
-{
-	return this->vtable->stabilitytest_Nova_PolymorphicSuperClassPropertyMap_virtualfunctionMap_Nova_myProperty(this, exceptionData, reference);
 }
 

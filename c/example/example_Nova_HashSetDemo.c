@@ -33,31 +33,60 @@
 #include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <nova/datastruct/nova_datastruct_Nova_HashSet.h>
 #include <nova/time/nova_time_Nova_Timer.h>
+#include <example/example_Nova_Animal.h>
+#include <example/example_Nova_ArrayDemo.h>
+#include <example/example_Nova_BodyBuilder.h>
+#include <example/example_Nova_ClosureDemo.h>
+#include <example/example_Nova_Dog.h>
+#include <example/example_Nova_ExceptionHandlingDemo.h>
+#include <example/example_Nova_FileTest.h>
+#include <example/example_Nova_GenericDemo.h>
+#include <example/example_Nova_HashMapDemo.h>
+#include <example/example_Nova_IntegerTest.h>
+#include <example/example_Nova_Lab.h>
+#include <example/example_Nova_MathDemo.h>
+#include <example/example_Nova_NestTest.h>
+#include <example/example_Nova_NonWholeDivisionException.h>
+#include <example/example_Nova_Person.h>
+#include <example/example_Nova_Polygon.h>
+#include <example/example_Nova_PolymorphismDemo.h>
+#include <example/example_Nova_QueueDemo.h>
+#include <example/example_Nova_Spider.h>
+#include <example/example_Nova_Square.h>
+#include <example/example_Nova_SvgChart.h>
+#include <example/example_Nova_SvgFractal.h>
+#include <example/example_Nova_T1.h>
+#include <example/example_Nova_T2.h>
+#include <example/example_Nova_Test.h>
+#include <example/example_Nova_ThreadDemo.h>
+#include <example/example_Nova_ThreadDemoImplementation.h>
+#include <nova/operators/nova_operators_Nova_EqualsOperator.h>
 #include <nova/NativeObject.h>
+#include <nova/nova_Nova_Substring.h>
 
 
 
-void example_Nova_HashSetDemo_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData)
+char example_Nova_HashSetDemo_Nova_init_static_inited = 0;
+void example_Nova_HashSetDemo_Nova_init_static()
 {
-	{
+	if (!example_Nova_HashSetDemo_Nova_init_static_inited) {
+		example_Nova_HashSetDemo_Nova_init_static_inited = 1;
+		{
+		}
 	}
 }
 
-example_Nova_HashSetDemo* example_Nova_HashSetDemo_Nova_construct(example_Nova_HashSetDemo* this, nova_exception_Nova_ExceptionData* exceptionData)
+example_Nova_HashSetDemo* example_Nova_HashSetDemo_Nova_construct(example_Nova_HashSetDemo* this)
 {
 	CCLASS_NEW(example_Nova_HashSetDemo, this,);
-	this->vtable = &example_HashSetDemo_Extension_VTable_val;
-	nova_Nova_Object_Nova_super((nova_Nova_Object*)this, exceptionData);
-	example_Nova_HashSetDemo_Nova_super(this, exceptionData);
+	this->vtable = &example_Nova_HashSetDemo_VTable_val;
+	nova_Nova_Object_Nova_super((nova_Nova_Object*)this);
+	example_Nova_HashSetDemo_Nova_super(this);
 	
-	{
-		example_Nova_HashSetDemo_Nova_this(this, exceptionData);
-	}
-	
-	return this;
+	return example_Nova_HashSetDemo_Nova_this((example_Nova_HashSetDemo*)(this));
 }
 
-void example_Nova_HashSetDemo_Nova_destroy(example_Nova_HashSetDemo** this, nova_exception_Nova_ExceptionData* exceptionData)
+void example_Nova_HashSetDemo_Nova_destroy(example_Nova_HashSetDemo** this)
 {
 	if (!*this)
 	{
@@ -68,193 +97,164 @@ void example_Nova_HashSetDemo_Nova_destroy(example_Nova_HashSetDemo** this, nova
 	NOVA_FREE(*this);
 }
 
-void example_Nova_HashSetDemo_static_Nova_main(example_Nova_HashSetDemo* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_list_Nova_Array* args)
+void example_Nova_HashSetDemo_static_Nova_main(example_Nova_HashSetDemo* this, nova_datastruct_list_Nova_Array* args)
 {
 	nova_datastruct_Nova_HashSet* l1_Nova_set = (nova_datastruct_Nova_HashSet*)nova_null;
 	int l1_Nova_count = 0;
 	nova_time_Nova_Timer* l1_Nova_timer = (nova_time_Nova_Timer*)nova_null;
 	long_long l1_Nova_stringTime = 0;
 	long_long l1_Nova_addTime = 0;
-	long_long nova_zero_check6 = 0;
-	long_long nova_zero_check7 = 0;
 	long_long l1_Nova_getTime = 0;
-	long_long nova_zero_check8 = 0;
-	long_long nova_zero_check9 = 0;
 	long_long l1_Nova_newStringTime = 0;
-	long_long nova_zero_check10 = 0;
-	long_long nova_zero_check11 = 0;
-	int l3_Nova_i = 0;
-	int l5_Nova_i = 0;
-	int l11_Nova_i = 0;
-	int l17_Nova_i = 0;
 	
-	l1_Nova_set = nova_datastruct_Nova_HashSet_Nova_construct(0, exceptionData, (intptr_t)nova_null, (intptr_t)nova_null);
-	nova_datastruct_Nova_HashSet_Nova_add((nova_datastruct_Nova_HashSet*)(l1_Nova_set), exceptionData, (nova_operators_Nova_EqualsOperator*)(nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("TEseting"))));
-	nova_io_Nova_Console_2_static_Nova_writeLine(0, exceptionData, (nova_Nova_Object*)(l1_Nova_set));
-	nova_io_Nova_Console_1_static_Nova_writeLine(0, exceptionData, (nova_Nova_String*)(nova_Nova_String_Nova_plus(nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("Contains TEset? ")), exceptionData, (nova_Nova_String*)(nova_Nova_String_Nova_plus(nova_primitive_Nova_Bool_static_Nova_toString(0, exceptionData, (nova_datastruct_Nova_HashSet_0_Nova_contains((nova_datastruct_Nova_HashSet*)(l1_Nova_set), exceptionData, (nova_operators_Nova_EqualsOperator*)(nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("TEset")))))), exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("")))))));
-	nova_io_Nova_Console_1_static_Nova_writeLine(0, exceptionData, (nova_Nova_String*)(nova_Nova_String_Nova_plus(nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("Contains TEseting? ")), exceptionData, (nova_Nova_String*)(nova_Nova_String_Nova_plus(nova_primitive_Nova_Bool_static_Nova_toString(0, exceptionData, (nova_datastruct_Nova_HashSet_0_Nova_contains((nova_datastruct_Nova_HashSet*)(l1_Nova_set), exceptionData, (nova_operators_Nova_EqualsOperator*)(nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("TEseting")))))), exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("")))))));
-	nova_io_Nova_Console_2_static_Nova_writeLine(0, exceptionData, (nova_Nova_Object*)(l1_Nova_set));
-	nova_io_Nova_Console_1_static_Nova_writeLine(0, exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("Benchmarking")));
+	l1_Nova_set = nova_datastruct_Nova_HashSet_Nova_construct(0,
+		(int)(intptr_t)nova_null,
+		(int)(intptr_t)nova_null);
+	nova_datastruct_Nova_HashSet_Nova_add((nova_datastruct_Nova_HashSet*)(l1_Nova_set),
+		(nova_operators_Nova_EqualsOperator*)(nova_Nova_String_1_Nova_construct(0,
+				(char*)("TEseting"))));
+	nova_io_Nova_Console_2_static_Nova_writeLine((nova_io_Nova_Console*)(0),
+		(nova_Nova_Object*)(l1_Nova_set));
+	nova_io_Nova_Console_1_static_Nova_writeLine((nova_io_Nova_Console*)(0),
+		(nova_Nova_String*)(nova_operators_Nova_PlusOperator_virtual1_Nova_plus((nova_operators_Nova_PlusOperator*)(nova_Nova_String_1_Nova_construct(0,
+						(char*)("Contains TEset? "))),
+				(nova_Nova_Object*)(nova_operators_Nova_PlusOperator_virtual1_Nova_plus((nova_operators_Nova_PlusOperator*)(nova_primitive_Nova_Bool_static_Nova_toString((nova_primitive_Nova_Bool*)(0),
+								(nova_datastruct_list_Nova_List_virtual1_Nova_contains((nova_datastruct_list_Nova_List*)(l1_Nova_set),
+										(nova_Nova_Object*)(nova_Nova_String_1_Nova_construct(0,
+												(char*)("TEset"))))))),
+						(nova_Nova_Object*)(nova_Nova_String_1_Nova_construct(0,
+								(char*)(""))))))));
+	nova_io_Nova_Console_1_static_Nova_writeLine((nova_io_Nova_Console*)(0),
+		(nova_Nova_String*)(nova_operators_Nova_PlusOperator_virtual1_Nova_plus((nova_operators_Nova_PlusOperator*)(nova_Nova_String_1_Nova_construct(0,
+						(char*)("Contains TEseting? "))),
+				(nova_Nova_Object*)(nova_operators_Nova_PlusOperator_virtual1_Nova_plus((nova_operators_Nova_PlusOperator*)(nova_primitive_Nova_Bool_static_Nova_toString((nova_primitive_Nova_Bool*)(0),
+								(nova_datastruct_list_Nova_List_virtual1_Nova_contains((nova_datastruct_list_Nova_List*)(l1_Nova_set),
+										(nova_Nova_Object*)(nova_Nova_String_1_Nova_construct(0,
+												(char*)("TEseting"))))))),
+						(nova_Nova_Object*)(nova_Nova_String_1_Nova_construct(0,
+								(char*)(""))))))));
+	nova_io_Nova_Console_2_static_Nova_writeLine((nova_io_Nova_Console*)(0),
+		(nova_Nova_Object*)(l1_Nova_set));
+	nova_io_Nova_Console_1_static_Nova_writeLine((nova_io_Nova_Console*)(0),
+		nova_Nova_String_1_Nova_construct(0,
+			(char*)("Benchmarking")));
 	l1_Nova_count = 50000;
-	l1_Nova_timer = nova_time_Nova_Timer_Nova_start(nova_time_Nova_Timer_Nova_construct(0, exceptionData), exceptionData);
-	l3_Nova_i = (int)0;
-	for (; l3_Nova_i < (int)l1_Nova_count; l3_Nova_i++)
+	l1_Nova_timer = nova_time_Nova_Timer_Nova_start((nova_time_Nova_Timer*)(nova_time_Nova_Timer_Nova_construct(0)));
+	int l50_Nova_i;
+	l50_Nova_i = (int)0;
+	for (; l50_Nova_i < (int)l1_Nova_count; l50_Nova_i++)
 	{
-		nova_Nova_String_Nova_plus(nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("my string")), exceptionData, (nova_Nova_String*)(nova_Nova_String_Nova_plus(nova_primitive_number_Nova_Int_static_Nova_toString(0, exceptionData, (l3_Nova_i)), exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("")))));
+		nova_operators_Nova_PlusOperator_virtual1_Nova_plus((nova_operators_Nova_PlusOperator*)(nova_Nova_String_1_Nova_construct(0,
+					(char*)("my string"))),
+			(nova_Nova_Object*)(nova_operators_Nova_PlusOperator_virtual1_Nova_plus((nova_operators_Nova_PlusOperator*)(nova_primitive_number_Nova_Int_static_Nova_toString((nova_primitive_number_Nova_Int*)(0),
+							(l50_Nova_i))),
+					(nova_Nova_Object*)(nova_Nova_String_1_Nova_construct(0,
+							(char*)(""))))));
 	}
-	l1_Nova_stringTime = (long_long)(nova_time_Nova_Timer_virtual_Accessor_Nova_duration((nova_time_Nova_Timer*)(nova_time_Nova_Timer_virtual_Nova_stop((nova_time_Nova_Timer*)(l1_Nova_timer), exceptionData)), exceptionData));
-	nova_io_Nova_Console_1_static_Nova_writeLine(0, exceptionData, (nova_Nova_String*)(nova_Nova_String_Nova_plus(nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("Took ")), exceptionData, (nova_Nova_String*)(nova_Nova_String_Nova_plus(nova_primitive_number_Nova_Long_static_Nova_toString(0, exceptionData, (l1_Nova_stringTime)), exceptionData, (nova_Nova_String*)(nova_Nova_String_Nova_plus(nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("ms to create ")), exceptionData, (nova_Nova_String*)(nova_Nova_String_Nova_plus(nova_primitive_number_Nova_Int_static_Nova_toString(0, exceptionData, (l1_Nova_count)), exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)(" strings")))))))))));
-	l5_Nova_i = (int)0;
-	for (; l5_Nova_i < (int)50000; l5_Nova_i++)
+	l1_Nova_stringTime = (long_long)(nova_time_Nova_Timer_virtual_Accessor_Nova_duration((nova_time_Nova_Timer*)(nova_time_Nova_Timer_virtual_Nova_stop((nova_time_Nova_Timer*)(l1_Nova_timer)))));
+	nova_io_Nova_Console_1_static_Nova_writeLine((nova_io_Nova_Console*)(0),
+		(nova_Nova_String*)(nova_operators_Nova_PlusOperator_virtual1_Nova_plus((nova_operators_Nova_PlusOperator*)(nova_Nova_String_1_Nova_construct(0,
+						(char*)("Took "))),
+				(nova_Nova_Object*)(nova_operators_Nova_PlusOperator_virtual1_Nova_plus((nova_operators_Nova_PlusOperator*)(nova_primitive_number_Nova_Long_static_Nova_toString((nova_primitive_number_Nova_Long*)(0),
+								(l1_Nova_stringTime))),
+						(nova_Nova_Object*)(nova_operators_Nova_PlusOperator_virtual1_Nova_plus((nova_operators_Nova_PlusOperator*)(nova_Nova_String_1_Nova_construct(0,
+										(char*)("ms to create "))),
+								(nova_Nova_Object*)(nova_operators_Nova_PlusOperator_virtual1_Nova_plus((nova_operators_Nova_PlusOperator*)(nova_primitive_number_Nova_Int_static_Nova_toString((nova_primitive_number_Nova_Int*)(0),
+												(l1_Nova_count))),
+										(nova_Nova_Object*)(nova_Nova_String_1_Nova_construct(0,
+												(char*)(" strings"))))))))))));
+	int l81_Nova_i;
+	l81_Nova_i = (int)0;
+	for (; l81_Nova_i < (int)50000; l81_Nova_i++)
 	{
-		nova_datastruct_Nova_HashSet_Nova_add((nova_datastruct_Nova_HashSet*)(l1_Nova_set), exceptionData, (nova_operators_Nova_EqualsOperator*)(nova_Nova_String_Nova_plus(nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("my string")), exceptionData, (nova_Nova_String*)(nova_Nova_String_Nova_plus(nova_primitive_number_Nova_Int_static_Nova_toString(0, exceptionData, (l5_Nova_i)), exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("")))))));
+		nova_datastruct_Nova_HashSet_Nova_add((nova_datastruct_Nova_HashSet*)(l1_Nova_set),
+			(nova_operators_Nova_EqualsOperator*)(nova_operators_Nova_PlusOperator_virtual1_Nova_plus((nova_operators_Nova_PlusOperator*)(nova_Nova_String_1_Nova_construct(0,
+							(char*)("my string"))),
+					(nova_Nova_Object*)(nova_operators_Nova_PlusOperator_virtual1_Nova_plus((nova_operators_Nova_PlusOperator*)(nova_primitive_number_Nova_Int_static_Nova_toString((nova_primitive_number_Nova_Int*)(0),
+									(l81_Nova_i))),
+							(nova_Nova_Object*)(nova_Nova_String_1_Nova_construct(0,
+									(char*)(""))))))));
 	}
-	l1_Nova_addTime = (long_long)(nova_time_Nova_Timer_virtual_Accessor_Nova_duration((nova_time_Nova_Timer*)(nova_time_Nova_Timer_virtual_Nova_stop((nova_time_Nova_Timer*)(l1_Nova_timer), exceptionData)), exceptionData));
-	nova_zero_check6 = l1_Nova_stringTime;
-	if (nova_zero_check6 == 0)
+	l1_Nova_addTime = (long_long)(nova_time_Nova_Timer_virtual_Accessor_Nova_duration((nova_time_Nova_Timer*)(nova_time_Nova_Timer_virtual_Nova_stop((nova_time_Nova_Timer*)(l1_Nova_timer)))));
+	nova_io_Nova_Console_1_static_Nova_writeLine((nova_io_Nova_Console*)(0),
+		(nova_Nova_String*)(nova_operators_Nova_PlusOperator_virtual1_Nova_plus((nova_operators_Nova_PlusOperator*)(nova_Nova_String_1_Nova_construct(0,
+						(char*)("Took "))),
+				(nova_Nova_Object*)(nova_operators_Nova_PlusOperator_virtual1_Nova_plus((nova_operators_Nova_PlusOperator*)(nova_primitive_number_Nova_Long_static_Nova_toString((nova_primitive_number_Nova_Long*)(0),
+								(l1_Nova_addTime))),
+						(nova_Nova_Object*)(nova_operators_Nova_PlusOperator_virtual1_Nova_plus((nova_operators_Nova_PlusOperator*)(nova_Nova_String_1_Nova_construct(0,
+										(char*)("ms to call add "))),
+								(nova_Nova_Object*)(nova_operators_Nova_PlusOperator_virtual1_Nova_plus((nova_operators_Nova_PlusOperator*)(nova_primitive_number_Nova_Int_static_Nova_toString((nova_primitive_number_Nova_Int*)(0),
+												(l1_Nova_count))),
+										(nova_Nova_Object*)(nova_operators_Nova_PlusOperator_virtual1_Nova_plus((nova_operators_Nova_PlusOperator*)(nova_Nova_String_1_Nova_construct(0,
+														(char*)(" times "))),
+												(nova_Nova_Object*)(nova_operators_Nova_PlusOperator_virtual1_Nova_plus((nova_operators_Nova_PlusOperator*)(nova_primitive_number_Nova_Long_static_Nova_toString((nova_primitive_number_Nova_Long*)(0),
+																((l1_Nova_addTime - l1_Nova_stringTime) * 100 / l1_Nova_stringTime))),
+														(nova_Nova_Object*)(nova_Nova_String_1_Nova_construct(0,
+																(char*)("% overhead"))))))))))))))));
+	nova_time_Nova_Timer_Nova_start((nova_time_Nova_Timer*)(l1_Nova_timer));
+	int l126_Nova_i;
+	l126_Nova_i = (int)0;
+	for (; l126_Nova_i < (int)l1_Nova_count; l126_Nova_i++)
 	{
-		THROW(nova_exception_Nova_DivideByZeroException_Nova_construct(0, exceptionData), 0);
+		nova_datastruct_Nova_HashSet_Nova_get((nova_datastruct_Nova_HashSet*)(l1_Nova_set),
+			(nova_operators_Nova_EqualsOperator*)(nova_operators_Nova_PlusOperator_virtual1_Nova_plus((nova_operators_Nova_PlusOperator*)(nova_Nova_String_1_Nova_construct(0,
+							(char*)("my string"))),
+					(nova_Nova_Object*)(nova_operators_Nova_PlusOperator_virtual1_Nova_plus((nova_operators_Nova_PlusOperator*)(nova_primitive_number_Nova_Int_static_Nova_toString((nova_primitive_number_Nova_Int*)(0),
+									(l126_Nova_i))),
+							(nova_Nova_Object*)(nova_Nova_String_1_Nova_construct(0,
+									(char*)(""))))))));
 	}
-	nova_zero_check7 = nova_zero_check6;
-	if (nova_zero_check7 == 0)
+	l1_Nova_getTime = (long_long)(nova_time_Nova_Timer_virtual_Accessor_Nova_duration((nova_time_Nova_Timer*)(nova_time_Nova_Timer_virtual_Nova_stop((nova_time_Nova_Timer*)(l1_Nova_timer)))));
+	nova_io_Nova_Console_1_static_Nova_writeLine((nova_io_Nova_Console*)(0),
+		(nova_Nova_String*)(nova_operators_Nova_PlusOperator_virtual1_Nova_plus((nova_operators_Nova_PlusOperator*)(nova_Nova_String_1_Nova_construct(0,
+						(char*)("Took "))),
+				(nova_Nova_Object*)(nova_operators_Nova_PlusOperator_virtual1_Nova_plus((nova_operators_Nova_PlusOperator*)(nova_primitive_number_Nova_Long_static_Nova_toString((nova_primitive_number_Nova_Long*)(0),
+								(l1_Nova_getTime))),
+						(nova_Nova_Object*)(nova_operators_Nova_PlusOperator_virtual1_Nova_plus((nova_operators_Nova_PlusOperator*)(nova_Nova_String_1_Nova_construct(0,
+										(char*)("ms to call get "))),
+								(nova_Nova_Object*)(nova_operators_Nova_PlusOperator_virtual1_Nova_plus((nova_operators_Nova_PlusOperator*)(nova_primitive_number_Nova_Int_static_Nova_toString((nova_primitive_number_Nova_Int*)(0),
+												(l1_Nova_count))),
+										(nova_Nova_Object*)(nova_operators_Nova_PlusOperator_virtual1_Nova_plus((nova_operators_Nova_PlusOperator*)(nova_Nova_String_1_Nova_construct(0,
+														(char*)(" times "))),
+												(nova_Nova_Object*)(nova_operators_Nova_PlusOperator_virtual1_Nova_plus((nova_operators_Nova_PlusOperator*)(nova_primitive_number_Nova_Long_static_Nova_toString((nova_primitive_number_Nova_Long*)(0),
+																((l1_Nova_getTime - l1_Nova_stringTime) * 100 / l1_Nova_stringTime))),
+														(nova_Nova_Object*)(nova_Nova_String_1_Nova_construct(0,
+																(char*)("% overhead"))))))))))))))));
+	nova_time_Nova_Timer_Nova_start((nova_time_Nova_Timer*)(l1_Nova_timer));
+	int l172_Nova_i;
+	l172_Nova_i = (int)0;
+	for (; l172_Nova_i < (int)l1_Nova_count; l172_Nova_i++)
 	{
-		THROW(nova_exception_Nova_DivideByZeroException_Nova_construct(0, exceptionData), 0);
+		nova_operators_Nova_PlusOperator_virtual1_Nova_plus((nova_operators_Nova_PlusOperator*)(nova_Nova_String_1_Nova_construct(0,
+					(char*)("my string"))),
+			(nova_Nova_Object*)(nova_operators_Nova_PlusOperator_virtual1_Nova_plus((nova_operators_Nova_PlusOperator*)(nova_primitive_number_Nova_Int_static_Nova_toString((nova_primitive_number_Nova_Int*)(0),
+							(l172_Nova_i))),
+					(nova_Nova_Object*)(nova_Nova_String_1_Nova_construct(0,
+							(char*)(""))))));
 	}
-	nova_io_Nova_Console_1_static_Nova_writeLine(0, exceptionData, (nova_Nova_String*)(nova_Nova_String_Nova_plus(nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("Took ")), exceptionData, (nova_Nova_String*)(nova_Nova_String_Nova_plus(nova_primitive_number_Nova_Long_static_Nova_toString(0, exceptionData, (l1_Nova_addTime)), exceptionData, (nova_Nova_String*)(nova_Nova_String_Nova_plus(nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("ms to call add ")), exceptionData, (nova_Nova_String*)(nova_Nova_String_Nova_plus(nova_primitive_number_Nova_Int_static_Nova_toString(0, exceptionData, (l1_Nova_count)), exceptionData, (nova_Nova_String*)(nova_Nova_String_Nova_plus(nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)(" times ")), exceptionData, (nova_Nova_String*)(nova_Nova_String_Nova_plus(nova_primitive_number_Nova_Long_static_Nova_toString(0, exceptionData, ((l1_Nova_addTime - l1_Nova_stringTime) * 100 / nova_zero_check6)), exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("% overhead")))))))))))))));
-	nova_time_Nova_Timer_Nova_start(l1_Nova_timer, exceptionData);
-	l11_Nova_i = (int)0;
-	for (; l11_Nova_i < (int)l1_Nova_count; l11_Nova_i++)
-	{
-		nova_datastruct_Nova_HashSet_Nova_get((nova_datastruct_Nova_HashSet*)(l1_Nova_set), exceptionData, (nova_operators_Nova_EqualsOperator*)(nova_Nova_String_Nova_plus(nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("my string")), exceptionData, (nova_Nova_String*)(nova_Nova_String_Nova_plus(nova_primitive_number_Nova_Int_static_Nova_toString(0, exceptionData, (l11_Nova_i)), exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("")))))));
-	}
-	l1_Nova_getTime = (long_long)(nova_time_Nova_Timer_virtual_Accessor_Nova_duration((nova_time_Nova_Timer*)(nova_time_Nova_Timer_virtual_Nova_stop((nova_time_Nova_Timer*)(l1_Nova_timer), exceptionData)), exceptionData));
-	nova_zero_check8 = l1_Nova_stringTime;
-	if (nova_zero_check8 == 0)
-	{
-		THROW(nova_exception_Nova_DivideByZeroException_Nova_construct(0, exceptionData), 0);
-	}
-	nova_zero_check9 = nova_zero_check8;
-	if (nova_zero_check9 == 0)
-	{
-		THROW(nova_exception_Nova_DivideByZeroException_Nova_construct(0, exceptionData), 0);
-	}
-	nova_io_Nova_Console_1_static_Nova_writeLine(0, exceptionData, (nova_Nova_String*)(nova_Nova_String_Nova_plus(nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("Took ")), exceptionData, (nova_Nova_String*)(nova_Nova_String_Nova_plus(nova_primitive_number_Nova_Long_static_Nova_toString(0, exceptionData, (l1_Nova_getTime)), exceptionData, (nova_Nova_String*)(nova_Nova_String_Nova_plus(nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("ms to call get ")), exceptionData, (nova_Nova_String*)(nova_Nova_String_Nova_plus(nova_primitive_number_Nova_Int_static_Nova_toString(0, exceptionData, (l1_Nova_count)), exceptionData, (nova_Nova_String*)(nova_Nova_String_Nova_plus(nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)(" times ")), exceptionData, (nova_Nova_String*)(nova_Nova_String_Nova_plus(nova_primitive_number_Nova_Long_static_Nova_toString(0, exceptionData, ((l1_Nova_getTime - l1_Nova_stringTime) * 100 / nova_zero_check8)), exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("% overhead")))))))))))))));
-	nova_time_Nova_Timer_Nova_start(l1_Nova_timer, exceptionData);
-	l17_Nova_i = (int)0;
-	for (; l17_Nova_i < (int)l1_Nova_count; l17_Nova_i++)
-	{
-		nova_Nova_String_Nova_plus(nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("my string")), exceptionData, (nova_Nova_String*)(nova_Nova_String_Nova_plus(nova_primitive_number_Nova_Int_static_Nova_toString(0, exceptionData, (l17_Nova_i)), exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("")))));
-	}
-	l1_Nova_newStringTime = (long_long)(nova_time_Nova_Timer_virtual_Accessor_Nova_duration((nova_time_Nova_Timer*)(nova_time_Nova_Timer_virtual_Nova_stop((nova_time_Nova_Timer*)(l1_Nova_timer), exceptionData)), exceptionData));
-	nova_zero_check10 = l1_Nova_stringTime;
-	if (nova_zero_check10 == 0)
-	{
-		THROW(nova_exception_Nova_DivideByZeroException_Nova_construct(0, exceptionData), 0);
-	}
-	nova_zero_check11 = nova_zero_check10;
-	if (nova_zero_check11 == 0)
-	{
-		THROW(nova_exception_Nova_DivideByZeroException_Nova_construct(0, exceptionData), 0);
-	}
-	nova_io_Nova_Console_1_static_Nova_writeLine(0, exceptionData, (nova_Nova_String*)(nova_Nova_String_Nova_plus(nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("Took ")), exceptionData, (nova_Nova_String*)(nova_Nova_String_Nova_plus(nova_primitive_number_Nova_Long_static_Nova_toString(0, exceptionData, (l1_Nova_newStringTime)), exceptionData, (nova_Nova_String*)(nova_Nova_String_Nova_plus(nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("ms to create ")), exceptionData, (nova_Nova_String*)(nova_Nova_String_Nova_plus(nova_primitive_number_Nova_Int_static_Nova_toString(0, exceptionData, (l1_Nova_count)), exceptionData, (nova_Nova_String*)(nova_Nova_String_Nova_plus(nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)(" strings ")), exceptionData, (nova_Nova_String*)(nova_Nova_String_Nova_plus(nova_primitive_number_Nova_Long_static_Nova_toString(0, exceptionData, ((l1_Nova_newStringTime - l1_Nova_stringTime) * 100 / nova_zero_check10)), exceptionData, nova_Nova_String_1_Nova_construct(0, exceptionData, (char*)("% overhead")))))))))))))));
-	nova_io_Nova_Console_static_Nova_waitForEnter(0, exceptionData);
+	l1_Nova_newStringTime = (long_long)(nova_time_Nova_Timer_virtual_Accessor_Nova_duration((nova_time_Nova_Timer*)(nova_time_Nova_Timer_virtual_Nova_stop((nova_time_Nova_Timer*)(l1_Nova_timer)))));
+	nova_io_Nova_Console_1_static_Nova_writeLine((nova_io_Nova_Console*)(0),
+		(nova_Nova_String*)(nova_operators_Nova_PlusOperator_virtual1_Nova_plus((nova_operators_Nova_PlusOperator*)(nova_Nova_String_1_Nova_construct(0,
+						(char*)("Took "))),
+				(nova_Nova_Object*)(nova_operators_Nova_PlusOperator_virtual1_Nova_plus((nova_operators_Nova_PlusOperator*)(nova_primitive_number_Nova_Long_static_Nova_toString((nova_primitive_number_Nova_Long*)(0),
+								(l1_Nova_newStringTime))),
+						(nova_Nova_Object*)(nova_operators_Nova_PlusOperator_virtual1_Nova_plus((nova_operators_Nova_PlusOperator*)(nova_Nova_String_1_Nova_construct(0,
+										(char*)("ms to create "))),
+								(nova_Nova_Object*)(nova_operators_Nova_PlusOperator_virtual1_Nova_plus((nova_operators_Nova_PlusOperator*)(nova_primitive_number_Nova_Int_static_Nova_toString((nova_primitive_number_Nova_Int*)(0),
+												(l1_Nova_count))),
+										(nova_Nova_Object*)(nova_operators_Nova_PlusOperator_virtual1_Nova_plus((nova_operators_Nova_PlusOperator*)(nova_Nova_String_1_Nova_construct(0,
+														(char*)(" strings "))),
+												(nova_Nova_Object*)(nova_operators_Nova_PlusOperator_virtual1_Nova_plus((nova_operators_Nova_PlusOperator*)(nova_primitive_number_Nova_Long_static_Nova_toString((nova_primitive_number_Nova_Long*)(0),
+																((l1_Nova_newStringTime - l1_Nova_stringTime) * 100 / l1_Nova_stringTime))),
+														(nova_Nova_Object*)(nova_Nova_String_1_Nova_construct(0,
+																(char*)("% overhead"))))))))))))))));
+	nova_io_Nova_Console_static_Nova_waitForEnter((nova_io_Nova_Console*)(0));
 }
 
-void example_Nova_HashSetDemo_Nova_this(example_Nova_HashSetDemo* this, nova_exception_Nova_ExceptionData* exceptionData)
-{
-}
-
-void example_Nova_HashSetDemo_Nova_super(example_Nova_HashSetDemo* this, nova_exception_Nova_ExceptionData* exceptionData)
-{
-}
-
-void example_Nova_HashSetDemoFunctionMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData)
-{
-	{
-	}
-}
-
-example_Nova_HashSetDemoFunctionMap* example_Nova_HashSetDemoFunctionMap_Nova_construct(example_Nova_HashSetDemoFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
-{
-	CCLASS_NEW(example_Nova_HashSetDemoFunctionMap, this,);
-	this->vtable = &example_HashSetDemo_HashSetDemoFunctionMap_Extension_VTable_val;
-	nova_Nova_Object_Nova_super((nova_Nova_Object*)this, exceptionData);
-	nova_meta_Nova_FunctionMap_Nova_super((nova_meta_Nova_FunctionMap*)this, exceptionData);
-	example_Nova_HashSetDemoFunctionMap_Nova_super(this, exceptionData);
-	
-	{
-		example_Nova_HashSetDemoFunctionMap_Nova_this(this, exceptionData);
-	}
-	
+example_Nova_HashSetDemo* example_Nova_HashSetDemo_Nova_this(example_Nova_HashSetDemo* this) {
 	return this;
 }
-
-void example_Nova_HashSetDemoFunctionMap_Nova_destroy(example_Nova_HashSetDemoFunctionMap** this, nova_exception_Nova_ExceptionData* exceptionData)
-{
-	if (!*this)
-	{
-		return;
-	}
-	
-	
-	NOVA_FREE(*this);
-}
-
-void example_Nova_HashSetDemoFunctionMap_Nova_this(example_Nova_HashSetDemoFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
-{
-}
-
-example_Nova_HashSetDemo* example_Nova_HashSetDemoFunctionMap_functionMapHashSetDemoFunctionMap_Nova_construct(example_Nova_HashSetDemoFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
-{
-	return example_Nova_HashSetDemo_Nova_construct(0, exceptionData);
-}
-
-void example_Nova_HashSetDemoFunctionMap_functionMap_static_Nova_main(example_Nova_HashSetDemoFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_list_Nova_Array* args)
-{
-	example_Nova_HashSetDemo_static_Nova_main(0, exceptionData, args);
-}
-
-void example_Nova_HashSetDemoFunctionMap_Nova_super(example_Nova_HashSetDemoFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
-{
-}
-
-void example_Nova_HashSetDemoPropertyMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData)
-{
-	{
-	}
-}
-
-example_Nova_HashSetDemoPropertyMap* example_Nova_HashSetDemoPropertyMap_Nova_construct(example_Nova_HashSetDemoPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData)
-{
-	CCLASS_NEW(example_Nova_HashSetDemoPropertyMap, this,);
-	this->vtable = &example_HashSetDemo_HashSetDemoPropertyMap_Extension_VTable_val;
-	nova_Nova_Object_Nova_super((nova_Nova_Object*)this, exceptionData);
-	nova_meta_Nova_PropertyMap_Nova_super((nova_meta_Nova_PropertyMap*)this, exceptionData);
-	example_Nova_HashSetDemoPropertyMap_Nova_super(this, exceptionData);
-	
-	{
-		example_Nova_HashSetDemoPropertyMap_Nova_this(this, exceptionData);
-	}
-	
-	return this;
-}
-
-void example_Nova_HashSetDemoPropertyMap_Nova_destroy(example_Nova_HashSetDemoPropertyMap** this, nova_exception_Nova_ExceptionData* exceptionData)
-{
-	if (!*this)
-	{
-		return;
-	}
-	
-	
-	NOVA_FREE(*this);
-}
-
-void example_Nova_HashSetDemoPropertyMap_Nova_this(example_Nova_HashSetDemoPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData)
-{
-}
-
-void example_Nova_HashSetDemoPropertyMap_Nova_super(example_Nova_HashSetDemoPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData)
+void example_Nova_HashSetDemo_Nova_super(example_Nova_HashSetDemo* this)
 {
 }
 

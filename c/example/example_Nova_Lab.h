@@ -2,9 +2,12 @@
 #define FILE_example_Nova_Lab_NOVA
 
 typedef struct example_Nova_Lab example_Nova_Lab;
-typedef struct example_Nova_LabFunctionMap example_Nova_LabFunctionMap;
-typedef struct example_Nova_LabPropertyMap example_Nova_LabPropertyMap;
 
+typedef struct nova_exception_Nova_ExceptionData nova_exception_Nova_ExceptionData;
+
+typedef void (*l1_closure515_Nova_func)(void*, void*);
+typedef void (*l1_closure515_Nova_func)(void*, void*);
+typedef void (*l1_closure515_Nova_func)(void*, void*);
 
 #include <Nova.h>
 #include <InterfaceVTable.h>
@@ -42,54 +45,71 @@ typedef struct example_Nova_LabPropertyMap example_Nova_LabPropertyMap;
 #include <nova/meta/nova_meta_Nova_FunctionMap.h>
 #include <nova/meta/nova_meta_Nova_PropertyMap.h>
 #include <nova/regex/nova_regex_Nova_Pattern.h>
+#include <nova/math/logic/nova_math_logic_Nova_WFF.h>
+#include <nova/math/logic/nova_math_logic_Nova_InvalidFormulaException.h>
+#include <nova/math/logic/nova_math_logic_Nova_StatementLetter.h>
+#include <nova/datastruct/nova_datastruct_Nova_HashMap.h>
 #include <nova/math/nova_math_Nova_Vector3D.h>
 #include <nova/math/nova_math_Nova_Matrix.h>
+#include <nova/network/nova_network_Nova_ServerSocket.h>
+#include <nova/star/nova_star_Nova_Window.h>
+#include <nova/math/nova_math_Nova_NumericStatement.h>
 #include <nova/datastruct/nova_datastruct_Nova_BinaryTree.h>
+#include <nova/datastruct/list/nova_datastruct_list_Nova_Iterator.h>
 #include <nova/datastruct/list/nova_datastruct_list_Nova_LinkedList.h>
+#include <nova/io/nova_io_Nova_Curl.h>
+#include <nova/meta/nova_meta_Nova_Library.h>
+#include <nova/thread/nova_thread_Nova_ThreadLocal.h>
+#include <nova/time/nova_time_Nova_Timer.h>
+#include <example/example_Nova_Animal.h>
+#include <example/example_Nova_ArrayDemo.h>
+#include <example/example_Nova_BodyBuilder.h>
+#include <example/example_Nova_ClosureDemo.h>
+#include <example/example_Nova_Dog.h>
+#include <example/example_Nova_ExceptionHandlingDemo.h>
+#include <example/example_Nova_FileTest.h>
+#include <example/example_Nova_GenericDemo.h>
+#include <example/example_Nova_HashMapDemo.h>
+#include <example/example_Nova_HashSetDemo.h>
+#include <example/example_Nova_IntegerTest.h>
+#include <example/example_Nova_MathDemo.h>
+#include <example/example_Nova_NestTest.h>
+#include <example/example_Nova_NonWholeDivisionException.h>
+#include <example/example_Nova_Person.h>
 #include <example/example_Nova_Polygon.h>
+#include <example/example_Nova_PolymorphismDemo.h>
+#include <example/example_Nova_QueueDemo.h>
+#include <example/example_Nova_Spider.h>
 #include <example/example_Nova_Square.h>
+#include <example/example_Nova_SvgChart.h>
+#include <example/example_Nova_SvgFractal.h>
+#include <example/example_Nova_T1.h>
+#include <example/example_Nova_T2.h>
+#include <example/example_Nova_Test.h>
+#include <example/example_Nova_ThreadDemo.h>
+#include <example/example_Nova_ThreadDemoImplementation.h>
+#include <nova/datastruct/nova_datastruct_Nova_Comparable.h>
+#include <nova/datastruct/list/nova_datastruct_list_Nova_Array.h>
+#include <nova/datastruct/list/nova_datastruct_list_Nova_List.h>
 #include <nova/NativeObject.h>
+#include <nova/operators/nova_operators_Nova_EqualsOperator.h>
+#include <nova/nova_Nova_Substring.h>
 
 CCLASS_CLASS
 (
 	example_Nova_Lab, 
 	
-	example_Lab_Extension_VTable* vtable;
+	example_Nova_Lab_VTable* vtable;
+	void* prv;
+	nova_Nova_String* nova_Nova_Object_Nova_hashCode;
 )
 
-void example_Nova_Lab_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData);
-example_Nova_Lab* example_Nova_Lab_Nova_construct(example_Nova_Lab* this, nova_exception_Nova_ExceptionData* exceptionData);
-void example_Nova_Lab_Nova_destroy(example_Nova_Lab** this, nova_exception_Nova_ExceptionData* exceptionData);
-void example_Nova_Lab_static_Nova_main(example_Nova_Lab* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_list_Nova_Array* args);
-void example_Nova_Lab_Nova_this(example_Nova_Lab* this, nova_exception_Nova_ExceptionData* exceptionData);
-void example_Nova_Lab_Nova_super(example_Nova_Lab* this, nova_exception_Nova_ExceptionData* exceptionData);
-
-CCLASS_CLASS
-(
-	example_Nova_LabFunctionMap, 
-	
-	example_Lab_LabFunctionMap_Extension_VTable* vtable;
-)
-
-void example_Nova_LabFunctionMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData);
-example_Nova_LabFunctionMap* example_Nova_LabFunctionMap_Nova_construct(example_Nova_LabFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
-void example_Nova_LabFunctionMap_Nova_destroy(example_Nova_LabFunctionMap** this, nova_exception_Nova_ExceptionData* exceptionData);
-void example_Nova_LabFunctionMap_Nova_this(example_Nova_LabFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
-example_Nova_Lab* example_Nova_LabFunctionMap_functionMapLabFunctionMap_Nova_construct(example_Nova_LabFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
-void example_Nova_LabFunctionMap_functionMap_static_Nova_main(example_Nova_LabFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_list_Nova_Array* args);
-void example_Nova_LabFunctionMap_Nova_super(example_Nova_LabFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
-
-CCLASS_CLASS
-(
-	example_Nova_LabPropertyMap, 
-	
-	example_Lab_LabPropertyMap_Extension_VTable* vtable;
-)
-
-void example_Nova_LabPropertyMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData);
-example_Nova_LabPropertyMap* example_Nova_LabPropertyMap_Nova_construct(example_Nova_LabPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData);
-void example_Nova_LabPropertyMap_Nova_destroy(example_Nova_LabPropertyMap** this, nova_exception_Nova_ExceptionData* exceptionData);
-void example_Nova_LabPropertyMap_Nova_this(example_Nova_LabPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData);
-void example_Nova_LabPropertyMap_Nova_super(example_Nova_LabPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+extern char example_Nova_Lab_Nova_init_static_inited;
+void example_Nova_Lab_Nova_init_static();
+example_Nova_Lab* example_Nova_Lab_Nova_construct(example_Nova_Lab* this);
+void example_Nova_Lab_Nova_destroy(example_Nova_Lab** this);
+void example_Nova_Lab_static_Nova_main(example_Nova_Lab* this, nova_datastruct_list_Nova_Array* args);
+example_Nova_Lab* example_Nova_Lab_Nova_this(example_Nova_Lab* this);
+void example_Nova_Lab_Nova_super(example_Nova_Lab* this);
 
 #endif

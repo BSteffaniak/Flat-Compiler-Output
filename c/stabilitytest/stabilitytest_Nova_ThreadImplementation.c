@@ -31,48 +31,83 @@
 #include <nova/meta/nova_meta_Nova_FunctionMap.h>
 #include <nova/meta/nova_meta_Nova_PropertyMap.h>
 #include <nova/regex/nova_regex_Nova_Pattern.h>
-#include <nova/thread/nova_thread_Nova_Thread.h>
-#include <nova/thread/nova_thread_Nova_Thread.h>
+#include <stabilitytest/stabilitytest_Nova_AssignmentStability.h>
+#include <stabilitytest/stabilitytest_Nova_BoundedIntervalStability.h>
+#include <stabilitytest/stabilitytest_Nova_BoundlessIntervalStability.h>
+#include <stabilitytest/stabilitytest_Nova_CastStability.h>
+#include <stabilitytest/stabilitytest_Nova_ClassWithProperties.h>
+#include <stabilitytest/stabilitytest_Nova_ClientThread.h>
+#include <stabilitytest/stabilitytest_Nova_ClosureStability.h>
+#include <stabilitytest/stabilitytest_Nova_ExceptionStability.h>
+#include <stabilitytest/stabilitytest_Nova_ExternalInnerClassStability.h>
+#include <stabilitytest/stabilitytest_Nova_FancyOutputStreamTests.h>
+#include <stabilitytest/stabilitytest_Nova_FileStability.h>
+#include <stabilitytest/stabilitytest_Nova_FirstClassFunctionStability.h>
+#include <stabilitytest/stabilitytest_Nova_InnerClassStability.h>
+#include <stabilitytest/stabilitytest_Nova_IntervalStability.h>
+#include <stabilitytest/stabilitytest_Nova_LambdaStability.h>
+#include <stabilitytest/stabilitytest_Nova_LibraryLoadingStability.h>
+#include <stabilitytest/stabilitytest_Nova_NetworkStability.h>
+#include <stabilitytest/stabilitytest_Nova_Node.h>
+#include <stabilitytest/stabilitytest_Nova_PolymorphicSubClass.h>
+#include <stabilitytest/stabilitytest_Nova_PolymorphicSuperClass.h>
+#include <stabilitytest/stabilitytest_Nova_PolymorphismStability.h>
+#include <stabilitytest/stabilitytest_Nova_PrimitiveOverloadStability.h>
+#include <stabilitytest/stabilitytest_Nova_RegexStability.h>
+#include <stabilitytest/stabilitytest_Nova_StabilityExceptionHandler.h>
+#include <stabilitytest/stabilitytest_Nova_StabilityTest.h>
+#include <stabilitytest/stabilitytest_Nova_StabilityTestCase.h>
+#include <stabilitytest/stabilitytest_Nova_StabilityTestException.h>
+#include <stabilitytest/stabilitytest_Nova_StaticImportStability.h>
+#include <stabilitytest/stabilitytest_Nova_SyntaxStability.h>
+#include <stabilitytest/stabilitytest_Nova_ThreadStability.h>
+#include <stabilitytest/stabilitytest_Nova_TimeStability.h>
+#include <stabilitytest/stabilitytest_Nova_ToStringStability.h>
+#include <stabilitytest/stabilitytest_Nova_UnstableException.h>
 #include <nova/thread/NativeThread.h>
+#include <nova/thread/nova_thread_Nova_ThreadLocal.h>
+#include <nova/thread/nova_thread_Nova_UncaughtExceptionHandler.h>
 #include <nova/NativeObject.h>
+#include <nova/operators/nova_operators_Nova_EqualsOperator.h>
+#include <nova/nova_Nova_Substring.h>
 
 
 
 CCLASS_PRIVATE
 (
 	stabilitytest_Nova_ThreadImplementation,
-	void (*nova_thread_Nova_Thread_Nova_action)(void*, nova_exception_Nova_ExceptionData*, void*);
-	void* nova_thread_Nova_Thread_context_Nova_action;
-	void* nova_thread_Nova_Thread_reference_Nova_action;
 	NOVA_THREAD_HANDLE* nova_thread_Nova_Thread_Nova_handle;
+	/*nova_thread_Nova_Thread_closure1412_Nova_action*/nova_funcStruct* nova_thread_Nova_Thread_Nova_action;
 	char nova_thread_Nova_Thread_Nova_useAction;
 	
 	int stabilitytest_Nova_ThreadImplementation_Nova_times;
 	int stabilitytest_Nova_ThreadImplementation_Nova_millis;
 	
 )
-void stabilitytest_Nova_ThreadImplementation_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData)
+char stabilitytest_Nova_ThreadImplementation_Nova_init_static_inited = 0;
+void stabilitytest_Nova_ThreadImplementation_Nova_init_static()
 {
-	{
+	if (!stabilitytest_Nova_ThreadImplementation_Nova_init_static_inited) {
+		stabilitytest_Nova_ThreadImplementation_Nova_init_static_inited = 1;
+		{
+		}
 	}
 }
 
-stabilitytest_Nova_ThreadImplementation* stabilitytest_Nova_ThreadImplementation_Nova_construct(stabilitytest_Nova_ThreadImplementation* this, nova_exception_Nova_ExceptionData* exceptionData, int times, int millis)
+stabilitytest_Nova_ThreadImplementation* stabilitytest_Nova_ThreadImplementation_Nova_construct(stabilitytest_Nova_ThreadImplementation* this, int times, int millis)
 {
 	CCLASS_NEW(stabilitytest_Nova_ThreadImplementation, this);
-	this->vtable = &stabilitytest_ThreadImplementation_Extension_VTable_val;
-	nova_Nova_Object_Nova_super((nova_Nova_Object*)this, exceptionData);
-	nova_thread_Nova_Thread_Nova_super((nova_thread_Nova_Thread*)this, exceptionData);
-	stabilitytest_Nova_ThreadImplementation_Nova_super(this, exceptionData);
+	this->vtable = &stabilitytest_Nova_ThreadImplementation_VTable_val;
+	nova_Nova_Object_Nova_super((nova_Nova_Object*)this);
+	nova_thread_Nova_Thread_Nova_super((nova_thread_Nova_Thread*)this);
+	stabilitytest_Nova_ThreadImplementation_Nova_super(this);
 	
-	{
-		stabilitytest_Nova_ThreadImplementation_Nova_this(this, exceptionData, times, millis);
-	}
-	
-	return this;
+	return stabilitytest_Nova_ThreadImplementation_Nova_this((stabilitytest_Nova_ThreadImplementation*)(this),
+		times,
+	millis);
 }
 
-void stabilitytest_Nova_ThreadImplementation_Nova_destroy(stabilitytest_Nova_ThreadImplementation** this, nova_exception_Nova_ExceptionData* exceptionData)
+void stabilitytest_Nova_ThreadImplementation_Nova_destroy(stabilitytest_Nova_ThreadImplementation** this)
 {
 	if (!*this)
 	{
@@ -86,118 +121,25 @@ void stabilitytest_Nova_ThreadImplementation_Nova_destroy(stabilitytest_Nova_Thr
 	NOVA_FREE(*this);
 }
 
-void stabilitytest_Nova_ThreadImplementation_Nova_this(stabilitytest_Nova_ThreadImplementation* this, nova_exception_Nova_ExceptionData* exceptionData, int times, int millis)
-{
+stabilitytest_Nova_ThreadImplementation* stabilitytest_Nova_ThreadImplementation_Nova_this(stabilitytest_Nova_ThreadImplementation* this, int times, int millis) {
 	this->prv->stabilitytest_Nova_ThreadImplementation_Nova_times = times;
 	this->prv->stabilitytest_Nova_ThreadImplementation_Nova_millis = millis;
+	return this;
 }
-
-void stabilitytest_Nova_ThreadImplementation_Nova_run(stabilitytest_Nova_ThreadImplementation* this, nova_exception_Nova_ExceptionData* exceptionData)
+void stabilitytest_Nova_ThreadImplementation_Nova_run(stabilitytest_Nova_ThreadImplementation* this)
 {
-	int l3_Nova_i = 0;
-	
-	l3_Nova_i = (int)0;
-	for (; l3_Nova_i < (int)this->prv->stabilitytest_Nova_ThreadImplementation_Nova_times; l3_Nova_i++)
+	int l8_Nova_i;
+	l8_Nova_i = (int)0;
+	for (; l8_Nova_i < (int)this->prv->stabilitytest_Nova_ThreadImplementation_Nova_times; l8_Nova_i++)
 	{
-		nova_thread_Nova_Thread_static_Nova_sleep(0, exceptionData, this->prv->stabilitytest_Nova_ThreadImplementation_Nova_millis);
+		nova_thread_Nova_Thread_static_Nova_sleep((nova_thread_Nova_Thread*)(0),
+		this->prv->stabilitytest_Nova_ThreadImplementation_Nova_millis);
 	}
 }
 
-void stabilitytest_Nova_ThreadImplementation_Nova_super(stabilitytest_Nova_ThreadImplementation* this, nova_exception_Nova_ExceptionData* exceptionData)
+void stabilitytest_Nova_ThreadImplementation_Nova_super(stabilitytest_Nova_ThreadImplementation* this)
 {
 	this->prv->stabilitytest_Nova_ThreadImplementation_Nova_times = 0;
 	this->prv->stabilitytest_Nova_ThreadImplementation_Nova_millis = 0;
-}
-
-void stabilitytest_Nova_ThreadImplementationFunctionMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData)
-{
-	{
-	}
-}
-
-stabilitytest_Nova_ThreadImplementationFunctionMap* stabilitytest_Nova_ThreadImplementationFunctionMap_Nova_construct(stabilitytest_Nova_ThreadImplementationFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
-{
-	CCLASS_NEW(stabilitytest_Nova_ThreadImplementationFunctionMap, this,);
-	this->vtable = &stabilitytest_ThreadImplementation_ThreadImplementationFunctionMap_Extension_VTable_val;
-	nova_Nova_Object_Nova_super((nova_Nova_Object*)this, exceptionData);
-	nova_meta_Nova_FunctionMap_Nova_super((nova_meta_Nova_FunctionMap*)this, exceptionData);
-	nova_thread_Nova_ThreadFunctionMap_Nova_super((nova_thread_Nova_ThreadFunctionMap*)this, exceptionData);
-	stabilitytest_Nova_ThreadImplementationFunctionMap_Nova_super(this, exceptionData);
-	
-	{
-		stabilitytest_Nova_ThreadImplementationFunctionMap_Nova_this(this, exceptionData);
-	}
-	
-	return this;
-}
-
-void stabilitytest_Nova_ThreadImplementationFunctionMap_Nova_destroy(stabilitytest_Nova_ThreadImplementationFunctionMap** this, nova_exception_Nova_ExceptionData* exceptionData)
-{
-	if (!*this)
-	{
-		return;
-	}
-	
-	
-	NOVA_FREE(*this);
-}
-
-void stabilitytest_Nova_ThreadImplementationFunctionMap_Nova_this(stabilitytest_Nova_ThreadImplementationFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
-{
-}
-
-stabilitytest_Nova_ThreadImplementation* stabilitytest_Nova_ThreadImplementationFunctionMap_functionMapThreadImplementationFunctionMap_Nova_construct(stabilitytest_Nova_ThreadImplementationFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, int times, int millis)
-{
-	return stabilitytest_Nova_ThreadImplementation_Nova_construct(0, exceptionData, times, millis);
-}
-
-void stabilitytest_Nova_ThreadImplementationFunctionMap_functionMap_Nova_run(stabilitytest_Nova_ThreadImplementationFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, stabilitytest_Nova_ThreadImplementation* reference)
-{
-	stabilitytest_Nova_ThreadImplementation_Nova_run(reference, exceptionData);
-}
-
-void stabilitytest_Nova_ThreadImplementationFunctionMap_Nova_super(stabilitytest_Nova_ThreadImplementationFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
-{
-}
-
-void stabilitytest_Nova_ThreadImplementationPropertyMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData)
-{
-	{
-	}
-}
-
-stabilitytest_Nova_ThreadImplementationPropertyMap* stabilitytest_Nova_ThreadImplementationPropertyMap_Nova_construct(stabilitytest_Nova_ThreadImplementationPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData)
-{
-	CCLASS_NEW(stabilitytest_Nova_ThreadImplementationPropertyMap, this,);
-	this->vtable = &stabilitytest_ThreadImplementation_ThreadImplementationPropertyMap_Extension_VTable_val;
-	nova_Nova_Object_Nova_super((nova_Nova_Object*)this, exceptionData);
-	nova_meta_Nova_PropertyMap_Nova_super((nova_meta_Nova_PropertyMap*)this, exceptionData);
-	nova_thread_Nova_ThreadPropertyMap_Nova_super((nova_thread_Nova_ThreadPropertyMap*)this, exceptionData);
-	stabilitytest_Nova_ThreadImplementationPropertyMap_Nova_super(this, exceptionData);
-	
-	{
-		stabilitytest_Nova_ThreadImplementationPropertyMap_Nova_this(this, exceptionData);
-	}
-	
-	return this;
-}
-
-void stabilitytest_Nova_ThreadImplementationPropertyMap_Nova_destroy(stabilitytest_Nova_ThreadImplementationPropertyMap** this, nova_exception_Nova_ExceptionData* exceptionData)
-{
-	if (!*this)
-	{
-		return;
-	}
-	
-	
-	NOVA_FREE(*this);
-}
-
-void stabilitytest_Nova_ThreadImplementationPropertyMap_Nova_this(stabilitytest_Nova_ThreadImplementationPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData)
-{
-}
-
-void stabilitytest_Nova_ThreadImplementationPropertyMap_Nova_super(stabilitytest_Nova_ThreadImplementationPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData)
-{
 }
 

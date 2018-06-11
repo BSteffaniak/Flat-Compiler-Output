@@ -31,7 +31,42 @@
 #include <nova/meta/nova_meta_Nova_FunctionMap.h>
 #include <nova/meta/nova_meta_Nova_PropertyMap.h>
 #include <nova/regex/nova_regex_Nova_Pattern.h>
+#include <stabilitytest/stabilitytest_Nova_AssignmentStability.h>
+#include <stabilitytest/stabilitytest_Nova_BoundedIntervalStability.h>
+#include <stabilitytest/stabilitytest_Nova_BoundlessIntervalStability.h>
+#include <stabilitytest/stabilitytest_Nova_CastStability.h>
+#include <stabilitytest/stabilitytest_Nova_ClientThread.h>
+#include <stabilitytest/stabilitytest_Nova_ClosureStability.h>
+#include <stabilitytest/stabilitytest_Nova_ExceptionStability.h>
+#include <stabilitytest/stabilitytest_Nova_ExternalInnerClassStability.h>
+#include <stabilitytest/stabilitytest_Nova_FancyOutputStreamTests.h>
+#include <stabilitytest/stabilitytest_Nova_FileStability.h>
+#include <stabilitytest/stabilitytest_Nova_FirstClassFunctionStability.h>
+#include <stabilitytest/stabilitytest_Nova_InnerClassStability.h>
+#include <stabilitytest/stabilitytest_Nova_IntervalStability.h>
+#include <stabilitytest/stabilitytest_Nova_LambdaStability.h>
+#include <stabilitytest/stabilitytest_Nova_LibraryLoadingStability.h>
+#include <stabilitytest/stabilitytest_Nova_NetworkStability.h>
+#include <stabilitytest/stabilitytest_Nova_Node.h>
+#include <stabilitytest/stabilitytest_Nova_PolymorphicSubClass.h>
+#include <stabilitytest/stabilitytest_Nova_PolymorphicSuperClass.h>
+#include <stabilitytest/stabilitytest_Nova_PolymorphismStability.h>
+#include <stabilitytest/stabilitytest_Nova_PrimitiveOverloadStability.h>
+#include <stabilitytest/stabilitytest_Nova_RegexStability.h>
+#include <stabilitytest/stabilitytest_Nova_StabilityExceptionHandler.h>
+#include <stabilitytest/stabilitytest_Nova_StabilityTest.h>
+#include <stabilitytest/stabilitytest_Nova_StabilityTestCase.h>
+#include <stabilitytest/stabilitytest_Nova_StabilityTestException.h>
+#include <stabilitytest/stabilitytest_Nova_StaticImportStability.h>
+#include <stabilitytest/stabilitytest_Nova_SyntaxStability.h>
+#include <stabilitytest/stabilitytest_Nova_ThreadImplementation.h>
+#include <stabilitytest/stabilitytest_Nova_ThreadStability.h>
+#include <stabilitytest/stabilitytest_Nova_TimeStability.h>
+#include <stabilitytest/stabilitytest_Nova_ToStringStability.h>
+#include <stabilitytest/stabilitytest_Nova_UnstableException.h>
 #include <nova/NativeObject.h>
+#include <nova/operators/nova_operators_Nova_EqualsOperator.h>
+#include <nova/nova_Nova_Substring.h>
 
 
 
@@ -42,27 +77,27 @@ CCLASS_PRIVATE
 	int stabilitytest_Nova_ClassWithProperties_Nova_privateProp2;
 	
 )
-void stabilitytest_Nova_ClassWithProperties_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData)
+char stabilitytest_Nova_ClassWithProperties_Nova_init_static_inited = 0;
+void stabilitytest_Nova_ClassWithProperties_Nova_init_static()
 {
-	{
+	if (!stabilitytest_Nova_ClassWithProperties_Nova_init_static_inited) {
+		stabilitytest_Nova_ClassWithProperties_Nova_init_static_inited = 1;
+		{
+		}
 	}
 }
 
-stabilitytest_Nova_ClassWithProperties* stabilitytest_Nova_ClassWithProperties_Nova_construct(stabilitytest_Nova_ClassWithProperties* this, nova_exception_Nova_ExceptionData* exceptionData)
+stabilitytest_Nova_ClassWithProperties* stabilitytest_Nova_ClassWithProperties_Nova_construct(stabilitytest_Nova_ClassWithProperties* this)
 {
 	CCLASS_NEW(stabilitytest_Nova_ClassWithProperties, this);
-	this->vtable = &stabilitytest_ClassWithProperties_Extension_VTable_val;
-	nova_Nova_Object_Nova_super((nova_Nova_Object*)this, exceptionData);
-	stabilitytest_Nova_ClassWithProperties_Nova_super(this, exceptionData);
+	this->vtable = &stabilitytest_Nova_ClassWithProperties_VTable_val;
+	nova_Nova_Object_Nova_super((nova_Nova_Object*)this);
+	stabilitytest_Nova_ClassWithProperties_Nova_super(this);
 	
-	{
-		stabilitytest_Nova_ClassWithProperties_Nova_this(this, exceptionData);
-	}
-	
-	return this;
+	return stabilitytest_Nova_ClassWithProperties_Nova_this((stabilitytest_Nova_ClassWithProperties*)(this));
 }
 
-void stabilitytest_Nova_ClassWithProperties_Nova_destroy(stabilitytest_Nova_ClassWithProperties** this, nova_exception_Nova_ExceptionData* exceptionData)
+void stabilitytest_Nova_ClassWithProperties_Nova_destroy(stabilitytest_Nova_ClassWithProperties** this)
 {
 	if (!*this)
 	{
@@ -73,133 +108,39 @@ void stabilitytest_Nova_ClassWithProperties_Nova_destroy(stabilitytest_Nova_Clas
 	
 	NOVA_FREE((*this)->prv);
 	
+	
 	NOVA_FREE(*this);
 }
 
-void stabilitytest_Nova_ClassWithProperties_Nova_this(stabilitytest_Nova_ClassWithProperties* this, nova_exception_Nova_ExceptionData* exceptionData)
-{
+stabilitytest_Nova_ClassWithProperties* stabilitytest_Nova_ClassWithProperties_Nova_this(stabilitytest_Nova_ClassWithProperties* this) {
+	return this;
 }
-
-int stabilitytest_Nova_ClassWithProperties_Accessor_Nova_prop1(stabilitytest_Nova_ClassWithProperties* this, nova_exception_Nova_ExceptionData* exceptionData)
+int stabilitytest_Nova_ClassWithProperties_Accessorfunc_Nova_prop1(stabilitytest_Nova_ClassWithProperties* this)
 {
 	return this->prv->stabilitytest_Nova_ClassWithProperties_Nova_privateProp1;
 }
 
-int stabilitytest_Nova_ClassWithProperties_Mutator_Nova_prop1(stabilitytest_Nova_ClassWithProperties* this, nova_exception_Nova_ExceptionData* exceptionData, int value)
+int stabilitytest_Nova_ClassWithProperties_Mutatorfunc_Nova_prop1(stabilitytest_Nova_ClassWithProperties* this, int value)
 {
 	this->prv->stabilitytest_Nova_ClassWithProperties_Nova_privateProp1 = value;
 	return value;
 }
 
-int stabilitytest_Nova_ClassWithProperties_Accessor_Nova_prop2(stabilitytest_Nova_ClassWithProperties* this, nova_exception_Nova_ExceptionData* exceptionData)
+int stabilitytest_Nova_ClassWithProperties_Accessor_Nova_prop2(stabilitytest_Nova_ClassWithProperties* this)
 {
 	return this->prv->stabilitytest_Nova_ClassWithProperties_Nova_privateProp2;
 }
 
-int stabilitytest_Nova_ClassWithProperties_Mutator_Nova_prop2(stabilitytest_Nova_ClassWithProperties* this, nova_exception_Nova_ExceptionData* exceptionData, int value)
+int stabilitytest_Nova_ClassWithProperties_Mutator_Nova_prop2(stabilitytest_Nova_ClassWithProperties* this, int value)
 {
 	this->prv->stabilitytest_Nova_ClassWithProperties_Nova_privateProp2 = value;
 	return value;
 }
 
-void stabilitytest_Nova_ClassWithProperties_Nova_super(stabilitytest_Nova_ClassWithProperties* this, nova_exception_Nova_ExceptionData* exceptionData)
+void stabilitytest_Nova_ClassWithProperties_Nova_super(stabilitytest_Nova_ClassWithProperties* this)
 {
+	this->stabilitytest_Nova_ClassWithProperties_Nova_prop1 = 0;
 	this->prv->stabilitytest_Nova_ClassWithProperties_Nova_privateProp1 = 0;
 	this->prv->stabilitytest_Nova_ClassWithProperties_Nova_privateProp2 = 0;
-}
-
-void stabilitytest_Nova_ClassWithPropertiesFunctionMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData)
-{
-	{
-	}
-}
-
-stabilitytest_Nova_ClassWithPropertiesFunctionMap* stabilitytest_Nova_ClassWithPropertiesFunctionMap_Nova_construct(stabilitytest_Nova_ClassWithPropertiesFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
-{
-	CCLASS_NEW(stabilitytest_Nova_ClassWithPropertiesFunctionMap, this,);
-	this->vtable = &stabilitytest_ClassWithProperties_ClassWithPropertiesFunctionMap_Extension_VTable_val;
-	nova_Nova_Object_Nova_super((nova_Nova_Object*)this, exceptionData);
-	nova_meta_Nova_FunctionMap_Nova_super((nova_meta_Nova_FunctionMap*)this, exceptionData);
-	stabilitytest_Nova_ClassWithPropertiesFunctionMap_Nova_super(this, exceptionData);
-	
-	{
-		stabilitytest_Nova_ClassWithPropertiesFunctionMap_Nova_this(this, exceptionData);
-	}
-	
-	return this;
-}
-
-void stabilitytest_Nova_ClassWithPropertiesFunctionMap_Nova_destroy(stabilitytest_Nova_ClassWithPropertiesFunctionMap** this, nova_exception_Nova_ExceptionData* exceptionData)
-{
-	if (!*this)
-	{
-		return;
-	}
-	
-	
-	NOVA_FREE(*this);
-}
-
-void stabilitytest_Nova_ClassWithPropertiesFunctionMap_Nova_this(stabilitytest_Nova_ClassWithPropertiesFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
-{
-}
-
-stabilitytest_Nova_ClassWithProperties* stabilitytest_Nova_ClassWithPropertiesFunctionMap_functionMapClassWithPropertiesFunctionMap_Nova_construct(stabilitytest_Nova_ClassWithPropertiesFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
-{
-	return stabilitytest_Nova_ClassWithProperties_Nova_construct(0, exceptionData);
-}
-
-void stabilitytest_Nova_ClassWithPropertiesFunctionMap_Nova_super(stabilitytest_Nova_ClassWithPropertiesFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData)
-{
-}
-
-void stabilitytest_Nova_ClassWithPropertiesPropertyMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData)
-{
-	{
-	}
-}
-
-stabilitytest_Nova_ClassWithPropertiesPropertyMap* stabilitytest_Nova_ClassWithPropertiesPropertyMap_Nova_construct(stabilitytest_Nova_ClassWithPropertiesPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData)
-{
-	CCLASS_NEW(stabilitytest_Nova_ClassWithPropertiesPropertyMap, this,);
-	this->vtable = &stabilitytest_ClassWithProperties_ClassWithPropertiesPropertyMap_Extension_VTable_val;
-	nova_Nova_Object_Nova_super((nova_Nova_Object*)this, exceptionData);
-	nova_meta_Nova_PropertyMap_Nova_super((nova_meta_Nova_PropertyMap*)this, exceptionData);
-	stabilitytest_Nova_ClassWithPropertiesPropertyMap_Nova_super(this, exceptionData);
-	
-	{
-		stabilitytest_Nova_ClassWithPropertiesPropertyMap_Nova_this(this, exceptionData);
-	}
-	
-	return this;
-}
-
-void stabilitytest_Nova_ClassWithPropertiesPropertyMap_Nova_destroy(stabilitytest_Nova_ClassWithPropertiesPropertyMap** this, nova_exception_Nova_ExceptionData* exceptionData)
-{
-	if (!*this)
-	{
-		return;
-	}
-	
-	
-	NOVA_FREE(*this);
-}
-
-void stabilitytest_Nova_ClassWithPropertiesPropertyMap_Nova_this(stabilitytest_Nova_ClassWithPropertiesPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData)
-{
-}
-
-int stabilitytest_Nova_ClassWithPropertiesPropertyMap_functionMap_Nova_prop1(stabilitytest_Nova_ClassWithPropertiesPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData, stabilitytest_Nova_ClassWithProperties* reference)
-{
-	return stabilitytest_Nova_ClassWithProperties_Accessor_Nova_prop1(reference, exceptionData);
-}
-
-int stabilitytest_Nova_ClassWithPropertiesPropertyMap_functionMap_Nova_prop2(stabilitytest_Nova_ClassWithPropertiesPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData, stabilitytest_Nova_ClassWithProperties* reference)
-{
-	return stabilitytest_Nova_ClassWithProperties_Accessor_Nova_prop2(reference, exceptionData);
-}
-
-void stabilitytest_Nova_ClassWithPropertiesPropertyMap_Nova_super(stabilitytest_Nova_ClassWithPropertiesPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData)
-{
 }
 

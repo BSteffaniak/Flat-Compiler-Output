@@ -2,8 +2,6 @@
 #define FILE_example_Nova_BodyBuilder_NOVA
 
 typedef struct example_Nova_BodyBuilder example_Nova_BodyBuilder;
-typedef struct example_Nova_BodyBuilderFunctionMap example_Nova_BodyBuilderFunctionMap;
-typedef struct example_Nova_BodyBuilderPropertyMap example_Nova_BodyBuilderPropertyMap;
 
 
 #include <Nova.h>
@@ -42,55 +40,56 @@ typedef struct example_Nova_BodyBuilderPropertyMap example_Nova_BodyBuilderPrope
 #include <nova/meta/nova_meta_Nova_FunctionMap.h>
 #include <nova/meta/nova_meta_Nova_PropertyMap.h>
 #include <nova/regex/nova_regex_Nova_Pattern.h>
+#include <example/example_Nova_Animal.h>
+#include <example/example_Nova_ArrayDemo.h>
+#include <example/example_Nova_ClosureDemo.h>
+#include <example/example_Nova_Dog.h>
+#include <example/example_Nova_ExceptionHandlingDemo.h>
+#include <example/example_Nova_FileTest.h>
+#include <example/example_Nova_GenericDemo.h>
+#include <example/example_Nova_HashMapDemo.h>
+#include <example/example_Nova_HashSetDemo.h>
+#include <example/example_Nova_IntegerTest.h>
+#include <example/example_Nova_Lab.h>
+#include <example/example_Nova_MathDemo.h>
+#include <example/example_Nova_NestTest.h>
+#include <example/example_Nova_NonWholeDivisionException.h>
 #include <example/example_Nova_Person.h>
-#include <example/example_Nova_Person.h>
-#include <example/example_Nova_Person.h>
+#include <example/example_Nova_Polygon.h>
+#include <example/example_Nova_PolymorphismDemo.h>
+#include <example/example_Nova_QueueDemo.h>
+#include <example/example_Nova_Spider.h>
+#include <example/example_Nova_Square.h>
+#include <example/example_Nova_SvgChart.h>
+#include <example/example_Nova_SvgFractal.h>
+#include <example/example_Nova_T1.h>
+#include <example/example_Nova_T2.h>
+#include <example/example_Nova_Test.h>
+#include <example/example_Nova_ThreadDemo.h>
+#include <example/example_Nova_ThreadDemoImplementation.h>
+#include <example/example_Nova_BodyBuilder.h>
 #include <nova/NativeObject.h>
+#include <nova/operators/nova_operators_Nova_EqualsOperator.h>
+#include <nova/nova_Nova_Substring.h>
 
 CCLASS_CLASS
 (
 	example_Nova_BodyBuilder, 
 	
-	example_BodyBuilder_Extension_VTable* vtable;
+	example_Nova_BodyBuilder_VTable* vtable;
+	void* prv;
+	nova_Nova_String* nova_Nova_Object_Nova_hashCode;
 	int example_Nova_Person_Nova_age;
 	nova_Nova_String* example_Nova_Person_Nova_name;
 	int example_Nova_BodyBuilder_Nova_weightClass;
 )
 
-void example_Nova_BodyBuilder_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData);
-example_Nova_BodyBuilder* example_Nova_BodyBuilder_Nova_construct(example_Nova_BodyBuilder* this, nova_exception_Nova_ExceptionData* exceptionData, int weightClass, nova_Nova_String* name);
-void example_Nova_BodyBuilder_Nova_destroy(example_Nova_BodyBuilder** this, nova_exception_Nova_ExceptionData* exceptionData);
-void example_Nova_BodyBuilder_Nova_this(example_Nova_BodyBuilder* this, nova_exception_Nova_ExceptionData* exceptionData, int weightClass, nova_Nova_String* name);
-void example_Nova_BodyBuilder_Nova_sayHello(example_Nova_BodyBuilder* this, nova_exception_Nova_ExceptionData* exceptionData);
-void example_Nova_BodyBuilder_Nova_super(example_Nova_BodyBuilder* this, nova_exception_Nova_ExceptionData* exceptionData);
-
-CCLASS_CLASS
-(
-	example_Nova_BodyBuilderFunctionMap, 
-	
-	example_BodyBuilder_BodyBuilderFunctionMap_Extension_VTable* vtable;
-)
-
-void example_Nova_BodyBuilderFunctionMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData);
-example_Nova_BodyBuilderFunctionMap* example_Nova_BodyBuilderFunctionMap_Nova_construct(example_Nova_BodyBuilderFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
-void example_Nova_BodyBuilderFunctionMap_Nova_destroy(example_Nova_BodyBuilderFunctionMap** this, nova_exception_Nova_ExceptionData* exceptionData);
-void example_Nova_BodyBuilderFunctionMap_Nova_this(example_Nova_BodyBuilderFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
-example_Nova_BodyBuilder* example_Nova_BodyBuilderFunctionMap_functionMapBodyBuilderFunctionMap_Nova_construct(example_Nova_BodyBuilderFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, int weightClass, nova_Nova_String* name);
-void example_Nova_BodyBuilderFunctionMap_functionMap_Nova_sayHello(example_Nova_BodyBuilderFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, example_Nova_BodyBuilder* reference);
-void example_Nova_BodyBuilderFunctionMap_Nova_super(example_Nova_BodyBuilderFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
-
-CCLASS_CLASS
-(
-	example_Nova_BodyBuilderPropertyMap, 
-	
-	example_BodyBuilder_BodyBuilderPropertyMap_Extension_VTable* vtable;
-)
-
-void example_Nova_BodyBuilderPropertyMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData);
-example_Nova_BodyBuilderPropertyMap* example_Nova_BodyBuilderPropertyMap_Nova_construct(example_Nova_BodyBuilderPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData);
-void example_Nova_BodyBuilderPropertyMap_Nova_destroy(example_Nova_BodyBuilderPropertyMap** this, nova_exception_Nova_ExceptionData* exceptionData);
-void example_Nova_BodyBuilderPropertyMap_Nova_this(example_Nova_BodyBuilderPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData);
-int example_Nova_BodyBuilderPropertyMap_functionMap_Nova_weightClass(example_Nova_BodyBuilderPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData, example_Nova_BodyBuilder* reference);
-void example_Nova_BodyBuilderPropertyMap_Nova_super(example_Nova_BodyBuilderPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+extern char example_Nova_BodyBuilder_Nova_init_static_inited;
+void example_Nova_BodyBuilder_Nova_init_static();
+example_Nova_BodyBuilder* example_Nova_BodyBuilder_Nova_construct(example_Nova_BodyBuilder* this, int weightClass, nova_Nova_String* name);
+void example_Nova_BodyBuilder_Nova_destroy(example_Nova_BodyBuilder** this);
+example_Nova_BodyBuilder* example_Nova_BodyBuilder_Nova_this(example_Nova_BodyBuilder* this, int weightClass, nova_Nova_String* name);
+void example_Nova_BodyBuilder_Nova_sayHello(example_Nova_BodyBuilder* this);
+void example_Nova_BodyBuilder_Nova_super(example_Nova_BodyBuilder* this);
 
 #endif

@@ -2,9 +2,57 @@
 #define FILE_stabilitytest_Nova_StabilityTest_NOVA
 
 typedef struct stabilitytest_Nova_StabilityTest stabilitytest_Nova_StabilityTest;
-typedef struct stabilitytest_Nova_StabilityTestFunctionMap stabilitytest_Nova_StabilityTestFunctionMap;
-typedef struct stabilitytest_Nova_StabilityTestPropertyMap stabilitytest_Nova_StabilityTestPropertyMap;
 
+typedef struct nova_exception_Nova_ExceptionData nova_exception_Nova_ExceptionData;
+typedef struct novex_nest_Nova_TestResult novex_nest_Nova_TestResult;
+
+typedef void (*stabilitytest_Nova_StabilityTest_closure896_Nova_onResult)(void*, novex_nest_Nova_TestResult*, void*);
+typedef void (*stabilitytest_Nova_StabilityTest_closure898_Nova_onResult)(void*, novex_nest_Nova_TestResult*, void*);
+typedef void (*stabilitytest_Nova_StabilityTest_closure898_Nova_onResult)(void*, novex_nest_Nova_TestResult*, void*);
+typedef void (*stabilitytest_Nova_StabilityTest_closure900_Nova_onResult)(void*, novex_nest_Nova_TestResult*, void*);
+typedef void (*stabilitytest_Nova_StabilityTest_closure900_Nova_onResult)(void*, novex_nest_Nova_TestResult*, void*);
+typedef void (*stabilitytest_Nova_StabilityTest_closure902_Nova_onResult)(void*, novex_nest_Nova_TestResult*, void*);
+typedef void (*stabilitytest_Nova_StabilityTest_closure902_Nova_onResult)(void*, novex_nest_Nova_TestResult*, void*);
+typedef void (*stabilitytest_Nova_StabilityTest_closure904_Nova_onResult)(void*, novex_nest_Nova_TestResult*, void*);
+typedef void (*stabilitytest_Nova_StabilityTest_closure904_Nova_onResult)(void*, novex_nest_Nova_TestResult*, void*);
+typedef void (*stabilitytest_Nova_StabilityTest_closure906_Nova_onResult)(void*, novex_nest_Nova_TestResult*, void*);
+typedef void (*stabilitytest_Nova_StabilityTest_closure906_Nova_onResult)(void*, novex_nest_Nova_TestResult*, void*);
+typedef void (*stabilitytest_Nova_StabilityTest_closure908_Nova_onResult)(void*, novex_nest_Nova_TestResult*, void*);
+typedef void (*stabilitytest_Nova_StabilityTest_closure908_Nova_onResult)(void*, novex_nest_Nova_TestResult*, void*);
+typedef void (*stabilitytest_Nova_StabilityTest_closure910_Nova_onResult)(void*, novex_nest_Nova_TestResult*, void*);
+typedef void (*stabilitytest_Nova_StabilityTest_closure910_Nova_onResult)(void*, novex_nest_Nova_TestResult*, void*);
+typedef void (*stabilitytest_Nova_StabilityTest_closure912_Nova_onResult)(void*, novex_nest_Nova_TestResult*, void*);
+typedef void (*stabilitytest_Nova_StabilityTest_closure912_Nova_onResult)(void*, novex_nest_Nova_TestResult*, void*);
+typedef void (*stabilitytest_Nova_StabilityTest_closure914_Nova_onResult)(void*, novex_nest_Nova_TestResult*, void*);
+typedef void (*stabilitytest_Nova_StabilityTest_closure914_Nova_onResult)(void*, novex_nest_Nova_TestResult*, void*);
+typedef void (*stabilitytest_Nova_StabilityTest_closure916_Nova_onResult)(void*, novex_nest_Nova_TestResult*, void*);
+typedef void (*stabilitytest_Nova_StabilityTest_closure916_Nova_onResult)(void*, novex_nest_Nova_TestResult*, void*);
+typedef void (*stabilitytest_Nova_StabilityTest_closure918_Nova_onResult)(void*, novex_nest_Nova_TestResult*, void*);
+typedef void (*stabilitytest_Nova_StabilityTest_closure918_Nova_onResult)(void*, novex_nest_Nova_TestResult*, void*);
+typedef void (*stabilitytest_Nova_StabilityTest_closure920_Nova_onResult)(void*, novex_nest_Nova_TestResult*, void*);
+typedef void (*stabilitytest_Nova_StabilityTest_closure920_Nova_onResult)(void*, novex_nest_Nova_TestResult*, void*);
+typedef void (*stabilitytest_Nova_StabilityTest_closure922_Nova_onResult)(void*, novex_nest_Nova_TestResult*, void*);
+typedef void (*stabilitytest_Nova_StabilityTest_closure922_Nova_onResult)(void*, novex_nest_Nova_TestResult*, void*);
+typedef void (*stabilitytest_Nova_StabilityTest_closure924_Nova_onResult)(void*, novex_nest_Nova_TestResult*, void*);
+typedef void (*stabilitytest_Nova_StabilityTest_closure924_Nova_onResult)(void*, novex_nest_Nova_TestResult*, void*);
+typedef void (*stabilitytest_Nova_StabilityTest_closure926_Nova_onResult)(void*, novex_nest_Nova_TestResult*, void*);
+typedef void (*stabilitytest_Nova_StabilityTest_closure926_Nova_onResult)(void*, novex_nest_Nova_TestResult*, void*);
+typedef void (*stabilitytest_Nova_StabilityTest_closure928_Nova_onResult)(void*, novex_nest_Nova_TestResult*, void*);
+typedef void (*stabilitytest_Nova_StabilityTest_closure928_Nova_onResult)(void*, novex_nest_Nova_TestResult*, void*);
+typedef void (*stabilitytest_Nova_StabilityTest_closure930_Nova_onResult)(void*, novex_nest_Nova_TestResult*, void*);
+typedef void (*stabilitytest_Nova_StabilityTest_closure930_Nova_onResult)(void*, novex_nest_Nova_TestResult*, void*);
+typedef void (*stabilitytest_Nova_StabilityTest_closure932_Nova_onResult)(void*, novex_nest_Nova_TestResult*, void*);
+typedef void (*stabilitytest_Nova_StabilityTest_closure932_Nova_onResult)(void*, novex_nest_Nova_TestResult*, void*);
+typedef void (*stabilitytest_Nova_StabilityTest_closure934_Nova_onResult)(void*, novex_nest_Nova_TestResult*, void*);
+typedef void (*stabilitytest_Nova_StabilityTest_closure934_Nova_onResult)(void*, novex_nest_Nova_TestResult*, void*);
+typedef void (*stabilitytest_Nova_StabilityTest_closure936_Nova_onResult)(void*, novex_nest_Nova_TestResult*, void*);
+typedef void (*stabilitytest_Nova_StabilityTest_closure936_Nova_onResult)(void*, novex_nest_Nova_TestResult*, void*);
+typedef void (*stabilitytest_Nova_StabilityTest_closure938_Nova_onResult)(void*, novex_nest_Nova_TestResult*, void*);
+typedef void (*stabilitytest_Nova_StabilityTest_closure938_Nova_onResult)(void*, novex_nest_Nova_TestResult*, void*);
+typedef void (*stabilitytest_Nova_StabilityTest_closure940_Nova_onResult)(void*, novex_nest_Nova_TestResult*, void*);
+typedef void (*stabilitytest_Nova_StabilityTest_closure940_Nova_onResult)(void*, novex_nest_Nova_TestResult*, void*);
+typedef void (*stabilitytest_Nova_StabilityTest_closure942_Nova_onResult)(void*, novex_nest_Nova_TestResult*, void*);
+typedef void (*stabilitytest_Nova_StabilityTest_closure942_Nova_onResult)(void*, novex_nest_Nova_TestResult*, void*);
 
 #include <Nova.h>
 #include <InterfaceVTable.h>
@@ -43,73 +91,77 @@ typedef struct stabilitytest_Nova_StabilityTestPropertyMap stabilitytest_Nova_St
 #include <nova/meta/nova_meta_Nova_PropertyMap.h>
 #include <nova/regex/nova_regex_Nova_Pattern.h>
 #include <nova/time/nova_time_Nova_Timer.h>
+#include <nova/io/nova_io_Nova_File.h>
+#include <nova/io/nova_io_Nova_FancyOutputStream.h>
+#include <nova/star/nova_star_Nova_Button.h>
+#include <nova/star/nova_star_Nova_Label.h>
+#include <nova/star/nova_star_Nova_Panel.h>
+#include <nova/star/nova_star_Nova_Color.h>
+#include <nova/star/nova_star_Nova_ScrollBar.h>
+#include <novex/nest/ui/novex_nest_ui_Nova_ResultWindow.h>
+#include <novex/nest/ui/novex_nest_ui_Nova_ResultBar.h>
+#include <novex/nest/novex_nest_Nova_TestResult.h>
 #include <stabilitytest/stabilitytest_Nova_AssignmentStability.h>
+#include <stabilitytest/stabilitytest_Nova_BoundedIntervalStability.h>
+#include <stabilitytest/stabilitytest_Nova_BoundlessIntervalStability.h>
+#include <stabilitytest/stabilitytest_Nova_CastStability.h>
+#include <stabilitytest/stabilitytest_Nova_ClassWithProperties.h>
+#include <stabilitytest/stabilitytest_Nova_ClientThread.h>
 #include <stabilitytest/stabilitytest_Nova_ClosureStability.h>
 #include <stabilitytest/stabilitytest_Nova_ExceptionStability.h>
 #include <stabilitytest/stabilitytest_Nova_ExternalInnerClassStability.h>
+#include <stabilitytest/stabilitytest_Nova_FancyOutputStreamTests.h>
 #include <stabilitytest/stabilitytest_Nova_FileStability.h>
+#include <stabilitytest/stabilitytest_Nova_FirstClassFunctionStability.h>
 #include <stabilitytest/stabilitytest_Nova_InnerClassStability.h>
+#include <stabilitytest/stabilitytest_Nova_IntervalStability.h>
 #include <stabilitytest/stabilitytest_Nova_LambdaStability.h>
+#include <stabilitytest/stabilitytest_Nova_LibraryLoadingStability.h>
 #include <stabilitytest/stabilitytest_Nova_NetworkStability.h>
+#include <stabilitytest/stabilitytest_Nova_Node.h>
+#include <stabilitytest/stabilitytest_Nova_PolymorphicSubClass.h>
+#include <stabilitytest/stabilitytest_Nova_PolymorphicSuperClass.h>
 #include <stabilitytest/stabilitytest_Nova_PolymorphismStability.h>
+#include <stabilitytest/stabilitytest_Nova_PrimitiveOverloadStability.h>
 #include <stabilitytest/stabilitytest_Nova_RegexStability.h>
+#include <stabilitytest/stabilitytest_Nova_StabilityExceptionHandler.h>
 #include <stabilitytest/stabilitytest_Nova_StabilityTestCase.h>
+#include <stabilitytest/stabilitytest_Nova_StabilityTestException.h>
 #include <stabilitytest/stabilitytest_Nova_StaticImportStability.h>
 #include <stabilitytest/stabilitytest_Nova_SyntaxStability.h>
+#include <stabilitytest/stabilitytest_Nova_ThreadImplementation.h>
 #include <stabilitytest/stabilitytest_Nova_ThreadStability.h>
 #include <stabilitytest/stabilitytest_Nova_TimeStability.h>
 #include <stabilitytest/stabilitytest_Nova_ToStringStability.h>
 #include <stabilitytest/stabilitytest_Nova_UnstableException.h>
-#include <stabilitytest/stabilitytest_Nova_StabilityTestCase.h>
-#include <stabilitytest/stabilitytest_Nova_StabilityTestCase.h>
-#include <stabilitytest/stabilitytest_Nova_StabilityTest.h>
+#include <novex/nest/novex_nest_Nova_TestRunner.h>
+#include <nova/io/nova_io_Nova_OutputStream.h>
+#include <novex/nest/novex_nest_Nova_TestSuiteRunnerModel.h>
+#include <novex/nest/novex_nest_Nova_TestSuite.h>
+#include <novex/nest/novex_nest_Nova_TestRunnerModel.h>
 #include <nova/NativeObject.h>
+#include <nova/operators/nova_operators_Nova_EqualsOperator.h>
+#include <nova/nova_Nova_Substring.h>
 
 CCLASS_CLASS
 (
 	stabilitytest_Nova_StabilityTest, 
 	
-	stabilitytest_StabilityTest_Extension_VTable* vtable;
-	stabilitytest_Nova_StabilityTest* stabilitytest_Nova_StabilityTestCase_Nova_program;
+	stabilitytest_Nova_StabilityTest_VTable* vtable;
+	void* prv;
+	nova_Nova_String* nova_Nova_Object_Nova_hashCode;
+	novex_nest_Nova_TestRunnerModel* stabilitytest_Nova_StabilityTest_Nova_model;
 )
+extern novex_nest_Nova_TestSuiteRunnerModel* stabilitytest_Nova_StabilityTest_Nova__runTestsTestSuite;
 
-void stabilitytest_Nova_StabilityTest_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData);
-stabilitytest_Nova_StabilityTest* stabilitytest_Nova_StabilityTest_Nova_construct(stabilitytest_Nova_StabilityTest* this, nova_exception_Nova_ExceptionData* exceptionData, stabilitytest_Nova_StabilityTest* program);
-void stabilitytest_Nova_StabilityTest_Nova_destroy(stabilitytest_Nova_StabilityTest** this, nova_exception_Nova_ExceptionData* exceptionData);
-void stabilitytest_Nova_StabilityTest_static_Nova_main(stabilitytest_Nova_StabilityTest* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_list_Nova_Array* args);
-void stabilitytest_Nova_StabilityTest_Nova_this(stabilitytest_Nova_StabilityTest* this, nova_exception_Nova_ExceptionData* exceptionData, stabilitytest_Nova_StabilityTest* program);
-void stabilitytest_Nova_StabilityTest_Nova_test(stabilitytest_Nova_StabilityTest* this, nova_exception_Nova_ExceptionData* exceptionData);
-void stabilitytest_Nova_StabilityTest_Nova_fail(stabilitytest_Nova_StabilityTest* this, nova_exception_Nova_ExceptionData* exceptionData, nova_Nova_String* message, int condition);
-void stabilitytest_Nova_StabilityTest_Nova_super(stabilitytest_Nova_StabilityTest* this, nova_exception_Nova_ExceptionData* exceptionData);
-
-CCLASS_CLASS
-(
-	stabilitytest_Nova_StabilityTestFunctionMap, 
-	
-	stabilitytest_StabilityTest_StabilityTestFunctionMap_Extension_VTable* vtable;
-)
-
-void stabilitytest_Nova_StabilityTestFunctionMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData);
-stabilitytest_Nova_StabilityTestFunctionMap* stabilitytest_Nova_StabilityTestFunctionMap_Nova_construct(stabilitytest_Nova_StabilityTestFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
-void stabilitytest_Nova_StabilityTestFunctionMap_Nova_destroy(stabilitytest_Nova_StabilityTestFunctionMap** this, nova_exception_Nova_ExceptionData* exceptionData);
-void stabilitytest_Nova_StabilityTestFunctionMap_Nova_this(stabilitytest_Nova_StabilityTestFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
-stabilitytest_Nova_StabilityTest* stabilitytest_Nova_StabilityTestFunctionMap_functionMapStabilityTestFunctionMap_Nova_construct(stabilitytest_Nova_StabilityTestFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, stabilitytest_Nova_StabilityTest* program);
-void stabilitytest_Nova_StabilityTestFunctionMap_functionMap_static_Nova_main(stabilitytest_Nova_StabilityTestFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, nova_datastruct_list_Nova_Array* args);
-void stabilitytest_Nova_StabilityTestFunctionMap_functionMap_Nova_test(stabilitytest_Nova_StabilityTestFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, stabilitytest_Nova_StabilityTest* reference);
-void stabilitytest_Nova_StabilityTestFunctionMap_functionMap_Nova_fail(stabilitytest_Nova_StabilityTestFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData, stabilitytest_Nova_StabilityTest* reference, nova_Nova_String* message, char condition);
-void stabilitytest_Nova_StabilityTestFunctionMap_Nova_super(stabilitytest_Nova_StabilityTestFunctionMap* this, nova_exception_Nova_ExceptionData* exceptionData);
-
-CCLASS_CLASS
-(
-	stabilitytest_Nova_StabilityTestPropertyMap, 
-	
-	stabilitytest_StabilityTest_StabilityTestPropertyMap_Extension_VTable* vtable;
-)
-
-void stabilitytest_Nova_StabilityTestPropertyMap_Nova_init_static(nova_exception_Nova_ExceptionData* exceptionData);
-stabilitytest_Nova_StabilityTestPropertyMap* stabilitytest_Nova_StabilityTestPropertyMap_Nova_construct(stabilitytest_Nova_StabilityTestPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData);
-void stabilitytest_Nova_StabilityTestPropertyMap_Nova_destroy(stabilitytest_Nova_StabilityTestPropertyMap** this, nova_exception_Nova_ExceptionData* exceptionData);
-void stabilitytest_Nova_StabilityTestPropertyMap_Nova_this(stabilitytest_Nova_StabilityTestPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData);
-void stabilitytest_Nova_StabilityTestPropertyMap_Nova_super(stabilitytest_Nova_StabilityTestPropertyMap* this, nova_exception_Nova_ExceptionData* exceptionData);
+extern char stabilitytest_Nova_StabilityTest_Nova_init_static_inited;
+void stabilitytest_Nova_StabilityTest_Nova_init_static();
+stabilitytest_Nova_StabilityTest* stabilitytest_Nova_StabilityTest_Nova_construct(stabilitytest_Nova_StabilityTest* this);
+void stabilitytest_Nova_StabilityTest_Nova_destroy(stabilitytest_Nova_StabilityTest** this);
+void stabilitytest_Nova_StabilityTest_static_Nova_main(stabilitytest_Nova_StabilityTest* this, nova_datastruct_list_Nova_Array* args);
+void stabilitytest_Nova_StabilityTest_Nova_runTests(stabilitytest_Nova_StabilityTest* this, stabilitytest_Nova_StabilityTest_closure896_Nova_onResult stabilitytest_Nova_StabilityTest_Nova_onResult, void* stabilitytest_Nova_StabilityTest_ref_Nova_onResult, void* stabilitytest_Nova_StabilityTest_context_Nova_onResult, nova_io_Nova_OutputStream* out);
+stabilitytest_Nova_StabilityTest* stabilitytest_Nova_StabilityTest_Nova_this(stabilitytest_Nova_StabilityTest* this);
+novex_nest_Nova_TestRunnerModel* stabilitytest_Nova_StabilityTest_Accessorfunc_Nova_model(stabilitytest_Nova_StabilityTest* this);
+void stabilitytest_Nova_StabilityTest_Nova_super(stabilitytest_Nova_StabilityTest* this);
 
 #endif
